@@ -1,0 +1,150 @@
+# Chen–Chvátal conjecture
+
+**Status: unrestricted conjecture unresolved.** This checkpoint proves the conjecture for the entire class of finite metrics with aspect ratio at most two, using a written reduction and small exhaustive exact checks. It also gives a superlinear lower bound for this class. This is not a full resolution of the named conjecture and is not counted as one. No Lean verification or independent refereeing claimed. Priority unconfirmed.
+
+Research issue [#304](https://github.com/1337isnot1337/solved-conjectures/issues/304), 2026-11-23 CST.
+
+## 1. Exact target, prior work and scope
+
+For a finite metric space X with at least two points, the line L(u,v) for distinct u,v consists of u,v and every third point w for which the three distances satisfy a triangle equality, i.e. one is the sum of the other two. The Chen–Chvátal conjecture states that X has a line equal to X (a universal line) or at least |X| distinct lines. It generalizes the finite Euclidean de Bruijn–Erdős theorem.
+
+- Original source: X. Chen and V. Chvátal, [Problems related to a De Bruijn–Erdős theorem](https://doi.org/10.1016/j.dam.2007.05.036), Discrete Applied Mathematics 156 (2008), 2101–2108.
+- E. Chiniforooshan and V. Chvátal, [A de Bruijn–Erdős theorem and metric spaces](https://arxiv.org/abs/0906.0123), DMTCS 13 (2011), 67–74, Theorem 3: the unconditional minimum number h(k) of lines of a 1–2 metric space is of order k^(4/3). Their twin and same-line-pair observations are used in Section 3 below.
+- V. Chvátal, [A De Bruijn–Erdős theorem for 1–2 metric spaces](https://dml.cz/handle/10338.dmlcz/143947), Czech. Math. J. 64 (2014), 45–51, Theorem 1, proves the conjecture when every nonzero distance is 1 or 2. Claims 1–5 supply the antecedents of the twin-deletion and generating-edge arguments below.
+- C. Huang, [Improved lower bound towards Chen–Chvátal conjecture](https://arxiv.org/abs/2310.15058), 2023, proves the general lower bound of order n^(2/3) when no universal line exists.
+- The January 2026 article [Quasimetric spaces with few lines](https://doi.org/10.1016/j.dam.2025.10.044) explicitly identifies the metric conjecture as open. Its counterexamples to a related asymmetric-distance statement are not metric counterexamples.
+- Recent results of M. Matamala and L. Villarroel-Sepúlveda, [Chen–Chvátal Conjecture for Graphs of Diameter 3](https://arxiv.org/abs/2512.12047), December 2025, and M. Matamala, J. P. Peña and J. Zamora, [Locally Connected Graphs: Metric Properties](https://doi.org/10.1002/jgt.70116), August 2026, concern graph-induced metrics; they do not establish the aspect-ratio result for arbitrary metrics.
+
+Bounded literature searches through 2026-11-23 did not locate a full resolution of the conjecture or the exact aspect-ratio-two theorem. The older 1–2 theorem is fully credited; the new proof extends to arbitrarily many intermediate distances, rather than a larger finite value of n. It is possible that a differently formulated earlier result subsumes this extension; no priority claim is made.
+
+## 2. Theorems
+
+**Theorem A.** Let X be a finite metric space on n ≥ 2 points. Put delta = min{d(u,v):u≠v}. If d(u,v) ≤ 2 delta for all u,v, then X has a universal line or at least n distinct lines.
+
+Equivalently, this holds for every line system represented by a labeling of the edges of a complete graph with labels S, L, M in which a triple is collinear precisely when its three labels are S,S,L. Such a labeling is realized by the distances 1,2,3/2 respectively; every such symmetric distance assignment is a metric, by the range bound. The theorem allows any number of strictly intermediate distances, as only their status as intermediate matters for triangle equality.
+
+**Theorem B.** Unconditionally (even if a universal line exists), the same class has at least c n^(8/7) distinct lines for an absolute constant c > 0. In particular, all sufficiently large spaces in the class have strictly more lines than points.
+
+The argument for A is self-contained except for its exact finite enumerations, performed by the standard-library-only [verify_reduction.py](verify_reduction.py). B imports the 2011 1–2 asymptotic lower bound. Neither settles arbitrary aspect ratio.
+
+## 3. Auxiliary unconditional 1–2 line count
+
+Let h(k) be the minimum number of distinct lines in a k-point space with all positive distances 1 or 2, without excluding a universal line.
+
+We establish the following stronger small-order accounting, which is needed because induced subspaces of a space without a universal line can have a universal line:
+
+| k | 2 | 3 | 4 | 5 | 6 | 7 | 8 | k ≥ 9 |
+|---|---|---|---|---|---|---|---|---|
+| h(k) | 1 | 1 | 1 | 4 | 4 | 7 | 7 | ≥ k |
+
+For the finite part, an exact enumeration constructs all labeled binary spaces of sizes 1 through 8 with at most seven lines. Restriction cannot increase the number of lines: every line of an induced subspace is the restriction of the line generated by the same pair in the larger space. Hence pruning a smaller configuration with more than seven lines cannot omit any larger configuration with at most seven lines. Starting with one point, for each retained labeling enumerate all binary choices of distances from the next point. The retained counts for k=2,...,8 are 2,8,64,355,1225,1050,945. These finite lists are nonempty and attain all the stated minima; omitted spaces have more than seven lines. The verifier also checks the 1–2 conjecture directly on these lists (the omitted cases already have enough lines for k≤8).
+
+We now show h(k) ≥ k for every k≥9. The following elementary observations adapt the cited 2011 and 2014 arguments; their statements and justification are given here rather than assuming a conjectural classification.
+
+Call u,v twins if d(u,v)=2 and d(u,z)=d(v,z) for every z distinct from u,v. In a binary space, a line generated by a short pair (distance 1) includes a third point exactly when its distances to the pair are different; a line generated by a long pair (distance 2) includes a third point exactly when both distances are 1.
+
+### Case 1: no twins
+
+For each distinct line, consider the set of all generating unordered pairs. Its long pairs form a matching, because two long pairs sharing a vertex cannot be collinear with each other. Its short pairs also form a matching: if uv and uw are distinct short pairs generating the same line, then d(v,w)=2, and for every z distinct from u,v,w, equality of the line membership tests gives d(v,z)=d(w,z), making v,w twins.
+
+A short and a long generating pair of the same line cannot be disjoint. Indeed, the endpoints of the short pair would both need distance 1 from both endpoints of the long pair; then neither long-pair endpoint would be on the line of the short pair. Thus if both labels occur among generating pairs, every short pair meets every long pair. Since each of the two families is a matching, each contains at most two pairs. A mixed class has size at most four, and a monochromatic class at most floor(k/2).
+
+If k is odd and at least 9, at most k−1 such classes cannot cover all k(k−1)/2 pairs. If k is even and at least 10, at most k−1 classes could cover them only with exactly k−1 classes each of size k/2. All would be monochromatic perfect matchings. Each would generate a universal line (its generating-pair endpoints cover the space), which is impossible for multiple distinct classes. This proves the required count in the twin-free case.
+
+### Case 2: a twin pair with another long neighbor
+
+Suppose u,v are twins and some w distinct from both has d(v,w)=2. Delete u. The line L(u,w) contains u but not v, and cannot be generated by any pair not containing u: a pair containing v generates a line containing v, and for a pair disjoint from u,v, the twins either both belong to its line or neither does. Thus the full space has at least one more distinct line than the space with u removed, in addition to all distinct lifts of lines of the smaller space.
+
+For k≥10, the asserted bound follows by induction from k−1≥9. For k=9, a hypothetical space with at most eight lines would reduce to one of the retained eight-point binary configurations with at most seven lines. Reinstating u is exactly adding a new point at distance 2 from v and duplicating v's distances to all other points. For every retained eight-point labeling and every v with a long neighbor, the verifier makes this extension and counts its lines. All 7,560 extensions have at least ten lines, excluding this case at k=9.
+
+### Case 3: twins exist, but no twin pair has another long neighbor
+
+Each twin pair is an isolated edge in the graph of long pairs, and these pairs are disjoint. Conversely an isolated long edge is a twin pair. Let there be p≥1 such pairs, and let R be the remaining k−2p points. There are no twins among R (in the full metric); all distances between these isolated pairs or between such a pair and R are short.
+
+Each isolated pair generates the universal line. Each pair of distinct isolated pairs generates a four-point line consisting exactly of their union, by choosing one endpoint from each; there are binom(p,2) distinct such lines. For each isolated pair and x in R, a short generating pair consisting of one endpoint and x defines a line containing the entire isolated pair and no other isolated pair. For fixed isolated pair these lines are distinct as x varies: equal lines would make two distinct x into twins by the same short-line membership argument as in Case 1. Thus there are p(k−2p) more distinct lines; they differ from the four-point lines and the universal line for k≥9.
+
+For p≥2 the resulting count is
+
+    1 + binom(p,2) + p(k−2p) ≥ k     (k≥9).
+
+To check the inequality, subtract k, obtaining (p−1)(k−2p)+binom(p,2)+1−2p. For p=2 this is k−6; for p=3 and p=4 use respectively k−2p≥3 and ≥1; for p≥5 the constant part is nonnegative.
+
+For p=1 the count is k−1. Since |R|=k−2≥7, R has a short pair: otherwise all its members would be twins having further long neighbors, contrary to this case. Its line excludes both points of the isolated pair, and is therefore an additional distinct line. This proves the count also for p=1.
+
+The three cases exhaust all binary metrics; together with the checked base k=9 and induction they establish the table.
+
+## 4. General deletion observation and finite reduction for Theorem A
+
+A strict pair in any metric space is a pair generating a two-point line. The following deletion argument applies to any hereditary class of metric spaces and any smallest counterexample to the Chen–Chvátal property within the class.
+
+Suppose X is a counterexample with minimum cardinality n in such a class, and xy is a strict pair. Necessarily n≥4 (for n=2 a line is universal, and for n=3 either the sole triple is collinear or all three pairs give different two-point lines). If X−x had no universal line, minimality would give at least n−1 lines there, all with distinct lifts in X generated by pairs disjoint from x. L(x,y) is an additional line: its restriction to X−x is the singleton {y}, not a line of that induced space. This contradicts the counterexample assumption. Thus X−x has a universal line. The same generating pair in X must generate exactly X−x, as X has no universal line.
+
+Apply this argument within the hereditary class of aspect-ratio-at-most-two spaces. Normalize the distances to [1,2] by the global minimum positive distance. A triple of distinct points is collinear if and only if its three distances are 1,1,2: the sum of two distances is at least 2 and the third distance is at most 2. In particular every intermediate pair, i.e. a pair at a distance strictly between 1 and 2, generates a two-point line. There is no need for every two-point line to be an intermediate pair.
+
+Let M be the graph consisting of the intermediate pairs, m its edge count, U its nonisolated vertices, t=|U|, and Y=X−U, s=|Y|=n−t. The class is closed under induced subspaces, even if the minimum distance changes. If m=0 the space is binary and Section 3 (or Chvátal's known theorem) gives the conjecture. Thus m≥1.
+
+By the deletion observation, each x in U gives the distinct almost-universal line X−x. These t lines have size n−1≥3 and are distinct from the m two-point lines of the intermediate pairs. If s≤1, their total m+t already reaches n, contradiction. Thus s≥2.
+
+The space Y is binary, with ell(Y) distinct lines. Choose one generating pair for each and lift it to X; all lifts are distinct by their restrictions to Y. None is an intermediate pair line, because its generating pair lies in Y. At most one lift can coincide with an almost-universal line X−x for x in U, because every such line restricts to the same set Y. Consequently,
+
+    ell(X) ≥ m + t + ell(Y) − 1.
+
+Since a counterexample has ell(X)≤n−1=s+t−1, we conclude that
+
+    m + ell(Y) ≤ s.                         (1)
+
+This excludes s≥9 and s=7 by Section 3. The remaining possibilities from the table are:
+
+| s | possible m |
+|---|---|
+| 2 | 1 |
+| 3 | 1,2 |
+| 4 | 1,2,3 |
+| 5 | 1 |
+| 6 | 1,2 |
+| 8 | 1 |
+
+In particular there are at most three intermediate pairs, t≤2m, and n=s+t≤10. This is a finite reduction of an infinite class, not a proof restricted to ten-point metrics.
+
+## 5. Closing the reduced cases exactly
+
+For each permissible s, select representatives of the binary spaces Y with ell(Y)<s from the complete lists of Section 3. Quotient only by relabeling, explicitly removing the full permutation orbit of each representative. There are respectively 2,1,1,4,2,0,2 representatives for s=2,...,8. For every such Y and m satisfying (1), enumerate every possible graph M on t vertices with exactly m edges and no isolated vertex, modulo the same explicit vertex-permutation operation. Here 2≤t≤2m.
+
+There are 25 pairs of binary Y and mid graph M over the permissible m,t, including different m where applicable. Fix their labels: Y first, then the vertices of U. Every pair joining U to Y is extreme (short or long); pairs within U labeled by M are intermediate, and the others are extreme. Enumerate every assignment of short versus long to all the extreme pairs by adding the vertices of U one at a time.
+
+We use the following exact safe pruning rule. Let P consist of all s clean vertices and the first r−s vertices of U, where r=|P|. Let L_P be its set of distinct lines. Let f be the number of prescribed intermediate pairs with at least one endpoint still outside P. In any completion that is a smallest counterexample, the following distinct lines must exist:
+
+1. At least |L_P| lines generated by chosen pairs in P with distinct projections to P.
+2. The f distinct future intermediate pair lines. Their projections to P have size at most one, so they cannot coincide with lines counted in item 1.
+3. The t distinct lines X−x, x in U, of size n−1≥3. They cannot coincide with the lines in item 2.
+
+The third family can overlap the first only as allowed by projection. For each x in U∩P, the projection is P−x, distinct for each such x. Count one possible overlap if that set is an element of L_P. For x outside P, every projection is P, so count at most one possible overlap altogether, and only when P is in L_P. Call the sum of these overlap bounds b. Thus a necessary lower bound for the full line count is
+
+    ell(X) ≥ |L_P| + f + t − b.               (2)
+
+Discard a partial labeling whenever the right side is at least n. The verifier uses bit masks for short and long neighbors, and computes lines exactly: for a short pair uv, the third-point mask is (S(u)∩L(v)) ∪ (L(u)∩S(v)); for a long pair, it is S(u)∩S(v); for an intermediate pair, it is empty. Pair endpoints are always included. Every visited ternary configuration is also cross-checked against an independent direct enumeration of collinear triples with labels short,short,long. These are equivalent descriptions, and neither uses floating point arithmetic.
+
+The search visits 1,533 nodes over the 25 cases. No completion survives (2); the code additionally asserts at any unpruned full labeling that it is either universal or fails the required almost-universal-line property. This contradiction rules out a smallest counterexample. Theorem A follows.
+
+The standalone verifier was executed in a local Python runtime. Its binary-level counts, minima, 7,560 twin extensions, 25 configurations, and 1,533 search nodes were asserted and all checks passed. Enumeration includes all labeled extensions; it does not use a graph database, an external solver or an unverified isomorphism heuristic. This is computer-assisted written mathematics, not a claim of kernel-checked formal verification.
+
+## 6. Superlinear unconditional bound (Theorem B)
+
+Continue to write m for the number of intermediate pairs. Each is a distinct two-point line, so ell(X)≥m. By the elementary Turán/independence bound, the graph of intermediate pairs has an independent set of size at least n²/(n+2m): for example, in a uniform random ordering select each vertex that comes before all its neighbors, and apply Cauchy–Schwarz to the expected size sum_v 1/(1+deg(v)). Such an independent set is a binary metric subspace.
+
+If m≥n^(8/7), we are done. Otherwise an independent set has size at least
+
+    n²/(n+2n^(8/7)) ≥ (1/3)n^(6/7).
+
+Apply Chiniforooshan–Chvátal's unconditional 2011 lower bound h(k)=Omega(k^(4/3)) to this subspace and lift its distinct lines to X. This gives ell(X)=Omega(n^(8/7)). The constant can be adjusted for the finitely many small n, since n≥2 always has a line. This proof does not require Theorem A or the finite verification.
+
+## 7. Audit, significance, and unresolved step
+
+- The new class is strictly more general than binary metrics as a condition on distances, and its triangle patterns need not come from a 1–2 metric on the same points. The proof does not assume that adding or removing collinear triples monotonically changes the number of lines; that assertion is false in general. Only restriction to induced subspaces is monotone in line count.
+- The twin arguments in Section 3 are adaptations of the cited 2011/2014 work. The additional unconditional small-order table and the finite reduction use those ideas; they are not presented as independent rediscovery of the binary conjecture.
+- All lines mean sets of points, not generating pairs. Every counting step accounts for possible repeated sets by distinct projections or explicit overlap bounds. Universal lines in proper subspaces are not ruled out; precisely those lines produce the near-universal obstruction.
+- Mid labels can be represented by 3/2, but no limitation on the number of different intermediate values is imposed in the theorem. The argument fails for arbitrary aspect ratio because other triangle equalities can occur and a non-extreme pair need not generate a two-point line.
+- The unrestricted conjecture is still open. The general deletion observation in Section 4 gives a possible starting point beyond this class, but without a replacement for the binary structure and its unconditional line count, the finite reduction does not extend.
+- A bounded literature search found no exact previous aspect-ratio-two theorem or unconditional Omega(n^(8/7)) bound for that class; priority is not established and an independent specialist audit remains desirable.
+
+Release the research claim after documenting the checkpoint; keep the issue open for broader attacks.
