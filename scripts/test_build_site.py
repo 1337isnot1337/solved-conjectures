@@ -7,6 +7,7 @@ from pathlib import Path
 import unittest
 
 from build_site import Builder, Document, Result, landing_lean_status, pandoc, read_markdown
+from check_readme_verification import parse_results
 
 
 def doc(name, markdown):
@@ -24,9 +25,9 @@ class StatusChecks(unittest.TestCase):
 | --- | --- | --- |
 | L-solitaire | Complete | Stated result. |
 ''' + rows),
-            'README.md': doc('README.md', '''| Problem | Lean |
-| --- | --- |
-| [Solitaire](results/l-solitaire-limit-shapes/) | ✅ |
+            'README.md': doc('README.md', '''| Problem | Lean verification status | Problem | Lean verification status |
+| --- | --- | --- | --- |
+| **1.** [Solitaire](results/l-solitaire-limit-shapes/) | ✅ | | |
 '''),
         }
         results = {
@@ -90,6 +91,38 @@ class StatusChecks(unittest.TestCase):
         for text in ['Some components exist.', '**Lean status:** maybe. No Lean formalization.']:
             with self.assertRaises(ValueError):
                 landing_lean_status(text)
+
+
+class RankedReadme(unittest.TestCase):
+    markdown = """## Results
+
+| Problem | Lean verification status | Problem | Lean verification status |
+| --- | --- | --- | --- |
+| **1.** [A](results/a/) | ✅ | **3.** [C](results/c/) | ⬜ |
+| **1.** [B](results/b/) | 🟡 | | |
+"""
+
+    def test_column_major_rank_order_with_ties_and_odd_count(self):
+        expected = [(1, "a", "✅"), (1, "b", "🟡"), (3, "c", "⬜")]
+        b = Builder(Path('/tmp/ranked-readme-test'), 'https://example.test/', 1)
+        b.documents = {"README.md": doc("README.md", self.markdown)}
+        self.assertEqual(b.readme_result_entries(), expected)
+        self.assertEqual(parse_results("\n" + self.markdown), expected)
+
+    def test_invalid_rank_duplicate_and_missing_pair(self):
+        for markdown in [
+            self.markdown.replace("**3.**", "**2.**"),
+            self.markdown.replace("results/c/", "results/a/"),
+            self.markdown.replace("**1.** [B](results/b/) | 🟡", " | "),
+            self.markdown.replace("⬜", "Not formalized"),
+        ]:
+            with self.subTest(markdown=markdown):
+                b = Builder(Path('/tmp/ranked-readme-test'), 'https://example.test/', 1)
+                b.documents = {"README.md": doc("README.md", markdown)}
+                with self.assertRaises(ValueError):
+                    b.readme_result_entries()
+                with self.assertRaises(ValueError):
+                    parse_results("\n" + markdown)
 
 
 class MathRendering(unittest.TestCase):
