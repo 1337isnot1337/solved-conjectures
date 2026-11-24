@@ -2,14 +2,13 @@
 
 ## Ferroni–Higashitani’s first-three interior Ehrhart question
 
-Lean checks the [interior lattice-point counterexample](../lean/Conjectures/FerroniHigashitani.lean)
-in the usual integral coordinate lattice. The witness is the convex hull of a
-finite integral set and has integer decomposition for every positive dilation.
-The strict failure of log-concavity uses the actual topological interiors of
-the first three dilations. The [scoped receipt](verification/lean-ferroni-higashitani-interior-20261124/receipt.json)
-records ten strict source builds, 296 owned declarations and stock kernel
-replay. The direct bridge to the negative polynomial evaluations in Question
-5.12(a) remains open in Lean at this checkpoint.
+Lean proves the [literal inequality in Question 5.12(a)](../lean/Conjectures/FerroniHigashitaniEhrhart.lean)
+for the dimension-170 IDP lattice polytope. The weighted composition prefix
+gives the unique Ehrhart polynomial from its value at every positive integer.
+The proof identifies the three negative evaluations with counts in the actual
+topological interiors. The [scoped receipt](verification/lean-ferroni-higashitani-complete-20261124/receipt.json)
+records 14 strict source builds, 409 owned declarations, 16 required endpoints,
+and stock-kernel replay.
 
 
 

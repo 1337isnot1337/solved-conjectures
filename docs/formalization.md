@@ -2,13 +2,14 @@
 
 ## Ferroni–Higashitani’s first-three interior Ehrhart question
 
-The [interior lattice-point theorem](../lean/Conjectures/FerroniHigashitani.lean)
+The [Lean proof of Question 5.12(a)](../lean/Conjectures/FerroniHigashitaniEhrhart.lean)
 uses the dimension-170 Cayley boxes in the written proof. The refined lattice
-is transported to the ordinary integer coordinate lattice by an explicit real
-linear equivalence. Lean verifies finite convex-hull generators, integer
-decomposition, the topological interior, the coset bijection and the exact
-first-three inequality. A direct polynomial-evaluation bridge to the source
-question remains open at this research checkpoint.
+is transported to the ordinary integer coordinate lattice by an explicit
+real linear equivalence. Lean verifies the finite integral convex hull,
+integer decomposition for every positive dilation, and the exact coset
+counts. The binomial-basis formula for weighted compositions identifies the
+unique Ehrhart polynomial and proves the claimed negative-evaluation
+inequality. The unbounded-ratio family and regular triangulation are written supplements.
 
 
 

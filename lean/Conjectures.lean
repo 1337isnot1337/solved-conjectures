@@ -8,6 +8,10 @@ import Conjectures.FerroniHigashitaniIDP
 import Conjectures.FerroniHigashitaniPolytope
 import Conjectures.FerroniHigashitaniBasis
 import Conjectures.FerroniHigashitani
+import Conjectures.FerroniHigashitaniClosedCount
+import Conjectures.FerroniHigashitaniBinomial
+import Conjectures.FerroniHigashitaniPrefixPolynomial
+import Conjectures.FerroniHigashitaniEhrhart
 import Conjectures.NemethSeberryShuConcentration
 import Conjectures.NemethSeberryShuFourierRepair
 import Conjectures.NemethSeberryShuFourierTarget

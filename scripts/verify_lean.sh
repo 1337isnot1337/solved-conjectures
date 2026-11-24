@@ -14,6 +14,10 @@ modules=(
   Conjectures.FerroniHigashitaniPolytope
   Conjectures.FerroniHigashitaniBasis
   Conjectures.FerroniHigashitani
+  Conjectures.FerroniHigashitaniClosedCount
+  Conjectures.FerroniHigashitaniBinomial
+  Conjectures.FerroniHigashitaniPrefixPolynomial
+  Conjectures.FerroniHigashitaniEhrhart
   Conjectures.NemethSeberryShuConcentration
   Conjectures.NemethSeberryShuFourierRepair
   Conjectures.NemethSeberryShuFourierTarget
