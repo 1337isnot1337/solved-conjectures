@@ -69,6 +69,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | --- | --- | --- | --- |
 | [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | Complete computer-assisted disproof of the original universal conjecture. At length 17, the strict excedance enumerator violates the Laguerre inequality at −1/5. Two exact counting recurrences agree on all coefficients. Ordinary descents and other parking statistics are separate. | Not formalized | [Proof](results/alexandersson-parking-excedance/PROOF.md) · [Independent audit](results/alexandersson-parking-excedance/AUDIT.md) · [Exact replay](results/alexandersson-parking-excedance/verify.py) · [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) |
 
+## Long monotone subsequences
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Pantone–Bóna’s asymptotic conjecture](results/pantone-bona-asymptotic/) | Complete proof of the original Conjecture 6.4, sharpening the known two-sided bounds to asymptotic equivalence with leading constant $625\sqrt3/(192\pi)$. The proof also gives the leading constant across the full equal-index pattern family. It does not establish the conjectured differential equation or other pattern families. | Not formalized | [Proof](results/pantone-bona-asymptotic/PROOF.md) · [Independent audit](results/pantone-bona-asymptotic/AUDIT.md) · [Exact small-case comparisons](results/pantone-bona-asymptotic/verify.py) · [Issue #377](https://github.com/1337isnot1337/solved-conjectures/issues/377) |
+
 ## Restricted permutations
 
 | Problem | Result | Formalization | Evidence |

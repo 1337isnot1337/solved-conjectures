@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check Pantone–Bóna canonical front and tail counts
+        run: python3 results/pantone-bona-asymptotic/verify.py
       - name: Check FCC/BCC hole distances and finite Gaussian samples
         run: python3 results/betermin-fcc-bcc-cold-spots/verify.py
       - name: Check the Coulangeon–Lazzarini lattice shells
