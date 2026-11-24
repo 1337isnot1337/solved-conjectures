@@ -47,14 +47,10 @@ theorem prefixSum_one_extra (t k : Nat) :
   | succ k ih =>
     rw [prefixSum_succ, ih]
     by_cases h : k=t
-    · have h1 : ¬ t<k := by omega
-      have h2 : t<k+1 := by omega
-      simp [h,h1,h2]
-      omega
+    · simp [h]
     · by_cases h1 : t<k
       · have h2 : t<k+1 := by omega
         simp [h,h1,h2]
-        omega
       · have h2 : ¬ t<k+1 := by omega
         simp [h,h1,h2]
 
@@ -81,7 +77,8 @@ theorem twice_genus_ge (s : Nat → Bool) (F : Nat)
   have h := reflect_sum_ge (gapBit s) (fun _ => 1) F (F+1)
     (by omega) (fun i hi => reflected_pair_has_gap s F i hi hF hadd)
   rw [prefixSum_const] at h
-  simp [prefixSum] at h
+  rw [Nat.sub_self] at h
+  change F+1+0 ≤ prefixSum (gapBit s) (F+1) + prefixSum (gapBit s) (F+1) at h
   omega
 
 theorem strict_defect_of_double_gap (s : Nat → Bool) (F t : Nat)
@@ -95,13 +92,14 @@ theorem strict_defect_of_double_gap (s : Nat → Bool) (F t : Nat)
     by_cases he : i=t
     · subst i
       simp [gapBit,h1,h2]
-    · simp only [he, if_false]
+    · simp only [he, ite_false]
       exact reflected_pair_has_gap s F i hi hF hadd
   have h := reflect_sum_ge (gapBit s) (fun i => if i=t then 2 else 1)
     F (F+1) (by omega) hh
   rw [prefixSum_one_extra] at h
   have ht' : t<F+1 := by omega
-  simp [prefixSum,ht'] at h
+  rw [if_pos ht', Nat.sub_self] at h
+  change (F+1+1)+0 ≤ prefixSum (gapBit s) (F+1) + prefixSum (gapBit s) (F+1) at h
   omega
 
 structure ReductionData where
@@ -265,7 +263,8 @@ theorem truncation_arithmetic64 :
 
 theorem numeric_defect64 :
     let W := maxWeight data64
-    let A := 2999610614445278606606529852688320245912872985058614999940142080
+    let A := data64.y*(data64.H*data64.L*(data64.L-1)-data64.U*data64.V*(2*data64.L-data64.V-1))/2 +
+      data64.z*(data64.L*data64.H*(data64.H-1)-data64.V*data64.U*(2*data64.H-data64.U-1))/2
     let G := (A-data64.x*(data64.x-1)/2)/data64.x
     let F := W-data64.x
     2*G=F+1+6979829901167700205396291754551820692488960 ∧ 0<6979829901167700205396291754551820692488960 := by decide
@@ -302,7 +301,8 @@ theorem truncation_arithmetic128 :
 
 theorem numeric_defect128 :
     let W := maxWeight data128
-    let A := 9579212380987587900682264590047208423092603084284059822365600806326132160706686923463279080297747266306758678302933305747028341760
+    let A := data128.y*(data128.H*data128.L*(data128.L-1)-data128.U*data128.V*(2*data128.L-data128.V-1))/2 +
+      data128.z*(data128.L*data128.H*(data128.H-1)-data128.V*data128.U*(2*data128.H-data128.U-1))/2
     let G := (A-data128.x*(data128.x-1)/2)/data128.x
     let F := W-data128.x
     2*G=F+1+83453540242898960781830249238740566391992592992955918666946398675767492529298241537816250880 ∧ 0<83453540242898960781830249238740566391992592992955918666946398675767492529298241537816250880 := by decide
