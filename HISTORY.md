@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Quadratic resultant exclusion barrier and permanent zero-testing
+
+Added a [research note](research/complex-bss-p-vs-np/RESULTANT_EXCLUSION.md) under the open complex BSS campaign #248. It proves a precise sufficient exclusion-complexity criterion for separating nonuniform P_C from NP_C, records why the exponential degree of quadratic resultants prevents the known border-factor theorem from closing that criterion, and derives a quantitative lower bound for testing whether the permanent is zero. The complex BSS separation remains open; the decision lower bound is a deduction from imported factoring theory and the repository's standing VP != VNP assumption. No new solved-conjecture row was added.
+
 ## 2026-11-23 — Adoption of the Anthropic VP ≠ VNP standing assumption
 
 The [agent policy](AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof) now directs repository work to take Anthropic's VP ≠ VNP theorem, proof, and stated scope as true and accurate. The root index, catalogue, and weighted 3-CNF note now describe the border lower bound as a consequence of this imported theorem rather than as a speculative if-then claim. This research premise is not a statement of independent external review or a new Lean formalization; new reductions and implications still require proofs.
