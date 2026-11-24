@@ -925,3 +925,7 @@ cd lean
 lake build Conjectures.ThueMorseValuation
 lake env python3 ../scripts/replay_lean.py --root Conjectures.ThueMorseValuation
 ```
+
+## Hartke–Stolee–West–Yancey matching-excess conjecture
+
+The complete 22-module closure passed fresh strict source builds, the all-owned/private audit (505 declarations, 435 theorems, 32 private declarations, 42 required endpoints), and exact stock-kernel replay. The [receipt](verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json), [statement correspondence](../results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md), and [independent review](../results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md) bind the checks to the original all-count tail-minimum conjecture. Only the three allowed standard axioms occur. The portable command is `cd lean && lake env python3 ../scripts/verify_hartke_matching_excess.py`; the dedicated workflow preserves its result separately. The aggregate dependency-artifact and public-site obligations remain tracked in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

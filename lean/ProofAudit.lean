@@ -9,6 +9,48 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HartkeMatchingExcess.binaryWeight_add_le,
+    `HartkeMatchingExcess.mersenne_dvd_binaryWeight_le,
+    `HartkeMatchingExcess.mersenne_division_weight_bound,
+    `HartkeMatchingExcess.input_lt_of_excess_bounds,
+    `HartkeMatchingExcess.perfectMatchingCount_splitGraph,
+    `HartkeMatchingExcess.returnFiberEquiv,
+    `HartkeMatchingExcess.pathCount_rec,
+    `HartkeMatchingExcess.perfectMatchingCount_returnGraph,
+    `HartkeMatchingExcess.baseGraph_edge_card,
+    `HartkeMatchingExcess.binaryPositions_sum,
+    `HartkeMatchingExcess.pathCount_binary,
+    `HartkeMatchingExcess.pathCount_deleted_after,
+    `HartkeMatchingExcess.fullReturnGraph_edge_card,
+    `HartkeMatchingExcess.deletedReturnGraph_edge_card_add_one,
+    `HartkeMatchingExcess.exists_binary_returns,
+    `HartkeMatchingExcess.exists_deleted_returns,
+    `HartkeMatchingExcess.binary_graph_witness,
+    `HartkeMatchingExcess.deleted_graph_witness,
+    `HartkeMatchingExcess.binary_excess_witness,
+    `HartkeMatchingExcess.deleted_excess_witness,
+    `HartkeMatchingExcess.mate_involutive,
+    `HartkeMatchingExcess.switchMatching_ne,
+    `HartkeMatchingExcess.bothPairs_card_le,
+    `HartkeMatchingExcess.edge_card_le_square_add_matchings,
+    `HartkeMatchingExcess.perfectMatchingCount_iso,
+    `HartkeMatchingExcess.extendMatchingEquiv,
+    `HartkeMatchingExcess.perfectMatchingCount_extendGraph,
+    `HartkeMatchingExcess.extendGraph_edge_card,
+    `HartkeMatchingExcess.extend_witness_to,
+    `HartkeMatchingExcess.matchingExcess_attained,
+    `HartkeMatchingExcess.extremalEdges_eventually,
+    `HartkeMatchingExcess.binaryLength_le_matchingExcess,
+    `HartkeMatchingExcess.matchingExcess_sqrt_lower_bound,
+    `HartkeMatchingExcess.matchingExcess_gt_of_large,
+    `HartkeMatchingExcess.matchingExcess_tendsto,
+    `HartkeMatchingExcess.tailMinimum_attained,
+    `HartkeMatchingExcess.tailMinimum_gt_of_large,
+    `HartkeMatchingExcess.conjecture_9_15,
+    `HartkeMatchingExcess.matchingExcess_unique,
+    `HartkeMatchingExcess.matchingExcess_log_lower_bound,
+    `HartkeMatchingExcess.tailMinimum_sqrt_lower_bound,
+    `HartkeMatchingExcess.conjecture_9_15_eventual,
     `Conjectures.FeldheimWeightedTail.wright_unit_integral_le,
     `Conjectures.FeldheimWeightedTail.wright_unit_le,
     `Conjectures.FeldheimWeightedTail.wright_chord_le,
@@ -10924,7 +10966,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do
