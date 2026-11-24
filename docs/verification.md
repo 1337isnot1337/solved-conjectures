@@ -166,6 +166,10 @@ python3 results/johnson-pfaffian/verify.py
 
 The standard-library checker uses exact rational arithmetic for supplementary identity and indexing checks. It explicitly records that finite checks do not prove the universal assertion. No Lean formalization is claimed.
 
+## Bétermin FCC/BCC cold spots
+
+The [all-scale proof](../results/betermin-fcc-bcc-cold-spots/PROOF.md) uses parity projection, Jacobi products and a strict concavity argument. The proof does not depend on numerical testing. Run `python3 results/betermin-fcc-bcc-cold-spots/verify.py` for finite Gaussian comparisons and exact rational distance checks, including the corrected BCC representative.
+
 ## Coulangeon–Lazzarini two-shell refutation
 
 The [analytic proof](../results/coulangeon-lazzarini-two-shells/PROOF.md) uses parity cosets and does not rely on computation. Run `python3 results/coulangeon-lazzarini-two-shells/verify.py` to enumerate all three shells of the dimension-ten witness and check their second moments.

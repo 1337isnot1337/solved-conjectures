@@ -51,6 +51,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | --- | --- | --- | --- |
 | [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | Determines the pair of words maximizing the leading difference of win probabilities in Litt’s game for every word length and alphabet size. Includes the sponsor’s full-alphabet convention. | Not formalized | [Proof](results/ekhad-zeilberger-unfair-bet/PROOF.md) · [Exact checks](results/ekhad-zeilberger-unfair-bet/verify.py) · [Issue 219](https://github.com/1337isnot1337/solved-conjectures/issues/219) |
 
+## Gaussian lattice sums
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Bétermin’s FCC/BCC cold-spot conjecture](results/betermin-fcc-bcc-cold-spots/) | The geometric assertion of Remark 5.10 holds: for every positive Gaussian scale, the minimizing translations of FCC and BCC are exactly the deep holes. The printed BCC representative is corrected. The proof covers both checkerboard families in every rank at least three. | Not formalized | [Proof](results/betermin-fcc-bcc-cold-spots/PROOF.md) · [Independent audit](results/betermin-fcc-bcc-cold-spots/AUDIT.md) · [Sample diagnostics](results/betermin-fcc-bcc-cold-spots/verify.py) · [Issue #371](https://github.com/1337isnot1337/solved-conjectures/issues/371) |
+
 ## Lattice designs
 
 | Problem | Result | Formalization | Evidence |
