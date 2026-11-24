@@ -21,4 +21,4 @@ The proof is analytic and probabilistic. No numerical or finite-case inference i
 
 Status: complete proposed proof, independently reviewed internally; unrefereed. No earlier full resolution was found in the documented search. The classical Poisson series and sequence-norm inequality are credited as prior mathematics. Inaccessible older papers and search limitations are recorded in the source audit.
 
-**Lean status:** none.
+**Lean status:** none verified. [Unverified research candidate](../../lean/Conjectures/FerreiraSimonStochastic.lean) for the deterministic strict sequence comparison; the probabilistic construction, exact marginal laws, and stochastic-order conclusion still require formalization. No complete or partial verification badge is claimed without a successful gate.
