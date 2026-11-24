@@ -73,6 +73,7 @@ STATUS_LABEL_SLUGS = {
     "Heim–Neuhauser’s plane-partition polynomization conjecture": "heim-neuhauser-plane-partition-polynomization",
     "Heim–Neuhauser’s ordinary D’Arcais root conjecture": "heim-neuhauser-ordinary-darcais-root",
     "Bétermin’s FCC/BCC cold-spot conjecture": "betermin-fcc-bcc-cold-spots",
+    "Rossi’s permutohedron characteristic-polynomial conjecture": "rossi-permutohedron-roots",
     "Coulangeon–Lazzarini’s two-shell conjecture": "coulangeon-lazzarini-two-shells",
     "Alexandersson’s parking-function excedance conjecture": "alexandersson-parking-excedance",
     "Nuttall's conjecture": "nuttall-cumulants",

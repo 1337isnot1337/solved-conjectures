@@ -70,6 +70,7 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
 | [Bétermin’s FCC/BCC cold-spot conjecture](results/betermin-fcc-bcc-cold-spots/) | The geometric assertion of Remark 5.10 holds: for every positive Gaussian scale, the minimizing translations of FCC and BCC are exactly the deep holes. The printed BCC representative is corrected. The proof covers both checkerboard families in every rank at least three. | Not formalized | [Proof](results/betermin-fcc-bcc-cold-spots/PROOF.md) · [Independent audit](results/betermin-fcc-bcc-cold-spots/AUDIT.md) · [Sample diagnostics](results/betermin-fcc-bcc-cold-spots/verify.py) · [Issue #371](https://github.com/1337isnot1337/solved-conjectures/issues/371) |
+| [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | Proof of the exact all-n root intervals in Conjecture 6.16, by a uniform alternating sign grid with an exact finite initial bridge. No q-deformation claim. | Not formalized | [Proof](results/rossi-permutohedron-roots/PROOF.md) · [Audit](results/rossi-permutohedron-roots/AUDIT.md) · [Issue #406](https://github.com/1337isnot1337/solved-conjectures/issues/406) |
 
 ## Lattice designs
 
