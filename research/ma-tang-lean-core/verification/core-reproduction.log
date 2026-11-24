@@ -1,0 +1,30 @@
+Lean version: Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+Source SHA256: ddb959fd9a40f664dead70a468aee434a492ec14375941ea567885f3d42a3b80
+PASS: strict source compilation
+'MaTangCoreBalance.signed' does not depend on any axioms
+'MaTangCoreBalance.chooseSign' does not depend on any axioms
+'MaTangCoreBalance.chooseSign_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.assign' does not depend on any axioms
+'MaTangCoreBalance.signedSum' does not depend on any axioms
+'MaTangCoreBalance.bitSum' does not depend on any axioms
+'MaTangCoreBalance.flip' does not depend on any axioms
+'MaTangCoreBalance.assign_projection' depends on axioms: [propext]
+'MaTangCoreBalance.assign_sum_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.exists_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.flip_sub' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.flip_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.groupedSum' does not depend on any axioms
+'MaTangCoreBalance.grouped_mod_invariant' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.occupiedCount' does not depend on any axioms
+'MaTangCoreBalance.assignOccupied' does not depend on any axioms
+'MaTangCoreBalance.assignOccupied_projection' depends on axioms: [propext]
+'MaTangCoreBalance.assignOccupied_sum_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.decorate' does not depend on any axioms
+'MaTangCoreBalance.decorate_projection' depends on axioms: [propext]
+'MaTangCoreBalance.decorate_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.decorateGroups' does not depend on any axioms
+'MaTangCoreBalance.groupProjection' does not depend on any axioms
+'MaTangCoreBalance.decorateGroups_projection' depends on axioms: [propext]
+'MaTangCoreBalance.exists_grouped_constant_fiber' depends on axioms: [propext, Quot.sound]
+PASS: transitive axiom check of all 25 source-named declarations
+PASS: stock kernel replay of the scoped module

@@ -1,10 +1,12 @@
 # Ma–Tang’s random subset-sum threshold conjecture
 
-**Candidate; incomplete and not yet Lean-verified.** No catalogue status change.
+**Incomplete formalization.** A deterministic grouped-fiber component has passed local Lean verification; the other three Mathlib draft modules remain unverified. No catalogue completion status change.
 
 Existing result: [main catalogue entry](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/ma-tang-random-subset-sums), [recorded proof](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/ma-tang-random-subset-sums/PROOF.md), [discovery issue #490](https://github.com/1337isnot1337/solved-conjectures/issues/490), and [publication PR #492](https://github.com/1337isnot1337/solved-conjectures/pull/492). The primary source is Jie Ma and Quanyu Tang, *An Erdős problem on random subset sums in finite abelian groups*, arXiv:2602.05768v2, [Problem 4.1](https://arxiv.org/html/2602.05768v2#S4). Credit the original problem to Ma and Tang and the written resolution to the authors credited in the repository's existing proof package. The earlier Erdős question had already been resolved; no new discovery or exclusive priority is claimed.
 
 ## Scope
+
+The [checked Init-only module](../../lean/Conjectures/MaTangCoreBalance.lean) proves sign balancing for arbitrary integer representatives modulo three, including zero coefficients, and constructs an exact list of annotated grouped coefficients for which every type-constant binary flip preserving the zero type leaves the ternary sum unchanged. This is the deterministic grouped-list component of equations (4)–(5), not the full subset-sum conjecture. Its endpoint is `MaTangCoreBalance.exists_grouped_constant_fiber`; it does not yet connect the lists to a random linear map or prove the limiting threshold. The pinned Lean 4.35.0 strict compilation passed; all 25 source-named declarations were checked transitively and only `propext` and `Quot.sound` occurred; stock `leanchecker` replay passed. Reproduce with [verify_core.py](verify_core.py); [log and source hash](verification/core-reproduction.log). The scoped source hash is `ddb959fd9a40f664dead70a468aee434a492ec14375941ea567885f3d42a3b80`. This source-named check is narrower than the repository's environment-wide all-owned audit.
 
 The draft [Lean module](../../lean/Conjectures/MaTangRandomSubsetSumsCore.lean) follows equations (4) and (5) of the recorded proof. It replaces the pairing/tripling sign construction by a subset of size (2n mod 3), where n is the number of occupied indices in a nonzero type. It groups the finite signed sum by binary kernel-column types and shows that the second-coordinate subset sum is constant on the chosen first-coordinate fiber.
 
@@ -22,4 +24,4 @@ Remaining:
 - prove the asymptotic estimates, monotonicity, and the universal upper bound used in the source;
 - compile, audit every owned declaration, and replay the kernel against pinned Lean 4.35.0/Mathlib revision 56a005855ea17e0b0958f73ec801ae140b0a1679; only then consider registering the verified scope.
 
-Session start: 2026-11-24 18:59 UTC. Pyroam execution is blocked by a nonretryable connector fetch error; local Lean/Lake is unavailable. Hosted verification has not yet passed. No completion is counted.
+Session start: 2026-11-24 18:59 UTC. Pyroam execution recovered on 24 November. Lean 4.35.0 and Lake launch, and the scoped Init-only verification passed at 22:47:57 UTC. Broad Lean imports in the isolated runner were killed under its 2 GiB memory limit, so the Mathlib build and full repository gate have not passed. Hosted verification is separate and has not passed. No complete result is counted.
