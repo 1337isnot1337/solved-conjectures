@@ -37,6 +37,17 @@ The concurrent scalar construction in [PR #254](https://github.com/1337isnot1337
 | Unrestricted rank tests | All six retained-pair cases with arbitrary tensor multipliers, the Fourier specialization, exterior matching ranks, and the constant-overhead limitation. | Neither a family of rank tests nor an inequality between spectral minima classifies every spectral point. |
 | Unit-star conversion | Centroid semicontinuity, the trace-form calculation for matrix multiplication, common-unit multiplicities, monomial box count, the smaller-product block construction, and the stronger retained-label lift via three face-unit distillations. | The unrestricted upper exponent one eighth does not remove the required error term from the signed inequality. |
 
+The source-construction checkpoint adds the exact lower-ideal embedding
+obstruction, the convolution cut and symmetrizer proofs, a trace-cubic
+nonsmoothability certificate, a cubic smoothable enlargement, and the
+Heisenberg chirp calculation. Root checked the written arguments and
+both new exact scripts. The trace-cubic certificate and its Frobenius
+reduction received separate mathematical and code review; the tensor-product
+TNT lemma was independently derived and reviewed. The fixed-version
+Jelisiejew theorem and the FJM PDF formulas were checked in primary sources.
+The Sun base-map note records an unresolved composition; it does not certify
+the claimed base or disprove its abstract rank bound.
+
 This checkpoint additionally reviews the weighted-support relaxation, the coefficient-independent Koszul pivot proof, the ordinary-block commutator, the weighted tetrahedral determinant, and the four-label resource certificate. The root reviewer checked the precise Landsberg--Michałek and Li statements in their primary sources. The weighted lower-bound proof was separately challenged by both other research workers. These reviews establish the stated finite obstructions and conditional criteria, not the exponent-two conclusion.
 
 ## Reproducible exact checks
@@ -58,9 +69,11 @@ python3 check_weighted_mm_koszul_pivots.py
 python3 check_sun_ordinary_partial_block.py
 python3 check_general_free_separator.py
 python3 check_uncrossing_separator.py
+python3 check_convolution_block_trade.py
+python3 check_trace_cubic_nonsmoothable.py
 ```
 
-The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, and general-free scripts use SymPy. The other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
+The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, and general-free scripts use SymPy. The trace-cubic script uses NumPy integer arrays with explicit arithmetic bounds; the other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
 
 | Script | Checked content |
 | --- | --- |
@@ -77,9 +90,11 @@ The first six commands passed on the earlier assembled checkpoint. The next thre
 | `check_sun_ordinary_partial_block.py` | Symbolic inverses and the four nonzero commutator entries for all nonzero coefficients on the explicit 44-cycle diagnostic support. |
 | `check_general_free_separator.py` | All local weight sums and surviving labels in 144 configurations with 175,974 support entries; exact Fourier identities in cyclotomic quotients for 19 moduli up to 22. |
 | `check_uncrossing_separator.py` | Every coefficient of the finite polynomial map for sizes two through eight, plus exact seven-point interpolation at size two. |
+| `check_convolution_block_trade.py` | All six source terms, the three target block labels, and equality of the local coordinate multisets in the balanced-trade obstruction. |
+| `check_trace_cubic_nonsmoothable.py` | The rational quadratic apolar basis, all 666 pair products, rank486 modulo1009, the nine exact integral annihilators, and their independence. This is an essential computer-assisted proof certificate, not only a cross-check. |
 | `check_four_party_constraints.py` | Seventeen exterior covariant ranks obtained by independent alternating projections and exact rational elimination, plus 56 ordinary cut ranks for uncrossing and tetrahedral tensors. |
 
-These checks corroborate finite statements in the written proofs. They do not execute a complete matrix multiplication algorithm, verify an unbounded induction, construct a normalized spectral point above perimeter two, or prove the desired universal perimeter upper bound.
+The trace-cubic check supplies the finite rank certificate required by its computer-assisted nonsmoothability proof. The other checks corroborate finite statements in the written proofs. They do not execute a complete matrix multiplication algorithm, verify an unbounded induction, construct a normalized spectral point above perimeter two, or prove the desired universal perimeter upper bound.
 
 ## Repository checkpoints
 
@@ -93,5 +108,7 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 - [PR #274](https://github.com/1337isnot1337/solved-conjectures/pull/274) contains the arbitrary-weight border obstruction, dense partial-support criterion, and four-party resource limitation. Its merge commit is `31aec761d16ebc0526e24bfd27431ae1c625fa68`; all eight changed files match the reviewed local Git blob hashes.
 
 - [PR #279](https://github.com/1337isnot1337/solved-conjectures/pull/279) contains the general free-set separator and explicit zero-overhead asymptotic uncrossing. Its merge commit is `cba48e18689ba82822f34776f8c39739edad3c03`; all eleven changed files match the reviewed local Git blob hashes.
+
+- [PR #284](https://github.com/1337isnot1337/solved-conjectures/pull/284) contains the normalized tripod criteria, interval boundary rigidity, copied-factor counterexample, frame bound, and stronger lift. Its merge commit is `54a36272109a3911c880ecb05ac7408550176bea`; all seven changed files match the reviewed artifacts.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.
