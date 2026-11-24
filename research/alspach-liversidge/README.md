@@ -25,6 +25,8 @@ In fact, when H is disconnected, weakly valid component orders suffice for a str
 
 In the disjoint case each nontrivial component is itself a minimal zero-sum subset, so every order of it is strong. A minimum-size obstruction to either version cannot be disconnected.
 
+**Deletion constraint on a minimum weak obstruction.** For every a in A other than the possible element a = sum(A), the set B=A\\{a} has nonzero total. If B had a strong order, prepending a would give a weakly valid order of A: a collision of two nonempty prefixes would give a nonempty zero interval entirely in B, which its strong order forbids because the total of B is nonzero. This is impossible. Since all subsets smaller than A are weakly sequenceable, disconnectedness of the minimal-zero-subset hypergraph on B would imply strong sequenceability by the upgrade above. Thus deleting any vertex other than the possible element equal to the total leaves a connected hypergraph, where deletion removes every hyperedge containing that vertex rather than shortening it. In the zero-total case there is no exception. Also, any zero-total strong obstruction forces every single-element deletion to be a nonzero-total strong obstruction, by the same argument and the equivalence of weak and strong at zero total.
+
 ## 2. Order-independent finite witness compression
 
 **Proposition.** Every zero-sum subset pattern on n distinct nonzero elements of an abelian group has an exact realization on n distinct nonzero elements in a finite abelian group. If the integral span of the zero-subset indicators has rank r, the realizing group can be taken of order less than
