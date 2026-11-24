@@ -40,6 +40,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | ⬜ |
 | [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ |
 | [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
+| [Sagan–Swanson’s q-Stirling normality conjecture](results/sagan-swanson-q-stirling-normality/) | ⬜ |
+| [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | ⬜ |
 | [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ⬜ |
 | [Chow’s type-D Eulerian interlacing conjecture](results/chow-type-d/) | ⬜ |
 | [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ |

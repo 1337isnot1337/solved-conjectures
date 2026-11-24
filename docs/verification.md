@@ -771,3 +771,7 @@ Run `python3 results/fmp-cylindric/check.py` to reproduce the exact negative coe
 ## Juhnke arbitrary-step path checker
 
 Run `python3 results/juhnke-lattice-paths/check.py` to replay the independent exact finite checks supporting the all-dimensional written proof.
+
+## Lassalle first-value log-concavity enclosure
+
+Run `python3 results/defant-engen-miller-lassalle/interval_check.py` to verify the finite integer rows and the 205 outward-rounded interval boxes in the all-order proof. The mathematical bridge from those boxes to every later row appears in the proof.
