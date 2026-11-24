@@ -118,7 +118,7 @@ therefore does not supply the intended BSS separation.
 
 ## 3. An exact averaging identity over all primes and precision levels
 
-Let `R={r_1,...,r_N}` be a nonempty finite set of distinct integers, so `N>=1`. The empty-root case needs no bound. Put
+Let `R={r_1,...,r_N}` be any finite nonempty set of distinct integers. Put
 
 ```math
 \Delta_R=\prod_{i<j}|r_i-r_j|\in\mathbb Z_{>0},
@@ -362,6 +362,102 @@ therefore does not repair the missing cancellation bound. An invariant
 would have to account for how this large cancellation can create
 *distinct integer roots*, not just for the cancellation amount.
 
+## 5.2. Even the number of newly appearing primes can be superpolynomial
+
+Discarding valuation multiplicities and counting only prime support does
+not give a polynomial gate budget either. The following proof does not
+need the Bang--Zsigmondy primitive-divisor theorem.
+
+### Lemma 5.3 (an elementary cyclotomic support bound)
+
+If `M` is a positive squarefree integer with `k>=1` distinct prime factors, then
+
+```math
+\omega(2^M-1)\ge 2^{k-1},
+\tag{5.3}
+```
+
+where `omega` counts distinct prime divisors.
+
+Proof. Let `Phi_d` be the `d`th cyclotomic polynomial. The usual
+factorization into roots of each exact order gives
+
+```math
+2^M-1=\prod_{d\mid M}\Phi_d(2).
+```
+
+For every `d>1`, `Phi_d(2)` is an integer greater than one: it is a
+product of factors `2-zeta` over primitive roots of unity `zeta != 1`,
+each with absolute value greater than one. Conjugate factors have
+positive product; the only possible real factor is `2-(-1)=3`.
+The integrality of `Phi_d` also follows inductively from
+`x^d-1=product_{e|d}Phi_e(x)` by division by monic integer polynomials.
+Thus there are `2^k-1` nonunit factors to cover by prime divisors.
+
+Every prime `ell` dividing these values is odd. If `ell` does not
+divide `d` and `ell | Phi_d(2)`, then the multiplicative order of
+`2` modulo `ell` equals `d`. Indeed `x^d-1` is squarefree modulo
+`ell`, since its derivative `d x^{d-1}` has no common root with it.
+Hence its different cyclotomic factors cannot have a common root.
+If `2` had order a proper divisor `r` of `d`, some factor of
+`x^r-1` would share the root `2` with `Phi_d`, a contradiction.
+
+If instead `ell | d`, write `d=ell e`; squarefreeness gives
+`ell` not dividing `e`. The roots-of-unity factorization gives
+
+```math
+\Phi_e(x^\ell)=\Phi_e(x)\Phi_{\ell e}(x).
+```
+
+Reducing modulo `ell` and using Frobenius, then cancelling the monic
+nonzero polynomial `Phi_e`, yields
+
+```math
+\Phi_{\ell e}(x)\equiv\Phi_e(x)^{\ell-1}\pmod\ell.
+```
+
+Therefore `ell | Phi_e(2)`, and the preceding case shows
+`ord_ell(2)=e`. For any fixed prime `ell`, the only possible indices
+among the divisors of `M` whose cyclotomic values it divides are
+
+```math
+d=\mathop{\mathrm{ord}}_\ell(2)
+\quad\hbox{and}\quad
+d=\ell\mathop{\mathrm{ord}}_\ell(2).
+```
+
+A prime therefore covers at most two of the `2^k-1` nonunit factors.
+This proves `omega(2^M-1) >= ceil((2^k-1)/2)=2^{k-1}`.
+
+### Corollary 5.4 (prime support cannot be polynomially gate bounded)
+
+Let `p_1,...,p_k` be the first `k` primes and `M_k=product_j p_j`.
+Bertrand's postulate gives `p_j <= 2^j`, hence
+`log_2(M_k) <= k(k+1)/2`. Binary exponentiation, starting with
+`2=1+1`, computes `2^{M_k}-1` with at most
+
+```math
+2\lfloor\log_2 M_k\rfloor+2\le k(k+1)+2
+```
+
+constant-free gates. Lemma 5.3 gives at least `2^{k-1}` distinct prime
+divisors of this output. In particular, its final subtraction takes
+operands whose prime supports are `{2}` and the empty set and produces
+superpolynomially many distinct prime divisors relative to the whole
+program length.
+
+The only prime-distribution input here is Bertrand's postulate, in the
+form that a prime exists in `(n,2n]` for every integer `n>=1`.
+Primary source: P. Erdős, *Beweis eines Satzes von Tschebyschef*,
+Acta Sci. Math. (Szeged) **5** (1932), pp. 194--198; main unnumbered
+theorem stated on p. 194, original published version:
+<https://www.renyi.hu/~p_erdos/1932-01.pdf>.
+
+This is a counterexample to a proposed invariant, not to tau:
+the output is a nonzero constant and has no roots. It shows why
+bounding the number of possible prime coordinates of a short
+coefficient cannot replace the missing root-count argument.
+
 ## 6. What a successful arbitrary-root argument still needs
 
 The exact identity (3.1) is a valid prime-averaging lemma for every root
@@ -388,6 +484,44 @@ Primary source:
 [Koiran--Portier--Rojas, arXiv:1309.0486v1](https://arxiv.org/html/1309.0486v1),
 Definition 1.13, Theorems 1.2 and 1.14(I), Example 1.16.
 
+## 6.1. A restricted circuit class where prime constraints do propagate
+
+A separate attack through iterated squaring leads to a relevant existing
+result. Shawn Walker, *Coefficient growth in square chains*,
+[arXiv:1902.11164v1](https://arxiv.org/pdf/1902.11164) (2019),
+Proposition 2.3, proves the following. If
+
+```math
+P_0(x)=x,\qquad P_j(x)=P_{j-1}(x)^2-c_j,\qquad P(x)=P_k(x)
+```
+
+splits completely over the integers, then every prime `p<=2^{j-1}`
+divides `c_j`. If `c_k!=0` and `j>=5`, then `log c_j>2^{j-2}`.
+The prime constraint comes from Proposition 1.1 and Corollary 2.1:
+over an odd-characteristic field, a fully split chain with nonzero final
+coefficient has at least `2^{k-1}+1` distinct roots; the finite field
+cannot accommodate that many. The case of the prime two is handled
+separately by Lemma 2.2. These are imported results.
+
+Here is the precise computational consequence. If every `c_j` has
+bitlength at most `B`, then for `k>=5` and `c_k!=0`,
+
+```math
+N(P)\le 2^k<4\log c_k\le 4B\log2.
+```
+
+For `k<=4`, degree gives `N(P)<=16`. Trailing zero coefficients merely
+square a shorter chain and can be removed without changing its distinct
+roots. Thus explicit coefficient bitlength gives a polynomial root bound
+for these completely split chains. A small constant-free program can
+generate coefficients of exponentially large bitlength, so this does not
+give a polynomial bound in tau.
+
+The structural limit is also explicit. Backward factorization of a square
+minus a square forces each shorter chain to split. A general addition
+gate does not preserve this property. No extension of this propagation
+argument to arbitrary shared straight-line programs is established here.
+
 ## 7. Verification record
 
 The arguments above are mathematical proofs, except the explicitly missing
@@ -397,3 +531,8 @@ Counterexample 4.2 for `p=2,3,5` with ten evaluation points each. Finite
 checks are consistency checks only; they do not establish tau or the
 general statements, which require the displayed proofs. No Lean
 formalization was performed.
+
+Exact SymPy computations also checked Lemma 5.3 for the first four
+primorials `M=2,6,30,210`: the respective numbers of distinct prime
+divisors of `2^M-1` are `1,2,6,20`, and each prime occurs in at most two
+of the values `Phi_d(2)` with `d|M`.

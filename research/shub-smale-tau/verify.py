@@ -4,6 +4,8 @@
 from fractions import Fraction
 from itertools import combinations, product
 from math import comb, factorial, gcd, prod
+from pathlib import Path
+import json
 
 
 def trim(a):
@@ -40,6 +42,17 @@ def peval(a, x):
 
 def derivative(a):
     return trim([i * a[i] for i in range(1, len(a))] or [0])
+
+
+def polynomial_gcd(a, b):
+    a, b = list(map(Fraction, a)), list(map(Fraction, b))
+    while b != [0]:
+        rem = list(a)
+        while rem != [0] and len(rem) >= len(b):
+            shift, c = len(rem) - len(b), rem[-1] / b[-1]
+            rem = add(rem, [0] * shift + scale(b, -c))
+        a, b = b, rem
+    return scale(a, Fraction(1, a[-1]))
 
 
 def translate(a, c):
@@ -177,6 +190,14 @@ def test_all_cuts():
             r = min(len(aa), len(bb))
             det = determinant([[(a + b) ** (2 ** n) for b in bb[:r]] for a in aa[:r]])
             assert det * (-1) ** (r * (r - 1) // 2) > 0
+            d = 2 ** n - 1
+            coefficient_b = [b - 1 for b in bb[:r]]
+            coefficients = [[comb(d, a + b) for b in coefficient_b] for a in aa[:r]]
+            assert determinant(coefficients) * (-1) ** (r * (r - 1) // 2) > 0
+            coefficients[0][0] -= 1
+            assert determinant(coefficients) * (-1) ** (r * (r - 1) // 2) > 0
+            squarefree_values = [[(a + b + 1) ** d - 1 for b in bb[:r]] for a in aa[:r]]
+            assert determinant(squarefree_values) * (-1) ** (r * (r - 1) // 2) > 0
             count += 1
     for degree in range(5):
         aa, bb = [0, 1, 4, 8], [1, 3, 7, 10]
@@ -184,7 +205,7 @@ def test_all_cuts():
             for rows, cols in product(combinations(aa, r), combinations(bb, r)):
                 det = determinant([[(a + b) ** degree for b in cols] for a in rows])
                 assert det * (-1) ** (r * (r - 1) // 2) > 0
-    print(f'all nontrivial unordered digit cuts, n=2..7: {count}; minor signs checked')
+    print(f'all nontrivial unordered digit cuts, n=2..7: {count}; power, binomial and squarefree ranks checked')
 
 
 def test_cofactor_and_jet_masking():
@@ -207,6 +228,24 @@ def test_cofactor_and_jet_masking():
             assert all(peval(fourth_power, r) == 0 for r in roots)
             fourth_power = derivative(fourth_power)
     print('off-root interpolation, identical first jets and bounded-jet masking: passed')
+
+
+def test_explicit_squarefree_jet_polynomial():
+    for n in range(1, 9):
+        h = [0]
+        for j in range(1, n + 1):
+            other = root_product(k for k in range(1, n + 1) if k != j)
+            h = add(h, scale(mul([-j, 1], mul(other, other)), comb(n - 1, j - 1) ** 2))
+        assert len(h) - 1 == 2 * n - 1 and h[-1] > 0
+        assert all(peval(h, j) == 0 for j in range(1, n + 1))
+        assert all(peval(derivative(h), j) == factorial(n - 1) ** 2 for j in range(1, n + 1))
+        assert polynomial_gcd(h, derivative(h)) == [1]
+        content = gcd(*h)
+        primitive = [c // content for c in h]
+        assert gcd(*primitive) == 1
+        assert all(peval(derivative(primitive), j) == factorial(n - 1) ** 2 // content
+                   for j in range(1, n + 1))
+    print('explicit primitive squarefree equal-jet polynomial, N=1..8: passed')
 
 
 def test_integrality_and_prime_collisions():
@@ -269,13 +308,49 @@ def test_p_adic_example():
     print('Koiran-Portier-Rojas example through n=3, p=2,3,5: finite Hensel checks passed')
 
 
+def test_prime_support_certificates():
+    data = json.loads(Path(__file__).with_name('prime_support_examples.json').read_text())
+    counts = []
+    for example in data['examples']:
+        k, m = example['k'], example['M']
+        mf = factor_integer(m)
+        assert len(mf) == k and all(exponent == 1 for exponent in mf.values())
+        target = 2 ** m - 1
+        assert int(example['value']) == target
+        factors = example['factorization']
+        assert len({p for p, _ in factors}) == len(factors)
+        assert all(factor_integer(p) == {p: 1} and e >= 1 for p, e in factors)
+        assert prod(p ** e for p, e in factors) == target
+        divisors = [d for d in range(1, m + 1) if m % d == 0]
+        phi = {}
+        for d in divisors:
+            denom = prod(value for e, value in phi.items() if d % e == 0)
+            assert (2 ** d - 1) % denom == 0
+            phi[d] = (2 ** d - 1) // denom
+        listed = example['cyclotomic_values']
+        assert [item['index'] for item in listed] == divisors[1:]
+        for item in listed:
+            d, value, factors_d = item['index'], int(item['value']), item['factorization']
+            assert value == phi[d] > 1
+            assert all(factor_integer(p) == {p: 1} and e >= 1 for p, e in factors_d)
+            assert prod(p ** e for p, e in factors_d) == value
+        incidence = {str(p): [d for d in divisors[1:] if phi[d] % p == 0] for p, _ in factors}
+        assert incidence == example['prime_cyclotomic_incidence']
+        assert all(1 <= len(indices) <= 2 for indices in incidence.values())
+        assert len(factors) >= 2 ** (k - 1)
+        counts.append(len(factors))
+    print(f'cyclotomic support certificates for M=2,6,30,210: prime counts {counts}')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
     test_cofactor_and_jet_masking()
+    test_explicit_squarefree_jet_polynomial()
     test_integrality_and_prime_collisions()
     test_modular_average()
     test_p_adic_example()
+    test_prime_support_certificates()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 

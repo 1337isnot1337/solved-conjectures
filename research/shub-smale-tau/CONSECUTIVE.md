@@ -15,7 +15,7 @@ F_n(x)=\prod_{j=1}^{2^n}(x-j),\qquad
 
 The weak consecutive-root target is that `mu(n)` is not bounded by a polynomial in `n`. Written with quantifiers, for every real `A > 0` and integer `d >= 0` there exists an `n` with `mu(n) > A(1+n)^d`.
 
-The full tau conjecture would give `mu(n) >= 2^(n/C)-1` for an absolute `C`, but the consecutive-root target does not imply the full conjecture. A lower bound only for `tau(F_n)` does not establish a lower bound for `mu(n)`.
+The full tau conjecture would give `mu(n) >= 2^(n/C)-1` for an absolute `C`, but the consecutive-root target alone does not establish the full conjecture; no converse is proved here. A lower bound only for `tau(F_n)` does not establish a lower bound for `mu(n)`.
 
 The source for the established BSS connection is Shub and Smale, *On the intractability of Hilbert's Nullstellensatz and an algebraic version of NP != P?*, supplied preprint dated June 21, 1994, especially Section 3 Theorem 1 and Section 4 Propositions 1–2:
 
@@ -100,7 +100,7 @@ Partitioning the roots into two halves gives
 F_{n+1}(x)=F_n(x)F_n(x-2^n).
 ```
 
-More generally, if `q=2^k`, `r=2^(n-k)`, then
+More generally, for `0 <= k <= n`, if `q=2^k`, `r=2^(n-k)`, then
 
 ```math
 F_n(x)=\prod_{b=0}^{r-1}F_k(x-qb)
@@ -166,6 +166,84 @@ This disproves any proposed polynomial upper bound on ordinary evaluation flatte
 The same example applies to flattenings of the coefficient tensor of the unique multilinear polynomial representing the evaluations on the Boolean cube. Evaluation and multilinear coefficient tensors differ by an invertible `2` by `2` basis change on every digit, namely `[[1,0],[1,1]]`. At a cut, the change is left and right multiplication by invertible Kronecker products, so it preserves rank.
 
 This does not rule out every invariant inspired by a simultaneous-cut argument. It rules out the specific premise that ordinary digit-cut ranks stay polynomially small for unrestricted short univariate programs.
+
+### 3.3 The binary coefficient tensor has the same obstruction
+
+One might instead use digit cuts of coefficient indices, avoiding evaluation at a short program's very large values. The following family rules out the corresponding ordinary-rank premise as well.
+
+For a polynomial of degree at most `2^n-1`, define its full binary coefficient tensor by
+
+```math
+\mathcal C_n(f)(b_0,\ldots,b_{n-1})
+=[x^{\sum_i2^i b_i}]f(x).
+```
+
+**Theorem 3.3.** For `n >= 1` and
+
+```math
+g_n(x)=(1+x)^{2^n-1},
+```
+
+there is a constant-free program of length at most `2n-1`, while every cut of `C_n(g_n)` has rank `2^min(|A|,|B|)`.
+
+**Proof of the circuit bound.** Set `y=1+x`, `p_1=y`, and `p_(k+1)=p_k^2 y`. The exponent recurrence is `e_(k+1)=2e_k+1`, so `p_n=y^(2^n-1)`. The initial addition costs one gate, and every later stage costs two multiplications.
+
+**Binomial minor lemma.** Let `D` be a nonnegative integer. Suppose `a_1<...<a_r` and `b_1<...<b_r` are nonnegative integers and `a_r+b_r<=D`. Then
+
+```math
+\det\left[\binom D{a_i+b_j}\right]_{i,j=1}^r
+```
+
+is nonzero with sign `(-1)^(r(r-1)/2)`.
+
+To prove the lemma, index a finite matrix `T` by all integers in the interval from `-b_r` to `a_r`, and put `T_(u,v)=1` if `u=v` or `u=v+1`, with all other entries zero. Every minor of `T` is nonnegative: a nonzero permutation term must match ordered columns to ordered rows, since two crossed matches would require both `u_i>=v_j` and `u_j<=v_i+1` with `u_i<u_j` and `v_i<v_j`, an impossibility. Thus at most the identity matching is nonzero, and each minor is either zero or one. Cauchy–Binet implies that every minor of `T^D` is nonnegative. Its entries are
+
+```math
+(T^D)_{u,v}=\binom D{u-v},
+```
+
+because each step holds its position or moves up by one. Paths connecting indices in this interval never have to leave it.
+
+Reverse the columns in the claimed determinant, and set `c_j=-b_(r+1-j)`. This gives a minor of `T^D` with ordered rows `a_j` and ordered columns `c_j`. It is strictly positive. For `D>0`, define intermediate indices
+
+```math
+u_j(t)=\left\lceil\frac{(D-t)c_j+t a_j}{D}\right\rceil,
+\qquad t=0,\ldots,D.
+```
+
+Every increment `u_j(t+1)-u_j(t)` is zero or one because `0<=a_j-c_j<=D`. The indices remain strictly ordered: both endpoint gaps are at least one, and convex interpolation followed by a ceiling preserves this separation. Hence at every step the minor of `T` with rows `u_j(t+1)` and columns `u_j(t)` has all its diagonal entries equal to one, and its determinant is one by the preceding noncrossing argument. The iterated Cauchy–Binet sum therefore contains a strictly positive term. When `D=0`, the hypotheses allow only the one-by-one case, which is immediate. Restoring the original column order gives the stated sign.
+
+For Theorem 3.3, use `D=2^n-1`, with `a` and `b` the exponent contributions from the two sides of the digit cut. They are distinct nonnegative integers, and every sum is at most `D`. Apply the binomial minor lemma to a largest square submatrix. This proves full rank.
+
+The family has exactly one distinct integer root, namely `-1`, and has degree exponential in its program length. Thus switching from evaluation cuts to exponent-digit coefficient cuts does not make ordinary flattening rank polynomially bounded under unrestricted constant-free programs. This does not exclude a measure that records more than those ranks or uses additional arithmetic information.
+
+### 3.4 Squarefree normalization does not repair either rank measure
+
+The preceding two rank examples have high-multiplicity roots. Removing repeated factors does not repair either rank bound.
+
+**Corollary 3.4.** For `n>=2`, the polynomial
+
+```math
+q_n(x)=(1+x)^{2^n-1}-1
+```
+
+has a constant-free program of length at most `2n`, is squarefree, and has exactly one integer root. Both its binary coefficient tensor and its binary evaluation tensor have maximal rank at every cut.
+
+**Proof.** The circuit bound follows from Theorem 3.3 and one subtraction. Put `D=2^n-1`, which is positive and odd. The derivative is `D(1+x)^(D-1)`, and its only possible zero `x=-1` is not a zero of `q_n`. Hence `q_n` is squarefree over characteristic zero. If an integer `a` is a root, `(1+a)^D=1`; oddness gives `a=0`, which is indeed a root.
+
+For a nontrivial cut, the smaller dimension is an even number `r=2^min(|A|,|B|)`. For the coefficient tensor, choose any `r` sorted row and column indices containing zero on both sides. Relative to the binomial matrix in Theorem 3.3, only the top-left entry is decreased by one. If `M` is the original square submatrix,
+
+```math
+\det(M-E_{11})=\det(M)-\operatorname{cofactor}_{11}(M).
+```
+
+By the binomial minor lemma, the determinant has sign `sigma_r=(-1)^(r(r-1)/2)`, and its indicated cofactor has sign `sigma_(r-1)=-sigma_r` because `r` is even. Subtraction therefore adds magnitudes, giving a nonzero determinant. This proves maximal coefficient rank.
+
+For evaluation rank, the entries are `(a_i+b_j)^D-1` with distinct nonnegative `a_i` and distinct positive `b_j` (absorb the input's shift of two into `b_j`). We claim that every even-order minor of size `r<=D+1` has sign `sigma_r` and is nonzero. Repeat the binomial Cauchy–Binet proof of Theorem 3.1, but replace the `k=0` row of the right factor by `b_j^D-1`. Terms not selecting `k=0` are unchanged. In a term selecting `0=k_1<k_2<...<k_r`, expand this modified right determinant as the original determinant minus the determinant whose first row is one and whose other rows have exponents `D-k_2,...,D-k_r`, retaining the positive binomial factors. If one of these other exponents is zero, the correction determinant is zero. Otherwise all are positive; reversing their order leaves exponent zero first and yields a strictly positive generalized Vandermonde determinant with sign `sigma_(r-1)=-sigma_r`. Thus the correction reinforces, rather than cancels, the original determinant. Every Cauchy–Binet summand still has sign `sigma_r` or is zero, and the choice `k_i=i-1` is nonzero. The claim follows. Apply it to a largest square submatrix of the evaluation cut.
+
+At trivial cuts the tensors are nonzero vectors, so the rank is one. This completes the proof.
+
+Consequently, neither high degree from repeated factors nor a complicated integer root set is needed for the rank obstruction: a squarefree short program with just one integer root already has full rank simultaneously at every coefficient and evaluation cut.
 
 ## 4. Unknown cofactors erase finite evaluation data
 
