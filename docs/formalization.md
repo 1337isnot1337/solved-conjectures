@@ -1,5 +1,15 @@
 # Full formalization campaign
 
+## Ferroni–Higashitani’s first-three interior Ehrhart question
+
+The [interior lattice-point theorem](../lean/Conjectures/FerroniHigashitani.lean)
+uses the dimension-170 Cayley boxes in the written proof. The refined lattice
+is transported to the ordinary integer coordinate lattice by an explicit real
+linear equivalence. Lean verifies finite convex-hull generators, integer
+decomposition, the topological interior, the coset bijection and the exact
+first-three inequality. A direct polynomial-evaluation bridge to the source
+question remains open at this research checkpoint.
+
 
 
 ## Németh–Seberry–Shu’s biased Fourier supports

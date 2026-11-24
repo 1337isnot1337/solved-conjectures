@@ -9,6 +9,16 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FerroniHigashitani.oldPoint_idp,
+    `FerroniHigashitani.refined_closed_translate,
+    `FerroniHigashitani.refined_strict_translate,
+    `FerroniHigashitani.interior_closedSlice,
+    `FerroniHigashitani.closedSlice_one_eq_hull,
+    `FerroniHigashitani.mem_standardLattice_toBasis_iff,
+    `FerroniHigashitani.witness_latticePolytope,
+    `FerroniHigashitani.witness_idp,
+    `FerroniHigashitani.card_witnessInterior,
+    `FerroniHigashitani.first_three_interior_ehrhart_counterexample,
     `NemethSeberryShu.inclusionProbability_fourier,
     `NemethSeberryShu.select_real_modes,
     `NemethSeberryShu.approximate_all_fourier_modes,
