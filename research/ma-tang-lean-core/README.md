@@ -1,0 +1,19 @@
+# Ma–Tang’s random subset-sum threshold conjecture
+
+**Incomplete formalization.** Checked deterministic components only. This is a work-in-progress checkpoint on research; no full result is registered or counted.
+
+The existing [main result](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/ma-tang-random-subset-sums), [recorded proof](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/ma-tang-random-subset-sums/PROOF.md), and [discovery issue #490](https://github.com/1337isnot1337/solved-conjectures/issues/490) resolve Ma and Tang's Problem 4.1 of [arXiv:2602.05768v2](https://arxiv.org/html/2602.05768v2#S4). This formalization follows equations (4)–(5) of that proof, credits Jie Ma and Quanyu Tang as proposers and the written proof's existing authors, and claims no new conjecture resolution or exclusive priority.
+
+## Verified scope
+
+- [MaTangCoreBalance](../../lean/Conjectures/MaTangCoreBalance.lean): ternary sign balancing for arbitrary grouped integer coefficients, including zeros.
+- [MaTangCoreIndexed](../../lean/Conjectures/MaTangCoreIndexed.lean): ordered labeled coefficient positions, exact projection to the original list, and a binary selection with constant residue under every type-dependent flip fixing type zero. Conditional deterministic noncoverage.
+- [MaTangCoreMatrix](../../lean/Conjectures/MaTangCoreMatrix.lean): literal binary matrix multiplication over F₂ and XOR linearity; an actual missing pair, with first coordinate in the image of the matrix and ternary residue in {0,1,2}, under an explicit spanning representation of the kernel by the supplied encoded columns. The endpoint is `MaTangCoreMatrix.exists_missing_matrix_pair`.
+
+[Reproduction script](verify_matrix.py) and [exact log](verification/matrix-reproduction.log): strict compilation against Lean 4.35.0, transitive axiom checking for all 74 source-named declarations (only the three standard axioms), and stock kernel replay for all three modules. The audit is scoped to source-named declarations, not the full environment-wide repository audit. No Mathlib import is needed for these modules. The full aggregate check and hosted CI have not passed.
+
+## Remaining obligations
+
+The kernel spanning hypothesis must be connected to a basis of the specified dimension, and the law of the sampled kernel must be proved. The exact singleton occupancy count and its normalization, probability bounds, conditioning on distinct samples, asymptotic estimates, monotonicity and the universal upper bound all remain outside this checked scope. Uncompiled Mathlib alternatives are kept in [draft PR #583](https://github.com/1337isnot1337/solved-conjectures/pull/583); they are not incorporated into this checkpoint.
+
+Original campaign start: 2026-11-24 18:59 UTC. Pyroam recovered and the scoped proofs passed on 24 November. Broad compiler imports and the Lake dependency setup encountered process termination under the constrained execution environment. Full verified result count for this entry: zero.

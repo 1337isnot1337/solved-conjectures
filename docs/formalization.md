@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ma–Tang’s random subset-sum threshold conjecture
+
+[Incomplete deterministic checkpoint](../research/ma-tang-lean-core/README.md): the three Init-only modules prove ternary sign balancing, ordered-position fiber invariance, binary-matrix XOR linearity, and a missing pair in the correctly dimensioned binary/ternary target assuming the explicit encoded-kernel spanning representation. Strict Lean 4.35.0 compilation, transitive axiom checks of all 74 source-named declarations and stock replay passed ([log](../research/ma-tang-lean-core/verification/matrix-reproduction.log)). The environment-wide audit, full repository gate, kernel-basis distribution, probability and limiting statements remain unverified. Count zero; uncompiled alternatives remain in [draft #583](https://github.com/1337isnot1337/solved-conjectures/pull/583).
+
 ## Mazák–Zrubák conjecture on complete graphs minus an edge
 
 The actual real circular coloring reduction and Hall construction of a spanning order of every actual edge are checked in sixteen modules (ten new, six reused). Strict builds, the complete audit of 526 declarations (417 theorems, zero private declarations, twelve required endpoints), and exact stock-kernel replay passed. Only `propext`, `Classical.choice`, and `Quot.sound` occur. Steps 4–8 and the final index equality remain outside this checkpoint; the result is incomplete and its complete-result count is zero. [Scope](../results/circular-index-complete-minus-edge/FORMALIZATION.md), [independent review](../results/circular-index-complete-minus-edge/LEAN_REVIEW.md), and [receipt](verification/lean-circular-complete-minus-edge-partial-20261124-162051/receipt.json).
