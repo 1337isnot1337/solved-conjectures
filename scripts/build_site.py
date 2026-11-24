@@ -69,6 +69,7 @@ STATUS_LABEL_SLUGS = {
     "Hajdu–Sárközy’s shifted-power perturbation conjecture": "hajdu-sarkozy-shifted-power-perturbations",
     "Hajdu–Sárközy’s shifted-product total primitivity conjecture": "hajdu-sarkozy-shifted-products",
     "Hegyvári’s conjecture": "hegyvari-floor-doubling",
+    "Revised Tan–Zhou conjecture": "revised-tan-zhou-luroth",
     "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture": "separable-derangements-limit",
     "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture": "separable-derangements-asymptotic",
     "Fan’s interval Riesz capacity-ratio conjecture": "fan-interval-riesz-capacity",

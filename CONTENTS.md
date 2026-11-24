@@ -306,6 +306,7 @@ Both complete arguments passed independent internal mathematical review. They ar
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/PROOF.md) | Natalchenko–Sagdeev’s main packing conjecture for arbitrary gap counts. The same formula gives the circle parameter in their Section 4 question. | ☑ | [Proof](results/nonmixed-gap-packing/PROOF.md) and [finite checks](results/nonmixed-gap-packing/verify.py) |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/PROOF.md) | For every triple of positive integer differences, the extremal density equals the circle rotation bound. One pair sum is a period of an optimal set. | ☑ | [Proof](results/haralambis-three-differences/PROOF.md) and [certificate checks](results/haralambis-three-differences/verify.py) |
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. | Not formalized | [Proof](results/hegyvari-floor-doubling/PROOF.md) · [Audit](results/hegyvari-floor-doubling/AUDIT.md) |
+| [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. | Not formalized | [Proof](results/revised-tan-zhou-luroth/PROOF.md) · [Audit](results/revised-tan-zhou-luroth/AUDIT.md) |
 
 ## Lonely runners
 
