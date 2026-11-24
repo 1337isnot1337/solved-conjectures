@@ -2,11 +2,12 @@ name: check boolean hamiltonicity research lemmas
 
 on:
   push:
-    branches: [main]
+    branches: [research]
     paths:
       - 'research/boolean-hamiltonicity/**'
       - '.github/workflows/boolean-hamiltonicity.yml'
   pull_request:
+    branches: [research]
     paths:
       - 'research/boolean-hamiltonicity/**'
       - '.github/workflows/boolean-hamiltonicity.yml'

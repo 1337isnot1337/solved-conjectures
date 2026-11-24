@@ -3,7 +3,7 @@ name: Lean unfair-bet overlap candidate
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [research]
     paths:
       - 'lean/Conjectures/EkhadZeilbergerOverlap.lean'
       - 'lean/Conjectures/EkhadZeilbergerWords.lean'

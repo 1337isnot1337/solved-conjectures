@@ -2,10 +2,12 @@ name: shub smale tau research checks
 
 on:
   push:
+    branches: [research]
     paths:
       - 'research/shub-smale-tau/**'
       - '.github/workflows/shub-smale-tau.yml'
   pull_request:
+    branches: [research]
     paths:
       - 'research/shub-smale-tau/**'
       - '.github/workflows/shub-smale-tau.yml'
