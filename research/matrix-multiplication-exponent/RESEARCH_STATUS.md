@@ -120,6 +120,14 @@ The [tetrahedral formulation](TETRAHEDRAL_OVERHEAD.md) gives a second exact targ
 
 Thus $`\gamma=0`$ is equivalent to the original objective. The written proof includes the conversion between extra source powers and source-only full-unit overhead. A finite determinant obstruction excludes $`H_q\unrhd K_q`$, even with common full-unit catalysts, while all ordinary cut flattenings agree. That finite obstruction is compatible with vanishing overhead exponent.
 
+## Weighted targets and relaxed repair criteria
+
+[WEIGHTED_SUPPORT_REPAIRS.md](WEIGHTED_SUPPORT_REPAIRS.md) separates two facts. Li's arXiv:2611.04175v1, Lemma 2.9 and Corollary 2.10, prove asymptotic untwisting of full matrix multiplication support and equality of the support-rank exponent with the usual exponent. An independently checked adaptation of the Landsberg--Michałek one-puncture argument proves that every nonzero weighting of full size-n support has border rank at least $`2n^2-n+1`$ for $`n\ge3`$. Its triangular Koszul pivots do not depend on coefficient values. Thus the deleted-graft source of budget $`8128`$ cannot even produce an arbitrary fully supported weighted $`M_{64}`$, whose border rank is at least $`8129`$.
+
+That finite obstruction leaves a weaker constructive route open. Li's Theorem 2.11 gives $`m^{\omega/3}\le r`$ for a partial weighted matrix multiplication tensor with $`m`$ nonzero cycles and border rank at most $`r`$. An unbounded family with $`m=n^{3-o(1)}`$ and $`r=n^{2+o(1)}`$ would suffice. The note proves explicit sufficient rank and density recurrences, with the initial-density condition stated. The [partial-repair audit](SUN_PARTIAL_REPAIR.md) tests a concrete 44-cycle fresh block: every nonzero weighting has border rank at least eighteen, so the sixteen fresh diagonal labels cannot supply this block on their own. The proof does not identify that diagnostic block with the source's unprinted ordinary maps. Controlling every off-cycle term and a valid next-step source state remains necessary.
+
+The weighted-support argument also extends, by the proved two-free-party separator, to arbitrary nonzero coefficients on full graph-tensor support. The [weighted tetrahedral obstruction](WEIGHTED_TETRAHEDRAL_OBSTRUCTION.md) proves that coefficient changes do not remove the finite or common-unit obstruction. It makes no source-only asymptotic-overhead claim. The [four-party resource certificate](TETRAHEDRAL_RESOURCE_LIMITATION.md) explains why the listed face algorithms, graph bounds, terminal mincuts, and even free intersecting uncrossing cannot improve the existing tetrahedral overhead by recombination on those four labels. It is not a spectral point and does not cover additional auxiliary labels or arbitrary coefficient-sensitive maps.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -148,8 +156,10 @@ python3 check_sun_quotient_budget.py
 python3 check_sun_dense_table.py
 python3 check_sun_active_cell_compression.py
 python3 check_four_party_constraints.py
+python3 check_weighted_mm_koszul_pivots.py
+python3 check_sun_ordinary_partial_block.py
 ```
 
-All scripts except the propagation-local script use Python's standard library; that script also uses SymPy. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+The propagation-local and ordinary-partial-block scripts use SymPy; the others use Python's standard library. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).
