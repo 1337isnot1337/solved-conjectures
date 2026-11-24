@@ -10,8 +10,12 @@ The draft [Lean module](../../lean/Conjectures/MaTangRandomSubsetSumsCore.lean) 
 
 The endpoint `MaTangRandomSubsetSums.not_surjective_of_kernel_columns` is an attempted formalization of the deterministic noncoverage implication, under an explicit fiber representation and no-singleton hypothesis. It is not an asymptotic or probabilistic theorem.
 
+The second draft [kernel module](../../lean/Conjectures/MaTangRandomSubsetSumsKernel.lean) attempts to discharge the representation hypothesis for an actual binary linear map using a basis of its kernel. The endpoints are `kernel_basis_represents_fiber` and `not_surjective_of_kernel_basis`. A canonical finite-dimensional kernel basis is supplied as a definition; no claim is made about its distribution.
+
+A separate standard-library [finite check](check_core.py) passed 6,361 admissible pairs of column labels and coefficients with k ≤ 4 and r ≤ 2, checking every type-constant flip that preserves the zero type. This validates the tested mathematical construction only. It does not establish any Lean theorem.
+
 Remaining:
-- establish the kernel-column representation for the actual random first-coordinate linear map;
+- compile and verify the deterministic basis bridge; connect the basis-independent occupancy condition to the actual random model;
 - prove the uniform-kernel distribution, occupancy probability bound, and conditioning on distinct samples;
 - prove the asymptotic estimates, monotonicity, and the universal upper bound used in the source;
 - compile, audit every owned declaration, and replay the kernel against pinned Lean 4.35.0/Mathlib revision 56a005855ea17e0b0958f73ec801ae140b0a1679; only then consider registering the verified scope.
