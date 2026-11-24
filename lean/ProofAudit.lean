@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `ThueMorseValuation.prefix_eq_prod,
+    `ThueMorseValuation.t_eq_coeff,
+    `ThueMorseValuation.exponent17_witness,
+    `ThueMorseValuation.not_conjecture52,
+    `ThueMorseValuation.exponent2049_residues,
+    `ThueMorseValuation.lifted_coeff,
+    `ThueMorseValuation.uniform_witness,
+    `ThueMorseValuation.not_blockValuation_of_ge_eleven,
     `AgnosticVC.canonicalRep_refinement,
     `AgnosticVC.sampleFamily_vcDim_le,
     `AgnosticVC.continuous_optimizer,

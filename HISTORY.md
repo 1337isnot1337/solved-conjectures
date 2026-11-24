@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Formalize the Thue–Morse valuation disproof
+
+The [Lean proof](lean/Conjectures/ThueMorseValuation.lean) verifies the exponent-17 witness and the full uniform counterexample family for every k ≥ 11. See the [local build, axiom audit and kernel replay receipt](docs/verification/lean-thue-morse-valuation-20261124/receipt.json).
+
 ## 2026-11-24: Prove Pantone–Bóna’s third-largest-terminal asymptotic
 
 The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conjecture 6.2 for $A_{5,3}$ with exact leading constant $9\sqrt3/(16\pi)$. See [issue #382](https://github.com/1337isnot1337/solved-conjectures/issues/382) for source audit and scope. This is distinct from the other asymptotic conjectures in the same paper.
