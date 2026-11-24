@@ -4,6 +4,18 @@
 
 Run `python3 research/complex-bss-p-vs-np/verify_obstructions.py` from the repository root with SymPy installed. The checker validates symbolic Ryser identities for sizes 1–3, interpolation counterexamples, the single-triangle quotient norm, selected jet-masking identities, and two-by-two matching/strategy examples. Its [review record](../research/complex-bss-p-vs-np/REVIEW.md) separates these finite algebraic checks from the arbitrary-size written arguments and the imported circuit lower bound. It does not prove `P_C != NP_C`. No Lean source changed and no local Lean verification of these deductions is claimed. The later singular-witness, dense-boundary, and hypersurface-degeneration arguments were checked by separate internal reviewers as written mathematics. Their analytic and algebraic-geometric steps are not covered by the finite symbolic checker; see the review record for the precise hypotheses and source dependencies.
 
+The later Boolean-potential certificate work has three additional finite checks:
+
+```bash
+python3 research/complex-bss-p-vs-np/verify_boolean_potentials.py
+python3 research/complex-bss-p-vs-np/verify_canonical_potentials.py
+python3 research/complex-bss-p-vs-np/verify_gradient_flow.py
+```
+
+The first uses SymPy to check bounded-rank potentials, full flip averages, Boolean quotient identities, and delta-path certificates on the cases listed in its output. The second checks the block-diagonal cancellation gadget and exact Cauchy recovery coefficients. The third uses exact integer and finite-field arithmetic to certify inconsistency of the stated gradient-flow ansatz at one explicit invertible 7 by 7 matrix: a 106 by 106 augmented minor is 64147 modulo the prime 1000003, while the ansatz has 105 unknown coefficients. These computations verify the stated identities and counterexample, not the general certificate lower bound.
+
+The [critical-incidence argument](../research/complex-bss-p-vs-np/CRITICAL_INCIDENCE_BARRIER.md) has [two independent internal written reviews](../research/complex-bss-p-vs-np/CRITICAL_REVIEW.md) and an integrator review. Its component and differential argument, generic-matrix consequence, singular-witness dependency, and imported permanent lower bound are written mathematics. No Lean or external refereeing is claimed. The target separation remains unresolved.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:

@@ -55,9 +55,27 @@ The hypersurface-degeneration argument was checked by the graph-hardness worker 
 
 These are internal model reviews of written mathematics, not independent human refereeing. No Lean formalization is claimed. The supporting analytic theorem is Riemenschneider's Chapter 6, Theorem 6.22 and Corollary 6.29; the exact source file and digest are recorded in SOURCES.json. Bürgisser arXiv:1812.06828v1, Theorem 2.4 supplies the equivalence between coefficientwise closure and border circuits over C.
 
+## Boolean-potential checkpoint
+
+The full [critical-incidence argument](CRITICAL_INCIDENCE_BARRIER.md) received independent written-file reviews from the graph-hardness and incidence-route workers and a line-by-line integrator review. [CRITICAL_REVIEW.md](CRITICAL_REVIEW.md) records the two worker reports. All reviewed the universal template, ambient derivative identity, selection over the component function field, rational multiplier lift, small derivative circuits, and dimension bound for every projected component. The argument uses the proved singular-witness lemma. It does not use a small Boolean hitting set, a small defining subsystem of the full Boolean equations, an efficient constructor of certificate constants, or a bounded parameter degree. No gap was found in that reviewed proof; no formal verification or human refereeing is claimed.
+
+The bounded-rank construction, one-variable quotient recurrence, and false-input delta paths passed both sibling reviews. The canonical Cauchy-recovery argument, general constructor obstruction, linear and bounded-parameter template arguments, and trace representation lemmas were separately checked. The nonlinear root-line example is retained because it invalidates selecting a few original equations; the critical construction adds derivative equations and therefore avoids that invalid step. The first-derivative flow counterexample was independently recomputed by another worker and the integrator.
+
+Additional executable checks, run from the repository root:
+
+```sh
+python3 research/complex-bss-p-vs-np/verify_boolean_potentials.py
+python3 research/complex-bss-p-vs-np/verify_canonical_potentials.py
+python3 research/complex-bss-p-vs-np/verify_gradient_flow.py
+```
+
+The Boolean script uses SymPy and passed eight exact complex rank-one/rank-two cases up to matrix size five, every Boolean evaluation for those cases, full flip averages at non-Boolean rational tuples, all delta-path tests through dimension six, and two quotient-product identities. The canonical script uses the standard library and passed all four gadget inputs and the Cauchy recovery formula on every formal basis vector through dimension eight. The gradient script uses the standard library, checks primality of 1000003, recomputes det(X)=-9352 and per(X)=53592404 by permutation sums, and obtains the nonzero augmented determinant 64147 modulo that prime. This certifies inconsistency over C of the stated 105-unknown ansatz.
+
+Those finite computations verify the displayed identities and counterexample. They do not verify the general critical-incidence theorem, the analytic jet theorem, the imported border lower bound, or the desired complexity-class separation. The written proofs carry the general arguments. The sound batching lemma is proved for the ordinary sum-check protocol; a short-alternation protocol to which it could usefully be applied is still missing.
+
 ## Remaining obligations
 
-No permanent-graph formula with a fixed or sufficiently small growing number of quantifier blocks has been constructed. No general method recovers the hard interior coefficient from a small arbitrary nonzero multiple of the resultant. The later geometric arguments exclude the positive existential six-resultant incidence and the stated initial graph-factor degeneration under the imported lower bound. They do not provide a replacement bridge.
+No permanent-graph formula with a fixed or sufficiently small growing number of quantifier blocks has been constructed. The unconditional polynomial-size Boolean-potential hypothesis is now excluded by the critical-incidence argument. No implication from P_C=NP_C to such a size bound has been obtained either. No general method recovers the hard interior coefficient from a small arbitrary nonzero multiple of the resultant. The later geometric arguments exclude the positive existential six-resultant incidence and the stated initial graph-factor degeneration under the imported lower bound. They do not provide a replacement bridge.
 
 The distinction between Bürgisser's proved Theorem 1.1 and his Conjecture 1.1 is unchanged. The conclusion remains research status: HN_C outside P_C has not been proved here.
 
