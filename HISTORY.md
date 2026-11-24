@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-23 — Anchored cofactor extraction and arithmetic selection
+
+The [Shub–Smale τ research](research/shub-smale-tau/README.md), tracked in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260), gives an endpoint-anchored extraction from a consecutive-root multiple with cost polynomial in the unknown cofactor's degree. A division-free quotient matrix makes the output-degree independence explicit. The degree of an unrestricted cofactor may still be exponential in circuit length.
+
+The checkpoint also proves an integer recurrence for finite jets of a coalescing Boolean inverse, identifies the global coefficient field of a selected Frobenius action, preserves an explicit Newton lift that never becomes exact at finite precision, and extends square-chain prime divisibility to dense integer root sets with an unknown cofactor. The elliptic specialization bound is labeled as a consequence of Mazur's theorem and standard division-polynomial identities. Imported theorem versions, internal reviews and exact finite checks are recorded separately. Citation autolinks damaged by an earlier math-format conversion are repaired.
+
+No full τ bound, counterexample, unrestricted all-multiples lower bound or BSS separation is claimed. The work remains in research, with no Results-table or Lean-status promotion.
+
 ## 2026-11-23 — Continuous finite-fiber verification and pole-cluster obstructions
 
 The [complex BSS campaign](research/complex-bss-p-vs-np/README.md) gives an actual uniform three-block cyclic finite-fiber verifier, with soundness for all complex matrices and explicit exponential-size completeness. Polynomial-size completeness remains unproved. Finite identity tests exclude polynomial root support and several multiplicity restrictions, with complete witnesses and charged circuit bounds. A finite-etale moving-challenge conversion retains its generic admissibility hypothesis and records exact collision, escape, and rational-sampling failures. Separate counterexamples show cancellation by a relative-invariant resultant cofactor and a permanent coefficient in the first reciprocal trace of a finite pole cluster of a short irreducible denominator; escaping poles carry the opposite coefficient. Internal adversarial reviews and source checks accompany the notes. The HN separation and unrestricted-multiple extraction remain unresolved, and [issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248) remains active. No solved-results or Lean-status entry is added.

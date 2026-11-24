@@ -170,7 +170,7 @@ This records the failed overhead in the attempted reduction. The required select
 
 The later ECCC version of Alekseev–Grigoriev–Hirsch–Tzameret is Revision 1 of TR19-142, dated 28 December 2022:
 
-\lt https://eccc.weizmann.ac.il/report/2019/142/revision/1/download/>.
+<https://eccc.weizmann.ac.il/report/2019/142/revision/1/download/>.
 
 Its Theorem 4.13 is the updated numbering for the rational-parameter IPS result cited as Theorem 3.9 in arXiv:1911.06738v1. Section 4.2.4 writes the multilinear inverse as a sum over Boolean assignments of rational functions. It explicitly distinguishes this expression from ordinary VNP membership, because the reciprocal denominator depends on the summation variables; it introduces a class denoted $\mathrm{VNP}_{\mathrm{div}}^0$ for such expressions. This source does not provide the transfer to the accepted pinned VNP theorem.
 
@@ -394,7 +394,7 @@ roots from the bound. Its Theorem 2 instead gives a small numerator
 and denominator followed by a truncated division that may have a
 nonunit denominator; it does not justify the Boolean quotient step.
 
-Source: \lt https://www.cse.iitk.ac.in/users/nitin/papers/factor-closure-jacm.pdf>,
+Source: <https://www.cse.iitk.ac.in/users/nitin/papers/factor-closure-jacm.pdf>,
 Theorems 1 and 2.
 
 ### 8.2 A restriction on the composition-and-factor approach
@@ -443,7 +443,7 @@ complexity of a degree-$d$ factor polynomially in $d$ and the
 complexity of any nonzero multiple; it is independent of the
 factor's multiplicity. The 2018 arXiv version corrects Theorem 5.7
 of the 2004 publication and is the version cited here:
-\lt https://arxiv.org/html/1812.06828v1>, Theorem 1.3.
+<https://arxiv.org/html/1812.06828v1>, Theorem 1.3.
 
 In particular, substituting short polynomials into a hypothetical
 short consecutive-root multiple, differentiating only the outer
@@ -481,5 +481,5 @@ pinned border lower bound does not gain the desired BSS implication
 from this cited theorem alone. The separate consecutive-root
 multiple criterion still requires its own lower bound.
 
-Primary version: \lt https://arxiv.org/html/2606.25121v2>, Section 1.4,
+Primary version: <https://arxiv.org/html/2606.25121v2>, Section 1.4,
 Theorem 1.1 and Conjecture 1.1.

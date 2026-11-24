@@ -264,7 +264,7 @@ preserving their distinctness and keeping every constant charged.
 Qi Cheng, *Straight Line Programs and Torsion Points on Elliptic Curves*,
 author manuscript, Introduction page 1, already states a rational-root
 version using programs from 1 and x. The source was checked at
-\lt https://qcheng2023.github.io/paper/BSS.pdf>. The reductions here give explicit
+<https://qcheng2023.github.io/paper/BSS.pdf>. The reductions here give explicit
 gate rules and bounds in the present convention; no priority claim is made.
 
 The transformation also preserves the Galois action. The nonzero roots of

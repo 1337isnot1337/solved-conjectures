@@ -494,6 +494,159 @@ def test_finite_prime_inverse_minors():
     print(f'finite-prime inverse imitation, all two-by-two cut minors at n=2,3: {checked} passed')
 
 
+def test_anchored_differences_and_exact_quotients():
+    def matrix_product(a, b):
+        size = len(a)
+        return [[sum_polynomials(mul(a[i][k], b[k][j]) for k in range(size))
+                 for j in range(size)] for i in range(size)]
+
+    def sum_polynomials(items):
+        out = [0]
+        for item in items:
+            out = add(out, item)
+        return out
+
+    def quotient_entry(polynomial, nodes):
+        q = len(nodes)
+        size = q + 1
+        matrix = [[[0] for _ in range(size)] for _ in range(size)]
+        for i, node in enumerate(nodes):
+            matrix[i][i] = [node]
+            matrix[i + 1][i] = [1]
+        matrix[q][q] = [0, 1]
+        value = [[[0] for _ in range(size)] for _ in range(size)]
+        for coefficient in reversed(polynomial):
+            value = matrix_product(value, matrix)
+            for i in range(size):
+                value[i][i] = add(value[i][i], [coefficient])
+        return value[q][0]
+
+    cases = 0
+    for N in range(1, 6):
+        f = root_product(range(1, N + 1))
+        for q in range(6):
+            cofactor = [(-1)**i * (i + 1) for i in range(q + 1)]
+            h = mul(f, cofactor)
+            divided = list(cofactor)
+            for _ in range(q):
+                divided = add(translate(divided, 1), scale(divided, -1))
+            assert divided == [factorial(q) * cofactor[-1]]
+            cleared = [0]
+            for j in range(q + 1):
+                prefix = root_product(N - i for i in range(j))
+                suffix = root_product(-i for i in range(j, q))
+                term = mul(mul(prefix, suffix), translate(h, j))
+                cleared = add(cleared, scale(term, (-1)**(q-j) * comb(q, j)))
+            expected = scale(f, factorial(q) * cofactor[-1])
+            denominator = root_product(-i for i in range(q))
+            assert cleared == mul(denominator, expected)
+            assert quotient_entry(cleared, [-i for i in range(q)]) == expected
+            cases += 1
+    # Repeated nodes test the quotient-module proof without a distinct-node assumption.
+    for nodes in ([2, 2, 2, 2], [0, 0, -1, -1, 3]):
+        quotient = [3, -2, 0, 5, 0, 0, 1]
+        assert quotient_entry(mul(root_product(nodes), quotient), nodes) == quotient
+        cases += 1
+    print(f'anchored differences and symbolic quotient matrices: {cases} cases passed')
+
+
+def test_deformed_boolean_inverse():
+    cases = 0
+    R = 4
+    for n in range(1, 6):
+        weights = [2**i for i in range(n)]
+        old = {(0, 0): {0: 1}}
+        for i, weight in enumerate(weights):
+            new = {}
+            for q in range(R + 1):
+                for k in range(i + 2):
+                    coefficients = dict(old.get((q, k), {}))
+                    for r in range(q + 1):
+                        multiplier = comb(q + k, r + 1) * weight**(r + 1)
+                        for mask, value in old.get((q-r, k-1), {}).items():
+                            target = mask | (1 << i)
+                            coefficients[target] = coefficients.get(target, 0) + multiplier * value
+                    new[q, k] = {mask: value for mask, value in coefficients.items() if value}
+            old = new
+        subset_sums = [sum(weights[i] for i in range(n) if mask >> i & 1)
+                       for mask in range(1 << n)]
+        coefficients = {}
+        z = 17
+        for q in range(R + 1):
+            for mask in range(1 << n):
+                k = mask.bit_count()
+                expected = 0
+                submask = mask
+                while True:
+                    expected += (-1)**(k-submask.bit_count()) * subset_sums[submask]**(q+k)
+                    if submask == 0:
+                        break
+                    submask = (submask - 1) & mask
+                actual = old[q, k].get(mask, 0)
+                assert actual == expected
+                coefficients[q, mask] = Fraction(actual, z**(q+k+1))
+                cases += 1
+        # Independently check the defining inverse equation in the deformed algebra.
+        for q in range(R + 1):
+            for mask in range(1 << n):
+                value = z * coefficients[q, mask]
+                if q:
+                    value -= subset_sums[mask] * coefficients[q-1, mask]
+                for i, weight in enumerate(weights):
+                    if mask >> i & 1:
+                        value -= weight * coefficients[q, mask ^ (1 << i)]
+                assert value == int(q == 0 and mask == 0)
+    print(f'deformed Boolean inverse: {cases} integer coefficient and inverse-equation checks passed')
+
+
+def test_frobenius_and_harmonic_examples():
+    for M in range(1, 101):
+        units = [a for a in range(1, M + 1) if gcd(a, M) == 1]
+        average = sum((Fraction(1, gcd(M, a-1)) for a in units), Fraction(0)) / len(units)
+        assert average >= Fraction(1, 4 * (len(factor_integer(M)) + 1))
+
+    def h(a):
+        return (a*a - 13) * (a*a - 17) * (a*a - 221)
+
+    roots = {a for a in range(61) if h(a) % 61 == 0}
+    image = {h(a) % 61 for a in range(61)}
+    assert roots == {14, 47}
+    assert image == {0, 3, 4, 5, 11, 12, 16, 17, 20, 23, 30, 31,
+                     33, 36, 41, 45, 46, 48, 49, 50, 52, 53, 54, 56}
+    assert roots.isdisjoint(image)
+    assert all(h(h(a)) % 61 for a in range(61))
+
+    u = Fraction(8)
+    for t in range(9):
+        K = 2**t
+        expected = Fraction(2 * 7**K - 6**K, 7**K - 6**K)
+        assert u == expected
+        error = u - 2
+        assert error != 0
+        assert valuation(error.numerator, 3) - valuation(error.denominator, 3) == K
+        assert u.denominator == 7**K - 6**K
+        u -= (u-1) * (u-2) / (2*u-3)
+        repeated_error = Fraction(6, 2**t)
+        assert valuation(repeated_error.numerator, 3) - valuation(repeated_error.denominator, 3) == 1
+    print('harmonic CRT inequality, failed intersective iterate and never-exact Frobenius Newton lift: passed')
+
+
+def test_dense_square_chain_threshold():
+    f = [0, 1]
+    for constant in (45, 656, 640**2):
+        f = add(mul(f, f), [-constant])
+    expected = [1]
+    for square in (9, 81, 49, 41):
+        expected = mul(expected, [-square, 0, 1])
+    assert f == expected
+    roots = {-9, -7, -3, 3, 7, 9}
+    assert all(peval(f, root) == 0 for root in roots)
+    assert 6**2 < 41 < 7**2
+    assert 4 * len(roots) == 3 * (len(f)-1)
+    assert valuation(45, 3) == 2 and valuation(656, 3) == 0
+    print('six-root square-chain identity and strict three-quarters threshold: passed')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -508,6 +661,10 @@ def main():
     test_divided_difference_with_cofactors()
     test_normalization_and_fold_identities()
     test_finite_prime_inverse_minors()
+    test_anchored_differences_and_exact_quotients()
+    test_deformed_boolean_inverse()
+    test_frobenius_and_harmonic_examples()
+    test_dense_square_chain_threshold()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 

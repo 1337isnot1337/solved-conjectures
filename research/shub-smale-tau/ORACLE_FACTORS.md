@@ -25,13 +25,13 @@ subtraction by multiplication by -1 and addition. Embed C(epsilon) in
 C((epsilon)). Regular coefficients with constant term h satisfy exactly the
 coefficient condition in `Approximates`. The pinned statement is
 
-\lt https://github.com/anthropics/formal-math/blob/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp/Statement.lean>.
+<https://github.com/anthropics/formal-math/blob/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp/Statement.lean>.
 
 The factor-reconstruction source is Peter Bürgisser, *The Complexity of
 Factors of Multivariate Polynomials*, arXiv:1812.06828v1, 17 December 2018,
 the version correcting Theorem 5.7 of the 2004 journal paper:
 
-\lt https://arxiv.org/html/1812.06828v1>.
+<https://arxiv.org/html/1812.06828v1>.
 
 Proposition 3.4 and its proof construct the finite jet of an implicit branch
 of a factor by a generic-center perturbation. Lemma 3.6 reconstructs a
