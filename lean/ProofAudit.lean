@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `GravgaardLeeUpperLower.sum_subset_target,
+    `GravgaardLeeUpperLower.upper_gap_le_two_left,
+    `GravgaardLeeUpperLower.Frame.exists_linked_left_cutoff,
+    `GravgaardLeeUpperLower.Frame.appendUpper_valid,
+    `GravgaardLeeUpperLower.Frame.appendLower_valid,
+    `GravgaardLeeUpperLower.Frame.exists_discardUpper_valid,
+    `GravgaardLeeUpperLower.upperTail_compact,
+    `GravgaardLeeUpperLower.Scene.discardUpper_subset,
+    `GravgaardLeeUpperLower.Scene.exists_discardUpper_valid,
     `NemethSeberryShu.permanent_modEq_card,
     `NemethSeberryShu.card_eq_of_permanent_eq,
     `NemethSeberryShu.row_family_count,
@@ -10660,7 +10669,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["UlasDisjointSquareBlocks.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["GravgaardLeeUpperLower.", "UlasDisjointSquareBlocks.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

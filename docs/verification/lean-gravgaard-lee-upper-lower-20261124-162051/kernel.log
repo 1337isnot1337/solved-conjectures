@@ -1,0 +1,7 @@
+Replaying all 5 local project modules imported by Conjectures.GravgaardLeeUpperLowerCylinders, including that root (prefix Conjectures)
+replaying Conjectures.GravgaardLeeLargeLuroth
+replaying Conjectures.GravgaardLeeMixedLuroth
+replaying Conjectures.GravgaardLeeUpperLowerBasic
+replaying Conjectures.GravgaardLeeUpperLowerCylinders
+replaying Conjectures.GravgaardLeeUpperLowerLinked
+PASS: the entire local import closure of Conjectures.GravgaardLeeUpperLowerCylinders completed the pinned kernel replay

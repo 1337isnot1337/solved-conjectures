@@ -3260,3 +3260,8 @@ Partial Lean verification: for every positive block length, a positive repeatabl
 ### Fan–Tringali graph realization checkpoint
 
 The [nine-module development](../lean/Conjectures/FanTringaliGraphLengths.lean) now proves the exact atomic length set of every graph construction, in both directions, from its maximal cliques. Slab quotient uniqueness, graph divisibility, and all atomic factorization classification are checked. The [receipt](verification/lean-fan-tringali-graph-20261124-162051/receipt.json) records 290 audited declarations, fresh strict builds and stock replay. Prescribed spectra, radix encoding and the original general-monoid transfers are still outside this frozen checkpoint; full-result count remains zero for this entry.
+
+
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+Partial Lean verification: exact genuine-series endpoint bounds and upper sum inclusion, all linked one-step interval refinements, and actual bounded-digit cylinder containment/compactness are checked. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) identifies the remaining nonzero-tail repair, reverse inclusion and modulo-one conclusion. The [five-module closure receipt](verification/lean-gravgaard-lee-upper-lower-20261124-162051/receipt.json) records strict builds, the all-owned/private axiom audit and stock kernel replay. This does not repeat or recount the separate already verified mixed-(3,4) or large-digit conjectures.

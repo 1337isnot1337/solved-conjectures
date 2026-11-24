@@ -1,3 +1,6 @@
+import Conjectures.GravgaardLeeUpperLowerBasic
+import Conjectures.GravgaardLeeUpperLowerCylinders
+import Conjectures.GravgaardLeeUpperLowerLinked
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.FanTringaliSlices
