@@ -1,5 +1,19 @@
 # Full formalization campaign
 
+## Benfield–Lippard’s stable Waring-gap symmetry conjecture
+
+The [Lean proof](../lean/Conjectures/BenfieldLippardSymmetry.lean) refutes
+Conjecture 10.1 at both exponents 64 and 128. It proves the exact stable
+gap membership, the largest gap, and a pair of gaps reflected into each
+other. The resulting strict gap-count inequality also refutes the
+finite-domain interpretation of Conjecture 10.2. The proof uses the
+L-shaped Apéry certificate and the exact fourth-generator gluing.
+
+The three-module closure passed strict compilation, the all-owned audit
+of 338 declarations including 234 private declarations and six required
+endpoints, and stock-kernel replay. See the
+[local receipt](verification/lean-waring-symmetry-20261124/receipt.json).
+
 
 ## Coulangeon–Lazzarini’s two-shell conjecture
 

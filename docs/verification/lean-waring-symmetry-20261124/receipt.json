@@ -1,0 +1,42 @@
+{
+  "source_statement": "https://arxiv.org/html/2404.08193v2#S10.Thmtheorem1",
+  "stable_gap_model_research_commit": "3870fcfd0b97898c6c4cfda860142ba572b52867",
+  "lean": "leanprover/lean4:v4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "sources": {
+    "lean/Conjectures/BenfieldLippardParity.lean": "59e638e69af8ccc991fb40a4cab5e52d4617211260c44d573340333cc51855ad",
+    "lean/Conjectures/BenfieldLippardSymmetryApery.lean": "3dfbebe8e828cd65e613f0e89be8747f65e806053c7936d0d3da3297905086fe",
+    "lean/Conjectures/BenfieldLippardSymmetry.lean": "0a99e6fd4f47946a6d235d817d2d43a2ca58822de139e5a169551b44e0feb75d"
+  },
+  "strict_source_compilation": {
+    "warnings_are_errors": true,
+    "modules_passed": [
+      "Conjectures.BenfieldLippardParity",
+      "Conjectures.BenfieldLippardSymmetryApery",
+      "Conjectures.BenfieldLippardSymmetry"
+    ]
+  },
+  "all_owned_axiom_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 338,
+    "modules": 3,
+    "private_declarations": 234,
+    "raw_declarations": 338,
+    "required": 6,
+    "tag": "passed",
+    "theorems": 271
+  },
+  "stock_kernel_replay": {
+    "modules_passed": [
+      "Conjectures.BenfieldLippardParity",
+      "Conjectures.BenfieldLippardSymmetryApery",
+      "Conjectures.BenfieldLippardSymmetry"
+    ],
+    "command": "lake env python3 ../scripts/replay_lean.py --root Conjectures.BenfieldLippardSymmetry"
+  },
+  "aggregate_and_hosted_checks": "separate from this local receipt"
+}
