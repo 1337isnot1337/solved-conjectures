@@ -1,5 +1,20 @@
 # Full formalization campaign
 
+## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
+
+The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) formalizes the
+disproof of the general clause of Conjecture 5.2. It verifies the exponent-17
+counterexample and both valuations in the uniform family for every k ≥ 11,
+with the indices in the same aligned block. The coefficient model is the
+stabilized finite product. The exact modular certificates use carry-free
+integer packing and ordinary kernel reduction.
+
+All three modules passed strict source compilation and pinned stock-kernel
+replay. The all-owned audit checked 123 declarations, including 96 private
+declarations, and eight required endpoints. See the
+[local receipt](verification/lean-thue-morse-valuation-20261124/receipt.json).
+
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is fully checked by `AgnosticVC.steinkeZakynthinou_framework_conjecture418`. Its distribution-free CMI takes the supremum over fixed paired pools, and both guarantees hold with common constant $`19{,}712`$ for every positive sample size. [Lean source](../lean/Conjectures/AgnosticVC/FixedPairing.lean)
