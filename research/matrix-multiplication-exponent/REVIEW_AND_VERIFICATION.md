@@ -288,3 +288,82 @@ No Lean formalization, hosted CI pass, new exponent bound, or
 complete source-to-target construction is claimed by this checkpoint.
 The numerical exterior searches remain candidate work outside these
 proved statements. This package targets `research`, not `main`.
+
+
+## Compression, fusion and Frobenius checkpoint
+
+The operator-comparison worker, audit worker and root checked the
+arbitrary-compression membership equivalence, self-contained subspace
+Hall proof, and the aggregate row/column flattening bounds. The latter
+bounds correct an overstrong proposed dimension condition; the corrected
+criterion requires high collective rank, not large dimension in most
+individual column spaces. No numerical subspace rank is used in that
+proof.
+
+The controlled exterior maps were reviewed through exact subset counts
+and an explicit adjoint sl2-string decomposition. The uniform retained
+fractions are 1/4 and 1/3. The constructive worker, audit worker and root
+checked the two opposite Gaussian minors in the exact failure witness.
+Its unrotated occupation hypothesis and its scope for coefficientwise
+limits are explicit.
+
+The fixed-flavour fusion proof was checked coefficient by coefficient:
+the 4^k family count, signed nested commutator, factorial completion
+count, and remaining ordered Weyl factors are retained. The rank proof
+uses a formal adjoint only on the separate Y factors, never an assumed
+partial anti-automorphism of a mixed division ring. Root and the audit
+worker independently checked the C-only postprocessing corollary and
+the sparse-k exponent calculation.
+
+The audit worker supplied the square-C Laurent theorem. Root and the
+operator-comparison worker checked the inverse covector space, saturated
+lattice, regular specialization of flattening minors, and the exact
+aM and bM target ranks. The proof also handles ordinary convergent
+sequences by compactness. Its square dimension, one-family and full
+target hypotheses are retained. No multi-family obstruction is claimed.
+
+The Grassmannian Weyl note is a candidate, with its ordered quadratic
+identity and block commutators checked by root and the audit worker.
+The missing full coefficient equation is printed rather than assumed
+from an RLL identity. The independent two-flag projection consequence
+was reviewed by the constructive worker, audit worker and root; the
+two projections act on genuinely different tensor factors.
+
+For the Frobenius source, root opened and checked Rietsch,
+arXiv:math/0112022v1, Proposition 4.3, Corollary 5.2, Proposition 6.1,
+and Theorem 10.1. The finite Fourier calculation proves the displayed
+four-party degeneration and constant complement pairing without an
+extra semisimplicity assumption. The use of the Frobenius functional,
+the sign of the quantum parameter, and the distinction between additive
+exterior action and exterior power were checked independently.
+
+The exact Python replay passed all 36 Gr(2,4) complement pairings,
+all 1296 four-party coefficients against the six-term root sum,
+18 power-sum matrices, and the rank-six special pairing. It uses
+exact integer, rational and symbolic arithmetic, with SymPy available.
+These finite checks do not verify a source-to-target trade. The
+quadratic source was reviewed by its explicit simplex expansion and
+the ten allowed four-party coupling patterns; no simulation is used
+as proof.
+
+The constructive worker proved the general three-space cover capacity
+inequality; root and the operator-comparison worker independently
+derived its quadratic tensor-power consequence. The exact proof was
+checked with arbitrary C columns, dense weighted partial outputs,
+independently chosen source maps and limiting subspaces. The bound
+does not assume the output preserves the source grading. Root derived
+the balanced Grassmannian lower-tail estimate; the audit worker
+checked it, proved the proportional-density extension and the exact
+sparse lower bound, and supplied the complete counting note. The
+operator-comparison worker reviewed the source-capacity conclusions.
+
+The commuting-operator obstruction includes a self-contained proof
+of the finite-algebra character fact. Its scalar flattening, the
+coordinate degree potentials, and the conditional unit-slice count
+were checked by root. The scope explicitly leaves noncommutative
+operators and general embeddings open.
+
+All files in this checkpoint remain research material. Local link,
+equation-tag, fence, whitespace and Python checks are reported in the
+PR record. No Lean formalization, new matrix multiplication bound,
+hosted CI pass, or complete positive construction is claimed.
