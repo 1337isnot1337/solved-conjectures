@@ -6,6 +6,12 @@ rational identity. No identity with the required subpolynomial number of
 families is established. The theorem does not use approximation in norm,
 or invert a truncated differential operator.
 
+The explicitly tagged extension in
+[TAGGED_OPERATOR_TRADE_TRANSFER.md](TAGGED_OPERATOR_TRADE_TRANSFER.md)
+first supplies the shared source label at D by a proved separator.
+After that extra construction the D operator may also depend on h.
+The theorem below concerns the original untagged source.
+
 ## Tensor conventions and the unresolved target
 
 All tensors are over the complex numbers. A restriction applies one

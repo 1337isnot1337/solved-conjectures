@@ -251,3 +251,40 @@ That coefficient is a genuine bulk residual. No constant-term
 projection, matrix inverse on a truncated flag, or numerical fit is
 being asserted to complete the construction. The target remains in
 research status, with no new Lean proof and no solved-results entry.
+
+
+## Tagged source and output-relaxation checkpoint
+
+The audit worker, operator-comparison worker, and root independently
+checked [TAGGED_OPERATOR_TRADE_TRANSFER.md](TAGGED_OPERATOR_TRADE_TRANSFER.md):
+the complete separator exponent is (v-u-h)^2, all Q sectors retain
+L-Q+1 flags, D receives an explicit h coordinate, and the geodesic
+extra factor is (L/(L-Q+1))^{d_BD}. The protected-prefix realization
+and finite-pole Laurent composition retain their original hypotheses.
+
+The exact subspace-cover equivalence and its coordinate-support
+kernel criterion were independently checked in both directions.
+The [density proof](PARTIAL_HYPERGRAPH_DENSITY.md) uses a finite
+random-cover existence calculation on tensor powers, a generic
+noncancelling linear combination, and only the proved one-way
+full-hypergraph coefficient inequality. The
+[single-party projection proof](SINGLE_PARTY_PROJECTION_TRADE.md)
+uses an explicit signed-permutation stabilizer average, greedy
+subspace growth, and a local reconstruction map. These are written
+proofs, not conclusions inferred from numerical rank thresholds.
+
+The failed independent-wire amplification principle was reviewed
+against the exact statements of pinned Anthropic Proposition A.5,
+Proposition C.3 and Lemma C.4(a), CVZ arXiv:1709.07851v3 Theorem 3.30
+and Corollary 3.31, and ALP arXiv:2604.01386v2 Corollary 8.10.
+The all-wire-sizes normalization quantifier is proved explicitly.
+The deduction supplies existence of a strict finite cover saving,
+without identifying its size or coefficients.
+
+The changed files are mathematical Markdown. Their local links,
+fences, equation tags and whitespace were checked. No new executable
+test is needed for the finite-dimensional linear-algebra proofs.
+No Lean formalization, hosted CI pass, new exponent bound, or
+complete source-to-target construction is claimed by this checkpoint.
+The numerical exterior searches remain candidate work outside these
+proved statements. This package targets `research`, not `main`.
