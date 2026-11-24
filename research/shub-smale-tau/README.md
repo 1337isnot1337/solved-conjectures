@@ -38,9 +38,13 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Unknown cofactors with few distinct complex roots | A length-s program for F_N Q gives a nonzero integer scalar multiple of F_N in O((s+1)(d+1)^14) gates, where d=deg rad(Q). No cofactor circuit or factorization is supplied. The choices are nonuniform, and d may be exponential. |
 | Integer gate budgets | A coprime addition has a product-of-parent-values resultant budget; units on five integer evaluation points have one sign; bounded smaller-summand values give an integer escape bound. Arbitrary addition cancellation remains unbounded. |
 | Adaptive evaluation-prime support | The monic primitive squarefree family x^(n+1)−x has at most three integer roots, while every nonzero integer evaluation can have superpolynomial prime support relative to its circuit length. Adaptive anchor selection cannot fix that proposed bound. |
+| Root-parity and multiplicity selectors | Neighboring shifted gcds retain half-integer roots even for F_N. A charged O(k^3)-gate integer polynomial realizes 2^k−1 positive multiplicity classes but at most two integer roots. Neither supplies the missing root selection. |
+| Truncated integer-root collision energy | Consecutive integers minimize the energy prime by prime. Products and first-zero histories have exact laws, but the proposed polynomial addition bound is proved equivalent to τ and remains unresolved. |
+| Primitive powers at root births | At most 2s+1 nonzero primitive-exponent equations, each with O((s+1)^2) charged gates, cover all real roots. Their shared prefixes retain the unrestricted root problem. |
 | Polynomial-order jets of the coalescing Boolean inverse | An explicit integer recurrence computes every jet through order R in polynomially many gates in n,R. The degeneration merges the separated integer poles. |
 | Exact Frobenius selection and finite precision | A selected permutation has a rational polynomial representative exactly when it is central in the Galois group; an explicit quadratic Newton lift never equals its limit at a finite stage. |
 | Dense integer roots in variable square chains | More than half the degree forces prime divisibility and even valuations; more than three quarters forces valuation doubling. A six-root degree-eight example makes the latter threshold strict. |
+| Exact obstruction to extending the first Bremner family | An explicit rational quotient and resultant exclude every nondegenerate rational prefix collision within the displayed first elliptic family and its Hadamard transforms. Other families and unbounded depth remain unresolved. |
 | Rational torsion in a polynomial elliptic family | Mazur's theorem gives at most 262δ rational roots of a nonzero specialized division polynomial, independent of its index, and a fixed-cost bounded-index root cover. This is a consequence of existing theorems. |
 
 The general quantitative bounds recorded here are consequences of existing theorems and algorithms:
@@ -65,10 +69,14 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 - [POWERED_COFACTORS.md](POWERED_COFACTORS.md): charged Bezout construction, logarithmic power lifting, and extraction for cofactors of small total base degree.
 - [COFACTOR_RECOVERY.md](COFACTOR_RECOVERY.md): recovery of an unknown small radical support from a shifted logarithmic derivative, with charged Padé reconstruction and multiplicity selection.
 - [INTEGER_GATE_BUDGETS.md](INTEGER_GATE_BUDGETS.md): unit rigidity, resultant divisibility, an integer escape invariant, a valid two-anchor S-unit reduction and its adaptive-support obstruction.
+- [ROOT_SELECTION.md](ROOT_SELECTION.md): coefficient parity versus root parity, charged many-multiplicity examples and translation-boundary failures.
+- [COLLISION_ENERGY.md](COLLISION_ENERGY.md): a universal arithmetic minimum, exact product/history laws, and a proof that the missing polynomial energy bound is τ-equivalent.
+- [PRIMITIVE_BIRTHS.md](PRIMITIVE_BIRTHS.md): a charged covering by primitive exponent equations at the first vanishing register, with arbitrary root configurations.
 - [INVERSE_DEFORMATIONS.md](INVERSE_DEFORMATIONS.md): the integer recurrence for all finite coalescing jets, spacing-preserving Newton lifts, and endpoint indicators.
 - [FROBENIUS_SELECTION.md](FROBENIUS_SELECTION.md): coefficient fields of selected Galois permutations, exact Newton cost and precision, and a never-exact quadratic example.
 - [HARMONIC_FAMILIES.md](HARMONIC_FAMILIES.md): reciprocal fixed-point averages for binomial products and integer quadratic iterates, an intersective-iteration failure, and a classical Schur test of addition rules.
 - [DENSE_SQUARE_CHAINS.md](DENSE_SQUARE_CHAINS.md): prime divisibility with an unknown cofactor, precise root-density thresholds, and the distinction between coefficient bit length and circuit length.
+- [SQUARE_CHAIN_EXTENSION.md](SQUARE_CHAIN_EXTENSION.md): the charged Bremner construction, exact prefix-extension equations, and a complete rational-collision obstruction for its first displayed family.
 - [ELLIPTIC_SPECIALIZATIONS.md](ELLIPTIC_SPECIALIZATIONS.md): the rational-torsion root bound and a root cover whose additional circuit cost is independent of the multiplication index.
 - [NORMALIZATION.md](NORMALIZATION.md): fully charged rational-to-integer and monic transformations, with arbitrary intermediate cancellation.
 - [PRIME_AVERAGES.md](PRIME_AVERAGES.md): exact integer and projective-rational sieve inequalities, harmonic averages and a multiquadratic local-cover test.

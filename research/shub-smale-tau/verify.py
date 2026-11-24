@@ -803,6 +803,127 @@ def test_integral_gate_budgets():
     print('integer unit threshold, resultant degree correction, and fixed-divisor examples: passed')
 
 
+def test_root_selection_obstructions():
+    shifted = 0
+    for N in range(1, 13):
+        FN = root_product(range(1, N+1))
+        scaled = [a * 2**i for i, a in enumerate(FN)]
+        for sign in (1, -1):
+            other = [a * 2**i for i, a in enumerate(translate(FN, sign))]
+            expected_roots = (range(1, N) if sign == 1 else range(2, N+1))
+            expected = root_product(Fraction(j, 2) for j in expected_roots)
+            assert polynomial_gcd(scaled, other) == expected
+            shifted += 1
+
+    def divide(a, b):
+        remainder = list(map(Fraction, a))
+        quotient = [Fraction(0)] * max(1, len(a)-len(b)+1)
+        while remainder != [0] and len(remainder) >= len(b):
+            shift = len(remainder)-len(b)
+            coefficient = remainder[-1]/b[-1]
+            quotient[shift] += coefficient
+            remainder = add(remainder, [0]*shift+scale(b, -coefficient))
+        return trim(quotient), remainder
+
+    # Independent dense factors, obtained by exact polynomial division.
+    cyclotomic = {}
+    for d in range(1, 31):
+        candidate = [-1]+[0]*(d-1)+[1]
+        for e in range(1, d):
+            if d % e == 0:
+                candidate, remainder = divide(candidate, cyclotomic[e])
+                assert remainder == [0]
+        cyclotomic[d] = candidate
+    multiplicities = 0
+    for primes in ((2,), (2, 3), (2, 3, 5)):
+        M = prod(primes)
+        polynomial = [1]
+        for i, p in enumerate(primes):
+            factor = [-1]+[0]*(M//p-1)+[1]
+            polynomial = mul(polynomial, polynomial_power(factor, 2**i))
+        realized = set()
+        for d in range(1, M+1):
+            if M % d:
+                continue
+            count, remainder = 0, polynomial
+            while True:
+                quotient, rem = divide(remainder, cyclotomic[d])
+                if rem != [0]:
+                    break
+                count += 1
+                remainder = quotient
+            expected = sum(2**i for i, p in enumerate(primes) if (M//p) % d == 0)
+            assert count == expected
+            if count:
+                realized.add(count)
+            multiplicities += 1
+        assert realized == set(range(1, 2**len(primes)))
+        assert all(peval(polynomial, r) != 0 for r in (-3, -2, 0, 2, 3))
+    print(f'root selection: {shifted} shifted gcds and {multiplicities} dense cyclotomic multiplicities passed')
+
+
+def test_truncated_collision_energy():
+    def energy_product(roots, T):
+        modulus = 1
+        for i in range(1, T+1):
+            modulus = modulus*i//gcd(modulus, i)
+        return prod(gcd(abs(a-b), modulus) for a, b in combinations(sorted(roots), 2))
+
+    sets = [set(c) for N in range(2, 7)
+            for c in combinations(range(-3, 6), N)]
+    sets += [{0, 1, 2**30}, {0, 210, 420, 630}, {-17, -2, 3, 41}]
+    for roots in sets:
+        N = len(roots)
+        T = max(2, N)
+        interval_minimum = prod(factorial(j) for j in range(1, N))
+        assert energy_product(roots, T) % interval_minimum == 0
+        assert energy_product(range(N), T) == interval_minimum
+
+    overlaps = [(set(), {1}), ({0, 2}, {2, 3, 5}),
+                ({-4, 0, 4}, {-4, 4}), ({0, 6, 12}, {3, 6, 9})]
+    for a, b in overlaps:
+        for T in range(2, 10):
+            modulus = 1
+            for j in range(1, T+1):
+                modulus = modulus*j//gcd(modulus, j)
+            cross = prod(gcd(abs(x-y), modulus) for x in a-b for y in b-a)
+            assert energy_product(a|b, T)*energy_product(a&b, T) == (
+                energy_product(a, T)*energy_product(b, T)*cross)
+
+    for N in range(1, 9):
+        roots, gates = range(1, N+1), []
+
+        def positive_gate(value):
+            assert all(peval(value, r) > 0 for r in roots)
+            gates.append(value)
+            return value
+
+        constants = {1: [1]}
+        for j in range(2, 2*N+1):
+            constants[j] = positive_gate(add(constants[j-1], [1]))
+        A = positive_gate(add([0, 1], constants[N]))
+        a, b = A, constants[N+1]
+        for j in range(2, N+1):
+            c, d = A, constants[N+j]
+            ac = positive_gate(mul(a, c))
+            bd = positive_gate(mul(b, d))
+            ad = positive_gate(mul(a, d))
+            bc = positive_gate(mul(b, c))
+            a, b = positive_gate(add(ac, bd)), positive_gate(add(ad, bc))
+        output = add(a, scale(b, -1))
+        assert output == root_product(roots)
+        assert len(gates)+1 == 8*N-5
+        h = add(add(a, [1]), scale(b, -1))
+        assert all(peval(h, r) == 1 for r in roots)
+        assert add(h, [-1]) == output
+    print(f'truncated collision energy: {len(sets)} exact divisibility checks, overlap identities and 8 positive-history circuits passed')
+
+
+def test_bremner_certificate():
+    from bremner_certificate import run_checks
+    run_checks()
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -824,6 +945,9 @@ def main():
     test_powered_cofactor_extraction()
     test_unknown_cofactor_recovery()
     test_integral_gate_budgets()
+    test_root_selection_obstructions()
+    test_truncated_collision_energy()
+    test_bremner_certificate()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 

@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-24 — Exact square-chain obstruction and root-history reductions
+
+The τ campaign (#260) completes the proposed extension test for the first displayed Bremner elliptic family and its Hadamard transforms: no two nondegenerate rational members have the same normalized prefix and different final coefficient. The written proof includes an explicit rational quotient and an exact degree-88 resultant certificate; a dependency-free verifier checks it through a proved degree bound and 89 exact Sylvester determinants. Both independent workers reviewed all exceptional-domain cases. The construction remains fixed degree and does not resolve τ.
+
+The same checkpoint records an exact prime-by-prime minimum for truncated root-difference energy, its product and first-zero history laws, and a charged cover by primitive-exponent equations. The proposed polynomial energy budget is explicitly proved τ-equivalent and remains unproved. Local exact checks and independent symbolic identities passed. No Results-table or Lean-status promotion was made. See `research/shub-smale-tau/SQUARE_CHAIN_EXTENSION.md`, `COLLISION_ENERGY.md` and `PRIMITIVE_BIRTHS.md`.
+
+## 2026-11-24 — τ root selection and multiplicity obstruction
+
+The open τ campaign (#260) now proves that neighboring shifted gcds do not select the integer parity classes even for the exact consecutive-root polynomial. A charged O(k^3)-gate integer polynomial realizes all 2^k−1 positive multiplicity classes while having at most two integer roots, so a polynomial multiplicity-class count cannot remove the cofactor-support restriction. The translation-boundary test is also preserved. Independent worker reviews and 24 exact gcd checks plus 14 dense cyclotomic multiplicity checks passed. This does not prove τ, radical hardness or a BSS separation. See `research/shub-smale-tau/ROOT_SELECTION.md`.
+
 ## 2026-11-23 — Integer gate budgets and adaptive prime-support obstruction
 
 The [Shub–Smale τ research](research/shub-smale-tau/INTEGER_GATE_BUDGETS.md) records exact integer gate inequalities: a coprime addition has a product-of-parent-values resultant budget, units on at least five integer evaluation points have one sign, and nonzero integer multiplication gives a bounded-cancellation escape estimate. None has been amortized over arbitrary circuit histories. The constant-parent and shared-factor cases remain explicit.
