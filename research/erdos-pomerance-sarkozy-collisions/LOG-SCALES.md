@@ -24,7 +24,7 @@ Put \(L=\log\log X\) and let \(x\in[\sqrt X,X]\). Set
 A(x)=\frac1x\sum_{x\le m<2x}\sum_{h\ge1}
 \mathbf 1_{\omega(m)-\omega(m+h)=h}.
 \]
-For \(h>10L\) the matching condition implies \(\omega(m)\ge h\). The factorial-moment estimate in [the Pomerance–Sárközy fluctuation note](pomerance-sarkozy-omega-fluctuations.md), applied to all primes up to \(2x\) and using \(\sum_{p\le2x}1/p=L+O(1)\), shows that these terms contribute \(O(e^{-cL})\) to \(A(x)\), uniformly in \(x\).
+For \(h>10L\) the matching condition implies \(\omega(m)\ge h\). The factorial-moment estimate in [the Pomerance–Sárközy fluctuation note](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/pomerance-sarkozy-fluctuations/PROOF.md), applied to all primes up to \(2x\) and using \(\sum_{p\le2x}1/p=L+O(1)\), shows that these terms contribute \(O(e^{-cL})\) to \(A(x)\), uniformly in \(x\).
 
 Take \(y=L^6\), \(z=X^{1/L^6}\), and \(w(m)=\sum_{y<p\le z}\mathbf 1_{p\mid m}\). For each \(1\le h\le10L\), on the uniform sample \(m\in[x,2x)\), the pair \((w(m),w(m+h))\) is within \(O(L^{-6})\) total variation of independent Poisson variables of mean
 \[
