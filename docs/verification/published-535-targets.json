@@ -1,0 +1,12 @@
+{
+  "roots": [
+    "Conjectures.Polignac"
+  ],
+  "required": {
+    "Conjectures.Polignac": [
+      "Polignac.counterexample_not_representable",
+      "Polignac.conjecture_false",
+      "Polignac.composite_variant_false"
+    ]
+  }
+}
