@@ -1,5 +1,18 @@
 # Verification
 
+## Caiolo–Ferroni–Hoster counterexample family
+
+Run the following from `lean/` with its pinned toolchain. The replay checks the
+complete local import closure for the all-prime-powers theorem. The standard
+`scripts/verify_lean.sh` package gate also includes these modules.
+
+```sh
+lake build Conjectures.CaioloFerroniHoster
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
+```
+
+[Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
 ## Steinerberger’s quantitative Feldheim-tail conjecture
 
 The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)

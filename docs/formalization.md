@@ -1,5 +1,13 @@
 # Full formalization campaign
 
+## Caiolo–Ferroni–Hoster conjecture
+
+`CaioloFerroniHoster.counterexample_family` checks the complete rank-five
+construction for every prime power q ≥ 17. It proves the quartic dual Chow
+polynomial is positive on the reals and the quintic dual right augmented
+polynomial has one simple real root, −1. Both fail to split over the reals.
+[Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
 ## Steinerberger’s quantitative Feldheim-tail conjecture
 
 The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)

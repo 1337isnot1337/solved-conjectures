@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CaioloFerroniHoster.counterexample_family,
+    `CaioloFerroniHoster.witness_root_properties,
+    `CaioloFerroniHoster.graphSpace_inf_same_label,
+    `CaioloFerroniHoster.hyperplane_replacement_count,
+    `CaioloFerroniHoster.card_sizedSubspace,
+    `CaioloFerroniHoster.gamma_signs,
     `SteinerbergerFeldheim.counterexample,
     `SteinerbergerFeldheim.strict_counterbounds,
     `SteinerbergerFeldheim.median_unique,
