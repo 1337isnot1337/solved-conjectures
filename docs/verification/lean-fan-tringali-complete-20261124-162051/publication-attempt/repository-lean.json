@@ -1,0 +1,16 @@
+{
+  "time_utc": "2026-11-24T17:24:52.388222+00:00",
+  "command": [
+    "bash",
+    "scripts/verify_lean.sh",
+    "Conjectures.FanTringaliMonoid",
+    "Conjectures.FanTringaliNaturalSystem"
+  ],
+  "exit_code": 124,
+  "seconds": 90.004,
+  "log_sha256": "ed87fcd811f77249416a7223ecb0f870750933136c7b52ffd5302329597fb654",
+  "dependency_cache": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages",
+  "dependency_cache_is_shared_read_only": false,
+  "success_claimed": false,
+  "observed": "Lake rebuilt shared dependency outputs; timeout occurred before project verification. Do not infer read-only protection from the earlier Feldheim attempt."
+}
