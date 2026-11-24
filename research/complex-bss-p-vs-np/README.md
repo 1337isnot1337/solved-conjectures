@@ -51,6 +51,8 @@ The [grid Newton-polytope barrier](GRID_NEWTON_BARRIER.md) shows that, after at 
 
 The [smooth-certificate barrier](SMOOTH_CERTIFICATE_BARRIER.md) proves that a polynomial graph with a regular, locally determined polynomial-size existential algebraic witness has a polynomial-size arithmetic circuit, by truncated Newton--Hensel lifting. Under the imported permanent hardness, no such certificate can represent the permanent graph. It does not rule out arbitrary singular NP_C witnesses. [Finite check](verify_smooth_implicit.py).
 
+The [three-evaluation resultant Fourier filter](FOURIER_RESULTANT_FILTER.md) extracts the VNP-hard BCJS grid polynomial as an initial coefficient, establishing quantitative border hardness of the generic quadratic resultant from the imported Anthropic theorem. A linear cofactor with constant term 1 breaks the extraction, so this does not prove exclusion-complexity hardness or the BSS separation. [Finite check](verify_fourier_filter.py).
+
 ## Source and verification scope
 
 The [source audit](SOURCE_AUDIT.md) records theorem numbers, version changes, the uniform/nonuniform distinction, and the direction of Bürgisser's Theorem 1.1 versus Conjecture 1.1. The [source manifest](SOURCES.json) records the inspected PDF hashes.

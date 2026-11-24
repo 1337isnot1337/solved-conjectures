@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Three-evaluation Fourier filter for quadratic resultants
+
+A [cube-root-of-unity character filter](research/complex-bss-p-vs-np/FOURIER_RESULTANT_FILTER.md) extracts the VNP-hard BCJS grid coefficient from three tensor-resultant evaluations as the first nonzero homogeneous part. It transfers the imported 2^{Omega((log N)^{4/3})} border lower bound to generic quadratic resultants. Even the cofactor 1+a* causes the filter to expose a degree-one term, so the exclusion-complexity target and P_C versus NP_C remain open. [Finite checker](research/complex-bss-p-vs-np/verify_fourier_filter.py).
+
 ## 2026-11-23 — Smooth algebraic certificates imply small circuits
 
 The [smooth-certificate note](research/complex-bss-p-vs-np/SMOOTH_CERTIFICATE_BARRIER.md) proves a regular implicit-circuit lemma and its extension to positive-dimensional regular witness fibers. A polynomial graph with such a certificate has polynomial arithmetic-circuit complexity. Using the standing permanent lower bound, this excludes generically regular polynomial-size existential encodings of the permanent graph, but **does not** exclude general NP_C witnesses. [Finite Newton check](research/complex-bss-p-vs-np/verify_smooth_implicit.py).
