@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Dimension obstruction for cofactor-robust resultant jets
+
+Proved an orbit-dimension/vanishing-ideal lemma for the quadratic resultant: a special family of dimension $d$ and the natural two GL(n+1) symmetries cannot fill the resultant hypersurface when $d+2(n+1)^2<N_n-1$. An arbitrary nonzero cofactor can then mask all bounded-order jets on that orbit. [Research note](research/complex-bss-p-vs-np/SYMMETRY_JET_BARRIER.md). The result neither bounds the cofactor's circuit complexity nor separates complex P from NP.
+
 ## 2026-11-23 — Boolean Hamiltonicity transfer research
 
 Recorded a self-contained investigation of the proposed arithmetic-to-Boolean P-versus-NP transfer. Proved the shared minimal component, all cycle-union coefficients, the first overlap layer, and a restriction preserving Hamiltonicity while killing the exact-cycle predicate. A stronger obstruction gives monotone logarithmic-space predicates with the same logarithmic band of higher components. Small monotone formulas refute the tested all-cut-rank bounds; the support-quotient analysis identifies the remaining efficiency gap. Internal cross-review and exact finite checks passed. No unrestricted circuit lower bound or P != NP proof is claimed, and the work remains outside the solved-results table. [Notes and checks](research/boolean-hamiltonicity/) · [Issue #251](https://github.com/1337isnot1337/solved-conjectures/issues/251) · [PR #253](https://github.com/1337isnot1337/solved-conjectures/pull/253).
