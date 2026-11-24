@@ -29,8 +29,12 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Exact weighted collision and cancellation identities | A valid prime-averaging calculation with its height dependence; no polynomial circuit bound for its cancellation term. |
 | Squarefree-exponent modular root average | A short circuit can have a superpolynomial uniform-residue average of modular root counts despite having only two integer roots. |
 | Classical Shub–Smale BSS transfer, including machine constants | Superpolynomial complexity for every nonzero multiple of the consecutive-root polynomial would suffice for the uniform complex BSS separation. |
+| Rational-root and monic-input formulations are equivalent to the stated conjecture | Explicit transformations cost at most 6s+2 and 24s+20 gates; constants, denominator clearing and zero registers are included. |
+| A coefficient-sensitive larger-sieve inequality | A precise reciprocal modular-root average would suffice for arbitrary roots; its circuit bound through addition remains unresolved. |
+| Every finite prescribed set of prime-adic cut-minor valuations can be imitated | A short approximate inverse with at most three integer denominator roots matches all these valuations. Exact inversion and adaptive prime selection remain different requirements. |
+| Matrix-power and quadratic-chain restrictions | Integer evaluation bounds the relevant cyclotomic degrees; lattice collisions give d ≥ (7/6)log₂N−6 for a quadratic composition constant on N consecutive integers. Neither covers general SLPs. |
 
-The strongest quantitative bounds recorded here are consequences of existing theorems and algorithms:
+The general quantitative bounds recorded here are consequences of existing theorems and algorithms:
 
 ```math
 N_{\mathbb Z}(f)\le 2^{s-h_K(s)},\qquad h_K(s)=\frac{\sqrt{1+4Ks}-1}{2K},
@@ -48,6 +52,12 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 
 ## Proofs and source scope
 
+- [NORMALIZATION.md](NORMALIZATION.md): fully charged rational-to-integer and monic transformations, with arbitrary intermediate cancellation.
+- [PRIME_AVERAGES.md](PRIME_AVERAGES.md): exact integer and projective-rational sieve inequalities, harmonic averages and a multiquadratic local-cover test.
+- [CIRCUIT_HISTORY.md](CIRCUIT_HISTORY.md): complete-history obstructions, explicitly conditional square compression, real power comparisons and simultaneous Galois selection.
+- [INVERSE_TESTS.md](INVERSE_TESTS.md): positive-characteristic exact inverses, unknown multiplicities, finite-prime imitations and the scope of factor extraction.
+- [INTEGER_SPECIALIZATIONS.md](INTEGER_SPECIALIZATIONS.md): matrix-power roots, uniform extraction of a positive factorial multiple, translations and rational Chebyshev levels.
+- [FOLD_CHAINS.md](FOLD_CHAINS.md): a charged constructive candidate, finite witnesses and a restricted lattice-based depth lower bound.
 - [GATE_COUNTS.md](GATE_COUNTS.md): a real-root tradeoff from separate gate counts, a precise arithmetic source dependency, complete-history cancellation, and the precise S-unit quantifier issue.
 - [BLOCK_PRODUCTS.md](BLOCK_PRODUCTS.md): a fully charged proof of the classical square-root upper bound, Newton multiplication, and fixed-divisor obstructions.
 - [BOOLEAN_INVERSE.md](BOOLEAN_INVERSE.md): a linear-cost equivalence for all consecutive-root multiples, exact Cauchy structure, and the unresolved Boolean quotient step.
