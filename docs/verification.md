@@ -1,6 +1,15 @@
 # Verification
 
 
+
+## Coulangeon–Lazzarini’s two-shell counterexample
+
+The [scoped receipt](verification/lean-coulangeon-lazzarini-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and pinned replay
+for the integer shell theorem and its full-rank real lattice realization.
+The registered endpoints include first-shell order, moment equivalence and
+the dimension-ten refutation.
+
 ## Gravgaard–Lee’s mixed Lüroth sumset
 
 The [scoped receipt](verification/lean-gravgaard-lee-mixed-luroth-20261124/receipt.json)
