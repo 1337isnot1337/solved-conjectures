@@ -20,6 +20,14 @@ jobs:
         run: python3 results/heim-neuhauser-troeger-plane-partition-turan/heim-neuhauser-fourier-certificate.py
       - name: Certify all remaining plane-partition polynomial signs
         run: python3 results/heim-neuhauser-troeger-plane-partition-turan/heim-neuhauser-plane-partition-check.py
+      - name: Certify the ordinary D’Arcais root conjecture
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libgmp-dev
+          python3 results/heim-neuhauser-ordinary-darcais-root/heim-neuhauser-ordinary-fourier.py
+          python3 results/heim-neuhauser-ordinary-darcais-root/heim-neuhauser-ordinary-small.py
+          g++ -O3 -Wall -Wextra results/heim-neuhauser-ordinary-darcais-root/heim-neuhauser-ordinary-finite.cpp -lgmpxx -lgmp -o /tmp/ordinary-darcais-check
+          /tmp/ordinary-darcais-check
       - name: Check Pantone–Bóna third-largest-terminal enumeration
         run: python3 results/pantone-bona-third-largest-terminal/verify.py
       - name: Check Pantone–Bóna second-smallest-terminal enumeration
@@ -78,9 +86,10 @@ jobs:
         run: |
           python results/bernardi-morales-delta/verify.py
           python results/bernardi-morales-delta/verify_events.py
-      - name: Check Gilmore and Chow polynomial conjectures
+      - name: Check the Pantone–Bóna ODE and Gilmore and Chow polynomial conjectures
         run: |
           python -m pip install sympy==1.14.0
+          python3 results/pantone-bona-asymptotic/certify_ode.py
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples

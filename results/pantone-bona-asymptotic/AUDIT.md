@@ -2,7 +2,7 @@
 
 ## Statement
 
-[Bóna–Pantone, *Permutations avoiding sets of patterns with long monotone subsequences*, Conjecture 6.4](https://arxiv.org/html/2103.06918v2#S6.SS4) predicts asymptotic equivalence for the class avoiding `12354,12453,13452,23451`. [Bóna’s follow-up](https://dmtcs.episciences.org/13903/pdf), §3 Conjecture 3.1 (preprint §2 Conjecture 2.1), repeats the question and proves bounds at that scale plus non-algebraicity, but does not prove equivalence with a leading constant. The earlier nearby conjectures for distinct pattern sets and the guessed differential equation are not claimed here.
+[Bóna–Pantone, *Permutations avoiding sets of patterns with long monotone subsequences*, Conjecture 6.4](https://arxiv.org/html/2103.06918v2#S6.SS4) predicts asymptotic equivalence for the class avoiding `12354,12453,13452,23451`. [Bóna’s follow-up](https://dmtcs.episciences.org/13903/pdf), §3 Conjecture 3.1 (preprint §2 Conjecture 2.1), repeats the question and proves bounds at that scale plus non-algebraicity, but does not prove equivalence with a leading constant. The earlier nearby conjectures for distinct pattern sets lie outside the asymptotic theorem. The differential equation is proved in the separate audited supplement below.
 
 A targeted Nov. 24, 2026 search checked the original and follow-up titles and conjecture numbers, the exact forbidden set, asymptotic expression, author bibliographies, recent public papers and repository issues. It located the original estimates and related work, not an earlier resolution of the exact equivalence. This is a bounded priority search, not evidence of exclusive priority. The proof credits the original decomposition, Regev’s strip asymptotics, and standard RSK and skew-tableau identities.
 
@@ -17,3 +17,7 @@ A targeted Nov. 24, 2026 search checked the original and follow-up titles and co
 The proof has been internally reviewed. No Lean formalization or external refereeing is claimed.
 
 Bóna's follow-up §2.2 already records the exact count for $k=3$ and the square-root singularity asymptotic for $k=4$ from a known generating function. Those are recovered special cases, not new claims. Its §3 also establishes the Wilf equivalence with the $B_{k,k}$ family; any transferred count uses that credited equivalence. The two finite path-counting implementations agreed for 214 exact rows in total: through $n=60$ for $d=1,2,3$, and through $n=30$ for $d=4$.
+
+## Differential-equation supplement
+
+Independent internal review matched the exact printed operator and checked the terminal-largest cut and inverse tableau characterization, hook ratios, symmetrized partial fractions, factorial-moment convolution, and contour coefficient extraction. The replay derives Catalan numerators independently, verifies reductions and the rational period intertwiner over exact function fields, and checks the genus-zero cancellation and integration constants. The bounded search did not locate an earlier proof of this particular printed equation. This is supplemental to Conjecture 6.4, not another numbered conjecture.
