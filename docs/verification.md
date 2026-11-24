@@ -763,3 +763,11 @@ Run `python3 results/chow-type-d/check.py` from the repository root. It certifie
 ## Gravgaard–Lee mixed Lüroth interval certificate
 
 Run `python3 results/gravgaard-lee-mixed-luroth/check.py` from the repository root. The checker verifies the fifteen containments with exact rational arithmetic. The [proof](../results/gravgaard-lee-mixed-luroth/PROOF.md) establishes the graph-directed infinite expansions.
+
+## Cylindric skew and truncated-square exact witnesses
+
+Run `python3 results/fmp-cylindric/check.py` to reproduce the exact negative coefficient and boundary diagnostics, and `python3 results/meylender-thalmaier-truncated-square/check_pentagon.py` to replay the rational pentagon comparison. The corresponding proofs describe their full scope and the distinct conclusions left open.
+
+## Juhnke arbitrary-step path checker
+
+Run `python3 results/juhnke-lattice-paths/check.py` to replay the independent exact finite checks supporting the all-dimensional written proof.

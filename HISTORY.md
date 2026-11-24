@@ -31,6 +31,7 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/): Proves that all zeros of all Stern polynomials lie strictly to the left of Re z = 1. Analytic estimates and an exact compact-region certificate cover all binary run lengths.
 - [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/): Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions.
 - [Dukes’s revstack interlacing conjecture](results/dukes-revstack/): Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement.
+- [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/): Proves all-dimensional log-concavity for the unrestricted east/north arbitrary-step path counts.
 - [Chow’s type-D Eulerian interlacing conjecture](results/chow-type-d/): Proves consecutive type-D Eulerian interlacing, strict in every transition from degree three onward.
 - [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/): A lattice-preserving transfer gives the same Ehrhart series for opposite polar preorder polytopes, with convex mutations and a finite numerator model.
 - [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/): Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation.
@@ -51,6 +52,7 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/): Proof for every fixed pinnacle set by real-rooted height-path refinements. Gives Conjecture 7.2 by summation; Conjecture 7.1 is separate.
 - [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/): Uniform refutation of the original genus bound. The maximum leaf type at every large genus has leading coefficient two thirds and a sharp square-root-order deficit.
 - [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/): A very ample, IDP counterfamily fails at the first three interior counts, answering Question 5.12(a). The already resolved part (b) is distinct.
+- [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/): Refutes the exact relaxed-seam unpinned conjecture and proves positivity for standard periodic partition boundaries.
 - The [Feldheim finite-threshold supplements](results/feldheim-weighted-tail/FINITE-THRESHOLD.md) now cover distinct nonatomic laws and [sharpen the i.i.d. constants](results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md).
 - A [sharp rate test for convex log tails](results/steinerberger-feldheim-tail/CONVEX-HAZARD-RATE.md) distinguishes divergent and convergent square-integral scales.
 - The [exact differential equation](results/pantone-bona-asymptotic/ode-proof.md) previously guessed for the terminal-largest pattern class is now proved separately from the asymptotic.
@@ -70,6 +72,7 @@ The [written proof](results/pantone-bona-second-largest-terminal/) resolves the 
 The [written proof](results/pantone-bona-asymptotic/) resolves Conjecture 6.4 with leading constant $625\sqrt3/(192\pi)$ and extends the asymptotic to the equal-index pattern family. See [issue #377](https://github.com/1337isnot1337/solved-conjectures/issues/377) for scope and exact supplementary checks. No D-finiteness, Lean, external referee review, or priority claim is made.
 
 ## 2026-11-24: Prove Bétermin’s FCC/BCC cold-spot assertion
+- [Meylender–Thalmaier’s truncated-square conjecture](results/meylender-thalmaier-truncated-square/): Proves the strict systolic bound for every truncated-square product and disproves the proposed optimizer.
 
 The [written proof](results/betermin-fcc-bcc-cold-spots/) identifies Gaussian minimizers with deep holes for FCC and BCC at every positive scale, corrects the printed BCC representative, and covers the two families in every rank at least three. [Issue #371](https://github.com/1337isnot1337/solved-conjectures/issues/371) records audit and scope. No optimization over lattice shapes, Lean verification, external referee review or priority claim.
 
