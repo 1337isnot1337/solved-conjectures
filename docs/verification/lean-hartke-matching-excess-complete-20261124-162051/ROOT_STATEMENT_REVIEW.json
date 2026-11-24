@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-11-24T19:31:03.931425+00:00",
+  "reviewer": "root; independent of all Hartke implementation",
+  "status": "statement and definition audit passed; full gate evidence remains separate",
+  "primary_source": "https://dwest.web.illinois.edu/pubs/perfmat.pdf",
+  "primary_version": "5 May 2011 author manuscript; Conjecture9.15 printedpage21",
+  "recorded_proof_commit": "a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7",
+  "recorded_proof_sha256": "f1e48357ca480242f69e8ffdf75ab0fa9611f95d25a3e6e9d3244a7d92bb5f25",
+  "manifest_sha256": "91deced4f62f6378d2aa46617cac56d51c0f668e6a64483a26f8947c40eff042",
+  "source_sha256": {
+    "Conjectures.HartkeMatchingExcessSplit": "0f9b3bb437183bae094a1c4485d8ea41d218f47605b7cc7316a44ac2a90a5a1a",
+    "Conjectures.HartkeMatchingExcessCounts": "df52005e1926adf3791402a532c55c9e4f463b8fa30fe999396721006d8462ae",
+    "Conjectures.HartkeMatchingExcessIsomorphism": "23d5222adfc1dbeab23064619dcd782e91d714fd265723b90376eacb4b0b69a6",
+    "Conjectures.HartkeMatchingExcessExtremal": "d1ff01cf415ffb1ff6d900f7c815c3f4a43cae9e3b28b6f47b4003c4feba6f7e",
+    "Conjectures.HartkeMatchingExcessDivergence": "a3584f9c05821979323cac9215d0cee1dce541dce84dbe226239070684e57b9d",
+    "Conjectures.HartkeMatchingExcessStatement": "ab970d99aa0ea43d440d6161dd4c07fbda9dfb4c475190f4f7cdf48322fc6ee1",
+    "Conjectures.HartkeMatchingExcess": "13feec5be16c29f94bd94f6cc28aa65cd01dd95bde39ac184b7fe2471211ac1d"
+  },
+  "report_sha256": "d68ed1377c44874664c7ccfd92c57ff3a243891fdd5cb1072a62debe9b0a4e4a",
+  "scope": "full original tail-minimum divergence plus the recorded quantitative bounds",
+  "unclaimed": [
+    "sharper proposed asymptotic growth rate",
+    "proposed exact upper bound"
+  ],
+  "new_lean_run": false,
+  "owned_implementation_reviewed": false
+}
