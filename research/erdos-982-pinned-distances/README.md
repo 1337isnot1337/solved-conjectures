@@ -1,0 +1,43 @@
+# Erdős’s convex-polygon pinned-distance conjecture
+
+Tracking issue: [#318](https://github.com/1337isnot1337/solved-conjectures/issues/318).
+
+**Status: partial result, not a resolution.** Started 2026-11-24 at 07:20:09 UTC. We prove the full floor(n/2) target at every order for convex polygons admitting a two-cap partition. This covers arbitrary finite strictly convex samples on the boundary of a centrally symmetric body, even when the selected points themselves have no symmetry. The classical cap lemma is not ours. We have not established priority for the application of that lemma below.
+
+## Statement and prior work
+
+[Erdős Problem 982](https://www.erdosproblems.com/982) asks whether every n-point set in strictly convex position in the plane contains a point at at least floor(n/2) distinct distances from the other points. A regular polygon attains equality. The global distinct-distance form, without a common pin, was proved by Altman; it is not this problem.
+
+- Erdős, *On sets of distances of n points* (1946), [original paper](https://www.cs.umd.edu/~gasarch/TOPICS/erdos_dist/erdos.pdf), posed a stronger statement about a pin with no triple of equally distant points and stated the implication at issue here. Erdős, *On some problems of elementary and combinatorial geometry* (1975), [p. 100](https://combinatorica.hu/~p_erdos/1975-25.pdf), separated the global and pinned conjectures explicitly.
+- Nivasch, Pach, Pinchasi and Zerbib, *The number of distinct distances from a vertex of a convex polygon*, J. Comput. Geom. 4 (2013), [journal](https://jocg.org/index.php/jocg/article/view/2937), [author preprint](https://arxiv.org/abs/1207.1266), obtain (13/36 + 1/22701)n - O(1). See their Definition 5 and subsequent cap properties for the classical geometric lemma below.
+- Scott Duke Kominers posted a July 2026 [partial claim](https://erdosproblems.ai/wiki/problems/distance_problems/E0982) improving the additive term to 3/5270. This is a public claim, not a claim independently audited here.
+- The November 2026 [Paulee314/erdos982 project](https://github.com/Paulee314/erdos982) reports finite verified cases to n=13; [Quantavane](https://github.com/arhancanli/quantavane-erdos-results) separately reports Lean certificate replay. Neither is an all-order resolution.
+- The [Erdős bibliography and problem survey](https://erdosproblems.ai/wiki/problems/distance_problems/E0982) document the different stronger assertions that were disproved. Notably [Bárány and Roldán-Pensado (2013)](https://doi.org/10.1007/s00454-013-9507-z) disprove the stronger continuous curve assertion of a center whose circles all have at most two boundary intersections. This does not refute the pinned-distance conjecture for finite point sets.
+
+Searches for exact statement, elliptic/centrally symmetric case, current preprints, Erdős #982 and repository indexing did not yield a full-scope resolution. They do not prove priority. The mathematical evidence below does not depend on the 2026 claimed advances.
+
+## Two-chain theorem
+
+**Theorem.** Let the cyclic vertex sequence of a strictly convex n-gon be partitioned into two consecutive chains. Suppose each chain has the following endpoint property: when read from either endpoint, its distances from that endpoint are strictly increasing. Then some vertex determines at least floor(n/2) distinct distances.
+
+**Proof.** If a chain has at least floor(n/2)+1 vertices, either endpoint sees the requisite number within that chain. Otherwise n=2m and both chains have m vertices. For m=1 the assertion is immediate. Let the endpoints of the first chain be a,b and of the second chain d,c in the common cyclic order a,b,d,c. The two diagonals ad and bc cross at an interior point O of that quadrilateral. By the strict triangle inequalities on triangles aOb and dOc,
+
+    |a-b|+|d-c| < |a-O|+|O-b|+|d-O|+|O-c| = |a-d|+|b-c|.
+
+At least one diagonal is strictly longer than min(|a-b|,|d-c|). Its endpoint in the chain that realizes this minimum has m-1 distinct same-chain distances, all at most that chain's endpoint span, plus the strictly longer diagonal. Hence it determines at least m distinct distances. □
+
+## Geometric applications
+
+A *cap chain* means points x_0,…,x_t in convex boundary order, all in a closed half disk with x_0 x_t as diameter. This is precisely the cap of Nivasch–Pach–Pinchasi–Zerbib, §2, Definition 5: a minor circular segment is contained in the half disk with the same chord, and the semicircle is an allowed minor arc. We use their classical cap lemma, which says that every ordered triple x_i,x_j,x_k (i<j<k) in the cap has angle at least π/2 at x_j. For completeness: Thales's circle condition gives ∠x_0 x_j x_t ≥ π/2. From the boundary point x_j, the rays to the other points occur in their boundary order x_{j+1},…,x_t,x_0,…,x_{j-1}, in a halfplane of width at most π. Hence the wedge between rays to x_k and x_i contains the wedge between rays to x_t and x_0, giving the required angle comparison. This ray order follows by the equal orientation of all triples in cyclic order, with the incident supporting line at x_j as the angular reference. The law of cosines now yields |x_i−x_k|>|x_i−x_j| and |x_i−x_k|>|x_k−x_j|. These inequalities establish the strict-increase property from both endpoints for every subsequence, even one omitting the original cap endpoints.
+
+**Corollary.** The conjecture holds for every finite set P in strictly convex position lying on the boundary of a centrally symmetric planar convex body K.
+
+Translate the center of K to the origin. Choose a on its boundary maximizing |a|; then -a belongs to K's boundary and the disk |x|≤|a| contains K. The center is interior to K: if an interior point is x, then -x is an interior point, and so is their midpoint. Consequently each relative-interior point of [-a,a] is interior to K, and the diameter line meets the boundary exactly at ±a. The two boundary arcs separated by those points lie in the corresponding closed halves of that disk. Apply the cap lemma to the points of either arc augmented by -a,a; then discard the artificial endpoints if needed. The boundary order on those arcs agrees with the cyclic order of P by convexity; if either end of the diameter belongs to P, assign it once to either neighboring chain. The resulting two chains satisfy the theorem. □
+
+This includes noncircular ellipses with no restriction on eccentricity or placement of the selected points. It does not require the sample P to be centrally symmetric itself, or the two artificial cap endpoints to be sample vertices. It also covers any sample on a strictly convex boundary whose entire body fits in a disk with two antipodal boundary contacts, whether or not the body is centrally symmetric. For the simpler case with both antipodal sample points present, the cap argument alone already suffices.
+
+## Why this does not settle the problem
+
+The smallest enclosing disk for an arbitrary convex polygon can have three supporting vertices and no antipodal contact pair. Moser's classical argument yields three cap chains in this case, not two. The stronger route of always partitioning into two strict bidirectionally increasing *consecutive* chains is impossible for large n: a largest chain of at least ceil(n/2) gives a consecutive increasing run of length at least ceil(n/2)-1, but Erdős and Fishburn exhibit convex n-gons whose longest run has length floor(n/3)+1. See [their 1994 paper and primary locator](https://erdosproblems.ai/wiki/library/distance_problems/erdos_1994_postscript_distances_convex_gons).
+
+Accordingly, a general proof has to use more than one monotone run from a pin, or use a different structural invariant. A natural place to try is the three-cap decomposition: leverage shared ordering of distance-matched pairs across the caps, rather than summing unweighted incidences of all isosceles triangles. That unweighted counting route has its own barrier: the quarter-circle-plus-center construction of Nivasch et al., §2, shows it cannot reach the conjectured coefficient with their counting lemma alone.
