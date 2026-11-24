@@ -71,3 +71,70 @@ The basic continuum restrictions above are simultaneously feasible at every $\ka
  \|f\|_2^2=1/\kappa+\lambda^2\|b-u\|_2^2\le1.
 \]
 In particular $f*\check f\le1$, exactly as required by the Sidon difference relaxation. But $f*f(x)\gg_\kappa\lambda^2 x^{1/2}$ near zero and $f*f(x)\gg_\kappa\lambda^2(2\kappa-x)^{1/2}$ near the other endpoint, by direct integration over the two endpoint cusps. It is positive and continuous on the compact intermediate range. Therefore $\int_0^{2\kappa}1/(f*f)<\infty$. This is a barrier to proving the conjecture purely from weak scaling, Sidon autocorrelation capacity, and gap interpolation; it is not a discrete counterexample. The remaining question is to rule out these concentration profiles for actual Sidon sumsets or find an additional discrete obstruction.
+
+## A universal constant: the asymptotic mean squared gap is at least 20
+
+In the notation of the original problem,
+\[
+ \liminf_{n\to\infty}\;\inf_{|A|=n,\;A\;\mathrm{Sidon}} Q(A)\ \ge\ 20.
+ \tag{3}
+\]
+This is a bounded lower bound, not divergence. [Kapoor's prior August 2026 note](https://github.com/RajveerKapoor/erdos-work/blob/main/papers/erdos-153.tex) claimed a lower constant near $16.13$, dyadic nonconcentration results and a discrete pair-count relaxation barrier. The present proof uses the full reciprocal-convolution functional; (2) permits weaker, one-sided logarithmic nonconcentration and the cusp construction gives a different continuum barrier. In particular finite reciprocal cost alone does not force a fixed-power endpoint profile.
+
+To prove (3), any violating subsequence would have bounded $Q_j$ and admit a limit as above. If $\kappa=1$, $f$ is uniform by Cauchy–Schwarz and $1/(f*f)$ is not integrable at the ends, a contradiction. For $\kappa>1$ write $f=u+h$, with $u$ uniform on $[0,\kappa]$ and $\|h\|_2^2\le1-1/\kappa$. If $x$ is the distance from the closer endpoint of the sum span, $0<x\le\kappa$, expansion of the convolution and Cauchy–Schwarz yield
+\[
+ g\le E(x):=\left(\frac{\sqrt{x}}\kappa+\sqrt{1-1/\kappa}\right)^2.
+\]
+Indeed $u*u=x/\kappa^2$, the two mixed terms together are at most $2\sqrt{x}\|h\|_2/\kappa$, and $h*h\le\|h\|_2^2$. In the variational inequality $1/g\ge 2\phi-\phi^2g$ put $c=2\kappa$, $\phi=\max(c,1/E)$. The base test $\phi=c$ yields $\int 1/g\ge4\kappa^2$, since $g$ has mass one. On the extra region $cE<1$, the improvement over this base is at least $1/E-2c+c^2E$. Put $t=\sqrt{2(\kappa-1)}$. For $0<t<1$, integrating the two identical endpoint improvements, and multiplying by 4 as in (1), gives
+\[
+ Q\ge16(1+t^2/2)^2\left(1+\int_t^1(v-t)(v^{-2}-2+v^2)\,dv\right)
+ =16(1+t^2/2)^2\left(-\log t+\frac83t-\frac34-t^2+\frac{t^4}{12}\right).
+\tag{4}
+\]
+For the substitution, $cE(x)=(\sqrt{2x/\kappa}+t)^2$ and $v=\sqrt{2x/\kappa}+t$. If $t\ge1/2$, already the base $16\kappa^2\ge20.25$ suffices.
+
+For a fully analytic verification when $0<t\le1/2$, Taylor's inequality with $(-\log t)''\ge4$ gives
+\[
+-\log t\ge \frac{3977}{4000}-\frac{t-t_0}{t_0}+2(t-t_0)^2,\qquad t_0=37/100.
+\]
+Here $\log(100/37)>3977/4000$ follows by the first seven positive terms of $2\sum_{j\ge0}(63/137)^{2j+1}/(2j+1)$. Substituting in the factor on the right of (4) divided by 16 gives the rational polynomial
+\[
+ P(t)=\frac{t^8}{48}+\frac{t^6}{3}-\frac{4207t^5}{11100}
+ +\frac{351083t^4}{240000}-\frac{4207t^3}{2775}
+ +\frac{50361t^2}{20000}-\frac{4207t}{2775}+\frac{30361}{20000}.
+\]
+On $[0,1/2]$ its second derivative is at least $4-10t+17t^2>2$ (bound the negative cubic term in the second derivative by $-1$ and keep the positive quadratic). Direct rational substitution gives $P(t_0)>1.2506$ and $|P'(t_0)|<0.001$. Therefore $P(t)\ge P(t_0)+P'(t_0)(t-t_0)+(t-t_0)^2>1.25$, proving (3) without a numerical minimizer.
+
+## A leading logarithmic coefficient near the minimal diameter
+
+For any finite Sidon family with $n\to\infty$ and $\kappa=\operatorname{diam}(A)/n^2=1+o(1)$, one has
+\[
+ Q(A)\ge(8-o(1))\log\frac1{(\kappa-1)_++n^{-1/2}}.
+ \tag{5}
+\]
+This gives an explicit leading coefficient in the near-extremal logarithmic result; it does not include independently unbounded diameter regimes. Here are the smoothing details, which also replace the otherwise qualitative weak convergence.
+
+Normalize $\min A=0$, let $\epsilon=n^{-1/2}$, and let $f_\epsilon$ be the empirical density uniformly smoothed to the right over scale $\epsilon$. Its support is $[0,L]$, $L=\kappa+\epsilon$. Summing overlap lengths over distinct nonzero grid differences gives
+\[
+ \|f_\epsilon\|_2^2
+ \le \frac1{n\epsilon}+\frac2{n^2\epsilon^2}\sum_{d\ge1}(\epsilon-d/n^2)_+
+ \le1+\epsilon.
+\]
+The last sum is bounded by the integral of the decreasing triangular function. Hence if $u$ is uniform on $[0,L]$ and $\rho=(\kappa-1)_++2\epsilon$, then
+$\|f_\epsilon-u\|_2^2\le\rho$. The smoothed ordered-sum density $g_\epsilon=f_\epsilon*f_\epsilon$ consequently satisfies
+\[
+ g_\epsilon(x)\le (\sqrt{x}/L+\sqrt\rho)^2
+ \quad(0<x<L).
+\]
+
+Assume $Q(A)\le10\log n$, since larger values satisfy (5) already. The largest scaled gap is $r=O(\sqrt{\log n}/n)=o(\epsilon)$. Use the gap-interpolating density $G$ from above and a nonnegative test $\phi$, equal to $L^2/x$ on $[2a,b/2]$, zero off $[a,b]$, and bounded by $L^2/x$ throughout, where $b=1/4$ and $a=\rho\log^2(1/\rho)$. Then
+\[
+ 2\int\phi(x)\,dx\ge2L^2\bigl(\log(1/a)-O(1)\bigr).
+\]
+To compare the square-test integrals, each off-diagonal sum has original interpolation mass $1/t_n\le2/n^2$, and corresponds to mass $2/n^2$ in the ordered empirical sum density prior to smoothing. Every interpolation location for that sum and every twice-smoothed location differs by at most $\Delta=r+2\epsilon=o(a)$. Thus, by comparing the value at every point of each pair of intervals and then averaging, its contribution to $\int\phi^2G$ is at most its ordered mass times the smoothed average of
+$(1+O(\Delta/a))L^4x^{-2}\mathbf1_{[a-\Delta,b+\Delta]}$. For the diagonal sums one can allow the excess total mass $1/n$, costing $O(1/(na^2))=O(1)$. Therefore
+\[
+ \int\phi^2G\le (1+o(1))L^4\int_{a-\Delta}^{b+\Delta}\frac{g_\epsilon(x)}{x^2}\,dx+O(1)
+ \le (1+o(1))L^2\log(1/a).
+\]
+The second inequality uses $\rho=o(a)$, so the pointwise bound for $g_\epsilon$ is $(1+o(1))x/L^2$ uniformly over the relevant range. Apply the pointwise reciprocal lower bound with this test on the left end and with its reflection on the right (equivalently, apply the same calculation to $\max A-A$). Their supports are disjoint, and each contributes at least $(1-o(1))L^2\log(1/a)$. Therefore the exact gap-interpolation functional is at least $(2-o(1))L^2\log(1/a)$. It equals $(t_n/n^2)^2 Q(A)$, $t_n/n^2\to1/2$, and $\log(1/a)\sim\log(1/\rho)$, proving (5).
