@@ -43,6 +43,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ |
 | [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
 | [Sagan–Swanson’s q-Stirling normality conjecture](results/sagan-swanson-q-stirling-normality/) | ⬜ |
+| [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/) | ⬜ |
 | [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | ⬜ |
 | [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
 | [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | ⬜ |
@@ -77,6 +78,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ⬜ |
 | [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | ⬜ |
 | [Higashitani–Kummer–Michałek’s canonical-line conjecture](results/hkm-canonical-line/) | ⬜ |
+| [Braun–Bruegge’s bicyclic facet conjectures](results/braun-bruegge-bicyclic-facets/) | ⬜ |
 | [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ⬜ |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |

@@ -783,3 +783,7 @@ Run `python3 results/hkm-canonical-line/check.py` and `python3 results/hkm-canon
 ## Sagan–Wilson coefficient mode certificate
 
 Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact length-ten witness. The [proof](../results/sagan-wilson-plactic-mode/PROOF.md) also gives the general asymptotic position independently of the finite check.
+
+## Bicyclic facets and complete-graph specialization
+
+Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 results/braun-bruegge-bicyclic-facets/check_maximizer.py` for the exact finite parts of the two graph theorems. Run `python3 results/gonzalez-dleon-wachs-complete-graphs/check_complete.py` for the independent exact recurrence comparisons of complete graphs.
