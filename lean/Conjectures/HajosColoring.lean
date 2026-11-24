@@ -135,7 +135,7 @@ abbrev near (a b : Fin 5) : Prop :=
 
 def graph : SimpleGraph V where
   Adj u v := u ≠ v ∧ near u.1 v.1
-  symm := ⟨fun h => ⟨h.1.symm, by
+  symm := ⟨fun _ _ h => ⟨h.1.symm, by
     rcases h.2 with h' | h' | h'
     · exact Or.inl h'.symm
     · exact Or.inr (Or.inr h')
@@ -255,6 +255,8 @@ theorem no_subdivision : ¬ Nonempty (Subdivision graph 8) := by
     · right
       apply Finset.mem_filter.mpr
       refine ⟨Finset.mem_univ _, ?_, hv⟩
+      change u.1 = a at hu
+      change u ≠ v ∧ near u.1 v.1 at e
       exact hu ▸ e.2
   have hc := separator_lower_bound m L (cut a) step i j hx hy hi hj
   rw [cut_card] at hc
@@ -267,6 +269,7 @@ def conjecture : Prop :=
 
 theorem conjecture_false : ¬ conjecture := by
   intro h
+  unfold conjecture at h
   exact no_subdivision (h V graph 8 (by rw [chromatic_eq]; norm_num))
 
 #print axioms conjecture_false
