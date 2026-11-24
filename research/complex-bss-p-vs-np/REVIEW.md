@@ -39,6 +39,12 @@ The script requires SymPy. The checked environment used SymPy 1.14.0. It verifie
 
 These are exact symbolic identities, not floating-point experiments. The arbitrary-size conclusions are proved in the notes. The script does not prove those general conclusions, the imported lower bound, a hierarchy collapse, or any `P_C` versus `NP_C` separation.
 
+## Repository checks for the integrated checkpoint
+
+The exact integrated README passed `scripts/check_readme_verification.py` for all 68 existing result rows. The symbolic checker passed all five check groups, and `git diff --check` passed after removing two extra blank lines at EOF. Hosted README and Lean-source-selection checks passed; the Lean build was skipped because this checkpoint changes no Lean source.
+
+The site build initially failed on base and PR heads because an unrelated existing proof had two reversed inline-math closing delimiters. The integration corrects only those delimiters in `results/steinke-zakynthinou-agnostic-vc/PROOF.md`. With that formatting correction, the local complete site build and its nine existing renderer tests passed. The complete site-content checker also passed, including internal links, anchors, source scopes, metadata, and MathML checks. No mathematical statement in that proof is changed.
+
 ## Remaining obligations
 
 No permanent-graph formula with a fixed or sub-log-log number of quantifier blocks has been constructed. No additive resultant-value incidence or multiplier-preserving permanent-graph degeneration has been constructed. No general method recovers the hard interior coefficient from a small arbitrary multiple. The singular implicit-witness extension is being investigated separately and is not an input to this checkpoint.
