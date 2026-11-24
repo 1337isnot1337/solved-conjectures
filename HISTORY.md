@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Prove Pantone–Bóna’s asymptotic conjecture
+
+The [written proof](results/pantone-bona-asymptotic/) resolves Conjecture 6.4 with leading constant $625\sqrt3/(192\pi)$ and extends the asymptotic to the equal-index pattern family. See [issue #377](https://github.com/1337isnot1337/solved-conjectures/issues/377) for scope and exact supplementary checks. No D-finiteness, Lean, external referee review, or priority claim is made.
+
 ## 2026-11-24: Prove Bétermin’s FCC/BCC cold-spot assertion
 
 The [written proof](results/betermin-fcc-bcc-cold-spots/) identifies Gaussian minimizers with deep holes for FCC and BCC at every positive scale, corrects the printed BCC representative, and covers the two families in every rank at least three. [Issue #371](https://github.com/1337isnot1337/solved-conjectures/issues/371) records audit and scope. No optimization over lattice shapes, Lean verification, external referee review or priority claim.

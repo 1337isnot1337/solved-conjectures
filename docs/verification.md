@@ -166,6 +166,10 @@ python3 results/johnson-pfaffian/verify.py
 
 The standard-library checker uses exact rational arithmetic for supplementary identity and indexing checks. It explicitly records that finite checks do not prove the universal assertion. No Lean formalization is claimed.
 
+## Pantone–Bóna asymptotic equivalence
+
+Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
+
 ## Bétermin FCC/BCC cold spots
 
 The [all-scale proof](../results/betermin-fcc-bcc-cold-spots/PROOF.md) uses parity projection, Jacobi products and a strict concavity argument. The proof does not depend on numerical testing. Run `python3 results/betermin-fcc-bcc-cold-spots/verify.py` for finite Gaussian comparisons and exact rational distance checks, including the corrected BCC representative.

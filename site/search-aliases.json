@@ -1,4 +1,5 @@
 {
+  "pantone-bona-asymptotic": ["Bóna–Pantone", "Bona Pantone", "A5,5", "12354", "long monotone subsequences", "pattern avoidance asymptotics"],
   "betermin-fcc-bcc-cold-spots": ["Bétermin", "Betermin", "Gaussian polarization", "checkerboard lattice", "cold spots", "deep holes"],
   "coulangeon-lazzarini-two-shells": ["lattice shells", "spherical 2-designs", "strong eutaxy", "Construction A"],
   "alexandersson-parking-excedance": ["parking functions", "strict excedances", "real-rootedness", "Laguerre inequality"],
