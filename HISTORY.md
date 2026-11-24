@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Refute Alexandersson’s parking-function excedance conjecture
+
+The [exact counterexample](results/alexandersson-parking-excedance/) violates the Laguerre inequality at length 17. Two independent recurrences agree on the coefficient vector. [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) records scope and previous work. No priority, Lean verification, or external referee review is claimed.
+
 ## 2026-11-24: Reconcile publication, issue closure and site validation
 
 Required research-to-main publication and discovery issue closure after review. Preserved the established mathematical-significance ordering while placing the newly published results at their relative ranks. Repaired the malformed Merlini–Sala–Sala summary cells; strengthened website duplicate-entry and ordering checks. The mathematical statements and verification markers are unchanged. The README column now explicitly says Lean verification status.
