@@ -67,7 +67,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ |
 | [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 |
 | [Wang–Yang's conjecture](results/wang-yang/) | ⬜ |
-| [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ⬜ |
+| [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ |
 | [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ |
 | [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ⬜ |
 | [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ |

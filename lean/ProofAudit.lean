@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CardonZeroSector.diagonal_coeff,
+    `CardonZeroSector.alpha_pos,
+    `CardonZeroSector.exists_nonreal_root,
+    `CardonZeroSector.counterexample,
+    `CardonZeroSector.cardon_question_6_1_false,
+    `CardonZeroSector.discriminant_limit,
+    `CardonZeroSector.discriminant_neg_for_small,
+    `CardonZeroSector.fails_to_preserve_sector_for_small,
+    `CardonZeroSector.not_reduces_for_small,
     `AgnosticVC.canonicalRep_refinement,
     `AgnosticVC.sampleFamily_vcDim_le,
     `AgnosticVC.continuous_optimizer,

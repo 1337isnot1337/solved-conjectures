@@ -1,3 +1,4 @@
+import Conjectures.CardonZeroSectorSmallDamping
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
 import Conjectures.ChenKhareSahiOrthogonalityGram

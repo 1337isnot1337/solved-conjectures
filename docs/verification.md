@@ -803,3 +803,13 @@ The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md
 ## Permutation word mixing and small eigenfunction norms
 
 [Féray’s word-measure proof](../results/feray-conjugate-power-word/PROOF.md) and its [sharp-rate supplement](../results/feray-conjugate-power-word/SHARP-RATE.md), as well as the [spherical basis construction](../results/steinerberger-small-average-eigenfunction-norms/PROOF.md) and its [per-mode extension](../results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md), are analytic arguments with independent source and proof audits.
+
+## Cardon et al. zero-sector reduction
+
+The [exact certificate](../lean/Conjectures/CardonZeroSector.lean) and [uniform theorem](../lean/Conjectures/CardonZeroSectorSmallDamping.lean) use the actual polynomial multiplier and complex roots. The [receipt](../docs/verification/lean-cardon-zero-sector-20261124/receipt.json) records the audited declarations, hashes and scoped stock replay.
+
+```sh
+cd lean
+lake build Conjectures.CardonZeroSectorSmallDamping
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CardonZeroSectorSmallDamping
+```
