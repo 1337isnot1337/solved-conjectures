@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `NemethSeberryShu.inclusionProbability_fourier,
+    `NemethSeberryShu.select_real_modes,
+    `NemethSeberryShu.approximate_all_fourier_modes,
+    `NemethSeberryShu.repair_with_uniform_error,
+    `NemethSeberryShu.exact_row_fourier_sampling,
     `AlmironMoyanoWilf.question_4_8_false,
     `AlmironMoyanoWilf.question_4_13_uniform_threshold,
     `AlmironMoyanoWilf.question_4_13_at_generator_count,

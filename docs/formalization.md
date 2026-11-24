@@ -1,6 +1,14 @@
 # Full formalization campaign
 
 
+
+## Németh–Seberry–Shu’s biased Fourier supports
+
+[Lean verifies the full support construction in §1](../lean/Conjectures/NemethSeberryShuFourierSampling.lean).
+For every dense row sum and permitted amplitude, the witness has exact
+cardinality and simultaneous Fourier error at most $4\sqrt{p\log p}$.
+The permanent asymptotic and the separation within a row sum remain open in Lean.
+
 ## Almirón–Moyano-Fernández’s normalized Wilf modules
 
 [Lean proves the gap-antichain characterization and the exact fixed-semigroup

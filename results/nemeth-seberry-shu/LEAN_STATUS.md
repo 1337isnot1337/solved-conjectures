@@ -1,6 +1,6 @@
 # Németh–Seberry–Shu conjecture
 
-**Status: incomplete formalization.** The congruence and final counting reduction are proved in Lean. The analytic construction of the separated permanent values is not formalized. This entry therefore contributes **zero completed results** to the current formalization campaign.
+**Status: incomplete formalization.** Lean verifies the biased Fourier support construction, the congruence, and the final counting reduction. The permanent asymptotic and within-row separation remain open in Lean. This entry therefore contributes **zero completed results** to the current formalization campaign.
 
 ## Checked statements
 
@@ -9,6 +9,18 @@
 - [NemethSeberryShuCounting.lean](../../lean/Conjectures/NemethSeberryShuCounting.lean) proves the exact dense-row count and the reduction from uniform dense-row separation to eventual domination of every linear bound. In particular, `dense_family_count` gives the written proof's lower bound `M * (floor(2p/3) - ceil(p/3) + 1)`. `eventually_superlinear_of_dense_families` and `no_eventual_linear_bound_of_dense_families` have an explicit finite-family premise.
 
 These statements quantify over all prime orders. The permanent is Mathlib's `Matrix.permanent`; the value set ranges over every binary support. The supported permutations use `i - σ(i) ∈ S`, matching Mathlib's permutation convention in the permanent sum. The fixed points are consequently translations by `-s`; this sign convention leaves the count `S.card` unchanged.
+
+## Biased Fourier support construction
+
+[Lean verifies the exact-cardinality support construction in §1](../../lean/Conjectures/NemethSeberryShuFourierSampling.lean).
+It checks the inclusion probabilities, the exact Fourier means at every frequency,
+the independent Bernoulli product, and the two-sided Hoeffding and union bounds.
+For each allowed prime, row sum and amplitude, the same support has the prescribed
+cardinality and simultaneous unnormalized Fourier error at most
+$4\sqrt{p\log p}$. The three prescribed means are computed in
+[`inclusionProbability_fourier`](../../lean/Conjectures/NemethSeberryShuFourierTarget.lean).
+The [scoped receipt](../../docs/verification/lean-nss-fourier-sampling-20261124/receipt.json)
+records the strict source check, full declaration audit and stock kernel replay.
 
 ## Remaining obligation
 
@@ -21,7 +33,7 @@ The missing theorem is the following statement, already named by the checked int
 
 Here `HasDensePermanentFamilies q M` means that for **every** integer row sum `k` in `[ceil(q/3), floor(2q/3)]`, there are `M` binary supports of cardinality exactly `k` with pairwise distinct permanents. The threshold must be uniform over all these row sums.
 
-The written proof supplies this input through §§1–2: a probabilistic construction with a prescribed Fourier mode and exact-cardinality repair; Fourier diagonalization and Parseval; the uniform permanent asymptotic of McCullagh in the form stated by Divoux–Wang, Proposition 3.1 and Remark 2.1; and a compactness argument giving a uniform positive separation between the selected amplitudes. None of these analytic steps has been replaced by an axiom. They remain unformalized. The stronger quadratic refinement is also unformalized.
+The remaining proof in §2 uses Fourier diagonalization and Parseval, the uniform permanent asymptotic of McCullagh in the form stated by Divoux–Wang, Proposition 3.1 and Remark 2.1, and a compactness argument giving a uniform positive separation between the selected amplitudes. The stronger quadratic refinement remains open in Lean.
 
 ## Source and credit
 
