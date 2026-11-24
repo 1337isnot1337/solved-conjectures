@@ -92,3 +92,11 @@ Here the ends are cube **vertices**, so the facet-centre statement E.9 cannot si
        \ge c_1 n/\sqrt p-c_2 p\log J .
 ```
 For $J\le\sqrt n$ the second term is $o(n/\sqrt p)$ uniformly. This proves the claim. Cut count can also be traded continuously in the displayed estimate. A circuit-dependent argument would need to force a short or geometrically correlated cut list, or handle the residual cuts by another invariant. The sampling bound (3) was for end positions fixed before testing all flags and does not preclude this construction.
+
+The same construction permits **many names near a few representative cuts**. Suppose every used cut $S$ is within $t$ vertex changes of one of $r$ balanced representatives, where $2dt\le n/256$. Construct the coordinates for the representatives and round $r$ up to a power of two $p$. For the representative's coordinate, changing one vertex changes the sum of signed ends by at most $d/\sqrt p$ in absolute value. Thus every used $S$ still has $\|b_S\|\ge n/(256\sqrt p)$, allowing also the conservative bound with $2d$. Use a separate pair of hubs for each actual $S$. Formula (1), including **all** actual names $J\le2^n$, now gives
+```math
+\log L\ge c_3\ell n/\sqrt p-c_4p\log J.
+```
+In particular if $r$ is polylogarithmic in $n$, choose $\ell=\lceil Kp^{3/2}\rceil$ with a large absolute $K$. This forces $\log L=\Omega(np)$ while $\log M=O(\log n+p^{3/2})$. For any given polylogarithmic upper bound on $r$, one can fix $p$ and $\ell$ from that upper bound in advance, padding unused coordinates. Thus in the flat case the full range of fixed quasipolynomial circuit sizes is excluded for this restricted cover condition, even allowing exponentially many distinct cuts inside the balls.
+
+A generic count of nonzero gate components does not supply such a cover. In the $O(n)$-gate circuit squaring $\prod_i(1+x_i)$, the root's squarefree component receives a nonzero term from every ordered half-size split when $n$ is even. The balanced-product induction sees these splits even though the two input wires reuse one gate. The component itself has a simpler decomposition; the example refutes only an inference from small gate count to a small list in the unsimplified expansion. Obtaining a suitably clustered decomposition **for the network polynomial** is a separate open implication.
