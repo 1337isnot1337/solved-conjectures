@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FanTringali.slab_uniqueQuotient,
+    `FanTringali.slab_no_quotient_both,
+    `FanTringali.uniqueQuotient_stack,
+    `FanTringali.graph_box_divisor_iff,
+    `FanTringali.graph_uniqueQuotient,
+    `FanTringali.layered_atomic_factorization,
+    `FanTringali.layered_lengths,
+    `FanTringali.graph_lengths,
     `UlasDisjointSquareBlocks.Repeatable.infinite,
     `UlasDisjointSquareBlocks.eventual_infinite_of_repeatable_and_prime_avoidance,
     `UlasDisjointSquareBlocks.ulasConjecture_of_inputs,

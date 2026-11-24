@@ -1,3 +1,10 @@
+import Conjectures.FanTringaliSlices
+import Conjectures.FanTringaliProducts
+import Conjectures.FanTringaliCoordinates
+import Conjectures.FanTringaliStack
+import Conjectures.FanTringaliGraph
+import Conjectures.FanTringaliFactorizations
+import Conjectures.FanTringaliGraphLengths
 import Conjectures.UlasDisjointSquareBlocksBasic
 import Conjectures.UlasDisjointSquareBlocksParity
 import Conjectures.UlasDisjointSquareBlocksAffine
