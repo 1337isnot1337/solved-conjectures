@@ -1,3 +1,5 @@
+import Conjectures.NemethSeberryShuCongruence
+import Conjectures.NemethSeberryShuCounting
 import Conjectures.CoulangeonLazzariniShells
 import Conjectures.CoulangeonLazzariniRealLattice
 import Conjectures.ThueMorseValuationBasic

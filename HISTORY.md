@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Németh–Seberry–Shu conjecture
+
+The [partial Lean formalization](results/nemeth-seberry-shu/LEAN_STATUS.md) verifies the permanent congruence for every prime-order binary circulant, separation across dense row sums, and the exact reduction from uniformly available finite families to superlinear growth. Both modules passed strict source compilation, the all-owned axiom audit, and stock-kernel replay. An independent review checked the actual permanent convention and the uniform quantifiers. The Fourier/asymptotic construction and quadratic refinement remain unformalized. No complete formalization is counted.
+
 ## 2026-11-23 — Full-decider rational simulation and a denominator criterion
 
 The [complex BSS campaign](research/complex-bss-p-vs-np/README.md) gives a uniform polynomial-size rational simulation of every total standard BSS decider using one common deformation parameter. All fixed-input gate germs are holomorphic, and shared pair clearing supplies small polynomial numerator and denominator circuits. A separate proved criterion extracts bounded boundary jets if the supplied denominator is locally nonvanishing near every false input; the decider has not been shown to supply that property. Two independent full reviews checked the construction and criterion. Exact complete-program examples retain false poles and can hide the support beyond exponentially many generic coefficients. An independently checked irreducible bihomogeneous example shows why ordinary coefficient-tensor ranks are not monotone under multiplication by an easy cofactor. The target separation remains unresolved in [issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248); no solved-result or Lean-status promotion is made.

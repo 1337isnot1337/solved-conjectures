@@ -1,5 +1,16 @@
 # Full formalization campaign
 
+## Németh–Seberry–Shu conjecture
+
+The [two-module formalization](../results/nemeth-seberry-shu/LEAN_STATUS.md)
+proves the binary-circulant permanent congruence at every prime order and the
+uniform dense-row counting reduction. It uses the actual `Matrix.permanent`
+and the set of all binary supports. The missing analytic separation input is
+an explicit hypothesis, so the full disproof remains incomplete in Lean.
+An independent statement review, strict compilation, every-owned-declaration
+audit, and stock-kernel replay passed. This milestone contributes zero complete
+results to the campaign started on 24 November 2026 at 16:19:51 UTC.
+
 ## Benfield–Lippard’s stable Waring-gap symmetry conjecture
 
 The [Lean proof](../lean/Conjectures/BenfieldLippardSymmetry.lean) refutes
