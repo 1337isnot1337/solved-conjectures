@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CoulangeonLazzariniShells.norms_before_bad_shell,
+    `CoulangeonLazzariniShells.arbitrarily_many_initial_designs,
+    `CoulangeonLazzariniShells.bad_shell_shape,
+    `CoulangeonLazzariniShells.conjecture_21_counterexample,
+    `CoulangeonLazzariniShells.mem_euclideanShell,
+    `CoulangeonLazzariniShells.euclideanShell_design_iff,
+    `CoulangeonLazzariniShells.first_real_norms,
+    `CoulangeonLazzariniShells.real_lattice_counterexample,
     `ThueMorseSignDensity.not_conjecture_5_8,
     `ThueMorseSignDensity.exception_lower_density_zero,
     `ThueMorseSignDensity.exception_lower_density_one,

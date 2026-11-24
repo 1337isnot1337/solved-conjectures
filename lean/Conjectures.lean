@@ -1,3 +1,5 @@
+import Conjectures.CoulangeonLazzariniShells
+import Conjectures.CoulangeonLazzariniRealLattice
 import Conjectures.ThueMorseValuationBasic
 import Conjectures.ThueMorseSignDensity
 import Conjectures.GravgaardLeeLargeLuroth
