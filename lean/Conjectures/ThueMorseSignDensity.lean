@@ -79,11 +79,11 @@ theorem exception1_iff (n : Nat) : exception 2 1 n ↔ 0 < t 2 (3*n+1) := by
 
 theorem bit0 : exceptionBit 2 0 = (fun n => decide (t 2 (3*n)<0)) := by
   funext n
-  simp [exceptionBit,exception0_iff]
+  exact decide_congr (exception0_iff n)
 
 theorem bit1 : exceptionBit 2 1 = (fun n => decide (0<t 2 (3*n+1))) := by
   funext n
-  simp [exceptionBit,exception1_iff]
+  exact decide_congr (exception1_iff n)
 
 theorem exception_block0 (h : Nat) : ∃ s : Nat, s<512 ∧ exception 2 0 (512*h+s) := by
   obtain ⟨s,hs,ht⟩ := block0 recurrence h
@@ -140,7 +140,7 @@ theorem complement_count (b : Nat → Bool) (X : Nat) :
   | zero => rfl
   | succ X ih =>
     rw [countPrefix,countPrefix]
-    cases h : b X <;> simp [h] <;> omega
+    cases b X <;> simp <;> omega
 
 theorem upper_bound0 (X : Nat) : (exceptions 2 0 X).length + X/512 ≤ X := by
   have h := count_from_blocks (fun n => !(exceptionBit 2 0 n)) 512 X (by
