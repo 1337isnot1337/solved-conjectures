@@ -33,7 +33,7 @@ E$m$ = 1 + sum_{j=0}^{N-2} W_{N,t,j} choose(m,j+1).
 
 The polynomial extension of each basis element is a falling factorial divided by ($j+1$!), so the displayed count has degree at most $N-1$. A separate general Ehrhart theorem or six-part convolution is not needed if the literal geometry and these finite bijections are formalized. Either the explicit polynomial or the earlier checked interpolation endpoint can finish the root step.
 
-Independent exact integer evaluation reproduced all 23 values for the two witness graphs. The coefficients $W$ in increasing order of $j$ are:
+Independent exact integer evaluation reproduced all 23 published values. A separate admissible-parts convolution matched all 675 combinations of $3 \le N \le 12$, $0 \le t \le \lfloor N/2 \rfloor$, and $0 \le m \le 14$. The coefficients $W$ in increasing order of $j$ are:
 ```
 N=12, t=6: 120, 4062, 58116, 440658, 1985760, 5645136,
            10389024, 12351222, 9154856, 3846084, 699288
