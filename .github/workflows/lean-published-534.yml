@@ -1,0 +1,56 @@
+name: Published conjecture formalizations 534
+on:
+  push:
+    branches: ['review/published-*']
+    paths:
+      - 'lean/Conjectures/Published*.lean'
+      - 'research/published-formalizations/campaign-534/**'
+      - 'scripts/verify_published_formalizations_534.py'
+      - '.github/workflows/lean-published-534.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: published-534-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        run: |
+          python3 -m py_compile scripts/verify_published_formalizations_534.py
+          echo "matrix=$(python3 scripts/verify_published_formalizations_534.py --list)" >> "$GITHUB_OUTPUT"
+  verify:
+    needs: plan
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+      - name: Strict sources, all owned declarations, and stock kernel
+        env:
+          MANIFEST: ${{ matrix.manifest }}
+        run: python3 scripts/verify_published_formalizations_534.py --manifest "$MANIFEST"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: published-534-${{ matrix.lane }}
+          path: .candidate-artifacts/published-534/
+          if-no-files-found: error
+          retention-days: 14

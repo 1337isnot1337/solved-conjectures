@@ -1,0 +1,29 @@
+{
+  "modules": [
+    "Conjectures.PublishedMarkusYamabeBasic"
+  ],
+  "required": [
+    "Published.MarkusYamabe.hasFDerivAt_field",
+    "Published.MarkusYamabe.contDiff_field",
+    "Published.MarkusYamabe.field_zero",
+    "Published.MarkusYamabe.field_polynomial",
+    "Published.MarkusYamabe.jacobian_field",
+    "Published.MarkusYamabe.eigenvalue_eq"
+  ],
+  "legacy_prefixes": [
+    "Published.MarkusYamabe."
+  ],
+  "completion_status": "incomplete",
+  "results": [
+    {
+      "name": "Markus–Yamabe conjecture",
+      "issue": 544,
+      "complete": false
+    },
+    {
+      "name": "Discrete Markus–Yamabe conjecture",
+      "issue": 545,
+      "complete": false
+    }
+  ]
+}
