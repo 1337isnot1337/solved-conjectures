@@ -1,5 +1,13 @@
 # Full formalization campaign
 
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is fully checked by `AgnosticVC.steinkeZakynthinou_framework_conjecture418`. Its distribution-free CMI takes the supremum over fixed paired pools, and both guarantees hold with common constant $`19{,}712`$ for every positive sample size. [Lean source](../lean/Conjectures/AgnosticVC/FixedPairing.lean)
