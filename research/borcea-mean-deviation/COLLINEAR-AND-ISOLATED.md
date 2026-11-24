@@ -1,6 +1,6 @@
 # Borcea's mean-deviation conjecture: collinear roots and isolated roots
 
-Define $\sigma_1(P)=\inf_{c\in\mathbb C}n^{-1}\sum_{P(z_i)=0}|z_i-c|$ for a polynomial $P$ of degree $n\ge2$, with multiplicity in the sum. The $p=1$ instance of [Borcea's variance conjecture, Conjecture 1](https://arxiv.org/pdf/1010.5167#page=4) asserts that every root lies within distance $\sigma_1(P)$ of a critical point. This note proves the collinear-root case in every degree, with equality, and a sufficient isolation condition in the complex case. It does not settle the unrestricted conjecture.
+Define $\sigma_1(P)=\inf_{c\in\mathbb C}n^{-1}\sum_{P(z_i)=0}|z_i-c|$ for a polynomial $P$ of degree $n\ge2$, with multiplicity in the sum. The $p=1$ instance of [Borcea's variance conjecture, Conjecture 1](https://arxiv.org/pdf/1010.5167#page=4) asserts that every root lies within distance $\sigma_1(P)$ of a critical point. This note gives an elementary alternative collinear-root proof, including equality, and a sufficient isolation condition in the complex case. The collinear bound already follows from Borcea’s sharper real-root theorem, as explained below. It does not settle the unrestricted conjecture.
 
 ## All collinear roots, with equality
 
@@ -60,3 +60,9 @@ the conclusion holds.
 ## Prior work and scope
 
 [Khavinson, Pereira, Putinar, Saff and Shimorin (2011), §§3–4](https://arxiv.org/abs/1010.5167) separately treats real-rooted polynomials for the $p=2$ inequality and gives Borcea's general complex cubic proof for $p=1$. Their Proposition 4.1 proves the reverse directed distance ($P'$ roots to $P$ roots) for all polynomials at $p=1$. [Zhang](https://arxiv.org/abs/2610.02035) and [Bouthat–Fallat](https://arxiv.org/abs/2610.12499) prove $p=2$ in all degrees, which does not imply $p=1$. Targeted searches did not locate the precise collinear $p=1$ argument with equality or the $2\sigma_1$ criterion above; not a priority guarantee.
+
+## Priority correction for the collinear result
+
+[Borcea’s real-root theorem, reported as Theorem 6.1](https://arxiv.org/html/1010.5167#S6.SS2), gives the distance bound $\sigma_2(P)/\sqrt{n-1}$. To compare this with $\sigma_1$, let $x$ be the root vector centered at a geometric median and let $P_0$ be orthogonal projection off the constant vector. Each column of $P_0$ has norm $\sqrt{(n-1)/n}$, so $\|P_0x\|_2/\sqrt n\le\sqrt{n-1}\|x\|_1/n$. This proves the collinear inequality from the earlier theorem. For $n\ge3$ equality in this triangle inequality with nonzero deviation allows only one nonzero coordinate, since distinct projection columns are not collinear. Thus the equality family also follows from the prior result and direct substitution. The collinear section above is only an elementary alternate argument. This does not change the complex isolation criterion.
+
+In particular, if a distinguished root is at distance at least $(n/2+1)\sigma_1$ from a geometric median, then each other root is at distance at least $2\sigma_1$ from it: bound each other root's distance to the median by the sum of the $n-1$ remaining distances. This is a convenient sufficient consequence of the complex isolation result.
