@@ -74,6 +74,8 @@ STATUS_LABEL_SLUGS = {
     "Athanasiadis–Chapoton’s q-zeta reciprocity conjecture": "athanasiadis-chapoton-q-zeta",
     "Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture": "athanasiadis-chapoton-transmuted-m",
     "Roy’s square-partition multiplicative inequality conjecture": "roy-square-partitions",
+    "Gawron–Miska–Ulas’s Thue–Morse valuation conjecture": "gawron-miska-ulas-thue-morse-valuation",
+    "Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture": "zhu-jacobi-stirling-hankel",
     "Fan–Tringali’s power-monoid length-set conjecture": "fan-tringali-power-monoid-lengths",
     "Sokal’s Apéry moment threshold": "sokal-apery-moment-threshold",
     "Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture": "gessel-zhuang-pinnacle-gamma",

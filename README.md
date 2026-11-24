@@ -31,6 +31,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ |
 | [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ |
 | [Roy’s square-partition multiplicative inequality conjecture](results/roy-square-partitions/) | ⬜ |
+| [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/) | ⬜ |
+| [Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture](results/zhu-jacobi-stirling-hankel/) | ⬜ |
 | [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ⬜ |
 | [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | ⬜ |
 | [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ⬜ |
