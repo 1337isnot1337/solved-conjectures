@@ -4,6 +4,8 @@
   "pantone-bona-second-largest-terminal": ["Bóna–Pantone", "A5,4", "12345 12453 13452 23451", "decreasing tail", "tableau walks"],
   "pantone-bona-asymptotic": ["Bóna–Pantone", "Bona Pantone", "A5,5", "12354", "long monotone subsequences", "pattern avoidance asymptotics"],
   "hartke-stolee-west-yancey-matching-excess": [ "matching excess", "perfect matchings", "Mersenne division" ],
+  "feldheim-weighted-tail": ["mean and minimum of independent random variables", "Feldheim Feldheim", "weighted average tails", "Wright convexity"],
+  "burstein-descent-top-shape-wilf": ["Alexander Burstein", "Destop", "Ascbot", "Ferrers board", "231 and 312", "shape-Wilf equivalence"],
   "steinerberger-feldheim-tail": ["Feldheim–Feldheim", "Feldheim Feldheim", "mean minimum of independent random variables", "median normalized tail", "log-concavity"],
   "benfield-lippard-waring-gap-symmetry": ["Benfield Lippard", "generalized Waring problem", "stable exception sets", "Apéry sets", "398"],
   "benfield-lippard-waring-gap-parity": ["Benfield Lippard", "generalized Waring problem", "stable exception sets", "Apéry sets", "399"],

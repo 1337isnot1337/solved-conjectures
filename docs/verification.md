@@ -178,6 +178,8 @@ The [quantitative Feldheim-tail counterexample](../results/steinerberger-feldhei
 
 Run `python3 results/benfield-lippard-waring-gap-symmetry/check.py` for the two exact Waring-gap symmetry defects. The [parity argument](../results/benfield-lippard-waring-gap-parity/PROOF.md) and the [smaller existential Feldheim-tail inequality](../results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md) are analytic and use no executable certificate.
 
+The [Feldheim–Feldheim weighted-tail proof](../results/feldheim-weighted-tail/PROOF.md) is analytic. Run `python3 results/burstein-descent-top-shape-wilf/check.py` for literal short Ferrers-board fiber counts; the uniform refutation is analytic and does not depend on enumeration.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.

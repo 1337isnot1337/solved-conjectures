@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Certify the two stable Waring-gap symmetry defects
         run: python3 results/benfield-lippard-waring-gap-symmetry/check.py
+      - name: Check Burstein’s Ferrers-board mismatch on short suffixes
+        run: python3 results/burstein-descent-top-shape-wilf/check.py
       - name: Check matching excess via literal graph witnesses
         run: python3 results/hartke-stolee-west-yancey-matching-excess/verify.py
       - name: Certify the plane-partition Fourier sign over exact rational boxes
