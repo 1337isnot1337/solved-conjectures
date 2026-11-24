@@ -1,19 +1,24 @@
-# Lean candidate: overlap arithmetic
+# Lean candidate: overlap arithmetic and literal words
 
 This is an **unregistered candidate**, not a verification receipt.
 
-Source: [EkhadZeilbergerOverlap.lean](../../lean/Conjectures/EkhadZeilbergerOverlap.lean).
-The candidate models the geometric sum of shift weights and establishes the
-strict nonconstant-loser comparison under the two variance alternatives,
-the sharp constant-loser inequality and equality conditions, and the
-intermediate full-alphabet constant-versus-nonconstant comparison.
+- [Scalar arithmetic](../../lean/Conjectures/EkhadZeilbergerOverlap.lean):
+  geometric shift weights, both nonconstant-loser cases with explicit variance
+  hypotheses, sharp constant-loser inequality and equality, and the intermediate
+  full-alphabet comparison.
+- [Literal finite-word bridge](../../lean/Conjectures/EkhadZeilbergerWords.lean):
+  indexed suffix-prefix overlap predicate, exact shift sums, shift-one
+  characterization of constant words, an all-length tail bound, the actual
+  constant-word cross-overlap estimate via a mismatching position, the
+  constant-loser extremal upper bound, and literal attainment by the proposed
+  pair. The nonconstant theorem still retains the variance alternative.
 
-The remaining obligations are the actual finite-word overlap model,
-the cross-overlap and constant-run estimates, the double-endpoint variance
-projection (or an alternative direct overlap argument), the large-alphabet
-case, and the published asymptotic and equal-autocorrelation theorems.
-The candidate explicitly retains the unresolved hypotheses rather than
-introducing axioms. The accepted README verification status is unchanged.
+The remaining obligations are the same-interior/shift-one exceptional
+case, the double-endpoint variance projection (or an alternative direct
+overlap argument), uniqueness of the extremizing word forms, the
+full-alphabet combinatorial cases, and the published asymptotic and
+equal-autocorrelation theorems. Unresolved hypotheses are explicit; no
+full-result or accepted README verification status change is claimed.
 
 Run from the repository root:
 
