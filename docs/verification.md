@@ -193,6 +193,14 @@ The standard-library verifier independently checks 4258 rational median brackets
 
 ## Computational checks
 
+The [dual Chow counterexample](../results/caiolo-ferroni-hoster/PROOF.md) uses two exact recursions and a symbolic discriminant sign certificate for all prime powers q ≥ 17. The [Ehrhart counterexample](../results/hkm-ehrhart/PROOF.md) uses integer lattice-point counts, exact polynomial interpolation, a rational Descartes certificate, and a negative Wronskian. Both were replayed on 2026-11-24; these are not Lean checks.
+
+```bash
+python3 -m pip install sympy==1.14.0
+python3 results/caiolo-ferroni-hoster/verify_counterexample.py
+python3 results/hkm-ehrhart/verify.py
+```
+
 The [Chen–Khare–Sahi proof](../results/chen-khare-sahi-macdonald/PROOF.md) reduces every degree-six Muirhead-semiring representation to 38 displayed products and seven pure monomials. An exact rational functional is nonnegative on all of them and negative on the specified normalized Macdonald difference. This exhaustive reduction proves nonmembership in the full semiring. The [independent reviews](../results/chen-khare-sahi-macdonald/ROOT_REVIEW.md) also verify the rectangular-translate and continuous-parameter families.
 
 ```bash

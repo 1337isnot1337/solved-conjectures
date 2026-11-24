@@ -59,6 +59,8 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Caiolo–Ferroni–Hoster conjecture": "caiolo-ferroni-hoster",
+    "Higashitani–Kummer–Michałek conjecture": "hkm-ehrhart",
     "Steinke–Zakynthinou’s agnostic VC learning conjecture": "steinke-zakynthinou-agnostic-vc",
     "Steinke–Zakynthinou agnostic threshold problem": "steinke-zakynthinou-thresholds",
     "Johnson's conjecture": "johnson-pfaffian",

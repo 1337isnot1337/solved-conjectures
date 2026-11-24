@@ -61,6 +61,10 @@ jobs:
           python -m pip install sympy==1.14.0
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
+      - name: Replay dual Chow and symmetric edge polytope counterexamples
+        run: |
+          python3 results/caiolo-ferroni-hoster/verify_counterexample.py
+          python3 results/hkm-ehrhart/verify.py
       - name: Check extremal word pairs in Litt's game
         run: python results/ekhad-zeilberger-unfair-bet/verify.py
       - name: Check the Kauers–Koutschan recurrence

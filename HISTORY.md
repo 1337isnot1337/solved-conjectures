@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Publish two independently reviewed counterexample packages
+
+The [Caiolo–Ferroni–Hoster](results/caiolo-ferroni-hoster/) and [Higashitani–Kummer–Michałek](results/hkm-ehrhart/) research candidates pass an internal mathematical audit against their original statements and exact-arithmetic replays. Each refutes the whole stated universal conjecture (including its accompanying extension or second clause); each is counted once. The source proofs and verifier blobs are preserved, with review and provenance recorded separately. No Lean verification, external referee approval, or exclusive priority is claimed. Issues [#111](https://github.com/1337isnot1337/solved-conjectures/issues/111) and [#316](https://github.com/1337isnot1337/solved-conjectures/issues/316) track discovery and publication.
+
 ## 2026-11-24: Research and publication branch split
 
 The [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research) keeps current investigations and their review materials. The main branch publishes reviewed results, including rigorously established partial theorems if labeled with their exact scope. Git history is retained.
