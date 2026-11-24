@@ -1,118 +1,161 @@
 # Hartke–Stolee–West–Yancey matching-excess conjecture
 
-## Status
+## Status and exact result
 
-The Lean formalization is incomplete. Checkpoint 001 proves the general
-binary arithmetic and the actual graph-count foundations in eight modules.
-It does not prove divergence of the extremal constants or their tail
-minimum, and this entry contributes zero completed results to the campaign.
+The full Conjecture 9.15 is formalized for actual finite simple graphs, with
+the quantitative lower bound recorded in the existing proof. The import
+root is [`Conjectures.HartkeMatchingExcess`](../../lean/Conjectures/HartkeMatchingExcess.lean).
+This is one completed existing result; modules, auxiliary bounds and
+quantitative restatements are not separate results.
 
-The checked import root is
-[`Conjectures.HartkeMatchingExcess`](../../lean/Conjectures/HartkeMatchingExcess.lean).
-The [receipt](../../docs/verification/lean-hartke-matching-excess-partial-20261124-162051/receipt.json)
-pins every source and verifier hash, required endpoint, and scoped check.
+For a positive integer $`p`$, let $`f(2n,p)`$ be the maximum edge count of a
+simple graph on $`2n`$ vertices with exactly $`p`$ perfect matchings, whenever
+such graphs exist. The formalization proves the existence and uniqueness
+of an integer $`c_p`$ such that $`f(2n,p)=n^2+c_p`$ for every sufficiently
+large $`n`$. It then defines and proves attainment of the actual tail
+minimum $`m_p=\min_{q\ge p}c_q`$, and proves
 
-## Source and exact target
+```math
+\lim_{p\to\infty}m_p=+\infty.
+```
 
-Stephen G. Hartke, Derrick Stolee, Douglas B. West, and Matthew Yancey posed
+For every $`p\ge2`$, writing $`N=1+\lfloor\log_2(p-1)\rfloor`$, Lean also
+proves both recorded estimates:
+
+```math
+c_p\ge\frac{\sqrt{8N+1}-3}{4},\qquad
+m_p\ge\frac{\sqrt{8N+1}-3}{4}.
+```
+
+There is no fixed graph size, finite input range, subsequence restriction,
+or unproved construction or stabilization premise. The stronger growth
+question after Conjecture 9.15 and the separate proposed exact upper bound
+are outside this result.
+
+## Source and attribution
+
+Stephen G. Hartke, Derrick Stolee, Douglas B. West and Matthew Yancey posed
 Conjecture 9.15 on printed page 21 of the author manuscript dated 5 May 2011,
-*Extremal Graphs With a Given Number of Perfect Matchings*. The final article
+*Extremal graphs with a given number of perfect matchings*. The final article
 appeared in *Journal of Graph Theory* 73(4) (2013), 449–468,
 [DOI 10.1002/jgt.21687](https://doi.org/10.1002/jgt.21687).
 The [public author manuscript](https://dwest.web.illinois.edu/pubs/perfmat.pdf#page=21)
-was read directly for the statement, definitions, binary construction, and
-two-vertex extension.
+was read directly for the exact target and definitions.
 
-For even vertex count $`n`$, $`f(n,p)`$ is the largest number of edges in a
-finite simple graph with exactly $`p`$ perfect matchings, when such graphs
-exist. Dudek and Schmitt's eventual formula defines $`c_p`$ by
-$`f(n,p)=n^2/4+c_p`$ for all sufficiently large even $`n`$.
-The target is divergence of $`m_p=\min_{q\ge p}c_q`$.
-The separate stronger rate question and conjectured exact upper bound are
-outside this formalization.
+The argument formalized here is the existing [PROOF.md](PROOF.md),
+contributed by Cinna Davis in commit
+[`a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7`](https://github.com/1337isnot1337/solved-conjectures/commit/a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7).
+Its SHA256 is `f1e48357ca480242f69e8ffdf75ab0fa9611f95d25a3e6e9d3244a7d92bb5f25`.
+The written argument is preserved. The binary construction is credited to
+the original authors, the two-vertex extension to Hetyei, and the original
+stabilization theorem to Dudek and Schmitt. The formalization supplies the
+boundedness and stabilization bridges directly, without assuming those
+prior theorems. This is not a new-priority claim for the elementary upper
+bound used in that bridge. The bounded literature search and unresolved
+historical priority qualifications in [AUDIT.md](AUDIT.md) remain in force.
 
-The argument being formalized is this existing entry's [PROOF.md](PROOF.md),
-contributed by Cinna Davis in repository commit
-`a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7`; its SHA256 is
-`f1e48357ca480242f69e8ffdf75ab0fa9611f95d25a3e6e9d3244a7d92bb5f25`.
-The source authors receive credit for the conjecture, the prior binary
-construction, and the extension. The existing [audit](AUDIT.md) records the
-bounded literature search and priority limits. This work makes no new
-discovery or exclusive-priority claim.
+## Statement correspondence
 
-## Checked scope
+| Source object or assertion | Lean definition or theorem | Scope |
+| :--- | :--- | :--- |
+| A perfect matching of a simple graph | `PerfectMatching`, `perfectMatchingCount` | Actual Mathlib subgraphs satisfying the spanning perfect-matching predicate; no proxy count |
+| Edge excess at even order $`2n`$ | `graphExcess n G` | Integer edge cardinality minus $`n^2`$ |
+| Maximum over all feasible even orders | `excessValues`, `matchingExcess_attained` | All simple graphs on `Fin n ⊕ Fin n`, for every `n`; labels impose no split-graph restriction |
+| Exact finite-order extremum $`f(2n,p)`$ | `extremalEdges` | Finite maximum over all simple graphs with exactly `p` perfect matchings |
+| Eventual constant $`c_p`$ | `extremalEdges_eventually`, `matchingExcess_unique` | Existence, all sufficiently large orders, and uniqueness proved |
+| Tail minimum $`m_p`$ | `tailValues`, `tailMinimum_attained` | Minimum of every `c_q` with `q ≥ p`, attained for every positive `p` |
+| Full Conjecture 9.15 | `conjecture_9_15` | `Filter.Tendsto tailMinimum Filter.atTop Filter.atTop` |
+| Literal eventual-constant formulation | `conjecture_9_15_eventual` | The same conclusion for any constants specified by the exact eventual formula |
+| Recorded quantitative bounds | `matchingExcess_sqrt_lower_bound`, `tailMinimum_sqrt_lower_bound` | Every `p ≥ 2`; `matchingExcess_log_lower_bound` supplies the integer-log version |
 
-`binaryWeight` is the sum of the ordinary base-two digits, and
-`binaryLength` is their length; both are zero at zero. For every positive
-integer $`n`$ and integer $`u\ge2`$ with $`w(n)<u`$,
-`mersenne_division_weight_bound` proves
+All names in the table are in namespace `HartkeMatchingExcess`. The empty
+family convention in `extremalEdges` is zero, but the eventual theorem
+proves existence of suitable graphs at every order where it is used.
+The behavior at `p=0` has no role in the positive-count statements or limit.
+
+## Checked proof chain
+
+The arithmetic modules prove binary-weight subadditivity, the sparse
+Mersenne residue fact and the all-input long-division estimate. The residue
+proof folds high and low binary blocks. The division proof uses the bit
+length of the nonzero remainder as a potential. These are proved
+implementations of the recorded cyclic-carry and zero-run argument.
+
+The split graph is a literal finite simple graph. Its right class is
+independent and has the same size as the left clique, so every perfect
+matching uses cross edges. A proved equivalence identifies these matchings
+with permitted permutations. Removing or inserting the final path vertex
+is another equivalence, yielding the exact path recurrence and
+$`1+\sum_{j\in J}w_j`$ matching-count formula.
+
+The base unordered-edge set is bijective with ordered index pairs. Return
+edges are proved new, and deletion removes exactly the specified increasing
+edge. The undeleted and deleted path formulas follow from the established
+recurrence. The early weights represent every residue below $`2^u-1`$,
+including $`u=2`$; disjoint later binary positions represent the quotient.
+Thus `binary_graph_witness` and `deleted_graph_witness` produce actual
+graphs for every input, with exactly the required matching count and excess.
+
+To discharge the extremal boundedness dependency, fix a perfect matching
+with mate involution. Let $`A`$ be the ordered graph edges outside that
+matching, $`T`$ apply the mate map to both endpoints, and $`U`$ contain all
+ordered pairs excluding a vertex and its mate. Then
+$`\lvert A\rvert=2\lvert E\rvert-2n`$,
+$`\lvert U\rvert=4n(n-1)`$, and
+$`2\lvert A\rvert\le\lvert U\rvert+\lvert A\cap T(A)\rvert`$.
+Every pair in the intersection switches an alternating four-cycle to a
+different perfect matching. Each output has at most four ordered-pair
+preimages. Lean proves all these cardinality statements, hence
+$`\lvert E(G)\rvert\le n^2+\Phi(G)-1`$.
+
+Consequently the nonempty set of integer excesses is bounded above and
+attains its supremum. The actual Hetyei extension has inverse matching
+extension/restriction maps and adds exactly $`2n+1`$ edges. Relabeling and
+iteration preserve excess at every larger even order. This proves the
+source's eventual finite-order formula and identifies its unique constant.
+
+The two graph witnesses now discharge both hypotheses of the arithmetic
+bound. The resulting quadratic inequality gives the square-root estimate.
+The explicit uniform cutoff
 
 ```math
-\operatorname{bitlength}(n)\le
-u\left(w(n)+w\!\left(\left\lfloor n/(2^u-1)\right\rfloor\right)\right).
+p\ge2^{(2B+1)(B+1)}+1\quad\Longrightarrow\quad c_p>B
 ```
 
-The positive-Mersenne-multiple residue fact is proved by folding the high
-and low binary blocks. Binary-weight subadditivity shows that folding never
-increases the weight. The long-division proof uses the bit length of the
-nonzero remainder as a potential: a zero in both input and quotient raises
-that potential by one, and every other step costs at most $`u`$. This is an
-equivalent organization of the recorded cyclic-carry and zero-run argument.
+holds for every natural $`B`$. Since it applies to every later matching
+count, it proves the same cutoff for the attained tail minimum and yields
+the full limit theorem.
 
-`input_lt_of_excess_bounds` proves the resulting finite bound
-$`n<2^{(2C+1)(C+1)}`$ under two explicit hypotheses on an arbitrary natural
-$`C`$: $`w(n)\le C`$ and
-$`w(\lfloor n/(2^{w(n)+1}-1)\rfloor)\le C+1`$.
-These hypotheses have not yet been connected to the source's $`c_p`$.
+## Verification and review
 
-The graph development uses Mathlib's
-`SimpleGraph.Subgraph.IsPerfectMatching`, including its spanning condition.
-`perfectMatchingCount` is the cardinality of those actual matchings.
-`cycleCoverMatchingEquiv` proves the bijection for finite split-clique
-graphs: the right class is independent and has the same size as the left,
-so every perfect matching uses cross edges.
+All 22 frozen modules passed fresh strict Lean 4.35.0 builds. The complete all-owned/private audit checked 505 declarations, including 435 theorems and 32 private declarations, and all 42 required endpoints. Only `propext`, `Classical.choice`, and `Quot.sound` were permitted. Stock `leanchecker -v` replayed exactly the 22-module closure successfully. No `sorry`, `admit`, unproved project axiom or native-computation axiom is used. The [receipt](../../docs/verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json) binds the sources, tools, controls, declaration inventory and exact replay set.
 
-`returnFiberEquiv` proves insertion/removal of the last vertex of an
-increasing path as a bijection of actual permutations. Thus
-`pathCount_rec` and `perfectMatchingCount_returnGraph` establish the
-recorded $`1+\sum_{j\in J}w_j`$ matching-count identity. The path counts are
-cardinalities of constrained permutations; no recurrence is postulated as
-a substitute for the graph count.
+The [frozen manifest](../../docs/verification/lean-hartke-matching-excess-complete-20261124-162051/frozen-sources.json)
+binds all 22 sources and 42 required endpoints. The
+[independent mathematical review](LEAN_REVIEW.md) covers the full graph,
+arithmetic and extremal chain; the [independent statement review](STATEMENT_REVIEW.md)
+checks the original conjecture, actual matching predicate, maximum,
+eventual formula and tail quantifiers. These are independent automated
+reviews, not claims of external peer review. The [final independent evidence validation](../../docs/verification/lean-hartke-matching-excess-complete-20261124-162051/FINAL_INDEPENDENT_VALIDATION.json) rehashes the sources, objects, tools and logs, independently reparses the audit and replay set, and binds both separate reviews to the frozen proof receipt.
 
-`baseGraph_edge_card` proves that the graph with no return arcs has exactly
-$`(R+1)^2`$ unordered edges by a bijection with ordered pairs of indices.
-`binaryPositions_sum` and `binaryPositions_card` connect Mathlib's existing
-binary-subset representation to the exact weight used above.
+The portable scoped check is:
 
-## Remaining work
+```sh
+cd lean
+lake env python3 ../scripts/verify_hartke_matching_excess.py
+```
 
-The checkpoint does not include the following obligations:
+It strictly rebuilds the exact local closure, checks every owned declaration
+including private declarations for transitive axioms, verifies all required
+endpoints, and replays exactly that closure with the pinned stock checker.
+The dedicated workflow preserves its logs and receipt. The original
+[verify.py](verify.py) remains a supplementary finite diagnostic and is not
+used to prove the general result.
 
-1. Derive and check the closed path-count formulas after deleting the arc
-   $`1\to u`$, uniformly for every $`u\ge2`$ and every graph size. A later
-   source draft is not part of this receipt.
-2. Assemble the two actual graph witnesses for every positive matching
-   count, including residue-subset selection, return-edge cardinality,
-   deleted-edge cardinality, and relabeling to an even finite vertex set.
-3. Prove the finite upper bound on actual graph excess, the two-vertex
-   extension, existence of the maximizing integer $`c_p`$, and its equality
-   with the paper's eventual extremal constant. No unproved
-   Dudek–Schmitt theorem or witness-only surrogate is used in the checked
-   modules.
-4. Apply the arithmetic bound to those constants and prove divergence of
-   the actual tail minimum $`m_p`$.
-
-## Verification
-
-At 2026-11-24 18:29:37 UTC, all eight frozen modules passed fresh Lean 4.35.0
-builds with `-DwarningAsError=true`. The repository's unchanged all-owned
-audit checked 179 declarations, including 152 theorems and 19 private
-declarations, with all ten required endpoints present. The only permitted
-transitive axioms were `propext`, `Classical.choice`, and `Quot.sound`.
-The unchanged stock replay helper then replayed exactly the eight-module
-local closure successfully. The receipt and complete logs are preserved.
-
-These are scoped proof checks. They are not a repository-wide build, a
-hosted-CI result, or a website-deployment receipt. The separate aggregate
-dependency-artifact limitation remains tracked in
-[issue #563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+The scoped proof gate, aggregate repository gate, hosted workflows and
+public deployment are separate statuses. The aggregate dependency-artifact
+blocker and hosting follow-up are tracked in
+[#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+The preserved startup failures occurred before any Lean source build;
+the successful proof gate uses an isolated writable evidence directory and
+read-only shared packages. Exact-tree site checks are recorded with the publication package. The [aggregate blocker reuse record](../../docs/verification/lean-hartke-matching-excess-complete-20261124-162051/aggregate-blocker-reuse.json) preserves the prior protected failure in the unchanged dependency-artifact phase; it does not claim a fresh aggregate run or pass for this candidate.

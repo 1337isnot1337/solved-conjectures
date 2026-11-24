@@ -9,4 +9,11 @@ A single deleted edge in a directed path-count gadget turns powers of two into m
 - [Exact supplementary checks](verify.py)
 - [Discovery and review, issue #387](https://github.com/1337isnot1337/solved-conjectures/issues/387)
 
-The written proof does not use finite checking. The [partial Lean formalization](FORMALIZATION.md) verifies general binary arithmetic and the actual split-graph matching-count foundations in eight modules. It does not yet prove the divergence of the extremal constants or their tail minimum. The [scoped verification receipt](../../docs/verification/lean-hartke-matching-excess-partial-20261124-162051/receipt.json) records strict builds, an all-owned axiom audit, and stock kernel replay. No external refereeing or exclusive priority is claimed.
+
+- [Complete Lean formalization and statement correspondence](FORMALIZATION.md)
+- [Lean import root](../../lean/Conjectures/HartkeMatchingExcess.lean)
+- [Independent mathematical review](LEAN_REVIEW.md)
+- [Independent source-statement review](STATEMENT_REVIEW.md)
+- [Exact verification receipt](../../docs/verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json)
+
+The full conjecture and recorded quantitative bounds are Lean verified for all matching counts. The 22-module closure passed strict source builds, the complete owned/private axiom audit and exact stock-kernel replay. The written proof does not rely on finite checking. Aggregate dependency-artifact, hosted and deployment obligations are tracked separately in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). No external refereeing or exclusive priority is claimed.

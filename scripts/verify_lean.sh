@@ -15,6 +15,20 @@ modules=(
   Conjectures.HartkeMatchingExcessCounts
   Conjectures.HartkeMatchingExcessEdges
   Conjectures.HartkeMatchingExcessBits
+  Conjectures.HartkeMatchingExcessWeights
+  Conjectures.HartkeMatchingExcessReturnEdges
+  Conjectures.HartkeMatchingExcessSelections
+  Conjectures.HartkeMatchingExcessGadgets
+  Conjectures.HartkeMatchingExcessMates
+  Conjectures.HartkeMatchingExcessSwitches
+  Conjectures.HartkeMatchingExcessSwitchCount
+  Conjectures.HartkeMatchingExcessPairCount
+  Conjectures.HartkeMatchingExcessIsomorphism
+  Conjectures.HartkeMatchingExcessExtension
+  Conjectures.HartkeMatchingExcessExtensionEdges
+  Conjectures.HartkeMatchingExcessExtremal
+  Conjectures.HartkeMatchingExcessDivergence
+  Conjectures.HartkeMatchingExcessStatement
   Conjectures.HartkeMatchingExcess
   Conjectures.FerroniHigashitaniBox
   Conjectures.FerroniHigashitaniRefined

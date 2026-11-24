@@ -1,0 +1,55 @@
+name: Hartke–Stolee–West–Yancey matching-excess conjecture
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: &proof_paths
+      - 'lean/Conjectures/HartkeMatchingExcess*.lean'
+      - 'lean/Conjectures.lean'
+      - 'lean/ProofAudit.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_lean.sh'
+      - 'scripts/verify_hartke_matching_excess.py'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/replay_lean_parallel.py'
+      - '.github/workflows/lean-hartke-matching-excess.yml'
+  pull_request:
+    branches: [main]
+    paths: *proof_paths
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+      - name: Strict source builds, complete axiom audit, and stock-kernel replay
+        working-directory: lean
+        run: lake env python3 ../scripts/verify_hartke_matching_excess.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hartke-matching-excess-verification
+          path: .candidate-artifacts/hartke-matching-excess/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
