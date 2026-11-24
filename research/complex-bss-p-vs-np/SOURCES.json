@@ -41,5 +41,12 @@
     "bytes": 215005,
     "sha256": "3f8a1c08e9826b5ae8aad53072949f76ab66f2fe53a9c163c14c530ec574ae59",
     "note": "LIP Research Report 98-15; converted locally with ps2pdf and pdftotext for theorem-number inspection. Published version: Theoretical Computer Science 215 (1999), 289-304, DOI10.1016/S0304-3975(98)00261-8."
+  },
+  {
+    "name": "grochow-pitassi-author-jacm.pdf",
+    "url": "https://www.cs.toronto.edu/~toni/Papers/jacm-gp.pdf",
+    "bytes": 1074222,
+    "sha256": "ac3fee5e89d5b795445b3bbc79d2c29d8ac1542f995f1748d3d83519efe58eec",
+    "note": "Author-hosted manuscript consulted 23 November 2026. Proposition 3.1 and its BSS remark; Theorem 1.2. The PDF header contains placeholder journal and DOI metadata, so it is not treated as a verified publication version."
   }
 ]
