@@ -22,6 +22,8 @@
   "athanasiadis-chapoton-q-zeta": ["Athanasiadis Chapoton", "q zeta", "Ehrhart reciprocity", "Postnikov", "preorder"],
   "athanasiadis-chapoton-transmuted-m": ["Athanasiadis Chapoton", "transmuted M triangle", "preorder duality", "Mobius", "reciprocity"],
   "roy-square-partitions": ["Krishnaswami Alladi", "Arindam Roy", "square partitions", "Gajdzica", "partition multiplicative inequality"],
+  "gawron-miska-ulas-thue-morse-valuation": ["Prouhet Thue Morse", "Gawron Miska Ulas", "2-adic valuation", "binary products", "t17"],
+  "zhu-jacobi-stirling-hankel": ["Bao-Xuan Zhu", "Jacobi Stirling", "Hankel total positivity", "Bishal Deb P1.9", "Bessel zeros"],
   "hajdu-sarkozy-shifted-power-perturbations": ["Lajos Hajdu", "Andras Sarkozy", "shifted squares", "multiplicative irreducibility", "Zarankiewicz"],
   "sokal-apery-moment-threshold": ["Alan Sokal", "Apéry polynomials", "Apery moment sequence", "Stieltjes", "Hamburger", "elliptic integrals", "Legendre Poisson"],
   "burstein-a218225-enumeration": ["Burstein", "OEIS A218225", "Chern Fu Lin", "maximum insertion", "2134 42153 24153", "2143 42135 24135"],
