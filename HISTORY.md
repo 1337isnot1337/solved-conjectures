@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Complex BSS separation research and failed reductions
+
+Added [research notes](research/complex-bss-p-vs-np/README.md) for the full uniform complex BSS separation with arbitrary machine constants. The exact model/source audit was merged through [PR #252](https://github.com/1337isnot1337/solved-conjectures/pull/252). This checkpoint adds the sound growing-alternation weighted protocol, counterexamples to its immediate compressions, a boundary extraction lemma, the sub-log-log alternation threshold, explicit resultant and matching incidences, and multiplier/coordinate-weight obstructions. Exact symbolic checks validate the listed identities. The incidence and fixed-level hierarchy bridges remain unresolved; no separation, new solved-conjecture count, or Lean verification is claimed. The canonical graph lower bound is credited to [PR #249](https://github.com/1337isnot1337/solved-conjectures/pull/249), the Anthropic lower bound, and Bürgisser's factor transfer. [Tracking issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
+
 ## 2026-11-23 — Newton-polytope obstruction for BCJS tensor-resultant coefficients
 
 Proved that, after at most one extra padding coordinate, grid-assignment monomials in the BCJS tensor determinant are midpoints of supported monomial exponents 0 and 2v. This rules out isolating the hard degree-s grid coefficient by diagonal monomial rescaling at that padding dimension. [Proof](research/complex-bss-p-vs-np/GRID_NEWTON_BARRIER.md) · [Checks](research/complex-bss-p-vs-np/verify_grid_newton.py). The BSS separation remains open.

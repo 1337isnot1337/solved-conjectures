@@ -1,5 +1,9 @@
 # Verification
 
+## Complex BSS separation research
+
+Run `python3 research/complex-bss-p-vs-np/verify_obstructions.py` from the repository root with SymPy installed. The checker validates symbolic Ryser identities for sizes 1–3, interpolation counterexamples, the single-triangle quotient norm, selected jet-masking identities, and two-by-two matching/strategy examples. Its [review record](../research/complex-bss-p-vs-np/REVIEW.md) separates these finite algebraic checks from the arbitrary-size written arguments and the imported circuit lower bound. It does not prove `P_C != NP_C`. No Lean source changed and no local Lean verification of these deductions is claimed.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:

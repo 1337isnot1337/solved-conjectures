@@ -120,6 +120,8 @@ This section is ordered by the significance of the partial contributions.
 
 ## Open research investigations
 
+- [P_C versus NP_C over C](research/complex-bss-p-vs-np/README.md) remains open in this campaign. The notes fix the uniform model and HN encoding, give a sound weighted-sum formula with growing alternation, prove exact failures of proposed compressions, and isolate the missing incidence and arbitrary-multiple implications. They build on the graph lower bound above. [Issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248) · [Review and checks](research/complex-bss-p-vs-np/REVIEW.md).
+
 - [Boolean P versus NP via directed Hamiltonicity](research/boolean-hamiltonicity/). Research remains open. Proved coefficient identities, a containment-preserving restriction, a monotone logarithmic-space predicate matching the first logarithmic band of layers, and counterexamples to proposed circuit-rank bounds. No unrestricted superpolynomial circuit or uniform time lower bound is claimed. [Attack record](research/boolean-hamiltonicity/ATTACKS.md) · [Review and checks](research/boolean-hamiltonicity/REVIEW.md) · [Issue #251](https://github.com/1337isnot1337/solved-conjectures/issues/251).
 
 ## Layout
