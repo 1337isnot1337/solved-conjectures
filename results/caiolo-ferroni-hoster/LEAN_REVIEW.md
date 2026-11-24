@@ -41,6 +41,10 @@ lake build Conjectures.CaioloFerroniHoster
 lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
 ```
 
+The [dedicated GitHub Actions workflow](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean-cfh.yml)
+runs the strict target verifier from source. It publishes the axiom audit,
+the pinned source and dependency hashes, and the replay transcript.
+
 The local replay passed for all nine modules. The transitive axiom audit passed
 for 452 theorem declarations. The main theorem uses only `propext`,
 `Classical.choice`, and `Quot.sound`. The exact Python verifier also passed

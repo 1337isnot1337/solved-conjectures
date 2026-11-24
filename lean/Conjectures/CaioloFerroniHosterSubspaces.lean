@@ -32,12 +32,15 @@ private def proj (S : Submodule F (W × F)) : Submodule F W :=
 private def pull (T : Submodule F W) : Submodule F (W × F) :=
   T.prod ⊤
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem mem_vertical {v : W × F} : v ∈ vertical (F := F) (W := W) ↔ v.1 = 0 := by
   simp [vertical]
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem mem_pull {T : Submodule F W} {v : W × F} : v ∈ pull T ↔ v.1 ∈ T := by
   simp [pull]
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem proj_pull (T : Submodule F W) : proj (pull T) = T := by
   ext x
   constructor
@@ -46,6 +49,7 @@ private theorem proj_pull (T : Submodule F W) : proj (pull T) = T := by
   · intro hx
     exact ⟨(x, 0), mem_pull.mpr hx, rfl⟩
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem pull_proj {S : Submodule F (W × F)} (h : vertical ≤ S) :
     pull (proj S) = S := by
   ext v
@@ -64,6 +68,7 @@ private def pullEquiv (T : Submodule F W) : pull T ≃ₗ[F] T × F where
   map_add' _ _ := rfl
   map_smul' _ _ := rfl
 
+omit [Fintype F] in
 private theorem pull_rank (T : Submodule F W) :
     Module.finrank F (pull T) = Module.finrank F T + 1 := by
   rw [(pullEquiv T).finrank_eq, Module.finrank_prod, Module.finrank_self]
@@ -71,11 +76,13 @@ private theorem pull_rank (T : Submodule F W) :
 private def projMap (S : Submodule F (W × F)) : S →ₗ[F] proj S :=
   ((LinearMap.fst F W F).comp S.subtype).codRestrict (proj S) fun v => ⟨v, v.property, rfl⟩
 
+omit [Fintype F] in
 private theorem vertical_atom : IsAtom (vertical (F := F) (W := W)) := by
   rw [Submodule.isAtom_iff_finrank_eq_one]
   change Module.finrank F (pull (⊥ : Submodule F W)) = 1
   rw [pull_rank, finrank_bot]
 
+omit [Fintype F] in
 private theorem projMap_bijective {S : Submodule F (W × F)} (h : ¬ vertical ≤ S) :
     Function.Bijective (projMap S) := by
   have hbot : S ⊓ vertical = ⊥ :=
@@ -100,9 +107,11 @@ private def projectEquiv {S : Submodule F (W × F)} (h : ¬ vertical ≤ S) :
 private def graphOver (T : Submodule F W) (l : T →ₗ[F] F) : Submodule F (W × F) :=
   (T.subtype.prod l).range
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem mem_graphOver {T : Submodule F W} {l : T →ₗ[F] F} {v : W × F} :
     v ∈ graphOver T l ↔ ∃ x : T, (x.val, l x) = v := Iff.rfl
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem proj_graphOver (T : Submodule F W) (l : T →ₗ[F] F) :
     proj (graphOver T l) = T := by
   ext x
@@ -112,6 +121,7 @@ private theorem proj_graphOver (T : Submodule F W) (l : T →ₗ[F] F) :
   · intro hx
     exact ⟨(x, l ⟨x, hx⟩), ⟨⟨x, hx⟩, rfl⟩, rfl⟩
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem vertical_not_le_graphOver (T : Submodule F W) (l : T →ₗ[F] F) :
     ¬ vertical ≤ graphOver T l := by
   intro h
@@ -124,6 +134,7 @@ private def graphOverOf {S : Submodule F (W × F)} (h : ¬ vertical ≤ S) :
     proj S →ₗ[F] F :=
   (LinearMap.snd F W F).comp (S.subtype.comp (projectEquiv h).symm.toLinearMap)
 
+omit [Fintype F] in
 private theorem graphOver_eq {S : Submodule F (W × F)} (h : ¬ vertical ≤ S) :
     graphOver (proj S) (graphOverOf h) = S := by
   have hfst (x : proj S) : ((projectEquiv h).symm x).val.1 = x.val :=
@@ -141,6 +152,7 @@ private theorem graphOver_eq {S : Submodule F (W × F)} (h : ¬ vertical ≤ S) 
     change ((projectEquiv h).symm (projectEquiv h ⟨v, hv⟩)).val.2 = v.2
     rw [LinearEquiv.symm_apply_apply]
 
+omit [Fintype F] [Module.Finite F W] in
 private theorem graphOver_inj (T : Submodule F W) {f g : T →ₗ[F] F}
     (he : graphOver T f = graphOver T g) : f = g := by
   ext x

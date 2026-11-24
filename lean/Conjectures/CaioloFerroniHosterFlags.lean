@@ -34,6 +34,7 @@ private def subspaceBelowEquiv (A : Submodule F V) (r : ℕ) :
 private abbrev subsetsOfSize (A : Finset X) (t : ℕ) :=
   {B : Finset X // B ⊆ A ∧ B.card = t}
 
+omit [Finite X] in
 private theorem card_subsetsOfSize (A : Finset X) (t : ℕ) :
     Nat.card (subsetsOfSize A t) = A.card.choose t := by
   have h : (subsetsOfSize A t) ≃ ↥(A.powersetCard t) :=
@@ -78,14 +79,14 @@ instance frameFlag_finite (A : Frame F V X) (s : List ℕ) : Finite (FrameFlag A
 
 theorem card_sigma_by_layer {A : Frame F V X} {r : ℕ} (f : FrameLayer A r → ℕ)
     (v : ℕ → ℕ → ℕ) (hf : ∀ B, f B = v (Module.finrank F B.val.1) B.val.2.card) :
-    letI := Fintype.ofFinite (FrameLayer A r)
+    let _ := Fintype.ofFinite (FrameLayer A r)
     ∑ B : FrameLayer A r, f B =
       ∑ i ∈ range (r + 1),
         gaussian (Fintype.card F) (Module.finrank F A.1) i *
           A.2.card.choose (r - i) * v i (r - i) := by
   classical
-  letI := Fintype.ofFinite (FrameLayer A r)
-  letI (i : Fin (r + 1)) :=
+  let _ := Fintype.ofFinite (FrameLayer A r)
+  let _ (i : Fin (r + 1)) :=
     Fintype.ofFinite ({B : Submodule F V // B ≤ A.1 ∧ Module.finrank F B = i.val} ×
       subsetsOfSize A.2 (r - i.val))
   let e := frameLayerEquiv A r
@@ -120,7 +121,7 @@ theorem card_frameFlag (A : Frame F V X) (s : List ℕ) :
   induction s generalizing A with
   | nil => change Nat.card PUnit = 1; exact Nat.card_unique
   | cons r s ih =>
-    letI := Fintype.ofFinite (FrameLayer A r)
+    let _ := Fintype.ofFinite (FrameLayer A r)
     change Nat.card (Σ B : FrameLayer A r, FrameFlag B.val s) = _
     rw [Nat.card_sigma, productFlag]
     exact card_sigma_by_layer (A := A) (fun B => Nat.card (FrameFlag B.val s))
@@ -176,8 +177,10 @@ variable [Fintype X] [Finite B]
 
 def topFrame : Frame F V X := (⊤, univ)
 
+omit [Fintype F] [Module.Finite F V] [Finite V] [Finite X] in
 theorem le_topFrame (A : Frame F V X) : A ≤ topFrame := ⟨le_top, subset_univ _⟩
 
+omit [Fintype F] [Module.Finite F V] [Finite V] [Finite X] in
 @[simp] theorem carrier_topFrame :
     carrier (topFrame : Frame F V X) = Set.univ := by
   ext e
@@ -248,6 +251,7 @@ private def hyperplaneEquiv
       · exact ⟨.inr b, Subtype.ext (Subtype.ext hb.symm)⟩)
 
 set_option maxHeartbeats 1500000 in
+omit [Fintype F] in
 theorem hyperplane_replacement_count
     (hblock : ∀ b, Nonempty (FrameLayer (blocks.frame b) 4))
     (s : List ℕ) (hs : ∀ r ∈ s, r ≤ 3) :
