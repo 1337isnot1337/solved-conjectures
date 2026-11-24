@@ -1,0 +1,7 @@
+# Scope and independent audit
+
+The target is [Gessel–Zhuang, *Two-sided permutation statistics via symmetric functions*, Conjecture 7.3](https://doi.org/10.1017/fms.2024.89), all lengths and all fixed pinnacle sets with inverse-descent exponent increased by one. The resulting symmetry center is the authors' (n+1)/2. Conjecture 7.2 follows and is not a separate count. Conjecture 7.1 has a different statistic.
+
+Independent internal review checked that every marked internal gap must eventually be used, that no unmarked internal interval can later receive an entry, and that external insertions do not create pinnacles. All insertion weights match the direction of the inverse comparison. Reversing both orderings gives the exact Savage–Visontai compatibility theorem; the adjacent sum case handles the shared middle polynomial and its t multiple. Reflection preserves the full height path and complements every comparison. The resulting root-pair factors yield nonnegative gamma coefficients even if some outer coefficients vanish.
+
+A supplemental exact replay matches every path and exponent through n=9, including 362,880 literal permutations at the final length. The proof is not based on those enumerations. Wenjie Fang's earlier Françon–Viennot path variant is credited as the unweighted predecessor. Exact result and broader source searches did not locate an earlier inverse-descent refinement proving this conjecture. No priority, Lean verification, or external refereeing is claimed.

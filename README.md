@@ -21,7 +21,9 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ⬜ |
 | [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 |
 | [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ⬜ |
+| [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ⬜ |
 | [Feldheim–Feldheim’s weighted tail conjecture](results/feldheim-weighted-tail/) | ⬜ |
+| [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ⬜ |
 | [Burstein’s descent-top shape-Wilf conjecture](results/burstein-descent-top-shape-wilf/) | ⬜ |
 | [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ⬜ |
 | [Benfield–Lippard’s stable Waring-gap symmetry conjecture](results/benfield-lippard-waring-gap-symmetry/) | ⬜ |
@@ -31,6 +33,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Heim–Neuhauser’s ordinary D’Arcais root conjecture](results/heim-neuhauser-ordinary-darcais-root/) | ⬜ |
 | [Bétermin’s FCC/BCC cold-spot conjecture](results/betermin-fcc-bcc-cold-spots/) | ⬜ |
 | [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | ⬜ |
+| [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ⬜ |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |

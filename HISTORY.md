@@ -16,7 +16,11 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [The Feldheim–Feldheim weighted tail conjecture](results/feldheim-weighted-tail/) holds for arbitrary independent laws, even with atoms.
 - [Burstein’s refined shape-Wilf equivalence](results/burstein-descent-top-shape-wilf/) fails uniformly over all suffix permutations.
 - [Rossi’s permutohedron characteristic roots](results/rossi-permutohedron-roots/) satisfy all three intervals of Conjecture 6.16 at every index.
+- [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/): Proof for every fixed pinnacle set by real-rooted height-path refinements. Gives Conjecture 7.2 by summation; Conjecture 7.1 is separate.
+- [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/): Uniform refutation of the original genus bound. The maximum leaf type at every large genus has leading coefficient two thirds and a sharp square-root-order deficit.
+- [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/): A very ample, IDP counterfamily fails at the first three interior counts, answering Question 5.12(a). The already resolved part (b) is distinct.
 - The [Feldheim finite-threshold supplements](results/feldheim-weighted-tail/FINITE-THRESHOLD.md) now cover distinct nonatomic laws and [sharpen the i.i.d. constants](results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md).
+- A [sharp rate test for convex log tails](results/steinerberger-feldheim-tail/CONVEX-HAZARD-RATE.md) distinguishes divergent and convergent square-integral scales.
 - The [exact differential equation](results/pantone-bona-asymptotic/ode-proof.md) previously guessed for the terminal-largest pattern class is now proved separately from the asymptotic.
 
 The two plane-partition proofs use exact rational and integer certificates, not sampled real parameters. No Lean, external review, or exclusive priority claims are made.

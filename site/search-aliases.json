@@ -14,6 +14,9 @@
   "heim-neuhauser-ordinary-darcais-root": ["ordinary D’Arcais", "Darcais polynomials", "fractional Chern–Fu–Tang", "nth root monotonicity", "sigma one"],
   "betermin-fcc-bcc-cold-spots": ["Bétermin", "Betermin", "Gaussian polarization", "checkerboard lattice", "cold spots", "deep holes"],
   "rossi-permutohedron-roots": ["Giovanni Rossi", "permutohedron face lattice", "Eulerian root level one", "real characteristic roots", "Conjecture 6.16"],
+  "ferroni-higashitani-early-interior-ehrhart": ["Ferroni Higashitani", "Ehrhart log concavity", "interior lattice points", "IDP", "very ample", "Question 5.12(a)"],
+  "chappelon-ramirez-stamate-leaf-type": ["Jonathan Chappelon", "Ramirez Alfonsin Stamate", "numerical semigroup tree", "pseudo-Frobenius leaves", "maximum type"],
+  "gessel-zhuang-pinnacle-gamma": ["Ira Gessel", "Yan Zhuang", "pinnacle sets", "inverse descents", "two-sided permutation statistics", "gamma positivity"],
   "coulangeon-lazzarini-two-shells": ["lattice shells", "spherical 2-designs", "strong eutaxy", "Construction A"],
   "alexandersson-parking-excedance": ["parking functions", "strict excedances", "real-rootedness", "Laguerre inequality"],
   "batista-egyptian-fractions": [

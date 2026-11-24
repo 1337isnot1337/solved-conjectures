@@ -20,6 +20,11 @@ jobs:
         run: python3 results/burstein-descent-top-shape-wilf/check.py
       - name: Certify the finite Rossi permutohedron sign grids
         run: python3 results/rossi-permutohedron-roots/check.py
+      - name: Replay leaf types, interior Ehrhart counts, and pinnacle paths
+        run: |
+          python3 results/chappelon-ramirez-stamate-leaf-type/check.py
+          python3 results/ferroni-higashitani-early-interior-ehrhart/verify.py
+          python3 results/gessel-zhuang-pinnacle-gamma/check-path.py
       - name: Check matching excess via literal graph witnesses
         run: python3 results/hartke-stolee-west-yancey-matching-excess/verify.py
       - name: Certify the plane-partition Fourier sign over exact rational boxes
