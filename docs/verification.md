@@ -28,6 +28,16 @@ The marked-factor continuation has separate internal reviews of the [multiplicit
 
 The [generic-quantifier audit](../research/complex-bss-p-vs-np/GENERIC_QUANTIFIER_SUMCHECK_AUDIT.md) and [rational-exactness argument](../research/complex-bss-p-vs-np/RATIONAL_EXACTNESS_BARRIER.md) have separate full internal reviews. Review checked original-prefix sampling, reached-mask validation, uniform construction costs and retained adaptive rounds; it also checked the residue identity, all-register division guard, actual graph incidence and quantitative generic primitive-size bound. The integrator read both proofs and the cited Koiran statements. These written deductions use the earlier geometric transfer lemmas. Finite symbolic residue examples and rendering checks do not verify their general lower bounds or the HN separation. No Lean source changed.
 
+The [full-partition](../research/complex-bss-p-vs-np/FULL_PARTITION_CERTIFICATE_ATTEMPT.md), [stable-rewrite](../research/complex-bss-p-vs-np/STABLE_REWRITE_FRONTIER.md), [transcript](../research/complex-bss-p-vs-np/TRANSCRIPT_ESCAPE_EXAMPLE.md), [implicit-operator](../research/complex-bss-p-vs-np/IMPLICIT_SYLVESTER_FRONTIER.md) and [partial cutting compiler](../research/complex-bss-p-vs-np/CUTTING_COMPILER_ATTEMPT.md) notes have separate internal reviews linked from the campaign record. The cutting review repaired the scalar cost of finite slot selection. Its recurrence remains conditional and retains the missing plain-program interface, inherited-input and hypothesis-use steps. The inverse-jet example does not establish gcd hardness.
+
+Run the additional finite exact checker with SymPy:
+
+```bash
+python3 research/complex-bss-p-vs-np/verify_branch_and_operator_identities.py
+```
+
+Its seven check groups cover the specified gluing, involution, transcript, small digit, double-pole gcd, compressed-matrix and modular-inverse-jet examples, plus local cutting identities with cancellation. They are finite symbolic checks, distinct from the written all-size and analytic arguments. No Lean build or verification of the target separation is claimed.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:
