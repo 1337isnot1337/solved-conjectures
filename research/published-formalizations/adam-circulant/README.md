@@ -1,6 +1,6 @@
 # Ádám’s conjecture
 
-**Status:** source-matched Lean candidate, not yet compiled or audited. Published resolution, not a new mathematical discovery. Tracking issue [#506](https://github.com/1337isnot1337/solved-conjectures/issues/506).
+**Status:** full conjecture negation kernel-verified as a standalone candidate; accepted-package registration and aggregate gate pending. Published resolution, not a new mathematical discovery. Tracking issue [#506](https://github.com/1337isnot1337/solved-conjectures/issues/506).
 
 ## Attribution and exact scope
 
@@ -32,6 +32,6 @@ The conjecture is not a numerical classification at n=16; that witness is suffic
 
 ## Verification gate
 
-Candidate source: `lean/Conjectures/AdamCirculant.lean`. The source has no intentional proof holes or project axioms. This is not evidence of successful elaboration. Local Lean/elan/lake unavailable; both Pyroam execution calls returned CONNECTOR_ERROR before running commands. Hosted candidate source build, repository standard-axiom whitelist and leanchecker replay must pass on the exact commit before marking it fully verified. Final registration in Conjectures, ProofAudit, ordinary verify_lean.sh and the separate published-resolution index is deferred until these checks pass. Do not add to the new-discovery README counts.
+Candidate source: `lean/Conjectures/AdamCirculant.lean`. On 2026-11-24 15:33 UTC, the [hosted candidate run 45426573246, job 138560079412](https://github.com/1337isnot1337/solved-conjectures/actions/runs/45426573246/job/138560079412) passed on PR merge commit `8283193` (candidate head `b30353304cbcc30f3877cf3c3f17e3165131f10a`, base `91790ee50d0c3d6b16ad8c3035e661ac821544fd`). The unchanged Lean source blob `dced8d9e6aac9882501c201f3567a8ec8ecf7421` compiled with Lean 4.35.0. `#print axioms PublishedAdam.conjecture_false` reported only `propext` and `Quot.sound`. The repository candidate helper audited eight project theorems against the standard-axiom whitelist; `lake env leanchecker Conjectures.AdamCirculant` passed. Local execution was blocked by persistent Pyroam connector errors and ephemeral toolchain extraction ENOSPC; the successful receipt is hosted, not local. The ordinary aggregate repository gate and accepted-package registration remain separate obligations. Do not add to the new-discovery README counts.
 
 Bounded duplicate search: main/research README and project issues/code, mathlib and formal-conjectures code searches for Elspas, and web searches for Lean/Ádám/circulants returned no matching completed proof. This is not an exhaustive search of every formalization project or a first-formalization claim.
