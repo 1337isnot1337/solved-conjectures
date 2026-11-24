@@ -1,5 +1,7 @@
 # Németh–Seberry–Shu conjecture
 
+The arbitrary-prime congruence and final counting reduction in §3 have a [verified partial Lean formalization](LEAN_STATUS.md). The construction in §§1–2 remains unformalized.
+
 Let $V(p)$ be the number of distinct permanent values of all binary circulant matrices of prime order $p$. Németh, Seberry and Shu conjectured that $V(p)=O(p)$ ([original paper, p. 181](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf)). We prove that $V(p)/p\to\infty$ along the primes. This proof uses the uniform permanent asymptotic as stated by Divoux and Wang, not an extracted convergence rate. The [quadratic refinement](../../docs/nss/quadratic-refinement.md) strengthens the bound to $V(p)=\Omega(p^2)$.
 
 ## 1. Binary circulants with a prescribed Fourier mode

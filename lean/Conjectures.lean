@@ -1,3 +1,5 @@
+import Conjectures.NemethSeberryShuCongruence
+import Conjectures.NemethSeberryShuCounting
 import Conjectures.FanTringaliSlices
 import Conjectures.FanTringaliProducts
 import Conjectures.FanTringaliCoordinates

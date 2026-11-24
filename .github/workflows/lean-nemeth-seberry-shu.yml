@@ -1,0 +1,56 @@
+name: Németh–Seberry–Shu conjecture
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/NemethSeberryShu*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-nemeth-seberry-shu.yml'
+  push:
+    branches: [research, main]
+    paths:
+      - 'lean/Conjectures/NemethSeberryShu*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-nemeth-seberry-shu.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source, all-owned audit, and stock-kernel replay
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.NemethSeberryShuCounting
+          --require NemethSeberryShu.permanent_modEq_card
+          --require NemethSeberryShu.card_eq_of_permanent_eq
+          --require NemethSeberryShu.row_family_count
+          --require NemethSeberryShu.dense_family_count
+          --require NemethSeberryShu.eventually_superlinear_of_dense_families
+          --require NemethSeberryShu.no_eventual_linear_bound_of_dense_families
+          --out .candidate-artifacts/nemeth-seberry-shu
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nemeth-seberry-shu
+          path: .candidate-artifacts/nemeth-seberry-shu/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

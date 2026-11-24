@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `NemethSeberryShu.permanent_modEq_card,
+    `NemethSeberryShu.card_eq_of_permanent_eq,
+    `NemethSeberryShu.row_family_count,
+    `NemethSeberryShu.dense_family_count,
+    `NemethSeberryShu.eventually_superlinear_of_dense_families,
+    `NemethSeberryShu.no_eventual_linear_bound_of_dense_families,
     `FanTringali.slab_uniqueQuotient,
     `FanTringali.slab_no_quotient_both,
     `FanTringali.uniqueQuotient_stack,

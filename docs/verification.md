@@ -1,5 +1,28 @@
 # Verification
 
+## Németh–Seberry–Shu conjecture
+
+The [target receipt](verification/lean-nemeth-seberry-shu-20261124/receipt.json)
+covers the two-module closure, all 49 owned declarations (37 theorems), and six
+required endpoints. Only `propext`, `Classical.choice`, and `Quot.sound` occur
+transitively. The target check does not report the combined repository gate as
+passed. The [scope audit](../results/nemeth-seberry-shu/LEAN_STATUS.md) records the
+missing analytic construction and the exact source argument.
+
+Reproduce with the pinned dependencies installed:
+
+```bash
+python3 scripts/verify_lean_target.py \
+  --root Conjectures.NemethSeberryShuCounting \
+  --require NemethSeberryShu.permanent_modEq_card \
+  --require NemethSeberryShu.card_eq_of_permanent_eq \
+  --require NemethSeberryShu.row_family_count \
+  --require NemethSeberryShu.dense_family_count \
+  --require NemethSeberryShu.eventually_superlinear_of_dense_families \
+  --require NemethSeberryShu.no_eventual_linear_bound_of_dense_families \
+  --out .candidate-artifacts/nemeth-seberry-shu
+```
+
 ## Complex BSS separation research
 
 The [full-decider soft compiler](../research/complex-bss-p-vs-np/FULL_DECIDER_SOFT_COMPILER.md) and its conditional supplied-denominator extraction have two full internal written reviews. The integrator checked all fixed-input germs, charged tape/control size, shared fraction clearing and the elementary root-persistence proof. The extended soft tests and irreducible coefficient-tensor calculation are separately proved and reviewed. The finite checker below additionally tests the exact replacement formulas, inactive division, generic-prefix identities, moving-pole denominator and coefficient ranks for D=4,8,16. These checks do not provide the missing denominator normalizer, establish a field-hypothesis transfer, or verify the full separation. No Lean file changed.
