@@ -1,4 +1,6 @@
-# Counterexample to the Higashitani–Kummer–Michałek canonical-line conjecture
+# Alternative Sturm verification of the canonical-line counterexample
+
+The six-part witness already appeared in issue #316. The newer noninterlacing pair remains on the canonical line on both sides, strengthening the earlier result. See the [earlier proof](PROOF.md) for the underlying conjecture resolution.
 
 **Result.** The symmetric edge polytope of the complete six-partite graph
 \[
@@ -55,7 +57,7 @@ R(u)=87411u^5-8333765u^4+219501678u^3-1819237530u^2
 \]
 The Sturm sequence of \(R\) has degrees \(5,4,3,2,1,0\) and leading signs \(+,+,+,+,+,-\). Its signs at negative infinity are \(-,+,-,+,-,-\), with four variations; at positive infinity they are \(+,+,+,+,+,-\), with one variation. Hence \(R\) has exactly three distinct real roots and a nonreal conjugate pair. The sequence terminates at a nonzero constant, so there are no repeated roots. Consequently \(Q\) has roots not on the imaginary axis and \(E\) has roots off the canonical line.
 
-The rational-arithmetic [checker](check.py) independently enumerates \(E(0),\ldots,E(11)\) using signed coordinate counts and (1), verifies (2), reconstructs the exact shifted polynomial, and replays its Sturm certificate. No numerical root approximations are used in the disproof.
+The rational-arithmetic [checker](check_sturm.py) independently enumerates \(E(0),\ldots,E(11)\) using signed coordinate counts and (1), verifies (2), reconstructs the exact shifted polynomial, and replays its Sturm certificate. No numerical root approximations are used in the disproof.
 
 ## Priority and scope
 

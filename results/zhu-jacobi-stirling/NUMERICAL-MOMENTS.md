@@ -1,4 +1,6 @@
-# Zhu's generalized Jacobi–Stirling Hankel-positivity conjecture
+# Numerical moments of the generalized Jacobi–Stirling rows
+
+Issue #163 already published the identical symbolic negative minor. The newer Bessel-zero characterization of numerical Hamburger and Stieltjes moment parameters is retained without changing the Lean coverage of the earlier disproof. See the [earlier proof](PROOF.md) for the underlying conjecture resolution.
 
 ## Statement and symbolic counterexample
 

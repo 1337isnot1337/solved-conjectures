@@ -1,4 +1,6 @@
-# Sagan–Swanson's generic q-Stirling normality conjecture
+# Uniform lattice local limit for the q-Stirling coefficients
+
+The interior-proportion central limit theorem was already proved in issue #92. The stronger uniform lattice local limit, proved in Section 5, is retained here. See the [earlier proof](PROOF.md) for the underlying conjecture resolution.
 
 **Result.** Suppose $k/n\to\alpha\in(0,1)$. All four families $c[n,k],c_B[n,k],S[n,k],S_B[n,k]$ of $q$-Stirling polynomials are asymptotically normal: their normalized coefficients define random exponents that converge to the standard normal after centering at their own mean and dividing by their own standard deviation. This proves [Sagan–Swanson, *q-Stirling numbers in type B*, Conjecture 7.8](https://users.math.msu.edu/users/bsagan/Papers/Old/qStB-pub.pdf#page=32), *European J. Combin.* 118 (2024), 103899, also [arXiv:2205.14078](https://arxiv.org/abs/2205.14078).
 

@@ -758,7 +758,7 @@ From the repository root, run `c++ -std=c++17 -O2 results/stern-half-plane/check
 
 ## Chow type-D Eulerian exact bridge
 
-Run `python3 results/chow-type-d/check.py` from the repository root. It certifies every strict transition into degree 128 using exact dyadic signs. The [analytic proof](../results/chow-type-d/PROOF.md) handles all subsequent transitions.
+Run `python3 results/chow-conjecture/check_dyadic.py` from the repository root. It certifies every strict transition into degree 128 using exact dyadic signs. The [analytic proof](../results/chow-conjecture/ALTERNATIVE-PROOF.md) handles all subsequent transitions.
 
 ## Gravgaard–Lee mixed Lüroth interval certificate
 
@@ -778,7 +778,7 @@ Run `python3 results/defant-engen-miller-lassalle/interval_check.py` to verify t
 
 ## Higashitani–Kummer–Michałek exact witnesses
 
-Run `python3 results/hkm-canonical-line/check.py` and `python3 results/hkm-canonical-line/check_interlace.py` to reproduce the two exact complete-multipartite counterexamples. The [proof](../results/hkm-canonical-line/PROOF.md) and [interlacing supplement](../results/hkm-canonical-line/INTERLACING.md) give the mathematical derivation.
+Run `python3 results/hkm-ehrhart/check_sturm.py` and `python3 results/hkm-ehrhart/check_interlace.py` to reproduce the two exact complete-multipartite counterexamples. The [proof](../results/hkm-ehrhart/STURM-CERTIFICATE.md) and [interlacing supplement](../results/hkm-ehrhart/INTERLACING-CL.md) give the mathematical derivation.
 
 ## Sagan–Wilson coefficient mode certificate
 
@@ -787,3 +787,7 @@ Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact len
 ## Bicyclic facets and complete-graph specialization
 
 Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 results/braun-bruegge-bicyclic-facets/check_maximizer.py` for the exact finite parts of the two graph theorems. Run `python3 results/gonzalez-dleon-wachs-complete-graphs/check_complete.py` for the independent exact recurrence comparisons of complete graphs.
+
+## Sharp matching-number facet bound
+
+Run `python3 results/braun-bruegge-minimum-facets/check.py` for exact independent polar-vertex and maximum-matching counts on small graphs. Compile and run the optional exhaustive C++ checker for all graphs through order six. The two written proofs give the general results without enumeration.

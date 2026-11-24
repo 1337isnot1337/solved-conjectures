@@ -1,4 +1,6 @@
-# Chow’s type-D Eulerian interlacing conjecture
+# Type-D Eulerian interlacing: alternative proof
+
+Issue #77 already covers the complete consecutive type-D interlacing statement. The independent analytic tail argument and dyadic finite checker are retained without changing the Lean coverage of the original theorem. See the [earlier proof](PROOF.md) for the underlying conjecture resolution.
 
 We prove that consecutive type-D Eulerian polynomials interlace. This answers the type-D question in [Chak-On Chow, *New proofs of interlacing of zeros of Eulerian polynomials*, §5](https://doi.org/10.1016/j.jmaa.2022.126019). The interlacing is weak at $D_2$ and $D_3$ because $D_2(x)=(1+x)^2$; it is strict at every transition $D_n,D_{n+1}$ with $n\ge3$. This is a cross-degree statement, not just the previously known real-rootedness of each individual polynomial.
 
@@ -115,7 +117,7 @@ $$
 \sum_{\ell\ge1}(2\ell+1)q_\ell^{\,n}<1/6.
 \tag{10}
 $$
-Indeed $R^2\le10n$, $\pi^2>9$, and monotonicity of $(1+y/n)^n$ give $q_\ell^n\le(1+(9/320)\ell(\ell+1))^{-64}$. The first term is below $1/10$ by $3(1+9/160)^{-64}<1/10$. For $\ell\ge2$, the fifth binomial term gives $\binom{64}{5}(9/320)^5>1/8$; the remaining weight sum is at most $24\sum_{\ell\ge2}\ell^{-9}\le24(2^{-9}+2^{-8}/8)<1/15$. Moreover, for $t\le10$ we have $R^2<110$, so $q_\ell^n\le(1+(3/10)\ell(\ell+1))^{-64}$. Since $\binom{64}{6}(3/10)^6>4000$, the full sum over $\ell\ge1$ is at most $(3/4000)\sum_{\ell\ge1}\ell^{-11}<1/1000$. The integer inequalities are also checked by [the certificate](check.py).
+Indeed $R^2\le10n$, $\pi^2>9$, and monotonicity of $(1+y/n)^n$ give $q_\ell^n\le(1+(9/320)\ell(\ell+1))^{-64}$. The first term is below $1/10$ by $3(1+9/160)^{-64}<1/10$. For $\ell\ge2$, the fifth binomial term gives $\binom{64}{5}(9/320)^5>1/8$; the remaining weight sum is at most $24\sum_{\ell\ge2}\ell^{-9}\le24(2^{-9}+2^{-8}/8)<1/15$. Moreover, for $t\le10$ we have $R^2<110$, so $q_\ell^n\le(1+(3/10)\ell(\ell+1))^{-64}$. Since $\binom{64}{6}(3/10)^6>4000$, the full sum over $\ell\ge1$ is at most $(3/4000)\sum_{\ell\ge1}\ell^{-11}<1/1000$. The integer inequalities are also checked by [the certificate](check_dyadic.py).
 
 Write $a=\phi(t)R/2$. The normalized function $Q=R^N F_n/(2n!)$ then has main term
 $$
@@ -147,6 +149,6 @@ by maximizing over $t$ and using $e^{7/10}>2$. Thus multiplying the error by $R^
 
 For $n\ge128$, suppose $D_n$ has $n$ distinct negative roots. The signs (6) alternate at them. The sign at the leftmost root opposes the degree-$(n+1)$ monic sign at $-\infty$, and that at the rightmost root is negative, opposing $D_{n+1}(0)=1$. Hence $D_{n+1}$ has a root in every required open gap, including both outer gaps, which exhaust its degree. Its roots are simple, negative, and strictly interlace.
 
-For the base, $D_2=(1+x)^2$ and $D_3=(1+x)(1+10x+x^2)$ give the weak initial transition. [check.py](check.py) uses exact integer coefficients from (1) and the Eulerian recurrences, with dyadic rational test points. It starts with three disjoint root brackets of $D_3$. For each next transition, refine every older sign-straddling bracket until both endpoints have the same nonzero sign for $D_{n+1}$, namely the sign of $D_n$ at its left endpoint. This certifies opposite next-polynomial signs at the two endpoints of each between-bracket gap and similarly at both extrema (the far-left endpoint is chosen by doubling, and the far-right endpoint is zero). The code checks these signs and disjointness and finds exactly $\deg D_{n+1}$ gaps. Consequently all next roots are simple and in those gaps, giving strict interlacing through $n=128$ and the base for the uniform proof.
+For the base, $D_2=(1+x)^2$ and $D_3=(1+x)(1+10x+x^2)$ give the weak initial transition. [check.py](check_dyadic.py) uses exact integer coefficients from (1) and the Eulerian recurrences, with dyadic rational test points. It starts with three disjoint root brackets of $D_3$. For each next transition, refine every older sign-straddling bracket until both endpoints have the same nonzero sign for $D_{n+1}$, namely the sign of $D_n$ at its left endpoint. This certifies opposite next-polynomial signs at the two endpoints of each between-bracket gap and similarly at both extrema (the far-left endpoint is chosen by doubling, and the far-right endpoint is zero). The code checks these signs and disjointness and finds exactly $\deg D_{n+1}$ gaps. Consequently all next roots are simple and in those gaps, giving strict interlacing through $n=128$ and the base for the uniform proof.
 
 **Priority.** Exact-title, author/statement, and recent-primary-source searches on 24 November 2026 located Chow’s open question, the established fixed-degree real-rootedness, and later sources still listing the consecutive statement open, but no earlier solution. This is a bounded search, not a worldwide priority assertion.
