@@ -2,7 +2,7 @@
 
 ## Ma–Tang’s random subset-sum threshold conjecture
 
-[Incomplete deterministic and finite counting checkpoint](../research/ma-tang-lean-core/README.md): four Init-only modules verify the ordered subset-sum obstruction for literal binary matrices under the explicit kernel-column spanning hypothesis, the exact independent-column sample space and singleton occupancy counts, and a conditional finite upper bound for successful words. Strict Lean 4.35.0 compilation, transitive axiom checks of all 119 source-named declarations, and stock kernel replay passed ([log](../research/ma-tang-lean-core/verification/occupancy-reproduction.log)). The environment-wide audit, full repository gate, kernel-basis distribution, probability normalization and limiting threshold remain unverified. Count zero; uncompiled alternatives remain in [draft #583](https://github.com/1337isnot1337/solved-conjectures/pull/583).
+[Incomplete deterministic and finite counting checkpoint](../research/ma-tang-lean-core/README.md): six Init-only modules verify the actual binary subspace encoding and exact rank-nullity, mixed-group coverage implies a singleton occupied nonzero kernel-column type, and the exact independent-column occupancy count. Strict Lean 4.35.0 builds, transitive axiom checks of all 164 source-named declarations, and stock kernel replay passed ([log](../research/ma-tang-lean-core/verification/rank-reproduction.log)). The sampled-kernel law, probability normalization and conditioning, limiting threshold, full environment-wide audit and aggregate gate remain unverified. Count zero; uncompiled Mathlib alternatives remain in [draft #583](https://github.com/1337isnot1337/solved-conjectures/pull/583).
 
 ## Mazák–Zrubák conjecture on complete graphs minus an edge
 

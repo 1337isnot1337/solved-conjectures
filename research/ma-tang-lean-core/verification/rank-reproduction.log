@@ -1,0 +1,174 @@
+Lean version: Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+MaTangCoreBalance SHA256: ddb959fd9a40f664dead70a468aee434a492ec14375941ea567885f3d42a3b80
+MaTangCoreIndexed SHA256: 983c021c9e0bb930d34571517065c28c1ba923e400f91fc75e253d5b28e88388
+MaTangCoreMatrix SHA256: 04bcc081bc1ce6399fc74e2279b796497ea903ab390edc1d9735757033fde2d4
+MaTangCoreOccupancy SHA256: bc3c930220c3b98c19115a52d1d5801f64b456b5ef53cdb30999de3bce2a8279
+MaTangCoreSubspace SHA256: 917fd3857ff1fd091bcb392f0b064e43459501589487320c079a32b3c737e71b
+MaTangCoreRank SHA256: 18587738a9b34e7b219918d48e5b1602fb6a14c626c060335a670b4c88b37de3
+PASS: strict source compilation
+'MaTangCoreBalance.signed' does not depend on any axioms
+'MaTangCoreBalance.chooseSign' does not depend on any axioms
+'MaTangCoreBalance.chooseSign_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.assign' does not depend on any axioms
+'MaTangCoreBalance.signedSum' does not depend on any axioms
+'MaTangCoreBalance.bitSum' does not depend on any axioms
+'MaTangCoreBalance.flip' does not depend on any axioms
+'MaTangCoreBalance.assign_projection' depends on axioms: [propext]
+'MaTangCoreBalance.assign_sum_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.exists_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.flip_sub' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.flip_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.groupedSum' does not depend on any axioms
+'MaTangCoreBalance.grouped_mod_invariant' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.occupiedCount' does not depend on any axioms
+'MaTangCoreBalance.assignOccupied' does not depend on any axioms
+'MaTangCoreBalance.assignOccupied_projection' depends on axioms: [propext]
+'MaTangCoreBalance.assignOccupied_sum_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.decorate' does not depend on any axioms
+'MaTangCoreBalance.decorate_projection' depends on axioms: [propext]
+'MaTangCoreBalance.decorate_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.decorateGroups' does not depend on any axioms
+'MaTangCoreBalance.groupProjection' does not depend on any axioms
+'MaTangCoreBalance.decorateGroups_projection' depends on axioms: [propext]
+'MaTangCoreBalance.exists_grouped_constant_fiber' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.Raw' does not depend on any axioms
+'MaTangCoreIndexed.Annot' does not depend on any axioms
+'MaTangCoreIndexed.project' does not depend on any axioms
+'MaTangCoreIndexed.countType' does not depend on any axioms
+'MaTangCoreIndexed.nextBudget' does not depend on any axioms
+'MaTangCoreIndexed.annotate' does not depend on any axioms
+'MaTangCoreIndexed.typeSignedSum' does not depend on any axioms
+'MaTangCoreIndexed.annotate_projection' depends on axioms: [propext]
+'MaTangCoreIndexed.annotate_type_sum' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.initialBudget' does not depend on any axioms
+'MaTangCoreIndexed.chosen' does not depend on any axioms
+'MaTangCoreIndexed.chosen_projection' depends on axioms: [propext]
+'MaTangCoreIndexed.chosen_type_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.delta' does not depend on any axioms
+'MaTangCoreIndexed.before' does not depend on any axioms
+'MaTangCoreIndexed.after' does not depend on any axioms
+'MaTangCoreIndexed.after_eq' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.belowMask' does not depend on any axioms
+'MaTangCoreIndexed.delta_below_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.delta_below_zero' depends on axioms: [propext]
+'MaTangCoreIndexed.delta_below_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.labelBound' does not depend on any axioms
+'MaTangCoreIndexed.label_lt_bound' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.delta_below_eq' depends on axioms: [propext]
+'MaTangCoreIndexed.delta_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.chosen_mod_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.sumBits' depends on axioms: [propext]
+'MaTangCoreIndexed.flipBits' depends on axioms: [propext]
+'MaTangCoreIndexed.sumBits_before' depends on axioms: [propext]
+'MaTangCoreIndexed.sumBits_after' depends on axioms: [propext]
+'MaTangCoreIndexed.exists_ordered_constant_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.not_covers_of_type_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreMatrix.xorVec' depends on axioms: [propext]
+'MaTangCoreMatrix.xorVec_length' depends on axioms: [propext]
+'MaTangCoreMatrix.xorVec_self' depends on axioms: [propext]
+'MaTangCoreMatrix.xorVec_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreMatrix.maskBits' does not depend on any axioms
+'MaTangCoreMatrix.xorVec_mask' depends on axioms: [propext]
+'MaTangCoreMatrix.rowDot' depends on axioms: [propext]
+'MaTangCoreMatrix.rowDot_xor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreMatrix.applyMatrix' depends on axioms: [propext]
+'MaTangCoreMatrix.applyMatrix_length' depends on axioms: [propext]
+'MaTangCoreMatrix.applyMatrix_xor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreMatrix.encodedDot' does not depend on any axioms
+'MaTangCoreMatrix.encodedDot_zero' depends on axioms: [propext]
+'MaTangCoreMatrix.kernelVector' does not depend on any axioms
+'MaTangCoreMatrix.matrix_fiber_type_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreMatrix.exists_missing_matrix_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreMatrix.not_covers_of_matrix_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.tally' does not depend on any axioms
+'MaTangCoreOccupancy.tally_append' depends on axioms: [propext]
+'MaTangCoreOccupancy.tally_map' depends on axioms: [propext]
+'MaTangCoreOccupancy.tally_false' depends on axioms: [propext]
+'MaTangCoreOccupancy.tally_compl' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.tally_or_le' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.extend' does not depend on any axioms
+'MaTangCoreOccupancy.words' does not depend on any axioms
+'MaTangCoreOccupancy.extend_length' depends on axioms: [propext]
+'MaTangCoreOccupancy.words_length' depends on axioms: [propext]
+'MaTangCoreOccupancy.hitZero' does not depend on any axioms
+'MaTangCoreOccupancy.hitOne' does not depend on any axioms
+'MaTangCoreOccupancy.hitZero_cons' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.hitOne_cons' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.count_extend_zero' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.count_extend_one' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.count_words_zero' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.count_words_one_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.count_words_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.tally_any_le' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.occupied' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.tally_occupied_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.alphabet' does not depend on any axioms
+'MaTangCoreOccupancy.alphabet_length' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.alphabet_occupied' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.alphabet_miss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.nonzeroTypes' does not depend on any axioms
+'MaTangCoreOccupancy.nonzeroTypes_length' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.nonzeroTypes_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.total_word_count' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.singleton_word_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.singleton_union_word_count_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.mem_extend' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.mem_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.nodup_prepend' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.nodup_extend' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.nodup_words' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.alphabet_label_lt' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.alphabet_nodup' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.nonzeroTypes_complete' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.countType_outside' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.good_word_no_singletons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.alphabet_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreOccupancy.tally_mono_on' depends on axioms: [propext, Quot.sound]
+'MaTangCoreOccupancy.successful_word_count_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreSubspace.labelVector' does not depend on any axioms
+'MaTangCoreSubspace.labelVector_length' depends on axioms: [propext]
+'MaTangCoreSubspace.encodedDot_one_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreSubspace.encodedDot_lift' depends on axioms: [propext, Quot.sound]
+'MaTangCoreSubspace.liftLabels' depends on axioms: [propext]
+'MaTangCoreSubspace.liftLabels_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreSubspace.liftLabels_bound' depends on axioms: [propext, Quot.sound]
+'MaTangCoreSubspace.labelVector_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreSubspace.BinarySubspace' depends on axioms: [propext]
+'MaTangCoreSubspace.tailSpace' depends on axioms: [propext]
+'MaTangCoreSubspace.Encoding' depends on axioms: [propext]
+'MaTangCoreSubspace.vector_with_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreSubspace.exists_encoding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.xorVec_zero_right' depends on axioms: [propext]
+'MaTangCoreRank.rowDot_zero_right' depends on axioms: [propext]
+'MaTangCoreRank.applyMatrix_zero_right' depends on axioms: [propext]
+'MaTangCoreRank.kernelSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.cube' does not depend on any axioms
+'MaTangCoreRank.cube_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.cube_nodup' depends on axioms: [propext, Quot.sound]
+'MaTangCoreRank.cube_length' depends on axioms: [propext]
+'MaTangCoreRank.nodup_subset_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.nodup_map_of_injective_on' depends on axioms: [propext, Quot.sound]
+'MaTangCoreRank.CoversBinary' depends on axioms: [propext]
+'MaTangCoreRank.representative' depends on axioms: [propext, Classical.choice]
+'MaTangCoreRank.representative_spec' depends on axioms: [propext, Classical.choice]
+'MaTangCoreRank.fiberList' depends on axioms: [propext, Classical.choice]
+'MaTangCoreRank.fiberList_length' depends on axioms: [propext, Classical.choice]
+'MaTangCoreRank.fiberList_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.fiberList_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.flatMap_const_length' depends on axioms: [propext]
+'MaTangCoreRank.flatMap_nodup_of_disjoint' depends on axioms: [propext, Quot.sound]
+'MaTangCoreRank.encoding_rank_nullity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.surjective_matrix_encoding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.pairLabels' depends on axioms: [propext]
+'MaTangCoreRank.pairLabels_fst' depends on axioms: [propext]
+'MaTangCoreRank.pairLabels_snd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.pairLabels_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.kernelVector_pairLabels' depends on axioms: [propext]
+'MaTangCoreRank.sumCoeffs' depends on axioms: [propext]
+'MaTangCoreRank.sumBits_eq_sumCoeffs' depends on axioms: [propext]
+'MaTangCoreRank.CoversMixed' depends on axioms: [propext]
+'MaTangCoreRank.coversMixed_binary' depends on axioms: [propext]
+'MaTangCoreRank.mixed_coverage_forces_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreRank.mixed_coverage_actual_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS: transitive axiom check of all 164 source-named declarations
+PASS: stock kernel replay of all six scoped modules
