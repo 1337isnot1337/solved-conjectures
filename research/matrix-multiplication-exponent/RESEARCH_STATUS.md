@@ -456,6 +456,87 @@ contradicting interval rigidity. The finite cover saving exists
 nonconstructively; its size and coefficients are not exhibited.
 This is not a new bound on the matrix multiplication exponent.
 
+## Exact compression criteria and revised source constructions
+
+[ARBITRARY_C_COMPRESSION.md](ARBITRARY_C_COMPRESSION.md) gives a
+necessary and sufficient column-membership condition for an arbitrary
+C compression from fixed tagged A/B/C maps. Its maximum possible rank
+has a subspace Hall formula. The same independent D-slice freedom gives
+aggregate flattening bounds on the row and column sums of the allowable
+subspaces. Those bounds rule out the earlier proposed shortcut of asking
+for nearly p-squared-dimensional spaces at nearly p-squared positions.
+They do not rule out high collective rank from many small subspaces.
+
+[CONTROLLED_EXTERIOR_COMPRESSION.md](CONTROLLED_EXTERIOR_COMPRESSION.md)
+proves two explicit C maps retain at least one quarter and one third,
+respectively, of the target C dimension. The maps are not conversions:
+[GAUSSIAN_SINGLE_TRANSFER_FAILURE.md](GAUSSIAN_SINGLE_TRANSFER_FAILURE.md)
+exhibits two coefficients that sum to zero for the stated modewise
+Gaussian source class, while the proposed transfer target has values
+one and zero there. Independent dense ground changes are outside that
+counterexample's hypotheses.
+
+[FIXED_FLAVOUR_FUSION_FAILURE.md](FIXED_FLAVOUR_FUSION_FAILURE.md)
+derives a complete legal determinant-fusion identity, including all
+off-target coefficients. Its separate operator factors give a rank
+bound after a precisely scoped formal adjoint. In the sparse-subset
+regime the rank is at most p^(1+o(1)), too small for a p^(2-o(1))
+compression. The obstruction also covers C-only postprocessing of that
+exact output. Coherent ambient flavour sums and arbitrary different
+source maps are not covered.
+
+[SQUARE_C_LAURENT_OBSTRUCTION.md](SQUARE_C_LAURENT_OBSTRUCTION.md)
+proves a different restricted failure: with one source family and a
+square C map, even Laurent degeneration to the full target requires
+N/M at least sqrt(p). A limiting covector subspace preserves the needed
+flattening bounds even when C becomes singular. The theorem covers
+the unit source and local Frobenius trace-four sources; larger source
+C spaces, distinct C maps across families, and lower-rank targets
+remain outside its scope.
+
+Two explicit constructions define the revised search. The
+[Grassmannian Weyl operators](GRASSMANNIAN_WEYL_FLAG_CANDIDATE.md)
+give actual ordered local maps, with a stated unresolved joint equation.
+The [Grassmannian Frobenius source](GRASSMANNIAN_FROBENIUS_SOURCE.md)
+has an explicit degeneration from the rank-p four-party unit, a
+nondegenerate complement pairing, and additive exterior multiplication
+matrices. Its algebra and root-subset description are prior results of
+Rietsch; the four-party coefficient normalization is independently
+reconstructed here. A [quadratic Frobenius source](QUADRATIC_FROBENIUS_SOURCE.md)
+provides another explicit coherent-flavour system, but a stronger
+source-level argument now excludes its classical tensor powers.
+All printed coefficient equations retain the actual D inputs.
+
+[SLICE_COVER_TARGET_CAPACITY.md](SLICE_COVER_TARGET_CAPACITY.md)
+proves that a three-space source cover of dimensions u, v, w can produce
+a C-compressed target only with rank at most w+p(u+v)/M. It permits
+arbitrary local maps, distinct C maps across families, and border limits.
+For powers of the quadratic Frobenius source, this bounds the attainable
+rank by p^(5/3+o(1)) at the proposed budgets. It also bounds the density
+of weighted partial targets by p^(-1/3+o(1)).
+
+The [Grassmannian degree count](GRASSMANNIAN_SLICE_CAPACITY.md)
+excludes the classical balanced source with the fixed exponent loss
+delta=1/(12 log 4), and gives a positive loss whenever k/s tends to an
+interior constant. The same low-degree space has dimension at least
+3^(-k) times binom(s,k), so this particular obstruction has no fixed
+exponent loss in the sparse regime. Quantum-wrap components and
+simultaneous singular constructions retaining them are outside the
+classical source argument. They remain active candidates.
+
+[GRASSMANNIAN_SOURCE_SCOPE.md](GRASSMANNIAN_SOURCE_SCOPE.md)
+rules out an exact trade using only commuting coefficient operators,
+by a scalar character and an AB|CD flattening. It also records necessary
+degree and unit-slice conditions for a coordinate matrix multiplication
+embedding. Those conditions do not exclude arbitrary embeddings and do
+not produce a superquadratic lower bound.
+
+[INDEPENDENT_FLAG_PROJECTIONS.md](INDEPENDENT_FLAG_PROJECTIONS.md)
+allows rank fractions to multiply for two projections supported on
+different factors of the target. It does not assert a general
+two-party compression theorem. These exact reductions and failed
+ansatzes leave the exponent target unresolved.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -494,8 +575,9 @@ python3 check_hyperplane_cocycle.py
 python3 check_mixed_valuation_padding.py
 python3 check_exterior_incidence_source.py
 python3 check_weyl_transfer_example.py
+python3 check_grassmannian_frobenius_source.py
 ```
 
-The propagation-local, ordinary-partial-block, general-free-separator, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The Weyl transfer replay and the other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+The propagation-local, ordinary-partial-block, general-free-separator, mixed-padding, and Grassmannian Frobenius scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The Weyl transfer replay and the other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).
