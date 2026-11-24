@@ -299,11 +299,13 @@ nonzero rank-one tensor. When G has only two vertices, the partial direct sum is
 sum and ordinary additivity supplies the same step. This proves the
 inequality for every normalized F and therefore the asymptotic restriction.
 
-The argument makes no finite restriction claim, no reverse comparison,
-and no extension to arbitrary hyperedges with more than two endpoints.
-For larger free sets, the partial-sum exponent needed in this induction
-would be the corresponding full subset-unit charge, which has not been
-established by the two-free-party separator.
+The argument makes no finite restriction claim or reverse comparison.
+The later [general free-set separator](GENERAL_FREE_SET_SEPARATOR.md)
+proves the needed partial-sum inequality with the full subset-unit
+charge for any free set of at least two parties. Its Section 5 extends
+this induction to arbitrary hypergraphs with nonempty edges, including
+one-endpoint edges by projection. Empty edges must be excluded because
+invisible index assignments can cancel.
 
 ## 5. The partial-support relaxation and its exact asymptotic criterion
 

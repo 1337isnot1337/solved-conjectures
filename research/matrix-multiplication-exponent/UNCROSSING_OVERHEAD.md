@@ -1,6 +1,6 @@
 # An unrestricted asymptotic upper bound for uncrossing overhead
 
-Status: proved deduction from spectral duality, three-party spectral normalization, and the four-cycle asymptotic-subrank theorem. A direct construction below factors the conversion through matrix multiplication algorithms and four-cycle distillation. It does not supply new coefficient tables for those imported algorithm families. The exponent is not proved sharp, and zero overhead remains unresolved.
+Status: proved deduction from spectral duality, three-party spectral normalization, and the four-cycle asymptotic-subrank theorem. A direct construction below factors the conversion through matrix multiplication algorithms and four-cycle distillation. It does not supply new coefficient tables for those imported algorithm families. This construction is now known to be nonsharp: [UNCROSSING_ASYMPTOTIC.md](UNCROSSING_ASYMPTOTIC.md) proves zero overhead with explicit source units of size $`q^{O_q(N^{2/3})}`$. The argument below is retained as a valid earlier construction.
 
 Fix $`q\ge2`$ and work over $`\mathbb C`$ with four parties $`I=\{A,B,C,D\}`$. Set
 
@@ -180,11 +180,4 @@ with integer overhead obtained by rounding upward. This improves the previously 
 
 If $`\omega=2`$, then (3) forces $`\beta=0`$. Moreover $`X_q\ge U_I(q)`$: in its defining sum over $`i,j`$, keep only $`i=j`$ at $`A`$ and $`B`$. Thus subexponential full-unit overhead can be supplied by $`o(n)`$ additional copies of $`X_q`$, and $`\beta=0`$ implies $`X_q\gtrsim Y_q`$ in the ordinary asymptotic-restriction convention.
 
-Conversely, any proof that $`\beta>0`$ would prove $`\omega>2`$. Quantitatively, rearranging (3) gives
-
-```math
-\omega\ge\frac{2-\beta}{1-\beta}
-\qquad\text{whenever a positive lower bound on }\beta\text{ is established}.
-```
-
-No such positive lower bound is established here. Finite impossibility, equal-power impossibility, and impossibility with a common full-unit catalyst remain compatible with (9) and with $`\beta=0`$. The reverse implication $`\beta=0\Rightarrow\omega=2`$ is not proved or assumed.
+The later [separator construction](UNCROSSING_ASYMPTOTIC.md) proves $`\beta=0`$ without assuming $`\omega=2`$. Thus this overhead cannot furnish a positive lower bound for the matrix multiplication exponent. Finite impossibility, equal-power impossibility, and impossibility with a common full-unit catalyst remain compatible with this result because its extra unit is present only on the source. The implication $`\beta=0\Rightarrow\omega=2`$ is not proved or assumed.
