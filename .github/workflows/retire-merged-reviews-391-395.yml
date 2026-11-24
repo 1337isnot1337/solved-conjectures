@@ -1,0 +1,24 @@
+name: Retire verified merged review refs 391 and 395
+on:
+  push:
+    branches: [research]
+    paths: [.github/workflows/retire-merged-reviews-391-395.yml]
+permissions:
+  contents: write
+jobs:
+  retire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Delete only the two exact merged review heads
+        shell: bash
+        run: |
+          set -euo pipefail
+          r1=refs/heads/review/math-three-finals
+          r2=refs/heads/review/ordinary-ode
+          h1=0b4b682cf24ef0e4810d2b528c045918eb5b155c
+          h2=7b9805a2e2be8abdc079f93e825dfab342b27a10
+          read -r a1 _ <<< "$(git ls-remote --heads origin "$r1")"
+          read -r a2 _ <<< "$(git ls-remote --heads origin "$r2")"
+          test "$a1" = "$h1" && test "$a2" = "$h2"
+          git push --atomic --force-with-lease="$r1:$h1" --force-with-lease="$r2:$h2" origin ":$r1" ":$r2"
