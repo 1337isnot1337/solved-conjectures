@@ -118,6 +118,7 @@
     "automorphism obstruction"
   ],
   "hegyvari-floor-doubling": ["Norbert Hegyvari", "Erdos 354", "floor doubling", "strong completeness", "rational ratios", "Kohlmeyer Kruer"],
+  "ulas-disjoint-square-blocks": ["Maciej Ulas", "disjoint blocks", "square products", "consecutive integers", "Erdos Graham", "binary codes", "multiplicative signs"],
   "kovalev-lipschitz-clustering": ["Leonid Kovalev", "Lipschitz clustering", "finite subset spaces", "Hausdorff distance", "single linkage", "Lipschitz retraction", "Wasserstein barycenter"],
   "revised-tan-zhou-luroth": ["Tan Zhou conjecture", "Lee", "Luroth expansions", "Lüroth convergents", "Hausdorff dimension", "lower order", "Mass Transference Principle"],
   "simmons-weiss-hausdorff": ["David Simmons", "Barak Weiss", "natural Hausdorff measure", "badly approximable", "Benoist Quint", "continued fractions", "arithmetic lattice"],

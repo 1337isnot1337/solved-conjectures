@@ -16,6 +16,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ |
+| [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ⬜ |
 | [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ |
 | [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ⬜ |
 | [Simmons–Weiss’s Hausdorff-measure question](results/simmons-weiss-hausdorff/) | ⬜ |
