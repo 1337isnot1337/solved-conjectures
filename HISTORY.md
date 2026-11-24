@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Complex BSS separation research and failed reductions
+
+Added [research notes](research/complex-bss-p-vs-np/README.md) for the full uniform complex BSS separation with arbitrary machine constants. The exact model/source audit was merged through [PR #252](https://github.com/1337isnot1337/solved-conjectures/pull/252). This checkpoint adds the sound growing-alternation weighted protocol, counterexamples to its immediate compressions, a boundary extraction lemma, the sub-log-log alternation threshold, explicit resultant and matching incidences, and multiplier/coordinate-weight obstructions. Exact symbolic checks validate the listed identities. The incidence and fixed-level hierarchy bridges remain unresolved; no separation, new solved-conjecture count, or Lean verification is claimed. The canonical graph lower bound is credited to [PR #249](https://github.com/1337isnot1337/solved-conjectures/pull/249), the Anthropic lower bound, and Bürgisser's factor transfer. [Tracking issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
+
 ## 2026-11-23 — Quadratic resultant exclusion barrier and permanent zero-testing
 
 Added a [research note](research/complex-bss-p-vs-np/RESULTANT_EXCLUSION.md) under the open complex BSS campaign #248. It proves a precise sufficient exclusion-complexity criterion for separating nonuniform P_C from NP_C, records why the exponential degree of quadratic resultants prevents the known border-factor theorem from closing that criterion, and derives a quantitative lower bound for testing whether the permanent is zero. The complex BSS separation remains open; the decision lower bound is a deduction from imported factoring theory and the repository's standing VP != VNP assumption. No new solved-conjecture row was added.

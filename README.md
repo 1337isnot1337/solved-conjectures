@@ -118,6 +118,10 @@ This repository takes Anthropic's VP ≠ VNP theorem and its stated lower bounds
 
 - [Quantitative decision lower bound for the permanent graph](research/bss-permanent-graph/). Deciding $`y=\mathop{\mathrm{per}}_m(X)`$ over $`\mathbb C`$ requires $`2^{\Omega((\log m)^{4/3})}`$ operations in the stated algebraic computation-tree model, with defined division and arbitrary constants. The written deduction combines the pinned Anthropic border lower bound with Bürgisser's corrected factor theorem and gives the uniform BSS simulation. It is not a new named-conjecture resolution or a proof of $`\mathsf P_{\mathbb C}\ne\mathsf{NP}_{\mathbb C}`$. No Lean formalization of this deduction is claimed. [Proof](research/bss-permanent-graph/PROOF.md) · [Review](research/bss-permanent-graph/REVIEW.md) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247)
 
+## Open complex BSS research
+
+[P_C versus NP_C over C](research/complex-bss-p-vs-np/README.md) remains open in this campaign. The notes fix the uniform model and HN encoding, give a sound weighted-sum formula with growing alternation, prove exact failures of proposed compressions, and isolate the missing incidence and arbitrary-multiple implications. They build on the graph lower bound above. [Issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248) · [Review and checks](research/complex-bss-p-vs-np/REVIEW.md).
+
 ## Layout
 
 - `results/`: individual results, proofs, and computational checks.
