@@ -182,6 +182,8 @@ The [Feldheim–Feldheim weighted-tail proof](../results/feldheim-weighted-tail/
 
 Run `python3 results/rossi-permutohedron-roots/check.py` for the 8,000 exact finite signs in Rossi’s characteristic-root proof. The uniform large-index argument and [weighted finite-threshold theorem](../results/feldheim-weighted-tail/FINITE-THRESHOLD.md) are analytic.
 
+Run the exact checkers listed in the [leaf-type](../results/chappelon-ramirez-stamate-leaf-type/), [Ehrhart](../results/ferroni-higashitani-early-interior-ehrhart/) and [pinnacle](../results/gessel-zhuang-pinnacle-gamma/) result packages. Their proofs, and the convex-log-tail rate test, are analytic.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
