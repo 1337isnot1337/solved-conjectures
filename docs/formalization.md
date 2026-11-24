@@ -6,6 +6,14 @@
 
 The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
 
+## Caiolo–Ferroni–Hoster conjecture
+
+`CaioloFerroniHoster.counterexample_family` checks the complete rank-five
+construction for every prime power q ≥ 17. It proves the quartic dual Chow
+polynomial is positive on the reals and the quintic dual right augmented
+polynomial has one simple real root, −1. Both fail to split over the reals.
+[Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 `Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.

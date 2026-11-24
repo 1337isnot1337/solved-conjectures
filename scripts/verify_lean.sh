@@ -11,6 +11,15 @@ modules=(
   Conjectures.JohnsonPfaffianCircularUncrossing
   Conjectures.JohnsonPfaffianKernel
   Conjectures.JohnsonPfaffianNoncrossing
+  Conjectures.CaioloFerroniHosterArithmetic
+  Conjectures.CaioloFerroniHosterGraphs
+  Conjectures.CaioloFerroniHosterMatroid
+  Conjectures.CaioloFerroniHosterSubspaces
+  Conjectures.CaioloFerroniHosterFlags
+  Conjectures.CaioloFerroniHosterFlagPolynomialsBasic
+  Conjectures.CaioloFerroniHosterFlagPolynomials
+  Conjectures.CaioloFerroniHosterCertificate
+  Conjectures.CaioloFerroniHoster
   Conjectures.JuhnkeAlternating
   Conjectures.JuhnkeCompositions
   Conjectures.JuhnkeConjecture
