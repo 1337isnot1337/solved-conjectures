@@ -1,0 +1,24 @@
+name: Retire merged publication review 373
+on:
+  push:
+    branches: [research]
+    paths: [.github/workflows/retire-merged-review-373.yml]
+permissions:
+  contents: write
+jobs:
+  retire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retire the reviewed commit with an exact lease
+        shell: bash
+        run: |
+          set -euo pipefail
+          ref=refs/heads/review/betermin-fcc-bcc-cold-spots
+          expected=cbf05ccaf8d5e568e79148ec66100a0d635730e4
+          observed=$(git ls-remote origin "$ref" | cut -f1)
+          if [[ -n "$observed" ]]; then
+            [[ "$observed" == "$expected" ]] || { echo "Branch changed; leaving it intact"; exit 1; }
+            git push --force-with-lease="$ref:$expected" origin ":$ref"
+          fi
+          [[ -z "$(git ls-remote origin "$ref")" ]]
