@@ -1,5 +1,11 @@
 # Full formalization campaign
 
+## Kovalev’s square-root Taylor-section zero-free conjecture
+
+The [complete proof](../results/kovalev-zero-free/FORMALIZATION.md) establishes zero-freeness of every actual Taylor section of the principal analytic square root of the geometric polynomial on the closed unit disk, for every positive length. Its coefficient/iterated-derivative bridge, beta-law transport, finite-section integral identity, and boundary arguments discharge the analytic inputs. The original Conjecture 1.2 is a named endpoint; the broader fractional-exponent and segment supplements and trigonometric Conjecture 1.3 remain unformalized.
+
+The [full receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) records 21 strict source builds, the complete audit of 291 declarations (265 theorems, six private declarations, 31 required endpoints), and exact 21-module stock-kernel replay. The [independent reviews](../results/kovalev-zero-free/LEAN_REVIEW.md) check the statement, analytic bridges and evidence. Only the three standard logical axioms occur transitively. Publication refreshes preserve these exact source and proof-control hashes; metadata checks do not claim a second proof rebuild. Aggregate and deployment follow-up is tracked separately in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
 ## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
 
 The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) formalizes the

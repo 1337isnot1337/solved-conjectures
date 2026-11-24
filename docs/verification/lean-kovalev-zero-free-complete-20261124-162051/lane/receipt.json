@@ -1,0 +1,598 @@
+{
+  "status": "passed",
+  "formalization_status": "complete original square-root conjecture",
+  "complete_results_counted": 1,
+  "entry": "results/kovalev-zero-free",
+  "documented_proof_commit": "6432592c03b24aed190ed7b3204ed942a40a8da4",
+  "scope": "Original Kovalev Conjecture 1.2: every Taylor section of the normalized square root of the geometric polynomial is nonzero on the closed unit disk; stronger all-positive-length theorem included",
+  "excluded_supplements": [
+    "general exponent 0 < alpha <= 1/2",
+    "sharp bounds for arbitrary segments",
+    "adjacent trigonometric Conjecture 1.3"
+  ],
+  "remaining": [],
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "project_modules": [
+    "Conjectures.KovalevZeroFreeCoefficients",
+    "Conjectures.KovalevZeroFreeBeta",
+    "Conjectures.KovalevZeroFreeMobius",
+    "Conjectures.KovalevZeroFreeEuler",
+    "Conjectures.KovalevZeroFreeCoupling",
+    "Conjectures.KovalevZeroFreeTransport",
+    "Conjectures.KovalevZeroFreeGeometry",
+    "Conjectures.KovalevZeroFreeKernel",
+    "Conjectures.KovalevZeroFreeRemainder",
+    "Conjectures.KovalevZeroFreeComparison",
+    "Conjectures.KovalevZeroFreeFiniteAlgebra",
+    "Conjectures.KovalevZeroFreeCorrection",
+    "Conjectures.KovalevZeroFreeAssembly",
+    "Conjectures.KovalevZeroFreeNormalization",
+    "Conjectures.KovalevZeroFreeDerivative",
+    "Conjectures.KovalevZeroFreeSectionIntegral",
+    "Conjectures.KovalevZeroFreeTaylorSeries",
+    "Conjectures.KovalevZeroFreeTaylorAnalytic",
+    "Conjectures.KovalevZeroFreeTaylorFinite",
+    "Conjectures.KovalevZeroFreeTaylor",
+    "Conjectures.KovalevZeroFree"
+  ],
+  "required_theorems": [
+    "Conjectures.KovalevZeroFree.halfCoeff_pos",
+    "Conjectures.KovalevZeroFree.sum_correction",
+    "Conjectures.KovalevZeroFree.sum_weighted_correction",
+    "Conjectures.KovalevZeroFree.correction_budget_lt",
+    "Conjectures.KovalevZeroFree.section_one_ne_zero",
+    "Conjectures.KovalevZeroFree.sqrt_inDiameter",
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison",
+    "Conjectures.KovalevZeroFree.inverse_sqrt_linear_comparison",
+    "Conjectures.KovalevZeroFree.integral_beta_id",
+    "Conjectures.KovalevZeroFree.integral_beta_one_sub",
+    "Conjectures.KovalevZeroFree.remainder_norm_le_one",
+    "Conjectures.KovalevZeroFree.remainder_norm_lt_one",
+    "Conjectures.KovalevZeroFree.remainder_one",
+    "Conjectures.KovalevZeroFree.lintegral_mobius_substitution",
+    "Conjectures.KovalevZeroFree.lintegral_beta_euler",
+    "Conjectures.KovalevZeroFree.lintegral_beta_joint_density",
+    "Conjectures.KovalevZeroFree.map_oddsScale_beta",
+    "Conjectures.KovalevZeroFree.integral_oddsScale_beta",
+    "Conjectures.KovalevZeroFree.beta_resolvent_comparison",
+    "Conjectures.KovalevZeroFree.remainder_comparison",
+    "Conjectures.KovalevZeroFree.weighted_correction_norm_lt",
+    "Conjectures.KovalevZeroFree.leadingPart_norm_lower",
+    "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt",
+    "Conjectures.KovalevZeroFree.halfCoeff_beta_normalizer",
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt",
+    "Conjectures.KovalevZeroFree.invSection_remainder_identity",
+    "Conjectures.KovalevZeroFree.formalCoeff_eq_iteratedDeriv",
+    "Conjectures.KovalevZeroFree.sectionPolynomial_eq_taylor",
+    "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero",
+    "Conjectures.KovalevZeroFree.taylorSection_ne_zero",
+    "Conjectures.KovalevZeroFree.kovalev_conjecture"
+  ],
+  "source_sha256": {
+    "Conjectures/KovalevZeroFreeCoefficients.lean": "ef616eea067ede86ef07b27adbdb46e11a3ca8e5b1e5d7fdda7e1642f01e3813",
+    "Conjectures/KovalevZeroFreeBeta.lean": "95f56d6e1b11d9679fb4c0dcb3b4ba2c52e7b4bda869e8e02e201458ce814022",
+    "Conjectures/KovalevZeroFreeMobius.lean": "2ba1bf0d1718abbd1eb71bd2fa0a58bdc8f58a7a74c1396e361198e0f0d6c9aa",
+    "Conjectures/KovalevZeroFreeEuler.lean": "2d48e70a93aa55f14bb34eccf8bebc840fd69ee0e16b0154458e87e80d0278f6",
+    "Conjectures/KovalevZeroFreeCoupling.lean": "46349d9e8e053870f44f924ccbdf811c506885a6f03b2114f5921f64a3676089",
+    "Conjectures/KovalevZeroFreeTransport.lean": "3710fe1c66572dfa3e2386231b86e53ea98ae0df07e013fc7c4652329a98b5cd",
+    "Conjectures/KovalevZeroFreeGeometry.lean": "fcadbc1377a709f3f48d2eacf847135ba2c13eb982af4c9575f627cdbca05d80",
+    "Conjectures/KovalevZeroFreeKernel.lean": "ad054c1ff29e5195e57ed7cf9ae68f7c26c5b6014f92508b05b3bd633157a15f",
+    "Conjectures/KovalevZeroFreeRemainder.lean": "1c0f74f8c1d141240869b921931669c3c6dbdcdea48a5abab81ac8b5cd0a1421",
+    "Conjectures/KovalevZeroFreeComparison.lean": "f8fbbf5c074016d20e2e2a2340e4843cbcb9db5bfa0cd02333f9b8939e94886d",
+    "Conjectures/KovalevZeroFreeFiniteAlgebra.lean": "46bb70227acaf862bd8f4a3035409e026c0554ddeeb80b398b8d1d370f5a99ca",
+    "Conjectures/KovalevZeroFreeCorrection.lean": "1d119ed3f4997ebfe26c3943495457fedbe3db34793c2c90fca8171e205bf875",
+    "Conjectures/KovalevZeroFreeAssembly.lean": "24630ad0f22ade596588370cf45e1dee2767664fb2f8da02199f0148669fe85e",
+    "Conjectures/KovalevZeroFreeNormalization.lean": "26ce8c82b56f6743ec630a68a320c8c5db775cf0697027e86f487400f8bd2110",
+    "Conjectures/KovalevZeroFreeDerivative.lean": "f0637b9bd10d0f8fde949143df290e02282c8fd7383941232d66cf78b5d0d9ac",
+    "Conjectures/KovalevZeroFreeSectionIntegral.lean": "eec124fd0954e10c03fc89e77290834d56fb01f58923e08d53bc246f2789c680",
+    "Conjectures/KovalevZeroFreeTaylorSeries.lean": "7338d1ee0a962d7cf094862f2ee15f4aa2fbf089af87e19200c82455d5707891",
+    "Conjectures/KovalevZeroFreeTaylorAnalytic.lean": "c8e0ee717f65b9a7af4a57e438f74c73d000be69ea24c3fa8f6789f99f288f77",
+    "Conjectures/KovalevZeroFreeTaylorFinite.lean": "b975bc09a30790be98f4f0ae3a3ece7a422c4b82e3f51404b73ced8f3e90137f",
+    "Conjectures/KovalevZeroFreeTaylor.lean": "7438e251d9d4dcc4788b712c6e247147c4102d044ad2d702f8b5244e89ee2fda",
+    "Conjectures/KovalevZeroFree.lean": "f92cda0dccfc157892228b7505c2566a42991f816df450ddbdb9c0668df2debd"
+  },
+  "control_sha256": {
+    "/tmp/cinna-lean-162051/kovalev/checkpoint002.py": "e0e9f7404fe6229b269eab3ca8205d0d2cfc847294c45d11d0a313771ae93fef",
+    "/tmp/cinna-lean-162051/repo/scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "/tmp/cinna-lean-162051/repo/scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "/tmp/cinna-lean-162051/repo/scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225"
+  },
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "repository_wide_gate_claimed": false,
+  "steps": [
+    {
+      "label": "version",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:17.484846+00:00",
+      "finished_utc": "2026-11-24T18:03:17.599231+00:00",
+      "seconds": 0.114,
+      "timed_out": false,
+      "log_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeCoefficients.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeCoefficients.olean",
+        "Conjectures/KovalevZeroFreeCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:17.599673+00:00",
+      "finished_utc": "2026-11-24T18:03:21.502552+00:00",
+      "seconds": 3.903,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeBeta.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeBeta.olean",
+        "Conjectures/KovalevZeroFreeBeta.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:21.503292+00:00",
+      "finished_utc": "2026-11-24T18:03:26.287746+00:00",
+      "seconds": 4.784,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeMobius.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeMobius.olean",
+        "Conjectures/KovalevZeroFreeMobius.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:26.288455+00:00",
+      "finished_utc": "2026-11-24T18:03:28.762397+00:00",
+      "seconds": 2.474,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeEuler.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeEuler.olean",
+        "Conjectures/KovalevZeroFreeEuler.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:28.762923+00:00",
+      "finished_utc": "2026-11-24T18:03:30.935457+00:00",
+      "seconds": 2.173,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeCoupling.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeCoupling.olean",
+        "Conjectures/KovalevZeroFreeCoupling.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:30.936000+00:00",
+      "finished_utc": "2026-11-24T18:03:33.210231+00:00",
+      "seconds": 2.274,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeTransport.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeTransport.olean",
+        "Conjectures/KovalevZeroFreeTransport.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:33.210938+00:00",
+      "finished_utc": "2026-11-24T18:03:35.493070+00:00",
+      "seconds": 2.282,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeGeometry.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeGeometry.olean",
+        "Conjectures/KovalevZeroFreeGeometry.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:35.493605+00:00",
+      "finished_utc": "2026-11-24T18:03:38.329277+00:00",
+      "seconds": 2.836,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeKernel.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeKernel.olean",
+        "Conjectures/KovalevZeroFreeKernel.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:38.330328+00:00",
+      "finished_utc": "2026-11-24T18:03:41.061646+00:00",
+      "seconds": 2.731,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeRemainder.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeRemainder.olean",
+        "Conjectures/KovalevZeroFreeRemainder.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:41.063129+00:00",
+      "finished_utc": "2026-11-24T18:03:44.244930+00:00",
+      "seconds": 3.182,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeComparison.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeComparison.olean",
+        "Conjectures/KovalevZeroFreeComparison.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:44.248043+00:00",
+      "finished_utc": "2026-11-24T18:03:47.996473+00:00",
+      "seconds": 3.748,
+      "timed_out": false,
+      "log_sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeFiniteAlgebra.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeFiniteAlgebra.olean",
+        "Conjectures/KovalevZeroFreeFiniteAlgebra.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:47.997598+00:00",
+      "finished_utc": "2026-11-24T18:03:50.389087+00:00",
+      "seconds": 2.392,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeCorrection.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeCorrection.olean",
+        "Conjectures/KovalevZeroFreeCorrection.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:50.389910+00:00",
+      "finished_utc": "2026-11-24T18:03:52.970199+00:00",
+      "seconds": 2.58,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeAssembly.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeAssembly.olean",
+        "Conjectures/KovalevZeroFreeAssembly.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:52.971074+00:00",
+      "finished_utc": "2026-11-24T18:03:55.609597+00:00",
+      "seconds": 2.639,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeNormalization.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeNormalization.olean",
+        "Conjectures/KovalevZeroFreeNormalization.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:55.610301+00:00",
+      "finished_utc": "2026-11-24T18:03:58.244266+00:00",
+      "seconds": 2.634,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeDerivative.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeDerivative.olean",
+        "Conjectures/KovalevZeroFreeDerivative.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:03:58.245120+00:00",
+      "finished_utc": "2026-11-24T18:04:00.819633+00:00",
+      "seconds": 2.575,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeSectionIntegral.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeSectionIntegral.olean",
+        "Conjectures/KovalevZeroFreeSectionIntegral.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:00.820525+00:00",
+      "finished_utc": "2026-11-24T18:04:03.392328+00:00",
+      "seconds": 2.572,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeTaylorSeries.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeTaylorSeries.olean",
+        "Conjectures/KovalevZeroFreeTaylorSeries.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:03.393179+00:00",
+      "finished_utc": "2026-11-24T18:04:06.473268+00:00",
+      "seconds": 3.08,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeTaylorAnalytic.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeTaylorAnalytic.olean",
+        "Conjectures/KovalevZeroFreeTaylorAnalytic.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:06.474253+00:00",
+      "finished_utc": "2026-11-24T18:04:10.047806+00:00",
+      "seconds": 3.574,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeTaylorFinite.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeTaylorFinite.olean",
+        "Conjectures/KovalevZeroFreeTaylorFinite.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:10.056128+00:00",
+      "finished_utc": "2026-11-24T18:04:14.356702+00:00",
+      "seconds": 4.301,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFreeTaylor.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFreeTaylor.olean",
+        "Conjectures/KovalevZeroFreeTaylor.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:14.359509+00:00",
+      "finished_utc": "2026-11-24T18:04:16.985305+00:00",
+      "seconds": 2.626,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.KovalevZeroFree.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/lib/lean/Conjectures/KovalevZeroFree.olean",
+        "Conjectures/KovalevZeroFree.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:16.986251+00:00",
+      "finished_utc": "2026-11-24T18:04:20.786691+00:00",
+      "seconds": 3.801,
+      "timed_out": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "all-owned-audit",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4000",
+        "-DwarningAsError=true",
+        "/tmp/cinna-lean-162051/kovalev/checkpoint-002/AllOwnedAudit.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:20.793226+00:00",
+      "finished_utc": "2026-11-24T18:04:31.010948+00:00",
+      "seconds": 10.218,
+      "timed_out": false,
+      "log_sha256": "e6fe1b92ec4ba91bf6bef29795999961ded382ef1a406e420bba48d7a0f51df9"
+    },
+    {
+      "label": "kernel",
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "leanchecker",
+        "-v",
+        "Conjectures"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-24T18:04:31.045044+00:00",
+      "finished_utc": "2026-11-24T18:05:10.394858+00:00",
+      "seconds": 39.35,
+      "timed_out": false,
+      "log_sha256": "84b446f0f4d603cf16f37a2497144bad0c9eda6a734688a4e45597a8123288c2"
+    }
+  ],
+  "lock_acquired_utc": "2026-11-24T18:03:17.484230+00:00",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "exact_kernel_replay_set": [
+    "Conjectures.KovalevZeroFreeCoefficients",
+    "Conjectures.KovalevZeroFreeBeta",
+    "Conjectures.KovalevZeroFreeMobius",
+    "Conjectures.KovalevZeroFreeEuler",
+    "Conjectures.KovalevZeroFreeCoupling",
+    "Conjectures.KovalevZeroFreeTransport",
+    "Conjectures.KovalevZeroFreeGeometry",
+    "Conjectures.KovalevZeroFreeKernel",
+    "Conjectures.KovalevZeroFreeRemainder",
+    "Conjectures.KovalevZeroFreeComparison",
+    "Conjectures.KovalevZeroFreeFiniteAlgebra",
+    "Conjectures.KovalevZeroFreeCorrection",
+    "Conjectures.KovalevZeroFreeAssembly",
+    "Conjectures.KovalevZeroFreeNormalization",
+    "Conjectures.KovalevZeroFreeDerivative",
+    "Conjectures.KovalevZeroFreeSectionIntegral",
+    "Conjectures.KovalevZeroFreeTaylorSeries",
+    "Conjectures.KovalevZeroFreeTaylorAnalytic",
+    "Conjectures.KovalevZeroFreeTaylorFinite",
+    "Conjectures.KovalevZeroFreeTaylor",
+    "Conjectures.KovalevZeroFree"
+  ],
+  "finished_utc": "2026-11-24T18:05:10.411555+00:00",
+  "object_sha256": {
+    "Conjectures/KovalevZeroFree.olean": "98b39e95a16ffdf197aec5dd62548870d8ba5400b918f283f084be5bcfed94dc",
+    "Conjectures/KovalevZeroFreeAssembly.olean": "7181dbe34468be474be5fa84650e3f38bf21a823be43a750cf2bf625987d65fd",
+    "Conjectures/KovalevZeroFreeBeta.olean": "445b3617165ba842667a38a693f3b62d9ca2c4006df28269e9c55d20cc348a3a",
+    "Conjectures/KovalevZeroFreeCoefficients.olean": "b8d7371e501fc9c916f15e42f526066339cdb3938f7a5495c015eb58bc80a4b5",
+    "Conjectures/KovalevZeroFreeComparison.olean": "e9fc7aa93e48f050a7724cf9fe46c326ef78e865c47a57b3407ec556aa986514",
+    "Conjectures/KovalevZeroFreeCorrection.olean": "7045deee806db410d92d924b138889e219d1bf61182e4e430fce3a00f6d3193a",
+    "Conjectures/KovalevZeroFreeCoupling.olean": "3deff1985089a35dbf7cad7b48cc5395ebe4821eb74d8b6f872a2b497af2911d",
+    "Conjectures/KovalevZeroFreeDerivative.olean": "3735ee41f464f588c8f6a3a564d95dab244f45f3562bf55026813ac2a5fd2626",
+    "Conjectures/KovalevZeroFreeEuler.olean": "25ec5fa9b01a8caa65a01582db7731ccfc7e3e6247be2e8dfa29625699c28738",
+    "Conjectures/KovalevZeroFreeFiniteAlgebra.olean": "52462ce6509d7be20285083e8d898f1a28e2437e56c16bd139ffd036b7de622c",
+    "Conjectures/KovalevZeroFreeGeometry.olean": "dc0ca287ce23f51f1d17ac735276f14902b3a6aeec6c989f4e4e99a6025d1642",
+    "Conjectures/KovalevZeroFreeKernel.olean": "27a78d0b46ebc1e60af9387c33044bb555c33c7af140ee21090c9032350194eb",
+    "Conjectures/KovalevZeroFreeMobius.olean": "dc46382d20a7260f1b5bdfefec0ca6aa0329d45621e27174667f9fcf26f74414",
+    "Conjectures/KovalevZeroFreeNormalization.olean": "0367fa52c9fd0456e452b61759f6b753e4c2896e26596b886e85218619b746e6",
+    "Conjectures/KovalevZeroFreeRemainder.olean": "75e4d3c0a94ec3b1d05e10ee7bbc9537be341548830472bebf9a6e1bf47535f3",
+    "Conjectures/KovalevZeroFreeSectionIntegral.olean": "07d393587e978288be85d55d3a9b249d1ce78bf9c08aa2eb5455f89396d2572d",
+    "Conjectures/KovalevZeroFreeTaylor.olean": "1e83275383898ae9ed65f3c7d57c88f7fcb78068bb1da95563e438cd1143901e",
+    "Conjectures/KovalevZeroFreeTaylorAnalytic.olean": "a040f469ae55ef82eee0a71e984fc8cebd46dc97b78de35ccacdb718a3ff14f0",
+    "Conjectures/KovalevZeroFreeTaylorFinite.olean": "3cfa7d28d87ef721c3c45afecdbb3d5aae864f3060f599fb39bbddb49d1b0725",
+    "Conjectures/KovalevZeroFreeTaylorSeries.olean": "c57dc21cfd07c74e6e28e585af8d2d4ae891cafd09db6a2b8bb05cdfabd2b9d1",
+    "Conjectures/KovalevZeroFreeTransport.olean": "ca74921b8aefd1564c8c376735a596182ff334006f03e3b59bc4d67d93f00ec4"
+  },
+  "audit_source_sha256": "0af61e4d9f0a0191505f9b99acc3bab4a94d728f1e6e02cbd81021a7aad69735",
+  "declaration_inventory_sha256": "33dc3f6dacec8436fb73f210040026192e11b22f960bd53f28ac80a3f4a5111b",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 291,
+    "modules": 21,
+    "private_declarations": 6,
+    "raw_declarations": 291,
+    "required": 31,
+    "tag": "passed",
+    "theorems": 265
+  },
+  "kernel_environment": {
+    "LEAN_NUM_THREADS": "1",
+    "UV_USE_IO_URING": "0"
+  }
+}

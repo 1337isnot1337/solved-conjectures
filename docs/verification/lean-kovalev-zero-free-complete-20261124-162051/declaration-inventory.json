@@ -1,0 +1,4746 @@
+{
+  "summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 291,
+    "modules": 21,
+    "private_declarations": 6,
+    "raw_declarations": 291,
+    "required": 31,
+    "tag": "passed",
+    "theorems": 265
+  },
+  "modules": {
+    "Conjectures.KovalevZeroFreeCoefficients": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeCoefficients",
+      "names": [
+        "Conjectures.KovalevZeroFree.invSection_one_re_pos",
+        "Conjectures.KovalevZeroFree.halfCoeff.eq_def",
+        "Conjectures.KovalevZeroFree.halfCoeff.eq_1",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence",
+        "Conjectures.KovalevZeroFree.section_one_re_pos",
+        "Conjectures.KovalevZeroFree.halfCoeff.match_1",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_1",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_3",
+        "Conjectures.KovalevZeroFree.halfCoeff._sunfold",
+        "Conjectures.KovalevZeroFree.invSection",
+        "Conjectures.KovalevZeroFree.halfCoeff",
+        "Conjectures.KovalevZeroFree.halfCoeff._proof_1",
+        "Conjectures.KovalevZeroFree.correction.eq_1",
+        "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_1",
+        "Conjectures.KovalevZeroFree.halfCoeff._f",
+        "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_2",
+        "Conjectures.KovalevZeroFree.correction",
+        "Conjectures.KovalevZeroFree.sum_weighted_correction",
+        "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.splitter",
+        "Conjectures.KovalevZeroFree.sectionPolynomial",
+        "Conjectures.KovalevZeroFree.halfCoeff.eq_2",
+        "Conjectures.KovalevZeroFree.invSection_one_re",
+        "Conjectures.KovalevZeroFree.correction_pos",
+        "Conjectures.KovalevZeroFree.sum_correction",
+        "Conjectures.KovalevZeroFree.correction_budget_lt",
+        "Conjectures.KovalevZeroFree.halfCoeff_zero",
+        "Conjectures.KovalevZeroFree.invSection_one_re_mono",
+        "Conjectures.KovalevZeroFree.halfCoeff_antitone",
+        "Conjectures.KovalevZeroFree.halfCoeff_pos",
+        "Conjectures.KovalevZeroFree.sectionPolynomial.eq_1",
+        "Conjectures.KovalevZeroFree.halfCoeff_succ",
+        "Conjectures.KovalevZeroFree.invSection.eq_1",
+        "Conjectures.KovalevZeroFree.section_one_ne_zero",
+        "Conjectures.KovalevZeroFree.halfCoeff._unsafe_rec",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_7",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_4",
+        "Conjectures.KovalevZeroFree.invSection_zero",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_6",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_2",
+        "Conjectures.KovalevZeroFree.halfCoeff_succ_lt",
+        "Conjectures.KovalevZeroFree.invSection_one_re_pos._proof_1_1",
+        "Conjectures.KovalevZeroFree.invSection_one_im",
+        "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_5",
+        "Conjectures.KovalevZeroFree.correction_recurrence"
+      ],
+      "private_count": 3,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeBeta": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeBeta",
+      "names": [
+        "Conjectures.KovalevZeroFree.integral_betaPDFReal",
+        "Conjectures.KovalevZeroFree.beta_add_one_left",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id",
+        "Conjectures.KovalevZeroFree.integral_beta_id",
+        "Conjectures.KovalevZeroFree.integral_beta_weight._simp_1_1",
+        "Conjectures.KovalevZeroFree.beta_ae_mem",
+        "Conjectures.KovalevZeroFree.integral_beta_weight",
+        "Conjectures.KovalevZeroFree.beta_integrable_id",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_5",
+        "Conjectures.KovalevZeroFree.betaPDFReal_nonneg",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_4",
+        "Conjectures.KovalevZeroFree.integral_beta_one_sub",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_7",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_6",
+        "Conjectures.KovalevZeroFree.beta_ae_mem._simp_1_1",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_2",
+        "ProbabilityTheory.betaPDF.eq_1",
+        "Conjectures.KovalevZeroFree.measurable_betaPDF",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_1",
+        "Conjectures.KovalevZeroFree.integral_beta_density",
+        "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_3"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeMobius": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeMobius",
+      "names": [
+        "Conjectures.KovalevZeroFree.mobius_oddsScale",
+        "Conjectures.KovalevZeroFree.measurable_mobius",
+        "Conjectures.KovalevZeroFree.mobius_image",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_4",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_7",
+        "Conjectures.KovalevZeroFree.oddsScale_den_pos",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_2",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_6",
+        "Conjectures.KovalevZeroFree.oddsScale_mobius",
+        "Conjectures.KovalevZeroFree.mobiusJacobian",
+        "Conjectures.KovalevZeroFree.oddsScale_mem",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_1",
+        "Conjectures.KovalevZeroFree.mobius",
+        "Conjectures.KovalevZeroFree.mobius_mem",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_3",
+        "Conjectures.KovalevZeroFree.measurable_oddsScale",
+        "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_5",
+        "Conjectures.KovalevZeroFree.oddsScale",
+        "Conjectures.KovalevZeroFree.mobius_injOn",
+        "Conjectures.KovalevZeroFree.mobiusJacobian_pos",
+        "Conjectures.KovalevZeroFree.lintegral_mobius_substitution",
+        "Conjectures.KovalevZeroFree.mobius_den_pos",
+        "Conjectures.KovalevZeroFree.mobius_hasDeriv",
+        "Conjectures.KovalevZeroFree.measurable_mobiusJacobian"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeEuler": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeEuler",
+      "names": [
+        "Conjectures.KovalevZeroFree.betaWeight.eq_1",
+        "Conjectures.KovalevZeroFree.betaPDFReal_eq_weight",
+        "Conjectures.KovalevZeroFree.beta_coupling_normalizers",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_5",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_3",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_1",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity",
+        "Conjectures.KovalevZeroFree.rpow_mobius_algebra",
+        "Conjectures.KovalevZeroFree.betaWeight",
+        "Conjectures.KovalevZeroFree.lintegral_betaPDF_Ioo",
+        "Conjectures.KovalevZeroFree.mobiusJacobian_betaWeight",
+        "Conjectures.KovalevZeroFree.lintegral_beta_euler",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_6",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_7",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_4",
+        "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_2",
+        "Conjectures.KovalevZeroFree.one_sub_mobius"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeCoupling": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeCoupling",
+      "names": [
+        "Conjectures.KovalevZeroFree.beta_marginal_normalizer",
+        "Conjectures.KovalevZeroFree.beta_joint_density_identity",
+        "Conjectures.KovalevZeroFree.lintegral_beta_joint_density"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeTransport": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeTransport",
+      "names": [
+        "Conjectures.KovalevZeroFree.lintegral_oddsScale_beta",
+        "Conjectures.KovalevZeroFree.lintegral_beta_restrict",
+        "Conjectures.KovalevZeroFree.lintegral_beta_oddsScale_substitution",
+        "Conjectures.KovalevZeroFree.map_oddsScale_beta",
+        "Conjectures.KovalevZeroFree.integral_oddsScale_beta"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeGeometry": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeGeometry",
+      "names": [
+        "Conjectures.KovalevZeroFree.inDiameter_iff_norm",
+        "Conjectures.KovalevZeroFree.sqrt_re_nonneg",
+        "Conjectures.KovalevZeroFree.inDiameter_norm_bounds",
+        "Conjectures.KovalevZeroFree.sqrt_inDiameter",
+        "Conjectures.KovalevZeroFree.sqrt_re_equation",
+        "Conjectures.KovalevZeroFree.norm_sqrt_sq",
+        "Conjectures.KovalevZeroFree.sqrt_diameter_algebra",
+        "Conjectures.KovalevZeroFree.sqrt_sq",
+        "Conjectures.KovalevZeroFree.InDiameter",
+        "Conjectures.KovalevZeroFree.norm_sub_real_sq"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeKernel": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeKernel",
+      "names": [
+        "Conjectures.KovalevZeroFree.cayley_norm_le_one",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_3",
+        "Conjectures.KovalevZeroFree.one_add_ne_zero",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_5",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_6",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_7",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_4",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_2",
+        "Conjectures.KovalevZeroFree.sqrt_ne_zero",
+        "Conjectures.KovalevZeroFree.sqrt_im_mul_nonneg",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison",
+        "Conjectures.KovalevZeroFree.affine_ratio_inDiameter",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_6",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_4",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_7",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_2",
+        "Conjectures.KovalevZeroFree.sqrt_re_pos",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_5",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_3",
+        "Conjectures.KovalevZeroFree.norm_inv_sqrt_le_one",
+        "Conjectures.KovalevZeroFree.norm_inv_sqrt_lt_one",
+        "Conjectures.KovalevZeroFree.sqrt_div_re_pos",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_1",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_linear_comparison",
+        "Conjectures.KovalevZeroFree.sqrt_div_eq",
+        "Conjectures.KovalevZeroFree.inDiameter_rescale",
+        "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_1"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeRemainder": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeRemainder",
+      "names": [
+        "Conjectures.KovalevZeroFree.resolvent_norm_lt_one",
+        "Conjectures.KovalevZeroFree.measurable_odds",
+        "Conjectures.KovalevZeroFree.resolvent.eq_1",
+        "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae._simp_1_2",
+        "Conjectures.KovalevZeroFree.odds",
+        "Conjectures.KovalevZeroFree.remainder.eq_1",
+        "Conjectures.KovalevZeroFree.remainder._proof_1",
+        "Conjectures.KovalevZeroFree.remainder",
+        "Conjectures.KovalevZeroFree.odds_pos",
+        "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae",
+        "Conjectures.KovalevZeroFree.resolvent_norm_le_one",
+        "Conjectures.KovalevZeroFree.remainder_norm_lt_one",
+        "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae._simp_1_1",
+        "Conjectures.KovalevZeroFree.remainder_one",
+        "Conjectures.KovalevZeroFree.remainder_norm_le_one",
+        "Conjectures.KovalevZeroFree.measurable_complex_sqrt",
+        "Conjectures.KovalevZeroFree.resolvent_beta_integrable",
+        "Conjectures.KovalevZeroFree.resolvent",
+        "Conjectures.KovalevZeroFree.re_lt_one_of_closedDisk_ne_one._simp_1_1",
+        "Conjectures.KovalevZeroFree.measurable_resolvent",
+        "Conjectures.KovalevZeroFree.re_lt_one_of_closedDisk_ne_one"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeComparison": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeComparison",
+      "names": [
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_3",
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_1",
+        "Conjectures.KovalevZeroFree.resolvent_linear_comparison",
+        "Conjectures.KovalevZeroFree.beta_resolvent_comparison",
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_7",
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_6",
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_2",
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_4",
+        "Conjectures.KovalevZeroFree.odds_oddsScale",
+        "Conjectures.KovalevZeroFree.remainder_comparison",
+        "Conjectures.KovalevZeroFree.integral_beta_two_sub",
+        "Conjectures.KovalevZeroFree.beta_product_ae_mem",
+        "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_5"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeFiniteAlgebra": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeFiniteAlgebra",
+      "names": [
+        "Conjectures.KovalevZeroFree.leadingPart_norm_lower",
+        "Conjectures.KovalevZeroFree.weighted_correction_norm_lt",
+        "Conjectures.KovalevZeroFree.weighted_correction_norm_lt._simp_1_1",
+        "Conjectures.KovalevZeroFree.leadingPart"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeCorrection": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeCorrection",
+      "names": [
+        "Conjectures.KovalevZeroFree.correctionRemainder.eq_1",
+        "Conjectures.KovalevZeroFree.section_shift_le",
+        "Conjectures.KovalevZeroFree.correctionRemainder",
+        "Conjectures.KovalevZeroFree.remainder_shift_comparison",
+        "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt._proof_1_1",
+        "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeAssembly": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeAssembly",
+      "names": [
+        "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero_of_remainder_identity",
+        "Conjectures.KovalevZeroFree.section_correction_identity._proof_1_1",
+        "Conjectures.KovalevZeroFree.section_correction_identity"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeNormalization": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeNormalization",
+      "names": [
+        "Conjectures.KovalevZeroFree.halfCoeff_beta_normalizer",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_3",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_5",
+        "Conjectures.KovalevZeroFree.beta_half_product",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_2",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_4",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_7",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_6",
+        "Conjectures.KovalevZeroFree.beta_one_left",
+        "Conjectures.KovalevZeroFree.halfCoeff_beta_density",
+        "Conjectures.KovalevZeroFree.beta_half_product._simp_1_1"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeDerivative": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeDerivative",
+      "names": [
+        "Conjectures.KovalevZeroFree.sqrt_one_sub_hasDerivAt",
+        "Conjectures.KovalevZeroFree.invSection_succ",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_1",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_5",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_3",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_7",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_2",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_6",
+        "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_4"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeSectionIntegral": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "names": [
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_3",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_1",
+        "Conjectures.KovalevZeroFree.real_half_weight_eq_inv_sqrt",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral",
+        "Conjectures.KovalevZeroFree.segment_section_hasDerivAt",
+        "Conjectures.KovalevZeroFree.resolvent_eq_sqrt_ratio",
+        "Conjectures.KovalevZeroFree.segment_kernel_continuousOn._simp_1_1",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_6",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_4",
+        "Conjectures.KovalevZeroFree.invSection_remainder_identity",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_2",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_7",
+        "Conjectures.KovalevZeroFree.segment_kernel_continuousOn",
+        "Conjectures.KovalevZeroFree.segment_re_pos",
+        "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_5"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeTaylorSeries": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "names": [
+        "Conjectures.KovalevZeroFree.real_choose_recurrence",
+        "Conjectures.KovalevZeroFree.sqrtCoeff.eq_1",
+        "Conjectures.KovalevZeroFree.summable_norm_coeff_mul_pow",
+        "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_2",
+        "Conjectures.KovalevZeroFree.hasSum_dilatedSqrtCoeff",
+        "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_1",
+        "Conjectures.KovalevZeroFree.sqrtCoeff_eq_choose",
+        "Conjectures.KovalevZeroFree.halfCoeff_eq_choose",
+        "Conjectures.KovalevZeroFree.sqrtCoeff.match_1",
+        "Conjectures.KovalevZeroFree.correction_eq_choose",
+        "Conjectures.KovalevZeroFree.dilatedSqrtCoeff",
+        "Conjectures.KovalevZeroFree.norm_dilatedSqrtCoeff_le_one",
+        "Conjectures.KovalevZeroFree.sqrtCoeff",
+        "Conjectures.KovalevZeroFree.sqrtCoeff.eq_2",
+        "Conjectures.KovalevZeroFree.hasSum_halfCoeff",
+        "Conjectures.KovalevZeroFree.hasSum_sqrtCoeff",
+        "Conjectures.KovalevZeroFree.norm_halfCoeff_le_one",
+        "Conjectures.KovalevZeroFree.dilatedSqrtCoeff.eq_1",
+        "Conjectures.KovalevZeroFree.norm_sqrtCoeff_le_one",
+        "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.splitter",
+        "Conjectures.KovalevZeroFree.hasSum_dilatedSqrtCoeff._simp_1_2",
+        "Conjectures.KovalevZeroFree.halfCoeff_complex_eq_choose"
+      ],
+      "private_count": 3,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeTaylorAnalytic": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "names": [
+        "Conjectures.KovalevZeroFree.formalCoeff_eq_iteratedDeriv",
+        "Conjectures.KovalevZeroFree.sqrt_radicand_analyticAt",
+        "Conjectures.KovalevZeroFree.radicalProduct_eventually_eq_sqrt",
+        "Conjectures.KovalevZeroFree.formalCoeff",
+        "Conjectures.KovalevZeroFree.radicand.eq_1",
+        "Conjectures.KovalevZeroFree.radicand",
+        "Conjectures.KovalevZeroFree.radicalProduct.eq_1",
+        "Conjectures.KovalevZeroFree.hasSum_formalCoeff",
+        "Conjectures.KovalevZeroFree.radicalProduct._proof_1",
+        "Conjectures.KovalevZeroFree.radicand_zero",
+        "Conjectures.KovalevZeroFree.radicalProduct_sq",
+        "Conjectures.KovalevZeroFree.radicalProduct_zero",
+        "Conjectures.KovalevZeroFree.radicalProduct",
+        "Conjectures.KovalevZeroFree.formalCoeff.eq_1",
+        "Conjectures.KovalevZeroFree.radicalProduct_hasFPowerSeriesAt",
+        "Conjectures.KovalevZeroFree.radicand_analyticAt",
+        "Conjectures.KovalevZeroFree.sqrt_radicand_hasFPowerSeriesAt"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeTaylorFinite": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "names": [
+        "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_5",
+        "Conjectures.KovalevZeroFree.sum_multiples_prefix._simp_1_1",
+        "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_3",
+        "Conjectures.KovalevZeroFree.sum_multiples_prefix",
+        "Conjectures.KovalevZeroFree.sum_triangle_reindex",
+        "Conjectures.KovalevZeroFree.cauchy_prefix_eq",
+        "Conjectures.KovalevZeroFree.sum_triangle_reindex._simp_1_2",
+        "Conjectures.KovalevZeroFree.sum_multiples_prefix._proof_1_4",
+        "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_4",
+        "Conjectures.KovalevZeroFree.sum_multiples_prefix._simp_1_2",
+        "Conjectures.KovalevZeroFree.sum_multiples_prefix._proof_1_3",
+        "Conjectures.KovalevZeroFree.sum_triangle_reindex._simp_1_1"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFreeTaylor": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFreeTaylor",
+      "names": [
+        "Conjectures.KovalevZeroFree.formalCoeff_prefix_eq_section",
+        "Conjectures.KovalevZeroFree.sectionPolynomial_eq_taylor"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.KovalevZeroFree": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.KovalevZeroFree",
+      "names": [
+        "Conjectures.KovalevZeroFree.taylorSection_ne_zero",
+        "Conjectures.KovalevZeroFree.kovalev_conjecture",
+        "Conjectures.KovalevZeroFree.kovalev_conjecture._proof_1_1",
+        "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    }
+  },
+  "declarations": {
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_3",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.hasSum_sqrtCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.hasSum_sqrtCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_one",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_im_mul_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_im_mul_nonneg",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sectionPolynomial.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sectionPolynomial.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.kovalev_conjecture": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.kovalev_conjecture",
+      "owner": "Conjectures.KovalevZeroFree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_beta_normalizer": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_beta_normalizer",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.taylorSection_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.taylorSection_ne_zero",
+      "owner": "Conjectures.KovalevZeroFree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobiusJacobian_betaWeight": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobiusJacobian_betaWeight",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_integrable_id": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_integrable_id",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_re_equation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_re_equation",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicand_analyticAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicand_analyticAt",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.dilatedSqrtCoeff.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.dilatedSqrtCoeff.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrtCoeff.eq_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrtCoeff.eq_2",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_comparison": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_comparison",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrtCoeff.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrtCoeff.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_multiples_prefix._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_multiples_prefix._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_div_eq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_div_eq",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.leadingPart_norm_lower": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.leadingPart_norm_lower",
+      "owner": "Conjectures.KovalevZeroFreeFiniteAlgebra",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_ae_mem._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_ae_mem._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.InDiameter": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.InDiameter",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.cayley_norm_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.cayley_norm_le_one",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correction": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.correction",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff._f": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff._f",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_hasDeriv": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_hasDeriv",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct._proof_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct_eventually_eq_sqrt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct_eventually_eq_sqrt",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent_beta_integrable": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.resolvent_beta_integrable",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_beta_one_sub": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_beta_one_sub",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_triangle_reindex._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_triangle_reindex._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.map_oddsScale_beta": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.map_oddsScale_beta",
+      "owner": "Conjectures.KovalevZeroFreeTransport",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobiusJacobian_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobiusJacobian_pos",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_mem",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaWeight.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaWeight.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.segment_kernel_continuousOn": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.segment_kernel_continuousOn",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff.eq_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff.eq_2",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_beta_weight": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_beta_weight",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correction_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correction_pos",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_resolvent_comparison": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_resolvent_comparison",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_succ_lt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_succ_lt",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.hasSum_dilatedSqrtCoeff._simp_1_2": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.hasSum_dilatedSqrtCoeff._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero_of_remainder_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero_of_remainder_identity",
+      "owner": "Conjectures.KovalevZeroFreeAssembly",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_beta_density": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_beta_density",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_inDiameter": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_inDiameter",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.weighted_correction_norm_lt._simp_1_1": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.weighted_correction_norm_lt._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeFiniteAlgebra",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.re_lt_one_of_closedDisk_ne_one._simp_1_1": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.re_lt_one_of_closedDisk_ne_one._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_one_im": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_one_im",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_product_ae_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_product_ae_mem",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_beta_id": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_beta_id",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_1": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_mobius_substitution": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_mobius_substitution",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correction.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correction.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_remainder_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_remainder_identity",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_multiples_prefix": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_multiples_prefix",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.oddsScale_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.oddsScale_mem",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_betaPDF_Ioo": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_betaPDF_Ioo",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_betaPDFReal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_betaPDFReal",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaWeight": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.betaWeight",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_norm_lt_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_norm_lt_one",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_multiples_prefix._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_multiples_prefix._proof_1_3",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.remainder",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_1": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": "Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrtCoeff_eq_choose": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrtCoeff_eq_choose",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_complex_sqrt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_complex_sqrt",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.oddsScale_mobius": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.oddsScale_mobius",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_marginal_normalizer": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_marginal_normalizer",
+      "owner": "Conjectures.KovalevZeroFreeCoupling",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.real_half_weight_eq_inv_sqrt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.real_half_weight_eq_inv_sqrt",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_linear_comparison": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_linear_comparison",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correction_budget_lt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correction_budget_lt",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.segment_kernel_continuousOn._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.segment_kernel_continuousOn._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct_hasFPowerSeriesAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct_hasFPowerSeriesAt",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_pos",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_oddsScale": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_oddsScale",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_oddsScale_beta": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_oddsScale_beta",
+      "owner": "Conjectures.KovalevZeroFreeTransport",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_correction": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_correction",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.hasSum_formalCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.hasSum_formalCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_succ",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.segment_section_hasDerivAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.segment_section_hasDerivAt",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.mobius",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.hasSum_halfCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.hasSum_halfCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.section_one_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.section_one_ne_zero",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicand": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.radicand",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_ne_zero",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.real_choose_recurrence": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.real_choose_recurrence",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent_eq_sqrt_ratio": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.resolvent_eq_sqrt_ratio",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.formalCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.formalCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct_zero",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.cauchy_prefix_eq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.cauchy_prefix_eq",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.invSection",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_dilatedSqrtCoeff_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_dilatedSqrtCoeff_le_one",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.section_correction_identity._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.section_correction_identity._proof_1_1",
+      "owner": "Conjectures.KovalevZeroFreeAssembly",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_injOn": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_injOn",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_eq_weight": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_eq_weight",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_inv_sqrt_lt_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_inv_sqrt_lt_one",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correction_eq_choose": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correction_eq_choose",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrtCoeff.match_1": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_betaPDF": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_betaPDF",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_one_left": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_one_left",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.splitter": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.splitter",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": "Conjectures.KovalevZeroFree.halfCoeff.match_1.splitter",
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff._unsafe_rec": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff._unsafe_rec",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_oddsScale_beta": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_oddsScale_beta",
+      "owner": "Conjectures.KovalevZeroFreeTransport",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correctionRemainder": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.correctionRemainder",
+      "owner": "Conjectures.KovalevZeroFreeCorrection",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_re_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_re_nonneg",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.resolvent.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_5",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_pos",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correctionRemainder.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correctionRemainder.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeCorrection",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobiusJacobian": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.mobiusJacobian",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero",
+      "owner": "Conjectures.KovalevZeroFree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_den_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_den_pos",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.weighted_correction_norm_lt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.weighted_correction_norm_lt",
+      "owner": "Conjectures.KovalevZeroFreeFiniteAlgebra",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.oddsScale": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.oddsScale",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_mobiusJacobian": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_mobiusJacobian",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_one_sub_hasDerivAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_one_sub_hasDerivAt",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.section_correction_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.section_correction_identity",
+      "owner": "Conjectures.KovalevZeroFreeAssembly",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "ProbabilityTheory.betaPDF.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "ProbabilityTheory.betaPDF.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_diameter_algebra": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_diameter_algebra",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_re_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_re_pos",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.odds",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.resolvent",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sectionPolynomial_eq_taylor": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sectionPolynomial_eq_taylor",
+      "owner": "Conjectures.KovalevZeroFreeTaylor",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.affine_ratio_inDiameter": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.affine_ratio_inDiameter",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_norm_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_norm_le_one",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.section_one_re_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.section_one_re_pos",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_halfCoeff_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_halfCoeff_le_one",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_sqrt_sq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_sqrt_sq",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_div_re_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_div_re_pos",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.re_lt_one_of_closedDisk_ne_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.re_lt_one_of_closedDisk_ne_one",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_radicand_analyticAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_radicand_analyticAt",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.summable_norm_coeff_mul_pow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.summable_norm_coeff_mul_pow",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_radicand_hasFPowerSeriesAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_radicand_hasFPowerSeriesAt",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrtCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.sqrtCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_beta_weight._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_beta_weight._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.kovalev_conjecture._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.kovalev_conjecture._proof_1_1",
+      "owner": "Conjectures.KovalevZeroFree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_complex_eq_choose": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_complex_eq_choose",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_beta_joint_density": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_beta_joint_density",
+      "owner": "Conjectures.KovalevZeroFreeCoupling",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent_norm_lt_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.resolvent_norm_lt_one",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_triangle_reindex._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_triangle_reindex._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_resolvent": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_resolvent",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_mobius": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_mobius",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff.eq_def": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff.eq_def",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.formalCoeff.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.formalCoeff.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correction_recurrence": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correction_recurrence",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.one_add_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.one_add_ne_zero",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_one_re": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_one_re",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_sub_real_sq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_sub_real_sq",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_one_re_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_one_re_pos",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.segment_re_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.segment_re_pos",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_nonneg",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_iff_norm": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_iff_norm",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent_linear_comparison": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.resolvent_linear_comparison",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_add_one_left": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_add_one_left",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.leadingPart": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.leadingPart",
+      "owner": "Conjectures.KovalevZeroFreeFiniteAlgebra",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff._sunfold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff._sunfold",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.oddsScale_den_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.oddsScale_den_pos",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_6",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt._proof_1_1",
+      "owner": "Conjectures.KovalevZeroFreeCorrection",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_antitone": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_antitone",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sectionPolynomial": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.sectionPolynomial",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_joint_density_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_joint_density_identity",
+      "owner": "Conjectures.KovalevZeroFreeCoupling",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_weighted_correction": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_weighted_correction",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_eq_choose": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_eq_choose",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.euler_integrand_identity._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_beta_oddsScale_substitution": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_beta_oddsScale_substitution",
+      "owner": "Conjectures.KovalevZeroFreeTransport",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_multiples_prefix._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_multiples_prefix._simp_1_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt",
+      "owner": "Conjectures.KovalevZeroFreeCorrection",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_zero",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_beta_two_sub": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_beta_two_sub",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_sq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_sq",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff.match_1": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff.match_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_shift_comparison": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_shift_comparison",
+      "owner": "Conjectures.KovalevZeroFreeCorrection",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicalProduct_sq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicalProduct_sq",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_rescale._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_beta_restrict": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_beta_restrict",
+      "owner": "Conjectures.KovalevZeroFreeTransport",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicand.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicand.eq_1",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_2": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_2",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": "Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder._proof_1",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.measurable_odds": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.measurable_odds",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_triangle_reindex._proof_1_4",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_triangle_reindex": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_triangle_reindex",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_one_re_mono": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_one_re_mono",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.splitter": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.splitter",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1.splitter",
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inDiameter_norm_bounds": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inDiameter_norm_bounds",
+      "owner": "Conjectures.KovalevZeroFreeGeometry",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_coupling_normalizers": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_coupling_normalizers",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sum_multiples_prefix._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sum_multiples_prefix._proof_1_4",
+      "owner": "Conjectures.KovalevZeroFreeTaylorFinite",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_half_product._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_half_product._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeNormalization",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.section_shift_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.section_shift_le",
+      "owner": "Conjectures.KovalevZeroFreeCorrection",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_inv_sqrt_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_inv_sqrt_le_one",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_4",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.radicand_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.radicand_zero",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_one_re_pos._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_one_re_pos._proof_1_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.beta_ae_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.beta_ae_mem",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.one_sub_mobius": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.one_sub_mobius",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.remainder_eq_segment_integral": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.remainder_eq_segment_integral",
+      "owner": "Conjectures.KovalevZeroFreeSectionIntegral",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.resolvent_norm_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.resolvent_norm_le_one",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_image": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_image",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_recurrence._simp_1_5",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.rpow_mobius_algebra": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.rpow_mobius_algebra",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.hasSum_dilatedSqrtCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.hasSum_dilatedSqrtCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.integral_beta_density": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.integral_beta_density",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.dilatedSqrtCoeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Conjectures.KovalevZeroFree.dilatedSqrtCoeff",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.formalCoeff_eq_iteratedDeriv": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.formalCoeff_eq_iteratedDeriv",
+      "owner": "Conjectures.KovalevZeroFreeTaylorAnalytic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.invSection_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.invSection_succ",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.lintegral_beta_euler": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.lintegral_beta_euler",
+      "owner": "Conjectures.KovalevZeroFreeEuler",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_integral_lt_one_of_ae._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeRemainder",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.norm_sqrtCoeff_le_one": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.norm_sqrtCoeff_le_one",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.odds_oddsScale._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeComparison",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt._simp_1_7",
+      "owner": "Conjectures.KovalevZeroFreeDerivative",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_2": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_2",
+      "owner": "Conjectures.KovalevZeroFreeTaylorSeries",
+      "private_user_name": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.formalCoeff_prefix_eq_section": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.formalCoeff_prefix_eq_section",
+      "owner": "Conjectures.KovalevZeroFreeTaylor",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.mobius_oddsScale": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.mobius_oddsScale",
+      "owner": "Conjectures.KovalevZeroFreeMobius",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.betaPDFReal_mul_id._simp_1_3",
+      "owner": "Conjectures.KovalevZeroFreeBeta",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.inverse_sqrt_comparison._simp_1_2",
+      "owner": "Conjectures.KovalevZeroFreeKernel",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff_zero",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Conjectures.KovalevZeroFree.halfCoeff._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Conjectures.KovalevZeroFree.halfCoeff._proof_1",
+      "owner": "Conjectures.KovalevZeroFreeCoefficients",
+      "private_user_name": null,
+      "tag": "declaration"
+    }
+  },
+  "private_declarations": {
+    "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_1": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_1",
+    "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_1": "Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_1",
+    "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.splitter": "Conjectures.KovalevZeroFree.halfCoeff.match_1.splitter",
+    "_private.Conjectures.KovalevZeroFreeCoefficients.0.Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_2": "Conjectures.KovalevZeroFree.halfCoeff.match_1.eq_2",
+    "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.splitter": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1.splitter",
+    "_private.Conjectures.KovalevZeroFreeTaylorSeries.0.Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_2": "Conjectures.KovalevZeroFree.sqrtCoeff.match_1.eq_2"
+  },
+  "required": [
+    "Conjectures.KovalevZeroFree.halfCoeff_pos",
+    "Conjectures.KovalevZeroFree.sum_correction",
+    "Conjectures.KovalevZeroFree.sum_weighted_correction",
+    "Conjectures.KovalevZeroFree.correction_budget_lt",
+    "Conjectures.KovalevZeroFree.section_one_ne_zero",
+    "Conjectures.KovalevZeroFree.sqrt_inDiameter",
+    "Conjectures.KovalevZeroFree.inverse_sqrt_comparison",
+    "Conjectures.KovalevZeroFree.inverse_sqrt_linear_comparison",
+    "Conjectures.KovalevZeroFree.integral_beta_id",
+    "Conjectures.KovalevZeroFree.integral_beta_one_sub",
+    "Conjectures.KovalevZeroFree.remainder_norm_le_one",
+    "Conjectures.KovalevZeroFree.remainder_norm_lt_one",
+    "Conjectures.KovalevZeroFree.remainder_one",
+    "Conjectures.KovalevZeroFree.lintegral_mobius_substitution",
+    "Conjectures.KovalevZeroFree.lintegral_beta_euler",
+    "Conjectures.KovalevZeroFree.lintegral_beta_joint_density",
+    "Conjectures.KovalevZeroFree.map_oddsScale_beta",
+    "Conjectures.KovalevZeroFree.integral_oddsScale_beta",
+    "Conjectures.KovalevZeroFree.beta_resolvent_comparison",
+    "Conjectures.KovalevZeroFree.remainder_comparison",
+    "Conjectures.KovalevZeroFree.weighted_correction_norm_lt",
+    "Conjectures.KovalevZeroFree.leadingPart_norm_lower",
+    "Conjectures.KovalevZeroFree.correctionRemainder_norm_lt",
+    "Conjectures.KovalevZeroFree.halfCoeff_beta_normalizer",
+    "Conjectures.KovalevZeroFree.sqrt_mul_invSection_hasDerivAt",
+    "Conjectures.KovalevZeroFree.invSection_remainder_identity",
+    "Conjectures.KovalevZeroFree.formalCoeff_eq_iteratedDeriv",
+    "Conjectures.KovalevZeroFree.sectionPolynomial_eq_taylor",
+    "Conjectures.KovalevZeroFree.sectionPolynomial_ne_zero",
+    "Conjectures.KovalevZeroFree.taylorSection_ne_zero",
+    "Conjectures.KovalevZeroFree.kovalev_conjecture"
+  ],
+  "kind_counts": {
+    "theorem": 265,
+    "definition": 26
+  },
+  "all_owned_declarations_audited": true,
+  "exact_raw_private_visibility": true
+}
