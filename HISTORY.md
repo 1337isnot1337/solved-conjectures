@@ -4,6 +4,26 @@
 
 On 24 November 2026 the [complete Lean disproof](results/steinerberger-greedy-fourier/FORMALIZATION.md) verified an actual infinite greedy sequence whose stated weighted absolute Fourier sum is not O(log n). The four modules include direct greedy admissibility, exact Fourier recurrences, a quadratic lower bound along an unbounded family of prefixes, and the asymptotic negation. The independent source review corrected the Kritzinger citation to arXiv:2109.06298v4, Theorem 4 and Algorithm 3, page 15. The existing entry, its rank and its priority qualification are retained. The sharp limsup constant and the stronger all-initialization and all-tie-breaking assertions remain written supplements.
 
+## 2026-11-24 — Verify Coulangeon–Lazzarini’s two-shell counterexample in Lean
+
+The [Lean proof](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) constructs the full-rank discrete lattice in dimension ten, verifies the spherical second moments for squared norms 4 and 8, and proves failure at squared norm 9. The [integer-coordinate module](lean/Conjectures/CoulangeonLazzariniShells.lean) verifies the elementary arbitrary-delay family.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s mixed Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeMixedLuroth.lean) checks the source digit sets, all fifteen interval containments and the passage to the infinite expansions. It proves the stronger ordinary interval and Conjecture 2.2 on all real residues.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s large-digit Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) proved the literal pinnacle-set and peak-count inverse-descent polynomials gamma-positive for every positive size, with the original weight and center. Both source conjectures belong to one existing entry. The actual permutation/history bijection and statistic bridges, fixed-path real splitting and symmetry, and full gamma expansion are proved. All 25 project modules passed strict compilation, the all-owned axiom audit, and stock-kernel replay. Ira M. Gessel and Yan Zhuang are the original proposers; the existing proof credit to Cinna Davis and GPT-6.2 Astra and the prior-art and priority qualifications are preserved.
+
+## Rowland–Sistos Barrón conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
+
 ## Johnson's conjecture
 
 On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.

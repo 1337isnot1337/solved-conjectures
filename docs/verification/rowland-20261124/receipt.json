@@ -1,0 +1,343 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-24T17:08:29.456978+00:00",
+  "finished_at": "2026-11-24T17:09:57.512726+00:00",
+  "root": "Conjectures.RowlandSistosBarronTheorem",
+  "project_modules": [
+    "Conjectures.RowlandSistosBarronAnnihilator",
+    "Conjectures.RowlandSistosBarronCancellationCounts",
+    "Conjectures.RowlandSistosBarronCharacteristic",
+    "Conjectures.RowlandSistosBarronCoefficients",
+    "Conjectures.RowlandSistosBarronCoefficientsBasic",
+    "Conjectures.RowlandSistosBarronCoefficientsBounds",
+    "Conjectures.RowlandSistosBarronCoefficientsDegrees",
+    "Conjectures.RowlandSistosBarronCoefficientsDuality",
+    "Conjectures.RowlandSistosBarronCoefficientsExpansion",
+    "Conjectures.RowlandSistosBarronDifference",
+    "Conjectures.RowlandSistosBarronExponential",
+    "Conjectures.RowlandSistosBarronKrawtchouk",
+    "Conjectures.RowlandSistosBarronQuasipolynomial",
+    "Conjectures.RowlandSistosBarronRecurrence",
+    "Conjectures.RowlandSistosBarronSequence",
+    "Conjectures.RowlandSistosBarronSums",
+    "Conjectures.RowlandSistosBarronTheorem"
+  ],
+  "required_endpoints": [
+    "RowlandSistosBarron.isTailRecurrence_iff",
+    "RowlandSistosBarron.exponentialPolynomial_tailRecurrenceRank",
+    "RowlandSistosBarron.poweredSequence_eq_exponential_sum",
+    "RowlandSistosBarron.poweredSequence_tailRecurrenceRank",
+    "RowlandSistosBarron.integerSequence_rank_six",
+    "RowlandSistosBarron.coefficientRank_formula",
+    "RowlandSistosBarron.square_cancellation_count",
+    "RowlandSistosBarron.rankSequence_formula_div",
+    "RowlandSistosBarron.rankSequence_not_eventuallyQuasipolynomial",
+    "RowlandSistosBarron.particularRankConjecture_false",
+    "RowlandSistosBarron.rowland_sistos_barron_counterexample"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/RowlandSistosBarronCoefficientsDuality.lean": "ce016c02b5eee28fd4a0e0214db4e39b3df522cf567eecf5d2b3d1024ea4a138",
+    "lean/Conjectures/RowlandSistosBarronCoefficientsExpansion.lean": "fd1313421188dad61b8e6e7b97ac770beb3ae8eab2fbe92757de56ed9c1861f6",
+    "lean/Conjectures/RowlandSistosBarronExponential.lean": "3ae857269eec2daf7ebaaf3bedf737b7ce0c28e566ebad22d1d15a48e33f8104",
+    "lean/Conjectures/RowlandSistosBarronCancellationCounts.lean": "39383859858b2582a6c15cab7a333acae32b1097fde1b9c365dd6d6c7a2e8023",
+    "lean/Conjectures/RowlandSistosBarronDifference.lean": "839639ce4a00fbe0fae4a325275fb834d1fe4584d06f99c32adf33fbaa2ba25e",
+    "lean/Conjectures/RowlandSistosBarronKrawtchouk.lean": "5c665a8422b892fd11a65cc9eb9cc4cd95f86cdcbf331d5df3f6b2692370c75a",
+    "lean/Conjectures/RowlandSistosBarronCoefficientsBasic.lean": "e358e93ebdf6d3b5e823463096d83057a28140fd6f556dedb40121b06e6972e0",
+    "lean/Conjectures/RowlandSistosBarronSums.lean": "5935e00df9cb1b42cac04189987e7fe45b5755b1903cfc16cf3b4b53097b2422",
+    "lean/Conjectures/RowlandSistosBarronSequence.lean": "433c367a66deabb31b0bc60d430ee8443e97c1d87b1ac6eebf8ef3374d1f850a",
+    "lean/Conjectures/RowlandSistosBarronCoefficients.lean": "8f26e050e1a2f3501f4e55f6aa38375e60ff8b739ea8780b77da025d1a38414d",
+    "lean/Conjectures/RowlandSistosBarronCoefficientsBounds.lean": "ce8bac27483f9364471002f7c33d0f2ef9ade31d248b43f0c381f5859d729429",
+    "lean/Conjectures/RowlandSistosBarronCoefficientsDegrees.lean": "d78fdfc58ee1441020ed4493a96fb69b5748c3e99992b9f1fc9ebe4fc519c5c0",
+    "lean/Conjectures/RowlandSistosBarronTheorem.lean": "079c278b00543921d549a5ebec5080d5b4ae35dcd32359808758a838e058c76e",
+    "lean/Conjectures/RowlandSistosBarronQuasipolynomial.lean": "7b228842b176c64da6a274dadd44a5011fe3cee68837742bd51fb1165c6f313d",
+    "lean/Conjectures/RowlandSistosBarronRecurrence.lean": "cff8d547b755c3eb19a5b65d60f29923d4352e5a31de57146da4d38031841475",
+    "lean/Conjectures/RowlandSistosBarronAnnihilator.lean": "db6a571ad23f5421c59af8f9e566e77daba9cb1e37e6320d703ce88c60325755",
+    "lean/Conjectures/RowlandSistosBarronCharacteristic.lean": "73ca2869f162fefde1dca26293a1f93dce4f4bb169b72674b6f365426cb397c7"
+  },
+  "verification_script_sha256": {
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronDifference.olean",
+        "Conjectures/RowlandSistosBarronDifference.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronDifference.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronExponential.olean",
+        "Conjectures/RowlandSistosBarronExponential.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronExponential.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronAnnihilator.olean",
+        "Conjectures/RowlandSistosBarronAnnihilator.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronAnnihilator.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCharacteristic.olean",
+        "Conjectures/RowlandSistosBarronCharacteristic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCharacteristic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronRecurrence.olean",
+        "Conjectures/RowlandSistosBarronRecurrence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronRecurrence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCoefficientsBasic.olean",
+        "Conjectures/RowlandSistosBarronCoefficientsBasic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCoefficientsBasic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronSequence.olean",
+        "Conjectures/RowlandSistosBarronSequence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronSequence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCoefficientsExpansion.olean",
+        "Conjectures/RowlandSistosBarronCoefficientsExpansion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCoefficientsExpansion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCoefficientsBounds.olean",
+        "Conjectures/RowlandSistosBarronCoefficientsBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCoefficientsBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCoefficientsDuality.olean",
+        "Conjectures/RowlandSistosBarronCoefficientsDuality.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCoefficientsDuality.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronKrawtchouk.olean",
+        "Conjectures/RowlandSistosBarronKrawtchouk.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronKrawtchouk.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCoefficientsDegrees.olean",
+        "Conjectures/RowlandSistosBarronCoefficientsDegrees.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCoefficientsDegrees.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCancellationCounts.olean",
+        "Conjectures/RowlandSistosBarronCancellationCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCancellationCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronSums.olean",
+        "Conjectures/RowlandSistosBarronSums.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronSums.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronCoefficients.olean",
+        "Conjectures/RowlandSistosBarronCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronQuasipolynomial.olean",
+        "Conjectures/RowlandSistosBarronQuasipolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronQuasipolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/RowlandSistosBarronTheorem.olean",
+        "Conjectures/RowlandSistosBarronTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RowlandSistosBarronTheorem.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/ee2d4cb3756d/environment/rowland-complete-verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/tmp/solved-conjectures-20261124-161951/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.RowlandSistosBarronTheorem"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 286,
+    "modules": 17,
+    "private_declarations": 5,
+    "raw_declarations": 286,
+    "required": 11,
+    "tag": "passed",
+    "theorems": 261
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

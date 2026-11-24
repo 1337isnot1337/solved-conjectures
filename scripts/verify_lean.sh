@@ -8,6 +8,51 @@ modules=(
   Conjectures.SteinerbergerGreedyFourier
   Conjectures.SteinerbergerGreedyGrowth
   Conjectures.SteinerbergerGreedy
+  Conjectures.CoulangeonLazzariniShells
+  Conjectures.CoulangeonLazzariniRealLattice
+  Conjectures.GravgaardLeeMixedLuroth
+  Conjectures.GravgaardLeeLargeLuroth
+  Conjectures.GesselZhuangBlockOperations
+  Conjectures.GesselZhuangBlocks
+  Conjectures.GesselZhuangChoices
+  Conjectures.GesselZhuangCone
+  Conjectures.GesselZhuangGamma
+  Conjectures.GesselZhuangGammaBasic
+  Conjectures.GesselZhuangGammaRoots
+  Conjectures.GesselZhuangHistories
+  Conjectures.GesselZhuangHistoryBlocks
+  Conjectures.GesselZhuangHistoryGamma
+  Conjectures.GesselZhuangHistoryInjective
+  Conjectures.GesselZhuangHistoryPolynomial
+  Conjectures.GesselZhuangHistorySurjective
+  Conjectures.GesselZhuangPathGamma
+  Conjectures.GesselZhuangPathPolynomial
+  Conjectures.GesselZhuangPaths
+  Conjectures.GesselZhuangPermutations
+  Conjectures.GesselZhuangPolynomial
+  Conjectures.GesselZhuangRoots
+  Conjectures.GesselZhuangStatistics
+  Conjectures.GesselZhuangStatisticsHistory
+  Conjectures.GesselZhuangStatisticsInverse
+  Conjectures.GesselZhuangSymmetry
+  Conjectures.GesselZhuangTheorem
+  Conjectures.RowlandSistosBarronAnnihilator
+  Conjectures.RowlandSistosBarronCancellationCounts
+  Conjectures.RowlandSistosBarronCharacteristic
+  Conjectures.RowlandSistosBarronCoefficients
+  Conjectures.RowlandSistosBarronCoefficientsBasic
+  Conjectures.RowlandSistosBarronCoefficientsBounds
+  Conjectures.RowlandSistosBarronCoefficientsDegrees
+  Conjectures.RowlandSistosBarronCoefficientsDuality
+  Conjectures.RowlandSistosBarronCoefficientsExpansion
+  Conjectures.RowlandSistosBarronDifference
+  Conjectures.RowlandSistosBarronExponential
+  Conjectures.RowlandSistosBarronKrawtchouk
+  Conjectures.RowlandSistosBarronQuasipolynomial
+  Conjectures.RowlandSistosBarronRecurrence
+  Conjectures.RowlandSistosBarronSequence
+  Conjectures.RowlandSistosBarronSums
+  Conjectures.RowlandSistosBarronTheorem
   Conjectures.JohnsonPfaffian
   Conjectures.JohnsonPfaffianAllMatching
   Conjectures.JohnsonPfaffianCircular

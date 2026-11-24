@@ -12,6 +12,38 @@ lake env python3 ../scripts/verify_steinerberger_greedy.py
 
 The [dedicated workflow](../.github/workflows/lean-steinerberger-greedy.yml) uses that same runner on proof, registration, toolchain and verifier changes. The [original lane receipt](../results/steinerberger-greedy-fourier/verification/lane/receipt.json) preserves its three unsuccessful replay attempts and the subsequent passing single-thread replay. The publication receipt is a fresh check of the registered candidate. It does not claim the aggregate repository gate or a public-site deployment has passed; those obligations are tracked in [issue #563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+
+
+## Coulangeon–Lazzarini’s two-shell counterexample
+
+The [scoped receipt](verification/lean-coulangeon-lazzarini-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and pinned replay
+for the integer shell theorem and its full-rank real lattice realization.
+The registered endpoints include first-shell order, moment equivalence and
+the dimension-ten refutation.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-mixed-luroth-20261124/receipt.json)
+records strict compilation, an all-owned axiom audit and pinned kernel replay
+for both modules in the local closure. The source intervals and every real
+residue are covered by the registered endpoints.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and stock-kernel replay
+for `Conjectures.GravgaardLeeLargeLuroth`. The registered endpoints cover the
+source series, the witness expansions and Conjecture 2.12.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+The [complete closure receipt](verification/gessel-zhuang-20261124/receipt.json), finished 24 November 2026 at 17:30:16 UTC, records fresh strict compilation of 25 project modules, the unchanged audit of 641 declarations (479 theorems and 185 private declarations), all 17 required endpoints, and full stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur transitively. The dedicated workflow repeats the target gate. The exact finite path checker passed through size nine and is supplementary. The repository-wide gate remains separately blocked by the documented dependency-cache problem; neither hosted success nor deployment is inferred from this target receipt.
+
+## Rowland–Sistos Barrón conjecture
+
+The [complete closure receipt](verification/rowland-20261124/receipt.json), finished 24 November 2026 at 17:09:57 UTC, records 17 fresh strict module builds, the unchanged audit of 286 owned declarations (261 theorems and five private declarations), 11 required endpoints, and complete stock-kernel replay. The only transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The `lean-rowland-sistos-barron.yml` workflow reproduces the target gate. The whole-repository gate and hosted deployment remain separate. The [exact supplemental checker](verification/rowland-20261124/supplementary-check.json) was rerun through exponent 180 and supplies no assumption to the unbounded proof.
+
 ## Johnson's conjecture
 
 The [complete closure receipt](verification/johnson-20261124/receipt.json), finished 24 November 2026 at 17:06:28 UTC, records thirty fresh strict module compilations, the unchanged audit of all 1,195 owned declarations (1,006 theorems and 28 private declarations), eight required endpoints, and unchanged stock-kernel replay. It checks the full finite-tuple source statement and the general circular-product theorem. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted.

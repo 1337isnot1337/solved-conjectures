@@ -16,4 +16,4 @@ A targeted 2026-11-24 search used author and paper names, the conjecture number,
 
 The optional [height result](HEIGHT.md) was also checked: the Jacobi-product derivative is strictly negative; the two trace-free deformations give opposite fixed signs for the primal theta variation. Fixed-covolume Poisson transfers the sign to the dual, and the Mellin endpoint bounds justify differentiation at zeta argument zero.
 
-The counterexample is a written proof and does not use the supplementary script. No Lean or external review is claimed.
+The counterexample is a written proof and does not use the supplementary script. The [Lean proof](../../lean/Conjectures/CoulangeonLazzariniRealLattice.lean) checks the original refutation. No external review is claimed.
