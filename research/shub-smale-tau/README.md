@@ -56,6 +56,7 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 - [PRIME_AVERAGES.md](PRIME_AVERAGES.md): exact integer and projective-rational sieve inequalities, harmonic averages and a multiquadratic local-cover test.
 - [CIRCUIT_HISTORY.md](CIRCUIT_HISTORY.md): complete-history obstructions, explicitly conditional square compression, real power comparisons and simultaneous Galois selection.
 - [INVERSE_TESTS.md](INVERSE_TESTS.md): positive-characteristic exact inverses, unknown multiplicities, finite-prime imitations and the scope of factor extraction.
+- [ORACLE_FACTORS.md](ORACLE_FACTORS.md): low-degree factors of small arithmetic circuits with arbitrary unary polynomial gates have polynomial border complexity; ordinary compositions and factor extraction cannot supply the proposed transfer.
 - [INTEGER_SPECIALIZATIONS.md](INTEGER_SPECIALIZATIONS.md): matrix-power roots, uniform extraction of a positive factorial multiple, translations and rational Chebyshev levels.
 - [FOLD_CHAINS.md](FOLD_CHAINS.md): a charged constructive candidate, finite witnesses and a restricted lattice-based depth lower bound.
 - [GATE_COUNTS.md](GATE_COUNTS.md): a real-root tradeoff from separate gate counts, a precise arithmetic source dependency, complete-history cancellation, and the precise S-unit quantifier issue.
