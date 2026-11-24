@@ -78,6 +78,7 @@ STATUS_LABEL_SLUGS = {
     "Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture": "zhu-jacobi-stirling-hankel",
     "Sobolewski–Ulas’s binary-partition exception regularity conjecture": "sobolewski-ulas-exception-regularity",
     "Gawron–Ulas’s partition-sign nonperiodicity conjecture": "gawron-ulas-partition-signs",
+    "Steinerberger’s greedy-energy Fourier conjecture": "steinerberger-greedy-fourier",
     "Fan–Tringali’s power-monoid length-set conjecture": "fan-tringali-power-monoid-lengths",
     "Sokal’s Apéry moment threshold": "sokal-apery-moment-threshold",
     "Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture": "gessel-zhuang-pinnacle-gamma",
