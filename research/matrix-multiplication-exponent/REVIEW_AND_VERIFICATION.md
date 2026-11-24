@@ -367,3 +367,102 @@ All files in this checkpoint remain research material. Local link,
 equation-tag, fence, whitespace and Python checks are reported in the
 PR record. No Lean formalization, new matrix multiplication bound,
 hosted CI pass, or complete positive construction is claimed.
+
+
+## Quantum components and difference-operator checkpoint
+
+The audit worker proved the ordinary-rank interpolation bound and the
+private-column witnesses for the middle quantum Grassmannian component.
+Root, the constructive worker and the operator-comparison worker checked
+the cyclic-shift signs, the nonvanishing range and conciseness proof.
+Root read and ran the exact replay: all 17,975 private-column coefficient
+identities passed for k=2 in the stated sizes, together with the
+three-rectangle witnesses and cyclic counts through s=30. Conciseness
+does not identify the source with a unit tensor or compute its subrank.
+
+The equivariant channel lemma was reviewed independently by root and
+both comparison workers. The C stabilizer uses signed permutations,
+not an asserted arbitrary general-linear symmetry of copied labels.
+Root's recoverable-output bound was checked by the constructive and
+audit workers. It composes actual tensor-power reconstruction maps,
+rather than replacing the recovery hypothesis by a spectral inequality.
+The tensor-power limit is taken with all finite dimensions fixed.
+
+Root supplied the finite outside-weight scalarization argument. The
+audit worker wrote its division-ring and finite-basis proofs; the
+operator-comparison worker independently checked the shifted coefficient
+formula and evaluation at a generic Euler character. Root checked the
+bosonic-channel averaging for every positive flag degree and the scope
+of fixed global rotations. Input-controlled or output-controlled flag
+rotations are excluded from that reduction. The unrelated degeneration
+parameter is not interchanged with a skew Laurent coefficient limit.
+
+The constructive and operator-comparison workers independently derived
+the subset inverse-row identity. Root checked the column-update proof,
+Vandermonde factors and the exact k-times spectral shift. The collision
+rank and coordinate restriction were reviewed by all three workers and
+root. The finite checker passed the row/projector cases, actual
+semidynamical collision residues, exterior ranks 1, 8, 15 and 27, and the
+explicit identity submatrices. The passive-copy lower bound is confined
+to that implementation and does not apply to arbitrary flag operators.
+
+The complete shared-inverse attempt was authored by the
+operator-comparison worker. Root read both implementations and
+independently reproduced the five nonzero off-target shift coefficients,
+including the identity coefficient 34583/1260. The scalar 11-vertex
+matrix was checked at two numerical heights. The physical B flag
+transpose and the single common source index are retained throughout.
+
+The conditional-height residue proof was authored by the
+operator-comparison worker. Root independently proved the child-polynomial
+basis statement and reviewed the controlled product/inverse formulas and
+the induction giving rank binom(s-1,k-1). The audit worker independently
+reviewed all four proof sections and their source-index order. This proof concerns the explicit
+path circuit. It does not import a standard fusion identity or make the
+q-dependent residue a fixed C map. The final review record states which
+finite path and exchange checks were actually run.
+
+The audit worker supplied the tight-path recording counterexample.
+The imported genuine spectral functional is CVZ arXiv:1709.07851v3,
+Definition 3.16, Theorem 3.30 and Corollary 3.31. Root checked the
+displayed unit values and both contractions. The finite star comparison
+is credited to the existing common-centroid obstruction; it is not
+presented as a new asymptotic result.
+
+Root reopened Atalikov--Zotov arXiv:2303.02391v1 and checked the
+fundamental shifted IRF relation (1.17), gauge definitions (2.2)--(2.4),
+determinant (2.6), and semidynamical formulas (3.2), (3.19). The new rank
+and row identities are proved directly from those formulas. No new
+matrix multiplication exponent bound, complete positive trade, Lean
+kernel verification or hosted CI pass is claimed by this checkpoint.
+All files remain under research.
+
+
+The constructive worker supplied the columnwise scalarization refinement;
+root and the audit worker checked its Weyl and rational-difference shift
+formulas, generic evaluation and one-rank AB grouping. The independent
+Frobenius indices are explicitly excluded unless a constant rank-one
+decomposition is supplied first.
+
+The conditional-height note now also proves cancellation in the full
+natural block braid. Root checked the adjacent identity against the
+primary (1.17), the zero-weight commutation past later controlled gauges,
+the block-swap order and every stated pole exclusion. At fixed nonzero u
+and eta, all k-squared crossed dynamical factors are regular at epsilon
+zero, so every negative Laurent coefficient of the complete expression
+is zero. Fixed exterior output projections preserve that zero.
+The path replay passed exact ranks 2, 3 and 6, both 9-by-9 inverse
+products, and a zero fundamental shifted-IRF discrepancy at s=3. Its
+assertion now fails if any coefficient of that discrepancy is nonzero.
+
+Root reviewed the audit worker's completed Latin-square value using the
+general free-set partial-sum theorem and checked the cyclic Fourier
+calculation. It is recorded as a consequence of the existing theorem,
+with only the known direction of the unit bound. The stabilizer-transfer
+proof was independently reviewed by root and the operator-comparison
+worker: the commutation rank is at most ell_i minus k_i, surviving
+transfers must be scalar on the target, and the dimension budget gives
+rN/M at least sqrt(q). The operation class is defined explicitly by a
+Clifford unitary, computational-basis code projection and output Clifford
+unitary. No classification of arbitrary ancilla circuits is assumed.
+These are additional restricted failures, not a resolution of target 07.

@@ -537,6 +537,79 @@ different factors of the target. It does not assert a general
 two-party compression theorem. These exact reductions and failed
 ansatzes leave the exponent target unresolved.
 
+## Quantum sources, recoverable channels and conditional shifts
+
+[QUANTUM_GRASSMANNIAN_COMPONENTS.md](QUANTUM_GRASSMANNIAN_COMPONENTS.md)
+constructs each quantum-degree component of the Grassmannian trace-four
+source by exact Fourier interpolation. Its ordinary tensor rank is at
+most O(k) binom(s,k). An explicit middle component has full one-party
+flattenings, proved by private columns from cyclic exterior shifts.
+The middle support does not satisfy the classical low-degree condition.
+This supplies a controlled source, not a map to matrix multiplication.
+
+[EQUIVARIANT_FLAG_CHANNELS.md](EQUIVARIANT_FLAG_CHANNELS.md) allows
+successive large equivariant A/B channels on independent target factors,
+followed by an arbitrary C map. Its signed-permutation stabilizer is
+explicit. The orbit-cover proof gives actual recovery on tensor powers,
+so [RECOVERABLE_OUTPUT_CAPACITY.md](RECOVERABLE_OUTPUT_CAPACITY.md)
+extends the classical source deficits to these recoverable outputs.
+The retained product of the three channel fractions still has a fixed
+exponent loss for the quadratic and balanced classical sources. The
+quantum middle components are outside that obstruction.
+
+[FINITE_OPERATOR_WEIGHT_OBSTRUCTION.md](FINITE_OPERATOR_WEIGHT_OBSTRUCTION.md)
+proves that an exact Weyl identity with finite outside weight supports
+scalarizes, even with arbitrary middle division-ring operators. The
+resulting AB-versus-CD rank bound excludes subpolynomial support counts
+at the proposed source budget. It also excludes the specified bounded
+bosonic Pieri words, including uniform fixed flag rotations. Its finite
+flag version has a border extension with fixed supports; the abstract
+Laurent-series argument does not silently commute with another limit.
+
+The difference construction now has an exact
+[subset inverse-row identity](DIFFERENCE_PROJECTOR_IDENTITY.md),
+with the required k-times spectral shift and a shifted-projector
+product. [IRF_SHARED_INVERSE_FAILURE.md](IRF_SHARED_INVERSE_FAILURE.md)
+prints one complete legal completion and its nonzero rational residual.
+Thus the ordinary matrix inverse sums cannot be substituted for the
+single shared source label. The
+[collision channel](DIFFERENCE_COLLISION_CHANNEL.md) has a proved large
+rank and an explicit coordinate restriction to a nearly full target.
+Directly copying its two passive subset labels costs too much; the
+existing noncommuting flags are outside that restricted cost bound.
+
+[SHIFTED_PATH_RESIDUE.md](SHIFTED_PATH_RESIDUE.md) gives a distinct
+positive rank calculation. Conditional prefix heights make all k inverse
+gauge poles survive exterior projection, with rank binom(s-1,k-1).
+The proof uses an exact Lagrange-polynomial basis at every next height.
+This is not standard RTT fusion, and its q-dependent residue is not a
+scalar C map. The complete natural block braid is now calculated: the
+opposite gauge cancels every negative pole, so that proposed extraction
+does not give a trade. Other semidynamical completions still require a
+complete six-index local source identity.
+
+[TIGHT_PATH_CONTEXT_FAILURE.md](TIGHT_PATH_CONTEXT_FAILURE.md) records
+an actual normalized quantum point where tight path contraction becomes
+strict after a coherent record is added. The lost factor is exactly the
+CD wire value, so the required correctly charged geodesic inequality is
+neither proved nor contradicted. Its one-copy star obstruction is
+explicitly a reformulation of the existing centroid argument.
+
+The [columnwise weight bound](COLUMNWISE_OPERATOR_WEIGHT_BOUND.md)
+sharpens scalarization for a tagged unit: supports are counted separately
+at each shared source label. A single-shift path contributes only one
+rank-one AB factor, even when different paths have different shifts.
+Full Lax columns with many internal shifts are outside that special case.
+
+The [completed Latin-square test](PARITY_LATIN_TEST.md) has exact value
+q^(a+b+c) at a genuine geodesic tripod. Its cyclic Fourier contraction
+gives the existing direction a+b+c at least one; it supplies no reverse
+inequality. [STABILIZER_TRANSFER_OBSTRUCTION.md](STABILIZER_TRANSFER_OBSTRUCTION.md)
+proves rN/M at least sqrt(q) for the specified global Clifford/code
+projections at A, B and C, allowing any D map. The Pauli transfer count
+does not apply to arbitrary complex filters or sums of independently
+controlled Clifford branches.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -576,8 +649,19 @@ python3 check_mixed_valuation_padding.py
 python3 check_exterior_incidence_source.py
 python3 check_weyl_transfer_example.py
 python3 check_grassmannian_frobenius_source.py
+python3 check_quantum_component_witnesses.py
+python3 irf_vertex_exact_candidate.py
+python3 check_irf_shared_inverse.py
+python3 check_difference_projector_and_collision.py
+python3 check_shifted_path_residue.py
 ```
 
 The propagation-local, ordinary-partial-block, general-free-separator, mixed-padding, and Grassmannian Frobenius scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The Weyl transfer replay and the other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).
+
+The quantum-component witness replay uses only the Python standard
+library. The difference-projector, collision, shared-inverse residual
+and conditional-height path checks use exact SymPy arithmetic. These
+checks concern the printed finite identities and counterexamples; they
+do not verify the missing source-to-target equation.
