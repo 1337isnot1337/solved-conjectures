@@ -1,0 +1,62 @@
+name: Hegyvári candidate closure
+on:
+  pull_request:
+    branches: [research]
+    paths:
+      - 'lean/Conjectures/Hegyvari*.lean'
+      - 'scripts/prepare_hegyvari_tower_dependency.py'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-hegyvari-tower-candidate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-closure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+      - name: Materialize and verify the pinned tower source
+        run: |
+          set -euo pipefail
+          mkdir -p .candidate-artifacts/hegyvari-full
+          git rev-parse HEAD > .candidate-artifacts/hegyvari-full/checkout.txt
+          sha256sum scripts/prepare_hegyvari_tower_dependency.py > .candidate-artifacts/hegyvari-full/generator-sha256.txt
+          python3 scripts/prepare_hegyvari_tower_dependency.py lean | tee .candidate-artifacts/hegyvari-full/generated-sha256.txt
+      - name: Strict build, all-owned private axiom audit, and stock replay
+        run: |
+          set -euo pipefail
+          cd lean
+          lake env python3 ../scripts/verify_lean_target.py \
+            --root Conjectures.HegyvariFloorDoublingFull \
+            --require Bounty.Erdos354Formal.hegyvari_strong_complete \
+            --require Bounty.Erdos354Formal.hegyvari_indexed_tail_complete \
+            --require Bounty.Erdos354Formal.hegyvari_disjoint_nondyadic_ratios \
+            --require Bounty.Erdos354Formal.hegyvari_disjoint_odd_ratio \
+            --require Bounty.Erdos354Formal.hegyvari_odd_common_marks \
+            --require Bounty.Erdos354Formal.IsTowerNameLimit.cross_common_mark_rigid_fixed \
+            --require Bounty.Erdos354Formal.forwardTransport_of_not_symbolicallyDisjoint \
+            --require Bounty.Erdos354Formal.symbolicallyDisjoint_of_boundedZeroRuns \
+            --require HegyvariFloorDoubling.floorRays_strongComplete_of_indexed \
+            --out ../.candidate-artifacts/hegyvari-full
+      - name: Preserve verification receipt and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hegyvari-full-candidate-closure
+          path: .candidate-artifacts/hegyvari-full
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
