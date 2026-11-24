@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Fan–Tringali’s power-monoid length-set conjecture
+
+Completed the Lean proof of the original 2018 conjecture for ordinary and restricted finitary power monoids of arbitrary Dedekind-finite non-torsion monoids, together with the exact reduced-natural-number length system. The 18-module closure includes the graph construction, all no-carry divisor and factorization lifts, and a fully proved noncommutative unit normalization and monoid transfer. Strict source builds, the complete all-owned/private axiom audit and stock kernel replay passed. The existing result row and mathematical attribution are retained; this is one existing result. Survey irreducibles, multiplicities and relative cancellativity remain unformalized supplements. The dedicated verifier/workflow and exact receipts keep the scoped proof pass separate from aggregate dependency-cache and hosted deployment obligations.
+
 ## Rowland–Sistos Barrón conjecture
 
 On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.

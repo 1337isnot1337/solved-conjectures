@@ -9,6 +9,34 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FanTringali.factors_of_box,
+    `FanTringali.atomic_factorization_box_length,
+    `FanTringali.Gadget.square_impossible,
+    `FanTringali.slab_uniqueQuotient,
+    `FanTringali.slab_no_quotient_both,
+    `FanTringali.uniqueQuotient_stack,
+    `FanTringali.graph_box_divisor_iff,
+    `FanTringali.graph_uniqueQuotient,
+    `FanTringali.layered_atomic_factorization,
+    `FanTringali.layered_lengths,
+    `FanTringali.graph_lengths,
+    `FanTringali.finite_spectrum_lattice,
+    `FanTringali.radix_divisors_lift,
+    `FanTringali.radix_atom_iff,
+    `FanTringali.radix_lengths,
+    `FanTringali.finite_spectrum_nat,
+    `FanTringali.natural_length_system,
+    `FanTringali.pow_injective_of_infinitePowers,
+    `FanTringali.finset_isUnit_iff,
+    `FanTringali.restrictedAtom_iff,
+    `FanTringali.restrictedLengths_eq_powerLengths,
+    `FanTringali.normalize_two,
+    `FanTringali.normalize_atom_list,
+    `FanTringali.normalize_factorization,
+    `FanTringali.powerAtom_powerImage_iff,
+    `FanTringali.powerLengths_powerImage,
+    `FanTringali.restrictedLengths_powerImage,
+    `FanTringali.finite_spectrum_power_monoids,
     `RowlandSistosBarron.isTailRecurrence_iff,
     `RowlandSistosBarron.exponentialPolynomial_tailRecurrenceRank,
     `RowlandSistosBarron.poweredSequence_eq_exponential_sum,
@@ -10656,7 +10684,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do
