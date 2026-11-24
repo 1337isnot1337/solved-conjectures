@@ -2,7 +2,7 @@ name: Ma–Tang’s random subset-sum threshold conjecture
 on:
   pull_request:
     paths:
-      - 'lean/Conjectures/MaTangRandomSubsetSumsCore.lean'
+      - 'lean/Conjectures/MaTangRandomSubsetSums*.lean'
       - '.github/workflows/lean-ma-tang-candidate.yml'
   workflow_dispatch:
 permissions:
@@ -25,20 +25,24 @@ jobs:
       - name: Strict source compilation
         working-directory: lean
         run: |
-          lake build Conjectures.MaTangRandomSubsetSumsCore
+          lake build Conjectures.MaTangRandomSubsetSumsKernel
           lake env lean -DwarningAsError=true -Dlinter.all=false Conjectures/MaTangRandomSubsetSumsCore.lean
+          lake env lean -DwarningAsError=true -Dlinter.all=false Conjectures/MaTangRandomSubsetSumsKernel.lean
       - name: Audit all owned declarations and required endpoints
         run: |
           python3 - <<'PY'
           import sys
           sys.path.insert(0, "scripts")
           from verify_lean_candidate import audit
-          module = "Conjectures.MaTangRandomSubsetSumsCore"
+          core = "Conjectures.MaTangRandomSubsetSumsCore"
+          kernel = "Conjectures.MaTangRandomSubsetSumsKernel"
           required = ["MaTangRandomSubsetSums.exists_balanced_signs",
                       "MaTangRandomSubsetSums.exists_constant_fiber",
-                      "MaTangRandomSubsetSums.not_surjective_of_kernel_columns"]
-          audit([module], required, [module], "ma-tang-core")
+                      "MaTangRandomSubsetSums.not_surjective_of_kernel_columns",
+                      "MaTangRandomSubsetSums.kernel_basis_represents_fiber",
+                      "MaTangRandomSubsetSums.not_surjective_of_kernel_basis"]
+          audit([kernel], required, [core, kernel], "ma-tang-kernel")
           PY
       - name: Stock kernel replay of exact local import closure
         working-directory: lean
-        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.MaTangRandomSubsetSumsCore
+        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.MaTangRandomSubsetSumsKernel
