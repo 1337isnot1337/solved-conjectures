@@ -21,6 +21,8 @@ For any nonempty zero-sum interval of the resulting word, its slice in each C_i 
 
 For the weak version use the same word, built from weakly valid component orders. A nonempty zero-sum slice in a component must be a prefix: otherwise its endpoints give two equal nonempty partial sums. Its length is at least two, as each element is nonzero. Therefore each component it meets contributes both its first entry and at least one entry from its remainder. The suffix/prefix argument still forces any zero-sum interval to include the first entry of the whole word. Such intervals do not obstruct weak validity.
 
+In fact, when H is disconnected, weakly valid component orders suffice for a strong order of A. A singleton in the middle prevents every nonempty zero interval by the argument above. Otherwise there are at least two nonsingleton components. If all have total zero, each weak component order is strong. If some component has nonzero total, place one such component before the last. Any putative zero interval intersects all components and reaches the last remainder. It therefore contains the entire earlier nonzero-total component, contrary to the zero-sum slice property.
+
 In the disjoint case each nontrivial component is itself a minimal zero-sum subset, so every order of it is strong. A minimum-size obstruction to either version cannot be disconnected.
 
 ## 2. Order-independent finite witness compression
