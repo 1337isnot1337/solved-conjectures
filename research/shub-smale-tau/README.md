@@ -30,25 +30,27 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Squarefree-exponent modular root average | A short circuit can have a superpolynomial uniform-residue average of modular root counts despite having only two integer roots. |
 | Classical Shub–Smale BSS transfer, including machine constants | Superpolynomial complexity for every nonzero multiple of the consecutive-root polynomial would suffice for the uniform complex BSS separation. |
 
-The quantitative elementary bounds are
+The strongest quantitative bounds recorded here are consequences of existing theorems and algorithms:
 
 ```math
-\mu(n):=\min_{0\ne h\in\mathbb Z[x]}
-\tau\left(h(x)\prod_{j=1}^{2^n}(x-j)\right)
-\ge 1+\log_2\log_2((2^n)!)
-=n+\log_2 n+1+o(1)
+N_{\mathbb Z}(f)\le 2^{s-h_K(s)},\qquad h_K(s)=\frac{\sqrt{1+4Ks}-1}{2K},
 ```
-
-for $n\ge1$, and
 
 ```math
-\#\{a\in\mathbb Z:f(a)=0\}=O(2^s/s)
+n+\sqrt{n/K}\le\mu(n)
+:=\min_{0\ne h\in\mathbb Z[x]}\tau\left(h\prod_{j=1}^{2^n}(x-j)\right)
+\le C_\varepsilon 2^{(1/2+\varepsilon)n}.
 ```
 
-for a nonzero length-$s$ output as $s$ grows. These estimates remain far below the requested strength. No novelty is claimed for these elementary estimates or the classical BSS implication.
+Here K is an absolute constant from Risler's real additive-complexity bound. The lower bounds combine that theorem with the separately charged multiplication count; the root estimate also holds for real roots. A stronger attempted p-adic bound is retained only conditionally because an unrestricted tropical-valuation step in its cited proof fails. The upper bound reconstructs the classical block-product algorithm, including constant construction and denominator clearing. In particular every possible exponent in the full conjecture must be at least 2, as Smale already recorded in 1998. The earlier elementary factorial-divisibility estimate remains in ARITHMETIC.md. None of these bounds proves the full conjecture or the superpolynomial consecutive-root lower bound. No novelty is claimed for these theorem combinations or the classical BSS implication.
+
+The consecutive-root minimum is also equivalent up to linear circuit overhead to a charged circuit problem for polynomial representatives of the inverse of a binary-value polynomial on the Boolean cube. This handles arbitrary cofactors; converting a representative into its multilinear normal form remains an unproved additional step.
 
 ## Proofs and source scope
 
+- [GATE_COUNTS.md](GATE_COUNTS.md): a real-root tradeoff from separate gate counts, a precise arithmetic source dependency, complete-history cancellation, and the precise S-unit quantifier issue.
+- [BLOCK_PRODUCTS.md](BLOCK_PRODUCTS.md): a fully charged proof of the classical square-root upper bound, Newton multiplication, and fixed-divisor obstructions.
+- [BOOLEAN_INVERSE.md](BOOLEAN_INVERSE.md): a linear-cost equivalence for all consecutive-root multiples, exact Cauchy structure, and the unresolved Boolean quotient step.
 - [PROOF.md](PROOF.md): exact weaker target, self-contained reconstruction of its BSS consequence, factorial implication and explicit missing step.
 - [CONSECUTIVE.md](CONSECUTIVE.md): digit recursions, uniform all-cuts rank proof and finite-sampling obstructions.
 - [JETS.md](JETS.md): normalized Taylor coefficients, cancellation depth and an explicit multiplier with identical positive derivatives at every prescribed root.

@@ -40,3 +40,12 @@ The pinned Anthropic statement and proof linkage were inspected. Its validity is
 ## Second mathematical checkpoint
 
 The squarefree rank strengthening was independently derived and reviewed by three workers. The cyclotomic support proof was separately checked without importing a primitive-divisor theorem. The unit-resultant equivalence and the weighted root-selected-rank equivalence were reviewed with their zero-gate and empty-root edge cases. These equivalences expose unresolved statements; neither is presented as a new bound. The explicit jet multiplier has degree 2N−1, all roots simple and real, and exactly the prescribed N integer roots. Dividing its content preserves the masking.
+
+
+## Continued research checkpoint
+
+The algebra of the proposed 2002-based optimization was independently checked. Deeper adversarial review found an explicit failure in the cited multivariate valuation proof; the arithmetic bound was changed to conditional status before publication. The unconditional replacement uses Risler's Proposition 3.1, whose primary scanned statement and model were inspected. Three workers checked the counterexample to the separate 2003 C_p valuation claim. The charged block-product construction was independently reviewed, including fixed rational constants, padded monic division, duplicate evaluation points, and final positive denominator clearing. The inverse equivalence was separately checked in both directions; it does not assume a short Boolean-ideal membership certificate. The strict-total-positivity example was checked by a uniform determinant perturbation bound.
+
+The independent reductions and the explicitly conditional calculations have written mathematical review. The arithmetic source issue remains unresolved. The existing finite verifier remains a regression check for the earlier identities; its successful run is not a numerical verification of the imported fewnomial theorem or the new asymptotic bounds. No new Lean theorem or conjecture resolution is claimed.
+
+The continued checkpoint also passed exact finite checks of the shifted-cyclotomic Newton hull, the simple Q_2 root and parallel initial faces in the mixed-volume counterexample, every one of the 430 geometric-sum cut minors for n=2 through 4, and divided-difference identities with repeated prescribed roots and a nonconstant cofactor through N=8. These checks do not verify an asymptotic root bound. Markdown fences and local links were checked for the changed notes.
