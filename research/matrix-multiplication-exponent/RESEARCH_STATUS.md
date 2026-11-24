@@ -685,6 +685,95 @@ and uses a finite-vector rank argument; it does not count distinct
 intersection lines. Ordered products with surviving nonlinear terms
 remain outside this particular obstruction.
 
+## Coupled-source capacity, finite channels and weighted targets
+
+[COUPLED_FIRST_ORDER_SELECTOR.md](COUPLED_FIRST_ORDER_SELECTOR.md)
+gives the complete first-order Laurent map for an arbitrary coupled
+four-party source, including the actual source C/D indices and the
+positive-order term that need not vanish. Its finite polynomial flags
+have source/target dimension ratio tending to one. The
+[capacity theorem](COUPLED_FIRST_ORDER_CAPACITY.md) nevertheless bounds
+the retained C rank by
+
+```math
+\mathop{\mathrm{rank}}L
+ \le 2\sqrt{w\left(\sum_zR_z\right)
+                 \left(\sum_{b\in Q}\dim K_b\right)}.
+```
+
+Here R_z is the border rank of each base source and w is the CD-wire
+size. The theorem permits deficient coefficient spans, arbitrary dense
+C maps and a different admissible middle choice for every target
+column. Its universal D output is one actual local image of the source;
+an AC|BD flattening then bounds all outgoing C-image dimensions before
+the weighted sampling lemma is applied. The proposed parameters give
+q^{3/2+o(1)}, which is insufficient for q^{2-o(1)}. Higher coefficients
+and noncentral retained flag targets are outside this theorem.
+
+[CENTRAL_QUANTUM_SMALL_BLOCKS.md](CENTRAL_QUANTUM_SMALL_BLOCKS.md)
+splits the eight-dimensional central source into explicit blocks of
+dimensions five and three and ranks six and four. It lists the exact
+cyclotomic basis changes and quartic circuit coefficients. Its complete
+coupled operator equation retains the dense term as products of sums
+of the same local maps; that term does not provide an independently
+controlled extra unit label.
+
+[ORDERED_COHERENT_PROJECTOR.md](ORDERED_COHERENT_PROJECTOR.md) proves
+a rational Weyl projector identity and a polynomial rank-transfer
+estimate. [COHERENT_MULTIPLICATION_CHANNEL.md](COHERENT_MULTIPLICATION_CHANNEL.md)
+gives its direct finite counterpart: a multiplication pseudoinverse,
+exact boundary maps, equivariance and retained A-rank fraction tending
+to m/p. The complete coefficient includes the copied-C residual. The
+[common-image bound](COHERENT_COMMON_IMAGE_OBSTRUCTION.md) and its
+[independent-Y extension](INDEPENDENT_Y_CAPACITY.md) prove retained
+C rank at most r w in their stated linear-Y classes. The latter allows
+different X-only A images and noncommuting X-only flavour operators.
+
+[MIXED_Y_DOUBLE_CHANNEL_CAPACITY.md](MIXED_Y_DOUBLE_CHANNEL_CAPACITY.md)
+constructs the exact finite complementary Y channel and retains the
+full ordered double-channel residual. Constants and degree-one harmonic
+Y vectors prove the same r w C-rank bound for a common Y frame, even
+with arbitrary distinct X-side A maps. Finite polynomial inverses are
+defined directly; their ranks are not inferred from a representation
+of the entire Weyl division ring. The one-dimensional example records
+why that distinction matters.
+
+[DEPTH_TWO_SHEAR_COEFFICIENTS.md](DEPTH_TWO_SHEAR_COEFFICIENTS.md)
+retains every degree-two shear coefficient. In that particular
+symmetric ordering, eliminating the X-Euler residual also eliminates
+the desired scalar. The proposed right inverse has the wrong auxiliary
+orientation: the actual B factor has division rank at most the internal
+flavour dimension. These are scope-limited failures of the displayed
+words, not exponent lower bounds.
+
+[TORUS_FILTERED_WEIGHTED_TARGET.md](TORUS_FILTERED_WEIGHTED_TARGET.md)
+supplies a weaker sufficient target. An already correctly C/D-labelled
+additive exterior Casimir commutator can be filtered by s local phases
+to diagonal weighted support of density at least
+(1-1/p)L/(L+s-1). The weights need not be equal. The reviewed weighted
+support theorem recovers the full target with this density loss; in the
+sparse exterior regime the phase cost is subpolynomial. Wrong copied
+labels and multi-exchange zero-charge terms are explicitly retained as
+obligations. No legal source construction of that Casimir target is
+established.
+
+[GRAM_FRAME_COPIED_TAG_OBSTRUCTION.md](GRAM_FRAME_COPIED_TAG_OBSTRUCTION.md)
+tests one actual two-family Gram completion. Quotienting by the common
+C-plane intersection and taking differential order proves rank L at
+most Q+2H even for rational Weyl middles. The same frame fails the
+copied additive Casimir target when its principal commutator rank
+2 binom(s-1,k) binom(s-1,k-1) exceeds Q+2H. The unlabelled Gram identity
+remains true; it is not a copied-label source conversion.
+
+[CAPELLI_ROW_FLAGS_NORMAL_FORM.md](CAPELLI_ROW_FLAGS_NORMAL_FORM.md)
+gives a complete positive shared-flavour source map with both source
+flag domains counted. After local row alignment its output is exactly
+W_AD(p) W_BD(p) U_ABC(q^2) W_AB(R), with N=p r^k R. Its sparse-exterior
+consequence is the already available inequality d_AB+d_CD>=1. The
+flavour labels at C have not become the physical-row labels at D.
+This exact normal form preserves the successful conversion and the
+reason it does not prove the required reverse geodesic inequality.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -736,6 +825,10 @@ python3 check_clifford_branch_overlaps.py
 python3 check_relative_output_gauge.py
 python3 check_central_quantum_source.py
 python3 check_central_quantum_orbits.py
+python3 check_central_quantum_blocks.py
+python3 check_torus_weighted_target.py
+python3 check_gram_frame_copied_tags.py
+python3 check_capelli_row_flags.py
 ```
 
 The propagation-local, ordinary-partial-block, general-free-separator, mixed-padding, and Grassmannian Frobenius scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The Weyl transfer replay and the other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
@@ -753,3 +846,9 @@ elimination with explicit int64 bounds, and a proved characteristic-zero
 rank upper bound. The rotated variant also uses SymPy. The RTT, relative
 gauge and central quantum checks use exact SymPy arithmetic. The Pauli
 overlap replay uses binary integer arithmetic from the standard library.
+
+The additional block checker uses exact arithmetic in Q(zeta_8). The
+Gram replay uses symbolic polynomial identities, exact integer upper
+rank certificates and modular lower rank certificates. The torus and
+Capelli replays use finite integer combinatorics. None tests an
+unprovided source conversion to the copied Casimir target.
