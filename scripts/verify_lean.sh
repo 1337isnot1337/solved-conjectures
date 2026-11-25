@@ -278,6 +278,17 @@ modules=(
   Conjectures.XuZhouZeroExtension
   Conjectures.XuZhouDiameter
   Conjectures.XuZhouLaplacianFull
+  Conjectures.XuZhouCliqueDiameter
+  Conjectures.XuZhouCliqueDegrees
+  Conjectures.XuZhouSharpFamily
+  Conjectures.XuZhouSharpBlocks
+  Conjectures.XuZhouSharpPrincipal
+  Conjectures.XuZhouEmbeddingEnergy
+  Conjectures.XuZhouSharpBlockEnergy
+  Conjectures.XuZhouSharpSpectral
+  Conjectures.XuZhouLaplacianSpectralUpper
+  Conjectures.XuZhouSharpness
+  Conjectures.XuZhouLaplacianSharpness
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

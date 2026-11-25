@@ -184,7 +184,7 @@ import Conjectures.SokalAperyLegendre
 import Conjectures.SokalAperyTorus
 import Conjectures.SokalAperyMomentThreshold
 import Conjectures.EkhadZeilbergerOverlapOptimum
-import Conjectures.XuZhouLaplacianFull
+import Conjectures.XuZhouLaplacianSharpness
 import Conjectures.RevisedTanZhouCylinders
 import Conjectures.RevisedTanZhouUpper
 import Conjectures.RevisedTanZhouStopping

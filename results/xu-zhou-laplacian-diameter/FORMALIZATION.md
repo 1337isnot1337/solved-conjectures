@@ -7,8 +7,10 @@ The statement uses the actual graph diameter and the actual graph
 Laplacian. Each eigencoordinate is counted separately, so multiplicities
 and both interval endpoints are retained. The hypotheses
 `2 ≤ d`, `c ≤ d - 2`, and `d ≤ n - 2 - c` imply the source's
-redundant `max(2,c) ≤ d` condition. The separate sharpness family
-is not claimed in Lean.
+redundant `max(2,c) ≤ d` condition. Lean also verifies the infinite
+sharpness family at the minimal layer count `4*t+1` for every `t ≥ 1`.
+The written argument allows additional singleton layers on the right;
+the Lean sharpness theorem does not assert that larger family.
 
 - [Spectral reduction](../../lean/Conjectures/XuZhouSpectral.lean):
   uses the actual Hermitian matrix eigenbasis and eigenvalues, with
@@ -60,13 +62,26 @@ is not claimed in Lean.
   source cutoff. Lean bounds the cardinal of the closed-interval
   eigencoordinates by `n-d+c` without any numerical computation.
 
+- [Sharpness family](../../lean/Conjectures/XuZhouSharpness.lean):
+  uses `4*t+1` layers, with two vertices exactly at one-based positions
+  `3,7,…,4*t−1`. The actual graph has diameter `4*t` and `5*t+1`
+  vertices. The principal Laplacian on each disjoint four-vertex block
+  has energy `4*‖x‖²+b²` on an injective two-parameter family of vectors.
+  Zero extension gives a `2*t`-dimensional space of Rayleigh values at
+  least four. Together with the proved bound, this gives exactly `2*t`
+  eigenvalues in `[4, 5*t+1]`, attaining the original bound for
+  `c = t−1`.
+
 The recorded argument and its scope are in [PROOF.md](PROOF.md), with
 the written result credited to Cinna Davis. The original proposers are
 Leyou Xu and Bo Zhou. Credit to the earlier results for individual
 parameter slices, and the limits on the priority search, are unchanged.
 [Discovery and verification issue #487](https://github.com/1337isnot1337/solved-conjectures/issues/487).
 
-The [receipt](verification/receipt.json) records strict source compilation,
-the all-owned axiom audit, and pinned stock-kernel replay. Reproduce with
-`scripts/verify_lean_target.py`, root `Conjectures.XuZhouLaplacianFull`,
+The [original bound receipt](verification/receipt.json) and the
+[combined sharpness receipt](verification/sharpness/receipt.json) record
+strict compilation, the all-owned axiom audit, and pinned stock-kernel
+replay. The combined closure checks 410 owned declarations across 27
+modules and 16 named endpoints. Reproduce it with
+`scripts/verify_lean_target.py`, root `Conjectures.XuZhouLaplacianSharpness`,
 `--per-module-replay`, and the endpoints in the receipt. The aggregate gate is separate.

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify the Xu–Zhou sharpness family in Lean
+
+Lean verifies exactly `2*t` Laplacian eigenvalues in the closed interval `[4, 5*t+1]` for the graph with diameter `4*t` and `t ≥ 1` doubled layers. This attains the original upper bound for `c=t−1`. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Xu–Zhou diameter–Laplacian conjecture in Lean
 
 Lean verifies the entire original admissible parameter range. The literal clique-chain Laplacian has at most twice the layer surplus eigenvalues at least four. Completing the distance layers, retaining the exact number of vertices, and extending low eigencoordinates by zero proves the requested closed-interval count for the actual graph. The written sharpness family remains separate. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
