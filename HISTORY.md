@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify the Bernoulli-array Fourier estimate for Pomerance–Sárközy
+
+Lean checks the quantitative finite product error and the general normal
+limit for rows of non-identical Bernoulli coordinates.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Poisson difference limit for Pomerance–Sárközy
 
 Lean checks the weak limit of the exact independent Poisson difference

@@ -112,3 +112,15 @@ itself prove convergence of the absolute first moment, the
 threshold-count variance asymptotic, or an arithmetic Gaussian law.
 
 [Poisson difference limit replay](verification/poisson-difference-normal/receipt.json)
+
+## Non-identical Bernoulli array
+
+Lean verifies an explicit Fourier error for a finite row of centered,
+independent Bernoulli variables, proportional to the cube of the
+frequency and the actual total variance. It then proves convergence
+of the row characteristic functions when the scale grows and the
+scaled variance converges. This verifies a general Gaussian input
+to the stronger theorem in §4, not the limiting variance of the
+specific arithmetic statistic or its distribution.
+
+[Bernoulli-array Fourier replay](verification/bernoulli-array-fourier/receipt.json)
