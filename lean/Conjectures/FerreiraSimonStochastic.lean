@@ -31,8 +31,7 @@ theorem inverse_power_sums_strict (a : ℕ → ℝ) (p q : ℝ)
     intro i
     have h := Summable.sum_le_tsum ({i, i + 1} : Finset ℕ)
       (fun j _ => (Real.rpow_pos_of_pos (ha j) p).le) hsp
-    have hne : i ≠ i + 1 := by omega
-    rw [Finset.sum_insert (by simp [hne]), Finset.sum_singleton] at h
+    rw [Finset.sum_insert (by simp), Finset.sum_singleton] at h
     change a i ^ p + a (i + 1) ^ p ≤ S at h
     linarith [Real.rpow_pos_of_pos (ha (i + 1)) p]
   have hS : 0 < S := (Real.rpow_pos_of_pos (ha 0) p).trans (hlt 0)
