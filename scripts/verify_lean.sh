@@ -529,6 +529,10 @@ modules=(
   Conjectures.HKMEhrhartLocalCount
   Conjectures.HKMEhrhartGeometry
   Conjectures.HKMEhrhartSufficiency
+  Conjectures.HKMEhrhartConvolution
+  Conjectures.HKMEhrhartCountBridge
+  Conjectures.HKMEhrhartCountCertificate
+  Conjectures.HKMEhrhartLiteralCounts
   Conjectures.HKMEhrhartPartial
   Conjectures.FussRoots
   Conjectures.FussBlocks

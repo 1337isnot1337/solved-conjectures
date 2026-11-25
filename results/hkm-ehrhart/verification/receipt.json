@@ -1,18 +1,65 @@
 {
-  "all_owned_audit": {
-    "allowed_axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-    ],
-    "declarations": 185,
-    "modules": 6,
-    "private_declarations": 79,
-    "raw_declarations": 185,
-    "required": 11,
-    "tag": "passed",
-    "theorems": 145
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T12:14:01.857989+00:00",
+  "finished_at": "2026-11-25T12:17:24.597234+00:00",
+  "root": "Conjectures.HKMEhrhartPartial",
+  "project_modules": [
+    "Conjectures.AlexanderssonParkingExcedanceRoots",
+    "Conjectures.HKMEhrhart",
+    "Conjectures.HKMEhrhartConvolution",
+    "Conjectures.HKMEhrhartCountBridge",
+    "Conjectures.HKMEhrhartCountCertificate",
+    "Conjectures.HKMEhrhartGeometry",
+    "Conjectures.HKMEhrhartLiteralCounts",
+    "Conjectures.HKMEhrhartLocalCount",
+    "Conjectures.HKMEhrhartPartial",
+    "Conjectures.HKMEhrhartSufficiency"
+  ],
+  "required_endpoints": [
+    "HKMEhrhart.card_pairs",
+    "HKMEhrhart.hkm_lattice_mass_iff",
+    "HKMEhrhart.card_PairCell",
+    "HKMEhrhart.card_MassConfig_succ",
+    "HKMEhrhart.card_MassConfig_eq_convolutionCount",
+    "HKMEhrhart.makeConvolutionTable_correct",
+    "HKMEhrhart.cocktail_lattice_iff_pairs",
+    "HKMEhrhart.computedDiagonalLatticeCount_eq_literal",
+    "HKMEhrhart.cocktail_six_values_computed",
+    "HKMEhrhart.cocktail_six_literal_lattice_counts",
+    "HKMEhrhart.off_line_of_literal_lattice_counts"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
+    "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
+    "lean/Conjectures/HKMEhrhartConvolution.lean": "e26be9c34ca7279063ad0a5864d75171507a1a1388ac8ce0ca8f562f4934dc6d",
+    "lean/Conjectures/HKMEhrhartCountBridge.lean": "0dfca3f745974817153972c2f4c0e85796884c8a298e27138e4df55749ffdd73",
+    "lean/Conjectures/HKMEhrhartCountCertificate.lean": "817dcaee9c5092d5b39a946e3dd50edf52f3f4c47218035db9b602cc7c96f354",
+    "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
+    "lean/Conjectures/HKMEhrhartLiteralCounts.lean": "b43accf382699275f0940cd5163c53d95a792255996a61f544934885a331e1cc",
+    "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
+    "lean/Conjectures/HKMEhrhartPartial.lean": "4df6a51b924f21d291a042f03f5167ac96db7abc0fafc8a4049d4ed9a7d4a90f",
+    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251"
   },
+  "input_sha256": {
+    "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
+    "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
+    "lean/Conjectures/HKMEhrhartConvolution.lean": "e26be9c34ca7279063ad0a5864d75171507a1a1388ac8ce0ca8f562f4934dc6d",
+    "lean/Conjectures/HKMEhrhartCountBridge.lean": "0dfca3f745974817153972c2f4c0e85796884c8a298e27138e4df55749ffdd73",
+    "lean/Conjectures/HKMEhrhartCountCertificate.lean": "817dcaee9c5092d5b39a946e3dd50edf52f3f4c47218035db9b602cc7c96f354",
+    "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
+    "lean/Conjectures/HKMEhrhartLiteralCounts.lean": "b43accf382699275f0940cd5163c53d95a792255996a61f544934885a331e1cc",
+    "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
+    "lean/Conjectures/HKMEhrhartPartial.lean": "4df6a51b924f21d291a042f03f5167ac96db7abc0fafc8a4049d4ed9a7d4a90f",
+    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
   "commands": [
     {
       "command": [
@@ -92,6 +139,62 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartConvolution.olean",
+        "Conjectures/HKMEhrhartConvolution.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartConvolution.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartCountCertificate.olean",
+        "Conjectures/HKMEhrhartCountCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartCountCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartCountBridge.olean",
+        "Conjectures/HKMEhrhartCountBridge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartCountBridge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartLiteralCounts.olean",
+        "Conjectures/HKMEhrhartLiteralCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartLiteralCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
         "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartPartial.olean",
         "Conjectures/HKMEhrhartPartial.lean"
       ],
@@ -123,56 +226,21 @@
       "log": "replay.log"
     }
   ],
-  "finished_at": "2026-11-25T12:02:53.752032+00:00",
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 953,
+    "modules": 10,
+    "private_declarations": 792,
+    "raw_declarations": 953,
+    "required": 11,
+    "tag": "passed",
+    "theorems": 821
+  },
   "full_repository_gate": "not run by this target-scoped helper",
-  "input_sha256": {
-    "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
-    "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
-    "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
-    "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
-    "lean/Conjectures/HKMEhrhartPartial.lean": "942d62b7b0382a3cb06827cf41dc925b7da5f316dd7a291a4b44195ad5ae0789",
-    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251",
-    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
-    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
-    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
-    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
-    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
-  },
-  "lean_toolchain": "leanprover/lean4:v4.35.0",
-  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
-  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-  "project_modules": [
-    "Conjectures.AlexanderssonParkingExcedanceRoots",
-    "Conjectures.HKMEhrhart",
-    "Conjectures.HKMEhrhartGeometry",
-    "Conjectures.HKMEhrhartLocalCount",
-    "Conjectures.HKMEhrhartPartial",
-    "Conjectures.HKMEhrhartSufficiency"
-  ],
-  "required_endpoints": [
-    "HKMEhrhart.off_line_of_counts",
-    "HKMEhrhart.card_pairs",
-    "HKMEhrhart.multipartiteLatticePoints_signed_mass_necessary",
-    "HKMEhrhart.multipartiteEdgePolytope_add_dilates",
-    "HKMEhrhart.multipartiteEdgePolytope_mem_dilate_single_part",
-    "HKMEhrhart.hkm_support_two_of_saturated",
-    "HKMEhrhart.hkm_cross_cover_saturated",
-    "HKMEhrhart.hkmRemovePair_positiveSum",
-    "HKMEhrhart.hkmRemovePair_partAbsSum",
-    "HKMEhrhart.hkm_lattice_mass_sufficient",
-    "HKMEhrhart.hkm_lattice_mass_iff"
-  ],
-  "root": "Conjectures.HKMEhrhartPartial",
-  "schema": "target-complete-closure-verification-v1",
-  "source_sha256": {
-    "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
-    "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
-    "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
-    "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
-    "lean/Conjectures/HKMEhrhartPartial.lean": "942d62b7b0382a3cb06827cf41dc925b7da5f316dd7a291a4b44195ad5ae0789",
-    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251"
-  },
-  "started_at": "2026-11-25T12:02:03.733949+00:00",
-  "status": "PASS"
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
 }
