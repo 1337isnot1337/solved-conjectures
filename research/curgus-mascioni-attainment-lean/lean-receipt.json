@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-25",
+  "issue": 438,
+  "lean_version": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scope": "Arbitrary-degree cluster sequence, exact local factor convergence, and matching-budget decomposition. Not general attainment.",
+  "sha256": {
+    "lean/Conjectures/CurgusMascioniLocalPolynomial.lean": "989eb5d119ec93632142514fb55cdee8366fd36f4702a9ea7d4ee0d50378b285",
+    "lean/Conjectures/CurgusMascioniMatchingCut.lean": "8dc12579be78403274a421e1c63ef0987c3996c0b1789b3af27e817d54aa9c44",
+    "lean/Conjectures/CurgusMascioniCluster.lean": "2c5e9a838d407efe88456b80880b1729227db2d9f007a250183234e02c319f6d",
+    "research/curgus-mascioni-attainment-lean/TargetAudit.lean": "5e502bcb0e9ec5d4e5c1177a6509b988ef60c74d935833edbf1aae0b3bacc421"
+  },
+  "checks": {
+    "strict_compile": "passed",
+    "transitive_owned_audit": "passed",
+    "stock_kernel_replay": "3 passed",
+    "aggregate": "not run"
+  },
+  "declarations": {
+    "owned": 24,
+    "theorems": 20,
+    "private": 0,
+    "required_endpoints": 9
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}
