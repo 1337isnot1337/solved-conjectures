@@ -9,6 +9,18 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `SokalApery.apery_le_pow,
+    `SokalApery.apery_support_subset,
+    `SokalApery.momentTransform_analyticAt,
+    `SokalApery.momentTransform_hasSum,
+    `SokalApery.not_stieltjes_on_checked_parameters,
+    `SokalApery.eventually_not_stieltjes_at_quarter,
+    `SokalApery.integral_legendre_product,
+    `SokalApery.torus_critical_values,
+    `SokalApery.torus_saddle_second_derivatives,
+    `SokalApery.halfTransform_extends_of_germ,
+    `SokalApery.halfTransform_no_extension_at_lower_endpoint,
+    `SokalApery.not_stieltjes_of_torus_germ_below_quarter,
     `RevisedTanZhou.revised_tan_zhou,
     `RevisedTanZhou.mem_approxSet_iff,
     `RevisedTanZhou.prefix_Q_formula,

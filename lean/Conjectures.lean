@@ -173,6 +173,12 @@ import Conjectures.GravgaardLeeDiameterCover
 import Conjectures.GravgaardLeeDiameterGreedy
 import Conjectures.GravgaardLeeDiameterTails
 import Conjectures.GravgaardLeeDiameter
+import Conjectures.SokalAperyMoments
+import Conjectures.SokalAperyContinuation
+import Conjectures.SokalAperyEndpoint
+import Conjectures.SokalAperyLegendre
+import Conjectures.SokalAperyTorus
+import Conjectures.SokalAperyMomentThreshold
 import Conjectures.RevisedTanZhouCylinders
 import Conjectures.RevisedTanZhouUpper
 import Conjectures.RevisedTanZhouStopping

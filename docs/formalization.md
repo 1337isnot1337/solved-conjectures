@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Sokal’s Apéry moment threshold
+
+Lean excludes every parameter with 0 < x ≤ 1/40 and an open neighborhood of one quarter. It checks the moment continuation and the lower-endpoint obstruction under the torus transform identity. The identity and the saddle cusp remain unformalized. [Lean scope](../results/sokal-apery-moment-threshold/FORMALIZATION.md)
+
 ## Alexandersson’s parking-function excedance conjecture
 
 Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md)
