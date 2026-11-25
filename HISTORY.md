@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify positive Laguerre roots and strict coefficient log-concavity
+
+Lean verifies all Laguerre roots as distinct and positive, removes the
+formal moment factorization input, and proves that the signed rank
+coefficients are strictly log-concave for at least two equal colors.
+[Scope and receipts](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the literal complete-graph Laguerre formula
 
 Lean proves the weighted labeled exponential formula and formal

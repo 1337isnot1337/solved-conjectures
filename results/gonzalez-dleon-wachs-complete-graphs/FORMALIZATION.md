@@ -97,12 +97,27 @@ The proof of formal Lagrange–Bürmann uses ordinary power series,
 coefficient cancellation and formal differentiation. The
 [literal Laguerre formula](../../lean/Conjectures/WachsCompleteGraphActualLaguerre.lean)
 is now unconditional for every nonempty complete graph and every
-number of equal variables at least two. The equivalent formal moment
-formula still takes the linear factorization as an explicit input.
-Positive Laguerre roots, the probability identification, strict
-log-concavity and the real-zero consequences are outside this checkpoint,
-so the entry remains partially formalized. See the
-[full-formula receipt](verification/literal-laguerre-formula/receipt.json).
+number of equal variables at least two. See the [full-formula receipt](verification/literal-laguerre-formula/receipt.json).
+
+## Positive Laguerre rates and strict coefficient log-concavity
+
+Lean checks the Laguerre three-term recurrence, the monic normalization,
+and strict interlacing of consecutive root lists. A degree count
+identifies the lists as all the roots, and the normalization yields the
+exact factorization with distinct positive rates. This removes the
+last explicit input of the [formal moment theorem](../../lean/Conjectures/WachsCompleteGraphStrictLogConcavity.lean).
+
+Lean proves positivity and log-concavity for each formal Gamma factor
+and the exponential factor. A finite order-two minor expansion proves
+closure under convolution. The descending factorial factor then gives
+strict log-concavity of the actual signed rank coefficients for at least
+two equal colors. See the
+[positive-root receipt](verification/positive-laguerre-roots/receipt.json)
+and the [combined moment receipt](verification/positive-moments-and-log-concavity/receipt.json).
+
+The identification with actual probability measures, the exact
+real-zero count, and the one-color boundary case remain outside the
+Lean scope. The entry is still partially formalized.
 
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent

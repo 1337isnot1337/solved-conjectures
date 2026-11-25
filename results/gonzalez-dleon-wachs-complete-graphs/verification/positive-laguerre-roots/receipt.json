@@ -1,0 +1,312 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T20:09:01.444938+00:00",
+  "finished_at": "2026-11-25T20:11:08.905177+00:00",
+  "root": "Conjectures.WachsLaguerrePositiveFactors",
+  "project_modules": [
+    "Conjectures.WachsCompleteGraphCoefficientFormula",
+    "Conjectures.WachsCompleteGraphForcing",
+    "Conjectures.WachsCompleteGraphGammaFactors",
+    "Conjectures.WachsCompleteGraphGammaProduct",
+    "Conjectures.WachsCompleteGraphLaguerreNormalization",
+    "Conjectures.WachsCompleteGraphVandermonde",
+    "Conjectures.WachsLaguerreInterlaceAssemble",
+    "Conjectures.WachsLaguerreInterlaceSigns",
+    "Conjectures.WachsLaguerreMonic",
+    "Conjectures.WachsLaguerrePositiveFactors",
+    "Conjectures.WachsLaguerrePositiveRoots",
+    "Conjectures.WachsLaguerreRecurrence",
+    "Conjectures.WachsLaguerreSignIntervals",
+    "Conjectures.WachsLaguerreSuccessorIntervals"
+  ],
+  "required_endpoints": [
+    "WachsCompleteGraph.normalizedLaguerre_recurrence",
+    "WachsCompleteGraph.monicLaguerre_monic",
+    "WachsCompleteGraph.monicLaguerre_recurrence_value",
+    "WachsCompleteGraph.laguerre_next_intervals",
+    "WachsCompleteGraph.laguerre_consecutive_interlacing",
+    "WachsCompleteGraph.laguerre_positive_roots",
+    "WachsCompleteGraph.normalizedLaguerre_positive_factors",
+    "WachsCompleteGraph.laguerre_has_positive_factorization"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/WachsCompleteGraphCoefficientFormula.lean": "e85f07803b3adab116aceb686422a54ce37cd3639da592752c01c0f1b6a6c482",
+    "lean/Conjectures/WachsCompleteGraphForcing.lean": "d8902f3beb19f75ab11f1d64069ad09eb7225d5196d64e0ded47f1b3e1cd9720",
+    "lean/Conjectures/WachsCompleteGraphGammaFactors.lean": "7922fd0f90abc151d5c9136b740ed4c77fa95b2c5ca5bce8d019bc6e3fed62d4",
+    "lean/Conjectures/WachsCompleteGraphGammaProduct.lean": "a6ecf95a11565f01695e69254f151d63e55d151408b956bbb5bd2ee6a6e1b559",
+    "lean/Conjectures/WachsCompleteGraphLaguerreNormalization.lean": "57ba180b74a7d44cfa7031c8df0f8118c2d4ed86d6c9a6cc741aa2d42c19e4c4",
+    "lean/Conjectures/WachsCompleteGraphVandermonde.lean": "9e5e639008ba6543a8ab1da68d9f907df04ceecf8aa9b2e909f252baf929f3fe",
+    "lean/Conjectures/WachsLaguerreInterlaceAssemble.lean": "b163084f4f9c2fff1f52a7772cd7134f1bd0e9807a7be938f23ad6905dded970",
+    "lean/Conjectures/WachsLaguerreInterlaceSigns.lean": "7f66088a136bda9194d199e9cc09c655398da040e535494e115a995ea17e255b",
+    "lean/Conjectures/WachsLaguerreMonic.lean": "7a69d291af744520bcc9906a21df2da968b6a5f9f18efd51911331cedd8e4d5f",
+    "lean/Conjectures/WachsLaguerrePositiveFactors.lean": "8ab5983a6558e8ce0e379b1e8c9438adb4934ac60004b85a6893c51961d55f4d",
+    "lean/Conjectures/WachsLaguerrePositiveRoots.lean": "c15fa46973b87534aab432b1683aedbc7f7bfb90545cb5dc5067756a45eac201",
+    "lean/Conjectures/WachsLaguerreRecurrence.lean": "44562b01164050f8666430a8bf3f1bf70c7f10407ac9a1776df74339e07b0f9e",
+    "lean/Conjectures/WachsLaguerreSignIntervals.lean": "7f271dfd29f43e02eac4df31eab97e27ea4f1738a06eb56730876d5254744470",
+    "lean/Conjectures/WachsLaguerreSuccessorIntervals.lean": "5078298f3dfbdecc8696b5d9bb531e8f810840483003fb2a9badb2bd02d7fbdf"
+  },
+  "input_sha256": {
+    "lean/Conjectures/WachsCompleteGraphCoefficientFormula.lean": "e85f07803b3adab116aceb686422a54ce37cd3639da592752c01c0f1b6a6c482",
+    "lean/Conjectures/WachsCompleteGraphForcing.lean": "d8902f3beb19f75ab11f1d64069ad09eb7225d5196d64e0ded47f1b3e1cd9720",
+    "lean/Conjectures/WachsCompleteGraphGammaFactors.lean": "7922fd0f90abc151d5c9136b740ed4c77fa95b2c5ca5bce8d019bc6e3fed62d4",
+    "lean/Conjectures/WachsCompleteGraphGammaProduct.lean": "a6ecf95a11565f01695e69254f151d63e55d151408b956bbb5bd2ee6a6e1b559",
+    "lean/Conjectures/WachsCompleteGraphLaguerreNormalization.lean": "57ba180b74a7d44cfa7031c8df0f8118c2d4ed86d6c9a6cc741aa2d42c19e4c4",
+    "lean/Conjectures/WachsCompleteGraphVandermonde.lean": "9e5e639008ba6543a8ab1da68d9f907df04ceecf8aa9b2e909f252baf929f3fe",
+    "lean/Conjectures/WachsLaguerreInterlaceAssemble.lean": "b163084f4f9c2fff1f52a7772cd7134f1bd0e9807a7be938f23ad6905dded970",
+    "lean/Conjectures/WachsLaguerreInterlaceSigns.lean": "7f66088a136bda9194d199e9cc09c655398da040e535494e115a995ea17e255b",
+    "lean/Conjectures/WachsLaguerreMonic.lean": "7a69d291af744520bcc9906a21df2da968b6a5f9f18efd51911331cedd8e4d5f",
+    "lean/Conjectures/WachsLaguerrePositiveFactors.lean": "8ab5983a6558e8ce0e379b1e8c9438adb4934ac60004b85a6893c51961d55f4d",
+    "lean/Conjectures/WachsLaguerrePositiveRoots.lean": "c15fa46973b87534aab432b1683aedbc7f7bfb90545cb5dc5067756a45eac201",
+    "lean/Conjectures/WachsLaguerreRecurrence.lean": "44562b01164050f8666430a8bf3f1bf70c7f10407ac9a1776df74339e07b0f9e",
+    "lean/Conjectures/WachsLaguerreSignIntervals.lean": "7f271dfd29f43e02eac4df31eab97e27ea4f1738a06eb56730876d5254744470",
+    "lean/Conjectures/WachsLaguerreSuccessorIntervals.lean": "5078298f3dfbdecc8696b5d9bb531e8f810840483003fb2a9badb2bd02d7fbdf",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphVandermonde.olean",
+        "Conjectures/WachsCompleteGraphVandermonde.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphVandermonde.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphForcing.olean",
+        "Conjectures/WachsCompleteGraphForcing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphForcing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerreRecurrence.olean",
+        "Conjectures/WachsLaguerreRecurrence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerreRecurrence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerreMonic.olean",
+        "Conjectures/WachsLaguerreMonic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerreMonic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerreSignIntervals.olean",
+        "Conjectures/WachsLaguerreSignIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerreSignIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerreInterlaceSigns.olean",
+        "Conjectures/WachsLaguerreInterlaceSigns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerreInterlaceSigns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerreSuccessorIntervals.olean",
+        "Conjectures/WachsLaguerreSuccessorIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerreSuccessorIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerreInterlaceAssemble.olean",
+        "Conjectures/WachsLaguerreInterlaceAssemble.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerreInterlaceAssemble.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerrePositiveRoots.olean",
+        "Conjectures/WachsLaguerrePositiveRoots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerrePositiveRoots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphCoefficientFormula.olean",
+        "Conjectures/WachsCompleteGraphCoefficientFormula.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphCoefficientFormula.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphLaguerreNormalization.olean",
+        "Conjectures/WachsCompleteGraphLaguerreNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphLaguerreNormalization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphGammaFactors.olean",
+        "Conjectures/WachsCompleteGraphGammaFactors.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphGammaFactors.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphGammaProduct.olean",
+        "Conjectures/WachsCompleteGraphGammaProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphGammaProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsLaguerrePositiveFactors.olean",
+        "Conjectures/WachsLaguerrePositiveFactors.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsLaguerrePositiveFactors.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.WachsLaguerrePositiveFactors",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 103,
+    "modules": 14,
+    "private_declarations": 27,
+    "raw_declarations": 103,
+    "required": 8,
+    "tag": "passed",
+    "theorems": 88
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
