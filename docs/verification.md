@@ -6,7 +6,7 @@ The five-module target passed pinned strict source build, all-owned axiom audit,
 
 ## Nuttall's conjecture
 
-The pinned strict builds, all-owned axiom audits and stock replays pass for the separate first-mode and iterated-tail closures. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+The pinned strict builds, all-owned axiom audits and stock replays pass for the separate first-mode, individual-term derivative, and iterated-tail closures. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 

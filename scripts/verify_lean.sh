@@ -13,6 +13,7 @@ modules=(
   Conjectures.SternHalfPlaneRealAxis
   Conjectures.NuttallThetaKernel
   Conjectures.NuttallThetaTail
+  Conjectures.NuttallThetaTermDerivatives
   Conjectures.NuttallRepeatedTails
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting

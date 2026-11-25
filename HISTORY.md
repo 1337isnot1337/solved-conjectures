@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall derivatives of the theta summands
+
+Lean checks the polynomial recurrence, exact degree and leading coefficient for derivatives of every individual theta summand in every order. It does not differentiate the infinite sum. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall first-mode asymptotic
 
 Lean checks the exact first-term correction, a uniform exponential tail bound, the leading ratio limit, and the global double-exponential bound for derivative order zero. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
