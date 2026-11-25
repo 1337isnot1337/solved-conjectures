@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Ferreira–Simon diagonal Lean checkpoint
+
+AlexisFimeyer verifies strict monotonicity of the explicit Pollard density integral and differentiation of the Mittag–Leffler series and integral. The diagonal inequality remains conditional on the local Pollard representation. [Original PR #626](https://github.com/1337isnot1337/solved-conjectures/pull/626) · [Lean scope](results/ferreira-simon-diagonal/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall scalar tail comparison
 
 Lean verifies the scalar moment integral bound and the final scalar dominance limit. The estimates have not yet been linked to the signed determinant integrals. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
