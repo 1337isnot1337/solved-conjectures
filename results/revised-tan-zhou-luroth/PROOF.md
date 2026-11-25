@@ -141,3 +141,5 @@ same distinction. Searches for the named revised conjecture,
 the author/title/DOI, and the lower-order monotone Lüroth dimension
 statement did not uncover an earlier full resolution. This does
 not establish publication priority.
+
+The [Lean formalization](FORMALIZATION.md) proves the full revised statement. Its lower bound uses a direct nested interval construction and Hölder decoding.

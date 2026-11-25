@@ -1,5 +1,10 @@
 # Verification
 
+## Revised Tan–Zhou conjecture
+
+The [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json) covers the strict build, transitive owned-declaration audit, and stock-kernel replay of the eleven-module closure of `Conjectures.RevisedTanZhou`. The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) gives the scoped command. The new modules and endpoints are registered in the [aggregate workflow](../.github/workflows/lean.yml).
+
+
 ## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
 The five-module target passed pinned strict source build, all-owned axiom audit, and stock-kernel replay. The compact certificate and aggregate repository gate are separate. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
