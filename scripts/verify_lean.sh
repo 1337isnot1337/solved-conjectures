@@ -156,6 +156,7 @@ modules=(
   Conjectures.ShumyatskyProductCompletion
   Conjectures.ShumyatskyMultifactorLift
   Conjectures.ShumyatskySocleAssembly
+  Conjectures.ShumyatskySocleStructure
   Conjectures.ShumyatskyAbelianComplements
   Conjectures.ShumyatskyPrimeKernelLift
   Conjectures.ShumyatskyAbelianMinimalNormal
