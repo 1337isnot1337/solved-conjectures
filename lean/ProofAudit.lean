@@ -9,6 +9,37 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `MaTangCoreUpperDyadic.initial_bad,
+    `MaTangCoreUpperDyadic.child_bad,
+    `MaTangCoreUpperDyadic.failure_fraction,
+    `MaTangCoreUpperDyadic.good_terminal_is_zero,
+    `MaTangCoreUpperDyadic.upper_birthday_budget,
+    `MaTangCoreUpperDistinct.distinctWords_seven_eighths,
+    `MaTangCoreUpperDistinct.upper_distinct_success_gt_half,
+    `MaTangCoreUpperPrefixes.iid_missing_le,
+    `MaTangCoreUpperPrefixes.distinct_missing_success,
+    `MaTangCoreUpperShift.shift_second_moment,
+    `MaTangCoreUpperShift.missingCount_zero_iff,
+    `MaTangCoreUpperShift.conditioned_cover_from_initial,
+    `MaTangCoreUpperMoment.initial_bound_from_collisions,
+    `MaTangCoreUpperCollision.energy_step_sum,
+    `MaTangCoreUpperCollision.totalEnergy_bound,
+    `MaTangCoreUpperCollision.initial_occupancy_bound,
+    `MaTangCoreUpperCollision.conditioned_cover,
+    `MaTangCoreUpperUniform.filtered_subset_count,
+    `MaTangCoreUpperUniform.coveredB_spec,
+    `MaTangCoreUpperUniform.uniform_coverage_gt_half,
+    `MaTangCoreThreshold.count_after_prepend,
+    `MaTangCoreThreshold.halfCoverage_mono,
+    `MaTangCoreLeast.threshold_spec,
+    `MaTangCoreLeast.threshold_upper,
+    `MaTangCoreLeast.threshold_lower_of_witness,
+    `MaTangCoreAllDimensions.all_large_dimensions_below_half,
+    `MaTangCoreMixedThreshold.mixed_half_fails,
+    `MaTangCoreMixedThreshold.threshold_mixed_lower,
+    `MaTangLimsup.maTang_limsup,
+    `MaTangLimsup.mixed_normalized_tendsto,
+    `MaTangLimsup.mixed_refined_lower,
     `GravgaardLeeDiameter.diameter_condition,
     `GravgaardLeeDiameter.all_residues_iff,
     `GravgaardLeeDiameter.diameter_boundary_example,
@@ -11028,7 +11059,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

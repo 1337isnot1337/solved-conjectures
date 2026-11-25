@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Ma–Tang’s random subset-sum threshold conjecture
+
+Lean 4.35.0 passed the 32-module strict build, 1,514-declaration owned-axiom audit, and 32 stock replays. The original target and equation (1) are checked, not the separate bounded-error supplement. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json).
+
 ## Gravgaard–Lee’s Lüroth diameter question
 
 The [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) proves the exact positive sum hull for arbitrary finite lower digit bounds of total diameter at least one, including equality. It also proves necessity of this threshold for modulo-one coverage. The eight-module closure passed strict compilation, the complete owned-declaration axiom audit, and stock-kernel replay. See the [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json).
@@ -143,7 +147,7 @@ proofs are documented separately in the catalogue and result package.
 | Hajdu–Sárközy’s shifted-power perturbation conjecture | Complete original conjecture and general-shift symmetric-difference theorem | All exponents at least two, actual little-o counts, arbitrary nontrivial positive factor sets, and every finite modification. Eleven modules passed strict compilation, complete declaration/axiom audit, and stock replay. The weaker retained-limsup supplement remains unformalized. [Scope](../results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md). |
 | Hajdu–Sárközy’s shifted-product total primitivity conjecture | Complete original conjecture, summable-family theorem and two-variable perturbations | Every exponent pair, every nonzero shift, actual real-threshold counts and every finite modification. Twenty-four modules passed strict compilation, complete axiom audit and stock replay; thirteen modules are new. The optional extension to more than two variables is not separately formalized. [Scope](../results/hajdu-sarkozy-shifted-products/FORMALIZATION.md). |
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
-| Ma–Tang’s random subset-sum threshold conjecture | Not formalized | Proves the sharp universal second-order coefficient, with an independently audited bounded-remainder match along orders three times a power of two. |
+| Ma–Tang’s random subset-sum threshold conjecture | Complete for the original conjecture | Exact real-log limsup, the written third-log correction and convergence on the mixed orders. The separate bounded-remainder refinements remain unformalized. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json). |
 | Féray’s conjugate-power word-measure conjectures | Not formalized | Proves both cycle limits and total-variation mixing for the stated permutation word, with sharp distance asymptotic e⁻¹/(n−1). |
 | Xu–Zhou’s diameter–Laplacian conjecture | Not formalized | Proves the complete parameterized bound for the high Laplacian spectrum of a graph of given diameter, including the closed endpoint. |
 | Han’s simultaneous spherical-harmonic saturation question | Not formalized | Constructs one real orthonormal basis per degree attaining both sharp Lᵖ growth regimes for every basis vector simultaneously. |
