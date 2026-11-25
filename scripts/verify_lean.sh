@@ -106,6 +106,8 @@ modules=(
   Conjectures.PomeranceSarkozyBonferroniKernel
   Conjectures.PomeranceSarkozyCRTCheckpoint
   Conjectures.PomeranceSarkozyArithmeticTV
+  Conjectures.ShumyatskyCycleLabels
+  Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
   Conjectures.PomeranceSarkozyFiniteTotalVariation

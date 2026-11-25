@@ -1,5 +1,12 @@
 # Full formalization campaign
 
+## Shumyatsky’s conjugate prime-spectrum conjecture
+
+Partial. Lean verifies the reduction to prime-spectrum-minimal groups,
+the quotient and kernel cardinality argument, and the consistency and
+unique closure of a conjugate cycle in prescribed outer classes.
+[Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 

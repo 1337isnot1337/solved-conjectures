@@ -13,6 +13,8 @@ import Conjectures.NovelliThibonHookExtraction
 import Conjectures.NovelliThibonJacobiPerspectives
 import Conjectures.PomeranceSarkozyCRTCheckpoint
 import Conjectures.PomeranceSarkozyArithmeticTV
+import Conjectures.ShumyatskyCycleLabels
+import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional
