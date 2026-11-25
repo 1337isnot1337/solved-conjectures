@@ -13,6 +13,13 @@ python -m pip install sympy==1.14.0
 python verify.py
 ```
 
+## Lean verification
+
+Lean proves the exact all-index divided-sum recurrence and the shifted
+cutoff identity. It also checks both symbolic operator certificates.
+The coefficient evaluation bridge and the permutation-count argument
+remain. [Lean scope and receipts](FORMALIZATION.md).
+
 ## Prior work
 
 Kauers and Koutschan guessed the recurrence from enumeration data. Matsuo computed through length 300. Spahn and Zeilberger gave inclusion–exclusion methods and posed the prize. Padhi subsequently proved the existence of a recurrence for the whole directed and undirected family. For this specific operator, §6 of Padhi’s paper proves part of the required reduction and records the remaining obstruction. The accompanying repository also lists Challenge 1 as partial. A search of the authors’ pages, the OEIS entry and references, arXiv, GitHub, and exact-operator searches on November 21, 2026 found no earlier full proof. [Original authors](https://www.algebra.uni-linz.ac.at/people/mkauers/publications/kauers22.pdf) · [Sponsor’s updates](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/perms.html) · [Padhi, §§5–6](https://arxiv.org/abs/2608.11290) · [Padhi’s code and status](https://github.com/jaideepsaipadhi/zeilberger-challenges) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/218)

@@ -9,6 +9,17 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `KauersKoutschan.dividedSum_eq_pair_sum,
+    `KauersKoutschan.truncated_pair_sum,
+    `KauersKoutschan.dividedSum_add_two,
+    `KauersKoutschan.derangement_succ,
+    `KauersKoutschan.momentSum_succ,
+    `KauersKoutschanCertificate.original_even,
+    `KauersKoutschanCertificate.original_odd,
+    `KauersKoutschanCertificate.zeilberger_even,
+    `KauersKoutschanCertificate.zeilberger_odd,
+    `KauersKoutschanCertificate.original_initial,
+    `KauersKoutschanCertificate.zeilberger_initial,
     `Shumyatsky.transportLabels_returns_iff,
     `Shumyatsky.existsUnique_closingLabel_in_class,
     `Shumyatsky.PrimeSpectrumMinimal.of_surjective,

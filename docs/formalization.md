@@ -1,5 +1,14 @@
 # Full formalization campaign
 
+## Kauers–Koutschan recurrence conjecture
+
+Lean proves the all-index recurrence for the exact paired derangement
+sum and the shifted omitted-pair identity. It checks both parities of
+the symbolic order-eight and order-thirteen certificates and the four
+initial residuals on the finite-sum model. The coefficient evaluation
+bridge and literal permutation count remain outside the checked scope.
+[Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
+
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
 Partial. Lean verifies the reduction to prime-spectrum-minimal groups,
