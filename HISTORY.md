@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Identify Rossi’s face polynomials in Lean
+
+Lean counts the literal ordered partitions including the empty face, proves their Stirling-number counts, and identifies the rank polynomial and evaluated signed characteristic face sum with the Eulerian model. The rank formulation is equivalent in Conjecture 6.16. The complete finite-grid bridge remains separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Rossi’s full analytic sign grid in Lean
 
 Lean now proves the exact root multiset for the Eulerian recurrence model at every length at least 128, including the central point, both endpoint regimes, and the reflected half. The finite initial certificates and the literal characteristic-polynomial bridge remain separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
