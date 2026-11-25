@@ -29,11 +29,21 @@ Thus the inclusion-probability discrepancy is at most the reciprocal
 of the sample size, which is the finite estimate in equation (5).
 Lean also checks the pointwise truncated alternating-binomial kernel.
 
-The aggregation of these inclusion estimates into the full
-growing-window total-variation bound, the Gaussian law, second
-moment, process limits and rare deviations remain. This does not
+The [finite window comparison](../../lean/Conjectures/PomeranceSarkozyArithmeticTV.lean)
+turns those inclusion estimates into a quantitative bound for the sum
+of absolute differences of the actual arithmetic and independent atom
+probabilities (twice total variation). Lean checks the summation over
+small atoms, controls larger atoms by next-rank inclusions, and bounds
+the amplification factor by (2M+1)^R for M possible incidences and
+truncation rank R. The bound includes the explicit next-rank factorial
+remainder and the binomial multiple of the reciprocal sample size.
+
+The asymptotic specialization, Gaussian law, second moment, process
+limits and rare deviations remain. This does not
 address the separate exact collision count `F(X)`.
 
 [Strict build, all-owned audit and independent replay receipt](verification/finite-prime-tails/receipt.json)
 
 [CRT and independent residue replay](verification/literal-crt-inclusions/receipt.json)
+
+[Finite-window total-variation replay](verification/finite-window-tv/receipt.json)

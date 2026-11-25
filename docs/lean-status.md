@@ -3,10 +3,10 @@
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 
-Partial. Lean verifies the literal arithmetic count and factorial
-tails, and bounds every inclusion-probability discrepancy by the
-reciprocal sample size using actual CRT and independent residue counts.
-The total-variation aggregation and limiting statements remain.
+Partial. Lean verifies the literal arithmetic count, factorial tails,
+and the finite-window total-variation bound between the arithmetic and
+independent residue laws. Asymptotic specialization and limiting laws
+remain.
 [Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
 
@@ -239,7 +239,7 @@ proofs are documented separately in the catalogue and result package.
 | Xu–Zhou’s diameter–Laplacian conjecture | Complete for Conjecture 1.1 | Lean proves the original all-parameter bound for the actual connected simple graph and the closed interval, with eigenvalue multiplicity. It also proves attainment for unbounded `c` using `4*t+1` layers and `t` doubled layers. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md). |
 | Han’s simultaneous spherical-harmonic saturation question | Not formalized | Constructs one real orthonormal basis per degree attaining both sharp Lᵖ growth regimes for every basis vector simultaneously. |
 | Steinerberger’s small-average eigenfunction norm question | Not formalized | Refutes the proposed near-linear lower bound and constructs real spherical bases with optimal aggregate and per-mode L¹ sizes. |
-| Pomerance–Sárközy’s fluctuation conjecture | Partial | Lean verifies the exact count, finite factorial tails, and the literal CRT comparison with the independent residue model for each inclusion probability. The total-variation aggregation and limiting laws remain. [Scope and receipts](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md). |
+| Pomerance–Sárközy’s fluctuation conjecture | Partial | Lean verifies the exact count, finite factorial tails, the CRT inclusion comparison and the finite-window total-variation bound. Asymptotic specialization and limiting laws remain. [Scope and receipts](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md). |
 | Ulas’s disjoint-block square-product conjecture | Complete | Original Conjecture 4 and the stronger common-length theorem at every positive length. The nine-module strict build, owned-declaration axiom audit, and kernel replay passed. [Scope](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) · [Receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json). |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Complete | Exact Hausdorff dimension with unreduced Lüroth denominators and every lower order, including zero and infinity. Strict compilation, all-owned axiom audit, and stock-kernel replay passed. [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) · [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json). |

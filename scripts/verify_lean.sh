@@ -105,6 +105,14 @@ modules=(
   Conjectures.PomeranceSarkozyTailProbability
   Conjectures.PomeranceSarkozyBonferroniKernel
   Conjectures.PomeranceSarkozyCRTCheckpoint
+  Conjectures.PomeranceSarkozyArithmeticTV
+  Conjectures.PomeranceSarkozyAtomKernel
+  Conjectures.PomeranceSarkozyAtomLaw
+  Conjectures.PomeranceSarkozyFiniteTotalVariation
+  Conjectures.PomeranceSarkozyObservationLaws
+  Conjectures.PomeranceSarkozySubsetPairs
+  Conjectures.PomeranceSarkozyTruncationSums
+  Conjectures.PomeranceSarkozyWindowCombinatorics
   Conjectures.PomeranceSarkozyIncidenceProbabilities
   Conjectures.PomeranceSarkozyIndependentResidues
   Conjectures.PomeranceSarkozyModelIncidence
