@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Shumyatsky.exists_tree_move_representatives,
+    `Shumyatsky.exists_unselected_move_in_second_cycle,
+    `Shumyatsky.exists_two_available_moves,
+    `Shumyatsky.exists_available_move_pair_for_transitive_conjugate_perms,
     `Shumyatsky.exists_indexed_permutation_cycles,
     `Shumyatsky.moveGraph_connected,
     `Shumyatsky.cutCycleForest_acyclic,
