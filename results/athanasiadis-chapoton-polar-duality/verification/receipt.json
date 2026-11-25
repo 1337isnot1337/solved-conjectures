@@ -1,0 +1,147 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T16:03:28.603584+00:00",
+  "finished_at": "2026-11-25T16:04:02.289730+00:00",
+  "root": "Conjectures.AthanasiadisChapotonPolar",
+  "project_modules": [
+    "Conjectures.AthanasiadisChapotonChain",
+    "Conjectures.AthanasiadisChapotonGauge",
+    "Conjectures.AthanasiadisChapotonPolar",
+    "Conjectures.AthanasiadisChapotonTransfer"
+  ],
+  "required_endpoints": [
+    "AthanasiadisChapotonPolar.height_of_gaps",
+    "AthanasiadisChapotonPolar.chainMax_dual",
+    "AthanasiadisChapotonPolar.decode_encode",
+    "AthanasiadisChapotonPolar.encode_decode",
+    "AthanasiadisChapotonPolar.gauge_reversal",
+    "AthanasiadisChapotonPolar.mem_polar_dilate_iff",
+    "AthanasiadisChapotonPolar.preorderPolar_eq_original",
+    "AthanasiadisChapotonPolar.preorder_latticePoints_finite",
+    "AthanasiadisChapotonPolar.reversal_intCast",
+    "AthanasiadisChapotonPolar.preorderReversal_smul",
+    "AthanasiadisChapotonPolar.preorderReversal_image_dilate",
+    "AthanasiadisChapotonPolar.latticePointCount_dual",
+    "AthanasiadisChapotonPolar.ehrhartSeries_dual",
+    "AthanasiadisChapotonPolar.hStarSeries_dual"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/AthanasiadisChapotonChain.lean": "619912c5ec91c0aa80655275c5bd1ce6025b89ea0e2520ac8e34ea0f799a255f",
+    "lean/Conjectures/AthanasiadisChapotonGauge.lean": "b3e8aebe28e53331df8c7e88469c703734743d82bb821f5448c8dc19ff433d9f",
+    "lean/Conjectures/AthanasiadisChapotonPolar.lean": "399a30a1fe97c0a4ae51d9ab5b8dbccf1cf76030d549ca933619beca105dabb7",
+    "lean/Conjectures/AthanasiadisChapotonTransfer.lean": "2a2395764d603f3e0f9484b26145f7a799d5701c2a65598ecdf6425fac00fdd6"
+  },
+  "input_sha256": {
+    "lean/Conjectures/AthanasiadisChapotonChain.lean": "619912c5ec91c0aa80655275c5bd1ce6025b89ea0e2520ac8e34ea0f799a255f",
+    "lean/Conjectures/AthanasiadisChapotonGauge.lean": "b3e8aebe28e53331df8c7e88469c703734743d82bb821f5448c8dc19ff433d9f",
+    "lean/Conjectures/AthanasiadisChapotonPolar.lean": "399a30a1fe97c0a4ae51d9ab5b8dbccf1cf76030d549ca933619beca105dabb7",
+    "lean/Conjectures/AthanasiadisChapotonTransfer.lean": "2a2395764d603f3e0f9484b26145f7a799d5701c2a65598ecdf6425fac00fdd6",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AthanasiadisChapotonChain.olean",
+        "Conjectures/AthanasiadisChapotonChain.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AthanasiadisChapotonChain.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AthanasiadisChapotonTransfer.olean",
+        "Conjectures/AthanasiadisChapotonTransfer.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AthanasiadisChapotonTransfer.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AthanasiadisChapotonGauge.olean",
+        "Conjectures/AthanasiadisChapotonGauge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AthanasiadisChapotonGauge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AthanasiadisChapotonPolar.olean",
+        "Conjectures/AthanasiadisChapotonPolar.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AthanasiadisChapotonPolar.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "../results/athanasiadis-chapoton-polar-duality/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.AthanasiadisChapotonPolar"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 156,
+    "modules": 4,
+    "private_declarations": 29,
+    "raw_declarations": 156,
+    "required": 14,
+    "tag": "passed",
+    "theorems": 114
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "command_cwd": "lean"
+}

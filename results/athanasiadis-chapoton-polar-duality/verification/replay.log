@@ -1,0 +1,6 @@
+Replaying all 4 local project modules imported by Conjectures.AthanasiadisChapotonPolar, including that root (prefix Conjectures)
+replaying Conjectures.AthanasiadisChapotonTransfer
+replaying Conjectures.AthanasiadisChapotonChain
+replaying Conjectures.AthanasiadisChapotonGauge
+replaying Conjectures.AthanasiadisChapotonPolar
+PASS: the entire local import closure of Conjectures.AthanasiadisChapotonPolar completed the pinned kernel replay

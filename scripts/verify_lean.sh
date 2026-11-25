@@ -624,6 +624,10 @@ modules=(
   Conjectures.HKMEhrhartDegreeBridge
   Conjectures.FussRoots
   Conjectures.FussBlocks
+  Conjectures.AthanasiadisChapotonChain
+  Conjectures.AthanasiadisChapotonTransfer
+  Conjectures.AthanasiadisChapotonGauge
+  Conjectures.AthanasiadisChapotonPolar
   Conjectures.FussSlot
   Conjectures.FussFinal
   Conjectures.FussWords

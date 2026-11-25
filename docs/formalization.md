@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Athanasiadis–Chapoton’s polar preorder duality conjecture
+
+Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates have equivalent lattice-point sets, hence equal Ehrhart series and numerators. The real transfer is a positively homogeneous homeomorphism. [Lean scope](../results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md)
+
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
 Partial. Lean verifies the algebraic reduction from a certified negative alternating sign grid, including exact interval root counts and the reciprocal substitution. Lean also checks the exact two expansions at positive grid coordinates and the nearest conjugate poles. The full grid, including the center, near endpoints and reflected half, proves the exact real root split for every recurrence-model length at least 128. The literal rank sum over ordered partitions and Rossi’s evaluated characteristic face sum agree with the recurrence model. A complete finite-grid certificate for the omitted lengths is still pending. [Lean scope](../results/rossi-permutohedron-roots/FORMALIZATION.md).
