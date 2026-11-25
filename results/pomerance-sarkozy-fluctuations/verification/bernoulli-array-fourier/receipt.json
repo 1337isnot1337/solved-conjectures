@@ -1,0 +1,124 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T23:30:49.906731+00:00",
+  "finished_at": "2026-11-25T23:32:58.721984+00:00",
+  "root": "Conjectures.PomeranceSarkozyBernoulliArray",
+  "project_modules": [
+    "Conjectures.PomeranceSarkozyBernoulliArray",
+    "Conjectures.PomeranceSarkozyBernoulliCharacteristic",
+    "Conjectures.PomeranceSarkozyBernoulliProduct"
+  ],
+  "required_endpoints": [
+    "PomeranceSarkozy.centeredBernoulliFactor",
+    "PomeranceSarkozy.norm_centeredBernoulliFactor_le",
+    "PomeranceSarkozy.centeredBernoulliFactor_quadratic_error",
+    "PomeranceSarkozy.norm_prod_sub_prod_le_sum",
+    "PomeranceSarkozy.centeredBernoulliFactor_normal_error",
+    "PomeranceSarkozy.centeredBernoulliProduct_normal_error",
+    "PomeranceSarkozy.centeredBernoulliArray_charFun_tendsto"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/PomeranceSarkozyBernoulliArray.lean": "38379277695e828f9ad72e0a74e88f98e3e4bbaff932664bd3e2fd3f8f376744",
+    "lean/Conjectures/PomeranceSarkozyBernoulliCharacteristic.lean": "924be581d48b04bd28ff6c5183d8d528721481e407cafa3e73a24ff5bdc6fb61",
+    "lean/Conjectures/PomeranceSarkozyBernoulliProduct.lean": "be68d267455e0bf77def9c9db248447b3d4c6c207ff0f9fbb07859a64696d0d2"
+  },
+  "input_sha256": {
+    "lean/Conjectures/PomeranceSarkozyBernoulliArray.lean": "38379277695e828f9ad72e0a74e88f98e3e4bbaff932664bd3e2fd3f8f376744",
+    "lean/Conjectures/PomeranceSarkozyBernoulliCharacteristic.lean": "924be581d48b04bd28ff6c5183d8d528721481e407cafa3e73a24ff5bdc6fb61",
+    "lean/Conjectures/PomeranceSarkozyBernoulliProduct.lean": "be68d267455e0bf77def9c9db248447b3d4c6c207ff0f9fbb07859a64696d0d2",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyBernoulliCharacteristic.olean",
+        "Conjectures/PomeranceSarkozyBernoulliCharacteristic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyBernoulliCharacteristic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyBernoulliProduct.olean",
+        "Conjectures/PomeranceSarkozyBernoulliProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyBernoulliProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyBernoulliArray.olean",
+        "Conjectures/PomeranceSarkozyBernoulliArray.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyBernoulliArray.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.PomeranceSarkozyBernoulliArray",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 18,
+    "modules": 3,
+    "private_declarations": 11,
+    "raw_declarations": 18,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 17
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
