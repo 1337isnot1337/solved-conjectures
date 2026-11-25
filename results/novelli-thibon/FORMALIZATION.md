@@ -34,10 +34,21 @@ commutative ring, for every diagram and every finite ordered alphabet.
 No leg parameter is omitted: the formal support bound covers every
 vertical edge.
 
-The identification of the source LLT expansion (Lemma 4.2) with the
-normalized filling expansion, the Schur/Pieri extraction, and the
+The [Pieri checkpoint](../../lean/Conjectures/NovelliThibonPieriFirstMoments.lean)
+proves the determinant extraction directly with signed alternants.
+It shows that Mathlib's elementary symmetric polynomial of degree two
+starts at the vertical two-box shape and that each multiplication by
+the first power sum adds one literal Young diagram cell. The dominant
+coefficient counts precisely the corresponding diagram chains. The
+Schur extractor is the coordinate functional on the bialternant
+characterization; applying it to the normalized filling moments gives
+the row and leg factors times the diagram-chain count.
+
+The separate equivalence of these chains with literal standard tableaux
+having 2 above 1, the source LLT identification (Lemma 4.2), and the
 adjacent hook claim are not verified here. This verifies neither
 Conjecture 5.4 nor the general trace assertions.
 
 - [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
 - [Diagram and first-order replay](verification/diagram-first-order/receipt.json)
+- [Pieri and diagram-chain replay](verification/pieri-diagram-chains/receipt.json)

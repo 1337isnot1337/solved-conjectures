@@ -3,10 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean verifies the literal diagram counts and optional-edge
-normalization, and proves the simultaneous first-order formula for the
-normalized finite-alphabet filling expansion. The source LLT
-identification and Schur/hook steps remain.
+Partial. Lean verifies the normalized filling first-order formula and
+derives the Schur/Pieri first moments as counts of literal chains of
+Young diagrams. The standard-tableau and source LLT identifications,
+and the adjacent hook assertion, remain.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question
@@ -308,7 +308,7 @@ proofs are documented separately in the catalogue and result package.
 | Han–Sabag–Kostina–Hassibi's conjecture | Complete source formalization; merged-package gate pending | Lean proves the original matrix feasibility, rational witness, exact sparse infimum and all four individual assignment infima, plus the uniform gap throughout the stated open gain interval. Standalone strict source compilation, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending. |
 | López Pouso–Segura's node conjecture | Partial | Lean checks the two Legendre roots, standard weight formula, exact cubic quadrature, and the two failed inequalities; the degree-two polynomial and its derivative are connected to mathlib’s shifted Legendre polynomial. Strict source compilation, one-module kernel replay and endpoint axiom checks passed. Lean also verifies the explicit perturbation functions, derivatives, differential equations final coefficient algebra, and the deduction of the scaled limit and eventual violation from three separate factor approximations with vanishing second-order remainders. Controlled ODE and root asymptotics, the gamma-ratio expansion, those factor approximations and the full repository gate remain pending. |
 | Vishnyakova's conjecture | Complete | Lean proves the original sampled-sequence and weighted transform-class theorems for every positive degree and weight. The proof uses all finite ordered Toeplitz minors and proves both centered disks and attained exact radii. All 17 modules passed strict sources, the complete axiom audit, and stock-kernel replay. |
-| Novelli–Thibon's conjecture | Partial | Lean verifies standardization, the literal diagram counts, optional-edge normalization, and the normalized finite-alphabet first-order formula. The source LLT identification, Schur extraction, and hook assertion remain. [Scope and receipts](../results/novelli-thibon/FORMALIZATION.md). |
+| Novelli–Thibon's conjecture | Partial | Lean verifies the diagram normalization, finite filling first-order formula, and the Schur/Pieri first moments in terms of literal diagram chains. Literal tableau identification, the source LLT identification, and the adjacent hook assertion remain. [Scope and receipts](../results/novelli-thibon/FORMALIZATION.md). |
 | López Pouso–Segura's conjectures | Partial | Lean proves all three signs, strict monotonicity and exact limits conditionally on the stated finite mixture, phase ODE, endpoint, zero/weight asymptotics and two resolvent expansions. It also proves the reference kernel integral and the dominated-convergence and comparison steps linking those inputs to the limits. The Bessel identification, special-function inputs, reference Euler–Maclaurin remainder and full repository gate remain open. |
 | Simon's stable-infimum conjecture | Not formalized | Complete proposed proof of the full parameterwise convex order, including the Brownian endpoint. The independent review checks the prior Mellin transform, increasing logarithmic Lévy measures, exponential integrability and conditional Jensen argument. No numerical or finite-case inference is used. |
 | Ferreira–Simon's stochastic-order conjecture | Not formalized | Complete proposed proof for every pair of real parameters in the source interval. The Poisson-series scale and strict sequence-norm comparison give a simultaneous coupling, both endpoint limits and the associated Mittag–Leffler inequalities. Independent internal review passed. |

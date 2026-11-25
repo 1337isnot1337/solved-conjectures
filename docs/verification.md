@@ -3,10 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean verifies the literal diagram counts and optional-edge
-normalization, and proves the simultaneous first-order formula for the
-normalized finite-alphabet filling expansion. The source LLT
-identification and Schur/hook steps remain.
+Partial. Lean verifies the normalized filling first-order formula and
+derives the Schur/Pieri first moments as counts of literal chains of
+Young diagrams. The standard-tableau and source LLT identifications,
+and the adjacent hook assertion, remain.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question
