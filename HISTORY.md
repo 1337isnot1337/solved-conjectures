@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-25 — Verify Rossi’s root-count reduction in Lean
+
+Lean proves that an exact alternating negative grid gives the prescribed simple roots, using the Eulerian recurrence's degree and derivative and Rossi’s reciprocal change of variable. The two sign-grid regimes and characteristic-polynomial identification remain to be formalized. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
+
+
 ## 2026-11-25 — Prove Shumyatsky’s conjugate prime-spectrum conjecture
 
 A pair of conjugates in every finite group generates a subgroup with the full prime spectrum. The proof lifts pairs across permuted simple factors and treats fixed simple factors via almost-simple generation. [Proof and audit](results/shumyatsky-conjugate-prime-spectrum/)

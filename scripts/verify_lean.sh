@@ -293,6 +293,11 @@ modules=(
   Conjectures.TomdifCircularIndexSound
   Conjectures.TomdifCircularIndexGraph
   Conjectures.TomdifCircularIndexBounds
+  Conjectures.RossiPermutohedronSignGrid
+  Conjectures.RossiPermutohedronTransform
+  Conjectures.RossiPermutohedronReduction
+  Conjectures.RossiPermutohedronEulerianData
+  Conjectures.RossiPermutohedronEulerianDegree
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

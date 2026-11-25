@@ -1,5 +1,10 @@
 # Full formalization campaign
 
+## Rossi’s permutohedron characteristic-polynomial conjecture
+
+Partial. Lean verifies the algebraic reduction from a certified negative alternating sign grid, including exact interval root counts and the reciprocal substitution. The analytic grid, finite initial certificates, and literal characteristic-polynomial identification remain separate. [Lean scope](../results/rossi-permutohedron-roots/FORMALIZATION.md).
+
+
 ## Seven upper-half circular chromatic index certificates
 
 Partial for the combined result. Lean checks tomdif’s literal graphs at maximum degrees 9, 11, 13, 15, 17, 19 and 23. It proves the actual degrees and the real circular-index lower and upper bounds. Six bounds meet, and the degree-15 case has the stated bracket. The earlier degree families are outside this check. [Scope and review](../results/circular-index-upper-half-remaining-deltas/REVIEW.md).
