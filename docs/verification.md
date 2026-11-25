@@ -9,9 +9,10 @@ bridge, positive roots, and the probabilistic consequences remain outside the sc
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
 
-Partial. Lean checks the exact 205-box coverage and the approximation
-estimate from the Bessel-product identities. The original permutation
-count and the finite base remain outside these checks.
+Partial. Lean checks the exact 205-box coverage, the 53 base rows,
+the Bessel root bracket, and the approximation estimate. The exact
+conjecture remains conditional on the original permutation-count bridge
+and classical Bessel product data.
 [Lean scope and receipt](../results/defant-engen-miller-lassalle/FORMALIZATION.md).
 
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture

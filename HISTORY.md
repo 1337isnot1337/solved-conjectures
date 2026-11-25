@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify all Lassalle base rows and the exact conditional theorem
+
+Lean checks all 53 finite quotient rows and proves a zero in the rational
+Bessel bracket. The original conjecture reduces to the actual permutation-count
+bridge and classical Bessel product data.
+[Scope and receipts](results/defant-engen-miller-lassalle/FORMALIZATION.md).
+
 ## 2026-11-25 — Formalize the literal weighted complete-graph Möbius polynomial
 
 Lean checks the finite weighted bond order, rank and recursive Möbius

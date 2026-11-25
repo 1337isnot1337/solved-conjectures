@@ -42,9 +42,28 @@ That implication also verifies the normalized nonnegative-series tail
 and the product bound from the two power sums.
 
 The [analytic-reduction receipt](verification/analytic-reduction/receipt.json)
-does not formalize the classical Bessel product and its coefficient
-identities. The bridge from the actual permutation statistic to the
-quotient row and the finite base are also outside these two receipts. See
+checks this estimate from the stated decomposition.
+
+## All base rows and the literal conjecture
+
+Lean verifies the exact inverse-Catalan recurrence and strict inequalities
+at every internal index of all 53 base rows. The zero-order row is vacuous.
+See [the finite-base receipt](verification/finite-through-53/receipt.json).
+
+Lean also proves continuity and opposite endpoint signs for the real
+Bessel series, hence an actual zero in the stated rational interval.
+It identifies that zero as the first and checks the remaining two power-sum
+bounds conditional on the classical enumeration and reciprocal moments.
+See [the root-bracket receipt](verification/root-bracket/receipt.json).
+
+The [literal theorem](../../lean/Conjectures/LassalleLiteralConditional.lean)
+checks the original West-permutation assertion from two explicit inputs:
+the bridge from the permutation count to the Catalan quotient and the
+classical Bessel product data. No project-specific axiom is added.
+The [composition receipt](verification/literal-composition/receipt.json)
+records the owned-declaration audit and independent stock replay of the two new
+modules over four independently checked source closures. The full result
+remains partial because the two source bridges are not formalized. See
 [Singhal, Conjecture 4.1](https://arxiv.org/abs/2008.08222) for earlier
 unimodality and finite log-concavity work. The source proof and prior
 attribution remain unchanged.
