@@ -44,3 +44,5 @@ python3 results/novelli-thibon/verify.py
 ## Original source
 
 Jean-Christophe Novelli and Jean-Yves Thibon, *Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang–Baxter equation*, Journal of Combinatorial Theory, Series A 220 (2026), 106130, [DOI 10.1016/j.jcta.2025.106130](https://doi.org/10.1016/j.jcta.2025.106130); [author manuscript, arXiv:2502.09072v2](https://arxiv.org/html/2502.09072v2), Conjecture 5.7 and the final sentence following it.
+
+- [Partial Lean verification](FORMALIZATION.md)

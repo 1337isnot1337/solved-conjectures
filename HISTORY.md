@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Check Novelli–Thibon's universal finite-alphabet comparison identity
+
+Lean verifies stable standardization, the fundamental word fibers,
+and the exact weighted linear response for every finite alphabet.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Complete Lean verification of González D’León–Wachs’s equal-variable result
 
 Lean verifies the boundary color formulas, the printed three-color
