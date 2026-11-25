@@ -21,6 +21,8 @@ import Conjectures.ShumyatskyFactorAction
 import Conjectures.ShumyatskySimpleFactors
 import Conjectures.ShumyatskyWalkLabels
 import Conjectures.ShumyatskyCyclicTransport
+import Conjectures.ShumyatskyPermutationCycles
+import Conjectures.ShumyatskyCycleForest
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage

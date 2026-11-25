@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Shumyatsky.exists_indexed_permutation_cycles,
+    `Shumyatsky.moveGraph_connected,
+    `Shumyatsky.cutCycleForest_acyclic,
+    `Shumyatsky.exists_tree_containing_cut_cycles,
+    `Shumyatsky.cutCycleForest_adj_of_acyclic_supergraph,
     `Shumyatsky.cycleConjugator_step,
     `Shumyatsky.map_cycleConjugator_eq,
     `Shumyatsky.exists_factorAction_conjugator_of_cycle_partition,
