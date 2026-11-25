@@ -4,6 +4,8 @@
 
 [Lean wedge theorem](../lean/Conjectures/BraunBrueggeBicyclicWedge.lean). Gluing two connected graphs at one vertex multiplies the actual facet counts of their symmetric edge polytopes. The proof gives restriction and gluing maps on normalized polar vertices, with connectedness characterized on each factor's tight graph. The [scoped receipt](verification/lean-braun-bruegge-bicyclic-wedge-20261124/receipt.json) verifies six strict sources, 113 owned declarations and four endpoints, with stock-kernel replay. The global bicyclic bound and theta optimizer remain open in Lean.
 
+For cycles of order at least three, the [cycle count](../lean/Conjectures/BraunBrueggeBicyclicCycleCount.lean) gives the exact even-order central binomial coefficient and the odd-order product of the order and the next smaller central binomial coefficient. The proof identifies actual polar vertices with cyclic integer steps of zero sum and at most one slack edge. The [cycle receipt](verification/lean-braun-bruegge-bicyclic-cycle-20261124/receipt.json) covers nine strict sources, 186 owned declarations, seven endpoints and pinned kernel replay.
+
 ## Braun–Bruegge’s minimum facet conjecture
 
 Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean theorem](../lean/Conjectures/BraunBrueggeMinimum.lean) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)

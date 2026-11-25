@@ -1,3 +1,7 @@
+import Conjectures.BraunBrueggeBicyclicCycleGeometry
+import Conjectures.BraunBrueggeBicyclicSigns
+import Conjectures.BraunBrueggeBicyclicCycleSteps
+import Conjectures.BraunBrueggeBicyclicCycleCount
 import Conjectures.BraunBrueggeBicyclicWedge
 import Conjectures.BraunBrueggeMinimum
 import Conjectures.BraunBrueggeMinimumAlmostPerfectFaces

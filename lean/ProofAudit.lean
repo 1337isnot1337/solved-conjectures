@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.cycle_edge_card,
+    `BraunBruegge.tight_cycle_connected_iff,
+    `BraunBruegge.cyclePolarVerticesEquivSteps,
+    `BraunBruegge.cycle_facet_card_eq_steps,
+    `BraunBruegge.card_signsWithTotal_of_eq,
+    `BraunBruegge.cycle_facet_card_even,
+    `BraunBruegge.cycle_facet_card_odd,
     `BraunBruegge.wedge_connected_iff,
     `BraunBruegge.tightGraph_wedge,
     `BraunBruegge.wedgePolarVerticesEquiv,
