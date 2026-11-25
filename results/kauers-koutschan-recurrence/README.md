@@ -16,9 +16,9 @@ python verify.py
 ## Lean verification
 
 Lean proves that the exact finite sum in the written proof satisfies the
-order-eight recurrence at every index. It also verifies inclusion–exclusion
-for the actual permutations. The equality between that signed count and
-the finite sum remains. [Lean scope and receipts](FORMALIZATION.md).
+order-eight recurrence at every index. It also proves the exact signed factorial
+block expansion for the actual permutations. The generating-function
+and Schur moment steps connecting the two counts remain. [Lean scope and receipts](FORMALIZATION.md).
 
 ## Prior work
 

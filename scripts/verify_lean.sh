@@ -2780,6 +2780,12 @@ modules=(
   Conjectures.KauersKoutschanPermutationCount
   Conjectures.KauersKoutschanBlocks
   Conjectures.KauersKoutschanBlockLengths
+  Conjectures.KauersKoutschanBlockSigns
+  Conjectures.KauersKoutschanBlockOrder
+  Conjectures.KauersKoutschanOrderedRows
+  Conjectures.KauersKoutschanActualRows
+  Conjectures.KauersKoutschanRowEnumeration
+  Conjectures.KauersKoutschanSignedBlocks
   Conjectures.KauersKoutschanState
   Conjectures.KauersKoutschanFiniteRecurrence
 )

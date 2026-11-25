@@ -60,6 +60,13 @@ Lean verifies the cardinality steps and the conjugate-cycle equations
 in aadrianvv’s written contribution. The result is partially formalized.
 [Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the Kauers–Koutschan signed block expansion
+
+Lean proves the exact factorial count of legal block orders for each
+selected adjacency set, and the signed expansion of the original
+permutation count.
+[Scope and receipt](results/kauers-koutschan-recurrence/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Kauers–Koutschan finite-sum recurrence
 
 Lean proves the exact finite sum satisfies the original order-eight
