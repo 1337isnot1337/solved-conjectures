@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify the reciprocal-prime input for Pomerance–Sárközy
+
+Lean verifies the bounded-error reciprocal-prime estimate using exact
+Mangoldt counts and Abel summation.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the permutation cycles and spanning tree in Shumyatsky’s lift
 
 Lean constructs the actual indexed cycles and a spanning tree preserving

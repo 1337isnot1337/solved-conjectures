@@ -11,6 +11,8 @@ and limiting statements remain.
 
 Two supporting threshold identities are independently replayed:
 the universal band-mass bound and the exact tail-product sum.
+The prime-mean input (a uniform bounded error for the reciprocal-prime
+sum relative to log log x) is also checked.
 [Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
 
@@ -243,7 +245,7 @@ proofs are documented separately in the catalogue and result package.
 | Xu–Zhou’s diameter–Laplacian conjecture | Complete for Conjecture 1.1 | Lean proves the original all-parameter bound for the actual connected simple graph and the closed interval, with eigenvalue multiplicity. It also proves attainment for unbounded `c` using `4*t+1` layers and `t` doubled layers. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md). |
 | Han’s simultaneous spherical-harmonic saturation question | Not formalized | Constructs one real orthonormal basis per degree attaining both sharp Lᵖ growth regimes for every basis vector simultaneously. |
 | Steinerberger’s small-average eigenfunction norm question | Not formalized | Refutes the proposed near-linear lower bound and constructs real spherical bases with optimal aggregate and per-mode L¹ sizes. |
-| Pomerance–Sárközy’s fluctuation conjecture | Partial | Lean verifies the exact count, factorial tails, finite-window total variation, threshold identities, distribution replacements, and the joint Poisson offset-count law and moments. The remaining arithmetic-to-Poisson connection and limiting laws are not yet checked. [Scope and receipts](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md). |
+| Pomerance–Sárközy’s fluctuation conjecture | Partial | Lean verifies the exact count, factorial tails, finite-window total variation, threshold identities, distribution replacements, and the joint Poisson offset-count law and moments. The remaining arithmetic-to-Poisson connection and limiting laws are not yet checked. Lean also checks the supporting reciprocal-prime estimate. [Scope and receipts](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md). |
 | Ulas’s disjoint-block square-product conjecture | Complete | Original Conjecture 4 and the stronger common-length theorem at every positive length. The nine-module strict build, owned-declaration axiom audit, and kernel replay passed. [Scope](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) · [Receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json). |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Complete | Exact Hausdorff dimension with unreduced Lüroth denominators and every lower order, including zero and infinity. Strict compilation, all-owned axiom audit, and stock-kernel replay passed. [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) · [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json). |

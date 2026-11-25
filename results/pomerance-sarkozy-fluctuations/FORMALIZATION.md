@@ -86,3 +86,16 @@ indices. Neither identity assumes a local limit theorem, and neither
 establishes the Gaussian limit or the arithmetic density-one claim.
 
 [Threshold identities replay](verification/threshold-identities/receipt.json)
+
+## Reciprocal-prime input
+
+The [prime-reciprocal checkpoint](../../lean/Conjectures/PomeranceSarkozyMertensRemainder.lean)
+checks the bounded-error estimate for the prime reciprocal sum minus
+log log x, uniformly for x at least two. It starts from the finite
+Mangoldt divisor count, removes prime-power extras by a geometric
+interval bound, and proves the Abel summation formula and the explicit
+logarithmic-kernel integrals. This is a supporting prime-mean estimate
+for the existing conjecture, not a new named result or a proof of its
+arithmetic limiting law.
+
+[Reciprocal-prime estimate replay](verification/prime-reciprocal-bound/receipt.json)
