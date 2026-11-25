@@ -18,10 +18,15 @@ vertices. Summing over the *p* cyclic windows gives
 submitted colouring gives the upper bound. The bounds are equal for
 six graphs, not for the degree-15 graph.
 
-[Lean](../../lean/Conjectures/TomdifCircularIndexCertificates.lean)
-checks the seven literal finite certificates: strict order of the
-endpoint pairs, vertex and colour ranges, the attained maximum degree,
-cyclic colour separation at each vertex, and exact cross-multiplied
-density inequalities. It does not prove the bridge to the real circular
-chromatic index or formalize the three earlier constructions needed
-for the combined all-degree assertion. See the [scoped replay receipt](verification/receipt.json).
+[Lean checks the seven literal certificates](../../lean/Conjectures/TomdifCircularIndexCertificates.lean),
+including the data and exact density inequalities. It then
+[builds the actual simple graphs](../../lean/Conjectures/TomdifCircularIndexGraph.lean),
+proves the exact edge count and degree at each vertex, and constructs
+the submitted cyclic colouring on the literal graph edges.
+[The final theorem](../../lean/Conjectures/TomdifCircularIndexBounds.lean)
+proves the actual real circular chromatic index is in the required open
+interval for all seven maximum degrees. It also proves the six exact
+values and the degree-15 bracket stated in the table. The three earlier
+constructions needed for the combined all-degree assertion are outside
+this scope. See the [finite-data receipt](verification/receipt.json) and
+[real-index receipt](verification/real-index/receipt.json).

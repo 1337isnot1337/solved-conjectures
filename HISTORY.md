@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify all seven of tomdif’s real circular-index bounds in Lean
+
+Lean proves the exact maximum degree and real circular-index bounds of each submitted graph. Six indices equal `Δ+2/3`; the degree-15 graph is bracketed by `171/11` and `47/3`. The earlier degree families remain separate. [Lean scope](results/circular-index-upper-half-remaining-deltas/REVIEW.md).
+
 ## 2026-11-25 — Prove Shumyatsky’s conjugate prime-spectrum conjecture
 
 A pair of conjugates in every finite group generates a subgroup with the full prime spectrum. The proof lifts pairs across permuted simple factors and treats fixed simple factors via almost-simple generation. [Proof and audit](results/shumyatsky-conjugate-prime-spectrum/)
