@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall Hankel determinant integral
+
+Lean checks the weighted integral formula for every derivative order and gives the exact signed integral for each cumulant Hankel-matrix entry. Andréief’s identity and Vandermonde normalization give the determinant-level product integral with both reversal signs cancelled. The strict sign step is still open. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall weighted cumulant representation
 
 Lean checks the factorial moment identity and proves equivalence of the literal repeated-tail recursion with the single-integral formula at every order and every nonnegative argument. Higher determinant signs remain unformalized. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).

@@ -18,6 +18,9 @@ modules=(
   Conjectures.NuttallRepeatedTails
   Conjectures.NuttallTailCalculus
   Conjectures.NuttallTailMoment
+  Conjectures.NuttallDifferentiatedMoment
+  Conjectures.NuttallAndreief
+  Conjectures.NuttallVandermonde
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
