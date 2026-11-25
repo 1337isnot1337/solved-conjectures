@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Factor the literal weighted Möbius values over blocks
+
+Lean constructs the actual lower interval as a product of its labeled
+block intervals and proves the ordinary-fibre Möbius sum factors.
+[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Check literal one-block weighted Möbius cancellation
 
 Lean counts actual one-block extensions and groups the resulting Möbius

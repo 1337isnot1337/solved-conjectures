@@ -1,6 +1,7 @@
 import Conjectures.WachsCompleteGraphHomogeneous
 import Conjectures.WachsCompleteGraphMoebiusLaw
 import Conjectures.WachsCompleteGraphTopScope
+import Conjectures.WachsCompleteGraphFibreProduct
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional
