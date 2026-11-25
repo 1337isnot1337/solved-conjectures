@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Prove Shumyatsky’s conjugate prime-spectrum conjecture
+
+A pair of conjugates in every finite group generates a subgroup with the full prime spectrum. The proof lifts pairs across permuted simple factors and treats fixed simple factors via almost-simple generation. [Proof and audit](results/shumyatsky-conjugate-prime-spectrum/)
+
 ## 2026-11-25 — Publish tomdif’s graph-colouring and shifted-runner certificates
 
 [PR #647](https://github.com/1337isnot1337/solved-conjectures/pull/647) supplies the seven missing maximum degrees for the upper-half circular chromatic index, completing the combined coverage for all degrees at least eight. [PR #646](https://github.com/1337isnot1337/solved-conjectures/pull/646) extends the shifted-runner counterexamples through 56, leaving 57–94 outside the checked range. Both contributions are by [tomdif](https://github.com/tomdif); the exact certificates were independently replayed.

@@ -1,5 +1,9 @@
 # Verification
 
+## Shumyatsky’s conjugate prime-spectrum conjecture
+
+The [written proof](../results/shumyatsky-conjugate-prime-spectrum/PROOF.md) gives a construction for every finite group. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) records the independent check of the graph lift and the hypotheses of the cited almost-simple generation results. Lean verification is pending.
+
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
 The [original bound receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) and [combined sharpness receipt](../results/xu-zhou-laplacian-diameter/verification/sharpness/receipt.json) record strict compilation, the all-owned axiom audit, and stock-kernel replay for the full literal Laplacian and diameter argument and the family attaining the bound for every `c ≥ 0`. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).

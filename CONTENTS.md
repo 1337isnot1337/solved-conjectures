@@ -137,6 +137,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | [Pantone–Bóna’s third-largest-terminal asymptotic conjecture](results/pantone-bona-third-largest-terminal/) | Complete proof of Conjecture 6.2 for $A_{5,3}$ with exact leading constant $9\sqrt3/(16\pi)$ at scale $9^n/n^3$. The result also covers every fixed pattern length at least five. The neighboring pattern classes are separate. | Not formalized | [Proof](results/pantone-bona-third-largest-terminal/PROOF.md) · [Audit](results/pantone-bona-third-largest-terminal/AUDIT.md) · [Exact checks](results/pantone-bona-third-largest-terminal/verify.py) · [Issue #382](https://github.com/1337isnot1337/solved-conjectures/issues/382) |
 | [Pantone–Bóna’s second-smallest-terminal asymptotic conjecture](results/pantone-bona-second-smallest-terminal/) | Complete proof of Conjecture 6.1 for $A_{5,2}$ with exact leading constant $9\sqrt3/(16\pi)$ at scale $9^n/n^3$. The decreasing-band constraint supplies the sharper exponential estimate. The neighboring pattern classes are separate. | Not formalized | [Proof](results/pantone-bona-second-smallest-terminal/PROOF.md) · [Audit](results/pantone-bona-second-smallest-terminal/AUDIT.md) · [Exact checks](results/pantone-bona-second-smallest-terminal/verify.py) · [Issue #383](https://github.com/1337isnot1337/solved-conjectures/issues/383) |
 
+## Finite group generation
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Shumyatsky’s conjugate prime-spectrum conjecture](results/shumyatsky-conjugate-prime-spectrum/) | Answers Kourovka Notebook Question 17.125 affirmatively for every finite group. | Not formalized | [Proof](results/shumyatsky-conjugate-prime-spectrum/PROOF.md) · [Audit](results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) |
+
 ## Restricted permutations
 
 | Problem | Result | Formalization | Evidence |
