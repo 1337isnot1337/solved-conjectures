@@ -7,3 +7,4 @@
 - [Rare square-root deviations and their rate](DEVIATIONS.md)
 - [Independent audit and earlier work](AUDIT.md)
 - [Discovery issue #480](https://github.com/1337isnot1337/solved-conjectures/issues/480)
+- [Partial Lean verification](FORMALIZATION.md)

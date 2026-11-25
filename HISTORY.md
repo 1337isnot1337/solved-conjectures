@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Check Pomerance–Sárközy's exact finite prime tails in Lean
+
+Lean verifies the literal exceptional-offset count, threshold comparison
+and finite factorial bound using distinct prime-factor witnesses.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Novelli–Thibon's Schur determinant and hook coefficients
 
 Lean proves the actual Jacobi–Trudi/bialternant bridge, including
