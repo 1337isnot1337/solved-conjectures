@@ -28,6 +28,8 @@ The construction extends the "Family B" scheme of Section 7.3 of the circulant r
 
 ## Combined status for Δ ≥ 8
 
+The [seven additional certificates by tomdif](../circular-index-upper-half-remaining-deltas/) fill the former gaps below. Together the notes cover every maximum degree at least eight.
+
 With the two earlier results, every $`\Delta\ge8`$ except $`\Delta\in\{9,11,13,15,17,19,23\}`$ has a simple graph with maximum degree $`\Delta`$ and $`\chi'_c\in(\Delta+1/2,\Delta+1)`$:
 
 | $`\Delta\bmod4`$ | covered | source |
@@ -37,7 +39,7 @@ With the two earlier results, every $`\Delta\ge8`$ except $`\Delta\in\{9,11,13,1
 | 2 | every $`\Delta\ge10`$ | Δ ≡ 2 mod 4 note: Theorem 1 for $`\Delta\ge26`$ (proof), Proposition 2 for $`\Delta=10,14,18,22`$ (computer-certified colourings of $`K_n-tK_2`$); $`\Delta=18`$ also by Theorem 2 of the circulant result (proof) |
 | 3 | $`\Delta\ge27`$ | this note: Theorem A for $`\Delta\ge63`$ (proof), Proposition B for $`\Delta=27,\dots,59`$ (computer-certified) |
 
-**Not answered.** $`\Delta\in\{9,11,13,15,17,19,23\}`$ remain without an example. Inside this framework (forward insertion of blocks into the cyclic $`q=3`$ base with the $`k`$-family of base sets), exhaustive searches show that there is no graph of this form for $`\Delta=9,11,13,15,17,19,23`$; the mirror form of the insertion lemma, freer insertions and other denominators are not excluded. Searches for $`K_{11}-F`$ ($`\Delta=9`$) timed out. Problem 6 (connectivity) and Problem 7 (denominators $`q\ge6`$) of Mazák and Zrubák are not touched. No literature search was made beyond the sources of the earlier results; the referee checked the Mazák–Zrubák quotation against the arXiv HTML.
+**Limits of the original construction.** The listing above predates the seven additional certificates. Inside this framework (forward insertion of blocks into the cyclic $`q=3`$ base with the $`k`$-family of base sets), exhaustive searches show that there is no graph of this form for $`\Delta=9,11,13,15,17,19,23`$; the mirror form of the insertion lemma, freer insertions and other denominators are not excluded. Searches for $`K_{11}-F`$ ($`\Delta=9`$) timed out. Problem 6 (connectivity) and Problem 7 (denominators $`q\ge6`$) of Mazák and Zrubák are not touched. No literature search was made beyond the sources of the earlier results; the referee checked the Mazák–Zrubák quotation against the arXiv HTML.
 
 ## Verification
 

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Publish tomdif’s graph-colouring and shifted-runner certificates
+
+[PR #647](https://github.com/1337isnot1337/solved-conjectures/pull/647) supplies the seven missing maximum degrees for the upper-half circular chromatic index, completing the combined coverage for all degrees at least eight. [PR #646](https://github.com/1337isnot1337/solved-conjectures/pull/646) extends the shifted-runner counterexamples through 56, leaving 57–94 outside the checked range. Both contributions are by [tomdif](https://github.com/tomdif); the exact certificates were independently replayed.
+
 ## 2026-11-25 — Verify the Xu–Zhou sharpness family in Lean
 
 Lean verifies exactly `2*t` Laplacian eigenvalues in the closed interval `[4, 5*t+1]` for the graph with diameter `4*t` and `t ≥ 1` doubled layers. This attains the original upper bound for `c=t−1`. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
