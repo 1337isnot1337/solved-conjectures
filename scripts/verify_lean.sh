@@ -251,13 +251,6 @@ modules=(
   Conjectures.LassalleBesselSourceReduction
   Conjectures.LassalleBesselRealRoot
   Conjectures.LassalleBesselRealSeries
-  Conjectures.LassalleFiniteCoverage
-  Conjectures.LassalleFiniteRowBatching
-  Conjectures.LassalleFiniteRowModel
-  Conjectures.LassalleFiniteRowSoundness
-  Conjectures.LassalleFirstRootMoments
-  Conjectures.LassalleLiteralConditional
-  Conjectures.LassalleOriginalReduction
   Conjectures.LassalleSmallRows00
   Conjectures.LassalleSmallRows01
   Conjectures.LassalleSmallRows02
@@ -274,6 +267,13 @@ modules=(
   Conjectures.LassalleSmallRows13
   Conjectures.LassalleSmallRows14
   Conjectures.LassalleSmallRows15
+  Conjectures.LassalleFiniteCoverage
+  Conjectures.LassalleFiniteRowBatching
+  Conjectures.LassalleFiniteRowModel
+  Conjectures.LassalleFiniteRowSoundness
+  Conjectures.LassalleFirstRootMoments
+  Conjectures.LassalleLiteralConditional
+  Conjectures.LassalleOriginalReduction
   Conjectures.LassalleConvolutionRatio
   Conjectures.LassalleDegreeGrouping
   Conjectures.LassalleDerivativeAtIndex
