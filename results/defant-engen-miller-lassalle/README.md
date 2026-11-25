@@ -6,4 +6,4 @@
 - [Independent audit and earlier work](AUDIT.md)
 - [Discovery issue #466](https://github.com/1337isnot1337/solved-conjectures/issues/466)
 - [Exact enclosure verifier](interval_check.py)
-- [Partial Lean interval verification and receipt](FORMALIZATION.md)
+- [Partial Lean interval and analytic verification](FORMALIZATION.md)

@@ -27,9 +27,24 @@ not yet prove the full assertion about uniquely sorted permutations.
   transfers this to strict log-concavity of the integer quotient
   rows for every k ≥ 54, conditional on the written analytic estimate.
 
-The complete Bessel-product/approximation proof, the link from the
-actual permutation statistic to the quotient row, and the finite base
-of the written proof are outside this receipt. See
+## Reducing the analytic estimate to the Bessel product
+
+Lean checks the exact normalized Catalan-quotient coefficient expansion,
+its regrouping by total degree, and the two discrete Bernstein differences.
+The [stencil identity](../../lean/Conjectures/LassalleQuotientStencil.lean)
+therefore uses the actual quotient coefficients, not an approximation
+defined to match the certificate. Lean then bounds each Bernstein layer,
+verifies the convolution ratio, and sums the geometric and retained-term
+errors using the exact rational budget. This proves the stated error
+estimate from the sole analytic source decomposition specified in
+[BesselSourceDecomposition](../../lean/Conjectures/LassalleBesselSourceReduction.lean).
+That implication also verifies the normalized nonnegative-series tail
+and the product bound from the two power sums.
+
+The [analytic-reduction receipt](verification/analytic-reduction/receipt.json)
+does not formalize the classical Bessel product and its coefficient
+identities. The bridge from the actual permutation statistic to the
+quotient row and the finite base are also outside these two receipts. See
 [Singhal, Conjecture 4.1](https://arxiv.org/abs/2008.08222) for earlier
 unimodality and finite log-concavity work. The source proof and prior
 attribution remain unchanged.
