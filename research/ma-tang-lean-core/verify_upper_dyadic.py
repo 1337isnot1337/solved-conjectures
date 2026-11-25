@@ -10,7 +10,7 @@ import subprocess
 import tempfile
 
 root = Path(__file__).resolve().parents[2]
-target = "Conjectures.MaTangCoreUpperDistinct"
+target = "Conjectures.MaTangCoreUpperPrefixes"
 template = Path(__file__).with_name("audit_upper_dyadic.template")
 mods = []
 
