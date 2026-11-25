@@ -2,7 +2,7 @@
 
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
-The [scoped Lean receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) records nine strict modules, the all-owned axiom audit, and stock-kernel replay for the spectral and graph reductions and the complete tridiagonal quotient bound. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+The [scoped Lean receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay for the full literal Laplacian and diameter argument. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
 
 ## Higashitani–Kummer–Michałek conjecture
 

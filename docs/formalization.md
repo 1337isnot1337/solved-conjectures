@@ -2,7 +2,7 @@
 
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
-Partial. Lean verifies the inclusive spectral count reductions, the distance-layer clique completion, layer-surjective retained subsets of prescribed size, Laplacian quadratic monotonicity, and the finite marking budget. It also proves the inclusive nonnegative eigenvalue bound for the actual tridiagonal quotient. The lift to the full clique-chain Laplacian and the final graph inequality remain outside this checkpoint. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of every finite connected simple graph at every admissible parameter. It proves the inclusive clique-chain count, constructs the literal diameter layers, retains the prescribed cardinality, and bounds the energy after extending the low eigenspace by zero. The sharpness family is a separate written result. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 

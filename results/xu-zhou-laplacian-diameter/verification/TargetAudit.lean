@@ -1,12 +1,19 @@
+import Conjectures.XuZhouCliqueChain
 import Conjectures.XuZhouCliqueQuotient
+import Conjectures.XuZhouDiameter
 import Conjectures.XuZhouDistanceLayers
 import Conjectures.XuZhouLaplacianEnergy
+import Conjectures.XuZhouLaplacianFull
 import Conjectures.XuZhouLaplacianPartial
+import Conjectures.XuZhouLayerSums
 import Conjectures.XuZhouMarking
 import Conjectures.XuZhouQuotientEnergy
 import Conjectures.XuZhouQuotientInertia
+import Conjectures.XuZhouScaledQuotient
 import Conjectures.XuZhouSpectral
+import Conjectures.XuZhouThreshold
 import Conjectures.XuZhouTridiagonal
+import Conjectures.XuZhouZeroExtension
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 import Lean.Elab.Command
@@ -17,8 +24,8 @@ set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.XuZhouCliqueQuotient", "Conjectures.XuZhouDistanceLayers", "Conjectures.XuZhouLaplacianEnergy", "Conjectures.XuZhouLaplacianPartial", "Conjectures.XuZhouMarking", "Conjectures.XuZhouQuotientEnergy", "Conjectures.XuZhouQuotientInertia", "Conjectures.XuZhouSpectral", "Conjectures.XuZhouTridiagonal"]
-  let required : Array Name := #[`XuZhou.finrank_le_card_lt_of_strict_quadratic, `XuZhou.card_ge_le_sub_finrank, `XuZhou.card_nonnegative_le_observation, `XuZhou.marked_card_le, `XuZhou.quadraticEnergy_lapMatrix_mono, `XuZhou.exists_diameter_layering, `XuZhou.exists_retained_layers, `XuZhou.unmarkedPath_neighbors, `XuZhou.chainTridiagonal_hermitian, `XuZhou.chainResidual_nonpositive, `XuZhou.chainResidual_negative_of_first, `XuZhou.chainEnergy_nonpositive, `XuZhou.chainKernel_eq_zero_of_unmarked, `XuZhou.chainTridiagonal_nonnegative_count]
+  let expectedModules : Array String := #["Conjectures.XuZhouCliqueChain", "Conjectures.XuZhouCliqueQuotient", "Conjectures.XuZhouDiameter", "Conjectures.XuZhouDistanceLayers", "Conjectures.XuZhouLaplacianEnergy", "Conjectures.XuZhouLaplacianFull", "Conjectures.XuZhouLaplacianPartial", "Conjectures.XuZhouLayerSums", "Conjectures.XuZhouMarking", "Conjectures.XuZhouQuotientEnergy", "Conjectures.XuZhouQuotientInertia", "Conjectures.XuZhouScaledQuotient", "Conjectures.XuZhouSpectral", "Conjectures.XuZhouThreshold", "Conjectures.XuZhouTridiagonal", "Conjectures.XuZhouZeroExtension"]
+  let required : Array Name := #[`XuZhou.finrank_le_card_lt_of_strict_quadratic, `XuZhou.card_ge_le_sub_finrank, `XuZhou.marked_card_le, `XuZhou.quadraticEnergy_lapMatrix_mono, `XuZhou.exists_diameter_layering, `XuZhou.exists_retained_layers, `XuZhou.chainEnergy_nonpositive, `XuZhou.chainKernel_eq_zero_of_unmarked, `XuZhou.chainTridiagonal_nonnegative_count, `XuZhou.card_eq_sum_layerSize, `XuZhou.layerCliqueGraph_energy, `XuZhou.scaled_pair_term, `XuZhou.weighted_adjacent_energy, `XuZhou.strictlyLowSpace_finrank, `XuZhou.strictlyLowSpace_energy, `XuZhou.layerLift_injective, `XuZhou.layerCliqueGraph_shifted_energy, `XuZhou.cliqueChain_card_eigenvalues_ge_four, `XuZhou.zeroExtend_norm_square, `XuZhou.zeroExtend_energy_le, `XuZhou.diameter_laplacian_conjecture]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv

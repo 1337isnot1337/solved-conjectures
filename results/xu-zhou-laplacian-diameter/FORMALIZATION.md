@@ -1,11 +1,14 @@
 # Lean scope for Xu–Zhou’s diameter–Laplacian conjecture
 
-**Status: partial.** This checkpoint proves the tridiagonal quotient bound
-for the inclusive
-eigenvalue bound in [Xu and Zhou’s Conjecture 1.1](https://doi.org/10.13001/ela.2024.8757),
+**Status: complete for Conjecture 1.1.** Lean proves the original
+inclusive eigenvalue bound from [Xu and Zhou](https://doi.org/10.13001/ela.2024.8757),
 printed page 775 (preprint [Conjecture 5.1](https://arxiv.org/html/2401.03777v2#S5)).
-It does not yet lift the bound to the full clique-chain Laplacian or claim
-the sharpness family.
+The statement uses the actual graph diameter and the actual graph
+Laplacian. Each eigencoordinate is counted separately, so multiplicities
+and both interval endpoints are retained. The hypotheses
+`2 ≤ d`, `c ≤ d - 2`, and `d ≤ n - 2 - c` imply the source's
+redundant `max(2,c) ≤ d` condition. The separate sharpness family
+is not claimed in Lean.
 
 - [Spectral reduction](../../lean/Conjectures/XuZhouSpectral.lean):
   uses the actual Hermitian matrix eigenbasis and eigenvalues, with
@@ -41,6 +44,22 @@ the sharpness family.
   observation lemma bounds the number of nonnegative eigenvalues by the
   total layer surplus. Zero eigenvalues are included.
 
+- [Literal clique-chain bound](../../lean/Conjectures/XuZhouCliqueChain.lean)
+  groups the graph quadratic energy by the actual layer fibers. Rescaling
+  the layer-constant vectors identifies the shifted form with the
+  tridiagonal quotient. The negative space of the quotient maps
+  injectively to graph vectors with Rayleigh value strictly below four.
+  Their dimension proves the complementary bound of twice the surplus.
+- [Zero extension](../../lean/Conjectures/XuZhouZeroExtension.lean)
+  preserves squared norm, and the additional energy is at most the
+  number of discarded vertices times squared norm. It accounts for the
+  difference between the principal submatrix and the induced Laplacian.
+- [Original statement](../../lean/Conjectures/XuZhouDiameter.lean)
+  retains exactly `d+c+2` vertices with every distance layer represented.
+  The lifted strict spectral space has dimension at least `d-c` at the
+  source cutoff. Lean bounds the cardinal of the closed-interval
+  eigencoordinates by `n-d+c` without any numerical computation.
+
 The recorded argument and its scope are in [PROOF.md](PROOF.md), with
 the written result credited to Cinna Davis. The original proposers are
 Leyou Xu and Bo Zhou. Credit to the earlier results for individual
@@ -49,5 +68,5 @@ parameter slices, and the limits on the priority search, are unchanged.
 
 The [receipt](verification/receipt.json) records strict source compilation,
 the all-owned axiom audit, and pinned stock-kernel replay. Reproduce with
-`scripts/verify_lean_target.py`, root `Conjectures.XuZhouCliqueQuotient`,
+`scripts/verify_lean_target.py`, root `Conjectures.XuZhouLaplacianFull`,
 `--per-module-replay`, and the endpoints in the receipt. The aggregate gate is separate.
