@@ -1,13 +1,23 @@
 import Conjectures.AlexanderssonParkingExcedanceRoots
 import Conjectures.HKMEhrhart
+import Conjectures.HKMEhrhartClipCount
 import Conjectures.HKMEhrhartConvolution
 import Conjectures.HKMEhrhartCountBridge
 import Conjectures.HKMEhrhartCountCertificate
+import Conjectures.HKMEhrhartDegreeBridge
+import Conjectures.HKMEhrhartEhrhartViaAssembly
 import Conjectures.HKMEhrhartGeometry
 import Conjectures.HKMEhrhartLiteralCounts
 import Conjectures.HKMEhrhartLocalCount
-import Conjectures.HKMEhrhartPartial
+import Conjectures.HKMEhrhartPairViolation
+import Conjectures.HKMEhrhartPolynomialAssembly
+import Conjectures.HKMEhrhartPolynomialSum
+import Conjectures.HKMEhrhartSignedBudget
+import Conjectures.HKMEhrhartStarsBars
 import Conjectures.HKMEhrhartSufficiency
+import Conjectures.HKMEhrhartSupportShells
+import Conjectures.HKMEhrhartUnclippedPolynomial
+import Conjectures.HKMEhrhartViolationBudget
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 import Lean.Elab.Command
@@ -18,8 +28,8 @@ set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.AlexanderssonParkingExcedanceRoots", "Conjectures.HKMEhrhart", "Conjectures.HKMEhrhartConvolution", "Conjectures.HKMEhrhartCountBridge", "Conjectures.HKMEhrhartCountCertificate", "Conjectures.HKMEhrhartGeometry", "Conjectures.HKMEhrhartLiteralCounts", "Conjectures.HKMEhrhartLocalCount", "Conjectures.HKMEhrhartPartial", "Conjectures.HKMEhrhartSufficiency"]
-  let required : Array Name := #[`HKMEhrhart.card_pairs, `HKMEhrhart.hkm_lattice_mass_iff, `HKMEhrhart.card_PairCell, `HKMEhrhart.card_MassConfig_succ, `HKMEhrhart.card_MassConfig_eq_convolutionCount, `HKMEhrhart.makeConvolutionTable_correct, `HKMEhrhart.cocktail_lattice_iff_pairs, `HKMEhrhart.computedDiagonalLatticeCount_eq_literal, `HKMEhrhart.cocktail_six_values_computed, `HKMEhrhart.cocktail_six_literal_lattice_counts, `HKMEhrhart.off_line_of_literal_lattice_counts]
+  let expectedModules : Array String := #["Conjectures.AlexanderssonParkingExcedanceRoots", "Conjectures.HKMEhrhart", "Conjectures.HKMEhrhartClipCount", "Conjectures.HKMEhrhartConvolution", "Conjectures.HKMEhrhartCountBridge", "Conjectures.HKMEhrhartCountCertificate", "Conjectures.HKMEhrhartDegreeBridge", "Conjectures.HKMEhrhartEhrhartViaAssembly", "Conjectures.HKMEhrhartGeometry", "Conjectures.HKMEhrhartLiteralCounts", "Conjectures.HKMEhrhartLocalCount", "Conjectures.HKMEhrhartPairViolation", "Conjectures.HKMEhrhartPolynomialAssembly", "Conjectures.HKMEhrhartPolynomialSum", "Conjectures.HKMEhrhartSignedBudget", "Conjectures.HKMEhrhartStarsBars", "Conjectures.HKMEhrhartSufficiency", "Conjectures.HKMEhrhartSupportShells", "Conjectures.HKMEhrhartUnclippedPolynomial", "Conjectures.HKMEhrhartViolationBudget"]
+  let required : Array Name := #[`HKMEhrhart.hkm_lattice_mass_iff, `HKMEhrhart.cocktail_six_literal_lattice_counts, `HKMEhrhart.massShell_supportEquiv, `HKMEhrhart.unclippedPolynomial_eval, `HKMEhrhart.unclippedPolynomial_degree, `HKMEhrhart.signedBudget_card_succ_dim, `HKMEhrhart.signedBudgetPolynomial_eval, `HKMEhrhart.pairViolationEquiv, `HKMEhrhart.pairViolation_natCard, `HKMEhrhart.pairViolationPolynomial_eval, `HKMEhrhart.pairViolationPolynomial_degree, `HKMEhrhart.cocktail_cap_unique, `HKMEhrhart.unclipped_card_eq_clipped_add_violations, `HKMEhrhart.assemble_counting_polynomial, `HKMEhrhart.cocktailSixEhrhart_exists, `HKMEhrhart.cocktailSixEhrhart_eval, `HKMEhrhart.cocktailSixEhrhart_degree, `HKMEhrhart.cocktailSixEhrhart_unique, `HKMEhrhart.cocktailSixEhrhart_off_line, `HKMEhrhart.cocktailSix_no_canonical_line_interlacing, `HKMEhrhart.conjecture_4_10_counterexample]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv

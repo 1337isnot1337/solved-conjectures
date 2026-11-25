@@ -1,7 +1,7 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-25T12:57:00.574047+00:00",
-  "finished_at": "2026-11-25T12:58:01.566525+00:00",
+  "started_at": "2026-11-25T13:06:47.802093+00:00",
+  "finished_at": "2026-11-25T13:07:57.759586+00:00",
   "root": "Conjectures.EkhadZeilbergerProjection",
   "project_modules": [
     "Conjectures.EkhadZeilbergerCrossOverlap",
@@ -55,8 +55,8 @@
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
     "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
-    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
-    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
   },
   "lean_toolchain": "leanprover/lean4:v4.35.0",
   "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",

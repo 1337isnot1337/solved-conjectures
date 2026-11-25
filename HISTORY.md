@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify the Higashitani–Kummer–Michałek counterexample in Lean
+
+Lean constructs the unique Ehrhart polynomial of the literal six-pair polytope, proves its degree bound and count identity at every natural dilation, and checks a root off the canonical line. This refutes both published clauses; the independent Wronskian and stronger canonical-line witness remain written supplements. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
+
 ## 2026-11-25 — HKM literal lattice-point counts in Lean
 
 Lean verifies the convolution for the literal six-part lattice count and checks all twelve evaluations used in the root certificate. The off-line root follows for any degree-at-most-eleven polynomial with the literal counts. The corresponding Ehrhart polynomial degree and existence are not yet verified. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
