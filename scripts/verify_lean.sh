@@ -28,6 +28,8 @@ modules=(
   Conjectures.NuttallDerivativeRatio
   Conjectures.NuttallMovingBoxDeterminant
   Conjectures.NuttallMovingBoxIntegral
+  Conjectures.NuttallBadIntegral
+  Conjectures.NuttallDominanceCombine
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
