@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Shumyatsky.exists_cycle_completion_in_classes,
+    `Shumyatsky.exists_indexed_cycles_with_reserved_tails,
+    `Shumyatsky.exists_product_completion_at_reserved_moves,
+    `Shumyatsky.exists_multifactor_lift_in_inner_cosets,
     `Shumyatsky.exists_closed_route_through_move,
     `Shumyatsky.IsMoveRoute.word_eval,
     `Shumyatsky.traversalWord_is_generator_or_inverse,

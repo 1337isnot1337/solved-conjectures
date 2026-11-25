@@ -11,6 +11,13 @@ Lean verifies the bounded-error reciprocal-prime estimate using exact
 Mangoldt counts and Abel summation.
 [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
+## 2026-11-25 — Verify Shumyatsky’s conditional multifactor lift
+
+Lean completes the reserved return labels and constructs a conjugate
+pair in the prescribed inner cosets. The multifactor prime-spectrum
+lift takes the two-generator lifting property as an explicit hypothesis.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify independent closed-word labels in Shumyatsky’s lift
 
 Lean constructs the two rooted words from the directed tree moves

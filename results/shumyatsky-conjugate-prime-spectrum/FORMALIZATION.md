@@ -82,13 +82,24 @@ and the source credits in the [audit](AUDIT.md).
   Subsequent changes to the reserved return edges preserve both labels
   if the tree and the two selected moves keep their prescribed labels.
 
-The solvable-radical reduction, the global completion of the reserved second labels for those choices, the almost-simple generation
-inputs, and the simultaneous lift across the socle remain outside
-this partial check.
+- [Cycle completion](../../lean/Conjectures/ShumyatskyCycleCompletion.lean)
+  and [product completion](../../lean/Conjectures/ShumyatskyProductCompletion.lean).
+  Lean starts each paired cycle immediately after its chosen return
+  move and completes the actual conjugacy by changing only those
+  return labels. The chosen conjugator and all changed labels stay
+  in their original outer classes.
+- [Multifactor lift](../../lean/Conjectures/ShumyatskyMultifactorLift.lean).
+  If any two outer classes admit lifts generating a subgroup containing
+  the inner automorphisms, Lean proves the multifactor prime-spectrum
+  lift. It constructs the two actual inner-coset adjustments and
+  proves that their conjugate pair captures every prime of the
+  centerless factor order.
+
+The solvable-radical reduction, the almost-simple generation inputs (including the explicit two-generator lifting hypothesis), the singleton-factor argument, and the simultaneous assembly across the socle remain outside this partial check.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. All eleven scopes passed.
+checker. The eleven earlier scopes and the thirteen-module multifactor closure passed.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
 [Cycle-label receipt](verification/cycle-labels/receipt.json) ·
 [Factor-action receipt](verification/factor-action/receipt.json) ·
@@ -99,4 +110,5 @@ checker. All eleven scopes passed.
 [Permutation-cycle receipt](verification/permutation-cycles/receipt.json) ·
 [Spanning-tree receipt](verification/cycle-forest/receipt.json) ·
 [Directed-moves receipt](verification/directed-moves/receipt.json) ·
-[Independent-walk receipt](verification/independent-walks/receipt.json).
+[Independent-walk receipt](verification/independent-walks/receipt.json) ·
+[Multifactor-lift receipt](verification/multifactor-lift/receipt.json).
