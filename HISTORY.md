@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Ulas’s disjoint-block square-product conjecture
+
+Completed Lean verification of the common-length theorem for every positive length. The proof fills the prime-avoiding tail gap in the research branch’s partial formalization and retains the affine construction and residue argument. The catalogue row keeps its established position. See the [scope](results/ulas-disjoint-square-blocks/FORMALIZATION.md) and [local receipt](results/ulas-disjoint-square-blocks/verification/receipt.json).
+
 ## 2026-11-24 — Verify Braun–Bruegge’s minimum facet conjecture in Lean
 
 Lean proves the exact global lower bound and the unique class of minimizers for the facets of the symmetric edge polytope. The complete scoped Lean gate passed. [Formalization](results/braun-bruegge-minimum-facets/FORMALIZATION.md)

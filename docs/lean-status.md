@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Ulas’s disjoint-block square-product conjecture
+
+The [Lean formalization](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) proves the original Conjecture 4 for every common length at least five and the stronger common-length theorem for every positive length. The nine-module source closure passed strict compilation, the complete owned-declaration axiom audit, and stock-kernel replay. The bounded mixed-length supplement remains unformalized. See the [local receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json).
+
 ## Braun–Bruegge’s minimum facet conjecture
 
 Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)
@@ -141,7 +145,7 @@ proofs are documented separately in the catalogue and result package.
 | Han’s simultaneous spherical-harmonic saturation question | Not formalized | Constructs one real orthonormal basis per degree attaining both sharp Lᵖ growth regimes for every basis vector simultaneously. |
 | Steinerberger’s small-average eigenfunction norm question | Not formalized | Refutes the proposed near-linear lower bound and constructs real spherical bases with optimal aggregate and per-mode L¹ sizes. |
 | Pomerance–Sárközy’s fluctuation conjecture | Not formalized | Proves the density-one refinement and the quarter-power Gaussian law for the count associated with n plus its distinct prime factors. |
-| Ulas’s disjoint-block square-product conjecture | Not formalized | For every fixed common block length, proves infinitely many disjoint square-product collections at every sufficiently large fixed number of blocks. |
+| Ulas’s disjoint-block square-product conjecture | Complete | Original Conjecture 4 and the stronger common-length theorem at every positive length. The nine-module strict build, owned-declaration axiom audit, and kernel replay passed. [Scope](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) · [Receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json). |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
 | Simmons–Weiss’s Hausdorff-measure question | Not formalized | Proves natural-Hausdorff-almost-sure non-bad approximation after every irrational translate of a bounded continued-fraction Cantor set. |

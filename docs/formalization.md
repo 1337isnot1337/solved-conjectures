@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ulas’s disjoint-block square-product conjecture
+
+The checked affine construction and residue reduction now have unconditional prime-avoiding tail counts. The even- and odd-length arguments use adjacent block characters and a maximal independent separated family. The odd-prime argument uses orthogonality over the prime field. The final theorem preserves the fixed-length, eventual fixed-count quantifiers. See the [Lean formalization](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) and [local receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json).
+
 ## Braun–Bruegge’s minimum facet conjecture
 
 Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)
