@@ -10,6 +10,9 @@ import Conjectures.NuttallThetaTermSeries
 import Conjectures.NuttallRepeatedTails
 import Conjectures.NuttallTailCalculus
 import Conjectures.NuttallTailMoment
+import Conjectures.NuttallDifferentiatedMoment
+import Conjectures.NuttallAndreief
+import Conjectures.NuttallVandermonde
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation
