@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
+
+Strict compilation, a 256-owned-declaration/14-endpoint axiom audit, and stock replay passed for the two relaxed-seam unpinned conventions. The group entry stays partial. [Lean scope](../results/fmp-cylindric/FORMALIZATION.md).
+
 ## Csordas–Vishnyakova conjecture
 
 Lean 4.35.0 strict build, 49-owned-declaration/9-endpoint axiom audit, and stock replay passed. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json).
@@ -208,7 +212,7 @@ proofs are documented separately in the catalogue and result package.
 | Meylender–Thalmaier’s truncated-square conjecture | Not formalized | Proves the strict systolic bound for every truncated-square product and disproves the proposed optimizer. |
 | Rossi’s permutohedron characteristic-polynomial conjecture | Not formalized | Proof of the exact all-n root intervals in Conjecture 6.16, by a uniform alternating sign grid with an exact finite initial bridge. No q-deformation claim. |
 | Ferroni–Higashitani’s first-three interior Ehrhart question | Complete for Question 5.12(a) | The actual dimension-170 IDP lattice polytope has strict failure at the three negative evaluations of its unique Ehrhart polynomial. [Lean scope](../results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md). |
-| Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture | Not formalized | Refutes the exact relaxed-seam unpinned conjecture and proves positivity for standard periodic partition boundaries. |
+| Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture | Partial: relaxed-seam counterexamples | Both unpinned vertical-edge conventions contradict positivity. Standard-boundary positivity remains written only. [Lean scope](../results/fmp-cylindric/FORMALIZATION.md). |
 | Braun–Bruegge’s bicyclic facet conjectures | Not formalized | Proves the sharp global bicyclic facet maximum and the exact theta-graph optimizers, including the previously open mixed-parity cases. |
 | Braun–Bruegge’s minimum facet conjecture | Complete for Conjecture 2(3)–(4) | Actual geometric facets, exact even and odd minimum counts, attainment and uniqueness up to graph isomorphism. The 19-module scoped build, all-owned axiom audit and pinned replay passed. The fixed-matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |

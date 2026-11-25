@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
+
+Partial for the two-part written resolution. The exact thirteen-cell witness disproves unpinned positivity under both vertical-edge conventions. General standard-boundary positivity is not formalized. [Lean scope](../results/fmp-cylindric/FORMALIZATION.md).
+
 ## Csordas–Vishnyakova conjecture
 
 Complete for original Conjecture 3.6. The quartic and real entire function meet the paper’s hypotheses. All required Taylor coefficients are nonnegative and locally uniform limits of real-rooted polynomials cannot produce the witness. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json).

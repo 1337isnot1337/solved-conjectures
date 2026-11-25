@@ -1,5 +1,9 @@
 # Verification
 
+## Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
+
+[Scoped checks](../results/fmp-cylindric/FORMALIZATION.md) for the exact unpinned counterexamples passed: pinned strict compilation, an all-owned transitive axiom audit, and stock kernel replay. This does not assert an aggregate CI pass.
+
 ## Csordas–Vishnyakova conjecture
 
 The exact source of `Conjectures.CsordasVishnyakova` passed pinned strict compilation, all-owned transitive axiom audit and stock replay. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) includes the focused reproduction command and [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json) gives the source digest. The repository-wide aggregate gate is separate.
