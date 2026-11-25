@@ -108,14 +108,27 @@ and the source credits in the [audit](AUDIT.md).
   element and the case where the first generator has trivial kernel
   centralizer.
 
-The passage from the original finite group to these structural hypotheses
-remains, including the classical complement-conjugacy input, the actual
-socle decomposition, and the almost-simple generation and singleton-factor
-arguments.
+- [Abelian reduction](../../lean/Conjectures/ShumyatskyAbelianReduction.lean).
+  Lean proves complement conjugacy for the needed abelian kernel by
+  multiplying the cocycle over the complement. A characteristic Sylow
+  subgroup gives the single-prime property of each abelian minimal
+  normal subgroup. Induction on the actual quotient order then reduces
+  the exact conjecture to minimal groups with no abelian minimal normal
+  subgroup.
+- [Cyclic normalization](../../lean/Conjectures/ShumyatskyCyclicNormalization.lean).
+  Given a conjugate generating pair in a finite group with cyclic
+  quotient, Lean realizes any prescribed quotient generator for the
+  first element and any prescribed quotient image of its conjugator.
+  The proof lifts a unit residue to a compatible coprime exponent.
+
+The nonabelian structural and generation inputs remain, including the
+actual socle decomposition into products of simple groups, the
+almost-simple existence of conjugate generators, and the two-generator
+lifting property.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. The earlier scopes, the thirteen-module multifactor closure, and both new group-theoretic scopes passed.
+checker. The abelian reduction and cyclic normalization passed their exact scoped gates.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
 [Cycle-label receipt](verification/cycle-labels/receipt.json) ·
 [Factor-action receipt](verification/factor-action/receipt.json) ·
@@ -129,4 +142,6 @@ checker. The earlier scopes, the thirteen-module multifactor closure, and both n
 [Independent-walk receipt](verification/independent-walks/receipt.json) ·
 [Multifactor-lift receipt](verification/multifactor-lift/receipt.json) ·
 [Simultaneous-assembly receipt](verification/socle-assembly/receipt.json) ·
-[Prime-kernel receipt](verification/prime-kernel-lift/receipt.json).
+[Prime-kernel checkpoint](verification/prime-kernel-lift/receipt.json) ·
+[Abelian-reduction receipt](verification/abelian-reduction/receipt.json) ·
+[Cyclic-normalization receipt](verification/cyclic-normalization/receipt.json).
