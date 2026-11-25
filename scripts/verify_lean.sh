@@ -75,6 +75,11 @@ modules=(
   Conjectures.NovelliThibonAlternants
   Conjectures.NovelliThibonDiagramChains
   Conjectures.NovelliThibonPieriFirstMoments
+  Conjectures.NovelliThibonLaurentProduct
+  Conjectures.NovelliThibonTableauChains
+  Conjectures.NovelliThibonTableauCompletions
+  Conjectures.NovelliThibonTableauSplit
+  Conjectures.NovelliThibonTableauVertical
   Conjectures.NovelliThibonSchurExtraction
   Conjectures.NovelliThibonSchurMoments
   Conjectures.NovelliThibonYoungRaises

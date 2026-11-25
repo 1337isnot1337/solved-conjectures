@@ -8,7 +8,7 @@ import Conjectures.WachsCompleteGraphStrictLogConcavity
 import Conjectures.WachsCompleteGraphRealZeros
 import Conjectures.WachsCompleteGraphAllColors
 import Conjectures.NovelliThibonSourceFirstOrder
-import Conjectures.NovelliThibonPieriFirstMoments
+import Conjectures.NovelliThibonLaurentProduct
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional

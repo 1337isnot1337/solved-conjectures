@@ -3,10 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean verifies the normalized filling first-order formula and
-derives the Schur/Pieri first moments as counts of literal chains of
-Young diagrams. The standard-tableau and source LLT identifications,
-and the adjacent hook assertion, remain.
+Partial. Lean verifies the exact signed monomial product for the
+normalized finite filling model and the literal standard tableau
+cardinality on its right-hand side. The source LLT identification and
+the adjacent hook assertion remain.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question

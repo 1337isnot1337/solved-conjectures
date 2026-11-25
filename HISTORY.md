@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Novelli–Thibon's standard tableaux and normalized monomial product
+
+Lean proves the standard-tableau bijection and the exact signed
+monomial product for the normalized finite filling model.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Novelli–Thibon's Pieri diagram-chain extraction
 
 Lean proves the signed alternant recurrence, the vertical two-box
