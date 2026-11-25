@@ -3,6 +3,7 @@
 **Proved.** Proves both global minimum clauses and a stronger sharp bound at fixed maximum matching size, with unique complete-bipartite minimizers.
 
 - [Complete proof](PROOF.md)
+- [Lean formalization of both global minimum clauses](FORMALIZATION.md)
 - [Sharp bound with prescribed matching number](FIXED-MATCHING.md)
 - [Exact independent enumeration checker](check.py)
 - [Exhaustive independent order-six check](check_exhaustive.cpp)

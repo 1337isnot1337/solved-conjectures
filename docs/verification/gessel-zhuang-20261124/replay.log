@@ -1,0 +1,27 @@
+Replaying all 25 local project modules imported by Conjectures.GesselZhuangTheorem, including that root (prefix Conjectures)
+replaying Conjectures.ChowCone
+replaying Conjectures.GesselZhuangBlockOperations
+replaying Conjectures.GesselZhuangBlocks
+replaying Conjectures.GesselZhuangChoices
+replaying Conjectures.GesselZhuangCone
+replaying Conjectures.GesselZhuangGamma
+replaying Conjectures.GesselZhuangGammaBasic
+replaying Conjectures.GesselZhuangGammaRoots
+replaying Conjectures.GesselZhuangHistories
+replaying Conjectures.GesselZhuangHistoryBlocks
+replaying Conjectures.GesselZhuangHistoryGamma
+replaying Conjectures.GesselZhuangHistoryInjective
+replaying Conjectures.GesselZhuangHistoryPolynomial
+replaying Conjectures.GesselZhuangHistorySurjective
+replaying Conjectures.GesselZhuangPathGamma
+replaying Conjectures.GesselZhuangPathPolynomial
+replaying Conjectures.GesselZhuangPaths
+replaying Conjectures.GesselZhuangPermutations
+replaying Conjectures.GesselZhuangPolynomial
+replaying Conjectures.GesselZhuangRoots
+replaying Conjectures.GesselZhuangStatistics
+replaying Conjectures.GesselZhuangStatisticsHistory
+replaying Conjectures.GesselZhuangStatisticsInverse
+replaying Conjectures.GesselZhuangSymmetry
+replaying Conjectures.GesselZhuangTheorem
+PASS: the entire local import closure of Conjectures.GesselZhuangTheorem completed the pinned kernel replay

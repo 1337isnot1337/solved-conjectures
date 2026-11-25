@@ -1,0 +1,577 @@
+{
+  "scope": "Conjecture 9.15 for actual finite simple graphs, with exact extremal stabilization and quantitative c_p and m_p bounds",
+  "status": "passed",
+  "started_utc": "2026-11-24T19:32:26.370431+00:00",
+  "documented_proof_commit": "a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7",
+  "modules": [
+    "Conjectures.HartkeMatchingExcessDigits",
+    "Conjectures.HartkeMatchingExcessDivision",
+    "Conjectures.HartkeMatchingExcessSplit",
+    "Conjectures.HartkeMatchingExcessPaths",
+    "Conjectures.HartkeMatchingExcessCounts",
+    "Conjectures.HartkeMatchingExcessEdges",
+    "Conjectures.HartkeMatchingExcessBits",
+    "Conjectures.HartkeMatchingExcessWeights",
+    "Conjectures.HartkeMatchingExcessReturnEdges",
+    "Conjectures.HartkeMatchingExcessSelections",
+    "Conjectures.HartkeMatchingExcessGadgets",
+    "Conjectures.HartkeMatchingExcessMates",
+    "Conjectures.HartkeMatchingExcessSwitches",
+    "Conjectures.HartkeMatchingExcessSwitchCount",
+    "Conjectures.HartkeMatchingExcessPairCount",
+    "Conjectures.HartkeMatchingExcessIsomorphism",
+    "Conjectures.HartkeMatchingExcessExtension",
+    "Conjectures.HartkeMatchingExcessExtensionEdges",
+    "Conjectures.HartkeMatchingExcessExtremal",
+    "Conjectures.HartkeMatchingExcessDivergence",
+    "Conjectures.HartkeMatchingExcessStatement",
+    "Conjectures.HartkeMatchingExcess"
+  ],
+  "required": [
+    "HartkeMatchingExcess.binaryWeight_add_le",
+    "HartkeMatchingExcess.mersenne_dvd_binaryWeight_le",
+    "HartkeMatchingExcess.mersenne_division_weight_bound",
+    "HartkeMatchingExcess.input_lt_of_excess_bounds",
+    "HartkeMatchingExcess.perfectMatchingCount_splitGraph",
+    "HartkeMatchingExcess.returnFiberEquiv",
+    "HartkeMatchingExcess.pathCount_rec",
+    "HartkeMatchingExcess.perfectMatchingCount_returnGraph",
+    "HartkeMatchingExcess.baseGraph_edge_card",
+    "HartkeMatchingExcess.binaryPositions_sum",
+    "HartkeMatchingExcess.pathCount_binary",
+    "HartkeMatchingExcess.pathCount_deleted_after",
+    "HartkeMatchingExcess.fullReturnGraph_edge_card",
+    "HartkeMatchingExcess.deletedReturnGraph_edge_card_add_one",
+    "HartkeMatchingExcess.exists_binary_returns",
+    "HartkeMatchingExcess.exists_deleted_returns",
+    "HartkeMatchingExcess.binary_graph_witness",
+    "HartkeMatchingExcess.deleted_graph_witness",
+    "HartkeMatchingExcess.binary_excess_witness",
+    "HartkeMatchingExcess.deleted_excess_witness",
+    "HartkeMatchingExcess.mate_involutive",
+    "HartkeMatchingExcess.switchMatching_ne",
+    "HartkeMatchingExcess.bothPairs_card_le",
+    "HartkeMatchingExcess.edge_card_le_square_add_matchings",
+    "HartkeMatchingExcess.perfectMatchingCount_iso",
+    "HartkeMatchingExcess.extendMatchingEquiv",
+    "HartkeMatchingExcess.perfectMatchingCount_extendGraph",
+    "HartkeMatchingExcess.extendGraph_edge_card",
+    "HartkeMatchingExcess.extend_witness_to",
+    "HartkeMatchingExcess.matchingExcess_attained",
+    "HartkeMatchingExcess.extremalEdges_eventually",
+    "HartkeMatchingExcess.binaryLength_le_matchingExcess",
+    "HartkeMatchingExcess.matchingExcess_sqrt_lower_bound",
+    "HartkeMatchingExcess.matchingExcess_gt_of_large",
+    "HartkeMatchingExcess.matchingExcess_tendsto",
+    "HartkeMatchingExcess.tailMinimum_attained",
+    "HartkeMatchingExcess.tailMinimum_gt_of_large",
+    "HartkeMatchingExcess.conjecture_9_15",
+    "HartkeMatchingExcess.matchingExcess_unique",
+    "HartkeMatchingExcess.matchingExcess_log_lower_bound",
+    "HartkeMatchingExcess.tailMinimum_sqrt_lower_bound",
+    "HartkeMatchingExcess.conjecture_9_15_eventual"
+  ],
+  "source_sha256": {
+    "Conjectures.HartkeMatchingExcessDigits": "671c010abc52e75dbe26c82617ca44c7c6a5b1c9dc4550ccbb142573f4bed461",
+    "Conjectures.HartkeMatchingExcessDivision": "f7375e867e1455958bef1a7e138bb987b8d0e913041346a2ccfb35d0c8d36186",
+    "Conjectures.HartkeMatchingExcessSplit": "0f9b3bb437183bae094a1c4485d8ea41d218f47605b7cc7316a44ac2a90a5a1a",
+    "Conjectures.HartkeMatchingExcessPaths": "62664f486d0f846d1cafa3593fb1bbd9e7fbd857a3df31f17f27481cc86c4793",
+    "Conjectures.HartkeMatchingExcessCounts": "df52005e1926adf3791402a532c55c9e4f463b8fa30fe999396721006d8462ae",
+    "Conjectures.HartkeMatchingExcessEdges": "808a087e655c38dcf3a426a352401d56fda02a984a8f7270cb87c64c0a913021",
+    "Conjectures.HartkeMatchingExcessBits": "c016292e3573357f04e064d75335eeaff62f1416acdd74a6da4a53c661c60673",
+    "Conjectures.HartkeMatchingExcessWeights": "31df4aa0050133b1df75269cba5665903e791f67dd5c19648c617bf59ed03239",
+    "Conjectures.HartkeMatchingExcessReturnEdges": "ea975814183acc4092d30ee1821d092baeb33f2238cb8fe3fb59c18bb8b4c228",
+    "Conjectures.HartkeMatchingExcessSelections": "c37b54724183b5760b695d0451e1bef727e3cbf809064b1c9127ff20329ca5ee",
+    "Conjectures.HartkeMatchingExcessGadgets": "0e7bdd8c78e9e3da397ba1eae1893b170db964b17b8eb9115ea67c9b87f819a2",
+    "Conjectures.HartkeMatchingExcessMates": "1e01d20b7af331e5277e0a3e600b4c7682ac5507f7a0f1d90e8add2605690e3e",
+    "Conjectures.HartkeMatchingExcessSwitches": "a578588b767dc333d142ecf56ffebf3a8436bf9ba0d33cce5e199cc310ed97d8",
+    "Conjectures.HartkeMatchingExcessSwitchCount": "c4841d73f4fd40af9fd68877926d263f2682f2caa427d65ab5ad39a12b3fa1b0",
+    "Conjectures.HartkeMatchingExcessPairCount": "2f02206263f62ab7c3283458ddec351822660f9d6714ac97f75e879204a4c421",
+    "Conjectures.HartkeMatchingExcessIsomorphism": "23d5222adfc1dbeab23064619dcd782e91d714fd265723b90376eacb4b0b69a6",
+    "Conjectures.HartkeMatchingExcessExtension": "31defe7a8d4ac66fd6cb936977d1bd66d9f699de2c20359a66a86258d11a0244",
+    "Conjectures.HartkeMatchingExcessExtensionEdges": "3fcf4b40b68ad511bd2b0c142e68b97f4791444de5e048086bfa664e774aea32",
+    "Conjectures.HartkeMatchingExcessExtremal": "d1ff01cf415ffb1ff6d900f7c815c3f4a43cae9e3b28b6f47b4003c4feba6f7e",
+    "Conjectures.HartkeMatchingExcessDivergence": "a3584f9c05821979323cac9215d0cee1dce541dce84dbe226239070684e57b9d",
+    "Conjectures.HartkeMatchingExcessStatement": "ab970d99aa0ea43d440d6161dd4c07fbda9dfb4c475190f4f7cdf48322fc6ee1",
+    "Conjectures.HartkeMatchingExcess": "13feec5be16c29f94bd94f6cc28aa65cd01dd95bde39ac184b7fe2471211ac1d"
+  },
+  "control_sha256": {
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+  },
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "verification_script_sha256": "a9971ababa40957030cfbe3656a9979262f44d0cc6884b9611954f145b81872b",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "repository_wide_gate_claimed": false,
+  "independent_review": "separate pending receipt",
+  "steps": [
+    {
+      "name": "lean-version",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "--version"
+      ],
+      "started_utc": "2026-11-24T19:32:26.370918+00:00",
+      "elapsed_seconds": 0.114,
+      "exit_code": 0,
+      "log_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessDigits",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessDigits.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessDigits.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:26.485838+00:00",
+      "elapsed_seconds": 6.236,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessDivision",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessDivision.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessDivision.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:32.723498+00:00",
+      "elapsed_seconds": 8.993,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessSplit",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessSplit.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessSplit.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:41.720664+00:00",
+      "elapsed_seconds": 2.285,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessPaths",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessPaths.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessPaths.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:44.009096+00:00",
+      "elapsed_seconds": 2.574,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessCounts",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessCounts.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessCounts.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:46.584351+00:00",
+      "elapsed_seconds": 1.82,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessEdges",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessEdges.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessEdges.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:48.404817+00:00",
+      "elapsed_seconds": 1.569,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessBits",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessBits.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessBits.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:49.974613+00:00",
+      "elapsed_seconds": 1.27,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessWeights",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessWeights.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessWeights.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:51.244815+00:00",
+      "elapsed_seconds": 2.17,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessReturnEdges",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessReturnEdges.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessReturnEdges.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:53.415875+00:00",
+      "elapsed_seconds": 2.326,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessSelections",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessSelections.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessSelections.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:55.742358+00:00",
+      "elapsed_seconds": 2.222,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessGadgets",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessGadgets.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessGadgets.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:57.965043+00:00",
+      "elapsed_seconds": 1.52,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessMates",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessMates.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessMates.lean"
+      ],
+      "started_utc": "2026-11-24T19:32:59.487858+00:00",
+      "elapsed_seconds": 1.268,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessSwitches",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessSwitches.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessSwitches.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:00.756071+00:00",
+      "elapsed_seconds": 1.525,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessSwitchCount",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessSwitchCount.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessSwitchCount.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:02.281278+00:00",
+      "elapsed_seconds": 1.418,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessPairCount",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessPairCount.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessPairCount.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:03.699547+00:00",
+      "elapsed_seconds": 24.714,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessIsomorphism",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessIsomorphism.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessIsomorphism.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:28.422021+00:00",
+      "elapsed_seconds": 3.393,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessExtension",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessExtension.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessExtension.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:31.816066+00:00",
+      "elapsed_seconds": 1.977,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessExtensionEdges",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessExtensionEdges.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessExtensionEdges.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:33.795380+00:00",
+      "elapsed_seconds": 3.332,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessExtremal",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessExtremal.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessExtremal.lean"
+      ],
+      "started_utc": "2026-11-24T19:33:37.129680+00:00",
+      "elapsed_seconds": 31.973,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessDivergence",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessDivergence.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessDivergence.lean"
+      ],
+      "started_utc": "2026-11-24T19:34:09.106147+00:00",
+      "elapsed_seconds": 37.535,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcessStatement",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessStatement.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcessStatement.lean"
+      ],
+      "started_utc": "2026-11-24T19:34:46.642526+00:00",
+      "elapsed_seconds": 29.205,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Conjectures.HartkeMatchingExcess",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcess.olean",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean/Conjectures/HartkeMatchingExcess.lean"
+      ],
+      "started_utc": "2026-11-24T19:35:15.848572+00:00",
+      "elapsed_seconds": 28.202,
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "all-owned-audit",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4000",
+        "-DwarningAsError=true",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/AllOwnedAudit.lean"
+      ],
+      "started_utc": "2026-11-24T19:35:44.052913+00:00",
+      "elapsed_seconds": 36.396,
+      "exit_code": 0,
+      "log_sha256": "9d1e957e3a2c7d2d655b7f865b06dd07ac328e9d4fead449a7675042419a4e71"
+    },
+    {
+      "name": "stock-kernel-replay",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/tmp/cinna-lean-162051/repo/scripts/replay_lean.py",
+        "--lean-dir",
+        "/tmp/cinna-lean-162051/hartke/checkpoint-002/lean",
+        "--root",
+        "Conjectures.HartkeMatchingExcess"
+      ],
+      "started_utc": "2026-11-24T19:36:20.486099+00:00",
+      "elapsed_seconds": 44.865,
+      "exit_code": 0,
+      "log_sha256": "b4d07f651cb130dd2edd833a743c21f5fa53e127cc1d0c10c710caf762eaa58b"
+    }
+  ],
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 505,
+    "modules": 22,
+    "private_declarations": 32,
+    "raw_declarations": 505,
+    "required": 42,
+    "tag": "passed",
+    "theorems": 435
+  },
+  "audit_source_sha256": "92844abfd7116fd9f2810d4426c5ed7c0e97bd93995d0e48707d7ae4b419a629",
+  "declaration_inventory_sha256": "1683f9c5627112891367548167ab6b5be54fa91cd942739c152483016d3d3d25",
+  "exact_kernel_replay_set": [
+    "Conjectures.HartkeMatchingExcess",
+    "Conjectures.HartkeMatchingExcessBits",
+    "Conjectures.HartkeMatchingExcessCounts",
+    "Conjectures.HartkeMatchingExcessDigits",
+    "Conjectures.HartkeMatchingExcessDivergence",
+    "Conjectures.HartkeMatchingExcessDivision",
+    "Conjectures.HartkeMatchingExcessEdges",
+    "Conjectures.HartkeMatchingExcessExtension",
+    "Conjectures.HartkeMatchingExcessExtensionEdges",
+    "Conjectures.HartkeMatchingExcessExtremal",
+    "Conjectures.HartkeMatchingExcessGadgets",
+    "Conjectures.HartkeMatchingExcessIsomorphism",
+    "Conjectures.HartkeMatchingExcessMates",
+    "Conjectures.HartkeMatchingExcessPairCount",
+    "Conjectures.HartkeMatchingExcessPaths",
+    "Conjectures.HartkeMatchingExcessReturnEdges",
+    "Conjectures.HartkeMatchingExcessSelections",
+    "Conjectures.HartkeMatchingExcessSplit",
+    "Conjectures.HartkeMatchingExcessStatement",
+    "Conjectures.HartkeMatchingExcessSwitchCount",
+    "Conjectures.HartkeMatchingExcessSwitches",
+    "Conjectures.HartkeMatchingExcessWeights"
+  ],
+  "object_sha256": {
+    "Conjectures/HartkeMatchingExcess.olean": "85673f5930c335c6eb8a1695d2f62fe1b9298fdf7fdaf8ee52bd8a7fd6f35c34",
+    "Conjectures/HartkeMatchingExcessBits.olean": "236816494f43f056d8189744b4e5ff24977fba1b1f8960360f3c6040ebd8d2bd",
+    "Conjectures/HartkeMatchingExcessCounts.olean": "82d4f961460c2cc8dd82f71bba8fb197d924fb8fa071aa27fb11fd450ccec265",
+    "Conjectures/HartkeMatchingExcessDigits.olean": "5bcfa93d7e2ecd55f5ffeb5c95a6eff0f539c0bc0f944d916de70100a37af3dd",
+    "Conjectures/HartkeMatchingExcessDivergence.olean": "bdfdc460f107707c0ddfb544952060783a309243bcaa0bb6196264594f8a2aaf",
+    "Conjectures/HartkeMatchingExcessDivision.olean": "30b683b6610fc2acdef2012b1d23cd0564d93b8fc149638fd5019847777f1eb5",
+    "Conjectures/HartkeMatchingExcessEdges.olean": "c9266ce93239f9faa685bd2cea9ed49cda17777f626346237d2804d156505583",
+    "Conjectures/HartkeMatchingExcessExtension.olean": "bfdfe475c75b4e11406f9a1c407f0990e070b089443afffd58377eeef07ee5d3",
+    "Conjectures/HartkeMatchingExcessExtensionEdges.olean": "d2e4457fc5af1a67d0cffe34c2fcc52b104eef944d8f7f424033940f33125e36",
+    "Conjectures/HartkeMatchingExcessExtremal.olean": "75cae050d3056c1e884b07812f11eb2d2cdb8f90c0ac43c9b8a7ba2df52d4ce9",
+    "Conjectures/HartkeMatchingExcessGadgets.olean": "18d81e8590b9d855f9fd835fea43d9e049d1a7a980fabfbc023cc31bc1da4658",
+    "Conjectures/HartkeMatchingExcessIsomorphism.olean": "e2b65c458d149a5a1d17381711f5162c050e102326257161d997cfb20ae7b422",
+    "Conjectures/HartkeMatchingExcessMates.olean": "cfb63484573bf38a9314438df660d42cbeec7de383f7194b1ba383693a060274",
+    "Conjectures/HartkeMatchingExcessPairCount.olean": "cbfd06d62361a9af1af67020216bc1e312f188c34d557f07e522323a9cd1f0ad",
+    "Conjectures/HartkeMatchingExcessPaths.olean": "f2000335c64379d39997420b5b5b1fdd5a9d2405cea79b3d205549494ffef3d0",
+    "Conjectures/HartkeMatchingExcessReturnEdges.olean": "b6c0ed34b37a891c748fa174ba8f1dddc26f5de41b086b32a285b482b011b22e",
+    "Conjectures/HartkeMatchingExcessSelections.olean": "7a07dac8c721f7c958e892a560c5712cb1cea4498b9c94549f1589f6b5a38c45",
+    "Conjectures/HartkeMatchingExcessSplit.olean": "55bc50dd480bc62aeaa0d87be648e251b77c4068757c9f6524ff89ce81c8272e",
+    "Conjectures/HartkeMatchingExcessStatement.olean": "7be15d1ad237d5c7c78d5c1e6857f79d151ca319cd958e96cb5acafbc7458a33",
+    "Conjectures/HartkeMatchingExcessSwitchCount.olean": "f43d4c3896a41887752c10f526b2a9d77d04aa4cd6bb20e273bb28ad5ed6f1d0",
+    "Conjectures/HartkeMatchingExcessSwitches.olean": "b3aadc3c3c4b973cfc70903ab003f4b364e6f07f3135e696cce15155e509a7fb",
+    "Conjectures/HartkeMatchingExcessWeights.olean": "555ecc32618d8512987e28dd6c3a173c83eff4744bee7179f28f20570d97140b"
+  },
+  "root_sources_still_match": true,
+  "finished_utc": "2026-11-24T19:37:05.363061+00:00"
+}

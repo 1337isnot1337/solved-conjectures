@@ -1,0 +1,4 @@
+Replaying all 2 local project modules imported by Conjectures.CoulangeonLazzariniRealLattice, including that root (prefix Conjectures)
+replaying Conjectures.CoulangeonLazzariniRealLattice
+replaying Conjectures.CoulangeonLazzariniShells
+PASS: the entire local import closure of Conjectures.CoulangeonLazzariniRealLattice completed the pinned kernel replay

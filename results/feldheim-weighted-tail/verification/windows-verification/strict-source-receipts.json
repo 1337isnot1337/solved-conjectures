@@ -1,0 +1,83 @@
+[
+  {
+    "module": "Conjectures.FeldheimWeightedTailWindows",
+    "started_utc": "2026-11-24T18:26:51.599945+00:00",
+    "elapsed_seconds": 2.888,
+    "lock_acquired_utc": "2026-11-24T18:26:54.600461+00:00",
+    "lock_wait_seconds": 3.001,
+    "exit_code": 0,
+    "source_sha256": "dbe305b0153070919a8477171426a9a896cb8bce43b44ef6b1ef8af0847eacbd",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailWindows.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/FeldheimWeightedTailWindows.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "module": "Conjectures.FeldheimWeightedTailWindowsConvex",
+    "started_utc": "2026-11-24T18:23:06.785401+00:00",
+    "elapsed_seconds": 108.405,
+    "exit_code": 0,
+    "source_sha256": "cc2e0e0398005f17db9a59f46ffa68c3775521bb81647e147ace7ea1fbbb1c6d",
+    "source_unchanged_during_run": true,
+    "command": [
+      "flock",
+      "-F",
+      "/tmp/cinna-lean-162051/lean-gate.lock",
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailWindowsConvex.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/FeldheimWeightedTailWindowsConvex.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "module": "Conjectures.FeldheimWeightedTailWindowsInverse",
+    "started_utc": "2026-11-24T18:26:44.229227+00:00",
+    "elapsed_seconds": 3.377,
+    "lock_acquired_utc": "2026-11-24T18:26:48.219654+00:00",
+    "lock_wait_seconds": 3.991,
+    "exit_code": 0,
+    "source_sha256": "42f6762b8c6db33df3041ec5eece748344574124789a81d4591e0f591455554e",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailWindowsInverse.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/FeldheimWeightedTailWindowsInverse.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "module": "Conjectures.FeldheimWeightedTailWindowsSequence",
+    "started_utc": "2026-11-24T18:26:37.912259+00:00",
+    "elapsed_seconds": 3.822,
+    "lock_acquired_utc": "2026-11-24T18:26:40.404851+00:00",
+    "lock_wait_seconds": 2.493,
+    "exit_code": 0,
+    "source_sha256": "4bef29f18d7a64468e768bfa4c8ebfcf00c0d8e9ee4ec9bb8e29470b0e4c86c7",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailWindowsSequence.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/FeldheimWeightedTailWindowsSequence.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

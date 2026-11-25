@@ -276,7 +276,8 @@ Berlekamp–Massey algorithm applied to actual sequence values modulo
 $1{,}000{,}000{,}007$. All checks pass; the full output is in
 `verification.json`. Run `python3 results/rowland-sistos-barron/verify.py` to replay.
 
-This draft is not peer reviewed and has no Lean formalization. The source's
+This argument is not peer reviewed. Its [complete Lean formalization](LEAN_STATUS.md)
+proves the precise result stated here. The source's
 term “pseudo-polynomial” is not defined explicitly, so the exact mathematical
 conclusion is stated with the defined term “quasipolynomial.”
 

@@ -1,5 +1,77 @@
 # History
 
+## 2026-11-24 — Verify Braun–Bruegge’s minimum facet conjecture in Lean
+
+Lean proves the exact global lower bound and the unique class of minimizers for the facets of the symmetric edge polytope. The complete scoped Lean gate passed. [Formalization](results/braun-bruegge-minimum-facets/FORMALIZATION.md)
+
+## 2026-11-24 — Hartke–Stolee–West–Yancey matching-excess conjecture
+
+Completed the full Lean formalization of the existing entry, including actual graph witnesses for every input, the universal edge bound, attained all-order extremal constants, Hetyei extension and eventual stabilization, and the tail-minimum divergence with the recorded quantitative bound. The 22-module frozen closure passed strict sources, the complete owned/private audit and exact stock replay; independent mathematical and primary-statement reviews passed. The original proof, proposer and proof-author credits, priority qualifications, ranked position and unrelated catalogue rows are preserved. This is one complete existing result, not separate counts for constructions or bounds. The [scope](results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md), [review](results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md) and [receipt](docs/verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json) keep proof verification separate from aggregate/hosted/deployment obligations.
+
+## Feldheim–Feldheim’s weighted tail conjecture
+
+On 24 November 2026 the existing entry received a [complete Lean formalization](results/feldheim-weighted-tail/FORMALIZATION.md) of original Conjecture 1 for all positive weights and arbitrary independent nonnegative laws without compact support, including atoms. The theorem uses actual probability events and a literal infinite limsup. The twenty-module source closure passed strict compilation, a complete transitive axiom audit and exact stock-kernel replay, with independent statement, source and evidence reviews. Naomi Dvora Feldheim and Ohad Noy Feldheim retain original proposer and earlier-method credit; the recorded proof credit to Cinna Davis and its priority qualification are preserved. The norm and finite-threshold supplements remain unformalized. This updates the verification status of one existing entry without changing its rank or adding a result row; aggregate and deployment obligations remain separate.
+
+## Hajdu–Sárközy’s shifted-product total primitivity conjecture
+
+On 24 November 2026 the existing entry received a complete Lean proof of the original conjecture for all exponent pairs and every finite modification, the full summable-family theorem, and all nonzero-shift two-variable little-o perturbations. Thirteen new modules reuse the eleven unchanged perturbation modules. The mixed-coefficient determinant, actual coefficient-tail count, ordered limit, sparse-factor incidence sum, real-threshold bridge, and p-series specialization are proved. The full twenty-four-module closure passed strict source builds, complete transitive axiom audit and exact stock-kernel replay, followed by independent review. Publication metadata checks bind the unchanged sources to that proof evidence without calling a preflight a new rebuild. The optional extension to more than two variables is not separately formalized. The existing rank, proposer/proof attribution and priority qualification are retained; no new entry or extra corollary count is added.
+
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+On 24 November 2026 the [complete original Conjecture 5.8 disproof](results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) established both finite-prefix counterexamples using the actual infinite-product coefficients. All three modules strictly compiled, the all-owned audit passed (250 declarations, 212 theorems), and independent replay passed. The separate stronger exact-density theorem remains outside this Lean scope. Discovery attribution and the bounded priority caveat remain unchanged. [PR #565](https://github.com/1337isnot1337/solved-conjectures/pull/565).
+
+## Kovalev’s square-root Taylor-section zero-free conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/kovalev-zero-free/FORMALIZATION.md) proved the original square-root conjecture for every section degree and every point of the closed unit disk, with the stronger theorem for every positive geometric-polynomial length. The coefficients are identified with the actual iterated derivatives. Twenty-one strict source builds, the all-owned/private axiom audit and exact stock-kernel replay passed and received independent evidence and statement reviews. Leonid V. Kovalev is the original proposer; the recorded proof credit to Cinna Davis and the bounded priority qualification are preserved. Fractional-exponent, arbitrary-segment and adjacent trigonometric supplements remain unformalized. This updates one existing entry; aggregate verification and public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
+## 2026-11-24: Formalize the Thue–Morse valuation disproof
+
+The [Lean proof](lean/Conjectures/ThueMorseValuation.lean) verifies the exponent-17 witness and the full uniform counterexample family for every k ≥ 11. See the [local build, axiom audit and kernel replay receipt](docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json).
+
+## 2026-11-24 — Verify Ferroni–Higashitani Question 5.12(a) in Lean
+
+The [Lean proof](results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md) constructs the dimension-170 lattice polytope, proves integer decomposition at every positive dilation, characterizes its Ehrhart polynomial by the closed lattice-point counts, and proves the strict inequality at the first three negative evaluations.
+
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+On 24 November 2026 the [complete Lean proof](results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) established the exact sum interval and original Conjecture 2.6 for every matching digit threshold k≥2. The proof formalizes the existing direct refinement argument, including the finite zero-tail repair and actual infinite expansions. All 12 sources passed strict compilation, the all-owned/private axiom audit and exact stock replay; the source statement and full receipt were independently reviewed. Maiken Gravgaard and Ying Wai Lee are the original proposers; the recorded proof by Cinna Davis and its priority qualifications are preserved. The two reused Lüroth modules and threshold-two boundary are not counted as new results. Aggregate and deployment checks remain separate.
+
+## 2026-11-24 — Fan–Tringali’s power-monoid length-set conjecture
+
+Completed the Lean proof of the original 2018 conjecture for ordinary and restricted finitary power monoids of arbitrary Dedekind-finite non-torsion monoids, together with the exact reduced-natural-number length system. The 18-module closure includes the graph construction, all no-carry divisor and factorization lifts, and a fully proved noncommutative unit normalization and monoid transfer. Strict source builds, the complete all-owned/private axiom audit and stock kernel replay passed. The existing result row and mathematical attribution are retained; this is one existing result. Survey irreducibles, multiplicities and relative cancellativity remain unformalized supplements. The dedicated verifier/workflow and exact receipts keep the scoped proof pass separate from aggregate dependency-cache and hosted deployment obligations.
+
+## Steinerberger’s greedy-energy Fourier conjecture
+
+On 24 November 2026 the [complete Lean disproof](results/steinerberger-greedy-fourier/FORMALIZATION.md) verified an actual infinite greedy sequence whose stated weighted absolute Fourier sum is not O(log n). The four modules include direct greedy admissibility, exact Fourier recurrences, a quadratic lower bound along an unbounded family of prefixes, and the asymptotic negation. The independent source review corrected the Kritzinger citation to arXiv:2109.06298v4, Theorem 4 and Algorithm 3, page 15. The existing entry, its rank and its priority qualification are retained. The sharp limsup constant and the stronger all-initialization and all-tie-breaking assertions remain written supplements.
+
+## 2026-11-24 — Verify Coulangeon–Lazzarini’s two-shell counterexample in Lean
+
+The [Lean proof](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) constructs the full-rank discrete lattice in dimension ten, verifies the spherical second moments for squared norms 4 and 8, and proves failure at squared norm 9. The [integer-coordinate module](lean/Conjectures/CoulangeonLazzariniShells.lean) verifies the elementary arbitrary-delay family.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s mixed Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeMixedLuroth.lean) checks the source digit sets, all fifteen interval containments and the passage to the infinite expansions. It proves the stronger ordinary interval and Conjecture 2.2 on all real residues.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s large-digit Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) proved the literal pinnacle-set and peak-count inverse-descent polynomials gamma-positive for every positive size, with the original weight and center. Both source conjectures belong to one existing entry. The actual permutation/history bijection and statistic bridges, fixed-path real splitting and symmetry, and full gamma expansion are proved. All 25 project modules passed strict compilation, the all-owned axiom audit, and stock-kernel replay. Ira M. Gessel and Yan Zhuang are the original proposers; the existing proof credit to Cinna Davis and GPT-6.2 Astra and the prior-art and priority qualifications are preserved.
+
+## Hajdu–Sárközy’s shifted-power perturbation conjecture
+
+On 24 November 2026 the existing entry received a complete Lean proof of the original conjecture and the nonzero-shift symmetric-difference theorem. All exponents at least two, actual real-threshold counts, arbitrary nontrivial positive-integer factor sets, every finite modification, and the zero-root convention are included. Eleven modules passed strict builds, the complete declaration/axiom audit and stock-kernel replay, followed by independent statement and proof review. The recorded determinant/bin argument is formalized with an elementary incidence bound and a proved double-prefix summation. The stronger retained-limsup supplement remains unformalized. The existing rank, proposers, proof attribution, and priority qualification are retained; no new conjecture entry is added.
+
+## Rowland–Sistos Barrón conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
+
+## Johnson's conjecture
+
+On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.
+
 ## 2026-11-24: Verify the Caiolo–Ferroni–Hoster family in Lean
 
 The [formal proof](lean/Conjectures/CaioloFerroniHoster.lean) verifies the full

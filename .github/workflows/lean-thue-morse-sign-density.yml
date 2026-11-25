@@ -1,0 +1,77 @@
+name: Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/ThueMorseSignDensity*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-thue-morse-sign-density.yml'
+  push:
+    branches: [research, main]
+    paths:
+      - 'lean/Conjectures/ThueMorseSignDensity*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-thue-morse-sign-density.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source, all-owned audit, and stock-kernel replay
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.ThueMorseSignDensity
+          --require ThueMorseSignDensityProduct.prefix_step
+          --require ThueMorseSignDensityProduct.prefix_stable
+          --require ThueMorseSignDensityProduct.t_eq_prefix
+          --require ThueMorseSignDensityProduct.t_even
+          --require ThueMorseSignDensityProduct.t_odd
+          --require ThueMorseSignDensity.recurrence
+          --require ThueMorseSignDensity.t_nonzero
+          --require ThueMorseSignDensity.signed_identity0
+          --require ThueMorseSignDensity.signed_identity1
+          --require ThueMorseSignDensity.exceptions_nodup
+          --require ThueMorseSignDensity.exceptions_mem
+          --require ThueMorseSignDensity.count_eq
+          --require ThueMorseSignDensity.exception0_iff
+          --require ThueMorseSignDensity.exception1_iff
+          --require ThueMorseSignDensity.exception_block0
+          --require ThueMorseSignDensity.exception_block1
+          --require ThueMorseSignDensity.usual_block0
+          --require ThueMorseSignDensity.usual_block1
+          --require ThueMorseSignDensity.lower_bound0
+          --require ThueMorseSignDensity.lower_bound1
+          --require ThueMorseSignDensity.upper_bound0
+          --require ThueMorseSignDensity.upper_bound1
+          --require ThueMorseSignDensity.densityZero_reciprocal
+          --require ThueMorseSignDensity.not_zero_density0
+          --require ThueMorseSignDensity.not_zero_density1
+          --require ThueMorseSignDensity.conjecture_false
+          --require ThueMorseSignDensity.both_counterexamples
+          --out .candidate-artifacts/thue-morse-sign-density
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thue-morse-sign-density
+          path: .candidate-artifacts/thue-morse-sign-density/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

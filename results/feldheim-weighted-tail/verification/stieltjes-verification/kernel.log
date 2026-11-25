@@ -1,0 +1,5 @@
+Replaying all 3 local project modules imported by Conjectures.FeldheimWeightedTailStieltjes, including that root (prefix Conjectures)
+replaying Conjectures.FeldheimWeightedTailStieltjes
+replaying Conjectures.FeldheimWeightedTailStieltjesGrid
+replaying Conjectures.FeldheimWeightedTailStieltjesLimit
+PASS: the entire local import closure of Conjectures.FeldheimWeightedTailStieltjes completed the pinned kernel replay

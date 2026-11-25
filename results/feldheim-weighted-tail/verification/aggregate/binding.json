@@ -1,0 +1,19 @@
+{
+  "status": "known-blocker-reused",
+  "fresh_aggregate_attempt_claimed": false,
+  "repository_wide_success_claimed": false,
+  "prior_receipt_sha256": "a61d75844fde31ede4d2ab927a685671ac79e7ddedde32c22a66b032f04c9363",
+  "prior_log_sha256": "25d4f0793b20ecebd56dfff5abfaa63b11325caf40b38b8f8e8f74045db3d508",
+  "prior_tree": "83e06e3c232ea3335487ccfed31568da41b02866",
+  "prior_finished_at": "2026-11-24T19:03:13.223450+00:00",
+  "current_pinned_configuration_matches_prior": {
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+  },
+  "first_failure": "Mathlib.Algebra.Group.Int.Defs .ltar removal: read-only file system (error code 30)",
+  "protected_shared_dependencies": true,
+  "follow_up": "https://github.com/1337isnot1337/solved-conjectures/issues/563",
+  "prior_handoff": "https://github.com/1337isnot1337/solved-conjectures/issues/447#issuecomment-7141593596",
+  "scope_note": "The failed aggregate attempt belongs to the Hartke/Stern research tree. It is retained solely as evidence of the unchanged shared dependency-cache blocker, not as an attempt on this publication tree. The weighted-tail publication has its own successful fresh strict source, complete declaration audit and stock-kernel replay receipt."
+}

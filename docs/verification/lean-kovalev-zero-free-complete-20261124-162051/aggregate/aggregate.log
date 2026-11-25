@@ -1,0 +1,654 @@
+✖ [154/180] Building Mathlib.Algebra.Group.Hom.Defs (3ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/Hom/Defs.ltar
+✖ [334/344] Building Mathlib.Lean.Meta.CongrTheorems (2ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Meta/CongrTheorems.ltar
+✖ [335/344] Building Mathlib.Tactic.Relation.Rfl
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Relation/Rfl.ltar
+✖ [339/344] Building Mathlib.Control.Combinators
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Control/Combinators.ltar
+✖ [340/344] Building Mathlib.Data.Option.Defs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Option/Defs.ltar
+✖ [343/344] Building Mathlib.Data.Sigma.Basic (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Sigma/Basic.ltar
+✖ [345/438] Building Mathlib.Util.AtLocation (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/AtLocation.ltar
+✖ [348/438] Building Mathlib.Util.CompileInductive
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/CompileInductive.ltar
+✖ [350/438] Building Mathlib.Tactic.Coe
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Coe.ltar
+✖ [352/438] Building Mathlib.Tactic.Lift
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Lift.ltar
+✖ [366/438] Building Mathlib.Algebra.Notation.Pi.Basic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Notation/Pi/Basic.ltar
+✖ [368/438] Building Mathlib.Data.Ordering.Basic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Ordering/Basic.ltar
+✖ [369/438] Building Mathlib.Order.Defs.PartialOrder
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Order/Defs/PartialOrder.ltar
+✖ [386/438] Building Mathlib.Order.Notation
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Order/Notation.ltar
+✖ [387/438] Building Mathlib.Tactic.FastInstance
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/FastInstance.ltar
+✖ [390/438] Building Mathlib.Tactic.GCongr.ForwardAttr
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/GCongr/ForwardAttr.ltar
+✖ [395/438] Building Mathlib.Tactic.PPWithUniv (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/PPWithUniv.ltar
+✖ [402/438] Building Mathlib.Logic.Function.ULift
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Logic/Function/ULift.ltar
+✖ [405/438] Building Mathlib.Tactic.Finiteness.Attr (2ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Finiteness/Attr.ltar
+✖ [406/438] Building Mathlib.Tactic.Basify.Attr
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Basify/Attr.ltar
+✖ [409/438] Building Mathlib.Logic.Pairwise (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Logic/Pairwise.ltar
+✖ [417/438] Building Mathlib.Data.Nat.Init (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Nat/Init.ltar
+✖ [420/438] Building Mathlib.Tactic.ToExpr
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ToExpr.ltar
+✖ [423/438] Building Mathlib.Data.Set.CoeSort
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Set/CoeSort.ltar
+✖ [426/438] Building Mathlib.Basic.IsEmpty.Basic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Basic/IsEmpty/Basic.ltar
+✖ [428/438] Building Mathlib.Tactic.Choose
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Choose.ltar
+✖ [435/517] Building Mathlib.Tactic.Monotonicity.Attr
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Monotonicity/Attr.ltar
+✖ [436/517] Building Mathlib.Tactic.SetLike (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/SetLike.ltar
+✖ [441/517] Building Mathlib.Control.Functor
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Control/Functor.ltar
+✖ [443/517] Building Mathlib.Data.List.Monad
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/List/Monad.ltar
+✖ [444/517] Building Mathlib.Tactic.Attr.Core
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Attr/Core.ltar
+✖ [471/517] Building Mathlib.Tactic.ApplyCongr
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ApplyCongr.ltar
+✖ [472/517] Building Mathlib.Lean.Meta.Basic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Meta/Basic.ltar
+✖ [474/517] Building Mathlib.Tactic.ApplyWith
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ApplyWith.ltar
+✖ [476/517] Building Mathlib.Tactic.CasesM
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/CasesM.ltar
+✖ [477/517] Building Mathlib.Tactic.Check
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Check.ltar
+✖ [478/517] Building Mathlib.Tactic.ClearExclamation
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ClearExclamation.ltar
+✖ [479/517] Building Mathlib.Tactic.ClearExcept
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ClearExcept.ltar
+✖ [480/517] Building Mathlib.Tactic.Clear_
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Clear_.ltar
+✖ [481/517] Building Mathlib.Lean.GoalsLocation
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/GoalsLocation.ltar
+✖ [482/517] Building Mathlib.Lean.Meta.KAbstractPositions
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Meta/KAbstractPositions.ltar
+✖ [483/517] Building Mathlib.Lean.FoldEnvironment
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/FoldEnvironment.ltar
+✖ [484/517] Building Mathlib.Lean.Meta.RefinedDiscrTree.Basic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Meta/RefinedDiscrTree/Basic.ltar
+✖ [489/517] Building Mathlib.Tactic.NthRewrite
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/NthRewrite.ltar
+✖ [495/517] Replaying proofwidgets/widgetPackageLock
+trace: /Users/wjn/ProofWidgets4/widget> npm install
+trace: stdout:
+added 6 packages, and audited 364 packages in 5s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+10 vulnerabilities (4 moderate, 6 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+trace: stderr:
+npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn allow-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+error: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/proofwidgets/widget/package-lock.json.hash
+✖ [516/517] Building Mathlib.Tactic.Constructor
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Constructor.ltar
+✖ [517/711] Building Mathlib.Lean.MessageData.Trace
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/MessageData/Trace.ltar
+✖ [519/711] Building Mathlib.Tactic.DefEqTransformations
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/DefEqTransformations.ltar
+✖ [520/711] Building Mathlib.Tactic.DeprecateTo
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/DeprecateTo.ltar
+✖ [521/711] Building Mathlib.Tactic.DSimpPercent (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/DSimpPercent.ltar
+✖ [522/711] Building Mathlib.Tactic.ErwQuestion
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ErwQuestion.ltar
+✖ [523/711] Building Mathlib.Tactic.ExistsI
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ExistsI.ltar
+✖ [524/711] Building Mathlib.Tactic.FailIfNoProgress
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/FailIfNoProgress.ltar
+✖ [526/711] Building Mathlib.Tactic.Find
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Find.ltar
+✖ [527/711] Building Mathlib.Tactic.FunProp.Decl (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/FunProp/Decl.ltar
+✖ [528/711] Building Mathlib.Tactic.FunProp.Mor (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/FunProp/Mor.ltar
+✖ [529/711] Building Mathlib.Tactic.FunProp.ToBatteries
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/FunProp/ToBatteries.ltar
+✖ [535/711] Building Mathlib.Tactic.InferParam (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/InferParam.ltar
+✖ [538/711] Building Mathlib.Tactic.GrindAttrs (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/GrindAttrs.ltar
+✖ [539/711] Building Mathlib.Tactic.GuardGoalNums
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/GuardGoalNums.ltar
+✖ [540/711] Building Mathlib.Tactic.GuardHypNums
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/GuardHypNums.ltar
+✖ [541/711] Building Mathlib.Tactic.HigherOrder (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/HigherOrder.ltar
+✖ [542/711] Building Mathlib.Util.TermReduce (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/TermReduce.ltar
+✖ [544/711] Building Mathlib.Tactic.Linter.HaveLetLinter (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Linter/HaveLetLinter.ltar
+✖ [545/711] Building Mathlib.Tactic.Linter.MinImports
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Linter/MinImports.ltar
+✖ [546/711] Building Mathlib.Tactic.Linter.PPRoundtrip (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Linter/PPRoundtrip.ltar
+✖ [547/711] Building Mathlib.Tactic.Linter.UpstreamableDecl
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Linter/UpstreamableDecl.ltar
+✖ [549/711] Building Mathlib.Tactic.Observe
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Observe.ltar
+✖ [550/711] Building Mathlib.Tactic.RSuffices
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/RSuffices.ltar
+✖ [551/711] Building Mathlib.Tactic.Recover
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Recover.ltar
+✖ [552/711] Building Mathlib.Tactic.Rename
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Rename.ltar
+✖ [553/711] Building Mathlib.Util.Tactic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/Tactic.ltar
+✖ [556/711] Building Mathlib.Tactic.Set
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Set.ltar
+✖ [557/711] Building Mathlib.Lean.Elab.Tactic.Basic (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Elab/Tactic/Basic.ltar
+✖ [559/711] Building Mathlib.Tactic.SimpIntro (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/SimpIntro.ltar
+✖ [560/711] Building Mathlib.Tactic.Simproc.ExistsAndEq (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Simproc/ExistsAndEq.ltar
+✖ [561/711] Building Mathlib.Tactic.Subsingleton
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Subsingleton.ltar
+✖ [562/711] Building Mathlib.Tactic.Substs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Substs.ltar
+✖ [563/711] Building Mathlib.Tactic.SuccessIfFailWithMsg (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/SuccessIfFailWithMsg.ltar
+✖ [564/711] Building Mathlib.Tactic.SudoSetOption
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/SudoSetOption.ltar
+✖ [565/711] Building Mathlib.Tactic.SwapVar
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/SwapVar.ltar
+✖ [569/711] Building Mathlib.Tactic.Trace
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Trace.ltar
+✖ [570/711] Building Mathlib.Tactic.UnsetOption
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/UnsetOption.ltar
+✖ [571/711] Building Mathlib.Tactic.Variable (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Variable.ltar
+✖ [572/711] Building Mathlib.Tactic.Widget.SelectInsertParamsClass
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Widget/SelectInsertParamsClass.ltar
+✖ [580/711] Building Mathlib.Util.CountHeartbeats
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/CountHeartbeats.ltar
+✖ [581/711] Building Mathlib.Util.PrintSorries
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/PrintSorries.ltar
+✖ [582/711] Building Mathlib.Util.TransImports (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/TransImports.ltar
+✖ [583/711] Building Mathlib.Util.WhatsNew
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/WhatsNew.ltar
+✖ [589/711] Building Mathlib.Logic.OpClass
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Logic/OpClass.ltar
+✖ [594/711] Building Mathlib.Data.Prod.Basic
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Prod/Basic.ltar
+✖ [607/711] Building Mathlib.Data.Sum.Basic (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Sum/Basic.ltar
+✖ [612/711] Building Mathlib.Data.Prod.PProd
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Prod/PProd.ltar
+✖ [626/711] Building Mathlib.Data.Finset.Attr (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Finset/Attr.ltar
+✖ [639/711] Building Mathlib.Data.List.Induction
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/List/Induction.ltar
+✖ [642/711] Building Mathlib.Util.PPOptions (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/PPOptions.ltar
+✖ [659/711] Building Mathlib.Order.Lex (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Order/Lex.ltar
+✖ [666/711] Building Mathlib.Algebra.BigOperators.Group.List.Defs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/BigOperators/Group/List/Defs.ltar
+✖ [667/711] Building Mathlib.Algebra.Group.Int.Defs (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/Int/Defs.ltar
+✖ [668/711] Building Mathlib.Algebra.Group.Nat.Defs (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/Nat/Defs.ltar
+✖ [671/711] Building Mathlib.Algebra.Group.Units.Defs (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/Units/Defs.ltar
+✖ [675/711] Building Mathlib.Data.List.TFAE (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/List/TFAE.ltar
+✖ [702/711] Building Mathlib.Order.Bounds.Defs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Order/Bounds/Defs.ltar
+✖ [711/1029] Building Mathlib.Data.Int.DivMod
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Int/DivMod.ltar
+✖ [744/1029] Building Mathlib.Algebra.GroupWithZero.Defs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/GroupWithZero/Defs.ltar
+✖ [752/1029] Building Mathlib.Control.ULift
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Control/ULift.ltar
+✖ [764/1029] Building Mathlib.Data.Option.NAry (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Option/NAry.ltar
+✖ [778/1029] Building Mathlib.Algebra.Notation.Bracket
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Notation/Bracket.ltar
+✖ [779/1029] Building Mathlib.Algebra.Group.IsCommutative (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/IsCommutative.ltar
+✖ [787/1029] Building Mathlib.Util.AtomM
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/AtomM.ltar
+✖ [830/1029] Building Mathlib.Data.Nat.Cast.Pi
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Nat/Cast/Pi.ltar
+✖ [850/1029] Building Mathlib.Tactic.Bound.Init
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Bound/Init.ltar
+✖ [889/1029] Building Mathlib.Algebra.Group.Invertible.Defs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/Invertible/Defs.ltar
+✖ [895/1029] Building Mathlib.Tactic.HaveI
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/HaveI.ltar
+✖ [896/1029] Building Mathlib.Lean.Expr.Rat
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Expr/Rat.ltar
+✖ [897/1029] Building Mathlib.Util.Qq (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/Qq.ltar
+✖ [899/1029] Building Mathlib.Data.Rat.Init
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Rat/Init.ltar
+✖ [925/1029] Building Mathlib.Data.PNat.Notation
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/PNat/Notation.ltar
+✖ [946/1029] Building Mathlib.Tactic.TryThis
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/TryThis.ltar
+✖ [950/1029] Building Mathlib.Algebra.Group.Action.Defs
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/Action/Defs.ltar
+✖ [960/1029] Building Mathlib.Algebra.Regular.Opposite
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Regular/Opposite.ltar
+✖ [973/1029] Building Mathlib.Data.Int.Cast.Pi
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Int/Cast/Pi.ltar
+✖ [992/1029] Building Mathlib.Logic.Function.CompTypeclasses
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Logic/Function/CompTypeclasses.ltar
+✖ [1023/1029] Building Mathlib.Algebra.Notation (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Notation.ltar
+✖ [1038/1365] Building Mathlib.Data.Ineq
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Ineq.ltar
+✖ [1039/1365] Building Mathlib.Tactic.FieldSimp.Attr
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/FieldSimp/Attr.ltar
+✖ [1040/1365] Building Mathlib.Util.DischargerAsTactic (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/DischargerAsTactic.ltar
+✖ [1043/1365] Building Mathlib.Util.SynthesizeUsing (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/SynthesizeUsing.ltar
+✖ [1048/1365] Building Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm.Datatypes (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Linarith/Oracle/SimplexAlgorithm/Datatypes.ltar
+✖ [1053/1365] Building Mathlib.Lean.Meta.Tactic.Rewrite (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Lean/Meta/Tactic/Rewrite.ltar
+✖ [1060/1365] Building Mathlib.Util.ElabWithoutMVars
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/ElabWithoutMVars.ltar
+✖ [1149/1365] Building Mathlib.Tactic.Continuity.Init (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Continuity/Init.ltar
+✖ [1151/1365] Building Mathlib.Util.DelabNonCanonical
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/DelabNonCanonical.ltar
+✖ [1389/1723] Building Mathlib.Control.Monad.Basic (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Control/Monad/Basic.ltar
+✖ [1421/1723] Building Mathlib.Order.Sigma.Lex (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Order/Sigma/Lex.ltar
+✖ [1567/1723] Building Mathlib.Algebra.Group.PUnit
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Group/PUnit.ltar
+⚠ [1926/2015] Ran Conjectures.KovalevZeroFreeCoefficients
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Analysis.Complex.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Algebra.BigOperators.Field` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Tactic.Positivity` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeCoefficients.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✖ [1950/2015] Building Mathlib.Algebra.Notation.Lemmas (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Algebra/Notation/Lemmas.ltar
+✖ [1962/2015] Building Mathlib.Tactic.ProxyType (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/ProxyType.ltar
+✖ [2029/2331] Building Mathlib.Tactic.SuppressCompilation
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/SuppressCompilation.ltar
+✖ [2237/2331] Building Mathlib.Tactic.Polynomial.Core (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Polynomial/Core.ltar
+✖ [2309/2331] Building Mathlib.Data.Sym.Sym2.Init (2ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Sym/Sym2/Init.ltar
+✖ [2387/2650] Building Mathlib.Data.Nat.MaxPowDiv (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Nat/MaxPowDiv.ltar
+✖ [2478/2650] Building Mathlib.Tactic.Measurability.Init (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Tactic/Measurability/Init.ltar
+✖ [2589/2650] Building Mathlib.Data.Nat.NthRoot.Defs (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Data/Nat/NthRoot/Defs.ltar
+✖ [2736/2946] Building Mathlib.Util.Superscript (1ms)
+error: failed to remove output artifacts: read-only file system (error code: 30)
+  file: /workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/ir/Mathlib/Util/Superscript.ltar
+⚠ [2906/2946] Ran Conjectures.KovalevZeroFreeBeta
+warning: Conjectures/KovalevZeroFreeBeta.lean: imports `Mathlib.Probability.Distributions.Beta` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeBeta.lean: imports `Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeBeta.lean: imports `Mathlib.MeasureTheory.Integral.Prod` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeBeta.lean: imports `Mathlib.Tactic.FunProp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2907/2946] Ran Conjectures.KovalevZeroFreeMobius
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.MeasureTheory.Function.JacobianOneDim` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Analysis.Calculus.Deriv.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Analysis.Calculus.Deriv.Inv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Tactic.FunProp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Tactic.Positivity` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeMobius.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2912/2946] Ran Conjectures.KovalevZeroFreeGeometry
+warning: Conjectures/KovalevZeroFreeGeometry.lean: imports `Mathlib.Analysis.RCLike.Sqrt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeGeometry.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeGeometry.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeGeometry.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeGeometry.lean: imports `Mathlib.Tactic.Positivity` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeGeometry.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2914/2946] Ran Conjectures.KovalevZeroFreeRemainder
+warning: Conjectures/KovalevZeroFreeRemainder.lean: imports `Mathlib.MeasureTheory.Function.SpecialFunctions.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2921/2946] Ran Conjectures.KovalevZeroFreeDerivative
+warning: Conjectures/KovalevZeroFreeDerivative.lean: imports `Mathlib.Analysis.Complex.SqrtDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeDerivative.lean: imports `Mathlib.Analysis.Complex.RealDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeDerivative.lean: imports `Mathlib.Analysis.Calculus.Deriv.Pow` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeDerivative.lean: imports `Mathlib.Analysis.Calculus.Deriv.Add` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeDerivative.lean: imports `Mathlib.Tactic.LinearCombination` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2922/2946] Ran Conjectures.KovalevZeroFreeSectionIntegral
+warning: Conjectures/KovalevZeroFreeSectionIntegral.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2942/2946] Ran Conjectures.KovalevZeroFreeTaylorSeries
+warning: Conjectures/KovalevZeroFreeTaylorSeries.lean: imports `Mathlib.Analysis.Analytic.Binomial` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeTaylorSeries.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeTaylorSeries.lean: imports `Mathlib.Analysis.Complex.SqrtDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Conjectures/KovalevZeroFreeTaylorSeries.lean: imports `Mathlib.Analysis.Normed.Ring.InfiniteSum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2943/2946] Ran Conjectures.KovalevZeroFreeTaylorAnalytic
+warning: Conjectures/KovalevZeroFreeTaylorAnalytic.lean: imports `Mathlib.Algebra.Ring.GeomSum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2944/2946] Ran Conjectures.KovalevZeroFreeTaylorFinite
+warning: Conjectures/KovalevZeroFreeTaylorFinite.lean: imports `Mathlib.Algebra.BigOperators.Group.Finset.Sigma` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Some required targets logged failures:
+- Mathlib.Algebra.Group.Hom.Defs
+- Mathlib.Lean.Meta.CongrTheorems
+- Mathlib.Tactic.Relation.Rfl
+- Mathlib.Control.Combinators
+- Mathlib.Data.Option.Defs
+- Mathlib.Data.Sigma.Basic
+- Mathlib.Util.AtLocation
+- Mathlib.Util.CompileInductive
+- Mathlib.Tactic.Coe
+- Mathlib.Tactic.Lift
+- Mathlib.Algebra.Notation.Pi.Basic
+- Mathlib.Data.Ordering.Basic
+- Mathlib.Order.Defs.PartialOrder
+- Mathlib.Order.Notation
+- Mathlib.Tactic.FastInstance
+- Mathlib.Tactic.GCongr.ForwardAttr
+- Mathlib.Tactic.PPWithUniv
+- Mathlib.Logic.Function.ULift
+- Mathlib.Tactic.Finiteness.Attr
+- Mathlib.Tactic.Basify.Attr
+- Mathlib.Logic.Pairwise
+- Mathlib.Data.Nat.Init
+- Mathlib.Tactic.ToExpr
+- Mathlib.Data.Set.CoeSort
+- Mathlib.Basic.IsEmpty.Basic
+- Mathlib.Tactic.Choose
+- Mathlib.Tactic.Monotonicity.Attr
+- Mathlib.Tactic.SetLike
+- Mathlib.Control.Functor
+- Mathlib.Data.List.Monad
+- Mathlib.Tactic.Attr.Core
+- Mathlib.Tactic.ApplyCongr
+- Mathlib.Lean.Meta.Basic
+- Mathlib.Tactic.ApplyWith
+- Mathlib.Tactic.CasesM
+- Mathlib.Tactic.Check
+- Mathlib.Tactic.ClearExclamation
+- Mathlib.Tactic.ClearExcept
+- Mathlib.Tactic.Clear_
+- Mathlib.Lean.GoalsLocation
+- Mathlib.Lean.Meta.KAbstractPositions
+- Mathlib.Lean.FoldEnvironment
+- Mathlib.Lean.Meta.RefinedDiscrTree.Basic
+- Mathlib.Tactic.NthRewrite
+- proofwidgets/widgetPackageLock
+- Mathlib.Tactic.Constructor
+- Mathlib.Lean.MessageData.Trace
+- Mathlib.Tactic.DefEqTransformations
+- Mathlib.Tactic.DeprecateTo
+- Mathlib.Tactic.DSimpPercent
+- Mathlib.Tactic.ErwQuestion
+- Mathlib.Tactic.ExistsI
+- Mathlib.Tactic.FailIfNoProgress
+- Mathlib.Tactic.Find
+- Mathlib.Tactic.FunProp.Decl
+- Mathlib.Tactic.FunProp.Mor
+- Mathlib.Tactic.FunProp.ToBatteries
+- Mathlib.Tactic.InferParam
+- Mathlib.Tactic.GrindAttrs
+- Mathlib.Tactic.GuardGoalNums
+- Mathlib.Tactic.GuardHypNums
+- Mathlib.Tactic.HigherOrder
+- Mathlib.Util.TermReduce
+- Mathlib.Tactic.Linter.HaveLetLinter
+- Mathlib.Tactic.Linter.MinImports
+- Mathlib.Tactic.Linter.PPRoundtrip
+- Mathlib.Tactic.Linter.UpstreamableDecl
+- Mathlib.Tactic.Observe
+- Mathlib.Tactic.RSuffices
+- Mathlib.Tactic.Recover
+- Mathlib.Tactic.Rename
+- Mathlib.Util.Tactic
+- Mathlib.Tactic.Set
+- Mathlib.Lean.Elab.Tactic.Basic
+- Mathlib.Tactic.SimpIntro
+- Mathlib.Tactic.Simproc.ExistsAndEq
+- Mathlib.Tactic.Subsingleton
+- Mathlib.Tactic.Substs
+- Mathlib.Tactic.SuccessIfFailWithMsg
+- Mathlib.Tactic.SudoSetOption
+- Mathlib.Tactic.SwapVar
+- Mathlib.Tactic.Trace
+- Mathlib.Tactic.UnsetOption
+- Mathlib.Tactic.Variable
+- Mathlib.Tactic.Widget.SelectInsertParamsClass
+- Mathlib.Util.CountHeartbeats
+- Mathlib.Util.PrintSorries
+- Mathlib.Util.TransImports
+- Mathlib.Util.WhatsNew
+- Mathlib.Logic.OpClass
+- Mathlib.Data.Prod.Basic
+- Mathlib.Data.Sum.Basic
+- Mathlib.Data.Prod.PProd
+- Mathlib.Data.Finset.Attr
+- Mathlib.Data.List.Induction
+- Mathlib.Util.PPOptions
+- Mathlib.Order.Lex
+- Mathlib.Algebra.BigOperators.Group.List.Defs
+- Mathlib.Algebra.Group.Int.Defs
+- Mathlib.Algebra.Group.Nat.Defs
+- Mathlib.Algebra.Group.Units.Defs
+- Mathlib.Data.List.TFAE
+- Mathlib.Order.Bounds.Defs
+- Mathlib.Data.Int.DivMod
+- Mathlib.Algebra.GroupWithZero.Defs
+- Mathlib.Control.ULift
+- Mathlib.Data.Option.NAry
+- Mathlib.Algebra.Notation.Bracket
+- Mathlib.Algebra.Group.IsCommutative
+- Mathlib.Util.AtomM
+- Mathlib.Data.Nat.Cast.Pi
+- Mathlib.Tactic.Bound.Init
+- Mathlib.Algebra.Group.Invertible.Defs
+- Mathlib.Tactic.HaveI
+- Mathlib.Lean.Expr.Rat
+- Mathlib.Util.Qq
+- Mathlib.Data.Rat.Init
+- Mathlib.Data.PNat.Notation
+- Mathlib.Tactic.TryThis
+- Mathlib.Algebra.Group.Action.Defs
+- Mathlib.Algebra.Regular.Opposite
+- Mathlib.Data.Int.Cast.Pi
+- Mathlib.Logic.Function.CompTypeclasses
+- Mathlib.Algebra.Notation
+- Mathlib.Data.Ineq
+- Mathlib.Tactic.FieldSimp.Attr
+- Mathlib.Util.DischargerAsTactic
+- Mathlib.Util.SynthesizeUsing
+- Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm.Datatypes
+- Mathlib.Lean.Meta.Tactic.Rewrite
+- Mathlib.Util.ElabWithoutMVars
+- Mathlib.Tactic.Continuity.Init
+- Mathlib.Util.DelabNonCanonical
+- Mathlib.Control.Monad.Basic
+- Mathlib.Order.Sigma.Lex
+- Mathlib.Algebra.Group.PUnit
+- Mathlib.Algebra.Notation.Lemmas
+- Mathlib.Tactic.ProxyType
+- Mathlib.Tactic.SuppressCompilation
+- Mathlib.Tactic.Polynomial.Core
+- Mathlib.Data.Sym.Sym2.Init
+- Mathlib.Data.Nat.MaxPowDiv
+- Mathlib.Tactic.Measurability.Init
+- Mathlib.Data.Nat.NthRoot.Defs
+- Mathlib.Util.Superscript
+error: build failed

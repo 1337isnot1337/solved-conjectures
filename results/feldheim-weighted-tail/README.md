@@ -4,6 +4,11 @@
 
 Assuming the ratio is bounded makes the sum of the two log-tails approximately convex. Over windows with arbitrarily large increases in that sum, a common affine approximation forces the ratio to grow without bound.
 
+Complete Lean verification of original Conjecture 1 covers every positive weight below one and arbitrary distinct laws, including atoms. The [formalization](FORMALIZATION.md), [independent review](LEAN_REVIEW.md), and [verification receipt](verification/receipt.json) record the actual compact-support condition, probability events and infinite limsup. The norm and finite-threshold supplements remain unformalized.
+
+- [Lean proof of the original conjecture](../../lean/Conjectures/FeldheimWeightedTail.lean)
+- [Formalization scope and source modules](FORMALIZATION.md)
+- [Independent statement and proof review](LEAN_REVIEW.md)
 - [Complete analytic proof, including the multivariate consequence](PROOF.md)
 - [Explicit finite-threshold theorem for nonatomic laws](FINITE-THRESHOLD.md)
 - [Source scope and independent audit](AUDIT.md)

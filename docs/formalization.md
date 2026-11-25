@@ -1,5 +1,107 @@
 # Full formalization campaign
 
+## Braun–Bruegge’s minimum facet conjecture
+
+Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)
+
+## Feldheim–Feldheim’s weighted tail conjecture
+
+The [complete Lean proof](../results/feldheim-weighted-tail/FORMALIZATION.md) establishes original Conjecture 1 for every positive weight below one and arbitrary independent nonnegative laws without compact support, including atoms and singular laws. Actual moving averages supply the continuity bridge, an actual affine-minorant supremum supplies the convex approximation, and inverse levels supply the common near-affine windows. Product-measure conditioning and an atom-safe Stieltjes inequality close the literal infinite-limsup statement.
+
+The twenty-module closure passed fresh strict builds, an all-owned/private audit of 179 declarations and 161 theorems, all thirty required endpoints, and exact stock-kernel replay. The [independent source/evidence reviews](../results/feldheim-weighted-tail/LEAN_REVIEW.md) bind the original statement and proof to the frozen source hashes. Only the three standard axioms occur. The norm and finite-threshold supplements remain unformalized, and wrappers or proof components are not additional results. Source authors, priority uncertainty and catalogue rank are preserved.
+
+## Hajdu–Sárközy’s shifted-product total primitivity conjecture
+
+The [complete Lean formalization](../results/hajdu-sarkozy-shifted-products/FORMALIZATION.md) proves the original conjecture for every exponent pair at least two and every finite modification. It also proves every nonzero-shift two-variable symmetric-difference perturbation at the inverse minimum-exponent scale, and the full summable-family theorem with actual real-threshold counts and a positive retained-count limsup. Coefficient representations may overlap, and the candidate factor sets may be infinite.
+
+The twenty-four-module closure, comprising thirteen new modules and eleven unchanged dependencies, passed strict builds, the complete all-owned/private axiom audit, and exact stock-kernel replay. All fifty-three required endpoints are checked, and only the three standard axioms occur. The [independent review](../results/hajdu-sarkozy-shifted-products/LEAN_REVIEW.md), [proof receipt](../results/hajdu-sarkozy-shifted-products/verification/receipt.json), and [publication binding](../results/hajdu-sarkozy-shifted-products/verification/publication-binding.json) distinguish the proof gate from metadata-only registration checks. The optional extension to more than two variables is not separately formalized. Existing credits, priority uncertainty, and catalogue rank are retained; reused dependencies and corollaries are not additional results.
+
+
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+[Complete source-matched formalization](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) of the original Conjecture 5.8. The three `Conjectures.ThueMorseSignDensity*` modules derive the recurrence from the actual stabilized integer coefficients of the infinite product and prove both finite-prefix count bounds and negations of density zero for `m=2`. The stronger exact-density theorem is not included. Scoped strict compilation, all-owned axiom audit and stock-kernel replay passed; package-wide validation is separate.
+
+## Kovalev’s square-root Taylor-section zero-free conjecture
+
+The [complete proof](../results/kovalev-zero-free/FORMALIZATION.md) establishes zero-freeness of every actual Taylor section of the principal analytic square root of the geometric polynomial on the closed unit disk, for every positive length. Its coefficient/iterated-derivative bridge, beta-law transport, finite-section integral identity, and boundary arguments discharge the analytic inputs. The original Conjecture 1.2 is a named endpoint; the broader fractional-exponent and segment supplements and trigonometric Conjecture 1.3 remain unformalized.
+
+The [full receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) records 21 strict source builds, the complete audit of 291 declarations (265 theorems, six private declarations, 31 required endpoints), and exact 21-module stock-kernel replay. The [independent reviews](../results/kovalev-zero-free/LEAN_REVIEW.md) check the statement, analytic bridges and evidence. Only the three standard logical axioms occur transitively. Publication refreshes preserve these exact source and proof-control hashes; metadata checks do not claim a second proof rebuild. Aggregate and deployment follow-up is tracked separately in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
+## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
+
+The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) formalizes the
+disproof of the general clause of Conjecture 5.2. It verifies the exponent-17
+counterexample and both valuations in the uniform family for every k ≥ 11,
+with the indices in the same aligned block. The coefficient model is the
+stabilized finite product. The exact modular certificates use carry-free
+integer packing and ordinary kernel reduction.
+
+All three modules passed strict source compilation and pinned stock-kernel
+replay. The all-owned audit checked 123 declarations, including 96 private
+declarations, and eight required endpoints. See the
+[local receipt](verification/lean-thue-morse-valuation-publication-20261124/receipt.json).
+
+
+## Ferroni–Higashitani’s first-three interior Ehrhart question
+
+The [Lean proof](../results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md) constructs the original dimension-170 Cayley-box witness in the usual integer lattice and proves the strict inequality in Question 5.12(a) for its unique Ehrhart polynomial. The proof checks IDP at every positive dilation and gives an exact identification of the three negative evaluations with the corresponding topological interior lattice-point counts. The written amplification and the triangulation supplement remain separate.
+
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
+
+## Steinerberger’s greedy-energy Fourier conjecture
+
+The [complete Lean disproof](../results/steinerberger-greedy-fourier/FORMALIZATION.md) constructs one actual infinite sequence satisfying the exact Bernoulli-kernel minimization rule. Its actual truncated harmonic-weighted sum of absolute Fourier magnitudes violates every eventual logarithmic bound. The proof establishes greedy admissibility directly and does not assume a characterization of minimizers.
+
+The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) checks the original source, all sequence and Fourier definitions, the truncation and injectivity of the selected frequencies, and the final asymptotic negation. The four-module closure has 113 owned declarations, including 96 theorems and three private declarations, and 15 required endpoints. The [verification receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records fresh strict builds, the complete axiom audit and stock-kernel replay. Only the original conjecture is marked complete; the written sharp-constant and all-tie-breaking supplements remain unformalized. The recorded argument and prior dyadic results retain their attribution and priority qualification.
+
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+[Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
+The sum of the digit sets bounded above by three and four contains $[2879/3520,2]$
+and represents every real residue modulo one. The proof checks the fifteen
+branch containments and the geometric approximation argument for the closed
+sumsets of infinite Lüroth expansions. The two-module local import closure
+passed the pinned kernel replay.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+`GesselZhuang.conjecture_7_3` and `GesselZhuang.conjecture_7_2` prove the complete existing result for the actual finite permutation sums, with exponent inverse descents plus one and gamma center `(N+1)/2`. `pinnacle_gamma_expansion` exposes the coefficients directly. The [source audit](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) checks all labels, statistics, quantifiers, and boundary conventions against the primary article. The history equivalence and polynomial enumeration are proved, as are every root and gamma-factorization input. The separate inverse-peak Conjecture 7.1 is not asserted.
+
+## Hajdu–Sárközy’s shifted-power perturbation conjecture
+
+The [complete Lean formalization](../results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md) proves the original conjecture for every exponent at least two and the stronger nonzero-shift symmetric-difference theorem. The actual real-threshold error is little-o of the root scale; arbitrary nontrivial positive-integer product decompositions are excluded after every finite modification. The original root-zero convention is included.
+
+The eleven-module closure passed strict compilation, the all-owned/private transitive axiom audit, and exact stock-kernel replay. The audit covers 185 declarations, 157 theorems, and twenty required endpoints, allowing only `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md) checks the exact source statement, the full argument and the frozen verification evidence. The [portable receipt](../results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json) is distinct from the retained lane and interrupted-run records. The optional weaker-hypothesis retained-limsup supplement remains unformalized. Existing proposer/proof-author credits and bounded priority uncertainty are retained; this is one existing conjecture entry.
+
+## Rowland–Sistos Barrón conjecture
+
+`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
+
+## Johnson's conjecture
+
+`JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.
+
+The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
+
 ## Caiolo–Ferroni–Hoster conjecture
 
 `CaioloFerroniHoster.counterexample_family` checks the complete rank-five
@@ -1643,3 +1745,13 @@ records 25 declarations, 22 theorems, eight private declarations, and the
 standard three-axiom whitelist. The root result is a full disproof of the
 universal source conjecture; the additional positive-beta and all-slope
 families remain unformalized. The combined repository gate remains pending.
+
+## Fan–Tringali’s power-monoid length-set conjecture
+
+Complete Lean verification of the original 2018 conjecture: every finite nonempty set of integers at least two is realized as the entire atom-length set in both the ordinary and restricted finitary power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers. No ambient commutativity or cancellation is assumed. [`finite_spectrum_power_monoids`](../lean/Conjectures/FanTringaliMonoid.lean) proves the full transfer, and [`natural_length_system`](../lean/Conjectures/FanTringaliNaturalSystem.lean) proves the exact reduced-natural-number system.
+
+All 18 frozen modules passed strict source builds, the all-owned/private axiom audit (432 declarations, 350 theorems, three private declarations, 28 required endpoints), and stock kernel replay. [Scope and reproduction](../results/fan-tringali-power-monoid-lengths/LEAN.md), [statement review](../results/fan-tringali-power-monoid-lengths/LEAN_REVIEW.md), and [complete receipt](verification/lean-fan-tringali-complete-20261124-162051/receipt.json). The separate survey irreducible formulation, prescribed multiplicities and relative cancellativity remain unformalized. The scoped pass does not claim an aggregate repository pass or a current public deployment; those gates are reported separately, including the dependency-cache blocker in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). This is one completed existing entry.
+
+## Hartke–Stolee–West–Yancey matching-excess conjecture
+
+Complete Lean verification of the original tail-minimum divergence conjecture and the recorded quantitative bounds for every matching count at least two. The 22-module closure proves actual graph matching/edge counts, both general constructions, a bounded and attained maximum over all finite even graph orders, exact eventual stabilization, and the uniform all-tail limit. All fresh strict builds, the complete audit of 505 declarations (435 theorems, 32 private declarations, 42 required endpoints), and exact stock replay passed. [Scope](../results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md), [independent review](../results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md), and [receipt](verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json). One existing result; stronger growth and exact upper-bound questions remain outside scope. Aggregate/hosted/deployment status remains separate under [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

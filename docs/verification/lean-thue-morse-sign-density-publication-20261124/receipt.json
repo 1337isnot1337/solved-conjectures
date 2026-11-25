@@ -1,0 +1,142 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-24T18:39:58.852147+00:00",
+  "finished_at": "2026-11-24T18:40:10.746159+00:00",
+  "root": "Conjectures.ThueMorseSignDensity",
+  "project_modules": [
+    "Conjectures.ThueMorseSignDensity",
+    "Conjectures.ThueMorseSignDensityCore",
+    "Conjectures.ThueMorseSignDensityProduct"
+  ],
+  "required_endpoints": [
+    "ThueMorseSignDensityProduct.prefix_step",
+    "ThueMorseSignDensityProduct.prefix_stable",
+    "ThueMorseSignDensityProduct.t_eq_prefix",
+    "ThueMorseSignDensityProduct.t_even",
+    "ThueMorseSignDensityProduct.t_odd",
+    "ThueMorseSignDensity.recurrence",
+    "ThueMorseSignDensity.t_nonzero",
+    "ThueMorseSignDensity.signed_identity0",
+    "ThueMorseSignDensity.signed_identity1",
+    "ThueMorseSignDensity.exceptions_nodup",
+    "ThueMorseSignDensity.exceptions_mem",
+    "ThueMorseSignDensity.count_eq",
+    "ThueMorseSignDensity.exception0_iff",
+    "ThueMorseSignDensity.exception1_iff",
+    "ThueMorseSignDensity.exception_block0",
+    "ThueMorseSignDensity.exception_block1",
+    "ThueMorseSignDensity.usual_block0",
+    "ThueMorseSignDensity.usual_block1",
+    "ThueMorseSignDensity.lower_bound0",
+    "ThueMorseSignDensity.lower_bound1",
+    "ThueMorseSignDensity.upper_bound0",
+    "ThueMorseSignDensity.upper_bound1",
+    "ThueMorseSignDensity.densityZero_reciprocal",
+    "ThueMorseSignDensity.not_zero_density0",
+    "ThueMorseSignDensity.not_zero_density1",
+    "ThueMorseSignDensity.conjecture_false",
+    "ThueMorseSignDensity.both_counterexamples"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ThueMorseSignDensity.lean": "1daa845988ef152727be572876af444e054cec08cf44caa5a56279d220dc57f7",
+    "lean/Conjectures/ThueMorseSignDensityCore.lean": "a4f715d8e08a77a826ac92e982ca123dce651ff0afc5b905214af8000682bbbf",
+    "lean/Conjectures/ThueMorseSignDensityProduct.lean": "cdfc130cd8726c9bc616742ecd9f26b7a20e3a80758ed299781c6fd2ee08ad1c"
+  },
+  "input_sha256": {
+    "lean/Conjectures/ThueMorseSignDensity.lean": "1daa845988ef152727be572876af444e054cec08cf44caa5a56279d220dc57f7",
+    "lean/Conjectures/ThueMorseSignDensityCore.lean": "a4f715d8e08a77a826ac92e982ca123dce651ff0afc5b905214af8000682bbbf",
+    "lean/Conjectures/ThueMorseSignDensityProduct.lean": "cdfc130cd8726c9bc616742ecd9f26b7a20e3a80758ed299781c6fd2ee08ad1c",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-sign-density-current/lean/.lake/build/lib/lean/Conjectures/ThueMorseSignDensityProduct.olean",
+        "Conjectures/ThueMorseSignDensityProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ThueMorseSignDensityProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-sign-density-current/lean/.lake/build/lib/lean/Conjectures/ThueMorseSignDensityCore.olean",
+        "Conjectures/ThueMorseSignDensityCore.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ThueMorseSignDensityCore.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-sign-density-current/lean/.lake/build/lib/lean/Conjectures/ThueMorseSignDensity.olean",
+        "Conjectures/ThueMorseSignDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ThueMorseSignDensity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/tmp/solved-thue-morse-sign-density-publication-gate/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-conjectures-lean-sign-density-current/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ThueMorseSignDensity"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 250,
+    "modules": 3,
+    "private_declarations": 119,
+    "raw_declarations": 250,
+    "required": 27,
+    "tag": "passed",
+    "theorems": 212
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
