@@ -421,7 +421,7 @@ The standard-library verifier independently checks 4258 rational median brackets
 
 ## Exact parking-function excedance counterexample
 
-Run `python3 results/alexandersson-parking-excedance/verify.py`. The script checks two exact enumerations through length 17, direct word enumeration through length 6, and the negative Laguerre expression at −1/5. The [proof](../results/alexandersson-parking-excedance/PROOF.md) explains why this refutes the named conjecture. No numerical root approximation or Lean theorem is used.
+Run `python3 results/alexandersson-parking-excedance/verify.py`. The script checks two exact enumerations through length 17, direct word enumeration through length 6, and the negative Laguerre expression at −1/5. The [proof](../results/alexandersson-parking-excedance/PROOF.md) explains why this refutes the named conjecture. All computations in the Python check are exact. The [Lean receipt](../results/alexandersson-parking-excedance/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay for the five-module closure. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md)
 
 ## Computational checks
 

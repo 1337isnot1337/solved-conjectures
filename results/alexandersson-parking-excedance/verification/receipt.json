@@ -1,0 +1,157 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T11:02:55.591992+00:00",
+  "finished_at": "2026-11-25T11:04:46.666012+00:00",
+  "root": "Conjectures.AlexanderssonParkingExcedance",
+  "project_modules": [
+    "Conjectures.AlexanderssonParkingExcedance",
+    "Conjectures.AlexanderssonParkingExcedanceCount",
+    "Conjectures.AlexanderssonParkingExcedanceEnumeration",
+    "Conjectures.AlexanderssonParkingExcedanceRoots",
+    "Conjectures.AlexanderssonParkingExcedanceWords"
+  ],
+  "required_endpoints": [
+    "AlexanderssonParkingExcedance.isParking_iff_sorted_permutation",
+    "AlexanderssonParkingExcedance.state_card_succ",
+    "AlexanderssonParkingExcedance.final_state_card",
+    "AlexanderssonParkingExcedance.polynomial_eq_state_sum",
+    "AlexanderssonParkingExcedance.polynomial17_eq_row",
+    "AlexanderssonParkingExcedance.row17_laguerre_neg",
+    "AlexanderssonParkingExcedance.parking_excedance_counterexample"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/AlexanderssonParkingExcedance.lean": "e7c44ac234b3ef3face17fe45cfe631badaade3e30151d20197f0ce6f540008b",
+    "lean/Conjectures/AlexanderssonParkingExcedanceCount.lean": "b1d18e8889487e31e066f890337a4e69634c27ccfb327235b8aca49b5ab4b09c",
+    "lean/Conjectures/AlexanderssonParkingExcedanceEnumeration.lean": "6fe39af874813bfddc047545909293386e14fe248c405cb2913e5c15c39dcc06",
+    "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
+    "lean/Conjectures/AlexanderssonParkingExcedanceWords.lean": "155b74f3a3782f6e9aef744a95ef04fd768f4ecca4ab2125b9a23a86545a5c33"
+  },
+  "input_sha256": {
+    "lean/Conjectures/AlexanderssonParkingExcedance.lean": "e7c44ac234b3ef3face17fe45cfe631badaade3e30151d20197f0ce6f540008b",
+    "lean/Conjectures/AlexanderssonParkingExcedanceCount.lean": "b1d18e8889487e31e066f890337a4e69634c27ccfb327235b8aca49b5ab4b09c",
+    "lean/Conjectures/AlexanderssonParkingExcedanceEnumeration.lean": "6fe39af874813bfddc047545909293386e14fe248c405cb2913e5c15c39dcc06",
+    "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
+    "lean/Conjectures/AlexanderssonParkingExcedanceWords.lean": "155b74f3a3782f6e9aef744a95ef04fd768f4ecca4ab2125b9a23a86545a5c33",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AlexanderssonParkingExcedanceWords.olean",
+        "Conjectures/AlexanderssonParkingExcedanceWords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlexanderssonParkingExcedanceWords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AlexanderssonParkingExcedanceCount.olean",
+        "Conjectures/AlexanderssonParkingExcedanceCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlexanderssonParkingExcedanceCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AlexanderssonParkingExcedanceEnumeration.olean",
+        "Conjectures/AlexanderssonParkingExcedanceEnumeration.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlexanderssonParkingExcedanceEnumeration.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AlexanderssonParkingExcedanceRoots.olean",
+        "Conjectures/AlexanderssonParkingExcedanceRoots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlexanderssonParkingExcedanceRoots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AlexanderssonParkingExcedance.olean",
+        "Conjectures/AlexanderssonParkingExcedance.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlexanderssonParkingExcedance.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "../results/alexandersson-parking-excedance/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.AlexanderssonParkingExcedance"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 266,
+    "modules": 5,
+    "private_declarations": 145,
+    "raw_declarations": 266,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 190
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "command_cwd": "lean"
+}
