@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Reduce the original Sobolewski–Ulas statement in Lean
+
+Lean connects the bounded gaps, finite kernels, and non-erasing gap
+expansion to the literal exceptional binary-partition enumeration.
+The all-base conclusion remains conditional on the written partition
+classification and the Cobham–Durand implication.
+[Scope and receipt](results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Sobolewski–Ulas power-of-two obstruction in Lean
 
 Lean proves nonregularity of the exact source-layer enumeration at

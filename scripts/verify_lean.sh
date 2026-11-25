@@ -393,6 +393,13 @@ modules=(
   Conjectures.SobolewskiUlasExceptionLinearRepresentation
   Conjectures.SobolewskiUlasExceptionPowerTwoFalse
   Conjectures.SobolewskiUlasExceptionPowerTwoScope
+  Conjectures.SobolewskiUlasExceptionBinaryAutomaton
+  Conjectures.SobolewskiUlasExceptionCobhamReduction
+  Conjectures.SobolewskiUlasExceptionFiniteKernel
+  Conjectures.SobolewskiUlasExceptionGapExpansion
+  Conjectures.SobolewskiUlasExceptionGapRegular
+  Conjectures.SobolewskiUlasExceptionIndicatorKernel
+  Conjectures.SobolewskiUlasExceptionOriginalReduction
   Conjectures.SobolewskiUlasExceptionRecurrenceAlgebra
   Conjectures.SobolewskiUlasExceptionRecurrenceWindow
   Conjectures.SobolewskiUlasExceptionRegularKernel
