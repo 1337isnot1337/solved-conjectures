@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-25 — Prove Shumyatsky’s conjugate prime-spectrum conjecture
+
+A pair of conjugates in every finite group generates a subgroup with the full prime spectrum. The proof lifts pairs across permuted simple factors and treats fixed simple factors via almost-simple generation. [Proof and audit](results/shumyatsky-conjugate-prime-spectrum/)
+
+
 ## 2026-11-25 — Disprove McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
 A repeated direct-sum construction gives a classical permutation-pattern interval with a strict rank dip. Distinct subpatterns are counted by their sum decompositions, and a separate exact integer checker reproduces all three coefficients. [Proof and audit](results/mcnamara-steingrimsson-rank-unimodality/)

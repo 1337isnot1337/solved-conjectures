@@ -61,6 +61,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Shumyatsky’s conjugate prime-spectrum conjecture": "shumyatsky-conjugate-prime-spectrum",
     "McNamara–Steingrímsson’s interval rank-unimodality conjecture": "mcnamara-steingrimsson-rank-unimodality",
     "Seven upper-half circular chromatic index certificates": "circular-index-upper-half-remaining-deltas",
     "Pantone–Bóna’s third-largest-terminal asymptotic conjecture": "pantone-bona-third-largest-terminal",

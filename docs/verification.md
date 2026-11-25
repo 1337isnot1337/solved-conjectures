@@ -1,5 +1,10 @@
 # Verification
 
+## Shumyatsky’s conjugate prime-spectrum conjecture
+
+The [written proof](../results/shumyatsky-conjugate-prime-spectrum/PROOF.md) gives a construction for every finite group. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) records the independent check of the graph lift and the hypotheses of the cited almost-simple generation results. Lean verification is pending.
+
+
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
 Run `python3 results/mcnamara-steingrimsson-rank-unimodality/verify.py` from the repository root. The standard-library checker counts the relevant layered patterns using binomial sums and reproduces the strict dip at relative ranks 44–46. The [proof](../results/mcnamara-steingrimsson-rank-unimodality/PROOF.md) establishes that these coefficients count distinct patterns in the interval.
