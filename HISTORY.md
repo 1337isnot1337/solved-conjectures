@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Ferreira–Simon diagonal Lean checkpoint
+
+Lean proves strict monotonicity of the explicit Pollard density integral and checks termwise differentiation of the Mittag–Leffler series. The diagonal inequality follows under the local Pollard representation hypothesis. The scoped source build, axiom audit, and stock-kernel replay passed. [Lean scope](results/ferreira-simon-diagonal/FORMALIZATION.md) · [Receipt](results/ferreira-simon-diagonal/verification/receipt.json).
+
 ## 2026-11-24 — Mazák–Zrubák conjecture on complete graphs minus an edge
 
 The actual real circular coloring reduction and Hall construction of a spanning order of every actual edge are checked in sixteen modules (ten new, six reused). Strict builds, the complete audit of 526 declarations (417 theorems, zero private declarations, twelve required endpoints), and exact stock-kernel replay passed. Only `propext`, `Classical.choice`, and `Quot.sound` occur. Steps 4–8 and the final index equality remain outside this checkpoint; the result is incomplete and its complete-result count is zero. The Hall argument is a proved reformulation of the recorded endpoint-expansion argument, with its source/sink deficits explicit. The original written proof, proposer/proof-author attribution and bounded priority statement are preserved. This research checkpoint changes only the existing entry’s Lean status; no new conjecture or completion is counted. [Scope](results/circular-index-complete-minus-edge/FORMALIZATION.md) and [receipt](docs/verification/lean-circular-complete-minus-edge-partial-20261124-162051/receipt.json).

@@ -22,7 +22,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **10.** [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | 🟡 | **47.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | **11.** [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ✅ | **47.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | **12.** [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ | **49.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
-| **12.** [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ | **49.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | ⬜ |
+| **12.** [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ | **49.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
 | **14.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **51.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | **15.** [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ | **51.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **16.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **53.** [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |

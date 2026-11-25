@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
+
+Lean proves strict monotonicity of the explicit Pollard density integral and checks termwise differentiation of the Mittag–Leffler series. The diagonal inequality follows under the local Pollard representation hypothesis. [Lean scope](../results/ferreira-simon-diagonal/FORMALIZATION.md)
+
 ## Dukes’s revstack interlacing conjecture
 
 Lean proves the source Eulerian formula for the actual revstack descent polynomial at every order at least three. Tracking the two parity classes through one maximum split gives the complete characterization of the unsorted words. The proof also turns the derivative inequality into strict interlacing of the literal descent polynomials and checks the transition from order three to four. The later finite transitions and the uniform derivative bound remain open in Lean. [Lean theorem](../lean/Conjectures/DukesRevstackFiniteStart.lean) · [Scoped receipt](verification/lean-dukes-revstack-enumeration-20261125/receipt.json)
