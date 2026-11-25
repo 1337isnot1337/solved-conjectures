@@ -1317,6 +1317,13 @@ import Conjectures.AthanasiadisChapotonChain
 import Conjectures.AthanasiadisChapotonTransfer
 import Conjectures.AthanasiadisChapotonGauge
 import Conjectures.AthanasiadisChapotonPolar
+import Conjectures.OrdinaryDarcais
+import Conjectures.OrdinaryDarcaisPacked
+import Conjectures.OrdinaryDarcaisRows
+import Conjectures.OrdinaryDarcaisData
+import Conjectures.OrdinaryDarcaisFinite
+import Conjectures.OrdinaryDarcaisCentral
+import Conjectures.OrdinaryDarcaisRoot
 import Conjectures.FussSlot
 import Conjectures.FussFinal
 import Conjectures.FussRoots

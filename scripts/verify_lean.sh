@@ -664,6 +664,13 @@ modules=(
   Conjectures.AthanasiadisChapotonTransfer
   Conjectures.AthanasiadisChapotonGauge
   Conjectures.AthanasiadisChapotonPolar
+  Conjectures.OrdinaryDarcais
+  Conjectures.OrdinaryDarcaisPacked
+  Conjectures.OrdinaryDarcaisRows
+  Conjectures.OrdinaryDarcaisData
+  Conjectures.OrdinaryDarcaisFinite
+  Conjectures.OrdinaryDarcaisCentral
+  Conjectures.OrdinaryDarcaisRoot
   Conjectures.FussSlot
   Conjectures.FussFinal
   Conjectures.FussWords

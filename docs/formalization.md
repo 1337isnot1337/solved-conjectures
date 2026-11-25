@@ -8,6 +8,10 @@ Partial. Lean proves the classical pattern-containment reductions for actual lay
 
 Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates have equivalent lattice-point sets, hence equal Ehrhart series and numerators. The real transfer is a positively homogeneous homeomorphism. [Lean scope](../results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md)
 
+## Heim–Neuhauser’s ordinary D’Arcais root conjecture
+
+Lean verifies the ordinary generating-function recurrence, the strict root comparisons for indices 6–50 and all real parameters at least 1, and the central Fourier integral bound under explicit saddle estimates. The full unbounded statement remains outside the Lean scope. [Lean scope](../results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
+
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
 Complete for Conjecture 6.16. Lean counts the literal ordered faces, verifies the exact finite certificates, and combines them with the uniform analytic grid. Both the literal rank polynomial and the evaluated characteristic face sum have the complete prescribed root multisets at every length at least three. [Scope and full receipt](../results/rossi-permutohedron-roots/FORMALIZATION.md).
