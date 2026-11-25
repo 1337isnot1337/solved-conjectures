@@ -77,9 +77,19 @@ from any valid seed allocation. Each block factor is independent of
 the weights assigned to the other blocks. See the
 [block factorization receipt](verification/block-moebius-factorization/receipt.json).
 
-Identifying these labeled factors across ambient vertex sets with the
-canonical block-size sequence, the exponential formula and Lagrange
-inversion remain outside this checkpoint.
+## Canonical finite recurrence by block sizes
+
+Lean now relabels every live block by its cardinality, also when the
+ambient sizes differ. The relabeling preserves the full weighted
+refinement order and the literal Möbius value. The
+[finite recurrence](../../lean/Conjectures/WachsCompleteGraphSizeRecurrence.lean)
+therefore uses the actual sum of one-block Möbius values on the
+canonical set of each size. Lean also obtains the exact
+characteristic polynomial as a sum of products of these size factors.
+See the [canonical size receipt](verification/canonical-size-recurrence/receipt.json).
+
+The exponential generating function step and Lagrange inversion still
+separate this finite recurrence from the verified Laguerre identity.
 
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent

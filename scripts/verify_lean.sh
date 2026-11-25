@@ -44,6 +44,15 @@ modules=(
   Conjectures.WachsCompleteGraphCoordinateCut
   Conjectures.WachsCompleteGraphCutCancellation
   Conjectures.WachsCompleteGraphFibreProduct
+  Conjectures.WachsCompleteGraphCanonicalBlock
+  Conjectures.WachsCompleteGraphCanonicalCut
+  Conjectures.WachsCompleteGraphIntervalMoebius
+  Conjectures.WachsCompleteGraphLabelEmbedding
+  Conjectures.WachsCompleteGraphLabelEquiv
+  Conjectures.WachsCompleteGraphSeededRecurrence
+  Conjectures.WachsCompleteGraphSizeRecurrence
+  Conjectures.WachsCompleteGraphWeightEquiv
+  Conjectures.WachsCompleteGraphWeightRelabel
   Conjectures.WachsCompleteGraphProductCancellation
   Conjectures.WachsCompleteGraphTopCut
   Conjectures.WachsCompleteGraphWeightCompletions
