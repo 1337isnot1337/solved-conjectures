@@ -3,10 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean checks the finite commutative monomial product and
-the signed hook cell product, residual coefficients and specialized
-determinants. The virtual-alphabet interpretation of the actual Schur
-expansion and independent symmetry/basis results still remain.
+Partial. Lean checks the finite commutative monomial product, signed
+hook cell product, and genuine virtual-alphabet interpolation of the
+source. The actual stable Schur coefficient identification and
+independent symmetry/basis results still remain.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question

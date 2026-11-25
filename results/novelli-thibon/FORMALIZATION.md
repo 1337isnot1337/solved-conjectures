@@ -85,12 +85,22 @@ on the specialized complete homogeneous sequence, and
 [the final comparison](../../lean/Conjectures/NovelliThibonHookExtraction.lean)
 under an explicit signed Schur-expansion hypothesis.
 
+The [virtual alphabet interpolation](../../lean/Conjectures/NovelliThibonVirtualFundamental.lean)
+starts with genuine finite ordinary evaluations. Lean partitions the
+fundamental words by their repeated-letter prefix, proves the exact
+binomial count by shifting weak boundaries, and checks the resulting
+rational polynomial at every nonnegative multiplicity. Its value at
+multiplicity minus one equals the signed fundamental evaluation.
+The [source interpolation](../../lean/Conjectures/NovelliThibonVirtualGraph.lean)
+applies the same construction to Definition 5.3 and recovers the literal
+cellwise product at minus one.
+
 This checks the intended monomial-product argument for Conjecture 5.7
-in the finite commutative source model. Relating the finite signed
-fundamental evaluation to the actual Schur expansion by virtual-alphabet
-specialization remains open in Lean, as do independent general LLT
-symmetry and Schur basis theorems. The general noncommutative lift,
-Conjecture 5.4, and the trace assertions are outside this scope.
+in the finite commutative source model. The remaining hook step is
+identifying the result with the actual stable Schur coefficients.
+Independent general LLT symmetry and Schur basis theorems, the general
+noncommutative lift, Conjecture 5.4, and the trace assertions are outside
+this scope.
 
 - [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
 - [Diagram and first-order replay](verification/diagram-first-order/receipt.json)
@@ -98,3 +108,4 @@ Conjecture 5.4, and the trace assertions are outside this scope.
 - [Standard tableau and Laurent product replay](verification/tableau-laurent-product/receipt.json)
 - [Source graph to formal Laurent polynomial replay](verification/source-laurent-certificate/receipt.json)
 - [Signed hook cell product and determinant replay](verification/signed-hook-cell-product/receipt.json)
+- [Virtual-alphabet interpolation replay](verification/virtual-alphabet-interpolation/receipt.json)
