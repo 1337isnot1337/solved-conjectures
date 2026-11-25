@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall lower bound on the moving-box integral
+
+Lean verifies the product-measure volume, the kernel product and signed integrand bounds, and the uniform lower bound after integration on the moving box. This does not control the complement. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall derivative determinant on the moving box
 
 Lean verifies the uniform signed lower bound in §6 (15) on the specified box, including a quantitative Vandermonde perturbation estimate and the exact factors removed from rows and columns. This does not yet compare the signed integrals. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
