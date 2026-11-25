@@ -61,9 +61,25 @@ counts these allocations, not their Möbius values. The
 records the scoped independent replay.
 
 This checks the finite one-block cancellation step of the recurrence
-underlying Theorem 5.7 in the cited paper. Factorization of the
-fibre Möbius sums over the blocks, the corresponding EGF and its
-Lagrange inversion are not proved by this checkpoint.
+underlying Theorem 5.7 in the cited paper.
+
+## Product of literal lower intervals and Möbius sums
+
+Lean constructs the order equivalence of the full weighted lower
+interval with the independent lower intervals on its actual labeled
+blocks. To prove the Möbius identity, Lean restricts to one component
+with all others at bottom. The product of the component Möbius
+values obeys the ambient cumulative cancellation law and hence is
+the actual recursive value. Finally Lean sums this identity over the
+independent block weight allocations, proving the
+[ordinary-fibre factorization](../../lean/Conjectures/WachsCompleteGraphFibreProduct.lean)
+from any valid seed allocation. Each block factor is independent of
+the weights assigned to the other blocks. See the
+[block factorization receipt](verification/block-moebius-factorization/receipt.json).
+
+Identifying these labeled factors across ambient vertex sets with the
+canonical block-size sequence, the exponential formula and Lagrange
+inversion remain outside this checkpoint.
 
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent

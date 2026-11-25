@@ -35,6 +35,17 @@ modules=(
   Conjectures.WachsCompleteGraphTopCancellation
   Conjectures.WachsCompleteGraphTopExtensions
   Conjectures.WachsCompleteGraphTopScope
+  Conjectures.WachsCompleteGraphBlockEquiv
+  Conjectures.WachsCompleteGraphBlockGluing
+  Conjectures.WachsCompleteGraphBlockIntervals
+  Conjectures.WachsCompleteGraphBlockMoebius
+  Conjectures.WachsCompleteGraphBlockOrder
+  Conjectures.WachsCompleteGraphBlockRestriction
+  Conjectures.WachsCompleteGraphCoordinateCut
+  Conjectures.WachsCompleteGraphCutCancellation
+  Conjectures.WachsCompleteGraphFibreProduct
+  Conjectures.WachsCompleteGraphProductCancellation
+  Conjectures.WachsCompleteGraphTopCut
   Conjectures.WachsCompleteGraphWeightCompletions
   Conjectures.WachsCompleteGraphWeightedOrder
   Conjectures.WachsCompleteGraphWeightedPartition
