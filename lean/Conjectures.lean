@@ -13,8 +13,7 @@ import Conjectures.NovelliThibonHookExtraction
 import Conjectures.NovelliThibonJacobiPerspectives
 import Conjectures.PomeranceSarkozyCRTCheckpoint
 import Conjectures.PomeranceSarkozyArithmeticTV
-import Conjectures.KauersKoutschanCertificate
-import Conjectures.KauersKoutschanDividedSum
+import Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
 import Conjectures.ShumyatskyCycleLabels
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
@@ -1473,3 +1472,5 @@ import Conjectures.SobolewskiUlasExceptionCountingScope
 import Conjectures.SobolewskiUlasExceptionPowerTwoScope
 import Conjectures.SobolewskiUlasExceptionOriginalReduction
 import Conjectures.SobolewskiUlasExceptionResidueCertificate
+import Conjectures.KauersKoutschanCertificate
+import Conjectures.KauersKoutschanDividedSum

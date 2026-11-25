@@ -4,8 +4,6 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
-  Conjectures.KauersKoutschanCertificate
-  Conjectures.KauersKoutschanDividedSum
   Conjectures.CurgusMascioniQuadratic
   Conjectures.FMPCylindric
   Conjectures.LassalleBernsteinAtIndex
@@ -108,6 +106,9 @@ modules=(
   Conjectures.PomeranceSarkozyBonferroniKernel
   Conjectures.PomeranceSarkozyCRTCheckpoint
   Conjectures.PomeranceSarkozyArithmeticTV
+  Conjectures.PomeranceSarkozyNearThresholdBand
+  Conjectures.PomeranceSarkozyTailCross
+  Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
   Conjectures.ShumyatskyCycleLabels
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
@@ -2735,6 +2736,8 @@ modules=(
   Conjectures.WaringGapSymmetryLift
   Conjectures.WaringGapSymmetryMonoid
   Conjectures.WaringGapSymmetry
+  Conjectures.KauersKoutschanCertificate
+  Conjectures.KauersKoutschanDividedSum
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

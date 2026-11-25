@@ -1,14 +1,5 @@
 # Full formalization campaign
 
-## Kauers–Koutschan recurrence conjecture
-
-Lean proves the all-index recurrence for the exact paired derangement
-sum and the shifted omitted-pair identity. It checks both parities of
-the symbolic order-eight and order-thirteen certificates and the four
-initial residuals on the finite-sum model. The coefficient evaluation
-bridge and literal permutation count remain outside the checked scope.
-[Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
-
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
 Partial. Lean verifies the reduction to prime-spectrum-minimal groups,
@@ -23,6 +14,9 @@ Partial. Lean verifies the literal arithmetic count, factorial tails,
 and the finite-window total-variation bound between the arithmetic and
 independent residue laws. Asymptotic specialization and limiting laws
 remain.
+
+Two supporting threshold identities are independently replayed:
+the universal band-mass bound and the exact tail-product sum.
 [Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
 
@@ -82,6 +76,15 @@ Partial for the combined result. Lean checks tomdif’s literal graphs at maximu
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
 Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of every finite connected simple graph at every admissible parameter. It proves the inclusive clique-chain count, constructs the literal diameter layers, retains the prescribed cardinality, and bounds the energy after extending the low eigenspace by zero. Lean also proves equality for the infinite family with `4*t+1` layers and `t` doubled layers, attaining the bound for `c=t−1`. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
+## Kauers–Koutschan recurrence conjecture
+
+Lean proves the all-index recurrence for the exact paired derangement
+sum and the shifted omitted-pair identity. It checks both parities of
+the symbolic order-eight and order-thirteen certificates and the four
+initial residuals on the finite-sum model. The coefficient evaluation
+bridge and literal permutation count remain outside the checked scope.
+[Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 

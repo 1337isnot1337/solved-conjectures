@@ -47,3 +47,17 @@ address the separate exact collision count `F(X)`.
 [CRT and independent residue replay](verification/literal-crt-inclusions/receipt.json)
 
 [Finite-window total-variation replay](verification/finite-window-tv/receipt.json)
+
+## Threshold identities
+
+Lean checks two analytical reductions used for the transfer from
+prime-factor counts to the fluctuation law. The
+[near-threshold bound](../../lean/Conjectures/PomeranceSarkozyNearThresholdBand.lean)
+shows that the sum of two-sided band probabilities is at most 2B+1
+for a normalized law on natural numbers. The
+[tail-product identity](../../lean/Conjectures/PomeranceSarkozyTailCross.lean)
+reindexes the variance term by the positive difference of two atom
+indices. Neither identity assumes a local limit theorem, and neither
+establishes the Gaussian limit or the arithmetic density-one claim.
+
+[Threshold identities replay](verification/threshold-identities/receipt.json)
