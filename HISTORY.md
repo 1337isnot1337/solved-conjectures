@@ -84,6 +84,13 @@ Lean verifies the cardinality steps and the conjugate-cycle equations
 in aadrianvv’s written contribution. The result is partially formalized.
 [Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the Kauers–Koutschan column series and Schur moment
+
+Lean checks the composition reindexing of the original count, the formal
+signed column series, and the bivariate Schur moment as a derangement
+divided difference. The final coefficient extraction remains.
+[Scope and receipts](results/kauers-koutschan-recurrence/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Kauers–Koutschan signed block expansion
 
 Lean proves the exact factorial count of legal block orders for each

@@ -2793,6 +2793,19 @@ modules=(
   Conjectures.KauersKoutschanActualRows
   Conjectures.KauersKoutschanRowEnumeration
   Conjectures.KauersKoutschanSignedBlocks
+  Conjectures.KauersKoutschanCompositions
+  Conjectures.KauersKoutschanCompositionBlocks
+  Conjectures.KauersKoutschanCompositionCount
+  Conjectures.KauersKoutschanFactorialMoment
+  Conjectures.KauersKoutschanUniformMoment
+  Conjectures.KauersKoutschanBivariateMoment
+  Conjectures.KauersKoutschanTracePolynomials
+  Conjectures.KauersKoutschanAffineTraceMoment
+  Conjectures.KauersKoutschanRadialSchurMoment
+  Conjectures.KauersKoutschanSchurMoment
+  Conjectures.KauersKoutschanTraceProducts
+  Conjectures.KauersKoutschanWeightedCompositions
+  Conjectures.KauersKoutschanColumnSeries
   Conjectures.KauersKoutschanState
   Conjectures.KauersKoutschanFiniteRecurrence
 )

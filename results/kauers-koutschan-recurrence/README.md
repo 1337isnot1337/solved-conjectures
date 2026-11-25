@@ -17,8 +17,9 @@ python verify.py
 
 Lean proves that the exact finite sum in the written proof satisfies the
 order-eight recurrence at every index. It also proves the exact signed factorial
-block expansion for the actual permutations. The generating-function
-and Schur moment steps connecting the two counts remain. [Lean scope and receipts](FORMALIZATION.md).
+block expansion for the actual permutations, the formal column series,
+and the exact Schur moment. The final coefficient extraction connecting
+the two counts remains. [Lean scope and receipts](FORMALIZATION.md).
 
 ## Prior work
 
