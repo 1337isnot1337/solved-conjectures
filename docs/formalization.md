@@ -2,7 +2,7 @@
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 
-Partial. The literal finite-word overlap score, extremal inequality against a constant word, and exact characterization of equality are verified. If both one-step cross-overlaps occur, the self-overlap sets agree. This establishes the finite overlap variance floor for alphabet size at least three when those sets have unequal weight. The binary variance projection, full-alphabet restrictions, and probabilistic asymptotics remain outside this scope. [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
+Partial. The literal finite-word overlap score, extremal inequality against a constant word, and exact characterization of equality are verified. If both one-step cross-overlaps occur, the self-overlap sets agree. This establishes the finite overlap variance floor for alphabet size at least three when those sets have unequal weight. Lean also gives a finite variance lower bound for the signed window count by centering both endpoints. The identity of the asymptotic variance with the overlap formula, full-alphabet restrictions, and probabilistic asymptotics remain outside this scope. [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
 
 ## Higashitani–Kummer–Michałek conjecture
 

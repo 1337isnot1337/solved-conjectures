@@ -1,7 +1,12 @@
 import Conjectures.EkhadZeilbergerCrossOverlap
+import Conjectures.EkhadZeilbergerEndpointProduct
 import Conjectures.EkhadZeilbergerEquality
 import Conjectures.EkhadZeilbergerFiniteOverlap
+import Conjectures.EkhadZeilbergerInterior
 import Conjectures.EkhadZeilbergerOverlap
+import Conjectures.EkhadZeilbergerProjection
+import Conjectures.EkhadZeilbergerUniformProduct
+import Conjectures.EkhadZeilbergerWindowProjection
 import Conjectures.EkhadZeilbergerWords
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
@@ -13,8 +18,8 @@ set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.EkhadZeilbergerCrossOverlap", "Conjectures.EkhadZeilbergerEquality", "Conjectures.EkhadZeilbergerFiniteOverlap", "Conjectures.EkhadZeilbergerOverlap", "Conjectures.EkhadZeilbergerWords"]
-  let required : Array Name := #[`EkhadZeilberger.overlapMass_bound, `EkhadZeilberger.constant_cross_weight_le, `EkhadZeilberger.constant_word_advantage_le, `EkhadZeilberger.lastException_attains, `EkhadZeilberger.firstException_attains, `EkhadZeilberger.constant_word_maximizer_iff, `EkhadZeilberger.self_overlap_iff_of_cross_one_both, `EkhadZeilberger.wordVariance_ge_weight_of_unequal_self, `EkhadZeilberger.nonconstant_word_advantage_lt]
+  let expectedModules : Array String := #["Conjectures.EkhadZeilbergerCrossOverlap", "Conjectures.EkhadZeilbergerEndpointProduct", "Conjectures.EkhadZeilbergerEquality", "Conjectures.EkhadZeilbergerFiniteOverlap", "Conjectures.EkhadZeilbergerInterior", "Conjectures.EkhadZeilbergerOverlap", "Conjectures.EkhadZeilbergerProjection", "Conjectures.EkhadZeilbergerUniformProduct", "Conjectures.EkhadZeilbergerWindowProjection", "Conjectures.EkhadZeilbergerWords"]
+  let required : Array Name := #[`EkhadZeilberger.constant_word_maximizer_iff, `EkhadZeilberger.zero_self_weights_of_same_interior, `EkhadZeilberger.uniformAverage_product_embedding, `EkhadZeilberger.uniformAverage_mul_centered, `EkhadZeilberger.uniformAverage_orthogonal_lower_bound, `EkhadZeilberger.projectedCylinder_cross_zero_of_interior_mismatch, `EkhadZeilberger.projectedCylinder_two_endpoint_sq, `EkhadZeilberger.projectedWindow_cross_orthogonal, `EkhadZeilberger.projectedWindow_same_inner, `EkhadZeilberger.projected_window_variance_lower, `EkhadZeilberger.signed_window_count_mean_zero]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv

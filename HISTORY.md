@@ -718,6 +718,8 @@ Formalized both published delta-process Conjectures 27–28 for every stated par
 
 ## 2026-11-21 — Ekhad–Zeilberger’s most unfair bet conjecture
 
+**November 25 variance checkpoint.** Lean gives a finite lower variance bound for the literal signed window count at every sample length, using the orthogonality of the two-endpoint projection. Equal interiors with a one-step cross-overlap force zero self-overlaps for nonconstant words. The overlap covariance identity and asymptotic win probability remain separate. [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
+
 **November 25 Lean checkpoint.** The finite overlap bounds, exact constant-loser extremizers, and the variance floor for at least three letters are now verified. The probabilistic expansion and binary projection remain separate. [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
 
 Proved the extremal asymptotic advantage for every word length from a variance lower bound for overlapping occurrences. The proof also classifies extremizers with and without a full-alphabet requirement. [Proof and checker](results/ekhad-zeilberger-unfair-bet/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/219)
