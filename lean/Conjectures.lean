@@ -1,3 +1,11 @@
+import Conjectures.NemethSeberryShuCongruence
+import Conjectures.NemethSeberryShuCounting
+import Conjectures.NemethSeberryShuLogSeparation
+import Conjectures.NemethSeberryShuConcentration
+import Conjectures.NemethSeberryShuFourierRepair
+import Conjectures.NemethSeberryShuFourierTarget
+import Conjectures.NemethSeberryShuFourierSampling
+import Conjectures.NemethSeberryShuFourierSpectral
 import Conjectures.BursteinDescentTop
 import Conjectures.BenfieldLippardParity
 import Conjectures.CsordasVishnyakova

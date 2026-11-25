@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Németh–Seberry–Shu conjecture
+
+Published checked Fourier, spectral, modular permanent, and conditional dense-row counting components, and verified the strict amplitude separation bridge. This does not complete Lean verification of the asymptotic disproof. [Lean scope](results/nemeth-seberry-shu/FORMALIZATION.md).
+
 ## 2026-11-25 — Burstein’s descent-top shape-Wilf conjecture
 
 Published the Lean refutations of original Conjectures 16 and 17 on the same six-row board with suffix 1. The stronger every-suffix construction remains written only. [Lean scope](results/burstein-descent-top-shape-wilf/FORMALIZATION.md).

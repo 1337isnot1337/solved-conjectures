@@ -31,6 +31,23 @@ run_cmd do
     `Conjectures.FMPCylindric.sourceCppMore_eq_evalCppMore,
     `Conjectures.FMPCylindric.pp_negative_probeMore,
     `Conjectures.FMPCylindric.no_nonnegative_full_column_count_polynomial,
+    `NemethSeberryShu.permanent_modEq_card,
+    `NemethSeberryShu.card_eq_of_permanent_eq,
+    `NemethSeberryShu.row_family_count,
+    `NemethSeberryShu.dense_family_count,
+    `NemethSeberryShu.eventually_superlinear_of_dense_families,
+    `NemethSeberryShu.no_eventual_linear_bound_of_dense_families,
+    `NemethSeberryShu.logModeCorrection_strictMono,
+    `NemethSeberryShu.permanentLogProfile_uniform_gap,
+    `NemethSeberryShu.permanentLogProfile_finite_uniform_gap,
+    `NemethSeberryShu.strictly_ordered_of_profile_error,
+    `NemethSeberryShu.dense_families_of_uniform_log_profile,
+    `NemethSeberryShu.no_eventual_linear_bound_of_uniform_log_profile,
+    `NemethSeberryShu.inclusionProbability_fourier,
+    `NemethSeberryShu.exact_row_fourier_sampling,
+    `NemethSeberryShu.character_orthogonality,
+    `NemethSeberryShu.supportFourier_parseval,
+    `NemethSeberryShu.binaryCirculant_mulVec_character,
     `Conjectures.BursteinDescentTop.not_descent_top_shape_wilf,
     `Conjectures.BursteinDescentTop.not_ascent_bottom_shape_wilf,
     `BenfieldLippardParity.benfieldLippard_conj10_4,
@@ -11117,7 +11134,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["Conjectures.BursteinDescentTop.", "BenfieldLippardParity.", "CardonZeroSector.", "CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["NemethSeberryShu.", "Conjectures.BursteinDescentTop.", "BenfieldLippardParity.", "CardonZeroSector.", "CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

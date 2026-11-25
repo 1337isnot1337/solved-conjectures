@@ -1,5 +1,9 @@
 # Verification
 
+## Németh–Seberry–Shu conjecture
+
+Separate target receipts cover the strict builds, full owned-axiom audits, and stock replays for the spectral and counting closures. This does not certify the aggregate repository gate. [Lean scope](../results/nemeth-seberry-shu/FORMALIZATION.md).
+
 ## Burstein’s descent-top shape-Wilf conjecture
 
 The pinned strict source build, all-owned transitive axiom audit, and stock kernel replay passed for the exact one-module closure. The aggregate repository gate is separate. [Lean scope](../results/burstein-descent-top-shape-wilf/FORMALIZATION.md).
