@@ -525,6 +525,10 @@ modules=(
   Conjectures.AlexanderssonParkingExcedanceEnumeration
   Conjectures.AlexanderssonParkingExcedanceRoots
   Conjectures.AlexanderssonParkingExcedance
+  Conjectures.HKMEhrhart
+  Conjectures.HKMEhrhartLocalCount
+  Conjectures.HKMEhrhartGeometry
+  Conjectures.HKMEhrhartPartial
   Conjectures.FussRoots
   Conjectures.FussBlocks
   Conjectures.FussSlot
