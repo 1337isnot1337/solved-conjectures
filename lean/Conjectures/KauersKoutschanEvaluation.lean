@@ -3,6 +3,8 @@ import Mathlib.Tactic
 
 /-! Horner evaluation of the checked exact rational polynomial certificate. -/
 
+open scoped BigOperators
+
 namespace KauersKoutschanCertificate
 
 /-- Evaluate ascending rational coefficients at an arbitrary value. -/
@@ -10,7 +12,7 @@ def eval (x : ℚ) : Poly → ℚ
   | [] => 0
   | c :: cs => c + x * eval x cs
 
-private theorem eval_add (x : ℚ) (p q : Poly) :
+theorem eval_add (x : ℚ) (p q : Poly) :
     eval x (add p q) = eval x p + eval x q := by
   induction p generalizing q with
   | nil => simp [add, eval]
@@ -21,7 +23,7 @@ private theorem eval_add (x : ℚ) (p q : Poly) :
       simp only [add, eval, ih]
       ring
 
-private theorem eval_scale (x c : ℚ) (p : Poly) :
+theorem eval_scale (x c : ℚ) (p : Poly) :
     eval x (scale c p) = c * eval x p := by
   induction p with
   | nil => simp [scale, eval]
@@ -30,7 +32,7 @@ private theorem eval_scale (x c : ℚ) (p : Poly) :
     rw [show (List.map (c * ·) p) = scale c p by rfl, ih]
     ring
 
-private theorem eval_mul (x : ℚ) (p q : Poly) :
+theorem eval_mul (x : ℚ) (p q : Poly) :
     eval x (mul p q) = eval x p * eval x q := by
   induction p with
   | nil => simp [mul, eval]
@@ -41,7 +43,7 @@ private theorem eval_mul (x : ℚ) (p q : Poly) :
 private theorem eval_constant (x c : ℚ) : eval x (constant c) = c := by
   simp [constant, eval]
 
-private theorem eval_nPoly (x : ℚ) (t : ℕ) :
+theorem eval_nPoly (x : ℚ) (t : ℕ) :
     eval x (nPoly t) = t + 2 * x := by
   simp [nPoly, eval]
   ring
@@ -111,5 +113,39 @@ theorem original_basis_eval (x : ℚ) (t i : ℕ) (ht : t = 4 ∨ t = 5) (hi : i
     List.all_eq_true.mp hchecks i (List.mem_range.mpr hi)
   rw [← eval_nPoly, ← eval_originalResidual]
   exact eval_eq_zero x _ hz
+
+/-- The order-eight recurrence as a sum over its nine source rows. -/
+def orderEight (n : ℚ) (a : ℕ → ℚ) : ℚ :=
+  ∑ j ∈ Finset.range 9, eval n operatorCoeffs[j]! * a j
+
+private theorem scalarOriginalResidual_eq (n : ℚ) (a : ℕ → ℚ) :
+    scalarOriginalResidual n ((List.range 9).map a) = orderEight n a := by
+  simp only [orderEight, Finset.sum_range_succ, Finset.sum_range_zero]
+  rfl
+
+private theorem scalarOriginalResidual_map_eval (n x : ℚ) (a : ℕ → Poly) :
+    scalarOriginalResidual n (((List.range 9).map a).map (eval x)) =
+      orderEight n (fun j => eval x (a j)) := by
+  rw [List.map_map, scalarOriginalResidual_eq]
+  rfl
+
+theorem orderEight_basis (x : ℚ) (t i : ℕ) (ht : t = 4 ∨ t = 5) (hi : i < 6) :
+    orderEight (t + 2 * x) (fun j => eval x (count (state i) (t + j))) = 0 :=
+  (scalarOriginalResidual_map_eval (t + 2 * x) x (fun j => count (state i) (t + j))).symm.trans
+    (original_basis_eval x t i ht hi)
+
+/-- Arbitrary scalar combinations of the six evaluated basis sequences
+satisfy the same exact recurrence. -/
+theorem orderEight_linear_combination (x : ℚ) (t : ℕ) (ht : t = 4 ∨ t = 5)
+    (w : Fin 6 → ℚ) :
+    orderEight (t + 2 * x)
+      (fun j => ∑ i : Fin 6, w i * eval x (count (state i) (t + j))) = 0 := by
+  unfold orderEight
+  simp_rw [Finset.mul_sum]
+  rw [Finset.sum_comm]
+  apply Finset.sum_eq_zero
+  intro i _
+  simp_rw [mul_left_comm (eval _ _) (w i), ← Finset.mul_sum]
+  rw [← orderEight, orderEight_basis x t i ht i.isLt, mul_zero]
 
 end KauersKoutschanCertificate
