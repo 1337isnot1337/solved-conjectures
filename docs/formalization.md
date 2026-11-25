@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Benfield–Lippard’s stable Waring-gap parity conjecture
+
+The endpoint uses literal lists of exactly the required number of positive powers, proves eventual representability equivalent to shifted-power monoid membership, and obtains both parities without assuming a stabilization threshold. [Lean scope](../results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).
+
 ## Cardon–Forgács–Piotrowski–Sorensen–White conjecture
 
 The original Question 6.1 disproof and the uniform positive-damping strengthening are both checked. The actual cubic image has a nonreal root outside a strictly positive input sector for every real p > 2 and sufficiently small positive α. [Lean scope](../results/cardon-zero-sector/LEAN.md).

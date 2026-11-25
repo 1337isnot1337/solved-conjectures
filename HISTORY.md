@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Benfield–Lippard’s stable Waring-gap parity conjecture
+
+Published the exact Lean proof of both original stable-exception parity assertions for every exponent at least two. The stronger two-adic congruences remain written only. [Lean scope](results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).
+
 ## 2026-11-25 — Cardon–Forgács–Piotrowski–Sorensen–White conjecture
 
 Lean now verifies the uniform small-positive-damping obstruction for every real p > 2. The originally checked p = 3 source is unchanged. [Exact scope](results/cardon-zero-sector/LEAN.md).
