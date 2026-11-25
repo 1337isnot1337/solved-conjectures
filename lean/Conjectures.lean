@@ -22,6 +22,8 @@ import Conjectures.NuttallMovingBoxDeterminant
 import Conjectures.NuttallMovingBoxIntegral
 import Conjectures.NuttallBadIntegral
 import Conjectures.NuttallDominanceCombine
+import Conjectures.NuttallChebyshev
+import Conjectures.NuttallCumulantsFull
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation

@@ -30,6 +30,8 @@ modules=(
   Conjectures.NuttallMovingBoxIntegral
   Conjectures.NuttallBadIntegral
   Conjectures.NuttallDominanceCombine
+  Conjectures.NuttallChebyshev
+  Conjectures.NuttallCumulantsFull
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
