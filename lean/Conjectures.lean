@@ -19,6 +19,7 @@ import Conjectures.NuttallHankelTransfer
 import Conjectures.NuttallTailDominance
 import Conjectures.NuttallDerivativeRatio
 import Conjectures.NuttallMovingBoxDeterminant
+import Conjectures.NuttallMovingBoxIntegral
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation
