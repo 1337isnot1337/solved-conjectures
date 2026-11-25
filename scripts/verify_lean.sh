@@ -51,6 +51,22 @@ modules=(
   Conjectures.WachsCompleteGraphLabelEquiv
   Conjectures.WachsCompleteGraphSeededRecurrence
   Conjectures.WachsCompleteGraphSizeRecurrence
+  Conjectures.WachsCompleteGraphActualEGF
+  Conjectures.WachsCompleteGraphActualLaguerre
+  Conjectures.WachsCompleteGraphCanonicalUnit
+  Conjectures.WachsCompleteGraphDistinguishedBlock
+  Conjectures.WachsCompleteGraphEGFComposition
+  Conjectures.WachsCompleteGraphEGFTally
+  Conjectures.WachsCompleteGraphExponentialFormula
+  Conjectures.WachsCompleteGraphMarkedCount
+  Conjectures.WachsCompleteGraphPartitionCountRecurrence
+  Conjectures.WachsCompleteGraphPartitionSum
+  Conjectures.WachsCompleteGraphPartitionSupport
+  Conjectures.WachsCompleteGraphRankTally
+  Conjectures.WachsLagrangeDerivative
+  Conjectures.WachsLagrangeInversion
+  Conjectures.WachsLagrangeSubstitution
+  Conjectures.WachsLagrangeWeight
   Conjectures.WachsCompleteGraphWeightEquiv
   Conjectures.WachsCompleteGraphWeightRelabel
   Conjectures.WachsCompleteGraphProductCancellation

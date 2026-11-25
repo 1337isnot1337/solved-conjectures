@@ -34,16 +34,12 @@ function computed by well-founded recursion, not the series answer
 as its definition. Lean proves its cumulative cancellation law and
 uniqueness.
 
-The [literal theorem](../../lean/Conjectures/WachsCompleteGraphMoebiusLaw.lean)
-gives the Laguerre answer from one explicit remaining bridge: the
-Lagrange-normalized coefficient formula for that actual polynomial.
-The formal Gamma expression also assumes the polynomial's linear
-factorization. See the [literal-poset receipt](verification/literal-weighted-poset/receipt.json).
-The EGF/Lagrange bridge, positive Laguerre roots, the probability
-identification, and the log-concavity and real-zero consequences
-remain outside the Lean scope. The existing proof and its
-attribution, including the prior two-variable result, remain unchanged.
-The separate question of Schur-log-concavity is not asserted.
+The [literal-poset receipt](verification/literal-weighted-poset/receipt.json)
+covers this construction and the conditional reductions first obtained
+from it. The EGF and Lagrange steps of the same literal construction are
+now verified below. The existing proof and its attribution, including
+the prior two-variable result, remain unchanged. The separate question
+of Schur-log-concavity is not asserted.
 
 ## Cancellation over actual one-block completions
 
@@ -88,8 +84,25 @@ canonical set of each size. Lean also obtains the exact
 characteristic polynomial as a sum of products of these size factors.
 See the [canonical size receipt](verification/canonical-size-recurrence/receipt.json).
 
-The exponential generating function step and Lagrange inversion still
-separate this finite recurrence from the verified Laguerre identity.
+## Exact equal-variable Laguerre formula
+
+Lean proves the labeled weighted exponential formula by distinguishing a
+vertex and counting its block choices. It identifies the coefficients of
+the literal rank-generating polynomial with the exponential generating
+function of the canonical one-block Möbius totals, and proves the forcing
+series is their compositional inverse. The parameter is real and may be
+zero.
+
+The proof of formal Lagrange–Bürmann uses ordinary power series,
+coefficient cancellation and formal differentiation. The
+[literal Laguerre formula](../../lean/Conjectures/WachsCompleteGraphActualLaguerre.lean)
+is now unconditional for every nonempty complete graph and every
+number of equal variables at least two. The equivalent formal moment
+formula still takes the linear factorization as an explicit input.
+Positive Laguerre roots, the probability identification, strict
+log-concavity and the real-zero consequences are outside this checkpoint,
+so the entry remains partially formalized. See the
+[full-formula receipt](verification/literal-laguerre-formula/receipt.json).
 
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent
