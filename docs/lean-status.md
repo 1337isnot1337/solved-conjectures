@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
+
+Partial. Lean checks the exact polynomial recurrence, the all-index continuant reduction under its parabolic hypothesis, and unconditional nonvanishing on the positive real axis. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
+
 ## Nuttall's conjecture
 
 Partial. Lean checks the literal theta series, its absolute convergence, continuity and decay, plus existence and positivity of all iterated tail integrals and polynomial-weighted single-integral cumulants on the half-line. Higher minors are written only. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
@@ -197,7 +201,7 @@ proofs are documented separately in the catalogue and result package.
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
 | Kovalev’s square-root Taylor-section zero-free conjecture | Complete original square-root conjecture | Every positive length, every Taylor degree, and the full closed unit disk, with actual derivative coefficients and beta measures. Fractional-exponent and segment supplements remain unformalized. [Scope](../results/kovalev-zero-free/FORMALIZATION.md) · [Receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json). |
-| Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture | Not formalized | Proves that all zeros of all Stern polynomials lie strictly to the left of Re z = 1. Analytic estimates and an exact compact-region certificate cover all binary run lengths. |
+| Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture | Partial | Exact Stern recurrence and continuation criterion for all positive indices, and unconditional positive real-axis nonvanishing. The regional complex estimates and compact certificate are outside this receipt. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
 | González D’León–Wachs’s complete-graph specialization question | Not formalized | Gives an exact Laguerre product and Gamma-moment formula, strict ordinary coefficient log-concavity, and the real-zero count for equal variables. |

@@ -1,5 +1,9 @@
 # Verification
 
+## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
+
+The five-module target passed pinned strict source build, all-owned axiom audit, and stock-kernel replay. The compact certificate and aggregate repository gate are separate. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
+
 ## Nuttall's conjecture
 
 The pinned strict build, all-owned axiom audit and stock replay pass for the two-module iterated-tail closure. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
