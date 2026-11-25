@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Verify the literal complete-graph Laguerre formula
+
+Lean proves the weighted labeled exponential formula and formal
+Lagrange inversion, and connects the actual recursive Möbius
+polynomial to the exact Laguerre formula for all nonempty complete
+graphs with at least two equal variables.
+[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the finite one-block Möbius recurrence by size
 
 Lean transports the literal weighted lower intervals to canonical

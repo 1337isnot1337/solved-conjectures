@@ -2,9 +2,9 @@
 
 ## González D’León–Wachs’s complete-graph specialization question
 
-Partial. Lean verifies the literal finite weighted Möbius recurrence
-by block size and the formal Laguerre identities. The EGF/Lagrange
-bridge and the analytic consequences remain.
+Partial. Lean proves the exact Laguerre formula for the literal
+weighted complete-graph polynomial. Positive-root, probability
+and analytic consequences remain outside this scope.
 [Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
