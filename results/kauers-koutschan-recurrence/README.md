@@ -15,10 +15,10 @@ python verify.py
 
 ## Lean verification
 
-Lean proves the exact all-index divided-sum recurrence and the shifted
-cutoff identity. It also checks both symbolic operator certificates.
-The coefficient evaluation bridge and the permutation-count argument
-remain. [Lean scope and receipts](FORMALIZATION.md).
+Lean proves that the exact finite sum in the written proof satisfies the
+order-eight recurrence at every index. It also verifies inclusion–exclusion
+for the actual permutations. The equality between that signed count and
+the finite sum remains. [Lean scope and receipts](FORMALIZATION.md).
 
 ## Prior work
 

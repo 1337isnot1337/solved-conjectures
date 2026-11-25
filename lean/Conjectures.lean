@@ -1481,3 +1481,5 @@ import Conjectures.SobolewskiUlasExceptionOriginalReduction
 import Conjectures.SobolewskiUlasExceptionResidueCertificate
 import Conjectures.KauersKoutschanCertificate
 import Conjectures.KauersKoutschanDividedSum
+import Conjectures.KauersKoutschanFiniteRecurrence
+import Conjectures.KauersKoutschanBlockLengths

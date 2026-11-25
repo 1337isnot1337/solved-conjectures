@@ -81,11 +81,10 @@ Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of 
 
 ## Kauers–Koutschan recurrence conjecture
 
-Lean proves the all-index recurrence for the exact paired derangement
-sum and the shifted omitted-pair identity. It checks both parities of
-the symbolic order-eight and order-thirteen certificates and the four
-initial residuals on the finite-sum model. The coefficient evaluation
-bridge and literal permutation count remain outside the checked scope.
+Lean proves the source order-eight recurrence for the exact sixteen-mask
+finite sum at every index. It also verifies inclusion–exclusion over
+the forbidden adjacencies of the actual permutations. The identification
+of that signed count with the finite sum remains.
 [Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
