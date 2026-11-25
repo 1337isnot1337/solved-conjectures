@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify the finite one-block Möbius recurrence by size
+
+Lean transports the literal weighted lower intervals to canonical
+vertex sets and verifies the exact finite recurrence and characteristic
+sum in terms of their block sizes.
+[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Factor the literal weighted Möbius values over blocks
 
 Lean constructs the actual lower interval as a product of its labeled
