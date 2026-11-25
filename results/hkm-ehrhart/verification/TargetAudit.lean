@@ -1,6 +1,10 @@
 import Conjectures.AlexanderssonParkingExcedanceRoots
 import Conjectures.HKMEhrhart
+import Conjectures.HKMEhrhartConvolution
+import Conjectures.HKMEhrhartCountBridge
+import Conjectures.HKMEhrhartCountCertificate
 import Conjectures.HKMEhrhartGeometry
+import Conjectures.HKMEhrhartLiteralCounts
 import Conjectures.HKMEhrhartLocalCount
 import Conjectures.HKMEhrhartPartial
 import Conjectures.HKMEhrhartSufficiency
@@ -14,8 +18,8 @@ set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.AlexanderssonParkingExcedanceRoots", "Conjectures.HKMEhrhart", "Conjectures.HKMEhrhartGeometry", "Conjectures.HKMEhrhartLocalCount", "Conjectures.HKMEhrhartPartial", "Conjectures.HKMEhrhartSufficiency"]
-  let required : Array Name := #[`HKMEhrhart.off_line_of_counts, `HKMEhrhart.card_pairs, `HKMEhrhart.multipartiteLatticePoints_signed_mass_necessary, `HKMEhrhart.multipartiteEdgePolytope_add_dilates, `HKMEhrhart.multipartiteEdgePolytope_mem_dilate_single_part, `HKMEhrhart.hkm_support_two_of_saturated, `HKMEhrhart.hkm_cross_cover_saturated, `HKMEhrhart.hkmRemovePair_positiveSum, `HKMEhrhart.hkmRemovePair_partAbsSum, `HKMEhrhart.hkm_lattice_mass_sufficient, `HKMEhrhart.hkm_lattice_mass_iff]
+  let expectedModules : Array String := #["Conjectures.AlexanderssonParkingExcedanceRoots", "Conjectures.HKMEhrhart", "Conjectures.HKMEhrhartConvolution", "Conjectures.HKMEhrhartCountBridge", "Conjectures.HKMEhrhartCountCertificate", "Conjectures.HKMEhrhartGeometry", "Conjectures.HKMEhrhartLiteralCounts", "Conjectures.HKMEhrhartLocalCount", "Conjectures.HKMEhrhartPartial", "Conjectures.HKMEhrhartSufficiency"]
+  let required : Array Name := #[`HKMEhrhart.card_pairs, `HKMEhrhart.hkm_lattice_mass_iff, `HKMEhrhart.card_PairCell, `HKMEhrhart.card_MassConfig_succ, `HKMEhrhart.card_MassConfig_eq_convolutionCount, `HKMEhrhart.makeConvolutionTable_correct, `HKMEhrhart.cocktail_lattice_iff_pairs, `HKMEhrhart.computedDiagonalLatticeCount_eq_literal, `HKMEhrhart.cocktail_six_values_computed, `HKMEhrhart.cocktail_six_literal_lattice_counts, `HKMEhrhart.off_line_of_literal_lattice_counts]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv

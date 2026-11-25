@@ -1,9 +1,7 @@
 # Lean scope for the Higashitani–Kummer–Michałek conjecture
 
 **Status: partial.** This formalizes the root certificate, interpolation, local
-counts, and the exact lattice-membership bridge for the [written counterexample](PROOF.md).
-The condition that the literal Ehrhart polynomial has the certified counts is
-not yet discharged.
+counts, and the exact lattice-membership bridge and the twelve literal counts used for the [written counterexample](PROOF.md). The all-dilation Ehrhart polynomial identification remains separate.
 
 - [Root and interpolation module](../../lean/Conjectures/HKMEhrhart.lean):
   Lean checks the negative Laguerre value at $4/3$, the resulting nonreal root,
@@ -27,9 +25,21 @@ not yet discharged.
   Thus the mass inequalities and zero coordinate sum characterize literal
   lattice membership.
 
-The missing steps are the six-part convolution for the literal count and the
-literal Ehrhart polynomial’s degree/identification. No full Lean refutation or extra
-conjecture result is claimed. The first two modules reuse Cinna Davis’s
+- [Convolution](../../lean/Conjectures/HKMEhrhartConvolution.lean),
+  [literal count bridge](../../lean/Conjectures/HKMEhrhartCountBridge.lean)
+  and [count certificate](../../lean/Conjectures/HKMEhrhartCountCertificate.lean):
+  the dynamic recurrence exactly counts bounded signed pairs with prescribed
+  totals. For six two-vertex parts, the diagonal sum counts the literal
+  lattice points in every integer dilation. The twelve counts at dilations
+  zero through eleven are checked in the stock kernel, one table step at
+  a time.
+- [Root transfer](../../lean/Conjectures/HKMEhrhartLiteralCounts.lean):
+  a polynomial of degree at most eleven whose natural evaluations are
+  the literal lattice counts has a root off the canonical line.
+
+The missing step is the all-dilation Ehrhart polynomial existence and degree
+bound for the literal graph. No full Lean refutation or extra conjecture
+result is claimed. The first two modules reuse Cinna Davis’s
 [original root checkpoint](https://github.com/1337isnot1337/solved-conjectures/commit/612c316a018bac51e8557d443cd6b75341c27efe)
 and [local count checkpoint](https://github.com/1337isnot1337/solved-conjectures/commit/7880c005bd42743a388d2505c483c38beee66c5e).
 The [original proposers’ statement](https://arxiv.org/html/1612.07538v1) and
