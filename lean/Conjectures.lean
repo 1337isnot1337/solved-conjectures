@@ -1450,3 +1450,4 @@ import Conjectures.RossiPermutohedronRoots
 import Conjectures.SobolewskiUlasExceptionCountingScope
 import Conjectures.SobolewskiUlasExceptionPowerTwoScope
 import Conjectures.SobolewskiUlasExceptionOriginalReduction
+import Conjectures.SobolewskiUlasExceptionResidueCertificate

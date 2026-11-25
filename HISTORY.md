@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-25 — Verify the actual Sobolewski–Ulas partition congruences
+
+Lean verifies exact partition recurrences by multiset bijections and a
+closed 25-state residue certificate for every input. Every explicit
+source-layer member is an actual exception. The reverse inclusion
+still uses the sufficiency direction of Legendre’s three-square
+theorem; the all-base claim also uses Durand.
+[Scope and receipt](results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+
 ## 2026-11-25 — Reduce the original Sobolewski–Ulas statement in Lean
 
 Lean connects the bounded gaps, finite kernels, and non-erasing gap

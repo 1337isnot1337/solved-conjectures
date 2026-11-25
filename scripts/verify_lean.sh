@@ -400,6 +400,14 @@ modules=(
   Conjectures.SobolewskiUlasExceptionGapRegular
   Conjectures.SobolewskiUlasExceptionIndicatorKernel
   Conjectures.SobolewskiUlasExceptionOriginalReduction
+  Conjectures.SobolewskiUlasExceptionClassificationInputs
+  Conjectures.SobolewskiUlasExceptionCongruenceReduction
+  Conjectures.SobolewskiUlasExceptionEvenPartitions
+  Conjectures.SobolewskiUlasExceptionModState
+  Conjectures.SobolewskiUlasExceptionPartitionModKernel
+  Conjectures.SobolewskiUlasExceptionPartitionRecurrence
+  Conjectures.SobolewskiUlasExceptionResidueCertificate
+  Conjectures.SobolewskiUlasExceptionThreeSquares
   Conjectures.SobolewskiUlasExceptionRecurrenceAlgebra
   Conjectures.SobolewskiUlasExceptionRecurrenceWindow
   Conjectures.SobolewskiUlasExceptionRegularKernel

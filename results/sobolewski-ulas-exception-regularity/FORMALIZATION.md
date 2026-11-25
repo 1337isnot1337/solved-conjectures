@@ -61,10 +61,31 @@ gives ultimate periodicity, contradicting the verified nonperiodicity.
 Lean takes this last implication as an explicit hypothesis.
 
 The [original-reduction receipt](verification/original-reduction/receipt.json)
-records the checked conditional theorem for the actual binary partition
-function in every base. The Corollary 3.3 identification and the transfer
-from Durand are not formalized here and are not declared as Lean axioms.
-Conjecture 7.1 is still marked partial.
+records this decomposition of the proof. The next checkpoint discharges
+the arithmetic part of the classification.
+
+## Actual binary partition values modulo 32
+
+Lean proves the exact recurrence for the Mathlib partition count by
+bijections: remove a one from each odd partition; split an even
+partition into those containing a one and those whose parts can all
+be halved. An even count is consequently the prefix sum of all counts.
+Iterated prefix sums give a three-coordinate recurrence modulo 32.
+The [25-state certificate](../../lean/Conjectures/SobolewskiUlasExceptionResidueCertificate.lean)
+checks both binary transitions and every output condition. It proves
+for **every** index that the actual even binary partition count is
+28 modulo 32 exactly on the explicit source layers. For positive
+indices it also proves the valuation is one or two.
+
+The elementary obstruction to representing `4^a(8b+7)` as three integer
+squares is unconditional: every explicit source-layer member is an actual
+exception. For the reverse inclusion, the sufficiency direction of
+Legendre’s three-square theorem is still an explicit assumption. Lean
+checks the literal positive-index tail in Conjecture 7.1, conditionally on
+Legendre for powers of two and on Legendre plus Durand for all bases.
+The [pinned replay](verification/actual-congruences/receipt.json) checks
+this closure. The conjecture remains marked partial; neither missing
+theorem is a project axiom.
 
 The [receipt](verification/normalized-counting/receipt.json) records
 strict compilation, the audit of all owned declarations, and stock
