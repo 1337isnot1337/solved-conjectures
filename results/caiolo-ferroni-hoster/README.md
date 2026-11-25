@@ -6,7 +6,8 @@ Complete proposed disproof of [Conjecture 7.3](https://arxiv.org/html/2605.28474
 - [Lean theorem](../../lean/Conjectures/CaioloFerroniHoster.lean)
 - [Lean review and replay](LEAN_REVIEW.md)
 - [Exact verifier](verify_counterexample.py)
+- [Exact rank threshold (supplement)](RANKS.md), with [Lean theorem](../../lean/Conjectures/CaioloFerroniHosterRanks.lean) and [exact checks](verify_ranks.py)
 - [Internal mathematical and source audit](AUDIT.md)
 - [Discovery and attribution: issue #111](https://github.com/1337isnot1337/solved-conjectures/issues/111)
 
-Run `python3 verify_counterexample.py` with SymPy 1.14.0 installed. Both exact recursions and the symbolic sign certificate passed. Lean verifies the full family, including the matroid and its two dual polynomials. The result is internally reviewed but unrefereed; priority is not asserted. The two related assertions count as one result.
+Run `python3 verify_counterexample.py` with SymPy 1.14.0 installed. Both exact recursions and the symbolic sign certificate passed. Lean verifies the full family, including the matroid and its two dual polynomials. The result is internally reviewed but unrefereed; priority is not asserted. The two related assertions count as one result. The supplement proves that dual Chow real-rootedness holds for all matroids of rank r exactly when r ≤ 4.

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Exact rank threshold for the Caiolo–Ferroni–Hoster conjecture
+
+A [supplement](results/caiolo-ferroni-hoster/RANKS.md) to the existing entry proves that dual Chow real-rootedness holds for all matroids of rank r exactly when r ≤ 4, and that both dual polynomials fail in every rank at least five. The same construction is used with the rank as a parameter. [Lean theorem](lean/Conjectures/CaioloFerroniHosterRanks.lean). Rank four remains undecided for the augmented and interlacing assertions. The rank-five attribution is unchanged and no new conjecture is counted.
+
 ## 2026-11-24 — Gravgaard–Lee’s Lüroth diameter question
 
 Completed Lean verification of the exact positive sum hull, including equality of the total diameter, and the exact threshold for coverage modulo one. Direct cylinder refinement replaces the use of the general thickness theorem. See the [formalization](results/gravgaard-lee-diameter-condition/FORMALIZATION.md) and [local receipt](results/gravgaard-lee-diameter-condition/verification/receipt.json).

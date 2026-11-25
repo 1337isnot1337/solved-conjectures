@@ -118,6 +118,9 @@ polynomial is positive on the reals and the quintic dual right augmented
 polynomial has one simple real root, −1. Both fail to split over the reals.
 [Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
 
+`CaioloFerroniHoster.Ranks.dualChow_realRooted_iff` proves that dual Chow real-rootedness holds for all matroids of rank
+r exactly when r ≤ 4. [Scope and correspondence](../results/caiolo-ferroni-hoster/RANKS.md)
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 `Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
