@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify Novelli–Thibon's virtual alphabet interpolation
+
+Lean counts the actual finite fundamental words, carries out the
+negative-multiplicity continuation and derives the literal source
+cell product from that same interpolation polynomial.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Novelli–Thibon's signed hook cell product
 
 Lean evaluates the original graph sum in the signed fundamental

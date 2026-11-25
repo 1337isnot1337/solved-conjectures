@@ -10,6 +10,7 @@ import Conjectures.WachsCompleteGraphAllColors
 import Conjectures.NovelliThibonSourceFirstOrder
 import Conjectures.NovelliThibonSourceCertificate
 import Conjectures.NovelliThibonHookExtraction
+import Conjectures.NovelliThibonVirtualGraph
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional

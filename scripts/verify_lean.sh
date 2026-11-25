@@ -82,6 +82,15 @@ modules=(
   Conjectures.NovelliThibonSourceCertificate
   Conjectures.NovelliThibonHookCellProduct
   Conjectures.NovelliThibonHookExtraction
+  Conjectures.NovelliThibonCutEvaluation
+  Conjectures.NovelliThibonCutWords
+  Conjectures.NovelliThibonRankPrefixes
+  Conjectures.NovelliThibonRepeatedAlphabet
+  Conjectures.NovelliThibonStrictWordCount
+  Conjectures.NovelliThibonVirtualBinomial
+  Conjectures.NovelliThibonVirtualFundamental
+  Conjectures.NovelliThibonVirtualGraph
+  Conjectures.NovelliThibonWeakWordCount
   Conjectures.NovelliThibonHookJacobiTrudi
   Conjectures.NovelliThibonHookProductCoefficients
   Conjectures.NovelliThibonIncomingCells
