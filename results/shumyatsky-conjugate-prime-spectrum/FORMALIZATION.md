@@ -20,6 +20,14 @@ and the source credits in the [audit](AUDIT.md).
   missing edge label exists uniquely in the prescribed class under the
   quotient homomorphism.
 
+- [Factor action](../../lean/Conjectures/ShumyatskyFactorAction.lean).
+  Lean reconstructs an automorphism of the actual finite direct product
+  from its permutation of coordinate subgroups and their induced
+  automorphisms. It checks the source-label multiplication law, proves
+  that equation (1) is equivalent to conjugacy of these automorphisms,
+  and identifies a fixed permutation with prescribed outer classes as
+  an actual right coset modulo inner automorphisms of the product.
+
 The solvable-radical reduction, the construction of the spanning
 tree and two independent closed walks, the almost-simple generation
 inputs, and the simultaneous lift across the socle remain outside
@@ -27,6 +35,7 @@ this partial check.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. Both scopes passed.
+checker. All three scopes passed.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
-[Cycle-label receipt](verification/cycle-labels/receipt.json).
+[Cycle-label receipt](verification/cycle-labels/receipt.json) ·
+[Factor-action receipt](verification/factor-action/receipt.json).

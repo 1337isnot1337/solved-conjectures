@@ -15,6 +15,7 @@ import Conjectures.PomeranceSarkozyCRTCheckpoint
 import Conjectures.PomeranceSarkozyArithmeticTV
 import Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
 import Conjectures.ShumyatskyCycleLabels
+import Conjectures.ShumyatskyFactorAction
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction

@@ -110,6 +110,7 @@ modules=(
   Conjectures.PomeranceSarkozyTailCross
   Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
   Conjectures.ShumyatskyCycleLabels
+  Conjectures.ShumyatskyFactorAction
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw

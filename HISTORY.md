@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify the factor automorphisms in Shumyatsky’s lift
+
+Lean reconstructs the action on the actual direct product, checks the
+conjugacy relation, and identifies right cosets of inner automorphisms.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Pomerance–Sárközy's threshold identities
 
 Lean verifies the near-threshold expectation bound and the exact
