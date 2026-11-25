@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Pomerance–Sárközy's joint Poisson count law
+
+Lean verifies the exact independent Poisson sum law, the countable
+pushforward bound and the Poisson moments.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s simple factors and closed-walk label products
 
 Lean proves that automorphisms permute the minimal normal coordinate
