@@ -99,3 +99,16 @@ for the existing conjecture, not a new named result or a proof of its
 arithmetic limiting law.
 
 [Reciprocal-prime estimate replay](verification/prime-reciprocal-bound/receipt.json)
+
+## Poisson difference limit
+
+For two independent Poisson draws with rate b tending to infinity,
+Lean checks that their difference divided by √b converges weakly to
+the centered normal distribution of variance 2. The proof uses the
+actual product measure, its exact characteristic function
+exp(2b(cos t − 1)), the sine limit, and Lévy convergence. This is
+a probabilistic input to §4 of the written proof. It does not by
+itself prove convergence of the absolute first moment, the
+threshold-count variance asymptotic, or an arithmetic Gaussian law.
+
+[Poisson difference limit replay](verification/poisson-difference-normal/receipt.json)
