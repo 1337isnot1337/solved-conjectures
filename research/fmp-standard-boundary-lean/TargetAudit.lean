@@ -1,6 +1,7 @@
 import Conjectures.FMPCylindricCoefficient
 import Conjectures.FMPCylindricIdealCuts
 import Conjectures.FMPCylindricBoundary
+import Conjectures.FMPCylindricPathOrder
 import Lean.Util.CollectAxioms
 import Lean.Elab.Command
 
@@ -13,7 +14,9 @@ run_cmd do
     `FMPCylindricIdealCuts.glue_split,
     `FMPCylindricIdealCuts.glue_injective,
     `FMPCylindricIdealCuts.weakCount_add,
-    `FMPCylindricBoundary.exists_cut_boundary]
+    `FMPCylindricBoundary.exists_cut_boundary,
+    `FMPCylindricPathOrder.order_persists,
+    `FMPCylindricPathOrder.inverted_paths_intersect]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv
   for n in required do
@@ -26,7 +29,7 @@ run_cmd do
     let owner := (env.getModuleIdxFor? n |>.bind (env.header.modules[·]?)).map
       (fun mod => mod.module)
     if #[some `Conjectures.FMPCylindricCoefficient, some `Conjectures.FMPCylindricIdealCuts,
-      some `Conjectures.FMPCylindricBoundary].contains owner then
+      some `Conjectures.FMPCylindricBoundary, some `Conjectures.FMPCylindricPathOrder].contains owner then
       count := count + 1
       if ci.isTheorem then thms := thms + 1
       if n.toString.startsWith "_private." then priv := priv + 1
