@@ -58,6 +58,11 @@ modules=(
   Conjectures.WachsCompleteGraphActualExpectation
   Conjectures.WachsCompleteGraphRealZeros
   Conjectures.WachsCompleteGraphAllColors
+  Conjectures.NovelliThibonFiniteFundamental
+  Conjectures.NovelliThibonFundamentalWords
+  Conjectures.NovelliThibonLinearResponse
+  Conjectures.NovelliThibonPairFactor
+  Conjectures.NovelliThibonStandardization
   Conjectures.WachsFiniteLogConcavity
   Conjectures.WachsSingleColorComposition
   Conjectures.WachsSingleColorDifferential

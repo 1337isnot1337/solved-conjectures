@@ -72,7 +72,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **59.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **134.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
 | **59.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **134.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | **59.** [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ✅ | **138.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
-| **59.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ | **138.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
+| **59.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | 🟡 | **138.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | **64.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ | **138.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
 | **64.** [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ | **141.** [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | **64.** [Chow's conjecture](results/chow-conjecture/) | ✅ | **141.** [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |

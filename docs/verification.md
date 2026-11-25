@@ -1,5 +1,13 @@
 # Verification
 
+
+## Novelli–Thibon's conjecture
+
+Partial. Lean proves the finite-alphabet standardization and universal
+comparison identity underlying the intended Conjecture 5.7 proof.
+The source-specific and Schur/hook steps remain.
+[Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
+
 ## González D’León–Wachs’s complete-graph specialization question
 
 Complete for the stated equal-variable result. Lean verifies the
