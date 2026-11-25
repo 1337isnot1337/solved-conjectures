@@ -1,8 +1,12 @@
+import Conjectures.XuZhouCliqueQuotient
 import Conjectures.XuZhouDistanceLayers
 import Conjectures.XuZhouLaplacianEnergy
 import Conjectures.XuZhouLaplacianPartial
 import Conjectures.XuZhouMarking
+import Conjectures.XuZhouQuotientEnergy
+import Conjectures.XuZhouQuotientInertia
 import Conjectures.XuZhouSpectral
+import Conjectures.XuZhouTridiagonal
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 import Lean.Elab.Command
@@ -13,8 +17,8 @@ set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.XuZhouDistanceLayers", "Conjectures.XuZhouLaplacianEnergy", "Conjectures.XuZhouLaplacianPartial", "Conjectures.XuZhouMarking", "Conjectures.XuZhouSpectral"]
-  let required : Array Name := #[`XuZhou.quadraticEnergy_eigenbasis, `XuZhou.apply_eq_zero_of_nonnegative_energy_zero, `XuZhou.finrank_le_card_lt_of_strict_quadratic, `XuZhou.card_ge_le_sub_finrank, `XuZhou.card_nonnegative_le_observation, `XuZhou.marked_card_le, `XuZhou.large_unmarked_neighbor_sum_le_three, `XuZhou.quadraticEnergy_lapMatrix_mono, `XuZhou.exists_diameter_layering, `XuZhou.exists_retained_layers]
+  let expectedModules : Array String := #["Conjectures.XuZhouCliqueQuotient", "Conjectures.XuZhouDistanceLayers", "Conjectures.XuZhouLaplacianEnergy", "Conjectures.XuZhouLaplacianPartial", "Conjectures.XuZhouMarking", "Conjectures.XuZhouQuotientEnergy", "Conjectures.XuZhouQuotientInertia", "Conjectures.XuZhouSpectral", "Conjectures.XuZhouTridiagonal"]
+  let required : Array Name := #[`XuZhou.finrank_le_card_lt_of_strict_quadratic, `XuZhou.card_ge_le_sub_finrank, `XuZhou.card_nonnegative_le_observation, `XuZhou.marked_card_le, `XuZhou.quadraticEnergy_lapMatrix_mono, `XuZhou.exists_diameter_layering, `XuZhou.exists_retained_layers, `XuZhou.unmarkedPath_neighbors, `XuZhou.chainTridiagonal_hermitian, `XuZhou.chainResidual_nonpositive, `XuZhou.chainResidual_negative_of_first, `XuZhou.chainEnergy_nonpositive, `XuZhou.chainKernel_eq_zero_of_unmarked, `XuZhou.chainTridiagonal_nonnegative_count]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv
