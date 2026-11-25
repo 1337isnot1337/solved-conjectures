@@ -49,9 +49,18 @@ uses the full Mathlib Poisson law on the natural numbers. The
 single-coordinate total variation is exactly b(1-exp(-b)), at most b².
 The product estimate covers countable observation spaces.
 
-The pushforward to the joint Poisson offset-count law, asymptotic
-specialization, Gaussian law, second moment, process limits and rare
-deviations remain. This does not
+The [joint Poisson count-law checkpoint](../../lean/Conjectures/PomeranceSarkozyPoissonCountCheckpoint.lean)
+identifies the actual product measure of the independently summed
+Poisson offsets, with no truncation of the integer support. Lean
+checks countable atomic pushforward contraction and proves the
+Bernoulli sum-law comparison with the resulting independent Poisson
+count vector. It also verifies all Poisson falling-factorial moments,
+the centered second moment, the survival-sum identity, and the
+reciprocal-square upper bound at a positive prime cutoff.
+
+The remaining connection of the arithmetic count law to that joint
+Poisson model, asymptotic specialization, Gaussian law, second moment
+for the arithmetic function, process limits and rare deviations remain. This does not
 address the separate exact collision count `F(X)`.
 
 [Strict build, all-owned audit and independent replay receipt](verification/finite-prime-tails/receipt.json)
@@ -61,6 +70,8 @@ address the separate exact collision count `F(X)`.
 [Finite-window total-variation replay](verification/finite-window-tv/receipt.json)
 
 [Residue, Bernoulli and Poisson comparison replay](verification/residue-poisson-comparisons/receipt.json)
+
+[Joint Poisson count law and moments replay](verification/poisson-count-law/receipt.json)
 
 ## Threshold identities
 

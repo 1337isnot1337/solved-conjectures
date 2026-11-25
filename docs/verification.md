@@ -5,8 +5,9 @@
 
 Partial. Lean verifies the literal arithmetic count, factorial tails,
 finite-window total variation, and the independent product comparisons
-with Bernoulli and Poisson laws. The joint count-law pushforward and
-limiting statements remain.
+with Bernoulli and Poisson laws. The actual joint Poisson offset-count
+law and its moments are checked. The remaining arithmetic connection
+and limiting statements remain.
 
 Two supporting threshold identities are independently replayed:
 the universal band-mass bound and the exact tail-product sum.
