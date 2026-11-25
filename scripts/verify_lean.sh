@@ -4,6 +4,38 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.MaTangCoreBalance
+  Conjectures.MaTangCoreIndexed
+  Conjectures.MaTangCoreMatrix
+  Conjectures.MaTangCoreOccupancy
+  Conjectures.MaTangCoreSubspace
+  Conjectures.MaTangCoreRank
+  Conjectures.MaTangCoreGenerator
+  Conjectures.MaTangCoreDecay
+  Conjectures.MaTangCoreQuotient
+  Conjectures.MaTangCoreLinear
+  Conjectures.MaTangCoreEncoding
+  Conjectures.MaTangCoreFactor
+  Conjectures.MaTangCoreMultiplicity
+  Conjectures.MaTangCoreCoupling
+  Conjectures.MaTangCoreLowerBound
+  Conjectures.MaTangCoreBirthday
+  Conjectures.MaTangCoreUpperDyadic
+  Conjectures.MaTangCoreUpperDistinct
+  Conjectures.MaTangCoreUpperPrefixes
+  Conjectures.MaTangCoreUpperShift
+  Conjectures.MaTangCoreUpperMoment
+  Conjectures.MaTangCoreUpperCollision
+  Conjectures.MaTangCoreTranspose
+  Conjectures.MaTangCoreDistinct
+  Conjectures.MaTangCoreSetCoverage
+  Conjectures.MaTangCoreUniformSubset
+  Conjectures.MaTangCoreUpperUniform
+  Conjectures.MaTangCoreThreshold
+  Conjectures.MaTangCoreLeast
+  Conjectures.MaTangCoreAllDimensions
+  Conjectures.MaTangCoreMixedThreshold
+  Conjectures.MaTangLimsup
   Conjectures.UlasDisjointSquareBlocksBasic
   Conjectures.UlasDisjointSquareBlocksParity
   Conjectures.UlasDisjointSquareBlocksAffine

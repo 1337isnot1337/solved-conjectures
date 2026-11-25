@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Ma–Tang’s random subset-sum threshold conjecture
+
+Completed the exact original Lean formalization, including the actual second-order limsup, the third-log lower correction and convergence along the mixed orders. The published mathematical result and rank are unchanged. The separate bounded-remainder refinements are outside the Lean scope. [Scope](results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Receipt](results/ma-tang-random-subset-sums/verification/limsup-receipt.json).
+
 ## 2026-11-24: Exact rank threshold for the Caiolo–Ferroni–Hoster conjecture
 
 A [supplement](results/caiolo-ferroni-hoster/RANKS.md) to the existing entry proves that dual Chow real-rootedness holds for all matroids of rank r exactly when r ≤ 4, and that both dual polynomials fail in every rank at least five. The same construction is used with the rank as a parameter. [Lean theorem](lean/Conjectures/CaioloFerroniHosterRanks.lean). Rank four remains undecided for the augmented and interlacing assertions. The rank-five attribution is unchanged and no new conjecture is counted.

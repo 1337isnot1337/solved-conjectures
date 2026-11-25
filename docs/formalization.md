@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ma–Tang’s random subset-sum threshold conjecture
+
+The full original real-log limsup uses the actual least one-half-coverage threshold for unordered random subsets of all finite abelian groups. Both finite threshold bounds, convergence along the mixed orders and the third-log correction are proved in Lean. The separate bounded-remainder refinements are outside scope. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json).
+
 ## Gravgaard–Lee’s Lüroth diameter question
 
 The [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) proves compact interval coverage by simultaneous affine cylinder refinement and removes the finite endpoints by a two-scale alternating digit construction. The final witnesses are genuine infinite expansions. It also proves the exact modulo-one threshold and checks the equality example. See the [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json).

@@ -1,5 +1,9 @@
 # Verification
 
+## Ma–Tang’s random subset-sum threshold conjecture
+
+The exact 32-module closure was strict-built and stock-replayed with pinned Lean 4.35.0; the complete transitive axiom gate checked 1,514 declarations and 31 explicit endpoints. The aggregate repository run is separate. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) includes the scoped reproducible command; see the [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json).
+
 ## Gravgaard–Lee’s Lüroth diameter question
 
 The [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json) covers strict compilation, all-owned transitive axiom audit, and pinned stock-kernel replay for the closure of `Conjectures.GravgaardLeeDiameter`. See the [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) for the scoped command. The imports and required endpoints are registered in the [aggregate workflow](../.github/workflows/lean.yml).
