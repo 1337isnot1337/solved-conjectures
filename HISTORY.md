@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify the complete-graph Laguerre formal-series calculation
+
+Lean checks the actual equal-variable homogeneous coefficients and the
+formal Laguerre and Gamma moment identities. This checkpoint keeps the
+weighted bond-poset bridge and the root and probability inputs separate.
+[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Lassalle approximation estimate in Lean
 
 Lean verifies the normalized coefficient expansion, discrete Bernstein
