@@ -5,6 +5,7 @@ import Conjectures.SternHalfPlaneContinuant
 import Conjectures.SternHalfPlaneRealAxis
 import Conjectures.NuttallThetaKernel
 import Conjectures.NuttallThetaTail
+import Conjectures.NuttallThetaTermDerivatives
 import Conjectures.NuttallRepeatedTails
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
