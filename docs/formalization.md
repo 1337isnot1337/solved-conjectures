@@ -6,7 +6,7 @@ Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates h
 
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
-Partial. Lean verifies the algebraic reduction from a certified negative alternating sign grid, including exact interval root counts and the reciprocal substitution. Lean also checks the exact two expansions at positive grid coordinates and the nearest conjugate poles. The full grid, including the center, near endpoints and reflected half, proves the exact real root split for every recurrence-model length at least 128. The literal rank sum over ordered partitions and Rossi’s evaluated characteristic face sum agree with the recurrence model. A complete finite-grid certificate for the omitted lengths is still pending. [Lean scope](../results/rossi-permutohedron-roots/FORMALIZATION.md).
+Complete for Conjecture 6.16. Lean counts the literal ordered faces, verifies the exact finite certificates, and combines them with the uniform analytic grid. Both the literal rank polynomial and the evaluated characteristic face sum have the complete prescribed root multisets at every length at least three. [Scope and full receipt](../results/rossi-permutohedron-roots/FORMALIZATION.md).
 
 
 ## Seven upper-half circular chromatic index certificates
