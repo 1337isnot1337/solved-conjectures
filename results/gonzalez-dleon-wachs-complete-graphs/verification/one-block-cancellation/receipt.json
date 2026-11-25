@@ -1,0 +1,397 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T19:37:51.463663+00:00",
+  "finished_at": "2026-11-25T19:40:51.301413+00:00",
+  "root": "Conjectures.WachsCompleteGraphTopScope",
+  "project_modules": [
+    "Conjectures.WachsCompleteGraphCharacteristic",
+    "Conjectures.WachsCompleteGraphCoefficientFormula",
+    "Conjectures.WachsCompleteGraphFibreWeights",
+    "Conjectures.WachsCompleteGraphForcing",
+    "Conjectures.WachsCompleteGraphGammaFactors",
+    "Conjectures.WachsCompleteGraphGammaProduct",
+    "Conjectures.WachsCompleteGraphHomogeneous",
+    "Conjectures.WachsCompleteGraphLaguerreNormalization",
+    "Conjectures.WachsCompleteGraphMoebiusLaw",
+    "Conjectures.WachsCompleteGraphMomentExpansion",
+    "Conjectures.WachsCompleteGraphOrdinaryFibres",
+    "Conjectures.WachsCompleteGraphStrictRank",
+    "Conjectures.WachsCompleteGraphTopCancellation",
+    "Conjectures.WachsCompleteGraphTopExtensions",
+    "Conjectures.WachsCompleteGraphTopScope",
+    "Conjectures.WachsCompleteGraphVandermonde",
+    "Conjectures.WachsCompleteGraphWeightCompletions",
+    "Conjectures.WachsCompleteGraphWeightedOrder",
+    "Conjectures.WachsCompleteGraphWeightedPartition"
+  ],
+  "required_endpoints": [
+    "WachsCompleteGraph.WeightedCompletePartition.rank_strict_mono",
+    "WachsCompleteGraph.WeightedCompletePartition.topWeight_cancellation",
+    "WachsCompleteGraph.WeightedCompletePartition.characteristic_grouped",
+    "WachsCompleteGraph.WeightedCompletePartition.ordinary_fibre_cancellation",
+    "WachsCompleteGraph.WeightedCompletePartition.ordinaryFibre_equiv",
+    "WachsCompleteGraph.WeightedCompletePartition.ordinaryFibre_card",
+    "WachsCompleteGraph.weight_compositions_card",
+    "WachsCompleteGraph.weight_completions_card"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/WachsCompleteGraphCharacteristic.lean": "872e1a7043b62312a6c7b217ec39173a168b531d9394d10e5269641f0be337f2",
+    "lean/Conjectures/WachsCompleteGraphCoefficientFormula.lean": "e85f07803b3adab116aceb686422a54ce37cd3639da592752c01c0f1b6a6c482",
+    "lean/Conjectures/WachsCompleteGraphFibreWeights.lean": "1af986d5cc2fd40f3ff552bf7a018a8f17a4a27a2ab4dc52b2851a3867f89f62",
+    "lean/Conjectures/WachsCompleteGraphForcing.lean": "d8902f3beb19f75ab11f1d64069ad09eb7225d5196d64e0ded47f1b3e1cd9720",
+    "lean/Conjectures/WachsCompleteGraphGammaFactors.lean": "7922fd0f90abc151d5c9136b740ed4c77fa95b2c5ca5bce8d019bc6e3fed62d4",
+    "lean/Conjectures/WachsCompleteGraphGammaProduct.lean": "a6ecf95a11565f01695e69254f151d63e55d151408b956bbb5bd2ee6a6e1b559",
+    "lean/Conjectures/WachsCompleteGraphHomogeneous.lean": "08e94655ef60e9abc08a45eba4c3959785cd7139bbf600431f1fd858d0a1505f",
+    "lean/Conjectures/WachsCompleteGraphLaguerreNormalization.lean": "57ba180b74a7d44cfa7031c8df0f8118c2d4ed86d6c9a6cc741aa2d42c19e4c4",
+    "lean/Conjectures/WachsCompleteGraphMoebiusLaw.lean": "e30155d030da69f0deeed1f84f504fb5e1e936f322229288d33e0339aec2418a",
+    "lean/Conjectures/WachsCompleteGraphMomentExpansion.lean": "409ad69dba6239578aeb526b0bd1e9bd3de5e63cffda9d2817b3286f3038309a",
+    "lean/Conjectures/WachsCompleteGraphOrdinaryFibres.lean": "9ad2e366085fc76478c3fb4e4c6e7225732823c20ea212c70996e0783b53781d",
+    "lean/Conjectures/WachsCompleteGraphStrictRank.lean": "0dcea1390a1af7b2714df0603f75f69175dd6a7d544438e53c7ac99efc857292",
+    "lean/Conjectures/WachsCompleteGraphTopCancellation.lean": "a8a9122d0ee967eb689ff616e087237b488bf5f00a0ca7c67fd7a32d330f11db",
+    "lean/Conjectures/WachsCompleteGraphTopExtensions.lean": "85a46b9e2acb40cf9817422f6fd12bfcf6b415e5f9f9cd27370b1651a5ab40bc",
+    "lean/Conjectures/WachsCompleteGraphTopScope.lean": "dc137ab084bd07703039d9861f37857478b788824f7b00a3f59325802c32b721",
+    "lean/Conjectures/WachsCompleteGraphVandermonde.lean": "9e5e639008ba6543a8ab1da68d9f907df04ceecf8aa9b2e909f252baf929f3fe",
+    "lean/Conjectures/WachsCompleteGraphWeightCompletions.lean": "51d9270f7b4dac5e721067d64bb18226d233d79d2cf3146332aba1683e81784b",
+    "lean/Conjectures/WachsCompleteGraphWeightedOrder.lean": "a2abb4674eca4037bb83514c54982b61821bbfda82eb6ba840700ce09e9d2d56",
+    "lean/Conjectures/WachsCompleteGraphWeightedPartition.lean": "387a47fb91faffae997e375d5fb4aca491a140d361ddf98f1f3a32d0398c7633"
+  },
+  "input_sha256": {
+    "lean/Conjectures/WachsCompleteGraphCharacteristic.lean": "872e1a7043b62312a6c7b217ec39173a168b531d9394d10e5269641f0be337f2",
+    "lean/Conjectures/WachsCompleteGraphCoefficientFormula.lean": "e85f07803b3adab116aceb686422a54ce37cd3639da592752c01c0f1b6a6c482",
+    "lean/Conjectures/WachsCompleteGraphFibreWeights.lean": "1af986d5cc2fd40f3ff552bf7a018a8f17a4a27a2ab4dc52b2851a3867f89f62",
+    "lean/Conjectures/WachsCompleteGraphForcing.lean": "d8902f3beb19f75ab11f1d64069ad09eb7225d5196d64e0ded47f1b3e1cd9720",
+    "lean/Conjectures/WachsCompleteGraphGammaFactors.lean": "7922fd0f90abc151d5c9136b740ed4c77fa95b2c5ca5bce8d019bc6e3fed62d4",
+    "lean/Conjectures/WachsCompleteGraphGammaProduct.lean": "a6ecf95a11565f01695e69254f151d63e55d151408b956bbb5bd2ee6a6e1b559",
+    "lean/Conjectures/WachsCompleteGraphHomogeneous.lean": "08e94655ef60e9abc08a45eba4c3959785cd7139bbf600431f1fd858d0a1505f",
+    "lean/Conjectures/WachsCompleteGraphLaguerreNormalization.lean": "57ba180b74a7d44cfa7031c8df0f8118c2d4ed86d6c9a6cc741aa2d42c19e4c4",
+    "lean/Conjectures/WachsCompleteGraphMoebiusLaw.lean": "e30155d030da69f0deeed1f84f504fb5e1e936f322229288d33e0339aec2418a",
+    "lean/Conjectures/WachsCompleteGraphMomentExpansion.lean": "409ad69dba6239578aeb526b0bd1e9bd3de5e63cffda9d2817b3286f3038309a",
+    "lean/Conjectures/WachsCompleteGraphOrdinaryFibres.lean": "9ad2e366085fc76478c3fb4e4c6e7225732823c20ea212c70996e0783b53781d",
+    "lean/Conjectures/WachsCompleteGraphStrictRank.lean": "0dcea1390a1af7b2714df0603f75f69175dd6a7d544438e53c7ac99efc857292",
+    "lean/Conjectures/WachsCompleteGraphTopCancellation.lean": "a8a9122d0ee967eb689ff616e087237b488bf5f00a0ca7c67fd7a32d330f11db",
+    "lean/Conjectures/WachsCompleteGraphTopExtensions.lean": "85a46b9e2acb40cf9817422f6fd12bfcf6b415e5f9f9cd27370b1651a5ab40bc",
+    "lean/Conjectures/WachsCompleteGraphTopScope.lean": "dc137ab084bd07703039d9861f37857478b788824f7b00a3f59325802c32b721",
+    "lean/Conjectures/WachsCompleteGraphVandermonde.lean": "9e5e639008ba6543a8ab1da68d9f907df04ceecf8aa9b2e909f252baf929f3fe",
+    "lean/Conjectures/WachsCompleteGraphWeightCompletions.lean": "51d9270f7b4dac5e721067d64bb18226d233d79d2cf3146332aba1683e81784b",
+    "lean/Conjectures/WachsCompleteGraphWeightedOrder.lean": "a2abb4674eca4037bb83514c54982b61821bbfda82eb6ba840700ce09e9d2d56",
+    "lean/Conjectures/WachsCompleteGraphWeightedPartition.lean": "387a47fb91faffae997e375d5fb4aca491a140d361ddf98f1f3a32d0398c7633",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphVandermonde.olean",
+        "Conjectures/WachsCompleteGraphVandermonde.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphVandermonde.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphForcing.olean",
+        "Conjectures/WachsCompleteGraphForcing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphForcing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphCoefficientFormula.olean",
+        "Conjectures/WachsCompleteGraphCoefficientFormula.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphCoefficientFormula.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphLaguerreNormalization.olean",
+        "Conjectures/WachsCompleteGraphLaguerreNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphLaguerreNormalization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphGammaFactors.olean",
+        "Conjectures/WachsCompleteGraphGammaFactors.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphGammaFactors.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphGammaProduct.olean",
+        "Conjectures/WachsCompleteGraphGammaProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphGammaProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphMomentExpansion.olean",
+        "Conjectures/WachsCompleteGraphMomentExpansion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphMomentExpansion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphHomogeneous.olean",
+        "Conjectures/WachsCompleteGraphHomogeneous.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphHomogeneous.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphWeightedPartition.olean",
+        "Conjectures/WachsCompleteGraphWeightedPartition.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphWeightedPartition.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphWeightedOrder.olean",
+        "Conjectures/WachsCompleteGraphWeightedOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphWeightedOrder.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphCharacteristic.olean",
+        "Conjectures/WachsCompleteGraphCharacteristic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphCharacteristic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphMoebiusLaw.olean",
+        "Conjectures/WachsCompleteGraphMoebiusLaw.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphMoebiusLaw.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphStrictRank.olean",
+        "Conjectures/WachsCompleteGraphStrictRank.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphStrictRank.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphWeightCompletions.olean",
+        "Conjectures/WachsCompleteGraphWeightCompletions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphWeightCompletions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphTopExtensions.olean",
+        "Conjectures/WachsCompleteGraphTopExtensions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphTopExtensions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphTopCancellation.olean",
+        "Conjectures/WachsCompleteGraphTopCancellation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphTopCancellation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphOrdinaryFibres.olean",
+        "Conjectures/WachsCompleteGraphOrdinaryFibres.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphOrdinaryFibres.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphFibreWeights.olean",
+        "Conjectures/WachsCompleteGraphFibreWeights.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphFibreWeights.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WachsCompleteGraphTopScope.olean",
+        "Conjectures/WachsCompleteGraphTopScope.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WachsCompleteGraphTopScope.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.WachsCompleteGraphTopScope",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 227,
+    "modules": 19,
+    "private_declarations": 46,
+    "raw_declarations": 227,
+    "required": 8,
+    "tag": "passed",
+    "theorems": 171
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
