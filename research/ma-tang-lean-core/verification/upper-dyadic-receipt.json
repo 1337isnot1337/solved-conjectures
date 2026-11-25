@@ -1,0 +1,44 @@
+{
+  "status": "passed_scoped_partial",
+  "existing_result": "ma-tang-random-subset-sums",
+  "source_base": "f7644e59bab7cd5db3d1a7e3feb36fc382645df2",
+  "lean": "4.35.0",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "strict_source_count": 18,
+  "all_owned": 987,
+  "owned_theorems": 699,
+  "private_declarations": 69,
+  "new_owned": 59,
+  "required_endpoints": 7,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "stock_kernel_replayed": 18,
+  "module_sha256": {
+    "Conjectures.MaTangCoreBalance": "ddb959fd9a40f664dead70a468aee434a492ec14375941ea567885f3d42a3b80",
+    "Conjectures.MaTangCoreIndexed": "983c021c9e0bb930d34571517065c28c1ba923e400f91fc75e253d5b28e88388",
+    "Conjectures.MaTangCoreMatrix": "04bcc081bc1ce6399fc74e2279b796497ea903ab390edc1d9735757033fde2d4",
+    "Conjectures.MaTangCoreOccupancy": "bc3c930220c3b98c19115a52d1d5801f64b456b5ef53cdb30999de3bce2a8279",
+    "Conjectures.MaTangCoreSubspace": "917fd3857ff1fd091bcb392f0b064e43459501589487320c079a32b3c737e71b",
+    "Conjectures.MaTangCoreRank": "18587738a9b34e7b219918d48e5b1602fb6a14c626c060335a670b4c88b37de3",
+    "Conjectures.MaTangCoreGenerator": "647daadc2dd3cba94877e9378d6475b3ed908244ada07d28be767891224e70e9",
+    "Conjectures.MaTangCoreDecay": "754b030388fe35ece202a9857e1be0f2a6393f57b618acc30c05bc7c312076a4",
+    "Conjectures.MaTangCoreQuotient": "ec16aca3d62b6bf048d5329f339d6eb3e4a4149fddf280c56f3a062667f3d529",
+    "Conjectures.MaTangCoreLinear": "9d539febc8707255698810c011e4ad178e4260531a79e379d3f26cc486f4256b",
+    "Conjectures.MaTangCoreEncoding": "bc7f7e743494006f77cdddcaebb27b99481fbfa949f1258aff61d58572983e1f",
+    "Conjectures.MaTangCoreFactor": "45d12cae5146a6d363a239eacd4797a528f5487991f3883fce49f1800a0301de",
+    "Conjectures.MaTangCoreMultiplicity": "060ae5ab655f59a64d9b5c0c05555d1e34a927d5d300fb80567de7cd11a4b145",
+    "Conjectures.MaTangCoreCoupling": "4a9c86f9b05cf6065130a34591e96c34bd754a14b7556b4949ffd01cad6f152f",
+    "Conjectures.MaTangCoreLowerBound": "7806ea16ba7cd054096e7d4f6f5fba7c0ca68ef333f5e0707c9d48cc5e72e6ca",
+    "Conjectures.MaTangCoreBirthday": "8441d478ef745005a45f41d7858cec17ca1f6511b9fa309054bb0c0c0a14675a",
+    "Conjectures.MaTangCoreUpperDyadic": "d8e3e08744529143a08ade5909c81ec12e5bc819a9ea643fb7c175e9cf1d39b3",
+    "Conjectures.MaTangCoreUpperDistinct": "030c646b4c18051092b01f9f56d684be175fb085ce7bd729b47ac08bea8a63b3"
+  },
+  "not_claimed": [
+    "actual group second moment or translation incidence",
+    "actual universal subset upper threshold",
+    "real-log limiting statement"
+  ]
+}
