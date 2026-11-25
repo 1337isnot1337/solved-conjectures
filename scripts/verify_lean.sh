@@ -71,6 +71,13 @@ modules=(
   Conjectures.NovelliThibonOptionalEdges
   Conjectures.NovelliThibonRowCounts
   Conjectures.NovelliThibonSourceFirstOrder
+  Conjectures.NovelliThibonAlternantChains
+  Conjectures.NovelliThibonAlternants
+  Conjectures.NovelliThibonDiagramChains
+  Conjectures.NovelliThibonPieriFirstMoments
+  Conjectures.NovelliThibonSchurExtraction
+  Conjectures.NovelliThibonSchurMoments
+  Conjectures.NovelliThibonYoungRaises
   Conjectures.NovelliThibonSourceNormalization
   Conjectures.NovelliThibonPairFactor
   Conjectures.NovelliThibonStandardization

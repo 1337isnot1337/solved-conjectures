@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Novelli–Thibon's Pieri diagram-chain extraction
+
+Lean proves the signed alternant recurrence, the vertical two-box
+start, and the Schur first moments in terms of literal diagram chains.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Check Novelli–Thibon's diagram counts and first-order formula
 
 Lean proves the optional-edge cancellation, the literal row and leg
