@@ -6,7 +6,7 @@ Partial. Lean checks the exact polynomial recurrence, the all-index continuant r
 
 ## Nuttall's conjecture
 
-Partial. Lean checks the literal theta series, its absolute convergence, continuity, leading asymptotic and global double-exponential decay, plus existence and positivity of all iterated tail integrals and polynomial-weighted single-integral cumulants on the half-line. Higher minors are written only. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+Partial. Lean checks the literal theta series, its absolute convergence, continuity, leading asymptotic and all-order global double-exponential derivative bounds, plus existence and positivity of all iterated tail integrals and polynomial-weighted single-integral cumulants on the half-line. Higher minors are written only. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 
@@ -168,7 +168,7 @@ proofs are documented separately in the catalogue and result package.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
-| Nuttall's conjecture | Partial | Literal theta series, leading asymptotic without derivatives, and strict positivity of every order-one minor for literal iterated tails and for the single-integral formulation. Higher minors are written only. |
+| Nuttall's conjecture | Partial | Literal theta series, termwise differentiation and derivative bounds at every order, and strict positivity of every order-one minor for literal iterated tails and for the single-integral formulation. Higher minors are written only. |
 | Coffey–Smith conjecture | Not formalized | Complete proposed unconditional disproof of Smith’s named conjunction: if RH holds the dyadic coefficient square mass is O(N^(-1/2) log³ N), so both proposed positive-fraction sets have density zero for 0<ε<1/4; without RH the polynomial upper bound fails. The weaker Coffey upper-bound assertion alone is not refuted. Internally reviewed; no Lean verification. |
 | Chaudhary–Khmiri–Mazhouda conjecture | Not formalized | Complete proposed computer-assisted disproof of the universal automorphic Li-coefficient monotonicity claim. The admissible GL1 imaginary norm twist L(s+8i,χ₋₃) has Re(λ(2)−λ(1))<−3/2, certified by rational interval bounds. No GRH assumption. Internally reviewed; no Lean verification. |
 | Merlini–Sala–Sala conjecture | Not formalized | Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup $`\lvert\lambda_{\mathrm{tiny}}(n)\rvert/n^{1/4}=\infty`$. The authors’ weaker linear stability conjecture is not resolved. Internally reviewed; no Lean verification. |
