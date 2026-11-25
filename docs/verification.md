@@ -291,6 +291,8 @@ The 13-module closure passed strict compilation with warnings treated as errors,
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 
+The partial [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) and [receipt](../results/ekhad-zeilberger-unfair-bet/verification/receipt.json) cover the exact finite overlap and constant-loser equality theorems, not the asymptotic probability formula.
+
 Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).
 
 ## Kauers–Koutschan recurrence conjecture

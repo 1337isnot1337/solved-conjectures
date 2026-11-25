@@ -247,6 +247,11 @@ modules=(
   Conjectures.SokalAperyLegendre
   Conjectures.SokalAperyTorus
   Conjectures.SokalAperyMomentThreshold
+  Conjectures.EkhadZeilbergerOverlap
+  Conjectures.EkhadZeilbergerWords
+  Conjectures.EkhadZeilbergerEquality
+  Conjectures.EkhadZeilbergerCrossOverlap
+  Conjectures.EkhadZeilbergerFiniteOverlap
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

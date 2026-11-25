@@ -1,4 +1,5 @@
-import Mathlib
+import Mathlib.Analysis.Real.Sqrt
+import Mathlib.Tactic
 
 /-! Candidate arithmetic component of the Ekhad–Zeilberger overlap proof.
 The word-overlap and asymptotic-variance hypotheses remain explicit.
@@ -30,8 +31,6 @@ theorem overlapMass_step (t : ℝ) (n : ℕ) :
   induction n with
   | zero => simp [overlapMass]
   | succ n ih =>
-    change overlapMass t (n + 1 + 1) - overlapMass t (n + 1) =
-      t ^ (n + 1 + 1)
     calc
       overlapMass t (n + 1 + 1) - overlapMass t (n + 1) =
           t * (overlapMass t (n + 1) - overlapMass t n) := by
@@ -51,7 +50,7 @@ theorem overlapMass_bound (t : ℝ) (ht : 0 ≤ t) (n : ℕ) :
             simp only [overlapMass]
             ring
       _ ≤ t * (1 - t) + t * t :=
-        add_le_add_left (mul_le_mul_of_nonneg_left ih ht) _
+        add_le_add_right (mul_le_mul_of_nonneg_left ih ht) _
       _ = t := by ring
 
 theorem overlapMass_le_one (t : ℝ) (ht : 0 ≤ t) (htwo : t ≤ 1 / 2)

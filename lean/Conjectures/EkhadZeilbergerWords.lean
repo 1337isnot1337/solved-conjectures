@@ -138,7 +138,7 @@ theorem overlapWeight_le_shifted_mass (t : ℝ) (ht : 0 ≤ t)
       linarith [overlapMass_step t n]
     have hshift : t ^ m * overlapMass t (n + 1) =
         t ^ m * overlapMass t n + t ^ (m + n + 1) := by
-      rw [hmass, mul_add, ← pow_add]
+      rw [hmass, mul_add, ← pow_add, Nat.add_assoc]
     change overlapWeight t u v (m + n + 1) ≤ t ^ m * overlapMass t (n + 1)
     rw [overlapWeight_succ, hshift]
     exact add_le_add ih (overlapTerm_le t ht u v (m + n + 1))
