@@ -1,3 +1,4 @@
+import Conjectures.WachsCompleteGraphHomogeneous
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.SternHalfPlaneBasic

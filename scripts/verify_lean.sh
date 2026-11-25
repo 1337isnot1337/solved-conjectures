@@ -22,6 +22,14 @@ modules=(
   Conjectures.LassalleBoxBatch10
   Conjectures.LassalleBoxBatch11
   Conjectures.LassalleBoxBatch12
+  Conjectures.WachsCompleteGraphCoefficientFormula
+  Conjectures.WachsCompleteGraphForcing
+  Conjectures.WachsCompleteGraphGammaFactors
+  Conjectures.WachsCompleteGraphGammaProduct
+  Conjectures.WachsCompleteGraphHomogeneous
+  Conjectures.WachsCompleteGraphLaguerreNormalization
+  Conjectures.WachsCompleteGraphMomentExpansion
+  Conjectures.WachsCompleteGraphVandermonde
   Conjectures.LassalleBoxCoverage
   Conjectures.LassalleApproximationGrouping
   Conjectures.LassalleBernsteinBounds
