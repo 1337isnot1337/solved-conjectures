@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Shumyatsky.factorAction_mul,
+    `Shumyatsky.exists_factorAction_of_maps_factors,
+    `Shumyatsky.factorAction_injective,
+    `Shumyatsky.factorAction_conj_iff,
+    `Shumyatsky.factorAction_outer_eq_iff,
     `Shumyatsky.transportLabels_returns_iff,
     `Shumyatsky.existsUnique_closingLabel_in_class,
     `Shumyatsky.PrimeSpectrumMinimal.of_surjective,

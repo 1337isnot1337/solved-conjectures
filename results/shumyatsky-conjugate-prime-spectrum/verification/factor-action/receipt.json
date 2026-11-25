@@ -1,0 +1,86 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T22:34:25.050060+00:00",
+  "finished_at": "2026-11-25T22:34:36.721660+00:00",
+  "root": "Conjectures.ShumyatskyFactorAction",
+  "project_modules": [
+    "Conjectures.ShumyatskyFactorAction"
+  ],
+  "required_endpoints": [
+    "Shumyatsky.factorAction_mul",
+    "Shumyatsky.exists_factorAction_of_maps_factors",
+    "Shumyatsky.factorAction_injective",
+    "Shumyatsky.factorAction_conj_iff",
+    "Shumyatsky.factorAction_outer_eq_iff"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ShumyatskyFactorAction.lean": "d3defb78e301f9d09f37227c8bd90b40a3347223e8515b4ad653fabd7049673f"
+  },
+  "input_sha256": {
+    "lean/Conjectures/ShumyatskyFactorAction.lean": "d3defb78e301f9d09f37227c8bd90b40a3347223e8515b4ad653fabd7049673f",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-lean-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyFactorAction.olean",
+        "Conjectures/ShumyatskyFactorAction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyFactorAction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-lean-campaign-20261125/shumyatsky/factors/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-shumyatsky-lean-20261125/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ShumyatskyFactorAction"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 16,
+    "modules": 1,
+    "private_declarations": 0,
+    "raw_declarations": 16,
+    "required": 5,
+    "tag": "passed",
+    "theorems": 13
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
