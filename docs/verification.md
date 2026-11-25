@@ -3,10 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean verifies the exact signed monomial product for the
-normalized finite filling model and the literal standard tableau
-cardinality on its right-hand side. The source LLT identification and
-the adjacent hook assertion remain.
+Partial. Lean connects the original finite commutative graph sum to
+the formal Laurent polynomial and checks the intended signed
+monomial product. The adjacent hook claim and independent symmetry
+and basis results are outside this checkpoint.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question

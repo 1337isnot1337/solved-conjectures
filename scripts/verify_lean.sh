@@ -76,6 +76,15 @@ modules=(
   Conjectures.NovelliThibonDiagramChains
   Conjectures.NovelliThibonPieriFirstMoments
   Conjectures.NovelliThibonLaurentProduct
+  Conjectures.NovelliThibonGraphLLT
+  Conjectures.NovelliThibonGraphOmega
+  Conjectures.NovelliThibonRightStandardization
+  Conjectures.NovelliThibonSourceCertificate
+  Conjectures.NovelliThibonSourceFilling
+  Conjectures.NovelliThibonSourceGraphSum
+  Conjectures.NovelliThibonSourceLaurent
+  Conjectures.NovelliThibonSourcePrefactors
+  Conjectures.NovelliThibonSourceShape
   Conjectures.NovelliThibonTableauChains
   Conjectures.NovelliThibonTableauCompletions
   Conjectures.NovelliThibonTableauSplit
