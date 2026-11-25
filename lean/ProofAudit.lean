@@ -15,6 +15,8 @@ run_cmd do
     `Shumyatsky.minimalNormalSocleEquiv,
     `Shumyatsky.minimalNormalSocle_ne_bot,
     `Shumyatsky.exists_generating_pair_of_socle_factor_lifts,
+    `Shumyatsky.ambientConjugates_transitive,
+    `Shumyatsky.exists_nonabelian_simple_power_of_minimal_normal,
     `Shumyatsky.exists_lift_across_prime_kernel,
     `Shumyatsky.exists_principal_cocycle_of_coprime_card,
     `Shumyatsky.exists_kernel_conjugating_complements,

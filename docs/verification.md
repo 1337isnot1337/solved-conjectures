@@ -63,7 +63,7 @@ The complete stock-kernel checked closure proves the exact finite and analytic s
 
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
-The [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md) record strict compilation, all-owned axiom audits, and stock-kernel replay for the prime-spectrum reduction, automorphisms of the actual simple-factor product, cyclic gluing, the indexed cycle partition, independent closed-word labels, the conditional multifactor lift, the simultaneous factor adjustments, the abelian reduction, the cyclic quotient normalization, and the direct-product structure of the nonabelian socle. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) retains the written review and source credits.
+The [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md) record strict compilation, all-owned axiom audits, and stock-kernel replay for the prime-spectrum reduction, automorphisms of the actual simple-factor product, cyclic gluing, the indexed cycle partition, independent closed-word labels, the conditional multifactor lift, the simultaneous factor adjustments, the abelian reduction, the cyclic quotient normalization, the direct-product structure of the nonabelian socle, and the transitive simple factors of each constituent. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) retains the written review and source credits.
 
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
