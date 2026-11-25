@@ -94,6 +94,8 @@ complete local import closure for the all-prime-powers theorem. The standard
 ```sh
 lake build Conjectures.CaioloFerroniHoster
 lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
+lake build Conjectures.CaioloFerroniHosterRanks
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHosterRanks
 ```
 
 [Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
@@ -390,6 +392,7 @@ The [dual Chow counterexample](../results/caiolo-ferroni-hoster/PROOF.md) uses t
 ```bash
 python3 -m pip install sympy==1.14.0
 python3 results/caiolo-ferroni-hoster/verify_counterexample.py
+python3 results/caiolo-ferroni-hoster/verify_ranks.py
 python3 results/hkm-ehrhart/verify.py
 ```
 
