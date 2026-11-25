@@ -539,6 +539,17 @@ modules=(
   Conjectures.HKMEhrhartCountCertificate
   Conjectures.HKMEhrhartLiteralCounts
   Conjectures.HKMEhrhartPartial
+  Conjectures.HKMEhrhartStarsBars
+  Conjectures.HKMEhrhartPolynomialSum
+  Conjectures.HKMEhrhartSupportShells
+  Conjectures.HKMEhrhartUnclippedPolynomial
+  Conjectures.HKMEhrhartSignedBudget
+  Conjectures.HKMEhrhartPairViolation
+  Conjectures.HKMEhrhartViolationBudget
+  Conjectures.HKMEhrhartClipCount
+  Conjectures.HKMEhrhartPolynomialAssembly
+  Conjectures.HKMEhrhartEhrhartViaAssembly
+  Conjectures.HKMEhrhartDegreeBridge
   Conjectures.FussRoots
   Conjectures.FussBlocks
   Conjectures.FussSlot

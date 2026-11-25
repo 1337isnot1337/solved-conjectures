@@ -2,7 +2,7 @@
 
 ## Higashitani–Kummer–Michałek conjecture
 
-The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, all-owned verification and stock replay for the ten-module partial closure, including the literal count identity and its twelve certified values. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
+The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, the all-owned axiom audit and stock replay for the `Conjectures.HKMEhrhartDegreeBridge` closure. It includes exact lattice membership, polynomial counting at every dilation, the degree bound, uniqueness, and the off-line root of the literal Ehrhart polynomial. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
 
 ## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
 

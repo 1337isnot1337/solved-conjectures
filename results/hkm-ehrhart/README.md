@@ -7,7 +7,7 @@ Complete internally audited disproof of both clauses of [Conjecture 4.10](https:
 - [Internal mathematical and source audit](AUDIT.md)
 - [Discovery and attribution: issue #316](https://github.com/1337isnot1337/solved-conjectures/issues/316)
 
-Run `python3 verify.py` in this directory. The exact checks passed. Lean status: [partial](FORMALIZATION.md). The result is internally reviewed but unrefereed; priority is not asserted. Both clauses count as one result.
+Run `python3 verify.py` in this directory. The exact checks passed. Lean [verifies the full disproof of the published conjecture](FORMALIZATION.md) via an off-line root; the independent Wronskian certificate remains written. The result is internally reviewed but unrefereed; priority is not asserted. Both clauses count as one result.
 
 ## Further results, not separate conjecture resolutions
 
