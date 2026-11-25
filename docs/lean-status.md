@@ -1,5 +1,9 @@
 # Lean verification status
 
+## McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. The final interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## Seven upper-half circular chromatic index certificates
 
 Partial for the combined result. Lean verifies the seven actual simple graphs, their maximum degrees, and their real circular chromatic index bounds. Six values are exact; only the stated bracket is proved at degree 15. The earlier degree families are outside this check. [Scope](../results/circular-index-upper-half-remaining-deltas/REVIEW.md).
@@ -211,7 +215,7 @@ proofs are documented separately in the catalogue and result package.
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
 | Kovalev’s square-root Taylor-section zero-free conjecture | Complete original square-root conjecture | Every positive length, every Taylor degree, and the full closed unit disk, with actual derivative coefficients and beta measures. Fractional-exponent and segment supplements remain unformalized. [Scope](../results/kovalev-zero-free/FORMALIZATION.md) · [Receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json). |
 | Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture | Partial | Exact Stern recurrence and continuation criterion for all positive indices, and unconditional positive real-axis nonvanishing. The regional complex estimates and compact certificate are outside this receipt. |
-| McNamara–Steingrímsson’s interval rank-unimodality conjecture | Not formalized | Reviewed written disproof of Conjecture 9.4. An exact integer checker reproduces the three rank sizes in the classical interval. [Proof](../results/mcnamara-steingrimsson-rank-unimodality/PROOF.md) · [Review](../results/mcnamara-steingrimsson-rank-unimodality/AUDIT.md). |
+| McNamara–Steingrímsson’s interval rank-unimodality conjecture | Partial | Literal layered, pointed and direct-sum containment, with the exact weighted greedy recurrence. The final interval count remains written. [Lean scope](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md). |
 | Shumyatsky’s conjugate prime-spectrum conjecture | Not formalized | Answers Kourovka Notebook Question 17.125 for all finite groups by lifting across the socle. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |

@@ -324,6 +324,14 @@ modules=(
   Conjectures.RossiPermutohedronRank
   Conjectures.RossiPermutohedronCharacteristic
   Conjectures.RossiPermutohedronFaceRootTransport
+  Conjectures.McNamaraSteingrimssonContainment
+  Conjectures.McNamaraSteingrimssonDirectSum
+  Conjectures.McNamaraSteingrimssonDistinct
+  Conjectures.McNamaraSteingrimssonLayerEmbedding
+  Conjectures.McNamaraSteingrimssonNormalize
+  Conjectures.McNamaraSteingrimssonPointed
+  Conjectures.McNamaraSteingrimssonPolynomial
+  Conjectures.McNamaraSteingrimssonSubwords
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

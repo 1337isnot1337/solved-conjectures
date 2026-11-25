@@ -1425,3 +1425,4 @@ import Conjectures.RossiPermutohedronAnalyticPartial
 import Conjectures.RossiPermutohedronBulkGrid
 import Conjectures.RossiPermutohedronUniformGrid
 import Conjectures.RossiPermutohedronFaceRootTransport
+import Conjectures.McNamaraSteingrimssonContainment

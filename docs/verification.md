@@ -1,5 +1,9 @@
 # Verification
 
+## McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. The final interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
 The [scoped Lean receipt](../results/rossi-permutohedron-roots/verification/receipt.json) checks the recurrence, real-root count from an assumed negative alternating grid, and reciprocal root transport. The [analytic receipt](../results/rossi-permutohedron-roots/verification/analytic/receipt.json) covers both expansions and the exact nearest-pole phase. The [bulk-sign receipt](../results/rossi-permutohedron-roots/verification/bulk/receipt.json) proves the strict positive-coordinate bulk signs. The [uniform grid receipt](../results/rossi-permutohedron-roots/verification/uniform/receipt.json) closes all analytic grid regimes and the exact root split for the recurrence model at every length at least 128, not the finite range or literal face-lattice bridge.

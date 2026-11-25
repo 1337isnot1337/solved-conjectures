@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. The final interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
 Partial. Lean verifies the algebraic reduction from a certified negative alternating sign grid, including exact interval root counts and the reciprocal substitution. Lean also checks the exact two expansions at positive grid coordinates and the nearest conjugate poles. The full grid, including the center, near endpoints and reflected half, proves the exact real root split for every recurrence-model length at least 128. The literal rank sum over ordered partitions and Rossi’s evaluated characteristic face sum agree with the recurrence model. A complete finite-grid certificate for the omitted lengths is still pending. [Lean scope](../results/rossi-permutohedron-roots/FORMALIZATION.md).

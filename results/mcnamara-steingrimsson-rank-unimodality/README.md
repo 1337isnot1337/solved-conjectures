@@ -4,6 +4,7 @@
 
 - [Complete proof and witness](PROOF.md)
 - [Exact Python checker](verify.py)
+- [Partial Lean formalization](FORMALIZATION.md)
 - [Independent review, sources and attribution](AUDIT.md)
 
-Run `python3 verify.py` in this directory. The written disproof is internally reviewed. Lean verification and external refereeing are pending.
+Run `python3 verify.py` in this directory. The written disproof is internally reviewed. Lean checks the literal layered and pointed containment reductions. The complete interval count and external refereeing remain pending.

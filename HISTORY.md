@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify classical containment in the interval rank-unimodality disproof in Lean
+
+Lean verifies the literal layered and pointed pattern criteria, normalization to permutations of `Fin n`, greedy weighted enumeration, and pointed occurrences in direct sums. Credit for the written disproof remains with the contribution in #651. The full interval count remains separate. [Lean scope](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## 2026-11-25 — Identify Rossi’s face polynomials in Lean
 
 Lean counts the literal ordered partitions including the empty face, proves their Stirling-number counts, and identifies the rank polynomial and evaluated signed characteristic face sum with the Eulerian model. The rank formulation is equivalent in Conjecture 6.16. The complete finite-grid bridge remains separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
