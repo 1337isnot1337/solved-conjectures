@@ -1486,3 +1486,4 @@ import Conjectures.KauersKoutschanCertificate
 import Conjectures.KauersKoutschanDividedSum
 import Conjectures.KauersKoutschanFiniteRecurrence
 import Conjectures.KauersKoutschanBlockLengths
+import Conjectures.KauersKoutschanSignedBlocks
