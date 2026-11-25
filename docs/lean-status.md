@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Dukes’s revstack interlacing conjecture
+
+Lean proves the source Eulerian formula for the actual revstack descent polynomial at every order at least three. Tracking the two parity classes through one maximum split gives the complete characterization of the unsorted words. The proof also turns the derivative inequality into strict interlacing of the literal descent polynomials and checks the transition from order three to four. The later finite transitions and the uniform derivative bound remain open in Lean. [Lean theorem](../lean/Conjectures/DukesRevstackFiniteStart.lean) · [Scoped receipt](verification/lean-dukes-revstack-enumeration-20261125/receipt.json)
+
 ## Braun–Bruegge’s bicyclic facet conjectures
 
 [Lean wedge theorem](../lean/Conjectures/BraunBrueggeBicyclicWedge.lean). Gluing two connected graphs at one vertex multiplies the actual facet counts of their symmetric edge polytopes. The proof gives restriction and gluing maps on normalized polar vertices, with connectedness characterized on each factor's tight graph. The [scoped receipt](verification/lean-braun-bruegge-bicyclic-wedge-20261124/receipt.json) verifies six strict sources, 113 owned declarations and four endpoints, with stock-kernel replay.

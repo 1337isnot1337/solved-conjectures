@@ -1,0 +1,314 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T06:43:35.013539+00:00",
+  "finished_at": "2026-11-25T06:44:42.568458+00:00",
+  "root": "Conjectures.DukesRevstackFiniteStart",
+  "project_modules": [
+    "Conjectures.ChowStrictInterlacing",
+    "Conjectures.DukesRevstackAlternation",
+    "Conjectures.DukesRevstackDegree",
+    "Conjectures.DukesRevstackEnumeration",
+    "Conjectures.DukesRevstackEulerian",
+    "Conjectures.DukesRevstackFiniteStart",
+    "Conjectures.DukesRevstackInterlacing",
+    "Conjectures.DukesRevstackLogistic",
+    "Conjectures.DukesRevstackNormalization",
+    "Conjectures.DukesRevstackParityLabels",
+    "Conjectures.DukesRevstackPolynomial",
+    "Conjectures.DukesRevstackSort",
+    "Conjectures.DukesRevstackSplit",
+    "Conjectures.DukesRevstackWeights"
+  ],
+  "required_endpoints": [
+    "DukesRevstack.revstack_of_split",
+    "DukesRevstack.revstack_perm",
+    "DukesRevstack.penultimate_pass_failure_iff",
+    "DukesRevstack.alternating_word_shape",
+    "DukesRevstack.insertionWeight_eq_operator",
+    "DukesRevstack.wordEulerian_range",
+    "DukesRevstack.revstackDescentPolynomial_eq",
+    "DukesRevstack.reducedRevstack_monic_degree",
+    "DukesRevstack.iteratedDeriv_logistic",
+    "DukesRevstack.norm_logisticRemainder_at_root",
+    "DukesRevstack.literal_revstack_interlacing_step",
+    "DukesRevstack.revstack_three_to_four_interlacing"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ChowStrictInterlacing.lean": "5eb95ef049c303902270b2f6710e21f530bcbd58cc25a09a8cab6fa3d91fc7d8",
+    "lean/Conjectures/DukesRevstackAlternation.lean": "be5318c8118685e4a8d6349e7f298499f3abe7e5ea2089b27316a25e36b748bd",
+    "lean/Conjectures/DukesRevstackDegree.lean": "1e27b1cd92edd4072f5e7fc39b66e1a78fe34649a6111ad2637ea216d5089cfb",
+    "lean/Conjectures/DukesRevstackEnumeration.lean": "90521b29c05eda6083c17094c5df5a792dec18213c3ab81424d1756167083c4d",
+    "lean/Conjectures/DukesRevstackEulerian.lean": "43a3bf115ae3acd7d3fb3614053e78799f639aff24abbe60dba5c56a2fd5ef0c",
+    "lean/Conjectures/DukesRevstackFiniteStart.lean": "2361aec10bc3d1acb7affc91213678e2bfbb2a41c603812757e29a0b9f4507d9",
+    "lean/Conjectures/DukesRevstackInterlacing.lean": "c1f01613a7dd0b57098861af81e440c324f3847e6adb0dee5ede7d923b191828",
+    "lean/Conjectures/DukesRevstackLogistic.lean": "aee993b13aa3561967827e2425a9493c44895ce8e98426f32de3a6d6fe4781b2",
+    "lean/Conjectures/DukesRevstackNormalization.lean": "21229756221286c0444dc88aebddf7a3af442885875394e26bc682ad46107d74",
+    "lean/Conjectures/DukesRevstackParityLabels.lean": "4fef44968bb32c2b6dbfd4c8b58ece63b9983398c25912dad45475f9b1353751",
+    "lean/Conjectures/DukesRevstackPolynomial.lean": "a5b8a787b9dc9ea386540c8b653e37165c6e70e7034f704504985c29f596870e",
+    "lean/Conjectures/DukesRevstackSort.lean": "3b2d3efe91f0e60f4905d6af4e8dd497de9bb6003d957a98a2d5709dabaad65b",
+    "lean/Conjectures/DukesRevstackSplit.lean": "20508dbc039dc74b418da992e88a7ab47ba47dd8f65d67ab823550602f8e8b76",
+    "lean/Conjectures/DukesRevstackWeights.lean": "4a3c39adafa7e878259f664fc954989c6af7d3c1814300ae776441b7ec3d88a7"
+  },
+  "input_sha256": {
+    "lean/Conjectures/ChowStrictInterlacing.lean": "5eb95ef049c303902270b2f6710e21f530bcbd58cc25a09a8cab6fa3d91fc7d8",
+    "lean/Conjectures/DukesRevstackAlternation.lean": "be5318c8118685e4a8d6349e7f298499f3abe7e5ea2089b27316a25e36b748bd",
+    "lean/Conjectures/DukesRevstackDegree.lean": "1e27b1cd92edd4072f5e7fc39b66e1a78fe34649a6111ad2637ea216d5089cfb",
+    "lean/Conjectures/DukesRevstackEnumeration.lean": "90521b29c05eda6083c17094c5df5a792dec18213c3ab81424d1756167083c4d",
+    "lean/Conjectures/DukesRevstackEulerian.lean": "43a3bf115ae3acd7d3fb3614053e78799f639aff24abbe60dba5c56a2fd5ef0c",
+    "lean/Conjectures/DukesRevstackFiniteStart.lean": "2361aec10bc3d1acb7affc91213678e2bfbb2a41c603812757e29a0b9f4507d9",
+    "lean/Conjectures/DukesRevstackInterlacing.lean": "c1f01613a7dd0b57098861af81e440c324f3847e6adb0dee5ede7d923b191828",
+    "lean/Conjectures/DukesRevstackLogistic.lean": "aee993b13aa3561967827e2425a9493c44895ce8e98426f32de3a6d6fe4781b2",
+    "lean/Conjectures/DukesRevstackNormalization.lean": "21229756221286c0444dc88aebddf7a3af442885875394e26bc682ad46107d74",
+    "lean/Conjectures/DukesRevstackParityLabels.lean": "4fef44968bb32c2b6dbfd4c8b58ece63b9983398c25912dad45475f9b1353751",
+    "lean/Conjectures/DukesRevstackPolynomial.lean": "a5b8a787b9dc9ea386540c8b653e37165c6e70e7034f704504985c29f596870e",
+    "lean/Conjectures/DukesRevstackSort.lean": "3b2d3efe91f0e60f4905d6af4e8dd497de9bb6003d957a98a2d5709dabaad65b",
+    "lean/Conjectures/DukesRevstackSplit.lean": "20508dbc039dc74b418da992e88a7ab47ba47dd8f65d67ab823550602f8e8b76",
+    "lean/Conjectures/DukesRevstackWeights.lean": "4a3c39adafa7e878259f664fc954989c6af7d3c1814300ae776441b7ec3d88a7",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackPolynomial.olean",
+        "Conjectures/DukesRevstackPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackSort.olean",
+        "Conjectures/DukesRevstackSort.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackSort.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackEulerian.olean",
+        "Conjectures/DukesRevstackEulerian.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackEulerian.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackSplit.olean",
+        "Conjectures/DukesRevstackSplit.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackSplit.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackAlternation.olean",
+        "Conjectures/DukesRevstackAlternation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackAlternation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackParityLabels.olean",
+        "Conjectures/DukesRevstackParityLabels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackParityLabels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackWeights.olean",
+        "Conjectures/DukesRevstackWeights.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackWeights.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackEnumeration.olean",
+        "Conjectures/DukesRevstackEnumeration.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackEnumeration.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackLogistic.olean",
+        "Conjectures/DukesRevstackLogistic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackLogistic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackDegree.olean",
+        "Conjectures/DukesRevstackDegree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackDegree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/ChowStrictInterlacing.olean",
+        "Conjectures/ChowStrictInterlacing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChowStrictInterlacing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackInterlacing.olean",
+        "Conjectures/DukesRevstackInterlacing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackInterlacing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackNormalization.olean",
+        "Conjectures/DukesRevstackNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackNormalization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/DukesRevstackFiniteStart.olean",
+        "Conjectures/DukesRevstackFiniteStart.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.DukesRevstackFiniteStart.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/tmp/solved-dukes-revstack-enumeration-receipt/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-conjectures-lean-20261124/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.DukesRevstackFiniteStart"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 279,
+    "modules": 14,
+    "private_declarations": 89,
+    "raw_declarations": 279,
+    "required": 12,
+    "tag": "passed",
+    "theorems": 243
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

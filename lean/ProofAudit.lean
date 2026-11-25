@@ -9,6 +9,18 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `DukesRevstack.revstack_of_split,
+    `DukesRevstack.revstack_perm,
+    `DukesRevstack.penultimate_pass_failure_iff,
+    `DukesRevstack.alternating_word_shape,
+    `DukesRevstack.insertionWeight_eq_operator,
+    `DukesRevstack.wordEulerian_range,
+    `DukesRevstack.revstackDescentPolynomial_eq,
+    `DukesRevstack.reducedRevstack_monic_degree,
+    `DukesRevstack.iteratedDeriv_logistic,
+    `DukesRevstack.norm_logisticRemainder_at_root,
+    `DukesRevstack.literal_revstack_interlacing_step,
+    `DukesRevstack.revstack_three_to_four_interlacing,
     `BraunBruegge.exists_graph_ear,
     `BraunBruegge.ThetaPathWords.embedding_le,
     `BraunBruegge.closed_ear_bicyclic_facet_card,

@@ -1,3 +1,16 @@
+import Conjectures.DukesRevstackAlternation
+import Conjectures.DukesRevstackDegree
+import Conjectures.DukesRevstackEnumeration
+import Conjectures.DukesRevstackEulerian
+import Conjectures.DukesRevstackFiniteStart
+import Conjectures.DukesRevstackInterlacing
+import Conjectures.DukesRevstackLogistic
+import Conjectures.DukesRevstackNormalization
+import Conjectures.DukesRevstackParityLabels
+import Conjectures.DukesRevstackPolynomial
+import Conjectures.DukesRevstackSort
+import Conjectures.DukesRevstackSplit
+import Conjectures.DukesRevstackWeights
 import Conjectures.BraunBrueggeBicyclicBridgeReduction
 import Conjectures.BraunBrueggeBicyclicCoreTheta
 import Conjectures.BraunBrueggeBicyclicCoreWedge

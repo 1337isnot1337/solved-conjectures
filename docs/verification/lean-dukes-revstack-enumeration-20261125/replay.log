@@ -1,0 +1,16 @@
+Replaying all 14 local project modules imported by Conjectures.DukesRevstackFiniteStart, including that root (prefix Conjectures)
+replaying Conjectures.DukesRevstackFiniteStart
+replaying Conjectures.DukesRevstackNormalization
+replaying Conjectures.DukesRevstackWeights
+replaying Conjectures.ChowStrictInterlacing
+replaying Conjectures.DukesRevstackEnumeration
+replaying Conjectures.DukesRevstackInterlacing
+replaying Conjectures.DukesRevstackSort
+replaying Conjectures.DukesRevstackDegree
+replaying Conjectures.DukesRevstackEulerian
+replaying Conjectures.DukesRevstackPolynomial
+replaying Conjectures.DukesRevstackAlternation
+replaying Conjectures.DukesRevstackParityLabels
+replaying Conjectures.DukesRevstackSplit
+replaying Conjectures.DukesRevstackLogistic
+PASS: the entire local import closure of Conjectures.DukesRevstackFiniteStart completed the pinned kernel replay
