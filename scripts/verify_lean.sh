@@ -12,6 +12,7 @@ modules=(
   Conjectures.SternHalfPlaneContinuant
   Conjectures.SternHalfPlaneRealAxis
   Conjectures.NuttallThetaKernel
+  Conjectures.NuttallThetaTail
   Conjectures.NuttallRepeatedTails
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
