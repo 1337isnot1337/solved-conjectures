@@ -5,4 +5,4 @@
 - [Complete proof](PROOF.md)
 - [Independent review, sources and attribution](AUDIT.md)
 
-The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) covers the prime-spectrum reduction and the actual multifactor lift under an explicit almost-simple generation hypothesis. External refereeing is pending.
+The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) covers the prime-spectrum reduction, the actual multifactor lift, the simultaneous factor adjustments, and the prime-power kernel lift under the stated structural hypotheses. External refereeing is pending.

@@ -11,6 +11,12 @@ Lean verifies the bounded-error reciprocal-prime estimate using exact
 Mangoldt counts and Abel summation.
 [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the simultaneous and prime-power kernel lifts
+
+Lean combines the adjustments on commuting normal factors and checks
+the prime-power kernel lift under the complement-conjugacy hypothesis.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s conditional multifactor lift
 
 Lean completes the reserved return labels and constructs a conjugate

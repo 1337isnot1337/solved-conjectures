@@ -95,11 +95,27 @@ and the source credits in the [audit](AUDIT.md).
   proves that their conjugate pair captures every prime of the
   centerless factor order.
 
-The solvable-radical reduction, the almost-simple generation inputs (including the explicit two-generator lifting hypothesis), the singleton-factor argument, and the simultaneous assembly across the socle remain outside this partial check.
+- [Simultaneous assembly](../../lean/Conjectures/ShumyatskySocleAssembly.lean).
+  Lean proves distinct minimal normal subgroups commute. For a given
+  direct-product kernel, the individual inner adjustments combine in
+  the kernel and retain their exact effects on each normal subgroup.
+  The local prime-spectrum lifts then give a conjugate generating pair
+  of the actual prime-spectrum-minimal group.
+- [Prime-power kernel lift](../../lean/Conjectures/ShumyatskyPrimeKernelLift.lean).
+  Given conjugacy of the prime-free complements, Lean proves both
+  cases of the original lift across a kernel with only one prime in
+  its spectrum. The proof handles a nontrivial centralizing kernel
+  element and the case where the first generator has trivial kernel
+  centralizer.
+
+The passage from the original finite group to these structural hypotheses
+remains, including the classical complement-conjugacy input, the actual
+socle decomposition, and the almost-simple generation and singleton-factor
+arguments.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. The eleven earlier scopes and the thirteen-module multifactor closure passed.
+checker. The earlier scopes, the thirteen-module multifactor closure, and both new group-theoretic scopes passed.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
 [Cycle-label receipt](verification/cycle-labels/receipt.json) ·
 [Factor-action receipt](verification/factor-action/receipt.json) ·
@@ -111,4 +127,6 @@ checker. The eleven earlier scopes and the thirteen-module multifactor closure p
 [Spanning-tree receipt](verification/cycle-forest/receipt.json) ·
 [Directed-moves receipt](verification/directed-moves/receipt.json) ·
 [Independent-walk receipt](verification/independent-walks/receipt.json) ·
-[Multifactor-lift receipt](verification/multifactor-lift/receipt.json).
+[Multifactor-lift receipt](verification/multifactor-lift/receipt.json) ·
+[Simultaneous-assembly receipt](verification/socle-assembly/receipt.json) ·
+[Prime-kernel receipt](verification/prime-kernel-lift/receipt.json).

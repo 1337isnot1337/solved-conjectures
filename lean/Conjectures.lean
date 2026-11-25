@@ -30,6 +30,8 @@ import Conjectures.ShumyatskyClosedMoveRoutes
 import Conjectures.ShumyatskyCycleCompletion
 import Conjectures.ShumyatskyProductCompletion
 import Conjectures.ShumyatskyMultifactorLift
+import Conjectures.ShumyatskySocleAssembly
+import Conjectures.ShumyatskyPrimeKernelLift
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage

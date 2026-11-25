@@ -152,6 +152,8 @@ modules=(
   Conjectures.ShumyatskyCycleCompletion
   Conjectures.ShumyatskyProductCompletion
   Conjectures.ShumyatskyMultifactorLift
+  Conjectures.ShumyatskySocleAssembly
+  Conjectures.ShumyatskyPrimeKernelLift
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
