@@ -23,6 +23,7 @@ modules=(
   Conjectures.NuttallVandermonde
   Conjectures.NuttallHankelPolynomial
   Conjectures.NuttallHankelAdjacent
+  Conjectures.NuttallHankelTransfer
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
