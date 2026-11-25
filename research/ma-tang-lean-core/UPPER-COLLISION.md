@@ -1,0 +1,9 @@
+# Ma–Tang’s random subset-sum threshold conjecture: initial occupancy bound
+
+The [initial occupancy proof](../../lean/Conjectures/MaTangCoreUpperMoment.lean) converts the sum of squared occupancy counts for the literal subset-value lists into an initial missing-mass bound using integer Cauchy–Schwarz. The [translation-energy proof](../../lean/Conjectures/MaTangCoreUpperCollision.lean) then supplies the required collision bound without bit-selection enumerations: each translation preserves the sum of squares, and summing the cross term over all translations gives the square of the total occupancy. The recurrence starts with one occupied point and applies to every word length.
+
+`conditioned_cover` proves that strictly more than half of the actual ordered distinct words at the checked upper sample size cover the entire alphabet. It assumes only a complete duplicate-free finite alphabet of size at least 65,536, commutative invertible translations, and no input estimate about missing elements or collisions. Coverage means every point occurs in the literal subset-value list. The unordered transfer and real-log limsup are separate; no main status change.
+
+Sources: [Ma–Tang, Problem 4.1](https://arxiv.org/html/2602.05768v2#S4), [Erdős–Rényi, Theorem 2](https://www.renyi.hu/~p_erdos/1965-15.pdf), and the [existing repository proof](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/ma-tang-random-subset-sums/PROOF.md).
+
+Lean 4.35.0 passed strict compilation and stock replay for the exact 22-module closure, plus the all-owned transitive axiom audit (1,119 declarations, 793 theorems, 75 private; 17 required endpoints). [Exact receipt](verification/upper-collision-receipt.json). Reproduce with `python3 research/ma-tang-lean-core/verify_upper_collision.py` with the pinned toolchain on PATH.
