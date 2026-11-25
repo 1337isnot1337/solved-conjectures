@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.wedge_connected_iff,
+    `BraunBruegge.tightGraph_wedge,
+    `BraunBruegge.wedgePolarVerticesEquiv,
+    `BraunBruegge.wedge_facet_card,
     `BraunBruegge.IndexedMatching.matchFaceVertexLower_le_card,
     `BraunBruegge.IndexedMatching.reaches_opposite_of_agreesOutside,
     `BraunBruegge.IndexedMatching.exists_two_recovery_colors,

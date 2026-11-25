@@ -1,0 +1,8 @@
+Replaying all 6 local project modules imported by Conjectures.BraunBrueggeBicyclicWedge, including that root (prefix Conjectures)
+replaying Conjectures.BraunBrueggeMinimumCompact
+replaying Conjectures.BraunBrueggeMinimumMatchingFaces
+replaying Conjectures.BraunBrueggeMinimumPolar
+replaying Conjectures.BraunBrueggeMinimumFacets
+replaying Conjectures.BraunBrueggeMinimumGeometry
+replaying Conjectures.BraunBrueggeBicyclicWedge
+PASS: the entire local import closure of Conjectures.BraunBrueggeBicyclicWedge completed the pinned kernel replay

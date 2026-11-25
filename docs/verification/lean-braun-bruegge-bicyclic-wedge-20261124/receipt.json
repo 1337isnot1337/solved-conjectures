@@ -1,0 +1,170 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T02:45:00.723769+00:00",
+  "finished_at": "2026-11-25T02:45:36.922102+00:00",
+  "root": "Conjectures.BraunBrueggeBicyclicWedge",
+  "project_modules": [
+    "Conjectures.BraunBrueggeBicyclicWedge",
+    "Conjectures.BraunBrueggeMinimumCompact",
+    "Conjectures.BraunBrueggeMinimumFacets",
+    "Conjectures.BraunBrueggeMinimumGeometry",
+    "Conjectures.BraunBrueggeMinimumMatchingFaces",
+    "Conjectures.BraunBrueggeMinimumPolar"
+  ],
+  "required_endpoints": [
+    "BraunBruegge.wedge_connected_iff",
+    "BraunBruegge.tightGraph_wedge",
+    "BraunBruegge.wedgePolarVerticesEquiv",
+    "BraunBruegge.wedge_facet_card"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/BraunBrueggeBicyclicWedge.lean": "83059ca75d2788a355cee52527156bb2395809593dad774a48e8babb17c439d9",
+    "lean/Conjectures/BraunBrueggeMinimumCompact.lean": "c8b5c76119970dbb55aafb9b4a05291240a4ca257a7b38c64a1d0fc2d9733eef",
+    "lean/Conjectures/BraunBrueggeMinimumFacets.lean": "4a3e4435a29f06c33c2512a49cbf41abdec8c33f02a1f7db7a05ea273bdfda27",
+    "lean/Conjectures/BraunBrueggeMinimumGeometry.lean": "88d3bbea7daa9199e76a64781a3efd9f0541f2b3e7e340958afc6fe4624166a8",
+    "lean/Conjectures/BraunBrueggeMinimumMatchingFaces.lean": "b2f3db5335cb5b2835221497f29cb3c94acccf8c37404d81108f3bd89ce6523e",
+    "lean/Conjectures/BraunBrueggeMinimumPolar.lean": "543a17f544c0f49abdaebbd9f0e797cc11d3e1b301bc6062ebe468a41b819252"
+  },
+  "input_sha256": {
+    "lean/Conjectures/BraunBrueggeBicyclicWedge.lean": "83059ca75d2788a355cee52527156bb2395809593dad774a48e8babb17c439d9",
+    "lean/Conjectures/BraunBrueggeMinimumCompact.lean": "c8b5c76119970dbb55aafb9b4a05291240a4ca257a7b38c64a1d0fc2d9733eef",
+    "lean/Conjectures/BraunBrueggeMinimumFacets.lean": "4a3e4435a29f06c33c2512a49cbf41abdec8c33f02a1f7db7a05ea273bdfda27",
+    "lean/Conjectures/BraunBrueggeMinimumGeometry.lean": "88d3bbea7daa9199e76a64781a3efd9f0541f2b3e7e340958afc6fe4624166a8",
+    "lean/Conjectures/BraunBrueggeMinimumMatchingFaces.lean": "b2f3db5335cb5b2835221497f29cb3c94acccf8c37404d81108f3bd89ce6523e",
+    "lean/Conjectures/BraunBrueggeMinimumPolar.lean": "543a17f544c0f49abdaebbd9f0e797cc11d3e1b301bc6062ebe468a41b819252",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumPolar.olean",
+        "Conjectures/BraunBrueggeMinimumPolar.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumPolar.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumGeometry.olean",
+        "Conjectures/BraunBrueggeMinimumGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumCompact.olean",
+        "Conjectures/BraunBrueggeMinimumCompact.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumCompact.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumMatchingFaces.olean",
+        "Conjectures/BraunBrueggeMinimumMatchingFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumMatchingFaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumFacets.olean",
+        "Conjectures/BraunBrueggeMinimumFacets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumFacets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicWedge.olean",
+        "Conjectures/BraunBrueggeBicyclicWedge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicWedge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/tmp/solved-braun-bicyclic-wedge-receipt/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-conjectures-lean-20261124/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.BraunBrueggeBicyclicWedge"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 113,
+    "modules": 6,
+    "private_declarations": 36,
+    "raw_declarations": 113,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 87
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
