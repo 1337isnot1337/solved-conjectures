@@ -1,56 +1,84 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-25T13:32:26.068827+00:00",
-  "finished_at": "2026-11-25T13:33:59.536771+00:00",
-  "root": "Conjectures.XuZhouCliqueQuotient",
+  "started_at": "2026-11-25T13:44:21.033898+00:00",
+  "finished_at": "2026-11-25T13:46:50.634271+00:00",
+  "root": "Conjectures.XuZhouLaplacianFull",
   "project_modules": [
+    "Conjectures.XuZhouCliqueChain",
     "Conjectures.XuZhouCliqueQuotient",
+    "Conjectures.XuZhouDiameter",
     "Conjectures.XuZhouDistanceLayers",
     "Conjectures.XuZhouLaplacianEnergy",
+    "Conjectures.XuZhouLaplacianFull",
     "Conjectures.XuZhouLaplacianPartial",
+    "Conjectures.XuZhouLayerSums",
     "Conjectures.XuZhouMarking",
     "Conjectures.XuZhouQuotientEnergy",
     "Conjectures.XuZhouQuotientInertia",
+    "Conjectures.XuZhouScaledQuotient",
     "Conjectures.XuZhouSpectral",
-    "Conjectures.XuZhouTridiagonal"
+    "Conjectures.XuZhouThreshold",
+    "Conjectures.XuZhouTridiagonal",
+    "Conjectures.XuZhouZeroExtension"
   ],
   "required_endpoints": [
     "XuZhou.finrank_le_card_lt_of_strict_quadratic",
     "XuZhou.card_ge_le_sub_finrank",
-    "XuZhou.card_nonnegative_le_observation",
     "XuZhou.marked_card_le",
     "XuZhou.quadraticEnergy_lapMatrix_mono",
     "XuZhou.exists_diameter_layering",
     "XuZhou.exists_retained_layers",
-    "XuZhou.unmarkedPath_neighbors",
-    "XuZhou.chainTridiagonal_hermitian",
-    "XuZhou.chainResidual_nonpositive",
-    "XuZhou.chainResidual_negative_of_first",
     "XuZhou.chainEnergy_nonpositive",
     "XuZhou.chainKernel_eq_zero_of_unmarked",
-    "XuZhou.chainTridiagonal_nonnegative_count"
+    "XuZhou.chainTridiagonal_nonnegative_count",
+    "XuZhou.card_eq_sum_layerSize",
+    "XuZhou.layerCliqueGraph_energy",
+    "XuZhou.scaled_pair_term",
+    "XuZhou.weighted_adjacent_energy",
+    "XuZhou.strictlyLowSpace_finrank",
+    "XuZhou.strictlyLowSpace_energy",
+    "XuZhou.layerLift_injective",
+    "XuZhou.layerCliqueGraph_shifted_energy",
+    "XuZhou.cliqueChain_card_eigenvalues_ge_four",
+    "XuZhou.zeroExtend_norm_square",
+    "XuZhou.zeroExtend_energy_le",
+    "XuZhou.diameter_laplacian_conjecture"
   ],
   "source_sha256": {
+    "lean/Conjectures/XuZhouCliqueChain.lean": "3e0a6750646d2d52c9bd4a234f5c9b29e013e5fb57894b7d7d670451e81358db",
     "lean/Conjectures/XuZhouCliqueQuotient.lean": "ebdb5937213266ef8836fc1d0ab841388ce371f79eb34c4edc55b43f45b80784",
+    "lean/Conjectures/XuZhouDiameter.lean": "6b093d3c088548d5a56cc1138ccaf2ee4ad093b56dcdc241ad480149cb4a9c16",
     "lean/Conjectures/XuZhouDistanceLayers.lean": "779bc4bbddb4b0bdff29ed85de0120f1f4cab69f79747f27d7cc981e4e161ce7",
     "lean/Conjectures/XuZhouLaplacianEnergy.lean": "bd90ed71959d3b161c019c974cf70151e48fb72aa249d62decf66ddc1a61cecd",
+    "lean/Conjectures/XuZhouLaplacianFull.lean": "ae42d9619906e8b15dd594b0368c13eef0d3da0b90d447b31d462781bd961aa3",
     "lean/Conjectures/XuZhouLaplacianPartial.lean": "bc6b2e6c4cd156b08668314238ef451a61c85d2f36eba923d692b79bd39a9c3d",
+    "lean/Conjectures/XuZhouLayerSums.lean": "9c1f124c0862de1447b46445274c2e2145fb5a7dcbf7e04ef90f05e0cb87907a",
     "lean/Conjectures/XuZhouMarking.lean": "2587fbd3479c65e6997b811cfbfcd7aa87df690d5840eb8070222254ec9b1736",
     "lean/Conjectures/XuZhouQuotientEnergy.lean": "165337dc673377c099bb7e2876503c276d9bbb4dabef610dfbbeca96d4389409",
     "lean/Conjectures/XuZhouQuotientInertia.lean": "0e5ba611874d0181c805abaa5b6c3d5e61e428dad962a3cc0b6f2767de7feb95",
+    "lean/Conjectures/XuZhouScaledQuotient.lean": "04dba331c51c36ed301a8d3dccc0e6b351133cf7d5ff63e99f15dd0bbd2d6674",
     "lean/Conjectures/XuZhouSpectral.lean": "ef3ab10e2b05b4910adac50dda1f3c1f12a68d98c2f0169bb94805a0a428f2ae",
-    "lean/Conjectures/XuZhouTridiagonal.lean": "725867a72f6d2fd76702d667645b6bc3d139a2488e5efda22396a8ef62279f07"
+    "lean/Conjectures/XuZhouThreshold.lean": "ecd0d9d7b5d8afe72faa8eb9d46355ae852adde5f3020d8959409a7b9facff8c",
+    "lean/Conjectures/XuZhouTridiagonal.lean": "725867a72f6d2fd76702d667645b6bc3d139a2488e5efda22396a8ef62279f07",
+    "lean/Conjectures/XuZhouZeroExtension.lean": "10b17090e761a1a1292aafb509c54c50bff6ad17284219ccf78c9adb84d80940"
   },
   "input_sha256": {
+    "lean/Conjectures/XuZhouCliqueChain.lean": "3e0a6750646d2d52c9bd4a234f5c9b29e013e5fb57894b7d7d670451e81358db",
     "lean/Conjectures/XuZhouCliqueQuotient.lean": "ebdb5937213266ef8836fc1d0ab841388ce371f79eb34c4edc55b43f45b80784",
+    "lean/Conjectures/XuZhouDiameter.lean": "6b093d3c088548d5a56cc1138ccaf2ee4ad093b56dcdc241ad480149cb4a9c16",
     "lean/Conjectures/XuZhouDistanceLayers.lean": "779bc4bbddb4b0bdff29ed85de0120f1f4cab69f79747f27d7cc981e4e161ce7",
     "lean/Conjectures/XuZhouLaplacianEnergy.lean": "bd90ed71959d3b161c019c974cf70151e48fb72aa249d62decf66ddc1a61cecd",
+    "lean/Conjectures/XuZhouLaplacianFull.lean": "ae42d9619906e8b15dd594b0368c13eef0d3da0b90d447b31d462781bd961aa3",
     "lean/Conjectures/XuZhouLaplacianPartial.lean": "bc6b2e6c4cd156b08668314238ef451a61c85d2f36eba923d692b79bd39a9c3d",
+    "lean/Conjectures/XuZhouLayerSums.lean": "9c1f124c0862de1447b46445274c2e2145fb5a7dcbf7e04ef90f05e0cb87907a",
     "lean/Conjectures/XuZhouMarking.lean": "2587fbd3479c65e6997b811cfbfcd7aa87df690d5840eb8070222254ec9b1736",
     "lean/Conjectures/XuZhouQuotientEnergy.lean": "165337dc673377c099bb7e2876503c276d9bbb4dabef610dfbbeca96d4389409",
     "lean/Conjectures/XuZhouQuotientInertia.lean": "0e5ba611874d0181c805abaa5b6c3d5e61e428dad962a3cc0b6f2767de7feb95",
+    "lean/Conjectures/XuZhouScaledQuotient.lean": "04dba331c51c36ed301a8d3dccc0e6b351133cf7d5ff63e99f15dd0bbd2d6674",
     "lean/Conjectures/XuZhouSpectral.lean": "ef3ab10e2b05b4910adac50dda1f3c1f12a68d98c2f0169bb94805a0a428f2ae",
+    "lean/Conjectures/XuZhouThreshold.lean": "ecd0d9d7b5d8afe72faa8eb9d46355ae852adde5f3020d8959409a7b9facff8c",
     "lean/Conjectures/XuZhouTridiagonal.lean": "725867a72f6d2fd76702d667645b6bc3d139a2488e5efda22396a8ef62279f07",
+    "lean/Conjectures/XuZhouZeroExtension.lean": "10b17090e761a1a1292aafb509c54c50bff6ad17284219ccf78c9adb84d80940",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
@@ -194,6 +222,104 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouLayerSums.olean",
+        "Conjectures/XuZhouLayerSums.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouLayerSums.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouScaledQuotient.olean",
+        "Conjectures/XuZhouScaledQuotient.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouScaledQuotient.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouThreshold.olean",
+        "Conjectures/XuZhouThreshold.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouThreshold.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouCliqueChain.olean",
+        "Conjectures/XuZhouCliqueChain.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouCliqueChain.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouZeroExtension.olean",
+        "Conjectures/XuZhouZeroExtension.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouZeroExtension.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouDiameter.olean",
+        "Conjectures/XuZhouDiameter.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouDiameter.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/XuZhouLaplacianFull.olean",
+        "Conjectures/XuZhouLaplacianFull.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.XuZhouLaplacianFull.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
         "<out>/TargetAudit.lean"
       ],
       "exit_code": 0,
@@ -206,7 +332,7 @@
         "python3",
         "scripts/replay_lean.py",
         "--root",
-        "Conjectures.XuZhouCliqueQuotient",
+        "Conjectures.XuZhouLaplacianFull",
         "--per-module"
       ],
       "exit_code": 0,
@@ -219,13 +345,13 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 156,
-    "modules": 9,
-    "private_declarations": 46,
-    "raw_declarations": 156,
-    "required": 14,
+    "declarations": 260,
+    "modules": 16,
+    "private_declarations": 83,
+    "raw_declarations": 260,
+    "required": 21,
     "tag": "passed",
-    "theorems": 134
+    "theorems": 227
   },
   "full_repository_gate": "not run by this target-scoped helper",
   "status": "PASS",

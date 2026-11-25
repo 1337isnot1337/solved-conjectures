@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify the Xu–Zhou diameter–Laplacian conjecture in Lean
+
+Lean verifies the entire original admissible parameter range. The literal clique-chain Laplacian has at most twice the layer surplus eigenvalues at least four. Completing the distance layers, retaining the exact number of vertices, and extending low eigencoordinates by zero proves the requested closed-interval count for the actual graph. The written sharpness family remains separate. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
 ## 2026-11-25 — Xu–Zhou tridiagonal quotient in Lean
 
 Lean proves the nonnegative eigenvalue bound for the actual tridiagonal quotient, including the kernel at the closed cutoff. The lift to the full clique-chain Laplacian remains separate. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
