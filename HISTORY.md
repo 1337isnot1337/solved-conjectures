@@ -7,6 +7,12 @@ and the prime-spectrum transfer from two closed words whose factor
 labels generate the inner automorphisms.
 [Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
+## 2026-11-25 — Verify Pomerance–Sárközy's joint Poisson count law
+
+Lean verifies the exact independent Poisson sum law, the countable
+pushforward bound and the Poisson moments.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s simple factors and closed-walk label products
 
 Lean proves that automorphisms permute the minimal normal coordinate

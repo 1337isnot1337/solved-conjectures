@@ -110,6 +110,16 @@ modules=(
   Conjectures.PomeranceSarkozyCountableProduct
   Conjectures.PomeranceSarkozyCountableVariation
   Conjectures.PomeranceSarkozyDistributionCheckpoint
+  Conjectures.PomeranceSarkozyAtomicPush
+  Conjectures.PomeranceSarkozyMatrixComparison
+  Conjectures.PomeranceSarkozyMeasurePush
+  Conjectures.PomeranceSarkozyPoissonColumns
+  Conjectures.PomeranceSarkozyPoissonCountCheckpoint
+  Conjectures.PomeranceSarkozyPoissonCountLaw
+  Conjectures.PomeranceSarkozyPoissonMoments
+  Conjectures.PomeranceSarkozyPoissonSums
+  Conjectures.PomeranceSarkozyPoissonVariance
+  Conjectures.PomeranceSarkozyReciprocalTail
   Conjectures.PomeranceSarkozyLiteralPrimeTuples
   Conjectures.PomeranceSarkozyManyProduct
   Conjectures.PomeranceSarkozyPoissonAtom
