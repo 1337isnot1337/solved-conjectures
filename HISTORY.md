@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Verify the Sobolewski–Ulas power-of-two obstruction in Lean
+
+Lean proves nonregularity of the exact source-layer enumeration at
+every positive power of two. The proof verifies the logarithmic
+remainder and applies a finite integer recurrence-state argument.
+Other bases and the partition-function identification remain separate.
+[Scope and receipt](results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+
 ## 2026-11-25 — Complete Lean verification of McNamara–Steingrímsson’s disproof
 
 Lean verifies aadrianvv’s written counterexample (#651), including the

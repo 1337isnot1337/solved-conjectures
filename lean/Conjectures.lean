@@ -1448,3 +1448,4 @@ import Conjectures.McNamaraSteingrimssonRankStructure
 import Conjectures.McNamaraSteingrimssonRankUnimodalityFalse
 import Conjectures.RossiPermutohedronRoots
 import Conjectures.SobolewskiUlasExceptionCountingScope
+import Conjectures.SobolewskiUlasExceptionPowerTwoScope

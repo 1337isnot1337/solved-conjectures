@@ -386,6 +386,20 @@ modules=(
   Conjectures.McNamaraSteingrimssonWrittenRankEval
   Conjectures.SobolewskiUlasExceptionCount
   Conjectures.SobolewskiUlasExceptionCountingScope
+  Conjectures.SobolewskiUlasExceptionCarry
+  Conjectures.SobolewskiUlasExceptionCayley
+  Conjectures.SobolewskiUlasExceptionErrorBounds
+  Conjectures.SobolewskiUlasExceptionGaps
+  Conjectures.SobolewskiUlasExceptionLinearRepresentation
+  Conjectures.SobolewskiUlasExceptionPowerTwoFalse
+  Conjectures.SobolewskiUlasExceptionPowerTwoScope
+  Conjectures.SobolewskiUlasExceptionRecurrenceAlgebra
+  Conjectures.SobolewskiUlasExceptionRecurrenceWindow
+  Conjectures.SobolewskiUlasExceptionRegularKernel
+  Conjectures.SobolewskiUlasExceptionRegularPowers
+  Conjectures.SobolewskiUlasExceptionRegularTail
+  Conjectures.SobolewskiUlasExceptionRepeatedInput
+  Conjectures.SobolewskiUlasExceptionSourceLayer
   Conjectures.SobolewskiUlasExceptionDigits
   Conjectures.SobolewskiUlasExceptionEnumeration
   Conjectures.SobolewskiUlasExceptionNonperiodic
