@@ -1,5 +1,9 @@
 # Verification
 
+## McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. The full repeated-sum interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## Athanasiadis–Chapoton’s polar preorder duality conjecture
 
 The [scoped Lean receipt](../results/athanasiadis-chapoton-polar-duality/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay of the four-module closure. The original exact Python checker also passed. [Lean scope](../results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md)
