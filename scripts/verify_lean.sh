@@ -338,6 +338,16 @@ modules=(
   Conjectures.McNamaraSteingrimssonPointedCount
   Conjectures.McNamaraSteingrimssonCuts
   Conjectures.McNamaraSteingrimssonFamilyCounts
+  Conjectures.McNamaraSteingrimssonBlockEmbeddings
+  Conjectures.McNamaraSteingrimssonBlockFibers
+  Conjectures.McNamaraSteingrimssonBlockNormalize
+  Conjectures.McNamaraSteingrimssonFiberProduct
+  Conjectures.McNamaraSteingrimssonMiddleBlockCoverage
+  Conjectures.McNamaraSteingrimssonOmittedBlock
+  Conjectures.McNamaraSteingrimssonRepeatedActualFactors
+  Conjectures.McNamaraSteingrimssonRepeatedPatternShape
+  Conjectures.McNamaraSteingrimssonRepeatedRankWidths
+  Conjectures.McNamaraSteingrimssonShortBlockPlacement
   Conjectures.McNamaraSteingrimssonPatternSplit
   Conjectures.McNamaraSteingrimssonPrefixFamilies
   Conjectures.McNamaraSteingrimssonSplitSound

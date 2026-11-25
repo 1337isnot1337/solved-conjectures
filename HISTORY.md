@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Factor the repeated McNamara–Steingrímsson interval
+
+Lean proves that any intermediate permutation factors through the actual
+host-block positions it uses. All but one of the long factors are full;
+if the omitted block is after the first, the short factor is full too.
+This is the structural step in aadrianvv’s written disproof, not its final
+rank count. [Scope and receipt](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## 2026-11-25 — Check the two-summand interval counts in Lean
 
 Lean proves the exact positive-rank convolution for the interval between the pointed endpoint and its direct sum with the longer pointed endpoint. It uses actual permutation counts and proves the two families disjoint. The full repeated-sum interval remains separate. [Scope and receipt](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
