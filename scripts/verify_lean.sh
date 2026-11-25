@@ -80,6 +80,16 @@ modules=(
   Conjectures.NovelliThibonGraphOmega
   Conjectures.NovelliThibonRightStandardization
   Conjectures.NovelliThibonSourceCertificate
+  Conjectures.NovelliThibonHookCellProduct
+  Conjectures.NovelliThibonHookExtraction
+  Conjectures.NovelliThibonHookJacobiTrudi
+  Conjectures.NovelliThibonHookProductCoefficients
+  Conjectures.NovelliThibonIncomingCells
+  Conjectures.NovelliThibonMarkedStandardization
+  Conjectures.NovelliThibonSignedFundamentals
+  Conjectures.NovelliThibonSignedGraph
+  Conjectures.NovelliThibonSignedShape
+  Conjectures.NovelliThibonSignedSource
   Conjectures.NovelliThibonSourceFilling
   Conjectures.NovelliThibonSourceGraphSum
   Conjectures.NovelliThibonSourceLaurent
