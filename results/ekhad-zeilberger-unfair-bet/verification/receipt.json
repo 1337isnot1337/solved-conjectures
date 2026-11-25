@@ -1,17 +1,22 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-25T13:06:47.802093+00:00",
-  "finished_at": "2026-11-25T13:07:57.759586+00:00",
-  "root": "Conjectures.EkhadZeilbergerProjection",
+  "started_at": "2026-11-25T13:11:32.658311+00:00",
+  "finished_at": "2026-11-25T13:13:47.062686+00:00",
+  "root": "Conjectures.EkhadZeilbergerOverlapOptimum",
   "project_modules": [
     "Conjectures.EkhadZeilbergerCrossOverlap",
+    "Conjectures.EkhadZeilbergerCylinderIntersection",
     "Conjectures.EkhadZeilbergerEndpointProduct",
     "Conjectures.EkhadZeilbergerEquality",
     "Conjectures.EkhadZeilbergerFiniteOverlap",
     "Conjectures.EkhadZeilbergerInterior",
+    "Conjectures.EkhadZeilbergerLagSum",
     "Conjectures.EkhadZeilbergerOverlap",
+    "Conjectures.EkhadZeilbergerOverlapCovariance",
+    "Conjectures.EkhadZeilbergerOverlapOptimum",
     "Conjectures.EkhadZeilbergerProjection",
     "Conjectures.EkhadZeilbergerUniformProduct",
+    "Conjectures.EkhadZeilbergerVarianceIdentity",
     "Conjectures.EkhadZeilbergerWindowProjection",
     "Conjectures.EkhadZeilbergerWords"
   ],
@@ -19,36 +24,50 @@
     "EkhadZeilberger.constant_word_maximizer_iff",
     "EkhadZeilberger.zero_self_weights_of_same_interior",
     "EkhadZeilberger.uniformAverage_product_embedding",
-    "EkhadZeilberger.uniformAverage_mul_centered",
-    "EkhadZeilberger.uniformAverage_orthogonal_lower_bound",
-    "EkhadZeilberger.projectedCylinder_cross_zero_of_interior_mismatch",
-    "EkhadZeilberger.projectedCylinder_two_endpoint_sq",
-    "EkhadZeilberger.projectedWindow_cross_orthogonal",
-    "EkhadZeilberger.projectedWindow_same_inner",
     "EkhadZeilberger.projected_window_variance_lower",
-    "EkhadZeilberger.signed_window_count_mean_zero"
+    "EkhadZeilberger.signed_window_count_mean_zero",
+    "EkhadZeilberger.wordCylinder_joint",
+    "EkhadZeilberger.window_union_card",
+    "EkhadZeilberger.uniformAverage_window_joint",
+    "EkhadZeilberger.windowLag_sum_rectangle",
+    "EkhadZeilberger.signed_window_lag",
+    "EkhadZeilberger.signed_window_total_second_moment",
+    "EkhadZeilberger.signed_window_variance_identity",
+    "EkhadZeilberger.wordVariance_ge_of_distinct_interiors",
+    "EkhadZeilberger.nonconstant_overlap_advantage_strict",
+    "EkhadZeilberger.unrestricted_overlap_optimum"
   ],
   "source_sha256": {
     "lean/Conjectures/EkhadZeilbergerCrossOverlap.lean": "87f5515e2c000cd5e7a00a0329baf94bee800711779c7156561d603a852228b5",
+    "lean/Conjectures/EkhadZeilbergerCylinderIntersection.lean": "f2421348091f4ce91af8b3ff30e56804440cc38450e6a012733b8b76c856fc04",
     "lean/Conjectures/EkhadZeilbergerEndpointProduct.lean": "aeaf66f07feb167fdacf7eb8a08be77a532d0a8f55f5980f278cd6094ee2247a",
     "lean/Conjectures/EkhadZeilbergerEquality.lean": "b66db46e75d95631a10b95be7b2811c95f55e2ff0c25348e8a72969d3a673a82",
     "lean/Conjectures/EkhadZeilbergerFiniteOverlap.lean": "70132a740614477fb3f12538271ff92f9a22c10862fa93c63d64dd19eca11754",
     "lean/Conjectures/EkhadZeilbergerInterior.lean": "ac6d69387c403febe10389aad4c1d21c2ca9448f4fc1d24fd0bdb547dc16ec9e",
+    "lean/Conjectures/EkhadZeilbergerLagSum.lean": "eea254a6e3361a7c764f22ffec30a07ab939ea1df96f748c412544ff51b1ac82",
     "lean/Conjectures/EkhadZeilbergerOverlap.lean": "1154cdd1c867f09b82aa1abe5482f3cf939474b0133030781cfb4aadf70b190d",
+    "lean/Conjectures/EkhadZeilbergerOverlapCovariance.lean": "b0500c1ec4ba9b850bca648cb564d4ec72735a94a593cc8439cec7de8870ee3a",
+    "lean/Conjectures/EkhadZeilbergerOverlapOptimum.lean": "bed21b1dfe779359372b1ada0cf386975fc9db695460cb2293c4a41e6906350a",
     "lean/Conjectures/EkhadZeilbergerProjection.lean": "83e76e7ce99453e101ff78e9d151130636812f183be1805adea66d088db43b1c",
     "lean/Conjectures/EkhadZeilbergerUniformProduct.lean": "01262709e49288597ad21ac13a79e2fa916db2f9c097f77ada0784f7393fdf0f",
+    "lean/Conjectures/EkhadZeilbergerVarianceIdentity.lean": "1ecf4aec18cd22070b8c9de6180083c176ef980eef81f457b91f4a4b4ef4a6de",
     "lean/Conjectures/EkhadZeilbergerWindowProjection.lean": "e804cb1dd4d905a8ea21d28a57b0382ecad38f452678ea3484bc6211e529a742",
     "lean/Conjectures/EkhadZeilbergerWords.lean": "25b4bcc723571c4d83595b4144e7de22df069554f047064fb19ec71b52d6dd46"
   },
   "input_sha256": {
     "lean/Conjectures/EkhadZeilbergerCrossOverlap.lean": "87f5515e2c000cd5e7a00a0329baf94bee800711779c7156561d603a852228b5",
+    "lean/Conjectures/EkhadZeilbergerCylinderIntersection.lean": "f2421348091f4ce91af8b3ff30e56804440cc38450e6a012733b8b76c856fc04",
     "lean/Conjectures/EkhadZeilbergerEndpointProduct.lean": "aeaf66f07feb167fdacf7eb8a08be77a532d0a8f55f5980f278cd6094ee2247a",
     "lean/Conjectures/EkhadZeilbergerEquality.lean": "b66db46e75d95631a10b95be7b2811c95f55e2ff0c25348e8a72969d3a673a82",
     "lean/Conjectures/EkhadZeilbergerFiniteOverlap.lean": "70132a740614477fb3f12538271ff92f9a22c10862fa93c63d64dd19eca11754",
     "lean/Conjectures/EkhadZeilbergerInterior.lean": "ac6d69387c403febe10389aad4c1d21c2ca9448f4fc1d24fd0bdb547dc16ec9e",
+    "lean/Conjectures/EkhadZeilbergerLagSum.lean": "eea254a6e3361a7c764f22ffec30a07ab939ea1df96f748c412544ff51b1ac82",
     "lean/Conjectures/EkhadZeilbergerOverlap.lean": "1154cdd1c867f09b82aa1abe5482f3cf939474b0133030781cfb4aadf70b190d",
+    "lean/Conjectures/EkhadZeilbergerOverlapCovariance.lean": "b0500c1ec4ba9b850bca648cb564d4ec72735a94a593cc8439cec7de8870ee3a",
+    "lean/Conjectures/EkhadZeilbergerOverlapOptimum.lean": "bed21b1dfe779359372b1ada0cf386975fc9db695460cb2293c4a41e6906350a",
     "lean/Conjectures/EkhadZeilbergerProjection.lean": "83e76e7ce99453e101ff78e9d151130636812f183be1805adea66d088db43b1c",
     "lean/Conjectures/EkhadZeilbergerUniformProduct.lean": "01262709e49288597ad21ac13a79e2fa916db2f9c097f77ada0784f7393fdf0f",
+    "lean/Conjectures/EkhadZeilbergerVarianceIdentity.lean": "1ecf4aec18cd22070b8c9de6180083c176ef980eef81f457b91f4a4b4ef4a6de",
     "lean/Conjectures/EkhadZeilbergerWindowProjection.lean": "e804cb1dd4d905a8ea21d28a57b0382ecad38f452678ea3484bc6211e529a742",
     "lean/Conjectures/EkhadZeilbergerWords.lean": "25b4bcc723571c4d83595b4144e7de22df069554f047064fb19ec71b52d6dd46",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
@@ -208,6 +227,76 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/EkhadZeilbergerCylinderIntersection.olean",
+        "Conjectures/EkhadZeilbergerCylinderIntersection.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.EkhadZeilbergerCylinderIntersection.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/EkhadZeilbergerLagSum.olean",
+        "Conjectures/EkhadZeilbergerLagSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.EkhadZeilbergerLagSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/EkhadZeilbergerOverlapCovariance.olean",
+        "Conjectures/EkhadZeilbergerOverlapCovariance.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.EkhadZeilbergerOverlapCovariance.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/EkhadZeilbergerVarianceIdentity.olean",
+        "Conjectures/EkhadZeilbergerVarianceIdentity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.EkhadZeilbergerVarianceIdentity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/EkhadZeilbergerOverlapOptimum.olean",
+        "Conjectures/EkhadZeilbergerOverlapOptimum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.EkhadZeilbergerOverlapOptimum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
         "<out>/TargetAudit.lean"
       ],
       "exit_code": 0,
@@ -220,7 +309,8 @@
         "python3",
         "scripts/replay_lean.py",
         "--root",
-        "Conjectures.EkhadZeilbergerProjection"
+        "Conjectures.EkhadZeilbergerOverlapOptimum",
+        "--per-module"
       ],
       "exit_code": 0,
       "log": "replay.log"
@@ -232,13 +322,13 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 204,
-    "modules": 10,
-    "private_declarations": 14,
-    "raw_declarations": 204,
-    "required": 11,
+    "declarations": 280,
+    "modules": 15,
+    "private_declarations": 16,
+    "raw_declarations": 280,
+    "required": 15,
     "tag": "passed",
-    "theorems": 177
+    "theorems": 241
   },
   "full_repository_gate": "not run by this target-scoped helper",
   "status": "PASS",

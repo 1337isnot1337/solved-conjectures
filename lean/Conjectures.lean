@@ -183,7 +183,7 @@ import Conjectures.SokalAperyEndpoint
 import Conjectures.SokalAperyLegendre
 import Conjectures.SokalAperyTorus
 import Conjectures.SokalAperyMomentThreshold
-import Conjectures.EkhadZeilbergerProjection
+import Conjectures.EkhadZeilbergerOverlapOptimum
 import Conjectures.RevisedTanZhouCylinders
 import Conjectures.RevisedTanZhouUpper
 import Conjectures.RevisedTanZhouStopping
