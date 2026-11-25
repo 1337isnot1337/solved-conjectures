@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall uniform theta derivative ratios
+
+Lean verifies the inverse-scale error bound on the normalized derivative ratios used for the positive-box estimate. One error constant and one threshold work for any fixed finite range of orders. The determinant lower bound itself is not claimed. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall scalar tail comparison
 
 Lean verifies the scalar moment integral bound and the final scalar dominance limit. The estimates have not yet been linked to the signed determinant integrals. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
