@@ -11,7 +11,7 @@ import Conjectures.NovelliThibonSourceFirstOrder
 import Conjectures.NovelliThibonSourceCertificate
 import Conjectures.NovelliThibonHookExtraction
 import Conjectures.NovelliThibonJacobiPerspectives
-import Conjectures.PomeranceSarkozyTailProbability
+import Conjectures.PomeranceSarkozyCRTCheckpoint
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional

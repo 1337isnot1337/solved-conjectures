@@ -17,8 +17,23 @@ for the reciprocal-weight subset sum by a marked-subset bijection.
 The arithmetic probability is the exact ratio on a finite interval,
 with the sample-length condition for the factor two stated explicitly.
 
-The growing-window CRT/Bonferroni comparison, limiting Gaussian law,
-second moment, process limits and rare deviations are not yet checked
-here. This does not address the separate exact collision count (F(X)).
+The [CRT checkpoint](../../lean/Conjectures/PomeranceSarkozyCRTCheckpoint.lean)
+counts an actual residue class in every consecutive sample window.
+The count differs by at most one from the uniform expectation. For
+compatible incidence subsets the arithmetic event is a single class
+modulo the product of the actual primes. The independent model is a
+literal uniform product of finite residue choices, with the prescribed
+coordinate count checked by a dependent-product bijection.
+Incompatible incidence events have zero mass in both models.
+Thus the inclusion-probability discrepancy is at most the reciprocal
+of the sample size, which is the finite estimate in equation (5).
+Lean also checks the pointwise truncated alternating-binomial kernel.
+
+The aggregation of these inclusion estimates into the full
+growing-window total-variation bound, the Gaussian law, second
+moment, process limits and rare deviations remain. This does not
+address the separate exact collision count `F(X)`.
 
 [Strict build, all-owned audit and independent replay receipt](verification/finite-prime-tails/receipt.json)
+
+[CRT and independent residue replay](verification/literal-crt-inclusions/receipt.json)

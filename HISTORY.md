@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Pomerance–Sárközy's CRT inclusion probabilities
+
+Lean verifies the exact shifted residue count, independent product
+model and uniform inclusion-probability error.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Check Pomerance–Sárközy's exact finite prime tails in Lean
 
 Lean verifies the literal exceptional-offset count, threshold comparison
