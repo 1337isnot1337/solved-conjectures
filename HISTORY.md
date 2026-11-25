@@ -16,6 +16,10 @@ Tomdif’s [PR #660](https://github.com/1337isnot1337/solved-conjectures/pull/66
 
 Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates have equivalent lattice-point sets, hence equal Ehrhart series and numerators. The real transfer is a positively homogeneous homeomorphism. [Lean scope](results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md) · [Receipt](results/athanasiadis-chapoton-polar-duality/verification/receipt.json).
 
+## 2026-11-25 — Verify part of the ordinary D’Arcais root conjecture in Lean
+
+Lean verifies the ordinary generating-function recurrence, the strict root comparisons for indices 6–50 and all real parameters at least 1, and the central Fourier integral bound under explicit saddle estimates. [Lean scope](results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md) · [Receipt](results/heim-neuhauser-ordinary-darcais-root/verification/receipt.json).
+
 ## 2026-11-25 — Identify Rossi’s face polynomials in Lean
 
 Lean counts the literal ordered partitions including the empty face, proves their Stirling-number counts, and identifies the rank polynomial and evaluated signed characteristic face sum with the Eulerian model. The rank formulation is equivalent in Conjecture 6.16. The complete finite-grid bridge remains separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).

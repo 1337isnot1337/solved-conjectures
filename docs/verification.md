@@ -8,6 +8,10 @@ Partial. Lean proves the classical pattern-containment reductions for actual lay
 
 The [scoped Lean receipt](../results/athanasiadis-chapoton-polar-duality/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay of the four-module closure. The original exact Python checker also passed. [Lean scope](../results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md)
 
+## Heim–Neuhauser’s ordinary D’Arcais root conjecture
+
+The [scoped Lean receipt](../results/heim-neuhauser-ordinary-darcais-root/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay. The exact small-index, GMP, and rational Fourier checkers also replayed successfully. [Lean scope](../results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
+
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
 The complete stock-kernel checked closure proves the exact finite and analytic sign grids and positivity, simplicity and interval counts for Rossi’s signed characteristic face sum. The literal ordered-face rank enumerator proves the paper’s equivalent conjecture without a Möbius assumption. [Scope and full receipt](../results/rossi-permutohedron-roots/FORMALIZATION.md).
