@@ -7,6 +7,9 @@ Partial. Lean verifies the literal arithmetic count, factorial tails,
 and the finite-window total-variation bound between the arithmetic and
 independent residue laws. Asymptotic specialization and limiting laws
 remain.
+
+Two supporting threshold identities are independently replayed:
+the universal band-mass bound and the exact tail-product sum.
 [Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
 
