@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall first-mode Hankel degrees and signs
+
+A Schur complement proves the exact adjacent-minor recurrence. Lean verifies nonvanishing, the exact degree and leading-coefficient sign in every size, and the normalized evaluation limit. The transfer to the complete theta kernel is not part of this change. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall Hankel polynomial identity
 
 Lean proves the differential identity for the shifted-minor square difference, and its exact degree and leading coefficient when the unshifted Hankel polynomial is nonzero. This does not yet establish the adjacent-minor recurrence or its analytic sign. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
