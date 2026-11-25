@@ -61,6 +61,17 @@ modules=(
   Conjectures.NovelliThibonFiniteFundamental
   Conjectures.NovelliThibonFundamentalWords
   Conjectures.NovelliThibonLinearResponse
+  Conjectures.NovelliThibonAttackCounts
+  Conjectures.NovelliThibonCellResponse
+  Conjectures.NovelliThibonDiagram
+  Conjectures.NovelliThibonDiagramMoments
+  Conjectures.NovelliThibonDualResponse
+  Conjectures.NovelliThibonFillingFirstOrder
+  Conjectures.NovelliThibonLegCounts
+  Conjectures.NovelliThibonOptionalEdges
+  Conjectures.NovelliThibonRowCounts
+  Conjectures.NovelliThibonSourceFirstOrder
+  Conjectures.NovelliThibonSourceNormalization
   Conjectures.NovelliThibonPairFactor
   Conjectures.NovelliThibonStandardization
   Conjectures.WachsFiniteLogConcavity
