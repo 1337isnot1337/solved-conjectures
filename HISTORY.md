@@ -24,6 +24,10 @@ Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates h
 
 Lean verifies the ordinary generating-function recurrence, the strict root comparisons for indices 6–50 and all real parameters at least 1, and the central Fourier integral bound under explicit saddle estimates. [Lean scope](results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md) · [Receipt](results/heim-neuhauser-ordinary-darcais-root/verification/receipt.json).
 
+## 2026-11-25 — Verify the second-largest-terminal decomposition and limit reduction in Lean
+
+Lean verifies the literal four-pattern class, its canonical split by a unique marker gap, the binomial interleaving count, and the block-deletion lemma for tableau walks. The exact leading amplitude follows in Lean from explicit counting and gap estimates. [Lean scope](results/pantone-bona-second-largest-terminal/FORMALIZATION.md) · [Receipt](results/pantone-bona-second-largest-terminal/verification/receipt.json).
+
 ## 2026-11-25 — Identify Rossi’s face polynomials in Lean
 
 Lean counts the literal ordered partitions including the empty face, proves their Stirling-number counts, and identifies the rank polynomial and evaluated signed characteristic face sum with the Eulerian model. The rank formulation is equivalent in Conjecture 6.16. The complete finite-grid bridge remains separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).

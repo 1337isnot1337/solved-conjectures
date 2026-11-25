@@ -678,6 +678,10 @@ modules=(
   Conjectures.OrdinaryDarcaisFinite
   Conjectures.OrdinaryDarcaisCentral
   Conjectures.OrdinaryDarcaisRoot
+  Conjectures.PantoneBonaTerminal
+  Conjectures.PantoneBonaTerminalLimit
+  Conjectures.PantoneBonaTerminalWalk
+  Conjectures.PantoneBonaSecondLargestTerminal
   Conjectures.FussSlot
   Conjectures.FussFinal
   Conjectures.FussWords
