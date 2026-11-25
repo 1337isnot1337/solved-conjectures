@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Pomerance–Sárközy's finite-window comparison
+
+Lean verifies the quantitative total-variation bound between the exact
+arithmetic and independent residue laws.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Pomerance–Sárközy's CRT inclusion probabilities
 
 Lean verifies the exact shifted residue count, independent product

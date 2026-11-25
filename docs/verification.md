@@ -3,10 +3,10 @@
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 
-Partial. Lean verifies the literal arithmetic count and factorial
-tails, and bounds every inclusion-probability discrepancy by the
-reciprocal sample size using actual CRT and independent residue counts.
-The total-variation aggregation and limiting statements remain.
+Partial. Lean verifies the literal arithmetic count, factorial tails,
+and the finite-window total-variation bound between the arithmetic and
+independent residue laws. Asymptotic specialization and limiting laws
+remain.
 [Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
 
