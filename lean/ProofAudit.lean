@@ -9,6 +9,19 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.mem_extreme_polar_iff,
+    `BraunBruegge.polar_iff_polytope_pairing,
+    `BraunBruegge.span_edgeVectors_of_connected,
+    `BraunBruegge.polar_isCompact,
+    `BraunBruegge.finite_polar_vertices,
+    `BraunBruegge.tightGraph_eq_of_bipartition,
+    `BraunBruegge.polarVerticesEquivFacets,
+    `BraunBruegge.card_complete_bipartite_facets,
+    `BraunBruegge.pow_card_matching_le_facets,
+    `BraunBruegge.complete_bipartite_facets_lt,
+    `BraunBruegge.balancedFacetMinimum_even,
+    `BraunBruegge.balancedFacetMinimum_odd,
+    `BraunBruegge.balanced_complete_bipartite_minimum,
     `CircularCompleteMinusEdge.floorColoring_wellFounded,
     `CircularCompleteMinusEdge.graph_edge_card_parameter,
     `CircularCompleteMinusEdge.circularChromaticIndex_le_card,

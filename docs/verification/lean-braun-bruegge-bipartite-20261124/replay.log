@@ -1,0 +1,11 @@
+Replaying all 9 local project modules imported by Conjectures.BraunBrueggeMinimumBipartiteComparison, including that root (prefix Conjectures)
+replaying Conjectures.BraunBrueggeMinimumCompleteBipartite
+replaying Conjectures.BraunBrueggeMinimumCompact
+replaying Conjectures.BraunBrueggeMinimumMatchingFaces
+replaying Conjectures.BraunBrueggeMinimumBipartite
+replaying Conjectures.BraunBrueggeMinimumPolar
+replaying Conjectures.BraunBrueggeMinimumBipartiteComparison
+replaying Conjectures.BraunBrueggeMinimumFacets
+replaying Conjectures.BraunBrueggeMinimumGeometry
+replaying Conjectures.BraunBrueggeMinimumBipartiteFacets
+PASS: the entire local import closure of Conjectures.BraunBrueggeMinimumBipartiteComparison completed the pinned kernel replay

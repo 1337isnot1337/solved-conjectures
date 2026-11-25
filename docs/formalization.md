@@ -1,5 +1,19 @@
 # Full formalization campaign
 
+## Braun–Bruegge’s minimum facet conjecture
+
+The [bipartite proof](../lean/Conjectures/BraunBrueggeMinimumBipartiteComparison.lean)
+constructs the actual symmetric edge polytope and identifies its geometric
+facets with normalized polar vertices. For connected bipartite graphs it
+proves the exact minimum and the equality criterion for the complete
+bipartite graph with balanced parts. The comparison for a missing cross-edge
+uses a new vertex from the graph-distance potential. For arbitrary connected
+graphs, the development also verifies the lower bound from distinct
+orientations of an actual matching. The nonbipartite minimum bound remains
+open in Lean. The [scoped receipt](verification/lean-braun-bruegge-bipartite-20261124/receipt.json)
+records nine strict module builds, 164 owned declarations, 13 required
+endpoints, and stock-kernel replay.
+
 ## Ma–Tang’s random subset-sum threshold conjecture
 
 [Incomplete lower-bound checkpoint](../research/ma-tang-lean-core/README.md): twenty Init-only modules establish the exact uniform kernel law, iid coverage bound, birthday conditioning, actual subset-sum coverage and uniform unordered subset probability. The endpoints `uniform_subset_coverage_scaled` and `uniform_subset_below_half` prove covering fraction at most 1/(4*2^r) and strictly below one half on the explicit mixed-group dimension sequence for every r≥4. Strict Lean 4.35.0 builds, transitive axiom checks of all 449 source-named declarations, and stock kernel replay passed ([log](../research/ma-tang-lean-core/verification/uniform-reproduction.log)). Threshold monotonicity, limiting real-log statement, universal upper bound, environment-wide audit and aggregate gate remain unverified. Count zero; uncompiled Mathlib alternatives remain in [draft #583](https://github.com/1337isnot1337/solved-conjectures/pull/583).
