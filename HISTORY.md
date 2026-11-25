@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall calculus of repeated tails
+
+Lean checks the fundamental theorem for the literal repeated tails and the exact derivative index shift at every order, including derivatives beyond the tail order. This is groundwork for the Wronskian identities, not a sign theorem. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall termwise differentiation and derivative bounds
 
 Lean checks termwise differentiation of the literal infinite theta series in every order, a global double-exponential derivative bound, and a uniform bound on every differentiated tail after the first mode. Higher Wronskians are not checked. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
