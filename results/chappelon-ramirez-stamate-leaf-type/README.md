@@ -8,3 +8,5 @@ The lower bound comes from an explicit interval additive basis. The upper bound 
 - [Independent audit](AUDIT.md)
 - [Exact example checker](check.py)
 - [Discovery issue #408](https://github.com/1337isnot1337/solved-conjectures/issues/408)
+
+- [Lean formalization and precise scope](LEAN.md)

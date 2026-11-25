@@ -245,6 +245,9 @@ modules=(
   Conjectures.SteinerbergerFeldheimBounds
   Conjectures.SteinerbergerFeldheimQuantities
   Conjectures.SteinerbergerFeldheimProbability
+  Conjectures.AlmironMoyanoWilf
+  Conjectures.CardonZeroSector
+  Conjectures.ChappelonRamirezStamateLeafType
   Conjectures.ChenKhareSahiOrthogonalityData
   Conjectures.ChenKhareSahiOrthogonalityTransition
   Conjectures.ChenKhareSahiOrthogonalityGram

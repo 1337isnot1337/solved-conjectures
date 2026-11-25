@@ -8,3 +8,5 @@ Complete proposed negative answer to Question 6.1. For every real p>2 there are 
 - [Discovery and review thread](https://github.com/1337isnot1337/solved-conjectures/issues/136)
 
 Lean status: none. Internally reviewed and unrefereed. Attribution and prior-art limitations are preserved in the proof and audit.
+
+- [Lean formalization and precise scope](LEAN.md)

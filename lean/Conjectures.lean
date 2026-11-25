@@ -170,6 +170,9 @@ import Conjectures.SteinerbergerFeldheimBasic
 import Conjectures.SteinerbergerFeldheimBounds
 import Conjectures.SteinerbergerFeldheimQuantities
 import Conjectures.SteinerbergerFeldheimProbability
+import Conjectures.AlmironMoyanoWilf
+import Conjectures.CardonZeroSector
+import Conjectures.ChappelonRamirezStamateLeafType
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
 import Conjectures.ChenKhareSahiOrthogonalityGram

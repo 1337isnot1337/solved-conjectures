@@ -91,6 +91,14 @@ The [complete Lean disproof](results/steinerberger-feldheim-tail/LEAN-AUDIT.md) 
 
 The README lists two side-by-side problem/status pairs, with approximate competition ranks and ties. The established significance order, result links, attribution markers, and Lean statuses are preserved. The site builder reads the index down the left half and then the right half; the README checker and regression tests enforce the same layout and rank order.
 
+## 2026-11-24: Verify three short-proof Lean targets
+
+- [Wilf-module questions](results/almiron-moyano-wilf-module-questions/LEAN.md): Question 4.8 and parts (1), (2), and (6) of Question 4.13. Partial coverage of the collection entry.
+- [Cardon et al.](results/cardon-zero-sector/LEAN.md): exact negative answer to Question 6.1.
+- [Chappelon–Ramírez Alfonsín–Stamate](results/chappelon-ramirez-stamate-leaf-type/LEAN.md): exact disproof of Conjecture 4.4.
+
+The [scoped verification receipt](docs/verification/first-short-proof-lean-batch.md) records the pinned compiler, all-owned axiom audit, and stock kernel replay. The original conjecture disproofs do not certify the stronger written supplements.
+
 ## 2026-11-24: Prove Pantone–Bóna’s third-largest-terminal asymptotic
 
 The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conjecture 6.2 for $A_{5,3}$ with exact leading constant $9\sqrt3/(16\pi)$. See [issue #382](https://github.com/1337isnot1337/solved-conjectures/issues/382) for source audit and scope. This is distinct from the other asymptotic conjectures in the same paper.

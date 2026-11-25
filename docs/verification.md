@@ -931,3 +931,11 @@ lake env python3 ../scripts/replay_lean.py --root Conjectures.ThueMorseValuation
 ## Hartke–Stolee–West–Yancey matching-excess conjecture
 
 The complete 22-module closure passed fresh strict source builds, the all-owned/private audit (505 declarations, 435 theorems, 32 private declarations, 42 required endpoints), and exact stock-kernel replay. The [receipt](verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json), [statement correspondence](../results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md), and [independent review](../results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md) bind the checks to the original all-count tail-minimum conjecture. Only the three allowed standard axioms occur. The portable command is `cd lean && lake env python3 ../scripts/verify_hartke_matching_excess.py`; the dedicated workflow preserves its result separately. The aggregate dependency-artifact and public-site obligations remain tracked in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
+## First short-proof Lean batch
+
+- [Wilf-module questions](../results/almiron-moyano-wilf-module-questions/LEAN.md): Question 4.8 and parts (1), (2), and (6) of Question 4.13. Partial coverage of the collection entry.
+- [Cardon et al.](../results/cardon-zero-sector/LEAN.md): exact negative answer to Question 6.1.
+- [Chappelon–Ramírez Alfonsín–Stamate](../results/chappelon-ramirez-stamate-leaf-type/LEAN.md): exact disproof of Conjecture 4.4.
+
+The [scoped verification receipt](verification/first-short-proof-lean-batch.md) records the pinned compiler, all-owned axiom audit, and stock kernel replay. The original conjecture disproofs do not certify the stronger written supplements.
