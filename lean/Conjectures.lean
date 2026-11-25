@@ -1443,4 +1443,5 @@ import Conjectures.RossiPermutohedronFaceRootTransport
 import Conjectures.McNamaraSteingrimssonContainment
 import Conjectures.McNamaraSteingrimssonPointedCount
 import Conjectures.McNamaraSteingrimssonFamilyCounts
+import Conjectures.McNamaraSteingrimssonRepeatedRankWidths
 import Conjectures.RossiPermutohedronRoots

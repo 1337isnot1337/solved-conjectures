@@ -46,6 +46,19 @@ The conjecture and discovery attribution remain as recorded in the
   of the proper-prefix and pointed-interval counts. The
   [two-summand receipt](verification/two-summand/receipt.json) records the check.
 
+- [Repeated-sum factorization](../../lean/Conjectures/McNamaraSteingrimssonRepeatedActualFactors.lean):
+  any literal intermediate permutation for the repeated endpoints
+  splits into the normalized patterns of the host blocks it actually
+  uses. All but one of its long factors equal the full long endpoint.
+  If the omitted long block is not the first, the initial factor
+  equals the full short endpoint, and the exceptional factor has size
+  exactly the relative rank, so it is nonempty and proper at every
+  interior rank. The endpoint lengths 109051 and 109118 are also
+  checked. The
+  [repeated-factor receipt](verification/repeated-factors/receipt.json)
+  records the check. This is an existence theorem for the
+  factorization, not the required disjoint enumeration.
+
 The complete repeated-sum interval decomposition and the exact final
 three rank sizes are not established by this scope. The
 [receipt](verification/receipt.json) records strict Lean compilation,
