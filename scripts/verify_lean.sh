@@ -262,6 +262,11 @@ modules=(
   Conjectures.EkhadZeilbergerOverlapCovariance
   Conjectures.EkhadZeilbergerVarianceIdentity
   Conjectures.EkhadZeilbergerOverlapOptimum
+  Conjectures.XuZhouSpectral
+  Conjectures.XuZhouMarking
+  Conjectures.XuZhouLaplacianEnergy
+  Conjectures.XuZhouDistanceLayers
+  Conjectures.XuZhouLaplacianPartial
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

@@ -1,5 +1,9 @@
 # Verification
 
+## Xu–Zhou’s diameter–Laplacian conjecture
+
+The [scoped Lean receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) records five strict modules, the all-owned axiom audit, and stock-kernel replay for the spectral and graph reductions. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
 ## Higashitani–Kummer–Michałek conjecture
 
 The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, the all-owned axiom audit and stock replay for the `Conjectures.HKMEhrhartDegreeBridge` closure. It includes exact lattice membership, polynomial counting at every dilation, the degree bound, uniqueness, and the off-line root of the literal Ehrhart polynomial. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
