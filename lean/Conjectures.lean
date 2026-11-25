@@ -25,6 +25,7 @@ import Conjectures.ShumyatskyCyclicTransport
 import Conjectures.ShumyatskyPermutationCycles
 import Conjectures.ShumyatskyCycleForest
 import Conjectures.ShumyatskyDirectedTreeMoves
+import Conjectures.ShumyatskyClosedMoveRoutes
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
