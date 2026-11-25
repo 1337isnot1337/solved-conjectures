@@ -145,6 +145,7 @@ modules=(
   Conjectures.ShumyatskyCyclicTransport
   Conjectures.ShumyatskyPermutationCycles
   Conjectures.ShumyatskyCycleForest
+  Conjectures.ShumyatskyDirectedTreeMoves
   Conjectures.ShumyatskyStabilizer
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
