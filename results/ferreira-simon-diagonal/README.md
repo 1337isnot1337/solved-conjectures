@@ -11,6 +11,7 @@ This proves the full conjecture in Remark 5(b) of Ferreira and Simon, [*Mittag-L
 
 The classical Pollard integral expresses the diagonal value as an expectation. Its classical sine quantile has a logarithm whose absolute value strictly decreases with the parameter. Pairing reciprocal quantiles gives a bounded integrand with a definite derivative sign. The resulting pointwise comparison proves strict monotonicity, the endpoint limits zero and $`1/e`$, and the source's proposed bound on a crossing point.
 
+- [Lean formalization](FORMALIZATION.md)
 - [Complete proof](PROOF.md)
 - [Sources and exact-scope comparisons](SOURCES.md)
 - [Independent priority audit](PRIOR-AUDIT.md)
@@ -21,4 +22,4 @@ The analytic proof uses no numerical tests or computer algebra. The independent 
 
 Status: complete proposed proof, independently reviewed internally; unrefereed. No earlier resolution was found in the sources checked. Search limits and a later paper available only through an extracted version are recorded explicitly. The endpoint limits and crossing consequence are not separate resolution claims.
 
-**Lean status:** none.
+**Lean status:** partial. Lean proves strict monotonicity of the explicit Pollard density integral and checks termwise differentiation of the Mittag–Leffler series. The diagonal inequality follows under the local Pollard representation hypothesis.

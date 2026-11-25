@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
+
+Lean proves strict monotonicity of the explicit Pollard density integral and checks termwise differentiation of the Mittag–Leffler series. The diagonal inequality follows under the local Pollard representation hypothesis. [Lean scope](../results/ferreira-simon-diagonal/FORMALIZATION.md).
+
 ## Revised Tan–Zhou conjecture
 
 The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) proves the full monotone conjecture, including zero and infinite lower order. Direct cylinder covers give the upper bound. Finite digit-tail estimates control the stopping scale, and a uniformly branching interval construction gives an inverse Hölder map for the lower bound. See the [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json).
