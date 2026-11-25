@@ -290,6 +290,9 @@ modules=(
   Conjectures.XuZhouSharpness
   Conjectures.XuZhouLaplacianSharpness
   Conjectures.TomdifCircularIndexCertificates
+  Conjectures.TomdifCircularIndexSound
+  Conjectures.TomdifCircularIndexGraph
+  Conjectures.TomdifCircularIndexBounds
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

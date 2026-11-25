@@ -1419,3 +1419,4 @@ import Conjectures.WaringGapSymmetryMonoid
 import Conjectures.WaringGapSymmetry
 
 import Conjectures.TomdifCircularIndexCertificates
+import Conjectures.TomdifCircularIndexBounds
