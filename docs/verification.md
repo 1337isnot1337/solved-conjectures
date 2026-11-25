@@ -1,5 +1,9 @@
 # Verification
 
+## Cardon–Forgács–Piotrowski–Sorensen–White conjecture
+
+The unchanged original proof and two extension modules passed pinned strict Lean, all-owned transitive axiom audit (68 declarations, nine endpoints) and stock kernel replay. [Exact scope](../results/cardon-zero-sector/LEAN.md). Aggregate CI is separate.
+
 ## Ćurgus–Mascioni’s Fréchet root-matching extremizer question
 
 [Scoped checks](../results/curgus-mascioni-frechet/FORMALIZATION.md) for the nonuniqueness counterexample passed: pinned strict compilation, all-owned transitive axiom audit and stock kernel replay. Aggregate CI is separate.

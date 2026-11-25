@@ -308,6 +308,8 @@ modules=(
   Conjectures.SteinerbergerFeldheimProbability
   Conjectures.AlmironMoyanoWilf
   Conjectures.CardonZeroSector
+  Conjectures.CardonZeroSectorAnalysis
+  Conjectures.CardonZeroSectorSmallDamping
   Conjectures.ChappelonRamirezStamateLeafType
   Conjectures.ChenKhareSahiOrthogonalityData
   Conjectures.ChenKhareSahiOrthogonalityTransition

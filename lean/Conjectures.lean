@@ -233,6 +233,8 @@ import Conjectures.SteinerbergerFeldheimQuantities
 import Conjectures.SteinerbergerFeldheimProbability
 import Conjectures.AlmironMoyanoWilf
 import Conjectures.CardonZeroSector
+import Conjectures.CardonZeroSectorAnalysis
+import Conjectures.CardonZeroSectorSmallDamping
 import Conjectures.ChappelonRamirezStamateLeafType
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
