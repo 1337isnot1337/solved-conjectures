@@ -528,6 +528,7 @@ modules=(
   Conjectures.HKMEhrhart
   Conjectures.HKMEhrhartLocalCount
   Conjectures.HKMEhrhartGeometry
+  Conjectures.HKMEhrhartSufficiency
   Conjectures.HKMEhrhartPartial
   Conjectures.FussRoots
   Conjectures.FussBlocks

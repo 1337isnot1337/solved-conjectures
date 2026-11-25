@@ -3,6 +3,7 @@ import Conjectures.HKMEhrhart
 import Conjectures.HKMEhrhartGeometry
 import Conjectures.HKMEhrhartLocalCount
 import Conjectures.HKMEhrhartPartial
+import Conjectures.HKMEhrhartSufficiency
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 import Lean.Elab.Command
@@ -13,8 +14,8 @@ set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.AlexanderssonParkingExcedanceRoots", "Conjectures.HKMEhrhart", "Conjectures.HKMEhrhartGeometry", "Conjectures.HKMEhrhartLocalCount", "Conjectures.HKMEhrhartPartial"]
-  let required : Array Name := #[`HKMEhrhart.scaled_defect, `HKMEhrhart.candidate_nonreal, `HKMEhrhart.rotation_identity, `HKMEhrhart.interpolant_has_off_line_root, `HKMEhrhart.interpolant_values, `HKMEhrhart.interpolant_natDegree_le, `HKMEhrhart.off_line_of_counts, `HKMEhrhart.mem_pairs_iff, `HKMEhrhart.card_pairs, `HKMEhrhart.multipartiteEdgePolytope_edge_mem, `HKMEhrhart.multipartiteEdgePolytope_zero_mem, `HKMEhrhart.multipartiteEdgePolytope_sum_mem_dilate, `HKMEhrhart.multipartiteLatticePoints_signed_mass_necessary, `HKMEhrhart.multipartiteLatticePoints_finite]
+  let expectedModules : Array String := #["Conjectures.AlexanderssonParkingExcedanceRoots", "Conjectures.HKMEhrhart", "Conjectures.HKMEhrhartGeometry", "Conjectures.HKMEhrhartLocalCount", "Conjectures.HKMEhrhartPartial", "Conjectures.HKMEhrhartSufficiency"]
+  let required : Array Name := #[`HKMEhrhart.off_line_of_counts, `HKMEhrhart.card_pairs, `HKMEhrhart.multipartiteLatticePoints_signed_mass_necessary, `HKMEhrhart.multipartiteEdgePolytope_add_dilates, `HKMEhrhart.multipartiteEdgePolytope_mem_dilate_single_part, `HKMEhrhart.hkm_support_two_of_saturated, `HKMEhrhart.hkm_cross_cover_saturated, `HKMEhrhart.hkmRemovePair_positiveSum, `HKMEhrhart.hkmRemovePair_partAbsSum, `HKMEhrhart.hkm_lattice_mass_sufficient, `HKMEhrhart.hkm_lattice_mass_iff]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv
