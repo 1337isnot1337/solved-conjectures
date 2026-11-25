@@ -1,4 +1,5 @@
 import Conjectures.CsordasVishnyakova
+import Conjectures.FMPCylindric
 import Conjectures.WagnerLaguerreOperator
 import Conjectures.MaTangCoreBalance
 import Conjectures.MaTangCoreIndexed

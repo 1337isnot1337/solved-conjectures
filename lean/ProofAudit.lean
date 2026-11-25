@@ -9,6 +9,20 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Conjectures.FMPCylindric.edge_exact,
+    `Conjectures.FMPCylindric.cell_injective,
+    `Conjectures.FMPCylindric.cell_surj,
+    `Conjectures.FMPCylindric.row_seam,
+    `Conjectures.FMPCylindric.outer_partition,
+    `Conjectures.FMPCylindric.inner_partition,
+    `Conjectures.FMPCylindric.inner_le_outer,
+    `Conjectures.FMPCylindric.sourceCpp_eq_cpp,
+    `Conjectures.FMPCylindric.pp_negative_probe,
+    `Conjectures.FMPCylindric.no_nonnegative_source_count_polynomial,
+    `Conjectures.FMPCylindric.edge_full_exact,
+    `Conjectures.FMPCylindric.sourceCppMore_eq_evalCppMore,
+    `Conjectures.FMPCylindric.pp_negative_probeMore,
+    `Conjectures.FMPCylindric.no_nonnegative_full_column_count_polynomial,
     `CsordasVishnyakova.phi_entire,
     `CsordasVishnyakova.phi_real,
     `CsordasVishnyakova.quartic_alpha_root,
@@ -11088,7 +11102,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

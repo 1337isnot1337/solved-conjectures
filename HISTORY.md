@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
+
+Kernel-checked the relaxed-seam unpinned counterexample under both column-comparison conventions. The separate standard-boundary positivity theorem remains outside Lean scope. [Scope](results/fmp-cylindric/FORMALIZATION.md).
+
 ## 2026-11-25 — Csordas–Vishnyakova conjecture
 
 Completed Lean verification of the original Conjecture 3.6 counterexample, including every test coefficient at every real argument and the actual polynomial-approximation definition. The earlier genus-restricted theorem is not impugned. [Scope](results/csordas-vishnyakova/FORMALIZATION.md).
