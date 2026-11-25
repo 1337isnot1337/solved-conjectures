@@ -106,6 +106,18 @@ modules=(
   Conjectures.PomeranceSarkozyBonferroniKernel
   Conjectures.PomeranceSarkozyCRTCheckpoint
   Conjectures.PomeranceSarkozyArithmeticTV
+  Conjectures.PomeranceSarkozyCoordinateLaws
+  Conjectures.PomeranceSarkozyCountableProduct
+  Conjectures.PomeranceSarkozyCountableVariation
+  Conjectures.PomeranceSarkozyDistributionCheckpoint
+  Conjectures.PomeranceSarkozyLiteralPrimeTuples
+  Conjectures.PomeranceSarkozyManyProduct
+  Conjectures.PomeranceSarkozyPoissonAtom
+  Conjectures.PomeranceSarkozyPoissonTuple
+  Conjectures.PomeranceSarkozyPrimeCategorical
+  Conjectures.PomeranceSarkozyPrimeObservation
+  Conjectures.PomeranceSarkozyPrimeProduct
+  Conjectures.PomeranceSarkozyProductVariation
   Conjectures.PomeranceSarkozyNearThresholdBand
   Conjectures.PomeranceSarkozyTailCross
   Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint

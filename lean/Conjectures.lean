@@ -13,6 +13,7 @@ import Conjectures.NovelliThibonHookExtraction
 import Conjectures.NovelliThibonJacobiPerspectives
 import Conjectures.PomeranceSarkozyCRTCheckpoint
 import Conjectures.PomeranceSarkozyArithmeticTV
+import Conjectures.PomeranceSarkozyDistributionCheckpoint
 import Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
 import Conjectures.ShumyatskyCycleLabels
 import Conjectures.ShumyatskyFactorAction

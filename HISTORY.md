@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Pomerance–Sárközy's distribution comparisons
+
+Lean verifies the categorical-to-Bernoulli and Bernoulli-to-Poisson
+bounds, including finite products of the actual probability laws.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the factor automorphisms in Shumyatsky’s lift
 
 Lean reconstructs the action on the actual direct product, checks the

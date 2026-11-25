@@ -1,0 +1,555 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T22:07:06.477081+00:00",
+  "finished_at": "2026-11-25T22:35:26.188631+00:00",
+  "root": "Conjectures.PomeranceSarkozyDistributionCheckpoint",
+  "project_modules": [
+    "Conjectures.PomeranceSarkozyAtomKernel",
+    "Conjectures.PomeranceSarkozyAtomLaw",
+    "Conjectures.PomeranceSarkozyBonferroniKernel",
+    "Conjectures.PomeranceSarkozyCoordinateLaws",
+    "Conjectures.PomeranceSarkozyCountableProduct",
+    "Conjectures.PomeranceSarkozyCountableVariation",
+    "Conjectures.PomeranceSarkozyDistributionCheckpoint",
+    "Conjectures.PomeranceSarkozyFactorialTail",
+    "Conjectures.PomeranceSarkozyFiniteSieve",
+    "Conjectures.PomeranceSarkozyFiniteTotalVariation",
+    "Conjectures.PomeranceSarkozyIncidenceProbabilities",
+    "Conjectures.PomeranceSarkozyIndependentResidues",
+    "Conjectures.PomeranceSarkozyLiteralPrimeTuples",
+    "Conjectures.PomeranceSarkozyManyProduct",
+    "Conjectures.PomeranceSarkozyModelIncidence",
+    "Conjectures.PomeranceSarkozyObservationLaws",
+    "Conjectures.PomeranceSarkozyOffsets",
+    "Conjectures.PomeranceSarkozyPoissonAtom",
+    "Conjectures.PomeranceSarkozyPoissonTuple",
+    "Conjectures.PomeranceSarkozyPrimeCRT",
+    "Conjectures.PomeranceSarkozyPrimeCategorical",
+    "Conjectures.PomeranceSarkozyPrimeObservation",
+    "Conjectures.PomeranceSarkozyPrimeProduct",
+    "Conjectures.PomeranceSarkozyProductVariation",
+    "Conjectures.PomeranceSarkozyResidueWindow",
+    "Conjectures.PomeranceSarkozySubsetPairs",
+    "Conjectures.PomeranceSarkozyTailProbability",
+    "Conjectures.PomeranceSarkozyTruncationSums"
+  ],
+  "required_endpoints": [
+    "PomeranceSarkozy.product_finiteLawL1_le",
+    "PomeranceSarkozy.push_finiteLawL1_le",
+    "PomeranceSarkozy.tupleWeight_l1_le",
+    "PomeranceSarkozy.coordinate_observation_mass",
+    "PomeranceSarkozy.categorical_bernoulli_l1",
+    "PomeranceSarkozy.prime_observation_law",
+    "PomeranceSarkozy.prime_residue_bernoulli_tuple_l1",
+    "PomeranceSarkozy.modelObservation_cartesian",
+    "PomeranceSarkozy.shift_residue_tuple_bernoulli_l1",
+    "PomeranceSarkozy.bernoulli_poisson_nat_hasSum_l1",
+    "PomeranceSarkozy.bernoulli_poisson_nat_l1_le",
+    "PomeranceSarkozy.realTupleMass_atomicL1_le",
+    "PomeranceSarkozy.bernoulli_poisson_tuple_le"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/PomeranceSarkozyAtomKernel.lean": "5a1375765e0a65b01812abf14dc37decf24e1dd4ef196c1cda5511d44fe43c41",
+    "lean/Conjectures/PomeranceSarkozyAtomLaw.lean": "00450913180eaf54c39b54288edf725f9bf90771ff3ff2a9d0b9985856f9088b",
+    "lean/Conjectures/PomeranceSarkozyBonferroniKernel.lean": "6e237bf4f4772021352c0e14a38fe8751251e3a1ae7a8ae444d9b147006e2f27",
+    "lean/Conjectures/PomeranceSarkozyCoordinateLaws.lean": "39eae2b6321b10076072ce6a3321718310cd69068f719a7166456e4801315fba",
+    "lean/Conjectures/PomeranceSarkozyCountableProduct.lean": "191c721f564f2962eef488ca0a4c96c729a907081d9493d32cc6dc4935ca3f83",
+    "lean/Conjectures/PomeranceSarkozyCountableVariation.lean": "1e2950199ab23c6436c9922dc0523654b33e2ec5798c36ae332adb83dc40c60f",
+    "lean/Conjectures/PomeranceSarkozyDistributionCheckpoint.lean": "b04ac95c8c60b05a5284e6689e157199cbfb6aba955e29b41c807ae846b22a50",
+    "lean/Conjectures/PomeranceSarkozyFactorialTail.lean": "a4d00c4acdd89bff5a2d1a82eba17118bbd63a2a5b48e81d7d76f135ab8dafee",
+    "lean/Conjectures/PomeranceSarkozyFiniteSieve.lean": "2f89d265936908499b96e4af87d4858c75d2adff03fab6aa71eec5c399f24594",
+    "lean/Conjectures/PomeranceSarkozyFiniteTotalVariation.lean": "4576f52e11bb5b3d129a584f11c393fcdd33688bd625bdcc6826bf2ac82177ec",
+    "lean/Conjectures/PomeranceSarkozyIncidenceProbabilities.lean": "9ea8c6d64c9b49a7c64d594816b90471bdc1516d69174c4e257931d7f3bcaabe",
+    "lean/Conjectures/PomeranceSarkozyIndependentResidues.lean": "e4c0494b1ce203d10a2ef71257c4387ea1d924fa90f2125e06986cfab62f00fa",
+    "lean/Conjectures/PomeranceSarkozyLiteralPrimeTuples.lean": "30b69199ebaab06a64627db2652dff4282b2d7c2b1d8020e2c8c0f1367e3a95b",
+    "lean/Conjectures/PomeranceSarkozyManyProduct.lean": "4fcaf8e71a1f32d0b169060b2875f52a59628a884a63ffa5d5da0d2fb176456b",
+    "lean/Conjectures/PomeranceSarkozyModelIncidence.lean": "f4c022ab2ae2840cf8ef88feaab65a0de397aee1494f8028f3a4d3b7c5ec2efa",
+    "lean/Conjectures/PomeranceSarkozyObservationLaws.lean": "852a70ae0bccbb99124ffc919c6f30a20038541b7c4c6ff26a573083bb732576",
+    "lean/Conjectures/PomeranceSarkozyOffsets.lean": "954924c2d9f7c8efe3c5967e4d0671a8e3d052a47a7d9fc5d9d179e0c2501d18",
+    "lean/Conjectures/PomeranceSarkozyPoissonAtom.lean": "6bcb601c57ac605e776551cdee9c1d11b4a07cc94e1bf36c2464a2477c65237f",
+    "lean/Conjectures/PomeranceSarkozyPoissonTuple.lean": "ec0842c70c30d55584523bd3d355aa264d74da6bbc5bc07cfa19435ae0fee736",
+    "lean/Conjectures/PomeranceSarkozyPrimeCRT.lean": "294e924b62eee1f2d7f3f78aebed7412d16e0d9742d43efb8d7a04a28507f10b",
+    "lean/Conjectures/PomeranceSarkozyPrimeCategorical.lean": "0176fc13375bd8da9b085a481aead2cc3c28cd198a0501cf0c23b708d00c6b25",
+    "lean/Conjectures/PomeranceSarkozyPrimeObservation.lean": "1c41be412c968b672bc515b54bfa40f1c403dea827582741568cec1ea44360f0",
+    "lean/Conjectures/PomeranceSarkozyPrimeProduct.lean": "f0f98cb18fd6d2763733f530ec9d297c76f54029675b124beeced57cb8d54cd2",
+    "lean/Conjectures/PomeranceSarkozyProductVariation.lean": "c37532606c30b5bc855e2db8ba678492b1b89d0549bc877307605f35c123ab45",
+    "lean/Conjectures/PomeranceSarkozyResidueWindow.lean": "7ce41738a087685601fa9f7a643555cbcc9b3e7db433e718de9df52970372f5f",
+    "lean/Conjectures/PomeranceSarkozySubsetPairs.lean": "3a874299544d6030d8d289ab6c32b713326d65f997ca9c0d879e3b5585234e77",
+    "lean/Conjectures/PomeranceSarkozyTailProbability.lean": "2336bcf9f74df2c9425c669b74513cb5a845c2ec3523a6c56c0e58070155ee08",
+    "lean/Conjectures/PomeranceSarkozyTruncationSums.lean": "d631c15bd7853c2015bd94f2b822b4308e029baaa8bae15a26d227e99c30511d"
+  },
+  "input_sha256": {
+    "lean/Conjectures/PomeranceSarkozyAtomKernel.lean": "5a1375765e0a65b01812abf14dc37decf24e1dd4ef196c1cda5511d44fe43c41",
+    "lean/Conjectures/PomeranceSarkozyAtomLaw.lean": "00450913180eaf54c39b54288edf725f9bf90771ff3ff2a9d0b9985856f9088b",
+    "lean/Conjectures/PomeranceSarkozyBonferroniKernel.lean": "6e237bf4f4772021352c0e14a38fe8751251e3a1ae7a8ae444d9b147006e2f27",
+    "lean/Conjectures/PomeranceSarkozyCoordinateLaws.lean": "39eae2b6321b10076072ce6a3321718310cd69068f719a7166456e4801315fba",
+    "lean/Conjectures/PomeranceSarkozyCountableProduct.lean": "191c721f564f2962eef488ca0a4c96c729a907081d9493d32cc6dc4935ca3f83",
+    "lean/Conjectures/PomeranceSarkozyCountableVariation.lean": "1e2950199ab23c6436c9922dc0523654b33e2ec5798c36ae332adb83dc40c60f",
+    "lean/Conjectures/PomeranceSarkozyDistributionCheckpoint.lean": "b04ac95c8c60b05a5284e6689e157199cbfb6aba955e29b41c807ae846b22a50",
+    "lean/Conjectures/PomeranceSarkozyFactorialTail.lean": "a4d00c4acdd89bff5a2d1a82eba17118bbd63a2a5b48e81d7d76f135ab8dafee",
+    "lean/Conjectures/PomeranceSarkozyFiniteSieve.lean": "2f89d265936908499b96e4af87d4858c75d2adff03fab6aa71eec5c399f24594",
+    "lean/Conjectures/PomeranceSarkozyFiniteTotalVariation.lean": "4576f52e11bb5b3d129a584f11c393fcdd33688bd625bdcc6826bf2ac82177ec",
+    "lean/Conjectures/PomeranceSarkozyIncidenceProbabilities.lean": "9ea8c6d64c9b49a7c64d594816b90471bdc1516d69174c4e257931d7f3bcaabe",
+    "lean/Conjectures/PomeranceSarkozyIndependentResidues.lean": "e4c0494b1ce203d10a2ef71257c4387ea1d924fa90f2125e06986cfab62f00fa",
+    "lean/Conjectures/PomeranceSarkozyLiteralPrimeTuples.lean": "30b69199ebaab06a64627db2652dff4282b2d7c2b1d8020e2c8c0f1367e3a95b",
+    "lean/Conjectures/PomeranceSarkozyManyProduct.lean": "4fcaf8e71a1f32d0b169060b2875f52a59628a884a63ffa5d5da0d2fb176456b",
+    "lean/Conjectures/PomeranceSarkozyModelIncidence.lean": "f4c022ab2ae2840cf8ef88feaab65a0de397aee1494f8028f3a4d3b7c5ec2efa",
+    "lean/Conjectures/PomeranceSarkozyObservationLaws.lean": "852a70ae0bccbb99124ffc919c6f30a20038541b7c4c6ff26a573083bb732576",
+    "lean/Conjectures/PomeranceSarkozyOffsets.lean": "954924c2d9f7c8efe3c5967e4d0671a8e3d052a47a7d9fc5d9d179e0c2501d18",
+    "lean/Conjectures/PomeranceSarkozyPoissonAtom.lean": "6bcb601c57ac605e776551cdee9c1d11b4a07cc94e1bf36c2464a2477c65237f",
+    "lean/Conjectures/PomeranceSarkozyPoissonTuple.lean": "ec0842c70c30d55584523bd3d355aa264d74da6bbc5bc07cfa19435ae0fee736",
+    "lean/Conjectures/PomeranceSarkozyPrimeCRT.lean": "294e924b62eee1f2d7f3f78aebed7412d16e0d9742d43efb8d7a04a28507f10b",
+    "lean/Conjectures/PomeranceSarkozyPrimeCategorical.lean": "0176fc13375bd8da9b085a481aead2cc3c28cd198a0501cf0c23b708d00c6b25",
+    "lean/Conjectures/PomeranceSarkozyPrimeObservation.lean": "1c41be412c968b672bc515b54bfa40f1c403dea827582741568cec1ea44360f0",
+    "lean/Conjectures/PomeranceSarkozyPrimeProduct.lean": "f0f98cb18fd6d2763733f530ec9d297c76f54029675b124beeced57cb8d54cd2",
+    "lean/Conjectures/PomeranceSarkozyProductVariation.lean": "c37532606c30b5bc855e2db8ba678492b1b89d0549bc877307605f35c123ab45",
+    "lean/Conjectures/PomeranceSarkozyResidueWindow.lean": "7ce41738a087685601fa9f7a643555cbcc9b3e7db433e718de9df52970372f5f",
+    "lean/Conjectures/PomeranceSarkozySubsetPairs.lean": "3a874299544d6030d8d289ab6c32b713326d65f997ca9c0d879e3b5585234e77",
+    "lean/Conjectures/PomeranceSarkozyTailProbability.lean": "2336bcf9f74df2c9425c669b74513cb5a845c2ec3523a6c56c0e58070155ee08",
+    "lean/Conjectures/PomeranceSarkozyTruncationSums.lean": "d631c15bd7853c2015bd94f2b822b4308e029baaa8bae15a26d227e99c30511d",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyPrimeCategorical.olean",
+        "Conjectures/PomeranceSarkozyPrimeCategorical.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyPrimeCategorical.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyBonferroniKernel.olean",
+        "Conjectures/PomeranceSarkozyBonferroniKernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyBonferroniKernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyAtomKernel.olean",
+        "Conjectures/PomeranceSarkozyAtomKernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyAtomKernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyAtomLaw.olean",
+        "Conjectures/PomeranceSarkozyAtomLaw.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyAtomLaw.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozySubsetPairs.olean",
+        "Conjectures/PomeranceSarkozySubsetPairs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozySubsetPairs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyTruncationSums.olean",
+        "Conjectures/PomeranceSarkozyTruncationSums.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyTruncationSums.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyFiniteTotalVariation.olean",
+        "Conjectures/PomeranceSarkozyFiniteTotalVariation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyFiniteTotalVariation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyOffsets.olean",
+        "Conjectures/PomeranceSarkozyOffsets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyOffsets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyFiniteSieve.olean",
+        "Conjectures/PomeranceSarkozyFiniteSieve.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyFiniteSieve.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyFactorialTail.olean",
+        "Conjectures/PomeranceSarkozyFactorialTail.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyFactorialTail.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyTailProbability.olean",
+        "Conjectures/PomeranceSarkozyTailProbability.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyTailProbability.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyResidueWindow.olean",
+        "Conjectures/PomeranceSarkozyResidueWindow.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyResidueWindow.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyPrimeCRT.olean",
+        "Conjectures/PomeranceSarkozyPrimeCRT.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyPrimeCRT.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyIndependentResidues.olean",
+        "Conjectures/PomeranceSarkozyIndependentResidues.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyIndependentResidues.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyModelIncidence.olean",
+        "Conjectures/PomeranceSarkozyModelIncidence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyModelIncidence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyIncidenceProbabilities.olean",
+        "Conjectures/PomeranceSarkozyIncidenceProbabilities.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyIncidenceProbabilities.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyObservationLaws.olean",
+        "Conjectures/PomeranceSarkozyObservationLaws.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyObservationLaws.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyPrimeObservation.olean",
+        "Conjectures/PomeranceSarkozyPrimeObservation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyPrimeObservation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyProductVariation.olean",
+        "Conjectures/PomeranceSarkozyProductVariation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyProductVariation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyManyProduct.olean",
+        "Conjectures/PomeranceSarkozyManyProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyManyProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyCoordinateLaws.olean",
+        "Conjectures/PomeranceSarkozyCoordinateLaws.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyCoordinateLaws.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyPrimeProduct.olean",
+        "Conjectures/PomeranceSarkozyPrimeProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyPrimeProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyLiteralPrimeTuples.olean",
+        "Conjectures/PomeranceSarkozyLiteralPrimeTuples.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyLiteralPrimeTuples.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyPoissonAtom.olean",
+        "Conjectures/PomeranceSarkozyPoissonAtom.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyPoissonAtom.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyCountableVariation.olean",
+        "Conjectures/PomeranceSarkozyCountableVariation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyCountableVariation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyCountableProduct.olean",
+        "Conjectures/PomeranceSarkozyCountableProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyCountableProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyPoissonTuple.olean",
+        "Conjectures/PomeranceSarkozyPoissonTuple.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyPoissonTuple.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyDistributionCheckpoint.olean",
+        "Conjectures/PomeranceSarkozyDistributionCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyDistributionCheckpoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.PomeranceSarkozyDistributionCheckpoint",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 314,
+    "modules": 28,
+    "private_declarations": 86,
+    "raw_declarations": 314,
+    "required": 13,
+    "tag": "passed",
+    "theorems": 252
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
