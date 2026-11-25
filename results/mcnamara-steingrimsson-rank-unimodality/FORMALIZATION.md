@@ -1,7 +1,7 @@
 # Lean scope for McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
-**Partial.** This work formalizes the literal permutation-containment
-reductions in the written disproof contributed by aadrianvv in
+**Complete for Conjecture 9.4.** Lean formalizes the literal
+counterexample in the written disproof contributed by aadrianvv in
 [PR #651](https://github.com/1337isnot1337/solved-conjectures/pull/651).
 The conjecture and discovery attribution remain as recorded in the
 [original audit](AUDIT.md).
@@ -74,7 +74,23 @@ The conjecture and discovery attribution remain as recorded in the
   [rank-structure receipt](verification/rank-structure/receipt.json)
   records these scopes. These are not yet the final repeated-sum counts.
 
-The complete repeated-sum interval decomposition and the exact final
-three rank sizes are not established by this scope. The
-[receipt](verification/receipt.json) records strict Lean compilation,
-the all-owned axiom audit, and stock-kernel replay of the eight-module closure.
+- [Exact repeated interval census](../../lean/Conjectures/McNamaraSteingrimssonRepeatedCount.lean):
+  every positive interior rank splits into a smaller two-summand
+  interval and the disjoint choices of a later slot and an actual
+  subpattern of the appropriate length. The proof counts distinct
+  permutations, not pattern embeddings.
+- [Exact rank sizes](../../lean/Conjectures/McNamaraSteingrimssonRanksExact.lean):
+  the literal rank sizes at 44, 45 and 46 are 8,598,793,292,661,
+  8,598,464,986,146 and 8,599,053,474,845. The calculation uses the
+  verified weighted recurrence and small binomial identities.
+- [Final theorem](../../lean/Conjectures/McNamaraSteingrimssonRankUnimodalityFalse.lean):
+  disproves the original all-interval statement in the classical
+  permutation pattern poset. It proves that the stated interval is
+  comparable and that its actual rank sequence is not weakly unimodal.
+  The [complete receipt](verification/complete/receipt.json) reports
+  strict compilation, the all-owned axiom audit, and stock kernel replay.
+
+This is a complete disproof of Conjecture 9.4 (Vatter's Conjecture 2.2),
+not a claim about principal downsets, the Sperner property, or the
+consecutive-pattern poset. Lean need not evaluate the other rank
+sizes to certify the strict dip. External refereeing is separate.

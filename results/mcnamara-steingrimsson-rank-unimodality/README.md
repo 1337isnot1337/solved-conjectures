@@ -7,4 +7,4 @@
 - [Partial Lean formalization](FORMALIZATION.md)
 - [Independent review, sources and attribution](AUDIT.md)
 
-Run `python3 verify.py` in this directory. The written disproof is internally reviewed. Lean checks the literal layered and pointed containment reductions and the exact binomial rank sizes in the smaller pointed interval. Lean also counts every positive rank in the two-summand interval by the exact convolution of the actual factor counts. Lean also proves existence of the literal repeated-sum factorization. Lean identifies the exceptional slot canonically and evaluates the literal pointed downset coefficients at lengths at least three. The final repeated-sum enumeration and external refereeing remain pending.
+**Lean status: complete for the original conjecture.** Lean proves that the literal interval is not weakly rank-unimodal and checks all three rank sizes above. See the [Lean proof and the pinned verification receipt](FORMALIZATION.md). Run `python3 verify.py` for the independent arithmetic check. External refereeing is separate.

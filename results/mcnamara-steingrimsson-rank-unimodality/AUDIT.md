@@ -23,8 +23,7 @@ analogues, using $`u\in\{11,12,21,121,212,112\}`$, $`w=(2)^{|u|_{\rm parts}}`$
 and $`t\in\{2,3\}`$. Each complete rank vector agreed with the
 corresponding instance of the interval formula. For example, for
 $`u=212`$ and $`t=3`$ the vector is
-$`(1,5,9,22,32,31,16,1)`$. Formal verification and external refereeing
-are pending.
+$`(1,5,9,22,32,31,16,1)`$. A separate [Lean formalization](FORMALIZATION.md) now verifies the literal counterexample, including all three exact rank sizes. External refereeing is pending.
 
 ## Priority screen
 
