@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Csordas–Vishnyakova conjecture
+
+Complete for original Conjecture 3.6. The quartic and real entire function meet the paper’s hypotheses. All required Taylor coefficients are nonnegative and locally uniform limits of real-rooted polynomials cannot produce the witness. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json).
+
 ## Wagner's Laguerre-operator conjecture
 
 Complete for Conjecture 4.3. The Lean proof uses actual real polynomial approximants, compact-uniform convergence, the exact first Laguerre operator and eventual coefficient positivity. It does not rely on a conjectural equivalence with Jensen polynomials. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json).

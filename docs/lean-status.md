@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Csordas–Vishnyakova conjecture
+
+Lean 4.35.0 strict build, 49-owned-declaration/9-endpoint axiom audit, and stock replay passed. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json).
+
 ## Wagner's Laguerre-operator conjecture
 
 Strict Lean 4.35.0 compilation, all 39 owned declarations and six required endpoints, and stock replay passed. The distinct sequence conjectures 4.1 and 4.2 are not formalized here. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json).
@@ -211,7 +215,7 @@ proofs are documented separately in the catalogue and result package.
 | Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
-| Csordas–Vishnyakova conjecture | Not formalized | Complete proposed disproof of Conjecture 3.6: the quartic polynomial p(z)=z⁴+z²+1 and entire function exp(−z⁴) satisfy every required generalized coefficient inequality, yet the function is not Laguerre–Pólya. The earlier genus-restricted theorem is unaffected. Internally reviewed written argument; no Lean verification. |
+| Csordas–Vishnyakova conjecture | Complete | Original Conjecture 3.6, including all real arguments and all Taylor orders, with the actual approximation definition. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json). |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Complete: universal Question 6.1 refuted | Lean refutes Question 6.1 by an exact cubic at p = 3 and positive α. The stronger all-p small-parameter result remains written only. [Scope and source](../results/cardon-zero-sector/LEAN.md). |
 | Wagner's Laguerre-operator conjecture | Complete | Proves the full original 4.3 counterexample; hypotheses are the actual approximation and positivity conditions. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json). |
 | Rowland–Sistos Barrón conjecture | Complete | Actual minimum tail-recurrence ranks over every characteristic-zero field; the exact rank formula for all M≥49 and failure of every eventual quasipolynomial. All 17 modules passed strict compilation, the all-owned audit (286 declarations, 261 theorems), and stock-kernel replay. The source’s undefined pseudo-polynomial terminology is interpreted explicitly; its separate general-rank clause is not claimed. [Statement audit and receipt](../results/rowland-sistos-barron/LEAN_STATUS.md). |
