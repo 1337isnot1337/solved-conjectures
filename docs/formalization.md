@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Xu–Zhou’s diameter–Laplacian conjecture
+
+Partial. Lean verifies the inclusive spectral count reductions, the distance-layer clique completion, layer-surjective retained subsets of prescribed size, Laplacian quadratic monotonicity, and the finite marking budget. The clique-chain quadratic bound and full implication remain outside this checkpoint. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 
 Partial. Lean proves the exact covariance of two literal word windows, sums it by lag, and identifies the overlap variance expression without an unformalized limit. It proves the maximum and all extremizers of the unrestricted normalized overlap score for every alphabet size and word length in the source range. The probabilistic identification with winning-probability asymptotics and the separate full-alphabet restriction remain written. [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).

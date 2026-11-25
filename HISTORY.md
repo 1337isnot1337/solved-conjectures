@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Xu–Zhou Laplacian reductions in Lean
+
+Lean verifies the closed-cutoff spectral count argument, the actual distance-layer completion and retained cardinalities, and a finite marking budget. The quotient bound and full conjecture are separate. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Higashitani–Kummer–Michałek counterexample in Lean
 
 Lean constructs the unique Ehrhart polynomial of the literal six-pair polytope, proves its degree bound and count identity at every natural dilation, and checks a root off the canonical line. This refutes both published clauses; the independent Wronskian and stronger canonical-line witness remain written supplements. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
