@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Nuttall's conjecture
+
+The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its global exponential decay gives integrability of every cumulant weight, and the integral is strictly positive. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+
 ## Németh–Seberry–Shu conjecture
 
 Two scoped closures check the Fourier sampling and spectral identities and the algebraic counting reduction. The scalar profile is strictly increasing in amplitude, and its common gap verifies the final reduction from an explicit uniform normalized-log approximation hypothesis. The existence of such an approximation is not verified. [Lean scope](../results/nemeth-seberry-shu/FORMALIZATION.md).

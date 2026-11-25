@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall's conjecture
+
+Added a checked theta kernel and order-one cumulant-minor positivity for every cumulant order in the single-integral formulation. The higher-order conjecture remains only partially formalized. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Németh–Seberry–Shu conjecture
 
 Published checked Fourier, spectral, modular permanent, and conditional dense-row counting components, and verified the strict amplitude separation bridge. This does not complete Lean verification of the asymptotic disproof. [Lean scope](results/nemeth-seberry-shu/FORMALIZATION.md).

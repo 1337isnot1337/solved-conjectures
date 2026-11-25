@@ -1,5 +1,9 @@
 # Verification
 
+## Nuttall's conjecture
+
+The pinned strict build, all-owned axiom audit and stock replay pass for the one-module closure. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+
 ## Németh–Seberry–Shu conjecture
 
 Separate target receipts cover the strict builds, full owned-axiom audits, and stock replays for the spectral and counting closures. This does not certify the aggregate repository gate. [Lean scope](../results/nemeth-seberry-shu/FORMALIZATION.md).
