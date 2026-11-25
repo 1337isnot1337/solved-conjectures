@@ -149,6 +149,9 @@ modules=(
   Conjectures.ShumyatskyDirectedTreeMoves
   Conjectures.ShumyatskyClosedMoveRoutes
   Conjectures.ShumyatskyStabilizer
+  Conjectures.ShumyatskyCycleCompletion
+  Conjectures.ShumyatskyProductCompletion
+  Conjectures.ShumyatskyMultifactorLift
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
