@@ -1,0 +1,2103 @@
+{
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.FranklArithmetic": {
+      ".ir": "642dc8189532e14c731d0fddf50fc7de1f023cc412c73fd1a93a262765a2514e",
+      ".ir.sig": "5921d2ddb8e87a6327b59d85e625073d7a86ecd0e41815acffce315709a7673e",
+      ".olean": "5034a1c3dd0f6a2a6265d3a3722615a0c897895b979bf77ae74f31c181e2bc69",
+      ".olean.private": "6ee4533f1645a5864e25d884f4d444b25d588a39b56365cd552a86d717510780",
+      ".olean.server": "5d4efb16b6807eb4ec6442f1db28a9631c7b2f4fb726196e13ad85a46d4abd2a"
+    },
+    "Conjectures.FranklBoundaryAveraging": {
+      ".ir": "aa401b0f0f5ac4af274520e62f38fe79ed0422cfa6b3983f89d88ddf5d93bd63",
+      ".ir.sig": "3b16715ddb9a4d5c74fea710fd1692666c4f208e6fb01fe9d41473186688485a",
+      ".olean": "55b75c8f807057171156acbd4b76667cd9c2b14d77e4bf36d863191e733f946e",
+      ".olean.private": "074fbaca5763fd89b8f801afbabfb843e794ca499899a3a834b999de0d0f5611",
+      ".olean.server": "124873c10edfc752a6ce557cf74316cd50737fcb1c5303a055af6a786268f414"
+    },
+    "Conjectures.FranklBoundaryBall": {
+      ".ir": "e1c17ebf6422b0b85938fbc4004e486c33cadd9bc1311a94d7af32a2e30c7b61",
+      ".ir.sig": "301033198e8c0216ca60cb4c564f33ba1e3d288e701d82a53ee343521f9b0d0f",
+      ".olean": "2265ceaf0823ee6faab80165db2a2683c3e7e2c434902bd10f1af10a9ddc917f",
+      ".olean.private": "aa960380a4026a27cbd2160d8a6d0b88de87a8d49baf3b3930fcd07e2bd9304a",
+      ".olean.server": "8215e62db08dd0e184776e6e2a00bf278b5659c8b2d9a9089b1c664d801a3948"
+    },
+    "Conjectures.FranklBoundaryConfigurationHelpers": {
+      ".ir": "917f30a59a655689f6be38b04d41e54cf20371113dc334ee70f7baebf5b02a4d",
+      ".ir.sig": "21c27c89315fb6a4aca4830c7536770245a914ad0c7e789ebfb30165432b9956",
+      ".olean": "3577c3df0b7746c14cd367074d7182b312d21765c9afcc82e3087d28b255139c",
+      ".olean.private": "745a09baab0c0fb0425b03c9be980d8b70e99bf9d7b376ac7fcc71d5dd3871c6",
+      ".olean.server": "d083dba91385ab56e9f80d746ddbc85a271f30bcdcf2cfc770f9c15293809b86"
+    },
+    "Conjectures.FranklBoundaryConfigurations": {
+      ".ir": "1005bdacd400b82c4d5233b1ee95d4fb9388d9b6378f15025b2a1dbd4de36d8a",
+      ".ir.sig": "359112a0a093d2775ab5da041eb9bd1058505341fd22d691d3995d3d0626850b",
+      ".olean": "9483410fb5fefc03aeeadce1f1c0d4c523d757f32a7a0d898e98d699ff6dc624",
+      ".olean.private": "3205d28053b822466cfe70562d6552b8db624e31e7ac9df9281a3f83a920b1c2",
+      ".olean.server": "887f9d3fb4687fd8366507d01e8585e5ef57fea270b27a89d73e981146da8065"
+    },
+    "Conjectures.FranklBoundaryFibers": {
+      ".ir": "b7e615b6d47190630bddcb91cceb5f2c03580c798dfb215a511407c0afdfd503",
+      ".ir.sig": "cfc5e98e9cf56fee8442a8279b255ea6ee301539e7531582325f0df40aa0ee7c",
+      ".olean": "63a6546a53cc3bcebad0eda8addb95b68fc723456215043b5d6ed0d275adfdd7",
+      ".olean.private": "985179fcddcead5b48e222c1f8517e1b9185b606f147a8a9e2e4315d7c9c5b1f",
+      ".olean.server": "81b677c2a3493ac47571584cbdc44c6975c280e35004ed74c24f8b59382bb6cd"
+    },
+    "Conjectures.FranklFamily": {
+      ".ir": "f746dc45764ff4113693dabbb907b1ef4120ae7e2182adf483606e83c446e3a4",
+      ".ir.sig": "9c2014f74ebcffb7931c982b4917c6dac0baf1e1b7b402d95ed7f2b128319f22",
+      ".olean": "0023d41f3e8a1f84440d970412fb1187f126c53ed819ccf71c4b5b33abb7a6a7",
+      ".olean.private": "2e2c8db567909ea5d17da1fbae30c8813648c3b0b1d090acf9eb1ca703876f24",
+      ".olean.server": "518b1870760b17bcfa65680e515be55a6c8563de7c8388da0c261409c369ddf9"
+    },
+    "Conjectures.FranklFamilyCanonical": {
+      ".ir": "f2294bb2a5c640ab5b4aeb901728eebf47998bdb5713f0a33989a141227c1eb9",
+      ".ir.sig": "1db2deda6fc5f9062a023ef6d28cb0407d0890e2704d1b90d4506b7bd7a94e78",
+      ".olean": "3a7a649f105f99a5b632ac5c19923816e563f9b68f4972c87d2c2498917d5323",
+      ".olean.private": "a0c68174b7bc846c67b4340dfeb48778b3d4884004814975c98d4cac67a3cd81",
+      ".olean.server": "4981429e1ad7d65916163057e66fb5da9336c41504f6e72c0ed208bd9edaef4f"
+    },
+    "Conjectures.FranklFamilyIndependent": {
+      ".ir": "00cb85202755d909f6575518e5fde7cb7f3d5c28b20eb904cf9abc808dac2031",
+      ".ir.sig": "399b2e49e66ab81d0408a430aa428b82d150ddf5277f07a9a6ac6d61a1816ff4",
+      ".olean": "3d25136a857fe9a5fc491d43c9f222ced91093c08a8b5b96ba1e98dd38ae1a98",
+      ".olean.private": "e471d59f6d4f9ab6be1b120d3b6f6252315a4dc35bf6664e6222438e303d72c7",
+      ".olean.server": "502661ca52165c38745c3526c3277faa7f46582359e2bc72a4715716628cae52"
+    },
+    "Conjectures.FranklHighGirthGraphCore": {
+      ".ir": "4a9a70d1b602d07cc1438d87783f47ae068a2ce7bf2418bed3c9f6ac0ebba180",
+      ".ir.sig": "b4594a3d375acd561d4baa712b2c95c47a53a1dc29c8671ac038af6d746f5c86",
+      ".olean": "1c05293db8ecacc55a0c399f697a837bbbb1d586dc8e52b2922167fd27fc92a8",
+      ".olean.private": "5a4a086bf99ab4eb4feedcc0852d7770e1a50b264a80caa64917bcec635bb729",
+      ".olean.server": "04f67b1dfd5afb65a13f40a1187e7fb6672ca874339898bda9271447f8389f53"
+    },
+    "Conjectures.FranklHighGirthTheorem": {
+      ".ir": "c7b5e61b9326dbabf5a6825fcc58d1d9fce39e5dbf5165b41d880fabe98cf755",
+      ".ir.sig": "61187b11749a6994dba3f1da911ffdaf35b5674dc110693e7d952708a9bf015f",
+      ".olean": "617cabbb9c3007e597f028e8748783e5dd71faa87d37a9e823a5fc3565357e5d",
+      ".olean.private": "b5b9357eb844c60b5e336696cb61bb7def4d5114d8de4beacb075ce14ad16507",
+      ".olean.server": "7c195bcf6729d2dd45c09757a1e73acffc1f2b413106e96cfc428f6aca2ee657"
+    },
+    "Conjectures.FranklIncidence": {
+      ".ir": "c09bafaf8ca52d4e82e5fcdf6938e92b9e72a829b883ba42d424d9d78b8694d1",
+      ".ir.sig": "3c300a07fa7dea1da6cc92801f2c8e099c4fbdbe8e2552ccc0e6869df33b2669",
+      ".olean": "39f59f058d565a06ffb0cc739e858f44c9e7060520914e5838bc3e0dae3d8994",
+      ".olean.private": "c6ac90a76377137faf6753ed6ae529a063b8e4e490d30be67ee974d981b6e353",
+      ".olean.server": "cfbb9479a6009e10583f12091861f78ea6acdc08206e78c42706b4b4b3927c9b"
+    },
+    "Conjectures.FranklIncidenceFinite": {
+      ".ir": "c5d4982608cd6485ac338aea8229898a4ad453971afe7b588f7f073201625c18",
+      ".ir.sig": "b7d4a3120f969bf635175c941d03a73e9a245514b85a1b47e2af8608f52d8018",
+      ".olean": "4ff6a829de9041601fba4fcbbce79a22c77020415461b6030c26b00ee56f5507",
+      ".olean.private": "0cfa2713351ba3856ee6064e3da341fadf844e29cca820fad3dbfb7d6d3c507e",
+      ".olean.server": "7f5551f70c257c4b6b1cc41b085f1b271943d18176e62334454c857ca5277548"
+    },
+    "Conjectures.FranklLargeBound": {
+      ".ir": "df951fdd2afcbecb732e834f982cf9c72e3ddc792e175259785aa34b1b319475",
+      ".ir.sig": "411b9b37174314cf6ae26fe2d963d478001a88e4abb754ded255c52ea5352106",
+      ".olean": "54067d686a6e03ccafe28539f84fcd31519b8d94deff97e0366040b3272625ab",
+      ".olean.private": "35b638beeaadc886a6e46402b44a5999c2ff41dbf8df5c436b5227756a114501",
+      ".olean.server": "1290602c7085729cbeebdb17b172caa870acfa29cebe22bfa31090bdf4a81b70"
+    },
+    "Conjectures.FranklLargeCoverage": {
+      ".ir": "39ef385fb48ddf0cdf4f02554864575d101c9b09db194bb0f30d6558c297d4aa",
+      ".ir.sig": "93bd57a6feb5b5a594f1cb6a7a92d88f38c5b9a5c6abff9c3b3086f9a81728d8",
+      ".olean": "b068cf74ccd1e2ea881162a71ce43cd632292e9adf1b7034607e84b6396f0979",
+      ".olean.private": "8d3bd73d7e7639d4ee24836de2a0e3290da48693c20acc1e930dce19b1153c09",
+      ".olean.server": "0aa6c4d80aa3bbb3ac74feaa6e092bae42f4d119135ff80694bfa85bf8f6ae1e"
+    },
+    "Conjectures.FranklLargeIncidence": {
+      ".ir": "64290d4d212dc3c3b67f11c459b0414e358b3dd66eb2db23521215ff9869af9b",
+      ".ir.sig": "5abf7b62cd6a37e7e0d8fe3a510c5534a0e2943ad353ee0c0c90355110e7a8d9",
+      ".olean": "d8b6a422cceb07adc02320c9822c0bedfdaf5cf7788ee9a62daf739f2adeb3ac",
+      ".olean.private": "7434168e4d454f885d6009e953aa6d75afc6beebf9af7bc90f9729b7afaa26d9",
+      ".olean.server": "0e02e6458a47a91f665c85c9dc1b2fdfe9f4baed4ab0e5ba464e081de56b12e1"
+    },
+    "Conjectures.FranklLargeLopsided": {
+      ".ir": "0d506e3dc2e882e80fb3cdac5e44c0d85dcbffdf2bbbefa2907b4b725bd00975",
+      ".ir.sig": "685f3439fd42c0cee3f7fb448022ae4d2a62d25f9fe92f4f58105f4f27b5cdf6",
+      ".olean": "794ce615a1ed89f93505501ed003f62c3299fd65e44ac62f785b11025acc4ce9",
+      ".olean.private": "d293d4b2244b5f440373e4a85bc80cf118a9e0c6891af0ec649b7275dc7203de",
+      ".olean.server": "3f61afaaeccaf34c73e76847484cf6b44861cc6a5d4739fb9cb0ddd0660de4fe"
+    },
+    "Conjectures.FranklLargeNeighbors": {
+      ".ir": "19d6b080d3c6006911ddca345946fad11aed4fd30f1fb3895c5405770dc143ec",
+      ".ir.sig": "d2d16848c577a5dfbcfe38f2b87c8d34a89c301a368b3cf1f7ba9fedcd89aae5",
+      ".olean": "3fd652bfb9197371ff73c6adb4ee47c569cdc0b14b2dc7c7574f1b75d72860fa",
+      ".olean.private": "125754989b6af0c31012c9b71efd5a16cc97814caea727aa357b41f6f8deac24",
+      ".olean.server": "53cab3aac215640acb438882bc38d40f0f8460dadbad800ad4cc19622de6df90"
+    },
+    "Conjectures.FranklLargeProbability": {
+      ".ir": "12456ceaee581acd676d8813faf86eea76e7f76c698d659aa47339797ba5ff50",
+      ".ir.sig": "3da9d6bc47a1b85e17ba671663dc99c2d358d0adc50a1393c0f6ba6d54c71412",
+      ".olean": "d9a15c037914d547ae86eb2b38919b952cdd818b54d0592270f862bc537c308e",
+      ".olean.private": "e295d69f966dee63006697081aae20a36d8a0bbc8d71256da7e22a1c0888d8bc",
+      ".olean.server": "cbd6d9d7659cef2a1dd9573a0216b26eeac528fa70cb6b57c87ab29a2c5883ab"
+    },
+    "Conjectures.FranklLargeQuery": {
+      ".ir": "4685593aa323977a71a3c3715ef5871a662dcd5db7e5f37994246ad427fb3980",
+      ".ir.sig": "4318e4d53252beb913e30f5ca115da6c7bc282c082eb26fb992a3de71230d1b7",
+      ".olean": "fec09a67534a3f1ae1d85ff94510907ff8a36a43d7ad59f30199782eab0c882f",
+      ".olean.private": "6ede962d6d0b59862d84390513c18786a198879ef751980b6b7ff1bea75fe359",
+      ".olean.server": "c921f719b336c365fbc829867c28ddaa75e0f7a3b0d6d939970334d0ac4f8350"
+    },
+    "Conjectures.FranklLargeSelection": {
+      ".ir": "6fa5cde23b8de4fab6292ae3d9c70d178b129ad835371d43a3b5aa8ee9d4581e",
+      ".ir.sig": "e19e210f061e3b744429f858b9e186866db560b7c699307c5538755058a81c93",
+      ".olean": "ea49d6c0c93a2805ada505a843c21da641c59a280302c5ff557cee00259d6ea7",
+      ".olean.private": "f78e06465facd583bb1ca4014b211927990db85c62b8cf5f3aac85fa28dca47f",
+      ".olean.server": "d429c86825fce92e7caf583d41145fa783c1d2b81734034ea154d7acba82570a"
+    },
+    "Conjectures.FranklLargeTheorem": {
+      ".ir": "a49e43542230b19031eaceeb1a0d31b4cd1ad76921c026a9a1148f10ccffb00b",
+      ".ir.sig": "37ca21f833c85b75ad129e52d5b0f8e72c5b4d954947d5cd8402b730e3bb1b79",
+      ".olean": "1ee804c8d373514ef6d498a83c8a1b535533f8592200e3abccf28fef098a7112",
+      ".olean.private": "c63d403ffa9b5ff462f9a0f41cd0cfd16212239078f3989fffcc33b52f0c9b71",
+      ".olean.server": "a51096c1e7ac83b9b0840bb6106f500154a0ed1d2b9f379ce6b8ecb21529f005"
+    },
+    "Conjectures.FranklLopsided": {
+      ".ir": "9564512875bee5a959695a8b8438b14815a008157ec207524bbf64771d67dee6",
+      ".ir.sig": "6787e9f6b476f3ce1d4367618e2131065a6effba1eecc1154f6a705781c93395",
+      ".olean": "5fb5b5f153bb6e8016beaa65347c2638cab5228a042aae40ef64b52d00a816a3",
+      ".olean.private": "f42e30633d781cf4c5665d3385c9ab59d425ddd4273b6e14fbe61d3c01937ef8",
+      ".olean.server": "efd375fc769974efa4c6cee03ef2226b4f496e72177a7824df8e99e412f7d538"
+    },
+    "Conjectures.FranklLopsidedCoordinates": {
+      ".ir": "90d9150aba00908b8fee0213631ee455ceac759b5539aa90f3872360d9399311",
+      ".ir.sig": "ff00529edc95d43cfdfe4ee31c7692406db667136f66a6e010de11c12738fba1",
+      ".olean": "756b229ebc19009802371848e186fa103e0b4a33cbf5b842591376f3b725b8a4",
+      ".olean.private": "372b6f331fcbdbfeedc3fac132535878af5f9613c59337766c694a156c787b5e",
+      ".olean.server": "7747caacc7f792da306a1ec6fb5509287db1475444483257872517399f41dfb0"
+    },
+    "Conjectures.FranklLopsidedHarris": {
+      ".ir": "3ccba9c1ef1dc3ec96e43ec23a37a55b76800419d9b360404036cc7381339ac5",
+      ".ir.sig": "b7bd6298ad88fec8c6e276993a265f80d570ffa3d97ff787009ba4a9c4cd212b",
+      ".olean": "b266ed08c142268373afbed68f32ad2326c314871de3974fdb0c2fa8d86d807f",
+      ".olean.private": "dcd98c13a9adb8f0dc3c87d48c5a21670c21b26d3ea9ac2709103c21fbbe99d6",
+      ".olean.server": "7c51a5d89d7063d84bdbcbd6c3ff8ceffd5bb058152dfbb3380b9f7c6e631211"
+    },
+    "Conjectures.FranklTreeBall": {
+      ".ir": "cf58d35a037cb69e9691417f71fbcc148aa6671cc7fd0b811dac82ef00878a99",
+      ".ir.sig": "1bf86f29f0c98d299f9a4c3a7c8fc4ea4352ba6d5cdb9d8259209d498e1c6f46",
+      ".olean": "710a2725c8695a71093c41d19a289966f6fe2af755ee466be90d8b4f3f6d6561",
+      ".olean.private": "cdeeaa876e9df7e08e336d8d871248209a1755baf53d804125a87eefa44d6704",
+      ".olean.server": "c8681e7db295fbcc6f2b2588abf84877d9691f249fc7b910eadf0c28e2a5f610"
+    },
+    "Conjectures.FranklTreeBoundK03": {
+      ".ir": "3f51e769b34497fad8359e3800ea2e4a10b1628358c974de8edeeb47dd25024f",
+      ".ir.sig": "79f941c66aa5a8c23d9518b8689b95748c8365b259debff4df9ad38f39ab5f84",
+      ".olean": "9fc8cc1a8f4d94f25e2d4781e7778c7305fcab76bd6b82766c3aee732e618697",
+      ".olean.private": "9ed338f13ba2f71a99771d03901b7a4291fce5779966b46547a96e46c2ae6892",
+      ".olean.server": "2e61f84c15e7590d223f483521e26e4ba356c90b95f5f306c02f41e494f34cf6"
+    },
+    "Conjectures.FranklTreeBoundK04": {
+      ".ir": "6b7a9d5dfe2a5c9b677f70f5fd50ea7a2f1851340fefe0d12893fea61e7bfcae",
+      ".ir.sig": "2dc8e20c28ee35379cff908e090c21550272ba5092188da846d363efe52dc16c",
+      ".olean": "32cb280afed19abc34f10d03f1958234bc73d186455e3ac27dfcaa0e43b60c6d",
+      ".olean.private": "11c1f2d7fec933bafc808447dacdfa4198a78bcf5ebc8b1f987fd9dea65e6bbf",
+      ".olean.server": "4ae36b04a6986804a6d914bd2c3a3a019491c2a1febc0017388d3bcc755e1bf9"
+    },
+    "Conjectures.FranklTreeBoundK05": {
+      ".ir": "70006ba58005ae604be92d459ff0a1a728a322bb076a25f3dfb64eac834a7ae2",
+      ".ir.sig": "96adc087871c450e49a85aecb47d22152ed1281e49047002c4690d3e42f0d399",
+      ".olean": "7922cc0b2ad1e250e3f08b8e415de9c10f423af56c808c4364c35a93cd6f9357",
+      ".olean.private": "779d7fb2a62195e2f2a71f79ce779991907a024bc60f0131ef475a036972cbdc",
+      ".olean.server": "153a0939fa0dd1d643c5b5dac45d8900be61b5c455492f2b597b694a0ee08481"
+    },
+    "Conjectures.FranklTreeBoundK06": {
+      ".ir": "68f5f00beaf6103a734597e3258cd53b6e0aab930d22812aa8d99c282197f613",
+      ".ir.sig": "0404c8724b5fb7c77522f3936dfa4d5beef3c8fc967d20e2f4a83279ce1e2383",
+      ".olean": "2bffbb5dd3649466730526268cda6ad78d4c219192bc61f7db2d235f89d3e8dc",
+      ".olean.private": "4729853f0da6459b29579fe9370f11f46a9c89a802d96b43eb007854f9e7708e",
+      ".olean.server": "68943c2b7e0cbfa3a1612e07a6437ae80f31fc28dffb86c5c12792746c36a7da"
+    },
+    "Conjectures.FranklTreeBoundK07": {
+      ".ir": "6649ca1c0ff1f8ec50e3edfa509c894684554402cd036ee07c214977569310a8",
+      ".ir.sig": "4fa211d27bb26abfeefc776d7875dd294519828457b2a6be09ac7232709ec1f0",
+      ".olean": "f957906144025fd3493b51ad7d7723a6041e153a09a300ef3583a8b4c3bd7409",
+      ".olean.private": "f359abcd0e2ab0d3ab0507227173ddd07f5382c5042959b048791555032a986f",
+      ".olean.server": "55c3692d1a5f197b4a3abedb2ec07764763050f257172c8cd0562d6df330d737"
+    },
+    "Conjectures.FranklTreeBoundK08": {
+      ".ir": "10090bbae50bcecd02fd8a24eb6c0514ec70c641fbc3b358fb62ddbb8188ccf1",
+      ".ir.sig": "c6c1599665c6a76187658fff2a7553ada3b527d570d2b203d478d73964c02a15",
+      ".olean": "3e0d7d05e5bdae58bf25ccae131d6b1d6e2ead0f7ea5304c01d04d9c2594bb68",
+      ".olean.private": "f4312e6e4be6fa015b3f0a7e158d99be55133e0fb940ae2dd36efd7eac22c699",
+      ".olean.server": "05a738ed42672ee379689a33d9656e4f9a03eb7355fe081893b6c0fdcd42c960"
+    },
+    "Conjectures.FranklTreeBoundK09": {
+      ".ir": "b628c310a8a2392103843efd49f54da106439392230921ca1d0ff57304638f5f",
+      ".ir.sig": "dda5834d4789f6e2a45844e622ed6f755eb6f351b158f294f5d38bc635ccd64f",
+      ".olean": "1fb1b8c3d934fea68114688bae58c3ed03f6771053defc829b6950af2d1adf8d",
+      ".olean.private": "743e5fa9c86de169d47163dbd25cb005f72cdf5528e2c5721d7442ff480b7902",
+      ".olean.server": "a863040957bca46c035767bd4a1341d80a8a8c4edd2779cdd1957ad28363c4ab"
+    },
+    "Conjectures.FranklTreeBoundK10": {
+      ".ir": "720a8ad2a7666b20046290e86a77998b88d6ee0aaf919e751d6480bb9e342f09",
+      ".ir.sig": "0578be01b6b56313fe195ec2c918d04d898d79320ec1ba51f9efd59af5eb752f",
+      ".olean": "8e126fde855d2d3486bdb993ebf78df8a4d240daf76aefca6808810931be2446",
+      ".olean.private": "59906f5e4b03f58c285f0a9cf512702e22868097f31c9cd1c453cb0154c1b66a",
+      ".olean.server": "ebe368154488ced976cef1cf6d2ff23a280652da30c2195d6ab5a96f6855fe38"
+    },
+    "Conjectures.FranklTreeBoundK11": {
+      ".ir": "7471f7b578e1f93493bfdd1bd84fed10b3ec6402acb933c10c3f701f22893575",
+      ".ir.sig": "073320e8b0bf0eb310b1967c172125cae4075964560230c90957d3db8e40fa66",
+      ".olean": "0a67e854634ac3ec6cb35957dcf030167bbec0e7918b0e857b1570571b135cbe",
+      ".olean.private": "7a5fb0c67dbf0a0498871fafa1166816f94d12c5357779f8b337524880ea0db0",
+      ".olean.server": "eaa87a452539f169d681f876fb2c7ceceee362021f390c66e295bf9e7ab360f2"
+    },
+    "Conjectures.FranklTreeBoundK12": {
+      ".ir": "b1df7ba8fdb2dcfeb5a9fc77c02d7d79ea883f1a140ebd96d8c0720dd6ea808d",
+      ".ir.sig": "6f35650f97fd23ec8995c3c29bdb77ed61bccac04f7e41d8faaa7c51941fe146",
+      ".olean": "3122bf7a8a9533de5cd8b73aaaf9fe5992dfd9b70118a5280163b82266ba9cb3",
+      ".olean.private": "4c103a728174153c74c33b434c3cad9a5e9c98a2b1673656c18865c4f851592f",
+      ".olean.server": "604144de292ed9bf2fc7c000b5a4c76d392a4db78794d9ec05c49ca81a3c17a0"
+    },
+    "Conjectures.FranklTreeBoundK13": {
+      ".ir": "caf84934c5aa8b8c8a8e00cf86908d1f3b5e5b5a7725bf181f7fad33fda3b31f",
+      ".ir.sig": "85fc7be41a69bcadd46b3ec4968b5d0aa01c60e38a75562247a70940f1e22eb0",
+      ".olean": "2d2f7f19f0afe906fab281893a262e328a8529b300611e76f04dbc3159175d46",
+      ".olean.private": "5b418f2dd2ab29ed417521825edd7e7fb3c02b2261d5bc790ad10362078d0396",
+      ".olean.server": "bc470ba0107ee41f379c9426646ad948ace5722ddbb521905708508124934eb1"
+    },
+    "Conjectures.FranklTreeBoundK14": {
+      ".ir": "bba9f1291ccc10400861a686b593cb295c233ccf74dc011c63e14eb81e0f9a7b",
+      ".ir.sig": "87fe46fc5126a3fc876b11e5f0e5387c3765100c79b977aa751b1d9a8a7672a4",
+      ".olean": "e0fd0b50278ddf54684935f9e67c18d07d30997dd8fe54c12de331f0e2616df7",
+      ".olean.private": "c6ce050ad5aee8645c561ac9a3793f8290b2b7c4a8cf2cb75558c4a26b5783cc",
+      ".olean.server": "be9f216b5495220cb96c6c3ac0afb17141733dc20fa38af6a719f576a67e4b37"
+    },
+    "Conjectures.FranklTreeBranchMessages": {
+      ".ir": "f91eb94c45d3e11ed105c8efb5db8878b318f4d4cce8b3ca6cf02225fbab6628",
+      ".ir.sig": "fe87e5253b013297ebad8f202b4b3048f768c69f102691b66d65c701d379e6e9",
+      ".olean": "0683c3692dc8133f3ad69965e8ffa913d5d94373f8e05f4f6fbb8161041e0b1e",
+      ".olean.private": "9b6504aafd0952380bab3b37c0d437ca3b62d62f99b4fc6b0171066f2de93f47",
+      ".olean.server": "074bd73948d6ed31dd0fabd2479da70df2768c8034a868271fdaf56b2aa1723e"
+    },
+    "Conjectures.FranklTreeCertificate": {
+      ".ir": "bb5f676b47213fd7ed8027351db098acd923d166c1254d88655d3354869d36f2",
+      ".ir.sig": "8fdb088a5bd2dd23c55e76dd71441c2a26dd0ff7b17953db7df1398dde676cd4",
+      ".olean": "88b42dae9748b6528fabe92509a41842f2166dfbcd1ec5ba597bb6628abb463e",
+      ".olean.private": "7eae56710aeecf3274dde7fe22a43557d563808def5fe964ffb135ec4336dd1c",
+      ".olean.server": "bd9e4b099a68cb0fc68dfa581a99ff358bfc21d7a93b07efc657ca4687eb29df"
+    },
+    "Conjectures.FranklTreeCone": {
+      ".ir": "6d086d5791a8108e6f7612b83cc8f3f2b2239ff2ac7385e466eae75c89429702",
+      ".ir.sig": "8076bc76988ccfd39daf12fad554d6b8eaaef1b5448ffa655f5b7b7c2ae35886",
+      ".olean": "a2a340f283459a7f5d72f2092dbbea84b5ef732f70e516a04f79f22b16ae332b",
+      ".olean.private": "3add0e0f60674e86311f250972aef585b3976b23579ba4a9cd5150ed1329a3ed",
+      ".olean.server": "c415ea93e4d24b72d731ff86573dae052f45be3c2ef98550f7a48f6dec1fceb3"
+    },
+    "Conjectures.FranklTreeConfigurationIso": {
+      ".ir": "07a73b61977a038dce9ed0b41d9c2d2d3fc70a0088746423dcff50ab1f5e1b26",
+      ".ir.sig": "bff59de86c705d8152fe99fa02de7adc11e750ee4538b8d8479b930b9d78f324",
+      ".olean": "209e233099d4acc7dff06ff75610e0211c6eeffe21865b969790a94c30f1fa29",
+      ".olean.private": "227a5edeb689f69417d182608bf77d3a15245f76a12d57be2f0ca82d87e332c7",
+      ".olean.server": "7788ad38e9a5307fa7a58d5d116402cd2d7d5a62575ada8251b171d1145c98ee"
+    },
+    "Conjectures.FranklTreeConfigurationMessages": {
+      ".ir": "db12c4680ab059ecaf4820b3d75530e04fd4cef60f5abc710997469725076ff5",
+      ".ir.sig": "86ba945783f3cb7831fb47441d88c73d4450484f376c0c4b973280a99368ce0d",
+      ".olean": "ef860dedc5d74632a9d7337152a70167792a31889a07c9efa5ee8eac6424a965",
+      ".olean.private": "e75a0beeca2cfa9b597f911b272f2322fcc808f33ac73b95b12216452cbfc733",
+      ".olean.server": "d7678360f6819c257065176f6f73e1e8e25ee19adfa2b49f2d7a38229f191dab"
+    },
+    "Conjectures.FranklTreeConfigurations": {
+      ".ir": "e49a0247a5f280a573dfe1fb18f187c1b3ac2b91818b2590d9bffaebaa95c712",
+      ".ir.sig": "e8de1b1833f2ef5d4e3ce5811dacecdf622b7c53c2ae207b163d86a228cb12d5",
+      ".olean": "29d4d6cc833c0e6e56498c3a3ac042e1fad0ae003feb47676b5463383da6ea02",
+      ".olean.private": "cc5bf409833731f55e3c916918d4136446dbe9bed6dae47f5423523a0e7ccc0c",
+      ".olean.server": "234a4e9eff38eb6beb967cf55b2f32c6d2940f37fe3f32f84e2f7c2bbbb50506"
+    },
+    "Conjectures.FranklTreeCounts": {
+      ".ir": "b97f191cc2f994cb6538deea8304fffbc01540750de9c9d866a7ce58d9a8352e",
+      ".ir.sig": "5ae07cb2958d1d277e447cbf355c257ed2709e86f945b37036c2517eba788f55",
+      ".olean": "a78e2e1cb7255ad2261049212d60427df7d85d6d0bf638e658848fc69f56d7b2",
+      ".olean.private": "bcfde6bd05bdb074f00ae3828609daea95fa0daa70caaa039df03125336c298f",
+      ".olean.server": "8057d0a2eb2bb57124f8cb6944e103bbdb996a5f44f8ad982215bd657d01a2b3"
+    },
+    "Conjectures.FranklTreeDataK03": {
+      ".ir": "1594cad1c556d88bd0b5a7c0003aa8b41a6ac6276149286151a0494b4046fa63",
+      ".ir.sig": "721fed5cc2e54f2e25ec2f64d43b02a516951a958596c4b6f55bd0fa400d1194",
+      ".olean": "30b2f255f920507cc2f567969f54797cb44b8ad89809ab73cb62d4509675b033",
+      ".olean.private": "cf65fba48e18a4017063bb052017c4f986130300f9fa520a262c4773ded2f620",
+      ".olean.server": "7203c4ebbc0eb1f74ab429b09dfa9c3e7a6d3d727e10b5a1af62a1c4eb99d9f6"
+    },
+    "Conjectures.FranklTreeDataK04": {
+      ".ir": "775544d2a0ca534b4b30f0f0737cd2290939ea7e8a6202e00556b0ebccaf9cad",
+      ".ir.sig": "1cacecbf40c0b4553ae2040b8e447c6eac77a731260c6d50b4a24fb7ce469d0c",
+      ".olean": "a9a866ca248f80dac8bb90f82d64c8c38d46e29afc711d5abb93cd22c87f0565",
+      ".olean.private": "9fb423f97a23742a5ffba0e881c82d3e86241356145211dde4876c79c17c61f7",
+      ".olean.server": "b6748bc0b65d4eac69a96b98639b1a79f38b26b66eb858e5e53755eed26b970d"
+    },
+    "Conjectures.FranklTreeDataK05": {
+      ".ir": "990f3d6b54669c2f3726fd419c02be9a3f5066235cd6241b330b5ea0a42b1951",
+      ".ir.sig": "de9297eef4c75a79077f1fdf2f9bf368f9b41830dd505fe56f5fd160824b0844",
+      ".olean": "ae8e9368391ff1f129f8c14c25479d3f8581f3d00bf9f18137a18c0c147623fb",
+      ".olean.private": "3a6fa1a748803841f544594b5fb055e179c29126cdfb7cb051df53d7a558d603",
+      ".olean.server": "2d0828702ca35707c7953a60948b04e38add5061f38fb7ac9e2557f3fe50f0ef"
+    },
+    "Conjectures.FranklTreeDataK06": {
+      ".ir": "aeeac4a0fae6d26e76850eaf1aacb434069d06e87dd1f26c29ff29db6b276ea4",
+      ".ir.sig": "d30d3e93cce4780a46867906f4b491cccd60ec39ba499e0a776e0c8e9535d7f3",
+      ".olean": "f0301046452b19e37a4123929ea21e78ba6e2c9b7f4627e39ec4befbf800a38f",
+      ".olean.private": "9dee27686e27b188d0dae6e1596b035e2b96fd263fb9f6290c673bd1a65731cf",
+      ".olean.server": "5828a960c6ff03b7687cde4938a9e9fe87eaa2bf5ff2bf6edd917bf341516419"
+    },
+    "Conjectures.FranklTreeDataK07": {
+      ".ir": "66e82e4f94612198d0c3d465deaff0e3a2bb71fe39fd0cd1304500f298153405",
+      ".ir.sig": "d16c9949b49712d8759626c30ba562cce12d06b276dae471457e4047c0f97020",
+      ".olean": "e8903f4f2f76d799e9ab8dde6c51e7f6b94fcfec9cd333883983b23fe060351f",
+      ".olean.private": "6bf7d6738d6a89cc75fcc38884680a71bb5a0e2ab875a39ba36cc192889a34c5",
+      ".olean.server": "0d6e0635aa04bdd4ea4d9a4c2a4c6b89b57b4d5d843d89d995a991b1e9d55a6f"
+    },
+    "Conjectures.FranklTreeDataK08": {
+      ".ir": "a60a3649b5799c16895f5a3462c4fd6da81cd48d64c1592f5dfbf151886e5804",
+      ".ir.sig": "1085f20a4e23009127fba023e1b1d6ce20b8e68a8a6c76460d8d57ac74c06135",
+      ".olean": "c1dd085d298453d075875d22cd559decdbbe7f0d980ede02e109c3f7a020c919",
+      ".olean.private": "ec47a24cd650620c4bfabc9ff5ffabee6ca894a04130e435216b7512940babf1",
+      ".olean.server": "dbe3556d6e009bf748238954b91241a91fea9bb577efc7ffcb6d49fbec503d0d"
+    },
+    "Conjectures.FranklTreeDataK09": {
+      ".ir": "3e6911ff8c56f742ca00121a11238768fed1a91e2dfc9d0fe24aaea7fd8a4a03",
+      ".ir.sig": "1abefdf86a8a6c60d681dd7145115ba96cf01708a3da42b29ecefe16b911c7b4",
+      ".olean": "2de0010a6ebcfcebaa8c70f9430bf670b6d5ea178068a591b86c10a0bc648871",
+      ".olean.private": "be69aefa29b9fd1358467df539a5ec34c991576cb7bff6a730de6de949be5062",
+      ".olean.server": "c38c623e9719a27d0fee9123393642d4ffcbbcdb8efcb398e8ac0f9434651f15"
+    },
+    "Conjectures.FranklTreeDataK10": {
+      ".ir": "196616f256d9dc038ed6707f820a835fd535df0158340e56f6590bd29b20e7e3",
+      ".ir.sig": "e1bb4ef34fea648dac899c5318ce65d4c32892c57e679c0469cf806c99f94662",
+      ".olean": "113c5d9052dac434bf83fc862c8387f381fce1362756931c8d7c93021fcfebdd",
+      ".olean.private": "32b7128a842c43a3c8059066efc92ae3b18c50a1117e186003e3f7b1797c7186",
+      ".olean.server": "f3812fd9006acd3968265e569eb00c191b51b3d6bf953b69b884f66b47657e66"
+    },
+    "Conjectures.FranklTreeDataK11": {
+      ".ir": "b34a37e3b34af978867c18511b766444365b735d5446923a398380ebc5064cec",
+      ".ir.sig": "32742d849c509731d8eaf0a5cd0c884c92f63c4354088d7bbb7df26436a190df",
+      ".olean": "6a15225e33168bdbeaffd13fd26bf4a1b0e7cfb07861324573bba39b0e4f6e35",
+      ".olean.private": "1149a0e8ea99c850f603424dc7a099b96738de45d64be8e06f92fdd17cd07bb6",
+      ".olean.server": "330fce247ba2a92c5b6d1e6c57bfb97271c1b79a74769bf9401581353bf35e9a"
+    },
+    "Conjectures.FranklTreeDataK12": {
+      ".ir": "80ab7ac8666890a4cdea014fefea1467e62544fe13b0c07d1672352d2e10fe6e",
+      ".ir.sig": "d06890e3d0cc8b2f303a81ad993877f534fea8d8ea52e839f321b3a53b43a9bd",
+      ".olean": "18f4bb29d40a095ebbc167382d53df7b517b3b147ec6f3d2209270566f5d2f4f",
+      ".olean.private": "539a27c8b89543738c9ffab415708233ef88bbdcced642b0eae213aeb63375fc",
+      ".olean.server": "8deeeea29ee17c26e1ecbb4d7195de2236e8f1677f0f651aa14228e355c2c92f"
+    },
+    "Conjectures.FranklTreeDataK13": {
+      ".ir": "e4d90829bdef5cdba9f4bfc6357673ed1410cfaf0fa1325e559477919a84327e",
+      ".ir.sig": "d29cb7ab2f168779bfe41105f9364e90a7a117135175b37e4698c8f0ac366f8d",
+      ".olean": "6832af9f4ac6c6ce6fa3f6107d5ca9b664723a6b770ab3ca29edf6173f33871f",
+      ".olean.private": "3b5c00c8cab3f6d1d8594ab358c9a67b7fa114ff400f74b30288bac463d685a2",
+      ".olean.server": "4e22452494d4edb29eb1ef037b5d65a6b69ee4a83ebc72925739a5c634b9714d"
+    },
+    "Conjectures.FranklTreeDataK14": {
+      ".ir": "484af13f500e4c87e4153ec2cf9f957d9b37a49eb88753c6bcb9b65b3cd564d1",
+      ".ir.sig": "456f05707acfee106f469e78530abceba005747cb92db03247b6435f080afde0",
+      ".olean": "c05a9b750ddce31250f594e6fb7344dc942c2f82992eb4a71a07f426d1fbc7fa",
+      ".olean.private": "2a9f60de26a030ff2d288c4bdeb300bfc963f59f53b555b27b7fc7a02599fd75",
+      ".olean.server": "bd74b0652347dc8c70753531857918d8fd72feb6649dcb5fe1ed0dc5fc964837"
+    },
+    "Conjectures.FranklTreeGluing": {
+      ".ir": "38d9077d377ea319bfe87a7acaac7bb4c06201f9ea3c0e80f041bbf745d04162",
+      ".ir.sig": "a816c95190825764d21c71ac5d9d0308c0d0f7740fd48dfe0b110db7486a98ed",
+      ".olean": "18fddb91be94b9a6aef2991207fb4ec7fb35207adff0c22daa313aa19d838761",
+      ".olean.private": "19945000b08e0d3851f3e35a234a8fd98de193fc4cc293f540c56e66b1bf5c75",
+      ".olean.server": "d8aa1b17ba4a75f1ecd08bb13687db89f5470d894e696ab2803d183aa2596251"
+    },
+    "Conjectures.FranklTreeOccupation": {
+      ".ir": "b57ab3cb28bc2b5d9e13f1953452d82c4079ac235dafbbfac79c4325668e8859",
+      ".ir.sig": "fbaf55550450b77f2d23bbd1b8318f7c7637e530737e97a94764fa1c4be42f4c",
+      ".olean": "11f1668d8890e93143c0c4b5d2a3fbf9c7cbe5a7e2023cb3b260bb5947276963",
+      ".olean.private": "f5d88efb62a9aaa587f8c646123005abda26e9e9cd04eeb4e4c53da234e99148",
+      ".olean.server": "9fa3f543f22fcf2542d797abfc80e94321c4aff7371e9463366273c0e0c45b6e"
+    },
+    "Conjectures.FranklTreeRoot": {
+      ".ir": "3456f01daf96021de98389c41aa9270bfc357cd62e8424ebcc4d78403575817d",
+      ".ir.sig": "afcdbed8d6b5be606b03979fc5a67172e463f533ffccfab4438ace59594e9337",
+      ".olean": "125b3b517b72d73aef99524877fcec40dcf434aaf26ece0e35bb26e77f5b42c6",
+      ".olean.private": "965ac66355d980442d454b632356bd170f3e2bd12382196158d3eba03354c508",
+      ".olean.server": "718bb9f4106c484829009550ec96dd304a333e9f3bfa3e0de33c5b63d6a665c8"
+    },
+    "Conjectures.FranklTreeSmallDegrees": {
+      ".ir": "4b20b1f9f4bdc365c146232acaa3346ca4b6a623d285f1e3346ad8fc69fe6965",
+      ".ir.sig": "908a76869117a2a5faa0a1b0757f30c4e2691357c204c077901185195f16439e",
+      ".olean": "ab2b7c3c3b80b3940dea05fb9d4fbcee084ce1446a46d5a4a466b0b0fc569351",
+      ".olean.private": "b32c284e2a26acbf28c3ff1bee4cf6bf3833dcf0fd810053a13527ec936432e2",
+      ".olean.server": "eab3a5c0565cf8c8419bc14daf92f5785e71f0c62f38c5a2d49f82e1f3e84dd4"
+    },
+    "Conjectures.FranklTreeSpan": {
+      ".ir": "9a56657a861bb11a5666bc4682b40df0459a03f04ea6d087d7c0cdf11571b2f9",
+      ".ir.sig": "8450b3d9facaa3f7d57b94020d97ce4b68bcedf55118944b558db4995221dcdd",
+      ".olean": "7684dc9764f5ec195a01ebba31f4d162874405d6b356b55b67b980d427426ff2",
+      ".olean.private": "138bee80798c8d8d574c86e12396d33e7f1a313b5efc6e7ea1969e5afbd77d2b",
+      ".olean.server": "3161a35997619d2250e6d5f17b94f00d855921d95b30bd6c0d5e398a2a0b031a"
+    },
+    "Conjectures.FranklTreeUnfolding": {
+      ".ir": "8401ce70e444471e405f82aff9bf6341722f86512d9ec2ba92d24c90e4b15c56",
+      ".ir.sig": "f3b26fc9b88c45b50ff51dbabbc0add8ccf03480916897264868e393443d3e09",
+      ".olean": "b0a6470d818edde030fe66e256faf512c509535e90096f250c4f9e798813bd24",
+      ".olean.private": "90ca2ea121b7e485ee9570677111642714c4708ad1d56700da505c6889d84277",
+      ".olean.server": "715a32a232bab2144a617f8c31570660406c7ad9de67c3ab6f6155eb4a2e58f7"
+    },
+    "Conjectures.FranklTreeUnfoldingIso": {
+      ".ir": "bedf9fc0a29ba99ed019ddb49833661c11bbb974b8d832170a21093f1eafb778",
+      ".ir.sig": "489d0c1a851254efcaf5b14a73349070e524621c87a02a3d7c40ab7cfdb7b3b4",
+      ".olean": "dd4d9a2bef5e857cc80f0fd9e2b977f427bee4a1dfe6de4f5bfd464bca07b707",
+      ".olean.private": "c012fe0b8f37e5ea4c77b2773caed891be5c352e28bacc404215aea1a60a24f7",
+      ".olean.server": "c9ede7cf361a205112f481c18bad14abdde4fdd35f62cf743faa3b1521265cc5"
+    }
+  },
+  "axiom_audit": {
+    "all_declarations_audited": true,
+    "audit_source_sha256": "85addd79e9d5f4e0fc1769c983b04b78f677a93e230e9ec85b18fa1ee510eb06",
+    "command": [
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "OrbitGroupAudit.lean"
+    ],
+    "declaration_count": 1363,
+    "exit_code": 0,
+    "explicit_import_all": true,
+    "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/axiom-audit.log",
+    "log_sha256": "357ab49f0b27f58114972fb6bda70b24badc4a4739a37377aba72acb29bcd120",
+    "peak_rss_kib": 1302092,
+    "private_arithmetic_chunks_visible": 0,
+    "project_module_count": 64,
+    "required_endpoint_count": 35,
+    "seconds": 6.77,
+    "system_seconds": 0.540245,
+    "theorem_count": 909,
+    "timed_out": false,
+    "user_seconds": 6.151795
+  },
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-frankl-high-girth-theorem.yml": "1248c4d875ae01da715cc0306ab662aaaa50dbba66078f69d7be203407687b1b",
+    ".github/workflows/lean-frankl-orbit-batches.yml": "b0178182e22345ee32249f847decdec353f2a019b689a57defe14a1e3aaf5333",
+    "docs/frankl-high-girth-theorem-sources.json": "41cbc3a03a141e1bf0adab77a3af335174b86f43b4d401a47f45cfdfa59b6be5",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "results/frankl-generator-families/generate_small_cyclic_weight_orbit_batches.py": "049ff677839e1498a6cfba0ef1ddd11eb27eaccb0ea57b8096ea345380745619",
+    "results/frankl-generator-families/small_cyclic_weight_orbit_batches.json": "18246e0188eedf9ca9074b1d8bec301cc70f0ee4570aa20d0ee36789378a2ebc",
+    "results/frankl-generator-families/small_cyclic_weight_orbits.json.gz": "0994809d949f2eb51a6fa9a4899e60b87476a7fe0479bd428f4280ccd801bd6c",
+    "results/frankl-generator-families/width_four_weight_candidates.json": "5594610818abd7f41c76121924259bd1a9a1f86417da91dce2c0f8171bcceb6a",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/test_frankl_orbit_batches.py": "23854104469bbb843d4b1f3c51976f062e0061d8ca850cd29850cb408e40c203",
+    "scripts/verify_frankl_high_girth_theorem.py": "0e29e9492b18a64b0c1e30c5fde870367f3272a864bb505f52d05c15b54308ab",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "git_commit": "bd360bc2de558306ad18a2ef2ca37a2c6a318e62",
+  "group": {
+    "id": "high-girth-theorem",
+    "private_chunks": 0,
+    "roots": [
+      "Conjectures.FranklHighGirthTheorem"
+    ],
+    "rows": 0
+  },
+  "kernel_replay": {
+    "command": [
+      "/usr/bin/stdbuf",
+      "-oL",
+      "-eL",
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+      "-v",
+      "Conjectures"
+    ],
+    "exact_project_closure": true,
+    "exit_code": 0,
+    "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/kernel-replay.log",
+    "log_sha256": "6be6c1d5495835ba313f213e4455fd67e266ee05d4e8b9cba790112295872c56",
+    "peak_rss_kib": 12063380,
+    "replayed_modules": [
+      "Conjectures.FranklTreeBall",
+      "Conjectures.FranklTreeConfigurationIso",
+      "Conjectures.FranklIncidenceFinite",
+      "Conjectures.FranklTreeBoundK09",
+      "Conjectures.FranklTreeOccupation",
+      "Conjectures.FranklTreeDataK04",
+      "Conjectures.FranklTreeDataK05",
+      "Conjectures.FranklLopsided",
+      "Conjectures.FranklTreeDataK10",
+      "Conjectures.FranklBoundaryConfigurations",
+      "Conjectures.FranklTreeDataK08",
+      "Conjectures.FranklTreeBoundK03",
+      "Conjectures.FranklTreeDataK13",
+      "Conjectures.FranklTreeDataK07",
+      "Conjectures.FranklFamilyIndependent",
+      "Conjectures.FranklTreeConfigurations",
+      "Conjectures.FranklArithmetic",
+      "Conjectures.FranklLargeTheorem",
+      "Conjectures.FranklTreeDataK09",
+      "Conjectures.FranklTreeDataK14",
+      "Conjectures.FranklTreeDataK12",
+      "Conjectures.FranklTreeBoundK08",
+      "Conjectures.FranklLopsidedHarris",
+      "Conjectures.FranklTreeSpan",
+      "Conjectures.FranklFamilyCanonical",
+      "Conjectures.FranklTreeBoundK06",
+      "Conjectures.FranklLargeNeighbors",
+      "Conjectures.FranklBoundaryConfigurationHelpers",
+      "Conjectures.FranklLargeIncidence",
+      "Conjectures.FranklTreeBoundK14",
+      "Conjectures.FranklLargeSelection",
+      "Conjectures.FranklBoundaryAveraging",
+      "Conjectures.FranklTreeCounts",
+      "Conjectures.FranklTreeBoundK13",
+      "Conjectures.FranklTreeRoot",
+      "Conjectures.FranklTreeConfigurationMessages",
+      "Conjectures.FranklTreeCone",
+      "Conjectures.FranklTreeBoundK11",
+      "Conjectures.FranklTreeUnfoldingIso",
+      "Conjectures.FranklTreeDataK03",
+      "Conjectures.FranklBoundaryFibers",
+      "Conjectures.FranklTreeCertificate",
+      "Conjectures.FranklLargeBound",
+      "Conjectures.FranklTreeDataK06",
+      "Conjectures.FranklHighGirthGraphCore",
+      "Conjectures.FranklHighGirthTheorem",
+      "Conjectures.FranklLargeCoverage",
+      "Conjectures.FranklTreeBoundK05",
+      "Conjectures.FranklLargeProbability",
+      "Conjectures.FranklLargeLopsided",
+      "Conjectures.FranklTreeBoundK12",
+      "Conjectures.FranklTreeDataK11",
+      "Conjectures.FranklLargeQuery",
+      "Conjectures.FranklIncidence",
+      "Conjectures.FranklFamily",
+      "Conjectures.FranklBoundaryBall",
+      "Conjectures.FranklTreeBranchMessages",
+      "Conjectures.FranklTreeGluing",
+      "Conjectures.FranklTreeUnfolding",
+      "Conjectures.FranklTreeBoundK07",
+      "Conjectures.FranklTreeSmallDegrees",
+      "Conjectures.FranklLopsidedCoordinates",
+      "Conjectures.FranklTreeBoundK04",
+      "Conjectures.FranklTreeBoundK10"
+    ],
+    "seconds": 112.022,
+    "system_seconds": 74.06478,
+    "timed_out": false,
+    "user_seconds": 235.793515
+  },
+  "kernel_threads": 4,
+  "lean_path": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean",
+  "project_modules": [
+    "Conjectures.FranklArithmetic",
+    "Conjectures.FranklTreeBall",
+    "Conjectures.FranklIncidence",
+    "Conjectures.FranklFamily",
+    "Conjectures.FranklLopsided",
+    "Conjectures.FranklLargeIncidence",
+    "Conjectures.FranklLopsidedHarris",
+    "Conjectures.FranklTreeCone",
+    "Conjectures.FranklTreeCounts",
+    "Conjectures.FranklBoundaryFibers",
+    "Conjectures.FranklFamilyIndependent",
+    "Conjectures.FranklLargeBound",
+    "Conjectures.FranklLargeSelection",
+    "Conjectures.FranklLopsidedCoordinates",
+    "Conjectures.FranklTreeRoot",
+    "Conjectures.FranklTreeSpan",
+    "Conjectures.FranklTreeGluing",
+    "Conjectures.FranklBoundaryAveraging",
+    "Conjectures.FranklBoundaryBall",
+    "Conjectures.FranklFamilyCanonical",
+    "Conjectures.FranklLargeNeighbors",
+    "Conjectures.FranklLargeQuery",
+    "Conjectures.FranklTreeCertificate",
+    "Conjectures.FranklTreeConfigurations",
+    "Conjectures.FranklTreeUnfolding",
+    "Conjectures.FranklIncidenceFinite",
+    "Conjectures.FranklLargeCoverage",
+    "Conjectures.FranklLargeLopsided",
+    "Conjectures.FranklTreeDataK03",
+    "Conjectures.FranklTreeDataK04",
+    "Conjectures.FranklTreeDataK05",
+    "Conjectures.FranklTreeDataK06",
+    "Conjectures.FranklTreeDataK07",
+    "Conjectures.FranklTreeDataK08",
+    "Conjectures.FranklTreeDataK09",
+    "Conjectures.FranklTreeDataK10",
+    "Conjectures.FranklTreeDataK11",
+    "Conjectures.FranklTreeDataK12",
+    "Conjectures.FranklTreeDataK13",
+    "Conjectures.FranklTreeDataK14",
+    "Conjectures.FranklBoundaryConfigurations",
+    "Conjectures.FranklTreeConfigurationIso",
+    "Conjectures.FranklTreeConfigurationMessages",
+    "Conjectures.FranklTreeUnfoldingIso",
+    "Conjectures.FranklLargeProbability",
+    "Conjectures.FranklTreeBoundK03",
+    "Conjectures.FranklTreeBoundK04",
+    "Conjectures.FranklTreeBoundK05",
+    "Conjectures.FranklTreeBoundK06",
+    "Conjectures.FranklTreeBoundK07",
+    "Conjectures.FranklTreeBoundK08",
+    "Conjectures.FranklTreeBoundK09",
+    "Conjectures.FranklTreeBoundK10",
+    "Conjectures.FranklTreeBoundK11",
+    "Conjectures.FranklTreeBoundK12",
+    "Conjectures.FranklTreeBoundK13",
+    "Conjectures.FranklTreeBoundK14",
+    "Conjectures.FranklBoundaryConfigurationHelpers",
+    "Conjectures.FranklTreeBranchMessages",
+    "Conjectures.FranklLargeTheorem",
+    "Conjectures.FranklTreeSmallDegrees",
+    "Conjectures.FranklTreeOccupation",
+    "Conjectures.FranklHighGirthGraphCore",
+    "Conjectures.FranklHighGirthTheorem"
+  ],
+  "required_endpoints": [
+    "FranklTreeCone.iterateMessageSets_step",
+    "FranklTreeConfigurations.outsideSet_branchSet",
+    "FranklTreeConfigurations.rootFreeSet_branchSet",
+    "FranklTreeConfigurations.attached_mem_childMessageSet",
+    "FranklTreeUnfolding.freeInterior_root",
+    "FranklTreeUnfolding.freeInterior_child",
+    "FranklTreeUnfolding.point_children_card",
+    "FranklTreeUnfolding.generator_children_card",
+    "FranklTreeUnfolding.branch_message_mem_iterate",
+    "FranklTreeCone.childrenMessage_three_zero",
+    "FranklTreeCone.childrenMessage_three_one",
+    "FranklTreeCone.list_of_length_three",
+    "FranklTreeConfigurations.configuration_ratio_of_three",
+    "FranklTreeConfigurations.configuration_bound_of_childMessageSet",
+    "FranklTreeUnfolding.unfolding_root_message_mem",
+    "FranklTreeUnfolding.unfolding_occupation_bound",
+    "FranklHighGirth.fixed_boundary_occupation_bound",
+    "FranklHighGirth.maximal_independent_point_bound",
+    "FranklHighGirth.incidence_biregular",
+    "FranklHighGirth.distinct_union_absence_bound",
+    "FranklIncidence.point_neighbors_card",
+    "FranklIncidence.generator_neighbors_card",
+    "FranklIncidence.finite_ground_of_three_regular",
+    "FranklIncidence.mem_family_iff_generated",
+    "FranklIncidence.family_card_eq_generated",
+    "FranklIncidence.absent_family_card_eq_generated",
+    "FranklIncidence.common_point_unique_of_no_short_cycle",
+    "FranklIncidence.linear_of_no_short_cycle",
+    "FranklTreeCone.small_degree_tree_bound",
+    "Frankl.Large.large_generator_frequency",
+    "FranklHighGirth.small_generator_frequency",
+    "FranklHighGirth.high_girth_generator_frequency",
+    "FranklHighGirth.high_girth_generator_frequency_of_girth",
+    "FranklHighGirth.high_girth_generator_frequency_of_egirth",
+    "FranklHighGirth.high_girth_nonempty_union_frequency"
+  ],
+  "required_private_endpoints": [],
+  "reviewed_inventory": {
+    "required_endpoints": [
+      "FranklTreeCone.iterateMessageSets_step",
+      "FranklTreeConfigurations.outsideSet_branchSet",
+      "FranklTreeConfigurations.rootFreeSet_branchSet",
+      "FranklTreeConfigurations.attached_mem_childMessageSet",
+      "FranklTreeUnfolding.freeInterior_root",
+      "FranklTreeUnfolding.freeInterior_child",
+      "FranklTreeUnfolding.point_children_card",
+      "FranklTreeUnfolding.generator_children_card",
+      "FranklTreeUnfolding.branch_message_mem_iterate",
+      "FranklTreeCone.childrenMessage_three_zero",
+      "FranklTreeCone.childrenMessage_three_one",
+      "FranklTreeCone.list_of_length_three",
+      "FranklTreeConfigurations.configuration_ratio_of_three",
+      "FranklTreeConfigurations.configuration_bound_of_childMessageSet",
+      "FranklTreeUnfolding.unfolding_root_message_mem",
+      "FranklTreeUnfolding.unfolding_occupation_bound",
+      "FranklHighGirth.fixed_boundary_occupation_bound",
+      "FranklHighGirth.maximal_independent_point_bound",
+      "FranklHighGirth.incidence_biregular",
+      "FranklHighGirth.distinct_union_absence_bound",
+      "FranklIncidence.point_neighbors_card",
+      "FranklIncidence.generator_neighbors_card",
+      "FranklIncidence.finite_ground_of_three_regular",
+      "FranklIncidence.mem_family_iff_generated",
+      "FranklIncidence.family_card_eq_generated",
+      "FranklIncidence.absent_family_card_eq_generated",
+      "FranklIncidence.common_point_unique_of_no_short_cycle",
+      "FranklIncidence.linear_of_no_short_cycle",
+      "FranklTreeCone.small_degree_tree_bound",
+      "Frankl.Large.large_generator_frequency",
+      "FranklHighGirth.small_generator_frequency",
+      "FranklHighGirth.high_girth_generator_frequency",
+      "FranklHighGirth.high_girth_generator_frequency_of_girth",
+      "FranklHighGirth.high_girth_generator_frequency_of_egirth",
+      "FranklHighGirth.high_girth_nonempty_union_frequency"
+    ],
+    "root": "Conjectures.FranklHighGirthTheorem",
+    "schema": "frankl-high-girth-theorem-v1",
+    "scope": "The full all-point frequency bound 518208/1000000 for distinct unions of every finite three-regular k-uniform generator family with k >= 3 and incidence girth at least sixteen. Includes the empty union, also proves the bound after removing it, derives finite ground and linearity from the stated assumptions, and discharges the numerical cone inequality using all twelve K03-K14 certificates; k >= 15 uses the accepted 657/1000 theorem. No recurrence, counting, or numerical-certificate premise remains.",
+    "sources": {
+      "lean/Conjectures/FranklArithmetic.lean": "de2c6e31669d021b59cfa70ea46a405661964b24e4da714604e985fe072887a9",
+      "lean/Conjectures/FranklBoundaryAveraging.lean": "392d25d4a3d65575cd8ee4718f16c40ed56777b9af90f700df78175d8668b9c2",
+      "lean/Conjectures/FranklBoundaryBall.lean": "50fd64714167be51906c28e19e9a7ddab11c24a09a8530cdc28f81a809324f13",
+      "lean/Conjectures/FranklBoundaryConfigurationHelpers.lean": "7b562800737effd85a43301a45572997ff84a0682c03cac09e303a81cf75b11f",
+      "lean/Conjectures/FranklBoundaryConfigurations.lean": "c657ac52d681e7948e0d8c30beed437228f7b5832ad05253125f7f4963936904",
+      "lean/Conjectures/FranklBoundaryFibers.lean": "ef4a67aac3a056e02078df3f3afb310bf3604af0324b5254d13f6490be0d3f2e",
+      "lean/Conjectures/FranklFamily.lean": "f2bd1a70c64b773feb39dcbc1c11e7dd8a40d2ec6fa48332f4820c3ca1197b6b",
+      "lean/Conjectures/FranklFamilyCanonical.lean": "267c49f64d6d102308637f5cc705c4c99f514b0967124a904a621b3b47af0590",
+      "lean/Conjectures/FranklFamilyIndependent.lean": "ea731d3f741c8f3a3bf76bb080dadbef6032199be9d46906d45edbb163085baf",
+      "lean/Conjectures/FranklHighGirthGraphCore.lean": "a0d35efe7e9ae9ee4ffc8cbec8e78eec7fbcdf6e9ae133b76437a354a10463de",
+      "lean/Conjectures/FranklHighGirthTheorem.lean": "c13c42bb0564b8fad6003289b891361592dd994d1fb8212fd8e066baba346749",
+      "lean/Conjectures/FranklIncidence.lean": "c8a2f89dc3c33ac40fb149e771b6d8eb7ced6338e9470e54a2dab95a4f904abb",
+      "lean/Conjectures/FranklIncidenceFinite.lean": "ebf9b6c9f0e74e26ebad1814dba1622ae5b894e306ffdb298251e8ea8b995898",
+      "lean/Conjectures/FranklLargeBound.lean": "c512e859878ecc0e83cc6c9288377122ef07261f046cebc9d41a057cf55499e6",
+      "lean/Conjectures/FranklLargeCoverage.lean": "6f25d856de746e946b61e3f93f933a1d25441ca9c227c2b63cfb3967428a2f41",
+      "lean/Conjectures/FranklLargeIncidence.lean": "987db005799a34a5b7d4056a6fdf9472391850d46bc196fa8e87e77d5971f211",
+      "lean/Conjectures/FranklLargeLopsided.lean": "173abd5b52fa7fcd7bd881dce257a571cca7c8b5d9d7d867ce9e621622b8cdca",
+      "lean/Conjectures/FranklLargeNeighbors.lean": "0c3a1528c8f955bf38696daf6e156eb7a2e684dab5a664ce8a211117db4c3e98",
+      "lean/Conjectures/FranklLargeProbability.lean": "17264433e883eeec783b551d516890c440c9269dfe8c354fcd455bed60a05c82",
+      "lean/Conjectures/FranklLargeQuery.lean": "0dd326e1155132b15b507dd216e2dbd272ee2b1bef7a0f392e1bc75b33748ee6",
+      "lean/Conjectures/FranklLargeSelection.lean": "bfc578d551fbf45d5516a2254704350279361cf2b2a5a4038b1410adfd492b9f",
+      "lean/Conjectures/FranklLargeTheorem.lean": "762428f12f6a7a9508180490d8b0c3724c604715bde551e0d45cff252fdd80f4",
+      "lean/Conjectures/FranklLopsided.lean": "ed6fdd352cfa9564c8417c785781115e45f7b94eb7aef1b22596519f7f72ecee",
+      "lean/Conjectures/FranklLopsidedCoordinates.lean": "7cea044948f4e5fe6b1d3fcadf3c188a0660b5acaede15cc615eac6d1a4dd5eb",
+      "lean/Conjectures/FranklLopsidedHarris.lean": "88327f5b98c74d9fd3f0aba501ce356d001189a43cb6407a34b66f08670f8e97",
+      "lean/Conjectures/FranklTreeBall.lean": "cfac6f60d33b0abe15d2d4f7570e891109ccc87e124ee6af9f269e2194c27c26",
+      "lean/Conjectures/FranklTreeBoundK03.lean": "cd8a5a0974c115e0d5e6401e738228bcfe638207a4ef93d7e888c1ddfc91210b",
+      "lean/Conjectures/FranklTreeBoundK04.lean": "99bc58dfa04d544b69a006334c1e5fb031d5d8945dbbca3c5b62bfee947979c5",
+      "lean/Conjectures/FranklTreeBoundK05.lean": "d344397273534b8beca614d4917f52dfac015554e6e861fb51cc6473d3d725ba",
+      "lean/Conjectures/FranklTreeBoundK06.lean": "ac68701aa17d73a47a18dfdadafc0da655d738a6adef6d2835c2f19bed310eeb",
+      "lean/Conjectures/FranklTreeBoundK07.lean": "51d11c874e6e964380016fea96d3a92a088cf1fb852eaa9109393cdaf9dbcb7a",
+      "lean/Conjectures/FranklTreeBoundK08.lean": "40b3ab7b612876d93be1c14879288bb93164aaf006ccced565d92972a8b69ddc",
+      "lean/Conjectures/FranklTreeBoundK09.lean": "8b59345cc00f77d57c5e34ccfaae7aaf3712799a6058eb6c9d1ed885bf232971",
+      "lean/Conjectures/FranklTreeBoundK10.lean": "be481c3a62b9f32d007e068869158d95543e49b219c6574d9f70c6f4c1cc51bf",
+      "lean/Conjectures/FranklTreeBoundK11.lean": "dc5c0191b86e6f1fc11341ec572b90863342b83b78ea61fd7d54fe2473dd8f90",
+      "lean/Conjectures/FranklTreeBoundK12.lean": "77278481110ce7a21fceb0d8b6245d089818e7cb314c1c25922b75b0464c239e",
+      "lean/Conjectures/FranklTreeBoundK13.lean": "c0580c2bf6fcdd674d6109e96b65efa35aa43c890d11728adca3dd9d91d05717",
+      "lean/Conjectures/FranklTreeBoundK14.lean": "61c08dcd521a1bfad520694c5f5731dcf71f9b169f40bebf28098ed2ada9d519",
+      "lean/Conjectures/FranklTreeBranchMessages.lean": "2ffeb6e699d6a4b19f26b6bf39fa92b90365abba10a1b6f7fb8af417418d9a6a",
+      "lean/Conjectures/FranklTreeCertificate.lean": "61827af3138ee0e63c862f7d046bb6ff8b0b5266ce03440612a5404ac4d5c85e",
+      "lean/Conjectures/FranklTreeCone.lean": "4d225150430823a6bdaf37b0010b729bdb679e0f8f75c088072e70268c74661c",
+      "lean/Conjectures/FranklTreeConfigurationIso.lean": "c633df7502b34b303df7fe575d14918e05d914166b773076f5f63571b38365c7",
+      "lean/Conjectures/FranklTreeConfigurationMessages.lean": "3a757bbc08ebc4d95f6f2cf0b6bd99506cf4c14a87073916e87c3def77fe85e8",
+      "lean/Conjectures/FranklTreeConfigurations.lean": "0f8f17c94364ad902a8f1ffa2c306c86ebb6b12365a4faf2ed06f6ac1907ed9a",
+      "lean/Conjectures/FranklTreeCounts.lean": "00c8ed66de517d5b5a26d8d02adf2c63fba6807d38c4a16fcf75fe7adaa984f1",
+      "lean/Conjectures/FranklTreeDataK03.lean": "000453f770e4094c26021d0da096a419d35db29bc77866c078d42748edd813c0",
+      "lean/Conjectures/FranklTreeDataK04.lean": "ef37f74802bea2b2c58cd1001824836196319433f9576304b46bf79cfd612fac",
+      "lean/Conjectures/FranklTreeDataK05.lean": "e83ba767aa842dc5f404590fc748162d6c617dc4729d0b68248d633a920bc2cd",
+      "lean/Conjectures/FranklTreeDataK06.lean": "86eaab8f98ca60a18a07e701135e3d6fed105c6a518f70b4937ec5456ab641d5",
+      "lean/Conjectures/FranklTreeDataK07.lean": "306909d8d0e593df624a3437e22c7a48e089cc17d63bc9dd05d0e74305467da9",
+      "lean/Conjectures/FranklTreeDataK08.lean": "f298531c7baa8a1b30f414229066dc3a577baac9f391e36dcbbd4f6b25bf1601",
+      "lean/Conjectures/FranklTreeDataK09.lean": "7a7ba11ac24fe0f4874bff1e2c84ba3d5365a8644e3342f7d33fda5b9815a2fe",
+      "lean/Conjectures/FranklTreeDataK10.lean": "4f9900a61824bdbcf5c474b91f43c19156cf16bc6d2e55d8b8e4eff2bfb6e868",
+      "lean/Conjectures/FranklTreeDataK11.lean": "92d57b0667ff4ce4f543b1567c73283739dc823c830e9a1b3f632abc7ec91b97",
+      "lean/Conjectures/FranklTreeDataK12.lean": "0d2d0e56a6b806a5750988894659be7bd250ae898f48ae96b6445ddbe310b029",
+      "lean/Conjectures/FranklTreeDataK13.lean": "b8319da96ab496249f9d7f2a73b51bc9bda3744cd86ace1fd15ca4b5cd23d543",
+      "lean/Conjectures/FranklTreeDataK14.lean": "d7b722c5e8ed69bfd75e13d408bb9c0efc20bc11895467a96c97b076336ab743",
+      "lean/Conjectures/FranklTreeGluing.lean": "88411a56310270beac42ca484bf48046c838c4d798eaa3f4b2c505b6de6e11bd",
+      "lean/Conjectures/FranklTreeOccupation.lean": "2cb64833d99774d782e8b8969e1a6fc254cfaeb79a405525dc46525e2d0dda7f",
+      "lean/Conjectures/FranklTreeRoot.lean": "ec2a0b85e7263e6d3e4d2259564431aa4f865aa7c7c72d941853e64602886b66",
+      "lean/Conjectures/FranklTreeSmallDegrees.lean": "88d2e8e776cc176d37e8097206d393aca35579a5a9be8742a9fc75d2091f53aa",
+      "lean/Conjectures/FranklTreeSpan.lean": "717b008a49d242daded26743e4f318e8fed01fde2c6d75acbbe0b6ff0834c5ab",
+      "lean/Conjectures/FranklTreeUnfolding.lean": "5279b1b6998cefc4b742e0e340238bafd3d2183d60ab62624bcb8f24e41e9934",
+      "lean/Conjectures/FranklTreeUnfoldingIso.lean": "c4ffa7fd76aba3fdeb615a0e8b271248d7f09d7576f8b442d00630c4a2a1a3f0"
+    }
+  },
+  "scope": "The full all-point frequency bound 518208/1000000 for distinct unions of every finite three-regular k-uniform generator family with k >= 3 and incidence girth at least sixteen. Includes the empty union, also proves the bound after removing it, derives finite ground and linearity from the stated assumptions, and discharges the numerical cone inequality using all twelve K03-K14 certificates; k >= 15 uses the accepted 657/1000 theorem. No recurrence, counting, or numerical-certificate premise remains.",
+  "source_checks": {
+    "Conjectures.FranklArithmetic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklArithmetic.olean",
+        "Conjectures/FranklArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklArithmetic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1085516,
+      "seconds": 3.274,
+      "system_seconds": 0.542607,
+      "timed_out": false,
+      "user_seconds": 2.311068
+    },
+    "Conjectures.FranklBoundaryAveraging": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklBoundaryAveraging.olean",
+        "Conjectures/FranklBoundaryAveraging.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklBoundaryAveraging.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1028056,
+      "seconds": 2.014,
+      "system_seconds": 0.5086499999999999,
+      "timed_out": false,
+      "user_seconds": 1.345429
+    },
+    "Conjectures.FranklBoundaryBall": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklBoundaryBall.olean",
+        "Conjectures/FranklBoundaryBall.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklBoundaryBall.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1063860,
+      "seconds": 1.76,
+      "system_seconds": 0.54903,
+      "timed_out": false,
+      "user_seconds": 1.052225
+    },
+    "Conjectures.FranklBoundaryConfigurationHelpers": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklBoundaryConfigurationHelpers.olean",
+        "Conjectures/FranklBoundaryConfigurationHelpers.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklBoundaryConfigurationHelpers.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1009644,
+      "seconds": 1.761,
+      "system_seconds": 0.557646,
+      "timed_out": false,
+      "user_seconds": 0.998784
+    },
+    "Conjectures.FranklBoundaryConfigurations": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklBoundaryConfigurations.olean",
+        "Conjectures/FranklBoundaryConfigurations.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklBoundaryConfigurations.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1010024,
+      "seconds": 2.515,
+      "system_seconds": 0.6301519999999999,
+      "timed_out": false,
+      "user_seconds": 1.631218
+    },
+    "Conjectures.FranklBoundaryFibers": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklBoundaryFibers.olean",
+        "Conjectures/FranklBoundaryFibers.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklBoundaryFibers.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1008856,
+      "seconds": 2.014,
+      "system_seconds": 0.533848,
+      "timed_out": false,
+      "user_seconds": 1.203658
+    },
+    "Conjectures.FranklFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklFamily.olean",
+        "Conjectures/FranklFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 947108,
+      "seconds": 1.762,
+      "system_seconds": 0.467615,
+      "timed_out": false,
+      "user_seconds": 1.176997
+    },
+    "Conjectures.FranklFamilyCanonical": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklFamilyCanonical.olean",
+        "Conjectures/FranklFamilyCanonical.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklFamilyCanonical.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 922516,
+      "seconds": 2.008,
+      "system_seconds": 0.46274899999999997,
+      "timed_out": false,
+      "user_seconds": 1.359265
+    },
+    "Conjectures.FranklFamilyIndependent": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklFamilyIndependent.olean",
+        "Conjectures/FranklFamilyIndependent.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklFamilyIndependent.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 944468,
+      "seconds": 1.764,
+      "system_seconds": 0.46019899999999997,
+      "timed_out": false,
+      "user_seconds": 1.13954
+    },
+    "Conjectures.FranklHighGirthGraphCore": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklHighGirthGraphCore.olean",
+        "Conjectures/FranklHighGirthGraphCore.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklHighGirthGraphCore.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1221052,
+      "seconds": 2.765,
+      "system_seconds": 0.685273,
+      "timed_out": false,
+      "user_seconds": 1.760427
+    },
+    "Conjectures.FranklHighGirthTheorem": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklHighGirthTheorem.olean",
+        "Conjectures/FranklHighGirthTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklHighGirthTheorem.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1248932,
+      "seconds": 1.755,
+      "system_seconds": 0.5198579999999999,
+      "timed_out": false,
+      "user_seconds": 1.098701
+    },
+    "Conjectures.FranklIncidence": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklIncidence.olean",
+        "Conjectures/FranklIncidence.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklIncidence.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1034528,
+      "seconds": 2.517,
+      "system_seconds": 0.517145,
+      "timed_out": false,
+      "user_seconds": 1.5364900000000001
+    },
+    "Conjectures.FranklIncidenceFinite": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklIncidenceFinite.olean",
+        "Conjectures/FranklIncidenceFinite.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklIncidenceFinite.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1078368,
+      "seconds": 2.26,
+      "system_seconds": 0.577871,
+      "timed_out": false,
+      "user_seconds": 1.456157
+    },
+    "Conjectures.FranklLargeBound": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeBound.olean",
+        "Conjectures/FranklLargeBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeBound.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1057120,
+      "seconds": 3.266,
+      "system_seconds": 0.49937499999999996,
+      "timed_out": false,
+      "user_seconds": 2.462989
+    },
+    "Conjectures.FranklLargeCoverage": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeCoverage.olean",
+        "Conjectures/FranklLargeCoverage.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeCoverage.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 934032,
+      "seconds": 2.262,
+      "system_seconds": 0.46881799999999996,
+      "timed_out": false,
+      "user_seconds": 1.631888
+    },
+    "Conjectures.FranklLargeIncidence": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeIncidence.olean",
+        "Conjectures/FranklLargeIncidence.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeIncidence.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 909588,
+      "seconds": 2.26,
+      "system_seconds": 0.519861,
+      "timed_out": false,
+      "user_seconds": 1.465609
+    },
+    "Conjectures.FranklLargeLopsided": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeLopsided.olean",
+        "Conjectures/FranklLargeLopsided.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeLopsided.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 986512,
+      "seconds": 2.763,
+      "system_seconds": 0.5481849999999999,
+      "timed_out": false,
+      "user_seconds": 1.94411
+    },
+    "Conjectures.FranklLargeNeighbors": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeNeighbors.olean",
+        "Conjectures/FranklLargeNeighbors.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeNeighbors.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 921252,
+      "seconds": 1.512,
+      "system_seconds": 0.487647,
+      "timed_out": false,
+      "user_seconds": 0.8503839999999999
+    },
+    "Conjectures.FranklLargeProbability": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeProbability.olean",
+        "Conjectures/FranklLargeProbability.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeProbability.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1045928,
+      "seconds": 2.259,
+      "system_seconds": 0.599139,
+      "timed_out": false,
+      "user_seconds": 1.421584
+    },
+    "Conjectures.FranklLargeQuery": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeQuery.olean",
+        "Conjectures/FranklLargeQuery.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeQuery.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 945468,
+      "seconds": 1.761,
+      "system_seconds": 0.49591399999999997,
+      "timed_out": false,
+      "user_seconds": 1.057421
+    },
+    "Conjectures.FranklLargeSelection": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeSelection.olean",
+        "Conjectures/FranklLargeSelection.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeSelection.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 922504,
+      "seconds": 2.011,
+      "system_seconds": 0.552129,
+      "timed_out": false,
+      "user_seconds": 1.368842
+    },
+    "Conjectures.FranklLargeTheorem": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLargeTheorem.olean",
+        "Conjectures/FranklLargeTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLargeTheorem.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1039948,
+      "seconds": 2.011,
+      "system_seconds": 0.601332,
+      "timed_out": false,
+      "user_seconds": 1.290714
+    },
+    "Conjectures.FranklLopsided": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLopsided.olean",
+        "Conjectures/FranklLopsided.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLopsided.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 926316,
+      "seconds": 2.262,
+      "system_seconds": 0.46751099999999995,
+      "timed_out": false,
+      "user_seconds": 1.611316
+    },
+    "Conjectures.FranklLopsidedCoordinates": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLopsidedCoordinates.olean",
+        "Conjectures/FranklLopsidedCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLopsidedCoordinates.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 949696,
+      "seconds": 2.516,
+      "system_seconds": 0.455953,
+      "timed_out": false,
+      "user_seconds": 1.915401
+    },
+    "Conjectures.FranklLopsidedHarris": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklLopsidedHarris.olean",
+        "Conjectures/FranklLopsidedHarris.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklLopsidedHarris.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 945896,
+      "seconds": 2.01,
+      "system_seconds": 0.5197689999999999,
+      "timed_out": false,
+      "user_seconds": 1.257442
+    },
+    "Conjectures.FranklTreeBall": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBall.olean",
+        "Conjectures/FranklTreeBall.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBall.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1075116,
+      "seconds": 2.267,
+      "system_seconds": 0.523215,
+      "timed_out": false,
+      "user_seconds": 1.303047
+    },
+    "Conjectures.FranklTreeBoundK03": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK03.olean",
+        "Conjectures/FranklTreeBoundK03.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK03.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1244016,
+      "seconds": 6.533,
+      "system_seconds": 0.70909,
+      "timed_out": false,
+      "user_seconds": 5.457
+    },
+    "Conjectures.FranklTreeBoundK04": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK04.olean",
+        "Conjectures/FranklTreeBoundK04.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK04.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1287344,
+      "seconds": 9.298,
+      "system_seconds": 0.647243,
+      "timed_out": false,
+      "user_seconds": 8.145473
+    },
+    "Conjectures.FranklTreeBoundK05": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK05.olean",
+        "Conjectures/FranklTreeBoundK05.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK05.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1357740,
+      "seconds": 12.315,
+      "system_seconds": 0.732435,
+      "timed_out": false,
+      "user_seconds": 11.216353
+    },
+    "Conjectures.FranklTreeBoundK06": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK06.olean",
+        "Conjectures/FranklTreeBoundK06.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK06.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1480172,
+      "seconds": 18.601,
+      "system_seconds": 0.83566,
+      "timed_out": false,
+      "user_seconds": 17.032086
+    },
+    "Conjectures.FranklTreeBoundK07": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK07.olean",
+        "Conjectures/FranklTreeBoundK07.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK07.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1574384,
+      "seconds": 21.871,
+      "system_seconds": 0.915137,
+      "timed_out": false,
+      "user_seconds": 20.383793
+    },
+    "Conjectures.FranklTreeBoundK08": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK08.olean",
+        "Conjectures/FranklTreeBoundK08.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK08.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1874644,
+      "seconds": 30.67,
+      "system_seconds": 0.858993,
+      "timed_out": false,
+      "user_seconds": 28.381779
+    },
+    "Conjectures.FranklTreeBoundK09": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK09.olean",
+        "Conjectures/FranklTreeBoundK09.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK09.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2866972,
+      "seconds": 64.617,
+      "system_seconds": 1.7433779999999999,
+      "timed_out": false,
+      "user_seconds": 59.968427
+    },
+    "Conjectures.FranklTreeBoundK10": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK10.olean",
+        "Conjectures/FranklTreeBoundK10.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK10.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3572460,
+      "seconds": 84.456,
+      "system_seconds": 1.553807,
+      "timed_out": false,
+      "user_seconds": 80.142923
+    },
+    "Conjectures.FranklTreeBoundK11": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK11.olean",
+        "Conjectures/FranklTreeBoundK11.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK11.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2036416,
+      "seconds": 36.968,
+      "system_seconds": 1.438404,
+      "timed_out": false,
+      "user_seconds": 34.32814
+    },
+    "Conjectures.FranklTreeBoundK12": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK12.olean",
+        "Conjectures/FranklTreeBoundK12.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK12.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1900820,
+      "seconds": 32.186,
+      "system_seconds": 1.196474,
+      "timed_out": false,
+      "user_seconds": 29.574016
+    },
+    "Conjectures.FranklTreeBoundK13": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK13.olean",
+        "Conjectures/FranklTreeBoundK13.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK13.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2004016,
+      "seconds": 33.671,
+      "system_seconds": 1.047356,
+      "timed_out": false,
+      "user_seconds": 31.901947
+    },
+    "Conjectures.FranklTreeBoundK14": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBoundK14.olean",
+        "Conjectures/FranklTreeBoundK14.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBoundK14.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2220360,
+      "seconds": 34.159,
+      "system_seconds": 1.00473,
+      "timed_out": false,
+      "user_seconds": 32.312166
+    },
+    "Conjectures.FranklTreeBranchMessages": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeBranchMessages.olean",
+        "Conjectures/FranklTreeBranchMessages.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeBranchMessages.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1230104,
+      "seconds": 2.507,
+      "system_seconds": 0.658666,
+      "timed_out": false,
+      "user_seconds": 1.669155
+    },
+    "Conjectures.FranklTreeCertificate": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeCertificate.olean",
+        "Conjectures/FranklTreeCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeCertificate.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1187464,
+      "seconds": 3.021,
+      "system_seconds": 0.617957,
+      "timed_out": false,
+      "user_seconds": 2.273486
+    },
+    "Conjectures.FranklTreeCone": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeCone.olean",
+        "Conjectures/FranklTreeCone.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeCone.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1169448,
+      "seconds": 2.766,
+      "system_seconds": 0.63773,
+      "timed_out": false,
+      "user_seconds": 1.801415
+    },
+    "Conjectures.FranklTreeConfigurationIso": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeConfigurationIso.olean",
+        "Conjectures/FranklTreeConfigurationIso.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeConfigurationIso.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1005308,
+      "seconds": 2.262,
+      "system_seconds": 0.505249,
+      "timed_out": false,
+      "user_seconds": 1.380412
+    },
+    "Conjectures.FranklTreeConfigurationMessages": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeConfigurationMessages.olean",
+        "Conjectures/FranklTreeConfigurationMessages.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeConfigurationMessages.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1207516,
+      "seconds": 18.346,
+      "system_seconds": 0.743034,
+      "timed_out": false,
+      "user_seconds": 16.973094
+    },
+    "Conjectures.FranklTreeConfigurations": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeConfigurations.olean",
+        "Conjectures/FranklTreeConfigurations.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeConfigurations.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1016280,
+      "seconds": 2.517,
+      "system_seconds": 0.540275,
+      "timed_out": false,
+      "user_seconds": 1.782611
+    },
+    "Conjectures.FranklTreeCounts": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeCounts.olean",
+        "Conjectures/FranklTreeCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeCounts.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1001932,
+      "seconds": 6.788,
+      "system_seconds": 0.5176999999999999,
+      "timed_out": false,
+      "user_seconds": 6.072035
+    },
+    "Conjectures.FranklTreeDataK03": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK03.olean",
+        "Conjectures/FranklTreeDataK03.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK03.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1207316,
+      "seconds": 3.267,
+      "system_seconds": 0.5910059999999999,
+      "timed_out": false,
+      "user_seconds": 2.358057
+    },
+    "Conjectures.FranklTreeDataK04": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK04.olean",
+        "Conjectures/FranklTreeDataK04.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK04.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1213048,
+      "seconds": 4.775,
+      "system_seconds": 0.670098,
+      "timed_out": false,
+      "user_seconds": 3.7356759999999998
+    },
+    "Conjectures.FranklTreeDataK05": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK05.olean",
+        "Conjectures/FranklTreeDataK05.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK05.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1321376,
+      "seconds": 9.043,
+      "system_seconds": 0.7181649999999999,
+      "timed_out": false,
+      "user_seconds": 8.09033
+    },
+    "Conjectures.FranklTreeDataK06": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK06.olean",
+        "Conjectures/FranklTreeDataK06.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK06.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1399036,
+      "seconds": 13.077,
+      "system_seconds": 0.717669,
+      "timed_out": false,
+      "user_seconds": 11.858493
+    },
+    "Conjectures.FranklTreeDataK07": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK07.olean",
+        "Conjectures/FranklTreeDataK07.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK07.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1470588,
+      "seconds": 15.834,
+      "system_seconds": 0.684658,
+      "timed_out": false,
+      "user_seconds": 14.665275
+    },
+    "Conjectures.FranklTreeDataK08": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK08.olean",
+        "Conjectures/FranklTreeDataK08.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK08.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1630464,
+      "seconds": 25.917,
+      "system_seconds": 0.876852,
+      "timed_out": false,
+      "user_seconds": 24.130906
+    },
+    "Conjectures.FranklTreeDataK09": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK09.olean",
+        "Conjectures/FranklTreeDataK09.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK09.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2076280,
+      "seconds": 59.87,
+      "system_seconds": 1.470822,
+      "timed_out": false,
+      "user_seconds": 56.012997
+    },
+    "Conjectures.FranklTreeDataK10": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK10.olean",
+        "Conjectures/FranklTreeDataK10.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK10.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2455472,
+      "seconds": 91.034,
+      "system_seconds": 1.411661,
+      "timed_out": false,
+      "user_seconds": 86.857074
+    },
+    "Conjectures.FranklTreeDataK11": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK11.olean",
+        "Conjectures/FranklTreeDataK11.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK11.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1746732,
+      "seconds": 32.936,
+      "system_seconds": 1.145989,
+      "timed_out": false,
+      "user_seconds": 29.832738
+    },
+    "Conjectures.FranklTreeDataK12": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK12.olean",
+        "Conjectures/FranklTreeDataK12.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK12.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1635752,
+      "seconds": 25.628,
+      "system_seconds": 0.931178,
+      "timed_out": false,
+      "user_seconds": 23.277474
+    },
+    "Conjectures.FranklTreeDataK13": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK13.olean",
+        "Conjectures/FranklTreeDataK13.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK13.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1740392,
+      "seconds": 32.709,
+      "system_seconds": 0.904374,
+      "timed_out": false,
+      "user_seconds": 30.40135
+    },
+    "Conjectures.FranklTreeDataK14": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeDataK14.olean",
+        "Conjectures/FranklTreeDataK14.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeDataK14.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1851224,
+      "seconds": 41.249,
+      "system_seconds": 0.977128,
+      "timed_out": false,
+      "user_seconds": 38.720452
+    },
+    "Conjectures.FranklTreeGluing": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeGluing.olean",
+        "Conjectures/FranklTreeGluing.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeGluing.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1016176,
+      "seconds": 2.009,
+      "system_seconds": 0.522286,
+      "timed_out": false,
+      "user_seconds": 1.26627
+    },
+    "Conjectures.FranklTreeOccupation": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeOccupation.olean",
+        "Conjectures/FranklTreeOccupation.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeOccupation.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1217472,
+      "seconds": 2.259,
+      "system_seconds": 0.6348659999999999,
+      "timed_out": false,
+      "user_seconds": 1.47006
+    },
+    "Conjectures.FranklTreeRoot": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeRoot.olean",
+        "Conjectures/FranklTreeRoot.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeRoot.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1167704,
+      "seconds": 2.511,
+      "system_seconds": 0.6628569999999999,
+      "timed_out": false,
+      "user_seconds": 1.667641
+    },
+    "Conjectures.FranklTreeSmallDegrees": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeSmallDegrees.olean",
+        "Conjectures/FranklTreeSmallDegrees.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeSmallDegrees.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1168200,
+      "seconds": 1.504,
+      "system_seconds": 0.492004,
+      "timed_out": false,
+      "user_seconds": 0.857007
+    },
+    "Conjectures.FranklTreeSpan": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeSpan.olean",
+        "Conjectures/FranklTreeSpan.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeSpan.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1179912,
+      "seconds": 2.764,
+      "system_seconds": 0.654103,
+      "timed_out": false,
+      "user_seconds": 1.900488
+    },
+    "Conjectures.FranklTreeUnfolding": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeUnfolding.olean",
+        "Conjectures/FranklTreeUnfolding.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeUnfolding.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1117476,
+      "seconds": 2.512,
+      "system_seconds": 0.5214019999999999,
+      "timed_out": false,
+      "user_seconds": 1.822417
+    },
+    "Conjectures.FranklTreeUnfoldingIso": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/lib/lean/Conjectures/FranklTreeUnfoldingIso.olean",
+        "Conjectures/FranklTreeUnfoldingIso.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/frankl-high-girth-theorem/logs/Conjectures.FranklTreeUnfoldingIso.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1083312,
+      "seconds": 2.514,
+      "system_seconds": 0.570395,
+      "timed_out": false,
+      "user_seconds": 1.6390099999999999
+    }
+  },
+  "source_sha256": {
+    "Conjectures.FranklArithmetic": "de2c6e31669d021b59cfa70ea46a405661964b24e4da714604e985fe072887a9",
+    "Conjectures.FranklBoundaryAveraging": "392d25d4a3d65575cd8ee4718f16c40ed56777b9af90f700df78175d8668b9c2",
+    "Conjectures.FranklBoundaryBall": "50fd64714167be51906c28e19e9a7ddab11c24a09a8530cdc28f81a809324f13",
+    "Conjectures.FranklBoundaryConfigurationHelpers": "7b562800737effd85a43301a45572997ff84a0682c03cac09e303a81cf75b11f",
+    "Conjectures.FranklBoundaryConfigurations": "c657ac52d681e7948e0d8c30beed437228f7b5832ad05253125f7f4963936904",
+    "Conjectures.FranklBoundaryFibers": "ef4a67aac3a056e02078df3f3afb310bf3604af0324b5254d13f6490be0d3f2e",
+    "Conjectures.FranklFamily": "f2bd1a70c64b773feb39dcbc1c11e7dd8a40d2ec6fa48332f4820c3ca1197b6b",
+    "Conjectures.FranklFamilyCanonical": "267c49f64d6d102308637f5cc705c4c99f514b0967124a904a621b3b47af0590",
+    "Conjectures.FranklFamilyIndependent": "ea731d3f741c8f3a3bf76bb080dadbef6032199be9d46906d45edbb163085baf",
+    "Conjectures.FranklHighGirthGraphCore": "a0d35efe7e9ae9ee4ffc8cbec8e78eec7fbcdf6e9ae133b76437a354a10463de",
+    "Conjectures.FranklHighGirthTheorem": "c13c42bb0564b8fad6003289b891361592dd994d1fb8212fd8e066baba346749",
+    "Conjectures.FranklIncidence": "c8a2f89dc3c33ac40fb149e771b6d8eb7ced6338e9470e54a2dab95a4f904abb",
+    "Conjectures.FranklIncidenceFinite": "ebf9b6c9f0e74e26ebad1814dba1622ae5b894e306ffdb298251e8ea8b995898",
+    "Conjectures.FranklLargeBound": "c512e859878ecc0e83cc6c9288377122ef07261f046cebc9d41a057cf55499e6",
+    "Conjectures.FranklLargeCoverage": "6f25d856de746e946b61e3f93f933a1d25441ca9c227c2b63cfb3967428a2f41",
+    "Conjectures.FranklLargeIncidence": "987db005799a34a5b7d4056a6fdf9472391850d46bc196fa8e87e77d5971f211",
+    "Conjectures.FranklLargeLopsided": "173abd5b52fa7fcd7bd881dce257a571cca7c8b5d9d7d867ce9e621622b8cdca",
+    "Conjectures.FranklLargeNeighbors": "0c3a1528c8f955bf38696daf6e156eb7a2e684dab5a664ce8a211117db4c3e98",
+    "Conjectures.FranklLargeProbability": "17264433e883eeec783b551d516890c440c9269dfe8c354fcd455bed60a05c82",
+    "Conjectures.FranklLargeQuery": "0dd326e1155132b15b507dd216e2dbd272ee2b1bef7a0f392e1bc75b33748ee6",
+    "Conjectures.FranklLargeSelection": "bfc578d551fbf45d5516a2254704350279361cf2b2a5a4038b1410adfd492b9f",
+    "Conjectures.FranklLargeTheorem": "762428f12f6a7a9508180490d8b0c3724c604715bde551e0d45cff252fdd80f4",
+    "Conjectures.FranklLopsided": "ed6fdd352cfa9564c8417c785781115e45f7b94eb7aef1b22596519f7f72ecee",
+    "Conjectures.FranklLopsidedCoordinates": "7cea044948f4e5fe6b1d3fcadf3c188a0660b5acaede15cc615eac6d1a4dd5eb",
+    "Conjectures.FranklLopsidedHarris": "88327f5b98c74d9fd3f0aba501ce356d001189a43cb6407a34b66f08670f8e97",
+    "Conjectures.FranklTreeBall": "cfac6f60d33b0abe15d2d4f7570e891109ccc87e124ee6af9f269e2194c27c26",
+    "Conjectures.FranklTreeBoundK03": "cd8a5a0974c115e0d5e6401e738228bcfe638207a4ef93d7e888c1ddfc91210b",
+    "Conjectures.FranklTreeBoundK04": "99bc58dfa04d544b69a006334c1e5fb031d5d8945dbbca3c5b62bfee947979c5",
+    "Conjectures.FranklTreeBoundK05": "d344397273534b8beca614d4917f52dfac015554e6e861fb51cc6473d3d725ba",
+    "Conjectures.FranklTreeBoundK06": "ac68701aa17d73a47a18dfdadafc0da655d738a6adef6d2835c2f19bed310eeb",
+    "Conjectures.FranklTreeBoundK07": "51d11c874e6e964380016fea96d3a92a088cf1fb852eaa9109393cdaf9dbcb7a",
+    "Conjectures.FranklTreeBoundK08": "40b3ab7b612876d93be1c14879288bb93164aaf006ccced565d92972a8b69ddc",
+    "Conjectures.FranklTreeBoundK09": "8b59345cc00f77d57c5e34ccfaae7aaf3712799a6058eb6c9d1ed885bf232971",
+    "Conjectures.FranklTreeBoundK10": "be481c3a62b9f32d007e068869158d95543e49b219c6574d9f70c6f4c1cc51bf",
+    "Conjectures.FranklTreeBoundK11": "dc5c0191b86e6f1fc11341ec572b90863342b83b78ea61fd7d54fe2473dd8f90",
+    "Conjectures.FranklTreeBoundK12": "77278481110ce7a21fceb0d8b6245d089818e7cb314c1c25922b75b0464c239e",
+    "Conjectures.FranklTreeBoundK13": "c0580c2bf6fcdd674d6109e96b65efa35aa43c890d11728adca3dd9d91d05717",
+    "Conjectures.FranklTreeBoundK14": "61c08dcd521a1bfad520694c5f5731dcf71f9b169f40bebf28098ed2ada9d519",
+    "Conjectures.FranklTreeBranchMessages": "2ffeb6e699d6a4b19f26b6bf39fa92b90365abba10a1b6f7fb8af417418d9a6a",
+    "Conjectures.FranklTreeCertificate": "61827af3138ee0e63c862f7d046bb6ff8b0b5266ce03440612a5404ac4d5c85e",
+    "Conjectures.FranklTreeCone": "4d225150430823a6bdaf37b0010b729bdb679e0f8f75c088072e70268c74661c",
+    "Conjectures.FranklTreeConfigurationIso": "c633df7502b34b303df7fe575d14918e05d914166b773076f5f63571b38365c7",
+    "Conjectures.FranklTreeConfigurationMessages": "3a757bbc08ebc4d95f6f2cf0b6bd99506cf4c14a87073916e87c3def77fe85e8",
+    "Conjectures.FranklTreeConfigurations": "0f8f17c94364ad902a8f1ffa2c306c86ebb6b12365a4faf2ed06f6ac1907ed9a",
+    "Conjectures.FranklTreeCounts": "00c8ed66de517d5b5a26d8d02adf2c63fba6807d38c4a16fcf75fe7adaa984f1",
+    "Conjectures.FranklTreeDataK03": "000453f770e4094c26021d0da096a419d35db29bc77866c078d42748edd813c0",
+    "Conjectures.FranklTreeDataK04": "ef37f74802bea2b2c58cd1001824836196319433f9576304b46bf79cfd612fac",
+    "Conjectures.FranklTreeDataK05": "e83ba767aa842dc5f404590fc748162d6c617dc4729d0b68248d633a920bc2cd",
+    "Conjectures.FranklTreeDataK06": "86eaab8f98ca60a18a07e701135e3d6fed105c6a518f70b4937ec5456ab641d5",
+    "Conjectures.FranklTreeDataK07": "306909d8d0e593df624a3437e22c7a48e089cc17d63bc9dd05d0e74305467da9",
+    "Conjectures.FranklTreeDataK08": "f298531c7baa8a1b30f414229066dc3a577baac9f391e36dcbbd4f6b25bf1601",
+    "Conjectures.FranklTreeDataK09": "7a7ba11ac24fe0f4874bff1e2c84ba3d5365a8644e3342f7d33fda5b9815a2fe",
+    "Conjectures.FranklTreeDataK10": "4f9900a61824bdbcf5c474b91f43c19156cf16bc6d2e55d8b8e4eff2bfb6e868",
+    "Conjectures.FranklTreeDataK11": "92d57b0667ff4ce4f543b1567c73283739dc823c830e9a1b3f632abc7ec91b97",
+    "Conjectures.FranklTreeDataK12": "0d2d0e56a6b806a5750988894659be7bd250ae898f48ae96b6445ddbe310b029",
+    "Conjectures.FranklTreeDataK13": "b8319da96ab496249f9d7f2a73b51bc9bda3744cd86ace1fd15ca4b5cd23d543",
+    "Conjectures.FranklTreeDataK14": "d7b722c5e8ed69bfd75e13d408bb9c0efc20bc11895467a96c97b076336ab743",
+    "Conjectures.FranklTreeGluing": "88411a56310270beac42ca484bf48046c838c4d798eaa3f4b2c505b6de6e11bd",
+    "Conjectures.FranklTreeOccupation": "2cb64833d99774d782e8b8969e1a6fc254cfaeb79a405525dc46525e2d0dda7f",
+    "Conjectures.FranklTreeRoot": "ec2a0b85e7263e6d3e4d2259564431aa4f865aa7c7c72d941853e64602886b66",
+    "Conjectures.FranklTreeSmallDegrees": "88d2e8e776cc176d37e8097206d393aca35579a5a9be8742a9fc75d2091f53aa",
+    "Conjectures.FranklTreeSpan": "717b008a49d242daded26743e4f318e8fed01fde2c6d75acbbe0b6ff0834c5ab",
+    "Conjectures.FranklTreeUnfolding": "5279b1b6998cefc4b742e0e340238bafd3d2183d60ab62624bcb8f24e41e9934",
+    "Conjectures.FranklTreeUnfoldingIso": "c4ffa7fd76aba3fdeb615a0e8b271248d7f09d7576f8b442d00630c4a2a1a3f0"
+  },
+  "source_workers": 4,
+  "status": "passed",
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "accepted_registry_changed": false,
+  "passed_groups": {
+    "high-girth-theorem": {
+      "archive_sha256": "7c29a1441e4c9fca6125d86c37bc5624292ea5d746a40a9b98d8fe6d94c38010",
+      "artifact_id": 15049243432,
+      "artifact_name": "frankl-high-girth-theorem",
+      "private_chunks": 0,
+      "project_modules": 64,
+      "receipt": "docs/verification/frankl-components-45619918135/high-girth-theorem.json",
+      "receipt_sha256": "761dcbe407a241ec8717a942db2ee10da9dccaa6ff1ef21d4db83edf2de011a9",
+      "required_endpoints": 35
+    }
+  },
+  "profile_inventory": "docs/frankl-high-girth-theorem-sources.json",
+  "profile_inventory_sha256": "41cbc3a03a141e1bf0adab77a3af335174b86f43b4d401a47f45cfdfa59b6be5",
+  "schema": "frankl-exact-component-receipts-v1",
+  "scope": "The full all-point frequency bound 518208/1000000 for distinct unions of every finite three-regular k-uniform generator family with k >= 3 and incidence girth at least sixteen. Includes the empty union, also proves the bound after removing it, derives finite ground and linearity from the stated assumptions, and discharges the numerical cone inequality using all twelve K03-K14 certificates; k >= 15 uses the accepted 657/1000 theorem. No recurrence, counting, or numerical-certificate premise remains.",
+  "source_commit": "bd360bc2de558306ad18a2ef2ca37a2c6a318e62",
+  "source_run_id": 45619918135,
+  "workflow": "Lean Frankl full high-girth generator theorem"
+}
