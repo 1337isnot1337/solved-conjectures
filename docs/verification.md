@@ -2,7 +2,7 @@
 
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture
 
-Partial. Lean verifies the actual normalized set, its logarithmic and unbounded remainder, and the source-layer enumeration’s nonregularity in every power-of-two base. The other bases and the identification with the partition function remain outside the Lean scope. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+Partial. Lean proves the power-of-two obstruction for the explicit source layers and formalizes the literal binary-partition exception statement. The all-base claim reduces to the stated exception classification and a Cobham–Durand implication. Neither external theorem is formalized here. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 

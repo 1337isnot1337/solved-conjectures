@@ -2,7 +2,7 @@
 
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture
 
-Partial. Lean verifies the actual normalized set, its logarithmic and unbounded remainder, and the source-layer enumeration’s nonregularity in every power-of-two base. The other bases and the identification with the partition function remain outside the Lean scope. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+Partial. Lean proves the power-of-two obstruction for the explicit source layers and formalizes the literal binary-partition exception statement. The all-base claim reduces to the stated exception classification and a Cobham–Durand implication. Neither external theorem is formalized here. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
@@ -233,7 +233,7 @@ proofs are documented separately in the catalogue and result package.
 | Athanasiadis–Chapoton’s q-zeta reciprocity conjecture | Not formalized | Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation. |
 | Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture | Not formalized | Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization. |
 | Gawron–Miska–Ulas’s Thue–Morse valuation conjecture | Complete | Lean proves the literal disproof of Conjecture 5.2 using exponent 17 and verifies the aligned family for every k ≥ 11. All three modules passed strict compilation, the all-owned axiom audit and stock-kernel replay. [Lean](../lean/Conjectures/ThueMorseValuation.lean) · [Local receipt](../docs/verification/lean-thue-morse-valuation-20261124/receipt.json). |
-| Sobolewski–Ulas’s binary-partition exception regularity conjecture | Partial | The exact source-layer enumeration is not regular at any positive power of two. Other bases and the partition-function identification remain written. [Lean scope](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md). |
+| Sobolewski–Ulas’s binary-partition exception regularity conjecture | Partial | The source-layer enumeration is not regular in power-of-two bases. The literal original statement in all bases is reduced to the binary-partition classification and a Cobham–Durand implication. [Lean scope](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md). |
 | Gawron–Ulas’s partition-sign nonperiodicity conjecture | Not formalized | Oblique root-of-unity growth proves each sign occurs infinitely often on every index progression, for all coprime odd permitted-part steps at least three. |
 | Steinerberger’s greedy-energy Fourier conjecture | Complete | An actual infinite van der Corput sequence satisfies the greedy rule and violates every eventual logarithmic bound for the stated weighted absolute Fourier sum. Four modules, complete owned/private axiom audit and stock-kernel replay; sharp-constant and all-tie-breaking supplements remain unformalized. |
 | Ćurgus–Mascioni’s Fréchet root-matching extremizer question | Partial: nonuniqueness counterexample | Every quadratic has a matching of cost at most one and a continuum of pairwise inequivalent quadratics attain it. General attainment and the cubic comparison are not formalized. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md). |
