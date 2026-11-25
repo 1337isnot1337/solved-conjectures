@@ -74,14 +74,21 @@ and the source credits in the [audit](AUDIT.md).
   generator and tail, including a two-cycle whose opposite moves
   share endpoints.
 
-The solvable-radical reduction, the realization of independent label choices along the two closed
-walks, the almost-simple generation
+- [Independent closed words](../../lean/Conjectures/ShumyatskyClosedMoveRoutes.lean).
+  A route to a selected move and back through the tree gives an actual
+  word in the two permutations and their inverses, fixing its starting
+  factor. Lean evaluates the word's actual automorphism label and
+  realizes any two prescribed outer-compatible labels independently.
+  Subsequent changes to the reserved return edges preserve both labels
+  if the tree and the two selected moves keep their prescribed labels.
+
+The solvable-radical reduction, the global completion of the reserved second labels for those choices, the almost-simple generation
 inputs, and the simultaneous lift across the socle remain outside
 this partial check.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. All ten scopes passed.
+checker. All eleven scopes passed.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
 [Cycle-label receipt](verification/cycle-labels/receipt.json) ·
 [Factor-action receipt](verification/factor-action/receipt.json) ·
@@ -91,4 +98,5 @@ checker. All ten scopes passed.
 [Factor-stabilizer receipt](verification/stabilizer/receipt.json) ·
 [Permutation-cycle receipt](verification/permutation-cycles/receipt.json) ·
 [Spanning-tree receipt](verification/cycle-forest/receipt.json) ·
-[Directed-moves receipt](verification/directed-moves/receipt.json).
+[Directed-moves receipt](verification/directed-moves/receipt.json) ·
+[Independent-walk receipt](verification/independent-walks/receipt.json).
