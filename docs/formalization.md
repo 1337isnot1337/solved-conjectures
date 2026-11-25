@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Wagner's Laguerre-operator conjecture
+
+Complete for Conjecture 4.3. The Lean proof uses actual real polynomial approximants, compact-uniform convergence, the exact first Laguerre operator and eventual coefficient positivity. It does not rely on a conjectural equivalence with Jensen polynomials. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json).
+
 ## Ma–Tang’s random subset-sum threshold conjecture
 
 The full original real-log limsup uses the actual least one-half-coverage threshold for unordered random subsets of all finite abelian groups. Both finite threshold bounds, convergence along the mixed orders and the third-log correction are proved in Lean. The separate bounded-remainder refinements are outside scope. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json).

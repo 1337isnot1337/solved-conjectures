@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Wagner's Laguerre-operator conjecture
+
+Completed Lean verification of the original Conjecture 4.3 counterexample. Actual polynomial approximants establish membership of the input, and the first Laguerre transform fails the eventual sign requirement. The old failed draft has been superseded by an exact source build, axiom audit and stock replay. [Scope](results/wagner-laguerre-operator/FORMALIZATION.md).
+
 ## Benfield–Lippard’s stable Waring-gap symmetry conjecture
 
 On 24 November 2026 the [complete original conjecture disproof](results/benfield-lippard-waring-gap-symmetry/LEAN.md) established both counterexamples at exponents 64 and 128, including the actual stable exception cardinality and reflected-gap witnesses. The seven-module strict build, all-owned audit (335 declarations, 248 theorems), and independent replay passed. Discovery attribution and the priority caveat remain unchanged. [PR #570](https://github.com/1337isnot1337/solved-conjectures/pull/570).
