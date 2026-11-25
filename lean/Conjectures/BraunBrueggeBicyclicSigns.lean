@@ -88,4 +88,28 @@ theorem card_signsWithTotal_zero_of_odd [Fintype I] (h : Odd (Fintype.card I)) :
   obtain ⟨k, hk⟩ := h
   omega
 
+/-- The number of sign words of length `n` with integer total `r`. -/
+def binomialSignCount (n : ℕ) (r : ℤ) : ℕ :=
+  if 0 ≤ r + (n : ℤ) ∧ (r + (n : ℤ)) % 2 = 0 then
+    n.choose ((r + (n : ℤ)) / 2).toNat
+  else 0
+
+theorem signsWithTotal_parity [Fintype I] {r : ℤ} (b : SignsWithTotal I r) :
+    r % 2 = (Fintype.card I : ℤ) % 2 := by
+  have h := b.property
+  rw [sum_signs] at h
+  omega
+
+theorem card_signsWithTotal [Fintype I] (r : ℤ) :
+    Nat.card (SignsWithTotal I r) = binomialSignCount (Fintype.card I) r := by
+  unfold binomialSignCount
+  split_ifs with h
+  · apply card_signsWithTotal_of_eq
+    omega
+  · apply Nat.card_eq_zero.mpr
+    refine Or.inl ⟨fun b => ?_⟩
+    have e := b.property
+    rw [sum_signs] at e
+    exact h (by omega)
+
 end BraunBruegge

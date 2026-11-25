@@ -1,0 +1,14 @@
+Replaying all 12 local project modules imported by Conjectures.BraunBrueggeBicyclicThetaCount, including that root (prefix Conjectures)
+replaying Conjectures.BraunBrueggeBicyclicThetaSteps
+replaying Conjectures.BraunBrueggeMinimumCompact
+replaying Conjectures.BraunBrueggeMinimumMatchingFaces
+replaying Conjectures.BraunBrueggeBicyclicThetaGeometry
+replaying Conjectures.BraunBrueggeBicyclicPathWords
+replaying Conjectures.BraunBrueggeBicyclicThetaGraph
+replaying Conjectures.BraunBrueggeMinimumPolar
+replaying Conjectures.BraunBrueggeMinimumFacets
+replaying Conjectures.BraunBrueggeBicyclicThetaCount
+replaying Conjectures.BraunBrueggeMinimumGeometry
+replaying Conjectures.BraunBrueggeBicyclicThetaFibers
+replaying Conjectures.BraunBrueggeBicyclicSigns
+PASS: the entire local import closure of Conjectures.BraunBrueggeBicyclicThetaCount completed the pinned kernel replay

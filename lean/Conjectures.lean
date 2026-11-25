@@ -1,3 +1,9 @@
+import Conjectures.BraunBrueggeBicyclicPathWords
+import Conjectures.BraunBrueggeBicyclicThetaCount
+import Conjectures.BraunBrueggeBicyclicThetaFibers
+import Conjectures.BraunBrueggeBicyclicThetaGeometry
+import Conjectures.BraunBrueggeBicyclicThetaGraph
+import Conjectures.BraunBrueggeBicyclicThetaSteps
 import Conjectures.BraunBrueggeBicyclicCycleGeometry
 import Conjectures.BraunBrueggeBicyclicSigns
 import Conjectures.BraunBrueggeBicyclicCycleSteps
