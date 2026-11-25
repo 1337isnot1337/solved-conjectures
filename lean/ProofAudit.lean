@@ -9,6 +9,19 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.bridgePartitionGraphIso,
+    `BraunBruegge.bridgeDeletion_polar_vertex_card,
+    `BraunBruegge.bridgeDeletion_cardinalities,
+    `BraunBruegge.polarVerticesChangeRoot,
+    `BraunBruegge.embedded_connected_rank_le,
+    `BraunBruegge.extra_edge_isBridge_of_equal_rank,
+    `BraunBruegge.iso_of_equal_rank_of_no_bridges,
+    `BraunBruegge.cycleWalkEmbedding_le,
+    `BraunBruegge.bridgeless_unicyclic_is_cycle,
+    `BraunBruegge.tree_polar_vertex_card,
+    `BraunBruegge.unicyclic_polar_vertex_card,
+    `BraunBruegge.cycleProducts_le_wedgeBenchmark,
+    `BraunBruegge.wedgeBenchmark_bridge_le,
     `BraunBruegge.computedSignProduct_eq,
     `BraunBruegge.computedMixedFacetCount_eq,
     `BraunBruegge.checkMixedAtTotal_sound,
