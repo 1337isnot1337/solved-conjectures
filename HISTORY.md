@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Burstein’s descent-top shape-Wilf conjecture
+
+Published the Lean refutations of original Conjectures 16 and 17 on the same six-row board with suffix 1. The stronger every-suffix construction remains written only. [Lean scope](results/burstein-descent-top-shape-wilf/FORMALIZATION.md).
+
 ## 2026-11-25 — Benfield–Lippard’s stable Waring-gap parity conjecture
 
 Published the exact Lean proof of both original stable-exception parity assertions for every exponent at least two. The stronger two-adic congruences remain written only. [Lean scope](results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).

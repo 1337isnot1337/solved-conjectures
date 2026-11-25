@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Burstein’s descent-top shape-Wilf conjecture
+
+The exact Ferrers-rectangle pattern test and block statistics yield a 15-versus-16 mismatch for each conjecture. This disproves both universal statements with no claim about square boards. [Lean scope](../results/burstein-descent-top-shape-wilf/FORMALIZATION.md).
+
 ## Benfield–Lippard’s stable Waring-gap parity conjecture
 
 The endpoint uses literal lists of exactly the required number of positive powers, proves eventual representability equivalent to shifted-power monoid membership, and obtains both parities without assuming a stabilization threshold. [Lean scope](../results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).
