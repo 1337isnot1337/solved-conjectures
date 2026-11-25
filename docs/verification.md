@@ -2,7 +2,7 @@
 
 ## Nuttall's conjecture
 
-The pinned strict build, all-owned axiom audit and stock replay pass for the one-module closure. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+The pinned strict build, all-owned axiom audit and stock replay pass for the two-module iterated-tail closure. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 

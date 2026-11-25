@@ -2,7 +2,7 @@
 
 ## Nuttall's conjecture
 
-The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its global exponential decay gives integrability of every cumulant weight, and the integral is strictly positive. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its exponential bound also survives every literal tail integration, proving the integrability, continuity, and positivity of every iterated tail. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 
