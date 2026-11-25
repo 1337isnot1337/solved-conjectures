@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Check Novelli–Thibon's diagram counts and first-order formula
+
+Lean proves the optional-edge cancellation, the literal row and leg
+counts, and the full dual-number formula for normalized fillings.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Check Novelli–Thibon's universal finite-alphabet comparison identity
 
 Lean verifies stable standardization, the fundamental word fibers,

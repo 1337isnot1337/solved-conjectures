@@ -3,9 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean proves the finite-alphabet standardization and universal
-comparison identity underlying the intended Conjecture 5.7 proof.
-The source-specific and Schur/hook steps remain.
+Partial. Lean verifies the literal diagram counts and optional-edge
+normalization, and proves the simultaneous first-order formula for the
+normalized finite-alphabet filling expansion. The source LLT
+identification and Schur/hook steps remain.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question

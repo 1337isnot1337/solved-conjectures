@@ -16,8 +16,28 @@ semiring, including rings with signed edge contributions. This is
 the exact comparison identity in §2 of the written proof, not a
 finite numerical test of particular shapes.
 
-The source-specific attacking and optional-edge formulas, the
-Schur/Pieri extraction, and the adjacent hook claim are not yet
-formalized in this checkpoint. It does not settle Conjecture 5.4
-or the general trace assertions. See the
-[scoped pinned replay receipt](verification/finite-alphabet-comparison/receipt.json).
+Lean now checks the [literal diagram](../../lean/Conjectures/NovelliThibonDiagram.lean):
+French reading order, the within-row and adjacent-row attacks, and
+the vertical optional edges. It counts the leg-label fibers by the
+original row lengths and proves the exact cancellation of the
+adjacent-row count against the arm sum. For each fixed selection of
+inversion indicators, Lean verifies the full
+[optional-edge normalization](../../lean/Conjectures/NovelliThibonSourceNormalization.lean)
+in the convention of Definition 5.3, including signed Laurent
+exponents after canceling the powers of (q-1) and (q).
+
+For the normalized finite-alphabet cell-filling expansion, Lean proves
+the constant term and the full simultaneous
+[first-order formula](../../lean/Conjectures/NovelliThibonFillingFirstOrder.lean)
+of equations (9)–(11). It works in actual Mathlib dual numbers over any
+commutative ring, for every diagram and every finite ordered alphabet.
+No leg parameter is omitted: the formal support bound covers every
+vertical edge.
+
+The identification of the source LLT expansion (Lemma 4.2) with the
+normalized filling expansion, the Schur/Pieri extraction, and the
+adjacent hook claim are not verified here. This verifies neither
+Conjecture 5.4 nor the general trace assertions.
+
+- [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
+- [Diagram and first-order replay](verification/diagram-first-order/receipt.json)
