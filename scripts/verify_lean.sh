@@ -6,6 +6,33 @@ cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
   Conjectures.CurgusMascioniQuadratic
   Conjectures.FMPCylindric
+  Conjectures.LassalleBernsteinAtIndex
+  Conjectures.LassalleBernsteinIntervals
+  Conjectures.LassalleBesselConstants
+  Conjectures.LassalleBoxBatch00
+  Conjectures.LassalleBoxBatch01
+  Conjectures.LassalleBoxBatch02
+  Conjectures.LassalleBoxBatch03
+  Conjectures.LassalleBoxBatch04
+  Conjectures.LassalleBoxBatch05
+  Conjectures.LassalleBoxBatch06
+  Conjectures.LassalleBoxBatch07
+  Conjectures.LassalleBoxBatch08
+  Conjectures.LassalleBoxBatch09
+  Conjectures.LassalleBoxBatch10
+  Conjectures.LassalleBoxBatch11
+  Conjectures.LassalleBoxBatch12
+  Conjectures.LassalleBoxCoverage
+  Conjectures.LassalleBoxSoundness
+  Conjectures.LassalleCatalanQuotient
+  Conjectures.LassalleDerivativeIntervals
+  Conjectures.LassalleDeterminant
+  Conjectures.LassalleEventualReduction
+  Conjectures.LassalleIntervalArithmetic
+  Conjectures.LassalleIntervalDivision
+  Conjectures.LassalleIntervalProducts
+  Conjectures.LassalleQuotientSymmetry
+  Conjectures.LassalleStackSorting
   Conjectures.SternHalfPlaneBasic
   Conjectures.SternHalfPlaneShift
   Conjectures.SternHalfPlaneParabola

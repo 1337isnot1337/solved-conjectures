@@ -1,5 +1,12 @@
 # Lean verification status
 
+## Defant–Engen–Miller’s Lassalle refinement conjecture
+
+Partial. Lean checks the exact 205-box rectangle coverage, with
+the eventual quotient-row result conditional on the analytic approximation.
+The original permutation count and the finite base remain outside the check.
+[Lean scope and receipt](../results/defant-engen-miller-lassalle/FORMALIZATION.md).
+
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture
 
 Partial. Lean proves exact binary-partition congruences for all inputs, inclusion of the explicit layers in the original exception set, and the layer nonregularity in power-of-two bases. For actual nonregularity, Legendre’s sufficiency direction remains external, together with the Cobham–Durand implication for other bases. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
@@ -225,7 +232,7 @@ proofs are documented separately in the catalogue and result package.
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
 | González D’León–Wachs’s complete-graph specialization question | Not formalized | Gives an exact Laguerre product and Gamma-moment formula, strict ordinary coefficient log-concavity, and the real-zero count for equal variables. |
 | Almirón–Moyano-Fernández’s Wilf-module questions | Partial: Question 4.8 and Question 4.13(1)–(2), (6) | Lean verifies the gap-question counterexample, the exact all-module threshold for normalized modules, and the characterization at each module’s own generator count. The generator-refined threshold and gap-poset classification remain written only. [Scope and source](../results/almiron-moyano-wilf-module-questions/LEAN.md). |
-| Defant–Engen–Miller’s Lassalle refinement conjecture | Not formalized | Proves strict log-concavity in every nontrivial row of the first-value refinement of the Lassalle sequence. |
+| Defant–Engen–Miller’s Lassalle refinement conjecture | Partial | Exact 205-box coverage and strict eventual quotient-row inequalities conditional on the written analytic estimate; literal uniqueness statement is formalized but the counting bridge remains. [Lean scope](../results/defant-engen-miller-lassalle/FORMALIZATION.md). |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
 | Sagan–Wilson’s plactic coefficient-mode conjecture | Not formalized | Disproves the proposed middle mode and determines the asymptotic position of every mode in both natural coefficient rows. |
 | Juhnke’s arbitrary-step lattice-path log-concavity conjecture | Complete | Log-concavity and unimodality of the literal original path counts for every dimension `d ≥ 2` and every step count. All 18 modules passed strict compilation, the all-owned audit (577 declarations, 502 theorems), and stock-kernel replay. [Scope and receipt](../results/juhnke-lattice-paths/LEAN-AUDIT.md). |
