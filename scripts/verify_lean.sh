@@ -362,6 +362,28 @@ modules=(
   Conjectures.McNamaraSteingrimssonPointedDownset
   Conjectures.McNamaraSteingrimssonPointedDownsetCount
   Conjectures.McNamaraSteingrimssonRankStructure
+  Conjectures.McNamaraSteingrimssonActualRowsExplicit
+  Conjectures.McNamaraSteingrimssonAlphaRow
+  Conjectures.McNamaraSteingrimssonAlphaRowEarly
+  Conjectures.McNamaraSteingrimssonBinomialRow
+  Conjectures.McNamaraSteingrimssonBinomialValues
+  Conjectures.McNamaraSteingrimssonFirstFamilyClass
+  Conjectures.McNamaraSteingrimssonFirstFamilyConverse
+  Conjectures.McNamaraSteingrimssonLaterFamilyBasic
+  Conjectures.McNamaraSteingrimssonLaterFamilyInjective
+  Conjectures.McNamaraSteingrimssonLaterFamilySurjective
+  Conjectures.McNamaraSteingrimssonLiteralInterval
+  Conjectures.McNamaraSteingrimssonPiRow
+  Conjectures.McNamaraSteingrimssonPiRowEarly
+  Conjectures.McNamaraSteingrimssonPrefixProduct
+  Conjectures.McNamaraSteingrimssonRankRows
+  Conjectures.McNamaraSteingrimssonRankUnimodalityFalse
+  Conjectures.McNamaraSteingrimssonRanksExact
+  Conjectures.McNamaraSteingrimssonRepeatedCount
+  Conjectures.McNamaraSteingrimssonReplacedBlocks
+  Conjectures.McNamaraSteingrimssonRowAlgebra
+  Conjectures.McNamaraSteingrimssonWrittenRank
+  Conjectures.McNamaraSteingrimssonWrittenRankEval
   Conjectures.SobolewskiUlasExceptionCount
   Conjectures.SobolewskiUlasExceptionCountingScope
   Conjectures.SobolewskiUlasExceptionDigits

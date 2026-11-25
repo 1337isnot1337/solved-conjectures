@@ -1,0 +1,1256 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T18:05:16.755708+00:00",
+  "finished_at": "2026-11-25T18:15:16.704053+00:00",
+  "root": "Conjectures.McNamaraSteingrimssonRankUnimodalityFalse",
+  "project_modules": [
+    "Conjectures.McNamaraSteingrimssonActualRowsExplicit",
+    "Conjectures.McNamaraSteingrimssonAlphaRow",
+    "Conjectures.McNamaraSteingrimssonAlphaRowEarly",
+    "Conjectures.McNamaraSteingrimssonBinomialRow",
+    "Conjectures.McNamaraSteingrimssonBinomialValues",
+    "Conjectures.McNamaraSteingrimssonBlockAssembly",
+    "Conjectures.McNamaraSteingrimssonBlockCuts",
+    "Conjectures.McNamaraSteingrimssonBlockEmbeddings",
+    "Conjectures.McNamaraSteingrimssonBlockFibers",
+    "Conjectures.McNamaraSteingrimssonBlockNormalize",
+    "Conjectures.McNamaraSteingrimssonBlockOffsets",
+    "Conjectures.McNamaraSteingrimssonBlockUncons",
+    "Conjectures.McNamaraSteingrimssonCanonicalComponents",
+    "Conjectures.McNamaraSteingrimssonCanonicalCuts",
+    "Conjectures.McNamaraSteingrimssonContainment",
+    "Conjectures.McNamaraSteingrimssonCuts",
+    "Conjectures.McNamaraSteingrimssonDirectSum",
+    "Conjectures.McNamaraSteingrimssonDistinct",
+    "Conjectures.McNamaraSteingrimssonFamilyCounts",
+    "Conjectures.McNamaraSteingrimssonFiberProduct",
+    "Conjectures.McNamaraSteingrimssonFirstFamilyClass",
+    "Conjectures.McNamaraSteingrimssonFirstFamilyConverse",
+    "Conjectures.McNamaraSteingrimssonFirstOmission",
+    "Conjectures.McNamaraSteingrimssonIntrinsicOmission",
+    "Conjectures.McNamaraSteingrimssonLaterFamilyBasic",
+    "Conjectures.McNamaraSteingrimssonLaterFamilyInjective",
+    "Conjectures.McNamaraSteingrimssonLaterFamilySurjective",
+    "Conjectures.McNamaraSteingrimssonLaterOffsets",
+    "Conjectures.McNamaraSteingrimssonLaterOmission",
+    "Conjectures.McNamaraSteingrimssonLayerDownsetCount",
+    "Conjectures.McNamaraSteingrimssonLayerEmbedding",
+    "Conjectures.McNamaraSteingrimssonLayerFirstMax",
+    "Conjectures.McNamaraSteingrimssonLayerRestriction",
+    "Conjectures.McNamaraSteingrimssonLiteralInterval",
+    "Conjectures.McNamaraSteingrimssonMiddleBlockCoverage",
+    "Conjectures.McNamaraSteingrimssonMiddleLayers",
+    "Conjectures.McNamaraSteingrimssonNormalize",
+    "Conjectures.McNamaraSteingrimssonOmittedBlock",
+    "Conjectures.McNamaraSteingrimssonPatternSize",
+    "Conjectures.McNamaraSteingrimssonPatternSplit",
+    "Conjectures.McNamaraSteingrimssonPiRow",
+    "Conjectures.McNamaraSteingrimssonPiRowEarly",
+    "Conjectures.McNamaraSteingrimssonPointed",
+    "Conjectures.McNamaraSteingrimssonPointedCount",
+    "Conjectures.McNamaraSteingrimssonPointedDownset",
+    "Conjectures.McNamaraSteingrimssonPointedDownsetCount",
+    "Conjectures.McNamaraSteingrimssonPointedInterval",
+    "Conjectures.McNamaraSteingrimssonPolynomial",
+    "Conjectures.McNamaraSteingrimssonPrefixFamilies",
+    "Conjectures.McNamaraSteingrimssonPrefixProduct",
+    "Conjectures.McNamaraSteingrimssonRankRows",
+    "Conjectures.McNamaraSteingrimssonRankUnimodalityFalse",
+    "Conjectures.McNamaraSteingrimssonRanksExact",
+    "Conjectures.McNamaraSteingrimssonRepeatedActualFactors",
+    "Conjectures.McNamaraSteingrimssonRepeatedCount",
+    "Conjectures.McNamaraSteingrimssonRepeatedPatternShape",
+    "Conjectures.McNamaraSteingrimssonRepeatedRankWidths",
+    "Conjectures.McNamaraSteingrimssonReplacedBlocks",
+    "Conjectures.McNamaraSteingrimssonRowAlgebra",
+    "Conjectures.McNamaraSteingrimssonShortBlockPlacement",
+    "Conjectures.McNamaraSteingrimssonShortFactor",
+    "Conjectures.McNamaraSteingrimssonSplitSound",
+    "Conjectures.McNamaraSteingrimssonSubwords",
+    "Conjectures.McNamaraSteingrimssonSumAssembly",
+    "Conjectures.McNamaraSteingrimssonSumAssoc",
+    "Conjectures.McNamaraSteingrimssonTwoSummandInterval",
+    "Conjectures.McNamaraSteingrimssonUnpoint",
+    "Conjectures.McNamaraSteingrimssonWrittenRank",
+    "Conjectures.McNamaraSteingrimssonWrittenRankEval"
+  ],
+  "required_endpoints": [
+    "McNamaraSteingrimsson.mcnamaraSteingrimsson_interval_rank_unimodality_false",
+    "McNamaraSteingrimsson.writtenInterval_not_rankUnimodal",
+    "McNamaraSteingrimsson.writtenRankCard_44",
+    "McNamaraSteingrimsson.writtenRankCard_45",
+    "McNamaraSteingrimsson.writtenRankCard_46",
+    "McNamaraSteingrimsson.writtenRankCard_eq_intervalRankCard",
+    "McNamaraSteingrimsson.writtenRankCard_exact_arithmetic",
+    "McNamaraSteingrimsson.repeatedEndpoints_comparable",
+    "McNamaraSteingrimsson.written_repeated_endpoint_sizes",
+    "McNamaraSteingrimsson.repeatedInterval_rank_count",
+    "McNamaraSteingrimsson.repeatedInterval_rank_equiv",
+    "McNamaraSteingrimsson.repeated_first_family_iff",
+    "McNamaraSteingrimsson.laterOmissionMap_injective",
+    "McNamaraSteingrimsson.laterOmissionMap_onto_later",
+    "McNamaraSteingrimsson.actual_alpha_downset_row",
+    "McNamaraSteingrimsson.actual_pi_downset_row",
+    "McNamaraSteingrimsson.choose25_from_values"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/McNamaraSteingrimssonActualRowsExplicit.lean": "a05ac4d1773ae253f3ee3db2eae432d3881493c2673b133d6de6406360a1b5f3",
+    "lean/Conjectures/McNamaraSteingrimssonAlphaRow.lean": "d70500509fee25453a37638f2c12f92155be0f0732580e75c43f7dd5d65fb584",
+    "lean/Conjectures/McNamaraSteingrimssonAlphaRowEarly.lean": "0aa1187663f38034c6a4878ec9007c1baa67fe8e807a4389baa7f48c183d2bf5",
+    "lean/Conjectures/McNamaraSteingrimssonBinomialRow.lean": "cdf0170622610f019ddb8f7e1c4a843e355ce8225d58a03cf5cda1297f958b0b",
+    "lean/Conjectures/McNamaraSteingrimssonBinomialValues.lean": "d775184b4cce6f1c23eba7059f521bb3eec947a568600937b1ad6dece425eb64",
+    "lean/Conjectures/McNamaraSteingrimssonBlockAssembly.lean": "e7a958e3299af30f8f1eb8cb23633a3a082a2cd059013378f5bc8d3c209fa7c7",
+    "lean/Conjectures/McNamaraSteingrimssonBlockCuts.lean": "67bffe74b6f17ebe82ae084591f257bb661ec41b2cabbad101f8cae915c54571",
+    "lean/Conjectures/McNamaraSteingrimssonBlockEmbeddings.lean": "db5995429bf7a907c25977812da004e8933dfc86e5ca54217988a38a34bdeb50",
+    "lean/Conjectures/McNamaraSteingrimssonBlockFibers.lean": "aa4065ac6adf1882b3fb5fc33d9d2fc6a6328d6adbe35f4b496763122092d88f",
+    "lean/Conjectures/McNamaraSteingrimssonBlockNormalize.lean": "eefa36025e95884cca38719ffcad332743c384d4309e7be034c3e06641c5a835",
+    "lean/Conjectures/McNamaraSteingrimssonBlockOffsets.lean": "c74209c48907497b70842ad6d97c217310e03a5d4233125234d8bdfd82eebc43",
+    "lean/Conjectures/McNamaraSteingrimssonBlockUncons.lean": "8c3b17b44670d3d53fdc856a3412a865e35093b6d7f7cee8987f6902e7e81a6a",
+    "lean/Conjectures/McNamaraSteingrimssonCanonicalComponents.lean": "02e1bd283f3e99dc4fcaa4b0e9782c5c6bad885bd793774042295ca04d10b87a",
+    "lean/Conjectures/McNamaraSteingrimssonCanonicalCuts.lean": "ecb6e92e36e96d2f06e9b3c4a0619aeead3cb1420d47beee70438fa0cebd06a0",
+    "lean/Conjectures/McNamaraSteingrimssonContainment.lean": "5da0605338ead0e860a81791ebc408c2453b03f87c66730adb3d9da055036442",
+    "lean/Conjectures/McNamaraSteingrimssonCuts.lean": "2803de3faa3cafa782f4b74d27c88a27ad2eb200aceaee76e3624e5f491e5630",
+    "lean/Conjectures/McNamaraSteingrimssonDirectSum.lean": "3d46c9854c989d2e873d252bc913d2a0abd7da5ee300838829acdd01b577ffe6",
+    "lean/Conjectures/McNamaraSteingrimssonDistinct.lean": "4702dab9830ecdb5f6f7259f8bf7146dd6cbe8747bfbf58c1f16c46ac9eca622",
+    "lean/Conjectures/McNamaraSteingrimssonFamilyCounts.lean": "ee695aa2392c02921cfb87b6793a859eb8707853a569705b4b072d683540f2c0",
+    "lean/Conjectures/McNamaraSteingrimssonFiberProduct.lean": "8e8ae9cdac2a719c8221efa5e8048c5933d96d0040b19b5a6a8cb6ed1ef6cc4e",
+    "lean/Conjectures/McNamaraSteingrimssonFirstFamilyClass.lean": "e611cf48f3d5320ca519c379e032862bb6ebbb780fc38e58f7e021c3df7d7c6c",
+    "lean/Conjectures/McNamaraSteingrimssonFirstFamilyConverse.lean": "cea4ebde45380957e0224adc9e17397bc0ae60efbf6d94405b7dbb1a5d973afb",
+    "lean/Conjectures/McNamaraSteingrimssonFirstOmission.lean": "d09a9551d7162814637647556f5b1992dd621153b39854c1cde3f04304382314",
+    "lean/Conjectures/McNamaraSteingrimssonIntrinsicOmission.lean": "cb89d9e9bd67700eb87b398512a5c0180ce3faf1bbdbc3738aed19816f5e54d6",
+    "lean/Conjectures/McNamaraSteingrimssonLaterFamilyBasic.lean": "627d71341ca6fbe13f505f62a53fcbbee81aa93ef82c96a5a27f2746b4a45fe4",
+    "lean/Conjectures/McNamaraSteingrimssonLaterFamilyInjective.lean": "a348edf4283f553af758ab939b415d893cbb3520acdcc1a1964a7b00e20a4a7b",
+    "lean/Conjectures/McNamaraSteingrimssonLaterFamilySurjective.lean": "f0c775c4b9cb4209b8ae2f426fe36d9b8ab7043707161684a2883ef3153728a8",
+    "lean/Conjectures/McNamaraSteingrimssonLaterOffsets.lean": "9db3f14b9c15262c435f34df6a8b0be0c2ed3ad7beb8490e456eba70d0e4923b",
+    "lean/Conjectures/McNamaraSteingrimssonLaterOmission.lean": "0574d462d53f4781784f79c541d37ab4c3cab64dbf526e8f02c699c83c39bacf",
+    "lean/Conjectures/McNamaraSteingrimssonLayerDownsetCount.lean": "31a8036138f3bd4182a3a36d319c5fa81794ce71e2ebe40f1e0d2bd9e47c388b",
+    "lean/Conjectures/McNamaraSteingrimssonLayerEmbedding.lean": "a3d223f66c3a5f6211311147f356a3e544737a81187022a7a5aab43669a781af",
+    "lean/Conjectures/McNamaraSteingrimssonLayerFirstMax.lean": "dbcaf324e292a9fd347188038956ae5eae97a3f796d743a85a5b96bd67351252",
+    "lean/Conjectures/McNamaraSteingrimssonLayerRestriction.lean": "845909c918173c0fea4163dec9d7360ece1bd9ff3400b0102285b232212ba38d",
+    "lean/Conjectures/McNamaraSteingrimssonLiteralInterval.lean": "673cda948dd3ae0eb3a85fd0f81672c8df8adf008ebee1d1f177db42b05f0648",
+    "lean/Conjectures/McNamaraSteingrimssonMiddleBlockCoverage.lean": "94757b3e569b3d9ddb51ec9b69275e22f7d68cacad414e2fb272541cecd042d5",
+    "lean/Conjectures/McNamaraSteingrimssonMiddleLayers.lean": "3f0f278bdc0526ad69265bcf066f6b0601d52633b4ca627297dd22129b58d706",
+    "lean/Conjectures/McNamaraSteingrimssonNormalize.lean": "66645a9e20428695b010ceeb7f4c6345ca0bfbec50b61491f83c20fc52cbf499",
+    "lean/Conjectures/McNamaraSteingrimssonOmittedBlock.lean": "0226d03f5f1ff6dc15313cd9f139d1c169ca68108747ef53e1624bd522c54654",
+    "lean/Conjectures/McNamaraSteingrimssonPatternSize.lean": "de0eb84e92cfbd1e8e74a883d81cce16d2ea3d923282f3e0c56fef72f056c981",
+    "lean/Conjectures/McNamaraSteingrimssonPatternSplit.lean": "f51951c34dcae6b6ea6b45f4c36c0a7844b334623da168076ee31f63402ddb1e",
+    "lean/Conjectures/McNamaraSteingrimssonPiRow.lean": "3f154bab380b26f1f56b6d627dcf928b6ac02676635eb6f138d32f01e0966316",
+    "lean/Conjectures/McNamaraSteingrimssonPiRowEarly.lean": "f455ebe3c2080f5b331ed75b57f92b4405c55756941d65336b92617dc20b61f0",
+    "lean/Conjectures/McNamaraSteingrimssonPointed.lean": "94b3cbe0b933edf0b0cff044ac95f29810afbd205d2beb7affc522f6424f2d16",
+    "lean/Conjectures/McNamaraSteingrimssonPointedCount.lean": "50c0da9f3d0b0efb019d159d793e1797497d83a0d6a04ddc1037cb467e7735ff",
+    "lean/Conjectures/McNamaraSteingrimssonPointedDownset.lean": "52e6c53663d3b67290c54810fc0f6b8d7ff3116a51c1f45dea47a39a82682f03",
+    "lean/Conjectures/McNamaraSteingrimssonPointedDownsetCount.lean": "5a403e01fdb8e73c102931dd8412d94b69a101116d3d11088ef16f4bed8ba514",
+    "lean/Conjectures/McNamaraSteingrimssonPointedInterval.lean": "5f799e62d5364cd1d624357d81a71c6599c7897a36a59642fb3b3cdb13f0ab3e",
+    "lean/Conjectures/McNamaraSteingrimssonPolynomial.lean": "2c421abdf7d50575f5c9b9adad7f263af123d5a422de9da62f970c9f0198c2aa",
+    "lean/Conjectures/McNamaraSteingrimssonPrefixFamilies.lean": "b4bf747f0114a88aba5d38aa7b9541581333a66cb75ed040d616e31ae74bd046",
+    "lean/Conjectures/McNamaraSteingrimssonPrefixProduct.lean": "9364de9964ba7cedee01d7b1150fa06d7880da2eda1a815a04a29557f01dd602",
+    "lean/Conjectures/McNamaraSteingrimssonRankRows.lean": "004128d8210db6efb2ed024c2d4d4534de13613b177fbf59e96c112d1a38e714",
+    "lean/Conjectures/McNamaraSteingrimssonRankUnimodalityFalse.lean": "0e67b3d0d4edf896421183e04981b8af12a6345be791b328e31271f166e75c19",
+    "lean/Conjectures/McNamaraSteingrimssonRanksExact.lean": "6a65cdbf821018700fe0a279562d2b21a05b9093786d01ed9594d681c6816173",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedActualFactors.lean": "67a61854c9c779aa667a2bcaf0eec3b6c2de3db934532f3d6e273e200f9e11c4",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedCount.lean": "c178117347c96d9028bf6505b4dfa82ff74d72ad1c46e9c497bd95683b881d49",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedPatternShape.lean": "09f2410095a3333af8459c575e9e76bd5d3529bb4cf0b1b9127d8cfa0f59ae39",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedRankWidths.lean": "6cfc485c1dc1016839dca6a92d79a1aff2544ef541b06801ecf0a02b12510e78",
+    "lean/Conjectures/McNamaraSteingrimssonReplacedBlocks.lean": "8c234188ea6111e3aefc71923d1bf2353ad3d745f9ad5ca11682b568540b3770",
+    "lean/Conjectures/McNamaraSteingrimssonRowAlgebra.lean": "d6b2e13401f89abd6ab90369083f0164f4c4a32f6c3753034905f8750022be16",
+    "lean/Conjectures/McNamaraSteingrimssonShortBlockPlacement.lean": "d8ff7048753670b88bc66c841b114f3b499687be12c277f2c37da66c4afbec70",
+    "lean/Conjectures/McNamaraSteingrimssonShortFactor.lean": "9cc2baa4b2353d321f8d7dec37cfe0f3ee2db2218cf673841de8e8de6907ac0e",
+    "lean/Conjectures/McNamaraSteingrimssonSplitSound.lean": "5de8fc55526099eaf95c3e1e52033b558dae3516388c657081ace1ab524d4506",
+    "lean/Conjectures/McNamaraSteingrimssonSubwords.lean": "d7132749db741ce2cea50778ee00da7ad3b9db968d02d69e8c8738822500900a",
+    "lean/Conjectures/McNamaraSteingrimssonSumAssembly.lean": "cb25454a11a426b2f4b79b695b504914adcd4a44b21a09c2384506d16dc2016a",
+    "lean/Conjectures/McNamaraSteingrimssonSumAssoc.lean": "78d397959dac2e0b4c66cbcd1d71ed720b5045dcf262bde6ea0c998b0af129e8",
+    "lean/Conjectures/McNamaraSteingrimssonTwoSummandInterval.lean": "371ec005d828153fcf4b7cdafcbe9845cc753cdbaba3fb03645402a652d6bdec",
+    "lean/Conjectures/McNamaraSteingrimssonUnpoint.lean": "e0d4de81fb4fe7eb9a5f11db5ae2ec9d20f5d8fd9a3d2fb000c6b1fb003eb45d",
+    "lean/Conjectures/McNamaraSteingrimssonWrittenRank.lean": "1800851ce103c70f638c418dcec0335eb2581515a82aa61d743068c355482085",
+    "lean/Conjectures/McNamaraSteingrimssonWrittenRankEval.lean": "267478fbad2c4140e9d136ef3e152387816b16ef70919c57530257288ed32c93"
+  },
+  "input_sha256": {
+    "lean/Conjectures/McNamaraSteingrimssonActualRowsExplicit.lean": "a05ac4d1773ae253f3ee3db2eae432d3881493c2673b133d6de6406360a1b5f3",
+    "lean/Conjectures/McNamaraSteingrimssonAlphaRow.lean": "d70500509fee25453a37638f2c12f92155be0f0732580e75c43f7dd5d65fb584",
+    "lean/Conjectures/McNamaraSteingrimssonAlphaRowEarly.lean": "0aa1187663f38034c6a4878ec9007c1baa67fe8e807a4389baa7f48c183d2bf5",
+    "lean/Conjectures/McNamaraSteingrimssonBinomialRow.lean": "cdf0170622610f019ddb8f7e1c4a843e355ce8225d58a03cf5cda1297f958b0b",
+    "lean/Conjectures/McNamaraSteingrimssonBinomialValues.lean": "d775184b4cce6f1c23eba7059f521bb3eec947a568600937b1ad6dece425eb64",
+    "lean/Conjectures/McNamaraSteingrimssonBlockAssembly.lean": "e7a958e3299af30f8f1eb8cb23633a3a082a2cd059013378f5bc8d3c209fa7c7",
+    "lean/Conjectures/McNamaraSteingrimssonBlockCuts.lean": "67bffe74b6f17ebe82ae084591f257bb661ec41b2cabbad101f8cae915c54571",
+    "lean/Conjectures/McNamaraSteingrimssonBlockEmbeddings.lean": "db5995429bf7a907c25977812da004e8933dfc86e5ca54217988a38a34bdeb50",
+    "lean/Conjectures/McNamaraSteingrimssonBlockFibers.lean": "aa4065ac6adf1882b3fb5fc33d9d2fc6a6328d6adbe35f4b496763122092d88f",
+    "lean/Conjectures/McNamaraSteingrimssonBlockNormalize.lean": "eefa36025e95884cca38719ffcad332743c384d4309e7be034c3e06641c5a835",
+    "lean/Conjectures/McNamaraSteingrimssonBlockOffsets.lean": "c74209c48907497b70842ad6d97c217310e03a5d4233125234d8bdfd82eebc43",
+    "lean/Conjectures/McNamaraSteingrimssonBlockUncons.lean": "8c3b17b44670d3d53fdc856a3412a865e35093b6d7f7cee8987f6902e7e81a6a",
+    "lean/Conjectures/McNamaraSteingrimssonCanonicalComponents.lean": "02e1bd283f3e99dc4fcaa4b0e9782c5c6bad885bd793774042295ca04d10b87a",
+    "lean/Conjectures/McNamaraSteingrimssonCanonicalCuts.lean": "ecb6e92e36e96d2f06e9b3c4a0619aeead3cb1420d47beee70438fa0cebd06a0",
+    "lean/Conjectures/McNamaraSteingrimssonContainment.lean": "5da0605338ead0e860a81791ebc408c2453b03f87c66730adb3d9da055036442",
+    "lean/Conjectures/McNamaraSteingrimssonCuts.lean": "2803de3faa3cafa782f4b74d27c88a27ad2eb200aceaee76e3624e5f491e5630",
+    "lean/Conjectures/McNamaraSteingrimssonDirectSum.lean": "3d46c9854c989d2e873d252bc913d2a0abd7da5ee300838829acdd01b577ffe6",
+    "lean/Conjectures/McNamaraSteingrimssonDistinct.lean": "4702dab9830ecdb5f6f7259f8bf7146dd6cbe8747bfbf58c1f16c46ac9eca622",
+    "lean/Conjectures/McNamaraSteingrimssonFamilyCounts.lean": "ee695aa2392c02921cfb87b6793a859eb8707853a569705b4b072d683540f2c0",
+    "lean/Conjectures/McNamaraSteingrimssonFiberProduct.lean": "8e8ae9cdac2a719c8221efa5e8048c5933d96d0040b19b5a6a8cb6ed1ef6cc4e",
+    "lean/Conjectures/McNamaraSteingrimssonFirstFamilyClass.lean": "e611cf48f3d5320ca519c379e032862bb6ebbb780fc38e58f7e021c3df7d7c6c",
+    "lean/Conjectures/McNamaraSteingrimssonFirstFamilyConverse.lean": "cea4ebde45380957e0224adc9e17397bc0ae60efbf6d94405b7dbb1a5d973afb",
+    "lean/Conjectures/McNamaraSteingrimssonFirstOmission.lean": "d09a9551d7162814637647556f5b1992dd621153b39854c1cde3f04304382314",
+    "lean/Conjectures/McNamaraSteingrimssonIntrinsicOmission.lean": "cb89d9e9bd67700eb87b398512a5c0180ce3faf1bbdbc3738aed19816f5e54d6",
+    "lean/Conjectures/McNamaraSteingrimssonLaterFamilyBasic.lean": "627d71341ca6fbe13f505f62a53fcbbee81aa93ef82c96a5a27f2746b4a45fe4",
+    "lean/Conjectures/McNamaraSteingrimssonLaterFamilyInjective.lean": "a348edf4283f553af758ab939b415d893cbb3520acdcc1a1964a7b00e20a4a7b",
+    "lean/Conjectures/McNamaraSteingrimssonLaterFamilySurjective.lean": "f0c775c4b9cb4209b8ae2f426fe36d9b8ab7043707161684a2883ef3153728a8",
+    "lean/Conjectures/McNamaraSteingrimssonLaterOffsets.lean": "9db3f14b9c15262c435f34df6a8b0be0c2ed3ad7beb8490e456eba70d0e4923b",
+    "lean/Conjectures/McNamaraSteingrimssonLaterOmission.lean": "0574d462d53f4781784f79c541d37ab4c3cab64dbf526e8f02c699c83c39bacf",
+    "lean/Conjectures/McNamaraSteingrimssonLayerDownsetCount.lean": "31a8036138f3bd4182a3a36d319c5fa81794ce71e2ebe40f1e0d2bd9e47c388b",
+    "lean/Conjectures/McNamaraSteingrimssonLayerEmbedding.lean": "a3d223f66c3a5f6211311147f356a3e544737a81187022a7a5aab43669a781af",
+    "lean/Conjectures/McNamaraSteingrimssonLayerFirstMax.lean": "dbcaf324e292a9fd347188038956ae5eae97a3f796d743a85a5b96bd67351252",
+    "lean/Conjectures/McNamaraSteingrimssonLayerRestriction.lean": "845909c918173c0fea4163dec9d7360ece1bd9ff3400b0102285b232212ba38d",
+    "lean/Conjectures/McNamaraSteingrimssonLiteralInterval.lean": "673cda948dd3ae0eb3a85fd0f81672c8df8adf008ebee1d1f177db42b05f0648",
+    "lean/Conjectures/McNamaraSteingrimssonMiddleBlockCoverage.lean": "94757b3e569b3d9ddb51ec9b69275e22f7d68cacad414e2fb272541cecd042d5",
+    "lean/Conjectures/McNamaraSteingrimssonMiddleLayers.lean": "3f0f278bdc0526ad69265bcf066f6b0601d52633b4ca627297dd22129b58d706",
+    "lean/Conjectures/McNamaraSteingrimssonNormalize.lean": "66645a9e20428695b010ceeb7f4c6345ca0bfbec50b61491f83c20fc52cbf499",
+    "lean/Conjectures/McNamaraSteingrimssonOmittedBlock.lean": "0226d03f5f1ff6dc15313cd9f139d1c169ca68108747ef53e1624bd522c54654",
+    "lean/Conjectures/McNamaraSteingrimssonPatternSize.lean": "de0eb84e92cfbd1e8e74a883d81cce16d2ea3d923282f3e0c56fef72f056c981",
+    "lean/Conjectures/McNamaraSteingrimssonPatternSplit.lean": "f51951c34dcae6b6ea6b45f4c36c0a7844b334623da168076ee31f63402ddb1e",
+    "lean/Conjectures/McNamaraSteingrimssonPiRow.lean": "3f154bab380b26f1f56b6d627dcf928b6ac02676635eb6f138d32f01e0966316",
+    "lean/Conjectures/McNamaraSteingrimssonPiRowEarly.lean": "f455ebe3c2080f5b331ed75b57f92b4405c55756941d65336b92617dc20b61f0",
+    "lean/Conjectures/McNamaraSteingrimssonPointed.lean": "94b3cbe0b933edf0b0cff044ac95f29810afbd205d2beb7affc522f6424f2d16",
+    "lean/Conjectures/McNamaraSteingrimssonPointedCount.lean": "50c0da9f3d0b0efb019d159d793e1797497d83a0d6a04ddc1037cb467e7735ff",
+    "lean/Conjectures/McNamaraSteingrimssonPointedDownset.lean": "52e6c53663d3b67290c54810fc0f6b8d7ff3116a51c1f45dea47a39a82682f03",
+    "lean/Conjectures/McNamaraSteingrimssonPointedDownsetCount.lean": "5a403e01fdb8e73c102931dd8412d94b69a101116d3d11088ef16f4bed8ba514",
+    "lean/Conjectures/McNamaraSteingrimssonPointedInterval.lean": "5f799e62d5364cd1d624357d81a71c6599c7897a36a59642fb3b3cdb13f0ab3e",
+    "lean/Conjectures/McNamaraSteingrimssonPolynomial.lean": "2c421abdf7d50575f5c9b9adad7f263af123d5a422de9da62f970c9f0198c2aa",
+    "lean/Conjectures/McNamaraSteingrimssonPrefixFamilies.lean": "b4bf747f0114a88aba5d38aa7b9541581333a66cb75ed040d616e31ae74bd046",
+    "lean/Conjectures/McNamaraSteingrimssonPrefixProduct.lean": "9364de9964ba7cedee01d7b1150fa06d7880da2eda1a815a04a29557f01dd602",
+    "lean/Conjectures/McNamaraSteingrimssonRankRows.lean": "004128d8210db6efb2ed024c2d4d4534de13613b177fbf59e96c112d1a38e714",
+    "lean/Conjectures/McNamaraSteingrimssonRankUnimodalityFalse.lean": "0e67b3d0d4edf896421183e04981b8af12a6345be791b328e31271f166e75c19",
+    "lean/Conjectures/McNamaraSteingrimssonRanksExact.lean": "6a65cdbf821018700fe0a279562d2b21a05b9093786d01ed9594d681c6816173",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedActualFactors.lean": "67a61854c9c779aa667a2bcaf0eec3b6c2de3db934532f3d6e273e200f9e11c4",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedCount.lean": "c178117347c96d9028bf6505b4dfa82ff74d72ad1c46e9c497bd95683b881d49",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedPatternShape.lean": "09f2410095a3333af8459c575e9e76bd5d3529bb4cf0b1b9127d8cfa0f59ae39",
+    "lean/Conjectures/McNamaraSteingrimssonRepeatedRankWidths.lean": "6cfc485c1dc1016839dca6a92d79a1aff2544ef541b06801ecf0a02b12510e78",
+    "lean/Conjectures/McNamaraSteingrimssonReplacedBlocks.lean": "8c234188ea6111e3aefc71923d1bf2353ad3d745f9ad5ca11682b568540b3770",
+    "lean/Conjectures/McNamaraSteingrimssonRowAlgebra.lean": "d6b2e13401f89abd6ab90369083f0164f4c4a32f6c3753034905f8750022be16",
+    "lean/Conjectures/McNamaraSteingrimssonShortBlockPlacement.lean": "d8ff7048753670b88bc66c841b114f3b499687be12c277f2c37da66c4afbec70",
+    "lean/Conjectures/McNamaraSteingrimssonShortFactor.lean": "9cc2baa4b2353d321f8d7dec37cfe0f3ee2db2218cf673841de8e8de6907ac0e",
+    "lean/Conjectures/McNamaraSteingrimssonSplitSound.lean": "5de8fc55526099eaf95c3e1e52033b558dae3516388c657081ace1ab524d4506",
+    "lean/Conjectures/McNamaraSteingrimssonSubwords.lean": "d7132749db741ce2cea50778ee00da7ad3b9db968d02d69e8c8738822500900a",
+    "lean/Conjectures/McNamaraSteingrimssonSumAssembly.lean": "cb25454a11a426b2f4b79b695b504914adcd4a44b21a09c2384506d16dc2016a",
+    "lean/Conjectures/McNamaraSteingrimssonSumAssoc.lean": "78d397959dac2e0b4c66cbcd1d71ed720b5045dcf262bde6ea0c998b0af129e8",
+    "lean/Conjectures/McNamaraSteingrimssonTwoSummandInterval.lean": "371ec005d828153fcf4b7cdafcbe9845cc753cdbaba3fb03645402a652d6bdec",
+    "lean/Conjectures/McNamaraSteingrimssonUnpoint.lean": "e0d4de81fb4fe7eb9a5f11db5ae2ec9d20f5d8fd9a3d2fb000c6b1fb003eb45d",
+    "lean/Conjectures/McNamaraSteingrimssonWrittenRank.lean": "1800851ce103c70f638c418dcec0335eb2581515a82aa61d743068c355482085",
+    "lean/Conjectures/McNamaraSteingrimssonWrittenRankEval.lean": "267478fbad2c4140e9d136ef3e152387816b16ef70919c57530257288ed32c93",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonSubwords.olean",
+        "Conjectures/McNamaraSteingrimssonSubwords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonSubwords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLayerEmbedding.olean",
+        "Conjectures/McNamaraSteingrimssonLayerEmbedding.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLayerEmbedding.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPolynomial.olean",
+        "Conjectures/McNamaraSteingrimssonPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonNormalize.olean",
+        "Conjectures/McNamaraSteingrimssonNormalize.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonNormalize.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPointed.olean",
+        "Conjectures/McNamaraSteingrimssonPointed.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPointed.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonDirectSum.olean",
+        "Conjectures/McNamaraSteingrimssonDirectSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonDirectSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonCuts.olean",
+        "Conjectures/McNamaraSteingrimssonCuts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonCuts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPatternSplit.olean",
+        "Conjectures/McNamaraSteingrimssonPatternSplit.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPatternSplit.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonSumAssembly.olean",
+        "Conjectures/McNamaraSteingrimssonSumAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonSumAssembly.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLayerRestriction.olean",
+        "Conjectures/McNamaraSteingrimssonLayerRestriction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLayerRestriction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonUnpoint.olean",
+        "Conjectures/McNamaraSteingrimssonUnpoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonUnpoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonDistinct.olean",
+        "Conjectures/McNamaraSteingrimssonDistinct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonDistinct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonContainment.olean",
+        "Conjectures/McNamaraSteingrimssonContainment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonContainment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonMiddleLayers.olean",
+        "Conjectures/McNamaraSteingrimssonMiddleLayers.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonMiddleLayers.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPointedInterval.olean",
+        "Conjectures/McNamaraSteingrimssonPointedInterval.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPointedInterval.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPatternSize.olean",
+        "Conjectures/McNamaraSteingrimssonPatternSize.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPatternSize.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPointedCount.olean",
+        "Conjectures/McNamaraSteingrimssonPointedCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPointedCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonSplitSound.olean",
+        "Conjectures/McNamaraSteingrimssonSplitSound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonSplitSound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonTwoSummandInterval.olean",
+        "Conjectures/McNamaraSteingrimssonTwoSummandInterval.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonTwoSummandInterval.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPrefixFamilies.olean",
+        "Conjectures/McNamaraSteingrimssonPrefixFamilies.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPrefixFamilies.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonCanonicalCuts.olean",
+        "Conjectures/McNamaraSteingrimssonCanonicalCuts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonCanonicalCuts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockEmbeddings.olean",
+        "Conjectures/McNamaraSteingrimssonBlockEmbeddings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockEmbeddings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockNormalize.olean",
+        "Conjectures/McNamaraSteingrimssonBlockNormalize.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockNormalize.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockOffsets.olean",
+        "Conjectures/McNamaraSteingrimssonBlockOffsets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockOffsets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockCuts.olean",
+        "Conjectures/McNamaraSteingrimssonBlockCuts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockCuts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonCanonicalComponents.olean",
+        "Conjectures/McNamaraSteingrimssonCanonicalComponents.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonCanonicalComponents.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonFirstOmission.olean",
+        "Conjectures/McNamaraSteingrimssonFirstOmission.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonFirstOmission.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLaterOffsets.olean",
+        "Conjectures/McNamaraSteingrimssonLaterOffsets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLaterOffsets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLaterOmission.olean",
+        "Conjectures/McNamaraSteingrimssonLaterOmission.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLaterOmission.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockUncons.olean",
+        "Conjectures/McNamaraSteingrimssonBlockUncons.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockUncons.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonOmittedBlock.olean",
+        "Conjectures/McNamaraSteingrimssonOmittedBlock.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonOmittedBlock.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRepeatedPatternShape.olean",
+        "Conjectures/McNamaraSteingrimssonRepeatedPatternShape.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRepeatedPatternShape.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockAssembly.olean",
+        "Conjectures/McNamaraSteingrimssonBlockAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockAssembly.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonShortBlockPlacement.olean",
+        "Conjectures/McNamaraSteingrimssonShortBlockPlacement.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonShortBlockPlacement.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonMiddleBlockCoverage.olean",
+        "Conjectures/McNamaraSteingrimssonMiddleBlockCoverage.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonMiddleBlockCoverage.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBlockFibers.olean",
+        "Conjectures/McNamaraSteingrimssonBlockFibers.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBlockFibers.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonFiberProduct.olean",
+        "Conjectures/McNamaraSteingrimssonFiberProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonFiberProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRepeatedActualFactors.olean",
+        "Conjectures/McNamaraSteingrimssonRepeatedActualFactors.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRepeatedActualFactors.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRepeatedRankWidths.olean",
+        "Conjectures/McNamaraSteingrimssonRepeatedRankWidths.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRepeatedRankWidths.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonIntrinsicOmission.olean",
+        "Conjectures/McNamaraSteingrimssonIntrinsicOmission.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonIntrinsicOmission.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonReplacedBlocks.olean",
+        "Conjectures/McNamaraSteingrimssonReplacedBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonReplacedBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonSumAssoc.olean",
+        "Conjectures/McNamaraSteingrimssonSumAssoc.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonSumAssoc.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonFamilyCounts.olean",
+        "Conjectures/McNamaraSteingrimssonFamilyCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonFamilyCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPrefixProduct.olean",
+        "Conjectures/McNamaraSteingrimssonPrefixProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPrefixProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonShortFactor.olean",
+        "Conjectures/McNamaraSteingrimssonShortFactor.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonShortFactor.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonFirstFamilyClass.olean",
+        "Conjectures/McNamaraSteingrimssonFirstFamilyClass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonFirstFamilyClass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonFirstFamilyConverse.olean",
+        "Conjectures/McNamaraSteingrimssonFirstFamilyConverse.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonFirstFamilyConverse.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLaterFamilyBasic.olean",
+        "Conjectures/McNamaraSteingrimssonLaterFamilyBasic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLaterFamilyBasic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLaterFamilyInjective.olean",
+        "Conjectures/McNamaraSteingrimssonLaterFamilyInjective.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLaterFamilyInjective.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLaterFamilySurjective.olean",
+        "Conjectures/McNamaraSteingrimssonLaterFamilySurjective.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLaterFamilySurjective.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRepeatedCount.olean",
+        "Conjectures/McNamaraSteingrimssonRepeatedCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRepeatedCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonWrittenRank.olean",
+        "Conjectures/McNamaraSteingrimssonWrittenRank.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonWrittenRank.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBinomialRow.olean",
+        "Conjectures/McNamaraSteingrimssonBinomialRow.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBinomialRow.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonBinomialValues.olean",
+        "Conjectures/McNamaraSteingrimssonBinomialValues.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonBinomialValues.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRowAlgebra.olean",
+        "Conjectures/McNamaraSteingrimssonRowAlgebra.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRowAlgebra.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonAlphaRowEarly.olean",
+        "Conjectures/McNamaraSteingrimssonAlphaRowEarly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonAlphaRowEarly.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonAlphaRow.olean",
+        "Conjectures/McNamaraSteingrimssonAlphaRow.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonAlphaRow.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPiRowEarly.olean",
+        "Conjectures/McNamaraSteingrimssonPiRowEarly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPiRowEarly.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPiRow.olean",
+        "Conjectures/McNamaraSteingrimssonPiRow.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPiRow.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLayerDownsetCount.olean",
+        "Conjectures/McNamaraSteingrimssonLayerDownsetCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLayerDownsetCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLayerFirstMax.olean",
+        "Conjectures/McNamaraSteingrimssonLayerFirstMax.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLayerFirstMax.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPointedDownset.olean",
+        "Conjectures/McNamaraSteingrimssonPointedDownset.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPointedDownset.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonPointedDownsetCount.olean",
+        "Conjectures/McNamaraSteingrimssonPointedDownsetCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonPointedDownsetCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonActualRowsExplicit.olean",
+        "Conjectures/McNamaraSteingrimssonActualRowsExplicit.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonActualRowsExplicit.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRankRows.olean",
+        "Conjectures/McNamaraSteingrimssonRankRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRankRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonWrittenRankEval.olean",
+        "Conjectures/McNamaraSteingrimssonWrittenRankEval.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonWrittenRankEval.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRanksExact.olean",
+        "Conjectures/McNamaraSteingrimssonRanksExact.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRanksExact.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonLiteralInterval.olean",
+        "Conjectures/McNamaraSteingrimssonLiteralInterval.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonLiteralInterval.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/McNamaraSteingrimssonRankUnimodalityFalse.olean",
+        "Conjectures/McNamaraSteingrimssonRankUnimodalityFalse.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.McNamaraSteingrimssonRankUnimodalityFalse.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.McNamaraSteingrimssonRankUnimodalityFalse",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 788,
+    "modules": 69,
+    "private_declarations": 228,
+    "raw_declarations": 788,
+    "required": 17,
+    "tag": "passed",
+    "theorems": 625
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

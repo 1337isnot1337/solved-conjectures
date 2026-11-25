@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Complete Lean verification of McNamara–Steingrímsson’s disproof
+
+Lean verifies aadrianvv’s written counterexample (#651), including the
+exact cardinalities at ranks 44, 45 and 46 of the literal closed
+permutation interval. The strict dip disproves the original Conjecture
+9.4. [Lean proof and complete receipt](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the normalized Sobolewski–Ulas exception counts in Lean
 
 Lean checks the literal normalized set, its repeated-digit counting
