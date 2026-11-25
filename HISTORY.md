@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall Hankel polynomial identity
+
+Lean proves the differential identity for the shifted-minor square difference, and its exact degree and leading coefficient when the unshifted Hankel polynomial is nonzero. This does not yet establish the adjacent-minor recurrence or its analytic sign. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall Hankel determinant integral
 
 Lean checks the weighted integral formula for every derivative order and gives the exact signed integral for each cumulant Hankel-matrix entry. Andréief’s identity and Vandermonde normalization give the determinant-level product integral with both reversal signs cancelled. The strict sign step is still open. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
