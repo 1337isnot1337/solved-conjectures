@@ -1,5 +1,9 @@
 # Verification
 
+## Csordas–Vishnyakova conjecture
+
+The exact source of `Conjectures.CsordasVishnyakova` passed pinned strict compilation, all-owned transitive axiom audit and stock replay. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) includes the focused reproduction command and [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json) gives the source digest. The repository-wide aggregate gate is separate.
+
 ## Wagner's Laguerre-operator conjecture
 
 The exact module `Conjectures.WagnerLaguerreOperator` passed pinned strict compilation, a complete transitive axiom audit, and stock kernel replay. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) contains the focused command; see the [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json). The aggregate repository check is separate.

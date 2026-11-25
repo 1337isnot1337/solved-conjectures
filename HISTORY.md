@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Csordas–Vishnyakova conjecture
+
+Completed Lean verification of the original Conjecture 3.6 counterexample, including every test coefficient at every real argument and the actual polynomial-approximation definition. The earlier genus-restricted theorem is not impugned. [Scope](results/csordas-vishnyakova/FORMALIZATION.md).
+
 ## 2026-11-25 — Wagner's Laguerre-operator conjecture
 
 Completed Lean verification of the original Conjecture 4.3 counterexample. Actual polynomial approximants establish membership of the input, and the first Laguerre transform fails the eventual sign requirement. The old failed draft has been superseded by an exact source build, axiom audit and stock replay. [Scope](results/wagner-laguerre-operator/FORMALIZATION.md).

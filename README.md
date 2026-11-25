@@ -68,7 +68,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **51.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **124.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | **57.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **132.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ⬜ |
 | **57.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **132.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
-| **57.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ | **132.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
+| **57.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **132.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
 | **57.** [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ✅ | **132.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | **57.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ | **136.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
 | **62.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ | **136.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
