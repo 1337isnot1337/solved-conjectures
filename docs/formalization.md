@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Németh–Seberry–Shu conjecture
+
+Two scoped closures check the Fourier sampling and spectral identities and the algebraic counting reduction. The scalar profile is strictly increasing in amplitude, and its common gap verifies the final reduction from an explicit uniform normalized-log approximation hypothesis. The existence of such an approximation is not verified. [Lean scope](../results/nemeth-seberry-shu/FORMALIZATION.md).
+
 ## Burstein’s descent-top shape-Wilf conjecture
 
 The exact Ferrers-rectangle pattern test and block statistics yield a 15-versus-16 mismatch for each conjecture. This disproves both universal statements with no claim about square boards. [Lean scope](../results/burstein-descent-top-shape-wilf/FORMALIZATION.md).
