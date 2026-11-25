@@ -2,7 +2,7 @@
 
 ## Seven upper-half circular chromatic index certificates
 
-Partial. Lean checks tomdif’s literal edge, degree, colouring and density data for maximum degrees 9, 11, 13, 15, 17, 19 and 23. The real circular-index bridge and the previous all-degree construction families are not asserted by this check. [Scope and review](../results/circular-index-upper-half-remaining-deltas/REVIEW.md).
+Partial for the combined result. Lean checks tomdif’s literal graphs at maximum degrees 9, 11, 13, 15, 17, 19 and 23. It proves the actual degrees and the real circular-index lower and upper bounds. Six bounds meet, and the degree-15 case has the stated bracket. The earlier degree families are outside this check. [Scope and review](../results/circular-index-upper-half-remaining-deltas/REVIEW.md).
 
 ## Xu–Zhou’s diameter–Laplacian conjecture
 

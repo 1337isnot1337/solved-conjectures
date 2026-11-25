@@ -1,0 +1,272 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T14:20:19.546714+00:00",
+  "finished_at": "2026-11-25T14:22:12.824570+00:00",
+  "root": "Conjectures.TomdifCircularIndexBounds",
+  "project_modules": [
+    "Conjectures.CircularIndexBase",
+    "Conjectures.CircularIndexCirculant",
+    "Conjectures.CircularIndexClassArithmetic",
+    "Conjectures.CircularIndexColoring",
+    "Conjectures.CircularIndexCounting",
+    "Conjectures.CircularIndexOptimality",
+    "Conjectures.CircularIndexReal",
+    "Conjectures.TomdifCircularIndexBounds",
+    "Conjectures.TomdifCircularIndexCertificates",
+    "Conjectures.TomdifCircularIndexGraph",
+    "Conjectures.TomdifCircularIndexSound"
+  ],
+  "required_endpoints": [
+    "CircularIndex.Tomdif.verified_ranges",
+    "CircularIndex.Tomdif.verified_density",
+    "CircularIndex.Tomdif.verified_separation",
+    "CircularIndex.Tomdif.certifiedGraph_edgeSet",
+    "CircularIndex.Tomdif.certifiedGraph_card_edges",
+    "CircularIndex.Tomdif.certifiedGraph_degree",
+    "CircularIndex.Tomdif.certifiedColoring",
+    "CircularIndex.Tomdif.certifiedGraph_lower",
+    "CircularIndex.Tomdif.certifiedGraph_upper",
+    "CircularIndex.Tomdif.certifiedGraph_upper_half",
+    "CircularIndex.Tomdif.certifiedGraph_exact_if_tight",
+    "CircularIndex.Tomdif.tomdif_upper_half_degrees",
+    "CircularIndex.Tomdif.tomdif_degree15_bracket",
+    "CircularIndex.Tomdif.tomdif_degree9_exact",
+    "CircularIndex.Tomdif.tomdif_degree11_exact",
+    "CircularIndex.Tomdif.tomdif_degree13_exact",
+    "CircularIndex.Tomdif.tomdif_degree17_exact",
+    "CircularIndex.Tomdif.tomdif_degree19_exact",
+    "CircularIndex.Tomdif.tomdif_degree23_exact"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "lean/Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "lean/Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "lean/Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "lean/Conjectures/CircularIndexOptimality.lean": "e4c1315180c8dc8975142f0c380431f89dee36db0badf7ee2b76cfcd901f092f",
+    "lean/Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf",
+    "lean/Conjectures/TomdifCircularIndexBounds.lean": "b49c873f162159bda8ab371e3e52db331f73b7d4820506860abb950a7e4b8412",
+    "lean/Conjectures/TomdifCircularIndexCertificates.lean": "bf09ad612520e5c166d774c40f82324a645c6a57f317377e552ecd80931fa17d",
+    "lean/Conjectures/TomdifCircularIndexGraph.lean": "6f82e09c6d5579d998c4bc57966a94b34681824643f6154d83bd30ae84512ef6",
+    "lean/Conjectures/TomdifCircularIndexSound.lean": "7503c94abdd02be2818016dbe12122e3585453598ad40c6e3784701cf7893cd2"
+  },
+  "input_sha256": {
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "lean/Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "lean/Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "lean/Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "lean/Conjectures/CircularIndexOptimality.lean": "e4c1315180c8dc8975142f0c380431f89dee36db0badf7ee2b76cfcd901f092f",
+    "lean/Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf",
+    "lean/Conjectures/TomdifCircularIndexBounds.lean": "b49c873f162159bda8ab371e3e52db331f73b7d4820506860abb950a7e4b8412",
+    "lean/Conjectures/TomdifCircularIndexCertificates.lean": "bf09ad612520e5c166d774c40f82324a645c6a57f317377e552ecd80931fa17d",
+    "lean/Conjectures/TomdifCircularIndexGraph.lean": "6f82e09c6d5579d998c4bc57966a94b34681824643f6154d83bd30ae84512ef6",
+    "lean/Conjectures/TomdifCircularIndexSound.lean": "7503c94abdd02be2818016dbe12122e3585453598ad40c6e3784701cf7893cd2",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/TomdifCircularIndexCertificates.olean",
+        "Conjectures/TomdifCircularIndexCertificates.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TomdifCircularIndexCertificates.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/TomdifCircularIndexSound.olean",
+        "Conjectures/TomdifCircularIndexSound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TomdifCircularIndexSound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
+        "Conjectures/CircularIndexBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexBase.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
+        "Conjectures/CircularIndexCirculant.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexCirculant.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
+        "Conjectures/CircularIndexClassArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexClassArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
+        "Conjectures/CircularIndexColoring.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexColoring.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
+        "Conjectures/CircularIndexCounting.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexCounting.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
+        "Conjectures/CircularIndexReal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexReal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexOptimality.olean",
+        "Conjectures/CircularIndexOptimality.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexOptimality.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/TomdifCircularIndexGraph.olean",
+        "Conjectures/TomdifCircularIndexGraph.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TomdifCircularIndexGraph.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/TomdifCircularIndexBounds.olean",
+        "Conjectures/TomdifCircularIndexBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TomdifCircularIndexBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.TomdifCircularIndexBounds",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 459,
+    "modules": 11,
+    "private_declarations": 14,
+    "raw_declarations": 459,
+    "required": 19,
+    "tag": "passed",
+    "theorems": 356
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
