@@ -103,6 +103,13 @@ modules=(
   Conjectures.PomeranceSarkozyFiniteSieve
   Conjectures.PomeranceSarkozyOffsets
   Conjectures.PomeranceSarkozyTailProbability
+  Conjectures.PomeranceSarkozyBonferroniKernel
+  Conjectures.PomeranceSarkozyCRTCheckpoint
+  Conjectures.PomeranceSarkozyIncidenceProbabilities
+  Conjectures.PomeranceSarkozyIndependentResidues
+  Conjectures.PomeranceSarkozyModelIncidence
+  Conjectures.PomeranceSarkozyPrimeCRT
+  Conjectures.PomeranceSarkozyResidueWindow
   Conjectures.NovelliThibonStableHook
   Conjectures.NovelliThibonVirtualComplete
   Conjectures.NovelliThibonWeakWordCount
