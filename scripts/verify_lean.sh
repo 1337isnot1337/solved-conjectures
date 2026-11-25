@@ -24,6 +24,7 @@ modules=(
   Conjectures.NuttallHankelPolynomial
   Conjectures.NuttallHankelAdjacent
   Conjectures.NuttallHankelTransfer
+  Conjectures.NuttallTailDominance
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
