@@ -1,5 +1,9 @@
 # Verification
 
+## Benfield–Lippard’s stable Waring-gap parity conjecture
+
+The pinned strict source build, all-owned transitive axiom audit, and stock kernel replay passed for the exact one-module closure. The aggregate repository gate is separate. [Lean scope](../results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).
+
 ## Cardon–Forgács–Piotrowski–Sorensen–White conjecture
 
 The unchanged original proof and two extension modules passed pinned strict Lean, all-owned transitive axiom audit (68 declarations, nine endpoints) and stock kernel replay. [Exact scope](../results/cardon-zero-sector/LEAN.md). Aggregate CI is separate.

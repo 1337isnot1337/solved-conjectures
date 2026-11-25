@@ -6,6 +6,7 @@ The key observation is that the least representable offset in each residue class
 
 - [Complete proof](PROOF.md)
 - [Independent audit](AUDIT.md)
+- [Complete Lean verification of Conjecture 10.4](FORMALIZATION.md)
 - [Discovery issue #399](https://github.com/1337isnot1337/solved-conjectures/issues/399)
 
 This is distinct from the [symmetry refutation](../benfield-lippard-waring-gap-symmetry/).

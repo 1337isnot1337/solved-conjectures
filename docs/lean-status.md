@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Benfield–Lippard’s stable Waring-gap parity conjecture
+
+Complete for original Conjecture 10.4 for every exponent at least two. Both the largest positive stable exception and the total number of positive stable exceptions are odd; the stronger congruences are written only. [Lean scope](../results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).
+
 ## Ćurgus–Mascioni’s Fréchet root-matching extremizer question
 
 Pinned strict build, 50-owned-declaration audit, eight endpoints and stock replay passed for the nonuniqueness counterexample. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md).
@@ -207,7 +211,7 @@ proofs are documented separately in the catalogue and result package.
 | Burstein’s A218225 enumeration conjecture | Not formalized | Both previously unresolved avoidance classes have the same maximum-insertion tree and the recorded algebraic generating function. The earlier first class is credited. |
 | Steinerberger’s quantitative Feldheim-tail conjecture | Complete for both original conjectures | The actual absolutely continuous unbounded nonnegative law violates both proposed ratio bounds for every positive threshold, with its actual expectation and median. All four modules passed strict compilation, the audit of 103 owned declarations (92 theorems), and stock-kernel replay. The smoothing, all-parameter, strict log-concavity, and rate supplements remain unformalized. [Scope and receipt](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md). |
 | Benfield–Lippard’s stable Waring-gap symmetry conjecture | Complete for original Conjecture 10.1 and intended reflection formulation 10.2 | At both exponents 64 and 128, the proof identifies the entire stable exception set, its largest element and a duplicate-free finite list of all members, and proves strict symmetry defect. Seven-module strict build, all-owned audit (335 declarations, 248 theorems, 108 private declarations) and independent kernel replay passed. Exact numerical genus supplement remains separate. [Scope and receipt](../results/benfield-lippard-waring-gap-symmetry/LEAN.md). |
-| Benfield–Lippard’s stable Waring-gap parity conjecture | Not formalized | Proof of Conjecture 10.4 for every exponent at least 2, with stronger two-adic congruences from the residue minimum formula. |
+| Benfield–Lippard’s stable Waring-gap parity conjecture | Complete | Both parities in Conjecture 10.4 for every exponent at least two. Stronger two-adic congruences are written only. |
 | Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture | Not formalized | Complete proof of original Conjecture 2: strict Turán inequality for every integer index at least 12 and every real parameter at least 1. Exact rational Fourier boxes and integer-polynomial signs cover the entire range. The parameter-1 theorem was previously known. |
 | Heim–Neuhauser’s plane-partition polynomization conjecture | Not formalized | Complete proof of both clauses of original Conjecture 1: strict nth-root decrease at all positive indices for real parameter greater than 5, and from index 6 for real parameter at least 1. Uses exact polynomial checks and the separate Turán theorem. |
 | Heim–Neuhauser’s ordinary D’Arcais root conjecture | Not formalized | Proof of original Conjecture 2 for all real parameters at least 1 and indices at least 6. Strict log-concavity from index 26 follows by exact rational Fourier bounds and integer coefficient signs. |
