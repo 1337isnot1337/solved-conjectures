@@ -1,4 +1,5 @@
 import Conjectures.NuttallThetaKernel
+import Conjectures.NuttallRepeatedTails
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation

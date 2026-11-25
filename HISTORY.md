@@ -2,7 +2,7 @@
 
 ## 2026-11-25 — Nuttall's conjecture
 
-Added a checked theta kernel and order-one cumulant-minor positivity for every cumulant order in the single-integral formulation. The higher-order conjecture remains only partially formalized. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+Checked the theta kernel and order-one cumulant-minor positivity for every cumulant order, both for literal iterated tails and in the single-integral formulation. The higher-order conjecture remains only partially formalized. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
 
 ## 2026-11-25 — Németh–Seberry–Shu conjecture
 

@@ -7,6 +7,7 @@ modules=(
   Conjectures.CurgusMascioniQuadratic
   Conjectures.FMPCylindric
   Conjectures.NuttallThetaKernel
+  Conjectures.NuttallRepeatedTails
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
