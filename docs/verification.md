@@ -57,7 +57,7 @@ The complete stock-kernel checked closure proves the exact finite and analytic s
 
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
-The [written proof](../results/shumyatsky-conjugate-prime-spectrum/PROOF.md) gives a construction for every finite group. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) records the independent check of the graph lift and the hypotheses of the cited almost-simple generation results. Lean verification is pending.
+The [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md) record strict compilation, all-owned axiom audits, and stock-kernel replay for the prime-spectrum reduction and the conjugate-cycle label equations. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) retains the written review and source credits.
 
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
