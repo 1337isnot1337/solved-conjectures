@@ -131,8 +131,22 @@ the number of vertices. The derivative proof uses the finite polynomial
 expansion, not differentiation under an integral. See the
 [Gamma and real-zero receipt](verification/gamma-expectation-and-real-zeros/receipt.json).
 
-The one-color boundary case remains outside the Lean scope. The
-entry is still partially formalized.
+## Boundary colors and complete stated scope
+
+Lean also derives the one-color product directly from the literal
+weighted Möbius recurrence. Its signed rank coefficients are positive
+in range and strictly log-concave, as are those for every larger
+positive number of colors. The prior two-color power formula and the
+printed three-color coefficient example are checked in the same rank
+convention. The real-root multiset and the failure to split over the
+reals are consequences of the verified degree and real-root count.
+
+This completes the stated equal-variable answer to Question 7.1
+and the strict ordinary coefficient log-concavity and real-zero
+claims in the entry. It does not settle the separate Schur-log-concavity
+question. The [final scope receipt](verification/complete-stated-result/receipt.json)
+binds the previous independently checked scopes and the new boundary
+and all-color modules.
 
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent

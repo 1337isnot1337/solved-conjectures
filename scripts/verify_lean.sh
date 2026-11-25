@@ -57,6 +57,14 @@ modules=(
   Conjectures.WachsActualGammaSumLaw
   Conjectures.WachsCompleteGraphActualExpectation
   Conjectures.WachsCompleteGraphRealZeros
+  Conjectures.WachsCompleteGraphAllColors
+  Conjectures.WachsFiniteLogConcavity
+  Conjectures.WachsSingleColorComposition
+  Conjectures.WachsSingleColorDifferential
+  Conjectures.WachsSingleColorLogConcavity
+  Conjectures.WachsSingleColorProduct
+  Conjectures.WachsThreeColorExample
+  Conjectures.WachsTwoColorProduct
   Conjectures.WachsExpectationDerivative
   Conjectures.WachsExpectationRoots
   Conjectures.WachsExpectationSigns
