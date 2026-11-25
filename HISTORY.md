@@ -316,7 +316,7 @@ The [written disproof](results/coulangeon-lazzarini-two-shells/) gives a dimensi
 
 ## 2026-11-25 — Verify Alexandersson’s parking excedance counterexample in Lean
 
-Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. The scoped strict build, axiom audit, and stock-kernel replay passed. [Lean scope](results/alexandersson-parking-excedance/FORMALIZATION.md) · [Receipt](results/alexandersson-parking-excedance/verification/receipt.json).
+AlexisFimeyer’s [contribution in #630](https://github.com/1337isnot1337/solved-conjectures/pull/630) proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. One-step kernel certificates reduce replay memory without changing the theorem. The scoped strict build, axiom audit, and stock-kernel replay passed. [Lean scope](results/alexandersson-parking-excedance/FORMALIZATION.md) · [Receipt](results/alexandersson-parking-excedance/verification/receipt.json).
 
 ## 2026-11-24: Refute Alexandersson’s parking-function excedance conjecture
 

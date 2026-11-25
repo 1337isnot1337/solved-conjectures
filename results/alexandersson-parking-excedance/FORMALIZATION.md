@@ -11,9 +11,11 @@ and the mask that inserts the new unmarked copies. The two finite choices give
 the binomial factors in the recurrence. A final bijection fills the unmarked
 positions and recovers a parking word with a subset of its strict excedances.
 
-The executable table computes the marked counts. Lean checks the length-17
-table and the conversion from powers of `X - 1` to the published coefficient
-row. The negative Laguerre value at `-1/5` then gives the nonreal root of the
+The executable table computes the marked counts. Lean checks each intermediate
+table from the preceding one using the same recurrence, then checks the
+length-17 marked row and its conversion from powers of `X - 1` to the
+published coefficient row. This bounds peak replay memory without changing
+the theorem or using a native-code trust assumption. The negative Laguerre value at `-1/5` then gives the nonreal root of the
 literal enumerator.
 
 - [Word model](../../lean/Conjectures/AlexanderssonParkingExcedanceWords.lean)
