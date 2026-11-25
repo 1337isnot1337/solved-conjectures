@@ -2763,6 +2763,13 @@ modules=(
   Conjectures.WaringGapSymmetry
   Conjectures.KauersKoutschanCertificate
   Conjectures.KauersKoutschanDividedSum
+  Conjectures.KauersKoutschanCount
+  Conjectures.KauersKoutschanEvaluation
+  Conjectures.KauersKoutschanPermutationCount
+  Conjectures.KauersKoutschanBlocks
+  Conjectures.KauersKoutschanBlockLengths
+  Conjectures.KauersKoutschanState
+  Conjectures.KauersKoutschanFiniteRecurrence
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
