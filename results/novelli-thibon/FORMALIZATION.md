@@ -44,11 +44,25 @@ Schur extractor is the coordinate functional on the bialternant
 characterization; applying it to the normalized filling moments gives
 the row and leg factors times the diagram-chain count.
 
-The separate equivalence of these chains with literal standard tableaux
-having 2 above 1, the source LLT identification (Lemma 4.2), and the
-adjacent hook claim are not verified here. This verifies neither
-Conjecture 5.4 nor the general trace assertions.
+The [standard tableau model](../../lean/Conjectures/NovelliThibonTableauVertical.lean)
+uses order-preserving, bijective labels on the actual diagram; the
+first two labels occupy the prescribed French vertical pair. It
+constructs the completion bijection by deleting and reinserting the
+first remaining cell. The resulting cardinality is exactly the
+Pieri chain count.
+
+Lean also proves the [signed Laurent monomial product](../../lean/Conjectures/NovelliThibonLaurentProduct.lean)
+for the normalized finite filling model. It groups each Schur
+coefficient by its actual parameter exponent vector, sums the signed
+multiplicities, and checks the product under arbitrary independent unit
+specializations. The exponent on the right is the literal standard
+tableau cardinality, not an abstract chain parameter.
+
+The source LLT identification (Lemma 4.2) and the adjacent hook claim
+are not verified here. This verifies neither Conjecture 5.4 nor the
+general trace assertions.
 
 - [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
 - [Diagram and first-order replay](verification/diagram-first-order/receipt.json)
 - [Pieri and diagram-chain replay](verification/pieri-diagram-chains/receipt.json)
+- [Standard tableau and Laurent product replay](verification/tableau-laurent-product/receipt.json)
