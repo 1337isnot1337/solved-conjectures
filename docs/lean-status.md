@@ -11,7 +11,7 @@ Partial. Lean checks the exact polynomial recurrence, the all-index continuant r
 
 ## Nuttall's conjecture
 
-Partial. Lean checks the literal theta series, its absolute convergence, continuity, leading asymptotic and all-order global double-exponential derivative bounds, plus existence and positivity of all iterated tail integrals and polynomial-weighted single-integral cumulants on the half-line. The literal tails also satisfy the full derivative shift on the real line. Higher minors are written only. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+Partial. Lean checks the literal theta series, its absolute convergence, continuity, leading asymptotic and all-order global double-exponential derivative bounds, plus existence and positivity of all iterated tail integrals and polynomial-weighted single-integral cumulants on the half-line. The literal tails satisfy the derivative index shift on the real line and equal the weighted integrals at all nonnegative arguments. Higher minors are written only. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 
