@@ -1,0 +1,190 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T22:46:28.452995+00:00",
+  "finished_at": "2026-11-25T22:50:26.111730+00:00",
+  "root": "Conjectures.KauersKoutschanFiniteRecurrence",
+  "project_modules": [
+    "Conjectures.KauersKoutschanCertificate",
+    "Conjectures.KauersKoutschanCount",
+    "Conjectures.KauersKoutschanDividedSum",
+    "Conjectures.KauersKoutschanEvaluation",
+    "Conjectures.KauersKoutschanFiniteRecurrence",
+    "Conjectures.KauersKoutschanPermutationCount",
+    "Conjectures.KauersKoutschanState"
+  ],
+  "required_endpoints": [
+    "KauersKoutschan.finiteSumCount_orderEight",
+    "KauersKoutschan.permutationCount_inclusion_exclusion",
+    "KauersKoutschan.permutationCount_orderEight_of_count",
+    "KauersKoutschan.finiteSumCount_eq_shifted",
+    "KauersKoutschan.state_eval_moment",
+    "KauersKoutschan.state_eval_dividedSum",
+    "KauersKoutschanCertificate.orderEight_linear_combination"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KauersKoutschanCertificate.lean": "b98df1fadf7b14633466a46282834597bc27a137c38ff040dec71a4c5c1a2745",
+    "lean/Conjectures/KauersKoutschanCount.lean": "7e69c463155ed7da3b2c85cf9a8599e87bf2e921eda9248c3dd221096c65e866",
+    "lean/Conjectures/KauersKoutschanDividedSum.lean": "75210e1fa19dc7ccf80343c6e2aa53398ade07d8c4b8cf2124ffa161f15af459",
+    "lean/Conjectures/KauersKoutschanEvaluation.lean": "2f704f97804c33d5aec05c80406480e94db595ddd09411510a5d5dc9195117c4",
+    "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "7722d7f4a8e73d8bdd49a8c708a8612910ce82d01f9f7876e9e3ecc7771c0aea",
+    "lean/Conjectures/KauersKoutschanPermutationCount.lean": "c00db8a09122a37211ac69c641ff154f349deea57ed530ef436545d22a008cf5",
+    "lean/Conjectures/KauersKoutschanState.lean": "fac4f2c4fbea2308808aa7e071a25ff7d4c49ae2c879de17d2678f610bc8ce79"
+  },
+  "input_sha256": {
+    "lean/Conjectures/KauersKoutschanCertificate.lean": "b98df1fadf7b14633466a46282834597bc27a137c38ff040dec71a4c5c1a2745",
+    "lean/Conjectures/KauersKoutschanCount.lean": "7e69c463155ed7da3b2c85cf9a8599e87bf2e921eda9248c3dd221096c65e866",
+    "lean/Conjectures/KauersKoutschanDividedSum.lean": "75210e1fa19dc7ccf80343c6e2aa53398ade07d8c4b8cf2124ffa161f15af459",
+    "lean/Conjectures/KauersKoutschanEvaluation.lean": "2f704f97804c33d5aec05c80406480e94db595ddd09411510a5d5dc9195117c4",
+    "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "7722d7f4a8e73d8bdd49a8c708a8612910ce82d01f9f7876e9e3ecc7771c0aea",
+    "lean/Conjectures/KauersKoutschanPermutationCount.lean": "c00db8a09122a37211ac69c641ff154f349deea57ed530ef436545d22a008cf5",
+    "lean/Conjectures/KauersKoutschanState.lean": "fac4f2c4fbea2308808aa7e071a25ff7d4c49ae2c879de17d2678f610bc8ce79",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCertificate.olean",
+        "Conjectures/KauersKoutschanCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanDividedSum.olean",
+        "Conjectures/KauersKoutschanDividedSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanDividedSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCount.olean",
+        "Conjectures/KauersKoutschanCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanEvaluation.olean",
+        "Conjectures/KauersKoutschanEvaluation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanEvaluation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanState.olean",
+        "Conjectures/KauersKoutschanState.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanState.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanPermutationCount.olean",
+        "Conjectures/KauersKoutschanPermutationCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanPermutationCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanFiniteRecurrence.olean",
+        "Conjectures/KauersKoutschanFiniteRecurrence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanFiniteRecurrence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/sc-kauers-20261125/finite-recurrence/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/sc-kauers-research-1624/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KauersKoutschanFiniteRecurrence"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 289,
+    "modules": 7,
+    "private_declarations": 96,
+    "raw_declarations": 289,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 197
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

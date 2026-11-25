@@ -29,6 +29,13 @@ Lean verifies the cardinality steps and the conjugate-cycle equations
 in aadrianvv’s written contribution. The result is partially formalized.
 [Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the Kauers–Koutschan finite-sum recurrence
+
+Lean proves the exact finite sum satisfies the original order-eight
+operator at every index and verifies inclusion–exclusion for the actual
+permutations. The equality between the two counts remains.
+[Scope and receipt](results/kauers-koutschan-recurrence/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Kauers–Koutschan's divided sums in Lean
 
 Lean checks the all-index derangement divided-sum recurrence and shifted
