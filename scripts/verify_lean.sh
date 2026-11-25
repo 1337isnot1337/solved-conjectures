@@ -267,6 +267,10 @@ modules=(
   Conjectures.XuZhouLaplacianEnergy
   Conjectures.XuZhouDistanceLayers
   Conjectures.XuZhouLaplacianPartial
+  Conjectures.XuZhouTridiagonal
+  Conjectures.XuZhouQuotientEnergy
+  Conjectures.XuZhouQuotientInertia
+  Conjectures.XuZhouCliqueQuotient
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

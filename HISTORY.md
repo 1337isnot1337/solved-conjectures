@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Xu–Zhou tridiagonal quotient in Lean
+
+Lean proves the nonnegative eigenvalue bound for the actual tridiagonal quotient, including the kernel at the closed cutoff. The lift to the full clique-chain Laplacian remains separate. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+
 ## 2026-11-25 — Xu–Zhou Laplacian reductions in Lean
 
 Lean verifies the closed-cutoff spectral count argument, the actual distance-layer completion and retained cardinalities, and a finite marking budget. The quotient bound and full conjecture are separate. [Lean scope](results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
