@@ -2,20 +2,7 @@
 
 ## Braun–Bruegge’s minimum facet conjecture
 
-The [bipartite proof](../lean/Conjectures/BraunBrueggeMinimumBipartiteComparison.lean)
-constructs the actual symmetric edge polytope and identifies its geometric
-facets with normalized polar vertices. For connected bipartite graphs it
-proves the exact minimum and the equality criterion for the complete
-bipartite graph with balanced parts. The comparison for a missing cross-edge
-uses a new vertex from the graph-distance potential. For arbitrary connected
-graphs, the development also verifies the lower bound from distinct
-orientations of an actual matching. The [uncovered-vertex bound](../lean/Conjectures/BraunBrueggeMinimumUncoveredCount.lean)
-constructs a maximum matching and proves at least `2^(m+r)` actual facets,
-where `m` counts matched edges and `r` counts uncovered vertices. It gives
-strict inequality above the balanced minimum whenever `r ≥ 2`. The remaining
-nonbipartite cases have `r = 0` or `r = 1`. The [scoped receipt](verification/lean-braun-bruegge-uncovered-20261124/receipt.json)
-records 13 strict module builds, 304 owned declarations, 20 required endpoints,
-and stock-kernel replay.
+Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean theorem](../lean/Conjectures/BraunBrueggeMinimum.lean) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)
 
 ## Ma–Tang’s random subset-sum threshold conjecture
 

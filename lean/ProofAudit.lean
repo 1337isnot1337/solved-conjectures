@@ -9,6 +9,16 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.IndexedMatching.matchFaceVertexLower_le_card,
+    `BraunBruegge.IndexedMatching.reaches_opposite_of_agreesOutside,
+    `BraunBruegge.IndexedMatching.exists_two_recovery_colors,
+    `BraunBruegge.IndexedMatching.strongOrientations_le_outside,
+    `BraunBruegge.IndexedMatching.almostPerfect_facet_lower,
+    `BraunBruegge.balancedFacetMinimum_lt_nonbipartite,
+    `BraunBruegge.facet_card_relabel,
+    `BraunBruegge.balancedCompleteBipartite_connected,
+    `BraunBruegge.card_balancedCompleteBipartite_facets,
+    `BraunBruegge.braun_bruegge_minimum_facets,
     `BraunBruegge.mem_extreme_polar_iff,
     `BraunBruegge.polar_iff_polytope_pairing,
     `BraunBruegge.span_edgeVectors_of_connected,
