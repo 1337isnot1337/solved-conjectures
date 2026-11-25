@@ -21,12 +21,11 @@ public Mathlib documentation, and theorem-index searches did not
 surface a duplicate theorem or a formal proof of the exact statement.
 The proof was checked within the research session, including a separate
 derivation of the graph lift by breaking each permutation cycle
-before extending its forest. Formal verification and external
-refereeing are pending.
+before extending its forest. [Partial Lean verification](FORMALIZATION.md) now covers the prime-spectrum reduction and the cycle-label equations. External refereeing is pending.
 
 ## Attribution
 
 The research proof was developed by GPT-6.2 Sol. A separate Codex review rederived the lifting lemma, checked the almost-simple case and matched the hypotheses of the cited theorems. The claim covers every finite group.
 
 
-The contribution was submitted by [aadrianvv](https://github.com/aadrianvv) in [PR #652](https://github.com/1337isnot1337/solved-conjectures/pull/652). The integration review independently rechecked the two free labels after reserving one edge per conjugate cycle, the singleton-factor outer quotient, and the exact published generation inputs. This is a written review, not a Lean verification.
+The contribution was submitted by [aadrianvv](https://github.com/aadrianvv) in [PR #652](https://github.com/1337isnot1337/solved-conjectures/pull/652). The integration review independently rechecked the two free labels after reserving one edge per conjugate cycle, the singleton-factor outer quotient, and the exact published generation inputs. The [formalization record](FORMALIZATION.md) describes the later Lean verification and its scope.

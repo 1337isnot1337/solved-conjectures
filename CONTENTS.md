@@ -141,7 +141,7 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
-| [Shumyatsky’s conjugate prime-spectrum conjecture](results/shumyatsky-conjugate-prime-spectrum/) | Answers Kourovka Notebook Question 17.125 affirmatively for every finite group. | Not formalized | [Proof](results/shumyatsky-conjugate-prime-spectrum/PROOF.md) · [Audit](results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) |
+| [Shumyatsky’s conjugate prime-spectrum conjecture](results/shumyatsky-conjugate-prime-spectrum/) | Answers Kourovka Notebook Question 17.125 affirmatively for every finite group. | Partial Lean | [Lean scope](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md) · [Proof](results/shumyatsky-conjugate-prime-spectrum/PROOF.md) · [Audit](results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) |
 
 ## Restricted permutations
 

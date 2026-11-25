@@ -5,4 +5,4 @@
 - [Complete proof](PROOF.md)
 - [Independent review, sources and attribution](AUDIT.md)
 
-The written proof has been reviewed within the project. Lean verification and external refereeing are pending.
+The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) covers the prime-spectrum reduction and the cycle-label equations. External refereeing is pending.

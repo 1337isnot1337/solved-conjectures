@@ -5,6 +5,12 @@
 Lean verifies the near-threshold expectation bound and the exact
 tail-product reindexing. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
+## 2026-11-25 — Verify Shumyatsky’s prime-spectrum reduction and cycle closure
+
+Lean verifies the cardinality steps and the conjugate-cycle equations
+in aadrianvv’s written contribution. The result is partially formalized.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Pomerance–Sárközy's finite-window comparison
 
 Lean verifies the quantitative total-variation bound between the exact

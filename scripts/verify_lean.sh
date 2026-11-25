@@ -109,6 +109,8 @@ modules=(
   Conjectures.PomeranceSarkozyNearThresholdBand
   Conjectures.PomeranceSarkozyTailCross
   Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
+  Conjectures.ShumyatskyCycleLabels
+  Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
   Conjectures.PomeranceSarkozyFiniteTotalVariation
