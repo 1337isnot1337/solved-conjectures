@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Revised Tan–Zhou conjecture
+
+Completed Lean verification of the revised monotone conjecture using unreduced Lüroth denominators. The proof formalizes the cylinder upper bound and obtains the lower bound from a nested interval construction with a Hölder inverse address map. See the [formalization](results/revised-tan-zhou-luroth/FORMALIZATION.md) and [local receipt](results/revised-tan-zhou-luroth/verification/receipt.json).
+
 ## 2026-11-25 — Nuttall termwise differentiation and derivative bounds
 
 Lean checks termwise differentiation of the literal infinite theta series in every order, a global double-exponential derivative bound, and a uniform bound on every differentiated tail after the first mode. Higher Wronskians are not checked. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
