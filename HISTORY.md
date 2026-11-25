@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Check the two-summand interval counts in Lean
+
+Lean proves the exact positive-rank convolution for the interval between the pointed endpoint and its direct sum with the longer pointed endpoint. It uses actual permutation counts and proves the two families disjoint. The full repeated-sum interval remains separate. [Scope and receipt](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify classical containment in the interval rank-unimodality disproof in Lean
 
 Lean verifies the literal layered and pointed pattern criteria, normalization to permutations of `Fin n`, greedy weighted enumeration, and pointed occurrences in direct sums. Credit for the written disproof remains with the contribution in #651. Lean also counts every literal rank of the small pointed interval. The full repeated-sum interval count remains separate. [Lean scope](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).

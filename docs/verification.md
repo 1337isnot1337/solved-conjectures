@@ -2,7 +2,7 @@
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
-Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. The full repeated-sum interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. It proves the exact positive-rank convolution for the two-summand interval. The full repeated-sum interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
 
 ## Athanasiadis–Chapoton’s polar preorder duality conjecture
 
