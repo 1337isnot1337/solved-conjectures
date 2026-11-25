@@ -1,4 +1,5 @@
 import Conjectures.WachsCompleteGraphHomogeneous
+import Conjectures.WachsCompleteGraphMoebiusLaw
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.SternHalfPlaneBasic

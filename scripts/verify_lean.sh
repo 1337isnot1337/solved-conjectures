@@ -27,6 +27,10 @@ modules=(
   Conjectures.WachsCompleteGraphGammaFactors
   Conjectures.WachsCompleteGraphGammaProduct
   Conjectures.WachsCompleteGraphHomogeneous
+  Conjectures.WachsCompleteGraphCharacteristic
+  Conjectures.WachsCompleteGraphMoebiusLaw
+  Conjectures.WachsCompleteGraphWeightedOrder
+  Conjectures.WachsCompleteGraphWeightedPartition
   Conjectures.WachsCompleteGraphLaguerreNormalization
   Conjectures.WachsCompleteGraphMomentExpansion
   Conjectures.WachsCompleteGraphVandermonde

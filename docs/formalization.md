@@ -2,10 +2,9 @@
 
 ## González D’León–Wachs’s complete-graph specialization question
 
-Partial. Lean verifies the equal-variable homogeneous coefficients,
-the formal Laguerre series identity, and the formal moment formula
-given the linear factorization. The weighted bond-poset bridge,
-positive roots, and the probabilistic consequences remain outside the scope.
+Partial. Lean verifies the literal weighted Möbius polynomial and the
+equal-variable Laguerre and conditional moment identities. The EGF/Lagrange
+bridge, positive roots, and the probabilistic consequences remain outside the scope.
 [Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture

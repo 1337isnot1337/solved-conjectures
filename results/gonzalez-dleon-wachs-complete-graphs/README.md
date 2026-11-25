@@ -3,7 +3,7 @@
 **Answered.** Gives an exact Laguerre product and Gamma-moment formula, strict ordinary coefficient log-concavity, and the real-zero count for equal variables.
 
 - [Complete proof](PROOF.md)
-- [Partial Lean formal-series verification](FORMALIZATION.md)
+- [Partial Lean verification of the literal Möbius polynomial and formal series](FORMALIZATION.md)
 - [Exact recurrence checker](check_complete.py)
 - [Weighted-bond recurrence used by the checker](weighted_bond_recurrence.py)
 - [Independent audit and earlier work](AUDIT.md)

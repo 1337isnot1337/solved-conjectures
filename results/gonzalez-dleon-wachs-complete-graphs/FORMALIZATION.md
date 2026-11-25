@@ -23,10 +23,25 @@ vertices in the coefficient theorem is `k+1`.
    Lean proves the equivalent [formal Gamma moment expansion](../../lean/Conjectures/WachsCompleteGraphMomentExpansion.lean)
    with all moments defined by formal power series.
 
-The weighted bond-poset Möbius and Lagrange inversion bridge to the
-original characteristic polynomial, positive Laguerre roots, the
-probabilistic Gamma identification, and the log-concavity and real-zero
-consequences are outside this check. The existing proof and its
+## Literal weighted bond-poset polynomial
+
+Lean models the complete graph by finite partitions whose individual
+blocks carry weak weight compositions of their sizes minus one. It
+proves transitivity of the actual weighted refinement, constructs the
+discrete bottom, and proves the rank exponent is the sum of the
+weights. The characteristic polynomial uses the integer Möbius
+function computed by well-founded recursion, not the series answer
+as its definition. Lean proves its cumulative cancellation law and
+uniqueness.
+
+The [literal theorem](../../lean/Conjectures/WachsCompleteGraphMoebiusLaw.lean)
+gives the Laguerre answer from one explicit remaining bridge: the
+Lagrange-normalized coefficient formula for that actual polynomial.
+The formal Gamma expression also assumes the polynomial's linear
+factorization. See the [literal-poset receipt](verification/literal-weighted-poset/receipt.json).
+The EGF/Lagrange bridge, positive Laguerre roots, the probability
+identification, and the log-concavity and real-zero consequences
+remain outside the Lean scope. The existing proof and its
 attribution, including the prior two-variable result, remain unchanged.
 The separate question of Schur-log-concavity is not asserted.
 
