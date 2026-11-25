@@ -10,3 +10,7 @@
 - Priority: targeted searches found the original paper, Kölbl's [2024 follow-up](https://arxiv.org/abs/2404.02136), and the still-open exact [MathDB listing](https://mathdb.com/p/362579/higashitani-kummer-micha-ek-conjecture-for-complete-multipar). The published follow-up reports restricted families. No earlier matching counterexample was found within the bounded search, which is not an exhaustive priority proof. Discovery and provenance remain in [issue #316](https://github.com/1337isnot1337/solved-conjectures/issues/316).
 
 Original proof blob 701f259e5be4cce84b92ececa900bdd8d2c54d2a and verifier are copied unchanged from research. The historical proof's pending external-review and priority language remains applicable; this audit supplies the requested internal review.
+
+## Lean checkpoint, 25 November 2026
+
+See [the precise Lean scope](FORMALIZATION.md). The earlier written audit remains unchanged; the literal lattice-point count and final root transfer are still outside the Lean checkpoint.

@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Higashitani–Kummer–Michałek conjecture
+
+Partial. The exact negative Laguerre certificate, rotation and interpolant are checked. Lean also checks the local two-coordinate counts and necessary inequalities for literal lattice points in the dilated symmetric edge polytope. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
+
 ## Sokal’s Apéry moment threshold
 
 Lean excludes every parameter with 0 < x ≤ 1/40 and an open neighborhood of one quarter. It checks the moment continuation and the lower-endpoint obstruction under the torus transform identity. The identity and the saddle cusp remain unformalized. [Lean scope](../results/sokal-apery-moment-threshold/FORMALIZATION.md)

@@ -1,5 +1,9 @@
 # Verification
 
+## Higashitani–Kummer–Michałek conjecture
+
+The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, all-owned verification and stock replay for the five-module partial closure. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
+
 ## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
 
 The [local receipt](../results/ferreira-simon-diagonal/verification/receipt.json) records the strict build, all-owned axiom audit, and stock-kernel replay of the one-module closure of `Conjectures.FerreiraSimonDiagonal`. The checked scope is partial. [Lean scope](../results/ferreira-simon-diagonal/FORMALIZATION.md).

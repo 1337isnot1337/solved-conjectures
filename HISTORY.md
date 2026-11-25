@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Higashitani–Kummer–Michałek Lean checkpoint
+
+The published Lean scope reuses the root and local count checkpoints and verifies necessary signed-mass conditions and finiteness for the actual dilated polytope. The exact lattice-point count is not assumed to be checked. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
+
 ## 2026-11-25 — Complete Lean verification of Nuttall’s conjecture
 
 Lean verifies the signed extended-Chebyshev criterion, discharges the theta-tail constraint, and proves strict signs for every ordered cumulant grid through any finite order. It also proves existence of the least cumulant index as stated by John Nuttall. The separate RH-equivalent problem is unchanged. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).

@@ -1309,6 +1309,7 @@ import Conjectures.AlexanderssonParkingExcedanceCount
 import Conjectures.AlexanderssonParkingExcedanceEnumeration
 import Conjectures.AlexanderssonParkingExcedanceRoots
 import Conjectures.AlexanderssonParkingExcedance
+import Conjectures.HKMEhrhartPartial
 import Conjectures.FussSlot
 import Conjectures.FussFinal
 import Conjectures.FussRoots
