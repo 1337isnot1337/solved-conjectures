@@ -1,4 +1,4 @@
-import Conjectures.MaTangCoreUpperPrefixes
+import Conjectures.MaTangCoreUpperShift
 import Lean.Util.CollectAxioms
 import Lean.Elab.Command
 
@@ -14,7 +14,10 @@ run_cmd do
     `MaTangCoreUpperDistinct.distinctWords_seven_eighths,
     `MaTangCoreUpperDistinct.upper_distinct_success_gt_half,
     `MaTangCoreUpperPrefixes.iid_missing_le,
-    `MaTangCoreUpperPrefixes.distinct_missing_success]
+    `MaTangCoreUpperPrefixes.distinct_missing_success,
+    `MaTangCoreUpperShift.shift_second_moment,
+    `MaTangCoreUpperShift.missingCount_zero_iff,
+    `MaTangCoreUpperShift.conditioned_cover_from_initial]
   for name in required do
     unless (← getConstInfo name).isTheorem do
       throwError "Missing theorem endpoint {name}"
