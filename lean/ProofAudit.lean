@@ -9,6 +9,18 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.computedSignProduct_eq,
+    `BraunBruegge.computedMixedFacetCount_eq,
+    `BraunBruegge.checkMixedAtTotal_sound,
+    `BraunBruegge.mixedRows_checked,
+    `BraunBruegge.mixed_theta_facets_le_wedge,
+    `BraunBruegge.same_parity_theta_facets_lt_wedge,
+    `BraunBruegge.thetaGraphPathReindex,
+    `BraunBruegge.theta_facets_le_wedge,
+    `BraunBruegge.theta_edge_card,
+    `BraunBruegge.wedge_edge_card,
+    `BraunBruegge.wedgeBenchmark_attained_all,
+    `BraunBruegge.theta_diamond_facet_card,
     `BraunBruegge.centralSignMass_sq_upper,
     `BraunBruegge.centralSignMass_sq_lower_of_even,
     `BraunBruegge.sum_binomialSignCount_le,
