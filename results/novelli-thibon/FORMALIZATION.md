@@ -58,11 +58,26 @@ multiplicities, and checks the product under arbitrary independent unit
 specializations. The exponent on the right is the literal standard
 tableau cardinality, not an abstract chain parameter.
 
-The source LLT identification (Lemma 4.2) and the adjacent hook claim
-are not verified here. This verifies neither Conjecture 5.4 nor the
-general trace assertions.
+The [source certificate](../../lean/Conjectures/NovelliThibonSourceCertificate.lean)
+checks the commutative finite-alphabet identification for the original
+graph sum in Definition 5.3. Right-to-left tie standardization derives
+the ordinary strict-ascent LLT expansion. Complementing the fundamental
+descent set and inverting the parameter gives the commutative descent
+expansion of Lemma 4.2. Lean checks the exact diagram prefactors and
+reassembles the original intermediate graphs, then identifies the
+result with a genuine Mathlib Laurent polynomial under every unit
+specialization for which the original rational expression is defined.
+The monomial-product theorem is stated on the actual Laurent
+coefficients using the bialternant Schur extractor.
+
+This checks the intended monomial-product argument for Conjecture 5.7
+in the finite commutative source model. The independent LLT symmetry
+and general Schur basis theorems are not reproved here. The adjacent
+hook claim is not yet verified. The general noncommutative lift,
+Conjecture 5.4, and the trace assertions are outside this scope.
 
 - [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
 - [Diagram and first-order replay](verification/diagram-first-order/receipt.json)
 - [Pieri and diagram-chain replay](verification/pieri-diagram-chains/receipt.json)
 - [Standard tableau and Laurent product replay](verification/tableau-laurent-product/receipt.json)
+- [Source graph to formal Laurent polynomial replay](verification/source-laurent-certificate/receipt.json)

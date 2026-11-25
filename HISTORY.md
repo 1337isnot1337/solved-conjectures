@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify Novelli–Thibon's source graph-to-Laurent monomial certificate
+
+Lean checks the original finite commutative graph sum against a
+genuine Laurent polynomial and proves its signed Schur coordinate
+monomial product. The adjacent hook claim is still open in Lean.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Novelli–Thibon's standard tableaux and normalized monomial product
 
 Lean proves the standard-tableau bijection and the exact signed
