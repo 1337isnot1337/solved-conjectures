@@ -14,6 +14,7 @@ modules=(
   Conjectures.NuttallThetaKernel
   Conjectures.NuttallThetaTail
   Conjectures.NuttallThetaTermDerivatives
+  Conjectures.NuttallThetaTermSeries
   Conjectures.NuttallRepeatedTails
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
