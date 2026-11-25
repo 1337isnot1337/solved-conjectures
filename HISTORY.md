@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-25 — Verify the Poisson difference limit for Pomerance–Sárközy
+
+Lean checks the weak limit of the exact independent Poisson difference
+on its square-root scale. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the reciprocal-prime input for Pomerance–Sárközy
 
 Lean verifies the bounded-error reciprocal-prime estimate using exact

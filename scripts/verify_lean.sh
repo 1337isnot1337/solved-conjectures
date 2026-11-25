@@ -115,6 +115,7 @@ modules=(
   Conjectures.PomeranceSarkozyMeasurePush
   Conjectures.PomeranceSarkozyPoissonColumns
   Conjectures.PomeranceSarkozyPoissonCountCheckpoint
+  Conjectures.PomeranceSarkozyPoissonDifferenceChar
   Conjectures.PomeranceSarkozyLogKernels
   Conjectures.PomeranceSarkozyMangoldtFloor
   Conjectures.PomeranceSarkozyMangoldtReciprocal
