@@ -1,0 +1,385 @@
+{
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 427,
+    "modules": 18,
+    "private_declarations": 195,
+    "raw_declarations": 427,
+    "required": 14,
+    "tag": "passed",
+    "theorems": 366
+  },
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallTailDominance.olean",
+        "Conjectures/NuttallTailDominance.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallTailDominance.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallThetaKernel.olean",
+        "Conjectures/NuttallThetaKernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallThetaKernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallThetaTermDerivatives.olean",
+        "Conjectures/NuttallThetaTermDerivatives.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallThetaTermDerivatives.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallHankelPolynomial.olean",
+        "Conjectures/NuttallHankelPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallHankelPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallHankelAdjacent.olean",
+        "Conjectures/NuttallHankelAdjacent.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallHankelAdjacent.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallThetaTermSeries.olean",
+        "Conjectures/NuttallThetaTermSeries.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallThetaTermSeries.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallHankelTransfer.olean",
+        "Conjectures/NuttallHankelTransfer.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallHankelTransfer.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallDerivativeRatio.olean",
+        "Conjectures/NuttallDerivativeRatio.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallDerivativeRatio.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallRepeatedTails.olean",
+        "Conjectures/NuttallRepeatedTails.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallRepeatedTails.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallTailCalculus.olean",
+        "Conjectures/NuttallTailCalculus.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallTailCalculus.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallTailMoment.olean",
+        "Conjectures/NuttallTailMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallTailMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallDifferentiatedMoment.olean",
+        "Conjectures/NuttallDifferentiatedMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallDifferentiatedMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallAndreief.olean",
+        "Conjectures/NuttallAndreief.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallAndreief.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallMovingBoxDeterminant.olean",
+        "Conjectures/NuttallMovingBoxDeterminant.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallMovingBoxDeterminant.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallVandermonde.olean",
+        "Conjectures/NuttallVandermonde.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallVandermonde.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallMovingBoxIntegral.olean",
+        "Conjectures/NuttallMovingBoxIntegral.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallMovingBoxIntegral.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallBadIntegral.olean",
+        "Conjectures/NuttallBadIntegral.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallBadIntegral.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NuttallDominanceCombine.olean",
+        "Conjectures/NuttallDominanceCombine.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NuttallDominanceCombine.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.NuttallDominanceCombine"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "finished_at": "2026-11-25T11:31:21.158180+00:00",
+  "full_repository_gate": "not run by this target-scoped helper",
+  "input_sha256": {
+    "lean/Conjectures/NuttallAndreief.lean": "f6cec21962dd5a2dd76f0133c43d8e8c787965e021d7e477c982745727b7f38f",
+    "lean/Conjectures/NuttallBadIntegral.lean": "b655a9165a7d13f8a230899850c7f7eaced92dd83de3da9f3b30ca167993b433",
+    "lean/Conjectures/NuttallDerivativeRatio.lean": "f4a3f7644dac2d13863b8375ce32403d853984d3a5b4069e06180100eb4b878a",
+    "lean/Conjectures/NuttallDifferentiatedMoment.lean": "789bbd0711a7572f05b52de8c6b67dfb1f5dfaa2a46cb3a9e4c07bd55536786d",
+    "lean/Conjectures/NuttallDominanceCombine.lean": "3dd1f3fc10810e1056327f33a2d74a0e2d2185c25104031cde81852eee951f4b",
+    "lean/Conjectures/NuttallHankelAdjacent.lean": "17fdf5a4054dea380957a769b124a7827d66ca87b86fa6d27fa1e3a017bb8bde",
+    "lean/Conjectures/NuttallHankelPolynomial.lean": "147638f9563c06394813ac066ab282eafab46b5421a796d8602f70ff6e897c43",
+    "lean/Conjectures/NuttallHankelTransfer.lean": "cdbf6238c141112aaa07d433a9ec66a664de57268540f3ec56b57f66c4c29621",
+    "lean/Conjectures/NuttallMovingBoxDeterminant.lean": "c88db042bcb382d9c96b254cd8aa875e71d03c62b7f7c674287b6efa65327ecd",
+    "lean/Conjectures/NuttallMovingBoxIntegral.lean": "e873318216725c327e544914baecb4436773c81a0a843a133e74156519e9a681",
+    "lean/Conjectures/NuttallRepeatedTails.lean": "e784bcecce31c292a01aee54d914e8e8b18d936fbfdcd83ca09f4676eabe0081",
+    "lean/Conjectures/NuttallTailCalculus.lean": "a59a07d85649f6b0a9f806db3c08aff3e45a596fda20bf82eb4c56df4c778f96",
+    "lean/Conjectures/NuttallTailDominance.lean": "c99abe5d8642004773d12e3029721572d3ea10c4efc784ffeae6b4f1692ba440",
+    "lean/Conjectures/NuttallTailMoment.lean": "e3a876267caa8ead2415724a9d0eb48f9dc9a9576c567af732817f7e5a159d81",
+    "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9",
+    "lean/Conjectures/NuttallThetaTermDerivatives.lean": "c7b1668b88cad065ce583012785c11ff549d683639e32faecbe8bc20a03d1d4d",
+    "lean/Conjectures/NuttallThetaTermSeries.lean": "c6247a28f43a71381be6c544586309ed3d69dfdb8568b9c0f67c0879ffd97152",
+    "lean/Conjectures/NuttallVandermonde.lean": "1350111ed1eefb8cb57f52a494a16d6a460a8adaf33b5b12051abd1a4b6f35a5",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "project_modules": [
+    "Conjectures.NuttallAndreief",
+    "Conjectures.NuttallBadIntegral",
+    "Conjectures.NuttallDerivativeRatio",
+    "Conjectures.NuttallDifferentiatedMoment",
+    "Conjectures.NuttallDominanceCombine",
+    "Conjectures.NuttallHankelAdjacent",
+    "Conjectures.NuttallHankelPolynomial",
+    "Conjectures.NuttallHankelTransfer",
+    "Conjectures.NuttallMovingBoxDeterminant",
+    "Conjectures.NuttallMovingBoxIntegral",
+    "Conjectures.NuttallRepeatedTails",
+    "Conjectures.NuttallTailCalculus",
+    "Conjectures.NuttallTailDominance",
+    "Conjectures.NuttallTailMoment",
+    "Conjectures.NuttallThetaKernel",
+    "Conjectures.NuttallThetaTermDerivatives",
+    "Conjectures.NuttallThetaTermSeries",
+    "Conjectures.NuttallVandermonde"
+  ],
+  "required_endpoints": [
+    "NuttallCumulants.abs_cumulantVandermonde_le_prod",
+    "NuttallCumulants.signedCumulantIntegrand_abs_le_majorant",
+    "NuttallCumulants.signedCumulantIntegrand_integrable",
+    "NuttallCumulants.momentMajorant_left_interval_bound",
+    "NuttallCumulants.integral_product_coordinate_cut",
+    "NuttallCumulants.integral_badBox_majorant_le",
+    "NuttallCumulants.signedCumulantIntegrand_bad_box_bound",
+    "NuttallCumulants.moving_box_exact_ratio",
+    "NuttallCumulants.moving_box_eventually_dominates",
+    "NuttallCumulants.positiveBox_eventually_subset_good",
+    "NuttallCumulants.signedCumulantIntegral_large_argument",
+    "NuttallCumulants.signedCumulantIntegral_eventually_pos_of_tail",
+    "NuttallCumulants.signedCumulantHankel_pos_of_integral_pos",
+    "NuttallCumulants.signedCumulantHankel_eventually_pos_of_tail"
+  ],
+  "root": "Conjectures.NuttallDominanceCombine",
+  "schema": "target-complete-closure-verification-v1",
+  "source_sha256": {
+    "lean/Conjectures/NuttallAndreief.lean": "f6cec21962dd5a2dd76f0133c43d8e8c787965e021d7e477c982745727b7f38f",
+    "lean/Conjectures/NuttallBadIntegral.lean": "b655a9165a7d13f8a230899850c7f7eaced92dd83de3da9f3b30ca167993b433",
+    "lean/Conjectures/NuttallDerivativeRatio.lean": "f4a3f7644dac2d13863b8375ce32403d853984d3a5b4069e06180100eb4b878a",
+    "lean/Conjectures/NuttallDifferentiatedMoment.lean": "789bbd0711a7572f05b52de8c6b67dfb1f5dfaa2a46cb3a9e4c07bd55536786d",
+    "lean/Conjectures/NuttallDominanceCombine.lean": "3dd1f3fc10810e1056327f33a2d74a0e2d2185c25104031cde81852eee951f4b",
+    "lean/Conjectures/NuttallHankelAdjacent.lean": "17fdf5a4054dea380957a769b124a7827d66ca87b86fa6d27fa1e3a017bb8bde",
+    "lean/Conjectures/NuttallHankelPolynomial.lean": "147638f9563c06394813ac066ab282eafab46b5421a796d8602f70ff6e897c43",
+    "lean/Conjectures/NuttallHankelTransfer.lean": "cdbf6238c141112aaa07d433a9ec66a664de57268540f3ec56b57f66c4c29621",
+    "lean/Conjectures/NuttallMovingBoxDeterminant.lean": "c88db042bcb382d9c96b254cd8aa875e71d03c62b7f7c674287b6efa65327ecd",
+    "lean/Conjectures/NuttallMovingBoxIntegral.lean": "e873318216725c327e544914baecb4436773c81a0a843a133e74156519e9a681",
+    "lean/Conjectures/NuttallRepeatedTails.lean": "e784bcecce31c292a01aee54d914e8e8b18d936fbfdcd83ca09f4676eabe0081",
+    "lean/Conjectures/NuttallTailCalculus.lean": "a59a07d85649f6b0a9f806db3c08aff3e45a596fda20bf82eb4c56df4c778f96",
+    "lean/Conjectures/NuttallTailDominance.lean": "c99abe5d8642004773d12e3029721572d3ea10c4efc784ffeae6b4f1692ba440",
+    "lean/Conjectures/NuttallTailMoment.lean": "e3a876267caa8ead2415724a9d0eb48f9dc9a9576c567af732817f7e5a159d81",
+    "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9",
+    "lean/Conjectures/NuttallThetaTermDerivatives.lean": "c7b1668b88cad065ce583012785c11ff549d683639e32faecbe8bc20a03d1d4d",
+    "lean/Conjectures/NuttallThetaTermSeries.lean": "c6247a28f43a71381be6c544586309ed3d69dfdb8568b9c0f67c0879ffd97152",
+    "lean/Conjectures/NuttallVandermonde.lean": "1350111ed1eefb8cb57f52a494a16d6a460a8adaf33b5b12051abd1a4b6f35a5"
+  },
+  "started_at": "2026-11-25T11:29:04.626129+00:00",
+  "status": "PASS"
+}

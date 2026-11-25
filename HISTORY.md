@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall negative-region bound and integral dominance
+
+Lean checks the absolute integral bound on the negative region, the exact comparison ratio and the eventual dominance of the positive box. The strict cumulant Hankel sign follows conditionally on the remaining distinct-node theta tail sign. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall lower bound on the moving-box integral
 
 Lean verifies the product-measure volume, the kernel product and signed integrand bounds, and the uniform lower bound after integration on the moving box. This does not control the complement. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
