@@ -718,6 +718,8 @@ Formalized both published delta-process Conjectures 27–28 for every stated par
 
 ## 2026-11-21 — Ekhad–Zeilberger’s most unfair bet conjecture
 
+**November 25 overlap-score checkpoint.** Lean now proves the exact finite overlap covariance identity and the maximum of the unrestricted normalized overlap score, including the two equivalent endpoint forms and strict exclusion of nonconstant losers. The probabilistic asymptotic link and the full-alphabet restriction remain written. [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
+
 **November 25 variance checkpoint.** Lean gives a finite lower variance bound for the literal signed window count at every sample length, using the orthogonality of the two-endpoint projection. Equal interiors with a one-step cross-overlap force zero self-overlaps for nonconstant words. The overlap covariance identity and asymptotic win probability remain separate. [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
 
 **November 25 Lean checkpoint.** The finite overlap bounds, exact constant-loser extremizers, and the variance floor for at least three letters are now verified. The probabilistic expansion and binary projection remain separate. [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).

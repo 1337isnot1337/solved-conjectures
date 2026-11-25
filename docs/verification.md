@@ -291,7 +291,7 @@ The 13-module closure passed strict compilation with warnings treated as errors,
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 
-The partial [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) and [receipt](../results/ekhad-zeilberger-unfair-bet/verification/receipt.json) cover the finite overlap and constant-loser equality theorems and the finite signed-count variance lower bound, not the exact overlap covariance identity or the asymptotic probability formula.
+The partial [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) and [receipt](../results/ekhad-zeilberger-unfair-bet/verification/receipt.json) cover the exact finite overlap covariance identity and the unrestricted normalized overlap-score optimization, including equality. The asymptotic probability formula is not part of this Lean closure.
 
 Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).
 

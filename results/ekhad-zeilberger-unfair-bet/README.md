@@ -4,7 +4,7 @@ In Litt’s game two players count overlapping occurrences of their chosen lengt
 
 The proof also gives the maximizing pair over every finite alphabet. When the two words must jointly contain every letter, as in the sponsor’s ranking code, the ternary maximizer is $1^{k-2}23$ against $1^k$. The proof covers all feasible alphabet sizes. [Sponsor’s Maple package, procedure Mihai](https://sites.math.rutgers.edu/~zeilberg/tokhniot/Litt.txt) · [Exact enumeration check](verify.py)
 
-[Partial Lean verification](FORMALIZATION.md): the finite overlap bounds and exact constant-loser extremizers are checked. The asymptotic probability step remains written.
+[Partial Lean verification](FORMALIZATION.md): the exact finite overlap covariance and the unrestricted normalized score maximum, with all equality cases, are checked. The asymptotic probability step and full-alphabet restriction remain written.
 
 ## Prior work and bounty status
 

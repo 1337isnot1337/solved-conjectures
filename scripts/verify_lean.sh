@@ -257,6 +257,11 @@ modules=(
   Conjectures.EkhadZeilbergerWindowProjection
   Conjectures.EkhadZeilbergerInterior
   Conjectures.EkhadZeilbergerProjection
+  Conjectures.EkhadZeilbergerCylinderIntersection
+  Conjectures.EkhadZeilbergerLagSum
+  Conjectures.EkhadZeilbergerOverlapCovariance
+  Conjectures.EkhadZeilbergerVarianceIdentity
+  Conjectures.EkhadZeilbergerOverlapOptimum
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
