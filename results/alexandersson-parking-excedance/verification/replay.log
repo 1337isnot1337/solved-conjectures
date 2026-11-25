@@ -1,0 +1,7 @@
+Replaying all 5 local project modules imported by Conjectures.AlexanderssonParkingExcedance, including that root (prefix Conjectures)
+replaying Conjectures.AlexanderssonParkingExcedanceRoots
+replaying Conjectures.AlexanderssonParkingExcedanceEnumeration
+replaying Conjectures.AlexanderssonParkingExcedanceWords
+replaying Conjectures.AlexanderssonParkingExcedance
+replaying Conjectures.AlexanderssonParkingExcedanceCount
+PASS: the entire local import closure of Conjectures.AlexanderssonParkingExcedance completed the pinned kernel replay

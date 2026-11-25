@@ -1294,6 +1294,11 @@ import Conjectures.FussCycle
 import Conjectures.FussCounting
 import Conjectures.FussWords
 import Conjectures.FussBlocks
+import Conjectures.AlexanderssonParkingExcedanceWords
+import Conjectures.AlexanderssonParkingExcedanceCount
+import Conjectures.AlexanderssonParkingExcedanceEnumeration
+import Conjectures.AlexanderssonParkingExcedanceRoots
+import Conjectures.AlexanderssonParkingExcedance
 import Conjectures.FussSlot
 import Conjectures.FussFinal
 import Conjectures.FussRoots

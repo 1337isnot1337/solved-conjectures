@@ -66,7 +66,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **51.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **124.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
 | **51.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **124.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | **51.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **124.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
-| **57.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **132.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ⬜ |
+| **57.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **132.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
 | **57.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **132.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
 | **57.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **132.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
 | **57.** [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ✅ | **132.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |

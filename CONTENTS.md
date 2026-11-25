@@ -125,7 +125,7 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
-| [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | Complete computer-assisted disproof of the original universal conjecture. At length 17, the strict excedance enumerator violates the Laguerre inequality at −1/5. Two exact counting recurrences agree on all coefficients. Ordinary descents and other parking statistics are separate. | Not formalized | [Proof](results/alexandersson-parking-excedance/PROOF.md) · [Independent audit](results/alexandersson-parking-excedance/AUDIT.md) · [Exact replay](results/alexandersson-parking-excedance/verify.py) · [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) |
+| [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | Complete computer-assisted disproof of the original universal conjecture. At length 17, the strict excedance enumerator violates the Laguerre inequality at −1/5. Two exact counting recurrences agree on all coefficients. Ordinary descents and other parking statistics are separate. | Complete | [Proof](results/alexandersson-parking-excedance/PROOF.md) · [Lean scope](results/alexandersson-parking-excedance/FORMALIZATION.md) · [Independent audit](results/alexandersson-parking-excedance/AUDIT.md) · [Exact replay](results/alexandersson-parking-excedance/verify.py) · [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) |
 
 ## Long monotone subsequences
 

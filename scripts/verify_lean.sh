@@ -510,6 +510,11 @@ modules=(
   Conjectures.CKZLow
   Conjectures.CKZCertificates
   Conjectures.CKZPolynomial
+  Conjectures.AlexanderssonParkingExcedanceWords
+  Conjectures.AlexanderssonParkingExcedanceCount
+  Conjectures.AlexanderssonParkingExcedanceEnumeration
+  Conjectures.AlexanderssonParkingExcedanceRoots
+  Conjectures.AlexanderssonParkingExcedance
   Conjectures.FussRoots
   Conjectures.FussBlocks
   Conjectures.FussSlot
