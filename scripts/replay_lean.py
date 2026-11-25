@@ -142,11 +142,15 @@ def checker_command(prefixes):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", help="replay one project root's exact local import closure")
+    parser.add_argument("--per-module", action="store_true",
+                        help="run a fresh stock checker process for each scoped module")
     parser.add_argument("--lean-dir", type=Path,
                         default=Path(__file__).resolve().parent.parent / "lean",
                         help="Lean package directory (needed when testing a copy outside scripts/)")
     parser.add_argument("modules", nargs="*", help="complete accepted-module list")
     args = parser.parse_args(argv)
+    if args.per_module and args.root is None:
+        parser.error("--per-module requires --root")
     lean = args.lean_dir.resolve()
     build = lean / ".lake/build/lib/lean"
     try:
@@ -184,10 +188,12 @@ def main(argv=None):
         else:
             print(f"Replaying all {len(closure)} local project modules imported by "
                   f"{args.root}, including that root (prefix {prefixes[0]})", flush=True)
-        result = subprocess.run(checker_command(prefixes), cwd=lean,
-                                env=environment, check=False)
-        if result.returncode:
-            raise SystemExit(result.returncode)
+        targets = [[module] for module in sorted(closure)] if args.per_module else [prefixes]
+        for target in targets:
+            result = subprocess.run(checker_command(target), cwd=lean,
+                                    env=environment, check=False)
+            if result.returncode:
+                raise SystemExit(result.returncode)
         if args.root is None:
             print("PASS: every accepted module completed the pinned kernel replay", flush=True)
         else:

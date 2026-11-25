@@ -49,12 +49,12 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **33.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **111.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
 | **38.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **111.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | **38.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **111.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ⬜ |
-| **38.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **111.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | ⬜ |
+| **38.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **111.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | 🟡 |
 | **38.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **116.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | **38.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **116.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | **38.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **116.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
 | **38.** [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ | **116.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
-| **45.** [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | 🟡 | **120.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
+| **45.** [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ✅ | **120.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | **45.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ✅ | **120.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **45.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ✅ | **120.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | **45.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **120.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |

@@ -29,6 +29,8 @@ def main() -> None:
     parser.add_argument("--root", required=True)
     parser.add_argument("--require", action="append", required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--per-module-replay", action="store_true",
+                        help="replay each scoped module in its own stock checker process")
     args = parser.parse_args()
     repo = Path(__file__).resolve().parents[1]
     lean = repo / "lean"
@@ -88,8 +90,11 @@ def main() -> None:
     modern = {module: next(replay.header_tokens(source(module).read_text()), None) == "module"
               for module in modules}
     validated = audit.validate_log((out / "audit.log").read_text(), spec, modern)
-    run(["lake", "env", "python3", str(repo / "scripts/replay_lean.py"),
-         "--root", args.root], "replay.log")
+    replay_command = ["lake", "env", "python3", str(repo / "scripts/replay_lean.py"),
+                      "--root", args.root]
+    if args.per_module_replay:
+        replay_command.append("--per-module")
+    run(replay_command, "replay.log")
     after = {str(path.relative_to(repo)): sha(path) for path in inputs}
     if after != before:
         raise RuntimeError("Proof or verification inputs changed during verification")

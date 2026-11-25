@@ -1,66 +1,134 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-25T12:14:01.857989+00:00",
-  "finished_at": "2026-11-25T12:17:24.597234+00:00",
-  "root": "Conjectures.HKMEhrhartPartial",
+  "started_at": "2026-11-25T12:56:37.699791+00:00",
+  "finished_at": "2026-11-25T13:01:39.469558+00:00",
+  "root": "Conjectures.HKMEhrhartDegreeBridge",
   "project_modules": [
     "Conjectures.AlexanderssonParkingExcedanceRoots",
     "Conjectures.HKMEhrhart",
+    "Conjectures.HKMEhrhartClipCount",
     "Conjectures.HKMEhrhartConvolution",
     "Conjectures.HKMEhrhartCountBridge",
     "Conjectures.HKMEhrhartCountCertificate",
+    "Conjectures.HKMEhrhartDegreeBridge",
+    "Conjectures.HKMEhrhartEhrhartViaAssembly",
     "Conjectures.HKMEhrhartGeometry",
     "Conjectures.HKMEhrhartLiteralCounts",
     "Conjectures.HKMEhrhartLocalCount",
-    "Conjectures.HKMEhrhartPartial",
-    "Conjectures.HKMEhrhartSufficiency"
+    "Conjectures.HKMEhrhartPairViolation",
+    "Conjectures.HKMEhrhartPolynomialAssembly",
+    "Conjectures.HKMEhrhartPolynomialSum",
+    "Conjectures.HKMEhrhartSignedBudget",
+    "Conjectures.HKMEhrhartStarsBars",
+    "Conjectures.HKMEhrhartSufficiency",
+    "Conjectures.HKMEhrhartSupportShells",
+    "Conjectures.HKMEhrhartUnclippedPolynomial",
+    "Conjectures.HKMEhrhartViolationBudget"
   ],
   "required_endpoints": [
-    "HKMEhrhart.card_pairs",
     "HKMEhrhart.hkm_lattice_mass_iff",
-    "HKMEhrhart.card_PairCell",
-    "HKMEhrhart.card_MassConfig_succ",
-    "HKMEhrhart.card_MassConfig_eq_convolutionCount",
-    "HKMEhrhart.makeConvolutionTable_correct",
-    "HKMEhrhart.cocktail_lattice_iff_pairs",
-    "HKMEhrhart.computedDiagonalLatticeCount_eq_literal",
-    "HKMEhrhart.cocktail_six_values_computed",
     "HKMEhrhart.cocktail_six_literal_lattice_counts",
-    "HKMEhrhart.off_line_of_literal_lattice_counts"
+    "HKMEhrhart.massShell_supportEquiv",
+    "HKMEhrhart.unclippedPolynomial_eval",
+    "HKMEhrhart.unclippedPolynomial_degree",
+    "HKMEhrhart.signedBudget_card_succ_dim",
+    "HKMEhrhart.signedBudgetPolynomial_eval",
+    "HKMEhrhart.pairViolationEquiv",
+    "HKMEhrhart.pairViolation_natCard",
+    "HKMEhrhart.pairViolationPolynomial_eval",
+    "HKMEhrhart.pairViolationPolynomial_degree",
+    "HKMEhrhart.cocktail_cap_unique",
+    "HKMEhrhart.unclipped_card_eq_clipped_add_violations",
+    "HKMEhrhart.assemble_counting_polynomial",
+    "HKMEhrhart.cocktailSixEhrhart_exists",
+    "HKMEhrhart.cocktailSixEhrhart_eval",
+    "HKMEhrhart.cocktailSixEhrhart_degree",
+    "HKMEhrhart.cocktailSixEhrhart_unique",
+    "HKMEhrhart.cocktailSixEhrhart_off_line",
+    "HKMEhrhart.cocktailSix_no_canonical_line_interlacing",
+    "HKMEhrhart.conjecture_4_10_counterexample"
   ],
   "source_sha256": {
     "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
     "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
+    "lean/Conjectures/HKMEhrhartClipCount.lean": "aebdfb33054632d0ba316dcff1d1aab28bc8916fdceb8f5dfb1bac6dbb85f5c9",
     "lean/Conjectures/HKMEhrhartConvolution.lean": "e26be9c34ca7279063ad0a5864d75171507a1a1388ac8ce0ca8f562f4934dc6d",
     "lean/Conjectures/HKMEhrhartCountBridge.lean": "0dfca3f745974817153972c2f4c0e85796884c8a298e27138e4df55749ffdd73",
     "lean/Conjectures/HKMEhrhartCountCertificate.lean": "817dcaee9c5092d5b39a946e3dd50edf52f3f4c47218035db9b602cc7c96f354",
+    "lean/Conjectures/HKMEhrhartDegreeBridge.lean": "1430dbc6381a97803944ff355757f39d663fdfc78e749d75accd6bc91640d0fc",
+    "lean/Conjectures/HKMEhrhartEhrhartViaAssembly.lean": "f50b13668bf76a7cf8ead5a9098d13ecdac1d4d10609d571a358393e599347af",
     "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
     "lean/Conjectures/HKMEhrhartLiteralCounts.lean": "b43accf382699275f0940cd5163c53d95a792255996a61f544934885a331e1cc",
     "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
-    "lean/Conjectures/HKMEhrhartPartial.lean": "4df6a51b924f21d291a042f03f5167ac96db7abc0fafc8a4049d4ed9a7d4a90f",
-    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251"
+    "lean/Conjectures/HKMEhrhartPairViolation.lean": "9fa53f642a290c2d6b863793502c2ea2694b4243222721cae18c5ee837c56bf0",
+    "lean/Conjectures/HKMEhrhartPolynomialAssembly.lean": "68b072086d1fd7d50f1afcfbf963487796d7541c2028c85783dee249785640ba",
+    "lean/Conjectures/HKMEhrhartPolynomialSum.lean": "78e76342c9888b157661ad96fdd707675b81f5c28fb00e0a87e293df5f3b2193",
+    "lean/Conjectures/HKMEhrhartSignedBudget.lean": "56e5456097b9071835dbd3d4350a1c5a0d5a634da025b8e3dc139db14e7fc72f",
+    "lean/Conjectures/HKMEhrhartStarsBars.lean": "b30a3d9d8fa21481233803ce465d0b425482ac54a488aed936379dce32c92efa",
+    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251",
+    "lean/Conjectures/HKMEhrhartSupportShells.lean": "163dbab34bb835f5b4a9cbfdf9a7da561f354534c02e215bc5d40b7bdead1040",
+    "lean/Conjectures/HKMEhrhartUnclippedPolynomial.lean": "fbcb88b288d133aa77ec816a010037de127b7fe96ce1702c34628ee14a7790b6",
+    "lean/Conjectures/HKMEhrhartViolationBudget.lean": "c6dba082f3f6c01fd9689eaed003e6c67cf0666e07159878acf0ea243f361532"
   },
   "input_sha256": {
     "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
     "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
+    "lean/Conjectures/HKMEhrhartClipCount.lean": "aebdfb33054632d0ba316dcff1d1aab28bc8916fdceb8f5dfb1bac6dbb85f5c9",
     "lean/Conjectures/HKMEhrhartConvolution.lean": "e26be9c34ca7279063ad0a5864d75171507a1a1388ac8ce0ca8f562f4934dc6d",
     "lean/Conjectures/HKMEhrhartCountBridge.lean": "0dfca3f745974817153972c2f4c0e85796884c8a298e27138e4df55749ffdd73",
     "lean/Conjectures/HKMEhrhartCountCertificate.lean": "817dcaee9c5092d5b39a946e3dd50edf52f3f4c47218035db9b602cc7c96f354",
+    "lean/Conjectures/HKMEhrhartDegreeBridge.lean": "1430dbc6381a97803944ff355757f39d663fdfc78e749d75accd6bc91640d0fc",
+    "lean/Conjectures/HKMEhrhartEhrhartViaAssembly.lean": "f50b13668bf76a7cf8ead5a9098d13ecdac1d4d10609d571a358393e599347af",
     "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
     "lean/Conjectures/HKMEhrhartLiteralCounts.lean": "b43accf382699275f0940cd5163c53d95a792255996a61f544934885a331e1cc",
     "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
-    "lean/Conjectures/HKMEhrhartPartial.lean": "4df6a51b924f21d291a042f03f5167ac96db7abc0fafc8a4049d4ed9a7d4a90f",
+    "lean/Conjectures/HKMEhrhartPairViolation.lean": "9fa53f642a290c2d6b863793502c2ea2694b4243222721cae18c5ee837c56bf0",
+    "lean/Conjectures/HKMEhrhartPolynomialAssembly.lean": "68b072086d1fd7d50f1afcfbf963487796d7541c2028c85783dee249785640ba",
+    "lean/Conjectures/HKMEhrhartPolynomialSum.lean": "78e76342c9888b157661ad96fdd707675b81f5c28fb00e0a87e293df5f3b2193",
+    "lean/Conjectures/HKMEhrhartSignedBudget.lean": "56e5456097b9071835dbd3d4350a1c5a0d5a634da025b8e3dc139db14e7fc72f",
+    "lean/Conjectures/HKMEhrhartStarsBars.lean": "b30a3d9d8fa21481233803ce465d0b425482ac54a488aed936379dce32c92efa",
     "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251",
+    "lean/Conjectures/HKMEhrhartSupportShells.lean": "163dbab34bb835f5b4a9cbfdf9a7da561f354534c02e215bc5d40b7bdead1040",
+    "lean/Conjectures/HKMEhrhartUnclippedPolynomial.lean": "fbcb88b288d133aa77ec816a010037de127b7fe96ce1702c34628ee14a7790b6",
+    "lean/Conjectures/HKMEhrhartViolationBudget.lean": "c6dba082f3f6c01fd9689eaed003e6c67cf0666e07159878acf0ea243f361532",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
     "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
-    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
-    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
   },
   "lean_toolchain": "leanprover/lean4:v4.35.0",
   "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
   "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartLocalCount.olean",
+        "Conjectures/HKMEhrhartLocalCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartLocalCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartConvolution.olean",
+        "Conjectures/HKMEhrhartConvolution.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartConvolution.compile.log"
+    },
     {
       "command": [
         "lake",
@@ -88,20 +156,6 @@
       ],
       "exit_code": 0,
       "log": "Conjectures.HKMEhrhart.compile.log"
-    },
-    {
-      "command": [
-        "lake",
-        "env",
-        "lean",
-        "-j1",
-        "-DwarningAsError=true",
-        "-o",
-        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartLocalCount.olean",
-        "Conjectures/HKMEhrhartLocalCount.lean"
-      ],
-      "exit_code": 0,
-      "log": "Conjectures.HKMEhrhartLocalCount.compile.log"
     },
     {
       "command": [
@@ -139,11 +193,151 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartConvolution.olean",
-        "Conjectures/HKMEhrhartConvolution.lean"
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartCountBridge.olean",
+        "Conjectures/HKMEhrhartCountBridge.lean"
       ],
       "exit_code": 0,
-      "log": "Conjectures.HKMEhrhartConvolution.compile.log"
+      "log": "Conjectures.HKMEhrhartCountBridge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartStarsBars.olean",
+        "Conjectures/HKMEhrhartStarsBars.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartStarsBars.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartPolynomialSum.olean",
+        "Conjectures/HKMEhrhartPolynomialSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartPolynomialSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartSupportShells.olean",
+        "Conjectures/HKMEhrhartSupportShells.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartSupportShells.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartUnclippedPolynomial.olean",
+        "Conjectures/HKMEhrhartUnclippedPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartUnclippedPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartPairViolation.olean",
+        "Conjectures/HKMEhrhartPairViolation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartPairViolation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartSignedBudget.olean",
+        "Conjectures/HKMEhrhartSignedBudget.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartSignedBudget.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartViolationBudget.olean",
+        "Conjectures/HKMEhrhartViolationBudget.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartViolationBudget.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartClipCount.olean",
+        "Conjectures/HKMEhrhartClipCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartClipCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartPolynomialAssembly.olean",
+        "Conjectures/HKMEhrhartPolynomialAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartPolynomialAssembly.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartEhrhartViaAssembly.olean",
+        "Conjectures/HKMEhrhartEhrhartViaAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartEhrhartViaAssembly.compile.log"
     },
     {
       "command": [
@@ -167,20 +361,6 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartCountBridge.olean",
-        "Conjectures/HKMEhrhartCountBridge.lean"
-      ],
-      "exit_code": 0,
-      "log": "Conjectures.HKMEhrhartCountBridge.compile.log"
-    },
-    {
-      "command": [
-        "lake",
-        "env",
-        "lean",
-        "-j1",
-        "-DwarningAsError=true",
-        "-o",
         "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartLiteralCounts.olean",
         "Conjectures/HKMEhrhartLiteralCounts.lean"
       ],
@@ -195,11 +375,11 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartPartial.olean",
-        "Conjectures/HKMEhrhartPartial.lean"
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartDegreeBridge.olean",
+        "Conjectures/HKMEhrhartDegreeBridge.lean"
       ],
       "exit_code": 0,
-      "log": "Conjectures.HKMEhrhartPartial.compile.log"
+      "log": "Conjectures.HKMEhrhartDegreeBridge.compile.log"
     },
     {
       "command": [
@@ -220,7 +400,8 @@
         "python3",
         "scripts/replay_lean.py",
         "--root",
-        "Conjectures.HKMEhrhartPartial"
+        "Conjectures.HKMEhrhartDegreeBridge",
+        "--per-module"
       ],
       "exit_code": 0,
       "log": "replay.log"
@@ -232,13 +413,13 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 953,
-    "modules": 10,
-    "private_declarations": 792,
-    "raw_declarations": 953,
-    "required": 11,
+    "declarations": 1269,
+    "modules": 20,
+    "private_declarations": 908,
+    "raw_declarations": 1269,
+    "required": 21,
     "tag": "passed",
-    "theorems": 821
+    "theorems": 1066
   },
   "full_repository_gate": "not run by this target-scoped helper",
   "status": "PASS",

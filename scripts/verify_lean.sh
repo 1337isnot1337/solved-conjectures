@@ -247,6 +247,11 @@ modules=(
   Conjectures.SokalAperyLegendre
   Conjectures.SokalAperyTorus
   Conjectures.SokalAperyMomentThreshold
+  Conjectures.EkhadZeilbergerOverlap
+  Conjectures.EkhadZeilbergerWords
+  Conjectures.EkhadZeilbergerEquality
+  Conjectures.EkhadZeilbergerCrossOverlap
+  Conjectures.EkhadZeilbergerFiniteOverlap
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
@@ -541,6 +546,9 @@ modules=(
   Conjectures.HKMEhrhartSignedBudget
   Conjectures.HKMEhrhartPairViolation
   Conjectures.HKMEhrhartViolationBudget
+  Conjectures.HKMEhrhartClipCount
+  Conjectures.HKMEhrhartPolynomialAssembly
+  Conjectures.HKMEhrhartEhrhartViaAssembly
   Conjectures.HKMEhrhartDegreeBridge
   Conjectures.FussRoots
   Conjectures.FussBlocks

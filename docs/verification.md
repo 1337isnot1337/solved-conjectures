@@ -2,7 +2,7 @@
 
 ## Higashitani–Kummer–Michałek conjecture
 
-The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, all-owned verification and stock replay for the ten-module partial closure, including the literal count identity and its twelve certified values. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
+The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, the all-owned axiom audit and stock replay for the `Conjectures.HKMEhrhartDegreeBridge` closure. It includes exact lattice membership, polynomial counting at every dilation, the degree bound, uniqueness, and the off-line root of the literal Ehrhart polynomial. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
 
 ## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
 
@@ -290,6 +290,8 @@ repository gate and hosted verification of this checkpoint remain separate.
 The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. The [receipt](verification/lean-named-20261121/bernardi-receipt.json) records exact source/object hashes and toolchain pins; [source records](verification/lean-named-20261121/bernardi-source-evidence.json) preserve all 13 strict successes; the [kernel log](verification/lean-named-20261121/bernardi-kernel.log) covers the exact local module union. The scope is the full fixed-map tree and fixed-surjection event identities, including their source semantics. The combined repository gate is not claimed by this checkpoint.
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
+
+The partial [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) and [receipt](../results/ekhad-zeilberger-unfair-bet/verification/receipt.json) cover the exact finite overlap and constant-loser equality theorems, not the asymptotic probability formula.
 
 Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).
 

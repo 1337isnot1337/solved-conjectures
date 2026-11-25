@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify the Higashitani–Kummer–Michałek counterexample in Lean
+
+Lean constructs the unique Ehrhart polynomial of the literal six-pair polytope, proves its degree bound and count identity at every natural dilation, and checks a root off the canonical line. This refutes both published clauses; the independent Wronskian and stronger canonical-line witness remain written supplements. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
+
 ## 2026-11-25 — HKM literal lattice-point counts in Lean
 
 Lean verifies the convolution for the literal six-part lattice count and checks all twelve evaluations used in the root certificate. The off-line root follows for any degree-at-most-eleven polynomial with the literal counts. The corresponding Ehrhart polynomial degree and existence are not yet verified. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
@@ -713,6 +717,8 @@ The combined repository gate and hosted validation remain pending.
 Formalized both published delta-process Conjectures 27–28 for every stated parameter, using literal subset tuples, cyclic interval events and the next-complement delta rule. The tree count allows arbitrary fixed color maps; the event identity and source probability determinant use fixed surjections. The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. Updated the complete result-level badge and all registrations. The shared-package gate remains pending.
 
 ## 2026-11-21 — Ekhad–Zeilberger’s most unfair bet conjecture
+
+**November 25 Lean checkpoint.** The finite overlap bounds, exact constant-loser extremizers, and the variance floor for at least three letters are now verified. The probabilistic expansion and binary projection remain separate. [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md).
 
 Proved the extremal asymptotic advantage for every word length from a variance lower bound for overlapping occurrences. The proof also classifies extremizers with and without a full-alphabet requirement. [Proof and checker](results/ekhad-zeilberger-unfair-bet/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/219)
 
