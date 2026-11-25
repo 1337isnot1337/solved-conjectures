@@ -2,7 +2,7 @@
 
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture
 
-Partial. Lean verifies the actual normalized-set counting recurrence, the exact repeated-digit identities, the unbounded remainder for its increasing enumeration, and nonperiodicity. The regularity arguments and the identification with the partition function remain outside the Lean scope. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+Partial. Lean verifies the actual normalized set, its logarithmic and unbounded remainder, and the source-layer enumeration’s nonregularity in every power-of-two base. The other bases and the identification with the partition function remain outside the Lean scope. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 

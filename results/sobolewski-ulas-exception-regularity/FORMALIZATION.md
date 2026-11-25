@@ -20,11 +20,25 @@ The proposal is [Sobolewski and Ulas, Conjecture 7.1](https://link.springer.com/
 3. An [elementary parity argument](../../lean/Conjectures/SobolewskiUlasExceptionNonperiodic.lean)
    proves that membership in this normalized set is not ultimately periodic.
 
-The identification with the original binary partition function,
-the logarithmic upper bound on the remainder, the finite linear
-representation argument for powers of two, and the Cobham–Durand
-transfer for other bases are outside this check. In particular the
-unboundedness theorem is not a Lean disproof of regularity by itself.
+## All power-of-two bases
+
+The [logarithmic bound](../../lean/Conjectures/SobolewskiUlasExceptionCarry.lean)
+controls the exact remainder by comparing high base-sixteen prefixes.
+Lean also verifies the [repeated digit word](../../lean/Conjectures/SobolewskiUlasExceptionRepeatedInput.lean)
+and the [base-power and finite linear representation arguments](../../lean/Conjectures/SobolewskiUlasExceptionRegularPowers.lean).
+The exact [source-layer enumeration](../../lean/Conjectures/SobolewskiUlasExceptionSourceLayer.lean)
+is not regular in any positive power of two, including after restoring
+the author's positive indexing and factor of two. The proof replaces the
+written characteristic-root argument with an integer-state pigeonhole:
+a logarithmically bounded finite window has fewer possible recurrence
+states than starting positions. A repeated state forces subsequent
+repetition, which contradicts the proved unbounded remainder.
+
+Lean also checks the positive gap bound of twelve. The [power-of-two
+receipt](verification/powers-of-two/receipt.json) covers these statements.
+The identification with the actual binary partition function and the
+Cobham–Durand transfer for bases that are not powers of two remain
+outside the Lean proof. Thus Conjecture 7.1 is still marked partial.
 
 The [receipt](verification/normalized-counting/receipt.json) records
 strict compilation, the audit of all owned declarations, and stock
