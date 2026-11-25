@@ -37,10 +37,17 @@ using the Eulerian transformation credited to Rossi.
   explicit. [The bulk binomial estimate](../../lean/Conjectures/RossiPermutohedronBulkBinomial.lean)
   proves the lower bound from the quadratic coefficient alone.
 
-The uniform sign estimates, the exact finite grid witnesses below 128,
-the identification of the recurrence with the actual descent enumerator,
-and the equality with the literal face-lattice characteristic polynomial
-are **not** established by this Lean scope. See the [written proof](PROOF.md)
-and [original audit](AUDIT.md).
+- [Bulk sign](../../lean/Conjectures/RossiPermutohedronBulkGrid.lean):
+  if `n ≥ 128`, `n < 9*j^2`, and `2*j < n+1`, Lean proves the exact
+  prescribed sign with magnitude strictly above one at
+  `x = π*cot(π*j/(n+1))`. The remaining conjugate pairs have a strictly
+  smaller total norm than half of the nearest-pole term. A factorial
+  lower bound gives the required unit-level margin.
 
-The [root-count receipt](verification/receipt.json) and [analytic receipt](verification/analytic/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay.
+The central grid coordinate, the reflected half, the near-endpoint
+regime, the exact finite grid witnesses below 128, the identification
+with the actual descent enumerator, and the literal face-lattice
+characteristic polynomial are **not** established by this Lean scope.
+See the [written proof](PROOF.md) and [original audit](AUDIT.md).
+
+The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json) and [bulk-sign receipt](verification/bulk/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay.
