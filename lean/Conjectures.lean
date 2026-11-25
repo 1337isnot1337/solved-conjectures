@@ -1324,6 +1324,10 @@ import Conjectures.OrdinaryDarcaisData
 import Conjectures.OrdinaryDarcaisFinite
 import Conjectures.OrdinaryDarcaisCentral
 import Conjectures.OrdinaryDarcaisRoot
+import Conjectures.PantoneBonaTerminal
+import Conjectures.PantoneBonaTerminalLimit
+import Conjectures.PantoneBonaTerminalWalk
+import Conjectures.PantoneBonaSecondLargestTerminal
 import Conjectures.FussSlot
 import Conjectures.FussFinal
 import Conjectures.FussRoots

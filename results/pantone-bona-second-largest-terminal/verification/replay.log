@@ -1,0 +1,6 @@
+Replaying all 4 local project modules imported by Conjectures.PantoneBonaSecondLargestTerminal, including that root (prefix Conjectures)
+replaying Conjectures.PantoneBonaSecondLargestTerminal
+replaying Conjectures.PantoneBonaTerminal
+replaying Conjectures.PantoneBonaTerminalLimit
+replaying Conjectures.PantoneBonaTerminalWalk
+PASS: the entire local import closure of Conjectures.PantoneBonaSecondLargestTerminal completed the pinned kernel replay
