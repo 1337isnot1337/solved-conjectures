@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Formalize the literal weighted complete-graph Möbius polynomial
+
+Lean checks the finite weighted bond order, rank and recursive Möbius
+values. The literal polynomial reduces to the verified Laguerre
+expression through the explicit EGF/Lagrange input.
+[Scope and receipts](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the complete-graph Laguerre formal-series calculation
 
 Lean checks the actual equal-variable homogeneous coefficients and the
