@@ -11,6 +11,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 import html
+import functools
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -291,6 +292,31 @@ def slugify(value: str) -> str:
 def git(*args: str) -> str:
     result = subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True)
     return result.stdout.strip() if result.returncode == 0 else ""
+
+
+@functools.cache
+def pandoc_renders_tag() -> bool:
+    """Whether this Pandoc's MathML writer accepts ``\\tag``.
+
+    Pandoc 3.1 (the version Ubuntu 24.04 packages, which CI and the Pages
+    host use) renders ``\\tag{n}`` as an equation label. Later 3.x releases
+    reject it ("unexpected control sequence \\tag"), which stops the build.
+    """
+    result = subprocess.run(
+        ["pandoc", "--from", "markdown", "--to", "html5", "--mathml"],
+        input="$$a=b \\tag{1}$$", capture_output=True, text=True,
+    )
+    return result.returncode == 0 and "Could not convert TeX math" not in result.stderr
+
+
+TAG = re.compile(r"\\tag\*?\{([^{}]*)\}")
+
+
+def portable_tags(formula: str) -> str:
+    """Write ``\\tag{n}`` as a trailing ``(n)`` where Pandoc cannot label it."""
+    if "\\tag" not in formula or pandoc_renders_tag():
+        return formula
+    return TAG.sub(lambda match: "\\qquad(\\text{" + match.group(1) + "})", formula)
 
 
 def pandoc(arguments, *, text=None) -> str:
@@ -617,6 +643,7 @@ class Builder:
                 # Pandoc's math reader accepts modern \mathrm, while the
                 # source notes also use TeX's equivalent scoped \rm form.
                 node["c"][1] = re.sub(r"\{\\rm\s+([^{}]+)\}", lambda match: "{\\mathrm{" + match.group(1) + "}}", node["c"][1])
+                node["c"][1] = portable_tags(node["c"][1])
         rendered = pandoc(["--from", "json", "--to", "html5", "--mathml", "--wrap=none"], text=json.dumps(ast))
         return rendered, toc
 
