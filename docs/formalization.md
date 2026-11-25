@@ -4,8 +4,8 @@
 
 Partial. Lean verifies the reduction to prime-spectrum-minimal groups,
 the quotient and kernel cardinality argument, the actual action
-on simple factors, the cycle equations, and the factor-stabilizer
-restriction that transfers the prime spectrum from closed words.
+on simple factors, the indexed cycle partition and spanning-tree
+extension, and the prime-spectrum transfer from closed words.
 [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
 

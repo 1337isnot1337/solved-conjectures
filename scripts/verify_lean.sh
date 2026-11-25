@@ -136,6 +136,8 @@ modules=(
   Conjectures.ShumyatskySimpleFactors
   Conjectures.ShumyatskyWalkLabels
   Conjectures.ShumyatskyCyclicTransport
+  Conjectures.ShumyatskyPermutationCycles
+  Conjectures.ShumyatskyCycleForest
   Conjectures.ShumyatskyStabilizer
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel

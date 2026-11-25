@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify the permutation cycles and spanning tree in Shumyatsky’s lift
+
+Lean constructs the actual indexed cycles and a spanning tree preserving
+all cut-cycle paths. Directed representatives and independent labels remain.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify cyclic gluing and the factor-stabilizer prime transfer
 
 Lean checks the actual product conjugator from the paired cycle data
