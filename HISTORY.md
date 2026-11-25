@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify the two Rossi series expansions in Lean
+
+Lean connects the Eulerian recurrence to both analytic series, evaluates the exact nearest conjugate poles, and proves the bulk quadratic binomial estimate. The uniform signs and finite-grid witnesses remain separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Rossi’s root-count reduction in Lean
 
 Lean proves that an exact alternating negative grid gives the prescribed simple roots, using the Eulerian recurrence's degree and derivative and Rossi’s reciprocal change of variable. The two sign-grid regimes and characteristic-polynomial identification remain to be formalized. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).

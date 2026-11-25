@@ -25,12 +25,22 @@ using the Eulerian transformation credited to Rossi.
   and the positive root into `(1,∞)`. Lean proves the exact multiset of
   roots of the transformed polynomial.
 
-The exponential and conjugate-pole estimates for the uniform sign grid,
-the exact finite grid witnesses below 128, the identification of the
-recurrence with the actual descent enumerator, and the equality with the
-literal face-lattice characteristic polynomial are **not** established by
-this Lean scope. They are separate from the reduction above. See the
-[written proof](PROOF.md) and [original audit](AUDIT.md).
+- [Analytic expansions](../../lean/Conjectures/RossiPermutohedronAnalyticExpansions.lean):
+  for positive real grid coordinate, both the exponential series and the
+  odd-imaginary-pole expansion are proved for the actual Eulerian
+  recurrence expression. The power series is differentiated on smaller
+  disks; the pole identity uses Mathlib’s differentiated cotangent
+  series and proves the exact affine change and sign.
+- [Nearest poles](../../lean/Conjectures/RossiPermutohedronNearestPoles.lean):
+  the two nearest conjugate poles contribute exactly the signed
+  trigonometric term on the grid. The squared norms of all poles are
+  explicit. [The bulk binomial estimate](../../lean/Conjectures/RossiPermutohedronBulkBinomial.lean)
+  proves the lower bound from the quadratic coefficient alone.
 
-The [scoped receipt](verification/receipt.json) records strict compilation,
-the complete owned-declaration axiom audit, and pinned stock-kernel replay.
+The uniform sign estimates, the exact finite grid witnesses below 128,
+the identification of the recurrence with the actual descent enumerator,
+and the equality with the literal face-lattice characteristic polynomial
+are **not** established by this Lean scope. See the [written proof](PROOF.md)
+and [original audit](AUDIT.md).
+
+The [root-count receipt](verification/receipt.json) and [analytic receipt](verification/analytic/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay.

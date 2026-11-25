@@ -298,6 +298,14 @@ modules=(
   Conjectures.RossiPermutohedronReduction
   Conjectures.RossiPermutohedronEulerianData
   Conjectures.RossiPermutohedronEulerianDegree
+  Conjectures.RossiPermutohedronRational
+  Conjectures.RossiPermutohedronCotEulerian
+  Conjectures.RossiPermutohedronPoles
+  Conjectures.RossiPermutohedronGeometric
+  Conjectures.RossiPermutohedronAnalyticExpansions
+  Conjectures.RossiPermutohedronNearestPoles
+  Conjectures.RossiPermutohedronBulkBinomial
+  Conjectures.RossiPermutohedronAnalyticPartial
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
