@@ -26,6 +26,7 @@ modules=(
   Conjectures.NuttallHankelTransfer
   Conjectures.NuttallTailDominance
   Conjectures.NuttallDerivativeRatio
+  Conjectures.NuttallMovingBoxDeterminant
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation

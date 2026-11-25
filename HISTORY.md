@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall derivative determinant on the moving box
+
+Lean verifies the uniform signed lower bound in §6 (15) on the specified box, including a quantitative Vandermonde perturbation estimate and the exact factors removed from rows and columns. This does not yet compare the signed integrals. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall uniform theta derivative ratios
 
 Lean verifies the inverse-scale error bound on the normalized derivative ratios used for the positive-box estimate. One error constant and one threshold work for any fixed finite range of orders. The determinant lower bound itself is not claimed. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
