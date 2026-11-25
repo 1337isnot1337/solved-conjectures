@@ -7,3 +7,5 @@ Complete proposed disproof of Conjecture 4.3 as stated in arXiv:2108.01827v2. Th
 - [Discovery and review thread](https://github.com/1337isnot1337/solved-conjectures/issues/137)
 
 Lean status: none. Internally reviewed and unrefereed. Attribution and prior-art limitations are preserved in the proof and audit.
+
+- [Complete Lean formalization of Conjecture 4.3](FORMALIZATION.md)

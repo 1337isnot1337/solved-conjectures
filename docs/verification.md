@@ -1,5 +1,9 @@
 # Verification
 
+## Wagner's Laguerre-operator conjecture
+
+The exact module `Conjectures.WagnerLaguerreOperator` passed pinned strict compilation, a complete transitive axiom audit, and stock kernel replay. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) contains the focused command; see the [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json). The aggregate repository check is separate.
+
 ## Ma–Tang’s random subset-sum threshold conjecture
 
 The exact 32-module closure was strict-built and stock-replayed with pinned Lean 4.35.0; the complete transitive axiom gate checked 1,514 declarations and 31 explicit endpoints. The aggregate repository run is separate. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) includes the scoped reproducible command; see the [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json).
