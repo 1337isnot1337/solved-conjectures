@@ -6,6 +6,12 @@ Lean verifies the bounded-error reciprocal-prime estimate using exact
 Mangoldt counts and Abel summation.
 [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the two available directed moves in Shumyatsky’s lift
+
+Lean selects directed tree representatives and one unused return
+move in every second cycle, with two further nontree moves available.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the permutation cycles and spanning tree in Shumyatsky’s lift
 
 Lean constructs the actual indexed cycles and a spanning tree preserving

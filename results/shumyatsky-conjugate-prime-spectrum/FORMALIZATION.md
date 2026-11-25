@@ -66,14 +66,22 @@ and the source credits in the [audit](AUDIT.md).
   cannot add an edge inside a cut cycle unless that edge is already a
   surviving path edge.
 
-The solvable-radical reduction, the selection of directed representatives and two independently variable
-closed walks, the almost-simple generation
+- [Directed tree moves](../../lean/Conjectures/ShumyatskyDirectedTreeMoves.lean).
+  For transitive conjugate permutations on at least two factors, Lean
+  selects one directed move per tree edge, a distinct unused return
+  move in every second cycle, and two remaining distinct moves outside
+  both sets. The proof distinguishes loops and parallel moves by their
+  generator and tail, including a two-cycle whose opposite moves
+  share endpoints.
+
+The solvable-radical reduction, the realization of independent label choices along the two closed
+walks, the almost-simple generation
 inputs, and the simultaneous lift across the socle remain outside
 this partial check.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. All nine scopes passed.
+checker. All ten scopes passed.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
 [Cycle-label receipt](verification/cycle-labels/receipt.json) ·
 [Factor-action receipt](verification/factor-action/receipt.json) ·
@@ -82,4 +90,5 @@ checker. All nine scopes passed.
 [Cyclic-transport receipt](verification/cyclic-transport/receipt.json) ·
 [Factor-stabilizer receipt](verification/stabilizer/receipt.json) ·
 [Permutation-cycle receipt](verification/permutation-cycles/receipt.json) ·
-[Spanning-tree receipt](verification/cycle-forest/receipt.json).
+[Spanning-tree receipt](verification/cycle-forest/receipt.json) ·
+[Directed-moves receipt](verification/directed-moves/receipt.json).
