@@ -1,4 +1,5 @@
 import Conjectures.CaioloFerroniHosterRankWitness
+import Conjectures.CaioloFerroniHosterRankBridge
 
 /-!
 # Dual Chow real-rootedness holds exactly in ranks at most four
@@ -483,6 +484,20 @@ theorem dualChow_realRooted_iff (r : ℕ) :
     exact hn (h E M hM)
   · intro hr E _ M hM
     exact (dualChow_negRooted_of_rank_le_four M hM hr).2.1
+
+/-- The main theorem in terms of the kernel definition of the dual Chow function. -/
+theorem kernel_realRooted_iff (r : ℕ) :
+    (∀ (E : Type) [Finite E] (M : Matroid E) (H : Flats M → Flats M → ℤ[X]), M.eRank = r →
+      IsChow (dualKernel (flatRk M)) H → ((H ⊥ ⊤).map (Int.castRingHom ℝ)).Splits) ↔ r ≤ 4 := by
+  rw [← dualChow_realRooted_iff]
+  constructor
+  · intro h E _ M hM
+    obtain ⟨H, hH⟩ := exists_isChow (dualKernel (flatRk M))
+    have := h E M H hM hH
+    rwa [dualChow_eq_kernel M hH] at this
+  · intro h E _ M H hM hH
+    rw [dualChow_eq_kernel M hH]
+    exact h E M hM
 
 end
 end CaioloFerroniHoster.Ranks

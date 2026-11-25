@@ -56,6 +56,10 @@ jobs:
           --require CaioloFerroniHoster.Ranks.dualAug_negRooted_of_rank_le_three
           --require CaioloFerroniHoster.Ranks.Hstar_eq
           --require CaioloFerroniHoster.Ranks.matroid_beta_nonneg
+          --require CaioloFerroniHoster.Ranks.kernel_realRooted_iff
+          --require CaioloFerroniHoster.Ranks.chow_eq_Hstar
+          --require CaioloFerroniHoster.Ranks.augmented_eq_Fstar
+          --require CaioloFerroniHoster.Ranks.exists_kernel_functions
           --out .candidate-artifacts/caiolo-ferroni-hoster/ranks
       - uses: actions/upload-artifact@v4
         with:

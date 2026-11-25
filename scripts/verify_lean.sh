@@ -213,6 +213,7 @@ modules=(
   Conjectures.CaioloFerroniHosterRankFlags
   Conjectures.CaioloFerroniHosterRankBounds
   Conjectures.CaioloFerroniHosterRankWitness
+  Conjectures.CaioloFerroniHosterRankBridge
   Conjectures.CaioloFerroniHosterRanks
   Conjectures.JuhnkeAlternating
   Conjectures.JuhnkeCompositions

@@ -20,7 +20,7 @@ polynomial and for interlacing, rank four is not decided here.
 
 Everything above is verified in Lean except the interlacing clause. See
 [the main file](../../lean/Conjectures/CaioloFerroniHosterRanks.lean), theorems
-`CaioloFerroniHoster.Ranks.dualChow_realRooted_iff`, `counterexamples`, `dualChow_negRooted_of_rank_le_four` and
+`CaioloFerroniHoster.Ranks.dualChow_realRooted_iff`, `kernel_realRooted_iff`, `counterexamples`, `dualChow_negRooted_of_rank_le_four` and
 `dualAug_negRooted_of_rank_le_three`.
 
 ## Low ranks
@@ -84,6 +84,11 @@ polynomials fail is 17 in rank 5, 11 in rank 6, and 7 in ranks 7 and 8. These ch
 
 - [Gamma](../../lean/Conjectures/CaioloFerroniHosterRankGamma.lean) defines both polynomials by the recursions of CFH
   Propositions 4.6 and 4.7 on a finite ranked poset, and proves Theorem 4.9 in every rank.
+- [Bridge](../../lean/Conjectures/CaioloFerroniHosterRankBridge.lean) states the kernel definitions of CFH (the
+  characteristic function, `rev`, `sgn`, the reduced kernel, the Chow function and right KLS functions) and proves that the
+  dual Chow function and the dual right augmented Chow function of `(χ^rev)^sgn` are the polynomials used here, on every
+  interval from the bottom. It also proves that these functions exist and are unique. `kernel_realRooted_iff` states the
+  rank threshold in those terms.
 - [Positivity](../../lean/Conjectures/CaioloFerroniHosterRankPositivity.lean) proves nonnegative flag h-numbers by the
   minimal-label shelling, and [Flats](../../lean/Conjectures/CaioloFerroniHosterRankFlats.lean) applies this to the flats
   of any finite Mathlib matroid.
@@ -95,8 +100,8 @@ polynomials fail is 17 in rank 5, 11 in rank 6, and 7 in ranks 7 and 8. These ch
 - [Bounds](../../lean/Conjectures/CaioloFerroniHosterRankBounds.lean) proves the growth estimates, and
   [Witness](../../lean/Conjectures/CaioloFerroniHosterRankWitness.lean) supplies the matroid.
 
-The strict target check of 2026-11-24 on Lean 4.35.0 passed for all 15 modules: compilation with warnings as errors, the
-audit of 1,081 declarations with only `propext`, `Classical.choice` and `Quot.sound`, and stock-kernel replay. The compiled modules
+The strict target check of 2026-11-24 on Lean 4.35.0 passed for all 16 modules: compilation with warnings as errors, the
+audit of 1,162 declarations with only `propext`, `Classical.choice` and `Quot.sound`, and stock-kernel replay. The compiled modules
 were also accepted by [Tenet](https://github.com/keithadler/tenet) 0.11.5, a separate kernel. The repository-wide gate was
 not run.
 
@@ -105,5 +110,3 @@ not run.
 - Rank four for the augmented polynomial and for interlacing. In terms of flag h-numbers, interlacing is equivalent to
   β(123)β(2) ≤ β(12)(β(13)+β(23)). A limited search found no violation, which is not a proof.
 - An explicit bound on q in the Lean statement.
-- The definitions of both polynomials use Propositions 4.6 and 4.7. Their equivalence with the kernel definition is cited,
-  not formalized.
