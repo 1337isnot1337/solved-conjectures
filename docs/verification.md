@@ -1,5 +1,9 @@
 # Verification
 
+## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
+
+The [local receipt](../results/ferreira-simon-diagonal/verification/receipt.json) records the strict build, all-owned axiom audit, and stock-kernel replay of the one-module closure of `Conjectures.FerreiraSimonDiagonal`. The checked scope is partial. [Lean scope](../results/ferreira-simon-diagonal/FORMALIZATION.md).
+
 ## Revised Tan–Zhou conjecture
 
 The [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json) covers the strict build, transitive owned-declaration audit, and stock-kernel replay of the eleven-module closure of `Conjectures.RevisedTanZhou`. The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) gives the scoped command. The new modules and endpoints are registered in the [aggregate workflow](../.github/workflows/lean.yml).
@@ -319,7 +323,7 @@ The [Csordas–Vishnyakova](../results/csordas-vishnyakova/PROOF.md) and [Wagner
 The [Dospolova–Germanskov–Zaporozhets disproof](../results/dospolova-germanskov-zaporozhets/PROOF.md) is analytic throughout. The strict Gaussian-range argument applies to every nontrivial Gaussian-bounded compact, including bounded discontinuous processes; Vitale's published normalized intrinsic-volume limit excludes every sequence c^k/k! with positive c. Three [independent reviews](../results/dospolova-germanskov-zaporozhets/ROOT_REVIEW.md) check the separability argument, strictness and normalization. The source audit credits Vitale and Long, and actual image inspection resolved an OCR ambiguity in an earlier inequality. There is no numerical verifier or new workflow step for this proof.
 
 
-The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochastic/PROOF.md) and [diagonal Mittag–Leffler proof](../results/ferreira-simon-diagonal/PROOF.md) establish their full real-parameter statements by integral identities and pointwise comparisons. Neither depends on numerical tests, finite enumeration or computer algebra. Their separate [stochastic audit](../results/ferreira-simon-stochastic/AUDIT.md) and [diagonal audit](../results/ferreira-simon-diagonal/AUDIT.md) reconstruct the argument and check normalization, domains, strictness and convergence. No new executable verifier or workflow test is assigned to these analytic proofs. Source and priority review are documented separately in each package.
+The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochastic/PROOF.md) and [diagonal Mittag–Leffler proof](../results/ferreira-simon-diagonal/PROOF.md) establish their full real-parameter statements by integral identities and pointwise comparisons. Neither depends on numerical tests, finite enumeration or computer algebra. Their separate [stochastic audit](../results/ferreira-simon-stochastic/AUDIT.md) and [diagonal audit](../results/ferreira-simon-diagonal/AUDIT.md) reconstruct the argument and check normalization, domains, strictness and convergence. The diagonal result now has a separate partial Lean verification; the stochastic-order argument is still presented as a written proof. Source and priority review are documented separately in each package.
 
 The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is also analytic. Its [independent audit](../results/simon-stable-infimum/AUDIT.md) verifies the source normalization, prior Mellin transform, Brownian endpoint, positivity and parameter monotonicity of the logarithmic Lévy kernels, exponential integrability and independent mean-one multiplier. Conditional Jensen gives the full convex order. There is no numerical verifier or workflow test for this argument; the [source audit](../results/simon-stable-infimum/SOURCES.md) documents priority separately.
 

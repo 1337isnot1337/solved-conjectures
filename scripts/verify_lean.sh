@@ -451,6 +451,7 @@ modules=(
   Conjectures.CircularIndexFurther
   Conjectures.HornakGrouping
   Conjectures.HornakGroupGraph
+  Conjectures.FerreiraSimonDiagonal
   Conjectures.FerreiraSimonWright
   Conjectures.HornakSubsetList
   Conjectures.HornakLargeReduction
