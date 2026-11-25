@@ -48,7 +48,7 @@ theorem exists_polar_vertex_of_nonempty_orientedEdgeFace [Fintype V] {G : Simple
   obtain ⟨f, h⟩ := hc.extremePoints_nonempty hn
   exact ⟨f, h.1, hf.extremePoints_subset_extremePoints h⟩
 
-private def swapEnds {M : Type*} (d : M → Bool) : M ⊕ M ≃ M ⊕ M where
+def swapEnds {M : Type*} (d : M → Bool) : M ⊕ M ≃ M ⊕ M where
   toFun := Sum.elim (fun i => if d i then .inl i else .inr i) (fun i => if d i then .inr i else .inl i)
   invFun := Sum.elim (fun i => if d i then .inl i else .inr i) (fun i => if d i then .inr i else .inl i)
   left_inv v := by cases v with | inl i | inr i => cases he : d i <;> simp [he]

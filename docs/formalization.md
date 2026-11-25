@@ -9,10 +9,13 @@ proves the exact minimum and the equality criterion for the complete
 bipartite graph with balanced parts. The comparison for a missing cross-edge
 uses a new vertex from the graph-distance potential. For arbitrary connected
 graphs, the development also verifies the lower bound from distinct
-orientations of an actual matching. The nonbipartite minimum bound remains
-open in Lean. The [scoped receipt](verification/lean-braun-bruegge-bipartite-20261124/receipt.json)
-records nine strict module builds, 164 owned declarations, 13 required
-endpoints, and stock-kernel replay.
+orientations of an actual matching. The [uncovered-vertex bound](../lean/Conjectures/BraunBrueggeMinimumUncoveredCount.lean)
+constructs a maximum matching and proves at least `2^(m+r)` actual facets,
+where `m` counts matched edges and `r` counts uncovered vertices. It gives
+strict inequality above the balanced minimum whenever `r ≥ 2`. The remaining
+nonbipartite cases have `r = 0` or `r = 1`. The [scoped receipt](verification/lean-braun-bruegge-uncovered-20261124/receipt.json)
+records 13 strict module builds, 304 owned declarations, 20 required endpoints,
+and stock-kernel replay.
 
 ## Ma–Tang’s random subset-sum threshold conjecture
 

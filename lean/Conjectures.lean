@@ -1,3 +1,4 @@
+import Conjectures.BraunBrueggeMinimumAugmenting
 import Conjectures.BraunBrueggeMinimumBipartite
 import Conjectures.BraunBrueggeMinimumBipartiteComparison
 import Conjectures.BraunBrueggeMinimumBipartiteFacets
@@ -6,7 +7,10 @@ import Conjectures.BraunBrueggeMinimumCompleteBipartite
 import Conjectures.BraunBrueggeMinimumFacets
 import Conjectures.BraunBrueggeMinimumGeometry
 import Conjectures.BraunBrueggeMinimumMatchingFaces
+import Conjectures.BraunBrueggeMinimumMatchingModel
 import Conjectures.BraunBrueggeMinimumPolar
+import Conjectures.BraunBrueggeMinimumUncoveredCount
+import Conjectures.BraunBrueggeMinimumUncoveredFaces
 import Conjectures.CircularCompleteMinusEdgeAcyclic
 import Conjectures.CircularCompleteMinusEdgeMatchings
 import Conjectures.CircularCompleteMinusEdgeClasses

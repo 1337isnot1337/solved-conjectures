@@ -4,6 +4,7 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.BraunBrueggeMinimumAugmenting
   Conjectures.BraunBrueggeMinimumBipartite
   Conjectures.BraunBrueggeMinimumBipartiteComparison
   Conjectures.BraunBrueggeMinimumBipartiteFacets
@@ -12,7 +13,10 @@ modules=(
   Conjectures.BraunBrueggeMinimumFacets
   Conjectures.BraunBrueggeMinimumGeometry
   Conjectures.BraunBrueggeMinimumMatchingFaces
+  Conjectures.BraunBrueggeMinimumMatchingModel
   Conjectures.BraunBrueggeMinimumPolar
+  Conjectures.BraunBrueggeMinimumUncoveredCount
+  Conjectures.BraunBrueggeMinimumUncoveredFaces
   Conjectures.CircularCompleteMinusEdgeAcyclic
   Conjectures.CircularCompleteMinusEdgeMatchings
   Conjectures.CircularCompleteMinusEdgeClasses
