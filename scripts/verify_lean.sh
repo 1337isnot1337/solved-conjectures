@@ -23,6 +23,26 @@ modules=(
   Conjectures.LassalleBoxBatch11
   Conjectures.LassalleBoxBatch12
   Conjectures.LassalleBoxCoverage
+  Conjectures.LassalleApproximationGrouping
+  Conjectures.LassalleBernsteinBounds
+  Conjectures.LassalleBernsteinDifference
+  Conjectures.LassalleBernsteinSecondDifference
+  Conjectures.LassalleBesselSourceReduction
+  Conjectures.LassalleConvolutionRatio
+  Conjectures.LassalleDegreeGrouping
+  Conjectures.LassalleDerivativeAtIndex
+  Conjectures.LassalleDerivativeNorm
+  Conjectures.LassalleFallingDerivativeFormulas
+  Conjectures.LassalleLayerBounds
+  Conjectures.LassalleMonomialStencil
+  Conjectures.LassalleNormalizedCoefficients
+  Conjectures.LassallePositiveSeriesTail
+  Conjectures.LassalleProductBound
+  Conjectures.LassalleQuotientStencil
+  Conjectures.LassalleResidualReduction
+  Conjectures.LassalleTailGeometric
+  Conjectures.LassalleTailWeight
+  Conjectures.LassalleTruncation
   Conjectures.LassalleBoxSoundness
   Conjectures.LassalleCatalanQuotient
   Conjectures.LassalleDerivativeIntervals

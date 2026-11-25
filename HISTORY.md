@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Verify the Lassalle approximation estimate in Lean
+
+Lean verifies the normalized coefficient expansion, discrete Bernstein
+differences, and all truncation-error bounds. The remaining analytic
+input is the specified Bessel-product decomposition; the literal
+permutation-count bridge remains separate.
+[Scope and receipts](results/defant-engen-miller-lassalle/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the Lassalle interval certificate in Lean
 
 Lean checks sound directed rounding, all 205 bisection boxes, and the

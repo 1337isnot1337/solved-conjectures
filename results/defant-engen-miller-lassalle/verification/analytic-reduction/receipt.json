@@ -1,0 +1,642 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T19:04:37.149074+00:00",
+  "finished_at": "2026-11-25T19:10:59.736308+00:00",
+  "root": "Conjectures.LassalleBesselSourceReduction",
+  "project_modules": [
+    "Conjectures.LassalleApproximationGrouping",
+    "Conjectures.LassalleBernsteinAtIndex",
+    "Conjectures.LassalleBernsteinBounds",
+    "Conjectures.LassalleBernsteinDifference",
+    "Conjectures.LassalleBernsteinIntervals",
+    "Conjectures.LassalleBernsteinSecondDifference",
+    "Conjectures.LassalleBesselConstants",
+    "Conjectures.LassalleBesselSourceReduction",
+    "Conjectures.LassalleBoxSoundness",
+    "Conjectures.LassalleCatalanQuotient",
+    "Conjectures.LassalleConvolutionRatio",
+    "Conjectures.LassalleDegreeGrouping",
+    "Conjectures.LassalleDerivativeAtIndex",
+    "Conjectures.LassalleDerivativeIntervals",
+    "Conjectures.LassalleDerivativeNorm",
+    "Conjectures.LassalleDeterminant",
+    "Conjectures.LassalleEventualReduction",
+    "Conjectures.LassalleFallingDerivativeFormulas",
+    "Conjectures.LassalleIntervalArithmetic",
+    "Conjectures.LassalleIntervalDivision",
+    "Conjectures.LassalleIntervalProducts",
+    "Conjectures.LassalleLayerBounds",
+    "Conjectures.LassalleMonomialStencil",
+    "Conjectures.LassalleNormalizedCoefficients",
+    "Conjectures.LassallePositiveSeriesTail",
+    "Conjectures.LassalleProductBound",
+    "Conjectures.LassalleQuotientStencil",
+    "Conjectures.LassalleQuotientSymmetry",
+    "Conjectures.LassalleResidualReduction",
+    "Conjectures.LassalleStackSorting",
+    "Conjectures.LassalleTailGeometric",
+    "Conjectures.LassalleTailWeight",
+    "Conjectures.LassalleTruncation"
+  ],
+  "required_endpoints": [
+    "LassalleRefinement.fallingRatio_first_difference",
+    "LassalleRefinement.fallingRatio_second_difference",
+    "LassalleRefinement.fallingRatio_le_one",
+    "LassalleRefinement.derivativeMass_bound",
+    "LassalleRefinement.derivativeValue_at_index",
+    "LassalleRefinement.signed_choose_desc",
+    "LassalleRefinement.scaledQuotientRow_grouped",
+    "LassalleRefinement.besselConvolution_ratio",
+    "LassalleRefinement.certificateWeight_tail",
+    "LassalleRefinement.lassalle_truncation_bound",
+    "LassalleRefinement.scaledQuotientStencil_grouped",
+    "LassalleRefinement.uniform_estimate_of_bessel_residual",
+    "LassalleRefinement.normalized_positive_series_tail",
+    "LassalleRefinement.bessel_product_bound_limit",
+    "LassalleRefinement.uniform_estimate_of_bessel_source_decomposition"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/LassalleApproximationGrouping.lean": "cad722cfbf022215439ac75ba95f4f6abfdc47d0d58d8f64c6306c3121424e7a",
+    "lean/Conjectures/LassalleBernsteinAtIndex.lean": "50950e4350c71657caf0cad527b22f66073fb9cc2c2fce4d80346056ebec4bed",
+    "lean/Conjectures/LassalleBernsteinBounds.lean": "abc4e047610e6633bb8e0864396649a6f212be81b0335e16773485dbfef4e449",
+    "lean/Conjectures/LassalleBernsteinDifference.lean": "6ec95709619a12a98446ba2ba772e3ff47c02254c7267287b7c1f4f8652ccf03",
+    "lean/Conjectures/LassalleBernsteinIntervals.lean": "d9a93eb21cd9e53e3013a5da866b8742c7f4d3a763955090b1f210ec50e85b94",
+    "lean/Conjectures/LassalleBernsteinSecondDifference.lean": "793a0e38463fdd6dce3216a96c76b99674b1fb1519379b3d8de153ac63d73668",
+    "lean/Conjectures/LassalleBesselConstants.lean": "98ca982d2a63ef2683dff458d8f801c8323787166e16ac8f97e254ab2c3aa10c",
+    "lean/Conjectures/LassalleBesselSourceReduction.lean": "df256b281f68f22a5f30d6fae6625fd20ea45dbd6e39f32567243a7aa4d065d2",
+    "lean/Conjectures/LassalleBoxSoundness.lean": "84d75a21bda183379dbdc0cc36a5570c9d165d77d075dbdc138340633e758c65",
+    "lean/Conjectures/LassalleCatalanQuotient.lean": "1f86f1e1c3b01d52d758c8bb08b0122bec2781f823a6287c0f74b9f4c2cb25eb",
+    "lean/Conjectures/LassalleConvolutionRatio.lean": "e66051693f72d5f2261ddb4fd42274c6c2a34f8c644b9c9948fa65d62b181d48",
+    "lean/Conjectures/LassalleDegreeGrouping.lean": "cecbbf84492edca2c8de8a0ccbace62a2b8d5f842574239236976cfa99fe651d",
+    "lean/Conjectures/LassalleDerivativeAtIndex.lean": "7c87aaa48a5e7aa5b8745aa376e50032e6db61d7d9a75612097046141a5a053f",
+    "lean/Conjectures/LassalleDerivativeIntervals.lean": "846538afeeaadb8aad27f26ded1154099297b99cdcf2a711431a31e0b3d337ab",
+    "lean/Conjectures/LassalleDerivativeNorm.lean": "f3b274433facaddca5fa13796bf2ff279f46aa0761d4de4f670431eea4053646",
+    "lean/Conjectures/LassalleDeterminant.lean": "031c7c4b002e91e5ada35a6fd9e7f7c015760ab427277a42fc904502642e34f9",
+    "lean/Conjectures/LassalleEventualReduction.lean": "3eec234231971da119e980c85f866a7d254e9856ba88c88ccd27db43835dad40",
+    "lean/Conjectures/LassalleFallingDerivativeFormulas.lean": "5910199f0d8b595577a79eee80df5f62b61b02eb69047005d6513599b3aac77e",
+    "lean/Conjectures/LassalleIntervalArithmetic.lean": "2df842742f9c20e5b00c8bbf87dfa618807ea511f676fb71430d10295bdbe22d",
+    "lean/Conjectures/LassalleIntervalDivision.lean": "abf0e399dcd5df10858f068d0e49fce04fa7b3d02cd3666eac9a56327ebb04d3",
+    "lean/Conjectures/LassalleIntervalProducts.lean": "08c131ab25357504f798d3d8957eb38051b1158f0ac3e0dfc6e1bd3edaa6aa87",
+    "lean/Conjectures/LassalleLayerBounds.lean": "d7886087b651b0057a46218ab6fb38c616b104c1fc8f88215e25a96420212e69",
+    "lean/Conjectures/LassalleMonomialStencil.lean": "7702ce5c77763d2504e4cbfdf09632037e41350508b1e7a54a9bd274d0f24fbf",
+    "lean/Conjectures/LassalleNormalizedCoefficients.lean": "086fdac41c7395256acfe46183a32df1d110b7291d58d32d36ed5e07f7e127fb",
+    "lean/Conjectures/LassallePositiveSeriesTail.lean": "275e437a1704e9fd4d6e1b9d32e432910681fe8fdf600a731a8733f2f0b2b2a4",
+    "lean/Conjectures/LassalleProductBound.lean": "d558e22e382c5f5a3615d4b9c07691d548861e5f3d72eef096035507eaaf9c66",
+    "lean/Conjectures/LassalleQuotientStencil.lean": "d6ff1c9cd5123c40e12fef96a2d1c5f10fd4567eefa5b87f7088a5d6fb0bdb90",
+    "lean/Conjectures/LassalleQuotientSymmetry.lean": "8cf01370697f616ad2e333b39c520872b8b4e2b4b18f92c01cf252c3deeaae9f",
+    "lean/Conjectures/LassalleResidualReduction.lean": "4daf03c7345416786f20ba0b68d4242c9981b4d584a26ca5b98af8d3e4077150",
+    "lean/Conjectures/LassalleStackSorting.lean": "eb782d4c9658b1b5e976927590f8c4b295b3c0aeecb6402df1f9929f107cbfe0",
+    "lean/Conjectures/LassalleTailGeometric.lean": "f8bd0f23075092e3eedbb079622e9e0881a4d2ec9db20c5ec98418fe6560374c",
+    "lean/Conjectures/LassalleTailWeight.lean": "eda99328650111835073227e90ca9925dc2fd8c019b919d3908585a44ea00fb0",
+    "lean/Conjectures/LassalleTruncation.lean": "25fae058f5124a25f35f7b48cc5a0e9d9d2396d462f98138ae3fa061df5faee3"
+  },
+  "input_sha256": {
+    "lean/Conjectures/LassalleApproximationGrouping.lean": "cad722cfbf022215439ac75ba95f4f6abfdc47d0d58d8f64c6306c3121424e7a",
+    "lean/Conjectures/LassalleBernsteinAtIndex.lean": "50950e4350c71657caf0cad527b22f66073fb9cc2c2fce4d80346056ebec4bed",
+    "lean/Conjectures/LassalleBernsteinBounds.lean": "abc4e047610e6633bb8e0864396649a6f212be81b0335e16773485dbfef4e449",
+    "lean/Conjectures/LassalleBernsteinDifference.lean": "6ec95709619a12a98446ba2ba772e3ff47c02254c7267287b7c1f4f8652ccf03",
+    "lean/Conjectures/LassalleBernsteinIntervals.lean": "d9a93eb21cd9e53e3013a5da866b8742c7f4d3a763955090b1f210ec50e85b94",
+    "lean/Conjectures/LassalleBernsteinSecondDifference.lean": "793a0e38463fdd6dce3216a96c76b99674b1fb1519379b3d8de153ac63d73668",
+    "lean/Conjectures/LassalleBesselConstants.lean": "98ca982d2a63ef2683dff458d8f801c8323787166e16ac8f97e254ab2c3aa10c",
+    "lean/Conjectures/LassalleBesselSourceReduction.lean": "df256b281f68f22a5f30d6fae6625fd20ea45dbd6e39f32567243a7aa4d065d2",
+    "lean/Conjectures/LassalleBoxSoundness.lean": "84d75a21bda183379dbdc0cc36a5570c9d165d77d075dbdc138340633e758c65",
+    "lean/Conjectures/LassalleCatalanQuotient.lean": "1f86f1e1c3b01d52d758c8bb08b0122bec2781f823a6287c0f74b9f4c2cb25eb",
+    "lean/Conjectures/LassalleConvolutionRatio.lean": "e66051693f72d5f2261ddb4fd42274c6c2a34f8c644b9c9948fa65d62b181d48",
+    "lean/Conjectures/LassalleDegreeGrouping.lean": "cecbbf84492edca2c8de8a0ccbace62a2b8d5f842574239236976cfa99fe651d",
+    "lean/Conjectures/LassalleDerivativeAtIndex.lean": "7c87aaa48a5e7aa5b8745aa376e50032e6db61d7d9a75612097046141a5a053f",
+    "lean/Conjectures/LassalleDerivativeIntervals.lean": "846538afeeaadb8aad27f26ded1154099297b99cdcf2a711431a31e0b3d337ab",
+    "lean/Conjectures/LassalleDerivativeNorm.lean": "f3b274433facaddca5fa13796bf2ff279f46aa0761d4de4f670431eea4053646",
+    "lean/Conjectures/LassalleDeterminant.lean": "031c7c4b002e91e5ada35a6fd9e7f7c015760ab427277a42fc904502642e34f9",
+    "lean/Conjectures/LassalleEventualReduction.lean": "3eec234231971da119e980c85f866a7d254e9856ba88c88ccd27db43835dad40",
+    "lean/Conjectures/LassalleFallingDerivativeFormulas.lean": "5910199f0d8b595577a79eee80df5f62b61b02eb69047005d6513599b3aac77e",
+    "lean/Conjectures/LassalleIntervalArithmetic.lean": "2df842742f9c20e5b00c8bbf87dfa618807ea511f676fb71430d10295bdbe22d",
+    "lean/Conjectures/LassalleIntervalDivision.lean": "abf0e399dcd5df10858f068d0e49fce04fa7b3d02cd3666eac9a56327ebb04d3",
+    "lean/Conjectures/LassalleIntervalProducts.lean": "08c131ab25357504f798d3d8957eb38051b1158f0ac3e0dfc6e1bd3edaa6aa87",
+    "lean/Conjectures/LassalleLayerBounds.lean": "d7886087b651b0057a46218ab6fb38c616b104c1fc8f88215e25a96420212e69",
+    "lean/Conjectures/LassalleMonomialStencil.lean": "7702ce5c77763d2504e4cbfdf09632037e41350508b1e7a54a9bd274d0f24fbf",
+    "lean/Conjectures/LassalleNormalizedCoefficients.lean": "086fdac41c7395256acfe46183a32df1d110b7291d58d32d36ed5e07f7e127fb",
+    "lean/Conjectures/LassallePositiveSeriesTail.lean": "275e437a1704e9fd4d6e1b9d32e432910681fe8fdf600a731a8733f2f0b2b2a4",
+    "lean/Conjectures/LassalleProductBound.lean": "d558e22e382c5f5a3615d4b9c07691d548861e5f3d72eef096035507eaaf9c66",
+    "lean/Conjectures/LassalleQuotientStencil.lean": "d6ff1c9cd5123c40e12fef96a2d1c5f10fd4567eefa5b87f7088a5d6fb0bdb90",
+    "lean/Conjectures/LassalleQuotientSymmetry.lean": "8cf01370697f616ad2e333b39c520872b8b4e2b4b18f92c01cf252c3deeaae9f",
+    "lean/Conjectures/LassalleResidualReduction.lean": "4daf03c7345416786f20ba0b68d4242c9981b4d584a26ca5b98af8d3e4077150",
+    "lean/Conjectures/LassalleStackSorting.lean": "eb782d4c9658b1b5e976927590f8c4b295b3c0aeecb6402df1f9929f107cbfe0",
+    "lean/Conjectures/LassalleTailGeometric.lean": "f8bd0f23075092e3eedbb079622e9e0881a4d2ec9db20c5ec98418fe6560374c",
+    "lean/Conjectures/LassalleTailWeight.lean": "eda99328650111835073227e90ca9925dc2fd8c019b919d3908585a44ea00fb0",
+    "lean/Conjectures/LassalleTruncation.lean": "25fae058f5124a25f35f7b48cc5a0e9d9d2396d462f98138ae3fa061df5faee3",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleIntervalArithmetic.olean",
+        "Conjectures/LassalleIntervalArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleIntervalArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleIntervalDivision.olean",
+        "Conjectures/LassalleIntervalDivision.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleIntervalDivision.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBesselConstants.olean",
+        "Conjectures/LassalleBesselConstants.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBesselConstants.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleIntervalProducts.olean",
+        "Conjectures/LassalleIntervalProducts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleIntervalProducts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBernsteinIntervals.olean",
+        "Conjectures/LassalleBernsteinIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBernsteinIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleDerivativeIntervals.olean",
+        "Conjectures/LassalleDerivativeIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleDerivativeIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleDerivativeNorm.olean",
+        "Conjectures/LassalleDerivativeNorm.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleDerivativeNorm.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBernsteinAtIndex.olean",
+        "Conjectures/LassalleBernsteinAtIndex.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBernsteinAtIndex.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBernsteinDifference.olean",
+        "Conjectures/LassalleBernsteinDifference.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBernsteinDifference.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBernsteinSecondDifference.olean",
+        "Conjectures/LassalleBernsteinSecondDifference.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBernsteinSecondDifference.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBernsteinBounds.olean",
+        "Conjectures/LassalleBernsteinBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBernsteinBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleDerivativeAtIndex.olean",
+        "Conjectures/LassalleDerivativeAtIndex.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleDerivativeAtIndex.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleFallingDerivativeFormulas.olean",
+        "Conjectures/LassalleFallingDerivativeFormulas.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleFallingDerivativeFormulas.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBoxSoundness.olean",
+        "Conjectures/LassalleBoxSoundness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBoxSoundness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleStackSorting.olean",
+        "Conjectures/LassalleStackSorting.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleStackSorting.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleCatalanQuotient.olean",
+        "Conjectures/LassalleCatalanQuotient.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleCatalanQuotient.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleDeterminant.olean",
+        "Conjectures/LassalleDeterminant.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleDeterminant.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleMonomialStencil.olean",
+        "Conjectures/LassalleMonomialStencil.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleMonomialStencil.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleTailWeight.olean",
+        "Conjectures/LassalleTailWeight.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleTailWeight.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleConvolutionRatio.olean",
+        "Conjectures/LassalleConvolutionRatio.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleConvolutionRatio.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleTailGeometric.olean",
+        "Conjectures/LassalleTailGeometric.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleTailGeometric.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleLayerBounds.olean",
+        "Conjectures/LassalleLayerBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleLayerBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleQuotientSymmetry.olean",
+        "Conjectures/LassalleQuotientSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleQuotientSymmetry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleEventualReduction.olean",
+        "Conjectures/LassalleEventualReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleEventualReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleNormalizedCoefficients.olean",
+        "Conjectures/LassalleNormalizedCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleNormalizedCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleDegreeGrouping.olean",
+        "Conjectures/LassalleDegreeGrouping.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleDegreeGrouping.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleApproximationGrouping.olean",
+        "Conjectures/LassalleApproximationGrouping.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleApproximationGrouping.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleQuotientStencil.olean",
+        "Conjectures/LassalleQuotientStencil.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleQuotientStencil.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleTruncation.olean",
+        "Conjectures/LassalleTruncation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleTruncation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleResidualReduction.olean",
+        "Conjectures/LassalleResidualReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleResidualReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassallePositiveSeriesTail.olean",
+        "Conjectures/LassallePositiveSeriesTail.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassallePositiveSeriesTail.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleProductBound.olean",
+        "Conjectures/LassalleProductBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleProductBound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/LassalleBesselSourceReduction.olean",
+        "Conjectures/LassalleBesselSourceReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LassalleBesselSourceReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.LassalleBesselSourceReduction",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 622,
+    "modules": 33,
+    "private_declarations": 232,
+    "raw_declarations": 622,
+    "required": 15,
+    "tag": "passed",
+    "theorems": 437
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
