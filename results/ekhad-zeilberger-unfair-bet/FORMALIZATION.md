@@ -21,6 +21,16 @@ game, so the original binary challenge is not yet fully formalized.
   and derives a lower bound for the normalized variance expression at letter
   weight at most $1/3$ whenever the self-overlap weights differ.
 
+- [Equal interiors](../../lean/Conjectures/EkhadZeilbergerInterior.lean)
+  shows that a one-step cross-overlap and identical interiors force both
+  nonconstant words to be unbordered.
+- [Uniform projection](../../lean/Conjectures/EkhadZeilbergerWindowProjection.lean)
+  models a uniform text of length $N+k-1$ as a finite product, counts the
+  difference of actual window indicators, and proves it has mean zero.
+  When the two interiors differ, its variance is at least
+  $2Nq^{-k}(1-q^{-1})^2$. Distinct windows are orthogonal after centering in
+  the two endpoints, and the contribution on each window is computed exactly.
+
 The original binary statement is on [Ekhad and Zeilberger's challenge
 page](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/litt.html).
 The checked arithmetic and word definitions come from Cinna Davis's
@@ -28,10 +38,11 @@ The checked arithmetic and word definitions come from Cinna Davis's
 with build fixes that do not change theorem statements. The trace of the
 written proof and its attribution is [issue #219](https://github.com/1337isnot1337/solved-conjectures/issues/219).
 The [Janson–Nica–Segert probability expansion](https://arxiv.org/abs/2503.19035),
-the exact fairness theorem, the binary variance projection, and the full-alphabet
-restriction and extremizers remain outside the Lean scope.
+the exact fairness theorem, the identity of the limiting variance with the
+overlap expression, and the full-alphabet restriction and extremizers remain
+outside the Lean scope.
 
 Reproduce the [strict source, axiom, and kernel-replay receipt](verification/receipt.json)
 using `scripts/verify_lean_target.py` with root
-`Conjectures.EkhadZeilbergerFiniteOverlap` and the endpoints in the receipt.
+`Conjectures.EkhadZeilbergerProjection` and the endpoints in the receipt.
 The aggregate repository gate is separate.

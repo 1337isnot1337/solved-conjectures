@@ -252,6 +252,11 @@ modules=(
   Conjectures.EkhadZeilbergerEquality
   Conjectures.EkhadZeilbergerCrossOverlap
   Conjectures.EkhadZeilbergerFiniteOverlap
+  Conjectures.EkhadZeilbergerUniformProduct
+  Conjectures.EkhadZeilbergerEndpointProduct
+  Conjectures.EkhadZeilbergerWindowProjection
+  Conjectures.EkhadZeilbergerInterior
+  Conjectures.EkhadZeilbergerProjection
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
