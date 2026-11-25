@@ -42,6 +42,7 @@ EXTERNAL_CREDIT = {
     ),
 }
 PARTIAL_CATEGORIES = {
+    "circular-index-upper-half-remaining-deltas": "Graph theory and discrete geometry",
     "wild-number-complete-graphs": "Graph theory and discrete geometry",
     "circular-index-upper-half-delta-2-mod-4": "Graph theory and discrete geometry",
     "circular-index-upper-half-delta-3-mod-4": "Graph theory and discrete geometry",
@@ -60,6 +61,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Seven upper-half circular chromatic index certificates": "circular-index-upper-half-remaining-deltas",
     "Pantone–Bóna’s third-largest-terminal asymptotic conjecture": "pantone-bona-third-largest-terminal",
     "Pantone–Bóna’s second-smallest-terminal asymptotic conjecture": "pantone-bona-second-smallest-terminal",
     "Pantone–Bóna’s second-largest-terminal asymptotic conjecture": "pantone-bona-second-largest-terminal",
@@ -196,7 +198,7 @@ STATUS_LABEL_SLUGS = {
     "Hadamard order-2396 partial results": "hadamard-2396",
     "Lonely-runner two insertions": "lonely-runner-two-insertions",
     "Zhang's Question 8.4: deletion values of the lonely runner": "zhang-deletion-values",
-    "Zhang's Question 8.5 for 18 ≤ n ≤ 54: shifted lonely runner counterexamples": "shifted-lonely-runner-counterexamples",
+    "Zhang's Question 8.5 for 18 ≤ n ≤ 56: shifted lonely runner counterexamples": "shifted-lonely-runner-counterexamples",
     "Erdős–Gyárfás abelian covers": "erdos-gyarfas-abelian-covers",
     "Erdős 607 line sizes": "erdos-607-line-sizes",
     "Growing rectangles": "rectangle-partition-asymptotics",

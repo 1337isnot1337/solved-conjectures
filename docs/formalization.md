@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Seven upper-half circular chromatic index certificates
+
+Partial. Lean checks tomdif’s literal edge, degree, colouring and density data for maximum degrees 9, 11, 13, 15, 17, 19 and 23. The real circular-index bridge and the previous all-degree construction families are not asserted by this check. [Scope and review](../results/circular-index-upper-half-remaining-deltas/REVIEW.md).
+
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
 Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of every finite connected simple graph at every admissible parameter. It proves the inclusive clique-chain count, constructs the literal diameter layers, retains the prescribed cardinality, and bounds the energy after extending the low eigenspace by zero. Lean also proves equality for the infinite family with `4*t+1` layers and `t` doubled layers, attaining the bound for `c=t−1`. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).

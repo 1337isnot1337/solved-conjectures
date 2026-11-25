@@ -289,6 +289,7 @@ modules=(
   Conjectures.XuZhouLaplacianSpectralUpper
   Conjectures.XuZhouSharpness
   Conjectures.XuZhouLaplacianSharpness
+  Conjectures.TomdifCircularIndexCertificates
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

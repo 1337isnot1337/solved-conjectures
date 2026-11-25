@@ -1417,3 +1417,5 @@ import Conjectures.WaringGapSymmetryResidues
 import Conjectures.WaringGapSymmetryLift
 import Conjectures.WaringGapSymmetryMonoid
 import Conjectures.WaringGapSymmetry
+
+import Conjectures.TomdifCircularIndexCertificates
