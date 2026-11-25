@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Disprove McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+A repeated direct-sum construction gives a classical permutation-pattern interval with a strict rank dip. Distinct subpatterns are counted by their sum decompositions, and a separate exact integer checker reproduces all three coefficients. [Proof and audit](results/mcnamara-steingrimsson-rank-unimodality/)
+
 ## 2026-11-25 — Verify all seven of tomdif’s real circular-index bounds in Lean
 
 Lean proves the exact maximum degree and real circular-index bounds of each submitted graph. Six indices equal `Δ+2/3`; the degree-15 graph is bracketed by `171/11` and `47/3`. The earlier degree families remain separate. [Lean scope](results/circular-index-upper-half-remaining-deltas/REVIEW.md).
