@@ -336,6 +336,13 @@ modules=(
   Conjectures.McNamaraSteingrimssonMiddleLayers
   Conjectures.McNamaraSteingrimssonPatternSize
   Conjectures.McNamaraSteingrimssonPointedCount
+  Conjectures.McNamaraSteingrimssonCuts
+  Conjectures.McNamaraSteingrimssonFamilyCounts
+  Conjectures.McNamaraSteingrimssonPatternSplit
+  Conjectures.McNamaraSteingrimssonPrefixFamilies
+  Conjectures.McNamaraSteingrimssonSplitSound
+  Conjectures.McNamaraSteingrimssonSumAssembly
+  Conjectures.McNamaraSteingrimssonTwoSummandInterval
   Conjectures.McNamaraSteingrimssonPointedInterval
   Conjectures.McNamaraSteingrimssonUnpoint
   Conjectures.RossiPermutohedronDyadicCertificate

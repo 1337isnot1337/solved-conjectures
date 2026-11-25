@@ -2,7 +2,7 @@
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
-Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. The full repeated-sum interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. It proves the exact positive-rank convolution for the two-summand interval. The full repeated-sum interval count is not part of this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
 
 ## Seven upper-half circular chromatic index certificates
 
@@ -215,7 +215,7 @@ proofs are documented separately in the catalogue and result package.
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
 | Kovalev’s square-root Taylor-section zero-free conjecture | Complete original square-root conjecture | Every positive length, every Taylor degree, and the full closed unit disk, with actual derivative coefficients and beta measures. Fractional-exponent and segment supplements remain unformalized. [Scope](../results/kovalev-zero-free/FORMALIZATION.md) · [Receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json). |
 | Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture | Partial | Exact Stern recurrence and continuation criterion for all positive indices, and unconditional positive real-axis nonvanishing. The regional complex estimates and compact certificate are outside this receipt. |
-| McNamara–Steingrímsson’s interval rank-unimodality conjecture | Partial | Literal layered, pointed and direct-sum containment, including exact binomial rank counts of the smaller pointed interval. The full repeated-sum count remains written. [Lean scope](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md). |
+| McNamara–Steingrímsson’s interval rank-unimodality conjecture | Partial | Literal layered, pointed and direct-sum containment, including exact binomial ranks of the smaller pointed interval and the exact positive-rank convolution for the two-summand interval. The full repeated-sum count remains written. [Lean scope](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md). |
 | Shumyatsky’s conjugate prime-spectrum conjecture | Not formalized | Answers Kourovka Notebook Question 17.125 for all finite groups by lifting across the socle. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |

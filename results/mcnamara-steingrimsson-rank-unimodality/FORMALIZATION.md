@@ -33,6 +33,19 @@ The conjecture and discovery attribution remain as recorded in the
   size of rank `r` is exactly `25.choose r`, for all `r`. The
   [pointed-interval receipt](verification/pointed/receipt.json) includes this result.
 
+- [Split at the host boundary](../../lean/Conjectures/McNamaraSteingrimssonSplitSound.lean):
+  each literal pattern of a direct sum factors at the actual crossing
+  point of its increasing position embedding. The two factors are
+  the canonical permutations on the two segments.
+- [Two-summand count](../../lean/Conjectures/McNamaraSteingrimssonFamilyCounts.lean):
+  for every positive relative rank, the actual interval
+  `[α,α ⊕ π]` splits into the full-prefix family and the proper-prefix
+  family. In the latter the position of the largest value determines
+  the prefix size, so each distinct permutation is counted once.
+  Lean proves the exact sum of the downset count and the convolution
+  of the proper-prefix and pointed-interval counts. The
+  [two-summand receipt](verification/two-summand/receipt.json) records the check.
+
 The complete repeated-sum interval decomposition and the exact final
 three rank sizes are not established by this scope. The
 [receipt](verification/receipt.json) records strict Lean compilation,
