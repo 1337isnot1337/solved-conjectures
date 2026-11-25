@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Gravgaard–Lee’s Lüroth diameter question
+
+The [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) proves compact interval coverage by simultaneous affine cylinder refinement and removes the finite endpoints by a two-scale alternating digit construction. The final witnesses are genuine infinite expansions. It also proves the exact modulo-one threshold and checks the equality example. See the [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json).
+
 ## Ulas’s disjoint-block square-product conjecture
 
 The checked affine construction and residue reduction now have unconditional prime-avoiding tail counts. The even- and odd-length arguments use adjacent block characters and a maximal independent separated family. The odd-prime argument uses orthogonality over the prime field. The final theorem preserves the fixed-length, eventual fixed-count quantifiers. See the [Lean formalization](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) and [local receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json).

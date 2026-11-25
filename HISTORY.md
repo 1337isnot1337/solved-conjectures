@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Gravgaard–Lee’s Lüroth diameter question
+
+Completed Lean verification of the exact positive sum hull, including equality of the total diameter, and the exact threshold for coverage modulo one. Direct cylinder refinement replaces the use of the general thickness theorem. See the [formalization](results/gravgaard-lee-diameter-condition/FORMALIZATION.md) and [local receipt](results/gravgaard-lee-diameter-condition/verification/receipt.json).
+
 ## 2026-11-24 — Ulas’s disjoint-block square-product conjecture
 
 Completed Lean verification of the common-length theorem for every positive length. The proof fills the prime-avoiding tail gap in the research branch’s partial formalization and retains the affine construction and residue argument. The catalogue row keeps its established position. See the [scope](results/ulas-disjoint-square-blocks/FORMALIZATION.md) and [local receipt](results/ulas-disjoint-square-blocks/verification/receipt.json).

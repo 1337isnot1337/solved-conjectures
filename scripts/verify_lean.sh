@@ -164,6 +164,11 @@ modules=(
   Conjectures.GravgaardLeeUpperLowerConvergence
   Conjectures.GravgaardLeeUpperLowerTwo
   Conjectures.GravgaardLeeUpperLower
+  Conjectures.GravgaardLeeDiameterDigits
+  Conjectures.GravgaardLeeDiameterCover
+  Conjectures.GravgaardLeeDiameterGreedy
+  Conjectures.GravgaardLeeDiameterTails
+  Conjectures.GravgaardLeeDiameter
   Conjectures.GesselZhuangBlockOperations
   Conjectures.GesselZhuangBlocks
   Conjectures.GesselZhuangChoices
