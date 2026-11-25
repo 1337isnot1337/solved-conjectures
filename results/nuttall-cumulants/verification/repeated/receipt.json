@@ -1,7 +1,7 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-25T09:20:08.279379+00:00",
-  "finished_at": "2026-11-25T09:20:33.355137+00:00",
+  "started_at": "2026-11-25T09:44:25.121937+00:00",
+  "finished_at": "2026-11-25T09:44:50.439422+00:00",
   "root": "Conjectures.NuttallRepeatedTails",
   "project_modules": [
     "Conjectures.NuttallRepeatedTails",
@@ -17,11 +17,11 @@
   ],
   "source_sha256": {
     "lean/Conjectures/NuttallRepeatedTails.lean": "e784bcecce31c292a01aee54d914e8e8b18d936fbfdcd83ca09f4676eabe0081",
-    "lean/Conjectures/NuttallThetaKernel.lean": "fcbf4b10254ff5ac2f3afd628f30f5b7475d30a366ebd4b50c2845f6fc248f6d"
+    "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9"
   },
   "input_sha256": {
     "lean/Conjectures/NuttallRepeatedTails.lean": "e784bcecce31c292a01aee54d914e8e8b18d936fbfdcd83ca09f4676eabe0081",
-    "lean/Conjectures/NuttallThetaKernel.lean": "fcbf4b10254ff5ac2f3afd628f30f5b7475d30a366ebd4b50c2845f6fc248f6d",
+    "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
@@ -93,7 +93,7 @@
     ],
     "declarations": 34,
     "modules": 2,
-    "private_declarations": 10,
+    "private_declarations": 5,
     "raw_declarations": 34,
     "required": 6,
     "tag": "passed",

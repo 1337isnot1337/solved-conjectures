@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall first-mode asymptotic
+
+Lean checks the exact first-term correction, a uniform exponential tail bound, the leading ratio limit, and the global double-exponential bound for derivative order zero. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
 Published the checked Stern-polynomial recurrence and conditional continued-fraction reduction; added unconditional nonvanishing on the positive real axis. The full complex half-plane proof remains partially formalized. [Lean scope](results/stern-half-plane/FORMALIZATION.md).

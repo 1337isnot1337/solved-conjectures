@@ -10,14 +10,14 @@ public section
 namespace NuttallCumulants
 
 /-- The n+1st summand of Nuttall's equation (1.3). -/
-noncomputable def thetaTerm (t : ℝ) (n : ℕ) : ℝ :=
+@[expose] noncomputable def thetaTerm (t : ℝ) (n : ℕ) : ℝ :=
   let k : ℝ := n + 1
   (2 * Real.pi ^ 2 * k ^ 4 * Real.exp (9 * t) -
     3 * Real.pi * k ^ 2 * Real.exp (5 * t)) *
     Real.exp (-Real.pi * k ^ 2 * Real.exp (4 * t))
 
 /-- Nuttall's theta kernel with the series indexed by natural numbers. -/
-noncomputable def thetaKernel (t : ℝ) : ℝ := ∑' n : ℕ, thetaTerm t n
+@[expose] noncomputable def thetaKernel (t : ℝ) : ℝ := ∑' n : ℕ, thetaTerm t n
 
 theorem thetaTerm_pos {t : ℝ} (ht : 0 ≤ t) (n : ℕ) : 0 < thetaTerm t n := by
   let k : ℝ := n + 1
