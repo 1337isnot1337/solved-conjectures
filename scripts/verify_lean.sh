@@ -310,6 +310,15 @@ modules=(
   Conjectures.RossiPermutohedronBulkTail
   Conjectures.RossiPermutohedronBulkMagnitude
   Conjectures.RossiPermutohedronBulkGrid
+  Conjectures.RossiPermutohedronNearEstimates
+  Conjectures.RossiPermutohedronNearSeries
+  Conjectures.RossiPermutohedronNearRatios
+  Conjectures.RossiPermutohedronNearDominance
+  Conjectures.RossiPermutohedronNearGrid
+  Conjectures.RossiPermutohedronCentral
+  Conjectures.RossiPermutohedronReflection
+  Conjectures.RossiPermutohedronGridGeometry
+  Conjectures.RossiPermutohedronUniformGrid
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
