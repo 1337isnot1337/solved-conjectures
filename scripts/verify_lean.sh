@@ -306,6 +306,10 @@ modules=(
   Conjectures.RossiPermutohedronNearestPoles
   Conjectures.RossiPermutohedronBulkBinomial
   Conjectures.RossiPermutohedronAnalyticPartial
+  Conjectures.RossiPermutohedronBulkTailTerm
+  Conjectures.RossiPermutohedronBulkTail
+  Conjectures.RossiPermutohedronBulkMagnitude
+  Conjectures.RossiPermutohedronBulkGrid
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

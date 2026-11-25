@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify Rossi’s positive-coordinate bulk signs in Lean
+
+Lean controls all remaining pole pairs by a telescoping strict tail estimate and proves the margin greater than one on the open positive half of the bulk sign grid. The reflected, central and endpoint signs and finite-grid certificates remain separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the two Rossi series expansions in Lean
 
 Lean connects the Eulerian recurrence to both analytic series, evaluates the exact nearest conjugate poles, and proves the bulk quadratic binomial estimate. The uniform signs and finite-grid witnesses remain separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
