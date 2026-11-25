@@ -8,6 +8,7 @@ import Conjectures.NuttallThetaTail
 import Conjectures.NuttallThetaTermDerivatives
 import Conjectures.NuttallThetaTermSeries
 import Conjectures.NuttallRepeatedTails
+import Conjectures.NuttallTailCalculus
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation

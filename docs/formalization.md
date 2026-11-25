@@ -11,7 +11,7 @@ The exact Stern polynomial is connected to the run-length continuant, with all f
 
 ## Nuttall's conjecture
 
-The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its exponential bound survives every literal tail integration, and the undifferentiated kernel has a checked leading asymptotic and double-exponential decay. Every single theta term has a checked all-order derivative recurrence with exact degree and leading coefficient. Local uniform summability proves termwise differentiation at all orders. The kernel derivatives have global double-exponential bounds and a strictly smaller exponential error after dropping the first term. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its exponential bound survives every literal tail integration, and the undifferentiated kernel has a checked leading asymptotic and double-exponential decay. Every single theta term has a checked all-order derivative recurrence with exact degree and leading coefficient. Local uniform summability proves termwise differentiation at all orders. The kernel derivatives have global double-exponential bounds and a strictly smaller exponential error after dropping the first term. Derivatives of the literal iterated tails shift the tail index until they reach the source kernel, after which they are signed kernel derivatives. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 

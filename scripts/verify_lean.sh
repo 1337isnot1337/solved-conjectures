@@ -16,6 +16,7 @@ modules=(
   Conjectures.NuttallThetaTermDerivatives
   Conjectures.NuttallThetaTermSeries
   Conjectures.NuttallRepeatedTails
+  Conjectures.NuttallTailCalculus
   Conjectures.NemethSeberryShuCongruence
   Conjectures.NemethSeberryShuCounting
   Conjectures.NemethSeberryShuLogSeparation
