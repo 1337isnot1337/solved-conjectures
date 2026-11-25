@@ -1,6 +1,15 @@
 # Full formalization campaign
 
 
+## Pomerance–Sárközy’s fluctuation conjecture
+
+Partial. Lean verifies the original arithmetic count, its exact
+offset form, the near-threshold comparison, and the finite shifted
+prime-factor factorial probability bound. The growing-window and
+limiting statements remain.
+[Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
+
 ## Novelli–Thibon's conjecture
 
 Partial. Lean checks the finite commutative monomial product and

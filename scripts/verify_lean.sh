@@ -99,6 +99,10 @@ modules=(
   Conjectures.NovelliThibonJacobiInterpolation
   Conjectures.NovelliThibonJacobiPadding
   Conjectures.NovelliThibonJacobiPerspectives
+  Conjectures.PomeranceSarkozyFactorialTail
+  Conjectures.PomeranceSarkozyFiniteSieve
+  Conjectures.PomeranceSarkozyOffsets
+  Conjectures.PomeranceSarkozyTailProbability
   Conjectures.NovelliThibonStableHook
   Conjectures.NovelliThibonVirtualComplete
   Conjectures.NovelliThibonWeakWordCount
