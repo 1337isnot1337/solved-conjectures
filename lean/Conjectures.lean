@@ -1496,3 +1496,7 @@ import Conjectures.KauersKoutschanDividedSum
 import Conjectures.KauersKoutschanFiniteRecurrence
 import Conjectures.KauersKoutschanBlockLengths
 import Conjectures.KauersKoutschanSignedBlocks
+import Conjectures.KauersKoutschanCompositionCount
+import Conjectures.KauersKoutschanSchurMoment
+import Conjectures.KauersKoutschanTraceProducts
+import Conjectures.KauersKoutschanColumnSeries

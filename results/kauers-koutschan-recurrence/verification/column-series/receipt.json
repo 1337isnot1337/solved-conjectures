@@ -1,0 +1,119 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T23:37:14.043073+00:00",
+  "finished_at": "2026-11-25T23:37:44.250414+00:00",
+  "root": "Conjectures.KauersKoutschanColumnSeries",
+  "project_modules": [
+    "Conjectures.KauersKoutschanColumnSeries",
+    "Conjectures.KauersKoutschanTracePolynomials",
+    "Conjectures.KauersKoutschanWeightedCompositions"
+  ],
+  "required_endpoints": [
+    "KauersKoutschan.weightedCompositionSum_succ",
+    "KauersKoutschan.signedColumnSeries_denominator",
+    "KauersKoutschan.signedColumnSeries_eq_traceSeries",
+    "KauersKoutschan.signedColumnSeries_coeff"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KauersKoutschanColumnSeries.lean": "0da83ef53dc189b5342acd06af91a19a8c9e470795cbe36ff7c35fa9364564ed",
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanWeightedCompositions.lean": "910a8eee11ca5f69e01b6e962e86cde05f4619471ead6d66be72d997509c39cd"
+  },
+  "input_sha256": {
+    "lean/Conjectures/KauersKoutschanColumnSeries.lean": "0da83ef53dc189b5342acd06af91a19a8c9e470795cbe36ff7c35fa9364564ed",
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanWeightedCompositions.lean": "910a8eee11ca5f69e01b6e962e86cde05f4619471ead6d66be72d997509c39cd",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1734/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanWeightedCompositions.olean",
+        "Conjectures/KauersKoutschanWeightedCompositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanWeightedCompositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1734/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTracePolynomials.olean",
+        "Conjectures/KauersKoutschanTracePolynomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTracePolynomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1734/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanColumnSeries.olean",
+        "Conjectures/KauersKoutschanColumnSeries.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanColumnSeries.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/sc-kauers-20261125/column-series/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/sc-kauers-publish-1734/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KauersKoutschanColumnSeries"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 62,
+    "modules": 3,
+    "private_declarations": 26,
+    "raw_declarations": 62,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 45
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

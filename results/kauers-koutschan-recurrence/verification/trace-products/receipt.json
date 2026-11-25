@@ -1,0 +1,99 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T23:36:02.636252+00:00",
+  "finished_at": "2026-11-25T23:36:45.575085+00:00",
+  "root": "Conjectures.KauersKoutschanTraceProducts",
+  "project_modules": [
+    "Conjectures.KauersKoutschanTracePolynomials",
+    "Conjectures.KauersKoutschanTraceProducts"
+  ],
+  "required_endpoints": [
+    "KauersKoutschan.traceComplete_product"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanTraceProducts.lean": "036fbe80a83e4352e8aed5f12d7ca21a430f795e32a7d5933b999e2018451ca7"
+  },
+  "input_sha256": {
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanTraceProducts.lean": "036fbe80a83e4352e8aed5f12d7ca21a430f795e32a7d5933b999e2018451ca7",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTracePolynomials.olean",
+        "Conjectures/KauersKoutschanTracePolynomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTracePolynomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTraceProducts.olean",
+        "Conjectures/KauersKoutschanTraceProducts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTraceProducts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/sc-kauers-20261125/trace-products/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/sc-kauers-research-1624/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KauersKoutschanTraceProducts"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 36,
+    "modules": 2,
+    "private_declarations": 4,
+    "raw_declarations": 36,
+    "required": 1,
+    "tag": "passed",
+    "theorems": 28
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

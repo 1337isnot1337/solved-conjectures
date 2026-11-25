@@ -86,8 +86,9 @@ Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of 
 
 Lean proves the source order-eight recurrence for the exact sixteen-mask
 finite sum at every index. It also proves the exact signed factorial
-block expansion for the actual permutations. The generating-function and
-Schur moment steps relating the two counts remain.
+block expansion for the actual permutations, the formal column series,
+and the exact Schur moment. The final coefficient extraction relating the
+two counts remains.
 [Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture

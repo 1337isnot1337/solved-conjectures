@@ -1,0 +1,205 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T23:34:35.471882+00:00",
+  "finished_at": "2026-11-25T23:36:02.452859+00:00",
+  "root": "Conjectures.KauersKoutschanSchurMoment",
+  "project_modules": [
+    "Conjectures.KauersKoutschanAffineTraceMoment",
+    "Conjectures.KauersKoutschanBivariateMoment",
+    "Conjectures.KauersKoutschanDividedSum",
+    "Conjectures.KauersKoutschanFactorialMoment",
+    "Conjectures.KauersKoutschanRadialSchurMoment",
+    "Conjectures.KauersKoutschanSchurMoment",
+    "Conjectures.KauersKoutschanTracePolynomials",
+    "Conjectures.KauersKoutschanUniformMoment"
+  ],
+  "required_endpoints": [
+    "KauersKoutschan.independent_factorial_schur_moment",
+    "KauersKoutschan.radial_factorial_schur_moment",
+    "KauersKoutschan.normalized_trace_moment_all",
+    "KauersKoutschan.radialAverage_eval",
+    "KauersKoutschan.factorialMoment_radialAverage"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KauersKoutschanAffineTraceMoment.lean": "cbaf30c66653fd42ffb1055cbbf1c6645b9a203dddbb12b5c33ff98f34d265e5",
+    "lean/Conjectures/KauersKoutschanBivariateMoment.lean": "d6b54e6a56a304feb2da328a4ba94a2511e065414731f1d2c82504f788d01926",
+    "lean/Conjectures/KauersKoutschanDividedSum.lean": "75210e1fa19dc7ccf80343c6e2aa53398ade07d8c4b8cf2124ffa161f15af459",
+    "lean/Conjectures/KauersKoutschanFactorialMoment.lean": "65e1d080d09ff96bd22385973883cccd8cdfd8b8eca8429b6de4b7c4a233c2fa",
+    "lean/Conjectures/KauersKoutschanRadialSchurMoment.lean": "8bafa2fa1875ffc300d2f6bb9b5fe2ef4e913cf5211ac98b2de4411537d6db84",
+    "lean/Conjectures/KauersKoutschanSchurMoment.lean": "b468a197bf10a6e16aab3b6767a6ff7eab9deac21ca71acdeef3e3ad0de88b91",
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanUniformMoment.lean": "63cf73853b997ec380aca9de32f78d2394d376a70357203b668ad43719848483"
+  },
+  "input_sha256": {
+    "lean/Conjectures/KauersKoutschanAffineTraceMoment.lean": "cbaf30c66653fd42ffb1055cbbf1c6645b9a203dddbb12b5c33ff98f34d265e5",
+    "lean/Conjectures/KauersKoutschanBivariateMoment.lean": "d6b54e6a56a304feb2da328a4ba94a2511e065414731f1d2c82504f788d01926",
+    "lean/Conjectures/KauersKoutschanDividedSum.lean": "75210e1fa19dc7ccf80343c6e2aa53398ade07d8c4b8cf2124ffa161f15af459",
+    "lean/Conjectures/KauersKoutschanFactorialMoment.lean": "65e1d080d09ff96bd22385973883cccd8cdfd8b8eca8429b6de4b7c4a233c2fa",
+    "lean/Conjectures/KauersKoutschanRadialSchurMoment.lean": "8bafa2fa1875ffc300d2f6bb9b5fe2ef4e913cf5211ac98b2de4411537d6db84",
+    "lean/Conjectures/KauersKoutschanSchurMoment.lean": "b468a197bf10a6e16aab3b6767a6ff7eab9deac21ca71acdeef3e3ad0de88b91",
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanUniformMoment.lean": "63cf73853b997ec380aca9de32f78d2394d376a70357203b668ad43719848483",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTracePolynomials.olean",
+        "Conjectures/KauersKoutschanTracePolynomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTracePolynomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanAffineTraceMoment.olean",
+        "Conjectures/KauersKoutschanAffineTraceMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanAffineTraceMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanDividedSum.olean",
+        "Conjectures/KauersKoutschanDividedSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanDividedSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanFactorialMoment.olean",
+        "Conjectures/KauersKoutschanFactorialMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanFactorialMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanUniformMoment.olean",
+        "Conjectures/KauersKoutschanUniformMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanUniformMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanBivariateMoment.olean",
+        "Conjectures/KauersKoutschanBivariateMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanBivariateMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanRadialSchurMoment.olean",
+        "Conjectures/KauersKoutschanRadialSchurMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanRadialSchurMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-research-1624/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanSchurMoment.olean",
+        "Conjectures/KauersKoutschanSchurMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanSchurMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/sc-kauers-20261125/schur-moment/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/sc-kauers-research-1624/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KauersKoutschanSchurMoment"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 129,
+    "modules": 8,
+    "private_declarations": 33,
+    "raw_declarations": 129,
+    "required": 5,
+    "tag": "passed",
+    "theorems": 99
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
