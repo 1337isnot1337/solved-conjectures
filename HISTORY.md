@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Ćurgus–Mascioni’s Fréchet root-matching extremizer question
+
+Kernel-checked the exact nonuniqueness counterexample on all quadratics with the stated operator, including all minimizing permutations and the continuous family of inequivalent extrema. General attainment and the cubic example remain written only. [Lean scope](results/curgus-mascioni-frechet/FORMALIZATION.md).
+
 ## 2026-11-25 — Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
 
 Kernel-checked the relaxed-seam unpinned counterexample under both column-comparison conventions. The separate standard-boundary positivity theorem remains outside Lean scope. [Scope](results/fmp-cylindric/FORMALIZATION.md).

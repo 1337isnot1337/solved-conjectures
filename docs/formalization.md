@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Ćurgus–Mascioni’s Fréchet root-matching extremizer question
+
+Partial for the full entry. Lean verifies the exact nonuniqueness counterexample, all root multiplicities and the all-quadratic upper bound. General attainment remains unformalized. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md).
+
 ## Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
 
 Partial for the two-part written resolution. The exact thirteen-cell witness disproves unpinned positivity under both vertical-edge conventions. General standard-boundary positivity is not formalized. [Lean scope](../results/fmp-cylindric/FORMALIZATION.md).

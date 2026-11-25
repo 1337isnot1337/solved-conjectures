@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CurgusMascioniQuadratic.centeredMatch_exact,
+    `CurgusMascioniQuadratic.centeredMatch_le,
+    `CurgusMascioniQuadratic.operator_linear_unchanged,
+    `CurgusMascioniQuadratic.arbitrary_quadratic_root_bound,
+    `CurgusMascioniQuadratic.interval_root_extremizers,
+    `CurgusMascioniQuadratic.degree_centered,
+    `CurgusMascioniQuadratic.squared_diameter,
+    `CurgusMascioniQuadratic.no_isometric_relabelling,
     `Conjectures.FMPCylindric.edge_exact,
     `Conjectures.FMPCylindric.cell_injective,
     `Conjectures.FMPCylindric.cell_surj,
@@ -11102,7 +11110,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do
