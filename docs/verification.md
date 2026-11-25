@@ -1,5 +1,9 @@
 # Verification
 
+## Gravgaard–Lee’s Lüroth diameter question
+
+The [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json) covers strict compilation, all-owned transitive axiom audit, and pinned stock-kernel replay for the closure of `Conjectures.GravgaardLeeDiameter`. See the [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) for the scoped command. The imports and required endpoints are registered in the [aggregate workflow](../.github/workflows/lean.yml).
+
 ## Ulas’s disjoint-block square-product conjecture
 
 The [local receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json) records the strict Lean build, transitive axiom audit, and stock-kernel replay for the nine-module closure of `Conjectures.UlasDisjointSquareBlocks`. The [Lean formalization](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) gives the scoped command. The [aggregate workflow](../.github/workflows/lean.yml) uses the registered imports, audit endpoints, and replay list.
