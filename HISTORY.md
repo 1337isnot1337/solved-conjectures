@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Complete Lean verification of González D’León–Wachs’s equal-variable result
+
+Lean verifies the boundary color formulas, the printed three-color
+example, strict coefficient log-concavity across all positive color
+counts, and the complete real-root multiset.
+[Scope and receipts](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the actual Gamma expectation and real-zero count
 
 Lean identifies the moments with an actual shifted sum of independent

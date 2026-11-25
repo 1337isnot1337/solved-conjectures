@@ -2,10 +2,10 @@
 
 ## González D’León–Wachs’s complete-graph specialization question
 
-Partial. Lean proves the literal Laguerre and actual Gamma
-expectation formulas, positive rates, and strict log-concavity for
-at least two equal colors. Lean verifies the real-zero count for at
-least three. The one-color boundary case remains.
+Complete for the stated equal-variable result. Lean verifies the
+literal Laguerre and actual Gamma expectation formulas, the boundary
+color formulas, strict ordinary coefficient log-concavity, and the
+real-zero count. Schur-log-concavity is outside the stated result.
 [Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture

@@ -6,6 +6,7 @@ import Conjectures.WachsCompleteGraphSizeRecurrence
 import Conjectures.WachsCompleteGraphActualLaguerre
 import Conjectures.WachsCompleteGraphStrictLogConcavity
 import Conjectures.WachsCompleteGraphRealZeros
+import Conjectures.WachsCompleteGraphAllColors
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional
