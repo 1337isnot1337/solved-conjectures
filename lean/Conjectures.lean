@@ -1313,6 +1313,10 @@ import Conjectures.AlexanderssonParkingExcedanceRoots
 import Conjectures.AlexanderssonParkingExcedance
 import Conjectures.HKMEhrhartPartial
 import Conjectures.HKMEhrhartDegreeBridge
+import Conjectures.AthanasiadisChapotonChain
+import Conjectures.AthanasiadisChapotonTransfer
+import Conjectures.AthanasiadisChapotonGauge
+import Conjectures.AthanasiadisChapotonPolar
 import Conjectures.FussSlot
 import Conjectures.FussFinal
 import Conjectures.FussRoots
