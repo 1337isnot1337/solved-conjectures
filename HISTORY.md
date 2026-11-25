@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Complete Lean verification of Nuttall’s conjecture
+
+Lean verifies the signed extended-Chebyshev criterion, discharges the theta-tail constraint, and proves strict signs for every ordered cumulant grid through any finite order. It also proves existence of the least cumulant index as stated by John Nuttall. The separate RH-equivalent problem is unchanged. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall negative-region bound and integral dominance
 
 Lean checks the absolute integral bound on the negative region, the exact comparison ratio and the eventual dominance of the positive box. The strict cumulant Hankel sign follows conditionally on the remaining distinct-node theta tail sign. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).

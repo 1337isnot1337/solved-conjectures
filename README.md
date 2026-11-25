@@ -12,7 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | :--- | :---: | :--- | :---: |
 | **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **75.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ✅ |
 | **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | 🟡 | **75.** [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ✅ |
-| **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | 🟡 | **75.** [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | 🟢 |
+| **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | ✅ | **75.** [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | 🟢 |
 | **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **79.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
 | **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **79.** [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/) | ⬜ |
 | **4.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **79.** [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | 🟡 |
