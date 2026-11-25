@@ -33,6 +33,7 @@ import Conjectures.ShumyatskyProductCompletion
 import Conjectures.ShumyatskyMultifactorLift
 import Conjectures.ShumyatskySocleAssembly
 import Conjectures.ShumyatskySocleStructure
+import Conjectures.ShumyatskyCharacteristicallySimple
 import Conjectures.ShumyatskyPrimeKernelLift
 import Conjectures.ShumyatskyAbelianReduction
 import Conjectures.ShumyatskyCyclicNormalization

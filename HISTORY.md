@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify Shumyatsky’s transitive simple factors
+
+Lean realizes each nonabelian minimal normal subgroup as a direct
+power of a nonabelian simple group, with the actual coordinate factors
+forming one orbit under ambient conjugation.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s actual socle quotient
 
 Lean proves that the socle is the direct product of the minimal
