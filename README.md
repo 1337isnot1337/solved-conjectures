@@ -84,7 +84,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **71.** [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ | **145.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
 | **71.** [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ | **145.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
 | **71.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ | **145.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
-| **75.** [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | ⬜ |  |  |
+| **75.** [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | 🟡 |  |  |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).
 

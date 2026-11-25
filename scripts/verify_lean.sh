@@ -239,6 +239,12 @@ modules=(
   Conjectures.GravgaardLeeDiameterGreedy
   Conjectures.GravgaardLeeDiameterTails
   Conjectures.GravgaardLeeDiameter
+  Conjectures.SokalAperyMoments
+  Conjectures.SokalAperyContinuation
+  Conjectures.SokalAperyEndpoint
+  Conjectures.SokalAperyLegendre
+  Conjectures.SokalAperyTorus
+  Conjectures.SokalAperyMomentThreshold
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
