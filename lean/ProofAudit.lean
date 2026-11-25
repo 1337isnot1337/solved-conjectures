@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Shumyatsky.exists_coordinateFactor_le_normal,
+    `Shumyatsky.eq_coordinateFactor_of_normal_le,
+    `Shumyatsky.exists_factor_permutation,
+    `Shumyatsky.exists_nonabelian_simple_product_factorAction,
+    `Shumyatsky.trail_factorAction,
+    `Shumyatsky.trail_restricts_to_factor,
+    `Shumyatsky.trail_mem_pair_closure,
+    `Shumyatsky.trailLabel_selected_edge,
+    `Shumyatsky.existsUnique_edge_label_for_word,
     `Shumyatsky.factorAction_mul,
     `Shumyatsky.exists_factorAction_of_maps_factors,
     `Shumyatsky.factorAction_injective,

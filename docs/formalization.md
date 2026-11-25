@@ -3,8 +3,8 @@
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
 Partial. Lean verifies the reduction to prime-spectrum-minimal groups,
-the quotient and kernel cardinality argument, the cycle equations,
-and the literal action and inner-automorphism cosets on the product.
+the quotient and kernel cardinality argument, the literal action
+on the simple factors, and the cycle and closed-walk label equations.
 [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
 
