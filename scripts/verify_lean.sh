@@ -347,6 +347,23 @@ modules=(
   Conjectures.McNamaraSteingrimssonRepeatedActualFactors
   Conjectures.McNamaraSteingrimssonRepeatedPatternShape
   Conjectures.McNamaraSteingrimssonRepeatedRankWidths
+  Conjectures.McNamaraSteingrimssonBlockAssembly
+  Conjectures.McNamaraSteingrimssonBlockCuts
+  Conjectures.McNamaraSteingrimssonBlockOffsets
+  Conjectures.McNamaraSteingrimssonBlockUncons
+  Conjectures.McNamaraSteingrimssonCanonicalComponents
+  Conjectures.McNamaraSteingrimssonCanonicalCuts
+  Conjectures.McNamaraSteingrimssonFirstOmission
+  Conjectures.McNamaraSteingrimssonIntrinsicOmission
+  Conjectures.McNamaraSteingrimssonLaterOffsets
+  Conjectures.McNamaraSteingrimssonLaterOmission
+  Conjectures.McNamaraSteingrimssonLayerDownsetCount
+  Conjectures.McNamaraSteingrimssonLayerFirstMax
+  Conjectures.McNamaraSteingrimssonPointedDownset
+  Conjectures.McNamaraSteingrimssonPointedDownsetCount
+  Conjectures.McNamaraSteingrimssonRankStructure
+  Conjectures.McNamaraSteingrimssonShortFactor
+  Conjectures.McNamaraSteingrimssonSumAssoc
   Conjectures.McNamaraSteingrimssonShortBlockPlacement
   Conjectures.McNamaraSteingrimssonPatternSplit
   Conjectures.McNamaraSteingrimssonPrefixFamilies

@@ -59,6 +59,21 @@ The conjecture and discovery attribution remain as recorded in the
   records the check. This is an existence theorem for the
   factorization, not the required disjoint enumeration.
 
+- [Canonical omitted slot](../../lean/Conjectures/McNamaraSteingrimssonIntrinsicOmission.lean):
+  at every positive interior rank, the presence of a canonical
+  long component immediately after the short length distinguishes
+  the first omission from later omissions. An earlier missing
+  grid-aligned component also makes every later omission slot
+  [unique](../../lean/Conjectures/McNamaraSteingrimssonLaterOmission.lean),
+  independent of how the permutation was embedded.
+- [Literal pointed downsets](../../lean/Conjectures/McNamaraSteingrimssonPointedDownsetCount.lean):
+  at lengths at least three, the patterns omitting the leading
+  maximum and those retaining it are disjoint. The two families
+  give the written downset-polynomial coefficients (the small
+  overlap terms have degree at most two). The
+  [rank-structure receipt](verification/rank-structure/receipt.json)
+  records these scopes. These are not yet the final repeated-sum counts.
+
 The complete repeated-sum interval decomposition and the exact final
 three rank sizes are not established by this scope. The
 [receipt](verification/receipt.json) records strict Lean compilation,
