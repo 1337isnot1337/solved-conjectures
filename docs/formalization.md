@@ -19,6 +19,8 @@ and limiting statements remain.
 
 Two supporting threshold identities are independently replayed:
 the universal band-mass bound and the exact tail-product sum.
+The prime-mean input (a uniform bounded error for the reciprocal-prime
+sum relative to log log x) is also checked.
 [Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
 

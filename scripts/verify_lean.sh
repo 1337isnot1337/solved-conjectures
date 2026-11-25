@@ -115,6 +115,13 @@ modules=(
   Conjectures.PomeranceSarkozyMeasurePush
   Conjectures.PomeranceSarkozyPoissonColumns
   Conjectures.PomeranceSarkozyPoissonCountCheckpoint
+  Conjectures.PomeranceSarkozyLogKernels
+  Conjectures.PomeranceSarkozyMangoldtFloor
+  Conjectures.PomeranceSarkozyMangoldtReciprocal
+  Conjectures.PomeranceSarkozyMertensAbel
+  Conjectures.PomeranceSarkozyMertensRemainder
+  Conjectures.PomeranceSarkozySqrtWeightedPrefix
+  Conjectures.PomeranceSarkozyWeightedPrime
   Conjectures.PomeranceSarkozyPoissonCountLaw
   Conjectures.PomeranceSarkozyPoissonMoments
   Conjectures.PomeranceSarkozyPoissonSums
