@@ -101,6 +101,44 @@ theorem dividedSum_eq_pair_sum (m : ℕ) :
     have hzero : denom m k = 0 := by rw [hk]; simp [denom]
     rw [hhalf, hzero, div_zero]
 
+/-- The omitted pairs in equation (6), with denominators independent of the base index. -/
+theorem truncated_pair_sum (h s cutoff : ℕ) (hc : cutoff ≤ (s + 1) / 2) :
+    (∑ j ∈ Finset.range (h + cutoff), dividedDifference (2 * h + s - j) j) =
+      dividedSum (2 * h + s) -
+        ∑ i ∈ Finset.range ((s + 1) / 2 - cutoff),
+          sign s * (moment (h + s - (cutoff + i)) - moment (h + (cutoff + i))) /
+            ((s - 2 * (cutoff + i) : ℕ) : ℚ) := by
+  have hsplit : (2 * h + s + 1) / 2 =
+      (h + cutoff) + ((s + 1) / 2 - cutoff) := by omega
+  have hsplitSum := Finset.sum_range_add (fun j => dividedDifference (2 * h + s - j) j)
+    (h + cutoff) ((s + 1) / 2 - cutoff)
+  have htail :
+      (∑ i ∈ Finset.range ((s + 1) / 2 - cutoff),
+        dividedDifference (2 * h + s - (h + cutoff + i)) (h + cutoff + i)) =
+        ∑ i ∈ Finset.range ((s + 1) / 2 - cutoff),
+          sign s * (moment (h + s - (cutoff + i)) - moment (h + (cutoff + i))) /
+            ((s - 2 * (cutoff + i) : ℕ) : ℚ) := by
+    apply Finset.sum_congr rfl
+    intro i hi
+    have hib := Finset.mem_range.mp hi
+    have hj : 2 * (cutoff + i) < s := by omega
+    have hupper : 2 * h + s - (h + cutoff + i) = h + s - (cutoff + i) := by omega
+    rw [hupper, show h + cutoff + i = h + (cutoff + i) by omega]
+    have hden : (↑(h + s - (cutoff + i)) : ℚ) - ↑(h + (cutoff + i)) =
+        ↑(s - 2 * (cutoff + i)) := by
+      push_cast [Nat.cast_sub (show cutoff + i ≤ h + s by omega),
+        Nat.cast_sub (show 2 * (cutoff + i) ≤ s by omega)]
+      ring
+    have hsign : sign (h + (cutoff + i)) * sign (h + s - (cutoff + i)) = sign s := by
+      rw [← sign_add, show h + (cutoff + i) + (h + s - (cutoff + i)) = 2 * h + s by omega,
+        sign_add]
+      simp [sign, pow_mul]
+    simp only [dividedDifference, derangement, hden, ← mul_assoc, hsign,
+      mul_comm (sign (h + s - (cutoff + i))) (sign (h + (cutoff + i)))]
+    ring
+  rw [dividedSum_eq_pair_sum, hsplit, hsplitSum, htail]
+  abel
+
 private theorem recip_sum_zero (m : ℕ) :
     (∑ k ∈ Finset.range (m + 1), 1 / denom m k) = 0 := by
   set s : ℚ := ∑ k ∈ Finset.range (m + 1), 1 / denom m k
