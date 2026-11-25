@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify Novelli–Thibon's Schur determinant and hook coefficients
+
+Lean proves the actual Jacobi–Trudi/bialternant bridge, including
+zero-row padding. It then derives the exact hook formula from the
+source's stable ordinary Schur-expansion premise.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Novelli–Thibon's virtual alphabet interpolation
 
 Lean counts the actual finite fundamental words, carries out the

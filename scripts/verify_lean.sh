@@ -90,6 +90,17 @@ modules=(
   Conjectures.NovelliThibonVirtualBinomial
   Conjectures.NovelliThibonVirtualFundamental
   Conjectures.NovelliThibonVirtualGraph
+  Conjectures.NovelliThibonCompleteDeletion
+  Conjectures.NovelliThibonCompleteElimination
+  Conjectures.NovelliThibonCompleteSubset
+  Conjectures.NovelliThibonCompleteWords
+  Conjectures.NovelliThibonJacobiBialternant
+  Conjectures.NovelliThibonJacobiFactorization
+  Conjectures.NovelliThibonJacobiInterpolation
+  Conjectures.NovelliThibonJacobiPadding
+  Conjectures.NovelliThibonJacobiPerspectives
+  Conjectures.NovelliThibonStableHook
+  Conjectures.NovelliThibonVirtualComplete
   Conjectures.NovelliThibonWeakWordCount
   Conjectures.NovelliThibonHookJacobiTrudi
   Conjectures.NovelliThibonHookProductCoefficients

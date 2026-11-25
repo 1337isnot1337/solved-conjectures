@@ -1,0 +1,1033 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T21:38:05.068663+00:00",
+  "finished_at": "2026-11-25T21:44:36.644054+00:00",
+  "root": "Conjectures.NovelliThibonJacobiPerspectives",
+  "project_modules": [
+    "Conjectures.NovelliThibonAlternantChains",
+    "Conjectures.NovelliThibonAlternants",
+    "Conjectures.NovelliThibonAttackCounts",
+    "Conjectures.NovelliThibonCellResponse",
+    "Conjectures.NovelliThibonCompleteDeletion",
+    "Conjectures.NovelliThibonCompleteElimination",
+    "Conjectures.NovelliThibonCompleteSubset",
+    "Conjectures.NovelliThibonCompleteWords",
+    "Conjectures.NovelliThibonCutEvaluation",
+    "Conjectures.NovelliThibonCutWords",
+    "Conjectures.NovelliThibonDiagram",
+    "Conjectures.NovelliThibonDiagramMoments",
+    "Conjectures.NovelliThibonDualResponse",
+    "Conjectures.NovelliThibonFillingFirstOrder",
+    "Conjectures.NovelliThibonFiniteFundamental",
+    "Conjectures.NovelliThibonFundamentalWords",
+    "Conjectures.NovelliThibonGraphLLT",
+    "Conjectures.NovelliThibonGraphOmega",
+    "Conjectures.NovelliThibonHookCellProduct",
+    "Conjectures.NovelliThibonHookExtraction",
+    "Conjectures.NovelliThibonHookJacobiTrudi",
+    "Conjectures.NovelliThibonHookProductCoefficients",
+    "Conjectures.NovelliThibonIncomingCells",
+    "Conjectures.NovelliThibonJacobiBialternant",
+    "Conjectures.NovelliThibonJacobiFactorization",
+    "Conjectures.NovelliThibonJacobiInterpolation",
+    "Conjectures.NovelliThibonJacobiPadding",
+    "Conjectures.NovelliThibonJacobiPerspectives",
+    "Conjectures.NovelliThibonLegCounts",
+    "Conjectures.NovelliThibonLinearResponse",
+    "Conjectures.NovelliThibonMarkedStandardization",
+    "Conjectures.NovelliThibonOptionalEdges",
+    "Conjectures.NovelliThibonPairFactor",
+    "Conjectures.NovelliThibonRankPrefixes",
+    "Conjectures.NovelliThibonRepeatedAlphabet",
+    "Conjectures.NovelliThibonRightStandardization",
+    "Conjectures.NovelliThibonRowCounts",
+    "Conjectures.NovelliThibonSchurExtraction",
+    "Conjectures.NovelliThibonSchurMoments",
+    "Conjectures.NovelliThibonSignedFundamentals",
+    "Conjectures.NovelliThibonSignedGraph",
+    "Conjectures.NovelliThibonSignedShape",
+    "Conjectures.NovelliThibonSignedSource",
+    "Conjectures.NovelliThibonSourceFilling",
+    "Conjectures.NovelliThibonSourceGraphSum",
+    "Conjectures.NovelliThibonSourceNormalization",
+    "Conjectures.NovelliThibonSourceShape",
+    "Conjectures.NovelliThibonStableHook",
+    "Conjectures.NovelliThibonStandardization",
+    "Conjectures.NovelliThibonStrictWordCount",
+    "Conjectures.NovelliThibonVirtualBinomial",
+    "Conjectures.NovelliThibonVirtualComplete",
+    "Conjectures.NovelliThibonVirtualFundamental",
+    "Conjectures.NovelliThibonVirtualGraph",
+    "Conjectures.NovelliThibonWeakWordCount",
+    "Conjectures.NovelliThibonYoungRaises"
+  ],
+  "required_endpoints": [
+    "NovelliThibon.monotoneWordEquivSym",
+    "NovelliThibon.fundamentalAt_empty_eq_hsymm_eval",
+    "NovelliThibon.completeRepeatedPolynomial_eval_nat",
+    "NovelliThibon.completeRepeatedPolynomial_eval_neg_one",
+    "NovelliThibon.repeatedJacobiTrudi_eval_neg_one",
+    "NovelliThibon.hook_coeff_of_stable_JacobiTrudi",
+    "NovelliThibon.completeOn_remove_factor",
+    "NovelliThibon.completeOn_eliminate",
+    "NovelliThibon.jacobiTrudi_mul_complementary",
+    "NovelliThibon.jacobiTrudi_det_times_staircase",
+    "NovelliThibon.powerMatrix_X_det_eq_alternant",
+    "NovelliThibon.jacobiTrudiPolynomial_bialternant",
+    "NovelliThibon.schurExtract_jacobiTrudiPolynomial",
+    "NovelliThibon.jacobiOnSequence_padding",
+    "NovelliThibon.eval_jacobiTrudiPolynomial_shape_height"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/NovelliThibonAlternantChains.lean": "e509d8028414fd52e3f889409313b1bcf970ae5328068fea5239dbd7fbc6f000",
+    "lean/Conjectures/NovelliThibonAlternants.lean": "2d88e1aacb89537054e8f19f991f1f7dab281bad81997f43ec11694c05ef75b1",
+    "lean/Conjectures/NovelliThibonAttackCounts.lean": "f96b010fe7ef7ce8d200bcf9815a20f2d7fcb6327d06b9b5f56924490d784515",
+    "lean/Conjectures/NovelliThibonCellResponse.lean": "9b16824b611b8ba84ad56547a101c6ae02f26168a9c31a43ce66067cf15322e8",
+    "lean/Conjectures/NovelliThibonCompleteDeletion.lean": "bea523f8df1e1f7ee5a681525840f01f72c7cb21486f03c274bde8d0bc8f3c5e",
+    "lean/Conjectures/NovelliThibonCompleteElimination.lean": "45bb1369eda36572978a298050f133bc82215fb02c7ddd89a1a41be0d700f055",
+    "lean/Conjectures/NovelliThibonCompleteSubset.lean": "890698f3755b7972de7f57effdf43ffbde12225bfc5478d37c71edef0aa9ab53",
+    "lean/Conjectures/NovelliThibonCompleteWords.lean": "13c3f6b6020bc98131227dcdb2fff2fc62ed64243d14770025b952e248164788",
+    "lean/Conjectures/NovelliThibonCutEvaluation.lean": "75147dd29034a3f9519f71f808a6697f80046d4676931cc3578d17fe228d8d00",
+    "lean/Conjectures/NovelliThibonCutWords.lean": "2629dd8261ba09e762c54eb0c8319ff3e62b814633be0b3dc01baf366e69daa8",
+    "lean/Conjectures/NovelliThibonDiagram.lean": "44d405935f034c528ea01c73cbc37117121d1249010585938fdce81d6504ee27",
+    "lean/Conjectures/NovelliThibonDiagramMoments.lean": "bb848eb330eeb988f1bc3875c55d5e50653f0759d58e36be04d5398af5e80a38",
+    "lean/Conjectures/NovelliThibonDualResponse.lean": "ac0bd7354c75701bee4da80bf7136320e4f65176096b7954d49322b5abd2c4ac",
+    "lean/Conjectures/NovelliThibonFillingFirstOrder.lean": "e446474c15453c9e1cdd8e2f051c0e35d82e5b8cc65f3d695c1c4ec1214f9a2d",
+    "lean/Conjectures/NovelliThibonFiniteFundamental.lean": "cf3c4a7b14ce5f34dceafec4af39079cc1c009c4f0bdf3ac087ed05ccb1fea46",
+    "lean/Conjectures/NovelliThibonFundamentalWords.lean": "ce3d832a48bcd584afa4f943869c583914b53420ccd9189130766c96a1d1228a",
+    "lean/Conjectures/NovelliThibonGraphLLT.lean": "d5f8c0c35b8ed30dcd0482737421b2de05451b57d5ff2fc78994c0b309e1ffc5",
+    "lean/Conjectures/NovelliThibonGraphOmega.lean": "00ad28eef4f1bee3c8128d42dae8e7e2da10cc9714f88e5d4e5381b0c30d0406",
+    "lean/Conjectures/NovelliThibonHookCellProduct.lean": "f805152ad627b8ca6d81c3c4df0d9a9b593826280729ad93e613b182e6aea4b2",
+    "lean/Conjectures/NovelliThibonHookExtraction.lean": "25ca646ebe8a67c19a1c22b7846a138ed05a6abdf1bb988eb8b18e251f0654ca",
+    "lean/Conjectures/NovelliThibonHookJacobiTrudi.lean": "c0b8070d6bdf1161af86de717bdebb7fcd808cca131e8cef6d757e344062e89c",
+    "lean/Conjectures/NovelliThibonHookProductCoefficients.lean": "23b3f8736b93da2b0ab1535c57a0437aebef7f0150507d1d12fd5ab75c8046c1",
+    "lean/Conjectures/NovelliThibonIncomingCells.lean": "fa3d11e12b561cb4d83efbc36de381bcf9246e0b456a8f9eb3a83004e3aa51c2",
+    "lean/Conjectures/NovelliThibonJacobiBialternant.lean": "841f841783454f184bacbff2b8199fbbb8db6718cd3b62b250ce5352c6b697e1",
+    "lean/Conjectures/NovelliThibonJacobiFactorization.lean": "96ab4dd8bbc9435cb5bb9e33ff185b9c62311dbb26dcc69ea953e096be9c0423",
+    "lean/Conjectures/NovelliThibonJacobiInterpolation.lean": "f7e92a9a831b8d120fb6f61432f0a01126687a1e1a5f33505dc5828d4c45534b",
+    "lean/Conjectures/NovelliThibonJacobiPadding.lean": "c2418ae74b9d4a13b94a8cbc049ba531aef5f5404b616ed413e306394fcb8fa3",
+    "lean/Conjectures/NovelliThibonJacobiPerspectives.lean": "76dcc6a60e8902f5a5690f539247ee95bdb3920f4e3267aca923c67cd5402112",
+    "lean/Conjectures/NovelliThibonLegCounts.lean": "f8f2a60724c99dd4564c625e9240d33baad49916ff1947de84c771e35b255303",
+    "lean/Conjectures/NovelliThibonLinearResponse.lean": "a5582410e776c9716023f5348dc29b3476dcf5ebbbda4db14d8f3eda5b0e1759",
+    "lean/Conjectures/NovelliThibonMarkedStandardization.lean": "3fe6f02a807836c6fe85948da9444c79e5d886a8d5d34c79e7fe6b99113e4847",
+    "lean/Conjectures/NovelliThibonOptionalEdges.lean": "6b7346c4ea4450dbc662131b2b778aef6c13d07784d21a45cf0f0c32c76b0bfc",
+    "lean/Conjectures/NovelliThibonPairFactor.lean": "6e4f18e04549f057a59dcdaf15e716849999b6fa467e88b508abe9d515086209",
+    "lean/Conjectures/NovelliThibonRankPrefixes.lean": "c58008402cef187d297a6b7db570410b9e8bf9e13038c5d16f77d15c38f3fc92",
+    "lean/Conjectures/NovelliThibonRepeatedAlphabet.lean": "d33852805e8bde95aaa6623963a908dba14b23c847362217446ba9603b635704",
+    "lean/Conjectures/NovelliThibonRightStandardization.lean": "1eb60058d7faa44c9c2bb1c46967a49a3043f85eb46222f80269b0ac75d801ee",
+    "lean/Conjectures/NovelliThibonRowCounts.lean": "5908ac1e69a80f361dad7e420915f18b175ebf4b52e8eb4eaba4624ac5bd9dff",
+    "lean/Conjectures/NovelliThibonSchurExtraction.lean": "aa53b74b44d1e103408d3c355ab1569bb5b5a38417685fe051f6d3e11e133473",
+    "lean/Conjectures/NovelliThibonSchurMoments.lean": "2546086fbbf6a528517a7ca22859a3a8e8f3f4af9205d3c2a9f37fad21878130",
+    "lean/Conjectures/NovelliThibonSignedFundamentals.lean": "513d86677d509823f255f0033584e0133492892b611bb99d525c2d1dbced191c",
+    "lean/Conjectures/NovelliThibonSignedGraph.lean": "b17433c7161ca05c17f3839fd17ae2d4db1162fb7af388cdd1c8c6969aba3c85",
+    "lean/Conjectures/NovelliThibonSignedShape.lean": "d7c9a06d84f16afe2db4ad37e4d8396b7ff1ce0ae1c9cad6873212e672ae6b34",
+    "lean/Conjectures/NovelliThibonSignedSource.lean": "d426f1b617f968660d3129be3106dd5a5f393958d52ad74f54968865a7536d0e",
+    "lean/Conjectures/NovelliThibonSourceFilling.lean": "ba04cd1c3753a007328bf16f4b41e65c6857c3e5d58806cc8a83c95b8f0d7559",
+    "lean/Conjectures/NovelliThibonSourceGraphSum.lean": "cb5b935a19fa657e9ac5cb60d3e9bba51b20d4a84a339f8438faac7a1fcae190",
+    "lean/Conjectures/NovelliThibonSourceNormalization.lean": "b524f307e31a8cbdb348692e78ac2ebbc35f87dd343013c9088e48080a517695",
+    "lean/Conjectures/NovelliThibonSourceShape.lean": "8cd9add80401c8584100230dee747b6abe4cdebee2b10a26f54e3039a39c4343",
+    "lean/Conjectures/NovelliThibonStableHook.lean": "351a5f88d367d4f49ed1b600b69a01c0ada9813ae6019177ee0e3fdd55e5fb53",
+    "lean/Conjectures/NovelliThibonStandardization.lean": "4cabc5ac8986071e86532e5cc887fc7ba115a195be8ac2d1eab87a7b708e923b",
+    "lean/Conjectures/NovelliThibonStrictWordCount.lean": "92f8c1e721361eca68381578e738b6efa8b538fd0d9733f29af0833620b391bd",
+    "lean/Conjectures/NovelliThibonVirtualBinomial.lean": "4c3aa8a3516b8d02ddae2aacd20b270320a687b85256a1d39ddc2e26217ccc80",
+    "lean/Conjectures/NovelliThibonVirtualComplete.lean": "dcf47e733778c361f4080d68e561ea98815fc0eeaeb1a8e457baf80b08a9b394",
+    "lean/Conjectures/NovelliThibonVirtualFundamental.lean": "1cd46c60a221919e01c39486d43667c1e00aea59cd0ee9865e80dcd16453e0eb",
+    "lean/Conjectures/NovelliThibonVirtualGraph.lean": "e3fe7ab66e7e3ae18b84a666aaa81c052cf2e9c48c74eb5461ebd28abf2d9290",
+    "lean/Conjectures/NovelliThibonWeakWordCount.lean": "17f19dcd22cb8cae798df4e222b3ab0c0f66fbcce36d11e3971eff9b5bc2c38e",
+    "lean/Conjectures/NovelliThibonYoungRaises.lean": "8beab54a58bac8ad1b55e76cdf6842792e3538c264a8eb4535ad805bacbc6b62"
+  },
+  "input_sha256": {
+    "lean/Conjectures/NovelliThibonAlternantChains.lean": "e509d8028414fd52e3f889409313b1bcf970ae5328068fea5239dbd7fbc6f000",
+    "lean/Conjectures/NovelliThibonAlternants.lean": "2d88e1aacb89537054e8f19f991f1f7dab281bad81997f43ec11694c05ef75b1",
+    "lean/Conjectures/NovelliThibonAttackCounts.lean": "f96b010fe7ef7ce8d200bcf9815a20f2d7fcb6327d06b9b5f56924490d784515",
+    "lean/Conjectures/NovelliThibonCellResponse.lean": "9b16824b611b8ba84ad56547a101c6ae02f26168a9c31a43ce66067cf15322e8",
+    "lean/Conjectures/NovelliThibonCompleteDeletion.lean": "bea523f8df1e1f7ee5a681525840f01f72c7cb21486f03c274bde8d0bc8f3c5e",
+    "lean/Conjectures/NovelliThibonCompleteElimination.lean": "45bb1369eda36572978a298050f133bc82215fb02c7ddd89a1a41be0d700f055",
+    "lean/Conjectures/NovelliThibonCompleteSubset.lean": "890698f3755b7972de7f57effdf43ffbde12225bfc5478d37c71edef0aa9ab53",
+    "lean/Conjectures/NovelliThibonCompleteWords.lean": "13c3f6b6020bc98131227dcdb2fff2fc62ed64243d14770025b952e248164788",
+    "lean/Conjectures/NovelliThibonCutEvaluation.lean": "75147dd29034a3f9519f71f808a6697f80046d4676931cc3578d17fe228d8d00",
+    "lean/Conjectures/NovelliThibonCutWords.lean": "2629dd8261ba09e762c54eb0c8319ff3e62b814633be0b3dc01baf366e69daa8",
+    "lean/Conjectures/NovelliThibonDiagram.lean": "44d405935f034c528ea01c73cbc37117121d1249010585938fdce81d6504ee27",
+    "lean/Conjectures/NovelliThibonDiagramMoments.lean": "bb848eb330eeb988f1bc3875c55d5e50653f0759d58e36be04d5398af5e80a38",
+    "lean/Conjectures/NovelliThibonDualResponse.lean": "ac0bd7354c75701bee4da80bf7136320e4f65176096b7954d49322b5abd2c4ac",
+    "lean/Conjectures/NovelliThibonFillingFirstOrder.lean": "e446474c15453c9e1cdd8e2f051c0e35d82e5b8cc65f3d695c1c4ec1214f9a2d",
+    "lean/Conjectures/NovelliThibonFiniteFundamental.lean": "cf3c4a7b14ce5f34dceafec4af39079cc1c009c4f0bdf3ac087ed05ccb1fea46",
+    "lean/Conjectures/NovelliThibonFundamentalWords.lean": "ce3d832a48bcd584afa4f943869c583914b53420ccd9189130766c96a1d1228a",
+    "lean/Conjectures/NovelliThibonGraphLLT.lean": "d5f8c0c35b8ed30dcd0482737421b2de05451b57d5ff2fc78994c0b309e1ffc5",
+    "lean/Conjectures/NovelliThibonGraphOmega.lean": "00ad28eef4f1bee3c8128d42dae8e7e2da10cc9714f88e5d4e5381b0c30d0406",
+    "lean/Conjectures/NovelliThibonHookCellProduct.lean": "f805152ad627b8ca6d81c3c4df0d9a9b593826280729ad93e613b182e6aea4b2",
+    "lean/Conjectures/NovelliThibonHookExtraction.lean": "25ca646ebe8a67c19a1c22b7846a138ed05a6abdf1bb988eb8b18e251f0654ca",
+    "lean/Conjectures/NovelliThibonHookJacobiTrudi.lean": "c0b8070d6bdf1161af86de717bdebb7fcd808cca131e8cef6d757e344062e89c",
+    "lean/Conjectures/NovelliThibonHookProductCoefficients.lean": "23b3f8736b93da2b0ab1535c57a0437aebef7f0150507d1d12fd5ab75c8046c1",
+    "lean/Conjectures/NovelliThibonIncomingCells.lean": "fa3d11e12b561cb4d83efbc36de381bcf9246e0b456a8f9eb3a83004e3aa51c2",
+    "lean/Conjectures/NovelliThibonJacobiBialternant.lean": "841f841783454f184bacbff2b8199fbbb8db6718cd3b62b250ce5352c6b697e1",
+    "lean/Conjectures/NovelliThibonJacobiFactorization.lean": "96ab4dd8bbc9435cb5bb9e33ff185b9c62311dbb26dcc69ea953e096be9c0423",
+    "lean/Conjectures/NovelliThibonJacobiInterpolation.lean": "f7e92a9a831b8d120fb6f61432f0a01126687a1e1a5f33505dc5828d4c45534b",
+    "lean/Conjectures/NovelliThibonJacobiPadding.lean": "c2418ae74b9d4a13b94a8cbc049ba531aef5f5404b616ed413e306394fcb8fa3",
+    "lean/Conjectures/NovelliThibonJacobiPerspectives.lean": "76dcc6a60e8902f5a5690f539247ee95bdb3920f4e3267aca923c67cd5402112",
+    "lean/Conjectures/NovelliThibonLegCounts.lean": "f8f2a60724c99dd4564c625e9240d33baad49916ff1947de84c771e35b255303",
+    "lean/Conjectures/NovelliThibonLinearResponse.lean": "a5582410e776c9716023f5348dc29b3476dcf5ebbbda4db14d8f3eda5b0e1759",
+    "lean/Conjectures/NovelliThibonMarkedStandardization.lean": "3fe6f02a807836c6fe85948da9444c79e5d886a8d5d34c79e7fe6b99113e4847",
+    "lean/Conjectures/NovelliThibonOptionalEdges.lean": "6b7346c4ea4450dbc662131b2b778aef6c13d07784d21a45cf0f0c32c76b0bfc",
+    "lean/Conjectures/NovelliThibonPairFactor.lean": "6e4f18e04549f057a59dcdaf15e716849999b6fa467e88b508abe9d515086209",
+    "lean/Conjectures/NovelliThibonRankPrefixes.lean": "c58008402cef187d297a6b7db570410b9e8bf9e13038c5d16f77d15c38f3fc92",
+    "lean/Conjectures/NovelliThibonRepeatedAlphabet.lean": "d33852805e8bde95aaa6623963a908dba14b23c847362217446ba9603b635704",
+    "lean/Conjectures/NovelliThibonRightStandardization.lean": "1eb60058d7faa44c9c2bb1c46967a49a3043f85eb46222f80269b0ac75d801ee",
+    "lean/Conjectures/NovelliThibonRowCounts.lean": "5908ac1e69a80f361dad7e420915f18b175ebf4b52e8eb4eaba4624ac5bd9dff",
+    "lean/Conjectures/NovelliThibonSchurExtraction.lean": "aa53b74b44d1e103408d3c355ab1569bb5b5a38417685fe051f6d3e11e133473",
+    "lean/Conjectures/NovelliThibonSchurMoments.lean": "2546086fbbf6a528517a7ca22859a3a8e8f3f4af9205d3c2a9f37fad21878130",
+    "lean/Conjectures/NovelliThibonSignedFundamentals.lean": "513d86677d509823f255f0033584e0133492892b611bb99d525c2d1dbced191c",
+    "lean/Conjectures/NovelliThibonSignedGraph.lean": "b17433c7161ca05c17f3839fd17ae2d4db1162fb7af388cdd1c8c6969aba3c85",
+    "lean/Conjectures/NovelliThibonSignedShape.lean": "d7c9a06d84f16afe2db4ad37e4d8396b7ff1ce0ae1c9cad6873212e672ae6b34",
+    "lean/Conjectures/NovelliThibonSignedSource.lean": "d426f1b617f968660d3129be3106dd5a5f393958d52ad74f54968865a7536d0e",
+    "lean/Conjectures/NovelliThibonSourceFilling.lean": "ba04cd1c3753a007328bf16f4b41e65c6857c3e5d58806cc8a83c95b8f0d7559",
+    "lean/Conjectures/NovelliThibonSourceGraphSum.lean": "cb5b935a19fa657e9ac5cb60d3e9bba51b20d4a84a339f8438faac7a1fcae190",
+    "lean/Conjectures/NovelliThibonSourceNormalization.lean": "b524f307e31a8cbdb348692e78ac2ebbc35f87dd343013c9088e48080a517695",
+    "lean/Conjectures/NovelliThibonSourceShape.lean": "8cd9add80401c8584100230dee747b6abe4cdebee2b10a26f54e3039a39c4343",
+    "lean/Conjectures/NovelliThibonStableHook.lean": "351a5f88d367d4f49ed1b600b69a01c0ada9813ae6019177ee0e3fdd55e5fb53",
+    "lean/Conjectures/NovelliThibonStandardization.lean": "4cabc5ac8986071e86532e5cc887fc7ba115a195be8ac2d1eab87a7b708e923b",
+    "lean/Conjectures/NovelliThibonStrictWordCount.lean": "92f8c1e721361eca68381578e738b6efa8b538fd0d9733f29af0833620b391bd",
+    "lean/Conjectures/NovelliThibonVirtualBinomial.lean": "4c3aa8a3516b8d02ddae2aacd20b270320a687b85256a1d39ddc2e26217ccc80",
+    "lean/Conjectures/NovelliThibonVirtualComplete.lean": "dcf47e733778c361f4080d68e561ea98815fc0eeaeb1a8e457baf80b08a9b394",
+    "lean/Conjectures/NovelliThibonVirtualFundamental.lean": "1cd46c60a221919e01c39486d43667c1e00aea59cd0ee9865e80dcd16453e0eb",
+    "lean/Conjectures/NovelliThibonVirtualGraph.lean": "e3fe7ab66e7e3ae18b84a666aaa81c052cf2e9c48c74eb5461ebd28abf2d9290",
+    "lean/Conjectures/NovelliThibonWeakWordCount.lean": "17f19dcd22cb8cae798df4e222b3ab0c0f66fbcce36d11e3971eff9b5bc2c38e",
+    "lean/Conjectures/NovelliThibonYoungRaises.lean": "8beab54a58bac8ad1b55e76cdf6842792e3538c264a8eb4535ad805bacbc6b62",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonStandardization.olean",
+        "Conjectures/NovelliThibonStandardization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonStandardization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonFundamentalWords.olean",
+        "Conjectures/NovelliThibonFundamentalWords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonFundamentalWords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonFiniteFundamental.olean",
+        "Conjectures/NovelliThibonFiniteFundamental.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonFiniteFundamental.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonRightStandardization.olean",
+        "Conjectures/NovelliThibonRightStandardization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonRightStandardization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonGraphLLT.olean",
+        "Conjectures/NovelliThibonGraphLLT.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonGraphLLT.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCompleteWords.olean",
+        "Conjectures/NovelliThibonCompleteWords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCompleteWords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCompleteDeletion.olean",
+        "Conjectures/NovelliThibonCompleteDeletion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCompleteDeletion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCompleteSubset.olean",
+        "Conjectures/NovelliThibonCompleteSubset.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCompleteSubset.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCompleteElimination.olean",
+        "Conjectures/NovelliThibonCompleteElimination.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCompleteElimination.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonAlternants.olean",
+        "Conjectures/NovelliThibonAlternants.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonAlternants.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonAlternantChains.olean",
+        "Conjectures/NovelliThibonAlternantChains.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonAlternantChains.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSchurExtraction.olean",
+        "Conjectures/NovelliThibonSchurExtraction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSchurExtraction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonJacobiFactorization.olean",
+        "Conjectures/NovelliThibonJacobiFactorization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonJacobiFactorization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonYoungRaises.olean",
+        "Conjectures/NovelliThibonYoungRaises.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonYoungRaises.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonPairFactor.olean",
+        "Conjectures/NovelliThibonPairFactor.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonPairFactor.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonLinearResponse.olean",
+        "Conjectures/NovelliThibonLinearResponse.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonLinearResponse.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonDiagram.olean",
+        "Conjectures/NovelliThibonDiagram.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonDiagram.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCellResponse.olean",
+        "Conjectures/NovelliThibonCellResponse.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCellResponse.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonLegCounts.olean",
+        "Conjectures/NovelliThibonLegCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonLegCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonAttackCounts.olean",
+        "Conjectures/NovelliThibonAttackCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonAttackCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonRowCounts.olean",
+        "Conjectures/NovelliThibonRowCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonRowCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonDiagramMoments.olean",
+        "Conjectures/NovelliThibonDiagramMoments.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonDiagramMoments.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonDualResponse.olean",
+        "Conjectures/NovelliThibonDualResponse.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonDualResponse.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonFillingFirstOrder.olean",
+        "Conjectures/NovelliThibonFillingFirstOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonFillingFirstOrder.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSchurMoments.olean",
+        "Conjectures/NovelliThibonSchurMoments.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSchurMoments.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonJacobiBialternant.olean",
+        "Conjectures/NovelliThibonJacobiBialternant.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonJacobiBialternant.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonJacobiPadding.olean",
+        "Conjectures/NovelliThibonJacobiPadding.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonJacobiPadding.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonWeakWordCount.olean",
+        "Conjectures/NovelliThibonWeakWordCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonWeakWordCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonVirtualBinomial.olean",
+        "Conjectures/NovelliThibonVirtualBinomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonVirtualBinomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonStrictWordCount.olean",
+        "Conjectures/NovelliThibonStrictWordCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonStrictWordCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonRepeatedAlphabet.olean",
+        "Conjectures/NovelliThibonRepeatedAlphabet.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonRepeatedAlphabet.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonMarkedStandardization.olean",
+        "Conjectures/NovelliThibonMarkedStandardization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonMarkedStandardization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSignedFundamentals.olean",
+        "Conjectures/NovelliThibonSignedFundamentals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSignedFundamentals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonRankPrefixes.olean",
+        "Conjectures/NovelliThibonRankPrefixes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonRankPrefixes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCutWords.olean",
+        "Conjectures/NovelliThibonCutWords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCutWords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonCutEvaluation.olean",
+        "Conjectures/NovelliThibonCutEvaluation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonCutEvaluation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonVirtualFundamental.olean",
+        "Conjectures/NovelliThibonVirtualFundamental.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonVirtualFundamental.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonHookJacobiTrudi.olean",
+        "Conjectures/NovelliThibonHookJacobiTrudi.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonHookJacobiTrudi.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonVirtualComplete.olean",
+        "Conjectures/NovelliThibonVirtualComplete.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonVirtualComplete.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonGraphOmega.olean",
+        "Conjectures/NovelliThibonGraphOmega.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonGraphOmega.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonOptionalEdges.olean",
+        "Conjectures/NovelliThibonOptionalEdges.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonOptionalEdges.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSourceNormalization.olean",
+        "Conjectures/NovelliThibonSourceNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSourceNormalization.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSourceGraphSum.olean",
+        "Conjectures/NovelliThibonSourceGraphSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSourceGraphSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSourceFilling.olean",
+        "Conjectures/NovelliThibonSourceFilling.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSourceFilling.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSignedGraph.olean",
+        "Conjectures/NovelliThibonSignedGraph.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSignedGraph.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSignedSource.olean",
+        "Conjectures/NovelliThibonSignedSource.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSignedSource.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSourceShape.olean",
+        "Conjectures/NovelliThibonSourceShape.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSourceShape.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonIncomingCells.olean",
+        "Conjectures/NovelliThibonIncomingCells.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonIncomingCells.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonHookCellProduct.olean",
+        "Conjectures/NovelliThibonHookCellProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonHookCellProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonSignedShape.olean",
+        "Conjectures/NovelliThibonSignedShape.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonSignedShape.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonVirtualGraph.olean",
+        "Conjectures/NovelliThibonVirtualGraph.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonVirtualGraph.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonHookProductCoefficients.olean",
+        "Conjectures/NovelliThibonHookProductCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonHookProductCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonHookExtraction.olean",
+        "Conjectures/NovelliThibonHookExtraction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonHookExtraction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonJacobiInterpolation.olean",
+        "Conjectures/NovelliThibonJacobiInterpolation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonJacobiInterpolation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonStableHook.olean",
+        "Conjectures/NovelliThibonStableHook.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonStableHook.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/NovelliThibonJacobiPerspectives.olean",
+        "Conjectures/NovelliThibonJacobiPerspectives.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NovelliThibonJacobiPerspectives.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.NovelliThibonJacobiPerspectives",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 806,
+    "modules": 56,
+    "private_declarations": 193,
+    "raw_declarations": 806,
+    "required": 15,
+    "tag": "passed",
+    "theorems": 654
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

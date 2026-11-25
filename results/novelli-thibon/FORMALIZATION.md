@@ -95,12 +95,26 @@ The [source interpolation](../../lean/Conjectures/NovelliThibonVirtualGraph.lean
 applies the same construction to Definition 5.3 and recovers the literal
 cellwise product at minus one.
 
+The [Jacobi–Trudi bridge](../../lean/Conjectures/NovelliThibonJacobiPerspectives.lean)
+uses Mathlib's complete homogeneous sequence and verifies the
+bialternant identity by an explicit complementary-elementary matrix
+factorization. Its determinant has the exact Schur coordinate, and
+zero-row padding does not change its ordinary alphabet evaluation.
+
+The [hook coefficient theorem](../../lean/Conjectures/NovelliThibonStableHook.lean)
+takes an explicit stable ordinary Schur expansion as its premise; it
+does not assume the requested coefficient equality or a signed-
+alphabet identity. Polynomial interpolation on an infinite set of
+integer multiplicities, specialized hook/nonhook determinants, and
+coefficient comparison then give the exact elementary-symmetric
+formula for each hook at rational parameter values.
+
 This checks the intended monomial-product argument for Conjecture 5.7
-in the finite commutative source model. The remaining hook step is
-identifying the result with the actual stable Schur coefficients.
-Independent general LLT symmetry and Schur basis theorems, the general
-noncommutative lift, Conjecture 5.4, and the trace assertions are outside
-this scope.
+in the finite commutative source model and the hook coefficient
+deduction from the source's stable ordinary expansion. The
+existence and stability of that expansion, general LLT symmetry,
+the noncommutative lift, Conjecture 5.4, and trace assertions are not
+independently formalized here.
 
 - [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
 - [Diagram and first-order replay](verification/diagram-first-order/receipt.json)
@@ -109,3 +123,4 @@ this scope.
 - [Source graph to formal Laurent polynomial replay](verification/source-laurent-certificate/receipt.json)
 - [Signed hook cell product and determinant replay](verification/signed-hook-cell-product/receipt.json)
 - [Virtual-alphabet interpolation replay](verification/virtual-alphabet-interpolation/receipt.json)
+- [Jacobi–Trudi and hook coefficient replay](verification/jacobi-trudi-and-hook-coefficients/receipt.json)
