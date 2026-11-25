@@ -44,10 +44,25 @@ using the Eulerian transformation credited to Rossi.
   smaller total norm than half of the nearest-pole term. A factorial
   lower bound gives the required unit-level margin.
 
-The central grid coordinate, the reflected half, the near-endpoint
-regime, the exact finite grid witnesses below 128, the identification
-with the actual descent enumerator, and the literal face-lattice
+- [Near endpoints](../../lean/Conjectures/RossiPermutohedronNearGrid.lean):
+  the central term of the alternating series dominates when `9*j^2 ≤ n`.
+  The two tails have successive ratios at most `1/4` and `1/16`.
+  For `j ≥ 2`, the resulting signed magnitude is strictly above one.
+  At `j = 1`, the separate half-unit bound suffices after reflection.
+- [Center](../../lean/Conjectures/RossiPermutohedronCentral.lean)
+  and [reflection](../../lean/Conjectures/RossiPermutohedronGridGeometry.lean):
+  the paired-pole sum extends continuously to coordinate zero, and
+  inversion of the Eulerian rational expression gives the sign and
+  positive exponential factor on the negative-coordinate half.
+- [Uniform theorem](../../lean/Conjectures/RossiPermutohedronUniformGrid.lean):
+  for every `n ≥ 128`, the full decreasing grid gives exactly `n−2`
+  simple roots in `(0,1)`, the simple root `1`, and one simple root
+  above `1` for the reciprocal recurrence model. Lean specifies the
+  entire real root multiset, with multiplicity.
+
+The exact finite witnesses for `3 ≤ n < 128`, the identification with
+the actual descent enumerator, and the literal face-lattice
 characteristic polynomial are **not** established by this Lean scope.
 See the [written proof](PROOF.md) and [original audit](AUDIT.md).
 
-The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json) and [bulk-sign receipt](verification/bulk/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay.
+The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json), [bulk-sign receipt](verification/bulk/receipt.json), and [uniform-grid receipt](verification/uniform/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay.

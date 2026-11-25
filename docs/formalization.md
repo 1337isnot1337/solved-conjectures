@@ -2,7 +2,7 @@
 
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
-Partial. Lean verifies the algebraic reduction from a certified negative alternating sign grid, including exact interval root counts and the reciprocal substitution. Lean also checks the exact two expansions at positive grid coordinates and the nearest conjugate poles. The positive-coordinate bulk signs pass with a strict margin. The central, reflected and near-endpoint signs, finite initial certificates, and literal characteristic-polynomial identification remain separate. [Lean scope](../results/rossi-permutohedron-roots/FORMALIZATION.md).
+Partial. Lean verifies the algebraic reduction from a certified negative alternating sign grid, including exact interval root counts and the reciprocal substitution. Lean also checks the exact two expansions at positive grid coordinates and the nearest conjugate poles. The full grid, including the center, near endpoints and reflected half, proves the exact real root split for every recurrence-model length at least 128. The finite initial certificates and literal characteristic-polynomial identification remain separate. [Lean scope](../results/rossi-permutohedron-roots/FORMALIZATION.md).
 
 
 ## Seven upper-half circular chromatic index certificates

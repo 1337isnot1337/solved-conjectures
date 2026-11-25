@@ -1423,3 +1423,4 @@ import Conjectures.TomdifCircularIndexBounds
 import Conjectures.RossiPermutohedronEulerianDegree
 import Conjectures.RossiPermutohedronAnalyticPartial
 import Conjectures.RossiPermutohedronBulkGrid
+import Conjectures.RossiPermutohedronUniformGrid

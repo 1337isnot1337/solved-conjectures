@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify Rossi’s full analytic sign grid in Lean
+
+Lean now proves the exact root multiset for the Eulerian recurrence model at every length at least 128, including the central point, both endpoint regimes, and the reflected half. The finite initial certificates and the literal characteristic-polynomial bridge remain separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Rossi’s positive-coordinate bulk signs in Lean
 
 Lean controls all remaining pole pairs by a telescoping strict tail estimate and proves the margin greater than one on the open positive half of the bulk sign grid. The reflected, central and endpoint signs and finite-grid certificates remain separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
