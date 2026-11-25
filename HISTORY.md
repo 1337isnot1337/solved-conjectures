@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Identify the exceptional block and pointed downset counts
+
+Lean distinguishes first and later omissions from the permutation itself
+and proves later-slot uniqueness. It also identifies the coefficients
+counting actual pointed downsets at lengths at least three. This advances
+aadrianvv’s written counterexample without claiming the final repeated
+rank census. [Scope and receipt](results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
+
 ## 2026-11-25 — Factor the repeated McNamara–Steingrímsson interval
 
 Lean proves that any intermediate permutation factors through the actual
