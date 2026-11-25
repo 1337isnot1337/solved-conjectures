@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Extend the shifted-runner certificates through 57
+
+Tomdif’s [PR #660](https://github.com/1337isnot1337/solved-conjectures/pull/660) adds a rational counterexample for 57 runners and improves the two submitted bounds for 55 and 56. Independent exact rational checks verify all three maxima, including attaining times. The package now covers 18–57; 58–94 is outside the verified range. Aadrianvv’s earlier certificates and verifier are unchanged. This is not Lean verified. [Independent review](results/shifted-lonely-runner-counterexamples/REVIEW.md).
+
 ## 2026-11-25 — Identify Rossi’s face polynomials in Lean
 
 Lean counts the literal ordered partitions including the empty face, proves their Stirling-number counts, and identifies the rank polynomial and evaluated signed characteristic face sum with the Eulerian model. The rank formulation is equivalent in Conjecture 6.16. The complete finite-grid bridge remains separate. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
