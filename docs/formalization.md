@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Alexandersson’s parking-function excedance conjecture
+
+Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md)
+
 ## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
 
 Lean proves strict monotonicity of the explicit Pollard density integral and checks termwise differentiation of the Mittag–Leffler series. The diagonal inequality follows under the local Pollard representation hypothesis. [Lean scope](../results/ferreira-simon-diagonal/FORMALIZATION.md).

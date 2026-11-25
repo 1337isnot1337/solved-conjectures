@@ -4,9 +4,12 @@
 
 A counting recurrence produces the coefficients exactly. At `t = −1/5`, the polynomial violates the Laguerre inequality required of any real-rooted polynomial. A separate counting recurrence agrees on the coefficients. Neither method estimates roots numerically.
 
+- [Lean formalization](FORMALIZATION.md)
 - [Proof and rational certificate](PROOF.md)
 - [Attribution, source search, and independent audit](AUDIT.md)
 - [Exact checker](verify.py)
 - [Discovery and review, issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106)
 
-Run `python3 results/alexandersson-parking-excedance/verify.py` from the repository root. Internally reviewed computer-assisted disproof; not Lean-formalized or externally refereed.
+Run `python3 results/alexandersson-parking-excedance/verify.py` from the repository root. Internally reviewed computer-assisted disproof.
+
+**Lean status:** full. Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root.

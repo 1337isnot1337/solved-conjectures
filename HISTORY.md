@@ -314,6 +314,10 @@ The [written proof](results/betermin-fcc-bcc-cold-spots/) identifies Gaussian mi
 
 The [written disproof](results/coulangeon-lazzarini-two-shells/) gives a dimension-ten lattice with two initial spherical 2-design shells and a third anisotropic shell, and constructs indecomposable lattices delaying the first failure arbitrarily long. [Issue #365](https://github.com/1337isnot1337/solved-conjectures/issues/365) records scope and review. Exact shell enumeration is supplementary; there is no Lean or external referee review.
 
+## 2026-11-25 — Verify Alexandersson’s parking excedance counterexample in Lean
+
+AlexisFimeyer’s [contribution in #630](https://github.com/1337isnot1337/solved-conjectures/pull/630) proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. One-step kernel certificates reduce replay memory without changing the theorem. The scoped strict build, axiom audit, and stock-kernel replay passed. [Lean scope](results/alexandersson-parking-excedance/FORMALIZATION.md) · [Receipt](results/alexandersson-parking-excedance/verification/receipt.json).
+
 ## 2026-11-24: Refute Alexandersson’s parking-function excedance conjecture
 
 The [exact counterexample](results/alexandersson-parking-excedance/) violates the Laguerre inequality at length 17. Two independent recurrences agree on the coefficient vector. [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) records scope and previous work. No priority, Lean verification, or external referee review is claimed.

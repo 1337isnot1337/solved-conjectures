@@ -111,7 +111,7 @@ The eleven-module closure passed strict compilation, the all-owned/private trans
 
 ## Parking-function excedance certificate
 
-[Alexandersson’s parking-function excedance conjecture](../results/alexandersson-parking-excedance/) is refuted by a rational witness certified with exact integer and fraction arithmetic. No Lean formalization is claimed.
+Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md)
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
@@ -246,7 +246,7 @@ proofs are documented separately in the catalogue and result package.
 | Braun–Bruegge’s minimum facet conjecture | Complete for Conjecture 2(3)–(4) | Actual geometric facets, exact even and odd minimum counts, attainment and uniqueness up to graph isomorphism. The 19-module scoped build, all-owned axiom audit and pinned replay passed. The fixed-matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
 | Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
-| Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
+| Alexandersson’s parking-function excedance conjecture | Complete | Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md) |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
 | Csordas–Vishnyakova conjecture | Complete | Original Conjecture 3.6, including all real arguments and all Taylor orders, with the actual approximation definition. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json). |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Complete: Question 6.1 and uniform small-damping obstruction | Lean checks the exact cubic at p = 3 and proves failure throughout a small positive-damping interval for each real p > 2. [Scope and source](../results/cardon-zero-sector/LEAN.md). |
