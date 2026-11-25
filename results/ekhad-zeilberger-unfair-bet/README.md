@@ -4,6 +4,8 @@ In Litt’s game two players count overlapping occurrences of their chosen lengt
 
 The proof also gives the maximizing pair over every finite alphabet. When the two words must jointly contain every letter, as in the sponsor’s ranking code, the ternary maximizer is $1^{k-2}23$ against $1^k$. The proof covers all feasible alphabet sizes. [Sponsor’s Maple package, procedure Mihai](https://sites.math.rutgers.edu/~zeilberg/tokhniot/Litt.txt) · [Exact enumeration check](verify.py)
 
+[Partial Lean verification](FORMALIZATION.md): the finite overlap bounds and exact constant-loser extremizers are checked. The asymptotic probability step remains written.
+
 ## Prior work and bounty status
 
 The extremal conjecture is the *second* $100 challenge on the sponsor’s page. The first challenge concerned the asymptotic formula for an individual contest and was paid. Janson, Nica, and Segert proved the general formula for a fixed pair. Basdevant, Hénard, Maurel-Segala, and Singh proved exact fairness for words with the same autocorrelation. Segert’s May 2024 paper treats HT against HH, the original length-two game. We use the first two results and optimize the asymptotic coefficient over all pairs. A November 21, 2026 search of the sponsor’s page, these articles and references, arXiv, exact-phrase searches, and the repository found no prior published extremal proof. Independent review and adjudication of this new claim are pending. [Janson, Nica, and Segert](https://arxiv.org/abs/2503.19035) · [Fairness theorem](https://www.imo.universite-paris-saclay.fr/~arvind.singh/papers/litt_cr.pdf) · [Segert’s length-two result](https://arxiv.org/abs/2405.16660) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/219)
