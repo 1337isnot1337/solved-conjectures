@@ -1,0 +1,3 @@
+module
+public import Conjectures.PomeranceSarkozyLiteralPrimeTuples
+public import Conjectures.PomeranceSarkozyPoissonTuple

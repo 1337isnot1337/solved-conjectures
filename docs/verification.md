@@ -4,9 +4,9 @@
 ## Pomerance–Sárközy’s fluctuation conjecture
 
 Partial. Lean verifies the literal arithmetic count, factorial tails,
-and the finite-window total-variation bound between the arithmetic and
-independent residue laws. Asymptotic specialization and limiting laws
-remain.
+finite-window total variation, and the independent product comparisons
+with Bernoulli and Poisson laws. The joint count-law pushforward and
+limiting statements remain.
 
 Two supporting threshold identities are independently replayed:
 the universal band-mass bound and the exact tail-product sum.

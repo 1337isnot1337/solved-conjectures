@@ -38,8 +38,20 @@ the amplification factor by (2M+1)^R for M possible incidences and
 truncation rank R. The bound includes the explicit next-rank factorial
 remainder and the binomial multiple of the reciprocal sample size.
 
-The asymptotic specialization, Gaussian law, second moment, process
-limits and rare deviations remain. This does not
+Lean also checks the two distribution comparisons in §2. The
+[independent-residue tuple comparison](../../lean/Conjectures/PomeranceSarkozyLiteralPrimeTuples.lean)
+uses the actual finite residue sample spaces and splits the literal
+incidence mask by prime. For each coordinate, the categorical to
+Bernoulli total-variation cost is bounded by H(H-1)/p². The finite
+product bound sums these costs. The
+[Bernoulli to Poisson comparison](../../lean/Conjectures/PomeranceSarkozyPoissonTuple.lean)
+uses the full Mathlib Poisson law on the natural numbers. The
+single-coordinate total variation is exactly b(1-exp(-b)), at most b².
+The product estimate covers countable observation spaces.
+
+The pushforward to the joint Poisson offset-count law, asymptotic
+specialization, Gaussian law, second moment, process limits and rare
+deviations remain. This does not
 address the separate exact collision count `F(X)`.
 
 [Strict build, all-owned audit and independent replay receipt](verification/finite-prime-tails/receipt.json)
@@ -47,6 +59,8 @@ address the separate exact collision count `F(X)`.
 [CRT and independent residue replay](verification/literal-crt-inclusions/receipt.json)
 
 [Finite-window total-variation replay](verification/finite-window-tv/receipt.json)
+
+[Residue, Bernoulli and Poisson comparison replay](verification/residue-poisson-comparisons/receipt.json)
 
 ## Threshold identities
 
