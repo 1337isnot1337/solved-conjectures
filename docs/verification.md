@@ -6,7 +6,7 @@ The [scoped Lean receipt](../results/athanasiadis-chapoton-polar-duality/verific
 
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 
-The [scoped Lean receipt](../results/rossi-permutohedron-roots/verification/receipt.json) checks the recurrence, real-root count from an assumed negative alternating grid, and reciprocal root transport. The [analytic receipt](../results/rossi-permutohedron-roots/verification/analytic/receipt.json) covers both expansions and the exact nearest-pole phase. The [bulk-sign receipt](../results/rossi-permutohedron-roots/verification/bulk/receipt.json) proves the strict positive-coordinate bulk signs. The [uniform grid receipt](../results/rossi-permutohedron-roots/verification/uniform/receipt.json) closes all analytic grid regimes and the exact root split for the recurrence model at every length at least 128, not the finite range or literal face-lattice bridge.
+The complete stock-kernel checked closure proves the exact finite and analytic sign grids and positivity, simplicity and interval counts for Rossi’s signed characteristic face sum. The literal ordered-face rank enumerator proves the paper’s equivalent conjecture without a Möbius assumption. [Scope and full receipt](../results/rossi-permutohedron-roots/FORMALIZATION.md).
 
 
 ## Shumyatsky’s conjugate prime-spectrum conjecture

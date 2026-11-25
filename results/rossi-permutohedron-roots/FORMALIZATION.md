@@ -1,6 +1,6 @@
 # Lean scope for Rossi’s permutohedron characteristic-polynomial conjecture
 
-**Status: partial.** The target is Giovanni Rossi’s
+**Status: complete for Conjecture 6.16.** The target is Giovanni Rossi’s
 [Conjecture 6.16, arXiv:2611.25741v1, §6.5](https://arxiv.org/html/2611.25741v1#S6.SS5).
 It asks for exactly `n−2` real roots in `(0,1)`, the root `1`,
 and one root greater than `1`, all simple. The q-deformation is separate.
@@ -73,11 +73,25 @@ using the Eulerian transformation credited to Rossi.
   the exact root multiset of that model transfers to the literal rank
   polynomial, including absence of nonreal roots.
 
-The complete finite bridge for `3 ≤ n < 128` is still pending at this
-checkpoint. The face-sum formula uses Rossi’s evaluated Möbius signs
-(Theorem 6.3); this development does not separately re-prove that theorem
-from the poset’s Möbius recursion. The directly counted rank polynomial is
-the paper’s explicitly equivalent formulation of Conjecture 6.16.
+- [Exact finite bridge](../../lean/Conjectures/RossiPermutohedronRecurrenceAll.lean):
+  for every `3 ≤ n < 128`, Lean checks the integer coefficients against
+  the actual Eulerian recurrence and checks the signs at all
+  listed dyadic rationals by exact integer arithmetic. Positive
+  denominators and strict order are checked by cross multiplication.
+  The check does not depend on how the sample points were proposed.
+- [Final theorems](../../lean/Conjectures/RossiPermutohedronRoots.lean):
+  for every `n ≥ 3`, `rankPolynomial_exact_roots` proves that the literal
+  rank-generating polynomial splits and has exactly `n` distinct
+  negative roots. This is Rossi's explicitly equivalent formulation.
+  `characteristicFacePolynomial_exact_roots` gives the exact root multiset
+  and splitting of the signed characteristic face sum: `n−2` below one
+  and above zero, the singleton root `1`, and one root above one.
+
+The face-sum formula uses Rossi’s evaluated Möbius signs (Theorem 6.3);
+this development does not separately re-prove that theorem from the
+poset’s Möbius recursion. The directly counted rank polynomial is
+unconditional and gives the original conjecture in the paper's equivalent
+formulation. The q-deformation is outside this scope.
 See the [written proof](PROOF.md) and [original audit](AUDIT.md).
 
-The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json), [bulk-sign receipt](verification/bulk/receipt.json), and [uniform-grid receipt](verification/uniform/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay. The [face-model receipt](verification/face-model/receipt.json) covers the independently counted rank and signed characteristic face sums.
+The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json), [bulk-sign receipt](verification/bulk/receipt.json), and [uniform-grid receipt](verification/uniform/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay. The [face-model receipt](verification/face-model/receipt.json) covers the independently counted rank and signed characteristic face sums. The [complete receipt](verification/complete/receipt.json) covers the exact final closure, including every finite certificate.

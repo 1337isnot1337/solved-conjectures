@@ -6,6 +6,6 @@ The proof constructs a uniform sign grid for the corresponding shifted Eulerian 
 
 - [Complete proof](PROOF.md)
 - [Independent audit](AUDIT.md)
-- [Partial Lean formalization](FORMALIZATION.md)
+- [Complete Lean formalization](FORMALIZATION.md)
 - [Exact finite checker](check.py)
 - [Discovery issue #406](https://github.com/1337isnot1337/solved-conjectures/issues/406)

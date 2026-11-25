@@ -324,6 +324,28 @@ modules=(
   Conjectures.RossiPermutohedronRank
   Conjectures.RossiPermutohedronCharacteristic
   Conjectures.RossiPermutohedronFaceRootTransport
+  Conjectures.RossiPermutohedronDyadicCertificate
+  Conjectures.RossiPermutohedronDyadicRows000
+  Conjectures.RossiPermutohedronDyadicRows011
+  Conjectures.RossiPermutohedronDyadicRows026
+  Conjectures.RossiPermutohedronDyadicRows041
+  Conjectures.RossiPermutohedronDyadicRows056
+  Conjectures.RossiPermutohedronDyadicRows071
+  Conjectures.RossiPermutohedronDyadicRows083
+  Conjectures.RossiPermutohedronDyadicRows089
+  Conjectures.RossiPermutohedronDyadicRows095
+  Conjectures.RossiPermutohedronDyadicRows100
+  Conjectures.RossiPermutohedronDyadicRows105
+  Conjectures.RossiPermutohedronDyadicRows109
+  Conjectures.RossiPermutohedronDyadicRows113
+  Conjectures.RossiPermutohedronDyadicRows117
+  Conjectures.RossiPermutohedronDyadicRows120
+  Conjectures.RossiPermutohedronDyadicRows123
+  Conjectures.RossiPermutohedronDyadicRows126
+  Conjectures.RossiPermutohedronFiniteAlgebra
+  Conjectures.RossiPermutohedronFiniteCertificate
+  Conjectures.RossiPermutohedronRecurrenceAll
+  Conjectures.RossiPermutohedronRoots
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping
