@@ -2,9 +2,10 @@
 
 ## González D’León–Wachs’s complete-graph specialization question
 
-Partial. Lean verifies the literal weighted Möbius polynomial and the
-equal-variable Laguerre and conditional moment identities. The EGF/Lagrange
-bridge, positive roots, and the probabilistic consequences remain outside the scope.
+Partial. Lean verifies the literal weighted Möbius polynomial,
+the grouped one-block cancellation, and the formal Laguerre identities.
+Fibre Möbius factorization, the EGF/Lagrange bridge, positive roots,
+and the probabilistic consequences remain outside this scope.
 [Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
@@ -238,7 +239,7 @@ proofs are documented separately in the catalogue and result package.
 | Shumyatsky’s conjugate prime-spectrum conjecture | Not formalized | Answers Kourovka Notebook Question 17.125 for all finite groups by lifting across the socle. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
-| González D’León–Wachs’s complete-graph specialization question | Partial | Lean constructs the literal finite weighted poset and Möbius polynomial and verifies the Laguerre calculation. The EGF/Lagrange bridge and positive-root consequences remain. [Lean scope](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md). |
+| González D’León–Wachs’s complete-graph specialization question | Partial | Lean verifies the literal weighted Möbius polynomial, one-block cancellation and formal Laguerre calculation. The fibre factorization, EGF/Lagrange bridge and positive-root consequences remain. [Lean scope](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md). |
 | Almirón–Moyano-Fernández’s Wilf-module questions | Partial: Question 4.8 and Question 4.13(1)–(2), (6) | Lean verifies the gap-question counterexample, the exact all-module threshold for normalized modules, and the characterization at each module’s own generator count. The generator-refined threshold and gap-poset classification remain written only. [Scope and source](../results/almiron-moyano-wilf-module-questions/LEAN.md). |
 | Defant–Engen–Miller’s Lassalle refinement conjecture | Partial | Lean checks all 53 base rows, the eventual interval and error bounds, and the Bessel root bracket. The exact permutation conjecture follows conditionally on the count bridge and classical Bessel product data. [Lean scope](../results/defant-engen-miller-lassalle/FORMALIZATION.md). |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |

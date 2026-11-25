@@ -2,9 +2,10 @@
 
 ## González D’León–Wachs’s complete-graph specialization question
 
-Partial. Lean verifies the literal weighted Möbius polynomial and the
-equal-variable Laguerre and conditional moment identities. The EGF/Lagrange
-bridge, positive roots, and the probabilistic consequences remain outside the scope.
+Partial. Lean verifies the literal weighted Möbius polynomial,
+the grouped one-block cancellation, and the formal Laguerre identities.
+Fibre Möbius factorization, the EGF/Lagrange bridge, positive roots,
+and the probabilistic consequences remain outside this scope.
 [Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture

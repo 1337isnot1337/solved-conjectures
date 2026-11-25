@@ -29,6 +29,13 @@ modules=(
   Conjectures.WachsCompleteGraphHomogeneous
   Conjectures.WachsCompleteGraphCharacteristic
   Conjectures.WachsCompleteGraphMoebiusLaw
+  Conjectures.WachsCompleteGraphFibreWeights
+  Conjectures.WachsCompleteGraphOrdinaryFibres
+  Conjectures.WachsCompleteGraphStrictRank
+  Conjectures.WachsCompleteGraphTopCancellation
+  Conjectures.WachsCompleteGraphTopExtensions
+  Conjectures.WachsCompleteGraphTopScope
+  Conjectures.WachsCompleteGraphWeightCompletions
   Conjectures.WachsCompleteGraphWeightedOrder
   Conjectures.WachsCompleteGraphWeightedPartition
   Conjectures.WachsCompleteGraphLaguerreNormalization

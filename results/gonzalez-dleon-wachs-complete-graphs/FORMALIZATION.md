@@ -45,6 +45,26 @@ remain outside the Lean scope. The existing proof and its
 attribution, including the prior two-variable result, remain unchanged.
 The separate question of Schur-log-concavity is not asserted.
 
+## Cancellation over actual one-block completions
+
+Lean counts the maximal weighted completions of each weighted partition
+by the weak compositions of its remaining rank. Summing the literal
+Möbius cancellation over the one-block tops and exchanging the two
+finite sums gives the [grouped recurrence](../../lean/Conjectures/WachsCompleteGraphOrdinaryFibres.lean)
+over ordinary partitions. The same grouping gives the actual
+characteristic polynomial as a sum over ordinary partitions.
+The weight allocations in each fibre are equivalent to the product
+of the weak composition types of its individual blocks; the
+[cardinality formula](../../lean/Conjectures/WachsCompleteGraphFibreWeights.lean)
+counts these allocations, not their Möbius values. The
+[one-block receipt](verification/one-block-cancellation/receipt.json)
+records the scoped independent replay.
+
+This checks the finite one-block cancellation step of the recurrence
+underlying Theorem 5.7 in the cited paper. Factorization of the
+fibre Möbius sums over the blocks, the corresponding EGF and its
+Lagrange inversion are not proved by this checkpoint.
+
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent
 pinned stock-kernel replay.

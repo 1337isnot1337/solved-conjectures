@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Check literal one-block weighted Möbius cancellation
+
+Lean counts actual one-block extensions and groups the resulting Möbius
+cancellation by ordinary partitions. This checks a finite recurrence step,
+not the remaining EGF/Lagrange bridge.
+[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify all Lassalle base rows and the exact conditional theorem
 
 Lean checks all 53 finite quotient rows and proves a zero in the rational

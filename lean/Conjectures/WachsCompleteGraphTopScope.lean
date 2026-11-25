@@ -1,0 +1,3 @@
+module
+public import Conjectures.WachsCompleteGraphOrdinaryFibres
+public import Conjectures.WachsCompleteGraphFibreWeights
