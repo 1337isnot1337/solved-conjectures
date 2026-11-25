@@ -22,7 +22,7 @@ Modes (run from the repository root or from this folder):
                                the exact recomputation of the recorded gamma for the other n.
 
 The data file defaults to certificates.json next to this script.
-Exit status is non-zero if any check fails or if the certified n are not exactly 18, ..., 56."""
+Exit status is non-zero if any check fails or if the certified n are not exactly 18, ..., 57."""
 import argparse
 import json
 import sys
@@ -30,7 +30,7 @@ from fractions import Fraction as F
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-CLAIMED = list(range(18, 57))      # the package claims one counterexample for each of these n
+CLAIMED = list(range(18, 58))      # the package claims one counterexample for each of these n
 QUICK_EXACT = set(range(18, 25)) | {41}
 
 
@@ -114,7 +114,7 @@ def main():
     print("SUMMARY (%s): %d certificates, %d passed, %d failed; certified n = %s"
           % ("quick" if args.quick else "full", len(certs), len(certs) - bad, bad, ns))
     if ns != CLAIMED:
-        print("FAIL: expected exactly one certificate for each n in 18..56", file=sys.stderr)
+        print("FAIL: expected exactly one certificate for each n in 18..57", file=sys.stderr)
         bad += 1
     sys.exit(1 if bad else 0)
 
