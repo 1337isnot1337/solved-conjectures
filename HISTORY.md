@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-25 — Verify Pomerance–Sárközy's threshold identities
+
+Lean verifies the near-threshold expectation bound and the exact
+tail-product reindexing. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s prime-spectrum reduction and cycle closure
 
 Lean verifies the cardinality steps and the conjugate-cycle equations
