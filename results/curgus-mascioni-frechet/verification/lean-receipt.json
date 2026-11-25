@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-25",
+  "scope": "Complete nonuniqueness counterexample for I+D^2/2 on degrees at most two; general attainment and the separate cubic result are not formalized",
+  "lean_version": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "sha256": {
+    "lean/Conjectures/CurgusMascioniQuadratic.lean": "31fcb878e26c19cf8352377efe61da0e6a55d5232116991d4f71ebf5283c3156",
+    "results/curgus-mascioni-frechet/verification/TargetAudit.lean": "7bb29a06659448922e24dbc118abf8ba19a6f5b0aaccb1de5dba29183c2ae58a"
+  },
+  "checks": {
+    "strict_compile": "passed",
+    "owned_axiom_audit": "passed",
+    "stock_kernel_replay": "passed",
+    "aggregate_CI": "outside the scope of this receipt"
+  },
+  "declarations": {
+    "owned": 50,
+    "theorems": 42,
+    "private": 0,
+    "required_endpoints": 8
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

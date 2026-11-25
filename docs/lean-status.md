@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Ćurgus–Mascioni’s Fréchet root-matching extremizer question
+
+Pinned strict build, 50-owned-declaration audit, eight endpoints and stock replay passed for the nonuniqueness counterexample. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md).
+
 ## Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
 
 Strict compilation, a 256-owned-declaration/14-endpoint axiom audit, and stock replay passed for the two relaxed-seam unpinned conventions. The group entry stays partial. [Lean scope](../results/fmp-cylindric/FORMALIZATION.md).
@@ -193,7 +197,7 @@ proofs are documented separately in the catalogue and result package.
 | Sobolewski–Ulas’s binary-partition exception regularity conjecture | Not formalized | Uses a repeated-digit counting remainder and Cobham’s theorem for substitutions to exclude regularity in every integer base. |
 | Gawron–Ulas’s partition-sign nonperiodicity conjecture | Not formalized | Oblique root-of-unity growth proves each sign occurs infinitely often on every index progression, for all coprime odd permitted-part steps at least three. |
 | Steinerberger’s greedy-energy Fourier conjecture | Complete | An actual infinite van der Corput sequence satisfies the greedy rule and violates every eventual logarithmic bound for the stated weighted absolute Fourier sum. Four modules, complete owned/private axiom audit and stock-kernel replay; sharp-constant and all-tie-breaking supplements remain unformalized. |
-| Ćurgus–Mascioni’s Fréchet root-matching extremizer question | Not formalized | Proves general attainment and the exact lower-degree loss at infinity, refutes general uniqueness, and determines the source cubic value and unique extremizer. |
+| Ćurgus–Mascioni’s Fréchet root-matching extremizer question | Partial: nonuniqueness counterexample | Every quadratic has a matching of cost at most one and a continuum of pairwise inequivalent quadratics attain it. General attainment and the cubic comparison are not formalized. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md). |
 | Chern–Fu–Lin’s three-statistic equidistribution conjecture | Not formalized | A minimum decomposition and an exact marked generating-function kernel prove equality in every length for the full three-statistic distribution. |
 | Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture | Complete disproof of original Conjecture 5.8 | Stabilized coefficients of the actual infinite formal product, nonvanishing, signed-block identities, both cardinality bounds for every finite prefix, infinitude and nonzero lower density. Strict compilation, all-owned audit (250 declarations, 212 theorems, 119 private declarations), and independent replay of all three modules passed. The stronger exact-density theorem is separate. [Scope and receipt](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md). |
 | Fan–Tringali’s power-monoid length-set conjecture | Complete original 2018 conjecture | Both power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers, and the exact reduced natural-number system. All 18 modules passed strict source builds, the complete declaration/axiom audit and stock kernel replay. Survey irreducibles, multiplicities and relative cancellativity remain unformalized. [Scope](../results/fan-tringali-power-monoid-lengths/LEAN.md). |

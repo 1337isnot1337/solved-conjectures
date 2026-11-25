@@ -1,5 +1,9 @@
 # Verification
 
+## Ćurgus–Mascioni’s Fréchet root-matching extremizer question
+
+[Scoped checks](../results/curgus-mascioni-frechet/FORMALIZATION.md) for the nonuniqueness counterexample passed: pinned strict compilation, all-owned transitive axiom audit and stock kernel replay. Aggregate CI is separate.
+
 ## Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture
 
 [Scoped checks](../results/fmp-cylindric/FORMALIZATION.md) for the exact unpinned counterexamples passed: pinned strict compilation, an all-owned transitive axiom audit, and stock kernel replay. This does not assert an aggregate CI pass.
