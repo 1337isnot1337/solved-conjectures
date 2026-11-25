@@ -1420,3 +1420,4 @@ import Conjectures.WaringGapSymmetry
 
 import Conjectures.TomdifCircularIndexCertificates
 import Conjectures.TomdifCircularIndexBounds
+import Conjectures.RossiPermutohedronEulerianDegree

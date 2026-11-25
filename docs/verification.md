@@ -1,5 +1,10 @@
 # Verification
 
+## Rossi’s permutohedron characteristic-polynomial conjecture
+
+The [scoped Lean receipt](../results/rossi-permutohedron-roots/verification/receipt.json) checks the recurrence, real-root count from an assumed negative alternating grid, and reciprocal root transport. It does not replace the separate written analytic proof or the exact finite checker.
+
+
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
 The [written proof](../results/shumyatsky-conjugate-prime-spectrum/PROOF.md) gives a construction for every finite group. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) records the independent check of the graph lift and the hypotheses of the cited almost-simple generation results. Lean verification is pending.
