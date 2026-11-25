@@ -1345,3 +1345,10 @@ import Conjectures.HajduSarkozyProductsProduct
 import Conjectures.HajduSarkozyProductsFamily
 import Conjectures.HajduSarkozyProductsPowers
 import Conjectures.HajduSarkozyProducts
+import Conjectures.WaringGapSymmetryCore
+import Conjectures.WaringGapSymmetryBridge
+import Conjectures.WaringGapSymmetryInjective
+import Conjectures.WaringGapSymmetryResidues
+import Conjectures.WaringGapSymmetryLift
+import Conjectures.WaringGapSymmetryMonoid
+import Conjectures.WaringGapSymmetry

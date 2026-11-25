@@ -1,5 +1,9 @@
 # History
 
+## Benfield–Lippard’s stable Waring-gap symmetry conjecture
+
+On 24 November 2026 the [complete original conjecture disproof](results/benfield-lippard-waring-gap-symmetry/LEAN.md) established both counterexamples at exponents 64 and 128, including the actual stable exception cardinality and reflected-gap witnesses. The seven-module strict build, all-owned audit (335 declarations, 248 theorems), and independent replay passed. Discovery attribution and the priority caveat remain unchanged. [PR #570](https://github.com/1337isnot1337/solved-conjectures/pull/570).
+
 ## 2026-11-25 — Ma–Tang’s random subset-sum threshold conjecture
 
 Completed the exact original Lean formalization, including the actual second-order limsup, the third-log lower correction and convergence along the mixed orders. The published mathematical result and rank are unchanged. The separate bounded-remainder refinements are outside the Lean scope. [Scope](results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Receipt](results/ma-tang-random-subset-sums/verification/limsup-receipt.json).

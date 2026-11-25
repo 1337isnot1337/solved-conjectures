@@ -955,3 +955,7 @@ The complete 22-module closure passed fresh strict source builds, the all-owned/
 - [Chappelon–Ramírez Alfonsín–Stamate](../results/chappelon-ramirez-stamate-leaf-type/LEAN.md): exact disproof of Conjecture 4.4.
 
 The [scoped verification receipt](verification/first-short-proof-lean-batch.md) records the pinned compiler, all-owned axiom audit, and stock kernel replay. The original conjecture disproofs do not certify the stronger written supplements.
+
+## Benfield–Lippard’s stable Waring-gap symmetry conjecture
+
+The seven-module source closure of `Conjectures.WaringGapSymmetry` passed strict compilation, all-owned axiom audit (335 declarations, 248 theorems, 108 private declarations, 14 required endpoints), and stock-kernel replay at `1229c35ae49d53008b91239b105c2dd15fdde6af`. The [result-level receipt](../results/benfield-lippard-waring-gap-symmetry/LEAN.md) records the source hashes and exact conjecture scope. Reproduce using `python3 scripts/verify_lean_target.py --root Conjectures.WaringGapSymmetry --require WaringGapSymmetryCore.not_conjecture10_1 --require WaringGapSymmetryCore.not_reflection_conjecture --out .candidate-artifacts/waring-gap-symmetry`. Package-wide verification is separate.
