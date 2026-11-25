@@ -1,5 +1,9 @@
 # Verification
 
+## Burstein’s descent-top shape-Wilf conjecture
+
+The pinned strict source build, all-owned transitive axiom audit, and stock kernel replay passed for the exact one-module closure. The aggregate repository gate is separate. [Lean scope](../results/burstein-descent-top-shape-wilf/FORMALIZATION.md).
+
 ## Benfield–Lippard’s stable Waring-gap parity conjecture
 
 The pinned strict source build, all-owned transitive axiom audit, and stock kernel replay passed for the exact one-module closure. The aggregate repository gate is separate. [Lean scope](../results/benfield-lippard-waring-gap-parity/FORMALIZATION.md).

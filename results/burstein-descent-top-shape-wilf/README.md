@@ -7,4 +7,5 @@ The separating fiber consists of traversals whose first block increases. Its two
 - [Uniform counterexample construction](PROOF.md)
 - [Independent audit](AUDIT.md)
 - [Exact short-case checker](check.py)
+- [Complete Lean refutations of Conjectures 16 and 17](FORMALIZATION.md)
 - [Discovery issue #403](https://github.com/1337isnot1337/solved-conjectures/issues/403)
