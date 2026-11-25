@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall weighted cumulant representation
+
+Lean checks the factorial moment identity and proves equivalence of the literal repeated-tail recursion with the single-integral formula at every order and every nonnegative argument. Higher determinant signs remain unformalized. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Revised Tan–Zhou conjecture
 
 Completed Lean verification of the revised monotone conjecture using unreduced Lüroth denominators. The proof formalizes the cylinder upper bound and obtains the lower bound from a nested interval construction with a Hölder inverse address map. See the [formalization](results/revised-tan-zhou-luroth/FORMALIZATION.md) and [local receipt](results/revised-tan-zhou-luroth/verification/receipt.json).
