@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BraunBruegge.exists_graph_ear,
+    `BraunBruegge.ThetaPathWords.embedding_le,
+    `BraunBruegge.closed_ear_bicyclic_facet_card,
+    `BraunBruegge.open_ear_bicyclic_facet_bound,
+    `BraunBruegge.bicyclic_polar_bound_of_bridgeless,
+    `BraunBruegge.bridgeless_bicyclic_facet_bound,
+    `BraunBruegge.bicyclic_facet_bound,
+    `BraunBruegge.braun_bruegge_bicyclic_facet_maximum,
     `BraunBruegge.bridgePartitionGraphIso,
     `BraunBruegge.bridgeDeletion_polar_vertex_card,
     `BraunBruegge.bridgeDeletion_cardinalities,
