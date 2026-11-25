@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Braun–Bruegge’s minimum facet conjecture
+
+Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)
+
 ## Feldheim–Feldheim’s weighted tail conjecture
 
 Complete for original Conjecture 1, with every positive weight below one, arbitrary distinct laws and atoms. The terminal theorem uses literal noncompact almost-sure support and an actual infinite limsup. Twenty fresh strict modules, the complete audit of 179 declarations and all thirty required endpoints, and exact stock-kernel replay passed. The higher-dimensional norm and finite-threshold supplements remain unformalized. [Scope](../results/feldheim-weighted-tail/FORMALIZATION.md) · [Independent review](../results/feldheim-weighted-tail/LEAN_REVIEW.md) · [Receipt](../results/feldheim-weighted-tail/verification/receipt.json).
@@ -186,7 +190,7 @@ proofs are documented separately in the catalogue and result package.
 | Ferroni–Higashitani’s first-three interior Ehrhart question | Complete for Question 5.12(a) | The actual dimension-170 IDP lattice polytope has strict failure at the three negative evaluations of its unique Ehrhart polynomial. [Lean scope](../results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md). |
 | Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture | Not formalized | Refutes the exact relaxed-seam unpinned conjecture and proves positivity for standard periodic partition boundaries. |
 | Braun–Bruegge’s bicyclic facet conjectures | Not formalized | Proves the sharp global bicyclic facet maximum and the exact theta-graph optimizers, including the previously open mixed-parity cases. |
-| Braun–Bruegge’s minimum facet conjecture | Not formalized | Proves both global minimum clauses and a stronger sharp bound at fixed maximum matching size, with unique complete-bipartite minimizers. |
+| Braun–Bruegge’s minimum facet conjecture | Complete for Conjecture 2(3)–(4) | Actual geometric facets, exact even and odd minimum counts, attainment and uniqueness up to graph isomorphism. The 19-module scoped build, all-owned axiom audit and pinned replay passed. The fixed-matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
 | Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |

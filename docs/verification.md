@@ -897,6 +897,8 @@ Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 result
 
 ## Sharp matching-number facet bound
 
+The two global minimum clauses have a complete scoped Lean gate for the actual geometric facets. The [formalization page](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) gives the command and links the source, all-owned axiom audit and kernel replay evidence.
+
 Run `python3 results/braun-bruegge-minimum-facets/check.py` for exact independent polar-vertex and maximum-matching counts on small graphs. Compile and run the optional exhaustive C++ checker for all graphs through order six. The two written proofs give the general results without enumeration.
 
 ## Xu–Zhou diameter–Laplacian conjecture
