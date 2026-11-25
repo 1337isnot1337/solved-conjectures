@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Sobolewski–Ulas’s binary-partition exception regularity conjecture
+
+Partial. Lean verifies the actual normalized-set counting recurrence, the exact repeated-digit identities, the unbounded remainder for its increasing enumeration, and nonperiodicity. The regularity arguments and the identification with the partition function remain outside the Lean scope. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
 Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. It proves the exact positive-rank convolution for the two-summand interval. It proves a literal factorization for the repeated-sum interval. It distinguishes the exceptional slot canonically and checks the actual pointed downset coefficients at lengths at least three. The full enumeration of the larger interval and its exact critical ranks remain outside this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).
@@ -229,7 +233,7 @@ proofs are documented separately in the catalogue and result package.
 | Athanasiadis–Chapoton’s q-zeta reciprocity conjecture | Not formalized | Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation. |
 | Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture | Not formalized | Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization. |
 | Gawron–Miska–Ulas’s Thue–Morse valuation conjecture | Complete | Lean proves the literal disproof of Conjecture 5.2 using exponent 17 and verifies the aligned family for every k ≥ 11. All three modules passed strict compilation, the all-owned axiom audit and stock-kernel replay. [Lean](../lean/Conjectures/ThueMorseValuation.lean) · [Local receipt](../docs/verification/lean-thue-morse-valuation-20261124/receipt.json). |
-| Sobolewski–Ulas’s binary-partition exception regularity conjecture | Not formalized | Uses a repeated-digit counting remainder and Cobham’s theorem for substitutions to exclude regularity in every integer base. |
+| Sobolewski–Ulas’s binary-partition exception regularity conjecture | Partial | Exact counting in the literal normalized exception set, unbounded repeated-digit remainder and nonperiodicity. Regularity and transfer arguments remain written. [Lean scope](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md). |
 | Gawron–Ulas’s partition-sign nonperiodicity conjecture | Not formalized | Oblique root-of-unity growth proves each sign occurs infinitely often on every index progression, for all coprime odd permitted-part steps at least three. |
 | Steinerberger’s greedy-energy Fourier conjecture | Complete | An actual infinite van der Corput sequence satisfies the greedy rule and violates every eventual logarithmic bound for the stated weighted absolute Fourier sum. Four modules, complete owned/private axiom audit and stock-kernel replay; sharp-constant and all-tie-breaking supplements remain unformalized. |
 | Ćurgus–Mascioni’s Fréchet root-matching extremizer question | Partial: nonuniqueness counterexample | Every quadratic has a matching of cost at most one and a continuum of pairwise inequivalent quadratics attain it. General attainment and the cubic comparison are not formalized. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md). |
