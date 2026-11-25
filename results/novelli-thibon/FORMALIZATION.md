@@ -70,10 +70,26 @@ specialization for which the original rational expression is defined.
 The monomial-product theorem is stated on the actual Laurent
 coefficients using the bialternant Schur extractor.
 
+The [signed graph checkpoint](../../lean/Conjectures/NovelliThibonSignedShape.lean)
+checks the source expression when each fundamental function is evaluated
+in the negative-first two-letter alphabet. Signed standardization
+assigns an edge descent exactly when its head is marked negative.
+The local incoming-attack count minus its vertical arm correction is
+the literal column index. Reflecting each column then gives the exact
+row-indexed product of the proposed hook specialization.
+
+Lean additionally checks the [residual polynomial coefficients](../../lean/Conjectures/NovelliThibonHookProductCoefficients.lean)
+after deleting the distinguished unit factor, the
+[hook and nonhook Jacobi–Trudi determinants](../../lean/Conjectures/NovelliThibonHookJacobiTrudi.lean)
+on the specialized complete homogeneous sequence, and
+[the final comparison](../../lean/Conjectures/NovelliThibonHookExtraction.lean)
+under an explicit signed Schur-expansion hypothesis.
+
 This checks the intended monomial-product argument for Conjecture 5.7
-in the finite commutative source model. The independent LLT symmetry
-and general Schur basis theorems are not reproved here. The adjacent
-hook claim is not yet verified. The general noncommutative lift,
+in the finite commutative source model. Relating the finite signed
+fundamental evaluation to the actual Schur expansion by virtual-alphabet
+specialization remains open in Lean, as do independent general LLT
+symmetry and Schur basis theorems. The general noncommutative lift,
 Conjecture 5.4, and the trace assertions are outside this scope.
 
 - [Finite-alphabet comparison replay](verification/finite-alphabet-comparison/receipt.json)
@@ -81,3 +97,4 @@ Conjecture 5.4, and the trace assertions are outside this scope.
 - [Pieri and diagram-chain replay](verification/pieri-diagram-chains/receipt.json)
 - [Standard tableau and Laurent product replay](verification/tableau-laurent-product/receipt.json)
 - [Source graph to formal Laurent polynomial replay](verification/source-laurent-certificate/receipt.json)
+- [Signed hook cell product and determinant replay](verification/signed-hook-cell-product/receipt.json)

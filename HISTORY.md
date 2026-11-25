@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify Novelli–Thibon's signed hook cell product
+
+Lean evaluates the original graph sum in the signed fundamental
+alphabet, computes the residual elementary coefficients, and checks
+the hook and nonhook specialized determinants.
+[Scope and receipt](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Novelli–Thibon's source graph-to-Laurent monomial certificate
 
 Lean checks the original finite commutative graph sum against a

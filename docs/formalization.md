@@ -3,10 +3,10 @@
 
 ## Novelli–Thibon's conjecture
 
-Partial. Lean connects the original finite commutative graph sum to
-the formal Laurent polynomial and checks the intended signed
-monomial product. The adjacent hook claim and independent symmetry
-and basis results are outside this checkpoint.
+Partial. Lean checks the finite commutative monomial product and
+the signed hook cell product, residual coefficients and specialized
+determinants. The virtual-alphabet interpretation of the actual Schur
+expansion and independent symmetry/basis results still remain.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
 ## González D’León–Wachs’s complete-graph specialization question
