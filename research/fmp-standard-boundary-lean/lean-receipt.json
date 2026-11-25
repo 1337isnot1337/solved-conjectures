@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-25",
+  "issue": 460,
+  "lean_version": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scope": "Three verified intermediates toward standard-boundary positivity; not a resolution",
+  "sources": {
+    "lean/Conjectures/FMPCylindricCoefficient.lean": "d4d7a7e97e44867ac19bd9a05e6fa669ee1506fa7712977b8f7596bee6ef0341",
+    "lean/Conjectures/FMPCylindricIdealCuts.lean": "b4c63c5196bba548ece03a0ee9674f5106cec3cb5281fa1c8805da5e18da19aa",
+    "lean/Conjectures/FMPCylindricBoundary.lean": "ad71c8922e779546060e4a482887635ff3c3fd62953109e70e9fd182ae60af14",
+    "research/fmp-standard-boundary-lean/TargetAudit.lean": "cd85bffa57c9dcb7e4e111b5bdb425692d3504628d66a5339cdf2e6af2696b58"
+  },
+  "audit": {
+    "owned": 53,
+    "theorems": 38,
+    "private": 8,
+    "endpoints": 7,
+    "allow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "strict_build": "passed",
+  "stock_kernel_replay": "3 passed",
+  "aggregate": "not run"
+}
