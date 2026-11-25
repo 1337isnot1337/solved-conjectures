@@ -1,4 +1,4 @@
-# Shifted Lonely Runner: exact counterexample certificates for 18 <= n <= 56
+# Shifted Lonely Runner: exact counterexample certificates for 18 <= n <= 57
 
 **Status: computer-assisted, exact rational verification, unrefereed. No Lean formalization.** [Landing page and scope](README.md) · [Certificates](certificates.json) · [Verifier](verify.py)
 
@@ -18,15 +18,15 @@ The speeds in the question are arbitrary distinct positive integers. They are no
 
 ## Statement
 
-For every n in {18, 19, ..., 56} there are n distinct positive integer speeds v_1..v_n and shifts s_i in Q/Z such that
+For every n in {18, 19, ..., 57} there are n distinct positive integer speeds v_1..v_n and shifts s_i in Q/Z such that
 
 ```math
 \gamma(\mathbf v;\mathbf s)=\max_t\min_i\|s_i+v_it\|<\frac1{n+1},
 ```
 
-so the shifted Lonely Runner Conjecture fails for n runners, and `Gamma(n) < 1/(n+1)` for these n. For 18 <= n <= 40 the speeds are 1, 2, ..., n. For 41 <= n <= 56 they are other sets of distinct speeds (largest speed 120 to 216), listed in the certificates. The certificates are in [`certificates.json`](certificates.json), with speeds, shifts s_i = shift_num[i]/shift_den and the exact value of gamma. Run `python3 verify.py` in this folder, or `python3 results/shifted-lonely-runner-counterexamples/verify.py` from the repository root (standard library only), to check them. The final run in the original working folder on 22 Nov 2026 printed `SUMMARY: 37 certificates, 37 passed, 0 failed; certified n = [18, ..., 54]` and took 238 s, mostly for the large-speed certificates n >= 41. `python3 verify.py --quick` runs check 2 below for every certificate and check 1 for n <= 24 and n = 41 only, in about 10 s.
+so the shifted Lonely Runner Conjecture fails for n runners, and `Gamma(n) < 1/(n+1)` for these n. For 18 <= n <= 40 the speeds are 1, 2, ..., n. For 41 <= n <= 57 they are other sets of distinct speeds (largest speed 120 to 216), listed in the certificates. The certificates are in [`certificates.json`](certificates.json), with speeds, shifts s_i = shift_num[i]/shift_den and the exact value of gamma. Run `python3 verify.py` in this folder, or `python3 results/shifted-lonely-runner-counterexamples/verify.py` from the repository root (standard library only), to check them. The final run in the original working folder on 22 Nov 2026 printed `SUMMARY: 37 certificates, 37 passed, 0 failed; certified n = [18, ..., 54]` and took 238 s, mostly for the large-speed certificates n >= 41. `python3 verify.py --quick` runs check 2 below for every certificate and check 1 for n <= 24 and n = 41 only, in about 10 s.
 
-Each listed n has an exact counterexample. Nothing is claimed either way for 57 <= n <= 94: no counterexample is known here, and no proof that none exists. Poliakova's construction (arXiv:2609.23952) covers all n >= 95. The search methods below are heuristic (annealing with random restarts). Their failure so far at n = 57 says only that they did not reach it in the time spent; it is no evidence that the conjecture holds there.
+Each listed n has an exact counterexample. Nothing is claimed either way for 58 <= n <= 94: no counterexample is known here, and no proof that none exists. Poliakova's construction (arXiv:2609.23952) covers all n >= 95. The search methods below are heuristic (annealing with random restarts). Their failure so far at n = 58 says only that they did not reach it in the time spent; it is no evidence that the conjecture holds there.
 
 ## The two verification methods (verify.py runs both)
 
@@ -41,7 +41,7 @@ Adding runners can only decrease min_i ||s_i + v_i t|| at every t, so gamma(v �
 
 - Blanco, Criado, Santos (arXiv:2603.24784, Thm 1.8): counterexamples for 5 <= n <= 17. During the work our verifier reproduced their 1..5 example (gamma = 15/94) and their 6-runner examples (2/15 and 9/67); these examples are not stored in `certificates.json`.
 - Poliakova (arXiv:2609.23952): counterexamples for all n >= 95. We reproduced her rule exactly at N = 96 (base 2,4,...,192; remove {8,32,192}; {12,24,48,96} at (1+δ)/2, {16,64} at −δ, add {3,9} at 1/4; δ = 1/97). It is an exact cover, so it proves n = 95 with gamma <= 1/97. **The sign convention as stated is correct for ||s_i + v_i t||.** The mirrored choice ((1−δ)/2 with +δ) also works. Mixed signs fail.
-- Zhang (arXiv:2608.13599v3, Question 8.5, Appendix A): asks about 18 <= n <= 94. This note settles 18..56 only. 57..94 remain open here.
+- Zhang (arXiv:2608.13599v3, Question 8.5, Appendix A): asks about 18 <= n <= 94. This note settles 18..57 only. 58..94 remain open here.
 
 ## How the certificates were found (heuristic; irrelevant to correctness)
 
@@ -62,13 +62,14 @@ The shifted conjecture concerns any n distinct speeds, so the speed set is a fre
 - **n = 53, 54.** A second run of the chain (`a3chain3.py`) added three things: the new speed is drawn at random from the 5 best by gap coverage; near-pinned results get a "kick" (3 runners get random unused speeds and shifts, then a warm re-anneal); speeds up to 4n are allowed. n = 53: E = 0.122 (the stored certificate). A beam variant (`beam.py`, several solutions kept per n) then gave other n = 53 solutions with E = 0.197 and from them n = 54 with E = 0.719 (the stored certificate, which uses 144, 150, 180 and 216; two other n = 54 solutions found by the chain use 168 and 180).
 - **n = 55 (first round, not found).** About 25 tries in about 50 minutes, from n = 54 bases with E between 0.02 and 0.72. The best SLP results were E = −0.012 and −0.19. Runs took 60 to 90 s each on a machine shared with other jobs. Search stopped there.
 
-## n = 55 and n = 56
+## n = 55, 56 and 57
 
 Found on 25 Nov 2026 with the unchanged `search/a3chain3.py`, `search/a3s.c` and `search/hyb.py` (only hard-coded paths edited), three independent chains with seeds `SO = 1007, 2007, 3007`, each on one core of an Apple-silicon laptop. Every candidate was accepted only after `verify.py`'s `check(c, exact=True)` passed.
 
-- **n = 55.** The chains started from the stored n = 54 certificate and its alternatives. The first certificate (E = 0.0088) added speed 126 to the n = 54 certificate. Further tries produced several distinct n = 55 solutions; the stored one has E = 0.2843 (γ = 63961/3600000). Its speeds are 1..55 without 13, 17, 19, 23, 25, 29, 31, 34, 35, 37, 38, 41, 43, 46, 47, 49, 50, 53, 55, plus 56, 60, 64, 68, 72, 80, 81, 84, 88, 90, 96, 100, 108, 120, 136, 144, 150, 180, 216.
-- **n = 56.** With the default annealing length, about 120 tries over three chains failed (best E ≈ −0.105). The chains were restarted with `MULT=0.6` (2.4× the default annealing length) and `VMX=4` (speeds up to 4n), each seeded with the pooled n = 55 solutions (E from 0.009 to 0.284). One chain succeeded at its 11th try, 23 minutes in, from the E = 0.284 base with new speed 192: E = 0.0265 (γ = 56991/3250000). Its speeds are 1..56 without 13, 17, 19, 23, 25, 29, 31, 35, 37, 41, 43, 46, 47, 49, 50, 52, 53, 55, 56, plus 60, 64, 66, 68, 72, 78, 80, 84, 88, 90, 96, 100, 108, 120, 144, 150, 156, 180, 216. The speed-set pattern noted above for 41..54 continues.
-- **n = 57 (not found so far).** From the single n = 56 base the first ~10 tries ended between E = −1.3 and −6.8. The margin of the n = 56 base is thin, which the chain's experience at 53 → 54 suggests matters; building more n = 56 alternatives is the obvious next step.
+- **n = 55.** The chains started from the stored n = 54 certificate and its alternatives. The first certificate (E = 0.0088) added speed 126 to the n = 54 certificate. Further tries produced many distinct n = 55 solutions; the stored one has E = 0.6070 (γ = 1183599/67000000; it replaces the E = 0.2843 certificate of the first submission). Its speeds are 1..55 without 13, 17, 19, 23, 29, 31, 35, 37, 38, 41, 43, 46, 47, 49, 50, 51, 52, 53, 55, plus 56, 60, 64, 66, 68, 72, 78, 80, 84, 90, 96, 108, 112, 120, 150, 152, 168, 180, 216.
+- **n = 56.** With the default annealing length, about 120 tries over three chains failed (best E ≈ −0.105). The chains were restarted with `MULT=0.6` (2.4× the default annealing length) and `VMX=4` (speeds up to 4n), each seeded with the pooled n = 55 solutions. The first success (11th try, E = 0.0265) was the certificate of the first submission. Continued runs built a pool of n = 56 alternatives; the stored one has E = 0.6675 (γ = 5419/312500). Its speeds are 1..56 without 13, 19, 23, 29, 31, 35, 37, 38, 41, 43, 44, 46, 47, 49, 51, 53, 55, 56, plus 60, 64, 68, 72, 78, 80, 84, 90, 96, 108, 132, 144, 150, 156, 168, 180, 192, 216.
+- **n = 57.** From the thin E = 0.027 base, 56 tries over about 2.3 hours ended between E = −0.5 and −9. As soon as the strong E = 0.667 base for n = 56 appeared, the next try (new speed 138) succeeded: E = 0.1112 (γ = 43021/2500000). Its speeds are 1..57 without 11, 13, 17, 19, 23, 25, 29, 31, 35, 37, 38, 41, 43, 46, 47, 49, 53, 55, 56, 57, plus 59, 60, 64, 66, 68, 72, 75, 80, 84, 90, 96, 108, 114, 120, 128, 132, 144, 168, 192, 216. This confirms the earlier observation that the chain needs strong (E ≳ 0.5) bases at n − 1. The speed-set pattern noted above for 41..54 continues through 57.
+- **n = 58 (not found so far).** Search continues from the n = 57 certificate.
 
 ## What did not work (all runs factual; E := 1/gamma − (n+1), needs E > 0)
 
