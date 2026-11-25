@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall uniform theta derivative ratios
+
+Lean verifies the inverse-scale error bound on the normalized derivative ratios used for the positive-box estimate. One error constant and one threshold work for any fixed finite range of orders. The determinant lower bound itself is not claimed. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Ferreira–Simon diagonal Lean checkpoint
 
 AlexisFimeyer verifies strict monotonicity of the explicit Pollard density integral and differentiation of the Mittag–Leffler series and integral. The diagonal inequality remains conditional on the local Pollard representation. [Original PR #626](https://github.com/1337isnot1337/solved-conjectures/pull/626) · [Lean scope](results/ferreira-simon-diagonal/FORMALIZATION.md).

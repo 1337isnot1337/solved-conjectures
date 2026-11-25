@@ -17,6 +17,7 @@ import Conjectures.NuttallHankelPolynomial
 import Conjectures.NuttallHankelAdjacent
 import Conjectures.NuttallHankelTransfer
 import Conjectures.NuttallTailDominance
+import Conjectures.NuttallDerivativeRatio
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation
