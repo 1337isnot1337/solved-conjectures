@@ -8,4 +8,4 @@
 - [Exact rational inertia checker](check.py)
 - [Discovery issue #487](https://github.com/1337isnot1337/solved-conjectures/issues/487)
 
-[Lean verifies Conjecture 1.1](FORMALIZATION.md) for all admissible parameters and the literal closed interval. The sharpness family remains written.
+[Lean verifies Conjecture 1.1](FORMALIZATION.md) for all admissible parameters and the literal closed interval. Lean also verifies attainment for every positive number of doubled layers, with unbounded parameter `c`.

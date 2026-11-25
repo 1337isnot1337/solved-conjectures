@@ -2,7 +2,7 @@
 
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
-The [scoped Lean receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay for the full literal Laplacian and diameter argument. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
+The [original bound receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) and [combined sharpness receipt](../results/xu-zhou-laplacian-diameter/verification/sharpness/receipt.json) record strict compilation, the all-owned axiom audit, and stock-kernel replay for the full literal Laplacian and diameter argument and the family attaining the bound for every `c ≥ 0`. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
 
 ## Higashitani–Kummer–Michałek conjecture
 
