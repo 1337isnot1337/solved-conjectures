@@ -1,0 +1,250 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T15:35:07.300188+00:00",
+  "finished_at": "2026-11-25T15:37:06.749669+00:00",
+  "root": "Conjectures.RossiPermutohedronFaceRootTransport",
+  "project_modules": [
+    "Conjectures.RossiPermutohedronCharacteristic",
+    "Conjectures.RossiPermutohedronEulerianData",
+    "Conjectures.RossiPermutohedronEulerianDegree",
+    "Conjectures.RossiPermutohedronFaceRootTransport",
+    "Conjectures.RossiPermutohedronOrderedPartitions",
+    "Conjectures.RossiPermutohedronRank",
+    "Conjectures.RossiPermutohedronReduction",
+    "Conjectures.RossiPermutohedronSignGrid",
+    "Conjectures.RossiPermutohedronTransform",
+    "Conjectures.RossiPermutohedronWhitney"
+  ],
+  "required_endpoints": [
+    "RossiPermutohedron.whitneyPolynomial_succ",
+    "RossiPermutohedron.whitneyPolynomial_coeff",
+    "RossiPermutohedron.partitionTouchedEquiv",
+    "RossiPermutohedron.partitionSingletonEquiv",
+    "RossiPermutohedron.orderedPartition_card_succ",
+    "RossiPermutohedron.orderedPartition_card",
+    "RossiPermutohedron.rankPolynomial_grouped",
+    "RossiPermutohedron.orderedPartition_sum_eq_whitney",
+    "RossiPermutohedron.rankPolynomial_eq",
+    "RossiPermutohedron.rankPolynomial_shifted",
+    "RossiPermutohedron.characteristicFacePolynomial_eq_reflect",
+    "RossiPermutohedron.characteristicFacePolynomial_eq_recurrence",
+    "RossiPermutohedron.rankPolynomial_isRoot_iff",
+    "RossiPermutohedron.rankPolynomial_roots_of_recurrence"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/RossiPermutohedronCharacteristic.lean": "02357d1a673fdd94e37794d585cd6ed645a5d0347ca5fb2a1e69db7baf1b57a1",
+    "lean/Conjectures/RossiPermutohedronEulerianData.lean": "40fbe79b9fe343662a2b5399f8ba63dd22f17f5aa722b2d63671f0d8e126f4fe",
+    "lean/Conjectures/RossiPermutohedronEulerianDegree.lean": "3e1f0b5532f18feb9111969e59f7c0231f05344082757c9a618201146e88f61f",
+    "lean/Conjectures/RossiPermutohedronFaceRootTransport.lean": "93d14f2744c2bb1dd7c3489ec223b4d2345f0baf6a297d881c34a72210f1ad72",
+    "lean/Conjectures/RossiPermutohedronOrderedPartitions.lean": "6ed29b7f9c4b82a59b32f784a53fab2caf624a9f423400f5355670b362e63bf0",
+    "lean/Conjectures/RossiPermutohedronRank.lean": "8b0b79154552c8670388ffa24e22803fd4f03d2711d70a074708be08fae901cd",
+    "lean/Conjectures/RossiPermutohedronReduction.lean": "16ddf3ed048d254ab0c89e28e6b18105d39dc620a2898946522360abd8e0d910",
+    "lean/Conjectures/RossiPermutohedronSignGrid.lean": "c9c4f1e92947ee0f76b1794c3f9bd8001fd6798e2addb7142b6825c5deaf8f6f",
+    "lean/Conjectures/RossiPermutohedronTransform.lean": "25a6e57c7fbdf376e9027239cba7f7aa85cb65ca568bffbe82c2e2ee2dddb838",
+    "lean/Conjectures/RossiPermutohedronWhitney.lean": "47c7225c05e711c727aed0d2edb2b2256aa82c219578b0745a2a3db3f1fac938"
+  },
+  "input_sha256": {
+    "lean/Conjectures/RossiPermutohedronCharacteristic.lean": "02357d1a673fdd94e37794d585cd6ed645a5d0347ca5fb2a1e69db7baf1b57a1",
+    "lean/Conjectures/RossiPermutohedronEulerianData.lean": "40fbe79b9fe343662a2b5399f8ba63dd22f17f5aa722b2d63671f0d8e126f4fe",
+    "lean/Conjectures/RossiPermutohedronEulerianDegree.lean": "3e1f0b5532f18feb9111969e59f7c0231f05344082757c9a618201146e88f61f",
+    "lean/Conjectures/RossiPermutohedronFaceRootTransport.lean": "93d14f2744c2bb1dd7c3489ec223b4d2345f0baf6a297d881c34a72210f1ad72",
+    "lean/Conjectures/RossiPermutohedronOrderedPartitions.lean": "6ed29b7f9c4b82a59b32f784a53fab2caf624a9f423400f5355670b362e63bf0",
+    "lean/Conjectures/RossiPermutohedronRank.lean": "8b0b79154552c8670388ffa24e22803fd4f03d2711d70a074708be08fae901cd",
+    "lean/Conjectures/RossiPermutohedronReduction.lean": "16ddf3ed048d254ab0c89e28e6b18105d39dc620a2898946522360abd8e0d910",
+    "lean/Conjectures/RossiPermutohedronSignGrid.lean": "c9c4f1e92947ee0f76b1794c3f9bd8001fd6798e2addb7142b6825c5deaf8f6f",
+    "lean/Conjectures/RossiPermutohedronTransform.lean": "25a6e57c7fbdf376e9027239cba7f7aa85cb65ca568bffbe82c2e2ee2dddb838",
+    "lean/Conjectures/RossiPermutohedronWhitney.lean": "47c7225c05e711c727aed0d2edb2b2256aa82c219578b0745a2a3db3f1fac938",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronSignGrid.olean",
+        "Conjectures/RossiPermutohedronSignGrid.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronSignGrid.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronTransform.olean",
+        "Conjectures/RossiPermutohedronTransform.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronTransform.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronReduction.olean",
+        "Conjectures/RossiPermutohedronReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronEulerianData.olean",
+        "Conjectures/RossiPermutohedronEulerianData.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronEulerianData.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronEulerianDegree.olean",
+        "Conjectures/RossiPermutohedronEulerianDegree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronEulerianDegree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronWhitney.olean",
+        "Conjectures/RossiPermutohedronWhitney.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronWhitney.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronOrderedPartitions.olean",
+        "Conjectures/RossiPermutohedronOrderedPartitions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronOrderedPartitions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronRank.olean",
+        "Conjectures/RossiPermutohedronRank.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronRank.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronCharacteristic.olean",
+        "Conjectures/RossiPermutohedronCharacteristic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronCharacteristic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/RossiPermutohedronFaceRootTransport.olean",
+        "Conjectures/RossiPermutohedronFaceRootTransport.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.RossiPermutohedronFaceRootTransport.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.RossiPermutohedronFaceRootTransport",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 141,
+    "modules": 10,
+    "private_declarations": 38,
+    "raw_declarations": 141,
+    "required": 14,
+    "tag": "passed",
+    "theorems": 115
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

@@ -319,6 +319,11 @@ modules=(
   Conjectures.RossiPermutohedronReflection
   Conjectures.RossiPermutohedronGridGeometry
   Conjectures.RossiPermutohedronUniformGrid
+  Conjectures.RossiPermutohedronWhitney
+  Conjectures.RossiPermutohedronOrderedPartitions
+  Conjectures.RossiPermutohedronRank
+  Conjectures.RossiPermutohedronCharacteristic
+  Conjectures.RossiPermutohedronFaceRootTransport
   Conjectures.RevisedTanZhouCylinders
   Conjectures.RevisedTanZhouUpper
   Conjectures.RevisedTanZhouStopping

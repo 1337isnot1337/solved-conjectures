@@ -60,9 +60,24 @@ using the Eulerian transformation credited to Rossi.
   above `1` for the reciprocal recurrence model. Lean specifies the
   entire real root multiset, with multiplicity.
 
-The exact finite witnesses for `3 ≤ n < 128`, the identification with
-the actual descent enumerator, and the literal face-lattice
-characteristic polynomial are **not** established by this Lean scope.
+- [Ordered partitions](../../lean/Conjectures/RossiPermutohedronOrderedPartitions.lean):
+  represent each ordered face by its surjective block labels. Removing the
+  last element either removes a singleton block or retains all blocks.
+  The two explicit bijections prove the exact Stirling-number count.
+- [Rank polynomial](../../lean/Conjectures/RossiPermutohedronRank.lean):
+  sums over the actual finite face set in Definition 2.3, including the
+  empty face, and identifies the result with the shifted Eulerian recurrence.
+- [Characteristic face sum](../../lean/Conjectures/RossiPermutohedronCharacteristic.lean)
+  and [root transport](../../lean/Conjectures/RossiPermutohedronFaceRootTransport.lean):
+  the paper’s signed face-sum formula equals the reciprocal recurrence model;
+  the exact root multiset of that model transfers to the literal rank
+  polynomial, including absence of nonreal roots.
+
+The complete finite bridge for `3 ≤ n < 128` is still pending at this
+checkpoint. The face-sum formula uses Rossi’s evaluated Möbius signs
+(Theorem 6.3); this development does not separately re-prove that theorem
+from the poset’s Möbius recursion. The directly counted rank polynomial is
+the paper’s explicitly equivalent formulation of Conjecture 6.16.
 See the [written proof](PROOF.md) and [original audit](AUDIT.md).
 
-The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json), [bulk-sign receipt](verification/bulk/receipt.json), and [uniform-grid receipt](verification/uniform/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay.
+The [root-count receipt](verification/receipt.json), [analytic receipt](verification/analytic/receipt.json), [bulk-sign receipt](verification/bulk/receipt.json), and [uniform-grid receipt](verification/uniform/receipt.json) record strict compilation, the complete owned-declaration axiom audit, and pinned stock-kernel replay. The [face-model receipt](verification/face-model/receipt.json) covers the independently counted rank and signed characteristic face sums.
