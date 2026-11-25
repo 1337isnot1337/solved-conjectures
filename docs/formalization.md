@@ -1,5 +1,12 @@
 # Full formalization campaign
 
+## Defant–Engen–Miller’s Lassalle refinement conjecture
+
+Partial. Lean checks the exact 205-box rectangle coverage, with
+the eventual quotient-row result conditional on the analytic approximation.
+The original permutation count and the finite base remain outside the check.
+[Lean scope and receipt](../results/defant-engen-miller-lassalle/FORMALIZATION.md).
+
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture
 
 Partial. Lean proves exact binary-partition congruences for all inputs, inclusion of the explicit layers in the original exception set, and the layer nonregularity in power-of-two bases. For actual nonregularity, Legendre’s sufficiency direction remains external, together with the Cobham–Durand implication for other bases. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).

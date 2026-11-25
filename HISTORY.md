@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-25 — Verify the Lassalle interval certificate in Lean
+
+Lean checks sound directed rounding, all 205 bisection boxes, and the
+eventual determinant argument conditional on the analytic approximation.
+The literal permutation-count formulation is separate from the checked
+coefficient model.
+[Scope and receipt](results/defant-engen-miller-lassalle/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the actual Sobolewski–Ulas partition congruences
 
 Lean verifies exact partition recurrences by multiset bijections and a

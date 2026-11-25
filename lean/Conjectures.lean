@@ -1,3 +1,4 @@
+import Conjectures.LassalleBoxCoverage
 import Conjectures.SternHalfPlaneBasic
 import Conjectures.SternHalfPlaneShift
 import Conjectures.SternHalfPlaneParabola
