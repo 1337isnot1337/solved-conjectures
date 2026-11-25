@@ -1,0 +1,53 @@
+{
+  "status": "passed_scoped_partial",
+  "source_base": "f09c2df5ee4d066890d5af1ddbd358856700c885",
+  "lean": "4.35.0",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "strict_source_count": 21,
+  "all_owned": 1150,
+  "owned_theorems": 817,
+  "private_declarations": 84,
+  "new_owned": 46,
+  "source_named_axiom_checks": 466,
+  "required_endpoints": [
+    "MaTangCoreAllDimensions.all_large_dimensions_below_half",
+    "MaTangCoreAllDimensions.uniform_subset_coverage_scaled_all",
+    "MaTangCoreAllDimensions.dimensionParameter_bounds",
+    "MaTangCoreAllDimensions.envelope_all"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "stock_kernel_replayed": 21,
+  "module_sha256": {
+    "MaTangCoreBalance": "ddb959fd9a40f664dead70a468aee434a492ec14375941ea567885f3d42a3b80",
+    "MaTangCoreIndexed": "983c021c9e0bb930d34571517065c28c1ba923e400f91fc75e253d5b28e88388",
+    "MaTangCoreMatrix": "04bcc081bc1ce6399fc74e2279b796497ea903ab390edc1d9735757033fde2d4",
+    "MaTangCoreOccupancy": "bc3c930220c3b98c19115a52d1d5801f64b456b5ef53cdb30999de3bce2a8279",
+    "MaTangCoreSubspace": "917fd3857ff1fd091bcb392f0b064e43459501589487320c079a32b3c737e71b",
+    "MaTangCoreRank": "18587738a9b34e7b219918d48e5b1602fb6a14c626c060335a670b4c88b37de3",
+    "MaTangCoreGenerator": "647daadc2dd3cba94877e9378d6475b3ed908244ada07d28be767891224e70e9",
+    "MaTangCoreDecay": "754b030388fe35ece202a9857e1be0f2a6393f57b618acc30c05bc7c312076a4",
+    "MaTangCoreQuotient": "ec16aca3d62b6bf048d5329f339d6eb3e4a4149fddf280c56f3a062667f3d529",
+    "MaTangCoreLinear": "9d539febc8707255698810c011e4ad178e4260531a79e379d3f26cc486f4256b",
+    "MaTangCoreEncoding": "bc7f7e743494006f77cdddcaebb27b99481fbfa949f1258aff61d58572983e1f",
+    "MaTangCoreFactor": "45d12cae5146a6d363a239eacd4797a528f5487991f3883fce49f1800a0301de",
+    "MaTangCoreMultiplicity": "060ae5ab655f59a64d9b5c0c05555d1e34a927d5d300fb80567de7cd11a4b145",
+    "MaTangCoreCoupling": "4a9c86f9b05cf6065130a34591e96c34bd754a14b7556b4949ffd01cad6f152f",
+    "MaTangCoreLowerBound": "7806ea16ba7cd054096e7d4f6f5fba7c0ca68ef333f5e0707c9d48cc5e72e6ca",
+    "MaTangCoreBirthday": "8441d478ef745005a45f41d7858cec17ca1f6511b9fa309054bb0c0c0a14675a",
+    "MaTangCoreTranspose": "22f0453c53c2e391c1d9175df58f0c51fb94d67aadf29a3110f85c77ebfcc785",
+    "MaTangCoreDistinct": "d21ec11e7b438de4294069faadbbf3f499f5ba176818cdaf979e845018267210",
+    "MaTangCoreSetCoverage": "7d5916b61065cfab1b7b7f61ba7105b07a1d27ad5dc39f0c7f5074663d3473e6",
+    "MaTangCoreUniformSubset": "19335631c69b0be1b02e3e92d31066ef87effcdbe4e498a6a6b992e50d56cefe",
+    "MaTangCoreAllDimensions": "b62a5921c088478df083ad03a3d2a9a5db566751d6e245f5238fa0f5c801bae0"
+  },
+  "not_claimed": [
+    "general upper threshold",
+    "threshold monotonicity",
+    "literal real-log limiting theorem",
+    "repository-wide verification"
+  ]
+}
