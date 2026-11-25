@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall full theta Wronskian tail signs
+
+Lean transfers the first-mode polynomial calculation to the full theta kernel. It checks the normalized Hankel determinant limit and the eventual strict Wronskian signs, simultaneously for any bounded range of sizes. Distinct-node evaluation and the higher cumulant signs remain separate. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall first-mode Hankel degrees and signs
 
 A Schur complement proves the exact adjacent-minor recurrence. Lean verifies nonvanishing, the exact degree and leading-coefficient sign in every size, and the normalized evaluation limit. The transfer to the complete theta kernel is not part of this change. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).

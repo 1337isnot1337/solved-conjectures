@@ -15,6 +15,7 @@ import Conjectures.NuttallAndreief
 import Conjectures.NuttallVandermonde
 import Conjectures.NuttallHankelPolynomial
 import Conjectures.NuttallHankelAdjacent
+import Conjectures.NuttallHankelTransfer
 import Conjectures.NemethSeberryShuCongruence
 import Conjectures.NemethSeberryShuCounting
 import Conjectures.NemethSeberryShuLogSeparation

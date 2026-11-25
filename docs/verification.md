@@ -11,7 +11,7 @@ The five-module target passed pinned strict source build, all-owned axiom audit,
 
 ## Nuttall's conjecture
 
-The pinned strict builds, all-owned axiom audits and stock replays pass for the separate first-mode, all-order kernel derivative, iterated-tail calculus, differentiated-moment/Andréief, Hankel polynomial, and adjacent-minor closures. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+The pinned strict builds, all-owned axiom audits and stock replays pass for the separate first-mode, all-order kernel derivative, iterated-tail calculus, differentiated-moment/Andréief, Hankel polynomial, adjacent-minor, and full-kernel Wronskian transfer closures. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
 
 ## Németh–Seberry–Shu conjecture
 
