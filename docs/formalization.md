@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Cardon–Forgács–Piotrowski–Sorensen–White conjecture
+
+The original Question 6.1 disproof and the uniform positive-damping strengthening are both checked. The actual cubic image has a nonreal root outside a strictly positive input sector for every real p > 2 and sufficiently small positive α. [Lean scope](../results/cardon-zero-sector/LEAN.md).
+
 ## Ćurgus–Mascioni’s Fréchet root-matching extremizer question
 
 Partial for the full entry. Lean verifies the exact nonuniqueness counterexample, all root multiplicities and the all-quadratic upper bound. General attainment remains unformalized. [Lean scope](../results/curgus-mascioni-frechet/FORMALIZATION.md).

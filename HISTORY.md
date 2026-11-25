@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Cardon–Forgács–Piotrowski–Sorensen–White conjecture
+
+Lean now verifies the uniform small-positive-damping obstruction for every real p > 2. The originally checked p = 3 source is unchanged. [Exact scope](results/cardon-zero-sector/LEAN.md).
+
 ## 2026-11-25 — Ćurgus–Mascioni’s Fréchet root-matching extremizer question
 
 Kernel-checked the exact nonuniqueness counterexample on all quadratics with the stated operator, including all minimizing permutations and the continuous family of inequivalent extrema. General attainment and the cubic example remain written only. [Lean scope](results/curgus-mascioni-frechet/FORMALIZATION.md).
