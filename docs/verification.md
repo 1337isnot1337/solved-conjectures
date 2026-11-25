@@ -668,7 +668,7 @@ Run `python3 results/circular-index-upper-half-remaining-deltas/verify.py`.
 The [certificate note](../results/circular-index-upper-half-remaining-deltas/README.md)
 gives tomdif’s seven graphs and exact bounds. Together with the earlier
 construction notes they cover every maximum degree at least eight.
-The optional SAT search is not needed for verification.
+The optional SAT search is not needed for verification. The [scoped Lean replay](../results/circular-index-upper-half-remaining-deltas/verification/real-index/receipt.json) checks the real circular-index result for the seven new literal graphs.
 
 ## Zhang's Question 8.5: shifted lonely runner counterexamples
 

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify all seven of tomdif’s real circular-index bounds in Lean
+
+Lean proves the exact maximum degree and real circular-index bounds of each submitted graph. Six indices equal `Δ+2/3`; the degree-15 graph is bracketed by `171/11` and `47/3`. The earlier degree families remain separate. [Lean scope](results/circular-index-upper-half-remaining-deltas/REVIEW.md).
+
 ## 2026-11-25 — Publish tomdif’s graph-colouring and shifted-runner certificates
 
 [PR #647](https://github.com/1337isnot1337/solved-conjectures/pull/647) supplies the seven missing maximum degrees for the upper-half circular chromatic index, completing the combined coverage for all degrees at least eight. [PR #646](https://github.com/1337isnot1337/solved-conjectures/pull/646) extends the shifted-runner counterexamples through 56, leaving 57–94 outside the checked range. Both contributions are by [tomdif](https://github.com/tomdif); the exact certificates were independently replayed.

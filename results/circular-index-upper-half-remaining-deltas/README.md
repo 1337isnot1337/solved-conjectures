@@ -4,7 +4,7 @@
 
 **Status:** Seven explicit graphs, checked by `verify.py` (standard library only) and an independent exact replay. The combined all-degree statement also uses the three earlier notes, not just these seven certificates. No external refereeing or full Lean verification of the combined statement is claimed.
 
-**Lean status:** partial. The seven finite certificate checks pass in Lean. See the [verified scope](REVIEW.md).
+**Lean status:** partial for the combined all-degree result. Lean proves the real circular-index bounds for all seven new graphs, including six exact values. The earlier degree families are outside this Lean check. See the [verified scope](REVIEW.md).
 
 **Attribution:** [tomdif](https://github.com/tomdif) supplied the graphs,
 colourings, SAT encoding and original write-up in [PR #647](https://github.com/1337isnot1337/solved-conjectures/pull/647)
