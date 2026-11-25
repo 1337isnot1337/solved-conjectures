@@ -4,4 +4,4 @@ The exact target is [Ying Wai Lee, INTEGERS 26 (2026), A45, Conjecture 2](https:
 
 The independent audit checked the unreduced denominator convention, the stopping-time gap and summable digit tails, nesting of the smaller balls, enumeration by vanishing radii, full measure in every subinterval, and the exact hypotheses of the mass transference principle. The sum over cylinders gives the upper bound, with zero and infinite orders treated separately. A focused search of the source, its related versions and the equivalent dimensional statement located no prior full resolution.
 
-No Lean verification, external review or absolute priority claim is made.
+The [Lean formalization](FORMALIZATION.md) verifies the full revised conjecture. The review and priority search described here are internal and bounded.

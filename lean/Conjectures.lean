@@ -162,6 +162,13 @@ import Conjectures.GravgaardLeeDiameterCover
 import Conjectures.GravgaardLeeDiameterGreedy
 import Conjectures.GravgaardLeeDiameterTails
 import Conjectures.GravgaardLeeDiameter
+import Conjectures.RevisedTanZhouCylinders
+import Conjectures.RevisedTanZhouUpper
+import Conjectures.RevisedTanZhouStopping
+import Conjectures.RevisedTanZhouScale
+import Conjectures.RevisedTanZhouCoding
+import Conjectures.RevisedTanZhouPacking
+import Conjectures.RevisedTanZhou
 import Conjectures.GesselZhuangBlockOperations
 import Conjectures.GesselZhuangBlocks
 import Conjectures.GesselZhuangChoices

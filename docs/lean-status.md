@@ -1,5 +1,10 @@
 # Lean verification status
 
+## Revised Tan–Zhou conjecture
+
+The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) proves the exact Hausdorff dimension for every positive nonincreasing approximation function bounded by one. The proof checks the literal unreduced denominators, the cylinder upper bound, and the lower bound by a Hölder decoding of nested target intervals. The eleven-module closure passed strict compilation, the complete owned-declaration axiom audit, and stock-kernel replay. See the [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json).
+
+
 ## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
 Partial. Lean checks the exact polynomial recurrence, the all-index continuant reduction under its parabolic hypothesis, and unconditional nonvanishing on the positive real axis. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
@@ -191,7 +196,7 @@ proofs are documented separately in the catalogue and result package.
 | Pomerance–Sárközy’s fluctuation conjecture | Not formalized | Proves the density-one refinement and the quarter-power Gaussian law for the count associated with n plus its distinct prime factors. |
 | Ulas’s disjoint-block square-product conjecture | Complete | Original Conjecture 4 and the stronger common-length theorem at every positive length. The nine-module strict build, owned-declaration axiom audit, and kernel replay passed. [Scope](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) · [Receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json). |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
-| Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
+| Revised Tan–Zhou conjecture | Complete | Exact Hausdorff dimension with unreduced Lüroth denominators and every lower order, including zero and infinity. Strict compilation, all-owned axiom audit, and stock-kernel replay passed. [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) · [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json). |
 | Simmons–Weiss’s Hausdorff-measure question | Not formalized | Proves natural-Hausdorff-almost-sure non-bad approximation after every irrational translate of a bounded continued-fraction Cantor set. |
 | Gravgaard–Lee’s mixed Lüroth sumset conjecture | Complete | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
 | Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Complete | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |

@@ -226,6 +226,13 @@ modules=(
   Conjectures.GravgaardLeeDiameterGreedy
   Conjectures.GravgaardLeeDiameterTails
   Conjectures.GravgaardLeeDiameter
+  Conjectures.RevisedTanZhouCylinders
+  Conjectures.RevisedTanZhouUpper
+  Conjectures.RevisedTanZhouStopping
+  Conjectures.RevisedTanZhouScale
+  Conjectures.RevisedTanZhouCoding
+  Conjectures.RevisedTanZhouPacking
+  Conjectures.RevisedTanZhou
   Conjectures.GesselZhuangBlockOperations
   Conjectures.GesselZhuangBlocks
   Conjectures.GesselZhuangChoices

@@ -1,5 +1,10 @@
 # Full formalization campaign
 
+## Revised Tan–Zhou conjecture
+
+The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) proves the full monotone conjecture, including zero and infinite lower order. Direct cylinder covers give the upper bound. Finite digit-tail estimates control the stopping scale, and a uniformly branching interval construction gives an inverse Hölder map for the lower bound. See the [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json).
+
+
 ## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
 The exact Stern polynomial is connected to the run-length continuant, with all fraction denominators checked. Positive real inputs are covered without an enclosure or parabolic hypothesis. The nonreal regional estimates are not part of the checked scope. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
