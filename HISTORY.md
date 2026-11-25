@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify cyclic gluing and the factor-stabilizer prime transfer
+
+Lean checks the actual product conjugator from the paired cycle data
+and the prime-spectrum transfer from two closed words whose factor
+labels generate the inner automorphisms.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s simple factors and closed-walk label products
 
 Lean proves that automorphisms permute the minimal normal coordinate
