@@ -11055,7 +11055,21 @@ run_cmd do
     `Loneliness.RationalLatticeQuotient.gram_det_eq_coordinate_factor,
     `Loneliness.RationalLatticeQuotient.quotient_card_eq_natAbs_det,
     `Loneliness.RationalLatticeQuotient.quotient_card_pos,
-    `Loneliness.RationalLatticeQuotient.gram_det_eq_quotient_card_sq_mul_covolume_sq]
+    `Loneliness.RationalLatticeQuotient.gram_det_eq_quotient_card_sq_mul_covolume_sq,
+    `WaringGapSymmetryCore.exact_monoid64,
+    `WaringGapSymmetryCore.exact_monoid128,
+    `WaringGapSymmetryCore.stable_iff,
+    `WaringGapSymmetryCore.gap_bit_correct,
+    `WaringGapSymmetryCore.benfield_lippard_64,
+    `WaringGapSymmetryCore.benfield_lippard_128,
+    `WaringGapSymmetryCore.not_conjecture10_1,
+    `WaringGapSymmetryCore.not_reflection_conjecture,
+    `WaringGapSymmetryCore.stabilized_matches,
+    `WaringGapSymmetryCore.stableList_nodup,
+    `WaringGapSymmetryCore.stableList_mem,
+    `WaringGapSymmetryCore.stableList_length,
+    `WaringGapSymmetryCore.stable_list_counterexample64,
+    `WaringGapSymmetryCore.stable_list_counterexample128]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

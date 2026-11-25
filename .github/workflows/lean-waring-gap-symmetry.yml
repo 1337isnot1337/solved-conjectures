@@ -1,0 +1,64 @@
+name: Benfield–Lippard’s stable Waring-gap symmetry conjecture
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/WaringGapSymmetry*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-waring-gap-symmetry.yml'
+  push:
+    branches: [research, main]
+    paths:
+      - 'lean/Conjectures/WaringGapSymmetry*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-waring-gap-symmetry.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source, all-owned audit, and stock-kernel replay
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.WaringGapSymmetry
+          --require WaringGapSymmetryCore.exact_monoid64
+          --require WaringGapSymmetryCore.exact_monoid128
+          --require WaringGapSymmetryCore.stable_iff
+          --require WaringGapSymmetryCore.gap_bit_correct
+          --require WaringGapSymmetryCore.benfield_lippard_64
+          --require WaringGapSymmetryCore.benfield_lippard_128
+          --require WaringGapSymmetryCore.not_conjecture10_1
+          --require WaringGapSymmetryCore.not_reflection_conjecture
+          --require WaringGapSymmetryCore.stabilized_matches
+          --require WaringGapSymmetryCore.stableList_nodup
+          --require WaringGapSymmetryCore.stableList_mem
+          --require WaringGapSymmetryCore.stableList_length
+          --require WaringGapSymmetryCore.stable_list_counterexample64
+          --require WaringGapSymmetryCore.stable_list_counterexample128
+          --out .candidate-artifacts/waring-gap-symmetry
+      - uses: actions/upload-artifact@v4
+        with:
+          name: waring-gap-symmetry
+          path: .candidate-artifacts/waring-gap-symmetry/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

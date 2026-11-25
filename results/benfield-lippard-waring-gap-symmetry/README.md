@@ -9,3 +9,7 @@ The proof identifies the entire stable exception monoid in each counterexample, 
 - [Discovery issue #398](https://github.com/1337isnot1337/solved-conjectures/issues/398)
 
 The [parity conjecture](../benfield-lippard-waring-gap-parity/) is separate. No claim is made about the asymptotic ratio.
+
+## Lean status
+
+**Complete for the original conjecture and intended reflection formulation.** [Source-matched Lean proof and verification receipt](LEAN.md). Strict compilation, all-owned axiom audit and independent kernel replay passed for the seven-module closure. Exact numerical genus formulas are a separate supplement.
