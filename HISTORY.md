@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Nuttall scalar tail comparison
+
+Lean verifies the scalar moment integral bound and the final scalar dominance limit. The estimates have not yet been linked to the signed determinant integrals. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall full theta Wronskian tail signs
 
 Lean transfers the first-mode polynomial calculation to the full theta kernel. It checks the normalized Hankel determinant limit and the eventual strict Wronskian signs, simultaneously for any bounded range of sizes. Distinct-node evaluation and the higher cumulant signs remain separate. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).
