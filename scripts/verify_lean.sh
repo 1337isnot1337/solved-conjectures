@@ -324,6 +324,20 @@ modules=(
   Conjectures.RossiPermutohedronRank
   Conjectures.RossiPermutohedronCharacteristic
   Conjectures.RossiPermutohedronFaceRootTransport
+  Conjectures.McNamaraSteingrimssonContainment
+  Conjectures.McNamaraSteingrimssonDirectSum
+  Conjectures.McNamaraSteingrimssonDistinct
+  Conjectures.McNamaraSteingrimssonLayerEmbedding
+  Conjectures.McNamaraSteingrimssonNormalize
+  Conjectures.McNamaraSteingrimssonPointed
+  Conjectures.McNamaraSteingrimssonPolynomial
+  Conjectures.McNamaraSteingrimssonSubwords
+  Conjectures.McNamaraSteingrimssonLayerRestriction
+  Conjectures.McNamaraSteingrimssonMiddleLayers
+  Conjectures.McNamaraSteingrimssonPatternSize
+  Conjectures.McNamaraSteingrimssonPointedCount
+  Conjectures.McNamaraSteingrimssonPointedInterval
+  Conjectures.McNamaraSteingrimssonUnpoint
   Conjectures.RossiPermutohedronDyadicCertificate
   Conjectures.RossiPermutohedronDyadicRows000
   Conjectures.RossiPermutohedronDyadicRows011
