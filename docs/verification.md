@@ -2,9 +2,10 @@
 
 ## González D’León–Wachs’s complete-graph specialization question
 
-Partial. Lean proves the exact Laguerre formula for the literal
-weighted complete-graph polynomial. Positive-root, probability
-and analytic consequences remain outside this scope.
+Partial. Lean proves the literal Laguerre formula, positive rates,
+formal moment expression, and strict ordinary coefficient log-concavity
+for at least two equal colors. Probability and the real-zero count
+remain outside this scope.
 [Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture

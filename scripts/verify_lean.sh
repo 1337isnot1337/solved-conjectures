@@ -53,6 +53,18 @@ modules=(
   Conjectures.WachsCompleteGraphSizeRecurrence
   Conjectures.WachsCompleteGraphActualEGF
   Conjectures.WachsCompleteGraphActualLaguerre
+  Conjectures.WachsCompleteGraphStrictLogConcavity
+  Conjectures.WachsLaguerreInterlaceAssemble
+  Conjectures.WachsLaguerreInterlaceSigns
+  Conjectures.WachsLaguerreMonic
+  Conjectures.WachsLaguerrePositiveFactors
+  Conjectures.WachsLaguerrePositiveRoots
+  Conjectures.WachsLaguerreRecurrence
+  Conjectures.WachsLaguerreSignIntervals
+  Conjectures.WachsLaguerreSuccessorIntervals
+  Conjectures.WachsMomentConvolution
+  Conjectures.WachsMomentFactorLogConcavity
+  Conjectures.WachsMomentLogConcavity
   Conjectures.WachsCompleteGraphCanonicalUnit
   Conjectures.WachsCompleteGraphDistinguishedBlock
   Conjectures.WachsCompleteGraphEGFComposition
