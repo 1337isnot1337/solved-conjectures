@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Braun–Bruegge’s minimum facet conjecture
+
+Lean proves both global minimum clauses of Conjecture 2 for the actual facets of the symmetric edge polytope. It establishes the exact even and odd formulas and the equality criterion up to graph isomorphism. The scoped gate passed for 19 modules, all 433 owned declarations and 30 required endpoints, followed by pinned kernel replay. The matching-number refinement remains a written supplement. [Lean scope](../results/braun-bruegge-minimum-facets/FORMALIZATION.md) · [Verification receipt](verification/lean-braun-bruegge-complete-20261124/receipt.json)
+
 ## Feldheim–Feldheim’s weighted tail conjecture
 
 The [complete Lean proof](../results/feldheim-weighted-tail/FORMALIZATION.md) establishes original Conjecture 1 for every positive weight below one and arbitrary independent nonnegative laws without compact support, including atoms and singular laws. Actual moving averages supply the continuity bridge, an actual affine-minorant supremum supplies the convex approximation, and inverse levels supply the common near-affine windows. Product-measure conditioning and an atom-safe Stieltjes inequality close the literal infinite-limsup statement.
