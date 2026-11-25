@@ -21,7 +21,7 @@ public Mathlib documentation, and theorem-index searches did not
 surface a duplicate theorem or a formal proof of the exact statement.
 The proof was checked within the research session, including a separate
 derivation of the graph lift by breaking each permutation cycle
-before extending its forest. [Partial Lean verification](FORMALIZATION.md) now covers the prime-spectrum reduction, the cycle-label equations, and the actual product action. External refereeing is pending.
+before extending its forest. [Partial Lean verification](FORMALIZATION.md) now covers the prime-spectrum reduction, the simple-factor structure, and the cycle and closed-walk labels on the actual product. External refereeing is pending.
 
 ## Attribution
 

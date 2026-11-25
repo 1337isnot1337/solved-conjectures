@@ -123,6 +123,8 @@ modules=(
   Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
   Conjectures.ShumyatskyCycleLabels
   Conjectures.ShumyatskyFactorAction
+  Conjectures.ShumyatskySimpleFactors
+  Conjectures.ShumyatskyWalkLabels
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw

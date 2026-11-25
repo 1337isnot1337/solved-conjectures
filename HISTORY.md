@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify Shumyatsky’s simple factors and closed-walk label products
+
+Lean proves that automorphisms permute the minimal normal coordinate
+factors and checks the restriction of a closed word to its base factor.
+[Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Pomerance–Sárközy's distribution comparisons
 
 Lean verifies the categorical-to-Bernoulli and Bernoulli-to-Poisson

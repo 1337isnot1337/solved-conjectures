@@ -17,6 +17,8 @@ import Conjectures.PomeranceSarkozyDistributionCheckpoint
 import Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
 import Conjectures.ShumyatskyCycleLabels
 import Conjectures.ShumyatskyFactorAction
+import Conjectures.ShumyatskySimpleFactors
+import Conjectures.ShumyatskyWalkLabels
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction

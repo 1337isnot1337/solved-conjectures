@@ -28,6 +28,19 @@ and the source credits in the [audit](AUDIT.md).
   and identifies a fixed permutation with prescribed outer classes as
   an actual right coset modulo inner automorphisms of the product.
 
+- [Simple factors](../../lean/Conjectures/ShumyatskySimpleFactors.lean).
+  Every nontrivial normal subgroup of a direct power of a nonabelian
+  simple group contains a coordinate factor. The factors are exactly the
+  minimal nontrivial normal subgroups. Consequently every automorphism
+  of the finite power permutes the factors and has the label form above.
+- [Walk labels](../../lean/Conjectures/ShumyatskyWalkLabels.lean).
+  Lean evaluates arbitrary words of forward and reverse factor moves on
+  the product. A closed word acts on its base factor by the product of
+  its successive labels. Words of the two chosen automorphisms and their
+  inverses are in their generated subgroup. For a selected occurrence
+  with the other transports fixed, each word label in the prescribed
+  outer class determines a unique edge label in its prescribed class.
+
 The solvable-radical reduction, the construction of the spanning
 tree and two independent closed walks, the almost-simple generation
 inputs, and the simultaneous lift across the socle remain outside
@@ -35,7 +48,9 @@ this partial check.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
-checker. All three scopes passed.
+checker. All five scopes passed.
 [Prime-spectrum receipt](verification/prime-spectrum/receipt.json) ·
 [Cycle-label receipt](verification/cycle-labels/receipt.json) ·
-[Factor-action receipt](verification/factor-action/receipt.json).
+[Factor-action receipt](verification/factor-action/receipt.json) ·
+[Simple-factor receipt](verification/simple-factors/receipt.json) ·
+[Walk-label receipt](verification/walk-labels/receipt.json).

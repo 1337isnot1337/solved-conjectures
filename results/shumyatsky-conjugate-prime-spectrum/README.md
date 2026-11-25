@@ -5,4 +5,4 @@
 - [Complete proof](PROOF.md)
 - [Independent review, sources and attribution](AUDIT.md)
 
-The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) covers the prime-spectrum reduction, the cycle-label equations, and the action on the actual product. External refereeing is pending.
+The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) covers the prime-spectrum reduction, automorphisms of the actual simple-factor product, and the cycle and closed-walk label equations. External refereeing is pending.
