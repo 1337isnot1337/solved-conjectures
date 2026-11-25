@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Verify Rossi’s root-count reduction in Lean
+
+Lean proves that an exact alternating negative grid gives the prescribed simple roots, using the Eulerian recurrence's degree and derivative and Rossi’s reciprocal change of variable. The two sign-grid regimes and characteristic-polynomial identification remain to be formalized. [Lean scope](results/rossi-permutohedron-roots/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify all seven of tomdif’s real circular-index bounds in Lean
 
 Lean proves the exact maximum degree and real circular-index bounds of each submitted graph. Six indices equal `Δ+2/3`; the degree-15 graph is bracketed by `171/11` and `47/3`. The earlier degree families remain separate. [Lean scope](results/circular-index-upper-half-remaining-deltas/REVIEW.md).

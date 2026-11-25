@@ -1,5 +1,9 @@
 # Verification
 
+## Rossi’s permutohedron characteristic-polynomial conjecture
+
+The [scoped Lean receipt](../results/rossi-permutohedron-roots/verification/receipt.json) checks the recurrence, real-root count from an assumed negative alternating grid, and reciprocal root transport. It does not replace the separate written analytic proof or the exact finite checker.
+
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
 The [original bound receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) and [combined sharpness receipt](../results/xu-zhou-laplacian-diameter/verification/sharpness/receipt.json) record strict compilation, the all-owned axiom audit, and stock-kernel replay for the full literal Laplacian and diameter argument and the family attaining the bound for every `c ≥ 0`. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
