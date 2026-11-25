@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Extend the shifted-runner certificates through 57
+
+Tomdif’s [PR #660](https://github.com/1337isnot1337/solved-conjectures/pull/660) adds a rational counterexample for 57 runners and improves the two submitted bounds for 55 and 56. Independent exact rational checks verify all three maxima, including attaining times. The package now covers 18–57; 58–94 is outside the verified range. Aadrianvv’s earlier certificates and verifier are unchanged. This is not Lean verified. [Independent review](results/shifted-lonely-runner-counterexamples/REVIEW.md).
+
 ## 2026-11-25 — Verify Athanasiadis–Chapoton polar duality in Lean
 
 Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates have equivalent lattice-point sets, hence equal Ehrhart series and numerators. The real transfer is a positively homogeneous homeomorphism. [Lean scope](results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md) · [Receipt](results/athanasiadis-chapoton-polar-duality/verification/receipt.json).
