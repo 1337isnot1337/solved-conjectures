@@ -224,6 +224,12 @@ cancellation by ordinary partitions. This checks a finite recurrence step,
 not the remaining EGF/Lagrange bridge.
 [Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
 
+## 2026-11-25 — Bound the Lassalle finite-row checks in the aggregate build
+
+Lean checks rows 31 through 42 separately and combines them to retain
+the original theorem through row 53 under the pinned memory limit.
+[Scope and receipts](results/defant-engen-miller-lassalle/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify all Lassalle base rows and the exact conditional theorem
 
 Lean checks all 53 finite quotient rows and proves a zero in the rational

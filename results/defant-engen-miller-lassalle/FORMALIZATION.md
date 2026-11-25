@@ -48,7 +48,13 @@ checks this estimate from the stated decomposition.
 
 Lean verifies the exact inverse-Catalan recurrence and strict inequalities
 at every internal index of all 53 base rows. The zero-order row is vacuous.
-See [the finite-base receipt](verification/finite-through-53/receipt.json).
+The [current finite-base receipt](verification/finite-row-memory/receipt.json)
+checks the same theorem through row 53. Rows 31 through 42 now use individual
+kernel checks, combined by the generic pointwise-to-batch lemma. The three
+affected modules also compiled under the package's `-M4500` setting, which
+the earlier multirow reductions exceeded in the aggregate build. The
+[original finite-base receipt](verification/finite-through-53/receipt.json)
+records the earlier source layout.
 
 Lean also proves continuity and opposite endpoint signs for the real
 Bessel series, hence an actual zero in the stated rational interval.
