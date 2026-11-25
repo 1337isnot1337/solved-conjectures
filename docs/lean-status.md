@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Nuttall's conjecture
+
+Partial. Lean checks the literal theta series, its absolute convergence, continuity and decay, plus the existence and positivity of all polynomial-weighted single-integral cumulants on the half-line. Higher minors are written only. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
+
 ## Németh–Seberry–Shu conjecture
 
 Partial. Lean verifies exact-cardinality biased Fourier supports, binary circulant spectra, prime-order permanent congruence, and the conditional dense-row counting reduction. The uniform permanent asymptotic, within-row separation, and quadratic refinement are written only. [Lean scope](../results/nemeth-seberry-shu/FORMALIZATION.md).
@@ -160,7 +164,7 @@ proofs are documented separately in the catalogue and result package.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
-| Nuttall's conjecture | Not formalized | Complete proposed proof of Conjecture 1 in §4.5: for each finite order r, every sufficiently high repeated-tail cumulant of the Riemann theta kernel is strictly reverse regular through order r on the entire nonnegative node domain. The separate RH-equivalent Toeplitz positivity problem remains unresolved. Internally reviewed; no Lean verification. |
+| Nuttall's conjecture | Partial | Literal theta series and strict positivity of every order-one cumulant kernel minor in the single-integral formulation. Higher minors are written only. |
 | Coffey–Smith conjecture | Not formalized | Complete proposed unconditional disproof of Smith’s named conjunction: if RH holds the dyadic coefficient square mass is O(N^(-1/2) log³ N), so both proposed positive-fraction sets have density zero for 0<ε<1/4; without RH the polynomial upper bound fails. The weaker Coffey upper-bound assertion alone is not refuted. Internally reviewed; no Lean verification. |
 | Chaudhary–Khmiri–Mazhouda conjecture | Not formalized | Complete proposed computer-assisted disproof of the universal automorphic Li-coefficient monotonicity claim. The admissible GL1 imaginary norm twist L(s+8i,χ₋₃) has Re(λ(2)−λ(1))<−3/2, certified by rational interval bounds. No GRH assumption. Internally reviewed; no Lean verification. |
 | Merlini–Sala–Sala conjecture | Not formalized | Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup $`\lvert\lambda_{\mathrm{tiny}}(n)\rvert/n^{1/4}=\infty`$. The authors’ weaker linear stability conjecture is not resolved. Internally reviewed; no Lean verification. |
