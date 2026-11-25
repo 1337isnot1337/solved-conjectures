@@ -2,7 +2,7 @@
 
 ## Higashitani–Kummer–Michałek conjecture
 
-Partial. The exact negative Laguerre certificate, rotation and interpolant are checked. Lean also checks the local two-coordinate counts and necessary inequalities for literal lattice points in the dilated symmetric edge polytope. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
+Partial. The exact negative Laguerre certificate, rotation and interpolant are checked. Lean also checks the local two-coordinate counts and an exact membership characterization for literal lattice points in every integer dilation of the symmetric edge polytope. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
 
 ## Sokal’s Apéry moment threshold
 

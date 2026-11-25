@@ -2,7 +2,7 @@
 
 ## Higashitani–Kummer–Michałek conjecture
 
-The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, all-owned verification and stock replay for the five-module partial closure. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
+The [local receipt](../results/hkm-ehrhart/verification/receipt.json) covers strict compilation, all-owned verification and stock replay for the six-module partial closure, including the exact lattice-membership equivalence. [Lean scope](../results/hkm-ehrhart/FORMALIZATION.md).
 
 ## Ferreira–Simon’s diagonal Mittag–Leffler conjecture
 

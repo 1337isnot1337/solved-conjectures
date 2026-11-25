@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Exact HKM lattice membership in Lean
+
+Lean proves both directions of the signed-mass characterization for every integer dilation and every complete multipartite symmetric edge polytope with at least two nonempty parts. The lattice-point count and Ehrhart identification are separate. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).
+
 ## 2026-11-25 — Higashitani–Kummer–Michałek Lean checkpoint
 
 The published Lean scope reuses the root and local count checkpoints and verifies necessary signed-mass conditions and finiteness for the actual dilated polytope. The exact lattice-point count is not assumed to be checked. [Lean scope](results/hkm-ehrhart/FORMALIZATION.md).

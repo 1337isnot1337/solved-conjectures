@@ -5,13 +5,13 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 139,
-    "modules": 5,
-    "private_declarations": 56,
-    "raw_declarations": 139,
-    "required": 14,
+    "declarations": 185,
+    "modules": 6,
+    "private_declarations": 79,
+    "raw_declarations": 185,
+    "required": 11,
     "tag": "passed",
-    "theorems": 103
+    "theorems": 145
   },
   "commands": [
     {
@@ -78,6 +78,20 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
+        "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartSufficiency.olean",
+        "Conjectures/HKMEhrhartSufficiency.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HKMEhrhartSufficiency.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
         "lean/.lake/build/lib/lean/Conjectures/HKMEhrhartPartial.olean",
         "Conjectures/HKMEhrhartPartial.lean"
       ],
@@ -109,14 +123,15 @@
       "log": "replay.log"
     }
   ],
-  "finished_at": "2026-11-25T11:54:44.048134+00:00",
+  "finished_at": "2026-11-25T12:02:53.752032+00:00",
   "full_repository_gate": "not run by this target-scoped helper",
   "input_sha256": {
     "lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean": "b50114d6a41fbb09f4f9ab99f3ba6b125b799156271366d5fbf16502432bc6b5",
     "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
     "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
     "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
-    "lean/Conjectures/HKMEhrhartPartial.lean": "f462231e4919f10c841c2a3cc363bcfee8a6bb05202ca639e56b3c7ee9227026",
+    "lean/Conjectures/HKMEhrhartPartial.lean": "942d62b7b0382a3cb06827cf41dc925b7da5f316dd7a291a4b44195ad5ae0789",
+    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
@@ -132,23 +147,21 @@
     "Conjectures.HKMEhrhart",
     "Conjectures.HKMEhrhartGeometry",
     "Conjectures.HKMEhrhartLocalCount",
-    "Conjectures.HKMEhrhartPartial"
+    "Conjectures.HKMEhrhartPartial",
+    "Conjectures.HKMEhrhartSufficiency"
   ],
   "required_endpoints": [
-    "HKMEhrhart.scaled_defect",
-    "HKMEhrhart.candidate_nonreal",
-    "HKMEhrhart.rotation_identity",
-    "HKMEhrhart.interpolant_has_off_line_root",
-    "HKMEhrhart.interpolant_values",
-    "HKMEhrhart.interpolant_natDegree_le",
     "HKMEhrhart.off_line_of_counts",
-    "HKMEhrhart.mem_pairs_iff",
     "HKMEhrhart.card_pairs",
-    "HKMEhrhart.multipartiteEdgePolytope_edge_mem",
-    "HKMEhrhart.multipartiteEdgePolytope_zero_mem",
-    "HKMEhrhart.multipartiteEdgePolytope_sum_mem_dilate",
     "HKMEhrhart.multipartiteLatticePoints_signed_mass_necessary",
-    "HKMEhrhart.multipartiteLatticePoints_finite"
+    "HKMEhrhart.multipartiteEdgePolytope_add_dilates",
+    "HKMEhrhart.multipartiteEdgePolytope_mem_dilate_single_part",
+    "HKMEhrhart.hkm_support_two_of_saturated",
+    "HKMEhrhart.hkm_cross_cover_saturated",
+    "HKMEhrhart.hkmRemovePair_positiveSum",
+    "HKMEhrhart.hkmRemovePair_partAbsSum",
+    "HKMEhrhart.hkm_lattice_mass_sufficient",
+    "HKMEhrhart.hkm_lattice_mass_iff"
   ],
   "root": "Conjectures.HKMEhrhartPartial",
   "schema": "target-complete-closure-verification-v1",
@@ -157,8 +170,9 @@
     "lean/Conjectures/HKMEhrhart.lean": "c4a974de0d9efec51dc2bf2b1b426f5ad7e988d14fa0be1114cee37a48931c9f",
     "lean/Conjectures/HKMEhrhartGeometry.lean": "6ceb633ca6972f8b7ac3ba69eb1d1570e70a05a2c2929b46bc28bc8d745ffb79",
     "lean/Conjectures/HKMEhrhartLocalCount.lean": "f5318823a4908fa83d2beea299d9abc788a69fc354d221fbf21f03c22955fbc4",
-    "lean/Conjectures/HKMEhrhartPartial.lean": "f462231e4919f10c841c2a3cc363bcfee8a6bb05202ca639e56b3c7ee9227026"
+    "lean/Conjectures/HKMEhrhartPartial.lean": "942d62b7b0382a3cb06827cf41dc925b7da5f316dd7a291a4b44195ad5ae0789",
+    "lean/Conjectures/HKMEhrhartSufficiency.lean": "c012e8d7924b62e777678e04bf001a5070cc353688aacbc98536aab2e6625251"
   },
-  "started_at": "2026-11-25T11:54:04.952159+00:00",
+  "started_at": "2026-11-25T12:02:03.733949+00:00",
   "status": "PASS"
 }

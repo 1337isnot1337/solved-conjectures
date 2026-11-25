@@ -1,7 +1,7 @@
 # Lean scope for the Higashitani–Kummer–Michałek conjecture
 
 **Status: partial.** This formalizes the root certificate, interpolation, local
-counts, and necessary geometric conditions for the [written counterexample](PROOF.md).
+counts, and the exact lattice-membership bridge for the [written counterexample](PROOF.md).
 The condition that the literal Ehrhart polynomial has the certified counts is
 not yet discharged.
 
@@ -18,12 +18,17 @@ not yet discharged.
   the oriented edge vectors across parts. Every integral point in its
   $m$th dilate has coordinate sum zero, total positive mass at most $m$,
   and absolute mass at most $m$ in each part. The literal count is finite.
-  The reverse construction from edge sums to dilate membership is also
-  checked once such a sum has been given.
+- [Reverse geometry module](../../lean/Conjectures/HKMEhrhartSufficiency.lean):
+  Lean proves the converse for every nonnegative integer dilation and every
+  multipartite graph with at least two nonempty parts. When an opposite-sign
+  pair crosses parts, one can choose such a pair that touches every saturated
+  part and subtract that oriented edge. If the support lies in one part, its
+  signed coordinates can instead be routed through any outside vertex.
+  Thus the mass inequalities and zero coordinate sum characterize literal
+  lattice membership.
 
-The missing steps are a general edge decomposition for vectors satisfying these
-conditions, the six-part convolution for the literal count, and the literal
-Ehrhart polynomial’s degree/identification. No full Lean refutation or extra
+The missing steps are the six-part convolution for the literal count and the
+literal Ehrhart polynomial’s degree/identification. No full Lean refutation or extra
 conjecture result is claimed. The first two modules reuse Cinna Davis’s
 [original root checkpoint](https://github.com/1337isnot1337/solved-conjectures/commit/612c316a018bac51e8557d443cd6b75341c27efe)
 and [local count checkpoint](https://github.com/1337isnot1337/solved-conjectures/commit/7880c005bd42743a388d2505c483c38beee66c5e).
