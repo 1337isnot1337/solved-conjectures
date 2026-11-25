@@ -1,5 +1,9 @@
 # Verification
 
+## McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+Run `python3 results/mcnamara-steingrimsson-rank-unimodality/verify.py` from the repository root. The standard-library checker counts the relevant layered patterns using binomial sums and reproduces the strict dip at relative ranks 44–46. The [proof](../results/mcnamara-steingrimsson-rank-unimodality/PROOF.md) establishes that these coefficients count distinct patterns in the interval.
+
 ## Xu–Zhou’s diameter–Laplacian conjecture
 
 The [original bound receipt](../results/xu-zhou-laplacian-diameter/verification/receipt.json) and [combined sharpness receipt](../results/xu-zhou-laplacian-diameter/verification/sharpness/receipt.json) record strict compilation, the all-owned axiom audit, and stock-kernel replay for the full literal Laplacian and diameter argument and the family attaining the bound for every `c ≥ 0`. [Statement scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).

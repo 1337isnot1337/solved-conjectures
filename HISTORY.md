@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Disprove McNamara–Steingrímsson’s interval rank-unimodality conjecture
+
+A repeated direct-sum construction gives a classical permutation-pattern interval with a strict rank dip. Distinct subpatterns are counted by their sum decompositions, and a separate exact integer checker reproduces all three coefficients. [Proof and audit](results/mcnamara-steingrimsson-rank-unimodality/)
+
 ## 2026-11-25 — Publish tomdif’s graph-colouring and shifted-runner certificates
 
 [PR #647](https://github.com/1337isnot1337/solved-conjectures/pull/647) supplies the seven missing maximum degrees for the upper-half circular chromatic index, completing the combined coverage for all degrees at least eight. [PR #646](https://github.com/1337isnot1337/solved-conjectures/pull/646) extends the shifted-runner counterexamples through 56, leaving 57–94 outside the checked range. Both contributions are by [tomdif](https://github.com/tomdif); the exact certificates were independently replayed.
