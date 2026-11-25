@@ -362,6 +362,13 @@ modules=(
   Conjectures.McNamaraSteingrimssonPointedDownset
   Conjectures.McNamaraSteingrimssonPointedDownsetCount
   Conjectures.McNamaraSteingrimssonRankStructure
+  Conjectures.SobolewskiUlasExceptionCount
+  Conjectures.SobolewskiUlasExceptionCountingScope
+  Conjectures.SobolewskiUlasExceptionDigits
+  Conjectures.SobolewskiUlasExceptionEnumeration
+  Conjectures.SobolewskiUlasExceptionNonperiodic
+  Conjectures.SobolewskiUlasExceptionRepeated
+  Conjectures.SobolewskiUlasExceptionUnbounded
   Conjectures.McNamaraSteingrimssonShortFactor
   Conjectures.McNamaraSteingrimssonSumAssoc
   Conjectures.McNamaraSteingrimssonShortBlockPlacement

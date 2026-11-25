@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify the normalized Sobolewski–Ulas exception counts in Lean
+
+Lean checks the literal normalized set, its repeated-digit counting
+identities and the unbounded remainder in the actual enumeration. It
+also proves nonperiodicity without using an external regularity theorem.
+[Scope and receipt](results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+
 ## 2026-11-25 — Identify the exceptional block and pointed downset counts
 
 Lean distinguishes first and later omissions from the permutation itself

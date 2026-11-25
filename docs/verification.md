@@ -1,5 +1,9 @@
 # Verification
 
+## Sobolewski–Ulas’s binary-partition exception regularity conjecture
+
+Partial. Lean verifies the actual normalized-set counting recurrence, the exact repeated-digit identities, the unbounded remainder for its increasing enumeration, and nonperiodicity. The regularity arguments and the identification with the partition function remain outside the Lean scope. [Lean scope and receipt](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md).
+
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture
 
 Partial. Lean proves the classical pattern-containment reductions for actual layered and pointed permutations, the weighted layer-subword recurrence, and the fact that a pattern starting with its maximum cannot cross a direct-sum boundary. It also proves every binomial rank count in the smaller interval between the pointed endpoints. It proves the exact positive-rank convolution for the two-summand interval. It proves a literal factorization for the repeated-sum interval. It distinguishes the exceptional slot canonically and checks the actual pointed downset coefficients at lengths at least three. The full enumeration of the larger interval and its exact critical ranks remain outside this scope. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md).

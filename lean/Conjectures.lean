@@ -1446,3 +1446,4 @@ import Conjectures.McNamaraSteingrimssonFamilyCounts
 import Conjectures.McNamaraSteingrimssonRepeatedRankWidths
 import Conjectures.McNamaraSteingrimssonRankStructure
 import Conjectures.RossiPermutohedronRoots
+import Conjectures.SobolewskiUlasExceptionCountingScope
