@@ -54,6 +54,17 @@ modules=(
   Conjectures.WachsCompleteGraphActualEGF
   Conjectures.WachsCompleteGraphActualLaguerre
   Conjectures.WachsCompleteGraphStrictLogConcavity
+  Conjectures.WachsActualGammaSumLaw
+  Conjectures.WachsCompleteGraphActualExpectation
+  Conjectures.WachsCompleteGraphRealZeros
+  Conjectures.WachsExpectationDerivative
+  Conjectures.WachsExpectationRoots
+  Conjectures.WachsExpectationSigns
+  Conjectures.WachsGammaDensityMoments
+  Conjectures.WachsGammaMeasureMoments
+  Conjectures.WachsGammaShiftBound
+  Conjectures.WachsProbabilityConvolution
+  Conjectures.WachsProbabilitySeriesMoments
   Conjectures.WachsLaguerreInterlaceAssemble
   Conjectures.WachsLaguerreInterlaceSigns
   Conjectures.WachsLaguerreMonic

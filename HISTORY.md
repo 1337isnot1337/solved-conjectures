@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify the actual Gamma expectation and real-zero count
+
+Lean identifies the moments with an actual shifted sum of independent
+Gamma laws and checks the complete-graph real-zero theorem, including
+the simple-root bracket in odd degree.
+[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify positive Laguerre roots and strict coefficient log-concavity
 
 Lean verifies all Laguerre roots as distinct and positive, removes the

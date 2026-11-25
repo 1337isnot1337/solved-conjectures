@@ -115,9 +115,24 @@ two equal colors. See the
 [positive-root receipt](verification/positive-laguerre-roots/receipt.json)
 and the [combined moment receipt](verification/positive-moments-and-log-concavity/receipt.json).
 
-The identification with actual probability measures, the exact
-real-zero count, and the one-color boundary case remain outside the
-Lean scope. The entry is still partially formalized.
+## Actual Gamma expectation and real roots
+
+Lean identifies the formal moments with actual Mathlib Gamma measures.
+The law is the shifted sum obtained by taking product measures and
+pushing them forward under addition. Its integer moments are finite.
+The literal characteristic polynomial is the expectation of the
+corresponding affine power, for at least two equal colors.
+
+For at least three equal colors the law has no atoms and is strictly
+above the number of vertices. Lean proves that the literal polynomial
+is everywhere positive in even degree, and in odd degree has exactly
+one real root, simple and strictly between zero and the reciprocal of
+the number of vertices. The derivative proof uses the finite polynomial
+expansion, not differentiation under an integral. See the
+[Gamma and real-zero receipt](verification/gamma-expectation-and-real-zeros/receipt.json).
+
+The one-color boundary case remains outside the Lean scope. The
+entry is still partially formalized.
 
 The [receipt](verification/formal-series/receipt.json) records strict
 compilation, an audit of every owned declaration, and independent
