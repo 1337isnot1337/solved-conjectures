@@ -61,7 +61,7 @@ The complete stock-kernel checked closure proves the exact finite and analytic s
 
 ## Shumyatsky’s conjugate prime-spectrum conjecture
 
-The [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md) record strict compilation, all-owned axiom audits, and stock-kernel replay for the prime-spectrum reduction, automorphisms of the actual direct power of a simple group, and the cycle and closed-walk label equations. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) retains the written review and source credits.
+The [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md) record strict compilation, all-owned axiom audits, and stock-kernel replay for the prime-spectrum reduction, automorphisms of the actual simple-factor product, cyclic gluing, and the prime-spectrum transfer from the factor stabilizer. The [audit](../results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) retains the written review and source credits.
 
 
 ## McNamara–Steingrímsson’s interval rank-unimodality conjecture

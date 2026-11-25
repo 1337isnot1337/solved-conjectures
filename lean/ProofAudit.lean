@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Shumyatsky.cycleConjugator_step,
+    `Shumyatsky.map_cycleConjugator_eq,
+    `Shumyatsky.exists_factorAction_conjugator_of_cycle_partition,
+    `Shumyatsky.map_completeCycle_eq_reference,
+    `Shumyatsky.factorRestriction_eq,
+    `Shumyatsky.primeSpectrum_le_of_full_inner_restriction,
+    `Shumyatsky.primeSpectrum_le_of_two_closed_walks,
     `Shumyatsky.exists_coordinateFactor_le_normal,
     `Shumyatsky.eq_coordinateFactor_of_normal_le,
     `Shumyatsky.exists_factor_permutation,
