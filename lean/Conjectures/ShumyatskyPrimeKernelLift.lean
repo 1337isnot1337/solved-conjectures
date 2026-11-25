@@ -1,6 +1,7 @@
 module
 
 public import Conjectures.ShumyatskyPrimeSpectrum
+public import Conjectures.ShumyatskyAbelianComplements
 public import Mathlib.GroupTheory.OrderOfElement
 public import Mathlib.Tactic.Group
 
@@ -136,5 +137,38 @@ theorem exists_lift_across_prime_kernel
     change pair x g' = (pair x g).map (MonoidHom.id G) at hn
     have hEq : pair x g' = pair x g := by simpa only [Subgroup.map_id] using hn
     exact hOutside (hEq ▸ hyPair x g')
+
+
+/-- In the abelian prime-kernel case, the actual conjugacy of
+    complements follows from the kernel cocycle calculation. -/
+theorem exists_lift_across_abelian_prime_kernel [Finite G]
+    (φ : G →* Q) [Nontrivial φ.ker] [IsMulCommutative φ.ker]
+    (hSurj : Function.Surjective φ) (hMinimal : PrimeSpectrumMinimal G) {p : ℕ} (hp : p.Prime)
+    (hPrimes : primeSpectrum φ.ker ⊆ {p})
+    (x g : G) (hQuotient : Subgroup.closure {φ x, φ g * φ x * (φ g)⁻¹} = ⊤) :
+    ∃ x' g' : G, φ x' = φ x ∧ φ g' = φ g ∧
+      Subgroup.closure {x', g' * x' * (g')⁻¹} = ⊤ := by
+  apply exists_lift_across_prime_kernel φ hSurj hMinimal hp hPrimes _ x g hQuotient
+  intro H K hH hK hFreeH hFreeK
+  have hBijection (L : Subgroup G) (hL : L.map φ = ⊤) (hFree : ¬p ∣ Nat.card L) :
+      Function.Bijective (φ.comp L.subtype) := by
+    constructor
+    · intro a b he
+      apply Subtype.ext
+      apply mul_inv_eq_one.mp
+      apply eq_one_of_mem_prime_free_supplement φ hPrimes L hFree
+        (L.mul_mem a.property (L.inv_mem b.property))
+      change φ (a : G) = φ (b : G) at he
+      rw [map_mul, map_inv, he, mul_inv_cancel]
+    · intro q
+      obtain ⟨u, hu, hEq⟩ := Subgroup.mem_map.mp (hL.symm ▸ Subgroup.mem_top q)
+      exact ⟨⟨u, hu⟩, hEq⟩
+  have hCoprime : (Nat.card H).Coprime (Nat.card φ.ker) := by
+    apply Nat.coprime_of_dvd
+    intro q hq hqH hqKer
+    have he : q = p := Set.mem_singleton_iff.mp (hPrimes ⟨hq, hqKer⟩)
+    exact hFreeH (he ▸ hqH)
+  exact exists_kernel_conjugating_complements φ H K
+    (hBijection H hH hFreeH) (hBijection K hK hFreeK) hCoprime
 
 end Shumyatsky

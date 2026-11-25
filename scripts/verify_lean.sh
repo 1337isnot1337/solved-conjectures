@@ -156,7 +156,11 @@ modules=(
   Conjectures.ShumyatskyProductCompletion
   Conjectures.ShumyatskyMultifactorLift
   Conjectures.ShumyatskySocleAssembly
+  Conjectures.ShumyatskyAbelianComplements
   Conjectures.ShumyatskyPrimeKernelLift
+  Conjectures.ShumyatskyAbelianMinimalNormal
+  Conjectures.ShumyatskyAbelianReduction
+  Conjectures.ShumyatskyCyclicNormalization
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw

@@ -33,6 +33,8 @@ import Conjectures.ShumyatskyProductCompletion
 import Conjectures.ShumyatskyMultifactorLift
 import Conjectures.ShumyatskySocleAssembly
 import Conjectures.ShumyatskyPrimeKernelLift
+import Conjectures.ShumyatskyAbelianReduction
+import Conjectures.ShumyatskyCyclicNormalization
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
