@@ -9,9 +9,10 @@ bridge, positive roots, and the probabilistic consequences remain outside the sc
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
 
-Partial. Lean checks the exact 205-box coverage and the approximation
-estimate from the Bessel-product identities. The original permutation
-count and the finite base remain outside these checks.
+Partial. Lean checks the exact 205-box coverage, the 53 base rows,
+the Bessel root bracket, and the approximation estimate. The exact
+conjecture remains conditional on the original permutation-count bridge
+and classical Bessel product data.
 [Lean scope and receipt](../results/defant-engen-miller-lassalle/FORMALIZATION.md).
 
 ## Sobolewski–Ulas’s binary-partition exception regularity conjecture
@@ -239,7 +240,7 @@ proofs are documented separately in the catalogue and result package.
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
 | González D’León–Wachs’s complete-graph specialization question | Partial | Lean constructs the literal finite weighted poset and Möbius polynomial and verifies the Laguerre calculation. The EGF/Lagrange bridge and positive-root consequences remain. [Lean scope](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md). |
 | Almirón–Moyano-Fernández’s Wilf-module questions | Partial: Question 4.8 and Question 4.13(1)–(2), (6) | Lean verifies the gap-question counterexample, the exact all-module threshold for normalized modules, and the characterization at each module’s own generator count. The generator-refined threshold and gap-poset classification remain written only. [Scope and source](../results/almiron-moyano-wilf-module-questions/LEAN.md). |
-| Defant–Engen–Miller’s Lassalle refinement conjecture | Partial | Lean checks the exact 205 boxes and geometric error estimate; the eventual quotient result reduces to the Bessel product identities. The permutation-count bridge and base are separate. [Lean scope](../results/defant-engen-miller-lassalle/FORMALIZATION.md). |
+| Defant–Engen–Miller’s Lassalle refinement conjecture | Partial | Lean checks all 53 base rows, the eventual interval and error bounds, and the Bessel root bracket. The exact permutation conjecture follows conditionally on the count bridge and classical Bessel product data. [Lean scope](../results/defant-engen-miller-lassalle/FORMALIZATION.md). |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
 | Sagan–Wilson’s plactic coefficient-mode conjecture | Not formalized | Disproves the proposed middle mode and determines the asymptotic position of every mode in both natural coefficient rows. |
 | Juhnke’s arbitrary-step lattice-path log-concavity conjecture | Complete | Log-concavity and unimodality of the literal original path counts for every dimension `d ≥ 2` and every step count. All 18 modules passed strict compilation, the all-owned audit (577 declarations, 502 theorems), and stock-kernel replay. [Scope and receipt](../results/juhnke-lattice-paths/LEAN-AUDIT.md). |

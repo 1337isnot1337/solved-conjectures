@@ -2,6 +2,7 @@ import Conjectures.WachsCompleteGraphHomogeneous
 import Conjectures.WachsCompleteGraphMoebiusLaw
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
+import Conjectures.LassalleLiteralConditional
 import Conjectures.SternHalfPlaneBasic
 import Conjectures.SternHalfPlaneShift
 import Conjectures.SternHalfPlaneParabola
