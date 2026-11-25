@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
+
+The exact Stern polynomial is connected to the run-length continuant, with all fraction denominators checked. Positive real inputs are covered without an enclosure or parabolic hypothesis. The nonreal regional estimates are not part of the checked scope. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
+
 ## Nuttall's conjecture
 
 The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its exponential bound also survives every literal tail integration, proving the integrability, continuity, and positivity of every iterated tail. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).

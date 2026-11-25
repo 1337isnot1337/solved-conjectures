@@ -31,6 +31,16 @@ run_cmd do
     `Conjectures.FMPCylindric.sourceCppMore_eq_evalCppMore,
     `Conjectures.FMPCylindric.pp_negative_probeMore,
     `Conjectures.FMPCylindric.no_nonnegative_full_column_count_polynomial,
+    `Conjectures.SternHalfPlane.sternPair_second,
+    `Conjectures.SternHalfPlane.stern_even,
+    `Conjectures.SternHalfPlane.stern_odd,
+    `Conjectures.SternHalfPlane.eval_sternPolynomial,
+    `Conjectures.SternHalfPlane.stern_shift,
+    `Conjectures.SternHalfPlane.exists_runIndex,
+    `Conjectures.SternHalfPlane.continuedValue_mem,
+    `Conjectures.SternHalfPlane.stern_ne_zero_of_parabolic,
+    `Conjectures.SternHalfPlane.sternPolynomial_eval_ne_zero_of_pos_real,
+    `Conjectures.SternHalfPlane.sternPolynomial_eval_ne_zero_of_real_re_ge_one,
     `NuttallCumulants.thetaTerm_pos,
     `NuttallCumulants.thetaTerm_norm_summable,
     `NuttallCumulants.thetaKernel_le_decay,
@@ -11144,7 +11154,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["NuttallCumulants.", "NemethSeberryShu.", "Conjectures.BursteinDescentTop.", "BenfieldLippardParity.", "CardonZeroSector.", "CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["Conjectures.SternHalfPlane.", "NuttallCumulants.", "NemethSeberryShu.", "Conjectures.BursteinDescentTop.", "BenfieldLippardParity.", "CardonZeroSector.", "CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

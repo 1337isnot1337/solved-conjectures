@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-25 — Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
+
+Published the checked Stern-polynomial recurrence and conditional continued-fraction reduction; added unconditional nonvanishing on the positive real axis. The full complex half-plane proof remains partially formalized. [Lean scope](results/stern-half-plane/FORMALIZATION.md).
+
 ## 2026-11-25 — Nuttall's conjecture
 
 Checked the theta kernel and order-one cumulant-minor positivity for every cumulant order, both for literal iterated tails and in the single-integral formulation. The higher-order conjecture remains only partially formalized. [Lean scope](results/nuttall-cumulants/FORMALIZATION.md).

@@ -1,3 +1,8 @@
+import Conjectures.SternHalfPlaneBasic
+import Conjectures.SternHalfPlaneShift
+import Conjectures.SternHalfPlaneParabola
+import Conjectures.SternHalfPlaneContinuant
+import Conjectures.SternHalfPlaneRealAxis
 import Conjectures.NuttallThetaKernel
 import Conjectures.NuttallRepeatedTails
 import Conjectures.NemethSeberryShuCongruence
