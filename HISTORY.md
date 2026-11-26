@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify the weighted Tom–Vailaya path tests
+
+Lean proves independence for the path test rows used to compare
+transfer matrices. It checks the polynomial evaluation argument at
+$q=1$ and the determinant lift to the rational function field.
+[Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify endpoint gluing in Tom–Vailaya’s proof
 
 Lean proves the ordered product formula for the color matrices of

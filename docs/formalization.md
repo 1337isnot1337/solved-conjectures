@@ -100,8 +100,9 @@ Partial. For arbitrary finite colors and directed arcs, Lean proves that
 the trace of the color transfer matrix equals the chromatic
 quasisymmetric sum of the actual endpoint closure. It also checks loop
 vanishing, the path-edge transfer, and multiplication for actual endpoint
-gluing. The forest-triple matrix
-identification remains written.
+gluing. The first path test rows are independent over the rational
+function field in the ascent parameter for distinct color variables.
+The forest-triple matrix identification remains written.
 [Lean scope and receipt](../results/tom-vailaya-weighted-trace/FORMALIZATION.md).
 
 ## Kauers–Koutschan recurrence conjecture
