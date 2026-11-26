@@ -18,6 +18,14 @@ The source describes the result as follows.
 - [Boundary: Pólya-frequency length weights alone are insufficient](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/alexandersson-long-cycle-research.md#L75).
 - [Boundary: cross-threshold interlacing is false](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/alexandersson-long-cycle-research.md#L92).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The original conjecture remains unresolved in this work.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/alexandersson-long-cycle-research.md#L73).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T01:16:35-06:00. [Commit 2c89ea760](https://github.com/1337isnot1337/solved-conjectures/commit/2c89ea7604df2b03ae4544dcf57327378888fb50).

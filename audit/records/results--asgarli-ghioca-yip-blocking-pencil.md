@@ -18,6 +18,22 @@ The logarithmic bound fixes a monomial degree d≥2. The compact catalogue and h
 - [A curve recording the degrees of the roots](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/PROOF.md#L31).
 - [Counting good parameters](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/PROOF.md#L45).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The exact minimum and its optimal leading constant remain open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/README.md#L5).
+
+> The original Erdős bounded-intersection problem allows arbitrary point sets and remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md#L5).
+
+> The written proof also gives a logarithmic lower bound; its effective point count for growing families remains open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T07:16:50-06:00. [Commit 89bd49697](https://github.com/1337isnot1337/solved-conjectures/commit/89bd49697bfd695c79f430cdbe25653ce37a122e).

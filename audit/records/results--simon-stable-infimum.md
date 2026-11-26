@@ -20,6 +20,14 @@ The Kilbas–Saigo upper and lower hyperbolic bounds concern a different functio
 - [3. Independent mean-one increments and convex order](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/PROOF.md#L204).
 - [Scope and dependence](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/PROOF.md#L240).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof or disproof of the full parameterwise convex-order assertion was found in the searches and accessible sources below.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/SOURCES.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:51:59-06:00. [Commit 0e4d39626](https://github.com/1337isnot1337/solved-conjectures/commit/0e4d396261505b89eb5dddbd264be7a212d3e78c).

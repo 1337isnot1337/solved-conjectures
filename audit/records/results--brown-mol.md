@@ -21,6 +21,22 @@ Exact later public overlap. Omega’s frozen translated-annulus counterexample i
 - [Disproof](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L137).
 - [Supplementary exact finite witness](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L145).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The earlier result therefore does not apply to the counterfamily.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/SOURCES.md#L36).
+
+> The present proposed trees have diameter four for every branch count at least two and therefore lie outside that earlier result.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ALGEBRA_PRIOR_AUDIT.md#L7).
+
+> That paper proves the distinct disk bound centered at zero; it does not prove this translated annulus assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L15).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T02:30:25-06:00. [Commit 7982d9f30](https://github.com/1337isnot1337/solved-conjectures/commit/7982d9f30025124dda76e183707ed521d1f372b0).

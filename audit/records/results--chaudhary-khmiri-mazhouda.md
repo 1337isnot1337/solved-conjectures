@@ -22,6 +22,14 @@ The source describes the result as follows.
 - [Related work checked](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chaudhary-khmiri-mazhouda/PROOF.md#L321).
 - [Review status](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chaudhary-khmiri-mazhouda/PROOF.md#L335).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This develops modified coefficients and studies certain products of shifted zeta functions; the retrieved statement does not resolve the 2026 universal monotonicity conjecture.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chaudhary-khmiri-mazhouda/PROOF.md#L326).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:42:06Z. [Commit 0f49db3f7](https://github.com/1337isnot1337/solved-conjectures/commit/0f49db3f7d2b82ad3d72233cd14e13792956dc10).

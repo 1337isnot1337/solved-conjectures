@@ -19,6 +19,14 @@ The source describes the result as follows.
 - [6. Color-weight refinement](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/PROOF.md#L240).
 - [Audit and verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/PROOF.md#L259).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof, disproof, or announcement of a resolution was located in the searches below.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/NOVELTY.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T12:39:58-06:00. [Commit 94314221d](https://github.com/1337isnot1337/solved-conjectures/commit/94314221dd5fc786aa9c7ca8edfa9cbad3d6c4b7).

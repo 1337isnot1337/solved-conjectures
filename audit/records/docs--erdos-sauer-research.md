@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Fractional covering with a saving](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-sauer-research.md#L25).
 - [Exact bound when each edge belongs to at most two cliques](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-sauer-research.md#L41).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The general case close to the Turán threshold with unrestricted clique overlaps remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-sauer-research.md#L49).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T05:58:12-06:00. [Commit 0b069c98c](https://github.com/1337isnot1337/solved-conjectures/commit/0b069c98c8e133ff53a803ccd03b8453a20dd980).

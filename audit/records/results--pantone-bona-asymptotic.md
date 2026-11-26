@@ -16,6 +16,18 @@ The source describes the result as follows.
 - [3. Geometric stopping and binomial concentration](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/PROOF.md#L75).
 - [Attribution and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/PROOF.md#L101).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Bóna’s follow-up, §3 Conjecture 3.1 (preprint §2 Conjecture 2.1), repeats the question and proves bounds at that scale plus non-algebraicity, but does not prove equivalence with a leading constant.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/AUDIT.md#L5).
+
+> Bóna's follow-up supplies the front–tail decomposition, bounds between constant multiples at the conjectured scale, and nonalgebraicity, but does not prove an asymptotic equivalence.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/PROOF.md#L103).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:10:11Z. [Commit 24e99518b](https://github.com/1337isnot1337/solved-conjectures/commit/24e99518b854bcd8f145b1d3f2594bb517fd11d1).

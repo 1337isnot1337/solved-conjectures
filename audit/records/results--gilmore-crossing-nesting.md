@@ -17,6 +17,18 @@ The source describes the result as follows.
 - [Perfect matchings and the proof](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/PROOF.md#L94).
 - [Checks and limits](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/PROOF.md#L129).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The neighboring shifted reverse Bessel Hankel-total-positivity conjecture remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/README.md#L44).
+
+> No prior proof of the exact product-defined matrix/matching identification was located.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/NOVELTY.md#L12).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T12:27:54-06:00. [Commit 6cbbbb999](https://github.com/1337isnot1337/solved-conjectures/commit/6cbbbb99975bd340efb43a231f1a1c54c96c7238).

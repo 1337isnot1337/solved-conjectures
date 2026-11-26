@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [The large-norm seven-speed statement](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-six-speeds/PROOF.md#L49).
 - [Reproduction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-six-speeds/PROOF.md#L55).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Exhaustiveness and the full classification remain open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-six-speeds/README.md#L25).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
@@ -46,6 +54,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Tight six-speed sets and seven-coordinate critical subtori” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Null boxes for the Fan-Sun amended conjecture on near-tight speed tuples: a partial recomputation with an independent complete-witness screen](https://doi.org/10.5281/zenodo.23859743) (2026-11-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

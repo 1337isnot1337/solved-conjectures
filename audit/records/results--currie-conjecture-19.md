@@ -60,6 +60,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [A proof of Rauzy's conjecture on abelian complexity](https://doi.org/10.48550/arxiv.2605.01577) (2026-05-02).
+- [On Minimal Critical Exponent of Balanced Sequences](https://doi.org/10.1016/j.tcs.2022.04.021) (2022-01-01).
+- [On Balanced Sequences and Their Asymptotic Critical Exponent](https://doi.org/10.1007/978-3-030-68195-1_23) (2021-02-22).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Check Currie's conjecture on complexity 2n+1 and critical exponent — exit 0. [Command and output](../evidence/replays/109.txt).

@@ -25,6 +25,14 @@ The source describes the result as follows.
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The same conclusion follows, consistently with Brualdi's prior result.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/proof.md#L411).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T18:10:05-06:00. [Commit 856b07901](https://github.com/1337isnot1337/solved-conjectures/commit/856b07901542dd1db20bf95396fb5f2a2190e70d).

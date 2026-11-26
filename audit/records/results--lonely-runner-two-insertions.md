@@ -16,6 +16,18 @@ The authors’ Goddyn–Wong paper is also available through their Zenodo record
 
 - [Lean verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lonely-runner-two-insertions/README.md#L7).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The general conjecture remains open.** Start with any of the Goddyn–Wong simultaneous accelerations of the consecutive speeds $1,\ldots,p-1$, with $p\ge3$.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lonely-runner-two-insertions/README.md#L3).
+
+> The conjecture for arbitrary speed sets remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lonely-runner-two-insertions/PROOF.md#L18).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T23:38:36-06:00. [Commit e49bb6a86](https://github.com/1337isnot1337/solved-conjectures/commit/e49bb6a86efa055e651889efa5dfa95317ba8efb).

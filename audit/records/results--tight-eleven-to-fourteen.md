@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Which modular orbits an equality case can occupy](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-eleven-to-fourteen/PROOF.md#L38).
 - [From residue classes to integer sets](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-eleven-to-fourteen/PROOF.md#L49).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Those runner bounds, the exhaustive modular classifications and the uniqueness proofs remain open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-eleven-to-fourteen/README.md#L22).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T19:28:22-06:00. [Commit 945e08557](https://github.com/1337isnot1337/solved-conjectures/commit/945e08557b03ea2abe96b36d44d62446666c5c03).
@@ -45,6 +53,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Equality cases for eleven through fourteen lonely runners” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Tight instances of the Lonely Runner Conjecture: one-entry modifications and the growth of speeds](https://doi.org/10.48550/arxiv.2608.13599) (2026-08-01).
+- [Fourteen lonely runners: manuscript, gate certificates, and audit code](https://doi.org/10.5281/zenodo.22066771) (2026-08-23).
+- [Independent verification and audit of "Fourteen lonely runners" (LRC(13), Allikvere 2026)](https://doi.org/10.5281/zenodo.22974880) (2026-09-26).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

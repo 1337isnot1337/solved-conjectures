@@ -15,6 +15,18 @@ The source describes the result as follows.
 - [Strictly better than the proposed trapezoid](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/PROOF.md#L47).
 - [Priority and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/PROOF.md#L67).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/README.md#L5).
+
+> Searches for the exact name, geometry, conjecture number, and claimed trapezoid counterexamples did not locate an earlier result.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/PENTAGON.md#L73).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:17:08Z. [Commit 1a260be30](https://github.com/1337isnot1337/solved-conjectures/commit/1a260be30cc0cee89aba6039d35f1e4ea4bc6db2).

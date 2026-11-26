@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [3. A lower bound for centralizer words at the same exponential rate](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/PROOF.md#L45).
 - [4. The limiting mode](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/PROOF.md#L75).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No exact prior result was located in the focused source search.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/AUDIT.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T14:04:24Z. [Commit aaf4263a2](https://github.com/1337isnot1337/solved-conjectures/commit/aaf4263a214af79d689b0cda306ae07a13494f6f).

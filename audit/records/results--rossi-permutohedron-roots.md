@@ -16,6 +16,14 @@ The source describes the result as follows.
 - [4. In the bulk: the nearest two poles](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/PROOF.md#L66).
 - [5. Exact certificates and conclusion](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/PROOF.md#L93).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> In particular, Durán’s extreme-root asymptotics concern unshifted Eulerian roots and do not prove these level-one crossings.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/AUDIT.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T10:28:35Z. [Commit 8008d3f3c](https://github.com/1337isnot1337/solved-conjectures/commit/8008d3f3c796f4463c790e6533fc59ab8dd05583).

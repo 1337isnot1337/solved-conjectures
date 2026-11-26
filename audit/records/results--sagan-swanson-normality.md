@@ -22,6 +22,18 @@ The same-source Principia and Omega papers prove bottom-heaviness of coefficient
 - [6. Actual conditional means and variances](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/PROOF.md#L273).
 - [7. All four families and conclusion](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/PROOF.md#L316).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No exact prior proof or disproof appeared in these searches.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/NOVELTY.md#L49).
+
+> See the earlier proof for the underlying conjecture resolution.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/LOCAL-LIMIT.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T13:00:03-06:00. [Commit 09c6d6695](https://github.com/1337isnot1337/solved-conjectures/commit/09c6d6695769acf22b80e95dcbf2a3cc10122c75).

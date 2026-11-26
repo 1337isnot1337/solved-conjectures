@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Verification evidence](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/frankl-span-four-candidates.md#L58).
 - [Reviewed extensions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/frankl-span-four-candidates.md#L82).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> inventory update; an old receipt does not cover changed source bytes.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/frankl-span-four-candidates.md#L56).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-19T03:01:31-06:00. [Commit 77fa9a758](https://github.com/1337isnot1337/solved-conjectures/commit/77fa9a758cb5753693e66c78f8cde44a09fb4a24).

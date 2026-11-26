@@ -15,6 +15,18 @@ The source describes the result as follows.
 - [3. Perturbations force sparse factors](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/PROOF.md#L108).
 - [Sources and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/PROOF.md#L132).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The written proof’s stronger added-error/retained-limsup supplement remains unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/README.md#L5).
+
+> The optional retained-limsup supplement remains unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md#L64).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T11:03:45Z. [Commit 83c325ae5](https://github.com/1337isnot1337/solved-conjectures/commit/83c325ae559864ec0b5e916d90a342b50a81de7f).

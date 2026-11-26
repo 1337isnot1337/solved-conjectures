@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [2. Two kernel roots yield the same sextic](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-joint-eulerian/PROOF.md#L48).
 - [Reproducing the exact algebra](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-joint-eulerian/PROOF.md#L97).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> A search for the exact class and joint statistics did not locate an earlier proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-joint-eulerian/AUDIT.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T11:08:32Z. [Commit c3b034456](https://github.com/1337isnot1337/solved-conjectures/commit/c3b034456e4948fa8222eb9776b7c40530d6a711).

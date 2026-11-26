@@ -53,6 +53,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [A Counterexample to a Conjecture on Schur Positivity of Chromatic Symmetric Functions of trees](https://doi.org/10.37236/9696) (2020-10-16).
+- [On the reconstruction of trees from their chromatic symmetric functions](https://doi.org/10.48550/arxiv.2507.15986) (2025-07-21).
+- [Chromatic Symmetric Functions of Conjoined Graphs](https://doi.org/10.1007/s11464-024-0088-3) (2025-11-15).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Verify Li non-spider coefficient and partition certificates — exit 0. [Command and output](../evidence/replays/084.txt).

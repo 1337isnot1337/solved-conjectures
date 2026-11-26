@@ -17,6 +17,22 @@ The source describes the result as follows.
 - [4. Completion of the counterfamily](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/PROOF.md#L292).
 - [5. Elementary certificates for the constants](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/PROOF.md#L334).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Within those limits, the exact source statement is verified, the closest primary predecessors do not resolve it, and the direct solution-archive screens found no prior collision.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/PRIOR_AUDIT.md#L91).
+
+> It does not prove or refute the proposed comparison in all higher orders.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/SOURCES.md#L27).
+
+> Deriving the hypotheses from the Gaussian expectations, the spherical fourth-moment identity and the normalized dual Hardy norm remains open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/FORMALIZATION.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T02:30:25-06:00. [Commit 7982d9f30](https://github.com/1337isnot1337/solved-conjectures/commit/7982d9f30025124dda76e183707ed521d1f372b0).

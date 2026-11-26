@@ -57,6 +57,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 10 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Counterexamples to a dimension-free variant of Erdős's diameter conjecture for separated distances](https://doi.org/10.48550/arxiv.2604.15305) (2026-04-16).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

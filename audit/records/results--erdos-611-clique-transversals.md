@@ -16,6 +16,18 @@ The source describes the result as follows.
 - [Every sufficiently large order](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-611-clique-transversals/PROOF.md#L61).
 - [Scope and remaining gap](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-611-clique-transversals/PROOF.md#L69).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Whether a sublinear transversal always exists remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-611-clique-transversals/README.md#L9).
+
+> Searches of the original clique-transversal formulation, the complement formulation, the cited preprints, and follow-up work located no prior proof of these two bounds.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-611-clique-transversals/AUDIT.md#L29).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T10:29:58-06:00. [Commit 9fdb4ff76](https://github.com/1337isnot1337/solved-conjectures/commit/9fdb4ff76156550fbb0562aa3e9967310d95d6ab).
@@ -50,6 +62,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Bollobás–Erdős–Tuza conjecture erdos 611 clique transversals” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Approximation algorithms for clique transversals on some graph classes](https://doi.org/10.1016/j.ipl.2015.04.003) (2015-04-05).
+- [On Clique-Transversals and Clique-Independent Sets](https://doi.org/10.1023/a:1021363810398) (2002-10-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

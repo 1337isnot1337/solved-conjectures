@@ -55,6 +55,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [On the stable Harbourne conjecture for ideals defining space monomial curves](https://doi.org/10.1090/proc/16258) (2023-01-24).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Certify the two stable Waring-gap symmetry defects — exit 0. [Command and output](../evidence/replays/023.txt).

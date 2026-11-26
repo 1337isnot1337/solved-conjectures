@@ -27,6 +27,14 @@ The two packages share the exact single-edge theorem: in the second notation n=d
 - [Verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/PROOF.md#L209).
 - [Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/PROOF.md#L225).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> By the converse direction of Guichard's theorem [Zhu01, Theorem 3.1], which we do not prove here, an acyclic colouring gives $`\chi'_c(K_5-uv)\lt5`$, in accordance with the value $`9/2`$ of [MZ].
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/PROOF.md#L203).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T08:37:37-06:00. [Commit d44211ef0](https://github.com/1337isnot1337/solved-conjectures/commit/d44211ef0883124b2aaf042c335c68acbe597859).

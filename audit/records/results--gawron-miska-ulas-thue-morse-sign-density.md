@@ -49,6 +49,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Proof of the Gawron-Miska-Ulas conjecture concerning unboundedness of coefficients of power series expansion of $\prod_{n=0}^{\infty}(1-x^{2^{n}})^m$](https://doi.org/10.48550/arxiv.2606.25825) (2026-06-24).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

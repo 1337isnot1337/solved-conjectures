@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [2. Universal minimizers on the checkerboard $`D_n`$](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/betermin-fcc-bcc-cold-spots/PROOF.md#L62).
 - [3. Original scope, and priority note](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/betermin-fcc-bcc-cold-spots/PROOF.md#L100).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It found the antecedents above but no earlier proof for the exact both-lattice statement.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/betermin-fcc-bcc-cold-spots/AUDIT.md#L10).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T08:58:47Z. [Commit 0cc8b46a2](https://github.com/1337isnot1337/solved-conjectures/commit/0cc8b46a206b95ffb602361e95fae65f6d64b5f5).

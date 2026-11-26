@@ -14,6 +14,18 @@ The source describes the result as follows.
 - [Determine the general transfer by reflection](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/PROOF.md#L55).
 - [Prior context](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/PROOF.md#L83).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> On November 24, 2026, searches by both conjecture numbers, title, authors, and phrases involving weighted forest-triple traces found no earlier proof of this exact identity.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/AUDIT.md#L11).
+
+> This weighted single-endpoint trace identity does not prove positivity or furnish a multiple-endpoint generalization.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/PROOF.md#L87).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:53:48Z. [Commit 8a817d4d4](https://github.com/1337isnot1337/solved-conjectures/commit/8a817d4d456e517f14c705b8304a774424451d6c).

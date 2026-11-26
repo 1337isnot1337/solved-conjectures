@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [3. The regimes away from $x=1/4$](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sokal-apery-moment-threshold/PROOF.md#L61).
 - [4. The parameter $x=1/4$](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sokal-apery-moment-threshold/PROOF.md#L91).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The identity and the saddle cusp remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sokal-apery-moment-threshold/README.md#L16).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T10:50:18Z. [Commit 0d5b98564](https://github.com/1337isnot1337/solved-conjectures/commit/0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4).

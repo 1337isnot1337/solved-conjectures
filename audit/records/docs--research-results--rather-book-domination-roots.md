@@ -54,6 +54,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [On the Integer Domination Root Conjecture](https://doi.org/10.13140/rg.2.2.26230.36167) (2026-07-31).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Verify the book-root and circulant classifications — exit 0. [Command and output](../evidence/replays/060.txt).

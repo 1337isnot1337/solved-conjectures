@@ -20,6 +20,22 @@ The source describes the result as follows.
 - [What the proof does and does not establish about priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/PROOF.md#L119).
 - [Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/PROOF.md#L125).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> GitHub issue and pull-request searches for A066094 returned no prior result.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/NOVELTY.md#L50).
+
+> The known real-rootedness of each individual polynomial and the August 2026 half-interlacing results within a degree do not prove the consecutive cross-degree claim.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/ALTERNATIVE-AUDIT.md#L5).
+
+> See the earlier proof for the underlying conjecture resolution.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/ALTERNATIVE-PROOF.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T12:25:22-06:00. [Commit 5856a5707](https://github.com/1337isnot1337/solved-conjectures/commit/5856a5707a659205a87b05af867ae21050f3382f).

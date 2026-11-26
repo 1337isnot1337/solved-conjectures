@@ -19,6 +19,14 @@ The Omega same-source theorem treats the common-parity binomial facet sum in Con
 - [3. A maximum matching with zero or one uncovered vertex](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/PROOF.md#L55).
 - [4. Sharpness and uniqueness](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/PROOF.md#L69).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Searches for the exact general minimum and the stronger fixed matching-number theorem did not locate an earlier proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/AUDIT.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T14:27:11Z. [Commit 716b4bac8](https://github.com/1337isnot1337/solved-conjectures/commit/716b4bac8ad32e3a03e0238e1600d9b90587b1dd).

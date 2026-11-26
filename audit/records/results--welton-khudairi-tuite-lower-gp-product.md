@@ -13,6 +13,14 @@ The source describes the result as follows.
 - [The factor graphs](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/welton-khudairi-tuite-lower-gp-product/PROOF.md#L13).
 - [A six-vertex maximal set in the product](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/welton-khudairi-tuite-lower-gp-product/PROOF.md#L23).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof or disproof of this exact target was located in the inspected sources.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/welton-khudairi-tuite-lower-gp-product/AUDIT.md#L12).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T10:35:38-06:00. [Commit 2939b5be0](https://github.com/1337isnot1337/solved-conjectures/commit/2939b5be0709f1b20d53d439677b751c5d83c0b9).

@@ -17,6 +17,22 @@ The source describes the result as follows.
 - [5. The higher-dimensional consequences](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/PROOF.md#L210).
 - [Literature and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/PROOF.md#L241).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The norm and finite-threshold supplements remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/README.md#L7).
+
+> Targeted searches for this exact median-of-the-minimum statement did not locate an earlier proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/FINITE-THRESHOLD.md#L37).
+
+> The higher-dimensional norm and finite-threshold supplements remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/FORMALIZATION.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T10:15:45Z. [Commit 2f800fa51](https://github.com/1337isnot1337/solved-conjectures/commit/2f800fa5191a1d747f126fa20f7e9c2b3730b085).

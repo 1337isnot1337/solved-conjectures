@@ -55,6 +55,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [A Proof of a conjecture of Watanabe--Yoshida via Ehrhart Theory](https://doi.org/10.48550/arxiv.2512.20442) (2025-12-23).
+- [Proofs of Modulo 11 and 13 Cylindric Kanade-Russell Conjectures for $A_2$ Rogers-Ramanujan Type Identities](https://doi.org/10.48550/arxiv.2301.01359) (2023-01-03).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 Independently compiled Conjectures.FMPCylindric from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).

@@ -17,6 +17,14 @@ The source describes the result as follows.
 - [Five-distance consequence of Zhu's conjecture](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/five-speed-spectrum/PROOF.md#L71).
 - [Reproduction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/five-speed-spectrum/PROOF.md#L75).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It does not prove the classification outside these families, the
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/five-speed-spectrum/CRITICAL_FAMILIES_LEAN.md#L154).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
@@ -51,6 +59,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Five-speed Loneliness Spectrum Conjecture five speed spectrum” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Null boxes for the Fan-Sun amended conjecture on near-tight speed tuples: a partial recomputation with an independent complete-witness screen](https://doi.org/10.5281/zenodo.23859743) (2026-11-01).
+- [Amending the Lonely Runner Spectrum Conjecture](https://doi.org/10.37236/13840) (2026-02-27).
+- [Riesz products and the Lonely Runner Conjecture: A wider gap of loneliness](https://doi.org/10.48550/arxiv.2511.16636) (2025-11-20).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

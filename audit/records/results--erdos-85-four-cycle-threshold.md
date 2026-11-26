@@ -16,6 +16,18 @@ The source describes the result as follows.
 - [Scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-85-four-cycle-threshold/PROOF.md#L53).
 - [Transfer to arbitrary even orthogonal polarities](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-85-four-cycle-threshold/PROOF.md#L57).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The eventual monotonicity of the Erdős threshold and the existence of such regular graphs at infinitely many powers of two remain open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-85-four-cycle-threshold/README.md#L5).
+
+> Consequently an $`o(q^{3/2})`$ deletion-distance stability theorem to **any such truncation** would imply the nonexistence of the regular candidates for large even $`q`$; the present note does not prove that stability hypothesis.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-85-four-cycle-threshold/PROOF.md#L63).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T11:24:52-06:00. [Commit 3f8459711](https://github.com/1337isnot1337/solved-conjectures/commit/3f84597110cb5fa3dcfa6135bf0ee82120a3d431).

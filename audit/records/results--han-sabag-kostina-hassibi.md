@@ -20,6 +20,18 @@ The source describes the result as follows.
 - [4. An open family of counterexamples](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/PROOF.md#L185).
 - [Verification status](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/PROOF.md#L234).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This is a bounded search record, not a guarantee that no earlier proof exists.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/SOURCES.md#L3).
+
+> In particular the example lies in a nonempty open interval of channel gains; the contradiction is not tied to a floating-point special case.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/ALGEBRA_REVIEW.md#L135).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T01:24:31-06:00. [Commit e7d536adb](https://github.com/1337isnot1337/solved-conjectures/commit/e7d536adb9e0d5d87c2e8e2ec833539a2de48278).

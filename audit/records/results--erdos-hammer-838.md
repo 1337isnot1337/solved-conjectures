@@ -16,6 +16,14 @@ The cup recurrence gives u₂=1 and u₃=1/2. Inserting these in the binary spli
 
 - [Proofs](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/README.md#L9).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Earlier proof and attribution Erdős problem 838 and its original reference
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/README.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:42:48-06:00. [Commit 675bcb73b](https://github.com/1337isnot1337/solved-conjectures/commit/675bcb73bd751dacf531e1accc8abdefa03a7d89).
@@ -49,6 +57,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Erdős–Hammer convex-subset problem erdos hammer 838” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Fast Formal Proof of the Erdős–Szekeres Conjecture for Convex Polygons with at Most 6 Points](https://doi.org/10.1007/s10817-017-9423-7) (2017-09-05).
+- [On the Erdős–Tuza–Valtr conjecture](https://doi.org/10.1016/j.ejc.2024.104085) (2024-11-08).
+- [A SAT attack on the Erdős–Szekeres conjecture](https://doi.org/10.1016/j.ejc.2017.06.010) (2017-07-17).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

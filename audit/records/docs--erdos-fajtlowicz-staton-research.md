@@ -17,6 +17,14 @@ The source describes the result as follows.
 - [Stronger obstruction with a connected heavy pair-trace reservoir](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-fajtlowicz-staton-research.md#L52).
 - [General embedding reduction: the tail retains the full zero-residue problem](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-fajtlowicz-staton-research.md#L70).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Its existence does not resolve the superlogarithmic lower-bound question.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-fajtlowicz-staton-research.md#L12).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T00:46:27-06:00. [Commit 37cb59f8c](https://github.com/1337isnot1337/solved-conjectures/commit/37cb59f8cddf93eb86a2d2c90addfb629309e3dd).

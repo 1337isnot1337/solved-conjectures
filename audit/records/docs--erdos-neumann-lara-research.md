@@ -16,6 +16,14 @@ The source describes the result as follows.
 - [Graphs from the counterexample to the Erdős–Hajnal high-girth conjecture](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-neumann-lara-research.md#L90).
 - [Iterated generalized Mycielski graphs](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-neumann-lara-research.md#L116).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The ordinary statement remains open in the sources checked.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-neumann-lara-research.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T04:56:41-06:00. [Commit 32317a2ca](https://github.com/1337isnot1337/solved-conjectures/commit/32317a2ca36bee755997ca4bf206edb22d2e9248).

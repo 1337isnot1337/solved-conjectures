@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [3. Removing all finite tails](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/PROOF.md#L78).
 - [Source, equality, and status](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/PROOF.md#L90).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Bounded searches for the article and unrestricted unequal lower-bound sums found no earlier proof; that is not a priority guarantee.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/PROOF.md#L94).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:23:38Z. [Commit 40b076c0d](https://github.com/1337isnot1337/solved-conjectures/commit/40b076c0d946177abfc66d8895caaac3cea5ca7b).

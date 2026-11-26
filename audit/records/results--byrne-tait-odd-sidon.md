@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Relation to the earlier proof and a further extension](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/byrne-tait-odd-sidon/PROOF.md#L54).
 - [Prior-resolution check (24 November 2026)](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/byrne-tait-odd-sidon/PROOF.md#L65).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof of the odd-length assertion appeared in the inspected sources.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/byrne-tait-odd-sidon/AUDIT.md#L13).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T11:24:52-06:00. [Commit 3f8459711](https://github.com/1337isnot1337/solved-conjectures/commit/3f84597110cb5fa3dcfa6135bf0ee82120a3d431).

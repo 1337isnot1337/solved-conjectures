@@ -16,6 +16,18 @@ For a nonexceptional center, each internal block in the selected color-neighbor 
 
 - [A polynomial independence obstruction in every number of colors](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/multicolor-steiner-sail/PROOF.md#L5).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The arbitrary-host multicolor question remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/multicolor-steiner-sail/README.md#L7).
+
+> Arbitrary Steiner systems can have much larger independent sets, so the all-host multicolor question remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/multicolor-steiner-sail/PROOF.md#L22).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:42:48-06:00. [Commit 675bcb73b](https://github.com/1337isnot1337/solved-conjectures/commit/675bcb73bd751dacf531e1accc8abdefa03a7d89).

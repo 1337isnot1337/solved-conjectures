@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Median, mean, and regularity](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/PROOF.md#L80).
 - [Scope, prior work, and possible rate interpretations](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/PROOF.md#L127).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The entry’s additional smoothing and rate results remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/README.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:58:10Z. [Commit 6a8c0b0ac](https://github.com/1337isnot1337/solved-conjectures/commit/6a8c0b0ac8c5a903405782b0a0df03c9ad78cdc6).

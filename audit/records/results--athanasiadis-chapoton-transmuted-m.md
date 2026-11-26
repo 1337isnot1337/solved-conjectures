@@ -52,6 +52,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 1 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Preorder polytopes: matching endpoint pairs, flag spheres and the Athanasiadis–Chapoton conjectures](https://doi.org/10.5281/zenodo.24235776) (2026-11-14).
+- [A proof of the Athanasiadis-Chapoton ordinal-sum conjecture](https://doi.org/10.48550/arxiv.2609.28507) (2026-09-19).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

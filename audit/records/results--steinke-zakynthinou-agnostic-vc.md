@@ -17,6 +17,18 @@ The source describes the result as follows.
 - [4. Information in the returned hypothesis](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-agnostic-vc/PROOF.md#L150).
 - [A measurable globally consistent ERM suffices](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-agnostic-vc/PROOF.md#L176).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The jointly Borel case with completed iid laws remains open here.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-agnostic-vc/README.md#L7).
+
+> It does not prove that the function is Borel measurable for arbitrary classes.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-agnostic-vc/SCOPE.md#L33).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T20:10:10-06:00. [Commit 9c0d21762](https://github.com/1337isnot1337/solved-conjectures/commit/9c0d2176295c320383e551b548186c54a3825c89).

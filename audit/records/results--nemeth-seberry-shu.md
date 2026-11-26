@@ -18,6 +18,14 @@ Checked the role of the uniformity assumption in Divoux–Wang, Proposition 3.1 
 - [2. Separation within a row sum](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nemeth-seberry-shu/PROOF.md#L19).
 - [3. Separation across row sums](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nemeth-seberry-shu/PROOF.md#L39).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Establishing that hypothesis using the uniform permanent asymptotic remains open in Lean; it is not a project axiom.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nemeth-seberry-shu/FORMALIZATION.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T11:50:50-06:00. [Commit eecf732fd](https://github.com/1337isnot1337/solved-conjectures/commit/eecf732fda58692af53c748c915da1d31e3bac7d).

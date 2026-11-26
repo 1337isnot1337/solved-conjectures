@@ -13,6 +13,14 @@ The source describes the result as follows.
 - [Proof](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-large-luroth/PROOF.md#L9).
 - [Source and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-large-luroth/PROOF.md#L35).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Searches for the exact conjecture, arXiv identifier, journal title and authors, and for two-summand Lüroth decompositions with a uniform lower digit bound did not surface a prior proof of this claim.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-large-luroth/PROOF.md#L39).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:01:29Z. [Commit 5ecd27a10](https://github.com/1337isnot1337/solved-conjectures/commit/5ecd27a1013143889e2ee92c1c9a573809ddbdc7).

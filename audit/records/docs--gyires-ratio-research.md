@@ -20,6 +20,14 @@ The source describes the result as follows.
 - [A radial-monotonicity route also fails exactly](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/gyires-ratio-research.md#L81).
 - [Exact radial sum-of-squares denominator](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/gyires-ratio-research.md#L95).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This does not cover all dense matrices, let alone the full conjecture.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/gyires-ratio-research.md#L37).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T01:18:59-06:00. [Commit a7b2a2799](https://github.com/1337isnot1337/solved-conjectures/commit/a7b2a27995a27f80f4156762e4a825185d05870e).

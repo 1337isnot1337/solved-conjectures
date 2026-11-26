@@ -14,6 +14,22 @@ The source describes the result as follows.
 - [2. The identical tree for Y](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/PROOF.md#L30).
 - [3. Evaluation of the common series](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/PROOF.md#L42).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Chern–Fu–Lin’s earlier proof of the first class is credited.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/README.md#L3).
+
+> Their earlier proof handles the first class, and the two remaining pattern bases are resolved here.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/AUDIT.md#L3).
+
+> This does not address their separate statistic-refined Conjectures 6.1 and 6.2.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/PROOF.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T10:50:18Z. [Commit 0d5b98564](https://github.com/1337isnot1337/solved-conjectures/commit/0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4).

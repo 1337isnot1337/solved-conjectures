@@ -24,6 +24,18 @@ Earlier exact disproof. The September manuscript uses the very same witness 1 + 
 - [Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/PROOF.md#L133).
 - [Independent review](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/PROOF.md#L144).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This is not a new discovery and does not cover the different sequence conjectures 4.1 and 4.2.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/FORMALIZATION.md#L7).
+
+> It does not use the campaign's accepted RH or Dirichlet-GRH input, and it does not prove RH.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/PROOF.md#L117).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:36:48Z. [Commit 584f430c4](https://github.com/1337isnot1337/solved-conjectures/commit/584f430c4a9138b7a0fee63cffd3949439ebcdf3).

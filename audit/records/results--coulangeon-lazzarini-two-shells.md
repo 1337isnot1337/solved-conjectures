@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Orthogonally indecomposable witnesses](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/PROOF.md#L34).
 - [Scope and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/PROOF.md#L46).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The orthogonally indecomposable construction and height results remain open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/README.md#L14).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T08:50:32Z. [Commit 37ea6cbbf](https://github.com/1337isnot1337/solved-conjectures/commit/37ea6cbbf7155be8b8b07bd818bad75dcb7106cd).

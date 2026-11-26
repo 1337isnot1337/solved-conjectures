@@ -17,6 +17,18 @@ The source describes the result as follows.
 - [5. Existence and uniqueness of the crossover](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/PROOF.md#L251).
 - [Scope and verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/PROOF.md#L279).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No prior proof, refutation, withdrawal, or competing crossover result was located.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/NOVELTY.md#L44).
+
+> No prior proof, counterexample, or withdrawal of the linear-density conjecture was found.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/REVIEW.md#L104).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:41:48-06:00. [Commit 85f72d876](https://github.com/1337isnot1337/solved-conjectures/commit/85f72d8769e05427797952b1ff1fe5022c6b5500).

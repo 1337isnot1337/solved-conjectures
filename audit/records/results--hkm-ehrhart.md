@@ -18,6 +18,18 @@ The source describes the result as follows.
 - [5. Clause (ii): independent exact interlacing obstruction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/PROOF.md#L113).
 - [6. Audit and reproducibility](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/PROOF.md#L127).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The newer noninterlacing pair remains on the canonical line on both sides, strengthening the earlier result.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/README.md#L14).
+
+> See the earlier proof for the underlying conjecture resolution.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/STURM-CERTIFICATE.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:32:56Z. [Commit 0879f31bf](https://github.com/1337isnot1337/solved-conjectures/commit/0879f31bffcd94bb9c814cf79df558d5271b95e4).
@@ -52,6 +64,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Higashitani–Kummer–Michałek conjecture hkm ehrhart” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Examples and counterexamples in Ehrhart theory](https://doi.org/10.4171/emss/86) (2024-09-17).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

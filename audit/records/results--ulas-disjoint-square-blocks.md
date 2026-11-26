@@ -49,6 +49,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Square products of factorials and a conjecture of Erdős and Graham](https://doi.org/10.48550/arxiv.2610.01899) (2026-10-01).
+- [On products of disjoint blocks of arithmetic progressions and related equations](https://doi.org/10.1016/j.jnt.2016.01.018) (2016-03-05).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

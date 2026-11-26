@@ -21,6 +21,14 @@ The November Riesz-ratios manuscript proves a two-point bound for the reverse ra
 - [5. Capacity comparison and equality](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-interval-riesz-capacity/PROOF.md#L244).
 - [6. Endpoints and literature scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-interval-riesz-capacity/PROOF.md#L301).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Their later account describes Liu’s earlier result as maximizing the opposite ratio; that two-point result is not claimed here.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-interval-riesz-capacity/AUDIT.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T11:08:32Z. [Commit c3b034456](https://github.com/1337isnot1337/solved-conjectures/commit/c3b034456e4948fa8222eb9776b7c40530d6a711).
@@ -56,6 +64,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Fan’s interval Riesz capacity-ratio conjecture fan interval riesz capacity” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 20 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Sharp ratios of negative-exponent Riesz capacities: the two-point and simplex conjectures, the exact threshold at exponent two, and sharp stability](https://doi.org/10.5281/zenodo.23917365) (2026-11-03).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

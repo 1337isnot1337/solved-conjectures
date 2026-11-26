@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Equivalence on graphs with two leaves](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lower-oriented-general-position-np-hardness/PROOF.md#L15).
 - [Complexity](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lower-oriented-general-position-np-hardness/PROOF.md#L23).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It does not address the spectrum conjecture, Conjecture 4.30, or the nonconstancy conjecture, Conjecture 4.3.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lower-oriented-general-position-np-hardness/AUDIT.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T10:43:06-06:00. [Commit 9b891708f](https://github.com/1337isnot1337/solved-conjectures/commit/9b891708f3d4301b9c578cbee09a62098f02f7ed).

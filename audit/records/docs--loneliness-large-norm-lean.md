@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Remaining obligations](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/loneliness-large-norm-lean.md#L64).
 - [Exact verification evidence](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/loneliness-large-norm-lean.md#L76).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It does not prove that every tuple modulo a selected prime
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/loneliness-large-norm-lean.md#L68).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-19T07:41:45-06:00. [Commit dc95ef550](https://github.com/1337isnot1337/solved-conjectures/commit/dc95ef5504d32333266440b25818c25782376fae).

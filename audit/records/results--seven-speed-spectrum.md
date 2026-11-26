@@ -50,6 +50,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 2 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Null boxes for the Fan-Sun amended conjecture on near-tight speed tuples: a partial recomputation with an independent complete-witness screen](https://doi.org/10.5281/zenodo.23859743) (2026-11-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Verify the seven-speed loneliness spectrum — exit 0. [Command and output](../evidence/replays/113.txt).

@@ -25,6 +25,18 @@ The two packages share the exact single-edge theorem: in the second notation n=d
 - [Second referee pass](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/PROOF.md#L277).
 - [Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/PROOF.md#L290).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The material in Part E after the second pass has not been refereed: the $`n=19,23,27,47`$ colourings, the symmetry conditions, and the structure lemma for $`(qn-1,q)`$.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/PROOF.md#L288).
+
+> A6 then only gives a shift c ≡ 0 (mod 3), which is consistent, so the proof does not prove too much.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/review/REVIEW.md#L29).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T23:18:31-06:00. [Commit e24cae081](https://github.com/1337isnot1337/solved-conjectures/commit/e24cae081c0788dce49553cbb5439c49144ebd8c).

@@ -16,6 +16,14 @@ The source describes the result as follows.
 - [4. The Hausdorff measure has uniformly positive branching](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simmons-weiss-hausdorff/PROOF.md#L55).
 - [Priority and limitations](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simmons-weiss-hausdorff/PROOF.md#L66).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It found no earlier result for the stated natural measure and every irrational translate.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simmons-weiss-hausdorff/AUDIT.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:23:38Z. [Commit 40b076c0d](https://github.com/1337isnot1337/solved-conjectures/commit/40b076c0d946177abfc66d8895caaac3cea5ca7b).

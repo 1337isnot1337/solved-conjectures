@@ -18,6 +18,18 @@ The source describes the result as follows.
 - [Exact certificate on the remaining compact interval](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/PROOF.md#L214).
 - [Arithmetic and truncation rules](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/PROOF.md#L239).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof or disproof of this exact assertion has been located in the sources examined.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/SOURCES.md#L3).
+
+> The 2023 paper retains this conjecture, and the introduction and Section 3 of arXiv:2611.14429v1, dated 10 November 2026, explicitly say it remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/PROOF.md#L21).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T01:32:09-06:00. [Commit 0ad954b9a](https://github.com/1337isnot1337/solved-conjectures/commit/0ad954b9a2794bbc6d16a3e1d3deff2bb28ea689).

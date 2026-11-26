@@ -19,6 +19,14 @@ The source Conjecture 4.3 is nonperiodicity for permitted parts congruent to 1 m
 - [3. Both signs occur infinitely often in every progression](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/PROOF.md#L106).
 - [Source and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/PROOF.md#L141).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> product searches found no earlier proof of this partition
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/PROOF.md#L154).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T11:25:54Z. [Commit ddf069197](https://github.com/1337isnot1337/solved-conjectures/commit/ddf0691979e6182b455bb61dbd7194b986191df9).

@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [2. Apply the lemma to the diameter problem](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/PROOF.md#L40).
 - [3. A sharp infinite family](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/PROOF.md#L53).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The bounded primary-source, MathDB, and indexed external searches located no earlier proof of the full conjecture.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/AUDIT.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T14:37:28Z. [Commit 052ae579c](https://github.com/1337isnot1337/solved-conjectures/commit/052ae579cfa2925156e5104d1442e0c93a726e0b).

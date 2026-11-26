@@ -16,6 +16,18 @@ The source describes the result as follows.
 - [2. Apply to the conjecture](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/PROOF.md#L135).
 - [Sources and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/PROOF.md#L155).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The source's search through 24 November 2026 did not locate an earlier proof of the complete bivariate statement.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/FORMALIZATION.md#L116).
+
+> not identify an earlier proof of the full bivariate statement.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/PROOF.md#L175).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T11:03:45Z. [Commit 83c325ae5](https://github.com/1337isnot1337/solved-conjectures/commit/83c325ae559864ec0b5e916d90a342b50a81de7f).

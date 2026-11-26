@@ -17,6 +17,14 @@ For a fixed vector-coloring bound K, compactness gives a global Gram representat
 - [An obstruction at the continuum](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/PROOF.md#L5).
 - [Arbitrary finite vertex multiplicities](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/PROOF.md#L15).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Whether an uncountably chromatic graph forces arbitrarily large finite Hall ratios remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/README.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:42:48-06:00. [Commit 675bcb73b](https://github.com/1337isnot1337/solved-conjectures/commit/675bcb73bd751dacf531e1accc8abdefa03a7d89).
@@ -50,6 +58,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Erdős–Hajnal–Szemerédi independence-ratio problem erdos hajnal szemeredi independence” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [On the solution to the Erdős-Hajnal problem on high-girth high-chromatic subgraphs](https://doi.org/10.48550/arxiv.2609.40192) (2026-09-30).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

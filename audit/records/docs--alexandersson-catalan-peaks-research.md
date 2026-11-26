@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Current routes, unproved](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/alexandersson-catalan-peaks-research.md#L37).
 - [A low-order differential recurrence to investigate](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/alexandersson-catalan-peaks-research.md#L45).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Novelty of this recurrence itself has not been established.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/alexandersson-catalan-peaks-research.md#L58).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T01:29:10-06:00. [Commit c727f64f3](https://github.com/1337isnot1337/solved-conjectures/commit/c727f64f36529d2a3cab94b7099a7e08404482df).

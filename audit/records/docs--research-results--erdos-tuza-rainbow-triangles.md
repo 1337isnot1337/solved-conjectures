@@ -18,6 +18,14 @@ The source describes the result as follows.
 - [Positive density under a symmetry of the colors](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-tuza-rainbow-triangles/README.md#L86).
 - [A square-root bound on vertex-disjoint rainbow copies](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-tuza-rainbow-triangles/README.md#L110).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The construction allows positive counts, so existence in all sufficiently large hosts remains open for these targets.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-tuza-rainbow-triangles/README.md#L39).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:39:55-06:00. [Commit d36652f73](https://github.com/1337isnot1337/solved-conjectures/commit/d36652f7314f6443bb0b2be2fe59a8b0f2d303d5).
@@ -49,6 +57,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Citation-index seed records. [Rainbow Subgraphs in Edge-Colorings of Complete Graphs](https://doi.org/10.1016/s0167-5060(08)70377-7).
 - Crossref query “Erdős–Tuza’s rainbow disjoint-triangles problem erdos tuza rainbow triangles” returned 0 displayed records (HTTP 0).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
+
+**Related citing works returned by the search**
+
+- [Rainbow subgraphs in edge‐colored complete graphs: Answering two questions by Erdős and Tuza](https://doi.org/10.1002/jgt.23063) (2023-12-12).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

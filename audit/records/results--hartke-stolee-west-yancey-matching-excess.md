@@ -13,6 +13,14 @@ The source describes the result as follows.
 - [1. From a directed path sum to matching excess](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/PROOF.md#L11).
 - [2. Mersenne division of a sparse binary integer](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/PROOF.md#L41).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No prior proof of the exact ordinary graph tail-minimum divergence was located.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/AUDIT.md#L9).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:41:11Z. [Commit a84f0efd3](https://github.com/1337isnot1337/solved-conjectures/commit/a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7).

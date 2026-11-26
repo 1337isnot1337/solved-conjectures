@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Spectrum on the product planes](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/eight-speed-spectrum/PROOF.md#L29).
 - [The finite proof off these planes](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/eight-speed-spectrum/PROOF.md#L45).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The verifier fails if any node remains unresolved at depth twelve.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/eight-speed-spectrum/PROOF.md#L63).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T19:21:02-06:00. [Commit 25c199a10](https://github.com/1337isnot1337/solved-conjectures/commit/25c199a10ac8eb0b34d500318cf2d1e8a02e298f).
@@ -46,6 +54,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Eight-speed loneliness spectrum eight speed spectrum” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Null boxes for the Fan-Sun amended conjecture on near-tight speed tuples: a partial recomputation with an independent complete-witness screen](https://doi.org/10.5281/zenodo.23859743) (2026-11-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

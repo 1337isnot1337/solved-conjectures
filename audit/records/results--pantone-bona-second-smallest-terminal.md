@@ -16,6 +16,14 @@ The source describes the result as follows.
 - [4. The main term](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-smallest-terminal/PROOF.md#L62).
 - [Attribution and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-smallest-terminal/PROOF.md#L66).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Search on 24 November 2026 by the original title, precise Conjecture 6.1, basis members and proposed asymptotic did not locate an earlier proof, subject to bounded coverage.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-smallest-terminal/PROOF.md#L68).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:21:50Z. [Commit 9431cfc68](https://github.com/1337isnot1337/solved-conjectures/commit/9431cfc6885b00c607974641a127c341de913ec2).

@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [3. Leading tropical equalities suffice for exact commutation](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic/PROOF.md#L49).
 - [4. Return to the infinite alphabet](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic/PROOF.md#L84).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Exact-name and author searches did not find a prior proof of the general stability assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic/PROOF.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:48:12Z. [Commit d1da3ac48](https://github.com/1337isnot1337/solved-conjectures/commit/d1da3ac48d6e8d9366a4c0e537c962fd81bc64b0).

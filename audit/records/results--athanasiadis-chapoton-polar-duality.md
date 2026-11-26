@@ -58,6 +58,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 5 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Preorder polytopes: matching endpoint pairs, flag spheres and the Athanasiadis–Chapoton conjectures](https://doi.org/10.5281/zenodo.24235776) (2026-11-14).
+- [An Eight-Element Counterexample to Real-Rootedness of Preorder Support Polynomials](https://doi.org/10.2139/ssrn.7385158) (2026-01-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Additional results/athanasiadis-chapoton-polar-duality/check.py — exit 0. [Command and output](../evidence/replays/120.txt).

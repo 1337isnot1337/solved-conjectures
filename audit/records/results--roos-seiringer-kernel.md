@@ -22,6 +22,22 @@ The source describes the result as follows.
 - [Coverage and the analytic consumer](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/PROOF.md#L354).
 - [6. Conclusion](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/PROOF.md#L379).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This is a proposed new proof, with essential computer assistance; it has not been formally verified or externally peer reviewed.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/README.md#L26).
+
+> That local result does not prove the all-x statement.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/PRIOR_AUDIT.md#L37).
+
+> Results located the primary article and its institutional copies, related BCS papers, and unrelated literature, but no prior proof of the exact radial-kernel assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/SOURCES.md#L21).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T01:53:31-06:00. [Commit c2018c33e](https://github.com/1337isnot1337/solved-conjectures/commit/c2018c33e42340f02d5ac0aa6ac6f42cadc1f3fa).

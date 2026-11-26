@@ -42,6 +42,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Shapiro’s conjecture in a fixed contracting number field” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 
+**Related citing works returned by the search**
+
+- [Möbius cancellation on polynomial sequences and the quadratic Bateman–Horn conjecture over function fields](https://doi.org/10.1007/s00222-022-01115-y) (2022-05-11).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

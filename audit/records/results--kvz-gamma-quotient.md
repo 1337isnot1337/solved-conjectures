@@ -20,6 +20,14 @@ The source describes the result as follows.
 - [8. The order-three signature correction is not a separate result](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kvz-gamma-quotient/PROOF.md#L242).
 - [9. Review and priority status](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kvz-gamma-quotient/PROOF.md#L256).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This is a bounded literature conclusion, not a guarantee that no earlier proof exists.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kvz-gamma-quotient/NOVELTY.md#L15).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T13:23:18-06:00. [Commit cd6b237fe](https://github.com/1337isnot1337/solved-conjectures/commit/cd6b237fe6d5d18eebd8cd0a0f2967a540cee7f8).

@@ -13,6 +13,14 @@ The source describes the result as follows.
 - [Legendre pairs of length 1197](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hadamard-2396/PROOF.md#L5).
 - [Bordered quadruples of length 598](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hadamard-2396/PROOF.md#L26).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Both unrestricted existence at this order and the full Hadamard conjecture remain open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hadamard-2396/PROOF.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T23:25:56-06:00. [Commit b77b6e38c](https://github.com/1337isnot1337/solved-conjectures/commit/b77b6e38cd839d65742b60ad1de026c37f164ebe).

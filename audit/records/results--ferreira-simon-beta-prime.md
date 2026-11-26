@@ -22,6 +22,18 @@ The repository target is Conjecture 1, a distributional identity for a beta-prim
 - [Uniqueness and completion](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-beta-prime/PROOF.md#L273).
 - [Scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-beta-prime/PROOF.md#L291).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof or disproof of that exact assertion was located in the material examined below.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-beta-prime/SOURCES.md#L3).
+
+> The source's special cases a=1/2 and a=1-b do not cover the new proof's complete domain.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-beta-prime/ALGEBRA_REVIEW.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T01:36:51-06:00. [Commit fd39b713c](https://github.com/1337isnot1337/solved-conjectures/commit/fd39b713c067dbd8ec8f20e9424c673450adbf41).

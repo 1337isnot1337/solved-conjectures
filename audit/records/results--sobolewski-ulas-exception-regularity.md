@@ -16,6 +16,18 @@ The source describes the result as follows.
 - [4. Excluding all other integer bases](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/PROOF.md#L139).
 - [Source and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/PROOF.md#L173).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Searches by the exact authors, title, formulation and theorem did not locate an earlier proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/AUDIT.md#L5).
+
+> the non-regularity statement did not locate an earlier proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/PROOF.md#L188).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T11:25:54Z. [Commit ddf069197](https://github.com/1337isnot1337/solved-conjectures/commit/ddf0691979e6182b455bb61dbd7194b986191df9).

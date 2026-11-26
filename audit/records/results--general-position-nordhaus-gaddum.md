@@ -19,6 +19,14 @@ The November 3 subdivided 6-clique refutes the independent monophonic sum predic
 - [The two asserted inequalities](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/general-position-nordhaus-gaddum/PROOF.md#L49).
 - [Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/general-position-nordhaus-gaddum/PROOF.md#L55).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The checks do not prove the arbitrary-order statement; the proof is analytical.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/general-position-nordhaus-gaddum/AUDIT.md#L9).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:21:05-06:00. [Commit a5f0e62b2](https://github.com/1337isnot1337/solved-conjectures/commit/a5f0e62b2e2a07cddae40974977bff28426cc4d3).
@@ -52,6 +60,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture general position nordhaus gaddum” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 2 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [A subdivided 6-clique breaks a conjectured sum bound for independent monophonic-position colorings](https://doi.org/10.5281/zenodo.23915320) (2026-11-03).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

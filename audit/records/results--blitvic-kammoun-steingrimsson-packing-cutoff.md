@@ -20,6 +20,22 @@ Repository target is §7 item 8, absence of an absolute cutoff via first disagre
 - [Counting up to the first difference](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/PROOF.md#L52).
 - [Source and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/PROOF.md#L75).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Whether a small cutoff depending on pattern length suffices remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/README.md#L5).
+
+> The question about a useful upper bound depending on length remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/AUDIT.md#L3).
+
+> Searches on 24 November 2026 for the authors together with “packing cutoff”, “five occurrences”, “no universal cutoff”, and “Catalan squares” located the original and this dossier but no prior proof of the cutoff conclusion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/PROOF.md#L81).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T11:24:52-06:00. [Commit 3f8459711](https://github.com/1337isnot1337/solved-conjectures/commit/3f84597110cb5fa3dcfa6135bf0ee82120a3d431).

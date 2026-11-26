@@ -17,6 +17,18 @@ The source describes the result as follows.
 - [5. The second moment](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/PROOF.md#L113).
 - [Literature and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/PROOF.md#L129).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> A focused priority search found no exact earlier result.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/AUDIT.md#L5).
+
+> This note resolves the Pomerance–Sárközy fluctuation hypothesis and identifies the smaller limiting scale; it does not address their separate conjectures on the minimum \(g(n)=1\) infinitely often, the maximal order, or an asymptotic for the exact collision count of \(m+\omega(m)\).
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/PROOF.md#L131).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T14:04:24Z. [Commit aaf4263a2](https://github.com/1337isnot1337/solved-conjectures/commit/aaf4263a214af79d689b0cda306ae07a13494f6f).

@@ -18,6 +18,14 @@ The source describes the result as follows.
 - [5. Endpoints and the source's zero bound](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/PROOF.md#L172).
 - [Attribution and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/PROOF.md#L197).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> They do not prove the absence of all unpublished, unindexed, or inaccessible work.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/SOURCES.md#L49).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:48:11-06:00. [Commit 23e30ce2a](https://github.com/1337isnot1337/solved-conjectures/commit/23e30ce2aae991fd821f1f03a081760d66ef5812).
@@ -52,6 +60,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Ferreira–Simon's diagonal Mittag–Leffler conjecture ferreira simon diagonal” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [A Probabilistic Perspective on Feller, Pollard and the Complete Monotonicity of the Mittag-Leffler Function](https://doi.org/10.48550/arxiv.2301.01466) (2023-01-04).
+- [On Feller, Pollard and the Complete Monotonicity of the Mittag-Leffler Function $E_α(-x)$](https://doi.org/10.48550/arxiv.2205.05417) (2022-05-11).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

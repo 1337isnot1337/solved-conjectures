@@ -25,6 +25,22 @@ The source describes the result as follows.
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Not answered for simple graphs.** Problem 6 in the reading $`\chi'_c=d+1/2`$ exactly is not answered and remains open here for every $`d\ge 5`$; the values here are $`d+2/3`$, $`d+3/4`$ and $`d+3/5`$.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-circulants/README.md#L46).
+
+> (Lemma 3 says the atoms form a system of blocks of imprimitivity of $`\mathrm{Aut}(G)`$ when $`G`$ is vertex-transitive — Watkins' theorem; Lemma 4 is the special case of a regular subgroup.)
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-circulants/PROOF.md#L139).
+
+> Suggestion:* name this reading explicitly and say it remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-circulants/review/REVIEW.md#L33).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T08:38:06-06:00. [Commit 2d906f69e](https://github.com/1337isnot1337/solved-conjectures/commit/2d906f69eae6ba6700c96cdca385c82d59398403).
@@ -59,6 +75,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Circulants with circular chromatic index in the upper half” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Circular Chromatic Index of Small Snarks](https://openalex.org/W7239649675) (2024-10-16).
+- [On Index coding for Complementary Graphs with focus on Circular Perfect Graphs](https://doi.org/10.1109/isit.2019.8849838) (2019-07-01).
+- [On the circular chromatic number of a subgraph of the Kneser graph](https://doi.org/10.48550/arxiv.1803.04342) (2018-03-12).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

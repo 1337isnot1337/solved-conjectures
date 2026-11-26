@@ -19,6 +19,18 @@ The October archive gives bounded coverage (up to twice a least positive element
 - [3. Transfer to one coordinate and apply](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/PROOF.md#L139).
 - [Sources and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/PROOF.md#L184).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The written proof’s separate survey, multiplicity, and relative-cancellativity supplements remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/README.md#L3).
+
+> The separate 2026 survey formulation using irreducibles without Dedekind-finiteness, prescribed unordered factorization multiplicities, and relative cancellativity remain unformalized supplements to the written proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/LEAN.md#L72).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T10:50:18Z. [Commit 0d5b98564](https://github.com/1337isnot1337/solved-conjectures/commit/0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4).
@@ -53,6 +65,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Fan–Tringali’s power-monoid length-set conjecture fan tringali power monoid lengths” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [A conjecture by Bienvenu and Geroldinger on power monoids](https://doi.org/10.1090/proc/16732) (2025-01-21).
+- [A counterexample to an isomorphism problem for power monoids](https://doi.org/10.1090/proc/17527) (2026-03-13).
+- [On automorphism group of the reduced finitary power monoid of the additive group of integers](https://doi.org/10.48550/arxiv.2602.19493) (2026-02-23).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

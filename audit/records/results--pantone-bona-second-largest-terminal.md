@@ -18,6 +18,14 @@ The source describes the result as follows.
 - [5. Sum the tail contributions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/PROOF.md#L101).
 - [Attribution and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/PROOF.md#L125).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It found the primary question and nearby work but no earlier proof of the precise asymptotic equivalence.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/AUDIT.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:15:42Z. [Commit 3985c2820](https://github.com/1337isnot1337/solved-conjectures/commit/3985c282029517f4816ab74b69291875bc59a449).

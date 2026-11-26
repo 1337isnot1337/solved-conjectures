@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Limit of the random construction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/bollobas-erdos-tuza-research.md#L50).
 - [A constant upper bound for bounded modular width](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/bollobas-erdos-tuza-research.md#L60).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The conjectured sublinear upper bound for arbitrary $c$-hollow graphs remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/bollobas-erdos-tuza-research.md#L58).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T05:41:25-06:00. [Commit 11dfb068d](https://github.com/1337isnot1337/solved-conjectures/commit/11dfb068d5719d304a2dbb96afb29d05a4ab6a9f).
@@ -48,6 +56,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Earlier transversal bounds for the Bollobás–Erdős–Tuza conjecture” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [On upper bounds for the independent transversal domination number](https://doi.org/10.1016/j.dam.2017.09.011) (2017-12-06).
+- [Bounds on the clique-transversal number of regular graphs](https://doi.org/10.1007/s11425-007-0157-6) (2008-04-19).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

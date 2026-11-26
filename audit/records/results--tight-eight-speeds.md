@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [A mixed-modulus assertion](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-eight-speeds/PROOF.md#L27).
 - [Lifting the direction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-eight-speeds/PROOF.md#L46).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Exhaustiveness and the full classification remain open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tight-eight-speeds/README.md#L25).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
@@ -45,6 +53,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Nine lonely runners, unique equality case tight eight speeds” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Exact counterexample certificates to the shifted lonely runner conjecture for 18 <= n <= 38](https://doi.org/10.5281/zenodo.23842166) (2026-10-31).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

@@ -25,6 +25,14 @@ The source describes the result as follows.
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This note does not prove a lower bound for Hilbert's Nullstellensatz feasibility or separate $`\mathsf P_{\mathbb C}`$ from $`\mathsf{NP}_{\mathbb C}`$.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/ccd46fe75b25fbf32ab7a6139509f5bb2dad6201/research/bss-permanent-graph/README.md#L30).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-23T23:51:20Z. [Commit ea3e902bd](https://github.com/1337isnot1337/solved-conjectures/commit/ea3e902bdaa897eb1f12694c081503e13a04ba95).
@@ -58,6 +66,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Quantitative decision lower bound for the permanent graph” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 6 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Real $$\tau $$-Conjecture for Sum-of-squares: A Unified Approach to Lower Bound and Derandomization](https://doi.org/10.1007/s00224-026-10294-7) (2026-10-03).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

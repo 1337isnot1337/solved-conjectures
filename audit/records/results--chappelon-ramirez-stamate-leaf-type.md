@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [Corrected sharp leading constant](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/PROOF.md#L33).
 - [Scope and source check](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/PROOF.md#L74).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This result does not address the authors' type-refined count monotonicity, leaf-type unimodality, or their limiting proportion of leaves.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/PROOF.md#L76).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T10:34:35Z. [Commit 0db9cab29](https://github.com/1337isnot1337/solved-conjectures/commit/0db9cab29b0181685a2555f0e8f17cb9ac437fb8).

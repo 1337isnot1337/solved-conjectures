@@ -58,6 +58,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 3 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Fuss--Catalan algebras on generalized Dyck paths via non-crossing partitions](https://doi.org/10.48550/arxiv.2507.23460) (2025-07-31).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Check Fuss–Catalan path conventions and exact formula — exit 0. [Command and output](../evidence/replays/056.txt).

@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [3. Bernstein coefficients and log-concavity](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/defant-engen-miller-lassalle/PROOF.md#L58).
 - [4. Uniform exact interval verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/defant-engen-miller-lassalle/PROOF.md#L87).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Searches by author, exact conjecture name, and the generating function found no prior proof of the stated log-concavity.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/defant-engen-miller-lassalle/PROOF.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:28:28Z. [Commit 05fc1606f](https://github.com/1337isnot1337/solved-conjectures/commit/05fc1606f3b5bce96b2fd0270add5d8a12b1dc3e).

@@ -24,6 +24,22 @@ The argument fixes the matrix order first. Its eventual theta-kernel signs and p
 - [8. Prior-art audit](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nuttall-cumulants/PROOF.md#L298).
 - [9. Independent review](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nuttall-cumulants/PROOF.md#L316).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The separate RH-equivalent Toeplitz positivity problem remains unresolved.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nuttall-cumulants/README.md#L3).
+
+> It does not address the separate RH-equivalent assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nuttall-cumulants/AUDIT.md#L10).
+
+> No full earlier proof of the exact assertion for \(\Phi\) was located in the inspected sources.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nuttall-cumulants/PROOF.md#L314).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:42:06Z. [Commit 0f49db3f7](https://github.com/1337isnot1337/solved-conjectures/commit/0f49db3f7d2b82ad3d72233cd14e13792956dc10).

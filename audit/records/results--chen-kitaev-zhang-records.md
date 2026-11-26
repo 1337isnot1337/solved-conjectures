@@ -23,6 +23,18 @@ Conjectures 1 and 3 concern record distributions distinct from Conjecture 2 on t
 - [6. Completion of the two conjectures](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/PROOF.md#L324).
 - [Reproduction and scope of checks](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/PROOF.md#L343).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> An independent campaign agent has checked the generating functions, transports, sixteen exact certificates, universal identity, and symbolic low-record reductions; external mathematical review remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/SOURCES.md#L49).
+
+> Status: complete proposed proof of Conjectures 1 and 3, independently checked within this research campaign; external review remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/PROOF.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:38:18-06:00. [Commit e21bb96a7](https://github.com/1337isnot1337/solved-conjectures/commit/e21bb96a7376ce5351bdeb5a7f7df2986cdcb60d).

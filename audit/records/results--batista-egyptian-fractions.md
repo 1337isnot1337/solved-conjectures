@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Prior work and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L67).
 - [Lean verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L71).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> A November 18, 2026 search by sequence number, author, and equivalent Egyptian-fraction formulations located no earlier proof specifically stating Batista's congruence.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L69).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).

@@ -20,6 +20,14 @@ The scalar covering step uses a vector space of dimension s+1 mapping into a quo
 - [Scope and earlier work](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-bounded-blocking-set/PROOF.md#L43).
 - [A non-Desarguesian check](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-bounded-blocking-set/PROOF.md#L49).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The absolute bound for all finite projective planes remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-bounded-blocking-set/README.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:42:48-06:00. [Commit 675bcb73b](https://github.com/1337isnot1337/solved-conjectures/commit/675bcb73bd751dacf531e1accc8abdefa03a7d89).

@@ -16,6 +16,18 @@ The source describes the result as follows.
 - [Normalization audit](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/PROOF.md#L125).
 - [Exact illustrations and verification scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/PROOF.md#L138).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The search found no earlier proof or disproof of the exact unweighted Hankel-total-positivity statement.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/SOURCES.md#L3).
+
+> See the earlier proof for the underlying conjecture resolution.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/NUMERICAL-MOMENTS.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:38:18-06:00. [Commit e21bb96a7](https://github.com/1337isnot1337/solved-conjectures/commit/e21bb96a7376ce5351bdeb5a7f7df2986cdcb60d).
@@ -52,6 +64,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Zhu's generalized Jacobi–Stirling conjecture zhu jacobi stirling” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Positivity properties of Jacobi–Stirling numbers and generalized Ramanujan polynomials](https://doi.org/10.1016/j.aam.2013.09.004) (2013-10-22).
+- [Convolution Properties of the Generalized Stirling Numbers and the Jacobi-Stirling Numbers of the First Kind](https://openalex.org/W2551378356) (2013-01-01).
+- [A note on the Jacobi–Stirling numbers](https://doi.org/10.1080/10652469.2013.838756) (2013-09-19).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

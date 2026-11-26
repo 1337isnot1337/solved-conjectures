@@ -17,6 +17,14 @@ The source describes the result as follows.
 - [4. Positivity in every degree](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/baricz-pogany-coefficients/PROOF.md#L173).
 - [5. Scope and attribution](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/baricz-pogany-coefficients/PROOF.md#L205).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> have not located an earlier proof or disproof of that exact assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/baricz-pogany-coefficients/NOVELTY.md#L10).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T14:09:13-06:00. [Commit 6572b7dee](https://github.com/1337isnot1337/solved-conjectures/commit/6572b7dee9a2ec8809f12b26246b2c7aacb1f406).

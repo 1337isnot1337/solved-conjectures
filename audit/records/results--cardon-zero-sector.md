@@ -25,6 +25,14 @@ The source describes the result as follows.
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The present small-\(\alpha\) counterexample does not resolve it.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cardon-zero-sector/PROOF.md#L241).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:36:48Z. [Commit 584f430c4](https://github.com/1337isnot1337/solved-conjectures/commit/584f430c4a9138b7a0fee63cffd3949439ebcdf3).

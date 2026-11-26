@@ -12,6 +12,14 @@ The source describes the result as follows.
 
 - [Proof of the geometric identities.](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/hill-luo-trinh-vindas-melendez/cube.md#L29).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The arbitrary-tail boundary assertion at $c=0$ remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/hill-luo-trinh-vindas-melendez/cube.md#L43).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:39:55-06:00. [Commit d36652f73](https://github.com/1337isnot1337/solved-conjectures/commit/d36652f7314f6443bb0b2be2fe59a8b0f2d303d5).

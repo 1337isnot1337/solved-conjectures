@@ -20,6 +20,14 @@ The source describes the result as follows.
 - [Reproduction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/PROOF.md#L167).
 - [Separate wording caveat in the older paper](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/PROOF.md#L178).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Exact-statement, title and citing-paper searches through November 2026 found no earlier proof of either unrestricted parameter statement; that search is bounded, not a guarantee of priority.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/PROOF.md#L10).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:41:11Z. [Commit a84f0efd3](https://github.com/1337isnot1337/solved-conjectures/commit/a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7).
@@ -53,6 +61,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture heim neuhauser troeger plane partition turan” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Higher Turán inequalities for the plane partition function](https://doi.org/10.1007/s40993-024-00557-y) (2024-07-28).
+- [Invariants of the quartic binary form and proofs of Chen’s conjectures on inequalities for the partition function and the Andrews’ spt function](https://doi.org/10.1007/s40687-024-00485-4) (2024-12-02).
+- [On a Problem of Douglass and Ono for the Plane Partition Function](https://doi.org/10.1007/s00026-024-00728-9) (2024-11-06).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

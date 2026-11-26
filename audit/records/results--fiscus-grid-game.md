@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [The two exceptions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/PROOF.md#L31).
 - [Checks and attribution](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/PROOF.md#L49).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> No earlier proof, counterexample or active duplicate was located in the sources that could be checked.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/AUDIT.md#L11).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T04:06:11-06:00. [Commit 046450863](https://github.com/1337isnot1337/solved-conjectures/commit/04645086355fd459c3fc0b488e0a7a900cd2d998).

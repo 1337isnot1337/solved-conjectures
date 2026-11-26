@@ -25,6 +25,22 @@ Prior papers already disprove the unrestricted shifted conjecture. This package 
 - [What did not work (all runs factual; E := 1/gamma − (n+1), needs E > 0)](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/PROOF.md#L74).
 - [Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/PROOF.md#L91).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> 2. **58 ≤ n ≤ 94 is open.** No counterexample is known for these $n$, and there is no proof that none exists.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/README.md#L37).
+
+> The range 58–94 and Zhang’s question about minimizing configurations remain open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/FORMALIZATION.md#L3).
+
+> Zhang’s question for unrestricted configurations at sizes 58–94 remains open in #110.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/FROZEN_EXTENSION.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T23:18:31-06:00. [Commit e24cae081](https://github.com/1337isnot1337/solved-conjectures/commit/e24cae081c0788dce49553cbb5439c49144ebd8c).
@@ -58,6 +74,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Zhang's Question 8.5 for 18 ≤ n ≤ 57: shifted lonely runner counterexamples” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [Coloopless zonotopes and counterexamples to the shifted lonely runner conjecture](https://doi.org/10.1007/s13163-026-00609-0) (2026-11-16).
+- [An exact counterexample to the shifted lonely runner conjecture at n = 63](https://doi.org/10.5281/zenodo.24051699) (2026-11-08).
+- [Exact counterexample certificates to the shifted lonely runner conjecture for 18 <= n <= 38](https://doi.org/10.5281/zenodo.23842166) (2026-10-31).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

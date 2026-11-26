@@ -16,6 +16,14 @@ The source describes the result as follows.
 - [The reciprocal residues cannot avoid an open box at polynomial scales](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/hornak-wozniak-research.md#L64).
 - [Exact cross-check](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/hornak-wozniak-research.md#L88).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The general proof that the extra-size checks follow from admissibility remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/hornak-wozniak-research.md#L43).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T03:59:12-06:00. [Commit 49e4f1a31](https://github.com/1337isnot1337/solved-conjectures/commit/49e4f1a3183eaa9ca1aea2c36ee70b9a1c5a2c2c).

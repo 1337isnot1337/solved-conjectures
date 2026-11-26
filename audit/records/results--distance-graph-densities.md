@@ -53,6 +53,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Maximal Density of Sets with Missing Differences and Various Coloring Parameters of Distance Graphs](https://doi.org/10.11650/tjm/200403) (2020-04-22).
+- [On sets with missing differences in compact abelian groups](https://doi.org/10.1007/s10474-025-01574-8) (2025-12-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Verify both distance-graph density results — exit 0. [Command and output](../evidence/replays/092.txt).

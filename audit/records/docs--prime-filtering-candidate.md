@@ -42,6 +42,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Prime filtering and runner consequences prime filtering candidate.md” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 2 displayed records (HTTP 200).
 
+**Related citing works returned by the search**
+
+- [Some remarks on the lonely runner conjecture](https://doi.org/10.55016/ojs/cdm.v13i2.62728) (2018-12-31).
+- [Some remarks on the lonely runner conjecture](https://doi.org/10.48550/arxiv.1701.02048) (2017-01-09).
+- [On the covering radius of lattice zonotopes and its relation to view-obstructions and the lonely runner conjecture](https://doi.org/10.1007/s00010-016-0458-3) (2017-01-06).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

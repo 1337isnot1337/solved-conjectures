@@ -16,6 +16,14 @@ The source describes the result as follows.
 - [4. The curvature calculation](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-wright/PROOF.md#L139).
 - [5. Scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-wright/PROOF.md#L218).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This is an abstract-only scope screen; the unavailable body has not been ruled out by full-text inspection.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-wright/NOVELTY.md#L30).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T13:30:40-06:00. [Commit 53744e09e](https://github.com/1337isnot1337/solved-conjectures/commit/53744e09edbe98ecc1fbb9277cb3e3a65470d14a).

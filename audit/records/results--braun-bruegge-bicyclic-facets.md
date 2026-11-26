@@ -20,6 +20,18 @@ The Omega same-source theorem treats the common-parity binomial facet sum in Con
 - [Finite base and the full extremal conjecture](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/PROOF.md#L75).
 - [Priority and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/PROOF.md#L81).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Conjecture 31 also has a separate earlier proof and is not claimed.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/AUDIT.md#L3).
+
+> Focused searches by journal/arXiv numbers and the mixed-parity maximum did not locate a prior proof of Conjecture 33.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/THETA-MAXIMIZER.md#L120).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T14:12:23Z. [Commit 9415898e8](https://github.com/1337isnot1337/solved-conjectures/commit/9415898e8c7dfa9681946b8a94a83ba678de3b00).

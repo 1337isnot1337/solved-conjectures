@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Combine the counts](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steiner-triple-system-sail/PROOF.md#L42).
 - [Vertex-disjoint monochromatic sails](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steiner-triple-system-sail/PROOF.md#L51).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> For three or more colors the arbitrary-system question remains open here.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steiner-triple-system-sail/AUDIT.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T06:00:57-06:00. [Commit 550d7b930](https://github.com/1337isnot1337/solved-conjectures/commit/550d7b9303db37eccd2f22582a8c7383d94d65ab).

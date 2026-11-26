@@ -46,6 +46,14 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 2 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [Chollet's permanent conjecture for 4 × 4 matrices](https://doi.org/10.1080/03081087.2023.2279150) (2023-11-06).
+- [An elementary proof of Chollet’s permanent conjecture for 4 × 4 real matrices](https://doi.org/10.1515/spma-2020-0126) (2021-01-01).
+- [Notes on the proof of the van der Waerden permanent conjecture](https://doi.org/10.31274/cc-20240624-1068) (2018-01-01).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.

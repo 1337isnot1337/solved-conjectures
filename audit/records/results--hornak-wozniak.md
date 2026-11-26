@@ -17,6 +17,14 @@ The source describes the result as follows.
 - [The endpoint with the fewest size-$j$ parts](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/PROOF.md#L122).
 - [4. Applying the reductions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/PROOF.md#L146).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The source audit found no earlier proof or disproof of the two §4 conjectures in their full stated ranges.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/NOVELTY.md#L20).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T04:17:13-06:00. [Commit cd6901ec2](https://github.com/1337isnot1337/solved-conjectures/commit/cd6901ec2efa201249912c5d06c1fcbc143f9311).

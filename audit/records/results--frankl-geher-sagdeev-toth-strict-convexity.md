@@ -16,6 +16,18 @@ The authors’ 2023 preprint, arXiv:2308.08840, distinguishes positive results f
 
 - [Proofs](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/frankl-geher-sagdeev-toth-strict-convexity/README.md#L9).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The conjecture for arbitrary strictly convex norms in higher dimensions remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/frankl-geher-sagdeev-toth-strict-convexity/README.md#L7).
+
+> The conjecture in unrestricted dimension remains open here.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/frankl-geher-sagdeev-toth-strict-convexity/FINITE-SPHERES.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:42:48-06:00. [Commit 675bcb73b](https://github.com/1337isnot1337/solved-conjectures/commit/675bcb73bd751dacf531e1accc8abdefa03a7d89).

@@ -14,6 +14,14 @@ The source describes the result as follows.
 - [2. Eventual monotonicity for fixed $r$](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/PROOF.md#L33).
 - [Source and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/PROOF.md#L69).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> These statements alone do not prove the quasipolynomial assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/FORMALIZATION.md#L48).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T13:23:38Z. [Commit 40b076c0d](https://github.com/1337isnot1337/solved-conjectures/commit/40b076c0d946177abfc66d8895caaac3cea5ca7b).

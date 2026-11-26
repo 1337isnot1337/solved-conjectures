@@ -29,6 +29,18 @@ Earlier exact disproof of the particular-rank clause of Conjecture 5.3. Both sou
 - [Verification and limits](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/PROOF.md#L266).
 - [Sources and prior-work distinction](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/PROOF.md#L284).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> It is not a certificate that no earlier proof exists anywhere.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/NOVELTY.md#L103).
+
+> A separate prior result (Omega Institute) disproves the introductory fixed-rank finiteness conjecture but explicitly leaves 5.3 open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/INDEPENDENT-AUDIT.md#L57).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T07:36:48Z. [Commit 584f430c4](https://github.com/1337isnot1337/solved-conjectures/commit/584f430c4a9138b7a0fee63cffd3949439ebcdf3).

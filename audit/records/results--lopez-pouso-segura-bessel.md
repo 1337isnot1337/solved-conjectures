@@ -20,6 +20,14 @@ The source describes the result as follows.
 - [8. Additional consequence for the circle-theorem constants](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/PROOF.md#L365).
 - [Classical ingredients](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/PROOF.md#L388).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Connecting these hypotheses to Bessel functions and zeros and proving that constant remain unformalized; the full repository gate is pending.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/README.md#L17).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:49:43-06:00. [Commit 088efa856](https://github.com/1337isnot1337/solved-conjectures/commit/088efa856a122ae3001ae6422aa3c93598b6d87f).

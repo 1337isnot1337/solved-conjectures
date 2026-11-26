@@ -25,6 +25,14 @@ The source describes the result as follows.
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> An independent review found no gap in these arguments; novelty has not been established.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/negami-planar-cover-research.md#L114).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T01:06:25-06:00. [Commit 5c90814fe](https://github.com/1337isnot1337/solved-conjectures/commit/5c90814fea7eff5614aa5be4aaf42b705ff99cfd).

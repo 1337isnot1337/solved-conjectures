@@ -27,6 +27,18 @@ The archived reviewer noted that an original negative control counted repeated l
 - [7. Verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/PROOF.md#L189).
 - [8. Sources](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/PROOF.md#L199).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The exact value is known only for $`\Delta=10`$, where $`\chi'_c(K_{11}-2K_2)=32/3`$.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/README.md#L31).
+
+> Computer-certified (not human-checked):** $`\Delta = 10, 14, 18, 22`$ via the SAT-found colourings of $`K_n - tK_2`$ (Proposition 2); there the exact value of $`\chi'_c`$ is known only for $`\Delta = 10`$ ($`32/3`$, see the other folder), otherwise only the interval.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/PROOF.md#L185).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T23:18:31-06:00. [Commit e24cae081](https://github.com/1337isnot1337/solved-conjectures/commit/e24cae081c0788dce49553cbb5439c49144ebd8c).

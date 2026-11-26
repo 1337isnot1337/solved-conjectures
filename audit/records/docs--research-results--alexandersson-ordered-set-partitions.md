@@ -15,6 +15,18 @@ The source describes the result as follows.
 - [Exact diagnostics](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-ordered-set-partitions/PROGRESS.md#L46).
 - [Literature screen and continuation](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-ordered-set-partitions/PROGRESS.md#L50).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The full real-rootedness and interlacing conjecture remains open.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-ordered-set-partitions/PROGRESS.md#L5).
+
+> This reality property is also a special case of the hyper-Bessel zero theorem of Chaggara and Ben Romdhane.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-ordered-set-partitions/left-edge.md#L38).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T09:39:55-06:00. [Commit d36652f73](https://github.com/1337isnot1337/solved-conjectures/commit/d36652f7314f6443bb0b2be2fe59a8b0f2d303d5).

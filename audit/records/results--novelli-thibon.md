@@ -18,6 +18,22 @@ The source describes the result as follows.
 - [6. The source's hook-coefficient formula](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/PROOF.md#L212).
 - [7. Scope and audit record](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/PROOF.md#L269).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This audit does not establish priority, and it does not prove the separate Schur-positivity assertion.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/AUDIT.md#L5).
+
+> They are not relied upon to override an earlier proof.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/SOURCES.md#L26).
+
+> This note does not prove the separate Schur-positivity conjecture, Conjecture 5.4.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/PROOF.md#L5).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T00:59:25-06:00. [Commit 8bcf7d943](https://github.com/1337isnot1337/solved-conjectures/commit/8bcf7d94349bf2a135bb0b9c7363246f4bb0dc26).

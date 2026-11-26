@@ -22,6 +22,22 @@ Earlier exact resolution of the square-root case. MathDB 369171 proves strict po
 - [Sharp bounds for arbitrary segments](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/PROOF.md#L137).
 - [Scope and attribution](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/PROOF.md#L153).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The fractional-exponent and sharp-segment supplements remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/README.md#L12).
+
+> The general fractional-exponent and sharp-segment supplements remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/FORMALIZATION.md#L3).
+
+> This is one completed original square-root conjecture; the supplements listed below remain unformalized.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/STATEMENT_REVIEW.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T12:21:20Z. [Commit d7a796c0d](https://github.com/1337isnot1337/solved-conjectures/commit/d7a796c0d20e30d3fd743318ac688dee51496212).

@@ -29,6 +29,22 @@ Checked the order of quantifiers in the stated threshold theorem against the sep
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> These hypotheses do not cover one-dimensional binary thresholds under zero-one loss.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PRIOR_AUDIT.md#L116).
+
+> The broader fixed-pool validity of the properization lemma has not been promoted to a fixed-pool bound for the shifted-tree learner.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/COMPOSITION_REVIEW.md#L15).
+
+> It does not resolve their general VC-dimension conjecture.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PROOF.md#L34).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T14:58:40-06:00. [Commit fe2f95df9](https://github.com/1337isnot1337/solved-conjectures/commit/fe2f95df9d2b70744aee69a3fcfef98207a04127).

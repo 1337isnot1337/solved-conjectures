@@ -15,6 +15,14 @@ The source describes the result as follows.
 - [Checked cached evaluator](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/frankl-cyclic-weight-orbits.md#L76).
 - [Hosted pilot evidence](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/frankl-cyclic-weight-orbits.md#L94).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The full span-four theorem remains conditional on finite certificate inputs.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/frankl-cyclic-weight-orbits.md#L3).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-19T03:22:01-06:00. [Commit 5d86c2913](https://github.com/1337isnot1337/solved-conjectures/commit/5d86c2913ae3da1364230a1806f6d41806e84698).

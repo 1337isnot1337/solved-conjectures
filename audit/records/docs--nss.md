@@ -25,6 +25,18 @@ The source describes the result as follows.
 
 The ledger includes the intervening sections.
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> The earlier proof paid a logarithmic factor to control every Fourier error individually.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/nss/fourth-moment-refinement.md#L7).
+
+> Follow-up searches for a quadratic lower bound across all row sums did not locate a prior proof; this is not a priority certification.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/nss/quadratic-refinement.md#L49).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-20T01:04:49-06:00. [Commit 138df4c84](https://github.com/1337isnot1337/solved-conjectures/commit/138df4c84f180cfb601226ba9ba4439c9ce56b73).

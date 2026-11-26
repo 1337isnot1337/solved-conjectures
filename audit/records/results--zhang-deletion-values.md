@@ -47,6 +47,13 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
+**Related citing works returned by the search**
+
+- [An exact counterexample to the shifted lonely runner conjecture at n = 63](https://doi.org/10.5281/zenodo.24051699) (2026-11-08).
+- [Exact counterexample certificates to the shifted lonely runner conjecture for 18 <= n <= 38](https://doi.org/10.5281/zenodo.23842166) (2026-10-31).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
+
 ## Verification
 
 - Verify Zhang's lonely-runner deletion values — exit 0. [Command and output](../evidence/replays/110.txt).

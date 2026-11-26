@@ -16,6 +16,22 @@ The source describes the result as follows.
 - [Refutation](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/PROOF.md#L138).
 - [What the argument does not claim](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/PROOF.md#L159).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> Intrinsic volumes, determinism of local limits, and Vitale’s limit remain open in Lean.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/README.md#L30).
+
+> It was used as a discovery aid, not as evidence that the conjecture remains unresolved.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/NOVELTY.md#L71).
+
+> The following constants are supported by text extraction and mathematical cross-checks, but that extraction does not resolve whether the inequality in Theorem 1 uses a strict or non-strict glyph.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/ALGEBRA_REVIEW.md#L9).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-21T01:43:25-06:00. [Commit ca195a285](https://github.com/1337isnot1337/solved-conjectures/commit/ca195a285f5c5a8a915d58ec42096e9fb99232c5).

@@ -21,6 +21,14 @@ Earlier exact resolution. Shunshun Ma’s Theorem 1 treats every positive Stern 
 - [3. Exact certificate for the compact region](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/PROOF.md#L143).
 - [Prior work and status](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/PROOF.md#L216).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> This premise has not been proved in any of the required near-one, compact-middle, or exterior regions.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/LEAN_REVIEW.md#L20).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T12:25:50Z. [Commit 91cba3995](https://github.com/1337isnot1337/solved-conjectures/commit/91cba3995eb1f05a288f65f08f05ecd08222e983).
@@ -55,6 +63,12 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Crossref query “Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture stern half plane” returned 0 displayed records (HTTP 0).
 - DataCite Zenodo search returned 2 displayed records (HTTP 200).
 - A separate web search is recorded with its query, titles and URLs in the ledger.
+
+**Related citing works returned by the search**
+
+- [A computer-assisted proof of the half-plane conjecture for Stern polynomials](https://doi.org/10.5281/zenodo.23639858) (2026-10-25).
+
+The dates and titles identify candidates for comparison. The audit finding records any confirmed overlap.
 
 ## Verification
 

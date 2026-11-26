@@ -18,6 +18,18 @@ The source describes the result as follows.
 - [Audit](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/PROOF.md#L153).
 - [Literature and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/PROOF.md#L165).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> I found no earlier proof of this assertion in those sources.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/AUDIT.md#L19).
+
+> No earlier proof of the unrestricted pattern-avoidance assertion or the exact-LIS refinement was found.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/PROOF.md#L167).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-26T11:37:25-06:00. [Commit 6a6760077](https://github.com/1337isnot1337/solved-conjectures/commit/6a676007769fb61df34fec44df7e6c7b5a506a56).

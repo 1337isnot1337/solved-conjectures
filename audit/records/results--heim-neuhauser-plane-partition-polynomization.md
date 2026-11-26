@@ -12,6 +12,14 @@ The source describes the result as follows.
 
 - [Proof of Heim–Neuhauser’s plane-partition polynomization conjecture](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-plane-partition-polynomization/PROOF.md#L1).
 
+## Scope and prior work recorded by the source
+
+The following qualifications come from the pinned manuscript or its accompanying review.
+
+> A targeted Nov. 24, 2026 search by title, numbered statement and both parameter ranges found the original, its ordinary-partition predecessors, and the known $x=1$ case, but no prior proof over the full real parameter ranges.
+
+[Original passage](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-plane-partition-polynomization/AUDIT.md#L7).
+
 ## Provenance
 
 - Path first added on the first-parent history on 2026-11-24T09:41:11Z. [Commit a84f0efd3](https://github.com/1337isnot1337/solved-conjectures/commit/a84f0efd3a7899a73c78019e48b3dfdf62e6a0d7).
