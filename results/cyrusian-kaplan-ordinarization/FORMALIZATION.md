@@ -118,3 +118,22 @@ the all-owned axiom audit (291 declarations,
 [Rational-polytope receipt](verification/rational-polytope/receipt.json).
 No rational triangulation, ordinary-stratum count, common correction
 coefficient, or full eventual monotonicity is asserted in this checkpoint.
+
+## Disjoint rational triangulation of the actual arrangement
+
+The [triangulation checkpoint](../../lean/Conjectures/CyrusianKaplanTriangulationCheckpoint.lean)
+gives a finite disjoint partition of each nonempty compact sign fibre
+into open simplices with rational, affinely independent vertices.
+Vertices may be on the weak boundary. The proof picks a rational point
+satisfying every strict row, takes the maximal feasible radius from
+it, and recursively cones the boundary pieces. A boundary sign code
+turns at least one nonzero row into a zero row, so the recursion
+terminates. Exact uniqueness of the radius gives disjointness.
+
+All 23 modules passed strict Lean compilation,
+the all-owned axiom audit (369 declarations,
+254 theorems, 72 private,
+9 named endpoints), and stock per-module replay.
+[Triangulation receipt](verification/triangulation/receipt.json).
+This checkpoint is geometric; the exact summed lattice count and
+eventual monotonicity are not asserted by these modules.
