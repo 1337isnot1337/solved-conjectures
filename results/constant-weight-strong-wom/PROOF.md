@@ -59,3 +59,13 @@ For any feasible $s,w$, write $u=u(b,w)$. Both $|w-\lambda s|<1$ and $|w-\lambda
 Uniformly over $0\le s\le L$ and $w\in R(s)$, one has $\log_2\binom sw\ge sH_2(\lambda)-O(\log(L+1))$. For $s\ge2$, the binomial distribution with success probability $w/s$ has a mode at $w$, so its probability there is at least $1/(s+1)$. This gives $\log_2\binom sw\ge sH_2(w/s)-\log_2(s+1)$, including the deterministic endpoints. Also $|H_2(a)-H_2(b)|\le H_2(|a-b|)$: couple the two Bernoulli variables by thresholding the same uniform variable, and recover either from the other and their disagreement bit. Since $|w/s-\lambda|\le1/s$, it follows that $s|H_2(w/s)-H_2(\lambda)|\le sH_2(1/s)\le\log_2(e s)$. The cases $s=0,1$ satisfy the estimate directly.
 
 Thus every term in the minimization is at least $s_iH_2(\lambda)-O_\lambda(\log(L+1))$. Summing proves $k\ge SH_2(\lambda)-O_\lambda(B\log(L+1))$. For fixed positive interior weights $\lambda$ is bounded away from zero as $n$ grows. Finally, fixing just one state allows only $\binom SW$ distinct outputs, so no code can have more than $\log_2\binom SW$ message bits. These bounds prove the theorem.
+
+## Cooling-code consequence
+
+In the binary low-power cooling model, $t$ specified coordinates must be zero and a transmitted word may have at most $w$ ones. Take $S=n-t$ and $W=\min(w,\lfloor S/2\rfloor)$. The encoder above meets the zero and weight constraints for every forbidden set. Its decoder recovers the message in polynomial time. For any fixed forbidden set the number of possible outputs is at most $\sum_{j=0}^{\min(w,S)}\binom Sj\le(S+1)\binom SW$. Consequently the optimal noiseless asymptotic rate at $t/n\to\tau$, $w/n\to\omega$, for $0<\tau<1$ and $\omega>0$, is attained efficiently and equals
+
+```math
+ (1-\tau)H_2\bigl(\min(\omega/(1-\tau),1/2)\bigr).
+```
+
+Chee, Etzion, Kiah and Vardy define this cooling model and discuss the efficiency and asymptotic optimality questions. The exact-weight existence capacity was already given by En Gad, Yaakobi, Jiang and Bruck. [Cooling codes, §§V, VII and VIII](https://ymchee66.github.io/home/PDF/coolingjournal.pdf) · [Strong WOM codes, Proposition 13](https://yaakobi.net.technion.ac.il/files/2015/11/16_RM_Rewriting_IT15.pdf).
