@@ -10,6 +10,8 @@ abelian reduction, the cyclic quotient normalization, and the direct
 product decomposition of the socle when all minimal normals are nonabelian.
 Each such minimal normal subgroup is a finite direct power of a
 nonabelian simple group, with its actual factors permuted transitively.
+The one-factor cyclicity step is verified under solvability of the
+outer quotient and cyclicity of the coprime automorphism subgroups.
 [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
 
