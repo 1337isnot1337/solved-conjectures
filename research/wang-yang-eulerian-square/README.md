@@ -29,3 +29,45 @@ When the right side is positive, $x,y-u$ lie between $x-u$ and $y$ and have the 
 For the normalized matrix $B(a,b)=E(a,b)/(a+b+1)!$, the two-by-two determinant is the integral over $x<y$ of the product of the respective two-row spline determinants. This is the two-function integral Cauchy–Binet identity, so every such minor of $B$ is nonnegative. All entries of $B$ are positive. The factorials $H(a,b)=(a+b+1)!$ have strictly positive two-by-two minors because $H(a',b)/H(a,b)$ strictly increases with $b$ for $a'>a$. Multiplying the two strict/weak cross-product inequalities proves the two-by-two assertion for $E$.
 
 Mixed minors of higher order remain open here. Brenti’s ordinary Eulerian triangle has entries indexed by the permutation length and descent number. Mao’s order-three result uses those indices. [Mao’s paper](https://arxiv.org/abs/2608.29224)
+
+## A finite decision for any prescribed row set
+
+**Proposition.** For every $A\ge1$, the entire rectangle with rows $0,\ldots,A$ and columns
+
+```math
+b\ge T(A)=\lceil16(A+2)^3\log(2A+4)\rceil
+```
+
+is strictly totally positive. The constant is deliberately coarse. Strict total positivity on any fixed nonempty set of rows with maximum $A$ and **all** columns is equivalent to strict positivity of its contiguous minors with first column less than $T(A)$. This leaves a finite exact decision for each prescribed row set.
+
+**Proof.** Put $M=A+2$. Take $1\le d\le A+1$, increasing rows $0\le a_1<\cdots<a_d\le A$, and consecutive columns $t,\ldots,t+d-1$. Write $x_i=a_i+1$. The explicit Eulerian formula gives
+
+```math
+E(a,b)=\sum_{h=0}^a(-1)^h {a+b+2\choose h}(a+1-h)^{a+b+1}.
+```
+
+Divide row $i$ by $x_i^{a_i+t+1}$. In column $t+j$ the first summand becomes $x_i^j$. Each remaining base is at most $x_i(1-1/(A+1))$. Using $0\le j<d$ and bounding each binomial coefficient by $(t+2A+3)^A$, the error in every entry is at most $U\eta(t)$, where
+
+```math
+U=(A+1)^{d-1},\qquad \eta(t)=A(t+2A+3)^A e^{-t/(A+1)}.
+```
+
+The function $\eta$ decreases for $t\ge16M^3\log(2M)$, by logarithmic differentiation. At the latter real threshold $t_0$, we have $t_0+2A+3\le 2t_0$ and $\log(2t_0)\le7\log(2M)$. Consequently
+
+```math
+\eta(t)\le(2M)^{1+7M-16M^2}\quad(t\ge T(A)).
+```
+
+The main matrix $[x_i^j]$ has determinant $\prod_{i<h}(x_h-x_i)\ge1$. Multilinearity, or expansion by permutations, bounds the absolute perturbation by $d!U^d((1+\eta)^d-1)\le d!U^d2^d\eta$. Here $\eta<1$ and $d!U^d2^d\le(2M)^{M^2+M}$. The perturbation is strictly less than one, so every consecutive-column minor in the tail is positive. Fekete’s criterion for finite rectangular matrices says positivity of all contiguous minors implies strict total positivity. Apply it to each finite initial part of the tail. The same criterion on any fixed row set proves the final assertion by including the remaining contiguous minors with starting column below $T(A)$. [Fekete’s criterion, Fallat–Johnson–Sokal, Theorem 2.2](https://arxiv.org/abs/1612.02210)
+
+## Where the spline argument stops
+
+For the spline kernel itself, take rows $p_1,p_2,p_3$ and evaluation points $7/10,9/10,11/10$. The resulting matrix is
+
+```math
+\begin{pmatrix}1&1&0\\7/10&9/10&9/10\\49/200&81/200&59/100\end{pmatrix}.
+```
+
+Its determinant equals $-13/500$. Thus an application of integral Cauchy–Binet that requires every such spline determinant to have the same sign cannot be justified from the spline kernel. The Eulerian-square determinant involves an integral of a product, so this example concerns the auxiliary kernel alone.
+
+The [arithmetic check](check.py) evaluates 144 of the spline integrals by multiplying exact piecewise polynomials and checking the Eulerian recurrence independently. It also checks all 4,356 two-by-two minors in the same block.
