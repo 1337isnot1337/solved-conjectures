@@ -1,0 +1,111 @@
+{
+  "wagner-laguerre-operator": {
+    "author_as_printed": "Principia Math in Progress",
+    "date_as_printed": "13 September 2026",
+    "archive_commit": "34b8b155d7db464ad7306f70b16d3af9cee34501",
+    "archive_commit_time": "2026-10-27T02:59:18Z",
+    "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-351518/mathdb-351518-solution.tex",
+    "git_blob": "48126fee078ccda310e4a8c3728b893636d61d38",
+    "sha256": "8ecbda18750fba23e53c08a438f618c957571df4b027d6111596a07a0d905515",
+    "theorem_line": 30
+  },
+  "athanasiadis-chapoton-q-zeta": {
+    "author_as_printed": "Principia Math In Progress",
+    "date_as_printed": "September 18, 2026",
+    "archive_commit": "34b8b155d7db464ad7306f70b16d3af9cee34501",
+    "archive_commit_time": "2026-10-27T02:59:18Z",
+    "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-374960/mathdb-374960-solution.tex",
+    "git_blob": "3d846dfbc9312f390d7242c919ba380c85380a44",
+    "sha256": "356291e73e857ff79122784ef08fe47f489a656aa3493e0553c0559a1ac86716",
+    "theorem_line": 43
+  },
+  "athanasiadis-chapoton-transmuted-m": {
+    "author_as_printed": "Principia Math In Progress",
+    "date_as_printed": "September 18, 2026",
+    "archive_commit": "34b8b155d7db464ad7306f70b16d3af9cee34501",
+    "archive_commit_time": "2026-10-27T02:59:18Z",
+    "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-374967/mathdb-374967-solution.tex",
+    "git_blob": "dcdafe627c6275b57cc31c6a4ed7888a5b0bcb25",
+    "sha256": "5efe760284cccc9a0de095574d071359f46bc738120880f34328e3634d35187c",
+    "theorem_line": 36
+  },
+  "kovalev-zero-free": {
+    "author_as_printed": "Principia Math In Progress",
+    "date_as_printed": "11 September 2026",
+    "archive_commit": "34b8b155d7db464ad7306f70b16d3af9cee34501",
+    "archive_commit_time": "2026-10-27T02:59:18Z",
+    "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-369171/mathdb-369171-solution.tex",
+    "git_blob": "db4b442a86f9923c34524f2744d596b087ac8b7e",
+    "sha256": "d435b402edf21f7bb278cf0f467f380ad2cafce35d7fd156afcaf108e0bb21ca",
+    "theorem_line": 27
+  },
+  "rowland-sistos-barron": {
+    "author_as_printed": "Principia Math in Progress",
+    "date_as_printed": "28 September 2026",
+    "archive_commit": "34b8b155d7db464ad7306f70b16d3af9cee34501",
+    "archive_commit_time": "2026-10-27T02:59:18Z",
+    "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-366795/mathdb-366795-solution.tex",
+    "git_blob": "d62a4f6000aa4581413e8ec7d025bfdb0c47c926",
+    "sha256": "06c1565148813d4575f36c1843a992c316fe51edee915d540c9498a04f9af392",
+    "theorem_line": 30
+  },
+  "stern-half-plane": {
+    "author_as_printed": "Shunshun Ma",
+    "version": 1,
+    "published_date": "2026-10-25",
+    "url": "https://doi.org/10.5281/zenodo.23639859",
+    "file_sha256": {
+      "Ma2026_Stern_HalfPlane_code_and_data.zip": "ce64229930beb11fb567fcfd9c6310addc34fa0e7ce40c3e970cc50afe5aae9e",
+      "Ma2026_Stern_HalfPlane_Conjecture.pdf": "622436c49f5c3c36801b82217ad444ffc67d0cb374f007cb9cb0efe5edce6a35"
+    },
+    "endpoint": "Theorem 1"
+  },
+  "gonzalez-dleon-wachs-complete-graphs": {
+    "publisher": "The Omega Institute",
+    "url": "https://github.com/the-omega-institute/trureturing/pull/33676",
+    "merge_commit": "85a69226cdcb310277588de3c4baa43350b63df4",
+    "merged_at": "2026-11-23T19:39:18Z",
+    "source_documents": [
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Blueprint/D5/S3/Combinatorics/WeightedBond/CompleteGraphSpecialization.md",
+        "git_blob": "cc7eaafdcd038efd797f66d4d98ea711d1ab878d",
+        "sha256": "e6d617570b3653af590f7ce6d8d07c1f02421341002d04deced1c47715f1d584"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Blueprint/D5/S3/Combinatorics/WeightedBond/CountableColors.md",
+        "git_blob": "d11138c0c02fd162565ec2902c0c734c105faa13",
+        "sha256": "569989d08324b12fae39f6bb7f9f9f3ee8b0cf1b2640f8dface60d8e355cfb04"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Blueprint/D5/S3/Combinatorics/WeightedBond/ExponentialSeries.md",
+        "git_blob": "52b5d13d782bb0290ad68a5dcc7f2a651238585a",
+        "sha256": "a6f8fab671135fef2617d3440912b50d43da1a82b7f0b6872b575135c0597474"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Blueprint/D5/S3/Combinatorics/WeightedBond/FiniteOrder.md",
+        "git_blob": "73e89119377ea90cdfee31b6f465ee8ee9be5b35",
+        "sha256": "dc4ac02af7eeb00dd733bd3fd437c28451aa5a605ae48daa6b1593a2f611c6b7"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Blueprint/D5/S3/Combinatorics/WeightedBond/LagrangeBurmann.md",
+        "git_blob": "a55201b94fc3635e0295b2355e579c180b1976bd",
+        "sha256": "b602e7fde8d8b531422dc96461b81fcfd7d7733de0d65710454b8d3c3b99b417"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Blueprint/D5/S3/Combinatorics/WeightedBond/PartitionExpansion.md",
+        "git_blob": "30ed5e4fa7304762ca2e66c9cd10103c9d4d24e8",
+        "sha256": "16d77343c88492ef13bf93fb36f2d09b47ecb9dba29158e943e4ee9ebaf9375a"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Library/Certificates/gonzalezdeleonwachs2026weighted.md",
+        "git_blob": "0f901b247abe70720cca570633403f5e5598f1c0",
+        "sha256": "6ecd29f668f1c34c5a4b4bb2fa92978919264c9eb94b59e4444705692b81c711"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/trureturing/blob/85a69226cdcb310277588de3c4baa43350b63df4/Problems/gonzalez-dleon-wachs-question-7-1.md",
+        "git_blob": "668fdc0328cc73b44edb62f270f5dd0b90cfe910",
+        "sha256": "a7d930f005b5cdda3b7c83ca13a01fed3ac0ec612423f35c99e3b5c2293a77b5"
+      }
+    ]
+  }
+}
