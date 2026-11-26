@@ -90,8 +90,8 @@ Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of 
 Complete for Conjecture 10. Lean identifies the original forbidden-rise
 permutation count with the exact sixteen-mask sum and verifies the
 published order-eight recurrence at every natural index, including the
-empty permutation. The separate order-thirteen certificate checks the
-symbolic residuals.
+empty permutation. Lean also proves the supplemental order-thirteen
+recurrence for the same count at every index.
 [Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture
