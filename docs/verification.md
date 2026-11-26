@@ -1,5 +1,9 @@
 # Verification
 
+## Welton–Khudairi–Tuite lower general position product conjecture
+
+Run `python3 results/welton-khudairi-tuite-lower-gp-product/verify.py`. It builds the actual factors and Cartesian products and checks all twin profiles, all six-vertex-base supports, and an endpoint witness for every outside product vertex at parameters 7, 8, 11 and 15. The [written disproof](../results/welton-khudairi-tuite-lower-gp-product/PROOF.md) holds uniformly, independently of the finite checks.
+
 ## Bollobás–Erdős–Tuza conjecture
 
 Run `python3 results/erdos-611-clique-transversals/check.py`, `python3 results/erdos-611-clique-transversals/check_recursive.py` and `python3 results/erdos-611-clique-transversals/check_structure.py`. These check the base graphs, the substitution formula, 150 exact recurrence steps and the independent-block counting identity. The [review](../results/erdos-611-clique-transversals/AUDIT.md) identifies the arguments giving the asymptotic bounds.
