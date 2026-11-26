@@ -43,3 +43,23 @@ Attach $R$ copies of a star with $L$ edges by identifying **one leaf** of each c
 For fixed $m$ and $L$, with probability tending to one as $R\to\infty$, every value from $1$ through $L$ occurs at some center. A union bound for the failure probability is $L(1-2^{-L})^R$. There are at most $r$ further distinct values. The polynomial of $L+r-K$ thus converges coefficientwise, for fixed $m$, to that of $r-J_m$. It is the reciprocal $t^{L+r}\mathbb E[t^{-K}]$ of the normalized graphical polynomial (allowing initial zero coefficients).
 
 Choose disjoint disks about the $r$ simple zeros of $P_r$, each disjoint from the real axis. For all sufficiently large $m$, the polynomial of $r-J_m$ has a zero in every disk, by continuity of polynomial roots, or by Rouché’s theorem on their boundaries. Fix such an $m$. For all sufficiently large $R$ the polynomial of $L+r-K$ also has a zero in every disk, by the same boundary argument in fixed degree at most $L+r$. Reciprocation gives $r$ distinct nonreal roots of the original polynomial. The graph before attaching the stars is a 2-tree, having been built by adjoining vertices on edges. The pendant trees preserve chordality and treewidth two. This proves the theorem.
+
+## An explicit 71-vertex counterexample
+
+Take the same core with two vertices $h_1,h_2$ and 20 degree-two vertices attached on each of their edges to $u$. At $u$ attach a clique on ten vertices, one of them $u$. Add 18 more mutually nonadjacent vertices, each adjacent to the entire clique. The nine new clique vertices follow both $h_i$ in the order, and the 18 additional vertices come last. This connected chordal example has 71 vertices and 310 edges. The preceding asymptotic theorem gives the stronger treewidth bound using stars.
+
+Here is an exact certificate that can be reproduced by counting sets of positive values. Write $Q(t)=\mathbb E[t^{12-K}]$. All earlier indegrees outside $h_1,h_2$ are at most ten. Conditional on the direction of $uv$ and the gap $g$ of a distinguished vertex, let $x$ mark the number of its 20 adjacent degree-two vertices pointing into it. Its count is $x^g(1+2x)^{20}$ when $u\to h$, and $x^g(2+x)^{20}$ when $h\to u$. To count the choices where none of those 20 vertices has earlier indegree one, replace the two expressions by $x^{g+20}$ and $x^g(1+x)^{20}$ respectively. In that restriction every degree-two vertex must precede $u$ in its triangle orientation. These four expressions determine the support of all positive earlier indegrees in the core, including the possible extra value one at $v$.
+
+For a subset $S\subseteq\{1,\ldots,10\}$ the number of orientations of the attached graph for which all positive values lie in $S$ is
+
+```math
+(1+|S|)^{18}\prod_{j=1}^9(1+|S\cap\{1,\ldots,j\}|).
+```
+
+Indeed each successive clique vertex can be inserted in any gap of the oriented earlier clique. After the clique order is fixed, each of the 18 independent vertices also chooses a gap. Their choices are simultaneously acyclic, since the vertices in each gap can be placed consecutively in a total order. Inverting the displayed subset sums gives the number for each exact support. Combine it with the core support by set union. The normalized polynomial has denominator equal to the orientation count $2\cdot 3^{42}\cdot 10!\cdot 11^{18}$. The [integer and rational verifier](check.py) gives
+
+```math
+Q'(-7/10)^2-Q(-7/10)Q''(-7/10)<-1/40000.
+```
+
+For a real-rooted polynomial $Q$, the left-hand expression is nonnegative at every real argument. Away from roots this follows by logarithmic differentiation, and at the roots by continuity. Thus the graph’s graphical dist polynomial has a nonreal conjugate pair. The verifier independently checks the support formulas on four smaller ordered graphs by directing each edge both ways and testing acyclicity from the resulting arcs.
