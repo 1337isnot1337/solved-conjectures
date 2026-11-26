@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Kovalev’s Hardy-duality bounds
+
+Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Theorems and source-matched receipt](results/kovalev-hardy-duality/FORMALIZATION.md).
+
 ## 2026-11-26 — The Steiner triple system sail problem
 
 A double count and a parity argument answer Gyárfás’s sail question in every sufficiently large two-colored Steiner triple system. A positive fraction of all sails are monochromatic. One color contains a linear number of vertex-disjoint sails. [Proof](results/steiner-triple-system-sail/PROOF.md) · [Source and independent review](results/steiner-triple-system-sail/AUDIT.md).

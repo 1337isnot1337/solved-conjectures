@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Kovalev’s Hardy-duality counterexample
+
+Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Lean scope and receipt](../results/kovalev-hardy-duality/FORMALIZATION.md).
+
 ## Dukes’s revstack interlacing conjecture
 
 Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Theorems and receipt](../results/dukes-revstack/FORMALIZATION.md).

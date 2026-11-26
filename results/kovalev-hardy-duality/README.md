@@ -31,4 +31,4 @@ Both checkers use only Python's standard library and exact rational arithmetic. 
 {20430400000000000000000000000000}>0.
 ```
 
-The first independent mathematical review and the separate source/priority audit passed. The argument remains unrefereed; internal review is not journal peer review. No Lean formalization is claimed. The current audit found no earlier resolution within its documented coverage.
+The first independent mathematical review and the separate source/priority audit passed. The argument remains unrefereed; internal review is not journal peer review. **Lean status:** partial. Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Theorems and receipt](FORMALIZATION.md). The current audit found no earlier resolution within its documented coverage.
