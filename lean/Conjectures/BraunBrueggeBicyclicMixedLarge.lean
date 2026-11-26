@@ -8,7 +8,7 @@ open Real
 
 namespace BraunBruegge
 
-private theorem half_sum_bound_of_sq {u x y : ℝ} (hx : 0 ≤ x) (hy : 0 ≤ y) (h : u ^ 2 ≤ x * y) :
+theorem half_sum_bound_of_sq {u x y : ℝ} (hx : 0 ≤ x) (hy : 0 ≤ y) (h : u ^ 2 ≤ x * y) :
     u ≤ (x + y) / 2 :=
   le_of_sq_le_sq (h.trans (by nlinarith [sq_nonneg (x - y)])) (by linarith)
 
@@ -84,7 +84,7 @@ private theorem normalizedMixed_unit_path_le (a b : ℕ) (ha : 10 ≤ a) (hb : 1
     _ = ((a : ℝ) * b) * z + 2 * z := by dsimp [z]; ring
     _ ≤ _ := by linarith only [hp, hq]
 
-private theorem normalizedMixed_smallPart_le (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c)
+theorem normalizedMixed_smallPart_le (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c)
     (hl : 144 ≤ a + b + c) (hsmall : a < 10 ∨ b < 10) :
     normalizedMixedTwoSlack a b c + normalizedMixedOneSlack a b c ≤ (11 : ℝ) / 24 * ((a : ℝ) + b + c + 1) := by
   let l : ℝ := (a : ℝ) + b + c
