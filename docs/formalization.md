@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Dukes’s revstack interlacing conjecture
+
+Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Theorems and receipt](../results/dukes-revstack/FORMALIZATION.md).
+
 ## Nathanson’s linear-form Sidon systems
 
 Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Theorems and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).

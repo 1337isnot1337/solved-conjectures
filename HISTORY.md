@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Dukes’s literal revstack descent polynomials
+
+Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Theorems and source-matched receipt](results/dukes-revstack/FORMALIZATION.md).
+
 ## 2026-11-26 — Zhang and Novelli–Thibon verification records
 
 A new [Zhang deletion-values receipt](results/zhang-deletion-values/FORMALIZATION.md) covers both exact cases and the strict inequality. The Novelli–Thibon landing page now links the [partial proof and eight existing receipts](results/novelli-thibon/FORMALIZATION.md).
