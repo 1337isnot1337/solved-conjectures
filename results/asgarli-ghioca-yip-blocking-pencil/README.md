@@ -7,3 +7,5 @@ The lower bound extends to arbitrary degree-$d$ polynomial graphs with the same 
 **Review status.** Research proof awaiting independent mathematical review.
 
 **Lean status:** none.
+
+For [Frobenius exponents](FROBENIUS.md), the shift parameters must meet every affine hyperplane over the fixed field. The Jamison–Brouwer–Schrijver theorem then gives the exact finite minimum.
