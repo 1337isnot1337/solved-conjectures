@@ -22,6 +22,8 @@ jobs:
         run: python3 results/permutation-digraph-general-position/verify.py
       - name: Check oriented-tree general position by directed geodesics
         run: python3 results/general-position-oriented-trees/verify.py
+      - name: Check mobile general position by exact recolouring and host slides
+        run: python3 results/mobile-general-position-complexity/verify.py
       - name: Check both Builder–Blocker reductions by exact metric minimax
         run: python3 results/builder-blocker-general-position-complexity/verify.py
       - name: Check exact fractional square-grid cover certificates

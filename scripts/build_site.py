@@ -62,6 +62,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Mobile general position complexity": "mobile-general-position-complexity",
     "Permutation digraph general position conjecture": "permutation-digraph-general-position",
     "General position number of oriented trees": "general-position-oriented-trees",
     "Builder–Blocker general position complexity conjecture": "builder-blocker-general-position-complexity",
