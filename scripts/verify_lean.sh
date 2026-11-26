@@ -2819,6 +2819,8 @@ modules=(
   Conjectures.WaringGapSymmetry
   Conjectures.TomVailayaColorTrace
   Conjectures.TomVailayaColorGluing
+  Conjectures.TomVailayaPathRows
+  Conjectures.TomVailayaWeightedPathRows
   Conjectures.KauersKoutschanCertificate
   Conjectures.KauersKoutschanDividedSum
   Conjectures.KauersKoutschanCount

@@ -1508,6 +1508,7 @@ import Conjectures.SobolewskiUlasExceptionOriginalReduction
 import Conjectures.SobolewskiUlasExceptionResidueCertificate
 import Conjectures.TomVailayaColorTrace
 import Conjectures.TomVailayaColorGluing
+import Conjectures.TomVailayaWeightedPathRows
 import Conjectures.KauersKoutschanCertificate
 import Conjectures.KauersKoutschanDividedSum
 import Conjectures.KauersKoutschanFiniteRecurrence
