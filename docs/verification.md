@@ -12,6 +12,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Misère Domination Game
+
+Run `python3 results/misere-domination-game/verify.py` for exact minimax on octal partitions, direct graph outcomes, and parameter-family witnesses. The [written proof](../results/misere-domination-game/PROOF.md) applies to every path, every cycle, and every sum of octal 0.337 heaps.
+
 ## Builder–Blocker general position complexity conjecture
 
 Run `python3 results/builder-blocker-general-position-complexity/verify.py` to compare both host games with the source optimization Node Kayles games by exact minimax. Add `--atlas` with NetworkX available to include the independent graph atlas. [Written proof and scope](../results/builder-blocker-general-position-complexity/PROOF.md).
