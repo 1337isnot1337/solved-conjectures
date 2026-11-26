@@ -26,6 +26,8 @@ Start with the empty word. Append each step in $`F`$ unless a new suffix of two 
 
 Run `python3 research/ulam-sequence-density/parent_chains.py`. One enumeration records suffix sums relative to the current endpoint. The other marks forbidden absolute positions from all vertices preceding the current endpoint. Both verify every length count and the entire set of attainable endpoints. Both raise an error if a word exceeds the listed maximum. [Verifier](parent_chains.py)
 
+The difference cutoff matters. For example, allowing step 28 while checking differences only through 800 admits arbitrarily many successive 28s. The first Ulam multiple of 28 after 28 itself is 1,428. At cutoff 3,000 the periodic repetition of the six steps $`(2,47,69,47,69,47)`$ also survives. Its smallest forbidden sum of two or more consecutive steps is 3,207, as the verifier checks from each of the six starting positions. These are tests of allowable step words. Membership of the corresponding translated terms requires the full recurrence.
+
 Let $`D_F`$ be that finite set of endpoints and set $`M=H+(L+1)\max F`$. From a term $`n>M`$, trace the larger parent backwards while either parent is in $`F`$. For the first $`L+1`$ such steps all vertices would exceed $`H`$, and the member of $`F`$ must be the smaller parent. The word test rules out $`L+1`$ steps. The trace therefore ends at a term of $`E_F`$, at an offset in $`D_F`$ from $`n`$. This proves the covering and the counting inequality above. The same proof gives the two other rows with their respective values of $`M`$, $`R`$ and $`\lvert D_F\rvert`$.
 
 ## An equivalent zero-density question

@@ -67,7 +67,22 @@ def prefix_sources(terms, x):
     actual = sum(1 << (a - x - 1) for a in terms[len(old):bisect_right(terms, 2 * x)])
     if forced & ~actual or actual & ~possible:
         raise ValueError("invalid certification of a dyadic block")
-    return singles.bit_count(), forced.bit_count(), actual.bit_count()
+    lower, upper = 0, possible
+    for _ in range(5):
+        low_hits = high_hits = (reached >> (x + 1)) & block
+        low_repeat = high_repeat = (multiple >> (x + 1)) & block
+        for a in old:
+            new_low = (lower << a) & block
+            new_high = (upper << a) & block
+            low_repeat |= low_hits & new_low
+            high_repeat |= high_hits & new_high
+            low_hits |= new_low
+            high_hits |= new_high
+        lower, upper = low_hits & ~high_repeat, high_hits & ~low_repeat
+        if lower & ~actual or actual & ~upper:
+            raise ValueError("invalid propagated block bounds")
+    return (singles.bit_count(), forced.bit_count(), actual.bit_count(),
+            lower.bit_count(), upper.bit_count())
 
 
 def main():
@@ -102,8 +117,9 @@ def main():
                 singletons += r == 1
         print(f"phase window ending at {x}: moment {moment}, singletons {singletons}")
     for x in (2048, 8192, 32768, 65536):
-        unique, forced, actual = prefix_sources(terms, x)
-        print(f"block ({x},{2*x}]: old-pair singletons {unique}, forced {forced}, actual {actual}")
+        unique, forced, actual, lower, upper = prefix_sources(terms, x)
+        print(f"block ({x},{2*x}]: old-pair singletons {unique}, forced {forced}, actual {actual}, "
+              f"five-round interval [{lower},{upper}]")
 
 
 if __name__ == "__main__":

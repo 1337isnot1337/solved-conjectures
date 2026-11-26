@@ -50,7 +50,24 @@ def check_words(steps, horizon, max_length):
           f"span {max(endpoints)}, {len(endpoints)} endpoints", flush=True)
 
 
+def check_short_cutoff():
+    anchors = set(ulam_prefix(4600))
+    word = (2, 47, 69, 47, 69, 47)
+    conflicts = []
+    for start, first in enumerate(word):
+        total = first
+        index = start + 1
+        while total <= 4600:
+            total += word[index % len(word)]
+            if total in anchors:
+                conflicts.append(total)
+            index += 1
+    if min(conflicts) != 3207 or min(a for a in anchors if a > 28 and a % 28 == 0) != 1428:
+        raise ValueError("the periodic witnesses have different first forbidden sums")
+
+
 if __name__ == "__main__":
+    check_short_cutoff()
     check_words(ulam_prefix(18), 500, 25)
     check_words(ulam_prefix(26), 900, 36)
     check_words([2, 3, 47, 69], 4600, 97)

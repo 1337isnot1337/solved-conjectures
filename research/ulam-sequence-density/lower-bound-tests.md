@@ -27,14 +27,14 @@ Among the 38,865 Ulam numbers through 524,288, exactly 10,721 have both parents 
 
 Fix $`x`$, let $`B=U\cap[1,x]`$, and work in $`(x,2x]`$. Write $`P`$ for the targets with exactly one representation from $`B`$, and $`V`$ for those with at most one. Every actual new term belongs to $`V`$. At a target in $`P`$, a competing representation would need one new term $`t\in V`$ and one $`b\in B`$, since two integers larger than $`x`$ already sum to more than $`2x`$. Therefore every member of $`P\setminus(V+B)`$ is forced into the sequence.
 
-| $x$ | Old-pair singletons $P$ | Forced by this test | Actual new terms |
-| ---: | ---: | ---: | ---: |
-| 2,048 | 142 | 0 | 162 |
-| 8,192 | 359 | 1 | 632 |
-| 32,768 | 723 | 0 | 2,460 |
-| 65,536 | 1,199 | 0 | 4,844 |
+| $x$ | Old-pair singletons $P$ | Forced by this test | Lower and upper counts after five rounds | Actual new terms |
+| ---: | ---: | ---: | ---: | ---: |
+| 2,048 | 142 | 0 | 6 to 978 | 162 |
+| 8,192 | 359 | 1 | 9 to 3,248 | 632 |
+| 32,768 | 723 | 0 | 10 to 11,357 | 2,460 |
+| 65,536 | 1,199 | 0 | 6 to 21,793 | 4,844 |
 
-The empty forced set at several scales rules out a positive pointwise lower bound from this one pass at those scales. It also identifies the loss: a position in $`V`$ with no actual Ulam term can suppress a valid inference. Tracking all later choices one at a time recovers the defining recursion, which by itself gives no scale-independent estimate. The [dilation argument](dilations.md) gives a different sufficient condition for a positive natural density.
+The empty forced set at several scales rules out a positive pointwise lower bound from this one pass at those scales. A vacant position in $`V`$ can suppress a valid inference. We also iterated the test starting with no confirmed sites and $`V`$ as the possible sites. In each round, count representations from old pairs and from old terms plus confirmed or possible sites. If the minimum and maximum are both 1, inclusion is forced. If 1 lies outside that range, exclusion is forced. Even after five rounds the certified intervals in the table are wide. Tracking all later choices one at a time recovers the defining recursion, which by itself gives no scale-independent estimate. The [dilation argument](dilations.md) gives a different sufficient condition for a positive natural density.
 
 ## Why uniqueness for accepted terms cannot settle density
 
