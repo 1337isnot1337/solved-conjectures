@@ -44,7 +44,7 @@ Run `python3 results/zeng-unscaled-interlacing/check.py`. The checker runs 224 e
 
 ## Alexandersson’s transportation polytope conjecture
 
-Run `python3 results/alexandersson-transportation/check.py`. The checker reconstructs 25 Ehrhart counts directly from the transportation constraints and verifies the Laguerre violation and the exact real-root count by rational arithmetic. [Proof](../results/alexandersson-transportation/proof.md) · [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350)
+Run `python3 results/alexandersson-transportation/check.py`. The checker reconstructs 25 Ehrhart counts directly from the transportation constraints and verifies the Laguerre violation and the exact real-root count by rational arithmetic. [Proof](../results/alexandersson-transportation/proof.md) · [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350) Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Lean theorems and verification receipt](../results/alexandersson-transportation/FORMALIZATION.md).
 
 ## Wang–Yang's Fuss–Narayana conjecture
 
