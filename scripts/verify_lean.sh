@@ -877,11 +877,6 @@ modules=(
   Conjectures.LassalleIntervalProducts
   Conjectures.LassalleQuotientSymmetry
   Conjectures.LassalleStackSorting
-  Conjectures.SternHalfPlaneBasic
-  Conjectures.SternHalfPlaneShift
-  Conjectures.SternHalfPlaneParabola
-  Conjectures.SternHalfPlaneContinuant
-  Conjectures.SternHalfPlaneRealAxis
   Conjectures.NuttallThetaKernel
   Conjectures.NuttallThetaTail
   Conjectures.NuttallThetaTermDerivatives
@@ -914,7 +909,6 @@ modules=(
   Conjectures.BursteinDescentTop
   Conjectures.BenfieldLippardParity
   Conjectures.CsordasVishnyakova
-  Conjectures.WagnerLaguerreOperator
   Conjectures.MaTangCoreBalance
   Conjectures.MaTangCoreIndexed
   Conjectures.MaTangCoreMatrix

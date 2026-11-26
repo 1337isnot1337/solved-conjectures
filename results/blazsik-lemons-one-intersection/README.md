@@ -2,7 +2,7 @@
 
 **Lean status:** none.
 
-A finite hypergraph with no singleton intersections admits a proper weak coloring that is rainbow on every part of any prescribed partition into equal-sized blocks of size at least two.
+A finite hypergraph whose edges have size at least two and whose distinct edges never meet in exactly one vertex admits a proper weak coloring that is rainbow on every part of any prescribed partition into equal-sized blocks of size at least two.
 
 The proof partitions all vertices into independent transversals. The original weak-coloring conjecture for an arbitrary even chromatic number of the one-intersection graph remains open. [Blázsik and Lemons, Conjecture 3.1](https://doi.org/10.1016/j.disc.2025.114810)
 

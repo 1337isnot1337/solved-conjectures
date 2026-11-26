@@ -331,4 +331,4 @@ jobs:
       - name: Check Cardon cubic and Rowland rank-sequence certificates
         run: |
           python3 results/cardon-zero-sector/verify.py
-          python3 results/rowland-sistos-barron/verify.py --max-exponent 100
+          python3 docs/rank-six-power-ranks/verify.py --max-exponent 100

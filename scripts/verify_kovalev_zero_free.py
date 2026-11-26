@@ -57,7 +57,7 @@ receipt = {
     'status': 'running',
     'started_at': datetime.now(timezone.utc).isoformat(),
     'unformalized_supplements': ['General fractional exponents', 'Sharp arbitrary-segment bounds', 'Adjacent trigonometric Conjecture 1.3'],
-    'entry': 'results/kovalev-zero-free/',
+    'entry': 'docs/kovalev-fractional-taylor-sections/',
     'documented_proof_commit': '6432592c03b24aed190ed7b3204ed942a40a8da4',
     'source_sha256': source_hashes,
     'project_modules': modules,

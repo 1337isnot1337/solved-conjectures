@@ -53,13 +53,13 @@ from an explicit stable ordinary Schur expansion; the existence
 and stability of that expansion remain outside the check.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
-## González D’León–Wachs’s complete-graph specialization question
+## Gamma moments, log-concavity and real zeros for weighted complete graphs
 
 Complete for the stated equal-variable result. Lean verifies the
 literal Laguerre and actual Gamma expectation formulas, the boundary
 color formulas, strict ordinary coefficient log-concavity, and the
 real-zero count. Schur-log-concavity is outside the stated result.
-[Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Lean scope and receipt](../docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
 
@@ -85,10 +85,6 @@ Lean verifies the seven graphs and the combined existence result for every maxim
 
 The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) proves the exact Hausdorff dimension for every positive nonincreasing approximation function bounded by one. The proof checks the literal unreduced denominators, the cylinder upper bound, and the lower bound by a Hölder decoding of nested target intervals. The eleven-module closure passed strict compilation, the complete owned-declaration axiom audit, and stock-kernel replay. See the [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json).
 
-
-## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
-
-Partial. Lean checks the exact polynomial recurrence, the all-index continuant reduction under its parabolic hypothesis, and unconditional nonvanishing on the positive real axis. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
 
 ## Nuttall's conjecture
 
@@ -118,10 +114,6 @@ Strict compilation, a 256-owned-declaration/14-endpoint axiom audit, and stock r
 
 Lean 4.35.0 strict build, 49-owned-declaration/9-endpoint axiom audit, and stock replay passed. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json).
 
-## Wagner's Laguerre-operator conjecture
-
-Strict Lean 4.35.0 compilation, all 39 owned declarations and six required endpoints, and stock replay passed. The distinct sequence conjectures 4.1 and 4.2 are not formalized here. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json).
-
 ## Ma–Tang’s random subset-sum threshold conjecture
 
 Lean 4.35.0 passed the 32-module strict build, 1,514-declaration owned-axiom audit, and 32 stock replays. The original target and equation (1) are checked, not the separate bounded-error supplement. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json).
@@ -148,9 +140,9 @@ The [complete Lean formalization](../results/hajdu-sarkozy-shifted-products/FORM
 
 The twenty-four-module closure, comprising thirteen new modules and eleven unchanged dependencies, passed strict builds, the complete all-owned/private axiom audit, and exact stock-kernel replay. All fifty-three required endpoints are checked, and only the three standard axioms occur. The [independent review](../results/hajdu-sarkozy-shifted-products/LEAN_REVIEW.md), [proof receipt](../results/hajdu-sarkozy-shifted-products/verification/receipt.json), and [publication binding](../results/hajdu-sarkozy-shifted-products/verification/publication-binding.json) distinguish the proof gate from metadata-only registration checks. The optional extension to more than two variables is not separately formalized. Existing credits, priority uncertainty, and catalogue rank are retained; reused dependencies and corollaries are not additional results.
 
-## Kovalev’s square-root Taylor-section zero-free conjecture
+## Fractional powers of geometric sums and sharp coefficient-segment bounds
 
-The original Conjecture 1.2 is complete, with every positive geometric-polynomial length and every section degree proved. The literal Taylor coefficients use iterated complex derivatives. Actual beta measures, their transport identity, the finite-section integral identity, and every closed-disk boundary point are included. Twenty-one fresh strict modules, the complete all-owned/private axiom audit, and exact stock-kernel replay passed; only the three standard logical axioms occur. [Scope](../results/kovalev-zero-free/FORMALIZATION.md) · [Statement review](../results/kovalev-zero-free/LEAN_REVIEW.md) · [Receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json).
+The original Conjecture 1.2 is complete, with every positive geometric-polynomial length and every section degree proved. The literal Taylor coefficients use iterated complex derivatives. Actual beta measures, their transport identity, the finite-section integral identity, and every closed-disk boundary point are included. Twenty-one fresh strict modules, the complete all-owned/private axiom audit, and exact stock-kernel replay passed; only the three standard logical axioms occur. [Scope](../docs/kovalev-fractional-taylor-sections/FORMALIZATION.md) · [Statement review](../docs/kovalev-fractional-taylor-sections/LEAN_REVIEW.md) · [Receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json).
 
 The recorded fractional-exponent and sharp-segment supplements remain unformalized. One original conjecture is counted; individual lengths and degrees are not separate results. The repository-wide cache/hosted/deployment follow-up is [issue #563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
@@ -290,22 +282,17 @@ proofs are documented separately in the catalogue and result package.
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Partial | Lean checks the actual direct and skew displacement shifts, diagonal fiber counts, and the separation of distinct children at skew nodes. Lean constructs the alternating tree permutations and verifies the finite spine-record counts. Lean checks the exact tree enumeration, critical weights, and conditional transfer from finite record probabilities. The asymptotic and almost-sure hit arguments remain. [Scope and receipt](../results/separable-derangements-limit/FORMALIZATION.md). |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
-| Kovalev’s square-root Taylor-section zero-free conjecture | Complete original square-root conjecture | Every positive length, every Taylor degree, and the full closed unit disk, with actual derivative coefficients and beta measures. Fractional-exponent and segment supplements remain unformalized. [Scope](../results/kovalev-zero-free/FORMALIZATION.md) · [Receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json). |
-| Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture | Partial | Exact Stern recurrence and continuation criterion for all positive indices, and unconditional positive real-axis nonvanishing. The regional complex estimates and compact certificate are outside this receipt. |
 | McNamara–Steingrímsson’s interval rank-unimodality conjecture | Complete | Original Conjecture 9.4, with the exact three literal rank counts and strict dip. [Lean proof and receipt](../results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md). |
 | Shumyatsky’s conjugate prime-spectrum conjecture | Partial | Lean proves the exact finite-group statement under four explicit finite-simple-group automorphism and generation inputs. It checks the abelian and nonabelian reductions, actual factor actions, local lifts under those hypotheses, and Gaschütz’s lifting lemma. [Scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md). |
 | Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture | Not formalized | The [all-degree written proof](../results/erz-big-descent-schur/PROOF.md) includes the exact longest-increasing-subsequence refinement. Two [exact checkers](../results/erz-big-descent-schur/AUDIT.md) accompany the proof. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Partial | Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Lean scope](../results/dukes-revstack/FORMALIZATION.md). |
-| González D’León–Wachs’s complete-graph specialization question | Complete | Lean verifies the exact equal-variable Laguerre and Gamma formulas, the one- and two-color formulas, strict ordinary coefficient log-concavity for every positive number of colors, and the exact real-zero multiset for at least three. No Schur-log-concavity claim. [Lean scope and receipts](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md). |
 | Almirón–Moyano-Fernández’s Wilf-module questions | Complete | Lean proves the threshold-two counterexample family, all six normalized module clauses, the gap-antichain classification and the exact thresholds over every two-generated semigroup. [Scope and receipt](../results/almiron-moyano-wilf-module-questions/LEAN.md). |
 | Defant–Engen–Miller’s Lassalle refinement conjecture | Partial | Lean checks all 53 base rows, the eventual interval and error bounds, and the Bessel root bracket. The exact permutation conjecture follows conditionally on the count bridge and classical Bessel product data. [Lean scope](../results/defant-engen-miller-lassalle/FORMALIZATION.md). |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
 | Sagan–Wilson’s plactic coefficient-mode conjecture | Partial | Lean disproves Conjecture 7.3(d) from the insertion tableaux of actual centralizing words. For length ten the fifth and sixth binomial coefficients are 75,095 and 88,704. The asymptotic mode theorem remains in the written proof. [Lean scope](../results/sagan-wilson-plactic-mode/FORMALIZATION.md) |
 | Juhnke’s arbitrary-step lattice-path log-concavity conjecture | Complete | Log-concavity and unimodality of the literal original path counts for every dimension `d ≥ 2` and every step count. All 18 modules passed strict compilation, the all-owned audit (577 declarations, 502 theorems), and stock-kernel replay. [Scope and receipt](../results/juhnke-lattice-paths/LEAN-AUDIT.md). |
 | Athanasiadis–Chapoton’s polar preorder duality conjecture | Complete | Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates have equivalent lattice-point sets, hence equal Ehrhart series and numerators. The real transfer is a positively homogeneous homeomorphism. [Lean scope](../results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md) |
-| Athanasiadis–Chapoton’s q-zeta reciprocity conjecture | Not formalized | Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation. |
-| Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture | Not formalized | Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization. |
 | Gawron–Miska–Ulas’s Thue–Morse valuation conjecture | Complete | Lean proves the literal disproof of Conjecture 5.2 using exponent 17 and verifies the aligned family for every k ≥ 11. All three modules passed strict compilation, the all-owned axiom audit and stock-kernel replay. [Lean](../lean/Conjectures/ThueMorseValuation.lean) · [Local receipt](../docs/verification/lean-thue-morse-valuation-20261124/receipt.json). |
 | Sobolewski–Ulas’s binary-partition exception regularity conjecture | Partial | Lean proves the exact source-layer power-of-two obstruction, all actual partition congruences, and inclusion in the exception set. The converse of Legendre’s criterion and the Cobham–Durand implication remain external. [Lean scope](../results/sobolewski-ulas-exception-regularity/FORMALIZATION.md). |
 | Gawron–Ulas’s partition-sign nonperiodicity conjecture | Complete for the original conjecture | Lean proves non-eventual periodicity of the signs for parts congruent to 1 modulo 3. The stronger sign assertions on every index progression and for other part moduli remain in the written proof. [Lean scope and receipt](../results/gawron-ulas-partition-signs/FORMALIZATION.md). |
@@ -339,8 +326,6 @@ proofs are documented separately in the catalogue and result package.
 | Csordas–Vishnyakova conjecture | Complete | Original Conjecture 3.6, including all real arguments and all Taylor orders, with the actual approximation definition. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json). |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Complete: Question 6.1 and uniform small-damping obstruction | Lean checks the exact cubic at p = 3 and proves failure throughout a small positive-damping interval for each real p > 2. [Scope and source](../results/cardon-zero-sector/LEAN.md). |
 | Brown–Cameron’s independence-root sector and stability problems | Not formalized | The [written proof](../results/brown-cameron-stability/PROOF.md) gives limsup lower bounds for right-half-plane roots and failure of log-concavity. The [exact checks](../results/brown-cameron-stability/REVIEW.md#reproducible-checks) are corroboration, not part of the proof. |
-| Wagner's Laguerre-operator conjecture | Complete | Proves the full original 4.3 counterexample; hypotheses are the actual approximation and positivity conditions. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json). |
-| Rowland–Sistos Barrón conjecture | Complete | Actual minimum tail-recurrence ranks over every characteristic-zero field; the exact rank formula for all M≥49 and failure of every eventual quasipolynomial. All 17 modules passed strict compilation, the all-owned audit (286 declarations, 261 theorems), and stock-kernel replay. The source’s undefined pseudo-polynomial terminology is interpreted explicitly; its separate general-rank clause is not claimed. [Statement audit and receipt](../results/rowland-sistos-barron/LEAN_STATUS.md). |
 | Byrne–Tait’s odd-length Sidon-set question | Not formalized | The [written proof](../results/byrne-tait-odd-sidon/PROOF.md) establishes the uniform density gap for every odd length. The [finite examples](../results/byrne-tait-odd-sidon/verify.py) test normal and nonnormal subgroups. |
 | Nathanson’s linear-form Sidon systems conjecture | Complete | Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Lean scope](../results/nathanson-sidon-systems/FORMALIZATION.md). |
 | Fiscus–Hurlbert–Myzelev–Pence grid conjecture | Complete | Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Lean scope](../results/fiscus-grid-game/FORMALIZATION.md). |

@@ -446,11 +446,6 @@ import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
 import Conjectures.LassalleBesselSourceReduction
 import Conjectures.LassalleLiteralConditional
-import Conjectures.SternHalfPlaneBasic
-import Conjectures.SternHalfPlaneShift
-import Conjectures.SternHalfPlaneParabola
-import Conjectures.SternHalfPlaneContinuant
-import Conjectures.SternHalfPlaneRealAxis
 import Conjectures.NuttallThetaKernel
 import Conjectures.NuttallThetaTail
 import Conjectures.NuttallThetaTermDerivatives
@@ -515,7 +510,6 @@ import Conjectures.HeimNeuhauserPlanePartitionRows
 import Conjectures.HeimNeuhauserPlanePartitionScalar
 import Conjectures.CurgusMascioniQuadratic
 import Conjectures.FMPCylindric
-import Conjectures.WagnerLaguerreOperator
 import Conjectures.MaTangCoreBalance
 import Conjectures.MaTangCoreIndexed
 import Conjectures.MaTangCoreMatrix
