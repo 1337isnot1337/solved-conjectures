@@ -6,7 +6,7 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv).
 
-**Lean status:** partial. Lean proves Proposition 2 for degrees 10, 14, 18 and 22, and the exact values at degrees 25 and 26 for the one- and two-block constructions. The unbounded construction remains open in Lean. [Sources and verification](FORMALIZATION.md).
+**Lean status:** full. Lean proves Theorems 1 and 1′, Proposition 2 and Corollary 3, including every even maximum degree from 8 and every degree congruent to 1 modulo 4 from 21. It also verifies the base exclusions at parameters 3, 4 and 5. [Sources and verification](FORMALIZATION.md).
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Section 8 (the remark after Problem 7).
 
@@ -42,7 +42,7 @@ python3 results/circular-index-upper-half-delta-2-mod-4/verify.py
 
 For every $`6\le g\le60`$ (an optional argument changes the bound), the script builds $`M_0`$ and $`M_1`$ from the formulas of Section 3, or from `certificates.json` for $`g=6`$. It checks the base matchings and their lengths, the partition of the circulant into the $`2n`$ classes, the windows of the base colouring and the two insertion blocks. For both final graphs it checks simplicity, $`\Delta`$, the $`(p,3)`$-colouring per vertex from the definition, and $`|E|/((n-1)/2)=p/3=\Delta+2/3`$. Part 2 rechecks the colourings of $`K_n-tK_2`$ for $`n=11,15,19,23,27`$. Five negative controls must be rejected. The script ends with `ALL CHECKS PASSED`.
 
-The script checks finitely many $`g`$. Theorems 1 and 1′ for every $`g\ge6`$ rest on the written proof.
+The script checks finitely many parameters. The [Lean proof](FORMALIZATION.md) covers every parameter in Theorems 1 and 1′.
 
 Optional checks, not run by CI. [`review/`](review) contains the referee report [`REVIEW.md`](review/REVIEW.md) and the referee's scripts, which locate their files relative to their own folder:
 

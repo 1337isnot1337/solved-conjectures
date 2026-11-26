@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Upper-half circular chromatic index in every even degree from eight
+
+For every integer parameter of at least six, Lean constructs both simple graphs with the prescribed order, maximum degree and exact circular chromatic index. It proves the four finite cases of Proposition 2 and the three degree ranges of Corollary 3. Lean also proves that the stated two-matching base has no solution at parameters three, four and five. [Theorems, source data and verification](../results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md).
+
 ## Finite circular chromatic index certificates
 
 Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Colourings, checks and receipt](../results/circular-index-complete-minus-edges/FORMALIZATION.md).
