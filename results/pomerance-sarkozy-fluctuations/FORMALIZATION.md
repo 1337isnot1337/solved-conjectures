@@ -26,6 +26,14 @@ uses a diagonal argument to obtain a single set of natural density one.
 The written proof also gives the second-moment asymptotic. The later
 sections record the Lean scope for the process and rare-deviation limits.
 
+All 99 modules in the import closure passed strict compilation and
+stock-kernel replay. The axiom audit checked 837 declarations, including
+701 theorems and 321 private declarations. It allows only `propext`,
+`Classical.choice`, and `Quot.sound`.
+[Exact replay receipt](verification/source-fluctuations/receipt.json) ·
+[Generated audit](verification/source-fluctuations/TargetAudit.lean) ·
+[Scope review](https://github.com/1337isnot1337/solved-conjectures/pull/900#issuecomment-7202023004)
+
 ## Finite arithmetic estimates
 
 Lean defines the literal function using Mathlib's set of distinct prime

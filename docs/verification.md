@@ -157,7 +157,7 @@ check from the repository root. It builds the exact import closure with
 warnings as errors, audits all its owned declarations, and replays it
 with the stock kernel checker. The aggregate workflow includes the
 same endpoint module and requires both declarations.
-[Lean scope](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits) · [Aggregate workflow](../.github/workflows/lean.yml).
+[Exact replay receipt](../results/pomerance-sarkozy-fluctuations/verification/source-fluctuations/receipt.json) · [Lean scope](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits) · [Aggregate workflow](../.github/workflows/lean.yml).
 
 ```bash
 python3 scripts/verify_lean_target.py \
