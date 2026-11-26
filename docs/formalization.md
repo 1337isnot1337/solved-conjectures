@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## The Steiner triple system sail problem
+
+Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Lean theorems and verification receipt](../results/steiner-triple-system-sail/FORMALIZATION.md).
+
 ## Kovalev’s Hardy-duality counterexample
 
 Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Lean scope and receipt](../results/kovalev-hardy-duality/FORMALIZATION.md).

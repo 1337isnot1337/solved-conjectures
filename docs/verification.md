@@ -10,7 +10,7 @@ Run `python3 results/mallik-diwan-kothari-degree-count/verify.py`. The checker v
 
 ## The Steiner triple system sail problem
 
-Run `python3 results/steiner-triple-system-sail/verify.py` to enumerate all 4,224 colorings of the systems of orders seven and nine and check each of the 24,576 disjoint opposite-colored block pairs. Fourteen additional colorings of systems on 87 and 127 points exercise the bound above its sufficient threshold. A second researcher rederived the general argument, checked the packing corollary and reran the verifier. [Proof](../results/steiner-triple-system-sail/PROOF.md) · [Review and source audit](../results/steiner-triple-system-sail/AUDIT.md).
+Run `python3 results/steiner-triple-system-sail/verify.py` to enumerate all 4,224 colorings of the systems of orders seven and nine and check each of the 24,576 disjoint opposite-colored block pairs. Fourteen additional colorings of systems on 87 and 127 points exercise the bound above its sufficient threshold. A second researcher rederived the general argument, checked the packing corollary and reran the verifier. [Proof](../results/steiner-triple-system-sail/PROOF.md) · [Review and source audit](../results/steiner-triple-system-sail/AUDIT.md). Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Lean theorems and verification receipt](../results/steiner-triple-system-sail/FORMALIZATION.md).
 
 ## En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem
 
