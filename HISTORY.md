@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-26 — Verify finite spine-record counts for separable derangements
+
+Lean checks that same-diagonal points first split at a direct-sum
+node. A fixed spine prefix with sufficiently many leaves has exactly
+the same count as the trees available at its terminal node.
+[Scope and receipt](results/separable-derangements-limit/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the separable derangement displacement identities
 
 Lean checks the actual diagonal point counts in direct and skew sums
