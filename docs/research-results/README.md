@@ -32,6 +32,13 @@ A further manuscript gives a single ordered 2-tree with arbitrarily many distinc
 | Alexandersson’s natural-descent conjecture | Any fixed Ferrers tail with real-rooted natural-descent polynomial yields strictly interlacing simple negative zeros for consecutive sufficiently long first rows. The full conjecture remains open. [Long-first-row theorem](alexandersson-natural-descent/long-first-row.md) · [Exact evaluator](alexandersson-natural-descent/README.md) |
 | Hill–Luo–Trinh–Vindas-Meléndez conjecture | Magic positivity for generalized parking-function polytopes reduces to the boundary where the first parameter equals one. The inequalities hold in uniform neighborhoods of specified parameter directions in each fixed dimension. The remaining boundary problem is open. [Boundary reduction](hill-luo-trinh-vindas-melendez/cube.md) · [Parameter directions](hill-luo-trinh-vindas-melendez/directions.md) |
 
+## All-orders graph classifications
+
+- [Rather’s book domination-root conjecture](rather-book-domination-roots/README.md). For every book graph the proof gives the numbers, locations and multiplicities of all its real domination roots.
+- [Tuite–Thomas–Chandran circulant conjecture](tuite-thomas-chandran-circulants/README.md). The proof gives all graph orders admitting a diameter-two circulant of monophonic position number two.
+
+The one-page book exception and the order-15 circulant exception appeared earlier. The proofs above establish the classifications over all orders.
+
 ## Prior results and quantitative refinements
 
 The original unrestricted Estrugo–Pastine star-center degree question follows from earlier work. The manuscript proves two stronger quantitative statements with their own constructions. The explicit Hurlbert–Kamat witness falls under an earlier announced construction by Feghali, Johnson and Thomas. The source audit identifies the relevant priority decisions. [Estrugo–Pastine refinements](estrugo-pastine-star-center-degree/README.md) · [Hurlbert–Kamat witness](hurlbert-kamat/README.md) · [Other prior-resolution searches](2026-11-26-named-conjecture-screen/README.md)

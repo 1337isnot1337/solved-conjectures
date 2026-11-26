@@ -1,5 +1,9 @@
 # Verification
 
+## Book domination roots and monophonic circulants
+
+With SymPy 1.14.0 installed, run `python3 docs/research-results/rather-book-domination-roots/check.py` to enumerate dominating sets, isolate real roots over the rationals and verify the sign constants. Run `python3 docs/research-results/tuite-thomas-chandran-circulants/check.py` with standard Python to check finite border graphs, the uniform jump families and the order-15 exception. [Book review](research-results/rather-book-domination-roots/REVIEW.md) · [Circulant review](research-results/tuite-thomas-chandran-circulants/REVIEW.md)
+
 ## Bollobás–Erdős–Tuza conjecture
 
 Run `python3 results/erdos-611-clique-transversals/check.py`, `python3 results/erdos-611-clique-transversals/check_recursive.py` and `python3 results/erdos-611-clique-transversals/check_structure.py`. These check the base graphs, the substitution formula, 150 exact recurrence steps and the independent-block counting identity. The [review](../results/erdos-611-clique-transversals/AUDIT.md) identifies the arguments giving the asymptotic bounds.

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Real roots of book graphs and monophonic circulants
+
+Published the [real-root classification for every book graph](docs/research-results/rather-book-domination-roots/README.md) and the [complete circulant order spectrum](docs/research-results/tuite-thomas-chandran-circulants/README.md). The proofs credit the earlier counterexamples at one page and order 15.
+
 ## 2026-11-26 — Bollobás–Erdős–Tuza conjecture
 
 Published the [near-linear transversal construction and induced-biclique upper bound](results/erdos-611-clique-transversals/) as partial progress on Erdős #611. The unrestricted sublinear question remains open.

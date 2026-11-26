@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Book domination roots and monophonic circulants
+
+Both [all-orders classifications](research-results/README.md#all-orders-graph-classifications) have written proofs and executable checks. Neither manuscript has a registered formalization.
+
 ## Bollobás–Erdős–Tuza conjecture
 
 The [transversal bounds](../results/erdos-611-clique-transversals/) have written proofs and exact finite checks. The unrestricted conjecture remains open. No formalization is registered for these bounds.
