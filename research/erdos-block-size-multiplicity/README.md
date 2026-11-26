@@ -20,3 +20,5 @@ The research question is whether general designs can spread their block sizes ac
 The [window criterion](windows.md) shows that the conjecture is equivalent to constructing designs with average multiplicity $O(\sqrt v)$ on consecutive square-to-square intervals of sizes. Around $\sqrt v$, a single size can then occur $O(v^{3/4})$ times, provided the entire interval meets the same total bound. An exact-order restriction smooths all the intervals simultaneously.
 
 The [limiting block-size theorem](profiles.md) gives a universal lower coefficient of three. Any sequence achieving this coefficient must have asymptotically uniform block sizes after normalization by the square root of the order. Its normalized point degrees concentrate at three halves. The proof also constrains any other bounded coefficient.
+
+The [prime-plane obstruction](prime-planes.md) rules out every restriction of a prime-order Desarguesian plane. At least one size occurs $\Omega(v^{5/7})$ times, uniformly over all primes and all densities. A separate variance estimate gives $\Omega(v^{3/4})$ whenever $v\ge32(q+1)$ in any plane of order $q$.
