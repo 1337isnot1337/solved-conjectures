@@ -1,5 +1,9 @@
 # Verification
 
+## Erdős–Gyárfás point-degree spectrum conjecture
+
+Run `python3 results/erdos-gyarfas-point-degree-spectrum/verify.py` to generate all 8,778 labelled nontrivial linear spaces on three through seven points and reconstruct their degrees from the lines. The checker also tests the central two-set inequality on 10,315 selections. A separate researcher checked every step of the all-order proof and independently tested 50,926 selections. [Proof](../results/erdos-gyarfas-point-degree-spectrum/PROOF.md) · [Review and search record](../results/erdos-gyarfas-point-degree-spectrum/AUDIT.md).
+
 ## Wang–Yang's Fuss–Narayana conjecture
 
 Run `python3 results/wang-yang-fuss-narayana/check.py`. The verifier checks all 82,344 minors of the six leading order-seven matrices at four parameters and 3,168 identities against the published entries. The [proof](../results/wang-yang-fuss-narayana/proof.md) covers arbitrary minors and integer parameters at least two.
