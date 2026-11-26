@@ -2,7 +2,7 @@
 
 **Status:** complete proposed proof of Conjecture 5.7 for every pair of partitions and all independent parameters. The adjacent hook-coefficient formula is also proved. Two internal mathematical reviews passed; the notes remain unrefereed.
 
-**Lean status:** none. The exact Python checks are supplementary convention checks.
+**Lean status:** partial. Lean verifies the finite commutative monomial product, the Jacobi–Trudi and bialternant identities, and the hook coefficients under the stable alphabet premise. [Precise scope and receipts](FORMALIZATION.md).
 
 ## Statement
 

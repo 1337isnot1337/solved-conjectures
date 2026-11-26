@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Zhang and Novelli–Thibon verification records
+
+A new [Zhang deletion-values receipt](results/zhang-deletion-values/FORMALIZATION.md) covers both exact cases and the strict inequality. The Novelli–Thibon landing page now links the [partial proof and eight existing receipts](results/novelli-thibon/FORMALIZATION.md).
+
 ## 2026-11-26 — En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem
 
 An explicit polynomial-time construction attains the capacity that En Gad, Yaakobi, Jiang and Bruck proved by counting. Writing exactly the prescribed number of available positions in each codeword allows recovery from the written word alone for every state and message. The same theorem establishes the optimal noiseless asymptotic rate of binary low-power cooling codes. [Proof](results/constant-weight-strong-wom/PROOF.md) · [Source and independent review](results/constant-weight-strong-wom/AUDIT.md).

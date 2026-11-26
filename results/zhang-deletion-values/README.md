@@ -6,7 +6,7 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv). Original proof, verifier, and result package submitted in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143).
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** full. Lean proves both exact deletion values and the strict inequality for every order in the stated range. [Theorems and receipt](FORMALIZATION.md).
 
 ## Result
 

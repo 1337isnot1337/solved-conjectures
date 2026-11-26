@@ -1,6 +1,6 @@
 # Deletion values of the lonely runner: an answer to Zhang's Question 8.4
 
-**Status.** Complete elementary proof. Exact check for $n\le40$ in [`verify.py`](verify.py) (standard library only). No Lean formalization. Unrefereed.
+**Status.** Complete elementary proof. Exact check for $n\le40$ in [`verify.py`](verify.py) (standard library only). [Full Lean verification](FORMALIZATION.md). Unrefereed.
 
 ## Statement
 
