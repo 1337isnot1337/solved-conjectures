@@ -30,6 +30,10 @@ For the normalized matrix $B(a,b)=E(a,b)/(a+b+1)!$, the two-by-two determinant i
 
 Mixed minors of higher order remain open here. Brenti’s ordinary Eulerian triangle has entries indexed by the permutation length and descent number. Mao’s order-three result uses those indices. [Mao’s paper](https://arxiv.org/abs/2608.29224)
 
+## Infinite mixed submatrices
+
+The [spacing theorem](sparse-minors.md) proves strict total positivity of all orders on two independently prescribed infinite sequences of indices, including indices growing as $i^2\log i$. It combines a factorial cross-ratio bound near the diagonal with the leading Eulerian term far from it.
+
 ## A finite decision for any prescribed row set
 
 **Proposition.** For every $A\ge1$, the entire rectangle with rows $0,\ldots,A$ and columns
