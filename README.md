@@ -92,7 +92,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **77.** [Zeng’s unscaled interlacing question](results/zeng-unscaled-interlacing/) | ⬜ | **163.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
 | **77.** [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ | **163.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
 | **82.** [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ | **163.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
-| **82.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ⬜ | **168.** [Fiscus–Hurlbert–Myzelev–Pence grid conjecture](results/fiscus-grid-game/) | ✅ |
+| **82.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ✅ | **168.** [Fiscus–Hurlbert–Myzelev–Pence grid conjecture](results/fiscus-grid-game/) | ✅ |
 | **82.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 | **169.** [Nathanson’s linear-form Sidon systems conjecture](results/nathanson-sidon-systems/) | ✅ |
 | **82.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ | **169.** [Byrne–Tait’s odd-length Sidon-set question](results/byrne-tait-odd-sidon/) | ⬜ |
 

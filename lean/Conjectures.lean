@@ -2059,3 +2059,4 @@ import Conjectures.BursteinA218225TreeY
 import Conjectures.BursteinA218225Series
 import Conjectures.BursteinA218225Kernel
 import Conjectures.BursteinA218225
+import Conjectures.ChernFuLinThreeStatistic
