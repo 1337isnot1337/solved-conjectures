@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the open-simplex lattice count
+
+Lean checks the exact rational quasipolynomial on every positive lattice height in an injective integral ray chart. Applying this to the actual ordinarization sign strata remains open. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the ordinarization count lower bounds
 
 Lean checks both baseline Pascal increments, the off-hyperplane comparison and a full-dimensional box of actual encodings. The full Ehrhart and monotonicity statements remain. [Scope and receipts](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).

@@ -54,3 +54,24 @@ the per-module stock kernel replay. [Growth receipt](verification/growth/receipt
 The Ehrhart stratum counts and common leading correction coefficient remain
 to be verified. The exact degree and eventual strict monotonicity of the
 actual count are not claimed as Lean results.
+
+## Open-simplex lattice counts
+
+The [open-simplex checkpoint](../../lean/Conjectures/CyrusianKaplanSimplexCheckpoint.lean)
+proves a direct quasipolynomial count in every positive integral dilation
+of a positive-barycentric simplex in an injective integral homogeneous
+ray chart. The coefficients are rational and the degree is at most the
+simplex dimension. Lean checks the literal ambient lattice and the
+height-slice bijection, finiteness of the numerator box, common-period
+quotients, stars and bars, and the exact zeroes of the binomial residue
+polynomial at early positive genera. This does not depend on an
+assumed Ehrhart theorem.
+
+All 12 modules passed strict Lean compilation,
+the all-owned axiom audit (122 declarations,
+94 theorems, 31 private,
+8 named endpoints) and stock per-module replay.
+[Open-simplex receipt](verification/simplex/receipt.json).
+The exact rational triangulation of the actual ordinarization strata
+and the common leading correction coefficient remain to be verified.
+The entry remains partial.
