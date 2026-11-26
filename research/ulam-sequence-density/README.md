@@ -12,6 +12,11 @@ and the [formal statement](https://github.com/google-deepmind/formal-conjectures
 
 The [reverse spacing certificate](reverse-spacing.md) gives an upper Banach
 density bound of 47/195 and an explicit bound for each translated interval.
+The [larger-parent theorem](parents.md) bounds the proportion of terms
+that can rely on four frequent summands. It yields an equivalent question
+about uniquely represented sums after those four terms are removed.
+The [lower-bound tests](lower-bound-tests.md) record the resulting moment
+estimate, finite measurements and counterexamples to a one-sided argument.
 
 ## Uniform upper bound
 
