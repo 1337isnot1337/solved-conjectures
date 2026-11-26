@@ -18,6 +18,8 @@ Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 posi
 
 Erdős and Gyárfás asked whether abstract linear spaces can realize all but a square-root number of the possible point degrees. Counting pairs between points of low and high degree proves that at least one seventeenth of the order is missing. The same bound answers their separate question about real planar point sets. [Proof](results/erdos-gyarfas-point-degree-spectrum/PROOF.md) · [Source and independent review](results/erdos-gyarfas-point-degree-spectrum/AUDIT.md).
 
+Lean bounds the degree spectrum in every finite linear space, rules out the proposed square-root deficit and proves the same linear bound for real planar point sets. [Theorems and receipt](results/erdos-gyarfas-point-degree-spectrum/FORMALIZATION.md).
+
 ## 2026-11-26 — Wang–Yang's Fuss–Narayana conjecture
 
 A product determinant and two triangular positivity criteria prove Wang and Yang's 2018 Conjecture 4.1 for every Fuss parameter. [Proof](results/wang-yang-fuss-narayana/proof.md) · [Source audit](results/wang-yang-fuss-narayana/sources.md) · [Issue 98](https://github.com/1337isnot1337/solved-conjectures/issues/98)
