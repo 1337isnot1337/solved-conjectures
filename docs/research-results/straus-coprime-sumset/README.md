@@ -44,7 +44,7 @@ When $\log(2M)\le K$, an additional column can be inserted with the updated heig
 
 
 ```math
-\log Q\le(Kr+\tbinom K2)\log(2M)\le2K^3.
+\log Q\le(Kr+\binom{K}{2})\log(2M)\le2K^3.
 ```
 
 
