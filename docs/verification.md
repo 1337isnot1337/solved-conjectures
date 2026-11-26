@@ -169,7 +169,7 @@ The [scoped Lean receipt](../results/athanasiadis-chapoton-polar-duality/verific
 
 ## Heim–Neuhauser’s ordinary D’Arcais root conjecture
 
-The [scoped Lean receipt](../results/heim-neuhauser-ordinary-darcais-root/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay. The exact small-index, GMP, and rational Fourier checkers also replayed successfully. [Lean scope](../results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
+The [finite and central-integral receipt](../results/heim-neuhauser-ordinary-darcais-root/verification/receipt.json) and [ordinary Fourier receipt](../results/heim-neuhauser-ordinary-darcais-root/verification/fourier-receipt.json) record strict compilation, the axiom audit and stock-kernel replay of their respective proof modules. The exact small-index, GMP, and rational Fourier checkers also replayed successfully. [Lean scope](../results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
 
 ## Rossi’s permutohedron characteristic-polynomial conjecture
 

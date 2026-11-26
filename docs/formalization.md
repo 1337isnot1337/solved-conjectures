@@ -147,7 +147,7 @@ Lean proves Conjecture 6.2 for every finite preorder. The actual polar dilates h
 
 ## Heim–Neuhauser’s ordinary D’Arcais root conjecture
 
-Lean verifies the ordinary generating-function recurrence, the strict root comparisons for indices 6–50 and all real parameters at least 1, and the central Fourier integral bound under explicit saddle estimates. The full unbounded statement remains outside the Lean scope. [Lean scope](../results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
+Lean proves the root comparison for indices 6–50 at every real parameter at least one. It constructs the unique positive saddle, proves Fourier inversion for the ordinary coefficients, and reduces strict log-concavity at every index from 501 onward to two explicit inequalities. The full unbounded statement remains outside the Lean scope. [Lean scope](../results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
 
 ## Pantone–Bóna’s second-largest-terminal asymptotic conjecture
 
