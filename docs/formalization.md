@@ -13,7 +13,8 @@ nonabelian simple group, with its actual factors permuted transitively.
 The one-factor cyclicity step is verified under solvability of the
 outer quotient and cyclicity of the coprime automorphism subgroups.
 With the additional conjugate-generation input, Lean verifies the
-one-factor lift on the actual socle quotient.
+one-factor lift on the actual socle quotient. Lean also proves
+Gaschütz’s finite-group lifting lemma for ordered generating tuples.
 [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
 
