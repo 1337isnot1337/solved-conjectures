@@ -139,6 +139,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-01.json": {
@@ -155,6 +198,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-02.json": {
@@ -171,6 +257,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-03.json": {
@@ -187,6 +316,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-04.json": {
@@ -203,6 +375,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-05.json": {
@@ -219,6 +434,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-06.json": {
@@ -235,6 +493,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-07.json": {
@@ -251,6 +552,49 @@
       "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "6e07b337215e3d049b69c5b448264bc3d6c655b7",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean",
+        "recorded_sha256": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean",
+        "recorded_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean",
+        "recorded_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean",
+        "recorded_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/five-speed-cblock4096-failed-44535201546/generated-source-inventory.json": {
@@ -273,6 +617,79 @@
       "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": null,
       "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": null,
       "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": null
+    },
+    "last_receipt_change": "6f5efec65ae77159e65d57b7a905df654843cda2",
+    "difference_details": {
+      "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockDataP0199B4096.lean",
+        "recorded_sha256": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096.lean",
+        "recorded_sha256": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.lean",
+        "recorded_sha256": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part01.lean",
+        "recorded_sha256": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part02.lean",
+        "recorded_sha256": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part03.lean",
+        "recorded_sha256": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part04.lean",
+        "recorded_sha256": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part05.lean",
+        "recorded_sha256": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part06.lean",
+        "recorded_sha256": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part07.lean",
+        "recorded_sha256": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part08.lean",
+        "recorded_sha256": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part09.lean",
+        "recorded_sha256": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part10.lean",
+        "recorded_sha256": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part11.lean",
+        "recorded_sha256": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50",
+        "comparison": "absent from audited snapshot"
+      }
     }
   },
   "docs/verification/five-speed-cblock4096-failed-44535201546/receipt.json": {
@@ -295,6 +712,79 @@
       "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": null,
       "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": null,
       "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": null
+    },
+    "last_receipt_change": "6f5efec65ae77159e65d57b7a905df654843cda2",
+    "difference_details": {
+      "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockDataP0199B4096.lean",
+        "recorded_sha256": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096.lean",
+        "recorded_sha256": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.lean",
+        "recorded_sha256": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part01.lean",
+        "recorded_sha256": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part02.lean",
+        "recorded_sha256": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part03.lean",
+        "recorded_sha256": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part04.lean",
+        "recorded_sha256": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part05.lean",
+        "recorded_sha256": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part06.lean",
+        "recorded_sha256": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part07.lean",
+        "recorded_sha256": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part08.lean",
+        "recorded_sha256": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part09.lean",
+        "recorded_sha256": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part10.lean",
+        "recorded_sha256": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part11.lean",
+        "recorded_sha256": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50",
+        "comparison": "absent from audited snapshot"
+      }
     }
   },
   "docs/verification/five-speed-root-quick179-c5d11dd3.json": {
@@ -308,6 +798,34 @@
       "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "lean/Conjectures/LonelinessFiveSpeedRootStarBlocks.lean": "af63243840adc206af65685bedccf30f158a05f88f2996aac4d3e18d75746c57",
       "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    },
+    "last_receipt_change": "68d44e53fa3968647aac7dac60c545e302ee5fd5",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedMasks.lean",
+        "recorded_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean",
+        "recorded_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedRootStarBlocks.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedRootStarBlocks.lean",
+        "recorded_sha256": "57a340e9798975f42d0474ae18a058964c73b74bbd25a5b836c10d3e32430276",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean",
+        "recorded_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "docs/verification/five-speed-root199-44531127081/generated-source-inventory.json": {
@@ -1556,6 +2074,14 @@
     "matching_sources": 11,
     "different_checkout_hashes": {
       "lean/Conjectures/HadamardAutomorphismCyclotomicCandidates.lean": "d5766f038206bfb6a81725b1ff695a1398991d0c6afb41099b58a30e8435d0cc"
+    },
+    "last_receipt_change": "d1478baafaf4a540080daa928184678d8633e594",
+    "difference_details": {
+      "lean/Conjectures/HadamardAutomorphismCyclotomicCandidates.lean": {
+        "source_path": "lean/Conjectures/HadamardAutomorphismCyclotomicCandidates.lean",
+        "recorded_sha256": "921087e97b4b2a785e8c17c0798b924f36dd483aac65d8b6a3877a242bd2f770",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/hadamard-automorphism-fourier-ee1be6e0.json": {
@@ -2139,6 +2665,49 @@
       "lean/Conjectures/LonelinessNearestPlanePrefix.lean": "4c5ce5394a76551b473308c95140ed3e3a4d5fe8b883411adc89457aed72639b",
       "lean/Conjectures/LonelinessNearestPlaneValue.lean": "03080ec0159a4e74a7ba8c8556a315be481df677a9cb1038fcb1fb210b768703",
       "lean/Conjectures/LonelinessTightNormBounds.lean": "89dfd45512622f5e8a2df3f49ceec03e5a0bca2f03bb7ee7474a2aec0d66bd01"
+    },
+    "last_receipt_change": "f330e814a265a19b87b3b4ea2063706439991328",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessHyperplaneArithmetic.lean": {
+        "source_path": "lean/Conjectures/LonelinessHyperplaneArithmetic.lean",
+        "recorded_sha256": "bd34194eaddcc840fc3d511cd7cf0d517e5eb7929955bdb65d2c0b8de1a3251e",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessKZBasisGram.lean": {
+        "source_path": "lean/Conjectures/LonelinessKZBasisGram.lean",
+        "recorded_sha256": "6755597adb50330f02a5bbcf399a2d726376dad6a8524b860be2d2da91e82152",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessKZBasisVectors.lean": {
+        "source_path": "lean/Conjectures/LonelinessKZBasisVectors.lean",
+        "recorded_sha256": "27ba979a08a9165f08aa499985707bdd0356ec2cc5b06b07a652c5f71394049e",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessKZProductFast.lean": {
+        "source_path": "lean/Conjectures/LonelinessKZProductFast.lean",
+        "recorded_sha256": "0e61939757015b49e640a6798a69ef0254f60b718b694b9836385d97525daa0e",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessNearestPlanePrefix.lean": {
+        "source_path": "lean/Conjectures/LonelinessNearestPlanePrefix.lean",
+        "recorded_sha256": "85c1320df6670a7382c3219310ba87c6ac692e456169edfc50b8698127bceeae",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessNearestPlaneValue.lean": {
+        "source_path": "lean/Conjectures/LonelinessNearestPlaneValue.lean",
+        "recorded_sha256": "967d796f826b634cb2a760415c0dff5ce413e75ceb003302b92369591fee3f9e",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessTightNormBounds.lean": {
+        "source_path": "lean/Conjectures/LonelinessTightNormBounds.lean",
+        "recorded_sha256": "3d9187c1142cca72daf1ffc376e56ec558f6ab9e6b51e6f238f1a74b46554937",
+        "comparison": "unmatched at snapshot and receipt commit"
+      }
     }
   },
   "docs/verification/loneliness-support257-10ebb0e4.json": {
@@ -2271,6 +2840,209 @@
       "Conjectures.LonelinessSixSpeedPrime0307B002Data": null,
       "Conjectures.LonelinessSixSpeedPrime0307B153": null,
       "Conjectures.LonelinessSixSpeedPrime0307Rows": null
+    },
+    "last_receipt_change": "b99e5a05d58df20788b1ca456b685b25b85af809",
+    "difference_details": {
+      "Conjectures.LonelinessSixSpeedPrime0307Arithmetic": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307Arithmetic.lean",
+        "recorded_sha256": "fd1063aa752c2ac04df64d7405307f788df63e5fca56603cf5e0a45747535757",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002.lean",
+        "recorded_sha256": "3d499e8f491daac9fbcc5e2194555223a298f4153009ff359c8f2646e9e98ba5",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Arithmetic": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Arithmetic.lean",
+        "recorded_sha256": "c3dc9db17785b694e2a3888ba440e77345381b814b88cd3bccfef01793dd20af",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks000": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks000.lean",
+        "recorded_sha256": "855ece79c546329b96d4a938f9155e821ff6d00c2d5e948e78c4408e3995d240",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks001": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks001.lean",
+        "recorded_sha256": "22e84a895be8fb5b16af68eaebd8575873edcf347d849a55691ea3c24344a314",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks002": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks002.lean",
+        "recorded_sha256": "6a681f259e881a3b8430fb11e50041a175b46ae44a822964ec402de55811673b",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks003": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks003.lean",
+        "recorded_sha256": "bca67c0743854982478879e655e6c03edd76b88b9d7233631c1aefaeae763421",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks004": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks004.lean",
+        "recorded_sha256": "6280eb8f89e47eed1ba1159d027935327dc8009134e213533907e27110cbbbd3",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks005": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks005.lean",
+        "recorded_sha256": "c631d6207c00916ab60e3882305abea58b4925fde5e7b9011e72b232500f10ef",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks006": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks006.lean",
+        "recorded_sha256": "4493de294ce28b803536786e71900d345968e4ede511113764d0a27d3c5f5463",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks007": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks007.lean",
+        "recorded_sha256": "403c4cb6d527c86ae8d03e76a927eda193e69171a1a94732dfb86d432d4b08d2",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks008": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks008.lean",
+        "recorded_sha256": "e0a2bee9c7419ec50924145c7e16dd825b1de1a8f5fcf29346ad4e3b1a84c72f",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks009": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks009.lean",
+        "recorded_sha256": "25b874356e2a6306b317c0e49c74440e884d72e3fa46a34d818acef3b4522ebd",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks010": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks010.lean",
+        "recorded_sha256": "9a93e4a376ef0b12fc75f3ced0dd2464cb53f6afc34be886ae3c1702d4eaf275",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks011": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks011.lean",
+        "recorded_sha256": "f1ba3b4259dfe068cc75d466d082c1a0dfc819bd5ff86c8568daf6bb0a8a3eab",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks012": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks012.lean",
+        "recorded_sha256": "dbc7f74a43fdfa75a135be2e263ef1e2dedcf27e61e67a634dae2228ef95eb0c",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks013": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks013.lean",
+        "recorded_sha256": "28ec3dc9623f91725e7f08b40779bf9548ba5871489bdc0eedd652075bb98020",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks014": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks014.lean",
+        "recorded_sha256": "7581588c1787da25cad0d5900ed7e2c90925190b3cdbb30fd45a77bc0e2ba386",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks015": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks015.lean",
+        "recorded_sha256": "7bb5250845b1ec757ae06523e50243498af52a127215ce3c398fb29dd4e0de93",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks016": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks016.lean",
+        "recorded_sha256": "788f7230f910933d5dc9765a230819ae6bc4d2b322153cf362b770bc5f6f0eb7",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks017": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks017.lean",
+        "recorded_sha256": "8a8084104a599f875f6e001c355fc1388bffc1c43f4fd14fdbf51af8ab8a1132",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks018": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks018.lean",
+        "recorded_sha256": "cea0c28388cd452dc9b2392c5bd4260e33669c449d78bb7cd32413782e90916f",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks019": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks019.lean",
+        "recorded_sha256": "5d925968c5104f1ac51ece248bcd8d959b09a77ecbf4988116a2c677db23a94d",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks020": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks020.lean",
+        "recorded_sha256": "f3aae98b33f24f573b1cbe2a26a6a3ba4e3654fb65b95c45e9dbdff2d70c0e7a",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks021": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks021.lean",
+        "recorded_sha256": "57299cc2c439222782202517e07f7ff46a4a8cf9c5240f5e17fe923a350305a5",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks022": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks022.lean",
+        "recorded_sha256": "918633c51fa223e55a90c1ec2864ea6e398ec345089d41175f80756c1d92c712",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks023": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks023.lean",
+        "recorded_sha256": "e7db5e78c97fc857663ff4e790d755e58d0f64becf287446cdf1921e1dec9c5b",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks024": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks024.lean",
+        "recorded_sha256": "7258d15a6d6f0ebe2ba631fc7b0a94941118b8a023e293f1b3034d2f810acc32",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks025": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks025.lean",
+        "recorded_sha256": "13993539d69b6ee46ee8d5b29699f9316fa4cfc16420585e3e823b6b70bf848e",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks026": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks026.lean",
+        "recorded_sha256": "b06e23377b3a09c47279f54c844baa237ed4a019312c20d4863dec1c328c1845",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks027": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks027.lean",
+        "recorded_sha256": "7236cbae9c5ad744470568a31f00b50c460ba4171e4790e0d87042dce99dda17",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks028": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks028.lean",
+        "recorded_sha256": "2abeed6e2aa71e357949f43c6ad0d0b723fb1a1481290a95907a3d9f9151b750",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks029": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks029.lean",
+        "recorded_sha256": "42922b1b1d986d25e5fa75951eb84f8f92b5daec66aace2974b29e0da9cc0273",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks030": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks030.lean",
+        "recorded_sha256": "817457b07a5ac183cd21998f3e4375d07ffccd81d112b7f8c95f21d09a311d95",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks031": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks031.lean",
+        "recorded_sha256": "67625c836612e6c6bb783e1148ef68006964a0efd306934311e1bf07095e097a",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks032": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks032.lean",
+        "recorded_sha256": "cbf7eeec37022a5f65d46c3c0c051d951ef9e4c3cf6e4a6bb0151678cfa050c1",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks033": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Checks033.lean",
+        "recorded_sha256": "4623688b24ff95b27e55ce953f7330ed53e62da8b4b614435718c989d57fbc54",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B002Data": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B002Data.lean",
+        "recorded_sha256": "0e754c0554068b00b983124eab496b1ca5d058bfb0b4dd61710f1c381657a4fd",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307B153": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307B153.lean",
+        "recorded_sha256": "3b29091930b071115ded1283c883370046becb33c29817c870be9c046531e2e1",
+        "comparison": "absent from audited snapshot"
+      },
+      "Conjectures.LonelinessSixSpeedPrime0307Rows": {
+        "source_path": "lean/Conjectures/LonelinessSixSpeedPrime0307Rows.lean",
+        "recorded_sha256": "1ee491353abd66bd236e404c08765c245706a36bbce802c2fd8e3d9653bc4da2",
+        "comparison": "absent from audited snapshot"
+      }
     }
   },
   "docs/verification/prime-filtering-exact-44591941338/controls/docs/prime-filtering-exact-sources.json": {
@@ -2495,6 +3267,39 @@
       "lean/Conjectures/LonelinessTwoInsertionsDivisibility.lean": "4a5bc913560747978092f429731057aaa5178cefa3c420cb95cc5d5e670ca303",
       "lean/Conjectures/LonelinessTwoInsertionsMeasure.lean": "08e1d7447b8a8249c9369a63674142eb1adc379055c9071371d0baec71bdb744",
       "lean/Conjectures/LonelinessTwoInsertionsShift.lean": "a2e6e690296d237171da03f020328a4950738c11b1694000b5cbe56395b2930d"
+    },
+    "last_receipt_change": "32bb4e5253ba8b0e97e7d611668cd121abd2b521",
+    "difference_details": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": {
+        "source_path": "lean/Conjectures/LonelinessFiveFamily.lean",
+        "recorded_sha256": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+        "comparison": "unmatched at snapshot and receipt commit"
+      },
+      "lean/Conjectures/LonelinessTwoInsertionsAccelerationArithmetic.lean": {
+        "source_path": "lean/Conjectures/LonelinessTwoInsertionsAccelerationArithmetic.lean",
+        "recorded_sha256": "ef527ff4b842243e5755a445d2ec929e3e600afe6dc50b5725d565f2852d868d",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessTwoInsertionsAccelerations.lean": {
+        "source_path": "lean/Conjectures/LonelinessTwoInsertionsAccelerations.lean",
+        "recorded_sha256": "3d5bdb3d2649ddcc22028f282725ae50f9af7e129dcb3e19e4dd5337a622e571",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessTwoInsertionsDivisibility.lean": {
+        "source_path": "lean/Conjectures/LonelinessTwoInsertionsDivisibility.lean",
+        "recorded_sha256": "50e1bd521f52df8266c46a2e92421082e4a2792ab43e4e7a7410d0b64d70b7af",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessTwoInsertionsMeasure.lean": {
+        "source_path": "lean/Conjectures/LonelinessTwoInsertionsMeasure.lean",
+        "recorded_sha256": "4bad7cc8d7416f1a940408e0a73b3adf9ea023fca65ac31efb56ff4a77d63a52",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LonelinessTwoInsertionsShift.lean": {
+        "source_path": "lean/Conjectures/LonelinessTwoInsertionsShift.lean",
+        "recorded_sha256": "1adbb3ec3c376c8a8e640692f26e10385f296658bcc48700030939a397a9614d",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "docs/verification/two-insertion-obstruction-9c7610e7.json": {
@@ -2624,6 +3429,19 @@
     "different_checkout_hashes": {
       "lean\\Conjectures\\BursteinA218225Defs.lean": "24927f392c8e03da1341c6d51792e82e51d1131b1846b9e08b2bd0e41120de1d",
       "lean\\Conjectures\\BursteinA218225TreeX.lean": "364ccc72ff373ac9770663f542df3a5b005e5a9b6f8c4d982d4673a188a065ee"
+    },
+    "last_receipt_change": "a98be78ce52cc9109a9ef4a93305618bf778a634",
+    "difference_details": {
+      "lean\\Conjectures\\BursteinA218225Defs.lean": {
+        "source_path": "lean/Conjectures/BursteinA218225Defs.lean",
+        "recorded_sha256": "371261de3f124c6338c524d907d33975fdb494f817cf3019c2c27161e4530597",
+        "comparison": "current CRLF checkout"
+      },
+      "lean\\Conjectures\\BursteinA218225TreeX.lean": {
+        "source_path": "lean/Conjectures/BursteinA218225TreeX.lean",
+        "recorded_sha256": "1fcae35f1579c7e7e419cb919f08f9012d335a2b852f8fee5d3be2519606bd59",
+        "comparison": "current CRLF checkout"
+      }
     }
   },
   "results/circular-index-complete-minus-edge/verification/actual-table/receipt.json": {
@@ -2811,6 +3629,29 @@
       "lean/Conjectures/LassalleSmallRows02.lean": "44ba52020cfc8aa70840a3c6edb4b0eaa4114eed6cd23db19feafc38d5493fe3",
       "lean/Conjectures/LassalleSmallRows03.lean": "bc7552647167808688f9d3c230f6c0320801640e477474b0308cb677547035ce",
       "lean/Conjectures/LassalleSmallRows04.lean": "3f6c810af535a276523777f4f3450df73bac293e1057515bd8d49cdb9f9b1fba"
+    },
+    "last_receipt_change": "029daf08ee0b8176b35bde50315165df69a4c569",
+    "difference_details": {
+      "lean/Conjectures/LassalleFiniteRowBatching.lean": {
+        "source_path": "lean/Conjectures/LassalleFiniteRowBatching.lean",
+        "recorded_sha256": "4d4031eb57fb3f2e055a56b50d8abbc3c40ee3fb7ee37f3529a965eb014d37b0",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LassalleSmallRows02.lean": {
+        "source_path": "lean/Conjectures/LassalleSmallRows02.lean",
+        "recorded_sha256": "ef4b20cede6a9e918275edce2c07c6acc5f2282105351677de275f61f62c2f2c",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LassalleSmallRows03.lean": {
+        "source_path": "lean/Conjectures/LassalleSmallRows03.lean",
+        "recorded_sha256": "fdd6fb2c55d5599d4b79de3f12e19fb1b6dec562d6d2d56a0ad6671360d2e5e0",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "lean/Conjectures/LassalleSmallRows04.lean": {
+        "source_path": "lean/Conjectures/LassalleSmallRows04.lean",
+        "recorded_sha256": "7e3e6a33b988bfc7b6e61b264648ffd0fc37cdffad0eadf4a77135d179cda1da",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/defant-engen-miller-lassalle/verification/interval-coverage/receipt.json": {
@@ -3170,6 +4011,14 @@
     "matching_sources": 35,
     "different_checkout_hashes": {
       "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "9b1b4fee38a63993efa1bba9e5dffce6cf295be7485d12df8ec30fc73874582c"
+    },
+    "last_receipt_change": "1488dcc8b63a720168b8d0dd5fea4070d4d5794c",
+    "difference_details": {
+      "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": {
+        "source_path": "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean",
+        "recorded_sha256": "7722d7f4a8e73d8bdd49a8c708a8612910ce82d01f9f7876e9e3ecc7771c0aea",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/kauers-koutschan-recurrence/verification/divided-sums/receipt.json": {
@@ -3186,6 +4035,14 @@
     "matching_sources": 6,
     "different_checkout_hashes": {
       "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "9b1b4fee38a63993efa1bba9e5dffce6cf295be7485d12df8ec30fc73874582c"
+    },
+    "last_receipt_change": "3c4008631146fd3fd0db19779cd3d38259ef67f1",
+    "difference_details": {
+      "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": {
+        "source_path": "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean",
+        "recorded_sha256": "7722d7f4a8e73d8bdd49a8c708a8612910ce82d01f9f7876e9e3ecc7771c0aea",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/kauers-koutschan-recurrence/verification/order-thirteen/receipt.json": {
@@ -3447,6 +4304,14 @@
     "matching_sources": 0,
     "different_checkout_hashes": {
       "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9"
+    },
+    "last_receipt_change": "e6cd62582f45bf1721456626ccea8ed406d6199c",
+    "difference_details": {
+      "lean/Conjectures/NuttallThetaKernel.lean": {
+        "source_path": "lean/Conjectures/NuttallThetaKernel.lean",
+        "recorded_sha256": "fcbf4b10254ff5ac2f3afd628f30f5b7475d30a366ebd4b50c2845f6fc248f6d",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/nuttall-cumulants/verification/repeated/receipt.json": {
@@ -3625,6 +4490,19 @@
     "different_checkout_hashes": {
       "Conjectures/RectangleEncoding.lean": "4d7e3935a9a4f9e119d1c741e0add591442566e51278c78ded1bb06bb83d1533",
       "Conjectures/RectangleParameterBounds.lean": "46de9512a322760d44f6cd835239650d4e58c36fd03233f8f3ced78daa463517"
+    },
+    "last_receipt_change": "88535ed8eb2982e82910bd20c2ccfeb7b204ad01",
+    "difference_details": {
+      "Conjectures/RectangleEncoding.lean": {
+        "source_path": "lean/Conjectures/RectangleEncoding.lean",
+        "recorded_sha256": "00a4bebf6f52564f1eb5c1779d8d71228ef0975a653ab21f1d8a227e4d30741a",
+        "comparison": "matches receipt commit (exact)"
+      },
+      "Conjectures/RectangleParameterBounds.lean": {
+        "source_path": "lean/Conjectures/RectangleParameterBounds.lean",
+        "recorded_sha256": "f12287a169a0eb51e267fcf92a980b826c72f0b9b636576cc9bc60cefaa1709f",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/revised-tan-zhou-luroth/verification/receipt.json": {
@@ -3823,6 +4701,14 @@
     "matching_sources": 1,
     "different_checkout_hashes": {
       "lean/Conjectures/ShumyatskyPrimeKernelLift.lean": "e52d1fcd9c05faa5ca2f5a867bba3e0a0ead48af04406951a866fb21f30def74"
+    },
+    "last_receipt_change": "95588cdacd40e25d845d51c801866a918411cf78",
+    "difference_details": {
+      "lean/Conjectures/ShumyatskyPrimeKernelLift.lean": {
+        "source_path": "lean/Conjectures/ShumyatskyPrimeKernelLift.lean",
+        "recorded_sha256": "2421560329329f53c981f3beaf69b8059474ff8922f123dbcff1cf11f329d20d",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/shumyatsky-conjugate-prime-spectrum/verification/prime-spectrum/receipt.json": {
@@ -3972,6 +4858,14 @@
     "matching_sources": 0,
     "different_checkout_hashes": {
       "lean/Conjectures/TomVailayaColorTrace.lean": "eba05acb97451432bc1f84f87f7097d88febf07a7b9ac86b01d015954cfc50b7"
+    },
+    "last_receipt_change": "35b142dd7ef19b38b055b452cc5b88b5a5d2bec6",
+    "difference_details": {
+      "lean/Conjectures/TomVailayaColorTrace.lean": {
+        "source_path": "lean/Conjectures/TomVailayaColorTrace.lean",
+        "recorded_sha256": "be09ec3d1bde22addb4eec2287c3069b704bb742a411259ea48725d25d4c2260",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/tom-vailaya-weighted-trace/verification/gluing/receipt.json": {
@@ -3995,6 +4889,14 @@
     "matching_sources": 1,
     "different_checkout_hashes": {
       "lean/Conjectures/TomVailayaPathSeries.lean": "06286ddf39a6fda56406d8f90ea118a2c38bbeb559619de8a9c6bc2e0a936aee"
+    },
+    "last_receipt_change": "721694f5b895007c8620f1d650ac451eb8c2f275",
+    "difference_details": {
+      "lean/Conjectures/TomVailayaPathSeries.lean": {
+        "source_path": "lean/Conjectures/TomVailayaPathSeries.lean",
+        "recorded_sha256": "a76c7b73223c03d3b178223d9bd6ffe5715119d507dcde48c64d780706e4d4a0",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/tom-vailaya-weighted-trace/verification/weighted-path-rows/receipt.json": {
@@ -4004,6 +4906,14 @@
     "matching_sources": 2,
     "different_checkout_hashes": {
       "lean/Conjectures/TomVailayaPathRows.lean": "e4073cd7c8b71835c95dd0dcce9ca3ac0c662b0b9e749e143454a263760fe8a0"
+    },
+    "last_receipt_change": "73e7efa28d51a95fdbacde684d5870a022284b6f",
+    "difference_details": {
+      "lean/Conjectures/TomVailayaPathRows.lean": {
+        "source_path": "lean/Conjectures/TomVailayaPathRows.lean",
+        "recorded_sha256": "aaab685a7abdb2ac4cc1f4d0cb8e9ad77f477f7a6d862fdb79fb50c8fd951653",
+        "comparison": "matches receipt commit (exact)"
+      }
     }
   },
   "results/ulas-disjoint-square-blocks/verification/receipt.json": {

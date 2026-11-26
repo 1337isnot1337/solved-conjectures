@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2306.12564) (26 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A398581 - OEIS (HTTP 200). [Retrieved address](https://oeis.org/A398581).
 - A Threshold for the Best Two-term Underapproximation by Egyptian Fractions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2306.12564).
 - Source URL (HTTP 200). [Retrieved address](https://oeis.org/A398581/b398581.txt).

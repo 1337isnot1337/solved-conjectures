@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.24371v1) (15 pages). conjecture 7.1 on PDF p. 14.
+- [Source PDF](https://arxiv.org/pdf/2604.14827) (26 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Pfaffian Positivity for Convex Kernels and Optimal Matching Bounds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.24371v1).
 - GitHub - wlpjohnson-math/convex-pfaffian-positivity-lean: A Lean 4 + Mathlib formalization of a positivity theorem for Pfaffians of convex noninc (HTTP 200). [Retrieved address](https://github.com/wlpjohnson-math/convex-pfaffian-positivity-lean).
 - Docs: split README into landing page, paper correspondence and auditi… · wlpjohnson-math/convex-pfaffian-positivity-lean@e09d0d8 · GitHub (HTTP 200). [Retrieved address](https://github.com/wlpjohnson-math/convex-pfaffian-positivity-lean/commit/e09d0d825c7609530eeb36f32965f35e2c7d8687).

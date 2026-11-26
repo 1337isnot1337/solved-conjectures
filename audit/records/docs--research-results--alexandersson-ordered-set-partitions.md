@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2506.23355) (44 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2609.07325) (28 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Ordered set partition posets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.23355).
 - Real-rooted Eulerian polynomials from permutations, words, and paths (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.07325).

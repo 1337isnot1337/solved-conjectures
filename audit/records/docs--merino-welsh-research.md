@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://fs.unm.edu/IJMC/ComparingTheNumberOfAcyclicAndTotallyCyclicOrientations.pdf) (11 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2610.27706) (19 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://fs.unm.edu/IJMC/ComparingTheNumberOfAcyclicAndTotallyCyclicOrientations.pdf).
 - Source URL (HTTP 404). [Retrieved address](https://doi.org/10.1007/s000260050140).
 - Source URL (HTTP request failed). [Retrieved address](https://bura.brunel.ac.uk/handle/2438/9384).

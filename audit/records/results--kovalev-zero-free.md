@@ -34,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2507.04544v1) (10 pages). conjecture 1.2 on PDF p. 2, 10 · conjecture 1.3 on PDF p. 2.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Sharp bounds for some segments of bounded power series (HTTP 200). [Retrieved address](https://arxiv.org/abs/2507.04544v1).
 - An exact counterexample to trigonometric positivity for square roots of geometric sums \| MathDB (HTTP 200). [Retrieved address](https://mathdb.com/abs/2610.00766).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.4310/ARKIV.2026.v64.n2.a4).

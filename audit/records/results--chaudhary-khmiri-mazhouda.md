@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://files.ele-math.com/articles/jca-28-07.pdf) (13 pages). Full text retrieved.
+- [Source PDF](https://www.its.caltech.edu/~dinakar/papers/drama-kor2.pdf) (34 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://files.ele-math.com/articles/jca-28-07.pdf).
 - Ele-Math – Journal of Classical Analysis: A note on the behavior of the Li coefficients for automorphic L-functions (HTTP 200). [Retrieved address](https://jca.ele-math.com/28-07/A-note-on-the-behavior-of-the-Li-coefficients-for-automorphic-L-functions).
 - PDF header (HTTP 200). [Retrieved address](https://www.its.caltech.edu/~dinakar/papers/drama-kor2.pdf).

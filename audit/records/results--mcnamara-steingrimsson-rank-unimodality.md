@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1305.5569) (33 pages). conjecture 9.4 on PDF p. 30.
+- [Source PDF](https://mathdiscoveries.org/static/papers/pattern-poset-not-sperner/2026-11-23-v1/pattern-poset-not-sperner-2026-11-23-v1-paper.pdf) (9 pages). conjecture 9.4 on PDF p. 9.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jcta.2015.02.009).
 - On the topology of the permutation pattern poset (HTTP 200). [Retrieved address](https://arxiv.org/abs/1305.5569).
 - PDF header (HTTP 200). [Retrieved address](https://mathdiscoveries.org/static/papers/pattern-poset-not-sperner/2026-11-23-v1/pattern-poset-not-sperner-2026-11-23-v1-paper.pdf).

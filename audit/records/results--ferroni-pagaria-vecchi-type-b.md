@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2603.01956) (17 pages). conjecture 4.13 on PDF p. 14.
+- [Source PDF](https://arxiv.org/pdf/2603.01956v3) (17 pages). conjecture 4.13 on PDF p. 14.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - The Poincar\'e polynomial of the type B analogue of $\overline{\mathcal{M}}_{0,n+1}$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.01956).
 - The Poincar\'e polynomial of the type B analogue of $\overline{\mathcal{M}}_{0,n+1}$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.01956v3).
 - Real-rootedness of the Poincar\'e polynomials of $\overline{\mathcal M}_{0,n}$: an AI-assisted proof (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.29151v2).

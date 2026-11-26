@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.renyi.hu/~gyarfas/Cikkek/182_jcd1.pdf) (10 pages). Full text retrieved.
+- [Source PDF](https://real.mtak.hu/162708/1/ejc40.pdf) (9 pages). question 2.8 on PDF p. 6.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/182_jcd1.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://real.mtak.hu/162708/1/ejc40.pdf).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1002/jcd.21585).

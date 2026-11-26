@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf) (7 pages). problem 2 on PDF p. 5 · problem 3 on PDF p. 5 · problem 4 on PDF p. 5.
+- [Source PDF](https://www.renyi.hu/~p_erdos/1985-12.pdf) (12 pages). problems 2 on PDF p. 1.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf).
 - Publications 2000— 2009 (HTTP 200). [Retrieved address](https://www.renyi.hu/~gyarfas/index_files/publications_2000_2009.htm).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1985-12.pdf).

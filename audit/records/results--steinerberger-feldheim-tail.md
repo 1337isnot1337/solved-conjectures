@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 The local HTTP probe and public search index differed on access to one PDF. The public index returned the source text for the same URL. Both observations are retained.
 
+- [Source PDF](https://arxiv.org/pdf/1801.00663) (4 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A Sharp Estimate for Probability Distributions (HTTP 200). [Retrieved address](https://arxiv.org/abs/1801.00663).
 - Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).
 - Mean and Minimum of Independent Random Variables (HTTP 200). [Retrieved address](https://arxiv.org/abs/1609.03004).

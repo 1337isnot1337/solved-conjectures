@@ -33,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf) (29 pages). problem 2 on PDF p. 3, 21 · conjecture 3 on PDF p. 11, 12, 13 · problem 3 on PDF p. 22.
+- [Source PDF](https://arxiv.org/pdf/2609.29262) (11 pages). conjecture 3 on PDF p. 2.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Minc’s list – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.laa.2005.02.030).
 - PDF header (HTTP 200). [Retrieved address](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf).

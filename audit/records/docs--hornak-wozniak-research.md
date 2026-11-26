@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://umv.science.upjs.sk/preprints/dokumenty/A3-2006.pdf) (21 pages). conjecture 1 on PDF p. 19 · problem 1 on PDF p. 19.
+- [Source PDF](https://arxiv.org/pdf/2407.02094) (21 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://umv.science.upjs.sk/preprints/dokumenty/A3-2006.pdf).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2007.04.008).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/S0166-218X(00)00322-X).

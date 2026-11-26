@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2401.12347) (6 pages). conjecture 4.1 on PDF p. 2 · conjecture 5.3 on PDF p. 2 · conjecture 2.7 on PDF p. 5.
+- [Source PDF](https://umv.science.upjs.sk/preprints/dokumenty/A8-2007.pdf) (39 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - On a problem concerning integer distance graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2401.12347).
 - PDF header (HTTP 200). [Retrieved address](https://umv.science.upjs.sk/preprints/dokumenty/A8-2007.pdf).

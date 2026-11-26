@@ -37,6 +37,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf) (29 pages). conjecture 17 on PDF p. 13 · conjecture 18 on PDF p. 13 · problem 17 on PDF p. 25 · problem 18 on PDF p. 25.
+- [Source PDF](https://arxiv.org/pdf/0711.3496) (31 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Problem 18: Perron root of permanental compounds – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/problem-18/index.html).
 - PDF header (HTTP 200). [Retrieved address](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf).
 - Van der Waerden/Schrijver-Valiant like Conjectures and Stable (aka Hyperbolic) Homogeneous Polynomials : One Theorem for all (HTTP 200). [Retrieved address](https://arxiv.org/abs/0711.3496).

@@ -29,6 +29,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2404.08193v2) (20 pages). conjecture 10.3 on PDF p. 10 · conjecture 10.4 on PDF p. 10 · conjecture 10.5 on PDF p. 10.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Integers that are not the sum of positive powers (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.08193v2).
 - Oscillation of stable exception-set sizes - trureturing — Discovering truth (HTTP 200). [Retrieved address](https://the-omega-institute.github.io/trureturing-mdbook/Problems/benfield-lippard-2025-exception-set-oscillation.html).
 - Citation-index seed records. [Integers that are not the sum of positive powers](https://doi.org/10.48550/arxiv.2404.08193).
@@ -39,6 +43,8 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Verification
 
-The computational runs in this audit do not include a separate executable check for this entry.
+Independently compiled Conjectures.BenfieldLippardParity from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).
+
+
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).

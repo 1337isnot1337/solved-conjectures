@@ -33,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2511.03847v1) (27 pages). conjecture 1 on PDF p. 3.
+- [Source PDF](https://publi.math.unideb.hu/paper/2146/download/10_5486_PMD_2017_7620.pdf) (27 pages). conjecture 3.1 on PDF p. 7, 15, 25.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://doi.org/10.5486/PMD.2017.7620).
 - Zeros of Stern polynomials in the complex plane (HTTP 200). [Retrieved address](https://arxiv.org/abs/2511.03847v1).
 - PDF header (HTTP 200). [Retrieved address](https://publi.math.unideb.hu/paper/2146/download/10_5486_PMD_2017_7620.pdf).

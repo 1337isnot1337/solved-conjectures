@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.12005v2) (14 pages). conjecture 1.2 on PDF p. 2 · conjecture 9.2 on PDF p. 12.
+- [Source PDF](https://arxiv.cnoctave.top/pdf/2609.12005) (14 pages). conjecture 1.2 on PDF p. 2 · conjecture 9.2 on PDF p. 12.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Fixed-Perimeter Franklin Statistics and an Eventual Inequality (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.12005v2).
 - PDF header (HTTP 200). [Retrieved address](https://arxiv.cnoctave.top/pdf/2609.12005).
 - Fixed perimeter analogues of some partition results (HTTP 200). [Retrieved address](https://arxiv.org/abs/2502.12394v1).

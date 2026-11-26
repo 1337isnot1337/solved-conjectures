@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2408.13494v2) (28 pages). conjecture 9.3 on PDF p. 26.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Colouring a graph with position sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.13494v2).
 - Source URL (HTTP 403). [Retrieved address](https://oro.open.ac.uk/107103/8/107103.pdf).
 - Colouring a graph with position sets (HTTP 200). [Retrieved address](https://doi.org/10.26493/1855-3974.3454.a3c).

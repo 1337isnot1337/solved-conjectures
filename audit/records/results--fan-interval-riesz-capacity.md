@@ -33,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.11186v1) (35 pages). conjecture 12 on PDF p. 5, 6, 8, 9 · conjecture 4.1 on PDF p. 5, 9.
+- [Source PDF](https://arxiv.org/pdf/2410.14809) (34 pages). conjecture 12 on PDF p. 2, 5, 6, 7, 10, 11, 13, 14.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Riesz capacity ratios with negative exponents (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.11186v1).
 - Maximizing Riesz capacity ratios: conjectures and theorems (HTTP 200). [Retrieved address](https://arxiv.org/abs/2410.14809).
 - Source URL (HTTP 200). [Retrieved address](https://doi.org/10.1214/aoms/1177729032).

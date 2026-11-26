@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://static.renyi.hu/~p_erdos/1963-14.pdf) (55 pages). Full text retrieved.
+- [Source PDF](https://cs.uwaterloo.ca/journals/JIS/VOL28/Hercher3/hercher15.pdf) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/history/850).
 - PDF header (HTTP 200). [Retrieved address](https://static.renyi.hu/~p_erdos/1963-14.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://cs.uwaterloo.ca/journals/JIS/VOL28/Hercher3/hercher15.pdf).

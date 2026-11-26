@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf) (12 pages). Full text retrieved.
+- [Source PDF](https://documents.uow.edu.au/~jennie/WEBPDF/092_1983.pdf) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf).
 - Source URL (HTTP 200). [Retrieved address](https://documents.uow.edu.au/~jennie/PublicationsAll.html).
 - PDF header (HTTP 200). [Retrieved address](https://documents.uow.edu.au/~jennie/WEBPDF/092_1983.pdf).

@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2306.15785v3) (44 pages). conjecture 7.1 on PDF p. 40 · conjecture 7.2 on PDF p. 41, 42 · conjecture 7.3 on PDF p. 41, 42.
+- [Source PDF](https://arxiv.org/pdf/1208.3831) (27 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Two-sided permutation statistics via symmetric functions (HTTP 200). [Retrieved address](https://doi.org/10.1017/fms.2024.89).
 - Two-sided permutation statistics via symmetric functions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2306.15785v3).
 - PDF header (HTTP 200). [Retrieved address](https://dmtcs.episciences.org/9188/pdf).

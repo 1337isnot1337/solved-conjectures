@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2509.07750v1) (32 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - New constructions and bounds for nonabelian Sidon sets with applications to Turán-type problems (HTTP 200). [Retrieved address](https://doi.org/10.4153/S0008414X26102314).
 - New constructions and bounds for nonabelian Sidon sets with applications to Tur\'an-type problems (HTTP 200). [Retrieved address](https://arxiv.org/abs/2509.07750v1).
 - John Byrne - Publications (HTTP 200). [Retrieved address](https://sites.google.com/view/byrnejohn/publications).

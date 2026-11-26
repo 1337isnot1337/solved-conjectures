@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1980-03.pdf) (27 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1980-03.pdf).
 - Source URL (HTTP request failed). [Retrieved address](https://combinatorica.hu/~p_erdos/1980-29.pdf).
 - Quantitative mean value theorems for nonnegative multiplicative functions II (HTTP 200). [Retrieved address](https://doi.org/10.4064/aa-48-3-209-260).

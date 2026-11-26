@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1612.07538v1) (18 pages). conjecture 4.10 on PDF p. 8, 12.
+- [Source PDF](https://arxiv.org/pdf/2404.02136) (22 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Interlacing Ehrhart Polynomials of Reflexive Polytopes (HTTP 200). [Retrieved address](https://arxiv.org/abs/1612.07538v1).
 - On a Conjecture Concerning the Roots of Ehrhart Polynomials of Symmetric Edge Polytopes from Complete Multipartite Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.02136).
 - Interlacing Ehrhart Polynomials of Reflexive Polytopes (HTTP 200). [Retrieved address](https://arxiv.org/abs/1612.07538).

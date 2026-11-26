@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2603.12495v2) (30 pages). conjecture 6.1 on PDF p. 25.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Triangle covering problems and the Viterbo inequality in the plane (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.12495v2).
 - Citation-index seed records. [Triangle covering problems and the Viterbo inequality in the plane](https://doi.org/10.48550/arxiv.2603.12495).
 - Crossref query “Meylender–Thalmaier’s truncated-square conjecture meylender thalmaier truncated square” returned 12 displayed records (HTTP 200).

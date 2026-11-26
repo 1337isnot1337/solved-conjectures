@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1208.3831v3) (27 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2608.02357) (10 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jmaa.2022.126019).
 - The $\s$-Eulerian polynomials have only real roots (HTTP 200). [Retrieved address](https://arxiv.org/abs/1208.3831v3).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10801-021-01101-2).

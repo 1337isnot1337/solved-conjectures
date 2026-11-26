@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1981-16.pdf) (22 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1981-16.pdf).
 - 719 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/719).
 - Erdős Problem #719: Covering hypergraphs with cliques — working report (HTTP 200). [Retrieved address](https://www.erdosproblemaday.com/report/719).

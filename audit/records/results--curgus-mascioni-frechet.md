@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://faculty.curgus.wwu.edu/Papers/RootsOperFinal.pdf) (22 pages). Full text retrieved.
+- [Source PDF](https://faculty.curgus.wwu.edu/Papers/CurgusMascioni20090325.pdf) (18 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://faculty.curgus.wwu.edu/Papers/RootsOperFinal.pdf).
 - Perturbations of roots under linear transformations of polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/math/0502027).
 - PDF header (HTTP 200). [Retrieved address](https://faculty.curgus.wwu.edu/Papers/CurgusMascioni20090325.pdf).

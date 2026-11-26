@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2605.19979) (16 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2609.05131) (19 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Short Proofs in Algebraic and Enumerative Combinatorics (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.19979).
 - Real-rootedness and interlacing for parking functions and Chow polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.05131).

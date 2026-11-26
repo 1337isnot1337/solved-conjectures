@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2409.04869) (21 pages). conjecture 2.1 on PDF p. 6.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Babai Numbers and Babai Spectra of Paths and Cycles (HTTP 200). [Retrieved address](https://arxiv.org/abs/2409.04869).
 - Crossref query “Johnson–Kaya–Matzke conjecture on Babai spectra of paths” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).

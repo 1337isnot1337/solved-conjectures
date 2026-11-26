@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Complete proposed proof of the separately rewarded proper real-threshold case of Conjecture 6. One distribution-independent learner has constant original CMI for every iid distribution and order-1/sqrt(n) expected empirical excess on every fixed sample, including arbitrary atoms. The general VC conjecture is separate.
 
+## Audit finding
+
+Checked the order of quantifiers in the stated threshold theorem against the separately offered real-threshold case of the COLT problem. One proper distribution-independent learner is chosen per sample size, with information bounded for every law and excess empirical risk bounded for every sample. Changing nats to bits leaves the stated common constant sufficient. The broader all-VC target and the sponsor’s adjudication are separate from that theorem.
+
 ## Source outline
 
 - [Theorem](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PROOF.md#L8).
@@ -37,6 +41,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf) (7 pages). conjecture 6 on PDF p. 4.
+- [Source PDF](https://arxiv.org/pdf/2001.09122v3) (58 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf).
 - Reasoning About Generalization via Conditional Mutual Information (HTTP 200). [Retrieved address](https://arxiv.org/abs/2001.09122v3).
 - Reasoning About Generalization via Conditional Mutual Information (HTTP 200). [Retrieved address](https://arxiv.org/abs/2001.09122).
@@ -50,5 +59,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check threshold folded-tree alignment boundaries — exit 0. [Command and output](../evidence/replays/040.txt).
 - Replay finite-coin threshold learner — exit 0. [Command and output](../evidence/replays/041.txt).
 - Replay deterministic threshold learner and priority estimates — exit 0. [Command and output](../evidence/replays/042.txt).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

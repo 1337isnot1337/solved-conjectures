@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2607.15486) (18 pages). conjecture 1.1 on PDF p. 2, 3, 5, 13, 14.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0012-365X(92)90681-5).
 - Problem 611 — Erdős Problems (HTTP 200). [Retrieved address](https://erdosproblems.ai/problems/611).
 - Hitting all maximal independent sets in $c$-hollow graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.15486).

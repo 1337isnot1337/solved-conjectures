@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.23755) (49 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Citation-index seed records. [The maximum number of Hamiltonian cycles in tournaments](https://doi.org/10.48550/arxiv.2610.23755).
 - Crossref query “Quantitative extension of the NSS argument nemeth seberry shu rate candidate.md” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).

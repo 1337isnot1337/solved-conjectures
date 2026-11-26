@@ -25,6 +25,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2404.19451) (16 pages). conjecture 2.10 on PDF p. 7.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP request failed). [Retrieved address](https://doi.org/10.22049/cco.2024.29171.1879).
 - Source URL (HTTP 403). [Retrieved address](https://oro.open.ac.uk/98050/9/98050final.pdf).
 - Lower General Position in Cartesian Products (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.19451).

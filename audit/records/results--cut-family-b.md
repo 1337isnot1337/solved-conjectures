@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2203.02457) (19 pages). conjecture 2 on PDF p. 19.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2022.08.027).
 - The Arithmetic-Periodicity of \textsc{cut} for $\mathcal{C}=\{1,2c\}$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2203.02457).
 - ellis thanatipanonda 2022 cut family a conjecture 1 \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/ellis-thanatipanonda-2022-cut-family-a-conjecture-1/).

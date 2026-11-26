@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://mathdept.byu.edu/cardon/papers/criterion_for_reality_arXiv.pdf) (6 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/0911.1122) (6 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.2478/s11533-013-0269-x).
 - Source URL (HTTP 202). [Retrieved address](https://www.degruyterbrill.com/document/doi/10.2478/s11533-013-0269-x/pdf).
 - PDF header (HTTP 200). [Retrieved address](https://mathdept.byu.edu/cardon/papers/criterion_for_reality_arXiv.pdf).
@@ -44,6 +49,8 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Verification
 
-Recompiled the full conjecture endpoint with Lean 4.35.0, inspected its three transitive axioms, and replayed the module with the stock kernel. [Compiler and checker output](../evidence/csordas-kernel.txt).
+Independently compiled Conjectures.CsordasVishnyakova from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).
+
+
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).

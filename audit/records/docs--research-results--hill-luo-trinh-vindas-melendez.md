@@ -24,6 +24,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2607.15503) (29 pages). conjecture 8.1 on PDF p. 3, 22, 27.
+- [Source PDF](https://arxiv.org/pdf/2603.19194) (33 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Lattice slices, Ehrhart polynomials, and magic positivity of generalized parking-function polytopes (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.15503).
 - Luck and magic for Pitman-Stanley polytopes and parking functions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.19194).
 - PDF header (HTTP 200). [Retrieved address](https://dmg.tuwien.ac.at/ludwig/lattice.pdf).

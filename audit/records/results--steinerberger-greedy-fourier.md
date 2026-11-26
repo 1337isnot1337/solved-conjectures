@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 The local HTTP probe and public search index differed on access to one PDF. The public index returned the source text for the same URL. Both observations are retained.
 
+- [Source PDF](https://arxiv.org/pdf/2109.06298) (24 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10231-020-00990-7).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00013-021-01688-9).

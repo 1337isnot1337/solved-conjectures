@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.29846v1) (51 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2611.12829) (45 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Permutations, Pattern Covers, Posets and Positivity: Part I: Patterns and Posets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.29846v1).
 - The whole prescribed packing-maximum conjecture \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/blitvic-kammoun-steingrimsson-2026-packing-maximum/).
 - Permutations, Pattern Covers, Posets and Positivity, Part II: Regular Pattern Packings and Moment Sequences (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.12829).

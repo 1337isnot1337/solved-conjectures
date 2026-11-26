@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2507.15006v2) (14 pages). conjecture 4.4 on PDF p. 10.
+- [Source PDF](https://imag.umontpellier.fr/~ramirez/NS-Tree.pdf) (14 pages). conjecture 4.4 on PDF p. 10.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Numerical semigroup tree: type-representation (HTTP 200). [Retrieved address](https://arxiv.org/abs/2507.15006v2).
 - PDF header (HTTP 200). [Retrieved address](https://imag.umontpellier.fr/~ramirez/NS-Tree.pdf).
 - Crossref query “Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture chappelon ramirez stamate leaf type” returned 12 displayed records (HTTP 200).
@@ -33,6 +38,8 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
 ## Verification
+
+Independently compiled Conjectures.ChappelonRamirezStamateLeafType from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).
 
 - Replay leaf types, interior Ehrhart counts, and pinnacle paths — exit 0. [Command and output](../evidence/replays/027.txt).
 

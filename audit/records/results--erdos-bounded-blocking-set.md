@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Translation planes of bounded dimension over a kernel field of bounded characteristic have blocking sets meeting each line in a uniformly bounded number of points.
 
+## Audit finding
+
+The scalar covering step uses a vector space of dimension s+1 mapping into a quotient of dimension at most s. Each nonzero kernel therefore contributes a scalar representative that meets the chosen affine line. The number of representatives and the maximum intersection per translate both depend on p and e. Small extension degree is treated by the whole line construction. These bounds do not supply one absolute constant over every finite projective plane.
+
 ## Source outline
 
 - [Theorem](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-bounded-blocking-set/PROOF.md#L5).
@@ -28,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.renyi.hu/~p_erdos/1981-16.pdf) (22 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2510.15332) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 1159 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/1159).
 - Source URL (HTTP 403). [Retrieved address](https://www.sciencedirect.com/science/article/pii/S1071579715000507).
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~p_erdos/1981-16.pdf).
@@ -40,5 +49,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check finite cases for five open-problem results — exit 0. [Command and output](../evidence/replays/013.txt).
 
 The original result page marks independent proof review pending.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

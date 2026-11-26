@@ -24,6 +24,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.27175v2) (19 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2607.20765) (12 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Recent progress in the construction of Hadamard matrices (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.27175v2).
 - Hadamard/FRONTIER.md at d885022144ba6bf4efa8315e14871a3736947527 · vatskishan03/Hadamard · GitHub (HTTP 200). [Retrieved address](https://github.com/vatskishan03/Hadamard/blob/d885022/FRONTIER.md).
 - Multiplier obstructions for Legendre pairs of length 333 (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.20765).

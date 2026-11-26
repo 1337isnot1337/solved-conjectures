@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2604.24192) (16 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Conjecture 30: Chollet’s conjecture – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/conjecture-30/index.html).
 - Structural Classes for Chollet's Permanent Conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.24192).
 - Citation-index seed records. [Is There a Permanental Analogue to Oppenheim's Inequality?](https://doi.org/10.1080/00029890.1982.11995380) · [Structural Classes for Chollet's Permanent Conjecture](https://doi.org/10.48550/arxiv.2604.24192).

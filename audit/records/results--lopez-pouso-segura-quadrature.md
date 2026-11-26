@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2305.19128) (29 pages). conjecture 2 on PDF p. 12 · conjecture 3 on PDF p. 12, 15, 17, 18, 27 · conjecture 7 on PDF p. 15, 16, 17, 18.
+- [Source PDF](https://arxiv.org/pdf/2509.16716) (28 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1186/s13660-025-03283-w).
 - Uniform relations between the Gauss-Legendre nodes and weights (HTTP 200). [Retrieved address](https://arxiv.org/abs/2305.19128).
 - DLMF: §5.11 Asymptotic Expansions ‣ Properties ‣ Chapter 5 Gamma Function (HTTP 200). [Retrieved address](https://dlmf.nist.gov/5.11).

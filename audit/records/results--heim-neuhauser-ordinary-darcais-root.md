@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2011.08874) (20 pages). conjecture 2 on PDF p. 3, 19.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11139-026-01435-0).
 - Fractional partitions and conjectures of Chern-Fu-Tang and Heim-Neuhauser (HTTP 200). [Retrieved address](https://arxiv.org/abs/2011.08874).
 - Citation-index seed records. [Polynomization of Sun’s conjecture](https://doi.org/10.1007/s11139-026-01435-0).

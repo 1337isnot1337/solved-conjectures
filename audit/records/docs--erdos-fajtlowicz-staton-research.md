@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2604.08215) (18 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2608.08169) (13 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - RegularInducedSubgraphs (HTTP 200). [Retrieved address](https://mathweb.ucsd.edu/~erdosproblems/erdos/newproblems/RegularInducedSubgraphs.html).
 - Ramsey numbers for regular induced subgraphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.08215).
 - The lower-bound problem for regular induced subgraphs of type-based random graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.08169).

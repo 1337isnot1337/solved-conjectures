@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 The local HTTP probe and public search index differed on access to one PDF. The public index returned the source text for the same URL. Both observations are retained.
 
+- [Source PDF](https://arxiv.org/pdf/2609.14023v3) (17 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).
 - Orthonormal bases of spherical harmonics with maximal Lp norm growth (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.14023v3).
 - PDF header (HTTP 200). [Retrieved address](https://web.stanford.edu/class/ee398a/handouts/papers/Malvar%20-%20LOT.pdf).

@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1980-30.pdf) (19 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2603.01020) (8 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1980-30.pdf).
 - Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/history/761).
 - DICHROMATIC NUMBER AND FRACTIONAL CHROMATIC NUMBER (HTTP 200). [Retrieved address](https://doi.org/10.1017/fms.2016.28).

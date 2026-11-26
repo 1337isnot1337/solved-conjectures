@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2202.03793) (60 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1609.01544) (23 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.aim.2024.109695).
 - Coefficientwise Hankel-total positivity of the row-generating polynomials for the output matrices of certain production matrices (HTTP 200). [Retrieved address](https://arxiv.org/abs/2202.03793).
 - Positivity problems in enumerative and algebraic combinatorics (HTTP 200). [Retrieved address](https://bishaldeb.com/positivity/themes/SMSCHTP/hankel.html).

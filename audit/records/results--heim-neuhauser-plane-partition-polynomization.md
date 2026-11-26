@@ -24,6 +24,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://link.springer.com/content/pdf/10.1007/s11139-026-01435-0.pdf) (18 pages). conjecture 1 on PDF p. 5.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11139-026-01435-0).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s11139-026-01435-0).
 - Citation-index seed records. [Polynomization of Sun’s conjecture](https://doi.org/10.1007/s11139-026-01435-0).

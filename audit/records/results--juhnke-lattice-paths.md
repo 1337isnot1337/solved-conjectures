@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://ems.press/content/serial-article-files/53596?nt=1) (76 pages). conjecture 5 on PDF p. 70 · conjecture 6 on PDF p. 70.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/53596?nt=1).
 - Unimodal Log-Concave and Pólya Frequency Sequences in Combinatorics (HTTP 200). [Retrieved address](https://doi.org/10.1090/memo/0413).
 - An Extension of a  Criterion for Unimodality (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v8i1r30).

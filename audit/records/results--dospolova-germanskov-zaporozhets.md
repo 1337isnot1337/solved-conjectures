@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2507.11626v1) (16 pages). conjecture 3.6 on PDF p. 9.
+- [Source PDF](https://case.edu/artsci/math/mwmeckes/perspectivesInHighDimensions/vitale.pdf) (42 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On Steiner entire function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2507.11626v1).
 - Intrinsic volumes and Gaussian processes (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0001867800010831).
 - PDF header (HTTP 200). [Retrieved address](https://case.edu/artsci/math/mwmeckes/perspectivesInHighDimensions/vitale.pdf).

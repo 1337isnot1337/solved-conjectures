@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2408.01755v2) (18 pages). Full text retrieved.
+- [Source PDF](https://dmkrp.wordpress.com/wp-content/uploads/2025/05/karp-anna-vishnyakova-and-yi-zhang.pdf) (27 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Unimodality preservation by ratios of functional series and integral transforms (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.01755v2).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00025-025-02431-4).
 - PDF header (HTTP 200). [Retrieved address](https://dmkrp.wordpress.com/wp-content/uploads/2025/05/karp-anna-vishnyakova-and-yi-zhang.pdf).

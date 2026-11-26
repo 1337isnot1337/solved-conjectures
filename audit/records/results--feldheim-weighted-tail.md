@@ -29,6 +29,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1609.03004v3) (18 pages). conjecture 1 on PDF p. 2 · conjecture 2 on PDF p. 2.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Mean and Minimum of Independent Random Variables (HTTP 200). [Retrieved address](https://arxiv.org/abs/1609.03004v3).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11856-021-2195-0).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s11856-021-2195-0).

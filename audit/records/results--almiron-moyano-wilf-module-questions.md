@@ -24,6 +24,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2012.01358v3) (20 pages). question 4.8 on PDF p. 15.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - An extension of the Wilf conjecture to semimodules over a numerical semigroup (HTTP 200). [Retrieved address](https://arxiv.org/abs/2012.01358v3).
 - Citation-index seed records. [An extension of the Wilf conjecture to semimodules over a numerical semigroup](https://doi.org/10.48550/arxiv.2012.01358).
 - Crossref query “Almirón–Moyano-Fernández’s Wilf-module questions almiron moyano wilf module questions” returned 12 displayed records (HTTP 200).

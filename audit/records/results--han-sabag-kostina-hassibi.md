@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2406.17196v2) (13 pages). conjecture 1 on PDF p. 5, 6, 12.
+- [Source PDF](https://arxiv.org/pdf/2310.11747) (8 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Coded Kalman Filtering over MIMO Gaussian Channels with Feedback (HTTP 200). [Retrieved address](https://arxiv.org/abs/2406.17196v2).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1109/ISIT57864.2024.10619600).
 - Coded Kalman Filtering over MIMO Gaussian Channels with Feedback (HTTP 200). [Retrieved address](https://cris.huji.ac.il/en/publications/coded-kalman-filtering-over-mimo-gaussian-channels-with-feedback/).

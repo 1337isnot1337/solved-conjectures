@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2208.14496) (14 pages). Full text retrieved.
+- [Source PDF](https://ajc.maths.uq.edu.au/pdf/93/ajc_v93_p224.pdf) (50 pages). conjecture 1.1 on PDF p. 4, 42.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Limiting behavior in growth of Bulgarian Solitaire orbits (HTTP 200). [Retrieved address](https://arxiv.org/abs/2208.14496).
 - PDF header (HTTP 200). [Retrieved address](https://ajc.maths.uq.edu.au/pdf/93/ajc_v93_p224.pdf).
 - Crossref query “Bulgarian solitaire: a counterexample to Pham's denominator-degree conjecture” returned 12 displayed records (HTTP 200).

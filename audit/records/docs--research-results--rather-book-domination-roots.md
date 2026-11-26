@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2604.08998v2) (17 pages). conjecture 5.4 on PDF p. 12.
+- [Source PDF](https://arxiv.org/pdf/1401.2092) (16 pages). question 3 on PDF p. 12.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On roots of domination polynomials for friendship and book graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.08998v2).
 - Rather's book domination-root Conjecture 5.4 \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/rather-2026-book-domination-root-conjecture/).
 - On the Domination Polynomials of Friendship Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/1401.2092).

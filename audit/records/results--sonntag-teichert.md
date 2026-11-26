@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 The local HTTP probe and public search index differed on access to one PDF. The public index returned the source text for the same URL. Both observations are retained.
 
+- [Source PDF](https://hereditarnia.ics.upjs.sk/data_files/1297834445_WorkshopProblems2010.pdf) (41 pages). conjecture 26.1 on PDF p. 33 · question 29.1 on PDF p. 36.
+- [Source PDF](https://arxiv.org/pdf/1302.4677) (12 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://doi.org/10.7494/OpMath.2010.30.2.179).
 - PDF header (HTTP 200). [Retrieved address](https://hereditarnia.ics.upjs.sk/data_files/1297834445_WorkshopProblems2010.pdf).
 - Source URL (HTTP 404). [Retrieved address](https://citeseerx.ist.psu.edu/document?doi=a53168d277dd746c25f898e820e3da09b0661299&repid=rep1&type=pdf).

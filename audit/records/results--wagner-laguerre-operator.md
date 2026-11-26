@@ -36,6 +36,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2108.01827v2) (13 pages). conjecture 4.1 on PDF p. 10 · conjecture 4.3 on PDF p. 11.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On a new class of Laguerre-P\'{o}lya type functions with applications in number theory (HTTP 200). [Retrieved address](https://arxiv.org/abs/2108.01827v2).
 - On a new class of Laguerre–Pólya type functions with applications in number theory (HTTP 200). [Retrieved address](https://msp.org/pjm/2022/320-1/p07.xhtml).
 - On a new class of Laguerre–Pólya type functions with applications in number theory (HTTP 200). [Retrieved address](https://msp.org/pjm/2022/320-1/pjm-v320-n1-p07-s.pdf).

@@ -1,0 +1,276 @@
+{
+  "before": "d676ae52308b71d65beac020fb2a1a591a9e6d34",
+  "after": "d5dfad5148d8e88bdea39fe9f475beecc8f8c01b",
+  "removed_result_directories": [
+    "athanasiadis-chapoton-q-zeta",
+    "athanasiadis-chapoton-transmuted-m",
+    "gonzalez-dleon-wachs-complete-graphs",
+    "kovalev-zero-free",
+    "rowland-sistos-barron",
+    "stern-half-plane",
+    "wagner-laguerre-operator"
+  ],
+  "added_result_directories": [],
+  "surviving_result_directories": 189,
+  "retained_supplements": {
+    "docs/kovalev-fractional-taylor-sections": {
+      "former_record": "results/kovalev-zero-free",
+      "old_dossier": "records/results--kovalev-zero-free.md",
+      "published_tree": "https://github.com/1337isnot1337/solved-conjectures/tree/d5dfad5148d8e88bdea39fe9f475beecc8f8c01b/docs/kovalev-fractional-taylor-sections",
+      "files": {
+        "AUDIT.md": {
+          "sha256": "315504dbdc4e798957feb6e626f4f368949307b912b0bee84155bf26ab7f3155",
+          "unchanged_from_result_paths": []
+        },
+        "EXPONENT-SCOPE.md": {
+          "sha256": "e6b032f17a2a8a2fbf165e8908776c2f8528ff0fc60998865fde6820bc3fc962",
+          "unchanged_from_result_paths": [
+            "results/kovalev-zero-free/EXPONENT-SCOPE.md"
+          ]
+        },
+        "FORMALIZATION.md": {
+          "sha256": "034a24271a3c7ce04cd828edc7ee052b052fea1499cf81fcd17dcbcaed3bb206",
+          "unchanged_from_result_paths": []
+        },
+        "INTEGRAL_REVIEW.md": {
+          "sha256": "2690ec23e568771d7d67f1e6990c4b28c5361892771d032c7ce6fe67000fcff0",
+          "unchanged_from_result_paths": []
+        },
+        "LEAN_REVIEW.md": {
+          "sha256": "567c1b024321c165a0f5c5cd79517fa69980874fd5703c81f6c48c5ecd19ba4c",
+          "unchanged_from_result_paths": []
+        },
+        "PROOF.md": {
+          "sha256": "eb04a44c7cbb133a617c6816721373658c8f19936e64323733465e8e8e461fe5",
+          "unchanged_from_result_paths": []
+        },
+        "README.md": {
+          "sha256": "dd4d162c9b81d6bb82efe487dbaf46b03a2a75779a16d196250350d8d545519f",
+          "unchanged_from_result_paths": []
+        },
+        "STATEMENT_REVIEW.md": {
+          "sha256": "63032c5aa0b3c1908da66b315902f3fa7af4830a83c59283a9134a284bbe2edc",
+          "unchanged_from_result_paths": []
+        },
+        "TAYLOR_REVIEW.md": {
+          "sha256": "0914c143a714406dce01b7f589f6070369d58cdf7e8ce571bbf247e22c642c13",
+          "unchanged_from_result_paths": []
+        },
+        "TRANSPORT_REVIEW.json": {
+          "sha256": "0a375a3097fff0889ba2113057d411877a6ed532a82d2dbbcd7ee793de801b0f",
+          "unchanged_from_result_paths": [
+            "results/kovalev-zero-free/TRANSPORT_REVIEW.json"
+          ]
+        },
+        "TRANSPORT_REVIEW.md": {
+          "sha256": "ebcfd98de74fcee9cbe4e183eda38d982a6b19f55214ffe8c9c37ff8c882a3e8",
+          "unchanged_from_result_paths": []
+        }
+      }
+    },
+    "docs/rank-six-power-ranks": {
+      "former_record": "results/rowland-sistos-barron",
+      "old_dossier": "records/results--rowland-sistos-barron.md",
+      "published_tree": "https://github.com/1337isnot1337/solved-conjectures/tree/d5dfad5148d8e88bdea39fe9f475beecc8f8c01b/docs/rank-six-power-ranks",
+      "files": {
+        "AUDIT.md": {
+          "sha256": "a267c22262a074df1b6971b2b6761d4479f2704a1d80bddf92585f67ebdec8a9",
+          "unchanged_from_result_paths": []
+        },
+        "INDEPENDENT-AUDIT.md": {
+          "sha256": "6d1fa834b753c3d8874f42bfe399d9e9f34904ba0cb58b3d3faa182b188aca2a",
+          "unchanged_from_result_paths": []
+        },
+        "LEAN_STATUS.md": {
+          "sha256": "aa5f7df674acdb27a853dba0ae6d7e24027fe037698660a9e84ae03b593a9122",
+          "unchanged_from_result_paths": []
+        },
+        "NOVELTY.md": {
+          "sha256": "1fc206f0d3628cd689f35b4c0119948a6479346ea425e8eabf401aeb29c50601",
+          "unchanged_from_result_paths": []
+        },
+        "PROOF.md": {
+          "sha256": "e4dd00c50428e2e5f9d69cc55196d4da6922c6e189709bfb8304af36b26bbf24",
+          "unchanged_from_result_paths": []
+        },
+        "README.md": {
+          "sha256": "527b541496c8e2aedf57b7abe9304014d288a20c1332f78ef052c35d21de7873",
+          "unchanged_from_result_paths": []
+        },
+        "verification.json": {
+          "sha256": "36b297df4058b978340f7361c19c2ae9c29c94a359f271501340d9ba1ddf2c52",
+          "unchanged_from_result_paths": [
+            "results/rowland-sistos-barron/verification.json"
+          ]
+        },
+        "verify.py": {
+          "sha256": "a3eb7ff363a86364c68b2ec82411968bec3e10615a9fb6835ad62f8f9363bd2c",
+          "unchanged_from_result_paths": [
+            "results/rowland-sistos-barron/verify.py"
+          ]
+        },
+        "verify_expansion.py": {
+          "sha256": "5ae1e2b08acb8d87e470a1985caeb290f52b3028150af0187fee0791b0eb683d",
+          "unchanged_from_result_paths": [
+            "results/rowland-sistos-barron/verify_expansion.py"
+          ]
+        }
+      }
+    },
+    "docs/weighted-complete-graph-moments": {
+      "former_record": "results/gonzalez-dleon-wachs-complete-graphs",
+      "old_dossier": "records/results--gonzalez-dleon-wachs-complete-graphs.md",
+      "published_tree": "https://github.com/1337isnot1337/solved-conjectures/tree/d5dfad5148d8e88bdea39fe9f475beecc8f8c01b/docs/weighted-complete-graph-moments",
+      "files": {
+        "AUDIT.md": {
+          "sha256": "d2199f342545fe2a7c7bad4606707ea05a9ab70e225207e15ae4ca5a6beb0c49",
+          "unchanged_from_result_paths": []
+        },
+        "FORMALIZATION.md": {
+          "sha256": "08791aadef8f9a9e8a0fbe8a9a009069a4fefcd9df0d179b024cb7d713c731a2",
+          "unchanged_from_result_paths": []
+        },
+        "PROOF.md": {
+          "sha256": "cef9c1eaa63c9dd8fcbcec5a69682f95c14a2a3a910a584e79b368a3d4510381",
+          "unchanged_from_result_paths": []
+        },
+        "README.md": {
+          "sha256": "bdd4ceb4f3e38523ad99ae856bd1987b185e17bb326c9aca20f7b1b6dd5b8c9f",
+          "unchanged_from_result_paths": []
+        },
+        "check_complete.py": {
+          "sha256": "1c4e3d1e915045443f2262479f1f3e12191a72f5bb43479e800797ed3e2ae621",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/check_complete.py"
+          ]
+        },
+        "verification/block-moebius-factorization/TargetAudit.lean": {
+          "sha256": "4c1472a11243af8cecb2189738696e49db2628aac96fa6691f0b17fb42c7db1a",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/block-moebius-factorization/TargetAudit.lean"
+          ]
+        },
+        "verification/block-moebius-factorization/receipt.json": {
+          "sha256": "5c50efdfec101a5c5167b200367b42d14a1568de7ad28b8a4c284145a5b90e45",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/block-moebius-factorization/receipt.json"
+          ]
+        },
+        "verification/canonical-size-recurrence/TargetAudit.lean": {
+          "sha256": "d8b2f86190f8468f1710938c112a6c6a04a3c75201bf036f9af1c696c098019d",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/canonical-size-recurrence/TargetAudit.lean"
+          ]
+        },
+        "verification/canonical-size-recurrence/receipt.json": {
+          "sha256": "53eceaa127a3c8e461b808e0f31f29b8a0cf01b225f04a3ed36ae6adfe6b7813",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/canonical-size-recurrence/receipt.json"
+          ]
+        },
+        "verification/complete-stated-result/TargetAudit.lean": {
+          "sha256": "d832207643f5357e40841dfd53d8f15ea2f95e2d83914753d2e4da4097ffdbba",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/complete-stated-result/TargetAudit.lean"
+          ]
+        },
+        "verification/complete-stated-result/receipt.json": {
+          "sha256": "6da81196b69ff4428584910bd2c18b85e4baa38aa7c505b877b9e7b1478921de",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/complete-stated-result/receipt.json"
+          ]
+        },
+        "verification/formal-series/TargetAudit.lean": {
+          "sha256": "5e7bc9cf42a36968cfac9a06164ad6cb0cb4b3887ed7d2a7ee5e53c595280b8a",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/formal-series/TargetAudit.lean"
+          ]
+        },
+        "verification/formal-series/receipt.json": {
+          "sha256": "2b372310b4bd4e40f84507677e8db0eaa7e18a2a39b29a4d8f6d83a4247c0a8c",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/formal-series/receipt.json"
+          ]
+        },
+        "verification/gamma-expectation-and-real-zeros/TargetAudit.lean": {
+          "sha256": "1d5211b23974ffed85aae559cb4a6e6ffeb7fff4d96650bd187c72a0ca316c64",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/gamma-expectation-and-real-zeros/TargetAudit.lean"
+          ]
+        },
+        "verification/gamma-expectation-and-real-zeros/receipt.json": {
+          "sha256": "71afc00932f7ca1d53172faa63dd5ffd95eb6cd6245a61f6a2e8b1cd18249ba5",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/gamma-expectation-and-real-zeros/receipt.json"
+          ]
+        },
+        "verification/literal-laguerre-formula/TargetAudit.lean": {
+          "sha256": "e491c1e791ad17f95c2c5473b264b3f040ef5094a3693a4b3957ed4cf438a00a",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/literal-laguerre-formula/TargetAudit.lean"
+          ]
+        },
+        "verification/literal-laguerre-formula/receipt.json": {
+          "sha256": "246fea0a1ca7e53362197aac4f1ad2292530c5a78108664274fde1db9eaec684",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/literal-laguerre-formula/receipt.json"
+          ]
+        },
+        "verification/literal-weighted-poset/TargetAudit.lean": {
+          "sha256": "ba064cc360bf36f1bc09d66fb0ecc32cf06eccbca6ef27baf6da0283161b1481",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/literal-weighted-poset/TargetAudit.lean"
+          ]
+        },
+        "verification/literal-weighted-poset/receipt.json": {
+          "sha256": "0145332cf0559aec38a69bb15e264e814130b8363d058e17875e532a813d92a4",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/literal-weighted-poset/receipt.json"
+          ]
+        },
+        "verification/one-block-cancellation/TargetAudit.lean": {
+          "sha256": "47ba7706c7cf505b85e3ba1d81e95b3cb7456bcc2d678a71bf88d2dfd3a11945",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/one-block-cancellation/TargetAudit.lean"
+          ]
+        },
+        "verification/one-block-cancellation/receipt.json": {
+          "sha256": "1a06c3cf3c3c9e12bda4c532f3aced4e2d6e4dbc5d164099a2a703946d3e2b79",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/one-block-cancellation/receipt.json"
+          ]
+        },
+        "verification/positive-laguerre-roots/TargetAudit.lean": {
+          "sha256": "4d32f74e0a6f460bbd2c211d73c0c5056504fa26d37026f6f9cd9ab22052d4a8",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/positive-laguerre-roots/TargetAudit.lean"
+          ]
+        },
+        "verification/positive-laguerre-roots/receipt.json": {
+          "sha256": "9a2ef8aeb8b455b155af8c725b3cd9714e1bce6383922c31855b73be32630330",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/positive-laguerre-roots/receipt.json"
+          ]
+        },
+        "verification/positive-moments-and-log-concavity/TargetAudit.lean": {
+          "sha256": "7a466a866dedc3be4ee8e9931f118076f46fcd5d2b83bfc7c7e4876878286be7",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/positive-moments-and-log-concavity/TargetAudit.lean"
+          ]
+        },
+        "verification/positive-moments-and-log-concavity/receipt.json": {
+          "sha256": "2bbd9bee4dc8ab7d0f2e9e3067c42c43bf253b01a10189407184de6559d5a8fe",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/verification/positive-moments-and-log-concavity/receipt.json"
+          ]
+        },
+        "weighted_bond_recurrence.py": {
+          "sha256": "6a899fe48c56366e2b6ee2cee031534cf1a042a48b244d41ac2a403f4bc40f4c",
+          "unchanged_from_result_paths": [
+            "results/gonzalez-dleon-wachs-complete-graphs/weighted_bond_recurrence.py"
+          ]
+        }
+      }
+    }
+  }
+}

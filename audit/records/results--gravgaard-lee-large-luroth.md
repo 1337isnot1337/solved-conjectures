@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2506.12513v2) (36 pages). conjecture 2.6 on PDF p. 8 · conjecture 2.12 on PDF p. 10.
+- [Source PDF](https://arxiv.org/pdf/2411.17379v2) (22 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Decomposition of real numbers into sums of L\"uroth sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.12513v2).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1142/S1793042126500958).
 - On a Conjecture of Cusick on a sum of Cantor sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2411.17379v2).

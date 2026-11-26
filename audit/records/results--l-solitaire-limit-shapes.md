@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://combinatorialpress.com/article/ojac/vol15/192.pdf) (19 pages). conjecture 1 on PDF p. 12, 16.
+- [Source PDF](https://math.colgate.edu/~integers/a9Proc23/a9Proc23.pdf) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://combinatorialpress.com/article/ojac/vol15/192.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://math.colgate.edu/~integers/a9Proc23/a9Proc23.pdf).
 - Crossref query “Generalized Bulgarian solitaire: limit shapes of recurrent L-solitaire configurations” returned 12 displayed records (HTTP 200).

@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://link.springer.com/content/pdf/10.1007/s00205-025-02088-x.pdf) (85 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2306.05824) (64 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00205-025-02088-x).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/content/pdf/10.1007/s00205-025-02088-x.pdf).
 - BCS Critical Temperature on Half-Spaces (HTTP 200). [Retrieved address](https://pmc.ncbi.nlm.nih.gov/articles/PMC11873003/).

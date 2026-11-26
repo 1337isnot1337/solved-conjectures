@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2608.18842v2) (8 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2601.18599v4) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A Positive Proportion of the Reduced D'Arcais Polynomials is not Hurwitz (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.18842v2).
 - Asymptotics of the d'Arcais Numbers at Small $k$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2601.18599v4).
 - Citation-index seed records. [A Positive Proportion of the Reduced D'Arcais Polynomials is not Hurwitz](https://doi.org/10.48550/arxiv.2608.18842) · [Asymptotics of the d'Arcais Numbers at Small $k$](https://doi.org/10.48550/arxiv.2601.18599).

@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://borowiecki.dev/pdf/2607.06207) (26 pages). open problem 6.2 on PDF p. 24.
+- [Source PDF](https://arxiv.org/pdf/2607.06207) (26 pages). open problem 6.2 on PDF p. 24.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://borowiecki.dev/pdf/2607.06207).
 - Source URL (HTTP 403). [Retrieved address](https://www.researchgate.net/publication/411305396_Polynomially_Deformed_Normalized_Pochhammer_Sequences_Having_Generating_Functions_With_Only_Real_Non-positive_Zeros).
 - open-problems-catalog/solutions/b3-continuation-2026-10-07/interpolation/REPORT.md at ca8d4d44ba3db527f19f28928c240168f545ecfe · 10m-u/open-probl (HTTP 200). [Retrieved address](https://github.com/10m-u/open-problems-catalog/blob/ca8d4d44ba3db527f19f28928c240168f545ecfe/solutions/b3-continuation-2026-10-07/interpolation/REPORT.md).

@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1703.01955) (34 pages). conjecture 5.2 on PDF p. 30 · conjecture 5.8 on PDF p. 31.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00605-017-1041-2).
 - Arithmetic properties of coefficients of power series expansion of $\prod_{n=0}^{\infty}\left(1-x^{2^{n}}\right)^{t}$ (with an Appendix by Andrze (HTTP 200). [Retrieved address](https://arxiv.org/abs/1703.01955).
 - Citation-index seed records. [Arithmetic properties of coefficients of power series expansion of $$\prod _{n=0}^{\infty }\left( 1-x^{2^{n}}\right) ^{t}$$ ∏ n = 0 ∞ 1 - x 2 n t (with an appen](https://doi.org/10.1007/s00605-017-1041-2).

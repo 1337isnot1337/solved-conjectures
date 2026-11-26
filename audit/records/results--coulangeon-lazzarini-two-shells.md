@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1401.2891) (22 pages). conjecture 21 on PDF p. 15.
+- [Source PDF](https://www.algant.eu/documents/theses/lazzarini.pdf) (77 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jnt.2014.02.015).
 - Spherical Designs and Heights of Euclidean Lattices (HTTP 200). [Retrieved address](https://arxiv.org/abs/1401.2891).
 - PDF header (HTTP 200). [Retrieved address](https://www.algant.eu/documents/theses/lazzarini.pdf).

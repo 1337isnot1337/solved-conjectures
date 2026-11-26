@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > There is an almost-disjoint family of infinite sets on a countable ground set, with no singleton intersections, that admits a proper two-coloring yet defeats every attempt to put two points of each color in every edge.
 
+## Audit finding
+
+Checked the diagonal construction on finite binary strings and both cases for the private pairs. A mixed pair and a monochromatic private edge leave exactly one point of the opposite color. If all pairs are monochromatic, a diagonal edge is entirely monochromatic. The construction itself admits an ordinary proper coloring by splitting every pair. It disproves the two-occurrence strengthening and leaves the original one-occurrence question open.
+
 ## Source outline
 
 - [Sharp obstruction to two points of each color](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/komjath-property-b/PROOF.md#L5).
@@ -24,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://shelah.logic.at/files/95606/19.pdf) (8 pages). Full text retrieved.
+- [Source PDF](https://www.renyi.hu/~soukup/setop/otka61600/conflict_free.pdf) (46 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 602 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/602).
 - PDF header (HTTP 200). [Retrieved address](https://shelah.logic.at/files/95606/19.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~soukup/setop/otka61600/conflict_free.pdf).
@@ -36,5 +45,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 The computational runs in this audit do not include a separate executable check for this entry.
 
 The original result page marks independent proof review pending.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

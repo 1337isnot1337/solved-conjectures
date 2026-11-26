@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2504.03448v2) (19 pages). problem 23 on PDF p. 17 · conjecture 24 on PDF p. 17.
+- [Source PDF](https://arxiv.org/pdf/2504.03448) (19 pages). problem 23 on PDF p. 17 · conjecture 24 on PDF p. 17.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A New Dominating Set Game on Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2504.03448v2).
 - A New Dominating Set Game on Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2504.03448).
 - A New Dominating Set Game on Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2504.03448v1).

@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2608.08762) (27 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2608.22955) (10 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A note on the partition function of a rectangle (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.08762).
 - The asymptotic behavior of the rectangle partition function $p(m,n)$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.22955).
 - Rationality and Quasipolynomiality of Restricted Rectangle Partitions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.13305).

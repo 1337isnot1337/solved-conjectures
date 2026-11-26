@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://math.colgate.edu/~integers/aa45/aa45.pdf) (20 pages). conjecture 2 on PDF p. 4, 6, 7.
+- [Source PDF](https://arxiv.org/pdf/2502.08408) (17 pages). conjecture 2 on PDF p. 4, 5.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://math.colgate.edu/~integers/aa45/aa45.pdf).
 - Approximation properties of Lüroth expansions (HTTP 200). [Retrieved address](https://doi.org/10.3934/DCDS.2020389).
 - A Mass Transference Principle and the Duffin–Schaeffer conjecture for Hausdorff measures (HTTP 200). [Retrieved address](https://annals.math.princeton.edu/2006/164-3/p06).

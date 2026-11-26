@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1809.01340) (20 pages). conjecture 7.1 on PDF p. 18.
+- [Source PDF](https://arxiv.org/pdf/2008.08222) (8 pages). conjecture 4.1 on PDF p. 7.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Stack-Sorting, Set Partitions, and Lassalle's Sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/1809.01340).
 - Unimodality of a refinement of Lassalle's sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/2008.08222).
 - Source URL (HTTP request failed). [Retrieved address](https://people.brandeis.edu/~bernardi/publications/chromatic-v5.pdf).

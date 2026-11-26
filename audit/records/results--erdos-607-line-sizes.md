@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://trotter.math.gatech.edu/papers/38.pdf) (12 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A401948 - OEIS (HTTP 200). [Retrieved address](https://oeis.org/A401948).
 - The On-Line Encyclopedia of Integer Sequences (OEIS) (HTTP 200). [Retrieved address](https://oeis.org/history?seq=A401948).
 - 607 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/607).

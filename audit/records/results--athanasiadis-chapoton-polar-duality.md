@@ -33,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2605.26916v1) (26 pages). conjecture 5.2 on PDF p. 12, 16 · conjecture 5.3 on PDF p. 16 · conjecture 5.4 on PDF p. 16 · conjectures 5.2 on PDF p. 16.
+- [Source PDF](https://arxiv.org/pdf/2608.16037) (25 pages). conjecture 5.4 on PDF p. 3 · problem 5.2 on PDF p. 23 · problem 5.3 on PDF p. 23 · problem 5.4 on PDF p. 23.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Polytopes and posets associated to preorders (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.26916v1).
 - Preorder polytopes: matching endpoint pairs, flag spheres and the Athanasiadis–Chapoton conjectures (HTTP 200). [Retrieved address](https://www.evidencepress.org/releases/preorder-polytope-flag-spheres/).
 - Counting Lattice Points in Minkowski Sums of Cross Polytopes (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.16037).

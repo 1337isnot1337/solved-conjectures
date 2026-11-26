@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Proves the sharp universal second-order coefficient, with an independently audited bounded-remainder match along orders three times a power of two.
 
+## Audit finding
+
+The target in Problem 4.1 is the second-order limsup. On the groups of order 3 times a power of two, conditioning on distinct samples costs at most order k²/N. In the proposed fiber construction, each nonzero column type with at least two occupied coordinates can be signed to sum to zero modulo three, by pairing and using a triple when its size is odd. The probability bound excludes singleton types with high probability. The subsequence supplies the lower limsup and Ma–Tang supply the matching upper bound.
+
 ## Source outline
 
 - [Proof](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ma-tang-random-subset-sums/PROOF.md#L15).
@@ -25,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2602.05768v2) (13 pages). problem 4.1 on PDF p. 12.
+- [Source PDF](https://arxiv.org/pdf/2510.01300v2) (7 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - An Erd\H{o}s problem on random subset sums in finite abelian groups (HTTP 200). [Retrieved address](https://arxiv.org/abs/2602.05768v2).
 - The Permanent Rank of a Matrix (Part Three) Note on the Additive Basis Conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/2510.01300v2).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1965-15.pdf).
@@ -36,5 +45,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 ## Verification
 
 The computational runs in this audit do not include a separate executable check for this entry.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

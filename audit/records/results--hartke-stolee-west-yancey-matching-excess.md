@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://dwest.web.illinois.edu/pubs/perfmat.pdf) (22 pages). conjecture 9.15 on PDF p. 21.
+- [Source PDF](https://arxiv.org/pdf/1105.1764) (25 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://dwest.web.illinois.edu/pubs/perfmat.pdf).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1002/jgt.21687).
 - Generating p-extremal graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/1105.1764).

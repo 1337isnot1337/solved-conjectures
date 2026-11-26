@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > For every triple of positive integer differences, the extremal density equals the circle rotation bound. One pair sum is a period of an optimal set.
 
+## Audit finding
+
+The passage from a maximizing rotation to a pair-sum period uses two active triangular waves of opposite slope, with a separate half-height case. Independently computed the maximum cycle mean in the binary shift automaton for every one of the 220 triples from 1 through 12. Exact integer comparisons give both the upper bound and attainment in each case. The finite computation tests the general proof on small inputs.
+
 ## Source outline
 
 - [A finite interval inequality](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/haralambis-three-differences/PROOF.md#L15).
@@ -28,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1611.03940) (18 pages). conjecture 3 on PDF p. 12.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0097-3165(77)90076-0).
 - Sequences of Integers with Three Missing Separations (HTTP 200). [Retrieved address](https://arxiv.org/abs/1611.03940).
 - Citation-index seed records. [Sets of integers with missing differences](https://doi.org/10.1016/0097-3165(77)90076-0).
@@ -37,6 +45,6 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Verification
 
-- Check Haralambis three-difference rotation certificates — exit 0. [Command and output](../evidence/replays/098.txt).
+[Independent finite comparison](../evidence/check_proof_steps.py).
 
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.
+- Check Haralambis three-difference rotation certificates — exit 0. [Command and output](../evidence/replays/098.txt).

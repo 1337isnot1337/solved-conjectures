@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.30975) (9 pages). conjecture 11 on PDF p. 2.
+- [Source PDF](https://arxiv.org/pdf/2306.08065) (16 pages). conjecture 11 on PDF p. 13, 15 · conjectures 11 on PDF p. 13 · conjecture 16 on PDF p. 15 · conjecture 17 on PDF p. 15.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://dmtcs.episciences.org/en/articles/15066/download).
 - Two refined Wilf-equivalences for patterns of length 4 and a conjecture on Dumont permutations of the first kind (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.30975).
 - Distribution of sets of descent tops and descent bottoms on restricted permutations (HTTP 200). [Retrieved address](https://doi.org/10.46298/dmtcs.12636).
@@ -35,6 +40,8 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
 ## Verification
+
+Independently compiled Conjectures.BursteinDescentTop from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).
 
 - Check Burstein’s Ferrers-board mismatch on short suffixes — exit 0. [Command and output](../evidence/replays/024.txt).
 

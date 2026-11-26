@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1903.06233) (8 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1907.01903) (29 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A numerical comment on the 'tiny' oscillations and a heuristic 'conjecture' (HTTP 200). [Retrieved address](https://arxiv.org/abs/1903.06233).
 - Analysis of a Complex approximation to the Li-Keiper coefficients around the K Function (HTTP 200). [Retrieved address](https://arxiv.org/abs/1907.01903).
 - PDF header (HTTP 200). [Retrieved address](https://personal.us.es/arias/56-2RHB.pdf).

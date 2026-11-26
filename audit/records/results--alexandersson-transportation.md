@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2201.12531) (28 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1602.04449) (30 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - On coefficients of the interior and exterior polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2201.12531).
 - DLMF: §18.14 Inequalities ‣ Classical Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials (HTTP 200). [Retrieved address](https://dlmf.nist.gov/18.14.E3).

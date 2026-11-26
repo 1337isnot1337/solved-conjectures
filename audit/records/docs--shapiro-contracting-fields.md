@@ -24,6 +24,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://matwbn.icm.edu.pl/ksiazki/aa/aa85/aa8537.pdf) (13 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PRIMES REPRESENTED BY INCOMPLETE NORM FORMS (HTTP 200). [Retrieved address](https://doi.org/10.1017/fmp.2019.8).
 - Source URL (HTTP 403). [Retrieved address](https://matwbn.icm.edu.pl/ksiazki/aa/aa85/aa8537.pdf).
 - Citation-index seed records. [PRIMES REPRESENTED BY INCOMPLETE NORM FORMS](https://doi.org/10.1017/fmp.2019.8).

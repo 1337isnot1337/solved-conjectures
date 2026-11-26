@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1980-29.pdf) (10 pages). Full text retrieved.
+- [Source PDF](https://mathweb.tifr.res.in/Documents/Publications/Lectures/tifr72.pdf) (181 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1980-29.pdf).
 - 1200 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/1200).
 - PDF header (HTTP 200). [Retrieved address](https://mathweb.tifr.res.in/Documents/Publications/Lectures/tifr72.pdf).

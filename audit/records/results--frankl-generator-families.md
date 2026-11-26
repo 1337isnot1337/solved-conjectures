@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1212.4175) (11 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1903.02317) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://epubs.siam.org/doi/10.1137/25M180874X).
 - The $11$-element case of Frankl's conjecture (HTTP 200). [Retrieved address](https://doi.org/10.37236/812).
 - The graph formulation of the union-closed sets conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/1212.4175).

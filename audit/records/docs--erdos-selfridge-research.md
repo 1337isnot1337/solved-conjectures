@@ -24,6 +24,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1703.02133) (24 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1811.03547) (30 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 7 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/7).
 - List of conjectures by Paul Erdős - Wikipedia (HTTP 200). [Retrieved address](https://en.wikipedia.org/wiki/List_of_conjectures_by_Paul_Erd%C5%91s).
 - Covering systems with restricted divisibility (HTTP 200). [Retrieved address](https://arxiv.org/abs/1703.02133).

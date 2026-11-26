@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1980-03.pdf) (27 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 892 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/892).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1980-03.pdf).
 - Erdős Problem #892: Primitive sequence domination — working report (HTTP 200). [Retrieved address](https://www.erdosproblemaday.com/report/892).

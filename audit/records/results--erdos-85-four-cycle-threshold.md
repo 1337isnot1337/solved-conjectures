@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1912.00986) (30 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 85 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/85).
 - A Drop at Forty-Nine in Erdős Problem 85 (HTTP 200). [Retrieved address](https://zenodo.org/records/23519149).
 - Some exact results on $4$-cycles: stability and supersaturation (HTTP 200). [Retrieved address](https://arxiv.org/abs/1912.00986).

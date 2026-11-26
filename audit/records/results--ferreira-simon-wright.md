@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2212.07974) (25 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2512.04940) (25 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00365-023-09666-w).
 - On the log-concavity of the Wright function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2212.07974).
 - DLMF: §5.5 Functional Relations ‣ Properties ‣ Chapter 5 Gamma Function (HTTP 200). [Retrieved address](https://dlmf.nist.gov/5.5.E3).

@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2303.15476) (2 pages). Full text retrieved.
+- [Source PDF](https://www.renyi.hu/~simonyi/galcol.pdf) (5 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/S0167-5060(08)70377-7).
 - A note on balanced edge-colorings avoiding rainbow cliques of size four (HTTP 200). [Retrieved address](https://arxiv.org/abs/2303.15476).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~simonyi/galcol.pdf).

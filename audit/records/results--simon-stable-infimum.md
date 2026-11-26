@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.maths.tcd.ie/EMIS/journals/EJP-ECP/article/download/3058/3058-16117-1-PB.pdf) (26 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1310.1888) (27 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.maths.tcd.ie/EMIS/journals/EJP-ECP/article/download/3058/3058-16117-1-PB.pdf).
 - Source URL (HTTP 200). [Retrieved address](https://doi.org/10.1214/EJP.v19-3058).
 - Comparing Fr\'echet and positive stable laws (HTTP 200). [Retrieved address](https://arxiv.org/abs/1310.1888).

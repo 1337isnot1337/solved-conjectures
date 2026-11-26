@@ -37,6 +37,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://cfc.nankai.edu.cn/_upload/article/files/81/18/f83d37e449ebaf1b2f4141fa59be/9323c2fc-4d6a-4610-a747-1bd985a7be41.pdf) (21 pages). conjecture 1.10 on PDF p. 6.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://cfc.nankai.edu.cn/_upload/article/files/81/18/f83d37e449ebaf1b2f4141fa59be/9323c2fc-4d6a-4610-a747-1bd985a7be41.pdf).
 - Transactions of the American Mathematical Society (HTTP 200). [Retrieved address](https://doi.org/10.1090/tran/9081).
 - Transactions of the American Mathematical Society (HTTP 200). [Retrieved address](https://www.ams.org/tran/2024-377-07/S0002-9947-2024-09081-5/S0002-9947-2024-09081-5.pdf).

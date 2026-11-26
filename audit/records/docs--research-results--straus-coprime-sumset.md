@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://mathweb.ucsd.edu/~ronspubs/80_11_number_theory.pdf) (124 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://mathweb.ucsd.edu/~ronspubs/80_11_number_theory.pdf).
 - 432 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/432).
 - Erdos432/2026-06-23_Erdos432.pdf at main · lsngchl/Erdos432 · GitHub (HTTP 200). [Retrieved address](https://github.com/lsngchl/Erdos432/blob/main/2026-06-23_Erdos432.pdf).

@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://cs.uwaterloo.ca/journals/JIS/VOL26/Braun/braun6.pdf) (29 pages). conjecture 13 on PDF p. 7, 11, 17, 24 · conjecture 31 on PDF p. 24 · conjecture 33 on PDF p. 24, 25.
+- [Source PDF](https://arxiv.org/pdf/2201.13303v4) (23 pages). conjecture 3.4 on PDF p. 6, 9, 13, 20.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://cs.uwaterloo.ca/journals/JIS/VOL26/Braun/braun6.pdf).
 - Braun–Bruegge Conjecture 5.1 \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/braun-bruegge-2022-symmetric-edge-polytope-facet-sum-conjecture-5-1/).
 - Facets of Symmetric Edge Polytopes for Graphs with Few Edges (HTTP 200). [Retrieved address](https://arxiv.org/abs/2201.13303v4).

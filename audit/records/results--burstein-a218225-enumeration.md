@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2209.12137) (19 pages). conjecture 1.1 on PDF p. 3, 4 · conjecture 6.1 on PDF p. 18.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Burstein’s permutation conjecture, Hong and Li’s inversion sequence conjecture and restricted Eulerian distributions (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0013091523000652).
 - A218225 - OEIS (HTTP 200). [Retrieved address](https://oeis.org/A218225).
 - Burstein's permutation conjecture, Hong and Li's inversion sequence conjecture, and restricted Eulerian distributions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2209.12137).

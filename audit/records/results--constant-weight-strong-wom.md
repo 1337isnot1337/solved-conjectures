@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://yaakobi.net.technion.ac.il/files/2015/11/16_RM_Rewriting_IT15.pdf) (18 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1312.0972) (27 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://yaakobi.net.technion.ac.il/files/2015/11/16_RM_Rewriting_IT15.pdf).
 - Rank-Modulation Rewrite Coding for Flash Memories (HTTP 200). [Retrieved address](https://arxiv.org/abs/1312.0972).
 - OpenAlex (HTTP 200). [Retrieved address](https://openalex.org/W1890027272).

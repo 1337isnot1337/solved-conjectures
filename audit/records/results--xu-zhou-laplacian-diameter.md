@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2401.03777v2) (16 pages). conjecture 5.1 on PDF p. 14.
+- [Source PDF](https://arxiv.org/pdf/2306.14127) (17 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://journals.uwyo.edu/index.php/ela/article/download/8757/6821).
 - Diameter vs Laplacian eigenvalue distribution (HTTP 200). [Retrieved address](https://arxiv.org/abs/2401.03777v2).
 - Diameter vs. Laplacian eigenvalue distribution (HTTP 200). [Retrieved address](https://doi.org/10.13001/ela.2024.8757).

@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://math.colgate.edu/~integers/kg2/kg2.pdf) (18 pages). Full text retrieved.
+- [Source PDF](https://orygn.tech/research/endless-games-of-war.pdf) (24 pages). question 1 on PDF p. 1, 11 · open problems 1 on PDF p. 23.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://math.colgate.edu/~integers/kg2/kg2.pdf).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1515/integ.2010.102).
 - PDF header (HTTP 200). [Retrieved address](https://orygn.tech/research/endless-games-of-war.pdf).

@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2604.15909v1) (27 pages). conjecture 4.3 on PDF p. 17, 18, 19, 20, 25 · conjecture 4.30 on PDF p. 25 · conjecture 5.3 on PDF p. 25.
+- [Source PDF](https://pureadmin.qub.ac.uk/ws/portalfiles/portal/186487218/paper.pdf) (16 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - The general position number of digraphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.15909v1).
 - PDF header (HTTP 200). [Retrieved address](https://pureadmin.qub.ac.uk/ws/portalfiles/portal/186487218/paper.pdf).
 - The general position number of digraphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.15909).

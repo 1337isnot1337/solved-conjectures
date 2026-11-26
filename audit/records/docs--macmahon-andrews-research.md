@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1977-27.pdf) (30 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1080/00029890.1975.11993980).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1977-27.pdf).
 - Problem 359 — Erdős Problems (HTTP 200). [Retrieved address](https://erdosproblems.ai/wiki/problems/integer_sequences/E0359).

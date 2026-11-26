@@ -24,6 +24,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1811.02236) (32 pages). conjecture 5 on PDF p. 4.
+- [Source PDF](https://remi-de-verclos.github.io/manuscript.pdf) (188 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Limits of Order Types (HTTP 200). [Retrieved address](https://arxiv.org/abs/1811.02236).
 - PDF header (HTTP 200). [Retrieved address](https://remi-de-verclos.github.io/manuscript.pdf).
 - Crossref query “de Joannis de Verclos’s projective rigidity conjecture” returned 12 displayed records (HTTP 200).

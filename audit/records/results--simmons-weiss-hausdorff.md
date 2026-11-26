@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://eprints.whiterose.ac.uk/id/eprint/145241/1/BQ_and_BA.pdf) (47 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://eprints.whiterose.ac.uk/id/eprint/145241/1/BQ_and_BA.pdf).
 - Mesures stationnaires et fermés invariants des espaces homogénes (HTTP 200). [Retrieved address](https://annals.math.princeton.edu/2011/174-2/p08).
 - Source URL (HTTP request failed). [Retrieved address](https://people.math.ethz.ch/~einsiedl/EFS6.pdf).

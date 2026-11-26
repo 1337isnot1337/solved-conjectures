@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2608.08692v2) (59 pages). question 7.1 on PDF p. 55 · conjecture 7.3 on PDF p. 56, 57.
+- [Source PDF](https://arxiv.org/pdf/1309.5527) (50 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Weighted bond posets and a new chromatic symmetric function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.08692v2).
 - On the (co)homology of the poset of weighted partitions (HTTP 200). [Retrieved address](https://arxiv.org/abs/1309.5527).
 - DLMF: §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials (HTTP 200). [Retrieved address](https://dlmf.nist.gov/18.2.vi).

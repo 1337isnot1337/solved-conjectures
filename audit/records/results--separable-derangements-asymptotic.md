@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2608.27583v1) (13 pages). conjecture 14 on PDF p. 10, 11 · conjecture 15 on PDF p. 12.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Enumerating separable derangements (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.27583v1).
 - Citation-index seed records. [Enumerating separable derangements](https://doi.org/10.48550/arxiv.2608.27583).
 - External solution records sharing a cited identifier. [Problems/separable-occupied-diagonal-lower-bound.md](https://github.com/the-omega-institute/trureturing/blob/12036e5e3cc8d8d9f92467546faa8e37a61702b4/Problems/separable-occupied-diagonal-lower-bound.md) · [Problems/chenkitaevzhang-2024-separable-record-peak-three.md](https://github.com/the-omega-institute/trureturing/blob/12036e5e3cc8d8d9f92467546faa8e37a61702b4/Problems/chenkitaevzhang-2024-separable-record-peak-three.md).

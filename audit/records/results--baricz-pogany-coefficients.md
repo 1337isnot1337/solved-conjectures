@@ -29,6 +29,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2607.05538) (21 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00365-023-09627-3).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s13163-022-00439-w).
 - Convexity of ratios of the modified Bessel functions of the first kind with applications (HTTP 200). [Retrieved address](https://pmc.ncbi.nlm.nih.gov/articles/PMC9361280/).

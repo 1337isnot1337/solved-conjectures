@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.math.ubc.ca/~bennett/Erdos-Graham.pdf) (6 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On products of disjoint blocks of consecutive integers (HTTP 200). [Retrieved address](https://www.e-periodica.ch/view/ens-001/2005/51/417).
 - Source URL (HTTP 200). [Retrieved address](https://www.e-periodica.ch/download/ens-001:2005:51/ocr-fulltext).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00574-019-00158-9).

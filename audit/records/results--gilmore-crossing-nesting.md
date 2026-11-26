@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2106.00656v2) (59 pages). conjecture 6.11 on PDF p. 56.
+- [Source PDF](https://arxiv.org/pdf/2003.08192) (122 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Trees, Forests, and Total Positivity: I. $q$-Trees and $q$-Forests Matrices (HTTP 200). [Retrieved address](https://doi.org/10.37236/10465).
 - Trees, Forests, and Total Positivity: I. $q$-Trees and $q$-Forests Matrices        -       UCL Discovery (HTTP 200). [Retrieved address](https://discovery.ucl.ac.uk/id/eprint/10138471/).
 - Trees, forests, and total positivity: I. $q$-trees and $q$-forests matrices (HTTP 200). [Retrieved address](https://arxiv.org/abs/2106.00656v2).

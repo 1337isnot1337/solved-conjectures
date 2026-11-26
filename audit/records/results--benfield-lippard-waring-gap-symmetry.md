@@ -33,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2404.08193v2) (20 pages). conjecture 10.1 on PDF p. 10 · conjecture 10.2 on PDF p. 10 · conjecture 10.3 on PDF p. 10 · conjecture 10.4 on PDF p. 10.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Integers that are not the sum of positive powers (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.08193v2).
 - Oscillation of stable exception-set sizes - trureturing — Discovering truth (HTTP 200). [Retrieved address](https://the-omega-institute.github.io/trureturing-mdbook/Problems/benfield-lippard-2025-exception-set-oscillation.html).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/BF01273309).

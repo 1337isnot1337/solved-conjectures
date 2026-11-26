@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1807.03271) (151 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2212.10586) (23 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Real-rooted polynomials: Catalan families \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedCatalan.htm).
 - A Combinatorial Proof of a Symmetry for a Refinement of the Narayana Numbers (HTTP 200). [Retrieved address](https://doi.org/10.37236/12681).

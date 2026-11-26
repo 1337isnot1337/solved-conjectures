@@ -37,6 +37,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.23755v1) (49 pages). Full text retrieved.
+- [Source PDF](https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn3p159_A1b.pdf) (5 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - The maximum number of Hamiltonian cycles in tournaments (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.23755v1).
 - PDF header (HTTP 200). [Retrieved address](https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn3p159_A1b.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf).

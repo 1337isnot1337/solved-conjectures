@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2608.27583v1) (13 pages). question 4.5 on PDF p. 9 · conjecture 14 on PDF p. 10, 11 · conjecture 15 on PDF p. 12.
+- [Source PDF](https://arxiv.org/pdf/2602.16355v3) (39 pages). question 4.5 on PDF p. 20, 33.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Enumerating separable derangements (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.27583v1).
 - An assortment of problems in permutation patterns: unimodality, equivalence, derangements, and sorting (HTTP 200). [Retrieved address](https://arxiv.org/abs/2602.16355v3).
 - The Infinite Limit of Separable Permutations (HTTP 200). [Retrieved address](https://arxiv.org/abs/1911.05565).

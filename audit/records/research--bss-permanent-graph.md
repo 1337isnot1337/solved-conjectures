@@ -37,6 +37,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1812.06828v1) (33 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - The Complexity of Factors of Multivariate Polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/1812.06828v1).
 - formal-math/vp-vnp/paper.pdf at 11b6c7e3c927df2658f513b6b68ea7f8929c62c5 · anthropics/formal-math · GitHub (HTTP 200). [Retrieved address](https://github.com/anthropics/formal-math/blob/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp/paper.pdf).
 - formal-math/vp-vnp/Statement.lean at 11b6c7e3c927df2658f513b6b68ea7f8929c62c5 · anthropics/formal-math · GitHub (HTTP 200). [Retrieved address](https://github.com/anthropics/formal-math/blob/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp/Statement.lean).

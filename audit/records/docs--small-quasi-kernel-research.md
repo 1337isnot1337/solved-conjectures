@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2611.22881v1) (11 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2610.23487v1) (7 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Equivalence of Small and Large Quasi-kernels (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.22881v1).
 - Small and large quasi-kernels: a weighted transfer theorem (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.23487v1).
 - Greedily Constructing Small Quasi-Kernels (HTTP 200). [Retrieved address](https://arxiv.org/abs/2601.11847v1).

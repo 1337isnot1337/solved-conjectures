@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.math.msu.edu/users/bsagan/Papers/Old/qStB-pub.pdf) (35 pages). conjecture 7.8 on PDF p. 32 · conjecture 7.9 on PDF p. 33.
+- [Source PDF](https://arxiv.org/pdf/2205.14078) (46 pages). conjecture 7.8 on PDF p. 41 · conjecture 7.9 on PDF p. 42.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://users.math.msu.edu/users/bsagan/Papers/Old/qStB-pub.pdf).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.ejc.2023.103899).
 - q-Stirling numbers in type B (HTTP 200). [Retrieved address](https://arxiv.org/abs/2205.14078).

@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.22142) (20 pages). conjecture 6.1 on PDF p. 19.
+- [Source PDF](https://arxiv.org/pdf/1711.06797) (7 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - Wild number for spanning trees in complete and complete bipartite graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.22142).
 - Sharpness of the Wild Number Lower Bound for Minimum Proper Colorings of Complete Graphs of Order at Least 30000001 · AFTD (HTTP 200). [Retrieved address](https://rainwangphy.github.io/aftd-platform/blog/2026-10-28-op-306-2/).

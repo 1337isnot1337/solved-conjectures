@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2209.12137) (19 pages). conjecture 6.1 on PDF p. 18 · conjecture 6.2 on PDF p. 18.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Burstein's permutation conjecture, Hong and Li's inversion sequence conjecture, and restricted Eulerian distributions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2209.12137).
 - Crossref query “Chern–Fu–Lin’s joint Eulerian equidistribution conjecture chern fu lin joint eulerian” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).

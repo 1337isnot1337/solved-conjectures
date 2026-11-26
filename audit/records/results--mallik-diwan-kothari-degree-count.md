@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2404.06445v3) (39 pages). conjectures 8.9 on PDF p. 11, 38 · conjecture 8.9 on PDF p. 29, 30, 37 · conjecture 8.10 on PDF p. 29, 37 · conjecture 8.11 on PDF p. 29, 30, 37, 38.
+- [Source PDF](https://arxiv.org/pdf/2611.29504v1) (14 pages). conjecture 8.11 on PDF p. 2.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.4310/joc.260511231633).
 - Extremal minimal bipartite matching covered graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.06445v3).
 - The maximum number of edges in minimal $k$-extendable bipartite graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.29504v1).

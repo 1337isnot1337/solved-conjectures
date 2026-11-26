@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2404.05672v1) (22 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Enumerating runs, valleys, and peaks in Catalan words (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.05672v1).
 - Crossref query “Alexandersson's Catalan-word peak conjecture: research checkpoint alexandersson catalan peaks research.md” returned 12 displayed records (HTTP 200).

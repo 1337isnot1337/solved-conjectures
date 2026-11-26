@@ -1,12 +1,16 @@
 # Asgarli–Ghioca–Yip blocking-pencil problem
 
-**Screened.** Ranked. Rank 37 on the original main table, marker 🟡. [Pinned entry](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/README.md).
+**Correction.** Ranked. Rank 37 on the original main table, marker 🟡. [Pinned entry](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/README.md).
 
 ## Recorded scope
 
 The source describes the result as follows.
 
 > The minimum number of vertical translates of a fixed monomial needed to block the projective plane has logarithmic order over all finite fields.
+
+## Audit finding
+
+The logarithmic bound fixes a monomial degree d≥2. The compact catalogue and historical summary omitted the lower degree restriction. For d=1 the projective closure of y=x is itself a projective line and meets every projective line. The landing page and proof had the correct hypothesis. For fixed d, the implied constants can depend on d.
 
 ## Source outline
 
@@ -26,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2510.15332v2) (15 pages). question 5.4 on PDF p. 14.
+- [Source PDF](https://arxiv.org/pdf/2301.06019) (9 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10623-026-01958-z).
 - Cinna Davis (@1337isnot1337) / X (HTTP 200). [Retrieved address](https://x.com/1337isnot1337).
 - Blocking sets from a union of plane curves (HTTP 200). [Retrieved address](https://arxiv.org/abs/2510.15332v2).
@@ -39,5 +48,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check finite-field blocking pencils — exit 0. [Command and output](../evidence/replays/016.txt).
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

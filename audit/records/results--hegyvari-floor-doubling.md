@@ -35,6 +35,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2607.14071v6) (36 pages). Full text retrieved.
+- [Source PDF](https://hexagonmath.org/pdf/2611.00768v1) (13 pages). problem 354 on PDF p. 1.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Strongly complete sets and a conjecture of Erd\H{o}s (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.14071v6).
 - Completeness of two floor-doubling sequences (HTTP 200). [Retrieved address](https://hexagonmath.org/2611.00768v1).
 - PDF header (HTTP 200). [Retrieved address](https://hexagonmath.org/pdf/2611.00768v1).

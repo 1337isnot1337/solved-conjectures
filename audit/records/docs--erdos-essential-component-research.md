@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://home.olemiss.edu/~leth/papers/essential_components.pdf) (17 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2211.09776) (51 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1006/jnth.1999.2395).
 - PDF header (HTTP 200). [Retrieved address](https://home.olemiss.edu/~leth/papers/essential_components.pdf).
 - Problem 1146 — Erdős Problems (HTTP 200). [Retrieved address](https://erdosproblems.ai/wiki/problems/integer_sequences/E1146).

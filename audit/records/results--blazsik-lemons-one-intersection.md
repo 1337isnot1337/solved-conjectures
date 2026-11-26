@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2406.12118) (6 pages). conjecture 3.1 on PDF p. 5.
+- [Source PDF](https://arxiv.org/pdf/1509.00551) (10 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2025.114810).
 - The connection between the chromatic numbers of a hypergraph and its $1$-intersection graph (HTTP 200). [Retrieved address](https://arxiv.org/abs/2406.12118).
 - Chromatic Ramsey number of acyclic hypergraphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/1509.00551).

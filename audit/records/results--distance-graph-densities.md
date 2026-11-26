@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1401.7183) (39 pages). conjecture 38 on PDF p. 34 · conjecture 39 on PDF p. 34.
+- [Source PDF](https://lidicky.name/dstolee/papers/CGHRS14-DistanceGraphs.pdf) (37 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On the independence ratio of distance graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/1401.7183).
 - PDF header (HTTP 200). [Retrieved address](https://lidicky.name/dstolee/papers/CGHRS14-DistanceGraphs.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://lidicky.name/dstolee/data/CGHRS13-DistanceData.pdf).

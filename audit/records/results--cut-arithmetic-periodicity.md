@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1803.02621) (21 pages). open problem 4 on PDF p. 20.
+- [Source PDF](https://library.slmath.org/books/Book70/files/1005.pdf) (44 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Partition games (HTTP 200). [Retrieved address](https://arxiv.org/abs/1803.02621).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2020.05.032).
 - PDF header (HTTP 200). [Retrieved address](https://library.slmath.org/books/Book70/files/1005.pdf).

@@ -36,6 +36,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2412.19560v2) (23 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Three Theorems on Negami's Planar Cover Conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/2412.19560v2).
 - GRAPH COVERS: TOPOLOGICAL AND COMBINATORIAL PERSPECTIVES (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0004972726102111).
 - Discovery (HTTP 200). [Retrieved address](https://scholars.latrobe.edu.au/mspayne/publications).

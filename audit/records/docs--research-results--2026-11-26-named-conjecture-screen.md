@@ -18,6 +18,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2611.12830) (63 pages). conjecture 1.1 on PDF p. 1, 2, 3.
+- [Source PDF](https://arxiv.org/pdf/2609.20961) (18 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 1131 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/1131).
 - Overleaf, Online LaTeX Editor (HTTP 200). [Retrieved address](https://www.overleaf.com/read/mhmzxwcsqjyd).
 - 1041 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/1041).

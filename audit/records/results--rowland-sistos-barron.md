@@ -41,6 +41,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2501.14643v1) (23 pages). conjecture 5.3 on PDF p. 15, 19.
+- [Source PDF](https://arxiv.org/pdf/2501.14643) (23 pages). conjecture 5.3 on PDF p. 15, 19.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Complexity of powers of a constant-recursive sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/2501.14643v1).
 - Complexity of powers of a constant-recursive sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/2501.14643).
 - PDF header (HTTP 200). [Retrieved address](https://ericrowland.github.io/papers/Complexity_of_powers_of_a_constant-recursive_sequence.pdf).

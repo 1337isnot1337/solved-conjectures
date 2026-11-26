@@ -25,6 +25,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.ma.rhul.ac.uk/mwidmer/Publications/Omincount_final.pdf) (22 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.ma.rhul.ac.uk/mwidmer/Publications/Omincount_final.pdf).
 - 254A, Notes 4: Some sieve theory \| What's new (HTTP 200). [Retrieved address](https://terrytao.wordpress.com/2015/01/21/254a-notes-4-some-sieve-theory/).
 - Crossref query “Irrational generators in Shapiro’s conjecture shapiro irrational sieve.md” returned 12 displayed records (HTTP 200).

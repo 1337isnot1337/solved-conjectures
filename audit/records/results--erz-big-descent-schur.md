@@ -30,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2408.15111) (36 pages). conjecture 4.4 on PDF p. 27 · conjecture 4.9 on PDF p. 29.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Counting pattern-avoiding permutations by big descents (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.15111).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00026-026-00805-1).
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).

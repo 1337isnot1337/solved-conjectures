@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2608.13599) (21 pages). question 8.4 on PDF p. 18.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - Tight instances of the Lonely Runner Conjecture: one-entry modifications and the growth of speeds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.13599).
 - Citation-index seed records. [Tight instances of the Lonely Runner Conjecture: one-entry modifications and the growth of speeds](https://doi.org/10.48550/arxiv.2608.13599).

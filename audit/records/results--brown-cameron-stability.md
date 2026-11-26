@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1802.02478) (22 pages). problem 2 on PDF p. 21.
+- [Source PDF](https://arxiv.org/pdf/1709.08236) (11 pages). conjecture 3.2 on PDF p. 8.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - adamben04 · GitHub (HTTP 200). [Retrieved address](https://github.com/adamben04).
 - On the Stability of Independence Polynomials (HTTP 200). [Retrieved address](https://doi.org/10.37236/7280).
 - On the Stability of Independence Polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/1802.02478).

@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2407.01101) (12 pages). conjecture 1 on PDF p. 11.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1002/jgt.20020).
 - Packing Density of Sets With Only Two Nonmixed Gaps (HTTP 200). [Retrieved address](https://arxiv.org/abs/2407.01101).
 - Citation-index seed records. [Fractional chromatic number and circular chromatic number for distance graphs with large clique size](https://doi.org/10.1002/jgt.20020).

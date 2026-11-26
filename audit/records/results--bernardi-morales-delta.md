@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i2p36/pdf/) (24 pages). conjecture 27 on PDF p. 23, 24 · conjecture 28 on PDF p. 23, 24.
+- [Source PDF](https://arxiv.org/pdf/1501.01135v1) (26 pages). conjecture 21 on PDF p. 22, 23 · conjecture 22 on PDF p. 23.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i2p36/pdf/).
 - Some Probabilistic Trees with Algebraic Roots (HTTP 200). [Retrieved address](https://doi.org/10.37236/4954).
 - Some probabilistic trees with algebraic roots (HTTP 200). [Retrieved address](https://arxiv.org/abs/1501.01135v1).

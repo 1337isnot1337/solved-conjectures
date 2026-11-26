@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf) (12 pages). Full text retrieved.
+- [Source PDF](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf) (29 pages). conjecture 27 on PDF p. 16, 17, 22.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/S0024-3795(03)00649-9).

@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2506.12513v2) (36 pages). conjecture 2.6 on PDF p. 8.
+- [Source PDF](https://arxiv.org/pdf/2506.12513v1) (31 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Decomposition of real numbers into sums of L\"uroth sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.12513v2).
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/17542?nt=1).
 - Decomposition of real numbers into sums of L\"uroth sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.12513v1).

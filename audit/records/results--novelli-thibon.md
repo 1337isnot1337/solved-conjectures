@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2502.09072v2) (26 pages). conjecture 5.4 on PDF p. 10 · conjecture 5.7 on PDF p. 16.
+- [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v27i3p37/pdf/) (21 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jcta.2025.106130).
 - Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang-Baxter equation (HTTP 200). [Retrieved address](https://arxiv.org/abs/2502.09072v2).
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v27i3p37/pdf/).

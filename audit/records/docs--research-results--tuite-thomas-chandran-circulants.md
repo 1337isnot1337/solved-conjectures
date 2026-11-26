@@ -29,6 +29,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://mathdb.com/pdf/2611.00020v1) (5 pages). conjecture 4.5 on PDF p. 1, 3, 5.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://oro.open.ac.uk/92086/13/92086final.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://mathdb.com/pdf/2611.00020v1).
 - Crossref query “Tuite–Thomas–Chandran circulant conjecture tuite thomas chandran circulants” returned 12 displayed records (HTTP 200).

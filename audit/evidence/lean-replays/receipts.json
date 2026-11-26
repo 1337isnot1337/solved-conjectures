@@ -1,0 +1,163 @@
+{
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "compiler_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "packages": {
+    "mathlib": {
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "tracked_changes": false
+    },
+    "plausible": {
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "tracked_changes": false
+    },
+    "LeanSearchClient": {
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "tracked_changes": false
+    },
+    "importGraph": {
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "tracked_changes": false
+    },
+    "proofwidgets": {
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "tracked_changes": false
+    },
+    "aesop": {
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "tracked_changes": false
+    },
+    "Qq": {
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "tracked_changes": false
+    },
+    "batteries": {
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "tracked_changes": false
+    },
+    "Cli": {
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "tracked_changes": false
+    }
+  },
+  "modules": {
+    "results/benfield-lippard-waring-gap-parity": {
+      "module": "Conjectures.BenfieldLippardParity",
+      "path": "lean/Conjectures/BenfieldLippardParity.lean",
+      "source_sha256": "59e638e69af8ccc991fb40a4cab5e52d4617211260c44d573340333cc51855ad",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/BenfieldLippardParity.olean Conjectures/BenfieldLippardParity.lean",
+          "exit": 0,
+          "output": "'BenfieldLippardParity.benfieldLippard_conj10_4' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.BenfieldLippardParity",
+          "exit": 0,
+          "output": "replaying Conjectures.BenfieldLippardParity"
+        }
+      ]
+    },
+    "results/chappelon-ramirez-stamate-leaf-type": {
+      "module": "Conjectures.ChappelonRamirezStamateLeafType",
+      "path": "lean/Conjectures/ChappelonRamirezStamateLeafType.lean",
+      "source_sha256": "7f99f3ff80fb7d68d11f173e3bfcc7a749cbb59af976a7c2ed1efe1a0d654569",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/ChappelonRamirezStamateLeafType.olean Conjectures/ChappelonRamirezStamateLeafType.lean",
+          "exit": 0,
+          "output": "'ChappelonRamirezStamate.chappelon_ramirez_stamate_conjecture_4_4_false' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.ChappelonRamirezStamateLeafType",
+          "exit": 0,
+          "output": "replaying Conjectures.ChappelonRamirezStamateLeafType"
+        }
+      ]
+    },
+    "results/csordas-vishnyakova": {
+      "module": "Conjectures.CsordasVishnyakova",
+      "path": "lean/Conjectures/CsordasVishnyakova.lean",
+      "source_sha256": "aab49b4b53401a52784a1c686bcc9b953af33c8802b471b683da3c9a4b13c3d1",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/CsordasVishnyakova.olean Conjectures/CsordasVishnyakova.lean",
+          "exit": 0,
+          "output": "'CsordasVishnyakova.csordasVishnyakova_conj3_6_false' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.CsordasVishnyakova",
+          "exit": 0,
+          "output": "replaying Conjectures.CsordasVishnyakova"
+        }
+      ]
+    },
+    "results/burstein-descent-top-shape-wilf": {
+      "module": "Conjectures.BursteinDescentTop",
+      "path": "lean/Conjectures/BursteinDescentTop.lean",
+      "source_sha256": "6f4266830670786d02958a198820b3193fecae44d33abd7377d2df41c6e710d7",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/BursteinDescentTop.olean Conjectures/BursteinDescentTop.lean",
+          "exit": 0,
+          "output": "'Conjectures.BursteinDescentTop.not_descent_top_shape_wilf' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Conjectures.BursteinDescentTop.not_ascent_bottom_shape_wilf' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.BursteinDescentTop",
+          "exit": 0,
+          "output": "replaying Conjectures.BursteinDescentTop"
+        }
+      ]
+    },
+    "results/fmp-cylindric": {
+      "module": "Conjectures.FMPCylindric",
+      "path": "lean/Conjectures/FMPCylindric.lean",
+      "source_sha256": "1de198afc98a81ca1a81e95b44b453e72956702be91adbaf4dc12a4153ae79e4",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/FMPCylindric.olean Conjectures/FMPCylindric.lean",
+          "exit": 0,
+          "output": "'Conjectures.FMPCylindric.ferroni_morales_panova_unpinned_counterexample' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Conjectures.FMPCylindric.no_nonnegative_order_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Conjectures.FMPCylindric.no_nonnegative_source_count_polynomial' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Conjectures.FMPCylindric.no_nonnegative_full_column_count_polynomial' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.FMPCylindric",
+          "exit": 0,
+          "output": "replaying Conjectures.FMPCylindric"
+        }
+      ]
+    },
+    "results/kovalev-hardy-duality": {
+      "module": "Conjectures.KovalevRationalCertificate",
+      "path": "lean/Conjectures/KovalevRationalCertificate.lean",
+      "source_sha256": "00794299efcd7355f8c1ed71bb2f2cb98184a231bb81c475fe0cf9000dfc957a",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/KovalevRationalCertificate.olean Conjectures/KovalevRationalCertificate.lean",
+          "exit": 0,
+          "output": "'KovalevRationalCertificate.pi_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.log320_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.gamma_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.L_lower_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.L_upper_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.root_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.k_difference_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.a_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.b_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.dimension_threshold' does not depend on any axioms\n'KovalevRationalCertificate.quartic_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.gap_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KovalevRationalCertificate.gap_positive' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.KovalevRationalCertificate",
+          "exit": 0,
+          "output": "replaying Conjectures.KovalevRationalCertificate"
+        }
+      ]
+    },
+    "results/kauers-koutschan-recurrence": {
+      "module": "Conjectures.KauersKoutschanCertificate",
+      "path": "lean/Conjectures/KauersKoutschanCertificate.lean",
+      "source_sha256": "b98df1fadf7b14633466a46282834597bc27a137c38ff040dec71a4c5c1a2745",
+      "steps": [
+        {
+          "command": "lean -j1 -o $BUILD/Conjectures/KauersKoutschanCertificate.olean Conjectures/KauersKoutschanCertificate.lean",
+          "exit": 0,
+          "output": "'KauersKoutschanCertificate.original_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KauersKoutschanCertificate.original_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KauersKoutschanCertificate.zeilberger_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KauersKoutschanCertificate.zeilberger_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KauersKoutschanCertificate.original_initial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'KauersKoutschanCertificate.zeilberger_initial' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": "leanchecker -v Conjectures.KauersKoutschanCertificate",
+          "exit": 0,
+          "output": "replaying Conjectures.KauersKoutschanCertificate"
+        }
+      ]
+    }
+  }
+}

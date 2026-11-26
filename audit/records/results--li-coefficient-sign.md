@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2503.09484v2) (19 pages). problem 4.6 on PDF p. 16 · problem 4.9 on PDF p. 16.
+- [Source PDF](https://arxiv.org/pdf/2503.09484) (19 pages). problem 4.6 on PDF p. 16 · problem 4.9 on PDF p. 16.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - A quantitative way to e-positivity of trees (HTTP 200). [Retrieved address](https://arxiv.org/abs/2503.09484v2).
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - A quantitative way to e-positivity of trees (HTTP 200). [Retrieved address](https://arxiv.org/abs/2503.09484).

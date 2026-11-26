@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.31555v1) (18 pages). question 6.5 on PDF p. 17.
+- [Source PDF](https://arxiv.org/pdf/2005.13579) (10 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Lipschitz clustering in normed spaces and barycentric spaces (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.31555v1).
 - Growth rate of Lipschitz constants for retractions between finite subset spaces (HTTP 200). [Retrieved address](https://arxiv.org/abs/2005.13579).
 - Citation-index seed records. [Lipschitz clustering in normed spaces and barycentric spaces](https://doi.org/10.48550/arxiv.2610.31555).

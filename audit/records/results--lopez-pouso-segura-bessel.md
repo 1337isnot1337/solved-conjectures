@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2305.19128) (29 pages). conjecture 2 on PDF p. 12 · conjecture 5 on PDF p. 15 · conjecture 8 on PDF p. 16.
+- [Source PDF](https://arxiv.org/pdf/2308.08950) (35 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1186/s13660-025-03283-w).
 - DLMF: §10.9 Integral Representations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions (HTTP 200). [Retrieved address](https://dlmf.nist.gov/10.9.E30).
 - DLMF: §10.5 Wronskians and Cross-Products ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions (HTTP 200). [Retrieved address](https://dlmf.nist.gov/10.5.E2).

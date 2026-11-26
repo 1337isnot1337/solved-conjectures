@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Matching missing colors to available subsets yields $`H(n)\le \log_2 n+\log_2\log_2 n+O(1)`$. A separate circuit obstruction restricts constructions from binary nullspaces.
 
+## Audit finding
+
+The number of already colored subsets incident to each extra element is 2^(h−1)−h. Different extra elements yield disjoint collections, which permits the probability product. The final request graph has left degree h and right degree at most h, so Hall’s inequality follows by counting edges. Setting q=n supplies an upper bound. The original question is about divergence of the excess and needs a lower bound.
+
 ## Source outline
 
 - [Comparison of the two conventions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-set-mapping/PROOF.md#L13).
@@ -27,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.renyi.hu/~p_erdos/1968-01.pdf) (4 pages). Full text retrieved.
+- [Source PDF](https://www.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf) (13 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1968-01.pdf).
 - 624 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/624).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf).
@@ -39,5 +48,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check finite cases for five open-problem results — exit 0. [Command and output](../evidence/replays/013.txt).
 
 The original result page marks independent proof review pending.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

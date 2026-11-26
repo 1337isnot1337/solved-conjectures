@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2202.07966) (8 pages). conjecture 10 on PDF p. 7.
+- [Source PDF](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/perms.pdf) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Guessing with Little Data (HTTP 200). [Retrieved address](https://arxiv.org/abs/2202.07966).
 - PDF header (HTTP 200). [Retrieved address](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/perms.pdf).
 - A189281 - OEIS (HTTP 200). [Retrieved address](https://oeis.org/A189281).
@@ -37,6 +42,8 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
 ## Verification
+
+Independently compiled Conjectures.KauersKoutschanCertificate from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).
 
 - Check the Kauers–Koutschan recurrence — exit 0. [Command and output](../evidence/replays/064.txt).
 

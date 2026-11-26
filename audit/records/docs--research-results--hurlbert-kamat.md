@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1506.07741) (19 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2501.16144) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2022.06.028).
 - Erd\H{o}s-Ko-Rado Theorems for a Family of Trees (HTTP 200). [Retrieved address](https://arxiv.org/abs/1506.07741).
 - Source URL (HTTP 403). [Retrieved address](https://durham-repository.worktribe.com/OutputFile/1324623).

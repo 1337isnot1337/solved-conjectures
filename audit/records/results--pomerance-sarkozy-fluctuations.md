@@ -29,6 +29,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.renyi.hu/~p_erdos/1987-15.pdf) (8 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP request failed). [Retrieved address](https://combinatorica.hu/~p_erdos/1987-15.pdf).
 - On the bivariate Erdős–Kac theorem and correlations of the Möbius function (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0305004119000288).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10476-026-00178-w).

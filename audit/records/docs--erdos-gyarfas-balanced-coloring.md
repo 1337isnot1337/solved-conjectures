@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.24484) (22 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/S0012-365X(98)00323-9).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.ejc.2023.103695).
 - Erd\H{o}s-Gy\'arf\'as Balanced Five-Colorings (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.24484).

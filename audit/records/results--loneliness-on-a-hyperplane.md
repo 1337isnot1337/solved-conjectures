@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.06259v2) (10 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1102.4464) (8 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Lonely Runner Relations (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.06259v2).
 - Random runners are very lonely (HTTP 200). [Retrieved address](https://arxiv.org/abs/1102.4464).
 - The structure of Lonely Runner spectra (HTTP 200). [Retrieved address](https://arxiv.org/abs/2304.01462).

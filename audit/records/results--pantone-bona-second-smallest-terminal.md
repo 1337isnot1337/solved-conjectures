@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2103.06918v2) (12 pages). conjecture 6.1 on PDF p. 8 · conjecture 6.2 on PDF p. 9 · conjecture 6.3 on PDF p. 9.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Permutations avoiding sets of patterns with long monotone subsequences (HTTP 200). [Retrieved address](https://arxiv.org/abs/2103.06918v2).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0001-8708(81)90012-8).
 - Citation-index seed records. [Asymptotic values for degrees associated with strips of young diagrams](https://doi.org/10.1016/0001-8708(81)90012-8).

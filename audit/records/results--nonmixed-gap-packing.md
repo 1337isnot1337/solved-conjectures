@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2407.01101v2) (12 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1002/jgt.23269).
 - Packing Density of Sets With Only Two Nonmixed Gaps (HTTP 200). [Retrieved address](https://arxiv.org/abs/2407.01101v2).
 - Citation-index seed records. [Packing Density of Sets With Only Two Nonmixed Gaps](https://doi.org/10.1002/jgt.23269).

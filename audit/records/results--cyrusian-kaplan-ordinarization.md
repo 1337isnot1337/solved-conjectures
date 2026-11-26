@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.math.kth.se/math/GRU/2012.2013/SF2742/texter/BeckRobinsBook.pdf) (246 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1080/00927872.2026.2615092).
 - Source URL (HTTP 403). [Retrieved address](https://www.tandfonline.com/doi/full/10.1080/00927872.2026.2615092).
 - PDF header (HTTP 200). [Retrieved address](https://www.math.kth.se/math/GRU/2012.2013/SF2742/texter/BeckRobinsBook.pdf).

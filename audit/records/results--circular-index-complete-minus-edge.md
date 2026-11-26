@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Mazák–Zrubák, arXiv Conjecture 2: for every even `d>=6`, the circular chromatic index of `K_{d+1}` minus one edge is `d+1`. By Guichard's theorem a smaller value would give a proper `(d+1)`-edge-colouring with acyclic digraph of consecutive colours, and the proof excludes such colourings. One independent model referee pass; the scripts check `d=4` and `d=6`.
 
+## Audit finding
+
+The two packages share the exact single-edge theorem: in the second notation n=d+1. The catalogue identifies the second proof explicitly. The few-edge package also determines exact indices for deletion patterns and gives a counterexample on eleven vertices. The two result directories must not be interpreted as two independent resolutions of Mazák–Zrubák Conjecture 2.
+
 ## Source outline
 
 - [Statement](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/PROOF.md#L5).
@@ -35,6 +39,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2603.08822) (15 pages). conjecture 2 on PDF p. 7 · problem 2 on PDF p. 12.
+- [Source PDF](https://arxiv.org/pdf/2603.08822v1) (15 pages). conjecture 2 on PDF p. 7 · problem 2 on PDF p. 12.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822).
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822v1).
 - Citation-index seed records. [Circular chromatic index of small graphs](https://doi.org/10.48550/arxiv.2603.08822).
@@ -47,5 +56,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check the Mazák–Zrubák lemmas for complete graphs minus an edge — exit 0. [Command and output](../evidence/replays/116.txt).
 
 6 of 6 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

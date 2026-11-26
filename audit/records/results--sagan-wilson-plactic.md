@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.math.msu.edu/users/bsagan/Papers/Old/cpm-pub.pdf) (21 pages). conjecture 7.2 on PDF p. 18.
+- [Source PDF](https://arxiv.org/pdf/2410.20460) (18 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://users.math.msu.edu/users/bsagan/Papers/Old/cpm-pub.pdf).
 - Properties of plactic monoid centralizers \| School of Mathematical and Statistical Sciences (HTTP 200). [Retrieved address](https://math.asu.edu/node/11571).
 - Centralizers in the plactic monoid (HTTP 200). [Retrieved address](https://arxiv.org/abs/2410.20460).

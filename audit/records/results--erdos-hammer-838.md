@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > The binary Erdős–Szekeres order-type limit has convex-subset probability $`2^{-k^2/4+O(k\log k)}`$. Balanced substitutions give a quadratic exponent of at least one half for the minimum limiting density.
 
+## Audit finding
+
+The cup recurrence gives u₂=1 and u₃=1/2. Inserting these in the binary split recurrence gives P₃=1 and P₄=5/7. Completing the square yields the stated leading quadratic exponent 1/4 for that binary order type. The limit first fixes k and lets the host size increase. It does not give the existence of Erdős and Hammer’s different total-count limit.
+
 ## Source outline
 
 - [Proofs](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/README.md#L9).
@@ -24,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1811.02236) (32 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1604.08657) (7 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - 838 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/838).
 - Limits of Order Types (HTTP 200). [Retrieved address](https://arxiv.org/abs/1811.02236).
 - Limits of Order Types (HTTP 200). [Retrieved address](https://doi.org/10.4230/LIPIcs.SOCG.2015.300).
@@ -37,5 +46,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check finite cases for five open-problem results — exit 0. [Command and output](../evidence/replays/013.txt).
 
 The original result page marks independent proof review pending.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2503.19035) (41 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2405.16660) (11 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - How to Answer Questions of the Type: If you toss a coin n times, how likely is HH to show up more than HT? (HTTP 200). [Retrieved address](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/litt.html).
 - Source URL (HTTP 200). [Retrieved address](https://sites.math.rutgers.edu/~zeilberg/tokhniot/Litt.txt).
 - The generalized Alice HH vs Bob HT problem (HTTP 200). [Retrieved address](https://arxiv.org/abs/2503.19035).

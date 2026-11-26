@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://math.unideb.hu/sites/default/files/inline-files/poly3_revised.pdf) (27 pages). conjecture 1.2 on PDF p. 6, 23.
+- [Source PDF](https://arxiv.org/pdf/2312.14450) (17 pages). question 1.2 on PDF p. 2, 3.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://math.unideb.hu/sites/default/files/inline-files/poly3_revised.pdf).
 - Multiplicatively reducible subsets of shifted perfect $k$-th powers and bipartite Diophantine tuples (HTTP 200). [Retrieved address](https://arxiv.org/abs/2312.14450).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00493-025-00193-9).

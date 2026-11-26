@@ -32,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2109.15145) (21 pages). conjecture 1 on PDF p. 4, 7 · conjecture 2 on PDF p. 7, 8, 16 · conjecture 3 on PDF p. 8, 16, 17.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00026-022-00604-4).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.aim.2022.108692).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11139-026-01435-0).

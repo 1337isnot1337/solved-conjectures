@@ -32,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1207.3604) (16 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Formalizing Frankl's Conjecture: FC-families (HTTP 200). [Retrieved address](https://arxiv.org/abs/1207.3604).
 - Crossref query “Finite FC certificates and small cyclic cases” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).

@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > The values below 1/6 are exactly (P−1)/(6P) for P ≥ 7 congruent to ±1 modulo 6. Cordella’s nine sporadic sextuples exhaust the exceptions to the three known families. Lean verifies realization of every proposed value by six distinct positive primitive speeds; actual rational-lattice, Gram and integer-factor components are proved, and the registered norm wrappers use the proved four-speed bound and retain `hplane`. Universal classification remains incomplete. Lean also proves the conditional two-parameter radius estimate; the finite plane enumeration remains incomplete.
 
+## Audit finding
+
+The computational proof has several independent stages. A previous successful GitHub-hosted run used the same result directory and modular-sieve source as the audited tree. Its log confirms four prime-product bounds (145 primes), 15 three-parameter covers, 78 noncritical maps and nine sporadic values. The degree of partial Lean coverage remains as stated on the landing page. [Hosted replay](https://github.com/1337isnot1337/solved-conjectures/actions/runs/45822175370/job/139916962874).
+
 ## Source outline
 
 - [A gap for planes and bounds for integer directions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/six-speed-spectrum/PROOF.md#L32).
@@ -27,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.03444v2) (18 pages). conjecture 6.2 on PDF p. 3, 14 · question 6.6 on PDF p. 16, 17.
+- [Source PDF](https://arxiv.org/pdf/2609.02604) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Odd denominators in the Lonely Runner spectrum for six speeds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.03444v2).
 - Amending the Lonely Runner Spectrum Conjecture (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p38).
 - Source URL (HTTP 202). [Retrieved address](https://escholarship.org/uc/item/3mx8w3js).
@@ -40,5 +49,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 The computational runs in this audit do not include a separate executable check for this entry.
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

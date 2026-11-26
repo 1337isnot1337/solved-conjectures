@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > A graph of cardinality at most the continuum is countably colorable if its finite subgraphs have bounded vector chromatic number. Finite graphs can have bounded Hall ratio and arbitrarily large vector chromatic number.
 
+## Audit finding
+
+For a fixed vector-coloring bound K, compactness gives a global Gram representation. On at most continuum many vertices the basis elements admit distinct binary strings. Same finite-prefix sign tables give nonnegative inner product after truncation; Cauchy–Schwarz bounds the error below the required edge gap. This is a countable-colorability criterion for bounded finite vector chromatic number. A uniform Hall-ratio bound alone is precisely the missing implication.
+
 ## Source outline
 
 - [An obstruction at the continuum](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/PROOF.md#L5).
@@ -25,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.renyi.hu/~p_erdos/1982-11.pdf) (7 pages). problem 2 on PDF p. 4.
+- [Source PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0C1F8456C5441CEE76B2304FAC4EC541/S0008439500014132a.pdf/the-s-linkedness-of-the-measure-algebra.pdf) (4 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~p_erdos/1982-11.pdf).
 - 75 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/75).
 - PDF header (HTTP 200). [Retrieved address](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0C1F8456C5441CEE76B2304FAC4EC541/S0008439500014132a.pdf/the-s-linkedness-of-the-measure-algebra.pdf).
@@ -38,5 +47,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 The computational runs in this audit do not include a separate executable check for this entry.
 
 The original result page marks independent proof review pending.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

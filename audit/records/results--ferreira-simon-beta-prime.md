@@ -34,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2108.09244) (33 pages). conjecture 2 on PDF p. 20, 26 · conjecture 1 on PDF p. 20, 21, 22, 23, 24, 26 · conjecture 3 on PDF p. 31.
+- [Source PDF](https://arxiv.org/pdf/2611.24348) (23 pages). conjecture 2 on PDF p. 14.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Convolution of beta prime distribution (HTTP 200). [Retrieved address](https://arxiv.org/abs/2108.09244).
 - DLMF: §15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function (HTTP 200). [Retrieved address](https://dlmf.nist.gov/15.8.E15).
 - DLMF: §15.8 Transformations of Variable ‣ Properties ‣ Chapter 15 Hypergeometric Function (HTTP 200). [Retrieved address](https://dlmf.nist.gov/15.8.E1).

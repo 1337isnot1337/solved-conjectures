@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.28691v2) (39 pages). conjecture 12.8 on PDF p. 34, 35, 36, 38.
+- [Source PDF](https://arxiv.org/pdf/1210.1102) (34 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Two q-Deformations of Narayana Polynomials: Rogers Moments, Hankel Positivity, and q-Narayana Kernels (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.28691v2).
 - Source URL (HTTP 200). [Retrieved address](https://api.openalex.org/works?filter=cites:W7223203774).
 - Suffridge's Convolution Theorem for Polynomials and Entire Functions Having Only Real Zeros (HTTP 200). [Retrieved address](https://arxiv.org/abs/1210.1102).

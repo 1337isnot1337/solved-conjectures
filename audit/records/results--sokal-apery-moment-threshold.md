@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://rtca2023.github.io/pages_Paris/DocM6/Sokal.pdf) (193 pages). conjecture 1 on PDF p. 171, 172, 173.
+- [Source PDF](https://arxiv.org/pdf/2005.10733) (19 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://rtca2023.github.io/pages_Paris/DocM6/Sokal.pdf).
 - The Ap\'ery Numbers as a Stieltjes Moment Sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/2005.10733).
 - math/preprints/Apery-Polynomials-as-Stieltjes-Moment-Sequences-October-13-2026/build/source/apery-polynomials-as-stieltjes-moment-sequences.tex a (HTTP 200). [Retrieved address](https://github.com/KnowledgeSense/math/blob/91f1bdd2a10abeb28acc742ce3ee884874caf124/preprints/Apery-Polynomials-as-Stieltjes-Moment-Sequences-October-13-2026/build/source/apery-polynomials-as-stieltjes-moment-sequences.tex).

@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2611.25741v1) (27 pages). conjecture 6.16 on PDF p. 17, 18, 23, 24, 26 · conjecture 9.7 on PDF p. 23, 26.
+- [Source PDF](https://arxiv.org/pdf/2404.03249) (21 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Beyond geometric lattices: pseudo-atoms and redundant join representations in the face lattice of the permutohedron (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.25741v1).
 - Asymptotic for the rightmost zeros of Bell and Eulerian polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.03249).
 - Citation-index seed records. [Beyond geometric lattices: pseudo-atoms and redundant join representations in the face lattice of the permutohedron](https://doi.org/10.48550/arxiv.2611.25741).

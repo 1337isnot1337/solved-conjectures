@@ -31,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.41502) (30 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Sink polynomials of line graphs and weighted matching polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.41502).
 - Real-rooted polynomials: graphs and combinatorics \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedGraphs.htm).
 - Citation-index seed records. [Sink polynomials of line graphs and weighted matching polynomials](https://doi.org/10.48550/arxiv.2610.41502).

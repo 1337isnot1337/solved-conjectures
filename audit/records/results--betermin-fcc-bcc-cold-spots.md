@@ -26,6 +26,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1607.08716) (45 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00365-019-09494-x).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00365-019-09494-x).
 - Polarization of lattices: Stable cold spots and spherical designs (HTTP 200). [Retrieved address](https://doi.org/10.1017/fms.2026.10169).

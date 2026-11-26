@@ -35,6 +35,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2404.18517v1) (19 pages). conjecture 1 on PDF p. 17 · conjecture 2 on PDF p. 17 · conjecture 3 on PDF p. 17.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2024.05.004).
 - Distributions of statistics on separable permutations (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.18517v1).
 - trureturing/Blueprint/D5/S1/Words/Patterns/Separable/RecordAllIndex.md at bba1aad31d92f0ac31774c3a7e7c04a3db945c56 · the-omega-institute/truretur (HTTP 200). [Retrieved address](https://github.com/the-omega-institute/trureturing/blob/bba1aad31d92f0ac31774c3a7e7c04a3db945c56/Blueprint/D5/S1/Words/Patterns/Separable/RecordAllIndex.md).

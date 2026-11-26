@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2602.15754v3) (19 pages). conjecture 5.1 on PDF p. 15, 16.
+- [Source PDF](https://arxiv.org/pdf/2508.10209) (19 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jalgebra.2018.07.010).
 - Power monoids and their arithmetic: a survey (HTTP 200). [Retrieved address](https://arxiv.org/abs/2602.15754v3).
 - On the system of length sets of power monoids (HTTP 200). [Retrieved address](https://doi.org/10.4064/aa251028-7-7).

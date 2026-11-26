@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1401.0300v50) (319 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Unsolved Problems in Group Theory. The Kourovka Notebook (HTTP 200). [Retrieved address](https://arxiv.org/abs/1401.0300v50).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1515/form.2011.092).
 - Source URL (HTTP request failed). [Retrieved address](https://www.mathnet.ru/eng/timm977).

@@ -25,6 +25,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2104.12711v3) (10 pages). Full text retrieved.
+- [Source PDF](https://www.theoryofnumbers.com/melnathanson/pdfs/nath2022-198.pdf) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - The Bose-Chowla argument for Sidon sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2104.12711v3).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jnt.2021.08.005).
 - PDF header (HTTP 200). [Retrieved address](https://www.theoryofnumbers.com/melnathanson/pdfs/nath2022-198.pdf).

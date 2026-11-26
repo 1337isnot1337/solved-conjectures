@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2607.17373) (10 pages). conjecture 6.1 on PDF p. 9.
+- [Source PDF](https://arxiv.org/pdf/2001.09465) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Hardy-type norms of matrices (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.17373).
 - DLMF: §10.32 Integral Representations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions (HTTP 200). [Retrieved address](https://dlmf.nist.gov/10.32.E9).
 - DLMF: §10.25 Definitions ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions (HTTP 200). [Retrieved address](https://dlmf.nist.gov/10.25.E2).
@@ -39,6 +44,8 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - A separate web search is recorded with its query, titles and URLs in the ledger.
 
 ## Verification
+
+Independently compiled Conjectures.KovalevRationalCertificate from the frozen source, checked its printed axiom reports and ran stock leanchecker. [Exact commands, module scope, outputs and exit status](../evidence/lean-replays/receipts.json).
 
 - Check Kovalev counterfamily constants — exit 0. [Command and output](../evidence/replays/045.txt).
 

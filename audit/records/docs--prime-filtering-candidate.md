@@ -25,6 +25,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v15i1r48/pdf/) (18 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v15i1r48/pdf/).
 - Citation-index seed records. [The Lonely Runner with Seven Runners](https://doi.org/10.37236/772).
 - Crossref query “Prime filtering and runner consequences prime filtering candidate.md” returned 12 displayed records (HTTP 200).

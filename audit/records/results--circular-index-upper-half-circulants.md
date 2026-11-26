@@ -37,6 +37,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2603.08822) (15 pages). problem 6 on PDF p. 13 · problem 7 on PDF p. 13.
+- [Source PDF](https://www.cs.uleth.ca/~morris/Research/SpecialFamily.pdf) (11 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0012-365X%2894%2900311-6).
 - PDF header (HTTP 200). [Retrieved address](https://www.cs.uleth.ca/~morris/Research/SpecialFamily.pdf).

@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.14023v3) (17 pages). problem 1 on PDF p. 3, 15.
+- [Source PDF](https://arxiv.org/pdf/1404.5016) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Orthonormal bases of spherical harmonics with maximal Lp norm growth (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.14023v3).
 - Spherical harmonics with maximal Lp (2<p<=6) norm growth (HTTP 200). [Retrieved address](https://arxiv.org/abs/1404.5016).
 - Citation-index seed records. [Orthonormal bases of spherical harmonics with maximal Lp norm growth](https://doi.org/10.48550/arxiv.2609.14023).

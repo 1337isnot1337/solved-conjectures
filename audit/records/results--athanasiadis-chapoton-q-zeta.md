@@ -32,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2605.26916v1) (26 pages). conjecture 4.9 on PDF p. 14.
+- [Source PDF](https://arxiv.org/pdf/math/0507163) (59 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Polytopes and posets associated to preorders (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.26916v1).
 - Preorder polytopes: matching endpoint pairs, flag spheres and the Athanasiadis–Chapoton conjectures (HTTP 200). [Retrieved address](https://www.evidencepress.org/releases/preorder-polytope-flag-spheres/).
 - PDF header (HTTP 200). [Retrieved address](https://arxiv.org/pdf/math/0507163).

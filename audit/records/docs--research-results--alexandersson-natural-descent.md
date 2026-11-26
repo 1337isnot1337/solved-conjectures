@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2604.08394) (7 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2607.15503) (29 pages). conjecture 8.1 on PDF p. 3, 22, 27.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1023/B:JACO.0000047295.93525.df).
 - Algebraic Combinatorics Seminar - David Wagner \| Combinatorics and Optimization \| University of Waterloo (HTTP 200). [Retrieved address](https://uwaterloo.ca/combinatorics-and-optimization/events/algebraic-combinatorics-seminar-david-wagner-4).

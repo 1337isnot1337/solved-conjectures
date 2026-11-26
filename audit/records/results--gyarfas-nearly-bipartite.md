@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > If Gyárfás’s conjecture has a counterexample, one exists on at most 330 vertices. The conjecture holds for arbitrary subdivisions of rectangular Möbius grids.
 
+## Audit finding
+
+The finite reduction requires lifting each branch path with its parity so that a totally odd subdivision in the shortened graph lifts to the original. The bound 5(2k²−k) gives 330 at k=6. This is a size bound for a hypothetical counterexample. The published argument does not enumerate those graphs. The Möbius grid case is a separate positive theorem.
+
 ## Source outline
 
 - [Proofs](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gyarfas-nearly-bipartite/README.md#L9).
@@ -24,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf) (13 pages). conjecture 1 on PDF p. 3.
+- [Source PDF](https://arxiv.org/pdf/1509.07716) (15 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Fruit Salad (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v4i1r8).
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s004930050056).
@@ -37,5 +46,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Check finite cases for five open-problem results — exit 0. [Command and output](../evidence/replays/013.txt).
 
 The original result page marks independent proof review pending.
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

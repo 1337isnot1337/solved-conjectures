@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2307.10852v4) (44 pages). question 5.12 on PDF p. 35, 38.
+- [Source PDF](https://arxiv.org/pdf/2609.10513v2) (15 pages). question 5.12 on PDF p. 5, 12.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Examples and counterexamples in Ehrhart theory (HTTP 200). [Retrieved address](https://arxiv.org/abs/2307.10852v4).
 - Examples and counterexamples in Ehrhart theory (HTTP 200). [Retrieved address](https://doi.org/10.4171/EMSS/86).
 - Unimodality shenanigans in Ehrhart theory (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.10513v2).

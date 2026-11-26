@@ -28,6 +28,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1010.4009) (14 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00025-023-01966-8).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00025-023-01966-8).
 - Cobham's theorem for substitutions (HTTP 200). [Retrieved address](https://arxiv.org/abs/1010.4009).

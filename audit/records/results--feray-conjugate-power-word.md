@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Proves both cycle limits and total-variation mixing for the stated permutation word, with sharp distance asymptotic e⁻¹/(n−1).
 
+## Audit finding
+
+Conjugating the second power by an independent uniform permutation gives a uniform conjugacy class law conditional on the type of the first permutation. The conditional law is constant for every representative, which establishes the independence step used by Plancherel. Direct joint counts over every ordered pair in S5 squared reproduced exact factorization for three pairs of positive and negative exponents. The asymptotic rate additionally uses the cited character and zeta estimates.
+
 ## Source outline
 
 - [1. Conditional independence](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feray-conjugate-power-word/PROOF.md#L10).
@@ -27,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2411.04347v4) (50 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2009.00897) (53 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/53596?nt=1).
 - Characters of symmetric groups: sharp bounds on virtual degrees and the Witten zeta function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2411.04347v4).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00222-008-0145-7).
@@ -37,6 +46,6 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Verification
 
-The computational runs in this audit do not include a separate executable check for this entry.
+[Independent finite comparison](../evidence/check_proof_steps.py).
 
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.
+The computational runs in this audit do not include a separate executable check for this entry.

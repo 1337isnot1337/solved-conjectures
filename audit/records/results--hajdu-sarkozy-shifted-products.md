@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://math.unideb.hu/sites/default/files/inline-files/poly3_revised.pdf) (27 pages). problem 1 on PDF p. 4, 23 · problem 2 on PDF p. 25 · conjecture 1 on PDF p. 26 · problems 2 on PDF p. 26.
+- [Source PDF](https://arxiv.org/pdf/2501.16620) (6 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://www.impan.pl/shop/en/publication/transaction/download/product/112684).
 - PDF header (HTTP 200). [Retrieved address](https://math.unideb.hu/sites/default/files/inline-files/poly3_revised.pdf).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00493-025-00193-9).

@@ -37,6 +37,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1802.02641) (11 pages). question 6.1 on PDF p. 10.
+- [Source PDF](https://arxiv.org/pdf/1401.0237) (20 pages). open problem 6.1 on PDF p. 19.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On Zero-Sector Reducing Operators (HTTP 200). [Retrieved address](https://arxiv.org/abs/1802.02641).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jmaa.2018.08.025).
 - Publications (HTTP 200). [Retrieved address](https://mathdept.byu.edu/cardon/publications.html).

@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://cfc.nankai.edu.cn/_upload/article/files/ca/07/264e89bc4d9bb418a6d91d482b90/ef62459f-bec2-470d-8199-b57a790de20a.pdf) (11 pages). conjecture 4.3 on PDF p. 9.
+- [Source PDF](https://arxiv.org/pdf/0808.2349) (8 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://cfc.nankai.edu.cn/_upload/article/files/ca/07/264e89bc4d9bb418a6d91d482b90/ef62459f-bec2-470d-8199-b57a790de20a.pdf).
 - A spline interpretation of Eulerian numbers (HTTP 200). [Retrieved address](https://arxiv.org/abs/0808.2349).
 - Eulerian triangle is totally positive of order 3 (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.29224).

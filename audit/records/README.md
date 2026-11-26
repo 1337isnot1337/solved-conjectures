@@ -9,7 +9,7 @@
 | [Alexandersson’s parking-function excedance conjecture](results--alexandersson-parking-excedance.md) | ranked | Screened |
 | [Alexandersson’s transportation polytope conjecture](results--alexandersson-transportation.md) | ranked | Screened |
 | [Almirón–Moyano-Fernández’s Wilf-module questions](results--almiron-moyano-wilf-module-questions.md) | ranked | Screened |
-| [Asgarli–Ghioca–Yip blocking-pencil problem](results--asgarli-ghioca-yip-blocking-pencil.md) | ranked | Screened |
+| [Asgarli–Ghioca–Yip blocking-pencil problem](results--asgarli-ghioca-yip-blocking-pencil.md) | ranked | Correction |
 | [Athanasiadis–Chapoton’s polar preorder duality conjecture](results--athanasiadis-chapoton-polar-duality.md) | ranked | Screened |
 | [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results--athanasiadis-chapoton-q-zeta.md) | ranked | Earlier public resolution |
 | [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results--athanasiadis-chapoton-transmuted-m.md) | ranked | Earlier public resolution |

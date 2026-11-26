@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://cs.uwaterloo.ca/journals/JIS/VOL26/Braun/braun6.pdf) (29 pages). conjecture 2 on PDF p. 2, 3, 25.
+- [Source PDF](https://publications.mfo.de/bitstream/handle/mfo/4147/OWR_2023_58.pdf?isAllowed=y&sequence=6) (70 pages). conjecture 2 on PDF p. 8, 55 · problem 2 on PDF p. 57.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://cs.uwaterloo.ca/journals/JIS/VOL26/Braun/braun6.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://publications.mfo.de/bitstream/handle/mfo/4147/OWR_2023_58.pdf?isAllowed=y&sequence=6).
 - Number of facets of symmetric edge polytopes arising from join graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2312.11287v3).

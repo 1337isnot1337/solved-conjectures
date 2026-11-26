@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2408.09301) (21 pages). problem 1.1 on PDF p. 1, 2, 4, 5, 6.
+- [Source PDF](https://arxiv.org/pdf/1611.03940) (18 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On sets with missing differences in compact abelian groups (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.09301).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1134/S0081543821040039).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2026.02.005).

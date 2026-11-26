@@ -27,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2506.12513v2) (36 pages). Full text retrieved.
+- [Source PDF](https://data.math.au.dk/publications/phd/2026/math-phd-2026-mbg.pdf) (142 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Decomposition of real numbers into sums of L\"uroth sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.12513v2).
 - Source URL (HTTP 200). [Retrieved address](https://www.maths.tcd.ie/EMIS/journals/ERA-AMS/1999-01-015/1999-01-015.tex.html).
 - PDF header (HTTP 200). [Retrieved address](https://data.math.au.dk/publications/phd/2026/math-phd-2026-mbg.pdf).

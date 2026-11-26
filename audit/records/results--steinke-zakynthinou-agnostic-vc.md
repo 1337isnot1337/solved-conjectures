@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2001.09122v3) (58 pages). conjecture 4.18 on PDF p. 24.
+- [Source PDF](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf) (7 pages). conjecture 6 on PDF p. 4.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Reasoning About Generalization via Conditional Mutual Information (HTTP 200). [Retrieved address](https://arxiv.org/abs/2001.09122v3).
 - PDF header (HTTP 200). [Retrieved address](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf).
 - Reasoning About Generalization via Conditional Mutual Information (HTTP 200). [Retrieved address](https://arxiv.org/abs/2001.09122).

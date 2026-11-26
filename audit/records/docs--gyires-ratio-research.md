@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf) (29 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2408.09341) (61 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf).
 - Conjecture 20: Gyires’s ratio inequality – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/conjecture-20/index.html).
 - Crossref query “Gyires ratio inequality: discovery and analytic reduction” returned 12 displayed records (HTTP 200).

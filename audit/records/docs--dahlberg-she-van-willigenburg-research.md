@@ -29,6 +29,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1901.02468) (21 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2409.12934) (16 pages). conjecture 6.1 on PDF p. 2.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Schur and $e$-positivity of trees and cut vertices (HTTP 200). [Retrieved address](https://arxiv.org/abs/1901.02468).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2006.01.006).
 - Graphs missing a connected partition (HTTP 200). [Retrieved address](https://arxiv.org/abs/2409.12934).

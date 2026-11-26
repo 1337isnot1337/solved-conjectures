@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://math.dartmouth.edu/~carlp/iterate.pdf) (41 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/1706.03120) (11 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://math.dartmouth.edu/~carlp/iterate.pdf).
 - 955 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/955).
 - Divisor-sum fibers (HTTP 200). [Retrieved address](https://arxiv.org/abs/1706.03120).

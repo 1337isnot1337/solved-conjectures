@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Two arbitrary positive integer speeds can be added to any Goddyn–Wong simultaneous acceleration. The proof gives a prescribed interval for the common witness and an obstruction to the corresponding three-speed assertion.
 
+## Audit finding
+
+The authors’ Goddyn–Wong paper is also available through their Zenodo record. Zhang’s two-entry modification result replaces two chosen velocities and tests tightness. The insertion theorem adjoins two arbitrary positive speeds to a Goddyn–Wong acceleration and produces a time in a prescribed interval. These operations and conclusions differ. The repository explicitly disclaims priority.
+
 ## Source outline
 
 - [Lean verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lonely-runner-two-insertions/README.md#L7).
@@ -23,6 +27,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://zenodo.org/api/records/8275490/files/g38.pdf/content) (14 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2608.13599) (21 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 403). [Retrieved address](https://www.sfu.ca/~goddyn/Papers/063tight_lonely_runner.pdf).
 - Crossref query “Lonely Runner — inserting two speeds into tight families” returned 12 displayed records (HTTP 200).
 - DataCite Zenodo search returned 0 displayed records (HTTP 200).
@@ -33,5 +42,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - Verify partial results for Frankl, Lonely Runner and Erdős–Gyárfás — exit 0. [Command and output](../evidence/replays/074.txt).
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

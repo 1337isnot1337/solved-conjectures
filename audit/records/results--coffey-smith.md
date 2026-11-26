@@ -37,6 +37,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://rangevoting.org/WarrenSmithPages/homepage/riemann2.pdf) (16 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/math-ph/0507042) (32 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://rangevoting.org/WarrenSmithPages/homepage/riemann2.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://arxiv.org/pdf/math-ph/0507042).
 - PDF header (HTTP 200). [Retrieved address](https://personal.us.es/arias/56-2RHB.pdf).

@@ -29,6 +29,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://webusers.imj-prg.fr/~herve.fournier/publications/vnp.pdf) (16 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - VP $\neq$ VNP over every field (HTTP 200). [Retrieved address](https://hexagonmath.org/2611.00954v1).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1145/800135.804419).
 - PDF header (HTTP 200). [Retrieved address](https://webusers.imj-prg.fr/~herve.fournier/publications/vnp.pdf).

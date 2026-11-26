@@ -24,6 +24,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.28594) (13 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Towards a more structured search for Erd\H{o}s-Gy\'arf\'as counter-examples (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.28594).
 - A Structural Exhaustion Proof of the Erdős–Gyárfás Conjecture on Power-of-Two Cycles (HTTP 200). [Retrieved address](https://zenodo.org/records/22019344).
 - Citation-index seed records. [Towards a more structured search for Erdős-Gyárfás counter-examples](https://doi.org/10.48550/arxiv.2609.28594).

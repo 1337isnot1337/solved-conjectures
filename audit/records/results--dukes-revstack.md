@@ -27,6 +27,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v21i2p2/pdf/) (27 pages). conjecture 5.6 on PDF p. 23.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Revstack Sort, Zigzag Patterns, Descent Polynomials of $t$-Revstack Sortable Permutations, and Steingrímsson's Sorting Conjecture (HTTP 200). [Retrieved address](https://doi.org/10.37236/3583).
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v21i2p2/pdf/).
 - Citation-index seed records. [Revstack Sort, Zigzag Patterns, Descent Polynomials of $t$-Revstack Sortable Permutations, and Steingrímsson's Sorting Conjecture](https://doi.org/10.37236/3583).

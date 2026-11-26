@@ -33,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/1810.08655) (16 pages). conjecture 4.1 on PDF p. 14 · conjecture 4.2 on PDF p. 14.
+- [Source PDF](https://arxiv.org/pdf/2608.07898) (19 pages). conjecture 5.1 on PDF p. 16, 17.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - On the roots of the subtree polynomial (HTTP 200). [Retrieved address](https://arxiv.org/abs/1810.08655).
 - Proof of a Brown-Mol conjecture on subtree roots (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.07898).
 - On the roots of the subtree polynomial (HTTP 200). [Retrieved address](https://arxiv.org/abs/1810.08655v1).

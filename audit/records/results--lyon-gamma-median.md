@@ -30,6 +30,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2611.14429) (26 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/math/0411282) (33 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Tight bounds for the median of a gamma distribution (HTTP 200). [Retrieved address](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288601).
 - Analytic and optimized approximations to the median of the gamma distribution (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.14429).
 - PDF header (HTTP 200). [Retrieved address](https://arxiv.org/pdf/math/0411282).

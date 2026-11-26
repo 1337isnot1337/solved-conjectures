@@ -37,6 +37,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.21083) (30 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Problem 14: Characterizing cohesive matrices – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/problem-14/index.html).
 - Problem 15: Characterizing barycentric matrices – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/problem-15/index.html).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.laa.2010.08.015).

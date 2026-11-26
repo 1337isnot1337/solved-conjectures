@@ -31,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2509.19649v2) (32 pages). conjecture 4 on PDF p. 20, 24 · conjecture 5 on PDF p. 29, 30, 31.
+- [Source PDF](https://math.berkeley.edu/~mhaiman/ftp/remarkable-qtcat/qtcat.pdf) (48 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Majorization via positivity of Jack and Macdonald polynomial differences (HTTP 200). [Retrieved address](https://arxiv.org/abs/2509.19649v2).
 - PDF header (HTTP 200). [Retrieved address](https://math.berkeley.edu/~mhaiman/ftp/remarkable-qtcat/qtcat.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://suvrit.github.io/papers/jackratio/jackratio-v1.pdf).

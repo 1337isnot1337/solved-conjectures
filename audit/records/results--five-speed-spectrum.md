@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2609.03444v2) (18 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2610.40694) (45 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.5070/C61055383).
 - Amending the Lonely Runner Spectrum Conjecture (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p38).
 - Odd denominators in the Lonely Runner spectrum for six speeds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.03444v2).

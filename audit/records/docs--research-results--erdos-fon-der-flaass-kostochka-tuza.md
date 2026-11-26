@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://kostochk.web.illinois.edu/docs/2000/dm1999FlaWoo.pdf) (8 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2309.00213) (16 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Small transversals in uniform hypergraphs  - SZTAKI Publication Repository (HTTP 200). [Retrieved address](https://eprints.sztaki.hu/110/).
 - PDF header (HTTP 200). [Retrieved address](https://kostochk.web.illinois.edu/docs/2000/dm1999FlaWoo.pdf).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s004930200013).

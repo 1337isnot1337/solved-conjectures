@@ -25,6 +25,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2610.40694v1) (45 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Nine and Ten Lonely Runners (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i2p46).
 - Source URL (HTTP 403). [Retrieved address](https://www.sfu.ca/~goddyn/Papers/063tight_lonely_runner.pdf).
 - Four runners that are barely lonely (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.40694v1).

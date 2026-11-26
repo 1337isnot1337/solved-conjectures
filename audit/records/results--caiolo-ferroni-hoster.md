@@ -33,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2605.28474v1) (33 pages). conjecture 7.3 on PDF p. 30.
+- [Source PDF](https://arxiv.org/pdf/2610.17135v1) (46 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Dual Chow polynomials of matroids and posets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.28474v1).
 - Chow polynomials and chain polynomials of matroids are not log-concave (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.17135v1).
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).

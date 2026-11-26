@@ -28,6 +28,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://dujella.github.io/pdf/dujella-elsholtz01k.pdf) (6 pages). Full text retrieved.
+- [Source PDF](https://arxiv.org/pdf/2508.07806) (18 pages). Full text retrieved.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://dujella.github.io/pdf/dujella-elsholtz01k.pdf).
 - Source URL (HTTP 403). [Retrieved address](https://academic.oup.com/qjmath/article/75/4/1243/7749340).
 - Two sets of integers such that all elements of the sumset of the two sets are perfect squares (HTTP 200). [Retrieved address](https://arxiv.org/abs/2508.07806).

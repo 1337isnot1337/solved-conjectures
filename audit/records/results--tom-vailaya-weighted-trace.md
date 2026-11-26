@@ -26,6 +26,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v33i2p9/pdf/) (32 pages). conjecture 74 on PDF p. 31.
+- [Source PDF](https://arxiv.org/pdf/2503.19344) (30 pages). conjecture 5.16 on PDF p. 29.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - The Chromatic Symmetric Function of Graphs Glued at a Single Vertex (HTTP 200). [Retrieved address](https://doi.org/10.37236/14403).
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v33i2p9/pdf/).
 - The chromatic symmetric function of graphs glued at a single vertex (HTTP 200). [Retrieved address](https://arxiv.org/abs/2503.19344).

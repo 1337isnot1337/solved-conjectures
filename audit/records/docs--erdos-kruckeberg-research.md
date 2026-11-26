@@ -34,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://arxiv.org/pdf/2510.19804) (15 pages). conjecture 4 on PDF p. 2, 3, 4.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - Source URL (HTTP request failed). [Retrieved address](https://combinatorica.hu/~p_erdos/1980-03.pdf).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1515/crll.1961.206.53).
 - Forbidden Sidon subsets of perfect difference sets, featuring a human-assisted proof (HTTP 200). [Retrieved address](https://arxiv.org/abs/2510.19804).

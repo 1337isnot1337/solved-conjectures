@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > Complete Lean verification of Conjecture 1 in §4.5: for each finite order r, every sufficiently high repeated-tail cumulant of the Riemann theta kernel is strictly reverse regular through order r on the entire nonnegative node domain. The separate RH-equivalent Toeplitz positivity problem remains unresolved.
 
+## Audit finding
+
+The argument fixes the matrix order first. Its eventual theta-kernel signs and positive integral estimate furnish an order-dependent sufficiently high cumulant. The determinant sign is read by coalescing ordered nodes after a Rolle argument. No order-independent derivative cutoff or resolution of the Riemann hypothesis follows. The earlier receipt for the theta-kernel file matches the historical receipt commit.
+
 ## Source outline
 
 - [1. Exact target](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nuttall-cumulants/PROOF.md#L5).
@@ -32,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 ## Literature checks
 
+- [Source PDF](https://publish.uwo.ca/~jnuttall/det3CAEXP_2.pdf) (16 pages). conjecture 1 on PDF p. 13, 14, 15 · problem 1 on PDF p. 15.
+- [Source PDF](https://publish.uwo.ca/~jnuttall/wronskRH.pdf) (7 pages). conjecture 1 on PDF p. 5.
+
+The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
 - PDF header (HTTP 200). [Retrieved address](https://publish.uwo.ca/~jnuttall/det3CAEXP_2.pdf).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00365-013-9200-8).
 - PDF header (HTTP 200). [Retrieved address](https://publish.uwo.ca/~jnuttall/wronskRH.pdf).
@@ -45,5 +54,3 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 The computational runs in this audit do not include a separate executable check for this entry.
 
 16 of 17 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.
