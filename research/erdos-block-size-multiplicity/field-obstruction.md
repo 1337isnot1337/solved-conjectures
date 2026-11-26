@@ -31,3 +31,5 @@ Chebyshev and Markov imply that at least $N/2$ extensions have $|X-a|\le2\sqrt a
 ```
 
 Finally [the elementary line-count bound](prime-planes.md) gives $K\ll 1+(M/\sqrt v)^{2/3}$. Fix $\epsilon>0$ sufficiently small. If $M\le v^{1/2+\epsilon}$, then $K\ll v^{2\epsilon/3}$, so every polynomial largeness requirement above holds for all sufficiently large $v$. The last lower bound then exceeds $v^{1/2+\epsilon}$ upon making $\epsilon$ smaller if necessary. This contradiction proves the theorem, with the constant $c$ absorbing bounded orders. For the sharp exponent in prime planes and the classical matching upper construction, see the [prime-plane argument](prime-planes.md).
+
+The [exact finite checker](check_field.py) verifies the direction-energy identity for every one of the 65,536 subsets of the sixteen-element field over its four-element subfield. It enumerates every extended subplane line for four proper field inclusions and checks both the exterior-point bound and the exact variance on 126 restrictions. Run `python3 research/erdos-block-size-multiplicity/check_field.py` from the repository root.
