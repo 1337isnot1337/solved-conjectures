@@ -1,5 +1,25 @@
 # History
 
+## 2026-11-26 — Verify Shumyatsky’s actual single-factor lift
+
+Lean checks that the outer action factors through the socle quotient,
+then carries out the inner adjustments under the explicit
+almost-simple automorphism and generation hypotheses.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
+## 2026-11-25 — Verify shifted-tail inputs for Pomerance–Sárközy’s process
+
+Lean checks the shifted integer tail-product reindexing and the moving
+positive-part expectation under weak convergence and bounded second
+moments. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
+## 2026-11-26 — Verify the Hall and coprime-complement steps in Shumyatsky’s proof
+
+Lean constructs the required subgroup of a solvable quotient. It
+verifies the coprime complement and the resulting cyclicity under
+the coprime-automorphism hypothesis.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s transitive simple factors
 
 Lean realizes each nonabelian minimal normal subgroup as a direct

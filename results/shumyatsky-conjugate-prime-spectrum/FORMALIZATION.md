@@ -135,6 +135,24 @@ and the source credits in the [audit](AUDIT.md).
   direct-power isomorphism sends each coordinate factor to the
   corresponding conjugate subgroup.
 
+- [Coprime quotient](../../lean/Conjectures/ShumyatskyCoprimeQuotient.lean).
+  For every finite solvable group, Lean constructs a subgroup whose
+  prime spectrum is exactly the selected primes dividing the group
+  order. For the outer quotient, prime-spectrum minimality then
+  forces coprimality with the simple factor order. Schur–Zassenhaus
+  realizes the quotient as a coprime complement. The cyclicity
+  conclusion uses solvability of the outer quotient and cyclicity
+  of the coprime subgroups as hypotheses.
+
+- [Single-factor lift](../../lean/Conjectures/ShumyatskySingleFactorLift.lean).
+  The outer action kills the socle and its restriction to the
+  selected normal subgroup gives the inner automorphisms. Lean
+  verifies minimality of the actual conjugation image, applies
+  cyclic normalization, and realizes the prescribed images by
+  actual inner adjustments. The theorem takes the external
+  solvability, coprime-automorphism cyclicity, and conjugate-generation
+  inputs as explicit premises.
+
 The remaining generation inputs include the almost-simple existence
 of conjugate generators and the two-generator lifting property.
 
@@ -158,4 +176,6 @@ checker. The abelian reduction and cyclic normalization passed their exact scope
 [Abelian-reduction receipt](verification/abelian-reduction/receipt.json) ·
 [Cyclic-normalization receipt](verification/cyclic-normalization/receipt.json) ·
 [Actual-socle receipt](verification/socle-structure/receipt.json) ·
-[Simple-power receipt](verification/simple-power/receipt.json).
+[Simple-power receipt](verification/simple-power/receipt.json) ·
+[Coprime-quotient receipt](verification/coprime-quotient/receipt.json) ·
+[Single-factor receipt](verification/single-factor/receipt.json).

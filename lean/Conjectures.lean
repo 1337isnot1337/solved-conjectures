@@ -17,6 +17,7 @@ import Conjectures.PomeranceSarkozyDistributionCheckpoint
 import Conjectures.PomeranceSarkozyPoissonCountCheckpoint
 import Conjectures.PomeranceSarkozyPoissonDifferenceChar
 import Conjectures.PomeranceSarkozyBernoulliArray
+import Conjectures.PomeranceSarkozyProcessKernelTools
 import Conjectures.PomeranceSarkozyMertensRemainder
 import Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
 import Conjectures.ShumyatskyCycleLabels
@@ -37,6 +38,8 @@ import Conjectures.ShumyatskyCharacteristicallySimple
 import Conjectures.ShumyatskyPrimeKernelLift
 import Conjectures.ShumyatskyAbelianReduction
 import Conjectures.ShumyatskyCyclicNormalization
+import Conjectures.ShumyatskyCoprimeQuotient
+import Conjectures.ShumyatskySingleFactorLift
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage

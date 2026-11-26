@@ -117,6 +117,10 @@ modules=(
   Conjectures.PomeranceSarkozyPoissonCountCheckpoint
   Conjectures.PomeranceSarkozyPoissonDifferenceChar
   Conjectures.PomeranceSarkozyBernoulliArray
+  Conjectures.PomeranceSarkozyProcessKernelTools
+  Conjectures.PomeranceSarkozyShiftedTailCross
+  Conjectures.PomeranceSarkozyWeakAbsoluteMoment
+  Conjectures.PomeranceSarkozyWeakPositivePart
   Conjectures.PomeranceSarkozyBernoulliCharacteristic
   Conjectures.PomeranceSarkozyBernoulliProduct
   Conjectures.PomeranceSarkozyLogKernels
@@ -163,6 +167,8 @@ modules=(
   Conjectures.ShumyatskyAbelianMinimalNormal
   Conjectures.ShumyatskyAbelianReduction
   Conjectures.ShumyatskyCyclicNormalization
+  Conjectures.ShumyatskyCoprimeQuotient
+  Conjectures.ShumyatskySingleFactorLift
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
