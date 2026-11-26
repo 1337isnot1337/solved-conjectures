@@ -7,6 +7,46 @@ modules=(
   Conjectures.GyarfasPlanarLines
   Conjectures.GyarfasPlanarRational
   Conjectures.GyarfasPlanarWitness
+  Conjectures.CircularSmallInsertionBlocks
+  Conjectures.CircularSmallInsertionCertificates
+  Conjectures.CircularSmallInsertionClassification
+  Conjectures.CircularSmallInsertionConflicts
+  Conjectures.CircularSmallInsertionExclusions
+  Conjectures.CircularSmallInsertionFamily
+  Conjectures.CircularSmallInsertionFixtures
+  Conjectures.CircularSmallInsertionForced
+  Conjectures.CircularSmallInsertionMatchings
+  Conjectures.CircularSmallInsertionPairings
+  Conjectures.CircularSmallInsertionPositive
+  Conjectures.CircularSmallInsertionProfiles1
+  Conjectures.CircularSmallInsertionProfiles2
+  Conjectures.CircularSmallInsertionProfiles3
+  Conjectures.CircularSmallInsertionProfiles4
+  Conjectures.CircularSmallInsertionProfiles5
+  Conjectures.CircularSmallInsertionProfiles6
+  Conjectures.CircularSmallInsertionProfiles7
+  Conjectures.CircularSmallInsertionProfiles8
+  Conjectures.CircularSmallInsertionProfiles9
+  Conjectures.CircularSmallInsertionSearch
+  Conjectures.CircularSmallInsertionShapes
+  Conjectures.CircularSmallInsertionShapes2
+  Conjectures.CircularSmallInsertionShapes3
+  Conjectures.CircularSmallInsertionShapes4
+  Conjectures.CircularSmallInsertionTerminal
+  Conjectures.CircularSmallInsertionTranslation
+  Conjectures.CircularSmallInsertionViable1
+  Conjectures.CircularSmallInsertionViable2
+  Conjectures.CircularSmallInsertionViable3
+  Conjectures.CircularSmallInsertionViable4
+  Conjectures.CircularSmallInsertionViable5
+  Conjectures.CircularSmallInsertionViable6
+  Conjectures.CircularSmallInsertionViable7
+  Conjectures.CircularSmallInsertionViable8
+  Conjectures.CircularSmallInsertionViable9
+  Conjectures.CircularSmallInsertionWindows
+  Conjectures.CircularThreeBlockAdditional
+  Conjectures.CircularThreeBlockConnected
+  Conjectures.CircularThreeBlockPrefixes
   Conjectures.MeylenderThalmaierArea
   Conjectures.MeylenderThalmaierComparison
   Conjectures.MeylenderThalmaierCoverScale
