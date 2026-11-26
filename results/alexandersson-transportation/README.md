@@ -8,7 +8,7 @@ Per Alexandersson conjectured that the Ehrhart $h^*$-polynomial of a classical t
 
 **Review status.** The independent reviewer checked the margin count, the exact failure of the Laguerre inequality, the Sturm count and the proof for all sufficiently large $m$. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350)
 
-**Lean status:** partial. Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Formal scope and verification receipt](FORMALIZATION.md).
+**Lean status:** full. Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Formal scope and verification receipt](FORMALIZATION.md).
 
 ## Citation
 
