@@ -2,6 +2,8 @@
 
 The eventual monotonicity question [Erdős #85](https://www.erdosproblems.com/85) remains open. This note imposes restrictions on the regular graphs used in the conditional route of [Walters et al., *A Drop at Forty-Nine in Erdős Problem 85*](https://zenodo.org/records/23519149). In their notation, proving A-REG for infinitely many powers-of-two degrees would suffice for a negative answer using their order-adjacent comparison. Their already reported finite drop is not a resolution.
 
+**Current results.** A [neighborhood parity argument](NO-COMPLETE-LEAVES.md) excludes even one complete leave component, superseding the earlier net argument below; a [modulo-8 obstruction](BIPARTITE-LEAVES.md) excludes bipartite leave components when four divides q. A separate [affine incidence argument](POLARITY-EDIT-LOWER-BOUND.md) shows that any regular candidate needs more than q^(3/2)/100 deletions from the natural orthogonal polarity truncations. (See [the exact path checker](check_affine_paths.py).) [Further restrictions](CAYLEY-OBSTRUCTIONS.md) cover some symmetric graph classes. None excludes arbitrary connected nonbipartite leaves or settles #85.
+
 ## The leave graph
 
 Assume a simple $q$-regular graph $G$ on $q^2$ vertices has no four-cycle. Define $M$ on the same vertex set by joining two distinct vertices if they have no common neighbor in $G$. Distinct vertices have at most one common neighbor in $G$. For the adjacency matrices $A$ of $G$ and $B$ of $M$,
