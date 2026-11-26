@@ -16,7 +16,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **77.** [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | 🟢 |
 | **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **81.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
 | **4.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **81.** [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/) | ✅ |
-| **4.** [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ | **81.** [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | 🟡 |
+| **4.** [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ | **81.** [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | ✅ |
 | **8.** [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ | **81.** [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ✅ |
 | **8.** [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | 🟡 | **85.** [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/) | ✅ |
 | **8.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ✅ | **85.** [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | 🟡 |
