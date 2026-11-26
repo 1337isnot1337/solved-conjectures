@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Bollobás–Erdős–Tuza conjecture
+
+Published the [near-linear transversal construction and induced-biclique upper bound](results/erdos-611-clique-transversals/) as partial progress on Erdős #611. The unrestricted sublinear question remains open.
+
 ## 2026-11-26 — The ordinary D’Arcais saddle and Fourier inversion
 
 Lean proves the root comparison for indices 6–50 at every real parameter at least one. It constructs the unique positive saddle, proves Fourier inversion for the ordinary coefficients, and reduces strict log-concavity at every index from 501 onward to two explicit inequalities. [Formalization](results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md).

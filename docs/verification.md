@@ -1,5 +1,9 @@
 # Verification
 
+## Bollobás–Erdős–Tuza conjecture
+
+Run `python3 results/erdos-611-clique-transversals/check.py`, `python3 results/erdos-611-clique-transversals/check_recursive.py` and `python3 results/erdos-611-clique-transversals/check_structure.py`. These check the base graphs, the substitution formula, 150 exact recurrence steps and the independent-block counting identity. The [review](../results/erdos-611-clique-transversals/AUDIT.md) identifies the arguments giving the asymptotic bounds.
+
 ## Alexandersson’s graphical dist conjecture
 
 Run `python3 results/alexandersson-graphical-dist/check.py` and `python3 results/alexandersson-graphical-dist/check_unions.py`. Subset inversion and direct vertex insertion yield identical coefficients. Both verifiers also compare with literal enumeration on small ordered graphs. [Exact counting proof](../results/alexandersson-graphical-dist/proof.md) · [Independent review](../results/alexandersson-graphical-dist/review.md). Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Formal scope and receipt](../results/alexandersson-graphical-dist/FORMALIZATION.md).
