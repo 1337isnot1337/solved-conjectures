@@ -4,7 +4,7 @@
 
 **Status:** Written proof for every even $`d\ge 6`$. It has been through one independent referee pass by a second model instance, which found no mathematical error; the justifications it asked for are included. The note is otherwise unrefereed. The finite checks cover $`d=4`$ and $`d=6`$ only.
 
-**Lean status:** partial. [Steps 1–3 are verified](FORMALIZATION.md), including the reduction from an actual real circular colouring to an all-edge linear order. The final lower bound and equality are not verified in Lean.
+**Lean status:** partial. [Steps 1–4 are verified](FORMALIZATION.md), including the all-edge linear order and the actual vertex-run rigidity. The final lower bound and equality are not verified in Lean.
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Conjecture 2.
 

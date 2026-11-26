@@ -125,3 +125,24 @@ in its receipt:
 Later draft modules are deliberately outside this frozen checkpoint and its
 verification claim. The exceptional `d=4` value and the distinct supplements
 in the complete-minus-a-few-edges entry are also outside this formalization.
+
+## Literal runs at each vertex (Step 4)
+
+The [Step 4 module](../../lean/Conjectures/CircularCompleteMinusEdgeStepFour.lean)
+verifies run rigidity for the actual all-edge order of the complete graph
+with one edge removed, in the written range `h ≥ 4`. Lean proves that two
+distinct adjacent vertices have exactly one common position, that each
+position starts the stipulated number of runs, and that the total is
+`N+1`. At a normal vertex the missing hue gives the increasing position
+list and the exact gap residues. Saturating the global run bounds proves
+that the normal gaps are either 1 or `2h`, that a normal vertex occupies
+both endpoint positions, and that the two special vertices have no
+consecutive appearances. This uses @aadrianvv’s written Step 4, for
+the conjecture of Ján Mazák and Filip Zrubák.
+
+All 24 modules passed strict Lean compilation,
+the all-owned axiom audit (669 declarations,
+549 theorems, 31 private,
+9 named endpoints), and pinned stock-kernel replay.
+[Step 4 receipt](verification/step-four/receipt.json).
+Steps 5–8 and the final lower bound and equality remain outside this checkpoint.

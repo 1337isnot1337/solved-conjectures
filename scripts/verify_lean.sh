@@ -1188,6 +1188,14 @@ modules=(
   Conjectures.CircularCompleteMinusEdgeLevels
   Conjectures.CircularCompleteMinusEdgeMatchings
   Conjectures.CircularCompleteMinusEdgeOrder
+  Conjectures.CircularCompleteMinusEdgeActualRuns
+  Conjectures.CircularCompleteMinusEdgeNormalPositions
+  Conjectures.CircularCompleteMinusEdgeOrderedRuns
+  Conjectures.CircularCompleteMinusEdgeRunArithmetic
+  Conjectures.CircularCompleteMinusEdgeRunSaturation
+  Conjectures.CircularCompleteMinusEdgeSpecialRuns
+  Conjectures.CircularCompleteMinusEdgeStepFour
+  Conjectures.CircularCompleteMinusEdgeVertexColors
   Conjectures.CircularCompleteMinusEdgePath
   Conjectures.CircularCompleteMinusEdgeRotation
   Conjectures.CircularCompleteMinusEdgeSources
