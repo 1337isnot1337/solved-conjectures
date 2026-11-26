@@ -26,7 +26,5 @@ the submitted cyclic colouring on the literal graph edges.
 [The final theorem](../../lean/Conjectures/TomdifCircularIndexBounds.lean)
 proves the actual real circular chromatic index is in the required open
 interval for all seven maximum degrees. It also proves the six exact
-values and the degree-15 bracket stated in the table. The three earlier
-constructions needed for the combined all-degree assertion are outside
-this scope. See the [finite-data receipt](verification/receipt.json) and
+values and the degree-15 bracket stated in the table. The later [combined Lean theorem](FORMALIZATION.md) supplies the three earlier constructions and proves the all-degree corollary. See the [finite-data receipt](verification/receipt.json) and
 [real-index receipt](verification/real-index/receipt.json).

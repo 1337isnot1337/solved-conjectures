@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the circular index examples for every maximum degree from eight
+
+For every integer maximum degree from eight, Lean constructs a finite simple graph whose real circular chromatic index is strictly between that degree plus one half and that degree plus one. The proof combines the two insertion families, regular circulants and tomdif’s seven exceptional examples. The three-block theorem gives the degree of every labelled vertex for every permitted packing. [Full theorem and verification](results/circular-index-upper-half-remaining-deltas/FORMALIZATION.md).
+
 ## 2026-11-26 — Prove the type B Poincaré real-rootedness conjecture
 
 A pole-cancelling differential identity and a weighted Rolle argument prove real-rootedness, simplicity and strict consecutive-rank interlacing for every rank. [Proof and audit](results/ferroni-pagaria-vecchi-type-b/).
