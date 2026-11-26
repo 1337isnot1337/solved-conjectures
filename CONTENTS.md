@@ -92,6 +92,7 @@ Earlier sources established the exceptional orders. These companion theorems are
 | --- | --- | --- | --- |
 | [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | Proved: the minimum maximum host degree for a free $s$-star is at least $2^s/8$, more than $2^{s-3}$ for all $s\ge3$. | Not formalized | [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md) · [Exact checker](results/cioba-savvas-shutout-number/verify.py) |
 | [Builder–Blocker general position complexity conjecture](results/builder-blocker-general-position-complexity/) | Both starting orders are PSPACE-complete on graphs of diameter two. | Not formalized | [Proof](results/builder-blocker-general-position-complexity/PROOF.md) · [Audit](results/builder-blocker-general-position-complexity/AUDIT.md) · [Exact checker](results/builder-blocker-general-position-complexity/verify.py) |
+| [General position number of oriented trees](results/general-position-oriented-trees/) | Exact min–max formula and a five-state linear-time algorithm for any orientation. | Not formalized | [Proof](results/general-position-oriented-trees/PROOF.md) · [Audit](results/general-position-oriented-trees/AUDIT.md) · [Exact checker](results/general-position-oriented-trees/verify.py) |
 
 ## Position coloring and Nordhaus–Gaddum bounds
 

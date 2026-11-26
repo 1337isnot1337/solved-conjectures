@@ -1,5 +1,9 @@
 # Verification
 
+## General position number of oriented trees
+
+Run `python3 results/general-position-oriented-trees/verify.py` to compare the five-state recurrence and its witnesses against exact directed-distance oracles. Add `--atlas` with NetworkX available for all orientations of the nonisomorphic trees through order nine. [Written proof](../results/general-position-oriented-trees/PROOF.md).
+
 ## Builder–Blocker general position complexity conjecture
 
 Run `python3 results/builder-blocker-general-position-complexity/verify.py` to compare both host games with the source optimization Node Kayles games by exact minimax. Add `--atlas` with NetworkX available to include the independent graph atlas. [Written proof and scope](../results/builder-blocker-general-position-complexity/PROOF.md).
