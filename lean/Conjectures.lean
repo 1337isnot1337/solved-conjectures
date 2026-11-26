@@ -1528,3 +1528,9 @@ import Conjectures.KauersKoutschanTraceProducts
 import Conjectures.KauersKoutschanColumnSeries
 import Conjectures.KauersKoutschanConjecture
 import Conjectures.KauersKoutschanSupplement
+import Conjectures.BursteinA218225Defs
+import Conjectures.BursteinA218225TreeX
+import Conjectures.BursteinA218225TreeY
+import Conjectures.BursteinA218225Series
+import Conjectures.BursteinA218225Kernel
+import Conjectures.BursteinA218225

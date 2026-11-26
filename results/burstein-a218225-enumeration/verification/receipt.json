@@ -1,0 +1,170 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T01:23:27.852529+00:00",
+  "finished_at": "2026-11-26T01:26:55.493344+00:00",
+  "root": "Conjectures.BursteinA218225",
+  "project_modules": [
+    "Conjectures.BursteinA218225",
+    "Conjectures.BursteinA218225Defs",
+    "Conjectures.BursteinA218225Kernel",
+    "Conjectures.BursteinA218225Series",
+    "Conjectures.BursteinA218225TreeX",
+    "Conjectures.BursteinA218225TreeY"
+  ],
+  "required_endpoints": [
+    "Conjectures.BursteinA218225.countX_eq_countY",
+    "Conjectures.BursteinA218225.seriesX_equation",
+    "Conjectures.BursteinA218225.seriesY_equation",
+    "Conjectures.BursteinA218225.series_unique"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/BursteinA218225.lean": "e9b30471df3c52e191ba87ffc9dfd9b9c163650a352a4098bde980b0d82cf484",
+    "lean/Conjectures/BursteinA218225Defs.lean": "24927f392c8e03da1341c6d51792e82e51d1131b1846b9e08b2bd0e41120de1d",
+    "lean/Conjectures/BursteinA218225Kernel.lean": "bbe15dc9df87c8ea3d831eb8c071ce183965b9a657acc2844e69d896b0126e95",
+    "lean/Conjectures/BursteinA218225Series.lean": "a9ff790fa1d3acb84a4b94fe5bfc682ac0bb5dad2adf827b6a430f6f1a133480",
+    "lean/Conjectures/BursteinA218225TreeX.lean": "364ccc72ff373ac9770663f542df3a5b005e5a9b6f8c4d982d4673a188a065ee",
+    "lean/Conjectures/BursteinA218225TreeY.lean": "5a230339e495796f81c8dd2efd13a2d05351b23a44b5afb7a95d39a4a2c40173"
+  },
+  "input_sha256": {
+    "lean/Conjectures/BursteinA218225.lean": "e9b30471df3c52e191ba87ffc9dfd9b9c163650a352a4098bde980b0d82cf484",
+    "lean/Conjectures/BursteinA218225Defs.lean": "24927f392c8e03da1341c6d51792e82e51d1131b1846b9e08b2bd0e41120de1d",
+    "lean/Conjectures/BursteinA218225Kernel.lean": "bbe15dc9df87c8ea3d831eb8c071ce183965b9a657acc2844e69d896b0126e95",
+    "lean/Conjectures/BursteinA218225Series.lean": "a9ff790fa1d3acb84a4b94fe5bfc682ac0bb5dad2adf827b6a430f6f1a133480",
+    "lean/Conjectures/BursteinA218225TreeX.lean": "364ccc72ff373ac9770663f542df3a5b005e5a9b6f8c4d982d4673a188a065ee",
+    "lean/Conjectures/BursteinA218225TreeY.lean": "5a230339e495796f81c8dd2efd13a2d05351b23a44b5afb7a95d39a4a2c40173",
+    "lean/lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
+    "lean/lake-manifest.json": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+    "lean/lakefile.toml": "91f787a34c9a80caf6d07c502a981c2adc85060414de9d114cfd864fbdd0ab3b",
+    "scripts/audit_lean_all_owned.py": "0e514f0d65a08879b1b01a4b42f93a80960ea80d811c0bf417ec209ec4c391b0",
+    "scripts/replay_lean.py": "4605df0993844e224a93b59336391f9d64ea1f03f3c9caf1123df0fd5e273940",
+    "scripts/verify_lean_target.py": "6d4ebc756a210051996ff231a96b8ed11f900189c823cdfc56467bed82665bc8"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225Defs.olean",
+        "Conjectures/BursteinA218225Defs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Defs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225TreeX.olean",
+        "Conjectures/BursteinA218225TreeX.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225TreeX.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225TreeY.olean",
+        "Conjectures/BursteinA218225TreeY.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225TreeY.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225Series.olean",
+        "Conjectures/BursteinA218225Series.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Series.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225Kernel.olean",
+        "Conjectures/BursteinA218225Kernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Kernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225.olean",
+        "Conjectures/BursteinA218225.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "results/burstein-a218225-enumeration/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.BursteinA218225"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 815,
+    "modules": 6,
+    "private_declarations": 380,
+    "raw_declarations": 815,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 719
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

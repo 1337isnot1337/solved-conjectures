@@ -12160,7 +12160,11 @@ run_cmd do
     `WaringGapSymmetryCore.stableList_mem,
     `WaringGapSymmetryCore.stableList_length,
     `WaringGapSymmetryCore.stable_list_counterexample64,
-    `WaringGapSymmetryCore.stable_list_counterexample128]
+    `WaringGapSymmetryCore.stable_list_counterexample128,
+    `Conjectures.BursteinA218225.countX_eq_countY,
+    `Conjectures.BursteinA218225.seriesX_equation,
+    `Conjectures.BursteinA218225.seriesY_equation,
+    `Conjectures.BursteinA218225.series_unique]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
