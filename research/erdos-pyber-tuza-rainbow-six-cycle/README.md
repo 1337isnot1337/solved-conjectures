@@ -13,7 +13,7 @@
 - [No globally missing triangle color](MISSING-TRIANGLE-COLOR.md): each color in a zero-rainbow-six-cycle graphon occurs in positive-density rainbow triangles.
 - [Fixed-pair triangles](PAIR-TRIANGLE-TRANSVERSALS.md): exact sharp deletion threshold, of order the square root of the order of the graph.
 - [Missing pair in a zero-cycle graphon](PAIR-GRAPHONS.md): the two colors form three equal blocks, and each internal kernel has only countably many row types.
-- [Positive tripartite interfaces](POSITIVE-TRIPARTITE.md) force parity; [completely saturated interfaces](SATURATED-TRIPARTITE.md) instead force a rainbow cycle.
+- One fixed tripartite target receiving [all four colors](ONE-POSITIVE-PART.md) or [exactly three colors](EXACT-THREE-COLOR-TARGET.md) from almost every outside vertex forces parity; a target [receiving exactly two](SATURATED-TRIPARTITE.md) instead forces a rainbow cycle. [Mixed incoming profiles](THREE-COLOR-PROFILES.md) are partially understood.
 - [Graphon criterion](GRAPHON-CRITERION.md): it is enough to prove that every balanced zero-density six-color graphon has a disconnected three-color union.
 
 The $C_6$ assertion is the open cycle clause of the Erdős–Pyber–Tuza question in Erdős, *Some of my favorite solved and unsolved problems in graph theory*, 1993, p. 346, and a subproblem of [Erdős #811](https://www.erdosproblems.com/811). The six-color rainbow $K_4$ clause has already been [disproved by Clemen and Wagner](https://arxiv.org/abs/2303.15476). The disjoint-triangle subproblem is tracked separately in [#809](https://github.com/1337isnot1337/solved-conjectures/issues/809).
