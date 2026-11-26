@@ -10,6 +10,9 @@ whether the limit is positive. The positive upper-density question is also
 open. See [Green, Problem 7](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf)
 and the [formal statement](https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/GreensOpenProblems/7.lean).
 
+The [reverse spacing certificate](reverse-spacing.md) gives an upper Banach
+density bound of 47/195 and an explicit bound for each translated interval.
+
 ## Uniform upper bound
 
 **Theorem.** For every positive integer $M$ and $N$,
@@ -109,6 +112,11 @@ which the finite set of small shifts fails to decide the greedy recurrence.
   has mean increment exactly 1. An upper bound on the *shortest* length
   supplies a lower bound for the *largest* mean increment, whereas the
   proof uses it for the smallest. Section 6 uses separate extra hypotheses.
+  Its Theorem 6.8 counts pairs with at least one Ulam summand and non-Ulam
+  sum at most $n$. Taking $x=1$ and $y=m-1$ for each non-Ulam $m$ from 4
+  through $n$ gives at least $n-A(n)-3$ such pairs. The published $6/17$
+  upper bound makes this grow linearly, contradicting the asserted
+  sublinear counting hypothesis when applied to this sequence.
 - [Agama, viXra:2501.0060v1](https://www.rxiv.org/pdf/2501.0060v1.pdf),
   Theorem 3.2, would bound the harmonic sum of the chain $1,2,\ldots,n$
   by $3/2+O((n-1)/n)$. The harmonic sum instead diverges. The
