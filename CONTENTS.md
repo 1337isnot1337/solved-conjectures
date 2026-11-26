@@ -18,6 +18,8 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 
 ## Partial results on open problems
 
+The [26 November theorem collection](docs/research-results/README.md) gives the proofs for five open Erdős problems and four other open conjectures, the separately reviewed resolutions, and the review status of the graphical zero-density extension.
+
 - **Wild-number conjecture for complete graphs.** For every $n\ge155$ and every minimum proper edge colouring of $K_n$, the wild number equals $\lfloor4\lceil n/2\rceil/3\rfloor$. The range $13\le n\le154$ remains open. [Proofs and exact checks](results/wild-number-complete-graphs/).
 - [Seven upper-half circular chromatic index certificates](results/circular-index-upper-half-remaining-deltas/). Tomdif’s examples at degrees $9,11,13,15,17,19,23$, together with the earlier notes, cover every maximum degree $\Delta\ge8$. [Lean proof for every degree](results/circular-index-upper-half-remaining-deltas/FORMALIZATION.md).
 - [Upper-half circular chromatic index for degrees congruent to 1 or 2 modulo 4](results/circular-index-upper-half-delta-2-mod-4/). Constructions for degrees $\Delta=4g+1$ and $4g+2$ with $g\ge6$, plus finite certificates for degrees $10,14,18,22$. [Lean proof for every parameter](results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md). [Lean certificates for the 17 stored nonregular graphs](results/circular-index-upper-half-circulants/FORMALIZATION.md).
