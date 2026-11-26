@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Estrugo–Pastine priority correction
+
+An independent reviewer recovered the negative answer to the unrestricted star-center degree question by blowing up an earlier Feghali–Johnson–Thomas tree. Its stronger quantitative constructions are archived in [the research note](research/estrugo-pastine-star-center-degree/). The solved catalogue count is unchanged. [Review](https://github.com/1337isnot1337/solved-conjectures/issues/782#issuecomment-7187707661)
+
 ## 2026-11-26 — Verify the shifted Lonely Runner certificates
 
 Lean proves Zhang’s strict bound for 18 through 57 runners using aadrianvv’s and tomdif’s published configurations. Each recorded maximum is attained. [Proof and verification](results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).
