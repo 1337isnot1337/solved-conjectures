@@ -1,6 +1,6 @@
 # Interpolation for highly unbalanced complete bipartite graphs
 
-**Theorem.** If $r\ge s\ge2$ and $r\ge\max(4,2s^2-8)$, the general position spectrum of $K_{r,s}$ is an interval. This is a partial result for the unrestricted [spectrum conjecture](README.md), allowing the smaller part $s$ to grow arbitrarily.
+**Theorem.** Let $W_s=\max(2s-2,\lfloor s^2/4\rfloor)$. If $r\ge s\ge2$ and $r\ge\max(4,W_s+s-2)$, the general position spectrum of $K_{r,s}$ is an interval. This is a partial result for the unrestricted [spectrum conjecture](README.md), allowing the smaller part $s$ to grow arbitrarily.
 
 ## Redundant profiles of a twin class
 
@@ -20,12 +20,32 @@ To obtain $r+s-2$, orient the arcs of $K_{r,2}$ from at least two large-side sou
 
 To obtain $r+s-1$, orient the whole graph from $s-1$ small-side sources through the large side to one small-side sink. The whole vertex set is not in general position but deleting the sink leaves a general-position set. The value $r+s$ is attained by a one-way bipartite orientation. This proves that the entire interval $[\lceil r/2\rceil+s-2,r+s]$ is covered.
 
-The two ranges cannot leave a gap when
+## Sharpening the witness count
+
+Take an inclusion-minimal set of marked vertices preserving the existence of every ordered two-step passage between distinct points of $Y$. For each marked vertex $x$, choose one passage $y_x\to x\to z_x$ which no other marked vertex witnesses. The selected ordered pairs are distinct. Form a digraph $F$ on $Y$ with one arc $y_x\to z_x$ for each marked vertex. For a fixed $x$, its selected arc crosses from outside its out-neighborhood profile to inside it, but no other selected arc does (by uniqueness of each other witness). Therefore deleting this arc destroys reachability from $y_x$ to $z_x$ in $F$: any alternate directed path would need another crossing. This holds for every arc.
+
+If $F$ has $c$ strong components, its within-component arcs number at most $2(s-c)$. In a component of order $q$, a union of an in-arborescence and an out-arborescence with common root already gives strong connectivity with at most $2q-2$ arcs; an extra arc would not be essential. Between any two strong components there is at most one arc, and no arc can have an alternate directed path through other components. Thus the condensation DAG has no transitive triangle; its underlying triangle-free graph has at most $\lfloor c^2/4\rfloor$ edges by Mantel's theorem. Altogether the number of marked vertices is at most
 ```math
-r-s(s-1)+1\ge \lceil r/2\rceil+s-3,
+2(s-c)+\lfloor c^2/4\rfloor\le W_s,
 ```
-equivalently $\lfloor r/2\rfloor\ge s^2-4$. This proves the theorem.
+where the last inequality follows by maximizing the convex quadratic before rounding at $c=1,s$. If no markings are required, one arbitrary vertex is enough. The lower band obtained from the minimum therefore extends up to $r-W_s+1$.
+
+## Sharpening the explicit upper band
+
+For an auxiliary $K_{r,\ell}$, use $\ell\ge2$ nonempty large-side groups $X_i$ and small-side vertices $y_i$. Orient $x\to y_i$ exactly for $x\in X_i$, and $y_j\to x$ for $x\in X_i$, $j\ne i$. Its general position number is
+```math
+\max\bigl(\ell,\max_i |X_i|\bigr).
+```
+In fact, a geodesic of length four between two clones in $X_i$ can pass through any other vertex not in $X_i$: the routes are $x,y_i,x_j,y_j,x'$ for $j\ne i$. Thus a general-position set containing two clones has no other profile or small-side vertex. Otherwise it contains at most one large-side vertex from each group. If it uses both one vertex of $X_i$ and $y_i$, it cannot contain any vertex of another index: for $j\ne i$, the geodesic from $x_i$ to $y_j$ passes through $y_i$, and the geodesic from $x_j$ to $y_i$ passes through $x_i$. Consequently any set with no repeated group has size at most $\ell$. This is attained by the small side alone (its distances between distinct vertices are all two); the largest twin class also gives its stated lower bound.
+
+If $r\ge 2s-1$, for each $2\le\ell\le s$ we can arrange group sizes with any maximum $a$ between $\max(\ell,\lceil r/\ell\rceil)$ and $r-\ell+1$. The score $a$ is attained wholly in the largest large-side group, and adding $s-\ell$ small-side sinks, as before, gives a score of $a+s-\ell$. Thus for each $\ell$ we attain the interval
+```math
+[\,\max(\ell,\lceil r/\ell\rceil)+s-\ell,\quad r+s-2\ell+1\,].
+```
+For $\ell\ge3$ its upper endpoint is at least the lower endpoint minus one of the interval for $\ell-1$, since $r-\ell+1\ge\max(\ell-1,\lceil r/(\ell-1)\rceil)$ when $r\ge2\ell-1$. For $\ell=2$ its top is $r+s-3$, and the three highest values were constructed above. This covers $[\max(s,\lceil r/s\rceil),r+s]$.
+
+Set $r_0=\max(4,W_s+s-2)$. We have $r_0\ge 2s-1$ and $r_0\le s^2$, so the upper band starts at $s$ when $r=r_0$, and the lower band reaches at least $s-1$. Increasing $r$ by one increases the lower-band endpoint by one and increases the upper-band starting point by at most one. The bands therefore leave no gap for every $r\ge r_0$, proving the theorem.
 
 ## Scope and sources
 
-The cyclic two-small-side construction is already in [Theorem 4.28 of the conjecture source](https://arxiv.org/html/2604.15909v1). The source also determines the balanced case $r=s$, and its survey lists the remaining complete bipartite spectra as open. The new part here is the safe-move compression with at most $s(s-1)$ directed two-step witnesses, and its uniform consequence for all sufficiently unbalanced bipartite graphs. This does not determine an explicit formula for the lower endpoint and does not cover every unbalanced pair.
+The cyclic two-small-side construction is already in [Theorem 4.28 of the conjecture source](https://arxiv.org/html/2604.15909v1). The source also determines the balanced case $r=s$, and its survey lists the remaining complete bipartite spectra as open. The new ingredients are the safe-move compression by directed two-step witnesses, its quadratic bound by an essential-arc digraph, and the interval of explicit singleton-profile orientations. This does not determine an explicit formula for the lower endpoint and does not cover every unbalanced pair.
