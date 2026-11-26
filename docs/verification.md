@@ -1,5 +1,9 @@
 # Verification
 
+## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
+
+Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md).
+
 ## Asgarli–Ghioca–Yip blocking-pencil problem
 
 Run `python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py` for 266,184 shift sets over eight fields, 367 regular seed instances, 8,577 graph–line intersections and both squarefree quartic twists without rational roots over the field of order three. A second researcher checked the general proofs and the order-32 hyperplane computation. [Proof](../results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Independent review and source audit](../results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
