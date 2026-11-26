@@ -151,6 +151,10 @@ modules=(
   Conjectures.CyrusianKaplanBaselineIncrements
   Conjectures.CyrusianKaplanGrowthCheckpoint
   Conjectures.CyrusianKaplanArrangementCheckpoint
+  Conjectures.CyrusianKaplanPolyhedronVertices
+  Conjectures.CyrusianKaplanRationalPolytopeCheckpoint
+  Conjectures.CyrusianKaplanRationalSignPolytope
+  Conjectures.CyrusianKaplanRationalVertices
   Conjectures.CyrusianKaplanCompactStrata
   Conjectures.CyrusianKaplanHyperplaneLattice
   Conjectures.CyrusianKaplanIntegerLattice
