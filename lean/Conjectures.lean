@@ -1397,6 +1397,8 @@ import Conjectures.CKZUpstream.D5.S1.Words.Patterns.DerangementRatioNonconvergen
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.ActualCardinality
 import Conjectures.SeparableDerangementDisplacement
 import Conjectures.SeparableDerangementDiagonalCounts
+import Conjectures.SeparableDerangementTreeDiagonals
+import Conjectures.SeparableDerangementSpineRecords
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CappedExploration
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CutFactorization
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.EndpointHistoryKernel

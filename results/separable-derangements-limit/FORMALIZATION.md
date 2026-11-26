@@ -23,11 +23,24 @@ identities used to study diagonals of the finite permutations.
   of the child point counts on their shifted diagonals. In a skew sum,
   at most one shifted child count can be positive.
 
-The full limit, the spine and probability arguments, and the
-convergence of fixed-diagonal counts remain outside this checked scope.
+- [Alternating trees](../../lean/Conjectures/SeparableDerangementTreeDiagonals.lean).
+  Lean builds the permutation of an ordered Schröder tree by
+  alternating direct and skew sums. Two distinct positions with
+  equal displacement have a direct-sum lowest common ancestor.
+- [Finite spine records](../../lean/Conjectures/SeparableDerangementSpineRecords.lean).
+  There are finitely many trees of each leaf count. Fixing the selected
+  child and the side shapes at each of finitely many steps leaves the
+  terminal subtree free. Once its leaf count exceeds the total on the
+  sides, Lean verifies the largest-child selection rule and constructs
+  the exact bijection with terminal trees of the remaining size.
+  This gives the numerator of the record probability.
 
-The pinned Lean 4.35.0 gate rebuilt both project modules with warnings
+The tree-to-avoider bijection, asymptotic normalization, and
+limiting hit probabilities remain outside this checked scope.
+
+The pinned Lean 4.35.0 gate rebuilt the four-module closure with warnings
 as errors, audited every declaration owned by the closure, and
 independently replayed their objects with the stock kernel.
-[Verification receipt](verification/diagonal-counts/receipt.json) ·
+[Diagonal-count receipt](verification/diagonal-counts/receipt.json) ·
+[Spine-record receipt](verification/spine-records/receipt.json) ·
 [Tracking issue #732](https://github.com/1337isnot1337/solved-conjectures/issues/732).
