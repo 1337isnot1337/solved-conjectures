@@ -62,27 +62,29 @@ theorem pathRow_eval {N : ℕ} (x : Fin N → K) (k : ℕ) (b : Fin N) :
       Matrix.vecMul_vecMulVec, Pi.smul_apply]
     simp [pathRowPolynomial, dotProduct, r, ih, Polynomial.eval_finsetSum]
 
-/-- At `q = 1`, the first `N` path rows are independent whenever the
-`N` color variables are distinct. -/
-theorem pathRows_linearIndependent {N : ℕ} (x : Fin N → K) (hx : Function.Injective x) :
-    LinearIndependent K (fun k : Fin N => (1 : Fin N → K) ᵥ* (colorMatrix x 1 pathEdge) ^ k.val) := by
+/-- Evaluation of polynomials with strictly increasing degrees at distinct
+points preserves independence in the square Vandermonde range. -/
+theorem polynomialEvaluations_linearIndependent {N : ℕ} (x : Fin N → K)
+    (hx : Function.Injective x) (P : Fin N → K[X])
+    (hdegree : ∀ i, (P i).natDegree ≤ i.val) (hcoeff : ∀ i, (P i).coeff i.val ≠ 0) :
+    LinearIndependent K (fun i b => (P i).eval (x b)) := by
   classical
   rw [Fintype.linearIndependent_iff]
   intro w hw i₀
   by_contra hi₀
-  let P : K[X] := ∑ i : Fin N, C (w i) * pathRowPolynomial x i
-  have hP (b : Fin N) : P.eval (x b) = 0 := by
+  let Q : K[X] := ∑ i : Fin N, C (w i) * P i
+  have hP (b : Fin N) : Q.eval (x b) = 0 := by
     have hb := congrFun hw b
-    simpa only [P, Polynomial.eval_finsetSum, Polynomial.eval_mul, Polynomial.eval_C,
-      Finset.sum_apply, Pi.smul_apply, Pi.zero_apply, smul_eq_mul, pathRow_eval] using hb
-  have hdegree : P.natDegree ≤ N - 1 := by
+    simpa only [Q, Polynomial.eval_finsetSum, Polynomial.eval_mul, Polynomial.eval_C,
+      Finset.sum_apply, Pi.smul_apply, Pi.zero_apply, smul_eq_mul] using hb
+  have hQdegree : Q.natDegree ≤ N - 1 := by
     apply Polynomial.natDegree_sum_le_of_forall_le
     intro i _
     have hi := i.isLt
     have hconst : (C (w i)).natDegree ≤ 0 := by simp
-    exact (Polynomial.natDegree_mul_le_of_le hconst (pathRowPolynomial_natDegree x i)).trans
+    exact (Polynomial.natDegree_mul_le_of_le hconst (hdegree i)).trans
       (by omega)
-  have hzero : P = 0 := Polynomial.eq_zero_of_natDegree_lt_card_of_eval_eq_zero P hx hP (by
+  have hzero : Q = 0 := Polynomial.eq_zero_of_natDegree_lt_card_of_eval_eq_zero Q hx hP (by
     rw [Fintype.card_fin]
     have hi := i₀.isLt
     omega)
@@ -90,18 +92,30 @@ theorem pathRows_linearIndependent {N : ℕ} (x : Fin N → K) (hx : Function.In
   obtain ⟨i, hi, hmax⟩ := Finset.exists_max_image s Fin.val ⟨i₀, by simp [s, hi₀]⟩
   have hwi : w i ≠ 0 := (Finset.mem_filter.mp hi).2
   have hc := congrArg (fun p : K[X] => p.coeff i.val) hzero
-  simp only [P, Polynomial.finsetSum_coeff, Polynomial.coeff_C_mul, Polynomial.coeff_zero] at hc
+  simp only [Q, Polynomial.finsetSum_coeff, Polynomial.coeff_C_mul, Polynomial.coeff_zero] at hc
   rw [Finset.sum_eq_single i] at hc
-  · rw [pathRowPolynomial_coeff] at hc
-    exact (mul_ne_zero hwi (pow_ne_zero _ (neg_ne_zero.mpr one_ne_zero))) hc
+  · exact (mul_ne_zero hwi (hcoeff i)) hc
   · intro j _ hj
     by_cases hwj : w j = 0
     · rw [hwj, zero_mul]
     · have hji := hmax j (by simp [s, hwj])
       have hlt : j.val < i.val := lt_of_le_of_ne hji (fun h => hj (Fin.ext h))
       rw [Polynomial.coeff_eq_zero_of_natDegree_lt
-        ((pathRowPolynomial_natDegree x j).trans_lt hlt), mul_zero]
+        ((hdegree j).trans_lt hlt), mul_zero]
   · simp
+
+
+/-- At `q = 1`, the first `N` path rows are independent whenever the
+`N` color variables are distinct. -/
+theorem pathRows_linearIndependent {N : ℕ} (x : Fin N → K) (hx : Function.Injective x) :
+    LinearIndependent K (fun k : Fin N => (1 : Fin N → K) ᵥ* (colorMatrix x 1 pathEdge) ^ k.val) := by
+  have hrow (k : Fin N) : (1 : Fin N → K) ᵥ* (colorMatrix x 1 pathEdge) ^ k.val =
+      fun b => (pathRowPolynomial x k).eval (x b) := funext (pathRow_eval x k)
+  simp_rw [hrow]
+  apply polynomialEvaluations_linearIndependent x hx _ (fun i => pathRowPolynomial_natDegree x i)
+  intro i
+  rw [pathRowPolynomial_coeff]
+  exact pow_ne_zero _ (neg_ne_zero.mpr one_ne_zero)
 
 end
 
