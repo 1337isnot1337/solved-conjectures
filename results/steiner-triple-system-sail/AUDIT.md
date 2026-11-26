@@ -15,6 +15,10 @@ The terminology searched included sail, fan, 3-fan, configuration C15, Ramsey co
 
 The older configuration-coloring literature uses the notation $\chi(C,T)$ for the number of block colors needed to avoid a configuration. Grannell and Griggs survey this viewpoint. The disjoint-pair problem in §3 of the 2017 manuscript was already answered under the name *2-parallel chromatic index* by Danziger, Grannell, Griggs and Rosa in 1998. This earlier theorem concerns two disjoint blocks. Its condition permits a sail, whose blocks all intersect, in a single color. Searching the older terminology produced no corresponding sail-coloring result. [Configuration-coloring survey, §5](https://grannell.net/Papers/CONFIGS.pdf) · [Danziger et al., 1998](https://grannell.net/Papers/TWOPAR.pdf).
 
+## Independent mathematical review
+
+A second researcher compared the theorem with Gyárfás’s Question 2.8, independently rederived the spoke identity, the opposite-block parity contradiction, the charging bound and the final inequality. They also checked the count of the seven point roles in a sail and the linear vertex-disjoint packing. They reran the complete verifier. [Review and test receipt](https://github.com/1337isnot1337/solved-conjectures/issues/813#issuecomment-7191264504) · [Reviewed proof version](https://github.com/1337isnot1337/solved-conjectures/blob/2182a98ab56502e3e100ef966655acc4981071bd/results/steiner-triple-system-sail/PROOF.md).
+
 ## Reproduction
 
 Run `python3 results/steiner-triple-system-sail/verify.py`. The script reconstructs the block covering every pair of points. It counts the four spoke patterns directly, tests the exact imbalance identity, and checks both bounds for the product of the two block counts. It enumerates all 4,224 block colorings of the systems of orders seven and nine. Across those colorings it also verifies all 24,576 disjoint opposite-color block pairs individually. Seven colorings each of a cyclic Bose system of order 87 and a binary projective system of order 127 test the result above its sufficient threshold. The result for all systems follows from the counting proof. [Verifier](verify.py) · [Proof](PROOF.md).
