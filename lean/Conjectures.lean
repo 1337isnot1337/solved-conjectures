@@ -1510,3 +1510,4 @@ import Conjectures.KauersKoutschanSchurMoment
 import Conjectures.KauersKoutschanTraceProducts
 import Conjectures.KauersKoutschanColumnSeries
 import Conjectures.KauersKoutschanConjecture
+import Conjectures.KauersKoutschanSupplement

@@ -18,7 +18,7 @@ python verify.py
 Lean proves Conjecture 10 for the actual A189281 permutation count at
 every index, including the empty permutation. It verifies the full
 coefficient extraction and equality with the exact finite sum. The
-order-thirteen supplement has a checked symbolic certificate.
+alternate order-thirteen recurrence is also proved for every index.
 [Lean scope and receipts](FORMALIZATION.md).
 
 ## Prior work

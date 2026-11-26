@@ -143,6 +143,13 @@ Lean verifies the cardinality steps and the conjugate-cycle equations
 in aadrianvv’s written contribution. The result is partially formalized.
 [Scope and receipts](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the order-thirteen recurrence for A189281
+
+Lean proves that the alternate operator annihilates the actual
+permutation count at every natural index. Its polynomial parity
+certificates and four initial indices all transfer to the count.
+[Scope and combined receipt](results/kauers-koutschan-recurrence/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Kauers–Koutschan Conjecture 10 in full
 
 Lean identifies the exact forbidden-rise count with the sixteen-mask
