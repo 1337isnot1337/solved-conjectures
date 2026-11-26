@@ -1,11 +1,13 @@
 # Welton–Khudairi–Tuite lower general position product conjecture
 
-**Status: partial.** This note proves the bound whenever its right-hand side is at most four. More generally, for all finite connected graphs,
+**Conjecture disproved.** The [full counterexample family](COUNTEREXAMPLES.md) shows an unbounded gap. The remainder of this file preserves the earlier, compatible partial lower bound rather than claiming it as the resolution.
+
+**Earlier milestone.** This note proves the bound whenever its right-hand side is at most four. More generally, for all finite connected graphs,
 $$
  \operatorname{gp}^-(G\square H)\ge
  \min\{4,\operatorname{gp}^-(G),\operatorname{gp}^-(H)\}.
 $$
-It also gives an unrestricted criterion when a small maximal set has a suitable projection. It does not prove Conjecture 2.10 in full.
+It also gives an unrestricted criterion when a small maximal set has a suitable projection. This lower bound remains compatible with the full disproof.
 
 The primary source is [Welton–Khudairi–Tuite, *Lower General Position in Cartesian Products*, Conjecture 2.10](https://arxiv.org/html/2404.19451#S2). [The survey](https://arxiv.org/abs/2501.19385) repeats it as Conjecture 5.14. The original paper reports tests through factor order six; the argument here holds at all factor orders and is independent of those computations.
 
