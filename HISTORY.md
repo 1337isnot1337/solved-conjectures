@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Wang–Yang's Fuss–Narayana conjecture
+
+A product determinant and two triangular positivity criteria prove Wang and Yang's 2018 Conjecture 4.1 for every Fuss parameter. [Proof](results/wang-yang-fuss-narayana/proof.md) · [Source audit](results/wang-yang-fuss-narayana/sources.md) · [Issue 98](https://github.com/1337isnot1337/solved-conjectures/issues/98)
+
 ## 2026-11-26 — Gyárfás’s planar degree-repetition problem
 
 Gyárfás asked whether a real planar point set can have every point degree repeated at most twice. Rational coordinates now give such a set at every order at least 16 and yield asymptotically three quarters as many distinct degrees as points. [Proof](results/gyarfas-planar-degree-repetition/PROOF.md) · [Source and independent review](results/gyarfas-planar-degree-repetition/AUDIT.md).

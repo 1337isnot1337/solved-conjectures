@@ -1,5 +1,9 @@
 # Verification
 
+## Wang–Yang's Fuss–Narayana conjecture
+
+Run `python3 results/wang-yang-fuss-narayana/check.py`. The verifier checks all 82,344 minors of the six leading order-seven matrices at four parameters and 3,168 identities against the published entries. The [proof](../results/wang-yang-fuss-narayana/proof.md) covers arbitrary minors and integer parameters at least two.
+
 ## Gyárfás’s planar degree-repetition problem
 
 The proof counts secants by their intercepts for every order at least 16. Run `python3 results/gyarfas-planar-degree-repetition/verify.py` to count actual incident lines at 116 sample orders using normalized integer line equations. A separate researcher checked the proof and independently enumerated the orders 16 through 160. [Proof](../results/gyarfas-planar-degree-repetition/PROOF.md) · [Review and search record](../results/gyarfas-planar-degree-repetition/AUDIT.md).

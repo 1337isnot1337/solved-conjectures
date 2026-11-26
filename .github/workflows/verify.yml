@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Count the incident lines in the Gyárfás planar construction
         run: python3 results/gyarfas-planar-degree-repetition/verify.py
+      - name: Check all six Fuss–Narayana matrices
+        run: python3 results/wang-yang-fuss-narayana/check.py
       - name: Check the permutation-pattern interval rank dip
         run: python3 results/mcnamara-steingrimsson-rank-unimodality/verify.py
       - name: Certify the two stable Waring-gap symmetry defects
