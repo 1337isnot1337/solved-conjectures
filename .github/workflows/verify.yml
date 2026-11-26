@@ -34,6 +34,10 @@ jobs:
           python3 results/byrne-tait-odd-sidon/verify.py
           python3 results/blitvic-kammoun-steingrimsson-packing-cutoff/check.py
           python3 results/erdos-85-four-cycle-threshold/check_affine_paths.py
+      - name: Check the big-descent Schur expansion
+        run: |
+          python3 results/erz-big-descent-schurverify.py
+          python3 results/erz-big-descent-schurcheck_review.py
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample
