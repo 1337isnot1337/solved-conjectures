@@ -1,6 +1,6 @@
 # Restrictions on general position number two in complete bipartite graphs
 
-**Theorem.** If $r\ge s\ge2$ and $r\ge s+3$, then no orientation of $K_{r,s}$ has general position number two. In fact if $s\ge6$, number two is possible exactly when $r\le s+1$. Together with the [imbalance band](BIPARTITE.md), this proves the interval conjecture for every $K_{s+3,s}$, in addition to the cases of imbalance one and two. It is still a partial result for general graphs.
+**Theorem.** If $r\ge s\ge2$, an orientation of $K_{r,s}$ has general position number two exactly when $r\le s+1$ or $(r,s)=(4,2)$. Together with the [imbalance band](BIPARTITE.md), this proves the interval conjecture for every $K_{s+3,s}$, in addition to the cases of imbalance one and two. It is still a partial result for general graphs.
 
 Write $X$ for the side of size $r$ and call $P_x\subseteq Y$ the set of out-neighbors of $x\in X$. On $X$ use the directed distance $\delta$ equal to half the ordinary directed distance; all finite distances between distinct $X$ vertices have even ordinary length. A triple in $X$ is collinear exactly when it satisfies a finite directed distance equality in $\delta$ in some order.
 
@@ -18,7 +18,7 @@ Assume from now on that the orientation has general position number two. The wid
 
 Let $d$ be the largest finite $\delta$ distance between distinct $X$ vertices; if there are no such distances then all of $X$ is in general position. We always have $d\le s$, because any directed path of ordinary length $2d$ alternating between the parts uses $d$ distinct vertices of $Y$.
 
-If $d\le2$, three strictly nested profiles form a general-position triple: two downward moves cannot give a tight sum, and any upward move has length at least two, so cannot be part of a tight sum of length at most two. The profile poset has width and height at most two, hence at most four distinct profiles (put them in their height layers). With the doubled-profile bound this gives $r\le5$.
+If $d\le2$, three strictly nested profiles form a general-position triple: two downward moves cannot give a tight sum, and any upward move has length at least two, so cannot be part of a tight sum of length at most two. The profile poset has width and height at most two, hence at most four distinct profiles (put them in their height layers). If a class is doubled, all other classes are incomparable to it and must form a chain (two incomparable others would give an antichain of size three). That chain has size at most two. Two doubled classes were already seen to allow at most four vertices total. Thus $r\le4$ also allowing multiplicities.
 
 Otherwise fix endpoints $u,v$ of a directed geodesic with $\delta(u,v)=d\ge3$. Their profiles are distinct (twins have finite distance at most two), so $\delta(v,u)=1$. Every other $X$ vertex lies on a shortest $u$–$v$ path: its triple with $u,v$ has to be collinear; extending through $u$ or $v$ gives a distance larger than $d$, and being internal in the reverse direction is impossible at distance one. Partition $X$ into layers $L_i$ of vertices with $\delta(u,x)=i$, $\delta(x,v)=d-i$. The endpoint layers are singletons.
 
@@ -26,19 +26,11 @@ Within an interior layer, two distinct profiles must be comparable, since a dist
 ```math
 \delta(x,y)=\delta(x,u)+i=d-i+\delta(v,y).
 ```
-For $i\ge2$ the term $\delta(x,u)$ is one unless $x$ is a twin of $u$, in which case $i=2$ and the term is two. For $d-i\ge2$ the analogous statement holds for $\delta(v,y)$. These statements follow from comparability or incomparability and the finite twin distance. If a layer has a common finite upward distance at least two for all its pairs, it has at most two vertices: a two-step distance sum in any triple is not tight (downward–downward shortcuts, and any upward term plus another positive term exceeds the larger of the two possible distances).
+### The monotonicity shortcut
 
-### Bounds on layer sizes
+In fact, for **every** interior vertex $x$ we have $\delta(x,u)=\delta(v,x)=1$. Otherwise $\delta(x,u)>1$ or is infinite, so $P_x\subseteq P_u$. Take an $X$-successor $z$ of $x$ on a shortest $u$–$v$ path through it, in layer $i+1$. Since $i+1\ge2$, also $P_u\subseteq P_z$. This implies $P_x\subseteq P_z$, contradicting the forward step $\delta(x,z)=1$. The other equality follows by taking an $X$-predecessor $w$: if $\delta(v,x)>1$ or is infinite then $P_v\subseteq P_x$, while $\delta(w,v)=d-i+1\ge2$ gives $P_w\subseteq P_v$, contradicting $\delta(w,x)=1$.
 
-If $d\ge5$ there is no repeat in layer one. A pair $x<y$ in that layer would have $\delta(v,y)=1$ and so $\delta(x,u)=d-1$. Follow a shortest $u$–$v$ path through $x$ to a vertex $z$ of layer three. We have $\delta(x,z)=2$ and $\delta(z,u)=1$ since $\delta(u,z)=3$ and $z$ cannot be a twin of $u$. This gives $\delta(x,u)\le3<d-1$. Reversing all arcs gives the same result for layer $d-1$.
-
-For $d\ge6$, a pair in layer two cannot exist: its upward distance would be $d-1\ge5$ by the $v$ formula, but at most four by the $u$ formula. The reverse argument handles layer $d-2$. In all remaining interior layers both auxiliary distances are one, so a repeated layer can only be at $i=d/2$, with common upward distance $i+1$ and at most two vertices. This gives $r\le d+2$ for $d\ge6$.
-
-For $d=5$, a repeat in layer two forces its smaller profile to be a twin of $u$, and the upward distance in any such pair is four. A repeat in layer three forces a twin of $v$. There cannot be both, since $u,v$ have distinct profiles and at most one profile is doubled for $r\ge5$. Both these layers have size at most two. Hence $r\le7$.
-
-For $d=4$, a repeat in layer one forces its smaller profile $x$ to satisfy $\delta(x,u)=3$. Along any $u$–$v$ geodesic through $x$, its layer-two successor must be a twin of $u$; otherwise that successor has distance one back to $u$, giving $\delta(x,u)\le2$. A repeat in layer three analogously forces a twin of $v$. At most one of layers one and three can repeat, and each has common upward distance four when it repeats. In layer two, upward distance four in an ordered pair requires its smaller vertex to be a twin of $u$ and its larger one a twin of $v$, by the two formulas. This cannot happen for $r\ge5$, because only one profile can be doubled. Thus layer two has only upward distance three when it has a pair, and also has size at most two. Therefore $r\le7$.
-
-For $d=3$, in layer one a pair has upward distance $2+\delta(v,y)$, which must equal three since it cannot exceed $d$. The reverse argument gives the same conclusion in layer two. Both layers have size at most two, so $r\le6$.
+Consequently a layer with at least two vertices must be at $i=d/2$, and every upward distance within it is $i+1$. That layer has at most two vertices: in a strict three-element chain with constant upward distance $i+1$ and downward distance one, two downward steps shortcut, and any upward step plus another positive step exceeds both possible direct distances. Three such vertices would therefore be in general position. We have proved $r\le d+2$, with the possible extra vertex only in the middle layer for even $d$.
 
 ### Saturation on the small side
 
@@ -46,6 +38,8 @@ If $d=s\ge3$, every $u$–$v$ geodesic uses every vertex of $Y$. List them as $y
 
 ## Conclusion
 
-For $s\ge6$, if $d\ge6$ then either $d=s$ and $r\le s+1$, or $d<s$ and $r\le d+2\le s+1$. If $d\le5$ then $r\le7\le s+1$. Conversely $K_{r,s}$ is traceable for $r\le s+1$, and the Hamilton-geodesic orientation gives number two.
+For $s\ge3$, if $d\le2$ we have $r\le4\le s+1$. If $d\ge3$ with $d<s$, the general layer bound gives $r\le d+2\le s+1$, while if $d=s$, saturation gives $r\le s+1$ directly. Conversely $K_{r,s}$ is traceable for $s\le r\le s+1$, and its Hamilton-geodesic orientation gives number two.
 
-For $s=2,3,4,5$ and $r\ge s+3$, apply $d=s$ saturation if $d=s\ge3$, and the bounds $r\le5,6,7$ for $d\le2,d=3,d\in\{4,5\}$ respectively in the other cases. For $s=2$, use instead the exact elementary $\lceil r/2\rceil$ lower bound in Theorem 4.28 of the [source](https://arxiv.org/html/2604.15909v1). In every case $r\ge s+3$ is impossible at value two. The imbalance-three band begins at four, and the only possible value below it is now three. Thus this entire family has the interval property.
+For $s=2$, [Theorem 4.28 of the source](https://arxiv.org/html/2604.15909v1) gives the lower bound $\lceil r/2\rceil$ when $r\ge4$. The exceptional $K_{4,2}$ reaches two by taking two clones on each of the two large-side positions of a directed four-cycle, as in the explicit upper-band construction. This completes the classification.
+
+The imbalance-three band begins at four; now the only possible value below it is three. Thus the entire family $K_{s+3,s}$ has the interval property.
