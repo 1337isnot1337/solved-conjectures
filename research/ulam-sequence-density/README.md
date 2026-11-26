@@ -24,6 +24,9 @@ At [record-low scales](record-lows.md), a bounded ratio of multiply
 represented integers to Ulam terms would give positive lower density.
 The exact count through 16,777,216 rules out the proposed constant 10
 at integer records.
+The [large-summand argument](large-summands.md) gives an elementary
+quantitative lower bound at a record low in terms of crowded targets
+whose representations all avoid a fixed prefix.
 
 ## Uniform upper bound
 

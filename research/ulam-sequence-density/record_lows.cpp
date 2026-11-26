@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <array>
 #include <bit>
 #include <cstdint>
 #include <iostream>
@@ -114,6 +115,73 @@ void report_phase_occupancy(const Words& bits) {
     }
 }
 
+void report_large_summands(const Words& bits, const Words& counts) {
+    constexpr int limit = 1'722'075, largest_cut = 4096;
+    std::vector<int> terms;
+    for (int n = 1; n <= limit; ++n) {
+        if (bits[n]) {
+            terms.push_back(n);
+        }
+    }
+    std::vector<int> least(limit + 1, largest_cut + 1);
+    for (auto a = terms.begin(); a != terms.end() && *a <= largest_cut; ++a) {
+        for (auto b = a + 1; b != terms.end() && *b <= limit - *a; ++b) {
+            int sum = *a + *b;
+            if (least[sum] > *a) {
+                least[sum] = *a;
+            }
+        }
+    }
+    constexpr std::array cuts{69, 256, 1024, largest_cut};
+    constexpr std::size_t cut_256 = 1;
+    static_assert(cuts[cut_256] == 256);
+    std::array<int, cuts.size()> without_small{}, unique_without_small{};
+    int first = 0;
+    std::int64_t accepted = 2, low_count = 1, low_scale = 1;
+    std::int64_t most_uncovered = 0, most_count = 1, most_scale = 1;
+    for (int n = 3; n <= limit; ++n) {
+        accepted += bits[n];
+        for (std::size_t i = 0; i < cuts.size(); ++i) {
+            if (least[n] > cuts[i]) {
+                without_small[i] += counts[n] >= 2;
+                unique_without_small[i] += counts[n] == 1;
+            }
+        }
+        if (accepted * low_scale < low_count * n) {
+            low_count = accepted;
+            low_scale = n;
+            if (without_small[cut_256] * most_count > most_uncovered * accepted) {
+                most_uncovered = without_small[cut_256];
+                most_count = accepted;
+                most_scale = n;
+            }
+        }
+        if (counts[n] >= 2 && least[n] > largest_cut && first == 0) {
+            first = n;
+            std::cout << "First crowded target without summand through 4096: " << n;
+            for (int a : terms) {
+                if (2 * a >= n) {
+                    break;
+                }
+                if (bits[n - a]) {
+                    std::cout << ' ' << a << '+' << n - a;
+                }
+            }
+            std::cout << '\n';
+        }
+        if (n == 65'536 || n == 262'144 || n == 582'954 || n == 1'048'576 || n == limit) {
+            std::cout << "Through " << n << ", without small summands (crowded, unique):";
+            for (std::size_t i = 0; i < cuts.size(); ++i) {
+                std::cout << ' ' << cuts[i] << "=(" << without_small[i] << ','
+                          << unique_without_small[i] << ')';
+            }
+            std::cout << '\n';
+        }
+    }
+    std::cout << "Largest R_256/A at integer records through " << limit << ": "
+              << most_uncovered << '/' << most_count << " at " << most_scale << ".\n";
+}
+
 int main() {
     constexpr int limit = 1 << 24;
     Words bits(limit + 1), counts(limit + 1);
@@ -164,4 +232,6 @@ int main() {
               << ". Largest H/A at such records: " << record_h << '/' << record_a
               << " at " << record_n << ".\n";
     report_phase_occupancy(bits);
+    report_large_summands(bits, counts);
+    return 0;
 }
