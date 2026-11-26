@@ -552,6 +552,8 @@ The [Brown–Mol disproof](../results/brown-mol/PROOF.md) establishes an infinit
 
 The [Kovalev disproof](../results/kovalev-hardy-duality/PROOF.md) uses a supporting functional and analytic expectation bounds for every matrix order in its counterfamily. Its two independently written checkers verify the fixed rational comparisons in the proof, including the positive gap above the conjectured constant. They do not approximate Gaussian integrals or perform a finite-dimensional matrix search.
 
+Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Lean scope and receipt](../results/kovalev-hardy-duality/FORMALIZATION.md).
+
 ```bash
 python3 results/brown-mol/check.py
 python3 results/kovalev-hardy-duality/verify.py

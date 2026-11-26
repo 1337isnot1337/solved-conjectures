@@ -56,7 +56,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **44.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **124.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | **44.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **124.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | **44.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **124.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
-| **44.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **124.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
+| **44.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | 🟡 | **124.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
 | **44.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **128.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | **44.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **128.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **44.** [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ | **128.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |

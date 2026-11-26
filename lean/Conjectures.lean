@@ -1,3 +1,5 @@
+import Conjectures.KovalevHardySeparation
+import Conjectures.KovalevRationalCertificate
 import Conjectures.DukesRevstackAlternation
 import Conjectures.DukesRevstackDegree
 import Conjectures.DukesRevstackEnumeration
