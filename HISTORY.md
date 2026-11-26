@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Verify the bounded array law for Pomerance–Sárközy’s process
+
+Lean verifies the weak Gaussian limit for independently sampled centered
+bounded rows with a convergent normalized variance, including the zero
+variance case. [Proof scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify finite spine-record counts for separable derangements
 
 Lean checks that same-diagonal points first split at a direct-sum

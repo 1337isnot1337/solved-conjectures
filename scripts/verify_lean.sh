@@ -133,6 +133,10 @@ modules=(
   Conjectures.PomeranceSarkozyPoissonDifferenceChar
   Conjectures.PomeranceSarkozyBernoulliArray
   Conjectures.PomeranceSarkozyProcessKernelTools
+  Conjectures.PomeranceSarkozyBoundedArray
+  Conjectures.PomeranceSarkozyBoundedCharacteristic
+  Conjectures.PomeranceSarkozyBoundedGaussianError
+  Conjectures.PomeranceSarkozyIndependentArrayLaw
   Conjectures.PomeranceSarkozyShiftedTailCross
   Conjectures.PomeranceSarkozyWeakAbsoluteMoment
   Conjectures.PomeranceSarkozyWeakPositivePart

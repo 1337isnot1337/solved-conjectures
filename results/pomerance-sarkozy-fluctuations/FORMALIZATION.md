@@ -148,3 +148,16 @@ convergence of the arithmetic process, tightness, or the Brownian
 corollary.
 
 [Shifted tail and positive-part replay](verification/shifted-tail-tools/receipt.json)
+
+## Bounded independent array limit
+
+For the [process supplement](PROCESS.md), Lean checks a weak Gaussian
+limit for genuinely independent bounded centered sums in varying sample
+spaces when their normalized variance converges. The limit may be
+degenerate. The proof verifies the variance-weighted Fourier error,
+the product approximation and the characteristic-function criterion.
+This is the array limit needed for linear combinations of endpoint
+variables. It does not yet verify the model's joint path law or its
+arithmetic transfer.
+
+[Bounded independent array replay](verification/bounded-array-law/receipt.json)
