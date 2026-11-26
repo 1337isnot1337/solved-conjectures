@@ -156,3 +156,5 @@ The reduction applies to arbitrary entries in $`\mathbb Z_p`$ and supplies a cri
 The accompanying exact-arithmetic check tests the trace-pairing planes, the phase identities, and the regular-sector character identity at finite levels. Run it with `python3 research/padic-sl2-uniform-gap/check_transfer.py`. The all-level argument is the written proof above. [Verification script](check_transfer.py)
 
 On the resulting projective ball, two bounded words in any generating triple give an exact formula for their primitive Fourier overlaps at every level and every nonzero power of the second word. A sequence of new unit vectors with vanishing energy must distribute its cycle Fourier mass over at least square-root scale. [Fourier formula, proof and scope](CYCLIC-FOURIER.md)
+
+For an arbitrary marking, a short word of depth $`d`$ gives a direct energy comparison from exact conductor $`d+b`$ to conductor $`b`$ when $`3\le b\le d`$. On a full neighborhood of an explicit arithmetic marking, three fixed relations identify the first digit where a triple departs from its arithmetic conjugacy class. [Short-word bound and explicit coordinates](SHORT-RELATIONS.md)
