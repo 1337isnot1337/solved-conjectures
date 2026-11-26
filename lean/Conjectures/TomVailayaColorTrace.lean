@@ -60,7 +60,8 @@ def closeEdges {n : ℕ} (edge : E → Fin (n + 2) × Fin (n + 2)) :
     E → Fin (n + 1) × Fin (n + 1) :=
   fun e => (closeVertex n (edge e).1, closeVertex n (edge e).2)
 
-private def tailWeight {n : ℕ} (x : C → R) (q : R)
+/-- The coloring weight with the variable at the initial vertex omitted. -/
+def tailWeight {n : ℕ} (x : C → R) (q : R)
     (edge : E → Fin (n + 2) × Fin (n + 2)) (c : Fin (n + 2) → C) : R :=
   (∏ v : Fin (n + 1), x (c v.succ)) * arcWeight q edge c
 
