@@ -2,7 +2,7 @@
 
 **Theorem.** Deciding whether an undirected graph admits an orientation with general position number two is NP-complete. This remains true for planar bipartite graphs with exactly two vertices of degree one and every other vertex of degree three.
 
-This proves Conjecture 5.3 of [U. Chandran, Di Stefano, Erskine, Haritha, Thomas and Tuite, *The general position number of digraphs*](https://arxiv.org/html/2604.15909v1#S5.Thmconjecture3).
+This proves Conjecture 5.3 of [U. Chandran, Di Stefano, Erskine, Haritha, Thomas and Tuite, *The general position number of digraphs*](https://arxiv.org/html/2604.15909v1#S5.Thmtheorem3).
 
 ## Two extreme vertices force a spanning geodesic
 
