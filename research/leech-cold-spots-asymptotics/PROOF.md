@@ -77,10 +77,18 @@ Thus \(E_8^3\) has total excess \(<0.33\). Four or more components have excess \
 \]
 In contrast, \(M_{A_{24}}=25\). In each \(E_8\) component the labels are not constant, so the sum of its vertex vectors is not zero (the only dependence is proportional to the label vector). The three components are orthogonal, so \(X_c\) at an \(E_8^3\) hole is unbalanced. Thus \(\nabla F_c(0)\ne0\), and \(y_c\ne0\). The local expansion gives a nonzero displacement from \(c\) for every sufficiently large \(\alpha\). This also supplies a separate proof that the Leech lattice has no stable cold spot.
 
+## The second-smallest coefficient
+
+The coefficient for $`D_{24}`$ is $`23\cdot 4^{1/23}`$. It lies strictly between 24.42892 and 24.42893 by the integer bounds
+
+```math
+2442892^{23} < 4(23\cdot 10^5)^{23} < 2442893^{23}.
+```
+
+To see why this puts $`D_{24}`$ second, subtract 24 and compare excesses. The only other single-component type is $`A_{24}`$, with excess 1. Among the types with several components, only $`E_8^3`$ and $`D_{16}E_8`$ contain $`E_8`$. The latter has excess greater than $`0.38+0.10=0.48`$. Every remaining type has at least two components of excess greater than 0.27, for a total greater than 0.54. These bounds all exceed the $`D_{24}`$ excess. The list of types is given in [Bachoc et al., Table 3](https://arxiv.org/html/2502.08819v2#S5.T3).
+
+From this directory, run `python3 verify.py` to reproduce the comparison. The [verifier](verify.py) bounds each component by integer bisection, sums the bounds for all 23 types, and checks that the $`E_8^3`$ and $`D_{24}`$ intervals are separated from one another and from the other 21. It also checks the seven-decimal rounding for $`E_8^3`$ and the displayed bounds for $`D_{24}`$.
+
 ## Scope and attribution
 
 The deep-hole classification and diagrams are classical. The exact-point comparisons of Bachoc et al. remain valid as comparisons of values at fixed points. The distinction here is optimizing inside neighborhoods on the scale \(1/\alpha\); this changes the leading coefficient and the limiting type. No correction notice or earlier calculation of this optimized limiting type was found in searches by title, authors, and the \(E_8^3\) type. The conclusion is a correction to the published asymptotic location, not a claim that its no-stability conclusion is false.
-
-The optional exact integer certificate [compare-types.py](compare-types.py) enumerates the 23 root-system types transcribed from Table 3 and bounds each coefficient independently by rational interval bisection. Its [output](comparison.txt) also identifies the next smallest type as D24, with coefficient in [24.42892,24.42893]. The rank-excess proof does not rely on this script or on that runner-up claim.
-
-The companion [exact arithmetic comparison](verify.py) independently separates the winning coefficient from each of the other 22 hole-type coefficients with rational intervals. The analytic rank-excess proof above does not depend on this supplementary check.
