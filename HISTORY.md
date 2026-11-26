@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — The lower oriented general position NP-hardness conjecture
+
+Conjecture 5.3 is true. Two leaves force a spanning directed geodesic, yielding an identity reduction from planar bipartite Hamiltonian Path with two leaves and all other vertices cubic. [Proof](results/lower-oriented-general-position-np-hardness/PROOF.md) · [Audit](results/lower-oriented-general-position-np-hardness/AUDIT.md) · [Issue #874](https://github.com/1337isnot1337/solved-conjectures/issues/874).
+
 ## 2026-11-26 — Welton–Khudairi–Tuite lower general position product conjecture
 
 The Cartesian product lower bound is false with an unbounded gap. One factor is complete, the other has diameter two, and the product contains a six-vertex maximal general position set. [Proof](results/welton-khudairi-tuite-lower-gp-product/PROOF.md) · [Audit](results/welton-khudairi-tuite-lower-gp-product/AUDIT.md) · [Issue #854](https://github.com/1337isnot1337/solved-conjectures/issues/854).

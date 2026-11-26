@@ -82,6 +82,7 @@ The [26 November theorem collection](docs/research-results/README.md) gives the 
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
+| [The lower oriented general position NP-hardness conjecture](results/lower-oriented-general-position-np-hardness/) | Proved: recognition at value two is NP-complete even on planar bipartite graphs with two leaves and every other vertex cubic. | Not formalized | [Proof](results/lower-oriented-general-position-np-hardness/PROOF.md) · [Audit](results/lower-oriented-general-position-np-hardness/AUDIT.md) · [Exact checker](results/lower-oriented-general-position-np-hardness/verify.py) |
 | [Welton–Khudairi–Tuite lower general position product conjecture](results/welton-khudairi-tuite-lower-gp-product/) | False with an unbounded gap. Both connected factors can have lower general position number at least any given $M\ge7$, but their Cartesian product has a maximal general position set of six vertices. | Not formalized | [Proof](results/welton-khudairi-tuite-lower-gp-product/PROOF.md) · [Audit](results/welton-khudairi-tuite-lower-gp-product/AUDIT.md) · [Exact checker](results/welton-khudairi-tuite-lower-gp-product/verify.py) |
 
 ## Matching excess and plane-partition polynomials
