@@ -77,3 +77,5 @@ Its determinant equals $-13/500$. Thus an application of integral Cauchy–Binet
 The [arithmetic check](check.py) evaluates 144 of the spline integrals by multiplying exact piecewise polynomials and checking the Eulerian recurrence independently. It also checks all 4,356 two-by-two minors in the same block.
 
 The [mixed-difference argument](differences.md) proves absolute monotonicity of the entire Eulerian square in both integer indices and strict positivity of all three-by-three minors using both constant margins in the symmetric extension.
+
+A [fixed-offset asymptotic](diagonal-minors.md) proves strict positivity of every fixed mixed minor after translating both index sets sufficiently far along the diagonal. Its leading constant is a product of the two Vandermonde determinants.
