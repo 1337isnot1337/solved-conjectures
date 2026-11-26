@@ -1,0 +1,782 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T14:57:58.402697+00:00",
+  "finished_at": "2026-11-26T15:25:36.657616+00:00",
+  "root": "Conjectures.ChernFuLinThreeStatistic",
+  "project_modules": [
+    "Conjectures.BursteinA218225Defs",
+    "Conjectures.BursteinA218225TreeX",
+    "Conjectures.ChernFuLinThreeStatistic",
+    "Conjectures.ChernFuLinThreeStatisticBands",
+    "Conjectures.ChernFuLinThreeStatisticBoundary",
+    "Conjectures.ChernFuLinThreeStatisticCopies",
+    "Conjectures.ChernFuLinThreeStatisticCoreSums",
+    "Conjectures.ChernFuLinThreeStatisticCrossing",
+    "Conjectures.ChernFuLinThreeStatisticCutMass",
+    "Conjectures.ChernFuLinThreeStatisticCutWeights",
+    "Conjectures.ChernFuLinThreeStatisticDecode",
+    "Conjectures.ChernFuLinThreeStatisticDecomposition",
+    "Conjectures.ChernFuLinThreeStatisticDefs",
+    "Conjectures.ChernFuLinThreeStatisticEdgeWeights",
+    "Conjectures.ChernFuLinThreeStatisticEdges",
+    "Conjectures.ChernFuLinThreeStatisticEnumerator",
+    "Conjectures.ChernFuLinThreeStatisticExcess",
+    "Conjectures.ChernFuLinThreeStatisticExpansion",
+    "Conjectures.ChernFuLinThreeStatisticFactor",
+    "Conjectures.ChernFuLinThreeStatisticFibre",
+    "Conjectures.ChernFuLinThreeStatisticFlagMoment",
+    "Conjectures.ChernFuLinThreeStatisticFlagTree",
+    "Conjectures.ChernFuLinThreeStatisticFlagWord",
+    "Conjectures.ChernFuLinThreeStatisticFlagsLiteral",
+    "Conjectures.ChernFuLinThreeStatisticIDes",
+    "Conjectures.ChernFuLinThreeStatisticKernel",
+    "Conjectures.ChernFuLinThreeStatisticLiteralMoment",
+    "Conjectures.ChernFuLinThreeStatisticMarked",
+    "Conjectures.ChernFuLinThreeStatisticMass",
+    "Conjectures.ChernFuLinThreeStatisticMinimum",
+    "Conjectures.ChernFuLinThreeStatisticMoment",
+    "Conjectures.ChernFuLinThreeStatisticProduct",
+    "Conjectures.ChernFuLinThreeStatisticReduction",
+    "Conjectures.ChernFuLinThreeStatisticRoot",
+    "Conjectures.ChernFuLinThreeStatisticSplitStats",
+    "Conjectures.ChernFuLinThreeStatisticSubword",
+    "Conjectures.ChernFuLinThreeStatisticWeights",
+    "Conjectures.ChernFuLinThreeStatisticWords",
+    "Conjectures.ChernFuLinThreeStatisticXCut",
+    "Conjectures.ChernFuLinThreeStatisticXMarkedTail",
+    "Conjectures.ChernFuLinThreeStatisticXTail",
+    "Conjectures.ChernFuLinThreeStatisticZTail"
+  ],
+  "required_endpoints": [
+    "Conjectures.ChernFuLinThreeStatistic.equidistribution",
+    "Conjectures.ChernFuLinThreeStatistic.Expansion.weighted_minimum_split",
+    "Conjectures.ChernFuLinThreeStatistic.Expansion.Z_tail_identity",
+    "Conjectures.ChernFuLinThreeStatistic.Growth.X_tail_identity"
+  ],
+  "source_sha256": {
+    "lean\\Conjectures\\BursteinA218225Defs.lean": "371261de3f124c6338c524d907d33975fdb494f817cf3019c2c27161e4530597",
+    "lean\\Conjectures\\BursteinA218225TreeX.lean": "1fcae35f1579c7e7e419cb919f08f9012d335a2b852f8fee5d3be2519606bd59",
+    "lean\\Conjectures\\ChernFuLinThreeStatistic.lean": "278cb30e41814268403a8c9b9c93ecb8f003938d075623b06a7dc14af2d93b0d",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticBands.lean": "a0310a936547ba6670f712c1b95cad3ff286c377a7fb80af20e141da481e8d49",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticBoundary.lean": "6bce275b4b39034fb6eb22caea7f160df3df07c9da82a2309dd17b0e835cf025",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCopies.lean": "53b00b79ebb5e9999d1e6640f56a4ac6ba9ce25e44471a907debbb8c21864903",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCoreSums.lean": "31e8dc8498bb3bbd8269d191f820759605b9ef00163dbe7be198fe8752294f5b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCrossing.lean": "0b3ce1bef78495355559cd6080e0ae95b1ec047b04848a4c42328f1e6a39201b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCutMass.lean": "ad14c0154539f24d71d459e13bd647f93c04bc9f92604d236b49d8fd1174d7b8",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCutWeights.lean": "ab0c193d6232a4453540d59d60d6faffa3f2a95b6d7e2af8943760ccb76a6fca",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticDecode.lean": "36ed7751509594832d56574152f8de1f0f934d100940ab6801b3ebc1fca20751",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticDecomposition.lean": "1a27ce6c1bb5d914150792f81422024370d8b4ab52af25d7778f6751a6e7b537",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticDefs.lean": "42e03b9d474396b7561ed79277eaa07374a210bee3bddae61a55feca7c2da15b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticEdgeWeights.lean": "2895e4d1dca8bc14194ef78f8cb79ef2ec799901914be04d1d6b8871cc149387",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticEdges.lean": "9aeb2bff1f522442477c4bd34a93bf00b5f16417a489aa2966dee48b8d110fda",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticEnumerator.lean": "d8529f14d98c4dc1b9e2d9f0f81b9fbf420ddbb1f819ccfa70c8a1872865cc4a",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticExcess.lean": "f3f635f811f3d58fa4baea8235bbf5047c4fd816eefc7b47367e1e90e420ee26",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticExpansion.lean": "f334eff361d0109ba108fed68749acb842b2d85b337c0d5c225d9c5c9185cb0b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFactor.lean": "66dd18ada7335158a420f4de8fcd4e2bb3334d2c0c623f574d671413d9169402",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFibre.lean": "e9bd93eaafcb373e77b084f7987d78723825eae3152fa2327a400fae07dee49b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagMoment.lean": "a3a9a9fe66e11b96580b212eb202c5c19d1ede16c485384ca2a98efbfd941a5e",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagTree.lean": "e586b660b8383ea74b3bf7a3f52b8f501a47a5baecc8e1e47d84558d03bc996e",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagWord.lean": "b2a8cad35076eeeed7fadc72895cff5f68591544ae81e0971bee8e6c38e50c3f",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagsLiteral.lean": "1dc1ffc06f0aad8e80b9ba9d95cfde0f1846f3fe0f3f53b664dd32cb7dab52ef",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticIDes.lean": "53b6c6f4cb288a0c3247100f4d3564f5f176459d7a6447515990e71e6ac368ef",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticKernel.lean": "364b0566908b9fd6c23072f2733e1dff0a161017127e51adac4fb4dab4afb7fd",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticLiteralMoment.lean": "249e3797a465514cc293ed6782a226fb2a44d798406ba07e3f9da25bfce13569",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMarked.lean": "1f65a4a4bd9d0f5ab82a0ec9b048744a935db11c2f13e83d4d5369438ae88d48",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMass.lean": "6b4f804289254f024705625423697027645776633bf6cc1d37ae8830af3b6652",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMinimum.lean": "80610c318e1ddd6dc8c2a95eb48ca2f346328304d67144c059299dc44d429353",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMoment.lean": "8ff4707e0cf757c52a5bd076eb4a734500955f6f55ca712827b3964184e5ae2b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticProduct.lean": "49a46678a7774e041022a2bb7c8f0d65d24f67064a3d8d8ba30b05cb23b3e2c4",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticReduction.lean": "a0c422fe4560d530aca2b55c896733a937e8e5f477f2ce588796617d132b6633",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticRoot.lean": "8bdc722a39254ede5c340e136ad9662800edb50e6621fa876365d70050662268",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticSplitStats.lean": "e820d845554c8fedbc6a063ac486c4e390e9804aceab47eb7caba8b48dd6d5c7",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticSubword.lean": "03cb8e948dc29733af6d4c89cd46d5ae24d8f3df5233c4b1d2ac4cd9ec0d06fd",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticWeights.lean": "b74d42ba1d667c4d83dc5830f43d586c8bbac90b2d6423c6e132e127394cf54f",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticWords.lean": "381a4cb9a7e9e90d1d2192a482f6bccd8d15d500108404ceb93f7d78d7ecd666",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticXCut.lean": "d670e00c17004fdff538a1eef208a7c52203475d6e488f3ecfd0c19a2f2de81a",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticXMarkedTail.lean": "f270c7198c50ff747a65a759aac385e300ec4df904b5d03b56da69797a13ed89",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticXTail.lean": "8e9dc0daa6b734efc887c3f51f4a2d922387d640deeb9f1bf1595f9810e9e2b9",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticZTail.lean": "86590392b154ef5c0b2d9fb217a35db5030be90ab045475bb0249fb30abd3fdb"
+  },
+  "input_sha256": {
+    "lean\\Conjectures\\BursteinA218225Defs.lean": "371261de3f124c6338c524d907d33975fdb494f817cf3019c2c27161e4530597",
+    "lean\\Conjectures\\BursteinA218225TreeX.lean": "1fcae35f1579c7e7e419cb919f08f9012d335a2b852f8fee5d3be2519606bd59",
+    "lean\\Conjectures\\ChernFuLinThreeStatistic.lean": "278cb30e41814268403a8c9b9c93ecb8f003938d075623b06a7dc14af2d93b0d",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticBands.lean": "a0310a936547ba6670f712c1b95cad3ff286c377a7fb80af20e141da481e8d49",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticBoundary.lean": "6bce275b4b39034fb6eb22caea7f160df3df07c9da82a2309dd17b0e835cf025",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCopies.lean": "53b00b79ebb5e9999d1e6640f56a4ac6ba9ce25e44471a907debbb8c21864903",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCoreSums.lean": "31e8dc8498bb3bbd8269d191f820759605b9ef00163dbe7be198fe8752294f5b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCrossing.lean": "0b3ce1bef78495355559cd6080e0ae95b1ec047b04848a4c42328f1e6a39201b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCutMass.lean": "ad14c0154539f24d71d459e13bd647f93c04bc9f92604d236b49d8fd1174d7b8",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticCutWeights.lean": "ab0c193d6232a4453540d59d60d6faffa3f2a95b6d7e2af8943760ccb76a6fca",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticDecode.lean": "36ed7751509594832d56574152f8de1f0f934d100940ab6801b3ebc1fca20751",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticDecomposition.lean": "1a27ce6c1bb5d914150792f81422024370d8b4ab52af25d7778f6751a6e7b537",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticDefs.lean": "42e03b9d474396b7561ed79277eaa07374a210bee3bddae61a55feca7c2da15b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticEdgeWeights.lean": "2895e4d1dca8bc14194ef78f8cb79ef2ec799901914be04d1d6b8871cc149387",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticEdges.lean": "9aeb2bff1f522442477c4bd34a93bf00b5f16417a489aa2966dee48b8d110fda",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticEnumerator.lean": "d8529f14d98c4dc1b9e2d9f0f81b9fbf420ddbb1f819ccfa70c8a1872865cc4a",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticExcess.lean": "f3f635f811f3d58fa4baea8235bbf5047c4fd816eefc7b47367e1e90e420ee26",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticExpansion.lean": "f334eff361d0109ba108fed68749acb842b2d85b337c0d5c225d9c5c9185cb0b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFactor.lean": "66dd18ada7335158a420f4de8fcd4e2bb3334d2c0c623f574d671413d9169402",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFibre.lean": "e9bd93eaafcb373e77b084f7987d78723825eae3152fa2327a400fae07dee49b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagMoment.lean": "a3a9a9fe66e11b96580b212eb202c5c19d1ede16c485384ca2a98efbfd941a5e",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagTree.lean": "e586b660b8383ea74b3bf7a3f52b8f501a47a5baecc8e1e47d84558d03bc996e",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagWord.lean": "b2a8cad35076eeeed7fadc72895cff5f68591544ae81e0971bee8e6c38e50c3f",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticFlagsLiteral.lean": "1dc1ffc06f0aad8e80b9ba9d95cfde0f1846f3fe0f3f53b664dd32cb7dab52ef",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticIDes.lean": "53b6c6f4cb288a0c3247100f4d3564f5f176459d7a6447515990e71e6ac368ef",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticKernel.lean": "364b0566908b9fd6c23072f2733e1dff0a161017127e51adac4fb4dab4afb7fd",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticLiteralMoment.lean": "249e3797a465514cc293ed6782a226fb2a44d798406ba07e3f9da25bfce13569",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMarked.lean": "1f65a4a4bd9d0f5ab82a0ec9b048744a935db11c2f13e83d4d5369438ae88d48",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMass.lean": "6b4f804289254f024705625423697027645776633bf6cc1d37ae8830af3b6652",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMinimum.lean": "80610c318e1ddd6dc8c2a95eb48ca2f346328304d67144c059299dc44d429353",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticMoment.lean": "8ff4707e0cf757c52a5bd076eb4a734500955f6f55ca712827b3964184e5ae2b",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticProduct.lean": "49a46678a7774e041022a2bb7c8f0d65d24f67064a3d8d8ba30b05cb23b3e2c4",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticReduction.lean": "a0c422fe4560d530aca2b55c896733a937e8e5f477f2ce588796617d132b6633",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticRoot.lean": "8bdc722a39254ede5c340e136ad9662800edb50e6621fa876365d70050662268",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticSplitStats.lean": "e820d845554c8fedbc6a063ac486c4e390e9804aceab47eb7caba8b48dd6d5c7",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticSubword.lean": "03cb8e948dc29733af6d4c89cd46d5ae24d8f3df5233c4b1d2ac4cd9ec0d06fd",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticWeights.lean": "b74d42ba1d667c4d83dc5830f43d586c8bbac90b2d6423c6e132e127394cf54f",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticWords.lean": "381a4cb9a7e9e90d1d2192a482f6bccd8d15d500108404ceb93f7d78d7ecd666",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticXCut.lean": "d670e00c17004fdff538a1eef208a7c52203475d6e488f3ecfd0c19a2f2de81a",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticXMarkedTail.lean": "f270c7198c50ff747a65a759aac385e300ec4df904b5d03b56da69797a13ed89",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticXTail.lean": "8e9dc0daa6b734efc887c3f51f4a2d922387d640deeb9f1bf1595f9810e9e2b9",
+    "lean\\Conjectures\\ChernFuLinThreeStatisticZTail.lean": "86590392b154ef5c0b2d9fb217a35db5030be90ab045475bb0249fb30abd3fdb",
+    "lean\\lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
+    "lean\\lake-manifest.json": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+    "lean\\lakefile.toml": "91f787a34c9a80caf6d07c502a981c2adc85060414de9d114cfd864fbdd0ab3b",
+    "scripts\\audit_lean_all_owned.py": "0e514f0d65a08879b1b01a4b42f93a80960ea80d811c0bf417ec209ec4c391b0",
+    "scripts\\replay_lean.py": "4605df0993844e224a93b59336391f9d64ea1f03f3c9caf1123df0fd5e273940",
+    "scripts\\verify_lean_target.py": "6d4ebc756a210051996ff231a96b8ed11f900189c823cdfc56467bed82665bc8"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\BursteinA218225Defs.olean",
+        "Conjectures/BursteinA218225Defs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Defs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticDefs.olean",
+        "Conjectures/ChernFuLinThreeStatisticDefs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticDefs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticWeights.olean",
+        "Conjectures/ChernFuLinThreeStatisticWeights.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticWeights.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticMarked.olean",
+        "Conjectures/ChernFuLinThreeStatisticMarked.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticMarked.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticExpansion.olean",
+        "Conjectures/ChernFuLinThreeStatisticExpansion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticExpansion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticMinimum.olean",
+        "Conjectures/ChernFuLinThreeStatisticMinimum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticMinimum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticCrossing.olean",
+        "Conjectures/ChernFuLinThreeStatisticCrossing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticCrossing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticSubword.olean",
+        "Conjectures/ChernFuLinThreeStatisticSubword.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticSubword.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticDecomposition.olean",
+        "Conjectures/ChernFuLinThreeStatisticDecomposition.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticDecomposition.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticBands.olean",
+        "Conjectures/ChernFuLinThreeStatisticBands.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticBands.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticDecode.olean",
+        "Conjectures/ChernFuLinThreeStatisticDecode.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticDecode.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticSplitStats.olean",
+        "Conjectures/ChernFuLinThreeStatisticSplitStats.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticSplitStats.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticFibre.olean",
+        "Conjectures/ChernFuLinThreeStatisticFibre.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticFibre.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticIDes.olean",
+        "Conjectures/ChernFuLinThreeStatisticIDes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticIDes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticEnumerator.olean",
+        "Conjectures/ChernFuLinThreeStatisticEnumerator.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticEnumerator.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticCopies.olean",
+        "Conjectures/ChernFuLinThreeStatisticCopies.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticCopies.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticFactor.olean",
+        "Conjectures/ChernFuLinThreeStatisticFactor.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticFactor.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticProduct.olean",
+        "Conjectures/ChernFuLinThreeStatisticProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticBoundary.olean",
+        "Conjectures/ChernFuLinThreeStatisticBoundary.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticBoundary.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticWords.olean",
+        "Conjectures/ChernFuLinThreeStatisticWords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticWords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticCoreSums.olean",
+        "Conjectures/ChernFuLinThreeStatisticCoreSums.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticCoreSums.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticReduction.olean",
+        "Conjectures/ChernFuLinThreeStatisticReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\BursteinA218225TreeX.olean",
+        "Conjectures/BursteinA218225TreeX.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225TreeX.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticEdges.olean",
+        "Conjectures/ChernFuLinThreeStatisticEdges.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticEdges.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticXCut.olean",
+        "Conjectures/ChernFuLinThreeStatisticXCut.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticXCut.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticXMarkedTail.olean",
+        "Conjectures/ChernFuLinThreeStatisticXMarkedTail.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticXMarkedTail.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticCutWeights.olean",
+        "Conjectures/ChernFuLinThreeStatisticCutWeights.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticCutWeights.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticKernel.olean",
+        "Conjectures/ChernFuLinThreeStatisticKernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticKernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticRoot.olean",
+        "Conjectures/ChernFuLinThreeStatisticRoot.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticRoot.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticMoment.olean",
+        "Conjectures/ChernFuLinThreeStatisticMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticFlagWord.olean",
+        "Conjectures/ChernFuLinThreeStatisticFlagWord.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticFlagWord.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticFlagMoment.olean",
+        "Conjectures/ChernFuLinThreeStatisticFlagMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticFlagMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticFlagTree.olean",
+        "Conjectures/ChernFuLinThreeStatisticFlagTree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticFlagTree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticFlagsLiteral.olean",
+        "Conjectures/ChernFuLinThreeStatisticFlagsLiteral.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticFlagsLiteral.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticEdgeWeights.olean",
+        "Conjectures/ChernFuLinThreeStatisticEdgeWeights.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticEdgeWeights.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticMass.olean",
+        "Conjectures/ChernFuLinThreeStatisticMass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticMass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticLiteralMoment.olean",
+        "Conjectures/ChernFuLinThreeStatisticLiteralMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticLiteralMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticCutMass.olean",
+        "Conjectures/ChernFuLinThreeStatisticCutMass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticCutMass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticExcess.olean",
+        "Conjectures/ChernFuLinThreeStatisticExcess.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticExcess.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticZTail.olean",
+        "Conjectures/ChernFuLinThreeStatisticZTail.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticZTail.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatisticXTail.olean",
+        "Conjectures/ChernFuLinThreeStatisticXTail.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatisticXTail.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\lean\\.lake\\build\\lib\\lean\\Conjectures\\ChernFuLinThreeStatistic.olean",
+        "Conjectures/ChernFuLinThreeStatistic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChernFuLinThreeStatistic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_tools\\audit-full\\TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "C:\\Users\\seatt\\AppData\\Local\\Temp\\opencode\\conjectures\\sc_chern_fu_lin\\scripts\\replay_lean.py",
+        "--root",
+        "Conjectures.ChernFuLinThreeStatistic"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1615,
+    "modules": 42,
+    "private_declarations": 352,
+    "raw_declarations": 1615,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 1251
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

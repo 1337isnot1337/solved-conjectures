@@ -68,6 +68,10 @@ Complete for both written conclusions. The literal count has exact degree `2r` i
 
 Lean verifies the exact maximum at each of the 40 reported sizes, including attainment at a rational time. The upper bound holds at every real time. [Proof and reproduction](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).
 
+## Chern–Fu–Lin’s three-statistic equidistribution conjecture
+
+Lean proves Conjecture 6.1 for the two literal permutation classes, including the full set of minimum positions. The proof counts the minimum-split codes with their genuine weights and evaluates the marked maximum-insertion cuts. [Theorem, proof map and verification](../results/chern-fu-lin-three-statistic/FORMALIZATION.md).
+
 ## Burstein’s A218225 enumeration conjecture
 
 Complete for the two outstanding avoidance classes `X = Av(2134, 42153, 24153)` and `Y = Av(2143, 42135, 24135)`. Lean proves literal equinumerosity `countX n = countY n` for every `n : ℕ` (including `n = 0`) and proves that their common nonempty generating series in `PowerSeries ℤ` is the unique zero-constant-term solution to `P = (1 + P)(x + (1 - x)P^2)`. The six-module closure passed strict compilation, the complete 815-declaration owned axiom audit, and independent stock-kernel replay. [Lean scope and receipt](../results/burstein-a218225-enumeration/FORMALIZATION.md).

@@ -1143,6 +1143,10 @@ becomes complete from this reduction.
 
 
 
+## Chern–Fu–Lin’s three-statistic equidistribution conjecture
+
+The [formalization page](../results/chern-fu-lin-three-statistic/FORMALIZATION.md) gives the target build, all-owned axiom audit, stock-kernel replay, and a separate literal statement check for Conjecture 6.1. The [original audit](../results/chern-fu-lin-three-statistic/AUDIT.md) records the finite checks and symbolic certificate for the written proof.
+
 ## Chern–Fu–Lin joint Eulerian exact certificate
 
 With Python 3, SymPy 1.14, a C++ compiler, and GMP development libraries installed, run

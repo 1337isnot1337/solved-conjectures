@@ -13435,7 +13435,8 @@ run_cmd do
     `Conjectures.BursteinA218225.countX_eq_countY,
     `Conjectures.BursteinA218225.seriesX_equation,
     `Conjectures.BursteinA218225.seriesY_equation,
-    `Conjectures.BursteinA218225.series_unique]
+    `Conjectures.BursteinA218225.series_unique,
+    `Conjectures.ChernFuLinThreeStatistic.equidistribution]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
