@@ -48,4 +48,10 @@ Each block contributes six to the sum of its color’s pair degrees. Thus $r+b=n
 ```
 Combining (2) and (3) yields the theorem. Its right side is positive for integer $n\ge84$. The total number of sails is $n(n-1)(n-3)/6$, the number of choices of a block and an outside point. Dividing by this quantity gives the limiting fraction.
 
+## Vertex-disjoint monochromatic sails
+
+Granath and coauthors also asked about disjoint unions of Ramsey configurations. For the sail the bound above gives a linear packing in one color. Each point belongs to exactly $7(n-1)(n-3)/6$ sails. As center it has $(n-1)(n-3)/6$ choices of a transversal block. As a point on the transversal it has $(n-1)(n-3)/2$ choices of that block and the center. In the remaining role choose the center $p$ in $n-1$ ways. Its block with the specified point fixes the intersection point on the transversal, through which there are $(n-3)/2$ allowable transversal blocks. These three roles exhaust the sail’s seven vertices.
+
+One color supplies at least $L/2$ sails. Greedily choose disjoint sails of that color. Each selected sail removes at most $49(n-1)(n-3)/6$ candidates, by summing the point incidences over its seven vertices. Thus in every red–blue coloring there are at least $3L/[49(n-1)(n-3)]$ pairwise vertex-disjoint sails of one color for $n>3$. In particular this is at least $(1/4802-o(1))n$ as $n$ grows. Any fixed disjoint union of sails is therefore 2-Ramsey. [Original disjoint-copy question, §5](https://users.renyi.hu/~gyarfas/Cikkek/182_jcd1.pdf).
+
 The theorem answers the stated two-color question for all Steiner triple systems. The corresponding question for three or more colors is separate.
