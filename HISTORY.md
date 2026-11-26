@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the ordinarization sign arrangement and lattice
+
+Lean checks the literal disjoint strata, exact relative interiors, and primitive integer hyperplane lattices. The open Ehrhart count and asymptotic correction remain. [Scope and receipts](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the open-simplex lattice count
 
 Lean checks the exact rational quasipolynomial on every positive lattice height in an injective integral ray chart. Applying this to the actual ordinarization sign strata remains open. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).

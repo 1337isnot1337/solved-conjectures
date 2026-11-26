@@ -150,6 +150,19 @@ modules=(
   Conjectures.CyrusianKaplanBaselineGrowth
   Conjectures.CyrusianKaplanBaselineIncrements
   Conjectures.CyrusianKaplanGrowthCheckpoint
+  Conjectures.CyrusianKaplanArrangementCheckpoint
+  Conjectures.CyrusianKaplanCompactStrata
+  Conjectures.CyrusianKaplanHyperplaneLattice
+  Conjectures.CyrusianKaplanIntegerLattice
+  Conjectures.CyrusianKaplanIntegralSlice
+  Conjectures.CyrusianKaplanLatticeFibres
+  Conjectures.CyrusianKaplanPrimitiveNormals
+  Conjectures.CyrusianKaplanRelativeInterior
+  Conjectures.CyrusianKaplanSignPartition
+  Conjectures.CyrusianKaplanStratumClosure
+  Conjectures.CyrusianKaplanTupleArrangement
+  Conjectures.CyrusianKaplanTupleLattice
+  Conjectures.CyrusianKaplanTuplePolyhedra
   Conjectures.CyrusianKaplanConeBoxFinite
   Conjectures.CyrusianKaplanIntegerRayQuasipolynomial
   Conjectures.CyrusianKaplanOpenCone
