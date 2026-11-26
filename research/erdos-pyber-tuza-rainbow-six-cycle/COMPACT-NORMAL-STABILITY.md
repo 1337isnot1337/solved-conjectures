@@ -1,0 +1,25 @@
+# Erdős–Pyber–Tuza rainbow six-cycle conjecture
+
+**Uniform stability for all compact normal Cayley graphons.** For every ε>0 there is δ>0 independent of the compact group such that a balanced inverse-symmetric central six-color Cayley graphon with ordered rainbow six-cycle density below δ has an index-two sign cut with exactly three nominal inside hues and three nominal cross hues, and puts at most ε of its total color mass on the wrong coset.
+
+The [compact normal classification](COMPACT-NORMAL-PARITY.md) explains exactly zero density. The [finite stability argument](FINITE-NORMAL-STABILITY.md) restores a product-free palette in finite groups by symmetrizing group removal. The point here is that [Candela–Szegedy–Vena's symmetry-preserving measurable removal lemma](https://arxiv.org/abs/1408.6753), Lemma 2.12, gives uniformity over all compact groups, including those with connected nonabelian factors.
+
+## Compact central product removal
+
+For a compact metrizable group G, let A_1,…,A_6 be Borel conjugation-invariant subsets, also invariant under inversion. Form a six-partite graph with each part a copy of G. The i-th edge relation between the consecutive ordered parts is x⁻¹y∈A_i. Use the diagonal compact group G×G acting on every part by (a,b)·x=ax b⁻¹. This is a partite action in the sense of Definition 2.8: its acting group embeds diagonally into the sixfold product of G×G. The inherited action on every edge conjugates its difference by b, so all six relations are invariant. The partite cycle density is exactly the measure of product-one tuples, using the independent first five differences with the sixth forced.
+
+If this density tends to zero, their measurable removal lemma gives invariant deletions with measure tending to zero from each edge relation, leaving zero partite cycle density. Any invariant edge deletion depends only on x⁻¹y by the simultaneous left action, and the remaining difference set is central by the right action. One can take its Borel section on pairs (1,g); probability of the deletion equals Haar measure of that section by Haar disintegration. After intersecting each remaining set with its inverse, the sets are inverse-symmetric as well, and the loss is at most twice as large. The partite density stays zero because every surviving edge was already retained. There is no dependence on the group in the removal lemma's quantitative statement.
+
+For functions defined modulo null sets, choose Borel versions and average over conjugation and inversion first to obtain exactly symmetric representatives. Changing on a null difference set has no effect on any marginal or cycle count. General compact groups reduce to metrizable quotients using the countably many nonzero Fourier matrix blocks, as in the compact normal proof.
+
+## Preserve the strict margins
+
+Suppose a sequence had density tending to zero but every parity assignment had wrong mass greater than ε. The [uniform Fourier-bias step](FINITE-NORMAL-STABILITY.md) uses only compact-group Fourier analysis. For any fixed r with 2/3<r<5⁻¹/⁴ it gives an order-two character with mean absolute bias D>r. Wrong mass on its heavier three-and-three assignment is (1−D)/2, so also D<1−2ε.
+
+Switch the least-biased hue from its heavier coset, turning the assignment into an even tuple. The five heavier means exceed 1/6 by a uniform amount; at least four exceed 1/4 by a uniform amount; in the parity fiber that retains all three original choices, each pair of their means sums to more than 1/2 by a uniform amount. The lighter mean is above ε/3, and the six means sum to more than 1+4/9 by a uniform amount (at least 1+2r/3). These details are established in the finite note without requiring finiteness in any estimate.
+
+Threshold the six selected nonnegative restrictions at a fixed sufficiently small θ>0, which reduces each conditional mean by at most θ. The partite density of the threshold supports is at most θ⁻⁶ times the original rainbow density. Apply the compact central removal just proved, losing an additional o(1) conditional mean per hue, and retain the original weights only on the remaining sets. The six weights are still bounded by one with pointwise total at most one, and lie in their designated even tuple of cosets. Their convolution is now zero, but all the strict mean margins still hold.
+
+This contradicts Sections 2–4 of the [compact normal proof](COMPACT-NORMAL-PARITY.md). Those sections apply to any six central inverse-symmetric weights with the stated strict means and palette capacity: the connected-fiber compression and finite quotient obstruction do not need the weights themselves to be balanced, or to sum to one everywhere. Thus their contradiction applies after deletion. Uniform stability follows.
+
+No general noncentral or nonhomogeneous stability conclusion is claimed. The removal input applies relative to the fixed six-cycle template, so it introduces dependence on ε but not on the compact group. [Coordination #870](https://github.com/1337isnot1337/solved-conjectures/issues/870).
