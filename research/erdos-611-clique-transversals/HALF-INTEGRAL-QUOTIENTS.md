@@ -38,6 +38,21 @@ The same reasoning works for maximum cliques whenever the particular maximum-*we
 
 For triangle-free \(Q\), the maximal cliques are edges and isolated vertices. The fractional transversal polytope is the usual half-integral vertex-cover polytope, with isolated vertices fixed at one. For completeness, at an extreme point take the graph on its fractional coordinates whose edges are the tight inequalities \(x_u+x_v=1\). Any bipartite component, including an isolated fractional coordinate, permits a small nonzero alternating perturbation both ways, without violating bounds or nontight constraints; a tight edge cannot connect a fractional coordinate to an integral one. Thus every component has an odd cycle, forcing all its coordinates to \(1/2\). So \(D=2\) uniformly. For example, long cycles themselves are allowable prime quotients, in contrast to a bounded-modular-width hypothesis. Passing to graph complements gives the corresponding maximal-independent-set statement.
 
+## A uniform positive-coordinate condition is enough
+
+There is also a version not requiring a common denominator. Suppose that at every quotient, each nonzero coordinate of each vertex of its fractional transversal polytope is at least a fixed \(\epsilon>0\). Then \(\tau(G)\le(n/\kappa(G))^{A(\epsilon)}\) under arbitrary iterated substitution. One can take any \(A>1\) satisfying
+\[
+(1-\epsilon/4)^{A-1}\le\epsilon,\qquad 4^{-(A-1)}\le\epsilon.
+\]
+
+To round, choose an optimal fractional vertex \(y\) as before and ignore zero coordinates. Put \(\delta=\epsilon/4\), let \(L=\{v:r_v\le1-\delta\}\) in the support, and write \(H\) for the remaining support. If \(L\) hits every member, choose \(L\); its cost is at most
+\[
+\sum_{v\in L}r_v^A\le\epsilon^{-1}(1-\delta)^{A-1}\sum_{v\in L}y_vr_v\le1.
+\]
+Otherwise any member \(F\) disjoint from \(L\) has \(y\)-weight at least one in \(H\cap F\), consuming more than \(1-\delta\) of the objective. A vertex of \(H\) outside \(F\) would contribute more than \(\epsilon(1-\delta)>\delta\), impossible. Thus every such \(F\) contains all of \(H\), and \(y(H)\ge1\). Choose a minimum-ratio \(v\in H\), with ratio \(\lambda\in(1-\delta,1]\). The remaining \(L\) objective is at most \(1-\lambda\); every \(r_u\) for \(u\in L\) is at most \((1-\lambda)/\epsilon\le1/4\). Hence \(\sum_{u\in L}r_u^A\le \epsilon^{-1}4^{-(A-1)}(1-\lambda)\le1-\lambda\). The transversal \(L\cup\{v\}\) costs at most \(1-\lambda+\lambda^A\le1\). Apply the same substitution induction with exponent \(A\).
+
+The stronger fixed-denominator exponent \(D\) above comes from the token argument, not from the positive-coordinate estimate.
+
 ## Priority and scope
 
 The existing [bounded-modular-width proof](https://github.com/1337isnot1337/solved-conjectures/blob/f66b4afd/docs/bollobas-erdos-tuza-research.md#a-constant-upper-bound-for-bounded-modular-width) already gives a constant bound with exponent \(4k+1\) for arbitrary quotients of order at most \(k\); that is prior work, not claimed here. Replacing the size parameter by a common denominator, and obtaining a uniform quadratic bound despite arbitrarily large triangle-free quotients, is the extension. [Cooper–Hollars](https://arxiv.org/abs/2607.15486) already cover cographs with the stronger exponent one, and also treat split graphs. [Boros–Gurvich–Milanič–Tikhanovsky–Uno](https://doi.org/10.1016/j.disc.2025.114657) prove a different substitution theorem about conformality of the *family of minimal transversals*. The earlier [induced-biclique result](INDUCED-BICLIQUES.md) concerns a different hereditary hypothesis, and also handles hitting just the large maximal independent sets; the present theorem assumes that all maximal cliques are large. The original [Erdős–Gallai–Tuza source](https://erdosproblems.ai/wiki/problems/extremal_graph_theory/E0611), current catalog, both repository issues, and targeted literature searches were checked. Coordination: [#830](https://github.com/1337isnot1337/solved-conjectures/issues/830).
