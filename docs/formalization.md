@@ -94,6 +94,10 @@ Lean verifies the literal four-pattern class, its canonical split by a unique ma
 Complete for Conjecture 6.16. Lean counts the literal ordered faces, verifies the exact finite certificates, and combines them with the uniform analytic grid. Both the literal rank polynomial and the evaluated characteristic face sum have the complete prescribed root multisets at every length at least three. [Scope and full receipt](../results/rossi-permutohedron-roots/FORMALIZATION.md).
 
 
+## Mazák–Zrubák conjecture on complete graphs minus an edge
+
+Partial. The exact graph, real-to-acyclic reduction, finite Hall construction, and actual all-edge order are verified. The run/table contradiction and final equality are outside this scope. [Scope and receipt](../results/circular-index-complete-minus-edge/FORMALIZATION.md).
+
 ## Seven upper-half circular chromatic index certificates
 
 Partial for the combined result. Lean checks tomdif’s literal graphs at maximum degrees 9, 11, 13, 15, 17, 19 and 23. It proves the actual degrees and the real circular-index lower and upper bounds. Six bounds meet, and the degree-15 case has the stated bracket. The earlier degree families are outside this check. [Scope and review](../results/circular-index-upper-half-remaining-deltas/REVIEW.md).

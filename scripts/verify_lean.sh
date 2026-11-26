@@ -1022,6 +1022,16 @@ modules=(
   Conjectures.CircularIndexConstruction
   Conjectures.CircularIndexFurtherConnected
   Conjectures.CircularIndexTheorems
+  Conjectures.CircularCompleteMinusEdgeAcyclic
+  Conjectures.CircularCompleteMinusEdgeClasses
+  Conjectures.CircularCompleteMinusEdgeGraph
+  Conjectures.CircularCompleteMinusEdgeLevels
+  Conjectures.CircularCompleteMinusEdgeMatchings
+  Conjectures.CircularCompleteMinusEdgeOrder
+  Conjectures.CircularCompleteMinusEdgePath
+  Conjectures.CircularCompleteMinusEdgeRotation
+  Conjectures.CircularCompleteMinusEdgeSources
+  Conjectures.CircularCompleteMinusEdgeTransversals
   Conjectures.CircularIndexFurther
   Conjectures.HornakGrouping
   Conjectures.HornakGroupGraph

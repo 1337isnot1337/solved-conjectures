@@ -1,0 +1,13 @@
+# Mazák–Zrubák conjecture on complete graphs minus an edge
+
+Independent semantic review of the verified Steps 1–3 checkpoint.
+
+The parent agent read all ten new frozen source modules and compared their definitions and endpoints with the existing recorded proof. The graph is literally the complete simple graph with the selected unordered edge deleted; arbitrary finite vertex labels are retained. Separate lemmas prove its edge count, the two degree types, and the explicit upper circular coloring. The generic terminal reduction assumes the exact vertex and edge counts, which the graph lemmas supply when the deleted endpoints are distinct.
+
+An arbitrary actual real circular edge coloring below the integer radius is converted by floors to a proper finite edge coloring. The real potential proves every cyclic color arc increases strictly, so well-foundedness is proved rather than assumed at the terminal reduction. Matching endpoint counts prove the unique deficient color class, and rotation preserves the original arc relation. The missing-vertex arguments identify the source and sink colors and prove their uniqueness. Hall's hypothesis is proved for every subset from endpoint coverage, including the sink deletion at the wraparound color. Combining the injective transversals gives an actual bijection between all edges except the sink and all edges except the source.
+
+The finite longest-path construction, the selected-arc bijection and acyclicity prove that the resulting position map is an equivalence from the entire actual edge type to Fin(card edges). Consecutive positions are incident, colors are position plus one modulo the number of colors, and every original color arc increases position. No Hamiltonian-order oracle or rational-attainment theorem appears as a hypothesis of `real_coloring_gives_linear_order`.
+
+Scope is deliberately incomplete. This checkpoint proves the direct real-coloring reduction and the all-edge order for h >= 2. The intended final conjecture has h >= 4 (even degree at least six). The run structure, table construction, boundary-order contradiction, absence of a smaller real coloring, and final infimum/equality theorem remain to be proved. The checkpoint is not counted as a complete formalization, and the sibling several-deleted-edges argument is not a distinct target.
+
+The exact author receipt records a fresh strict 16-module closure build, all-owned/private transitive axiom audit, and exact stock-kernel replay. This review verifies source hashes and semantics; it does not claim a second execution of those commands. The six reused CircularIndex modules retain their accepted dependency scope.
