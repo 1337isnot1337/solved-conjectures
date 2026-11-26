@@ -1,0 +1,34 @@
+# Two row types and a common pairing when all four missing classes are heavy
+
+Use the [three-block setup](PAIR-GRAPHONS.md), with zero rainbow six-cycle density and \(t=1/6\). Fix a part \(X\) receiving at least three colors from almost every outside vertex. The missing-label classes \(M_a\) are as in [THREE-COLOR-PROFILES.md](THREE-COLOR-PROFILES.md). Assume all four classes have measure at least \(t\).
+
+**Theorem.** There are exactly two \(A\)-row types in \(X\), both of measure \(t\). Every outside color neighborhood into \(X\) lies in a single type. There is a common pairing of the four colors, and all outside vertices assign the present colors of each pair to one type, with the other pair assigned to the other type. If a positive mass of roots in \(X\) lacks some unordered two-step cross return palette, the same internal type is the singleton-color type for almost every outside vertex.
+
+In particular, if \(y\in M_a\), its saturated color into \(X\) is the partner of \(a\) under that common pairing. Its palette into the other outside part has the saturated color \(a\) and misses that partner. This conclusion permits complete roots on positive measure and makes no uniformity assumption on the two partial degrees.
+
+## Homogeneity of incoming colors
+
+Reduce to indicators as before. Each \(M_a\) has measure exactly \(t\), and the union covers the outside. Identify the four colors with the Klein group \(K=\mathbb F_2^2\). A root is complete if each of its six unordered two-color returns has positive density. By the forced-table argument of [FOUR-HEAVY-LABELS.md](FOUR-HEAVY-LABELS.md), every other root has one fixed nonzero translation \(d\): its edge to almost every vertex in \(M_a\) has color \(a+d\). At that root the one incomplete complementary matching is the pair of palettes of difference \(d\). Indeed for a palette of difference \(d\) the second color is precisely the intermediate vertex's missing color; for any other difference both orders are positive. Write \(E_d\) for this exceptional type and \(R\) for the complete roots.
+
+For a typical outside \(y\in M_a\) and any present color \(c\ne a\), find a companion \(b\ne c\) with positive neighborhood into a root set on which the matching of \(b,c\) is complete.
+
+- If at least two of the \(E_d\) have positive measure, choose one such \(d\) with \(a+d\ne c\), and take \(b=a+d\), using roots of \(E_d\). The palette difference \(b+c\) is not \(d\), since \(a\ne c\).
+- If at most one of the \(E_d\) has positive measure, that exceptional part accounts for at most one of the three colors used by \(y\). Thus \(y\) sends at least two colors to \(R\), and there is one \(b\ne c\) with positive neighborhood into \(R\).
+
+The complementary-palette argument now puts the whole \(c\)-neighborhood into a single \(A\)-row class. The three neighborhoods of any typical \(y\) cover \(X\); the class size bound \(t\) and the exclusion of three classes give exactly two classes of measure \(t\), as in [THREE-COLOR-PROFILES.md](THREE-COLOR-PROFILES.md). Their indicators descend through circle refinement, and the refined per-class color degrees equal the original ones, so the homogeneity descends as well.
+
+## A fixed pairing
+
+For each outside vertex \(y\in M_a\), declare its pairing to be the pair of colors used on its double-color type and the complementary pair consisting of \(a\) and the singleton color. Any test of a complete matching of palettes at a root \(x\) has a well-defined same- or opposite-row bit, independent of intermediary and order in a palette.
+
+Suppose some \(E_d\) has positive measure. All of \(E_d\) is in one row type because a typical vertex in any \(M_a\) sends the same color \(a+d\) to all of \(E_d\), and its neighborhoods are homogeneous. At a typical fixed root in \(E_d\), the two palettes involving its outgoing color \(a+d\) and the other present colors have the two complete, distinct matching differences. Their same/opposite statuses are thus independent of the outside vertex \(y\). If both are opposite, this root's type is the singleton type for every \(y\), with singleton color \(a+d\), so the pairing difference is \(d\). If one is same, that fixed complete matching is the pairing of \(y\), and the root's type is always the double type. This proves both conclusions when some exceptional group has positive measure.
+
+Otherwise almost every root is complete. Let \(k(x)\) be the number of same-row matchings at that root. If there is a positive-measure set with \(k(x)=1\), fix a typical root there. For any outside intermediary at which its type is the double type, the unique same-row matching is the matching joining its color to the other double color. At intermediaries for which its type is the singleton type, both observed matchings are opposite, and the unobserved one joins its singleton color to the missing color. In both cases its unique same-row matching therefore equals the intermediary's pairing. This proves the result in this case.
+
+Finally suppose \(k(x)\ne1\) almost everywhere. At a singleton-type root the two observed nontrivial returns both change types, so \(k(x)\le1\), hence \(k(x)=0\). At a double-type root one observed palette preserves and the other changes types, giving \(1\le k(x)\le2\), hence \(k(x)=2\). Consequently type roles are fixed across all outside vertices. For a root \(x\) in the double type, let \(m_x\) be its unique opposite-row matching involution. If \(b(y)\) is the singleton color of \(y\), its edge to such an \(x\) has color \(m_x(b(y))\). There are exactly two values of \(m_x\) on positive-measure subsets of the double type, because each \(y\) sends exactly two colors there and the three possible involutions send any fixed label to distinct labels. Let \(m_*\) be the third matching. The missing color is \(m_*(b(y))\) for all \(y\), giving the common pairing \(m_*\). This completes the proof.
+
+## A sharper exclusion for entirely exceptional roots
+
+In the [entirely palette-deficient case](FOUR-HEAVY-LABELS.md), no zero-cycle graphon exists under the all-heavy hypothesis. The previous Fourier argument already excludes the extreme split and shows any remaining case has all four labels in both outside parts, with \(\pi(\operatorname{col}(yz))=\pi(v(y))+\pi(v(z))+g\) for one constant \(g\). But take an \(M_a\) vertex in \(Y\) and an \(M_{a+d_0}\) vertex in \(Z\), using the saturated difference \(d_0\) of that analysis. At this interface each endpoint excludes its partner, so the allowed colors have bit \(1+\pi(a)\). The displayed equation requires the bit \(g\), as the two endpoint bits are equal. Both values of \(\pi(a)\) occur on such positive rectangles, a contradiction.
+
+The case with complete roots on positive measure has not been excluded by this final argument. The unrestricted [Erdős #811](https://www.erdosproblems.com/811) remains open. Coordination: [#870](https://github.com/1337isnot1337/solved-conjectures/issues/870).
