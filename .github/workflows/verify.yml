@@ -18,6 +18,10 @@ jobs:
         run: |
           python3 results/alexandersson-graphical-dist/check.py
           python3 results/alexandersson-graphical-dist/check_unions.py
+      - name: Check the two-leaf orientation characterization
+        run: python3 results/lower-oriented-general-position-np-hardness/verify.py
+      - name: Check the counterexamples to the lower general position product bound
+        run: python3 results/welton-khudairi-tuite-lower-gp-product/verify.py
       - name: Check the independent general-position inequalities
         run: python3 results/general-position-nordhaus-gaddum/verify.py
       - name: Check the Bollobás–Erdős–Tuza transversal bounds

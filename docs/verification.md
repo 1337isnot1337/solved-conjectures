@@ -4,6 +4,14 @@
 
 With SymPy 1.14.0 installed, run `python3 docs/research-results/rather-book-domination-roots/check.py` to enumerate dominating sets, isolate real roots over the rationals and verify the sign constants. Run `python3 docs/research-results/tuite-thomas-chandran-circulants/check.py` with standard Python to check finite border graphs, the uniform jump families and the order-15 exception. [Book review](research-results/rather-book-domination-roots/REVIEW.md) · [Circulant review](research-results/tuite-thomas-chandran-circulants/REVIEW.md)
 
+## The lower oriented general position NP-hardness conjecture
+
+Run `python3 results/lower-oriented-general-position-np-hardness/verify.py` to compare exact Hamilton-path counts to all 511,102 orientations of the 8,555 labelled graphs on up to six vertices with at least two leaves. The [proof](../results/lower-oriented-general-position-np-hardness/PROOF.md) is uniform and does not use this regression.
+
+## Welton–Khudairi–Tuite lower general position product conjecture
+
+Run `python3 results/welton-khudairi-tuite-lower-gp-product/verify.py`. It builds the actual factors and Cartesian products and checks all twin profiles, all six-vertex-base supports, and an endpoint witness for every outside product vertex at parameters 7, 8, 11 and 15. The [written disproof](../results/welton-khudairi-tuite-lower-gp-product/PROOF.md) holds uniformly, independently of the finite checks.
+
 ## Bollobás–Erdős–Tuza conjecture
 
 Run `python3 results/erdos-611-clique-transversals/check.py`, `python3 results/erdos-611-clique-transversals/check_recursive.py` and `python3 results/erdos-611-clique-transversals/check_structure.py`. These check the base graphs, the substitution formula, 150 exact recurrence steps and the independent-block counting identity. The [review](../results/erdos-611-clique-transversals/AUDIT.md) identifies the arguments giving the asymptotic bounds.
