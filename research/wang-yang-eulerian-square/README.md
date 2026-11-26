@@ -79,3 +79,5 @@ The [arithmetic check](check.py) evaluates 144 of the spline integrals by multip
 The [mixed-difference argument](differences.md) proves absolute monotonicity of the entire Eulerian square in both integer indices and strict positivity of all three-by-three minors using both constant margins in the symmetric extension.
 
 A [fixed-offset asymptotic](diagonal-minors.md) proves strict positivity of every fixed mixed minor after translating both index sets sufficiently far along the diagonal. Its leading constant is a product of the two Vandermonde determinants.
+
+For every fixed order, [both infinite tail rectangles](tail-minors.md) are strictly totally positive through that order, allowing arbitrary gaps and all indices on the other axis. Fixed-order verification is consequently reduced to a finite initial collection of solid minors.
