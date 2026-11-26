@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Welton–Khudairi–Tuite lower general position product conjecture
+
+The Cartesian product lower bound is false with an unbounded gap. One factor is complete, the other has diameter two, and the product contains a six-vertex maximal general position set. [Proof](results/welton-khudairi-tuite-lower-gp-product/PROOF.md) · [Audit](results/welton-khudairi-tuite-lower-gp-product/AUDIT.md) · [Issue #854](https://github.com/1337isnot1337/solved-conjectures/issues/854).
+
 ## 2026-11-26 — Bollobás–Erdős–Tuza conjecture
 
 Published the [near-linear transversal construction and induced-biclique upper bound](results/erdos-611-clique-transversals/) as partial progress on Erdős #611. The unrestricted sublinear question remains open.

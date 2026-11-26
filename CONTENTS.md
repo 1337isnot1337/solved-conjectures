@@ -78,6 +78,12 @@ The [26 November theorem collection](docs/research-results/README.md) gives the 
 | [Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture](results/general-position-nordhaus-gaddum/) | Both independent general-position inequalities in Conjecture 9.3 hold for every graph. The proof establishes the stronger mixed sum bound using chromatic criticality and a geodesic-safe coloring. | Not formalized | [Proof](results/general-position-nordhaus-gaddum/PROOF.md) · [Audit](results/general-position-nordhaus-gaddum/AUDIT.md) · [Exact checker](results/general-position-nordhaus-gaddum/verify.py) |
 | [Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture](results/monophonic-product-nordhaus-gaddum/) | The full independent monophonic product inequality is false. Triangle-expanded and subdivided prisms give counterexamples on every order $15s$ for $s\geq3$ with exact color counts for both graphs. | Partial | [Lean scope](results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md) · [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Exact checker](results/monophonic-product-nordhaus-gaddum/verify.py) |
 
+## General position in graph products
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Welton–Khudairi–Tuite lower general position product conjecture](results/welton-khudairi-tuite-lower-gp-product/) | False with an unbounded gap. Both connected factors can have lower general position number at least any given $M\ge7$, but their Cartesian product has a maximal general position set of six vertices. | Not formalized | [Proof](results/welton-khudairi-tuite-lower-gp-product/PROOF.md) · [Audit](results/welton-khudairi-tuite-lower-gp-product/AUDIT.md) · [Exact checker](results/welton-khudairi-tuite-lower-gp-product/verify.py) |
+
 ## Matching excess and plane-partition polynomials
 
 | Problem | Result | Formalization | Evidence |
