@@ -35,4 +35,14 @@ Split each orientation-reversing bin into its at most two exact-displacement cla
 
 For a nontrivial rotation through angle \(\theta\), take \(0<|\theta|\le\pi\) and let the radius be \(R=r/(2|\sin(\theta/2)|)\). The bin's displacement directions lie in an arc of angular length \(O(1/r)\), since their chordal diameter is at most \(\sqrt2/3\) and \(r\ge1\). The source points lie in an arc of the same angular length on the radius-\(R\) circle, because \(x\mapsto y-x\) is a fixed rotation-and-dilation on vectors measured from its center. Their distance separation of at least one makes their number \(O(1+R/r)=O(1+1/|\sin(\theta/2)|)\). Thus for a sublinear-diameter sequence, the large rotation classes have rotation angles tending to zero. This gives an explicit near-translation structural obstruction for at least half the ordered edges. It does not yet show the motions have a common center or direction.
 
+One can sharpen the angle condition using two point anchors. If \(p,q\) are at distance \(s\), then for any given positive radius \(r\) from \(p\) there are at most \(\lfloor 2s\rfloor+1\) possible radii from \(q\) for the same point: they lie in the interval \([r-s,r+s]\) and are separated by at least one. Each consistent pair of positive radii determines at most two points. Since \(p\) has at most \(D+1\) positive radii,
+\[
+n-2\le 2(D+1)(\lfloor2s\rfloor+1).
+\]
+In particular the minimum point separation \(s\) in any sequence with \(D=o(n)\) is \(\Omega(n/(D+1))\). Using \(s\) instead of one in the rotation-arc count gives a bound \(O(1+R/(rs))\) on the class size. On the retained rotation classes, where the size is \(\Omega(n^2/(D+1)^2)\), this implies
+\[
+|\theta|=O\!\left(((D+1)/n)^3\right).
+\]
+Thus the large rotations are even closer to translations after accounting for the growth of the minimum point spacing. The two-anchor observation alone does not force a linear diameter.
+
 The [Guth–Katz method](https://arxiv.org/abs/1011.4105) uses motions to encode equal distances and gives the general \(n/\log n\) lower bound for the diameter. The local conclusion here instead uses separation to make all small-displacement comparisons exact and enforce a single motion on every bin. Searches in the [#100 sources and status](https://erdosproblems.ai/problems/100), [Brass's half-strip work](https://doi.org/10.1016/0012-365X(95)00208-E), and related distance and rigid-motion work found no earlier statement of this displacement-bin obstruction. Coordination: [#885](https://github.com/1337isnot1337/solved-conjectures/issues/885).
