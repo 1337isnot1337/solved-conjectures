@@ -84,11 +84,11 @@ Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of 
 
 ## Kauers–Koutschan recurrence conjecture
 
-Lean proves the source order-eight recurrence for the exact sixteen-mask
-finite sum at every index. It also proves the exact signed factorial
-block expansion for the actual permutations, the formal column series,
-and the exact Schur moment. The final coefficient extraction relating the
-two counts remains.
+Complete for Conjecture 10. Lean identifies the original forbidden-rise
+permutation count with the exact sixteen-mask sum and verifies the
+published order-eight recurrence at every natural index, including the
+empty permutation. The separate order-thirteen certificate checks the
+symbolic residuals.
 [Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md).
 
 ## Ekhad–Zeilberger’s most unfair bet conjecture

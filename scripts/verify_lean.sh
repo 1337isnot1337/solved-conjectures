@@ -2813,6 +2813,14 @@ modules=(
   Conjectures.KauersKoutschanTraceProducts
   Conjectures.KauersKoutschanWeightedCompositions
   Conjectures.KauersKoutschanColumnSeries
+  Conjectures.KauersKoutschanPolynomialMoments
+  Conjectures.KauersKoutschanTraceCoefficients
+  Conjectures.KauersKoutschanAssignmentMonomials
+  Conjectures.KauersKoutschanDiagonalCoefficients
+  Conjectures.KauersKoutschanCompositionCoefficients
+  Conjectures.KauersKoutschanMaskExpansion
+  Conjectures.KauersKoutschanMaskCoefficients
+  Conjectures.KauersKoutschanConjecture
   Conjectures.KauersKoutschanState
   Conjectures.KauersKoutschanFiniteRecurrence
 )
