@@ -4,6 +4,11 @@
 
 The target is [Conjecture 6 in the journal version](https://oro.open.ac.uk/98050/9/98050final.pdf) of *Lower General Position in Cartesian Products* (Conjecture 3.3 in the [arXiv version](https://arxiv.org/html/2404.19451#S3)). A set $S$ is general position if no three of its vertices satisfy a geodesic betweenness equality. It is terminal if, for every $x\notin S$, two distinct $a,b\in S$ satisfy $d(x,b)=d(x,a)+d(a,b)$. This endpoint property already implies maximality. We treat finite connected graphs; for a disconnected graph one can take the union of terminal sets of its components.
 
+- [Distance-regular graphs](DISTANCE-REGULAR.md): every Delsarte clique is terminal, with elementary witnesses in several classical families.
+- [Rank-threshold forms graphs](RANK-THRESHOLDS.md): terminal sets for all rectangular, symmetric, Hermitian, and alternating graph parameters, with an [exact graph-distance regression](check_rank_fibers.py).
+- [Powers of exchange graphs](EXCHANGE-POWERS.md): terminal cliques in all powers of Hamming, Johnson, Grassmann, and classical dual polar graphs.
+- [Odd graphs](ODD-GRAPHS.md): explicit constructions for all even parameters.
+
 ## Gated subgraphs
 
 Suppose $H$ is an isometric subgraph of $G$ with at least two vertices and each vertex $x$ outside $H$ has a gate $g\in H$: for every $z\in H$,
