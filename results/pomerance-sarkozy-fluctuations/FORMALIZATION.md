@@ -219,3 +219,20 @@ subexponential factors. This does not assert that the arithmetic
 replacement errors already meet those hypotheses.
 
 [Exponential transfer replay](verification/exponential-transfer/receipt.json)
+
+## Gaussian-profile Legendre rate
+
+The [Gaussian-profile rate checkpoint](../../lean/Conjectures/PomeranceSarkozyRareRateCheckpoint.lean)
+verifies the analytic rate in [DEVIATIONS.md](DEVIATIONS.md). Lean checks
+strict monotonicity of the cumulant slope, the unique real tilt and
+Legendre attainment, evenness and strict positivity off zero.
+It checks the quadratic coefficient \(\sqrt{\pi}/2\) at zero and the
+cubic coefficient \(1/6\) at both ends. These are exact limits of
+the fixed Gaussian-profile rate, not bounds for the arithmetic
+probabilities or a large-deviation principle for those probabilities.
+
+All 33 modules passed strict Lean compilation,
+the all-owned axiom audit (243 declarations,
+217 theorems, 92 private,
+11 named endpoints), and stock-kernel replay.
+[Gaussian-profile rate receipt](verification/rare-rate/receipt.json).
