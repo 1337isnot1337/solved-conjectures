@@ -1,0 +1,16 @@
+# Rooted transversals in the all-pairs regime
+
+This note records constraints for the part of the balanced rainbow-six-cycle graphon problem left by [MISSING-PAIR-PARITY.md](MISSING-PAIR-PARITY.md). It does not settle that regime.
+
+**Rooted transversal lemma.** For every partition of the six colors into three pairs, almost every vertex lies in positive density of rainbow triangles using one color from each pair. More quantitatively, if \(r(x)\) is the rooted density of such triangles for that partition, then
+\[
+\mu\{x:r(x)\le \delta\}\ \le\ \sqrt{\tfrac12\binom{17}{3}\delta}.
+\]
+
+Collapse each pair to a supercolor. There are three supercolors with degree \(1/3\) at every typical vertex. Let \(m(x),b(x),r(x)\) be the rooted triangle probabilities for one, two, and three supercolors. At each of the three possible wedge centers of the triangle, the two incident hues agree with conditional probability \(1/3\), even with the root \(x\) fixed. At the root this follows by two independent samples of its neighbors. At either other center it follows by conditioning also on that vertex and using its balanced color degrees. Thus the expected number of agreeing wedges is one, or \(3m(x)+b(x)=1\), while \(m(x)+b(x)+r(x)=1\). Hence \(r(x)=2m(x)\).
+
+In any measurable set \(D\) of positive mass, the density of monochromatic triangles restricted to \(D^3\) is at least \(\mu(D)^3/\binom{17}{3}\): sample 17 independent vertices from \(D\) and color their edges using the graphon. Every such three-coloring has a monochromatic triangle. Indeed at a vertex some color has at least six neighbors; either it occurs between two of those neighbors or their \(K_6\) uses only the remaining two colors and has a monochromatic triangle. A union bound over sample triples gives the density claim. Take \(D=\{r\le\delta\}\), and bound its monochrome density from above by \(\int_D m(x)\,dx\le\delta\mu(D)/2\). This proves the stated estimate and the almost-everywhere assertion. There are only fifteen pairings, so their assertions hold simultaneously almost everywhere.
+
+**Complementary palettes at one root are forbidden.** For a three-color palette \(P\), let \(T_P(x,y)\) be the sum of the kernels for all ordered three-edge paths using \(P\). Zero rainbow-six-cycle density implies \(T_P(x,y)T_{\bar P}(x,y)=0\) for almost all \(x,y\). This also disallows positive rooted triangle density for both palettes at the same typical \(x\): a positive ordered triangle integral at \(x\) remains positive if its terminal row is replaced by a sufficiently nearby one in \(L^1\). Almost every row has positive mass of other rows arbitrarily near it in the separable space of six \(L^1\) rows. Thus two complementary positive rooted densities would make both path kernels positive on a positive-measure set of pairs. This is a rooted statement, not a prohibition of complementary palettes at disjoint root sets.
+
+In particular almost every rooted palette family meets the transversals of every hue pairing and contains at most one of each complementary pair of triples. The exceptional all-pairs graphon would also realize every pair globally by [the missing-pair theorem](MISSING-PAIR-PARITY.md); the local constraints do not themselves imply this or force a common parity cut. Coordination: [#870](https://github.com/1337isnot1337/solved-conjectures/issues/870).
