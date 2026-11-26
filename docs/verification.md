@@ -1,5 +1,9 @@
 # Verification
 
+## En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem
+
+Run `python3 results/constant-weight-strong-wom/verify.py` to construct the local labels by exact conditional expectations and test the encoder and decoder. The checker covers 7,252 state–message pairs exhaustively across three examples, all 51 endpoint states in its check, and 12 further round trips with 78-bit messages. A second researcher checked the all-length proof and separately tested the label covering property on 92,159 layer/state pairs. [Proof](../results/constant-weight-strong-wom/PROOF.md) · [Independent review and audit](../results/constant-weight-strong-wom/AUDIT.md).
+
 ## Nathanson’s linear-form Sidon systems conjecture
 
 Run `python3 results/nathanson-sidon-systems/verify.py` to enumerate outputs in 119 signed, bilinear and higher-arity fixtures. The [proof](../results/nathanson-sidon-systems/PROOF.md) is for every nonzero integer coefficient vector, independently of the finite checks. [Source and audit](../results/nathanson-sidon-systems/AUDIT.md).

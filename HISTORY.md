@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem
+
+An explicit polynomial-time construction attains the capacity that En Gad, Yaakobi, Jiang and Bruck proved by counting. Writing exactly the prescribed number of available positions in each codeword allows recovery from the written word alone for every state and message. The same theorem establishes the optimal noiseless asymptotic rate of binary low-power cooling codes. [Proof](results/constant-weight-strong-wom/PROOF.md) · [Source and independent review](results/constant-weight-strong-wom/AUDIT.md).
+
 ## 2026-11-26 — Nathanson’s linear-form Sidon systems conjecture
 
 Coefficient-adjusted integer place values prove all three of Nathanson’s §6 questions without any prime restrictions. Balancing the two largest coefficients and separating the low residues gives the exact leading constant for two variables. [Proof](results/nathanson-sidon-systems/PROOF.md) · [Audit](results/nathanson-sidon-systems/AUDIT.md) · [Issue #798](https://github.com/1337isnot1337/solved-conjectures/issues/798).
