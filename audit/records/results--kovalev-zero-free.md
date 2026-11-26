@@ -28,6 +28,8 @@ Earlier exact resolution of the square-root case. MathDB 369171 proves strict po
 - Latest change to this landing file at the snapshot on 2026-11-24T18:39:40Z. [Commit 1a7487336](https://github.com/1337isnot1337/solved-conjectures/commit/1a74873367b32208c7ce53c894aeda351f92f78c).
 - Coordination and prior review. [#444](https://github.com/1337isnot1337/solved-conjectures/issues/444) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The original record contains 11 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

@@ -29,6 +29,8 @@ Conjectures 1 and 3 concern record distributions distinct from Conjecture 2 on t
 - Latest change to this landing file at the snapshot on 2026-11-21T05:58:59-06:00. [Commit 652eca642](https://github.com/1337isnot1337/solved-conjectures/commit/652eca642f9108bdfcd14e0f34c366df8a7463e5).
 - Coordination and prior review. [#157](https://github.com/1337isnot1337/solved-conjectures/issues/157).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

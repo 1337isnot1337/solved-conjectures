@@ -26,6 +26,8 @@ The upper-half-plane assertion concerns independence polynomials of random graph
 - Latest change to this landing file at the snapshot on 2026-11-26T10:50:36-06:00. [Commit 2e54a945a](https://github.com/1337isnot1337/solved-conjectures/commit/2e54a945aa14bb6965f88f9fc21c63e1d9183921).
 - Coordination and prior review. [#573](https://github.com/1337isnot1337/solved-conjectures/issues/573) · [#74](https://github.com/1337isnot1337/solved-conjectures/issues/74) · [#838](https://github.com/1337isnot1337/solved-conjectures/pull/838).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

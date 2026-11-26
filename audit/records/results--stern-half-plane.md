@@ -27,6 +27,8 @@ Earlier exact resolution. Shunshun Ma’s Theorem 1 treats every positive Stern 
 - Latest change to this landing file at the snapshot on 2026-11-25T09:29:13Z. [Commit 483da5250](https://github.com/1337isnot1337/solved-conjectures/commit/483da525046ebf672a910f593ef78419073d8e81).
 - Coordination and prior review. [#447](https://github.com/1337isnot1337/solved-conjectures/issues/447).
 
+The original record contains 9 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

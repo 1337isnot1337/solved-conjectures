@@ -25,6 +25,8 @@ Wang and Yang’s paper proves the ordinary Narayana case; Conjecture 4.1 impose
 - Latest change to this landing file at the snapshot on 2026-11-26T09:21:55-06:00. [Commit 121a7bf79](https://github.com/1337isnot1337/solved-conjectures/commit/121a7bf7982aa2c9d7e655148313b302bc24f6b7).
 - Coordination and prior review. [#785](https://github.com/1337isnot1337/solved-conjectures/issues/785) · [#98](https://github.com/1337isnot1337/solved-conjectures/issues/98) · [#840](https://github.com/1337isnot1337/solved-conjectures/pull/840).
 
+The original record contains 7 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

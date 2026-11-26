@@ -25,6 +25,8 @@ The source Conjecture 4.3 is nonperiodicity for permitted parts congruent to 1 m
 - Latest change to this landing file at the snapshot on 2026-11-26T08:56:04-08:00. [Commit b1a37546d](https://github.com/1337isnot1337/solved-conjectures/commit/b1a37546d9e0d1c4040747d62276baf5bf0990d5).
 - Coordination and prior review. [#434](https://github.com/1337isnot1337/solved-conjectures/issues/434).
 
+The original record contains 8 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

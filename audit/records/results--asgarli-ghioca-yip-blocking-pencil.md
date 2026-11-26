@@ -24,6 +24,8 @@ The logarithmic bound fixes a monomial degree d≥2. The compact catalogue and h
 - Latest change to this landing file at the snapshot on 2026-11-26T09:00:46-08:00. [Commit 8d693f83e](https://github.com/1337isnot1337/solved-conjectures/commit/8d693f83e0dd03b327bcf7260829e802132a8d8c).
 - Coordination and prior review. [#826](https://github.com/1337isnot1337/solved-conjectures/issues/826).
 
+The original record contains 9 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

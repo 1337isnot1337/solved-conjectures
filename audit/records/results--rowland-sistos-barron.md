@@ -35,6 +35,8 @@ Earlier exact disproof of the particular-rank clause of Conjecture 5.3. Both sou
 - Latest change to this landing file at the snapshot on 2026-11-24T17:25:50Z. [Commit 6e3e7c8d3](https://github.com/1337isnot1337/solved-conjectures/commit/6e3e7c8d36949098235f493604b7492ca4d9c154).
 - Coordination and prior review. [#115](https://github.com/1337isnot1337/solved-conjectures/issues/115).
 
+The original record contains 9 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

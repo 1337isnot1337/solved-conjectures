@@ -24,6 +24,8 @@ Published unboundedness for powers of the generating series is distinct from exa
 - Latest change to this landing file at the snapshot on 2026-11-24T12:33:15-06:00. [Commit fefb9083c](https://github.com/1337isnot1337/solved-conjectures/commit/fefb9083c228d9f60e48d1e5458e7bb041f63d70).
 - Coordination and prior review. [#429](https://github.com/1337isnot1337/solved-conjectures/issues/429).
 
+The original record contains 4 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

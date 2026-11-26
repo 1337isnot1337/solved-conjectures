@@ -26,6 +26,8 @@ Priority is qualified in the source. Classical enumeration gives the coefficient
 - Latest change to this landing file at the snapshot on 2026-11-21T04:53:54-06:00. [Commit cb558ee0c](https://github.com/1337isnot1337/solved-conjectures/commit/cb558ee0c8776ac6a9009d9156358bc21f757ce2).
 - Coordination and prior review. [#95](https://github.com/1337isnot1337/solved-conjectures/issues/95).
 
+The original record contains 4 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

@@ -26,6 +26,8 @@ Omega’s earlier n=1 refutation is exact for the literal Rather conjecture. The
 - Latest change to this landing file at the snapshot on 2026-11-26T10:26:39-06:00. [Commit a2adfdc61](https://github.com/1337isnot1337/solved-conjectures/commit/a2adfdc61736b5941b2fb150c8c8fea25c98c613).
 - Coordination and prior review. [#843](https://github.com/1337isnot1337/solved-conjectures/issues/843).
 
+The original record contains 3 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

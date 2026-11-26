@@ -32,6 +32,8 @@ The target is the exclusion of the specified Rauzy graphs at the stated factor c
 - Latest change to this landing file at the snapshot on 2026-11-21T15:17:58+01:00. [Commit 32efcb11a](https://github.com/1337isnot1337/solved-conjectures/commit/32efcb11ade9c76c325ee5fb7089c6c97dc3992c).
 - Coordination and prior review. [#148](https://github.com/1337isnot1337/solved-conjectures/issues/148).
 
+The original record contains 8 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

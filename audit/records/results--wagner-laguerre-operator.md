@@ -30,6 +30,8 @@ Earlier exact disproof. The September manuscript uses the very same witness 1 + 
 - Latest change to this landing file at the snapshot on 2026-11-25T07:45:08Z. [Commit b13f09c42](https://github.com/1337isnot1337/solved-conjectures/commit/b13f09c4289ae9a633697eaa481bccace0cdb3ab).
 - Coordination and prior review. [#137](https://github.com/1337isnot1337/solved-conjectures/issues/137).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

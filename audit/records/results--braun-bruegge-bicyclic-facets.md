@@ -26,6 +26,8 @@ The Omega same-source theorem treats the common-parity binomial facet sum in Con
 - Latest change to this landing file at the snapshot on 2026-11-25T23:59:21-06:00. [Commit 7aa1993e5](https://github.com/1337isnot1337/solved-conjectures/commit/7aa1993e5d396f7902d2423871329a53b7b3b622).
 - Coordination and prior review. [#481](https://github.com/1337isnot1337/solved-conjectures/issues/481).
 
+The original record contains 8 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

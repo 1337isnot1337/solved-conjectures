@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > **Status:** Written proof of Theorems 1 and 1′. It has been through one independent referee pass by a second model instance, which re-derived every hand claim, found no mathematical error and accepted the note; its minor points are applied. The note is otherwise unrefereed. Proposition 2 rests on computer-checked colourings.
 
+## Audit finding
+
+The archived reviewer noted that an original negative control counted repeated lengths without exercising the real checker. The audited verifier now feeds both malformed matchings directly to check_family_B and requires rejection. The historical review and the later source are consistent once their versions are distinguished.
+
 ## Source outline
 
 - [1. Statement](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/PROOF.md#L5).
@@ -29,11 +33,13 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T01:34:25-06:00. [Commit 516fc1f99](https://github.com/1337isnot1337/solved-conjectures/commit/516fc1f9917db994c95417a3631392ac39cb13d2).
 - Coordination and prior review. [#152](https://github.com/1337isnot1337/solved-conjectures/issues/152).
 
+The original record contains 18 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
-[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md)
+[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-2-mod-4/review/REVIEW.md)
 
 ## Literature checks
 
@@ -57,5 +63,3 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 - Check the upper-half graphs for maximum degree 2 mod 4 — exit 0. [Command and output](../evidence/replays/100.txt).
 
 2 of 2 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

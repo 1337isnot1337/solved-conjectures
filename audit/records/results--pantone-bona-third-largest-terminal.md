@@ -27,6 +27,8 @@ Verified the identity of the cited finite remove-first reference by its authors 
 - Latest change to this landing file at the snapshot on 2026-11-24T09:21:50Z. [Commit 9431cfc68](https://github.com/1337isnot1337/solved-conjectures/commit/9431cfc6885b00c607974641a127c341de913ec2).
 - Coordination and prior review. [#382](https://github.com/1337isnot1337/solved-conjectures/issues/382).
 
+The original record contains 4 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

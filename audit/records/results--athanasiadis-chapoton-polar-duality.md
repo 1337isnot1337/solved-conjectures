@@ -27,6 +27,8 @@ Conjecture 6.2 is polar duality for opposite preorders. The matched manuscripts 
 - Latest change to this landing file at the snapshot on 2026-11-25T17:04:32+01:00. [Commit 9506e213a](https://github.com/1337isnot1337/solved-conjectures/commit/9506e213afdff5ac07fe3e85e7bb6b11151d2032).
 - Coordination and prior review. [#423](https://github.com/1337isnot1337/solved-conjectures/issues/423).
 
+The original record contains 13 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

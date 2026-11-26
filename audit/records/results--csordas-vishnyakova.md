@@ -28,6 +28,8 @@ The landing page simultaneously reported no Lean verification and linked a compl
 - Latest change to this landing file at the snapshot on 2026-11-25T07:54:54Z. [Commit d8030320b](https://github.com/1337isnot1337/solved-conjectures/commit/d8030320b0b2898a4e820e4983a388ecc0359f29).
 - Coordination and prior review. [#132](https://github.com/1337isnot1337/solved-conjectures/issues/132) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

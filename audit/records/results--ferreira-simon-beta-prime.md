@@ -28,6 +28,8 @@ The repository target is Conjecture 1, a distributional identity for a beta-prim
 - Latest change to this landing file at the snapshot on 2026-11-21T01:36:51-06:00. [Commit fd39b713c](https://github.com/1337isnot1337/solved-conjectures/commit/fd39b713c067dbd8ec8f20e9424c673450adbf41).
 - Coordination and prior review. [#100](https://github.com/1337isnot1337/solved-conjectures/issues/100) · [#156](https://github.com/1337isnot1337/solved-conjectures/issues/156) · [#164](https://github.com/1337isnot1337/solved-conjectures/issues/164) · [#167](https://github.com/1337isnot1337/solved-conjectures/issues/167) · [#169](https://github.com/1337isnot1337/solved-conjectures/issues/169) · [#200](https://github.com/1337isnot1337/solved-conjectures/issues/200) · [#87](https://github.com/1337isnot1337/solved-conjectures/issues/87).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

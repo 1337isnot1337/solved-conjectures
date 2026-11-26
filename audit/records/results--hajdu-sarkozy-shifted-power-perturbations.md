@@ -21,11 +21,13 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T18:03:55Z. [Commit d4c72b54c](https://github.com/1337isnot1337/solved-conjectures/commit/d4c72b54c8825b38966afe4ab2b78ba1bdb8c013).
 - Coordination and prior review. [#416](https://github.com/1337isnot1337/solved-conjectures/issues/416) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The original record contains 74 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
-[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md)
+[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md) · [independent-review.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/verification/lane/independent-review.md)
 
 ## Literature checks
 

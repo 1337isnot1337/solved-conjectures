@@ -24,6 +24,8 @@ The November 3 subdivided 6-clique refutes the independent monophonic sum predic
 - Latest change to this landing file at the snapshot on 2026-11-26T09:25:28-06:00. [Commit d57704cd3](https://github.com/1337isnot1337/solved-conjectures/commit/d57704cd3224ef8fdd369fd1c8d6042b99645891).
 - Coordination and prior review. [#847](https://github.com/1337isnot1337/solved-conjectures/issues/847).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

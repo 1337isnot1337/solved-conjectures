@@ -28,6 +28,8 @@ The same-source Principia and Omega papers prove bottom-heaviness of coefficient
 - Latest change to this landing file at the snapshot on 2026-11-24T14:26:22Z. [Commit 61b05d497](https://github.com/1337isnot1337/solved-conjectures/commit/61b05d497f54e8472225a4e8f6a4f0113576cf8b).
 - Coordination and prior review. [#92](https://github.com/1337isnot1337/solved-conjectures/issues/92).
 
+The original record contains 6 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

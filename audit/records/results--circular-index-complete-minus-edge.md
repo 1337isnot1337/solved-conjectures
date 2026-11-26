@@ -33,6 +33,8 @@ The two packages share the exact single-edge theorem: in the second notation n=d
 - Latest change to this landing file at the snapshot on 2026-11-26T02:03:35-06:00. [Commit 08acaebf8](https://github.com/1337isnot1337/solved-conjectures/commit/08acaebf819f6aa4920927034b8beaa19fb1a8ea).
 - Coordination and prior review. [#147](https://github.com/1337isnot1337/solved-conjectures/issues/147).
 
+The original record contains 25 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

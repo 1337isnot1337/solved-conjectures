@@ -17,6 +17,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T23:08:20-06:00. [Commit b6b58f4a6](https://github.com/1337isnot1337/solved-conjectures/commit/b6b58f4a64bcc749da5c9c79d59091a1f812dc8f).
 - Latest change to this landing file at the snapshot on 2026-11-19T00:14:43-06:00. [Commit 75df6294f](https://github.com/1337isnot1337/solved-conjectures/commit/75df6294fbcaae78f5cab9b73999a506235cf4f9).
 
+The original record contains 1 tracked file. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

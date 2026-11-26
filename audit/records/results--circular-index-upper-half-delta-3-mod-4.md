@@ -31,11 +31,13 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-26T04:11:47-06:00. [Commit 13367d6b5](https://github.com/1337isnot1337/solved-conjectures/commit/13367d6b53a359a08a783b168e2ae46a399b008c).
 - Coordination and prior review. [#152](https://github.com/1337isnot1337/solved-conjectures/issues/152).
 
+The original record contains 20 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
-[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/FORMALIZATION.md)
+[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/FORMALIZATION.md) · [LOG.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/review/LOG.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-delta-3-mod-4/review/REVIEW.md)
 
 ## Literature checks
 

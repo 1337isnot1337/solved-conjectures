@@ -29,6 +29,8 @@ The 2024 paper titled A conjecture of Hegyvári describes a partial result. Kohl
 - Latest change to this landing file at the snapshot on 2026-11-24T12:21:04Z. [Commit 6432592c0](https://github.com/1337isnot1337/solved-conjectures/commit/6432592c03b24aed190ed7b3204ed942a40a8da4).
 - Coordination and prior review. [#446](https://github.com/1337isnot1337/solved-conjectures/issues/446).
 
+The original record contains 3 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

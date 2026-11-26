@@ -26,6 +26,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T06:44:02-06:00. [Commit 556ec3d6b](https://github.com/1337isnot1337/solved-conjectures/commit/556ec3d6b472418fbe72219e07a5c685f74ab80a).
 - Coordination and prior review. [#177](https://github.com/1337isnot1337/solved-conjectures/issues/177).
 
+The original record contains 7 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

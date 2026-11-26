@@ -27,6 +27,8 @@ The November Riesz-ratios manuscript proves a two-point bound for the reverse ra
 - Latest change to this landing file at the snapshot on 2026-11-24T11:08:32Z. [Commit c3b034456](https://github.com/1337isnot1337/solved-conjectures/commit/c3b034456e4948fa8222eb9776b7c40530d6a711).
 - Coordination and prior review. [#421](https://github.com/1337isnot1337/solved-conjectures/issues/421).
 
+The original record contains 3 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

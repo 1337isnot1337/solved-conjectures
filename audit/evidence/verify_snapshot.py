@@ -1,6 +1,7 @@
 """Verify the dossier coverage, source bytes and replay links in a full git clone."""
 from hashlib import sha256
 from pathlib import Path
+import gzip
 import json
 import subprocess
 import sys
@@ -35,6 +36,21 @@ def main():
         for source in record["record_files"]:
             key = record["source_ref"] + ":" + source["path"]
             assert source_objects.setdefault(key, source["sha256"]) == source["sha256"], key
+    with gzip.open(AUDIT / "evidence" / "tracked-files.tsv.gz", "rt") as manifest:
+        assert next(manifest).strip() == "revision\tfile_mode\tgit_object\tbytes\tpath"
+        trees = {}
+        for row in manifest:
+            revision, mode, oid, size, path = row.rstrip("\n").split("\t", 4)
+            trees.setdefault(revision, {})[path] = (mode, oid, size)
+    for revision, stored in trees.items():
+        args = [] if revision == BASE else [r["record"] for r in records if r["source_ref"] == revision]
+        tree = {}
+        for row in git("ls-tree", "-rlz", revision, "--", *args).rstrip(b"\0").split(b"\0"):
+            metadata, path = row.decode().split("\t", 1)
+            mode, _, oid, size = metadata.split()
+            tree[path] = (mode, oid, size)
+        assert tree == stored, revision
+
     proc = subprocess.Popen(["git", "-C", str(ROOT), "cat-file", "--batch"],
                             stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     with proc.stdin, proc.stdout:

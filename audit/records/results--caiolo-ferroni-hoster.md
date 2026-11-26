@@ -27,6 +27,8 @@ The rank-five matroid family, the associated dual Chow polynomial and the augmen
 - Latest change to this landing file at the snapshot on 2026-11-24T15:43:48-08:00. [Commit cb2f3ab96](https://github.com/1337isnot1337/solved-conjectures/commit/cb2f3ab96c2c48738ece6e404e2c5577e5df0ad8).
 - Coordination and prior review. [#111](https://github.com/1337isnot1337/solved-conjectures/issues/111) · [#560](https://github.com/1337isnot1337/solved-conjectures/issues/560) · [#597](https://github.com/1337isnot1337/solved-conjectures/pull/597).
 
+The original record contains 7 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

@@ -23,6 +23,8 @@ The target in Problem 4.1 is the second-order limsup. On the groups of order 3 t
 - Latest change to this landing file at the snapshot on 2026-11-25T07:26:43Z. [Commit 68b5c5a06](https://github.com/1337isnot1337/solved-conjectures/commit/68b5c5a0667b06fc64c66817adbec265d2df648d).
 - Coordination and prior review. [#490](https://github.com/1337isnot1337/solved-conjectures/issues/490).
 
+The original record contains 7 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.

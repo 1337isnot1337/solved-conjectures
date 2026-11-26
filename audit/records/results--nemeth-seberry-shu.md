@@ -24,6 +24,8 @@ Checked the role of the uniformity assumption in Divoux–Wang, Proposition 3.1 
 - Latest change to this landing file at the snapshot on 2026-11-25T09:11:13Z. [Commit 69a8cd0aa](https://github.com/1337isnot1337/solved-conjectures/commit/69a8cd0aaeb7de8eada373f9e24c19120e84df3c).
 - Coordination and prior review. [#54](https://github.com/1337isnot1337/solved-conjectures/issues/54).
 
+The original record contains 7 tracked files. Its code, verification assets and nested documents are included in the [full Git object manifest](../evidence/tracked-files.tsv.gz).
+
 The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
