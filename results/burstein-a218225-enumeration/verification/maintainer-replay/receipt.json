@@ -1,0 +1,183 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T02:22:25.137117+00:00",
+  "finished_at": "2026-11-26T02:45:54.046139+00:00",
+  "root": "Conjectures.BursteinA218225",
+  "project_modules": [
+    "Conjectures.BursteinA218225",
+    "Conjectures.BursteinA218225Defs",
+    "Conjectures.BursteinA218225Kernel",
+    "Conjectures.BursteinA218225Series",
+    "Conjectures.BursteinA218225TreeX",
+    "Conjectures.BursteinA218225TreeY"
+  ],
+  "required_endpoints": [
+    "Conjectures.BursteinA218225.countX_eq_countY",
+    "Conjectures.BursteinA218225.seriesX_equation",
+    "Conjectures.BursteinA218225.seriesY_equation",
+    "Conjectures.BursteinA218225.series_unique"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/BursteinA218225.lean": "e9b30471df3c52e191ba87ffc9dfd9b9c163650a352a4098bde980b0d82cf484",
+    "lean/Conjectures/BursteinA218225Defs.lean": "24927f392c8e03da1341c6d51792e82e51d1131b1846b9e08b2bd0e41120de1d",
+    "lean/Conjectures/BursteinA218225Kernel.lean": "bbe15dc9df87c8ea3d831eb8c071ce183965b9a657acc2844e69d896b0126e95",
+    "lean/Conjectures/BursteinA218225Series.lean": "a9ff790fa1d3acb84a4b94fe5bfc682ac0bb5dad2adf827b6a430f6f1a133480",
+    "lean/Conjectures/BursteinA218225TreeX.lean": "364ccc72ff373ac9770663f542df3a5b005e5a9b6f8c4d982d4673a188a065ee",
+    "lean/Conjectures/BursteinA218225TreeY.lean": "5a230339e495796f81c8dd2efd13a2d05351b23a44b5afb7a95d39a4a2c40173"
+  },
+  "input_sha256": {
+    "lean/Conjectures/BursteinA218225.lean": "e9b30471df3c52e191ba87ffc9dfd9b9c163650a352a4098bde980b0d82cf484",
+    "lean/Conjectures/BursteinA218225Defs.lean": "24927f392c8e03da1341c6d51792e82e51d1131b1846b9e08b2bd0e41120de1d",
+    "lean/Conjectures/BursteinA218225Kernel.lean": "bbe15dc9df87c8ea3d831eb8c071ce183965b9a657acc2844e69d896b0126e95",
+    "lean/Conjectures/BursteinA218225Series.lean": "a9ff790fa1d3acb84a4b94fe5bfc682ac0bb5dad2adf827b6a430f6f1a133480",
+    "lean/Conjectures/BursteinA218225TreeX.lean": "364ccc72ff373ac9770663f542df3a5b005e5a9b6f8c4d982d4673a188a065ee",
+    "lean/Conjectures/BursteinA218225TreeY.lean": "5a230339e495796f81c8dd2efd13a2d05351b23a44b5afb7a95d39a4a2c40173",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225Defs.olean",
+        "Conjectures/BursteinA218225Defs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Defs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225TreeX.olean",
+        "Conjectures/BursteinA218225TreeX.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225TreeX.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225TreeY.olean",
+        "Conjectures/BursteinA218225TreeY.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225TreeY.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225Series.olean",
+        "Conjectures/BursteinA218225Series.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Series.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225Kernel.olean",
+        "Conjectures/BursteinA218225Kernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225Kernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/BursteinA218225.olean",
+        "Conjectures/BursteinA218225.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BursteinA218225.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.BursteinA218225",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 815,
+    "modules": 6,
+    "private_declarations": 380,
+    "raw_declarations": 815,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 719
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "contributor_commit": "9355e14ca5a04645b899212424200bb91006896a",
+  "reviewed_main": "2051345a2b7bf3a5347040c41fd35b9e208ef8d9",
+  "additional_statement_check": {
+    "path": "StatementCheck.lean",
+    "sha256": "380026ed6414687b315fffb27933032568cd970c53d40233547fd37c9fd16b88",
+    "strict_compile": "PASS",
+    "axiom_output": [
+      "'BursteinReview.counts_match_primary_statement' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'BursteinReview.univariate_series_match_primary_equation' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  }
+}

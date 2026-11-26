@@ -1,6 +1,11 @@
 # Lean verification status
 
 
+## Burstein’s A218225 enumeration conjecture
+
+Complete for the two outstanding avoidance classes `X = Av(2134, 42153, 24153)` and `Y = Av(2143, 42135, 24135)`. Lean proves literal equinumerosity `countX n = countY n` for every `n : ℕ` (including `n = 0`) and proves that their common nonempty generating series `P ∈ PowerSeries ℤ` is the unique zero-constant-term solution to `P = (1 + P)(x + (1 - x)P^2)`. The six-module closure passed strict compilation, the complete 815-declaration owned axiom audit, and stock-kernel replay. [Lean scope and receipt](../results/burstein-a218225-enumeration/FORMALIZATION.md).
+
+
 ## Pomerance–Sárközy’s fluctuation conjecture
 
 Partial. Lean verifies the literal arithmetic count, factorial tails,
@@ -283,7 +288,7 @@ proofs are documented separately in the catalogue and result package.
 | Sokal’s Apéry moment threshold | Partial | Lean excludes every parameter with 0 < x ≤ 1/40 and an open neighborhood of one quarter. It checks the moment continuation and the lower-endpoint obstruction under the torus transform identity. The identity and the saddle cusp remain unformalized. [Lean scope](../results/sokal-apery-moment-threshold/FORMALIZATION.md) |
 | Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture | Complete | Conjectures 7.3 and 7.2 for all positive sizes, pinnacle sets, and peak counts, using literal permutations and inverse descents. The full history bijection, root preservation, symmetry, and nonnegative gamma expansion are proved. The 25-module closure passed strict compilation, the all-owned audit (641 declarations, 479 theorems), and stock-kernel replay. Conjecture 7.1 remains separate. [Statement audit and receipt](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md). |
 | Burstein’s descent-top shape-Wilf conjecture | Complete | Both original conjectures fail on one valid Ferrers board with suffix 1. The stronger every-suffix construction is written only. |
-| Burstein’s A218225 enumeration conjecture | Not formalized | Both previously unresolved avoidance classes have the same maximum-insertion tree and the recorded algebraic generating function. The earlier first class is credited. |
+| Burstein’s A218225 enumeration conjecture | Complete | Both previously unresolved avoidance classes `X = Av(2134, 42153, 24153)` and `Y = Av(2143, 42135, 24135)` are proved literally equinumerous for every `n : ℕ`, with common nonempty generating series uniquely satisfying `P = (1 + P)(x + (1 - x)P^2)`. Six-module strict build, 815-declaration all-owned axiom audit, and stock-kernel replay passed. [Lean scope and receipt](../results/burstein-a218225-enumeration/FORMALIZATION.md). |
 | Steinerberger’s quantitative Feldheim-tail conjecture | Complete for both original conjectures | The actual absolutely continuous unbounded nonnegative law violates both proposed ratio bounds for every positive threshold, with its actual expectation and median. All four modules passed strict compilation, the audit of 103 owned declarations (92 theorems), and stock-kernel replay. The smoothing, all-parameter, strict log-concavity, and rate supplements remain unformalized. [Scope and receipt](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md). |
 | Benfield–Lippard’s stable Waring-gap symmetry conjecture | Complete for original Conjecture 10.1 and intended reflection formulation 10.2 | At both exponents 64 and 128, the proof identifies the entire stable exception set, its largest element and a duplicate-free finite list of all members, and proves strict symmetry defect. Seven-module strict build, all-owned audit (335 declarations, 248 theorems, 108 private declarations) and independent kernel replay passed. Exact numerical genus supplement remains separate. [Scope and receipt](../results/benfield-lippard-waring-gap-symmetry/LEAN.md). |
 | Benfield–Lippard’s stable Waring-gap parity conjecture | Complete | Both parities in Conjecture 10.4 for every exponent at least two. Stronger two-adic congruences are written only. |
