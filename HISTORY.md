@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — The Steiner triple system sail problem
+
+A double count and a parity argument answer Gyárfás’s sail question in every sufficiently large two-colored Steiner triple system. A positive fraction of all sails are monochromatic. One color contains a linear number of vertex-disjoint sails. [Proof](results/steiner-triple-system-sail/PROOF.md) · [Source and independent review](results/steiner-triple-system-sail/AUDIT.md).
+
 ## 2026-11-26 — Dukes’s literal revstack descent polynomials
 
 Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Theorems and source-matched receipt](results/dukes-revstack/FORMALIZATION.md).
