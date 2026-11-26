@@ -4,7 +4,7 @@ Erdős asks which increasing sequences of positive exponents $E=\{n_1,n_2,\ldots
 
 ## A sufficient condition for prescribed peaks
 
-The [construction and proof](prescribed-scales.md) establish the required peaks for every prescribed exponent set with at most $K H^\sigma$ points in each interval of length $H\ge1$, for any fixed $\sigma<1$ with $\sigma>0$. In particular this includes all $n_i=\lfloor i^\alpha\rfloor$ with $\alpha>1$. The construction uses one primitive set for all requested scales.
+The [construction and proof](prescribed-scales.md) establish the required peaks for every prescribed exponent set with at most $K H^\sigma$ points in each interval of length $H\ge1$, for any fixed $\sigma<1$ with $\sigma>0$. In particular this includes all $n_i=\lfloor i^\alpha\rfloor$ with $\alpha>1$. The construction uses one primitive set for all requested scales. The [full-counting-dimension extension](prescribed-scales.md#exponent-sets-of-full-counting-dimension) also allows every uniformly bounded interval count $N_E(H)\ll H\exp(-c(\log H)^a)$ for $1/2<a<1$. For example, it covers $n_i=\lfloor i\exp((\log i)^a)\rfloor$, for which no upper bound $N_E(H)\ll H^\sigma$ with fixed $\sigma<1$ holds.
 
 ## An obstruction in every translated interval of exponents
 
