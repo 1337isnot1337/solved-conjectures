@@ -4,4 +4,4 @@ The exact targets are [Braun–Bruegge, JIS 2023, Conjectures 13, 32 and 33](htt
 
 Independent review checked the exact facet formulas including paths of length one and the simple-graph qualification, Wallis estimates, large-length inequalities and strict balance. The small-parameter base and no-extra-ties checks were independently replayed over 60,899 and 82,037 tuples. Neither verification is used in lieu of the all-large-length proofs.
 
-No Lean verification, external review or absolute priority claim is made.
+The written results were reviewed before the Lean formalization. The later [Lean proof and receipt](FORMALIZATION.md) cover both geometric facet maxima and all theta equality cases.

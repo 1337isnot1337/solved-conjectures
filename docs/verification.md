@@ -1063,6 +1063,8 @@ Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact len
 
 ## Bicyclic facets and complete-graph specialization
 
+The [joint Lean verification](../results/braun-bruegge-bicyclic-facets/FORMALIZATION.md) checks the sharp bicyclic maximum and exact theta optimizer on the geometric facet counts. It includes the finite comparisons and the uniform bounds for all larger path lengths.
+
 Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 results/braun-bruegge-bicyclic-facets/check_maximizer.py` for the exact finite parts of the two graph theorems. Run `python3 results/gonzalez-dleon-wachs-complete-graphs/check_complete.py` for the independent exact recurrence comparisons of complete graphs.
 
 ## Sharp matching-number facet bound

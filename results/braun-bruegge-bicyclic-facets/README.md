@@ -4,6 +4,7 @@
 
 - [Complete proof](PROOF.md)
 - [Exact theta optimizer proof](THETA-MAXIMIZER.md)
+- [Complete Lean verification of both theorems](FORMALIZATION.md)
 - [Exact mixed-parity bound checker](check.py)
 - [Exact optimizer checker](check_maximizer.py)
 - [Independent audit and earlier work](AUDIT.md)

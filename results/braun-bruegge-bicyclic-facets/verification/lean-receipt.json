@@ -1,0 +1,1720 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T04:25:59.558623+00:00",
+  "finished_at": "2026-11-26T05:58:21.012682+00:00",
+  "root": "Conjectures.BraunBrueggeBicyclicFacets",
+  "project_modules": [
+    "Conjectures.BraunBrueggeBicyclicBridgeCounts",
+    "Conjectures.BraunBrueggeBicyclicBridgeJoin",
+    "Conjectures.BraunBrueggeBicyclicBridgePartition",
+    "Conjectures.BraunBrueggeBicyclicBridgePolar",
+    "Conjectures.BraunBrueggeBicyclicBridgeReduction",
+    "Conjectures.BraunBrueggeBicyclicCentralMass",
+    "Conjectures.BraunBrueggeBicyclicCoreTheta",
+    "Conjectures.BraunBrueggeBicyclicCoreWedge",
+    "Conjectures.BraunBrueggeBicyclicCycleBalance",
+    "Conjectures.BraunBrueggeBicyclicCycleCount",
+    "Conjectures.BraunBrueggeBicyclicCycleEmbedding",
+    "Conjectures.BraunBrueggeBicyclicCycleGeometry",
+    "Conjectures.BraunBrueggeBicyclicCycleProducts",
+    "Conjectures.BraunBrueggeBicyclicCycleSteps",
+    "Conjectures.BraunBrueggeBicyclicEar",
+    "Conjectures.BraunBrueggeBicyclicFacets",
+    "Conjectures.BraunBrueggeBicyclicFiniteArithmetic",
+    "Conjectures.BraunBrueggeBicyclicFiniteCorrect",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows005To024",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows025To044",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows045To059",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows060To074",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows075To087",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows088To098",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows099To108",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows109To117",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows118To125",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows126To132",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows133To138",
+    "Conjectures.BraunBrueggeBicyclicFiniteRows139To143",
+    "Conjectures.BraunBrueggeBicyclicMaximum",
+    "Conjectures.BraunBrueggeBicyclicMixedBounds",
+    "Conjectures.BraunBrueggeBicyclicMixedLarge",
+    "Conjectures.BraunBrueggeBicyclicNormalizedCounts",
+    "Conjectures.BraunBrueggeBicyclicPathWords",
+    "Conjectures.BraunBrueggeBicyclicRank",
+    "Conjectures.BraunBrueggeBicyclicSameParity",
+    "Conjectures.BraunBrueggeBicyclicSigns",
+    "Conjectures.BraunBrueggeBicyclicThetaBound",
+    "Conjectures.BraunBrueggeBicyclicThetaCount",
+    "Conjectures.BraunBrueggeBicyclicThetaEmbedding",
+    "Conjectures.BraunBrueggeBicyclicThetaFibers",
+    "Conjectures.BraunBrueggeBicyclicThetaGeometry",
+    "Conjectures.BraunBrueggeBicyclicThetaGraph",
+    "Conjectures.BraunBrueggeBicyclicThetaReindex",
+    "Conjectures.BraunBrueggeBicyclicThetaSize",
+    "Conjectures.BraunBrueggeBicyclicThetaSteps",
+    "Conjectures.BraunBrueggeBicyclicTree",
+    "Conjectures.BraunBrueggeBicyclicUnicyclic",
+    "Conjectures.BraunBrueggeBicyclicUnitPath",
+    "Conjectures.BraunBrueggeBicyclicWedge",
+    "Conjectures.BraunBrueggeBicyclicWedgeAttainment",
+    "Conjectures.BraunBrueggeBicyclicWedgeBenchmark",
+    "Conjectures.BraunBrueggeBicyclicWedgeSize",
+    "Conjectures.BraunBrueggeMinimum",
+    "Conjectures.BraunBrueggeMinimumAlmostPerfectFaces",
+    "Conjectures.BraunBrueggeMinimumAugmenting",
+    "Conjectures.BraunBrueggeMinimumBipartite",
+    "Conjectures.BraunBrueggeMinimumBipartiteComparison",
+    "Conjectures.BraunBrueggeMinimumBipartiteFacets",
+    "Conjectures.BraunBrueggeMinimumCompact",
+    "Conjectures.BraunBrueggeMinimumCompleteBipartite",
+    "Conjectures.BraunBrueggeMinimumCrossing",
+    "Conjectures.BraunBrueggeMinimumFacets",
+    "Conjectures.BraunBrueggeMinimumGeometry",
+    "Conjectures.BraunBrueggeMinimumMatchingFaces",
+    "Conjectures.BraunBrueggeMinimumMatchingModel",
+    "Conjectures.BraunBrueggeMinimumNonbipartite",
+    "Conjectures.BraunBrueggeMinimumPolar",
+    "Conjectures.BraunBrueggeMinimumRecovery",
+    "Conjectures.BraunBrueggeMinimumRecoveryCount",
+    "Conjectures.BraunBrueggeMinimumUncoveredCount",
+    "Conjectures.BraunBrueggeMinimumUncoveredFaces",
+    "Conjectures.BraunBrueggeThetaOptimizer",
+    "Conjectures.BraunBrueggeThetaOptimizerArithmetic",
+    "Conjectures.BraunBrueggeThetaOptimizerBalance",
+    "Conjectures.BraunBrueggeThetaOptimizerFinite",
+    "Conjectures.BraunBrueggeThetaOptimizerGeometry",
+    "Conjectures.BraunBrueggeThetaOptimizerLarge",
+    "Conjectures.BraunBrueggeThetaOptimizerLower",
+    "Conjectures.BraunBrueggeThetaOptimizerMass",
+    "Conjectures.BraunBrueggeThetaOptimizerRows",
+    "Conjectures.BraunBrueggeThetaOptimizerRows011To042",
+    "Conjectures.BraunBrueggeThetaOptimizerRows043To067",
+    "Conjectures.BraunBrueggeThetaOptimizerRows068To085",
+    "Conjectures.BraunBrueggeThetaOptimizerRows086To098",
+    "Conjectures.BraunBrueggeThetaOptimizerRows099To109",
+    "Conjectures.BraunBrueggeThetaOptimizerRows110To118",
+    "Conjectures.BraunBrueggeThetaOptimizerRows119To125",
+    "Conjectures.BraunBrueggeThetaOptimizerRows126To132",
+    "Conjectures.BraunBrueggeThetaOptimizerRows133To138",
+    "Conjectures.BraunBrueggeThetaOptimizerRows139To143",
+    "Conjectures.BraunBrueggeThetaOptimizerTwoPath",
+    "Conjectures.BraunBrueggeThetaOptimizerUpper",
+    "Conjectures.BraunBrueggeThetaOptimizerWallis"
+  ],
+  "required_endpoints": [
+    "BraunBruegge.exists_graph_ear",
+    "BraunBruegge.ThetaPathWords.embedding_le",
+    "BraunBruegge.closed_ear_bicyclic_facet_card",
+    "BraunBruegge.open_ear_bicyclic_facet_bound",
+    "BraunBruegge.bicyclic_polar_bound_of_bridgeless",
+    "BraunBruegge.bridgeless_bicyclic_facet_bound",
+    "BraunBruegge.bicyclic_facet_bound",
+    "BraunBruegge.braun_bruegge_bicyclic_facet_maximum",
+    "BraunBruegge.theta_facets_le_wedge",
+    "BraunBruegge.wedgeBenchmark_attained_all",
+    "BraunBruegge.unicyclic_polar_vertex_card",
+    "BraunBruegge.extra_edge_isBridge_of_equal_rank",
+    "BraunBruegge.computedThetaFacetCount_eq",
+    "BraunBruegge.thetaOptimizer_even_order",
+    "BraunBruegge.thetaOptimizer_odd_order",
+    "BraunBruegge.theta_optimizer_finite",
+    "BraunBruegge.centralSignMass_sq_lower_three_fifths",
+    "BraunBruegge.normalizedCommonSum_off_center",
+    "BraunBruegge.normalizedMixed_two_path",
+    "BraunBruegge.nonminimal_even_theta_upper",
+    "BraunBruegge.nonminimal_odd_theta_upper",
+    "BraunBruegge.thetaPairScore_balanced",
+    "BraunBruegge.thetaOptimizer_large_sorted",
+    "BraunBruegge.braun_bruegge_theta_optimizer"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/BraunBrueggeBicyclicBridgeCounts.lean": "b3465a3e35b3ff209c3404de96ce44ec549bc354ab5c94015f93530a7d038c33",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgeJoin.lean": "1a4569c9f7df131323262788664b2213738a580a27a547c67514c8956a6383dd",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgePartition.lean": "2ac084271e81ce47b2879751bb0a52cc06da924e07e5cb0f24e763722bfa8b2e",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgePolar.lean": "11a605a5bce0dcfc02860d088a6c4d771cbd71b53deb09dec9ea2e75b1c4158f",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgeReduction.lean": "5328199e2f6f15a173993e94b234e9f6162604a2eea23835d4d9d8088f11e132",
+    "lean/Conjectures/BraunBrueggeBicyclicCentralMass.lean": "4101ffd7e12edfd70c60641d2ba707cb52e1c9c071e82191d9d52237db2eaffd",
+    "lean/Conjectures/BraunBrueggeBicyclicCoreTheta.lean": "23bf10a12280ad85f4d3e9c35aa7c59e1dcfd401e2d7dc12c8f49aeb30c6e25f",
+    "lean/Conjectures/BraunBrueggeBicyclicCoreWedge.lean": "b48802dd599cb33e2337004bf406e2f23808ca2aa67ef0da5e00f3ab5d664a45",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleBalance.lean": "baed220645a56f492d697f5f0455aa5b09d8fd411bd4168e679c9daec8f37852",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleCount.lean": "706aca04a1fdd62c33af17ae88c08534f7b74e86cb396812ea402aa34b0521b7",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleEmbedding.lean": "647a6d03a000c84ec7b72d364ec608fb3d14aca72bff2cd783e23eeae9705c96",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleGeometry.lean": "8d756c0281b520477f3d78e7bc729a88ebecce2e3272515d8235ce19c96075af",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleProducts.lean": "70677de868467b6323c9b506eb3894cbf743bc1b28147363516ca99ba198abd1",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleSteps.lean": "e556dc57f4233dcb14f8ee16c8b10bcecddc86244aff8d2d9396868d81d27a6e",
+    "lean/Conjectures/BraunBrueggeBicyclicEar.lean": "5483889350f8483a4b51ca014686ba60d3419503581aa9b4dba759870f2d5957",
+    "lean/Conjectures/BraunBrueggeBicyclicFacets.lean": "b9e635795240dd41dc9ef3fb74c6affc9966771ee40e75be3706a32b9da69a14",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteArithmetic.lean": "350721a93bd3ceb17aa939657e0c838bdd2e0fe05574f5593e0de4e92f82da26",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteCorrect.lean": "598e36beaa2d2710c06fc8c38a6ab8999384df513a50c49f8edf9dcdb35cb444",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows.lean": "7e67414178d6425fce52e2de532ba7997ae2491caa59002e31ccf2d8dc80874a",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows005To024.lean": "acd2d7c21666363422ffe012c752b77c8b5cc6141af7ce90a8f71d98eb757373",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows025To044.lean": "d82ca0f2a96386e57bd7fb39c030d0582875e9f27b37f8bd665b9ab91dfb01e3",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows045To059.lean": "6fb87ac9e028663db1ef875710144c50428f582329630473ff491b73d2549efe",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows060To074.lean": "63e7cded67bbd9deba2a77e59d14cdec5bf6788a543dc7d9584a472ae4d08639",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows075To087.lean": "19992fc47a9176ad12398e5e3289829c4e2a2d780326649b7c22c11b17a1dbb1",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows088To098.lean": "082ccd8547aa6780c434e5ab13415d0547cffa21f1ace21a1b7ee8676752d9aa",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows099To108.lean": "bf164699a611d02285416e30c09ee15eb658562f418a3e8d5907025820742fdc",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows109To117.lean": "586efd510bd727a8972346d5c4dd7411d79f861969b9b0bef39bfb3d0a599fcf",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows118To125.lean": "f15f67ea1f8d1bf2763ed735e0deb4f1965b9cfcd5a600069c19af60dac35725",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows126To132.lean": "b63df565b2688eaa7f9b9aedc67e72f1bb16fc482c1d260c282fc6d9458d3d09",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows133To138.lean": "84e4110427e8271b6735df68029407828d58634478164d868279ea6a3fec801f",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows139To143.lean": "49a724c7d4532893c6b64c73fc6d7fcf1cd1bd4a2c44ab8ee8b7d26b9883e17b",
+    "lean/Conjectures/BraunBrueggeBicyclicMaximum.lean": "a9fcfa90e0775f885bb1f783e76464e7b40e8e3964f5820eeca51488bbe2e44e",
+    "lean/Conjectures/BraunBrueggeBicyclicMixedBounds.lean": "3209d4be756817c07a8d7ffa7691e3f9da8f2a49cfb9a1c5663652c7f90f2884",
+    "lean/Conjectures/BraunBrueggeBicyclicMixedLarge.lean": "731aaa4934ae1d70968d08cf08fbb62b8f3aa18071cddeaa06ae53da9c347a6e",
+    "lean/Conjectures/BraunBrueggeBicyclicNormalizedCounts.lean": "400147bcd62e2de9c4435f9de1364ba06ef8401f11a28e1bde8239408d1550b7",
+    "lean/Conjectures/BraunBrueggeBicyclicPathWords.lean": "891f23ffb1d2cfe3cb8d745779fd523dce3d4f21a7ee62133d0ec4740627bebc",
+    "lean/Conjectures/BraunBrueggeBicyclicRank.lean": "43062cca958faab3763cbdf5355317a1f0a309250f7cb3b24a96f0bb90500095",
+    "lean/Conjectures/BraunBrueggeBicyclicSameParity.lean": "2ec9b78b0550447d4d701b0864b62c4a3d1ebf0705bf62974d474a5aa6e17b7f",
+    "lean/Conjectures/BraunBrueggeBicyclicSigns.lean": "3fc3938082c09afa28b8753ea380cf09b5fff7bad30b1bc44540a85a7e2631dd",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaBound.lean": "926b4dc7d0e3fc2788e7e9aee481b5a084a830daacf26272d637e466fffcf732",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaCount.lean": "e6b4eeca1dd8c1642a1e4ad9f26a44c8e07a8e103895f9160172c134e9268b76",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaEmbedding.lean": "74f22250fc59e6fbe0f8751b130f5ee8bc817f5656bc4e05b982318496c18d57",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaFibers.lean": "9658405e3f849961f40f2d6d605ba874e04f29ece4fb0fe31dd8251f093bd591",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaGeometry.lean": "7039b17296bc2c3fc4a83ba1098752617f91aef04071bd093401656b7c7f7b8e",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaGraph.lean": "28717e37e149a90e98bce8fecf8cf122e1bf4f4776fcc81361b2e8a7cf2cf5ba",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaReindex.lean": "bdc8d5283b5d2105210b8e8dfc0e9103953a856a5d7e502fc5b96467205199aa",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaSize.lean": "085c26f9b369520b320de020236f0990f2edd0738f327a79580877ef2dbd62cb",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaSteps.lean": "db2847d66611302663ce2dc92a32a32478de7857919785ea7654787586025152",
+    "lean/Conjectures/BraunBrueggeBicyclicTree.lean": "70cac23707745da5222d78aff5dd70797877d7675f39780f23ff2a54bc1b6be7",
+    "lean/Conjectures/BraunBrueggeBicyclicUnicyclic.lean": "95b98d9b9fd4653759d62391e7114234465fd13617ea12a443e404bd6db7d476",
+    "lean/Conjectures/BraunBrueggeBicyclicUnitPath.lean": "024a6e9f09164a25cc4b5e498cb52573c5a6ae3493629150db2dcfe2fc826d9f",
+    "lean/Conjectures/BraunBrueggeBicyclicWedge.lean": "83059ca75d2788a355cee52527156bb2395809593dad774a48e8babb17c439d9",
+    "lean/Conjectures/BraunBrueggeBicyclicWedgeAttainment.lean": "bf58c771b0b33db69b650fc9278ccd0b371dc54d7afa510d328675d1f18852ed",
+    "lean/Conjectures/BraunBrueggeBicyclicWedgeBenchmark.lean": "a1473d0d4c95af73dacff5987b5b5359b22d316ca7adfd10e41a78a0f9ff258e",
+    "lean/Conjectures/BraunBrueggeBicyclicWedgeSize.lean": "98a53cfe3089aa21b3f1343e3c9d69679e5f60d2fd4e1e1200aecc02fdd35ac1",
+    "lean/Conjectures/BraunBrueggeMinimum.lean": "66cf1f6e2d621a70e70e94fac5cd28f071cf7b5c625aea15650d5a52216237a8",
+    "lean/Conjectures/BraunBrueggeMinimumAlmostPerfectFaces.lean": "826ec86cc84fb2ef2b1fe70bc62e25de721294f13de4abf9c4c3fc01442a1864",
+    "lean/Conjectures/BraunBrueggeMinimumAugmenting.lean": "cf850b2c2bfdb8ce88f0a495b480d1f6b9efb8ff28602f4d4674db7232ea49dd",
+    "lean/Conjectures/BraunBrueggeMinimumBipartite.lean": "fc90834585692ae19036276c86f23370c5a9461594c549fc854581f655af471f",
+    "lean/Conjectures/BraunBrueggeMinimumBipartiteComparison.lean": "ad10e8d2e64aea0067a4678615239245eec33af2b5bdc06275f3234d976f3438",
+    "lean/Conjectures/BraunBrueggeMinimumBipartiteFacets.lean": "c0863df372311730399f892909a441668dc2b3901cd4f3b1b4a8e96cb48d240f",
+    "lean/Conjectures/BraunBrueggeMinimumCompact.lean": "c8b5c76119970dbb55aafb9b4a05291240a4ca257a7b38c64a1d0fc2d9733eef",
+    "lean/Conjectures/BraunBrueggeMinimumCompleteBipartite.lean": "d3aea91e7ba4d02d013a181cf29ca389fb8b33096307a4a4194cf1b850d85833",
+    "lean/Conjectures/BraunBrueggeMinimumCrossing.lean": "d63f5b8cd4c837f2ae40c23eb133341365c77ba5170aba1fae5b669a84c75214",
+    "lean/Conjectures/BraunBrueggeMinimumFacets.lean": "4a3e4435a29f06c33c2512a49cbf41abdec8c33f02a1f7db7a05ea273bdfda27",
+    "lean/Conjectures/BraunBrueggeMinimumGeometry.lean": "88d3bbea7daa9199e76a64781a3efd9f0541f2b3e7e340958afc6fe4624166a8",
+    "lean/Conjectures/BraunBrueggeMinimumMatchingFaces.lean": "b2f3db5335cb5b2835221497f29cb3c94acccf8c37404d81108f3bd89ce6523e",
+    "lean/Conjectures/BraunBrueggeMinimumMatchingModel.lean": "0feab7fccc81e7ec15d7c94fb3460d02bf3e60db2e0cd18db46ba4f05fb94f29",
+    "lean/Conjectures/BraunBrueggeMinimumNonbipartite.lean": "544a035a283fd492f56176967ed48a5fb8061eaf36605f76ecd37e1945db6628",
+    "lean/Conjectures/BraunBrueggeMinimumPolar.lean": "543a17f544c0f49abdaebbd9f0e797cc11d3e1b301bc6062ebe468a41b819252",
+    "lean/Conjectures/BraunBrueggeMinimumRecovery.lean": "b4a9b00ab3147e37da3a248d965113e2c670e823d7c31220b5dc405c55aadd17",
+    "lean/Conjectures/BraunBrueggeMinimumRecoveryCount.lean": "0184928ec0b9e070d2d9e55ad34c96ac607804f4f6a85f577e0e9feab9cd6be4",
+    "lean/Conjectures/BraunBrueggeMinimumUncoveredCount.lean": "4847af9db34914fe9606a9a0ca39b3ab17e7e3f351f674a465d2da5ca5c821d5",
+    "lean/Conjectures/BraunBrueggeMinimumUncoveredFaces.lean": "cc1a96418db685b7b71ab39c4a598f5bf8a6e26810535ff362c467771b27c2c2",
+    "lean/Conjectures/BraunBrueggeThetaOptimizer.lean": "5571e51d8c2ed37375f4422d802bc0561320b859b3016e09e7bd16e1d9332448",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerArithmetic.lean": "6e7715bb3be461e466c88802ce27499ba81b42e83b9f7748124857788410ef04",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerBalance.lean": "a30f10a41e00e9663c7c4cbdd418bb2617937e9e8e375db5332ff65e88f088a4",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerFinite.lean": "c6cd1f66e7a69f3182c1b69fd6d5d283f1acfce64e9524337ef0221cb49ca99b",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerGeometry.lean": "54995e9705f8f2fb314c42e7d2925ddf25a65697ef190d52626283001b9cf81e",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerLarge.lean": "12142c240bf6ba34bc189b992247a48ebacf66a980907df1d824fc5f819836c1",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerLower.lean": "2f3d7cd3fb1385bc24004a2b593127097249afc7cc708445947495b7e9348e8f",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerMass.lean": "0a2b7af49f2321bc4847f2948855eebf1f5f0a5758ffbbeffb01185ab7ea5935",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows.lean": "cdba2f9c534f49eada32e049c522db25b394dd5586d8e35907e92c216b18ed33",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows011To042.lean": "3f1266b15289ce8a6b115f906f87434ad73c0a4ef1542d2d716e6dba6b5c42e1",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows043To067.lean": "2f3c61e276f97117c746e19563cf43c774da860611c7d3a0a0b563fca8c0d38a",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows068To085.lean": "cc8667d08fcd3c0a9da6ace10065f97eecb83d0648612beb7f56a81ca7a2060e",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows086To098.lean": "208787045ace8dde3b26227f0c4716b4428d4cd55c1d2ad554d6e995585110c6",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows099To109.lean": "16c5166f8cbb84cee26fd30dfa5b8f9539e6a710290f39c0eff5ed79a1ccbf74",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows110To118.lean": "b5324f717ae4dc933f70195f2d9db4922955b9c52dc788e5e968f3cb1ab61e58",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows119To125.lean": "135eb90881f28de8af167d3331e603f1b6b85df1600b1aba868f3ab169ae0624",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows126To132.lean": "28860fde2a6d335a9434628323fa855f776beb3aa9eb19e01a2537faae650410",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows133To138.lean": "d53e2c1622233e2beee79d3ec845841b4d8c8541a3647951010804e6dd9e51a6",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows139To143.lean": "0b76528205daa7b2d70f46b42731081b63e9580e2faa534cbfa99382a206db33",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerTwoPath.lean": "467a3876ebda9d3776049c221e54dde15587eade89607bee0d207676aae41bc1",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerUpper.lean": "676894b8e7034b8db0d7acf08d4f89316f783f752116bd6f692d8ae82705ee05",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerWallis.lean": "976520f9389bd99427ebdd0d0bda455a512054a892e76ed84824464898b8ebe6"
+  },
+  "input_sha256": {
+    "lean/Conjectures/BraunBrueggeBicyclicBridgeCounts.lean": "b3465a3e35b3ff209c3404de96ce44ec549bc354ab5c94015f93530a7d038c33",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgeJoin.lean": "1a4569c9f7df131323262788664b2213738a580a27a547c67514c8956a6383dd",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgePartition.lean": "2ac084271e81ce47b2879751bb0a52cc06da924e07e5cb0f24e763722bfa8b2e",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgePolar.lean": "11a605a5bce0dcfc02860d088a6c4d771cbd71b53deb09dec9ea2e75b1c4158f",
+    "lean/Conjectures/BraunBrueggeBicyclicBridgeReduction.lean": "5328199e2f6f15a173993e94b234e9f6162604a2eea23835d4d9d8088f11e132",
+    "lean/Conjectures/BraunBrueggeBicyclicCentralMass.lean": "4101ffd7e12edfd70c60641d2ba707cb52e1c9c071e82191d9d52237db2eaffd",
+    "lean/Conjectures/BraunBrueggeBicyclicCoreTheta.lean": "23bf10a12280ad85f4d3e9c35aa7c59e1dcfd401e2d7dc12c8f49aeb30c6e25f",
+    "lean/Conjectures/BraunBrueggeBicyclicCoreWedge.lean": "b48802dd599cb33e2337004bf406e2f23808ca2aa67ef0da5e00f3ab5d664a45",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleBalance.lean": "baed220645a56f492d697f5f0455aa5b09d8fd411bd4168e679c9daec8f37852",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleCount.lean": "706aca04a1fdd62c33af17ae88c08534f7b74e86cb396812ea402aa34b0521b7",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleEmbedding.lean": "647a6d03a000c84ec7b72d364ec608fb3d14aca72bff2cd783e23eeae9705c96",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleGeometry.lean": "8d756c0281b520477f3d78e7bc729a88ebecce2e3272515d8235ce19c96075af",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleProducts.lean": "70677de868467b6323c9b506eb3894cbf743bc1b28147363516ca99ba198abd1",
+    "lean/Conjectures/BraunBrueggeBicyclicCycleSteps.lean": "e556dc57f4233dcb14f8ee16c8b10bcecddc86244aff8d2d9396868d81d27a6e",
+    "lean/Conjectures/BraunBrueggeBicyclicEar.lean": "5483889350f8483a4b51ca014686ba60d3419503581aa9b4dba759870f2d5957",
+    "lean/Conjectures/BraunBrueggeBicyclicFacets.lean": "b9e635795240dd41dc9ef3fb74c6affc9966771ee40e75be3706a32b9da69a14",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteArithmetic.lean": "350721a93bd3ceb17aa939657e0c838bdd2e0fe05574f5593e0de4e92f82da26",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteCorrect.lean": "598e36beaa2d2710c06fc8c38a6ab8999384df513a50c49f8edf9dcdb35cb444",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows.lean": "7e67414178d6425fce52e2de532ba7997ae2491caa59002e31ccf2d8dc80874a",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows005To024.lean": "acd2d7c21666363422ffe012c752b77c8b5cc6141af7ce90a8f71d98eb757373",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows025To044.lean": "d82ca0f2a96386e57bd7fb39c030d0582875e9f27b37f8bd665b9ab91dfb01e3",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows045To059.lean": "6fb87ac9e028663db1ef875710144c50428f582329630473ff491b73d2549efe",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows060To074.lean": "63e7cded67bbd9deba2a77e59d14cdec5bf6788a543dc7d9584a472ae4d08639",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows075To087.lean": "19992fc47a9176ad12398e5e3289829c4e2a2d780326649b7c22c11b17a1dbb1",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows088To098.lean": "082ccd8547aa6780c434e5ab13415d0547cffa21f1ace21a1b7ee8676752d9aa",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows099To108.lean": "bf164699a611d02285416e30c09ee15eb658562f418a3e8d5907025820742fdc",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows109To117.lean": "586efd510bd727a8972346d5c4dd7411d79f861969b9b0bef39bfb3d0a599fcf",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows118To125.lean": "f15f67ea1f8d1bf2763ed735e0deb4f1965b9cfcd5a600069c19af60dac35725",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows126To132.lean": "b63df565b2688eaa7f9b9aedc67e72f1bb16fc482c1d260c282fc6d9458d3d09",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows133To138.lean": "84e4110427e8271b6735df68029407828d58634478164d868279ea6a3fec801f",
+    "lean/Conjectures/BraunBrueggeBicyclicFiniteRows139To143.lean": "49a724c7d4532893c6b64c73fc6d7fcf1cd1bd4a2c44ab8ee8b7d26b9883e17b",
+    "lean/Conjectures/BraunBrueggeBicyclicMaximum.lean": "a9fcfa90e0775f885bb1f783e76464e7b40e8e3964f5820eeca51488bbe2e44e",
+    "lean/Conjectures/BraunBrueggeBicyclicMixedBounds.lean": "3209d4be756817c07a8d7ffa7691e3f9da8f2a49cfb9a1c5663652c7f90f2884",
+    "lean/Conjectures/BraunBrueggeBicyclicMixedLarge.lean": "731aaa4934ae1d70968d08cf08fbb62b8f3aa18071cddeaa06ae53da9c347a6e",
+    "lean/Conjectures/BraunBrueggeBicyclicNormalizedCounts.lean": "400147bcd62e2de9c4435f9de1364ba06ef8401f11a28e1bde8239408d1550b7",
+    "lean/Conjectures/BraunBrueggeBicyclicPathWords.lean": "891f23ffb1d2cfe3cb8d745779fd523dce3d4f21a7ee62133d0ec4740627bebc",
+    "lean/Conjectures/BraunBrueggeBicyclicRank.lean": "43062cca958faab3763cbdf5355317a1f0a309250f7cb3b24a96f0bb90500095",
+    "lean/Conjectures/BraunBrueggeBicyclicSameParity.lean": "2ec9b78b0550447d4d701b0864b62c4a3d1ebf0705bf62974d474a5aa6e17b7f",
+    "lean/Conjectures/BraunBrueggeBicyclicSigns.lean": "3fc3938082c09afa28b8753ea380cf09b5fff7bad30b1bc44540a85a7e2631dd",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaBound.lean": "926b4dc7d0e3fc2788e7e9aee481b5a084a830daacf26272d637e466fffcf732",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaCount.lean": "e6b4eeca1dd8c1642a1e4ad9f26a44c8e07a8e103895f9160172c134e9268b76",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaEmbedding.lean": "74f22250fc59e6fbe0f8751b130f5ee8bc817f5656bc4e05b982318496c18d57",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaFibers.lean": "9658405e3f849961f40f2d6d605ba874e04f29ece4fb0fe31dd8251f093bd591",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaGeometry.lean": "7039b17296bc2c3fc4a83ba1098752617f91aef04071bd093401656b7c7f7b8e",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaGraph.lean": "28717e37e149a90e98bce8fecf8cf122e1bf4f4776fcc81361b2e8a7cf2cf5ba",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaReindex.lean": "bdc8d5283b5d2105210b8e8dfc0e9103953a856a5d7e502fc5b96467205199aa",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaSize.lean": "085c26f9b369520b320de020236f0990f2edd0738f327a79580877ef2dbd62cb",
+    "lean/Conjectures/BraunBrueggeBicyclicThetaSteps.lean": "db2847d66611302663ce2dc92a32a32478de7857919785ea7654787586025152",
+    "lean/Conjectures/BraunBrueggeBicyclicTree.lean": "70cac23707745da5222d78aff5dd70797877d7675f39780f23ff2a54bc1b6be7",
+    "lean/Conjectures/BraunBrueggeBicyclicUnicyclic.lean": "95b98d9b9fd4653759d62391e7114234465fd13617ea12a443e404bd6db7d476",
+    "lean/Conjectures/BraunBrueggeBicyclicUnitPath.lean": "024a6e9f09164a25cc4b5e498cb52573c5a6ae3493629150db2dcfe2fc826d9f",
+    "lean/Conjectures/BraunBrueggeBicyclicWedge.lean": "83059ca75d2788a355cee52527156bb2395809593dad774a48e8babb17c439d9",
+    "lean/Conjectures/BraunBrueggeBicyclicWedgeAttainment.lean": "bf58c771b0b33db69b650fc9278ccd0b371dc54d7afa510d328675d1f18852ed",
+    "lean/Conjectures/BraunBrueggeBicyclicWedgeBenchmark.lean": "a1473d0d4c95af73dacff5987b5b5359b22d316ca7adfd10e41a78a0f9ff258e",
+    "lean/Conjectures/BraunBrueggeBicyclicWedgeSize.lean": "98a53cfe3089aa21b3f1343e3c9d69679e5f60d2fd4e1e1200aecc02fdd35ac1",
+    "lean/Conjectures/BraunBrueggeMinimum.lean": "66cf1f6e2d621a70e70e94fac5cd28f071cf7b5c625aea15650d5a52216237a8",
+    "lean/Conjectures/BraunBrueggeMinimumAlmostPerfectFaces.lean": "826ec86cc84fb2ef2b1fe70bc62e25de721294f13de4abf9c4c3fc01442a1864",
+    "lean/Conjectures/BraunBrueggeMinimumAugmenting.lean": "cf850b2c2bfdb8ce88f0a495b480d1f6b9efb8ff28602f4d4674db7232ea49dd",
+    "lean/Conjectures/BraunBrueggeMinimumBipartite.lean": "fc90834585692ae19036276c86f23370c5a9461594c549fc854581f655af471f",
+    "lean/Conjectures/BraunBrueggeMinimumBipartiteComparison.lean": "ad10e8d2e64aea0067a4678615239245eec33af2b5bdc06275f3234d976f3438",
+    "lean/Conjectures/BraunBrueggeMinimumBipartiteFacets.lean": "c0863df372311730399f892909a441668dc2b3901cd4f3b1b4a8e96cb48d240f",
+    "lean/Conjectures/BraunBrueggeMinimumCompact.lean": "c8b5c76119970dbb55aafb9b4a05291240a4ca257a7b38c64a1d0fc2d9733eef",
+    "lean/Conjectures/BraunBrueggeMinimumCompleteBipartite.lean": "d3aea91e7ba4d02d013a181cf29ca389fb8b33096307a4a4194cf1b850d85833",
+    "lean/Conjectures/BraunBrueggeMinimumCrossing.lean": "d63f5b8cd4c837f2ae40c23eb133341365c77ba5170aba1fae5b669a84c75214",
+    "lean/Conjectures/BraunBrueggeMinimumFacets.lean": "4a3e4435a29f06c33c2512a49cbf41abdec8c33f02a1f7db7a05ea273bdfda27",
+    "lean/Conjectures/BraunBrueggeMinimumGeometry.lean": "88d3bbea7daa9199e76a64781a3efd9f0541f2b3e7e340958afc6fe4624166a8",
+    "lean/Conjectures/BraunBrueggeMinimumMatchingFaces.lean": "b2f3db5335cb5b2835221497f29cb3c94acccf8c37404d81108f3bd89ce6523e",
+    "lean/Conjectures/BraunBrueggeMinimumMatchingModel.lean": "0feab7fccc81e7ec15d7c94fb3460d02bf3e60db2e0cd18db46ba4f05fb94f29",
+    "lean/Conjectures/BraunBrueggeMinimumNonbipartite.lean": "544a035a283fd492f56176967ed48a5fb8061eaf36605f76ecd37e1945db6628",
+    "lean/Conjectures/BraunBrueggeMinimumPolar.lean": "543a17f544c0f49abdaebbd9f0e797cc11d3e1b301bc6062ebe468a41b819252",
+    "lean/Conjectures/BraunBrueggeMinimumRecovery.lean": "b4a9b00ab3147e37da3a248d965113e2c670e823d7c31220b5dc405c55aadd17",
+    "lean/Conjectures/BraunBrueggeMinimumRecoveryCount.lean": "0184928ec0b9e070d2d9e55ad34c96ac607804f4f6a85f577e0e9feab9cd6be4",
+    "lean/Conjectures/BraunBrueggeMinimumUncoveredCount.lean": "4847af9db34914fe9606a9a0ca39b3ab17e7e3f351f674a465d2da5ca5c821d5",
+    "lean/Conjectures/BraunBrueggeMinimumUncoveredFaces.lean": "cc1a96418db685b7b71ab39c4a598f5bf8a6e26810535ff362c467771b27c2c2",
+    "lean/Conjectures/BraunBrueggeThetaOptimizer.lean": "5571e51d8c2ed37375f4422d802bc0561320b859b3016e09e7bd16e1d9332448",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerArithmetic.lean": "6e7715bb3be461e466c88802ce27499ba81b42e83b9f7748124857788410ef04",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerBalance.lean": "a30f10a41e00e9663c7c4cbdd418bb2617937e9e8e375db5332ff65e88f088a4",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerFinite.lean": "c6cd1f66e7a69f3182c1b69fd6d5d283f1acfce64e9524337ef0221cb49ca99b",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerGeometry.lean": "54995e9705f8f2fb314c42e7d2925ddf25a65697ef190d52626283001b9cf81e",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerLarge.lean": "12142c240bf6ba34bc189b992247a48ebacf66a980907df1d824fc5f819836c1",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerLower.lean": "2f3d7cd3fb1385bc24004a2b593127097249afc7cc708445947495b7e9348e8f",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerMass.lean": "0a2b7af49f2321bc4847f2948855eebf1f5f0a5758ffbbeffb01185ab7ea5935",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows.lean": "cdba2f9c534f49eada32e049c522db25b394dd5586d8e35907e92c216b18ed33",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows011To042.lean": "3f1266b15289ce8a6b115f906f87434ad73c0a4ef1542d2d716e6dba6b5c42e1",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows043To067.lean": "2f3c61e276f97117c746e19563cf43c774da860611c7d3a0a0b563fca8c0d38a",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows068To085.lean": "cc8667d08fcd3c0a9da6ace10065f97eecb83d0648612beb7f56a81ca7a2060e",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows086To098.lean": "208787045ace8dde3b26227f0c4716b4428d4cd55c1d2ad554d6e995585110c6",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows099To109.lean": "16c5166f8cbb84cee26fd30dfa5b8f9539e6a710290f39c0eff5ed79a1ccbf74",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows110To118.lean": "b5324f717ae4dc933f70195f2d9db4922955b9c52dc788e5e968f3cb1ab61e58",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows119To125.lean": "135eb90881f28de8af167d3331e603f1b6b85df1600b1aba868f3ab169ae0624",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows126To132.lean": "28860fde2a6d335a9434628323fa855f776beb3aa9eb19e01a2537faae650410",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows133To138.lean": "d53e2c1622233e2beee79d3ec845841b4d8c8541a3647951010804e6dd9e51a6",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerRows139To143.lean": "0b76528205daa7b2d70f46b42731081b63e9580e2faa534cbfa99382a206db33",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerTwoPath.lean": "467a3876ebda9d3776049c221e54dde15587eade89607bee0d207676aae41bc1",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerUpper.lean": "676894b8e7034b8db0d7acf08d4f89316f783f752116bd6f692d8ae82705ee05",
+    "lean/Conjectures/BraunBrueggeThetaOptimizerWallis.lean": "976520f9389bd99427ebdd0d0bda455a512054a892e76ed84824464898b8ebe6",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumPolar.olean",
+        "Conjectures/BraunBrueggeMinimumPolar.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumPolar.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumCompact.olean",
+        "Conjectures/BraunBrueggeMinimumCompact.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumCompact.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCycleGeometry.olean",
+        "Conjectures/BraunBrueggeBicyclicCycleGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCycleGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicRank.olean",
+        "Conjectures/BraunBrueggeBicyclicRank.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicRank.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCycleEmbedding.olean",
+        "Conjectures/BraunBrueggeBicyclicCycleEmbedding.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCycleEmbedding.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumGeometry.olean",
+        "Conjectures/BraunBrueggeMinimumGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumMatchingFaces.olean",
+        "Conjectures/BraunBrueggeMinimumMatchingFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumMatchingFaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumFacets.olean",
+        "Conjectures/BraunBrueggeMinimumFacets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumFacets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCycleSteps.olean",
+        "Conjectures/BraunBrueggeBicyclicCycleSteps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCycleSteps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicSigns.olean",
+        "Conjectures/BraunBrueggeBicyclicSigns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicSigns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCycleCount.olean",
+        "Conjectures/BraunBrueggeBicyclicCycleCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCycleCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCentralMass.olean",
+        "Conjectures/BraunBrueggeBicyclicCentralMass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCentralMass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicWedgeBenchmark.olean",
+        "Conjectures/BraunBrueggeBicyclicWedgeBenchmark.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicWedgeBenchmark.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCycleBalance.olean",
+        "Conjectures/BraunBrueggeBicyclicCycleBalance.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCycleBalance.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCycleProducts.olean",
+        "Conjectures/BraunBrueggeBicyclicCycleProducts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCycleProducts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicBridgeJoin.olean",
+        "Conjectures/BraunBrueggeBicyclicBridgeJoin.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicBridgeJoin.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicBridgePartition.olean",
+        "Conjectures/BraunBrueggeBicyclicBridgePartition.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicBridgePartition.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumAugmenting.olean",
+        "Conjectures/BraunBrueggeMinimumAugmenting.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumAugmenting.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumMatchingModel.olean",
+        "Conjectures/BraunBrueggeMinimumMatchingModel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumMatchingModel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumUncoveredFaces.olean",
+        "Conjectures/BraunBrueggeMinimumUncoveredFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumUncoveredFaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumBipartite.olean",
+        "Conjectures/BraunBrueggeMinimumBipartite.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumBipartite.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumCompleteBipartite.olean",
+        "Conjectures/BraunBrueggeMinimumCompleteBipartite.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumCompleteBipartite.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumBipartiteFacets.olean",
+        "Conjectures/BraunBrueggeMinimumBipartiteFacets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumBipartiteFacets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumBipartiteComparison.olean",
+        "Conjectures/BraunBrueggeMinimumBipartiteComparison.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumBipartiteComparison.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumUncoveredCount.olean",
+        "Conjectures/BraunBrueggeMinimumUncoveredCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumUncoveredCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumAlmostPerfectFaces.olean",
+        "Conjectures/BraunBrueggeMinimumAlmostPerfectFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumAlmostPerfectFaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumCrossing.olean",
+        "Conjectures/BraunBrueggeMinimumCrossing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumCrossing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumRecovery.olean",
+        "Conjectures/BraunBrueggeMinimumRecovery.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumRecovery.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumRecoveryCount.olean",
+        "Conjectures/BraunBrueggeMinimumRecoveryCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumRecoveryCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimumNonbipartite.olean",
+        "Conjectures/BraunBrueggeMinimumNonbipartite.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimumNonbipartite.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeMinimum.olean",
+        "Conjectures/BraunBrueggeMinimum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeMinimum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicBridgePolar.olean",
+        "Conjectures/BraunBrueggeBicyclicBridgePolar.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicBridgePolar.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicBridgeCounts.olean",
+        "Conjectures/BraunBrueggeBicyclicBridgeCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicBridgeCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicTree.olean",
+        "Conjectures/BraunBrueggeBicyclicTree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicTree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicUnicyclic.olean",
+        "Conjectures/BraunBrueggeBicyclicUnicyclic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicUnicyclic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicBridgeReduction.olean",
+        "Conjectures/BraunBrueggeBicyclicBridgeReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicBridgeReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicEar.olean",
+        "Conjectures/BraunBrueggeBicyclicEar.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicEar.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaGraph.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaGraph.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaGraph.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaEmbedding.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaEmbedding.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaEmbedding.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteArithmetic.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaGeometry.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaSteps.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaSteps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaSteps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicPathWords.olean",
+        "Conjectures/BraunBrueggeBicyclicPathWords.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicPathWords.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaFibers.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaFibers.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaFibers.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaCount.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicNormalizedCounts.olean",
+        "Conjectures/BraunBrueggeBicyclicNormalizedCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicNormalizedCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteCorrect.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteCorrect.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteCorrect.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows005To024.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows005To024.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows005To024.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows025To044.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows025To044.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows025To044.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows045To059.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows045To059.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows045To059.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows060To074.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows060To074.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows060To074.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows075To087.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows075To087.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows075To087.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows088To098.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows088To098.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows088To098.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows099To108.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows099To108.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows099To108.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows109To117.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows109To117.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows109To117.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows118To125.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows118To125.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows118To125.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows126To132.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows126To132.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows126To132.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows133To138.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows133To138.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows133To138.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows139To143.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows139To143.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows139To143.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFiniteRows.olean",
+        "Conjectures/BraunBrueggeBicyclicFiniteRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFiniteRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicMixedBounds.olean",
+        "Conjectures/BraunBrueggeBicyclicMixedBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicMixedBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicUnitPath.olean",
+        "Conjectures/BraunBrueggeBicyclicUnitPath.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicUnitPath.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicMixedLarge.olean",
+        "Conjectures/BraunBrueggeBicyclicMixedLarge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicMixedLarge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicSameParity.olean",
+        "Conjectures/BraunBrueggeBicyclicSameParity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicSameParity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaSize.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaSize.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaSize.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicWedge.olean",
+        "Conjectures/BraunBrueggeBicyclicWedge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicWedge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicWedgeSize.olean",
+        "Conjectures/BraunBrueggeBicyclicWedgeSize.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicWedgeSize.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicWedgeAttainment.olean",
+        "Conjectures/BraunBrueggeBicyclicWedgeAttainment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicWedgeAttainment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaBound.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaBound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicThetaReindex.olean",
+        "Conjectures/BraunBrueggeBicyclicThetaReindex.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicThetaReindex.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCoreTheta.olean",
+        "Conjectures/BraunBrueggeBicyclicCoreTheta.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCoreTheta.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicCoreWedge.olean",
+        "Conjectures/BraunBrueggeBicyclicCoreWedge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicCoreWedge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicMaximum.olean",
+        "Conjectures/BraunBrueggeBicyclicMaximum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicMaximum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerArithmetic.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerGeometry.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows011To042.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows011To042.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows011To042.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows043To067.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows043To067.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows043To067.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows068To085.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows068To085.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows068To085.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows086To098.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows086To098.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows086To098.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows099To109.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows099To109.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows099To109.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows110To118.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows110To118.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows110To118.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows119To125.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows119To125.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows119To125.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows126To132.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows126To132.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows126To132.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows133To138.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows133To138.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows133To138.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows139To143.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows139To143.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows139To143.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerRows.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerFinite.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerFinite.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerFinite.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerWallis.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerWallis.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerWallis.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerMass.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerMass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerMass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerTwoPath.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerTwoPath.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerTwoPath.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerBalance.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerBalance.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerBalance.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerLower.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerLower.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerLower.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerUpper.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerUpper.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerUpper.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizerLarge.olean",
+        "Conjectures/BraunBrueggeThetaOptimizerLarge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizerLarge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeThetaOptimizer.olean",
+        "Conjectures/BraunBrueggeThetaOptimizer.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeThetaOptimizer.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-bicyclic-complete/lean/.lake/build/lib/lean/Conjectures/BraunBrueggeBicyclicFacets.olean",
+        "Conjectures/BraunBrueggeBicyclicFacets.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.BraunBrueggeBicyclicFacets.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-bicyclic-lean/main-both/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-bicyclic-complete/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.BraunBrueggeBicyclicFacets"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 2396,
+    "modules": 96,
+    "private_declarations": 1254,
+    "raw_declarations": 2396,
+    "required": 24,
+    "tag": "passed",
+    "theorems": 2043
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

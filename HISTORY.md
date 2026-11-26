@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify both bicyclic facet maxima
+
+Lean proves the bicyclic bound with attainment and characterizes every theta maximizer up to permuting its path lengths. [Proof and verification](results/braun-bruegge-bicyclic-facets/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify rational vertices of the actual ordinarization cells
 
 Lean checks that the compact weak sign cells are finite convex hulls of rational vertices. Their disjoint rational triangulation and the correction estimate remain. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
