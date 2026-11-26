@@ -6,6 +6,4 @@ Complete proposed disproof of Conjecture 3.6: the quartic polynomial p(z)=z⁴+z
 - [Publication audit](AUDIT.md)
 - [Discovery and review thread](https://github.com/1337isnot1337/solved-conjectures/issues/132)
 
-Lean status: none. Internally reviewed and unrefereed. Attribution and prior-art limitations are preserved in the proof and audit.
-
-- [Complete Lean formalization of Conjecture 3.6](FORMALIZATION.md)
+Lean verifies the full counterexample to Conjecture 3.6. The written proof has received internal review and remains unrefereed. [Formal statement and verification receipt](FORMALIZATION.md).
