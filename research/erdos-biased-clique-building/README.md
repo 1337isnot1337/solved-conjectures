@@ -2,6 +2,8 @@
 
 **Status: partial.** In the strict \(1:2\) game Bob wins on \(K_n\) for all sufficiently large \(n\). The original assertion asks for every \(n\ge4\), and the argument does not decide the remaining orders. More generally, the argument works for every fixed \(1:q\) bias with \(q\ge2\).
 
+For arbitrary fixed batch sizes, [the batch proof](BATCHES.md) gives an explicit strict-win criterion and a subquadratic sufficient bias.
+
 ## Rules and statement
 
 Alice starts. She claims one edge on each of her turns. Bob claims \(q\) unclaimed edges on each of his turns, taking all remaining edges if fewer than \(q\) are left. Bob wins if his final graph has a strictly larger clique than Alice's. This is the strict biased clause of [Erdős #778](https://www.erdosproblems.com/778), posed in [Guy's 1983 list of Erdős problems](https://doi.org/10.1080/00029890.1983.11971168). The equal-bias clique and degree clauses are separate.

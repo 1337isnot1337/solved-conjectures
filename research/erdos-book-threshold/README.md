@@ -56,6 +56,17 @@ for arbitrarily large powers of two \(n\).
 
 This construction also explains why a universal same-vertex-set near-lossless extraction from the next threshold is too strong. In the doubled graph each old triangle contributes an edge-disjoint \(K_{2,2,2}\) block. A subgraph with each retained edge in exactly one triangle keeps at most six of the twelve edges per block. Indeed let \(B,C\) be two of the three parts; if there are at most two retained edges between them, there are at most two triangles because these edges cannot be reused. If at least three of the four \(BC\) edges are used by distinct edge-disjoint triangles, color the three edges of a length-three \(BC\) path by their chosen vertex in the remaining part. Consecutive edges have different colors (else one edge is reused), so their colors alternate. The middle path edge then lies in a second triangle through the outer triangles' common vertex in the remaining part, a contradiction. The argument applies to any three edges of \(K_{2,2}\) and all retained edges must be covered by a triangle. The doubled graph can have \(n^{2-o(1)}\) edges. This does not show that extremizers for the next threshold resist near-lossless extraction, or that the ratio conjecture fails.
 
+## Long intervals of large gap at the first threshold
+
+The one-order increment has a simple bound:
+\[
+0\le F_r(m+1)-F_r(m)\le \frac{r+1}{m+1} F_r(m+1)\le \frac{r+1}{2}m.
+\tag{3}
+\]
+For the upper bound remove a minimum-degree vertex \(v\) of an extremizer on \(m+1\) vertices. Delete also any edge whose only triangle used \(v\). These extra deletions destroy no triangle remaining after removing \(v\). Their number is at most the number of edges in \(G[N(v)]\), which is a graph of maximum degree at most \(r-1\) because the edge from \(v\) to any of its neighbors has at most \(r-1\) common neighbors. Thus at most \((r+1)d(v)/2\) total edges were lost. The minimum degree is at most \(2F_r(m+1)/(m+1)\). The lower bound follows by adding an isolated vertex.
+
+Write \(\gamma_N=N^2\exp(-C\sqrt{\log N})\) for one of the arbitrarily large dyadic orders with \(g_2(N)\ge\gamma_N\). Since both \(F_2\) and \(F_3\) are nondecreasing, (3) bounds the one-step absolute change of \(g_2\) by the larger of their increment bounds, not their sum. For any integer \(m\) with \(|m-N|\le \lfloor\gamma_N/(8N)\rfloor\), all the intermediate orders are at most \(2N\), so \(|g_2(m)-g_2(N)|\le 4N|m-N|\le\gamma_N/2\). Therefore there are arbitrarily large intervals of consecutive orders of length \(\Omega(N\exp(-C\sqrt{\log N}))\) on which \(g_2(m)\ge \tfrac12 N^2\exp(-C\sqrt{\log N})\) uniformly. These intervals need not cover all large orders.
+
 ## Priority and remaining tasks
 
 The [discussion](https://www.erdosproblems.com/forum/thread/600) and the [July 2026 working report](https://www.erdosproblemaday.com/report/600) already record the full blow-up and small-order consequences. The new step here is telescoping the normalized densities, including the maximum-degree single duplication at every threshold, not the blow-up construction itself. The original chapter, Fox–Loh, the public wiki and catalog, the discussion, the working report, and searches for successive book thresholds, cloning, and the exact two limits did not uncover an earlier subsequence-gap bound of this form. That priority check is necessarily bounded.
