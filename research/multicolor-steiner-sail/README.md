@@ -20,3 +20,5 @@ In any triple system of maximum degree $D$, choose vertices independently with p
 This gives $F_t(a)\le(3/2)a\sqrt{1+t F_{t-1}(a)/2}$ using upper bounds inductively. The exponent starts at one and obeys $e_t=1+e_{t-1}/2$, proving $e_t=2-2^{-t}$. In a full Steiner system $\sum_c|N_c(p)|=n-1$, yielding the stronger bound. Finally take a maximal vertex-disjoint packing. Its uncovered induced system is sail-free in the given coloring and still has independence number at most $a$. Thus at most $C_ta^{2-2^{-t}}$ vertices are uncovered. This is $o(n)$ when $a=n^{1/2+o(1)}$.
 
 Small-independence Steiner systems are known to exist. This argument applies to every system with the indicated independence bound. Arbitrary Steiner systems can have much larger independent sets, so the all-host multicolor question remains open. [Grable, Phelps and Rödl, *The minimum independence number for designs*](https://doi.org/10.1007/BF01200754).
+
+In the uniform random host model there is also a [positive multicolor sail density inside every linear-sized vertex subset](random-systems.md). This holds simultaneously for all block colorings and yields nearly spanning disjoint packings.
