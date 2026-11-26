@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Mallik–Diwan–Kothari degree-count conjecture
+
+Two complete bipartite blocks and two matchings refute Conjecture 8.9 for every $k\geq3$, with the smallest example on 16 vertices. The proof gives an explicit nonextending matching for each possible edge deletion. [Proof](results/mallik-diwan-kothari-degree-count/PROOF.md) · [Source and audit](results/mallik-diwan-kothari-degree-count/AUDIT.md) · [Issue #825](https://github.com/1337isnot1337/solved-conjectures/issues/825).
+
 ## 2026-11-26 — Kovalev’s Hardy-duality bounds
 
 Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Theorems and source-matched receipt](results/kovalev-hardy-duality/FORMALIZATION.md).

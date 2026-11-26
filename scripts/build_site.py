@@ -61,6 +61,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Mallik–Diwan–Kothari degree-count conjecture": "mallik-diwan-kothari-degree-count",
     "Nathanson’s linear-form Sidon systems conjecture": "nathanson-sidon-systems",
     "Fiscus–Hurlbert–Myzelev–Pence grid conjecture": "fiscus-grid-game",
     "En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem": "constant-weight-strong-wom",
