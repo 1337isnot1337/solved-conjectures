@@ -9,3 +9,5 @@ The lower bound extends to arbitrary degree-$d$ polynomial graphs with the same 
 **Lean status:** none.
 
 For [Frobenius exponents](FROBENIUS.md), the shift parameters must meet every affine hyperplane over the fixed field. The Jamison–Brouwer–Schrijver theorem then gives the exact finite minimum.
+
+A [bound for arbitrary reflexive curve families](REFLEXIVE.md) gives the same optimal logarithmic order in characteristic greater than the component degrees. Here there is no common leading-coefficient assumption. It combines Entin's geometric monodromy theorem with an explicit degree bound on the variety of ordered roots.
