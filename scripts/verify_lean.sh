@@ -137,6 +137,11 @@ modules=(
   Conjectures.PomeranceSarkozyBoundedCharacteristic
   Conjectures.PomeranceSarkozyBoundedGaussianError
   Conjectures.PomeranceSarkozyIndependentArrayLaw
+  Conjectures.PomeranceSarkozyGridAnchor
+  Conjectures.PomeranceSarkozyGridChaining
+  Conjectures.PomeranceSarkozyGridCompact
+  Conjectures.PomeranceSarkozyGridMarkov
+  Conjectures.PomeranceSarkozyGridTightness
   Conjectures.PomeranceSarkozyShiftedTailCross
   Conjectures.PomeranceSarkozyWeakAbsoluteMoment
   Conjectures.PomeranceSarkozyWeakPositivePart

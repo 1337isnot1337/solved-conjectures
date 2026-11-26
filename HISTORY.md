@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Verify a process tightness criterion for Pomerance–Sárközy
+
+Lean checks the base-32 grid probability bound, the uniform
+continuous-path modulus, and the tightness criterion.
+[Proof scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the literal Schröder tree enumeration
 
 Lean splits each nonleaf tree at its first child, derives the
