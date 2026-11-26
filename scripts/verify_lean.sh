@@ -3594,6 +3594,10 @@ modules=(
   Conjectures.ChernFuLinThreeStatisticZTail
   Conjectures.ChernFuLinThreeStatisticXTail
   Conjectures.ChernFuLinThreeStatistic
+  Conjectures.GawronUlasPartitionSeries
+  Conjectures.GawronUlasPartitionCusps
+  Conjectures.GawronUlasPartitionBounds
+  Conjectures.GawronUlasPartitionSigns
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
