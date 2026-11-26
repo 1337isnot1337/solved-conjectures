@@ -16,7 +16,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **82.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ✅ |
 | **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **82.** [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ✅ |
 | **4.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **82.** [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | 🟢 |
-| **4.** [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ | **86.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
+| **4.** [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ | **86.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | 🟡 |
 | **8.** [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ | **86.** [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/) | ✅ |
 | **8.** [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | 🟡 | **86.** [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | ✅ |
 | **8.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ✅ | **86.** [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ✅ |
