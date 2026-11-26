@@ -1,0 +1,93 @@
+Check Cardon cubic and Rowland rank-sequence certificates
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.91
+Output SHA-256: de57383e25506be247a09ff40acd2096d4b74cea29840f2871ea667b0b7b0724
+
+python3 results/cardon-zero-sector/verify.py
+python3 results/rowland-sistos-barron/verify.py --max-exponent 100
+
+Exact negative discriminant: -72517275/4294967296
+{
+  "all_checks_passed": true,
+  "exact_bivariate_expansion_exponents": [
+    1,
+    100
+  ],
+  "all_coefficient_degrees_checked": [
+    49,
+    100
+  ],
+  "prefix_exceptions_to_eventual_formula": [
+    {
+      "M": 1,
+      "exact_rank": 6,
+      "eventual_formula": 0
+    },
+    {
+      "M": 2,
+      "exact_rank": 16,
+      "eventual_formula": 15
+    },
+    {
+      "M": 8,
+      "exact_rank": 231,
+      "eventual_formula": 234
+    },
+    {
+      "M": 36,
+      "exact_rank": 4579,
+      "eventual_formula": 4582
+    }
+  ],
+  "independent_modular_recurrence_checks": [
+    {
+      "M": 1,
+      "rank": 6
+    },
+    {
+      "M": 2,
+      "rank": 16
+    },
+    {
+      "M": 3,
+      "rank": 37
+    },
+    {
+      "M": 4,
+      "rank": 54
+    },
+    {
+      "M": 5,
+      "rank": 96
+    },
+    {
+      "M": 6,
+      "rank": 133
+    },
+    {
+      "M": 7,
+      "rank": 183
+    },
+    {
+      "M": 8,
+      "rank": 231
+    }
+  ],
+  "sample_ranks": {
+    "1": 6,
+    "2": 16,
+    "4": 54,
+    "8": 231,
+    "9": 292,
+    "16": 912,
+    "25": 2220,
+    "36": 4579,
+    "49": 8472,
+    "50": 8823,
+    "64": 14424,
+    "81": 23080,
+    "100": 35142
+  },
+  "proof_scope": "The companion symbolic proof, not this finite check, covers every M >= 49."
+}

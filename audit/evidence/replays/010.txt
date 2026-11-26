@@ -1,0 +1,10 @@
+Check the degree-count counterexamples for minimal extendability
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.7
+Output SHA-256: 1555eb1883a340b8c5480fe5feebae9ae049b5f47d706e8ad85615a0c6d9d3ca
+
+python3 results/mallik-diwan-kothari-degree-count/verify.py
+
+Literal witness: 3420 three-edge matchings extend; all 36 deletions have a nonextending matching.
+Family: 15 exact Hall and all-edge minimality checks pass.

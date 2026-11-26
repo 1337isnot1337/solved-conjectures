@@ -1,0 +1,19 @@
+Check finite-field blocking pencils
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.21
+Output SHA-256: c91131dbb706b7bdce8cdbe076d09f9ca85284fec4be2f399c65465e1ee4ecee
+
+python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py
+
+F_3 squarefree quartics of type (4,): 18 fibers, 72 rational orderings
+F_3 squarefree quartics of type (2, 2): 3 fibers, 24 rational orderings
+F_3: all 8 shift sets for each (degree, minimum) [(3, 3)]
+F_5: all 32 shift sets for each (degree, minimum) [(5, 5)]
+F_7: all 128 shift sets for each (degree, minimum) [(7, 7)]
+F_11: all 2048 shift sets for each (degree, minimum) [(11, 11)]
+F_4: all 16 shift sets for each (degree, minimum) [(2, 3), (4, 4)]
+F_8: all 256 shift sets for each (degree, minimum) [(2, 4), (4, 4), (8, 8)]
+F_9: all 512 shift sets for each (degree, minimum) [(3, 5), (9, 9)]
+F_16: all 65536 shift sets for each (degree, minimum) [(2, 5), (4, 7), (8, 5), (16, 16)]
+266184 shift-set checks; {'regular seeds': 367, 'graph-line tests': 8577, 'simultaneous type matches': 145}

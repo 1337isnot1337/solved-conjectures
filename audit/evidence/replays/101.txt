@@ -1,0 +1,32 @@
+Check the upper-half graphs for maximum degree 3 mod 4
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.89
+Output SHA-256: d838b2fac43d9721b9ca90e51e8e4eae4ee72dbadc993ec2c331384eb8b91c02
+
+python3 results/circular-index-upper-half-delta-3-mod-4/verify.py
+
+g=15 n=91 Delta=63 |E|=2865 p=191 chi'_c=191/3 = Delta+2/3  OK
+g=16 n=97 Delta=67 |E|=3248 p=203 chi'_c=203/3 = Delta+2/3  OK
+g=17 n=103 Delta=71 |E|=3655 p=215 chi'_c=215/3 = Delta+2/3  OK
+g=18 n=109 Delta=75 |E|=4086 p=227 chi'_c=227/3 = Delta+2/3  OK
+g=60 n=361 Delta=243 |E|=43860 p=731 chi'_c=731/3 = Delta+2/3  OK
+explicit family: all 15 <= g <= 60 pass (Delta = 4g+3 = 63 .. 243)
+g=6 n=37 Delta=27 |E|=498 p=83 chi'_c=83/3 = Delta+2/3  OK
+g=7 n=43 Delta=31 |E|=665 p=95 chi'_c=95/3 = Delta+2/3  OK
+g=8 n=49 Delta=35 |E|=856 p=107 chi'_c=107/3 = Delta+2/3  OK
+g=9 n=55 Delta=39 |E|=1071 p=119 chi'_c=119/3 = Delta+2/3  OK
+g=10 n=61 Delta=43 |E|=1310 p=131 chi'_c=131/3 = Delta+2/3  OK
+g=11 n=67 Delta=47 |E|=1573 p=143 chi'_c=143/3 = Delta+2/3  OK
+g=12 n=73 Delta=51 |E|=1860 p=155 chi'_c=155/3 = Delta+2/3  OK
+g=13 n=79 Delta=55 |E|=2171 p=167 chi'_c=167/3 = Delta+2/3  OK
+g=14 n=85 Delta=59 |E|=2506 p=179 chi'_c=179/3 = Delta+2/3  OK
+certificates: all 9 pass (g = 6..14, Delta = 27..59)
+   control (a) rejected: vertex 0: colours 0,3 too close
+   control (b) rejected: base matching not perfect on W
+   control (c) rejected: base lengths not distinct
+   control (d) rejected: multi-edge (graph not simple / classes overlap)
+   control (e) rejected: vertex 0: colours 16,18 too close
+   control (f) rejected: vertex 2: colours 18,20 too close
+negative controls: all 6 rejected
+ALL CHECKS PASSED

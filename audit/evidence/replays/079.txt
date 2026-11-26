@@ -1,0 +1,39 @@
+Check finite prime-order circulant permanent examples
+Working directory: .
+Exit: 0
+Elapsed seconds: 4.55
+Output SHA-256: f6b15c1cf48f6edfb0426c4d1490cf3a819c8c44d64bd6d444ae1243a10c8594
+
+python3 docs/nss/sanity_check.py --output "$RUNNER_TEMP/nss-sanity-results.json"
+
+p= 7 k= 3 a=0.00000 per=31 error(actual-finite)=-0.09228
+p= 7 k= 3 a=0.04167 per=31 error(actual-finite)=-0.09228
+p= 7 k= 3 a=0.08333 per=31 error(actual-finite)=-0.09228
+p= 7 k= 4 a=0.00000 per=144 error(actual-finite)=-0.03863
+p= 7 k= 4 a=0.04167 per=144 error(actual-finite)=-0.07765
+p= 7 k= 4 a=0.08333 per=144 error(actual-finite)=-0.07765
+p=11 k= 4 a=0.00000 per=1324 error(actual-finite)=-0.1738
+p=11 k= 4 a=0.04167 per=1456 error(actual-finite)=-0.1588
+p=11 k= 4 a=0.08333 per=1456 error(actual-finite)=-0.1588
+p=11 k= 7 a=0.00000 per=366131 error(actual-finite)=-0.02121
+p=11 k= 7 a=0.04167 per=364503 error(actual-finite)=-0.02045
+p=11 k= 7 a=0.08333 per=364503 error(actual-finite)=-0.02045
+p=13 k= 5 a=0.00000 per=57621 error(actual-finite)=-0.1137
+p=13 k= 5 a=0.04167 per=57621 error(actual-finite)=-0.1137
+p=13 k= 5 a=0.08333 per=57621 error(actual-finite)=-0.1137
+p=13 k= 8 a=0.00000 per=15468656 error(actual-finite)=-0.02113
+p=13 k= 8 a=0.04167 per=15354880 error(actual-finite)=-0.02049
+p=13 k= 8 a=0.08333 per=15358832 error(actual-finite)=-0.02042
+p=17 k= 6 a=0.00000 per=18597734 error(actual-finite)=-0.0977
+p=17 k= 6 a=0.04167 per=17814374 error(actual-finite)=-0.103
+p=17 k= 6 a=0.08333 per=18422430 error(actual-finite)=-0.1102
+p=17 k=11 a=0.00000 per=285266556129 error(actual-finite)=-0.01254
+p=17 k=11 a=0.04167 per=283929603437 error(actual-finite)=-0.01195
+p=17 k=11 a=0.08333 per=285967704197 error(actual-finite)=-0.01282
+p=19 k= 7 a=0.00000 per=1684141387 error(actual-finite)=-0.07986
+p=19 k= 7 a=0.04167 per=1638377569 error(actual-finite)=-0.081
+p=19 k= 7 a=0.08333 per=1707498087 error(actual-finite)=-0.07623
+p=19 k=12 a=0.00000 per=26334193702200 error(actual-finite)=-0.01261
+p=19 k=12 a=0.04167 per=26186113432676 error(actual-finite)=-0.01197
+p=19 k=12 a=0.08333 per=26343260785224 error(actual-finite)=-0.01246
+PASS 30 cases; /tmp/sc-deep-audit/tmp/nss-sanity-results.json

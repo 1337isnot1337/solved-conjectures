@@ -1,0 +1,20 @@
+Verify partial results at Hadamard order 2396
+Working directory: results/hadamard-2396
+Exit: 0
+Elapsed seconds: 4.52
+Output SHA-256: 77646165158d43b80b9279af2811b1820a8ab7f22b4fd67b33f0fe5621c532a6
+
+c++ -O2 -std=c++17 quotient133.cpp -o "$RUNNER_TEMP/hadamard133"
+"$RUNNER_TEMP/hadamard133" > "$RUNNER_TEMP/hadamard133.pairs"
+diff -u quotient133.pairs "$RUNNER_TEMP/hadamard133.pairs"
+python audit.py
+python border.py
+python automorphisms.py
+
+normalized within energy bound 327624, passing marginal spectra 24132, signatures 10260, ordered complementary compressed pairs 32
+32 ordered 133-vectors recovered independently and tested at all shifts.
+All 32 independently fail the length-21 marginal, using every cyclic shift.
+Length-598 sparse compression constants verified.
+Order 60: both quotient groups passed full Gram-matrix checks.
+Order 2396: normalized coset-sum patterns [(1, -9, -5, 7), (1, 1, 7, 9), (3, -11, -1, 5), (3, -9, 3, 7), (3, -7, -7, 7), (3, -5, 5, 9), (3, -3, 1, 11), (5, -11, 1, 3), (5, 3, 7, 7), (7, -7, 1, 7), (9, -7, -5, -3), (9, -3, -3, 7), (9, -1, 3, 7), (11, -5, -3, 1)]
+Order 479 excluded: multiplicative order 239, no norm 599 or 599^3, and prime-ideal class order five verified arithmetically.

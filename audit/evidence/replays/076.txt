@@ -1,0 +1,9 @@
+Check divisor-sum congruences and cofactor identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.68
+Output SHA-256: ccdb897c805f15e3ff3d4edbc3fbab0d838ec01a8224b590b44e54f6129b69c6
+
+python3 results/erdos-granville-pomerance-spiro/verify.py
+
+Quadratic roots, bilinear congruences, and cofactor identities passed.

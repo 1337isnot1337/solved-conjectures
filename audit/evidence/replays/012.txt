@@ -1,0 +1,11 @@
+Replay the even-grid domination-game counterexample
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.07
+Output SHA-256: 88bcaf1223423bcc9a16e76768fb9f2c8f5bd2ac0edfaafb6d53411f140507e7
+
+python3 results/fiscus-grid-game/verify_strategy.py
+python3 results/fiscus-grid-game/check_minimax.py
+
+Verified all 13 second moves and 8 reply tables.
+Verified 16384 positions. Winning openings: B, F, b, f.

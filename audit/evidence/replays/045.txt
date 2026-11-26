@@ -1,0 +1,21 @@
+Check Kovalev counterfamily constants
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.07
+Output SHA-256: 55d3444b4517c690bf9d99796f0d295fb3c50643bcaa2cc608b8b5fb93168098
+
+python results/kovalev-hardy-duality/verify.py
+python results/kovalev-hardy-duality/review_constants.py
+
+{
+  "minimum_k": 500000,
+  "all_matrix_orders_at_least": 500001,
+  "a_lower_bound": "7767/10000",
+  "b_lower_bound": "2083/1000",
+  "transfer_factor": "999/1000",
+  "quartic_lower_bound": "1974576784456084845603270321/1600000000000000000000000000",
+  "gap_above_355_over_113_squared_over_8": "8370960719747393508158728849/20430400000000000000000000000000",
+  "status": "ALL_RATIONAL_COMPARISONS_PASSED"
+}
+PASS: logarithm, Euler constant, pi, Bessel, and separation bounds.
+Exact margin above (355/113)^2/8: 8370960719747393508158728849/20430400000000000000000000000000

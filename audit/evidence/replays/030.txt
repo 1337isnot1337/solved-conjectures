@@ -1,0 +1,11 @@
+Certify all remaining plane-partition polynomial signs
+Working directory: .
+Exit: 0
+Elapsed seconds: 18.16
+Output SHA-256: 1356ea1baf545b2776883ca4636b36abc8cef2e7fea5737089291c8275b4ab09
+
+python3 results/heim-neuhauser-troeger-plane-partition-turan/heim-neuhauser-plane-partition-check.py
+
+Certified the finite boundary for the corrected off-diagonal statement.
+Certified root inequalities through n=250 on both conjectured parameter ranges.
+Certified Turán inequalities at n=12,...,250 for x>=1.

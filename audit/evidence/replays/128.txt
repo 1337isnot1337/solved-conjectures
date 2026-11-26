@@ -1,0 +1,9 @@
+Additional results/juhnke-lattice-paths/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.14
+Output SHA-256: a380cb30817e5cac523493e064688b2a677a7b36a333583192596964e46a74ba
+
+python3 results/juhnke-lattice-paths/check.py
+
+Exact run and independent path recurrence checks passed for 3≤d≤62.

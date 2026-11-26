@@ -1,0 +1,13 @@
+Check the CUT Family B threshold against the game rules
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.86
+Output SHA-256: 81a3ce65f2e7ba3ff59158676ebf94b2815e2d5bab026f48393e4d8b7335938a
+
+python3 results/cut-family-b/verify.py
+
+x=4: base sequence and preserving cut sets checked through 51; every smaller admissible odd cut distinguished by 16.
+x=6: base sequence and preserving cut sets checked through 75; every smaller admissible odd cut distinguished by 24.
+x=8: base sequence and preserving cut sets checked through 99; every smaller admissible odd cut distinguished by 32.
+x=10: base sequence and preserving cut sets checked through 123; every smaller admissible odd cut distinguished by 40.
+Checked 46 Family B cut sets directly from the game rules.

@@ -1,0 +1,9 @@
+Check conditional lonely-runner examples
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.17
+Output SHA-256: 85f17bf266b03ddc66133bea8fe55344bef5eae8ad687db560d91e1ad6fd372e
+
+python3 results/loneliness-on-a-hyperplane/verify.py
+
+Passed 534 unshifted endpoint checks and 61 shifted checks.

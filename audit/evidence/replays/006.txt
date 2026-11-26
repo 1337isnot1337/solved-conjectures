@@ -1,0 +1,26 @@
+Replay the Sidon, pattern-packing and affine four-cycle checks
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.08
+Output SHA-256: b0cbb6d6d24d862f066f33f9c4f30c9056cefbcf19dffb03011c3ceb5e4311ff
+
+python3 results/byrne-tait-odd-sidon/verify.py
+python3 results/blitvic-kammoun-steingrimsson-packing-cutoff/check.py
+python3 results/erdos-85-four-cycle-threshold/check_affine_paths.py
+
+order 375, index 3, 125 distinct ordered triples, density 1/3
+order 23,958, index 9, 1,331 distinct ordered triples, density 1/18
+L=2, K=7, m=4, first differing j=3: 29 != 25
+L=3, K=10, m=7, first differing j=4: 221 != 196
+L=4, K=13, m=10, first differing j=5: 1960 != 1764
+L=5, K=16, m=13, first differing j=6: 19188 != 17424
+P: (1, 7, 12, 2, 8, 13, 3, 9, 14, 4, 10, 15, 5, 11, 16, 6)
+Q: (6, 1, 12, 7, 2, 13, 8, 3, 14, 9, 4, 15, 10, 5, 16, 11)
+L=6, K=19, m=16, first differing j=7: 201465 != 184041
+L=7, K=22, m=19, first differing j=8: 2228941 != 2044900
+L=8, K=25, m=22, first differing j=9: 25683944 != 23639044
+q=4: 48 possible new pairs, 108 old simple paths.
+q=8: 448 possible new pairs, 2744 old simple paths.
+q=16: 3840 possible new pairs, 54000 old simple paths.
+q=32: 31744 possible new pairs, 953312 old simple paths.
+Total 36080 pairs, 1010164 paths and 400 seeded charging tests on the loop line. Checked 332 arbitrary-line selections.

@@ -1,0 +1,9 @@
+Additional docs/research-results/alexandersson-graphical-dist/check_density.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.1
+Output SHA-256: b4d1f6d2cfda9326ce96414828610bf1b9c64f64637074eb7fd5b79917a3189b
+
+python3 docs/research-results/alexandersson-graphical-dist/check_density.py
+
+1944 acyclic orientations; all filler supports and the rational tuning identity passed

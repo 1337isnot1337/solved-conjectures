@@ -1,0 +1,9 @@
+Check the two-leaf orientation characterization
+Working directory: .
+Exit: 0
+Elapsed seconds: 4.21
+Output SHA-256: 48f9b6293d0f689ec40a711ce3628cdca3b784500201d6d72f88014d205812ca
+
+python3 results/lower-oriented-general-position-np-hardness/verify.py
+
+Checked 8,555 graphs and 511,102 orientations; 2,656 traceable graphs and 6,032 certificates.

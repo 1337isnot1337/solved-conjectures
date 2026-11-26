@@ -1,0 +1,9 @@
+Check Haralambis three-difference rotation certificates
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.38
+Output SHA-256: 0c347d03a2455266168af6dc6a022f54c11d2b2876bb93890cf7bf8cccec1613
+
+python3 results/haralambis-three-differences/verify.py
+
+Verified complete circulation and rotation certificates for 11270 exhaustively enumerated and 600 sampled configurations.

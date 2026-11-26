@@ -1,0 +1,16 @@
+Check tomdif’s seven upper-half graph certificates
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.04
+Output SHA-256: c5abb9e68b9a6b4b4eaa558a40fd596ab200efa3e022f3f6eab4f38a9afd6f12
+
+python3 results/circular-index-upper-half-remaining-deltas/verify.py
+
+PASS  Delta= 9  n=13  |E|= 58  (29,3)-colouring   29/3 <= chi'_c <= 29/3
+PASS  Delta=11  n=13  |E|= 70  (35,3)-colouring   35/3 <= chi'_c <= 35/3
+PASS  Delta=13  n=19  |E|=123  (41,3)-colouring   41/3 <= chi'_c <= 41/3
+PASS  Delta=15  n=23  |E|=171  (47,3)-colouring   171/11 <= chi'_c <= 47/3
+PASS  Delta=17  n=25  |E|=212  (53,3)-colouring   53/3 <= chi'_c <= 53/3
+PASS  Delta=19  n=25  |E|=236  (59,3)-colouring   59/3 <= chi'_c <= 59/3
+PASS  Delta=23  n=31  |E|=355  (71,3)-colouring   71/3 <= chi'_c <= 71/3
+ALL CHECKS PASSED

@@ -1,0 +1,13 @@
+Check Pula–Song–Wanless identities and parameter conventions
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.52
+Output SHA-256: 8a4c8ea67813c290b3b33952bbd9fa5b36d3ac13e7fedecd1e1e75bb8531229c
+
+python results/pula-song-wanless/verify.py
+
+Generic symbolic derivative, crossing and threshold identities: passed
+Coefficient ODE and variance identity checks: 72 passed
+Independent subset-DP permanent vs counting formula: 48 passed
+Exact barycenter parameter/strict-factor-inequality checks: 42 passed
+All finite checks are identity audits; the proof is the written general argument.

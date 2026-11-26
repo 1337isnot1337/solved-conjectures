@@ -1,0 +1,9 @@
+Check all six Fuss–Narayana matrices
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.87
+Output SHA-256: 6588f68890af7788c481f5d2e8b2b7f8cf1679873feed2f66893b034efa6c7e3
+
+python3 results/wang-yang-fuss-narayana/check.py
+
+3168 product identities and 82344 exact minors passed.

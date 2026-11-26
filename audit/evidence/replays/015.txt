@@ -1,0 +1,13 @@
+Check the Steiner triple system sail counts
+Working directory: .
+Exit: 0
+Elapsed seconds: 4.04
+Output SHA-256: 832dced4787fdfecf7dc70add89d42ec3d051f2ef806a10172c9af055737983d
+
+python3 results/steiner-triple-system-sail/verify.py
+
+7 all colorings 128 sail range 0 28
+9 all colorings 4096 sail range 0 72
+exhaustive colorings 4224 disjoint opposite block pairs 24576
+87 larger colorings 7 sail range 11451 104748
+127 larger colorings 7 sail range 41421 330708

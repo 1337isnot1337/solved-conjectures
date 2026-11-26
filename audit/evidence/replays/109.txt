@@ -1,0 +1,82 @@
+Check Currie's conjecture on complexity 2n+1 and critical exponent
+Working directory: .
+Exit: 0
+Elapsed seconds: 34.83
+Output SHA-256: ad5485847d37f60671b46b5034847e970c07f9451db9e777afadb55938ccc359
+
+python3 results/currie-conjecture-19/verify.py
+
+[   0.0s] S1 morphism identities
+[   0.0s]    AX1 row 1 ~ published row 1 o gamma^2, conjugating word '1' (h(c)u=ubase(c))
+[   0.0s]    AX1 row 2 ~ published row 2 o gamma^2, conjugating word '121' (h(c)u=ubase(c))
+[   0.0s]    AX1 row 3 ~ published row 3 o gamma^4, conjugating word '021' (h(c)u=ubase(c))
+[   0.0s]    AX1 row 4 ~ published row 4 o gamma^4, conjugating word '21021' (h(c)u=ubase(c))
+[   0.0s]    AX2 row 1 ~ published row 1 o gamma^R^3, conjugating word '12' (base(c)u=uh(c))
+[   0.0s]    AX2 row 2 ~ published row 2 o gamma^R^3, conjugating word '210' (base(c)u=uh(c))
+[   0.0s]    AX2 row 3 ~ published row 3 o gamma^R^4, conjugating word '210' (base(c)u=uh(c))
+[   0.0s]    AX2 row 4 ~ published row 4 o gamma^R^2, conjugating word '010' (base(c)u=uh(c))
+[   0.0s]    AX2 row 5 ~ published row 5 o gamma^R^2, conjugating word '0' (base(c)u=uh(c))
+[   0.0s]    AX2 row 6 ~ published row 6 o gamma^R^3, conjugating word '210' (base(c)u=uh(c))
+[   0.0s] S2 exact factor sets
+[   0.0s]    gamma is primitive: M^3 > 0
+[   1.3s] S3 hypotheses of the lemmas along the chains; seeds
+[   1.3s]    unique neighbours (a^- for R-steps, a^+ for L-steps): Phi ['0', '1', None] V ['0', '0', None] U ['0', '2', '0', None]
+[   1.3s]    seeds of G: '20' E=[('0', '1'), ('1', '1'), ('1', '2')] RET=((1, 0, 1), (1, 1, 1), (2, 1, 1)) ; '0' E=[('1', '2'), ('2', '1'), ('2', '2')] RET=((1, 0, 1), (1, 1, 0), (1, 1, 1))
+[   1.4s]    extra short bispecials of V: [('1', [('1', '0'), ('2', '0'), ('2', '1')], ((0, 1, 0), (1, 1, 1), (1, 1, 2))), ('2', [('0', '1'), ('0', '2'), ('2', '1')], ((0, 0, 1), (1, 1, 1), (1, 2, 1))), ('21', [('0', '1'), ('2', '0'), ('2', '1')], ((1, 1, 1), (1, 2, 1), (1, 2, 2)))]
+[   1.4s]    extra short bispecials of U: [('02', [('1', '0'), ('1', '1'), ('2', '1')], ((1, 0, 1), (1, 1, 1), (1, 2, 2))), ('21', [('0', '0'), ('0', '2'), ('1', '0')], ((0, 1, 1), (1, 1, 1), (2, 1, 2))), ('021', [('1', '2'), ('2', '0'), ('2', '2')], ((1, 1, 1), (1, 2, 2), (2, 2, 3))), ('2', [('0', '0'), ('0', '1'), ('1', '1')], ((0, 1, 1), (1, 0, 1), (1, 1, 1)))]
+[   1.4s] S4 lemma-generated bispecials vs brute force, lengths <= 300
+[   4.9s]    G: 18 nonempty bispecial factors of length <= 300, all predicted, extension graphs and return words agree
+[  15.1s]    V: 18 nonempty bispecial factors of length <= 300, all predicted, extension graphs and return words agree
+[  30.1s]    U: 18 nonempty bispecial factors of length <= 300, all predicted, extension graphs and return words agree
+[  30.1s] S5 complexity 2n+1 for n <= 300 (brute force on exact factor sets)
+[  31.8s]    all 20 images (and G, G') have exactly 2n+1 factors of each length n <= 300
+[  31.8s] S6 certified inequality |w| < alpha |r| and limit alpha
+[  31.8s]    lambda in [1.754877666246693, 1.754877666246693], alpha = mu - 1 = (3 - lam + 2 lam^2)/5
+[  32.2s]    G orbit A k=0 mod 4: |w|-alpha|r| -> -6/5 (return word Parikh at k: (1, 0, 1)), certified for all j >= 0
+[  32.2s]    G orbit A k=1 mod 4: |w|-alpha|r| -> -9/5 (return word Parikh at k: (2, 1, 1)), certified for all j >= 0
+[  32.2s]    G orbit A k=2 mod 4: |w|-alpha|r| -> -6/5 (return word Parikh at k: (3, 2, 2)), certified for all j >= 0
+[  32.2s]    G orbit A k=3 mod 4: |w|-alpha|r| -> -9/5 (return word Parikh at k: (5, 3, 4)), certified for all j >= 0
+[  32.2s]    G orbit B k=0 mod 4: |w|-alpha|r| -> -8/5 (return word Parikh at k: (1, 1, 0)), certified for all j >= 0
+[  32.2s]    G orbit B k=1 mod 4: |w|-alpha|r| -> -7/5 (return word Parikh at k: (1, 1, 1)), certified for all j >= 0
+[  32.2s]    G orbit B k=2 mod 4: |w|-alpha|r| -> -8/5 (return word Parikh at k: (2, 1, 2)), certified for all j >= 0
+[  32.2s]    G orbit B k=3 mod 4: |w|-alpha|r| -> -7/5 (return word Parikh at k: (4, 2, 3)), certified for all j >= 0
+[  32.2s]    U orbit A k=0 mod 4: |w|-alpha|r| -> -4/5 (return word Parikh at k: (1, 0, 1)), certified for all j >= 1
+[  32.2s]    U orbit A k=1 mod 4: |w|-alpha|r| -> -11/5 (return word Parikh at k: (2, 1, 1)), certified for all j >= 0
+[  32.2s]    U orbit A k=2 mod 4: |w|-alpha|r| -> -4/5 (return word Parikh at k: (3, 2, 2)), certified for all j >= 0
+[  32.2s]    U orbit A k=3 mod 4: |w|-alpha|r| -> -11/5 (return word Parikh at k: (5, 3, 4)), certified for all j >= 0
+[  32.2s]    U orbit B k=0 mod 4: |w|-alpha|r| -> -12/5 (return word Parikh at k: (1, 1, 0)), certified for all j >= 0
+[  32.2s]    U orbit B k=1 mod 4: |w|-alpha|r| -> -3/5 (return word Parikh at k: (1, 1, 1)), certified for all j >= 1
+[  32.2s]    U orbit B k=2 mod 4: |w|-alpha|r| -> -12/5 (return word Parikh at k: (2, 1, 2)), certified for all j >= 0
+[  32.2s]    U orbit B k=3 mod 4: |w|-alpha|r| -> -3/5 (return word Parikh at k: (4, 2, 3)), certified for all j >= 0
+[  32.2s]    V orbit A k=0 mod 4: |w|-alpha|r| -> -1 (return word Parikh at k: (1, 0, 1)), certified for all j >= 1
+[  32.2s]    V orbit A k=1 mod 4: |w|-alpha|r| -> -2 (return word Parikh at k: (2, 1, 1)), certified for all j >= 0
+[  32.2s]    V orbit A k=2 mod 4: |w|-alpha|r| -> -1 (return word Parikh at k: (3, 2, 2)), certified for all j >= 0
+[  32.2s]    V orbit A k=3 mod 4: |w|-alpha|r| -> -2 (return word Parikh at k: (5, 3, 4)), certified for all j >= 0
+[  32.2s]    V orbit B k=0 mod 4: |w|-alpha|r| -> -2 (return word Parikh at k: (1, 1, 0)), certified for all j >= 0
+[  32.2s]    V orbit B k=1 mod 4: |w|-alpha|r| -> -1 (return word Parikh at k: (1, 1, 1)), certified for all j >= 1
+[  32.2s]    V orbit B k=2 mod 4: |w|-alpha|r| -> -2 (return word Parikh at k: (2, 1, 2)), certified for all j >= 0
+[  32.2s]    V orbit B k=3 mod 4: |w|-alpha|r| -> -1 (return word Parikh at k: (4, 2, 3)), certified for all j >= 0
+[  32.2s]    all 72 families certified (|w| < alpha |r| for every nonempty bispecial w and every return word r)
+[  32.2s] S7 maximal repetitions, period <= 3000
+[  32.4s]    G                    largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  32.5s]    Fig3 h1              largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  32.6s]    Fig3 h2              largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  32.7s]    Fig3 h3              largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  32.8s]    Fig3 h4              largest exponent found 1255/506 = 2.480237 (period 1518) < mu
+[  33.0s]    Fig4 h1              largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  33.1s]    Fig4 h2              largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  33.2s]    Fig4 h3              largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  33.4s]    Fig4 h4              largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  33.5s]    Fig4 h5              largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  33.6s]    Fig4 h6              largest exponent found 1255/506 = 2.480237 (period 1518) < mu
+[  33.7s]    arXiv Fig1 row 1     largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  33.8s]    arXiv Fig1 row 2     largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  33.9s]    arXiv Fig1 row 3     largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  34.0s]    arXiv Fig1 row 4     largest exponent found 1255/506 = 2.480237 (period 1518) < mu
+[  34.2s]    arXiv Fig2 row 1     largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  34.3s]    arXiv Fig2 row 2     largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  34.4s]    arXiv Fig2 row 3     largest exponent found 6233/2513 = 2.480302 (period 2513) < mu
+[  34.5s]    arXiv Fig2 row 4     largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  34.6s]    arXiv Fig2 row 5     largest exponent found 4919/1983 = 2.480585 (period 1983) < mu
+[  34.8s]    arXiv Fig2 row 6     largest exponent found 1255/506 = 2.480237 (period 1518) < mu
+[  34.8s] ALL CHECKS PASSED

@@ -1,0 +1,35 @@
+Verify partial results for Frankl, Lonely Runner and Erdős–Gyárfás
+Working directory: .
+Exit: 0
+Elapsed seconds: 197.66
+Output SHA-256: 9b375b37174e2357ec4b456e7bc84a78d9c1dd83e7050e9b9639757fb07cbf62
+
+python results/frankl-generator-families/span_four.py
+python results/frankl-generator-families/tree_messages.py
+python results/frankl-generator-families/message_audit.py
+python results/lonely-runner-two-insertions/two_additions.py
+python results/erdos-gyarfas-abelian-covers/verify.py
+python results/erdos-gyarfas-abelian-covers/sharpness.py
+
+six-letter states 65248
+pair test edges 227424 recurrent 20265
+window 4 examined 20265 replayed 9088 remaining 11177 recurrent 35
+window 5 examined 48 replayed 31 remaining 17 recurrent 1
+only the empty schedule survives
+3 481792
+4 478679
+5 461724
+6 426826
+7 385225
+8 343032
+9 303914
+10 269665
+11 240799
+12 217078
+13 197903
+14 182564
+All 81 pinned boundary assignments and 128 Fano-plane selections passed.
+small exact base and pair counts (210, 643)
+endpoint inequalities verified for accelerations 548
+64 reachable verified lattices; {4: 24, 8: 24, 16: 14, 32: 2} by cycle length
+Connected 95-vertex cyclic cover: lengths 4, 8, 16 excluded; 32-cycle verified.

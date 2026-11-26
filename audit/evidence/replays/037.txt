@@ -1,0 +1,11 @@
+Check the Coulangeon–Lazzarini lattice shells
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.02
+Output SHA-256: 8907a886632981ee9032bb54f1bb42c5a87a578f6964733df0d2fcdfc74f1dff
+
+python3 results/coulangeon-lazzarini-two-shells/verify.py
+
+squared norm 4: 20 vectors, unnormalized diagonal [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+squared norm 8: 180 vectors, unnormalized diagonal [144, 144, 144, 144, 144, 144, 144, 144, 144, 144]
+squared norm 9: 512 vectors, unnormalized diagonal [0, 512, 512, 512, 512, 512, 512, 512, 512, 512]

@@ -1,0 +1,11 @@
+RUN near_one_constants.py
+PASS near_one_constants.py 0.05 seconds
+RUN verify_wall_cover.py
+PASS verify_wall_cover.py 252.83 seconds
+RUN verify_multidisk_independent.py
+PASS verify_multidisk_independent.py 1.66 seconds
+RUN wall_independent_verify.py
+PASS wall_independent_verify.py 404.76 seconds
+RUN verify_partition.py
+PASS verify_partition.py 1.0 seconds
+ALL FINITE CERTIFICATES PASSED 660.37 seconds

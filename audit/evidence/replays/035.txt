@@ -1,0 +1,12 @@
+Check Pantone–Bóna canonical front and tail counts
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.36
+Output SHA-256: 4203b0a89b81ce2433406a915ab88afe007959a71e3fdc49eb3c123d976a21a6
+
+python3 results/pantone-bona-asymptotic/verify.py
+
+d=1: canonical Tableau counts match literal avoiders: [1, 1, 2, 4, 8, 16, 32, 64]
+d=2: canonical Tableau counts match literal avoiders: [1, 1, 2, 6, 21, 79, 311, 1265]
+d=3: canonical Tableau counts match literal avoiders: [1, 1, 2, 6, 24, 116, 634, 3770]
+d=4: canonical Tableau counts match literal avoiders: [1, 1, 2, 6, 24, 120, 715, 4883]

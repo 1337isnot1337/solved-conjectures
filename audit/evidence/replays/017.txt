@@ -1,0 +1,13 @@
+Check the Erdős–Gyárfás point-degree spectrum inequality
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.29
+Output SHA-256: 720aa97887baaff6895bc266ea06a399f939b6d513c21bc9158c3293a850b5eb
+
+python3 results/erdos-gyarfas-point-degree-spectrum/verify.py
+
+n=3: 1 labelled spaces, maximum spectrum 1, 6 set comparisons
+n=4: 5 labelled spaces, maximum spectrum 2, 90 set comparisons
+n=5: 31 labelled spaces, maximum spectrum 2, 1550 set comparisons
+n=6: 352 labelled spaces, maximum spectrum 3, 311 set comparisons
+n=7: 8389 labelled spaces, maximum spectrum 4, 8358 set comparisons

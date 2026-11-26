@@ -1,0 +1,27 @@
+results/stern-half-plane/check.cpp
+Working directory: .
+Exit: 0
+Elapsed seconds: 7.14
+Output SHA-256: bf507cb5fe5a0b0b3b583dee49aae8a1dc245ed9ee0f7a498fb6a55b84586ec8
+
+c++ -std=c++17 -O2 results/stern-half-plane/check.cpp -o "$RUNNER_TEMP/stern-half-plane-extra"
+"$RUNNER_TEMP/stern-half-plane-extra"
+
+depth certified subdivided covered-analytically
+0 0 1 0
+1 0 4 0
+2 0 13 3
+3 0 45 7
+4 114 56 10
+5 161 60 3
+6 195 40 5
+7 129 29 2
+8 83 30 3
+9 91 23 6
+10 61 29 2
+11 78 36 2
+12 102 40 2
+13 121 37 2
+14 133 13 2
+15 50 0 2
+Total 1318 456 51

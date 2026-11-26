@@ -1,0 +1,94 @@
+Check Chen-Khare-Sahi exact semiring separation
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.22
+Output SHA-256: b257914fe7ca54377e92209e0e9fbbd0f2cd7d6700b00234fae7bf04bf2bd077
+
+python results/chen-khare-sahi-macdonald/verify.py
+python results/chen-khare-sahi-macdonald/independent_cone_check.py
+python results/chen-khare-sahi-macdonald/independent_orthogonality_check.py
+
+PASS: 38 exhaustive product generators and all 7 monomial generators.
+PASS: both Macdonald eigenidentities and distinct degree-six eigenvalues.
+PASS: exact normalized separator value = -4538292661539/106631184392870
+
+| Product | L value |
+|---|---:|
+| D(200-110) M400 | 5 |
+| D(200-110) M310 | 4 |
+| D(200-110) M220 | 4 |
+| D(200-110) M211 | 3 |
+| D(300-210) M300 | 9 |
+| D(300-210) M210 | 9 |
+| D(300-210) M111 | 7 |
+| D(210-111) M300 | 4 |
+| D(210-111) M210 | 2 |
+| D(210-111) M111 | 2 |
+| D(400-310) M200 | 16 |
+| D(400-310) M110 | 15 |
+| D(310-220) M200 | 14/3 |
+| D(310-220) M110 | 14/3 |
+| D(220-211) M200 | 5/3 |
+| D(220-211) M110 | 2/3 |
+| D(500-410) M100 | 24 |
+| D(410-320) M100 | 11 |
+| D(320-311) M100 | 0 |
+| D(311-221) M100 | 3 |
+| D(600-510) M000 | 34 |
+| D(510-420) M000 | 19 |
+| D(420-411) M000 | 0 |
+| D(420-330) M000 | 7 |
+| D(411-321) M000 | 7 |
+| D(330-321) M000 | 0 |
+| D(321-222) M000 | 2 |
+| D(200-110) D(200-110) M200 | 2/3 |
+| D(200-110) D(200-110) M110 | 1/3 |
+| D(200-110) D(300-210) M100 | 2/3 |
+| D(200-110) D(210-111) M100 | 2/3 |
+| D(200-110) D(400-310) M000 | 1 |
+| D(200-110) D(310-220) M000 | 0 |
+| D(200-110) D(220-211) M000 | 1 |
+| D(300-210) D(300-210) M000 | 0 |
+| D(300-210) D(210-111) M000 | 2 |
+| D(210-111) D(210-111) M000 | 0 |
+| D(200-110)^3 | 1/3 |
+one (200-110)M400 5
+one (200-110)M310 4
+one (200-110)M220 4
+one (200-110)M211 3
+one (300-210)M300 9
+one (300-210)M210 9
+one (300-210)M111 7
+one (210-111)M300 4
+one (210-111)M210 2
+one (210-111)M111 2
+one (400-310)M200 16
+one (400-310)M110 15
+one (310-220)M200 14/3
+one (310-220)M110 14/3
+one (220-211)M200 5/3
+one (220-211)M110 2/3
+one (500-410)M100 24
+one (410-320)M100 11
+one (320-311)M100 0
+one (311-221)M100 3
+one (600-510)M000 34
+one (510-420)M000 19
+one (420-411)M000 0
+one (420-330)M000 7
+one (411-321)M000 7
+one (330-321)M000 0
+one (321-222)M000 2
+two (200-110)(200-110)M200 2/3
+two (200-110)(200-110)M110 1/3
+two (200-110)(300-210)M100 2/3
+two (200-110)(210-111)M100 2/3
+two (200-110)(400-310)M000 1
+two (200-110)(310-220)M000 0
+two (200-110)(220-211)M000 1
+two (300-210)(300-210)M000 0
+two (300-210)(210-111)M000 2
+two (210-111)(210-111)M000 0
+three (200-110)^3 1/3
+PASS: 38 reduced products and all 7 pure monomials.
+PASS: both three-variable polynomials independently derived from the full Hall inner product.

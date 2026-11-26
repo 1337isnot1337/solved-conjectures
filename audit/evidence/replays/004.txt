@@ -1,0 +1,10 @@
+Check the independent general-position inequalities
+Working directory: .
+Exit: 0
+Elapsed seconds: 8.23
+Output SHA-256: 40d7b780cc6ff8c3f47267bc69929fecacfdb16c36d09ff337cb9a955e45d5d6
+
+python3 results/general-position-nordhaus-gaddum/verify.py
+
+All 33868 labelled graphs through order six; 103438 prescribed roots.
+Total 35868 graphs, 111701 prescribed roots; 10789 assembled classes of size >= 3.

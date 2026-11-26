@@ -1,0 +1,11 @@
+Check Horňák–Woźniak partition allocations
+Working directory: .
+Exit: 0
+Elapsed seconds: 36.02
+Output SHA-256: 44a1e7bbbcc7282e3ad72a2347efc90200af6474ee6c7fbdf7829193576d6de6
+
+python3 results/hornak-wozniak/verify.py
+
+Checked 1,495 small trees against 2,742,241 prescribed partitions.
+Checked 61,183 local transfers by direct allocation.
+Checked 20 constructed trees against the five tests.

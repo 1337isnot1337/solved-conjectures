@@ -1,0 +1,10 @@
+Check existing Baricz–Pogány formal-series identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.06
+Output SHA-256: bda039647fa8bcac3404bc579b41b457e81cfd10b639c6cd9e7f65b2672a99a0
+
+python results/baricz-pogany-coefficients/verify.py
+
+PASS: 455 exact identities, 49 source fixtures, 105 strict bounds.
+The general theorem is proved in PROOF.md; these are finite diagnostic checks.

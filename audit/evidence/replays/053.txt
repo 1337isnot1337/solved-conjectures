@@ -1,0 +1,12 @@
+Check permanental-compound trace and support identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.71
+Output SHA-256: 0ea69fbc163adbf9fb2467c5457cd17431f857ca153a9b7c3fb25a2f751b26d0
+
+python results/perron-root-permanental-compounds/verify.py
+
+verified 126 exact cyclic trace identities
+verified 81 exact Newton inequalities for path sums
+verified 2048 exact support/zero-root comparisons
+The FPRAS conclusion relies on the written proof and cited theorems.

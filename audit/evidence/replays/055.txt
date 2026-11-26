@@ -1,0 +1,10 @@
+Check gamma-quotient signs, rank, and moment normalization
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.08
+Output SHA-256: f290c15597c1e9c8eca7e4635321b82e8f1466457732aaf88b0f335c7fc060e4
+
+python results/kvz-gamma-quotient/verify.py
+
+PASS: 115 exact rational checks
+delta=1/2 order-three determinant / pi^(3/2) = 5/8192

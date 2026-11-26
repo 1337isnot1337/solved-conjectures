@@ -1,0 +1,19 @@
+results/braun-bruegge-minimum-facets/check_exhaustive.cpp
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.58
+Output SHA-256: e540e34c887bcfb1a2e9b74ccfff31aff48f99886776d751c62cdfb198029d43
+
+c++ -std=c++17 -O2 results/braun-bruegge-minimum-facets/check_exhaustive.cpp -o "$RUNNER_TEMP/braun-bruegge-minimum-facets-extra"
+"$RUNNER_TEMP/braun-bruegge-minimum-facets-extra"
+
+2 1 1 1 0
+3 1 4 3 2
+4 1 4 4 0
+4 2 34 3 2
+5 1 5 5 0
+5 2 723 10 2
+6 1 6 6 0
+6 2 2400 15 2
+6 3 24298 10 2
+checked 27475 labeled connected graphs

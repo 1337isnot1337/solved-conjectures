@@ -1,0 +1,23 @@
+Verify the five-speed loneliness spectrum
+Working directory: .
+Exit: 0
+Elapsed seconds: 163.43
+Output SHA-256: 8b38e913475c50e86599203fd4d85bbcbdc44e3aa5f72f7d12fe8804784041bb
+
+python3 results/five-speed-spectrum/verify.py
+
+Checked 1226 relation pairs against 9 spaces.
+All ten exact prime-product inequalities passed by prime 1619.
+164 two-parameter maps, 317 residual quintuples, 12 below 1/5. All have denominator 5 times numerator plus one.
+(1, 2, 3, 5, 8) 2/11
+(1, 3, 4, 5, 9) 1/6
+(1, 3, 4, 5, 11) 3/16
+(1, 3, 4, 5, 18) 2/11
+(1, 3, 4, 5, 27) 6/31
+(1, 4, 5, 6, 7) 2/11
+(1, 4, 5, 6, 27) 6/31
+(1, 7, 8, 9, 15) 3/16
+(2, 3, 5, 8, 19) 4/21
+(2, 5, 7, 8, 9) 3/16
+(3, 5, 8, 9, 13) 4/21
+(3, 5, 8, 11, 13) 4/21

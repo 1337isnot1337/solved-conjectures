@@ -1,0 +1,37 @@
+Verify the unique equality case for ten lonely runners
+Working directory: .
+Exit: 0
+Elapsed seconds: 750.09
+Output SHA-256: d171660b3e49d1f1427a09a1941544dbe3ac4cf4c21b3c6c5e7c6337b3700fe1
+
+python3 results/tight-nine-speeds/verify.py
+
+71 passed (77412 folded multisets).
+73 passed (34201 folded multisets).
+79 passed (2697 folded multisets).
+83 passed (45133 folded multisets).
+89 passed (2091 folded multisets).
+97 passed (3377 folded multisets).
+101 passed (57572 folded multisets).
+103 passed (24134 folded multisets).
+107 passed (4782 folded multisets).
+109 passed (1899 folded multisets).
+113 passed (9142 folded multisets).
+127 passed (4982 folded multisets).
+131 passed (12954 folded multisets).
+137 passed (1330 folded multisets).
+139 passed (764 folded multisets).
+149 passed (601 folded multisets).
+151 passed (4998 folded multisets).
+157 passed (694 folded multisets).
+163 passed (1294 folded multisets).
+167 passed (294 folded multisets).
+173 passed (682 folded multisets).
+179 passed (74 folded multisets).
+181 passed (615 folded multisets).
+191 passed (373 folded multisets).
+193 passed (169 folded multisets).
+197 passed (39 folded multisets).
+199 passed (31 folded multisets).
+211 passed (192 folded multisets).
+The consecutive speeds give the unique primitive ten-runner equality case.

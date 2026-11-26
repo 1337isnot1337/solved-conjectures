@@ -1,0 +1,13 @@
+Check exact-weight strong WOM encoding and decoding
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.46
+Output SHA-256: b5a249b9ca9cd3e3b35a4d2a83c28198baa8d23e0581adcff66e5dddd6f978c0
+
+python3 results/constant-weight-strong-wom/verify.py
+
+24 22 11 message bits 2 states and round trips (276, 1104)
+25 24 10 message bits 2 states and round trips (25, 100)
+28 26 14 message bits 4 states and round trips (378, 6048)
+endpoint checks passed
+default block length: 78 bits, 12 round trips

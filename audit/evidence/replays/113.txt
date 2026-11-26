@@ -1,0 +1,28 @@
+Verify the seven-speed loneliness spectrum
+Working directory: .
+Exit: 0
+Elapsed seconds: 39.23
+Output SHA-256: 1f78aae32cb4891483ec289ebc09dbb44f67408334a7c4d2c66d1650d117a7a0
+
+python3 results/seven-speed-spectrum/verify.py
+
+Prime 151 passed (2414 folded multisets).
+Prime 157 passed (3614 folded multisets).
+Prime 163 passed (3124 folded multisets).
+Prime 167 passed (1702 folded multisets).
+Prime 173 passed (1666 folded multisets).
+Prime 179 passed (1495 folded multisets).
+Prime 181 passed (1072 folded multisets).
+Prime 191 passed (2353 folded multisets).
+Prime 193 passed (1659 folded multisets).
+Prime 197 passed (2469 folded multisets).
+Prime 199 passed (1808 folded multisets).
+Prime 211 passed (2026 folded multisets).
+Prime 223 passed (1210 folded multisets).
+Prime 227 passed (1615 folded multisets).
+Prime 229 passed (1271 folded multisets).
+Prime 233 passed (1884 folded multisets).
+Prime 239 passed (2389 folded multisets).
+Prime 241 passed (1454 folded multisets).
+Prime 251 passed (880 folded multisets).
+Checked 10179 finite directions and all 27 exact sporadic values.

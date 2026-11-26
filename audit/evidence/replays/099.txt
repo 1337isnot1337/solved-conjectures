@@ -1,0 +1,61 @@
+Check the upper-half circulant theorems and supplementary certificates
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.65
+Output SHA-256: 60075629029a77bc1228a135d80ec162b3d656fe22c7493abcd5ab25b3eb1478
+
+python3 results/circular-index-upper-half-circulants/verify.py
+python3 results/circular-index-upper-half-circulants/verify_part2.py
+
+g= 2 n= 13 Delta=  8: (2n,3)-colouring OK, partition OK, |E|/alpha' = 26/3 = p/q, kappa = 8 (all pairs)
+g= 3 n= 19 Delta= 12: (2n,3)-colouring OK, partition OK, |E|/alpha' = 38/3 = p/q, kappa = 12 (all pairs)
+g= 4 n= 25 Delta= 16: (2n,3)-colouring OK, partition OK, |E|/alpha' = 50/3 = p/q, kappa = 16 (all pairs)
+g= 5 n= 31 Delta= 20: (2n,3)-colouring OK, partition OK, |E|/alpha' = 62/3 = p/q, kappa = 20 (pairs (0,t))
+g= 6 n= 37 Delta= 24: (2n,3)-colouring OK, partition OK, |E|/alpha' = 74/3 = p/q, kappa = 24 (pairs (0,t))
+g= 7 n= 43 Delta= 28: (2n,3)-colouring OK, partition OK, |E|/alpha' = 86/3 = p/q, kappa = 28 (pairs (0,t))
+g= 8 n= 49 Delta= 32: (2n,3)-colouring OK, partition OK, |E|/alpha' = 98/3 = p/q, kappa = 32 (pairs (0,t))
+g= 9 n= 55 Delta= 36: (2n,3)-colouring OK, partition OK, |E|/alpha' = 110/3 = p/q
+g=10 n= 61 Delta= 40: (2n,3)-colouring OK, partition OK, |E|/alpha' = 122/3 = p/q
+g=11 n= 67 Delta= 44: (2n,3)-colouring OK, partition OK, |E|/alpha' = 134/3 = p/q
+g=12 n= 73 Delta= 48: (2n,3)-colouring OK, partition OK, |E|/alpha' = 146/3 = p/q
+g=13 n= 79 Delta= 52: (2n,3)-colouring OK, partition OK, |E|/alpha' = 158/3 = p/q
+g=14 n= 85 Delta= 56: (2n,3)-colouring OK, partition OK, |E|/alpha' = 170/3 = p/q
+g=15 n= 91 Delta= 60: (2n,3)-colouring OK, partition OK, |E|/alpha' = 182/3 = p/q
+g=16 n= 97 Delta= 64: (2n,3)-colouring OK, partition OK, |E|/alpha' = 194/3 = p/q
+g=17 n=103 Delta= 68: (2n,3)-colouring OK, partition OK, |E|/alpha' = 206/3 = p/q
+g=18 n=109 Delta= 72: (2n,3)-colouring OK, partition OK, |E|/alpha' = 218/3 = p/q
+g=19 n=115 Delta= 76: (2n,3)-colouring OK, partition OK, |E|/alpha' = 230/3 = p/q
+g=20 n=121 Delta= 80: (2n,3)-colouring OK, partition OK, |E|/alpha' = 242/3 = p/q
+g=21 n=127 Delta= 84: (2n,3)-colouring OK, partition OK, |E|/alpha' = 254/3 = p/q
+g=22 n=133 Delta= 88: (2n,3)-colouring OK, partition OK, |E|/alpha' = 266/3 = p/q
+g=23 n=139 Delta= 92: (2n,3)-colouring OK, partition OK, |E|/alpha' = 278/3 = p/q
+g=24 n=145 Delta= 96: (2n,3)-colouring OK, partition OK, |E|/alpha' = 290/3 = p/q
+g=25 n=151 Delta=100: (2n,3)-colouring OK, partition OK, |E|/alpha' = 302/3 = p/q
+g=26 n=157 Delta=104: (2n,3)-colouring OK, partition OK, |E|/alpha' = 314/3 = p/q
+g=27 n=163 Delta=108: (2n,3)-colouring OK, partition OK, |E|/alpha' = 326/3 = p/q
+g=28 n=169 Delta=112: (2n,3)-colouring OK, partition OK, |E|/alpha' = 338/3 = p/q
+g=29 n=175 Delta=116: (2n,3)-colouring OK, partition OK, |E|/alpha' = 350/3 = p/q
+g=30 n=181 Delta=120: (2n,3)-colouring OK, partition OK, |E|/alpha' = 362/3 = p/q
+C_25(1,2,3,7,8,9,10,11,12): (75,4)-colouring OK, |E|/alpha' = 75/4, kappa = 18 (all pairs)
+ALL CHECKS PASSED
+C_31(1,2,3,7,8,9,10,11,12)   n=31 Delta=18 regular, chi'_c = 93/5 = Delta + 3/5, kappa = 18
+C_33(1,2,3,4,5,9,...,15)     n=33 Delta=24 regular, chi'_c = 99/4 = Delta + 3/4, kappa = 24
+C_25(1,2,3,7,8,9,10,11,12)   n=25 Delta=18 regular, chi'_c = 75/4 = Delta + 3/4, kappa = 18
+Delta=21 example: n=31 Delta=21 degrees [20, 21], chi'_c = 65/3 = Delta + 2/3
+family B g= 6 D=1: n=37 Delta=25 chi'_c = 77/3 = Delta + 2/3 (degrees [24, 25])
+family B g= 6 D=2: n=37 Delta=26 chi'_c = 80/3 = Delta + 2/3 (degrees [25, 26])
+family B g= 7 D=1: n=43 Delta=29 chi'_c = 89/3 = Delta + 2/3 (degrees [28, 29])
+family B g= 7 D=2: n=43 Delta=30 chi'_c = 92/3 = Delta + 2/3 (degrees [29, 30])
+family B g= 8 D=1: n=49 Delta=33 chi'_c = 101/3 = Delta + 2/3 (degrees [32, 33])
+family B g= 8 D=2: n=49 Delta=34 chi'_c = 104/3 = Delta + 2/3 (degrees [33, 34])
+family B g= 9 D=1: n=55 Delta=37 chi'_c = 113/3 = Delta + 2/3 (degrees [36, 37])
+family B g= 9 D=2: n=55 Delta=38 chi'_c = 116/3 = Delta + 2/3 (degrees [37, 38])
+family B g=10 D=1: n=61 Delta=41 chi'_c = 125/3 = Delta + 2/3 (degrees [40, 41])
+family B g=10 D=2: n=61 Delta=42 chi'_c = 128/3 = Delta + 2/3 (degrees [41, 42])
+family B g=11 D=1: n=67 Delta=45 chi'_c = 137/3 = Delta + 2/3 (degrees [44, 45])
+family B g=11 D=2: n=67 Delta=46 chi'_c = 140/3 = Delta + 2/3 (degrees [45, 46])
+family B g=12 D=1: n=73 Delta=49 chi'_c = 149/3 = Delta + 2/3 (degrees [48, 49])
+family B g=12 D=2: n=73 Delta=50 chi'_c = 152/3 = Delta + 2/3 (degrees [49, 50])
+family B g=13 D=1: n=79 Delta=53 chi'_c = 161/3 = Delta + 2/3 (degrees [52, 53])
+family B g=13 D=2: n=79 Delta=54 chi'_c = 164/3 = Delta + 2/3 (degrees [53, 54])
+ALL PART 2 CHECKS PASSED

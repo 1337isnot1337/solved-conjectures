@@ -1,0 +1,10 @@
+results/defant-engen-miller-lassalle/interval_check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 4.65
+Output SHA-256: 6f7b63057c3dd7882ad68aa494862b3db01eecf4457c4f8874b38dabf6cdf1b7
+
+python3 results/defant-engen-miller-lassalle/interval_check.py
+
+PASS: exact strict positive-support inequalities for 1 <= k < 54
+PASS: 205 exact interval boxes, maximum depth 9

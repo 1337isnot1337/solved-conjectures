@@ -1,0 +1,9 @@
+Check Franklin profile identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.21
+Output SHA-256: 24a9d2632e64c10841a66f73d526327c239e6ff9b61c9b19411f4640b79a6a96
+
+python results/mccrea-single-crossover/verify.py
+
+Passed 2184 exact profile-count comparisons, source/rewrite identities, positivity checks, and both saddlepoint means for k=2..7.

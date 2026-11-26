@@ -1,0 +1,10 @@
+Check Sagan–Swanson exact conditional probability models
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.12
+Output SHA-256: 1b9220720a60fb7853ab6b5fafb9dc360f89d68c9002adf925be7c977b0ba256
+
+python results/sagan-swanson-normality/verify_model.py
+
+PASS: 168 exact conditional-model identities in four families.
+The asymptotic conclusion is proved analytically in PROOF.md.

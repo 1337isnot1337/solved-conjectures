@@ -1,0 +1,11 @@
+Check Sonntag–Teichert domination hypergraphs
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.71
+Output SHA-256: f5bc1e062b39c8d2238b543e208339db79c38963613c30b2bdd35a28ba86658c
+
+python3 results/sonntag-teichert/verify.py
+
+Checked 33,867 labelled tournaments through order 6.
+Checked 59,809 labelled oriented graphs through order 5 (396 with disconnected support).
+Checked 49 realizations of two stars with an isolated vertex.

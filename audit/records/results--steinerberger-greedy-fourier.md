@@ -1,0 +1,47 @@
+# Steinerberger’s greedy-energy Fourier conjecture
+
+**Screened.** Ranked. Rank 55 on the original main table, marker ✅. [Pinned entry](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/README.md).
+
+## Recorded scope
+
+The source describes the result as follows.
+
+> An actual infinite greedy sequence refutes the original logarithmic Fourier bound; the written proof also gives the sharp logarithm-squared constant.
+
+## Source outline
+
+- [Result and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md#L3).
+- [Dyadic block structure](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md#L31).
+- [Exact Fourier magnitudes](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md#L52).
+- [Sharp asymptotic for the conjectured sum](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md#L60).
+- [Related bounds and priority](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md#L78).
+
+## Provenance
+
+- Path first added on the first-parent history on 2026-11-24T11:35:05Z. [Commit 34862f40d](https://github.com/1337isnot1337/solved-conjectures/commit/34862f40d7a8b4ee923a5a9ea1f8a9de9a895e43).
+- Latest change to this landing file at the snapshot on 2026-11-24T17:21:37Z. [Commit 6c4ee25db](https://github.com/1337isnot1337/solved-conjectures/commit/6c4ee25db230f3efa4cfd23b49602365d47314a9).
+- Coordination and prior review. [#436](https://github.com/1337isnot1337/solved-conjectures/issues/436) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
+All source-document paths and SHA-256 hashes are in the machine-readable ledger.
+
+[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/LEAN_REVIEW.md)
+
+## Literature checks
+
+The local HTTP probe and public search index differed on access to one PDF. The public index returned the source text for the same URL. Both observations are retained.
+
+- Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).
+- Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10231-020-00990-7).
+- Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00013-021-01688-9).
+- Citation-index seed records. [Greedy energy minimization can count in binary: point charges and the van der Corput sequence](https://doi.org/10.1007/s10231-020-00990-7) · [Exact order of extreme $$L_p$$ discrepancy of infinite sequences in arbitrary dimension](https://doi.org/10.1007/s00013-021-01688-9) · [Lebesgue constants for the Walsh system and the discrepancy of the van der Corput sequence](https://doi.org/10.1007/s00013-024-02087-6).
+- Crossref query “Steinerberger’s greedy-energy Fourier conjecture steinerberger greedy fourier” returned 12 displayed records (HTTP 200).
+- DataCite Zenodo search returned 0 displayed records (HTTP 200).
+- A separate web search is recorded with its query, titles and URLs in the ledger.
+
+## Verification
+
+The computational runs in this audit do not include a separate executable check for this entry.
+
+3 of 3 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
+
+The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

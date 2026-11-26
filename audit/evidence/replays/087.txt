@@ -1,0 +1,9 @@
+Verify rectangle packing and multiset recovery
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.05
+Output SHA-256: 0ab8dddcae48a430ca0555372acc3fb835c98d9a25a7b55c4eead120f253088e
+
+python3 results/rectangle-partition-asymptotics/verify.py
+
+Checked 45 full-width strip families and 384 column families.

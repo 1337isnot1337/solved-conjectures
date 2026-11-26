@@ -1,0 +1,10 @@
+Certify the finite Rossi permutohedron sign grids
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.22
+Output SHA-256: ae23e9e43a287f6c42ed3e7849ee20579e71742cb3808423969fe76aeda5fba7
+
+python3 results/rossi-permutohedron-roots/check.py
+
+Verified sample signs: 8000 of 8000
+Exceptions: []

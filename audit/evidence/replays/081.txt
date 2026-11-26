@@ -1,0 +1,37 @@
+Verify Pham exact main and dual certificates
+Working directory: .
+Exit: 0
+Elapsed seconds: 57.6
+Output SHA-256: 10756d7080707cfc4fb9b1dd1468493e9a82b9a30c24d15ecb6076af98fb8025
+
+python3 results/pham-denominator-degree/verify.py
+python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
+
+P = 0001001011
+Primitive necklace of length 10: yes
+h_0 through h_25: [10, 4, 10, 18, 30, 52, 96, 164, 280, 484, 860, 1512, 2588, 4476, 7856, 13796, 23900, 41288, 72076, 126220, 219664, 380628, 662252, 1157000, 2016604, 3502748]
+Q(x) = 1 - x^3 - 4*x^4 - 6*x^5
+R(x) = 10 + 4*x + 10*x^2 + 8*x^3 - 14*x^4 - 34*x^5 + 14*x^6 + 2*x^7
+Q(x)*H_P(x) - R(x) = O(x^26): verified by exact integer arithmetic
+gcd(Q,R) = 1: verified by exact rational polynomial arithmetic
+Pham 2022 rationality bounds imply the identity holds to all orders
+Minimum denominator degree: 5 (necklace length: 10)
+Independent full-partition enumeration agrees through level 12
+P = 0001001011
+Primitive necklace of length 10: yes
+h_0 through h_25: [10, 4, 10, 18, 30, 52, 96, 164, 280, 484, 860, 1512, 2588, 4476, 7856, 13796, 23900, 41288, 72076, 126220, 219664, 380628, 662252, 1157000, 2016604, 3502748]
+Q(x) = 1 - x^3 - 4*x^4 - 6*x^5
+R(x) = 10 + 4*x + 10*x^2 + 8*x^3 - 14*x^4 - 34*x^5 + 14*x^6 + 2*x^7
+Q(x)*H_P(x) - R(x) = O(x^26): verified by exact integer arithmetic
+gcd(Q,R) = 1: verified by exact rational polynomial arithmetic
+Pham 2022 rationality bounds imply the identity holds to all orders
+Minimum denominator degree: 5 (necklace length: 10)
+Independent full-partition enumeration agrees through level 13
+
+P* = 0010110111
+h*_0 through h*_30: [10, 5, 12, 20, 32, 58, 107, 177, 286, 509, 967, 1720, 2877, 4913, 8634, 14977, 25395, 43808, 78441, 140829, 245866, 421629, 726359, 1257624, 2169685, 3753113, 6585850, 11674025, 20567307, 35745520, 61658097]
+Q*(x) = Q(x)*(1 + x^3 + 4*x^4 + 6*x^5)
+Q*(x)*H_P*(x) - R*(x) = O(x^31): verified
+gcd(Q*,R*) = 1: verified
+Minimum dual denominator degree: 10
+The 2025 common-denominator conjecture is NOT contradicted by this example

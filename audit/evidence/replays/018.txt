@@ -1,0 +1,11 @@
+Count the incident lines in the Gyárfás planar construction
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.78
+Output SHA-256: d4b82bf737a4e0e47821ed27cf172c9087030c6b0b5ca71da777cdffb0b2e245
+
+python3 results/gyarfas-planar-degree-repetition/verify.py
+
+n=16: {5: 1, 6: 2, 7: 2, 8: 2, 9: 2, 10: 2, 11: 2, 12: 2, 13: 1}
+n=17: {5: 1, 6: 2, 7: 2, 8: 2, 9: 2, 10: 1, 11: 2, 12: 2, 13: 2, 14: 1}
+Checked exact line degrees at 116 orders: 16 through 128 and 255 through 257.

@@ -1,0 +1,10 @@
+Check the nonmixed-gap packing theorem
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.01
+Output SHA-256: e0d80f3be943711851603af24bcff3240de2b2c394205b91aacda0419f1b9094
+
+python3 results/nonmixed-gap-packing/verify.py
+
+Checked 1551802 anchored packings across 432 parameter sets.
+Checked character and periodic packing constructions for 3672 parameter sets.

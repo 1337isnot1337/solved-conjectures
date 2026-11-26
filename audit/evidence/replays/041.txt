@@ -1,0 +1,9 @@
+Replay finite-coin threshold learner
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.47
+Output SHA-256: 81febae9a70a6c36a0fd0f4a8216c0d9370b63dd4e6e27732b89f928d84f5918
+
+python3 results/steinke-zakynthinou-thresholds/verify_efficiency.py
+
+8190 matching runs {'closed': 1293, 'infinity': 408, 'collision': 5208, 'open maximum': 423, 'successor': 858}

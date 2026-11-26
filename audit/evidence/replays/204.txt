@@ -1,0 +1,9 @@
+results/gonzalez-dleon-wachs-complete-graphs/check_complete.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.29
+Output SHA-256: c697b20b39e41f31d4dc6815c968b741b265a358627cf76700ce368ac8ad939f
+
+python3 results/gonzalez-dleon-wachs-complete-graphs/check_complete.py
+
+PASS: 64 complete-graph cases; exact weighted-bond recurrence versus Laguerre coefficients

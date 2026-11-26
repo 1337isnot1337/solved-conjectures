@@ -1,0 +1,15 @@
+Check the Brown–Cameron independence-root obstructions
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.89
+Output SHA-256: 8f0508ad3fe0884ffa04bceecef6ec209879c9eb5115d92c320c6c3885b1e425
+
+python3 results/brown-cameron-stability/verify.py
+
+Exhaustive: all 1024 labeled graphs on 5 vertices, all set sizes, 3 edge densities; first and second moments and void bounds passed.
+Hurwitz q=1/3, k=64, n=25231715538892510, exact certified failure probability >=54012/1000000
+LC      q=1/3, k=64, n=25668577368524214, exact certified failure probability >=152777/1000000
+Hurwitz q=1/2, k=64, n=72539569121, exact certified failure probability >=117187/1000000
+LC      q=1/2, k=64, n=73329473239, exact certified failure probability >=218749/1000000
+Hurwitz q=2/3, k=100, n=19484319202, exact certified failure probability >=197529/1000000
+LC      q=2/3, k=100, n=19563481697, exact certified failure probability >=277776/1000000

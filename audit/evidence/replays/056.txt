@@ -1,0 +1,10 @@
+Check Fuss–Catalan path conventions and exact formula
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.09
+Output SHA-256: bd6709cad6db5ab456985e3abad348c3eb34f5a55c5aef7aac32e19e2e766c69
+
+python results/alexandersson-fuss-catalan/verify.py
+
+Passed 18 direct path-enumeration comparisons; 10188 paths.
+These checks verify conventions only; the all-parameter proof is analytic.

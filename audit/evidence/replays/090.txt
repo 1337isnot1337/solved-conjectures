@@ -1,0 +1,10 @@
+Prove the two ultimate CUT periods by automata
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.55
+Output SHA-256: c0800d833bb80100b118944eca495b3cc435ab239bdbd90696d89d1b93115ec4
+
+python3 results/cut-arithmetic-periodicity/verify.py
+
+arities (2, 3, 9): 28 option states; both error languages empty.
+arities (2, 3, 8, 9): 28 option states; both error languages empty.

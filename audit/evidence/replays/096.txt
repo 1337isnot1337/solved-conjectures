@@ -1,0 +1,9 @@
+Check the symmetric four-point packing and covering theorem
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.49
+Output SHA-256: 9052bff08f6583d5543805a86df94f3e2fc77e18d507ab6705af46b9e31bac45
+
+python3 results/symmetric-four-point-density/verify.py
+
+Checked the constructions for 2019 coprime pairs and 56 exact window decisions.

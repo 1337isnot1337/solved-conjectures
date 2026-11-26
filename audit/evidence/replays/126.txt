@@ -1,0 +1,9 @@
+Additional results/gawron-miska-ulas-thue-morse-valuation/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 4.58
+Output SHA-256: d13a72e07bd1ca580a0205c89a87e7627b67e863df36fc3191091cac67b7cb43
+
+python3 results/gawron-miska-ulas-thue-morse-valuation/check.py
+
+Both witnesses checked by recurrence and independent product.

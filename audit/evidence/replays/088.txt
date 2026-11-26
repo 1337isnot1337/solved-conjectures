@@ -1,0 +1,11 @@
+Replay standard three-player War deals
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.1
+Output SHA-256: b6348d7b3a26c417a062115e8ac45111bb48a41c7e28e2b6075203419941b28e
+
+python3 results/spivey-multiplayer-war/verify.py
+
+rank: 23 cards, first return 90, minimum pile size 6
+seat: 22 cards, first return 180, minimum pile size 6
+clockwise: 44 cards, first return 19320, minimum pile size 12

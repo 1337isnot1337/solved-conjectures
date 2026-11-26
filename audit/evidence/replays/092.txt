@@ -1,0 +1,14 @@
+Verify both distance-graph density results
+Working directory: .
+Exit: 0
+Elapsed seconds: 430.45
+Output SHA-256: 5e9e2666f901749865f62ca77bfa2be8f3daecf1a7e05f0a06dd27dd8d386ae2
+
+c++ -std=c++20 -O3 results/distance-graph-densities/verify.cpp -o "$RUNNER_TEMP/verify-distance-graphs"
+"$RUNNER_TEMP/verify-distance-graphs"
+python3 results/distance-graph-densities/counterexample.py
+
+Gap 5: verified the zero-cost cycle, 1365 strict prefix exclusions, and the relaxed positive controls.
+Gap 7: verified the zero-cost cycle, 3541 strict prefix exclusions, and the relaxed positive controls.
+Exact density 25/58. Conjecture 39 predicts 22/51.
+Verified all 20 small exceptional cases.

@@ -1,0 +1,47 @@
+# Brown–Mol's conjecture
+
+**Screened.** Ranked. Rank 4 on the original main table, marker ✅. [Pinned entry](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/README.md).
+
+## Recorded scope
+
+The source describes the result as follows.
+
+> Complete proposed disproof of the universal translated-annulus assertion. An infinite family of diameter-four trees has subtree roots strictly inside the forbidden disk, proved by a local analytic zero argument. A separate exact Rouché certificate verifies a 1001-vertex example. The outer inequality remains separate.
+
+## Audit finding
+
+Exact later public overlap. Omega’s frozen translated-annulus counterexample is dated November 26; this repository’s complete counterfamily and published entry are dated November 21. Confirmed the conjecture numbers 4.2 and 5.1 refer to the translated annulus, while the cited double-star theorem covers a restricted family.
+
+## Source outline
+
+- [The conjecture](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L5).
+- [A family of trees](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L24).
+- [A regular point inside the forbidden disk](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L42).
+- [Local zero lemma](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L81).
+- [Disproof](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L137).
+- [Supplementary exact finite witness](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md#L145).
+
+## Provenance
+
+- Path first added on the first-parent history on 2026-11-21T02:30:25-06:00. [Commit 7982d9f30](https://github.com/1337isnot1337/solved-conjectures/commit/7982d9f30025124dda76e183707ed521d1f372b0).
+- Latest change to this landing file at the snapshot on 2026-11-21T03:38:05-06:00. [Commit 72fd83d40](https://github.com/1337isnot1337/solved-conjectures/commit/72fd83d409a18076b008cbe744e03e31381cef64).
+- Coordination and prior review. [#210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
+
+All source-document paths and SHA-256 hashes are in the machine-readable ledger.
+
+[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/SOURCES.md) · [ALGEBRA_PRIOR_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ALGEBRA_PRIOR_AUDIT.md) · [ANALYSIS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ANALYSIS_REVIEW.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ROOT_REVIEW.md)
+
+## Literature checks
+
+- On the roots of the subtree polynomial (HTTP 200). [Retrieved address](https://arxiv.org/abs/1810.08655).
+- Proof of a Brown-Mol conjecture on subtree roots (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.07898).
+- On the roots of the subtree polynomial (HTTP 200). [Retrieved address](https://arxiv.org/abs/1810.08655v1).
+- Citation-index seed records. [A generalization of the Beraha–Kahane–Weiss theorem with graph polynomial applications](https://doi.org/10.55016/ojs/cdm.v20i2.76682) · [Proof of a Brown-Mol conjecture on subtree roots](https://doi.org/10.48550/arxiv.2608.07898) · [Extension to the Beraha-Kahane-Weiss Theorem with Applications](https://doi.org/10.48550/arxiv.2008.01784).
+- External solution records sharing a cited identifier. [Problems/brown-mol-2018-conjecture-4-2.md](https://github.com/the-omega-institute/trureturing/blob/12036e5e3cc8d8d9f92467546faa8e37a61702b4/Problems/brown-mol-2018-conjecture-4-2.md).
+- Crossref query “Brown–Mol's conjecture brown mol” returned 12 displayed records (HTTP 200).
+- DataCite Zenodo search returned 0 displayed records (HTTP 200).
+- A separate web search is recorded with its query, titles and URLs in the ledger.
+
+## Verification
+
+- Check Brown-Mol analytic counterfamily identities and finite certificate — exit 0. [Command and output](../evidence/replays/044.txt).

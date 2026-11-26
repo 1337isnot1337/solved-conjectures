@@ -1,0 +1,10 @@
+Check the Kauers–Koutschan recurrence
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.59
+Output SHA-256: f00cc6c14eb193003f764f37e974709aae325771146920ccb65a8bf1e84f1de9
+
+python results/kauers-koutschan-recurrence/verify.py
+
+Both polynomial residuals vanish for both parities and all four initial indices.
+The direct Schur count agrees with exhaustive permutations for n = 0 through 8.

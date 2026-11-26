@@ -1,0 +1,12 @@
+Check the counterexamples to the lower general position product bound
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.19
+Output SHA-256: 75200ffdad47b4e25d41ebff51f50b8f9b1e91e6e3acd2facfc67bd7a0927932
+
+python3 results/welton-khudairi-tuite-lower-gp-product/verify.py
+
+M=7: tested 37 potentially small factor supports, all 330 outside product vertices have endpoint witnesses
+M=8: tested 37 potentially small factor supports, all 426 outside product vertices have endpoint witnesses
+M=11: tested 37 potentially small factor supports, all 786 outside product vertices have endpoint witnesses
+M=15: tested 37 potentially small factor supports, all 1434 outside product vertices have endpoint witnesses

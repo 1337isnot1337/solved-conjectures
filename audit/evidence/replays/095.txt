@@ -1,0 +1,9 @@
+Check the two-difference Motzkin formula
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.38
+Output SHA-256: 643af2a6dcaa0e6e4c0fddc8ad22bdc70adfa6783c6ed018006d33fc13840db0
+
+python3 results/two-difference-motzkin/verify.py
+
+Checked 1240 circulants, 65 noncyclic quotients and 2785 signed orientations.

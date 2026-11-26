@@ -1,0 +1,15 @@
+Verify the Oravcová–Soták distance-graph classification
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.67
+Output SHA-256: c4786037123ecb5c99bbd83557a31fc4b4ff6d9702a48da1f200c549ac1347d8
+
+python3 results/oravcova-sotak/verify.py
+
+1. Tables: 65 listed sets sorted, primitive, of size k, exact L recomputed and < 1/k; 65 rows compared with the repository tables
+2. Sporadic colourings: 62 periodic words are proper k-colourings (periods 8 to 28); the 3 sets marked non-colourable are exactly items 2 and 3
+3. Exceptional sets: no proper colouring on {1,2,3,5,8} N=13 (36 nodes), {1,4,5,6,7} N=17 (171 nodes), {1,2,3,4,5,7,12} N=19 (102 nodes); all three intervals one shorter are colourable
+4. One-parameter families: 37 loops valid; semigroup gaps as stated; 30 values x = ks <= g + r, 9 needing direct colourings (all proper); 85 assembled colourings checked end to end
+5. Two-parameter family: 12 base vectors give B; 4 loops valid; largest gap 37; 334 pairs in the finite region, all covered and checked end to end (plus 1614 pairs with |s|,t <= 40 outside it)
+6. Lemma 2 on small cases: 28 sets {1,...,k-1,ks} (2 <= k <= 8, 1 <= s <= 4) have no proper k-colouring of {0,...,ks}
+All checks passed (65 tables, 62 colourings, 3 exceptional sets, 4 one-parameter families, 334 two-parameter cases, Lemma 2 cases).

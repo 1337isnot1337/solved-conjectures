@@ -1,0 +1,40 @@
+# Batista's Egyptian fractions
+
+**Screened.** Ranked. Rank 141 on the original main table, marker ✅. [Pinned entry](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/README.md).
+
+## Recorded scope
+
+The source describes the result as follows.
+
+> OEIS A398581: the lexicographically first triple uniquely maximizes the last denominator for admissible `k ≢ 1 (mod 5)`.
+
+## Source outline
+
+- [Proof using the best two-term underapproximation theorem](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L11).
+- [Independent elementary comparison](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L37).
+- [Prior work and scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L67).
+- [Lean verification](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md#L71).
+
+## Provenance
+
+- Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
+- Latest change to this landing file at the snapshot on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
+
+All source-document paths and SHA-256 hashes are in the machine-readable ledger.
+
+[README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/batista-egyptian-fractions/PROOF.md)
+
+## Literature checks
+
+- A398581 - OEIS (HTTP 200). [Retrieved address](https://oeis.org/A398581).
+- A Threshold for the Best Two-term Underapproximation by Egyptian Fractions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2306.12564).
+- Source URL (HTTP 200). [Retrieved address](https://oeis.org/A398581/b398581.txt).
+- Crossref query “Batista's Egyptian fractions batista egyptian fractions” returned 12 displayed records (HTTP 200).
+- DataCite Zenodo search returned 0 displayed records (HTTP 200).
+- A separate web search is recorded with its query, titles and URLs in the ledger.
+
+## Verification
+
+- Verify Batista Egyptian-fraction congruence checks — exit 0. [Command and output](../evidence/replays/085.txt).
+
+The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

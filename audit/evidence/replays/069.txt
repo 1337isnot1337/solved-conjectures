@@ -1,0 +1,9 @@
+Check Vishnyakova polynomial-transform identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 16.38
+Output SHA-256: 46ebd23cbbf2cfd25cd81e36a1f5893e7c1706d1213fc45ff5da8e537bf6ffe5
+
+python results/vishnyakova-root-radius/verify.py
+
+73 exact algebraic checks passed.

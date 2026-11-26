@@ -1,0 +1,11 @@
+Verify Zhang's lonely-runner deletion values
+Working directory: .
+Exit: 0
+Elapsed seconds: 13.18
+Output SHA-256: 5a1fe86e0fce90faac7ec13e34b6dd975003bc7896ef1c86da1198d5521791b2
+
+python3 results/zhang-deletion-values/verify.py
+
+deletion values: 779 cases with 3 <= n <= 40 agree with the formula
+Question 8.4: LR([n-1] minus {r}) > 1/(n-1) in all 740 cases with n >= 4, r <= n-2
+OK

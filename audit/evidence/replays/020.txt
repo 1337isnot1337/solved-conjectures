@@ -1,0 +1,11 @@
+Check the full-support transportation counterexample
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.6
+Output SHA-256: 7efccb18c1185dfb80082215673007808472b9a36e252a2373517e40e788f17a
+
+python3 results/alexandersson-transportation/check.py
+
+25 dilations checked, degree 12, squarefree.
+Sturm variations at infinity: 11, 1. Real roots: 10.
+Scaled Laguerre difference: -389210787898375728.

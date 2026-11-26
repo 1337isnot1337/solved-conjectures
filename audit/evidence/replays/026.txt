@@ -1,0 +1,13 @@
+Check power-monoid gadgets and the Burstein generating tree
+Working directory: .
+Exit: 0
+Elapsed seconds: 16.57
+Output SHA-256: ddcfb7a84d5687bef687e7896fe658921714bc218e50c3205dc1db7572011a48
+
+python3 results/fan-tringali-power-monoid-lengths/check.py
+python3 results/burstein-a218225-enumeration/check.py
+
+Local gadget and box divisors of 75 labeled graphs passed.
+Literal basis and child checks for both classes through n=8.
+Tree and cubic coefficient checks through n=40.
+[1, 1, 2, 6, 23, 101, 480, 2400, 12434, 66142, 359112, 1981904]

@@ -1,0 +1,11 @@
+Check Pantone–Bóna third-largest-terminal enumeration
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.67
+Output SHA-256: 2a587ea0a61baeaaa67b0d66c9e6d4eaca7b41099516f14e07c82d5f666eb8ec
+
+python3 results/pantone-bona-third-largest-terminal/verify.py
+
+d 3 counts [1, 1, 2, 6, 24, 116, 633, 3741, 23361]
+d 4 counts [1, 1, 2, 6, 24, 120, 715, 4882, 37034]
+fixed-shape interval-location identity checked for n<= 7

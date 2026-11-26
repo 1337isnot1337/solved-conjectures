@@ -1,0 +1,19 @@
+Check Novelli–Thibon first moments and hook coefficients
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.07
+Output SHA-256: ce35b9c2154c8bed016f36defcd81f152578d0d71b8d79f4a739df55a5c864d8
+
+python results/novelli-thibon/verify.py
+
+{
+  "status": "passed",
+  "partition_pairs_checked": 209,
+  "hook_coefficients_checked": 135,
+  "sizes": "1 through 6; finite convention checks only",
+  "source_example": "arXiv:2502.09072v2, after Conjecture 5.7",
+  "source_example_exact_polynomial_match": true,
+  "d_321": 8,
+  "d_222": 3,
+  "proof": "Universal word-comparison, Pieri and LLT evaluation arguments in PROOF.md"
+}

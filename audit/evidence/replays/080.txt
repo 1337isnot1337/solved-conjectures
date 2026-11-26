@@ -1,0 +1,10 @@
+Verify L-solitaire exhaustive finite checks
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.55
+Output SHA-256: d5bdc2bcee18e4ce7b11db59df912c56320dc170a08954f9a583ea7fc6208f79
+
+python3 results/l-solitaire-limit-shapes/verify.py
+
+All admissible rules for 1 through 14 cards: {'cycles': 20531, 'recurrent_states': 48426, 'rules': 16383, 'states': 1768137}
+Counterexample formulas agree with direct moves for 1 through 1000 cards.

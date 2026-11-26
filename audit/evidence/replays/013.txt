@@ -1,0 +1,24 @@
+Check finite cases for five open-problem results
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.67
+Output SHA-256: c9d8d56afa437cbbfbb80cccbd11bebfa42176857d5850684b490d1e132d5b2b
+
+python3 results/erdos-block-size-multiplicity/check_field.py
+python3 results/erdos-hajnal-set-mapping/check.py
+python3 results/erdos-hammer-838/check_binary.py
+python3 results/erdos-bounded-blocking-set/check_spread.py
+python3 results/gyarfas-nearly-bipartite/check_grid.py
+
+65536 subsets of GF(16) passed the GF(4) direction-energy identity.
+GF(2) inside GF(8): 42 exterior points on one extension, 24 on zero, 8 exact variance checks.
+GF(4) inside GF(16): 252 exterior points on one extension, 0 on zero, 22 exact variance checks.
+GF(4) inside GF(64): 1260 exterior points on one extension, 2880 on zero, 22 exact variance checks.
+GF(8) inside GF(64): 4088 exterior points on one extension, 0 on zero, 74 exact variance checks.
+4 points, 4 colors: 696 qualifying colorings, 2784 matched requests
+5 points, 3 colors: 576 qualifying colorings, 2700 matched requests
+930 rank-two matrices, 3690 circuits forced on nullity-one faces
+65808 nonempty planar subsets; 43 exact limit coefficients
+443 points, 4161 lines, secants [(1, 28), (2, 1), (4, 546), (6, 1344), (7, 1701), (8, 87), (12, 273), (14, 168), (22, 13)]
+Pappus intersections (8, 16), (2, 6), (32, 2) are noncollinear
+68 subdivisions, 408 paths, 136 forbidden patterns, 247 search nodes; all switchings covered

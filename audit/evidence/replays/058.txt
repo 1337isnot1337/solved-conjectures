@@ -1,0 +1,29 @@
+Check Bernardi–Morales determinant and tree identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.98
+Output SHA-256: 3c755d63def4d01e9322ad6479296c4ef0bfb0ae17f1ab0bdd2fd199e6f96cc4
+
+python results/bernardi-morales-delta/verify.py
+python results/bernardi-morales-delta/verify_events.py
+
+k=2, r=1: 1 fixed maps, 3 pairs, all coefficients agree
+k=3, r=1: 1 fixed maps, 7 pairs, all coefficients agree
+k=3, r=2: 4 fixed maps, 196 pairs, all coefficients agree
+k=4, r=1: 1 fixed maps, 15 pairs, all coefficients agree
+k=4, r=2: 8 fixed maps, 1800 pairs, all coefficients agree
+k=4, r=3: 27 fixed maps, 91125 pairs, all coefficients agree
+k=2, r=3: 3 fixed maps, 81 pairs, all coefficients agree
+k=3, r=3: 9 fixed maps, 3087 pairs, all coefficients agree
+k=5, r=1: 1 fixed maps, 31 pairs, all coefficients agree
+k=5, r=2: 16 fixed maps, 15376 pairs, all coefficients agree
+PASS: 71 fixed maps and 111721 exact process pairs
+PASS: 25 arbitrary-Z determinant identity checks, k=2,...,6
+k=2, r=1: 1 surjections, 2 (f,D) profiles, 8 literal event determinants agree
+k=3, r=1: 1 surjections, 4 (f,D) profiles, 32 literal event determinants agree
+k=3, r=2: 2 surjections, 8 (f,D) profiles, 512 literal event determinants agree
+k=4, r=1: 1 surjections, 8 (f,D) profiles, 128 literal event determinants agree
+k=4, r=2: 6 surjections, 48 (f,D) profiles, 12288 literal event determinants agree
+k=4, r=3: 6 surjections, 48 (f,D) profiles, 196608 literal event determinants agree
+k=5, r=2: 14 surjections, 224 (f,D) profiles, 229376 literal event determinants agree
+PASS: 342 (f,D) profiles and 438952 exact event determinants

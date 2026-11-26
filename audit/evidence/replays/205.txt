@@ -1,0 +1,11 @@
+results/sagan-wilson-plactic-mode/check_tableaux.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.28
+Output SHA-256: e2e3300e31f2c05091a85738baf8ab7b1c37c3a11139734a3f2d3c086fab3202
+
+python3 results/sagan-wilson-plactic-mode/check_tableaux.py
+
+6,688 words checked by full tableau insertion; all ten alphabet counts and the binomial row agree
+[1, 252, 5670, 50820, 275010, 1086090, 3456369, 9398925, 22677445, 49807595]
+[1, 250, 4917, 29648, 75095, 88704, 43414, 4861, 1]

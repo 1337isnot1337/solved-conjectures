@@ -1,0 +1,15 @@
+Check the wild-number conditions for complete graphs with n at least 155
+Working directory: .
+Exit: 0
+Elapsed seconds: 9.57
+Output SHA-256: 05c11a87bcb72964fcc19b86718222071069085e867e7f53003a6c70c2bab23f
+
+python3 results/wild-number-complete-graphs/verify.py
+
+[1] a rainbow, sub-valid block F exists for odd n in [19, 20001] (f = 4) and [49, 20001] (f = 5): OK
+[2] Theorem B condition (*) holds exactly for every odd n in [155, 189] (author's coefficients); least slack 0.003930 at n = 157: OK
+[3] second referee's coefficients are termwise at most the author's and satisfy (*) at the same a for every odd n in [155, 189]: OK
+[4] Theorem A LLL condition holds exactly for every odd n in [189, 1201]; least relative slack 0.0335 at n = 191: OK
+    referee and author LLL coefficients agree exactly at n = 189, 191, 193, 401, 403, 405, 1199, 1201: OK
+[5] tail bound at n = 1201, mu = 41/40: B = 0.016967 <= RHS = 0.024687, hence for every n >= 1201: OK
+ALL CHECKS PASSED

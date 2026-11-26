@@ -1,0 +1,14 @@
+Replay automorphic Li-coefficient interval certificate
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.17
+Output SHA-256: a8012b0162ba80a7e233a54a49365f1ae1b5144e634754ff564199e803775450
+
+python3 results/chaudhary-khmiri-mazhouda/verify.py
+
+L [0.416416149624, 0.416436149625] + i [-0.103826348535, -0.103806348534]
+L' [0.608547213441, 0.608627213442] + i [-0.059531344748, -0.059451344747]
+L'' [-0.752888883501, -0.752248883500] + i [0.182952382430, 0.183592382431]
+Gamma contribution [0.680255755273, 0.680788259534]
+Re(lambda(2)-lambda(1)) [-1.660157075630, -1.655616272869]
+PASS: Re(lambda(2)-lambda(1)) < -3/2 < 0

@@ -1,0 +1,9 @@
+Additional results/dukes-revstack/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 7.85
+Output SHA-256: f69febeb346d19d939098c4ee790bdee3fb079194f567e41f0b6d57f4171f449
+
+python3 results/dukes-revstack/check.py
+
+Exact rational signs certify all transitions 3→4 through 127→128.

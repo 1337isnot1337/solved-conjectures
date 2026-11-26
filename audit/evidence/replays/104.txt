@@ -1,0 +1,10 @@
+Verify tight six-speed sets and seven-coordinate critical planes
+Working directory: .
+Exit: 0
+Elapsed seconds: 166.55
+Output SHA-256: 6604f488103d7a5689bc99ab61c16b1ba02ccd0fc8af95f2342c20c846140bba
+
+python3 results/tight-six-speeds/verify.py
+
+All 53 finite fields passed. Prime product exceeds the obstruction bound by a factor greater than 92.
+5806080 pairs, 132 surviving pairs, one plane orbit.

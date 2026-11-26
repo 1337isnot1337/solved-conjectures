@@ -1,0 +1,12 @@
+Check Malek transform scalar identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.04
+Output SHA-256: c27cef7308ef6dcebfd62d628f357a1a31a3f59cc6aa4fecb8cc24d680649023
+
+python results/malek-subpermanent/verify.py
+
+n=5, k=4: constant=3685/73728; exact positive gap=7/368640
+n=6, k=5: constant=4767/156250; exact positive gap=47401/11250000
+n=7, k=7: constant=4421129/201553920; exact positive gap=35307079/9876142080
+Exact polynomial, discriminant, and constant certificates passed.

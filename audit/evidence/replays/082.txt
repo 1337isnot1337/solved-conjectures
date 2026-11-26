@@ -1,0 +1,19 @@
+Run Pham regression tests
+Working directory: .
+Exit: 0
+Elapsed seconds: 5.71
+Output SHA-256: 243da8cdc936381a3f9be135bf99df5390fc2f7908fae3d7851c66df03e35921
+
+cd results/pham-denominator-degree && python3 -m unittest discover -s tests -v
+
+test_dual_against_full_partitions (test_verify.ProofTests.test_dual_against_full_partitions) ... ok
+test_main_exact_certificate (test_verify.ProofTests.test_main_exact_certificate) ... ok
+test_primary_against_full_partitions (test_verify.ProofTests.test_primary_against_full_partitions) ... ok
+test_primitive_and_dual (test_verify.ProofTests.test_primitive_and_dual) ... ok
+test_published_bbbw (test_verify.ProofTests.test_published_bbbw) ... ok
+test_published_bwww (test_verify.ProofTests.test_published_bwww) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.594s
+
+OK

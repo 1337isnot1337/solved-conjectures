@@ -1,0 +1,25 @@
+Check López Pouso–Segura Bessel-weight identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.03
+Output SHA-256: ab491653293e6af11185dd46ed996be1b69b6de668b1a5bfa7fdc283e02789ca
+
+python results/lopez-pouso-segura-bessel/verify.py
+
+PASS: 15 exact polynomial and rational checks.
+  positive second-derivative numerator
+  model weight sum by finite difference
+  model C constant
+  E minus C limit offset
+  Bernoulli B2 at 3/4
+  model resolvent s^-4 coefficient
+  C limit
+  E limit
+  weighted moment telescoping
+  strict weighted-average increment
+  sigma total mass coefficient
+  sigma total mass pi exponent
+  sigma first moment coefficient
+  circle constant limit
+  reciprocal leading-term cancellation
+Analytic premises and all-index inequalities are proved in PROOF.md.

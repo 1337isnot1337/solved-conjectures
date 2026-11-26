@@ -1,0 +1,17 @@
+Check the Bollobás–Erdős–Tuza transversal bounds
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.24
+Output SHA-256: a6897bf39f18d402067e978f3da572f8915a162ad154fc2f584691fc4e4437ca
+
+python3 results/erdos-611-clique-transversals/check.py
+python3 results/erdos-611-clique-transversals/check_recursive.py
+python3 results/erdos-611-clique-transversals/check_structure.py
+
+40 graphs, 3552 maximal independent sets, 163470 proposed smaller transversals rejected
+Substitution graph: n=16, maximal sets=21, minimum size=4, tau=4
+Substitution graph: n=24, maximal sets=81, minimum size=6, tau=4
+Substitution graph: n=36, maximal sets=207, minimum size=6, tau=6
+150 exact recurrence steps preserve hollowness and the ratio bounds.
+4,096 marked-set tests on 64 unequal or equal fiber assignments.
+89,697 independent-block pairs on all 1,024 labelled five-vertex graphs.

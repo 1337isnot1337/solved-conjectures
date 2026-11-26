@@ -1,0 +1,9 @@
+Additional results/braun-bruegge-bicyclic-facets/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.53
+Output SHA-256: b251f48e1707022823fbb080071819a002ea2fc45e5f0a5aba5ceb012d3839bc
+
+python3 results/braun-bruegge-bicyclic-facets/check.py
+
+All 60899 mixed-parity tuples passed at total length 5 through 143

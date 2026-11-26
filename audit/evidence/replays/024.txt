@@ -1,0 +1,11 @@
+Check Burstein’s Ferrers-board mismatch on short suffixes
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.08
+Output SHA-256: 49cbc5c39c506d7547e2fdfd4ef9972ea295643342ec418697ffca8df39983d3
+
+python3 results/burstein-descent-top-shape-wilf/check.py
+
+suffix length 0 checks 1 saw fiber counts (2, 3)
+suffix length 1 checks 1 saw fiber counts (15, 16)
+suffix length 2 checks 2 saw fiber counts (124, 125)

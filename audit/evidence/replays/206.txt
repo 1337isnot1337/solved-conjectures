@@ -1,0 +1,65 @@
+results/rowland-sistos-barron/verify_expansion.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 7.89
+Output SHA-256: 07cb2e197fbfbd676d9a5205048089367d87b85dd70d2241e51bade3736af421
+
+python3 results/rowland-sistos-barron/verify_expansion.py
+
+{
+  "method": "direct exact four-term polynomial multiplication",
+  "initial_rank": 6,
+  "all_formula_checks_passed": true,
+  "exponents_checked": [
+    49,
+    169
+  ],
+  "number_of_formula_checks": 121,
+  "samples": [
+    {
+      "exponent": 49,
+      "rank": 8472,
+      "baseline_minus_rank": 6
+    },
+    {
+      "exponent": 50,
+      "rank": 8823,
+      "baseline_minus_rank": 3
+    },
+    {
+      "exponent": 51,
+      "rank": 9181,
+      "baseline_minus_rank": 0
+    },
+    {
+      "exponent": 64,
+      "rank": 14424,
+      "baseline_minus_rank": 9
+    },
+    {
+      "exponent": 81,
+      "rank": 23080,
+      "baseline_minus_rank": 6
+    },
+    {
+      "exponent": 100,
+      "rank": 35142,
+      "baseline_minus_rank": 9
+    },
+    {
+      "exponent": 121,
+      "rank": 51420,
+      "baseline_minus_rank": 6
+    },
+    {
+      "exponent": 144,
+      "rank": 72784,
+      "baseline_minus_rank": 9
+    },
+    {
+      "exponent": 169,
+      "rank": 100212,
+      "baseline_minus_rank": 6
+    }
+  ]
+}

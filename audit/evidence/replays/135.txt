@@ -1,0 +1,12 @@
+Additional docs/research-results/estrugo-pastine-star-center-degree/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.39
+Output SHA-256: eea3a43aba68b379f9b1747a62c2e6286ae68626cff8f2a4de83b33489c17f1c
+
+python3 docs/research-results/estrugo-pastine-star-center-degree/check.py
+
+d=3, n=67, r=44, star counts by level=(1008, 0, 1006, 1, 1007)
+d=4, n=89, r=59, star counts by level=(1794, 0, 1792, 1, 1793)
+d=7, n=155, r=104, star counts by level=(5502, 0, 5500, 1, 5501)
+fixed rank=3, graph order=44, star counts by class=110,15,136

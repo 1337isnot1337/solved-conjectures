@@ -1,0 +1,9 @@
+Additional results/gravgaard-lee-mixed-luroth/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.03
+Output SHA-256: 176f03a6686e1b91f44baf56f87ad30f7c40f5847b3eda08b31d3547733f92a3
+
+python3 results/gravgaard-lee-mixed-luroth/check.py
+
+All 15 exact containments pass; [2879/3520,2] is covered.

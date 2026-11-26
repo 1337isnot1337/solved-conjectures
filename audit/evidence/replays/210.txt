@@ -1,0 +1,13 @@
+OEIS independent 10000-point reference
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.58
+Output SHA-256: 5830c9e1ec83b6f549e7c4bdedbfa5ca6219113bf04d792f8f8070ba51ce1acd
+
+python3 results/erdos-607-line-sizes/verify.py --table /tmp/sc-deep-audit/oeis-b401948.txt
+
+All subsets of sizes 3..20 enumerated. Counts agree for n = 1..20.
+All 10,000 index-value pairs agree with Manyama’s table.
+n =   100: exact count / leading asymptotic = 1.062956985
+n =  1000: exact count / leading asymptotic = 1.019858559
+n = 10000: exact count / leading asymptotic = 1.006273143

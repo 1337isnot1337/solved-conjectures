@@ -1,0 +1,31 @@
+Check the Pantone–Bóna ODE and Gilmore and Chow polynomial conjectures
+Working directory: .
+Exit: 0
+Elapsed seconds: 160.97
+Output SHA-256: 930866a9409b1b77fdb92aa9732ac53e3c5828c3f8acbd87185018d57450cebc
+
+python3 results/pantone-bona-asymptotic/certify_ode.py
+python3 results/chern-fu-lin-joint-eulerian/joint-certificate.py
+python results/gilmore-crossing-nesting/verify.py
+python results/chow-conjecture/verify.py
+
+Exact A55 differential-equation certificate passes.
+X
+bound [23, 42, 68] 248 max encoded bits 17659584
+Exact encoded polynomial remainder is zero.
+Y
+bound [26, 75, 85] 234 max encoded bits 41294448
+Exact encoded polynomial remainder is zero.
+All 64 entries of product and recurrence agree exactly.
+n=1: 1 matchings; 1 exact monomials agree.
+n=2: 1 matchings; 1 exact monomials agree.
+n=3: 3 matchings; 3 exact monomials agree.
+n=4: 15 matchings; 10 exact monomials agree.
+n=5: 105 matchings; 28 exact monomials agree.
+n=6: 945 matchings; 66 exact monomials agree.
+n=7: 10395 matchings; 136 exact monomials agree.
+PASS: no parameter substitutions or floating-point arithmetic were used.
+PASS: defining signed permutations agree for n=2..6
+PASS: refined recurrence equals Stembridge identity for n=2..32
+PASS: exact degree, squarefreeness, consecutive gcd, cutoff and difference checks
+Finite checks only; the all-rank proof is in results/chow-conjecture/PROOF.md

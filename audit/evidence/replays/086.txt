@@ -1,0 +1,12 @@
+Verify the line-size generating function
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.08
+Output SHA-256: b52dc52613a1babbcdf2010f04f7baf32a16c9b2f14226f953a2e34ac101451e
+
+python3 results/erdos-607-line-sizes/verify.py
+
+All subsets of sizes 3..20 enumerated. Counts agree for n = 1..20.
+n =   100: exact count / leading asymptotic = 1.062956985
+n =  1000: exact count / leading asymptotic = 1.019858559
+n = 10000: exact count / leading asymptotic = 1.006273143

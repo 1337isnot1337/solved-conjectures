@@ -1,0 +1,26 @@
+Replay leaf types, interior Ehrhart counts, and pinnacle paths
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.07
+Output SHA-256: de22028310e625d9133837bfb432b150b85e9f1209971ad58b505b0b39e9583b
+
+python3 results/chappelon-ramirez-stamate-leaf-type/check.py
+python3 results/ferroni-higashitani-early-interior-ehrhart/verify.py
+python3 results/gessel-zhuang-pinnacle-gamma/check-path.py
+
+s=5: genus 66, type 33, conjectured upper bound 32
+s=6: genus 97, type 51, conjectured upper bound 47
+s=7: genus 134, type 73, conjectured upper bound 66
+s=8: genus 177, type 99, conjectured upper bound 87
+s=9: genus 226, type 129, conjectured upper bound 112
+s=10: genus 281, type 163, conjectured upper bound 139
+m=11, dimension=170, counts=(36350139069360129, 5309771006570959515574228382814771234453035, 1106229593511496548630598083730895504216925507815261165453109095724028)
+I1*I3-I2^2=12017931424563044351199782208615707125812884322981327123239416165679851242188309768387
+1 distinct complete height paths 1
+2 distinct complete height paths 1
+3 distinct complete height paths 2
+4 distinct complete height paths 4
+5 distinct complete height paths 9
+6 distinct complete height paths 21
+7 distinct complete height paths 51
+8 distinct complete height paths 127

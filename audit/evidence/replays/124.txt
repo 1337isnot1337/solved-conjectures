@@ -1,0 +1,9 @@
+Additional results/ferroni-pagaria-vecchi-type-b/verify.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.51
+Output SHA-256: 3ae8581771a79524584d09fd874fe3d3f9cb99bf797315194299df76ac06eeaa
+
+python3 results/ferroni-pagaria-vecchi-type-b/verify.py
+
+132 exact source-series slice comparisons and 352 exact pole-cancellation/differentiation and sign checks passed.

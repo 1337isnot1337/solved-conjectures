@@ -1,0 +1,9 @@
+Check matching excess via literal graph witnesses
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.32
+Output SHA-256: 7e8154a6fca162356d370d16fd6ee1049279562a4caf60037c7ce92643168ee9
+
+python3 results/hartke-stolee-west-yancey-matching-excess/verify.py
+
+632 literal graph matching counts and 4196 long-division checks passed.

@@ -1,0 +1,9 @@
+Check Pantone–Bóna second-smallest-terminal enumeration
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.53
+Output SHA-256: 28773627091385d83026695f3712e498e62df76b8a44c53ccb552741f043951b
+
+python3 results/pantone-bona-second-smallest-terminal/verify.py
+
+Literal counts and all band/tail implications through length 8: [1, 1, 2, 6, 24, 116, 633, 3742, 23373]

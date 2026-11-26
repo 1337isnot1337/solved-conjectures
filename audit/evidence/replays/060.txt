@@ -1,0 +1,11 @@
+Verify the book-root and circulant classifications
+Working directory: .
+Exit: 0
+Elapsed seconds: 17.68
+Output SHA-256: 4c7b8599af9aa581663dc3faa9471eead46325dcf1570e6f0a327d72ca9f8dc3
+
+python3 docs/research-results/rather-book-domination-roots/check.py
+python3 docs/research-results/tuite-thomas-chandran-circulants/check.py
+
+Direct enumeration through seven pages; exact rational real-root isolation through 48 pages; exact sign constants passed.
+317 small-witness and 748,912 regression independent triples; the order-15 survivors of all 128 masks are exactly the two twin graphs.

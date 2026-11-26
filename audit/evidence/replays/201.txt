@@ -1,0 +1,11 @@
+results/chern-fu-lin-three-statistic/check-kernel.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 21.44
+Output SHA-256: 85476ce9dfa9ceae0d755f6da0f8f4051fe0816f54aa20c043b2c2af5c7c2f62
+
+python3 results/chern-fu-lin-three-statistic/check-kernel.py
+
+nonzero beta elimination factor: (-s + x)*(2*k*s - k + s**2 - 2*s + 1)/(s*(s - 1)*(k + s - 1))
+nonzero beta elimination factor: (-s + x)*(2*k*s - k + s**2 - 2*s + 1)/(s*(s - 1)*(k + s - 1))
+Exact rational identities verified.

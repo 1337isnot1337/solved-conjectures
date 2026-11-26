@@ -1,0 +1,4051 @@
+{
+  "docs/frankl-foundations-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "docs/frankl-large-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "docs/line-size-euler-correction-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "docs/line-size-generating-function-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "docs/line-size-profile-strict-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/line-size-tuples-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "docs/motzkin-compact-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 34,
+    "matching_sources": 34,
+    "different_checkout_hashes": {}
+  },
+  "docs/motzkin-cyclic-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 48,
+    "matching_sources": 48,
+    "different_checkout_hashes": {}
+  },
+  "docs/motzkin-relations-hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/critical-seven-exact-44547965580/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 23,
+    "recorded_sources": 105,
+    "matching_sources": 105,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/critical-seven-five-speed-exact-44592471446/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 171,
+    "matching_sources": 171,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/erdos-gyarfas-sharp-main-c6735b93.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/erdos-gyarfas-universal-daa7d2c5.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 69,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/erdos-gyarfas-voltage-normalization-0cf8667d.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-block-packed32-44531127099/controls/docs/five-speed-block-packed32-probe-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 25,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-block-packed32-44531127099/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 25,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-block-packed32-44531127099/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 25,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-bounded-coverage-fe90b502e70eaf6e944576acc34f2632d60e5008/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 502,
+    "recorded_sources": 340,
+    "matching_sources": 340,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-00.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 67,
+    "matching_sources": 59,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-01.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 67,
+    "matching_sources": 59,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-02.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 67,
+    "matching_sources": 59,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-03.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 67,
+    "matching_sources": 59,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-04.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 68,
+    "matching_sources": 60,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-05.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 68,
+    "matching_sources": 60,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-06.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 68,
+    "matching_sources": 60,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-bounded-history-44471625352/bounded-maps-07.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 68,
+    "matching_sources": 60,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlope.lean": "90a6f9313c2bbf21f1bff83bbbc3e554c6bbe44daab2caf4e8373d285abf495a",
+      "lean/Conjectures/LonelinessFiveSpeedBoundedSlopeRecovery.lean": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "lean/Conjectures/LonelinessFiveSpeedFiberMasks.lean": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedPlaneProjective.lean": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-cblock4096-failed-44535201546/generated-source-inventory.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 46,
+    "matching_sources": 32,
+    "different_checkout_hashes": {
+      "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": null
+    }
+  },
+  "docs/verification/five-speed-cblock4096-failed-44535201546/receipt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 46,
+    "matching_sources": 32,
+    "different_checkout_hashes": {
+      "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": null,
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": null
+    }
+  },
+  "docs/verification/five-speed-root-quick179-c5d11dd3.json": {
+    "archived_status": "checked candidate; not registered in accepted roots",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 44,
+    "matching_sources": 39,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessFiveSpeedMasks.lean": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "lean/Conjectures/LonelinessFiveSpeedRootMaskScan.lean": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "lean/Conjectures/LonelinessFiveSpeedRootStarBlocks.lean": "af63243840adc206af65685bedccf30f158a05f88f2996aac4d3e18d75746c57",
+      "lean/Conjectures/LonelinessFiveSpeedScalarTree.lean": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1"
+    }
+  },
+  "docs/verification/five-speed-root199-44531127081/generated-source-inventory.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 46,
+    "matching_sources": 46,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-root199-44531127081/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 46,
+    "matching_sources": 46,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/five-speed-root199-44531127081/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 46,
+    "matching_sources": 46,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44506147903/literal-weights-assembly.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 85,
+    "matching_sources": 85,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44506147903/literal-weights-thin.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 24,
+    "recorded_sources": 26,
+    "matching_sources": 26,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44508646093/boundary-fibers.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44511372565/tree-configurations.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44511690791/boundary-fibers.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44513202422/tree-configuration-messages.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 30,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44513630718/boundary-fibers.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44514509693/boundary-fibers.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44516050561/high-girth-graph-core.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 26,
+    "matching_sources": 26,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44516050583/boundary-configuration-helpers.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 26,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44516050587/tree-unfolding.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 21,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44516856625/high-girth-theorem.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 35,
+    "recorded_sources": 64,
+    "matching_sources": 64,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-44519848301/family-relabel.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-45619917752/high-girth-graph-core.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 26,
+    "matching_sources": 26,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-components-45619918135/high-girth-theorem.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 35,
+    "recorded_sources": 64,
+    "matching_sources": 64,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-cyclic-pilot-77fa9a75.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 25,
+    "matching_sources": 25,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-fc-packet-6544adcc.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 56,
+    "recorded_sources": 53,
+    "matching_sources": 53,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-full-graph-44518872729/controls/docs/frankl-full-graph-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 344,
+    "recorded_sources": 124,
+    "matching_sources": 124,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-full-graph-44518872729/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 344,
+    "recorded_sources": 124,
+    "matching_sources": 124,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-full-graph-44518872729/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 344,
+    "recorded_sources": 124,
+    "matching_sources": 124,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-mask-cached-5d86c291.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-mask-domains-a632fc82.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 38,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-mask-transport-5d86c291.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 72,
+    "recorded_sources": 23,
+    "matching_sources": 23,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-maximal-cover-ad07e385.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-maximal-cover-local.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g00.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g01.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g02.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g03.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g04.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g05.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g06.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g07.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g08.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g09.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g10.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g11.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g12.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g13.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g14.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g15.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g16.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g17.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44503050632/g18.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 43,
+    "recorded_sources": 28,
+    "matching_sources": 28,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g00.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 23,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g01.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g02.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g03.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g04.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g05.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-batches-44505005993/p10g06.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-orbit-g00-recovery.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-original-artifacts-44492632854/weight-batches-metadata.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 76,
+    "matching_sources": 76,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-original-artifacts-44492632854/weight-batches-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 83,
+    "recorded_sources": 76,
+    "matching_sources": 76,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-original-artifacts-44514908813/transport-row-coverage-metadata.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 464,
+    "matching_sources": 464,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-original-artifacts-44514908813/transport-row-coverage-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 1400,
+    "recorded_sources": 464,
+    "matching_sources": 464,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-residual-tail-44504678765/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 117,
+    "recorded_sources": 116,
+    "matching_sources": 116,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-span-four-77fa9a75.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 83,
+    "recorded_sources": 76,
+    "matching_sources": 76,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-batches-44513150579-attempt-1/g000.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-batches-44513150579-attempt-1/publication.json": {
+    "archived_status": "candidate packet published after the bounded g000 proof gate",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 673,
+    "matching_sources": 673,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-batches-45619920304-attempt-1/g000.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-batches-45619920304-attempt-1/publication.json": {
+    "archived_status": "candidate packet published after the bounded g000 proof gate",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 673,
+    "matching_sources": 673,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14523454900/g001.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14524642912/g003.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14524728203/g006.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14524833822/g009.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14524882801/g005.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14524956331/g000.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14525078094/g008.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14525434292/g019.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14525602428/g011.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14525658685/g015.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14525843475/g013.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526017949/g014.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526075725/g002.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526147368/g018.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526170000/g004.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526231178/g010.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526366148/g012.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526387499/g020.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526405318/g007.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526466889/g017.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526526676/g016.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526676223/g023.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 166,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526692928/g026.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526848073/g028.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14526934673/g035.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527105731/g022.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 160,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527530150/g021.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527535632/g024.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527566420/g025.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 160,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527818032/g031.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527821712/g027.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527827998/g032.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14527964507/g041.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528038674/g036.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528061971/g029.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528062835/g033.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528146636/g037.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528250460/g030.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528251175/g034.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528304976/g054.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528348771/g050.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 178,
+    "recorded_sources": 45,
+    "matching_sources": 45,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528433221/g048.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528471706/g040.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528632736/g047.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528741942/g045.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528901644/g043.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14528993038/g051.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529002243/g046.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529148454/g052.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529316423/g044.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529395610/g038.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 160,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529411298/g042.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529620232/g039.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529736875/g049.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 172,
+    "recorded_sources": 43,
+    "matching_sources": 43,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14529928041/g055.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531040112/g053.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531211310/g057.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531300848/g056.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531764124/g067.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531829795/g068.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531857370/g060.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14531888618/g064.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532007180/g063.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 166,
+    "recorded_sources": 43,
+    "matching_sources": 43,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532149459/g076.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 121,
+    "recorded_sources": 29,
+    "matching_sources": 29,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532162069/g062.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532378509/g066.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532421686/g061.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 142,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532509406/g070.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532570435/g058.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14532740767/g059.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14533038167/g065.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14533471253/g074.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 31,
+    "matching_sources": 31,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14533491967/g073.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 160,
+    "recorded_sources": 41,
+    "matching_sources": 41,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14533631501/g075.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 133,
+    "recorded_sources": 31,
+    "matching_sources": 31,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14533874995/g082.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14533965639/g071.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 172,
+    "recorded_sources": 45,
+    "matching_sources": 45,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14534022927/g077.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 121,
+    "recorded_sources": 29,
+    "matching_sources": 29,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14534200637/g069.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 148,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14534313524/g078.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14534583419/g081.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14534897887/g079.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535064792/g089.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535080226/g072.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 154,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535326341/g080.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535339765/g090.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535750671/g084.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535771795/g088.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535976700/g087.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14535980357/g085.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14536144101/g096.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14536310056/g083.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14536433222/g092.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14536473989/g095.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14536690555/g086.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14536897821/g091.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 136,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14537411317/g094.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14537657041/g100.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14537720110/g093.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14537727130/g099.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14537950527/g097.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14538440761/g098.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14538706340/g101.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport-receipts-44513150579/artifacts/14538736583/g102.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 130,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport128-hosted.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-transport128-publication.json": {
+    "archived_status": "bounded transport pilot passed source, all-declaration and stock-kernel gates",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-tree-small-44509402083/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 173,
+    "recorded_sources": 29,
+    "matching_sources": 29,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/frankl-word-coverage-77fa9a75.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/gessel-zhuang-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 17,
+    "recorded_sources": 25,
+    "matching_sources": 25,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-arithmetic-56cb125e.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-assembly-fb6b6e06.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 28,
+    "matching_sources": 28,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-class-alternative-fb6b6e06.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 15,
+    "matching_sources": 15,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-class-order-ae7871fc.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-cyclotomic-7098a0e8.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 12,
+    "matching_sources": 11,
+    "different_checkout_hashes": {
+      "lean/Conjectures/HadamardAutomorphismCyclotomicCandidates.lean": "d5766f038206bfb6a81725b1ff695a1398991d0c6afb41099b58a30e8435d0cc"
+    }
+  },
+  "docs/verification/hadamard-automorphism-fourier-ee1be6e0.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-permutation-e9a9bb45.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-automorphism-quadratic-model-0a1deef7.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-arithmetic-34ad6550.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-construction-subgroup-e25e0dcd.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-main-2006a76a.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-normalization-main-14ab84e7.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-orbits-4ea4fccf.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-pairs-34ad6550.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-pattern-reduction-e25e0dcd.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-prime-4ea4fccf.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-border-transfer-682d0917.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-fixed-border-fin16-23b2b187.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-fixed-border-literal-ee6a8b03.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-legendre-construction-20e04e58.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-legendre-invariant-quotient-e25e0dcd.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-legendre-quotient-data-20e04e58.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-legendre-reduction-e25e0dcd.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-order-nine-orbits-44523474204/hosted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard-order-nine-orbits-44523474204/local-receipt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard598-fibers-e911b12c.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hadamard598-multiplier-daa7d2c5.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/higher-triangle-exact-44545339492/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 23,
+    "recorded_sources": 34,
+    "matching_sources": 34,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hyperplane-main-exact-44531509741/controls/docs/hyperplane-main-exact-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 106,
+    "recorded_sources": 72,
+    "matching_sources": 72,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hyperplane-main-exact-44531509741/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 106,
+    "recorded_sources": 72,
+    "matching_sources": 72,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hyperplane-main-exact-44531509741/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 106,
+    "recorded_sources": 72,
+    "matching_sources": 72,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/hyperplane-main-original-44525844153/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 97,
+    "recorded_sources": 72,
+    "matching_sources": 72,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/johnson-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/juhnke-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lattice-norm-four-speed-exact-44591091795/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 113,
+    "matching_sources": 113,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-braun-bruegge-complete-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 30,
+    "recorded_sources": 19,
+    "matching_sources": 19,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-chow-20261121/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 48,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-cks-compatibility-20261121/receipt.json": {
+    "archived_status": "strict-sources-and-owned-audit-passed",
+    "declaration_endpoint_count": 49,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-cks-hall-20261121/receipt.json": {
+    "archived_status": "fixed-parameter-stable-hall-checkpoint-passed",
+    "declaration_endpoint_count": 42,
+    "recorded_sources": 19,
+    "matching_sources": 19,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-coulangeon-lazzarini-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-fan-tringali-complete-20261124-162051/checkpoint-004/receipt.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-fan-tringali-complete-20261124-162051/publication-attempt/scoped-receipt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-fan-tringali-complete-20261124-162051/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 28,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-ferroni-higashitani-complete-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-gravgaard-lee-mixed-luroth-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/frozen-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/independent-review.json": {
+    "archived_status": "mathematical-statement-and-receipt-review-passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 29,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-hartke-matching-excess-complete-20261124-162051/INDEPENDENT_GRAPH_REVIEW.json": {
+    "archived_status": "mathematical-and-source-semantics-passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-hartke-matching-excess-complete-20261124-162051/ROOT_STATEMENT_REVIEW.json": {
+    "archived_status": "statement and definition audit passed; full gate evidence remains separate",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-hartke-matching-excess-complete-20261124-162051/attempt-02-receipt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-hartke-matching-excess-complete-20261124-162051/frozen-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-kovalev-zero-free-complete-20261124-162051/lane/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 31,
+    "recorded_sources": 21,
+    "matching_sources": 21,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 31,
+    "recorded_sources": 21,
+    "matching_sources": 21,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-kvz-20261121/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 62,
+    "recorded_sources": 15,
+    "matching_sources": 15,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-named-20261121/baricz-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-named-20261121/bernardi-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 23,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-named-20261121/circular-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 171,
+    "recorded_sources": 19,
+    "matching_sources": 19,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-named-20261121/gilmore-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-steinerberger-feldheim-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-thue-morse-sign-density-publication-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 27,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-vishnyakova-20261121/complete-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 66,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-vishnyakova-20261121/weighted-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 26,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/lean-wright-20261121/wright-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-exact-44599210697/artifact/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-exact-44599210697/authentication.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-exact-44599210697/controls/docs/li-exact-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-hosted44-raw-44606051622/artifact/baseline-authentication.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-hosted44-raw-44606051622/artifact/baseline-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-hosted44-raw-44606051622/artifact/controls/docs/li-exact-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-hosted44-raw-44606051622/artifact/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/li-hosted44-raw-44606051622/baseline-backup/authenticated/authentication.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 44,
+    "matching_sources": 44,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/line-size-generating-evaluation-daa7d2c5.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/line-size-sharp-asymptotic-36b13722.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 78,
+    "matching_sources": 78,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-five-runner-exact-44549751944/published-inputs.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 7586,
+    "recorded_sources": 250,
+    "matching_sources": 250,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-five-runner-exact-44549751944/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 7586,
+    "recorded_sources": 250,
+    "matching_sources": 250,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-five-runner-norm-44555436644/published-inputs.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 108,
+    "matching_sources": 108,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-five-runner-norm-44555436644/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 108,
+    "matching_sources": 108,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-gcd-shift-44562942517/published-inputs.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-gcd-shift-44562942517/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-large-norm-exact-44530735399/controls/docs/loneliness-large-norm-exact-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 25,
+    "recorded_sources": 81,
+    "matching_sources": 81,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-large-norm-exact-44530735399/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 25,
+    "recorded_sources": 81,
+    "matching_sources": 81,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-large-norm-exact-44530735399/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 25,
+    "recorded_sources": 81,
+    "matching_sources": 81,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/loneliness-large-norm-original-44468683880/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 81,
+    "matching_sources": 73,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessHyperplaneArithmetic.lean": "53178525bbbd49c19fa9dd1046f39681841319ef0dae8ac2a77216b34bee5ffa",
+      "lean/Conjectures/LonelinessKZBasisGram.lean": "cbedf5849f99a461e39f8cde2ddb9ffa8b734d0b2deca865451aab49ca50dd0c",
+      "lean/Conjectures/LonelinessKZBasisVectors.lean": "c15824ec759e83dce78210732dcc0405d2d02c992bde00fb2e9ac8fd8053c305",
+      "lean/Conjectures/LonelinessKZProductFast.lean": "7a0141ece9dca75c664761e86eca61057dbf9ceed5af445a9221cdcb9563ddf7",
+      "lean/Conjectures/LonelinessNearestPlanePrefix.lean": "4c5ce5394a76551b473308c95140ed3e3a4d5fe8b883411adc89457aed72639b",
+      "lean/Conjectures/LonelinessNearestPlaneValue.lean": "03080ec0159a4e74a7ba8c8556a315be481df677a9cb1038fcb1fb210b768703",
+      "lean/Conjectures/LonelinessTightNormBounds.lean": "89dfd45512622f5e8a2df3f49ceec03e5a0bca2f03bb7ee7474a2aec0d66bd01"
+    }
+  },
+  "docs/verification/loneliness-support257-10ebb0e4.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-closed-lifts-44577160577/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 23,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-cover-byte-counts-44573794011/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-support-components-20261119-registration.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 109,
+    "matching_sources": 109,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-support-cut-fragments-44577155795/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 54,
+    "recorded_sources": 53,
+    "matching_sources": 53,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-support-lists-44559003697/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 23,
+    "recorded_sources": 59,
+    "matching_sources": 59,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-support-multiplicities-44567771879/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 63,
+    "recorded_sources": 98,
+    "matching_sources": 98,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/modular-support-orbits-44567771805/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 26,
+    "matching_sources": 26,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/motzkin-character-window-fea6cba2.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/motzkin-evaluator-df244bd9.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 65,
+    "matching_sources": 65,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/motzkin-rational-intervals-ad125705.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 46,
+    "matching_sources": 46,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/motzkin-relations-244cbd23.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 41,
+    "matching_sources": 41,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/p307-pilot-44540677853/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 85,
+    "matching_sources": 45,
+    "different_checkout_hashes": {
+      "Conjectures.LonelinessSixSpeedPrime0307Arithmetic": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Arithmetic": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks000": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks001": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks002": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks003": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks004": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks005": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks006": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks007": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks008": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks009": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks010": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks011": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks012": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks013": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks014": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks015": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks016": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks017": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks018": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks019": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks020": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks021": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks022": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks023": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks024": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks025": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks026": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks027": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks028": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks029": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks030": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks031": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks032": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Checks033": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B002Data": null,
+      "Conjectures.LonelinessSixSpeedPrime0307B153": null,
+      "Conjectures.LonelinessSixSpeedPrime0307Rows": null
+    }
+  },
+  "docs/verification/prime-filtering-exact-44591941338/controls/docs/prime-filtering-exact-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 68,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/prime-filtering-exact-44591941338/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 68,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/prime-filtering-four-exact-44601096014/controls/docs/prime-filtering-four-exact-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/prime-filtering-four-exact-44601096014/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/product-plane-speeds-exact-44553736720/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 40,
+    "matching_sources": 40,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/rational-lattice-quotient-exact-44606981694/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/rectangular-lattice-exact-44590263136/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 50,
+    "recorded_sources": 60,
+    "matching_sources": 60,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/renault-five-speed-44556621749/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 100,
+    "recorded_sources": 106,
+    "matching_sources": 106,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/renault-foundations-44549206241/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 64,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/rowland-20261124/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/runner-bound-padding-44559299513/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/runner-bound-transport-44557243499/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 15,
+    "matching_sources": 15,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/seven-eight-spectrum-exact-44541874811/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 26,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/seven-low-gap-exact-44551449045/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/seven-spectrum-norm-exact-44576585527/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 27,
+    "recorded_sources": 129,
+    "matching_sources": 129,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-fields-product-exact-44559208975/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-fields-support-exact-44563135178/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 22,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-plane-coverage-exact-44551449045/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-plane-families-exact-44563135178/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 66,
+    "matching_sources": 66,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-plane-semantics-exact-44557816556/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 31,
+    "recorded_sources": 63,
+    "matching_sources": 63,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-spectrum-arithmetic-exact-44537865221/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-spectrum-norm-exact-44555513834/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 52,
+    "matching_sources": 52,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-spectrum-realization-44527134869/controls/docs/six-spectrum-realization-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-spectrum-realization-44527134869/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-spectrum-realization-44527134869/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-speed-prime0257-rows-44533829046/controls/docs/six-speed-prime0257-pilot-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-speed-prime0257-rows-44533829046/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-speed-prime0257-rows-44533829046/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/six-sporadic-exact-44539038584/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/tight-seven-binary-roots-44565549252/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 58,
+    "recorded_sources": 34,
+    "matching_sources": 34,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/two-insertion-accelerations-9c7610e7.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 26,
+    "matching_sources": 20,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "lean/Conjectures/LonelinessTwoInsertionsAccelerationArithmetic.lean": "4b47f6785a30bcfaa08d398282a23dc6f4dbd78398bd9ea458ab8170c80be788",
+      "lean/Conjectures/LonelinessTwoInsertionsAccelerations.lean": "1e8185684fab6e0f690b50e4c812df68cc5160a4cf7154928865fc6830fa889c",
+      "lean/Conjectures/LonelinessTwoInsertionsDivisibility.lean": "4a5bc913560747978092f429731057aaa5178cefa3c420cb95cc5d5e670ca303",
+      "lean/Conjectures/LonelinessTwoInsertionsMeasure.lean": "08e1d7447b8a8249c9369a63674142eb1adc379055c9071371d0baec71bdb744",
+      "lean/Conjectures/LonelinessTwoInsertionsShift.lean": "a2e6e690296d237171da03f020328a4950738c11b1694000b5cbe56395b2930d"
+    }
+  },
+  "docs/verification/two-insertion-obstruction-9c7610e7.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/two-insertions-exact-44524198858/controls/docs/two-insertions-exact-theorem-sources.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 49,
+    "recorded_sources": 27,
+    "matching_sources": 27,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/two-insertions-exact-44524198858/preservation.json": {
+    "archived_status": "original_passed_evidence_authenticated",
+    "declaration_endpoint_count": 49,
+    "recorded_sources": 27,
+    "matching_sources": 27,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/two-insertions-exact-44524198858/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 49,
+    "recorded_sources": 27,
+    "matching_sources": 27,
+    "different_checkout_hashes": {}
+  },
+  "docs/verification/two-parameter-radius-exact-44593469748/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/alexandersson-graphical-dist/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 52,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "results/alexandersson-parking-excedance/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/alexandersson-transportation/verification/growth-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 181,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "results/alexandersson-transportation/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 94,
+    "recorded_sources": 19,
+    "matching_sources": 19,
+    "different_checkout_hashes": {}
+  },
+  "results/almiron-moyano-wilf-module-questions/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "results/asgarli-ghioca-yip-blocking-pencil/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/athanasiadis-chapoton-polar-duality/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/benfield-lippard-waring-gap-parity/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/braun-bruegge-bicyclic-facets/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 24,
+    "recorded_sources": 96,
+    "matching_sources": 96,
+    "different_checkout_hashes": {}
+  },
+  "results/burstein-a218225-enumeration/verification/maintainer-replay/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/burstein-a218225-enumeration/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/burstein-descent-top-shape-wilf/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/chern-fu-lin-three-statistic/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 42,
+    "matching_sources": 40,
+    "different_checkout_hashes": {
+      "lean\\Conjectures\\BursteinA218225Defs.lean": "24927f392c8e03da1341c6d51792e82e51d1131b1846b9e08b2bd0e41120de1d",
+      "lean\\Conjectures\\BursteinA218225TreeX.lean": "364ccc72ff373ac9770663f542df3a5b005e5a9b6f8c4d982d4673a188a065ee"
+    }
+  },
+  "results/circular-index-complete-minus-edge/verification/actual-table/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 47,
+    "matching_sources": 47,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-complete-minus-edge/verification/paired-columns/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-complete-minus-edge/verification/step-four/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-complete-minus-edge/verification/steps-1-3/independent-replay.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-complete-minus-edge/verification/steps-1-3/original-receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-complete-minus-edge/verification/steps-1-3/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-complete-minus-edges/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 71,
+    "recorded_sources": 35,
+    "matching_sources": 35,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-circulants/verification/insertion-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 18,
+    "recorded_sources": 28,
+    "matching_sources": 28,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-delta-2-mod-4/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 38,
+    "recorded_sources": 28,
+    "matching_sources": 28,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-delta-2-mod-4/verification/small-base-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-delta-3-mod-4/verification/forward-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 81,
+    "recorded_sources": 67,
+    "matching_sources": 67,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-remaining-deltas/verification/all-degrees-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 83,
+    "recorded_sources": 67,
+    "matching_sources": 67,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-remaining-deltas/verification/real-index/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 19,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/circular-index-upper-half-remaining-deltas/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/csordas-vishnyakova/verification/lean-receipt.json": {
+    "archived_status": "passed_original_conjecture_3_6",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/arrangement/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/encoding/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/exact-degree/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 53,
+    "matching_sources": 53,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/full/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 86,
+    "matching_sources": 86,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/growth/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/rational-polytope/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/simplex/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "results/cyrusian-kaplan-ordinarization/verification/triangulation/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 23,
+    "matching_sources": 23,
+    "different_checkout_hashes": {}
+  },
+  "results/defant-engen-miller-lassalle/verification/analytic-reduction/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "results/defant-engen-miller-lassalle/verification/finite-row-memory/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 23,
+    "matching_sources": 23,
+    "different_checkout_hashes": {}
+  },
+  "results/defant-engen-miller-lassalle/verification/finite-through-53/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 23,
+    "matching_sources": 19,
+    "different_checkout_hashes": {
+      "lean/Conjectures/LassalleFiniteRowBatching.lean": "d66c4652b28de2414a64dccc9e820f4cda2aa7bb22651e5d7c5809fe2c27445f",
+      "lean/Conjectures/LassalleSmallRows02.lean": "44ba52020cfc8aa70840a3c6edb4b0eaa4114eed6cd23db19feafc38d5493fe3",
+      "lean/Conjectures/LassalleSmallRows03.lean": "bc7552647167808688f9d3c230f6c0320801640e477474b0308cb677547035ce",
+      "lean/Conjectures/LassalleSmallRows04.lean": "3f6c810af535a276523777f4f3450df73bac293e1057515bd8d49cdb9f9b1fba"
+    }
+  },
+  "results/defant-engen-miller-lassalle/verification/interval-coverage/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 27,
+    "matching_sources": 27,
+    "different_checkout_hashes": {}
+  },
+  "results/defant-engen-miller-lassalle/verification/root-bracket/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/dukes-revstack/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "results/ekhad-zeilberger-unfair-bet/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 15,
+    "matching_sources": 15,
+    "different_checkout_hashes": {}
+  },
+  "results/erdos-gyarfas-point-degree-spectrum/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 46,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/ROOT_REVIEW.json": {
+    "archived_status": "mathematical and statement review passed; bound to final frozen source; full verification still pending",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/STIELTJES_INTEGRATION_REVIEW.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/WINDOWS_REVIEW.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/frozen-sources.json": {
+    "archived_status": "frozen for full integrated verification",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/lane/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 30,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 30,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/stieltjes-independent-verification.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/stieltjes-verification/receipt.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/feldheim-weighted-tail/verification/windows-verification/receipt.json": {
+    "archived_status": null,
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/ferreira-simon-diagonal/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/fiscus-grid-game/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/gawron-ulas-partition-signs/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/block-moebius-factorization/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/canonical-size-recurrence/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 39,
+    "matching_sources": 39,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/formal-series/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/literal-laguerre-formula/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 55,
+    "matching_sources": 55,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/literal-weighted-poset/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 12,
+    "matching_sources": 12,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/one-block-cancellation/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 19,
+    "matching_sources": 19,
+    "different_checkout_hashes": {}
+  },
+  "results/gonzalez-dleon-wachs-complete-graphs/verification/positive-laguerre-roots/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "results/gravgaard-lee-diameter-condition/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "results/gyarfas-planar-degree-repetition/verification/sixteen-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/gyarfas-planar-degree-repetition/verification/uniform-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 58,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/first-publication-base/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/independent-verification.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/interrupted-source-build/receipt-interrupted-source-build.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/interrupted-source-build/receipt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/lane/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/publication-environment-failure/receipt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/independent-verification.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 0,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/publication-binding-cee778.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/publication-binding-initial.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/publication-binding.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/publication-preflight-cee778.json": {
+    "archived_status": "preflight-passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/publication-preflight-initial.json": {
+    "archived_status": "preflight-passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/publication-preflight.json": {
+    "archived_status": "preflight-passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/hajdu-sarkozy-shifted-products/verification/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 53,
+    "recorded_sources": 24,
+    "matching_sources": 24,
+    "different_checkout_hashes": {}
+  },
+  "results/heim-neuhauser-ordinary-darcais-root/verification/fourier-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 29,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "results/heim-neuhauser-ordinary-darcais-root/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "results/heim-neuhauser-troeger-plane-partition-turan/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 67,
+    "recorded_sources": 57,
+    "matching_sources": 57,
+    "different_checkout_hashes": {}
+  },
+  "results/hkm-ehrhart/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 21,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/block-lengths/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/coefficients/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/column-series/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/composition-count/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/conjecture-10/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 36,
+    "matching_sources": 35,
+    "different_checkout_hashes": {
+      "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "9b1b4fee38a63993efa1bba9e5dffce6cf295be7485d12df8ec30fc73874582c"
+    }
+  },
+  "results/kauers-koutschan-recurrence/verification/divided-sums/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/finite-recurrence/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 7,
+    "matching_sources": 6,
+    "different_checkout_hashes": {
+      "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "9b1b4fee38a63993efa1bba9e5dffce6cf295be7485d12df8ec30fc73874582c"
+    }
+  },
+  "results/kauers-koutschan-recurrence/verification/order-thirteen/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 38,
+    "matching_sources": 38,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/schur-moment/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/signed-blocks/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "results/kauers-koutschan-recurrence/verification/trace-products/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/kovalev-hardy-duality/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 20,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/mallik-diwan-kothari-degree-count/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 68,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "results/mcnamara-steingrimsson-rank-unimodality/verification/complete/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 17,
+    "recorded_sources": 69,
+    "matching_sources": 69,
+    "different_checkout_hashes": {}
+  },
+  "results/mcnamara-steingrimsson-rank-unimodality/verification/pointed/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "results/mcnamara-steingrimsson-rank-unimodality/verification/rank-structure/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 48,
+    "matching_sources": 48,
+    "different_checkout_hashes": {}
+  },
+  "results/mcnamara-steingrimsson-rank-unimodality/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "results/mcnamara-steingrimsson-rank-unimodality/verification/repeated-factors/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 30,
+    "matching_sources": 30,
+    "different_checkout_hashes": {}
+  },
+  "results/mcnamara-steingrimsson-rank-unimodality/verification/two-summand/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 21,
+    "matching_sources": 21,
+    "different_checkout_hashes": {}
+  },
+  "results/meylender-thalmaier-truncated-square/verification/covering-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 31,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "results/monophonic-product-nordhaus-gaddum/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 107,
+    "recorded_sources": 19,
+    "matching_sources": 19,
+    "different_checkout_hashes": {}
+  },
+  "results/nathanson-sidon-systems/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 96,
+    "recorded_sources": 22,
+    "matching_sources": 22,
+    "different_checkout_hashes": {}
+  },
+  "results/nemeth-seberry-shu/verification/counting/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/nemeth-seberry-shu/verification/spectral/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/diagram-first-order/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/finite-alphabet-comparison/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/jacobi-trudi-and-hook-coefficients/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 56,
+    "matching_sources": 56,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/pieri-diagram-chains/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/signed-hook-cell-product/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 31,
+    "matching_sources": 31,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/source-laurent-certificate/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 36,
+    "matching_sources": 36,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/tableau-laurent-product/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 25,
+    "matching_sources": 25,
+    "different_checkout_hashes": {}
+  },
+  "results/novelli-thibon/verification/virtual-alphabet-interpolation/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 37,
+    "matching_sources": 37,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/andreief/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/asymptotic/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/box-integral/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/derivative-ratio/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/full/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 20,
+    "matching_sources": 20,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/hankel-adjacent/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/hankel-polynomial/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/hankel-transfer/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/integral-dominance/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/moment/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/moving-box/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 1,
+    "matching_sources": 0,
+    "different_checkout_hashes": {
+      "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9"
+    }
+  },
+  "results/nuttall-cumulants/verification/repeated/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/tail-calculus/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 8,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/tail-dominance/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/term-derivative/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/nuttall-cumulants/verification/term-series/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 9,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/pantone-bona-second-largest-terminal/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/bernoulli-array-fourier/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/bernoulli-tilt/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/bounded-array-law/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/exponential-transfer/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/finite-prime-tails/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/finite-window-tv/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/grid-tightness/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/literal-arithmetic-poisson-law/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 51,
+    "matching_sources": 51,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/literal-crt-inclusions/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/path-weak-limit/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/poisson-count-law/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/poisson-difference-normal/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/prime-reciprocal-bound/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/rare-bernoulli-tools/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/rare-rate/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 33,
+    "matching_sources": 33,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/residue-poisson-comparisons/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 28,
+    "matching_sources": 28,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/shifted-tail-tools/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/pomerance-sarkozy-fluctuations/verification/threshold-identities/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/rectangle-partition-asymptotics/lean-verification-receipt.json": {
+    "archived_status": "FULL RECTANGLE CHECKPOINT VERIFIED",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 46,
+    "matching_sources": 44,
+    "different_checkout_hashes": {
+      "Conjectures/RectangleEncoding.lean": "4d7e3935a9a4f9e119d1c741e0add591442566e51278c78ded1bb06bb83d1533",
+      "Conjectures/RectangleParameterBounds.lean": "46de9512a322760d44f6cd835239650d4e58c36fd03233f8f3ced78daa463517"
+    }
+  },
+  "results/revised-tan-zhou-luroth/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/rossi-permutohedron-roots/verification/analytic/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/rossi-permutohedron-roots/verification/bulk/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 17,
+    "matching_sources": 17,
+    "different_checkout_hashes": {}
+  },
+  "results/rossi-permutohedron-roots/verification/complete/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 18,
+    "recorded_sources": 53,
+    "matching_sources": 53,
+    "different_checkout_hashes": {}
+  },
+  "results/rossi-permutohedron-roots/verification/face-model/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 14,
+    "recorded_sources": 10,
+    "matching_sources": 10,
+    "different_checkout_hashes": {}
+  },
+  "results/rossi-permutohedron-roots/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/rossi-permutohedron-roots/verification/uniform/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 26,
+    "matching_sources": 26,
+    "different_checkout_hashes": {}
+  },
+  "results/sagan-wilson-plactic-mode/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 76,
+    "recorded_sources": 71,
+    "matching_sources": 71,
+    "different_checkout_hashes": {}
+  },
+  "results/separable-derangements-limit/verification/critical-weights/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/separable-derangements-limit/verification/diagonal-counts/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/separable-derangements-limit/verification/spine-limit/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/separable-derangements-limit/verification/spine-records/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/separable-derangements-limit/verification/tree-enumeration/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/shifted-lonely-runner-counterexamples/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 11,
+    "matching_sources": 11,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/abelian-reduction/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/conditional-reduction/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 27,
+    "matching_sources": 27,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/coprime-quotient/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/cycle-forest/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/cycle-labels/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/cyclic-normalization/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/cyclic-transport/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/directed-moves/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/factor-action/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/gaschutz/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/independent-walks/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 8,
+    "matching_sources": 8,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/multifactor-lift/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 13,
+    "matching_sources": 13,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/permutation-cycles/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/prime-kernel-lift/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 1,
+    "recorded_sources": 2,
+    "matching_sources": 1,
+    "different_checkout_hashes": {
+      "lean/Conjectures/ShumyatskyPrimeKernelLift.lean": "e52d1fcd9c05faa5ca2f5a867bba3e0a0ead48af04406951a866fb21f30def74"
+    }
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/prime-spectrum/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/simple-factors/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/simple-power/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 2,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/single-factor/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/socle-assembly/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/socle-factor-action/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 18,
+    "matching_sources": 18,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/socle-structure/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/stabilizer/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 3,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/shumyatsky-conjugate-prime-spectrum/verification/walk-labels/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 3,
+    "matching_sources": 3,
+    "different_checkout_hashes": {}
+  },
+  "results/sobolewski-ulas-exception-regularity/verification/actual-congruences/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 13,
+    "recorded_sources": 36,
+    "matching_sources": 36,
+    "different_checkout_hashes": {}
+  },
+  "results/sobolewski-ulas-exception-regularity/verification/normalized-counting/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  },
+  "results/sobolewski-ulas-exception-regularity/verification/original-reduction/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 11,
+    "recorded_sources": 28,
+    "matching_sources": 28,
+    "different_checkout_hashes": {}
+  },
+  "results/sobolewski-ulas-exception-regularity/verification/powers-of-two/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 21,
+    "matching_sources": 21,
+    "different_checkout_hashes": {}
+  },
+  "results/sokal-apery-moment-threshold/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 12,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/steiner-triple-system-sail/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 73,
+    "recorded_sources": 14,
+    "matching_sources": 14,
+    "different_checkout_hashes": {}
+  },
+  "results/steinerberger-greedy-fourier/verification/lane/receipt-first-replay-attempt.json": {
+    "archived_status": "failed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/steinerberger-greedy-fourier/verification/lane/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/steinerberger-greedy-fourier/verification/receipt.json": {
+    "archived_status": "passed",
+    "declaration_endpoint_count": 15,
+    "recorded_sources": 4,
+    "matching_sources": 4,
+    "different_checkout_hashes": {}
+  },
+  "results/stern-half-plane/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/tom-vailaya-weighted-trace/verification/color-basis-comparison/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 6,
+    "matching_sources": 6,
+    "different_checkout_hashes": {}
+  },
+  "results/tom-vailaya-weighted-trace/verification/color-trace/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 1,
+    "matching_sources": 0,
+    "different_checkout_hashes": {
+      "lean/Conjectures/TomVailayaColorTrace.lean": "eba05acb97451432bc1f84f87f7097d88febf07a7b9ac86b01d015954cfc50b7"
+    }
+  },
+  "results/tom-vailaya-weighted-trace/verification/gluing/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 4,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/tom-vailaya-weighted-trace/verification/reflection/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 2,
+    "matching_sources": 2,
+    "different_checkout_hashes": {}
+  },
+  "results/tom-vailaya-weighted-trace/verification/weighted-path-columns/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 2,
+    "matching_sources": 1,
+    "different_checkout_hashes": {
+      "lean/Conjectures/TomVailayaPathSeries.lean": "06286ddf39a6fda56406d8f90ea118a2c38bbeb559619de8a9c6bc2e0a936aee"
+    }
+  },
+  "results/tom-vailaya-weighted-trace/verification/weighted-path-rows/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 5,
+    "recorded_sources": 3,
+    "matching_sources": 2,
+    "different_checkout_hashes": {
+      "lean/Conjectures/TomVailayaPathRows.lean": "e4073cd7c8b71835c95dd0dcce9ca3ac0c662b0b9e749e143454a263760fe8a0"
+    }
+  },
+  "results/ulas-disjoint-square-blocks/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 10,
+    "recorded_sources": 9,
+    "matching_sources": 9,
+    "different_checkout_hashes": {}
+  },
+  "results/wagner-laguerre-operator/verification/lean-receipt.json": {
+    "archived_status": "passed_original_conjecture_4_3",
+    "declaration_endpoint_count": 6,
+    "recorded_sources": 1,
+    "matching_sources": 1,
+    "different_checkout_hashes": {}
+  },
+  "results/wang-yang-fuss-narayana/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 7,
+    "recorded_sources": 5,
+    "matching_sources": 5,
+    "different_checkout_hashes": {}
+  },
+  "results/xu-zhou-laplacian-diameter/verification/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 21,
+    "recorded_sources": 16,
+    "matching_sources": 16,
+    "different_checkout_hashes": {}
+  },
+  "results/xu-zhou-laplacian-diameter/verification/sharpness/receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 16,
+    "recorded_sources": 27,
+    "matching_sources": 27,
+    "different_checkout_hashes": {}
+  },
+  "results/zhang-deletion-values/verification/lean-receipt.json": {
+    "archived_status": "PASS",
+    "declaration_endpoint_count": 35,
+    "recorded_sources": 7,
+    "matching_sources": 7,
+    "different_checkout_hashes": {}
+  }
+}

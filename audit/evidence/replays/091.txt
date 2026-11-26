@@ -1,0 +1,11 @@
+Reproduce the compact CUT Lean certificate tables
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.12
+Output SHA-256: 4b2cbb24f16bb36c4f4083bb61a8711f17573c33d87aaccf58170eb2fbf58475
+
+python3 results/cut-arithmetic-periodicity/generate_weight_certificates.py --output-dir "$RUNNER_TEMP/cut-weight"
+diff -u lean/Conjectures/CutPeriodWeightTables.lean "$RUNNER_TEMP/cut-weight/CutPeriodWeightTables.lean"
+diff -u lean/Conjectures/CutPeriodWeightCoverTables.lean "$RUNNER_TEMP/cut-weight/CutPeriodWeightCoverTables.lean"
+
+Generated 160 collision masks, 327 lower-option rows, and 11 small-pile rows; no Lean check has been performed.

@@ -1,0 +1,9 @@
+Replay deterministic threshold learner and priority estimates
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.92
+Output SHA-256: 95d447659fc4c8c2770d41d7977f5f0129343ba0148881590c6f3a675594873f
+
+python3 results/steinke-zakynthinou-thresholds/verify_deterministic.py
+
+125 exact kernels; 1364 ordered samples; 2026 filtered output comparisons; 203 priority weight vectors

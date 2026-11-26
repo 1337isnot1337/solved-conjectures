@@ -1,0 +1,27 @@
+Check Chen–Kitaev–Zhang record identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.13
+Output SHA-256: 2ba91f4cc0517e071bd6cc353def7b4ba8bea0d3acd5c15165d6357bb6db5a15
+
+python results/chen-kitaev-zhang-records/verify.py
+
+PASS: 16 exact positivity certificates; all-index induction identities; low-record identities; literal separable permutations through n=8
+Certificates: /home/cinna/solved-conjectures-audit/results/chen-kitaev-zhang-records/ckz_certificates.json
+Low differences: {'F2-F1_n0_to_4': [0, -1, 0, 1, 3], 'F2-F3_n0_to_7': [0, 0, 1, 2, 3, 5, 12, 43], 'I1-I2_n0_to_4': [0, 1, 1, 1, 2]}
+G_0 degree 7 min 4 last two [2224, 5372]
+G_1 degree 9 min 4 last two [65048, 157044]
+G_2 degree 11 min 1 last two [1396800, 3372180]
+G_3 degree 13 min 0 last two [28929352, 69841644]
+G_4 degree 15 min 0 last two [595325008, 1437241724]
+G_5 degree 17 min 0 last two [12268912216, 29619774292]
+G_6 degree 19 min 0 last two [253749072288, 612604451796]
+G_7 degree 21 min 0 last two [5268900164232, 12720250235340]
+G_8 degree 23 min 0 last two [109820457718256, 265130038449532]
+G_9 degree 25 min 0 last two [2296951016145560, 5545330295285428]
+G_10 degree 27 min 0 last two [48191416390935808, 116344371040966548]
+G_11 degree 29 min 0 last two [1013887358943381960, 2447740612679751468]
+E1*T1 degree 7 min 3 last two [2252, 5440]
+E1*T2 degree 9 min 1 last two [70668, 170612]
+E2*T13 degree 31 min 0 last two [5530646749767915772, 13352162391984380168]
+E2*T14 degree 33 min 0 last two [122941413579146512220, 296806828040095303908]

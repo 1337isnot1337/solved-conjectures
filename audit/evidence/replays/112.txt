@@ -1,0 +1,21 @@
+Verify the fixed-seed one-runner extension
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.1
+Output SHA-256: 1b584bd099fe6d40038604bc2a5b3d010ad469b3869098342cac5a7bb2f6ec2e
+
+python3 results/shifted-lonely-runner-counterexamples/verify_frozen_extension.py
+
+{
+  "radius": "1359451/79000000",
+  "seed_radius": "43021/2500000",
+  "seed_gaps_at_radius": 11,
+  "longest_gap": "53/1264000000",
+  "speed_limit_at_radius": 820800,
+  "optimal_speed": 528344,
+  "optimal_phase_start": "4737613/31600000",
+  "optimal_phase_width": "178783/158000000",
+  "attainment_time": "38586773/79000000",
+  "phase_perturbation_barrier": "1207609/4661000000",
+  "seed_sha256": "c13ff152619c2dfeca4aef794c2ee9e677db8850897072485dd7cffef8790bdd"
+}

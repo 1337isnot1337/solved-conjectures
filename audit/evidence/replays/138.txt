@@ -1,0 +1,10 @@
+Additional docs/research-results/wang-yang-eulerian-square/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.15
+Output SHA-256: 3b367ee13497d0bff50f11ba7273651bd9b59d594af2be2fa0611e6a113f9d85
+
+python3 docs/research-results/wang-yang-eulerian-square/check.py
+
+144 mixed differences and 3025 bordered three-by-three minors passed
+144 exact spline integrals and 4356 two-by-two determinants passed

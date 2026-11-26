@@ -1,0 +1,9 @@
+Additional results/sagan-wilson-plactic/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.56
+Output SHA-256: 5d8982d61a19f54f3131de85990d9899c6db1fa9c42b8d149b1cee7a212729fc
+
+python3 results/sagan-wilson-plactic/check.py
+
+PASS: 280 word pairs, with independent algorithms and affine-power checks

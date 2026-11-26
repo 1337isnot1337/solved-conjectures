@@ -1,0 +1,18 @@
+Certify the ordinary D’Arcais root conjecture
+Working directory: .
+Exit: 0
+Elapsed seconds: 89.62
+Output SHA-256: b0a797ae700a905aac65bf4396f5ad4833a7476ccd6dc8a6131291c210a94624
+
+python3 results/heim-neuhauser-ordinary-darcais-root/heim-neuhauser-ordinary-fourier.py
+python3 results/heim-neuhauser-ordinary-darcais-root/heim-neuhauser-ordinary-small.py
+g++ -O3 -Wall -Wextra results/heim-neuhauser-ordinary-darcais-root/heim-neuhauser-ordinary-finite.cpp -lgmpxx -lgmp -o "$RUNNER_TEMP/ordinary-darcais-check"
+"$RUNNER_TEMP/ordinary-darcais-check"
+
+Certified ordinary Fourier sign for n>=501 and every x>=1.
+Worst enclosing tail below .99: 0.14848002 at r=118/125.
+Worst enclosing gamma squared: 0.18521646.
+Final analytic regime enclosing tail: 0.09723753.
+Certified each ordinary root comparison n=6,...,25 at x>=1.
+Certified the finite boundary and exceptional factor for the corrected 2021 ratios.
+Certified all ordinary Turan polynomials for n=26,...,500 at x>=1.

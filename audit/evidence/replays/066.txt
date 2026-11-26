@@ -1,0 +1,9 @@
+Check Ferreira-Simon beta-prime symbolic identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.06
+Output SHA-256: 6ebc83d9575a8d178a4964c06b44257462d92d75f4829fb73f79d33115155cd2
+
+python results/ferreira-simon-beta-prime/verify.py
+
+PASS: 18 exact symbolic identities in formal parameters a,b,s,n

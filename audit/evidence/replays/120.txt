@@ -1,0 +1,9 @@
+Additional results/athanasiadis-chapoton-polar-duality/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.25
+Output SHA-256: 88c3bf15e8526989e7fdd934b90ccab6a67aa86e3f84be71aaf0091e76762954
+
+python3 results/athanasiadis-chapoton-polar-duality/check.py
+
+Exact checks passed: 29 labelled preorders, three elements.

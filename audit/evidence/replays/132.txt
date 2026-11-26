@@ -1,0 +1,9 @@
+Additional results/xu-zhou-laplacian-diameter/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.99
+Output SHA-256: 504d2ea59fb200fe135b469b0e6619044133ecd4ffa682451f01ca83484a689c
+
+python3 results/xu-zhou-laplacian-diameter/check.py
+
+PASS: 32,767 complete composition checks and 40 sharp-family checks

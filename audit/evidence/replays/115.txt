@@ -1,0 +1,13 @@
+Verify eleven- through fourteen-runner equality cases
+Working directory: .
+Exit: 0
+Elapsed seconds: 11.74
+Output SHA-256: bbd5721352a26484de5f67b3d4df0fdf1925b95065a0e6bcb0ceb0649c1c94c3
+
+curl --fail --silent --show-error --location --retry 3 https://raw.githubusercontent.com/vzsky/13-lonely-runners/29311663c21835d67529b29a4acf6631fcad5c63/result_12 -o "$RUNNER_TEMP/first-lifts.log"
+python3 results/tight-eleven-to-fourteen/verify.py --legacy-log "$RUNNER_TEMP/first-lifts.log"
+
+11 runners: 61 prime fibers and 1 exact equality case(s) passed.
+12 runners: 44 prime fibers and 1 exact equality case(s) passed.
+13 runners: 91 prime fibers and 1 exact equality case(s) passed.
+14 runners: 62 prime fibers and 2 exact equality case(s) passed.

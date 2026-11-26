@@ -1,0 +1,36 @@
+Verify the eight-speed loneliness spectrum
+Working directory: .
+Exit: 0
+Elapsed seconds: 835.8
+Output SHA-256: a4a9806def92430888fd73df4ff144f1aa18b537b66d197ac2153127ee7c746d
+
+python3 results/eight-speed-spectrum/verify.py
+
+1137991680 candidate pairs, 546 admissible pairs.
+Prime 151 passed (10365 folded multisets).
+Prime 157 passed (11153 folded multisets).
+Prime 163 passed (14784 folded multisets).
+Prime 167 passed (5694 folded multisets).
+Prime 173 passed (6973 folded multisets).
+Prime 179 passed (13506 folded multisets).
+Prime 181 passed (9779 folded multisets).
+Prime 191 passed (4082 folded multisets).
+Prime 193 passed (14903 folded multisets).
+Prime 197 passed (4869 folded multisets).
+Prime 199 passed (3987 folded multisets).
+Prime 211 passed (9531 folded multisets).
+Prime 223 passed (3266 folded multisets).
+Prime 227 passed (6765 folded multisets).
+Prime 229 passed (3703 folded multisets).
+Prime 233 passed (7203 folded multisets).
+Prime 239 passed (2770 folded multisets).
+Prime 241 passed (6596 folded multisets).
+Prime 251 passed (5665 folded multisets).
+Prime 257 passed (5849 folded multisets).
+Prime 263 passed (2301 folded multisets).
+Prime 269 passed (2833 folded multisets).
+Prime 271 passed (2198 folded multisets).
+Prime 277 passed (4724 folded multisets).
+Prime 281 passed (4207 folded multisets).
+Prime 283 passed (3767 folded multisets).
+Checked 18012 finite directions and all 17 sporadic tuples.

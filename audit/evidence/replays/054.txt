@@ -1,0 +1,10 @@
+Check Wright disproof curvature identities
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.05
+Output SHA-256: fddee9ec5f159c5b69ad5194a9a94113d2fd8779e451e8f818ba6ae1a506d5ad
+
+python results/ferreira-simon-wright/verify.py
+
+PASS: exact general curvature identity, both parameter-polynomial specializations, and all three derivative/sign evaluations
+Analytic scope: C^2 convergence and the counterexample intervals are established in the written proof, not by this script.

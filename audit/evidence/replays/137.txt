@@ -1,0 +1,11 @@
+Additional docs/research-results/hurlbert-kamat/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.06
+Output SHA-256: e893c6f3c3fcabab1852cf07643e5a585a4d4b16bb100beea91c971307f8bfe4
+
+python3 docs/research-results/hurlbert-kamat/check.py
+
+vertices=94 leaves=60 r=15
+root star=1923910001548425 each leaf star=1917139933075367
+total root star=931322574615478515625 total leaf star=890666905980686235988

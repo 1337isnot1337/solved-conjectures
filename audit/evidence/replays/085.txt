@@ -1,0 +1,10 @@
+Verify Batista Egyptian-fraction congruence checks
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.3
+Output SHA-256: 99fd35e7fcdd6de75c171b958edf2f3396dd5457017ab846b83487a39ec4c07f
+
+python3 results/batista-egyptian-fractions/verify.py
+
+Checked k = 1 through 1500. 86 exceptions, all 1 modulo 5.
+Independent unpruned enumeration agreed through 150.

@@ -1,0 +1,15 @@
+Additional results/fmp-cylindric/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.53
+Output SHA-256: 07ec0dc268eee46ec9bc970945762462a8d5e61d42355422d1e256ad33e0a516
+
+python3 results/fmp-cylindric/check.py
+
+standard: (5, 4, 3) (3, 2, 1) 2 1/12
+standard: (6, 5, 4) (3, 2, 1) 2 13/252
+standard: (7, 6, 4, 4) (3, 1, 1, 0) 4 193/30030
+standard: (4, 4, 4) (0, 0, 0) 1 1/12
+Exact determinant and linear coefficient checks passed for 919 random standard shapes.
+Exact relaxed-seam counterexample: -1/17160
+Exceptional pins check: 12 8 8

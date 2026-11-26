@@ -1,0 +1,9 @@
+Check extremal word pairs in Litt's game
+Working directory: .
+Exit: 0
+Elapsed seconds: 4.73
+Output SHA-256: cb9dcb5306fc6fa629cd9d3945a49a788584dd14cca0ae7f541c87b8c896c562
+
+python results/ekhad-zeilberger-unfair-bet/verify.py
+
+Checked 3,154,226 unordered word pairs over 18 alphabet/length choices.

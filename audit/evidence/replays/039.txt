@@ -1,0 +1,13 @@
+Check Tom–Vailaya weighted trace on small graphs
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.62
+Output SHA-256: ade747ea5f9db4f3dc790b8022999c3d400816e7deaf64aa7b93c725101ee268
+
+python3 results/tom-vailaya-weighted-trace/verify.py
+
+n=2: 6 exact direct comparisons
+n=3: 15 exact direct comparisons
+n=4: 42 exact direct comparisons
+n=5: 126 exact direct comparisons
+n=6: 396 exact direct comparisons

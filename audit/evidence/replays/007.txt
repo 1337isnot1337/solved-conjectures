@@ -1,0 +1,19 @@
+Check the big-descent Schur expansion
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.24
+Output SHA-256: 20369f4876e46def1c5cbfc4b0644bf91f36acb431969d685f76cbe52455ff57
+
+python3 results/erz-big-descent-schur/verify.py
+python3 results/erz-big-descent-schur/check_review.py
+
+Frobenius formula agrees with content derivation through degree 15
+Direct permutation and alternant checks passed: 1
+Direct permutation and alternant checks passed: 2
+Direct permutation and alternant checks passed: 3
+Direct permutation and alternant checks passed: 4
+Direct permutation and alternant checks passed: 5
+Direct permutation and alternant checks passed: 6
+Direct permutation and alternant checks passed: 7
+Direct permutation and alternant checks passed: 8
+Two-color coefficients across all 362,880 permutations of size nine; 36 exact higher-Durfee transforms.

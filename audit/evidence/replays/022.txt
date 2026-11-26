@@ -1,0 +1,12 @@
+Check the permutation-pattern interval rank dip
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.02
+Output SHA-256: f6c9404d48eefc38e266994358967110fdb8ec68aa4ac0fd3941cbbaa7081096
+
+python3 results/mcnamara-steingrimsson-rank-unimodality/verify.py
+
+rank       F_pi[r]                 G[r]                  interval rank size
+  44        1503326622          6151377552045                8598793292661
+  45        2106401227          5169243788590                8598464986146
+  46        2775276049          4080904067073                8599053474845

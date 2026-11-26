@@ -1,0 +1,9 @@
+results/braun-bruegge-bicyclic-facets/check_maximizer.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 2.68
+Output SHA-256: 4001609cff8a999cf685934fb028764e833ad44b5015d3b9bf8b3d8880a8f91b
+
+python3 results/braun-bruegge-bicyclic-facets/check_maximizer.py
+
+82037 unordered triples checked; no extra ties

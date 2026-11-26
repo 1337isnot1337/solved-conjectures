@@ -1,0 +1,16 @@
+results/chern-fu-lin-three-statistic/check-minimum.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 24.25
+Output SHA-256: 45d4f7b2f98f6447a4bf458f96a01f18a07658eee010d4cfa62963c19ae26df8
+
+python3 results/chern-fu-lin-three-statistic/check-minimum.py
+
+All permutations checked at n= 1
+All permutations checked at n= 2
+All permutations checked at n= 3
+All permutations checked at n= 4
+All permutations checked at n= 5
+All permutations checked at n= 6
+All permutations checked at n= 7
+All permutations checked at n= 8

@@ -1,0 +1,9 @@
+Additional results/braun-bruegge-minimum-facets/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.63
+Output SHA-256: 630e9101bc4f87d4845e11139be9f34050031232874ff85bae7edbf913265cfb
+
+python3 results/braun-bruegge-minimum-facets/check.py
+
+PASS: exact facet and matching counts, graphs by n: {2: 1, 3: 4, 4: 38, 5: 728, 6: 306, 7: 364, 8: 373}

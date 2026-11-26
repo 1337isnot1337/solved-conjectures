@@ -1,0 +1,9 @@
+Check Zeng unscaled interlacing and multiplicative root separation
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.14
+Output SHA-256: 703ea22b31736a28ac3a38493cb5ca11d90e69af6eed5b1fd55d88938a421267
+
+python3 results/zeng-unscaled-interlacing/check.py
+
+16 parameter pairs, 224 strict interlacing chains, and 1120 coefficient identities passed.

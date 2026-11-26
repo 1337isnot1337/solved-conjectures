@@ -1,0 +1,9 @@
+Check the agnostic VC projection estimates
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.11
+Output SHA-256: 5253f88561b24f73a85b96af59120eba5cea329afe644dc7b99d1696b7a8673d
+
+python results/steinke-zakynthinou-agnostic-vc/verify.py
+
+Passed: exact Schur constant, noncommutation, overlap, inverse and residual variance.

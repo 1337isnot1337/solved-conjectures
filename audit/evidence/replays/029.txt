@@ -1,0 +1,12 @@
+Certify the plane-partition Fourier sign over exact rational boxes
+Working directory: .
+Exit: 0
+Elapsed seconds: 11.7
+Output SHA-256: d18074a338f0057c02cf6264eed581aba2d260dcca82a63d102ee7a74c61f0de
+
+python3 results/heim-neuhauser-troeger-plane-partition-turan/heim-neuhauser-fourier-certificate.py
+
+Fourier sign certified for all n>=251, all x>=1.
+Worst enclosing box tail (r<=0.9) 0.110948 at r=101/125.
+r>=0.9 enclosing tail 0.249101; lower positive integral >2/5.
+Worst r<=0.9 bound for squared normalized third cumulant: 0.10672.

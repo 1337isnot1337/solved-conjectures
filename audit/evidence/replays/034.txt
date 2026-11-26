@@ -1,0 +1,11 @@
+Check Pantone–Bóna rank-marker gap counts
+Working directory: .
+Exit: 0
+Elapsed seconds: 3.42
+Output SHA-256: 503ea7be04693221fe4ebddf365343c8a396251eb2f190f9b7732f4421014715
+
+python3 results/pantone-bona-second-largest-terminal/verify.py
+
+d=2: exact canonical and literal counts match through n=8: [1, 1, 2, 6, 21, 78, 297, 1144, 4433]
+d=3: exact canonical and literal counts match through n=8: [1, 1, 2, 6, 24, 116, 633, 3747, 23502]
+d=4: exact canonical and literal counts match through n=8: [1, 1, 2, 6, 24, 120, 715, 4882, 37041]

@@ -1,0 +1,10 @@
+Check Han-Sabag-Kostina-Hassibi exact Lyapunov counterexample
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.78
+Output SHA-256: 50b8042bbe2284bd9d2745ae0420825546c1e54ba4a008828e7f70ea97679dc3
+
+python results/han-sabag-kostina-hassibi/verify.py
+
+PASS: 16 exact rational and symbolic checks.
+The full four-assignment argument and open parameter family are proved in PROOF.md.

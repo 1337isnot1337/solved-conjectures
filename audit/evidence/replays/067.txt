@@ -1,0 +1,29 @@
+Certify Lyon gamma-median monotonicity on all real cells
+Working directory: .
+Exit: 0
+Elapsed seconds: 121.4
+Output SHA-256: eb65c1987579e4959c54a92174d57d2386f7985dd4669a9d57f5607ad4f51c82
+
+python results/lyon-gamma-median/verify.py
+
+certified 500 median brackets
+certified 1000 median brackets
+certified 1500 median brackets
+certified 2000 median brackets
+certified 2500 median brackets
+certified 3000 median brackets
+certified 3500 median brackets
+certified 4000 median brackets
+{
+  "status": "PASS",
+  "integer_interval_bits": 128,
+  "certified_median_brackets": 4258,
+  "covered_real_intervals": 4256,
+  "compact_domain": [
+    "1/10",
+    "7"
+  ],
+  "smallest_margin_lower_numerator": 38316221661991044002598352939471477,
+  "margin_denominator": 340282366920938463463374607431768211456,
+  "seconds": 121.129
+}

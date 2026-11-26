@@ -1,0 +1,16 @@
+Verify Graffiti.pc 318 total-domination theorem
+Working directory: .
+Exit: 0
+Elapsed seconds: 8.29
+Output SHA-256: 28a1438303405c7130b20095a37f84a9aa75e489ab8871df33c372d20ae67d8c
+
+python3 results/graffiti-pc-318/verify.py
+
+n=2: examined 2, qualifying 1
+n=3: examined 8, qualifying 4
+n=4: examined 63, qualifying 26
+n=5: examined 848, qualifying 236
+n=6: examined 16384, qualifying 1371
+n=7: examined 401930, qualifying 5699
+sharpness: K_1 join (2K_2) has 4 missing edges, maximum even-distance 3
+PASS: 7337 qualifying of 419235 examined

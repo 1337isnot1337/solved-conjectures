@@ -1,0 +1,12 @@
+Check the Mazák–Zrubák lemmas for complete graphs minus an edge
+Working directory: .
+Exit: 0
+Elapsed seconds: 23.35
+Output SHA-256: 0785fc2386d4a97e43d08a5a1f0782d876ab31f09f94699624cd4a23e437990f
+
+python3 results/circular-index-complete-minus-edge/verify.py
+
+Part A, d = 4: 2160 proper 5-edge-colourings of K_5 - e, 180 with acyclic tight digraph; Lemmas 2-5 hold on all of them.
+Part B, d = 4: 3 edge orderings with property (P) up to automorphisms; 5 x 12 x 3 = 180 acyclic colourings, as in Part A.
+Part B, d = 6: no edge ordering of K_7 - e with property (P)  (23s)
+All checks passed.

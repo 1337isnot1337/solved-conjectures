@@ -1,0 +1,9 @@
+Check the independent monophonic product counterexample
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.91
+Output SHA-256: 5e2d79f249488f8f31ca1d1c639305dfe1d1fdba769b51034783b619aa479212
+
+python3 results/monophonic-product-nordhaus-gaddum/verify.py
+
+45 vertices; 322,899 induced-path states; 18,570 terminal orientations; all 18 exceptional triples are stars; 262,144 center sets; exact product 20 × 27 = 540 > 529.

@@ -1,0 +1,9 @@
+Additional docs/research-results/hill-luo-trinh-vindas-melendez/check_cube.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.63
+Output SHA-256: d4ee4f8f879bdcfdfe32e1bebc94e68792587e9d07e9b2acaaee13ebb4ae1a2e
+
+python3 docs/research-results/hill-luo-trinh-vindas-melendez/check_cube.py
+
+81 independent lattice-count identities, identifying 18 Ehrhart polynomials

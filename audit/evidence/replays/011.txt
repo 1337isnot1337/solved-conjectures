@@ -1,0 +1,9 @@
+Check Nathanson's coefficient-adjusted Sidon systems
+Working directory: .
+Exit: 0
+Elapsed seconds: 1.02
+Output SHA-256: f9fb48263fb38b4aa60e852451398a228a6af7c68e6c1d95684e478ade191f21
+
+python3 results/nathanson-sidon-systems/verify.py
+
+Verified 19 unrestricted positional systems, 84 bilinear fixtures, and 16 higher-arity balancing fixtures.

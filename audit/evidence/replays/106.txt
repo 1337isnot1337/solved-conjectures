@@ -1,0 +1,26 @@
+Verify all equality cases for eight lonely runners
+Working directory: .
+Exit: 0
+Elapsed seconds: 76.89
+Output SHA-256: bd5f4ce42fd525a34e80935191824c178eb85b19bc4e6527c52d6e0ddde77efd
+
+python3 results/tight-seven-speeds/verify.py
+
+Prime 251 passed (19 distinct-support representatives).
+Prime 257 passed (14 distinct-support representatives).
+Prime 263 passed (7 distinct-support representatives).
+Prime 269 passed (7 distinct-support representatives).
+Prime 271 passed (9 distinct-support representatives).
+Prime 277 passed (24 distinct-support representatives).
+Prime 281 passed (8 distinct-support representatives).
+Prime 283 passed (11 distinct-support representatives).
+Prime 293 passed (7 distinct-support representatives).
+Prime 307 passed (25 distinct-support representatives).
+Prime 311 passed (7 distinct-support representatives).
+Prime 313 passed (11 distinct-support representatives).
+Prime 317 passed (10 distinct-support representatives).
+Prime 331 passed (10 distinct-support representatives).
+Prime 337 passed (20 distinct-support representatives).
+Prime 347 passed (10 distinct-support representatives).
+Prime 349 passed (7 distinct-support representatives).
+All prime, norm, geometric lifting, and equality checks passed.

@@ -1,0 +1,10 @@
+Additional results/sagan-wilson-plactic-mode/check.py
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.03
+Output SHA-256: a290ac6c1154375d6b9864382552cee27200e41e1c2acd372fc57e4254c2c6bb
+
+python3 results/sagan-wilson-plactic-mode/check.py
+
+[1, 250, 4917, 29648, 75095, 88704, 43414, 4861, 1]
+PASS: n=10 counterexample and exact smaller modes

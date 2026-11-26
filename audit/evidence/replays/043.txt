@@ -1,0 +1,21 @@
+Check Johnson Pfaffian identities and indexing
+Working directory: .
+Exit: 0
+Elapsed seconds: 0.13
+Output SHA-256: 04cb400d5e2c10cdf959ae55a5cdcdddf539f53b9da559e165524867b11a768c
+
+python results/johnson-pfaffian/verify.py
+
+{
+  "status": "PASS",
+  "role": "supplementary exact identities and indexing checks",
+  "counts": {
+    "gauge_exponent_patterns": 4,
+    "uncrossing_patterns": 14,
+    "circular_matrices": 24,
+    "cyclic_gauges": 120,
+    "adjacent_pair_checks": 120,
+    "log_kernel_reconstructions": 32
+  },
+  "finite_checks_prove_universal_claim": false
+}
