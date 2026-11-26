@@ -6,6 +6,12 @@ Lean checks the finite uniform shifted arithmetic count law against the
 independent joint Poisson count law, for every event of the vector.
 [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
 
+## 2026-11-26 — Verify Gaschütz’s finite lifting lemma
+
+Lean proves the lift-count invariant for finite generating tuples and
+the ordered-pair corollary used in Shumyatsky’s proof.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify Shumyatsky’s actual single-factor lift
 
 Lean checks that the outer action factors through the socle quotient,

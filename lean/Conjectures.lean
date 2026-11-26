@@ -41,6 +41,7 @@ import Conjectures.ShumyatskyAbelianReduction
 import Conjectures.ShumyatskyCyclicNormalization
 import Conjectures.ShumyatskyCoprimeQuotient
 import Conjectures.ShumyatskySingleFactorLift
+import Conjectures.ShumyatskyGaschutz
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
