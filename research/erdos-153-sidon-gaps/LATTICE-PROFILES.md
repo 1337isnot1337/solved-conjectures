@@ -1,6 +1,6 @@
 # Erdős–Sárközy–Sós conjecture: lattice and autocorrelation constraints
 
-Research checkpoint for [issue #783](https://github.com/1337isnot1337/solved-conjectures/issues/783). The target is [Problem 2, p. 345 of the original paper](https://real.mtak.hu/110604/1/1-s2.0-S0022314X84710407-main.pdf#page=17), also [Erdős Problem 153](https://www.erdosproblems.com/153). This extends the [weak-profile obstruction](PROFILES.md), not the full conjecture. The finite identity below is an elementary convolution rearrangement; no priority is claimed for it. Here it gives a localized spacing-energy constraint with integer gap costs and residue-sensitive inequalities.
+Research checkpoint for [issue #783](https://github.com/1337isnot1337/solved-conjectures/issues/783). The target is [Problem 2, p. 345 of the original paper](https://real.mtak.hu/110604/1/1-s2.0-S0022314X84710407-main.pdf#page=17), also [Erdős Problem 153](https://www.erdosproblems.com/153). This extends the [weak-profile obstruction](PROFILES.md), not the full conjecture. The finite identity below is an elementary convolution rearrangement already used at shifts 1, 2, and 3 by [Tsoukalas et al., the proof of Erdős 152](https://arxiv.org/abs/2605.22763). Here it gives a localized spacing-energy constraint with integer gap costs and residue-sensitive inequalities.
 
 ## Statement
 
