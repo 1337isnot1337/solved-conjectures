@@ -46,7 +46,7 @@ In particular a coordinate can be decreased to zero with the remaining coordinat
 
 ## Breaker's strategy
 
-Call a vertex **live** if its host degree is at least $s$ and Breaker has not claimed any edge there. At a position after Breaker's move, or at the start, let $r_v$ be the Maker degree. Set $z_v=2^{\,r_v-(s-1)}$ if $v$ is live and set $z_v=0$ otherwise.
+Call a vertex **live** if its host degree is at least $s$ and Breaker has not claimed any edge there. At a position after Breaker's move, or at the start, let $r_v$ be the Maker degree. Set $z_v=2^{r_v-(s-1)}$ if $v$ is live and set $z_v=0$ otherwise.
 Breaker maintains $z\in\mathcal R(G)$. Initially this follows from the degree hypothesis and initialization with $x=1/(D+1)$. Whenever the invariant holds, every live vertex has $r_v\le s-2$.
 
 Suppose Maker takes $uv$. This cannot win immediately: a live endpoint increases by just one, hence reaches at most $s-1$, and no other vertex can newly qualify. Every live endpoint still has an unclaimed incident edge, since it has host degree at least $s$, no Breaker edge and at most $s-1$ Maker edges.
