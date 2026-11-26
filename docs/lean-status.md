@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Nathanson’s linear-form Sidon systems
+
+Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Lean theorem](../lean/Conjectures/NathansonSidonTheorems.lean) · [Kernel receipt](verification/lean-nathanson-sidon-20261126/receipt.json).
+
 ## Erdős–Gyárfás’s point-degree spectrum conjecture
 
 Lean bounds the degree spectrum in every finite linear space, rules out the proposed square-root deficit and proves the same linear bound for real planar point sets. [Lean proof](../lean/Conjectures/ErdosGyarfasSpectrumTheorems.lean) · [Kernel receipt](verification/lean-erdos-gyarfas-spectrum-20261126/receipt.json).
