@@ -6,6 +6,8 @@ The original conjecture in Section 5 of Yushuang Fan and Salvatore Tringali, *Po
 
 The endpoint is [`FanTringali.finite_spectrum_power_monoids`](../../lean/Conjectures/FanTringaliMonoid.lean):
 
+**Lean excerpt**
+
 ```lean
 variable {H : Type*} [Monoid H] [DecidableEq H]
   [IsDedekindFiniteMonoid H]

@@ -40,6 +40,8 @@ Its hypotheses are `h >= 2`, an actual finite graph with `2*h-1` vertices and
 `r < 2*h-1`. Its conclusion supplies an actual proper coloring `C'` and a
 `LinearEdgeOrder C'`. The latter contains an equivalence
 
+**Lean excerpt**
+
 ```lean
 G.edgeSet ≃ Fin (Fintype.card G.edgeSet)
 ```

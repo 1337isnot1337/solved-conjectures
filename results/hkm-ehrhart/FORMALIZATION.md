@@ -19,7 +19,7 @@ part from two to one.
 - [Geometry module](../../lean/Conjectures/HKMEhrhartGeometry.lean):
   Lean defines the literal symmetric edge polytope as the convex hull of
   the oriented edge vectors across parts. Every integral point in its
-  $m$th dilate has coordinate sum zero, total positive mass at most $m$,
+  dilate of order $`m`$ has coordinate sum zero, total positive mass at most $m$,
   and absolute mass at most $m$ in each part. The literal count is finite.
 - [Reverse geometry module](../../lean/Conjectures/HKMEhrhartSufficiency.lean):
   Lean proves the converse for every nonnegative integer dilation and every

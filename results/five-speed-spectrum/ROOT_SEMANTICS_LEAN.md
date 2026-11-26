@@ -96,6 +96,8 @@ relation and retain another zero form.
 bases for the folded `{1,3,4}` pattern. It does not enumerate pairs of the 80
 forms. Its result implies
 
+**Lean excerpt**
+
 ```lean
 TwoShortRelations p q ∨ Folded134 p q
 ```
