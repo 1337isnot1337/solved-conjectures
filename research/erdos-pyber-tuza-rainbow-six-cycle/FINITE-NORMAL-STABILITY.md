@@ -1,0 +1,23 @@
+# Erdős–Pyber–Tuza rainbow six-cycle conjecture
+
+**Uniform stability for finite normal Cayley graphons.** Fix ε>0. There is δ>0 independent of the size and group such that a balanced inverse-symmetric central six-color palette on any finite group, with ordered rainbow six-cycle density below δ, differs from a pure parity palette on at most ε of edge mass. More precisely, there is an index-two character and half of the hues assigned to each coset such that the average total color mass on the wrong coset is at most ε. This is not asserted for noncentral palettes or arbitrary balanced graphs.
+
+The [exact compact normal classification](COMPACT-NORMAL-PARITY.md) did not by itself give uniformity as the finite group varies. This note adds it by adapting the [finite group removal lemma of Kráľ–Serra–Vena](https://arxiv.org/abs/0804.4847) to retain centralized, inverse-symmetric supports.
+
+## A symmetry-preserving deletion
+
+Let six inverse-symmetric central subsets A_i of a finite group G have o(|G|⁵) ordered tuples of product one along a sequence of groups. Group removal deletes o(|G|) elements from each set, leaving A_i' whose product misses one. For each i, discard every conjugacy class of A_i that lost at least a 1/7 fraction, and also discard the inverses of these classes. The resulting B_i are inverse-symmetric and central. The number of deletions from A_i is at most 14 times the number of deletions in the ordinary removal step.
+
+If a tuple from the B_i had product one, conjugate all six of its elements by one uniform random group element. Each individual conjugate lies in A_i' with probability greater than 6/7, because it is uniform on its retained conjugacy class. A union bound gives positive probability all six lie there at once, contradicting the product-free conclusion for the A_i'. Therefore the B_i still have no tuple of product one. This proof uses no statistical independence of the six conjugates.
+
+## Uniform bias margins
+
+It suffices to rule out any sequence with rainbow density tending to zero but with every parity mismatch greater than ε. In the [Fourier argument](COMPACT-NORMAL-PARITY.md), pick a fixed real r with 2/3<r<5⁻¹/⁴. If all order-two characters had mean absolute colour bias at most r, the normalized rainbow density would have lower bound 1−5r⁴>0. Hence eventually some sign χ has D>r.
+
+For this sign, the positive and negative biases have equal absolute sums 3D, each exceeding 3r>2. There are three of each sign. Assign hues to their heavier cosets. The wrongly placed mass is (1−D)/2: hue i contributes (1−|a_i|)/12. Since we assumed this mass exceeds ε, D<1−2ε. Choose an even tuple of cosets by reversing the least-biased hue, as in the compact proof. Its lighter selected mean is at least (1−D)/6>ε/3. The five heavier means exceed 1/6 by a fixed margin since each absolute bias exceeds 3r−2. On each original sign side of three hues, at least two biases exceed (3r−1)/2>1/2. At least four such hues remain heavier after reversing the least-biased one. Consequently four selected means exceed 1/4 by a fixed margin. In the original side whose choices were not switched, each pair of heavier mean values has sum exceeding 1/2 by a fixed margin because its biases sum to more than 3r−1>1. The selected six means sum to at least 1+2r/3>1+4/9.
+
+Let h_i be the original f_i restricted to the selected coset. For a sufficiently small fixed θ>0, take A_i={h_i>θ}. The means of h_i retained on these supports decrease by at most θ, so all the preceding strict margins survive, with room to spare. Since the six original f_i contribute a product at least θ⁶ on each tuple from the A_i of product one, these tuples number o(|G|⁵). Apply the preceding symmetry-preserving removal and restrict h_i further to B_i, losing o(1) conditional mean in each fiber.
+
+The resulting B_i and weights satisfy the finite obstruction lemma of the compact normal proof: the means retain their three strict properties, the product misses one, and the weights satisfy pointwise palette capacity even before quotienting because we only deleted mass from the original palette. The lemma contradicts existence of the tuple. This proves that for every ε the asserted positive δ exists, uniformly over finite groups and fractional palettes.
+
+The six-color density and means here are graphon quantities with counting probability (including the diagonal atom), not a claim for approximate balances in odd-order complete graphs. The identification of the parity obstruction is nonperturbative; the quantitative dependence of δ on ε is not evaluated. [Coordination #870](https://github.com/1337isnot1337/solved-conjectures/issues/870).
