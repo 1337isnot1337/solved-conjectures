@@ -27,6 +27,13 @@ The ratio of the sizes at marker-palette sizes h+1 and h, as long as both are ad
 ```
 This exceeds one exactly when h<(N−k+1)/k. In particular h=ceil((N−k+1)/k) is optimal among these marker sets (with a tie to h+1 at equality). For each fixed k≥3 and d tending to infinity, the family has asymptotic density $k^{-1}(1-k^{-1})^{k-1}$ among all length-k permutation words, whereas the conjectured value has density tending to zero. The ratio to the conjectured value is unbounded.
 
-For comparison, for all stated parameters the density of any general position set is at most 2/(2k+1). Take the word u=(0,1,…,k−1) and its reversal v. Their only possible suffix-prefix overlap is one symbol; this length-(k−1) candidate walk is illegal because its first appended symbol k−2 is still in u. In any walk of length at least k, the last symbol of u and the first of v must be separated by at least k+1 in the encoding, forcing length at least 2k. Inserting k distinct fresh symbols between these disjoint windows gives a legal walk of length 2k. Apply a uniform alphabet permutation to this geodesic. Each of its 2k+1 windows is uniform among all vertices, and each image geodesic has at most two vertices of a general position set. The resulting expectation gives the upper density bound.
+For comparison, for all stated parameters the density of any general position set is at most 2/(2k+1). Take the word u=(0,1,…,k−1) and its reversal v. Their only possible suffix-prefix overlap is one symbol; this length-(k−1) candidate walk is illegal because its first appended symbol k−2 is still in u. In any walk of length at least k, the last symbol of u and the first of v must be separated by at least k+1 in the encoding, forcing length at least 2k. Inserting k distinct fresh symbols between the two windows gives a legal walk of length 2k. Apply a uniform alphabet permutation to this geodesic. Each of its 2k+1 windows is uniform among all vertices, and each image geodesic has at most two vertices of a general position set. The resulting expectation gives the upper density bound.
+
+Combining the two arguments gives the correct order of magnitude uniformly in k and d. Take h=floor(N/k), so h/N≥2/(3k). Conditional on the last letter being in B, a uniform word avoids the other h−1 markers in its first k−1 positions with probability
+```math
+\prod_{j=0}^{k-2}\left(1-\frac{h-1}{N-1-j}\right)
+\ge (1-1/k)^{k-1}\ge 1/e,
+```
+because h−1≤(N−k)/k and N−1−j≥N−k+1. Hence the fraction in general position is between 2/(3ek) and 2/(2k+1) for all N≥3k, not just at fixed word length.
 
 The exact value for all k≥3 remains open. The result refutes the stated equality, not the valid lower bound of Theorem 3.6 and not the separate Kautz digraph question.
