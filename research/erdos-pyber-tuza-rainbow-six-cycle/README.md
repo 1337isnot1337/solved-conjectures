@@ -9,6 +9,8 @@
 
 - [Global parity-cut stability](PARITY-CUT.md): a counterexample must stay a fixed positive edit distance from every parity cut, even with concentrated error vertices.
 - [Two broad colors force parity](TWO-BROAD.md): if two colors' lower support degrees add to nearly one, the four remaining colors induce commuting involutions on at most four joint types. This forces the exact parity cut.
+- [Deterministic reduction](DETERMINISTIC.md): circle refinement preserves forbidden patterns and any resulting parity cut descends to the original graphon.
+- [No globally missing triangle color](MISSING-TRIANGLE-COLOR.md): each color in a zero-rainbow-six-cycle graphon occurs in positive-density rainbow triangles.
 - [Graphon criterion](GRAPHON-CRITERION.md): it is enough to prove that every balanced zero-density six-color graphon has a disconnected three-color union.
 
 The $C_6$ assertion is the open cycle clause of the Erdős–Pyber–Tuza question in Erdős, *Some of my favorite solved and unsolved problems in graph theory*, 1993, p. 346, and a subproblem of [Erdős #811](https://www.erdosproblems.com/811). The six-color rainbow $K_4$ clause has already been [disproved by Clemen and Wagner](https://arxiv.org/abs/2303.15476). The disjoint-triangle subproblem is tracked separately in [#809](https://github.com/1337isnot1337/solved-conjectures/issues/809).
