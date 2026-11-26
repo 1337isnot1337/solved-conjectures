@@ -10,7 +10,7 @@ Suppose $H$ is an isometric subgraph of $G$ with at least two vertices and each 
 $$
 d_G(x,z)=d_G(x,g)+d_H(g,z).
 $$
-Every terminal set $S$ in $H$ is terminal in $G$. It is general position by isometry; vertices of $H\setminus S$ retain their witnesses. If $g\notin S$, append the gate's witness inequality with equality to the displayed gate identities to obtain $d_G(x,b)=d_G(x,a)+d_H(a,b)$ for the same $a,b$. If $g\in S$, choose any $b\in S\setminus\{g\}$ and use the gate equality directly with $a=g$. Such a $b$ exists because no singleton is terminal in a connected graph of order at least two.
+Every terminal set $S$ in $H$ is terminal in $G$. It is general position by isometry; vertices of $H\setminus S$ retain their witnesses. If $g\notin S$, combine the gate's endpoint witness with the displayed gate identities to obtain $d_G(x,b)=d_G(x,a)+d_H(a,b)$ for the same $a,b$. If $g\in S$, choose any $b\in S\setminus\{g\}$ and use the gate equality directly with $a=g$. Such a $b$ exists because no singleton is terminal in a connected graph of order at least two.
 
 A connected graph with a gated edge therefore has a terminal set of size two; in a bipartite graph every edge is gated, since distances from any vertex to the endpoints differ by one. Gated factor layers also recover the terminal-set transfer for Cartesian products. More generally, if a single block in a connected graph has a terminal set, that set works in the whole graph: each vertex outside the block reaches it through its articulation gate. For a smallest hypothetical counterexample this says more generally that every proper gated subgraph is a singleton (assuming nonempty subgraphs).
 
@@ -38,6 +38,10 @@ Conversely, let $\widehat S$ be any terminal set in $G$, set $S_v=\widehat S\cap
 If $v\in S$ has a selected neighbor, then $S_v$ is a clique: two nonadjacent selected vertices there and one selected vertex in the neighboring module would be collinear. For any unselected point $x$ in $H_v$, two witnesses outside its module cannot work. If they are in different modules, they would make three vertices of $S$ collinear; if they lie in one module, their distances to $x$ are equal. Two witnesses inside $S_v$ also cannot work in this case if $x$ is adjacent to everyone in $S_v$. A witness pair using one $u\in S_v$ and one $w$ in another module works exactly when $d(x,u)=2$, the other module is adjacent to $v$, and $w$ is the middle vertex. Thus $x$ must have a nonneighbor in $S_v$, giving maximality of the clique. If $v$ has no selected neighboring module, a cross-module witness of this form is impossible, so $S_v$ must be terminal for the 1/2 metric.
 
 This proves the exact characterization: terminal sets of $G$ are precisely those obtained by the two rules from terminal sets of $Q$. In particular, existence is equivalent for $G$ and $Q$. It also gives exact minimum and maximum cardinalities. For a fixed terminal $S$ in the quotient, take the sum over its occupied modules of the minimum (respectively maximum) size of a maximal clique when $v$ has a selected neighbor, and the minimum (respectively maximum) size of a 1/2-metric terminal set otherwise. Minimize (respectively maximize) these sums over terminal $S$ in the quotient.
+
+## Independent regression
+
+Run `python3 check_lifts.py` from this directory. It enumerates terminal sets directly from shortest-path distances and compares them with the full module prediction on 430 substitutions. It also checks unchanged transfer on 43 gated extensions. The finite check is a regression; the arguments above hold at every order.
 
 ## Consequences and prior scope
 
