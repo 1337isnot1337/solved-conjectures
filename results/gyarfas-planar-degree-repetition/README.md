@@ -1,6 +1,6 @@
 # Gyárfás’s planar degree-repetition problem
 
-**Lean status:** none
+**Lean status:** partial. Lean constructs 16 noncollinear rational points in the real affine plane and proves that every spanned-line degree occurs at most twice. Degree 9 occurs twice. This answers the original existence question. The extension to every order from 16 and its exact count of distinct degrees have a written proof. [Verified scope](FORMALIZATION.md).
 
 For every integer $n\ge16$, there is a noncollinear set of $n$ rational affine points in which each number of incident spanned lines occurs at most twice. This answers Gyárfás’s existence question. The construction has $(3/4)n+O(1)$ different point degrees. The author attributes the underlying irregularity questions to Paul Erdős. [Gyárfás (2002), §4, Problem 4](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf)
 

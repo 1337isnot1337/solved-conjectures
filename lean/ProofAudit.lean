@@ -9,6 +9,19 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `GyarfasPlanar.locus_injective,
+    `GyarfasPlanar.spanned_line,
+    `GyarfasPlanar.card_spannedLines,
+    `GyarfasPlanar.realPoint_injective,
+    `GyarfasPlanar.direction_realPoint,
+    `GyarfasPlanar.card_real_lines,
+    `GyarfasPlanar.multiplicity_real,
+    `GyarfasPlanar.axis_triangle_noncollinear,
+    `GyarfasPlanar.multiplicity_from_points,
+    `GyarfasPlanar.sixteen_count,
+    `GyarfasPlanar.sixteen_rational_multiplicity,
+    `GyarfasPlanar.sixteen_attains_two,
+    `GyarfasPlanar.sixteen_real,
     `MeylenderThalmaier.axes_apply,
     `MeylenderThalmaier.band_measurable,
     `MeylenderThalmaier.band_mem,
