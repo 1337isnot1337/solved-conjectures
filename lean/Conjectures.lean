@@ -1,3 +1,5 @@
+import Conjectures.KovalevHardySeparation
+import Conjectures.KovalevRationalCertificate
 import Conjectures.NathansonSidonDiameter
 import Conjectures.NathansonSidonDigits
 import Conjectures.NathansonSidonGcd
