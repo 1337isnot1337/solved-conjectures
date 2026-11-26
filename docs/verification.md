@@ -8,6 +8,10 @@ Run `python3 results/alexandersson-graphical-dist/check.py` and `python3 results
 
 Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all labelled graphs through order six and 2,000 seeded larger graphs. The [written proof](../results/general-position-nordhaus-gaddum/PROOF.md) is uniform; the [audit](../results/general-position-nordhaus-gaddum/AUDIT.md) separates the geodesic and induced-path targets.
 
+## Brown–Cameron’s independence-root sector and stability problems
+
+Run `python3 results/brown-cameron-stability/verify.py` for exact moment and avoidance checks on all 1,024 labelled graphs on five vertices at three edge densities, plus six finite rational probability certificates. This is the standard-library check run in CI. For an optional local Z3 check of four algebraic claims, install `z3-solver==4.16.0.0` and run `python3 results/brown-cameron-stability/verify_z3.py`. The [written proof](../results/brown-cameron-stability/PROOF.md) establishes the asymptotic bounds without either script. [Review and local replay output](../results/brown-cameron-stability/REVIEW.md) · [Source audit](../results/brown-cameron-stability/AUDIT.md).
+
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal proof and verification receipt](../results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).

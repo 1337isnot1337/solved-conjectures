@@ -36,6 +36,7 @@ STATUS_LABELS = {
     "none": "Lean: not formalized",
 }
 EXTERNAL_CREDIT = {
+    "brown-cameron-stability": ("@adamben04", "https://github.com/adamben04"),
     "graffiti-pc-318": (
         "@JesterInABarrel",
         "https://x.com/JesterInABarrel/status/2123233964827812334",
@@ -63,6 +64,7 @@ SOURCE_TITLES = {
 STATUS_LABEL_SLUGS = {
     "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
     "Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture": "general-position-nordhaus-gaddum",
+    "Brown–Cameron’s independence-root sector and stability problems": "brown-cameron-stability",
     "Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture": "monophonic-product-nordhaus-gaddum",
     "Mallik–Diwan–Kothari degree-count conjecture": "mallik-diwan-kothari-degree-count",
     "Nathanson’s linear-form Sidon systems conjecture": "nathanson-sidon-systems",
