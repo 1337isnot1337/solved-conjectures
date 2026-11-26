@@ -1261,6 +1261,21 @@ modules=(
   Conjectures.CircularCompleteMinusEdgeRunSaturation
   Conjectures.CircularCompleteMinusEdgeSpecialRuns
   Conjectures.CircularCompleteMinusEdgeStepFour
+  Conjectures.CircularCompleteMinusEdgeActualColumnCounts
+  Conjectures.CircularCompleteMinusEdgeActualColumnPeriod
+  Conjectures.CircularCompleteMinusEdgeColumnArithmetic
+  Conjectures.CircularCompleteMinusEdgeNormalColumnLabels
+  Conjectures.CircularCompleteMinusEdgeReverseOrder
+  Conjectures.CircularCompleteMinusEdgeReverseRuns
+  Conjectures.CircularCompleteMinusEdgeRunBoundary
+  Conjectures.CircularCompleteMinusEdgeRunExtrema
+  Conjectures.CircularCompleteMinusEdgeSelectedColumns
+  Conjectures.CircularCompleteMinusEdgeSpecialColumnBackward
+  Conjectures.CircularCompleteMinusEdgeSpecialColumnForward
+  Conjectures.CircularCompleteMinusEdgeSpecialColumnPairs
+  Conjectures.CircularCompleteMinusEdgeSpecialPositionCount
+  Conjectures.CircularCompleteMinusEdgeTableColumns
+  Conjectures.CircularCompleteMinusEdgeTableResidues
   Conjectures.CircularCompleteMinusEdgeVertexColors
   Conjectures.CircularCompleteMinusEdgePath
   Conjectures.CircularCompleteMinusEdgeRotation
