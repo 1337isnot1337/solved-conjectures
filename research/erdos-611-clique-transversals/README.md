@@ -1,6 +1,6 @@
 # Bollobás–Erdős–Tuza maximal-independent-set conjecture
 
-**Open.** The construction below shows that even with all maximal independent sets of size at least $cn$, their transversal number can be $(1-\sqrt c)\sqrt n+O(1)$ or larger. This improves the order of the published lower-bound construction located in the literature audit, but it does not refute a sublinear upper bound.
+**Open.** The construction below shows that even with all maximal independent sets of size at least $cn$, their transversal number can be $(1-\sqrt c)\sqrt n+O(1)$ or larger. This improves the order of the lower-bound construction located in the literature audit, but it does not refute a sublinear upper bound.
 
 ## Target
 
@@ -30,6 +30,10 @@ Take $0<c<1$, choose $L=\lceil\sqrt c\,m\rceil$ and $r=m-L$ for sufficiently lar
 i(G)=r+L^2\ge cn,\qquad \tau(G)=m-L+1\ge (1-\sqrt c)\sqrt n.
 ```
 For arbitrary sufficiently large $n$, let $m=\lfloor\sqrt n\rfloor$ and use $L=\lceil\sqrt{cn}\rceil$, $r=m-L>0$, then add $n-m^2$ additional twins to any label classes of $I$. Every class is still nonempty; the same transversal proof works unchanged. The minimum maximal independent-set size has not decreased: the bound $b+(m-a)L$ still holds. As before this is at least $r+L^2\ge cn$. Hence there is a deterministic example on every sufficiently large $n$ with $\tau(G)\ge (1-\sqrt c)\sqrt n-O(1)$.
+
+## Recursive extension
+
+[Graph substitution gives a near-linear lower bound](RECURSIVE.md) for every fixed $c<1$ and every sufficiently large order. In particular, no fixed power saving $O_c(n^{1-\epsilon})$ is possible. The original sublinear question remains open.
 
 ## Source and limits
 
