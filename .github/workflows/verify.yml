@@ -20,6 +20,8 @@ jobs:
           python3 results/alexandersson-graphical-dist/check_unions.py
       - name: Check the independent general-position inequalities
         run: python3 results/general-position-nordhaus-gaddum/verify.py
+      - name: Check the Brown–Cameron independence-root obstructions
+        run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample
         run: python3 results/monophonic-product-nordhaus-gaddum/verify.py
       - name: Check the degree-count counterexamples for minimal extendability

@@ -16,6 +16,10 @@ Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m �
 
 Both general-position assertions of Conjecture 9.3 are true. A matching that avoids a prescribed vertex in each critical block and a nearest-unused ordering give the stronger mixed sum bound. [Proof](results/general-position-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/general-position-nordhaus-gaddum/AUDIT.md) · [Issue #851](https://github.com/1337isnot1337/solved-conjectures/issues/851).
 
+## 2026-11-26 — Brown–Cameron’s independence-root sector and stability problems
+
+[@adamben04](https://github.com/adamben04) shows that at every fixed interior edge density the probability of an independence root with positive real part stays bounded away from zero along a subsequence. The same mechanism disproves the log-concavity assertion at uniform density and gives explicit limsup lower bounds for both events. [Proof](results/brown-cameron-stability/PROOF.md) · [Source and priority audit](results/brown-cameron-stability/AUDIT.md) · [Review and exact checks](results/brown-cameron-stability/REVIEW.md).
+
 ## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Lean verification](results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
