@@ -28,6 +28,21 @@ For $r\ge v/u$, the largest step is $s_h$: for $i<h$ the ratio $s_h/s_i=(b_i/v)r
 
 Nathanson’s §3 already illustrates ordinary mixed radix with special weights. Here the base is chosen from a fixed divisibility progression and each coordinate's step absorbs its prescribed coefficient. The positional-number-system principle itself is classical.
 
+## Removing the smallest-coefficient loss
+
+In fact the lower constant improves to $(v/g_0)^{1/h}$, where $g_0=\gcd_i|c_i|$. Divide the form by $g_0$ and reflect negative-coordinate sets in the interval $[1,N]$, neither of which changes injectivity. Write the resulting positive coefficients as $b_i$, now of gcd one, put $v=\max b_i=b_h$, and put $M=\operatorname{lcm}_i b_i$.
+
+Assign each maximal prime power dividing $M$ to a coordinate whose coefficient is coprime to that prime; the gcd-one condition ensures a choice. Let $M_i$ be the product of the prime powers assigned to coordinate $i$. These products are pairwise coprime, their product is $M$, and $\gcd(b_i,M_i)=1$. Empty products equal one.
+
+Take $q$ an arbitrarily large multiple of $M$, put $r_i=q/M_i$ and $R_i=\prod_{j<i}r_j$, and use, before translating to positive integers,
+\[
+ A_i=\left\{\frac{M}{M_i}d_i+\frac{M}{b_i}R_i x_i:
+                0\le d_i<M_i,\ 0\le x_i<r_i\right\}.
+\]
+The residue of the weighted output modulo $M_i$ recovers $d_i$, because all other contributions are multiples of $M_i$ and $b_i M/M_i$ is invertible there. For $M_i=1$ the digit is predetermined. In particular each coordinate map is also injective in its own digits. Once the low contributions are subtracted, division by $M$ gives $\sum_i R_i x_i$, with unique mixed-radix digits $x_i$. Each coordinate has size $M_i r_i=q$ and the weighted representation is unique.
+
+The low term in each coordinate is bounded in terms of the fixed form. All high contributions for $i<h$ have size $O_\varphi(q^{h-1})$, and for $i=h$ the high contribution is at most $M R_h r_h/v=q^h/v$. Therefore all coordinate sets, translated by one and reflected as needed, lie in $[1,N]$ if $q^h\le v(N-K)$, for a sufficiently large fixed $K$ and all large $N$. The multiples of $M$ have bounded spacing. Restoring the gcd gives the claimed stronger lower constant.
+
 ## A sharp bilinear consequence
 
 When $h=2$, the limit is in fact
