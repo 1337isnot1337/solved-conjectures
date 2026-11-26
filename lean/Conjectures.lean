@@ -137,6 +137,7 @@ import Conjectures.TransportationTables
 import Conjectures.TransportationTheorems
 import Conjectures.TransportationTwelveRoots
 import Conjectures.TransportationVertices
+import Conjectures.AsgarliGhiocaYipBlockingPencil
 import Conjectures.MallikDegreeCounterfamily
 import Conjectures.MallikDegreeCounts
 import Conjectures.MallikDegreeEdgeMatchings
@@ -2058,3 +2059,8 @@ import Conjectures.BursteinA218225TreeY
 import Conjectures.BursteinA218225Series
 import Conjectures.BursteinA218225Kernel
 import Conjectures.BursteinA218225
+import Conjectures.ChernFuLinThreeStatistic
+import Conjectures.GawronUlasPartitionSeries
+import Conjectures.GawronUlasPartitionCusps
+import Conjectures.GawronUlasPartitionBounds
+import Conjectures.GawronUlasPartitionSigns

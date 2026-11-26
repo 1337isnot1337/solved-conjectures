@@ -461,6 +461,13 @@ run_cmd do
     `TransportationEhrhart.elementary_coordinate,
     `TransportationEhrhart.direction_surjective,
     `TransportationEhrhart.affine_dimension,
+    `Conjectures.AsgarliGhiocaYip.exists_regular_seeds,
+    `Conjectures.AsgarliGhiocaYip.single_graph_missing_lines,
+    `Conjectures.AsgarliGhiocaYip.seed_ordering_at_zero,
+    `Conjectures.AsgarliGhiocaYip.missing_lines_of_ordering_estimate,
+    `Conjectures.AsgarliGhiocaYip.blockingNumber_log_upper,
+    `Conjectures.AsgarliGhiocaYip.pencil_bounds_of_ordering_estimate,
+    `Conjectures.AsgarliGhiocaYip.point_count_after_exclusions,
     `MallikDegree.marked_card,
     `MallikDegree.family_minimal,
     `MallikDegree.exact_counts,
@@ -2522,6 +2529,7 @@ run_cmd do
     `ThueMorseValuation.lifted_coeff,
     `ThueMorseValuation.uniform_witness,
     `ThueMorseValuation.not_blockValuation_of_ge_eleven,
+    `GawronUlasPartitionSigns.gawron_ulas_partition_signs,
     `FerroniHigashitani.oldPoint_idp,
     `FerroniHigashitani.refined_closed_translate,
     `FerroniHigashitani.refined_strict_translate,
@@ -13511,7 +13519,8 @@ run_cmd do
     `Conjectures.BursteinA218225.countX_eq_countY,
     `Conjectures.BursteinA218225.seriesX_equation,
     `Conjectures.BursteinA218225.seriesY_equation,
-    `Conjectures.BursteinA218225.series_unique]
+    `Conjectures.BursteinA218225.series_unique,
+    `Conjectures.ChernFuLinThreeStatistic.equidistribution]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

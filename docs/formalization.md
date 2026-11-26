@@ -20,6 +20,10 @@ Complete for all six matrices of Conjecture 4.1 at every integer parameter `m �
 
 Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Lean theorems and verification receipt](../results/alexandersson-transportation/FORMALIZATION.md).
 
+## Asgarli–Ghioca–Yip blocking-pencil problem
+
+Lean proves the logarithmic upper bound over every finite field, counts regular seeds and gives at least $`q(q-1)/d`$ missing lines for one degree-$`d`$ graph. For a growing family with a common leading coefficient, the missing-line bound follows from `RegularOrderingEstimate`; the estimate itself remains in the written proof. [Lean theorems and receipt](../results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
+
 ## Mallik–Diwan–Kothari degree-count conjecture
 
 Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Lean theorems and verification receipt](../results/mallik-diwan-kothari-degree-count/FORMALIZATION.md).
@@ -71,6 +75,10 @@ Complete for both written conclusions. The literal count has exact degree `2r` i
 ## Shifted Lonely Runner counterexamples
 
 Lean verifies the exact maximum at each of the 40 reported sizes, including attainment at a rational time. The upper bound holds at every real time. [Proof and reproduction](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).
+
+## Chern–Fu–Lin’s three-statistic equidistribution conjecture
+
+Lean proves Conjecture 6.1 for the two literal permutation classes, including the full set of minimum positions. The proof counts the minimum-split codes with their genuine weights and evaluates the marked maximum-insertion cuts. [Theorem, proof map and verification](../results/chern-fu-lin-three-statistic/FORMALIZATION.md).
 
 ## Burstein’s A218225 enumeration conjecture
 
@@ -295,6 +303,10 @@ The [complete Lean formalization](../results/hajdu-sarkozy-shifted-products/FORM
 
 The twenty-four-module closure, comprising thirteen new modules and eleven unchanged dependencies, passed strict builds, the complete all-owned/private axiom audit, and exact stock-kernel replay. All fifty-three required endpoints are checked, and only the three standard axioms occur. The [independent review](../results/hajdu-sarkozy-shifted-products/LEAN_REVIEW.md), [proof receipt](../results/hajdu-sarkozy-shifted-products/verification/receipt.json), and [publication binding](../results/hajdu-sarkozy-shifted-products/verification/publication-binding.json) distinguish the proof gate from metadata-only registration checks. The optional extension to more than two variables is not separately formalized. Existing credits, priority uncertainty, and catalogue rank are retained; reused dependencies and corollaries are not additional results.
 
+
+## Gawron–Ulas’s partition-sign nonperiodicity conjecture
+
+Complete for Conjecture 4.3. Lean derives the analytic series from unordered partition multiplicities and proves that a finite Fourier expansion of periodic signs would contradict the oblique growth rate. [Lean scope and receipt](../results/gawron-ulas-partition-signs/FORMALIZATION.md).
 
 ## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
 

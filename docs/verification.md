@@ -36,6 +36,10 @@ Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all la
 
 Run `python3 results/brown-cameron-stability/verify.py` for exact moment and avoidance checks on all 1,024 labelled graphs on five vertices at three edge densities, plus six finite rational probability certificates. This is the standard-library check run in CI. For an optional local Z3 check of four algebraic claims, install `z3-solver==4.16.0.0` and run `python3 results/brown-cameron-stability/verify_z3.py`. The [written proof](../results/brown-cameron-stability/PROOF.md) establishes the asymptotic bounds without either script. [Review and local replay output](../results/brown-cameron-stability/REVIEW.md) · [Source audit](../results/brown-cameron-stability/AUDIT.md).
 
+## Gawron–Ulas’s partition-sign nonperiodicity conjecture
+
+The [Lean verification receipt](../results/gawron-ulas-partition-signs/verification/receipt.json) covers the four-module closure for Conjecture 4.3. The [formalization page](../results/gawron-ulas-partition-signs/FORMALIZATION.md) gives the statement, scope, and commands for strict compilation, all-owned axiom auditing, and stock-kernel replay.
+
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal proof and verification receipt](../results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
@@ -55,6 +59,8 @@ The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems)
 ## Asgarli–Ghioca–Yip blocking-pencil problem
 
 Run `python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py` for 266,184 shift sets over eight fields, 367 regular seed instances, 8,577 graph–line intersections and both squarefree quartic twists without rational roots over the field of order three. A second researcher checked the general proofs and the order-32 hyperplane computation. [Proof](../results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Independent review and source audit](../results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
+
+The [partial Lean formalization](../results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md) proves the upper bound and reduces the growing-family lower bound to a uniform point count. The [five-module receipt](../results/asgarli-ghioca-yip-blocking-pencil/verification/receipt.json) records strict compilation, the transitive axiom audit and stock kernel replay.
 
 ## Mallik–Diwan–Kothari degree-count conjecture
 
@@ -897,6 +903,8 @@ The optional SAT search is not needed for verification. The [scoped Lean replay]
 
 Run `python3 results/shifted-lonely-runner-counterexamples/generate_lean.py --check` to compare the Lean witnesses with all 40 records in the published JSON. The [target replay command](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md) rebuilds the proof of the real-time maxima, audits every declaration and replays the stock kernel. For an independent rational calculation run `python3 results/shifted-lonely-runner-counterexamples/verify.py --full`. Its `--quick` option checks arc coverage for every record and recomputes the exact maximum for $18\le n\le24$ and $n=41$.
 
+Run `python3 results/shifted-lonely-runner-counterexamples/verify_frozen_extension.py` to check the exact optimum, the full interval of optimal phases and the stability margin for adding one runner to the fixed 57-runner seed. [Statement and proof](../results/shifted-lonely-runner-counterexamples/FROZEN_EXTENSION.md).
+
 ## Baricz–Pogány coefficient positivity
 
 The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The full coefficient theorem and source-recurrence endpoint are Lean-verified; the [local receipt](verification/lean-named-20261121/baricz-receipt.json) records strict source compilation, the all-owned axiom audit, and stock-kernel replay.
@@ -1150,6 +1158,10 @@ becomes complete from this reduction.
 
 
 
+
+## Chern–Fu–Lin’s three-statistic equidistribution conjecture
+
+The [formalization page](../results/chern-fu-lin-three-statistic/FORMALIZATION.md) gives the target build, all-owned axiom audit, stock-kernel replay, and a separate literal statement check for Conjecture 6.1. The [original audit](../results/chern-fu-lin-three-statistic/AUDIT.md) records the finite checks and symbolic certificate for the written proof.
 
 ## Chern–Fu–Lin joint Eulerian exact certificate
 

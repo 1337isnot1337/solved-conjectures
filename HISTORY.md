@@ -36,6 +36,10 @@ Lean proves the root comparison for indices 6–50 at every real parameter at le
 
 The graphical dist polynomial of an ordered graph can have nonreal roots. A finite witness has 71 vertices and 310 edges. A second construction gives arbitrarily many distinct nonreal roots on connected chordal graphs of treewidth two. [Proof](results/alexandersson-graphical-dist/proof.md) · [Source audit](results/alexandersson-graphical-dist/sources.md) · [Independent review](results/alexandersson-graphical-dist/review.md) · [Original question](https://github.com/PerAlexandersson/RealRooted/issues/2641). Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Lean record](results/alexandersson-graphical-dist/FORMALIZATION.md).
 
+## 2026-11-26 — Lean verification of Gawron–Ulas’s partition-sign conjecture
+
+For parts congruent to 1 modulo 3, Lean proves that the signs of the even-minus-odd partition counts are not eventually periodic. The stronger progression-by-progression assertions remain in the written proof. [Lean scope and receipt](results/gawron-ulas-partition-signs/FORMALIZATION.md).
+
 ## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
 
 Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m ≥ 2` and every finite minor: total nonnegativity of `A(n, k)`, `B(n, k)`, and their row reversals, and strict total positivity of `A(n + k, k)` and `B(n + k, k)`. The self-contained five-module closure proves Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch, and passed strict compilation, the 322-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/wang-yang-fuss-narayana/FORMALIZATION.md).
@@ -59,6 +63,8 @@ Published the complete research records from eleven open problems in the [partia
 ## 2026-11-26 — Asgarli–Ghioca–Yip blocking-pencil problem
 
 The minimum number of vertical translates of a fixed monomial graph that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
+
+Lean verifies the logarithmic upper bound, the regular-seed count and the number of lines missed by a single graph. The lower bound for growing families remains conditional on a uniform estimate for Frobenius-compatible root orderings. [Lean scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
 
 ## 2026-11-26 — Mallik–Diwan–Kothari degree-count conjecture
 
@@ -1122,7 +1128,7 @@ Four later proof packages targeted conjectures already present in the collection
 - [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/): Oblique root-of-unity growth proves each sign occurs infinitely often on every index progression, for all coprime odd permitted-part steps at least three.
 - [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/): Exact dyadic Fourier magnitudes refute the logarithmic bound for every singleton start and give the sharp logarithm-squared constant.
 - [Ćurgus–Mascioni’s Fréchet root-matching extremizer question](results/curgus-mascioni-frechet/): Proves general attainment and the exact lower-degree loss at infinity, refutes general uniqueness, and determines the source cubic value and unique extremizer.
-- [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/): A minimum decomposition and an exact marked generating-function kernel prove equality in every length for the full three-statistic distribution.
+- [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/): A minimum decomposition and an exact marked generating-function kernel prove equality in every length for the full three-statistic distribution. On 2026-11-26, the [Lean formalization](results/chern-fu-lin-three-statistic/FORMALIZATION.md) verified equality of every literal joint fibre.
 - [Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture](results/gawron-miska-ulas-thue-morse-sign-density/): Exact signed block identities show both alleged zero-density exceptions instead have strictly positive lower densities.
 - [Charlton et al.’s distinct D’Arcais zeros question](results/darcais-distinct-right-half-plane-zeros/): Infinitely many distinct right-half-plane zero values via scaled entire limits, with the inverse-index scale on a positive-density family. Prior non-Hurwitz theorem credited.
 - [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/): Proof in the full original monoid scope. In the reduced setting, graph maximal cliques also permit arbitrary multiplicities of prescribed lengths.

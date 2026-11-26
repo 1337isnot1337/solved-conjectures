@@ -143,6 +143,11 @@ modules=(
   Conjectures.TransportationTheorems
   Conjectures.TransportationTwelveRoots
   Conjectures.TransportationVertices
+  Conjectures.AsgarliGhiocaYipLines
+  Conjectures.AsgarliGhiocaYipRootLabels
+  Conjectures.AsgarliGhiocaYipSeed
+  Conjectures.AsgarliGhiocaYipOrderedRoots
+  Conjectures.AsgarliGhiocaYipBlockingPencil
   Conjectures.MallikDegreeCounterfamily
   Conjectures.MallikDegreeCounts
   Conjectures.MallikDegreeEdgeMatchings
@@ -3549,6 +3554,50 @@ modules=(
   Conjectures.BursteinA218225Series
   Conjectures.BursteinA218225Kernel
   Conjectures.BursteinA218225
+  Conjectures.ChernFuLinThreeStatisticDefs
+  Conjectures.ChernFuLinThreeStatisticWeights
+  Conjectures.ChernFuLinThreeStatisticMarked
+  Conjectures.ChernFuLinThreeStatisticExpansion
+  Conjectures.ChernFuLinThreeStatisticMinimum
+  Conjectures.ChernFuLinThreeStatisticCrossing
+  Conjectures.ChernFuLinThreeStatisticSubword
+  Conjectures.ChernFuLinThreeStatisticDecomposition
+  Conjectures.ChernFuLinThreeStatisticBands
+  Conjectures.ChernFuLinThreeStatisticDecode
+  Conjectures.ChernFuLinThreeStatisticSplitStats
+  Conjectures.ChernFuLinThreeStatisticFibre
+  Conjectures.ChernFuLinThreeStatisticIDes
+  Conjectures.ChernFuLinThreeStatisticEnumerator
+  Conjectures.ChernFuLinThreeStatisticCopies
+  Conjectures.ChernFuLinThreeStatisticFactor
+  Conjectures.ChernFuLinThreeStatisticProduct
+  Conjectures.ChernFuLinThreeStatisticBoundary
+  Conjectures.ChernFuLinThreeStatisticWords
+  Conjectures.ChernFuLinThreeStatisticCoreSums
+  Conjectures.ChernFuLinThreeStatisticReduction
+  Conjectures.ChernFuLinThreeStatisticEdges
+  Conjectures.ChernFuLinThreeStatisticXCut
+  Conjectures.ChernFuLinThreeStatisticXMarkedTail
+  Conjectures.ChernFuLinThreeStatisticCutWeights
+  Conjectures.ChernFuLinThreeStatisticKernel
+  Conjectures.ChernFuLinThreeStatisticRoot
+  Conjectures.ChernFuLinThreeStatisticMoment
+  Conjectures.ChernFuLinThreeStatisticFlagWord
+  Conjectures.ChernFuLinThreeStatisticFlagMoment
+  Conjectures.ChernFuLinThreeStatisticFlagTree
+  Conjectures.ChernFuLinThreeStatisticFlagsLiteral
+  Conjectures.ChernFuLinThreeStatisticEdgeWeights
+  Conjectures.ChernFuLinThreeStatisticMass
+  Conjectures.ChernFuLinThreeStatisticLiteralMoment
+  Conjectures.ChernFuLinThreeStatisticCutMass
+  Conjectures.ChernFuLinThreeStatisticExcess
+  Conjectures.ChernFuLinThreeStatisticZTail
+  Conjectures.ChernFuLinThreeStatisticXTail
+  Conjectures.ChernFuLinThreeStatistic
+  Conjectures.GawronUlasPartitionSeries
+  Conjectures.GawronUlasPartitionCusps
+  Conjectures.GawronUlasPartitionBounds
+  Conjectures.GawronUlasPartitionSigns
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
