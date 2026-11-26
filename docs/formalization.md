@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
+
+Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Prism theorem](../lean/Conjectures/MonophonicPrismTheorems.lean) · [Research receipt](verification/lean-monophonic-prism-20261126/receipt.json).
+
 ## Wang–Yang’s six Fuss–Narayana matrices
 
 Adam Benazouz formalized all six matrices in Conjecture 4.1 for every integer parameter at least two. Two independent strict builds, transitive axiom audits and stock-kernel runs verified 322 declarations across five modules and all seven registered endpoints. [Theorems](../lean/Conjectures/WangYangFussNarayana.lean) · [Research receipt](verification/lean-wang-yang-fuss-narayana-20261126/receipt.json) · [Original contribution](https://github.com/1337isnot1337/solved-conjectures/pull/840).
