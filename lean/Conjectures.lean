@@ -1,3 +1,13 @@
+import Conjectures.GyarfasPlanarAxisDegrees
+import Conjectures.GyarfasPlanarConfiguration
+import Conjectures.GyarfasPlanarDirections
+import Conjectures.GyarfasPlanarLabels
+import Conjectures.GyarfasPlanarMultiplicity
+import Conjectures.GyarfasPlanarOffDegrees
+import Conjectures.GyarfasPlanarOptimal
+import Conjectures.GyarfasPlanarSecants
+import Conjectures.GyarfasPlanarSpectrum
+import Conjectures.GyarfasPlanarUniform
 import Conjectures.GyarfasPlanarLines
 import Conjectures.GyarfasPlanarRational
 import Conjectures.GyarfasPlanarWitness

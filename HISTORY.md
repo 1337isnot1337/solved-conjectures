@@ -20,7 +20,7 @@ Lean verifies the one- and three-block exclusions for all labelled small forward
 
 Gyárfás asked whether a real planar point set can have every point degree repeated at most twice. Rational coordinates now give such a set at every order at least 16 and yield asymptotically three quarters as many distinct degrees as points. [Proof](results/gyarfas-planar-degree-repetition/PROOF.md) · [Source and independent review](results/gyarfas-planar-degree-repetition/AUDIT.md).
 
-Lean verifies the original existence question at order 16 by counting actual affine lines. [Scope and receipt](results/gyarfas-planar-degree-repetition/FORMALIZATION.md).
+For every order from 16, Lean constructs noncollinear rational points in the real plane, proves optimal maximum degree multiplicity two and determines the entire interval of distinct degrees. [Theorems and receipts](results/gyarfas-planar-degree-repetition/FORMALIZATION.md).
 
 ## 2026-11-26 — Verify the two truncated-square covering comparisons
 

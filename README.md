@@ -61,7 +61,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **49.** [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ✅ | **126.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **49.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ✅ | **126.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | **49.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ✅ | **126.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
-| **49.** [Gyárfás’s planar degree-repetition problem](results/gyarfas-planar-degree-repetition/) | 🟡 | **130.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
+| **49.** [Gyárfás’s planar degree-repetition problem](results/gyarfas-planar-degree-repetition/) | ✅ | **130.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | **49.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **130.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | **49.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ✅ | **130.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | **49.** [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ✅ | **130.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
