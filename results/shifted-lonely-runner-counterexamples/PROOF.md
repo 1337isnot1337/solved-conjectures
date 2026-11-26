@@ -1,6 +1,6 @@
 # Shifted Lonely Runner: exact counterexample certificates for 18 <= n <= 57
 
-**Status: computer-assisted, exact rational verification, unrefereed. No Lean formalization.** [Landing page and scope](README.md) · [Certificates](certificates.json) · [Verifier](verify.py)
+**Status.** Lean verifies the forty stated counterexamples and their exact maxima. The mathematical result is unrefereed. [Formalization](FORMALIZATION.md) · [Landing page and scope](README.md) · [Certificates](certificates.json) · [Independent verifier](verify.py).
 
 ## Question
 

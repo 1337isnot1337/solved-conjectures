@@ -10,7 +10,7 @@ Tomdif’s [PR #660](https://github.com/1337isnot1337/solved-conjectures/pull/66
 adds the case `n=57` and strengthens the two certificates in [PR #646](https://github.com/1337isnot1337/solved-conjectures/pull/646).
 See the [independent rational review](REVIEW.md) for the exact values and attaining times.
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** full for the published counterexamples from 18 through 57 runners. Lean proves the exact maximum over all real times and a rational time attaining it in every case. [Formalization and replay](FORMALIZATION.md).
 
 ## Result
 
@@ -41,7 +41,7 @@ Please read this section before building on the result.
    - *What worked.* Heat-bath annealing that may also change speeds, run as a warm chain from the certificate for $`n-1`$ plus one new runner, with a beam of several solutions per $n$ near the end.
    - *What failed.* Superposing certificates at different scales; freezing large speeds at shift 0; structured shift families; truncations and a "remove-top" variant of Poliakova's rule (stuck at exactly $`1/\gamma=n+1`$); set-cover integer programs over structured candidate classes (several proven infeasible, others timed out); exact lattice annealing with SAT repair beyond $`n\approx28`$. Many runs end pinned at exactly $`1/\gamma=n+1`$ by a two-runner obstruction explained in [search/NOTES.md](search/NOTES.md).
    - The exhaustive SAT check of Poliakova-type rules in [search/NOTES.md](search/NOTES.md) indicates that rules of her local type with speeds built from the primes 2, 3 (and 5) cannot lower her threshold of 95 within the menus tested. Closing $`58\le n\le94`$ will need either more search with the speed-changing chain or a different construction.
-5. **Not formalized.** There is no Lean proof. The result rests on the exact standard-library verifier below, which uses only integer and `Fraction` arithmetic. The certificates and verifier are unrefereed.
+5. **Verification.** Lean checks the exact upper bound and an attaining time for each of the forty configurations. The independent Python verifier checks the same data by exact rational arithmetic. [Lean proof and receipt](FORMALIZATION.md).
 
 ## Verification
 

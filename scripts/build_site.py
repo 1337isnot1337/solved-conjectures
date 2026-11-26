@@ -200,7 +200,7 @@ STATUS_LABEL_SLUGS = {
     "Hadamard order-2396 partial results": "hadamard-2396",
     "Lonely-runner two insertions": "lonely-runner-two-insertions",
     "Zhang's Question 8.4: deletion values of the lonely runner": "zhang-deletion-values",
-    "Zhang's Question 8.5 for 18 ≤ n ≤ 56: shifted lonely runner counterexamples": "shifted-lonely-runner-counterexamples",
+    "Zhang's Question 8.5 for 18 ≤ n ≤ 57: shifted lonely runner counterexamples": "shifted-lonely-runner-counterexamples",
     "Erdős–Gyárfás abelian covers": "erdos-gyarfas-abelian-covers",
     "Erdős 607 line sizes": "erdos-607-line-sizes",
     "Growing rectangles": "rectangle-partition-asymptotics",

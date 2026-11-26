@@ -1214,6 +1214,16 @@ modules=(
   Conjectures.BariczPogany
   Conjectures.HanSabagCounterexample
   Conjectures.ZhangDeletion
+  Conjectures.ShiftedLonelyRunnerCertificate
+  Conjectures.ShiftedLonelyRunnerData18To22
+  Conjectures.ShiftedLonelyRunnerData23To27
+  Conjectures.ShiftedLonelyRunnerData28To32
+  Conjectures.ShiftedLonelyRunnerData33To37
+  Conjectures.ShiftedLonelyRunnerData38To42
+  Conjectures.ShiftedLonelyRunnerData43To47
+  Conjectures.ShiftedLonelyRunnerData48To52
+  Conjectures.ShiftedLonelyRunnerData53To57
+  Conjectures.ShiftedLonelyRunner
   Conjectures.ZhuJacobiStirling
   Conjectures.AgnosticVC.Exchangeability
   Conjectures.AgnosticVC.Information
