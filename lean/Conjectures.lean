@@ -1,3 +1,8 @@
+import Conjectures.GraphicalDistGraph
+import Conjectures.GraphicalDistInsertions
+import Conjectures.GraphicalDistMixture
+import Conjectures.GraphicalDistPolynomial
+import Conjectures.GraphicalDistTheorems
 import Conjectures.MonophonicPrismBlock00
 import Conjectures.MonophonicPrismBlock05
 import Conjectures.MonophonicPrismBlock10

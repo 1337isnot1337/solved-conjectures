@@ -2,7 +2,7 @@
 
 ## 2026-11-26 — Alexandersson’s graphical dist conjecture
 
-The graphical dist polynomial of an ordered graph can have nonreal roots. A finite witness has 71 vertices and 310 edges. A second construction gives arbitrarily many distinct nonreal roots on connected chordal graphs of treewidth two. [Proof](results/alexandersson-graphical-dist/proof.md) · [Source audit](results/alexandersson-graphical-dist/sources.md) · [Independent review](results/alexandersson-graphical-dist/review.md) · [Original question](https://github.com/PerAlexandersson/RealRooted/issues/2641).
+The graphical dist polynomial of an ordered graph can have nonreal roots. A finite witness has 71 vertices and 310 edges. A second construction gives arbitrarily many distinct nonreal roots on connected chordal graphs of treewidth two. [Proof](results/alexandersson-graphical-dist/proof.md) · [Source audit](results/alexandersson-graphical-dist/sources.md) · [Independent review](results/alexandersson-graphical-dist/review.md) · [Original question](https://github.com/PerAlexandersson/RealRooted/issues/2641). Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Lean record](results/alexandersson-graphical-dist/FORMALIZATION.md).
 
 ## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
 
