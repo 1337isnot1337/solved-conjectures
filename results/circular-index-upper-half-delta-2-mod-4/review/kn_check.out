@@ -1,5 +1,0 @@
-11 t=2 |E|=53 Delta=10 bad_pairs=0  53/5 <= chi'_c <= 32/3 ; Delta+1/2=21/2, Delta+1=11 ; OK
-15 t=3 |E|=102 Delta=14 bad_pairs=0  102/7 <= chi'_c <= 44/3 ; Delta+1/2=29/2, Delta+1=15 ; OK
-19 t=4 |E|=167 Delta=18 bad_pairs=0  167/9 <= chi'_c <= 56/3 ; Delta+1/2=37/2, Delta+1=19 ; OK
-23 t=5 |E|=248 Delta=22 bad_pairs=0  248/11 <= chi'_c <= 68/3 ; Delta+1/2=45/2, Delta+1=23 ; OK
-27 t=6 |E|=345 Delta=26 bad_pairs=0  345/13 <= chi'_c <= 80/3 ; Delta+1/2=53/2, Delta+1=27 ; OK

@@ -1,7 +1,0 @@
-# Scope and independent audit
-
-The target is [Rossi’s Conjecture 6.16, arXiv:2611.25741v1 §6.5](https://arxiv.org/html/2611.25741v1#S6.SS5): distinct characteristic roots in the three precise intervals, for every n at least three. The source also suggests a different sufficient derivative inequality. The present proof uses its Eulerian change of variables, but not that inequality. The q-deformation and shelling conjecture are separate and not claimed.
-
-Independent internal review checked the logistic contour expansion, the residue sign and phase of the nearest-pole pair, reflection, the small-index series bounds, summability of the remaining poles and the factorial magnitude estimate at the cutoff. It independently verified 8,000 finite signs using a direct Stirling-number face enumeration rather than the supplied Eulerian recurrence. The supplied exact checker also replayed 8,000 signs. Computed floating-point values only propose negative rational points; ordering and signs are checked exactly.
-
-Exact statement, title, conjecture number, recent sources and related Eulerian results were screened. In particular, [Durán’s extreme-root asymptotics](https://arxiv.org/abs/2404.03249) concern unshifted Eulerian roots and do not prove these level-one crossings. No prior full resolution was located. No mathematical priority or external refereeing is claimed. For separate, partial Lean verification, see [FORMALIZATION.md](FORMALIZATION.md).

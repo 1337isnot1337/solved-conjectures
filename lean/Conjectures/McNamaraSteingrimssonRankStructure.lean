@@ -1,7 +1,0 @@
-module
-
-public import Conjectures.McNamaraSteingrimssonIntrinsicOmission
-public import Conjectures.McNamaraSteingrimssonBlockAssembly
-public import Conjectures.McNamaraSteingrimssonShortFactor
-public import Conjectures.McNamaraSteingrimssonSumAssoc
-public import Conjectures.McNamaraSteingrimssonPointedDownsetCount
