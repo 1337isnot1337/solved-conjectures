@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Prove the type B Poincaré real-rootedness conjecture
+
+A pole-cancelling differential identity and a weighted Rolle argument prove real-rootedness, simplicity and strict consecutive-rank interlacing for every rank. [Proof and audit](results/ferroni-pagaria-vecchi-type-b/).
+
 ## 2026-11-26 — Verify all seventeen stored nonregular circulants
 
 Lean verifies the maximum degree and the exact real circular chromatic index for every nonregular graph in Section 7.3. An independent table comparison matches all 19,649 edge colours to the original certificates. The two standard replays each checked 27 project modules, 455 declarations, 327 theorem declarations, 70 private declarations and all 17 required endpoints. [Proof and original data](results/circular-index-upper-half-circulants/FORMALIZATION.md).

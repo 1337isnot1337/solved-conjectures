@@ -1,5 +1,9 @@
 # Verification
 
+## Ferroni–Pagaria–Vecchi’s type B real-rootedness conjecture
+
+Run `python3 results/ferroni-pagaria-vecchi-type-b/verify.py` to check 132 rational source-series comparisons and 352 exact cancellation and coefficient-sign identities. The [all-rank proof](../results/ferroni-pagaria-vecchi-type-b/PROOF.md) uses Descartes' rule and a weighted Rolle argument; it does not use the finite checks. [Source and audit](../results/ferroni-pagaria-vecchi-type-b/AUDIT.md). No Lean verification is claimed.
+
 ## The seventeen nonregular graphs of the circulant construction
 
 Lean verifies the maximum degree and the exact real circular chromatic index for every nonregular graph in Section 7.3. An independent table comparison matches all 19,649 edge colours to the original certificates. The two standard replays each checked 27 project modules, 455 declarations, 327 theorem declarations, 70 private declarations and all 17 required endpoints. [Proof and original data](../results/circular-index-upper-half-circulants/FORMALIZATION.md).

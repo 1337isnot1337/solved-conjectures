@@ -143,6 +143,7 @@ STATUS_LABEL_SLUGS = {
     "Cardon–Forgács–Piotrowski–Sorensen–White conjecture": "cardon-zero-sector",
     "Wagner's Laguerre-operator conjecture": "wagner-laguerre-operator",
     "Rowland–Sistos Barrón conjecture": "rowland-sistos-barron",
+    "Ferroni–Pagaria–Vecchi’s type B real-rootedness conjecture": "ferroni-pagaria-vecchi-type-b",
     "Caiolo–Ferroni–Hoster conjecture": "caiolo-ferroni-hoster",
     "Higashitani–Kummer–Michałek conjecture": "hkm-ehrhart",
     "Steinke–Zakynthinou’s agnostic VC learning conjecture": "steinke-zakynthinou-agnostic-vc",
