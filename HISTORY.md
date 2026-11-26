@@ -7,6 +7,13 @@ socle quotient. Lean checks the required transitivity and transports
 the conditional multifactor lift back to the actual subgroup.
 [Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the color transfer trace in Tom–Vailaya’s proof
+
+Lean verifies the ascent-weighted finite-color trace of actual endpoint
+closure, including repeated directed arcs, loop vanishing and the
+two-vertex path-edge matrix.
+[Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Pomerance–Sárközy's finite arithmetic-to-Poisson event bound
 
 Lean checks the finite uniform shifted arithmetic count law against the

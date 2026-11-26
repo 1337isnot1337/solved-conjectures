@@ -92,6 +92,15 @@ Partial for the combined result. Lean checks tomdif’s literal graphs at maximu
 
 Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of every finite connected simple graph at every admissible parameter. It proves the inclusive clique-chain count, constructs the literal diameter layers, retains the prescribed cardinality, and bounds the energy after extending the low eigenspace by zero. Lean also proves equality for the infinite family with `4*t+1` layers and `t` doubled layers, attaining the bound for `c=t−1`. [Lean scope](../results/xu-zhou-laplacian-diameter/FORMALIZATION.md).
 
+## Tom–Vailaya’s weighted trace conjecture
+
+Partial. For arbitrary finite colors and directed arcs, Lean proves that
+the trace of the color transfer matrix equals the chromatic
+quasisymmetric sum of the actual endpoint closure. It also checks loop
+vanishing and the path-edge transfer. The forest-triple matrix
+identification remains written.
+[Lean scope and receipt](../results/tom-vailaya-weighted-trace/FORMALIZATION.md).
+
 ## Kauers–Koutschan recurrence conjecture
 
 Complete for Conjecture 10. Lean identifies the original forbidden-rise
