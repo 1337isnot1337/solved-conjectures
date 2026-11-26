@@ -1104,3 +1104,11 @@ The [scoped verification receipt](verification/first-short-proof-lean-batch.md) 
 ## Benfield–Lippard’s stable Waring-gap symmetry conjecture
 
 The seven-module source closure of `Conjectures.WaringGapSymmetry` passed strict compilation, all-owned axiom audit (335 declarations, 248 theorems, 108 private declarations, 14 required endpoints), and stock-kernel replay at `1229c35ae49d53008b91239b105c2dd15fdde6af`. The [result-level receipt](../results/benfield-lippard-waring-gap-symmetry/LEAN.md) records the source hashes and exact conjecture scope. Reproduce using `python3 scripts/verify_lean_target.py --root Conjectures.WaringGapSymmetry --require WaringGapSymmetryCore.not_conjecture10_1 --require WaringGapSymmetryCore.not_reflection_conjecture --out .candidate-artifacts/waring-gap-symmetry`. Package-wide verification is separate.
+
+## The separable derangement limit
+
+Partial. Lean verifies the displacement shift under arbitrary finite
+direct and skew sums, an exact decomposition of their diagonal
+fibers, and the strict separation of distinct child displacement
+intervals at skew nodes.
+[Lean scope and receipt](../results/separable-derangements-limit/FORMALIZATION.md).

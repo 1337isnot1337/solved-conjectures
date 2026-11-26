@@ -1394,6 +1394,8 @@ import Conjectures.CKZUpstream.D5.S0.Diagonal.EscapeCount
 import Conjectures.CKZUpstream.D5.S0.Diagonal.Probability.EquivariantEscape
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.DerangementRatioNonconvergence
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.ActualCardinality
+import Conjectures.SeparableDerangementDisplacement
+import Conjectures.SeparableDerangementDiagonalCounts
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CappedExploration
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CutFactorization
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.EndpointHistoryKernel

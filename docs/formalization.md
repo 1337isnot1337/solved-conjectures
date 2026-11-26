@@ -1953,3 +1953,11 @@ Complete Lean verification of the original tail-minimum divergence conjecture an
 ## Benfield–Lippard’s stable Waring-gap symmetry conjecture
 
 [Complete source-matched formalization](../results/benfield-lippard-waring-gap-symmetry/LEAN.md) of Conjecture 10.1 and intended finite-domain reflection statement 10.2. The seven modules `Conjectures.WaringGapSymmetry*` prove both infinite monoid identifications, actual largest gaps, and strict gap-count defects via double-gap witnesses. Exact scoped strict build, all-owned axiom audit and stock-kernel replay passed; package-wide validation is separate.
+
+## The separable derangement limit
+
+Partial. Lean verifies the displacement shift under arbitrary finite
+direct and skew sums, an exact decomposition of their diagonal
+fibers, and the strict separation of distinct child displacement
+intervals at skew nodes.
+[Lean scope and receipt](../results/separable-derangements-limit/FORMALIZATION.md).

@@ -7,6 +7,12 @@ transfer matrices. It checks the polynomial evaluation argument at
 $q=1$ and the determinant lift to the rational function field.
 [Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
 
+## 2026-11-26 — Verify the separable derangement displacement identities
+
+Lean checks the actual diagonal point counts in direct and skew sums
+and proves that a skew sum’s diagonal meets at most one child.
+[Scope and receipt](results/separable-derangements-limit/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify endpoint gluing in Tom–Vailaya’s proof
 
 Lean proves the ordered product formula for the color matrices of
