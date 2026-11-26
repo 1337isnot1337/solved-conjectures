@@ -27,3 +27,25 @@ An intersecting family of triples on six colors extends to one choosing a single
 At most $(6d+1)d(6d-1)/2$ triangles contain an edge of the designated color, strictly fewer. The subtraction counts each monochromatic triangle three times, which is valid for this lower bound.
 
 The [exact enumeration](palettes.py) reduces the 1,024 maximal families to 13 isomorphism classes and then to **three** surviving classes. It uses permutations of six labels, set containment and integer arithmetic. The full problem remains open. In a single host two complementary palettes can be represented by intersecting physical triangles, so this classification controls lexicographic-power constructions in particular.
+
+## Exactly balanced colorings with few rainbow Eulerian subgraphs
+
+**Theorem.** Let $H$ be any fixed finite simple graph in which every vertex has even degree and $|E(H)|=2h$ for odd $h$. For every positive even $d$ there is a completely balanced $2h$-coloring of $K_n$, $n=2hd+1$, with at most
+
+```math
+3hd\,|E(H)|\,n^{|V(H)|-2}
+```
+
+labeled rainbow copies of $H$. In particular the rainbow density tends to zero for both the six-cycle and the union of two triangles in Erdős and Tuza's question. The construction allows positive counts, so existence in all sufficiently large hosts remains open for these targets. [Erdős–Tuza (1993), p. 81](https://doi.org/10.1016/S0167-5060(08)70377-7)
+
+**Construction.** Put $m=hd$. Start with the complete bipartite cut between $A$ of size $m$ and $B$ of size $m+1$. Remove the edges of a matching saturating $A$ and add a perfect matching on the $m$ vertices of $B$ touched by that matching. The resulting graph $G$ and its complement in $K_n$ are both $m$-regular. Decompose each into $h$ spanning $d$-regular subgraphs, using separate colors for the two graphs. For completeness, any even-regular graph can be oriented along Euler tours of its components. Splitting each vertex into outgoing and incoming copies gives a regular bipartite graph. Hall's theorem supplies a perfect matching, and removing it repeatedly partitions this graph into perfect matchings. Each projects to a spanning 2-factor. Group $d/2$ such factors per color.
+
+Exactly $3m/2$ edges differ between $G$ and the cut. Every rainbow embedding of $H$ uses exactly $h$ edges of $G$. The number of its cut-crossing edges is even by summing the degrees on one side modulo two. Thus its image contains at least one of the $3m/2$ exceptional edges. Choose that edge, its preimage among the $|E(H)|$ edges, an orientation, and images of the other $|V(H)|-2$ vertices. The displayed bound follows.
+
+**Sharp cut discrepancy.** For every $m$-regular graph on $2m+1$ vertices, every cut has at least $3m/2$ edges in its symmetric difference with the graph. Indeed, let the smaller side have size $a=m-t$. The cut has $a(2m+1-a)$ edges, and at most $am$ can lie in the graph. The difference therefore has at least
+
+```math
+a(2m+1-a)+(2m+1)m/2-2am=3m/2+t(2m-1-t)\ge 3m/2
+```
+
+edges. The construction attains this bound for every even $m\ge2$. This establishes optimality of the cut approximation only. The [independent construction check](near_cut.py) produces all individual edge colors directly using cyclic differences and verifies every vertex degree and the exact discrepancy.
