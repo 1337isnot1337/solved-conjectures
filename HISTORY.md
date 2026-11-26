@@ -4,6 +4,10 @@
 
 Proved both parity clauses of Conjecture 5.38. Linear rank potentials give exact fractional geodesic covers for every square grid. [Proof](results/fractional-general-position-square-grids/PROOF.md) · [Audit](results/fractional-general-position-square-grids/AUDIT.md).
 
+## 2026-11-26 — Erdős’s pinned-distance conjecture in general position
+
+A fixed positive improvement over one third holds for the mean number of distinct distances from a point, and hence for the maximum. This answers displays (3) and (5) of Erdős’s 1987 paper and allows any number of concyclic points. [Proof](results/erdos-general-position-pinned-distances/PROOF.md) · [Review](results/erdos-general-position-pinned-distances/REVIEW.md) · [Sources and remaining variant](results/erdos-general-position-pinned-distances/AUDIT.md).
+
 ## 2026-11-26 — Cioba–Savvas shutout number conjecture
 
 Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).

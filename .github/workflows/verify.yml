@@ -20,6 +20,8 @@ jobs:
           python3 results/alexandersson-graphical-dist/check_unions.py
       - name: Check exact fractional square-grid cover certificates
         run: python3 results/fractional-general-position-square-grids/verify.py
+      - name: Check pinned-distance multiplicities and diameter neighbors
+        run: python3 results/erdos-general-position-pinned-distances/verify.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
