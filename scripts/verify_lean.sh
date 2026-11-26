@@ -147,6 +147,13 @@ modules=(
   Conjectures.PomeranceSarkozyExponentialEventTransfer
   Conjectures.CyrusianKaplanBaselineCount
   Conjectures.CyrusianKaplanCountCheckpoint
+  Conjectures.CyrusianKaplanBaselineGrowth
+  Conjectures.CyrusianKaplanBaselineIncrements
+  Conjectures.CyrusianKaplanGrowthCheckpoint
+  Conjectures.CyrusianKaplanIncrementGrowth
+  Conjectures.CyrusianKaplanOffHyperplanes
+  Conjectures.CyrusianKaplanOrderedCoordinates
+  Conjectures.CyrusianKaplanTrueCountGrowth
   Conjectures.CyrusianKaplanDilation
   Conjectures.CyrusianKaplanEncoding
   Conjectures.CyrusianKaplanEncodingEquivalence

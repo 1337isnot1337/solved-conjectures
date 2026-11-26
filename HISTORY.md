@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the ordinarization count lower bounds
+
+Lean checks both baseline Pascal increments, the off-hyperplane comparison and a full-dimensional box of actual encodings. The full Ehrhart and monotonicity statements remain. [Scope and receipts](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the exact ordinarization encoding
 
 Lean checks the literal semigroup count in the fixed normalized region and the binomial baseline. The Ehrhart and monotonicity claims remain. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
