@@ -1,5 +1,9 @@
 # Lean verification status
 
+## The seventeen nonregular graphs of the circulant construction
+
+Lean verifies the maximum degree and the exact real circular chromatic index for every nonregular graph in Section 7.3. An independent table comparison matches all 19,649 edge colours to the original certificates. The two standard replays each checked 27 project modules, 455 declarations, 327 theorem declarations, 70 private declarations and all 17 required endpoints. [Lean proof](../lean/Conjectures/CircularInsertionStoredBases.lean) · [Verification receipt](verification/lean-circular-stored-20261126/receipt.json).
+
 ## The plane-partition polynomial inequalities
 
 Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Lean theorems](../lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.lean) · [Joint verification receipt](verification/lean-plane-partition-full-20261126/receipt.json).
