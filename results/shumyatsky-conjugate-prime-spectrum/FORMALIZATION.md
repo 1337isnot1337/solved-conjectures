@@ -163,6 +163,13 @@ and the source credits in the [audit](AUDIT.md).
   specializes to the lift used for the outer word labels.
   [Gaschütz’s paper](https://doi.org/10.1002/mana.19550140406).
 
+- [Actual multifactor action](../../lean/Conjectures/ShumyatskySocleFactorAction.lean).
+  Conjugation gives a permutation action on the actual simple factors.
+  The socle lies in its kernel, and the permutations of a pair of
+  lifts of the quotient generators act transitively. The simple-power
+  identification gives the actual automorphism labels and transports
+  back the multifactor lift from the ordered outer-label hypothesis.
+
 The remaining generation inputs include conjugate generation in
 the cyclic almost-simple case and two-generation of the relevant
 almost-simple inverse images.
@@ -190,4 +197,5 @@ checker. The abelian reduction and cyclic normalization passed their exact scope
 [Simple-power receipt](verification/simple-power/receipt.json) ·
 [Coprime-quotient receipt](verification/coprime-quotient/receipt.json) ·
 [Single-factor receipt](verification/single-factor/receipt.json) ·
-[Gaschütz receipt](verification/gaschutz/receipt.json).
+[Gaschütz receipt](verification/gaschutz/receipt.json) ·
+[Socle-factor action receipt](verification/socle-factor-action/receipt.json).
