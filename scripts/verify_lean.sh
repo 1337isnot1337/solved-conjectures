@@ -185,6 +185,25 @@ modules=(
   Conjectures.PomeranceSarkozyRareBernoulliTools
   Conjectures.PomeranceSarkozyBernoulliTiltEvents
   Conjectures.PomeranceSarkozyExponentialEventTransfer
+  Conjectures.PomeranceSarkozyContinuousTailCross
+  Conjectures.PomeranceSarkozyCumulantRatio
+  Conjectures.PomeranceSarkozyGaussianAbsolute
+  Conjectures.PomeranceSarkozyGaussianTailKernel
+  Conjectures.PomeranceSarkozyGaussianVarianceIntegral
+  Conjectures.PomeranceSarkozyPoissonDifferenceMoment
+  Conjectures.PomeranceSarkozyRareCumulantStrict
+  Conjectures.PomeranceSarkozyRareGaussianCumulant
+  Conjectures.PomeranceSarkozyRareGaussianDerivatives
+  Conjectures.PomeranceSarkozyRareGaussianTailBounds
+  Conjectures.PomeranceSarkozyRareGaussianVarianceWeight
+  Conjectures.PomeranceSarkozyRareRateCheckpoint
+  Conjectures.PomeranceSarkozyRareRateCubic
+  Conjectures.PomeranceSarkozyRareRateLegendre
+  Conjectures.PomeranceSarkozyRareRateProperties
+  Conjectures.PomeranceSarkozyRareRateQuadratic
+  Conjectures.PomeranceSarkozyRareSlopeProfile
+  Conjectures.PomeranceSarkozyRareSlopeTop
+  Conjectures.PomeranceSarkozyTailVarianceDominance
   Conjectures.CyrusianKaplanBaselineCount
   Conjectures.CyrusianKaplanCountCheckpoint
   Conjectures.CyrusianKaplanBaselineGrowth
