@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — General position number of oriented trees
+
+For any oriented tree, the reachability-chain partition formula gives the exact general position number. A five-state tree recurrence computes it and recovers an optimal set in linear time. [Proof](results/general-position-oriented-trees/PROOF.md) · [Audit](results/general-position-oriented-trees/AUDIT.md).
+
 ## 2026-11-26 — Builder–Blocker general position complexity conjecture
 
 Both cardinality-threshold games are PSPACE-complete even at diameter two. The two reductions force the opening player to activate a universal vertex before simulating independent-set play. [Proof](results/builder-blocker-general-position-complexity/PROOF.md) · [Audit](results/builder-blocker-general-position-complexity/AUDIT.md).
