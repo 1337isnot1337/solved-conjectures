@@ -22,9 +22,9 @@ In particular, if a counterexample sequence has smallest maximal independent set
 
 In the original graph a linear induced matching in the complement is an induced complete multipartite graph whose parts all have size two, and the conclusion is robust under the same arbitrary vertex deletions. This constraint is compatible with the previously obtained two-sided connectivity core and can be applied inside that core.
 
-## The logarithm cannot be removed at fixed induced matching number
+## Known sharpness at fixed induced matching number
 
-There are split graphs H on n=2m vertices with ν(H)=1, every maximal independent set of size at least n/6, and transversal number Ω(log n). Thus the order O(log n) from the upper bound for fixed ν is sharp, even at induced matching number one.
+[Cooper and Hollars, Proposition 6.3](https://arxiv.org/html/2607.15486v1#S6) prove a stronger lower bound with its sharp leading constant for split graphs. Here is a self-contained simpler specialization for the induced-matching comparison. There are split graphs H on n=2m vertices with ν(H)=1, every maximal independent set of size at least n/6, and transversal number Ω(log n). Thus the order O(log n) from the upper bound for fixed ν is sharp, even at induced matching number one.
 
 Take a clique Y of size m and an independent set X of size m. Include every Y–X edge independently with probability 1/2. The maximal independent sets containing a point of Y are exactly {y}∪(X∖N(y)) for y∈Y. The only other possible maximal set is X. Chernoff and a union bound give |X∖N(y)|≥m/3 for every y with probability 1−o(1).
 
@@ -32,4 +32,4 @@ Let t=floor((log₂ m)/2). For any fixed T of size at most t, and any y∈Y∖T,
 
 ## Scope
 
-The [original paper](https://doi.org/10.1016/0012-365X(92)90681-5) and [problem archive](https://www.erdosproblems.com/611) ask for unrestricted behavior. The counting theorem is prior work; the entropy estimate, the robust exclusion for a counterexample, and the split-graph lower construction are applications. Large induced matchings are not excluded by the original lower-rank hypothesis, so the general question stays open.
+The [original paper](https://doi.org/10.1016/0012-365X(92)90681-5) and [problem archive](https://www.erdosproblems.com/611) ask for unrestricted behavior. The counting theorem is prior work; the entropy estimate and robust exclusion are applications. The split-graph result is prior work as noted above. Large induced matchings are not excluded by the original lower-rank hypothesis, so the general question stays open.
