@@ -1,4 +1,4 @@
-# Erdős–Ruzsa conjecture
+# Two-shift obstructions to bounded-cost prime covers
 
 **Two fixed shifts cannot cover.** Fix real $C>0$ and distinct integers $a,b$. For every sufficiently large $N$, choose any set of primes up to $N$ with reciprocal sum at most $C$. At each selected prime $p$, independently of the choices at the other moduli, choose **either** $a\bmod p$ **or** $b\bmod p$ as its forbidden class. At least $\delta(C,a,b)N$ integers in $[1,N]$ avoid every forbidden class, for some $\delta(C,a,b)>0$. The prime sets and all choices between the shifts may change with $N$.
 

@@ -1,4 +1,4 @@
-# Hill–Luo–Trinh–Vindas-Meléndez conjecture
+# Magic-positive parameter directions for parking polytopes
 
 For each $n\ge3$ there are $\epsilon_n>0$ and $M_n<\infty$ with the following property. Put $a_1=b_1-1$, $a_i=b_i$ for $2\le i\le n$, and $S=\sum_i a_i$. If $S\ge M_n$ and, for **some** $k\in\{2,\ldots,n\}$,
 ```math

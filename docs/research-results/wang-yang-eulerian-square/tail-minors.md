@@ -1,4 +1,4 @@
-# Wang–Yang’s Eulerian square conjecture
+# Fixed-order total positivity on Eulerian tail rectangles
 
 **Theorem.** For every fixed order $r$, there is an integer $T_r$ such that each of the following infinite rectangles of the Eulerian square is strictly totally positive of order $r$:
 ```math

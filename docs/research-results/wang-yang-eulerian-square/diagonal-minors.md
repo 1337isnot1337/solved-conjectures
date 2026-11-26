@@ -1,4 +1,4 @@
-# Wang–Yang’s Eulerian square conjecture
+# Eulerian mixed minors at fixed offsets
 
 Every fixed minor pattern, of arbitrary order and with independently specified row and column gaps, has a strictly positive determinant after all its indices are translated sufficiently far along the main diagonal. Its normalized determinant has an explicit positive leading term, even when the indices are adjacent.
 

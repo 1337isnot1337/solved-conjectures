@@ -1,4 +1,4 @@
-# Alexandersson's natural-descent conjecture
+# Natural-descent zeros for long first rows
 
 Let $\mu$ be any fixed nonempty Ferrers diagram with $p$ cells. If its natural-descent polynomial $N_\mu$ is real-rooted, then $N_{(m,\mu)}$ has **$p$ simple negative zeros** for every sufficiently large first-row length $m$. Moreover the rows obtained at $m$ and $m+1$ strictly interlace. This gives unbounded families in arbitrarily many rows, starting with any rectangle, and the extension may be applied repeatedly. The threshold can depend on the entire fixed diagram. [Alexandersson's statement and the rectangle theorem](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#openProblemsPolytopes)
 

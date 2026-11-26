@@ -1,4 +1,4 @@
-# Wang–Yang's Fuss–Narayana conjecture
+# Triangle and square reductions for the Fuss–Narayana matrices
 
 On 26 November 2026 the [reviewed proof of all six matrices](../../../results/wang-yang-fuss-narayana/README.md) was published on `main`. The argument uses the square's column ratios, a rational product determinant and two triangular criteria. The 20 November checkpoint below records the earlier approach. [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/98#issuecomment-7188223846) · [Publication PR](https://github.com/1337isnot1337/solved-conjectures/pull/789)
 

@@ -1,4 +1,4 @@
-# Sources and priority audit
+# Sources for the Estrugo–Pastine star-center degree question
 
 The authors posed this question explicitly. Independent review on 26 November 2026 identified an earlier theorem whose elementary blow-up answers it for unrestricted graphs. The tree and fixed-rank quantitative arguments were separately checked. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/782#issuecomment-7187707661)
 

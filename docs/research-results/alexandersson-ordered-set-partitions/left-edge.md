@@ -1,4 +1,4 @@
-# Alexandersson's ordered-set-partition conjecture
+# Largest-modulus zeros of ordered-set-partition polynomials
 
 Fix a block threshold $j\ge2$. For any fixed $K$, the $K$ zeros of largest absolute value of $O_{n,j}$ are simple, negative, and strictly interlace with the corresponding end of the next row for all sufficiently large $n$. Their individual asymptotics depend on $n\bmod j$. The limiting functions are the $j$ sections of the exponential series. Combined with the [right-edge theorem](edge.md), this determines both extremes. The zeros in the intervening region remain part of the open conjecture. [Alexandersson's problem](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#set-partitions-and-trees)
 

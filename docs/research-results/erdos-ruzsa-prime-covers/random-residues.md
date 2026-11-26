@@ -1,4 +1,4 @@
-# Erdős–Ruzsa conjecture
+# Survivors of a prime sieve with random large-prime residues
 
 Erdős and Ruzsa ask whether, for every large $N$, one can cover $[1,N]$ by one residue class for each of a set of distinct primes up to $N$ with bounded sum of reciprocals. Their question concerns the existence of exceptional assignments. The following gives an upper bound on the proportion of assignments that can participate in such a cover. The small moduli and their residues can be chosen after seeing **all** the random larger classes. [Original paper, p. 386](https://www.renyi.hu/~p_erdos/1980-29.pdf) · [Erdős problem 1200](https://www.erdosproblems.com/1200) · [Issue 63](https://github.com/1337isnot1337/solved-conjectures/issues/63)
 

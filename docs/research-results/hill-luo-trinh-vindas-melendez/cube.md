@@ -1,4 +1,4 @@
-# Hill–Luo–Trinh–Vindas-Meléndez conjecture
+# Cube addition and the first parameter of a parking polytope
 
 Conjecture 8.1 asks for magic positivity of every generalized parking-function polytope $\mathfrak X_n(\mathbf b)$, $n\ge3$, $b_i\ge1$. The Ehrhart polynomial is magic positive if in its expansion $E(t)=\sum_{i=0}^n\mu_i t^i(t+1)^{n-i}$ all $\mu_i$ are nonnegative. We reduce the full conjecture exactly to the boundary $b_1=1$ in every dimension. For every fixed dimension and every fixed tail $(b_2,\ldots,b_n)$, we also prove magic positivity for all sufficiently large $b_1$, with a finite explicit test for the whole ray. [Original paper, Conjecture 8.1](https://arxiv.org/abs/2607.15503) · [Issue 117](https://github.com/1337isnot1337/solved-conjectures/issues/117)
 

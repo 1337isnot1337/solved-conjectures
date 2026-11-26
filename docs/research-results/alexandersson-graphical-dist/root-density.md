@@ -1,8 +1,8 @@
-# Alexandersson’s graphical dist conjecture
+# Zeros of graphical dist polynomials in prescribed complex disks
 
 **Theorem.** For every open disk in the complex plane and every positive integer $k$, a finite 2-tree (in particular, a connected chordal graph of treewidth two), with a suitable vertex order, has at least $k$ distinct nonreal zeros of its graphical dist polynomial in that disk. In particular the zeros are dense in the whole complex plane.
 
-The polynomial counts acyclic orientations by the number of distinct positive earlier indegrees. The explicit counterexample and its treewidth-two extension received [independent mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/823#issuecomment-7196051430). The stronger disk theorem in this manuscript awaits separate review. [Reviewed proof](https://github.com/1337isnot1337/solved-conjectures/blob/07c469bceb22aa4aa10bbebbf627ad82a951ddfb/results/alexandersson-graphical-dist/proof.md) Here two groups of vertices probe opposite ends of a common oriented edge. Their response probabilities can be tuned separately. [Original conjecture](https://github.com/PerAlexandersson/RealRooted/issues/2641)
+The polynomial counts acyclic orientations by the number of distinct positive earlier indegrees. The explicit counterexample and its treewidth-two extension received [independent mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/823#issuecomment-7196051430). The stronger disk theorem in this manuscript awaits separate review. [Reviewed proof](../../../results/alexandersson-graphical-dist/proof.md) Here two groups of vertices probe opposite ends of a common oriented edge. Their response probabilities can be tuned separately. [Original conjecture](https://github.com/PerAlexandersson/RealRooted/issues/2641)
 
 ## Two response probabilities with one common threshold
 

@@ -1,4 +1,4 @@
-# Wang–Yang’s Eulerian square conjecture
+# Mixed forward differences of the Eulerian square
 
 Write $E(a,b)$ for the Eulerian number with $a$ ascents and $b$ descents. Two further properties hold throughout the symmetric extension $a,b\ge0$: mixed forward differences of all orders are nonnegative, and every three-by-three minor containing both the constant row and the constant column is strictly positive. The constant column occurs in Wang and Yang’s square, while the constant row is the additional row $a=0$. The [unrestricted conjecture](README.md) remains open.
 

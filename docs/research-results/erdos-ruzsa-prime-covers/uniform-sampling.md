@@ -1,4 +1,4 @@
-# Erdős–Ruzsa conjecture
+# Uniform relative concentration for prime sieves
 
 Fix $0<\theta<1/2$ and put $y=N^\theta$. Choose one residue independently and uniformly for every prime $y<p\le N$. With probability tending to one, the larger classes remove the same proportion, up to an error tending to zero, from **every** survivor set produced by arbitrary choices at the smaller primes. All the smaller primes may be used. Their residue assignments can be made after the larger classes have been revealed. There is no reciprocal-budget restriction in this statement.
 

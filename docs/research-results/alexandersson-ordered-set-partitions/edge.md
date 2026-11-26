@@ -1,4 +1,4 @@
-# Alexandersson's ordered-set-partition conjecture
+# Rightmost real zeros of ordered-set-partition polynomials
 
 For each fixed threshold $j\ge2$, a positive fraction of the rightmost zeros of the ordered-set-partition polynomials are simple, negative, and strictly interlace between consecutive rows. The fraction is independent of the row length. Their limiting right endpoint and the spacing of every fixed number of extreme zeros can be calculated explicitly. The location of the remaining zeros, including possible nonreal zeros, stays open. Here “rightmost” orders the **real** zeros.
 

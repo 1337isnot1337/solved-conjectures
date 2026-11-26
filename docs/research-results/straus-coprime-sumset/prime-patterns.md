@@ -1,4 +1,4 @@
-# Straus’s coprime sumset problem
+# Fixed-width coprime grids and prime difference patterns
 
 For a fixed width, the largest coprime grid below a cutoff has asymptotically as many columns as the most frequent prime difference pattern has occurrences. Overlapping prime patterns cost a vanishing proportion of the columns. This compares the two extremal problems even without an asymptotic formula for either one.
 
