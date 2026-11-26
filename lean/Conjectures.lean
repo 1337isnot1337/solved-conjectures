@@ -352,6 +352,7 @@ import Conjectures.JohnsonPfaffianEndpoint
 import Conjectures.JohnsonPfaffianOuter
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
+import Conjectures.ShiftedLonelyRunner
 import Conjectures.SunZhao
 import Conjectures.FangZhangZhao
 import Conjectures.HadamardLegendreQuotientData

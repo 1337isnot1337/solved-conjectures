@@ -185,8 +185,10 @@ jobs:
         run: python3 results/currie-conjecture-19/verify.py
       - name: Verify Zhang's lonely-runner deletion values
         run: python3 results/zhang-deletion-values/verify.py
-      - name: Verify the shifted lonely-runner counterexamples for 18 to 54 runners (quick mode; full mode takes about 4 minutes)
-        run: python3 results/shifted-lonely-runner-counterexamples/verify.py --quick
+      - name: Verify the forty shifted lonely-runner certificates
+        run: |
+          python3 results/shifted-lonely-runner-counterexamples/generate_lean.py --check
+          python3 results/shifted-lonely-runner-counterexamples/verify.py --quick
       - name: Verify the seven-speed loneliness spectrum
         run: python3 results/seven-speed-spectrum/verify.py
       - name: Verify the eight-speed loneliness spectrum
