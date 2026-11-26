@@ -66,6 +66,7 @@ STATUS_LABEL_SLUGS = {
     "Fiscus–Hurlbert–Myzelev–Pence grid conjecture": "fiscus-grid-game",
     "En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem": "constant-weight-strong-wom",
     "The Steiner triple system sail problem": "steiner-triple-system-sail",
+    "Asgarli–Ghioca–Yip blocking-pencil problem": "asgarli-ghioca-yip-blocking-pencil",
     "Erdős–Gyárfás point-degree spectrum conjecture": "erdos-gyarfas-point-degree-spectrum",
     "Gyárfás’s planar degree-repetition problem": "gyarfas-planar-degree-repetition",
     "Shumyatsky’s conjugate prime-spectrum conjecture": "shumyatsky-conjugate-prime-spectrum",
