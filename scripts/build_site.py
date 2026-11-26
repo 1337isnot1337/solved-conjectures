@@ -109,6 +109,7 @@ STATUS_LABEL_SLUGS = {
     "Fan’s interval Riesz capacity-ratio conjecture": "fan-interval-riesz-capacity",
     "Kovalev’s square-root Taylor-section zero-free conjecture": "kovalev-zero-free",
     "Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture": "stern-half-plane",
+    "Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture": "erz-big-descent-schur",
     "Chern–Fu–Lin’s joint Eulerian equidistribution conjecture": "chern-fu-lin-joint-eulerian",
     "Dukes’s revstack interlacing conjecture": "dukes-revstack",
     "González D’León–Wachs’s complete-graph specialization question": "gonzalez-dleon-wachs-complete-graphs",

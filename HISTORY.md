@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
+
+Published the [all-degree proof](results/erz-big-descent-schur/PROOF.md) and the refinement by exact longest increasing subsequence length. The [independent review](results/erz-big-descent-schur/AUDIT.md) covers the weighted-run bijection and the positivity recurrence.
+
 ## 2026-11-26 — Sidon products, pattern packings and the four-cycle threshold
 
 Published the [Byrne–Tait density gap at every odd length](results/byrne-tait-odd-sidon/), the [absence of an absolute packing cutoff](results/blitvic-kammoun-steingrimsson-packing-cutoff/), and [two restrictions on regular graphs in Erdős #85](results/erdos-85-four-cycle-threshold/). The packing question with a length-dependent bound and the four-cycle monotonicity problem remain open.
