@@ -1,0 +1,7 @@
+# Misère Domination Game
+
+**The misère quotient of 0.337 is infinite.** This is a direct consequence of the [exact outcome rule](PROOF.md), separate from the [failure of the proposed algebraic reduction scheme](PERIODICITY.md).
+
+Take heaps of even length h=2c+4, where c ranges over odd integers at least five. If c>d are two such virtual weights, use the same context of k=c−3 heaps of length two for both. The context has even size, so the totals are even. The virtual sums c+k and d+k are both odd. The c heap has dominance c−k=3, meeting the even-type threshold, so its sum is P. The d heap has dominance d−k≤1, and none of the unit-weight context piles has positive dominance, so the second sum is N. The contexts are legal 0.337 positions, and hence these single heap types are pairwise distinguishable in the game's own misère quotient.
+
+In particular there is no finite-state recognizer of misère outcomes in the ordinary sorted concatenation encoding of heap lengths (for instance descending unary lengths delimited by a fixed marker). The prefixes consisting of those single heaps are pairwise distinguishable by the suffix consisting of the k heaps of length two. The same argument works for binary-delimited lengths. The order constraint is respected in every comparison, because the distinguished initial heaps are all larger than two. This does not preclude a polynomial-time arithmetic algorithm: the exact outcome rule is already one.
