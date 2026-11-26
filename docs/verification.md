@@ -2,7 +2,7 @@
 
 ## Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
-Run `python3 results/erz-big-descent-schurverify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schurcheck_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schurAUDIT.md) explains how the proof covers every degree.
+Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schur/check_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schur/AUDIT.md) explains how the proof covers every degree.
 
 ## Sidon products, pattern packings and the four-cycle threshold
 

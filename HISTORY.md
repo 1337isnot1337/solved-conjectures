@@ -2,7 +2,7 @@
 
 ## 2026-11-26 — Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
-Published the [all-degree proof](results/erz-big-descent-schurPROOF.md) and the refinement by exact longest increasing subsequence length. The [independent review](results/erz-big-descent-schurAUDIT.md) covers the weighted-run bijection and the positivity recurrence.
+Published the [all-degree proof](results/erz-big-descent-schur/PROOF.md) and the refinement by exact longest increasing subsequence length. The [independent review](results/erz-big-descent-schur/AUDIT.md) covers the weighted-run bijection and the positivity recurrence.
 
 ## 2026-11-26 — Sidon products, pattern packings and the four-cycle threshold
 
