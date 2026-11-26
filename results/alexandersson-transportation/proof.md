@@ -37,3 +37,41 @@ away from its roots, and by continuity at the roots as well. Direct substitution
 ```
 
 Consequently $5^{22}((H'_{12})^2-H_{12}H''_{12})(-1/5)=-389\,210\,787\,898\,375\,728<0$. This disproves the conjecture. The [checker](check.py) independently obtains the whole numerator from the column-margin dynamic program and counts ten distinct real roots by Sturm’s theorem.
+
+## An unbounded family of nonreal roots
+
+**Theorem.** As $m\to\infty$, the number of nonreal zeros of $H_m$, counted with multiplicity, is $\Omega(\sqrt{m\log m})$.
+
+Write $F_m(z)=B_m(-z)$. For the Legendre polynomial $P_m$ normalized by $P_m(1)=1$, the binomial expansion of Rodrigues’ formula yields
+
+```math
+F_m(z)=(1+z)^mP_m\!\left(\frac{1-z}{1+z}\right).
+```
+
+Indeed $P_m(x)=2^{-m}\sum_j\binom mj^2(x-1)^j(x+1)^{m-j}$. Thus $F_m$ has $m$ simple positive zeros $r_1<\cdots<r_m$, the transforms of the Legendre zeros in $(-1,1)$. Set $\theta=2\arctan\sqrt z$, so the argument of $P_m$ is $\cos\theta$. Bernstein's inequality gives
+
+```math
+(\sin\theta)^{1/2}\,|P_m(\cos\theta)|
+\le \sqrt{\frac{2}{\pi(m+1/2)}}.
+```
+
+This is the case $\alpha=\beta=0$ of [NIST DLMF, Eq. 18.14.3](https://dlmf.nist.gov/18.14.E3).
+
+On the interval $I_m=[1/m,(\log m)/(8m)]$ for all sufficiently large $m$, one has $(1+z)^m\le m^{1/8}$ and $\sin\theta=2\sqrt z/(1+z)\ge m^{-1/2}$. Consequently $|F_m(z)|=O(m^{-1/8})$ uniformly on $I_m$. Since $mz\ge1$, the perturbed polynomial $H_m(-z)=F_m(z)+mz$ is strictly positive throughout $I_m$.
+
+There are $\Omega(\sqrt{m\log m})$ zeros of $F_m$ in $I_m$. To see this directly put $u(\theta)=\sqrt{\sin\theta}\,P_m(\cos\theta)$ and $s=m+1/2$. The Legendre differential equation gives
+
+```math
+u''+\left(s^2+\frac1{4\sin^2\theta}\right)u=0.
+```
+
+Every open interval $(a,a+\pi/s)$ inside $(0,\pi)$ contains a zero. Otherwise choose the sign of $u$ positive there and take $v(\theta)=\sin(s(\theta-a))$. The Wronskian $u'v-uv'$ decreases strictly inside, since its derivative is $-uv/(4\sin^2\theta)<0$. Its endpoint values are $-su(a)\le0$ and $su(a+\pi/s)\ge0$, a contradiction. In the $\theta$ coordinate the length of $I_m$ is at least $\sqrt{(\log m)/(8m)}-1/\sqrt m$, because $2/(1+y^2)\ge1$ for $0\le y\le1$. It therefore contains $\Omega(\sqrt{m\log m})$ disjoint intervals of length $\pi/s$. Between successive zeros the sign alternates, so $I_m$ contains that same order of magnitude of entire intervals where $F_m<0$ bounded by consecutive zeros.
+
+To count the real roots that can survive elsewhere, consider any bounded interval $(r_i,r_{i+1})$ where $F_m<0$. A zero of $H_m(-z)$ there requires $|F_m(z)|/z=m$. For $z>r_1$,
+
+```math
+\frac{d^2}{dz^2}\log\frac{|F_m(z)|}{z}
+=\frac1{z^2}-\sum_{j=1}^m\frac1{(z-r_j)^2}<0
+```
+
+away from the zeros, by the term $j=1$. A horizontal level is attained at most twice with multiplicities on each such interval. A tangency has multiplicity two by strict negativity of the second derivative. On $(r_m,\infty)$ the log derivative $\sum_j1/(z-r_j)-1/z$ is positive, so at most one root occurs there if $m$ is odd. No roots occur where $F_m\ge0$ for $z>0$. The coefficients of $H_m$ are positive, ruling out roots of $H_m$ on $[0,\infty)$. The bounded negative intervals have total capacity $2\lfloor m/2\rfloor$, with one further possible root on the final interval for odd $m$. Every negative interval wholly in $I_m$ contributes zero against its capacity of two. The claimed lower bound on the number of nonreal zeros follows.
