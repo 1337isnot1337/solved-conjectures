@@ -7,6 +7,7 @@ The target is [Conjecture 6 in the journal version](https://oro.open.ac.uk/98050
 - [Distance-regular graphs](DISTANCE-REGULAR.md): every Delsarte clique is terminal, with elementary witnesses in several classical families.
 - [Rank-threshold forms graphs](RANK-THRESHOLDS.md): terminal sets for all rectangular, symmetric, Hermitian, and alternating graph parameters, with an [exact graph-distance regression](check_rank_fibers.py).
 - [Powers of exchange graphs](EXCHANGE-POWERS.md): terminal cliques in all powers of Hamming, Johnson, Grassmann, and classical dual polar graphs.
+- [Strong products](STRONG-PRODUCTS.md): a rectangular subset is terminal exactly when every factor subset is terminal, also for scaled maximum metrics.
 - [Odd graphs](ODD-GRAPHS.md): explicit constructions for all even parameters.
 
 ## Gated subgraphs
