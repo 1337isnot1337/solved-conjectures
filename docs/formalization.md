@@ -2,7 +2,7 @@
 
 ## Cyrusian–Kaplan’s ordinarization quasipolynomial question
 
-Partial. The exact finite-set encoding, actual ordinarization path length, homogeneous real scaling and binomial baseline count are verified. A separate checkpoint checks the off-hyperplane comparison and quantitative true-count and baseline-increment lower bounds. The quasipolynomial and eventual monotonicity arguments remain. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+Partial. The exact finite-set encoding, actual ordinarization path length, homogeneous real scaling and binomial baseline count are verified. Separate checkpoints check quantitative count growth, the off-hyperplane comparison, the literal sign arrangement and its integer lattice. The quasipolynomial and eventual monotonicity arguments remain. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
 
 ## Shifted Lonely Runner counterexamples
 

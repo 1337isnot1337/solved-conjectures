@@ -75,3 +75,26 @@ the all-owned axiom audit (122 declarations,
 The exact rational triangulation of the actual ordinarization strata
 and the common leading correction coefficient remain to be verified.
 The entry remains partial.
+
+## Literal arrangement and integer lattice
+
+The [arrangement checkpoint](../../lean/Conjectures/CyrusianKaplanArrangementCheckpoint.lean)
+identifies the actual admissible ordered tuples with a finite disjoint union
+of sign fibres. It verifies positive scaling from genus one with every
+equality and strict test preserved. Each nonempty admissible fibre is the
+relative interior of its compact weak-sign closure. The literal count is
+of points in the full ambient integer coordinate lattice, not a sample
+or substitute polytope, and it is the sum of the counts of the disjoint fibres.
+
+Lean also checks the primitive integer normals for all nondegenerate
+ordinary rows, the exceptional diagonal doubling row, the integral
+intercepts of the actual real equations, and the translation of each
+primitive affine lattice to the fixed kernel lattice of its normal.
+This checks the lattice reduction, not the common leading coefficient.
+
+All 24 modules passed strict Lean compilation, the all-owned audit
+(572 declarations, 390 theorems,
+145 private, 12 named endpoints) and the stock
+per-module kernel replay. [Arrangement receipt](verification/arrangement/receipt.json).
+The open Ehrhart stratum counts and the asymptotic correction estimate
+remain outside the Lean verification. The entry stays partial.
