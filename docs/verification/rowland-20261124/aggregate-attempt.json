@@ -1,7 +1,0 @@
-{
-  "command": "scripts/verify_lean.sh Conjectures.RowlandSistosBarronTheorem",
-  "dependency_cache_readonly": true,
-  "exit_code": 1,
-  "finished_at": "2026-11-24T17:22:08.956569+00:00",
-  "log": "/tmp/rowland-aggregate-attempt.log"
-}

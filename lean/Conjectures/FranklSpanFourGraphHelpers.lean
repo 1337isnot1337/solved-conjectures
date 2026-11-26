@@ -1,4 +1,0 @@
-module
-
-public import Conjectures.FranklSpanFourGraphLocalData
-public import Conjectures.FranklSpanFourGraphPrefixCoverage

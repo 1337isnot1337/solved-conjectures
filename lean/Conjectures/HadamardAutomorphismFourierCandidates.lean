@@ -1,4 +1,0 @@
-import Conjectures.HadamardAutomorphismIndicator
-import Conjectures.HadamardAutomorphismBinary
-import Conjectures.HadamardAutomorphismDeterminant
-import Conjectures.HadamardAutomorphismDeterminantNorm

@@ -1,8 +1,0 @@
-Replaying all 6 local project modules imported by Conjectures.SokalAperyMomentThreshold, including that root (prefix Conjectures)
-replaying Conjectures.SokalAperyLegendre
-replaying Conjectures.SokalAperyContinuation
-replaying Conjectures.SokalAperyTorus
-replaying Conjectures.SokalAperyMomentThreshold
-replaying Conjectures.SokalAperyMoments
-replaying Conjectures.SokalAperyEndpoint
-PASS: the entire local import closure of Conjectures.SokalAperyMomentThreshold completed the pinned kernel replay
