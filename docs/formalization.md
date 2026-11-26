@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Shifted Lonely Runner counterexamples
+
+Lean verifies the exact maximum at each of the 40 reported sizes, including attainment at a rational time. The upper bound holds at every real time. [Proof and reproduction](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).
+
 ## Burstein’s A218225 enumeration conjecture
 
 Complete for the two outstanding avoidance classes `X = Av(2134, 42153, 24153)` and `Y = Av(2143, 42135, 24135)`. Lean proves literal equinumerosity `countX n = countY n` for every `n : ℕ` (including `n = 0`) and proves that their common nonempty generating series in `PowerSeries ℤ` is the unique zero-constant-term solution to `P = (1 + P)(x + (1 - x)P^2)`. The six-module closure passed strict compilation, the complete 815-declaration owned axiom audit, and independent stock-kernel replay. [Lean scope and receipt](../results/burstein-a218225-enumeration/FORMALIZATION.md).
@@ -336,7 +340,7 @@ remain unformalized. This is one completed existing conjecture entry.
 
 ## First short-proof Lean batch
 
-- [Wilf-module questions](../results/almiron-moyano-wilf-module-questions/LEAN.md): Question 4.8 and parts (1), (2), and (6) of Question 4.13. Partial coverage of the collection entry.
+- Lean proves Question 4.8, all six parts of Question 4.13 under the stated normalization, and the sharp two-generator thresholds. [Wilf-module proof and replay](../results/almiron-moyano-wilf-module-questions/LEAN.md).
 - [Cardon et al.](../results/cardon-zero-sector/LEAN.md): exact negative answer to Question 6.1.
 - [Chappelon–Ramírez Alfonsín–Stamate](../results/chappelon-ramirez-stamate-leaf-type/LEAN.md): exact disproof of Conjecture 4.4.
 
