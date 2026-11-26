@@ -49,7 +49,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **35.** [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ | **113.** [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |
 | **35.** [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ | **113.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
 | **35.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **113.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
-| **40.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **113.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | 🟡 |
+| **40.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **113.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ✅ |
 | **40.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **113.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | 🟡 |
 | **40.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **118.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | **40.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **118.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |

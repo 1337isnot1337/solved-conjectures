@@ -372,10 +372,10 @@ Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared 
 ## Kauers–Koutschan recurrence conjecture
 
 The [Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md)
-cover the original order-eight operator on the exact finite sum at every
-index, both symbolic operator certificates and the exact signed
-factorial block expansion for the actual permutations, formal column
-series and exact bivariate Schur moment.
+include the complete theorem for the original A189281 permutation count
+and the published order-eight operator. The exact import closure verifies
+the signed block formula, Schur moment and final extraction. The separate
+order-thirteen certificate covers its symbolic residuals.
 
 With SymPy 1.14 installed, run `python results/kauers-koutschan-recurrence/verify.py`. The checker substitutes the exact Schur sum into both published operators over a rational polynomial ring, verifies the initial indices separately, and compares the count with all permutations through length eight. [Proof](../results/kauers-koutschan-recurrence/PROOF.md) · [Checker](../results/kauers-koutschan-recurrence/verify.py)
 

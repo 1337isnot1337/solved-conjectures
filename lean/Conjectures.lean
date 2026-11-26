@@ -1506,3 +1506,4 @@ import Conjectures.KauersKoutschanCompositionCount
 import Conjectures.KauersKoutschanSchurMoment
 import Conjectures.KauersKoutschanTraceProducts
 import Conjectures.KauersKoutschanColumnSeries
+import Conjectures.KauersKoutschanConjecture

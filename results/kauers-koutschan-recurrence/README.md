@@ -15,11 +15,11 @@ python verify.py
 
 ## Lean verification
 
-Lean proves that the exact finite sum in the written proof satisfies the
-order-eight recurrence at every index. It also proves the exact signed factorial
-block expansion for the actual permutations, the formal column series,
-and the exact Schur moment. The final coefficient extraction connecting
-the two counts remains. [Lean scope and receipts](FORMALIZATION.md).
+Lean proves Conjecture 10 for the actual A189281 permutation count at
+every index, including the empty permutation. It verifies the full
+coefficient extraction and equality with the exact finite sum. The
+order-thirteen supplement has a checked symbolic certificate.
+[Lean scope and receipts](FORMALIZATION.md).
 
 ## Prior work
 
