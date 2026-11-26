@@ -129,13 +129,13 @@ from an explicit stable ordinary Schur expansion; the existence
 and stability of that expansion remain outside the check.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
-## González D’León–Wachs’s complete-graph specialization question
+## Gamma moments, log-concavity and real zeros for weighted complete graphs
 
 Complete for the stated equal-variable result. Lean verifies the
 literal Laguerre and actual Gamma expectation formulas, the boundary
 color formulas, strict ordinary coefficient log-concavity, and the
 real-zero count. Schur-log-concavity is outside the stated result.
-[Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Lean scope and receipt](../docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
 
@@ -231,10 +231,6 @@ Lean proves strict monotonicity of the explicit Pollard density integral and che
 The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) proves the full monotone conjecture, including zero and infinite lower order. Direct cylinder covers give the upper bound. Finite digit-tail estimates control the stopping scale, and a uniformly branching interval construction gives an inverse Hölder map for the lower bound. See the [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json).
 
 
-## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
-
-The exact Stern polynomial is connected to the run-length continuant, with all fraction denominators checked. Positive real inputs are covered without an enclosure or parabolic hypothesis. The nonreal regional estimates are not part of the checked scope. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
-
 ## Nuttall's conjecture
 
 The shift-indexed theta series is positive termwise and has a summable geometric majorant. Its exponential bound survives every literal tail integration, and the undifferentiated kernel has a checked leading asymptotic and double-exponential decay. Every single theta term has a checked all-order derivative recurrence with exact degree and leading coefficient. Local uniform summability proves termwise differentiation at all orders. The kernel derivatives have global double-exponential bounds and a strictly smaller exponential error after dropping the first term. Derivatives of the literal iterated tails shift the tail index until they reach the source kernel, after which they are signed kernel derivatives. The weighted moment formula and literal repeated tails agree at all orders; the differentiated weighted formula supplies every Hankel matrix entry in the range of §4. Finite determinant expansion and Fubini also verify the corresponding product-measure integral of two determinants. Reversing the power rows identifies the Vandermonde and cancels the row prefactor sign. First-mode polynomial determinant calculus also verifies the shifted-minor square difference, with exact degree and leading coefficient conditional on a nonzero unshifted determinant. The adjacent-minor recurrence then proves nonvanishing, exact degrees, leading-coefficient signs, and normalized polynomial evaluation limits in every size. The differentiated tail bound transfers these limits and the eventual strict Wronskian signs to the full theta kernel. The scalar moment bound and dominance limit in the integral comparison are also checked separately, along with the uniform derivative-ratio error estimate and quantitative signed determinant and weighted integral lower bounds for the positive box. The absolute bad-region bound and comparison now also verify the strict cumulant Hankel sign conditional on the distinct-node theta tail sign. The signed extended-Chebyshev determinant criterion supplies that sign and, applied twice, proves strict sign-reverse regularity for the literal cumulants on every ordered nonnegative grid. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
@@ -266,10 +262,6 @@ Partial for the two-part written resolution. The exact thirteen-cell witness dis
 ## Csordas–Vishnyakova conjecture
 
 Complete for original Conjecture 3.6. The quartic and real entire function meet the paper’s hypotheses. All required Taylor coefficients are nonnegative and locally uniform limits of real-rooted polynomials cannot produce the witness. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json).
-
-## Wagner's Laguerre-operator conjecture
-
-Complete for Conjecture 4.3. The Lean proof uses actual real polynomial approximants, compact-uniform convergence, the exact first Laguerre operator and eventual coefficient positivity. It does not rely on a conjectural equivalence with Jensen polynomials. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json).
 
 ## Ma–Tang’s random subset-sum threshold conjecture
 
@@ -312,11 +304,11 @@ Complete for Conjecture 4.3. Lean derives the analytic series from unordered par
 
 [Complete source-matched formalization](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) of the original Conjecture 5.8. The three `Conjectures.ThueMorseSignDensity*` modules derive the recurrence from the actual stabilized integer coefficients of the infinite product and prove both finite-prefix count bounds and negations of density zero for `m=2`. The stronger exact-density theorem is not included. Scoped strict compilation, all-owned axiom audit and stock-kernel replay passed; package-wide validation is separate.
 
-## Kovalev’s square-root Taylor-section zero-free conjecture
+## Fractional powers of geometric sums and sharp coefficient-segment bounds
 
-The [complete proof](../results/kovalev-zero-free/FORMALIZATION.md) establishes zero-freeness of every actual Taylor section of the principal analytic square root of the geometric polynomial on the closed unit disk, for every positive length. Its coefficient/iterated-derivative bridge, beta-law transport, finite-section integral identity, and boundary arguments discharge the analytic inputs. The original Conjecture 1.2 is a named endpoint; the broader fractional-exponent and segment supplements and trigonometric Conjecture 1.3 remain unformalized.
+The [complete proof](../docs/kovalev-fractional-taylor-sections/FORMALIZATION.md) establishes zero-freeness of every actual Taylor section of the principal analytic square root of the geometric polynomial on the closed unit disk, for every positive length. Its coefficient/iterated-derivative bridge, beta-law transport, finite-section integral identity, and boundary arguments discharge the analytic inputs. The original Conjecture 1.2 is a named endpoint; the broader fractional-exponent and segment supplements and trigonometric Conjecture 1.3 remain unformalized.
 
-The [full receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) records 21 strict source builds, the complete audit of 291 declarations (265 theorems, six private declarations, 31 required endpoints), and exact 21-module stock-kernel replay. The [independent reviews](../results/kovalev-zero-free/LEAN_REVIEW.md) check the statement, analytic bridges and evidence. Only the three standard logical axioms occur transitively. Publication refreshes preserve these exact source and proof-control hashes; metadata checks do not claim a second proof rebuild. Aggregate and deployment follow-up is tracked separately in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+The [full receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) records 21 strict source builds, the complete audit of 291 declarations (265 theorems, six private declarations, 31 required endpoints), and exact 21-module stock-kernel replay. The [independent reviews](../docs/kovalev-fractional-taylor-sections/LEAN_REVIEW.md) check the statement, analytic bridges and evidence. Only the three standard logical axioms occur transitively. Publication refreshes preserve these exact source and proof-control hashes; metadata checks do not claim a second proof rebuild. Aggregate and deployment follow-up is tracked separately in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
 ## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
 
@@ -383,9 +375,9 @@ The [complete Lean formalization](../results/hajdu-sarkozy-shifted-power-perturb
 
 The eleven-module closure passed strict compilation, the all-owned/private transitive axiom audit, and exact stock-kernel replay. The audit covers 185 declarations, 157 theorems, and twenty required endpoints, allowing only `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md) checks the exact source statement, the full argument and the frozen verification evidence. The [portable receipt](../results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json) is distinct from the retained lane and interrupted-run records. The optional weaker-hypothesis retained-limsup supplement remains unformalized. Existing proposer/proof-author credits and bounded priority uncertainty are retained; this is one existing conjecture entry.
 
-## Rowland–Sistos Barrón conjecture
+## An exact power-rank formula for a rank-six recurrence
 
-`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
+`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../docs/rank-six-power-ranks/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
 
 ## Johnson's conjecture
 

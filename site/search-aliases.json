@@ -147,22 +147,6 @@
     "Blackwell comparison",
     "interval equilibrium"
   ],
-  "kovalev-zero-free": [
-    "Leonid Kovalev",
-    "Taylor sections",
-    "zero-free",
-    "closed unit disk",
-    "beta gamma",
-    "fractional exponent"
-  ],
-  "stern-half-plane": [
-    "Stern polynomials",
-    "Stern diatomic sequence",
-    "Dilcher Kidwai Tomkins",
-    "Altizio",
-    "zero free half-plane",
-    "continuant"
-  ],
   "chern-fu-lin-joint-eulerian": [
     "Chern Fu Lin",
     "Burstein",
@@ -177,15 +161,6 @@
     "interlacing",
     "revstack sort",
     "descent polynomials"
-  ],
-  "gonzalez-dleon-wachs-complete-graphs": [
-    "Gonzalez DLeon Wachs",
-    "weighted bond poset",
-    "complete graphs",
-    "Laguerre roots",
-    "Gamma moments",
-    "characteristic polynomial",
-    "equal-variable specialization"
   ],
   "almiron-moyano-wilf-module-questions": [
     "Pedro Almiron",
@@ -239,20 +214,6 @@
     "preorder polytopes",
     "Ehrhart duality",
     "Stanley transfer"
-  ],
-  "athanasiadis-chapoton-q-zeta": [
-    "Athanasiadis Chapoton",
-    "q zeta",
-    "Ehrhart reciprocity",
-    "Postnikov",
-    "preorder"
-  ],
-  "athanasiadis-chapoton-transmuted-m": [
-    "Athanasiadis Chapoton",
-    "transmuted M triangle",
-    "preorder duality",
-    "Mobius",
-    "reciprocity"
   ],
   "gawron-miska-ulas-thue-morse-valuation": [
     "Prouhet Thue Morse",
