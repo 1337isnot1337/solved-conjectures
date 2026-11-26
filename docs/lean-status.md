@@ -54,7 +54,7 @@ Lean verifies the maximum degree and the exact real circular chromatic index for
 
 ## The plane-partition polynomial inequalities
 
-Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Lean theorems](../lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.lean) · [Joint verification receipt](verification/lean-plane-partition-full-20261126/receipt.json).
+Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Lean theorems](../lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.lean) · [Joint verification receipt](verification/lean-plane-partition-full-20261126/receipt.json). The four certificate modules for indices 200 through 250 now elaborate their proofs sequentially under the 4,500 MB build limit. [Updated joint replay](verification/lean-plane-partition-resource-20261126/receipt.json).
 
 ## Upper-half circular chromatic index in every even degree from eight
 
