@@ -1110,5 +1110,6 @@ The seven-module source closure of `Conjectures.WaringGapSymmetry` passed strict
 Partial. Lean verifies the displacement shift under arbitrary finite
 direct and skew sums, an exact decomposition of their diagonal
 fibers, and the strict separation of distinct child displacement
-intervals at skew nodes.
+intervals at skew nodes. It also checks the same-diagonal ancestor
+property and the exact cardinality of finite largest-child spine records.
 [Lean scope and receipt](../results/separable-derangements-limit/FORMALIZATION.md).
