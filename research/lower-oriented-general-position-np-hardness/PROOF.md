@@ -18,6 +18,8 @@ Every leaf of an undirected graph is extreme in every orientation. Thus if a gra
 
 Conversely, suppose an undirected graph has a Hamilton path $v_0,\dots,v_{n-1}$. Orient each path edge towards the next vertex, and every other edge towards its smaller index. Each arc increases the index by at most one. A directed walk from $v_0$ to $v_{n-1}$ therefore uses at least $n-1$ arcs, and the oriented Hamilton path attains that bound. Every triple lies on this geodesic, and any pair is in general position. This is the one-path case of Lemma 4.9 in the conjecture source. Therefore on **all** graphs with at least two leaves, the number-two property is equivalent to Hamiltonian path existence.
 
+An orientation attaining two in a graph with two leaves also determines the ordered Hamilton path uniquely, since the vertices have distinct distances from the source leaf. All chords have to point backwards along that order: a forward arc between nonconsecutive vertices would shorten the spanning geodesic. Hence the construction is a bijection between ordered Hamilton paths and orientations attaining two on these graphs.
+
 ## Complexity
 
 Hamiltonian Path is NP-complete on the planar bipartite class with degrees one at exactly two vertices and three elsewhere, by Theorem 23 of [Munaro, *The VC-dimension of graphs with respect to k-connected subgraphs*](https://pureadmin.qub.ac.uk/ws/portalfiles/portal/186487218/paper.pdf#page=12). On that class the equivalence above gives the identity reduction.
