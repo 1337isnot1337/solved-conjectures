@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Gyárfás’s planar degree-repetition problem
+
+Gyárfás asked whether a real planar point set can have every point degree repeated at most twice. Rational coordinates now give such a set at every order at least 16 and yield asymptotically three quarters as many distinct degrees as points. [Proof](results/gyarfas-planar-degree-repetition/PROOF.md) · [Source and independent review](results/gyarfas-planar-degree-repetition/AUDIT.md).
+
 ## 2026-11-26 — Verify the two truncated-square covering comparisons
 
 Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof and receipt](results/meylender-thalmaier-truncated-square/FORMALIZATION.md).
