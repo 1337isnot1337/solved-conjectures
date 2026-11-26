@@ -55,7 +55,7 @@ Its residue modulo $v$ recovers $d$, and modulo $u$ recovers $e$ (including the 
 Since $Mab=q^2/2^J$, the diameters are
 \[
  \operatorname{diam}(A)=\frac{D}{2^J u}q^2+O_{u,v,J}(q),\qquad
- \operatorname{diam}(B)=\frac{2^J-D}{2^J v}q^2+O_{u,v,J}(1).
+ \operatorname{diam}(B)=\frac{2^J-D}{2^J v}q^2+O_{u,v,J}(q).
 \]
 Indeed their exact maxima are $v-1+v(a-1+abD)$ and $u-1+u(a(b-1)+ab(2^J-1-D))$; both minima are zero. Translate by one to make the sets positive. Let
 \[
