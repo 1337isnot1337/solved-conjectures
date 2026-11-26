@@ -4,6 +4,10 @@
 
 Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m ≥ 2` and every finite minor: total nonnegativity of `A(n, k)`, `B(n, k)`, and their row reversals, and strict total positivity of `A(n + k, k)` and `B(n + k, k)`. The self-contained five-module closure proves Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch, and passed strict compilation, the 322-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/wang-yang-fuss-narayana/FORMALIZATION.md).
 
+## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
+
+Both general-position assertions of Conjecture 9.3 are true. A matching that avoids a prescribed vertex in each critical block and a nearest-unused ordering give the stronger mixed sum bound. [Proof](results/general-position-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/general-position-nordhaus-gaddum/AUDIT.md) · [Issue #851](https://github.com/1337isnot1337/solved-conjectures/issues/851).
+
 ## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847).
@@ -64,7 +68,7 @@ Consecutive unscaled two-parameter Narayana rows have strictly interlacing negat
 
 ## 2026-11-26 — Alexandersson’s transportation polytope conjecture
 
-Full-support transportation polytopes can have Ehrhart numerators with nonreal roots. The displayed family has an unbounded number of nonreal roots. A 24-dimensional counterexample has two nonreal zeros. A Legendre-polynomial estimate proves a lower bound of order $\sqrt{m\log m}$ throughout the family for sufficiently large $m$. The numerator formula was previously obtained by Guan and Jin. [Proof](results/alexandersson-transportation/proof.md) · [Source audit](results/alexandersson-transportation/sources.md) · [Mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350) Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Formalization](results/alexandersson-transportation/FORMALIZATION.md).
+Full-support transportation polytopes can have Ehrhart numerators with nonreal roots. The displayed family has an unbounded number of nonreal roots. A 24-dimensional counterexample has two nonreal zeros. A Legendre-polynomial estimate proves a lower bound of order $\sqrt{m\log m}$ throughout the family for sufficiently large $m$. The numerator formula was previously obtained by Guan and Jin. [Proof](results/alexandersson-transportation/proof.md) · [Source audit](results/alexandersson-transportation/sources.md) · [Mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350) Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Formalization](results/alexandersson-transportation/FORMALIZATION.md).
 
 ## 2026-11-26 — Wang–Yang's Fuss–Narayana conjecture
 

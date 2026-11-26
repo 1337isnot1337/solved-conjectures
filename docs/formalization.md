@@ -6,7 +6,7 @@ Complete for all six matrices of Conjecture 4.1 at every integer parameter `m �
 
 ## Alexandersson’s transportation polytope conjecture
 
-Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Lean theorems and verification receipt](../results/alexandersson-transportation/FORMALIZATION.md).
+Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Lean theorems and verification receipt](../results/alexandersson-transportation/FORMALIZATION.md).
 
 ## Mallik–Diwan–Kothari degree-count conjecture
 

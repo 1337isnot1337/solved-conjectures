@@ -9,6 +9,20 @@ modules=(
   Conjectures.WangYangFussNarayanaDefs
   Conjectures.WangYangFussNarayanaCriteria
   Conjectures.WangYangFussNarayana
+  Conjectures.TransportationGrowthTheorems
+  Conjectures.TransportationLegendreBound
+  Conjectures.TransportationLegendreCenter
+  Conjectures.TransportationLegendreEnergy
+  Conjectures.TransportationLegendreExpansion
+  Conjectures.TransportationLegendreODE
+  Conjectures.TransportationLegendreOscillator
+  Conjectures.TransportationLogWindow
+  Conjectures.TransportationNonrealGrowth
+  Conjectures.TransportationRolleWindow
+  Conjectures.TransportationRootDeficit
+  Conjectures.TransportationSturmInterval
+  Conjectures.TransportationWindowOscillation
+  Conjectures.TransportationWindowSuppression
   Conjectures.TransportationBadColumn
   Conjectures.TransportationBinomial
   Conjectures.TransportationComplexRoots
