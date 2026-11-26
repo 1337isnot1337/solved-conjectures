@@ -58,9 +58,18 @@ count vector. It also verifies all Poisson falling-factorial moments,
 the centered second moment, the survival-sum identity, and the
 reciprocal-square upper bound at a positive prime cutoff.
 
-The remaining connection of the arithmetic count law to that joint
-Poisson model, asymptotic specialization, Gaussian law, second moment
-for the arithmetic function, process limits and rare deviations remain. This does not
+The [literal arithmetic-to-Poisson comparison](../../lean/Conjectures/PomeranceSarkozyActualCountEvents.lean)
+now connects the whole finite chain. The arithmetic law is the
+pushforward of the exact finite uniform sample by the vector of
+shifted prime-divisibility counts. The categorical and Bernoulli
+encodings agree with those counts on their full supports, and the
+Poisson endpoint is the product of the actual Poisson sum laws. Lean
+bounds the discrepancy for every event of this vector by the
+explicit CRT–Bonferroni error plus 2H²/y, where H is the number of
+offsets and y is the positive prime cutoff.
+
+The asymptotic application of this estimate, the arithmetic Gaussian
+law, second moment, process limits and rare deviations remain. This does not
 address the separate exact collision count `F(X)`.
 
 [Strict build, all-owned audit and independent replay receipt](verification/finite-prime-tails/receipt.json)
@@ -72,6 +81,8 @@ address the separate exact collision count `F(X)`.
 [Residue, Bernoulli and Poisson comparison replay](verification/residue-poisson-comparisons/receipt.json)
 
 [Joint Poisson count law and moments replay](verification/poisson-count-law/receipt.json)
+
+[Literal arithmetic-to-Poisson event comparison replay](verification/literal-arithmetic-poisson-law/receipt.json)
 
 ## Threshold identities
 

@@ -22,8 +22,8 @@ one-factor lift on the actual socle quotient.
 Partial. Lean verifies the literal arithmetic count, factorial tails,
 finite-window total variation, and the independent product comparisons
 with Bernoulli and Poisson laws. The actual joint Poisson offset-count
-law and its moments are checked. The remaining arithmetic connection
-and limiting statements remain.
+law and its moments are checked. The exact finite arithmetic-to-Poisson
+event bound is also checked. The arithmetic limiting statements remain.
 
 Two supporting threshold identities are independently replayed:
 the universal band-mass bound and the exact tail-product sum.
