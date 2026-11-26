@@ -1,5 +1,9 @@
 # Verification
 
+## Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
+
+Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schur/check_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schur/AUDIT.md) explains how the proof covers every degree.
+
 ## Sidon products, pattern packings and the four-cycle threshold
 
 Run `python3 results/byrne-tait-odd-sidon/verify.py` for the two finite group actions, `python3 results/blitvic-kammoun-steingrimsson-packing-cutoff/check.py` for direct enumeration from packing windows, and `python3 results/erdos-85-four-cycle-threshold/check_affine_paths.py` for the affine path and charging tests. Each proof has a separate review identifying the arguments that cover its unrestricted parameters.
