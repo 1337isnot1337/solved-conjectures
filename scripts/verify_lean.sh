@@ -2831,6 +2831,8 @@ modules=(
   Conjectures.KauersKoutschanMaskExpansion
   Conjectures.KauersKoutschanMaskCoefficients
   Conjectures.KauersKoutschanConjecture
+  Conjectures.KauersKoutschanSupplementEvaluation
+  Conjectures.KauersKoutschanSupplement
   Conjectures.KauersKoutschanState
   Conjectures.KauersKoutschanFiniteRecurrence
 )

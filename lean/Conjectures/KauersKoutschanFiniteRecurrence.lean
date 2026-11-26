@@ -22,7 +22,7 @@ private theorem combine_foldl {α : Type} (h : ℕ) (xs : List α)
     rw [ih (fun p a ha => step p a (List.mem_cons_of_mem _ ha)),
       step p a List.mem_cons_self]
 
-private theorem foldl_range_add (f : ℕ → ℚ) (n : ℕ) (z : ℚ) :
+theorem foldl_range_add (f : ℕ → ℚ) (n : ℕ) (z : ℚ) :
     (List.range n).foldl (fun a j => a + f j) z =
       z + ∑ j ∈ Finset.range n, f j := by
   induction n with
@@ -65,7 +65,8 @@ private theorem combine_mask (h s cutoff : ℕ) (S : Fin 6 → State)
   rw [combine_foldl h _ _ (fun a r => a - f r) hstep,
     foldl_range_sub, stateT]
 
-private theorem combine_count (h t : ℕ) (ht : t ≤ 18) :
+/-- Evaluation of the six symbolic basis states gives the exact shifted sum. -/
+theorem combine_count (h t : ℕ) (ht : t ≤ 18) :
     combine h (fun i => count (state i) t) = shiftedSumCount h t := by
   let g (mask : ℕ) :=
     let s := (cells t mask).1
