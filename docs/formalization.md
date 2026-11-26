@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Circular-index certificates within the package memory limit
+
+The finite circular-index certificates for degrees 49, 50, 51, 53, 55 and 59 now verify their vertex tables in groups of sixteen. All six modules passed the normal Lake build under the configured 4.5 GB limit. The joint finite, stored-graph and all-degree proof suites also passed strict compilation, full axiom audit and stock-kernel replay twice. [Finite certificates](verification/lean-circular-bounded-20261126/finite/receipt.json) · [Stored insertions](verification/lean-circular-bounded-20261126/stored/receipt.json) · [All degrees](verification/lean-circular-bounded-20261126/all/receipt.json).
+
 ## Gyárfás’s construction at every order
 
 For every order from 16, Lean constructs noncollinear rational points in the real plane, proves optimal maximum degree multiplicity two and determines the entire interval of distinct degrees. [Lean theorem](../lean/Conjectures/GyarfasPlanarUniform.lean) · [Kernel receipt](verification/lean-gyarfas-planar-uniform-20261126/receipt.json).

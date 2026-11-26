@@ -9,6 +9,7 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CircularIndex.Deleted.all_rows_of_blocks,
     `GyarfasPlanar.axis_value_count_low,
     `GyarfasPlanar.axis_value_count_extra,
     `GyarfasPlanar.axis_value_count_high,
