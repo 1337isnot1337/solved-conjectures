@@ -22,12 +22,17 @@ abbrev signChange (co : List ℤ) (a b : Cut) : Prop :=
   let r := (scaledValue b.1 b.2 co).1
   (l<0 ∧ 0<r) ∨ (0<l ∧ r<0)
 
+abbrev oldBracket (p : List ℤ) (cs : Array Cut) (i : ℕ) :=
+  signChange p (cutAt cs (2*i+1)) (cutAt cs (2*i+2))
+
+abbrev newBracket (q : List ℤ) (cs : Array Cut) (i : ℕ) :=
+  signChange q (cutAt cs (2*i)) (cutAt cs (2*i+1))
+
 abbrev certifiedCuts (d : ℕ) (p q : List ℤ) (cs : Array Cut) : Prop :=
   cs.size=2*d+2 ∧ (∀ i : Fin (2*d+2),0<(cutAt cs i.val).2) ∧
   (∀ i : Fin (2*d+1),cutLT (cutAt cs i.val) (cutAt cs (i.val+1))) ∧
   (cutAt cs (2*d+1)).1≤0 ∧
-  (∀ i : Fin d,signChange p (cutAt cs (2*i.val+1)) (cutAt cs (2*i.val+2))) ∧
-  (∀ i : Fin (d+1),signChange q (cutAt cs (2*i.val)) (cutAt cs (2*i.val+1)))
+  (∀ i : Fin d,oldBracket p cs i.val) ∧ (∀ i : Fin (d+1),newBracket q cs i.val)
 
 private theorem real_cut_lt {a b : Cut} (ha : 0<a.2) (hb : 0<b.2) (hab : cutLT a b) :
     cutReal a<cutReal b := by
