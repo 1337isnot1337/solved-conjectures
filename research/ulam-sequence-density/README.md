@@ -103,6 +103,13 @@ density under exact eventual confinement to a sum-free phase band with
 rational endpoints. It also checks how a single phase-boundary
 correction can change a truncated model's limiting density.
 
+[Limits at long gaps](phase-gap-limits.md) identifies the two words that
+can follow unbounded gaps under Gibbs's approximate phase conjecture.
+It gives exact finite counts for both and proves subexponential word
+complexity under the conjecture. A separate reachability check rules out
+bounded-lag larger-parent paths rooted in the first million integers
+when every lag is at most one million.
+
 ## Source audit
 
 - [Erdős Problem 342](https://www.erdosproblems.com/342) includes a zero-density

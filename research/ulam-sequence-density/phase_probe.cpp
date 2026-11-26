@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <array>
 #include <cstdint>
 #include <iostream>
 #include <vector>
@@ -167,8 +168,98 @@ bool check_relaxed_phase_tail(const Membership& original) {
             return false;
         }
     }
+    const int translated_burst = burst + static_cast<int>(denominator);
+    const int sum_of_starts = burst + translated_burst;
+    if (2 * static_cast<int>(edited.size()) >= sum_of_starts
+        || burst - 2 < static_cast<int>(edited.size()) || extended(sum_of_starts)) {
+        return false;
+    }
     std::cout << "Verified the extinct continuation and the two-point repeatable pulse.\n";
     return true;
+}
+
+bool check_gap_germs(const Membership& original) {
+    constexpr int cutoff = 10'000'000;
+    std::vector<int> shifts;
+    for (int s = 1; s <= cutoff; ++s) {
+        if (original[s] && !middle_third(s)) {
+            shifts.push_back(s);
+        }
+    }
+    constexpr std::array<std::array<int, 3>, 2> expected{{
+        {7'382, 74'038, 739'569},
+        {7'558, 74'048, 740'453},
+    }};
+    constexpr std::array<int, 3> samples{100'000, 1'000'000, cutoff};
+    for (int boundary : {1, 2}) {
+        Membership germ(cutoff + 1);
+        germ[0] = 1;
+        int count = 1;
+        std::size_t sample = 0;
+        for (int t = 1; t <= cutoff; ++t) {
+            const auto r = (3 * phase(t) + boundary * denominator) % (3 * denominator);
+            if (denominator < r && r < 2 * denominator) {
+                int ways = 0;
+                for (int s : shifts) {
+                    if (s > t || (germ[t - s] && ++ways == 2)) {
+                        break;
+                    }
+                }
+                germ[t] = ways == 1;
+                count += germ[t];
+            }
+            if (t == samples[sample]) {
+                std::cout << "Germ " << boundary << "/3 through " << t
+                          << ": " << count << " terms.\n";
+                if (count != expected[boundary - 1][sample]) {
+                    return false;
+                }
+                ++sample;
+            }
+        }
+    }
+    return true;
+}
+
+bool check_short_parent_paths(const Membership& original) {
+    constexpr int lag_limit = 1'000'000;
+    constexpr int cutoff = 6'000'000;
+    std::vector<int> small_terms;
+    std::vector<int> outliers;
+    for (int n = 1; n <= cutoff; ++n) {
+        if (original[n]) {
+            if (n <= lag_limit) {
+                small_terms.push_back(n);
+            }
+            if (!middle_third(n)) {
+                outliers.push_back(n);
+            }
+        }
+    }
+    Membership reachable(original.begin(), original.begin() + lag_limit + 1);
+    reachable.resize(cutoff + 1);
+    int last = small_terms.back();
+    for (int n = lag_limit + 1; n <= cutoff; ++n) {
+        if (!original[n]) {
+            continue;
+        }
+        const auto& candidates = middle_third(n) ? outliers : small_terms;
+        for (int s : candidates) {
+            if (s >= n) {
+                break;
+            }
+            const int t = n - s;
+            if (s != t && std::min(s, t) <= lag_limit
+                && original[t] && reachable[std::max(s, t)]) {
+                reachable[n] = 1;
+                last = n;
+                break;
+            }
+        }
+    }
+    std::cout << "Last larger-parent descendant with lag and root at most " << lag_limit
+              << ": " << last << ".\n";
+    return last == 4'780'104 && cutoff >= last + lag_limit;
 }
 
 int main() {
@@ -182,6 +273,14 @@ int main() {
     std::cout << "Exact prefix through one million agrees bit for bit.\n";
     if (!check_relaxed_phase_tail(reference)) {
         std::cerr << "The relaxed phase countermodel failed.\n";
+        return 1;
+    }
+    if (!check_gap_germs(membership)) {
+        std::cerr << "A germ count disagreed with the recorded value.\n";
+        return 1;
+    }
+    if (!check_short_parent_paths(membership)) {
+        std::cerr << "The short-parent reachability check failed.\n";
         return 1;
     }
     return check_dilation(membership, 2) && check_dilation(membership, 3) ? 0 : 1;
