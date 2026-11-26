@@ -97,6 +97,11 @@ complete import closure, including six unchanged dependencies. Its
 all 12 required endpoints. The original stock replay is reused only because all sixteen newly built object files, the compiler and checker match the replayed bytes exactly. The binding receipt claims no new stock replay.
 Only `propext`, `Classical.choice`, and `Quot.sound` are allowed.
 
+The independent build subsequently completed a fresh per-module stock-kernel
+replay of all sixteen modules. See its [separate completion receipt](verification/steps-1-3/independent-replay.json)
+and [raw replay log](verification/steps-1-3/independent-kernel.log). The closure
+and theorem scope are unchanged.
+
 The files are registered in `scripts/verify_lean.sh` and `lean/ProofAudit.lean`.
 The receipts verify this specific closure; they do not claim the entire
 repository gate passed. No legacy workflow or separate executable driver was added.

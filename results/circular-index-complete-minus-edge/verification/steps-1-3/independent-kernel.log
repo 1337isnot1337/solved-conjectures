@@ -1,0 +1,18 @@
+Replaying all 16 local project modules imported by Conjectures.CircularCompleteMinusEdgeOrder, including that root (prefix Conjectures)
+replaying Conjectures.CircularCompleteMinusEdgeAcyclic
+replaying Conjectures.CircularCompleteMinusEdgeClasses
+replaying Conjectures.CircularCompleteMinusEdgeGraph
+replaying Conjectures.CircularCompleteMinusEdgeLevels
+replaying Conjectures.CircularCompleteMinusEdgeMatchings
+replaying Conjectures.CircularCompleteMinusEdgeOrder
+replaying Conjectures.CircularCompleteMinusEdgePath
+replaying Conjectures.CircularCompleteMinusEdgeRotation
+replaying Conjectures.CircularCompleteMinusEdgeSources
+replaying Conjectures.CircularCompleteMinusEdgeTransversals
+replaying Conjectures.CircularIndexBase
+replaying Conjectures.CircularIndexCirculant
+replaying Conjectures.CircularIndexClassArithmetic
+replaying Conjectures.CircularIndexColoring
+replaying Conjectures.CircularIndexCounting
+replaying Conjectures.CircularIndexReal
+PASS: the entire local import closure of Conjectures.CircularCompleteMinusEdgeOrder completed the pinned kernel replay
