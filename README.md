@@ -49,7 +49,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **36.** [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ | **112.** [Pantone–Bóna’s second-smallest-terminal asymptotic conjecture](results/pantone-bona-second-smallest-terminal/) | ⬜ |
 | **36.** [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ | **117.** [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |
 | **36.** [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ | **117.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
-| **36.** [Erdős–Gyárfás point-degree spectrum conjecture](results/erdos-gyarfas-point-degree-spectrum/) | ⬜ | **117.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
+| **36.** [Erdős–Gyárfás point-degree spectrum conjecture](results/erdos-gyarfas-point-degree-spectrum/) | ✅ | **117.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | **36.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **117.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ✅ |
 | **42.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **117.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | 🟡 |
 | **42.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **122.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |

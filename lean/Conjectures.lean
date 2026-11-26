@@ -1,3 +1,13 @@
+import Conjectures.ErdosGyarfasSpectrumArithmetic
+import Conjectures.ErdosGyarfasSpectrumBound
+import Conjectures.ErdosGyarfasSpectrumComparison
+import Conjectures.ErdosGyarfasSpectrumExtremal
+import Conjectures.ErdosGyarfasSpectrumIncidence
+import Conjectures.ErdosGyarfasSpectrumPlane
+import Conjectures.ErdosGyarfasSpectrumRealDegrees
+import Conjectures.ErdosGyarfasSpectrumRepresentatives
+import Conjectures.ErdosGyarfasSpectrumTheorems
+import Conjectures.ErdosGyarfasSpectrumTotals
 import Conjectures.FiscusGridCertificate
 import Conjectures.FiscusGridCounterexample
 import Conjectures.FiscusGridGame
