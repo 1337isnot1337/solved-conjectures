@@ -1,0 +1,16 @@
+{
+  "before": {
+    "project_sources": 6689,
+    "project_imports": 15309,
+    "root_closure_including_roots": 3593,
+    "unresolved_project_imports": [],
+    "source_commit": "d676ae52308b71d65beac020fb2a1a591a9e6d34"
+  },
+  "after": {
+    "project_sources": 6683,
+    "project_imports": 15299,
+    "root_closure_including_roots": 3587,
+    "unresolved_project_imports": [],
+    "source_commit": "999cde6b768631069265af3461b07987831c2fba"
+  }
+}

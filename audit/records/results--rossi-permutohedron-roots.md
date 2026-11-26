@@ -59,6 +59,8 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 
 ## Verification
 
+Rebuilt the complete local import closure of `Conjectures.RossiPermutohedronEulerianDegree` (5 modules) and replayed each compiled module in the stock kernel. All 15 named endpoints passed the axiom check. [Exact scope, source digests, commands and outputs](../evidence/lean-replays/small-closures.json).
+
 - Certify the finite Rossi permutohedron sign grids — exit 0. [Command and output](../evidence/replays/025.txt).
 
 6 of 6 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).

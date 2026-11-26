@@ -63,6 +63,8 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 
 ## Verification
 
-The computational runs in this audit do not include a separate executable check for this entry.
+Rebuilt the complete local import closure of `Conjectures.GawronUlasPartitionSigns` (4 modules) and replayed each compiled module in the stock kernel. All 1 named endpoints passed the axiom check. [Exact scope, source digests, commands and outputs](../evidence/lean-replays/small-closures.json).
+
+
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).

@@ -1,0 +1,603 @@
+{
+  "results/athanasiadis-chapoton-polar-duality": {
+    "receipt": "results/athanasiadis-chapoton-polar-duality/verification/receipt.json",
+    "root": "Conjectures.AthanasiadisChapotonPolar",
+    "closure": [
+      "Conjectures.AthanasiadisChapotonChain",
+      "Conjectures.AthanasiadisChapotonGauge",
+      "Conjectures.AthanasiadisChapotonPolar",
+      "Conjectures.AthanasiadisChapotonTransfer"
+    ],
+    "count": 4,
+    "size": 42424,
+    "endpoints": [
+      "AthanasiadisChapotonPolar.height_of_gaps",
+      "AthanasiadisChapotonPolar.chainMax_dual",
+      "AthanasiadisChapotonPolar.decode_encode",
+      "AthanasiadisChapotonPolar.encode_decode",
+      "AthanasiadisChapotonPolar.gauge_reversal",
+      "AthanasiadisChapotonPolar.mem_polar_dilate_iff",
+      "AthanasiadisChapotonPolar.preorderPolar_eq_original",
+      "AthanasiadisChapotonPolar.preorder_latticePoints_finite",
+      "AthanasiadisChapotonPolar.reversal_intCast",
+      "AthanasiadisChapotonPolar.preorderReversal_smul",
+      "AthanasiadisChapotonPolar.preorderReversal_image_dilate",
+      "AthanasiadisChapotonPolar.latticePointCount_dual",
+      "AthanasiadisChapotonPolar.ehrhartSeries_dual",
+      "AthanasiadisChapotonPolar.hStarSeries_dual"
+    ],
+    "steps": [
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/AthanasiadisChapotonChain.olean",
+          "Conjectures/AthanasiadisChapotonChain.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/AthanasiadisChapotonTransfer.olean",
+          "Conjectures/AthanasiadisChapotonTransfer.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/AthanasiadisChapotonGauge.olean",
+          "Conjectures/AthanasiadisChapotonGauge.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/AthanasiadisChapotonPolar.olean",
+          "Conjectures/AthanasiadisChapotonPolar.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "--stdin"
+        ],
+        "exit": 0,
+        "output": "'AthanasiadisChapotonPolar.height_of_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.chainMax_dual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.decode_encode' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.encode_decode' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.gauge_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.mem_polar_dilate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.preorderPolar_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.preorder_latticePoints_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.reversal_intCast' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.preorderReversal_smul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.preorderReversal_image_dilate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.latticePointCount_dual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.ehrhartSeries_dual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AthanasiadisChapotonPolar.hStarSeries_dual' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "stdin": "import Conjectures.AthanasiadisChapotonPolar\n#print axioms AthanasiadisChapotonPolar.height_of_gaps\n#print axioms AthanasiadisChapotonPolar.chainMax_dual\n#print axioms AthanasiadisChapotonPolar.decode_encode\n#print axioms AthanasiadisChapotonPolar.encode_decode\n#print axioms AthanasiadisChapotonPolar.gauge_reversal\n#print axioms AthanasiadisChapotonPolar.mem_polar_dilate_iff\n#print axioms AthanasiadisChapotonPolar.preorderPolar_eq_original\n#print axioms AthanasiadisChapotonPolar.preorder_latticePoints_finite\n#print axioms AthanasiadisChapotonPolar.reversal_intCast\n#print axioms AthanasiadisChapotonPolar.preorderReversal_smul\n#print axioms AthanasiadisChapotonPolar.preorderReversal_image_dilate\n#print axioms AthanasiadisChapotonPolar.latticePointCount_dual\n#print axioms AthanasiadisChapotonPolar.ehrhartSeries_dual\n#print axioms AthanasiadisChapotonPolar.hStarSeries_dual\n"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.AthanasiadisChapotonChain"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.AthanasiadisChapotonChain"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.AthanasiadisChapotonGauge"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.AthanasiadisChapotonGauge"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.AthanasiadisChapotonPolar"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.AthanasiadisChapotonPolar"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.AthanasiadisChapotonTransfer"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.AthanasiadisChapotonTransfer"
+      }
+    ],
+    "source_sha256": {
+      "lean/Conjectures/AthanasiadisChapotonChain.lean": "619912c5ec91c0aa80655275c5bd1ce6025b89ea0e2520ac8e34ea0f799a255f",
+      "lean/Conjectures/AthanasiadisChapotonTransfer.lean": "2a2395764d603f3e0f9484b26145f7a799d5701c2a65598ecdf6425fac00fdd6",
+      "lean/Conjectures/AthanasiadisChapotonGauge.lean": "b3e8aebe28e53331df8c7e88469c703734743d82bb821f5448c8dc19ff433d9f",
+      "lean/Conjectures/AthanasiadisChapotonPolar.lean": "399a30a1fe97c0a4ae51d9ab5b8dbccf1cf76030d549ca933619beca105dabb7"
+    },
+    "success": true,
+    "reported_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "results/gawron-ulas-partition-signs": {
+    "receipt": "results/gawron-ulas-partition-signs/verification/receipt.json",
+    "root": "Conjectures.GawronUlasPartitionSigns",
+    "closure": [
+      "Conjectures.GawronUlasPartitionBounds",
+      "Conjectures.GawronUlasPartitionCusps",
+      "Conjectures.GawronUlasPartitionSeries",
+      "Conjectures.GawronUlasPartitionSigns"
+    ],
+    "count": 4,
+    "size": 38245,
+    "endpoints": [
+      "GawronUlasPartitionSigns.gawron_ulas_partition_signs"
+    ],
+    "steps": [
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GawronUlasPartitionSeries.olean",
+          "Conjectures/GawronUlasPartitionSeries.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GawronUlasPartitionCusps.olean",
+          "Conjectures/GawronUlasPartitionCusps.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GawronUlasPartitionBounds.olean",
+          "Conjectures/GawronUlasPartitionBounds.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GawronUlasPartitionSigns.olean",
+          "Conjectures/GawronUlasPartitionSigns.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "--stdin"
+        ],
+        "exit": 0,
+        "output": "'GawronUlasPartitionSigns.gawron_ulas_partition_signs' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "stdin": "import Conjectures.GawronUlasPartitionSigns\n#print axioms GawronUlasPartitionSigns.gawron_ulas_partition_signs\n"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GawronUlasPartitionBounds"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GawronUlasPartitionBounds"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GawronUlasPartitionCusps"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GawronUlasPartitionCusps"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GawronUlasPartitionSeries"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GawronUlasPartitionSeries"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GawronUlasPartitionSigns"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GawronUlasPartitionSigns"
+      }
+    ],
+    "source_sha256": {
+      "lean/Conjectures/GawronUlasPartitionSeries.lean": "17b9ce5c7aef502d7f97218dfea7b999de2e7364ef6a49248c5a4894573360e2",
+      "lean/Conjectures/GawronUlasPartitionCusps.lean": "899541d6ff259b3ee7527e6797f4c13242ef5bf4851fbbf71319af7daad21fe2",
+      "lean/Conjectures/GawronUlasPartitionBounds.lean": "947b2f8ef6690f690cfb6ab712fd9930e7a6c47c675af7a14c477d158db4e6ba",
+      "lean/Conjectures/GawronUlasPartitionSigns.lean": "e5c9aa7b68a2abf6c449a94124937a07af0a9751e045d0f9467435bdc5b11652"
+    },
+    "success": true,
+    "reported_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "results/gyarfas-planar-degree-repetition": {
+    "receipt": "results/gyarfas-planar-degree-repetition/verification/sixteen-receipt.json",
+    "root": "Conjectures.GyarfasPlanarWitness",
+    "closure": [
+      "Conjectures.GyarfasPlanarLines",
+      "Conjectures.GyarfasPlanarRational",
+      "Conjectures.GyarfasPlanarWitness"
+    ],
+    "count": 3,
+    "size": 9155,
+    "endpoints": [
+      "GyarfasPlanar.locus_injective",
+      "GyarfasPlanar.spanned_line",
+      "GyarfasPlanar.card_spannedLines",
+      "GyarfasPlanar.realPoint_injective",
+      "GyarfasPlanar.direction_realPoint",
+      "GyarfasPlanar.card_real_lines",
+      "GyarfasPlanar.multiplicity_real",
+      "GyarfasPlanar.axis_triangle_noncollinear",
+      "GyarfasPlanar.multiplicity_from_points",
+      "GyarfasPlanar.sixteen_count",
+      "GyarfasPlanar.sixteen_rational_multiplicity",
+      "GyarfasPlanar.sixteen_attains_two",
+      "GyarfasPlanar.sixteen_real"
+    ],
+    "steps": [
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GyarfasPlanarLines.olean",
+          "Conjectures/GyarfasPlanarLines.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GyarfasPlanarRational.olean",
+          "Conjectures/GyarfasPlanarRational.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/GyarfasPlanarWitness.olean",
+          "Conjectures/GyarfasPlanarWitness.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "--stdin"
+        ],
+        "exit": 0,
+        "output": "'GyarfasPlanar.locus_injective' depends on axioms: [propext, Quot.sound]\n'GyarfasPlanar.spanned_line' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.card_spannedLines' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.realPoint_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.direction_realPoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.card_real_lines' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.multiplicity_real' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.axis_triangle_noncollinear' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.multiplicity_from_points' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.sixteen_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.sixteen_rational_multiplicity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.sixteen_attains_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GyarfasPlanar.sixteen_real' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "stdin": "import Conjectures.GyarfasPlanarWitness\n#print axioms GyarfasPlanar.locus_injective\n#print axioms GyarfasPlanar.spanned_line\n#print axioms GyarfasPlanar.card_spannedLines\n#print axioms GyarfasPlanar.realPoint_injective\n#print axioms GyarfasPlanar.direction_realPoint\n#print axioms GyarfasPlanar.card_real_lines\n#print axioms GyarfasPlanar.multiplicity_real\n#print axioms GyarfasPlanar.axis_triangle_noncollinear\n#print axioms GyarfasPlanar.multiplicity_from_points\n#print axioms GyarfasPlanar.sixteen_count\n#print axioms GyarfasPlanar.sixteen_rational_multiplicity\n#print axioms GyarfasPlanar.sixteen_attains_two\n#print axioms GyarfasPlanar.sixteen_real\n"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GyarfasPlanarLines"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GyarfasPlanarLines"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GyarfasPlanarRational"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GyarfasPlanarRational"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.GyarfasPlanarWitness"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.GyarfasPlanarWitness"
+      }
+    ],
+    "source_sha256": {
+      "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407",
+      "lean/Conjectures/GyarfasPlanarRational.lean": "eaf3f83475755af6c787971ff1519725e6a79a74af0f0e68add040c503e5d5ce",
+      "lean/Conjectures/GyarfasPlanarWitness.lean": "1e797ba11a9e665d12a6d7a741aca8ddcdc77b2917810ff7e4003edaa7c43169"
+    },
+    "success": true,
+    "reported_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "results/nuttall-cumulants": {
+    "receipt": "results/nuttall-cumulants/verification/asymptotic/receipt.json",
+    "root": "Conjectures.NuttallThetaTail",
+    "closure": [
+      "Conjectures.NuttallThetaKernel",
+      "Conjectures.NuttallThetaTail"
+    ],
+    "count": 2,
+    "size": 18947,
+    "endpoints": [
+      "NuttallCumulants.thetaTerm_pos",
+      "NuttallCumulants.thetaTerm_norm_summable",
+      "NuttallCumulants.thetaKernel_le_decay",
+      "NuttallCumulants.thetaKernel_continuousOn",
+      "NuttallCumulants.cumulantIntegrand_integrable",
+      "NuttallCumulants.thetaCumulant_pos",
+      "NuttallCumulants.thetaCumulant_kernel_order_one",
+      "NuttallCumulants.thetaTerm_zero_eq",
+      "NuttallCumulants.thetaTerm_succ_le_tailMajorant",
+      "NuttallCumulants.thetaKernel_first_mode_bounds",
+      "NuttallCumulants.thetaKernel_div_lead_tendsto_one",
+      "NuttallCumulants.thetaKernel_le_double_exp"
+    ],
+    "steps": [
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/NuttallThetaKernel.olean",
+          "Conjectures/NuttallThetaKernel.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/NuttallThetaTail.olean",
+          "Conjectures/NuttallThetaTail.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "--stdin"
+        ],
+        "exit": 0,
+        "output": "'NuttallCumulants.thetaTerm_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaTerm_norm_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaKernel_le_decay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaKernel_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.cumulantIntegrand_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaCumulant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaCumulant_kernel_order_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaTerm_zero_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaTerm_succ_le_tailMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaKernel_first_mode_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaKernel_div_lead_tendsto_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NuttallCumulants.thetaKernel_le_double_exp' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "stdin": "import Conjectures.NuttallThetaTail\n#print axioms NuttallCumulants.thetaTerm_pos\n#print axioms NuttallCumulants.thetaTerm_norm_summable\n#print axioms NuttallCumulants.thetaKernel_le_decay\n#print axioms NuttallCumulants.thetaKernel_continuousOn\n#print axioms NuttallCumulants.cumulantIntegrand_integrable\n#print axioms NuttallCumulants.thetaCumulant_pos\n#print axioms NuttallCumulants.thetaCumulant_kernel_order_one\n#print axioms NuttallCumulants.thetaTerm_zero_eq\n#print axioms NuttallCumulants.thetaTerm_succ_le_tailMajorant\n#print axioms NuttallCumulants.thetaKernel_first_mode_bounds\n#print axioms NuttallCumulants.thetaKernel_div_lead_tendsto_one\n#print axioms NuttallCumulants.thetaKernel_le_double_exp\n"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.NuttallThetaKernel"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.NuttallThetaKernel"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.NuttallThetaTail"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.NuttallThetaTail"
+      }
+    ],
+    "source_sha256": {
+      "lean/Conjectures/NuttallThetaKernel.lean": "0cd0c52e0411a955d4d1e2d29e64bf850425380785c1a3f69f582485af6cdbf9",
+      "lean/Conjectures/NuttallThetaTail.lean": "8a4156f331740e5b5c4841a7f51812ffc5ad7ec187a0fc53d1d71673c9d55a18"
+    },
+    "success": true,
+    "reported_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "results/rossi-permutohedron-roots": {
+    "receipt": "results/rossi-permutohedron-roots/verification/receipt.json",
+    "root": "Conjectures.RossiPermutohedronEulerianDegree",
+    "closure": [
+      "Conjectures.RossiPermutohedronEulerianData",
+      "Conjectures.RossiPermutohedronEulerianDegree",
+      "Conjectures.RossiPermutohedronReduction",
+      "Conjectures.RossiPermutohedronSignGrid",
+      "Conjectures.RossiPermutohedronTransform"
+    ],
+    "count": 5,
+    "size": 17592,
+    "endpoints": [
+      "RossiPermutohedron.interior_root",
+      "RossiPermutohedron.negative_roots_from_grid",
+      "RossiPermutohedron.positive_root_of_deriv_neg",
+      "RossiPermutohedron.roots_exact_of_sign_grid",
+      "RossiPermutohedron.reciprocalShift_eval_iff",
+      "RossiPermutohedron.reciprocalShift_exact_roots",
+      "RossiPermutohedron.shiftedEulerian_natDegree",
+      "RossiPermutohedron.shiftedEulerian_derivative_eval0",
+      "RossiPermutohedron.rossi_reduction_of_grid",
+      "RossiPermutohedron.eulerianRec_derivative0",
+      "RossiPermutohedron.shiftedEulerianRec_deriv_neg",
+      "RossiPermutohedron.eulerianRec_positive_root",
+      "RossiPermutohedron.eulerianStep_coeff_succ",
+      "RossiPermutohedron.eulerianRec_degree",
+      "RossiPermutohedron.eulerianRec_roots_of_grid"
+    ],
+    "steps": [
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/RossiPermutohedronSignGrid.olean",
+          "Conjectures/RossiPermutohedronSignGrid.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/RossiPermutohedronTransform.olean",
+          "Conjectures/RossiPermutohedronTransform.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/RossiPermutohedronReduction.olean",
+          "Conjectures/RossiPermutohedronReduction.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/RossiPermutohedronEulerianData.olean",
+          "Conjectures/RossiPermutohedronEulerianData.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "-o",
+          "$BUILD/Conjectures/RossiPermutohedronEulerianDegree.olean",
+          "Conjectures/RossiPermutohedronEulerianDegree.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "--stdin"
+        ],
+        "exit": 0,
+        "output": "'RossiPermutohedron.interior_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.negative_roots_from_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.positive_root_of_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.roots_exact_of_sign_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.reciprocalShift_eval_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.reciprocalShift_exact_roots' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.shiftedEulerian_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.shiftedEulerian_derivative_eval0' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.rossi_reduction_of_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.eulerianRec_derivative0' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.shiftedEulerianRec_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.eulerianRec_positive_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.eulerianStep_coeff_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.eulerianRec_degree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RossiPermutohedron.eulerianRec_roots_of_grid' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "stdin": "import Conjectures.RossiPermutohedronEulerianDegree\n#print axioms RossiPermutohedron.interior_root\n#print axioms RossiPermutohedron.negative_roots_from_grid\n#print axioms RossiPermutohedron.positive_root_of_deriv_neg\n#print axioms RossiPermutohedron.roots_exact_of_sign_grid\n#print axioms RossiPermutohedron.reciprocalShift_eval_iff\n#print axioms RossiPermutohedron.reciprocalShift_exact_roots\n#print axioms RossiPermutohedron.shiftedEulerian_natDegree\n#print axioms RossiPermutohedron.shiftedEulerian_derivative_eval0\n#print axioms RossiPermutohedron.rossi_reduction_of_grid\n#print axioms RossiPermutohedron.eulerianRec_derivative0\n#print axioms RossiPermutohedron.shiftedEulerianRec_deriv_neg\n#print axioms RossiPermutohedron.eulerianRec_positive_root\n#print axioms RossiPermutohedron.eulerianStep_coeff_succ\n#print axioms RossiPermutohedron.eulerianRec_degree\n#print axioms RossiPermutohedron.eulerianRec_roots_of_grid\n"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.RossiPermutohedronEulerianData"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.RossiPermutohedronEulerianData"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.RossiPermutohedronEulerianDegree"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.RossiPermutohedronEulerianDegree"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.RossiPermutohedronReduction"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.RossiPermutohedronReduction"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.RossiPermutohedronSignGrid"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.RossiPermutohedronSignGrid"
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Conjectures.RossiPermutohedronTransform"
+        ],
+        "exit": 0,
+        "output": "replaying Conjectures.RossiPermutohedronTransform"
+      }
+    ],
+    "source_sha256": {
+      "lean/Conjectures/RossiPermutohedronSignGrid.lean": "c9c4f1e92947ee0f76b1794c3f9bd8001fd6798e2addb7142b6825c5deaf8f6f",
+      "lean/Conjectures/RossiPermutohedronTransform.lean": "25a6e57c7fbdf376e9027239cba7f7aa85cb65ca568bffbe82c2e2ee2dddb838",
+      "lean/Conjectures/RossiPermutohedronReduction.lean": "16ddf3ed048d254ab0c89e28e6b18105d39dc620a2898946522360abd8e0d910",
+      "lean/Conjectures/RossiPermutohedronEulerianData.lean": "40fbe79b9fe343662a2b5399f8ba63dd22f17f5aa722b2d63671f0d8e126f4fe",
+      "lean/Conjectures/RossiPermutohedronEulerianDegree.lean": "3e1f0b5532f18feb9111969e59f7c0231f05344082757c9a618201146e88f61f"
+    },
+    "success": true,
+    "reported_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

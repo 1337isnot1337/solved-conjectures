@@ -44,6 +44,8 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 
 ## Verification
 
+Rebuilt the complete local import closure of `Conjectures.GyarfasPlanarWitness` (3 modules) and replayed each compiled module in the stock kernel. All 13 named endpoints passed the axiom check. [Exact scope, source digests, commands and outputs](../evidence/lean-replays/small-closures.json).
+
 - Count the incident lines in the Gyárfás planar construction — exit 0. [Command and output](../evidence/replays/018.txt).
 
 2 of 2 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).

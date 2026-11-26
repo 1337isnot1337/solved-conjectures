@@ -67,6 +67,8 @@ The dates and titles identify candidates for comparison. The audit finding recor
 
 ## Verification
 
+Rebuilt the complete local import closure of `Conjectures.AthanasiadisChapotonPolar` (4 modules) and replayed each compiled module in the stock kernel. All 14 named endpoints passed the axiom check. [Exact scope, source digests, commands and outputs](../evidence/lean-replays/small-closures.json).
+
 - Additional results/athanasiadis-chapoton-polar-duality/check.py — exit 0. [Command and output](../evidence/replays/120.txt).
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).
