@@ -18,6 +18,8 @@ jobs:
         run: |
           python3 results/alexandersson-graphical-dist/check.py
           python3 results/alexandersson-graphical-dist/check_unions.py
+      - name: Check oriented spectrum nonconstancy witnesses
+        run: python3 results/oriented-general-position-spectrum-nonconstancy/verify.py
       - name: Check the two-leaf orientation characterization
         run: python3 results/lower-oriented-general-position-np-hardness/verify.py
       - name: Check the counterexamples to the lower general position product bound
