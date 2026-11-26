@@ -65,6 +65,11 @@ ensures factor frequencies for an infinite deterministic transducer
 output on such an input. In particular the frequency of the bit 1
 exists in $b$, and it is at least $1/K$.
 
+[The component argument](sturmian-components.md) gives an independent
+finite-state reduction to Boshernitzan's theorem and shows that the
+possible limiting densities for fixed parameters form a finite subset
+of $\mathbb Q+\theta\mathbb Q$.
+
 ## The remaining phase issue
 
 For $B=(1/3,2/3)$ the sum-free property is immediate. The hypothesis
@@ -111,4 +116,114 @@ to $61/540$. This is an exact statement about the rational truncated
 model. It shows that even phase-localized discrepancies can change a
 model's output frequency permanently.
 
+In fact, exterior positive corrections alone can also destroy a live
+orbit. The same verifier adds four bits at positions 224, 316, 338 and
+360 during a period starting in state 21990232719360. The resulting
+end state is zero. Starting from zero, adding two bits at positions
+202 and 338 returns to state 21990232719360 after one period. All these
+added bits have phases outside the open gate and within $4/540$ of
+one of its endpoints. Alternating increasingly dominant blocks of
+the zero and positive orbits using these transitions gives a word
+whose prefix densities have subsequential limits 0 and $61/540$.
+The lengths can grow doubly exponentially in the number of switches,
+so there are only $O(\log\log N)$ correction sites up to $N$. A sign
+restriction on corrections is therefore insufficient even in this
+phase-localized example.
+
 Run the orbit checks with `python3 -B phase_orbits.py`.
+
+## An exact circle solution for the cutoff at 51
+
+For every irrational $\theta$ strictly between $2219/5422$ and
+$35725/87292$, the model with shifts at most 51 also has an exact
+rotation coding. Take the 34 ordered endpoints
+$1/3+k\theta\bmod 1$ specified in [the fixed-point verifier](phase_fixed_point.py)
+and let $J$ be the union of the 17 open intervals between alternate
+consecutive endpoints. On each of the 277 cells cut out by the gate,
+these endpoints and their translates by every shift, the verifier
+checks the phase equation
+
+```math
+\mathbf1_J(x)=\mathbf1_{(1/3,2/3)}(x)
+\mathbf1_{\left\{\sum_{s\in U\cap[1,51]}\mathbf1_J(x-s\theta)=1\right\}}.
+```
+
+All cuts are affine in $\theta$ with a fixed order over the specified
+interval, so the checks at a rational interior sample apply throughout.
+At irrational slope the orbit of 0 never hits any relevant internal
+cut, since every one has rational part $1/3$ or $2/3$ modulo an
+integer. The equation gives the exact truncated update along that
+orbit. The lengths of the intervals sum to $142\theta-58$, hence
+equidistribution gives this natural density for the reference word.
+
+At phase $1237/4000$ the same verifier finds exactly one small-summand
+representation, using 48, and excludes the phase from $J+J$. These
+checks persist on an open phase interval. If the genuine prefix
+through 51 were continued by exactly this rotation word, arbitrarily
+large targets in that phase interval would have to be added by the
+full greedy rule. The gated reference therefore fails to continue the
+true prefix. Run the certificate with `python3 -B phase_fixed_point.py`.
+
+## Synchronization for the exact model with cutoff 69
+
+Put $\theta_0=350477575/856371966$. For every irrational slope with
+$`|\theta-\theta_0|<10^{-10}`$, the exact gated model with all genuine
+shifts at most 69 has only two possible tail behaviors. It either
+becomes identically zero or agrees eventually with a fixed circle
+coding of density $550\theta-225$.
+
+[The fixed-point verifier](phase_fixed_point.py) checks a reference
+word on 44 intervals with endpoints $2/3+k\theta$ modulo 1, using
+the same affine-cell check as for the model with cutoff 51. It applies
+on the slope interval $(2219/5422,35725/87292)$, which contains the
+entire stated neighborhood of $\theta_0$.
+
+[The state-rank verifier](phase_state_rank.cpp) analyzes the rotation
+starting at phase $502/5422$ with slope $\theta_0$. It includes 69 past
+steps and 16,696 forward steps. All phases in this finite word are
+at distance greater than $1/200000$ from the endpoints of the gate.
+Changing the initial phase by less than $10^{-6}$ and the slope by
+less than $10^{-10}$ therefore preserves the entire gate word. The
+verifier enumerates all $2^{21}$ initial memories allowed by the
+69 past gates. The forward word maps them to exactly two memories,
+one of which is zero.
+
+Every trajectory, once its memory contains only output bits, visits
+the stated open initial phase interval by irrational rotation. The
+reference trajectory also passes through every such word and cannot
+map to zero, since it has positive density and zero memory is
+absorbing. The other endpoint memory is therefore exactly the
+reference memory. Continuing deterministically from either endpoint
+gives the two claimed tail behaviors. This synchronization concerns
+the exact truncated model. The original recurrence includes further
+shifts and uncontrolled boundary updates.
+
+```sh
+c++ -std=c++20 -O3 phase_state_rank.cpp -o /tmp/ulam-phase-state-rank
+/tmp/ulam-phase-state-rank
+```
+
+## A zero-density completion satisfying the core constraints
+
+One fixed phase relaxation also admits a zero-density completion of a
+long genuine prefix. Use the rational phase $350477575/856371966$, a
+shift cutoff of 4095, and $\varepsilon=1/50$. The relaxation requires
+all selected phases beyond the cutoff to lie in
+$[1/3-\varepsilon,2/3+\varepsilon]$. At targets above twice the cutoff
+with phase in $(1/3+2\varepsilon,2/3-2\varepsilon)$ it enforces the
+exact-one rule using all 382 known shifts.
+
+The [phase probe](phase_probe.cpp) verifies a completion that agrees
+with $U$ through one million, appends the indicated finite list and
+then has a full memory of zeros. It also verifies that from a zero
+memory one can insert the two positions 2000072 and 2000074 and return
+to zero memory. The rational denominator $q=856371966$ is a period
+of every phase condition. It follows that the two-point pulse may
+be translated by $q j^2$ for each nonnegative integer $j$ and
+inserted after the extinction without interactions between pulses.
+The resulting word is infinite, has zero natural density, preserves
+the genuine prefix, and satisfies the stated core constraints.
+
+This completion uses free boundary bits. The full Ulam recurrence
+fixes those bits by counting the remaining large-summand pairs. It is
+that additional information which this relaxation leaves out.

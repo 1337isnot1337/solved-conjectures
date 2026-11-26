@@ -8,8 +8,12 @@ using Membership = std::vector<unsigned char>;
 constexpr std::uint64_t numerator = 350477575;
 constexpr std::uint64_t denominator = 856371966;
 
+std::uint64_t phase(int value) {
+    return numerator * value % denominator;
+}
+
 bool middle_third(int value) {
-    const auto residue = numerator * value % denominator;
+    const auto residue = phase(value);
     return 3 * residue > denominator && 3 * residue < 2 * denominator;
 }
 
@@ -110,6 +114,63 @@ bool check_dilation(const Membership& membership, int scale) {
     return true;
 }
 
+bool check_relaxed_phase_tail(const Membership& original) {
+    constexpr int memory = 4095;
+    constexpr int start = 1'000'000;
+    constexpr int burst = 2'000'072;
+    const std::vector<int> completion{0, 2, 19, 49, 51, 71, 73, 88, 90, 308, 310};
+    const std::vector<int> pulse{0, 2};
+
+    auto extended = [](int n) {
+        const auto r = 150 * phase(n);
+        return 47 * denominator <= r && r <= 103 * denominator;
+    };
+    auto core = [](int n) {
+        const auto r = 150 * phase(n);
+        return 56 * denominator < r && r < 94 * denominator;
+    };
+
+    std::vector<int> shifts;
+    for (int s = 1; s <= memory; ++s) {
+        if (original[s]) {
+            shifts.push_back(s);
+        }
+    }
+    Membership edited(original.begin(), original.begin() + start);
+    edited.resize(start + completion.back() + memory + 1);
+    for (int x : completion) {
+        edited[start + x] = 1;
+    }
+    if (edited[start] != original[start]) {
+        return false;
+    }
+    for (int n = memory + 1; n < static_cast<int>(edited.size()); ++n) {
+        if (!extended(n) && edited[n]) {
+            return false;
+        }
+        if (n > 2 * memory && core(n)) {
+            const auto ways = std::count_if(shifts.begin(), shifts.end(),
+                [&](int s) { return edited[n - s]; });
+            if (edited[n] != (ways == 1)) {
+                return false;
+            }
+        }
+    }
+
+    for (int j = 0; j <= memory + pulse.back(); ++j) {
+        const bool accepted = std::binary_search(pulse.begin(), pulse.end(), j);
+        const auto ways = std::count_if(shifts.begin(), shifts.end(), [&](int s) {
+            return std::binary_search(pulse.begin(), pulse.end(), j - s);
+        });
+        if ((!extended(burst + j) && accepted)
+            || (core(burst + j) && accepted != (ways == 1))) {
+            return false;
+        }
+    }
+    std::cout << "Verified the extinct continuation and the two-point repeatable pulse.\n";
+    return true;
+}
+
 int main() {
     constexpr int cutoff = 100'000'000;
     const Membership membership = generate_by_phase(cutoff);
@@ -119,5 +180,9 @@ int main() {
         return 1;
     }
     std::cout << "Exact prefix through one million agrees bit for bit.\n";
+    if (!check_relaxed_phase_tail(reference)) {
+        std::cerr << "The relaxed phase countermodel failed.\n";
+        return 1;
+    }
     return check_dilation(membership, 2) && check_dilation(membership, 3) ? 0 : 1;
 }
