@@ -1033,6 +1033,8 @@ modules=(
   Conjectures.CKZUpstream.D5.S0.Diagonal.Probability.EquivariantEscape
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.DerangementRatioNonconvergence
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.ActualCardinality
+  Conjectures.SeparableDerangementDisplacement
+  Conjectures.SeparableDerangementDiagonalCounts
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CappedExploration
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CutFactorization
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.EndpointHistoryKernel
