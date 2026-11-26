@@ -6,16 +6,16 @@ This formalization proves Conjectures 7.3 and 7.2 of Ira M. Gessel and Yan Zhuan
 
 For every positive size `N` and every pinnacle set `S`, the literal polynomial
 
-\[
-\sum_{\pi\in\mathfrak S_N,\ \operatorname{Pin}(\pi)=S}
- t^{\operatorname{ides}(\pi)+1}
-\]
+```math
+\sum_{\pi\in\mathfrak S_N,\ \mathop{\mathrm{Pin}}(\pi)=S}
+ t^{\mathop{\mathrm{ides}}(\pi)+1}
+```
 
 has a nonnegative real expansion in
 
-\[
+```math
 t^j(1+t)^{N+1-2j},\qquad 0\le j\le\lfloor(N+1)/2\rfloor.
-\]
+```
 
 The same conclusion holds when permutations are selected by their literal number of interior peaks. These are two source conjectures in one existing result entry and count as one completed formalization.
 
@@ -55,9 +55,9 @@ Coefficient nonnegativity and the degree bound are proved inductively from the s
 
 The generic gamma theorem proves all factorization steps. It handles the zero polynomial and removes initial powers of `X`. Nonzero roots are negative. A root at `-1` gives a factor `1+X`; other roots occur in reciprocal pairs, giving
 
-\[
+```math
 (1+X)^2+(-r-r^{-1}-2)X
-\]
+```
 
 with a nonnegative second coefficient. The quotient's real splitting, coefficient nonnegativity, degree bound, and reflection identity are derived from the original polynomial, not assumed. Finite sums and the final multiplication by `X` preserve the required gamma expansion.
 

@@ -32,12 +32,12 @@ The universal quantifiers are essential. The manuscript's Theorem 1.8 concerns s
 
 **Theorem.** For every fixed integer $n\ge0$, each of the sets
 
-$$
+```math
 \{r\ge0:(-1)^r\Delta^r\gamma(n)>0\},
 \qquad
 \{r\ge0:(-1)^r\Delta^r\gamma(n)<0\}
 \tag{2}
-$$
+```
 
 is infinite.
 
@@ -60,12 +60,12 @@ $\Theta(w)=\xi(1/2+\sqrt w)$. Formula (3), rather than a choice of square-root b
 
 Comparing (1) and (3) gives
 
-$$
+```math
 G(w)=\sum_{m=0}^{\infty}\gamma(m)\frac{w^m}{m!},
 \qquad
 \gamma(m)=\frac{m!}{8\,4^m(2m)!}\xi^{(2m)}(1/2)>0,
 \tag{4}
-$$
+```
 
 and, for real $t$,
 
@@ -108,16 +108,16 @@ We use the following elementary fact.
 
 Otherwise there are arbitrarily large indices with positive coefficients. All negative coefficients lie in a finite set. Choose $K$ containing that set and choose $m>K$ with $a_m>0$. Absolute convergence on the positive axis and nonnegativity of all remaining terms give
 
-$$
+```math
 H(x)\ge a_mx^m-
  \sum_{\substack{0\le k\le K\\a_k<0}}|a_k|x^k>0
 \qquad\text{for all sufficiently large }x>0.
 \tag{8}
-$$
+```
 
 An infinite set of distinct positive zeros of a nonzero entire function is unbounded: otherwise it has a finite accumulation point and the identity theorem makes $H$ identically zero. Thus (8) is a contradiction. Apply the same argument to $-H$ to exclude eventual nonpositivity. $\square$
 
-Hardy's 1914 theorem [H] says that $\zeta(s)$ has infinitely many zeros on $\operatorname{Re}s=1/2$. Equivalently, $\Xi(t)$ has infinitely many distinct real zeros. Reality, evenness, and discreteness give an unbounded sequence of positive zero ordinates. By (5), $G$ therefore has infinitely many distinct negative real zeros tending to $-\infty$.
+Hardy's 1914 theorem [H] says that $`\zeta(s)`$ has infinitely many zeros on $\mathop{\mathrm{Re}}s=1/2$. Equivalently, $\Xi(t)$ has infinitely many distinct real zeros. Reality, evenness, and discreteness give an unbounded sequence of positive zero ordinates. By (5), $G$ therefore has infinitely many distinct negative real zeros tending to $-\infty$.
 
 Rolle's theorem between consecutive such zeros shows that $G'$ has infinitely many negative real zeros tending to $-\infty$. Repeating the argument proves the same statement for $G^{(n)}$, for every fixed $n\ge0$. Multiple zeros cause no problem; no simplicity hypothesis is used.
 
@@ -169,9 +169,9 @@ $$
 
 To evaluate their moments, let $\mathcal L$ be the linear functional on real polynomials given by $\mathcal L(x^k)=b_k$. Then
 
-$$
+```math
 w_{M,j}=\mathcal L\!\left(\binom Mj x^j(1-x)^{M-j}\right).
-$$
+```
 
 The three elementary Bernstein-basis identities yield
 
@@ -292,7 +292,7 @@ The reviews confirm the mathematical disproof of the specified manuscript statem
 
 - [WY] Larry X. W. Wang and Neil N. Y. Yang, *Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function*. Author manuscript, Conjecture 1.10, printed page 6; coefficient normalization, printed page 2. Published bibliographic record: *Trans. Amer. Math. Soc.* **377** (2024), 4703–4725.
 - [OS] Cormac O'Sullivan, *Zeros of Jensen polynomials and asymptotics for the Riemann xi function*, *Research in the Mathematical Sciences* **8** (2021), 46. Section 1, especially (1.1)–(1.2), gives the entire-function order and positive-coefficient convention. DOI: 10.1007/s40687-020-00240-5.
-- [H] G. H. Hardy, *Sur les zéros de la fonction $\zeta(s)$ de Riemann*, *Comptes rendus de l'Académie des sciences de Paris* **158** (1914), 1012–1014. The linked transcription of the original paper's first page states critical-line infinitude. Its scan page number 1014 corresponds to printed page 1012.
+- [H] G. H. Hardy, *Sur les zéros de la fonction $`\zeta(s)`$ de Riemann*, *Comptes rendus de l'Académie des sciences de Paris* **158** (1914), 1012–1014. The linked transcription of the original paper's first page states critical-line infinitude. Its scan page number 1014 corresponds to printed page 1012.
 - [Pindex], [Ptheory] pudim-project, APP-0085 and the corresponding version-022 theory section. Used only to record the existing counterexample to the distinct general Laguerre–Pólya question.
 - [K] Keita Kawano, *Logarithmic Inequalities of Arbitrary Order for the Riemann Xi Coefficients*, preprint version 1, posted 2026-11-04. Used for the scope and status of the separate logarithmic conjecture.
 

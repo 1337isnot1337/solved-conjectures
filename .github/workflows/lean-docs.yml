@@ -7,6 +7,9 @@ on:
       - '**/*.markdown'
       - '**/*.mdx'
       - '**/*.lean'
+      - 'scripts/check_github_math.py'
+      - 'scripts/test_check_github_math.py'
+      - 'scripts/build_site.py'
       - 'scripts/check_lean_docs.py'
       - 'scripts/test_check_lean_docs.py'
       - '.github/workflows/lean-docs.yml'
@@ -29,3 +32,19 @@ jobs:
       - run: python -m pip install markdown-it-py==4.2.0
       - run: python scripts/test_check_lean_docs.py
       - run: python scripts/check_lean_docs.py
+
+  github-math:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y pandoc
+      - run: python3 scripts/test_check_github_math.py
+      - name: Compare source equations with GitHub Markdown output
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: python3 scripts/check_github_math.py --changed-since "$BASE_SHA"

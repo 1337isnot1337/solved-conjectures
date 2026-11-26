@@ -16,8 +16,8 @@ Write $`b(l,j)=\Pr(\mathrm{Bin}(l,p)=j)`$, with zero mass outside $`0\le j\le l`
 
 ```math
 w_s=\begin{cases}
-1 & s<h,\\
-\max_{0\le j\le h}b(s-h,t-j)&s\ge h.
+1 & s\lt h,
+\\ \max_{0\le j\le h}b(s-h,t-j)&s\ge h.
 \end{cases}
 ```
 

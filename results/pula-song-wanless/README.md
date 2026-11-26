@@ -18,8 +18,8 @@ The support is cohesive exactly when `n<m+sqrt(m)`. It is never barycentric for 
 
 ```math
 A_0=\begin{pmatrix}
-\frac{n-m}{n}I_n&\frac1nJ_{n,m}\\
-\frac1nJ_{m,n}&0_m
+\frac{n-m}{n}I_n&\frac1nJ_{n,m}
+\\ \frac1nJ_{m,n}&0_m
 \end{pmatrix},
 \qquad
 \mathop{\mathrm{per}} A_0=

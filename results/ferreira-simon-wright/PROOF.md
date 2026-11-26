@@ -28,7 +28,7 @@ For $0\lt \beta\lt 1$, their Theorem D defines $\alpha_*(\beta)$ as the unique r
 \tag{1}
 ```
 
-Their proof in §5.1 shows that the left side is positive for $0\lt \alpha\lt \alpha_*(\beta)$ and negative for $\alpha_*(\beta)\lt \alpha\lt 1$. They set $\alpha_*(0)=1$, and also set $\alpha_*(\beta)=1$ for $\beta\geq1$.
+Their proof in §5.1 shows that the left side is positive for $`0\lt \alpha\lt \alpha_*(\beta)`$ and negative for $`\alpha_*(\beta)\lt \alpha\lt 1`$. They set $`\alpha_*(0)=1`$, and also set $`\alpha_*(\beta)=1`$ for $\beta\geq1$.
 
 The unnumbered conjecture in §6.4 asserts, for all admissible parameters,
 
@@ -52,21 +52,21 @@ Source: R. A. C. Ferreira and T. Simon, *On the log-concavity of the Wright func
 
 1. For every sufficiently small $t>0$, the parameters
 
-   ```math
-   \alpha=1-t,\qquad\beta=0
-   \tag{3}
-   ```
+```math
+\alpha=1-t,\qquad\beta=0
+\tag{3}
+```
 
-   satisfy $\alpha\lt \alpha_*(0)=1$, but $p_{\alpha,0}$ is not log concave.
+satisfy $\alpha\lt \alpha_*(0)=1$, but $p_{\alpha,0}$ is not log concave.
 
 2. For every sufficiently small $t>0$, the parameters
 
-   ```math
-   \alpha=1-3t,\qquad\beta=t
-   \tag{4}
-   ```
+```math
+\alpha=1-3t,\qquad\beta=t
+\tag{4}
+```
 
-   satisfy $\alpha\lt \alpha_*(\beta)$, but $p_{\alpha,\beta}$ is not log concave.
+satisfy $\alpha\lt \alpha_*(\beta)$, but $p_{\alpha,\beta}$ is not log concave.
 
 In both cases the log-concavity inequality fails at $x=1/2$. Thus the first implication in (2) is false, including at interior parameters with $\beta>0$.
 
@@ -177,7 +177,7 @@ h_{1,0}(x)=\frac{x}{(1-x)^2},
 (h_{1,0},h_{1,0}',h_{1,0}'')(1/2)=(2,12,80),
 ```
 
-so $\Psi_{f_t}(1/2)/t^2\to-16$. It follows that $\Psi_{f_t}(1/2)\lt 0$ for all sufficiently small positive $t$. The source's extension $\alpha_*(0)=1$ makes the threshold condition automatic.
+so $\Psi_{f_t}(1/2)/t^2\to-16$. It follows that $\Psi_{f_t}(1/2)\lt 0$ for all sufficiently small positive $t$. The source's extension $`\alpha_*(0)=1`$ makes the threshold condition automatic.
 
 For the interior family (4), take $a=3,b=1$. Then
 

@@ -13,7 +13,8 @@ from markdown_it import MarkdownIt
 ROOT = Path(__file__).resolve().parents[1]
 MARKDOWN = MarkdownIt("commonmark").enable("table")
 LEAN_DOC = re.compile(r"(?:lean|formalization)", re.IGNORECASE)
-LEGACY_MATH = re.compile(r"(?<!\\)\\[\[(]|(?m:^\s*\$\$)")
+BACKSLASH_MATH = re.compile(r"(?<!\\)\\[][()]")
+DOLLAR_DISPLAY = re.compile(r"(?m)^\s*\$\$")
 INLINE_CODE = re.compile(r"(`+)(?!`).*?(?<!`)\1(?!`)", re.DOTALL)
 RUN_IN_MATH_FENCE = re.compile(r"(?m)^\s*```[^`\r\n]+```math\s*$")
 MAX_LEAN_REPORT_BYTES = 200 * 1024
@@ -25,6 +26,9 @@ def cell_count(line):
 
 
 def check_document(root, path, source):
+    for number, line in enumerate(source.split("\n"), 1):
+        if re.search(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", line):
+            yield number, "unexpected control character in Markdown; check for a damaged TeX command"
     lines = source.splitlines()
     lean_doc = path.parts[0] == "lean" or LEAN_DOC.search(path.stem)
     if lean_doc and len(source.encode("utf-8")) > MAX_LEAN_REPORT_BYTES:
@@ -57,7 +61,8 @@ def check_document(root, path, source):
         start = token.map[0] + 1
         if RUN_IN_MATH_FENCE.search(token.content):
             yield start, "put the math fence language and the closing fence on separate lines"
-        if lean_doc and LEGACY_MATH.search(INLINE_CODE.sub("CODE", token.content)):
+        prose = INLINE_CODE.sub("CODE", token.content)
+        if BACKSLASH_MATH.search(prose) or (lean_doc and DOLLAR_DISPLAY.search(prose)):
             yield start, "use fenced math for displays and dollar-backtick delimiters for inline formulas"
         for child in token.children or ():
             if child.type != "link_open":
@@ -83,7 +88,7 @@ def main():
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
-    print(f"Checked Markdown tables, Lean fences, and source links across {len(paths)} files.")
+    print(f"Checked GitHub math delimiters, Markdown tables, Lean fences, and source links across {len(paths)} files.")
     return 0
 
 

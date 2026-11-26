@@ -156,7 +156,7 @@ For each nonnegative matrix C, the sum of all entries of C^t has tth-root limit 
 
 ```math
 \rho_j^2\ge\rho_{j-1}\rho_{j+1}
-\qquad(1\le j<n).
+\qquad(1\le j\lt n).
 \tag{3}
 ```
 

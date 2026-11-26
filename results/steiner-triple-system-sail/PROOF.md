@@ -24,14 +24,14 @@ Write $J=\sum_{p\notin T}j(p,T)$, summed over all points and blocks. For a neigh
 ```math
  J=\tfrac12\sum_x(d_R(x)^2+d_B(x)^2)-n(n-1).
 ```
-The mixed pairs have $j=1$ or $2$ and the others have $j=0$ or $3$. Consequently $J=2M-S+3L$, giving the identity
+The mixed pairs have $j=1$ or $2$ and the others have $j=0$ or $`3`$. Consequently $J=2M-S+3L$, giving the identity
 ```math
  S=3L+n(n-1)-D/2. \tag{1}
 ```
 
 ## Opposite-colored blocks force an odd spoke count
 
-Take disjoint blocks $T$ red and $U$ blue. Count the red pairs between them in a $3$-by-$3$ array. If all six values $j(p,T)$ for $p\in U$ and $j(q,U)$ for $q\in T$ were even, each row indexed by $p\in U$ would have an even number of reds. Each column indexed by $q\in T$ would have an even number of blues, hence an odd number of reds. The same array would have an even and an odd total number of reds. Thus some cross point–block pair has $j=1$ or $3$.
+Take disjoint blocks $T$ red and $U$ blue. Count the red pairs between them in a $`3`$-by-$`3`$ array. If all six values $j(p,T)$ for $p\in U$ and $j(q,U)$ for $q\in T$ were even, each row indexed by $p\in U$ would have an even number of reds. Each column indexed by $q\in T$ would have an even number of blues, hence an odd number of reds. The same array would have an even and an odd total number of reds. Thus some cross point–block pair has $j=1$ or $`3`$.
 
 Let $r,b$ be the total numbers of red and blue blocks. The number of intersecting red–blue block pairs is $\sum_x d_R(x)d_B(x)/4\le n(n-1)^2/16$. Each of the $S+L$ odd point–block pairs certifies at most $(n-1)/2$ disjoint red–blue block pairs since this is the total number of blocks through its point. By (1),
 ```math

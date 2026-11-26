@@ -25,7 +25,7 @@ Every $`V`$ is an observed feature or one plus the maximum. Replace the latter b
 
 Fix $`T,W`$, let $`m\ge1`$ be the number of occurrences of $`W`$ in the entire pool, and let $`\hat m`$ be its selected count. As a comparison law on indices, give each row its pool multiplicity of $`W`$ divided by $`m`$. Each selected occurrence belongs to a row of positive multiplicity. Hence the relative entropy of the uniform selected-occurrence law against the comparison law is at most $`\log(m/\hat m)`$. Under the true law $`\hat m\ge1`$.
 
-Keep the true law of $`T,W`$, but replace the selector by an independent uniform vector. The KL cost from the true joint law to this comparison law is $`I(W;S\mid T)`$. Under the comparison law, if $`d`$ rows contain two copies of $`W`$ and $`r`$ contain one, then $`m=2d+r`$ and $`\hat m`$ has law $`d+\operatorname{Bin}(r,1/2)`$. As $`t\le((1+t)/2)^2`$ for $`0\le t\le1`$,
+Keep the true law of $`T,W`$, but replace the selector by an independent uniform vector. The KL cost from the true joint law to this comparison law is $`I(W;S\mid T)`$. Under the comparison law, if $`d`$ rows contain two copies of $`W`$ and $`r`$ contain one, then $`m=2d+r`$ and $`\hat m`$ has law $`d+\mathop{\mathrm{Bin}}(r,1/2)`$. As $`t\le((1+t)/2)^2`$ for $`0\le t\le1`$,
 ```math
  \mathbb E[(1+\hat m)^{-1}\mid T,W]
  =\int_0^1t^d((1+t)/2)^r\,dt\le2/(m+1).

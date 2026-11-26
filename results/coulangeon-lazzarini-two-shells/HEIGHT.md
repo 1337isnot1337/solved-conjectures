@@ -2,7 +2,7 @@
 
 This supplement concerns the two lattice families in [PROOF.md](PROOF.md). The counterexample to the original all-shell assertion does not depend on this analytic argument.
 
-Let $`L\subseteq\mathbb R^n`$ be either parity lattice, let $`H=\operatorname{diag}(h_1,\ldots,h_n)`$ be trace-free, and put $`L_s=e^{sH}L`$. We will show that the height of the flat torus $`\mathbb R^n/L_s`$ has a nonzero derivative at $`s=0`$ for an explicit $`H`$.
+Let $`L\subseteq\mathbb R^n`$ be either parity lattice, let $`H=\mathop{\mathrm{diag}}(h_1,\ldots,h_n)`$ be trace-free, and put $`L_s=e^{sH}L`$. We will show that the height of the flat torus $`\mathbb R^n/L_s`$ has a nonzero derivative at $`s=0`$ for an explicit $`H`$.
 
 ## Sign of the theta derivative
 
@@ -37,11 +37,11 @@ For the orthogonally indecomposable witness, use blocks of sizes $`\alpha=2k,\ \
 
 Write $`M_s=L_s^*`$ for the standard dual lattice. The covolumes of both families $`L_s`$ and $`M_s`$ are $`s`$-independent. By Poisson summation,
 ```math
- \Theta_{M_s}(t)=\operatorname{covol}(L)\,t^{-n/2}\Theta_{L_s}(1/t).
+ \Theta_{M_s}(t)=\mathop{\mathrm{covol}}(L)\,t^{-n/2}\Theta_{L_s}(1/t).
 ```
 Thus the derivative for $`M_s`$ has the same strict sign on $`t>0`$. The derivatives of the respective theta series decay exponentially as $`t\to\infty`$, and are $`O(t^{-n/2}e^{-c/t})`$ as $`t\downarrow0`$, uniformly for $`s`$ in a compact neighborhood of $`0`$ after slightly decreasing $`c>0`$. For example, the derivative of each nonzero Gaussian term at large $`t`$ is bounded by a constant times $`t\|x\|^2 e^{-ct\|x\|^2}`$ using uniform singular-value bounds in $`s`$; the short-time estimate then follows from Poisson and the fixed covolume, since the dual's constant term has derivative zero.
 
-In the notation of [Coulangeon–Lazzarini](https://arxiv.org/pdf/1401.2891), equation (6), the height is $`h(L_s)=Z'(M_s,0)+2\log(2\pi)`$, with $`Z(M,z)=\sum_{0\ne v\in M}\|v\|^{-2z}`$ continued meromorphically. For $`\operatorname{Re}z>n/2`$, the Mellin identity gives
+In the notation of [Coulangeon–Lazzarini](https://arxiv.org/pdf/1401.2891), equation (6), the height is $`h(L_s)=Z'(M_s,0)+2\log(2\pi)`$, with $`Z(M,z)=\sum_{0\ne v\in M}\|v\|^{-2z}`$ continued meromorphically. For $`\mathop{\mathrm{Re}}z>n/2`$, the Mellin identity gives
 ```math
  \left.\partial_s Z(M_s,z)\right|_{s=0}
  =\frac{\pi^z}{\Gamma(z)}\int_0^\infty

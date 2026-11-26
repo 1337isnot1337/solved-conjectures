@@ -26,7 +26,7 @@ Let the ambient plane have order $`q`$ and $`N=q^2+q+1`$ lines. For a uniform ra
 
 ```math
  a=\mathbb E X=\frac{v(q+1)}{N},\qquad
- \operatorname{Var}(X)=\frac{qv}{N}\left(1-\frac vN\right)\le a.
+ \mathop{\mathrm{Var}}(X)=\frac{qv}{N}\left(1-\frac vN\right)\le a.
 ```
 
 If $`v\ge 32(q+1)`$, then $`a\ge32`$. At least $`3N/4`$ lines have sizes in $`[a-2\sqrt a,a+2\sqrt a]`$ by Chebyshev. All these lines are spanned, and this interval contains at most $`4\sqrt a+1`$ integers. Consequently
@@ -55,7 +55,7 @@ For the lower bound, consider $`v`$ points over any field of characteristic $`p`
 For the second inequality, absorb the last summand and use whichever of the first two summands is larger. Fix a sufficiently small absolute $`c>0`$. If a line has at least $`cv`$ points, the earlier crossing-pair argument gives $`M\gg v`$. Otherwise group lines with sizes at least $`T`$ in dyadic intervals $`[j,2j)`$ where $`j=2^i T`$, taking $`T=\lceil C(1+v/p)\rceil`$ for a sufficiently large absolute $`C`$. These lines contain in total at most a constant times
 
 ```math
- \sum_{T\le j<cv}(v^2/j+vj)\ll v^2/T+cv^2
+ \sum_{T\le j\lt cv}(v^2/j+vj)\ll v^2/T+cv^2
 ```
 
 unordered pairs. Choosing $`c`$ small and $`C`$ large leaves at least a constant times $`v^2`$ pairs on lines of size less than $`T`$. Those lines supply at most $`M\sum_{j<T}\binom{j}{2}\ll MT^3`$ pairs. This proves

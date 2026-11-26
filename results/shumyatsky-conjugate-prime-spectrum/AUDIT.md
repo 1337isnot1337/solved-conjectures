@@ -9,8 +9,8 @@ factors. It found no prior proof of the full statement. The latest
 Notebook lists the soluble case and the unconstrained two-generator
 result. Maslova and Revin prove the case with Hall maximal subgroups.
 Maslova proves the case where every nonabelian composition factor is
-isomorphic to one of $`\operatorname{PSL}_2(7)`$, $`\operatorname{PSL}_2(11)`$
-and $`\operatorname{PSL}_5(2)`$. The proof above uses the 2021
+isomorphic to one of $`\mathop{\mathrm{PSL}}\nolimits_2(7)`$, $`\mathop{\mathrm{PSL}}\nolimits_2(11)`$
+and $`\mathop{\mathrm{PSL}}\nolimits_5(2)`$. The proof above uses the 2021
 spread theorem for almost simple groups and covers every finite group.
 [Lucchini, Morigi and Shumyatsky, Forum Math. 24 (2012)](https://doi.org/10.1515/form.2011.092) |
 [Maslova and Revin, 2013](https://www.mathnet.ru/eng/timm977) |

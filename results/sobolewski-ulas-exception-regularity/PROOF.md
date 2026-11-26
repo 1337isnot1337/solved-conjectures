@@ -1,18 +1,18 @@
 # Sobolewski–Ulas binary-partition exception regularity conjecture
 
-**Result.** The increasing enumeration of the integers $n$ for which
+**Result.** The increasing enumeration of the integers $`n`$ for which
 the binary partition count $b(2n)$ is not a sum of three squares is
 not $m$-regular for any integer base $m\ge2$. This is
 [Sobolewski–Ulas, Conjecture 7.1](https://doi.org/10.1007/s00025-023-01966-8).
 
 The authors identify the exceptional set as
-$S_1'=\{2^{2j+1}(8s+3+2t_s):j,s\ge0\}$, where
+$`S_1'=\{2^{2j+1}(8s+3+2t_s):j,s\ge0\}`$, where
 $t_s=(-1)^{s_2(s)}$ and $s_2$ counts binary ones. We work with
-$$
+```math
  S=\{4^j(8s+3+2t_s):j,s\ge0\},
  \qquad C(y)=\#(S\cap[0,y]).
-$$
-Write $g_n$ for the $n$th element of $S$ ($n\ge1$), and set $g_0=0$.
+```
+Write $g_n$ for the $`n`$th element of $S$ ($n\ge1$), and set $g_0=0$.
 The original enumeration is obtained by multiplying by $2$ and,
 depending on whether it starts at index $0$ or $1$, shifting the index.
 Multiplication by a nonzero constant, an index shift, and a finite
@@ -23,39 +23,39 @@ with $2u$.
 ## 1. Counting formulas
 
 For integers $y\ge0$, let $B(y)$ count the elements of
-$\{8s+3+2t_s:s\ge0\}$ at most $y$. The division $y=8s+r$ gives
-$$
+$`\{8s+3+2t_s:s\ge0\}`$ at most $y$. The division $y=8s+r$ gives
+```math
  B(y)=s+\mathbf1_{\{r\ge3+2t_s\}}.
-$$
+```
 Different $j$-layers of $S$ are disjoint because their members have
 2-adic valuation $2j$. Thus, putting $E(y)=6C(y)-y$,
-$$
+```math
  C(y)=\sum_{j\ge0} B(\lfloor y/4^j\rfloor),\qquad
  E(y)=O(\log(y+2)).
-$$
-The bound follows from $B(\lfloor y/4^j\rfloor)=y/(8\,4^j)+O(1)$
+```
+The bound follows from $`B(\lfloor y/4^j\rfloor)=y/(8\,4^j)+O(1)`$
 for $O(\log(y+2))$ relevant $j$, the geometric sum
-$\sum_{j\ge0}1/(8\,4^j)=1/6$, and a bounded omitted tail.
+$`\sum_{j\ge0}1/(8\,4^j)=1/6`$, and a bounded omitted tail.
 Also $g_n\le8(n-1)+5$, using just the lowest layer.
 
 For $k\ge1$, put
-$$
+```math
  y_k=9(16^k-1)/15,\qquad n_k=(y_k+3)/6=(16^k+4)/10.
-$$
-The base-16 digits of $y_k$ are $k$ copies of $9$. In particular its
-binary digit sum is even. The base-16 digits of $n_k$ for $k\ge2$
+```
+The base-16 digits of $y_k$ are $`k`$ copies of $9$. In particular its
+binary digit sum is even. The base-16 digits of $`n_k`$ for $k\ge2$
 are $1$, followed by $k-2$ copies of $9$, followed by $a$ (digit 10):
 $n_2=26$ and $n_{k+1}=16n_k-6$ give this directly.
 
 For every $k\ge1$ we claim
-$$
+```math
  E(y_k)=6k-3.
-$$
+```
 The base case $y_1=9$ gives $C(9)=2$. For $h\ge2$ use
 $y_h=16y_{h-1}+9$ and $C(y)=B(y)+C(\lfloor y/4\rfloor)$ twice:
-$$
+```math
  C(y_h)=B(y_h)+B(4y_{h-1}+2)+C(y_{h-1}).
-$$
+```
 For $B(y_h)$ the remainder modulo 8 is 1, and
 $t_{\lfloor y_h/8\rfloor}=t_{2y_{h-1}+1}=-1$. Therefore
 $B(y_h)=(y_h+7)/8=2y_{h-1}+2$. For the other term the remainder
@@ -64,9 +64,9 @@ $B(4y_{h-1}+2)=(y_{h-1}+1)/2$. Substitution gives
 $E(y_h)=E(y_{h-1})+6$.
 
 A second exact identity, for $h,J\ge1$, is
-$$
+```math
  E(16^J y_h)=E(y_h)+3.
-$$
+```
 Indeed, $C(16^J y_h)=C(y_h)+\sum_{u=1}^{2J}B(4^u y_h)$.
 For $u\ge2$ the argument is divisible by 8 and the term is
 $4^u y_h/8$. For $u=1$, the remainder is 4 and
@@ -77,34 +77,34 @@ claimed identity.
 ## 2. An unbounded logarithmic remainder
 
 Define $H(k)=g_{n_k}-y_k+6k$. Since $C(g_{n_k})=n_k$,
-$$
+```math
  g_{n_k}-y_k=3-E(g_{n_k})=O(k).
-$$
+```
 The last bound uses $g_{n_k}=O(16^k)$ from the lowest layer. Write
 $\delta=g_{n_k}-y_k$ and choose $J=O(\log(k+2))$, $1\le J<k$, such
-that $16^J\ge 20(|\delta|+1)$, for all sufficiently large $k$.
+that $16^J\ge 20(|\delta|+1)$, for all sufficiently large $`k`$.
 The remainder of $y_k$ modulo $16^J$ is $y_J$, whose distances to
 the adjacent endpoints $0$ and $16^J$ exceed $|\delta|$. Hence
-the quotients of $g_{n_k}$ and $y_k$ by $16^J$ coincide, and
+the quotients of $`g_{n_k}`$ and $y_k$ by $16^J$ coincide, and
 so do all of their quotients by $4^j$ for $j\ge 2J$. Consequently
-$$
+```math
  \begin{aligned}
  E(g_{n_k})-E(y_k)
  &=6\sum_{j<2J}
  \bigl[B(\lfloor g_{n_k}/4^j\rfloor)-B(\lfloor y_k/4^j\rfloor)\bigr]
-   -\delta\\
- &=\delta(1-16^{-J})-\delta+O(J)=O(\log(k+2)).
+   -\delta
+ \\ &=\delta(1-16^{-J})-\delta+O(J)=O(\log(k+2)).
  \end{aligned}
-$$
+```
 Since $H(k)=6+E(y_k)-E(g_{n_k})$, this proves $H(k)=O(\log(k+2))$.
 
 On the other hand take $J\ge2$ and $k=n_J>J$. Set
-$y_*=16^J y_{k-J}=y_k-y_J$. The second counting identity gives
-$E(y_*)=6(k-J)$, so that
-$$
+$`y_*=16^J y_{k-J}=y_k-y_J`$. The second counting identity gives
+$`E(y_*)=6(k-J)`$, so that
+```math
  C(y_*)=\frac{y_k-y_J}{6}+k-J=n_k-J.
-$$
-Thus the $n_k$th element $g_{n_k}$ is at least $y_*+J$ since $S$
+```
+Thus the $`n_k`$th element $`g_{n_k}`$ is at least $`y_*+J`$ since $S$
 contains at most one element per integer. It follows that
 $H(k)\ge J+3$ on this subsequence. In particular $H$ is unbounded.
 
@@ -112,14 +112,14 @@ $H(k)\ge J+3$ on this subsequence. In particular $H$ is unbounded.
 
 If $g$ were 2-regular, it would admit a finite linear representation
 on the base-16 digits, by grouping bits in blocks of four. Evaluating
-at the input word for $n_k$ uses a fixed matrix once for the digit
+at the input word for $`n_k`$ uses a fixed matrix once for the digit
 $9$, repeated $k-2$ times, between fixed matrices for the endpoint
-digits. By Cayley–Hamilton, $g_{n_k}$ then satisfies a constant-
+digits. By Cayley–Hamilton, $`g_{n_k}`$ then satisfies a constant-
 coefficient linear recurrence eventually. So does $H(k)$, since
 $y_k$ and $6k$ do.
 
 An eventually constant-coefficient recurrence that is $O(\log k)$
-must be bounded. Indeed, write its large-$k$ values as a finite
+must be bounded. Indeed, write its large-$`k`$ values as a finite
 sum of terms $p_\lambda(k)\lambda^k$ over distinct nonzero
 characteristic roots. Let $R$ be the largest occurring modulus
 and $D$ the largest polynomial degree among terms of modulus $R$.
@@ -132,7 +132,7 @@ both giving boundedness. Our unbounded $H$ is a contradiction.
 
 Finally, $2^a$-regularity implies 2-regularity for every $a\ge1$:
 the binary sections at depth $ak+b$, $0\le b<a$, are obtained by
-applying one of the finitely many depth-$b$ binary sections to the
+applying one of the finitely many depth-$`b`$ binary sections to the
 $2^a$-kernel. Images of a finite module generating set under these
 finitely many linear operators span all the binary sections.
 
@@ -141,7 +141,7 @@ finitely many linear operators span all the binary sections.
 The indicator of $S$ is 2-automatic. On a nonzero binary input
 remove trailing zeros and require their number to be even, giving
 the factor $4^j$. The low three bits of the odd part give a remainder
-$r\in\{1,5\}$ modulo 8, and the parity of the remaining higher bits
+$`r\in\{1,5\}`$ modulo 8, and the parity of the remaining higher bits
 determines $t_s$ in the condition $r=3+2t_s$. These tests are a
 finite-state computation from the least-significant end (or use
 closure of regular languages under reversal). The indicator is not
@@ -156,9 +156,9 @@ by closure under shifts and subtraction. They are positive and at
 most 12 since already the lowest layer has successive gaps at most
 12. Finite-valued regular sequences are automatic, so
 $(d_{n+1})_{n\ge0}$ is $m$-automatic. The non-erasing morphism
-$$
+```math
  d\longmapsto 1\,0^{d-1}
-$$
+```
 takes this gap word to the indicator of $S$ starting at $g_1$.
 That shifted indicator is still 2-automatic. An $m$-automatic word
 is $m$-substitutive, via its constant-length uniform substitution

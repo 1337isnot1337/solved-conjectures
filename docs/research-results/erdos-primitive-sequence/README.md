@@ -1,6 +1,6 @@
 # Erdős’s primitive sequence problem
 
-Erdős asks which increasing sequences of positive exponents $E=\{n_1,n_2,\ldots\}$ admit a primitive set $A$ and a constant $c>0$ with $A(2^n)\ge c2^n$ for every $n\in E$. Here $A(x)$ counts positive integers in $A$ up to $x$, and two distinct members of a primitive set cannot divide one another. This is the prescribed-scale part of [Erdős Problem 892](https://www.erdosproblems.com/892), stated on [p. 101 of Erdős’s 1980 survey](https://www.renyi.hu/~p_erdos/1980-03.pdf). The unrestricted characterization and the separate gcd-free domination question remain open. [Research issue 821](https://github.com/1337isnot1337/solved-conjectures/issues/821)
+Erdős asks which increasing sequences of positive exponents $`E=\{n_1,n_2,\ldots\}`$ admit a primitive set $A$ and a constant $c>0$ with $A(2^n)\ge c2^n$ for every $n\in E$. Here $A(x)$ counts positive integers in $A$ up to $x$, and two distinct members of a primitive set cannot divide one another. This is the prescribed-scale part of [Erdős Problem 892](https://www.erdosproblems.com/892), stated on [p. 101 of Erdős’s 1980 survey](https://www.renyi.hu/~p_erdos/1980-03.pdf). The unrestricted characterization and the separate gcd-free domination question remain open. [Research issue 821](https://github.com/1337isnot1337/solved-conjectures/issues/821)
 
 ## A sufficient condition for prescribed peaks
 
@@ -14,11 +14,11 @@ Indeed, for nonnegative integers $u$ and $h\ge3$,
 
 ```math
 c\,|E\cap[u,u+h]|\le \sum_{k=u}^{u+h}2^{-k}A(2^k)
-\le 2 + 2\sum_{2^u<a\le 2^{u+h},\ a\in A}\frac1a
+\le 2 + 2\sum_{2^u\lt a\le 2^{u+h},\ a\in A}\frac1a
 \ll 1+\frac h{\sqrt{\log h}}.
 ```
 
-The terms $a\le2^u$ contribute at most two. Each other $a$ contributes a geometric tail beginning at $\lceil\log_2 a\rceil$. In particular the union of exponent intervals $[2^{j^2},2^{j^2}+j]$ for $j\ge2$ has a convergent reciprocal sum but cannot support the required density peaks. Its $j$th interval alone violates the bound as $j$ tends to infinity.
+The terms $a\le2^u$ contribute at most two. Each other $a$ contributes a geometric tail beginning at $\lceil\log_2 a\rceil$. In particular the union of exponent intervals $[2^{j^2},2^{j^2}+j]$ for $j\ge2$ has a convergent reciprocal sum but cannot support the required density peaks. Its $`j`$th interval alone violates the bound as $`j`$ tends to infinity.
 
 ## Literature and attribution
 

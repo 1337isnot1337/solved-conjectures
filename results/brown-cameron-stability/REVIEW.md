@@ -6,11 +6,11 @@ A separate model session that did not develop the proof rechecked the two source
 
 1. **Closed half-plane.** Write $a,b,c,d$ and $A,B,C,D$ for the lowest four coefficients of two factors or partial products. The minor of their product, computed in increasing degree, is
 
-   ```math
-   A^2(bc-ad)+a^2(BC-AD)+b^2AB+a b B^2.
-   ```
+```math
+A^2(bc-ad)+a^2(BC-AD)+b^2AB+a b B^2.
+```
 
-   This is nonnegative when the two lower coefficients of each factor are nonnegative and both input minors are nonnegative. Every real or conjugate-pair factor of the reversed monic polynomial meets these tests even for zero real parts, so a strictly negative minor of the full product implies an open-right-half-plane root.
+This is nonnegative when the two lower coefficients of each factor are nonnegative and both input minors are nonnegative. Every real or conjugate-pair factor of the reversed monic polynomial meets these tests even for zero real parts, so a strictly negative minor of the full product implies an open-right-half-plane root.
 
 2. **Off-diagonal pairs.** At the least crossing, the binomial bounds above and below give $`n=\Theta(hq^{-h/2})`$ for each of the four sizes $h=k,k-1,k-2,k-3$. If an overlap of size $i$ is at most $h/2$, its penalty is at most $`q^{-ih/4}`$; for an overlap missing $t$ vertices with $`t<h/2`$, the recovered factor is $`q^{t(h-(t+1)/2)}`$. The resulting geometric bases are each $`O(h^2q^{h/4})`$ for fixed $q$ and therefore vanish. The diagonal contributes $`1/\mu_h`$ to the normalized second moment. It does not enter the void comparison, which uses only distinct pairs.
 

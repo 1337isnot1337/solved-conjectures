@@ -147,10 +147,10 @@ For the other special-function combination, put $`y=2x`$. Trigonometric addition
 ```math
 \begin{aligned}
 &\sin^2x\mathop{\mathrm{Si}}(2x)
--\sin x\cos x\mathop{\mathrm{Cin}}(2x)\\
-&\quad=\frac12\int_0^1
-\frac{\sin(yt)-\sin y+\sin(y(1-t))}{t}\,dt\\
-&\quad=-\frac12\sum_{k=1}^\infty
+-\sin x\cos x\mathop{\mathrm{Cin}}(2x)
+\\ &\quad=\frac12\int_0^1
+\frac{\sin(yt)-\sin y+\sin(y(1-t))}{t}\,dt
+\\ &\quad=-\frac12\sum_{k=1}^\infty
 \frac{(-1)^k y^{2k+1}}{(2k+1)!}H_{2k}.
 \end{aligned} \tag{6}
 ```
@@ -200,8 +200,8 @@ Keep the first two terms of the even series and the first term of the odd series
 
 ```math
 \begin{aligned}
-F(x)&\ge\pi\left(\frac{x^4}{18}-\frac{2x^6}{225}\right)-\frac{x^7}{405}\\
-&\ge\left(\frac{7\pi}{150}-\frac1{405}\right)x^4
+F(x)&\ge\pi\left(\frac{x^4}{18}-\frac{2x^6}{225}\right)-\frac{x^7}{405}
+\\ &\ge\left(\frac{7\pi}{150}-\frac1{405}\right)x^4
 >\frac{557}{4050}x^4>0.
 \end{aligned} \tag{9}
 ```

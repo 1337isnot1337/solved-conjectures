@@ -3,7 +3,7 @@
 The function $`\alpha\mapsto E_{\alpha,\alpha}(-1)`$ is strictly increasing throughout $`0<\alpha<1`$:
 
 ```math
-E_{\alpha,\alpha}(-1)<E_{\beta,\beta}(-1)
+E_{\alpha,\alpha}(-1)\lt E_{\beta,\beta}(-1)
 \qquad(0<\alpha<\beta<1).
 ```
 

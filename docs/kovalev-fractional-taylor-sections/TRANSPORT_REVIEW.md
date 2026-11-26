@@ -14,8 +14,8 @@ The primary statement was read directly in Leonid V. Kovalev, [*Sharp bounds for
 
 ```math
 \left((v,t)\longmapsto\frac{vt}{1-t+vt}\right)_*
-\bigl(\operatorname{Beta}(a,b)\otimes\operatorname{Beta}(a+b,c)\bigr)
-=\operatorname{Beta}(a,c).
+\bigl(\mathop{\mathrm{Beta}}(a,b)\otimes\mathop{\mathrm{Beta}}(a+b,c)\bigr)
+=\mathop{\mathrm{Beta}}(a,c).
 ```
 
 The measures are mathlib’s `ProbabilityTheory.betaMeasure`, defined by its beta probability density with respect to Lebesgue measure. The product measure supplies the independence; no independence or transport identity is postulated. The positivity hypotheses are exactly `0<a`, `0<b`, `0<c`, with no integer-shape, half-shape or bounded-parameter restriction.
@@ -40,7 +40,7 @@ The concrete remainder is
 ```math
 R_M(z)=\int
 \bigl(\sqrt{1+(1-z)t/(1-t)}\bigr)^{-1}
-\,d\operatorname{Beta}(M+1,1/2)(t).
+\,d\mathop{\mathrm{Beta}}(M+1,1/2)(t).
 ```
 
 I checked its definition and the support, normalization, integrability and first-moment interfaces used by the five modules. `Complex.sqrt` is the actual principal square root. For `|z|≤1` and nonnegative odds, the inverse square root has norm at most one.
@@ -49,7 +49,7 @@ There is a deliberate, proved simplification relative to the recorded proof. The
 
 ```math
 \left|(2-v)(1+w)^{-1/2}-(1+vw)^{-1/2}\right|\le 1-v
-\qquad(0\le v\le1,\ \operatorname{Re}w\ge0).
+\qquad(0\le v\le1,\ \mathop{\mathrm{Re}}w\ge0).
 ```
 
 This is sufficient for the recorded coefficient budget and avoids introducing the expectation of the sharper nonlinear coefficient. The code proves the exact first moment `E(2-V)=1+b/(a+b)` and `E(1-V)=b/(a+b)`. Product integration factors the first term; the proved pushforward law handles the second term. Both terms and the real majorant are integrable under the actual product probability measure.
@@ -59,7 +59,7 @@ Finally, `remainder_comparison` substitutes `a=M+1`, `b=n-M`, `c=1/2` under the 
 ```math
 \left|\left(1+\frac{n-M}{n+1}\right)R_n(z)-R_M(z)\right|
 \le\frac{n-M}{n+1}
-\qquad(M<n,\ |z|\le1).
+\qquad(M\lt n,\ |z|\le1).
 ```
 
 This includes the closed disk and `z=1`. Strictness away from one belongs to the separately proved remainder-norm lemma; this comparison does not incorrectly assert strictness at the boundary point. The statement has no abstract coupling, gamma-independence, normalization, finite-range or unexplained analytic hypothesis.

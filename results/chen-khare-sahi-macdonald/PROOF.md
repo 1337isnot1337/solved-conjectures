@@ -203,8 +203,8 @@ At the rational parameters (2), the two required monic polynomials are
 P_{420}={}&m_{420}
 +\frac{11}{91}(m_{411}+m_{330})
 +\frac{1143098}{9092629}m_{321}
-+\frac{27053496033}{90189787051}m_{222},\\
-P_{411}={}&m_{411}
++\frac{27053496033}{90189787051}m_{222},
+\\ P_{411}={}&m_{411}
 +\frac{111}{991}m_{321}
 +\frac{1221}{90181}m_{222}.
 \end{aligned}
@@ -245,9 +245,9 @@ as $`x,y,z`$, the three coefficients after this multiplication are
 
 ```math
 \begin{aligned}
-W_1&=(y-z)(tx-y)(tx-z),\\
-W_2&=-(x-z)(ty-x)(ty-z),\\
-W_3&=(x-y)(tz-x)(tz-y).
+W_1&=(y-z)(tx-y)(tx-z),
+\\ W_2&=-(x-z)(ty-x)(ty-z),
+\\ W_3&=(x-y)(tz-x)(tz-y).
 \end{aligned}
 ```
 
@@ -263,8 +263,8 @@ The evaluations and functional values are
 \begin{aligned}
 P_{420}(1,1,1)&=\frac{701634925737}{90189787051},
 &L\!\left(\frac{P_{420}}{P_{420}(1,1,1)}\right)
-&=\frac{198743600783}{25986478731},\\
-P_{411}(1,1,1)&=\frac{332370}{90181},
+&=\frac{198743600783}{25986478731},
+\\ P_{411}(1,1,1)&=\frac{332370}{90181},
 &L\!\left(\frac{P_{411}}{P_{411}(1,1,1)}\right)
 &=\frac{284011}{36930}.
 \end{aligned}

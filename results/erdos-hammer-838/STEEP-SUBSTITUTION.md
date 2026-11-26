@@ -26,7 +26,7 @@ T_\epsilon(u,v)=(\epsilon u+\epsilon^2v,u).
 ```
 Choose $`\epsilon>0`$ so that the first-coordinate order in the image is
 exactly the order of $`u`$ and every image secant has slope greater
-than $`A=1+\max_{b\ne b'}|\operatorname{slope}(bb')|`$. Indeed, the
+than $`A=1+\max_{b\ne b'}|\mathop{\mathrm{slope}}(bb')|`$. Indeed, the
 image slope is $`(\epsilon+\epsilon^2\Delta v/\Delta u)^{-1}`$.
 Since $`\det T_\epsilon=-\epsilon^2`$, the internal first-coordinate
 order is preserved and cups become caps, and vice versa. Next choose

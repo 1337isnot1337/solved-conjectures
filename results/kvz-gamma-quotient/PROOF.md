@@ -10,7 +10,7 @@ For a real kernel $`K(x,y)`$, sign regularity of all orders means that, at each 
 
 ```math
 \det[K(x_i,y_j)]_{i,j=1}^r,
-\qquad x_1<\cdots<x_r,\quad y_1<\cdots<y_r,
+\qquad x_1<\cdots\lt x_r,\quad y_1<\cdots\lt y_r,
 ```
 
 have one common weak sign. Strict sign regularity means that these determinants never vanish. A kernel is strictly totally positive when all these signs are positive.
@@ -61,7 +61,7 @@ W_k(t)=\det[f_j^{(i-1)}(t)]_{i,j=1}^k,
 
 ```math
 \det[f_j(t_i)]_{i,j=1}^r\ne0
-\qquad(t_1<\cdots<t_r),
+\qquad(t_1<\cdots\lt t_r),
 ```
 
 and its sign is the sign of $`W_r`$.
@@ -92,8 +92,8 @@ A vanishing evaluation determinant would give such a combination with $`r`$ dist
 ```math
 \det[f_j(t_i)]
 =\frac{W_r(t)}{\prod_{i=0}^{r-1}i!}
-\prod_{i<j}(t_j-t_i)
-+o\!\left(\prod_{i<j}(t_j-t_i)\right)
+\prod_{i\lt j}(t_j-t_i)
++o\!\left(\prod_{i\lt j}(t_j-t_i)\right)
 ```
 
 along equally spaced coalescing nodes. The Vandermonde factor is positive, proving the asserted sign. This proves the lemma.
@@ -107,11 +107,11 @@ Fix $`0<v_1<\cdots<v_r`$ and put $`f_j(u)=(u+v_j)^\delta`$ for $`u>0`$. Direct d
 W_k(u)
 &=\left(\prod_{i=0}^{k-1}\delta^{\underline i}\right)
 \left(\prod_{j=1}^k(u+v_j)^\delta\right)
-\det[(u+v_j)^{-(i-1)}]_{i,j=1}^k\\
-&=(-1)^{\binom k2}
+\det[(u+v_j)^{-(i-1)}]_{i,j=1}^k
+\\ &=(-1)^{\binom k2}
 \left(\prod_{i=0}^{k-1}\delta^{\underline i}\right)
 \left(\prod_{j=1}^k(u+v_j)^{\delta-k+1}\right)
-\prod_{i<j}(v_j-v_i).
+\prod_{i\lt j}(v_j-v_i).
 \end{aligned}
 \tag{4}
 ```
@@ -122,7 +122,7 @@ If $`\delta`$ is not an integer, every factor in (4) is nonzero. The lemma prove
 \mathop{\mathrm{sgn}}
 \det[(u_i+v_j)^\delta]_{i,j=1}^r
 =\varepsilon_r(\delta)
-\qquad(0<u_1<\cdots<u_r).
+\qquad(0\lt u_1<\cdots\lt u_r).
 \tag{5}
 ```
 
@@ -146,7 +146,7 @@ For increasing positive $`a_i`$ and $`u_j`$, positive row and column factors red
 For increasing $`a_i`$, the initial Wronskians of the functions $`e^{a_i t}`$ are
 
 ```math
-e^{(a_1+\cdots+a_k)t}\prod_{i<j}(a_j-a_i)>0.
+e^{(a_1+\cdots+a_k)t}\prod_{i\lt j}(a_j-a_i)>0.
 ```
 
 The lemma applied at the increasing nodes $`\log u_j`$ proves positivity of the transposed evaluation determinant. Therefore $`G`$ is strictly totally positive at every order. Transposing a square matrix does not change its determinant.
@@ -179,7 +179,7 @@ For completeness, the continuous Cauchy–Binet identity used here is
 
 ```math
 \det\left[\int A_i(t)B_j(t)\,dt\right]_{i,j=1}^r
-=\int_{t_1<\cdots<t_r}
+=\int_{t_1<\cdots\lt t_r}
 \det[A_i(t_j)]_{i,j=1}^r
 \det[B_j(t_i)]_{i,j=1}^r\,dt_1\cdots dt_r.
 \tag{8}
@@ -192,10 +192,10 @@ Apply (8) twice to (7). For increasing positive $`x_i`$ and $`y_j`$,
 ```math
 \begin{aligned}
 \det[F_\delta(x_i+y_j)]_{i,j=1}^r
-={}&\int_{0<u_1<\cdots<u_r}
-\int_{0<v_1<\cdots<v_r}
-\det[G(x_i,u_j)]_{i,j=1}^r\\
-&\qquad\times\det[(u_i+v_j)^\delta]_{i,j=1}^r
+={}&\int_{0\lt u_1<\cdots\lt u_r}
+\int_{0\lt v_1<\cdots\lt v_r}
+\det[G(x_i,u_j)]_{i,j=1}^r
+\\ &\qquad\times\det[(u_i+v_j)^\delta]_{i,j=1}^r
 \det[G(y_i,v_j)]_{i,j=1}^r\,d\boldsymbol v\,d\boldsymbol u.
 \end{aligned}
 \tag{9}
@@ -228,7 +228,7 @@ a+b=d,\qquad x_1+a>0,\qquad y_1+b>0.
 Such a choice exists: the permissible interval for $`a`$ is
 
 ```math
--x_1<a<d+y_1,
+-x_1\lt a\lt d+y_1,
 ```
 
 which is nonempty by the assumed positivity. All $`x_i+a`$ and $`y_j+b`$ are positive and remain strictly increasing. Then

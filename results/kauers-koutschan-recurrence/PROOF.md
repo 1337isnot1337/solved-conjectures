@@ -44,7 +44,7 @@ The random matrix $T$ is invariant in law under unitary conjugation. For $\rho_\
 \tag{2}
 ```
 
-Let $t=|g_1|^2+|g_2|^2$. It has density $te^{-t}$ on the positive half-line. The eigenvalues of $T$ are $t-1,-1$. Put $k=r+1$, so the dimension in (2) is $k-j$. The alternant formula has denominator $(t-1)-(-1)=t$, which cancels the factor $t$ in the density. Define $D_\ell=\int_0^\infty e^{-t}(t-1)^\ell\,dt$. Integration by parts gives $D_0=1$ and $D_{\ell+1}=(\ell+1)D_\ell+(-1)^{\ell+1}$, the derangement numbers. The scalar in (2) is exactly
+Let $t=|g_1|^2+|g_2|^2$. It has density $te^{-t}$ on the positive half-line. The eigenvalues of $T$ are $t-1,-1$. Put $k=r+1$, so the dimension in (2) is $k-j$. The alternant formula has denominator $(t-1)-(-1)=t$, which cancels the factor $t$ in the density. Define $`D_\ell=\int_0^\infty e^{-t}(t-1)^\ell\,dt`$. Integration by parts gives $D_0=1$ and $D_{\ell+1}=(\ell+1)D_\ell+(-1)^{\ell+1}$, the derangement numbers. The scalar in (2) is exactly
 
 ```math
  C(k,j)=\frac{(-1)^jD_k-(-1)^kD_j}{k-j}.
@@ -53,7 +53,7 @@ Let $t=|g_1|^2+|g_2|^2$. It has density $te^{-t}$ on the positive half-line. The
 
 ## 3. Extracting the count
 
-For each subset $S$ of the four cells of a $2$-by-$2$ square, write $d=|S|$ and let $r_i,c_i$ be its row and column sums. Selecting these numerator factors in (1) leaves total degree $n-d$ on each side. Put
+For each subset $S$ of the four cells of a $`2`$-by-$`2`$ square, write $d=|S|$ and let $r_i,c_i$ be its row and column sums. Selecting these numerator factors in (1) leaves total degree $n-d$ on each side. Put
 
 ```math
  m=n-d+1,\qquad J=\min(p-r_1,q-r_2,p-c_1,q-c_2).
@@ -73,7 +73,7 @@ A negative upper limit gives zero. For every nonempty inner sum $2J\le m-1$, so 
 For $m\ge0$ define
 
 ```math
- T_m=\sum_{0\le j<m-j}C(m-j,j)
+ T_m=\sum_{0\le j\lt m-j}C(m-j,j)
  =\sum_{\substack{0\le k\le m\\2k\ne m}}
        \frac{(-1)^{m-k}D_k}{2k-m},\qquad
  U_m=\sum_{k=0}^{m}(-1)^{m-k}D_k .

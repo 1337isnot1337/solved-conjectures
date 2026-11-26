@@ -40,9 +40,9 @@ F(z):=\sum_{n\ge0}A_n(x)z^n
 
 ## 2. What the Stieltjes condition would force
 
-Assume for contradiction that $A_n(x)=\int_0^\infty q^n\,d\nu(q)$ for a positive measure $\nu$. The elementary binomial bound $A_n(x)\le(n+1)64^n$ for $0<x<1$ implies that $\nu$ is compactly supported: any positive mass above $64+\epsilon$ would give faster moment growth. Thus $F(z)=\int(1-qz)^{-1}\,d\nu(q)$ is holomorphic at every nonreal and every negative real $z$.
+Assume for contradiction that $`A_n(x)=\int_0^\infty q^n\,d\nu(q)`$ for a positive measure $\nu$. The elementary binomial bound $A_n(x)\le(n+1)64^n$ for $0<x<1$ implies that $\nu$ is compactly supported: any positive mass above $64+\epsilon$ would give faster moment growth. Thus $`F(z)=\int(1-qz)^{-1}\,d\nu(q)`$ is holomorphic at every nonreal and every negative real $z$.
 
-For $\operatorname{Im}w>0$ define
+For $\mathop{\mathrm{Im}}w>0$ define
 ```math
 G(w)=\int (w-t)^{-1/2}\,d\mu(t)
 ```
@@ -50,11 +50,11 @@ using the branch with $\arg(w-t)\in(0,\pi)$. Put $z(w)=w-\sqrt{w^2-1}$ with the 
 ```math
 G(w)=\sqrt{2z(w)}\,F(z(w))
 ```
-holds first near large real positive $w$ approached from above, using branches that agree on real $w>\max(\operatorname{supp}\mu\cup\{1\})$. It holds throughout the upper half-plane by holomorphic uniqueness under the Stieltjes assumption. For every $s\in(-1,1)$, the upper limit of $z(w)$ is the nonreal value $s-i\sqrt{1-s^2}$ and $z(w)$ extends holomorphically to a neighborhood of $s$. Consequently $G$ would extend holomorphically across every point of $(-1,1)$.
+holds first near large real positive $w$ approached from above, using branches that agree on real $`w>\max(\mathop{\mathrm{supp}}\mu\cup\{1\})`$. It holds throughout the upper half-plane by holomorphic uniqueness under the Stieltjes assumption. For every $s\in(-1,1)$, the upper limit of $z(w)$ is the nonreal value $s-i\sqrt{1-s^2}$ and $z(w)$ extends holomorphically to a neighborhood of $s$. Consequently $G$ would extend holomorphically across every point of $(-1,1)$.
 
 Whenever the local density is smooth, bounded, or logarithmically singular at $s$, dominated convergence yields the real upper-boundary value
 ```math
-\operatorname{Re}G(s+i0)=\int_{t<s}(s-t)^{-1/2}\,d\mu(t).
+\mathop{\mathrm{Re}}G(s+i0)=\int_{t\lt s}(s-t)^{-1/2}\,d\mu(t).
 ```
 All other contributions are bounded away from the denominator singularity. A failure of real analyticity of this real boundary value at any $s\in(-1,1)$ will contradict the preceding extension.
 
@@ -75,13 +75,13 @@ Thus near $s_0$ the density of $\mu$ equals
 ```math
 c\log(1/|t-s_0|)+r(t),\qquad c>0,
 ```
-with $r$ continuous, including at $s_0$. Here is a local proof of the needed regularity. The Morse lemma puts the function near each saddle into the coordinates $Z-s_0=uv$, with smooth positive area density. Use smooth cutoffs in small squares around the saddles, equal to one near the center. For a cutoff density $h(u,v)$ supported on $|u|,|v|<\delta$, the pushforward at $y\ne0$ is $\int_{|y|/\delta<|u|<\delta}h(u,y/u)\,du/|u|$. Decompose
+with $r$ continuous, including at $s_0$. Here is a local proof of the needed regularity. The Morse lemma puts the function near each saddle into the coordinates $Z-s_0=uv$, with smooth positive area density. Use smooth cutoffs in small squares around the saddles, equal to one near the center. For a cutoff density $h(u,v)$ supported on $|u|,|v|<\delta$, the pushforward at $y\ne0$ is $`\int_{|y|/\delta<|u|<\delta}h(u,y/u)\,du/|u|`$. Decompose
 ```math
 h(u,v)=h(0,0)+(h(u,0)-h(0,0))+(h(0,v)-h(0,0))+uv\,H(u,v),
 ```
 where $H$ is bounded. The constant contributes $2h(0,0)\log(\delta^2/|y|)$, the next two terms each have the same finite limit from both sides (change variables to $v=y/u$ in the third), and the last is $O(|y|\log(1/|y|))$. Away from the saddles all other contributions to the pushforward density near $s_0$ are smooth by the submersion theorem and compactness. The local positive coefficients add.
 
-Translate $s_0$ to zero. In the integral for $\operatorname{Re}G(-h+i0)$ with $h>0$, the contribution from the local logarithm changes from its value at $h=0$ by
+Translate $s_0$ to zero. In the integral for $\mathop{\mathrm{Re}}G(-h+i0)$ with $h>0$, the contribution from the local logarithm changes from its value at $h=0$ by
 ```math
 -\sqrt h\int_0^\infty v^{-1/2}\log(1+1/v)\,dv+O(h)
 =-2\pi\sqrt h+O(h)
