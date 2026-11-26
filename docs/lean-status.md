@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Bollobás–Erdős–Tuza conjecture
+
+The [transversal bounds](../results/erdos-611-clique-transversals/) have written proofs and exact finite checks. The unrestricted conjecture remains open. No formalization is registered for these bounds.
+
 ## Written partial results on eleven open problems
 
 The eleven notes on finite designs, set mappings, independence ratios, convex subsets, blocking sets, odd cycles, hypergraph colorings, Steiner sails, projective rigidity and normed spaces have written proofs. Their landing pages report `none` for formalization. The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems) gives each statement, and the [verification record](verification.md#written-results-on-eleven-open-problems) identifies the five executable checks.

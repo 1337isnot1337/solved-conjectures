@@ -1,4 +1,6 @@
-# Bollobás–Erdős–Tuza conjecture
+# Earlier transversal bounds for the Bollobás–Erdős–Tuza conjecture
+
+The [recursive construction and induced-biclique theorem](../results/erdos-611-clique-transversals/) strengthen the lower bound below and give another class with a sublinear transversal.
 
 A graph on $n$ vertices is $c$-hollow if every inclusion-maximal independent set has size at least $cn$. Write $\tau(G)$ for the smallest size of a vertex set meeting all maximal independent sets. The conjecture says $\tau(G)=o(n)$ for each fixed $0\lt c\lt1$. Taking graph complements gives the first question in Erdős Problem 611. [Erdős–Gallai–Tuza, Problem 2](https://doi.org/10.1016/0012-365X(92)90681-5) · [Erdős Problems wiki](https://erdosproblems.ai/problems/611) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/71)
 
