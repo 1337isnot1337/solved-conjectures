@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify both Cyrusian–Kaplan ordinarization conclusions
+
+Lean verifies exact quasipolynomiality and eventual strict increase for the literal fixed-ordinarization numerical-semigroup count. This is not the all-genus Bras-Amorós conjecture. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the unbounded one- and two-block circular index constructions
 
 For every integer parameter of at least six, Lean constructs both simple graphs with the prescribed order, maximum degree and exact circular chromatic index. It proves the four finite cases of Proposition 2 and the three degree ranges of Corollary 3. Lean also proves that the stated two-matching base has no solution at parameters three, four and five. [Theorems, source data and verification](results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md).

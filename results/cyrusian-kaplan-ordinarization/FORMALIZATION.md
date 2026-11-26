@@ -158,3 +158,29 @@ the all-owned axiom audit (783 declarations,
 This settles the named quasipolynomial assertion in Lean. The
 additional eventual-monotonicity conclusion of the written entry
 has not been included in this checkpoint.
+
+## Complete fixed-ordinarization result
+
+The [complete checkpoint](../../lean/Conjectures/CyrusianKaplanFullCheckpoint.lean)
+proves both conclusions of the [written theorem](PROOF.md). For each
+fixed positive ordinarization number, the actual numerical-semigroup
+count is a quasipolynomial of exact degree `2r` in every residue at
+every positive genus, and is strictly increasing from some genus on.
+
+Lean identifies the closed-boundary baseline with the binomial count,
+cancels the overlap and counts the two one-sided corrections. Every
+active correction fibre lies on a primitive integer row. A doubling
+exception forces another primitive row or cannot occur in the baseline.
+The affine span of a full-dimensional tile in a primitive row contains
+an integer point, supplying a unit-height lattice translation. Therefore
+the signed correction has a common leading coefficient in all residues;
+smaller tiles have zero coefficient in that degree. The bound on the
+baseline increment gives strict eventual increase. This does not
+assert the stronger all-genus Bras-Amorós monotonicity conjecture.
+
+All 86 modules passed strict Lean compilation,
+the all-owned axiom audit (1118 declarations,
+837 theorems, 345 private,
+16 named endpoints), and stock-kernel replay.
+[Complete scope and replay receipt](verification/full/receipt.json).
+The aggregate repository check is separate.
