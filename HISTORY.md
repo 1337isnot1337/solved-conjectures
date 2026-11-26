@@ -50,6 +50,10 @@ Lean bounds the degree spectrum in every finite linear space, rules out the prop
 
 Consecutive unscaled two-parameter Narayana rows have strictly interlacing negative roots throughout the source domain, with the stronger multiplicative gap $q^2$. The proof uses an infinite product of dilation operators and the reciprocal symmetry of the original polynomials. [Proof](results/zeng-unscaled-interlacing/proof.md) · [Source audit](results/zeng-unscaled-interlacing/sources.md) · [Mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/792#issuecomment-7192093300)
 
+## 2026-11-26 — Alexandersson’s transportation polytope conjecture
+
+Full-support transportation polytopes can have Ehrhart numerators with nonreal roots. The displayed family has an unbounded number of nonreal roots. A 24-dimensional counterexample has two nonreal zeros. A Legendre-polynomial estimate proves a lower bound of order $\sqrt{m\log m}$ throughout the family for sufficiently large $m$. The numerator formula was previously obtained by Guan and Jin. [Proof](results/alexandersson-transportation/proof.md) · [Source audit](results/alexandersson-transportation/sources.md) · [Mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350)
+
 ## 2026-11-26 — Wang–Yang's Fuss–Narayana conjecture
 
 A product determinant and two triangular positivity criteria prove Wang and Yang's 2018 Conjecture 4.1 for every Fuss parameter. [Proof](results/wang-yang-fuss-narayana/proof.md) · [Source audit](results/wang-yang-fuss-narayana/sources.md) · [Issue 98](https://github.com/1337isnot1337/solved-conjectures/issues/98)

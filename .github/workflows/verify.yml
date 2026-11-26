@@ -32,6 +32,8 @@ jobs:
         run: python3 results/gyarfas-planar-degree-repetition/verify.py
       - name: Check Zeng unscaled interlacing and multiplicative root separation
         run: python3 results/zeng-unscaled-interlacing/check.py
+      - name: Check the full-support transportation counterexample
+        run: python3 results/alexandersson-transportation/check.py
       - name: Check all six Fuss–Narayana matrices
         run: python3 results/wang-yang-fuss-narayana/check.py
       - name: Check the permutation-pattern interval rank dip
