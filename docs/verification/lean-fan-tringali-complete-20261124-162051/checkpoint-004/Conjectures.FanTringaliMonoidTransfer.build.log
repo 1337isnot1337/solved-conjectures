@@ -1,3 +1,0 @@
-command=["/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean", "-j2", "-M3500", "-DwarningAsError=true", "-o", "/tmp/cinna-lean-162051/fan/checkpoint-004/oleans/Conjectures/FanTringaliMonoidTransfer.olean", "Conjectures/FanTringaliMonoidTransfer.lean"]
-
-exit=0
