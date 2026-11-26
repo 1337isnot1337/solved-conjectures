@@ -1,8 +1,0 @@
-{"module": "toolchain", "exit_code": 0, "elapsed_seconds": 1.923267884000012}
-{"module": "toolchain-prefix", "exit_code": 0, "elapsed_seconds": 0.6639668920000048}
-{"module": "external-preflight", "exit_code": 0, "elapsed_seconds": 0.7593517979999973}
-{"module": "project-clean", "exit_code": 0, "elapsed_seconds": 0.6578410520000091}
-{"module": "Conjectures.ExtensionDependency", "exit_code": 0, "elapsed_seconds": 1.325065834}
-{"module": "Conjectures.ExtensionGood", "exit_code": 0, "elapsed_seconds": 1.3245696449999969}
-{"module": "Conjectures.ExtensionBad", "exit_code": 0, "elapsed_seconds": 1.3227013000000056}
-{"status": "passed", "phase": "source", "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/source/receipt.json"}
