@@ -80,9 +80,32 @@ theorem lengthSets_complete {g k : ℕ} (hk : k≤2*g) {f : Fin 2 → ℕ → �
   · exact ⟨0,hAs a h⟩
   · exact ⟨1,hBs a h⟩
 
+/-- Discard a forbidden first edge before enumerating the remaining matching. -/
+def allowedMatchings (ok : (ℕ × ℕ) → Bool) : ℕ → List ℕ → List (List (ℕ × ℕ))
+  | 0, [] => [[]]
+  | 0, _::_ => []
+  | _+1, [] => []
+  | t+1, x::xs => xs.flatMap fun y =>
+      if ok (edge x y) then (allowedMatchings ok t (xs.erase y)).map (List.cons (edge x y))
+      else []
+
+theorem allowedMatchings_eq (ok : (ℕ × ℕ) → Bool) (t : ℕ) (W : List ℕ) :
+    allowedMatchings ok t W=(matchings t W).filter (fun M => M.all ok) := by
+  induction t generalizing W with
+  | zero => cases W <;> rfl
+  | succ t ih =>
+    cases W with
+    | nil => rfl
+    | cons x xs =>
+      simp only [allowedMatchings,matchings,List.filter_flatMap]
+      congr 1
+      funext y
+      rw [List.filter_map]
+      cases h : ok (edge x y) <;> simp [h,Function.comp_def,ih]
+
 def complements (g k ε S : ℕ) : List (List (ℕ × ℕ)) :=
-  (matchings g (support g k ε)).filter fun M => M.all fun e =>
-    decide (S.testBit (distance (vertexCount g) e.1 e.2)≠true)
+  allowedMatchings (fun e => decide (S.testBit (distance (vertexCount g) e.1 e.2)≠true))
+    g (support g k ε)
 
 def viablePairs (g k : ℕ) : List (List (ℕ × ℕ) × List (ℕ × ℕ)) :=
   ((lengthSets g k).flatMap fun S =>
@@ -99,7 +122,9 @@ theorem complements_complete {g k : ℕ} (hk : k≤2*g) {f : Fin 2 → ℕ → �
     {S : ℕ} (hs : ∀ a, S.testBit a=true → ∃ j : Fin 2, ∃ y∈support g k j.val, a=distance (vertexCount g) y (f j y)) :
     ∃ M∈complements g k i.val S, represents M (support g k i.val) h := by
   obtain ⟨M,hm,desc⟩ := matchings_complete (support_size hk _) (support_nodup (by have := i.isLt; omega)) hp
-  refine ⟨M,List.mem_filter.mpr ⟨hm,List.all_eq_true.mpr ?_⟩,desc⟩
+  refine ⟨M,?_,desc⟩
+  rw [complements,allowedMatchings_eq]
+  refine List.mem_filter.mpr ⟨hm,List.all_eq_true.mpr ?_⟩
   intro e he
   apply decide_eq_true
   intro mem
