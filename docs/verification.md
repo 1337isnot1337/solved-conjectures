@@ -1112,6 +1112,6 @@ direct and skew sums, an exact decomposition of their diagonal
 fibers, and the strict separation of distinct child displacement
 intervals at skew nodes. It also checks the same-diagonal ancestor
 property, the finite spine-record counts, the critical offspring and
-spine weights, and the conditional transfer from hit records to the
+spine weights, the exact Schröder enumeration, and the conditional transfer from hit records to the
 finite-instance probabilities.
 [Lean scope and receipt](../results/separable-derangements-limit/FORMALIZATION.md).

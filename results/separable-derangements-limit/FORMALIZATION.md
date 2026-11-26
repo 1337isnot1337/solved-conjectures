@@ -47,6 +47,13 @@ identities used to study diagonals of the finite permutations.
   instance whenever each finite subset of hit records contributes
   its mass to that event.
 
+- [Tree enumeration](../../lean/Conjectures/SeparableDerangementTreeEnumeration.lean).
+  Lean decomposes each nonleaf tree into its first child and its
+  remaining forest. It distinguishes the one-tree remainder from
+  a remainder with at least two trees, derives the resulting counting
+  recurrence, and identifies the count at every positive leaf size
+  with Mathlib’s small Schröder number.
+
 The tree-to-avoider bijection, normalization over all tree shapes,
 asymptotic record convergence, and almost-sure divergence of the
 conditional hit probabilities remain outside this checked scope.
@@ -58,4 +65,5 @@ independently replayed their objects with the stock kernel.
 [Spine-record receipt](verification/spine-records/receipt.json) ·
 [Critical-weight receipt](verification/critical-weights/receipt.json) ·
 [Spine-limit receipt](verification/spine-limit/receipt.json) ·
+[Tree-enumeration receipt](verification/tree-enumeration/receipt.json) ·
 [Tracking issue #732](https://github.com/1337isnot1337/solved-conjectures/issues/732).

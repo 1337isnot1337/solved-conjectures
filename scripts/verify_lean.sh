@@ -1043,6 +1043,7 @@ modules=(
   Conjectures.SeparableDerangementSpineRecords
   Conjectures.SeparableDerangementCriticalWeights
   Conjectures.SeparableDerangementSpineLimit
+  Conjectures.SeparableDerangementTreeEnumeration
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CappedExploration
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CutFactorization
   Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.EndpointHistoryKernel

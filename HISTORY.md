@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-26 — Verify the literal Schröder tree enumeration
+
+Lean splits each nonleaf tree at its first child, derives the
+counting recurrence, and identifies the count at each positive
+leaf size with Mathlib’s small Schröder number.
+[Scope and receipt](results/separable-derangements-limit/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify critical spine weights and conditional limit steps
 
 Lean checks normalization of the offspring and child-index weights,
