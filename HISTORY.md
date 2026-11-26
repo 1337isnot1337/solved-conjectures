@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Claesson–Dukes–Steingrímsson’s stack-sorting conjecture
+
+Proved the exact count for $n\ge8$ at the $n-5$ pass threshold. The [proof](results/claesson-dukes-steingrimsson-stack-sorting/PROOF.md) reduces the count to a finite coefficient table and an exact polynomial identity. The [audit](results/claesson-dukes-steingrimsson-stack-sorting/AUDIT.md) records the source check and independent replay.
+
 ## 2026-11-26 — Cioba–Savvas shutout number conjecture
 
 Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).

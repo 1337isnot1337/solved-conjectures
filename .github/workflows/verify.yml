@@ -42,6 +42,9 @@ jobs:
         run: |
           python3 results/erz-big-descent-schur/verify.py
           python3 results/erz-big-descent-schur/check_review.py
+      - name: Reproduce the Claesson–Dukes–Steingrímsson stack-sorting count
+        shell: pwsh
+        run: ./results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample

@@ -112,6 +112,7 @@ STATUS_LABEL_SLUGS = {
     "Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture": "erz-big-descent-schur",
     "Chern–Fu–Lin’s joint Eulerian equidistribution conjecture": "chern-fu-lin-joint-eulerian",
     "Dukes’s revstack interlacing conjecture": "dukes-revstack",
+    "Claesson–Dukes–Steingrímsson’s stack-sorting conjecture": "claesson-dukes-steingrimsson-stack-sorting",
     "Almirón–Moyano-Fernández’s Wilf-module questions": "almiron-moyano-wilf-module-questions",
     "Defant–Engen–Miller’s Lassalle refinement conjecture": "defant-engen-miller-lassalle",
     "Sagan–Wilson’s plactic centralizer conjecture": "sagan-wilson-plactic",
