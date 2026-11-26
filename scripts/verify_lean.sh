@@ -115,6 +115,21 @@ modules=(
   Conjectures.PomeranceSarkozyMeasurePush
   Conjectures.PomeranceSarkozyPoissonColumns
   Conjectures.PomeranceSarkozyPoissonCountCheckpoint
+  Conjectures.PomeranceSarkozyActualCountEvents
+  Conjectures.PomeranceSarkozyActualCountLaw
+  Conjectures.PomeranceSarkozyActualCountMeasure
+  Conjectures.PomeranceSarkozyAtomicEvent
+  Conjectures.PomeranceSarkozyBernoulliCountEncoding
+  Conjectures.PomeranceSarkozyBernoulliMatrix
+  Conjectures.PomeranceSarkozyFiniteAtomic
+  Conjectures.PomeranceSarkozyFullFiniteComparison
+  Conjectures.PomeranceSarkozyJointCountComparison
+  Conjectures.PomeranceSarkozyMeasureEvent
+  Conjectures.PomeranceSarkozyModelCountMass
+  Conjectures.PomeranceSarkozyResidueCountEncoding
+  Conjectures.PomeranceSarkozySupportedPush
+  Conjectures.PomeranceSarkozyUniformPush
+  Conjectures.PomeranceSarkozyWindowCounts
   Conjectures.PomeranceSarkozyPoissonDifferenceChar
   Conjectures.PomeranceSarkozyBernoulliArray
   Conjectures.PomeranceSarkozyProcessKernelTools
