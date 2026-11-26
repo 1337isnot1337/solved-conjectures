@@ -1,5 +1,9 @@
 # Verification
 
+## The two truncated-square covering examples
+
+Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof and receipt](../results/meylender-thalmaier-truncated-square/FORMALIZATION.md).
+
 ## Upper-half circular chromatic index examples in every degree from eight
 
 For every integer maximum degree from eight, Lean constructs a finite simple graph whose real circular chromatic index is strictly between that degree plus one half and that degree plus one. The proof combines the two insertion families, regular circulants and tomdif’s seven exceptional examples. The three-block theorem gives the degree of every labelled vertex for every permitted packing. [Full theorem and verification](../results/circular-index-upper-half-remaining-deltas/FORMALIZATION.md).

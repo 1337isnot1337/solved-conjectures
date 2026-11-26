@@ -1,0 +1,249 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T08:35:58.713188+00:00",
+  "finished_at": "2026-11-26T08:38:22.865964+00:00",
+  "root": "Conjectures.MeylenderThalmaierPentagonArea",
+  "project_modules": [
+    "Conjectures.MeylenderThalmaierArea",
+    "Conjectures.MeylenderThalmaierComparison",
+    "Conjectures.MeylenderThalmaierCoverScale",
+    "Conjectures.MeylenderThalmaierCutArea",
+    "Conjectures.MeylenderThalmaierParallelogram",
+    "Conjectures.MeylenderThalmaierPentagon",
+    "Conjectures.MeylenderThalmaierPentagonArea",
+    "Conjectures.MeylenderThalmaierRatios",
+    "Conjectures.MeylenderThalmaierStrips"
+  ],
+  "required_endpoints": [
+    "MeylenderThalmaier.axes_apply",
+    "MeylenderThalmaier.band_measurable",
+    "MeylenderThalmaier.band_mem",
+    "MeylenderThalmaier.boundary_values",
+    "MeylenderThalmaier.concrete_comparison",
+    "MeylenderThalmaier.convex_parallelogram",
+    "MeylenderThalmaier.convex_pentagon",
+    "MeylenderThalmaier.coverRatio_parallelogram",
+    "MeylenderThalmaier.determinant_axes",
+    "MeylenderThalmaier.eventually_better",
+    "MeylenderThalmaier.fits_convexHull",
+    "MeylenderThalmaier.fits_vertical_le",
+    "MeylenderThalmaier.geometric_counterexample",
+    "MeylenderThalmaier.geometric_eventually_better",
+    "MeylenderThalmaier.inverse_axes",
+    "MeylenderThalmaier.normal_legs",
+    "MeylenderThalmaier.parallel_ratio_identity",
+    "MeylenderThalmaier.parallelogram_covers",
+    "MeylenderThalmaier.parallelogram_preimage",
+    "MeylenderThalmaier.parallelogram_ratio",
+    "MeylenderThalmaier.parallelogram_scale",
+    "MeylenderThalmaier.pentagon_covers",
+    "MeylenderThalmaier.pentagon_geometric_counterexample",
+    "MeylenderThalmaier.pentagon_mem",
+    "MeylenderThalmaier.pentagon_scale",
+    "MeylenderThalmaier.pentagon_span",
+    "MeylenderThalmaier.pentagon_vertices",
+    "MeylenderThalmaier.volume_band",
+    "MeylenderThalmaier.volume_parallelogram",
+    "MeylenderThalmaier.volume_pentagon",
+    "MeylenderThalmaier.volume_truncatedSquare"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/MeylenderThalmaierArea.lean": "58edb98ec3e37c90f5d2d0ef58c927210f8a6d532015a77c8f10b77949b321e5",
+    "lean/Conjectures/MeylenderThalmaierComparison.lean": "27114da2f2af051a78ce2b66eb688d2567757ed53d7ab953c2c8d7d6eaf0a3e8",
+    "lean/Conjectures/MeylenderThalmaierCoverScale.lean": "506c8eebb310ce22389946f13d5e8597d0e1abfea364d22ff10ee6f2ed2dbb43",
+    "lean/Conjectures/MeylenderThalmaierCutArea.lean": "a05ce0ff5a899d98dbc8557c9c58b1f4d79a63c8eacf7b46792b6742e9d57a9d",
+    "lean/Conjectures/MeylenderThalmaierParallelogram.lean": "56f259823ab7f6dbce8269cd206c5b47096a12251d6e9a3f23bb0fcf7f1e6714",
+    "lean/Conjectures/MeylenderThalmaierPentagon.lean": "d04f3702c04ac7acbf2af5024802996ae07ee370953263ad6cf74c4f88ece1bf",
+    "lean/Conjectures/MeylenderThalmaierPentagonArea.lean": "c6f2651e6eff09c396abacad54db923ded1626c34a6b7218d4c0ab900ad8369f",
+    "lean/Conjectures/MeylenderThalmaierRatios.lean": "a07592f28fe1070268080626642f92c4de88b3a49835db8ef99aac03ed741481",
+    "lean/Conjectures/MeylenderThalmaierStrips.lean": "34b8d762ed91f7a3745948abb2a5d93698462d50b97d346b03ef6dd3d86ec6d5"
+  },
+  "input_sha256": {
+    "lean/Conjectures/MeylenderThalmaierArea.lean": "58edb98ec3e37c90f5d2d0ef58c927210f8a6d532015a77c8f10b77949b321e5",
+    "lean/Conjectures/MeylenderThalmaierComparison.lean": "27114da2f2af051a78ce2b66eb688d2567757ed53d7ab953c2c8d7d6eaf0a3e8",
+    "lean/Conjectures/MeylenderThalmaierCoverScale.lean": "506c8eebb310ce22389946f13d5e8597d0e1abfea364d22ff10ee6f2ed2dbb43",
+    "lean/Conjectures/MeylenderThalmaierCutArea.lean": "a05ce0ff5a899d98dbc8557c9c58b1f4d79a63c8eacf7b46792b6742e9d57a9d",
+    "lean/Conjectures/MeylenderThalmaierParallelogram.lean": "56f259823ab7f6dbce8269cd206c5b47096a12251d6e9a3f23bb0fcf7f1e6714",
+    "lean/Conjectures/MeylenderThalmaierPentagon.lean": "d04f3702c04ac7acbf2af5024802996ae07ee370953263ad6cf74c4f88ece1bf",
+    "lean/Conjectures/MeylenderThalmaierPentagonArea.lean": "c6f2651e6eff09c396abacad54db923ded1626c34a6b7218d4c0ab900ad8369f",
+    "lean/Conjectures/MeylenderThalmaierRatios.lean": "a07592f28fe1070268080626642f92c4de88b3a49835db8ef99aac03ed741481",
+    "lean/Conjectures/MeylenderThalmaierStrips.lean": "34b8d762ed91f7a3745948abb2a5d93698462d50b97d346b03ef6dd3d86ec6d5",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierRatios.olean",
+        "Conjectures/MeylenderThalmaierRatios.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierRatios.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierParallelogram.olean",
+        "Conjectures/MeylenderThalmaierParallelogram.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierParallelogram.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierArea.olean",
+        "Conjectures/MeylenderThalmaierArea.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierArea.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierCoverScale.olean",
+        "Conjectures/MeylenderThalmaierCoverScale.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierCoverScale.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierCutArea.olean",
+        "Conjectures/MeylenderThalmaierCutArea.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierCutArea.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierComparison.olean",
+        "Conjectures/MeylenderThalmaierComparison.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierComparison.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierPentagon.olean",
+        "Conjectures/MeylenderThalmaierPentagon.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierPentagon.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierStrips.olean",
+        "Conjectures/MeylenderThalmaierStrips.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierStrips.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-truncated-square-publication/lean/.lake/build/lib/lean/Conjectures/MeylenderThalmaierPentagonArea.olean",
+        "Conjectures/MeylenderThalmaierPentagonArea.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MeylenderThalmaierPentagonArea.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-truncated-square-lean/main/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-truncated-square-publication/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.MeylenderThalmaierPentagonArea",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 190,
+    "modules": 9,
+    "private_declarations": 46,
+    "raw_declarations": 190,
+    "required": 31,
+    "tag": "passed",
+    "theorems": 155
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
