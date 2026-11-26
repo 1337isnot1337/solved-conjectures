@@ -1,0 +1,469 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T04:55:27.704628+00:00",
+  "finished_at": "2026-11-26T06:30:39.970806+00:00",
+  "root": "Conjectures.HeimNeuhauserPlanePartitionFinite",
+  "project_modules": [
+    "Conjectures.HeimNeuhauserPlanePartition",
+    "Conjectures.HeimNeuhauserPlanePartitionBoundary",
+    "Conjectures.HeimNeuhauserPlanePartitionCertificate",
+    "Conjectures.HeimNeuhauserPlanePartitionChecks",
+    "Conjectures.HeimNeuhauserPlanePartitionData",
+    "Conjectures.HeimNeuhauserPlanePartitionFinite",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices000To031",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices032To063",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices064To095",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices096To119",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices120To143",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices144To163",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices164To183",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices184To199",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices200To214",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices215To229",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices230To239",
+    "Conjectures.HeimNeuhauserPlanePartitionIndices240To250",
+    "Conjectures.HeimNeuhauserPlanePartitionRows",
+    "Conjectures.HeimNeuhauserPlanePartitionScalar",
+    "Conjectures.OrdinaryDarcais",
+    "Conjectures.OrdinaryDarcaisPacked",
+    "Conjectures.OrdinaryDarcaisRows"
+  ],
+  "required_endpoints": [
+    "PlanePartition.divisorSquareSum_eq_sigma_two",
+    "PlanePartition.planePartition_zero",
+    "PlanePartition.planePartition_recurrence",
+    "PlanePartition.planePartition_pos",
+    "PlanePartition.rootDecrease_one_iff",
+    "PlanePartition.rootDecrease_first_five",
+    "PlanePartition.rootDecrease_six_to_eleven",
+    "PlanePartition.original_root_of_turan",
+    "PlanePartition.scalarCandidate_eval",
+    "PlanePartition.strictTuran_of_certificates",
+    "PlanePartition.strictTuran_finite",
+    "PlanePartition.rootDecrease_through_250",
+    "PlanePartition.original_root_finite",
+    "PlanePartition.original_root_of_turan_tail"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/HeimNeuhauserPlanePartition.lean": "a79234e2c6a6887bb9c9dc262dc496f334cb6c0c9f66e464cfb4f85fe58fb2cd",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionBoundary.lean": "f19bfd6b4c3a3b83966019e9c8e2b6f1f01d9ae9f73b52fece3586d061f568f6",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionCertificate.lean": "6d1cf4133d9b5720a10326a6bab354fccd526b1b1da2f1b01b20f63d27347e58",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionChecks.lean": "62ce130cdbc9c3462d8d4f8da5a27c5ca1ba02381c674d5da0e406781ca02860",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionData.lean": "26d9cbbf1960216275fb483c7bb82075935ae28a4b335440251e68242ae810d9",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionFinite.lean": "2952ca3962a4853cfb331ab5cec55ab6bf0be5a906b65e18a89a4e604ebda4c6",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices000To031.lean": "34d3661cf972ba4d79cb200ffd6cf794aa274b3eea2d3c785ce3753caef30565",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices032To063.lean": "51071985883ea944a38c72473782de30a3fd53a566bb2cb26dcef70f4a7fd8d7",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices064To095.lean": "06cbb2c56fd86dc7808f4d7739a7dbcf4faa597cdb8e1a16f051db6812229aef",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices096To119.lean": "6e195d099c1d437abd4412977efa453affd5467a9a1abaec2e93df06d97c906f",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices120To143.lean": "70a6dc9c08d9aefff360858b60145287a123bbb06c20bd8a2a5c34a8aae68c8f",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.lean": "cc900b37a95d45694eb5b7fa71ec725660f7222ace6ad2ed820dee3d9752f278",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.lean": "123beddbe62f89bdf597c99381acce67f093c787555519a2cbf7905038e11c19",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.lean": "d15fd3a5fdaf331e78507a7fa061e1fd8f25be4e1bc563154116761db844a063",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean": "a02d831b1ac7f124090d2de04b90499c4ac04e345c8c76d947aab80efd178747",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean": "ffbe5997d8621470059679f35ab81e892f3eb934f48fdf2b2b9529d9c9e64b62",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean": "bec02e24fb7213cf3e9f865efb053e891ace5329075f459f40bf4eed9c0ee502",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean": "3f226f134dbc0776f8ee4847f832bd83b42c70f6ce5a60252a2c6611b9b314c2",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionRows.lean": "fc942551ebed2f0a742b7327b1c37b829be5ec569a9367bfedb6f8bc73b79fe2",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionScalar.lean": "b9ad4c95203afbb6968e160f938c997b81295f22b82f7a56c26d850962221f12",
+    "lean/Conjectures/OrdinaryDarcais.lean": "a83ce75925dd3f516d7128e51abca100f4c2a69dabed2ccb99e25c505b5f3f0e",
+    "lean/Conjectures/OrdinaryDarcaisPacked.lean": "bf12478484f623928d687e4ea94fbfe5971e31ad2b3dce2d8a4c370153eebe22",
+    "lean/Conjectures/OrdinaryDarcaisRows.lean": "c9a84d0fb89c0dabc1ce15db39c7972dbdd78801da553222a1b8b455dbb3cfe0"
+  },
+  "input_sha256": {
+    "lean/Conjectures/HeimNeuhauserPlanePartition.lean": "a79234e2c6a6887bb9c9dc262dc496f334cb6c0c9f66e464cfb4f85fe58fb2cd",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionBoundary.lean": "f19bfd6b4c3a3b83966019e9c8e2b6f1f01d9ae9f73b52fece3586d061f568f6",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionCertificate.lean": "6d1cf4133d9b5720a10326a6bab354fccd526b1b1da2f1b01b20f63d27347e58",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionChecks.lean": "62ce130cdbc9c3462d8d4f8da5a27c5ca1ba02381c674d5da0e406781ca02860",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionData.lean": "26d9cbbf1960216275fb483c7bb82075935ae28a4b335440251e68242ae810d9",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionFinite.lean": "2952ca3962a4853cfb331ab5cec55ab6bf0be5a906b65e18a89a4e604ebda4c6",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices000To031.lean": "34d3661cf972ba4d79cb200ffd6cf794aa274b3eea2d3c785ce3753caef30565",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices032To063.lean": "51071985883ea944a38c72473782de30a3fd53a566bb2cb26dcef70f4a7fd8d7",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices064To095.lean": "06cbb2c56fd86dc7808f4d7739a7dbcf4faa597cdb8e1a16f051db6812229aef",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices096To119.lean": "6e195d099c1d437abd4412977efa453affd5467a9a1abaec2e93df06d97c906f",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices120To143.lean": "70a6dc9c08d9aefff360858b60145287a123bbb06c20bd8a2a5c34a8aae68c8f",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.lean": "cc900b37a95d45694eb5b7fa71ec725660f7222ace6ad2ed820dee3d9752f278",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.lean": "123beddbe62f89bdf597c99381acce67f093c787555519a2cbf7905038e11c19",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.lean": "d15fd3a5fdaf331e78507a7fa061e1fd8f25be4e1bc563154116761db844a063",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean": "a02d831b1ac7f124090d2de04b90499c4ac04e345c8c76d947aab80efd178747",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean": "ffbe5997d8621470059679f35ab81e892f3eb934f48fdf2b2b9529d9c9e64b62",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean": "bec02e24fb7213cf3e9f865efb053e891ace5329075f459f40bf4eed9c0ee502",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean": "3f226f134dbc0776f8ee4847f832bd83b42c70f6ce5a60252a2c6611b9b314c2",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionRows.lean": "fc942551ebed2f0a742b7327b1c37b829be5ec569a9367bfedb6f8bc73b79fe2",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionScalar.lean": "b9ad4c95203afbb6968e160f938c997b81295f22b82f7a56c26d850962221f12",
+    "lean/Conjectures/OrdinaryDarcais.lean": "a83ce75925dd3f516d7128e51abca100f4c2a69dabed2ccb99e25c505b5f3f0e",
+    "lean/Conjectures/OrdinaryDarcaisPacked.lean": "bf12478484f623928d687e4ea94fbfe5971e31ad2b3dce2d8a4c370153eebe22",
+    "lean/Conjectures/OrdinaryDarcaisRows.lean": "c9a84d0fb89c0dabc1ce15db39c7972dbdd78801da553222a1b8b455dbb3cfe0",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartition.olean",
+        "Conjectures/HeimNeuhauserPlanePartition.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartition.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcais.olean",
+        "Conjectures/OrdinaryDarcais.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.OrdinaryDarcais.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisPacked.olean",
+        "Conjectures/OrdinaryDarcaisPacked.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.OrdinaryDarcaisPacked.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisRows.olean",
+        "Conjectures/OrdinaryDarcaisRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.OrdinaryDarcaisRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionRows.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionChecks.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionChecks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionChecks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionBoundary.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionBoundary.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionBoundary.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionScalar.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionScalar.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionScalar.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionData.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionData.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionData.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCertificate.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices000To031.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices000To031.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices000To031.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices032To063.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices032To063.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices032To063.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices064To095.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices064To095.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices064To095.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices096To119.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices096To119.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices096To119.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices120To143.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices120To143.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices120To143.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices144To163.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices144To163.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices164To183.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices164To183.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices184To199.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices184To199.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices200To214.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices215To229.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices230To239.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionIndices240To250.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-plane-partition-research/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFinite.olean",
+        "Conjectures/HeimNeuhauserPlanePartitionFinite.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.HeimNeuhauserPlanePartitionFinite.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-plane-partition-lean/research-finite/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-plane-partition-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.HeimNeuhauserPlanePartitionFinite"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1958,
+    "modules": 23,
+    "private_declarations": 1764,
+    "raw_declarations": 1958,
+    "required": 14,
+    "tag": "passed",
+    "theorems": 1885
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
