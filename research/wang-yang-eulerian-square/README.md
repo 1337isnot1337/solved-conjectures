@@ -75,3 +75,5 @@ For the spline kernel itself, take rows $p_1,p_2,p_3$ and evaluation points $7/1
 Its determinant equals $-13/500$. Thus an application of integral Cauchy–Binet that requires every such spline determinant to have the same sign cannot be justified from the spline kernel. The Eulerian-square determinant involves an integral of a product, so this example concerns the auxiliary kernel alone.
 
 The [arithmetic check](check.py) evaluates 144 of the spline integrals by multiplying exact piecewise polynomials and checking the Eulerian recurrence independently. It also checks all 4,356 two-by-two minors in the same block.
+
+The [mixed-difference argument](differences.md) proves absolute monotonicity of the entire Eulerian square in both integer indices and strict positivity of all three-by-three minors using both constant margins in the symmetric extension.

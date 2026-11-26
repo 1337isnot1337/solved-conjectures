@@ -41,6 +41,16 @@ def main():
     for i, k in pairs:
         for j, ell in pairs:
             assert entries[i][j] * entries[k][ell] > entries[i][ell] * entries[k][j]
+    for i in range(side):
+        for j in range(side):
+            mixed = sum((-1)**(i + j - a - b) * comb(i, a) * comb(j, b) * entries[a][b]
+                        for a in range(i + 1) for b in range(j + 1))
+            assert mixed >= 0 and (mixed > 0) == ((i == j == 0) or (i > 0 and j > 0))
+    positive_pairs = list(combinations(range(1, side), 2))
+    for i, k in positive_pairs:
+        for j, ell in positive_pairs:
+            assert (entries[i][j] - 1) * (entries[k][ell] - 1) > (entries[i][ell] - 1) * (entries[k][j] - 1)
+    print(f'{side**2} mixed differences and {len(positive_pairs)**2} bordered three-by-three minors passed')
     print(f'{side**2} exact spline integrals and {len(pairs)**2} two-by-two determinants passed')
 
 
