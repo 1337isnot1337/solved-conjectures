@@ -2,9 +2,9 @@
 
 Work in the balanced zero-rainbow-six-cycle [three-block setup](PAIR-GRAPHONS.md) with within-part colors \(A,B\), and put \(t=1/6\). Let the parts be \(X,Y,Z\) and the cross palette be \(K\).
 
-**Theorem.** Suppose \(X\) has two internal \(A\)-row classes of measure \(t\). Almost every outside vertex sends precisely three colors into \(X\), with one color filling one class and the two other colors splitting the other class. Suppose there is a common pairing of \(K\) such that the two colors splitting a class are always partners. Finally suppose each missing-label class of outside vertices has measure at most \(t\). Then there is an exact parity cut.
+**Theorem.** Suppose \(X\) has two internal \(A\)-row classes of measure \(t\). Almost every outside vertex sends precisely three colors into \(X\), with one color filling one class and the two other colors splitting the other class. Suppose there is a common pairing of \(K\) such that the two colors splitting a class are always partners. Then there is an exact parity cut.
 
-In particular, this settles the all-heavy target regime of [ALL-HEAVY-PAIRING.md](ALL-HEAVY-PAIRING.md), now including a positive measure of complete roots. There the hypotheses all hold and all four missing classes measure exactly \(t\). This does not settle the missing-pair reduction as a whole or the unrestricted Erdős problem.
+In particular, this settles the all-heavy target regime of [ALL-HEAVY-PAIRING.md](ALL-HEAVY-PAIRING.md), now including a positive measure of complete roots. The theorem also applies when fewer than three missing labels are heavy, by the pairing criterion at the end. This does not settle the missing-pair reduction as a whole or the unrestricted Erdős problem.
 
 Pass to deterministic color kernels by [circle refinement](DETERMINISTIC.md). The classes and degree hypotheses lift and parity descends. Write \(\pi:K\to\{0,1\}\) for the bit distinguishing the two color pairs, \(\bar a\) for the partner of \(a\), and \(p(x)\) for the \(A\)-row bit in \(X\). The internal \(A,B\)-rule on \(X\) depends only on \(p(x)+p(x')\), all bit arithmetic being modulo two. This follows by symmetry and the internal degree \(t\).
 
@@ -29,14 +29,22 @@ Every outside vertex sends degree \(t\) of each color-pair bit into the other ou
 
 ## The inside rules agree as well
 
-Let \(L\in\{A,B\}\) be the color used within an \(X\)-row class, and \(L'\) the other internal color. Suppose a positive measure of same-\(s\)-bit pairs \(y,y'\in Y\) has color \(L'\). We show these pairs yield a forbidden cycle. Fix a typical such pair and put \(b=a(y')\). Choose \(z\) in the saturated \(b\)-neighborhood of \(y'\). Choose \(y''\in Y\) with the opposite \(s\)-bit and with \(a(y'')\ne a(y)\). The latter choices have positive measure: the whole opposite bit class has measure \(t\); if it were all of missing label \(a(y)\), the total outside mass cap \(t\) for that label would exclude almost all vertices \(y\) of the original bit from having that label.
+Let \(L\in\{A,B\}\) be the color used within an \(X\)-row class, and \(L'\) the other internal color. Suppose a positive measure of same-\(s\)-bit pairs \(y,y'\in Y\) has color \(L'\). We show these pairs yield a forbidden cycle. Fix a typical such pair with bit \(s\) and put \(m=a(y)\). The total outside mass with missing label \(m\) AND bit \(1-s\) is at most \(t\): every such vertex receives the saturated color \(\bar m\) from the very same \(X\)-class, determined by \(\pi(m)+(1-s)\), and each \(X\)-vertex has total \(\bar m\)-degree \(t\). But the total outside mass with bit \(1-s\) is \(2t\). Thus there are positive-measure possible intermediaries \(w\) of bit \(1-s\) and missing label other than \(m\), in at least one of \(Y,Z\).
 
-By the outside bit rule, \(c=\operatorname{col}(zy'')\) has opposite bit to \(b\). The complementary two colors can be assigned to \(xy\) and \(y''x'\), with positive degree into \(X\), because the missing labels at \(y,y''\) differ. Their bits sum to one. Since \(s(y)+s(y'')=1\), the two \(X\)-endpoints have the same \(p\)-bit. Their internal edge has color \(L\). We have a positive-density cycle
-\[
-x,\ y,\ y',\ z,\ y'',\ x',\ x
-\]
-using all six colors, a contradiction. In these choices the sides of each color neighborhood are fixed by the bit formula, and the two \(X\)-ends can be chosen independently, so the argument gives positive density rather than merely a walk on a quotient.
+- If they occur in \(Y\), use a two-edge middle path \(y',z,w\) through the other outside part, with \(z\) in the saturated \(a(y')\)-neighborhood of \(y'\). The second edge \(zw\) then has opposite bit to the first, by the outside bit rule.
+- If they occur in \(Z\), use a two-edge middle path \(y',x_0,w\) with \(x_0\in X\) chosen in the entire class joined to \(y'\) in its saturated color \(\overline{a(y')}\). The second edge \(x_0w\) has opposite bit to the first by the \(X\)-outside bit rule.
+
+In either case, the two complementary cross colors can be assigned to \(xy\) and \(wx'\), with positive degree into \(X\), because the missing labels at \(y,w\) differ. Their bits sum to one. Since \(s(y)+s(w)=1\), the two \(X\)-endpoints have the same \(p\)-bit. Their internal edge has color \(L\). The resulting cycle \(x,y,y',z,w,x',x\), or \(x,y,y',x_0,w,x',x\), uses all six colors. The sides of each new color neighborhood are fixed by the bit relation, and the \(X\)-ends can be chosen independently on positive sets, so the argument produces positive density. Repeated part indices do not identify vertices.
 
 Thus every same-\(s\)-bit pair in \(Y\) has color \(L\) almost everywhere. As each bit class and each internal color degree has measure \(t\), every opposite-bit pair has color \(L'\). The argument holds verbatim in \(Z\). All three internal rules now agree. The three interpart bit shifts are \(0,0,g\); if \(g=1\), flip the bits on both \(Y,Z\), making all shifts one instead. Choose the corresponding cross-color pair, together with \(L'\), as the three crossing colors. This gives the claimed exact parity cut, with both sides of measure \(3t\).
+
+
+## Automatic pairing when two matching tests are globally complete
+
+More precisely, it suffices that **two of the three complementary matchings are complete at almost every root** of \(X\), and that all incoming color neighborhoods into \(X\) are already in single types. Suppose all incoming profiles have size three. Every outside vertex \(y\) has a specific pairing \(J(y)\), formed by its two double colors and by the singleton plus its missing color. At a typical root, a complete matching has a fixed same- or opposite-type status.
+
+Suppose two distinct pairings occur on positive measure. At least one, say \(J_1\), is a globally complete matching. Take a typical \(y_1\) of pairing \(J_1\). On its entire double type, \(J_1\) has same-type status, since the double-to-double palette uses that matching and both colors have positive degree. Let \(y_2\) have the other pairing \(J_2\). If its singleton type is the double type of \(y_1\), then its two singleton-to-double palettes include \(J_1\) and force opposite status there, a contradiction. If instead their double types coincide, one of its two double colors pairs with the singleton color in \(J_1\). On the positive neighborhood of that double color, \(J_1\) is again opposite, a contradiction.
+
+Thus the pairing is fixed. In the setting of [THREE-COLOR-PROFILES.md](THREE-COLOR-PROFILES.md) with at most two heavy missing labels, two tests are globally complete and the homogeneous two-type conclusion applies. The theorem therefore proves global parity for exactly-three incoming profiles whenever the number of heavy missing labels is zero, one, two or four. For an exact-three target the only remaining heavy-label count is three; general mixed profile counts remain open too.
 
 Coordination: [#870](https://github.com/1337isnot1337/solved-conjectures/issues/870).
