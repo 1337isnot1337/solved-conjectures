@@ -1,5 +1,9 @@
 # Lean verification status
 
+## The Steiner triple system sail problem
+
+Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Ramsey theorems](../lean/Conjectures/SteinerSailTheorems.lean) · [Research receipt](verification/lean-steiner-sails-20261126/receipt.json).
+
 ## Nathanson’s linear-form Sidon systems
 
 Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Sharp limit theorems](../lean/Conjectures/NathansonSidonSharpTheorems.lean) · [Research receipt](verification/lean-nathanson-sidon-sharp-20261126/receipt.json).
