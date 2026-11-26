@@ -106,3 +106,28 @@ For a finite threshold, deleting any set of at most $d$ vertices leaves a triang
 Hence there are at least $\lfloor d/3\rfloor+1$ mutually disjoint transversal triangles. If $d\ge72$, at least four of them have the same palette. The image of one of those under the symmetry has the complementary palette and can meet at most three of the four. This proves existence already at $d=72$ and above under the vertex symmetry hypothesis. If the color-preserving automorphisms are transitive on vertices, the result holds at **every** admissible order: start with one transversal triangle and its complementary image. Apply a uniformly random color-preserving automorphism to the latter. Its expected overlap with the former is $9/n<1$, since $n\ge13$.
 
 For example, over a finite field of order $q\equiv1\pmod {12}$, color a difference by its multiplicative coset of the sixth powers. The six colors are well-defined on unoriented edges because $-1$ is a sixth power. Translations preserve colors and are transitive; multiplication by a primitive element cycles the six colors. The conclusion applies at every such field order. It also applies to arbitrary six-colorings with the stated symmetry, without a field or group model. The unrestricted Erdős–Tuza question remains open.
+
+## A square-root bound on vertex-disjoint rainbow copies
+
+For every fixed Eulerian graph $H$ with $2h$ edges, $h$ odd, and every even $d\ge2$, there is a completely balanced $2h$-coloring of $K_{2hd+1}$ in which **every rainbow copy of $H$ meets one set of at most $\lceil(1+\sqrt{1+4hd})/2\rceil$ vertices**. Thus for the two triangles in the original problem, the maximum number of vertex-disjoint rainbow copies can be $O(\sqrt n)$. The earlier bound on the number of copies by itself allowed linearly many vertex-disjoint copies.
+
+The underlying graph statement gives an exact minimum. For even $m\ge2$, among all $m$-regular graphs on $2m+1$ vertices the least number of vertices one can remove to leave a complete bipartite cut is
+
+```math
+ t(m)=\min\{s:s(s-1)\ge m\}
+ =\left\lceil\frac{1+\sqrt{1+4m}}2\right\rceil.
+```
+
+Here a cut consists of all edges between its two classes and no edges inside them. To prove the lower bound, let $S$ be a deletion set of size $s$. If the remaining graph is empty, either nothing remains or any remaining vertex has all $m$ neighbors in $S$, so $s\ge m\ge t(m)$. Otherwise let the cut classes have sizes $a,b>0$. Both are at most $m$. Put $p=m-a$, $q=m-b$, so $p+q=s-1$. The count of edges surviving deletion gives
+
+```math
+ab=\frac{(2m+1)m}{2}-sm+e(S),\qquad e(S)=\frac m2+pq.
+```
+
+Since $e(S)\le\binom{s}{2}$, this forces $s\ge t(m)$.
+
+For equality take disjoint sets $A,B,S$ of sizes $m,m-s+1,s$ with $s=t(m)$. On $S$ take any simple graph $J$ with precisely $m/2$ edges. Partition $A$ into sets $A_x$ of size $\deg_J(x)$ indexed by $x\in S$, possible because their sizes sum to $m$. Use all edges between $A$ and $B$, the edges of $J$, and every edge $ax$ between $a\in A$ and $x\in S$ except those with $a\in A_x$. Each $a$ sees $m-s+1$ vertices of $B$ and $s-1$ of $S$. Each $b\in B$ sees exactly $A$. Each $x\in S$ sees $m-\deg_J(x)$ vertices of $A$ and $\deg_J(x)$ of $S$. These are all degrees $m$, and deleting $S$ leaves the desired cut.
+
+Now take $m=hd$ and split this graph and its complement into $h$ spanning $d$-regular color classes each by the 2-factor argument above. A rainbow copy of $H$ would use exactly $h$ edges of the first graph. If it avoided $S$, those would be exactly its edges crossing a cut. Every Eulerian graph crosses a cut an even number of times, a contradiction. For $H$ equal to the disjoint union of two triangles, take $h=3$.
+
+The parameter $t(m)$ is also the smallest possible transversal number for triangles containing an **odd** number of graph edges, over these regular graphs. In a complete ambient graph with edges labeled inside/outside the graph, all triangles have even edge sum exactly when the graph is a cut: fix a vertex, label every other vertex by its edge to that vertex, and use the triangle equation to recover every edge as the sum of its endpoint labels modulo two. This applies after every vertex deletion. A maximal vertex-disjoint collection of odd triangles covers all odd triangles with its vertices. Thus every regular graph in the statement has at least $t(m)/3$ vertex-disjoint odd triangles and the construction has at most $t(m)$. This sharp order applies to the parity obstruction. The existence of even one rainbow pair in every large balanced host remains open. [Independent construction check](cut_deletion.py)
