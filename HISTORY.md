@@ -1,8 +1,8 @@
 # History
 
-## 2026-11-26 — Partial results on eleven open problems
+## 2026-11-26 — Alexandersson’s graphical dist conjecture
 
-Published the complete research records from eleven open problems in the [partial-results catalogue](CONTENTS.md#partial-results-on-open-problems). They include a linear block-size multiplicity bound under abelian symmetry, an improved set-mapping upper bound, a two-occurrence obstruction for Komjáth’s problem, and proofs for specific classes in the projective rigidity and norm-coloring conjectures. The [verification record](docs/verification.md#written-results-on-eleven-open-problems) lists the exact finite checks. The Erdős–Hammer entry credits the earlier finite upper bound and identifies the new limiting-density calculations.
+The graphical dist polynomial of an ordered graph can have nonreal roots. A finite witness has 71 vertices and 310 edges. A second construction gives arbitrarily many distinct nonreal roots on connected chordal graphs of treewidth two. [Proof](results/alexandersson-graphical-dist/proof.md) · [Source audit](results/alexandersson-graphical-dist/sources.md) · [Independent review](results/alexandersson-graphical-dist/review.md) · [Original question](https://github.com/PerAlexandersson/RealRooted/issues/2641).
 
 ## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
 
@@ -14,7 +14,11 @@ Both general-position assertions of Conjecture 9.3 are true. A matching that avo
 
 ## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
-The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847).
+The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Lean verification](results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
+
+## 2026-11-26 — Partial results on eleven open problems
+
+Published the complete research records from eleven open problems in the [partial-results catalogue](CONTENTS.md#partial-results-on-open-problems). They include a linear block-size multiplicity bound under abelian symmetry, an improved set-mapping upper bound, a two-occurrence obstruction for Komjáth’s problem, and proofs for specific classes in the projective rigidity and norm-coloring conjectures. The [verification record](docs/verification.md#written-results-on-eleven-open-problems) lists the exact finite checks. The Erdős–Hammer entry credits the earlier finite upper bound and identifies the new limiting-density calculations.
 
 ## 2026-11-26 — Asgarli–Ghioca–Yip blocking-pencil problem
 

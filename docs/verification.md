@@ -1,5 +1,17 @@
 # Verification
 
+## Alexandersson’s graphical dist conjecture
+
+Run `python3 results/alexandersson-graphical-dist/check.py` and `python3 results/alexandersson-graphical-dist/check_unions.py`. Subset inversion and direct vertex insertion yield identical coefficients. Both verifiers also compare with literal enumeration on small ordered graphs. [Exact counting proof](../results/alexandersson-graphical-dist/proof.md) · [Independent review](../results/alexandersson-graphical-dist/review.md).
+
+## Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
+
+Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all labelled graphs through order six and 2,000 seeded larger graphs. The [written proof](../results/general-position-nordhaus-gaddum/PROOF.md) is uniform; the [audit](../results/general-position-nordhaus-gaddum/AUDIT.md) separates the geodesic and induced-path targets.
+
+## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
+
+Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal proof and verification receipt](../results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
+
 ## Written results on eleven open problems
 
 The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems) links the statements, proofs, primary sources and open cases. The following checkers reproduce finite parts of five arguments. Their conclusions and scope are described on the individual result pages.
@@ -11,14 +23,6 @@ The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems)
 | [Erdős–Hammer convex-subset problem](../results/erdos-hammer-838/) | `python3 results/erdos-hammer-838/check_binary.py` | 65,808 nonempty planar subsets and 43 exact probability coefficients. |
 | [Erdős’s bounded blocking-set problem](../results/erdos-bounded-blocking-set/) | `python3 results/erdos-bounded-blocking-set/check_spread.py` | All 4,161 lines of the example, plus a Pappus witness in the non-Desarguesian plane. |
 | [Gyárfás’s nearly bipartite graph conjecture](../results/gyarfas-nearly-bipartite/) | `python3 results/gyarfas-nearly-bipartite/check_grid.py` | 68 subdivisions, 408 paths and 136 forbidden parity patterns covering all switchings. |
-
-## Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
-
-Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all labelled graphs through order six and 2,000 seeded larger graphs. The [written proof](../results/general-position-nordhaus-gaddum/PROOF.md) is uniform; the [audit](../results/general-position-nordhaus-gaddum/AUDIT.md) separates the geodesic and induced-path targets.
-
-## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
-
-Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md).
 
 ## Asgarli–Ghioca–Yip blocking-pencil problem
 
