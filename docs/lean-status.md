@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Upper-half circular chromatic index in every even degree from eight
+
+For every integer parameter of at least six, Lean constructs both simple graphs with the prescribed order, maximum degree and exact circular chromatic index. It proves the four finite cases of Proposition 2 and the three degree ranges of Corollary 3. Lean also proves that the stated two-matching base has no solution at parameters three, four and five. [Family theorems](../lean/Conjectures/CircularInsertionFamilies.lean) · [Uniform receipt](verification/lean-circular-families-20261126/receipt.json) · [Small-base receipt](verification/lean-circular-families-20261126/small-base-receipt.json).
+
 ## Finite circular chromatic index certificates
 
 Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Finite theorems](../lean/Conjectures/CircularFiniteIndexTheorems.lean) · [Joint receipt](verification/lean-circular-finite-20261126/receipt.json).
