@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Square-root-logarithmic growth of nonreal transportation roots
+
+Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Complete theorem](../lean/Conjectures/TransportationGrowthTheorems.lean) · [Research receipt](verification/lean-transportation-growth-20261126/receipt.json).
+
 ## Alexandersson’s transportation polytope conjecture
 
 Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Transportation theorem](../lean/Conjectures/TransportationTheorems.lean) · [Research receipt](verification/lean-transportation-geometry-20261126/receipt.json).
