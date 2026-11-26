@@ -7,7 +7,20 @@
     "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-351518/mathdb-351518-solution.tex",
     "git_blob": "48126fee078ccda310e4a8c3728b893636d61d38",
     "sha256": "8ecbda18750fba23e53c08a438f618c957571df4b027d6111596a07a0d905515",
-    "theorem_line": 30
+    "theorem_line": 30,
+    "chronology": {
+      "external_evidence_by_utc": "2026-10-27T03:06:30Z",
+      "external_event": "GitHub push of proof archive",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/137",
+      "project_issue_opened_utc": "2026-11-20T21:04:11Z",
+      "project_issue_body_last_edited_utc": null,
+      "project_proof_commit": "3e9a90752e183bec638bd8970d1f501aeb409013",
+      "project_proof_commit_utc": "2026-11-20T21:04:04Z",
+      "project_proof_path": "research/rh-transfer/wagner.md",
+      "project_proof_git_blob": "aa07e85c79bfdcaaf0413f4b9e853c535c7d3d52",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/3e9a90752e183bec638bd8970d1f501aeb409013/research/rh-transfer/wagner.md",
+      "external_push_receipt": "principia-archive-push.json"
+    }
   },
   "athanasiadis-chapoton-q-zeta": {
     "author_as_printed": "Principia Math In Progress",
@@ -17,7 +30,20 @@
     "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-374960/mathdb-374960-solution.tex",
     "git_blob": "3d846dfbc9312f390d7242c919ba380c85380a44",
     "sha256": "356291e73e857ff79122784ef08fe47f489a656aa3493e0553c0559a1ac86716",
-    "theorem_line": 43
+    "theorem_line": 43,
+    "chronology": {
+      "external_evidence_by_utc": "2026-10-27T03:06:30Z",
+      "external_event": "GitHub push of proof archive",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/424",
+      "project_issue_opened_utc": "2026-11-24T11:06:27Z",
+      "project_issue_body_last_edited_utc": null,
+      "project_proof_commit": "65c89a725efbe9551d2055440a44a9ba98b6b28c",
+      "project_proof_commit_utc": "2026-11-24T11:13:36Z",
+      "project_proof_path": "results/athanasiadis-chapoton-q-zeta/PROOF.md",
+      "project_proof_git_blob": "3498aab03206f5b7c6995dc72604e46f6ea27b36",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/65c89a725efbe9551d2055440a44a9ba98b6b28c/results/athanasiadis-chapoton-q-zeta/PROOF.md",
+      "external_push_receipt": "principia-archive-push.json"
+    }
   },
   "athanasiadis-chapoton-transmuted-m": {
     "author_as_printed": "Principia Math In Progress",
@@ -27,7 +53,20 @@
     "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-374967/mathdb-374967-solution.tex",
     "git_blob": "dcdafe627c6275b57cc31c6a4ed7888a5b0bcb25",
     "sha256": "5efe760284cccc9a0de095574d071359f46bc738120880f34328e3634d35187c",
-    "theorem_line": 36
+    "theorem_line": 36,
+    "chronology": {
+      "external_evidence_by_utc": "2026-10-27T03:06:30Z",
+      "external_event": "GitHub push of proof archive",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/425",
+      "project_issue_opened_utc": "2026-11-24T11:06:28Z",
+      "project_issue_body_last_edited_utc": null,
+      "project_proof_commit": "65c89a725efbe9551d2055440a44a9ba98b6b28c",
+      "project_proof_commit_utc": "2026-11-24T11:13:36Z",
+      "project_proof_path": "results/athanasiadis-chapoton-transmuted-m/PROOF.md",
+      "project_proof_git_blob": "e613311fd28fa27f1f599bc3ccf9ae145d5e0823",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/65c89a725efbe9551d2055440a44a9ba98b6b28c/results/athanasiadis-chapoton-transmuted-m/PROOF.md",
+      "external_push_receipt": "principia-archive-push.json"
+    }
   },
   "kovalev-zero-free": {
     "author_as_printed": "Principia Math In Progress",
@@ -37,7 +76,20 @@
     "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-369171/mathdb-369171-solution.tex",
     "git_blob": "db4b442a86f9923c34524f2744d596b087ac8b7e",
     "sha256": "d435b402edf21f7bb278cf0f467f380ad2cafce35d7fd156afcaf108e0bb21ca",
-    "theorem_line": 27
+    "theorem_line": 27,
+    "chronology": {
+      "external_evidence_by_utc": "2026-10-27T03:06:30Z",
+      "external_event": "GitHub push of proof archive",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/444",
+      "project_issue_opened_utc": "2026-11-24T12:07:48Z",
+      "project_issue_body_last_edited_utc": "2026-11-24T12:08:25Z",
+      "project_proof_commit": "6432592c03b24aed190ed7b3204ed942a40a8da4",
+      "project_proof_commit_utc": "2026-11-24T12:21:04Z",
+      "project_proof_path": "results/kovalev-zero-free/PROOF.md",
+      "project_proof_git_blob": "8fda17b5e84f0600c93fa04b0d246fdc10211839",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/6432592c03b24aed190ed7b3204ed942a40a8da4/results/kovalev-zero-free/PROOF.md",
+      "external_push_receipt": "principia-archive-push.json"
+    }
   },
   "rowland-sistos-barron": {
     "author_as_printed": "Principia Math in Progress",
@@ -47,7 +99,20 @@
     "url": "https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-366795/mathdb-366795-solution.tex",
     "git_blob": "d62a4f6000aa4581413e8ec7d025bfdb0c47c926",
     "sha256": "06c1565148813d4575f36c1843a992c316fe51edee915d540c9498a04f9af392",
-    "theorem_line": 30
+    "theorem_line": 30,
+    "chronology": {
+      "external_evidence_by_utc": "2026-10-27T03:06:30Z",
+      "external_event": "GitHub push of proof archive",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/115",
+      "project_issue_opened_utc": "2026-11-20T20:07:34Z",
+      "project_issue_body_last_edited_utc": null,
+      "project_proof_commit": "16aba47934b0f2a4206733feb3085bcdae61cc5d",
+      "project_proof_commit_utc": "2026-11-20T20:11:01Z",
+      "project_proof_path": "research/rowland-sistos-barron/PROOF.md",
+      "project_proof_git_blob": "9425d7ac58ed1906f30add68785f86ee5f4cd215",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/16aba47934b0f2a4206733feb3085bcdae61cc5d/research/rowland-sistos-barron/PROOF.md",
+      "external_push_receipt": "principia-archive-push.json"
+    }
   },
   "stern-half-plane": {
     "author_as_printed": "Shunshun Ma",
@@ -58,7 +123,19 @@
       "Ma2026_Stern_HalfPlane_code_and_data.zip": "ce64229930beb11fb567fcfd9c6310addc34fa0e7ce40c3e970cc50afe5aae9e",
       "Ma2026_Stern_HalfPlane_Conjecture.pdf": "622436c49f5c3c36801b82217ad444ffc67d0cb374f007cb9cb0efe5edce6a35"
     },
-    "endpoint": "Theorem 1"
+    "endpoint": "Theorem 1",
+    "chronology": {
+      "external_evidence_by_utc": "2026-10-25T10:50:45.541785+00:00",
+      "external_event": "Zenodo version 1 record creation",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/447",
+      "project_issue_opened_utc": "2026-11-24T12:10:55Z",
+      "project_issue_body_last_edited_utc": null,
+      "project_proof_commit": "6a2a2d00c8e352f0f07166fad96dcffa831f9552",
+      "project_proof_commit_utc": "2026-11-24T12:25:39Z",
+      "project_proof_path": "results/stern-half-plane/PROOF.md",
+      "project_proof_git_blob": "c5880dcae8ef7bd6df615bff64dc3f6a44e57aef",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/6a2a2d00c8e352f0f07166fad96dcffa831f9552/results/stern-half-plane/PROOF.md"
+    }
   },
   "gonzalez-dleon-wachs-complete-graphs": {
     "publisher": "The Omega Institute",
@@ -106,6 +183,18 @@
         "git_blob": "668fdc0328cc73b44edb62f270f5dd0b90cfe910",
         "sha256": "a7d930f005b5cdda3b7c83ca13a01fed3ac0ec612423f35c99e3b5c2293a77b5"
       }
-    ]
+    ],
+    "chronology": {
+      "external_evidence_by_utc": "2026-11-23T19:39:18Z",
+      "external_event": "GitHub merge of complete proof",
+      "project_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/482",
+      "project_issue_opened_utc": "2026-11-24T14:02:41Z",
+      "project_issue_body_last_edited_utc": null,
+      "project_proof_commit": "371a020f7b0fc22da685d303edb5debeab09924a",
+      "project_proof_commit_utc": "2026-11-24T14:11:19Z",
+      "project_proof_path": "results/gonzalez-dleon-wachs-complete-graphs/PROOF.md",
+      "project_proof_git_blob": "f3becbae378f5f863ba36be0c148b4e823c311e7",
+      "project_proof_url": "https://github.com/1337isnot1337/solved-conjectures/blob/371a020f7b0fc22da685d303edb5debeab09924a/results/gonzalez-dleon-wachs-complete-graphs/PROOF.md"
+    }
   }
 }

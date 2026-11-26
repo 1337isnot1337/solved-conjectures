@@ -6,6 +6,8 @@ This branch preserves the catalogue as it stood immediately before those correct
 
 ## Seven earlier public resolutions
 
+[Priority chronology for each withdrawal](audit/priority-chronology.md) links the project’s dated research evidence and the corresponding outside proof. It also documents the earlier November 21 weighted-bond work and the Brown–Mol result retained on priority grounds.
+
 | Withdrawn target | Why the earlier statement covers it | Source and disposition |
 | --- | --- | --- |
 | Dilcher–Kidwai–Tomkins, Stern polynomials | Ma's Theorem 1 includes every positive index and the closed half-plane Re z ≥ 1. Its October 25 deposit predates the November 24 catalogue entry. All five finite stages of Ma's archived verifier passed in a fresh run. | [Version 1](https://doi.org/10.5281/zenodo.23639859) · [audit record](audit/records/results--stern-half-plane.md) |
