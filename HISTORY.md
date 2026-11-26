@@ -76,7 +76,7 @@ Published the complete research records from eleven open problems in the [partia
 
 ## 2026-11-26 — Asgarli–Ghioca–Yip blocking-pencil problem
 
-The minimum number of vertical translates of a fixed monomial graph that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
+The minimum number of vertical translates of a monomial graph of fixed degree at least two that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
 
 Lean verifies the logarithmic upper bound, the regular-seed count and the number of lines missed by a single graph. The lower bound for growing families remains conditional on a uniform estimate for Frobenius-compatible root orderings. [Lean scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
 
