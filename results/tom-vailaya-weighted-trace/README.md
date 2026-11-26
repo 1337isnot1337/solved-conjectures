@@ -6,6 +6,7 @@ A single finite color basis identifies these matrices by testing endpoint gluing
 
 - [Complete written proof](PROOF.md)
 - [Source and review record](AUDIT.md)
+- [Lean scope and receipt](FORMALIZATION.md)
 - [Independent exact-arithmetic check](verify.py)
 - [Discovery and review thread](https://github.com/1337isnot1337/solved-conjectures/issues/338)
 
@@ -13,4 +14,4 @@ Replay the supplementary check from the repository root:
 
     python3 results/tom-vailaya-weighted-trace/verify.py
 
-The proof does not rely on the computation. Internally reviewed; not Lean-formalized or externally refereed. No exclusive priority is claimed.
+The computation is supplementary to the internally reviewed written proof. Lean verifies the color-matrix trace and the path-edge transfer. The forest-triple identification is written and external refereeing is pending.
