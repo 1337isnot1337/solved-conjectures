@@ -153,8 +153,19 @@ and the source credits in the [audit](AUDIT.md).
   solvability, coprime-automorphism cyclicity, and conjugate-generation
   inputs as explicit premises.
 
-The remaining generation inputs include the almost-simple existence
-of conjugate generators and the two-generator lifting property.
+- [Gaschütz’s lifting lemma](../../lean/Conjectures/ShumyatskyGaschutz.lean).
+  Lean proves the number of lifts generating any fixed subgroup by
+  induction on the subgroup lattice. For each subgroup that surjects
+  onto the quotient, the total lift fibers have the same size. Removing
+  the lifts generating proper subgroups gives equality of the exact
+  counts. Thus any ordered generating tuple lifts when the ambient
+  group has a generating tuple of that length. The two-entry version
+  specializes to the lift used for the outer word labels.
+  [Gaschütz’s paper](https://doi.org/10.1002/mana.19550140406).
+
+The remaining generation inputs include conjugate generation in
+the cyclic almost-simple case and two-generation of the relevant
+almost-simple inverse images.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
@@ -178,4 +189,5 @@ checker. The abelian reduction and cyclic normalization passed their exact scope
 [Actual-socle receipt](verification/socle-structure/receipt.json) ·
 [Simple-power receipt](verification/simple-power/receipt.json) ·
 [Coprime-quotient receipt](verification/coprime-quotient/receipt.json) ·
-[Single-factor receipt](verification/single-factor/receipt.json).
+[Single-factor receipt](verification/single-factor/receipt.json) ·
+[Gaschütz receipt](verification/gaschutz/receipt.json).
