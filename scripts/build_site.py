@@ -63,6 +63,7 @@ SOURCE_TITLES = {
 }
 STATUS_LABEL_SLUGS = {
     "Fractional general position conjecture for square grids": "fractional-general-position-square-grids",
+    "Erdős’s pinned-distance conjecture in general position": "erdos-general-position-pinned-distances",
     "Cioba–Savvas shutout number conjecture": "cioba-savvas-shutout-number",
     "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
     "The lower oriented general position NP-hardness conjecture": "lower-oriented-general-position-np-hardness",
