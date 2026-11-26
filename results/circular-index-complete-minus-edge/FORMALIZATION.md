@@ -146,3 +146,24 @@ the all-owned axiom audit (669 declarations,
 9 named endpoints), and pinned stock-kernel replay.
 [Step 4 receipt](verification/step-four/receipt.json).
 Steps 5–8 and the final lower bound and equality remain outside this checkpoint.
+
+## Special column pairing and normal starts (Step 5)
+
+The [actual column checkpoint](../../lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnPairs.lean)
+verifies the first two assertions of the written Step 5. Lean proves that
+the two special vertices occupy whole columns of the actual edge
+table, exactly two per half. Translating by half the period preserves
+the special columns. The first positions of normal non-endpoint
+vertices are in exact bijection with the nonspecial columns; the
+formal witness is an actual occurrence with no earlier occurrence.
+The proof also tracks the final occurrence modulo the period and
+proves its column is nonspecial.
+
+The full 39-module strict build, every-owned
+axiom audit (816 declarations,
+688 theorems, 53 private,
+9 named endpoints), and fresh stock-kernel replay passed.
+[Paired-column receipt](verification/paired-columns/receipt.json).
+The row-interval structure in Step 5(3), Steps 6–8, and the final index
+equality are not asserted here. Credit remains with @aadrianvv for the
+written argument and Ján Mazák and Filip Zrubák for the conjecture.

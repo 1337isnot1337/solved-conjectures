@@ -108,7 +108,7 @@ Complete for Conjecture 6.16. Lean counts the literal ordered faces, verifies th
 
 ## Mazák–Zrubák conjecture on complete graphs minus an edge
 
-Partial. Lean verifies the exact graph, all-edge order, and actual Step 4 vertex-run rigidity. Steps 5–8 and the final equality are outside this scope. [Scope and receipt](../results/circular-index-complete-minus-edge/FORMALIZATION.md).
+Partial. Lean verifies the actual graph and order, run rigidity, special-column pairing and normal first-position labels. Row-interval geometry and the final equality are outside this scope. [Scope and receipt](../results/circular-index-complete-minus-edge/FORMALIZATION.md).
 
 ## Seven upper-half circular chromatic index certificates
 

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the paired special columns and literal normal starts
+
+Lean verifies the first two column assertions in Step 5 of the Mazák–Zrubák proof. The row-interval structure and final index equality remain separate. [Scope and receipt](results/circular-index-complete-minus-edge/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the Gaussian-profile deviation rate
 
 Lean checks the exact quadratic and cubic rate coefficients and unique Legendre tilt. The arithmetic large-deviation transfer remains separate. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
