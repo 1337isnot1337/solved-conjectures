@@ -173,3 +173,14 @@ topology. This is the general criterion; the full arithmetic path-law
 application and Brownian convergence are not claimed here.
 
 [Continuous-path criterion replay](verification/grid-tightness/receipt.json)
+
+## Finite marginals and the continuous-path limit
+
+Lean verifies that finite-dimensional marginals determine the law of
+a continuous path. Given tightness, converging finite marginals produce
+a unique weak limit by compactness of the path-law sequence. The
+argument proves existence by taking a cluster law and does not assume
+a separate Gaussian-path extension. This is a criterion for the
+[process supplement](PROCESS.md), not yet its arithmetic application.
+
+[Continuous-path limit criterion replay](verification/path-weak-limit/receipt.json)

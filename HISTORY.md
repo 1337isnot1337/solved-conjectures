@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Verify how finite marginals determine the process limit
+
+Lean verifies the finite-marginal uniqueness and tightness-to-limit
+argument for Pomerance–Sárközy’s process.
+[Proof scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify a process tightness criterion for Pomerance–Sárközy
 
 Lean checks the base-32 grid probability bound, the uniform

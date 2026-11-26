@@ -142,6 +142,9 @@ modules=(
   Conjectures.PomeranceSarkozyGridCompact
   Conjectures.PomeranceSarkozyGridMarkov
   Conjectures.PomeranceSarkozyGridTightness
+  Conjectures.PomeranceSarkozyPathFiniteLaws
+  Conjectures.PomeranceSarkozyPathTailLimit
+  Conjectures.PomeranceSarkozyPathWeakLimit
   Conjectures.PomeranceSarkozyShiftedTailCross
   Conjectures.PomeranceSarkozyWeakAbsoluteMoment
   Conjectures.PomeranceSarkozyWeakPositivePart
