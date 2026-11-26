@@ -1,4 +1,4 @@
-# Erdős–Hammer convex-subset problem
+# Changing the templates in planar point substitution
 
 Let $f(n)$ be the smallest number of subsets of at least three points in convex position among $n$ planar points with no three collinear. Erdős and Hammer ask if $\log f(n)/(\log n)^2$ has a limit. Here all logarithms in bounds are base two. The following upper coefficient holds for every order.
 
@@ -7,7 +7,7 @@ Let $f(n)$ be the smallest number of subsets of at least three points in convex 
  \ \le\ \limsup_{n\to\infty}\frac{\log_2 f(n)}{(\log_2 n)^2}\ \le\ \frac12.
 ```
 
-The lower coefficient follows from Suk's Erdős–Szekeres theorem by sampling about $\sqrt n$ points. The upper coefficient below improves the $1/(2\ln 2)$ obtained in the July 2026 working report. The existence and value of the limit remain open. [Erdős, pp. 52–53](https://renyi.hu/~p_erdos/1978-44.pdf) · [Suk](https://arxiv.org/abs/1604.08657) · [July working report, §3](https://www.erdosproblemaday.com/report/838) · [Issue #832](https://github.com/1337isnot1337/solved-conjectures/issues/832).
+The lower coefficient follows from Suk's Erdős–Szekeres theorem by sampling about $\sqrt n$ points. The [24 November construction](STEEP-SUBSTITUTION.md) already gives the upper coefficient $1/2$, improving the July working report. The flat construction below gives a second proof and an obstruction when templates change at successive scales. The existence and value of the limit remain open. [Erdős, pp. 52–53](https://users.renyi.hu/~p_erdos/1978-44.pdf) · [Suk](https://arxiv.org/abs/1604.08657) · [July working report, §3](https://www.erdosproblemaday.com/report/838) · [Issue #832](https://github.com/1337isnot1337/solved-conjectures/issues/832).
 
 ## An iterated planar construction
 
@@ -28,3 +28,18 @@ The identical bound holds for the cap count $V_t$. In particular
 A convex polygon is determined by its lower cup and upper cap between its leftmost and rightmost vertices. It follows that $f(M^t)\le U_tV_t$. For $M^{t-1}<n\le M^t$, restrict $P_t$ to any $n$ points. First send $t$ to infinity at fixed $a$. The upper coefficient is at most $(a-1)/\log_2 M$. Then let $a$ grow. The central binomial coefficient has $\log_2 M=2(a-1)-O(\log a)$, giving $1/2$.
 
 The earlier working report counts the final Erdős–Szekeres configuration directly. This argument repeatedly replaces points in a fixed cups–caps example by flat clusters so that only one cluster branches in a given chain. Related order-type limits and the fixed-size Erdős–Sylvester density problem are studied by Goaoc, Hubard, de Joannis de Verclos, Sereni and Volec. [Earlier construction count](https://www.erdosproblemaday.com/report/838) · [Limits of Order Types, §3.4](https://arxiv.org/abs/1811.02236).
+
+## A barrier for varying templates
+
+Start from a singleton. At level $i$ take any general-position base $B_i$ of size $M_i\ge2$ with no zero secant slope, and apply the flat replacement just described. The input at that level has $n_{i-1}$ points and the result has $n_i=M_i n_{i-1}$. Write $a_i,b_i$ for the largest cup and cap sizes in the base. In any maximum cup, select the base point of minimum ordinate. All slopes before it are negative and all after it positive, since the slopes strictly increase. Insert an arbitrary nonempty input cup there and arbitrary singletons at the other $a_i-1$ centers. Slope separation and order preservation give a cup for every choice. The analogous cap construction uses its maximum ordinate. Consequently
+```math
+ U_i V_i\ge n_{i-1}^{a_i+b_i-2}U_{i-1}V_{i-1}.
+```
+The sharp cups–caps theorem gives $M_i\le\binom{a_i+b_i-2}{a_i-1}\le2^{a_i+b_i-2}$. A final base with any two distinct centers also joins arbitrary input chains of opposite types into a convex subset. For a positive cross slope choose a cup in the left cluster and a cap in the right. The extreme cross edges extend their two hull chains by the slope separation. For a negative cross slope interchange the roles. The chosen subset recovers both input chains. Counting nonempty convex subsets, including singletons and pairs, we obtain $F_t\ge U_{t-1}V_{t-1}$. The [independent observation](https://github.com/1337isnot1337/solved-conjectures/issues/832#issuecomment-7192937420) gives the two-center and maximum-chain arguments for the steep replacement, which interchanges the internal chain types. Its product satisfies the same inequalities. A different choice of flat or steep replacement is therefore possible at each level.
+
+Put $l_i=\log_2 M_i$ and $L_i=\sum_{j\le i} l_j$. Iterating yields
+```math
+ \log_2 F_t\ge\sum_{i<t}l_iL_{i-1}
+ =\tfrac12\left(L_{t-1}^2-\sum_{i<t}l_i^2\right).
+```
+In particular, for any such sequence or triangular array of templates with $L_t\to\infty$ and $\max_{i\le t}l_i=o(L_t)$, the limiting lower coefficient is at least $1/2$. Removing sets of at most two points does not change it. Thus varying the template, its asymmetry and the type of separation across arbitrarily many individually small scales still cannot lower this coefficient. This leaves open constructions using a macroscopic scale or different templates at different nodes of the same level.
