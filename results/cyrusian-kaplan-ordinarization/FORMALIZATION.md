@@ -137,3 +137,24 @@ the all-owned axiom audit (369 declarations,
 [Triangulation receipt](verification/triangulation/receipt.json).
 This checkpoint is geometric; the exact summed lattice count and
 eventual monotonicity are not asserted by these modules.
+
+## Exact all-positive-genus quasipolynomial and degree
+
+The [exact-degree checkpoint](../../lean/Conjectures/CyrusianKaplanExactDegreeCheckpoint.lean)
+proves that for each fixed positive integer `r` the literal
+numerical-semigroup count is a quasipolynomial of degree exactly
+`2r` on every positive genus. Lean combines the disjoint rational
+triangulation with exact coordinate lattice equivalences. It counts
+the dilated open tiles at every positive genus, including the early
+zeros, adds the fibre counts using one common period, and uses the
+verified power lower bound to force degree `2r` in each residue.
+No general Ehrhart theorem or project-specific axiom is assumed.
+
+All 53 modules passed strict Lean compilation,
+the all-owned axiom audit (783 declarations,
+562 theorems, 209 private,
+8 named endpoints), and stock-kernel replay.
+[Exact-degree receipt](verification/exact-degree/receipt.json).
+This settles the named quasipolynomial assertion in Lean. The
+additional eventual-monotonicity conclusion of the written entry
+has not been included in this checkpoint.

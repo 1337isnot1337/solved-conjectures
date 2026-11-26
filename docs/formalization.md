@@ -6,7 +6,7 @@ Lean checks 43 finite simple graphs from the published colouring records. All 32
 
 ## Cyrusian–Kaplan’s ordinarization quasipolynomial question
 
-Partial. Lean proves the exact ordinarization encoding, growth, and a disjoint rational open-simplex decomposition of the literal sign strata, with their vertices in the weak cells. A separate open-simplex checkpoint checks the lattice count in an integral ray chart. The summed actual quasipolynomial and eventual monotonicity are still outside the accepted scope. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+Partial for the full written entry. Lean proves that at every positive genus the actual fixed-ordinarization count is a quasipolynomial of degree exactly `2r` in each residue. The additional eventual strict increase in genus remains outside this checkpoint. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
 
 ## Shifted Lonely Runner counterexamples
 
