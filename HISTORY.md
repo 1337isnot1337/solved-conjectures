@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — A Lean counterexample to the plactic coefficient-mode conjecture
+
+Lean disproves Conjecture 7.3(d) from the insertion tableaux of actual centralizing words. For length ten the fifth and sixth binomial coefficients are 75,095 and 88,704. The asymptotic mode theorem remains in the written proof. [Theorem and receipt](results/sagan-wilson-plactic-mode/FORMALIZATION.md).
+
 ## 2026-11-26 — The lower oriented general position NP-hardness conjecture
 
 Conjecture 5.3 is true. Two leaves force a spanning directed geodesic, yielding an identity reduction from planar bipartite Hamiltonian Path with two leaves and all other vertices cubic. [Proof](results/lower-oriented-general-position-np-hardness/PROOF.md) · [Audit](results/lower-oriented-general-position-np-hardness/AUDIT.md) · [Issue #874](https://github.com/1337isnot1337/solved-conjectures/issues/874).

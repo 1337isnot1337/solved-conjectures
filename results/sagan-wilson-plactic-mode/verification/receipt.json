@@ -1,0 +1,1348 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T16:06:15.452997+00:00",
+  "finished_at": "2026-11-26T16:37:41.282580+00:00",
+  "root": "Conjectures.SaganWilsonPlacticModeReal",
+  "project_modules": [
+    "Conjectures.SaganWilsonPlacticMode",
+    "Conjectures.SaganWilsonPlacticModeAlphabet",
+    "Conjectures.SaganWilsonPlacticModeCardinality",
+    "Conjectures.SaganWilsonPlacticModeCertSupport",
+    "Conjectures.SaganWilsonPlacticModeCounterexample",
+    "Conjectures.SaganWilsonPlacticModeDP",
+    "Conjectures.SaganWilsonPlacticModeDifferences",
+    "Conjectures.SaganWilsonPlacticModeM10",
+    "Conjectures.SaganWilsonPlacticModeM7",
+    "Conjectures.SaganWilsonPlacticModeM8",
+    "Conjectures.SaganWilsonPlacticModeM9",
+    "Conjectures.SaganWilsonPlacticModeReal",
+    "Conjectures.SaganWilsonPlacticModeRelabel",
+    "Conjectures.SaganWilsonPlacticModeSmall",
+    "Conjectures.SwM10Layer0",
+    "Conjectures.SwM10Layer1",
+    "Conjectures.SwM10Layer10",
+    "Conjectures.SwM10Layer2",
+    "Conjectures.SwM10Layer3",
+    "Conjectures.SwM10Layer4",
+    "Conjectures.SwM10Layer5",
+    "Conjectures.SwM10Layer5P10",
+    "Conjectures.SwM10Layer5P2",
+    "Conjectures.SwM10Layer5P3",
+    "Conjectures.SwM10Layer5P4",
+    "Conjectures.SwM10Layer5P5",
+    "Conjectures.SwM10Layer5P6",
+    "Conjectures.SwM10Layer5P7",
+    "Conjectures.SwM10Layer5P8",
+    "Conjectures.SwM10Layer5P9",
+    "Conjectures.SwM10Layer6",
+    "Conjectures.SwM10Layer7",
+    "Conjectures.SwM10Layer8",
+    "Conjectures.SwM10Layer9",
+    "Conjectures.SwM8Layer0",
+    "Conjectures.SwM8Layer1",
+    "Conjectures.SwM8Layer10",
+    "Conjectures.SwM8Layer2",
+    "Conjectures.SwM8Layer3",
+    "Conjectures.SwM8Layer4",
+    "Conjectures.SwM8Layer5",
+    "Conjectures.SwM8Layer5P2",
+    "Conjectures.SwM8Layer5P3",
+    "Conjectures.SwM8Layer5P4",
+    "Conjectures.SwM8Layer5P5",
+    "Conjectures.SwM8Layer5P6",
+    "Conjectures.SwM8Layer5P7",
+    "Conjectures.SwM8Layer5P8",
+    "Conjectures.SwM8Layer6",
+    "Conjectures.SwM8Layer7",
+    "Conjectures.SwM8Layer8",
+    "Conjectures.SwM8Layer9",
+    "Conjectures.SwM9Layer0",
+    "Conjectures.SwM9Layer1",
+    "Conjectures.SwM9Layer10",
+    "Conjectures.SwM9Layer2",
+    "Conjectures.SwM9Layer3",
+    "Conjectures.SwM9Layer4",
+    "Conjectures.SwM9Layer5",
+    "Conjectures.SwM9Layer5P2",
+    "Conjectures.SwM9Layer5P3",
+    "Conjectures.SwM9Layer5P4",
+    "Conjectures.SwM9Layer5P5",
+    "Conjectures.SwM9Layer5P6",
+    "Conjectures.SwM9Layer5P7",
+    "Conjectures.SwM9Layer5P8",
+    "Conjectures.SwM9Layer5P9",
+    "Conjectures.SwM9Layer6",
+    "Conjectures.SwM9Layer7",
+    "Conjectures.SwM9Layer8",
+    "Conjectures.SwM9Layer9"
+  ],
+  "required_endpoints": [
+    "SaganWilsonPlacticMode.mem_centralizerFinset",
+    "SaganWilsonPlacticMode.card_centralizerFinset",
+    "SaganWilsonPlacticMode.pascalChoose_eq_choose",
+    "SaganWilsonPlacticMode.cast_basisValue",
+    "SaganWilsonPlacticMode.real_coefficient_row10_correct",
+    "SaganWilsonPlacticMode.real_coeff10_values",
+    "SaganWilsonPlacticMode.not_realModeConjecture",
+    "SaganWilsonPlacticMode.iterDelta_centralizer_zero",
+    "SaganWilsonPlacticMode.positive_polynomial_extension",
+    "SaganWilsonPlacticMode.zero_of_initial_and_iterDelta_zero",
+    "SaganWilsonPlacticMode.coeff10_initial",
+    "SaganWilsonPlacticMode.coefficient_row10_correct",
+    "SaganWilsonPlacticMode.not_modeConjecture",
+    "SaganWilsonPlacticMode.centralizer_count10_1",
+    "SaganWilsonPlacticMode.centralizer_count10_2",
+    "SaganWilsonPlacticMode.centralizer_count10_3",
+    "SaganWilsonPlacticMode.centralizer_count10_4",
+    "SaganWilsonPlacticMode.centralizer_count10_5",
+    "SaganWilsonPlacticMode.centralizer_count10_6",
+    "SaganWilsonPlacticMode.centralizer_count10_7",
+    "SaganWilsonPlacticMode.centralizer_count10_8",
+    "SaganWilsonPlacticMode.centralizer_count10_9",
+    "SaganWilsonPlacticMode.CertM8.value",
+    "SaganWilsonPlacticMode.CertM9.value",
+    "SaganWilsonPlacticMode.nodup_map_injective",
+    "SaganWilsonPlacticMode.words_nodup",
+    "SaganWilsonPlacticMode.alphabet_nodup",
+    "SaganWilsonPlacticMode.nodup_filter_bool",
+    "SaganWilsonPlacticMode.centralizerWords_mem_iff",
+    "SaganWilsonPlacticMode.centralizerWords_nodup",
+    "SaganWilsonPlacticMode.countFast_eq_card",
+    "SaganWilsonPlacticMode.countTrie_succ_eq",
+    "SaganWilsonPlacticMode.tabulate_succ_eq",
+    "SaganWilsonPlacticMode.CertM10.value",
+    "SaganWilsonPlacticMode.centralizer_count10_10",
+    "SaganWilsonPlacticMode.validRow_weaken",
+    "SaganWilsonPlacticMode.insertRow_valid",
+    "SaganWilsonPlacticMode.insertRow_length_bounds",
+    "SaganWilsonPlacticMode.next_length_bounds",
+    "SaganWilsonPlacticMode.count_zero_of_length",
+    "SaganWilsonPlacticMode.mem_alphabet",
+    "SaganWilsonPlacticMode.next_valid",
+    "SaganWilsonPlacticMode.lookup_tabulate",
+    "SaganWilsonPlacticMode.countTrie_correct",
+    "SaganWilsonPlacticMode.countFast_correct",
+    "SaganWilsonPlacticMode.insert_prependOne",
+    "SaganWilsonPlacticMode.process_prependOne",
+    "SaganWilsonPlacticMode.process_append",
+    "SaganWilsonPlacticMode.tableau_prependOne",
+    "SaganWilsonPlacticMode.tableau_appendOne",
+    "SaganWilsonPlacticMode.aboveOne_insertOne",
+    "SaganWilsonPlacticMode.aboveOne_insertBig",
+    "SaganWilsonPlacticMode.state_insert",
+    "SaganWilsonPlacticMode.state_process",
+    "SaganWilsonPlacticMode.insertRow_positive",
+    "SaganWilsonPlacticMode.top_positive_insert",
+    "SaganWilsonPlacticMode.top_positive_process",
+    "SaganWilsonPlacticMode.aboveOne_prepend",
+    "SaganWilsonPlacticMode.insertOne_allOnes",
+    "SaganWilsonPlacticMode.centralizes_iff_empty_state",
+    "SaganWilsonPlacticMode.count_correct",
+    "SaganWilsonPlacticMode.words_mem_iff",
+    "SaganWilsonPlacticMode.centralizer_count",
+    "SaganWilsonPlacticMode.hook_values",
+    "SaganWilsonPlacticMode.hookCount10_10",
+    "SaganWilsonPlacticMode.hookCount10_11",
+    "SaganWilsonPlacticMode.hookCount10_12",
+    "SaganWilsonPlacticMode.hookCount10_13",
+    "SaganWilsonPlacticMode.hookCount10_14",
+    "SaganWilsonPlacticMode.hookCount10_15",
+    "SaganWilsonPlacticMode.hookCount10_16",
+    "SaganWilsonPlacticMode.hookCount10_17",
+    "SaganWilsonPlacticMode.hookCount10_18",
+    "SaganWilsonPlacticMode.hookCount10_19",
+    "SaganWilsonPlacticMode.differenceWeights_basis",
+    "SaganWilsonPlacticMode.coefficient_gap_of_hook_formula"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/SaganWilsonPlacticMode.lean": "789ddce2c3ce5aeec3fe40226c64d3518ac9e426c62ca58bcc70bb3c8b7e0c19",
+    "lean/Conjectures/SaganWilsonPlacticModeAlphabet.lean": "7367a77ea4e305d5e684dd4bd30f9d40bafccd3ed98344c8e8ad288bd3a222db",
+    "lean/Conjectures/SaganWilsonPlacticModeCardinality.lean": "b59846a4d8793ed95bb383afd2543a136e9060024fa9a0cb78486afe5912cc1b",
+    "lean/Conjectures/SaganWilsonPlacticModeCertSupport.lean": "e39383a892f22caf69fe21a367ddc3cac15dc0f0ea396b4f10edac7e5f1b598b",
+    "lean/Conjectures/SaganWilsonPlacticModeCounterexample.lean": "0b82b8cec69a67c84637167a6044ee5e9257b18e49f99aecf04752c164e734d6",
+    "lean/Conjectures/SaganWilsonPlacticModeDP.lean": "dd756a15c02376d0fadeea5b72ccd153b17177dfc34072562a31d97d10da30c3",
+    "lean/Conjectures/SaganWilsonPlacticModeDifferences.lean": "859cf232c08745230e02b83d94d12550aba2aa69dc1eeda93952e25836745fc2",
+    "lean/Conjectures/SaganWilsonPlacticModeM10.lean": "f1b6f9cd98fbb4ba3141bdebedcc7898af81612054a984249532ba9880d07bf7",
+    "lean/Conjectures/SaganWilsonPlacticModeM7.lean": "0c0ca4254f2c0e3e6572f6c90ab21bebf017270d9b003fd738c3ac2620459680",
+    "lean/Conjectures/SaganWilsonPlacticModeM8.lean": "0007ddc9527bf99f4fe104666feac02c8996ee9f01580cafa6ea830fc03659cb",
+    "lean/Conjectures/SaganWilsonPlacticModeM9.lean": "f842d981a0053eb008929fcf0c47253d7ef2530ea54b54bfe7e3b773c704544b",
+    "lean/Conjectures/SaganWilsonPlacticModeReal.lean": "c56f931c9b9532c59ac699403a58d6b47614468d049bdd34a49e96decd6ccb6d",
+    "lean/Conjectures/SaganWilsonPlacticModeRelabel.lean": "aa2bd3f88200e093221be715bca94f057ff0631fc3b8eac321f0965d4954ed11",
+    "lean/Conjectures/SaganWilsonPlacticModeSmall.lean": "394975c90e066f195a9e6799667724e4068a9315435553f642c04395d977be68",
+    "lean/Conjectures/SwM10Layer0.lean": "84a74f05b4d0a54058fea90416357f4dcfeb24d78a78fbcf73fe598b85837310",
+    "lean/Conjectures/SwM10Layer1.lean": "80728967998ef337881046399114f57a35219307d62d3bde5b9aff671a5267f8",
+    "lean/Conjectures/SwM10Layer10.lean": "68be6a8869e2d4408926f592a73ca01b73011b8d9bb1c71fac50d7e22123bf65",
+    "lean/Conjectures/SwM10Layer2.lean": "3997826ead15b67fe3a1604401f00a3b46dbdf3547a4745d0b72979bd072d7a3",
+    "lean/Conjectures/SwM10Layer3.lean": "ff227cf9cecd510805899d24ed691dcace89e91d4c024ad7e0a37304b74d5049",
+    "lean/Conjectures/SwM10Layer4.lean": "7746cbb8cff6e9af8b02dd717ab70f746f898e7004e1dd1c0d5d623b19fdd216",
+    "lean/Conjectures/SwM10Layer5.lean": "0004052779bb9981be4de4de28d18f83f6dac5e08c48c17f7d88a4e0aef724b7",
+    "lean/Conjectures/SwM10Layer5P10.lean": "781f77e983649adb00884cfb83ec639db6ab9ec2c0e4c7a006df131f04e89a83",
+    "lean/Conjectures/SwM10Layer5P2.lean": "35ac69a7c820acbc3c33ea67a7f89fa83a07465b077393715e2dcb99da3d74ff",
+    "lean/Conjectures/SwM10Layer5P3.lean": "2824ac906acfdd9031c23c8a1c4beb73649fc579f8b339dbdf0a9b8ecd1cb7ff",
+    "lean/Conjectures/SwM10Layer5P4.lean": "aac5df711c55dcba774f3446e550484528ace27c8aa9410b3bb5ff325686303b",
+    "lean/Conjectures/SwM10Layer5P5.lean": "969fa0335d11fd38a1ec8ad2fe16c90e51ed89bd43bd25dfe7478d5f65859a36",
+    "lean/Conjectures/SwM10Layer5P6.lean": "5675a4d8a9ec77a2c49ae31a7098bcca76d949183336311b7c85d571523d668b",
+    "lean/Conjectures/SwM10Layer5P7.lean": "2a76e0851c38025c8cc77dfe9ce6c1ffac2a87fc08d0e627bb65bc7d35b4c5c5",
+    "lean/Conjectures/SwM10Layer5P8.lean": "1c59764bdca340eeaaf6093cce93133cd86a911c187752551ee14f93c4601c2a",
+    "lean/Conjectures/SwM10Layer5P9.lean": "b6fc2ed1d0faf2c26cf7b4aed79da4490d7bc6949d819fecfdac5a8d65f74c51",
+    "lean/Conjectures/SwM10Layer6.lean": "c633c8507c3cd726ab97e8b01dcf64c3e1eac027092853e618f4e1a5780f6334",
+    "lean/Conjectures/SwM10Layer7.lean": "4069e8e420e0de25a266db51cf52aeeda43fd1da648f23d1fe3db7f4c062e7f9",
+    "lean/Conjectures/SwM10Layer8.lean": "7f61f239c9b259848595289b536487c5a225833bd917533ecbdd5c81db04b13f",
+    "lean/Conjectures/SwM10Layer9.lean": "d61a45d941a3888a48f03675bc2a761d71debd4271211a7179a36ac254626ec8",
+    "lean/Conjectures/SwM8Layer0.lean": "f11bd063ff1423d2dae94289ae54d98a69dec21d9e72b924a0f57c41c510b0c2",
+    "lean/Conjectures/SwM8Layer1.lean": "f07a8c918cb12a2f4921c11dc257a27e31eb93b3032a12b86334eb4683db9c84",
+    "lean/Conjectures/SwM8Layer10.lean": "95ddd9715268e92f66323568a28bf90ca5e0185308b9e9b2264ec957f08910ba",
+    "lean/Conjectures/SwM8Layer2.lean": "12734e2dad90f1c7f8ba33e23d721c075365eb9dae7c8d2385c901300d30ce7d",
+    "lean/Conjectures/SwM8Layer3.lean": "50f3a4eb2cadf5d01003c5982f076b53fa78a8a81552aadf4b29f9d1599df4f4",
+    "lean/Conjectures/SwM8Layer4.lean": "2e3bacd22879c7a739d2dd9559d246ae9354fafd06de199951e64f7b0c5b31cf",
+    "lean/Conjectures/SwM8Layer5.lean": "8f88ca42bc6262dd234a0e567a36b3b74d71eccddf418b10682445db73a2482a",
+    "lean/Conjectures/SwM8Layer5P2.lean": "c177f8fd57122b3e1102e7f6e08c1e1454d1794af78017908478486d8eb6cc30",
+    "lean/Conjectures/SwM8Layer5P3.lean": "a2a7615b93ded5cdf3296bedde520fc2c078d77a28f9fbfddac7b788765c203c",
+    "lean/Conjectures/SwM8Layer5P4.lean": "b9f0c3a235be997d18bd7e3495a05a8f10c8b368a96de9ac7261f48ced5f55a4",
+    "lean/Conjectures/SwM8Layer5P5.lean": "99f1001072634cc77264590aeb028a86f0fb59822492e408f78bd3b243bdc0c4",
+    "lean/Conjectures/SwM8Layer5P6.lean": "85b3ebceb0d3e7c29f7d0f8c166f25db66ade541cd71e85f162f3ca58ff280b0",
+    "lean/Conjectures/SwM8Layer5P7.lean": "9e6acadea8ac3dd38eb810272cba710921b5a8880ddb6fc565b2558e77633ee5",
+    "lean/Conjectures/SwM8Layer5P8.lean": "c11a819a5268ae64667da8d484a359b075366dd3c842dbe0c73a02e105e38dfa",
+    "lean/Conjectures/SwM8Layer6.lean": "c5e41ee00e75f92dd67bc5f4acaabe2b596c7855757be033f5cc4a3e32c19032",
+    "lean/Conjectures/SwM8Layer7.lean": "a628607d831baa941c645ac70452eba2c8a2377585372d8d8a879a1d7cb41928",
+    "lean/Conjectures/SwM8Layer8.lean": "ac15f11a63ae198cd7c247308836852b24b867f619918b651eb941b5b4a290cc",
+    "lean/Conjectures/SwM8Layer9.lean": "4cb0e3f445e811a0f6d389166adc33188ac7e29ef3c8f37351ccf2b3c948e920",
+    "lean/Conjectures/SwM9Layer0.lean": "4178fd66c37d121fbef5ee5a4da3185c94b2048548f87cb6bc5213c3e70ac871",
+    "lean/Conjectures/SwM9Layer1.lean": "6c2065de9b621fcdac11908b782a2c3a4d9e54aae4d52adb6969b744fc90b497",
+    "lean/Conjectures/SwM9Layer10.lean": "30d8dbb8aceaded423d2914f8e09c89c4a73cb677edc8a045b4804352dd60d87",
+    "lean/Conjectures/SwM9Layer2.lean": "c115275b115fadc879b73afd16d071ffe2dac0b8c7d54f525c4ccc4fd0b1b802",
+    "lean/Conjectures/SwM9Layer3.lean": "24fa33e24348583e604ff51fd4faf86151465572339236d1e009f98a72bc5aae",
+    "lean/Conjectures/SwM9Layer4.lean": "ee478bde24d3cf4d511781226a7e88f17e82fd2650eb4763aa1f5a261ed35afe",
+    "lean/Conjectures/SwM9Layer5.lean": "843f9a2bb7828591fe4a4e3587c77ba2ead65b980156461420cb0ef123e0b09b",
+    "lean/Conjectures/SwM9Layer5P2.lean": "66e90684bd6faada28ed4e5e9e6825ae61ea6ce9cc8193ae988c4365fe91c5df",
+    "lean/Conjectures/SwM9Layer5P3.lean": "ac9587b8601c4eceb3f1ae7aaacf8eba8797fc34e0993f65c8e7b122b09f3e1c",
+    "lean/Conjectures/SwM9Layer5P4.lean": "ed8c13201958766e9fe6a6f1edb365e927baef753727ab79163575464e50f3e1",
+    "lean/Conjectures/SwM9Layer5P5.lean": "c2a538090e84d46d39d68ebee567443ca29c4d0e301e8c83623a5c7a404f5051",
+    "lean/Conjectures/SwM9Layer5P6.lean": "73f8331a6fc0ee4f429e32aa4adc5e8ff54e3c4e1e67bbbb92bb7eed51edec49",
+    "lean/Conjectures/SwM9Layer5P7.lean": "27ff85fa9899390a9f274c5cf12409683f1881d7f57d9c6ca638c010c2bd550d",
+    "lean/Conjectures/SwM9Layer5P8.lean": "ebdfbba3db9f0092b9fca40103b6f2a650a64b3acb99fea82c9b52101fe4ca79",
+    "lean/Conjectures/SwM9Layer5P9.lean": "b61233ddf96163348fd3d3e6116ed3466b0c02286b0a889c11c7e5257c38e885",
+    "lean/Conjectures/SwM9Layer6.lean": "fd9b1a1304027c5c08e0d268be67df98cbbf8f781b3cfc60bfe17805533d62a9",
+    "lean/Conjectures/SwM9Layer7.lean": "8c9c87f811c066a58f8df1bc108b4155b9c8e7766cbd6af726f2451f11eb9899",
+    "lean/Conjectures/SwM9Layer8.lean": "5b42b6159d934ea0234536412dd3e1b3f6357cfc528db1eb2eb1c3c46154c665",
+    "lean/Conjectures/SwM9Layer9.lean": "70eb3fc5d91f1f73e78b85af836a0b94f4f6cd2be9d48908453398487a7d35fc"
+  },
+  "input_sha256": {
+    "lean/Conjectures/SaganWilsonPlacticMode.lean": "789ddce2c3ce5aeec3fe40226c64d3518ac9e426c62ca58bcc70bb3c8b7e0c19",
+    "lean/Conjectures/SaganWilsonPlacticModeAlphabet.lean": "7367a77ea4e305d5e684dd4bd30f9d40bafccd3ed98344c8e8ad288bd3a222db",
+    "lean/Conjectures/SaganWilsonPlacticModeCardinality.lean": "b59846a4d8793ed95bb383afd2543a136e9060024fa9a0cb78486afe5912cc1b",
+    "lean/Conjectures/SaganWilsonPlacticModeCertSupport.lean": "e39383a892f22caf69fe21a367ddc3cac15dc0f0ea396b4f10edac7e5f1b598b",
+    "lean/Conjectures/SaganWilsonPlacticModeCounterexample.lean": "0b82b8cec69a67c84637167a6044ee5e9257b18e49f99aecf04752c164e734d6",
+    "lean/Conjectures/SaganWilsonPlacticModeDP.lean": "dd756a15c02376d0fadeea5b72ccd153b17177dfc34072562a31d97d10da30c3",
+    "lean/Conjectures/SaganWilsonPlacticModeDifferences.lean": "859cf232c08745230e02b83d94d12550aba2aa69dc1eeda93952e25836745fc2",
+    "lean/Conjectures/SaganWilsonPlacticModeM10.lean": "f1b6f9cd98fbb4ba3141bdebedcc7898af81612054a984249532ba9880d07bf7",
+    "lean/Conjectures/SaganWilsonPlacticModeM7.lean": "0c0ca4254f2c0e3e6572f6c90ab21bebf017270d9b003fd738c3ac2620459680",
+    "lean/Conjectures/SaganWilsonPlacticModeM8.lean": "0007ddc9527bf99f4fe104666feac02c8996ee9f01580cafa6ea830fc03659cb",
+    "lean/Conjectures/SaganWilsonPlacticModeM9.lean": "f842d981a0053eb008929fcf0c47253d7ef2530ea54b54bfe7e3b773c704544b",
+    "lean/Conjectures/SaganWilsonPlacticModeReal.lean": "c56f931c9b9532c59ac699403a58d6b47614468d049bdd34a49e96decd6ccb6d",
+    "lean/Conjectures/SaganWilsonPlacticModeRelabel.lean": "aa2bd3f88200e093221be715bca94f057ff0631fc3b8eac321f0965d4954ed11",
+    "lean/Conjectures/SaganWilsonPlacticModeSmall.lean": "394975c90e066f195a9e6799667724e4068a9315435553f642c04395d977be68",
+    "lean/Conjectures/SwM10Layer0.lean": "84a74f05b4d0a54058fea90416357f4dcfeb24d78a78fbcf73fe598b85837310",
+    "lean/Conjectures/SwM10Layer1.lean": "80728967998ef337881046399114f57a35219307d62d3bde5b9aff671a5267f8",
+    "lean/Conjectures/SwM10Layer10.lean": "68be6a8869e2d4408926f592a73ca01b73011b8d9bb1c71fac50d7e22123bf65",
+    "lean/Conjectures/SwM10Layer2.lean": "3997826ead15b67fe3a1604401f00a3b46dbdf3547a4745d0b72979bd072d7a3",
+    "lean/Conjectures/SwM10Layer3.lean": "ff227cf9cecd510805899d24ed691dcace89e91d4c024ad7e0a37304b74d5049",
+    "lean/Conjectures/SwM10Layer4.lean": "7746cbb8cff6e9af8b02dd717ab70f746f898e7004e1dd1c0d5d623b19fdd216",
+    "lean/Conjectures/SwM10Layer5.lean": "0004052779bb9981be4de4de28d18f83f6dac5e08c48c17f7d88a4e0aef724b7",
+    "lean/Conjectures/SwM10Layer5P10.lean": "781f77e983649adb00884cfb83ec639db6ab9ec2c0e4c7a006df131f04e89a83",
+    "lean/Conjectures/SwM10Layer5P2.lean": "35ac69a7c820acbc3c33ea67a7f89fa83a07465b077393715e2dcb99da3d74ff",
+    "lean/Conjectures/SwM10Layer5P3.lean": "2824ac906acfdd9031c23c8a1c4beb73649fc579f8b339dbdf0a9b8ecd1cb7ff",
+    "lean/Conjectures/SwM10Layer5P4.lean": "aac5df711c55dcba774f3446e550484528ace27c8aa9410b3bb5ff325686303b",
+    "lean/Conjectures/SwM10Layer5P5.lean": "969fa0335d11fd38a1ec8ad2fe16c90e51ed89bd43bd25dfe7478d5f65859a36",
+    "lean/Conjectures/SwM10Layer5P6.lean": "5675a4d8a9ec77a2c49ae31a7098bcca76d949183336311b7c85d571523d668b",
+    "lean/Conjectures/SwM10Layer5P7.lean": "2a76e0851c38025c8cc77dfe9ce6c1ffac2a87fc08d0e627bb65bc7d35b4c5c5",
+    "lean/Conjectures/SwM10Layer5P8.lean": "1c59764bdca340eeaaf6093cce93133cd86a911c187752551ee14f93c4601c2a",
+    "lean/Conjectures/SwM10Layer5P9.lean": "b6fc2ed1d0faf2c26cf7b4aed79da4490d7bc6949d819fecfdac5a8d65f74c51",
+    "lean/Conjectures/SwM10Layer6.lean": "c633c8507c3cd726ab97e8b01dcf64c3e1eac027092853e618f4e1a5780f6334",
+    "lean/Conjectures/SwM10Layer7.lean": "4069e8e420e0de25a266db51cf52aeeda43fd1da648f23d1fe3db7f4c062e7f9",
+    "lean/Conjectures/SwM10Layer8.lean": "7f61f239c9b259848595289b536487c5a225833bd917533ecbdd5c81db04b13f",
+    "lean/Conjectures/SwM10Layer9.lean": "d61a45d941a3888a48f03675bc2a761d71debd4271211a7179a36ac254626ec8",
+    "lean/Conjectures/SwM8Layer0.lean": "f11bd063ff1423d2dae94289ae54d98a69dec21d9e72b924a0f57c41c510b0c2",
+    "lean/Conjectures/SwM8Layer1.lean": "f07a8c918cb12a2f4921c11dc257a27e31eb93b3032a12b86334eb4683db9c84",
+    "lean/Conjectures/SwM8Layer10.lean": "95ddd9715268e92f66323568a28bf90ca5e0185308b9e9b2264ec957f08910ba",
+    "lean/Conjectures/SwM8Layer2.lean": "12734e2dad90f1c7f8ba33e23d721c075365eb9dae7c8d2385c901300d30ce7d",
+    "lean/Conjectures/SwM8Layer3.lean": "50f3a4eb2cadf5d01003c5982f076b53fa78a8a81552aadf4b29f9d1599df4f4",
+    "lean/Conjectures/SwM8Layer4.lean": "2e3bacd22879c7a739d2dd9559d246ae9354fafd06de199951e64f7b0c5b31cf",
+    "lean/Conjectures/SwM8Layer5.lean": "8f88ca42bc6262dd234a0e567a36b3b74d71eccddf418b10682445db73a2482a",
+    "lean/Conjectures/SwM8Layer5P2.lean": "c177f8fd57122b3e1102e7f6e08c1e1454d1794af78017908478486d8eb6cc30",
+    "lean/Conjectures/SwM8Layer5P3.lean": "a2a7615b93ded5cdf3296bedde520fc2c078d77a28f9fbfddac7b788765c203c",
+    "lean/Conjectures/SwM8Layer5P4.lean": "b9f0c3a235be997d18bd7e3495a05a8f10c8b368a96de9ac7261f48ced5f55a4",
+    "lean/Conjectures/SwM8Layer5P5.lean": "99f1001072634cc77264590aeb028a86f0fb59822492e408f78bd3b243bdc0c4",
+    "lean/Conjectures/SwM8Layer5P6.lean": "85b3ebceb0d3e7c29f7d0f8c166f25db66ade541cd71e85f162f3ca58ff280b0",
+    "lean/Conjectures/SwM8Layer5P7.lean": "9e6acadea8ac3dd38eb810272cba710921b5a8880ddb6fc565b2558e77633ee5",
+    "lean/Conjectures/SwM8Layer5P8.lean": "c11a819a5268ae64667da8d484a359b075366dd3c842dbe0c73a02e105e38dfa",
+    "lean/Conjectures/SwM8Layer6.lean": "c5e41ee00e75f92dd67bc5f4acaabe2b596c7855757be033f5cc4a3e32c19032",
+    "lean/Conjectures/SwM8Layer7.lean": "a628607d831baa941c645ac70452eba2c8a2377585372d8d8a879a1d7cb41928",
+    "lean/Conjectures/SwM8Layer8.lean": "ac15f11a63ae198cd7c247308836852b24b867f619918b651eb941b5b4a290cc",
+    "lean/Conjectures/SwM8Layer9.lean": "4cb0e3f445e811a0f6d389166adc33188ac7e29ef3c8f37351ccf2b3c948e920",
+    "lean/Conjectures/SwM9Layer0.lean": "4178fd66c37d121fbef5ee5a4da3185c94b2048548f87cb6bc5213c3e70ac871",
+    "lean/Conjectures/SwM9Layer1.lean": "6c2065de9b621fcdac11908b782a2c3a4d9e54aae4d52adb6969b744fc90b497",
+    "lean/Conjectures/SwM9Layer10.lean": "30d8dbb8aceaded423d2914f8e09c89c4a73cb677edc8a045b4804352dd60d87",
+    "lean/Conjectures/SwM9Layer2.lean": "c115275b115fadc879b73afd16d071ffe2dac0b8c7d54f525c4ccc4fd0b1b802",
+    "lean/Conjectures/SwM9Layer3.lean": "24fa33e24348583e604ff51fd4faf86151465572339236d1e009f98a72bc5aae",
+    "lean/Conjectures/SwM9Layer4.lean": "ee478bde24d3cf4d511781226a7e88f17e82fd2650eb4763aa1f5a261ed35afe",
+    "lean/Conjectures/SwM9Layer5.lean": "843f9a2bb7828591fe4a4e3587c77ba2ead65b980156461420cb0ef123e0b09b",
+    "lean/Conjectures/SwM9Layer5P2.lean": "66e90684bd6faada28ed4e5e9e6825ae61ea6ce9cc8193ae988c4365fe91c5df",
+    "lean/Conjectures/SwM9Layer5P3.lean": "ac9587b8601c4eceb3f1ae7aaacf8eba8797fc34e0993f65c8e7b122b09f3e1c",
+    "lean/Conjectures/SwM9Layer5P4.lean": "ed8c13201958766e9fe6a6f1edb365e927baef753727ab79163575464e50f3e1",
+    "lean/Conjectures/SwM9Layer5P5.lean": "c2a538090e84d46d39d68ebee567443ca29c4d0e301e8c83623a5c7a404f5051",
+    "lean/Conjectures/SwM9Layer5P6.lean": "73f8331a6fc0ee4f429e32aa4adc5e8ff54e3c4e1e67bbbb92bb7eed51edec49",
+    "lean/Conjectures/SwM9Layer5P7.lean": "27ff85fa9899390a9f274c5cf12409683f1881d7f57d9c6ca638c010c2bd550d",
+    "lean/Conjectures/SwM9Layer5P8.lean": "ebdfbba3db9f0092b9fca40103b6f2a650a64b3acb99fea82c9b52101fe4ca79",
+    "lean/Conjectures/SwM9Layer5P9.lean": "b61233ddf96163348fd3d3e6116ed3466b0c02286b0a889c11c7e5257c38e885",
+    "lean/Conjectures/SwM9Layer6.lean": "fd9b1a1304027c5c08e0d268be67df98cbbf8f781b3cfc60bfe17805533d62a9",
+    "lean/Conjectures/SwM9Layer7.lean": "8c9c87f811c066a58f8df1bc108b4155b9c8e7766cbd6af726f2451f11eb9899",
+    "lean/Conjectures/SwM9Layer8.lean": "5b42b6159d934ea0234536412dd3e1b3f6357cfc528db1eb2eb1c3c46154c665",
+    "lean/Conjectures/SwM9Layer9.lean": "70eb3fc5d91f1f73e78b85af836a0b94f4f6cd2be9d48908453398487a7d35fc",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticMode.olean",
+        "Conjectures/SaganWilsonPlacticMode.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticMode.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeDP.olean",
+        "Conjectures/SaganWilsonPlacticModeDP.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeDP.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeCardinality.olean",
+        "Conjectures/SaganWilsonPlacticModeCardinality.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeCardinality.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeRelabel.olean",
+        "Conjectures/SaganWilsonPlacticModeRelabel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeRelabel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeAlphabet.olean",
+        "Conjectures/SaganWilsonPlacticModeAlphabet.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeAlphabet.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeDifferences.olean",
+        "Conjectures/SaganWilsonPlacticModeDifferences.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeDifferences.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeSmall.olean",
+        "Conjectures/SaganWilsonPlacticModeSmall.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeSmall.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeM7.olean",
+        "Conjectures/SaganWilsonPlacticModeM7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeM7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer0.olean",
+        "Conjectures/SwM8Layer0.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer0.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer1.olean",
+        "Conjectures/SwM8Layer1.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer1.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer2.olean",
+        "Conjectures/SwM8Layer2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer3.olean",
+        "Conjectures/SwM8Layer3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer4.olean",
+        "Conjectures/SwM8Layer4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeCertSupport.olean",
+        "Conjectures/SaganWilsonPlacticModeCertSupport.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeCertSupport.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P2.olean",
+        "Conjectures/SwM8Layer5P2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P3.olean",
+        "Conjectures/SwM8Layer5P3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P4.olean",
+        "Conjectures/SwM8Layer5P4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P5.olean",
+        "Conjectures/SwM8Layer5P5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P6.olean",
+        "Conjectures/SwM8Layer5P6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P7.olean",
+        "Conjectures/SwM8Layer5P7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5P8.olean",
+        "Conjectures/SwM8Layer5P8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5P8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer5.olean",
+        "Conjectures/SwM8Layer5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer6.olean",
+        "Conjectures/SwM8Layer6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer7.olean",
+        "Conjectures/SwM8Layer7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer8.olean",
+        "Conjectures/SwM8Layer8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer9.olean",
+        "Conjectures/SwM8Layer9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM8Layer10.olean",
+        "Conjectures/SwM8Layer10.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM8Layer10.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeM8.olean",
+        "Conjectures/SaganWilsonPlacticModeM8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeM8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer0.olean",
+        "Conjectures/SwM9Layer0.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer0.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer1.olean",
+        "Conjectures/SwM9Layer1.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer1.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer2.olean",
+        "Conjectures/SwM9Layer2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer3.olean",
+        "Conjectures/SwM9Layer3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer4.olean",
+        "Conjectures/SwM9Layer4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P2.olean",
+        "Conjectures/SwM9Layer5P2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P3.olean",
+        "Conjectures/SwM9Layer5P3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P4.olean",
+        "Conjectures/SwM9Layer5P4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P5.olean",
+        "Conjectures/SwM9Layer5P5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P6.olean",
+        "Conjectures/SwM9Layer5P6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P7.olean",
+        "Conjectures/SwM9Layer5P7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P8.olean",
+        "Conjectures/SwM9Layer5P8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5P9.olean",
+        "Conjectures/SwM9Layer5P9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5P9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer5.olean",
+        "Conjectures/SwM9Layer5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer6.olean",
+        "Conjectures/SwM9Layer6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer7.olean",
+        "Conjectures/SwM9Layer7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer8.olean",
+        "Conjectures/SwM9Layer8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer9.olean",
+        "Conjectures/SwM9Layer9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM9Layer10.olean",
+        "Conjectures/SwM9Layer10.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM9Layer10.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeM9.olean",
+        "Conjectures/SaganWilsonPlacticModeM9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeM9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer0.olean",
+        "Conjectures/SwM10Layer0.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer0.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer1.olean",
+        "Conjectures/SwM10Layer1.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer1.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer2.olean",
+        "Conjectures/SwM10Layer2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer3.olean",
+        "Conjectures/SwM10Layer3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer4.olean",
+        "Conjectures/SwM10Layer4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P2.olean",
+        "Conjectures/SwM10Layer5P2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P3.olean",
+        "Conjectures/SwM10Layer5P3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P4.olean",
+        "Conjectures/SwM10Layer5P4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P5.olean",
+        "Conjectures/SwM10Layer5P5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P6.olean",
+        "Conjectures/SwM10Layer5P6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P7.olean",
+        "Conjectures/SwM10Layer5P7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P8.olean",
+        "Conjectures/SwM10Layer5P8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P9.olean",
+        "Conjectures/SwM10Layer5P9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5P10.olean",
+        "Conjectures/SwM10Layer5P10.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5P10.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer5.olean",
+        "Conjectures/SwM10Layer5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer6.olean",
+        "Conjectures/SwM10Layer6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer7.olean",
+        "Conjectures/SwM10Layer7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer8.olean",
+        "Conjectures/SwM10Layer8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer9.olean",
+        "Conjectures/SwM10Layer9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SwM10Layer10.olean",
+        "Conjectures/SwM10Layer10.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SwM10Layer10.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeM10.olean",
+        "Conjectures/SaganWilsonPlacticModeM10.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeM10.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeCounterexample.olean",
+        "Conjectures/SaganWilsonPlacticModeCounterexample.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeCounterexample.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-sagan-mode-publication/lean/.lake/build/lib/lean/Conjectures/SaganWilsonPlacticModeReal.olean",
+        "Conjectures/SaganWilsonPlacticModeReal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SaganWilsonPlacticModeReal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-sagan-wilson-mode/main/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-sagan-mode-publication/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.SaganWilsonPlacticModeReal",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 637,
+    "modules": 71,
+    "private_declarations": 123,
+    "raw_declarations": 637,
+    "required": 76,
+    "tag": "passed",
+    "theorems": 348
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
