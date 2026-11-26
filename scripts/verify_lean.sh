@@ -72,6 +72,11 @@ modules=(
   Conjectures.TransportationTheorems
   Conjectures.TransportationTwelveRoots
   Conjectures.TransportationVertices
+  Conjectures.AsgarliGhiocaYipLines
+  Conjectures.AsgarliGhiocaYipRootLabels
+  Conjectures.AsgarliGhiocaYipSeed
+  Conjectures.AsgarliGhiocaYipOrderedRoots
+  Conjectures.AsgarliGhiocaYipBlockingPencil
   Conjectures.MallikDegreeCounterfamily
   Conjectures.MallikDegreeCounts
   Conjectures.MallikDegreeEdgeMatchings
