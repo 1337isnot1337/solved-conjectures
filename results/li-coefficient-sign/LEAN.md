@@ -130,6 +130,8 @@ expansion of `X_T`.
 
 For example, the negative-coefficient theorem literally has the form
 
+**Lean excerpt**
+
 ```lean
 theorem Li.full_negative_coefficient_of_card
     {σ : Type*} [Fintype σ] [DecidableEq σ]

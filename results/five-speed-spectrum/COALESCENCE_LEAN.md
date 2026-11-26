@@ -55,6 +55,8 @@ to the sum, a contradiction.
 
 The headline theorem is
 
+**Lean excerpt**
+
 ```lean
 Loneliness.Coalescence.coalescing_hyperplane
 ```

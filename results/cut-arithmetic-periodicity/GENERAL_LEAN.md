@@ -60,6 +60,8 @@ XOR `g`. The Lean predicate is
 
 `Candidate.test` is a computable Boolean function. Its correctness theorem is:
 
+**Lean excerpt**
+
 ```lean
 theorem Candidate.test_correct (c : Candidate) (cuts : List Nat) :
     c.test cuts = true ↔

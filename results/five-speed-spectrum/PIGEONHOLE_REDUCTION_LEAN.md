@@ -88,6 +88,8 @@ which contradicts that plane lower bound. Permutation invariance gives
 
 The verified exported interface is:
 
+**Lean excerpt**
+
 ```lean
 theorem Loneliness.Pigeonhole.four_speed_cutoff
     (v : Fin 4 → ℕ)
@@ -147,6 +149,8 @@ the product plane, then transfers through the signed coordinate
 permutation used by the classification.
 
 The resulting finite/infinite endpoint is:
+
+**Lean excerpt**
 
 ```lean
 theorem Loneliness.Pigeonhole.five_speed_finite_or_critical_quadruple

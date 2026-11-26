@@ -4,29 +4,29 @@
 
 `SteinerbergerFeldheim.counterexample` proves a counterexample to both original existential inequalities, with the probabilities, expectation, and median interpreted literally. The witness is the probability law whose survival function on the nonnegative half-line is
 
-\[
+```math
 S(x)=\exp(-x-x^2/200).
-\]
+```
 
-Its density there is \((1+x/100)S(x)\). The Lean measure is the Lebesgue measure restricted to the positive half-line, with this density. The formalization proves total mass one, absolute continuity with respect to Lebesgue measure, almost-sure nonnegativity, positive mass above every real cutoff, integrability of the identity random variable, and a strictly positive expectation. It constructs a median with probability one half on each side. `median_unique` proves that the median specified by these half-probability equations is unique.
+Its density there is $`(1+x/100)S(x)`$. The Lean measure is the Lebesgue measure restricted to the positive half-line, with this density. The formalization proves total mass one, absolute continuity with respect to Lebesgue measure, almost-sure nonnegativity, positive mass above every real cutoff, integrability of the identity random variable, and a strictly positive expectation. It constructs a median with probability one half on each side. `median_unique` proves that the median specified by these half-probability equations is unique.
 
 The exact two events are defined by
 
-\[
+```math
 A_z=\{(x,y):x+y\ge2z,\ \min(x,y)\le z\},
 \qquad
 B_z=\{(x,y):x+y\ge2z,\ \min(x,y)\ge z\}.
-\]
+```
 
-The ratio `tailRatio μ z` is \((\mu\otimes\mu)(A_z)/(\mu\otimes\mu)(B_z)\), with both probabilities converted from extended nonnegative reals to reals. The denominator is proved strictly positive at every positive threshold. The coordinate maps on the product space are proved independent, and both pushforward measures are proved equal to the constructed law.
+The ratio `tailRatio μ z` is $`(\mu\otimes\mu)(A_z)/(\mu\otimes\mu)(B_z)`$, with both probabilities converted from extended nonnegative reals to reals. The denominator is proved strictly positive at every positive threshold. The coordinate maps on the product space are proved independent, and both pushforward measures are proved equal to the constructed law.
 
-For every real \(z>0\), the endpoint proves
+For every real $`z>0`$, the endpoint proves
 
-\[
+```math
 R(z)<\frac{2(\log 2)z}{m},
 \qquad
 R(z)<\frac{2z}{\mathbb E X}.
-\]
+```
 
 The quantifier ranges over every positive real threshold. The statement is not restricted to a numerical sample or asymptotic range. Thus the same law refutes both proposed existence statements.
 
