@@ -4,6 +4,16 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.GyarfasPlanarAxisDegrees
+  Conjectures.GyarfasPlanarConfiguration
+  Conjectures.GyarfasPlanarDirections
+  Conjectures.GyarfasPlanarLabels
+  Conjectures.GyarfasPlanarMultiplicity
+  Conjectures.GyarfasPlanarOffDegrees
+  Conjectures.GyarfasPlanarOptimal
+  Conjectures.GyarfasPlanarSecants
+  Conjectures.GyarfasPlanarSpectrum
+  Conjectures.GyarfasPlanarUniform
   Conjectures.GyarfasPlanarLines
   Conjectures.GyarfasPlanarRational
   Conjectures.GyarfasPlanarWitness
