@@ -8,6 +8,8 @@ is $O_K(M)$. The same interval has $\gg_K M$ distinct sums. The two omitted edge
 
 In fact for these lifts the omitted edges necessarily account for unbounded squared gap energy: the [modular discrepancy theorem](MODULAR-EXTENSIONS.md) gives an $\Omega(\log p)$ whole-span mean-square lower bound, because the Ruzsa modulus has only $O(p)$ missing nonzero differences. So reducing the representation count to one in the interior does not repair either real edge.
 
+The randomized lift and disjoint-pair idea has a clear antecedent in [Ruzsa (1996), Theorem 4.1](https://geodesic.mathdoc.fr/articles/10.4064/aa-77-4-353-359/). His construction partitions and reflects a Ruzsa set, uses its well-covered **difference** residues and a selected primitive root, and controls the largest gap by $O(\log N)$ on a particular long subinterval. Here the cyclic **sum** window estimates supply the required candidates directly for unsigned lifts, the squared-gap cost is bounded on average, and the controlled fraction can be made arbitrarily close to one. No priority is claimed for the randomized disjoint-pair device.
+
 ## One lift per residue
 
 Let $A$ be the cyclic Ruzsa set, using least nonnegative representatives $a<M$. Choose independently $U_a$ uniform in $\{0,\ldots,K-1\}$ and put $A^*=\{a+MU_a:a\in A\}$. Since each residue has exactly one chosen lift and unordered sums in $A$ are distinct modulo $M$, the lifted integer set is Sidon for every outcome.
