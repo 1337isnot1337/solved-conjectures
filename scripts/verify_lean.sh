@@ -144,6 +144,8 @@ modules=(
   Conjectures.PomeranceSarkozyGridTightness
   Conjectures.PomeranceSarkozyRareBernoulliTools
   Conjectures.PomeranceSarkozyBernoulliTiltEvents
+  Conjectures.PomeranceSarkozyExponentialEventTransfer
+  Conjectures.PomeranceSarkozySuperExponential
   Conjectures.PomeranceSarkozyBernoulliTiltProduct
   Conjectures.PomeranceSarkozyRareCumulant
   Conjectures.PomeranceSarkozyRareCumulantBounds

@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Verify exponential event-bound transfers
+
+Lean checks both exponential rate inequalities under superexponentially
+small errors, including zero-probability events.
+[Proof scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify exact finite Bernoulli tilting
 
 Lean checks normalization, the tilted joint atom weight, and
