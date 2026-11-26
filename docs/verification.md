@@ -1197,7 +1197,7 @@ Run `python3 results/hkm-ehrhart/check_sturm.py` and `python3 results/hkm-ehrhar
 
 ## Sagan–Wilson coefficient mode certificate
 
-Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact length-ten witness. The [proof](../results/sagan-wilson-plactic-mode/PROOF.md) also gives the general asymptotic position independently of the finite check.
+Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact length-ten witness. The [proof](../results/sagan-wilson-plactic-mode/PROOF.md) also gives the general asymptotic position independently of the finite check. The [Lean receipt](../results/sagan-wilson-plactic-mode/verification/receipt.json) records strict compilation, the complete axiom audit and stock-kernel replay. Run `python3 results/sagan-wilson-plactic-mode/check_tableaux.py` for the direct insertion comparison.
 
 ## Bicyclic facets and complete-graph specialization
 

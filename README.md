@@ -10,7 +10,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Lean verification status | Problem | Lean verification status |
 | :--- | :---: | :--- | :---: |
-| **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **82.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | ⬜ |
+| **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **82.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | 🟡 |
 | **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | 🟡 | **88.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ✅ |
 | **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | ✅ | **88.** [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ |
 | **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **88.** [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ |
