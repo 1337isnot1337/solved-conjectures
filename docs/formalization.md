@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Sagan–Wilson’s plactic coefficient-mode conjecture
+
+Lean disproves Conjecture 7.3(d) from the insertion tableaux of actual centralizing words. For length ten the fifth and sixth binomial coefficients are 75,095 and 88,704. The asymptotic mode theorem remains in the written proof. [Formalization and receipt](../results/sagan-wilson-plactic-mode/FORMALIZATION.md).
+
 ## Alexandersson’s graphical dist conjecture
 
 Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Formal scope and receipt](../results/alexandersson-graphical-dist/FORMALIZATION.md).
