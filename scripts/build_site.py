@@ -61,6 +61,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture": "general-position-nordhaus-gaddum",
     "Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture": "monophonic-product-nordhaus-gaddum",
     "Mallik–Diwan–Kothari degree-count conjecture": "mallik-diwan-kothari-degree-count",
     "Nathanson’s linear-form Sidon systems conjecture": "nathanson-sidon-systems",

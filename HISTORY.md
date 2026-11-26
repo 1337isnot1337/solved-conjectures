@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
+
+Both general-position assertions of Conjecture 9.3 are true. A matching that avoids a prescribed vertex in each critical block and a nearest-unused ordering give the stronger mixed sum bound. [Proof](results/general-position-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/general-position-nordhaus-gaddum/AUDIT.md) · [Issue #851](https://github.com/1337isnot1337/solved-conjectures/issues/851).
+
 ## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847).

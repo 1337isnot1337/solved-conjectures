@@ -1,5 +1,9 @@
 # Verification
 
+## Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
+
+Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all labelled graphs through order six and 2,000 seeded larger graphs. The [written proof](../results/general-position-nordhaus-gaddum/PROOF.md) is uniform; the [audit](../results/general-position-nordhaus-gaddum/AUDIT.md) separates the geodesic and induced-path targets.
+
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md).
