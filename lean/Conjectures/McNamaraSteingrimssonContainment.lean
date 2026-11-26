@@ -1,5 +1,0 @@
-module
-
-public import Conjectures.McNamaraSteingrimssonDirectSum
-public import Conjectures.McNamaraSteingrimssonDistinct
-public import Conjectures.McNamaraSteingrimssonPolynomial

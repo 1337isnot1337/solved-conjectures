@@ -1,3 +1,0 @@
-k0_N   cubes  773  UNSAT  364  missing  409  other {}  cpu-wall sum 2619 s  max 165.1 s
-k1_Nw  cubes 1153  UNSAT    0  missing 1153  other {}  cpu-wall sum 0 s  max 0.0 s
-k1_Hw  cubes 1400  UNSAT    0  missing 1400  other {}  cpu-wall sum 0 s  max 0.0 s
