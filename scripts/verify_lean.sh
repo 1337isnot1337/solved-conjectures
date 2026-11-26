@@ -163,6 +163,7 @@ modules=(
   Conjectures.ShumyatskyAbelianMinimalNormal
   Conjectures.ShumyatskyAbelianReduction
   Conjectures.ShumyatskyCyclicNormalization
+  Conjectures.ShumyatskyCoprimeQuotient
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
