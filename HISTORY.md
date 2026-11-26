@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — The Steiner triple system sail problem
+
+A double count and a parity argument answer Gyárfás’s sail question in every sufficiently large two-colored Steiner triple system. A positive fraction of all sails are monochromatic. One color contains a linear number of vertex-disjoint sails. [Proof](results/steiner-triple-system-sail/PROOF.md) · [Source and independent review](results/steiner-triple-system-sail/AUDIT.md).
+
 ## 2026-11-26 — Zhang and Novelli–Thibon verification records
 
 A new [Zhang deletion-values receipt](results/zhang-deletion-values/FORMALIZATION.md) covers both exact cases and the strict inequality. The Novelli–Thibon landing page now links the [partial proof and eight existing receipts](results/novelli-thibon/FORMALIZATION.md).

@@ -1,5 +1,9 @@
 # Verification
 
+## The Steiner triple system sail problem
+
+Run `python3 results/steiner-triple-system-sail/verify.py` to enumerate all 4,224 colorings of the systems of orders seven and nine and check each of the 24,576 disjoint opposite-colored block pairs. Fourteen additional colorings of systems on 87 and 127 points exercise the bound above its sufficient threshold. A second researcher rederived the general argument, checked the packing corollary and reran the verifier. [Proof](../results/steiner-triple-system-sail/PROOF.md) · [Review and source audit](../results/steiner-triple-system-sail/AUDIT.md).
+
 ## En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem
 
 Run `python3 results/constant-weight-strong-wom/verify.py` to construct the local labels by exact conditional expectations and test the encoder and decoder. The checker covers 7,252 state–message pairs exhaustively across three examples, all 51 endpoint states in its check, and 12 further round trips with 78-bit messages. A second researcher checked the all-length proof and separately tested the label covering property on 92,159 layer/state pairs. [Proof](../results/constant-weight-strong-wom/PROOF.md) · [Independent review and audit](../results/constant-weight-strong-wom/AUDIT.md).
