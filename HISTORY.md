@@ -28,7 +28,7 @@ An explicit polynomial-time construction attains the capacity that En Gad, Yaako
 
 Coefficient-adjusted integer place values prove all three of Nathanson’s §6 questions without any prime restrictions. Balancing the two largest coefficients and separating the low residues gives the exact leading constant for two variables. [Proof](results/nathanson-sidon-systems/PROOF.md) · [Audit](results/nathanson-sidon-systems/AUDIT.md) · [Issue #798](https://github.com/1337isnot1337/solved-conjectures/issues/798).
 
-Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Lean scope and receipt](results/nathanson-sidon-systems/FORMALIZATION.md).
+Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Lean scope and receipt](results/nathanson-sidon-systems/FORMALIZATION.md).
 
 ## Circular-index certificates within the package memory limit
 

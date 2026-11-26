@@ -16,7 +16,7 @@ Run `python3 results/constant-weight-strong-wom/verify.py` to construct the loca
 
 Run `python3 results/nathanson-sidon-systems/verify.py` to enumerate outputs in 119 signed, bilinear and higher-arity fixtures. The [proof](../results/nathanson-sidon-systems/PROOF.md) is for every nonzero integer coefficient vector, independently of the finite checks. [Source and audit](../results/nathanson-sidon-systems/AUDIT.md).
 
-Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Lean scope and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).
+Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Lean scope and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).
 
 ## Fiscus–Hurlbert–Myzelev–Pence grid conjecture
 
