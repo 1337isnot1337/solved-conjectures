@@ -22,6 +22,6 @@ python3 scripts/verify_lean_target.py --root Conjectures.CircularInsertionFamili
 python3 scripts/verify_lean_target.py --root Conjectures.CircularInsertionSmallBases --require CircularIndex.Insertion.no_small_base --out /tmp/circular-insertion-small-bases
 ```
 
-{{UNIFORM_AUDIT}} [Family receipt](verification/lean-receipt.json) · [Base exclusion receipt](verification/small-base-receipt.json).
+The family proof rebuilt and replayed 28 project modules. Its axiom audit covered 1,292 declarations, including 1,130 theorems, 50 private declarations and all 38 required endpoints. The small-base proof rebuilt and replayed 4 project modules. Its axiom audit covered 349 declarations, including 304 theorems, 5 private declarations and all 3 required endpoints. [Family receipt](verification/lean-receipt.json) · [Base exclusion receipt](verification/small-base-receipt.json).
 
 If you use this construction, please credit [@aadrianvv](https://github.com/aadrianvv) and cite both Cinna Davis’s site and the theorem or graph record you used. [Cinna Davis](https://itsdavis.com/) · [Source record](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/circular-index-upper-half-delta-2-mod-4).
