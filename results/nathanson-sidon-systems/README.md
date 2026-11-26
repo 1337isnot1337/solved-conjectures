@@ -9,4 +9,4 @@ The proof uses integer place values adjusted to the fixed coefficients. A second
 - [Exact arithmetic checks](verify.py), run with `python3 verify.py`
 - [Discovery issue #798](https://github.com/1337isnot1337/solved-conjectures/issues/798)
 
-**Lean status:** partial. Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Theorems and receipt](FORMALIZATION.md).
+**Lean status:** full. Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Theorems and receipt](FORMALIZATION.md).

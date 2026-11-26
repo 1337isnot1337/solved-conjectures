@@ -10,7 +10,7 @@ Lean proves the literal Eulerian enumeration for every order at least three and 
 
 ## Nathanson’s linear-form Sidon systems
 
-Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Theorems and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).
+Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Theorems and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).
 
 ## The two truncated-square covering examples
 
