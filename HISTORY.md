@@ -14,7 +14,7 @@ Lean proves the pointwise transfer inequality, the dimension threshold, the four
 
 ## 2026-11-26 — The Steiner triple system sail problem
 
-A double count and a parity argument answer Gyárfás’s sail question in every sufficiently large two-colored Steiner triple system. A positive fraction of all sails are monochromatic. One color contains a linear number of vertex-disjoint sails. [Proof](results/steiner-triple-system-sail/PROOF.md) · [Source and independent review](results/steiner-triple-system-sail/AUDIT.md).
+A double count and a parity argument answer Gyárfás’s sail question in every sufficiently large two-colored Steiner triple system. A positive fraction of all sails are monochromatic. One color contains a linear number of vertex-disjoint sails. [Proof](results/steiner-triple-system-sail/PROOF.md) · [Source and independent review](results/steiner-triple-system-sail/AUDIT.md). Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Formalization](results/steiner-triple-system-sail/FORMALIZATION.md).
 
 ## 2026-11-26 — Dukes’s literal revstack descent polynomials
 
