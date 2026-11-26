@@ -2,7 +2,7 @@
 
 ## Cyrusian–Kaplan’s ordinarization quasipolynomial question
 
-Partial. The exact finite-set encoding, actual ordinarization path length, homogeneous real scaling and binomial baseline count are verified. Separate checkpoints check quantitative count growth, the off-hyperplane comparison, the literal sign arrangement and its integer lattice. The quasipolynomial and eventual monotonicity arguments remain. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+Partial. Lean proves the exact ordinarization encoding, growth, and a disjoint rational open-simplex decomposition of the literal sign strata, with their vertices in the weak cells. A separate open-simplex checkpoint checks the lattice count in an integral ray chart. The summed actual quasipolynomial and eventual monotonicity are still outside the accepted scope. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
 
 ## Shifted Lonely Runner counterexamples
 

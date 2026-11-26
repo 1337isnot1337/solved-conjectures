@@ -1,0 +1,466 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T05:29:44.939054+00:00",
+  "finished_at": "2026-11-26T06:08:30.900708+00:00",
+  "root": "Conjectures.CyrusianKaplanTriangulationCheckpoint",
+  "project_modules": [
+    "Conjectures.CyrusianKaplanActualTriangulation",
+    "Conjectures.CyrusianKaplanCompactSignFaces",
+    "Conjectures.CyrusianKaplanCompactStrata",
+    "Conjectures.CyrusianKaplanEncoding",
+    "Conjectures.CyrusianKaplanHomogeneous",
+    "Conjectures.CyrusianKaplanOpenSimplexCone",
+    "Conjectures.CyrusianKaplanOpenSimplexIndependent",
+    "Conjectures.CyrusianKaplanOrderedCoordinates",
+    "Conjectures.CyrusianKaplanPolyhedronRayExit",
+    "Conjectures.CyrusianKaplanPolyhedronVertices",
+    "Conjectures.CyrusianKaplanRadialSignFaces",
+    "Conjectures.CyrusianKaplanRationalPolytopeCheckpoint",
+    "Conjectures.CyrusianKaplanRationalSignPolytope",
+    "Conjectures.CyrusianKaplanRationalStratumPoint",
+    "Conjectures.CyrusianKaplanRationalVertices",
+    "Conjectures.CyrusianKaplanRayBoundary",
+    "Conjectures.CyrusianKaplanRelativeInterior",
+    "Conjectures.CyrusianKaplanSignPartition",
+    "Conjectures.CyrusianKaplanSignRadii",
+    "Conjectures.CyrusianKaplanStratumClosure",
+    "Conjectures.CyrusianKaplanTriangulationCheckpoint",
+    "Conjectures.CyrusianKaplanTupleArrangement",
+    "Conjectures.CyrusianKaplanTuplePolyhedra"
+  ],
+  "required_endpoints": [
+    "CyrusianKaplan.compact_signFibre_has_rational_point",
+    "CyrusianKaplan.compact_finiteAffinePolyhedron_ray_exit",
+    "CyrusianKaplan.compact_finiteAffinePolyhedron_open_radius",
+    "CyrusianKaplan.mem_radialBoundary_iff_specializes_ne",
+    "CyrusianKaplan.signNonzeros_card_lt_of_specializes_ne",
+    "CyrusianKaplan.tuple_fibre_open_radius",
+    "CyrusianKaplan.mem_openBarycentricSimplex_cons",
+    "CyrusianKaplan.affineIndependent_cons_of_affine_hyperplane",
+    "CyrusianKaplan.compact_tupleSignFibre_triangulation"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/CyrusianKaplanActualTriangulation.lean": "9615a420a141afe844ae11ab4f82dd1947c0ab6fcbb5b9d581066f9a13a2714b",
+    "lean/Conjectures/CyrusianKaplanCompactSignFaces.lean": "102aaf4ae49282fe740d80704a811a80816566ff5b0f51c0eb1fb9bfb6e56780",
+    "lean/Conjectures/CyrusianKaplanCompactStrata.lean": "8321c748a834892f8e71c8cd7af2f1da0e2ccaac4bc87ce29093072bc1d534e9",
+    "lean/Conjectures/CyrusianKaplanEncoding.lean": "d0422453ddffafc13fd4545ed26fae834f440d92cd9541c39836fa2bf8a69ea0",
+    "lean/Conjectures/CyrusianKaplanHomogeneous.lean": "34b8fc59cc4fae75c374b67ec6f819f919d9bdab34cd9eaa7b2793fe314fdc74",
+    "lean/Conjectures/CyrusianKaplanOpenSimplexCone.lean": "52aa328d6cf2fd078495e427ee4b530af6f598ca3867dd1b328b5433b9c786d3",
+    "lean/Conjectures/CyrusianKaplanOpenSimplexIndependent.lean": "4385ea031fb575b61b978e55fc8d44e17210c5b95f187801925b96846e86fd98",
+    "lean/Conjectures/CyrusianKaplanOrderedCoordinates.lean": "66bd7bc0a7aaf033adca6bed33fb4b726c9cfeeed0757218b9cc1c35bbb96ff6",
+    "lean/Conjectures/CyrusianKaplanPolyhedronRayExit.lean": "4990396795bc66426df1ec347f94c8e49fa7999d8673a5d767d410dd5d0ec137",
+    "lean/Conjectures/CyrusianKaplanPolyhedronVertices.lean": "d1b0927738e572aff9edf3e4eaef9294ccbe5c442960252e7552b8f9ae8d6725",
+    "lean/Conjectures/CyrusianKaplanRadialSignFaces.lean": "0991e9c31ab20d2f70395b2190f80dcd8143ace5ae499e6d3c6480329041d323",
+    "lean/Conjectures/CyrusianKaplanRationalPolytopeCheckpoint.lean": "fb63d4fccd48b1e806c0382e6d886e06bd4a6b30405c4ab89f19c105094b1e43",
+    "lean/Conjectures/CyrusianKaplanRationalSignPolytope.lean": "8c0bb108949ffac42d39b501ec73a73b1dbd33c58fe25b0d21bad3d6f85f4ef6",
+    "lean/Conjectures/CyrusianKaplanRationalStratumPoint.lean": "284e86c8cad7abc252169846196698f1352ce85f7d6ff727c0257ebe2a13d1c2",
+    "lean/Conjectures/CyrusianKaplanRationalVertices.lean": "3e3130bc98dd63ddebac954bd3f8d8e914e8d6041b55ef579615deef0f9f8c51",
+    "lean/Conjectures/CyrusianKaplanRayBoundary.lean": "fc5cab818dcfdc23b70fabda6342a936b680c2e39ed47135d35b4942cf342612",
+    "lean/Conjectures/CyrusianKaplanRelativeInterior.lean": "a40b2f353a2d472978aa6ffa00dfc76ae0ca9adadc21f6c76bb38089348eb802",
+    "lean/Conjectures/CyrusianKaplanSignPartition.lean": "b005f5418ba45978073698815fc721b34b9250bdbdf3408c43f849cf1a89b91b",
+    "lean/Conjectures/CyrusianKaplanSignRadii.lean": "d1ac237b957a3d5b8150f0ca40e305c106641f4dce1f4f4de7be9a75856fcc68",
+    "lean/Conjectures/CyrusianKaplanStratumClosure.lean": "dd46559e1e645cacf910e34c4885fa9dfb85bbfa3c4ba1bf8a533b0752c15da6",
+    "lean/Conjectures/CyrusianKaplanTriangulationCheckpoint.lean": "ad6c5b1d67f1cede40502e0d347743e63c3f56b7c980fab0fcfad1d2ba958500",
+    "lean/Conjectures/CyrusianKaplanTupleArrangement.lean": "10f1b51ea7cdf878183a5cbfa87b98c3097c50a4400bbc202c14589b00de602b",
+    "lean/Conjectures/CyrusianKaplanTuplePolyhedra.lean": "b71f88ab55e99a5a551d1fd61c646dcdb478c6f72bf9a350b7e82c7d60e42ae8"
+  },
+  "input_sha256": {
+    "lean/Conjectures/CyrusianKaplanActualTriangulation.lean": "9615a420a141afe844ae11ab4f82dd1947c0ab6fcbb5b9d581066f9a13a2714b",
+    "lean/Conjectures/CyrusianKaplanCompactSignFaces.lean": "102aaf4ae49282fe740d80704a811a80816566ff5b0f51c0eb1fb9bfb6e56780",
+    "lean/Conjectures/CyrusianKaplanCompactStrata.lean": "8321c748a834892f8e71c8cd7af2f1da0e2ccaac4bc87ce29093072bc1d534e9",
+    "lean/Conjectures/CyrusianKaplanEncoding.lean": "d0422453ddffafc13fd4545ed26fae834f440d92cd9541c39836fa2bf8a69ea0",
+    "lean/Conjectures/CyrusianKaplanHomogeneous.lean": "34b8fc59cc4fae75c374b67ec6f819f919d9bdab34cd9eaa7b2793fe314fdc74",
+    "lean/Conjectures/CyrusianKaplanOpenSimplexCone.lean": "52aa328d6cf2fd078495e427ee4b530af6f598ca3867dd1b328b5433b9c786d3",
+    "lean/Conjectures/CyrusianKaplanOpenSimplexIndependent.lean": "4385ea031fb575b61b978e55fc8d44e17210c5b95f187801925b96846e86fd98",
+    "lean/Conjectures/CyrusianKaplanOrderedCoordinates.lean": "66bd7bc0a7aaf033adca6bed33fb4b726c9cfeeed0757218b9cc1c35bbb96ff6",
+    "lean/Conjectures/CyrusianKaplanPolyhedronRayExit.lean": "4990396795bc66426df1ec347f94c8e49fa7999d8673a5d767d410dd5d0ec137",
+    "lean/Conjectures/CyrusianKaplanPolyhedronVertices.lean": "d1b0927738e572aff9edf3e4eaef9294ccbe5c442960252e7552b8f9ae8d6725",
+    "lean/Conjectures/CyrusianKaplanRadialSignFaces.lean": "0991e9c31ab20d2f70395b2190f80dcd8143ace5ae499e6d3c6480329041d323",
+    "lean/Conjectures/CyrusianKaplanRationalPolytopeCheckpoint.lean": "fb63d4fccd48b1e806c0382e6d886e06bd4a6b30405c4ab89f19c105094b1e43",
+    "lean/Conjectures/CyrusianKaplanRationalSignPolytope.lean": "8c0bb108949ffac42d39b501ec73a73b1dbd33c58fe25b0d21bad3d6f85f4ef6",
+    "lean/Conjectures/CyrusianKaplanRationalStratumPoint.lean": "284e86c8cad7abc252169846196698f1352ce85f7d6ff727c0257ebe2a13d1c2",
+    "lean/Conjectures/CyrusianKaplanRationalVertices.lean": "3e3130bc98dd63ddebac954bd3f8d8e914e8d6041b55ef579615deef0f9f8c51",
+    "lean/Conjectures/CyrusianKaplanRayBoundary.lean": "fc5cab818dcfdc23b70fabda6342a936b680c2e39ed47135d35b4942cf342612",
+    "lean/Conjectures/CyrusianKaplanRelativeInterior.lean": "a40b2f353a2d472978aa6ffa00dfc76ae0ca9adadc21f6c76bb38089348eb802",
+    "lean/Conjectures/CyrusianKaplanSignPartition.lean": "b005f5418ba45978073698815fc721b34b9250bdbdf3408c43f849cf1a89b91b",
+    "lean/Conjectures/CyrusianKaplanSignRadii.lean": "d1ac237b957a3d5b8150f0ca40e305c106641f4dce1f4f4de7be9a75856fcc68",
+    "lean/Conjectures/CyrusianKaplanStratumClosure.lean": "dd46559e1e645cacf910e34c4885fa9dfb85bbfa3c4ba1bf8a533b0752c15da6",
+    "lean/Conjectures/CyrusianKaplanTriangulationCheckpoint.lean": "ad6c5b1d67f1cede40502e0d347743e63c3f56b7c980fab0fcfad1d2ba958500",
+    "lean/Conjectures/CyrusianKaplanTupleArrangement.lean": "10f1b51ea7cdf878183a5cbfa87b98c3097c50a4400bbc202c14589b00de602b",
+    "lean/Conjectures/CyrusianKaplanTuplePolyhedra.lean": "b71f88ab55e99a5a551d1fd61c646dcdb478c6f72bf9a350b7e82c7d60e42ae8",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanEncoding.olean",
+        "Conjectures/CyrusianKaplanEncoding.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanEncoding.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanHomogeneous.olean",
+        "Conjectures/CyrusianKaplanHomogeneous.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanHomogeneous.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanOrderedCoordinates.olean",
+        "Conjectures/CyrusianKaplanOrderedCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanOrderedCoordinates.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanStratumClosure.olean",
+        "Conjectures/CyrusianKaplanStratumClosure.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanStratumClosure.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanSignPartition.olean",
+        "Conjectures/CyrusianKaplanSignPartition.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanSignPartition.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanTupleArrangement.olean",
+        "Conjectures/CyrusianKaplanTupleArrangement.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanTupleArrangement.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRelativeInterior.olean",
+        "Conjectures/CyrusianKaplanRelativeInterior.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRelativeInterior.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanTuplePolyhedra.olean",
+        "Conjectures/CyrusianKaplanTuplePolyhedra.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanTuplePolyhedra.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanCompactStrata.olean",
+        "Conjectures/CyrusianKaplanCompactStrata.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanCompactStrata.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanPolyhedronVertices.olean",
+        "Conjectures/CyrusianKaplanPolyhedronVertices.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanPolyhedronVertices.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRationalSignPolytope.olean",
+        "Conjectures/CyrusianKaplanRationalSignPolytope.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRationalSignPolytope.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRationalVertices.olean",
+        "Conjectures/CyrusianKaplanRationalVertices.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRationalVertices.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRationalPolytopeCheckpoint.olean",
+        "Conjectures/CyrusianKaplanRationalPolytopeCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRationalPolytopeCheckpoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRationalStratumPoint.olean",
+        "Conjectures/CyrusianKaplanRationalStratumPoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRationalStratumPoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanPolyhedronRayExit.olean",
+        "Conjectures/CyrusianKaplanPolyhedronRayExit.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanPolyhedronRayExit.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRayBoundary.olean",
+        "Conjectures/CyrusianKaplanRayBoundary.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRayBoundary.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanCompactSignFaces.olean",
+        "Conjectures/CyrusianKaplanCompactSignFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanCompactSignFaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanRadialSignFaces.olean",
+        "Conjectures/CyrusianKaplanRadialSignFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanRadialSignFaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanSignRadii.olean",
+        "Conjectures/CyrusianKaplanSignRadii.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanSignRadii.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanOpenSimplexCone.olean",
+        "Conjectures/CyrusianKaplanOpenSimplexCone.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanOpenSimplexCone.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanOpenSimplexIndependent.olean",
+        "Conjectures/CyrusianKaplanOpenSimplexIndependent.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanOpenSimplexIndependent.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanActualTriangulation.olean",
+        "Conjectures/CyrusianKaplanActualTriangulation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanActualTriangulation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CyrusianKaplanTriangulationCheckpoint.olean",
+        "Conjectures/CyrusianKaplanTriangulationCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CyrusianKaplanTriangulationCheckpoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.CyrusianKaplanTriangulationCheckpoint",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 369,
+    "modules": 23,
+    "private_declarations": 72,
+    "raw_declarations": 369,
+    "required": 9,
+    "tag": "passed",
+    "theorems": 254
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

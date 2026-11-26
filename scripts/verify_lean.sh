@@ -153,6 +153,16 @@ modules=(
   Conjectures.CyrusianKaplanArrangementCheckpoint
   Conjectures.CyrusianKaplanPolyhedronVertices
   Conjectures.CyrusianKaplanRationalPolytopeCheckpoint
+  Conjectures.CyrusianKaplanActualTriangulation
+  Conjectures.CyrusianKaplanCompactSignFaces
+  Conjectures.CyrusianKaplanOpenSimplexCone
+  Conjectures.CyrusianKaplanOpenSimplexIndependent
+  Conjectures.CyrusianKaplanPolyhedronRayExit
+  Conjectures.CyrusianKaplanRadialSignFaces
+  Conjectures.CyrusianKaplanRationalStratumPoint
+  Conjectures.CyrusianKaplanRayBoundary
+  Conjectures.CyrusianKaplanSignRadii
+  Conjectures.CyrusianKaplanTriangulationCheckpoint
   Conjectures.CyrusianKaplanRationalSignPolytope
   Conjectures.CyrusianKaplanRationalVertices
   Conjectures.CyrusianKaplanCompactStrata
