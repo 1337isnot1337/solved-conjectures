@@ -14,7 +14,7 @@ For every index from 251 onward, Lean chooses the unique saddle radius and prove
 
 The separate Python check reproduces all 901 rational enclosures of the written proof. The formal proof uses the interval bounds linked above. [Written proof](PROOF.md) · [Original Fourier certificate](heim-neuhauser-fourier-certificate.py).
 
-The strict build and stock-kernel replay covered 57 project modules. The axiom audit checked all 2,611 declarations, including 2,463 theorems and 1,898 private declarations. All 67 required endpoints passed. [Joint verification receipt](verification/lean-receipt.json).
+The strict build and stock-kernel replay covered 57 project modules. The axiom audit checked all 2,611 declarations, including 2,463 theorems and 1,898 private declarations. All 67 required endpoints passed. The four certificate modules for indices 200 through 250 now elaborate successive decisions sequentially. All four compiled in the normal Lake build under the 4,500 MB limit. Independent research and publication runs strictly rebuilt and replayed the entire 57-module proof after this change. [Joint verification receipt](verification/lean-receipt.json).
 
 To repeat the verification from the repository root, run
 
