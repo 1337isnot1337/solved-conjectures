@@ -40,6 +40,13 @@ Lean checks the actual diagonal point counts in direct and skew sums
 and proves that a skew sum’s diagonal meets at most one child.
 [Scope and receipt](results/separable-derangements-limit/FORMALIZATION.md).
 
+## 2026-11-25 — Verify Tom–Vailaya’s color basis and endpoint reflection
+
+Lean proves invertibility of the symbolic color basis and derives the
+literal closure trace from agreement of the weighted path tests. It also
+checks the reversal of the endpoint closure and its color variables.
+[Scope and receipts](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the weighted Tom–Vailaya path column identities
 
 Lean checks the generating identity, the coefficient recurrence for

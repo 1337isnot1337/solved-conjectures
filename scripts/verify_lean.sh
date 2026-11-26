@@ -2829,6 +2829,9 @@ modules=(
   Conjectures.TomVailayaPathRows
   Conjectures.TomVailayaWeightedPathRows
   Conjectures.TomVailayaPathSeries
+  Conjectures.TomVailayaColorBasis
+  Conjectures.TomVailayaTraceComparison
+  Conjectures.TomVailayaReflection
   Conjectures.KauersKoutschanCertificate
   Conjectures.KauersKoutschanDividedSum
   Conjectures.KauersKoutschanCount

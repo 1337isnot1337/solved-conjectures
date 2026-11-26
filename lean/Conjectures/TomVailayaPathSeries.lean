@@ -259,6 +259,32 @@ theorem sum_basisColumn [IsDomain R] (x : Fin N → R) (q : R) (hq : q ≠ 1) (k
   change (q - 1) * (∑ b : Fin N, (colorSeries x q b).coeff k) = _
   linear_combination -h - elementaryValue x (k + 1) * hgeom
 
+
+/-- At the unweighted specialization, every complementary color factor
+is independent of its position relative to the distinguished color. -/
+theorem colorSeries_one (x : Fin N → R) (b : Fin N) :
+    colorSeries x 1 b = C (x b) * ∏ c ∈ Finset.univ.erase b, (1 + X * C (x c)) := by
+  simp [colorSeries, cutoffFactor]
+
+
+theorem map_colorSeries {S : Type*} [CommRing S] (f : R →+* S)
+    (x : Fin N → R) (q : R) (b : Fin N) :
+    (colorSeries x q b).map f = colorSeries (f ∘ x) (f q) b := by
+  simp only [colorSeries, Polynomial.map_mul, Polynomial.map_C, Polynomial.map_prod,
+    Function.comp_apply]
+  congr 1
+  apply Finset.prod_congr rfl
+  intro c _
+  simp only [cutoffFactor, Polynomial.map_add, Polynomial.map_one, Polynomial.map_mul,
+    Polynomial.map_X, Polynomial.map_C, Function.comp_apply]
+  split <;> simp_all
+
+theorem map_basisColumn {S : Type*} [CommRing S] (f : R →+* S)
+    (x : Fin N → R) (q : R) (k : ℕ) (b : Fin N) :
+    f (basisColumn x q k b) = basisColumn (f ∘ x) (f q) k b := by
+  simp only [basisColumn]
+  rw [← map_colorSeries, Polynomial.coeff_map]
+
 end
 
 end TomVailaya
