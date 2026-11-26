@@ -86,6 +86,12 @@ Earlier sources established the exceptional orders. These companion theorems are
 | --- | --- | --- | --- |
 | [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | Determines the pair of words maximizing the leading difference of win probabilities in Litt’s game for every word length and alphabet size. Includes the sponsor’s full-alphabet convention. | Partial: exact unrestricted overlap-score maximum | [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) · [Proof](results/ekhad-zeilberger-unfair-bet/PROOF.md) · [Exact checks](results/ekhad-zeilberger-unfair-bet/verify.py) · [Issue 219](https://github.com/1337isnot1337/solved-conjectures/issues/219) |
 
+## Positional games on graphs
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | Proved: the minimum maximum host degree for a free $s$-star is at least $2^s/8$, more than $2^{s-3}$ for all $s\ge3$. | Not formalized | [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md) · [Exact checker](results/cioba-savvas-shutout-number/verify.py) |
+
 ## Position coloring and Nordhaus–Gaddum bounds
 
 | Problem | Result | Formalization | Evidence |

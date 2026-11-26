@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Cioba–Savvas shutout number conjecture
+
+Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).
+
 ## 2026-11-26 — Pomerance–Sárközy’s headline arithmetic limits in Lean
 
 The formalization gives the quarter-root Gaussian law for the original
