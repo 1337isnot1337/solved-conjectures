@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Builder–Blocker general position complexity conjecture
+
+Both cardinality-threshold games are PSPACE-complete even at diameter two. The two reductions force the opening player to activate a universal vertex before simulating independent-set play. [Proof](results/builder-blocker-general-position-complexity/PROOF.md) · [Audit](results/builder-blocker-general-position-complexity/AUDIT.md).
+
 ## 2026-11-26 — Fractional general position conjecture for square grids
 
 Proved both parity clauses of Conjecture 5.38. Linear rank potentials give exact fractional geodesic covers for every square grid. [Proof](results/fractional-general-position-square-grids/PROOF.md) · [Audit](results/fractional-general-position-square-grids/AUDIT.md).
