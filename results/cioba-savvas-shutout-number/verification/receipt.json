@@ -1,0 +1,141 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T22:14:26.879713+00:00",
+  "finished_at": "2026-11-26T22:17:19.002345+00:00",
+  "root": "Conjectures.CiobaSavvasShutout",
+  "project_modules": [
+    "Conjectures.CiobaSavvasShutout",
+    "Conjectures.CiobaSavvasShutoutDefs",
+    "Conjectures.CiobaSavvasShutoutRiskRegion",
+    "Conjectures.CiobaSavvasShutoutStrategy"
+  ],
+  "required_endpoints": [
+    "Conjectures.CiobaSavvasShutout.breaker_wins_immediate_of_degree_cond",
+    "Conjectures.CiobaSavvasShutout.breaker_wins_freeStar_of_degree_cond",
+    "Conjectures.CiobaSavvasShutout.breaker_wins_immediate_of_maxDegree_le",
+    "Conjectures.CiobaSavvasShutout.maxDegree_gt_of_makerWinsImmediate",
+    "Conjectures.CiobaSavvasShutout.maxDegree_ge_of_makerWinsFreeStar",
+    "Conjectures.CiobaSavvasShutout.shutout_numbers_ge_three",
+    "Conjectures.CiobaSavvasShutout.sigma_ge_two_pow_div_eight",
+    "Conjectures.CiobaSavvasShutout.shutout_numbers_nat_ge_three",
+    "Conjectures.CiobaSavvasShutout.sigmaNat_ge_two_pow_div_eight"
+  ],
+  "source_sha256": {
+    "lean\\Conjectures\\CiobaSavvasShutout.lean": "c370bbdb6dfcc7c1a966450dcfb55755544ed356845f775aaedbb483e6c31820",
+    "lean\\Conjectures\\CiobaSavvasShutoutDefs.lean": "eebdac96312e36c8f4bb2048567b6fde57ee26dceadc1199b636d850eb90fa90",
+    "lean\\Conjectures\\CiobaSavvasShutoutRiskRegion.lean": "5426390d585533602cacb71066234ead9e37b0358543fc62f587929264bd0793",
+    "lean\\Conjectures\\CiobaSavvasShutoutStrategy.lean": "3a268637b4efdcd0eb52a0c0b42e331c5be23b52e8975e5bd39216bb367f0446"
+  },
+  "input_sha256": {
+    "lean\\Conjectures\\CiobaSavvasShutout.lean": "c370bbdb6dfcc7c1a966450dcfb55755544ed356845f775aaedbb483e6c31820",
+    "lean\\Conjectures\\CiobaSavvasShutoutDefs.lean": "eebdac96312e36c8f4bb2048567b6fde57ee26dceadc1199b636d850eb90fa90",
+    "lean\\Conjectures\\CiobaSavvasShutoutRiskRegion.lean": "5426390d585533602cacb71066234ead9e37b0358543fc62f587929264bd0793",
+    "lean\\Conjectures\\CiobaSavvasShutoutStrategy.lean": "3a268637b4efdcd0eb52a0c0b42e331c5be23b52e8975e5bd39216bb367f0446",
+    "lean\\lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
+    "lean\\lake-manifest.json": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+    "lean\\lakefile.toml": "91f787a34c9a80caf6d07c502a981c2adc85060414de9d114cfd864fbdd0ab3b",
+    "scripts\\audit_lean_all_owned.py": "0e514f0d65a08879b1b01a4b42f93a80960ea80d811c0bf417ec209ec4c391b0",
+    "scripts\\replay_lean.py": "4605df0993844e224a93b59336391f9d64ea1f03f3c9caf1123df0fd5e273940",
+    "scripts\\verify_lean_target.py": "6d4ebc756a210051996ff231a96b8ed11f900189c823cdfc56467bed82665bc8"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\carlo\\OneDrive\\\u00c1rea de Trabalho\\conjectures\\solved-conjectures\\lean\\.lake\\build\\lib\\lean\\Conjectures\\CiobaSavvasShutoutDefs.olean",
+        "Conjectures/CiobaSavvasShutoutDefs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CiobaSavvasShutoutDefs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\carlo\\OneDrive\\\u00c1rea de Trabalho\\conjectures\\solved-conjectures\\lean\\.lake\\build\\lib\\lean\\Conjectures\\CiobaSavvasShutoutRiskRegion.olean",
+        "Conjectures/CiobaSavvasShutoutRiskRegion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CiobaSavvasShutoutRiskRegion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\carlo\\OneDrive\\\u00c1rea de Trabalho\\conjectures\\solved-conjectures\\lean\\.lake\\build\\lib\\lean\\Conjectures\\CiobaSavvasShutoutStrategy.olean",
+        "Conjectures/CiobaSavvasShutoutStrategy.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CiobaSavvasShutoutStrategy.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\carlo\\OneDrive\\\u00c1rea de Trabalho\\conjectures\\solved-conjectures\\lean\\.lake\\build\\lib\\lean\\Conjectures\\CiobaSavvasShutout.olean",
+        "Conjectures/CiobaSavvasShutout.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CiobaSavvasShutout.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "C:\\Users\\carlo\\OneDrive\\\u00c1rea de Trabalho\\conjectures\\solved-conjectures\\results\\cioba-savvas-shutout-number\\verification\\TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "C:\\Users\\carlo\\OneDrive\\\u00c1rea de Trabalho\\conjectures\\solved-conjectures\\scripts\\replay_lean.py",
+        "--root",
+        "Conjectures.CiobaSavvasShutout"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 288,
+    "modules": 4,
+    "private_declarations": 54,
+    "raw_declarations": 288,
+    "required": 9,
+    "tag": "passed",
+    "theorems": 241
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

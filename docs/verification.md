@@ -4,6 +4,8 @@
 
 Run `python3 results/cioba-savvas-shutout-number/verify.py` to check 127,850 endpoint updates for exact independence polynomials and 432 played games under the stated degree condition. The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) is independent of the finite checks.
 
+The pinned strict source build, all-owned transitive axiom audit (288 declarations, 241 theorems, 54 private declarations, nine required endpoints), and stock-kernel replay passed for the exact four-module Lean closure proving Conjectures 3.2 and 3.3 over arbitrary finite simple graphs. The aggregate repository gate is separate. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
+
 ## Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
 Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schur/check_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schur/AUDIT.md) explains how the proof covers every degree.

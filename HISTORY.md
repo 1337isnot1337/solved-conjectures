@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete Lean formalization of Cioba–Savvas shutout number conjecture
+
+Lean proves the exponential shutout-number lower bounds for Conjectures 3.2 and 3.3 over arbitrary finite simple graphs, distinguishing immediate $s$-shutout $\tau(s)$ from a free $s$-star after Breaker's reply $\sigma(s)$ and establishing $\sigma(s) \ge \tau(s) > 2^{s-3}$ ($s \ge 3$) and $\sigma(s) \ge 2^s/8$ ($s \ge 1$). The four-module closure passed strict compilation, the 288-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/cioba-savvas-shutout-number/FORMALIZATION.md).
+
 ## 2026-11-26 — Cioba–Savvas shutout number conjecture
 
 Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).

@@ -90,7 +90,7 @@ Earlier sources established the exceptional orders. These companion theorems are
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
-| [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | Proved: the minimum maximum host degree for a free $s$-star is at least $2^s/8$, more than $2^{s-3}$ for all $s\ge3$. | Not formalized | [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md) · [Exact checker](results/cioba-savvas-shutout-number/verify.py) |
+| [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | Proved: the minimum maximum host degree for a free $s$-star is at least $2^s/8$, more than $2^{s-3}$ for all $s\ge3$. | Complete | [Lean scope](results/cioba-savvas-shutout-number/FORMALIZATION.md) · [Receipt](results/cioba-savvas-shutout-number/verification/receipt.json) · [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md) · [Exact checker](results/cioba-savvas-shutout-number/verify.py) |
 
 ## Position coloring and Nordhaus–Gaddum bounds
 

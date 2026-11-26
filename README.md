@@ -61,7 +61,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **45.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **132.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | **45.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **132.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **45.** [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ | **132.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
-| **52.** [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | ⬜ | **132.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
+| **52.** [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | ✅ | **132.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
 | **53.** [Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture](results/general-position-nordhaus-gaddum/) | ⬜ | **136.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | **54.** [The lower oriented general position NP-hardness conjecture](results/lower-oriented-general-position-np-hardness/) | ⬜ | **136.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | **54.** [Oriented general position spectrum nonconstancy conjecture](results/oriented-general-position-spectrum-nonconstancy/) | ⬜ | **136.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
