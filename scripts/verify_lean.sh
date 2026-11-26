@@ -71,6 +71,29 @@ modules=(
   Conjectures.BraunBrueggeBicyclicCycleSteps
   Conjectures.BraunBrueggeBicyclicCycleCount
   Conjectures.BraunBrueggeBicyclicWedge
+  Conjectures.BraunBrueggeBicyclicFacets
+  Conjectures.BraunBrueggeThetaOptimizer
+  Conjectures.BraunBrueggeThetaOptimizerArithmetic
+  Conjectures.BraunBrueggeThetaOptimizerBalance
+  Conjectures.BraunBrueggeThetaOptimizerFinite
+  Conjectures.BraunBrueggeThetaOptimizerGeometry
+  Conjectures.BraunBrueggeThetaOptimizerLarge
+  Conjectures.BraunBrueggeThetaOptimizerLower
+  Conjectures.BraunBrueggeThetaOptimizerMass
+  Conjectures.BraunBrueggeThetaOptimizerRows
+  Conjectures.BraunBrueggeThetaOptimizerRows011To042
+  Conjectures.BraunBrueggeThetaOptimizerRows043To067
+  Conjectures.BraunBrueggeThetaOptimizerRows068To085
+  Conjectures.BraunBrueggeThetaOptimizerRows086To098
+  Conjectures.BraunBrueggeThetaOptimizerRows099To109
+  Conjectures.BraunBrueggeThetaOptimizerRows110To118
+  Conjectures.BraunBrueggeThetaOptimizerRows119To125
+  Conjectures.BraunBrueggeThetaOptimizerRows126To132
+  Conjectures.BraunBrueggeThetaOptimizerRows133To138
+  Conjectures.BraunBrueggeThetaOptimizerRows139To143
+  Conjectures.BraunBrueggeThetaOptimizerTwoPath
+  Conjectures.BraunBrueggeThetaOptimizerUpper
+  Conjectures.BraunBrueggeThetaOptimizerWallis
   Conjectures.BraunBrueggeMinimum
   Conjectures.BraunBrueggeMinimumAlmostPerfectFaces
   Conjectures.BraunBrueggeMinimumAugmenting
