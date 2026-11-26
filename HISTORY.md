@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-25 — Verify endpoint gluing in Tom–Vailaya’s proof
+
+Lean proves the ordered product formula for the color matrices of
+literal glued graphs by matching the shared vertex color and factoring
+the weights.
+[Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the socle action in Shumyatsky’s multifactor lift
 
 The permutation action on the actual simple factors descends to the

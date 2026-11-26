@@ -97,7 +97,8 @@ Complete for Conjecture 1.1. Lean derives the bound for the actual Laplacian of 
 Partial. For arbitrary finite colors and directed arcs, Lean proves that
 the trace of the color transfer matrix equals the chromatic
 quasisymmetric sum of the actual endpoint closure. It also checks loop
-vanishing and the path-edge transfer. The forest-triple matrix
+vanishing, the path-edge transfer, and multiplication for actual endpoint
+gluing. The forest-triple matrix
 identification remains written.
 [Lean scope and receipt](../results/tom-vailaya-weighted-trace/FORMALIZATION.md).
 

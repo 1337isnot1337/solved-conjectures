@@ -1,0 +1,102 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T00:24:48.721081+00:00",
+  "finished_at": "2026-11-26T00:25:50.267109+00:00",
+  "root": "Conjectures.TomVailayaColorGluing",
+  "project_modules": [
+    "Conjectures.TomVailayaColorGluing",
+    "Conjectures.TomVailayaColorTrace"
+  ],
+  "required_endpoints": [
+    "TomVailaya.arcWeight_eq",
+    "TomVailaya.trace_colorMatrix_eq_chromatic_close",
+    "TomVailaya.colorMatrix_pathEdge",
+    "TomVailaya.colorMatrix_glue"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/TomVailayaColorGluing.lean": "6603c4de34c474cbc2bccfba96e6ca437a9de126fd24b5ed807b531526e6899d",
+    "lean/Conjectures/TomVailayaColorTrace.lean": "eba05acb97451432bc1f84f87f7097d88febf07a7b9ac86b01d015954cfc50b7"
+  },
+  "input_sha256": {
+    "lean/Conjectures/TomVailayaColorGluing.lean": "6603c4de34c474cbc2bccfba96e6ca437a9de126fd24b5ed807b531526e6899d",
+    "lean/Conjectures/TomVailayaColorTrace.lean": "eba05acb97451432bc1f84f87f7097d88febf07a7b9ac86b01d015954cfc50b7",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-tom-vailaya-glue-1825/lean/.lake/build/lib/lean/Conjectures/TomVailayaColorTrace.olean",
+        "Conjectures/TomVailayaColorTrace.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TomVailayaColorTrace.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-tom-vailaya-glue-1825/lean/.lake/build/lib/lean/Conjectures/TomVailayaColorGluing.olean",
+        "Conjectures/TomVailayaColorGluing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TomVailayaColorGluing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/sc-tom-vailaya-20261125/gluing/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/sc-tom-vailaya-glue-1825/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.TomVailayaColorGluing"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 71,
+    "modules": 2,
+    "private_declarations": 43,
+    "raw_declarations": 71,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 56
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
