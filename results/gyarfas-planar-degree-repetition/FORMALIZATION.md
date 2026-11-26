@@ -2,6 +2,8 @@
 
 Lean proves that the published configuration at order 16 consists of sixteen noncollinear rational points. After embedding them in the real affine plane, every number of incident spanned lines occurs at most twice. Exactly two points have degree 9. This settles the existence question in Section 4, Problem 4 of Gyárfás’s paper. [Lean theorem](../../lean/Conjectures/GyarfasPlanarWitness.lean) · [Gyárfás’s original question](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf).
 
+The eight off-axis points are $\left(1/(i+1),i^2/(i+1)\right)$ for $0\le i<8$. The other eight points are $(0,s)$ at heights $s\in\{0,2,3,4,5,6,7,13\}$.
+
 For each pair of distinct points, the formalization identifies its affine span with either the vertical line through the first point or the line with the computed slope. Different directions through a point give different sets of real points. An injective map from rational slopes to real slopes therefore preserves the number of distinct incident lines and the multiplicity of each degree. Three of the listed points form a noncollinear triangle. [Affine lines and directions](../../lean/Conjectures/GyarfasPlanarLines.lean) · [Transfer to the real plane](../../lean/Conjectures/GyarfasPlanarRational.lean).
 
 The uniform construction for every order from 16 and its exact number of distinct degrees have a written proof. The independent checker computes the actual real-line incidences using primitive integer equations at 116 sample orders. [All-order proof](PROOF.md) · [Exact line counter](verify.py).
