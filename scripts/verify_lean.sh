@@ -186,6 +186,7 @@ modules=(
   Conjectures.ShumyatskySingleFactorLift
   Conjectures.ShumyatskyGaschutz
   Conjectures.ShumyatskySocleFactorAction
+  Conjectures.ShumyatskyReduction
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw

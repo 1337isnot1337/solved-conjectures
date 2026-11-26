@@ -7,6 +7,13 @@ literal glued graphs by matching the shared vertex color and factoring
 the weights.
 [Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
 
+## 2026-11-26 — Verify Shumyatsky’s exact conclusion under four simple-group inputs
+
+Lean assembles the original statement for every finite group by
+induction on the group order, with four external finite-simple-group
+results stated as explicit premises.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the socle action in Shumyatsky’s multifactor lift
 
 The permutation action on the actual simple factors descends to the

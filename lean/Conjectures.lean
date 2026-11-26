@@ -43,6 +43,7 @@ import Conjectures.ShumyatskyCoprimeQuotient
 import Conjectures.ShumyatskySingleFactorLift
 import Conjectures.ShumyatskyGaschutz
 import Conjectures.ShumyatskySocleFactorAction
+import Conjectures.ShumyatskyReduction
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
