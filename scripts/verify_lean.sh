@@ -1273,6 +1273,14 @@ modules=(
   Conjectures.CircularCompleteMinusEdgeSpecialColumnBackward
   Conjectures.CircularCompleteMinusEdgeSpecialColumnForward
   Conjectures.CircularCompleteMinusEdgeSpecialColumnPairs
+  Conjectures.CircularCompleteMinusEdgeActualTable
+  Conjectures.CircularCompleteMinusEdgeLiteralCrossings
+  Conjectures.CircularCompleteMinusEdgePrefixCrossings
+  Conjectures.CircularCompleteMinusEdgePrefixIntervals
+  Conjectures.CircularCompleteMinusEdgePrefixJumpCount
+  Conjectures.CircularCompleteMinusEdgePrefixSteps
+  Conjectures.CircularCompleteMinusEdgePrefixTable
+  Conjectures.CircularCompleteMinusEdgeSpecialIntervals
   Conjectures.CircularCompleteMinusEdgeSpecialPositionCount
   Conjectures.CircularCompleteMinusEdgeTableColumns
   Conjectures.CircularCompleteMinusEdgeTableResidues
