@@ -1,7 +1,8 @@
-The extension tex_math_single_backslash is not supported for gfm
 # Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
 
-This is partial progress on the independent **general-position** sum and product statements of [Conjecture 9.3](https://arxiv.org/html/2408.13494v2#S9). The separate independent monophonic product assertion was refuted in [#848](https://github.com/1337isnot1337/solved-conjectures/pull/848). General position concerns shortest paths, not all induced paths.
+**Historical intermediate note. The full proof is now [on `main`](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/general-position-nordhaus-gaddum) ([PR #858](https://github.com/1337isnot1337/solved-conjectures/pull/858)).**
+
+This records the earlier partial progress on the independent **general-position** sum and product statements of [Conjecture 9.3](https://arxiv.org/html/2408.13494v2#S9). The separate independent monophonic product assertion was refuted in [#848](https://github.com/1337isnot1337/solved-conjectures/pull/848). General position concerns shortest paths, not all induced paths.
 
 Write $\gamma(G)=\chi_{\mathrm{gp},i}(G)$, the minimum number of independent color classes such that no shortest path contains three vertices of one class. Let $\tau(G)$ be the minimum vertex-cover size, $\theta(G)=\chi(\overline G)$ the clique-cover number, and $\nu(G)$ the maximum matching size.
 
@@ -37,4 +38,4 @@ If $D\ne\varnothing$ and $L-A$ has just one component, then $C=A=\varnothing$ an
 
 ## Scope
 
-The general-position conjecture remains open in the remaining high-chromatic, perfect-matching or factor-critical complement case. The cited literature search found the original statement and the prior, distinct monophonic sum refutation, but no equivalent vertex-cover theorem or general-position resolution. [Tracking issue #851](https://github.com/1337isnot1337/solved-conjectures/issues/851). No new result is claimed for independent monophonic colorings in this note.
+The partial approach below did not address the high-chromatic, perfect-matching or factor-critical complement case. The [subsequent proof](PROOF.md) instead uses prescribed-root matchings and a nearest-unused ordering, and resolves both general-position clauses unconditionally. The cited literature search found the original statement and the prior, distinct monophonic sum refutation, but no equivalent vertex-cover theorem or general-position resolution. [Tracking issue #851](https://github.com/1337isnot1337/solved-conjectures/issues/851). No new result is claimed for independent monophonic colorings in this note.
