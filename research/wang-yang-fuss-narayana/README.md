@@ -1,5 +1,7 @@
 # Wang–Yang's Fuss–Narayana conjecture
 
+On 26 November 2026 the [reviewed proof of all six matrices](https://github.com/1337isnot1337/solved-conjectures/tree/71e1800696d45554df330de8a9f4514721f2defd/results/wang-yang-fuss-narayana) was published on `main`. The argument uses the square's column ratios, a rational product determinant and two triangular criteria. The 20 November checkpoint below records the earlier approach. [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/98#issuecomment-7188223846) · [Publication PR](https://github.com/1337isnot1337/solved-conjectures/pull/789)
+
 Status (20 November 2026): unresolved in this research lane. No proof or counterexample is claimed. This is a checkpoint of exact reductions and failed sufficient methods, not a finite extension of the conjecture.
 
 Coordination: [issue #98](https://github.com/1337isnot1337/solved-conjectures/issues/98).
