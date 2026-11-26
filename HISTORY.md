@@ -4,6 +4,34 @@
 
 Proved the exact count for $n\ge8$ at the $n-5$ pass threshold. The [proof](results/claesson-dukes-steingrimsson-stack-sorting/PROOF.md) reduces the count to a finite coefficient table and an exact polynomial identity. The [audit](results/claesson-dukes-steingrimsson-stack-sorting/AUDIT.md) records the source check and independent replay.
 
+## 2026-11-26 — Mobile general position complexity
+
+Ordinary, fixed-start, and completely mobile general position thresholds are PSPACE-complete on graphs of diameter two with many universal vertices. A mode-and-lock gadget embeds four-colouring reachability into clique coverage. [Proof](results/mobile-general-position-complexity/PROOF.md) · [Audit](results/mobile-general-position-complexity/AUDIT.md).
+
+## 2026-11-26 — Misère Domination Game
+
+Misère domination has exact winner congruences for paths and cycles. An exact heap formula solves all impartial misère 0.337 positions and rules out Liang-style algebraic periodicity for this game. [Proof](results/misere-domination-game/PROOF.md) · [Audit](results/misere-domination-game/AUDIT.md).
+
+## 2026-11-26 — Permutation digraph general position conjecture
+
+An enlarged alphabet marker set disproves the proposed exact value at every stated parameter pair. The proof also finds the right order in both parameters. [Proof](results/permutation-digraph-general-position/PROOF.md) · [Audit](results/permutation-digraph-general-position/AUDIT.md).
+
+## 2026-11-26 — General position number of oriented trees
+
+For any oriented tree, the reachability-chain partition formula gives the exact general position number. A five-state tree recurrence computes it and recovers an optimal set in linear time. [Proof](results/general-position-oriented-trees/PROOF.md) · [Audit](results/general-position-oriented-trees/AUDIT.md).
+
+## 2026-11-26 — Builder–Blocker general position complexity conjecture
+
+Both cardinality-threshold games are PSPACE-complete even at diameter two. The two reductions force the opening player to activate a universal vertex before simulating independent-set play. [Proof](results/builder-blocker-general-position-complexity/PROOF.md) · [Audit](results/builder-blocker-general-position-complexity/AUDIT.md).
+
+## 2026-11-26 — Fractional general position conjecture for square grids
+
+Proved both parity clauses of Conjecture 5.38. Linear rank potentials give exact fractional geodesic covers for every square grid. [Proof](results/fractional-general-position-square-grids/PROOF.md) · [Audit](results/fractional-general-position-square-grids/AUDIT.md).
+
+## 2026-11-26 — Erdős’s pinned-distance conjecture in general position
+
+A fixed positive improvement over one third holds for the mean number of distinct distances from a point, and hence for the maximum. This answers displays (3) and (5) of Erdős’s 1987 paper and allows any number of concyclic points. [Proof](results/erdos-general-position-pinned-distances/PROOF.md) · [Review](results/erdos-general-position-pinned-distances/REVIEW.md) · [Sources and remaining variant](results/erdos-general-position-pinned-distances/AUDIT.md).
+
 ## 2026-11-26 — Cioba–Savvas shutout number conjecture
 
 Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).

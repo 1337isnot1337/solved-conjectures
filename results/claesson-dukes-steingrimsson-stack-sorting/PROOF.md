@@ -1,17 +1,17 @@
 # Proof of the Claesson–Dukes–Steingrímsson stack-sorting conjecture
 
 For West's stack-sorting map, let $W_{n,t}$ denote the set of permutations of $1,\ldots,n$ sorted by at most $t$ passes. [Claesson, Dukes and Steingrímsson, Conjecture 2.4](https://arxiv.org/abs/0812.0143v2) asserts that for every $n\ge8$,
-$$
+```math
   |W_{n,n-5}|=\frac{(n-5)!}{60}
   \left(60n^5-600n^4+506n^3+11241n^2-38369n+34236\right).
-$$
+```
 The equivalent exact-depth formulation follows by subtracting this count from their Corollary 2.3 for $|W_{n,n-4}|$. It gives
-$$
+```math
   |W_{n,n-4}\setminus W_{n,n-5}|=
   \frac{(n-5)!}{10}\left(
     854\binom{n-8}{3}+5099\binom{n-8}{2}+12545(n-8)+16130
   \right).
-$$
+```
 
 The conjecture holds for every $n\ge8$. The proof uses a finite exhaustive enumeration whose exact coefficient identity covers all $n\ge11$, together with direct stack sorting at the three smaller lengths.
 
@@ -24,13 +24,13 @@ An inverted pair $x>y$, with $x$ before $y$, stays inverted after a pass exactly
 For each value $b$ of the original permutation, write $X_b$ for the entries larger than $b$ before $b$, in their original order, and $t_b$ for the number of larger entries after $b$. In the word restricted to values at least $b$, the prefix preceding $b$ after a pass is $p(X_b)$, since the minimum $b$ causes no pop when it arrives, and once pushed it precedes every subsequent emission. This applies at each pass regardless of the suffix after $b$. No original inversion with bottom $b$ remains after exactly $h(X_b)$ passes. Taking the maximum over $b$ gives the sorting depth. This is the filtered-prefix principle of [Zhang, Theorem 2.1](https://arxiv.org/abs/2604.10779), in its pre-flush form.
 
 Since $|X_b|=n-b-t_b$, a bad permutation has at least one witness $b$ satisfying
-$$
+```math
   b+t_b+e(X_b)\le4.
-$$
+```
 In particular $b\in\{1,2,3,4\}$ and $t_b\le4-b$. Fix a candidate $b$, and set $d=4-b-t_b$. If a nonempty word has $q$ right-to-left maxima, then
-$$
+```math
   e(W)=(q-1)+e(p(W)).
-$$
+```
 When the maximum is last, $q=1$ and $p(W)=s(W\setminus\{\max W\})$. This again ends in its maximum unless empty. Such a state has excess zero. Every preceding round costs at least one unit, so under $e(X_b)\le d$ there are at most $d$ preceding rounds, deleting in total at most $2d$ letters.
 
 ## Eleven marked labels and exposed gaps
@@ -57,16 +57,16 @@ Constrain every generic gap after a selected $b$ in the original word and every 
 For each such fixed choice, enumerate all nonnegative lengths in the constrained gaps with total $j\le6$, and all linear orders of the $j$ generic values assigned to their slots, relative to one another. All are greater than the four bottom labels and below the seven highs. Test the resulting word with the unconstrained gaps empty. Compute $t_b$, run $p$ through the prescribed rounds, and verify the exact first maximum-last round and the sum of the preceding excess charges. This test is independent of the contents of the unconstrained gaps. By items 1–4, a mixed low packet that later matters is exposed as a whole, so every original gap affecting its contents was constrained from the start. Unconstrained packets can neither contribute a right-to-left record nor change whether the maximum is last in any of the tested states. The count $t_b$ uses constrained gaps only. The same result therefore holds after filling the other gaps with any lengths and any generic labels consistent with the specified relative order. Conversely every permutation in the intersection yields exactly one choice of marked order, exact rounds, constrained lengths, and relative order.
 
 Put $N=n-11$. For an accepted choice with $j$ constrained generic entries and $u>0$ unconstrained gaps, choose the $j$ values and assign them to the constrained slots in their prescribed relative order. Permute the remaining $N-j$ values and divide that linear order among the $u$ gaps by a weak composition. This gives
-$$
+```math
   \binom Nj(N-j)!\binom{N-j+u-1}{u-1}
    =\frac{N!}{j!}\binom{N-j+u-1}{u-1}
-$$
+```
 completions if $N\ge j$, and zero otherwise. For $u=0$, the contribution is one if $N=j$ and zero otherwise. Let $a_{j,u}$ be the signed number of accepted relative orders, summing over the marked orders, intersections, exact rounds and constrained lengths, with the inclusion–exclusion sign $(-1)^{|I|+1}$. Then the resulting finite count formula is
-$$
+```math
   B(n)=\sum_{j=0}^6 a_{j,0}[N=j]
        + \sum_{\substack{0\le j\le \min(6,N)\\1\le u\le10}}
        a_{j,u}\frac{N!}{j!}\binom{N-j+u-1}{u-1}.
-$$
+```
 For $n\ge18$, the first sum vanishes and $N\ge j$ for every summand. Dividing by $N!$ yields a polynomial of degree at most nine. The claimed bad count has the same form: the two leading terms cancel when the proposed sortable count is subtracted from $n!$. Specifically, the proposed bad count is $(n-5)! (1594n^3-14241n^2+39809n-34236)/60$. Thus exact comparison of the two polynomials of degree at most nine, or evaluation of both at ten distinct integers at least eighteen, suffices for all larger $n$. The same table separately covers $11\le n\le17$, including the finite-support terms. The [direct stack checker](check-base.js) verifies lengths eight through ten.
 
 ## Exhaustive count and exact verification
@@ -93,10 +93,10 @@ The symbolic run examined all $11!=39{,}916{,}800$ marked orders and yielded the
 | 3 | 10 | 8,709,120 |
 
 For $N\ge7$, the sum of the table contributions divided by $N!$ is a polynomial of degree at most nine in $N$. Exact expansion gives the complement
-$$
+```math
   B(n)=\frac{(n-5)!}{60}
   \left(1594n^3-14241n^2+39809n-34236\right).
-$$
+```
 All displayed rows have $u-1\ge j$, so their binomial polynomials vanish whenever $0\le N<j$, just as the finite sum requires. The verifier also checks the boundary $11\le n\le17$ directly. Direct stack sorting gives $21{,}426$, $229{,}860$, and $2{,}561{,}292$ sortable permutations for $n=8,9,10$, respectively. An independent direct run at $n=11$ gives $30{,}291{,}408$, agreeing with the first symbolic case.
 
 Run [verify.ps1](verify.ps1) to reproduce the coefficient table and both exact checks. The [audit](AUDIT.md) records the review and distinguishes this conjecture from the neighbouring questions.

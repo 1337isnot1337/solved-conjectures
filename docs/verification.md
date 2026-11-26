@@ -1,5 +1,33 @@
 # Verification
 
+## Permutation digraph general position conjecture
+
+Run `python3 results/permutation-digraph-general-position/verify.py` to check the marker constructions and reversal geodesics by BFS. Add `--extended` for all six test pairs including word length five. [Written proof](../results/permutation-digraph-general-position/PROOF.md) holds throughout the conjectured range.
+
+## General position number of oriented trees
+
+Run `python3 results/general-position-oriented-trees/verify.py` to compare the five-state recurrence and its witnesses against exact directed-distance oracles. Add `--atlas` with NetworkX available for all orientations of the nonisomorphic trees through order nine. [Written proof](../results/general-position-oriented-trees/PROOF.md).
+
+## Mobile general position complexity
+
+Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
+
+## Misère Domination Game
+
+Run `python3 results/misere-domination-game/verify.py` for exact minimax on octal partitions, direct graph outcomes, and parameter-family witnesses. The [written proof](../results/misere-domination-game/PROOF.md) applies to every path, every cycle, and every sum of octal 0.337 heaps.
+
+## Builder–Blocker general position complexity conjecture
+
+Run `python3 results/builder-blocker-general-position-complexity/verify.py` to compare both host games with the source optimization Node Kayles games by exact minimax. Add `--atlas` with NetworkX available to include the independent graph atlas. [Written proof and scope](../results/builder-blocker-general-position-complexity/PROOF.md).
+
+## Fractional general position conjecture for square grids
+
+Run `python3 results/fractional-general-position-square-grids/verify.py --limit 110 --also 199 200` to check the rank marginals, legal mass couplings and primal longest paths in exact rational arithmetic. The [written proof](../results/fractional-general-position-square-grids/PROOF.md) treats every even and odd order.
+
+## Erdős’s pinned-distance conjecture in general position
+
+Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets.
+
 ## Cioba–Savvas shutout number conjecture
 
 Run `python3 results/cioba-savvas-shutout-number/verify.py` to check 127,850 endpoint updates for exact independence polynomials and 432 played games under the stated degree condition. The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) is independent of the finite checks.
