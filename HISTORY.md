@@ -16,6 +16,10 @@ Both general-position assertions of Conjecture 9.3 are true. A matching that avo
 
 The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Lean verification](results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
 
+## 2026-11-26 — Partial results on eleven open problems
+
+Published the complete research records from eleven open problems in the [partial-results catalogue](CONTENTS.md#partial-results-on-open-problems). They include a linear block-size multiplicity bound under abelian symmetry, an improved set-mapping upper bound, a two-occurrence obstruction for Komjáth’s problem, and proofs for specific classes in the projective rigidity and norm-coloring conjectures. The [verification record](docs/verification.md#written-results-on-eleven-open-problems) lists the exact finite checks. The Erdős–Hammer entry credits the earlier finite upper bound and identifies the new limiting-density calculations.
+
 ## 2026-11-26 — Asgarli–Ghioca–Yip blocking-pencil problem
 
 The minimum number of vertical translates of a fixed monomial graph that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).

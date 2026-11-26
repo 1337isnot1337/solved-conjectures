@@ -12,6 +12,18 @@ Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all la
 
 Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal proof and verification receipt](../results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
 
+## Written results on eleven open problems
+
+The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems) links the statements, proofs, primary sources and open cases. The following checkers reproduce finite parts of five arguments. Their conclusions and scope are described on the individual result pages.
+
+| Problem | Run from the repository root | Exact checks |
+| --- | --- | --- |
+| [Erdős–Purdy conjecture](../results/erdos-block-size-multiplicity/) | `python3 results/erdos-block-size-multiplicity/check_field.py` | All 65,536 subsets of the field of order 16, with four subplane calculations. |
+| [Erdős–Hajnal set-mapping conjecture](../results/erdos-hajnal-set-mapping/) | `python3 results/erdos-hajnal-set-mapping/check.py` | 5,484 matching requests across 1,272 eligible colorings and 3,690 circuits across 930 matrices. |
+| [Erdős–Hammer convex-subset problem](../results/erdos-hammer-838/) | `python3 results/erdos-hammer-838/check_binary.py` | 65,808 nonempty planar subsets and 43 exact probability coefficients. |
+| [Erdős’s bounded blocking-set problem](../results/erdos-bounded-blocking-set/) | `python3 results/erdos-bounded-blocking-set/check_spread.py` | All 4,161 lines of the example, plus a Pappus witness in the non-Desarguesian plane. |
+| [Gyárfás’s nearly bipartite graph conjecture](../results/gyarfas-nearly-bipartite/) | `python3 results/gyarfas-nearly-bipartite/check_grid.py` | 68 subdivisions, 408 paths and 136 forbidden parity patterns covering all switchings. |
+
 ## Asgarli–Ghioca–Yip blocking-pencil problem
 
 Run `python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py` for 266,184 shift sets over eight fields, 367 regular seed instances, 8,577 graph–line intersections and both squarefree quartic twists without rational roots over the field of order three. A second researcher checked the general proofs and the order-32 hyperplane computation. [Proof](../results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Independent review and source audit](../results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).

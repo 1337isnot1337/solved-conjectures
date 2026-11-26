@@ -30,6 +30,13 @@ jobs:
         run: |
           python3 results/fiscus-grid-game/verify_strategy.py
           python3 results/fiscus-grid-game/check_minimax.py
+      - name: Check finite cases for five open-problem results
+        run: |
+          python3 results/erdos-block-size-multiplicity/check_field.py
+          python3 results/erdos-hajnal-set-mapping/check.py
+          python3 results/erdos-hammer-838/check_binary.py
+          python3 results/erdos-bounded-blocking-set/check_spread.py
+          python3 results/gyarfas-nearly-bipartite/check_grid.py
       - name: Check exact-weight strong WOM encoding and decoding
         run: python3 results/constant-weight-strong-wom/verify.py
       - name: Check the Steiner triple system sail counts
