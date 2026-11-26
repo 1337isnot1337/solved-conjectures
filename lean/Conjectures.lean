@@ -1511,6 +1511,8 @@ import Conjectures.TomVailayaColorTrace
 import Conjectures.TomVailayaColorGluing
 import Conjectures.TomVailayaWeightedPathRows
 import Conjectures.TomVailayaPathSeries
+import Conjectures.TomVailayaTraceComparison
+import Conjectures.TomVailayaReflection
 import Conjectures.KauersKoutschanCertificate
 import Conjectures.KauersKoutschanDividedSum
 import Conjectures.KauersKoutschanFiniteRecurrence

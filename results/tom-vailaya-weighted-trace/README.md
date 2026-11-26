@@ -14,4 +14,4 @@ Replay the supplementary check from the repository root:
 
     python3 results/tom-vailaya-weighted-trace/verify.py
 
-The computation is supplementary to the internally reviewed written proof. Lean verifies the color-matrix trace, endpoint gluing product, path-edge transfer and the weighted path row and column identities. The forest-triple identification is written and external refereeing is pending.
+The computation is supplementary to the internally reviewed written proof. Lean verifies the color-matrix trace, endpoint gluing product, path-edge transfer the weighted path row and column identities, symbolic color-basis invertibility, and endpoint reflection. Lean also verifies the trace conclusion under the explicit path test agreement. The forest-triple identification is written and external refereeing is pending.
