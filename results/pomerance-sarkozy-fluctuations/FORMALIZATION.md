@@ -161,3 +161,15 @@ variables. It does not yet verify the model's joint path law or its
 arithmetic transfer.
 
 [Bounded independent array replay](verification/bounded-array-law/receipt.json)
+
+## Continuous-path tightness criterion
+
+For the [process supplement](PROCESS.md), Lean verifies a quantitative
+base-32 grid bound and its extension to continuous paths. The good
+grid events yield a uniform modulus of continuity, and the proof uses
+Arzelà–Ascoli to produce compact path sets. A uniform fourth-moment
+mesh bound and tight values at zero then imply tightness in the uniform
+topology. This is the general criterion; the full arithmetic path-law
+application and Brownian convergence are not claimed here.
+
+[Continuous-path criterion replay](verification/grid-tightness/receipt.json)
