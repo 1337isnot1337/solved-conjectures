@@ -98,3 +98,23 @@ All 24 modules passed strict Lean compilation, the all-owned audit
 per-module kernel replay. [Arrangement receipt](verification/arrangement/receipt.json).
 The open Ehrhart stratum counts and the asymptotic correction estimate
 remain outside the Lean verification. The entry stays partial.
+
+## Rational polytope input to triangulation
+
+The [rational-polytope checkpoint](../../lean/Conjectures/CyrusianKaplanRationalPolytopeCheckpoint.lean)
+proves that every nonempty admissible weak sign cell at genus one is the
+convex hull of a finite set of vertices with rational coordinates. It uses
+the actual affine rows. In a finite polyhedron the active equalities
+determine each extreme point, since a second solution to those equalities
+would give a two-sided feasible line near that point. Lean then checks
+that a rational-linear retraction of the coefficient field preserves
+the rational active equations. Finiteness and the compact convex-hull
+argument identify the exact rational polytope.
+
+All 13 modules passed strict Lean compilation,
+the all-owned axiom audit (291 declarations,
+199 theorems, 57 private,
+7 named endpoints), and stock per-module replay.
+[Rational-polytope receipt](verification/rational-polytope/receipt.json).
+No rational triangulation, ordinary-stratum count, common correction
+coefficient, or full eventual monotonicity is asserted in this checkpoint.

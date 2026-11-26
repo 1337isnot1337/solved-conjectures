@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify rational vertices of the actual ordinarization cells
+
+Lean checks that the compact weak sign cells are finite convex hulls of rational vertices. Their disjoint rational triangulation and the correction estimate remain. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the ordinarization sign arrangement and lattice
 
 Lean checks the literal disjoint strata, exact relative interiors, and primitive integer hyperplane lattices. The open Ehrhart count and asymptotic correction remain. [Scope and receipts](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
