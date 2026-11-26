@@ -1,5 +1,0 @@
-module
-
-public import Conjectures.FranklSpanFourGraphHelpers
-public import Conjectures.FranklSpanFourGraphPartition
-public import Conjectures.FranklSpanFourGraphWordRows

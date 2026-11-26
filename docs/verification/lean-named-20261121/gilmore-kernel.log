@@ -1,3 +1,0 @@
-Replaying all 1 local project modules imported by Conjectures.GilmoreCrossingNesting, including that root (prefix Conjectures)
-replaying Conjectures.GilmoreCrossingNesting
-PASS: the entire local import closure of Conjectures.GilmoreCrossingNesting completed the pinned kernel replay

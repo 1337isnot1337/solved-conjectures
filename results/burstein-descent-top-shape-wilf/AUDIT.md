@@ -1,7 +1,0 @@
-# Source and independent audit
-
-The exact statements are the direct-sum conjectures in [Burstein’s published PDF](https://dmtcs.episciences.org/en/articles/15066/download#page=15), Conjectures 16 and 17. Independent review checked the rendered direct-sum glyphs rather than relying on search OCR. The required rectangle is the entire selected submatrix; the Ferrers row numbering, separators from distinct lengths, and terminal ascent-bottom rule match the source. Conjecture 17 assumes a nonempty suffix, which the construction covers uniformly. We count the two equivalent refinements once.
-
-The review verified the self-conjugate board, the number of increasing-block traversals, the forced first two pattern entries in that block and the entire tail in any occurrence, and the resulting unique forbidden traversal for one prefix and none for the other. Literal enumeration verified both empty and nonempty suffixes through length two. An independent reviewer also obtained a different five-row witness for the nonempty suffix of length one. The source’s numerical-evidence statement cannot have tested all boards with the printed conventions; no inference about its actual test protocol is needed.
-
-[The recent ordinary-Wilf paper](https://arxiv.org/abs/2610.30975) concerns different pairs on square boards. Earlier unrefined shape-Wilf equivalence is unchanged. Exact statement, term, and author searches did not identify an earlier full counterexample; no priority or external refereeing is claimed.

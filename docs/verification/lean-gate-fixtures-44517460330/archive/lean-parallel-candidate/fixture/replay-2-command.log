@@ -1,2 +1,0 @@
-{"phase": "kernel", "modules": 7, "workers": 2, "prefixes": ["Solitaire", "Conjectures"], "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/fixture/replay-2/kernel.log"}
-{"status": "passed", "phase": "kernel", "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/fixture/replay-2/receipt.json"}
