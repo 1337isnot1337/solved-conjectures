@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Alexandersson’s graphical dist conjecture
+
+Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Lean root and graph theorems](../lean/Conjectures/GraphicalDistTheorems.lean) · [Research receipt](verification/lean-graphical-dist-20261126/receipt.json).
+
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Prism theorem](../lean/Conjectures/MonophonicPrismTheorems.lean) · [Research receipt](verification/lean-monophonic-prism-20261126/receipt.json).
