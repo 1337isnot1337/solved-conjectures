@@ -77,6 +77,27 @@ Both deficits are already positive at $n=100000$. Thus the exact
 error-free lower estimates at dilations 2 and 3 fail. The tests give
 no bound on the errors beyond the indicated ranges.
 
+[A second exact sieve](phase_probe.cpp) extends the cutoff to $10^8$.
+It uses the rational phase $350477575/856371966$ from [Gibbs and
+McCranie](https://vixra.org/pdf/1711.0134v1.pdf) to partition the two
+summands. For a target in the open middle third, every representation
+has at least one summand outside that band, since the band is sum-free.
+For every other target the sieve checks all possible smaller summands
+until two representations have been found. Both paths count unordered
+pairs of distinct terms. The partition is exact for any rational phase
+and does not require a phase-confinement hypothesis. A plain sum sieve
+agrees bit for bit through one million.
+
+The extended run obtains $A(10^8)=7399353$ and verifies the same
+square-root inequalities through $50000000$ for dilation 2 and
+$33333333$ for dilation 3. The exact maxima in the table above remain
+unchanged over those larger ranges.
+
+```sh
+c++ -std=c++20 -O3 phase_probe.cpp -o /tmp/ulam-phase-probe
+/tmp/ulam-phase-probe
+```
+
 ## Small-summand recurrence test
 
 The same replay counts representations with a summand below 4096 for

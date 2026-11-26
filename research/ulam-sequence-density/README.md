@@ -93,6 +93,11 @@ sufficient one-sided inequalities for a positive natural density. The
 all-scale inequalities remain open. The same probe measures two ways in
 which the finite set of small shifts fails to decide the greedy recurrence.
 
+[Phase confinement](phase-confinement.md) proves positive natural
+density under exact eventual confinement to a sum-free phase band with
+rational endpoints. It also checks how a single phase-boundary
+correction can change a truncated model's limiting density.
+
 ## Source audit
 
 - [Erdős Problem 342](https://www.erdosproblems.com/342) includes a zero-density
