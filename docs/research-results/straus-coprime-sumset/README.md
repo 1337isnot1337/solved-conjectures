@@ -50,7 +50,7 @@ When $\log(2M)\le K$, an additional column can be inserted with the updated heig
 
 Thus $\log(2(M+Q))\le K^4$ for large $K$. This step only needs $G$ to omit a residue class at every prime, so it applies also to the following initialization.
 
-Choose $K_0$ sufficiently large for the row lemma at $r=2$. Take $H=\{1\}$ and take as rows $K_0$ numbers $p-1$ with distinct primes $K_0^2<p\le2K_0^2$. The prime number theorem supplies them. For primes $q\le K_0$ the rows omit $-1\pmod q$, and for larger $q$ there are fewer rows than residues. The first column step therefore gives two columns and satisfies (1).
+Choose $K_0$ sufficiently large for the row lemma at $r=2$. Take $`H=\{1\}`$ and take as rows $K_0$ numbers $p-1$ with distinct primes $K_0^2<p\le2K_0^2$. The prime number theorem supplies them. For primes $q\le K_0$ the rows omit $-1\pmod q$, and for larger $q$ there are fewer rows than residues. The first column step therefore gives two columns and satisfies (1).
 
 At each fixed column count $r$, insert rows using the row lemma until $K$ is sufficiently large for its threshold at $r+1$, $K>r$, and $\log(2M)\le K$. All three conditions can be reached: the largest column stays fixed throughout this stage, and all newly added rows with insertion index $k$ are at most $2e^{\sqrt k}$. Add a column and repeat. One can require at least one new row in each stage. Since the bounds do not depend on the specific residue classes, the thresholds for later column counts may be chosen before constructing the columns. Both limiting sets are infinite. Any two positions in the limit occur together at a finite stage, hence their sums are coprime.
 

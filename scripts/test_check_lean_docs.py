@@ -33,6 +33,16 @@ class LeanDocsTests(unittest.TestCase):
         self.assertFalse(self.check(r'The delimiter `\(` is literal here.' + "\n"))
         self.assertFalse(self.check("Given $`x>0`$, ...\n"))
 
+    def test_github_math_in_proofs_and_supporting_pages(self):
+        for path in ("results/example/PROOF.md", "results/example/README.md", "docs/audit.md"):
+            for text in (r"Let \(n\) be uniform.", "\\[\nx^2\n\\]\n"):
+                with self.subTest(path=path, text=text):
+                    self.assertTrue(self.check(text, path))
+            valid = "Let $`n`$ be uniform.\n\n```math\nx^2\\tag{1}\n```\n"
+            self.assertFalse(self.check(valid, path))
+            examples = r"The literal `\(x\)` appears in this source." + "\n\n```tex\n\\[x\\]\n```\n"
+            self.assertFalse(self.check(examples, path))
+
     def test_relative_lean_source_link(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)

@@ -16,7 +16,7 @@ $\mathcal A$ of natural density zero,
 
 In particular, $r>w^3$ implies $r>w$ when $w\ge1$, so
 the displayed primes are the largest three and are coprime
-to $w$. The result adds a family of density about $1.50\%$
+to $w$. The result adds a family of density about $`1.50\%`$
 to the previously covered inputs.
 
 ## Reductions
@@ -129,8 +129,7 @@ $s(qrw)=s(w)qr+\sigma(w)(q+r+1)$ gives
 
 Comparing this congruence with the corresponding congruence
 for $m'$ yields
-$w\sigma(w)s(w')(q+r+1)\equiv
- w'\sigma(w')s(w)(q'+r'+1)\pmod h$.
+$`w\sigma(w)s(w')(q+r+1)\equiv w'\sigma(w')s(w)(q'+r'+1)\pmod h`$.
 Both sides are $O(X^{v+3c+O(\xi)})$, whereas
 $h\ge X^{v+b-\mu+O(\xi)}$. Since $b>3c$, take $\mu,\xi$
 small enough that the congruence is an equality. Define
@@ -314,4 +313,4 @@ away from that strip, the integrand is bounded and the
 other boundary strips cost a vanishing proportion. Summing
 the dyadic intervals gives the natural density. Taken
 together, the proved families have natural density
-approximately $53.46\%$.
+approximately $`53.46\%`$.

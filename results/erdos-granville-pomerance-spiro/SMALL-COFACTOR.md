@@ -62,8 +62,7 @@ $\gcd(D/g,L/g)=G/g$, we have
 ```
 
 The Weil bound applied separately to these parts gives
-$|T_L(H,J)|\ll_\epsilon L^{1/2+\epsilon}
-\sqrt{G\gcd(H,J,L)}$. For $J=0$, the Kloosterman sums
+$`|T_L(H,J)|\ll_\epsilon L^{1/2+\epsilon} \sqrt{G\gcd(H,J,L)}`$. For $J=0$, the Kloosterman sums
 become Ramanujan sums, each of absolute value at most
 $\gcd(H,L/g)$. This gives
 $|T_L(H,0)|\ll_\epsilon L^\epsilon G\gcd(H,L)$.
@@ -94,8 +93,8 @@ the other one uniquely. Combining all prime powers gives
 ```math
  \begin{aligned}
  |S_M(h,j)| &\ll_\epsilon M^\epsilon
-    \sqrt{M\gcd(A,M)\gcd(D,M)\gcd(h,j,M)},\\
- |S_M(h,0)| &\ll_\epsilon M^\epsilon\gcd(D,M)\gcd(h,M).
+    \sqrt{M\gcd(A,M)\gcd(D,M)\gcd(h,j,M)},
+ \\ |S_M(h,0)| &\ll_\epsilon M^\epsilon\gcd(D,M)\gcd(h,M).
  \end{aligned}
 ```
 
@@ -252,8 +251,8 @@ and
 ```math
  g(\pi)\ge
  \begin{cases}
-   3/\pi-O(1/\pi^2),&\pi\nmid B,\\
-   2/\pi-O(1/\pi^2),&\pi\mid B .
+   3/\pi-O(1/\pi^2),&\pi\nmid B,
+   \\ 2/\pi-O(1/\pi^2),&\pi\mid B .
  \end{cases}
 ```
 
@@ -312,8 +311,8 @@ are coprime. Even over all integers $q$ in the dyadic interval,
  \sum_q \sqrt{J_q G_q}
   &\le \sum_{\substack{g\mid A,\ h\mid\Delta\\\gcd(g,h)=1}}
         \sqrt{gh}\,\#\{q:gh\mid M\}
-   \ll (Q+\sqrt{A|\Delta|})X^{o(1)},\\
- \sum_q G_q
+   \ll (Q+\sqrt{A|\Delta|})X^{o(1)},
+ \\ \sum_q G_q
   &\le \sum_{h\mid\Delta}h\,\#\{q:h\mid M\}
    \ll (Q+|\Delta|)X^{o(1)}.
  \end{aligned}
@@ -366,8 +365,8 @@ over $q$ costs at most
  \frac{Xd\log Y}{\ell\ell'(\log X)^4}\,
  H(\ell,\ell'),\qquad
  H(\ell,\ell')=
- \prod_{\substack{\pi\mid\Delta,\ \pi>Y\\
-                   \pi\nmid A t'B\sigma(w)}}
+ \prod_{\substack{\pi\mid\Delta,\ \pi>Y
+                   \\ \pi\nmid A t'B\sigma(w)}}
         \left(1-\frac1{\pi}\right)^{-1}.
 ```
 
@@ -462,7 +461,7 @@ The union $\mathcal B\cup\mathcal C$ has density
  (\log 2)^2+\int_0^{1/7}\frac{-\log(1-2u)}{1-u}\,du,
 ```
 
-approximately $50.56\%$.
+approximately $`50.56\%`$.
 
 ## Refinement using the cofactor and prime exponents
 
@@ -480,7 +479,7 @@ $v=\log q/\log n$ in the region
 **Corollary.** For every natural density-zero set $\mathcal A$,
 the inputs in $\mathcal D$ with $s(n)\in\mathcal A$ have
 density zero. The union $\mathcal B\cup\mathcal D$ has
-natural density approximately $51.96\%$.
+natural density approximately $`51.96\%`$.
 
 It suffices to prove the corollary on closed rectangles
 strictly inside the region. The boundaries have density zero

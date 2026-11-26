@@ -71,9 +71,9 @@ For $`t>0`$, substitute $`u=t s^{-1/\alpha}`$ and integrate by parts:
 ```math
 \begin{aligned}
 \int_0^\infty(1-e^{-t s^{-1/\alpha}})\,ds
-&=\alpha t^\alpha\int_0^\infty(1-e^{-u})u^{-\alpha-1}\,du\\
-&=t^\alpha\int_0^\infty e^{-u}u^{-\alpha}\,du\\
-&=\Gamma(1-\alpha)t^\alpha.
+&=\alpha t^\alpha\int_0^\infty(1-e^{-u})u^{-\alpha-1}\,du
+\\ &=t^\alpha\int_0^\infty e^{-u}u^{-\alpha}\,du
+\\ &=\Gamma(1-\alpha)t^\alpha.
 \end{aligned}
 ```
 
@@ -136,8 +136,8 @@ The Laplace transform of $`M_\alpha`$ is $`E_\alpha(-x)`$. For $`x>0`$, the coup
 
 ```math
 \frac{1}{1+x}
-<E_\alpha\left(-\frac{x}{\Gamma(1-\alpha)}\right)
-<E_\beta\left(-\frac{x}{\Gamma(1-\beta)}\right)
+\lt E_\alpha\left(-\frac{x}{\Gamma(1-\alpha)}\right)
+\lt E_\beta\left(-\frac{x}{\Gamma(1-\beta)}\right)
 <1
 \qquad(0<\alpha<\beta<1).
 ```

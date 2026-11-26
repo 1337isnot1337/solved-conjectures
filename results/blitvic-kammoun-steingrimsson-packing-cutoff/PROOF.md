@@ -39,13 +39,13 @@ The packing count equals the number of linear extensions of the poset that impos
 
 Write $`a,b,c`$ for the numbers of letters of each class in one window. For $`P_L`$ they are $`(L+1,L,L)`$, and for $`Q_L`$ they are $`(L,L+1,L)`$. The entire host consists of three chains
 ```math
-A_1<\cdots<A_{a+j-1},\quad
-B_1<\cdots<B_{b+j-1},\quad
-C_1<\cdots<C_{c+j-1}.
+A_1<\cdots\lt A_{a+j-1},\quad
+B_1<\cdots\lt B_{b+j-1},\quad
+C_1<\cdots\lt C_{c+j-1}.
 ```
 All their adjacent comparisons occur in some window since $`a,b,c\ge2`$. The $`i`$th window, $`1\le i\le j`$, contains the consecutive indices $`i,\ldots,i+a-1`$ of $`A`$, $`i,\ldots,i+b-1`$ of $`B`$, and $`i,\ldots,i+c-1`$ of $`C`$. Its cross-class comparisons are equivalent, given the three chains, to
 ```math
-A_{a+i-1}<B_i,\qquad B_{b+i-1}<C_i\quad(1\le i\le j).
+A_{a+i-1}\lt B_i,\qquad B_{b+i-1}\lt C_i\quad(1\le i\le j).
 ```
 Indeed these inequalities force separation of $`A`$ from $`B`$ and $`B`$ from $`C`$ within the window, and then separation of $`A`$ from $`C`$. Conversely they are among the prescribed window comparisons. This gives exactly the packing poset; no comparisons are imposed between different windows other than the consequences of these constraints.
 
@@ -57,9 +57,9 @@ The remaining constraints consist of two Catalan blocks and, if present, the int
 ```math
 \begin{array}{ll}
 X:\ (A_a,\ldots,A_{a+j-1}),\ (B_1,\ldots,B_j),
- & A_{a+i-1}<B_i;\\
-Y:\ (B_b,\ldots,B_{b+j-1}),\ (C_1,\ldots,C_j),
- & B_{b+i-1}<C_i .
+ & A_{a+i-1}\lt B_i;
+\\ Y:\ (B_b,\ldots,B_{b+j-1}),\ (C_1,\ldots,C_j),
+ & B_{b+i-1}\lt C_i .
 \end{array}
 ```
 Each block consists of two increasing chains of $`j`$ vertices with the $`i`$th vertex of the first required before the $`i`$th vertex of the second. Its extension words are the ballot words with equal letter counts, and hence number $`C_j`$.

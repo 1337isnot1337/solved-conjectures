@@ -1,6 +1,6 @@
 # Zeng’s unscaled interlacing question
 
-Fix $0<q<1$ and $\theta>-1$, and put $c=q^{\theta+1}$. Write $(a;q)_k=\prod_{j=0}^{k-1}(1-aq^j)$ and $b_k=(q;q)_k(c;q)_k$. Jiang Zeng's original row polynomials are
+Fix $0<q<1$ and $\theta>-1$, and put $c=q^{\theta+1}$. Write $`(a;q)_k=\prod_{j=0}^{k-1}(1-aq^j)`$ and $b_k=(q;q)_k(c;q)_k$. Jiang Zeng's original row polynomials are
 
 ```math
 P_n(t)=\sum_{k=0}^{n}q^{k(k-1)}\frac{b_n}{b_k b_{n-k}}t^k.
@@ -12,7 +12,7 @@ Zeng proves strict interlacing after replacing $P_n(t)$ by $P_n(q^{-(n-1)}t)$. H
 **Theorem.** Write the roots of $P_n$ as $-r_{n,1},\ldots,-r_{n,n}$ in order of increasing positive magnitude. For every $n\ge1$ and $1\le i\le n$,
 
 ```math
- r_{n+1,i}<r_{n,i}<q^2r_{n+1,i+1}.
+ r_{n+1,i}\lt r_{n,i}\lt q^2r_{n+1,i+1}.
  \tag{2}
 ```
 
@@ -22,7 +22,7 @@ In particular each zero of the original $P_n$ lies strictly between successive z
 
 For a polynomial $p$ with positive constant and leading coefficient, call its positive root magnitudes $0<r_1<\cdots<r_d$ strictly $q$-separated when $r_i/q<r_{i+1}$. Weak separation allows equality in this last inequality. Throughout this proof the polynomials in question have exactly the indicated negative roots. Write $(D_h p)(t)=p(ht)$.
 
-If $p$ has strictly $q$-separated roots and $0<a<1$, the $i$th root magnitude of $(I-aD_q)p$ lies in
+If $p$ has strictly $q$-separated roots and $0<a<1$, the $`i`$th root magnitude of $(I-aD_q)p$ lies in
 
 ```math
 (r_{i-1}/q,r_i),\qquad r_0=0.
@@ -31,20 +31,20 @@ If $p$ has strictly $q$-separated roots and $0<a<1$, the $i$th root magnitude of
 
 At magnitude $r_i$ its sign is that of $-p(-qr_i)$, namely $(-1)^i$. At magnitude $r_{i-1}/q$ for $i>1$ its sign is that of $p(-r_{i-1}/q)$, namely $(-1)^{i-1}$. At zero the value is positive. The disjoint intervals account for the full degree. In particular the result is strictly $q$-separated.
 
-For $0<a<q^d$, the $i$th root magnitude of $(I-aD_{1/q})p$ lies in
+For $0<a<q^d$, the $`i`$th root magnitude of $(I-aD_{1/q})p$ lies in
 
 ```math
-(r_i,qr_{i+1})\quad(i<d),\qquad(r_d,\infty)\quad(i=d).
+(r_i,qr_{i+1})\quad(i\lt d),\qquad(r_d,\infty)\quad(i=d).
 \tag{4}
 ```
 
 At $r_i$ the sign is that of $-p(-r_i/q)$, namely $(-1)^{i+1}$. At $qr_{i+1}$ the sign is that of $p(-qr_{i+1})$, namely $(-1)^i$. The leading coefficient is positive, giving the last root. If $a=q^d$, the leading term cancels and the first $d-1$ intervals in (4) already supply the full set of roots. In both cases the resulting roots are strictly $q$-separated and each root shifts to a strictly larger magnitude than the old root at the same index.
 
-We will also need (3) when the initial separation is weak. One can perturb the root magnitudes to strictly separated ones and pass to the limit. The new $i$th root is then in $[r_{i-1}/q,r_i]$. Whenever these two endpoints differ, the same sign calculation gives strict inclusion, including for the first root. Thus the new roots remain weakly separated. The first gap becomes strict, since the first root moves below $r_1$ and the second is at least $r_1/q$. More generally, if the first $h$ gaps were strict, every new root through index $h+1$ is strictly below its old magnitude, while the following new root is at least that old magnitude divided by $q$. The first $\min(h+1,d-1)$ new gaps are therefore strict. At most $d$ successive operators of form (3), with parameters in $(0,1)$, turn weak separation into strict separation.
+We will also need (3) when the initial separation is weak. One can perturb the root magnitudes to strictly separated ones and pass to the limit. The new $`i`$th root is then in $[r_{i-1}/q,r_i]$. Whenever these two endpoints differ, the same sign calculation gives strict inclusion, including for the first root. Thus the new roots remain weakly separated. The first gap becomes strict, since the first root moves below $r_1$ and the second is at least $r_1/q$. More generally, if the first $h$ gaps were strict, every new root through index $h+1$ is strictly below its old magnitude, while the following new root is at least that old magnitude divided by $q$. The first $\min(h+1,d-1)$ new gaps are therefore strict. At most $d$ successive operators of form (3), with parameters in $(0,1)$, turn weak separation into strict separation.
 
 ## Separation of the source polynomials
 
-Write the Gaussian binomial coefficient as $G_{n,k}=(q;q)_n/((q;q)_k(q;q)_{n-k})$ and form
+Write the Gaussian binomial coefficient as $`G_{n,k}=(q;q)_n/((q;q)_k(q;q)_{n-k})`$ and form
 
 ```math
 U_n(t)=\sum_{k=0}^n q^{k(k-1)}G_{n,k} t^k.

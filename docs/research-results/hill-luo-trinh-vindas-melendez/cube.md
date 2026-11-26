@@ -36,7 +36,7 @@ For a down-closed compact convex set $V$, a fiber parallel to a coordinate axis 
 
 
 ```math
-C=2+\left\lceil\max_{1\le i\le n}\ \max_{0\le j<i}\frac{|a_{ij}|}{\binom ni}\right\rceil.
+C=2+\left\lceil\max_{1\le i\le n}\ \max_{0\le j\lt i}\frac{|a_{ij}|}{\binom ni}\right\rceil.
 ```
 
 

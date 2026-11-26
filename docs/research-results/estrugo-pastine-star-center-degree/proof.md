@@ -19,7 +19,7 @@ An independent set that uses exactly $U$ on side $B$ has size at most $a-|N(U)|+
 Consequently $A$ is the unique maximum independent set. The independent sets of size $a-2$ are exactly
 
 - the sets obtained by deleting two vertices from $A$, and
-- the $6d$ sets $(A\setminus N(b))\cup\{b\}$, one for each level-three vertex $b$.
+- the $6d$ sets $`(A\setminus N(b))\cup\{b\}`$, one for each level-three vertex $b$.
 
 In the first class each vertex of $A$ occurs $\binom{a-1}{2}$ times. All $6d$ additional sets contain $x$. Each level-two vertex misses two additional sets, and each leaf misses one. Every level-three vertex occurs in exactly one set and every level-one vertex in zero. Hence $x$ is the unique maximizer. Its excess degree divided by the order is $(d-1)/(22d+1)$, which tends to $1/22$. This proves the theorem.
 

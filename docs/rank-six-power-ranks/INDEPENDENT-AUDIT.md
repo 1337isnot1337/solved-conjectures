@@ -12,7 +12,7 @@ For a nonzero polynomial $p(n)$ and $\lambda\ne0$, the finite-difference operato
 
 ## Independent coefficient partition
 
-Write $S(t,x)=t(1+x^3)+x(1-x^3)$. After raising to exponent $M$, the coefficient of $t^{M-r}x^{r+3j}$ is $\binom Mr[z^j](1+z)^{M-r}(1-z)^r$. This equals $\binom Mj K_r(j;M)$, where $K_r=[z^r](1+z)^{M-j}(1-z)^j$. Different admissible $r$ give different degrees in $t$, preventing cross-degree cancellation.
+Write $S(t,x)=t(1+x^3)+x(1-x^3)$. After raising to exponent $M$, the coefficient of $t^{M-r}x^{r+3j}$ is $`\binom Mr[z^j](1+z)^{M-r}(1-z)^r`$. This equals $\binom Mj K_r(j;M)$, where $`K_r=[z^r](1+z)^{M-j}(1-z)^j`$. Different admissible $r$ give different degrees in $t$, preventing cross-degree cancellation.
 
 For $k\le3M$, the first admissible $r$ is $k\bmod3$; for $3M<k\le4M$, it is $k-3M$. Assuming no zero coefficient, the sum of the $\deg P_{M,k}+1$ values is
 

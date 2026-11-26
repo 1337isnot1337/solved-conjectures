@@ -16,7 +16,7 @@ Set $T(x)=(1-A(x))/C(x)$, $t_c=T(r)$, and $b=\sqrt{2/T''(r)}$. There exist $\eta
 
 
 ```math
-x_{n+1,k+1}<x_{n,k}<x_{n+1,k}<t_c<0\qquad(1\le k\le\lfloor\eta_j n\rfloor).
+x_{n+1,k+1}\lt x_{n,k}\lt x_{n+1,k}\lt t_c<0\qquad(1\le k\le\lfloor\eta_j n\rfloor).
 ```
 
 
@@ -43,7 +43,7 @@ B=(2-z^{j-1}/(j-1)!)e^z-2P_{j-2}(z),\qquad
 
 The latter function decreases strictly from $1$ to $-1$ with negative derivative. Hence $r$ is the unique minimum of $T$ on the positive real axis, and $T''(r)>0$. The unique positive solution $\alpha$ of $A(\alpha)=1$ lies below $r$, since $B(\alpha)=A'(\alpha)C(\alpha)>0$. In particular $t_c<0$.
 
-For $\alpha\le x\le r$, the function $|1-A(z)|$ on $|z|=x$ has its unique minimum at $z=x$. For $j=2$ this follows from $A(z)=z$. For $j\ge3$, if $V$ is uniform on $[0,1]$, then $V^{1/(j-1)}\ge V^{1/2}$. Taking expectations of $e^{-xV^{1/(j-1)}}$ in the critical-point equation gives $r\le r_3<7/6$. To verify the last bound, put $y=7/6$. Then $4(1-(1+y)e^{-y})/y^2<1$ follows from $e^y<13/4$ (sum terms through degree five and bound the tail by $(y^6/6!)/(1-y/7)$). Also $y^2<2\log 2$ follows from $\log 2>2(1/3+1/81)$. With $u_m=x^m/m!$, expansion of the square yields
+For $\alpha\le x\le r$, the function $|1-A(z)|$ on $|z|=x$ has its unique minimum at $z=x$. For $j=2$ this follows from $A(z)=z$. For $j\ge3$, if $V$ is uniform on $[0,1]$, then $V^{1/(j-1)}\ge V^{1/2}$. Taking expectations of $e^{-xV^{1/(j-1)}}$ in the critical-point equation gives $r\le r_3<7/6$. To verify the last bound, put $y=7/6$. Then $4(1-(1+y)e^{-y})/y^2<1$ follows from $e^y<13/4$ (sum terms through degree five and bound the tail by $`(y^6/6!)/(1-y/7)`$). Also $y^2<2\log 2$ follows from $\log 2>2(1/3+1/81)$. With $u_m=x^m/m!$, expansion of the square yields
 
 
 ```math
@@ -83,7 +83,7 @@ For $t=t_c-h^2$, $0<h\le h_0$, analytic inversion gives conjugate poles $z_+(h)=
 
 Uniformly on $[0,h_0]$, $E_n=O(h\sigma^n)$ and $E_n'=O((n+1)\sigma^n)$, by the fixed-contour bounds and differentiation of the normalization. Here $\psi_n'\ge c n$ for large $n$. Outside the windows $|\psi_n-k\pi|<\pi/6$ the sine is bounded away from zero. Inside each full window, the derivative of the sine has constant sign and magnitude at least $cn\sqrt3/2$, hence exactly one simple zero occurs, with $\psi_n=k\pi+O(\sigma^n)$. The half-window at zero has only the artificial zero from the prefactor $h$. Each assertion follows also at the window endpoints from the opposite signs there.
 
-Choose $0<\eta_j<\phi(h_0)/(2\pi)$. The windows through $\lfloor\eta_j n\rfloor+2$ are full for large $n$. At the $k$th true zero, $\psi_{n+1}=\psi_n+\phi(h)$, where $c'/n\le\phi(h)<\pi/2$: the lower bound follows from $k\ge1$, bounded $\delta'$ and $\phi'(0)>0$. This phase lies strictly after the $k$th zero and before the $(k+1)$st zero of row $n+1$, since the exponential phase errors are smaller than $c'/n$. The map $h\mapsto t_c-h^2$ reverses the ordering, yielding the claimed inequalities. For fixed $k$, $\phi(h)=(b/r)h+O(h^2)$ and $\delta(h)=O(h)$ give $h=k\pi r/(bn)+O(n^{-2})$. Squaring gives the stated edge spacing.
+Choose $0<\eta_j<\phi(h_0)/(2\pi)$. The windows through $\lfloor\eta_j n\rfloor+2$ are full for large $n$. At the $`k`$th true zero, $\psi_{n+1}=\psi_n+\phi(h)$, where $c'/n\le\phi(h)<\pi/2$: the lower bound follows from $k\ge1$, bounded $\delta'$ and $\phi'(0)>0$. This phase lies strictly after the $`k`$th zero and before the $`(k+1)`$st zero of row $n+1$, since the exponential phase errors are smaller than $c'/n$. The map $h\mapsto t_c-h^2$ reverses the ordering, yielding the claimed inequalities. For fixed $`k`$, $\phi(h)=(b/r)h+O(h^2)$ and $\delta(h)=O(h)$ give $h=k\pi r/(bn)+O(n^{-2})$. Squaring gives the stated edge spacing.
 
 ## Relation to the literature
 

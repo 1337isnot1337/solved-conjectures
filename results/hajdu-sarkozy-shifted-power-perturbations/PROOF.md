@@ -1,13 +1,13 @@
 # Hajdu–Sárközy’s multiplicative perturbation conjecture
 
 **Result.** Let $k\ge2$ be an integer and $c\ne0$ an integer. Write
-$P=\{m^k+c:m\ge1\}\cap\mathbb N$, where $\mathbb N$ denotes the positive
+$`P=\{m^k+c:m\ge1\}\cap\mathbb N`$, where $\mathbb N$ denotes the positive
 integers. If $R\subseteq\mathbb N$ satisfies
 ```math
 |(R\triangle P)\cap[1,X]|=o(X^{1/k}),
 ```
 then neither $R$ nor any finite modification of $R$ is a product set
-$AB=\{ab:a\in A,\ b\in B\}$ of two subsets of $\mathbb N$ each having
+$`AB=\{ab:a\in A,\ b\in B\}`$ of two subsets of $\mathbb N$ each having
 at least two elements. In particular this proves the full original
 conjecture, including $k=2$.
 
@@ -30,7 +30,7 @@ p^k-q^k
 =-c(a'-a)(b'-b).
 ```
 In particular, $p\ne q$. With $ab\ge2|c|$, both products $p,q$ are
-at least $(ab-c)^{2/k}$. Factoring the difference of $k$th powers,
+at least $(ab-c)^{2/k}$. Factoring the difference of $`k`$th powers,
 and using $ab-c\ge ab/2\ge1$, gives
 ```math
 |p^k-q^k|
@@ -40,7 +40,7 @@ and using $ab-c\ge ab/2\ge1$, gives
 ```
 Therefore such a four-cycle is impossible if
 ```math
-|c|(a'-a)(b'-b)<ab. \tag{1}
+|c|(a'-a)(b'-b)\lt ab. \tag{1}
 ```
 
 Two consequences will be used.
@@ -87,8 +87,8 @@ and $n_j=O(\rho^{\alpha j})$. Thus
 \begin{aligned}
 \sum_{i=0}^{\lfloor L/2\rfloor}\sum_{j=i}^{L-i}m_i\sqrt{n_j}
 &\ll \sum_{i=0}^{\lfloor L/2\rfloor}
-       \rho^{\alpha i}\rho^{\alpha(L-i)/2}\\
-&\ll \rho^{3\alpha L/4}=O(X^{3\alpha/4}).
+       \rho^{\alpha i}\rho^{\alpha(L-i)/2}
+\\ &\ll \rho^{3\alpha L/4}=O(X^{3\alpha/4}).
 \end{aligned}
 ```
 For the linear term, the inner sum over $j$ is at most

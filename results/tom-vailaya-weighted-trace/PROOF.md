@@ -20,7 +20,7 @@ The one-vertex graph gives the identity operator. If $`H+J`$ glues the last vert
 
 For $`1\le j\le N`$, put
 ```math
- f_j(b)=[z^{j-1}]\,x_b\prod_{c<b}(1+qzx_c)\prod_{c>b}(1+zx_c).
+ f_j(b)=[z^{j-1}]\,x_b\prod_{c\lt b}(1+qzx_c)\prod_{c>b}(1+zx_c).
 ```
 Let $`B`$ have columns $`f_j`$. At $`q=1`$, the $`b`$-entries $`x_b e_{j-1}(x\setminus x_b)`$ are evaluations of a common degree-$`j`$ polynomial in $`x_b`$, with zero constant term and leading coefficient $`(-1)^{j-1}`$, since
 ```math

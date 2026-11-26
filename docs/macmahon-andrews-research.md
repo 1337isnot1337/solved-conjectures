@@ -15,7 +15,7 @@ Let $A$ be any increasing sequence of positive integers such that all sufficient
 More locally, uniformly for $X\ge Y\ge2$,
 
 ```math
-\sum_{a\in A,\ \sqrt Y<a\le X}\frac1a
+\sum_{a\in A,\ \sqrt Y\lt a\le X}\frac1a
 \ \ge\ \frac{\log\log X-\log\log Y}{\log 2}
         -O\left(\frac1{\log Y}\right).
 \tag{2}

@@ -94,7 +94,7 @@ Then $s(n)^M=\sum_k P_{M,k}(n)(2^k)^n$. The numbers $2^k$ are distinct,
 so (2) computes $R(M)$ by adding $\deg P_{M,k}+1$ over its nonzero
 polynomials.
 
-Choosing $r$ copies of $x(1-x^3)$ in the expansion yields
+Choosing $`r`$ copies of $x(1-x^3)$ in the expansion yields
 
 ```math
 \binom Mr t^{M-r}x^r(1+x^3)^{M-r}(1-x^3)^r. \tag{3}
@@ -106,8 +106,8 @@ It contributes to $P_{M,k}$ precisely when
 k=r+3j,\qquad 0\le r\le M,\quad 0\le j\le M. \tag{4}
 ```
 
-Different $r$ produce different powers of $t$, so cancellation between
-different $r$ cannot occur.
+Different $`r`$ produce different powers of $t$, so cancellation between
+different $`r`$ cannot occur.
 
 Define
 
@@ -123,8 +123,7 @@ A binomial-coefficient identity gives
 ```
 
 Indeed, expand both sides and use
-$\binom Mr\binom r\ell\binom{M-r}{j-\ell}
-=\binom Mj\binom j\ell\binom{M-j}{r-\ell}$ term by term.
+$`\binom Mr\binom r\ell\binom{M-r}{j-\ell} =\binom Mj\binom j\ell\binom{M-j}{r-\ell}`$ term by term.
 Thus the coefficient of $t^{M-r}$ in $P_{M,k}$ is
 $\binom Mj K_r(j;M)$ when (4) holds.
 
@@ -152,12 +151,12 @@ These are exact polynomial identities, not asymptotic estimates.
 
 ## 3. The initial degree sum
 
-For $0\le k\le3M$, the least admissible $r$ in (4) is the residue
-$r_0\in\{0,1,2\}$ of $k$ modulo three. Its corresponding $j$ is
-$j_0=(k-r_0)/3$. For $3M<k\le4M$, the least admissible $r$ is
+For $0\le k\le3M$, the least admissible $`r`$ in (4) is the residue
+$`r_0\in\{0,1,2\}`$ of $k$ modulo three. Its corresponding $j$ is
+$j_0=(k-r_0)/3$. For $3M<k\le4M$, the least admissible $`r`$ is
 $r_0=k-3M$, with $j_0=M$.
 
-If these least-$r$ coefficients were all nonzero, their contributions to rank
+If these least-$`r`$ coefficients were all nonzero, their contributions to rank
 would be as follows.
 
 | Exponents $k$ | Count | Rank contribution for each $k$ |
@@ -183,8 +182,7 @@ We next locate every actual loss from this sum.
 For $r_0=0$, (5) uses $K_0=1$, so there is no cancellation.
 
 For $k=3M+r_0>3M$, the coefficient is
-$\binom M{r_0}[z^M](1+z)^{M-r_0}(1-z)^{r_0}
-=\binom M{r_0}(-1)^{r_0}$, which is nonzero. There is no loss in the
+$`\binom M{r_0}[z^M](1+z)^{M-r_0}(1-z)^{r_0} =\binom M{r_0}(-1)^{r_0}`$, which is nonzero. There is no loss in the
 upper tail, including $k=4M$.
 
 ### Residue one
@@ -202,7 +200,7 @@ K_4(M/2-1;M)=\frac{(M-2)(M-8)}8.
 
 This is nonzero for even $M\ge50$. The degree decreases from $M-1$
 to $M-4$, so the rank contribution loses exactly three. There are no
-admissible degrees between these because $r$ must remain in its residue
+admissible degrees between these because $`r`$ must remain in its residue
 class modulo three.
 
 ### Residue two
@@ -259,7 +257,7 @@ $q>0$ and threshold $N$, choose $m$ so large that $m^2\ge N$ and
 $2m+1>q$. Then $m^2$ is a square but
 
 ```math
-m^2<m^2+q<(m+1)^2,
+m^2\lt m^2+q<(m+1)^2,
 ```
 
 so $m^2+q$ is not a square. This contradicts period $q$. Therefore

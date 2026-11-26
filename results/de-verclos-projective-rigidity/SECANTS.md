@@ -10,7 +10,7 @@ An affine change puts $`u=(-1,0)`$ and $`v=(1,0)`$. Discard $`y=0`$ and send $`(
 
 ## From order types to a correspondence
 
-Let $`\mu,\nu`$ be Borel probabilities on the plane that vanish on lines, with identical order-type laws at every finite sample size. Write $`E=\operatorname{supp}\mu`$. Embed the target plane in the unit sphere by $`j(s,t)=(s,t,1)/\|(s,t,1)\|`$. Its closure is the closed upper hemisphere $`H`$. Write $`[x_1x_2x_3]`$ for the signed determinant of the affine homogeneous source points, and $`\det(y_1,y_2,y_3)`$ for the determinant of target unit vectors. There is a closed relation $`R\subset E\times H`$ projecting onto $`E`$, carrying a coupling of $`\mu`$ and $`j_*\nu`$, such that for any three of its pairs
+Let $`\mu,\nu`$ be Borel probabilities on the plane that vanish on lines, with identical order-type laws at every finite sample size. Write $`E=\mathop{\mathrm{supp}}\mu`$. Embed the target plane in the unit sphere by $`j(s,t)=(s,t,1)/\|(s,t,1)\|`$. Its closure is the closed upper hemisphere $`H`$. Write $`[x_1x_2x_3]`$ for the signed determinant of the affine homogeneous source points, and $`\det(y_1,y_2,y_3)`$ for the determinant of target unit vectors. There is a closed relation $`R\subset E\times H`$ projecting onto $`E`$, carrying a coupling of $`\mu`$ and $`j_*\nu`$, such that for any three of its pairs
 
 ```math
 [x_1x_2x_3]\det(y_1,y_2,y_3)\geq0. \tag{1}

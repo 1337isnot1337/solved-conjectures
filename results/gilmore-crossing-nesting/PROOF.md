@@ -10,7 +10,7 @@ m_{n,1}(r,s,1,1)
 =\sum_{\pi\in\mathcal M_{2(n-1)}}r^{\mathop{\mathrm{cr}}(\pi)}
 s^{\mathop{\mathrm{ne}}(\pi)}.
 ```
-Here $\mathcal M_{2d}$ denotes the perfect matchings of $\{1,\ldots,2d\}$. Two arcs $(a,b)$, $(c,d)$, with $a<c$, cross when $a<c<b<d$, nest when $a<c<d<b$, and align when $a<b<c<d$.
+Here $\mathcal M_{2d}$ denotes the perfect matchings of $`\{1,\ldots,2d\}`$. Two arcs $(a,b)$, $(c,d)$, with $a<c$, cross when $a<c<b<d$, nest when $a<c<d<b$, and align when $a<b<c<d$.
 
 - [Published article and DOI](https://doi.org/10.37236/10465).
 - [Published PDF at UCL](https://discovery.ucl.ac.uk/id/eprint/10138471/).
@@ -31,7 +31,7 @@ All matrix indices start at zero. Let $T_i=T_i(r,s,\mu,y)$ be the unit-lower-tri
 ```
 and zero if $a<b$. Empty products are one.
 
-Equivalently $T_i$ is the inverse of the unit-lower-bidiagonal matrix with subdiagonal entries $-\mu^i y[h]_{r,s}$. This is Gilmore's $T(a_i)$ with $a_i=(\mu^iy[h+1]_{r,s})_{h\ge0}$.
+Equivalently $T_i$ is the inverse of the unit-lower-bidiagonal matrix with subdiagonal entries $`-\mu^i y[h]_{r,s}`$. This is Gilmore's $`T(a_i)`$ with $`a_i=(\mu^iy[h+1]_{r,s})_{h\ge0}`$.
 
 Set $B_i=I_{i+1}\oplus T_i$, and define
 ```math
@@ -78,11 +78,11 @@ For $n\ge1$ and $1\le k\le n$, consider paths with unit up-steps and down-steps 
 - have exactly $n-1$ up-steps and $n-k$ down-steps;
 - therefore have length $2n-k-1$ and finish at height $k-1$.
 
-Give a down-step from height $h$ weight $y[h]_{r,s}$. Give an up-step weight $\mu^d$, where $d$ is the number of down-steps preceding it. Let $P_{n,k}$ be the sum of these path weights.
+Give a down-step from height $h$ weight $`y[h]_{r,s}`$. Give an up-step weight $`\mu^d`$, where $`d`$ is the number of down-steps preceding it. Let $`P_{n,k}`$ be the sum of these path weights.
 
-The empty path gives $P_{1,1}=1$. The all-up path gives $P_{n,n}=1$. A path ending with a down-step has a predecessor counted by $P_{n,k+1}$, and its final step has weight $y[k]_{r,s}$. A path ending with an up-step has a predecessor counted by $P_{n-1,k-1}$. This predecessor has $n-k$ down-steps, so its final up-step has weight $\mu^{n-k}$. The second possibility is absent at $k=1$.
+The empty path gives $P_{1,1}=1$. The all-up path gives $P_{n,n}=1$. A path ending with a down-step has a predecessor counted by $P_{n,k+1}$, and its final step has weight $`y[k]_{r,s}`$. A path ending with an up-step has a predecessor counted by $`P_{n-1,k-1}`$. This predecessor has $n-k$ down-steps, so its final up-step has weight $\mu^{n-k}$. The second possibility is absent at $k=1$.
 
-Thus the $P_{n,k}$ satisfy (2) with the same boundary values, and
+Thus the $`P_{n,k}`$ satisfy (2) with the same boundary values, and
 ```math
 m_{n,k}=P_{n,k}
 \quad(n\ge1,\ 1\le k\le n).

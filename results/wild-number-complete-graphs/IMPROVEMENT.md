@@ -183,7 +183,7 @@ E_2(j)\le T(s)\Big[\sum_{\text{classes}}(\#\text{colours})\binom{h_u-1}{k-1}+(f+
 
 **Condition checked.** Each event of $`j`$ triples has probability $`q_j`$ and support of size $`3j`$. So (W) with constant $`a`$ holds if
 ```math
-\sum_{j=1}^{\lfloor t/2\rfloor}c_j\,a^{3j}\le a-1,\qquad c_j=\bigl(E_1(j)+E_2(j)\bigr)\,q_j .\tag{$\ast$}
+\sum_{j=1}^{\lfloor t/2\rfloor}c_j\,a^{3j}\le a-1,\qquad c_j=\bigl(E_1(j)+E_2(j)\bigr)\,q_j .\tag{∗}
 ```
 
 ### 4.4 Proof of Theorem B for odd $`155\le n\le187`$

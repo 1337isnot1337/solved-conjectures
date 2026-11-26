@@ -34,8 +34,8 @@ Suppose $R\subseteq\mathbb N$ satisfies
 ```
 Then $R$ is totally m-primitive.
 
-For $T\ge1$, use $P_{\le T}=\bigcup_{q\in Q,\,q\le T}P_q$ and
-$\tau_T=\sum_{q\in Q,\,q>T}q^{-\alpha}$, so $\tau_T\to0$. Counting
+For $T\ge1$, use $`P_{\le T}=\bigcup_{q\in Q,\,q\le T}P_q`$ and
+$`\tau_T=\sum_{q\in Q,\,q>T}q^{-\alpha}`$, so $\tau_T\to0$. Counting
 the possible $u$ for each coefficient, for every $X\ge|c|$ we have
 ```math
 |(P\setminus P_{\le T})\cap[1,X]|
@@ -49,7 +49,7 @@ This bound does not require unique coefficients or representations.
 Suppose $a<a'$, $b<b'$ and for fixed positive integers $q,r$ all of
 $ab,ab'$ lie in $P_q$ and all of $a'b,a'b'$ lie in $P_r$. Then the
 ratio of each of the shifted products to its row coefficient is a
-positive $k$th power. In particular, the positive integers $s,t$
+positive $`k`$th power. In particular, the positive integers $s,t$
 defined by
 ```math
 s^k=\frac{(ab-c)(a'b'-c)}{qr},\qquad
@@ -63,8 +63,8 @@ If $ab\ge2|c|$, the difference-of-powers formula gives
 ```math
 \begin{aligned}
 |c|(a'-a)(b'-b)
-&\ge k(qr)^{1/k}(ab-c)^{2-2/k}\\
-&\ge 2(ab-c)\ge ab .
+&\ge k(qr)^{1/k}(ab-c)^{2-2/k}
+\\ &\ge 2(ab-c)\ge ab .
 \end{aligned} \tag{3}
 ```
 Here the first inequality uses
@@ -135,10 +135,10 @@ the theorem.
 ## 2. Apply to the conjecture
 
 Let $2\le k\le\ell$ by symmetry. For $k<\ell$ take
-$Q=\{y^\ell:y\in\mathbb N\}$; the required sum converges since
+$`Q=\{y^\ell:y\in\mathbb N\}`$; the required sum converges since
 $\ell/k>1$. The resulting set $P$ is
-$\{x^k y^\ell+c:x,y\in\mathbb N\}\cap\mathbb N$.
-If $k=\ell$, use $Q=\{1\}$, because $x^k y^k=(xy)^k$ and
+$`\{x^k y^\ell+c:x,y\in\mathbb N\}\cap\mathbb N`$.
+If $k=\ell$, use $`Q=\{1\}`$, because $x^k y^k=(xy)^k$ and
 every positive integer is a possible $xy$. In both cases the
 choice $y=1$ supplies $X^{1/k}+O_{k,c}(1)$ retained values
 of $P$ up to $X$ before perturbation.

@@ -55,8 +55,8 @@ and
 ```math
 H_{a,b}(s)
 ={}_3F_2\!\left(
-\begin{matrix}a+s/2,\ a+(s+1)/2,\ 1/2\\
-a+1/2,\ a+b+1/2\end{matrix};1\right).
+\begin{matrix}a+s/2,\ a+(s+1)/2,\ 1/2
+\\ a+1/2,\ a+b+1/2\end{matrix};1\right).
 \tag{4}
 ```
 
@@ -195,8 +195,8 @@ where
 ```math
 T_{a,b}(s)
 ={}_3F_2\!\left(
-\begin{matrix}-s/2,\ (1-s)/2,\ 1/2\\
-b+1/2-s,\ a+1/2\end{matrix};1\right).
+\begin{matrix}-s/2,\ (1-s)/2,\ 1/2
+\\ b+1/2-s,\ a+1/2\end{matrix};1\right).
 \tag{10}
 ```
 

@@ -8,7 +8,7 @@ The literal [Tuite–Thomas–Chandran Conjecture 4.5](https://oro.open.ac.uk/92
 
 On $`\mathbb Z_n`$ take the circulant with a nonempty symmetric jump set $`S`$ not containing zero. The open neighborhood of $`v`$ is $`v+S`$ modulo $`n`$. Our sets have $`S\cap(S-S)=\varnothing`$ and $`S\cup(S-S)=\mathbb Z_n`$, so the graph is triangle-free of diameter two.
 
-For independent vertices $`x,y,z`$, call a vertex *private to $`x,y`$* if it is in both of their neighborhoods but not in the neighborhood of $`z`$. If two pairs have private vertices, then after relabeling the pairs as $`xy,yz`$ the induced path $`x,u,y,v,z`$ witnesses the triple: $`u,v`$ are nonadjacent since both neighbor $`y`$ in a triangle-free graph, and every other potential chord is excluded by independence or privacy. Any triple with two edges is already an induced path. A triple with exactly one edge $`xy`$ and isolated $`z`$ lies on $`x,y,u,z`$ for a common neighbor $`u`$ of $`y,z`$; triangle-freeness excludes the chord $`xu`$. It follows that two private pairs for every independent triple suffice for monophonic position number two.
+For independent vertices $`x,y,z`$, call a vertex *private* to $`x,y`$ if it is in both of their neighborhoods but not in the neighborhood of $`z`$. If two pairs have private vertices, then after relabeling the pairs as $`xy,yz`$ the induced path $`x,u,y,v,z`$ witnesses the triple: $`u,v`$ are nonadjacent since both neighbor $`y`$ in a triangle-free graph, and every other potential chord is excluded by independence or privacy. Any triple with two edges is already an induced path. A triple with exactly one edge $`xy`$ and isolated $`z`$ lies on $`x,y,u,z`$ for a common neighbor $`u`$ of $`y,z`$; triangle-freeness excludes the chord $`xu`$. It follows that two private pairs for every independent triple suffice for monophonic position number two.
 
 ## The unbounded families
 
@@ -60,8 +60,8 @@ This proves the two-private-pair criterion for all orders in the table.
 
 At orders $`4,5,8,12,13,18,21,24,27`$ take symmetric jump magnitudes, respectively
 ```math
-\{1\},\ \{1\},\ \{1,4\},\ \{2,3\},\ \{2,3\},\ \{3,4,5\},\
-\{3,4,5\},\ \{4,5,6,7\},\ \{4,5,6,7\}.
+\{1\},\ \{1\},\ \{1,4\},\ \{2,3\},\ \{2,3\},\ \{3,4,5\},
+\ \{3,4,5\},\ \{4,5,6,7\},\ \{4,5,6,7\}.
 ```
 
 Their exact diameter, triangle-freeness and private-pair conditions can be checked by testing $`S-S`$ and the triples containing zero. For all other orders below 30, either an unbounded formula already applies or there is no valid graph. Specifically, the original paper’s Theorem 4.4 rules out orders 6, 7, 9 and 10 even without the circulant restriction; orders 1 and 2 have no connected graph of diameter two; the only connected circulant of order 3 is complete. At order 15 the previous proof is also short to replay: test the $`2^7`$ symmetric nonzero jump choices against triangle-freeness and diameter two. Only the two choices with magnitudes $`\{1,4,6\}`$ or $`\{2,3,7\}`$ survive, both blow-ups of a 5-cycle with an independent class of three vertices. These are open twins. An induced path can contain at most two of them, as each neighbor of one is adjacent to all of them, so the triple is monophonic.

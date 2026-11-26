@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Repair GitHub proof rendering
+
+Restored equations in the [Pomerance–Sárközy proof](results/pomerance-sarkozy-fluctuations/PROOF.md) and other proof and supporting pages. The Markdown checks now cover every proof filename and compare changed equations with GitHub’s own Markdown output.
+
 ## 2026-11-26 — Priority and statement corrections
 
 Earlier public proofs resolve the following named targets. The ranked catalogue has been corrected.

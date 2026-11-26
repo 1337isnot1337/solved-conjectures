@@ -1,6 +1,6 @@
 # Rossi's permutohedron characteristic-polynomial conjecture
 
-**Result.** We prove [Conjecture 6.16 of Giovanni Rossi, *Beyond geometric lattices: pseudo-atoms and redundant join representations in the face lattice of the permutohedron*](https://arxiv.org/html/2611.25741v1#S6.SS5). For each $n\ge3$, the characteristic polynomial $\chi_n(t)$ has $n$ distinct positive real roots: $n-2$ in $(0,1)$, the root $1$, and one in $(1,\infty)$. The proof is uniform for $n\ge128$; a standard-library-only exact integer sign certificate covers $3\le n<128$. The $q$-deformed Conjecture 9.7 is not claimed.
+**Result.** We prove [Conjecture 6.16 of Giovanni Rossi, *Beyond geometric lattices: pseudo-atoms and redundant join representations in the face lattice of the permutohedron*](https://arxiv.org/html/2611.25741v1#S6.SS5). For each $n\ge3$, the characteristic polynomial $\chi_n(t)$ has $`n`$ distinct positive real roots: $n-2$ in $(0,1)$, the root $1$, and one in $(1,\infty)$. The proof is uniform for $n\ge128$; a standard-library-only exact integer sign certificate covers $3\le n<128$. The $q$-deformed Conjecture 9.7 is not claimed.
 
 ## 1. Reduction and sign grid
 
@@ -40,7 +40,7 @@ We may first handle $1\le j\le N/2$ (the left half of the indices, $x_j\ge0$). I
 
 ## 3. Near the endpoint: one term in the series
 
-Suppose $1\le j\le\sqrt n/3$. For $0<\theta\le\pi/2$, $\cot\theta\le1/\theta$ and $1/\theta-\cot\theta\le\theta$. The latter follows from $\sin\theta-\theta\cos\theta=\int_0^\theta s\sin s\,ds\le\theta^3/3$ and $\sin\theta\ge2\theta/\pi$. Consequently
+Suppose $1\le j\le\sqrt n/3$. For $0<\theta\le\pi/2$, $\cot\theta\le1/\theta$ and $1/\theta-\cot\theta\le\theta$. The latter follows from $`\sin\theta-\theta\cos\theta=\int_0^\theta s\sin s\,ds\le\theta^3/3`$ and $\sin\theta\ge2\theta/\pi$. Consequently
 ```math
  N/j-\pi^2 j/N\le x_j\le N/j .
 ```
@@ -98,6 +98,6 @@ For $3\le n<128$, [check.py](check.py) constructs the Eulerian polynomial using 
 ```
 It picks strictly decreasing negative rational sample points beside the same grid, then checks $P_n$ at each with integer Horner arithmetic. Floating point only proposes candidate rationals; it is not used to certify a sign, ordering, closeness to the analytic grid, or a root. Passing the exact tests for 8000 sample points gives the same $n-2$ negative roots in this finite range by the intermediate value theorem.
 
-For all $n\ge3$, $P_n(0)=0$, $P'_n(0)=1-A(n,1)=n+2-2^n<0$, and $P_n(1)=1$, giving one root in $(0,1)$ in addition to $0$. One can count $A(n,1)=2^n-n-1$ by concatenating two nonempty increasing words on complementary sets of labels: among the $2^n-2$ assignments, exactly the $n-1$ initial-segment assignments have no descent at the cut. Thus all $n$ roots of degree-$n$ $P_n$ are distinct. Equation (1) maps them to the required intervals for $\chi_n$. $\square$
+For all $n\ge3$, $P_n(0)=0$, $P'_n(0)=1-A(n,1)=n+2-2^n<0$, and $P_n(1)=1$, giving one root in $(0,1)$ in addition to $0$. One can count $A(n,1)=2^n-n-1$ by concatenating two nonempty increasing words on complementary sets of labels: among the $2^n-2$ assignments, exactly the $n-1$ initial-segment assignments have no descent at the cut. Thus all $`n`$ roots of degree-$`n`$ $P_n$ are distinct. Equation (1) maps them to the required intervals for $\chi_n$. $\square$
 
 Attribution and priority: Rossi stated the conjecture, supplied the Eulerian transformation, proved the auxiliary derivative inequality would suffice, and tested many finite values by Sturm sequences. The present proof uses a different explicit grid, the two convergent logistic expansions, and exact finite signs. Searches of the conjecture number, article identifier, title, characteristic-polynomial/Eulerian formulation, and related public claim records on 24 November 2026 did not locate an earlier resolution. This is limited priority screening, not an assertion of worldwide priority.

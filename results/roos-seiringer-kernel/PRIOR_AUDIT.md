@@ -17,8 +17,8 @@ The function is
 m_3^D(x;1)
 ={}&\frac{4}{\pi x}\int_1^\infty
  \frac{\sin^2(xk)}{k}\mathop{\mathrm{arcoth}}(k)\,dk
--\frac{2\sin^2x}{\pi x}-\frac{2\sin^2x}{x^2}\\
-&+\frac{4\sin x}{\pi x^2}
+-\frac{2\sin^2x}{\pi x}-\frac{2\sin^2x}{x^2}
+\\ &+\frac{4\sin x}{\pi x^2}
 \left(\sin x\mathop{\mathrm{Si}}(2x)
 -\cos x\mathop{\mathrm{Cin}}(2x)\right),\qquad x>0.
 \end{aligned}

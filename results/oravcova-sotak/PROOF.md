@@ -53,22 +53,22 @@ The upper bound is the general one. Suppose $c$ is a proper $k$-colouring. Any $
 
 Put $t_0=1/k$, so $`\|wt_0\|\ge1/k`$ for $w\in W$. If $a=1$ and $k\nmid b$, the time $t_0$ works. If $a\ge2$, consider the times $t_j=(t_0+j)/a$ for $0\le j\lt a$. Every speed $aw$ has phase $awt_j\equiv wt_0$ modulo one. The phases $bt_j=bt_0/a+jb/a$ run over a full coset of $`\tfrac1a\mathbb Z/\mathbb Z`$ because $\gcd(a,b)=1$. Such a coset meets the closed arc of length $1/a$ centred at $1/2$, which gives a time with $`\|bt_j\|\ge\tfrac12-\tfrac1{2a}\ge\tfrac14\ge\tfrac1k`$. The same averaging over the times $(t_0+j)/a$ is used for product planes in the [eight-speed note](../../results/eight-speed-spectrum/PROOF.md).
 
-**Lemma 4 (loops).** Fix a number of colours $k$ and a finite set $E$ of positive integers with $w=\max E$. A word $`z=z_0z_1\cdots z_{n-1}`$ over $`\{0,\ldots,k-1\}`$ is *$E$-proper* if $`z_i\ne z_{i+d}`$ whenever $d\in E$ and $`0\le i\lt i+d\le n-1`$. Let $u$ be a word of length $w$. A *loop of length $\ell\ge1$ at $u$* is an $E$-proper word $z$ of length $\ell+w$ whose first $w$ letters and last $w$ letters both spell $u$.
+**Lemma 4 (loops).** Fix a number of colours $k$ and a finite set $`E`$ of positive integers with $w=\max E$. A word $`z=z_0z_1\cdots z_{n-1}`$ over $`\{0,\ldots,k-1\}`$ is *$`E`$-proper* if $`z_i\ne z_{i+d}`$ whenever $d\in E$ and $`0\le i\lt i+d\le n-1`$. Let $`u`$ be a word of length $w$. A *loop* of length $`\ell\ge1`$ at $`u`$ is an $`E`$-proper word $z$ of length $\ell+w$ whose first $w$ letters and last $w$ letters both spell $`u`$.
 
-1. If $z$ is a loop of length $\ell$ at $u$, then $`c(n)=z_{n\bmod\ell}`$ is a proper $k$-colouring of $G(E)$ of period $\ell$.
-2. If $z$ and $z'$ are loops at the same $u$ of lengths $\ell$ and $\ell'$, then $`z_0\cdots z_{\ell-1}z'`$ is a loop of length $\ell+\ell'$ at $u$.
+1. If $z$ is a loop of length $\ell$ at $`u`$, then $`c(n)=z_{n\bmod\ell}`$ is a proper $k$-colouring of $G(E)$ of period $\ell$.
+2. If $z$ and $z'$ are loops at the same $`u`$ of lengths $\ell$ and $\ell'$, then $`z_0\cdots z_{\ell-1}z'`$ is a loop of length $\ell+\ell'$ at $`u`$.
 
-Hence the set of loop lengths at a fixed $u$ is closed under addition, and each of its elements is the period of a proper $k$-colouring of $G(E)$.
+Hence the set of loop lengths at a fixed $`u`$ is closed under addition, and each of its elements is the period of a proper $k$-colouring of $G(E)$.
 
 *Proof.* (1) The last $w$ letters repeat the first $w$, that is $`z_{j+\ell}=z_j`$ for $0\le j\lt w$. By induction $`z_i=z_{i\bmod\ell}`$ for all $`0\le i\lt\ell+w`$. Given $n\in\mathbb Z$ and $d\in E$, put $i=n\bmod\ell$. Then $`i+d\le\ell-1+w`$, so $`c(n+d)=z_{(i+d)\bmod\ell}=z_{i+d}\ne z_i=c(n)`$.
 
-(2) Let $y$ be the concatenated word, of length $\ell+\ell'+w$. Since $z'$ begins with $u$, which is also the end of $z$, the word $y$ agrees with $z$ on positions $`[0,\ell+w)`$ and with $z'$ on positions $`[\ell,\ell+\ell'+w)`$. A pair of positions $i\lt i+d$ with $d\le w$ lies in the second window if $i\ge\ell$ and in the first window otherwise. So $y$ is $E$-proper. It begins with the first $w$ letters of $z$ and ends with the last $w$ letters of $z'$, both equal to $u$. $\square$
+(2) Let $y$ be the concatenated word, of length $\ell+\ell'+w$. Since $z'$ begins with $`u`$, which is also the end of $z$, the word $y$ agrees with $z$ on positions $`[0,\ell+w)`$ and with $z'$ on positions $`[\ell,\ell+\ell'+w)`$. A pair of positions $i\lt i+d$ with $d\le w$ lies in the second window if $i\ge\ell$ and in the first window otherwise. So $y$ is $`E`$-proper. It begins with the first $w$ letters of $z$ and ends with the last $w$ letters of $z'$, both equal to $`u`$. $\square$
 
 **Lemma 5 (one extra distance).** Let $c$ be a proper colouring of $`G(W\cup\{r\})`$ with period $p$. If $x\equiv r$ or $x\equiv-r\pmod p$, then $c$ is a proper colouring of $`G(W\cup\{x\})`$.
 
 Indeed $c(n+x)=c(n\pm r)\ne c(n)$.
 
-**Corollary 5′.** Suppose that, for $`E=W\cup\{r\}`$ and $k$ colours, every integer greater than $g$ is a loop length at some fixed word $u$. Then $`\chi(W\cup\{x\})\le k`$ for every integer $x\gt g+r$: use a colouring of period $p=x-r\gt g$.
+**Corollary 5′.** Suppose that, for $`E=W\cup\{r\}`$ and $k$ colours, every integer greater than $g$ is a loop length at some fixed word $`u`$. Then $`\chi(W\cup\{x\})\le k`$ for every integer $x\gt g+r$: use a colouring of period $p=x-r\gt g$.
 
 A finite list of periods can never handle all $x$, since $x$ may be divisible by every period on the list. Loops remove this obstruction by supplying *every* large period.
 
@@ -92,7 +92,7 @@ These are the shortest such intervals: the intervals one shorter are colourable.
 
 *Listed sets.* Of the $12+9+27+17=65$ listed sets, three are the sets of items 2 and 3. For each of the other 62, `certificates.json` contains a word $`c_0c_1\cdots c_{p-1}`$ such that $`n\mapsto c_{n\bmod p}`$ is a proper $k$-colouring of $G(D)$. The periods range from 8 to 28. `verify.py` checks every word.
 
-*Product families.* In the product families of R5 and R6 the set has the form $`aW\cup\{b\}`$ with $\gcd(a,b)=1$, where $W$ is $`\{1,2,3,4\}`$ or $`\{1,3,4,7\}`$ for $k=5$, and $`\{1,2,3,4,5\}`$ or $`\{1,3,4,5,9\}`$ for $k=6$. No element of these $W$ is divisible by $k$. By Lemma 3 and near-tightness, $a=1$ and $b=ks$. In R7 and R8 the families are stated in this form already. If $`W=\{1,\ldots,k-1\}`$ this is item 1. Four families remain:
+*Product families.* In the product families of R5 and R6 the set has the form $`aW\cup\{b\}`$ with $\gcd(a,b)=1$, where $W$ is $`\{1,2,3,4\}`$ or $`\{1,3,4,7\}`$ for $k=5$, and $`\{1,2,3,4,5\}`$ or $`\{1,3,4,5,9\}`$ for $`k=6`$. No element of these $W$ is divisible by $k$. By Lemma 3 and near-tightness, $a=1$ and $b=ks$. In R7 and R8 the families are stated in this form already. If $`W=\{1,\ldots,k-1\}`$ this is item 1. Four families remain:
 
 | Name | $k$ | $W$ | auxiliary $r$ | certified loop lengths (generators of $\Lambda$) | largest gap $g$ of $\Lambda$ | $x=ks$ needing a direct colouring |
 |---|---|---|---|---|---|---|
@@ -101,9 +101,9 @@ These are the shortest such intervals: the intervals one shorter are colourable.
 | W2 | 8 | $`\{1,2,3,4,5,7,12\}`$ | 10 | 8, 14, 23, 43 | 49 | 8, 16 |
 | W3 | 8 | $`\{1,4,5,6,7,11,13\}`$ | 8 | 21, 24, 26, 30, 33, 36, 38, 39, 40, 41, 43, 44, 46 | 58 | 8, 24 |
 
-For each row the certificate gives a word $u$ of length $`\max(W\cup\{r\})`$ and one loop at $u$, for $`E=W\cup\{r\}`$ and $k$ colours, of each listed length. `verify.py` checks the loops and computes the numerical semigroup $\Lambda$ they generate. Its largest gap is $g$. By Lemma 4 every positive element of $\Lambda$ is a loop length. By Corollary 5′, $`\chi(W\cup\{x\})\le k`$ for all $x\gt g+r$. For the finitely many $x=ks\le g+r$, Lemma 5 applies with $p=x-r\ge1$ or $p=x+r$ whenever one of these lies in $\Lambda$. No element of $W$ is divisible by $k$, so $x=ks$ is never in $W$. The few remaining $x$ are in the last column, and for each the certificate contains an explicit periodic proper $k$-colouring of $`G(W\cup\{x\})`$. So every member of these four families has $\chi\le k$.
+For each row the certificate gives a word $`u`$ of length $`\max(W\cup\{r\})`$ and one loop at $`u`$, for $`E=W\cup\{r\}`$ and $k$ colours, of each listed length. `verify.py` checks the loops and computes the numerical semigroup $\Lambda$ they generate. Its largest gap is $g$. By Lemma 4 every positive element of $\Lambda$ is a loop length. By Corollary 5′, $`\chi(W\cup\{x\})\le k`$ for all $x\gt g+r$. For the finitely many $x=ks\le g+r$, Lemma 5 applies with $p=x-r\ge1$ or $p=x+r$ whenever one of these lies in $\Lambda$. No element of $W$ is divisible by $k$, so $x=ks$ is never in $W$. The few remaining $x$ are in the last column, and for each the certificate contains an explicit periodic proper $k$-colouring of $`G(W\cup\{x\})`$. So every member of these four families has $\chi\le k$.
 
-*The two-parameter family for $k=6$.* Let $`F=\{(1,0),(0,1),(1,1),(2,1),(3,1),(3,2)\}`$, so that the third family of R6 consists of the sets $D(s,t)$ with $s,t$ coprime integers and six distinct nonzero values $`|as+bt|`$. The six vectors
+*The two-parameter family for $`k=6`$.* Let $`F=\{(1,0),(0,1),(1,1),(2,1),(3,1),(3,2)\}`$, so that the third family of R6 consists of the sets $D(s,t)$ with $s,t$ coprime integers and six distinct nonzero values $`|as+bt|`$. The six vectors
 
 ```math
 (2,1),\ (3,-1),\ (5,-7),\ (5,-8),\ (3,-8),\ (2,-7)
@@ -135,7 +135,7 @@ The verifier reads `certificates.json` and checks the following, using integers 
 1. **Tables.** Each of the 65 listed sets is sorted, primitive and of the right size, and the exact value of $L(D)$, recomputed from the candidate times $a/(d_i+d_j)$, equals the listed value and is below $1/k$. When run inside the repository, the seven- and eight-speed tables are compared with `sporadic.txt` of the corresponding results.
 2. **Sporadic colourings.** Each of the 62 periodic words is a proper $k$-colouring.
 3. **Exceptional sets.** Exhaustive search on the three intervals above finds no proper $k$-colouring, and finds one on each interval one shorter.
-4. **One-parameter families.** For A5, A6, W2, W3: every loop is $E$-proper with the stated prefix and suffix; the semigroup has the stated largest gap; every $x=ks\le g+r$ is covered by $x-r\ge1$ or $x+r$ in $\Lambda$, or by a valid direct colouring; no element of $W$ is divisible by $k$. For every covered $x$ the verifier also assembles the loop by concatenation and checks the periodic colouring of $`G(W\cup\{x\})`$ directly.
+4. **One-parameter families.** For A5, A6, W2, W3: every loop is $`E`$-proper with the stated prefix and suffix; the semigroup has the stated largest gap; every $x=ks\le g+r$ is covered by $x-r\ge1$ or $x+r$ in $\Lambda$, or by a valid direct colouring; no element of $W$ is divisible by $k$. For every covered $x$ the verifier also assembles the loop by concatenation and checks the periodic colouring of $`G(W\cup\{x\})`$ directly.
 5. **Two-parameter family.** The six base vectors give $B$; the four loops are valid; the semigroup contains $38,\ldots,43$; all 334 pairs in the finite region are covered, and for each the colouring of Lemma 6 is built and checked directly.
 6. **Lemma 2 on small cases.** A brute-force sanity check that $`\{1,\ldots,k-1,ks\}`$ has no proper $k$-colouring on a short interval, for $k\le8$ and small $s$.
 

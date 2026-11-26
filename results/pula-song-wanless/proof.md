@@ -27,8 +27,8 @@ The proposed new theorem is:
 > For all positive m and n>1 with n≥m+√m, the permanent on Ω(V_{m,n}) has the unique minimizer
 > ```math
 > A_0=\begin{pmatrix}
-> \frac{n-m}{n}I_n&\frac1nJ_{n,m}\\
-> \frac1nJ_{m,n}&0_m
+> \frac{n-m}{n}I_n&\frac1nJ_{n,m}
+> \\ \frac1nJ_{m,n}&0_m
 > \end{pmatrix}.
 > ```
 > Its permanent is
@@ -71,8 +71,8 @@ For diagonal D=diag(D_1,...,D_N) with D_i≥0 and a nonnegative vector b, define
 
 ```math
  q(y)=\mathop{\mathrm{per}}
- \begin{pmatrix}D&b\mathbf1_m^{\mathsf T}\\
- \mathbf1_m b^{\mathsf T}&yJ_m\end{pmatrix}.
+ \begin{pmatrix}D&b\mathbf1_m^{\mathsf T}
+ \\ \mathbf1_m b^{\mathsf T}&yJ_m\end{pmatrix}.
 ```
 Expanding by the subset of top vertices that use cross-block edges gives the exact differential-operator identity
 
@@ -156,8 +156,8 @@ The row and column sums now show that an averaged minimizer has the form
 
 ```math
  A_x=\begin{pmatrix}
- \frac{n-m+m^2x}{n}I_n&\frac{1-mx}{n}J_{n,m}\\
- \frac{1-mx}{n}J_{m,n}&xJ_m
+ \frac{n-m+m^2x}{n}I_n&\frac{1-mx}{n}J_{n,m}
+ \\ \frac{1-mx}{n}J_{m,n}&xJ_m
  \end{pmatrix}.
 ```
 For n≥m the admissible interval is 0≤x≤1/m; for m>n it is (m-n)/m²≤x≤1/m. Averaging preserves the sum of all entries in the lower-right m-by-m block and preserves every upper diagonal entry. Therefore, if A_0 is the only reduced minimizer in the threshold range, every original minimizer has a zero lower-right block and upper diagonal (n-m)I_n/n. This proves noncohesiveness once the scalar theorem is established. Full-face uniqueness will be proved separately by the ordinary van der Waerden theorem in Section 4.1, without importing the original paper's disputed reduction.
@@ -230,7 +230,7 @@ Since F(0)=1, μ is analytic near zero. Direct differentiation of z(t) gives
 ```math
  K(t):=\frac{z'(t)}{z(t)}
  =\frac{d+(d+2m)t}{t(d+mt)(1-t)}>0
- \qquad(0<t<1).
+ \qquad(0\lt t<1).
 \tag{5}
 ```
 Differentiating (2), the elementary factors combine to
@@ -374,7 +374,7 @@ Write F(z)=∏_{r=1}^q(1+z/λ_r), λ_r>0 distinct. The distribution
 is the sum of q independent Bernoulli variables with distinct success probabilities p_r=1/(1+λ_r). With u=E I and v=Var I, Cauchy–Schwarz gives
 
 ```math
- 0<u<q,
+ 0\lt u\lt q,
  \qquad
  v=\sum_r p_r(1-p_r)
  <\frac{u(q-u)}q\quad(q≥2).
