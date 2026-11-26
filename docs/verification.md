@@ -1,5 +1,9 @@
 # Verification
 
+## Asgarli–Ghioca–Yip blocking-pencil problem
+
+Run `python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py` for 266,184 shift sets over eight fields, 367 regular seed instances, 8,577 graph–line intersections and both squarefree quartic twists without rational roots over the field of order three. A second researcher checked the general proofs and the order-32 hyperplane computation. [Proof](../results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Independent review and source audit](../results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
+
 ## Mallik–Diwan–Kothari degree-count conjecture
 
 Run `python3 results/mallik-diwan-kothari-degree-count/verify.py`. The checker verifies all 3,420 three-edge matchings and all 36 edge deletions on the 16-vertex counterexample directly. Separate Hall checks sample 15 members of the infinite family. The [proof](../results/mallik-diwan-kothari-degree-count/PROOF.md) does not depend on the checker. [Source and audit](../results/mallik-diwan-kothari-degree-count/AUDIT.md).
