@@ -160,6 +160,10 @@ jobs:
           python3 results/chern-fu-lin-joint-eulerian/joint-certificate.py
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
+      - name: Verify the book-root and circulant classifications
+        run: |
+          python3 docs/research-results/rather-book-domination-roots/check.py
+          python3 docs/research-results/tuite-thomas-chandran-circulants/check.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py

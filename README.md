@@ -147,6 +147,13 @@ This section is ordered by the significance of the partial contributions.
 - [Erdős–Oler conjecture](docs/erdos-oler-research.md). The conjectured lower bound holds for packings on any unit-separated lattice, and triangular lattice packings with one site removed are locally rigid.
 - [Hadamard existence, order 2396](results/hadamard-2396/). The automorphism obstruction, fixed-border symmetry bounds, complete conditional fixed-border construction with all fourteen patterns, and length-598 order-eleven obstruction are Lean-verified. The actual two-row Hadamard construction from a Legendre pair and its invariant quotient transport are also checked. The order-nine subgroup and orbit statements are also checked. The length-1197 multiplier order is proved to divide 27; the sharper bound of nine and finite quotient/no-lift certificates remain pending. Existence stays open. [Checked scope](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
 
+## All-orders graph classifications
+
+- [Rather’s book domination-root conjecture](docs/research-results/rather-book-domination-roots/README.md). For every book graph the proof gives the numbers, locations and multiplicities of all its real domination roots.
+- [Tuite–Thomas–Chandran circulant conjecture](docs/research-results/tuite-thomas-chandran-circulants/README.md). The proof gives all graph orders admitting a diameter-two circulant of monophonic position number two.
+
+Earlier sources established the exceptional orders. These companion theorems are outside the solved-conjecture count.
+
 ## Current research
 
 Open campaigns, intermediate proofs, and experimental checks are on the [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research). The publication branch contains reviewed results; a partial theorem is listed here only for its settled scope.

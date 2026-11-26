@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Real roots of book graphs and monophonic circulants
+
+Published the [real-root classification for every book graph](docs/research-results/rather-book-domination-roots/README.md) and the [complete circulant order spectrum](docs/research-results/tuite-thomas-chandran-circulants/README.md). The proofs credit the earlier counterexamples at one page and order 15.
+
 ## 2026-11-26 — The lower oriented general position NP-hardness conjecture
 
 Conjecture 5.3 is true. Two leaves force a spanning directed geodesic, yielding an identity reduction from planar bipartite Hamiltonian Path with two leaves and all other vertices cubic. [Proof](results/lower-oriented-general-position-np-hardness/PROOF.md) · [Audit](results/lower-oriented-general-position-np-hardness/AUDIT.md) · [Issue #874](https://github.com/1337isnot1337/solved-conjectures/issues/874).
