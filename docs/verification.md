@@ -34,6 +34,10 @@ Lean bounds the degree spectrum in every finite linear space, rules out the prop
 
 Run `python3 results/zeng-unscaled-interlacing/check.py`. The checker runs 224 exact signed remainder chains and 1,120 identities on rational parameters. The independent review also certified 176 indexed comparisons by root isolation. [Proof](../results/zeng-unscaled-interlacing/proof.md) · [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/792#issuecomment-7192093300)
 
+## Alexandersson’s transportation polytope conjecture
+
+Run `python3 results/alexandersson-transportation/check.py`. The checker reconstructs 25 Ehrhart counts directly from the transportation constraints and verifies the Laguerre violation and the exact real-root count by rational arithmetic. [Proof](../results/alexandersson-transportation/proof.md) · [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350)
+
 ## Wang–Yang's Fuss–Narayana conjecture
 
 Run `python3 results/wang-yang-fuss-narayana/check.py`. The verifier checks all 82,344 minors of the six leading order-seven matrices at four parameters and 3,168 identities against the published entries. The [proof](../results/wang-yang-fuss-narayana/proof.md) covers arbitrary minors and integer parameters at least two.

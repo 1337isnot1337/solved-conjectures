@@ -145,6 +145,7 @@ STATUS_LABEL_SLUGS = {
     "Chaudhary–Khmiri–Mazhouda conjecture": "chaudhary-khmiri-mazhouda",
     "Merlini–Sala–Sala conjecture": "merlini-sala-sala",
     "Zeng’s unscaled interlacing question": "zeng-unscaled-interlacing",
+    "Alexandersson’s transportation polytope conjecture": "alexandersson-transportation",
     "Wang–Yang's Fuss–Narayana conjecture": "wang-yang-fuss-narayana",
     "Wang–Yang's conjecture": "wang-yang",
     "Tom–Vailaya’s weighted trace conjecture": "tom-vailaya-weighted-trace",
