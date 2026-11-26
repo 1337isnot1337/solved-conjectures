@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-26 — Verify the Hall and coprime-complement steps in Shumyatsky’s proof
+
+Lean constructs the required subgroup of a solvable quotient. It
+verifies the coprime complement and the resulting cyclicity under
+the coprime-automorphism hypothesis.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s transitive simple factors
 
 Lean realizes each nonabelian minimal normal subgroup as a direct
