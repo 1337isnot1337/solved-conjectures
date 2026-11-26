@@ -35,6 +35,12 @@ For arbitrary sufficiently large $n$, let $m=\lfloor\sqrt n\rfloor$ and use $L=\
 
 [Graph substitution gives a near-linear lower bound](RECURSIVE.md) for every fixed $c<1$ and every sufficiently large order. In particular, no fixed power saving $O_c(n^{1-\epsilon})$ is possible. The original sublinear question remains open.
 
+## Upper-bound progress
+
+[An induced-biclique exclusion gives a sublinear transversal](INDUCED-BICLIQUES.md) for all large maximal independent sets, not just maximum ones. In fact, for fixed $c,\epsilon>0$, an $\epsilon n$ lower bound on the size of such a transversal forces an induced balanced complete bipartite graph with side length at least a positive power of $\log n$. The unrestricted statement remains open.
+
+For earlier project work, see [issue #71](https://github.com/1337isnot1337/solved-conjectures/issues/71) and its [bounded modular-width upper bound and random square-root-log lower bound](https://github.com/1337isnot1337/solved-conjectures/blob/main/docs/bollobas-erdos-tuza-research.md). The explicit base construction in this note is useful for the recursive extension; it is not the strongest earlier asymptotic lower bound on its own.
+
 ## Source and limits
 
 - [Erdős, Gallai and Tuza, *Covering the cliques of a graph with vertices* (1992), Problem 2](https://doi.org/10.1016/0012-365X(92)90681-5) is a primary source for the clique-transversal question.
