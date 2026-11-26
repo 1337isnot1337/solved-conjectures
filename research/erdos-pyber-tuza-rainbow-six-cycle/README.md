@@ -1,6 +1,11 @@
 # Erdős–Pyber–Tuza rainbow six-cycle conjecture
 
-**Status: partial.** Every completely balanced six-coloring invariant under a regular action of a finite abelian group has a rainbow six-cycle, at all admissible orders. General completely balanced colorings remain open.
+**Status: partial.** Every sufficiently large completely balanced six-coloring with a transitive group of color-preserving automorphisms contains a positive fraction of rainbow six-cycles. The finite abelian Cayley case holds at all admissible orders. General completely balanced colorings remain open.
+
+- [All transitive color-preserving actions](TRANSITIVE.md): a uniform count of simple rainbow cycles, without requiring a regular subgroup.
+- [All finite Cayley actions](ALL-CAYLEY.md): the sixth-power coefficient identity and the matrix estimate, without assuming conjugation-invariant colors.
+- [Compact normal Cayley colorings](FOURIER-CAYLEY.md) and [connected compact abelian colorings](CONNECTED-CAYLEY.md): bounds for balanced fractional colorings.
+- [Association schemes](ASSOCIATION-SCHEMES.md): a spectral criterion that guarantees every cyclic order of the six colors.
 
 - [Global parity-cut stability](PARITY-CUT.md): a counterexample must stay a fixed positive edit distance from every parity cut, even with concentrated error vertices.
 - [Graphon criterion](GRAPHON-CRITERION.md): it is enough to prove that every balanced zero-density six-color graphon has a disconnected three-color union.
