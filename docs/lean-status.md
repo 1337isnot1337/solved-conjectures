@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Pattern packing and four-cycle partial results
+
+The [packing cutoff construction](../results/blitvic-kammoun-steingrimsson-packing-cutoff/) and [four-cycle regularity obstructions](../results/erdos-85-four-cycle-threshold/) have written proofs and exact checks. No formalization is registered for either package.
+
 ## Book domination roots and monophonic circulants
 
 Both [all-orders classifications](research-results/README.md#all-orders-graph-classifications) have written proofs and executable checks. Neither manuscript has a registered formalization.
@@ -336,6 +340,7 @@ proofs are documented separately in the catalogue and result package.
 | Brown–Cameron’s independence-root sector and stability problems | Not formalized | The [written proof](../results/brown-cameron-stability/PROOF.md) gives limsup lower bounds for right-half-plane roots and failure of log-concavity. The [exact checks](../results/brown-cameron-stability/REVIEW.md#reproducible-checks) are corroboration, not part of the proof. |
 | Wagner's Laguerre-operator conjecture | Complete | Proves the full original 4.3 counterexample; hypotheses are the actual approximation and positivity conditions. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) · [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json). |
 | Rowland–Sistos Barrón conjecture | Complete | Actual minimum tail-recurrence ranks over every characteristic-zero field; the exact rank formula for all M≥49 and failure of every eventual quasipolynomial. All 17 modules passed strict compilation, the all-owned audit (286 declarations, 261 theorems), and stock-kernel replay. The source’s undefined pseudo-polynomial terminology is interpreted explicitly; its separate general-rank clause is not claimed. [Statement audit and receipt](../results/rowland-sistos-barron/LEAN_STATUS.md). |
+| Byrne–Tait’s odd-length Sidon-set question | Not formalized | The [written proof](../results/byrne-tait-odd-sidon/PROOF.md) establishes the uniform density gap for every odd length. The [finite examples](../results/byrne-tait-odd-sidon/verify.py) test normal and nonnormal subgroups. |
 | Nathanson’s linear-form Sidon systems conjecture | Complete | Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Lean scope](../results/nathanson-sidon-systems/FORMALIZATION.md). |
 | Fiscus–Hurlbert–Myzelev–Pence grid conjecture | Complete | Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Lean scope](../results/fiscus-grid-game/FORMALIZATION.md). |
 | En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem | Not formalized | The [written proof](../results/constant-weight-strong-wom/PROOF.md) proves the capacity and polynomial complexity guarantees. A [reference implementation](../results/constant-weight-strong-wom/verify.py) checks exact-weight encoding and recovery. |

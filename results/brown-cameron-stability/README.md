@@ -31,3 +31,5 @@ For an optional local Z3 check of the four algebraic claims, run:
 python3 -m pip install z3-solver==4.16.0.0
 python3 results/brown-cameron-stability/verify_z3.py
 ```
+
+The [maintainer’s mathematical review and exact replay](https://github.com/1337isnot1337/solved-conjectures/pull/838#pullrequestreview-6077450143) is recorded on the original submission. If you use this proof, please credit [@adamben04](https://github.com/adamben04) and cite [the project](https://itsdavis.com/) and [the specific proof](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/brown-cameron-stability/PROOF.md).

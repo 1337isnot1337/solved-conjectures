@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Sidon products, pattern packings and the four-cycle threshold
+
+Published the [Byrne–Tait density gap at every odd length](results/byrne-tait-odd-sidon/), the [absence of an absolute packing cutoff](results/blitvic-kammoun-steingrimsson-packing-cutoff/), and [two restrictions on regular graphs in Erdős #85](results/erdos-85-four-cycle-threshold/). The packing question with a length-dependent bound and the four-cycle monotonicity problem remain open.
+
 ## 2026-11-26 — Real roots of book graphs and monophonic circulants
 
 Published the [real-root classification for every book graph](docs/research-results/rather-book-domination-roots/README.md) and the [complete circulant order spectrum](docs/research-results/tuite-thomas-chandran-circulants/README.md). The proofs credit the earlier counterexamples at one page and order 15.
