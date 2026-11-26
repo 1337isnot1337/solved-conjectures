@@ -2,7 +2,7 @@
 
 **Uniform multiplicative case of Erdős #810.** Fix $\epsilon,K>0$. Let $A,B$ be finite subsets of an arbitrary group, each of size at most $n$, and let $E\subseteq A\times B$ have at least $\epsilon n^2$ edges. If the number of distinct products $xy$ on these edges is at most $Kn$, then for all sufficiently large $n$ there is a four-cycle with equal opposite products. The bound on $n$ is uniform over the ambient group. No linear-size group model or commutativity is required. The result remains true if each product color is split into at most a fixed number of colors.
 
-This strengthens the [abelian and finite-table proofs](README.md), while still requiring multiplication labels. It does not settle arbitrary colorings.
+This extends [Solymosi’s prior finite group-table theorem, Theorem 5](https://arxiv.org/pdf/1309.0133#page=4), and the [abelian reduction](README.md). The older theorem requires density relative to the whole finite group square, which need not hold for finite label sets in a much larger or infinite ambient group. This note still requires multiplication labels and does not settle arbitrary colorings.
 
 ## Retain a dense region inside one approximate group
 
