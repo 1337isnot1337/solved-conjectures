@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Sagan–Wilson’s plactic coefficient-mode conjecture
+
+Lean disproves Conjecture 7.3(d) from the insertion tableaux of actual centralizing words. For length ten the fifth and sixth binomial coefficients are 75,095 and 88,704. The asymptotic mode theorem remains in the written proof. [Real coefficient theorem](../lean/Conjectures/SaganWilsonPlacticModeReal.lean) · [Research receipt](verification/lean-sagan-wilson-plactic-mode-20261126/receipt.json).
+
 ## The ordinary D’Arcais saddle and Fourier inversion
 
 Lean proves the root comparison for indices 6–50 at every real parameter at least one. It constructs the unique positive saddle, proves Fourier inversion for the ordinary coefficients, and reduces strict log-concavity at every index from 501 onward to two explicit inequalities. [Reduction](../lean/Conjectures/OrdinaryDarcaisFourierReduction.lean) · [Research receipt](verification/lean-ordinary-darcais-fourier-20261126/receipt.json).
