@@ -75,7 +75,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **62.** [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ | **145.** [Alexandersson’s transportation polytope conjecture](results/alexandersson-transportation/) | ✅ |
 | **62.** [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ | **145.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
 | **62.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **145.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | 🟡 |
-| **62.** [Wang–Yang's Fuss–Narayana conjecture](results/wang-yang-fuss-narayana/) | ⬜ | **145.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
+| **62.** [Wang–Yang's Fuss–Narayana conjecture](results/wang-yang-fuss-narayana/) | ✅ | **145.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | **62.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **150.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
 | **62.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **150.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | **69.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **150.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |

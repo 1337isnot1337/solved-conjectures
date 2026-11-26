@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Wang–Yang's Fuss–Narayana conjecture
+
+Complete for all six matrices of Conjecture 4.1 at every integer parameter `m ≥ 2`. Lean verifies total nonnegativity of the four Fuss–Narayana triangles (`A(n, k)`, `B(n, k)`, and their row reversals) and strict total positivity of both squares (`A(n + k, k)`, `B(n + k, k)`) on arbitrary finite minors, proving Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch. The five-module closure passed strict compilation, the complete 322-declaration owned axiom audit, and stock-kernel replay. [Lean scope and receipt](../results/wang-yang-fuss-narayana/FORMALIZATION.md).
+
 ## Alexandersson’s transportation polytope conjecture
 
 Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Lean theorems and verification receipt](../results/alexandersson-transportation/FORMALIZATION.md).

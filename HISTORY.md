@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
+
+Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m ≥ 2` and every finite minor: total nonnegativity of `A(n, k)`, `B(n, k)`, and their row reversals, and strict total positivity of `A(n + k, k)` and `B(n + k, k)`. The self-contained five-module closure proves Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch, and passed strict compilation, the 322-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/wang-yang-fuss-narayana/FORMALIZATION.md).
+
 ## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
 
 Both general-position assertions of Conjecture 9.3 are true. A matching that avoids a prescribed vertex in each critical block and a nearest-unused ordering give the stronger mixed sum bound. [Proof](results/general-position-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/general-position-nordhaus-gaddum/AUDIT.md) · [Issue #851](https://github.com/1337isnot1337/solved-conjectures/issues/851).
