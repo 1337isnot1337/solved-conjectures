@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete Lean proof of the Asgarli–Ghioca–Yip pencil bounds
+
+The [Lean proof](lean/Conjectures/AsgarliGhiocaYipComplete.lean) proves the uniform ordering estimate and both quantitative conclusions without a point-count hypothesis. [Scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
+
 ## 2026-11-26 — Mobile general position complexity
 
 Ordinary, fixed-start, and completely mobile general position thresholds are PSPACE-complete on graphs of diameter two with many universal vertices. A mode-and-lock gadget embeds four-colouring reachability into clique coverage. [Proof](results/mobile-general-position-complexity/PROOF.md) · [Audit](results/mobile-general-position-complexity/AUDIT.md).

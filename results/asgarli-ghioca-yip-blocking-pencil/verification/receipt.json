@@ -1,47 +1,122 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-26T15:11:40.234213+00:00",
-  "finished_at": "2026-11-26T15:17:57.338994+00:00",
-  "root": "Conjectures.AsgarliGhiocaYipBlockingPencil",
+  "started_at": "2026-11-26T19:48:07.383393+00:00",
+  "finished_at": "2026-11-26T20:39:25.592462+00:00",
+  "root": "Conjectures.AsgarliGhiocaYipComplete",
   "project_modules": [
+    "Conjectures.AGYStepanov.BivariateWeightedDegree",
+    "Conjectures.AGYStepanov.CurveDerivation",
+    "Conjectures.AGYStepanov.FrobeniusIndependence",
+    "Conjectures.AGYStepanov.OrderOfDerivative",
+    "Conjectures.AGYStepanov.PlaneCurveIntersection",
+    "Conjectures.AGYStepanov.PlaneCurvePointUpperBound",
+    "Conjectures.AGYStepanov.PowerSeriesBranch",
+    "Conjectures.AGYStepanov.ResultantWeightedDegree",
+    "Conjectures.AGYStepanov.StepanovUpperBound",
     "Conjectures.AsgarliGhiocaYipBlockingPencil",
+    "Conjectures.AsgarliGhiocaYipComplete",
+    "Conjectures.AsgarliGhiocaYipExceptionalFibers",
+    "Conjectures.AsgarliGhiocaYipIntersectionFamily",
     "Conjectures.AsgarliGhiocaYipLines",
     "Conjectures.AsgarliGhiocaYipOrderedRoots",
+    "Conjectures.AsgarliGhiocaYipPlaneBudget",
+    "Conjectures.AsgarliGhiocaYipPlaneDegree",
+    "Conjectures.AsgarliGhiocaYipPlaneFactor",
+    "Conjectures.AsgarliGhiocaYipResolventFiber",
     "Conjectures.AsgarliGhiocaYipRootLabels",
-    "Conjectures.AsgarliGhiocaYipSeed"
+    "Conjectures.AsgarliGhiocaYipSeed",
+    "Conjectures.AsgarliGhiocaYipSeparator",
+    "Conjectures.AsgarliGhiocaYipSymmetricBlocks",
+    "Conjectures.AsgarliGhiocaYipTwistComponents",
+    "Conjectures.AsgarliGhiocaYipTwistCount",
+    "Conjectures.AsgarliGhiocaYipTwistFibers",
+    "Conjectures.AsgarliGhiocaYipTwistMass",
+    "Conjectures.AsgarliGhiocaYipTwistUpper",
+    "Conjectures.AsgarliGhiocaYipTwistedModel",
+    "Conjectures.AsgarliGhiocaYipUniversalResolvent",
+    "Conjectures.AsgarliGhiocaYipWeighted"
   ],
   "required_endpoints": [
-    "Conjectures.AsgarliGhiocaYip.exists_regular_seeds",
-    "Conjectures.AsgarliGhiocaYip.single_graph_missing_lines",
-    "Conjectures.AsgarliGhiocaYip.seed_ordering_at_zero",
-    "Conjectures.AsgarliGhiocaYip.missing_lines_of_ordering_estimate",
-    "Conjectures.AsgarliGhiocaYip.blockingNumber_log_upper",
-    "Conjectures.AsgarliGhiocaYip.pencil_bounds_of_ordering_estimate",
-    "Conjectures.AsgarliGhiocaYip.point_count_after_exclusions"
+    "Conjectures.AsgarliGhiocaYip.regularOrderingEstimate",
+    "Conjectures.AsgarliGhiocaYip.missing_lines",
+    "Conjectures.AsgarliGhiocaYip.pencil_bounds",
+    "Conjectures.AsgarliGhiocaYip.half_le_twist_fibers"
   ],
   "source_sha256": {
-    "lean/Conjectures/AsgarliGhiocaYipBlockingPencil.lean": "1f064f8aaffa7b2b2ca8d8c1adde29f5a35b94357ea76ff3ae7e56eb2700f051",
-    "lean/Conjectures/AsgarliGhiocaYipLines.lean": "8c99e5b68d9a29c3902f49a19e1ed69f4f8e1bad10d42542d7baff1c1c36fb07",
-    "lean/Conjectures/AsgarliGhiocaYipOrderedRoots.lean": "9914d53e2a800969d218abe7bd92c50f97bf447b75854a69dbb20cadd4ea6b87",
-    "lean/Conjectures/AsgarliGhiocaYipRootLabels.lean": "76772de79179931071184efe1808958153c82f91df398e7eb6370a54fccc5473",
-    "lean/Conjectures/AsgarliGhiocaYipSeed.lean": "a9ef1658c03377d541d715600e45176754ec142cdbd68a18fd62f7c739793f39"
+    "lean/Conjectures/AGYStepanov/BivariateWeightedDegree.lean": "c92f5a0c87e025d19aea3bae2c6e7f8381e0c770ec3320955885ca743f9510e5",
+    "lean/Conjectures/AGYStepanov/CurveDerivation.lean": "576b23fa1b24124f7c7a9f39664a515a20b0fc5fb6f03301df3a5fddbedd58c1",
+    "lean/Conjectures/AGYStepanov/FrobeniusIndependence.lean": "28be191a95d454e7bb92231b2768b3731ef11cd11d0079a1c171dbee0538c138",
+    "lean/Conjectures/AGYStepanov/OrderOfDerivative.lean": "85650cb61f585d2cda501caadec5a7908a8abbe7b1f9feab34102bc347176821",
+    "lean/Conjectures/AGYStepanov/PlaneCurveIntersection.lean": "b92c51e68bde2b2d093bde577905800383b0915d63b02132f09d66a52dc15613",
+    "lean/Conjectures/AGYStepanov/PlaneCurvePointUpperBound.lean": "b5b8325a8dfc5ad8bd74c2a9fc79ad3f341643baa6b96f0f843a514195b228cd",
+    "lean/Conjectures/AGYStepanov/PowerSeriesBranch.lean": "2f0f892cd7ae97ff205a02968bffca43f2949250399cdba91b630b49ead8e0ee",
+    "lean/Conjectures/AGYStepanov/ResultantWeightedDegree.lean": "5558a70128c1b47cec0a7de7a6d6bb77e601201526315078716e12373b077285",
+    "lean/Conjectures/AGYStepanov/StepanovUpperBound.lean": "ebfbd889ac378a44cfde7f7aa72df3949ff7c574325a9744259b7dba262ead4a",
+    "lean/Conjectures/AsgarliGhiocaYipBlockingPencil.lean": "6baaf2bf8bde0792676821993d4727dd60b134eb632bd877d202a2129f9c6dc5",
+    "lean/Conjectures/AsgarliGhiocaYipComplete.lean": "7fd8aae4b30b24be8332be9981b2d4e5e021a670dacca604d8fe32f7bfa468a0",
+    "lean/Conjectures/AsgarliGhiocaYipExceptionalFibers.lean": "a75943c84f51b97c81a484c80c4a169dbb0b466eaa0c15d85710502f50280fb1",
+    "lean/Conjectures/AsgarliGhiocaYipIntersectionFamily.lean": "b306179f283274b7bf9e700257465111e1d7e7d09d5d7515e259a540568ed6f7",
+    "lean/Conjectures/AsgarliGhiocaYipLines.lean": "2a7cd3c2e6678a75ac5be131db8634812129344f00d28f07f9fd418995137918",
+    "lean/Conjectures/AsgarliGhiocaYipOrderedRoots.lean": "8535559ab0404fe65a90cf3ba82e177e25ce473e66457f224e70dd542801f988",
+    "lean/Conjectures/AsgarliGhiocaYipPlaneBudget.lean": "4bcccd023227e1862f40583545164df2d57d641528e96b31468ffbaf68a261ed",
+    "lean/Conjectures/AsgarliGhiocaYipPlaneDegree.lean": "46712130871bf1e2d4a58e1a0abb5a421686268a126362c79d4d71b27e784084",
+    "lean/Conjectures/AsgarliGhiocaYipPlaneFactor.lean": "23a2fd88c1f127f951edd052209ca7b6b33802e1e7d78500dc0ef9d2343755e0",
+    "lean/Conjectures/AsgarliGhiocaYipResolventFiber.lean": "7f48c444a68846bb7045e4b506f44d5647541e4e0d6bcabae722645ba6f07bad",
+    "lean/Conjectures/AsgarliGhiocaYipRootLabels.lean": "23f375d3946062ec16a0a2afd5445eb0444f0e767bca122771ed264eaaf6736f",
+    "lean/Conjectures/AsgarliGhiocaYipSeed.lean": "77cc5426e87549e2d30a3e28c06871ad5373eeb935189c6139d795890a3f459a",
+    "lean/Conjectures/AsgarliGhiocaYipSeparator.lean": "c4733a022a61d7ec40551d1a4b2fd1d0edbc82a33f0866624a58c058d923acdc",
+    "lean/Conjectures/AsgarliGhiocaYipSymmetricBlocks.lean": "553a5428b5861eb678dd2ee373e8675f55f8b3f0b51569b3a8a54ddc60b13202",
+    "lean/Conjectures/AsgarliGhiocaYipTwistComponents.lean": "847675fe3f6498666d202e1a32ee2b7a83b6c1d3be6a019252c4b1b675303670",
+    "lean/Conjectures/AsgarliGhiocaYipTwistCount.lean": "68dc3a5d39438995165dddca636c1fde55da00211bd1e5ab1f8dc9addaca8269",
+    "lean/Conjectures/AsgarliGhiocaYipTwistFibers.lean": "cdab852d718c7a745caa97406578a18b86b0535c776959bbdf86bf5bfd61b333",
+    "lean/Conjectures/AsgarliGhiocaYipTwistMass.lean": "2a0eff1b935b005d66360b448150cb19e5f5177b2f29d22a1d795439a9e2a696",
+    "lean/Conjectures/AsgarliGhiocaYipTwistUpper.lean": "1d9f4c1d4bfc55942e0a642d67b20a15891ba57237d35c0d70fbe182efb5aef2",
+    "lean/Conjectures/AsgarliGhiocaYipTwistedModel.lean": "1765a7e89af799d5b24ec17e83651ba5b66224d3dbd38dde4e5a125e98a4400a",
+    "lean/Conjectures/AsgarliGhiocaYipUniversalResolvent.lean": "1d2e520ccb24448d03a007c9800a72552e7d4edde2d0515894c5d892f8f22440",
+    "lean/Conjectures/AsgarliGhiocaYipWeighted.lean": "f4b74011e895f44a6412f7d00b30644d51fb3b0affba7ad002abe5149e7bc065"
   },
   "input_sha256": {
-    "lean/Conjectures/AsgarliGhiocaYipBlockingPencil.lean": "1f064f8aaffa7b2b2ca8d8c1adde29f5a35b94357ea76ff3ae7e56eb2700f051",
-    "lean/Conjectures/AsgarliGhiocaYipLines.lean": "8c99e5b68d9a29c3902f49a19e1ed69f4f8e1bad10d42542d7baff1c1c36fb07",
-    "lean/Conjectures/AsgarliGhiocaYipOrderedRoots.lean": "9914d53e2a800969d218abe7bd92c50f97bf447b75854a69dbb20cadd4ea6b87",
-    "lean/Conjectures/AsgarliGhiocaYipRootLabels.lean": "76772de79179931071184efe1808958153c82f91df398e7eb6370a54fccc5473",
-    "lean/Conjectures/AsgarliGhiocaYipSeed.lean": "a9ef1658c03377d541d715600e45176754ec142cdbd68a18fd62f7c739793f39",
-    "results/asgarli-ghioca-yip-blocking-pencil/verification/TargetAudit.lean": "8c4cd6c2ad556a5b68baba6cf1309e3805d69adb54ba20269a2a37a9c1623684",
-    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
-    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
-    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
-    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85"
+    "lean/Conjectures/AGYStepanov/BivariateWeightedDegree.lean": "c92f5a0c87e025d19aea3bae2c6e7f8381e0c770ec3320955885ca743f9510e5",
+    "lean/Conjectures/AGYStepanov/CurveDerivation.lean": "576b23fa1b24124f7c7a9f39664a515a20b0fc5fb6f03301df3a5fddbedd58c1",
+    "lean/Conjectures/AGYStepanov/FrobeniusIndependence.lean": "28be191a95d454e7bb92231b2768b3731ef11cd11d0079a1c171dbee0538c138",
+    "lean/Conjectures/AGYStepanov/OrderOfDerivative.lean": "85650cb61f585d2cda501caadec5a7908a8abbe7b1f9feab34102bc347176821",
+    "lean/Conjectures/AGYStepanov/PlaneCurveIntersection.lean": "b92c51e68bde2b2d093bde577905800383b0915d63b02132f09d66a52dc15613",
+    "lean/Conjectures/AGYStepanov/PlaneCurvePointUpperBound.lean": "b5b8325a8dfc5ad8bd74c2a9fc79ad3f341643baa6b96f0f843a514195b228cd",
+    "lean/Conjectures/AGYStepanov/PowerSeriesBranch.lean": "2f0f892cd7ae97ff205a02968bffca43f2949250399cdba91b630b49ead8e0ee",
+    "lean/Conjectures/AGYStepanov/ResultantWeightedDegree.lean": "5558a70128c1b47cec0a7de7a6d6bb77e601201526315078716e12373b077285",
+    "lean/Conjectures/AGYStepanov/StepanovUpperBound.lean": "ebfbd889ac378a44cfde7f7aa72df3949ff7c574325a9744259b7dba262ead4a",
+    "lean/Conjectures/AsgarliGhiocaYipBlockingPencil.lean": "6baaf2bf8bde0792676821993d4727dd60b134eb632bd877d202a2129f9c6dc5",
+    "lean/Conjectures/AsgarliGhiocaYipComplete.lean": "7fd8aae4b30b24be8332be9981b2d4e5e021a670dacca604d8fe32f7bfa468a0",
+    "lean/Conjectures/AsgarliGhiocaYipExceptionalFibers.lean": "a75943c84f51b97c81a484c80c4a169dbb0b466eaa0c15d85710502f50280fb1",
+    "lean/Conjectures/AsgarliGhiocaYipIntersectionFamily.lean": "b306179f283274b7bf9e700257465111e1d7e7d09d5d7515e259a540568ed6f7",
+    "lean/Conjectures/AsgarliGhiocaYipLines.lean": "2a7cd3c2e6678a75ac5be131db8634812129344f00d28f07f9fd418995137918",
+    "lean/Conjectures/AsgarliGhiocaYipOrderedRoots.lean": "8535559ab0404fe65a90cf3ba82e177e25ce473e66457f224e70dd542801f988",
+    "lean/Conjectures/AsgarliGhiocaYipPlaneBudget.lean": "4bcccd023227e1862f40583545164df2d57d641528e96b31468ffbaf68a261ed",
+    "lean/Conjectures/AsgarliGhiocaYipPlaneDegree.lean": "46712130871bf1e2d4a58e1a0abb5a421686268a126362c79d4d71b27e784084",
+    "lean/Conjectures/AsgarliGhiocaYipPlaneFactor.lean": "23a2fd88c1f127f951edd052209ca7b6b33802e1e7d78500dc0ef9d2343755e0",
+    "lean/Conjectures/AsgarliGhiocaYipResolventFiber.lean": "7f48c444a68846bb7045e4b506f44d5647541e4e0d6bcabae722645ba6f07bad",
+    "lean/Conjectures/AsgarliGhiocaYipRootLabels.lean": "23f375d3946062ec16a0a2afd5445eb0444f0e767bca122771ed264eaaf6736f",
+    "lean/Conjectures/AsgarliGhiocaYipSeed.lean": "77cc5426e87549e2d30a3e28c06871ad5373eeb935189c6139d795890a3f459a",
+    "lean/Conjectures/AsgarliGhiocaYipSeparator.lean": "c4733a022a61d7ec40551d1a4b2fd1d0edbc82a33f0866624a58c058d923acdc",
+    "lean/Conjectures/AsgarliGhiocaYipSymmetricBlocks.lean": "553a5428b5861eb678dd2ee373e8675f55f8b3f0b51569b3a8a54ddc60b13202",
+    "lean/Conjectures/AsgarliGhiocaYipTwistComponents.lean": "847675fe3f6498666d202e1a32ee2b7a83b6c1d3be6a019252c4b1b675303670",
+    "lean/Conjectures/AsgarliGhiocaYipTwistCount.lean": "68dc3a5d39438995165dddca636c1fde55da00211bd1e5ab1f8dc9addaca8269",
+    "lean/Conjectures/AsgarliGhiocaYipTwistFibers.lean": "cdab852d718c7a745caa97406578a18b86b0535c776959bbdf86bf5bfd61b333",
+    "lean/Conjectures/AsgarliGhiocaYipTwistMass.lean": "2a0eff1b935b005d66360b448150cb19e5f5177b2f29d22a1d795439a9e2a696",
+    "lean/Conjectures/AsgarliGhiocaYipTwistUpper.lean": "1d9f4c1d4bfc55942e0a642d67b20a15891ba57237d35c0d70fbe182efb5aef2",
+    "lean/Conjectures/AsgarliGhiocaYipTwistedModel.lean": "1765a7e89af799d5b24ec17e83651ba5b66224d3dbd38dde4e5a125e98a4400a",
+    "lean/Conjectures/AsgarliGhiocaYipUniversalResolvent.lean": "1d2e520ccb24448d03a007c9800a72552e7d4edde2d0515894c5d892f8f22440",
+    "lean/Conjectures/AsgarliGhiocaYipWeighted.lean": "f4b74011e895f44a6412f7d00b30644d51fb3b0affba7ad002abe5149e7bc065",
+    "lean/lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
+    "lean/lake-manifest.json": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+    "lean/lakefile.toml": "91f787a34c9a80caf6d07c502a981c2adc85060414de9d114cfd864fbdd0ab3b",
+    "scripts/audit_lean_all_owned.py": "0e514f0d65a08879b1b01a4b42f93a80960ea80d811c0bf417ec209ec4c391b0",
+    "scripts/replay_lean.py": "4605df0993844e224a93b59336391f9d64ea1f03f3c9caf1123df0fd5e273940",
+    "scripts/verify_lean_target.py": "6d4ebc756a210051996ff231a96b8ed11f900189c823cdfc56467bed82665bc8",
+    "results/asgarli-ghioca-yip-blocking-pencil/verification/TargetAudit.lean": "8f1b94eb7514a748b15f958daa5d536adfc07c862428b0ec5ba034e575ed4daf"
   },
   "lean_toolchain": "leanprover/lean4:v4.35.0",
-  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
-  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "manifest_sha256": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
   "commands": [
     {
       "command": [
@@ -120,7 +195,371 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
-        "../results/asgarli-ghioca-yip-blocking-pencil/verification/TargetAudit.lean"
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipPlaneFactor.olean",
+        "Conjectures/AsgarliGhiocaYipPlaneFactor.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipPlaneFactor.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipIntersectionFamily.olean",
+        "Conjectures/AsgarliGhiocaYipIntersectionFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipIntersectionFamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipPlaneBudget.olean",
+        "Conjectures/AsgarliGhiocaYipPlaneBudget.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipPlaneBudget.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipSeparator.olean",
+        "Conjectures/AsgarliGhiocaYipSeparator.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipSeparator.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipResolventFiber.olean",
+        "Conjectures/AsgarliGhiocaYipResolventFiber.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipResolventFiber.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipSymmetricBlocks.olean",
+        "Conjectures/AsgarliGhiocaYipSymmetricBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipSymmetricBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipWeighted.olean",
+        "Conjectures/AsgarliGhiocaYipWeighted.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipWeighted.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipUniversalResolvent.olean",
+        "Conjectures/AsgarliGhiocaYipUniversalResolvent.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipUniversalResolvent.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipTwistFibers.olean",
+        "Conjectures/AsgarliGhiocaYipTwistFibers.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipTwistFibers.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipExceptionalFibers.olean",
+        "Conjectures/AsgarliGhiocaYipExceptionalFibers.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipExceptionalFibers.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipTwistComponents.olean",
+        "Conjectures/AsgarliGhiocaYipTwistComponents.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipTwistComponents.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipTwistCount.olean",
+        "Conjectures/AsgarliGhiocaYipTwistCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipTwistCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipTwistMass.olean",
+        "Conjectures/AsgarliGhiocaYipTwistMass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipTwistMass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/BivariateWeightedDegree.olean",
+        "Conjectures/AGYStepanov/BivariateWeightedDegree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.BivariateWeightedDegree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/CurveDerivation.olean",
+        "Conjectures/AGYStepanov/CurveDerivation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.CurveDerivation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/PowerSeriesBranch.olean",
+        "Conjectures/AGYStepanov/PowerSeriesBranch.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.PowerSeriesBranch.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/ResultantWeightedDegree.olean",
+        "Conjectures/AGYStepanov/ResultantWeightedDegree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.ResultantWeightedDegree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/PlaneCurveIntersection.olean",
+        "Conjectures/AGYStepanov/PlaneCurveIntersection.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.PlaneCurveIntersection.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/OrderOfDerivative.olean",
+        "Conjectures/AGYStepanov/OrderOfDerivative.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.OrderOfDerivative.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/FrobeniusIndependence.olean",
+        "Conjectures/AGYStepanov/FrobeniusIndependence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.FrobeniusIndependence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/StepanovUpperBound.olean",
+        "Conjectures/AGYStepanov/StepanovUpperBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.StepanovUpperBound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AGYStepanov/PlaneCurvePointUpperBound.olean",
+        "Conjectures/AGYStepanov/PlaneCurvePointUpperBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AGYStepanov.PlaneCurvePointUpperBound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipPlaneDegree.olean",
+        "Conjectures/AsgarliGhiocaYipPlaneDegree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipPlaneDegree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipTwistUpper.olean",
+        "Conjectures/AsgarliGhiocaYipTwistUpper.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipTwistUpper.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipTwistedModel.olean",
+        "Conjectures/AsgarliGhiocaYipTwistedModel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipTwistedModel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipComplete.olean",
+        "Conjectures/AsgarliGhiocaYipComplete.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipComplete.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        ".lake/agy-target-check/TargetAudit.lean"
       ],
       "exit_code": 0,
       "log": "audit.log"
@@ -132,10 +571,22 @@
         "python3",
         "../scripts/replay_lean.py",
         "--root",
-        "Conjectures.AsgarliGhiocaYipBlockingPencil"
+        "Conjectures.AsgarliGhiocaYipComplete"
       ],
       "exit_code": 0,
       "log": "replay.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "../results/asgarli-ghioca-yip-blocking-pencil/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "publication-audit.log"
     }
   ],
   "all_owned_audit": {
@@ -144,14 +595,20 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 128,
-    "modules": 5,
-    "private_declarations": 36,
-    "raw_declarations": 128,
-    "required": 7,
+    "declarations": 583,
+    "modules": 31,
+    "private_declarations": 180,
+    "raw_declarations": 583,
+    "required": 4,
     "tag": "passed",
-    "theorems": 114
+    "theorems": 494
   },
-  "full_repository_gate": "not run by this target-scoped check",
-  "status": "PASS"
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "actual_axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
 }

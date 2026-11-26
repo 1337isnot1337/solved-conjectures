@@ -22,7 +22,7 @@ Lean proves the full-support counterexample and the square-root-logarithmic grow
 
 ## Asgarli–Ghioca–Yip blocking-pencil problem
 
-Lean proves the logarithmic upper bound over every finite field, counts regular seeds and gives at least $`q(q-1)/d`$ missing lines for one degree-$`d`$ graph. For a growing family with a common leading coefficient, the missing-line bound follows from `RegularOrderingEstimate`; the estimate itself remains in the written proof. [Lean theorems and receipt](../results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
+Lean proves both explicit logarithmic bounds for the blocking pencil and the quantitative all-graph lower bound. The growing-family estimate follows from Stepanov and twist averaging, not an assumed curve lower bound. [Lean theorems and receipt](../results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
 
 ## Mallik–Diwan–Kothari degree-count conjecture
 

@@ -6,7 +6,7 @@ The lower bound extends to arbitrary degree-$`d`$ polynomial graphs with the sam
 
 **Review status.** Independent mathematical review passed for all three proofs. The reviewer also checked the trace-hyperplane correspondence in the field of order 32. [Review record](https://github.com/1337isnot1337/solved-conjectures/issues/826#issuecomment-7192871519). The [source and priority audit](AUDIT.md) records the literature search and the [reproducible finite-field checks](verify.py).
 
-**Lean status:** partial. Lean proves the logarithmic upper bound over every finite field, counts squarefree seeds without rational roots, and shows that one degree-$`d`$ graph misses at least $`q(q-1)/d`$ projective lines. For growing families it proves the lower bound assuming `RegularOrderingEstimate`; the uniform point count remains to be formalized. [Lean theorems and receipt](FORMALIZATION.md).
+**Lean status:** complete for the blocking-pencil theorem and the quantitative missing-line bound. Lean proves the uniform ordering estimate by the polynomial Stepanov upper bound and exact twist averaging, then derives both logarithmic bounds. The two companion results below remain outside this formalization. [Lean theorems and receipt](FORMALIZATION.md).
 
 For [Frobenius exponents](FROBENIUS.md), the shift parameters must meet every affine hyperplane over the fixed field. The Jamison–Brouwer–Schrijver theorem then gives the exact finite minimum.
 
