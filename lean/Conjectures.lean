@@ -1,3 +1,8 @@
+import Conjectures.WangYangFussNarayana
+import Conjectures.WangYangFussNarayanaCriteria
+import Conjectures.WangYangFussNarayanaDefs
+import Conjectures.WangYangFussNarayanaDet
+import Conjectures.WangYangFussNarayanaMatrix
 import Conjectures.TransportationGrowthTheorems
 import Conjectures.TransportationLegendreBound
 import Conjectures.TransportationLegendreCenter

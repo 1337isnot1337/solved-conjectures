@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Wang–Yang’s six Fuss–Narayana matrices
+
+Adam Benazouz formalized all six matrices in Conjecture 4.1 for every integer parameter at least two. Two independent strict builds, transitive axiom audits and stock-kernel runs verified 322 declarations across five modules and all seven registered endpoints. [Theorems](../lean/Conjectures/WangYangFussNarayana.lean) · [Research receipt](verification/lean-wang-yang-fuss-narayana-20261126/receipt.json) · [Original contribution](https://github.com/1337isnot1337/solved-conjectures/pull/840).
+
 ## Square-root-logarithmic growth of nonreal transportation roots
 
 Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Complete theorem](../lean/Conjectures/TransportationGrowthTheorems.lean) · [Research receipt](verification/lean-transportation-growth-20261126/receipt.json).
