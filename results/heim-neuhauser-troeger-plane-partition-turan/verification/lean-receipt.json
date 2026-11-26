@@ -1,7 +1,7 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-26T06:07:13.484042+00:00",
-  "finished_at": "2026-11-26T08:02:37.045222+00:00",
+  "started_at": "2026-11-26T11:12:19.432084+00:00",
+  "finished_at": "2026-11-26T15:03:26.668836+00:00",
   "root": "Conjectures.HeimNeuhauserPlanePartitionTheorems",
   "project_modules": [
     "Conjectures.HeimNeuhauserPlanePartition",
@@ -153,10 +153,10 @@
     "lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.lean": "cc900b37a95d45694eb5b7fa71ec725660f7222ace6ad2ed820dee3d9752f278",
     "lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.lean": "123beddbe62f89bdf597c99381acce67f093c787555519a2cbf7905038e11c19",
     "lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.lean": "d15fd3a5fdaf331e78507a7fa061e1fd8f25be4e1bc563154116761db844a063",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean": "a02d831b1ac7f124090d2de04b90499c4ac04e345c8c76d947aab80efd178747",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean": "ffbe5997d8621470059679f35ab81e892f3eb934f48fdf2b2b9529d9c9e64b62",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean": "bec02e24fb7213cf3e9f865efb053e891ace5329075f459f40bf4eed9c0ee502",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean": "3f226f134dbc0776f8ee4847f832bd83b42c70f6ce5a60252a2c6611b9b314c2",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean": "3c515cf6a901c082c29b455d76f947fce152a986e1d8a3aa7b4c284aafe91958",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean": "4533a8faccab7d45e6527a47464710791c8b2f58516c9b527ca51cf5adf5b0af",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean": "0305f75d9b6a9725d34fee410f60d83369e24c6bad037595f1f9dda9c4b51a88",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean": "338971399e6744fc817b2b291945898565b76ecdb999cdc3d6374943d2888d53",
     "lean/Conjectures/HeimNeuhauserPlanePartitionInversion.lean": "af2fc3ed3882ed78579e93bea5a85f3f0219af0bc5243a85c41c4e02f1339657",
     "lean/Conjectures/HeimNeuhauserPlanePartitionLargeRadius.lean": "39d187b7ab86985e23933baa684ce737ffd6a00ea237de0d497c6b05d18408ad",
     "lean/Conjectures/HeimNeuhauserPlanePartitionMiddleGrid.lean": "462d173da2f548f9e0145864e8f9c7af8082ae25487807b5932f8be942190da5",
@@ -212,10 +212,10 @@
     "lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.lean": "cc900b37a95d45694eb5b7fa71ec725660f7222ace6ad2ed820dee3d9752f278",
     "lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.lean": "123beddbe62f89bdf597c99381acce67f093c787555519a2cbf7905038e11c19",
     "lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.lean": "d15fd3a5fdaf331e78507a7fa061e1fd8f25be4e1bc563154116761db844a063",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean": "a02d831b1ac7f124090d2de04b90499c4ac04e345c8c76d947aab80efd178747",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean": "ffbe5997d8621470059679f35ab81e892f3eb934f48fdf2b2b9529d9c9e64b62",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean": "bec02e24fb7213cf3e9f865efb053e891ace5329075f459f40bf4eed9c0ee502",
-    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean": "3f226f134dbc0776f8ee4847f832bd83b42c70f6ce5a60252a2c6611b9b314c2",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean": "3c515cf6a901c082c29b455d76f947fce152a986e1d8a3aa7b4c284aafe91958",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean": "4533a8faccab7d45e6527a47464710791c8b2f58516c9b527ca51cf5adf5b0af",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean": "0305f75d9b6a9725d34fee410f60d83369e24c6bad037595f1f9dda9c4b51a88",
+    "lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean": "338971399e6744fc817b2b291945898565b76ecdb999cdc3d6374943d2888d53",
     "lean/Conjectures/HeimNeuhauserPlanePartitionInversion.lean": "af2fc3ed3882ed78579e93bea5a85f3f0219af0bc5243a85c41c4e02f1339657",
     "lean/Conjectures/HeimNeuhauserPlanePartitionLargeRadius.lean": "39d187b7ab86985e23933baa684ce737ffd6a00ea237de0d497c6b05d18408ad",
     "lean/Conjectures/HeimNeuhauserPlanePartitionMiddleGrid.lean": "462d173da2f548f9e0145864e8f9c7af8082ae25487807b5932f8be942190da5",
@@ -266,7 +266,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartition.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartition.olean",
         "Conjectures/HeimNeuhauserPlanePartition.lean"
       ],
       "exit_code": 0,
@@ -280,7 +280,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcais.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcais.olean",
         "Conjectures/OrdinaryDarcais.lean"
       ],
       "exit_code": 0,
@@ -294,7 +294,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisPacked.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisPacked.olean",
         "Conjectures/OrdinaryDarcaisPacked.lean"
       ],
       "exit_code": 0,
@@ -308,7 +308,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisRows.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisRows.olean",
         "Conjectures/OrdinaryDarcaisRows.lean"
       ],
       "exit_code": 0,
@@ -322,7 +322,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionRows.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionRows.olean",
         "Conjectures/HeimNeuhauserPlanePartitionRows.lean"
       ],
       "exit_code": 0,
@@ -336,7 +336,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionChecks.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionChecks.olean",
         "Conjectures/HeimNeuhauserPlanePartitionChecks.lean"
       ],
       "exit_code": 0,
@@ -350,7 +350,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionBoundary.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionBoundary.olean",
         "Conjectures/HeimNeuhauserPlanePartitionBoundary.lean"
       ],
       "exit_code": 0,
@@ -364,7 +364,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionScalar.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionScalar.olean",
         "Conjectures/HeimNeuhauserPlanePartitionScalar.lean"
       ],
       "exit_code": 0,
@@ -378,7 +378,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionData.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionData.olean",
         "Conjectures/HeimNeuhauserPlanePartitionData.lean"
       ],
       "exit_code": 0,
@@ -392,7 +392,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCertificate.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCertificate.olean",
         "Conjectures/HeimNeuhauserPlanePartitionCertificate.lean"
       ],
       "exit_code": 0,
@@ -406,7 +406,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices000To031.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices000To031.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices000To031.lean"
       ],
       "exit_code": 0,
@@ -420,7 +420,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices032To063.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices032To063.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices032To063.lean"
       ],
       "exit_code": 0,
@@ -434,7 +434,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices064To095.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices064To095.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices064To095.lean"
       ],
       "exit_code": 0,
@@ -448,7 +448,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices096To119.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices096To119.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices096To119.lean"
       ],
       "exit_code": 0,
@@ -462,7 +462,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices120To143.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices120To143.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices120To143.lean"
       ],
       "exit_code": 0,
@@ -476,7 +476,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices144To163.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices144To163.lean"
       ],
       "exit_code": 0,
@@ -490,7 +490,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices164To183.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices164To183.lean"
       ],
       "exit_code": 0,
@@ -504,7 +504,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices184To199.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices184To199.lean"
       ],
       "exit_code": 0,
@@ -518,7 +518,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices200To214.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices200To214.lean"
       ],
       "exit_code": 0,
@@ -532,7 +532,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices215To229.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices215To229.lean"
       ],
       "exit_code": 0,
@@ -546,7 +546,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices230To239.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices230To239.lean"
       ],
       "exit_code": 0,
@@ -560,7 +560,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionIndices240To250.olean",
         "Conjectures/HeimNeuhauserPlanePartitionIndices240To250.lean"
       ],
       "exit_code": 0,
@@ -574,7 +574,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFinite.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFinite.olean",
         "Conjectures/HeimNeuhauserPlanePartitionFinite.lean"
       ],
       "exit_code": 0,
@@ -588,7 +588,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMoments.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMoments.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMoments.lean"
       ],
       "exit_code": 0,
@@ -602,7 +602,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionSaddle.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionSaddle.olean",
         "Conjectures/HeimNeuhauserPlanePartitionSaddle.lean"
       ],
       "exit_code": 0,
@@ -616,7 +616,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentBounds.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentBounds.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMomentBounds.lean"
       ],
       "exit_code": 0,
@@ -630,7 +630,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCells.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCells.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMomentCells.lean"
       ],
       "exit_code": 0,
@@ -644,7 +644,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCellsOne.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCellsOne.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMomentCellsOne.lean"
       ],
       "exit_code": 0,
@@ -658,7 +658,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCellsTwo.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCellsTwo.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMomentCellsTwo.lean"
       ],
       "exit_code": 0,
@@ -672,7 +672,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCellsThree.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMomentCellsThree.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMomentCellsThree.lean"
       ],
       "exit_code": 0,
@@ -686,7 +686,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionLargeRadius.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionLargeRadius.olean",
         "Conjectures/HeimNeuhauserPlanePartitionLargeRadius.lean"
       ],
       "exit_code": 0,
@@ -700,7 +700,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionPowerSeries.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionPowerSeries.olean",
         "Conjectures/HeimNeuhauserPlanePartitionPowerSeries.lean"
       ],
       "exit_code": 0,
@@ -714,7 +714,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisCentral.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/OrdinaryDarcaisCentral.olean",
         "Conjectures/OrdinaryDarcaisCentral.lean"
       ],
       "exit_code": 0,
@@ -728,7 +728,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFourierCentral.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFourierCentral.olean",
         "Conjectures/HeimNeuhauserPlanePartitionFourierCentral.lean"
       ],
       "exit_code": 0,
@@ -742,7 +742,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFourier.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFourier.olean",
         "Conjectures/HeimNeuhauserPlanePartitionFourier.lean"
       ],
       "exit_code": 0,
@@ -756,7 +756,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCharacteristic.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCharacteristic.olean",
         "Conjectures/HeimNeuhauserPlanePartitionCharacteristic.lean"
       ],
       "exit_code": 0,
@@ -770,7 +770,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFourierSign.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionFourierSign.olean",
         "Conjectures/HeimNeuhauserPlanePartitionFourierSign.lean"
       ],
       "exit_code": 0,
@@ -784,7 +784,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTilt.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTilt.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTilt.lean"
       ],
       "exit_code": 0,
@@ -798,7 +798,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCosineInversion.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionCosineInversion.olean",
         "Conjectures/HeimNeuhauserPlanePartitionCosineInversion.lean"
       ],
       "exit_code": 0,
@@ -812,7 +812,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionInversion.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionInversion.olean",
         "Conjectures/HeimNeuhauserPlanePartitionInversion.lean"
       ],
       "exit_code": 0,
@@ -826,7 +826,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionThirdMoment.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionThirdMoment.olean",
         "Conjectures/HeimNeuhauserPlanePartitionThirdMoment.lean"
       ],
       "exit_code": 0,
@@ -840,7 +840,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellArithmetic.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellArithmetic.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailCellArithmetic.lean"
       ],
       "exit_code": 0,
@@ -854,7 +854,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellsOne.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellsOne.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailCellsOne.lean"
       ],
       "exit_code": 0,
@@ -868,7 +868,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellsTwo.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellsTwo.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailCellsTwo.lean"
       ],
       "exit_code": 0,
@@ -882,7 +882,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellsThree.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCellsThree.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailCellsThree.lean"
       ],
       "exit_code": 0,
@@ -896,7 +896,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionGeometricDamping.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionGeometricDamping.olean",
         "Conjectures/HeimNeuhauserPlanePartitionGeometricDamping.lean"
       ],
       "exit_code": 0,
@@ -910,7 +910,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionDampingBounds.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionDampingBounds.olean",
         "Conjectures/HeimNeuhauserPlanePartitionDampingBounds.lean"
       ],
       "exit_code": 0,
@@ -924,7 +924,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailParameters.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailParameters.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailParameters.lean"
       ],
       "exit_code": 0,
@@ -938,7 +938,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailInterval.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailInterval.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailInterval.lean"
       ],
       "exit_code": 0,
@@ -952,7 +952,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCoverage.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailCoverage.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailCoverage.lean"
       ],
       "exit_code": 0,
@@ -966,7 +966,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMiddleGrid.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMiddleGrid.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMiddleGrid.lean"
       ],
       "exit_code": 0,
@@ -980,7 +980,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailPointwise.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailPointwise.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailPointwise.lean"
       ],
       "exit_code": 0,
@@ -994,7 +994,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailExponential.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTailExponential.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTailExponential.lean"
       ],
       "exit_code": 0,
@@ -1008,7 +1008,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMiddleIntegral.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionMiddleIntegral.olean",
         "Conjectures/HeimNeuhauserPlanePartitionMiddleIntegral.lean"
       ],
       "exit_code": 0,
@@ -1022,7 +1022,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionOuterIntegral.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionOuterIntegral.olean",
         "Conjectures/HeimNeuhauserPlanePartitionOuterIntegral.lean"
       ],
       "exit_code": 0,
@@ -1036,7 +1036,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTuranTail.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTuranTail.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTuranTail.lean"
       ],
       "exit_code": 0,
@@ -1050,7 +1050,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-plane-partition-full-main/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.olean",
+        "/home/cinna/solved-plane-memory-publication/lean/.lake/build/lib/lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.olean",
         "Conjectures/HeimNeuhauserPlanePartitionTheorems.lean"
       ],
       "exit_code": 0,
@@ -1063,7 +1063,7 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
-        "/home/cinna/.local/state/solved-plane-partition-lean/main-full/TargetAudit.lean"
+        "/home/cinna/.local/state/solved-all-lean-20261126/plane-publication/TargetAudit.lean"
       ],
       "exit_code": 0,
       "log": "audit.log"
@@ -1073,7 +1073,7 @@
         "lake",
         "env",
         "python3",
-        "/home/cinna/solved-plane-partition-full-main/scripts/replay_lean.py",
+        "/home/cinna/solved-plane-memory-publication/scripts/replay_lean.py",
         "--root",
         "Conjectures.HeimNeuhauserPlanePartitionTheorems",
         "--per-module"
