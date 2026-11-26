@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-26 — Verify Shumyatsky’s actual single-factor lift
+
+Lean checks that the outer action factors through the socle quotient,
+then carries out the inner adjustments under the explicit
+almost-simple automorphism and generation hypotheses.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify shifted-tail inputs for Pomerance–Sárközy’s process
 
 Lean checks the shifted integer tail-product reindexing and the moving

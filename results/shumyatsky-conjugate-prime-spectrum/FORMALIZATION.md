@@ -144,6 +144,15 @@ and the source credits in the [audit](AUDIT.md).
   conclusion uses solvability of the outer quotient and cyclicity
   of the coprime subgroups as hypotheses.
 
+- [Single-factor lift](../../lean/Conjectures/ShumyatskySingleFactorLift.lean).
+  The outer action kills the socle and its restriction to the
+  selected normal subgroup gives the inner automorphisms. Lean
+  verifies minimality of the actual conjugation image, applies
+  cyclic normalization, and realizes the prescribed images by
+  actual inner adjustments. The theorem takes the external
+  solvability, coprime-automorphism cyclicity, and conjugate-generation
+  inputs as explicit premises.
+
 The remaining generation inputs include the almost-simple existence
 of conjugate generators and the two-generator lifting property.
 
@@ -168,4 +177,5 @@ checker. The abelian reduction and cyclic normalization passed their exact scope
 [Cyclic-normalization receipt](verification/cyclic-normalization/receipt.json) ·
 [Actual-socle receipt](verification/socle-structure/receipt.json) ·
 [Simple-power receipt](verification/simple-power/receipt.json) ·
-[Coprime-quotient receipt](verification/coprime-quotient/receipt.json).
+[Coprime-quotient receipt](verification/coprime-quotient/receipt.json) ·
+[Single-factor receipt](verification/single-factor/receipt.json).
