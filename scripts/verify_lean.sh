@@ -190,6 +190,15 @@ modules=(
   Conjectures.CyrusianKaplanRayBoundary
   Conjectures.CyrusianKaplanSignRadii
   Conjectures.CyrusianKaplanTriangulationCheckpoint
+  Conjectures.CyrusianKaplanDegreeTransfer
+  Conjectures.CyrusianKaplanExactDegreeCheckpoint
+  Conjectures.CyrusianKaplanExactDegreeReduction
+  Conjectures.CyrusianKaplanRationalRayChart
+  Conjectures.CyrusianKaplanRationalSimplexGeneral
+  Conjectures.CyrusianKaplanStratumQuasipolynomial
+  Conjectures.CyrusianKaplanTileLattice
+  Conjectures.CyrusianKaplanTupleFlatten
+  Conjectures.CyrusianKaplanTupleScale
   Conjectures.CyrusianKaplanRationalSignPolytope
   Conjectures.CyrusianKaplanRationalVertices
   Conjectures.CyrusianKaplanCompactStrata

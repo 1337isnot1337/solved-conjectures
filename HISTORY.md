@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the exact Cyrusian–Kaplan quasipolynomial
+
+Lean proves all-positive-genus quasipolynomiality and exact degree in every residue for each fixed positive ordinarization number. The entry's separate eventual monotonicity corollary is outside this checkpoint. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify literal deleted-edge run rigidity in Lean
 
 Step 4 of @aadrianvv’s proof of the Mazák–Zrubák conjecture is now checked on the actual edge order. The table and final index equality remain separate. [Scope and receipt](results/circular-index-complete-minus-edge/FORMALIZATION.md).
