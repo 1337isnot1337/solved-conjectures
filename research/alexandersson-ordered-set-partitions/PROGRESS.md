@@ -2,6 +2,8 @@
 
 **Status (20 November 2026): open.** No complete proof or counterexample is claimed. This is a research note for [issue #108](https://github.com/1337isnot1337/solved-conjectures/issues/108), not an accepted result.
 
+On 26 November a [dominant-pole argument](edge.md) established strict interlacing of a positive fraction of the rightmost real zeros for every fixed threshold. It also gives the limiting endpoint and the spacing of each fixed number of extreme zeros. The full real-rootedness and interlacing conjecture remains open.
+
 ## Primary statement
 
 Let O_{n,j}(t) be the generating polynomial for ordered set partitions of [n] in which t counts blocks of cardinality at least j, with j >= 2. Alexandersson conjectures that for **every** such j and all n, O_{n,j}(t) has only real zeros and that consecutive polynomials O_{n,j}, O_{n+1,j} interlace. This is one jointly named conjecture, not separate solutions for each value of j. Source: [Alexandersson's SymCat open-problem page](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#set-partitions-and-trees), maintained and updated 19 November 2026, section "Set partitions and trees"; source itself records initial checks j<=5, n<=30. This page is an author-maintained public problem statement, not a peer-reviewed 2026 article for this specific conjecture.
