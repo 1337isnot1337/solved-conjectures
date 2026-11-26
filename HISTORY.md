@@ -13,6 +13,13 @@ Lean checks the actual diagonal point counts in direct and skew sums
 and proves that a skew sum’s diagonal meets at most one child.
 [Scope and receipt](results/separable-derangements-limit/FORMALIZATION.md).
 
+## 2026-11-25 — Verify the weighted Tom–Vailaya path column identities
+
+Lean checks the generating identity, the coefficient recurrence for
+weighted path transfer, the sums of the color columns, and the
+finite-color cutoff.
+[Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify endpoint gluing in Tom–Vailaya’s proof
 
 Lean proves the ordered product formula for the color matrices of
