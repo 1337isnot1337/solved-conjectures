@@ -95,6 +95,7 @@ run_cmd do
     `TomVailaya.trace_colorMatrix_eq_chromatic_close,
     `TomVailaya.chromatic_close_eq_zero_of_arc,
     `TomVailaya.colorMatrix_pathEdge,
+    `TomVailaya.colorMatrix_glue,
     `KauersKoutschan.dividedSum_eq_pair_sum,
     `KauersKoutschan.truncated_pair_sum,
     `KauersKoutschan.dividedSum_add_two,

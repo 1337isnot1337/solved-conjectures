@@ -2812,6 +2812,7 @@ modules=(
   Conjectures.WaringGapSymmetryMonoid
   Conjectures.WaringGapSymmetry
   Conjectures.TomVailayaColorTrace
+  Conjectures.TomVailayaColorGluing
   Conjectures.KauersKoutschanCertificate
   Conjectures.KauersKoutschanDividedSum
   Conjectures.KauersKoutschanCount
