@@ -1,5 +1,9 @@
 # Verification
 
+## Fractional general position conjecture for square grids
+
+Run `python3 results/fractional-general-position-square-grids/verify.py --limit 110 --also 199 200` to check the rank marginals, legal mass couplings and primal longest paths in exact rational arithmetic. The [written proof](../results/fractional-general-position-square-grids/PROOF.md) treats every even and odd order.
+
 ## Cioba–Savvas shutout number conjecture
 
 Run `python3 results/cioba-savvas-shutout-number/verify.py` to check 127,850 endpoint updates for exact independence polynomials and 432 played games under the stated degree condition. The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) is independent of the finite checks.

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Fractional general position conjecture for square grids
+
+Proved both parity clauses of Conjecture 5.38. Linear rank potentials give exact fractional geodesic covers for every square grid. [Proof](results/fractional-general-position-square-grids/PROOF.md) · [Audit](results/fractional-general-position-square-grids/AUDIT.md).
+
 ## 2026-11-26 — Cioba–Savvas shutout number conjecture
 
 Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).

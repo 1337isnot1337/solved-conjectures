@@ -18,6 +18,8 @@ jobs:
         run: |
           python3 results/alexandersson-graphical-dist/check.py
           python3 results/alexandersson-graphical-dist/check_unions.py
+      - name: Check exact fractional square-grid cover certificates
+        run: python3 results/fractional-general-position-square-grids/verify.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
