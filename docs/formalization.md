@@ -73,7 +73,7 @@ class. The [sharp uniform construction](../lean/Conjectures/AlmironMoyanoWilfGen
 shows that across all semigroups of multiplicity $m$, the threshold is $m$
 for each prescribed generator count from one to $m$. The development reuses
 the existing proof of Question 4.8 and the normalized multiplicity bound.
-The separate exact comparison for two-generated semigroups remains open in Lean.
+Lean now verifies the [exact two-generator thresholds and fixed-multiplicity comparison](../lean/Conjectures/AlmironMoyanoWilfClassification.lean), including thresholds one and two at multiplicity two and threshold three at every larger multiplicity. The [gap family](../lean/Conjectures/AlmironMoyanoWilfGapFamily.lean) has maximum gap Wilf number $4-m$ for every $m\ge5$. [Kernel receipt](verification/lean-wilf-classification/receipt.json).
 
 ## Németh–Seberry–Shu conjecture
 

@@ -149,6 +149,12 @@ modules=(
   Conjectures.AlmironMoyanoWilfAntichains
   Conjectures.AlmironMoyanoWilfGeneratorCount
   Conjectures.AlmironMoyanoWilfFixedThreshold
+  Conjectures.AlmironMoyanoWilfGapFamily
+  Conjectures.AlmironMoyanoWilfMultiplicityTwo
+  Conjectures.AlmironMoyanoWilfTwoGeneratorGaps
+  Conjectures.AlmironMoyanoWilfTwoGeneratorModules
+  Conjectures.AlmironMoyanoWilfTwoGeneratorThreshold
+  Conjectures.AlmironMoyanoWilfClassification
   Conjectures.GravgaardLeeUpperLowerMoves
   Conjectures.GravgaardLeeUpperLowerOrbit
   Conjectures.GravgaardLeeUpperLowerRepair
