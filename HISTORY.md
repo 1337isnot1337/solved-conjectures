@@ -4,6 +4,10 @@
 
 Coefficient-adjusted integer place values prove all three of Nathanson’s §6 questions without any prime restrictions. Balancing the two largest coefficients and separating the low residues gives the exact leading constant for two variables. [Proof](results/nathanson-sidon-systems/PROOF.md) · [Audit](results/nathanson-sidon-systems/AUDIT.md) · [Issue #798](https://github.com/1337isnot1337/solved-conjectures/issues/798).
 
+## Circular-index certificates within the package memory limit
+
+The finite circular-index certificates for degrees 49, 50, 51, 53, 55 and 59 now verify their vertex tables in groups of sixteen. All six modules passed the normal Lake build under the configured 4.5 GB limit. The joint finite, stored-graph and all-degree proof suites also passed strict compilation, full axiom audit and stock-kernel replay twice. [Finite certificates](results/circular-index-complete-minus-edges/FORMALIZATION.md) · [Stored insertions](results/circular-index-upper-half-circulants/FORMALIZATION.md) · [All degrees](results/circular-index-upper-half-remaining-deltas/FORMALIZATION.md).
+
 ## 2026-11-26 — Fiscus–Hurlbert–Myzelev–Pence grid conjecture
 
 The first player can force a win on the 14-vertex ladder, contradicting the conjecture for all even rectangular grids. The written strategy matches every possible reply, with an independent exact minimax check. [Proof](results/fiscus-grid-game/PROOF.md) · [Audit](results/fiscus-grid-game/AUDIT.md) · [Issue #791](https://github.com/1337isnot1337/solved-conjectures/issues/791).
