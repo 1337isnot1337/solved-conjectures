@@ -143,6 +143,8 @@ modules=(
   Conjectures.PomeranceSarkozyGridMarkov
   Conjectures.PomeranceSarkozyGridTightness
   Conjectures.PomeranceSarkozyRareBernoulliTools
+  Conjectures.PomeranceSarkozyBernoulliTiltEvents
+  Conjectures.PomeranceSarkozyBernoulliTiltProduct
   Conjectures.PomeranceSarkozyRareCumulant
   Conjectures.PomeranceSarkozyRareCumulantBounds
   Conjectures.PomeranceSarkozyRareCumulantFirstBound

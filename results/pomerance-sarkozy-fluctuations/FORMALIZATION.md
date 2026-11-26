@@ -196,3 +196,14 @@ These are the pointwise analytic inputs; the cumulant limit and
 the arithmetic large-deviation principle are not claimed here.
 
 [Bernoulli cumulant replay](verification/rare-bernoulli-tools/receipt.json)
+
+## Exact finite Bernoulli tilting
+
+The product of the logistic-tilted Bernoulli atom masses equals the
+original product times the exact centered exponential weight. Lean
+also checks normalization and the resulting finite-event upper and
+lower bounds, valid even for coordinates with success probability
+zero or one. This does not assert convergence or concentration under
+the tilt, or the arithmetic large-deviation principle.
+
+[Finite tilt replay](verification/bernoulli-tilt/receipt.json)
