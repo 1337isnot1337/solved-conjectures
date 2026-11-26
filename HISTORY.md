@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Verify exact finite Bernoulli tilting
+
+Lean checks normalization, the tilted joint atom weight, and
+finite-event upper and lower bounds.
+[Proof scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Complete Lean formalization of Burstein’s A218225 enumeration conjecture
 
 Lean verifies literal equinumerosity of `X = Av(2134, 42153, 24153)` and `Y = Av(2143, 42135, 24135)` for every length `n : ℕ`, and proves that their common nonempty generating series is the unique zero-constant-term solution to `P = (1 + P)(x + (1 - x)P^2)`. The six-module closure passed strict compilation, the 815-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/burstein-a218225-enumeration/FORMALIZATION.md).
