@@ -34,8 +34,24 @@ Eleven rational cuts exhibit ten distinct negative real roots. A degree-twelve p
 
 The original checker computed 25 dilation counts and obtained the same root count by a rational Sturm chain. A separate checker enumerated 351,163 integral tables across 30 small dilations and checked all ten sign intervals. [Original margin checker](check.py) · [Independent enumeration](check_dilations.py).
 
-Two independent runs compiled all 19 modules with warnings treated as errors and audited 319 declarations, including 258 theorems, 5 private declarations and all 94 named endpoints. Both replayed the pinned stock Lean kernel. The axiom audit found only propositional extensionality, classical choice and quotient soundness. [Verification receipt](verification/lean-receipt.json).
+For the finite counterexample, two independent runs compiled all 19 modules with warnings treated as errors and audited 319 declarations, including 258 theorems, 5 private declarations and all 94 named endpoints. Both replayed the pinned stock Lean kernel. The axiom audit found only propositional extensionality, classical choice and quotient soundness. [Verification receipt](verification/lean-receipt.json).
 
-The companion theorem giving at least a constant times $\sqrt{m\log m}$ nonreal zeros for all sufficiently large $m$ remains in the written proof. The catalogue marks the combined result partial. [Asymptotic proof](proof.md#an-unbounded-family-of-nonreal-roots).
+## Nonreal roots throughout the family
+
+Let $N_m$ count the complex roots of the unique Ehrhart numerator whose imaginary part is nonzero, with multiplicity. Whenever $m>16$ and $\log m\ge32$, Lean proves the effective bound
+
+```math
+\sqrt{m\log m}\le96\pi\,(N_m+5).
+```
+
+Consequently $N_m\ge\sqrt{m\log m}/(192\pi)$ for every sufficiently large integer $m$. The theorem quantifies over the numerator determined by the actual lattice-point counts. It also proves that these polytopes have affine dimension $2m$ and admit a table positive in every cell. [Effective estimate](../../lean/Conjectures/TransportationNonrealGrowth.lean) · [Polytope theorem](../../lean/Conjectures/TransportationGrowthTheorems.lean).
+
+In the coordinate $x=(1-z)/(1+z)$, the unperturbed binomial polynomial is $(1+z)^m P_m(x)$, where $P_m$ is the Legendre polynomial normalized by Rodrigues’ formula. Its differential equation and midpoint coefficients give a decreasing energy and an explicit bound on its size. This proves positivity of the perturbed numerator on the interval from $-\log(m)/(16m)$ to $-\log(m)/(32m)$. [Polynomial transform](../../lean/Conjectures/TransportationLegendreExpansion.lean) · [Energy bound](../../lean/Conjectures/TransportationLegendreBound.lean) · [Positivity interval](../../lean/Conjectures/TransportationWindowSuppression.lean).
+
+Sturm comparison with a sine wave produces disjoint closed intervals containing distinct zeros of the unperturbed polynomial. Local applications of Rolle’s theorem count roots with multiplicity on the central interval and its two exterior rays. The two polynomials have the same second derivative, which bounds the number of real zeros that can remain after the perturbation. [Sturm comparison](../../lean/Conjectures/TransportationSturmInterval.lean) · [Distinct root witnesses](../../lean/Conjectures/TransportationWindowOscillation.lean) · [Rolle count](../../lean/Conjectures/TransportationRootDeficit.lean).
+
+An independent rational checker reconstructed 33 polynomial differential equations, 198 exact coordinate substitutions and 660 energy identities. Rational Sturm chains found 2, 2, 2, 4, 6 and 6 nonreal roots at degrees 12, 16, 24, 32, 48 and 64. [Independent checker](check_growth.py).
+
+Two independent runs strictly compiled all 33 modules and audited all 487 declarations, including 407 theorems, 5 private declarations and all 181 registered endpoints. Both completed stock Lean kernel replay. Only propositional extensionality, classical choice and quotient soundness occurred in the axiom audit. [Complete verification receipt](verification/growth-receipt.json).
 
 If you use this disproof, please credit Cinna Davis and GPT-6.2 Astra for the proof, Per Alexandersson for the question, and Xiaxia Guan and Xian’an Jin for the earlier numerator formula. Please cite the site and the specific proof you used. [Cinna Davis](https://itsdavis.com/) · [Written proof](https://github.com/1337isnot1337/solved-conjectures/blob/87cab4199ab82b132c844ef6d52fee65b082a6be/results/alexandersson-transportation/proof.md).
