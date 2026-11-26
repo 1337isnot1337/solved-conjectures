@@ -4,6 +4,10 @@
 
 Step 4 of @aadrianvv’s proof of the Mazák–Zrubák conjecture is now checked on the actual edge order. The table and final index equality remain separate. [Scope and receipt](results/circular-index-complete-minus-edge/FORMALIZATION.md).
 
+## 2026-11-26 — Verify 43 finite circular-index examples in Lean
+
+Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Colourings, checks and receipt](results/circular-index-complete-minus-edges/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the disjoint rational triangulation of ordinarization cells
 
 Lean constructs rational open simplices for the actual sign fibres by induction over their strict rows. Their exact lattice summation and eventual monotonicity remain separate. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).

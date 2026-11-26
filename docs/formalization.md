@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Finite circular chromatic index certificates
+
+Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Colourings, checks and receipt](../results/circular-index-complete-minus-edges/FORMALIZATION.md).
+
 ## Cyrusian–Kaplan’s ordinarization quasipolynomial question
 
 Partial. Lean proves the exact ordinarization encoding, growth, and a disjoint rational open-simplex decomposition of the literal sign strata, with their vertices in the weak cells. A separate open-simplex checkpoint checks the lattice count in an integral ray chart. The summed actual quasipolynomial and eventual monotonicity are still outside the accepted scope. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).

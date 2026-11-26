@@ -1,5 +1,9 @@
 # Verification
 
+## Finite circular chromatic index certificates
+
+Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Colourings, checks and receipt](../results/circular-index-complete-minus-edges/FORMALIZATION.md).
+
 
 ## Cyrusian–Kaplan’s ordinarization quasipolynomial question
 
