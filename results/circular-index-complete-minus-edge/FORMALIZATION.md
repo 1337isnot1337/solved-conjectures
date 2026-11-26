@@ -167,3 +167,23 @@ axiom audit (816 declarations,
 The row-interval structure in Step 5(3), Steps 6–8, and the final index
 equality are not asserted here. Credit remains with @aadrianvv for the
 written argument and Ján Mazák and Filip Zrubák for the conjecture.
+
+## Normal occurrence intervals and transitions (Step 5(3))
+
+The [literal table theorem](../../lean/Conjectures/CircularCompleteMinusEdgeActualTable.lean)
+verifies the third assertion of the written Step 5. For each normal
+vertex Lean gives its first position and all occurrence intervals.
+The number of unit steps is h except at the endpoint vertex, where
+it is h−1. For each possible unit-step count, the jump coordinate
+lies in a closed integer interval. The upper endpoint equals the
+next lower endpoint. Lean identifies precisely the actual edges
+at consecutive positions sharing the vertex, and proves that in
+a special column the interval is a singleton.
+
+All 47 scoped modules passed strict Lean and stock-kernel replay.
+The audit covers 891 declarations,
+758 theorems, 53 private
+declarations and 11 named endpoints, with standard axioms only.
+[Occurrence-interval receipt](verification/actual-table/receipt.json).
+The boundary bijections following Lemma 5, Steps 6–8, and the final
+circular-index equality remain separate.

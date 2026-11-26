@@ -4,7 +4,7 @@
 
 **Status:** Written proof for every even $`d\ge 6`$. It has been through one independent referee pass by a second model instance, which found no mathematical error; the justifications it asked for are included. The note is otherwise unrefereed. The finite checks cover $`d=4`$ and $`d=6`$ only.
 
-**Lean status:** partial. [Steps 1–4 and the first two Step 5 assertions are verified](FORMALIZATION.md), including actual run rigidity and the paired special columns. The final lower bound and equality are not verified in Lean.
+**Lean status:** partial. [Steps 1–4 and all assertions of Lemma 5 are verified](FORMALIZATION.md), including the exact run rigidity, paired special columns and normal occurrence intervals. The final lower bound and equality are not verified in Lean.
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Conjecture 2.
 

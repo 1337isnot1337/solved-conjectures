@@ -1,0 +1,875 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T07:51:15.994122+00:00",
+  "finished_at": "2026-11-26T08:01:19.047062+00:00",
+  "root": "Conjectures.CircularCompleteMinusEdgeActualTable",
+  "project_modules": [
+    "Conjectures.CircularCompleteMinusEdgeActualColumnCounts",
+    "Conjectures.CircularCompleteMinusEdgeActualColumnPeriod",
+    "Conjectures.CircularCompleteMinusEdgeActualRuns",
+    "Conjectures.CircularCompleteMinusEdgeActualTable",
+    "Conjectures.CircularCompleteMinusEdgeAcyclic",
+    "Conjectures.CircularCompleteMinusEdgeClasses",
+    "Conjectures.CircularCompleteMinusEdgeColumnArithmetic",
+    "Conjectures.CircularCompleteMinusEdgeGraph",
+    "Conjectures.CircularCompleteMinusEdgeLevels",
+    "Conjectures.CircularCompleteMinusEdgeLiteralCrossings",
+    "Conjectures.CircularCompleteMinusEdgeMatchings",
+    "Conjectures.CircularCompleteMinusEdgeNormalColumnLabels",
+    "Conjectures.CircularCompleteMinusEdgeNormalPositions",
+    "Conjectures.CircularCompleteMinusEdgeOrder",
+    "Conjectures.CircularCompleteMinusEdgeOrderedRuns",
+    "Conjectures.CircularCompleteMinusEdgePath",
+    "Conjectures.CircularCompleteMinusEdgePrefixCrossings",
+    "Conjectures.CircularCompleteMinusEdgePrefixIntervals",
+    "Conjectures.CircularCompleteMinusEdgePrefixJumpCount",
+    "Conjectures.CircularCompleteMinusEdgePrefixSteps",
+    "Conjectures.CircularCompleteMinusEdgePrefixTable",
+    "Conjectures.CircularCompleteMinusEdgeReverseOrder",
+    "Conjectures.CircularCompleteMinusEdgeReverseRuns",
+    "Conjectures.CircularCompleteMinusEdgeRotation",
+    "Conjectures.CircularCompleteMinusEdgeRunArithmetic",
+    "Conjectures.CircularCompleteMinusEdgeRunBoundary",
+    "Conjectures.CircularCompleteMinusEdgeRunExtrema",
+    "Conjectures.CircularCompleteMinusEdgeRunSaturation",
+    "Conjectures.CircularCompleteMinusEdgeSelectedColumns",
+    "Conjectures.CircularCompleteMinusEdgeSources",
+    "Conjectures.CircularCompleteMinusEdgeSpecialColumnBackward",
+    "Conjectures.CircularCompleteMinusEdgeSpecialColumnForward",
+    "Conjectures.CircularCompleteMinusEdgeSpecialColumnPairs",
+    "Conjectures.CircularCompleteMinusEdgeSpecialIntervals",
+    "Conjectures.CircularCompleteMinusEdgeSpecialPositionCount",
+    "Conjectures.CircularCompleteMinusEdgeSpecialRuns",
+    "Conjectures.CircularCompleteMinusEdgeStepFour",
+    "Conjectures.CircularCompleteMinusEdgeTableColumns",
+    "Conjectures.CircularCompleteMinusEdgeTableResidues",
+    "Conjectures.CircularCompleteMinusEdgeTransversals",
+    "Conjectures.CircularCompleteMinusEdgeVertexColors",
+    "Conjectures.CircularIndexBase",
+    "Conjectures.CircularIndexCirculant",
+    "Conjectures.CircularIndexClassArithmetic",
+    "Conjectures.CircularIndexColoring",
+    "Conjectures.CircularIndexCounting",
+    "Conjectures.CircularIndexReal"
+  ],
+  "required_endpoints": [
+    "CircularCompleteMinusEdge.actual_deleted_edge_run_rigidity",
+    "CircularCompleteMinusEdge.actual_normal_column_labeling",
+    "CircularCompleteMinusEdge.actual_special_column_halfShift",
+    "CircularCompleteMinusEdge.exact_two_gap_prefix_position",
+    "CircularCompleteMinusEdge.exact_jump_interval_at_short_count",
+    "CircularCompleteMinusEdge.edgeStepPrefix_last_eq_jumpCount",
+    "CircularCompleteMinusEdge.crossing_adjacent_preserves_jump",
+    "CircularCompleteMinusEdge.two_gap_prefix_table",
+    "CircularCompleteMinusEdge.LinearEdgeOrder.special_forces_normal_unit_step",
+    "CircularCompleteMinusEdge.LinearEdgeOrder.special_row_interval_singleton",
+    "CircularCompleteMinusEdge.actual_normal_occurrence_intervals"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/CircularCompleteMinusEdgeActualColumnCounts.lean": "65607bd9781fe3f60ae2b353d0e753e0f8a6baa05e5f1ca6afefe4dbb5de5ecb",
+    "lean/Conjectures/CircularCompleteMinusEdgeActualColumnPeriod.lean": "841ea223d0f0cc80b8896cd9ba1552e00c06f6b959b0ec80d0cf74c2ff84448b",
+    "lean/Conjectures/CircularCompleteMinusEdgeActualRuns.lean": "185bb90114b59ff4ad2fd38962d99c571e421de7f756f38c7a43b170ca4ed204",
+    "lean/Conjectures/CircularCompleteMinusEdgeActualTable.lean": "22cb2e99652845af1764124cf33375b5b8917516b31b19d3da26af963a508aba",
+    "lean/Conjectures/CircularCompleteMinusEdgeAcyclic.lean": "508f52b0a04d7bb50c4ce5b62f664cc3cd5fd0cbceef7b2673b28a3609d69e6e",
+    "lean/Conjectures/CircularCompleteMinusEdgeClasses.lean": "a6a03b659caed16852e6b6c519df7a6a8bbc87a5975921b47df63517cacc4a0d",
+    "lean/Conjectures/CircularCompleteMinusEdgeColumnArithmetic.lean": "afddd0741e80b04b3ba4b044b3de77e452a3e8ced71985331152f73762e42852",
+    "lean/Conjectures/CircularCompleteMinusEdgeGraph.lean": "97be622c2fd1e6fea4b4cfdbbfeda102a2146180acff63ffbe7167c832f87714",
+    "lean/Conjectures/CircularCompleteMinusEdgeLevels.lean": "d8a2481236709424640d5b884612ec109c0766b8dd9c2020a2ae7bc6b0162855",
+    "lean/Conjectures/CircularCompleteMinusEdgeLiteralCrossings.lean": "b621542168de4cdb57e13ef5c0334b131f47d3e7b5cc06701ad6b3a01c99e6f5",
+    "lean/Conjectures/CircularCompleteMinusEdgeMatchings.lean": "60268e5f979f7674fbacbc5fd187598626d42367fb73ad17c7fa57fcaeb621a7",
+    "lean/Conjectures/CircularCompleteMinusEdgeNormalColumnLabels.lean": "011b653d850d18d423192382aac5203359ebca3fe9f3eca2a2f122c97ce21aa0",
+    "lean/Conjectures/CircularCompleteMinusEdgeNormalPositions.lean": "73639e069375eab388bd3b90310af667ca0354b33e708c35d2af9d1aad7d7872",
+    "lean/Conjectures/CircularCompleteMinusEdgeOrder.lean": "e8cd25b6f8b71a004f591ec8bebcc717e8d3e24dd59494e69c2fc4a36d03d7b5",
+    "lean/Conjectures/CircularCompleteMinusEdgeOrderedRuns.lean": "cfaa66c41f469dbcceac504993d048117e1807cfddfd2eadfeefae947a46742e",
+    "lean/Conjectures/CircularCompleteMinusEdgePath.lean": "d1a181404d749e05cdba1e33118542e618d1346f8c0206fbd1657686968f0717",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixCrossings.lean": "9621d7352f05e294df86dd9fdc60ff6996754ca4dabdac5a86bcc121c822bbc4",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixIntervals.lean": "86aee3c8268b778e092925296532ed4d506645b12f5fbd27d3ba67263d10eea4",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixJumpCount.lean": "8c3e828447a46a563a997c7c06f662655e69eac67f72d7d329f18ea689f8d8fa",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixSteps.lean": "696f0aee55c0f7c27e1521333f661ecb3be6caa4887601b4d3709932c5d2d905",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixTable.lean": "39ccba713a0990d4c28bc4aaa64e526feb41a72741c17881258230db2543fc34",
+    "lean/Conjectures/CircularCompleteMinusEdgeReverseOrder.lean": "c6f549f560bc4a01be6c1eed435a9a1aca257b500fc2e1cd7bba1c10a38f3405",
+    "lean/Conjectures/CircularCompleteMinusEdgeReverseRuns.lean": "7a96ba5eea79ed4fd3156bc12b936d664cec9bedd4ea5f3ba2bcfb822b5d8eef",
+    "lean/Conjectures/CircularCompleteMinusEdgeRotation.lean": "bb7fda7ac52d81651b93e8f3680ae164287f0c0295d58b69cb153b3c673bd723",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunArithmetic.lean": "9c20d02db5a22f151a050d8ee302065ce2131e5103cb92902222b87375135be5",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunBoundary.lean": "81699a22dcdb154f72cb127e05c1ff696771d08720aead0d464ed30baeed5296",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunExtrema.lean": "20a514c80a44eb31019f1e58a3c10047c59e2db15ebf18e63d41860f7e97b9b9",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunSaturation.lean": "0e0f7fce1e460fc6096fb31deca319691a24bee29669eb011351bd707c2a385b",
+    "lean/Conjectures/CircularCompleteMinusEdgeSelectedColumns.lean": "f65e204f5ab054953500d5037674b76e4af2360501616496cc2dac9c3e9c5b1e",
+    "lean/Conjectures/CircularCompleteMinusEdgeSources.lean": "948911898400d32f0850bc0a063918b0e9f7f055c12b83375b2f9b2a2f8c8477",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnBackward.lean": "5194a44e9b24d600c610c075dfe7fe0d52fd033c5452ec35af5e52ca9697ec46",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnForward.lean": "3f760fe78f0693a4e2661ca717fb38bc3134054b726a21c44c2afe89e4986a78",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnPairs.lean": "b5948b100abecf6cd43574aac4cf238f5c22a256210c06273a62914e48960b3d",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialIntervals.lean": "bd7d0809244f745c83e0ea6b618b6a83b495cab2267c3a5aec9faa6cc7a9a953",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialPositionCount.lean": "9d170308941b071838e287ddf4e99b315577d377c30b57473f9c86a61cd9390f",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialRuns.lean": "600d79c36e3c8a912ed39a4df8941f2eb8ad8d024fb34833b9e45bfcf3e97d66",
+    "lean/Conjectures/CircularCompleteMinusEdgeStepFour.lean": "e7ba7fc704adba266ee907ee407cec2de48a59e1e31b52e7f0d13244407f979d",
+    "lean/Conjectures/CircularCompleteMinusEdgeTableColumns.lean": "a3c97f4afff1fd0d9a9a51c1243ddeb528ac9139b7875141750a8dd4221c4f5d",
+    "lean/Conjectures/CircularCompleteMinusEdgeTableResidues.lean": "05002b4391af556033d33eb9ebbbcd66961c1c15ce5c5c83218a108a5d3a7125",
+    "lean/Conjectures/CircularCompleteMinusEdgeTransversals.lean": "ea3d14464057b3fb5a4a901020fafa356f1c9c92205b52cbbb761d493463dbe1",
+    "lean/Conjectures/CircularCompleteMinusEdgeVertexColors.lean": "211957bafb66fc962b2eba03b5fbfc229e537f0ba09acd2d74d3e4a5bbe2bf31",
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "lean/Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "lean/Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "lean/Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "lean/Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf"
+  },
+  "input_sha256": {
+    "lean/Conjectures/CircularCompleteMinusEdgeActualColumnCounts.lean": "65607bd9781fe3f60ae2b353d0e753e0f8a6baa05e5f1ca6afefe4dbb5de5ecb",
+    "lean/Conjectures/CircularCompleteMinusEdgeActualColumnPeriod.lean": "841ea223d0f0cc80b8896cd9ba1552e00c06f6b959b0ec80d0cf74c2ff84448b",
+    "lean/Conjectures/CircularCompleteMinusEdgeActualRuns.lean": "185bb90114b59ff4ad2fd38962d99c571e421de7f756f38c7a43b170ca4ed204",
+    "lean/Conjectures/CircularCompleteMinusEdgeActualTable.lean": "22cb2e99652845af1764124cf33375b5b8917516b31b19d3da26af963a508aba",
+    "lean/Conjectures/CircularCompleteMinusEdgeAcyclic.lean": "508f52b0a04d7bb50c4ce5b62f664cc3cd5fd0cbceef7b2673b28a3609d69e6e",
+    "lean/Conjectures/CircularCompleteMinusEdgeClasses.lean": "a6a03b659caed16852e6b6c519df7a6a8bbc87a5975921b47df63517cacc4a0d",
+    "lean/Conjectures/CircularCompleteMinusEdgeColumnArithmetic.lean": "afddd0741e80b04b3ba4b044b3de77e452a3e8ced71985331152f73762e42852",
+    "lean/Conjectures/CircularCompleteMinusEdgeGraph.lean": "97be622c2fd1e6fea4b4cfdbbfeda102a2146180acff63ffbe7167c832f87714",
+    "lean/Conjectures/CircularCompleteMinusEdgeLevels.lean": "d8a2481236709424640d5b884612ec109c0766b8dd9c2020a2ae7bc6b0162855",
+    "lean/Conjectures/CircularCompleteMinusEdgeLiteralCrossings.lean": "b621542168de4cdb57e13ef5c0334b131f47d3e7b5cc06701ad6b3a01c99e6f5",
+    "lean/Conjectures/CircularCompleteMinusEdgeMatchings.lean": "60268e5f979f7674fbacbc5fd187598626d42367fb73ad17c7fa57fcaeb621a7",
+    "lean/Conjectures/CircularCompleteMinusEdgeNormalColumnLabels.lean": "011b653d850d18d423192382aac5203359ebca3fe9f3eca2a2f122c97ce21aa0",
+    "lean/Conjectures/CircularCompleteMinusEdgeNormalPositions.lean": "73639e069375eab388bd3b90310af667ca0354b33e708c35d2af9d1aad7d7872",
+    "lean/Conjectures/CircularCompleteMinusEdgeOrder.lean": "e8cd25b6f8b71a004f591ec8bebcc717e8d3e24dd59494e69c2fc4a36d03d7b5",
+    "lean/Conjectures/CircularCompleteMinusEdgeOrderedRuns.lean": "cfaa66c41f469dbcceac504993d048117e1807cfddfd2eadfeefae947a46742e",
+    "lean/Conjectures/CircularCompleteMinusEdgePath.lean": "d1a181404d749e05cdba1e33118542e618d1346f8c0206fbd1657686968f0717",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixCrossings.lean": "9621d7352f05e294df86dd9fdc60ff6996754ca4dabdac5a86bcc121c822bbc4",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixIntervals.lean": "86aee3c8268b778e092925296532ed4d506645b12f5fbd27d3ba67263d10eea4",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixJumpCount.lean": "8c3e828447a46a563a997c7c06f662655e69eac67f72d7d329f18ea689f8d8fa",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixSteps.lean": "696f0aee55c0f7c27e1521333f661ecb3be6caa4887601b4d3709932c5d2d905",
+    "lean/Conjectures/CircularCompleteMinusEdgePrefixTable.lean": "39ccba713a0990d4c28bc4aaa64e526feb41a72741c17881258230db2543fc34",
+    "lean/Conjectures/CircularCompleteMinusEdgeReverseOrder.lean": "c6f549f560bc4a01be6c1eed435a9a1aca257b500fc2e1cd7bba1c10a38f3405",
+    "lean/Conjectures/CircularCompleteMinusEdgeReverseRuns.lean": "7a96ba5eea79ed4fd3156bc12b936d664cec9bedd4ea5f3ba2bcfb822b5d8eef",
+    "lean/Conjectures/CircularCompleteMinusEdgeRotation.lean": "bb7fda7ac52d81651b93e8f3680ae164287f0c0295d58b69cb153b3c673bd723",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunArithmetic.lean": "9c20d02db5a22f151a050d8ee302065ce2131e5103cb92902222b87375135be5",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunBoundary.lean": "81699a22dcdb154f72cb127e05c1ff696771d08720aead0d464ed30baeed5296",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunExtrema.lean": "20a514c80a44eb31019f1e58a3c10047c59e2db15ebf18e63d41860f7e97b9b9",
+    "lean/Conjectures/CircularCompleteMinusEdgeRunSaturation.lean": "0e0f7fce1e460fc6096fb31deca319691a24bee29669eb011351bd707c2a385b",
+    "lean/Conjectures/CircularCompleteMinusEdgeSelectedColumns.lean": "f65e204f5ab054953500d5037674b76e4af2360501616496cc2dac9c3e9c5b1e",
+    "lean/Conjectures/CircularCompleteMinusEdgeSources.lean": "948911898400d32f0850bc0a063918b0e9f7f055c12b83375b2f9b2a2f8c8477",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnBackward.lean": "5194a44e9b24d600c610c075dfe7fe0d52fd033c5452ec35af5e52ca9697ec46",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnForward.lean": "3f760fe78f0693a4e2661ca717fb38bc3134054b726a21c44c2afe89e4986a78",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnPairs.lean": "b5948b100abecf6cd43574aac4cf238f5c22a256210c06273a62914e48960b3d",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialIntervals.lean": "bd7d0809244f745c83e0ea6b618b6a83b495cab2267c3a5aec9faa6cc7a9a953",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialPositionCount.lean": "9d170308941b071838e287ddf4e99b315577d377c30b57473f9c86a61cd9390f",
+    "lean/Conjectures/CircularCompleteMinusEdgeSpecialRuns.lean": "600d79c36e3c8a912ed39a4df8941f2eb8ad8d024fb34833b9e45bfcf3e97d66",
+    "lean/Conjectures/CircularCompleteMinusEdgeStepFour.lean": "e7ba7fc704adba266ee907ee407cec2de48a59e1e31b52e7f0d13244407f979d",
+    "lean/Conjectures/CircularCompleteMinusEdgeTableColumns.lean": "a3c97f4afff1fd0d9a9a51c1243ddeb528ac9139b7875141750a8dd4221c4f5d",
+    "lean/Conjectures/CircularCompleteMinusEdgeTableResidues.lean": "05002b4391af556033d33eb9ebbbcd66961c1c15ce5c5c83218a108a5d3a7125",
+    "lean/Conjectures/CircularCompleteMinusEdgeTransversals.lean": "ea3d14464057b3fb5a4a901020fafa356f1c9c92205b52cbbb761d493463dbe1",
+    "lean/Conjectures/CircularCompleteMinusEdgeVertexColors.lean": "211957bafb66fc962b2eba03b5fbfc229e537f0ba09acd2d74d3e4a5bbe2bf31",
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "lean/Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "lean/Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "lean/Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "lean/Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeRunArithmetic.olean",
+        "Conjectures/CircularCompleteMinusEdgeRunArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeRunArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgePrefixSteps.olean",
+        "Conjectures/CircularCompleteMinusEdgePrefixSteps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgePrefixSteps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgePrefixIntervals.olean",
+        "Conjectures/CircularCompleteMinusEdgePrefixIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgePrefixIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgePrefixCrossings.olean",
+        "Conjectures/CircularCompleteMinusEdgePrefixCrossings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgePrefixCrossings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgePrefixTable.olean",
+        "Conjectures/CircularCompleteMinusEdgePrefixTable.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgePrefixTable.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
+        "Conjectures/CircularIndexBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexBase.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
+        "Conjectures/CircularIndexCirculant.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexCirculant.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
+        "Conjectures/CircularIndexClassArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexClassArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
+        "Conjectures/CircularIndexColoring.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexColoring.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
+        "Conjectures/CircularIndexCounting.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexCounting.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
+        "Conjectures/CircularIndexReal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexReal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeAcyclic.olean",
+        "Conjectures/CircularCompleteMinusEdgeAcyclic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeAcyclic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeMatchings.olean",
+        "Conjectures/CircularCompleteMinusEdgeMatchings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeMatchings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeClasses.olean",
+        "Conjectures/CircularCompleteMinusEdgeClasses.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeClasses.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeRotation.olean",
+        "Conjectures/CircularCompleteMinusEdgeRotation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeRotation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeLevels.olean",
+        "Conjectures/CircularCompleteMinusEdgeLevels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeLevels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSources.olean",
+        "Conjectures/CircularCompleteMinusEdgeSources.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSources.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgePath.olean",
+        "Conjectures/CircularCompleteMinusEdgePath.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgePath.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeTransversals.olean",
+        "Conjectures/CircularCompleteMinusEdgeTransversals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeTransversals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeGraph.olean",
+        "Conjectures/CircularCompleteMinusEdgeGraph.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeGraph.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeOrder.olean",
+        "Conjectures/CircularCompleteMinusEdgeOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeOrder.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeActualRuns.olean",
+        "Conjectures/CircularCompleteMinusEdgeActualRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeActualRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeVertexColors.olean",
+        "Conjectures/CircularCompleteMinusEdgeVertexColors.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeVertexColors.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeOrderedRuns.olean",
+        "Conjectures/CircularCompleteMinusEdgeOrderedRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeOrderedRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeRunExtrema.olean",
+        "Conjectures/CircularCompleteMinusEdgeRunExtrema.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeRunExtrema.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeRunBoundary.olean",
+        "Conjectures/CircularCompleteMinusEdgeRunBoundary.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeRunBoundary.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgePrefixJumpCount.olean",
+        "Conjectures/CircularCompleteMinusEdgePrefixJumpCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgePrefixJumpCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeLiteralCrossings.olean",
+        "Conjectures/CircularCompleteMinusEdgeLiteralCrossings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeLiteralCrossings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSpecialIntervals.olean",
+        "Conjectures/CircularCompleteMinusEdgeSpecialIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSpecialIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeNormalPositions.olean",
+        "Conjectures/CircularCompleteMinusEdgeNormalPositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeNormalPositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeRunSaturation.olean",
+        "Conjectures/CircularCompleteMinusEdgeRunSaturation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeRunSaturation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSpecialRuns.olean",
+        "Conjectures/CircularCompleteMinusEdgeSpecialRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSpecialRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeStepFour.olean",
+        "Conjectures/CircularCompleteMinusEdgeStepFour.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeStepFour.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnForward.olean",
+        "Conjectures/CircularCompleteMinusEdgeSpecialColumnForward.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSpecialColumnForward.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeReverseOrder.olean",
+        "Conjectures/CircularCompleteMinusEdgeReverseOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeReverseOrder.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeReverseRuns.olean",
+        "Conjectures/CircularCompleteMinusEdgeReverseRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeReverseRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnBackward.olean",
+        "Conjectures/CircularCompleteMinusEdgeSpecialColumnBackward.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSpecialColumnBackward.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeTableResidues.olean",
+        "Conjectures/CircularCompleteMinusEdgeTableResidues.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeTableResidues.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeActualColumnPeriod.olean",
+        "Conjectures/CircularCompleteMinusEdgeActualColumnPeriod.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeActualColumnPeriod.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSpecialPositionCount.olean",
+        "Conjectures/CircularCompleteMinusEdgeSpecialPositionCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSpecialPositionCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeTableColumns.olean",
+        "Conjectures/CircularCompleteMinusEdgeTableColumns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeTableColumns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSelectedColumns.olean",
+        "Conjectures/CircularCompleteMinusEdgeSelectedColumns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSelectedColumns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeColumnArithmetic.olean",
+        "Conjectures/CircularCompleteMinusEdgeColumnArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeColumnArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeActualColumnCounts.olean",
+        "Conjectures/CircularCompleteMinusEdgeActualColumnCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeActualColumnCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeNormalColumnLabels.olean",
+        "Conjectures/CircularCompleteMinusEdgeNormalColumnLabels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeNormalColumnLabels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeSpecialColumnPairs.olean",
+        "Conjectures/CircularCompleteMinusEdgeSpecialColumnPairs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeSpecialColumnPairs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/CircularCompleteMinusEdgeActualTable.olean",
+        "Conjectures/CircularCompleteMinusEdgeActualTable.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularCompleteMinusEdgeActualTable.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.CircularCompleteMinusEdgeActualTable"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 891,
+    "modules": 47,
+    "private_declarations": 53,
+    "raw_declarations": 891,
+    "required": 11,
+    "tag": "passed",
+    "theorems": 758
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

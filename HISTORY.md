@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the normal occurrence intervals in Mazák–Zrubák
+
+Lean verifies Lemma 5(3) of the written proof for the literal order, including the exact consecutive-position transitions and singleton intervals at special columns. [Scope and receipt](results/circular-index-complete-minus-edge/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the paired special columns and literal normal starts
 
 Lean verifies the first two column assertions in Step 5 of the Mazák–Zrubák proof. The row-interval structure and final index equality remain separate. [Scope and receipt](results/circular-index-complete-minus-edge/FORMALIZATION.md).
