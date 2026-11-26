@@ -17,6 +17,8 @@ one-factor lift on the actual socle quotient. Lean also proves
 Gaschütz’s finite-group lifting lemma for ordered generating tuples.
 The actual factor permutations descend to the socle quotient and
 its generating pair supplies the transitivity required for the multifactor lift.
+The exact conjecture follows in Lean from four explicit finite-simple-group
+automorphism and generation inputs.
 [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
 
