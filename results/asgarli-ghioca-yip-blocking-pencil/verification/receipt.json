@@ -1,0 +1,157 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T15:11:40.234213+00:00",
+  "finished_at": "2026-11-26T15:17:57.338994+00:00",
+  "root": "Conjectures.AsgarliGhiocaYipBlockingPencil",
+  "project_modules": [
+    "Conjectures.AsgarliGhiocaYipBlockingPencil",
+    "Conjectures.AsgarliGhiocaYipLines",
+    "Conjectures.AsgarliGhiocaYipOrderedRoots",
+    "Conjectures.AsgarliGhiocaYipRootLabels",
+    "Conjectures.AsgarliGhiocaYipSeed"
+  ],
+  "required_endpoints": [
+    "Conjectures.AsgarliGhiocaYip.exists_regular_seeds",
+    "Conjectures.AsgarliGhiocaYip.single_graph_missing_lines",
+    "Conjectures.AsgarliGhiocaYip.seed_ordering_at_zero",
+    "Conjectures.AsgarliGhiocaYip.missing_lines_of_ordering_estimate",
+    "Conjectures.AsgarliGhiocaYip.blockingNumber_log_upper",
+    "Conjectures.AsgarliGhiocaYip.pencil_bounds_of_ordering_estimate",
+    "Conjectures.AsgarliGhiocaYip.point_count_after_exclusions"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/AsgarliGhiocaYipBlockingPencil.lean": "1f064f8aaffa7b2b2ca8d8c1adde29f5a35b94357ea76ff3ae7e56eb2700f051",
+    "lean/Conjectures/AsgarliGhiocaYipLines.lean": "8c99e5b68d9a29c3902f49a19e1ed69f4f8e1bad10d42542d7baff1c1c36fb07",
+    "lean/Conjectures/AsgarliGhiocaYipOrderedRoots.lean": "9914d53e2a800969d218abe7bd92c50f97bf447b75854a69dbb20cadd4ea6b87",
+    "lean/Conjectures/AsgarliGhiocaYipRootLabels.lean": "76772de79179931071184efe1808958153c82f91df398e7eb6370a54fccc5473",
+    "lean/Conjectures/AsgarliGhiocaYipSeed.lean": "a9ef1658c03377d541d715600e45176754ec142cdbd68a18fd62f7c739793f39"
+  },
+  "input_sha256": {
+    "lean/Conjectures/AsgarliGhiocaYipBlockingPencil.lean": "1f064f8aaffa7b2b2ca8d8c1adde29f5a35b94357ea76ff3ae7e56eb2700f051",
+    "lean/Conjectures/AsgarliGhiocaYipLines.lean": "8c99e5b68d9a29c3902f49a19e1ed69f4f8e1bad10d42542d7baff1c1c36fb07",
+    "lean/Conjectures/AsgarliGhiocaYipOrderedRoots.lean": "9914d53e2a800969d218abe7bd92c50f97bf447b75854a69dbb20cadd4ea6b87",
+    "lean/Conjectures/AsgarliGhiocaYipRootLabels.lean": "76772de79179931071184efe1808958153c82f91df398e7eb6370a54fccc5473",
+    "lean/Conjectures/AsgarliGhiocaYipSeed.lean": "a9ef1658c03377d541d715600e45176754ec142cdbd68a18fd62f7c739793f39",
+    "results/asgarli-ghioca-yip-blocking-pencil/verification/TargetAudit.lean": "8c4cd6c2ad556a5b68baba6cf1309e3805d69adb54ba20269a2a37a9c1623684",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipLines.olean",
+        "Conjectures/AsgarliGhiocaYipLines.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipLines.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipSeed.olean",
+        "Conjectures/AsgarliGhiocaYipSeed.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipSeed.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipRootLabels.olean",
+        "Conjectures/AsgarliGhiocaYipRootLabels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipRootLabels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipOrderedRoots.olean",
+        "Conjectures/AsgarliGhiocaYipOrderedRoots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipOrderedRoots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/AsgarliGhiocaYipBlockingPencil.olean",
+        "Conjectures/AsgarliGhiocaYipBlockingPencil.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AsgarliGhiocaYipBlockingPencil.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "../results/asgarli-ghioca-yip-blocking-pencil/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.AsgarliGhiocaYipBlockingPencil"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 128,
+    "modules": 5,
+    "private_declarations": 36,
+    "raw_declarations": 128,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 114
+  },
+  "full_repository_gate": "not run by this target-scoped check",
+  "status": "PASS"
+}

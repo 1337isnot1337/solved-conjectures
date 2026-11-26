@@ -56,6 +56,8 @@ Published the complete research records from eleven open problems in the [partia
 
 The minimum number of vertical translates of a fixed monomial graph that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
 
+Lean verifies the logarithmic upper bound, the regular-seed count and the number of lines missed by a single graph. The lower bound for growing families remains conditional on a uniform estimate for Frobenius-compatible root orderings. [Lean scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
+
 ## 2026-11-26 — Mallik–Diwan–Kothari degree-count conjecture
 
 Two complete bipartite blocks and two matchings refute Conjecture 8.9 for every $k\geq3$, with the smallest example on 16 vertices. The proof gives an explicit nonextending matching for each possible edge deletion. [Proof](results/mallik-diwan-kothari-degree-count/PROOF.md) · [Source and audit](results/mallik-diwan-kothari-degree-count/AUDIT.md) · [Issue #825](https://github.com/1337isnot1337/solved-conjectures/issues/825). Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Formalization](results/mallik-diwan-kothari-degree-count/FORMALIZATION.md).

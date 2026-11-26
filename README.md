@@ -52,7 +52,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **37.** [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ | **122.** [Pantone–Bóna’s third-largest-terminal asymptotic conjecture](results/pantone-bona-third-largest-terminal/) | ⬜ |
 | **37.** [Erdős–Gyárfás point-degree spectrum conjecture](results/erdos-gyarfas-point-degree-spectrum/) | ✅ | **122.** [Pantone–Bóna’s second-smallest-terminal asymptotic conjecture](results/pantone-bona-second-smallest-terminal/) | ⬜ |
 | **37.** [En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem](results/constant-weight-strong-wom/) | ⬜ | **127.** [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |
-| **37.** [Asgarli–Ghioca–Yip blocking-pencil problem](results/asgarli-ghioca-yip-blocking-pencil/) | ⬜ | **127.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
+| **37.** [Asgarli–Ghioca–Yip blocking-pencil problem](results/asgarli-ghioca-yip-blocking-pencil/) | 🟡 | **127.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
 | **37.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **127.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | **45.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **127.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ✅ |
 | **45.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **127.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | 🟡 |
