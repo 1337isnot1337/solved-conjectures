@@ -1,5 +1,17 @@
 # Verification
 
+## Written results on eleven open problems
+
+The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems) links the statements, proofs, primary sources and open cases. The following checkers reproduce finite parts of five arguments. Their conclusions and scope are described on the individual result pages.
+
+| Problem | Run from the repository root | Exact checks |
+| --- | --- | --- |
+| [Erdős–Purdy conjecture](../results/erdos-block-size-multiplicity/) | `python3 results/erdos-block-size-multiplicity/check_field.py` | All 65,536 subsets of the field of order 16, with four subplane calculations. |
+| [Erdős–Hajnal set-mapping conjecture](../results/erdos-hajnal-set-mapping/) | `python3 results/erdos-hajnal-set-mapping/check.py` | 5,484 matching requests across 1,272 eligible colorings and 3,690 circuits across 930 matrices. |
+| [Erdős–Hammer convex-subset problem](../results/erdos-hammer-838/) | `python3 results/erdos-hammer-838/check_binary.py` | 65,808 nonempty planar subsets and 43 exact probability coefficients. |
+| [Erdős’s bounded blocking-set problem](../results/erdos-bounded-blocking-set/) | `python3 results/erdos-bounded-blocking-set/check_spread.py` | All 4,161 lines of the example, plus a Pappus witness in the non-Desarguesian plane. |
+| [Gyárfás’s nearly bipartite graph conjecture](../results/gyarfas-nearly-bipartite/) | `python3 results/gyarfas-nearly-bipartite/check_grid.py` | 68 subdivisions, 408 paths and 136 forbidden parity patterns covering all switchings. |
+
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
 
 Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all labelled graphs through order six and 2,000 seeded larger graphs. The [written proof](../results/general-position-nordhaus-gaddum/PROOF.md) is uniform; the [audit](../results/general-position-nordhaus-gaddum/AUDIT.md) separates the geodesic and induced-path targets.

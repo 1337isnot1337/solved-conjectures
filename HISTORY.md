@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Partial results on eleven open problems
+
+Published the complete research records from eleven open problems in the [partial-results catalogue](CONTENTS.md#partial-results-on-open-problems). They include a linear block-size multiplicity bound under abelian symmetry, an improved set-mapping upper bound, a two-occurrence obstruction for Komjáth’s problem, and proofs for specific classes in the projective rigidity and norm-coloring conjectures. The [verification record](docs/verification.md#written-results-on-eleven-open-problems) lists the exact finite checks. The Erdős–Hammer entry credits the earlier finite upper bound and identifies the new limiting-density calculations.
+
 ## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
 
 Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m ≥ 2` and every finite minor: total nonnegativity of `A(n, k)`, `B(n, k)`, and their row reversals, and strict total positivity of `A(n + k, k)` and `B(n + k, k)`. The self-contained five-module closure proves Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch, and passed strict compilation, the 322-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/wang-yang-fuss-narayana/FORMALIZATION.md).

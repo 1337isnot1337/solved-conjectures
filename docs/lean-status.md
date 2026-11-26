@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Written partial results on eleven open problems
+
+The eleven notes on finite designs, set mappings, independence ratios, convex subsets, blocking sets, odd cycles, hypergraph colorings, Steiner sails, projective rigidity and normed spaces have written proofs. Their landing pages report `none` for formalization. The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems) gives each statement, and the [verification record](verification.md#written-results-on-eleven-open-problems) identifies the five executable checks.
+
 ## Wang–Yang's Fuss–Narayana conjecture
 
 Complete for all six matrices of Conjecture 4.1 at every integer parameter `m ≥ 2` and every finite minor on arbitrary strictly increasing row and column selections. Lean proves total nonnegativity for `[B(n, k)]`, `[A(n, k)]`, `[B(n, n - k)]`, and `[A(n, n - k)]`, and strict total positivity for `[B(n + k, k)]` and `[A(n + k, k)]`, proving Krattenthaler's product determinant (Lemma 3), Cauchy–Binet, the column STP criterion, the triangular flag-minor test, and Galvin–Pacurar Theorem 1.2 from scratch. The five-module closure passed strict compilation, the complete 322-declaration all-owned axiom audit (270 theorems, 79 private declarations), and stock-kernel replay. [Lean scope and receipt](../results/wang-yang-fuss-narayana/FORMALIZATION.md).
