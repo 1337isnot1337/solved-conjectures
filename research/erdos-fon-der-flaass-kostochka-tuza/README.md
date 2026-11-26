@@ -52,6 +52,8 @@ Suppose instead that it has edges $E_1,\ldots,E_j$ with no two-point transversal
 
 Finally $C_p(k)$ is nondecreasing in $k$. In a complete hypergraph on $k+w$ points, the complements are all $w$-subsets. If $p$ such subsets could cover all pairs on the larger ground set $k+1+w$, restricting to any $k+w$ points and padding to size $w$ would give the same failure there. This proves the second inequality. The one-class case attains the complete-family bound. The published parity construction allows multiple occupancy profiles, so controlling unions of profiles remains necessary.
 
+For a union of occupancy profiles given by fixed integer linear conditions and congruences, the [finite-class limit theorem](symmetric-models.md) proves a rational slope and eventual periodicity for the rank-bounded extremum. Its proof also covers the two-class parity construction.
+
 ## An obstruction for sparse arbitrary families
 
 Let $H$ be a finite, nonempty $r$-uniform hypergraph in which every subfamily of at most $p$ edges admits a two-point transversal. Set $q=\lceil p/2\rceil$ and let $M$ be its fractional matching number. Then
