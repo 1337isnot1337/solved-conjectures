@@ -38,6 +38,7 @@ import Conjectures.ShumyatskyCharacteristicallySimple
 import Conjectures.ShumyatskyPrimeKernelLift
 import Conjectures.ShumyatskyAbelianReduction
 import Conjectures.ShumyatskyCyclicNormalization
+import Conjectures.ShumyatskyCoprimeQuotient
 import Conjectures.ShumyatskyStabilizer
 import Conjectures.ShumyatskyPrimeSpectrum
 import Conjectures.LassalleBoxCoverage
