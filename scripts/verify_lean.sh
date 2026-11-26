@@ -4,6 +4,23 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.MallikDegreeCounterfamily
+  Conjectures.MallikDegreeCounts
+  Conjectures.MallikDegreeEdgeMatchings
+  Conjectures.MallikDegreeExtendable
+  Conjectures.MallikDegreeFamily
+  Conjectures.MallikDegreeGraphs
+  Conjectures.MallikDegreeHall
+  Conjectures.MallikDegreeHighDeletion
+  Conjectures.MallikDegreeLiteral
+  Conjectures.MallikDegreeLowDeletion
+  Conjectures.MallikDegreeObstruction
+  Conjectures.MallikDegreePerfect
+  Conjectures.MallikDegreeRelabel
+  Conjectures.MallikDegreeSimpleGraph
+  Conjectures.MallikDegreeSubgraphs
+  Conjectures.MallikDegreeTheorems
+  Conjectures.MallikDegreeWitness
   Conjectures.SteinerSailCount
   Conjectures.SteinerSailCover
   Conjectures.SteinerSailDegrees
