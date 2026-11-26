@@ -1,5 +1,9 @@
 # Verification
 
+## Mallik–Diwan–Kothari degree-count conjecture
+
+Run `python3 results/mallik-diwan-kothari-degree-count/verify.py`. The checker verifies all 3,420 three-edge matchings and all 36 edge deletions on the 16-vertex counterexample directly. Separate Hall checks sample 15 members of the infinite family. The [proof](../results/mallik-diwan-kothari-degree-count/PROOF.md) does not depend on the checker. [Source and audit](../results/mallik-diwan-kothari-degree-count/AUDIT.md).
+
 ## The Steiner triple system sail problem
 
 Run `python3 results/steiner-triple-system-sail/verify.py` to enumerate all 4,224 colorings of the systems of orders seven and nine and check each of the 24,576 disjoint opposite-colored block pairs. Fourteen additional colorings of systems on 87 and 127 points exercise the bound above its sufficient threshold. A second researcher rederived the general argument, checked the packing corollary and reran the verifier. [Proof](../results/steiner-triple-system-sail/PROOF.md) · [Review and source audit](../results/steiner-triple-system-sail/AUDIT.md).

@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check the degree-count counterexamples for minimal extendability
+        run: python3 results/mallik-diwan-kothari-degree-count/verify.py
       - name: Check Nathanson's coefficient-adjusted Sidon systems
         run: python3 results/nathanson-sidon-systems/verify.py
       - name: Replay the even-grid domination-game counterexample
