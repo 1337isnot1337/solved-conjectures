@@ -4,6 +4,25 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.CircularIndexAllDegrees
+  Conjectures.CircularThreeBlockBase
+  Conjectures.CircularThreeBlockCross
+  Conjectures.CircularThreeBlockDeficit
+  Conjectures.CircularThreeBlockDegree
+  Conjectures.CircularThreeBlockEdges
+  Conjectures.CircularThreeBlockGraphs
+  Conjectures.CircularThreeBlockInjective
+  Conjectures.CircularThreeBlockIntervals
+  Conjectures.CircularThreeBlockPositions
+  Conjectures.CircularThreeBlockSeparation
+  Conjectures.CircularThreeBlockTheorems
+  Conjectures.CircularThreeBlockTiles
+  Conjectures.CircularThreeBlockUnique
+  Conjectures.CircularThreeBlockWindows
+  Conjectures.TomdifCircularIndexBounds
+  Conjectures.TomdifCircularIndexCertificates
+  Conjectures.TomdifCircularIndexGraph
+  Conjectures.TomdifCircularIndexSound
   Conjectures.CircularInsertionDegree29
   Conjectures.CircularInsertionDegree30
   Conjectures.CircularInsertionDegree33
