@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## The ordinary D’Arcais saddle and Fourier inversion
+
+Lean proves the root comparison for indices 6–50 at every real parameter at least one. It constructs the unique positive saddle, proves Fourier inversion for the ordinary coefficients, and reduces strict log-concavity at every index from 501 onward to two explicit inequalities. [Reduction](../lean/Conjectures/OrdinaryDarcaisFourierReduction.lean) · [Research receipt](verification/lean-ordinary-darcais-fourier-20261126/receipt.json).
+
 ## Alexandersson’s graphical dist conjecture
 
 Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Lean root and graph theorems](../lean/Conjectures/GraphicalDistTheorems.lean) · [Research receipt](verification/lean-graphical-dist-20261126/receipt.json).
