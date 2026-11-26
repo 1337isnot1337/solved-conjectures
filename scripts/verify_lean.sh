@@ -168,6 +168,7 @@ modules=(
   Conjectures.ShumyatskyAbelianReduction
   Conjectures.ShumyatskyCyclicNormalization
   Conjectures.ShumyatskyCoprimeQuotient
+  Conjectures.ShumyatskySingleFactorLift
   Conjectures.ShumyatskyPrimeSpectrum
   Conjectures.PomeranceSarkozyAtomKernel
   Conjectures.PomeranceSarkozyAtomLaw
