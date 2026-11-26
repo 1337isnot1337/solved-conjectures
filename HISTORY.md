@@ -46,6 +46,10 @@ Erdős and Gyárfás asked whether abstract linear spaces can realize all but a 
 
 Lean bounds the degree spectrum in every finite linear space, rules out the proposed square-root deficit and proves the same linear bound for real planar point sets. [Theorems and receipt](results/erdos-gyarfas-point-degree-spectrum/FORMALIZATION.md).
 
+## 2026-11-26 — Zeng’s unscaled interlacing question
+
+Consecutive unscaled two-parameter Narayana rows have strictly interlacing negative roots throughout the source domain, with the stronger multiplicative gap $q^2$. The proof uses an infinite product of dilation operators and the reciprocal symmetry of the original polynomials. [Proof](results/zeng-unscaled-interlacing/proof.md) · [Source audit](results/zeng-unscaled-interlacing/sources.md) · [Mathematical review](https://github.com/1337isnot1337/solved-conjectures/issues/792#issuecomment-7192093300)
+
 ## 2026-11-26 — Wang–Yang's Fuss–Narayana conjecture
 
 A product determinant and two triangular positivity criteria prove Wang and Yang's 2018 Conjecture 4.1 for every Fuss parameter. [Proof](results/wang-yang-fuss-narayana/proof.md) · [Source audit](results/wang-yang-fuss-narayana/sources.md) · [Issue 98](https://github.com/1337isnot1337/solved-conjectures/issues/98)

@@ -144,6 +144,7 @@ STATUS_LABEL_SLUGS = {
     "Coffey–Smith conjecture": "coffey-smith",
     "Chaudhary–Khmiri–Mazhouda conjecture": "chaudhary-khmiri-mazhouda",
     "Merlini–Sala–Sala conjecture": "merlini-sala-sala",
+    "Zeng’s unscaled interlacing question": "zeng-unscaled-interlacing",
     "Wang–Yang's Fuss–Narayana conjecture": "wang-yang-fuss-narayana",
     "Wang–Yang's conjecture": "wang-yang",
     "Tom–Vailaya’s weighted trace conjecture": "tom-vailaya-weighted-trace",
