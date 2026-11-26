@@ -1,0 +1,36 @@
+# Erdős–Pyber–Tuza rainbow six-cycle conjecture
+
+**Theorem.** For a finite association scheme on n equal-weight types, let six symmetric fractional color matrices belong to its adjacency algebra, be balanced with row mean 1/6, sum pointwise to one, and have commuting color operators. Either every prescribed rainbow six-cycle order has density at least 6⁻⁶/81, or there is a bipartition into two equal parts that is equitable for every color and has strong parity bias: three colors have more same-side than opposite-side mass, three have more opposite-side than same-side mass, and the six average absolute biases exceed 2/3. Bias here is the absolute difference between the proportions of a hue's mass inside and across the cut, and the proportions hold at every root of each part.
+
+In particular primitive schemes, even without transitive automorphism groups or any bound on the number of relations, always satisfy the positive-density alternative. A version for conventional complete-graph colorings of odd order is given below. The theorem does not exclude every nonpure bias in an imprimitive scheme, and does not settle [Erdős #811](https://www.erdosproblems.com/811).
+
+## Joint eigenspaces and their spherical distributions
+
+Divide each color operator by its mean to make it stochastic, and write a_i for its joint eigenvalue on a nonconstant joint eigenspace E of dimension m. Orthogonal projections onto these spaces belong to the real scheme algebra: take a generic linear combination of the commuting symmetric operators, whose distinct joint eigenvalues separate, and interpolate the spectral projections by polynomials. In this argument first restrict away from the constant direction, or subtract its rank-one projection from the appropriate eigenspace. The constant projection belongs to the association algebra.
+
+The projection P onto E has all diagonal entries m/n by the defining diagonal relation. For each type x set v_x=(n/m)^(1/2) P e_x in Euclidean m-space; these are unit vectors, have mean zero, and satisfy mean_x v_x v_xᵀ=I/m. Their inner products are (n/m)P_xy, constant on each basis relation. Each relation is regular, so the distribution of inner products of v_x with the n vectors is independent of x. Moreover, (P_i P)_xx=a_i P_xx for the stochastic color operator P_i, so
+```math
+D_E:=\tfrac16\sum_i |a_i|
+\le \frac1n\sum_y |\langle v_x,v_y\rangle|.
+```
+Here we used that the six colors sum to one pointwise. For m≥3, the right side is at most 1/√m≤2/3 by Cauchy–Schwarz and the isotropic second moment.
+
+## The dimension-two lemma
+
+A finite multiset of unit vectors in the plane with mean zero, covariance I/2 and root-independent inner product distributions likewise has mean absolute inner product at most 2/3. Each distinct vector occurs the same number of times, by considering the inner-product value 1. Regard the distinct vectors as a set of points on the unit circle. Write δ for the smallest cyclic gap in their order, equivalently the minimum positive angular distance. Pairs at distance δ are exactly the consecutive points with gap δ. Their graph has constant degree either two or one by the distribution hypothesis.
+
+If the degree is two, all gaps equal δ, so the set is a regular polygon. If the degree is one, the δ gaps are a perfect matching of consecutive neighbors and alternate with larger gaps. The smallest larger gap γ is less than π since there are at least two of them; there cannot be only two support points because of the mean and rank hypotheses. A shortest circular arc of length γ cannot use more than one gap, since two consecutive gaps include a larger one and hence already exceed γ. The pairs at angle γ are therefore the consecutive γ gaps. Every vertex belongs to at most one such pair and the number is constant, so every larger gap is γ. The set consists of two regular r-gons of equal size, rotated by δ relative to each other.
+
+For a rotated regular polygon with at least three distinct directions modulo sign, its mean absolute cosine against any fixed axis is at most 2/3. Indeed, write the r' distinct angles modulo π in the interval [−π/2,π/2]. They form a consecutive arithmetic progression of spacing π/r', so the cosine sum is at most 1/sin(π/(2r')). Divide by r': the resulting bound decreases for r'≥3 and is 2/3 at three. A single unrotated square seen from a vertex has mean absolute cosine 1/2. For two squares, the other square has mean at most 1/√2 by Cauchy–Schwarz, so the combined mean is at most (1/2+1/√2)/2<2/3. For two antipodal pairs the covariance identity forces the two directions perpendicular, yielding mean 1/2. These are the only exceptions not covered by the three-direction bound; a single antipodal pair has rank one. This proves the lemma and D_E≤2/3 when m=2.
+
+## Density and the exceptional mode
+
+Write E_E=(1/6)Σ_i a_i². Parseval gives Σ_E m E_E≤5, from the bound that each normalized color has square integral at most six and its constant component has norm one. The absolute product of the six eigenvalues is at most D_E^4 E_E by AM–GM and the quadratic mean. The normalized rainbow density is the trace of the product of the six stochastic color operators, whose constant direction contributes one. If D_E≤2/3 for every E, it is at least 1−5(2/3)^4=1/81.
+
+Otherwise a joint eigenspace of dimension one has D_E>2/3. Its real unit eigenvector has entries of equal absolute value 1/√n from the projection diagonal, with half positive and half negative by orthogonality to constants. Its color eigenvalue equation says the proportional same-side minus opposite-side mass at every vertex equals a_i. The a_i sum to zero by the palette sum, and each belongs to [−1,1]. Both the positive absolute sum and the negative absolute sum exceed two; consequently there are exactly three of each sign. The equality relation of the eigenvector signs is a union of scheme relations, since equal signs are equivalent to P_xy=1/n. For a primitive scheme this is impossible, so the density alternative always holds there.
+
+## Ordinary odd-order colorings
+
+If the six adjacency matrices belong to one scheme algebra and commute, n=6t+1 and the color degrees are t, then the same argument with P_i=A_i/t has a multiplier L=n/(n−1). In the bound for D_E one uses the off-diagonal palette sum and gets D_E≤2L/3 for m≥2; the diagonal term can be dropped when bounding the spherical average. Rank one does not occur because the sign classes would have equal cardinality in odd order. The HS energy bound becomes 6L−1, so the normalized density is at least 1−(2L/3)^4(6L−1), which tends to 1/81. Removing the O(n⁵) walks with repeated vertices gives Ω(n⁶) rainbow six-cycles for all sufficiently large admissible n, with no rank hypothesis on the scheme.
+
+The [earlier scheme argument](ASSOCIATION-SCHEMES.md) needed a bounded rank but required only one color to lie in the primitive scheme algebra. This theorem trades that one-color generality for unbounded rank with commuting operators and works on non-Schurian schemes. The [compact normal Cayley theorem](COMPACT-NORMAL-PARITY.md) uses group product sets to exclude mixed biased cuts; that argument does not automatically extend to arbitrary scheme relations. Coordination: [#870](https://github.com/1337isnot1337/solved-conjectures/issues/870).
