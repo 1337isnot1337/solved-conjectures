@@ -56,7 +56,7 @@ Set $`U=(G(Y_1)+G(Y_2)+G(Y_3))/3`$. Pairwise independence of the three base poin
 
 As $`k\le3`$, this forces $`k=3`$ and $`U=(U\cdot e_X)e_X`$ almost surely.
 
-For each $`x\in K`$, the event that $`X`$ and $`Y_1`$ both lie within $`\varepsilon`$ of $`x`$ has positive probability, by their independence. On that event each $`Y_j`$ is within $`3\varepsilon`$ of $`x`$. Pick an outcome satisfying the almost-sure projection identity for every member of a sequence $`\varepsilon\downarrow0`$. Continuity gives $`G(x)=(G(x)\cdot e_x)e_x`$. Thus $`\Sigma^{-1}(F(x)-m)`$ is parallel to $`a_x`$. This vector $`a_x`$ is normal to the lifted paraboloid at $`F(x)`$, so $`x`$ is a critical point of
+For each $`x\in K`$, the event that $`X`$ and $`Y_1`$ both lie within $`\varepsilon`$ of $`x`$ has positive probability, by their independence. On that event each $`Y_j`$ is within $`3\varepsilon`$ of $`x`$. Fix a sequence $`\varepsilon_j\downarrow0`$. For each $`j`$, choose an outcome in the corresponding positive-probability event for which the projection identity holds. Along these outcomes the pin and all three base points converge to $`x`$. Continuity gives $`G(x)=(G(x)\cdot e_x)e_x`$. Thus $`\Sigma^{-1}(F(x)-m)`$ is parallel to $`a_x`$. This vector $`a_x`$ is normal to the lifted paraboloid at $`F(x)`$, so $`x`$ is a critical point of
 
 ```math
 Q(x)=(F(x)-m)^\mathsf T\Sigma^{-1}(F(x)-m).
