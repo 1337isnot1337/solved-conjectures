@@ -1,0 +1,33 @@
+# The Burr–Erdős–Graham–Sós rainbow four-cycle conjecture
+
+**Partial.** No fixed-density family can use a finite group multiplication table as its coloring and have every four-cycle rainbow, even with bounded splitting of each product color. For abelian labels the ambient group need not be finite or comparable in size: a dense restricted pair set with only $O(n)$ additive colors necessarily has a nonrainbow four-cycle. Both statements are uniform over the group and the labeling. The unrestricted coloring problem remains open.
+
+The exact target is [Erdős #810](https://www.erdosproblems.com/810), from [Burr–Erdős–Graham–Sós, pp. 273 and 277](https://www.renyi.hu/~p_erdos/1989-10.pdf). In their notation they expect that for no fixed $\epsilon>0$ can $\chi_S(n,\epsilon n^2,C_4)\le n$ hold for all sufficiently large $n$. The following results are separate from both the odd-cycle question and the question about six balanced colors in complete graphs.
+
+## Finite group tables
+
+Fix edge density $\epsilon>0$. Let the two vertex parts be copies of a finite group $G$, and take any edge set $E\subseteq G\times G$ of density at least $\epsilon$. Color $(x,y)$ by $xy$. The same proof allows at most $k$ fixed splits per product color: assign a split index for each value of the product, choose one common index carrying at least $1/k$ of the edges, and work in that subgraph.
+
+By [Pyber's abelian-subgroup theorem](https://doi.org/10.1007/978-1-4614-7258-2_25), $G$ has an abelian subgroup $H$ of order tending to infinity with $|G|$. Partition the table into blocks $(aH)\times(Hb)$ for left and right cosets respectively. At least one block has the same lower density; writing its coordinates as $(au,vb)$ reduces the product equality to equality of $uv$ in $H$. Use additive notation on $H$.
+
+Choose $L$ from the four-letter [density Hales–Jewett theorem](https://doi.org/10.1007/BF03041066) for density $\epsilon/k$. Choose $h_1,\ldots,h_L\in H$ with all binary subset sums distinct. Greedily, when choosing $h_i$, avoid the at most $3^{i-1}$ differences of earlier subset sums. This is possible as soon as $|H|>3^{L-1}$. Consider words of length $L$ over four letters $(a_i,b_i)\in\{0,1\}^2$, and map them to points
+```math
+\left(u_0+\sum_i a_i h_i,\quad v_0-\sum_i b_i h_i\right).
+```
+Averaging over uniform independent basepoints $u_0,v_0$ gives an edge preimage of density at least $\epsilon/k$ for some basepoints. A combinatorial line in that preimage yields all four cells of a rectangle with row difference $d$ and column difference $-d$, where $d$ is the sum of the $h_i$ over the nonempty variable positions. The distinct subset sums ensure $d\ne0$. These four cells form a genuine four-cycle, and its two diagonally opposite edges at base position and position $(+d,-d)$ have the same sum, and also the same split index. This is the prohibited nonrainbow cycle.
+
+## Arbitrary ambient abelian groups with linearly many colors
+
+Let $A,B$ be subsets of **any** abelian group, with sizes at most $n$. Regard the two sets as separate vertex parts. Let $E\subseteq A\times B$ have at least $\epsilon n^2$ edges and at most $Kn$ different edge sums $x+y$, for fixed $\epsilon,K>0$. Then for all sufficiently large $n$, $E$ contains a four-cycle whose opposite edges have equal sums.
+
+**Retain a dense rectangle with small full sumset.** Apply the bipartite Szemerédi regularity lemma with a sufficiently small fixed parameter $\eta$ depending on $\epsilon$. There is a regular pair of parts of sizes $\Omega_\epsilon(n)$ and density $\Omega(\epsilon)$: otherwise the irregular pairs, exceptional vertices, and low-density regular pairs cannot account for the original edge density. In that pair retain the vertices on each side with neighbor sets of at least $(d-\eta)$ times the opposite part, where $d$ is the pair density; at most an $\eta$ fraction on each side is discarded. Call the resulting parts $A',B'$; they still induce $\Omega_\epsilon(n^2)$ original edges.
+
+Each $x\in A',y\in B'$ is joined by $\Omega_\epsilon(n^2)$ three-edge walks through the original regular pair. Indeed, the two neighborhoods of $x$ and $y$ within the corresponding original clusters are large, and regularity supplies a positive density of edges between them. For a walk $x,b,a,y$ with edge sums $s_1,s_2,s_3$, its endpoint sum is $s_1-s_2+s_3$. Fix one endpoint pair for each realized value $x+y$ in **the full sumset**. For a fixed pair, its walks give distinct ordered triples of edge sums (recover $b$ from $x,s_1$ and $a$ from $b,s_2$). Distinct full-sumset values use disjoint triples. There are at most $(Kn)^3$ triples in total. Hence $|A'+B'|=O_{\epsilon,K}(n)$.
+
+**Model all the retained vertices.** The [Plünnecke–Ruzsa inequality](https://arxiv.org/abs/1101.3507), applied once with base $A'$ and once with base $B'$, gives $|2A'|,|2B'|=O_{\epsilon,K}(n)$. Thus $A'\cup B'$ has bounded doubling (all its two-fold sums lie in $2A'$, $A'+B'$, or $2B'$). The [Green–Ruzsa good-model theorem, Proposition 1.2](https://arxiv.org/abs/math/0505198) gives a Freiman two-isomorphism of this entire set into a finite abelian group of size $O_{\epsilon,K}(n)$, preserving equality and nonequality of pairs' sums. The $\Omega_\epsilon(n^2)$ original edges remain dense in that model's square, and its group order grows without bound. Apply the finite abelian result above and pull back the four cells and the opposite sum equality.
+
+This also works if each sum is split into a bounded number of subcolors: retain one split index globally before starting, and use the matching index and equal base sums on the two opposite edges. In the original group-table result, merging product colors is also allowed since merging does not destroy equalities; in the arbitrary ambient case the stated linear bound is on the *base sums*.
+
+## What remains
+
+The original article gives the $(7,4)$ hypergraph construction as a lower bound in a different direction; it does not assert the existence of a group description for arbitrary putative dense rainbow-four-cycle colorings. There is no such assumption in the main question. The present argument rules out both finite group-table candidates of every group order/type and arbitrary additive labels with linearly many sums. Searches using the exact problem, the original article, later $P_4$ and cross-free matching literature, and group-table and Hales–Jewett variants did not find a prior result in this precise form. This is a bounded priority check, not external confirmation. Coordination: [issue #879](https://github.com/1337isnot1337/solved-conjectures/issues/879).
