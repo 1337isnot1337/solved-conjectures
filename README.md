@@ -1,5 +1,7 @@
 # Solved conjectures in combinatorics and number theory
 
+> **November 26, 2026 audit.** This branch preserves the catalogue before seven priority withdrawals and the subsequent statement corrections. Read the [audit findings](AUDIT.md), browse the [272 record dossiers](audit/records/README.md), or use the [corrected catalogue on main](https://github.com/1337isnot1337/solved-conjectures/tree/main).
+
 Mathematical proofs, counterexamples, and partial results in combinatorics, number theory, graph theory, and discrete geometry. Includes Lean 4 formalizations and reproducible verification code.
 
 Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. External contributions have separate result-level credit.

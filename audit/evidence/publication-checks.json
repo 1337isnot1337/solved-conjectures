@@ -1,0 +1,24 @@
+{
+  "891": {
+    "candidate": "01fd2da3da06c795613d7ab0b10b80696637aab0",
+    "merged": "d5dfad5148d8e88bdea39fe9f475beecc8f8c01b",
+    "matched_tree": "6d7031c73360df1e809dffd3b7b0a01f61c26be8",
+    "local_readme_ranks_checked": 164,
+    "checks": {
+      "site_tests": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.669s\n\nOK",
+      "site_validation": "Verified 934 HTML pages, 189 results, 933 sitemap URLs, and 41400 MathML formulas.\nTitles, descriptions, canonicals, source scopes, attribution, internal links, anchors, and local assets passed."
+    },
+    "url": "https://github.com/1337isnot1337/solved-conjectures/pull/891"
+  },
+  "895": {
+    "candidate": "654620d2c7b8b419e4df13abf20dc7efeaa54efc",
+    "merged": "999cde6b768631069265af3461b07987831c2fba",
+    "matched_tree": "262f74aebef728fb1f10d1e81a88ca847676c97d",
+    "local_readme_ranks_checked": 164,
+    "checks": {
+      "site_tests": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.577s\n\nOK",
+      "site_validation": "Verified 934 HTML pages, 189 results, 933 sitemap URLs, and 41400 MathML formulas.\nTitles, descriptions, canonicals, source scopes, attribution, internal links, anchors, and local assets passed."
+    },
+    "url": "https://github.com/1337isnot1337/solved-conjectures/pull/895"
+  }
+}
