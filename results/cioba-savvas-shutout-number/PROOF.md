@@ -21,7 +21,7 @@ Write $z\in\mathcal R(G)$ when $Q_U(z)>0$ for every $U$. In particular $Q_{\lbra
 
 Here are the region facts used below. They are the clique-coordinate idea of [Chen–Chen–Yang, §§2–3](https://arxiv.org/html/2608.20644v1), included with proofs to make the shutout argument self-contained.
 
-### Initialization
+### Fact 1. Initialization
 
 If $0<x<1$ and every $z_v\le x(1-x)^D$, then $z\in\mathcal R(G)$. Use the recurrence
 ```math
@@ -29,7 +29,7 @@ Q_{U\cup\{v\}}=Q_U-z_vQ_{U\setminus N(v)},\qquad v\notin U.
 ```
 Induct on $|U|$ to prove $Q_{U\cup\lbrace v\rbrace }/Q_U\ge 1-x>0$. By previously proved ratios, deleting at most $D$ neighbors of $v$ from $U$ shows $Q_{U\setminus N(v)}/Q_U\le (1-x)^{-D}$. Substitution proves the induction, with $Q_\varnothing=1$.
 
-### Clique test
+### Fact 2. Clique test
 
 Fix coordinates outside a clique $C$ and suppose their vector on $A=V(G)\setminus C$ lies in $\mathcal R(G[A])$. Then a nonnegative assignment on $C$ extends into $\mathcal R(G)$ exactly when
 ```math
@@ -46,14 +46,7 @@ In particular a coordinate can be decreased to zero with the remaining coordinat
 
 ## Breaker's strategy
 
-Call a vertex **live** if its host degree is at least $s$ and Breaker has not claimed any edge there. At a position after Breaker's move, or at the start, let $r_v$ be the Maker degree and put
-```math
-z_v =
-\begin{cases}
-2^{\,r_v-(s-1)} & \text{if }v\text{ is live},\\
-0 & \text{otherwise}.
-\end{cases}
-```
+Call a vertex **live** if its host degree is at least $s$ and Breaker has not claimed any edge there. At a position after Breaker's move, or at the start, let $r_v$ be the Maker degree. Set $z_v=2^{\,r_v-(s-1)}$ if $v$ is live and set $z_v=0$ otherwise.
 Breaker maintains $z\in\mathcal R(G)$. Initially this follows from the degree hypothesis and initialization with $x=1/(D+1)$. Whenever the invariant holds, every live vertex has $r_v\le s-2$.
 
 Suppose Maker takes $uv$. This cannot win immediately: a live endpoint increases by just one, hence reaches at most $s-1$, and no other vertex can newly qualify. Every live endpoint still has an unclaimed incident edge, since it has host degree at least $s$, no Breaker edge and at most $s-1$ Maker edges.
