@@ -44,6 +44,18 @@ $$
 $$
 This proves the theorem. The finitely many small orders can be handled by enlarging the implied constant.
 
+### 3. A growing induced biclique is necessary for a linear transversal
+
+Fix $0<c,\epsilon<1$. There is an $\eta=\eta(c,\epsilon)>0$ such that, for sufficiently large $n$, if every transversal for the maximal independent sets of size at least $cn$ has at least $\epsilon n$ vertices, then $G$ contains an induced $K_{r,r}$ with $r=\lfloor(\log n)^\eta\rfloor$.
+
+Take $J=\lceil 8/(c\epsilon)\rceil$ and $\eta=1/(2J)$. If $G$ has no induced $K_{r,r}$, repeat the proof using $s=t=r$ and precisely the first $J$ bands. For $0\le j<J$, the choice $a_j=(\log n)^{-2(2r)^j}$ gives
+$
+\log(1/a_j)=O_{c,\epsilon}((\log n)^{(J-1)/(2J)}\log\log n).
+$
+In particular $a_j|A|\ge 2r$ for sufficiently large $n$. The same definition of $L$ gives $\log(L+1)=O_{c,\epsilon}(\sqrt{\log n}\log\log n)=o(\log n)$, so the support of the sample has size at most $m=n^{o(1)}$. The expected residual neighborhood is $nma_j^{2r}=o(n)$: since $m=O_c((L+3)\log n)$ and $a_j\le(\log n)^{-2}$, we have $ma_j^{2r}=O_c(r(2a_j)^r\log n+a_j^{2r}\log n)=o(1)$. The selected degree band costs at most $n/J$ vertices per independent block. Thus the transversal has size at most $2n/(cJ)+o(n)<\epsilon n$, a contradiction.
+
+Consequently the strong conjecture holds along any graph sequence whose largest induced balanced biclique has side length $(\log n)^{o(1)}$. Large bicliques alone are not sufficient for a large transversal: a complete bipartite graph itself has transversal number at most two.
+
 ### Prior work and scope
 
 [Cheng and Xu, JGT 109 (2025), 514–517](https://doi.org/10.1002/jgt.23246) ([preprint](https://arxiv.org/abs/2405.18264)) prove a sublinear transversal for **maximum** independent sets under the same induced-subgraph exclusion. The degree-band idea is related to their proof. Their hitting argument replaces vertices to increase the size of a maximum set; it does not hit smaller maximal sets. Here the bounded high-degree part comes from double counting and the hitting argument uses domination of a sample by that part, followed by a decomposition into independent blocks. [Cooper–Hollars](https://arxiv.org/abs/2607.15486) distinguish the two conjectures and prove results for cographs and split graphs. The exact target, its stronger formulation, follow-up references, the induced-biclique terminology, and both repository branches were checked on 26 November 2026; no statement covering all large maximal sets in this class was located in the inspected sources. This is a bounded search, not a priority guarantee. This result does not change the unrestricted status or count as another resolved conjecture. See [tracking issue #830](https://github.com/1337isnot1337/solved-conjectures/issues/830).
