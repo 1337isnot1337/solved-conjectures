@@ -62,6 +62,13 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Misère Domination Game": "misere-domination-game",
+    "Mobile general position complexity": "mobile-general-position-complexity",
+    "Permutation digraph general position conjecture": "permutation-digraph-general-position",
+    "General position number of oriented trees": "general-position-oriented-trees",
+    "Builder–Blocker general position complexity conjecture": "builder-blocker-general-position-complexity",
+    "Fractional general position conjecture for square grids": "fractional-general-position-square-grids",
+    "Erdős’s pinned-distance conjecture in general position": "erdos-general-position-pinned-distances",
     "Cioba–Savvas shutout number conjecture": "cioba-savvas-shutout-number",
     "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
     "The lower oriented general position NP-hardness conjecture": "lower-oriented-general-position-np-hardness",
