@@ -207,3 +207,15 @@ zero or one. This does not assert convergence or concentration under
 the tilt, or the arithmetic large-deviation principle.
 
 [Finite tilt replay](verification/bernoulli-tilt/receipt.json)
+
+## Transfer of exponential event bounds
+
+Lean checks that adding a superexponentially small probability error
+preserves both finite exponential upper rates and lower rates at any
+diverging speed. The definition and both transfer inequalities also
+cover zero-probability events without using a totalized logarithm.
+The proof includes closure of error bounds under finite sums and
+subexponential factors. This does not assert that the arithmetic
+replacement errors already meet those hypotheses.
+
+[Exponential transfer replay](verification/exponential-transfer/receipt.json)
