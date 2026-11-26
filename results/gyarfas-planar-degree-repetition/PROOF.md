@@ -45,7 +45,7 @@ Let $T_i$ count the indices $j\ne i$ with $i+j\in S_e$. Each such $j$ merges exa
 Put $h=\lfloor(k-1)/2\rfloor$. For the initial heights $0,\ldots,k-1$ the admissible indices are $0\le j\le k-1-i$, excluding $i$ itself when $i\le h$. Removing height $1$ removes precisely the pair $0,1$. Adding height $2k-3$ adds precisely the pair $k-2,k-1$. Height $-1$ contributes no pair. Therefore
 
 ```math
-T_i=k-i-\mathbf1_{i\le h}-\mathbf1_{i\le1}+\mathbf1_{i\ge k-2}.
+T_i=k-i-\mathbf{1}_{i\le h}-\mathbf{1}_{i\le1}+\mathbf{1}_{i\ge k-2}.
 ```
 
 The difference $T_i-T_{i+1}$ equals one except at $i=1,h,k-3$, where it equals zero. These three indices are separated by at least two for $k\ge8$. Thus each off-axis degree occurs at most twice, and the smallest is attained only at $i=0$. Since $T_0=k-2$, this smallest degree is $k+e+1$.
