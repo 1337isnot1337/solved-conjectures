@@ -6,7 +6,7 @@ Lean proves the pointwise transfer inequality, the dimension threshold, the four
 
 ## Nathanson’s linear-form Sidon systems
 
-Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Lean theorem](../lean/Conjectures/NathansonSidonTheorems.lean) · [Kernel receipt](verification/lean-nathanson-sidon-20261126/receipt.json).
+Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Sharp limit theorems](../lean/Conjectures/NathansonSidonSharpTheorems.lean) · [Research receipt](verification/lean-nathanson-sidon-sharp-20261126/receipt.json).
 
 ## Erdős–Gyárfás’s point-degree spectrum conjecture
 

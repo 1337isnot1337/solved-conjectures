@@ -4,6 +4,18 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.NathansonSidonAllocation
+  Conjectures.NathansonSidonLayerBounds
+  Conjectures.NathansonSidonLayers
+  Conjectures.NathansonSidonLowDigits
+  Conjectures.NathansonSidonMixedRadix
+  Conjectures.NathansonSidonSharpLimit
+  Conjectures.NathansonSidonSharpProgression
+  Conjectures.NathansonSidonSharpTheorems
+  Conjectures.NathansonSidonSignedSets
+  Conjectures.NathansonSidonSplitDigits
+  Conjectures.NathansonSidonTopDigits
+  Conjectures.NathansonSidonWidth
   Conjectures.KovalevHardySeparation
   Conjectures.KovalevRationalCertificate
   Conjectures.NathansonSidonDiameter
