@@ -12,6 +12,10 @@ Run `python3 results/byrne-tait-odd-sidon/verify.py` for the two finite group ac
 
 With SymPy 1.14.0 installed, run `python3 docs/research-results/rather-book-domination-roots/check.py` to enumerate dominating sets, isolate real roots over the rationals and verify the sign constants. Run `python3 docs/research-results/tuite-thomas-chandran-circulants/check.py` with standard Python to check finite border graphs, the uniform jump families and the order-15 exception. [Book review](research-results/rather-book-domination-roots/REVIEW.md) · [Circulant review](research-results/tuite-thomas-chandran-circulants/REVIEW.md)
 
+## Oriented general position spectrum nonconstancy conjecture
+
+Run `python3 results/oriented-general-position-spectrum-nonconstancy/verify.py` to check the two orientation certificates on all 33,868 labeled simple graphs of orders zero through six. The [proof](../results/oriented-general-position-spectrum-nonconstancy/PROOF.md) does not depend on finite computation.
+
 ## The lower oriented general position NP-hardness conjecture
 
 Run `python3 results/lower-oriented-general-position-np-hardness/verify.py` to compare exact Hamilton-path counts to all 511,102 orientations of the 8,555 labelled graphs on up to six vertices with at least two leaves. The [proof](../results/lower-oriented-general-position-np-hardness/PROOF.md) is uniform and does not use this regression.

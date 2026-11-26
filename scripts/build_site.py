@@ -64,6 +64,7 @@ SOURCE_TITLES = {
 STATUS_LABEL_SLUGS = {
     "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
     "The lower oriented general position NP-hardness conjecture": "lower-oriented-general-position-np-hardness",
+    "Oriented general position spectrum nonconstancy conjecture": "oriented-general-position-spectrum-nonconstancy",
     "Welton–Khudairi–Tuite lower general position product conjecture": "welton-khudairi-tuite-lower-gp-product",
     "Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture": "general-position-nordhaus-gaddum",
     "Brown–Cameron’s independence-root sector and stability problems": "brown-cameron-stability",
