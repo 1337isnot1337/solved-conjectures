@@ -1,6 +1,6 @@
 # Mobile general position complexity
 
-**Partial resolution of the [complexity question](https://arxiv.org/html/2501.19385v5#S6).** Deciding whether the mobile general position number reaches a given threshold is NP-hard even on diameter-two graphs with a universal vertex. On the explicit hard family the threshold language is NP-complete and positive instances have linear-length move sequences. The unrestricted problem is in PSPACE; this result does not decide whether the unrestricted problem is in NP or PSPACE-complete.
+**Companion result.** On this explicit subclass of diameter-two graphs with a universal vertex, the mobile general position threshold language is NP-complete and positive instances have linear-length move sequences. The separate [full proof](PROOF.md) establishes PSPACE-completeness on general diameter-two inputs.
 
 The problem is posed in the concluding section of [Klavžar et al., *Traversing a graph in general position*](https://users.fmf.uni-lj.si/klavzar/preprints/Moving.pdf). The graph starts with any general position set of k occupied vertices. One move takes a robot along one edge to an unoccupied vertex, leaving the occupied set in general position. Success means that each vertex has been occupied at least once by some robot, not that each individual robot visits every vertex.
 
