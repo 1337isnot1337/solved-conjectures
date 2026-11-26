@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Fiscus–Hurlbert–Myzelev–Pence’s even-grid conjecture
+
+Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Lean proof](../lean/Conjectures/FiscusGridCounterexample.lean) · [Kernel receipt](verification/lean-fiscus-ladder-20261126/receipt.json).
+
 ## Circular-index certificates within the package memory limit
 
 The finite circular-index certificates for degrees 49, 50, 51, 53, 55 and 59 now verify their vertex tables in groups of sixteen. All six modules passed the normal Lake build under the configured 4.5 GB limit. The joint finite, stored-graph and all-degree proof suites also passed strict compilation, full axiom audit and stock-kernel replay twice. [Finite certificates](verification/lean-circular-bounded-20261126/finite/receipt.json) · [Stored insertions](verification/lean-circular-bounded-20261126/stored/receipt.json) · [All degrees](verification/lean-circular-bounded-20261126/all/receipt.json).

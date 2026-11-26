@@ -9,6 +9,21 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FiscusGrid.certificate,
+    `FiscusGrid.picked_empty,
+    `FiscusGrid.picked_one,
+    `FiscusGrid.first_wins,
+    `FiscusGrid.winning_openings,
+    `FiscusGrid.not_even_grid_conjecture,
+    `FiscusGrid.wins_iff,
+    `FiscusGrid.number_vertex,
+    `FiscusGrid.vertex_number,
+    `FiscusGrid.mem_picked,
+    `FiscusGrid.picked_insert,
+    `FiscusGrid.hood_closed,
+    `FiscusGrid.covered_iff,
+    `FiscusGrid.table_sound,
+    `FiscusGrid.consistent_spec,
     `CircularIndex.Deleted.all_rows_of_blocks,
     `GyarfasPlanar.axis_value_count_low,
     `GyarfasPlanar.axis_value_count_extra,
