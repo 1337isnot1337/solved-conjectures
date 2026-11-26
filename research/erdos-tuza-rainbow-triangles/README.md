@@ -70,3 +70,15 @@ S=\sum_w\ \sum_{r\ne w}\ \sum_{c=0}^5
 where $T_w$ is the triangle obtained by deleting $w$. Conditional on the strings in $T_w$, the independent string at $w$ gives a uniform edge color to $r$. Every summand consequently has expectation zero. On the other hand the [integer verifier](four_vertex.py) visits all $6^6$ labeled four-vertex colorings, discards any with a forbidden triangle, and gives $12\le S\le2878$ in every remaining case. This contradicts zero expectation and excludes every finite balanced base in this class. The weights were found by linear programming. Their verification uses only the standard library, exact integer sums, and all labeled patterns.
 
 An intersecting palette construction can therefore occur only inside the classes of degrees $(4,4,4,6,6,6)$ and $(5,5,5,5,5,5)$.
+
+## The palettes that must actually occur
+
+**Theorem.** A balanced coloring whose rainbow palettes are pairwise intersecting realizes either nine or ten distinct palettes. Up to relabeling, its palette family is the design
+
+```math
+\mathcal D=\{012,013,024,035,045,125,134,145,234,235\},
+```
+
+the family obtained by replacing one triple of this design by its complement, or the family obtained by deleting one triple. In the nine-palette case the two maximal extensions determine each other uniquely once the nine palettes are specified.
+
+To see this, join two surviving labeled maximal families when they differ in one complementary pair. The [enumeration](palettes.py) checks that the 12 copies of the design each have ten neighbors of the other type, and each of the 120 families of the other type has a unique neighbor, a design. The resulting graph is the disjoint union of twelve stars. The enumeration also checks that every pair of colors belongs to exactly two triples of each design. For an actual palette family missing both choices in $j$ complementary pairs, its maximal extensions form a $j$-dimensional cube. Each extension passes every necessary test above because it contains all the actual palettes. A star has no 4-cycle, so $j\le1$. With $j=1$ the two extensions are adjacent and their intersection is the actual family. With $j=0$ all ten palettes occur.
