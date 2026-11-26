@@ -6,7 +6,7 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv).
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** partial. Lean proves Proposition B for every parameter from 6 through 14. For each of the nine graphs it checks all degrees and the exact real circular index. The theorem for every parameter from 15 onward remains open in Lean. [Sources and verification](FORMALIZATION.md).
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Section 8 (the remark after Problem 7).
 

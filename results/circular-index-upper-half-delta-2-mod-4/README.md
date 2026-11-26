@@ -6,7 +6,7 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv).
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** partial. Lean proves Proposition 2 for degrees 10, 14, 18 and 22, and the exact values at degrees 25 and 26 for the one- and two-block constructions. The unbounded construction remains open in Lean. [Sources and verification](FORMALIZATION.md).
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Section 8 (the remark after Problem 7).
 

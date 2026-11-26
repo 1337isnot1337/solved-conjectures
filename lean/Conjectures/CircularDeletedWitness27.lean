@@ -1,0 +1,102 @@
+import Conjectures.CircularDeletedColoring
+
+/-! Labelled colourings on 27 vertices in the repository certificate. -/
+
+namespace CircularIndex.Deleted
+
+namespace Witness30
+
+def deleted : Finset (Sym2 (Fin 27)) := {s(0,1), s(2,7), s(3,8), s(4,9), s(5,10), s(6,11)}
+
+private def rows : Array ℕ := #[
+  0x47372717072d1d0d4d3d44342414043a2a1a0a4a4030201000ffff,
+  0x322212024218084838283e2e1e0e4e25150545351b0b4b3b2bffff,
+  0xc0618491f123c3f033138090f4c45281b342eff15224225ffffff,
+  0x1628092f1c4c4f134122191f0c05482b443eff38320235ffffffff,
+  0x38193f2c260f2301320c2f1c150829044eff483b1245ffffffffff,
+  0x294f3c36483311421c1f2c2518393f0eff084b1405ffffffffffff,
+  0xf4c46083921022c2f433528494f3cff180b241effffffffffffff,
+  0x442e00110d24170a3e2b034d211a0731274741ffffffffffffffff,
+  0x3e10211d04271a4e3b340d312a1713370701ffffffffffffffffff,
+  0x20312d144e2a0e4b4437413a27231d1711ffffffffffffffffffff,
+  0x413d240e301e0b04473a4a37332d0121ffffffffffffffffffffff,
+  0x4d341e40011b14074a2e47433d110affffffffffffffffffffffff,
+  0x260d39204b422f102c1923163633ffffffffffffffffffffffffff,
+  0x1d49300b363f203c2902264643ffffffffffffffffffffffffffff,
+  0x9401b462d304c39124f0603ffffffffffffffffffffffffffffff,
+  0x2b063d190c49220f4013ffffffffffffffffffffffffffffffff,
+  0x3b164d291009321f001cffffffffffffffffffffffffffffffffff,
+  0x6250f4c1349461609ffffffffffffffffffffffffffffffffffff,
+  0x351f0c2316062619ffffffffffffffffffffffffffffffffffffff,
+  0x2f1c3326453629ffffffffffffffffffffffffffffffffffffffff,
+  0x2c4336053f39ffffffffffffffffffffffffffffffffffffffffff,
+  0x346154f3cffffffffffffffffffffffffffffffffffffffffffff,
+  0x230a2a33ffffffffffffffffffffffffffffffffffffffffffffff,
+  0x1a3a43ffffffffffffffffffffffffffffffffffffffffffffffff,
+  0x4a03ffffffffffffffffffffffffffffffffffffffffffffffffff,
+  0x13ffffffffffffffffffffffffffffffffffffffffffffffffffff,
+  0xffffffffffffffffffffffffffffffffffffffffffffffffffffff]
+
+private def inverse : Array ℕ := #[
+  0xffff12ffff07ffff1affff10ffffff06ffff11ffff0bffff19ffff0fffffff05ffff15ffff0affff18ffff0effffff04ffff14ffff09ffff17ffff0dffffff03ffff13ffff08ffff16ffff0cffffff02,
+  0xff0cffff04ffff13ffff08ffff16ffffff10ffff03ffff12ffff07ffff1affffff0fffff02ffff11ffff0bffff19ffffff0effff06ffff15ffff0affff18ffffff0dffff05ffff14ffff09ffff17ffff,
+  0xffffff0dffff17ffffff0cffff04ffff13ffff14ffffff10ffffff09ffff11ffff08ffff01ffff0bffff03ffff05ffff16ffffff0affff18ffff06ffff15ffff0effff1affff0fffff19ffff12ffff00,
+  0x14ffff15ffffff0cffffff0affff12ffff09ffff01ffff07ffff04ffff06ffff17ffffff0bffff19ffff02ffff11ffff0fffff16ffff10ffff1affff13ffff00ffffff0effff18ffffff0dffff05ffff,
+  0xff0affff01ffff08ffff05ffff02ffff18ffffff07ffff1affff03ffff12ffff10ffff17ffff0cffff16ffff14ffff00ffffff0fffff19ffffff0effff06ffff15ffff11ffffff0dffffff0bffff13ff,
+  0x19ffffff08ffff16ffff04ffff13ffff0cffff18ffff0dffff17ffff15ffff00ffffff10ffff1affffff0fffff02ffff11ffff12ffffff0effffff07ffff14ffff0bffff01ffff09ffff06ffff03ffff,
+  0xdffff19ffff0effff18ffff11ffff00ffffff0cffff16ffffff10ffff03ffff12ffff13ffffff0fffffff08ffff15ffff07ffff01ffff0affff02ffff04ffff1affffff09ffff17ffff05ffff14ffff,
+  0xffff0fffff00ffff09ffff1affff08ffff12ffff04ffff03ffff01ffffff0bffff19ffff11ffffff0affff15ffff0effff06ffffff0dffff14ffff05ffff17ffffff16ffff13ffff0cffffff10ffff18,
+  0xff13ffff05ffff04ffff01ffffff07ffff1affff12ffffff0bffff11ffff0fffff02ffffff0effff15ffff06ffff18ffffff17ffff14ffff0dffffff0cffff19ffff10ffff00ffff0affff16ffff09ff,
+  0xff16ffff13ffffff07ffff12ffff10ffff03ffffff0fffff11ffff02ffff19ffffff18ffff15ffff0effffff0dffff1affff0cffff00ffff0bffff17ffff0affff14ffff06ffff05ffff01ffffff08ff,
+  0xff04ffffff10ffff12ffff03ffff1affffff19ffff11ffff0fffffff0effff16ffff0dffff00ffff07ffff18ffff0bffff15ffff02ffff06ffff01ffffff09ffff17ffff14ffffff08ffff13ffff0cff,
+  0xffff1affff12ffff10ffffff0fffff17ffff0effff00ffff08ffff19ffff07ffff11ffff03ffff02ffff01ffffff0affff18ffff15ffffff09ffff14ffff0dffff05ffffff0cffff13ffff04ffff16ff,
+  0xff01ffff16ffff03ffff02ffff15ffff05ffff06ffff18ffff0effff0dffffff14ffff12ffff04ffff1affff10ffff17ffff09ffffff11ffff0fffff08ffff13ffff19ffff0bffff07ffff00ffff0aff,
+  0x6ffff02ffff19ffff0fffff0effffff15ffff13ffff05ffff16ffff0cffff18ffff0affffff12ffff10ffff09ffff14ffff1affff07ffff08ffff00ffff0bffff01ffff17ffff04ffff03ffff11ffff,
+  0x11ffff14ffff06ffff17ffff0dffff19ffff0bffffff13ffff0cffff0affff15ffff16ffff08ffff09ffff00ffff07ffff01ffff18ffff05ffff04ffff12ffff02ffff03ffff1affff10ffff0fffffff,
+  0xffff07ffffff14ffff0dffff0bffff11ffff17ffff09ffff0affff00ffff08ffff01ffff19ffff06ffff05ffff13ffff03ffff04ffff16ffff0cffff10ffffff12ffff15ffff02ffff18ffff0effff1a,
+  0xffff18ffff0affff0bffff00ffff09ffff01ffff1affff02ffff06ffff14ffff04ffff05ffff17ffff0dffff0cffffff13ffff11ffff03ffff19ffff0fffff16ffff08ffffff15ffff0effff07ffff12,
+  0xeffff17ffff15ffff14ffff06ffff0fffff00ffff0affff09ffff08ffff02ffff0bffff07ffff01ffff19ffff03ffff05ffff10ffff0cffff13ffff16ffffff18ffff04ffff12ffff1affffff0dffff,
+  0xffff00ffff0bffff0affff09ffff03ffff07ffff08ffff01ffff1affff04ffff06ffff0cffff0dffff14ffff17ffffff19ffff05ffff13ffff16ffffff0effff0fffff18ffff11ffff15ffff02ffff10,
+  0xff08ffff09ffff01ffff16ffff05ffff02ffff0dffff0effff15ffff18ffffff1affff06ffff14ffff17ffffff0fffff10ffff19ffff12ffff11ffff03ffff0cffff00ffff07ffff0bffff0affff04ff,
+  0x3ffff0effff0fffff11ffff19ffffff16ffff02ffff15ffff18ffffff10ffff0cffff1affff13ffff12ffff04ffff0dffff00ffff08ffff07ffff0bffff05ffff09ffff0affff01ffff17ffff06ffff,
+  0x17ffff03ffff11ffff19ffffff0cffff0dffff16ffff14ffff13ffff05ffff0effff00ffff09ffff08ffff07ffff06ffff0affff0bffff01ffff18ffff02ffff04ffff0fffff10ffff12ffff1affffff,
+  0xff09ffff0cffff05ffff13ffff01ffff14ffff15ffff06ffff0dffff17ffff0affff0effff18ffffff04ffff1affffff02ffff03ffff0fffff12ffff11ffff10ffff07ffff19ffff00ffff08ffff0bff,
+  0x15ffff11ffff02ffff0effff18ffff0bffff0fffff19ffffff05ffff16ffffff03ffff04ffff10ffff13ffff12ffff0cffff08ffff1affff00ffff09ffff07ffff0affff0dffff06ffff14ffff01ffff,
+  0xffff10ffff1affffff06ffff17ffffff04ffff05ffff0cffff14ffff13ffff0dffff09ffff16ffff00ffff0affff08ffff0bffff0effff02ffff15ffff01ffff11ffff12ffff03ffff0fffff19ffff07,
+  0x5ffff06ffff0dffff15ffff14ffff0effff0affff17ffff00ffff0bffff09ffff07ffff0fffff03ffff11ffff01ffff12ffff13ffff04ffff10ffff1affff08ffff0cffff16ffffff02ffff18ffffff,
+  0xffff0bffff18ffff00ffff07ffff0affff08ffff10ffff04ffff12ffff01ffff13ffff14ffff05ffff0cffff16ffff09ffff0dffff17ffffff03ffff19ffffff06ffff02ffff0effff11ffff15ffff0f]
+
+set_option maxRecDepth 12000 in
+set_option maxHeartbeats 6000000 in
+private theorem checked : ∀ v, RowValid deleted 80 3 rows inverse v := by decide
+
+/-- The density lower bound and the circular colouring of the labelled graph. -/
+theorem bounds :
+    (345 : ℝ)/13 ≤ circularChromaticIndex (graph 27 deleted) ∧
+    circularChromaticIndex (graph 27 deleted) ≤ (80 : ℝ)/3 := by
+  have hF : ∀ a ∈ deleted, ¬a.IsDiag := by
+    simp only [deleted, Finset.forall_mem_insert, Finset.mem_singleton, forall_eq,
+      Sym2.mk_isDiag_iff]
+    decide
+  have c := index_bounds checked (by decide) (by decide) (by decide) hF
+  have hc : (Nat.choose 27 2 - deleted.card : ℕ) = 345 := by decide
+  rw [hc] at c
+  exact c
+
+theorem upper_half :
+    (∀ w, (graph 27 deleted).degree w ≤ 26) ∧
+    (graph 27 deleted).degree 12 = 26 ∧
+    (26 : ℝ)+1/2 < circularChromaticIndex (graph 27 deleted) ∧
+    circularChromaticIndex (graph 27 deleted) < 27 := by
+  refine ⟨fun w => ?_,degree_at_uncovered deleted 12 ?_,?_,?_⟩
+  · have h := (graph 27 deleted).degree_lt_card_verts w
+    rw [Fintype.card_fin] at h
+    omega
+  · simp only [deleted, Finset.forall_mem_insert, Finset.mem_singleton, forall_eq, Sym2.mem_iff]
+    decide
+  · exact lt_of_lt_of_le (by norm_num) bounds.1
+  · exact lt_of_le_of_lt bounds.2 (by norm_num)
+
+end Witness30
+
+end CircularIndex.Deleted

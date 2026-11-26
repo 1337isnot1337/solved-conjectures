@@ -6,7 +6,7 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv).
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** partial. Lean checks all 32 labelled colourings, including 14 exact indices, six strict upper-half examples and the counterexample on 11 vertices. The other exclusions and the general single-edge theorem are separate. [Sources and verification](FORMALIZATION.md).
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Conjecture 2 and the remark in the open-problems section on graphs with $`\chi'_c\in(\Delta+1/2,\Delta+1)`$.
 
