@@ -121,10 +121,22 @@ and the source credits in the [audit](AUDIT.md).
   first element and any prescribed quotient image of its conjugator.
   The proof lifts a unit residue to a compatible coprime exponent.
 
-The nonabelian structural and generation inputs remain, including the
-actual socle decomposition into products of simple groups, the
-almost-simple existence of conjugate generators, and the two-generator
-lifting property.
+- [Actual socle](../../lean/Conjectures/ShumyatskySocleStructure.lean).
+  A nonabelian minimal normal subgroup has trivial center. When
+  every minimal normal subgroup is nonabelian, their join is the
+  direct product of the actual subgroups. The join is nontrivial in
+  a nontrivial finite group. The simultaneous assembly applies to
+  the quotient by that socle given the local prime-spectrum lifts.
+
+- [Simple direct powers](../../lean/Conjectures/ShumyatskyCharacteristicallySimple.lean).
+  An internal minimal normal subgroup of a nonabelian minimal normal
+  subgroup is simple and nonabelian. Its distinct ambient conjugates
+  are its actual direct factors and form a transitive orbit. The
+  direct-power isomorphism sends each coordinate factor to the
+  corresponding conjugate subgroup.
+
+The remaining generation inputs include the almost-simple existence
+of conjugate generators and the two-generator lifting property.
 
 The pinned Lean 4.35.0 gate strictly recompiles each module, audits
 all declarations owned by it, and replays the objects with the stock
@@ -144,4 +156,6 @@ checker. The abelian reduction and cyclic normalization passed their exact scope
 [Simultaneous-assembly receipt](verification/socle-assembly/receipt.json) ·
 [Prime-kernel checkpoint](verification/prime-kernel-lift/receipt.json) ·
 [Abelian-reduction receipt](verification/abelian-reduction/receipt.json) ·
-[Cyclic-normalization receipt](verification/cyclic-normalization/receipt.json).
+[Cyclic-normalization receipt](verification/cyclic-normalization/receipt.json) ·
+[Actual-socle receipt](verification/socle-structure/receipt.json) ·
+[Simple-power receipt](verification/simple-power/receipt.json).

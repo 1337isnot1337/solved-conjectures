@@ -5,4 +5,4 @@
 - [Complete proof](PROOF.md)
 - [Independent review, sources and attribution](AUDIT.md)
 
-The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) includes the abelian reduction, the cyclic quotient normalization, and the actual multifactor and simultaneous lifts under the stated nonabelian hypotheses. External refereeing is pending.
+The written proof has been reviewed within the project. [Partial Lean verification](FORMALIZATION.md) includes the abelian reduction, the cyclic quotient normalization, the actual direct-product socle and its simple factors, and the multifactor and simultaneous lifts under the stated generation hypotheses. External refereeing is pending.

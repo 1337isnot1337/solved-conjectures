@@ -6,7 +6,10 @@ Partial. Lean verifies the reduction to prime-spectrum-minimal groups,
 the quotient and kernel cardinality argument, the actual action
 on simple factors, the independent closed words and reserved-cycle
 completion, the conditional multifactor lift and simultaneous adjustments, the
-abelian reduction, and the cyclic quotient normalization.
+abelian reduction, the cyclic quotient normalization, and the direct
+product decomposition of the socle when all minimal normals are nonabelian.
+Each such minimal normal subgroup is a finite direct power of a
+nonabelian simple group, with its actual factors permuted transitively.
 [Lean scope and receipts](../results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
 
 
