@@ -1,0 +1,684 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T00:00:14.047887+00:00",
+  "finished_at": "2026-11-26T00:08:18.739479+00:00",
+  "root": "Conjectures.KauersKoutschanConjecture",
+  "project_modules": [
+    "Conjectures.KauersKoutschanActualRows",
+    "Conjectures.KauersKoutschanAffineTraceMoment",
+    "Conjectures.KauersKoutschanAssignmentMonomials",
+    "Conjectures.KauersKoutschanBivariateMoment",
+    "Conjectures.KauersKoutschanBlockLengths",
+    "Conjectures.KauersKoutschanBlockOrder",
+    "Conjectures.KauersKoutschanBlockSigns",
+    "Conjectures.KauersKoutschanBlocks",
+    "Conjectures.KauersKoutschanCertificate",
+    "Conjectures.KauersKoutschanColumnSeries",
+    "Conjectures.KauersKoutschanCompositionBlocks",
+    "Conjectures.KauersKoutschanCompositionCoefficients",
+    "Conjectures.KauersKoutschanCompositionCount",
+    "Conjectures.KauersKoutschanCompositions",
+    "Conjectures.KauersKoutschanConjecture",
+    "Conjectures.KauersKoutschanCount",
+    "Conjectures.KauersKoutschanDiagonalCoefficients",
+    "Conjectures.KauersKoutschanDividedSum",
+    "Conjectures.KauersKoutschanEvaluation",
+    "Conjectures.KauersKoutschanFactorialMoment",
+    "Conjectures.KauersKoutschanFiniteRecurrence",
+    "Conjectures.KauersKoutschanMaskCoefficients",
+    "Conjectures.KauersKoutschanMaskExpansion",
+    "Conjectures.KauersKoutschanOrderedRows",
+    "Conjectures.KauersKoutschanPermutationCount",
+    "Conjectures.KauersKoutschanPolynomialMoments",
+    "Conjectures.KauersKoutschanRadialSchurMoment",
+    "Conjectures.KauersKoutschanRowEnumeration",
+    "Conjectures.KauersKoutschanSchurMoment",
+    "Conjectures.KauersKoutschanSignedBlocks",
+    "Conjectures.KauersKoutschanState",
+    "Conjectures.KauersKoutschanTraceCoefficients",
+    "Conjectures.KauersKoutschanTracePolynomials",
+    "Conjectures.KauersKoutschanTraceProducts",
+    "Conjectures.KauersKoutschanUniformMoment",
+    "Conjectures.KauersKoutschanWeightedCompositions"
+  ],
+  "required_endpoints": [
+    "KauersKoutschan.conjecture10",
+    "KauersKoutschan.permutationCount_eq_finiteSumCount",
+    "KauersKoutschan.permutationCount_eq_column_coefficient",
+    "KauersKoutschan.markedColumns_product_mask",
+    "KauersKoutschan.coeff_maskWeight",
+    "KauersKoutschan.coeff_moment_assignment",
+    "KauersKoutschan.polynomial_factorial_schur_moment",
+    "KauersKoutschan.finiteSumCount_orderEight"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KauersKoutschanActualRows.lean": "f21bf40a643cf915f9973f997dcc6166ada4db2787c9ed97c847abd6f085fa2c",
+    "lean/Conjectures/KauersKoutschanAffineTraceMoment.lean": "cbaf30c66653fd42ffb1055cbbf1c6645b9a203dddbb12b5c33ff98f34d265e5",
+    "lean/Conjectures/KauersKoutschanAssignmentMonomials.lean": "7198810f7f912f47144cd8e79b9780a3706a1839fef9c67c92335e43c2cb6045",
+    "lean/Conjectures/KauersKoutschanBivariateMoment.lean": "d6b54e6a56a304feb2da328a4ba94a2511e065414731f1d2c82504f788d01926",
+    "lean/Conjectures/KauersKoutschanBlockLengths.lean": "9db9ffde7d779cda87e89b3c75b99299ab48242bd4b2896313fcde686050f2ae",
+    "lean/Conjectures/KauersKoutschanBlockOrder.lean": "d44ee54b28c5fcdb46bb4cad9d41feb2ceee74a69fd1d2a77311e81deee61137",
+    "lean/Conjectures/KauersKoutschanBlockSigns.lean": "c616fb1e0072a288460ff4462f95a3e7eaf1e1f5bb7e2d46581a3f950a52f43a",
+    "lean/Conjectures/KauersKoutschanBlocks.lean": "03c6477598a2cdcbc436a1fc1a935b823cd9e316dac5fde05332b14724fb5ac4",
+    "lean/Conjectures/KauersKoutschanCertificate.lean": "b98df1fadf7b14633466a46282834597bc27a137c38ff040dec71a4c5c1a2745",
+    "lean/Conjectures/KauersKoutschanColumnSeries.lean": "0da83ef53dc189b5342acd06af91a19a8c9e470795cbe36ff7c35fa9364564ed",
+    "lean/Conjectures/KauersKoutschanCompositionBlocks.lean": "44db96739cd4caa56af2e3ffc2bf9b3d1692c4dbc4d5d4faaf4ba508917299a5",
+    "lean/Conjectures/KauersKoutschanCompositionCoefficients.lean": "f07766da4483ebc259286e1064b318d7183a45f6ed04f2769f1853aa40c51dff",
+    "lean/Conjectures/KauersKoutschanCompositionCount.lean": "95010416312958f71fc11d978d3e5992777634056442e7e1056a723da5f08d66",
+    "lean/Conjectures/KauersKoutschanCompositions.lean": "933791f67c3a21805fb3fdb472e2d755387a85714ac5907c20c11f3a78a300ac",
+    "lean/Conjectures/KauersKoutschanConjecture.lean": "39e6b4e3bbfc2bfd67a11696993b16e46ebe2e16456a25554b1194ee585e0185",
+    "lean/Conjectures/KauersKoutschanCount.lean": "7e69c463155ed7da3b2c85cf9a8599e87bf2e921eda9248c3dd221096c65e866",
+    "lean/Conjectures/KauersKoutschanDiagonalCoefficients.lean": "3d38cc4026dd814c1d9ee8988cf40b40429bf2e02c20f38062d05e05cf085690",
+    "lean/Conjectures/KauersKoutschanDividedSum.lean": "75210e1fa19dc7ccf80343c6e2aa53398ade07d8c4b8cf2124ffa161f15af459",
+    "lean/Conjectures/KauersKoutschanEvaluation.lean": "2f704f97804c33d5aec05c80406480e94db595ddd09411510a5d5dc9195117c4",
+    "lean/Conjectures/KauersKoutschanFactorialMoment.lean": "65e1d080d09ff96bd22385973883cccd8cdfd8b8eca8429b6de4b7c4a233c2fa",
+    "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "7722d7f4a8e73d8bdd49a8c708a8612910ce82d01f9f7876e9e3ecc7771c0aea",
+    "lean/Conjectures/KauersKoutschanMaskCoefficients.lean": "0fd5f8644817ec46b82babcdfda6482198c33d412455b695131dece8410347e5",
+    "lean/Conjectures/KauersKoutschanMaskExpansion.lean": "ce5253852d1df5776f17d15176077050e353f9ff3ed1193375a850d841da94c0",
+    "lean/Conjectures/KauersKoutschanOrderedRows.lean": "a758dad48d6520b538a4bd123c30fcd469d12d3a62dee48801a1bd9fcfd8bcde",
+    "lean/Conjectures/KauersKoutschanPermutationCount.lean": "c00db8a09122a37211ac69c641ff154f349deea57ed530ef436545d22a008cf5",
+    "lean/Conjectures/KauersKoutschanPolynomialMoments.lean": "a2cce713611a293c9586d4055f312d60b44a494726e15639f3775c399a5b41d2",
+    "lean/Conjectures/KauersKoutschanRadialSchurMoment.lean": "8bafa2fa1875ffc300d2f6bb9b5fe2ef4e913cf5211ac98b2de4411537d6db84",
+    "lean/Conjectures/KauersKoutschanRowEnumeration.lean": "18dfd538e36ec849f97d73d271288e9d73c6180daef356d898ba002df9789883",
+    "lean/Conjectures/KauersKoutschanSchurMoment.lean": "b468a197bf10a6e16aab3b6767a6ff7eab9deac21ca71acdeef3e3ad0de88b91",
+    "lean/Conjectures/KauersKoutschanSignedBlocks.lean": "809499ceb05915150ea257b7d6ef3e4fff706fc825b3879bcd7e1c530a0fad9d",
+    "lean/Conjectures/KauersKoutschanState.lean": "fac4f2c4fbea2308808aa7e071a25ff7d4c49ae2c879de17d2678f610bc8ce79",
+    "lean/Conjectures/KauersKoutschanTraceCoefficients.lean": "446d7d9ff16bb6e6fdd7e1054bc4075aa12fbc0f4b7dd868819ecc88b1100924",
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanTraceProducts.lean": "036fbe80a83e4352e8aed5f12d7ca21a430f795e32a7d5933b999e2018451ca7",
+    "lean/Conjectures/KauersKoutschanUniformMoment.lean": "63cf73853b997ec380aca9de32f78d2394d376a70357203b668ad43719848483",
+    "lean/Conjectures/KauersKoutschanWeightedCompositions.lean": "910a8eee11ca5f69e01b6e962e86cde05f4619471ead6d66be72d997509c39cd"
+  },
+  "input_sha256": {
+    "lean/Conjectures/KauersKoutschanActualRows.lean": "f21bf40a643cf915f9973f997dcc6166ada4db2787c9ed97c847abd6f085fa2c",
+    "lean/Conjectures/KauersKoutschanAffineTraceMoment.lean": "cbaf30c66653fd42ffb1055cbbf1c6645b9a203dddbb12b5c33ff98f34d265e5",
+    "lean/Conjectures/KauersKoutschanAssignmentMonomials.lean": "7198810f7f912f47144cd8e79b9780a3706a1839fef9c67c92335e43c2cb6045",
+    "lean/Conjectures/KauersKoutschanBivariateMoment.lean": "d6b54e6a56a304feb2da328a4ba94a2511e065414731f1d2c82504f788d01926",
+    "lean/Conjectures/KauersKoutschanBlockLengths.lean": "9db9ffde7d779cda87e89b3c75b99299ab48242bd4b2896313fcde686050f2ae",
+    "lean/Conjectures/KauersKoutschanBlockOrder.lean": "d44ee54b28c5fcdb46bb4cad9d41feb2ceee74a69fd1d2a77311e81deee61137",
+    "lean/Conjectures/KauersKoutschanBlockSigns.lean": "c616fb1e0072a288460ff4462f95a3e7eaf1e1f5bb7e2d46581a3f950a52f43a",
+    "lean/Conjectures/KauersKoutschanBlocks.lean": "03c6477598a2cdcbc436a1fc1a935b823cd9e316dac5fde05332b14724fb5ac4",
+    "lean/Conjectures/KauersKoutschanCertificate.lean": "b98df1fadf7b14633466a46282834597bc27a137c38ff040dec71a4c5c1a2745",
+    "lean/Conjectures/KauersKoutschanColumnSeries.lean": "0da83ef53dc189b5342acd06af91a19a8c9e470795cbe36ff7c35fa9364564ed",
+    "lean/Conjectures/KauersKoutschanCompositionBlocks.lean": "44db96739cd4caa56af2e3ffc2bf9b3d1692c4dbc4d5d4faaf4ba508917299a5",
+    "lean/Conjectures/KauersKoutschanCompositionCoefficients.lean": "f07766da4483ebc259286e1064b318d7183a45f6ed04f2769f1853aa40c51dff",
+    "lean/Conjectures/KauersKoutschanCompositionCount.lean": "95010416312958f71fc11d978d3e5992777634056442e7e1056a723da5f08d66",
+    "lean/Conjectures/KauersKoutschanCompositions.lean": "933791f67c3a21805fb3fdb472e2d755387a85714ac5907c20c11f3a78a300ac",
+    "lean/Conjectures/KauersKoutschanConjecture.lean": "39e6b4e3bbfc2bfd67a11696993b16e46ebe2e16456a25554b1194ee585e0185",
+    "lean/Conjectures/KauersKoutschanCount.lean": "7e69c463155ed7da3b2c85cf9a8599e87bf2e921eda9248c3dd221096c65e866",
+    "lean/Conjectures/KauersKoutschanDiagonalCoefficients.lean": "3d38cc4026dd814c1d9ee8988cf40b40429bf2e02c20f38062d05e05cf085690",
+    "lean/Conjectures/KauersKoutschanDividedSum.lean": "75210e1fa19dc7ccf80343c6e2aa53398ade07d8c4b8cf2124ffa161f15af459",
+    "lean/Conjectures/KauersKoutschanEvaluation.lean": "2f704f97804c33d5aec05c80406480e94db595ddd09411510a5d5dc9195117c4",
+    "lean/Conjectures/KauersKoutschanFactorialMoment.lean": "65e1d080d09ff96bd22385973883cccd8cdfd8b8eca8429b6de4b7c4a233c2fa",
+    "lean/Conjectures/KauersKoutschanFiniteRecurrence.lean": "7722d7f4a8e73d8bdd49a8c708a8612910ce82d01f9f7876e9e3ecc7771c0aea",
+    "lean/Conjectures/KauersKoutschanMaskCoefficients.lean": "0fd5f8644817ec46b82babcdfda6482198c33d412455b695131dece8410347e5",
+    "lean/Conjectures/KauersKoutschanMaskExpansion.lean": "ce5253852d1df5776f17d15176077050e353f9ff3ed1193375a850d841da94c0",
+    "lean/Conjectures/KauersKoutschanOrderedRows.lean": "a758dad48d6520b538a4bd123c30fcd469d12d3a62dee48801a1bd9fcfd8bcde",
+    "lean/Conjectures/KauersKoutschanPermutationCount.lean": "c00db8a09122a37211ac69c641ff154f349deea57ed530ef436545d22a008cf5",
+    "lean/Conjectures/KauersKoutschanPolynomialMoments.lean": "a2cce713611a293c9586d4055f312d60b44a494726e15639f3775c399a5b41d2",
+    "lean/Conjectures/KauersKoutschanRadialSchurMoment.lean": "8bafa2fa1875ffc300d2f6bb9b5fe2ef4e913cf5211ac98b2de4411537d6db84",
+    "lean/Conjectures/KauersKoutschanRowEnumeration.lean": "18dfd538e36ec849f97d73d271288e9d73c6180daef356d898ba002df9789883",
+    "lean/Conjectures/KauersKoutschanSchurMoment.lean": "b468a197bf10a6e16aab3b6767a6ff7eab9deac21ca71acdeef3e3ad0de88b91",
+    "lean/Conjectures/KauersKoutschanSignedBlocks.lean": "809499ceb05915150ea257b7d6ef3e4fff706fc825b3879bcd7e1c530a0fad9d",
+    "lean/Conjectures/KauersKoutschanState.lean": "fac4f2c4fbea2308808aa7e071a25ff7d4c49ae2c879de17d2678f610bc8ce79",
+    "lean/Conjectures/KauersKoutschanTraceCoefficients.lean": "446d7d9ff16bb6e6fdd7e1054bc4075aa12fbc0f4b7dd868819ecc88b1100924",
+    "lean/Conjectures/KauersKoutschanTracePolynomials.lean": "770d758a6cb18606cc7d217e2652d9cc01b61353ff7766e52216147fd9a39f8d",
+    "lean/Conjectures/KauersKoutschanTraceProducts.lean": "036fbe80a83e4352e8aed5f12d7ca21a430f795e32a7d5933b999e2018451ca7",
+    "lean/Conjectures/KauersKoutschanUniformMoment.lean": "63cf73853b997ec380aca9de32f78d2394d376a70357203b668ad43719848483",
+    "lean/Conjectures/KauersKoutschanWeightedCompositions.lean": "910a8eee11ca5f69e01b6e962e86cde05f4619471ead6d66be72d997509c39cd",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTracePolynomials.olean",
+        "Conjectures/KauersKoutschanTracePolynomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTracePolynomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanAffineTraceMoment.olean",
+        "Conjectures/KauersKoutschanAffineTraceMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanAffineTraceMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanDividedSum.olean",
+        "Conjectures/KauersKoutschanDividedSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanDividedSum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanFactorialMoment.olean",
+        "Conjectures/KauersKoutschanFactorialMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanFactorialMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanUniformMoment.olean",
+        "Conjectures/KauersKoutschanUniformMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanUniformMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanBivariateMoment.olean",
+        "Conjectures/KauersKoutschanBivariateMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanBivariateMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanRadialSchurMoment.olean",
+        "Conjectures/KauersKoutschanRadialSchurMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanRadialSchurMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanSchurMoment.olean",
+        "Conjectures/KauersKoutschanSchurMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanSchurMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanPolynomialMoments.olean",
+        "Conjectures/KauersKoutschanPolynomialMoments.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanPolynomialMoments.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTraceProducts.olean",
+        "Conjectures/KauersKoutschanTraceProducts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTraceProducts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanWeightedCompositions.olean",
+        "Conjectures/KauersKoutschanWeightedCompositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanWeightedCompositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanColumnSeries.olean",
+        "Conjectures/KauersKoutschanColumnSeries.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanColumnSeries.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanTraceCoefficients.olean",
+        "Conjectures/KauersKoutschanTraceCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanTraceCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanAssignmentMonomials.olean",
+        "Conjectures/KauersKoutschanAssignmentMonomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanAssignmentMonomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanPermutationCount.olean",
+        "Conjectures/KauersKoutschanPermutationCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanPermutationCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanBlocks.olean",
+        "Conjectures/KauersKoutschanBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanBlockLengths.olean",
+        "Conjectures/KauersKoutschanBlockLengths.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanBlockLengths.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanOrderedRows.olean",
+        "Conjectures/KauersKoutschanOrderedRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanOrderedRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCompositions.olean",
+        "Conjectures/KauersKoutschanCompositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCompositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCompositionBlocks.olean",
+        "Conjectures/KauersKoutschanCompositionBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCompositionBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanBlockOrder.olean",
+        "Conjectures/KauersKoutschanBlockOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanBlockOrder.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanActualRows.olean",
+        "Conjectures/KauersKoutschanActualRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanActualRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanRowEnumeration.olean",
+        "Conjectures/KauersKoutschanRowEnumeration.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanRowEnumeration.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanBlockSigns.olean",
+        "Conjectures/KauersKoutschanBlockSigns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanBlockSigns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanSignedBlocks.olean",
+        "Conjectures/KauersKoutschanSignedBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanSignedBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCompositionCount.olean",
+        "Conjectures/KauersKoutschanCompositionCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCompositionCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCompositionCoefficients.olean",
+        "Conjectures/KauersKoutschanCompositionCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCompositionCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanDiagonalCoefficients.olean",
+        "Conjectures/KauersKoutschanDiagonalCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanDiagonalCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCertificate.olean",
+        "Conjectures/KauersKoutschanCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanCount.olean",
+        "Conjectures/KauersKoutschanCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanMaskExpansion.olean",
+        "Conjectures/KauersKoutschanMaskExpansion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanMaskExpansion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanMaskCoefficients.olean",
+        "Conjectures/KauersKoutschanMaskCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanMaskCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanEvaluation.olean",
+        "Conjectures/KauersKoutschanEvaluation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanEvaluation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanState.olean",
+        "Conjectures/KauersKoutschanState.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanState.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanFiniteRecurrence.olean",
+        "Conjectures/KauersKoutschanFiniteRecurrence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanFiniteRecurrence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/sc-kauers-publish-1753/lean/.lake/build/lib/lean/Conjectures/KauersKoutschanConjecture.olean",
+        "Conjectures/KauersKoutschanConjecture.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KauersKoutschanConjecture.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/sc-kauers-20261125/conjecture-10-main/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/sc-kauers-publish-1753/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KauersKoutschanConjecture"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 811,
+    "modules": 36,
+    "private_declarations": 278,
+    "raw_declarations": 811,
+    "required": 8,
+    "tag": "passed",
+    "theorems": 614
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
