@@ -41,3 +41,26 @@ Sample uniformly an ordered quadruple consisting of a pin and the three points o
 In particular, if no four points are collinear, then every $`b_L\le1`$ and $`E(P)=0`$. There are absolute $`c>0`$ and $`n_0`$ such that every set with both no four collinear and no four cocircular, of every order $`n\ge n_0`$, satisfies $`D>(1/3+c)n^2`$. Averaging gives the corresponding maximum pinned bound. More generally, the sequential contradiction above shows that there are absolute $`c,\delta>0`$ and $`n_0`$ such that the same conclusion holds whenever $`E(P)\le\delta n^2`$ and $`n\ge n_0`$. If there were no such constants, choosing $`c=\delta=1/j`$ and $`n_0=j`$ would give the prohibited sequence.
 
 A hypothetical counterexample to the full catalogue question must therefore have $`E(P)`$ of quadratic order or larger. No estimate ruling out the simultaneous occurrence of such an exceptional contribution and near-total triple occupancy is claimed here.
+
+## A bound using the number of exceptional incidences
+
+Define
+
+```math
+B(P)=\sum_{L:\,r_L\ge2,\ b_L\ge2}r_L(b_L-1).
+```
+
+In fact a hypothetical near-extremal sequence must have $`B(P)\gg n^2`$. This counts actual pin-pair incidences, giving less weight to a line with many pins than the second-moment sum above.
+
+For each bisector with at least two pins, keep one reflected pair and discard all other pairs on that bisector. Keep all pairs on bisectors with at most one pin. Write $`k'(e)=k(e)`$ on the kept pairs and $`k'(e)=0`$ elsewhere. Directly from the definitions,
+
+```math
+\sum_e \bigl(k(e)-k'(e)\bigr)=B(P),\qquad
+\sum_e\binom{k'(e)}2\le\sum_L\binom{r_L}2=M.
+```
+
+Thus $`\sum_e(k'(e)-2)^2\le3(B(P)+A_1+A_2)`$. When $`D\le(1/3+o(1))n^2`$ and $`B(P)=o(n^2)`$, Cauchy–Schwarz and the first equality yield $`\sum_e|k(e)-2|=o(n^2)`$. The preceding pair-law argument gives the contradiction. The same sequential argument supplies absolute positive constants $`c,\delta`$ and $`n_0`$ for the bound $`D>(1/3+c)n^2`$ whenever $`n\ge n_0`$ and $`B(P)\le\delta n^2`$.
+
+The first-moment condition can apply when the second-moment condition fails by a fixed amount. For an even integer $`q\ge4`$, form $`q`$ groups. Within each group put $`q`$ horizontal points at abscissae $`\pm a_1,\ldots,\pm a_{q/2}`$ and $`q`$ vertical points at distinct positive ordinates $`b_1,\ldots,b_q`$, with both axes passing through the origin. Choose all positive parameters algebraically independent over the rationals. No circle contains three points from one axis. For two points on each axis, concyclicity would equate the product of the two abscissae with the product of the two ordinates by the power-of-a-point identity. Independence excludes this. On either axis, two pairs can have the same midpoint only for the intended horizontal pairs about the origin. Move the groups by generic independent rigid motions. These avoid every new collinear triple or concyclic quadruple involving distinct groups. Indeed, a line or circle through three fixed points gives a proper condition on a fourth from a moving group. In a two-versus-two split, rotate one pair to make the two segments parallel and translate it so that their supporting lines are distinct and their midpoints have different projections along the segment direction. Their distinct parallel perpendicular bisectors exclude a common circle. Finitely many proper algebraic conditions can be avoided simultaneously.
+
+The only bisectors supporting two or more reflected pairs are now the $`q`$ central vertical axes. Each has $`r_L=q`$ and $`b_L=q/2`$. For $`n=2q^2`$, this gives $`E(P)=q\binom q2(q/2-1)\asymp n^2`$ and $`B(P)=q^2(q/2-1)=O(n^{3/2})`$.
