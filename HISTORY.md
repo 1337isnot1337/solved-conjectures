@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify shifted-tail inputs for Pomerance–Sárközy’s process
+
+Lean checks the shifted integer tail-product reindexing and the moving
+positive-part expectation under weak convergence and bounded second
+moments. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify Shumyatsky’s transitive simple factors
 
 Lean realizes each nonabelian minimal normal subgroup as a direct
