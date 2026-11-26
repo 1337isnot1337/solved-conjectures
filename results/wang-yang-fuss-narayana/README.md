@@ -11,3 +11,5 @@ Run `python3 results/wang-yang-fuss-narayana/check.py` from the repository root 
 ## Citation
 
 If you use this proof or its verifier, please credit Cinna Davis and GPT-6.2 Astra, cite the project and this specific proof, and cite Yi Wang and Arthur L. B. Yang for the original conjecture. [Cinna Davis](https://itsdavis.com/) · [Proof record](https://github.com/1337isnot1337/solved-conjectures/tree/70c8a566ab84b4e986e09e87c0ff53ae7a98c2c5/results/wang-yang-fuss-narayana) · [Original paper](https://doi.org/10.1016/j.disc.2018.01.012)
+
+If you use the Lean verification, please also credit Adam Benazouz and cite his original formalization. [Lean contribution](https://github.com/1337isnot1337/solved-conjectures/pull/840).

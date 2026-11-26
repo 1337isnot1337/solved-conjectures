@@ -1,7 +1,7 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-26T13:37:26.365291+00:00",
-  "finished_at": "2026-11-26T13:44:14.273854+00:00",
+  "started_at": "2026-11-26T15:07:04.386263+00:00",
+  "finished_at": "2026-11-26T15:14:07.010966+00:00",
   "root": "Conjectures.WangYangFussNarayana",
   "project_modules": [
     "Conjectures.WangYangFussNarayana",
@@ -32,15 +32,15 @@
     "lean/Conjectures/WangYangFussNarayanaDefs.lean": "a7c5d31c51e76675fdc282b258f52b0e997816a648250dae8bed239b47314f5d",
     "lean/Conjectures/WangYangFussNarayanaDet.lean": "6e9f7d742b966fbd04281a9b99d09a5b7bea32142f9cdba9de560d0c59b12b0e",
     "lean/Conjectures/WangYangFussNarayanaMatrix.lean": "048917896778cf8b700f22c922e143b302e5b44b6ebabd1f3edc7ed63ad8063a",
-    "lean/lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
-    "lean/lake-manifest.json": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
-    "lean/lakefile.toml": "91f787a34c9a80caf6d07c502a981c2adc85060414de9d114cfd864fbdd0ab3b",
-    "scripts/audit_lean_all_owned.py": "0e514f0d65a08879b1b01a4b42f93a80960ea80d811c0bf417ec209ec4c391b0",
-    "scripts/replay_lean.py": "4605df0993844e224a93b59336391f9d64ea1f03f3c9caf1123df0fd5e273940",
-    "scripts/verify_lean_target.py": "6d4ebc756a210051996ff231a96b8ed11f900189c823cdfc56467bed82665bc8"
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
   },
   "lean_toolchain": "leanprover/lean4:v4.35.0",
-  "manifest_sha256": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
   "commands": [
     {
       "command": [
@@ -50,7 +50,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaDefs.olean",
+        "/home/cinna/solved-wang-yang-840/lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaDefs.olean",
         "Conjectures/WangYangFussNarayanaDefs.lean"
       ],
       "exit_code": 0,
@@ -64,7 +64,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaMatrix.olean",
+        "/home/cinna/solved-wang-yang-840/lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaMatrix.olean",
         "Conjectures/WangYangFussNarayanaMatrix.lean"
       ],
       "exit_code": 0,
@@ -78,7 +78,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaDet.olean",
+        "/home/cinna/solved-wang-yang-840/lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaDet.olean",
         "Conjectures/WangYangFussNarayanaDet.lean"
       ],
       "exit_code": 0,
@@ -92,7 +92,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaCriteria.olean",
+        "/home/cinna/solved-wang-yang-840/lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaCriteria.olean",
         "Conjectures/WangYangFussNarayanaCriteria.lean"
       ],
       "exit_code": 0,
@@ -106,7 +106,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayana.olean",
+        "/home/cinna/solved-wang-yang-840/lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayana.olean",
         "Conjectures/WangYangFussNarayana.lean"
       ],
       "exit_code": 0,
@@ -119,7 +119,7 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
-        "results/wang-yang-fuss-narayana/verification/TargetAudit.lean"
+        "/home/cinna/.local/state/solved-wang-yang-independent/main/TargetAudit.lean"
       ],
       "exit_code": 0,
       "log": "audit.log"
@@ -129,9 +129,10 @@
         "lake",
         "env",
         "python3",
-        "scripts/replay_lean.py",
+        "/home/cinna/solved-wang-yang-840/scripts/replay_lean.py",
         "--root",
-        "Conjectures.WangYangFussNarayana"
+        "Conjectures.WangYangFussNarayana",
+        "--per-module"
       ],
       "exit_code": 0,
       "log": "replay.log"

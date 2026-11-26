@@ -14,6 +14,14 @@ The five-module Lean 4 formalization proves the complete statement of Conjecture
 
 All external results cited in [proof.md](proof.md) are formalized from scratch inside the closure with zero unproved hypotheses: Krattenthaler's product determinant (Lemma 3), the Cauchy–Binet identity, the consecutive-column strict positivity criterion, the lower-triangular flag-minor test, and Galvin–Pacurar's Newton change-of-basis theorem (Theorem 1.2).
 
+Adam Benazouz contributed the five Lean source files. Two independent builds using the pinned repository inputs verified all seven endpoints. Both used only propositional extensionality, classical choice and quotient soundness. The archived receipt records the exact published file bytes. [Original Lean contribution](https://github.com/1337isnot1337/solved-conjectures/pull/840) · [Verification receipt](verification/receipt.json).
+
+For each parameter $m\ge 2$, the two square matrices satisfy the strict inequality below for every pair of strictly increasing index lists $I,J$ of equal finite length, with $T$ equal to either $A$ or $B$.
+
+```math
+\det\bigl(T(I_a+J_b,J_b)\bigr)_{a,b}>0.
+```
+
 ## Module structure
 
 1. [WangYangFussNarayanaMatrix.lean](../../lean/Conjectures/WangYangFussNarayanaMatrix.lean) — `IsStrictlyTotallyPos`, positive row/column scaling, finite-section lift, topological limits of TN matrices, column multilinearity, the Cauchy–Binet formula (`det_mul_cauchyBinet`), closure of `Matrix.IsTotallyNonneg` under finite multiplication, block-diagonal extension `blockDiagOne`, elementary subdiagonal matrices, lower-triangular all-ones matrices, and nonnegative lower-bidiagonal matrices.
