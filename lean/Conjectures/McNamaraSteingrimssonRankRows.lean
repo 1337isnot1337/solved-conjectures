@@ -1,4 +1,0 @@
-module
-
-public import Conjectures.McNamaraSteingrimssonBinomialValues
-public import Conjectures.McNamaraSteingrimssonActualRowsExplicit
