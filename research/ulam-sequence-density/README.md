@@ -17,6 +17,9 @@ that can rely on four frequent summands. It yields an equivalent question
 about uniquely represented sums after those four terms are removed.
 The [lower-bound tests](lower-bound-tests.md) record the resulting moment
 estimate, finite measurements and counterexamples to a one-sided argument.
+The [sumset argument](sumset-doubling.md) characterizes positive upper
+density by bounded additive doubling along a subsequence and gives a
+necessary condition for zero density in terms of multiply represented sums.
 
 ## Uniform upper bound
 
