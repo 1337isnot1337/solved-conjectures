@@ -63,6 +63,7 @@ SOURCE_TITLES = {
 STATUS_LABEL_SLUGS = {
     "Nathanson’s linear-form Sidon systems conjecture": "nathanson-sidon-systems",
     "Fiscus–Hurlbert–Myzelev–Pence grid conjecture": "fiscus-grid-game",
+    "En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem": "constant-weight-strong-wom",
     "Erdős–Gyárfás point-degree spectrum conjecture": "erdos-gyarfas-point-degree-spectrum",
     "Gyárfás’s planar degree-repetition problem": "gyarfas-planar-degree-repetition",
     "Shumyatsky’s conjugate prime-spectrum conjecture": "shumyatsky-conjugate-prime-spectrum",

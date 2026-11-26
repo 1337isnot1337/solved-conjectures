@@ -20,6 +20,8 @@ jobs:
         run: |
           python3 results/fiscus-grid-game/verify_strategy.py
           python3 results/fiscus-grid-game/check_minimax.py
+      - name: Check exact-weight strong WOM encoding and decoding
+        run: python3 results/constant-weight-strong-wom/verify.py
       - name: Check the Erdős–Gyárfás point-degree spectrum inequality
         run: python3 results/erdos-gyarfas-point-degree-spectrum/verify.py
       - name: Count the incident lines in the Gyárfás planar construction
