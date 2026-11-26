@@ -1,5 +1,9 @@
 # Verification
 
+## The lower oriented general position NP-hardness conjecture
+
+Run `python3 results/lower-oriented-general-position-np-hardness/verify.py` to compare exact Hamilton-path counts to all 511,102 orientations of the 8,555 labelled graphs on up to six vertices with at least two leaves. The [proof](../results/lower-oriented-general-position-np-hardness/PROOF.md) is uniform and does not use this regression.
+
 ## Welton–Khudairi–Tuite lower general position product conjecture
 
 Run `python3 results/welton-khudairi-tuite-lower-gp-product/verify.py`. It builds the actual factors and Cartesian products and checks all twin profiles, all six-vertex-base supports, and an endpoint witness for every outside product vertex at parameters 7, 8, 11 and 15. The [written disproof](../results/welton-khudairi-tuite-lower-gp-product/PROOF.md) holds uniformly, independently of the finite checks.
