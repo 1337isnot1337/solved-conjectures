@@ -4,4 +4,4 @@ The exact targets are [Questions 4.8 and 4.13 in arXiv:2012.01358v3](https://arx
 
 Independent review checked the symmetric small-threshold counterexample, sharp normalized threshold, all attainable prescribed generator counts, exact fixed-semigroup gap-antichain criterion, and the normalization and generator-index conventions used in the source. The fixed-semigroup module threshold cannot be recovered from multiplicity alone. Targeted searches located no earlier exact answer to either of these nearby questions.
 
-No Lean verification, external review or absolute priority claim is made.
+The original audit predates the completed [Lean verification](LEAN.md). External review and priority remain unconfirmed.

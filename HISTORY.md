@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete the Wilf-module formalization
+
+Lean verifies the normalized gap and module-threshold questions of Almirón and Moyano-Fernández, including the exact dependence on both generators and comparison at a fixed multiplicity. [Proof and receipt](results/almiron-moyano-wilf-module-questions/LEAN.md).
+
 ## 2026-11-26 — Verify the shifted Lonely Runner certificates
 
 Lean proves Zhang’s strict bound for 18 through 57 runners using aadrianvv’s and tomdif’s published configurations. Each recorded maximum is attained. [Proof and verification](results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).

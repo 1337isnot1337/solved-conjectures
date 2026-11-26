@@ -909,6 +909,15 @@ modules=(
   Conjectures.SteinerbergerFeldheimQuantities
   Conjectures.SteinerbergerFeldheimProbability
   Conjectures.AlmironMoyanoWilf
+  Conjectures.AlmironMoyanoWilfAntichains
+  Conjectures.AlmironMoyanoWilfGeneratorCount
+  Conjectures.AlmironMoyanoWilfFixedThreshold
+  Conjectures.AlmironMoyanoWilfGapFamily
+  Conjectures.AlmironMoyanoWilfMultiplicityTwo
+  Conjectures.AlmironMoyanoWilfTwoGeneratorGaps
+  Conjectures.AlmironMoyanoWilfTwoGeneratorModules
+  Conjectures.AlmironMoyanoWilfTwoGeneratorThreshold
+  Conjectures.AlmironMoyanoWilfClassification
   Conjectures.CardonZeroSector
   Conjectures.CardonZeroSectorAnalysis
   Conjectures.CardonZeroSectorSmallDamping

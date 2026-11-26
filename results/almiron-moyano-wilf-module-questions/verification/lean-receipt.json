@@ -1,0 +1,246 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T03:53:44.351766+00:00",
+  "finished_at": "2026-11-26T03:55:06.788016+00:00",
+  "root": "Conjectures.AlmironMoyanoWilfClassification",
+  "project_modules": [
+    "Conjectures.AlmironMoyanoWilf",
+    "Conjectures.AlmironMoyanoWilfAntichains",
+    "Conjectures.AlmironMoyanoWilfClassification",
+    "Conjectures.AlmironMoyanoWilfFixedThreshold",
+    "Conjectures.AlmironMoyanoWilfGapFamily",
+    "Conjectures.AlmironMoyanoWilfGeneratorCount",
+    "Conjectures.AlmironMoyanoWilfMultiplicityTwo",
+    "Conjectures.AlmironMoyanoWilfTwoGeneratorGaps",
+    "Conjectures.AlmironMoyanoWilfTwoGeneratorModules",
+    "Conjectures.AlmironMoyanoWilfTwoGeneratorThreshold"
+  ],
+  "required_endpoints": [
+    "AlmironMoyanoWilf.question_4_8_false",
+    "AlmironMoyanoWilf.gapFamily_wilf_maximum",
+    "AlmironMoyanoWilf.question_4_13_uniform_threshold",
+    "AlmironMoyanoWilf.generator_refined_uniform_threshold",
+    "AlmironMoyanoWilf.fixedThreshold_isLeast",
+    "AlmironMoyanoWilf.minimal_generator_count_le",
+    "AlmironMoyanoWilf.fixed_at_generator_count_iff",
+    "AlmironMoyanoWilf.wilf_at_generator_count_iff",
+    "AlmironMoyanoWilf.question_4_13_at_generator_count",
+    "AlmironMoyanoWilf.fixed_two_generator_threshold",
+    "AlmironMoyanoWilf.different_fixed_thresholds",
+    "AlmironMoyanoWilf.shifted_tail_no_threshold"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/AlmironMoyanoWilf.lean": "a91564bbe8877ce781ec4b9009da96ad0253d646a3d9aab064b73b498967b6e7",
+    "lean/Conjectures/AlmironMoyanoWilfAntichains.lean": "8235ef47e3a56bdbff954f9799132b13f0a628ca68c36ca3bf2fb0bac0a4c1a5",
+    "lean/Conjectures/AlmironMoyanoWilfClassification.lean": "be09b6f6e82fbd745344d35fbc9c75bb87e2d5cf6f44670749dc47f2665caa64",
+    "lean/Conjectures/AlmironMoyanoWilfFixedThreshold.lean": "176f11f469ff2a364257ba68f2ee6f3cd4491d9d983a59426a157c527ea096a2",
+    "lean/Conjectures/AlmironMoyanoWilfGapFamily.lean": "84ce5ca9d881dbae8e6108bc6d5001963f7fe9a9bc3a1a6b3f50c21ed84412d2",
+    "lean/Conjectures/AlmironMoyanoWilfGeneratorCount.lean": "5f8db3fb7303e7a49259b0b4ffd2fe9076ca0ac647a64ffcde05ce6cedf4e034",
+    "lean/Conjectures/AlmironMoyanoWilfMultiplicityTwo.lean": "b24fbca509aa626bb76cf8b7cd4d33a3db7e90fd5a55ecd603e7af045ae57e52",
+    "lean/Conjectures/AlmironMoyanoWilfTwoGeneratorGaps.lean": "e8ae5c5fe73c148cf80286337503f6a17a511bbc2fb32eb18914d70252f81ad1",
+    "lean/Conjectures/AlmironMoyanoWilfTwoGeneratorModules.lean": "06bc518fcc83daf4d450c8e3aab1976c6f28418dd2691b8419a93416e42e8a3f",
+    "lean/Conjectures/AlmironMoyanoWilfTwoGeneratorThreshold.lean": "bc6ad6596746ba8f492b72ca78a33b4b88c3bc09143e215f7d1e5c4a647a6b7f"
+  },
+  "input_sha256": {
+    "lean/Conjectures/AlmironMoyanoWilf.lean": "a91564bbe8877ce781ec4b9009da96ad0253d646a3d9aab064b73b498967b6e7",
+    "lean/Conjectures/AlmironMoyanoWilfAntichains.lean": "8235ef47e3a56bdbff954f9799132b13f0a628ca68c36ca3bf2fb0bac0a4c1a5",
+    "lean/Conjectures/AlmironMoyanoWilfClassification.lean": "be09b6f6e82fbd745344d35fbc9c75bb87e2d5cf6f44670749dc47f2665caa64",
+    "lean/Conjectures/AlmironMoyanoWilfFixedThreshold.lean": "176f11f469ff2a364257ba68f2ee6f3cd4491d9d983a59426a157c527ea096a2",
+    "lean/Conjectures/AlmironMoyanoWilfGapFamily.lean": "84ce5ca9d881dbae8e6108bc6d5001963f7fe9a9bc3a1a6b3f50c21ed84412d2",
+    "lean/Conjectures/AlmironMoyanoWilfGeneratorCount.lean": "5f8db3fb7303e7a49259b0b4ffd2fe9076ca0ac647a64ffcde05ce6cedf4e034",
+    "lean/Conjectures/AlmironMoyanoWilfMultiplicityTwo.lean": "b24fbca509aa626bb76cf8b7cd4d33a3db7e90fd5a55ecd603e7af045ae57e52",
+    "lean/Conjectures/AlmironMoyanoWilfTwoGeneratorGaps.lean": "e8ae5c5fe73c148cf80286337503f6a17a511bbc2fb32eb18914d70252f81ad1",
+    "lean/Conjectures/AlmironMoyanoWilfTwoGeneratorModules.lean": "06bc518fcc83daf4d450c8e3aab1976c6f28418dd2691b8419a93416e42e8a3f",
+    "lean/Conjectures/AlmironMoyanoWilfTwoGeneratorThreshold.lean": "bc6ad6596746ba8f492b72ca78a33b4b88c3bc09143e215f7d1e5c4a647a6b7f",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilf.olean",
+        "Conjectures/AlmironMoyanoWilf.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilf.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfAntichains.olean",
+        "Conjectures/AlmironMoyanoWilfAntichains.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfAntichains.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfGeneratorCount.olean",
+        "Conjectures/AlmironMoyanoWilfGeneratorCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfGeneratorCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfFixedThreshold.olean",
+        "Conjectures/AlmironMoyanoWilfFixedThreshold.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfFixedThreshold.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfGapFamily.olean",
+        "Conjectures/AlmironMoyanoWilfGapFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfGapFamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfMultiplicityTwo.olean",
+        "Conjectures/AlmironMoyanoWilfMultiplicityTwo.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfMultiplicityTwo.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfTwoGeneratorGaps.olean",
+        "Conjectures/AlmironMoyanoWilfTwoGeneratorGaps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfTwoGeneratorGaps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfTwoGeneratorModules.olean",
+        "Conjectures/AlmironMoyanoWilfTwoGeneratorModules.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfTwoGeneratorModules.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfTwoGeneratorThreshold.olean",
+        "Conjectures/AlmironMoyanoWilfTwoGeneratorThreshold.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfTwoGeneratorThreshold.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-wilf-publication/lean/.lake/build/lib/lean/Conjectures/AlmironMoyanoWilfClassification.olean",
+        "Conjectures/AlmironMoyanoWilfClassification.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.AlmironMoyanoWilfClassification.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-wilf-family-lean/main-accepted/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-wilf-publication/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.AlmironMoyanoWilfClassification"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 427,
+    "modules": 10,
+    "private_declarations": 119,
+    "raw_declarations": 427,
+    "required": 12,
+    "tag": "passed",
+    "theorems": 386
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
