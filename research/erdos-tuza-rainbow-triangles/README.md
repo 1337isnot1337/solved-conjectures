@@ -49,3 +49,24 @@ a(2m+1-a)+(2m+1)m/2-2am=3m/2+t(2m-1-t)\ge 3m/2
 ```
 
 edges. The construction attains this bound for every even $m\ge2$. This establishes optimality of the cut approximation only. The [independent construction check](near_cut.py) produces all individual edge colors directly using cyclic differences and verifies every vertex degree and the exact discrepancy.
+
+## Two palette classes suffice
+
+The surviving class of color degrees $(4,4,4,4,6,8)$ is impossible. Relabel it as
+
+```math
+\mathcal F=\{012,013,014,015,023,024,035,045,125,134\}.
+```
+
+Suppose a finite completely balanced coloring had all its rainbow palettes in $\mathcal F$. Take independent infinite strings of its vertices with uniform digits. Color any two strings by the color of their first differing digits. Two sampled strings agree forever with probability zero. Conditional on one string, the color of its edge to an independent string is exactly uniform on the six colors, by the equal degree in each color at each digit. Each rainbow triangle is read in one digit where the three strings have pairwise distinct symbols. If just two symbols agree at the first split, two edge colors coincide. Thus its palette lies in $\mathcal F$.
+
+For a colored triangle $T$ with distinguished vertex $r$ and a color $c$, let $W(T,r,c)$ be the integer in the [certificate](four-vertex-weights.json), extended by vertex permutations and by color permutations preserving $\mathcal F$, and set it to zero on all other orbits. The order of triangle edges in each record is $01,02,12$. For a coloring of four vertices define
+
+```math
+S=\sum_w\ \sum_{r\ne w}\ \sum_{c=0}^5
+ W(T_w,r,c)\bigl(6\mathbf1_{\{\mathrm{color}(rw)=c\}}-1\bigr),
+```
+
+where $T_w$ is the triangle obtained by deleting $w$. Conditional on the strings in $T_w$, the independent string at $w$ gives a uniform edge color to $r$. Every summand consequently has expectation zero. On the other hand the [integer verifier](four_vertex.py) visits all $6^6$ labeled four-vertex colorings, discards any with a forbidden triangle, and gives $12\le S\le2878$ in every remaining case. This contradicts zero expectation and excludes every finite balanced base in this class. The weights were found by linear programming. Their verification uses only the standard library, exact integer sums, and all labeled patterns.
+
+An intersecting palette construction can therefore occur only inside the classes of degrees $(4,4,4,6,6,6)$ and $(5,5,5,5,5,5)$.
