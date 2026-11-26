@@ -1647,6 +1647,8 @@ run_cmd do
     `PomeranceSarkozy.sourceG_eq_offset_card,
     `PomeranceSarkozy.sourceG_eq_one_add_positive_offsets,
     `PomeranceSarkozy.sourceG_truncation_bounds,
+    `PomeranceSarkozy.source_arithmetic_quarter_gaussian,
+    `PomeranceSarkozy.source_sqrt_converges_in_probability,
     `PomeranceSarkozy.selectedPrimeProduct_dvd,
     `PomeranceSarkozy.primeTail_witness,
     `PomeranceSarkozy.multipleSamples_card_le,

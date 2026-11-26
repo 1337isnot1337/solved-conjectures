@@ -152,17 +152,20 @@ The pinned strict source build, all-owned transitive axiom audit (815 declaratio
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 
-Partial. Lean verifies the literal arithmetic count, factorial tails,
-finite-window total variation, and the independent product comparisons
-with Bernoulli and Poisson laws. The actual joint Poisson offset-count
-law and its moments are checked. The exact finite arithmetic-to-Poisson
-event bound is also checked. The arithmetic limiting statements remain.
+With the pinned Lean toolchain and Mathlib installed, run the target
+check from the repository root. It builds the exact import closure with
+warnings as errors, audits all its owned declarations, and replays it
+with the stock kernel checker. The aggregate workflow includes the
+same endpoint module and requires both declarations.
+[Lean scope](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits) · [Aggregate workflow](../.github/workflows/lean.yml).
 
-Two supporting threshold identities are independently replayed:
-the universal band-mass bound and the exact tail-product sum.
-The prime-mean input (a uniform bounded error for the reciprocal-prime
-sum relative to log log x) is also checked.
-[Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+```bash
+python3 scripts/verify_lean_target.py \
+  --root Conjectures.PomeranceSarkozySourceFluctuations \
+  --require PomeranceSarkozy.source_arithmetic_quarter_gaussian \
+  --require PomeranceSarkozy.source_sqrt_converges_in_probability \
+  --out /tmp/pomerance-sarkozy-source-fluctuations
+```
 
 
 ## Novelli–Thibon's conjecture

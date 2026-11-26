@@ -706,6 +706,7 @@ modules=(
   Conjectures.PomeranceSarkozyNearThresholdBand
   Conjectures.PomeranceSarkozyTailCross
   Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
+  Conjectures.PomeranceSarkozySourceFluctuations
   Conjectures.ShumyatskyCycleLabels
   Conjectures.ShumyatskyFactorAction
   Conjectures.ShumyatskySimpleFactors

@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Pomerance–Sárközy’s headline arithmetic limits in Lean
+
+The formalization gives the quarter-root Gaussian law for the original
+counting function on the full sample and its square-root convergence in
+probability. [Lean scope](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits).
+
 ## 2026-11-26 — Repair GitHub proof rendering
 
 Restored equations in the [Pomerance–Sárközy proof](results/pomerance-sarkozy-fluctuations/PROOF.md) and other proof and supporting pages. The Markdown checks now cover every proof filename and compare changed equations with GitHub’s own Markdown output.

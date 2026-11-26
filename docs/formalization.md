@@ -108,17 +108,12 @@ automorphism and generation inputs.
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 
-Partial. Lean verifies the literal arithmetic count, factorial tails,
-finite-window total variation, and the independent product comparisons
-with Bernoulli and Poisson laws. The actual joint Poisson offset-count
-law and its moments are checked. The exact finite arithmetic-to-Poisson
-event bound is also checked. The arithmetic limiting statements remain.
-
-Two supporting threshold identities are independently replayed:
-the universal band-mass bound and the exact tail-product sum.
-The prime-mean input (a uniform bounded error for the reciprocal-prime
-sum relative to log log x) is also checked.
-[Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+`PomeranceSarkozy.source_arithmetic_quarter_gaussian` gives the full-sample
+quarter-root law and its exact Gaussian variance. The corollary
+`PomeranceSarkozy.source_sqrt_converges_in_probability` gives a vanishing
+counting proportion at every fixed positive error tolerance. Both
+statements use the original arithmetic count and center at log log n.
+[Lean scope](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits).
 
 
 ## Novelli–Thibon's conjecture
