@@ -1,8 +1,0 @@
-Replaying all 6 local project modules imported by Conjectures.NemethSeberryShuFourierSpectral, including that root (prefix Conjectures)
-replaying Conjectures.NemethSeberryShuFourierSampling
-replaying Conjectures.NemethSeberryShuFourierTarget
-replaying Conjectures.NemethSeberryShuCongruence
-replaying Conjectures.NemethSeberryShuFourierSpectral
-replaying Conjectures.NemethSeberryShuFourierRepair
-replaying Conjectures.NemethSeberryShuConcentration
-PASS: the entire local import closure of Conjectures.NemethSeberryShuFourierSpectral completed the pinned kernel replay

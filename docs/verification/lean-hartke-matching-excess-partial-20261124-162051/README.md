@@ -1,9 +1,0 @@
-# Verification receipt
-
-This is checkpoint 001 of an incomplete formalization. It counts as zero complete conjectures. The [scope review](../../../results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md) maps each checked part to the existing argument and lists the remaining obligations.
-
-The [receipt](receipt.json) records exact source SHA256 values, the unchanged repository audit and replay helper hashes, every command, start time, exit code, and log hash. Eight fresh builds used Lean 4.35.0 with warnings treated as errors. The all-owned audit checked 179 declarations, including 152 theorems and 19 private declarations; all ten required endpoints were present. Only `propext`, `Classical.choice`, and `Quot.sound` were allowed. The stock checker replayed precisely the eight local modules.
-
-`Audit.lean` is the generated audit source. The source-build logs are empty because all strict compilations passed without diagnostics. `all-owned-audit.log` and `stock-kernel-replay.log` preserve the complete audit and replay output. Absolute scratch paths in the commands describe the actual checked snapshot; the source hash map identifies the corresponding files under the repository's `lean/Conjectures` directory. The pinned package uses Mathlib revision `56a005855ea17e0b0958f73ec801ae140b0a1679`.
-
-The registered repository command is `scripts/verify_lean.sh`. With the pinned dependencies available, it rebuilds the shared package, checks the required endpoints and axioms, and invokes the stock replay helper. This receipt establishes only the eight-module closure; it does not assert that the aggregate command, hosted workflows, or website deployment passed. The separate aggregate dependency-artifact blocker remains tracked in [issue #563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

@@ -1,8 +1,0 @@
-level 1 11
-level 2 76
-level 3 416
-level 4 2068
-level 5 11392
-level 6 65248
-edges 227424 recurrent 20265
-{"edges": 227424, "left4": 11177, "recurrent": 20265, "residual": 35, "states": 65248, "weight4": 9088}

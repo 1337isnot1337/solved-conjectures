@@ -1,8 +1,0 @@
-Replaying all 6 local project modules imported by Conjectures.UlasDisjointSquareBlocks, including that root (prefix Conjectures)
-replaying Conjectures.UlasDisjointSquareBlocks
-replaying Conjectures.UlasDisjointSquareBlocksAffine
-replaying Conjectures.UlasDisjointSquareBlocksBasic
-replaying Conjectures.UlasDisjointSquareBlocksConstruction
-replaying Conjectures.UlasDisjointSquareBlocksParity
-replaying Conjectures.UlasDisjointSquareBlocksReduction
-PASS: the entire local import closure of Conjectures.UlasDisjointSquareBlocks completed the pinned kernel replay

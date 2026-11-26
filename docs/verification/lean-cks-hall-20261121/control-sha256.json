@@ -1,9 +1,0 @@
-{
-  "/workspace/scratch/17b12d3ee06e/run_cks_gate.py": "5c485946bbb2052d1407279e4b955905feab0d60629fcb5fd64ec6db2b08ab79",
-  "/workspace/scratch/17b12d3ee06e/CKSModernOwnedAudit.lean": "8b0963ab69e4f5e2aad3854c0ce92fee3f16e95590c7dfbbade8be754c5b5f6e",
-  "/workspace/scratch/17b12d3ee06e/CKSCompleteAllOwnedAudit.lean": "c350155f1664389db38412a96833fb9dd034e0720a1351bf3f9ddab152ac715d",
-  "/workspace/scratch/17b12d3ee06e/cks-complete-obligations.json": "92a19af433676d3a75cb5304306863cf5f42f9bf84098b75cc49e197a1bea1ac",
-  "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
-  "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
-  "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4"
-}
