@@ -1,5 +1,9 @@
 # Verification
 
+## Leech lattice cold-spot coefficients
+
+Run `python3 docs/research-results/leech-cold-spots-asymptotics/verify.py` with standard Python. Integer bisection bounds the optimized leading coefficient for each of the 23 deep-hole types. The verifier checks that $`E_8^3`$ has the smallest coefficient and $`D_{24}`$ the second smallest. The localization of the Gaussian minimizers is proved analytically. [Proof](research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](research-results/leech-cold-spots-asymptotics/REVIEW.md)
+
 ## Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
 Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schur/check_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schur/AUDIT.md) explains how the proof covers every degree.

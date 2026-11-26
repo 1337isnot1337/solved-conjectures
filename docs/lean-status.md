@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Leech lattice cold-spot limit
+
+**Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)
+
 ## Pattern packing and four-cycle partial results
 
 The [packing cutoff construction](../results/blitvic-kammoun-steingrimsson-packing-cutoff/) and [four-cycle regularity obstructions](../results/erdos-85-four-cycle-threshold/) have written proofs and exact checks. No formalization is registered for either package.
