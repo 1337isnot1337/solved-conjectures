@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Cyrusian–Kaplan’s ordinarization quasipolynomial question
+
+Partial. The exact finite-set encoding, actual ordinarization path length, homogeneous real scaling and binomial baseline count are verified. The quasipolynomial and eventual monotonicity arguments remain. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## Shifted Lonely Runner counterexamples
 
 Lean verifies the exact maximum at each of the 40 reported sizes, including attainment at a rational time. The upper bound holds at every real time. [Proof and reproduction](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).

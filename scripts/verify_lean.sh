@@ -145,6 +145,16 @@ modules=(
   Conjectures.PomeranceSarkozyRareBernoulliTools
   Conjectures.PomeranceSarkozyBernoulliTiltEvents
   Conjectures.PomeranceSarkozyExponentialEventTransfer
+  Conjectures.CyrusianKaplanBaselineCount
+  Conjectures.CyrusianKaplanCountCheckpoint
+  Conjectures.CyrusianKaplanDilation
+  Conjectures.CyrusianKaplanEncoding
+  Conjectures.CyrusianKaplanEncodingEquivalence
+  Conjectures.CyrusianKaplanExactCount
+  Conjectures.CyrusianKaplanGapCorrespondence
+  Conjectures.CyrusianKaplanHomogeneous
+  Conjectures.CyrusianKaplanOrdinarizationCount
+  Conjectures.CyrusianKaplanOrdinarizationStep
   Conjectures.PomeranceSarkozySuperExponential
   Conjectures.PomeranceSarkozyBernoulliTiltProduct
   Conjectures.PomeranceSarkozyRareCumulant

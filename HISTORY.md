@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify the exact ordinarization encoding
+
+Lean checks the literal semigroup count in the fixed normalized region and the binomial baseline. The Ehrhart and monotonicity claims remain. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Restore the verified complete-minus-one-edge checkpoint
 
 The precise Steps 1–3 Lean reduction is registered on main. The final equality is still outside the verified scope. [Proof and both receipts](results/circular-index-complete-minus-edge/FORMALIZATION.md).

@@ -1,6 +1,10 @@
 # Verification
 
 
+## Cyrusian–Kaplan’s ordinarization quasipolynomial question
+
+Partial. The exact finite-set encoding, actual ordinarization path length, homogeneous real scaling and binomial baseline count are verified. The quasipolynomial and eventual monotonicity arguments remain. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## Burstein’s A218225 enumeration conjecture
 
 The pinned strict source build, all-owned transitive axiom audit (815 declarations, 719 theorems), and stock kernel replay passed for the exact six-module closure. The aggregate repository gate is separate. [Lean scope and receipt](../results/burstein-a218225-enumeration/FORMALIZATION.md).
