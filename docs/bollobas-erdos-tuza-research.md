@@ -1,4 +1,4 @@
-# Bollobás–Erdős–Tuza conjecture
+# Earlier transversal bounds for the Bollobás–Erdős–Tuza conjecture
 
 The [recursive construction and induced-biclique theorem](../results/erdos-611-clique-transversals/) strengthen the lower bound below and give another class with a sublinear transversal.
 
