@@ -105,6 +105,8 @@ For Steinke–Zakynthinou’s agnostic VC conjecture, Lean verifies empirical ac
 
 For the 🟢 Lonely Runner results, the written proofs reduce the classification to finitely many cases. Exact computations exhaust those cases, with some results drawing on archived searches from cited papers. Completing the Lean proofs requires formalizing the remaining reductions and cited bounds and checking the remaining search certificates in Lean. The [verification guide](docs/verification.md#computational-checks) gives the replay commands, and the [Lean status report](docs/lean-status.md) gives the remaining steps for each result.
 
+For Pomerance–Sárközy’s fluctuation conjecture, the Lean scope covers the quarter-root Gaussian law and the square-root convergence in probability of the original counting function. The [formalization scope](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md) records the two declarations and the remaining written results.
+
 ## Major theorem consequences (not separately solved conjectures)
 
 This repository takes Anthropic's VP ≠ VNP theorem and its stated lower bounds as valid research premises under the [standing assumption in `AGENTS.md`](AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof). The applications below use that imported result; they do not independently establish the source theorem, claim outside verification, or add a solved named conjecture.

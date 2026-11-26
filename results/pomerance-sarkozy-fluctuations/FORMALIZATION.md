@@ -1,8 +1,40 @@
 # Lean scope for Pomerance–Sárközy's fluctuation conjecture
 
-This is partial Lean verification of the existing [written proof](PROOF.md).
-The underlying counting function is the one in §3 of the
-[primary paper by Erdős, Pomerance and Sárközy](https://combinatorica.hu/~p_erdos/1987-15.pdf).
+The Lean formalization covers the two headline arithmetic limits for
+the counting function introduced in §3 of the original paper.
+[Written proof](PROOF.md) · [Erdős, Pomerance and Sárközy’s paper](https://combinatorica.hu/~p_erdos/1987-15.pdf)
+
+## Headline arithmetic limits
+
+Both declarations are exported by `Conjectures.PomeranceSarkozySourceFluctuations`.
+[Lean source](../../lean/Conjectures/PomeranceSarkozySourceFluctuations.lean)
+
+- `PomeranceSarkozy.source_arithmetic_quarter_gaussian` gives weak convergence
+  of the pushforward of the uniform sample on the first $`X`$ positive
+  integers by $`(g(n)-\log\log n)/(\log\log n)^{1/4}`$ to a centered
+  Gaussian with variance $`1/\sqrt{\pi}`$.
+- `PomeranceSarkozy.source_sqrt_converges_in_probability` gives the limit zero
+  for the proportion of the same integers on which
+  $`\lvert(g(n)-\log\log n)/\sqrt{\log\log n}\rvert>\varepsilon`$, for every
+  real $`\varepsilon>0`$.
+
+The proof transfers the growing-window Poisson model to the arithmetic
+count, replaces the sample-size centering and scale by the pointwise
+values, and restores the full sample. Tightness at the quarter-root
+scale yields the square-root probability limit. The written proof
+uses a diagonal argument to obtain a single set of natural density one.
+The written proof also gives the second-moment asymptotic. The later
+sections record the Lean scope for the process and rare-deviation limits.
+
+All 99 modules in the import closure passed strict compilation and
+stock-kernel replay. The axiom audit checked 837 declarations, including
+701 theorems and 321 private declarations. It allows only `propext`,
+`Classical.choice`, and `Quot.sound`.
+[Exact replay receipt](verification/source-fluctuations/receipt.json) ·
+[Generated audit](verification/source-fluctuations/TargetAudit.lean) ·
+[Scope review](https://github.com/1337isnot1337/solved-conjectures/pull/900#issuecomment-7202023004)
+
+## Finite arithmetic estimates
 
 Lean defines the literal function using Mathlib's set of distinct prime
 factors. It reindexes its exact count by the offsets (n-m) and proves
@@ -68,9 +100,8 @@ bounds the discrepancy for every event of this vector by the
 explicit CRT–Bonferroni error plus 2H²/y, where H is the number of
 offsets and y is the positive prime cutoff.
 
-The asymptotic application of this estimate, the arithmetic Gaussian
-law, second moment, process limits and rare deviations remain. This does not
-address the separate exact collision count `F(X)`.
+The headline proof uses this estimate at growing parameter values.
+The separate exact collision count `F(X)` is outside the result.
 
 [Strict build, all-owned audit and independent replay receipt](verification/finite-prime-tails/receipt.json)
 
