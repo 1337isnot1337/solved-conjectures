@@ -2884,6 +2884,12 @@ modules=(
   Conjectures.KauersKoutschanSupplement
   Conjectures.KauersKoutschanState
   Conjectures.KauersKoutschanFiniteRecurrence
+  Conjectures.BursteinA218225Defs
+  Conjectures.BursteinA218225TreeX
+  Conjectures.BursteinA218225TreeY
+  Conjectures.BursteinA218225Series
+  Conjectures.BursteinA218225Kernel
+  Conjectures.BursteinA218225
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -1,6 +1,11 @@
 # Verification
 
 
+## Burstein’s A218225 enumeration conjecture
+
+The pinned strict source build, all-owned transitive axiom audit (815 declarations, 719 theorems), and stock kernel replay passed for the exact six-module closure. The aggregate repository gate is separate. [Lean scope and receipt](../results/burstein-a218225-enumeration/FORMALIZATION.md).
+
+
 ## Pomerance–Sárközy’s fluctuation conjecture
 
 Partial. Lean verifies the literal arithmetic count, factorial tails,
