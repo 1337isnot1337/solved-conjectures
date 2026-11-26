@@ -27,8 +27,8 @@ Relabel coordinates so $t_1\ge\cdots\ge t_d=t$, and set $N=|V(G)|$. We use the f
 3. For any $A\subseteq V(G)$, its **open** neighborhood satisfies
 
    ```math
-\frac{|\partial A|}{N}\ge\left(\frac{|A|}{N}\right)^{p_t},\qquad p_t=\frac{\log(t/(t-1))}{\log t}.
-```
+   \frac{|\partial A|}{N}\ge\left(\frac{|A|}{N}\right)^{p_t},\qquad p_t=\frac{\log(t/(t-1))}{\log t}.
+   ```
 
    This is [AD], Corollary 1.1, using the definition of $\partial A$ on page 3.
 4. The conjecture is already proved when $d\le3$ or $t\le2$ ([B], Theorem 5.1; also [AD], page 2 and the beginning of the proof of Theorem 1.2).

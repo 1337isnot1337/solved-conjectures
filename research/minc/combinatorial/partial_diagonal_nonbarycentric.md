@@ -16,14 +16,18 @@ Write $p=\operatorname{per}B$ and $g_{ij}=\operatorname{per}B(i\mid j)$ on allow
 
 $$g_{ij}=\lambda_i+\mu_j\qquad (a_{ij}=1).```math
 The row and column Laplace expansions, and the doubly stochastic property, imply
-```\lambda=p\mathbf1-B\mu,\qquad \mu=p\mathbf1-B^T\lambda.```math
+```math
+\lambda=p\mathbf1-B\mu,\qquad \mu=p\mathbf1-B^T\lambda.
+```
 Consequently $\lambda=BB^T\lambda$. The matrix $BB^T$ is an irreducible stochastic matrix; indeed any two rows of $B$ have a common positive column, since each has at most one zero and $n\ge3$. The maximum principle for an irreducible stochastic matrix shows that $\lambda$ is constant. The second displayed equation then shows that $\mu$ is constant, and $g_{ij}=p$ at every allowed position.
 
 Let $\mathcal P$ be the set of supported permutations. Define two probability laws on this finite set:
 ```u(\sigma)=\frac1{|\mathcal P|},\qquad
 q(\sigma)=\frac{\prod_i b_{i,\sigma(i)}}{p}.```math
 Both laws are strictly positive. By the definition of a barycenter, the marginal of $u$ at $(i,j)$ is $b_{ij}$. The marginal of $q$ there is
-```\frac{b_{ij}g_{ij}}p=b_{ij}.```math
+```math
+\frac{b_{ij}g_{ij}}p=b_{ij}.
+```
 The sum of their two relative entropies is therefore
 ```
 D(q\Vert u)+D(u\Vert q)
@@ -36,7 +40,9 @@ Nonnegativity of relative entropy, with its equality condition, gives $q=u$. Thu
 ## 3. The three barycenter entries
 
 For $0\le j\le N$, define
-```D(N,j)=\sum_{r=0}^{j}(-1)^r\binom jr(N-r)!.```math
+```math
+D(N,j)=\sum_{r=0}^{j}(-1)^r\binom jr(N-r)!.
+```
 This is the number of permutations on $N$ objects avoiding $j$ prescribed positions in distinct rows and columns. Set $N=n-1$ and $M=\operatorname{per}A_{n,k}$. The allowed entries of $B$ have three values:
 ```
 a=\frac{D(N,k-2)}M\quad(i,j\le k, i\ne j),
@@ -44,7 +50,9 @@ a=\frac{D(N,k-2)}M\quad(i,j\le k, i\ne j),
 \qquad c=\frac{D(N,k)}M\quad(i,j>k).
 ```math
 If $B$ is stationary, Section 2 implies $ac=b^2$. To see this using actual supported permutations, choose top indices $1,2$ and a free index $f>k$. Use either pair of edges $(1,2),(f,f)$ or the pair $(1,f),(f,2)$. A common matching of all remaining rows and columns exists. For $k=2$, take $(2,1)$ and fix all other free vertices. For $k\ge3$, use the edges
-```2\mapsto3,\ 3\mapsto4,\ \ldots,\ k\mapsto1```math
+```math
+2\mapsto3,\ 3\mapsto4,\ \ldots,\ k\mapsto1
+```
 and fix the free vertices other than $f$. Both resulting full permutations are allowed, and equality of their entry products cancels all common factors to give $ac=b^2$.
 
 It remains to prove that
@@ -57,38 +65,58 @@ Here $j=k-2$ and $N\ge2$.
 ### 4.1. Derangement numbers
 
 Let $d_r=D(r,r)$, so $d_2=1$, $d_3=2$, $d_4=9$. The sequence $(d_r)_{r\ge2}$ is strictly log-convex:
-```d_{r-1}d_{r+1}>d_r^2\qquad(r\ge3).```math
+```math
+d_{r-1}d_{r+1}>d_r^2\qquad(r\ge3).
+```
 For completeness, the recurrence $d_r=r d_{r-1}+(-1)^r$ gives, with $\epsilon=(-1)^r$,
-```r(d_{r-1}d_{r+1}-d_r^2)=d_r^2-\epsilon(r+2)d_r+1.```math
+```math
+r(d_{r-1}d_{r+1}-d_r^2)=d_r^2-\epsilon(r+2)d_r+1.
+```
 For odd $r$, the right-hand side is positive. For even $r\ge4$, $d_r>r+2$, so it is again positive. The latter bound follows from $d_4=9>6$ and the recurrence $d_{r+1}=(r+1)d_r+(-1)^{r+1}$: if $d_r>r+2$ and $r\ge4$, then $d_{r+1}\ge(r+1)d_r-1>r+3$.
 
 ### 4.2. Finite binomial transforms
 
 Suppose $a_0,\ldots,a_s$ are positive and strictly log-convex, with $s\ge2$. Their binomial transform
-```b_t=\sum_{r=0}^t\binom tr a_r\qquad(0\le t\le s)```math
+```math
+b_t=\sum_{r=0}^t\binom tr a_r\qquad(0\le t\le s)
+```
 is strictly log-convex. To prove the inequality at $t=s-1$, put $w_r=\binom{s-2}r$ and
 ```X=\sum_{r=0}^{s-2}w_r a_r,\quad
 Y=\sum_{r=0}^{s-2}w_r a_{r+1},\quad
 Z=\sum_{r=0}^{s-2}w_r a_{r+2}.```math
 Pascal's identity gives $b_{s-2}=X$, $b_{s-1}=X+Y$, and $b_s=X+2Y+Z$. Strict log-convexity and Cauchy--Schwarz give
-```Y<\sum_{r=0}^{s-2}w_r\sqrt{a_ra_{r+2}}\le\sqrt{XZ}.```math
+```math
+Y<\sum_{r=0}^{s-2}w_r\sqrt{a_ra_{r+2}}\le\sqrt{XZ}.
+```
 Thus
-```b_{s-2}b_s-b_{s-1}^2=XZ-Y^2>0.```math
+```math
+b_{s-2}b_s-b_{s-1}^2=XZ-Y^2>0.
+```
 The same proof applies to every prefix. This is a strict finite version of the classical binomial-transform preservation of log-convexity, and the proof here is independent of that literature.
 
 ## 5. The determinant never vanishes
 
 First suppose $j\ge2$, and put $s=N-j$, so $2\le s\le N-2$. Permutations avoiding the last $N-s$ diagonal positions can be counted by their fixed points among the first $s$ positions. This gives
-```D(N,N-s)=\sum_{r=0}^s\binom sr d_{N-r}.```math
-The finite sequence $a_r=d_{N-r}$, $0\le r\le s$, is positive and strictly log-convex, since its lowest derangement index is $N-s=j\ge2$. Applying Section 4.2 gives
+```math
+D(N,N-s)=\sum_{r=0}^s\binom sr d_{N-r}.
 ```
+The finite sequence $a_r=d_{N-r}$, $0\le r\le s$, is positive and strictly log-convex, since its lowest derangement index is $N-s=j\ge2$. Applying Section 4.2 gives
+```math
 \Delta_{N,j}
 =D(N,N-s)D(N,N-s+2)-D(N,N-s+1)^2>0.
+```
+
+For $`j=0`$, direct substitution gives
+
 ```math
-For $j=0$, direct substitution gives
-```\Delta_{N,0}=(N-1)((N-2)!)^2>0\qquad(N\ge2).```math
-For $j=1$, direct substitution gives
-```\Delta_{N,1}=(N-2)(N^2-5N+5)((N-3)!)^2\qquad(N\ge3).$$
+\Delta_{N,0}=(N-1)((N-2)!)^2>0\qquad(N\ge2).
+```
+
+For $`j=1`$, direct substitution gives
+
+```math
+\Delta_{N,1}=(N-2)(N^2-5N+5)((N-3)!)^2\qquad(N\ge3).
+```
 
 The quadratic is $-1$ at $N=3$, positive at $N=4$, and strictly increasing for integer $N\ge4$. It never vanishes at an integer. Thus $\Delta_{3,1}=-1$ is the only negative determinant in the parameter range, and every determinant is nonzero.
 

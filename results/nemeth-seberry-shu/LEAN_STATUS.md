@@ -32,6 +32,8 @@ of `binaryCirculant S` with the support Fourier coefficients as eigenvalues.
 
 The missing theorem is the following statement, already named by the checked interface:
 
+**Lean excerpt**
+
 ```lean
 ∀ M : ℕ, ∃ N : ℕ, ∀ q : Nat.Primes, N ≤ q.val →
   NemethSeberryShu.HasDensePermanentFamilies q M

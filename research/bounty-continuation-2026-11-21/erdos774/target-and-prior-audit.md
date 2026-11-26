@@ -35,6 +35,8 @@ Older harmonic-analysis sources usually call this property *quasi-independence*.
 
 The [official live task](https://conjectures.io/problems/erdos774-erdos-774) displays the exact type
 
+**Lean excerpt**
+
 ~~~lean
 True ↔
   ∀ (A : Set ℕ), A.Infinite → A.IsProportionatelyDissociated →

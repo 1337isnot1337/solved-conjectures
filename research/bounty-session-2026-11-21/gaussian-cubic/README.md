@@ -20,8 +20,8 @@ The prior-example table and exact arbitrary-precision verifier are in [the other
 
 | Signature/orientation | Coordinate bounds | Candidate pairs | Exact cube tests after filters | Primitive nonunit hits |
 | --- | --- | ---: | ---: | ---: |
-| $x^3+y^4=z^r$, $r=4,5,6,7,8,9,10,11,12,13,14,15,16,17,19$ | $|\Re y|,|\Im y|\le300$; $|\Re z|,|\Im z|\le30$ | 1,604,713,292 | 1,758,243 | 0 |
-| $x^3+y^5=z^r$, same list with $r\ge5$ | $|\Re y|,|\Im y|\le150$; $|\Re z|,|\Im z|\le25$ | 543,394,808 | 374,358 | 0 |
+| $x^3+y^4=z^r$, $r=4,5,6,7,8,9,10,11,12,13,14,15,16,17,19$ | $`\lvert\Re y\rvert,\lvert\Im y\rvert\le300`$; $`\lvert\Re z\rvert,\lvert\Im z\rvert\le30`$ | 1,604,713,292 | 1,758,243 | 0 |
+| $x^3+y^5=z^r$, same list with $r\ge5$ | $`\lvert\Re y\rvert,\lvert\Im y\rvert\le150`$; $`\lvert\Re z\rvert,\lvert\Im z\rvert\le25`$ | 543,394,808 | 374,358 | 0 |
 | $y^4+z^r=x^3$, $r=4,8,12,16$ | first row's bounds | 456,489,756 | 184,844 | 0 |
 
 Fourth-power bases are reduced under units and common conjugation to the sector $\Re y\ge\Im y\ge0$. For the odd fifth-power signature, common units can be absorbed into both the cube and fifth power, permitting a first-quadrant representative of $z$. These reductions preserve the square coordinate bounds. There is no independent bound on the recovered cubic base.

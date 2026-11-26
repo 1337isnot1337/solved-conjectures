@@ -10,6 +10,8 @@ explicit hypothesis. The complete seven-speed spectrum remains unfinished.
 Let `v : Fin 7 → ℕ` have positive coordinates, gcd one, and actual loneliness
 `value (List.ofFn v) ≤ 1/7`. The remaining geometric hypothesis is:
 
+**Lean excerpt**
+
 ```lean
 ∀ E : Submodule ℚ (Fin 7 → ℚ),
   (fun i => (v i : ℚ)) ∈ E → Module.finrank ℚ E = 2 →

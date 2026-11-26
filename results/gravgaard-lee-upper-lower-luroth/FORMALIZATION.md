@@ -6,9 +6,9 @@ Maiken Gravgaard and Ying Wai Lee posed Conjecture 2.6 in *Decomposition of real
 
 The stronger endpoint `GravgaardLeeUpperLower.exact_sum_interval` proves
 
-\[
+```math
 L_{\le k}+L_{\ge k}=(a,1+a],\qquad a=\frac{k-1}{k(k-1)-1}.
-\]
+```
 
 The lower endpoint is strictly excluded. `conjecture_2_6_digits` exposes both actual infinite digit sequences and the integer translate. There is no remaining refinement, expansion-existence, convergence, or thickness hypothesis.
 

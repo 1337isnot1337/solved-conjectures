@@ -31,11 +31,11 @@ The proposed new theorem is:
 > \frac{n-m}{n}I_n&\frac1nJ_{n,m}\\
 > \frac1nJ_{m,n}&0_m
 > \end{pmatrix}.
-> \]
+> ```
 > Its permanent is
-> \[
+> ```math
 > \frac{n!m!(n-m)^{n-m}}{(n-m)!n^{n+m}}.
-> \]
+> ```
 
 Together with Sections 4.2 and 5, this settles the stated subsidiary conjecture for all its parameters.
 

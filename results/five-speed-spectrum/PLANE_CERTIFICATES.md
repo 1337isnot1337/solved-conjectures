@@ -22,6 +22,8 @@ coordinates cause duplicates, which are retained in the checked enumeration.
 
 For each pair of canonical indices `i,j`, the generated theorem is:
 
+**Lean excerpt**
+
 ```lean
 theorem checkedIJ : ∀ (n : Fin 120) (mask : Fin 16),
   pairTest (canonical i) (tableCandidate j (permutationAt n) mask) = true

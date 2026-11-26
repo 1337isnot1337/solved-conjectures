@@ -41,6 +41,8 @@ the registration:
 [formal-conjectures PR 6627](https://github.com/google-deepmind/formal-conjectures/pull/6627),
 submitted 26 September 2026. Its full theorem is exactly
 
+**Lean excerpt**
+
 ```lean
 ∀ N D : ℕ, N ≥ 6 → Even N → D ≥ 3 →
   ¬ ∃ W : MonochromaticQuantumGraph.WeightsN N D ℂ,

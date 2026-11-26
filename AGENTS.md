@@ -67,6 +67,13 @@ If the exact conjecture is already resolved, keep its original catalogue row, at
 - Shared Lean package: `lean`; pinned toolchain and Mathlib manifest are authoritative. Run `scripts/verify_lean.sh` to rebuild, audit project axioms, and replay the kernel. Add new proof modules to the root import, audit requirements, and kernel-recheck script.
 - Update `docs/lean-status.md` and `docs/formalization.md` at meaningful checked milestones. Push work-in-progress checkpoints to `research`; publish reviewed final milestones to `main`. Report local and hosted validation separately.
 
+## Lean documentation
+
+- Keep the authoritative summary table in `docs/lean-status.md`. Put detailed receipts on their result pages or in linked checkpoint pages. Keep Lean reports under 200 KiB so GitHub can show the rendered preview. When moving a checkpoint, preserve its old heading and link it to the new location.
+- Show Lean syntax in inline code or a fenced `lean` block. Put **Lean excerpt** on its own line immediately before a displayed fragment. Link the defining source or generator. Put runnable examples in linked `.lean` files with their imports and check them with `lake env lean` under the pinned toolchain.
+- Use fenced `math` blocks for TeX displays and GitHub's dollar-backtick delimiters for inline TeX with Markdown punctuation. In table cells write absolute values with `\lvert` and `\rvert`, and escape any remaining literal pipe as `\|`, including in inline code. Use relative source links in the current file's directory context.
+- Before pushing or merging Lean documentation, run `python3 scripts/check_lean_docs.py` with `markdown-it-py==4.2.0`, and run the usual site checks for published docs. Preview changed formulas, tables, and linked source on GitHub as well as the built site. Pandoc accepting a formula does not ensure GitHub displays it.
+
 ## Collection layout
 
 - Exclude a named conjecture when an earlier proof, disproof, or published theorem settles its exact statement. If a later audit confirms a prior resolution, remove its result directory, duplicate writeups, index entries, and verifier references. Record the correction in `HISTORY.md` and preserve work on distinct open statements.

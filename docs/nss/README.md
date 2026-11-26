@@ -5,8 +5,8 @@
 ## Proofs and quantitative refinements
 
 - [Manuscript](manuscript.md): candidate disproof with a quantitative rate and a separate qualitative proof.
-- [Fourth-moment refinement](fourth-moment-refinement.md): candidate bound of order at least \(p^{3/2}\), without the logarithmic loss.
-- [Quadratic refinement](quadratic-refinement.md): candidate bound of order at least \(p^2\). It uses cardinality-preserving Fourier adjustments and a centered Taylor expansion in the cited permanent estimate.
+- [Fourth-moment refinement](fourth-moment-refinement.md): candidate bound of order at least $`p^{3/2}`$, without the logarithmic loss.
+- [Quadratic refinement](quadratic-refinement.md): candidate bound of order at least $`p^2`$. It uses cardinality-preserving Fourier adjustments and a centered Taylor expansion in the cited permanent estimate.
 - [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/54): progress and review status.
 
 The proofs, not the finite checks below, support the asymptotic claims. External review and priority are not established.

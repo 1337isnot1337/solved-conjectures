@@ -12,12 +12,16 @@ The [live Conjectures.io target](https://conjectures.io/problems/erdos1192-erdos
 
 Here $`f_{r,A}(n)`$ counts ordered tuples, with repeated summands allowed. The set and the implied constant may depend on $`r`$. The source definition is
 
+**Lean excerpt**
+
 ```lean
 noncomputable def f_r (A : Set ℕ) (r n : ℕ) : ℕ :=
   {v : Fin r → ℕ | (∀ i, v i ∈ A) ∧ ∑ i, v i = n}.ncard
 ```
 
 The exact pinned declaration type is
+
+**Lean excerpt**
 
 ```lean
 True ↔

@@ -35,6 +35,8 @@ The [pinned statement](https://github.com/google-deepmind/formal-conjectures/blo
 is the following proposition, with the platform's truth choice fixed to
 `True` in the proof task:
 
+**Lean excerpt**
+
 ```lean
 True ↔
   ∀ {f : ℂ → ℂ} {n : ℕ → ℕ},
@@ -47,6 +49,8 @@ True ↔
 
 I fetched the [definition at that same revision](https://github.com/google-deepmind/formal-conjectures/blob/7d1a8c9912747679d0093f6d1216420c33ee5ffa/FormalConjecturesForMathlib/Analysis/HasGaps.lean),
 whose file blob is `9e417ea87f7cc04b88e7e509d35db0f19eba90fb`:
+
+**Lean excerpt**
 
 ```lean
 def HasFabryGaps (n : ℕ → ℕ) : Prop :=

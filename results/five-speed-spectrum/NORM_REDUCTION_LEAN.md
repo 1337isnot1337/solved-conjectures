@@ -35,6 +35,8 @@ theorem.
 Normalization also preserves containment of either critical quadruple. This
 removes the primitivity hypothesis from the previously proved classification:
 
+**Lean excerpt**
+
 ```lean
 Loneliness.Normalization.critical_family_below_threshold
 ```

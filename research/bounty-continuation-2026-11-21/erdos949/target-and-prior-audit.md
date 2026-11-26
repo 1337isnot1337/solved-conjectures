@@ -16,6 +16,8 @@ Here sum-free means $`(S+S)\cap S=\varnothing`$. Both sumsets allow repeated sum
 
 The [live Conjectures target](https://conjectures.io/problems/erdos949-erdos-949) displays the original type
 
+**Lean excerpt**
+
 ```lean
 True ↔ ∀ S : Set ℝ,
   (∀ a ∈ S, ∀ b ∈ S, a + b ∉ S) →
@@ -40,7 +42,7 @@ The [submission terms](https://conjectures.io/submission-terms), version 13 effe
 | [Erdős problem page](https://www.erdosproblems.com/949) and [discussion](https://www.erdosproblems.com/forum/thread/949) | Indexed records credit AlphaProof, reported by Yael Dillies, for the Sidon variant. The original source is Erdős, *Problems and results on combinatorial number theory III* (1977), pp. 43–72. | The unrestricted sum-free problem is still listed open. Direct page retrieval was blocked during this audit; this part uses indexed records and is cross-checked against the current formal source. |
 | [28 July 2026 working report](https://www.erdosproblemaday.com/report/949) | Measurable cases, and a correction ensuring that the Baire-case argument handles repeated summands. The report explicitly leaves the full ZFC question open. | Arbitrary nonmeasurable, non-Baire sets. |
 | [Somani candidate endpoint](https://github.com/neelsomani/gpt-erdos/blob/main/data/solutions/949/candidate_solution.md) | Small-cardinality and Sidon arguments. | It is not a complete proof of the arbitrary-set target. |
-| [23 September Conjectures contribution](https://github.com/conjectures-io/conjectures-contribution/tree/main/contributions/erdos-949/7dec15a5cf8f5124b5fa189b39ea2e2abedef944c294b3e30336c02d52b5154e) | A general Zorn small-trace criterion; cases $`|S|<\mathfrak c`$, bounded above or below, and proper rational span. Both `sources.md` and `script.lean` were read. | No proof for every arbitrary sum-free set. |
+| [23 September Conjectures contribution](https://github.com/conjectures-io/conjectures-contribution/tree/main/contributions/erdos-949/7dec15a5cf8f5124b5fa189b39ea2e2abedef944c294b3e30336c02d52b5154e) | A general Zorn small-trace criterion; cases $`\lvert S\rvert\lt\mathfrak c`$, bounded above or below, and proper rational span. Both `sources.md` and `script.lean` were read. | No proof for every arbitrary sum-free set. |
 
 The prior contribution's useful general criterion is: if some $`X\subseteq\mathbb R`$ has cardinality $`\mathfrak c`$ and
 

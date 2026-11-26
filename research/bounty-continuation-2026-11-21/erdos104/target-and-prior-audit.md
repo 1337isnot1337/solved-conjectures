@@ -22,6 +22,8 @@ The [FAQ](https://conjectures.io/faq) and [submission terms v13, effective 11 No
 
 The [challenge file](https://conjectures.io/problems/erdos104-erdos-104/challenge?mode=formalized) imports `FormalConjectures.ErdosProblems.«104»` and targets `Erdos104.erdos_104`. The displayed type is
 
+**Lean excerpt**
+
 ```lean
 (fun n => ↑(Erdos104.maxUnitCircleCount n)) =o[Filter.atTop] fun n => ↑n ^ 2
 ```

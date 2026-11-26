@@ -25,6 +25,8 @@ The theorem proves that a total dominating pair exists before it identifies this
 
 The main declaration has this statement:
 
+**Lean excerpt**
+
 ```lean
 theorem Graffiti318.conjecture318
     {V : Type*} [Fintype V] [DecidableEq V]
@@ -84,14 +86,11 @@ The pinned Mathlib revision is `56a005855ea17e0b0958f73ec801ae140b0a1679`.
 
 The transitive axiom audit covered these exports:
 
-```lean
-import Conjectures.Graffiti318Sharpness
+After building the three modules, run the
+[axiom queries](PrintAxioms.lean) from the `lean` directory.
 
-#print axioms Graffiti318.totalDominating_contains_pair
-#print axioms Graffiti318.evenDistanceCount_le_complement_degree_add_one
-#print axioms Graffiti318.conjecture318
-#print axioms Graffiti318.sharp_distance
-#print axioms Graffiti318.sharpness
+```sh
+lake env lean ../results/graffiti-pc-318/PrintAxioms.lean
 ```
 
 Each audit reported only `propext`, `Classical.choice`, and `Quot.sound`.
