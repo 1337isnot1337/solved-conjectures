@@ -1,0 +1,20 @@
+import Conjectures.CircularInsertionDegree21
+import Conjectures.CircularInsertionDegree25
+import Conjectures.CircularInsertionDegree26
+import Conjectures.CircularInsertionDegree29
+import Conjectures.CircularInsertionDegree30
+import Conjectures.CircularInsertionDegree33
+import Conjectures.CircularInsertionDegree34
+import Conjectures.CircularInsertionDegree37
+import Conjectures.CircularInsertionDegree38
+import Conjectures.CircularInsertionDegree41
+import Conjectures.CircularInsertionDegree42
+import Conjectures.CircularInsertionDegree45
+import Conjectures.CircularInsertionDegree46
+import Conjectures.CircularInsertionDegree49
+import Conjectures.CircularInsertionDegree50
+import Conjectures.CircularInsertionDegree53
+import Conjectures.CircularInsertionDegree54
+
+/-! Exact degrees and real circular indices for all seventeen nonregular graph
+certificates in Section 7.3 of the circulant construction. -/
