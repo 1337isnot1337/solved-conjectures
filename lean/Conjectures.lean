@@ -1,3 +1,13 @@
+import Conjectures.NathansonSidonDiameter
+import Conjectures.NathansonSidonDigits
+import Conjectures.NathansonSidonGcd
+import Conjectures.NathansonSidonLimit
+import Conjectures.NathansonSidonOrder
+import Conjectures.NathansonSidonProgressions
+import Conjectures.NathansonSidonRounding
+import Conjectures.NathansonSidonSteps
+import Conjectures.NathansonSidonSystems
+import Conjectures.NathansonSidonTheorems
 import Conjectures.ErdosGyarfasSpectrumArithmetic
 import Conjectures.ErdosGyarfasSpectrumBound
 import Conjectures.ErdosGyarfasSpectrumComparison
