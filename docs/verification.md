@@ -12,6 +12,8 @@ Run `python3 results/wang-yang-fuss-narayana/check.py`. The verifier checks all 
 
 The proof counts secants by their intercepts for every order at least 16. Run `python3 results/gyarfas-planar-degree-repetition/verify.py` to count actual incident lines at 116 sample orders using normalized integer line equations. A separate researcher checked the proof and independently enumerated the orders 16 through 160. [Proof](../results/gyarfas-planar-degree-repetition/PROOF.md) · [Review and search record](../results/gyarfas-planar-degree-repetition/AUDIT.md).
 
+Lean verifies the original existence question at order 16 by counting actual affine lines. [Scope and receipt](../results/gyarfas-planar-degree-repetition/FORMALIZATION.md).
+
 ## The two truncated-square covering examples
 
 Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof and receipt](../results/meylender-thalmaier-truncated-square/FORMALIZATION.md).
