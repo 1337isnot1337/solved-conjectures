@@ -11,6 +11,11 @@
 - [Genuine sumsets with growing multiplicity](GENUINE-SUMSET-RELAXATION.md). An actual endpoint set of size $\Theta(\sqrt N)$ in $[0,N]$ gives bounded mean-square gap energy when its maximum unordered pair representation count is permitted to grow as $O(\log N/\log\log N)$.
 - [No deletion or local repair](DELETION-BARRIER.md). For any fixed representation cap, the preceding random host typically contains no subset of comparable size satisfying it. The obstruction survives bounded movements and, with distinct parents, movements of size $N^\beta$ for a specified positive range of $\beta$.
 
+- [Cyclic templates](CYCLIC-GAP-TEMPLATE.md) and [genuine cyclic Sidon sets](RUZSA-CYCLIC-SIDON.md). The latter give constant normalized squared-gap cost on the circle using classical Ruzsa sets.
+- [Bounded-cost integer interiors](RUZSA-INTEGER-INTERIOR.md). Random integer lifts retain Sidon uniqueness and give bounded clipped cost in an arbitrarily large fixed fraction of the interior. Their two true edges cannot be ignored in the conjecture.
+- [Two-endpoint budget](TWO-ENDPOINT-BUDGET.md). Sharing the available endpoint density mass between both ends gives an asymptotic lower bound of $22.13$.
+- [Logarithmic whole-span upper bound](LOGARITHMIC-UPPER.md). For every large $n$ there is a genuine integer Sidon set of size $n$ and diameter $O(n^2)$ with mean square gap $O(\log n)$ on the whole span, including both endpoints. This supersedes the [earlier $O(\log^2 n)$ bound](WHOLE-SPAN-UPPER.md). The unit-residue window tail is squared by using independently randomized affine maps in two adjacent source rows.
+
 The [finite arithmetic checker](check_lattice_identities.py) checks the lag identity, diagonal terms, integer convex gap cost, interval clipping, and the marked identity on small examples. It is not used as evidence for the asymptotic steps. No Lean work was performed in this campaign.
 
 ## Prior work and current limits
