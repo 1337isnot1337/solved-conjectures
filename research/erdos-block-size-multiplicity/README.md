@@ -24,3 +24,5 @@ The [limiting block-size theorem](profiles.md) gives a universal lower coefficie
 The [prime-plane obstruction](prime-planes.md) rules out every restriction of a prime-order Desarguesian plane. At least one size occurs $\Omega(v^{5/7})$ times, uniformly over all primes and all densities. A separate variance estimate gives $\Omega(v^{3/4})$ whenever $v\ge32(q+1)$ in any plane of order $q$.
 
 Using Lewko's 2026 incidence theorem, the same [prime-plane analysis](prime-planes.md) gives the sharp order $\Theta(v^{3/4})$ for the best configuration in this entire model, including when the prime varies with $v$. The matching upper bound comes from the classical plane-restriction construction.
+
+The [field-representability obstruction](field-obstruction.md) gives an absolute power gap $M\gg v^{1/2+\epsilon}$ over **all fields**, even when the characteristic and extension degree vary. Its [inverse lemma](small-projections.md) recovers a dense finite subplane from many small coordinate projections. External points contribute at most one incidence each to the extensions of that subplane's lines. The general abstract-design question is still open.
