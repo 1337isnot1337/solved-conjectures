@@ -306,6 +306,8 @@ jobs:
         run: |
           python3 results/shifted-lonely-runner-counterexamples/generate_lean.py --check
           python3 results/shifted-lonely-runner-counterexamples/verify.py --quick
+      - name: Verify the fixed-seed one-runner extension
+        run: python3 results/shifted-lonely-runner-counterexamples/verify_frozen_extension.py
       - name: Verify the seven-speed loneliness spectrum
         run: python3 results/seven-speed-spectrum/verify.py
       - name: Verify the eight-speed loneliness spectrum

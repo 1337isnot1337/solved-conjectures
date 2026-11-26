@@ -899,6 +899,8 @@ The optional SAT search is not needed for verification. The [scoped Lean replay]
 
 Run `python3 results/shifted-lonely-runner-counterexamples/generate_lean.py --check` to compare the Lean witnesses with all 40 records in the published JSON. The [target replay command](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md) rebuilds the proof of the real-time maxima, audits every declaration and replays the stock kernel. For an independent rational calculation run `python3 results/shifted-lonely-runner-counterexamples/verify.py --full`. Its `--quick` option checks arc coverage for every record and recomputes the exact maximum for $18\le n\le24$ and $n=41$.
 
+Run `python3 results/shifted-lonely-runner-counterexamples/verify_frozen_extension.py` to check the exact optimum, the full interval of optimal phases and the stability margin for adding one runner to the fixed 57-runner seed. [Statement and proof](../results/shifted-lonely-runner-counterexamples/FROZEN_EXTENSION.md).
+
 ## Baricz–Pogány coefficient positivity
 
 The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The full coefficient theorem and source-recurrence endpoint are Lean-verified; the [local receipt](verification/lean-named-20261121/baricz-receipt.json) records strict source compilation, the all-owned axiom audit, and stock-kernel replay.
