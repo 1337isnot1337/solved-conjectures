@@ -82,3 +82,27 @@ An intersecting palette construction can therefore occur only inside the classes
 the family obtained by replacing one triple of this design by its complement, or the family obtained by deleting one triple. In the nine-palette case the two maximal extensions determine each other uniquely once the nine palettes are specified.
 
 To see this, join two surviving labeled maximal families when they differ in one complementary pair. The [enumeration](palettes.py) checks that the 12 copies of the design each have ten neighbors of the other type, and each of the 120 families of the other type has a unique neighbor, a design. The resulting graph is the disjoint union of twelve stars. The enumeration also checks that every pair of colors belongs to exactly two triples of each design. For an actual palette family missing both choices in $j$ complementary pairs, its maximal extensions form a $j$-dimensional cube. Each extension passes every necessary test above because it contains all the actual palettes. A star has no 4-cycle, so $j\le1$. With $j=1$ the two extensions are adjacent and their intersection is the actual family. With $j=0$ all ten palettes occur.
+
+## Positive density under a symmetry of the colors
+
+**Theorem.** Suppose a permutation of the vertices of a completely balanced six-coloring induces three disjoint transpositions on the colors. Then the number of rainbow copies of two vertex-disjoint triangles is $\Omega(n^6)$ as $n=6d+1$ grows, with an absolute implied constant. In particular the conclusion applies when a permutation cyclically shifts all six colors, by taking its cube. The same lower bound holds if the induced permutation exists only as a symmetry of the triangle-palette counts.
+
+Merge the colors according to the transpositions. Each of the three merged colors has degree $k=2d$ at every vertex; $n=3k+1$. Write $M$ and $R$ for the monochromatic and rainbow triangle counts in this three-coloring. Counting the monochromatic two-edge paths at their middle vertex gives the identity
+
+```math
+R=\binom n3-3n\binom k2+2M=nk+2M.
+```
+
+Indeed a two-colored triangle contributes one such path and a monochromatic triangle contributes three. Every three-coloring of $K_{17}$ has a monochromatic triangle. Some vertex has at least six neighbors in one color, among which an edge in that color finishes a triangle. Otherwise apply $R(3,3)=6$ to the six neighbors. For $n\ge17$, averaging over the 17-subsets therefore gives
+
+```math
+M\ge\frac{\binom n3}{\binom{17}3},\qquad R\ge nk+\frac1{340}\binom n3.
+```
+
+Each of these $R$ triangles uses one of the eight palettes choosing one color per pair. The prescribed symmetry takes each such palette to its complement, so their counts come in four equal pairs $(a_j,a_j)$. There are $\sum_{j=1}^4 a_j^2\ge R^2/16$ unordered pairs of triangles of complementary palettes. At most $n\binom{n-1}{2}^2$ ordered pairs of triangles meet at a vertex. Removing these gives the claimed order of growth. This also gives a linear number of vertex-disjoint copies by greedy selection, since a fixed vertex belongs to $O(n^5)$ copies.
+
+For a finite threshold, deleting any set of at most $d$ vertices leaves a triangle transversal to the three pairs. Indeed the remaining graph has at least $5d+1$ vertices and maximum monochromatic degree at most $2d$. A coloring without a tricolored triangle would have a monochromatic star with at least two fifths of its order. [Gyárfás–Simonyi, Theorem 3](https://www.renyi.hu/~simonyi/galcol.pdf)
+
+Hence there are at least $\lfloor d/3\rfloor+1$ mutually disjoint transversal triangles. If $d\ge72$, at least four of them have the same palette. The image of one of those under the symmetry has the complementary palette and can meet at most three of the four. This proves existence already at $d=72$ and above under the vertex symmetry hypothesis. If the color-preserving automorphisms are transitive on vertices, the result holds at **every** admissible order: start with one transversal triangle and its complementary image. Apply a uniformly random color-preserving automorphism to the latter. Its expected overlap with the former is $9/n<1$, since $n\ge13$.
+
+For example, over a finite field of order $q\equiv1\pmod {12}$, color a difference by its multiplicative coset of the sixth powers. The six colors are well-defined on unoriented edges because $-1$ is a sixth power. Translations preserve colors and are transitive; multiplication by a primitive element cycles the six colors. The conclusion applies at every such field order. It also applies to arbitrary six-colorings with the stated symmetry, without a field or group model. The unrestricted Erdős–Tuza question remains open.
