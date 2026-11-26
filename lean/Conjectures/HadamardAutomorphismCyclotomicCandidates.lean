@@ -1,5 +1,0 @@
-import Conjectures.HadamardAutomorphismDescent
-import Conjectures.HadamardAutomorphismCyclotomicPrimes
-import Conjectures.HadamardAutomorphismCyclotomicCharacter
-import Conjectures.HadamardAutomorphismQuadraticConverse
-import Conjectures.HadamardAutomorphismQuadraticUnique

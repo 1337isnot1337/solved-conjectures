@@ -1,2 +1,0 @@
-import Conjectures
-import Solitaire
