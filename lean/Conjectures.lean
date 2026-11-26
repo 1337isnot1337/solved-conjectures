@@ -1,3 +1,6 @@
+import Conjectures.GyarfasPlanarLines
+import Conjectures.GyarfasPlanarRational
+import Conjectures.GyarfasPlanarWitness
 import Conjectures.MeylenderThalmaierArea
 import Conjectures.MeylenderThalmaierComparison
 import Conjectures.MeylenderThalmaierCoverScale
