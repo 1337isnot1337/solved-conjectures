@@ -16,7 +16,7 @@ Run `python3 results/wang-yang-fuss-narayana/check.py`. The verifier checks all 
 
 The proof counts secants by their intercepts for every order at least 16. Run `python3 results/gyarfas-planar-degree-repetition/verify.py` to count actual incident lines at 116 sample orders using normalized integer line equations. A separate researcher checked the proof and independently enumerated the orders 16 through 160. [Proof](../results/gyarfas-planar-degree-repetition/PROOF.md) · [Review and search record](../results/gyarfas-planar-degree-repetition/AUDIT.md).
 
-Lean verifies the original existence question at order 16 by counting actual affine lines. [Scope and receipt](../results/gyarfas-planar-degree-repetition/FORMALIZATION.md).
+For every order from 16, Lean constructs noncollinear rational points in the real plane, proves optimal maximum degree multiplicity two and determines the entire interval of distinct degrees. [Theorems and receipts](../results/gyarfas-planar-degree-repetition/FORMALIZATION.md).
 
 ## The two truncated-square covering examples
 
