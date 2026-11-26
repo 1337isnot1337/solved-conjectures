@@ -7,6 +7,12 @@ closure, including repeated directed arcs, loop vanishing and the
 two-vertex path-edge matrix.
 [Scope and receipt](results/tom-vailaya-weighted-trace/FORMALIZATION.md).
 
+## 2026-11-25 — Verify Pomerance–Sárközy's finite arithmetic-to-Poisson event bound
+
+Lean checks the finite uniform shifted arithmetic count law against the
+independent joint Poisson count law, for every event of the vector.
+[Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify Gaschütz’s finite lifting lemma
 
 Lean proves the lift-count invariant for finite generating tuples and
