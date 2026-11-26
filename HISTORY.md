@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — The ordinary D’Arcais saddle and Fourier inversion
+
+Lean proves the root comparison for indices 6–50 at every real parameter at least one. It constructs the unique positive saddle, proves Fourier inversion for the ordinary coefficients, and reduces strict log-concavity at every index from 501 onward to two explicit inequalities. [Formalization](results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md).
+
 ## 2026-11-26 — Alexandersson’s graphical dist conjecture
 
 The graphical dist polynomial of an ordered graph can have nonreal roots. A finite witness has 71 vertices and 310 edges. A second construction gives arbitrarily many distinct nonreal roots on connected chordal graphs of treewidth two. [Proof](results/alexandersson-graphical-dist/proof.md) · [Source audit](results/alexandersson-graphical-dist/sources.md) · [Independent review](results/alexandersson-graphical-dist/review.md) · [Original question](https://github.com/PerAlexandersson/RealRooted/issues/2641). Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Lean record](results/alexandersson-graphical-dist/FORMALIZATION.md).

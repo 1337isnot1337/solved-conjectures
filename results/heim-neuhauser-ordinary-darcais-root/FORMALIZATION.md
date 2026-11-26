@@ -23,10 +23,14 @@ contribution through $`11/4`$. The
 of variable back to the Fourier integral and derives strict log-concavity
 from the Fourier identity, phase and damping hypotheses, and a tail bound.
 
-The remaining Lean obligations are the finite Turán cases 51–500 and the
-saddle construction, Fourier inversion for the tilted coefficients, and
-uniform phase, damping and tail bounds for indices 501 and above. The
-corrected fractional Chern–Fu–Tang corollary is also outside the Lean scope.
+## The ordinary saddle and Fourier inversion
+
+For each $x>0$ and $n>0$, the [ordinary saddle theorem](../../lean/Conjectures/OrdinaryDarcaisSaddle.lean) proves that exactly one $0<r<1$ solves $x\sum_{k\ge1}\sigma_1(k)r^k=n$. The [characteristic-function theorem](../../lean/Conjectures/OrdinaryDarcaisCharacteristic.lean) identifies the generating series with the exponential on the open unit disk. The [inversion theorem](../../lean/Conjectures/OrdinaryDarcaisInversion.lean) recovers the centered second difference of the actual tilted ordinary coefficients from its Fourier integral. The [phase estimates](../../lean/Conjectures/OrdinaryDarcaisPhase.lean) also hold for every such tilt.
+
+For every $x\ge1$ and integer $n\ge501$, the [reduction theorem](../../lean/Conjectures/OrdinaryDarcaisFourierReduction.lean) derives strict Turán log-concavity from two estimates at that unique saddle. The first is $256 K_3^2\le49 V^3$, where $V=x\sum_{k\ge1} k\sigma_1(k)r^k$ and $K_3=x\sum_{k\ge1} k^2\sigma_1(k)r^k$. The second bounds the normalized tail integral from $11/4$ to $\pi\sqrt V$ below by $-19/50$.
+
+The finite Turán cases 51–500, the two uniform estimates at indices 501 and above, and the fractional Chern–Fu–Tang corollary remain outside this receipt. The earlier finite and central-integral proofs follow the contribution by [AlexisFimeyer in PR #665](https://github.com/1337isnot1337/solved-conjectures/pull/665).
+
 The complete written proof and all three exact arithmetic checkers are
 linked on the [result page](README.md).
 
@@ -59,3 +63,5 @@ The [receipt](verification/receipt.json) records strict compilation, an axiom
 audit of every owned declaration, and stock-kernel replay of the seven-module
 closure. The permitted transitive axioms are `propext`, `Classical.choice`,
 and `Quot.sound`.
+
+The [ordinary Fourier receipt](verification/fourier-receipt.json) records strict compilation of 22 modules, an audit of 440 owned declarations including 371 theorems, and stock-kernel replay. Two independent runs verified all 29 registered endpoints and the same proof-source hashes.

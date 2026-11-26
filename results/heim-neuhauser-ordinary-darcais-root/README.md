@@ -4,7 +4,7 @@
 
 The proof establishes strict log-concavity from index 26. It controls a centered Fourier integral uniformly in the real parameter, then bridges the finite range with exact checks of shifted integer polynomials. The computational checks use exact arithmetic.
 
-**Lean status.** Partial. Lean verifies the root comparisons for indices 6–50 and all real parameters at least 1, the reduction to log-concavity at higher indices, and the central Fourier lower bound under explicit saddle estimates.
+**Lean status.** Partial. Lean proves the root comparison for indices 6–50 at every real parameter at least one. It constructs the unique positive saddle, proves Fourier inversion for the ordinary coefficients, and reduces strict log-concavity at every index from 501 onward to two explicit inequalities.
 
 - [Proof and reproduction commands](PROOF.md)
 - [Lean statements and verification receipt](FORMALIZATION.md)
