@@ -7,6 +7,7 @@ the counting function introduced in §3 of the original paper.
 ## Headline arithmetic limits
 
 Both declarations are exported by `Conjectures.PomeranceSarkozySourceFluctuations`.
+[Lean source](../../lean/Conjectures/PomeranceSarkozySourceFluctuations.lean)
 
 - `PomeranceSarkozy.source_arithmetic_quarter_gaussian` gives weak convergence
   of the pushforward of the uniform sample on the first $`X`$ positive
