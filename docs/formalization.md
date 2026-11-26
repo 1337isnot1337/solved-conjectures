@@ -6,7 +6,7 @@ Lean checks 43 finite simple graphs from the published colouring records. All 32
 
 ## Cyrusian–Kaplan’s ordinarization quasipolynomial question
 
-Partial for the full written entry. Lean proves that at every positive genus the actual fixed-ordinarization count is a quasipolynomial of degree exactly `2r` in each residue. The additional eventual strict increase in genus remains outside this checkpoint. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+Complete for both written conclusions. The literal count has exact degree `2r` in every residue on all positive genera, and it is eventually strictly increasing for each fixed positive ordinarization number. The exact scoped check includes strict compilation, the complete owned axiom audit, and pinned stock-kernel replay. The stronger all-genus monotonicity conjecture is not asserted. [Scope and receipt](../results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
 
 ## Shifted Lonely Runner counterexamples
 

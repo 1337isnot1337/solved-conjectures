@@ -192,6 +192,31 @@ modules=(
   Conjectures.CyrusianKaplanTriangulationCheckpoint
   Conjectures.CyrusianKaplanDegreeTransfer
   Conjectures.CyrusianKaplanExactDegreeCheckpoint
+  Conjectures.CyrusianKaplanAffineLatticeUnit
+  Conjectures.CyrusianKaplanBaselineIntegerLattice
+  Conjectures.CyrusianKaplanBaselineSigns
+  Conjectures.CyrusianKaplanBaselineTuplePairs
+  Conjectures.CyrusianKaplanCommonTopTransfer
+  Conjectures.CyrusianKaplanCorrectionFibres
+  Conjectures.CyrusianKaplanCorrectionSupport
+  Conjectures.CyrusianKaplanCorrectionUniformCount
+  Conjectures.CyrusianKaplanExactMonotonicityReduction
+  Conjectures.CyrusianKaplanFullCheckpoint
+  Conjectures.CyrusianKaplanHyperplaneSimplex
+  Conjectures.CyrusianKaplanIntegerCorrection
+  Conjectures.CyrusianKaplanIntegralRayHeightHom
+  Conjectures.CyrusianKaplanMonotonicityTransfer
+  Conjectures.CyrusianKaplanNumeratorPeriodBox
+  Conjectures.CyrusianKaplanPeriodBox
+  Conjectures.CyrusianKaplanPeriodReduction
+  Conjectures.CyrusianKaplanPolynomialError
+  Conjectures.CyrusianKaplanPrimitiveCorrection
+  Conjectures.CyrusianKaplanQuasiUniformSum
+  Conjectures.CyrusianKaplanResidueLeading
+  Conjectures.CyrusianKaplanTileUniformTop
+  Conjectures.CyrusianKaplanUniformLeadingBridge
+  Conjectures.CyrusianKaplanUniformNumerator
+  Conjectures.CyrusianKaplanUniformRayTop
   Conjectures.CyrusianKaplanExactDegreeReduction
   Conjectures.CyrusianKaplanRationalRayChart
   Conjectures.CyrusianKaplanRationalSimplexGeneral

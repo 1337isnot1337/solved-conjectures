@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify both Cyrusian–Kaplan ordinarization conclusions
+
+Lean verifies exact quasipolynomiality and eventual strict increase for the literal fixed-ordinarization numerical-semigroup count. This is not the all-genus Bras-Amorós conjecture. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the exact Cyrusian–Kaplan quasipolynomial
 
 Lean proves all-positive-genus quasipolynomiality and exact degree in every residue for each fixed positive ordinarization number. The entry's separate eventual monotonicity corollary is outside this checkpoint. [Scope and receipt](results/cyrusian-kaplan-ordinarization/FORMALIZATION.md).
