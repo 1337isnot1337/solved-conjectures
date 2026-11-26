@@ -133,6 +133,7 @@ STATUS_LABEL_SLUGS = {
     "Cyrusian–Kaplan’s ordinarization quasipolynomial question": "cyrusian-kaplan-ordinarization",
     "Coulangeon–Lazzarini’s two-shell conjecture": "coulangeon-lazzarini-two-shells",
     "Alexandersson’s parking-function excedance conjecture": "alexandersson-parking-excedance",
+    "Alexandersson’s ribbon Z-polynomial conjecture": "ribbon-z-polynomial",
     "Nuttall's conjecture": "nuttall-cumulants",
     "Coffey–Smith conjecture": "coffey-smith",
     "Chaudhary–Khmiri–Mazhouda conjecture": "chaudhary-khmiri-mazhouda",

@@ -1,5 +1,11 @@
 # Lean verification status
 
+## Alexandersson’s ribbon Z-polynomial conjecture
+
+Not formalized. The written argument proves the connected ribbon identity for every rank by reducing the simplification to the circuit \(U_{r,r+1}\). The circuit evaluation and the deletion formula are cited inputs, not Lean theorems. [Proof](../results/ribbon-z-polynomial/PROOF.md).
+
+
+
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 
@@ -301,6 +307,7 @@ proofs are documented separately in the catalogue and result package.
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
 | Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
 | Alexandersson’s parking-function excedance conjecture | Complete | Lean proves the marked counting recurrence and its bijection with actual parking words, identifies the exact length-17 coefficient row, and proves the existence of a nonreal root. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md) |
+| Alexandersson’s ribbon Z-polynomial conjecture | Not formalized | Written proof that every connected ribbon of rank \(r\) has Narayana \(Z\)-polynomial \(N_{r+1}\). The circuit evaluation and the deletion formula are cited inputs. |
 | Tom–Vailaya’s weighted trace conjecture | Partial | Lean verifies the finite-color trace under literal endpoint closure with directed arc multiplicity, loop vanishing, the matrix product for endpoint gluing, the edge transfer, independence of the weighted path test rows, the path action, symbolic color-basis invertibility, the conditional trace comparison, and endpoint reflection. The general forest-triple matrix identification remains written. [Lean scope](../results/tom-vailaya-weighted-trace/FORMALIZATION.md). |
 | Csordas–Vishnyakova conjecture | Complete | Original Conjecture 3.6, including all real arguments and all Taylor orders, with the actual approximation definition. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) · [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json). |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Complete: Question 6.1 and uniform small-damping obstruction | Lean checks the exact cubic at p = 3 and proves failure throughout a small positive-damping interval for each real p > 2. [Scope and source](../results/cardon-zero-sector/LEAN.md). |

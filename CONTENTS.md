@@ -122,6 +122,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | --- | --- | --- | --- |
 | [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | Complete refutation of Conjecture 21 in the author preprint. An integral dimension-ten lattice has 2-designs on its first two nonempty shells but not its third. Even orthogonally indecomposable lattices can exhibit arbitrarily long initial runs of 2-design shells before a failure. | Complete Lean for Conjecture 21 and the elementary arbitrary-delay family | [Proof](results/coulangeon-lazzarini-two-shells/PROOF.md) · [Lean](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) · [Independent audit](results/coulangeon-lazzarini-two-shells/AUDIT.md) · [Exact enumeration](results/coulangeon-lazzarini-two-shells/verify.py) · [Issue #365](https://github.com/1337isnot1337/solved-conjectures/issues/365) |
 
+## Matroid Z-polynomials
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Alexandersson’s ribbon Z-polynomial conjecture](results/ribbon-z-polynomial/) | Every connected ribbon lattice-path matroid of rank \(r\) has \(Z\)-polynomial equal to the Narayana polynomial \(N_{r+1}\). The circuit evaluation is cited; the new step deletes the glue edges of the cycle chain. Disconnected ribbons and arbitrary series-parallel matroids are excluded. | Not formalized | [Proof](results/ribbon-z-polynomial/PROOF.md) · [Literature check](results/ribbon-z-polynomial/NOVELTY.md) · [Internal audit](results/ribbon-z-polynomial/AUDIT.md) · [Finite check](results/ribbon-z-polynomial/verify.py) · [Issue #747](https://github.com/1337isnot1337/solved-conjectures/issues/747) |
+
 ## Parking-function statistics
 
 | Problem | Result | Formalization | Evidence |

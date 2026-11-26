@@ -507,6 +507,16 @@ python3 results/lyon-gamma-median/verify.py
 
 The standard-library verifier independently checks 4258 rational median brackets and 4256 cells covering exactly the interval from one tenth to seven. Every sign assertion uses 128-bit-scaled integer intervals with outward rounding, convergent series and explicit signed remainder bounds. The JSON data are proposed brackets, not trusted quantile values. Both independent full replays passed with minimum margin 38316221661991044002598352939471477 divided by 2^128. Typical replay time is one to two minutes. The package has no Lean formalization; the unformalized marker does not erase the essential role of the exact certificate.
 
+## Ribbon lattice-path Z-polynomials
+
+The [written proof](../results/ribbon-z-polynomial/PROOF.md) identifies the \(Z\)-polynomial of every connected ribbon with the Narayana polynomial. The finite script is a consistency check of the graphic model, not the all-rank argument.
+
+```bash
+python3 results/ribbon-z-polynomial/verify.py
+```
+
+It uses the Python standard library only. No Lean formalization is claimed.
+
 ## Exact parking-function excedance counterexample
 
 Run `python3 results/alexandersson-parking-excedance/verify.py`. The script checks two exact enumerations through length 17, direct word enumeration through length 6, and the negative Laguerre expression at −1/5. The [proof](../results/alexandersson-parking-excedance/PROOF.md) explains why this refutes the named conjecture. All computations in the Python check are exact. The [Lean receipt](../results/alexandersson-parking-excedance/verification/receipt.json) records strict compilation, the all-owned axiom audit, and stock-kernel replay for the five-module closure. [Lean scope](../results/alexandersson-parking-excedance/FORMALIZATION.md)

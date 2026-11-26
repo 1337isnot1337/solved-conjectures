@@ -67,25 +67,25 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **53.** [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ | **126.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
 | **53.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **126.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | **53.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **126.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
-| **53.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **134.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
-| **59.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **134.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
-| **59.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **134.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
-| **59.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **134.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
-| **59.** [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ✅ | **138.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
-| **59.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | 🟡 | **138.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
-| **64.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ | **138.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
-| **64.** [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ | **141.** [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
-| **64.** [Chow's conjecture](results/chow-conjecture/) | ✅ | **141.** [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
-| **64.** [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ | **141.** [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |
-| **68.** [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ | **141.** [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟢 |
-| **68.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ⬜ | **145.** [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
-| **68.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 | **145.** [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
-| **68.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ | **147.** [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
-| **68.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | ⬜ | **147.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
-| **73.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ✅ | **147.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
-| **73.** [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ | **147.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
-| **73.** [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ | **147.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
-| **73.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ |  |  |
+| **53.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **134.** [Alexandersson’s ribbon Z-polynomial conjecture](results/ribbon-z-polynomial/) | ⬜ |
+| **59.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **134.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
+| **59.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **134.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
+| **59.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **134.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
+| **59.** [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ✅ | **134.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
+| **59.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | 🟡 | **139.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
+| **64.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ | **139.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
+| **64.** [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ | **139.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
+| **64.** [Chow's conjecture](results/chow-conjecture/) | ✅ | **142.** [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
+| **64.** [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ | **142.** [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| **68.** [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ | **142.** [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |
+| **68.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ⬜ | **142.** [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟢 |
+| **68.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 | **146.** [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
+| **68.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ | **146.** [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
+| **68.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | ⬜ | **148.** [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
+| **73.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ✅ | **148.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
+| **73.** [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ | **148.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
+| **73.** [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ | **148.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
+| **73.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ | **148.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).
 

@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26: Ribbon lattice-path Z-polynomials
+
+The [written argument](results/ribbon-z-polynomial/) shows that every connected ribbon lattice-path matroid of rank \(r\) has \(Z\)-polynomial \(N_{r+1}(t)\). The circuit case is Proudfoot–Xu–Young, Proposition 4.9. The new step is that the simplification is a path of cycles and that deleting the last glue edge preserves \(Z\), by the Braden–Vysogorets deletion formula. \(K_{2,3}\) remains a counterexample outside this class. No Lean verification or external referee review is claimed. [Issue #747](https://github.com/1337isnot1337/solved-conjectures/issues/747).
+
+
+
 ## 2026-11-26 — Verify pointwise rare-deviation cumulant estimates
 
 Lean checks the tilted Bernoulli derivatives and the exact
