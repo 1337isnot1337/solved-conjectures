@@ -4,21 +4,21 @@ For a fixed width, the largest coprime grid below a cutoff has asymptotically as
 
 Let $U_r(x)$ be the maximum number of columns of a grid with $r$ distinct positive rows, distinct positive columns, all entries at most $x$, and entries at distinct positions coprime. Write $G_r(x)$ for the maximum, over shapes $H=\{0=h_1<h_2<\cdots<h_r\}$, of the number of translates $p+H$ consisting entirely of primes at most $x$. Thus $G_r$ is the maximal prime difference count for $r-1$ differences in the notation of Libo Wu and Xiaosheng Wu. For every fixed $r\ge2$,
 
-$$
+```math
  |U_r(x)-G_r(x)|\ll_r\frac{x(\log\log x)^r}{(\log x)^{r+1}},
  \qquad
  U_r(x)\sim G_r(x)\asymp_r\frac{x(\log\log x)^{r-1}}{(\log x)^r}.
-$$
+```
 
 The first comparison, which passes from common prime patterns to disjoint coprime grid entries, is the assertion here. The order of the prime difference maximum comes from the unconditional prime-pattern estimates of Wu and Wu. We include the estimates needed below to make the transfer explicit. [Wu–Wu, §3](https://arxiv.org/abs/1710.10942) · [Straus's original question](https://www.erdosproblems.com/432)
 
 ## A uniform bound for prime translates
 
 A fixed set of $k$ distinct offsets in $[0,2x]$ has at most
-$$
+```math
  O_k\left(\frac{x(\log\log x)^{k-1}}{(\log x)^k}\right)
  \tag{1}
-$$
+```
 prime translates with all entries in $[2,x]$. Normalize its smallest offset to zero. In a translate using a prime at most $z=x^{1/4}$, the position of that prime and its value determine the translate. Discard at most $k\pi(z)$ such translates. If the offsets cover all classes of a prime $p\le z$, none remain. Otherwise apply the upper bound of the fundamental lemma of the sieve to the forbidden classes modulo $p\le z$, with interval length $x$. If $\nu_p$ is the number of offset classes, this gives $O_k(x\prod_{p\le z}(1-\nu_p/p))$. [Banks–Ford, Lemma 2.2](https://arxiv.org/pdf/2605.01155)
 
 Put $\Delta=\prod_{i<j}|h_i-h_j|\le(2x)^{\binom{k}{2}}$. For $p\nmid\Delta$ the factor is at most $(1-1/p)^k$ by Bernoulli's inequality. For $p\mid\Delta$ it is at most $1-1/p$. The excess product is therefore at most $(\Delta/\varphi(\Delta))^{k-1}\ll_k(\log\log x)^{k-1}$. The last bound follows by splitting at $y=\max(3,\log(3\Delta))$. Mertens' product below $y$ is $O(\log y)$, while above $y$ there are at most $\log\Delta/\log y$ prime divisors, each contributing $O(1/y)$ to the logarithm. Mertens' product to $z$ supplies the factor $(\log x)^{-k}$, giving (1).
