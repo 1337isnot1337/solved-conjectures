@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-26 — Verify pointwise rare-deviation cumulant estimates
+
+Lean checks the tilted Bernoulli derivatives and the exact
+variance-weighted cubic Taylor estimate.
+[Proof scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify how finite marginals determine the process limit
 
 Lean verifies the finite-marginal uniqueness and tightness-to-limit

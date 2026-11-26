@@ -184,3 +184,15 @@ a separate Gaussian-path extension. This is a criterion for the
 [process supplement](PROCESS.md), not yet its arithmetic application.
 
 [Continuous-path limit criterion replay](verification/path-weak-limit/receipt.json)
+
+## Bernoulli rare-deviation cumulant
+
+For the [rare-deviation supplement](DEVIATIONS.md), Lean verifies
+the exact first and second Bernoulli cumulant derivatives and a
+variance-weighted envelope for the first three derivatives.
+The checked Taylor remainder is at most
+`exp(3|t|) p(1-p) |t|³ / 6` after subtracting the quadratic term.
+These are the pointwise analytic inputs; the cumulant limit and
+the arithmetic large-deviation principle are not claimed here.
+
+[Bernoulli cumulant replay](verification/rare-bernoulli-tools/receipt.json)
