@@ -4,6 +4,59 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.HeimNeuhauserPlanePartitionDampingBounds
+  Conjectures.HeimNeuhauserPlanePartitionGeometricDamping
+  Conjectures.HeimNeuhauserPlanePartitionLargeRadius
+  Conjectures.HeimNeuhauserPlanePartitionMiddleGrid
+  Conjectures.HeimNeuhauserPlanePartitionMiddleIntegral
+  Conjectures.HeimNeuhauserPlanePartitionMomentBounds
+  Conjectures.HeimNeuhauserPlanePartitionMomentCells
+  Conjectures.HeimNeuhauserPlanePartitionMomentCellsOne
+  Conjectures.HeimNeuhauserPlanePartitionMomentCellsThree
+  Conjectures.HeimNeuhauserPlanePartitionMomentCellsTwo
+  Conjectures.HeimNeuhauserPlanePartitionOuterIntegral
+  Conjectures.HeimNeuhauserPlanePartitionTailCellArithmetic
+  Conjectures.HeimNeuhauserPlanePartitionTailCellsOne
+  Conjectures.HeimNeuhauserPlanePartitionTailCellsThree
+  Conjectures.HeimNeuhauserPlanePartitionTailCellsTwo
+  Conjectures.HeimNeuhauserPlanePartitionTailCoverage
+  Conjectures.HeimNeuhauserPlanePartitionTailExponential
+  Conjectures.HeimNeuhauserPlanePartitionTailInterval
+  Conjectures.HeimNeuhauserPlanePartitionTailParameters
+  Conjectures.HeimNeuhauserPlanePartitionTailPointwise
+  Conjectures.HeimNeuhauserPlanePartitionTheorems
+  Conjectures.HeimNeuhauserPlanePartitionThirdMoment
+  Conjectures.HeimNeuhauserPlanePartitionTuranTail
+  Conjectures.HeimNeuhauserPlanePartitionFourier
+  Conjectures.HeimNeuhauserPlanePartitionFourierCentral
+  Conjectures.HeimNeuhauserPlanePartitionFourierSign
+  Conjectures.HeimNeuhauserPlanePartitionMoments
+  Conjectures.HeimNeuhauserPlanePartitionSaddle
+  Conjectures.HeimNeuhauserPlanePartitionCharacteristic
+  Conjectures.HeimNeuhauserPlanePartitionCosineInversion
+  Conjectures.HeimNeuhauserPlanePartitionInversion
+  Conjectures.HeimNeuhauserPlanePartitionPowerSeries
+  Conjectures.HeimNeuhauserPlanePartitionTilt
+  Conjectures.HeimNeuhauserPlanePartition
+  Conjectures.HeimNeuhauserPlanePartitionBoundary
+  Conjectures.HeimNeuhauserPlanePartitionCertificate
+  Conjectures.HeimNeuhauserPlanePartitionChecks
+  Conjectures.HeimNeuhauserPlanePartitionData
+  Conjectures.HeimNeuhauserPlanePartitionFinite
+  Conjectures.HeimNeuhauserPlanePartitionIndices000To031
+  Conjectures.HeimNeuhauserPlanePartitionIndices032To063
+  Conjectures.HeimNeuhauserPlanePartitionIndices064To095
+  Conjectures.HeimNeuhauserPlanePartitionIndices096To119
+  Conjectures.HeimNeuhauserPlanePartitionIndices120To143
+  Conjectures.HeimNeuhauserPlanePartitionIndices144To163
+  Conjectures.HeimNeuhauserPlanePartitionIndices164To183
+  Conjectures.HeimNeuhauserPlanePartitionIndices184To199
+  Conjectures.HeimNeuhauserPlanePartitionIndices200To214
+  Conjectures.HeimNeuhauserPlanePartitionIndices215To229
+  Conjectures.HeimNeuhauserPlanePartitionIndices230To239
+  Conjectures.HeimNeuhauserPlanePartitionIndices240To250
+  Conjectures.HeimNeuhauserPlanePartitionRows
+  Conjectures.HeimNeuhauserPlanePartitionScalar
   Conjectures.CircularInsertionBaseDisjoint
   Conjectures.CircularInsertionBasePairs
   Conjectures.CircularInsertionBaseUnique

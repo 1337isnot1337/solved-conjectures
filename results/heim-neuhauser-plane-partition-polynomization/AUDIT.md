@@ -4,4 +4,6 @@ The full target is [Heim–Neuhauser, *Polynomization of Sun’s conjecture*, Co
 
 The factorial scaling in the finite sign test is exactly $(n!)^{n+1}(n+1)^n$. The $x>5$ endpoint is deliberately open; the strictly positive leading coefficient suffices on the open half-line even when the constant is zero. At $x=1$ the constant is checked strictly positive. The pair at $n=11$ supplies the starting comparison needed to use Turán at $n=12$ onward. Thus no transitional cases are omitted.
 
-A targeted Nov. 24, 2026 search by title, numbered statement and both parameter ranges found the original, its ordinary-partition predecessors, and the known $x=1$ case, but no prior proof over the full real parameter ranges. Bounded priority check; no Lean or external referee review.
+A targeted Nov. 24, 2026 search by title, numbered statement and both parameter ranges found the original, its ordinary-partition predecessors, and the known $x=1$ case, but no prior proof over the full real parameter ranges. Bounded priority check; external refereeing remains open.
+
+Lean proves strict consecutive-root decrease for every positive index when the parameter exceeds 5 and from index 6 for every real parameter at least 1. At index 1 the threshold 5 is sharp. [Formalization and shared receipt](FORMALIZATION.md).
