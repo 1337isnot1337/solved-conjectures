@@ -205,6 +205,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | --- | --- | --- | --- |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | Complete proposed disproof of the Lyapunov positivity conjecture. A rational feasible encoder has power strictly below the infimum over every encoder with one nonzero per column. All sparse assignments are exhausted, and the same failure holds on an open interval of channel gains. The full matrix assertion is refuted; no separate communication-code theorem is claimed. | Complete source formalization; merged-package gate pending | [Proof](results/han-sabag-kostina-hassibi/PROOF.md) · [Source audit](results/han-sabag-kostina-hassibi/SOURCES.md) · [Algebra review](results/han-sabag-kostina-hassibi/ALGEBRA_REVIEW.md) · [Analysis review](results/han-sabag-kostina-hassibi/ANALYSIS_REVIEW.md) · [Checks](results/han-sabag-kostina-hassibi/verify.py) · [Issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
 
+## Moduli-space Poincaré polynomials
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Ferroni–Pagaria–Vecchi’s type B real-rootedness conjecture](results/ferroni-pagaria-vecchi-type-b/) | Proof of Conjecture 4.13 for every rank: all roots of the literal type B Poincaré polynomials are negative and simple, and consecutive ranks strictly interlace. | Not formalized | [Proof](results/ferroni-pagaria-vecchi-type-b/PROOF.md) · [Audit](results/ferroni-pagaria-vecchi-type-b/AUDIT.md) · [Exact algebra checks](results/ferroni-pagaria-vecchi-type-b/verify.py) · [Issue #776](https://github.com/1337isnot1337/solved-conjectures/issues/776) |
+
 ## Zeros of polynomial transforms
 
 | Problem | Result | Formalization | Evidence |
@@ -388,6 +394,8 @@ The [wild-number result](results/wild-number-complete-graphs/) proves Dawkins–
 These are mathematical claims with explicit proofs and computer checks, **not peer-reviewed publications**. A literature search cannot establish that a counterexample or stronger theorem is the first discovery. Please cite the primary publications when discussing the original conjectures.
 
 ## Primary sources
+
+- **Ferroni–Pagaria–Vecchi’s type B real-rootedness conjecture.** [Ferroni–Pagaria–Vecchi, arXiv:2603.01956v3, Conjecture 4.13 and Theorem 4.15](https://arxiv.org/html/2603.01956v3). [Bérczi–Kiem's type A proof](https://arxiv.org/html/2605.29151v2) supplies the model for the moving-root argument, not the type B zero count.
 
 - **Nuttall's conjecture.** [Nuttall, *Wronskians, Cumulants, and the Riemann Hypothesis*, §4.5, Conjecture 1](https://publish.uwo.ca/~jnuttall/det3CAEXP_2.pdf).
 - **Coffey–Smith conjecture.** [Smith, *A “good” problem equivalent to the Riemann hypothesis*, February 2005 revision, named conjecture](https://rangevoting.org/WarrenSmithPages/homepage/riemann2.pdf).
