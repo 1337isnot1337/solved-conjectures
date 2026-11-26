@@ -4,6 +4,12 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.FiscusGridCertificate
+  Conjectures.FiscusGridCounterexample
+  Conjectures.FiscusGridGame
+  Conjectures.FiscusGridMasks
+  Conjectures.FiscusGridSound
+  Conjectures.FiscusGridTable
   Conjectures.GyarfasPlanarAxisDegrees
   Conjectures.GyarfasPlanarConfiguration
   Conjectures.GyarfasPlanarDirections

@@ -12,6 +12,8 @@ The finite circular-index certificates for degrees 49, 50, 51, 53, 55 and 59 now
 
 The first player can force a win on the 14-vertex ladder, contradicting the conjecture for all even rectangular grids. The written strategy matches every possible reply, with an independent exact minimax check. [Proof](results/fiscus-grid-game/PROOF.md) · [Audit](results/fiscus-grid-game/AUDIT.md) · [Issue #791](https://github.com/1337isnot1337/solved-conjectures/issues/791).
 
+Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Theorems and receipt](results/fiscus-grid-game/FORMALIZATION.md).
+
 ## 2026-11-26 — Erdős–Gyárfás point-degree spectrum conjecture
 
 Erdős and Gyárfás asked whether abstract linear spaces can realize all but a square-root number of the possible point degrees. Counting pairs between points of low and high degree proves that at least one seventeenth of the order is missing. The same bound answers their separate question about real planar point sets. [Proof](results/erdos-gyarfas-point-degree-spectrum/PROOF.md) · [Source and independent review](results/erdos-gyarfas-point-degree-spectrum/AUDIT.md).
