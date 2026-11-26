@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Erdős–Gyárfás’s point-degree spectrum conjecture
+
+Lean bounds the degree spectrum in every finite linear space, rules out the proposed square-root deficit and proves the same linear bound for real planar point sets. [Lean proof](../lean/Conjectures/ErdosGyarfasSpectrumTheorems.lean) · [Kernel receipt](verification/lean-erdos-gyarfas-spectrum-20261126/receipt.json).
+
 ## Fiscus–Hurlbert–Myzelev–Pence’s even-grid conjecture
 
 Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Lean proof](../lean/Conjectures/FiscusGridCounterexample.lean) · [Kernel receipt](verification/lean-fiscus-ladder-20261126/receipt.json).
