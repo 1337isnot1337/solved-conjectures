@@ -1,0 +1,156 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T13:37:26.365291+00:00",
+  "finished_at": "2026-11-26T13:44:14.273854+00:00",
+  "root": "Conjectures.WangYangFussNarayana",
+  "project_modules": [
+    "Conjectures.WangYangFussNarayana",
+    "Conjectures.WangYangFussNarayanaCriteria",
+    "Conjectures.WangYangFussNarayanaDefs",
+    "Conjectures.WangYangFussNarayanaDet",
+    "Conjectures.WangYangFussNarayanaMatrix"
+  ],
+  "required_endpoints": [
+    "Conjectures.WangYangFussNarayana.matB_isTotallyNonneg",
+    "Conjectures.WangYangFussNarayana.matA_isTotallyNonneg",
+    "Conjectures.WangYangFussNarayana.matBRev_isTotallyNonneg",
+    "Conjectures.WangYangFussNarayana.matARev_isTotallyNonneg",
+    "Conjectures.WangYangFussNarayana.matBSquare_isStrictlyTotallyPos",
+    "Conjectures.WangYangFussNarayana.matASquare_isStrictlyTotallyPos",
+    "Conjectures.WangYangFussNarayana.wang_yang_fuss_narayana_conjecture"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/WangYangFussNarayana.lean": "a18b34a8c1571b4e2348954409609f4bf2ccb088af8f0f24ea8080d788743145",
+    "lean/Conjectures/WangYangFussNarayanaCriteria.lean": "5ef7334951cd09e99a77e37260db8035a5667b8c88cb6e72439348a594d6b0c6",
+    "lean/Conjectures/WangYangFussNarayanaDefs.lean": "a7c5d31c51e76675fdc282b258f52b0e997816a648250dae8bed239b47314f5d",
+    "lean/Conjectures/WangYangFussNarayanaDet.lean": "6e9f7d742b966fbd04281a9b99d09a5b7bea32142f9cdba9de560d0c59b12b0e",
+    "lean/Conjectures/WangYangFussNarayanaMatrix.lean": "048917896778cf8b700f22c922e143b302e5b44b6ebabd1f3edc7ed63ad8063a"
+  },
+  "input_sha256": {
+    "lean/Conjectures/WangYangFussNarayana.lean": "a18b34a8c1571b4e2348954409609f4bf2ccb088af8f0f24ea8080d788743145",
+    "lean/Conjectures/WangYangFussNarayanaCriteria.lean": "5ef7334951cd09e99a77e37260db8035a5667b8c88cb6e72439348a594d6b0c6",
+    "lean/Conjectures/WangYangFussNarayanaDefs.lean": "a7c5d31c51e76675fdc282b258f52b0e997816a648250dae8bed239b47314f5d",
+    "lean/Conjectures/WangYangFussNarayanaDet.lean": "6e9f7d742b966fbd04281a9b99d09a5b7bea32142f9cdba9de560d0c59b12b0e",
+    "lean/Conjectures/WangYangFussNarayanaMatrix.lean": "048917896778cf8b700f22c922e143b302e5b44b6ebabd1f3edc7ed63ad8063a",
+    "lean/lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd",
+    "lean/lake-manifest.json": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+    "lean/lakefile.toml": "91f787a34c9a80caf6d07c502a981c2adc85060414de9d114cfd864fbdd0ab3b",
+    "scripts/audit_lean_all_owned.py": "0e514f0d65a08879b1b01a4b42f93a80960ea80d811c0bf417ec209ec4c391b0",
+    "scripts/replay_lean.py": "4605df0993844e224a93b59336391f9d64ea1f03f3c9caf1123df0fd5e273940",
+    "scripts/verify_lean_target.py": "6d4ebc756a210051996ff231a96b8ed11f900189c823cdfc56467bed82665bc8"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "82c4eae2476505398089ca371c7574259b46ee2cdbf4c63eb7749a198032f2a4",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaDefs.olean",
+        "Conjectures/WangYangFussNarayanaDefs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WangYangFussNarayanaDefs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaMatrix.olean",
+        "Conjectures/WangYangFussNarayanaMatrix.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WangYangFussNarayanaMatrix.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaDet.olean",
+        "Conjectures/WangYangFussNarayanaDet.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WangYangFussNarayanaDet.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayanaCriteria.olean",
+        "Conjectures/WangYangFussNarayanaCriteria.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WangYangFussNarayanaCriteria.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/WangYangFussNarayana.olean",
+        "Conjectures/WangYangFussNarayana.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.WangYangFussNarayana.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "results/wang-yang-fuss-narayana/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.WangYangFussNarayana"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 322,
+    "modules": 5,
+    "private_declarations": 79,
+    "raw_declarations": 322,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 270
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

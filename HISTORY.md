@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
+
+Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m ≥ 2` and every finite minor: total nonnegativity of `A(n, k)`, `B(n, k)`, and their row reversals, and strict total positivity of `A(n + k, k)` and `B(n + k, k)`. The self-contained five-module closure proves Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch, and passed strict compilation, the 322-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/wang-yang-fuss-narayana/FORMALIZATION.md).
+
 ## 2026-11-26 — Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
 The monophonic product assertion of Conjecture 9.3 fails on a uniform family built from prisms, starting at 45 vertices with exact product 540 against 529. A subdivision lemma classifies all triples ruled out of induced paths. [Proof](results/monophonic-product-nordhaus-gaddum/PROOF.md) · [Scope and audit](results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [Issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847).

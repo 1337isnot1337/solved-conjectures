@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Conjectures.WangYangFussNarayana.matB_isTotallyNonneg,
+    `Conjectures.WangYangFussNarayana.matA_isTotallyNonneg,
+    `Conjectures.WangYangFussNarayana.matBRev_isTotallyNonneg,
+    `Conjectures.WangYangFussNarayana.matARev_isTotallyNonneg,
+    `Conjectures.WangYangFussNarayana.matBSquare_isStrictlyTotallyPos,
+    `Conjectures.WangYangFussNarayana.matASquare_isStrictlyTotallyPos,
+    `Conjectures.WangYangFussNarayana.wang_yang_fuss_narayana_conjecture,
     `TransportationEhrhart.row_split,
     `TransportationEhrhart.packOthers_sum,
     `TransportationEhrhart.restoreRow_at,

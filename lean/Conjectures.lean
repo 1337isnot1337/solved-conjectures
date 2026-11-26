@@ -1,3 +1,8 @@
+import Conjectures.WangYangFussNarayanaMatrix
+import Conjectures.WangYangFussNarayanaDet
+import Conjectures.WangYangFussNarayanaDefs
+import Conjectures.WangYangFussNarayanaCriteria
+import Conjectures.WangYangFussNarayana
 import Conjectures.TransportationBadColumn
 import Conjectures.TransportationBinomial
 import Conjectures.TransportationComplexRoots
