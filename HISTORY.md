@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Restore the verified complete-minus-one-edge checkpoint
+
+The precise Steps 1–3 Lean reduction is registered on main. The final equality is still outside the verified scope. [Proof and both receipts](results/circular-index-complete-minus-edge/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify exponential event-bound transfers
 
 Lean checks both exponential rate inequalities under superexponentially

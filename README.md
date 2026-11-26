@@ -68,7 +68,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **53.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **126.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | **53.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **126.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | **53.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **134.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
-| **59.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **134.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
+| **59.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **134.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
 | **59.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **134.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
 | **59.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **134.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | **59.** [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ✅ | **138.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
