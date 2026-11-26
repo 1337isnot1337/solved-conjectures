@@ -4,7 +4,7 @@
 
 ## Result
 
-Václav Kotesovec proposed the exponential base and a numerical prefactor for Seiichi Manyama’s line-size sequence on 13 November 2026. The proof gives the sharp asymptotic and the exact prefactor. Szemerédi and Trotter had already proved the upper bound asked for in Erdős Problem 607 in 1983. [OEIS A401948](https://oeis.org/A401948) · [Erdős Problem 607](https://www.erdosproblems.com/607).
+Václav Kotesovec proposed the exponential base and a numerical prefactor for Seiichi Manyama’s line-size sequence on 13 November 2026. The proof gives the sharp asymptotic and the exact prefactor. Szemerédi and Trotter had already proved the upper bound asked for in Erdős Problem 607 in 1983. [Original paper, Theorem 4](https://doi.org/10.1007/BF02579194). [OEIS A401948](https://oeis.org/A401948) · [Erdős Problem 607](https://www.erdosproblems.com/607).
 
 ## Proof and sources
 

@@ -10,7 +10,7 @@ and totally cyclic orientations.
 
 - [Conde and Merino](https://fs.unm.edu/IJMC/ComparingTheNumberOfAcyclicAndTotallyCyclicOrientations.pdf)
   pose the product inequality. The original maximum inequality is due to
-  [Merino and Welsh](https://doi.org/10.1007/s000260050140).
+  [Merino and Welsh](https://doi.org/10.1007/BF01608795).
 - [Noble and Royle, Lemmas 2.2–2.4 and Theorem 4.5](https://bura.brunel.ac.uk/handle/2438/9384)
   restrict a smallest counterexample to series and parallel classes of size
   two or three and prove the conjecture for series–parallel graphs.
