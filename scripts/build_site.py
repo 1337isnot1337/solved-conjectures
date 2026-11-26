@@ -69,6 +69,7 @@ STATUS_LABEL_SLUGS = {
     "Brown–Cameron’s independence-root sector and stability problems": "brown-cameron-stability",
     "Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture": "monophonic-product-nordhaus-gaddum",
     "Mallik–Diwan–Kothari degree-count conjecture": "mallik-diwan-kothari-degree-count",
+    "Byrne–Tait’s odd-length Sidon-set question": "byrne-tait-odd-sidon",
     "Nathanson’s linear-form Sidon systems conjecture": "nathanson-sidon-systems",
     "Fiscus–Hurlbert–Myzelev–Pence grid conjecture": "fiscus-grid-game",
     "En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem": "constant-weight-strong-wom",

@@ -1,5 +1,9 @@
 # Verification
 
+## Sidon products, pattern packings and the four-cycle threshold
+
+Run `python3 results/byrne-tait-odd-sidon/verify.py` for the two finite group actions, `python3 results/blitvic-kammoun-steingrimsson-packing-cutoff/check.py` for direct enumeration from packing windows, and `python3 results/erdos-85-four-cycle-threshold/check_affine_paths.py` for the affine path and charging tests. Each proof has a separate review identifying the arguments that cover its unrestricted parameters.
+
 ## Book domination roots and monophonic circulants
 
 With SymPy 1.14.0 installed, run `python3 docs/research-results/rather-book-domination-roots/check.py` to enumerate dominating sets, isolate real roots over the rationals and verify the sign constants. Run `python3 docs/research-results/tuite-thomas-chandran-circulants/check.py` with standard Python to check finite border graphs, the uniform jump families and the order-15 exception. [Book review](research-results/rather-book-domination-roots/REVIEW.md) · [Circulant review](research-results/tuite-thomas-chandran-circulants/REVIEW.md)

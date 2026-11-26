@@ -94,7 +94,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **82.** [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ | **163.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
 | **82.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ⬜ | **168.** [Fiscus–Hurlbert–Myzelev–Pence grid conjecture](results/fiscus-grid-game/) | ✅ |
 | **82.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 | **169.** [Nathanson’s linear-form Sidon systems conjecture](results/nathanson-sidon-systems/) | ✅ |
-| **82.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |  |  |
+| **82.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ | **169.** [Byrne–Tait’s odd-length Sidon-set question](results/byrne-tait-odd-sidon/) | ⬜ |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).
 
@@ -120,6 +120,8 @@ This repository takes Anthropic's VP ≠ VNP theorem and its stated lower bounds
 
 This section is ordered by the significance of the partial contributions.
 
+- **Blitvić–Kammoun–Steingrímsson packing cutoff question.** No fixed number of occurrences determines all subsequent packing counts. [Proof and remaining length-dependent question](results/blitvic-kammoun-steingrimsson-packing-cutoff/).
+- **Erdős’s four-cycle threshold conjecture.** Regular candidates have large leave components and must differ from an affine polarity graph by a superlinear number of edge deletions in the plane order. [Proofs and exact scope](results/erdos-85-four-cycle-threshold/).
 - [Wild number of complete graphs](results/wild-number-complete-graphs/). The conjectured value holds for all $n\ge155$. The range $13\le n\le154$ remains open.
 - [Seven upper-half circular chromatic index certificates](results/circular-index-upper-half-remaining-deltas/). Tomdif’s examples at degrees $9,11,13,15,17,19,23$, together with the earlier notes, cover every maximum degree $\Delta\ge8$. [Lean proof for every degree](results/circular-index-upper-half-remaining-deltas/FORMALIZATION.md).
 - [Upper-half circular chromatic index for degrees congruent to 1 or 2 modulo 4](results/circular-index-upper-half-delta-2-mod-4/). Constructions for degrees $\Delta=4g+1$ and $4g+2$ with $g\ge6$, plus finite certificates for degrees $10,14,18,22$. [Lean proof for every parameter](results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md). [Lean certificates for the 17 stored nonregular graphs](results/circular-index-upper-half-circulants/FORMALIZATION.md).
