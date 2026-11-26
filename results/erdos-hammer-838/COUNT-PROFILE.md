@@ -10,9 +10,9 @@ These polynomials omit the empty set. For $`n=|Q|`$, the exact
 recurrences are
 ```math
 \begin{aligned}
-U_{B[Q]}(z)&=D_Q(z)\frac{U_B(nz)}{nz},\\
-D_{B[Q]}(z)&=U_Q(z)\frac{D_B(nz)}{nz},\\
-F_{B[Q]}(z)&=|B|F_Q(z)+U_Q(z)D_Q(z)
+U_{B[Q]}(z)&=D_Q(z)\frac{U_B(nz)}{nz},
+\\ D_{B[Q]}(z)&=U_Q(z)\frac{D_B(nz)}{nz},
+\\ F_{B[Q]}(z)&=|B|F_Q(z)+U_Q(z)D_Q(z)
                \frac{F_B(nz)-|B|nz}{(nz)^2}.
 \end{aligned}
 \tag{1}
@@ -59,8 +59,8 @@ Use $`B=B_{r,r}`$ with fixed integer $`r\ge1`$;
 $`M=\binom{2r}{r}`$, $`\ell=\log_2 M`$. Then
 ```math
 \begin{split}
- & [z^j]U_B,[z^j]D_B\ge1\quad(1\le j\le r+1),\\
- & [z^j]F_B\ge1\quad(1\le j\le 2r).
+ & [z^j]U_B,[z^j]D_B\ge1\quad(1\le j\le r+1),
+ \\ & [z^j]F_B\ge1\quad(1\le j\le 2r).
 \end{split}
 ```
 These are all supported degrees: under the classical split,

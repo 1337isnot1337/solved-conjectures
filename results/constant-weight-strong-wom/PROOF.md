@@ -33,7 +33,7 @@ Assume $0<W<S$ and put $\lambda=W/S$. Partition $[n]$ into consecutive blocks of
 
 Given a state with block counts $s_i$, take all floors and round up exactly $W-\sum_i\lfloor\lambda s_i\rfloor$ nonintegral coordinates, in index order. This is possible since $\sum_i\lambda s_i=W$. The resulting $w_i$ lie in $R(s_i)$ and sum to $W$.
 
-For each reachable pair $(b,w)$ let $u(b,w)$ be the least $s\in\{0,\ldots,b\}$ with $w\in R(s)$. It is at least $w$. Construct the preceding labeling with $u=u(b,w)$ and denote its output length by $j(b,w)$. An unreachable weight receives the empty label. Once the written word is known, the decoder can read its block weight $w$ and use the correct local labeling without knowing $s$.
+For each reachable pair $(b,w)$ let $u(b,w)$ be the least $`s\in\{0,\ldots,b\}`$ with $w\in R(s)$. It is at least $w$. Construct the preceding labeling with $u=u(b,w)$ and denote its output length by $j(b,w)$. An unreachable weight receives the empty label. Once the written word is known, the decoder can read its block weight $w$ and use the correct local labeling without knowing $s$.
 
 ## A fixed message length for every state
 

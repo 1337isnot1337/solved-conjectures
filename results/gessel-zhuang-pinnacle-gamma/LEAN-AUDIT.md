@@ -7,8 +7,8 @@ This formalization proves Conjectures 7.3 and 7.2 of Ira M. Gessel and Yan Zhuan
 For every positive size `N` and every pinnacle set `S`, the literal polynomial
 
 ```math
-\sum_{\pi\in\mathfrak S_N,\ \operatorname{Pin}(\pi)=S}
- t^{\operatorname{ides}(\pi)+1}
+\sum_{\pi\in\mathfrak S_N,\ \mathop{\mathrm{Pin}}(\pi)=S}
+ t^{\mathop{\mathrm{ides}}(\pi)+1}
 ```
 
 has a nonnegative real expansion in

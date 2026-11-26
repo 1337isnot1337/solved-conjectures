@@ -30,10 +30,10 @@ both conclusions follow.
 
 For a nonnegative integer lattice, the reduced finitary power monoid
 consists of its finite subsets containing zero, with sumset addition
-and identity $\{0\}$. An atom is a nonidentity element that is not the
+and identity $`\{0\}`$. An atom is a nonidentity element that is not the
 sum of two nonidentity elements. We use $+$ for sumsets, and write
-$B_J=\sum_{i\in J}\{0,e_i\}$ for the Boolean box on a finite set
-$J$ of coordinate indices. Set $B_\varnothing=\{0\}$.
+$`B_J=\sum_{i\in J}\{0,e_i\}`$ for the Boolean box on a finite set
+$J$ of coordinate indices. Set $`B_\varnothing=\{0\}`$.
 
 Let $Y\subseteq\mathbb N_0^2$ be the nine occupied positions in this
 array, with horizontal coordinate $x=0,1,2,3$ from left to right
@@ -48,12 +48,12 @@ and vertical coordinate $y=0,1,2,3$ from top to bottom:
 
 Here the auxiliary quotients need not contain zero. For either
 coordinate $i$, there is a unique set $D_i$ such that
-$Y=D_i+\{0,e_i\}$. All occupied runs in each row and column
+$`Y=D_i+\{0,e_i\}`$. All occupied runs in each row and column
 have length two or three. A length-two run forces its only possible
 domino start; in a length-three run the two endpoints force both
 possible starts. Every legal domino lies within one run, proving
 existence and uniqueness. But there is **no** $D$ with
-$Y=D+B_{\{1,2\}}$: the occupied point $(1,1)$ lies in no
+$`Y=D+B_{\{1,2\}}`$: the occupied point $(1,1)$ lies in no
 occupied unit square. The four candidate squares are blocked by,
 respectively, one of $(0,0),(1,0),(0,1),(2,2)$.
 
@@ -67,10 +67,10 @@ be enlarged, not necessarily a largest one.
 
 Use $d$ ordinary coordinates and two extra coordinates $h,m$,
 called height and marker. The height-zero part of $X$ is
-$B_{[d]}\times\{(0,0)\}$. For each nonedge $\{a,b\}$ of
+$`B_{[d]}\times\{(0,0)\}`$. For each nonedge $`\{a,b\}`$ of
 $G$, make a separate marker slice at height one. Put a copy of
 $Y$ in ordinary coordinates $a,b$ and the entire
-$\{0,1\}$ independently in each of the other ordinary coordinates.
+$`\{0,1\}`$ independently in each of the other ordinary coordinates.
 The marker values can be the distinct integers $1,2,\ldots$.
 If there are no nonedges, use a single upper slice containing the whole
 Boolean box $B_{[d]}$. View each $B_J$ henceforth also as a set
@@ -88,10 +88,10 @@ quotient, since adding its coordinate unit must stay within the
 Boolean box. Projection onto the remaining coordinates forces
 $B_{[d]\setminus J}$.
 
-In the slice for nonedge $\{a,b\}$, set
-$K=J\cap\{a,b\}$. Each coordinate of $J\setminus K$ has
+In the slice for nonedge $`\{a,b\}`$, set
+$`K=J\cap\{a,b\}`$. Each coordinate of $J\setminus K$ has
 width one in the slice and must be zero in the quotient. After fixing
-the coordinates outside $J\cup\{a,b\}$ to any binary values, the
+the coordinates outside $`J\cup\{a,b\}`$ to any binary values, the
 remaining two-dimensional quotient must add to $Y$ with
 $B_K$. If $K$ is empty, that quotient is $Y$; if
 $|K|=1$, it is the unique domino quotient from Section 1; if
@@ -112,14 +112,14 @@ axis with width one must have a width-one contribution from exactly
 one summand; all other summands have width zero on that axis. Thus
 each summand is supported on its own set of axes, and projection of the
 sum onto those axes forces that summand to be the full Boolean box on
-them. Consequently every low atom is exactly $\{0,e_i\}$ for a
+them. Consequently every low atom is exactly $`\{0,e_i\}`$ for a
 distinct ordinary axis $i$; conversely each such two-point set is
 an atom. If the axes of the low atoms form $J$, the high factor is
 $C_J$ by the box-divisor lemma.
 
 For any clique $J$, this high quotient is an atom if and only if
-$J$ is maximal. If $J\cup\{v\}$ is still a clique, uniqueness
-gives $C_J=\{0,e_v\}+C_{J\cup\{v\}}$; both factors are
+$J$ is maximal. If $`J\cup\{v\}`$ is still a clique, uniqueness
+gives $`C_J=\{0,e_v\}+C_{J\cup\{v\}}`$; both factors are
 nonidentity. Conversely, in any decomposition of $C_J$ into
 two nonidentity factors, just one has positive height. Their height-zero
 parts sum to $B_{[d]\setminus J}$, so the low factor is a nonempty
@@ -160,7 +160,7 @@ cliques are precisely those components, including any isolated
 one-vertex components. The construction yields exactly one atomic
 factorization for each list occurrence, and its length is
 $\ell_i$. Taking lists without repetitions gives the conjectured
-length sets. The sets $\{0\}$ and $\{1\}$ are supplied by the
+length sets. The sets $`\{0\}`$ and $`\{1\}`$ are supplied by the
 identity and a two-element atom, and no other possibilities occur
 outside the finite nonempty subsets of integers at least two:
 every nonidentity set factors into atoms by induction on its maximum,

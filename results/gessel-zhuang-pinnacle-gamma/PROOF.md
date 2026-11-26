@@ -4,9 +4,9 @@
 
 **Result.** [Gessel and Zhuang, *Two-sided permutation statistics via symmetric functions*, Conjecture 7.3](https://arxiv.org/html/2306.15785v3#S7.SS2) holds for every $n$ and every pinnacle set $S$. In fact the inverse-descent polynomial for a fixed pinnacle set decomposes into symmetric, real-rooted polynomials with the same symmetry center. This also proves their Conjecture 7.2 on fixed peak count. The separate inverse-peak real-rootedness Conjecture 7.1 is not claimed.
 
-For a permutation $\pi$, a *pinnacle* is a value at an interior peak, and $\operatorname{ides}(\pi)=\#\{i\in[n-1]:\pi^{-1}(i)>\pi^{-1}(i+1)\}$. Write
+For a permutation $\pi$, a *pinnacle* is a value at an interior peak, and $`\mathop{\mathrm{ides}}(\pi)=\#\{i\in[n-1]:\pi^{-1}(i)>\pi^{-1}(i+1)\}`$. Write
 ```math
- F_{n,S}(t)=\sum_{\pi:\operatorname{Pin}(\pi)=S}t^{\operatorname{ides}(\pi)}.
+ F_{n,S}(t)=\sum_{\pi:\mathop{\mathrm{Pin}}(\pi)=S}t^{\mathop{\mathrm{ides}}(\pi)}.
 ```
 Gessel–Zhuang's polynomial is $tF_{n,S}(t)$, so it suffices to prove that $F_{n,S}$ is gamma-positive with center $(n-1)/2$.
 
@@ -25,13 +25,13 @@ Conversely, start at the word $1$ and make abstract insertion choices of exactly
 
 In particular the pinnacle set is exactly the set of labels on the down steps
 ```math
- \operatorname{Pin}(\pi)=\{i\in\{2,\ldots,n\}:h_i=h_{i-1}-1\}.
+ \mathop{\mathrm{Pin}}(\pi)=\{i\in\{2,\ldots,n\}:h_i=h_{i-1}-1\}.
 ```
 Reversing the final permutation does not change any $h_i$, since it reverses the positions of internal gaps. It changes every inverse comparison between consecutive values to its opposite. The inverse-descent polynomial $F_{\mathbf h}(t)$ for a fixed full path $\mathbf h=(h_1,\ldots,h_n)$ is therefore symmetric with center $(n-1)/2$.
 
 ## 2. An interlacing recurrence for each path
 
-Fix one such path. At an intermediate height $h$, refine the polynomial by the number $l\in\{0,\ldots,h\}$ of internal gaps lying to the left of the most recently inserted label. Let $f_l(t)$ count partial histories along the fixed path, with weights for inverse comparisons already determined. Initially $f_0=1$.
+Fix one such path. At an intermediate height $h$, refine the polynomial by the number $`l\in\{0,\ldots,h\}`$ of internal gaps lying to the left of the most recently inserted label. Let $f_l(t)$ count partial histories along the fixed path, with weights for inverse comparisons already determined. Initially $f_0=1$.
 
 Index the existing internal gaps $j=0,\ldots,h-1$ from left to right. The inverse descent between the most recent label and the next label occurs exactly when the chosen position is to its left. For an internal gap $j$, this means $j<l$; for the far-left and far-right exterior insertions it is always true or always false, respectively. Define the choice polynomials
 ```math

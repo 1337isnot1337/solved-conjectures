@@ -19,9 +19,9 @@ There exists a unique $`c_k\in(a_k,b_k)`$ such that, for every fixed $`x\in(a_k,
 ```math
 \begin{cases}
 \mathrm{FD}_{\lfloor xn\rfloor,k}(n)>
-\mathrm{FO}_{\lfloor xn\rfloor,k}(n),&a_k<x<c_k,\\[2mm]
+\mathrm{FO}_{\lfloor xn\rfloor,k}(n),&a_k\lt x\lt c_k,\\[2mm]
 \mathrm{FD}_{\lfloor xn\rfloor,k}(n)<
-\mathrm{FO}_{\lfloor xn\rfloor,k}(n),&c_k<x<b_k.
+\mathrm{FO}_{\lfloor xn\rfloor,k}(n),&c_k\lt x\lt b_k.
 \end{cases}
 ```
 
@@ -71,9 +71,10 @@ The source's Proposition 3.2, equation (9), gives
 \begin{aligned}
 \sum_{n\ge1}\mathrm{FO}_{j,k}(n)q^n
 &=\frac{U(q)T(q)^j}{K(q)^{j+1}}
- +\frac{V(q)T(q)^{j-1}}{K(q)^j}\\
-&=A_O(q)F_O(q)^{j-1},                                  \tag{3}
+ +\frac{V(q)T(q)^{j-1}}{K(q)^j}
+\\ &=A_O(q)F_O(q)^{j-1},
 \end{aligned}
+\tag{3}
 ```
 
 where

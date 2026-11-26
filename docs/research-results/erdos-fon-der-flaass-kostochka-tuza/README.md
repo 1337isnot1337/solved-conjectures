@@ -30,7 +30,7 @@ For each residue of $n$ modulo $q_F$, the integer $q_F(b_F(n)-n\lambda_F)$ is no
 N_p(r)=\min\{n\ge r:n-b_p(n)\ge r\}.
 ```
 
-This identity holds for sufficiently large $r$, when all ground sizes that can first fail have at least $p$ distinct edges. Indeed $n=r$ admits no failure, and at $n\ge r+1$ the family has at least $r+1$ edges. Adding one point with the same signature as an old point increases $b_p$ by at most one, and deleting a point cannot increase it. Hence $n-b_p(n)$ is nondecreasing with increments zero or one. Also $L(p)<1$: the three signatures $\{1,2\},\{2,3\},\{1,3\}$ with equal weights give $L(p)\le2/3$. Inverting the eventual recurrence gives
+This identity holds for sufficiently large $r$, when all ground sizes that can first fail have at least $p$ distinct edges. Indeed $n=r$ admits no failure, and at $n\ge r+1$ the family has at least $r+1$ edges. Adding one point with the same signature as an old point increases $b_p$ by at most one, and deleting a point cannot increase it. Hence $n-b_p(n)$ is nondecreasing with increments zero or one. Also $L(p)<1$: the three signatures $`\{1,2\},\{2,3\},\{1,3\}`$ with equal weights give $L(p)\le2/3$. Inverting the eventual recurrence gives
 
 ```math
 N_p(r+q(1-L(p)))=N_p(r)+q

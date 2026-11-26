@@ -43,7 +43,7 @@ When $a\ge32b\log b$, use the first term $P(x,y)=(y+1)^{x+y+1}$ of the Eulerian 
  \le \exp\!\bigl((x+y+2)e^{-(x+y+1)/(y+1)}\bigr)-1.
 ```
 
-The expression inside the outer exponential is at most $(4a+2)e^{-a/(3b)}$ for $x\in\{a,a'\}$ and $y\in\{b,b'\}$. For $a\ge32b\log b$ this bound decreases as $a$ increases and tends uniformly to zero as $b\to\infty$. Thus all four relative errors are at most $1/10$ for large $b$. The cross ratio of $P$ is exactly $((b'+1)/(b+1))^{a'-a}$, so
+The expression inside the outer exponential is at most $(4a+2)e^{-a/(3b)}$ for $`x\in\{a,a'\}`$ and $`y\in\{b,b'\}`$. For $a\ge32b\log b$ this bound decreases as $a$ increases and tends uniformly to zero as $b\to\infty$. Thus all four relative errors are at most $1/10$ for large $b$. The cross ratio of $P$ is exactly $((b'+1)/(b+1))^{a'-a}$, so
 
 ```math
  \log Q\ge (a'-a)\frac{b'-b}{b'+1}+2\log(9/11).

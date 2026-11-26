@@ -10,7 +10,7 @@ and totally cyclic orientations.
 
 - [Conde and Merino](https://fs.unm.edu/IJMC/ComparingTheNumberOfAcyclicAndTotallyCyclicOrientations.pdf)
   pose the product inequality. The original maximum inequality is due to
-  [Merino and Welsh](https://doi.org/10.1007/s000260050140).
+  [Merino and Welsh](https://doi.org/10.1007/BF01608795).
 - [Noble and Royle, Lemmas 2.2–2.4 and Theorem 4.5](https://bura.brunel.ac.uk/handle/2438/9384)
   restrict a smallest counterexample to series and parallel classes of size
   two or three and prove the conjecture for series–parallel graphs.
@@ -51,8 +51,8 @@ matroid $N$. Let $M$ be the cycle matroid of a minimum-edge graph
 counterexample. Its direct-sum factors are graphic, and the three
 evaluations multiply over direct sums, so $M$ is connected. The elementary
 reductions in Chen, Jin, and Ma, §5 apply to $M$: each element belongs to
-one pair, series or parallel. The series-side argument can use $M^*$,
-because the dual of each proper minor of $M^*$ is a proper minor of $M$ and
+one pair, series or parallel. The series-side argument can use $`M^*`$,
+because the dual of each proper minor of $`M^*`$ is a proper minor of $M$ and
 satisfies the same product inequality whenever it is loopless and coloopless.
 
 Let $M_1$ result from deleting one element of a parallel pair and let $e$
@@ -73,9 +73,9 @@ gives the evaluation triples
 
 ```math
 \begin{array}{c|ccc}
- & a & c & t\\
-M_1 & a(D)+a(C) & c(C)(1+r) & t(C)(q+1)\\
-M & a(D)+a(C) & c(C)(3+r) & t(C)(q+2).
+ & a & c & t
+\\ M_1 & a(D)+a(C) & c(C)(1+r) & t(C)(q+1)
+\\ M & a(D)+a(C) & c(C)(3+r) & t(C)(q+2).
 \end{array}
 ```
 
@@ -86,7 +86,7 @@ those two minors gives, respectively,
 ```math
 r>\frac{2q^2+2q-1}{2q+3},
 \qquad
-(1+x)d<xs.
+(1+x)d\lt xs.
 ```
 
 The second inequality implies $r<s/2-3$ since $x\le1$. The difference of

@@ -4,7 +4,7 @@ Research log for [issue #47](https://github.com/1337isnot1337/solved-conjectures
 
 Let $s(n)=\sigma(n)-n$ be the sum of the proper divisors of $n$.
 If $A$ is a set of positive integers of natural density zero, the
-conjecture says that $\{n\ge2:s(n)\in A\}$ also has natural density
+conjecture says that $`\{n\ge2:s(n)\in A\}`$ also has natural density
 zero.
 
 ## Literature
@@ -101,7 +101,7 @@ t_Y=(s(t))_Y=\gcd(t,\sigma(t))=d,\qquad
 ```
 
 For $m$ also require $s(m)\asymp m$, $s(m)/\varphi(s(m))\ll1$, and
-$\sum_{j\mid\sigma(m),\, j>(\log\log X)^2}1/j\le1$.
+$`\sum_{j\mid\sigma(m),\, j>(\log\log X)^2}1/j\le1`$.
 The implied constants may depend on the permitted exceptional proportion.
 We also take $d\le\log X$.
 
@@ -120,7 +120,7 @@ gives $s(s(m))/s(m)=s(m)/m+o(1)$ on a set of density one.
 This bounds $s(m)/\varphi(s(m))$ on the same retained range because
 $t/\varphi(t)\le\zeta(2)\sigma(t)/t$.
 To transfer an exceptional set of cofactors $m$ to inputs $pm$,
-use $\#\{p\le X/m\}\ll X/(m\log X)$.
+use $`\#\{p\le X/m\}\ll X/(m\log X)`$.
 For an exceptional set of $\ell$ the extra sum over $q$ costs
 $O_\alpha(1)$ since $\sum_{X^\alpha\le q\le X}1/q=O_\alpha(1)$
 over primes. An exceptional set of upper density $\delta$ has
@@ -236,8 +236,8 @@ Those dividing $b$ contribute $O(1)$ by the retained bound on
 the sum of reciprocals of divisors of $b$. Define
 
 ```math
-F=\sum_{\substack{Z<\pi\le W,\ \pi\mid b-b'\\
-                 \pi\nmid hb}}\frac{1}{\pi}
+F=\sum_{\substack{Z<\pi\le W,\ \pi\mid b-b'
+                 \\ \pi\nmid hb}}\frac{1}{\pi}
 \quad(\pi\text{ prime}).
 ```
 
@@ -304,7 +304,7 @@ $h\mid a'/d$ still yields a power saving, since
 $2^{\omega(h)}\tau(a')=X^{o(1)}$.
 The intermediate contribution is negligible in total.
 
-Finally $\sum_{d\ \,Y\text{-smooth}}1/d=O(\log Y)$ by
+Finally $`\sum_{d\ \,Y\text{-smooth}}1/d=O(\log Y)`$ by
 Mertens' theorem. Summing the main contributions, the
 negligible terms and the diagonal gives $\sum_v R(v)^2\ll X$,
 as required.
@@ -340,7 +340,7 @@ have total count
 ```math
 \ll \frac{X}{\log X}
    \sum_{\ell\le X^\delta}\frac1\ell
-        \sum_{\ell<q\le X}\frac1q
+        \sum_{\ell\lt q\le X}\frac1q
  \ll X\delta(1+\log(1/\delta))+o(X).
 ```
 
@@ -473,9 +473,9 @@ The [small-cofactor theorem](SMALL-COFACTOR.md)
 also covers inputs whose largest prime is at most the square root
 and whose two largest primes have product at least $n^{6/7}$.
 A refinement by prime and cofactor size brings the combined
-natural density to approximately $51.96\%$.
+natural density to approximately $`51.96\%`$.
 
 A [third-prime theorem](THIRD-PRIME.md)
 also treats $n=pqrw$ with $p>\sqrt n$ and $r>w^3$, including
 inputs with $q\le rw$. The three proved families have combined
-natural density approximately $53.46\%$.
+natural density approximately $`53.46\%`$.

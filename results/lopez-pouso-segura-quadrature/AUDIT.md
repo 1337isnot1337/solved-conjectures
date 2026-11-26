@@ -64,9 +64,9 @@ Writing $`f=f_0+\epsilon f_1+\epsilon^2 f_2+O(\epsilon^3)`$, the coefficient equ
 
 ```math
 \begin{aligned}
-f_0(u)&=\cos u,\\
-f_1(u)&=-\frac{u\sin u}{8},\\
-f_2(u)&=\frac9{128}(u\sin u-u^2\cos u)
+f_0(u)&=\cos u,
+\\ f_1(u)&=-\frac{u\sin u}{8},
+\\ f_2(u)&=\frac9{128}(u\sin u-u^2\cos u)
           -\frac{u^3\sin u}{24}.
 \end{aligned}
 ```

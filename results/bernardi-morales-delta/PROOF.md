@@ -6,7 +6,7 @@ Lean status: the complete statement in this note now has strict source, all-owne
 
 Bernardi and Morales state the conjecture as Conjecture 27 in *Some probabilistic trees with algebraic roots*, Electronic Journal of Combinatorics 23(2) (2016), P2.36, page 23, DOI [10.37236/4954](https://doi.org/10.37236/4954). It is Conjecture 21 in [arXiv:1501.01135v1](https://arxiv.org/abs/1501.01135v1).
 
-Fix integers $k\geq2$ and $r\geq1$. Write $[k]=\{1,\ldots,k\}$, with its cyclic order. For a proper subset $S\subsetneq[k]$, define $\delta(i,S)=i$ when $i\in S$. When $i\notin S$, define $\delta(i,S)$ to be the next element of $[k]\setminus S$ after $i$ in cyclic order. A singleton complement therefore gives a fixed point.
+Fix integers $k\geq2$ and $r\geq1$. Write $`[k]=\{1,\ldots,k\}`$, with its cyclic order. For a proper subset $S\subsetneq[k]$, define $\delta(i,S)=i$ when $i\in S$. When $i\notin S$, define $\delta(i,S)$ to be the next element of $[k]\setminus S$ after $i$ in cyclic order. A singleton complement therefore gives a fixed point.
 
 For $\boldsymbol p=(p_1,\ldots,p_k)\in\mathbb Z_{\geq0}^k$, let
 
@@ -53,7 +53,7 @@ Let $Q$ be the matrix with $Q_{i,i+1}=1$, with subscripts taken cyclically modul
 L=I-Q.
 ```
 
-For a nonempty set $C\subseteq[k]$, let $L_C$ be the Laplacian of the cyclic successor on $C$, extended by zero rows and columns on $[k]\setminus C$. Explicitly, its row at $i\in C$ is $e_i^T-e_{\mathop{\mathrm{next}}_C(i)}^T$. If $C$ is a singleton, this is the zero matrix. In particular, the row of $L_{[k]\setminus S}$ at $i$ is $e_i^T-e_{\delta(i,S)}^T$.
+For a nonempty set $C\subseteq[k]$, let $L_C$ be the Laplacian of the cyclic successor on $`C`$, extended by zero rows and columns on $[k]\setminus C$. Explicitly, its row at $i\in C$ is $`e_i^T-e_{\mathop{\mathrm{next}}_C(i)}^T`$. If $`C`$ is a singleton, this is the zero matrix. In particular, the row of $`L_{[k]\setminus S}`$ at $i$ is $e_i^T-e_{\delta(i,S)}^T$.
 
 **Lemma 1.** If $S\subsetneq[k]$ and $C=[k]\setminus S$, then
 
@@ -61,7 +61,7 @@ For a nonempty set $C\subseteq[k]$, let $L_C$ be the Laplacian of the cyclic suc
 \det L[S,S]=1,
 ```
 
-and the Schur complement of $L[S,S]$ in $L$, on the remaining set $C$, is
+and the Schur complement of $L[S,S]$ in $L$, on the remaining set $`C`$, is
 
 ```math
 L[C,C]-L[C,S]L[S,S]^{-1}L[S,C]=L_C[C,C]. \tag{3}
@@ -69,7 +69,7 @@ L[C,C]-L[C,S]L[S,S]^{-1}L[S,C]=L_C[C,C]. \tag{3}
 
 **Proof.** The successor graph restricted to a proper subset $S$ is a union of directed paths. Consequently $Q[S,S]$ is nilpotent. Ordering each path along its direction makes $I-Q[S,S]$ triangular with diagonal 1, proving the determinant assertion.
 
-The inverse of $I-Q[S,S]$ is the finite sum of powers of $Q[S,S]$. In the product $L[C,S]L[S,S]^{-1}L[S,C]$, a contribution from $i\in C$ to $j\in C$ records the unique successor path from $i$ to $j$ whose internal vertices lie in $S$. The product has coefficient $+1$ when this path has at least one internal vertex. An arc with no internal vertex is already recorded with coefficient $-1$ in $L[C,C]$. Subtracting the product therefore gives $I_C$ minus the cyclic-successor matrix on $C$. When $C$ is a singleton, the returning path cancels its diagonal entry. This proves (3). The same statement for $S=\varnothing$ uses empty-block conventions. ∎
+The inverse of $I-Q[S,S]$ is the finite sum of powers of $Q[S,S]$. In the product $L[C,S]L[S,S]^{-1}L[S,C]$, a contribution from $i\in C$ to $j\in C$ records the unique successor path from $i$ to $j$ whose internal vertices lie in $S$. The product has coefficient $+1$ when this path has at least one internal vertex. An arc with no internal vertex is already recorded with coefficient $-1$ in $L[C,C]$. Subtracting the product therefore gives $I_C$ minus the cyclic-successor matrix on $`C`$. When $`C`$ is a singleton, the returning path cancels its diagonal entry. This proves (3). The same statement for $S=\varnothing$ uses empty-block conventions. ∎
 
 ## 2. A determinant generating identity
 
@@ -101,8 +101,8 @@ When $S=[k]$, that determinant is $\det L=0$. Otherwise put $C=[k]\setminus S$ a
 
 ```math
 \begin{pmatrix}
-L[S,S]&L[S,C]\\
-Z[C,C]L[C,S]&I_C+Z[C,C]L[C,C]
+L[S,S]&L[S,C]
+\\ Z[C,C]L[C,S]&I_C+Z[C,C]L[C,C]
 \end{pmatrix}.
 ```
 
@@ -115,7 +115,7 @@ By Lemma 1 and the block determinant formula, its determinant is
 =\det\bigl(I_C+Z[C,C]L_C[C,C]\bigr).
 ```
 
-Because $L_C$ has zero rows and columns outside $C$, this is $\det(I+ZL_C)$. The coefficient of every $x^S$ agrees with the right side of (5). ∎
+Because $L_C$ has zero rows and columns outside $`C`$, this is $\det(I+ZL_C)$. The coefficient of every $x^S$ agrees with the right side of (5). ∎
 
 Taking $Z=0$ in (5) gives
 
@@ -166,9 +166,9 @@ The polynomials $\det Z[I,J]$ appearing here are linearly independent: their mon
 
 The all-minor property in (9) is commonly called the determinant-preserving property. Its general closure rules are known; see Dereziński, Liang and Mahoney, [arXiv:1912.04533v3](https://arxiv.org/abs/1912.04533v3), Definition 4 and Lemma 4. Here (5) proves that property for the cyclic matrices required by this conjecture. The following short argument supplies the precise closure step needed, without taking it as an external assumption.
 
-**Lemma 4.** Suppose a square determinant has a specified set of rows taken from $L_{[k]\setminus S}$, with a fixed common set of columns. Its other rows are independent of $S$. Applying $\mathbb E_x$ to that determinant has the same effect as replacing the specified rows by the corresponding rows of $H$.
+**Lemma 4.** Suppose a square determinant has a specified set of rows taken from $`L_{[k]\setminus S}`$, with a fixed common set of columns. Its other rows are independent of $S$. Applying $\mathbb E_x$ to that determinant has the same effect as replacing the specified rows by the corresponding rows of $H$.
 
-**Proof.** Expand the determinant along the specified rows. Each term is a signed product of a square minor of $L_{[k]\setminus S}$ and a complementary minor using the other rows. The latter factor is independent of $S$. Apply (9) to the former factor and sum the Laplace expansion again. ∎
+**Proof.** Expand the determinant along the specified rows. Each term is a signed product of a square minor of $`L_{[k]\setminus S}`$ and a complementary minor using the other rows. The latter factor is independent of $S$. Apply (9) to the former factor and sum the Laplace expansion again. ∎
 
 It follows that independently averaged matrices can be replaced one color at a time, even when the different colors occupy several interspersed rows. Entrywise expectations alone would not justify this step; (9) for all row and column sets does.
 

@@ -61,7 +61,7 @@ $R=\mathbb Z[c_0,\ldots,c_{d-1},u_0,\ldots,u_{d-1}]$,
 define the universal recurrence terms $P_n$ by
 
 ```math
- P_j=u_j\quad(0\le j<d),\qquad
+ P_j=u_j\quad(0\le j\lt d),\qquad
  P_{n+d}=\sum_{j=0}^{d-1}c_jP_{n+j}.
 ```
 
@@ -101,7 +101,7 @@ order, is allowed.
 
 - In the [Singer construction](https://doi.org/10.1090/s0002-9947-1938-1501951-4)
   the set is given by
-  $\operatorname{Tr}_{\mathbb F_{q^3}/\mathbb F_q}(c g^n)=0$,
+  $`\mathop{\mathrm{Tr}}\nolimits_{\mathbb F_{q^3}/\mathbb F_q}(c g^n)=0`$,
   where the class of $g$ generates
   $\mathbb F_{q^3}^\times/\mathbb F_q^\times$.
   Multiplication by $g$ acts linearly on a three-dimensional
@@ -132,7 +132,7 @@ of the generator.
 
 ### The logarithmic scale is attained
 
-Let $A=\{2^j:j\ge0\}$. This is Sidon because the positive
+Let $`A=\{2^j:j\ge0\}`$. This is Sidon because the positive
 difference $2^j-2^i$ for $j>i$ determines $i$ by its
 2-adic valuation and then determines $j$. For every sufficiently
 large $q$ of characteristic $2$, a Singer difference set
@@ -195,14 +195,14 @@ The claimed lower bound follows.
 Write $K=\mathbb F_q$, $E=\mathbb F_{q^3}$, and let $U$
 be the trace-zero subspace of $E$. Under the affine
 identification the indices of $D$ correspond to the classes
-of $U\setminus\{0\}$ in $E^\times/K^\times$.
+of $`U\setminus\{0\}`$ in $E^\times/K^\times$.
 Let $\delta$ be a representative of the class for $a$.
 It is outside $U$, and a modular solution corresponds to
 classes $X,Y,Z$ with $XY/Z=\delta$ in the quotient.
 Equivalently, $X,Y\in U$ satisfy
-$\operatorname{Tr}(XY/\delta)=0$, with $Z$ determined.
+$\mathop{\mathrm{Tr}}(XY/\delta)=0$, with $Z$ determined.
 
-The bilinear form $\operatorname{Tr}(XY/\delta)$ is
+The bilinear form $\mathop{\mathrm{Tr}}(XY/\delta)$ is
 nondegenerate on $U$. Its radical would consist of the
 vectors in $U$ for which $X/\delta$ is in the trace
 annihilator of $U$, namely $K$. As $\delta\notin U$,
@@ -438,8 +438,7 @@ See also [O'Bryant, Lemma 9](https://arxiv.org/abs/2606.28651)
 for the block construction.
 
 The same argument gives a tradeoff with a fixed fraction
-of deletions. Along any sequence of blocks with $T_i/M_i\to
-\theta\in[0,1)$, an infinite Sidon set must satisfy
+of deletions. Along any sequence of blocks with $`T_i/M_i\to \theta\in[0,1)`$, an infinite Sidon set must satisfy
 
 ```math
  \liminf_{i\to\infty}\frac{|(T_i+D_i)\setminus A|}{|D_i|}

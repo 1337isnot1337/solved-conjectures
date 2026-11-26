@@ -40,21 +40,21 @@ or counterexample for the full conjecture was found.
 ## When the residue forces complete cross matchings
 
 Suppose a hypothetical balanced coloring contains $t\ge2$ vertex-disjoint
-cliques of order $r$ in color $i$. Let $R$ be the other vertices and let
-$s$ be the independence number of their color-$i$ graph. If
-$s\ge r-t+2$, the color-$i$ graph on the packed cliques is a rook graph.
+cliques of order $r$ in color $`i`$. Let $R$ be the other vertices and let
+$s$ be the independence number of their color-$`i`$ graph. If
+$s\ge r-t+2$, the color-$`i`$ graph on the packed cliques is a rook graph.
 In other words, between every two packed cliques there is a perfect
 matching, and the matchings identify the vertices consistently across
 all cliques. For any maximum independent set $S$ in $R$, each vertex
-of $S$ is adjacent in color $i$ to precisely one of the resulting columns,
+of $S$ is adjacent in color $`i`$ to precisely one of the resulting columns,
 and those columns are distinct.
 
 ### Proof
 
 Write $Q_1,\ldots,Q_t$ for the cliques. Every external vertex has at most
-one edge of color $i$ to a given $Q_j$, since the other $r-1$ colors
+one edge of color $`i`$ to a given $Q_j$, since the other $r-1$ colors
 must each occur in the $r$ edges into that clique. In particular, the
-edges of color $i$ between any two cliques form a matching.
+edges of color $`i`$ between any two cliques form a matching.
 
 The [transversal lemma in the prior packing argument](https://erdosproblems.ai/wiki/research/erdos_617/independent/clique_residue_and_affine_repair)
 says that if $m\ge2$ parts have size at least $m-1$, the edges between
@@ -86,7 +86,7 @@ matchings and about the corresponding columns.
 
 The packed cliques, their cross matchings, and edges from $S$ into
 the cliques force the following lower bound, with the last term
-counting edges of color $i$ entirely within $R$.
+counting edges of color $`i`$ entirely within $R$.
 
 ```math
 e(G_i) \ge t\binom r2+r\binom t2+st+e(G_i[R]).

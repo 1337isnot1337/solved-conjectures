@@ -15,7 +15,7 @@ Let $`A`$ be an independent set of size at least $`cn/2`$, and write $`d_A(v)=|N
 
 All logarithms below are natural, and we work at sufficiently large $`n`$. Set $`a_j=(\log n)^{-2(2s)^j}`$. For indices $`j\ge0`$ with $`a_j\ge n^{-1/(4s)}`$, the disjoint degree bands
 ```math
-D_j=\{v\in V(G):a_{j+1}\le d_A(v)<a_j\}
+D_j=\{v\in V(G):a_{j+1}\le d_A(v)\lt a_j\}
 ```
 number $`\Theta_s(\log\log n)`$: the index inequality is $`2(2s)^j\log\log n\le (\log n)/(4s)`$. One of these bands has size $`O_s(n/\log\log n)`$. Fix such a $`j`$, put $`a=a_j`$ and $`D=D_j`$, and set $`K=\{v:d_A(v)\ge a\}`$. Vertices outside $`K\cup D`$ have $`d_A(v)<a^{2s}`$.
 

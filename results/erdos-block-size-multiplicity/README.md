@@ -2,7 +2,7 @@
 
 **Lean status:** none.
 
-In a design on $`v`$ points with transitive abelian symmetry, at least $`v`$ blocks have one size. A power improvement over the square-root lower bound also holds for point configurations over every field.
+In a nontrivial pairwise balanced design on $`v`$ points with a point-transitive abelian automorphism group, at least $`v`$ blocks have one size. A power improvement over the square-root lower bound also holds for finite noncollinear point sets in a projective plane over any field.
 
 The abelian bound is attained by the Fano plane. For unrestricted finite linear spaces, it remains open whether every sufficiently large order admits a design with maximum block-size multiplicity of order the square root of the number of points. [Erdős and Purdy, §2](https://users.renyi.hu/~p_erdos/1978-42.pdf)
 

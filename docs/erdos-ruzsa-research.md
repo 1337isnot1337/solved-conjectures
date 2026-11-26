@@ -9,7 +9,7 @@ The argument below establishes a survivor theorem when there is a common shift o
 - [Erdős’s 1980 survey, §6, equation (1″)](https://www.renyi.hu/~p_erdos/1980-03.pdf) gives the covering conjecture. [Erdős–Ruzsa, *On the small sieve. I. Sifting by primes*, p. 386](https://combinatorica.hu/~p_erdos/1980-29.pdf) states the positive-proportion question. Theorem 1 there supplies the survivor bound for zero residues used below.
 - [Hildebrand, *Quantitative mean value theorems for nonnegative multiplicative functions II*](https://doi.org/10.4064/aa-48-3-209-260) identifies the sharp asymptotic minimum for the zero-residue problem. Ben Green discusses the arbitrary-residue conjecture after Problem 46 in [*100 Open Problems*](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf). The [2022 Oberwolfach report, open problem 12](https://publications.mfo.de/bitstream/handle/mfo/4000/OWR_2022_50.pdf?sequence=-1) also records it.
 - The [Erdős Problems wiki](https://erdosproblems.ai/wiki/research/leads/bounded_cost_prime_covers) gives restrictions on the prime ranges of possible covers and an overlap obstruction. The [working report](https://www.erdosproblemaday.com/report/1200) treats zero residues and small examples. The common-shift theorem below allows the small classes to vary at primes up to a fixed power of the interval length.
-- [Granville–Shao, *Bombieri–Vinogradov for multiplicative functions, and beyond the $x^{1/2}$-barrier*](https://arxiv.org/abs/1703.06865), Theorem 1.6, supplies distribution in reduced residue classes after removing exceptional primitive characters. [Iwaniec, *Rosser's sieve*](https://doi.org/10.4064/aa-36-2-171-202), Theorem 1, supplies the lower bound with sieve parameter greater than 2.
+- [Granville–Shao, *Bombieri–Vinogradov for multiplicative functions, and beyond the $`x^{1/2}`$-barrier*](https://arxiv.org/abs/1703.06865), Theorem 1.6, supplies distribution in reduced residue classes after removing exceptional primitive characters. [Iwaniec, *Rosser's sieve*](https://doi.org/10.4064/aa-36-2-171-202), Theorem 1, supplies the lower bound with sieve parameter greater than 2.
 
 ## Common shift on the larger primes
 
@@ -19,7 +19,7 @@ The lower-prime classes can vary independently, including at primes comparable t
 
 ### Counting integers with excluded prime factors
 
-Let $f$ be completely multiplicative with $f(p)\in\{0,1\}$, and suppose that $\sum_{p\le X:f(p)=0}1/p\le L$. Put $F(x)=\sum_{n\le x}f(n)$, $g=\mu*f$ and $h=|g|$, where $*$ is Dirichlet convolution. Thus $h$ is the indicator of squarefree integers supported on the primes excluded by $f$. For $2\le t\le X$,
+Let $f$ be completely multiplicative with $`f(p)\in\{0,1\}`$, and suppose that $\sum_{p\le X:f(p)=0}1/p\le L$. Put $F(x)=\sum_{n\le x}f(n)$, $`g=\mu*f`$ and $`h=|g|`$, where $`*`$ is Dirichlet convolution. Thus $h$ is the indicator of squarefree integers supported on the primes excluded by $f$. For $2\le t\le X$,
 
 ```math
 \sum_{d\le X}\frac{h(d)}d\le e^L,\qquad
@@ -110,7 +110,7 @@ Choose $\delta>0$ with $2\theta\lt 1/2-\delta$, then choose $\epsilon$ as in (3)
 F(X)-F(M)=\frac{X-M}{X}F(X)+o(X)\gg_{K,A,\epsilon}N.
 ```
 
-For $M\lt X/(\log X)^2$ use $F(M)\le M$, and otherwise use (1). Fix $d_*$ with $2\theta\lt d_*\lt 1/2-\delta$ and set $D=N^{d_*}$. To apply (3) to the interval $(M,X]$, first apply it at $x=X$. If $M\ge X/(\log X)^2$, apply it also at $x=M$, since $N^{\epsilon/2}\le x^\epsilon$, $D\le x^{1/2-\delta}$ and $f(p)=1$ for $p\in Q$ up to $(\log x)^{1/2}$. For smaller $M$, the total error at that endpoint for the indicated moduli is bounded by $2M\sum_{d\in\mathcal D}1/d+D=o(N)$ from the interval count without the weight $f$.
+For $M\lt X/(\log X)^2$ use $F(M)\le M$, and otherwise use (1). Fix $`d_*`$ with $`2\theta\lt d_*\lt 1/2-\delta`$ and set $D=N^{d_*}$. To apply (3) to the interval $(M,X]$, first apply it at $x=X$. If $M\ge X/(\log X)^2$, apply it also at $x=M$, since $N^{\epsilon/2}\le x^\epsilon$, $D\le x^{1/2-\delta}$ and $f(p)=1$ for $p\in Q$ up to $(\log x)^{1/2}$. For smaller $M$, the total error at that endpoint for the indicated moduli is bounded by $2M\sum_{d\in\mathcal D}1/d+D=o(N)$ from the interval count without the weight $f$.
 
 For each $d\in\mathcal D$, the simultaneous forbidden conditions for the primes dividing $d$ specify one reduced residue class modulo $d$, by the Chinese remainder theorem. The weight of this class in $(M,X]$ has the form $(F(X)-F(M))/d+r_d$, where the sum of $|r_d|$ for $d\le D$ is $o(N)$ by (3). Apply the dimension-one lower sieve with density $1/p$ on $Q$, cutoff $z=N^\theta$, and level $D$. Its dimension bound follows from Mertens' product over all primes. The lower sieve function is positive at the fixed parameter $\log D/\log z=d_*/\theta>2$, and $\prod_{p\in Q}(1-1/p)\ge e^{-2K}$. Hence the number of survivors with $f(m)=1$ is $\gg_{K,A,\theta}N$.
 

@@ -67,8 +67,8 @@ A positive entrywise product of TP arrays is not automatically TP. None of these
 
 ## Exact square reduction
 
-Let $(x)_n=x(x+1)\cdots(x+n-1)$ and
-$x_{\underline n}=x(x-1)\cdots(x-n+1)$. Define
+Let $`(x)_n=x(x+1)\cdots(x+n-1)`$ and
+$`x_{\underline n}=x(x-1)\cdots(x-n+1)`$. Define
 ```math
  p_n^{(s)}(x)=(x+1)_n\,\bigl(m(x+n+s)\bigr)_{\underline n},
  \qquad s\in\{0,1\}.
@@ -98,10 +98,10 @@ That method cannot be applied directly to the arrays above. For example, at $m=2
 ```math
  P_{0:4,\,0:5}=
  \begin{pmatrix}
- 2&1&0&0&0\\
- -1&2&1&0&0\\
- 4/3&-7/2&2&1&0\\
- -17/4&12&-11/2&2&1
+ 2&1&0&0&0
+ \\ -1&2&1&0&0
+ \\ 4/3&-7/2&2&1&0
+ \\ -17/4&12&-11/2&2&1
  \end{pmatrix}.
 ```
 The ordinary type-B triangle itself has $P(2,0)=-8$ and $P(2,1)=-9$ at $m=2$. Negative production entries also occur at $m=1$, for which the triangle is already known to be TP. Consequently these negative entries refute only the proposed sufficient method, not Wang–Yang's conjecture.

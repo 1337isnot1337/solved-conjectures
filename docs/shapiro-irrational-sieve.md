@@ -19,9 +19,9 @@ At $X=Q^2$ use the area-preserving map
 T(n,m)=(n/Q,\ Q(\lambda n-m)).
 ```
 
-The region $0\lt n\le X$, $0\lt\lambda n-m\lt1$ maps to a square of side $Q$, with the indicated half-open boundary. For convergents $a/Q$ and $a'/Q'$ of consecutive indices, the vectors $T(Q,a)$ and $T(Q',a')$ give a basis of $\Lambda=T\mathbb Z^2$. Both vectors have coordinates bounded by 1 in absolute value. The bound on the second coordinate uses $|\lambda Q-a|\lt 1/Q_{\rm next}$ and $|\lambda Q'-a'|\lt1/Q$. Their determinant has absolute value 1. Thus the shortest length in $\Lambda$ is bounded below by an absolute constant. In particular the number of nonzero lattice vectors in a ball of radius $R$ is $O(R^2)$ whenever the ball contains a nonzero vector.
+The region $0\lt n\le X$, $0\lt\lambda n-m\lt1$ maps to a square of side $Q$, with the indicated half-open boundary. For convergents $a/Q$ and $a'/Q'$ of consecutive indices, the vectors $T(Q,a)$ and $T(Q',a')$ give a basis of $\Lambda=T\mathbb Z^2$. Both vectors have coordinates bounded by 1 in absolute value. The bound on the second coordinate uses $|\lambda Q-a|\lt 1/Q_{\rm next}$ and $|\lambda Q'-a'|\lt1/Q$. Their determinant has absolute value 1. Thus the shortest length in $`\Lambda`$ is bounded below by an absolute constant. In particular the number of nonzero lattice vectors in a ball of radius $`R`$ is $O(R^2)$ whenever the ball contains a nonzero vector.
 
-We will also use $\Lambda_h$ for the sublattice with $h\mid n$, and $\Lambda'_h$ for the one with $h\mid m$. Either has covolume $h$. For any one of these lattices $L$, write $\ell(L)$ for the shortest length of a nonzero vector. A translate of $dL$ meets the square in
+We will also use $\Lambda_h$ for the sublattice with $h\mid n$, and $`\Lambda'_h`$ for the one with $h\mid m$. Either has covolume $`h`$. For any one of these lattices $L$, write $\ell(L)$ for the shortest length of a nonzero vector. A translate of $dL$ meets the square in
 
 ```math
 \frac{X}{d^2\det L}+O\left(1+\frac{Q}{d\ell(L)}\right)
@@ -51,15 +51,15 @@ where $U(z)$ is the product of the local retained densities. We will use the dis
 
 ## Small and medium omitted primes
 
-The prime number theorem and partial summation give $W(X)=(\log X)^{-o(1)}$ and $W(X^c)/W(X)\to1$ for each fixed $c\gt0$. Fix an error tolerance $\varepsilon\gt0$. On $\Lambda$ use level $D=X^{1/8}$ and range $X^c$ with $c\gt0$ sufficiently small depending on $\varepsilon$. Both coordinates are sifted by $E$. The count passing this first sieve is $(1+O(\varepsilon)+o(1))XW(X)^2$ along $X=Q^2$.
+The prime number theorem and partial summation give $W(X)=(\log X)^{-o(1)}$ and $W(X^c)/W(X)\to1$ for each fixed $c\gt0$. Fix an error tolerance $\varepsilon\gt0$. On $`\Lambda`$ use level $D=X^{1/8}$ and range $X^c$ with $c\gt0$ sufficiently small depending on $\varepsilon$. Both coordinates are sifted by $E$. The count passing this first sieve is $(1+O(\varepsilon)+o(1))XW(X)^2$ along $X=Q^2$.
 
-Fix $0\lt\delta\lt\min(c,1/10)$. A failure at an omitted prime $p$ in the range $X^c\lt p\le X^{1-\delta}$ lies on $\Lambda_p$ or $\Lambda'_p$. In either case we may use upper sieve level $D_0=X^{\delta/10}$ and a range $z_0=X^{c_0}$ with a sufficiently small fixed $0\lt c_0\lt c$. Both original coordinates can be sifted by the primes in $E$ up to $z_0$, because $p$ is invertible at each of those primes. The main terms summed over $p$ are at most a constant times
+Fix $0\lt\delta\lt\min(c,1/10)$. A failure at an omitted prime $p$ in the range $X^c\lt p\le X^{1-\delta}$ lies on $\Lambda_p$ or $`\Lambda'_p`$. In either case we may use upper sieve level $D_0=X^{\delta/10}$ and a range $z_0=X^{c_0}$ with a sufficiently small fixed $0\lt c_0\lt c$. Both original coordinates can be sifted by the primes in $E$ up to $z_0$, because $p$ is invertible at each of those primes. The main terms summed over $p$ are at most a constant times
 
 ```math
 XW(z_0)^2\sum_{X^c\lt p\le X^{1-\delta},\ p\in E}\frac1p=o(XW(X)^2).
 ```
 
-For the remainders, consider the primes in $[P,2P)$ from this range. For $R\le\sqrt P$, each prime satisfying $\ell(\Lambda_p)\le R$ divides the nonzero $n$ coordinate of some lattice vector in the radius-$R$ ball. The $n$ coordinate is nonzero because every nonzero vector with $n=0$ has length at least $Q$, while $R\le X^{(1-\delta)/2}\lt Q$. Moreover $|n|\le QR\le X$. Each such $n$ has at most $1/c$ prime divisors above $X^c$. There are $O(R^2)$ vectors, so there are $O_c(R^2)$ primes satisfying this short-vector condition. The same bound holds for $\Lambda'_p$, since $m=0$ implies length at least $\lambda Q$ for a nonzero vector and $|m|\le\lambda QR+R/Q=O_\lambda(X)$ otherwise.
+For the remainders, consider the primes in $[P,2P)$ from this range. For $R\le\sqrt P$, each prime satisfying $\ell(\Lambda_p)\le R$ divides the nonzero $n$ coordinate of some lattice vector in the radius-$`R`$ ball. The $n$ coordinate is nonzero because every nonzero vector with $n=0$ has length at least $Q$, while $R\le X^{(1-\delta)/2}\lt Q$. Moreover $|n|\le QR\le X$. Each such $n$ has at most $1/c$ prime divisors above $X^c$. There are $O(R^2)$ vectors, so there are $O_c(R^2)$ primes satisfying this short-vector condition. The same bound holds for $`\Lambda'_p`$, since $`m=0`$ implies length at least $`\lambda Q`$ for a nonzero vector and $`|m|\le\lambda QR+R/Q=O_\lambda(X)`$ otherwise.
 
 Dyadically summing the inverse lengths up to $\sqrt P$, then using $O(P)$ primes for the lengths above $\sqrt P$, gives
 
@@ -83,6 +83,6 @@ Suppose $n=hp$ for a prime $p\gt X^{1-\delta}$. Then $h\le X^\delta$, and every 
 \prod_{r\le z_1}(1-1/r)\, W(z_1)\ll_{c_1}\frac{W(X)}{\log X}.
 ```
 
-The lattice count gives the upper bound $O_{c_1}(XW(X)/(h\log X))$ plus the remainder. If it is $m$ that has a large prime factor, use $\Lambda'_h$ with $h\le\lambda X^\delta$ and exchange the two coordinates. Both lattice minima are bounded below by that of $\Lambda$. The sum of the sieve remainders for $h$ in this range is $O_\lambda(X^\delta(D_1 Q+D_1^2)\log X)$, which is $o(XW(X)^2)$.
+The lattice count gives the upper bound $O_{c_1}(XW(X)/(h\log X))$ plus the remainder. If it is $m$ that has a large prime factor, use $`\Lambda'_h`$ with $`h\le\lambda X^\delta`$ and exchange the two coordinates. Both lattice minima are bounded below by that of $`\Lambda`$. The sum of the sieve remainders for $`h`$ in this range is $`O_\lambda(X^\delta(D_1 Q+D_1^2)\log X)`$, which is $o(XW(X)^2)$.
 
 For $Y=\lambda X^\delta$, Euler’s product gives $\sum_{h\le Y,\ h\in S_E}h^{-1}\ll W(Y)\log Y$. Since $W(Y)\sim W(X)$ for each fixed $\delta$, the large primes altogether remove at most $O_{c_1,\lambda}(\delta XW(X)^2)+o(XW(X)^2)$. Choose $\delta$ small enough after fixing $c$ and $c_1$ that this contribution is $O(\varepsilon XW(X)^2)$. The upper and lower estimates then differ from the claimed main term by $O(\varepsilon XW(X)^2)+o(XW(X)^2)$. Taking $\varepsilon$ arbitrarily small proves the theorem.

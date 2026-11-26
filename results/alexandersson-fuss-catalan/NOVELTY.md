@@ -10,7 +10,7 @@ The source is Alexandersson's named 2023 conjecture at:
 - https://www.symmetricfunctions.com/realRootedCatalan.htm
 - public source: https://github.com/PerAlexandersson/symmetricfunctions.com/blob/master/tex-source/realRootedCatalan.tex
 
-The open-problems page specifies $n$ north steps and $mn$ east steps above the diagonal, fixes the number of $NE$ factors, and marks the number of $NNE$ factors. Its $m=2,n=5$ table is $t$, $10t+10t^2$, $45t+45t^2$, $120t$, $42$. These match the proof's formula and distinguish the conjecture from a statistic that expands each north step into $m$ unit up-steps before counting factors.
+The open-problems page specifies $n$ north steps and $mn$ east steps above the diagonal, fixes the number of $`NE`$ factors, and marks the number of $`NNE`$ factors. Its $m=2,n=5$ table is $t$, $10t+10t^2$, $45t+45t^2$, $120t$, $42$. These match the proof's formula and distinguish the conjecture from a statistic that expands each north step into $m$ unit up-steps before counting factors.
 
 A current conjecture label alone is not sufficient evidence of novelty. The searches below were performed because other entries in the same catalog have earlier public proofs.
 
@@ -38,7 +38,7 @@ Multiplying by $(mn)!/(mn-k+1)!$ gives exactly formula (1) in PROOF.md. The cycl
 
 G. Kreweras, *Sur les partitions non croisées d'un cycle*, Discrete Mathematics 1(4) (1972), 333–350, Theorem 4, DOI https://doi.org/10.1016/0012-365X(72)90041-6 . An English translation was inspected at https://users.math.msu.edu/users/earnshaw/research/kreweras.pdf . Its Theorem 4 is the prescribed-type formula.
 
-The formula is also recalled as (10.57) in M. Pétréolle, A. D. Sokal and B.-X. Zhu, *Lattice paths and branched continued fractions: An infinite sequence of generalizations of the Stieltjes–Rogers and Thron–Rogers polynomials, with coefficientwise Hankel-total positivity*, arXiv:1807.03271v2, Section 10.3.3. Relevant full-text sections were inspected at https://discovery.ucl.ac.uk/10101894/1/1807.03271v2.pdf . That paper develops general Fuss–Narayana and total-positivity machinery; this audit did not find the particular fixed-$NE$, marked-$NNE$ real-rootedness statement there.
+The formula is also recalled as (10.57) in M. Pétréolle, A. D. Sokal and B.-X. Zhu, *Lattice paths and branched continued fractions: An infinite sequence of generalizations of the Stieltjes–Rogers and Thron–Rogers polynomials, with coefficientwise Hankel-total positivity*, arXiv:1807.03271v2, Section 10.3.3. Relevant full-text sections were inspected at https://discovery.ucl.ac.uk/10101894/1/1807.03271v2.pdf . That paper develops general Fuss–Narayana and total-positivity machinery; this audit did not find the particular fixed-$`NE`$, marked-$`NNE`$ real-rootedness statement there.
 
 ### The ordinary-Dyck polynomial is already real-rooted
 

@@ -4,7 +4,7 @@ For a finite hypergraph $`H`$ with edges of size at least two, join two of its e
 
 ## Independent transversals that partition all vertices
 
-Let $`F`$ be a hypergraph with no one-point intersections between different edges. Partition its vertices into arbitrary blocks of the same size $`b\ge2`$. There is a proper weak $`b`$-coloring of $`F`$ using every color exactly once in each block. In particular joining all pairs within the blocks to $`F`$ still gives a $`b`$-colorable hypergraph. This covers palette gadgets made of mutually disjoint complete graphs of order $`b`$, coupled by an arbitrary single edge class with no one-point intersections.
+Let $`F`$ be a finite hypergraph whose edges have size at least two and whose distinct edges never meet in exactly one vertex. Partition its vertices into arbitrary blocks of the same size $`b\ge2`$. There is a proper weak $`b`$-coloring of $`F`$ using every color exactly once in each block. In particular joining all pairs within the blocks to $`F`$ still gives a $`b`$-colorable hypergraph. This covers palette gadgets made of mutually disjoint complete graphs of order $`b`$, coupled by an arbitrary single edge class with no one-point intersections.
 
 First there exists one independent transversal $`T`$. Add each entire block as a hyperedge. The one-intersection graph is bipartite because original edges form one independent class and the disjoint blocks form another. Coincident edges can be assigned to either class. Blázsik and Lemons' bipartite theorem yields a proper two-coloring (the edgeless-intersection case also follows by greedy coloring). Select one vertex of the first color in each block. This proves existence of $`T`$ and works for unequal blocks of size at least two as well.
 

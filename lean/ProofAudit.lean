@@ -1647,6 +1647,8 @@ run_cmd do
     `PomeranceSarkozy.sourceG_eq_offset_card,
     `PomeranceSarkozy.sourceG_eq_one_add_positive_offsets,
     `PomeranceSarkozy.sourceG_truncation_bounds,
+    `PomeranceSarkozy.source_arithmetic_quarter_gaussian,
+    `PomeranceSarkozy.source_sqrt_converges_in_probability,
     `PomeranceSarkozy.selectedPrimeProduct_dvd,
     `PomeranceSarkozy.primeTail_witness,
     `PomeranceSarkozy.multipleSamples_card_le,
@@ -2119,16 +2121,6 @@ run_cmd do
     `Conjectures.FMPCylindric.sourceCppMore_eq_evalCppMore,
     `Conjectures.FMPCylindric.pp_negative_probeMore,
     `Conjectures.FMPCylindric.no_nonnegative_full_column_count_polynomial,
-    `Conjectures.SternHalfPlane.sternPair_second,
-    `Conjectures.SternHalfPlane.stern_even,
-    `Conjectures.SternHalfPlane.stern_odd,
-    `Conjectures.SternHalfPlane.eval_sternPolynomial,
-    `Conjectures.SternHalfPlane.stern_shift,
-    `Conjectures.SternHalfPlane.exists_runIndex,
-    `Conjectures.SternHalfPlane.continuedValue_mem,
-    `Conjectures.SternHalfPlane.stern_ne_zero_of_parabolic,
-    `Conjectures.SternHalfPlane.sternPolynomial_eval_ne_zero_of_pos_real,
-    `Conjectures.SternHalfPlane.sternPolynomial_eval_ne_zero_of_real_re_ge_one,
     `NuttallCumulants.thetaTerm_pos,
     `NuttallCumulants.thetaTerm_zero_eq,
     `NuttallCumulants.thetaTerm_succ_le_tailMajorant,
@@ -2250,12 +2242,6 @@ run_cmd do
     `CsordasVishnyakova.coefficient_eq_derivative,
     `CsordasVishnyakova.not_LaguerrePolya,
     `CsordasVishnyakova.csordasVishnyakova_conj3_6_false,
-    `WagnerLaguerreOperator.laguerre_one,
-    `WagnerLaguerreOperator.approximate_converges,
-    `WagnerLaguerreOperator.witness_in_class,
-    `WagnerLaguerreOperator.firstLaguerre_witness,
-    `WagnerLaguerreOperator.firstLaguerre_not_in_class,
-    `WagnerLaguerreOperator.wagner_conjecture_4_3_false,
     `MaTangCoreUpperDyadic.initial_bad,
     `MaTangCoreUpperDyadic.child_bad,
     `MaTangCoreUpperDyadic.failure_fraction,
@@ -13524,7 +13510,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["RevisedTanZhou.", "Conjectures.SternHalfPlane.", "NuttallCumulants.", "NemethSeberryShu.", "Conjectures.BursteinDescentTop.", "BenfieldLippardParity.", "CardonZeroSector.", "CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "WagnerLaguerreOperator.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["RevisedTanZhou.", "NuttallCumulants.", "NemethSeberryShu.", "Conjectures.BursteinDescentTop.", "BenfieldLippardParity.", "CardonZeroSector.", "CurgusMascioniQuadratic.", "Conjectures.FMPCylindric.", "CsordasVishnyakova.", "MaTangCoreBalance.", "MaTangCoreIndexed.", "MaTangCoreMatrix.", "MaTangCoreOccupancy.", "MaTangCoreSubspace.", "MaTangCoreRank.", "MaTangCoreGenerator.", "MaTangCoreDecay.", "MaTangCoreQuotient.", "MaTangCoreLinear.", "MaTangCoreEncoding.", "MaTangCoreFactor.", "MaTangCoreMultiplicity.", "MaTangCoreCoupling.", "MaTangCoreLowerBound.", "MaTangCoreBirthday.", "MaTangCoreUpperDyadic.", "MaTangCoreUpperDistinct.", "MaTangCoreUpperPrefixes.", "MaTangCoreUpperShift.", "MaTangCoreUpperMoment.", "MaTangCoreUpperCollision.", "MaTangCoreTranspose.", "MaTangCoreDistinct.", "MaTangCoreSetCoverage.", "MaTangCoreUniformSubset.", "MaTangCoreUpperUniform.", "MaTangCoreThreshold.", "MaTangCoreLeast.", "MaTangCoreAllDimensions.", "MaTangCoreMixedThreshold.", "MaTangLimsup.", "GravgaardLeeDiameter.", "UlasDisjointSquareBlocks.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

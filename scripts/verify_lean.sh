@@ -706,6 +706,33 @@ modules=(
   Conjectures.PomeranceSarkozyNearThresholdBand
   Conjectures.PomeranceSarkozyTailCross
   Conjectures.PomeranceSarkozyThresholdAnalyticCheckpoint
+  Conjectures.PomeranceSarkozyArithmeticTruncation
+  Conjectures.PomeranceSarkozyDiscardedOffsets
+  Conjectures.PomeranceSarkozyGrowingCRT
+  Conjectures.PomeranceSarkozyGrowingCutoffs
+  Conjectures.PomeranceSarkozyGrowingDiscardedOffsets
+  Conjectures.PomeranceSarkozyGrowingEvent
+  Conjectures.PomeranceSarkozyGrowingEventBounds
+  Conjectures.PomeranceSarkozyGrowingFactorial
+  Conjectures.PomeranceSarkozyGrowingGeometry
+  Conjectures.PomeranceSarkozyGrowingModelGaussian
+  Conjectures.PomeranceSarkozyGrowingPrimeMass
+  Conjectures.PomeranceSarkozyModelBandProbability
+  Conjectures.PomeranceSarkozyModelThresholdLaw
+  Conjectures.PomeranceSarkozyModelThresholdMoment
+  Conjectures.PomeranceSarkozyModelThresholdTails
+  Conjectures.PomeranceSarkozyModelThresholdVariance
+  Conjectures.PomeranceSarkozyOmittedPrimeDecay
+  Conjectures.PomeranceSarkozyOmittedPrimeEvent
+  Conjectures.PomeranceSarkozyOmittedPrimeMass
+  Conjectures.PomeranceSarkozyRestoreSample
+  Conjectures.PomeranceSarkozySourceNormalization
+  Conjectures.PomeranceSarkozySourceProbability
+  Conjectures.PomeranceSarkozySourceSample
+  Conjectures.PomeranceSarkozyStatisticBridge
+  Conjectures.PomeranceSarkozyThresholdTransfer
+  Conjectures.PomeranceSarkozyWindowWeakTransfer
+  Conjectures.PomeranceSarkozySourceFluctuations
   Conjectures.ShumyatskyCycleLabels
   Conjectures.ShumyatskyFactorAction
   Conjectures.ShumyatskySimpleFactors
@@ -877,11 +904,6 @@ modules=(
   Conjectures.LassalleIntervalProducts
   Conjectures.LassalleQuotientSymmetry
   Conjectures.LassalleStackSorting
-  Conjectures.SternHalfPlaneBasic
-  Conjectures.SternHalfPlaneShift
-  Conjectures.SternHalfPlaneParabola
-  Conjectures.SternHalfPlaneContinuant
-  Conjectures.SternHalfPlaneRealAxis
   Conjectures.NuttallThetaKernel
   Conjectures.NuttallThetaTail
   Conjectures.NuttallThetaTermDerivatives
@@ -914,7 +936,6 @@ modules=(
   Conjectures.BursteinDescentTop
   Conjectures.BenfieldLippardParity
   Conjectures.CsordasVishnyakova
-  Conjectures.WagnerLaguerreOperator
   Conjectures.MaTangCoreBalance
   Conjectures.MaTangCoreIndexed
   Conjectures.MaTangCoreMatrix

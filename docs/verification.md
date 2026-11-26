@@ -4,6 +4,38 @@
 
 Run `python3 docs/research-results/leech-cold-spots-asymptotics/verify.py` with standard Python. Integer bisection bounds the optimized leading coefficient for each of the 23 deep-hole types. The verifier checks that $`E_8^3`$ has the smallest coefficient and $`D_{24}`$ the second smallest. The localization of the Gaussian minimizers is proved analytically. [Proof](research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](research-results/leech-cold-spots-asymptotics/REVIEW.md)
 
+## Permutation digraph general position conjecture
+
+Run `python3 results/permutation-digraph-general-position/verify.py` to check the marker constructions and reversal geodesics by BFS. Add `--extended` for all six test pairs including word length five. [Written proof](../results/permutation-digraph-general-position/PROOF.md) holds throughout the conjectured range.
+
+## General position number of oriented trees
+
+Run `python3 results/general-position-oriented-trees/verify.py` to compare the five-state recurrence and its witnesses against exact directed-distance oracles. Add `--atlas` with NetworkX available for all orientations of the nonisomorphic trees through order nine. [Written proof](../results/general-position-oriented-trees/PROOF.md).
+
+## Mobile general position complexity
+
+Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
+
+## Misère Domination Game
+
+Run `python3 results/misere-domination-game/verify.py` for exact minimax on octal partitions, direct graph outcomes, and parameter-family witnesses. The [written proof](../results/misere-domination-game/PROOF.md) applies to every path, every cycle, and every sum of octal 0.337 heaps.
+
+## Builder–Blocker general position complexity conjecture
+
+Run `python3 results/builder-blocker-general-position-complexity/verify.py` to compare both host games with the source optimization Node Kayles games by exact minimax. Add `--atlas` with NetworkX available to include the independent graph atlas. [Written proof and scope](../results/builder-blocker-general-position-complexity/PROOF.md).
+
+## Fractional general position conjecture for square grids
+
+Run `python3 results/fractional-general-position-square-grids/verify.py --limit 110 --also 199 200` to check the rank marginals, legal mass couplings and primal longest paths in exact rational arithmetic. The [written proof](../results/fractional-general-position-square-grids/PROOF.md) treats every even and odd order.
+
+## Erdős’s pinned-distance conjecture in general position
+
+Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets.
+
+## Cioba–Savvas shutout number conjecture
+
+Run `python3 results/cioba-savvas-shutout-number/verify.py` to check 127,850 endpoint updates for exact independence polynomials and 432 played games under the stated degree condition. The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) is independent of the finite checks.
+
 ## Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
 Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schur/check_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schur/AUDIT.md) explains how the proof covers every degree.
@@ -15,6 +47,10 @@ Run `python3 results/byrne-tait-odd-sidon/verify.py` for the two finite group ac
 ## Book domination roots and monophonic circulants
 
 With SymPy 1.14.0 installed, run `python3 docs/research-results/rather-book-domination-roots/check.py` to enumerate dominating sets, isolate real roots over the rationals and verify the sign constants. Run `python3 docs/research-results/tuite-thomas-chandran-circulants/check.py` with standard Python to check finite border graphs, the uniform jump families and the order-15 exception. [Book review](research-results/rather-book-domination-roots/REVIEW.md) · [Circulant review](research-results/tuite-thomas-chandran-circulants/REVIEW.md)
+
+## Oriented general position spectrum nonconstancy conjecture
+
+Run `python3 results/oriented-general-position-spectrum-nonconstancy/verify.py` to check the two orientation certificates on all 33,868 labeled simple graphs of orders zero through six. The [proof](../results/oriented-general-position-spectrum-nonconstancy/PROOF.md) does not depend on finite computation.
 
 ## The lower oriented general position NP-hardness conjecture
 
@@ -156,17 +192,20 @@ The pinned strict source build, all-owned transitive axiom audit (815 declaratio
 
 ## Pomerance–Sárközy’s fluctuation conjecture
 
-Partial. Lean verifies the literal arithmetic count, factorial tails,
-finite-window total variation, and the independent product comparisons
-with Bernoulli and Poisson laws. The actual joint Poisson offset-count
-law and its moments are checked. The exact finite arithmetic-to-Poisson
-event bound is also checked. The arithmetic limiting statements remain.
+With the pinned Lean toolchain and Mathlib installed, run the target
+check from the repository root. It builds the exact import closure with
+warnings as errors, audits all its owned declarations, and replays it
+with the stock kernel checker. The aggregate workflow includes the
+same endpoint module and requires both declarations.
+[Exact replay receipt](../results/pomerance-sarkozy-fluctuations/verification/source-fluctuations/receipt.json) · [Lean scope](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits) · [Aggregate workflow](../.github/workflows/lean.yml).
 
-Two supporting threshold identities are independently replayed:
-the universal band-mass bound and the exact tail-product sum.
-The prime-mean input (a uniform bounded error for the reciprocal-prime
-sum relative to log log x) is also checked.
-[Lean scope and receipt](../results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+```bash
+python3 scripts/verify_lean_target.py \
+  --root Conjectures.PomeranceSarkozySourceFluctuations \
+  --require PomeranceSarkozy.source_arithmetic_quarter_gaussian \
+  --require PomeranceSarkozy.source_sqrt_converges_in_probability \
+  --out /tmp/pomerance-sarkozy-source-fluctuations
+```
 
 
 ## Novelli–Thibon's conjecture
@@ -177,13 +216,13 @@ from an explicit stable ordinary Schur expansion; the existence
 and stability of that expansion remain outside the check.
 [Lean scope and receipt](../results/novelli-thibon/FORMALIZATION.md).
 
-## González D’León–Wachs’s complete-graph specialization question
+## Gamma moments, log-concavity and real zeros for weighted complete graphs
 
 Complete for the stated equal-variable result. Lean verifies the
 literal Laguerre and actual Gamma expectation formulas, the boundary
 color formulas, strict ordinary coefficient log-concavity, and the
 real-zero count. Schur-log-concavity is outside the stated result.
-[Lean scope and receipt](../results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Lean scope and receipt](../docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## Defant–Engen–Miller’s Lassalle refinement conjecture
 
@@ -240,10 +279,6 @@ The [local receipt](../results/ferreira-simon-diagonal/verification/receipt.json
 The [local receipt](../results/revised-tan-zhou-luroth/verification/receipt.json) covers the strict build, transitive owned-declaration audit, and stock-kernel replay of the eleven-module closure of `Conjectures.RevisedTanZhou`. The [Lean formalization](../results/revised-tan-zhou-luroth/FORMALIZATION.md) gives the scoped command. The new modules and endpoints are registered in the [aggregate workflow](../.github/workflows/lean.yml).
 
 
-## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
-
-The five-module target passed pinned strict source build, all-owned axiom audit, and stock-kernel replay. The compact certificate and aggregate repository gate are separate. [Lean scope](../results/stern-half-plane/FORMALIZATION.md).
-
 ## Nuttall's conjecture
 
 The complete [scoped receipt](../results/nuttall-cumulants/verification/full/receipt.json) records strict compilation, transitive all-owned axiom verification, and stock-kernel replay of the twenty-module closure. It checks the exact least-order conjecture and the eventual sign-reverse regularity of the literal kernel. The aggregate repository gate is separate. [Lean scope](../results/nuttall-cumulants/FORMALIZATION.md).
@@ -275,10 +310,6 @@ The unchanged original proof and two extension modules passed pinned strict Lean
 ## Csordas–Vishnyakova conjecture
 
 The exact source of `Conjectures.CsordasVishnyakova` passed pinned strict compilation, all-owned transitive axiom audit and stock replay. [Lean scope](../results/csordas-vishnyakova/FORMALIZATION.md) includes the focused reproduction command and [Exact receipt](../results/csordas-vishnyakova/verification/lean-receipt.json) gives the source digest. The repository-wide aggregate gate is separate.
-
-## Wagner's Laguerre-operator conjecture
-
-The exact module `Conjectures.WagnerLaguerreOperator` passed pinned strict compilation, a complete transitive axiom audit, and stock kernel replay. [Lean scope](../results/wagner-laguerre-operator/FORMALIZATION.md) contains the focused command; see the [Exact receipt](../results/wagner-laguerre-operator/verification/lean-receipt.json). The aggregate repository check is separate.
 
 ## Ma–Tang’s random subset-sum threshold conjecture
 
@@ -359,7 +390,7 @@ The [complete closure receipt](verification/gessel-zhuang-20261124/receipt.json)
 
 From `lean/`, run `lake env python3 ../scripts/verify_hajdu_sarkozy.py`. The [dedicated workflow](../.github/workflows/lean-hajdu-sarkozy-shifted-power.yml) performs the same strict source builds, complete all-owned/private axiom audit, and exact stock-kernel replay. The [publication receipt](../results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json) binds all eleven sources and their controls, objects, logs, and declaration inventory. The complete original and general-shift scope, optional unformalized supplement, [independent review](../results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md), original lane receipt, and interrupted-run evidence are retained in the existing entry. The aggregate package gate and hosted deployment remain separate checks.
 
-## Rowland–Sistos Barrón conjecture
+## An exact power-rank formula for a rank-six recurrence
 
 The [complete closure receipt](verification/rowland-20261124/receipt.json), finished 24 November 2026 at 17:09:57 UTC, records 17 fresh strict module builds, the unchanged audit of 286 owned declarations (261 theorems and five private declarations), 11 required endpoints, and complete stock-kernel replay. The only transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The `lean-rowland-sistos-barron.yml` workflow reproduces the target gate. The whole-repository gate and hosted deployment remain separate. The [exact supplemental checker](verification/rowland-20261124/supplementary-check.json) was rerun through exponent 180 and supplies no assumption to the unbounded proof.
 
@@ -557,7 +588,7 @@ The partial-result entries contain their replay commands for the [Frankl generat
 - [Merlini–Sala–Sala conjecture](../results/merlini-sala-sala/PROOF.md): Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup |λtiny(n)|/n^(1/4)=∞. The authors’ weaker linear stability conjecture is not resolved. [Audit](../results/merlini-sala-sala/AUDIT.md).
 - [Wang–Yang's conjecture](../results/wang-yang/PROOF.md): Complete proposed disproof of the author-manuscript Conjecture 1.10: for every fixed coefficient index, the signed forward differences of the Xi coefficients have infinitely many values of each strict sign. Final journal wording has not been checked; the adjacent logarithmic conjecture is separate. [Audit](../results/wang-yang/AUDIT.md).
 
-The [Csordas–Vishnyakova](../results/csordas-vishnyakova/PROOF.md) and [Wagner](../results/wagner-laguerre-operator/PROOF.md) counterexamples use exact entire-function identities and local-uniform-limit arguments. No computation or Lean proof is required for their written mathematics; the source and review limits are recorded in the respective publication audits.
+The [Csordas–Vishnyakova](../results/csordas-vishnyakova/PROOF.md) counterexample uses exact entire-function identities and local-uniform-limit arguments. No computation or Lean proof is required for their written mathematics; the source and review limits are recorded in the respective publication audits.
 
 The [Dospolova–Germanskov–Zaporozhets disproof](../results/dospolova-germanskov-zaporozhets/PROOF.md) is analytic throughout. The strict Gaussian-range argument applies to every nontrivial Gaussian-bounded compact, including bounded discontinuous processes; Vitale's published normalized intrinsic-volume limit excludes every sequence c^k/k! with positive c. Three [independent reviews](../results/dospolova-germanskov-zaporozhets/ROOT_REVIEW.md) check the separability argument, strictness and normalization. The source audit credits Vitale and Long, and actual image inspection resolved an OCR ambiguity in an earlier inequality. There is no numerical verifier or new workflow step for this proof.
 
@@ -676,11 +707,11 @@ python3 results/chaudhary-khmiri-mazhouda/verify.py
 
 The certificate proves the real-part difference is less than −3/2. [Review and replay](../results/chaudhary-khmiri-mazhouda/AUDIT.md).
 
-The [Cardon et al. disproof](../results/cardon-zero-sector/PROOF.md) uses a symbolic discriminant and an exact rational witness, replayed with Python Fraction. The [Rowland–Sistos Barrón disproof under the quasipolynomial interpretation](../results/rowland-sistos-barron/PROOF.md) has an all-exponent symbolic proof; its supplementary verifier checks exact coefficient degrees and independent modular recurrence ranks. These are not Lean checks.
+The [Cardon et al. disproof](../results/cardon-zero-sector/PROOF.md) uses a symbolic discriminant and an exact rational witness, replayed with Python Fraction. The [Rowland–Sistos Barrón disproof under the quasipolynomial interpretation](../docs/rank-six-power-ranks/PROOF.md) has an all-exponent symbolic proof; its supplementary verifier checks exact coefficient degrees and independent modular recurrence ranks. These are not Lean checks.
 
 ```bash
 python3 results/cardon-zero-sector/verify.py
-python3 results/rowland-sistos-barron/verify.py --max-exponent 100
+python3 docs/rank-six-power-ranks/verify.py --max-exponent 100
 ```
 
 The [dual Chow counterexample](../results/caiolo-ferroni-hoster/PROOF.md) uses two exact recursions and a symbolic discriminant sign certificate for all prime powers q ≥ 17. The [Ehrhart counterexample](../results/hkm-ehrhart/PROOF.md) uses integer lattice-point counts, exact polynomial interpolation, a rational Descartes certificate, and a negative Wronskian. Both were replayed on 2026-11-24; these are not Lean checks.
@@ -1183,10 +1214,6 @@ Run `python3 results/dukes-revstack/check.py` from the repository root. Exact ra
 
 Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Lean verification](../results/dukes-revstack/FORMALIZATION.md).
 
-## Stern-polynomial half-plane certificate
-
-From the repository root, run `c++ -std=c++17 -O2 results/stern-half-plane/check.cpp -o /tmp/stern-half-plane-check && /tmp/stern-half-plane-check`. The exact checker verifies the compact region in the [proof](../results/stern-half-plane/PROOF.md). The proof separately handles the exterior, a neighborhood of one, and unbounded run lengths.
-
 ## Chow type-D Eulerian exact bridge
 
 Run `python3 results/chow-conjecture/check_dyadic.py` from the repository root. It certifies every strict transition into degree 128 using exact dyadic signs. The [analytic proof](../results/chow-conjecture/ALTERNATIVE-PROOF.md) handles all subsequent transitions.
@@ -1219,7 +1246,7 @@ Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact len
 
 The [joint Lean verification](../results/braun-bruegge-bicyclic-facets/FORMALIZATION.md) checks the sharp bicyclic maximum and exact theta optimizer on the geometric facet counts. It includes the finite comparisons and the uniform bounds for all larger path lengths.
 
-Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 results/braun-bruegge-bicyclic-facets/check_maximizer.py` for the exact finite parts of the two graph theorems. Run `python3 results/gonzalez-dleon-wachs-complete-graphs/check_complete.py` for the independent exact recurrence comparisons of complete graphs.
+Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 results/braun-bruegge-bicyclic-facets/check_maximizer.py` for the exact finite parts of the two graph theorems. Run `python3 docs/weighted-complete-graph-moments/check_complete.py` for the independent exact recurrence comparisons of complete graphs.
 
 ## Sharp matching-number facet bound
 
@@ -1239,9 +1266,9 @@ The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md
 
 [Féray’s word-measure proof](../results/feray-conjugate-power-word/PROOF.md) and its [sharp-rate supplement](../results/feray-conjugate-power-word/SHARP-RATE.md), as well as the [spherical basis construction](../results/steinerberger-small-average-eigenfunction-norms/PROOF.md) and its [per-mode extension](../results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md), are analytic arguments with independent source and proof audits.
 
-## Kovalev’s square-root Taylor-section zero-free conjecture
+## Fractional powers of geometric sums and sharp coefficient-segment bounds
 
-Run `cd lean && lake env python3 ../scripts/verify_kovalev_zero_free.py` for the full registered 21-module closure. It freshly builds the sources with warnings as errors, audits all owned declarations including private ones, and replays the exact project closure with the pinned stock kernel. The [receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) and [scope review](../results/kovalev-zero-free/LEAN_REVIEW.md) cover the full original square-root conjecture. The general-exponent and segment supplements are not claimed. The scoped gate does not replace the aggregate repository command or certify public deployment.
+Run `cd lean && lake env python3 ../scripts/verify_kovalev_zero_free.py` for the full registered 21-module closure. It freshly builds the sources with warnings as errors, audits all owned declarations including private ones, and replays the exact project closure with the pinned stock kernel. The [receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) and [scope review](../docs/kovalev-fractional-taylor-sections/LEAN_REVIEW.md) cover the full original square-root conjecture. The general-exponent and segment supplements are not claimed. The scoped gate does not replace the aggregate repository command or certify public deployment.
 ## Thue–Morse valuation conjecture
 
 The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) checks the original general clause’s disproof, the exponent-17 witness and the uniform family for k ≥ 11. The integer packing certificate is checked by ordinary kernel reduction. The [local receipt](../docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json) records source hashes, the complete owned/private axiom audit and stock-kernel replay.

@@ -8,10 +8,10 @@ Let $\mathfrak D_n$ be the even-signed permutations of $1,\ldots,n$, and put
 
 ```math
 
- D_n(x)=\sum_{\sigma\in\mathfrak D_n}x^{\operatorname{des}_D(\sigma)},\qquad
- \operatorname{des}_D(\sigma)
+ D_n(x)=\sum_{\sigma\in\mathfrak D_n}x^{\mathop{\mathrm{des}}\nolimits_D(\sigma)},\qquad
+ \mathop{\mathrm{des}}\nolimits_D(\sigma)
  =\mathbf{1}_{\sigma_1+\sigma_2<0}
-  +\#\{1\le i<n:\sigma_i>\sigma_{i+1}\}.
+  +\#\{1\le i\lt n:\sigma_i>\sigma_{i+1}\}.
 
 ```
 
@@ -34,7 +34,7 @@ Savage and Visontai define polynomials $T_{n,i}$, $0\le i<2n$, whose sum $T_n$ e
 ```math
 
  T_{n+1,i}(x)
- =x\sum_{\ell<t_i}T_{n,\ell}(x)+\sum_{\ell=t_i}^{2n-1}T_{n,\ell}(x),
+ =x\sum_{\ell\lt t_i}T_{n,\ell}(x)+\sum_{\ell=t_i}^{2n-1}T_{n,\ell}(x),
  \qquad
  t_i=\left\lceil\frac{ni}{n+1}\right\rceil.
  \tag{1}

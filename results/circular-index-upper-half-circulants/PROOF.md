@@ -223,10 +223,10 @@ All statements here are verified by `verify_part2.py` (standard library; reads `
 ### Problem 7: Multigraph qualification
 
 The [literal formulation of Problem 7](https://arxiv.org/html/2603.08822v1#S8) permits multigraphs. Let $`M_{q}`$ be the loopless multigraph obtained by replacing each edge of the odd cycle $`C_{2q+1}`$ with $`q-1`$ parallel copies. Its line graph is the lexicographic product $`C_{2q+1}[K_{q-1}]`$. The odd cycle is star-extremal: its fractional and circular chromatic numbers both equal $`(2q+1)/q`$ (the independence bound and the circular colouring with consecutive vertices separated by $`q`$ suffice). [Gao–Zhu (1996)](https://doi.org/10.1016/0012-365X%2894%2900311-6) shows that the circular chromatic number of this product is the circular chromatic number of the cycle times the ordinary chromatic number of the clique. Thus
-$$
+```math
 \chi'_c(M_q)=\frac{(2q+1)(q-1)}{q}=
 \Delta(M_q)+\frac{q-1}{q},\qquad \Delta(M_q)=2q-2.
-$$
+```
 For $`q>2`$ the last fraction is strictly between one half and one, and the unreduced numerator is congruent to $`-1`$ modulo $`q`$, so its reduced denominator is exactly $`q`$.
 
 Tom (@tomdif) independently pointed out this application and supplied a direct matching-window colouring in [PR #752](https://github.com/1337isnot1337/solved-conjectures/pull/752). The calculation is included as a literature-based clarification, not a separate discovery or a Lean-verified result. It does not construct simple graphs for $`q\ge6`$ or address Problem 6.

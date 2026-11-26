@@ -2,8 +2,8 @@
 
 **Result.** The D’Arcais polynomials have infinitely many pairwise
 distinct zeros in the open right half-plane. More precisely, there are
-a fixed positive integer $M$ and a complex number $z_*$ with
-$\Re z_*>0$ such that for every sufficiently large prime $p$ there is
+a fixed positive integer $M$ and a complex number $`z_*`$ with
+$`\Re z_*>0`$ such that for every sufficiently large prime $`p`$ there is
 a zero $w_p$ of $P_{Mp}$ satisfying $(Mp)w_p\to z_*$ as $p\to\infty$.
 
 There are also constants $B,\delta>0$ and a set of indices of
@@ -21,7 +21,7 @@ refutation of that conjecture or a claim about the first counterexample.
 ## 1. Scaled entire limit
 
 Write $u(m)=\sigma_{-1}(m)$ for $m\ge1$, and let $u^{*k}(n)$
-denote the $k$-fold **additive** convolution. By the generating
+denote the $`k`$-fold **additive** convolution. By the generating
 function,
 ```math
 P_n(x)=[q^n]\exp\!\left(x\sum_{m\ge1}u(m)q^m\right)
@@ -75,13 +75,13 @@ a_{k-1}=\frac{\zeta(2)^k\sigma_{1-2k}(M)}
 \quad(k\ge2).
 ```
 Convergence is locally uniform by (1). Also (1) bounds the growth of
-$F_M$ by a constant times
+$`F_M`$ by a constant times
 ```math
 1+|z|\sum_{j\ge0}\frac{(U|z|)^j}{(j!)^2}
 \le 1+|z|\exp(2\sqrt{U|z|}),
 ```
 since the sum is dominated by the square of
-$\sum_{j\ge0}(U|z|)^{j/2}/j!$. Thus $F_M$ is entire of order at
+$\sum_{j\ge0}(U|z|)^{j/2}/j!$. Thus $`F_M`$ is entire of order at
 most $1/2$, in particular strictly less than one.
 
 ## 2. An unstable limiting zero
@@ -110,7 +110,7 @@ Taking the finite-product limit proves (3). This also covers
 a finite number of zeros, since any remaining exponential factor
 would be constant in order less than one.
 
-For $F_M$, the first three nonconstant coefficients are
+For $`F_M`$, the first three nonconstant coefficients are
 ```math
 a_1=\tfrac54\sigma_{-3}(M),\qquad
 a_2=\tfrac{35}{96}\sigma_{-5}(M),\qquad
@@ -121,13 +121,13 @@ at $2,4,6,8$. Thus $a_1a_2/a_3\le9\zeta(3)\zeta(5)$. Choose
 $M$ with $\sigma_{-1}(M)>9\zeta(3)\zeta(5)$, possible for
 factorials, since every integer from 1 through $L$ divides $L!$
 and the harmonic sums diverge. Then $a_1a_2-a_0a_3<0$.
-By (3), $F_M$ has a zero $z_*$ in $\Re z>0$.
+By (3), $`F_M`$ has a zero $`z_*`$ in $\Re z>0$.
 
-Fix a small closed disk around $z_*$ lying in that half-plane and
-containing no other zero of $F_M$. Local uniform convergence and
-Rouché's theorem give zeros $z_p$ of $F_{Mp}$ in the disk for
-every sufficiently large prime $p$. The zeros may be chosen with
-$z_p\to z_*$: Rouché applies to arbitrarily small concentric
+Fix a small closed disk around $`z_*`$ lying in that half-plane and
+containing no other zero of $`F_M`$. Local uniform convergence and
+Rouché's theorem give zeros $`z_p`$ of $`F_{Mp}`$ in the disk for
+every sufficiently large prime $`p`$. The zeros may be chosen with
+$`z_p\to z_*`$: Rouché applies to arbitrarily small concentric
 circles, and these exclude the possibility of a distinct limiting
 zero in the initial disk. Since $z_*\ne0$, the numbers
 $w_p=z_p/(Mp)$ are nonzero right-half-plane zeros of $P_{Mp}$,
@@ -183,11 +183,11 @@ The argument bounding the sum of squares also gives
 \le N\sum_{d,e>D}\frac{\gcd(d,e)}{d^2e^2}.
 ```
 The double-sum tail tends to zero. For fixed $k\ge2$, telescope
-the difference of the $k$-fold convolutions into terms with
+the difference of the $`k`$-fold convolutions into terms with
 one factor $u-u_D$ and $k-1$ factors bounded by $u$. Pair the
 tail factor with any other factor by Cauchy–Schwarz, then use
 the prefix bound on the rest. This bounds
-$|u^{*k}(n)-u_D^{*k}(n)|/n^{k-1}$ by a constant depending on $k$
+$|u^{*k}(n)-u_D^{*k}(n)|/n^{k-1}$ by a constant depending on $`k`$
 times the square root of the double-sum tail, uniformly in $n$.
 
 For bounded divisors $d_1,\ldots,d_k\le D$, let $g=\gcd(d_1,\ldots,d_k)$.
@@ -198,8 +198,8 @@ is
 +O_{k,D}(n^{k-2}).
 ```
 Indeed the rational generating function
-$q^{\sum_i d_i}/\prod_i(1-q^{d_i})$ has order-$k$ poles precisely
-at the $g$th roots of unity; the leading contribution from
+$q^{\sum_i d_i}/\prod_i(1-q^{d_i})$ has order-$`k`$ poles precisely
+at the $`g`$th roots of unity; the leading contribution from
 each is the same multiple of $n^{k-1}$ times its root-of-unity
 phase. All other poles have order at most $k-1$.
 Multiplying by the weights $\prod_i d_i^{-1}$, dividing by

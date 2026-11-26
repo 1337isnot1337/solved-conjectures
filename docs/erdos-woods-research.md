@@ -2,12 +2,12 @@
 
 Research log for [issue #46](https://github.com/1337isnot1337/solved-conjectures/issues/46). The conjecture is open.
 
-Write $\operatorname{rad}(n)$ for the product of the distinct primes
+Write $\mathop{\mathrm{rad}}(n)$ for the product of the distinct primes
 dividing a positive integer $n$. The conjecture asserts that an absolute
 positive integer $k$ exists such that
 
 ```math
-\operatorname{rad}(x+i)=\operatorname{rad}(y+i)\quad(0\le i\lt k)
+\mathop{\mathrm{rad}}(x+i)=\mathop{\mathrm{rad}}(y+i)\quad(0\le i\lt k)
 \quad\Longrightarrow\quad x=y.
 ```
 
@@ -63,7 +63,7 @@ that the remaining pairs lift to points on $C$.
 
 If one coordinate is constant, the radicals of the first two terms
 of the other coordinate are supported on a fixed finite set of primes.
-The pair of consecutive terms is then a solution of an $S$-unit
+The pair of consecutive terms is then a solution of an $`S`$-unit
 equation, of which there are finitely many. Assume both coordinates
 are nonconstant. The function $f-g$ is nonzero since all pairs have
 $x\lt y$.
@@ -73,8 +73,8 @@ let $t=|D_0|$. For each $i$ with $0\le i\lt k$, mark every point
 outside $D_0$ which is a zero of exactly one of $f+i$ and $g+i$.
 Let $D_1$ be the union of these marked points.
 
-The matching pairs give $S$-integral points on
-$C\setminus(D_0\cup D_1)$ for a fixed finite set of places $S$.
+The matching pairs give $`S`$-integral points on
+$C\setminus(D_0\cup D_1)$ for a fixed finite set of places $`S`$.
 To see this, enlarge the number field to split the finitely many
 poles and zeros involved. Choose a smooth proper model outside
 finitely many places, so that distinct special points have disjoint
@@ -84,9 +84,9 @@ a pole would give a nonintegral coordinate. Reducing to a point of
 $D_1$ would make exactly one of the two corresponding integers
 divisible by the underlying rational prime. This contradicts
 the aligned equality of their radicals. Therefore all reductions
-outside $S$ avoid the deleted points.
+outside $`S`$ avoid the deleted points.
 
-By [Siegel's theorem for $S$-integral points](https://math.berkeley.edu/~vojta/cime/cime.pdf)
+By [Siegel's theorem for $`S`$-integral points](https://math.berkeley.edu/~vojta/cime/cime.pdf)
 the normalization has genus zero and $t+|D_1|\le2$, since $t>0$.
 Take $d=\max(\deg f,\deg g)$ and exchange the functions in the proof
 if needed so that $\deg f=d$. If $f$ has $t_f$ distinct poles, the
@@ -138,7 +138,7 @@ different radicals. Thus they cannot be part of a longer match.
 If the aligned terms are last, use their predecessors. A primitive
 prime divisor of $a^v-1$ distinguishes the predecessor radicals
 except when $v=2$ and $a+1$ is a power of two, or when $a=2,v=6$.
-In the latter case the support of 63 is $\{3,7\}$, different from
+In the latter case the support of 63 is $`\{3,7\}`$, different from
 each of the supports of $2^u-1$ for $1\le u\lt6$. In the former
 case $u=1$, $a$ is odd, and
 $\gcd(a-2,a^2-2)=\gcd(a-2,2)=1$.
@@ -163,7 +163,7 @@ This gives a smaller subexponential factor than the one in
 [Lebowitz-Lockard, Theorem 6](https://arxiv.org/abs/2507.09899).
 The power $X^{1/k}$ is the same.
 
-For a matched pair, put $r_i=\operatorname{rad}(y+i)$.
+For a matched pair, put $r_i=\mathop{\mathrm{rad}}(y+i)$.
 The least common multiple of the $r_i$ divides $y-x$.
 A prime $p$ occurs in at most $1+\lfloor(k-1)/p\rfloor$ terms.
 Consequently the product of the $r_i$ is at most $X C_k$, where
@@ -201,7 +201,7 @@ $p^\eta-1\ge\eta\log p$. Partial summation with Chebyshev's
 bound gives $\sum_{p>Z}1/(p(\log p)^2)=O((\log Z)^{-2})$.
 The logarithm of the product is therefore
 $O(\eta^{-2}/\log^2(1/\eta))$. Taking
-$\eta=(\log Y\,(\log\log Y)^2)^{-1/3}$ proves the estimate.
+$`\eta=(\log Y\,(\log\log Y)^2)^{-1/3}`$ proves the estimate.
 
 This bound controls the number of candidates below a height cutoff.
 A proof of an absolute upper bound on matching length still requires

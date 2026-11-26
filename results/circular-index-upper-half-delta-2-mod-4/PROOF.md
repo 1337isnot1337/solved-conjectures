@@ -75,8 +75,8 @@ O_g = \begin{cases}
 \{\{2g+6,\ 4g\}\} \cup \{\{3g-4i,\ 3g+4i\} : 1 \le i \le \frac{g-4}{4}\} \cup \{\{3g+6-4i,\ 3g+2+4i\} : 1 \le i \le \frac{g-4}{4}\}, & g \equiv 0 \pmod 4.
 \end{cases}
 ```
-*Odd vertices of $`I`$* ($`g`$ even, so $`2g+3`$, $`3g+1`$ are odd): $`2g+3`$, $`4g-1`$, $`2g+5`$ (matched to 1), $`\{2g+3+2j : 2 \le j \le (g-2)/2\}`$ = the odd numbers of $`[2g+7, 3g+1]`$ and $`\{4g+1-2j\}`$ = the odd numbers of $`[3g+3, 4g-3]`$. These are all odd numbers of $`I`$, each once.
-*Even vertices of $`I`$*: $`3g`$ (matched to 2) and the $`g-2`$ vertices of $`O_g`$, which must be the even numbers of $`I \setminus \{3g\}`$:
+*Odd vertices* of $`I`$ ($`g`$ even, so $`2g+3`$, $`3g+1`$ are odd): $`2g+3`$, $`4g-1`$, $`2g+5`$ (matched to 1), $`\{2g+3+2j : 2 \le j \le (g-2)/2\}`$ = the odd numbers of $`[2g+7, 3g+1]`$ and $`\{4g+1-2j\}`$ = the odd numbers of $`[3g+3, 4g-3]`$. These are all odd numbers of $`I`$, each once.
+*Even vertices* of $`I`$: $`3g`$ (matched to 2) and the $`g-2`$ vertices of $`O_g`$, which must be the even numbers of $`I \setminus \{3g\}`$:
 - $`g = 4k+2`$ ($`k \ge 2`$), so $`3g \equiv 2 \pmod 4`$. $`\{3g-4i : 1 \le i \le k-1\} = \{2g+6, 2g+10, \dots, 3g-4\}`$ (as $`3g-4(k-1) = 2g+6`$), $`\{3g+4i\} = \{3g+4, \dots, 4g-6\}`$, plus $`4g-2`$: all numbers $`\equiv 2 \pmod 4`$ in $`[2g+4, 4g]`$ except $`3g`$. $`\{3g+6-4i : 1 \le i \le k\} = \{2g+8, \dots, 3g+2\}`$ (as $`3g+6-4k = 2g+8`$), $`\{3g+2+4i\} = \{3g+6, \dots, 4g\}`$, plus $`2g+4`$: all multiples of 4 in $`[2g+4, 4g]`$.
 - $`g = 4k`$ ($`k \ge 2`$), so $`3g \equiv 0 \pmod 4`$. $`\{3g-4i : 1 \le i \le k-1\} = \{2g+4, \dots, 3g-4\}`$, $`\{3g+4i\} = \{3g+4, \dots, 4g-4\}`$, plus $`4g`$: all multiples of 4 in $`[2g+4, 4g]`$ except $`3g`$. $`\{3g+6-4i\} = \{2g+10, \dots, 3g+2\}`$, $`\{3g+2+4i\} = \{3g+6, \dots, 4g-2\}`$, plus $`2g+6`$: all numbers $`\equiv 2 \pmod 4`$ in $`[2g+4, 4g]`$.
 
@@ -115,10 +115,10 @@ The classes of colours $`0, \dots, 5`$ are $`K_0, K_{4g+1}, K_{8g+2}, K_{1}, K_{
 ```math
 \begin{aligned}
 V(E_0) &= W_0 = \{0,1\} \cup [2g+3, 4g], &
-V(E_1) &= W_1 + 2g = \{2g+1, 2g+2\} \cup [4g+3, 6g],\\
-V(E_2) &= W_0 + 4g+1 = [3, 2g] \cup \{4g+1, 4g+2\}, &
-V(E_3) &= W_1 = \{1,2\} \cup [2g+3, 4g],\\
-V(E_4) &= W_0 + 2g+1 = \{0, 2g+1, 2g+2\} \cup [4g+4, 6g], &
+V(E_1) &= W_1 + 2g = \{2g+1, 2g+2\} \cup [4g+3, 6g],
+\\ V(E_2) &= W_0 + 4g+1 = [3, 2g] \cup \{4g+1, 4g+2\}, &
+V(E_3) &= W_1 = \{1,2\} \cup [2g+3, 4g],
+\\ V(E_4) &= W_0 + 2g+1 = \{0, 2g+1, 2g+2\} \cup [4g+4, 6g], &
 V(E_5) &= W_1 + 4g+1 = [3, 2g] \cup \{4g+2, 4g+3\},
 \end{aligned}
 ```

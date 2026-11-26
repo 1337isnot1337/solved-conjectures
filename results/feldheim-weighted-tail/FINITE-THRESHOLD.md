@@ -12,7 +12,7 @@ If $m$ is a median of $\min_iX_i$, there exists $0<z\le C m$ such that
  \frac{\Pr(\sum_i\lambda_iX_i>z)}{\prod_i\Pr(X_i>z)}-1
  \ \ge\ 2^{-L}\log2 .
 ```
-The same threshold is at most $2C\operatorname E[\min_i X_i]$ when this mean is finite.
+The same threshold is at most $2C\mathop{\mathrm{E}}[\min_i X_i]$ when this mean is finite.
 
 ## Spacing lemma for the combined survival function
 
@@ -32,6 +32,6 @@ After dividing by $S(z)$, event $i$ contributes
  \prod_{k\ne i}\frac{S_k(q_{j+L})}{S_k(z)}
  \ \ge\ 2^{-L}\left(\frac{S_i(q_{j-1})}{S_i(z)}-1\right);
 ```
-the omitted survival ratio is at most one. The product of the $n$ positive ratios in the parentheses before subtracting one is exactly two. Since $a-1\ge\log a$, the sum of the parenthesized terms is at least $\log2$. This proves the claim. The mean bound follows from $\operatorname E[\min_iX_i]\ge q_1/2$.
+the omitted survival ratio is at most one. The product of the $n$ positive ratios in the parentheses before subtracting one is exactly two. Since $a-1\ge\log a$, the sum of the parenthesized terms is at least $\log2$. This proves the claim. The mean bound follows from $\mathop{\mathrm{E}}[\min_iX_i]\ge q_1/2$.
 
 The original weighted conjecture is qualitative and does not provide this finite cutoff. This proof extends the [quantile-spacing argument for identical laws](../steinerberger-feldheim-tail/LINEAR-EXISTENCE.md) and does not claim an optimal finite threshold or coefficient. Targeted searches for this exact median-of-the-minimum statement did not locate an earlier proof.

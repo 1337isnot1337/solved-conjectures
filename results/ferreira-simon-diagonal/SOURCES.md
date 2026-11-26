@@ -25,7 +25,7 @@ James's Section 2.5 also describes logarithms of Lamperti variables and their hy
 Ravshan Ashurov and Ilyoskhuja Sulaymonov, [*Monotonicity in the parameter of the Mittag-Leffler function and determining the fractional exponent of the subdiffusion equation*, arXiv:2501.01724v2](https://arxiv.org/pdf/2501.01724), revised 28 April 2025, was read directly. Theorem 3.6 proves decreasing dependence on the order for the function $`t^{\rho-1}E_{\rho,\rho}(-t^\rho)`$ only when $`\rho\in[\rho_0,1]`$ and
 
 ```math
-0<t\leq\min\left(2^{-1/\rho_0},e^{-13/6}\right).
+0\lt t\leq\min\left(2^{-1/\rho_0},e^{-13/6}\right).
 ```
 
 This is a small-time theorem and does not include $`t=1`$. Its different direction is consistent with the crossing behavior discussed in the Ferreira–Simon source. Theorem 3.5 concerns the corresponding single-parameter function on a different small-time interval. Neither theorem settles the diagonal value at minus one.

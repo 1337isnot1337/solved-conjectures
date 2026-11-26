@@ -27,7 +27,7 @@ where $`M_k`$ is the largest cardinality of an $`S_k`$-set. For $`h=1`$ one has 
 
 2. Let $`X=\Gamma/H`$ be the $`h`$ left cosets, and let $`P_g`$ be the permutation matrix of left multiplication by $`g`$ on $`X`$, acting on column vectors. Thus $`P_gP_{g'}=P_{gg'}`$. Let $`M=m^{-1}\sum_{a\in A}P_a`$. Write $`V`$ for the zero-coordinate-sum subspace of $`\mathbb C^X`$. Since $`M`$ is doubly stochastic, it preserves $`V`$ and fixes the constant vector. The diagonal entry $`M_{xx}`$ is the fraction of $`A`$ fixing $`x`$. The stabilizer of $`x`$ is a conjugate of $`H`$, so $`M_{xx}\le 1/m`$. Therefore
 ```math
-\operatorname{Tr}(M|_V)=\operatorname{Tr}(M)-1\le h/m-1.
+\mathop{\mathrm{Tr}}(M|_V)=\mathop{\mathrm{Tr}}(M)-1\le h/m-1.
 ```
 If $`\lambda_1,\ldots,\lambda_{h-1}`$ are the eigenvalues of $`M|_V`$ counted with algebraic multiplicity, then some $`\lambda`$ satisfies
 ```math

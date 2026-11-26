@@ -2,10 +2,10 @@
 
 **Claim.** There is an integer-decomposition-property (IDP) lattice polytope $P$ for which
 ```math
-  |\operatorname{int}(2P)\cap\mathbb Z^D|^2
+  |\mathop{\mathrm{int}}(2P)\cap\mathbb Z^D|^2
   <
-  |\operatorname{int}(P)\cap\mathbb Z^D|\,
-  |\operatorname{int}(3P)\cap\mathbb Z^D|.
+  |\mathop{\mathrm{int}}(P)\cap\mathbb Z^D|\,
+  |\mathop{\mathrm{int}}(3P)\cap\mathbb Z^D|.
 ```
 In particular, the answer to [Ferroni–Higashitani, Question 5.12(a), arXiv:2307.10852v4](https://arxiv.org/html/2307.10852v4#S5.SS2) is yes, since IDP implies very ample and Ehrhart reciprocity identifies these counts with the absolute negative evaluations. The ratio of the product of the first and third counts to the square of the second is unbounded in this family. By the identity immediately preceding Question 5.12, the first three absolute coefficients of the associated toric $K$-polynomial also fail log-concavity. In v3, the same question is numbered 5.11(a). [Ferroni, arXiv:2609.10513v2, §§5–6](https://arxiv.org/html/2609.10513v2#S6) gave related counterexamples for ordinary Ehrhart counts and answered the unrestricted-index part (b) for interior counts, explicitly leaving (a) unresolved there.
 
@@ -17,8 +17,8 @@ Fix a positive integer $m$, set $N=15m$, and use spatial coordinates $(x,y)\in\m
 ```
 Define a cone $C$ by $b_j\ge0$ for $0\le j\le5$ and, for each $i=1,\ldots,5$, impose the bounds
 ```math
-  0\le x_\ell\le b_0+b_i\quad\text{on $m$ coordinates},\qquad
-  0\le x_\ell\le 2b_i\quad\text{on $2m$ other coordinates}.
+  0\le x_\ell\le b_0+b_i\quad\text{on }m\text{ coordinates},\qquad
+  0\le x_\ell\le 2b_i\quad\text{on }2m\text{ other coordinates}.
 ```
 Every coordinate belongs to exactly one block. Let $R$ be its degree-one slice in the original spatial lattice $M=\mathbb Z^{N+5}$.
 
@@ -48,7 +48,7 @@ This also proves IDP after refinement. Decompose $v-rg'$ into $k-r$ old degree-o
 
 For interior points, all the same nonzero defining forms are strictly positive. For $1\le r\le5$ the least allowed value remains $r/6$. In coset zero the least allowed value is instead $1$, so subtract $6g'$ in that coset. The resulting bijections give
 ```math
-  |\operatorname{int}(kR)\cap\widetilde M|
+  |\mathop{\mathrm{int}}(kR)\cap\widetilde M|
   =\sum_{r=1}^6 E(k-r)\qquad(k\ge1).
 ```
 Consequently the first three interior counts for $P$ are $S_1,S_3,S_5$, where $S_t=\sum_{j=0}^t E(j)$. These are ordinary lattice polytopes: if desired, identify $\widetilde M$ with $\mathbb Z^{N+5}$ using the basis of the first $N+4$ standard unit vectors together with $p$.
@@ -80,7 +80,7 @@ At $j=2$ the four possible weights are $243,432,75,324$, and the weights at $j=0
   \ge
   \frac{(16/9)^m}{(20+64\cdot 2^{-m})^2}.
 ```
-The bound tends to infinity. Already at $m=11$, the denominator is less than $21^2$ and $16^{11}>21^2\,9^{11}$, so the inequality is strict. The explicit witness has dimension $170$.
+The bound tends to infinity. Already at $m=11$, the denominator is less than $21^2$ and $`16^{11}>21^2\,9^{11}`$, so the inequality is strict. The explicit witness has dimension $170$.
 
 No numerical search or unverified normality test is needed for the witness. The accompanying script evaluates the counts with exact integers.
 

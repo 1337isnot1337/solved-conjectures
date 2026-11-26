@@ -211,7 +211,7 @@ z=\frac c4=\frac1{160},
 where $`\gamma`$ is Euler's constant. The elementary constant estimates proved in §5 are
 
 ```math
-\frac{519}{100}<L<\frac{649}{125},
+\frac{519}{100}\lt L<\frac{649}{125},
 \qquad
 \sqrt{2\pi}<\frac{250663}{100000},
 \qquad
@@ -260,7 +260,7 @@ I_0'(z)\leq\frac{2w}{z(1-w)^2},
 ```
 
 ```math
-0<S(z)\leq\frac{w}{(1-w)^2},
+0\lt S(z)\leq\frac{w}{(1-w)^2},
 \qquad
 S'(z)\leq\frac{2w(1+w)}{z(1-w)^3}.                        \tag{17}
 ```
@@ -325,7 +325,7 @@ A_k=\frac{k+1}{m_{k+1}}
 therefore satisfies
 
 ```math
-\|A_k\|_{H^1_*}=1<c_{k+1}\|A_k\|_{H^4}
+\|A_k\|_{H^1_*}=1\lt c_{k+1}\|A_k\|_{H^4}
 \qquad\text{for every integer }k\geq500000,
 ```
 
@@ -346,7 +346,7 @@ E_M(q)=\frac{2q^{2M+1}}{(2M+1)(1-q^2)}.
 The positive logarithmic series gives
 
 ```math
-P_M(q)<\log\frac{1+q}{1-q}<P_M(q)+E_M(q).                 \tag{22}
+P_M(q)<\log\frac{1+q}{1-q}\lt P_M(q)+E_M(q).                 \tag{22}
 ```
 
 Take ten terms at $`q=1/3,1/9,1/31`$. The identities
@@ -374,7 +374,7 @@ H_N-\log N-\gamma
 Each summand is between $`1/[2(j+1)^2]`$ and $`1/[2j(j+1)]`$. A telescoping upper sum and an integral lower estimate give
 
 ```math
-\frac1{2(N+1)}<H_N-\log N-\gamma<\frac1{2N}.              \tag{24}
+\frac1{2(N+1)}\lt H_N-\log N-\gamma<\frac1{2N}.              \tag{24}
 ```
 
 At $`N=30`$, use the rational enclosure of $`\log30`$ from (22) and the exact finite sum $`H_{30}`$. The resulting rational inequalities are

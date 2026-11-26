@@ -12,31 +12,31 @@ proof is independent of the stronger asymptotic argument below.
 
 Set $t(-1)=0$ and $v(n)=(t(n),t(n-1))^{\mathsf T}$. As in the
 short proof, $t(n)\ne0$ for $n\ge0$ and
-$$
+```math
  v(2n+b)=A_bv(n),\qquad
  A_0=\begin{pmatrix}1&1\\0&-2\end{pmatrix},\qquad
  A_1=\begin{pmatrix}-2&0\\1&1\end{pmatrix}.
-$$
+```
 For an invertible real matrix $A$, let $F_A:S^1\to S^1$ be the
-oriented direction map $x\mapsto Ax/\|Ax\|$. Positive scalar
+oriented direction map $`x\mapsto Ax/\|Ax\|`$. Positive scalar
 multiples do not change this map. Use arc length on $S^1$.
 Writing the derivative in the unit angular coordinate,
-$$
+```math
  |F_A'(x)|=\frac{|\det A|}{\|Ax\|^2}.
  \tag{1}
-$$
+```
 This follows by taking the absolute determinant of $Ax$ and
-$Ax'$ for a unit tangent $x'$ and then dividing by $\|Ax\|^2$.
+$Ax'$ for a unit tangent $x'$ and then dividing by $`\|Ax\|^2`$.
 
 Let the bit choices be independent and equiprobable. The four
 two-bit normalized matrices are $B=A_jA_i/2$ for $i,j=0,1$,
 each with determinant one. If $x=(a,b)$ is unit and $p=ab$,
 the product of their four squared norms is
-$$
+```math
  \prod_B\|Bx\|^2
  =\frac{(5+6p)^2(17-36p+260p^2)}{256}.
  \tag{2}
-$$
+```
 Indeed, before division by $2$ in each matrix the squared
 norms are $a^2-2ab+17b^2$, $5a^2+6ab+5b^2$ twice, and
 $17a^2-2ab+b^2$; use $a^2+b^2=1$.
@@ -47,44 +47,44 @@ $-1/2,-1/78,1/2$. At $-1/2$ and $1/2$ it is $400$ and $4096$.
 At $-1/78$, use $5+6p=64/13>4$ and
 $17-36p+260p^2>17$ to get a value larger than $272$.
 
-Consequently the average of $\log \|Bx\|^2$ is uniformly
+Consequently the average of $`\log \|Bx\|^2`$ is uniformly
 positive. As there are only four matrices and the circle is
 compact, Taylor expansion at $\alpha=0$ gives some
 $0<\alpha\le1$ and $\rho<1$ such that
-$$
+```math
  \frac14\sum_B |F_B'(x)|^\alpha
  =\frac14\sum_B\|Bx\|^{-2\alpha}\le\rho
  \qquad (x\in S^1).
  \tag{3}
-$$
+```
 
-Fix an odd positive modulus $Q$. On $S^1\times(\mathbb Z/Q\mathbb Z)$,
+Fix an odd positive modulus $`Q`$. On $S^1\times(\mathbb Z/Q\mathbb Z)$,
 define the two transitions
-$$
+```math
  T_i(x,r)=(F_{A_i}(x),2r+i),\qquad
  (Pf)(x,r)=\tfrac12(f(T_0(x,r))+f(T_1(x,r))).
-$$
-Here and below the second coordinate is reduced modulo $Q$.
-Let $[f]_\alpha$ be the maximum of the $\alpha$-Hölder
-seminorms of its $Q$ restrictions to the circle. There is
-$\rho'<1$ and a constant $C$ such that
-$$
+```
+Here and below the second coordinate is reduced modulo $`Q`$.
+Let $`[f]_\alpha`$ be the maximum of the $`\alpha`$-Hölder
+seminorms of its $`Q`$ restrictions to the circle. There is
+$`\rho'<1`$ and a constant $`C`$ such that
+```math
  [P^2f]_\alpha\le \rho'[f]_\alpha+C\|f\|_\infty.
  \tag{4}
-$$
+```
 For nearby circle points $x,y$ in the same residue state, apply
-each two-bit map along the short arc. The $\alpha$th power of
+each two-bit map along the short arc. The $`\alpha`$th power of
 the arc-length ratio is bounded by the maximum of
 $|F_B'|^\alpha$ on that short arc. Uniform continuity for the
 finitely many derivatives and (3) bound the average of these
-maxima by some $\rho'<1$ when the arc is sufficiently short.
+maxima by some $`\rho'<1`$ when the arc is sufficiently short.
 The end states for a fixed word agree, so this bounds the
 difference of the function values by
-$\rho'[f]_\alpha\,\operatorname{dist}(x,y)^\alpha$.
+$`\rho'[f]_\alpha\,\mathop{\mathrm{dist}}(x,y)^\alpha`$.
 For arcs longer than that fixed threshold use
-$2\|f\|_\infty$ instead. This proves (4). Since $P$ does not
-increase $\|f\|_\infty$ and each one-step map is Lipschitz on
-the circle, (4) implies a uniform bound on $[P^n f]_\alpha$
+$`2\|f\|_\infty`$ instead. This proves (4). Since $P$ does not
+increase $`\|f\|_\infty`$ and each one-step map is Lipschitz on
+the circle, (4) implies a uniform bound on $`[P^n f]_\alpha`$
 for every fixed Hölder $f$, over all $n\ge0$.
 
 ## 2. All directions are approximated at a fixed depth
@@ -99,9 +99,9 @@ oriented circle, so $F_B$ and every positive power have dense
 orbits there.
 
 Choose $L\ge1$ so that $4^L\equiv1\bmod 3Q$; such $L$ exists
-because $Q$ is odd. Appending the word consisting of $L$ copies
+because $`Q`$ is odd. Appending the word consisting of $L$ copies
 of $01$ sends an integer $n$ to $4^Ln+(4^L-1)/3$, which preserves
-every residue modulo $Q$. Its map on directions is
+every residue modulo $`Q`$. Its map on directions is
 $H=F_B^L$, still conjugate to an irrational rotation, and its
 word length $h=2L$ is even. A word of $h$ zeros also preserves
 residue zero.
@@ -137,9 +137,9 @@ $2^{-j}$ for an even zero length $j$.
 
 Choose $J$ so that, for both possible signs and every target
 $r$, the finite sequence
-$$
+```math
  \{J_r H^j(\pm u):0\le j\le J\}
-$$
+```
 is an $\epsilon/2$-net. This is possible by density of every
 $H$-orbit and compactness. Choose a sufficiently large even
 $E$ so that for every $j\in[0,J]$ the zero word of length
@@ -164,9 +164,9 @@ from the claim. From every start there is at least one word
 of length $K$ whose end is within $\epsilon$ of a minimum
 point of $f_n$, in its residue state. That word has probability
 $2^{-K}$. Writing $M_n=\max f_n$, $m_n=\min f_n$, gives
-$$
+```math
  M_{n+K}\le M_n-2^{-K}(M_n-m_n-\eta).
-$$
+```
 Also $M_n$ decreases and $m_n$ increases. Taking limits yields
 $\lim_n(M_n-m_n)\le\eta$, hence the oscillation tends to zero.
 Thus $P^n f$ converges uniformly to a constant. Approximation
@@ -179,7 +179,7 @@ The stationary measure is symmetric under $x\mapsto-x$,
 since the transition commutes with that map and the uniform
 limit is constant; equivalently stationarity is unique by
 uniform convergence. Its residue marginal is uniform: for
-odd $Q$ each state transition $r\mapsto2r+i$ is a permutation,
+odd $`Q`$ each state transition $r\mapsto2r+i$ is a permutation,
 so uniform is stationary, and reachability in fixed depth
 gives uniqueness (or just use the asymptotic uniform residue
 count over all binary suffixes).
@@ -195,7 +195,7 @@ contradicting irrational rotation. In particular, a given
 line, which meets the circle in two points, has measure zero.
 
 For an open half-circle $U$ and a residue $r$, the indicator
-of $U\times\{r\}$ can now be sandwiched by continuous functions
+of $`U\times\{r\}`$ can now be sandwiched by continuous functions
 whose integrals differ arbitrarily little, since the boundary
 consists of two points in that residue. Thus the uniform
 transition convergence extends to that indicator, with limit
@@ -217,7 +217,7 @@ natural density $1/(2Q)$ among all indices. Thus the
 conditional density within each odd-modulus progression
 is $1/2$ for either sign, or for either direction half-circle.
 
-For a general modulus $q=2^s Q$ with $Q$ odd, write the residue
+For a general modulus $q=2^s Q$ with $`Q`$ odd, write the residue
 representative $r=2^s b+c$, $0\le c<2^s$, $0\le b<Q$. The indices
 in that progression are exactly $n=2^s a+c$ with $a\equiv b\bmod Q$.
 Appending the fixed $s$ bits of $c$ multiplies $v(a)$ by an invertible

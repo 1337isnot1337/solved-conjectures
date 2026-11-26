@@ -39,7 +39,7 @@ Thus q_n tends to x within `[x,∞)`. Right continuity, rather than left continu
 For the inverse-tail function, the finite probability law gives
 
 ```math
-S(x)=1-\operatorname{cdf}_\mu(x).
+S(x)=1-\mathop{\mathrm{cdf}}\nolimits_\mu(x).
 ```
 
 Mathlib's right continuity of the CDF proves right continuity of S. The positive-tail assumption permits inversion at every point. Since S is nonincreasing, `1/S(x) ≤ 1/S(b)` for x ≤ b. The bound is finite and nonnegative, and its constant extension is integrable against the probability measure. The dominated convergence theorem is applied to the step functions on the whole real line, with the limit equal to the indicator of `(a,b]` times the inverse tail. It therefore yields exactly the required restricted Bochner integral. No global integrability of the inverse tail is assumed or needed.

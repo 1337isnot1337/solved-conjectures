@@ -4,6 +4,62 @@
 
 Added the correction to the limiting type in §5 of Bachoc, Moustrou, Vallentin and Zimmermann. Minimizing over moving points near each deep hole selects $`E_8^3`$. The written argument and exact coefficient comparison also identify $`D_{24}`$ as the runner-up. [Proof and review](docs/research-results/leech-cold-spots-asymptotics/README.md) · [Issue #376](https://github.com/1337isnot1337/solved-conjectures/issues/376)
 
+## 2026-11-26 — Mobile general position complexity
+
+Ordinary, fixed-start, and completely mobile general position thresholds are PSPACE-complete on graphs of diameter two with many universal vertices. A mode-and-lock gadget embeds four-colouring reachability into clique coverage. [Proof](results/mobile-general-position-complexity/PROOF.md) · [Audit](results/mobile-general-position-complexity/AUDIT.md).
+
+## 2026-11-26 — Misère Domination Game
+
+Misère domination has exact winner congruences for paths and cycles. An exact heap formula solves all impartial misère 0.337 positions and rules out Liang-style algebraic periodicity for this game. [Proof](results/misere-domination-game/PROOF.md) · [Audit](results/misere-domination-game/AUDIT.md).
+
+## 2026-11-26 — Permutation digraph general position conjecture
+
+An enlarged alphabet marker set disproves the proposed exact value at every stated parameter pair. The proof also finds the right order in both parameters. [Proof](results/permutation-digraph-general-position/PROOF.md) · [Audit](results/permutation-digraph-general-position/AUDIT.md).
+
+## 2026-11-26 — General position number of oriented trees
+
+For any oriented tree, the reachability-chain partition formula gives the exact general position number. A five-state tree recurrence computes it and recovers an optimal set in linear time. [Proof](results/general-position-oriented-trees/PROOF.md) · [Audit](results/general-position-oriented-trees/AUDIT.md).
+
+## 2026-11-26 — Builder–Blocker general position complexity conjecture
+
+Both cardinality-threshold games are PSPACE-complete even at diameter two. The two reductions force the opening player to activate a universal vertex before simulating independent-set play. [Proof](results/builder-blocker-general-position-complexity/PROOF.md) · [Audit](results/builder-blocker-general-position-complexity/AUDIT.md).
+
+## 2026-11-26 — Fractional general position conjecture for square grids
+
+Proved both parity clauses of Conjecture 5.38. Linear rank potentials give exact fractional geodesic covers for every square grid. [Proof](results/fractional-general-position-square-grids/PROOF.md) · [Audit](results/fractional-general-position-square-grids/AUDIT.md).
+
+## 2026-11-26 — Erdős’s pinned-distance conjecture in general position
+
+A fixed positive improvement over one third holds for the mean number of distinct distances from a point, and hence for the maximum. This answers displays (3) and (5) of Erdős’s 1987 paper and allows any number of concyclic points. [Proof](results/erdos-general-position-pinned-distances/PROOF.md) · [Review](results/erdos-general-position-pinned-distances/REVIEW.md) · [Sources and remaining variant](results/erdos-general-position-pinned-distances/AUDIT.md).
+
+## 2026-11-26 — Cioba–Savvas shutout number conjecture
+
+Conjecture 3.2 is true. Breaker can mark one endpoint of every Maker move while preserving the Shearer region, forcing an exponential lower bound on the host degree for a free star. This also implies the weaker Conjecture 3.3. [Proof](results/cioba-savvas-shutout-number/PROOF.md) · [Audit](results/cioba-savvas-shutout-number/AUDIT.md).
+
+## 2026-11-26 — Pomerance–Sárközy’s headline arithmetic limits in Lean
+
+The formalization gives the quarter-root Gaussian law for the original
+counting function on the full sample and its square-root convergence in
+probability. [Lean scope](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md#headline-arithmetic-limits).
+
+## 2026-11-26 — Repair GitHub proof rendering
+
+Restored equations in the [Pomerance–Sárközy proof](results/pomerance-sarkozy-fluctuations/PROOF.md) and other proof and supporting pages. The Markdown checks now cover every proof filename and compare changed equations with GitHub’s own Markdown output.
+
+## 2026-11-26 — Priority and statement corrections
+
+Earlier public proofs resolve the following named targets. The ranked catalogue has been corrected.
+
+- Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture. [Prior proof](https://doi.org/10.5281/zenodo.23639859).
+- Wagner's Laguerre-operator conjecture. [Prior proof](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-351518/mathdb-351518-solution.tex).
+- Athanasiadis–Chapoton’s q-zeta reciprocity conjecture. [Prior proof](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-374960/mathdb-374960-solution.tex).
+- Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture. [Prior proof](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-374967/mathdb-374967-solution.tex).
+- Rowland–Sistos Barrón conjecture. [Prior proof](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-366795/mathdb-366795-solution.tex). [Retained supplement](docs/rank-six-power-ranks/).
+- Kovalev’s square-root Taylor-section zero-free conjecture. [Prior proof](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-369171/mathdb-369171-solution.tex). [Retained supplement](docs/kovalev-fractional-taylor-sections/).
+- González D’León–Wachs’s complete-graph specialization question. [Prior proof](https://github.com/the-omega-institute/trureturing/pull/33676). [Retained supplement](docs/weighted-complete-graph-moments/).
+
+The collection overview now identifies pending independent reviews of partial results. The line-size entry credits Kotesovec’s sharp asymptotic and the 1983 Szemerédi–Trotter bound separately. The Blázsik–Lemons transversal statement requires every edge to contain at least two vertices. The Erdős–Purdy bounds concern nontrivial pairwise balanced designs and noncollinear point sets.
+
 ## 2026-11-26 — Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
 Published the [all-degree proof](results/erz-big-descent-schur/PROOF.md) and the refinement by exact longest increasing subsequence length. The [independent review](results/erz-big-descent-schur/AUDIT.md) covers the weighted-run bijection and the positivity recurrence.
@@ -19,6 +75,10 @@ Published the [real-root classification for every book graph](docs/research-resu
 ## 2026-11-26 — A Lean counterexample to the plactic coefficient-mode conjecture
 
 Lean disproves Conjecture 7.3(d) from the insertion tableaux of actual centralizing words. For length ten the fifth and sixth binomial coefficients are 75,095 and 88,704. The asymptotic mode theorem remains in the written proof. [Theorem and receipt](results/sagan-wilson-plactic-mode/FORMALIZATION.md).
+
+## 2026-11-26 — Oriented general position spectrum nonconstancy conjecture
+
+Conjecture 4.3 is true: the endpoints of a greedy path partition give a low-orientation upper bound and can be enlarged to certify a strictly higher general position number in a second orientation. [Proof](results/oriented-general-position-spectrum-nonconstancy/PROOF.md) · [Audit](results/oriented-general-position-spectrum-nonconstancy/AUDIT.md).
 
 ## 2026-11-26 — The lower oriented general position NP-hardness conjecture
 
@@ -66,7 +126,7 @@ Published the complete research records from eleven open problems in the [partia
 
 ## 2026-11-26 — Asgarli–Ghioca–Yip blocking-pencil problem
 
-The minimum number of vertical translates of a fixed monomial graph that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
+The minimum number of vertical translates of a monomial graph of fixed degree at least two that meet every line has logarithmic order over all finite fields. This gives the previously open order of growth in the permutation regime. The construction also gives an exact minimum for Frobenius powers and a matching order for arbitrary reflexive components of bounded degree in sufficiently large characteristic. [Proof](results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Sources and independent review](results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
 
 Lean verifies the logarithmic upper bound, the regular-seed count and the number of lines missed by a single graph. The lower bound for growing families remains conditional on a uniform estimate for Frobenius-compatible root orderings. [Lean scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
 
@@ -606,21 +666,21 @@ and the exact weighted linear response for every finite alphabet.
 Lean verifies the boundary color formulas, the printed three-color
 example, strict coefficient log-concavity across all positive color
 counts, and the complete real-root multiset.
-[Scope and receipts](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipts](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Verify the actual Gamma expectation and real-zero count
 
 Lean identifies the moments with an actual shifted sum of independent
 Gamma laws and checks the complete-graph real-zero theorem, including
 the simple-root bracket in odd degree.
-[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipt](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Verify positive Laguerre roots and strict coefficient log-concavity
 
 Lean verifies all Laguerre roots as distinct and positive, removes the
 formal moment factorization input, and proves that the signed rank
 coefficients are strictly log-concave for at least two equal colors.
-[Scope and receipts](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipts](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Verify the literal complete-graph Laguerre formula
 
@@ -628,27 +688,27 @@ Lean proves the weighted labeled exponential formula and formal
 Lagrange inversion, and connects the actual recursive Möbius
 polynomial to the exact Laguerre formula for all nonempty complete
 graphs with at least two equal variables.
-[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipt](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Verify the finite one-block Möbius recurrence by size
 
 Lean transports the literal weighted lower intervals to canonical
 vertex sets and verifies the exact finite recurrence and characteristic
 sum in terms of their block sizes.
-[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipt](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Factor the literal weighted Möbius values over blocks
 
 Lean constructs the actual lower interval as a product of its labeled
 block intervals and proves the ordinary-fibre Möbius sum factors.
-[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipt](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Check literal one-block weighted Möbius cancellation
 
 Lean counts actual one-block extensions and groups the resulting Möbius
 cancellation by ordinary partitions. This checks a finite recurrence step,
 not the remaining EGF/Lagrange bridge.
-[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipt](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Bound the Lassalle finite-row checks in the aggregate build
 
@@ -668,14 +728,14 @@ bridge and classical Bessel product data.
 Lean checks the finite weighted bond order, rank and recursive Möbius
 values. The literal polynomial reduces to the verified Laguerre
 expression through the explicit EGF/Lagrange input.
-[Scope and receipts](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipts](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Verify the complete-graph Laguerre formal-series calculation
 
 Lean checks the actual equal-variable homogeneous coefficients and the
 formal Laguerre and Gamma moment identities. This checkpoint keeps the
 weighted bond-poset bridge and the root and probability inputs separate.
-[Scope and receipt](results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md).
+[Scope and receipt](docs/weighted-complete-graph-moments/FORMALIZATION.md).
 
 ## 2026-11-25 — Verify the Lassalle approximation estimate in Lean
 
@@ -916,7 +976,7 @@ Lean checks the exact first-term correction, a uniform exponential tail bound, t
 
 ## 2026-11-25 — Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
-Published the checked Stern-polynomial recurrence and conditional continued-fraction reduction; added unconditional nonvanishing on the positive real axis. The full complex half-plane proof remains partially formalized. [Lean scope](results/stern-half-plane/FORMALIZATION.md).
+Published the checked Stern-polynomial recurrence and conditional continued-fraction reduction; added unconditional nonvanishing on the positive real axis. The full complex half-plane proof remains partially formalized. [Lean scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/FORMALIZATION.md).
 
 ## 2026-11-25 — Nuttall's conjecture
 
@@ -952,7 +1012,7 @@ Completed Lean verification of the original Conjecture 3.6 counterexample, inclu
 
 ## 2026-11-25 — Wagner's Laguerre-operator conjecture
 
-Completed Lean verification of the original Conjecture 4.3 counterexample. Actual polynomial approximants establish membership of the input, and the first Laguerre transform fails the eventual sign requirement. The old failed draft has been superseded by an exact source build, axiom audit and stock replay. [Scope](results/wagner-laguerre-operator/FORMALIZATION.md).
+Completed Lean verification of the original Conjecture 4.3 counterexample. Actual polynomial approximants establish membership of the input, and the first Laguerre transform fails the eventual sign requirement. The old failed draft has been superseded by an exact source build, axiom audit and stock replay. [Scope](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/FORMALIZATION.md).
 
 ## Benfield–Lippard’s stable Waring-gap symmetry conjecture
 
@@ -996,7 +1056,7 @@ On 24 November 2026 the [complete original Conjecture 5.8 disproof](results/gawr
 
 ## Kovalev’s square-root Taylor-section zero-free conjecture
 
-On 24 November 2026 the [complete Lean formalization](results/kovalev-zero-free/FORMALIZATION.md) proved the original square-root conjecture for every section degree and every point of the closed unit disk, with the stronger theorem for every positive geometric-polynomial length. The coefficients are identified with the actual iterated derivatives. Twenty-one strict source builds, the all-owned/private axiom audit and exact stock-kernel replay passed and received independent evidence and statement reviews. Leonid V. Kovalev is the original proposer; the recorded proof credit to Cinna Davis and the bounded priority qualification are preserved. Fractional-exponent, arbitrary-segment and adjacent trigonometric supplements remain unformalized. This updates one existing entry; aggregate verification and public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+On 24 November 2026 the [complete Lean formalization](docs/kovalev-fractional-taylor-sections/FORMALIZATION.md) proved the original square-root conjecture for every section degree and every point of the closed unit disk, with the stronger theorem for every positive geometric-polynomial length. The coefficients are identified with the actual iterated derivatives. Twenty-one strict source builds, the all-owned/private axiom audit and exact stock-kernel replay passed and received independent evidence and statement reviews. Leonid V. Kovalev is the original proposer; the recorded proof credit to Cinna Davis and the bounded priority qualification are preserved. Fractional-exponent, arbitrary-segment and adjacent trigonometric supplements remain unformalized. This updates one existing entry; aggregate verification and public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
 ## 2026-11-24: Formalize the Thue–Morse valuation disproof
 
@@ -1040,7 +1100,7 @@ On 24 November 2026 the existing entry received a complete Lean proof of the ori
 
 ## Rowland–Sistos Barrón conjecture
 
-On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
+On 24 November 2026 the [complete Lean formalization](docs/rank-six-power-ranks/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
 
 ## Johnson's conjecture
 
@@ -1113,19 +1173,19 @@ Four later proof packages targeted conjectures already present in the collection
 - [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/): Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability.
 - [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/): Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss.
 - [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/): Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions.
-- [Kovalev’s square-root Taylor-section zero-free conjecture](results/kovalev-zero-free/): The beta–gamma diameter-disk comparison proves zero-freeness in the closed unit disk for every section, also for powers between zero and one-half.
-- [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/): Proves that all zeros of all Stern polynomials lie strictly to the left of Re z = 1. Analytic estimates and an exact compact-region certificate cover all binary run lengths.
+- [Kovalev’s square-root Taylor-section zero-free conjecture](docs/kovalev-fractional-taylor-sections/): The beta–gamma diameter-disk comparison proves zero-freeness in the closed unit disk for every section, also for powers between zero and one-half.
+- [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](https://github.com/1337isnot1337/solved-conjectures/tree/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/): Proves that all zeros of all Stern polynomials lie strictly to the left of Re z = 1. Analytic estimates and an exact compact-region certificate cover all binary run lengths.
 - [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/): Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions.
 - [Dukes’s revstack interlacing conjecture](results/dukes-revstack/): Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement.
-- [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/): Gives an exact Laguerre product and Gamma-moment formula, strict ordinary coefficient log-concavity, and the real-zero count for equal variables.
+- [González D’León–Wachs’s complete-graph specialization question](docs/weighted-complete-graph-moments/): Gives an exact Laguerre product and Gamma-moment formula, strict ordinary coefficient log-concavity, and the real-zero count for equal variables.
 - [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/): Answers the small Wilf-threshold gap question negatively and characterizes exact normalized semimodule thresholds through multiplicity and the gap poset.
 - [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/): Proves strict log-concavity in every nontrivial row of the first-value refinement of the Lassalle sequence.
 - [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/): Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length.
 - [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/): Disproves the proposed middle mode and determines the asymptotic position of every mode in both natural coefficient rows.
 - [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/): Proves all-dimensional log-concavity for the unrestricted east/north arbitrary-step path counts.
 - [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/): A lattice-preserving transfer gives the same Ehrhart series for opposite polar preorder polytopes, with convex mutations and a finite numerator model.
-- [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/): Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation.
-- [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/): Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization.
+- [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](https://github.com/1337isnot1337/solved-conjectures/tree/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/athanasiadis-chapoton-q-zeta/): Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation.
+- [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](https://github.com/1337isnot1337/solved-conjectures/tree/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/athanasiadis-chapoton-transmuted-m/): Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization.
 - Priority correction: Roy's square-partition sign table was already resolved by [Myeongjin Kang, MathDB:2611.00121v2](https://mathdb.com/abs/2611.00121v2), publicly posted before the independent injection argument. The latter and its different higher-power extension are [archived on the research branch](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/roy-square-partitions/INDEPENDENT-ARGUMENT.md), not counted in the main catalogue.
 - [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/): Refutes general 2-adic block constancy at exponent 17 and gives counterexamples for every k≥11.
 - [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/): Uses a repeated-digit counting remainder and Cobham’s theorem for substitutions to exclude regularity in every integer base.
@@ -1202,7 +1262,7 @@ The original independent mathematical reviews and bounded prior-art audits are p
 
 ## 2026-11-24: Publish four previously reviewed research results
 
-Promoted [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/), [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/), [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/), [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/). The written arguments and prior independent reviews were checked against the original statements. The Cardon rational discriminant and Rowland exact replay through M=100 passed. The Wagner statement is pinned to the author preprint; the Rowland interpretation of pseudo-polynomial is disclosed. No Lean verification or exclusive priority is claimed. Original research records are preserved.
+Promoted [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/), [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/), [Wagner's Laguerre-operator conjecture](https://github.com/1337isnot1337/solved-conjectures/tree/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/), [Rowland–Sistos Barrón conjecture](docs/rank-six-power-ranks/). The written arguments and prior independent reviews were checked against the original statements. The Cardon rational discriminant and Rowland exact replay through M=100 passed. The Wagner statement is pinned to the author preprint; the Rowland interpretation of pseudo-polynomial is disclosed. No Lean verification or exclusive priority is claimed. Original research records are preserved.
 
 ## 2026-11-24: Publish two independently reviewed counterexample packages
 
