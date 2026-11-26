@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-26 — Verify critical spine weights and conditional limit steps
+
+Lean checks normalization of the offspring and child-index weights,
+the exact factorization on finite spine records, and the conditional
+miss-product and finite-instance transfer arguments.
+[Scope and receipts](results/separable-derangements-limit/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the bounded array law for Pomerance–Sárközy’s process
 
 Lean verifies the weak Gaussian limit for independently sampled centered

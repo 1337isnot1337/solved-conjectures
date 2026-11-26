@@ -35,12 +35,27 @@ identities used to study diagonals of the finite permutations.
   the exact bijection with terminal trees of the remaining size.
   This gives the numerator of the record probability.
 
-The tree-to-avoider bijection, asymptotic normalization, and
-limiting hit probabilities remain outside this checked scope.
+- [Critical weights](../../lean/Conjectures/SeparableDerangementCriticalWeights.lean).
+  The critical offspring weights sum to one and have mean one.
+  Lean verifies their factorization on the actual ordered trees and
+  proves that the Boltzmann weight of a specified spine prefix is
+  the singularity raised to its total side leaf count.
+- [Spine limit steps](../../lean/Conjectures/SeparableDerangementSpineLimit.lean).
+  If the conditional hit probabilities have divergent partial sums,
+  the finite miss products tend to zero. Atomwise convergence of
+  record masses transfers high-probability hit events to the finite
+  instance whenever each finite subset of hit records contributes
+  its mass to that event.
 
-The pinned Lean 4.35.0 gate rebuilt the four-module closure with warnings
+The tree-to-avoider bijection, normalization over all tree shapes,
+asymptotic record convergence, and almost-sure divergence of the
+conditional hit probabilities remain outside this checked scope.
+
+The pinned Lean 4.35.0 gates rebuilt the scoped modules with warnings
 as errors, audited every declaration owned by the closure, and
 independently replayed their objects with the stock kernel.
 [Diagonal-count receipt](verification/diagonal-counts/receipt.json) ·
 [Spine-record receipt](verification/spine-records/receipt.json) ·
+[Critical-weight receipt](verification/critical-weights/receipt.json) ·
+[Spine-limit receipt](verification/spine-limit/receipt.json) ·
 [Tracking issue #732](https://github.com/1337isnot1337/solved-conjectures/issues/732).
