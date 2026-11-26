@@ -26,3 +26,5 @@ The [prime-plane obstruction](prime-planes.md) rules out every restriction of a 
 Using Lewko's 2026 incidence theorem, the same [prime-plane analysis](prime-planes.md) gives the sharp order $\Theta(v^{3/4})$ for the best configuration in this entire model, including when the prime varies with $v$. The matching upper bound comes from the classical plane-restriction construction.
 
 The [field-representability obstruction](field-obstruction.md) gives an absolute power gap $M\gg v^{1/2+\epsilon}$ over **all fields**, even when the characteristic and extension degree vary. Its [inverse lemma](small-projections.md) recovers a dense finite subplane from many small coordinate projections. External points contribute at most one incidence each to the extensions of that subplane's lines. The general abstract-design question is still open.
+
+The [arithmetic regularity obstruction](regularity.md) gives a $v^{3/4-o(1)}$ lower bound for every point-transitive design and quantifies the replication irregularity required of a general square-root construction.
