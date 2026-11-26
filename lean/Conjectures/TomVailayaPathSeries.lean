@@ -1,5 +1,7 @@
 import Conjectures.TomVailayaColorTrace
 import Mathlib.Algebra.Polynomial.BigOperators
+import Mathlib.Algebra.Polynomial.Eval.Degree
+import Mathlib.Algebra.Ring.GeomSum
 
 /-! The weighted path matrix acts on the color basis through a polynomial identity. -/
 
@@ -132,6 +134,130 @@ theorem path_colorSeries_identity (x : Fin N → R) (q : R) (b : Fin N) :
   have hsuffix := cutoff_suffix x q b
   have hadjacent := cutoff_adjacent x q b
   linear_combination -C (x b) * C q * hprefix - C (x b) * hsuffix + hadjacent
+
+
+/-- The elementary symmetric value given by the coefficient of the full product. -/
+def elementaryValue (x : Fin N → R) (j : ℕ) : R :=
+  (∏ c : Fin N, (1 + X * C (x c))).coeff j
+
+/-- The column indexed by `k + 1` in the paper, written with a zero-based index. -/
+def basisColumn (x : Fin N → R) (q : R) (k : ℕ) (b : Fin N) : R :=
+  (colorSeries x q b).coeff k
+
+private theorem cutoff_zero_coeff (x : Fin N → R) (q : R) (j : ℕ) :
+    (cutoffProduct x q 0).coeff j = elementaryValue x j := by
+  simp [cutoffProduct, cutoffFactor, elementaryValue]
+
+private theorem cutoff_full_coeff (x : Fin N → R) (q : R) (j : ℕ) :
+    (cutoffProduct x q N).coeff j = elementaryValue x j * q ^ j := by
+  have hmap : cutoffProduct x q N = (cutoffProduct x q 0).comp (C q * X) := by
+    simp only [cutoffProduct, Polynomial.prod_comp]
+    apply Finset.prod_congr rfl
+    intro c _
+    simp only [cutoffFactor, ite_eq_left c.isLt, ite_eq_right (Nat.not_lt_zero _), mul_one,
+      Polynomial.add_comp, Polynomial.one_comp, Polynomial.mul_comp, Polynomial.X_comp,
+      Polynomial.C_comp]
+    ring
+  rw [hmap, Polynomial.comp_C_mul_X_coeff, cutoff_zero_coeff]
+
+private theorem pathEdge_polynomial (x : Fin N → R) (q : R) (b a : Fin N) :
+    colorMatrix (C ∘ x) (C q) pathEdge b a = C (colorMatrix x q pathEdge b a) := by
+  simp only [colorMatrix_pathEdge, Function.comp_apply, map_mul, arcFactor]
+  split <;> simp_all
+  split <;> simp_all
+
+private theorem pathSeries_coeff (x : Fin N → R) (q : R) (b : Fin N) (k : ℕ) :
+    ((colorMatrix (C ∘ x) (C q) pathEdge *ᵥ colorSeries x q) b).coeff k =
+      (colorMatrix x q pathEdge *ᵥ basisColumn x q k) b := by
+  simp only [Matrix.mulVec, dotProduct, Polynomial.finsetSum_coeff, pathEdge_polynomial,
+    Polynomial.coeff_C_mul, basisColumn]
+
+theorem basisColumn_zero (x : Fin N → R) (q : R) : basisColumn x q 0 = x := by
+  funext b
+  rw [basisColumn, colorSeries, Polynomial.coeff_C_mul, Polynomial.coeff_zero_eq_eval_zero,
+    Polynomial.eval_prod]
+  rw [Finset.prod_eq_one, mul_one]
+  intro c _
+  by_cases hc : c.val < b.val <;> simp [cutoffFactor, hc]
+
+/-- The exact weighted path transfer sends the `(k+1)`-st color column to
+the next column plus the elementary symmetric correction in the first column. -/
+theorem path_basisColumn [IsDomain R] (x : Fin N → R) (q : R) (hq : q ≠ 1) (k : ℕ) :
+    colorMatrix x q pathEdge *ᵥ basisColumn x q k =
+      basisColumn x q (k + 1) +
+        (q * (∑ i ∈ Finset.range k, q ^ i) * elementaryValue x (k + 1)) • x := by
+  funext b
+  have h := congrArg (fun p : R[X] => p.coeff (k + 1)) (path_colorSeries_identity x q b)
+  rw [← map_one C, ← map_sub C] at h
+  simp only [Polynomial.coeff_C_mul, Polynomial.coeff_sub, Polynomial.coeff_X_mul,
+    pathSeries_coeff, cutoff_full_coeff, cutoff_zero_coeff] at h
+  change (q - 1) * ((colorMatrix x q pathEdge *ᵥ basisColumn x q k) b -
+    basisColumn x q (k + 1) b) =
+    x b * (elementaryValue x (k + 1) * q ^ (k + 1) - q * elementaryValue x (k + 1)) at h
+  have hgeom := mul_geom_sum q k
+  rw [pow_succ] at h
+  apply mul_left_cancel₀ (sub_ne_zero.mpr hq)
+  simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul]
+  linear_combination h - (x b * q * elementaryValue x (k + 1)) * hgeom
+
+
+private theorem degree_cutoffFactors (x : Fin N → R) (q : R) (k : ℕ) (s : Finset (Fin N)) :
+    (∏ c ∈ s, cutoffFactor x q k c).natDegree ≤ s.card := by
+  refine (Polynomial.natDegree_prod_le _ _).trans ?_
+  calc
+    _ ≤ ∑ _ ∈ s, 1 := by
+      apply Finset.sum_le_sum
+      intro c _
+      unfold cutoffFactor
+      rw [Polynomial.natDegree_one_add]
+      have hq : (if c.val < k then C q else (1 : R[X])).natDegree ≤ 0 := by
+        split <;> simp
+      exact (Polynomial.natDegree_mul_le_of_le
+        (Polynomial.natDegree_mul_le_of_le Polynomial.natDegree_X_le hq)
+        (show (C (x c)).natDegree ≤ 0 by simp)).trans (by omega)
+    _ = _ := by simp
+
+/-- Columns past the number of available colors vanish in the finite color basis. -/
+theorem basisColumn_eq_zero (x : Fin N → R) (q : R) (k : ℕ) (hk : N ≤ k) :
+    basisColumn x q k = 0 := by
+  funext b
+  change (colorSeries x q b).coeff k = 0
+  apply Polynomial.coeff_eq_zero_of_natDegree_lt
+  unfold colorSeries
+  have hcard : (Finset.univ.erase b).card = N - 1 := by simp
+  have hdeg := Polynomial.natDegree_mul_le_of_le (show (C (x b)).natDegree ≤ 0 by simp)
+    (degree_cutoffFactors x q b.val (Finset.univ.erase b))
+  rw [hcard, zero_add] at hdeg
+  have hb := b.isLt
+  omega
+
+/-- Elementary coefficients above the number of available colors vanish. -/
+theorem elementaryValue_eq_zero (x : Fin N → R) (j : ℕ) (hj : N < j) :
+    elementaryValue x j = 0 := by
+  rw [← cutoff_zero_coeff x 1]
+  apply Polynomial.coeff_eq_zero_of_natDegree_lt
+  change (∏ c : Fin N, cutoffFactor x 1 0 c).natDegree < j
+  have hdeg := degree_cutoffFactors x 1 0 Finset.univ
+  rw [Finset.card_univ, Fintype.card_fin] at hdeg
+  exact hdeg.trans_lt hj
+
+
+/-- Summing the color weights in the `(k+1)`-st column gives the
+source (q)-integer times the corresponding elementary symmetric value. -/
+theorem sum_basisColumn [IsDomain R] (x : Fin N → R) (q : R) (hq : q ≠ 1) (k : ℕ) :
+    (∑ b : Fin N, basisColumn x q k b) =
+      (∑ i ∈ Finset.range (k + 1), q ^ i) * elementaryValue x (k + 1) := by
+  have hfull : Finset.univ.filter (fun c : Fin N => c.val < N) = Finset.univ :=
+    Finset.filter_true_of_mem (fun c _ => c.isLt)
+  have hpoly := cutoff_prefix x q N le_rfl
+  rw [hfull, mul_assoc, ← map_one C, ← map_sub C] at hpoly
+  have h := congrArg (fun p : R[X] => p.coeff (k + 1)) hpoly
+  simp only [Polynomial.coeff_sub, Polynomial.coeff_C_mul, Polynomial.coeff_X_mul,
+    Polynomial.finsetSum_coeff, cutoff_full_coeff, cutoff_zero_coeff] at h
+  have hgeom := mul_geom_sum q (k + 1)
+  apply mul_left_cancel₀ (sub_ne_zero.mpr hq)
+  change (q - 1) * (∑ b : Fin N, (colorSeries x q b).coeff k) = _
+  linear_combination -h - elementaryValue x (k + 1) * hgeom
 
 end
 
