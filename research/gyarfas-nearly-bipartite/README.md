@@ -7,3 +7,5 @@ The Erdős–Hajnal question with a general additive independent-set deficit was
 The [projective reduction](core.md) retains the parities of paths in an actual subgraph of a hypothetical counterexample. The strong condition on each individual branch path prevents replacing it without proof by a statement about signs of cycles alone. The five-vertex bound remains open here.
 
 The [finite obstruction theorem](finite.md) bounds a counterexample to the five-vertex conjecture, if one exists, by 330 vertices. More generally it gives a quadratic bound for every transversal threshold at least six. The argument lifts a minor-minimal projective embedding into an actual subgraph before shortening paths.
+
+The [Möbius grid theorem](grids.md) proves the conjecture for arbitrary subdivisions of a rectangular Möbius grid, the family from the original sharp example. A short certificate covers every parity switching on its six-by-six subgrid.
