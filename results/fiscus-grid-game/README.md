@@ -1,5 +1,7 @@
 # Fiscus–Hurlbert–Myzelev–Pence grid conjecture
 
+**Lean status:** full. Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Theorems and receipt](FORMALIZATION.md).
+
 **False.** In the normal-play dominating set game of Fiscus, Hurlbert, Myzelev and Pence, Player 1 wins on the 14-vertex ladder $P_2\square P_7$ by opening in the second column. This refutes their [Conjecture 24 in arXiv:2504.03448v2](https://arxiv.org/html/2504.03448v2#S5), which predicts a Player 2 win on every even rectangular grid with both sides greater than one.
 
 The proof gives Player 1’s responses and reduces the remaining play to an endgame with two disjoint closed neighborhoods. It uses the authors’ rule that any unchosen vertex can be picked, even if already dominated.
@@ -15,4 +17,4 @@ python3 verify_strategy.py
 python3 check_minimax.py
 ```
 
-The first script checks the written strategy; the second computes the game values independently. No Lean verification or external peer review is claimed.
+The first script checks the written strategy; the second computes the game values independently. The [formal proof](FORMALIZATION.md) checks the minimax equations with the stock Lean kernel.

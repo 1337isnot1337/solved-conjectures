@@ -8,6 +8,8 @@ Run `python3 results/nathanson-sidon-systems/verify.py` to enumerate outputs in 
 
 Run `python3 results/fiscus-grid-game/verify_strategy.py` and `python3 results/fiscus-grid-game/check_minimax.py`. The first check replays the published response table; the other independently computes all 16,384 position values. [Proof](../results/fiscus-grid-game/PROOF.md) · [Scope and audit](../results/fiscus-grid-game/AUDIT.md). No Lean proof is claimed.
 
+Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Theorems and receipt](../results/fiscus-grid-game/FORMALIZATION.md).
+
 ## Erdős–Gyárfás point-degree spectrum conjecture
 
 Run `python3 results/erdos-gyarfas-point-degree-spectrum/verify.py` to generate all 8,778 labelled nontrivial linear spaces on three through seven points and reconstruct their degrees from the lines. The checker also tests the central two-set inequality on 10,315 selections. A separate researcher checked every step of the all-order proof and independently tested 50,926 selections. [Proof](../results/erdos-gyarfas-point-degree-spectrum/PROOF.md) · [Review and search record](../results/erdos-gyarfas-point-degree-spectrum/AUDIT.md).
