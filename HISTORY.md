@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Mobile general position complexity
+
+Ordinary, fixed-start, and completely mobile general position thresholds are PSPACE-complete on graphs of diameter two with many universal vertices. A mode-and-lock gadget embeds four-colouring reachability into clique coverage. [Proof](results/mobile-general-position-complexity/PROOF.md) · [Audit](results/mobile-general-position-complexity/AUDIT.md).
+
 ## 2026-11-26 — Permutation digraph general position conjecture
 
 An enlarged alphabet marker set disproves the proposed exact value at every stated parameter pair. The proof also finds the right order in both parameters. [Proof](results/permutation-digraph-general-position/PROOF.md) · [Audit](results/permutation-digraph-general-position/AUDIT.md).
