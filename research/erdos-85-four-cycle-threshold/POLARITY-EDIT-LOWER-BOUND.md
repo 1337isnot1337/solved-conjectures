@@ -53,3 +53,11 @@ We have defined a self-map of the finite set of eligible lines by $L\mapsto\ell_
 ## Scope
 
 The theorem applies to every labeling of a hypothetical A-REG candidate. It establishes separation from a specific dense algebraic construction, not a complete classification of asymptotically dense $C_4$-free graphs. No solution of [Erdős #85](https://www.erdosproblems.com/85) is claimed.
+
+## Transfer to arbitrary even orthogonal polarities
+
+The proof only uses affine incidence and the symmetric line labels, so it also applies to the affine truncation of an **arbitrary** orthogonal polarity of an even-order projective plane (including non-Desarguesian planes), when the deleted line at infinity is the polar of an absolute point $p$.
+
+For completeness, the $q+1$ absolute points are collinear in this situation. Every line contains an absolute point: a nonabsolute point $w$ has the involution $x\mapsto x^\perp\cap w^\perp$ on its polar line of odd size $q+1$, with absolute fixed points; the polar line of an absolute point contains that point. Since there are exactly $q+1$ absolute points by orthogonality, a line containing two of them cannot have any point $y$ outside their set: the other $q$ lines through $y$ would need distinct absolute points outside the line, but only $q-1$ remain. Thus the absolute points form one line. It is not the polar $\ell_\infty=p^\perp$: otherwise any other absolute point $p'$ on it would have its own polar containing both $p,p'$ and hence equal to $\ell_\infty$, contradicting injectivity.
+
+Delete all points of $\ell_\infty$. Its pole is $p\in\ell_\infty$, and for the other infinity points their polar lines are exactly the other lines through $p$. Hence the $q^2$ affine points label precisely the affine lines outside the omitted parallel class (the direction corresponding to $p$). Point-line adjacency is symmetric by polarity, and the affine absolute points are exactly the $q$ points of the absolute line, in that omitted class. These are exactly the properties used throughout the proof. Consequently an $o(q^{3/2})$ deletion-distance stability theorem to **any such truncation** would imply the nonexistence of the regular candidates for large even $q$; the present note does not prove that stability hypothesis.
