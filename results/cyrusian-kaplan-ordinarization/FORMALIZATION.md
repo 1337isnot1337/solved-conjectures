@@ -1,4 +1,4 @@
-# Lean verification of the ordinarization encoding
+# Lean verification of ordinarization
 
 ## Exact scope
 
@@ -21,7 +21,7 @@ checks the exact binomial sum (3) for the baseline pairs in §2.
 
 The encoding and tree formulation are credited to Sogol Cyrusian, Nathan
 Kaplan and Maria Bras-Amorós as in the [primary paper](https://doi.org/10.1080/00927872.2026.2615092).
-The exact all-genus question is Remark 3.7. This Lean checkpoint verifies the
+The exact all-genus question is Remark 3.7. The first Lean checkpoint verifies the
 encoding and scaling, not the stratification into relative interiors,
 Ehrhart–Macdonald reciprocity, quasipolynomial degree, or eventual strict
 monotonicity. It does not add a new result row.
@@ -33,3 +33,24 @@ an audit of all 229 owned declarations (68 private), 12
 required endpoints and the pinned stock per-module kernel replay. Only
 the standard axioms `propext`, `Classical.choice` and `Quot.sound` are allowed.
 [Scoped receipt](verification/encoding/receipt.json).
+
+## Exact growth and baseline comparison
+
+The [second checkpoint](../../lean/Conjectures/CyrusianKaplanGrowthCheckpoint.lean)
+verifies the comparison in §2 away from the explicit exceptional equality
+hyperplanes, and proves that a doubling equality in an admissible encoding
+forces a low member equal to the genus. It formalizes both Pascal increments
+for the baseline, including the even-genus exception at index one, and gives
+explicit positive constants in the baseline's degree-`2r` count lower bound
+and degree-`2r-1` increment lower bound. A directly verified full-dimensional
+sub-box of admissible encodings also gives a lower bound of order `g^(2r)`
+for the **actual** ordinarization count for every `g ≥ 32r`, `r ≥ 1`.
+These statements alone do not prove the quasipolynomial assertion.
+
+The entire 17-module closure passed strict Lean compilation,
+the all-owned audit (321 declarations, 240 theorems,
+133 private, 9 named endpoints) and
+the per-module stock kernel replay. [Growth receipt](verification/growth/receipt.json).
+The Ehrhart stratum counts and common leading correction coefficient remain
+to be verified. The exact degree and eventual strict monotonicity of the
+actual count are not claimed as Lean results.
