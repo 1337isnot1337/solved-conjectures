@@ -18,6 +18,8 @@ jobs:
         run: |
           python3 results/alexandersson-graphical-dist/check.py
           python3 results/alexandersson-graphical-dist/check_unions.py
+      - name: Check both Builder–Blocker reductions by exact metric minimax
+        run: python3 results/builder-blocker-general-position-complexity/verify.py
       - name: Check exact fractional square-grid cover certificates
         run: python3 results/fractional-general-position-square-grids/verify.py
       - name: Check pinned-distance multiplicities and diameter neighbors
