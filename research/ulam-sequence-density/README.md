@@ -20,6 +20,10 @@ estimate, finite measurements and counterexamples to a one-sided argument.
 The [sumset argument](sumset-doubling.md) characterizes positive upper
 density by bounded additive doubling along a subsequence and gives a
 necessary condition for zero density in terms of multiply represented sums.
+At [record-low scales](record-lows.md), a bounded ratio of multiply
+represented integers to Ulam terms would give positive lower density.
+The exact count through 16,777,216 rules out the proposed constant 10
+at integer records.
 
 ## Uniform upper bound
 
