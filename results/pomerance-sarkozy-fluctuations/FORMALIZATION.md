@@ -124,3 +124,16 @@ to the stronger theorem in §4, not the limiting variance of the
 specific arithmetic statistic or its distribution.
 
 [Bernoulli-array Fourier replay](verification/bernoulli-array-fourier/receipt.json)
+
+## Shifted tail and positive-part limit
+
+For the [exceedance-process supplement](PROCESS.md), Lean verifies the
+exact integer diagonal-overlap sum as a shifted positive difference
+of two independent atom indices. It also verifies a measure-level
+limit for moving positive-part expectations under weak convergence
+and an eventual uniform second-moment bound. These are supporting
+identities for the covariance kernel. They do not yet certify
+convergence of the arithmetic process, tightness, or the Brownian
+corollary.
+
+[Shifted tail and positive-part replay](verification/shifted-tail-tools/receipt.json)

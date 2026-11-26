@@ -1,0 +1,158 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-25T23:57:41.578129+00:00",
+  "finished_at": "2026-11-26T00:02:31.408174+00:00",
+  "root": "Conjectures.PomeranceSarkozyProcessKernelTools",
+  "project_modules": [
+    "Conjectures.PomeranceSarkozyProcessKernelTools",
+    "Conjectures.PomeranceSarkozyShiftedTailCross",
+    "Conjectures.PomeranceSarkozyTailCross",
+    "Conjectures.PomeranceSarkozyWeakAbsoluteMoment",
+    "Conjectures.PomeranceSarkozyWeakPositivePart"
+  ],
+  "required_endpoints": [
+    "PomeranceSarkozy.shifted_tail_cross_tsum",
+    "PomeranceSarkozy.weak_absolute_moment_tendsto",
+    "PomeranceSarkozy.shiftedPositivePart",
+    "PomeranceSarkozy.weak_shiftedPositivePart_tendsto",
+    "PomeranceSarkozy.shiftedPositivePart_shift_lipschitz",
+    "PomeranceSarkozy.shiftedPositivePart_integral_lipschitz",
+    "PomeranceSarkozy.weak_movingPositivePart_tendsto"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/PomeranceSarkozyProcessKernelTools.lean": "8ae3645026a23e18fbe596dca2768a92a57f2719c9b129cae3fb3b0da038649f",
+    "lean/Conjectures/PomeranceSarkozyShiftedTailCross.lean": "7e33f48a97cb3238b4acdd2e262995b9aa6e186bbbea3513442a1554837afa84",
+    "lean/Conjectures/PomeranceSarkozyTailCross.lean": "f31b46c25385c100860c9018b1d654f63c01b6a1cd4203bf02be0367e2b7db48",
+    "lean/Conjectures/PomeranceSarkozyWeakAbsoluteMoment.lean": "020febfd6794dba436702cc613ecf72bf2d166fb41bd029adce71e92d2399716",
+    "lean/Conjectures/PomeranceSarkozyWeakPositivePart.lean": "216e2c4fc7b09b257c1d56e480fdd5c6c9d819bedf7166a540a408a97ddd0ebc"
+  },
+  "input_sha256": {
+    "lean/Conjectures/PomeranceSarkozyProcessKernelTools.lean": "8ae3645026a23e18fbe596dca2768a92a57f2719c9b129cae3fb3b0da038649f",
+    "lean/Conjectures/PomeranceSarkozyShiftedTailCross.lean": "7e33f48a97cb3238b4acdd2e262995b9aa6e186bbbea3513442a1554837afa84",
+    "lean/Conjectures/PomeranceSarkozyTailCross.lean": "f31b46c25385c100860c9018b1d654f63c01b6a1cd4203bf02be0367e2b7db48",
+    "lean/Conjectures/PomeranceSarkozyWeakAbsoluteMoment.lean": "020febfd6794dba436702cc613ecf72bf2d166fb41bd029adce71e92d2399716",
+    "lean/Conjectures/PomeranceSarkozyWeakPositivePart.lean": "216e2c4fc7b09b257c1d56e480fdd5c6c9d819bedf7166a540a408a97ddd0ebc",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyTailCross.olean",
+        "Conjectures/PomeranceSarkozyTailCross.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyTailCross.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyShiftedTailCross.olean",
+        "Conjectures/PomeranceSarkozyShiftedTailCross.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyShiftedTailCross.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyWeakAbsoluteMoment.olean",
+        "Conjectures/PomeranceSarkozyWeakAbsoluteMoment.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyWeakAbsoluteMoment.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyWeakPositivePart.olean",
+        "Conjectures/PomeranceSarkozyWeakPositivePart.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyWeakPositivePart.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "lean/.lake/build/lib/lean/Conjectures/PomeranceSarkozyProcessKernelTools.olean",
+        "Conjectures/PomeranceSarkozyProcessKernelTools.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.PomeranceSarkozyProcessKernelTools.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<out>/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "scripts/replay_lean.py",
+        "--root",
+        "Conjectures.PomeranceSarkozyProcessKernelTools",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 24,
+    "modules": 5,
+    "private_declarations": 11,
+    "raw_declarations": 24,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 20
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

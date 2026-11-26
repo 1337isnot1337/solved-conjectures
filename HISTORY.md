@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-25 — Verify shifted-tail inputs for Pomerance–Sárközy’s process
+
+Lean checks the shifted integer tail-product reindexing and the moving
+positive-part expectation under weak convergence and bounded second
+moments. [Scope and receipt](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the Hall and coprime-complement steps in Shumyatsky’s proof
 
 Lean constructs the required subgroup of a solvable quotient. It
