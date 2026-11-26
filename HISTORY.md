@@ -6,7 +6,7 @@ The minimum number of vertical translates of a fixed monomial graph that meet ev
 
 ## 2026-11-26 — Mallik–Diwan–Kothari degree-count conjecture
 
-Two complete bipartite blocks and two matchings refute Conjecture 8.9 for every $k\geq3$, with the smallest example on 16 vertices. The proof gives an explicit nonextending matching for each possible edge deletion. [Proof](results/mallik-diwan-kothari-degree-count/PROOF.md) · [Source and audit](results/mallik-diwan-kothari-degree-count/AUDIT.md) · [Issue #825](https://github.com/1337isnot1337/solved-conjectures/issues/825).
+Two complete bipartite blocks and two matchings refute Conjecture 8.9 for every $k\geq3$, with the smallest example on 16 vertices. The proof gives an explicit nonextending matching for each possible edge deletion. [Proof](results/mallik-diwan-kothari-degree-count/PROOF.md) · [Source and audit](results/mallik-diwan-kothari-degree-count/AUDIT.md) · [Issue #825](https://github.com/1337isnot1337/solved-conjectures/issues/825). Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Formalization](results/mallik-diwan-kothari-degree-count/FORMALIZATION.md).
 
 ## 2026-11-26 — Kovalev’s Hardy-duality bounds
 

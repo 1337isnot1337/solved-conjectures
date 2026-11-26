@@ -6,7 +6,7 @@ Run `python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py` for 266,184 s
 
 ## Mallik–Diwan–Kothari degree-count conjecture
 
-Run `python3 results/mallik-diwan-kothari-degree-count/verify.py`. The checker verifies all 3,420 three-edge matchings and all 36 edge deletions on the 16-vertex counterexample directly. Separate Hall checks sample 15 members of the infinite family. The [proof](../results/mallik-diwan-kothari-degree-count/PROOF.md) does not depend on the checker. [Source and audit](../results/mallik-diwan-kothari-degree-count/AUDIT.md).
+Run `python3 results/mallik-diwan-kothari-degree-count/verify.py`. The checker verifies all 3,420 three-edge matchings and all 36 edge deletions on the 16-vertex counterexample directly. Separate Hall checks sample 15 members of the infinite family. The [proof](../results/mallik-diwan-kothari-degree-count/PROOF.md) does not depend on the checker. [Source and audit](../results/mallik-diwan-kothari-degree-count/AUDIT.md). Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Lean theorems and verification receipt](../results/mallik-diwan-kothari-degree-count/FORMALIZATION.md).
 
 ## The Steiner triple system sail problem
 
