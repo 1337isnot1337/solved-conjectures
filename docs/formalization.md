@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
+
+Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal proof and verification receipt](../results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
+
 ## Wang–Yang's Fuss–Narayana conjecture
 
 Complete for all six matrices of Conjecture 4.1 at every integer parameter `m ≥ 2`. Lean verifies total nonnegativity of the four Fuss–Narayana triangles (`A(n, k)`, `B(n, k)`, and their row reversals) and strict total positivity of both squares (`A(n + k, k)`, `B(n + k, k)`) on arbitrary finite minors, proving Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch. The five-module closure passed strict compilation, the complete 322-declaration owned axiom audit, and stock-kernel replay. [Lean scope and receipt](../results/wang-yang-fuss-narayana/FORMALIZATION.md).

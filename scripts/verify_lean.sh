@@ -4,6 +4,25 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.MonophonicPrismBlock00
+  Conjectures.MonophonicPrismBlock05
+  Conjectures.MonophonicPrismBlock10
+  Conjectures.MonophonicPrismBlock15
+  Conjectures.MonophonicPrismBlock20
+  Conjectures.MonophonicPrismBlock25
+  Conjectures.MonophonicPrismBlock30
+  Conjectures.MonophonicPrismBlock35
+  Conjectures.MonophonicPrismBlock40
+  Conjectures.MonophonicPrismColorings
+  Conjectures.MonophonicPrismConstruction
+  Conjectures.MonophonicPrismCounterexample
+  Conjectures.MonophonicPrismCoverage
+  Conjectures.MonophonicPrismData
+  Conjectures.MonophonicPrismIncidence
+  Conjectures.MonophonicPrismIsomorphism
+  Conjectures.MonophonicPrismRoutes
+  Conjectures.MonophonicPrismTheorems
+  Conjectures.MonophonicProductPaths
   Conjectures.WangYangFussNarayanaMatrix
   Conjectures.WangYangFussNarayanaDet
   Conjectures.WangYangFussNarayanaDefs

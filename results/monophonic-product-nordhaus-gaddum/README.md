@@ -7,4 +7,6 @@
 - [Exact independent finite checker](verify.py), run with `python3 verify.py`
 - [Discovery issue #847](https://github.com/1337isnot1337/solved-conjectures/issues/847)
 
-This resolves the monophonic product assertion of Conjecture 9.3, not either general-position assertion. The proof uses the classical Watkins–Mesner cycle theorem and does not depend on the checker. No Lean verification or outside refereeing is claimed.
+This resolves the monophonic product assertion of Conjecture 9.3, not either general-position assertion. The proof uses the classical Watkins–Mesner cycle theorem and does not depend on the checker. Outside refereeing remains open.
+
+**Lean status:** partial. Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal scope and verification receipt](FORMALIZATION.md).

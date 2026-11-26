@@ -66,7 +66,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **53.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ✅ | **137.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | **53.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ✅ | **137.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | **53.** [Mallik–Diwan–Kothari degree-count conjecture](results/mallik-diwan-kothari-degree-count/) | ✅ | **137.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
-| **53.** [Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture](results/monophonic-product-nordhaus-gaddum/) | ⬜ | **137.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
+| **53.** [Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture](results/monophonic-product-nordhaus-gaddum/) | 🟡 | **137.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
 | **53.** [Gyárfás’s planar degree-repetition problem](results/gyarfas-planar-degree-repetition/) | ✅ | **137.** [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | ✅ |
 | **53.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **137.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
 | **53.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ✅ | **137.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |

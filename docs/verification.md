@@ -6,7 +6,7 @@ Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all la
 
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
 
-Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md).
+Run `python3 results/monophonic-product-nordhaus-gaddum/verify.py` to verify all triples in the 45-vertex witness, enumerate 262,144 possible star-center sets, and check exact optimal independent monophonic colorings with 20 and 27 colors. The [written proof](../results/monophonic-product-nordhaus-gaddum/PROOF.md) covers the infinite family without the enumeration. [Source and review](../results/monophonic-product-nordhaus-gaddum/AUDIT.md). Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Formal proof and verification receipt](../results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md).
 
 ## Asgarli–Ghioca–Yip blocking-pencil problem
 
