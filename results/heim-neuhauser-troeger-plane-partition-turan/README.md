@@ -4,10 +4,11 @@
 
 A Fourier sign comparison proves the large-index range uniformly. Exact rational boxes cover the entire continuous saddle-parameter interval, and integer coefficient checks handle the remaining indices. No sampling assumption is used.
 
+- [Lean theorems and verification receipt](FORMALIZATION.md)
 - [Complete proof and reproduction instructions](PROOF.md)
 - [Source and independent audit](AUDIT.md)
 - [Exact Fourier certificate](heim-neuhauser-fourier-certificate.py)
 - [Exact finite polynomial certificate](heim-neuhauser-plane-partition-check.py)
 - [Discovery and review, issue #388](https://github.com/1337isnot1337/solved-conjectures/issues/388)
 
-Computer-assisted proof with exact arithmetic; not Lean-formalized or externally refereed.
+The written proof uses exact arithmetic. Lean verifies the inequality throughout the stated real-parameter and index ranges. External refereeing remains open.

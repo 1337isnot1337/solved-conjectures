@@ -11,4 +11,6 @@ The publisher's [Conjecture 2](https://doi.org/10.1007/s00026-022-00604-4) speci
 - The exponential calculation rounds its argument down and uses a positive partial sum of the exponential before taking a reciprocal, yielding an upper bound. Square roots and the constant pi are also bounded in the safe direction. Thus the check covers the continuum, not a grid sample.
 - Below index 251, multiplication by a positive factorial scaling reduces every required inequality to coefficientwise sign tests after shifting the real parameter by 1. Strict positivity at the endpoint is checked explicitly.
 
-Both standard-library scripts are part of the proof. The statements are internally reviewed but not externally refereed or Lean-formalized. The separate proposed root-ratio theorem appears in [its own entry](../heim-neuhauser-plane-partition-polynomization/).
+Both standard-library scripts are part of the proof. The statements are internally reviewed but await external refereeing. The separate proposed root-ratio theorem appears in [its own entry](../heim-neuhauser-plane-partition-polynomization/).
+
+Lean proves strict Turán for every real parameter at least 1 and every index at least 12. The finite coefficient check ends at 250 and the uniform Fourier proof starts at 251. [Formalization and shared receipt](FORMALIZATION.md).

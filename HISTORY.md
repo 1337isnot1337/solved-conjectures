@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify both plane-partition polynomial conjectures in Lean
+
+Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Turán proof](results/heim-neuhauser-troeger-plane-partition-turan/FORMALIZATION.md) · [Root inequalities](results/heim-neuhauser-plane-partition-polynomization/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify the normal occurrence intervals in Mazák–Zrubák
 
 Lean verifies Lemma 5(3) of the written proof for the literal order, including the exact consecutive-position transitions and singleton intervals at special columns. [Scope and receipt](results/circular-index-complete-minus-edge/FORMALIZATION.md).

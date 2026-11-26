@@ -1,5 +1,9 @@
 # Verification
 
+## The plane-partition polynomial inequalities
+
+Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Scope and reproduction](../results/heim-neuhauser-troeger-plane-partition-turan/FORMALIZATION.md).
+
 ## Upper-half circular chromatic index in every even degree from eight
 
 For every integer parameter of at least six, Lean constructs both simple graphs with the prescribed order, maximum degree and exact circular chromatic index. It proves the four finite cases of Proposition 2 and the three degree ranges of Corollary 3. Lean also proves that the stated two-matching base has no solution at parameters three, four and five. [Theorems, source data and verification](../results/circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md).
