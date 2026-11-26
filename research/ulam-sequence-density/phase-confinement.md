@@ -203,6 +203,42 @@ c++ -std=c++20 -O3 phase_state_rank.cpp -o /tmp/ulam-phase-state-rank
 /tmp/ulam-phase-state-rank
 ```
 
+## Recovery from narrow boundary changes at cutoff 69
+
+Keep the same irrational slope within $10^{-10}$ of $\theta_0$.
+Start with the cutoff-69 reference history. At any site with phase
+within $1/20000$ of either endpoint of the central third, allow the
+output bit to be replaced arbitrarily. Elsewhere use the exact
+cutoff-69 rule.
+
+The [fixed-profile verifier](phase_fixed_point.py) checks the response
+to one changed bit, starting on either side of each endpoint. A change
+near $1/3$ affects 37 positions, reduces the total output count by one,
+and returns to the reference memory within 333 steps. A change near
+$2/3$ affects 88 positions, preserves the total count, and returns
+within 794 steps. These counts are constant on the four phase intervals.
+The verifier tests all gate cuts and reference-profile cuts translated
+by each time offset in the simulation. Over the slope range the only
+cuts entering the four intervals are the endpoints separating their
+two sides. An irrational orbit starting at phase 0 avoids the cuts
+themselves.
+
+No two eligible sites occur within 794 steps of one another. For each
+lag from 1 through 794 the verifier bounds its phase distance from
+$`\{0,1/3,2/3\}`$ strictly above $1/10000$. That is wider than the
+largest combined deviation of two eligible phases from their respective
+endpoints. Hence the single-change responses never overlap. By time
+$N$, the edited count is the reference count minus the number of actual
+changes near $1/3$, up to an error of at most 88 from a response still
+in progress. In particular the edited lower density is at least
+$`550\theta-225-1/10000`$ by equidistribution. If the changes near
+$1/3$ have zero density, the edited sequence has density
+$`550\theta-225`$.
+
+The scope of this recovery result is the fixed cutoff-69 rule and
+the stated narrow intervals. The genuine sequence uses additional
+shifts with phases well outside those intervals.
+
 ## A zero-density completion satisfying the core constraints
 
 One fixed phase relaxation also admits a zero-density completion of a

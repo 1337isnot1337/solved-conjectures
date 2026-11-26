@@ -1,4 +1,4 @@
-"""Certify an interval-valued fixed point of the 51-shift phase model."""
+"""Check the fixed phase profiles and the cutoff-69 recovery certificate."""
 
 from fractions import Fraction
 from math import floor
@@ -96,6 +96,58 @@ def check_outside_witness(intervals, cuts, occupied, shifts):
     print("Verified a forced exterior birth near phase 1237/4000.")
 
 
+def check_boundary_recovery(intervals, shifts):
+    slope = Fraction(350477575, 856371966)
+    error = Fraction(1, 10**10)
+    width = Fraction(1, 20_000)
+    memory = 69
+    horizon = 800
+    expected = {THIRD: (333, 37, -1), 2 * THIRD: (794, 88, 0)}
+    ends = [(value(a, slope), value(b, slope)) for a, b in intervals]
+    cuts = {(0, 0), (THIRD, 0), (2 * THIRD, 0)}
+    cuts.update(endpoint for pair in intervals for endpoint in pair)
+    translated_cuts = {
+        (constant, lag - t)
+        for constant, lag in cuts
+        for t in range(-memory, horizon + 1)
+    }
+    for boundary, outcome in expected.items():
+        lo, hi = boundary - width, boundary + width
+        for constant, lag in translated_cuts:
+            constant -= floor(constant + lag * slope)
+            left = constant + lag * slope - abs(lag) * error
+            right = constant + lag * slope + abs(lag) * error
+            require(
+                right < lo or left > hi or (left == right == boundary),
+                "A translated phase cut crosses one of the recovery cells.",
+            )
+        for direction in (-1, 1):
+            initial = boundary + direction * width / 2
+            phases = [(initial + t * slope) % 1 for t in range(-memory, horizon + 1)]
+            reference = [any(a < phase < b for a, b in ends) for phase in phases]
+            edited = reference[:memory] + [not reference[memory]]
+            last_change = memory
+            changes = 1
+            balance = int(edited[-1]) - int(reference[memory])
+            for i in range(memory + 1, len(phases)):
+                bit = THIRD < phases[i] < 2 * THIRD and sum(edited[i - s] for s in shifts) == 1
+                edited.append(bit)
+                if bit != reference[i]:
+                    last_change = i
+                    changes += 1
+                    balance += int(bit) - int(reference[i])
+                if i - last_change == memory:
+                    break
+            require(i - last_change == memory, "The edited memory did not recover.")
+            require((i - memory, changes, balance) == outcome, "Unexpected recovery counts.")
+        print(f"Boundary {boundary}: recovery by {outcome[0]}, changed bits {outcome[1]}, balance {outcome[2]}.")
+    for distance in range(1, max(outcome[0] for outcome in expected.values()) + 1):
+        phase = 3 * distance * slope
+        bound = abs(phase - round(phase)) / 3 - distance * error
+        require(bound > 2 * width, "Two editable sites can occur before recovery.")
+
+
 if __name__ == "__main__":
     check_outside_witness(*check_model(51, THIRD, LAGS_51, [-58, 142]))
-    check_model(69, 2 * THIRD, LAGS_69, [-225, 550])
+    intervals, _, _, shifts = check_model(69, 2 * THIRD, LAGS_69, [-225, 550])
+    check_boundary_recovery(intervals, shifts)

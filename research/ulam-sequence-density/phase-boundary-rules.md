@@ -28,6 +28,16 @@ occur only between the two boundary intervals. Any term above $2K$
 whose previous gap exceeds $K$ must arise from a pair in the opposite
 boundary interval, since $c(n)=0$ in that case.
 
+Separate numerical scales give a narrower interval with the same
+short rule. If all terms above $K$ lie in $C_\varepsilon$ and all terms
+above $T\ge K$ lie in $C_\eta$, any pair of terms above $K$ at a target
+$n>2T$ uses one member from $C_\eta$. Its phase lies in
+$`C_\varepsilon+C_\eta`$, which misses the central third trimmed by
+$\varepsilon+\eta$ at each end. Under Gibbs's conjecture one can let
+$\eta$ tend to zero with $K$ fixed. The symmetric trim by
+$2\varepsilon$ is needed only when the two summands have the same
+known phase tolerance.
+
 ## The full rule forces a pair outside the two restart windows
 
 Assume Gibbs's approximate confinement with
