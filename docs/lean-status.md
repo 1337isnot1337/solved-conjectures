@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Alexandersson’s transportation polytope conjecture
+
+Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Transportation theorem](../lean/Conjectures/TransportationTheorems.lean) · [Research receipt](verification/lean-transportation-geometry-20261126/receipt.json).
+
 ## Mallik–Diwan–Kothari degree-count conjecture
 
 Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Counterexample family](../lean/Conjectures/MallikDegreeTheorems.lean) · [Research receipt](verification/lean-mallik-degree-20261126/receipt.json).
