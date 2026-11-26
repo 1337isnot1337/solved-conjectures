@@ -2,6 +2,7 @@
 #include <array>
 #include <cstdint>
 #include <iostream>
+#include <span>
 #include <vector>
 
 using Membership = std::vector<unsigned char>;
@@ -262,6 +263,157 @@ bool check_short_parent_paths(const Membership& original) {
     return last == 4'780'104 && cutoff >= last + lag_limit;
 }
 
+bool in_extended_band(int n, int width_denominator) {
+    const auto r = 3ULL * width_denominator * phase(n);
+    return (width_denominator - 3) * denominator <= r
+        && r <= (2 * width_denominator + 3) * denominator;
+}
+
+bool in_phase_core(int n, int width_denominator) {
+    const auto r = 3ULL * width_denominator * phase(n);
+    return (width_denominator + 6) * denominator < r
+        && r < (2 * width_denominator - 6) * denominator;
+}
+
+bool verify_extinction(const Membership& original, int cutoff, int width_denominator,
+                       std::span<const int> completion) {
+    constexpr int start = 50'000'000;
+    std::vector<int> shifts;
+    for (int s = 1; s <= cutoff; ++s) {
+        if (original[s]) {
+            shifts.push_back(s);
+        }
+    }
+    const auto selected = [&](int n) {
+        return n < start ? bool(original[n])
+                         : std::binary_search(completion.begin(), completion.end(), n - start);
+    };
+    for (int n = cutoff + 1; n < start; ++n) {
+        if (selected(n) && !in_extended_band(n, width_denominator)) {
+            return false;
+        }
+    }
+    for (int n = start; n <= start + completion.back() + cutoff; ++n) {
+        const bool member = selected(n);
+        if (!in_extended_band(n, width_denominator) && member) {
+            return false;
+        }
+        if (in_phase_core(n, width_denominator)) {
+            const auto ways = std::count_if(shifts.begin(), shifts.end(),
+                [&](int lag) { return selected(n - lag); });
+            if (member != (ways == 1)) {
+                return false;
+            }
+        } else if (member) {
+            int ways = 0;
+            for (int a = 1; 2 * a < n; ++a) {
+                if (selected(a) && selected(n - a) && ++ways == 2) {
+                    break;
+                }
+            }
+            if (ways != 1) {
+                return false;
+            }
+        }
+    }
+    std::cout << "Cutoff " << cutoff << ": verified extinction from 49,999,999 with "
+              << completion.size() << " selected terms, each with one full representation.\n";
+    return true;
+}
+
+bool check_boundary_rules(const Membership& original) {
+    constexpr std::array<int, 72> completion_20k{
+        40, 62, 65, 67, 87, 89, 131, 133, 197, 199, 263, 265,
+        365, 368, 370, 412, 414, 426, 429, 431, 448, 451, 453, 473,
+        475, 514, 561, 563, 583, 585, 602, 605, 607, 649, 651, 671,
+        673, 715, 717, 759, 761, 773, 776, 778, 795, 798, 800, 817,
+        861, 886, 888, 908, 910, 930, 932, 1054, 1057, 1059, 1098, 1123,
+        1125, 1145, 1147, 1167, 1169, 1484, 1487, 1489, 1531, 1533, 1553, 1555,
+    };
+    constexpr std::array<int, 457> completion_100k{
+        40, 62, 65, 67, 87, 89, 131, 133, 197, 199, 263, 265,
+        365, 368, 370, 412, 414, 426, 429, 431, 448, 451, 453, 473,
+        475, 514, 561, 563, 583, 585, 602, 605, 607, 649, 651, 671,
+        673, 715, 717, 759, 761, 773, 776, 778, 795, 798, 800, 817,
+        861, 886, 888, 908, 910, 930, 932, 966, 969, 971, 1013, 1015,
+        1035, 1037, 1054, 1057, 1059, 1098, 1123, 1125, 1145, 1147, 1167, 1169,
+        1440, 1443, 1445, 1462, 1465, 1467, 1484, 1506, 1575, 1577, 1580, 1582,
+        1602, 1604, 1616, 1619, 1621, 1638, 1641, 1643, 1663, 1665, 1682, 1704,
+        1729, 1731, 1743, 1746, 1748, 1773, 1775, 1790, 1792, 1809, 1831, 1834,
+        1836, 1853, 1883, 1885, 1922, 1924, 1941, 1944, 1946, 1985, 2010, 2012,
+        2024, 2027, 2029, 2054, 2056, 2068, 2090, 2115, 2117, 2120, 2122, 2142,
+        2144, 2159, 2161, 2178, 2181, 2183, 2225, 2227, 2244, 2291, 2293, 2313,
+        2315, 2423, 2425, 2481, 2484, 2486, 2525, 2542, 2545, 2547, 2572, 2574,
+        2589, 2591, 2608, 2630, 2633, 2635, 2652, 2674, 2696, 2762, 2809, 2811,
+        2831, 2833, 2867, 2870, 2872, 2914, 2916, 2933, 2963, 2965, 2980, 2982,
+        2999, 3046, 3048, 3060, 3063, 3104, 3112, 3114, 3129, 3131, 3134, 3136,
+        3151, 3153, 3156, 3158, 3173, 3175, 3192, 3195, 3197, 3214, 3217, 3219,
+        3239, 3241, 3258, 3283, 3285, 3302, 3327, 3329, 3349, 3351, 3371, 3373,
+        3495, 3498, 3500, 3525, 3527, 3542, 3544, 3561, 3608, 3610, 3627, 3666,
+        3669, 3671, 3688, 3691, 3693, 3713, 3715, 3757, 3759, 3784, 3786, 3798,
+        3801, 3803, 3820, 3823, 3825, 3845, 3847, 3864, 3886, 3903, 3906, 3908,
+        3950, 3952, 3972, 3974, 3999, 4001, 4035, 4038, 4040, 4057, 4060, 4062,
+        4082, 4084, 4101, 4123, 4148, 4150, 4192, 4194, 4228, 4231, 4233, 4250,
+        4253, 4255, 4272, 4294, 4338, 4363, 4365, 4385, 4387, 4407, 4409, 4443,
+        4446, 4448, 4490, 4492, 4509, 4531, 4534, 4536, 4556, 4558, 4583, 4585,
+        4600, 4602, 4619, 4622, 4624, 4666, 4668, 4685, 4732, 4734, 4746, 4749,
+        4751, 4793, 4795, 4815, 4817, 4834, 4837, 4839, 4856, 4859, 4861, 4881,
+        4883, 4922, 4969, 4971, 4991, 4993, 5027, 5030, 5032, 5074, 5076, 5093,
+        5140, 5142, 5162, 5164, 5308, 5311, 5313, 5330, 5333, 5335, 5355, 5357,
+        5399, 5401, 5641, 5643, 5677, 5680, 5682, 5724, 5726, 5743, 5790, 5792,
+        5812, 5814, 5848, 5851, 5853, 5892, 5917, 5919, 5939, 5941, 5944, 5946,
+        5961, 5963, 6046, 6049, 6051, 6093, 6095, 6115, 6117, 6195, 6198, 6200,
+        6242, 6244, 6264, 6266, 6283, 6286, 6288, 6330, 6332, 6352, 6354, 6484,
+        6486, 6520, 6523, 6525, 6567, 6569, 6586, 6633, 6635, 6655, 6657, 6735,
+        6738, 6740, 6782, 6784, 6804, 6806, 6823, 6826, 6828, 6870, 6872, 6892,
+        6894, 7024, 7026, 7060, 7063, 7065, 7107, 7109, 7126, 7173, 7175, 7195,
+        7197, 7275, 7278, 7280, 7322, 7324, 7344, 7346, 7363, 7366, 7368, 7410,
+        7412, 7432, 7434, 7749, 7752, 7754, 7771, 7774, 7776, 7796, 7798, 7840,
+        7842,
+    };
+    if (!verify_extinction(original, 20'000, 80, completion_20k)
+        || !verify_extinction(original, 100'000, 130, completion_100k)) {
+        return false;
+    }
+    constexpr int cutoff = 20'000;
+    std::vector<int> shifts;
+    for (int lag = 1; lag <= cutoff; ++lag) {
+        if (original[lag]) {
+            shifts.push_back(lag);
+        }
+    }
+    for (int boundary : {1, 2}) {
+        const int seed = boundary * static_cast<int>(denominator / 3);
+        Membership pulse(2 * cutoff + 1);
+        pulse[0] = 1;
+        int count = 1;
+        int last = 0;
+        for (int j = 1; j <= 2 * cutoff; ++j) {
+            if (in_phase_core(seed + j, 80)) {
+                int ways = 0;
+                for (int lag : shifts) {
+                    if (lag > j || (pulse[j - lag] && ++ways == 2)) {
+                        break;
+                    }
+                }
+                if (ways == 1) {
+                    pulse[j] = 1;
+                    ++count;
+                    last = j;
+                }
+            }
+        }
+        const std::array<int, 2> counts{81, 65};
+        const std::array<int, 2> ends{2991, 1226};
+        if (count != counts[boundary - 1] || last != ends[boundary - 1] || last >= cutoff) {
+            return false;
+        }
+        std::cout << "Boundary " << boundary << "/3 seed produces " << count
+                  << " pulse entries ending at offset " << last << ".\n";
+    }
+    return true;
+}
+
 int main() {
     constexpr int cutoff = 100'000'000;
     const Membership membership = generate_by_phase(cutoff);
@@ -281,6 +433,10 @@ int main() {
     }
     if (!check_short_parent_paths(membership)) {
         std::cerr << "The short-parent reachability check failed.\n";
+        return 1;
+    }
+    if (!check_boundary_rules(membership)) {
+        std::cerr << "The boundary-rule extinction or pulse check failed.\n";
         return 1;
     }
     return check_dilation(membership, 2) && check_dilation(membership, 3) ? 0 : 1;

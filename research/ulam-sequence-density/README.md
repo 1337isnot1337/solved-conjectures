@@ -113,6 +113,11 @@ complexity under the conjecture. A separate reachability check rules out
 bounded-lag larger-parent paths rooted in the first million integers
 when every lag is at most one million.
 
+[Boundary rules](phase-boundary-rules.md) locates the remaining long-pair
+counts inside the phase band. Its finite certificate verifies a tail
+that becomes empty while preserving the core rule and the full
+uniqueness of every selected term through the extinction.
+
 ## Source audit
 
 - [Erdős Problem 342](https://www.erdosproblems.com/342) includes a zero-density
