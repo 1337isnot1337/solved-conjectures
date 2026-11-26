@@ -18,3 +18,5 @@ The research question is whether general designs can spread their block sizes ac
 [Point symmetry](symmetry.md) prevents any point-transitive design itself from meeting the proposed bound. At prime-power orders such a design has a size occurring at least a constant times $v^{3/4}$.
 
 The [window criterion](windows.md) shows that the conjecture is equivalent to constructing designs with average multiplicity $O(\sqrt v)$ on consecutive square-to-square intervals of sizes. Around $\sqrt v$, a single size can then occur $O(v^{3/4})$ times, provided the entire interval meets the same total bound. An exact-order restriction smooths all the intervals simultaneously.
+
+The [limiting block-size theorem](profiles.md) gives a universal lower coefficient of three. Any sequence achieving this coefficient must have asymptotically uniform block sizes after normalization by the square root of the order. Its normalized point degrees concentrate at three halves. The proof also constrains any other bounded coefficient.
