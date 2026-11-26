@@ -2446,6 +2446,7 @@ run_cmd do
     `ThueMorseValuation.lifted_coeff,
     `ThueMorseValuation.uniform_witness,
     `ThueMorseValuation.not_blockValuation_of_ge_eleven,
+    `GawronUlasPartitionSigns.gawron_ulas_partition_signs,
     `FerroniHigashitani.oldPoint_idp,
     `FerroniHigashitani.refined_closed_translate,
     `FerroniHigashitani.refined_strict_translate,

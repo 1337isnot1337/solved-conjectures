@@ -1,0 +1,134 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T15:57:54.401116+00:00",
+  "finished_at": "2026-11-26T16:03:41.563801+00:00",
+  "root": "Conjectures.GawronUlasPartitionSigns",
+  "project_modules": [
+    "Conjectures.GawronUlasPartitionBounds",
+    "Conjectures.GawronUlasPartitionCusps",
+    "Conjectures.GawronUlasPartitionSeries",
+    "Conjectures.GawronUlasPartitionSigns"
+  ],
+  "required_endpoints": [
+    "GawronUlasPartitionSigns.gawron_ulas_partition_signs"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/GawronUlasPartitionBounds.lean": "947b2f8ef6690f690cfb6ab712fd9930e7a6c47c675af7a14c477d158db4e6ba",
+    "lean/Conjectures/GawronUlasPartitionCusps.lean": "899541d6ff259b3ee7527e6797f4c13242ef5bf4851fbbf71319af7daad21fe2",
+    "lean/Conjectures/GawronUlasPartitionSeries.lean": "17b9ce5c7aef502d7f97218dfea7b999de2e7364ef6a49248c5a4894573360e2",
+    "lean/Conjectures/GawronUlasPartitionSigns.lean": "e5c9aa7b68a2abf6c449a94124937a07af0a9751e045d0f9467435bdc5b11652"
+  },
+  "input_sha256": {
+    "lean/Conjectures/GawronUlasPartitionBounds.lean": "947b2f8ef6690f690cfb6ab712fd9930e7a6c47c675af7a14c477d158db4e6ba",
+    "lean/Conjectures/GawronUlasPartitionCusps.lean": "899541d6ff259b3ee7527e6797f4c13242ef5bf4851fbbf71319af7daad21fe2",
+    "lean/Conjectures/GawronUlasPartitionSeries.lean": "17b9ce5c7aef502d7f97218dfea7b999de2e7364ef6a49248c5a4894573360e2",
+    "lean/Conjectures/GawronUlasPartitionSigns.lean": "e5c9aa7b68a2abf6c449a94124937a07af0a9751e045d0f9467435bdc5b11652",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GawronUlasPartitionSeries.olean",
+        "Conjectures/GawronUlasPartitionSeries.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GawronUlasPartitionSeries.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GawronUlasPartitionCusps.olean",
+        "Conjectures/GawronUlasPartitionCusps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GawronUlasPartitionCusps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GawronUlasPartitionBounds.olean",
+        "Conjectures/GawronUlasPartitionBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GawronUlasPartitionBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GawronUlasPartitionSigns.olean",
+        "Conjectures/GawronUlasPartitionSigns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GawronUlasPartitionSigns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "../results/gawron-ulas-partition-signs/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.GawronUlasPartitionSigns",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 112,
+    "modules": 4,
+    "private_declarations": 67,
+    "raw_declarations": 112,
+    "required": 1,
+    "tag": "passed",
+    "theorems": 93
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
