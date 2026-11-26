@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Upper-half circular chromatic index examples in every degree from eight
+
+For every integer maximum degree from eight, Lean constructs a finite simple graph whose real circular chromatic index is strictly between that degree plus one half and that degree plus one. The proof combines the two insertion families, regular circulants and tomdif’s seven exceptional examples. The three-block theorem gives the degree of every labelled vertex for every permitted packing. [Full theorem and verification](../results/circular-index-upper-half-remaining-deltas/FORMALIZATION.md).
+
 ## The seventeen nonregular graphs of the circulant construction
 
 Lean verifies the maximum degree and the exact real circular chromatic index for every nonregular graph in Section 7.3. An independent table comparison matches all 19,649 edge colours to the original certificates. The two standard replays each checked 27 project modules, 455 declarations, 327 theorem declarations, 70 private declarations and all 17 required endpoints. [Proof and original data](../results/circular-index-upper-half-circulants/FORMALIZATION.md).

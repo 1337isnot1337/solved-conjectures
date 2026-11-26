@@ -2,9 +2,9 @@
 
 [Catalogue](../../CONTENTS.md) · [Certificates](certificates.json) · [Exact checks](verify.py) · Related: [Δ ≡ 2 mod 4](../circular-index-upper-half-delta-2-mod-4/README.md), [Δ ≡ 3 mod 4](../circular-index-upper-half-delta-3-mod-4/README.md), [circulants](../circular-index-upper-half-circulants/README.md)
 
-**Status:** Seven explicit graphs, checked by `verify.py` (standard library only) and an independent exact replay. The combined all-degree statement also uses the three earlier notes, not just these seven certificates. No external refereeing or full Lean verification of the combined statement is claimed.
+**Status:** Seven explicit graphs, checked by `verify.py` (standard library only) and an independent exact replay. The combined all-degree statement also uses the three earlier notes, not just these seven certificates. The original independent review is recorded below.
 
-**Lean status:** partial for the combined all-degree result. Lean proves the real circular-index bounds for all seven new graphs, including six exact values. The earlier degree families are outside this Lean check. See the [verified scope](REVIEW.md).
+**Lean status:** full. Lean proves the bounds for all seven submitted graphs and the combined existence assertion for every integer maximum degree from eight. [Combined theorem and receipt](FORMALIZATION.md).
 
 **Attribution:** [tomdif](https://github.com/tomdif) supplied the graphs,
 colourings, SAT encoding and original write-up in [PR #647](https://github.com/1337isnot1337/solved-conjectures/pull/647)
