@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## The seventeen nonregular graphs of the circulant construction
+
+Lean verifies the maximum degree and the exact real circular chromatic index for every nonregular graph in Section 7.3. An independent table comparison matches all 19,649 edge colours to the original certificates. The two standard replays each checked 27 project modules, 455 declarations, 327 theorem declarations, 70 private declarations and all 17 required endpoints. [Proof and original data](../results/circular-index-upper-half-circulants/FORMALIZATION.md).
+
 ## The plane-partition polynomial inequalities
 
 Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Scope and reproduction](../results/heim-neuhauser-troeger-plane-partition-turan/FORMALIZATION.md).
@@ -543,7 +547,7 @@ The lower bound concerns arbitrary real circular edge-colourings, through a prov
 
 All 19 sources passed strict compilation. A fresh all-owned audit covered 601 declarations, including 500 theorem declarations and all 171 required endpoints; every transitive axiom was one of `propext`, `Classical.choice`, and `Quot.sound`. The unchanged pinned checker replayed the exact union of the three local root closures. [Receipt](verification/lean-named-20261121/circular-receipt.json) and [complete declaration inventory](verification/lean-named-20261121/circular-all-owned-inventory.json).
 
-The row remains partial because the nonregular positive examples and the other Section 7 claims are outside this checkpoint. These local checks do not claim the combined package gate or hosted validation.
+Lean also verifies all 17 nonregular positive examples in Section 7.3. The additional general structural and insertion lemmas and the complete set of Section 7.4 search exclusions remain outside these receipts. [Nonregular certificates](../results/circular-index-upper-half-circulants/FORMALIZATION.md).
 
 ## Gilmore full matching identity rechecked, 21 November 2026
 

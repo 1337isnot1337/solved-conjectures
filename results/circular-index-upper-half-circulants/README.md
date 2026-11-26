@@ -6,7 +6,7 @@
 
 **Lean status:** Theorems 1 and 2 are fully formalized, as are the regular C31 and C33 examples of Section 7.2. The statements use the literal finite graphs, regular degree, connectedness after every deletion of fewer than the stated number of vertices, and the infimum over actual real circular edge-colourings. The 19-module closure passed strict source compilation, an all-owned audit of 601 declarations (500 theorem declarations and 171 required endpoints), and the unchanged pinned stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur. [Local receipt](../../docs/verification/lean-named-20261121/circular-receipt.json).
 
-The result-level badge remains partial because the nonregular positive examples, the additional structural/insertion lemmas, and the SAT exclusion claims of Section 7 are not covered by this checkpoint. The combined repository gate and hosted validation remain separate.
+Lean also verifies all 17 nonregular positive examples in Section 7.3. The additional general structural and insertion lemmas and the complete set of Section 7.4 search exclusions remain outside these receipts. [Proof and receipt](FORMALIZATION.md).
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Section 8 (Problems 6 and 7 and the remark before them).
 

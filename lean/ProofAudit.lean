@@ -9,6 +9,20 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CircularIndex.Deleted.Degree29.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree30.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree33.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree34.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree37.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree38.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree41.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree42.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree45.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree46.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree49.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree50.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree53.exact_index_and_degree,
+    `CircularIndex.Deleted.Degree54.exact_index_and_degree,
     `PlanePartition.variance_ge_geometric,
     `PlanePartition.thirdMoment_le_geometric,
     `PlanePartition.largeRadius_thirdMoment,

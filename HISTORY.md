@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Verify all seventeen stored nonregular circulants
+
+Lean verifies the maximum degree and the exact real circular chromatic index for every nonregular graph in Section 7.3. An independent table comparison matches all 19,649 edge colours to the original certificates. The two standard replays each checked 27 project modules, 455 declarations, 327 theorem declarations, 70 private declarations and all 17 required endpoints. [Proof and original data](results/circular-index-upper-half-circulants/FORMALIZATION.md).
+
 ## 2026-11-26 — Verify both plane-partition polynomial conjectures in Lean
 
 Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Turán proof](results/heim-neuhauser-troeger-plane-partition-turan/FORMALIZATION.md) · [Root inequalities](results/heim-neuhauser-plane-partition-polynomization/FORMALIZATION.md).
