@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Gyárfás’s planar degree-repetition problem at order 16
+
+Lean constructs 16 noncollinear rational points in the real affine plane and proves that every spanned-line degree occurs at most twice. Degree 9 occurs twice. This answers the original existence question. The extension to every order from 16 and its exact count of distinct degrees have a written proof. [Lean theorem](../lean/Conjectures/GyarfasPlanarWitness.lean) · [Kernel receipt](verification/lean-gyarfas-planar-sixteen-20261126/receipt.json).
+
 ## The two truncated-square covering examples
 
 Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof](../lean/Conjectures/MeylenderThalmaierPentagonArea.lean) · [Receipt](verification/lean-truncated-square-covers-20261126/receipt.json).
