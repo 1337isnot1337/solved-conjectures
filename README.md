@@ -73,7 +73,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **53.** [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ✅ | **137.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | **62.** [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ | **145.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
 | **62.** [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ | **145.** [Alexandersson’s transportation polytope conjecture](results/alexandersson-transportation/) | ✅ |
-| **62.** [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ | **145.** [Alexandersson’s graphical dist conjecture](results/alexandersson-graphical-dist/) | ⬜ |
+| **62.** [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ | **145.** [Alexandersson’s graphical dist conjecture](results/alexandersson-graphical-dist/) | 🟡 |
 | **62.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **145.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
 | **62.** [Wang–Yang's Fuss–Narayana conjecture](results/wang-yang-fuss-narayana/) | ✅ | **145.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | 🟡 |
 | **62.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **145.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |

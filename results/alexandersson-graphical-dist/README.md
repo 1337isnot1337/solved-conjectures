@@ -6,7 +6,7 @@ Alexandersson asked whether counting the distinct positive earlier indegrees ove
 
 The [71-vertex example](proof.md#an-explicit-71-vertex-counterexample) has an exact negative Laguerre difference for its reciprocal polynomial. Run `python3 results/alexandersson-graphical-dist/check.py` to reproduce it and the independent small-graph enumeration. [Subset-inversion verifier](check.py) · [Independent support-union verifier](check_unions.py)
 
-**Lean status:** none.
+**Lean status:** partial. Lean verifies the 71-vertex graph and its 310 edges, the triangle insertion law, exactly two nonreal roots of the computed coefficient polynomial, and every limiting root for each positive even order. The full orientation-count identity and convergence to the graph family remain in the written proof. [Formal scope and verification receipt](FORMALIZATION.md).
 
 ## Citation
 
