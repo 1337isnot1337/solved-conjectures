@@ -24,6 +24,8 @@ The exact n=17 obstruction uses the excedance enumerator and a violated Laguerre
 - Latest change to this landing file at the snapshot on 2026-11-25T12:05:12+01:00. [Commit 1f60e6f9d](https://github.com/1337isnot1337/solved-conjectures/commit/1f60e6f9d772683cf57e82b1bd41c015b6fe0219).
 - Coordination and prior review. [#106](https://github.com/1337isnot1337/solved-conjectures/issues/106).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-parking-excedance/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-parking-excedance/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-parking-excedance/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-parking-excedance/FORMALIZATION.md)
@@ -34,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2609.05131) (19 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Colin Defant (2026-05-19). [Short Proofs in Algebraic and Enumerative Combinatorics](https://doi.org/10.48550/arxiv.2605.19979).
+- Per Alexandersson (2026-09-04). [Real-rootedness and interlacing for parking functions and Chow polynomials](https://doi.org/10.48550/arxiv.2609.05131).
 
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Short Proofs in Algebraic and Enumerative Combinatorics (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.19979).

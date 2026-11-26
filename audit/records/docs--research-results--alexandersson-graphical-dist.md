@@ -25,6 +25,8 @@ Graphical dist real-rootedness and the fundamental-basis length enumerator are s
 - Latest change to this landing file at the snapshot on 2026-11-26T09:36:03-06:00. [Commit bca14047c](https://github.com/1337isnot1337/solved-conjectures/commit/bca14047c3bf19b9214b5b855f7805373b7b229c).
 - Coordination and prior review. [#823](https://github.com/1337isnot1337/solved-conjectures/issues/823).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [root-density.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-graphical-dist/root-density.md)

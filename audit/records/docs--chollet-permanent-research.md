@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T00:47:03-06:00. [Commit eb40c88b6](https://github.com/1337isnot1337/solved-conjectures/commit/eb40c88b604507a9101b3ea1b828d5427d02b17c).
 - Latest change to this landing file at the snapshot on 2026-11-20T00:47:03-06:00. [Commit eb40c88b6](https://github.com/1337isnot1337/solved-conjectures/commit/eb40c88b604507a9101b3ea1b828d5427d02b17c).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [chollet-permanent-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/chollet-permanent-research.md)
@@ -29,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2604.24192) (16 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- John Chollet (1982-01-01). [Is There a Permanental Analogue to Oppenheim's Inequality?](https://doi.org/10.1080/00029890.1982.11995380).
+- Priyanshu Pant, Ranveer Singh (2026-04-27). [Structural Classes for Chollet's Permanent Conjecture](https://doi.org/10.48550/arxiv.2604.24192).
 
 - Conjecture 30: Chollet’s conjecture – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/conjecture-30/index.html).
 - Structural Classes for Chollet's Permanent Conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.24192).

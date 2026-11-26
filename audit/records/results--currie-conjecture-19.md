@@ -32,6 +32,8 @@ The target is the exclusion of the specified Rauzy graphs at the stated factor c
 - Latest change to this landing file at the snapshot on 2026-11-21T15:17:58+01:00. [Commit 32efcb11a](https://github.com/1337isnot1337/solved-conjectures/commit/32efcb11ade9c76c325ee5fb7089c6c97dc3992c).
 - Coordination and prior review. [#148](https://github.com/1337isnot1337/solved-conjectures/issues/148).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/currie-conjecture-19/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/currie-conjecture-19/PROOF.md)
@@ -42,6 +44,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1801.05376) (29 pages). conjecture 1 on PDF p. 27.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- James D. Currie (2026-08-07). [Words with Factor Complexity $2n+1$ and Minimal Critical Exponent](https://doi.org/10.37236/14527).
+- Jeffrey O. Shallit, Arseny M. Shur (2018-09-11). [Subword complexity and power avoidance](https://doi.org/10.1016/j.tcs.2018.09.010).
+- Julien Cassaigne, Sebastien Labbé, Julien Leroy (2022-11-25). [Almost everywhere balanced sequences of complexity 2n + 1](https://doi.org/10.2140/moscow.2022.11.287).
 
 - Words with Factor Complexity $2n+1$ and Minimal Critical Exponent (HTTP 200). [Retrieved address](https://doi.org/10.37236/14527).
 - Words with factor complexity $2n+1$ and minimal critical exponent (HTTP 200). [Retrieved address](https://arxiv.org/abs/2507.09387v3).

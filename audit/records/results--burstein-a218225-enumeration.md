@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T23:13:47-03:00. [Commit 9355e14ca](https://github.com/1337isnot1337/solved-conjectures/commit/9355e14ca5a04645b899212424200bb91006896a).
 - Coordination and prior review. [#413](https://github.com/1337isnot1337/solved-conjectures/issues/413) · [#749](https://github.com/1337isnot1337/solved-conjectures/pull/749).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-a218225-enumeration/FORMALIZATION.md)
@@ -29,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2209.12137) (19 pages). conjecture 1.1 on PDF p. 3, 4 · conjecture 6.1 on PDF p. 18.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Shane Chern, Shishuo Fu, Zhicong Lin (2023-10-23). [Burstein’s permutation conjecture, Hong and Li’s inversion sequence conjecture and restricted Eulerian distributions](https://doi.org/10.1017/s0013091523000652).
 
 - Burstein’s permutation conjecture, Hong and Li’s inversion sequence conjecture and restricted Eulerian distributions (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0013091523000652).
 - A218225 - OEIS (HTTP 200). [Retrieved address](https://oeis.org/A218225).

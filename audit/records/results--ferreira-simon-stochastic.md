@@ -26,6 +26,8 @@ The Kilbas–Saigo upper and lower hyperbolic bounds concern a different functio
 - Latest change to this landing file at the snapshot on 2026-11-21T00:48:11-06:00. [Commit 23e30ce2a](https://github.com/1337isnot1337/solved-conjectures/commit/23e30ce2aae991fd821f1f03a081760d66ef5812).
 - Coordination and prior review. [#170](https://github.com/1337isnot1337/solved-conjectures/issues/170).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-stochastic/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-stochastic/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-stochastic/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-stochastic/SOURCES.md)
@@ -36,6 +38,16 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1310.1888) (27 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Thomas Simon (2014-01-01). [Comparing Fréchet and positive stable laws](https://doi.org/10.1214/ejp.v19-3058).
+- Lotfi Boudabsa, Thomas Simon (2021-01-22). [Some Properties of the Kilbas-Saigo Function](https://doi.org/10.3390/math9030217).
+- Raoul D. LePage, Michael B. Woodroofe, Joel Zinn (1981-08-01). [Convergence to a Stable Distribution Via Order Statistics](https://doi.org/10.1214/aop/1176994367).
+- Gennady Samorodnitsky, Murad S. Taqqu (1993-01-01). [Stochastic Monotonicity and Slepian-Type Inequalities for Infinitely Divisible and Stable Random Vectors](https://doi.org/10.1214/aop/1176989397).
+- Rui A. C. Ferreira, Thomas Simon (2025-12-04). [Mittag-Leffler functions and convex ordering](https://doi.org/10.48550/arxiv.2512.04940).
+- Thomas Simon (2013-10-07). [Comparing Fréchet and positive stable laws](https://doi.org/10.48550/arxiv.1310.1888).
+- Luisa Beghin, Nikolai N. Leonenko, Thomas Simon, Jayme Vaz (2026-06-02). [Beta-weighted non-local differential operators and related stochastic processes](https://doi.org/10.48550/arxiv.2606.03661).
 
 - Mittag-Leffler functions and convex ordering (HTTP 200). [Retrieved address](https://arxiv.org/abs/2512.04940).
 - Source URL (HTTP 200). [Retrieved address](https://doi.org/10.1214/EJP.v19-3058).

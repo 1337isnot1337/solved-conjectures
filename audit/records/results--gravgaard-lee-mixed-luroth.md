@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T11:41:13-06:00. [Commit 42413daab](https://github.com/1337isnot1337/solved-conjectures/commit/42413daabc53f9e6815bbdc1dc4c727f5623af6f).
 - Coordination and prior review. [#455](https://github.com/1337isnot1337/solved-conjectures/issues/455).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-mixed-luroth/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-mixed-luroth/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-mixed-luroth/PROOF.md)
@@ -30,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2506.12513v1) (31 pages). conjecture 1 on PDF p. 6.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Maiken Gravgaard, Ying Wai Lee (2026-06-12). [Decomposition of real numbers into sums of Lüroth sets](https://doi.org/10.1142/s1793042126500958).
 
 - Decomposition of real numbers into sums of L\"uroth sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.12513v2).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1142/S1793042126500958).

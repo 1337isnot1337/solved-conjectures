@@ -27,6 +27,8 @@ The Omega same-paper record addresses oscillation in Conjecture 10.5. The reposi
 - Latest change to this landing file at the snapshot on 2026-11-25T07:36:08Z. [Commit 029fa9d62](https://github.com/1337isnot1337/solved-conjectures/commit/029fa9d62294ed1b2efa1f6ffafc4b4a4ad8ef98).
 - Coordination and prior review. [#398](https://github.com/1337isnot1337/solved-conjectures/issues/398).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-symmetry/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-symmetry/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-symmetry/PROOF.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-symmetry/LEAN.md)
@@ -36,6 +38,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2404.08193v2) (20 pages). conjecture 10.1 on PDF p. 10 · conjecture 10.2 on PDF p. 10 · conjecture 10.3 on PDF p. 10 · conjecture 10.4 on PDF p. 10.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- J�rgen Herzog (1970-06-01). [Generators and relations of abelian semigroups and semigroup rings](https://doi.org/10.1007/bf01273309).
+- Brennan Benfield, Oliver Lippard (2024-04-12). [Integers that are not the sum of positive powers](https://doi.org/10.48550/arxiv.2404.08193).
 
 - Integers that are not the sum of positive powers (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.08193v2).
 - Oscillation of stable exception-set sizes - trureturing — Discovering truth (HTTP 200). [Retrieved address](https://the-omega-institute.github.io/trureturing-mdbook/Problems/benfield-lippard-2025-exception-set-oscillation.html).

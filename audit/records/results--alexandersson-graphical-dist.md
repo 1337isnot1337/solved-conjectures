@@ -25,6 +25,8 @@ Graphical dist real-rootedness and the fundamental-basis length enumerator are s
 - Latest change to this landing file at the snapshot on 2026-11-26T09:45:22-06:00. [Commit 31c0d06c3](https://github.com/1337isnot1337/solved-conjectures/commit/31c0d06c302f22f5af4b01a5cbe614fb0584c5c7).
 - Coordination and prior review. [#823](https://github.com/1337isnot1337/solved-conjectures/issues/823).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-graphical-dist/README.md) · [proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-graphical-dist/proof.md) · [sources.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-graphical-dist/sources.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-graphical-dist/FORMALIZATION.md) · [review.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-graphical-dist/review.md)
@@ -34,6 +36,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.41502) (30 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Per Alexandersson, Leonardo Saud Maia Leite (2026-10-30). [Sink polynomials of line graphs and weighted matching polynomials](https://doi.org/10.48550/arxiv.2610.41502).
 
 - Sink polynomials of line graphs and weighted matching polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.41502).
 - Real-rooted polynomials: graphs and combinatorics \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedGraphs.htm).

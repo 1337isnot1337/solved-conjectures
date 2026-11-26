@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T01:06:49-06:00. [Commit 70ea16959](https://github.com/1337isnot1337/solved-conjectures/commit/70ea1695977449d06734feb630465d4548b983d2).
 - Latest change to this landing file at the snapshot on 2026-11-20T01:06:49-06:00. [Commit 70ea16959](https://github.com/1337isnot1337/solved-conjectures/commit/70ea1695977449d06734feb630465d4548b983d2).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [nemeth-seberry-shu-rate-candidate.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/nemeth-seberry-shu-rate-candidate.md)
@@ -31,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.23755) (49 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Alexander Divoux, Shouda Wang (2026-10-16). [The maximum number of Hamiltonian cycles in tournaments](https://doi.org/10.48550/arxiv.2610.23755).
 
 - Citation-index seed records. [The maximum number of Hamiltonian cycles in tournaments](https://doi.org/10.48550/arxiv.2610.23755).
 - Crossref query “Quantitative extension of the NSS argument nemeth seberry shu rate candidate.md” returned 12 displayed records (HTTP 200).

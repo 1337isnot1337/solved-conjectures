@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:30:16-06:00. [Commit fe01f2bc2](https://github.com/1337isnot1337/solved-conjectures/commit/fe01f2bc263d0f60fe67964d819b31860e484403).
 - Coordination and prior review. [#652](https://github.com/1337isnot1337/solved-conjectures/pull/652).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shumyatsky-conjugate-prime-spectrum/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shumyatsky-conjugate-prime-spectrum/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shumyatsky-conjugate-prime-spectrum/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md)
@@ -30,6 +32,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1401.0300v50) (319 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Andrea Lucchini, Marta Morigi, Pavel Shumyatsky (2012-06-29). [Boundedly generated subgroups of finite groups](https://doi.org/10.1515/form.2011.092).
+- Timothy C. Burness, Robert M. Guralnick, Scott Harper (2021-03-01). [The spread of a finite group](https://doi.org/10.4007/annals.2021.193.2.5).
+- Wolfgang Gaschütz (1955-01-01). [Zu einem von B. H. und H. Neumann gestellten Problem](https://doi.org/10.1002/mana.19550140406).
+- Evgenii I. Khukhro, V. D. Mazurov (2014-01-01). [Unsolved Problems in Group Theory. The Kourovka Notebook](https://doi.org/10.48550/arxiv.1401.0300).
 
 - Unsolved Problems in Group Theory. The Kourovka Notebook (HTTP 200). [Retrieved address](https://arxiv.org/abs/1401.0300v50).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1515/form.2011.092).

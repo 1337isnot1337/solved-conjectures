@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T13:04:34Z. [Commit bd360bc2d](https://github.com/1337isnot1337/solved-conjectures/commit/bd360bc2de558306ad18a2ef2ca37a2c6a318e62).
 - Coordination and prior review. [#316](https://github.com/1337isnot1337/solved-conjectures/issues/316).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/FORMALIZATION.md) · [INTERLACING-CL.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/INTERLACING-CL.md) · [STURM-CERTIFICATE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/STURM-CERTIFICATE.md) · [SUPPLEMENT-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hkm-ehrhart/SUPPLEMENT-AUDIT.md)
@@ -34,6 +36,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2404.02136) (22 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Akihiro Higashitani, Mario Kummer, Mateusz Michałek (2017-08-04). [Interlacing Ehrhart polynomials of reflexive polytopes](https://doi.org/10.1007/s00029-017-0350-6).
+- Akihiro Higashitani, Katharina Jochemko, Mateusz Michałek (2019-01-01). [ARITHMETIC ASPECTS OF SYMMETRIC EDGE POLYTOPES](https://doi.org/10.1112/s0025579319000147).
+- Max Kölbl (2024-04-02). [On a Conjecture Concerning the Roots of Ehrhart Polynomials of Symmetric Edge Polytopes from Complete Multipartite Graphs](https://doi.org/10.48550/arxiv.2404.02136).
 
 - Interlacing Ehrhart Polynomials of Reflexive Polytopes (HTTP 200). [Retrieved address](https://arxiv.org/abs/1612.07538v1).
 - On a Conjecture Concerning the Roots of Ehrhart Polynomials of Symmetric Edge Polytopes from Complete Multipartite Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.02136).

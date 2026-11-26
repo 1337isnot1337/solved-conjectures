@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-19T00:51:23-06:00. [Commit 6cdc39490](https://github.com/1337isnot1337/solved-conjectures/commit/6cdc3949055f515719fdb9676f5e8c07b9c4c37b).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rectangle-partition-asymptotics/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rectangle-partition-asymptotics/PROOF.md) · [ANALYTIC_LEAN_PLAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rectangle-partition-asymptotics/ANALYTIC_LEAN_PLAN.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rectangle-partition-asymptotics/LEAN.md)
@@ -31,6 +33,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2608.22955) (10 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Chandan Kumar Shukla (2026-11-14). [An exponentially accurate cubic-partition approximation for two-row rectangle partitions](https://doi.org/10.66977/xsci.2611.002b).
+- Krystian Gajdzica, Maciej Zakarczemny (2026-08-09). [A note on the partition function of a rectangle](https://doi.org/10.48550/arxiv.2608.08762).
+- Krystian Gajdzica, Maciej Zakarczemny (2026-08-24). [The asymptotic behavior of the rectangle partition function $p(m,n)$](https://doi.org/10.48550/arxiv.2608.22955).
+- Mubin Shaikh (2026-09-05). [Rationality and Quasipolynomiality of Restricted Rectangle Partitions](https://doi.org/10.48550/arxiv.2609.13305).
 
 - A note on the partition function of a rectangle (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.08762).
 - The asymptotic behavior of the rectangle partition function $p(m,n)$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.22955).

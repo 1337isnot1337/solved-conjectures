@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T23:15:18+01:00. [Commit 2dfe6e5ba](https://github.com/1337isnot1337/solved-conjectures/commit/2dfe6e5baa8ea9fceb43b73f77ba636fc9638d40).
 - Coordination and prior review. [#474](https://github.com/1337isnot1337/solved-conjectures/issues/474).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ulas-disjoint-square-blocks/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ulas-disjoint-square-blocks/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ulas-disjoint-square-blocks/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ulas-disjoint-square-blocks/FORMALIZATION.md) · [MIXED-LENGTHS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ulas-disjoint-square-blocks/MIXED-LENGTHS.md)
@@ -31,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.math.ubc.ca/~bennett/Erdos-Graham.pdf) (6 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Burak Yıldız, Erhan Gürel (2019-07-03). [On a Problem of Erdős and Graham](https://doi.org/10.1007/s00574-019-00158-9).
+- Mariusz Skałba (2003-01-01). [Products of disjoint blocks of consecutive integers which are powers](https://doi.org/10.4064/cm98-1-1).
 
 - On products of disjoint blocks of consecutive integers (HTTP 200). [Retrieved address](https://www.e-periodica.ch/view/ens-001/2005/51/417).
 - Source URL (HTTP 200). [Retrieved address](https://www.e-periodica.ch/download/ens-001:2005:51/ocr-fulltext).

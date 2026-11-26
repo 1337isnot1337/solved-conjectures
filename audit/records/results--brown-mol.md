@@ -27,6 +27,8 @@ Exact later public overlap. Omega’s frozen translated-annulus counterexample i
 - Latest change to this landing file at the snapshot on 2026-11-21T03:38:05-06:00. [Commit 72fd83d40](https://github.com/1337isnot1337/solved-conjectures/commit/72fd83d409a18076b008cbe744e03e31381cef64).
 - Coordination and prior review. [#210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/SOURCES.md) · [ALGEBRA_PRIOR_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ALGEBRA_PRIOR_AUDIT.md) · [ANALYSIS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ANALYSIS_REVIEW.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-mol/ROOT_REVIEW.md)
@@ -37,6 +39,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2608.07898) (19 pages). conjecture 5.1 on PDF p. 16, 17.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Jason I. Brown, Peter T. Otto (2025-10-28). [A generalization of the Beraha–Kahane–Weiss theorem with graph polynomial applications](https://doi.org/10.55016/ojs/cdm.v20i2.76682).
+- Xian'an Jin, Tianlong Ma, Yi Wang (2026-08-08). [Proof of a Brown-Mol conjecture on subtree roots](https://doi.org/10.48550/arxiv.2608.07898).
+- Jason I. Brown, Peter T. Otto (2020-08-04). [Extension to the Beraha-Kahane-Weiss Theorem with Applications](https://doi.org/10.48550/arxiv.2008.01784).
 
 - On the roots of the subtree polynomial (HTTP 200). [Retrieved address](https://arxiv.org/abs/1810.08655).
 - Proof of a Brown-Mol conjecture on subtree roots (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.07898).

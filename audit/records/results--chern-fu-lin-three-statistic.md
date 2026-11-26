@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T08:57:25-08:00. [Commit a98be78ce](https://github.com/1337isnot1337/solved-conjectures/commit/a98be78ce52cc9109a9ef4a93305618bf778a634).
 - Coordination and prior review. [#439](https://github.com/1337isnot1337/solved-conjectures/issues/439).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-three-statistic/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-three-statistic/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-three-statistic/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chern-fu-lin-three-statistic/FORMALIZATION.md)
@@ -31,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2209.12137) (19 pages). conjecture 6.1 on PDF p. 18 · conjecture 6.2 on PDF p. 18.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Shane Chern, Shishuo Fu, Zhicong Lin (2023-10-23). [Burstein’s permutation conjecture, Hong and Li’s inversion sequence conjecture and restricted Eulerian distributions](https://doi.org/10.1017/s0013091523000652).
 
 - Burstein's permutation conjecture, Hong and Li's inversion sequence conjecture, and restricted Eulerian distributions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2209.12137).
 - Burstein’s permutation conjecture, Hong and Li’s inversion sequence conjecture and restricted Eulerian distributions (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0013091523000652).

@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T07:59:45-06:00. [Commit 4947c96cd](https://github.com/1337isnot1337/solved-conjectures/commit/4947c96cdbed7a9e92d7f997576838c71f4bbb8e).
 - Coordination and prior review. [#825](https://github.com/1337isnot1337/solved-conjectures/issues/825).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mallik-diwan-kothari-degree-count/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mallik-diwan-kothari-degree-count/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mallik-diwan-kothari-degree-count/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mallik-diwan-kothari-degree-count/FORMALIZATION.md)
@@ -32,6 +34,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2611.29504v1) (14 pages). conjecture 8.11 on PDF p. 2.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Amit Kumar Mallik, Ajit A. Diwan, Nishad Kothari (2026-01-01). [Extremal minimal bipartite matching covered graphs](https://doi.org/10.4310/joc.260511231633).
+- Phelipe A. Fabres, Nishad Kothari, Marcelo Henriques de Carvalho (2020-10-15). [Minimal braces](https://doi.org/10.1002/jgt.22628).
+- Xiaoling He (2026-11-22). [The maximum number of edges in minimal $k$-extendable bipartite graphs](https://doi.org/10.48550/arxiv.2611.29504).
 
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.4310/joc.260511231633).
 - Extremal minimal bipartite matching covered graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.06445v3).

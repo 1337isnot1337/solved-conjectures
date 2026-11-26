@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-20T17:54:04-06:00. [Commit 4a0b9f3f0](https://github.com/1337isnot1337/solved-conjectures/commit/4a0b9f3f0e4116f61a47fe0532157372f9c813bf).
 - Coordination and prior review. [#139](https://github.com/1337isnot1337/solved-conjectures/issues/139) · [#140](https://github.com/1337isnot1337/solved-conjectures/issues/140).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/perron-root-permanental-compounds/README.md) · [proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/perron-root-permanental-compounds/proof.md) · [priority-audit-addendum.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/perron-root-permanental-compounds/priority-audit-addendum.md) · [review-inequalities.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/perron-root-permanental-compounds/review-inequalities.md) · [review-sign-matrices.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/perron-root-permanental-compounds/review-sign-matrices.md) · [source-audit.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/perron-root-permanental-compounds/source-audit.md)
@@ -41,6 +43,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/0711.3496) (31 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Mark Jerrum, Alistair Sinclair, Eric Vigoda (2001-07-06). [A polynomial-time approximation algorithm for the permanent of a matrix with non-negative entries](https://doi.org/10.1145/1008731.1008738).
+- Jonathan Leake, Nick Ryder (2019-10-08). [Generalizations of the Matching Polynomial to the Multivariate Independence Polynomial](https://doi.org/10.5802/alco.63).
+- Thierry Huillet (2007-07-19). [Occupancy statistics arising from weighted particle rearrangements](https://doi.org/10.1088/1751-8113/40/31/001).
+- Dongsheng Wei (2026-09-13). [Generators of stability-preserving semigroups, spectral gaps, and classical ground-state computation](https://doi.org/10.48550/arxiv.2609.26802).
+- Weiqi Jiang (2026-08-23). [Discrete Concavity of Token-Graph Spectral Radii via Lorentzian Semigroups](https://doi.org/10.48550/arxiv.2609.25037).
 
 - Problem 18: Perron root of permanental compounds – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/problem-18/index.html).
 - PDF header (HTTP 200). [Retrieved address](https://users.monash.edu.au/~iwanless/papers/permsurveyLAA.pdf).

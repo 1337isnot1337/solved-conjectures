@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:17:08-06:00. [Commit 1ae0e6d46](https://github.com/1337isnot1337/solved-conjectures/commit/1ae0e6d468e7654bc4b9a9e07981da7fe1a90f1b).
 - Coordination and prior review. [#814](https://github.com/1337isnot1337/solved-conjectures/issues/814).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-transportation/README.md) · [proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-transportation/proof.md) · [sources.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-transportation/sources.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-transportation/FORMALIZATION.md)
@@ -30,6 +32,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1602.04449) (30 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Xiaxia Guan, Weiling Yang, Xian’an Jin (2023-08-16). [On the polymatroid Tutte polynomial](https://doi.org/10.1016/j.jcta.2023.105798).
+- Yuta Hatasa, Nobukazu Kowaki, Koji Matsushita (2025-07-02). [Pseudo-Gorenstein edge rings and a new family of almost Gorenstein edge rings](https://doi.org/10.1080/00927872.2025.2520382).
+- Xiaxia Guan, Xian’an Jin (2022-01-29). [On coefficients of the interior and exterior polynomials](https://doi.org/10.48550/arxiv.2201.12531).
 
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - On coefficients of the interior and exterior polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2201.12531).

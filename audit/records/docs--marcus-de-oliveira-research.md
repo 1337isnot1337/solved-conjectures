@@ -25,6 +25,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T01:25:56-06:00. [Commit d8c079928](https://github.com/1337isnot1337/solved-conjectures/commit/d8c07992823b42060ef96417b6d475cbdb982a95).
 - Latest change to this landing file at the snapshot on 2026-11-20T01:29:33-06:00. [Commit 86cb253b5](https://github.com/1337isnot1337/solved-conjectures/commit/86cb253b5a67bbb412007ddf269979953169371f).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [marcus-de-oliveira-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/marcus-de-oliveira-research.md)
@@ -34,6 +36,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.mat.uc.pt/preprints/ps/p2611.pdf) (10 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Natália Bebiano, João P. da Providência (2025-02-22). [Revisiting the Marcus–de Oliveira Conjecture](https://doi.org/10.3390/math13050711).
+- Juan Ignacio Mulero-Martínez (2026-03-19). [A variational framework for determinantal inequalities of normal matrices: Successes and obstructions](https://doi.org/10.1016/j.laa.2026.03.019).
+- Stephen W. Drury (1999-09-01). [OMC for Householder reflections](https://doi.org/10.1016/s0024-3795(99)00173-1).
+- Yaroslav Shitov (2025-08-25). [A further sufficient condition for the determinantal conjecture](https://doi.org/10.4213/im9292e).
 
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.3390/math13050711).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.laa.2026.03.019).

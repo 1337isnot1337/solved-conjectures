@@ -28,6 +28,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T07:41:47Z. [Commit f59222bca](https://github.com/1337isnot1337/solved-conjectures/commit/f59222bca43ecd7fcc79615a193c4bb7cb1dda6c).
 - Coordination and prior review. [#124](https://github.com/1337isnot1337/solved-conjectures/issues/124) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chaudhary-khmiri-mazhouda/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chaudhary-khmiri-mazhouda/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chaudhary-khmiri-mazhouda/PROOF.md)
@@ -38,6 +40,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.its.caltech.edu/~dinakar/papers/drama-kor2.pdf) (34 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- M.P. Chaudhary, Jawher Khmiri, Kamel Mazhouda (2026-01-01). [A note on the behavior of the Li coefficients for automorphic L-functions](https://doi.org/10.7153/jca-2026-28-07).
+- Kamel Mazhouda (2012-08-08). [On the Li coefficients for the Dirichlet $$L$$ -functions](https://doi.org/10.1007/s00605-012-0436-3).
+- Sami Omar, Raouf Ouni (2017-02-01). [A note on Li’s coefficients for Hecke L-functions](https://doi.org/10.1142/s1793042117501007).
+- Sami Omar, Raouf Ouni, Kamel Mazhouda (2017-01-01). [On the zeros of Dirichlet -functions – RETRACTION](https://doi.org/10.1112/s1461157018000013).
 
 - PDF header (HTTP 200). [Retrieved address](https://files.ele-math.com/articles/jca-28-07.pdf).
 - Ele-Math – Journal of Classical Analysis: A note on the behavior of the Li coefficients for automorphic L-functions (HTTP 200). [Retrieved address](https://jca.ele-math.com/28-07/A-note-on-the-behavior-of-the-Li-coefficients-for-automorphic-L-functions).

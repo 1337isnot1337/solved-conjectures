@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-20T06:41:18-06:00. [Commit 5203ba070](https://github.com/1337isnot1337/solved-conjectures/commit/5203ba07062af8358aa29327543dd9357efbd5eb).
 - Coordination and prior review. [#73](https://github.com/1337isnot1337/solved-conjectures/issues/73).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [erdos-essential-component-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-essential-component-research.md)
@@ -34,6 +36,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2211.09776) (51 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Imre Z. Ruzsa (1999-11-01). [Erdős and the Integers](https://doi.org/10.1006/jnth.1999.2395).
+- Imre Z. Ruzsa (1987-01-01). [Essential Components](https://doi.org/10.1112/plms/s3-54.1.38).
+- Michael Fuchs (2002-01-01). [Digital expansion of exponential sequences](https://doi.org/10.5802/jtnb.369).
+- Ralf Stephan (2026-07-16). [Aperiodicity and subword complexity in the binary expansion of powers of three](https://doi.org/10.48550/arxiv.2607.14774).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1006/jnth.1999.2395).
 - PDF header (HTTP 200). [Retrieved address](https://home.olemiss.edu/~leth/papers/essential_components.pdf).

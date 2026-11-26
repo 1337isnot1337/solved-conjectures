@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T19:25:46Z. [Commit 02ec0ce4e](https://github.com/1337isnot1337/solved-conjectures/commit/02ec0ce4efb2933583f8f0bf4a33a361abb32f4b).
 - Coordination and prior review. [#401](https://github.com/1337isnot1337/solved-conjectures/issues/401) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/PROOF.md) · [FINITE-THRESHOLD.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/FINITE-THRESHOLD.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/LEAN_REVIEW.md) · [STATEMENT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feldheim-weighted-tail/STATEMENT_REVIEW.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1609.03004v3) (18 pages). conjecture 1 on PDF p. 2 · conjecture 2 on PDF p. 2.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Naomi Dvora Feldheim, Ohad N. Feldheim (2021-09-01). [Mean and minimum of independent random variables](https://doi.org/10.1007/s11856-021-2195-0).
+- Andrzej Olbryś, Tomasz Szostok (2020-01-16). [On T-Schur Convex Maps](https://doi.org/10.1007/s00025-020-1154-0).
 
 - Mean and Minimum of Independent Random Variables (HTTP 200). [Retrieved address](https://arxiv.org/abs/1609.03004v3).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11856-021-2195-0).

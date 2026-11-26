@@ -27,6 +27,8 @@ Conjecture 6.2 is polar duality for opposite preorders. The matched manuscripts 
 - Latest change to this landing file at the snapshot on 2026-11-25T17:04:32+01:00. [Commit 9506e213a](https://github.com/1337isnot1337/solved-conjectures/commit/9506e213afdff5ac07fe3e85e7bb6b11151d2032).
 - Coordination and prior review. [#423](https://github.com/1337isnot1337/solved-conjectures/issues/423).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/athanasiadis-chapoton-polar-duality/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/athanasiadis-chapoton-polar-duality/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/athanasiadis-chapoton-polar-duality/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/athanasiadis-chapoton-polar-duality/FORMALIZATION.md)
@@ -37,6 +39,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2608.16037) (25 pages). conjecture 5.4 on PDF p. 3 · problem 5.2 on PDF p. 23 · problem 5.3 on PDF p. 23 · problem 5.4 on PDF p. 23.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Richard P. Stanley (1986-03-01). [Two poset polytopes](https://doi.org/10.1007/bf02187680).
+- Frédéric Chapoton, Christos A. Athanasiadis (2026-05-26). [Polytopes and posets associated to preorders](https://doi.org/10.48550/arxiv.2605.26916).
+- Ziyi Dai, Qilin Hou, Zhiyuan Liu, Warut Thawinrak et al. (2026-08-17). [Counting Lattice Points in Minkowski Sums of Cross Polytopes](https://doi.org/10.48550/arxiv.2608.16037).
+- Congyi Luo (2026-09-19). [A proof of the Athanasiadis-Chapoton ordinal-sum conjecture](https://doi.org/10.48550/arxiv.2609.28507).
 
 - Polytopes and posets associated to preorders (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.26916v1).
 - Preorder polytopes: matching endpoint pairs, flag spheres and the Athanasiadis–Chapoton conjectures (HTTP 200). [Retrieved address](https://www.evidencepress.org/releases/preorder-polytope-flag-spheres/).

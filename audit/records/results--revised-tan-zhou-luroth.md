@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T10:59:15+01:00. [Commit 0cb117e8b](https://github.com/1337isnot1337/solved-conjectures/commit/0cb117e8bed609420b6143f833996b6c5de92375).
 - Coordination and prior review. [#449](https://github.com/1337isnot1337/solved-conjectures/issues/449).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/revised-tan-zhou-luroth/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/revised-tan-zhou-luroth/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/revised-tan-zhou-luroth/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/revised-tan-zhou-luroth/FORMALIZATION.md)
@@ -31,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2502.08408) (17 pages). conjecture 2 on PDF p. 4, 5.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bo Tan, Qing-Long Zhou (2020-12-24). [Approximation properties of Lüroth expansions](https://doi.org/10.3934/dcds.2020389).
+- Lee, Ying Wai (2025-02-12). [Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures](https://doi.org/10.48550/arxiv.2502.08408).
 
 - PDF header (HTTP 200). [Retrieved address](https://math.colgate.edu/~integers/aa45/aa45.pdf).
 - Approximation properties of Lüroth expansions (HTTP 200). [Retrieved address](https://doi.org/10.3934/DCDS.2020389).

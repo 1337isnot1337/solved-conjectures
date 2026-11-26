@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T11:44:23-06:00. [Commit 1a9caf47c](https://github.com/1337isnot1337/solved-conjectures/commit/1a9caf47c191ac94d8bcf51343881bb7c51c6305).
 - Coordination and prior review. [#365](https://github.com/1337isnot1337/solved-conjectures/issues/365).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/PROOF.md) · [HEIGHT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coulangeon-lazzarini-two-shells/HEIGHT.md)
@@ -31,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.algant.eu/documents/theses/lazzarini.pdf) (77 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Renaud Coulangeon, Giovanni Lazzarini (2014-04-03). [Spherical designs and heights of Euclidean lattices](https://doi.org/10.1016/j.jnt.2014.02.015).
+- Renaud Coulangeon, Giovanni Lazzarini (2014-01-13). [Spherical Designs and Heights of Euclidean Lattices](https://doi.org/10.48550/arxiv.1401.2891).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jnt.2014.02.015).
 - Spherical Designs and Heights of Euclidean Lattices (HTTP 200). [Retrieved address](https://arxiv.org/abs/1401.2891).

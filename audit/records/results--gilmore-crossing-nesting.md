@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T09:08:53-06:00. [Commit 48534df0d](https://github.com/1337isnot1337/solved-conjectures/commit/48534df0d6b17e804f8a9fc70dffeb0b4b791ad2).
 - Coordination and prior review. [#79](https://github.com/1337isnot1337/solved-conjectures/issues/79).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gilmore-crossing-nesting/NOVELTY.md)
@@ -33,6 +35,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2003.08192) (122 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Tomack Gilmore (2021-09-24). [Trees, Forests, and Total Positivity: I. $q$-Trees and $q$-Forests Matrices](https://doi.org/10.37236/10465).
+- Anisse Kasraoui, Jiang Zeng (2006-04-04). [Distribution of Crossings, Nestings and Alignments of Two Edges in Matchings and Partitions](https://doi.org/10.37236/1059).
+- Alan D. Sokal (2022-03-21). [Total positivity of some polynomial matrices that enumerate labeled trees and forests I: forests of rooted labeled trees](https://doi.org/10.1007/s00605-022-01687-0).
 
 - Trees, Forests, and Total Positivity: I. $q$-Trees and $q$-Forests Matrices (HTTP 200). [Retrieved address](https://doi.org/10.37236/10465).
 - Trees, Forests, and Total Positivity: I. $q$-Trees and $q$-Forests Matrices        -       UCL Discovery (HTTP 200). [Retrieved address](https://discovery.ucl.ac.uk/id/eprint/10138471/).

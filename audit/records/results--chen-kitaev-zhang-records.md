@@ -29,6 +29,8 @@ Conjectures 1 and 3 concern record distributions distinct from Conjecture 2 on t
 - Latest change to this landing file at the snapshot on 2026-11-21T05:58:59-06:00. [Commit 652eca642](https://github.com/1337isnot1337/solved-conjectures/commit/652eca642f9108bdfcd14e0f34c366df8a7463e5).
 - Coordination and prior review. [#157](https://github.com/1337isnot1337/solved-conjectures/issues/157).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chen-kitaev-zhang-records/SOURCES.md)
@@ -38,6 +40,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2404.18517v1) (19 pages). conjecture 1 on PDF p. 17 · conjecture 2 on PDF p. 17 · conjecture 3 on PDF p. 17.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Joanna N. Chen, Sergey Kitaev b, Philip B. Zhang (2024-05-15). [Distributions of statistics on separable permutations](https://doi.org/10.1016/j.dam.2024.05.004).
+- Shishuo Fu, Zhicong Lin, Jiang Zeng (2018-06-27). [On two unimodal descent polynomials](https://doi.org/10.1016/j.disc.2018.06.010).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2024.05.004).
 - Distributions of statistics on separable permutations (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.18517v1).

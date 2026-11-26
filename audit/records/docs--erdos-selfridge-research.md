@@ -18,6 +18,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T03:12:11-06:00. [Commit c7a15cce8](https://github.com/1337isnot1337/solved-conjectures/commit/c7a15cce87889821e51bfc1495e492249f846fc1).
 - Latest change to this landing file at the snapshot on 2026-11-20T03:12:11-06:00. [Commit c7a15cce8](https://github.com/1337isnot1337/solved-conjectures/commit/c7a15cce87889821e51bfc1495e492249f846fc1).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [erdos-selfridge-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-selfridge-research.md)
@@ -28,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1811.03547) (30 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Xiangjun Dai, Huixi Li, Junfeng Li, Shaoyun Yi (2026-11-11). [On the moduli of distinct covering systems](https://doi.org/10.48550/arxiv.2611.15110).
 
 - 7 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/7).
 - List of conjectures by Paul Erdős - Wikipedia (HTTP 200). [Retrieved address](https://en.wikipedia.org/wiki/List_of_conjectures_by_Paul_Erd%C5%91s).

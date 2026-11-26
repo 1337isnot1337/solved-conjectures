@@ -22,6 +22,8 @@ For a nonexceptional center, each internal block in the selected color-neighbor 
 - Latest change to this landing file at the snapshot on 2026-11-26T09:31:25-06:00. [Commit 44df818f6](https://github.com/1337isnot1337/solved-conjectures/commit/44df818f6acde0c803cbca15127bdb5a27190054).
 - Coordination and prior review. [#852](https://github.com/1337isnot1337/solved-conjectures/issues/852).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/multicolor-steiner-sail/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/multicolor-steiner-sail/PROOF.md) · [random-systems.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/multicolor-steiner-sail/random-systems.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://real.mtak.hu/162638/1/98.pdf) (13 pages). problem 1.3 on PDF p. 2, 3, 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- David A. Grable, Kevin T. Phelps, Vojt?ch R�dl (1995-06-01). [The minimum independence number for designs](https://doi.org/10.1007/bf01200754).
 
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/182_jcd1.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://real.mtak.hu/162638/1/98.pdf).

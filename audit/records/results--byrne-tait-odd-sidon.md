@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T10:50:36-06:00. [Commit 2e54a945a](https://github.com/1337isnot1337/solved-conjectures/commit/2e54a945aa14bb6965f88f9fc21c63e1d9183921).
 - Coordination and prior review. [#876](https://github.com/1337isnot1337/solved-conjectures/issues/876).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/byrne-tait-odd-sidon/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/byrne-tait-odd-sidon/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/byrne-tait-odd-sidon/PROOF.md)
@@ -30,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2509.07750v1) (32 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- John Byrne, Michael Tait (2026-06-01). [New constructions and bounds for nonabelian Sidon sets with applications to Turán-type problems](https://doi.org/10.4153/s0008414x26102314).
 
 - New constructions and bounds for nonabelian Sidon sets with applications to Turán-type problems (HTTP 200). [Retrieved address](https://doi.org/10.4153/S0008414X26102314).
 - New constructions and bounds for nonabelian Sidon sets with applications to Tur\'an-type problems (HTTP 200). [Retrieved address](https://arxiv.org/abs/2509.07750v1).

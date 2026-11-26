@@ -26,6 +26,8 @@ Repository target is §7 item 8, absence of an absolute cutoff via first disagre
 - Latest change to this landing file at the snapshot on 2026-11-26T10:50:36-06:00. [Commit 2e54a945a](https://github.com/1337isnot1337/solved-conjectures/commit/2e54a945aa14bb6965f88f9fc21c63e1d9183921).
 - Coordination and prior review. [#374](https://github.com/1337isnot1337/solved-conjectures/issues/374).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blitvic-kammoun-steingrimsson-packing-cutoff/PROOF.md)
@@ -36,6 +38,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2611.12829) (45 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Natasha Blitvić, Mohammed Slim Kammoun, Einar Steingrímsson (2026-10-21). [Permutations, Pattern Covers, Posets and Positivity: Part I: Patterns and Posets](https://doi.org/10.48550/arxiv.2610.29846).
+- Natasha Blitvić, Mohammed Slim Kammoun, Einar Steingrímsson (2026-11-09). [Permutations, Pattern Covers, Posets and Positivity, Part II: Regular Pattern Packings and Moment Sequences](https://doi.org/10.48550/arxiv.2611.12829).
 
 - Permutations, Pattern Covers, Posets and Positivity: Part I: Patterns and Posets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.29846v1).
 - The whole prescribed packing-maximum conjecture \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/blitvic-kammoun-steingrimsson-2026-packing-maximum/).

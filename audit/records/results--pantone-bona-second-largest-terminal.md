@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:05:28+01:00. [Commit b0d3e0dd4](https://github.com/1337isnot1337/solved-conjectures/commit/b0d3e0dd495facdc85405775134009304e3e6a3d).
 - Coordination and prior review. [#380](https://github.com/1337isnot1337/solved-conjectures/issues/380).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-second-largest-terminal/FORMALIZATION.md)
@@ -34,6 +36,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2306.12682v2) (32 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Amitai Regev (1981-08-01). [Asymptotic values for degrees associated with strips of young diagrams](https://doi.org/10.1016/0001-8708(81)90012-8).
 
 - Permutations avoiding sets of patterns with long monotone subsequences (HTTP 200). [Retrieved address](https://arxiv.org/abs/2103.06918v2).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0001-8708(81)90012-8).

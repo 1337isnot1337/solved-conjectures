@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T11:34:29-06:00. [Commit 431c2bc72](https://github.com/1337isnot1337/solved-conjectures/commit/431c2bc729d2a8aad83d75f2657c471fa9c77459).
 - Coordination and prior review. [#109](https://github.com/1337isnot1337/solved-conjectures/issues/109) · [#144](https://github.com/1337isnot1337/solved-conjectures/pull/144).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/oravcova-sotak/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/oravcova-sotak/PROOF.md)
@@ -34,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://umv.science.upjs.sk/preprints/dokumenty/A8-2007.pdf) (39 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Javier Barajas, Oriol Serra (2007-08-27). [Distance graphs with maximum chromatic number](https://doi.org/10.1016/j.disc.2007.07.061).
+- Janka Oravcová, Roman Soták (2024-01-22). [On a problem concerning integer distance graphs](https://doi.org/10.48550/arxiv.2401.12347).
 
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - On a problem concerning integer distance graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2401.12347).

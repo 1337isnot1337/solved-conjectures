@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T09:39:18-06:00. [Commit c13d8313e](https://github.com/1337isnot1337/solved-conjectures/commit/c13d8313e4932e9cf36787606af45cb1d12ea255).
 - Coordination and prior review. [#67](https://github.com/1337isnot1337/solved-conjectures/issues/67).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/PROOF.md) · [EXISTENCE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/EXISTENCE.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hornak-wozniak/NOVELTY.md)
@@ -33,6 +35,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://hereditarnia.ics.upjs.sk/data_files/1297834445_WorkshopProblems2010.pdf) (41 pages). question 22.1 on PDF p. 27.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Mirko Horňák, Mariusz Woźniak (2007-04-09). [On arbitrarily vertex decomposable trees](https://doi.org/10.1016/j.disc.2007.04.008).
+- Dominique Barth, Olivier Baudon, J. Puech (2002-07-01). [Decomposable trees: a polynomial algorithm for tripodes](https://doi.org/10.1016/s0166-218x(00)00322-x).
+- Mirko Horňák, Źsolt Tuza, Mariusz Woźniak (2007-03-04). [On-line arbitrarily vertex decomposable trees](https://doi.org/10.1016/j.dam.2007.02.011).
+- Romain Ravaux (2010-04-26). [Decomposing trees with large diameter](https://doi.org/10.1016/j.tcs.2010.04.032).
+- Davion Qibao Tang, David G. L. Wang, Monica M. Y. Wang (2026-10-29). [$e$-Positive caterpillars have maximum degree at most three](https://doi.org/10.48550/arxiv.2610.39481).
 
 - PDF header (HTTP 200). [Retrieved address](https://umv.science.upjs.sk/preprints/dokumenty/A3-2006.pdf).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2007.04.008).

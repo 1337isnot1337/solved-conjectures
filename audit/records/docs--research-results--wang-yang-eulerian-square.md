@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:30:23-06:00. [Commit 45acca3e2](https://github.com/1337isnot1337/solved-conjectures/commit/45acca3e2c64a1f5e89492883f36e4d489fe83ae).
 - Coordination and prior review. [#804](https://github.com/1337isnot1337/solved-conjectures/issues/804).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/wang-yang-eulerian-square/README.md) · [diagonal-minors.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/wang-yang-eulerian-square/diagonal-minors.md) · [differences.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/wang-yang-eulerian-square/differences.md) · [sparse-minors.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/wang-yang-eulerian-square/sparse-minors.md) · [tail-minors.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/wang-yang-eulerian-square/tail-minors.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/0808.2349) (8 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ren-Hong Wang, Yan Qiu Xu, Zhiqiang Xu (2008-08-18). [A spline interpretation of Eulerian numbers](https://doi.org/10.48550/arxiv.0808.2349).
+- Jianxi Mao (2026-08-29). [Eulerian triangle is totally positive of order 3](https://doi.org/10.48550/arxiv.2608.29224).
 
 - PDF header (HTTP 200). [Retrieved address](https://cfc.nankai.edu.cn/_upload/article/files/ca/07/264e89bc4d9bb418a6d91d482b90/ef62459f-bec2-470d-8199-b57a790de20a.pdf).
 - A spline interpretation of Eulerian numbers (HTTP 200). [Retrieved address](https://arxiv.org/abs/0808.2349).

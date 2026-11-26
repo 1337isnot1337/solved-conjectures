@@ -35,6 +35,8 @@ Earlier exact disproof of the particular-rank clause of Conjecture 5.3. Both sou
 - Latest change to this landing file at the snapshot on 2026-11-24T17:25:50Z. [Commit 6e3e7c8d3](https://github.com/1337isnot1337/solved-conjectures/commit/6e3e7c8d36949098235f493604b7492ca4d9c154).
 - Coordination and prior review. [#115](https://github.com/1337isnot1337/solved-conjectures/issues/115).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/PROOF.md) · [INDEPENDENT-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/INDEPENDENT-AUDIT.md) · [LEAN_STATUS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/LEAN_STATUS.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rowland-sistos-barron/NOVELTY.md)
@@ -45,6 +47,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2501.14643) (23 pages). conjecture 5.3 on PDF p. 15, 19.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Eric Rowland, Barron, Jesus Sistos (2025-01-24). [Complexity of powers of a constant-recursive sequence](https://doi.org/10.48550/arxiv.2501.14643).
 
 - Complexity of powers of a constant-recursive sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/2501.14643v1).
 - Complexity of powers of a constant-recursive sequence (HTTP 200). [Retrieved address](https://arxiv.org/abs/2501.14643).

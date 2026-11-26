@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T14:26:22Z. [Commit 61b05d497](https://github.com/1337isnot1337/solved-conjectures/commit/61b05d497f54e8472225a4e8f6a4f0113576cf8b).
 - Coordination and prior review. [#163](https://github.com/1337isnot1337/solved-conjectures/issues/163).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/SOURCES.md) · [MOMENT-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/MOMENT-AUDIT.md) · [NUMERICAL-MOMENTS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zhu-jacobi-stirling/NUMERICAL-MOMENTS.md)
@@ -32,6 +34,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1609.01544) (23 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bao-Xuan Zhu (2024-05-03). [Coefficientwise Hankel-total positivity of the row-generating polynomials for the output matrices of certain production matrices](https://doi.org/10.1016/j.aim.2024.109695).
+- Bao-Xuan Zhu (2014-04-11). [Some positivities in certain triangular arrays](https://doi.org/10.1090/s0002-9939-2014-12008-9).
+- Bao-Xuan Zhu (2018-07-20). [q -log-convexity from linear transformations and polynomials with only real zeros](https://doi.org/10.1016/j.ejc.2018.06.003).
+- George E. Andrews, Eric S. Egge, Wolfgang Gawronski, Lance L. Littlejohn (2012-08-27). [The Jacobi–Stirling numbers](https://doi.org/10.1016/j.jcta.2012.08.006).
+- Bao-Xuan Zhu (2026-10-31). [Coefficientwise Hankel-total positivity from a universal cumulant lifting](https://doi.org/10.48550/arxiv.2611.01172).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.aim.2024.109695).
 - Coefficientwise Hankel-total positivity of the row-generating polynomials for the output matrices of certain production matrices (HTTP 200). [Retrieved address](https://arxiv.org/abs/2202.03793).

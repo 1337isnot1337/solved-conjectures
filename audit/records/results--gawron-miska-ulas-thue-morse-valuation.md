@@ -24,6 +24,8 @@ Published unboundedness for powers of the generating series is distinct from exa
 - Latest change to this landing file at the snapshot on 2026-11-24T12:33:15-06:00. [Commit fefb9083c](https://github.com/1337isnot1337/solved-conjectures/commit/fefb9083c228d9f60e48d1e5458e7bb041f63d70).
 - Coordination and prior review. [#429](https://github.com/1337isnot1337/solved-conjectures/issues/429).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-valuation/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-valuation/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-valuation/PROOF.md)
@@ -34,6 +36,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1703.01955) (34 pages). conjecture 5.2 on PDF p. 30.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Maciej Gawron, Piotr Miska, Maciej Ulas (2017-04-07). [Arithmetic properties of coefficients of power series expansion of $$prod _{n=0}^{infty }left( 1-x^{2^{n}}right) ^{t}$$ ∏ n = 0 ∞ 1 - x 2 n t (with an appendix by Andrzej Schinzel)](https://doi.org/10.1007/s00605-017-1041-2).
+- Zhao Shen, Xinping Wang (2026-06-27). [2-adic Valuations of Coefficients of the Fifth and Ninth Powers of the Thue--Morse Generating Function](https://doi.org/10.48550/arxiv.2606.28718).
+- Zhao Shen (2026-09-15). [Powers of the Thue--Morse Series: 2-Adic Valuations and Automatic Odd Parts](https://doi.org/10.48550/arxiv.2609.16966).
+- Jinmin Yu, Wenzhong Lei, Shaofang Hong (2026-06-24). [Proof of the Gawron-Miska-Ulas conjecture concerning unboundedness of coefficients of power series expansion of $prod_{n=0}^{infty}(1-x^{2^{n}})^m$](https://doi.org/10.48550/arxiv.2606.25825).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00605-017-1041-2).
 - 2-adic Valuations of Coefficients of the Fifth and Ninth Powers of the Thue--Morse Generating Function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2606.28718).

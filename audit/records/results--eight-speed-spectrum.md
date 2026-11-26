@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T19:21:02-06:00. [Commit 25c199a10](https://github.com/1337isnot1337/solved-conjectures/commit/25c199a10ac8eb0b34d500318cf2d1e8a02e298f).
 - Latest change to this landing file at the snapshot on 2026-11-18T19:21:02-06:00. [Commit 25c199a10](https://github.com/1337isnot1337/solved-conjectures/commit/25c199a10ac8eb0b34d500318cf2d1e8a02e298f).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/eight-speed-spectrum/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/eight-speed-spectrum/PROOF.md)
@@ -29,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2609.03444v2) (18 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- F. Cordella (2026-09-03). [Odd denominators in the Lonely Runner spectrum for six speeds](https://doi.org/10.48550/arxiv.2609.03444).
+- Hyunjun Yi, Karam Gill, Bryan Bu (2026-10-28). [Four runners that are barely lonely](https://doi.org/10.48550/arxiv.2610.40694).
 
 - Barely lonely runners and very lonely runners (HTTP 200). [Retrieved address](https://arxiv.org/abs/1912.06034).
 - Odd denominators in the Lonely Runner spectrum for six speeds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.03444v2).

@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T14:08:44Z. [Commit 700e05391](https://github.com/1337isnot1337/solved-conjectures/commit/700e05391191b539ded7aab85a75a16c163e9b94).
 - Coordination and prior review. [#487](https://github.com/1337isnot1337/solved-conjectures/issues/487).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/FORMALIZATION.md) · [PRIORITY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/xu-zhou-laplacian-diameter/PRIORITY.md)
@@ -30,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2306.14127) (17 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Leyou Xu, Bo Zhou (2024-11-21). [Diameter vs. Laplacian eigenvalue distribution](https://doi.org/10.13001/ela.2024.8757).
+- Wenhao Zhen, Dein Wong, Songnian Xu (2026-05-05). [Laplacian eigenvalue distribution and girth of graphs](https://doi.org/10.1016/j.laa.2026.05.003).
 
 - PDF header (HTTP 200). [Retrieved address](https://journals.uwyo.edu/index.php/ela/article/download/8757/6821).
 - Diameter vs Laplacian eigenvalue distribution (HTTP 200). [Retrieved address](https://arxiv.org/abs/2401.03777v2).

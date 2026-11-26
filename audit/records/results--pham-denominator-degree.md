@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-19T08:17:02-06:00. [Commit 59ce1092a](https://github.com/1337isnot1337/solved-conjectures/commit/59ce1092a81f2fa8a6bb0f371c577007a6cbeae6).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pham-denominator-degree/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pham-denominator-degree/PROOF.md) · [FORMAL_PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pham-denominator-degree/FORMAL_PROOF.md)

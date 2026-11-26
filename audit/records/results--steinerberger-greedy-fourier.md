@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T17:21:37Z. [Commit 6c4ee25db](https://github.com/1337isnot1337/solved-conjectures/commit/6c4ee25db230f3efa4cfd23b49602365d47314a9).
 - Coordination and prior review. [#436](https://github.com/1337isnot1337/solved-conjectures/issues/436) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-greedy-fourier/LEAN_REVIEW.md)
@@ -33,6 +35,12 @@ The local HTTP probe and public search index differed on access to one PDF. The 
 - [Source PDF](https://arxiv.org/pdf/2109.06298) (24 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Florian Pausinger (2020-05-18). [Greedy energy minimization can count in binary: point charges and the van der Corput sequence](https://doi.org/10.1007/s10231-020-00990-7).
+- Ralph Kritzinger, Friedrich Pillichshammer (2022-02-01). [Exact order of extreme $$L_p$$ discrepancy of infinite sequences in arbitrary dimension](https://doi.org/10.1007/s00013-021-01688-9).
+- Josef Dick, Friedrich Pillichshammer (2024-12-24). [Lebesgue constants for the Walsh system and the discrepancy of the van der Corput sequence](https://doi.org/10.1007/s00013-024-02087-6).
 
 - Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10231-020-00990-7).

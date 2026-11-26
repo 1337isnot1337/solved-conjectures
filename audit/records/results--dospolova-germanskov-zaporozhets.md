@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T02:56:12-06:00. [Commit 0613d18cd](https://github.com/1337isnot1337/solved-conjectures/commit/0613d18cd6b53e4545a83456baa3b4a144d97369).
 - Coordination and prior review. [#199](https://github.com/1337isnot1337/solved-conjectures/issues/199).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/PROOF.md) · [ALGEBRA_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/ALGEBRA_REVIEW.md) · [ANALYSIS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/ANALYSIS_REVIEW.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/NOVELTY.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/ROOT_REVIEW.md) · [SOURCE_GLYPH_GATE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/dospolova-germanskov-zaporozhets/SOURCE_GLYPH_GATE.md)
@@ -32,6 +34,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://case.edu/artsci/math/mwmeckes/perspectivesInHighDimensions/vitale.pdf) (42 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Richard A. Vitale (2001-06-01). [Intrinsic volumes and Gaussian processes](https://doi.org/10.1017/s0001867800010831).
+- Maria Dospolova, Mikhail Germanskov, Dmitry Zaporozhets (2025-07-15). [On Steiner entire function](https://doi.org/10.48550/arxiv.2507.11626).
+- Mariia Dospolova, Mikhail Germanskov, Dmitry Zaporozhets (2026-11-16). [Regularity of Gaussian processes, metric entropy and the Wills functional](https://doi.org/10.48550/arxiv.2611.21460).
+- Jaouad Mourtada (2026-11-12). [Quantitative characterization of Gaussian small ball probabilities](https://doi.org/10.48550/arxiv.2611.17071).
 
 - On Steiner entire function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2507.11626v1).
 - Intrinsic volumes and Gaussian processes (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0001867800010831).

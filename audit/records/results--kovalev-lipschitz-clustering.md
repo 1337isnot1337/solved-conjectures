@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T12:37:55Z. [Commit 245c2b8c4](https://github.com/1337isnot1337/solved-conjectures/commit/245c2b8c478f4d105b1e5e5243b688253a94308d).
 - Coordination and prior review. [#453](https://github.com/1337isnot1337/solved-conjectures/issues/453).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-lipschitz-clustering/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-lipschitz-clustering/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-lipschitz-clustering/PROOF.md) · [CONSECUTIVE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-lipschitz-clustering/CONSECUTIVE.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2005.13579) (10 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Leonid V. Kovalev (2026-10-22). [Lipschitz clustering in normed spaces and barycentric spaces](https://doi.org/10.48550/arxiv.2610.31555).
 
 - Lipschitz clustering in normed spaces and barycentric spaces (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.31555v1).
 - Growth rate of Lipschitz constants for retractions between finite subset spaces (HTTP 200). [Retrieved address](https://arxiv.org/abs/2005.13579).

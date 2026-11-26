@@ -24,6 +24,8 @@ The logarithmic bound fixes a monomial degree d≥2. The compact catalogue and h
 - Latest change to this landing file at the snapshot on 2026-11-26T09:00:46-08:00. [Commit 8d693f83e](https://github.com/1337isnot1337/solved-conjectures/commit/8d693f83e0dd03b327bcf7260829e802132a8d8c).
 - Coordination and prior review. [#826](https://github.com/1337isnot1337/solved-conjectures/issues/826).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md) · [FROBENIUS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/FROBENIUS.md) · [REFLEXIVE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/asgarli-ghioca-yip-blocking-pencil/REFLEXIVE.md)
@@ -34,6 +36,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2301.06019) (9 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Shamil Asgarli, Dragos Ghioca, Chi Hoi Yip (2026-10-01). [Blocking sets from a union of plane curves](https://doi.org/10.1007/s10623-026-01958-z).
+- Emanuela Ughi (1988-06-01). [On (k, n)-blocking sets which can be obtained as a union of conics](https://doi.org/10.1007/bf00183016).
+- Jeremy M. Dover, Keith E. Mellinger, Kenneth L. Wantz (2013-01-01). [Blocking semiovals containing conics](https://doi.org/10.1515/advgeom-2012-0025).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s10623-026-01958-z).
 - Cinna Davis (@1337isnot1337) / X (HTTP 200). [Retrieved address](https://x.com/1337isnot1337).

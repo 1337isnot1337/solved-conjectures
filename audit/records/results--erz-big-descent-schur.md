@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T11:28:19-06:00. [Commit 16ac09a1d](https://github.com/1337isnot1337/solved-conjectures/commit/16ac09a1dd4f9fa30b1e115c163baf4bc04083a7).
 - Coordination and prior review. [#330](https://github.com/1337isnot1337/solved-conjectures/issues/330).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erz-big-descent-schur/PROOF.md)
@@ -33,6 +35,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2408.15111) (36 pages). conjecture 4.4 on PDF p. 27 · conjecture 4.9 on PDF p. 29.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Sergi Elizalde, Johnny Rivera, Yan Zhuang (2026-02-02). [Counting Pattern-Avoiding Permutations by Big Descents](https://doi.org/10.1007/s00026-026-00805-1).
 
 - Counting pattern-avoiding permutations by big descents (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.15111).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00026-026-00805-1).

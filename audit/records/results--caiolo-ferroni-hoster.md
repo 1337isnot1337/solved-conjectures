@@ -27,6 +27,8 @@ The rank-five matroid family, the associated dual Chow polynomial and the augmen
 - Latest change to this landing file at the snapshot on 2026-11-24T15:43:48-08:00. [Commit cb2f3ab96](https://github.com/1337isnot1337/solved-conjectures/commit/cb2f3ab96c2c48738ece6e404e2c5577e5df0ad8).
 - Coordination and prior review. [#111](https://github.com/1337isnot1337/solved-conjectures/issues/111) · [#560](https://github.com/1337isnot1337/solved-conjectures/issues/560) · [#597](https://github.com/1337isnot1337/solved-conjectures/pull/597).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/caiolo-ferroni-hoster/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/caiolo-ferroni-hoster/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/caiolo-ferroni-hoster/PROOF.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/caiolo-ferroni-hoster/LEAN_REVIEW.md) · [RANKS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/caiolo-ferroni-hoster/RANKS.md)
@@ -37,6 +39,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.17135v1) (46 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Giovanni Caiolo, Luis Ferroni, Elena Hoster (2026-05-27). [Dual Chow polynomials of matroids and posets](https://doi.org/10.48550/arxiv.2605.28474).
+- Gergely Bérczi, Basile Coron, Christopher Eur, Shiyue Li (2026-10-12). [Chow polynomials and chain polynomials of matroids are not log-concave](https://doi.org/10.48550/arxiv.2610.17135).
 
 - Dual Chow polynomials of matroids and posets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2605.28474v1).
 - Chow polynomials and chain polynomials of matroids are not log-concave (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.17135v1).

@@ -27,6 +27,8 @@ Earlier exact resolution. Shunshun Ma’s Theorem 1 treats every positive Stern 
 - Latest change to this landing file at the snapshot on 2026-11-25T09:29:13Z. [Commit 483da5250](https://github.com/1337isnot1337/solved-conjectures/commit/483da525046ebf672a910f593ef78419073d8e81).
 - Coordination and prior review. [#447](https://github.com/1337isnot1337/solved-conjectures/issues/447).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/PROOF.md) · [EXTERIOR.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/EXTERIOR.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/stern-half-plane/LEAN_REVIEW.md)
@@ -37,6 +39,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://publi.math.unideb.hu/paper/2146/download/10_5486_PMD_2017_7620.pdf) (27 pages). conjecture 3.1 on PDF p. 7, 15, 25.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Karl Dilcher, Mohammad Kidwai, Hayley Tomkins (2017-04-01). [Zeros and irreducibility of Stern polynomials](https://doi.org/10.5486/pmd.2017.7620).
+- David Altizio (2025-11-05). [Zeros of Stern polynomials in the complex plane](https://doi.org/10.48550/arxiv.2511.03847).
 
 - PDF header (HTTP 200). [Retrieved address](https://doi.org/10.5486/PMD.2017.7620).
 - Zeros of Stern polynomials in the complex plane (HTTP 200). [Retrieved address](https://arxiv.org/abs/2511.03847v1).

@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T13:22:52Z. [Commit 7388bb602](https://github.com/1337isnot1337/solved-conjectures/commit/7388bb6020ca77430ae7254ff8db446d40ab7e89).
 - Coordination and prior review. [#465](https://github.com/1337isnot1337/solved-conjectures/issues/465).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simmons-weiss-hausdorff/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simmons-weiss-hausdorff/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simmons-weiss-hausdorff/PROOF.md)

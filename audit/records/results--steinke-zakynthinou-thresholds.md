@@ -35,6 +35,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-21T22:35:27-06:00. [Commit 85c619a53](https://github.com/1337isnot1337/solved-conjectures/commit/85c619a539b780f36bf2fafd7d7c26d2f3ecfdad).
 - Coordination and prior review. [#223](https://github.com/1337isnot1337/solved-conjectures/issues/223).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PROOF.md) · [COMPOSITION_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/COMPOSITION_REVIEW.md) · [DETERMINISTIC.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/DETERMINISTIC.md) · [EFFICIENCY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/EFFICIENCY.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/LEAN_REVIEW.md) · [PRIORITY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PRIORITY.md) · [PRIOR_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PRIOR_AUDIT.md) · [PROPERIZATION_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/PROPERIZATION_REVIEW.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/ROOT_REVIEW.md) · [TREE_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinke-zakynthinou-thresholds/TREE_REVIEW.md)
@@ -45,6 +47,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2001.09122v3) (58 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Thomas Steinke, Lydia Zakynthinou (2020-01-24). [Reasoning About Generalization via Conditional Mutual Information](https://doi.org/10.48550/arxiv.2001.09122).
+- Mahdi Haghifam, Gintare Karolina Dziugaite, Shay Moran, Daniel M. Roy (2020-11-05). [On the Information Complexity of Proper Learners for VC Classes in the Realizable Case](https://doi.org/10.48550/arxiv.2011.02970).
+- Steve Hanneke, Juexiao Wang (2026-10-06). [The optimal information complexity of VC learning](https://doi.org/10.48550/arxiv.2610.10600).
 
 - PDF header (HTTP 200). [Retrieved address](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf).
 - Reasoning About Generalization via Conditional Mutual Information (HTTP 200). [Retrieved address](https://arxiv.org/abs/2001.09122v3).

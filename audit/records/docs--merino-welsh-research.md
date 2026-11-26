@@ -25,6 +25,8 @@ The DOI printed for Merino and Welsh returned 404. Crossref identifies the paper
 - Latest change to this landing file at the snapshot on 2026-11-19T23:54:40-06:00. [Commit 31557d30a](https://github.com/1337isnot1337/solved-conjectures/commit/31557d30ab05efed84c7f262ff87ebc26933fe0a).
 - Coordination and prior review. [#44](https://github.com/1337isnot1337/solved-conjectures/issues/44).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [merino-welsh-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/merino-welsh-research.md)
@@ -35,6 +37,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.27706) (19 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Csongor Beke, Gergely Csáji, Péter Csíkvári, Sára Pituk (2024-04-25). [The Merino–Welsh conjecture is false for matroids](https://doi.org/10.1016/j.aim.2024.109674).
+- Jungang Chen, Xian'an Jin, Tianlong Ma (2026-10-20). [On minimum-size matroid counterexamples to the multiplicative Merino--Welsh inequality](https://doi.org/10.48550/arxiv.2610.27706).
+- Jungang Chen, Jiaxin Xie (2026-10-05). [A direct inductive proof of the sharp Merino--Welsh threshold for matroids](https://doi.org/10.48550/arxiv.2610.06589).
+- Benedek Váli (2026-11-11). [The Merino-Welsh conjecture for sparse and dense graphs](https://doi.org/10.48550/arxiv.2611.15008).
+- Shaohan Xu, Fengming Dong, Kexiang Xu (2026-10-19). [The multiplicative Merino--Welsh inequality for chordal graphs](https://doi.org/10.48550/arxiv.2610.25817).
 
 - PDF header (HTTP 200). [Retrieved address](https://fs.unm.edu/IJMC/ComparingTheNumberOfAcyclicAndTotallyCyclicOrientations.pdf).
 - Source URL (HTTP 404). [Retrieved address](https://doi.org/10.1007/s000260050140).

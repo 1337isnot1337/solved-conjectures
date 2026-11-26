@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T23:06:00-06:00. [Commit 74a07bccd](https://github.com/1337isnot1337/solved-conjectures/commit/74a07bccdd902353ac6d6f8fcc9262350927dd9e).
 - Coordination and prior review. [#155](https://github.com/1337isnot1337/solved-conjectures/issues/155).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wild-number-complete-graphs/README.md) · [IMPROVEMENT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wild-number-complete-graphs/IMPROVEMENT.md) · [REPORT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wild-number-complete-graphs/REPORT.md)
@@ -33,6 +35,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1711.06797) (7 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Linyuan Lü, Austin Mohr, Łászló A. Székely (2012-09-12). [Quest for Negative Dependency Graphs](https://doi.org/10.1007/978-1-4614-4565-4_21).
+- Aleyah Dawkins, Alexander Nappo, Jessie Tong, Christopher Zimbizi (2026-10-15). [Wild number for spanning trees in complete and complete bipartite graphs](https://doi.org/10.48550/arxiv.2610.22142).
+- Nicholas J. A. Harvey, Jan Vondrák (2017-11-18). [Short proofs for generalizations of the Lovász Local Lemma: Shearer's condition and cluster expansion](https://doi.org/10.48550/arxiv.1711.06797).
+- Linyuan Lü, Łászló A. Székely (2009-05-25). [A new asymptotic enumeration technique: the Lovasz Local Lemma](https://doi.org/10.48550/arxiv.0905.3983).
 
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - Wild number for spanning trees in complete and complete bipartite graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.22142).

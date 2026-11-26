@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T05:03:00-06:00. [Commit ddd05af01](https://github.com/1337isnot1337/solved-conjectures/commit/ddd05af0142022f8aa8c228621e5bc9aafa04555).
 - Coordination and prior review. [#796](https://github.com/1337isnot1337/solved-conjectures/issues/796) · [#805](https://github.com/1337isnot1337/solved-conjectures/issues/805).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/constant-weight-strong-wom/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/constant-weight-strong-wom/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/constant-weight-strong-wom/PROOF.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1312.0972) (27 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Eyal En Gad, Eitan Yaakobi, Anxiao Andrew Jiang, Jehoshua Bruck (2015-06-08). [Rank-Modulation Rewrite Coding for Flash Memories](https://doi.org/10.1109/tit.2015.2442579).
 
 - PDF header (HTTP 200). [Retrieved address](https://yaakobi.net.technion.ac.il/files/2015/11/16_RM_Rewriting_IT15.pdf).
 - Rank-Modulation Rewrite Coding for Flash Memories (HTTP 200). [Retrieved address](https://arxiv.org/abs/1312.0972).

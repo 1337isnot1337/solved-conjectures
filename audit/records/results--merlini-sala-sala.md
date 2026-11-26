@@ -28,6 +28,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T07:41:47Z. [Commit f59222bca](https://github.com/1337isnot1337/solved-conjectures/commit/f59222bca43ecd7fcc79615a193c4bb7cb1dda6c).
 - Coordination and prior review. [#128](https://github.com/1337isnot1337/solved-conjectures/issues/128) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/merlini-sala-sala/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/merlini-sala-sala/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/merlini-sala-sala/PROOF.md)
@@ -38,6 +40,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1907.01903) (29 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- D. Merlini, Sala Massimo, Sala Nicoletta (2019-03-14). [A numerical comment on the 'tiny' oscillations and a heuristic 'conjecture'](https://doi.org/10.48550/arxiv.1903.06233).
+- D. Merlini, Sala Massimo, Sala Nicoletta (2019-06-30). [Analysis of a Complex approximation to the Li-Keiper coefficients around the K Function](https://doi.org/10.48550/arxiv.1907.01903).
+- André Voros (2022-04-03). [From asymptotic to closed forms for the Keiper/Li approach to the Riemann Hypothesis](https://doi.org/10.48550/arxiv.2204.01036).
 
 - A numerical comment on the 'tiny' oscillations and a heuristic 'conjecture' (HTTP 200). [Retrieved address](https://arxiv.org/abs/1903.06233).
 - Analysis of a Complex approximation to the Li-Keiper coefficients around the K Function (HTTP 200). [Retrieved address](https://arxiv.org/abs/1907.01903).

@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T17:04:56Z. [Commit 029fe38ee](https://github.com/1337isnot1337/solved-conjectures/commit/029fe38ee228083b2500232edcea1fe04fcc9d3d).
 - Coordination and prior review. [#463](https://github.com/1337isnot1337/solved-conjectures/issues/463).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/juhnke-lattice-paths/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/juhnke-lattice-paths/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/juhnke-lattice-paths/PROOF.md) · [LEAN-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/juhnke-lattice-paths/LEAN-AUDIT.md)
@@ -30,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://ems.press/content/serial-article-files/53596?nt=1) (76 pages). conjecture 5 on PDF p. 70 · conjecture 6 on PDF p. 70.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Francesco Brenti (1989-01-01). [Unimodal, log-concave and Pólya frequency sequences in combinatorics](https://doi.org/10.1090/memo/0413).
 
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/53596?nt=1).
 - Unimodal Log-Concave and Pólya Frequency Sequences in Combinatorics (HTTP 200). [Retrieved address](https://doi.org/10.1090/memo/0413).

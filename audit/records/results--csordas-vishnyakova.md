@@ -28,6 +28,8 @@ The landing page simultaneously reported no Lean verification and linked a compl
 - Latest change to this landing file at the snapshot on 2026-11-25T07:54:54Z. [Commit d8030320b](https://github.com/1337isnot1337/solved-conjectures/commit/d8030320b0b2898a4e820e4983a388ecc0359f29).
 - Coordination and prior review. [#132](https://github.com/1337isnot1337/solved-conjectures/issues/132) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/csordas-vishnyakova/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/csordas-vishnyakova/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/csordas-vishnyakova/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/csordas-vishnyakova/FORMALIZATION.md)
@@ -38,6 +40,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/0911.1122) (6 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- George Csordás, Anna Vishnyakova (2013-06-28). [The generalized Laguerre inequalities and functions in the Laguerre-Pólya class](https://doi.org/10.2478/s11533-013-0269-x).
 
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.2478/s11533-013-0269-x).
 - Source URL (HTTP 202). [Retrieved address](https://www.degruyterbrill.com/document/doi/10.2478/s11533-013-0269-x/pdf).

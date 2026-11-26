@@ -33,6 +33,8 @@ The two packages share the exact single-edge theorem: in the second notation n=d
 - Latest change to this landing file at the snapshot on 2026-11-26T02:03:35-06:00. [Commit 08acaebf8](https://github.com/1337isnot1337/solved-conjectures/commit/08acaebf819f6aa4920927034b8beaa19fb1a8ea).
 - Coordination and prior review. [#147](https://github.com/1337isnot1337/solved-conjectures/issues/147).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edge/LEAN_REVIEW.md)
@@ -43,6 +45,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2603.08822v1) (15 pages). conjecture 2 on PDF p. 7 · problem 2 on PDF p. 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ján Mazák, Filip Zrubák (2026-03-09). [Circular chromatic index of small graphs](https://doi.org/10.48550/arxiv.2603.08822).
 
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822).
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822v1).

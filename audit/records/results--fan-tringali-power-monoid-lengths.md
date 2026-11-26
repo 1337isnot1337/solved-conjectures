@@ -25,6 +25,8 @@ The October archive gives bounded coverage (up to twice a least positive element
 - Latest change to this landing file at the snapshot on 2026-11-24T17:35:46Z. [Commit 95975637e](https://github.com/1337isnot1337/solved-conjectures/commit/95975637ed891b872fdc1eda5e52e7cf51b456f9).
 - Coordination and prior review. [#414](https://github.com/1337isnot1337/solved-conjectures/issues/414) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/PROOF.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/LEAN.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-tringali-power-monoid-lengths/LEAN_REVIEW.md)
@@ -35,6 +37,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2508.10209) (19 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Yushuang Fan, Salvatore Tringali (2018-07-18). [Power monoids: A bridge between factorization theory and arithmetic combinatorics](https://doi.org/10.1016/j.jalgebra.2018.07.010).
+- Salvatore Tringali (2026-02-17). [Power monoids and their arithmetic: a survey](https://doi.org/10.48550/arxiv.2602.15754).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jalgebra.2018.07.010).
 - Power monoids and their arithmetic: a survey (HTTP 200). [Retrieved address](https://arxiv.org/abs/2602.15754v3).

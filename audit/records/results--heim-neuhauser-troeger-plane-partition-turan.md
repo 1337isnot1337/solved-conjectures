@@ -26,6 +26,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T02:11:24-06:00. [Commit 798d5edd5](https://github.com/1337isnot1337/solved-conjectures/commit/798d5edd534663ea666fd506d96c2c8bd2ce354d).
 - Coordination and prior review. [#388](https://github.com/1337isnot1337/solved-conjectures/issues/388).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-troeger-plane-partition-turan/FORMALIZATION.md)
@@ -35,6 +37,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2109.15145) (21 pages). conjecture 1 on PDF p. 4, 7 · conjecture 2 on PDF p. 7, 8, 16 · conjecture 3 on PDF p. 8, 16, 17.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bernhard E. Heim, Markus Neuhauser, Robert Tröger (2022-09-19). [Inequalities for Plane Partitions](https://doi.org/10.1007/s00026-022-00604-4).
+- Ken Ono, Sudhir Pujahari, Larry Rolen (2022-09-16). [Turán inequalities for the plane partition function](https://doi.org/10.1016/j.aim.2022.108692).
+- Bernhard E. Heim, Markus Neuhauser (2026-07-01). [Polynomization of Sun’s conjecture](https://doi.org/10.1007/s11139-026-01435-0).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00026-022-00604-4).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.aim.2022.108692).

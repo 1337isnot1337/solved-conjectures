@@ -25,6 +25,8 @@ The source Conjecture 4.3 is nonperiodicity for permitted parts congruent to 1 m
 - Latest change to this landing file at the snapshot on 2026-11-26T08:56:04-08:00. [Commit b1a37546d](https://github.com/1337isnot1337/solved-conjectures/commit/b1a37546d9e0d1c4040747d62276baf5bf0990d5).
 - Coordination and prior review. [#434](https://github.com/1337isnot1337/solved-conjectures/issues/434).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/PROOF.md) · [COMPLEMENT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/COMPLEMENT.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/FORMALIZATION.md) · [WEIGHTED.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-ulas-partition-signs/WEIGHTED.md)
@@ -34,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2202.05221) (12 pages). conjecture 4.3 on PDF p. 11 · conjecture 4.4 on PDF p. 11.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Filip Gawron, Maciej Ulas (2022-06-22). [Sign behaviour of sums of weighted numbers of partitions](https://doi.org/10.1007/s11139-022-00602-3).
+- Filip Gawron, Maciej Ulas (2025-01-28). [Signs behaviour of sums of weighted numbers of compositions](https://doi.org/10.1007/s11139-024-01006-1).
 
 - Signs behaviour of sums of weighted numbers of partitions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2202.05221).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11139-022-00602-3).

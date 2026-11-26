@@ -30,6 +30,8 @@ Earlier exact disproof. The September manuscript uses the very same witness 1 + 
 - Latest change to this landing file at the snapshot on 2026-11-25T07:45:08Z. [Commit b13f09c42](https://github.com/1337isnot1337/solved-conjectures/commit/b13f09c4289ae9a633697eaa481bccace0cdb3ab).
 - Coordination and prior review. [#137](https://github.com/1337isnot1337/solved-conjectures/issues/137).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wagner-laguerre-operator/FORMALIZATION.md)
@@ -39,6 +41,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2108.01827v2) (13 pages). conjecture 4.1 on PDF p. 10 · conjecture 4.3 on PDF p. 11.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ian Wagner (2022-10-16). [On a new class of Laguerre–Pólya type functions with applications in number theory](https://doi.org/10.2140/pjm.2022.320.177).
+- Jia-tao Fan, Xingwei Wang (2026-04-21). [The operators preserving real-rootedness and inequalities for symmetric function](https://doi.org/10.1016/j.aam.2026.103092).
+- Xingwei Wang, Neil Yang (2024-04-19). [Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function](https://doi.org/10.1090/tran/9081).
 
 - On a new class of Laguerre-P\'{o}lya type functions with applications in number theory (HTTP 200). [Retrieved address](https://arxiv.org/abs/2108.01827v2).
 - On a new class of Laguerre–Pólya type functions with applications in number theory (HTTP 200). [Retrieved address](https://msp.org/pjm/2022/320-1/p07.xhtml).

@@ -18,6 +18,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:36:03-06:00. [Commit bca14047c](https://github.com/1337isnot1337/solved-conjectures/commit/bca14047c3bf19b9214b5b855f7805373b7b229c).
 - Coordination and prior review. [#117](https://github.com/1337isnot1337/solved-conjectures/issues/117).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [cube.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/hill-luo-trinh-vindas-melendez/cube.md) · [directions.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/hill-luo-trinh-vindas-melendez/directions.md)
@@ -28,6 +30,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2603.19194) (33 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Charlie Hill, Ambrose Luo, Vu Trinh, Andrés R. Vindas-Meléndez (2026-07-16). [Lattice slices, Ehrhart polynomials, and magic positivity of generalized parking-function polytopes](https://doi.org/10.48550/arxiv.2607.15503).
+- Nicolas Avila, Luis Ferroni, Alejandro H. Morales (2026-03-19). [Luck and magic for Pitman-Stanley polytopes and parking functions](https://doi.org/10.48550/arxiv.2603.19194).
+- Feihu Liu, Zihao Zhang (2026-07-04). [Magic Positivity for the Ehrhart Polynomials of Partial Permutohedra](https://doi.org/10.48550/arxiv.2607.03854).
 
 - Lattice slices, Ehrhart polynomials, and magic positivity of generalized parking-function polytopes (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.15503).
 - Luck and magic for Pitman-Stanley polytopes and parking functions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.19194).

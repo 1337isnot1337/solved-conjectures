@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:30:23-06:00. [Commit 45acca3e2](https://github.com/1337isnot1337/solved-conjectures/commit/45acca3e2c64a1f5e89492883f36e4d489fe83ae).
 - Coordination and prior review. [#821](https://github.com/1337isnot1337/solved-conjectures/issues/821).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-primitive-sequence/README.md) · [prescribed-scales.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-primitive-sequence/prescribed-scales.md)
@@ -29,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.renyi.hu/~p_erdos/1980-03.pdf) (27 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- A. S. Besicovitch (1935-12-01). [On the density of certain sequences of integers](https://doi.org/10.1007/bf01448032).
 
 - 892 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/892).
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1980-03.pdf).

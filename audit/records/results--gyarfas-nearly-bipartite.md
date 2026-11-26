@@ -22,6 +22,8 @@ The finite reduction requires lifting each branch path with its parity so that a
 - Latest change to this landing file at the snapshot on 2026-11-26T09:31:25-06:00. [Commit 44df818f6](https://github.com/1337isnot1337/solved-conjectures/commit/44df818f6acde0c803cbca15127bdb5a27190054).
 - Coordination and prior review. [#808](https://github.com/1337isnot1337/solved-conjectures/issues/808).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gyarfas-nearly-bipartite/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gyarfas-nearly-bipartite/PROOF.md) · [core.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gyarfas-nearly-bipartite/core.md) · [finite.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gyarfas-nearly-bipartite/finite.md) · [grids.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gyarfas-nearly-bipartite/grids.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1509.07716) (15 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bruce A. Reed (1999-02-01). [Mangoes and Blueberries](https://doi.org/10.1007/s004930050056).
+- DANIEL C. SLILATY (2007-01-05). [Projective-planar signed graphs and tangled signed graphs](https://doi.org/10.1016/j.jctb.2006.10.002).
 
 - Fruit Salad (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v4i1r8).
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf).

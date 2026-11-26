@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T23:42:52+01:00. [Commit be5dd4957](https://github.com/1337isnot1337/solved-conjectures/commit/be5dd49571ed450387f667ce928afe2db28c9f45).
 - Coordination and prior review. [#468](https://github.com/1337isnot1337/solved-conjectures/issues/468) · [#596](https://github.com/1337isnot1337/solved-conjectures/pull/596).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-diameter-condition/FORMALIZATION.md)

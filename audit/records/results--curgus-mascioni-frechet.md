@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T08:15:19Z. [Commit 6e0c681ce](https://github.com/1337isnot1337/solved-conjectures/commit/6e0c681cee42f7d444cd25e7ed32d37c3be8299d).
 - Coordination and prior review. [#438](https://github.com/1337isnot1337/solved-conjectures/issues/438).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/curgus-mascioni-frechet/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/curgus-mascioni-frechet/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/curgus-mascioni-frechet/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/curgus-mascioni-frechet/FORMALIZATION.md)

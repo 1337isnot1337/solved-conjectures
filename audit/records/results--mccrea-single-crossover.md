@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T00:41:48-06:00. [Commit 85f72d876](https://github.com/1337isnot1337/solved-conjectures/commit/85f72d8769e05427797952b1ff1fe5022c6b5500).
 - Coordination and prior review. [#168](https://github.com/1337isnot1337/solved-conjectures/issues/168).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/NOVELTY.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mccrea-single-crossover/REVIEW.md)
@@ -33,6 +35,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.cnoctave.top/pdf/2609.12005) (14 pages). conjecture 1.2 on PDF p. 2 · conjecture 9.2 on PDF p. 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Gabriel Gray, Emily Payne, Holly Swisher, Ren Watson (2026-01-06). [Fixed perimeter analogues of some partition results](https://doi.org/10.1016/j.disc.2025.114968).
+- Marcus McCrea (2026-09-10). [Fixed-Perimeter Franklin Statistics and an Eventual Inequality](https://doi.org/10.48550/arxiv.2609.12005).
+- Philip Cuthbertson (2026-09-15). [A perimeter analogue of Franklin's identity and an inequality related to the parity of parts](https://doi.org/10.48550/arxiv.2609.17389).
+- Pankaj Jyoti Mahanta (2026-08-12). [A Proof of a Conjecture on Fixed Perimeter Partitions](https://doi.org/10.48550/arxiv.2608.11684).
 
 - Fixed-Perimeter Franklin Statistics and an Eventual Inequality (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.12005v2).
 - PDF header (HTTP 200). [Retrieved address](https://arxiv.cnoctave.top/pdf/2609.12005).

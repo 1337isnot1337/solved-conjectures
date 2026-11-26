@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T18:03:55Z. [Commit d4c72b54c](https://github.com/1337isnot1337/solved-conjectures/commit/d4c72b54c8825b38966afe4ab2b78ba1bdb8c013).
 - Coordination and prior review. [#416](https://github.com/1337isnot1337/solved-conjectures/issues/416) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md)
@@ -31,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2312.14450) (17 pages). question 1.2 on PDF p. 2, 3.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Chi Hoi Yip (2026-01-07). [Multiplicative irreducibility of small perturbations of the set of shifted k-th powers](https://doi.org/10.1007/s00493-025-00193-9).
+- Kai-Man Tsang, Chi Hoi Yip (2026-02-18). [Bipartite Diophantine tuples and their applications](https://doi.org/10.1007/s40993-026-00709-2).
 
 - PDF header (HTTP 200). [Retrieved address](https://math.unideb.hu/sites/default/files/inline-files/poly3_revised.pdf).
 - Multiplicatively reducible subsets of shifted perfect $k$-th powers and bipartite Diophantine tuples (HTTP 200). [Retrieved address](https://arxiv.org/abs/2312.14450).

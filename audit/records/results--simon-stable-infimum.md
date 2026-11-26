@@ -26,6 +26,8 @@ The Kilbas–Saigo upper and lower hyperbolic bounds concern a different functio
 - Latest change to this landing file at the snapshot on 2026-11-21T00:51:59-06:00. [Commit 0e4d39626](https://github.com/1337isnot1337/solved-conjectures/commit/0e4d396261505b89eb5dddbd264be7a212d3e78c).
 - Coordination and prior review. [#175](https://github.com/1337isnot1337/solved-conjectures/issues/175).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/simon-stable-infimum/SOURCES.md)
@@ -36,6 +38,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1310.1888) (27 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Thomas Simon (2014-01-01). [Comparing Fréchet and positive stable laws](https://doi.org/10.1214/ejp.v19-3058).
+- Thomas Simon (2010-01-01). [Fonctions de Mittag–Leffler et processus de Lévy stables sans sauts négatifs](https://doi.org/10.1016/j.exmath.2009.12.002).
+- Julien Letemplier, Thomas Simon (2019-03-14). [On the law of homogeneous stable functionals](https://doi.org/10.1051/ps/2018028).
+- Thomas Simon (2013-10-07). [Comparing Fréchet and positive stable laws](https://doi.org/10.48550/arxiv.1310.1888).
+- Rui A. C. Ferreira, Thomas Simon (2025-12-04). [Mittag-Leffler functions and convex ordering](https://doi.org/10.48550/arxiv.2512.04940).
 
 - PDF header (HTTP 200). [Retrieved address](https://www.maths.tcd.ie/EMIS/journals/EJP-ECP/article/download/3058/3058-16117-1-PB.pdf).
 - Source URL (HTTP 200). [Retrieved address](https://doi.org/10.1214/EJP.v19-3058).

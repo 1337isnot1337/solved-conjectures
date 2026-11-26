@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-24T07:41:47Z. [Commit f59222bca](https://github.com/1337isnot1337/solved-conjectures/commit/f59222bca43ecd7fcc79615a193c4bb7cb1dda6c).
 - Coordination and prior review. [#122](https://github.com/1337isnot1337/solved-conjectures/issues/122) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coffey-smith/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coffey-smith/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/coffey-smith/PROOF.md)
@@ -41,6 +43,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/math-ph/0507042) (32 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Juan Arias de Reyna (2011-09-01). [Asymptotics of Keiper-Li coefficients](https://doi.org/10.7169/facm/1317045228).
+- M.P. Chaudhary, Jawher Khmiri, Kamel Mazhouda (2026-01-01). [A note on the behavior of the Li coefficients for automorphic L-functions](https://doi.org/10.7153/jca-2026-28-07).
 
 - PDF header (HTTP 200). [Retrieved address](https://rangevoting.org/WarrenSmithPages/homepage/riemann2.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://arxiv.org/pdf/math-ph/0507042).

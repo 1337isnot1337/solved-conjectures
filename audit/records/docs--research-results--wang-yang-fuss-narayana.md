@@ -26,6 +26,8 @@ Wang and Yang’s paper proves the ordinary Narayana case; Conjecture 4.1 impose
 - Latest change to this landing file at the snapshot on 2026-11-26T09:36:03-06:00. [Commit bca14047c](https://github.com/1337isnot1337/solved-conjectures/commit/bca14047c3bf19b9214b5b855f7805373b7b229c).
 - Coordination and prior review. [#98](https://github.com/1337isnot1337/solved-conjectures/issues/98) · [#789](https://github.com/1337isnot1337/solved-conjectures/pull/789).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/wang-yang-fuss-narayana/README.md)
@@ -36,6 +38,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.28691) (39 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Yi Wang, Arthur L. B. Yang (2018-02-22). [Total positivity of Narayana matrices](https://doi.org/10.1016/j.disc.2018.01.012).
+- Bao-Xuan Zhu (2026-02-01). [Coefficientwise total positivity and Stieltjes moment properties from Riordan arrays](https://doi.org/10.1112/jlms.70450).
+- Jiang Zeng (2026-10-20). [Two q-Deformations of Narayana Polynomials: Rogers Moments, Hankel Positivity, and q-Narayana Kernels](https://doi.org/10.48550/arxiv.2610.28691).
+- Robert Angarone, Jang Soo Kim, Oh, Jaeseong, Daniel Soskin (2025-11-12). [Hadamard Products of dual Jacobi-Trudi matrices](https://doi.org/10.48550/arxiv.2511.08969).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2018.01.012).
 - PDF header (HTTP 200). [Retrieved address](https://cfc.nankai.edu.cn/_upload/article/files/ca/07/264e89bc4d9bb418a6d91d482b90/ef62459f-bec2-470d-8199-b57a790de20a.pdf).

@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T10:42:44-06:00. [Commit 734ca90dc](https://github.com/1337isnot1337/solved-conjectures/commit/734ca90dc9df1bd2dd8b6ac74422de4dab7a1463).
 - Coordination and prior review. [#874](https://github.com/1337isnot1337/solved-conjectures/issues/874).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lower-oriented-general-position-np-hardness/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lower-oriented-general-position-np-hardness/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lower-oriented-general-position-np-hardness/PROOF.md)
@@ -30,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://pureadmin.qub.ac.uk/ws/portalfiles/portal/186487218/paper.pdf) (16 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ullas Chandran S. V., Gabriele Di Stefano, Grahame Erskine, S. Haritha et al. (2026-04-17). [The general position number of digraphs](https://doi.org/10.48550/arxiv.2604.15909).
 
 - The general position number of digraphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.15909v1).
 - PDF header (HTTP 200). [Retrieved address](https://pureadmin.qub.ac.uk/ws/portalfiles/portal/186487218/paper.pdf).

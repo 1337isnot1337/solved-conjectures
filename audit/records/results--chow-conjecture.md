@@ -26,6 +26,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T14:26:22Z. [Commit 61b05d497](https://github.com/1337isnot1337/solved-conjectures/commit/61b05d497f54e8472225a4e8f6a4f0113576cf8b).
 - Coordination and prior review. [#77](https://github.com/1337isnot1337/solved-conjectures/issues/77).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/PROOF.md) · [ALTERNATIVE-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/ALTERNATIVE-AUDIT.md) · [ALTERNATIVE-PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/ALTERNATIVE-PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chow-conjecture/NOVELTY.md)
@@ -36,6 +38,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2608.02357) (10 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Chak-On Chow (2022-01-21). [New proofs of interlacing of zeros of Eulerian polynomials](https://doi.org/10.1016/j.jmaa.2022.126019).
+- Arthur L. B. Yang, Philip B. Zhang (2022-01-10). [Descent generating polynomials and the Hermite–Biehler theorem](https://doi.org/10.1007/s10801-021-01101-2).
+- Shi-Mei Ma (2026-08-03). [The half interlacing property among the types A, B and D Eulerian polynomials](https://doi.org/10.48550/arxiv.2608.02357).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jmaa.2022.126019).
 - The $\s$-Eulerian polynomials have only real roots (HTTP 200). [Retrieved address](https://arxiv.org/abs/1208.3831v3).

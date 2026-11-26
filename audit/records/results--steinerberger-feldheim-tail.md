@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T16:58:43Z. [Commit 27ed43be4](https://github.com/1337isnot1337/solved-conjectures/commit/27ed43be47cfed195ffa447dc91044a00dd6c9a2).
 - Coordination and prior review. [#396](https://github.com/1337isnot1337/solved-conjectures/issues/396) · [#397](https://github.com/1337isnot1337/solved-conjectures/pull/397).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/PROOF.md) · [CONVEX-HAZARD-RATE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/CONVEX-HAZARD-RATE.md) · [LEAN-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/LEAN-AUDIT.md) · [LINEAR-EXISTENCE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md)
@@ -31,6 +33,10 @@ The local HTTP probe and public search index differed on access to one PDF. The 
 - [Source PDF](https://arxiv.org/pdf/1801.00663) (4 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Stefan Steinerberger (2019-08-16). [A sharp estimate for probability distributions](https://doi.org/10.1016/j.spl.2019.108584).
 
 - A Sharp Estimate for Probability Distributions (HTTP 200). [Retrieved address](https://arxiv.org/abs/1801.00663).
 - Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).

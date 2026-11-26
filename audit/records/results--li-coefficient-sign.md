@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-19T14:26:48-06:00. [Commit 1d8a5567d](https://github.com/1337isnot1337/solved-conjectures/commit/1d8a5567d3cf88f6435de34acff7049c9b55667f).
 - Coordination and prior review. [#39](https://github.com/1337isnot1337/solved-conjectures/issues/39) · [#40](https://github.com/1337isnot1337/solved-conjectures/issues/40) · [#41](https://github.com/1337isnot1337/solved-conjectures/issues/41) · [#35](https://github.com/1337isnot1337/solved-conjectures/pull/35).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/li-coefficient-sign/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/li-coefficient-sign/PROOF.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/li-coefficient-sign/LEAN.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/li-coefficient-sign/NOVELTY.md)
@@ -33,6 +35,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2503.09484) (19 pages). problem 4.6 on PDF p. 16 · problem 4.9 on PDF p. 16.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Kai Zheng (2022-02-25). [On the e-positivity of trees and spiders](https://doi.org/10.1016/j.jcta.2022.105608).
+- Samantha Dahlberg, Adrian She, Stephanie van Willigenburg (2020-01-10). [Schur and $e$-Positivity of Trees and Cut Vertices](https://doi.org/10.37236/8930).
+- Ethan Y. H. Li (2025-03-12). [A quantitative way to e-positivity of trees](https://doi.org/10.48550/arxiv.2503.09484).
+- Davion Qibao Tang, David G. L. Wang, Monica M. Y. Wang (2026-10-29). [$e$-Positive caterpillars have maximum degree at most three](https://doi.org/10.48550/arxiv.2610.39481).
 
 - A quantitative way to e-positivity of trees (HTTP 200). [Retrieved address](https://arxiv.org/abs/2503.09484v2).
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).

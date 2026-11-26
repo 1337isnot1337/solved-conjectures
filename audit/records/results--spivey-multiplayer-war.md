@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-19T00:51:23-06:00. [Commit 6cdc39490](https://github.com/1337isnot1337/solved-conjectures/commit/6cdc3949055f515719fdb9676f5e8c07b9c4c37b).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/spivey-multiplayer-war/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/spivey-multiplayer-war/PROOF.md)
@@ -29,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://orygn.tech/research/endless-games-of-war.pdf) (24 pages). question 1 on PDF p. 1, 11 · open problems 1 on PDF p. 23.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Michael Z. Spivey (2010-01-01). [Cycles in War](https://doi.org/10.1515/integ.2010.102).
+- Jonathan Weed (2015-02-28). [Multinational War is Hard](https://doi.org/10.48550/arxiv.1503.00141).
 
 - PDF header (HTTP 200). [Retrieved address](https://math.colgate.edu/~integers/kg2/kg2.pdf).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1515/integ.2010.102).

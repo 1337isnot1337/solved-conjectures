@@ -22,6 +22,8 @@ Missing edge-size hypothesis. A single edge {a} on the vertex set {a,b} satisfie
 - Latest change to this landing file at the snapshot on 2026-11-26T09:31:25-06:00. [Commit 44df818f6](https://github.com/1337isnot1337/solved-conjectures/commit/44df818f6acde0c803cbca15127bdb5a27190054).
 - Coordination and prior review. [#842](https://github.com/1337isnot1337/solved-conjectures/issues/842).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blazsik-lemons-one-intersection/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/blazsik-lemons-one-intersection/PROOF.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1509.00551) (10 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Zoltán L. Blázsik, Nathan Lemons (2025-09-25). [The connection between the chromatic numbers of a hypergraph and its 1-intersection graph](https://doi.org/10.1016/j.disc.2025.114810).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2025.114810).
 - The connection between the chromatic numbers of a hypergraph and its $1$-intersection graph (HTTP 200). [Retrieved address](https://arxiv.org/abs/2406.12118).

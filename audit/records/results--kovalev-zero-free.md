@@ -28,6 +28,8 @@ Earlier exact resolution of the square-root case. MathDB 369171 proves strict po
 - Latest change to this landing file at the snapshot on 2026-11-24T18:39:40Z. [Commit 1a7487336](https://github.com/1337isnot1337/solved-conjectures/commit/1a74873367b32208c7ce53c894aeda351f92f78c).
 - Coordination and prior review. [#444](https://github.com/1337isnot1337/solved-conjectures/issues/444) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/PROOF.md) · [EXPONENT-SCOPE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/EXPONENT-SCOPE.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/FORMALIZATION.md) · [INTEGRAL_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/INTEGRAL_REVIEW.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/LEAN_REVIEW.md) · [STATEMENT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/STATEMENT_REVIEW.md) · [TAYLOR_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/TAYLOR_REVIEW.md) · [TRANSPORT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-zero-free/TRANSPORT_REVIEW.md)
@@ -37,6 +39,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2507.04544v1) (10 pages). conjecture 1.2 on PDF p. 2, 10 · conjecture 1.3 on PDF p. 2.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Leonid V. Kovalev (2026-01-01). [Sharp bounds for some segments of bounded power series](https://doi.org/10.4310/arkiv.2026.v64.n2.a4).
 
 - Sharp bounds for some segments of bounded power series (HTTP 200). [Retrieved address](https://arxiv.org/abs/2507.04544v1).
 - An exact counterexample to trigonometric positivity for square roots of geometric sums \| MathDB (HTTP 200). [Retrieved address](https://mathdb.com/abs/2610.00766).

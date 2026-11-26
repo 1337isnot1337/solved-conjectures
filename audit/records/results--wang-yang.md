@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-24T07:41:47Z. [Commit f59222bca](https://github.com/1337isnot1337/solved-conjectures/commit/f59222bca43ecd7fcc79615a193c4bb7cb1dda6c).
 - Coordination and prior review. [#138](https://github.com/1337isnot1337/solved-conjectures/issues/138) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wang-yang/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wang-yang/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/wang-yang/PROOF.md)
@@ -40,6 +42,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://cfc.nankai.edu.cn/_upload/article/files/81/18/f83d37e449ebaf1b2f4141fa59be/9323c2fc-4d6a-4610-a747-1bd985a7be41.pdf) (21 pages). conjecture 1.10 on PDF p. 6.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Xingwei Wang, Neil Yang (2024-04-19). [Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function](https://doi.org/10.1090/tran/9081).
+- Cormac O’Sullivan (2021-07-13). [Zeros of Jensen polynomials and asymptotics for the Riemann xi function](https://doi.org/10.1007/s40687-020-00240-5).
 
 - PDF header (HTTP 200). [Retrieved address](https://cfc.nankai.edu.cn/_upload/article/files/81/18/f83d37e449ebaf1b2f4141fa59be/9323c2fc-4d6a-4610-a747-1bd985a7be41.pdf).
 - Transactions of the American Mathematical Society (HTTP 200). [Retrieved address](https://doi.org/10.1090/tran/9081).

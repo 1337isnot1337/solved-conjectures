@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:37:47-06:00. [Commit 135c40642](https://github.com/1337isnot1337/solved-conjectures/commit/135c40642356e08a03400117121f17b16021dca3).
 - Coordination and prior review. [#441](https://github.com/1337isnot1337/solved-conjectures/issues/441) · [#732](https://github.com/1337isnot1337/solved-conjectures/issues/732).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-limit/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-limit/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-limit/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-limit/FORMALIZATION.md) · [LOGARITHMIC-BOUNDS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-limit/LOGARITHMIC-BOUNDS.md)
@@ -31,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2602.16355v3) (39 pages). question 4.5 on PDF p. 20, 33.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Robert Dougherty-Bliss, Alejandro B. Galván, Michaela A. Polley, Давид Шустер (2026-08-27). [Enumerating separable derangements](https://doi.org/10.48550/arxiv.2608.27583).
+- Vincent R. Vatter (2026-02-18). [An assortment of problems in permutation patterns: unimodality, equivalence, derangements, and sorting](https://doi.org/10.48550/arxiv.2602.16355).
 
 - Enumerating separable derangements (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.27583v1).
 - An assortment of problems in permutation patterns: unimodality, equivalence, derangements, and sorting (HTTP 200). [Retrieved address](https://arxiv.org/abs/2602.16355v3).

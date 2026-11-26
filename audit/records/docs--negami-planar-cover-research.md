@@ -30,6 +30,8 @@ The ledger includes the intervening sections.
 - Path first added on the first-parent history on 2026-11-20T01:06:25-06:00. [Commit 5c90814fe](https://github.com/1337isnot1337/solved-conjectures/commit/5c90814fea7eff5614aa5be4aaf42b705ff99cfd).
 - Latest change to this landing file at the snapshot on 2026-11-20T01:17:28-06:00. [Commit b8bf06613](https://github.com/1337isnot1337/solved-conjectures/commit/b8bf06613f1c3cc84535c60318f515d581a5661c).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [negami-planar-cover-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/negami-planar-cover-research.md)
@@ -39,6 +41,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2412.19560v2) (23 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Dickson Y. B. Annor (2026-10-23). [GRAPH COVERS: TOPOLOGICAL AND COMBINATORIAL PERSPECTIVES](https://doi.org/10.1017/s0004972726102111).
+- Dickson Y. B. Annor, Yuri Nikolayevsky, Michael S. Payne (2024-12-27). [Three Theorems on Negami's Planar Cover Conjecture](https://doi.org/10.48550/arxiv.2412.19560).
 
 - Three Theorems on Negami's Planar Cover Conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/2412.19560v2).
 - GRAPH COVERS: TOPOLOGICAL AND COMBINATORIAL PERSPECTIVES (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0004972726102111).

@@ -1,0 +1,21 @@
+Verify the six-speed loneliness spectrum
+Working directory: .
+Exit: 0
+Elapsed seconds: 1898.75
+Output SHA-256: 49d3f36f85c218292957ddeeeaaa3b1f917a1f05e829a354bd4d5e5429efd07e
+
+python3 results/six-speed-spectrum/verify.py
+
+Checked the gap above 1/6 on two-dimensional subtori.
+All four high-dimensional prime-product inequalities passed (145 primes).
+Checked all 15 three-parameter covers.
+Checked 78 noncritical two-parameter maps and nine exact sporadic values.
+1 2 3 5 8 18 3 19
+1 2 5 6 7 8 2 13
+1 3 4 5 7 24 5 31
+1 3 4 5 18 46 4 25
+1 4 5 6 7 22 2 13
+1 4 5 6 7 33 6 37
+2 3 5 6 8 11 3 19
+2 5 6 7 8 11 3 19
+2 5 6 8 10 11 2 13

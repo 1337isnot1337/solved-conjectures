@@ -28,6 +28,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-20T01:45:19-06:00. [Commit c7d91762f](https://github.com/1337isnot1337/solved-conjectures/commit/c7d91762f6bb9ea6579e68b9032939d97cd232a3).
 - Coordination and prior review. [#61](https://github.com/1337isnot1337/solved-conjectures/issues/61).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [erdos-kruckeberg-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-kruckeberg-research.md)
@@ -37,6 +39,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2510.19804) (15 pages). conjecture 4 on PDF p. 2, 3, 4.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Fritz Krückeberg (1961-01-01). [B2-Folgen und verwandte Zahlenfolgen.](https://doi.org/10.1515/crll.1961.206.53).
+- James Singer (1938-05-01). [A Theorem in Finite Projective Geometry and Some Applications to Number Theory](https://doi.org/10.1090/s0002-9947-1938-1501951-4).
+- Kevin O’Bryant (2026-06-26). [On the Thickness of Infinite Generalized Sidon Sets, I](https://doi.org/10.48550/arxiv.2606.28651).
+- Guoqing Wang, Wenkai Yang (2026-11-01). [Infinite Generalized Sidon Sets with a Negative Answer to a Problem of Szemerédi](https://doi.org/10.48550/arxiv.2611.01871).
 
 - Source URL (HTTP request failed). [Retrieved address](https://combinatorica.hu/~p_erdos/1980-03.pdf).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1515/crll.1961.206.53).

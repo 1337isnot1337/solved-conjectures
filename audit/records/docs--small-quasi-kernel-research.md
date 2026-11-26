@@ -28,6 +28,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T00:52:45-06:00. [Commit 3794c7492](https://github.com/1337isnot1337/solved-conjectures/commit/3794c749261edda7d0875e45527796f9c32e6497).
 - Latest change to this landing file at the snapshot on 2026-11-20T00:52:45-06:00. [Commit 3794c7492](https://github.com/1337isnot1337/solved-conjectures/commit/3794c749261edda7d0875e45527796f9c32e6497).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [small-quasi-kernel-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/small-quasi-kernel-research.md)
@@ -38,6 +40,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.23487v1) (7 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Sam Spiro (2026-11-17). [Equivalence of Small and Large Quasi-kernels](https://doi.org/10.48550/arxiv.2611.22881).
+- Jiangdong Ai, Gregory Gutin, Xiangzhou Liu, Xianhao Meng (2026-10-16). [Small and large quasi-kernels: a weighted transfer theorem](https://doi.org/10.48550/arxiv.2610.23487).
+- Alexander Clow (2026-01-17). [Greedily Constructing Small Quasi-Kernels](https://doi.org/10.48550/arxiv.2601.11847).
 
 - Equivalence of Small and Large Quasi-kernels (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.22881v1).
 - Small and large quasi-kernels: a weighted transfer theorem (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.23487v1).

@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T09:02:16Z. [Commit c3f33dba2](https://github.com/1337isnot1337/solved-conjectures/commit/c3f33dba2971f63b85a18345893acb36108ca97e).
 - Coordination and prior review. [#403](https://github.com/1337isnot1337/solved-conjectures/issues/403).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-descent-top-shape-wilf/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-descent-top-shape-wilf/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-descent-top-shape-wilf/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/burstein-descent-top-shape-wilf/FORMALIZATION.md)
@@ -30,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2306.08065) (16 pages). conjecture 11 on PDF p. 13, 15 · conjectures 11 on PDF p. 13 · conjecture 16 on PDF p. 15 · conjecture 17 on PDF p. 15.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Alexander Burstein (2025-01-14). [Distribution of sets of descent tops and descent bottoms on restricted permutations](https://doi.org/10.46298/dmtcs.12636).
+- Zuoru Zhang, Hongkuan Zhao (2026-10-22). [Two refined Wilf-equivalences for patterns of length 4 and a conjecture on Dumont permutations of the first kind](https://doi.org/10.48550/arxiv.2610.30975).
 
 - PDF header (HTTP 200). [Retrieved address](https://dmtcs.episciences.org/en/articles/15066/download).
 - Two refined Wilf-equivalences for patterns of length 4 and a conjecture on Dumont permutations of the first kind (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.30975).

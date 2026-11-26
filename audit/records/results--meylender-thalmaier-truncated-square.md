@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T02:43:40-06:00. [Commit 4cbf858f7](https://github.com/1337isnot1337/solved-conjectures/commit/4cbf858f775626b472f2b7dbca2ae37281e6efcb).
 - Coordination and prior review. [#459](https://github.com/1337isnot1337/solved-conjectures/issues/459).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/FORMALIZATION.md) · [PENTAGON.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/PENTAGON.md) · [STRICT-BOUND.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/meylender-thalmaier-truncated-square/STRICT-BOUND.md)
@@ -30,6 +32,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2603.12495v2) (30 pages). conjecture 6.1 on PDF p. 25.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Alexey Balitskiy, Ivan Mitrofanov, Alexander Polyanskii (2026-03-12). [Triangle covering problems and the Viterbo inequality in the plane](https://doi.org/10.48550/arxiv.2603.12495).
 
 - Triangle covering problems and the Viterbo inequality in the plane (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.12495v2).
 - Citation-index seed records. [Triangle covering problems and the Viterbo inequality in the plane](https://doi.org/10.48550/arxiv.2603.12495).

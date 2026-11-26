@@ -27,6 +27,8 @@ The November Riesz-ratios manuscript proves a two-point bound for the reverse ra
 - Latest change to this landing file at the snapshot on 2026-11-24T11:08:32Z. [Commit c3b034456](https://github.com/1337isnot1337/solved-conjectures/commit/c3b034456e4948fa8222eb9776b7c40530d6a711).
 - Coordination and prior review. [#421](https://github.com/1337isnot1337/solved-conjectures/issues/421).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-interval-riesz-capacity/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-interval-riesz-capacity/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fan-interval-riesz-capacity/PROOF.md)
@@ -37,6 +39,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2410.14809) (34 pages). conjecture 12 on PDF p. 2, 5, 6, 7, 10, 11, 13, 14.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- David Blackwell (1953-06-01). [Equivalent Comparisons of Experiments](https://doi.org/10.1214/aoms/1177729032).
+- Qiuling Fan (2026-09-10). [Riesz capacity ratios with negative exponents](https://doi.org/10.48550/arxiv.2609.11186).
+- Carrie Clark, Richard Snyder Laugesen (2026-11-13). [Brunn-Minkowski inequality for Riesz capacity in one dimension](https://doi.org/10.48550/arxiv.2611.17640).
 
 - Riesz capacity ratios with negative exponents (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.11186v1).
 - Maximizing Riesz capacity ratios: conjectures and theorems (HTTP 200). [Retrieved address](https://arxiv.org/abs/2410.14809).

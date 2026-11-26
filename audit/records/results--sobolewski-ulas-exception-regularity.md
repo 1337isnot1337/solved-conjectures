@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:42:59Z. [Commit a51917c3f](https://github.com/1337isnot1337/solved-conjectures/commit/a51917c3fccb97c4a5c34537d5e2e4ad612f109e).
 - Coordination and prior review. [#433](https://github.com/1337isnot1337/solved-conjectures/issues/433).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sobolewski-ulas-exception-regularity/FORMALIZATION.md)
@@ -31,6 +33,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1010.4009) (14 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bartosz Sobolewski, Maciej Ulas (2023-07-20). [Values of Binary Partition Function Represented by a Sum of Three Squares](https://doi.org/10.1007/s00025-023-01966-8).
+- Fabien Durand (2010-10-19). [Cobham's theorem for substitutions](https://doi.org/10.48550/arxiv.1010.4009).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00025-023-01966-8).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00025-023-01966-8).

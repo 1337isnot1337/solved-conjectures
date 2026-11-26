@@ -23,6 +23,8 @@ For a fixed vector-coloring bound K, compactness gives a global Gram representat
 - Latest change to this landing file at the snapshot on 2026-11-26T09:31:25-06:00. [Commit 44df818f6](https://github.com/1337isnot1337/solved-conjectures/commit/44df818f6acde0c803cbca15127bdb5a27190054).
 - Coordination and prior review. [#836](https://github.com/1337isnot1337/solved-conjectures/issues/836).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/PROOF.md) · [order-types.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/order-types.md) · [vector-hall.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hajnal-szemeredi-independence/vector-hall.md)
@@ -33,6 +35,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0C1F8456C5441CEE76B2304FAC4EC541/S0008439500014132a.pdf/the-s-linkedness-of-the-measure-algebra.pdf) (4 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Adam Blumenthal, Bernard Lidický, Ryan R. Martin, Sergey Norin et al. (2022-07-18). [Counterexamples to a Conjecture of Harris on Hall Ratio](https://doi.org/10.1137/18m1229420).
+- Raphael Steiner (2025-07-04). [Fractional Chromatic Number Vs. Hall Ratio](https://doi.org/10.1007/s00493-025-00164-0).
 
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~p_erdos/1982-11.pdf).
 - 75 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/75).

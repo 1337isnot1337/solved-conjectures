@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-19T13:05:33-06:00. [Commit 86a7b0586](https://github.com/1337isnot1337/solved-conjectures/commit/86a7b05861a8c8376d2eb8468a820fa7567fd78e).
 - Coordination and prior review. [#42](https://github.com/1337isnot1337/solved-conjectures/issues/42).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [prime-filtering-candidate.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/prime-filtering-candidate.md)
@@ -28,6 +30,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v15i1r48/pdf/) (18 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- J. Barajas, Oriol Serra (2008-03-20). [The Lonely Runner with Seven Runners](https://doi.org/10.37236/772).
 
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v15i1r48/pdf/).
 - Citation-index seed records. [The Lonely Runner with Seven Runners](https://doi.org/10.37236/772).

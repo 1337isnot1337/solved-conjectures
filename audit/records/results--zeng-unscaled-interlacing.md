@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T06:33:51-06:00. [Commit e37770670](https://github.com/1337isnot1337/solved-conjectures/commit/e3777067017ad5a65abe03465965012871a8195d).
 - Coordination and prior review. [#792](https://github.com/1337isnot1337/solved-conjectures/issues/792).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zeng-unscaled-interlacing/README.md) · [proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zeng-unscaled-interlacing/proof.md) · [sources.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/zeng-unscaled-interlacing/sources.md)
@@ -30,6 +32,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1210.1102) (34 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Jiang Zeng (2026-10-20). [Two q-Deformations of Narayana Polynomials: Rogers Moments, Hankel Positivity, and q-Narayana Kernels](https://doi.org/10.48550/arxiv.2610.28691).
+- Jiang Zeng (2026-10-14). [Continuous Narayana Interpolations: Hankel Total Positivity and Log-Convexity Preservation](https://doi.org/10.48550/arxiv.2610.19548).
+- Lenny Tevlin (2026-11-11). [$q$-$γ$-positivity of two $q$-Narayana polynomials](https://doi.org/10.48550/arxiv.2611.15811).
 
 - Two q-Deformations of Narayana Polynomials: Rogers Moments, Hankel Positivity, and q-Narayana Kernels (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.28691v2).
 - Source URL (HTTP 200). [Retrieved address](https://api.openalex.org/works?filter=cites:W7223203774).

@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T19:05:46-06:00. [Commit 9b4fff3eb](https://github.com/1337isnot1337/solved-conjectures/commit/9b4fff3eb7e2fa159a1435aafafc425b88b4244e).
 - Latest change to this landing file at the snapshot on 2026-11-19T14:00:33-06:00. [Commit a19bbbd2c](https://github.com/1337isnot1337/solved-conjectures/commit/a19bbbd2cc7428ea81d82d7022b2b27ad0de888c).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/seven-speed-spectrum/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/seven-speed-spectrum/PROOF.md)
@@ -30,6 +32,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://msp.org/pjm/1979/83-2/pjm-v83-n2-p24-p.pdf) (15 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ho Tin Fan, Alec Sun (2026-02-27). [Amending the Lonely Runner Spectrum Conjecture](https://doi.org/10.37236/13840).
+- Javier Barajas, Oriol Serra (2007-08-27). [Distance graphs with maximum chromatic number](https://doi.org/10.1016/j.disc.2007.07.061).
+- F. Cordella (2026-09-03). [Odd denominators in the Lonely Runner spectrum for six speeds](https://doi.org/10.48550/arxiv.2609.03444).
+- Hyunjun Yi, Karam Gill, Bryan Bu (2026-10-28). [Four runners that are barely lonely](https://doi.org/10.48550/arxiv.2610.40694).
 
 - Amending the Lonely Runner Spectrum Conjecture (HTTP 200). [Retrieved address](https://doi.org/10.37236/13840).
 - Odd denominators in the Lonely Runner spectrum for six speeds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.03444v2).

@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T00:46:27-06:00. [Commit 37cb59f8c](https://github.com/1337isnot1337/solved-conjectures/commit/37cb59f8cddf93eb86a2d2c90addfb629309e3dd).
 - Latest change to this landing file at the snapshot on 2026-11-20T00:46:27-06:00. [Commit 37cb59f8c](https://github.com/1337isnot1337/solved-conjectures/commit/37cb59f8cddf93eb86a2d2c90addfb629309e3dd).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [erdos-fajtlowicz-staton-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-fajtlowicz-staton-research.md)
@@ -32,6 +34,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2608.08169) (13 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Paul W. Dyson, Brendan D. McKay (2026-04-09). [Ramsey numbers for regular induced subgraphs](https://doi.org/10.48550/arxiv.2604.08215).
+- Ariel Edgardo Levy (2026-08-08). [The lower-bound problem for regular induced subgraphs of type-based random graphs](https://doi.org/10.48550/arxiv.2608.08169).
+- Arthur F. Ramos, David B. Hulak, Ruy J. G. B. de Queiroz (2026-04-26). [Pair-Trace Absorption Certificates for Regular Induced Subgraphs](https://doi.org/10.48550/arxiv.2604.23882).
 
 - RegularInducedSubgraphs (HTTP 200). [Retrieved address](https://mathweb.ucsd.edu/~erdosproblems/erdos/newproblems/RegularInducedSubgraphs.html).
 - Ramsey numbers for regular induced subgraphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.08215).

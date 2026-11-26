@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T23:05:27-06:00. [Commit c6053192e](https://github.com/1337isnot1337/solved-conjectures/commit/c6053192e6ac544a4b05c288b82101c47994bdcd).
 - Latest change to this landing file at the snapshot on 2026-11-18T23:14:38-06:00. [Commit cd5608a5a](https://github.com/1337isnot1337/solved-conjectures/commit/cd5608a5a97ee2aad2924ee99074f217360f2e50).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [five-speed-bounded-candidates.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/five-speed-bounded-candidates.md)

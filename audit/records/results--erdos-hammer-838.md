@@ -22,6 +22,8 @@ The cup recurrence gives u₂=1 and u₃=1/2. Inserting these in the binary spli
 - Latest change to this landing file at the snapshot on 2026-11-26T09:31:25-06:00. [Commit 44df818f6](https://github.com/1337isnot1337/solved-conjectures/commit/44df818f6acde0c803cbca15127bdb5a27190054).
 - Coordination and prior review. [#832](https://github.com/1337isnot1337/solved-conjectures/issues/832).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/README.md) · [BINARY-LIMIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/BINARY-LIMIT.md) · [COUNT-PROFILE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/COUNT-PROFILE.md) · [DENSITY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/DENSITY.md) · [FLAT-SUBSTITUTION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/FLAT-SUBSTITUTION.md) · [STEEP-SUBSTITUTION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-hammer-838/STEEP-SUBSTITUTION.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1604.08657) (7 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Xavier Goaoc, Alfredo Hubard, Rémi de Joannis de Verclos, Jean‐Sébastien Sereni et al. (2015-01-01). [Limits of Order Types](https://doi.org/10.4230/lipics.socg.2015.300).
+- Andrew Suk (2016-09-30). [On the Erdős-Szekeres convex polygon problem](https://doi.org/10.1090/jams/869).
 
 - 838 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/838).
 - Limits of Order Types (HTTP 200). [Retrieved address](https://arxiv.org/abs/1811.02236).

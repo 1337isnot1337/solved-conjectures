@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-20T02:47:30-06:00. [Commit ed84d8ba1](https://github.com/1337isnot1337/solved-conjectures/commit/ed84d8ba1121f2054fea1050307ca2e3115e2afb).
 - Latest change to this landing file at the snapshot on 2026-11-20T02:56:30-06:00. [Commit d3375efae](https://github.com/1337isnot1337/solved-conjectures/commit/d3375efae0f6ef0fbb393c5c0273a3f6b1ffac7c).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [dahlberg-she-van-willigenburg-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/dahlberg-she-van-willigenburg-research.md)
@@ -33,6 +35,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2409.12934) (16 pages). conjecture 6.1 on PDF p. 2.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Dominique Barth, Hervé Fournier (2006-03-01). [A degree bound on decomposable trees](https://doi.org/10.1016/j.disc.2006.01.006).
+- Davion Qibao Tang, David G. L. Wang, Monica M. Y. Wang (2026-10-29). [$e$-Positive caterpillars have maximum degree at most three](https://doi.org/10.48550/arxiv.2610.39481).
 
 - Schur and $e$-positivity of trees and cut vertices (HTTP 200). [Retrieved address](https://arxiv.org/abs/1901.02468).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.disc.2006.01.006).

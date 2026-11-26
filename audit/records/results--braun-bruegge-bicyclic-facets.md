@@ -26,6 +26,8 @@ The Omega same-source theorem treats the common-parity binomial facet sum in Con
 - Latest change to this landing file at the snapshot on 2026-11-25T23:59:21-06:00. [Commit 7aa1993e5](https://github.com/1337isnot1337/solved-conjectures/commit/7aa1993e5d396f7902d2423871329a53b7b3b622).
 - Coordination and prior review. [#481](https://github.com/1337isnot1337/solved-conjectures/issues/481).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/FORMALIZATION.md) · [THETA-MAXIMIZER.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-bicyclic-facets/THETA-MAXIMIZER.md)
@@ -36,6 +38,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2201.13303v4) (23 pages). conjecture 3.4 on PDF p. 6, 9, 13, 20.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Benjamin Braun, Kaitlin Bruegge (2022-01-31). [Facets of Symmetric Edge Polytopes for Graphs with Few Edges](https://doi.org/10.48550/arxiv.2201.13303).
 
 - PDF header (HTTP 200). [Retrieved address](https://cs.uwaterloo.ca/journals/JIS/VOL26/Braun/braun6.pdf).
 - Braun–Bruegge Conjecture 5.1 \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/braun-bruegge-2022-symmetric-edge-polytope-facet-sum-conjecture-5-1/).

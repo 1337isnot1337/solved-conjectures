@@ -28,6 +28,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T17:14:07Z. [Commit 8c66bd46c](https://github.com/1337isnot1337/solved-conjectures/commit/8c66bd46c8a5481fff444582a42c9da31f07d47f).
 - Coordination and prior review. [#211](https://github.com/1337isnot1337/solved-conjectures/issues/211).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/PROOF.md) · [ANALYSIS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/ANALYSIS_REVIEW.md) · [COMBINATORICS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/COMBINATORICS_REVIEW.md) · [LEAN-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/LEAN-AUDIT.md) · [PRIOR_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/PRIOR_AUDIT.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/johnson-pfaffian/ROOT_REVIEW.md)
@@ -38,6 +40,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2604.14827) (26 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Will Johnson (2026-10-17). [Pfaffian Positivity for Convex Kernels and Optimal Matching Bounds](https://doi.org/10.48550/arxiv.2610.24371).
 
 - Pfaffian Positivity for Convex Kernels and Optimal Matching Bounds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2610.24371v1).
 - GitHub - wlpjohnson-math/convex-pfaffian-positivity-lean: A Lean 4 + Mathlib formalization of a positivity theorem for Pfaffians of convex noninc (HTTP 200). [Retrieved address](https://github.com/wlpjohnson-math/convex-pfaffian-positivity-lean).

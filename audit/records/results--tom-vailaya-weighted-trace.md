@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:49:26-06:00. [Commit 1b34a44a5](https://github.com/1337isnot1337/solved-conjectures/commit/1b34a44a538d789fc3d710653b2bf4c0638ff525).
 - Coordination and prior review. [#338](https://github.com/1337isnot1337/solved-conjectures/issues/338).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/tom-vailaya-weighted-trace/FORMALIZATION.md)
@@ -30,6 +32,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2503.19344) (30 pages). conjecture 5.16 on PDF p. 29.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Foster Tom, Aarush Vailaya (2026-04-14). [The Chromatic Symmetric Function of Graphs Glued at a Single Vertex](https://doi.org/10.37236/14403).
+- Aarush Vailaya (2026-09-27). [Proper circular arc graphs are $e$-positive](https://doi.org/10.48550/arxiv.2609.33124).
+- Foster Tom, Aarush Vailaya (2026-03-28). [The Tutte symmetric matrix of a graph](https://doi.org/10.48550/arxiv.2603.27129).
 
 - The Chromatic Symmetric Function of Graphs Glued at a Single Vertex (HTTP 200). [Retrieved address](https://doi.org/10.37236/14403).
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v33i2p9/pdf/).

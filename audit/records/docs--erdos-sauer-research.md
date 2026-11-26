@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-20T05:58:12-06:00. [Commit 0b069c98c](https://github.com/1337isnot1337/solved-conjectures/commit/0b069c98c8e133ff53a803ccd03b8453a20dd980).
 - Coordination and prior review. [#72](https://github.com/1337isnot1337/solved-conjectures/issues/72).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [erdos-sauer-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-sauer-research.md)
@@ -29,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.renyi.hu/~p_erdos/1981-16.pdf) (22 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Alex Parker (2025-05-13). [New Bounds on a Generalization of Tuza’s Conjecture](https://doi.org/10.37236/13355).
+- Abdul Basit, Daniel McGinnis, Henry Simmons, Matt Sinnwell et al. (2022-10-21). [Improved Bounds on a Generalization of Tuza's Conjecture](https://doi.org/10.37236/10829).
 
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1981-16.pdf).
 - 719 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/719).

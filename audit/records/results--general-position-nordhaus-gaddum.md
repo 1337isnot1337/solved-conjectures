@@ -25,6 +25,8 @@ The November 3 subdivided 6-clique refutes the independent monophonic sum predic
 - Latest change to this landing file at the snapshot on 2026-11-26T09:18:33-06:00. [Commit b969cdb05](https://github.com/1337isnot1337/solved-conjectures/commit/b969cdb057997ed63e1ae55bc6df36e56307a519).
 - Coordination and prior review. [#851](https://github.com/1337isnot1337/solved-conjectures/issues/851) · [#848](https://github.com/1337isnot1337/solved-conjectures/pull/848).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/general-position-nordhaus-gaddum/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/general-position-nordhaus-gaddum/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/general-position-nordhaus-gaddum/PROOF.md)
@@ -34,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2408.13494v2) (28 pages). conjecture 9.3 on PDF p. 26.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ullas Chandran S.V., Gabriele Di Stefano, S. Haritha, Elias John Thomas et al. (2026-08-28). [Colouring a graph with position sets](https://doi.org/10.26493/1855-3974.3454.a3c).
+- Matěj Stehlík (2003-07-16). [Critical graphs with connected complements](https://doi.org/10.1016/s0095-8956(03)00069-8).
 
 - Colouring a graph with position sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.13494v2).
 - Source URL (HTTP 403). [Retrieved address](https://oro.open.ac.uk/107103/8/107103.pdf).

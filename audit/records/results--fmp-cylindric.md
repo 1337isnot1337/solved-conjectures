@@ -25,6 +25,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T08:06:23Z. [Commit 8ea6d4365](https://github.com/1337isnot1337/solved-conjectures/commit/8ea6d436542d795a02418b247ef25381a344e497).
 - Coordination and prior review. [#460](https://github.com/1337isnot1337/solved-conjectures/issues/460).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fmp-cylindric/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fmp-cylindric/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fmp-cylindric/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fmp-cylindric/FORMALIZATION.md)
@@ -35,6 +37,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2611.14506) (16 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Luis Ferroni, Alejandro H. Morales, Greta Panova (2026-08-01). [Skew shapes, Ehrhart positivity, and beyond](https://doi.org/10.1112/plms.70204).
+- Ira M. Gessel, Christian Krattenthaler (1997-01-01). [Cylindric Partitions](https://doi.org/10.1090/s0002-9947-97-01791-1).
+- Katharina Jochemko, Krishna Menon (2026-04-09). [Ehrhart positivity for marked order polytopes](https://doi.org/10.48550/arxiv.2604.08394).
+- Adam Tilèpe (2026-11-10). [Annular Obstructions and Skew-Shape Block Identities](https://doi.org/10.48550/arxiv.2611.14506).
 
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/53596?nt=1).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1112/plms.70204).

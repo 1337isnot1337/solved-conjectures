@@ -22,6 +22,8 @@ The Omega item is the Ellis–Thanatipanonda Family A Conjecture 1. The Family B
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-19T00:51:23-06:00. [Commit 6cdc39490](https://github.com/1337isnot1337/solved-conjectures/commit/6cdc3949055f515719fdb9676f5e8c07b9c4c37b).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cut-arithmetic-periodicity/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cut-arithmetic-periodicity/PROOF.md) · [GENERAL_LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cut-arithmetic-periodicity/GENERAL_LEAN.md) · [LEAN_PLAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cut-arithmetic-periodicity/LEAN_PLAN.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://library.slmath.org/books/Book70/files/1005.pdf) (44 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Antoine Dailly, Éric Duchêne, Urban Larsson, Gabrielle Paris (2020-07-01). [Partition games](https://doi.org/10.1016/j.dam.2020.05.032).
 
 - Partition games (HTTP 200). [Retrieved address](https://arxiv.org/abs/1803.02621).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2020.05.032).

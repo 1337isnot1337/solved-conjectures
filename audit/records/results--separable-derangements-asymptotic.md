@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T11:58:53Z. [Commit 93404e258](https://github.com/1337isnot1337/solved-conjectures/commit/93404e25827b46285633bfe01c9147a6c8678107).
 - Coordination and prior review. [#442](https://github.com/1337isnot1337/solved-conjectures/issues/442).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-asymptotic/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-asymptotic/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/separable-derangements-asymptotic/PROOF.md)
@@ -29,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2608.27583v1) (13 pages). conjecture 14 on PDF p. 10, 11 · conjecture 15 on PDF p. 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Robert Dougherty-Bliss, Alejandro B. Galván, Michaela A. Polley, Давид Шустер (2026-08-27). [Enumerating separable derangements](https://doi.org/10.48550/arxiv.2608.27583).
 
 - Enumerating separable derangements (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.27583v1).
 - Citation-index seed records. [Enumerating separable derangements](https://doi.org/10.48550/arxiv.2608.27583).

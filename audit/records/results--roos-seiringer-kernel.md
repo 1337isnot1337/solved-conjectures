@@ -28,6 +28,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T01:53:31-06:00. [Commit c2018c33e](https://github.com/1337isnot1337/solved-conjectures/commit/c2018c33e42340f02d5ac0aa6ac6f42cadc1f3fa).
 - Coordination and prior review. [#204](https://github.com/1337isnot1337/solved-conjectures/issues/204).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/SOURCES.md) · [ALGEBRA_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/ALGEBRA_REVIEW.md) · [PRIOR_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/PRIOR_AUDIT.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/roos-seiringer-kernel/ROOT_REVIEW.md)
@@ -38,6 +40,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2306.05824) (64 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Barbara Roos, Robert Seiringer (2025-03-02). [BCS Critical Temperature on Half-Spaces](https://doi.org/10.1007/s00205-025-02088-x).
+- Barbara Roos, Robert Seiringer (2025-04-14). [Enhanced superconductivity at a corner for the linear BCS equation](https://doi.org/10.1017/fms.2024.145).
+- Barbara Roos (2025-01-01). [Linear criterion for an upper bound on the Bardeen-Cooper-Schrieffer critical temperature](https://doi.org/10.1063/5.0230179).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00205-025-02088-x).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/content/pdf/10.1007/s00205-025-02088-x.pdf).

@@ -24,6 +24,8 @@ Checked the role of the uniformity assumption in Divoux–Wang, Proposition 3.1 
 - Latest change to this landing file at the snapshot on 2026-11-25T09:11:13Z. [Commit 69a8cd0aa](https://github.com/1337isnot1337/solved-conjectures/commit/69a8cd0aaeb7de8eada373f9e24c19120e84df3c).
 - Coordination and prior review. [#54](https://github.com/1337isnot1337/solved-conjectures/issues/54).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nemeth-seberry-shu/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nemeth-seberry-shu/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nemeth-seberry-shu/FORMALIZATION.md)
@@ -34,6 +36,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2610.23755v1) (49 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Alexander Divoux, Shouda Wang (2026-10-16). [The maximum number of Hamiltonian cycles in tournaments](https://doi.org/10.48550/arxiv.2610.23755).
 
 - Conjecture 27: Few permanents of prime circulants – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/conjecture-27/index.html).
 - PDF header (HTTP 200). [Retrieved address](https://documents.uow.edu.au/~jennie/WEBPDF/071_1979.pdf).

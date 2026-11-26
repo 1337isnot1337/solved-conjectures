@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T10:50:32Z. [Commit 8a5932101](https://github.com/1337isnot1337/solved-conjectures/commit/8a5932101500ef24c04dd2dca8a873c34ccc9022).
 - Coordination and prior review. [#171](https://github.com/1337isnot1337/solved-conjectures/issues/171).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/SOURCES.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/FORMALIZATION.md) · [PRIOR-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ferreira-simon-diagonal/PRIOR-AUDIT.md)
@@ -34,6 +36,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2512.04940v1) (25 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Lancelot F. James (2010-07-20). [Lamperti-type laws](https://doi.org/10.1214/09-aap660).
+- Rui A. C. Ferreira, Thomas Simon (2025-12-04). [Mittag-Leffler functions and convex ordering](https://doi.org/10.48550/arxiv.2512.04940).
+- Nomvelo Sibisi (2025-07-09). [Distributions based on Stable Mixtures and Gamma-Stable Convolutions](https://doi.org/10.48550/arxiv.2507.06665).
 
 - Mittag-Leffler functions and convex ordering (HTTP 200). [Retrieved address](https://arxiv.org/abs/2512.04940).
 - Mittag-Leffler functions and convex ordering (HTTP 200). [Retrieved address](https://arxiv.org/abs/2512.04940v1).

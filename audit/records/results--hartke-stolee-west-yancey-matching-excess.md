@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T19:47:49Z. [Commit ea1b8bdb2](https://github.com/1337isnot1337/solved-conjectures/commit/ea1b8bdb276c1b244b918f1942496566f7c430f4).
 - Coordination and prior review. [#387](https://github.com/1337isnot1337/solved-conjectures/issues/387) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md) · [STATEMENT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hartke-stolee-west-yancey-matching-excess/STATEMENT_REVIEW.md)
@@ -29,6 +31,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1105.1764) (25 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Stephen G. Hartke, Derrick Stolee, Douglas B. West, Matthew Yancey (2012-07-16). [Extremal Graphs With a Given Number of Perfect Matchings](https://doi.org/10.1002/jgt.21687).
+- Derrick Stolee (2011-05-09). [Generating p-extremal graphs](https://doi.org/10.48550/arxiv.1105.1764).
 
 - PDF header (HTTP 200). [Retrieved address](https://dwest.web.illinois.edu/pubs/perfmat.pdf).
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1002/jgt.21687).

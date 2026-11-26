@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T04:47:34-06:00. [Commit 90479cd26](https://github.com/1337isnot1337/solved-conjectures/commit/90479cd26d2571ecbff461ce56a26aeb56c013f9).
 - Coordination and prior review. [#156](https://github.com/1337isnot1337/solved-conjectures/issues/156) · [#788](https://github.com/1337isnot1337/solved-conjectures/issues/788).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-gyarfas-point-degree-spectrum/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-gyarfas-point-degree-spectrum/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-gyarfas-point-degree-spectrum/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-gyarfas-point-degree-spectrum/FORMALIZATION.md)
@@ -29,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.renyi.hu/~p_erdos/1985-12.pdf) (12 pages). problems 2 on PDF p. 1.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Matthew E. Kroeker, Ben Lund (2026-10-15). [Ordinary lines, point degrees, and matroid density](https://doi.org/10.48550/arxiv.2610.21415).
 
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf).
 - Publications 2000— 2009 (HTTP 200). [Retrieved address](https://www.renyi.hu/~gyarfas/index_files/publications_2000_2009.htm).

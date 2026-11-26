@@ -31,6 +31,8 @@ The two packages share the exact single-edge theorem: in the second notation n=d
 - Latest change to this landing file at the snapshot on 2026-11-26T01:20:56-06:00. [Commit 7d6d7e7b4](https://github.com/1337isnot1337/solved-conjectures/commit/7d6d7e7b47b5837995bae07409d567fbae0f6dd4).
 - Coordination and prior review. [#147](https://github.com/1337isnot1337/solved-conjectures/issues/147) · [#152](https://github.com/1337isnot1337/solved-conjectures/issues/152).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-complete-minus-edges/FORMALIZATION.md)
@@ -40,6 +42,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2603.08822) (15 pages). conjecture 2 on PDF p. 7 · problem 2 on PDF p. 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ján Mazák, Filip Zrubák (2026-03-09). [Circular chromatic index of small graphs](https://doi.org/10.48550/arxiv.2603.08822).
 
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822).

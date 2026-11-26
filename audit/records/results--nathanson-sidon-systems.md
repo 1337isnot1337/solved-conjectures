@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T07:04:09-06:00. [Commit e893fe3f8](https://github.com/1337isnot1337/solved-conjectures/commit/e893fe3f8d65aa6c6e77707d55e895d92aed451c).
 - Coordination and prior review. [#798](https://github.com/1337isnot1337/solved-conjectures/issues/798) · [#812](https://github.com/1337isnot1337/solved-conjectures/pull/812).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nathanson-sidon-systems/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nathanson-sidon-systems/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nathanson-sidon-systems/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/nathanson-sidon-systems/FORMALIZATION.md)
@@ -29,6 +31,15 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.theoryofnumbers.com/melnathanson/pdfs/nath2022-198.pdf) (14 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Melvyn B. Nathanson (2021-09-20). [The Bose-Chowla argument for Sidon sets](https://doi.org/10.1016/j.jnt.2021.08.005).
+- Yin Choi Cheng (2024-08-22). [Greedy Sidon sets for linear forms](https://doi.org/10.1016/j.jnt.2024.07.010).
+- Jin-Hui Fang (2024-03-19). [On Cilleruelo-Nathanson's method in Sidon sets](https://doi.org/10.1016/j.jnt.2024.01.020).
+- Melvyn B. Nathanson (2025-08-20). [Q-independence and the construction of B-sets of integers and lattice points](https://doi.org/10.1016/j.disc.2025.114726).
+- Melvyn B. Nathanson (2023-10-27). [Extremal problems and the combinatorics of sumsets](https://doi.org/10.48550/arxiv.2310.18277).
+- Csaba Sándor, Quan-Hui Yang, Jun-Yu Zhou (2021-11-30). [Note on a problem of Nathanson related to the $φ$-Sidon set](https://doi.org/10.48550/arxiv.2111.15485).
 
 - The Bose-Chowla argument for Sidon sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2104.12711v3).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jnt.2021.08.005).

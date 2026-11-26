@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T17:35:05Z. [Commit b9cd94353](https://github.com/1337isnot1337/solved-conjectures/commit/b9cd94353b81bfec3f0be2f92a9b3ad22640dc8a).
 - Coordination and prior review. [#352](https://github.com/1337isnot1337/solved-conjectures/issues/352) · [#411](https://github.com/1337isnot1337/solved-conjectures/issues/411) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gessel-zhuang-pinnacle-gamma/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gessel-zhuang-pinnacle-gamma/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gessel-zhuang-pinnacle-gamma/PROOF.md) · [LEAN-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md)
@@ -31,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1208.3831) (27 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ira M. Gessel, Yan Zhuang (2024-11-07). [Two-sided permutation statistics via symmetric functions](https://doi.org/10.1017/fms.2024.89).
 
 - Two-sided permutation statistics via symmetric functions (HTTP 200). [Retrieved address](https://doi.org/10.1017/fms.2024.89).
 - Two-sided permutation statistics via symmetric functions (HTTP 200). [Retrieved address](https://arxiv.org/abs/2306.15785v3).

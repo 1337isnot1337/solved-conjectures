@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T05:11:58Z. [Commit e1cf80b80](https://github.com/1337isnot1337/solved-conjectures/commit/e1cf80b80c2fe9d22d83f1dc3673410a2ac1bf2e).
 - Coordination and prior review. [#408](https://github.com/1337isnot1337/solved-conjectures/issues/408).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/PROOF.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/chappelon-ramirez-stamate-leaf-type/LEAN.md)

@@ -17,6 +17,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T23:57:16-06:00. [Commit 3f6ee74c8](https://github.com/1337isnot1337/solved-conjectures/commit/3f6ee74c8bc1f2aba43ccd1cb44f2e9941016fe8).
 - Latest change to this landing file at the snapshot on 2026-11-19T00:14:43-06:00. [Commit 75df6294f](https://github.com/1337isnot1337/solved-conjectures/commit/75df6294fbcaae78f5cab9b73999a506235cf4f9).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [loneliness-final-extension-candidates.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/loneliness-final-extension-candidates.md)

@@ -25,6 +25,8 @@ Conjugating the second power by an independent uniform permutation gives a unifo
 - Latest change to this landing file at the snapshot on 2026-11-24T15:12:46Z. [Commit 04d615ed8](https://github.com/1337isnot1337/solved-conjectures/commit/04d615ed8a4d64e96ea0540d914038014e9b787f).
 - Coordination and prior review. [#493](https://github.com/1337isnot1337/solved-conjectures/issues/493).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feray-conjugate-power-word/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feray-conjugate-power-word/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feray-conjugate-power-word/PROOF.md) · [SHARP-RATE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/feray-conjugate-power-word/SHARP-RATE.md)
@@ -35,6 +37,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2009.00897) (53 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Michael D. Larsen, Aner Shalev (2008-07-30). [Characters of symmetric groups: sharp bounds and applications](https://doi.org/10.1007/s00222-008-0145-7).
+- Martin W. Liebeck, Aner Shalev (2004-12-16). [Character degrees and random walks in finite groups of Lie type](https://doi.org/10.1112/s0024611504014935).
+- Lucas Teyssier, Paul Thévenin (2024-11-07). [Characters of symmetric groups: sharp bounds on virtual degrees and the Witten zeta function](https://doi.org/10.48550/arxiv.2411.04347).
 
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/53596?nt=1).
 - Characters of symmetric groups: sharp bounds on virtual degrees and the Witten zeta function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2411.04347v4).

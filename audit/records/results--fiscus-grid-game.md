@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T04:34:28-06:00. [Commit 882e6559c](https://github.com/1337isnot1337/solved-conjectures/commit/882e6559c18ae4498ea5d692bb3ac9c4ea7d3349).
 - Coordination and prior review. [#791](https://github.com/1337isnot1337/solved-conjectures/issues/791).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/fiscus-grid-game/FORMALIZATION.md)
@@ -31,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2504.03448) (19 pages). problem 23 on PDF p. 17 · conjecture 24 on PDF p. 17.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Sean Fiscus, Glenn Hurlbert, Eric Myzelev, Travis Pence (2025-04-04). [A New Dominating Set Game on Graphs](https://doi.org/10.48550/arxiv.2504.03448).
 
 - A New Dominating Set Game on Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2504.03448v2).
 - A New Dominating Set Game on Graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2504.03448).

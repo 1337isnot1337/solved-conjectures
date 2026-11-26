@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T06:08:43-06:00. [Commit 72c5ba2a0](https://github.com/1337isnot1337/solved-conjectures/commit/72c5ba2a0199b7e49432f7a038db831d24a78a6a).
 - Coordination and prior review. [#209](https://github.com/1337isnot1337/solved-conjectures/issues/209).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/SOURCES.md) · [ALGEBRA_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/ALGEBRA_REVIEW.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/FORMALIZATION.md) · [PRIOR_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/PRIOR_AUDIT.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kovalev-hardy-duality/ROOT_REVIEW.md)
@@ -33,6 +35,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2001.09465) (14 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Leonid V. Kovalev, Xuerui Yang (2020-03-16). [Near-isometric duality of Hardy norms with applications to harmonic mappings](https://doi.org/10.1016/j.jmaa.2020.124040).
+- Ole Fredrik Brevig, Joaquim Ortega‐Cerdà, Kristian Seip (2021-01-07). [A converse to the Schwarz lemma for planar harmonic maps](https://doi.org/10.1016/j.jmaa.2020.124908).
+- Saif Eldeen Babiker, Shawgy Hussein (2024-12-01). [A Focus on Near-Isometric Duality of Hardy Norms with Applications Corresponding to Harmonic Mappings](https://doi.org/10.35629/0743-1012121133).
+- Leonid V. Kovalev (2026-07-19). [Hardy-type norms of matrices](https://doi.org/10.48550/arxiv.2607.17373).
 
 - Hardy-type norms of matrices (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.17373).
 - DLMF: §10.32 Integral Representations ‣ Modified Bessel Functions ‣ Chapter 10 Bessel Functions (HTTP 200). [Retrieved address](https://dlmf.nist.gov/10.32.E9).

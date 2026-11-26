@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T16:34:18Z. [Commit 95b8f952d](https://github.com/1337isnot1337/solved-conjectures/commit/95b8f952d5f95ac1c87031d4a109bdc810e79165).
 - Coordination and prior review. [#406](https://github.com/1337isnot1337/solved-conjectures/issues/406).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/rossi-permutohedron-roots/FORMALIZATION.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2404.03249) (21 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Giovanni Rossi (2026-11-19). [Beyond geometric lattices: pseudo-atoms and redundant join representations in the face lattice of the permutohedron](https://doi.org/10.48550/arxiv.2611.25741).
 
 - Beyond geometric lattices: pseudo-atoms and redundant join representations in the face lattice of the permutohedron (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.25741v1).
 - Asymptotic for the rightmost zeros of Bell and Eulerian polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.03249).

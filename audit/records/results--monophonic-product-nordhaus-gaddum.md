@@ -24,6 +24,8 @@ The November 3 subdivided 6-clique refutes the independent monophonic sum predic
 - Latest change to this landing file at the snapshot on 2026-11-26T09:25:28-06:00. [Commit d57704cd3](https://github.com/1337isnot1337/solved-conjectures/commit/d57704cd3224ef8fdd369fd1c8d6042b99645891).
 - Coordination and prior review. [#847](https://github.com/1337isnot1337/solved-conjectures/issues/847).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/monophonic-product-nordhaus-gaddum/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/monophonic-product-nordhaus-gaddum/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/monophonic-product-nordhaus-gaddum/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/monophonic-product-nordhaus-gaddum/FORMALIZATION.md)
@@ -33,6 +35,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2408.13494v2) (28 pages). conjecture 9.3 on PDF p. 26.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Ullas Chandran S.V., Gabriele Di Stefano, S. Haritha, Elias John Thomas et al. (2026-08-28). [Colouring a graph with position sets](https://doi.org/10.26493/1855-3974.3454.a3c).
+- P. Graham (2026-11-03). [A subdivided 6-clique breaks a conjectured sum bound for independent monophonic-position colorings](https://doi.org/10.5281/zenodo.23915320).
 
 - Colouring a graph with position sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.13494v2).
 - Source URL (HTTP 403). [Retrieved address](https://oro.open.ac.uk/107103/8/107103.pdf).

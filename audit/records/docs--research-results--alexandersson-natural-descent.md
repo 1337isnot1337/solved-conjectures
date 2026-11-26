@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:30:23-06:00. [Commit 45acca3e2](https://github.com/1337isnot1337/solved-conjectures/commit/45acca3e2c64a1f5e89492883f36e4d489fe83ae).
 - Coordination and prior review. [#116](https://github.com/1337isnot1337/solved-conjectures/issues/116).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-natural-descent/README.md) · [long-first-row.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/alexandersson-natural-descent/long-first-row.md)
@@ -31,6 +33,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2607.15503) (29 pages). conjecture 8.1 on PDF p. 3, 22, 27.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Petter Brändén (2004-09-01). [On Operators on Polynomials Preserving Real-Rootedness and the Neggers-Stanley Conjecture](https://doi.org/10.1023/b:jaco.0000047295.93525.df).
+- Luis Ferroni, Alejandro H. Morales, Greta Panova (2026-08-01). [Skew shapes, Ehrhart positivity, and beyond](https://doi.org/10.1112/plms.70204).
+- Francesco Brenti (1989-01-01). [Unimodal, log-concave and Pólya frequency sequences in combinatorics](https://doi.org/10.1090/memo/0413).
+- Katharina Jochemko, Krishna Menon (2026-04-09). [Ehrhart positivity for marked order polytopes](https://doi.org/10.48550/arxiv.2604.08394).
+- Charlie Hill, Ambrose Luo, Vu Trinh, Andrés R. Vindas-Meléndez (2026-07-16). [Lattice slices, Ehrhart polynomials, and magic positivity of generalized parking-function polytopes](https://doi.org/10.48550/arxiv.2607.15503).
 
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1023/B:JACO.0000047295.93525.df).

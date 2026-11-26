@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T05:43:00-06:00. [Commit b9e6bd570](https://github.com/1337isnot1337/solved-conjectures/commit/b9e6bd5707adcecd84859c1a69b2d7e113140113).
 - Coordination and prior review. [#180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/SOURCES.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/novelli-thibon/FORMALIZATION.md)
@@ -34,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v27i3p37/pdf/) (21 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Jean-Christophe Novelli, Jean‐Yves Thibon (2025-11-21). [Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang-Baxter equation](https://doi.org/10.1016/j.jcta.2025.106130).
+- James Haglund, Andrew Timothy Wilson (2020-08-21). [Macdonald Polynomials and Chromatic Quasisymmetric Functions](https://doi.org/10.37236/9011).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jcta.2025.106130).
 - Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang-Baxter equation (HTTP 200). [Retrieved address](https://arxiv.org/abs/2502.09072v2).

@@ -1739,6 +1739,14 @@
     {
       "url": "https://oro.open.ac.uk/101278/8/101278.pdf",
       "status": 403
+    },
+    {
+      "url": "https://arxiv.org/pdf/2308.08840",
+      "status": 200,
+      "pdf_sha256": "06cf269da482a0ae65af5526c4e2d02241de9b8d93ad406c9d09b1179db54722",
+      "pages": 10,
+      "bytes": 672867,
+      "matching_numbered_labels": {}
     }
   ],
   "results/frankl-generator-families": [

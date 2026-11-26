@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T11:03:45Z. [Commit 83c325ae5](https://github.com/1337isnot1337/solved-conjectures/commit/83c325ae559864ec0b5e916d90a342b50a81de7f).
 - Coordination and prior review. [#419](https://github.com/1337isnot1337/solved-conjectures/issues/419).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/darcais-distinct-right-half-plane-zeros/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/darcais-distinct-right-half-plane-zeros/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/darcais-distinct-right-half-plane-zeros/PROOF.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2601.18599v4) (15 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Steven Charlton, Bernhard E. Heim, Markus Neuhauser, Johann Christian Stumpenhusen et al. (2026-08-19). [A Positive Proportion of the Reduced D'Arcais Polynomials is not Hurwitz](https://doi.org/10.48550/arxiv.2608.18842).
+- Shannon L. Starr (2026-01-26). [Asymptotics of the d'Arcais Numbers at Small $k$](https://doi.org/10.48550/arxiv.2601.18599).
 
 - A Positive Proportion of the Reduced D'Arcais Polynomials is not Hurwitz (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.18842v2).
 - Asymptotics of the d'Arcais Numbers at Small $k$ (HTTP 200). [Retrieved address](https://arxiv.org/abs/2601.18599v4).

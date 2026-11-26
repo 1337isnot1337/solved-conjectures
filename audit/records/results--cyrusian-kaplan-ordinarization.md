@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T01:35:15-06:00. [Commit 9d5654891](https://github.com/1337isnot1337/solved-conjectures/commit/9d56548914c285fda74303bdd9de1cf6d5bd4bd6).
 - Coordination and prior review. [#467](https://github.com/1337isnot1337/solved-conjectures/issues/467).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cyrusian-kaplan-ordinarization/FORMALIZATION.md)
@@ -29,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.math.kth.se/math/GRU/2012.2013/SF2742/texter/BeckRobinsBook.pdf) (246 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Sogol Cyrusian, Nathan Kaplan (2026-02-11). [Ordinarization numbers of numerical semigroups](https://doi.org/10.1080/00927872.2026.2615092).
 
 - Source URL (HTTP 403). [Retrieved address](https://doi.org/10.1080/00927872.2026.2615092).
 - Source URL (HTTP 403). [Retrieved address](https://www.tandfonline.com/doi/full/10.1080/00927872.2026.2615092).

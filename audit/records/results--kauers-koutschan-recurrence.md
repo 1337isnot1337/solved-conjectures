@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:14:46-06:00. [Commit 79bed2721](https://github.com/1337isnot1337/solved-conjectures/commit/79bed272124870b8ef33a4e750170c78d9fbaa16).
 - Coordination and prior review. [#218](https://github.com/1337isnot1337/solved-conjectures/issues/218) · [#281](https://github.com/1337isnot1337/solved-conjectures/pull/281).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kauers-koutschan-recurrence/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kauers-koutschan-recurrence/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kauers-koutschan-recurrence/FORMALIZATION.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/perms.pdf) (14 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Jaideep Sai Padhi (2026-08-11). [Solutions to Five Challenge Problems in Enumerative and Algorithmic Combinatorics, with an Account of the Human-Machine Methodology Employed](https://doi.org/10.48550/arxiv.2608.11290).
 
 - Guessing with Little Data (HTTP 200). [Retrieved address](https://arxiv.org/abs/2202.07966).
 - PDF header (HTTP 200). [Retrieved address](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/perms.pdf).

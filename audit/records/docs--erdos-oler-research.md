@@ -21,11 +21,19 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-20T04:17:13-06:00. [Commit 35749ce81](https://github.com/1337isnot1337/solved-conjectures/commit/35749ce81bb4e20fcee312c0780a8023e0a41a40).
 - Coordination and prior review. [#62](https://github.com/1337isnot1337/solved-conjectures/issues/62).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [erdos-oler-boundary-faces.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-oler-boundary-faces.md) · [erdos-oler-research.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/erdos-oler-research.md)
 
 ## Literature checks
+
+**Bibliographic attribution for cited works**
+
+- Jon Folkman, Ron L. Graham (1969-01-01). [A Packing Inequality for Compact Convex Subsets of the Plane](https://doi.org/10.4153/cmb-1969-096-7).
+- Norman Oler (1961-05-01). [A Finite Packing Problem](https://doi.org/10.4153/cmb-1961-018-7).
+- Charles Payan (1997-03-01). [Empilement de cercles égaux dans un triangle équilatéral a propos d'une conjecture d'Erdős-Oler](https://doi.org/10.1016/s0012-365x(96)00201-4).
 
 - A Packing Inequality for Compact Convex Subsets of the Plane (HTTP 200). [Retrieved address](https://doi.org/10.4153/CMB-1969-096-7).
 - A Finite Packing Problem (HTTP 200). [Retrieved address](https://doi.org/10.4153/CMB-1961-018-7).

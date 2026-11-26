@@ -8,6 +8,10 @@ The source describes the result as follows.
 
 > DeLaViña (2007): every total dominating set contains a dominating pair under the given even-distance bound. **Credited to @JesterInABarrel.**
 
+## Audit finding
+
+The November 2026 public index of DeLaViña’s catalogue gives the original dated March 4, 2007 conjecture, numbered 318, for connected simple graphs on more than one vertex. The hypothesis uses the maximum even-distance count and the number of complement edges. The repository attributes the proof to the external contributor JesterInABarrel and explicitly records permission. Its landing page distinguishes that contribution from the conjecture proposer. Local PDF retrieval returned 404, but the indexed primary document exposed the statement and definitions on displayed page 186.
+
 ## Source outline
 
 - [Definitions](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/graffiti-pc-318/PROOF.md#L7).
@@ -20,6 +24,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T20:11:52-06:00. [Commit ada4a41f4](https://github.com/1337isnot1337/solved-conjectures/commit/ada4a41f418f6b0a66a24fe8366b248ff805b9be).
 - Latest change to this landing file at the snapshot on 2026-11-19T08:17:02-06:00. [Commit 59ce1092a](https://github.com/1337isnot1337/solved-conjectures/commit/59ce1092a81f2fa8a6bb0f371c577007a6cbeae6).
 - Coordination and prior review. [#15](https://github.com/1337isnot1337/solved-conjectures/issues/15).
+
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
 
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
@@ -38,5 +44,3 @@ The local HTTP probe and public search index differed on access to one PDF. The 
 ## Verification
 
 - Verify Graffiti.pc 318 total-domination theorem — exit 0. [Command and output](../evidence/replays/083.txt).
-
-The recorded checks do not certify every inference or establish exclusive priority. A shared paper identifier or a search hit alone does not establish an earlier solution.

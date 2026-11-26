@@ -21,6 +21,8 @@ The authors’ Goddyn–Wong paper is also available through their Zenodo record
 - Path first added on the first-parent history on 2026-11-18T23:38:36-06:00. [Commit e49bb6a86](https://github.com/1337isnot1337/solved-conjectures/commit/e49bb6a86efa055e651889efa5dfa95317ba8efb).
 - Latest change to this landing file at the snapshot on 2026-11-19T08:17:02-06:00. [Commit 59ce1092a](https://github.com/1337isnot1337/solved-conjectures/commit/59ce1092a81f2fa8a6bb0f371c577007a6cbeae6).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lonely-runner-two-insertions/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lonely-runner-two-insertions/PROOF.md)

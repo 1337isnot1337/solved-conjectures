@@ -28,6 +28,8 @@ The same-source Principia and Omega papers prove bottom-heaviness of coefficient
 - Latest change to this landing file at the snapshot on 2026-11-24T14:26:22Z. [Commit 61b05d497](https://github.com/1337isnot1337/solved-conjectures/commit/61b05d497f54e8472225a4e8f6a4f0113576cf8b).
 - Coordination and prior review. [#92](https://github.com/1337isnot1337/solved-conjectures/issues/92).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/PROOF.md) · [LOCAL-LIMIT-AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/LOCAL-LIMIT-AUDIT.md) · [LOCAL-LIMIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/LOCAL-LIMIT.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-swanson-normality/NOVELTY.md)
@@ -38,6 +40,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2205.14078) (46 pages). conjecture 7.8 on PDF p. 41 · conjecture 7.9 on PDF p. 42.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bruce E. Sagan, Joshua P. Swanson (2023-12-06). [q -Stirling numbers in type B](https://doi.org/10.1016/j.ejc.2023.103899).
+- Bruce E. Sagan, Joshua P. Swanson (2025-03-24). [Stirling Numbers for Complex Reflection Groups](https://doi.org/10.1007/s00026-025-00751-4).
+- Donat Crippa, Klaus Simon, Paul Trunz (1997-06-01). [Markov Processes Involving q-Stirling Numbers](https://doi.org/10.1017/s0963548397002964).
+- Sylvie Corteel, John Lentfer (2026-08-08). [Universal Hilbert series coefficients of the superspace coinvariant ring](https://doi.org/10.48550/arxiv.2608.08187).
 
 - PDF header (HTTP 200). [Retrieved address](https://users.math.msu.edu/users/bsagan/Papers/Old/qStB-pub.pdf).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.ejc.2023.103899).

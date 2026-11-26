@@ -22,6 +22,8 @@ Missing design and noncollinearity hypotheses. One block containing all v≥2 po
 - Latest change to this landing file at the snapshot on 2026-11-26T09:31:25-06:00. [Commit 44df818f6](https://github.com/1337isnot1337/solved-conjectures/commit/44df818f6acde0c803cbca15127bdb5a27190054).
 - Coordination and prior review. [#156](https://github.com/1337isnot1337/solved-conjectures/issues/156) · [#780](https://github.com/1337isnot1337/solved-conjectures/issues/780).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/PROOF.md) · [field-obstruction.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/field-obstruction.md) · [prime-planes.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/prime-planes.md) · [profiles.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/profiles.md) · [regularity.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/regularity.md) · [restriction.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/restriction.md) · [small-projections.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/small-projections.md) · [symmetry.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/symmetry.md) · [windows.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-block-size-multiplicity/windows.md)
@@ -32,6 +34,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf) (7 pages). conjecture 1 on PDF p. 3 · problem 1 on PDF p. 4.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Charles J. Colbourn, Kevin T. Phelps, Vojtěch Rödl (1984-09-01). [Block Sizes in Pairwise Balanced Designs](https://doi.org/10.4153/cmb-1984-057-0).
+- Marco Buratti (2001-04-01). [Constructions for point-regular linear spaces](https://doi.org/10.1016/s0378-3758(00)00247-0).
+- Mark Lewko (2026-09-22). [A Szemerédi-Trotter Theorem in Arbitrary Fields](https://doi.org/10.48550/arxiv.2609.27023).
 
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~p_erdos/1978-42.pdf).
 - PDF header (HTTP 200). [Retrieved address](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf).

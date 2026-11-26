@@ -31,6 +31,8 @@ Prior papers already disprove the unrestricted shifted conjecture. This package 
 - Latest change to this landing file at the snapshot on 2026-11-26T11:34:18-06:00. [Commit 9212b75b5](https://github.com/1337isnot1337/solved-conjectures/commit/9212b75b59f5fabb173761eecdbfea84b5787421).
 - Coordination and prior review. [#110](https://github.com/1337isnot1337/solved-conjectures/issues/110) · [#646](https://github.com/1337isnot1337/solved-conjectures/pull/646) · [#660](https://github.com/1337isnot1337/solved-conjectures/pull/660) · [#755](https://github.com/1337isnot1337/solved-conjectures/pull/755).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/FORMALIZATION.md) · [FROZEN_EXTENSION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/FROZEN_EXTENSION.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/shifted-lonely-runner-counterexamples/REVIEW.md)
@@ -41,6 +43,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2603.24784) (41 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Yuhan Zhang (2026-08-01). [Tight instances of the Lonely Runner Conjecture: one-entry modifications and the growth of speeds](https://doi.org/10.48550/arxiv.2608.13599).
+- Daria Poliakova (2026-09-20). [More (shifted) runners, less loneliness](https://doi.org/10.48550/arxiv.2609.23952).
 
 - aadrianvv · GitHub (HTTP 200). [Retrieved address](https://github.com/aadrianvv).
 - tomdif (Thomas DiFiore) · GitHub (HTTP 200). [Retrieved address](https://github.com/tomdif).

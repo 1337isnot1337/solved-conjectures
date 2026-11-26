@@ -23,6 +23,8 @@ The Omega same-paper record addresses oscillation in Conjecture 10.5. The reposi
 - Latest change to this landing file at the snapshot on 2026-11-25T08:59:03Z. [Commit 7554a62aa](https://github.com/1337isnot1337/solved-conjectures/commit/7554a62aa4fc469a9e044658cca90cc7f192588b).
 - Coordination and prior review. [#399](https://github.com/1337isnot1337/solved-conjectures/issues/399).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-parity/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-parity/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-parity/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/benfield-lippard-waring-gap-parity/FORMALIZATION.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2404.08193v2) (20 pages). conjecture 10.3 on PDF p. 10 · conjecture 10.4 on PDF p. 10 · conjecture 10.5 on PDF p. 10.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Brennan Benfield, Oliver Lippard (2024-04-12). [Integers that are not the sum of positive powers](https://doi.org/10.48550/arxiv.2404.08193).
 
 - Integers that are not the sum of positive powers (HTTP 200). [Retrieved address](https://arxiv.org/abs/2404.08193v2).
 - Oscillation of stable exception-set sizes - trureturing — Discovering truth (HTTP 200). [Retrieved address](https://the-omega-institute.github.io/trureturing-mdbook/Problems/benfield-lippard-2025-exception-set-oscillation.html).

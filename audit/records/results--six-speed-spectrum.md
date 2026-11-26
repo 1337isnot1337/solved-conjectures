@@ -25,6 +25,8 @@ The computational proof has several independent stages. A previous successful Gi
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-19T14:29:31-06:00. [Commit 4076592d2](https://github.com/1337isnot1337/solved-conjectures/commit/4076592d21b4bf77ee050803fe1d99c74d1f6568).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/six-speed-spectrum/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/six-speed-spectrum/PROOF.md)
@@ -36,6 +38,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
 
+**Bibliographic attribution for cited works**
+
+- F. Cordella (2026-09-03). [Odd denominators in the Lonely Runner spectrum for six speeds](https://doi.org/10.48550/arxiv.2609.03444).
+- Jaan Allikvere (2026-09-02). [Fourteen and fifteen lonely runners](https://doi.org/10.48550/arxiv.2609.02604).
+- Hyunjun Yi, Karam Gill, Bryan Bu (2026-10-28). [Four runners that are barely lonely](https://doi.org/10.48550/arxiv.2610.40694).
+
 - Odd denominators in the Lonely Runner spectrum for six speeds (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.03444v2).
 - Amending the Lonely Runner Spectrum Conjecture (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p38).
 - Source URL (HTTP 202). [Retrieved address](https://escholarship.org/uc/item/3mx8w3js).
@@ -46,6 +54,6 @@ The page matches use numbered labels from the dossier. Each PDF digest is in the
 
 ## Verification
 
-The computational runs in this audit do not include a separate executable check for this entry.
+- Verify the six-speed loneliness spectrum — exit 0. [Command and output](../evidence/replays/105.txt).
 
 1 of 1 associated historical Lean receipts with source hashes match all listed Lean sources in the snapshot. [Per-receipt comparisons](../evidence/lean-receipts.json).

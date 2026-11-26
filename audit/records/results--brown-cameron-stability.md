@@ -26,6 +26,8 @@ The upper-half-plane assertion concerns independence polynomials of random graph
 - Latest change to this landing file at the snapshot on 2026-11-26T10:50:36-06:00. [Commit 2e54a945a](https://github.com/1337isnot1337/solved-conjectures/commit/2e54a945aa14bb6965f88f9fc21c63e1d9183921).
 - Coordination and prior review. [#573](https://github.com/1337isnot1337/solved-conjectures/issues/573) · [#74](https://github.com/1337isnot1337/solved-conjectures/issues/74) · [#838](https://github.com/1337isnot1337/solved-conjectures/pull/838).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-cameron-stability/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-cameron-stability/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-cameron-stability/PROOF.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/brown-cameron-stability/REVIEW.md)
@@ -36,6 +38,15 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1709.08236) (11 pages). conjecture 3.2 on PDF p. 8.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Jason I. Brown, Ben Cameron (2018-03-02). [On the Stability of Independence Polynomials](https://doi.org/10.37236/7280).
+- Vadim E. Levit, Eugen Mândrescu (2005-06-14). [Independence polynomials of well-covered graphs: Generic counterexamples for the unimodality conjecture](https://doi.org/10.1016/j.ejc.2005.04.007).
+- Jason I. Brown, Ben Cameron (2017-10-28). [On the unimodality of independence polynomials of very well-covered graphs](https://doi.org/10.1016/j.disc.2017.10.007).
+- Jason I. Brown, Richard J. Nowakowski (2004-12-13). [Average independence polynomials](https://doi.org/10.1016/j.jctb.2004.10.001).
+- Wei Li, Wei Li, Tong Zhang (2026-09-27). [Unimodality of Forest Independence Polynomials](https://doi.org/10.48550/arxiv.2610.07943).
+- Vsevolod Gubarev (2018-08-12). [$PC$-polynomial of graph](https://doi.org/10.48550/arxiv.1808.03932).
 
 - adamben04 · GitHub (HTTP 200). [Retrieved address](https://github.com/adamben04).
 - On the Stability of Independence Polynomials (HTTP 200). [Retrieved address](https://doi.org/10.37236/7280).

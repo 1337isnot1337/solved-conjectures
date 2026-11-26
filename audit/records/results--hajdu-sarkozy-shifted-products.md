@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T19:02:54Z. [Commit 9a9eb25f9](https://github.com/1337isnot1337/solved-conjectures/commit/9a9eb25f9d82bf731712d1a0f36a1bab0677315d).
 - Coordination and prior review. [#418](https://github.com/1337isnot1337/solved-conjectures/issues/418) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hajdu-sarkozy-shifted-products/LEAN_REVIEW.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2501.16620) (6 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Chi Hoi Yip (2026-01-07). [Multiplicative irreducibility of small perturbations of the set of shifted k-th powers](https://doi.org/10.1007/s00493-025-00193-9).
+- Lajos Hajdu, Andràs Sárközy (2018-01-01). [On multiplicative decompositions of polynomial sequences, II](https://doi.org/10.4064/aa171116-7-3).
 
 - PDF header (HTTP 200). [Retrieved address](https://www.impan.pl/shop/en/publication/transaction/download/product/112684).
 - PDF header (HTTP 200). [Retrieved address](https://math.unideb.hu/sites/default/files/inline-files/poly3_revised.pdf).

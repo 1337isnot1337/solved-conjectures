@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T18:17:58Z. [Commit 1f16f8276](https://github.com/1337isnot1337/solved-conjectures/commit/1f16f82761c540186b79e0d2907e497b8c6c0aef).
 - Coordination and prior review. [#651](https://github.com/1337isnot1337/solved-conjectures/pull/651).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mcnamara-steingrimsson-rank-unimodality/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mcnamara-steingrimsson-rank-unimodality/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mcnamara-steingrimsson-rank-unimodality/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/mcnamara-steingrimsson-rank-unimodality/FORMALIZATION.md)
@@ -33,6 +35,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://mathdiscoveries.org/static/papers/pattern-poset-not-sperner/2026-11-23-v1/pattern-poset-not-sperner-2026-11-23-v1-paper.pdf) (9 pages). conjecture 9.4 on PDF p. 9.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Peter R. W. McNamara, Einar Steingrímsson (2015-03-20). [On the topology of the permutation pattern poset](https://doi.org/10.1016/j.jcta.2015.02.009).
+- Vincent R. Vatter (2026-02-18). [An assortment of problems in permutation patterns: unimodality, equivalence, derangements, and sorting](https://doi.org/10.48550/arxiv.2602.16355).
+- Yibo Zhang, Zhanhe Zhang (2026-11-21). [Rank-unimodality of one-descent composition ideals](https://doi.org/10.48550/arxiv.2611.28619).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jcta.2015.02.009).
 - On the topology of the permutation pattern poset (HTTP 200). [Retrieved address](https://arxiv.org/abs/1305.5569).

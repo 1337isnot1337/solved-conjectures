@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T15:12:46Z. [Commit 04d615ed8](https://github.com/1337isnot1337/solved-conjectures/commit/04d615ed8a4d64e96ea0540d914038014e9b787f).
 - Coordination and prior review. [#494](https://github.com/1337isnot1337/solved-conjectures/issues/494).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-small-average-eigenfunction-norms/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-small-average-eigenfunction-norms/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-small-average-eigenfunction-norms/PROOF.md) · [LOG-FREE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-small-average-eigenfunction-norms/LOG-FREE.md) · [POINTWISE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md) · [TWO-SPHERE.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/steinerberger-small-average-eigenfunction-norms/TWO-SPHERE.md)
@@ -31,6 +33,10 @@ The local HTTP probe and public search index differed on access to one PDF. The 
 - [Source PDF](https://arxiv.org/pdf/2609.14023v3) (17 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Xiaolong Han (2026-09-12). [Orthonormal bases of spherical harmonics with maximal Lp norm growth](https://doi.org/10.48550/arxiv.2609.14023).
 
 - Source URL (HTTP 404). [Retrieved address](https://faculty.washington.edu/steinerb/openproblems.pdf).
 - Orthonormal bases of spherical harmonics with maximal Lp norm growth (HTTP 200). [Retrieved address](https://arxiv.org/abs/2609.14023v3).

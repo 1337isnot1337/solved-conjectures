@@ -25,6 +25,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T10:37:50-06:00. [Commit 3106ca207](https://github.com/1337isnot1337/solved-conjectures/commit/3106ca2070afd06acb0c641c03525c26b3278249).
 - Coordination and prior review. [#85](https://github.com/1337isnot1337/solved-conjectures/issues/85).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/PROOF.md) · [EVENT_PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/EVENT_PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/bernardi-morales-delta/NOVELTY.md)
@@ -35,6 +37,13 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1501.01135v1) (26 pages). conjecture 21 on PDF p. 22, 23 · conjecture 22 on PDF p. 23.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Olivier Bernardi, Alejandro H. Morales (2016-05-13). [Some Probabilistic Trees with Algebraic Roots](https://doi.org/10.37236/4954).
+- Joel Brewster Lewis, Alejandro H. Morales (2020-04-02). [Factorization problems in complex reflection groups](https://doi.org/10.4153/s0008414x2000022x).
+- Michał Dereziński, Michael W. Mahoney (2020-12-15). [Determinantal Point Processes in Randomized Numerical Linear Algebra](https://doi.org/10.1090/noti2202).
+- Michał Dereziński, Feynman T. Liang, Michael W. Mahoney (2020-12-06). [Exact expressions for double descent and implicit regularization via surrogate random design](https://doi.org/10.48550/arxiv.1912.04533).
 
 - PDF header (HTTP 200). [Retrieved address](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i2p36/pdf/).
 - Some Probabilistic Trees with Algebraic Roots (HTTP 200). [Retrieved address](https://doi.org/10.37236/4954).

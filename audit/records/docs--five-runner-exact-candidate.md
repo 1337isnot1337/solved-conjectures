@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-19T10:36:48-06:00. [Commit b35c3cda0](https://github.com/1337isnot1337/solved-conjectures/commit/b35c3cda01307c4de6c563c6e00cd4aa12f89b31).
 - Coordination and prior review. [#36](https://github.com/1337isnot1337/solved-conjectures/issues/36).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [five-runner-exact-candidate.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/five-runner-exact-candidate.md)

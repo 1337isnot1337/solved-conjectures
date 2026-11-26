@@ -25,6 +25,8 @@ Earlier exact answer. The Omega Institute merged its proof on November 23 at 19:
 - Latest change to this landing file at the snapshot on 2026-11-25T20:33:34Z. [Commit 6621e8953](https://github.com/1337isnot1337/solved-conjectures/commit/6621e8953cdab69c204d9842f1ebbd5e0a2fdaac).
 - Coordination and prior review. [#482](https://github.com/1337isnot1337/solved-conjectures/issues/482).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gonzalez-dleon-wachs-complete-graphs/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gonzalez-dleon-wachs-complete-graphs/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gonzalez-dleon-wachs-complete-graphs/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gonzalez-dleon-wachs-complete-graphs/FORMALIZATION.md)
@@ -35,6 +37,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1309.5527) (50 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Rafael S. González D’León, Michelle L. Wachs (2026-08-09). [Weighted bond posets and a new chromatic symmetric function](https://doi.org/10.48550/arxiv.2608.08692).
 
 - Weighted bond posets and a new chromatic symmetric function (HTTP 200). [Retrieved address](https://arxiv.org/abs/2608.08692v2).
 - On the (co)homology of the poset of weighted partitions (HTTP 200). [Retrieved address](https://arxiv.org/abs/1309.5527).

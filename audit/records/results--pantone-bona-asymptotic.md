@@ -22,6 +22,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T09:53:07Z. [Commit 3491936b3](https://github.com/1337isnot1337/solved-conjectures/commit/3491936b3a71af06c8588e82bf5e5980c9165690).
 - Coordination and prior review. [#377](https://github.com/1337isnot1337/solved-conjectures/issues/377).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/PROOF.md) · [double-sum.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/double-sum.md) · [ode-proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/ode-proof.md) · [tableau-proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pantone-bona-asymptotic/tableau-proof.md)
@@ -32,6 +34,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2306.12682v2) (32 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Amitai Regev (1981-08-01). [Asymptotic values for degrees associated with strips of young diagrams](https://doi.org/10.1016/0001-8708(81)90012-8).
 
 - Permutations avoiding sets of patterns with long monotone subsequences (HTTP 200). [Retrieved address](https://arxiv.org/abs/2103.06918v2).
 - PDF header (HTTP 200). [Retrieved address](https://dmtcs.episciences.org/13903/pdf).

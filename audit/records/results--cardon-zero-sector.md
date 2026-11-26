@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-25T08:31:01Z. [Commit 96d58c5d8](https://github.com/1337isnot1337/solved-conjectures/commit/96d58c5d88c2c615a0235cb536a2193a42c7a406).
 - Coordination and prior review. [#136](https://github.com/1337isnot1337/solved-conjectures/issues/136) · [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cardon-zero-sector/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cardon-zero-sector/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cardon-zero-sector/PROOF.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/cardon-zero-sector/LEAN.md)
@@ -41,6 +43,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1401.0237) (20 pages). open problem 6.1 on PDF p. 19.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- David A. Cardon, Tamás Forgács, Andrzej Piotrowski, Evan Sorensen et al. (2018-08-22). [On zero-sector reducing operators](https://doi.org/10.1016/j.jmaa.2018.08.025).
+- Thomas C. Craven, George Csordás (1995-01-01). [Complex zero decreasing sequences](https://doi.org/10.4310/maa.1995.v2.n4.a4).
+- Yi Wang, Bin Zhang (2013-09-10). [Hadamard powers of polynomials with only real zeros](https://doi.org/10.1016/j.laa.2013.08.012).
+- Vladimir Petrov Kostov, Boris Shapiro (2006-06-30). [On the Schur–Szegö composition of polynomials](https://doi.org/10.1016/j.crma.2006.06.007).
+- Andrew Campbell, Jonas Jalowy (2026-05-29). [Pólya--Schur problems and free probability](https://doi.org/10.48550/arxiv.2605.31356).
 
 - On Zero-Sector Reducing Operators (HTTP 200). [Retrieved address](https://arxiv.org/abs/1802.02641).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.jmaa.2018.08.025).

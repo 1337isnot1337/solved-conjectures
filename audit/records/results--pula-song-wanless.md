@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-20T18:10:05-06:00. [Commit 856b07901](https://github.com/1337isnot1337/solved-conjectures/commit/856b07901542dd1db20bf95396fb5f2a2190e70d).
 - Coordination and prior review. [#142](https://github.com/1337isnot1337/solved-conjectures/issues/142).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/README.md) · [proof.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/proof.md) · [priority-audit-addendum.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/priority-audit-addendum.md) · [review-inequalities.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/review-inequalities.md) · [review-sign-matrices.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/review-sign-matrices.md) · [source-audit.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pula-song-wanless/source-audit.md)
@@ -40,6 +42,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2609.21083) (30 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Kyle Pula, Seok-Zun Song, Ian M. Wanless (2010-09-21). [Minimum permanents on two faces of the polytope of doubly stochastic matrices](https://doi.org/10.1016/j.laa.2010.08.015).
+- Richard A. Brualdi (1985-01-01). [An interesting face of the polytope of doubly stochastic matrices](https://doi.org/10.1080/03081088508817637).
+- Gi‐Sang Cheon, Seok-Zun Song (2023-12-11). [A conjecture on minimum permanents](https://doi.org/10.21136/cmj.2023.0186-23).
+- Seok-Zun Song (2013-06-25). [MINIMUM PERMANENTS ON DOUBLY STOCHASTIC MATRICES WITH PRESCRIBED ZEROS](https://doi.org/10.5831/hmj.2013.35.2.211).
+- Leonid Gurvits, Jonathan Leake (2026-09-17). [Unique Minimizers for Permanents, Mixed Discriminants, and Log-concave Polynomials](https://doi.org/10.48550/arxiv.2609.21083).
 
 - Problem 14: Characterizing cohesive matrices – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/problem-14/index.html).
 - Problem 15: Characterizing barycentric matrices – Yair Lavi (HTTP 200). [Retrieved address](https://yair-lavi.com/mincs-list/problem-15/index.html).

@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T10:06:30-06:00. [Commit 733b029b9](https://github.com/1337isnot1337/solved-conjectures/commit/733b029b916032618c5262c86b73ceef876f8bab).
 - Coordination and prior review. [#393](https://github.com/1337isnot1337/solved-conjectures/issues/393) · [#665](https://github.com/1337isnot1337/solved-conjectures/pull/665).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-ordinary-darcais-root/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-ordinary-darcais-root/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-ordinary-darcais-root/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/heim-neuhauser-ordinary-darcais-root/FORMALIZATION.md)
@@ -33,6 +35,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2011.08874) (20 pages). conjecture 2 on PDF p. 3, 19.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bernhard E. Heim, Markus Neuhauser (2026-07-01). [Polynomization of Sun’s conjecture](https://doi.org/10.1007/s11139-026-01435-0).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s11139-026-01435-0).
 - Fractional partitions and conjectures of Chern-Fu-Tang and Heim-Neuhauser (HTTP 200). [Retrieved address](https://arxiv.org/abs/2011.08874).

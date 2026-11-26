@@ -23,6 +23,8 @@ The target in Problem 4.1 is the second-order limsup. On the groups of order 3 t
 - Latest change to this landing file at the snapshot on 2026-11-25T07:26:43Z. [Commit 68b5c5a06](https://github.com/1337isnot1337/solved-conjectures/commit/68b5c5a0667b06fc64c66817adbec265d2df648d).
 - Coordination and prior review. [#490](https://github.com/1337isnot1337/solved-conjectures/issues/490).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ma-tang-random-subset-sums/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ma-tang-random-subset-sums/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ma-tang-random-subset-sums/PROOF.md) · [BOUNDED-REMAINDER.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ma-tang-random-subset-sums/BOUNDED-REMAINDER.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/ma-tang-random-subset-sums/FORMALIZATION.md)
@@ -33,6 +35,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2510.01300v2) (7 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Jie Ma, Quanyu Tang (2026-02-05). [An Erdős problem on random subset sums in finite abelian groups](https://doi.org/10.48550/arxiv.2602.05768).
+- Yang Yu (2025-10-01). [The Permanent Rank of a Matrix (Part Three) Note on the Additive Basis Conjecture](https://doi.org/10.48550/arxiv.2510.01300).
 
 - An Erd\H{o}s problem on random subset sums in finite abelian groups (HTTP 200). [Retrieved address](https://arxiv.org/abs/2602.05768v2).
 - The Permanent Rank of a Matrix (Part Three) Note on the Additive Basis Conjecture (HTTP 200). [Retrieved address](https://arxiv.org/abs/2510.01300v2).

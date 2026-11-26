@@ -26,6 +26,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T06:44:02-06:00. [Commit 556ec3d6b](https://github.com/1337isnot1337/solved-conjectures/commit/556ec3d6b472418fbe72219e07a5c685f74ab80a).
 - Coordination and prior review. [#177](https://github.com/1337isnot1337/solved-conjectures/issues/177).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/SOURCES.md) · [ALGEBRA_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/ALGEBRA_REVIEW.md) · [CHECKS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/CHECKS.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lopez-pouso-segura-bessel/ROOT_REVIEW.md)
@@ -36,6 +38,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2308.08950) (35 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Óscar López Pouso, Javier Segura (2025-03-20). [Uniform relations between the Gauss–Legendre nodes and weights](https://doi.org/10.1186/s13660-025-03283-w).
+- Óscar López Pouso, Javier Segura (2025-01-09). [Analysis of difference schemes for the Fokker–Planck angular diffusion operator](https://doi.org/10.1016/j.camwa.2025.01.005).
+- Amparo Gil, Javier Segura, Nico Μ. Τemme (2026-05-07). [Fast and Accurate Computation of Classical Gaussian Quadratures](https://doi.org/10.1137/25m1755448).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1186/s13660-025-03283-w).
 - DLMF: §10.9 Integral Representations ‣ Bessel and Hankel Functions ‣ Chapter 10 Bessel Functions (HTTP 200). [Retrieved address](https://dlmf.nist.gov/10.9.E30).

@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:30:23-06:00. [Commit 45acca3e2](https://github.com/1337isnot1337/solved-conjectures/commit/45acca3e2c64a1f5e89492883f36e4d489fe83ae).
 - Coordination and prior review. [#777](https://github.com/1337isnot1337/solved-conjectures/issues/777).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/hurlbert-kamat/README.md)
@@ -29,6 +31,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2501.16144) (15 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Glenn Hurlbert, Vikram Kamat (2022-06-29). [On intersecting families of independent sets in trees](https://doi.org/10.1016/j.dam.2022.06.028).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/j.dam.2022.06.028).
 - Erd\H{o}s-Ko-Rado Theorems for a Family of Trees (HTTP 200). [Retrieved address](https://arxiv.org/abs/1506.07741).

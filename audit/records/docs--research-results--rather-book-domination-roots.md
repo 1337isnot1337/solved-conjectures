@@ -26,6 +26,8 @@ Omega’s earlier n=1 refutation is exact for the literal Rather conjecture. The
 - Latest change to this landing file at the snapshot on 2026-11-26T10:26:39-06:00. [Commit a2adfdc61](https://github.com/1337isnot1337/solved-conjectures/commit/a2adfdc61736b5941b2fb150c8c8fea25c98c613).
 - Coordination and prior review. [#843](https://github.com/1337isnot1337/solved-conjectures/issues/843).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/rather-book-domination-roots/README.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/rather-book-domination-roots/REVIEW.md)
@@ -36,6 +38,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1401.2092) (16 pages). question 3 on PDF p. 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bilal Ahmad Rather (2026-04-10). [On roots of domination polynomials for friendship and book graphs](https://doi.org/10.48550/arxiv.2604.08998).
 
 - On roots of domination polynomials for friendship and book graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2604.08998v2).
 - Rather's book domination-root Conjecture 5.4 \| trureturing (HTTP 200). [Retrieved address](https://www.trureturing.org/research/rather-2026-book-domination-root-conjecture/).

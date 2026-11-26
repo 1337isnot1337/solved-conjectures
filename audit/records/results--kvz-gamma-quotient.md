@@ -26,6 +26,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T04:00:34Z. [Commit 9ff45916e](https://github.com/1337isnot1337/solved-conjectures/commit/9ff45916e73de83d2ea64ef1bcc1750f102ea206).
 - Coordination and prior review. [#94](https://github.com/1337isnot1337/solved-conjectures/issues/94) · [#97](https://github.com/1337isnot1337/solved-conjectures/issues/97).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kvz-gamma-quotient/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kvz-gamma-quotient/PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/kvz-gamma-quotient/NOVELTY.md)
@@ -36,6 +38,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://dmkrp.wordpress.com/wp-content/uploads/2025/05/karp-anna-vishnyakova-and-yi-zhang.pdf) (27 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Dmitrii B. Karp, Anna Vishnyakova, Yi Zhang (2025-05-20). [Unimodality Preservation by Ratios of Functional Series and Integral Transforms](https://doi.org/10.1007/s00025-025-02431-4).
+- Priyanka Grover, Veer Singh Panwar, Arikatla Satyanarayana Reddy (2020-03-10). [Positivity properties of some special matrices](https://doi.org/10.1016/j.laa.2020.03.008).
+- Priyanka Grover, Veer Singh Panwar (2022-01-01). [Bidiagonal decompositions and total positivity of some special matrices](https://doi.org/10.7153/oam-2022-16-41).
 
 - Unimodality preservation by ratios of functional series and integral transforms (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.01755v2).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00025-025-02431-4).

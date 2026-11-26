@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-23T23:55:45Z. [Commit 29e9702cd](https://github.com/1337isnot1337/solved-conjectures/commit/29e9702cdf20a70d75738d9cb2ed695559c9f145).
 - Coordination and prior review. [#247](https://github.com/1337isnot1337/solved-conjectures/issues/247) · [#248](https://github.com/1337isnot1337/solved-conjectures/issues/248) · [#249](https://github.com/1337isnot1337/solved-conjectures/pull/249).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/ccd46fe75b25fbf32ab7a6139509f5bb2dad6201/research/bss-permanent-graph/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/ccd46fe75b25fbf32ab7a6139509f5bb2dad6201/research/bss-permanent-graph/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/ccd46fe75b25fbf32ab7a6139509f5bb2dad6201/research/bss-permanent-graph/SOURCES.md) · [REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/ccd46fe75b25fbf32ab7a6139509f5bb2dad6201/research/bss-permanent-graph/REVIEW.md)
@@ -40,6 +42,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1812.06828v1) (33 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Peter Bürgisser (2004-09-08). [The Complexity of Factors of Multivariate Polynomials](https://doi.org/10.1007/s10208-002-0059-5).
+- Peter Bürgisser (2020-10-06). [Correction To: The Complexity of Factors of Multivariate Polynomials](https://doi.org/10.1007/s10208-020-09477-6).
+- Peter Bürgisser (2026-06-23). [Intractability of Hilbert's Nullstellensatz implies algebraic hardness of permanent](https://doi.org/10.48550/arxiv.2606.25121).
 
 - The Complexity of Factors of Multivariate Polynomials (HTTP 200). [Retrieved address](https://arxiv.org/abs/1812.06828v1).
 - formal-math/vp-vnp/paper.pdf at 11b6c7e3c927df2658f513b6b68ea7f8929c62c5 · anthropics/formal-math · GitHub (HTTP 200). [Retrieved address](https://github.com/anthropics/formal-math/blob/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp/paper.pdf).

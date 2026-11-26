@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-19T05:41:41-06:00. [Commit 699f0fe3a](https://github.com/1337isnot1337/solved-conjectures/commit/699f0fe3a62435e639dd98bd114d99778f13f68e).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/two-difference-motzkin/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/two-difference-motzkin/PROOF.md)
@@ -33,6 +35,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1611.03940) (18 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Pablo Candela, Carlos Catalá, Juanjo Rué, Oriol Serra (2021-09-01). [On Motzkin’s Problem in the Circle Group](https://doi.org/10.1134/s0081543821040039).
+- Pasquale Carotenuto, Sara Nicoloso, Alessio Salvatore (2026-02-14). [The Maximum Independent Set problem on circulant graphs C n (a, b)](https://doi.org/10.1016/j.dam.2026.02.005).
 
 - On sets with missing differences in compact abelian groups (HTTP 200). [Retrieved address](https://arxiv.org/abs/2408.09301).
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1134/S0081543821040039).

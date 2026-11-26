@@ -28,6 +28,8 @@ In October the 10m-u report handled equal parameters in every degree and the bet
 - Latest change to this landing file at the snapshot on 2026-11-21T11:28:28-06:00. [Commit 7aaa11001](https://github.com/1337isnot1337/solved-conjectures/commit/7aaa11001ae4d0bfcfb64f63794f5a116914d011).
 - Coordination and prior review. [#182](https://github.com/1337isnot1337/solved-conjectures/issues/182).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/vishnyakova-root-radius/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/vishnyakova-root-radius/PROOF.md) · [ANALYSIS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/vishnyakova-root-radius/ANALYSIS_REVIEW.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/vishnyakova-root-radius/ROOT_REVIEW.md) · [SOURCE_AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/vishnyakova-root-radius/SOURCE_AUDIT.md)
@@ -38,6 +40,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2607.06207) (26 pages). open problem 6.2 on PDF p. 24.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Anna Vishnyakova (2026-07-07). [Polynomials interpolated totally positive sequences](https://doi.org/10.48550/arxiv.2607.06207).
+- Anna Vishnyakova (2026-08-04). [Polynomially Deformed Normalized Pochhammer Sequences Having Generating Functions With Only Real Non-positive Zeros](https://doi.org/10.48550/arxiv.2608.03723).
+- Yinuo Cheng, Guoce Xin (2026-11-13). [Weighted Euler transforms, real-rootedness, and $γ$-positivity](https://doi.org/10.48550/arxiv.2611.17839).
 
 - PDF header (HTTP 200). [Retrieved address](https://borowiecki.dev/pdf/2607.06207).
 - Source URL (HTTP 403). [Retrieved address](https://www.researchgate.net/publication/411305396_Polynomially_Deformed_Normalized_Pochhammer_Sequences_Having_Generating_Functions_With_Only_Real_Non-positive_Zeros).

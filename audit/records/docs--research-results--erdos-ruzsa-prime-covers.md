@@ -20,6 +20,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T09:36:03-06:00. [Commit bca14047c](https://github.com/1337isnot1337/solved-conjectures/commit/bca14047c3bf19b9214b5b855f7805373b7b229c).
 - Coordination and prior review. [#63](https://github.com/1337isnot1337/solved-conjectures/issues/63).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [random-residues.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-ruzsa-prime-covers/random-residues.md) · [two-shifts.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-ruzsa-prime-covers/two-shifts.md) · [uniform-sampling.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/docs/research-results/erdos-ruzsa-prime-covers/uniform-sampling.md)
@@ -30,6 +32,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://mathweb.tifr.res.in/Documents/Publications/Lectures/tifr72.pdf) (181 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Adolf Hildebrand (1987-01-01). [Quantitative mean value theorems for nonnegative multiplicative functions II](https://doi.org/10.4064/aa-48-3-209-260).
+- William Banks, Kevin Ford (2026-05-01). [Sets of integers satisfying Bateman-Horn statistics](https://doi.org/10.48550/arxiv.2605.01155).
 
 - PDF header (HTTP 200). [Retrieved address](https://www.renyi.hu/~p_erdos/1980-29.pdf).
 - 1200 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/1200).

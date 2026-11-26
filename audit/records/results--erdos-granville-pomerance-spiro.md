@@ -25,6 +25,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-20T04:17:13-06:00. [Commit 35749ce81](https://github.com/1337isnot1337/solved-conjectures/commit/35749ce81bb4e20fcee312c0780a8023e0a41a40).
 - Coordination and prior review. [#47](https://github.com/1337isnot1337/solved-conjectures/issues/47).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-granville-pomerance-spiro/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-granville-pomerance-spiro/PROOF.md) · [SMALL-COFACTOR.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-granville-pomerance-spiro/SMALL-COFACTOR.md) · [THIRD-PRIME.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/erdos-granville-pomerance-spiro/THIRD-PRIME.md)
@@ -35,6 +37,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1706.03120) (11 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Lee Troupe (2020-07-20). [Divisor sums representable as the sum of two squares](https://doi.org/10.1090/proc/15104).
 
 - PDF header (HTTP 200). [Retrieved address](https://math.dartmouth.edu/~carlp/iterate.pdf).
 - 955 \| Erdős Problems (HTTP 200). [Retrieved address](https://www.erdosproblems.com/955).

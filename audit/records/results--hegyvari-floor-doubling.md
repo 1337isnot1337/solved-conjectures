@@ -29,6 +29,8 @@ The 2024 paper titled A conjecture of Hegyvári describes a partial result. Kohl
 - Latest change to this landing file at the snapshot on 2026-11-24T12:21:04Z. [Commit 6432592c0](https://github.com/1337isnot1337/solved-conjectures/commit/6432592c03b24aed190ed7b3204ed942a40a8da4).
 - Coordination and prior review. [#446](https://github.com/1337isnot1337/solved-conjectures/issues/446).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hegyvari-floor-doubling/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hegyvari-floor-doubling/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/hegyvari-floor-doubling/PROOF.md)
@@ -39,6 +41,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://hexagonmath.org/pdf/2611.00768v1) (13 pages). problem 354 on PDF p. 1.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Norbert Hegyvári (1989-03-01). [Some remarks on a problem of Erdős and Graham](https://doi.org/10.1007/bf02170065).
+- Steve Fan (2026-07-15). [Strongly complete sets and a conjecture of Erdős](https://doi.org/10.48550/arxiv.2607.14071).
 
 - Strongly complete sets and a conjecture of Erd\H{o}s (HTTP 200). [Retrieved address](https://arxiv.org/abs/2607.14071v6).
 - Completeness of two floor-doubling sequences (HTTP 200). [Retrieved address](https://hexagonmath.org/2611.00768v1).

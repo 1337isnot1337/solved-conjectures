@@ -24,6 +24,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T01:32:09-06:00. [Commit 0ad954b9a](https://github.com/1337isnot1337/solved-conjectures/commit/0ad954b9a2794bbc6d16a3e1d3deff2bb28ea689).
 - Coordination and prior review. [#139](https://github.com/1337isnot1337/solved-conjectures/issues/139) · [#196](https://github.com/1337isnot1337/solved-conjectures/issues/196).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/SOURCES.md) · [ALGEBRA_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/ALGEBRA_REVIEW.md) · [ROOT_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/lyon-gamma-median/ROOT_REVIEW.md)
@@ -34,6 +36,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/math/0411282) (33 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Richard F. Lyon (2026-11-10). [Analytic and optimized approximations to the median of the gamma distribution](https://doi.org/10.48550/arxiv.2611.14429).
+- Richard F. Lyon (2026-10-29). [On the median of the beta distribution in relation to the median of the gamma distribution](https://doi.org/10.48550/arxiv.2610.39202).
 
 - Tight bounds for the median of a gamma distribution (HTTP 200). [Retrieved address](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288601).
 - Analytic and optimized approximations to the median of the gamma distribution (HTTP 200). [Retrieved address](https://arxiv.org/abs/2611.14429).

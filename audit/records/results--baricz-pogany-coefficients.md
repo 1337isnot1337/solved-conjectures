@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T04:00:34Z. [Commit 9ff45916e](https://github.com/1337isnot1337/solved-conjectures/commit/9ff45916e73de83d2ea64ef1bcc1750f102ea206).
 - Coordination and prior review. [#112](https://github.com/1337isnot1337/solved-conjectures/issues/112).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/baricz-pogany-coefficients/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/baricz-pogany-coefficients/PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/baricz-pogany-coefficients/NOVELTY.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2607.05538) (21 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Árpád Baricz, Tibor K. Pogány (2023-03-02). [Probabilistic and Analytical Aspects of the Symmetric and Generalized Kaiser–Bessel Window Function](https://doi.org/10.1007/s00365-023-09627-3).
+- Domingos S. P. Salazar (2026-07-06). [Riccati Reductions for Modified Bessel Ratios: Bernstein Positivity, Exact Certificates, and Transfer Obstructions](https://doi.org/10.48550/arxiv.2607.05538).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s00365-023-09627-3).
 - Client Challenge (HTTP 200). [Retrieved address](https://link.springer.com/article/10.1007/s13163-022-00439-w).

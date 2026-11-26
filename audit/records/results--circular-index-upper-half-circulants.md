@@ -31,6 +31,8 @@ The ledger includes the intervening sections.
 - Latest change to this landing file at the snapshot on 2026-11-26T02:24:25-06:00. [Commit bc09c3407](https://github.com/1337isnot1337/solved-conjectures/commit/bc09c34073edb60f8a41b094446fba7cc6e5f495).
 - Coordination and prior review. [#152](https://github.com/1337isnot1337/solved-conjectures/issues/152) · [#752](https://github.com/1337isnot1337/solved-conjectures/pull/752).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-circulants/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-circulants/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/circular-index-upper-half-circulants/FORMALIZATION.md)
@@ -41,6 +43,12 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://www.cs.uleth.ca/~morris/Research/SpecialFamily.pdf) (11 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Xuding Zhu (2001-02-01). [Circular chromatic number](https://doi.org/10.1016/s0012-365x(00)00217-x).
+- Mark E. Watkins (1970-01-01). [Connectivity of transitive graphs](https://doi.org/10.1016/s0021-9800(70)80005-9).
+- Ján Mazák, Filip Zrubák (2026-03-09). [Circular chromatic index of small graphs](https://doi.org/10.48550/arxiv.2603.08822).
 
 - Circular chromatic index of small graphs (HTTP 200). [Retrieved address](https://arxiv.org/abs/2603.08822).
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0012-365X%2894%2900311-6).

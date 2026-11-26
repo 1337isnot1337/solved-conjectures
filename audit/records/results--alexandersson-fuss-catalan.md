@@ -26,6 +26,8 @@ Priority is qualified in the source. Classical enumeration gives the coefficient
 - Latest change to this landing file at the snapshot on 2026-11-21T04:53:54-06:00. [Commit cb558ee0c](https://github.com/1337isnot1337/solved-conjectures/commit/cb558ee0c8776ac6a9009d9156358bc21f757ce2).
 - Coordination and prior review. [#95](https://github.com/1337isnot1337/solved-conjectures/issues/95).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-fuss-catalan/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-fuss-catalan/PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/alexandersson-fuss-catalan/NOVELTY.md)
@@ -36,6 +38,14 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2212.10586) (23 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Miklós Bóna, Stoyan Ivanov Dimitrov, Gilbert Labelle, Yifei Li et al. (2025-06-06). [A Combinatorial Proof of a Symmetry for a Refinement of the Narayana Numbers](https://doi.org/10.37236/12681).
+- Bo Wang, Candice X. T. Zhang (2024-03-22). [Interlacing Property of a Family of Generating Polynomials over Dyck Paths](https://doi.org/10.37236/12375).
+- Germain Kreweras (1972-02-01). [Sur les partitions non croisees d'un cycle](https://doi.org/10.1016/0012-365x(72)90041-6).
+- Per Alexandersson (2026-09-07). [Real-rooted Eulerian polynomials from permutations, words, and paths](https://doi.org/10.48550/arxiv.2609.07325).
+- Per Alexandersson (2026-09-04). [Real-rootedness and interlacing for parking functions and Chow polynomials](https://doi.org/10.48550/arxiv.2609.05131).
 
 - Real-rooted polynomials: open problems \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - Real-rooted polynomials: Catalan families \| SymCat (HTTP 200). [Retrieved address](https://www.symmetricfunctions.com/realRootedCatalan.htm).

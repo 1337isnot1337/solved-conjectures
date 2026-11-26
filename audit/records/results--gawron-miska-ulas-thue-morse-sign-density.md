@@ -24,6 +24,8 @@ Published unboundedness for powers of the generating series is distinct from exa
 - Latest change to this landing file at the snapshot on 2026-11-24T17:47:11Z. [Commit be6baf293](https://github.com/1337isnot1337/solved-conjectures/commit/be6baf293f949ee1c132651fe6ba2f5bb29bb77f).
 - Coordination and prior review. [#440](https://github.com/1337isnot1337/solved-conjectures/issues/440).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-sign-density/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-sign-density/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-sign-density/PROOF.md) · [EXACT_DENSITY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-sign-density/EXACT_DENSITY.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md)
@@ -33,6 +35,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1703.01955) (34 pages). conjecture 5.2 on PDF p. 30 · conjecture 5.8 on PDF p. 31.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Maciej Gawron, Piotr Miska, Maciej Ulas (2017-04-07). [Arithmetic properties of coefficients of power series expansion of $$prod _{n=0}^{infty }left( 1-x^{2^{n}}right) ^{t}$$ ∏ n = 0 ∞ 1 - x 2 n t (with an appendix by Andrzej Schinzel)](https://doi.org/10.1007/s00605-017-1041-2).
 
 - Client Challenge (HTTP 200). [Retrieved address](https://doi.org/10.1007/s00605-017-1041-2).
 - Arithmetic properties of coefficients of power series expansion of $\prod_{n=0}^{\infty}\left(1-x^{2^{n}}\right)^{t}$ (with an Appendix by Andrze (HTTP 200). [Retrieved address](https://arxiv.org/abs/1703.01955).

@@ -19,6 +19,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T02:39:57-06:00. [Commit 2bfad97bf](https://github.com/1337isnot1337/solved-conjectures/commit/2bfad97bfcfc742b4e5300ad6d19c1da5f2a8362).
 - Coordination and prior review. [#70](https://github.com/1337isnot1337/solved-conjectures/issues/70).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sonntag-teichert/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sonntag-teichert/PROOF.md) · [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sonntag-teichert/NOVELTY.md)
@@ -31,6 +33,10 @@ The local HTTP probe and public search index differed on access to one PDF. The 
 - [Source PDF](https://arxiv.org/pdf/1302.4677) (12 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Martin Sonntag, Hanns‐Martin Teichert (2010-01-01). [Domination hypergraphs of certain digraphs](https://doi.org/10.7494/opmath.2010.30.2.179).
 
 - PDF header (HTTP 200). [Retrieved address](https://doi.org/10.7494/OpMath.2010.30.2.179).
 - PDF header (HTTP 200). [Retrieved address](https://hereditarnia.ics.upjs.sk/data_files/1297834445_WorkshopProblems2010.pdf).

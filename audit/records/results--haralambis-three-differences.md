@@ -26,6 +26,8 @@ The passage from a maximizing rotation to a pair-sum period uses two active tria
 - Path first added on the first-parent history on 2026-11-18T18:47:28-06:00. [Commit 56b5895f5](https://github.com/1337isnot1337/solved-conjectures/commit/56b5895f522ed30bd92b8e629a9326db672f73fc).
 - Latest change to this landing file at the snapshot on 2026-11-18T19:30:16-06:00. [Commit 22f3a5a83](https://github.com/1337isnot1337/solved-conjectures/commit/22f3a5a833d5ab1101c5ee0e55ada6d42e323244).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/haralambis-three-differences/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/haralambis-three-differences/PROOF.md) · [LEAN.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/haralambis-three-differences/LEAN.md)
@@ -35,6 +37,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/1611.03940) (18 pages). conjecture 3 on PDF p. 12.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Nicolas M Haralambis (1977-07-01). [Sets of integers with missing differences](https://doi.org/10.1016/0097-3165(77)90076-0).
 
 - Redirecting (HTTP 200). [Retrieved address](https://doi.org/10.1016/0097-3165(77)90076-0).
 - Sequences of Integers with Three Missing Separations (HTTP 200). [Retrieved address](https://arxiv.org/abs/1611.03940).

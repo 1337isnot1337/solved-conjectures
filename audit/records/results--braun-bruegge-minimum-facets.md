@@ -25,6 +25,8 @@ The Omega same-source theorem treats the common-parity binomial facet sum in Con
 - Latest change to this landing file at the snapshot on 2026-11-24T20:39:10-06:00. [Commit 4090cb2e4](https://github.com/1337isnot1337/solved-conjectures/commit/4090cb2e4c5eb8bc5a6e9a4c92c51653bff8defe).
 - Coordination and prior review. [#484](https://github.com/1337isnot1337/solved-conjectures/issues/484).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/PROOF.md) · [FIXED-MATCHING.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/FIXED-MATCHING.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/braun-bruegge-minimum-facets/FORMALIZATION.md)

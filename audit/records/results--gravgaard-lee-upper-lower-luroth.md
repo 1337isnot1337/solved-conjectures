@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-24T17:46:46Z. [Commit 43c1431d3](https://github.com/1337isnot1337/solved-conjectures/commit/43c1431d3eb698367f29bd5a4554ea9733eae86e).
 - Coordination and prior review. [#458](https://github.com/1337isnot1337/solved-conjectures/issues/458) · [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-upper-lower-luroth/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-upper-lower-luroth/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-upper-lower-luroth/PROOF.md) · [DIRECT-REFINEMENT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-upper-lower-luroth/DIRECT-REFINEMENT.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) · [LEAN_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md)
@@ -31,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2506.12513v1) (31 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Maiken Gravgaard, Ying Wai Lee (2026-06-12). [Decomposition of real numbers into sums of Lüroth sets](https://doi.org/10.1142/s1793042126500958).
 
 - Decomposition of real numbers into sums of L\"uroth sets (HTTP 200). [Retrieved address](https://arxiv.org/abs/2506.12513v2).
 - PDF header (HTTP 200). [Retrieved address](https://ems.press/content/serial-article-files/17542?nt=1).

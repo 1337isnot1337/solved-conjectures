@@ -23,6 +23,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-25T21:50:28Z. [Commit 6c302dd54](https://github.com/1337isnot1337/solved-conjectures/commit/6c302dd5493d81125b8048951a5baaee906b9b70).
 - Coordination and prior review. [#480](https://github.com/1337isnot1337/solved-conjectures/issues/480).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/PROOF.md) · [DEVIATIONS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/DEVIATIONS.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/FORMALIZATION.md) · [PROCESS.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/pomerance-sarkozy-fluctuations/PROCESS.md)
@@ -32,6 +34,11 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://users.renyi.hu/~p_erdos/1987-15.pdf) (8 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Alexander P. Mangerel (2019-08-14). [On the bivariate Erdős–Kac theorem and correlations of the Möbius function](https://doi.org/10.1017/s0305004119000288).
+- Ofir Gorodetsky (2026-08-14). [A Kubilius model for sieve-theoretic sequences](https://doi.org/10.1007/s10476-026-00178-w).
 
 - Source URL (HTTP request failed). [Retrieved address](https://combinatorica.hu/~p_erdos/1987-15.pdf).
 - On the bivariate Erdős–Kac theorem and correlations of the Möbius function (HTTP 200). [Retrieved address](https://doi.org/10.1017/S0305004119000288).

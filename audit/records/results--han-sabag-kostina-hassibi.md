@@ -26,6 +26,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-21T02:11:07-06:00. [Commit 37d8b9857](https://github.com/1337isnot1337/solved-conjectures/commit/37d8b9857d9c363f03be405bf84ec99d07ecf9dd).
 - Coordination and prior review. [#197](https://github.com/1337isnot1337/solved-conjectures/issues/197).
 
+The first addition of the landing file lists Cinna Davis as Git author and Cinna Davis as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/README.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/PROOF.md) · [SOURCES.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/SOURCES.md) · [ALGEBRA_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/ALGEBRA_REVIEW.md) · [ANALYSIS_REVIEW.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/han-sabag-kostina-hassibi/ANALYSIS_REVIEW.md)
@@ -36,6 +38,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2310.11747) (8 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Barron Han, Victoria Kostina, Babak Hassibi, Oron Sabag (2024-07-07). [Coded Kalman Filtering over MIMO Gaussian Channels with Feedback](https://doi.org/10.1109/isit57864.2024.10619600).
 
 - Coded Kalman Filtering over MIMO Gaussian Channels with Feedback (HTTP 200). [Retrieved address](https://arxiv.org/abs/2406.17196v2).
 - Source URL (HTTP 202). [Retrieved address](https://doi.org/10.1109/ISIT57864.2024.10619600).

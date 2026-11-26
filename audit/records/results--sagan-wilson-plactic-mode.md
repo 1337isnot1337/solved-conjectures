@@ -21,6 +21,8 @@ The source describes the result as follows.
 - Latest change to this landing file at the snapshot on 2026-11-26T11:26:45-06:00. [Commit 13c1ef883](https://github.com/1337isnot1337/solved-conjectures/commit/13c1ef883bd162ada25fbcb1a9864a1638e9a21e).
 - Coordination and prior review. [#479](https://github.com/1337isnot1337/solved-conjectures/issues/479) · [#588](https://github.com/1337isnot1337/solved-conjectures/pull/588).
 
+The first addition of the landing file lists Cinna Davis as Git author and GitHub as committer. The mathematical credits are recorded in the source documents.
+
 All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 
 [README.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/README.md) · [AUDIT.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/AUDIT.md) · [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/PROOF.md) · [FORMALIZATION.md](https://github.com/1337isnot1337/solved-conjectures/blob/d676ae52308b71d65beac020fb2a1a591a9e6d34/results/sagan-wilson-plactic-mode/FORMALIZATION.md)
@@ -31,6 +33,10 @@ All source-document paths and SHA-256 hashes are in the machine-readable ledger.
 - [Source PDF](https://arxiv.org/pdf/2410.20460) (18 pages). Full text retrieved.
 
 The page matches use numbered labels from the dossier. Each PDF digest is in the [source inventory](../evidence/source-pdfs.json).
+
+**Bibliographic attribution for cited works**
+
+- Bruce E. Sagan, Chenchen Zhao (2026-06-24). [Properties of plactic monoid centralizers](https://doi.org/10.1007/s00233-026-10652-4).
 
 - PDF header (HTTP 200). [Retrieved address](https://users.math.msu.edu/users/bsagan/Papers/Old/cpm-pub.pdf).
 - Centralizers in the plactic monoid (HTTP 200). [Retrieved address](https://arxiv.org/abs/2410.20460).
