@@ -22,3 +22,5 @@ The [window criterion](windows.md) shows that the conjecture is equivalent to co
 The [limiting block-size theorem](profiles.md) gives a universal lower coefficient of three. Any sequence achieving this coefficient must have asymptotically uniform block sizes after normalization by the square root of the order. Its normalized point degrees concentrate at three halves. The proof also constrains any other bounded coefficient.
 
 The [prime-plane obstruction](prime-planes.md) rules out every restriction of a prime-order Desarguesian plane. At least one size occurs $\Omega(v^{5/7})$ times, uniformly over all primes and all densities. A separate variance estimate gives $\Omega(v^{3/4})$ whenever $v\ge32(q+1)$ in any plane of order $q$.
+
+Using Lewko's 2026 incidence theorem, the same [prime-plane analysis](prime-planes.md) gives the sharp order $\Theta(v^{3/4})$ for the best configuration in this entire model, including when the prime varies with $v$. The matching upper bound comes from the classical plane-restriction construction.
