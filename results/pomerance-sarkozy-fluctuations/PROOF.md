@@ -98,17 +98,17 @@ By §2, $`g_0(n)`$ has vanishing total-variation distance from
 ```math
 G=1+\sum_{h=1}^H\mathbf 1_{Z_h>h}
 ```
-for independent $`Z_h\sim\operatorname{Poisson}(\lambda)`$. Let $`p_h=\Pr(Z_1>h)`$. Since $`\sum_{h\ge0}p_h=\lambda`$, $`p_0=1-e^{-\lambda}`$, and $`\sum_{h>H}p_h=o(1)`$ by the factorial moments of a Poisson variable and $`H\sim10\lambda`$, we obtain $`\mathbb E G=\lambda+o(1)=L+O(\log L)`$.
+for independent $`Z_h\sim\mathop{\mathrm{Poisson}}(\lambda)`$. Let $`p_h=\Pr(Z_1>h)`$. Since $`\sum_{h\ge0}p_h=\lambda`$, $`p_0=1-e^{-\lambda}`$, and $`\sum_{h>H}p_h=o(1)`$ by the factorial moments of a Poisson variable and $`H\sim10\lambda`$, we obtain $`\mathbb E G=\lambda+o(1)=L+O(\log L)`$.
 
 Write $`t_h=(h-\lambda)/\sqrt\lambda`$. On every compact interval in $`t_h`$, the Poisson central limit theorem gives $`p_h=1-\Phi(t_h)+o(1)`$ uniformly, where $`\Phi`$ is the standard Gaussian distribution function. Chebyshev’s inequality gives $`p_h(1-p_h)\le\lambda/(h-\lambda)^2`$ for $`h\ne\lambda`$, by using $`p_h`$ on the upper side and $`1-p_h`$ on the lower side. The contribution of $`|t_h|>A`$ to $`\sum_{h=1}^H p_h(1-p_h)/\sqrt\lambda`$ is $`O(1/A)`$ for fixed $`A\ge1`$ and large $`\lambda`$. It follows from the Riemann sum that
 ```math
-\frac{\operatorname{Var}(G)}{\sqrt\lambda}
+\frac{\mathop{\mathrm{Var}}(G)}{\sqrt\lambda}
 \longrightarrow\int_{\mathbb R}\Phi(t)(1-\Phi(t))\,dt
 =\mathbb E[(N_2-N_1)_+]=\frac1{\sqrt\pi},
 ```
 where $`N_1,N_2`$ are independent standard normals. The integral identity is the expected length of $`\{t:N_1\le t<N_2\}`$, whose expectation is the positive-part mean of a centered normal of variance two.
 
-The independent bounded centered Bernoulli summands satisfy the Lindeberg condition because $`\operatorname{Var}(G)\to\infty`$. Their central limit theorem, with $`\mathbb E G-L=O(\log L)=o(L^{1/4})`$, gives $`(G-L)/L^{1/4}\Rightarrow\mathcal N(0,\pi^{-1/2})`$. Equations (6), §2 and $`\log\log n=L+O(1)`$ prove (1). In particular the square-root normalization tends to zero in probability. A standard diagonal choice of cutoffs at successively decreasing error tolerances supplies a single set of natural density one with the stated little-$`o`$ error.
+The independent bounded centered Bernoulli summands satisfy the Lindeberg condition because $`\mathop{\mathrm{Var}}(G)\to\infty`$. Their central limit theorem, with $`\mathbb E G-L=O(\log L)=o(L^{1/4})`$, gives $`(G-L)/L^{1/4}\Rightarrow\mathcal N(0,\pi^{-1/2})`$. Equations (6), §2 and $`\log\log n=L+O(1)`$ prove (1). In particular the square-root normalization tends to zero in probability. A standard diagonal choice of cutoffs at successively decreasing error tolerances supplies a single set of natural density one with the stated little-$`o`$ error.
 
 ## 5. The second moment
 
