@@ -1,0 +1,375 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T00:13:51.171907+00:00",
+  "finished_at": "2026-11-26T00:16:42.178764+00:00",
+  "root": "Conjectures.ShumyatskySocleFactorAction",
+  "project_modules": [
+    "Conjectures.ShumyatskyCharacteristicallySimple",
+    "Conjectures.ShumyatskyClosedMoveRoutes",
+    "Conjectures.ShumyatskyCycleCompletion",
+    "Conjectures.ShumyatskyCycleForest",
+    "Conjectures.ShumyatskyCycleLabels",
+    "Conjectures.ShumyatskyCyclicTransport",
+    "Conjectures.ShumyatskyDirectedTreeMoves",
+    "Conjectures.ShumyatskyFactorAction",
+    "Conjectures.ShumyatskyMultifactorLift",
+    "Conjectures.ShumyatskyPermutationCycles",
+    "Conjectures.ShumyatskyPrimeSpectrum",
+    "Conjectures.ShumyatskyProductCompletion",
+    "Conjectures.ShumyatskySimpleFactors",
+    "Conjectures.ShumyatskySocleAssembly",
+    "Conjectures.ShumyatskySocleFactorAction",
+    "Conjectures.ShumyatskySocleStructure",
+    "Conjectures.ShumyatskyStabilizer",
+    "Conjectures.ShumyatskyWalkLabels"
+  ],
+  "required_endpoints": [
+    "Shumyatsky.minimalNormalSocle_le_ker_ambientFactorPerm",
+    "Shumyatsky.factorPerms_transitive_of_lifts",
+    "Shumyatsky.exists_actual_factor_labels",
+    "Shumyatsky.exists_actual_multifactor_prime_lift"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ShumyatskyCharacteristicallySimple.lean": "1a108555284cbe016aab7bba014aad5214e3d4a6ec273575ed5d2b4deb79d717",
+    "lean/Conjectures/ShumyatskyClosedMoveRoutes.lean": "f134591939cf645b482f2f1c4293a40d4c70a96b40bcab9ea1e33835d1e39cd2",
+    "lean/Conjectures/ShumyatskyCycleCompletion.lean": "9d4af5030fff32306b0fde12192f1048893a3d15e0862655c96b000fe5510d5a",
+    "lean/Conjectures/ShumyatskyCycleForest.lean": "0a63a7c71c9a380a9080912ae82dbab6c9f70ff23d98ba4496a3a234572ebcbe",
+    "lean/Conjectures/ShumyatskyCycleLabels.lean": "4b92bc40bf427c74349fa54fa0d4a370afdbec8ad1f3b6ecb88844f538fb012e",
+    "lean/Conjectures/ShumyatskyCyclicTransport.lean": "59205335569af7d914904c645370db42945fdbd202e16900240cf992deb95887",
+    "lean/Conjectures/ShumyatskyDirectedTreeMoves.lean": "500b6503b1f8c5406de3d000f1b738ce239fdef3592c1877a30b4e968ab44a47",
+    "lean/Conjectures/ShumyatskyFactorAction.lean": "d3defb78e301f9d09f37227c8bd90b40a3347223e8515b4ad653fabd7049673f",
+    "lean/Conjectures/ShumyatskyMultifactorLift.lean": "6920917ffafeea2bba0bde6a6d8ac08b37763c0e0cf97549980d2e46c35e145b",
+    "lean/Conjectures/ShumyatskyPermutationCycles.lean": "19f641c1c732ce3b67ee6038254f7ca7d25860c654de41fca133233f7ba09c16",
+    "lean/Conjectures/ShumyatskyPrimeSpectrum.lean": "0d8cd672fd7d0ab80130b40482d422d83bf5128ec6f014a18d986e9582d791aa",
+    "lean/Conjectures/ShumyatskyProductCompletion.lean": "1786f170cc104376da362124653fc2a898e5020bfd6182a4e9b96eae0a8f562e",
+    "lean/Conjectures/ShumyatskySimpleFactors.lean": "b2bf75a08ef69ed055d689f57d4ea39f3a99ac96f81a56e46e616624520a4448",
+    "lean/Conjectures/ShumyatskySocleAssembly.lean": "fae2e8a465862b5dae73b8a5c4c89ffcac64ed3a0870e25189adc9fde36acf18",
+    "lean/Conjectures/ShumyatskySocleFactorAction.lean": "2685e317109378a2065762839aa5dff2eed91810e341fb000d14963a026c040d",
+    "lean/Conjectures/ShumyatskySocleStructure.lean": "1f66cd525c83deb4ef2d25c7fd0f3504b360e4e4f7cd2af761ae53f87c56beae",
+    "lean/Conjectures/ShumyatskyStabilizer.lean": "9d7b83879b5109b7b6ccb6819377a5e06f6712683e998a6df4ad76c76a52198e",
+    "lean/Conjectures/ShumyatskyWalkLabels.lean": "3178370924c9aa5457157dd81ced86e20065cc36716434f894460dd6931900a8"
+  },
+  "input_sha256": {
+    "lean/Conjectures/ShumyatskyCharacteristicallySimple.lean": "1a108555284cbe016aab7bba014aad5214e3d4a6ec273575ed5d2b4deb79d717",
+    "lean/Conjectures/ShumyatskyClosedMoveRoutes.lean": "f134591939cf645b482f2f1c4293a40d4c70a96b40bcab9ea1e33835d1e39cd2",
+    "lean/Conjectures/ShumyatskyCycleCompletion.lean": "9d4af5030fff32306b0fde12192f1048893a3d15e0862655c96b000fe5510d5a",
+    "lean/Conjectures/ShumyatskyCycleForest.lean": "0a63a7c71c9a380a9080912ae82dbab6c9f70ff23d98ba4496a3a234572ebcbe",
+    "lean/Conjectures/ShumyatskyCycleLabels.lean": "4b92bc40bf427c74349fa54fa0d4a370afdbec8ad1f3b6ecb88844f538fb012e",
+    "lean/Conjectures/ShumyatskyCyclicTransport.lean": "59205335569af7d914904c645370db42945fdbd202e16900240cf992deb95887",
+    "lean/Conjectures/ShumyatskyDirectedTreeMoves.lean": "500b6503b1f8c5406de3d000f1b738ce239fdef3592c1877a30b4e968ab44a47",
+    "lean/Conjectures/ShumyatskyFactorAction.lean": "d3defb78e301f9d09f37227c8bd90b40a3347223e8515b4ad653fabd7049673f",
+    "lean/Conjectures/ShumyatskyMultifactorLift.lean": "6920917ffafeea2bba0bde6a6d8ac08b37763c0e0cf97549980d2e46c35e145b",
+    "lean/Conjectures/ShumyatskyPermutationCycles.lean": "19f641c1c732ce3b67ee6038254f7ca7d25860c654de41fca133233f7ba09c16",
+    "lean/Conjectures/ShumyatskyPrimeSpectrum.lean": "0d8cd672fd7d0ab80130b40482d422d83bf5128ec6f014a18d986e9582d791aa",
+    "lean/Conjectures/ShumyatskyProductCompletion.lean": "1786f170cc104376da362124653fc2a898e5020bfd6182a4e9b96eae0a8f562e",
+    "lean/Conjectures/ShumyatskySimpleFactors.lean": "b2bf75a08ef69ed055d689f57d4ea39f3a99ac96f81a56e46e616624520a4448",
+    "lean/Conjectures/ShumyatskySocleAssembly.lean": "fae2e8a465862b5dae73b8a5c4c89ffcac64ed3a0870e25189adc9fde36acf18",
+    "lean/Conjectures/ShumyatskySocleFactorAction.lean": "2685e317109378a2065762839aa5dff2eed91810e341fb000d14963a026c040d",
+    "lean/Conjectures/ShumyatskySocleStructure.lean": "1f66cd525c83deb4ef2d25c7fd0f3504b360e4e4f7cd2af761ae53f87c56beae",
+    "lean/Conjectures/ShumyatskyStabilizer.lean": "9d7b83879b5109b7b6ccb6819377a5e06f6712683e998a6df4ad76c76a52198e",
+    "lean/Conjectures/ShumyatskyWalkLabels.lean": "3178370924c9aa5457157dd81ced86e20065cc36716434f894460dd6931900a8",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyPrimeSpectrum.olean",
+        "Conjectures/ShumyatskyPrimeSpectrum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyPrimeSpectrum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskySocleAssembly.olean",
+        "Conjectures/ShumyatskySocleAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskySocleAssembly.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskySocleStructure.olean",
+        "Conjectures/ShumyatskySocleStructure.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskySocleStructure.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyFactorAction.olean",
+        "Conjectures/ShumyatskyFactorAction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyFactorAction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyCharacteristicallySimple.olean",
+        "Conjectures/ShumyatskyCharacteristicallySimple.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyCharacteristicallySimple.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskySimpleFactors.olean",
+        "Conjectures/ShumyatskySimpleFactors.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskySimpleFactors.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyCycleLabels.olean",
+        "Conjectures/ShumyatskyCycleLabels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyCycleLabels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyCyclicTransport.olean",
+        "Conjectures/ShumyatskyCyclicTransport.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyCyclicTransport.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyCycleForest.olean",
+        "Conjectures/ShumyatskyCycleForest.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyCycleForest.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyPermutationCycles.olean",
+        "Conjectures/ShumyatskyPermutationCycles.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyPermutationCycles.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyDirectedTreeMoves.olean",
+        "Conjectures/ShumyatskyDirectedTreeMoves.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyDirectedTreeMoves.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyWalkLabels.olean",
+        "Conjectures/ShumyatskyWalkLabels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyWalkLabels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyClosedMoveRoutes.olean",
+        "Conjectures/ShumyatskyClosedMoveRoutes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyClosedMoveRoutes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyCycleCompletion.olean",
+        "Conjectures/ShumyatskyCycleCompletion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyCycleCompletion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyProductCompletion.olean",
+        "Conjectures/ShumyatskyProductCompletion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyProductCompletion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyStabilizer.olean",
+        "Conjectures/ShumyatskyStabilizer.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyStabilizer.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskyMultifactorLift.olean",
+        "Conjectures/ShumyatskyMultifactorLift.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskyMultifactorLift.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-shumyatsky-structure-20261125/lean/.lake/build/lib/lean/Conjectures/ShumyatskySocleFactorAction.olean",
+        "Conjectures/ShumyatskySocleFactorAction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ShumyatskySocleFactorAction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-lean-campaign-20261125/shumyatsky/socle-factor-action/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-shumyatsky-structure-20261125/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ShumyatskySocleFactorAction",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 283,
+    "modules": 18,
+    "private_declarations": 51,
+    "raw_declarations": 283,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 199
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

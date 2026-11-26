@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-26 — Verify the socle action in Shumyatsky’s multifactor lift
+
+The permutation action on the actual simple factors descends to the
+socle quotient. Lean checks the required transitivity and transports
+the conditional multifactor lift back to the actual subgroup.
+[Scope and receipt](results/shumyatsky-conjugate-prime-spectrum/FORMALIZATION.md).
+
 ## 2026-11-25 — Verify the color transfer trace in Tom–Vailaya’s proof
 
 Lean verifies the ascent-weighted finite-color trace of actual endpoint
