@@ -1,6 +1,6 @@
 # The parity cut forces rainbow six-cycles after a small pointwise perturbation
 
-This is a partial result for the rainbow six-cycle clause of [Erdős #811](https://www.erdosproblems.com/811), not a solution for unrestricted balanced colorings. Unlike the [abelian result](README.md), it does not assume any transitivity or group structure.
+This is a partial result for the rainbow six-cycle clause of [Erdős #811](https://www.erdosproblems.com/811), not a solution for unrestricted balanced colorings. Unlike the [abelian result](README.md), it does not assume any transitivity or group structure. The unperturbed odd-crossing-palette obstruction at even order is the Brightwell–Trotter construction credited in [Erdős–Tuza (1993), §3.4](https://doi.org/10.1016/S0167-5060(08)70377-7). This note proves a stability statement for exact balance at odd order, rather than claiming the parity example as new.
 
 **Theorem.** Let a six-edge-coloring of the complete graph on $6t+1$ vertices give every vertex exactly $t$ incident edges of each color, with $t\ge 2{,}000{,}000$. Partition the vertices into $X,Y$ and the colors into triples $A,B$. Call an edge misplaced if its color is in $A$ and it lies within a side, or if its color is in $B$ and it crosses. Suppose each vertex is incident to at most $D$ misplaced edges, where $(D+1)/t\le 10^{-6}$. Then every misplaced edge belongs to a rainbow six-cycle, and at least one such edge exists.
 
@@ -48,6 +48,14 @@ Assume no rainbow six-cycle exists. For a bad vertex $z$, each color has at leas
 Let $k$ be the third color of their palette, and $U$ the correctly placed good color-$k$ neighborhood of $x$. It has size at least $t-D_0-b$. If $k\in A$, $U,V$ lie on the same side, and the within-part three-path lemma uses all three $B$ colors. If $k\in B$, $U,V$ lie on opposite sides, and the cross three-path lemma uses all three $A$ colors. Use the lemma with $x,z$ forbidden. The resulting three-path together with the edges in colors $i,j,k$ gives a six-cycle, a contradiction.
 
 Hence for each bad vertex all its edges of palette $A$ to good vertices go to one side, and all its edges of palette $B$ to good vertices go to one side. These two sides are opposite: otherwise no color could join $z$ to a good vertex on the other side. Move each bad vertex, if necessary, to the side for which these two placements are correct. Every good–bad edge is correct in the new partition. Good vertices then have at most $D_0$ misplaced edges, and bad vertices at most $b$. The pointwise theorem applies, contradicting the assumption of no rainbow six-cycle.
+
+## Consequence for cuts in every three-color union
+
+A rainbow-free balanced coloring of sufficiently large order forces every three-color union $B$ to have edge expansion greater than $10^{-16}t$: for every nontrivial cut $X,Y$, its $B$ edges crossing the cut number more than $10^{-16}t\min(|X|,|Y|)$.
+
+To see this, write $|X|=3t-d\le|Y|$ and let $e$ be the number of crossing edges in $B$. The internal $B$ degree bound gives $e\ge|X|(d+1)$. If $e\le a t|X|$, then $d+1\le at$ and $e\le3at^2$. The total of the two within-part edge capacities is $9t^2+d(d+1)$, and $B$ has exactly $9t^2+3t/2$ edges. The total misplaced count with $B$ designated as the within palette is therefore $2e+d(d+1)-3t/2\le(6a+a^2)t^2$. For $a=10^{-16}$ this is below the global stability threshold.
+
+Check the [regression script](check_parity_cut.py) for the three-walk identity and planted defects; it does not assume that the exact asymptotic bounds are tight.
 
 ## The hypothesis is nonvacuous
 
