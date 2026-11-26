@@ -42,3 +42,20 @@ Suppose the six color classes are exactly the six off-diagonal relations of one 
 This proof is uniform in all scheme parameters and does not depend on classification or testing finitely many schemes. It also yields a quantitative diagnostic with no scheme assumption: if the product of the mean-zero operator norms for any four colors is strictly below \(1/(n/t-1)\) by a fixed margin, then all color orders occur for large \(n\). General balanced colorings need not satisfy this spectral bound or have any bounded-rank scheme representation.
 
 For context see [Erdős–Tuza’s original paper](https://doi.org/10.1016/S0167-5060(08)70377-7), the [numbered problem](https://www.erdosproblems.com/811), and [Muzychuk–Ponomarenko on pseudocyclic schemes](https://arxiv.org/abs/0910.0682). A bounded search on the exact rainbow-six-cycle statement, association schemes, and the cyclotomic and pseudocyclic literature did not identify this exact partial result. The projection and polynomial arguments above are included rather than treating pseudocyclic results as a dependency.
+
+
+## Odd-order obstruction to near-parity in bounded rank
+
+The following statement does not assume primitivity. Fix \(R\) and \(c>0\). Every \(d\)-regular graph with \(d\ge cn\) on odd \(n\) vertices, whose adjacency belongs to a scheme of rank at most \(R\), has its normalized least eigenvalue uniformly bounded away from \(-1\). Moreover, if \(d=(n-1)/2\), its mean-zero normalized spectrum is uniformly bounded away from both endpoints \(-1,1\) for large \(n\). In particular all three-color unions in a common bounded-rank scheme coloring are uniform expanders. These weaker spectral gaps alone do not give the four-color product inequality above.
+
+Suppose a sequence violated either assertion. Let \(\lambda\) be a mean-zero eigenvalue of \(A/d\) tending to the applicable endpoint. Its eigenspace projection \(E\) belongs to the algebra as before. Its rank is bounded because \(m\lambda^2\le n/d\le1/c\). Form the unit vectors \(v_x\) as above. Equal vectors now form an equivalence relation in the algebra, so all classes have the same size \(s\): all row sums of every union of basis relations are constant. The number \(q=n/s\) of classes is odd. The same polynomial argument on the distinct vector types gives \(q\le\binom{m+R-1}{R-1}\).
+
+There is a symmetric stochastic \(q\times q\) matrix \(P\) obtained by averaging the \(A/d\) transition weights from a vertex in class \(a\) to all of class \(b\) over the \(s\) roots in class \(a\). Symmetry follows from symmetry of \(A\) and equal class sizes. Its entries are at most \(s/d\). The eigenspace equation, followed by averaging roots, gives
+\[
+\sum_bP_{ab}v_b=\lambda v_a,\qquad \sum_a v_a=0.
+\]
+Pass to a subsequence with \(q,m\) fixed, and matrices and vectors convergent. Distinct types may merge in the limit, but every vector still has unit norm.
+
+If \(\lambda\to-1\), equality in averaging unit vectors forces each positive transition to an antipodal type. By symmetry and row sums one, the number of indices at a vector equals the number at its antipode: count the total flow between the two level sets in either direction. This forces \(q\) even, a contradiction.
+
+If \(\lambda\to1\) and \(d=(n-1)/2\), positive transitions in the limit are only between equal vectors, and each transition has weight at most \(2/q\). Thus every set of indices having one vector value has size at least \(\lceil q/2\rceil\). There is only one such set because \(q\) is odd, contradicting the mean-zero sum of the unit vectors. This proves the claimed uniform gaps. The argument is insensitive to whether the quotient frequencies develop new exact equalities at the limit.
