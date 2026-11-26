@@ -1,3 +1,12 @@
+import Conjectures.MeylenderThalmaierArea
+import Conjectures.MeylenderThalmaierComparison
+import Conjectures.MeylenderThalmaierCoverScale
+import Conjectures.MeylenderThalmaierCutArea
+import Conjectures.MeylenderThalmaierParallelogram
+import Conjectures.MeylenderThalmaierPentagon
+import Conjectures.MeylenderThalmaierPentagonArea
+import Conjectures.MeylenderThalmaierRatios
+import Conjectures.MeylenderThalmaierStrips
 import Conjectures.CircularIndexAllDegrees
 import Conjectures.CircularThreeBlockBase
 import Conjectures.CircularThreeBlockCross
