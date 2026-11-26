@@ -1,5 +1,9 @@
 # Verification
 
+## Permutation digraph general position conjecture
+
+Run `python3 results/permutation-digraph-general-position/verify.py` to check the marker constructions and reversal geodesics by BFS. Add `--extended` for all six test pairs including word length five. [Written proof](../results/permutation-digraph-general-position/PROOF.md) holds throughout the conjectured range.
+
 ## General position number of oriented trees
 
 Run `python3 results/general-position-oriented-trees/verify.py` to compare the five-state recurrence and its witnesses against exact directed-distance oracles. Add `--atlas` with NetworkX available for all orientations of the nonisomorphic trees through order nine. [Written proof](../results/general-position-oriented-trees/PROOF.md).

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Permutation digraph general position conjecture
+
+An enlarged alphabet marker set disproves the proposed exact value at every stated parameter pair. The proof also finds the right order in both parameters. [Proof](results/permutation-digraph-general-position/PROOF.md) · [Audit](results/permutation-digraph-general-position/AUDIT.md).
+
 ## 2026-11-26 — General position number of oriented trees
 
 For any oriented tree, the reachability-chain partition formula gives the exact general position number. A five-state tree recurrence computes it and recovers an optimal set in linear time. [Proof](results/general-position-oriented-trees/PROOF.md) · [Audit](results/general-position-oriented-trees/AUDIT.md).
