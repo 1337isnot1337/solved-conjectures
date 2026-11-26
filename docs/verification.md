@@ -8,6 +8,8 @@ Run `python3 results/constant-weight-strong-wom/verify.py` to construct the loca
 
 Run `python3 results/nathanson-sidon-systems/verify.py` to enumerate outputs in 119 signed, bilinear and higher-arity fixtures. The [proof](../results/nathanson-sidon-systems/PROOF.md) is for every nonzero integer coefficient vector, independently of the finite checks. [Source and audit](../results/nathanson-sidon-systems/AUDIT.md).
 
+Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Lean scope and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).
+
 ## Fiscus–Hurlbert–Myzelev–Pence grid conjecture
 
 Run `python3 results/fiscus-grid-game/verify_strategy.py` and `python3 results/fiscus-grid-game/check_minimax.py`. The first check replays the published response table; the other independently computes all 16,384 position values. [Proof](../results/fiscus-grid-game/PROOF.md) · [Scope and audit](../results/fiscus-grid-game/AUDIT.md). No Lean proof is claimed.

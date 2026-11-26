@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Nathanson’s linear-form Sidon systems
+
+Lean proves all three original questions for signed coefficients in every arity and the finite upper bound with the common coefficient divisor. The stronger two-largest-coefficient lower bound and exact bilinear limit remain in the written proof. [Theorems and receipt](../results/nathanson-sidon-systems/FORMALIZATION.md).
+
 ## The two truncated-square covering examples
 
 Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof and receipt](../results/meylender-thalmaier-truncated-square/FORMALIZATION.md).
