@@ -1,0 +1,136 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T07:10:16.615589+00:00",
+  "finished_at": "2026-11-26T07:12:09.272806+00:00",
+  "root": "Conjectures.CircularInsertionSmallBases",
+  "project_modules": [
+    "Conjectures.CircularIndexBase",
+    "Conjectures.CircularInsertionBasePairs",
+    "Conjectures.CircularInsertionRotations",
+    "Conjectures.CircularInsertionSmallBases"
+  ],
+  "required_endpoints": [
+    "CircularIndex.Insertion.lengthProfiles_complete",
+    "CircularIndex.Insertion.compatible_of_admissible",
+    "CircularIndex.Insertion.no_small_base"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularInsertionBasePairs.lean": "afd4a8f7e6a65ae7eb3ebb86df45fa7c782d011c744f87b149995dcd90288c8f",
+    "lean/Conjectures/CircularInsertionRotations.lean": "f340ab11d879c902d33cb2a55bf0a7a5f83085aee0b76f3aac62825e5863393b",
+    "lean/Conjectures/CircularInsertionSmallBases.lean": "155c6890cebc5702e86658ab34d12303575438a3997bd25742173f19bc3e42de"
+  },
+  "input_sha256": {
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularInsertionBasePairs.lean": "afd4a8f7e6a65ae7eb3ebb86df45fa7c782d011c744f87b149995dcd90288c8f",
+    "lean/Conjectures/CircularInsertionRotations.lean": "f340ab11d879c902d33cb2a55bf0a7a5f83085aee0b76f3aac62825e5863393b",
+    "lean/Conjectures/CircularInsertionSmallBases.lean": "155c6890cebc5702e86658ab34d12303575438a3997bd25742173f19bc3e42de",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-small-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
+        "Conjectures/CircularIndexBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexBase.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-small-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionBasePairs.olean",
+        "Conjectures/CircularInsertionBasePairs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionBasePairs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-small-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionRotations.olean",
+        "Conjectures/CircularInsertionRotations.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionRotations.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-small-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionSmallBases.olean",
+        "Conjectures/CircularInsertionSmallBases.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionSmallBases.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-circular-certificates/main-small/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-circular-small-main/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.CircularInsertionSmallBases",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 349,
+    "modules": 4,
+    "private_declarations": 5,
+    "raw_declarations": 349,
+    "required": 3,
+    "tag": "passed",
+    "theorems": 304
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
