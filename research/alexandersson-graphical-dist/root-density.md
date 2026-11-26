@@ -40,3 +40,19 @@ Let $K$ be the number of distinct positive earlier indegrees in the whole graph.
 Every vertex after the initial edge was adjoined to both endpoints of one existing edge. The entire graph, including all fillers, is a 2-tree. This proves the theorem.
 
 For a rational check of the tuning, take $\alpha=1/4$, $\beta=81/142$ and $t=2$. Then $U_\alpha(2)/V_\alpha(2)=14/13$ and $U_\beta(2)/V_\beta(2)=(14/13)^2$. The equimodular curve therefore passes exactly through this positive real point. The [finite checker](check_density.py) also enumerates the acyclic orientations of two small 2-trees edge by edge and compares the full conditional indegree vectors with the proposed counts.
+
+## One 2-tree can meet finitely many prescribed disks simultaneously
+
+For every finite list of open disks and positive integer multiplicities, a **single** 2-tree has at least the specified number of distinct nonreal zeros in each disk. Consequently one can choose a sequence of individual graphs whose zero sets eventually meet every open disk in arbitrarily many distinct points.
+
+For each disk choose its parameters and repetition count from the tuning argument, giving a limiting factor $(P_i^{r_i}+Q_i^{r_i})/2$ with the desired zeros. When disks overlap, one may first choose disjoint smaller disks inside the respective disks. We realize the product of those factors as a limit with a common threshold $L$.
+
+Start with one edge $uv_0$. For each module take a separate path of $d$ new vertices $v_1,\ldots,v_d$, each $v_j$ attached to the edge $uv_{j-1}$. The paths share $u,v_0$ and otherwise use different vertices. Module $i$ uses $uv_d$ of its own path as its sensing edge and receives the distinguished vertices and satellites constructed above. Place all path vertices first, in construction order, then the module satellites and the distinguished vertices. Earlier indegrees on the paths are at most two, so they are covered by the same filler threshold.
+
+If $S_j$ is the sign $+1$ for $u\to v_j$ and $-1$ otherwise, the uniform three-gap rule gives $\mathbb E(S_j\mid S_{j-1})=S_{j-1}/3$. The terminal signs on the separate paths are independent conditional on $S_0$, and each has conditional probability $(1+3^{-d}S_0)/2$ of being positive. Thus their joint distribution tends to independent fair signs as $d\to\infty$.
+
+Conditional on these signs, the module choices are independent. For fixed $d$ and the finite list of modules, as $L\to\infty$ the probability of equal distinguished values in different modules tends to zero by the same binomial point bound. The generating function for the distinct values above $L$ therefore converges to the mixture of the products of the conditional module polynomials with the terminal-sign distribution at depth $d$. As $d\to\infty$ this mixture converges to the required product. The degree is bounded by $3\sum_i r_i$ throughout these two limits.
+
+Choose small disjoint neighborhoods of the prescribed nonreal product zeros with nonvanishing boundaries. Take $d$ sufficiently large, then $L$ sufficiently large, then the number of filler groups sufficiently large. The reciprocal-polynomial argument and Rouché's theorem preserve a zero in each neighborhood. The added paths and the modules all use edge attachments, preserving the 2-tree assertion. To obtain the sequence, enumerate the disks with rational centers and radii and at step $j$ prescribe $j$ zeros in each of the first $j$ disks.
+
+Sokal's density theorem for chromatic zeros is a precedent for using varying graph constructions and two terms of equal modulus. Here the conditional terms count earlier indegrees in acyclic orientations, and the adjustable responses give the required modulus equality already on 2-trees. [Sokal](https://arxiv.org/abs/cond-mat/0012369)
