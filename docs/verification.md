@@ -1,5 +1,9 @@
 # Verification
 
+## Cioba–Savvas shutout number conjecture
+
+Run `python3 results/cioba-savvas-shutout-number/verify.py` to check 127,850 endpoint updates for exact independence polynomials and 432 played games under the stated degree condition. The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) is independent of the finite checks.
+
 ## Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture
 
 Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation and Frobenius-coordinate checks. Run `python3 results/erz-big-descent-schur/check_review.py` for the two-variable RSK expansion through degree nine and the higher-Durfee transforms. The [review](../results/erz-big-descent-schur/AUDIT.md) explains how the proof covers every degree.
