@@ -2,7 +2,7 @@
 
 from fractions import Fraction
 from itertools import combinations
-from math import factorial, prod
+from math import exp, factorial, prod
 
 
 def determinant(values):
@@ -40,15 +40,14 @@ def entries(points):
     return output
 
 
-def ratio(n, a, b, table):
+def normalized(n, m, a, b, table):
     r = len(a)
     d = r * (r - 1) // 2
-    raw = determinant([[table[n+i, n+j] for j in b] for i in a])
-    value = Fraction(raw * table[n, n]**r,
-                     prod(table[n+i, n] for i in a) * prod(table[n, n+j] for j in b))
-    leading = (Fraction(vandermonde(a) * vandermonde(b), prod(factorial(j) for j in range(r)))
-               * Fraction(4, 2*n + 2)**d)
-    return value / leading
+    raw = determinant([[table[n+i, m+j] for j in b] for i in a])
+    value = Fraction(raw * table[n, m]**r,
+                     prod(table[n+i, m] for i in a) * prod(table[n, m+j] for j in b))
+    scale = Fraction(vandermonde(a) * vandermonde(b), prod(factorial(j) for j in range(r)))
+    return value * (n + m + 2)**d / scale
 
 
 if __name__ == '__main__':
@@ -58,7 +57,24 @@ if __name__ == '__main__':
     table = entries({(n+i, n+j) for n in sizes for a, b in patterns
                      for i in (*a, 0) for j in (*b, 0)})
     for a, b in patterns:
-        values = [ratio(n, a, b, table) for n in sizes]
+        d = len(a) * (len(a)-1) // 2
+        values = [normalized(n, n, a, b, table) / 4**d for n in sizes]
         assert all(v > 0 for v in values)
         assert abs(values[-1] - 1) < Fraction(1, 10)
         print(a, b, [round(float(v), 6) for v in values])
+
+    a, b = patterns[-1]
+    d = len(a) * (len(a)-1) // 2
+    for tilt in (-3, 1, 3):
+        exponential = exp(tilt)
+        mean = exponential / (exponential - 1) - 1 / tilt
+        variance = 1 / tilt**2 - exponential / (exponential - 1)**2
+        constant = 1 + mean * (1 - mean) / variance
+        centers = []
+        for total in (300, 900):
+            column = round(total * mean) - 1
+            centers.append((total - column - 2, column))
+        table = entries({(n+i, m+j) for n, m in centers for i in (*a, 0) for j in (*b, 0)})
+        values = [float(normalized(n, m, a, b, table)) / constant**d for n, m in centers]
+        assert abs(values[-1]-1) < 0.05
+        print('tilt', tilt, [round(v, 6) for v in values])
