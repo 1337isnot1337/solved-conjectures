@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Finite circular chromatic index certificates
+
+Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Finite theorems](../lean/Conjectures/CircularFiniteIndexTheorems.lean) · [Joint receipt](verification/lean-circular-finite-20261126/receipt.json).
+
 ## Shifted Lonely Runner counterexamples
 
 Lean verifies the exact maximum at each of the 40 reported sizes, including attainment at a rational time. The upper bound holds at every real time. [Proof and reproduction](../results/shifted-lonely-runner-counterexamples/FORMALIZATION.md).

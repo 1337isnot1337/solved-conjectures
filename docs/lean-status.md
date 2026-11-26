@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Finite circular chromatic index certificates
+
+Lean checks 43 finite simple graphs from the published colouring records. All 32 complete graphs with deletions have rigorous density and colouring bounds. Eleven insertion graphs have exact circular index equal to the maximum degree plus two thirds. [Finite theorems](../lean/Conjectures/CircularFiniteIndexTheorems.lean) · [Joint receipt](verification/lean-circular-finite-20261126/receipt.json).
+
 ## Dukes’s revstack interlacing conjecture
 
 Lean proves the source Eulerian formula for the actual revstack descent polynomial at every order at least three. Tracking the two parity classes through one maximum split gives the complete characterization of the unsorted words. The proof also turns the derivative inequality into strict interlacing of the literal descent polynomials and checks the transition from order three to four. The later finite transitions and the uniform derivative bound remain open in Lean. [Lean theorem](../lean/Conjectures/DukesRevstackFiniteStart.lean) · [Scoped receipt](verification/lean-dukes-revstack-enumeration-20261125/receipt.json)
