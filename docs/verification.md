@@ -1,5 +1,9 @@
 # Verification
 
+## Alexandersson’s graphical dist conjecture
+
+Run `python3 results/alexandersson-graphical-dist/check.py` and `python3 results/alexandersson-graphical-dist/check_unions.py`. Subset inversion and direct vertex insertion yield identical coefficients. Both verifiers also compare with literal enumeration on small ordered graphs. [Exact counting proof](../results/alexandersson-graphical-dist/proof.md) · [Independent review](../results/alexandersson-graphical-dist/review.md).
+
 ## Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture
 
 Run `python3 results/general-position-nordhaus-gaddum/verify.py` to check all labelled graphs through order six and 2,000 seeded larger graphs. The [written proof](../results/general-position-nordhaus-gaddum/PROOF.md) is uniform; the [audit](../results/general-position-nordhaus-gaddum/AUDIT.md) separates the geodesic and induced-path targets.

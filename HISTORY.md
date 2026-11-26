@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Alexandersson’s graphical dist conjecture
+
+The graphical dist polynomial of an ordered graph can have nonreal roots. A finite witness has 71 vertices and 310 edges. A second construction gives arbitrarily many distinct nonreal roots on connected chordal graphs of treewidth two. [Proof](results/alexandersson-graphical-dist/proof.md) · [Source audit](results/alexandersson-graphical-dist/sources.md) · [Independent review](results/alexandersson-graphical-dist/review.md) · [Original question](https://github.com/PerAlexandersson/RealRooted/issues/2641).
+
 ## 2026-11-26 — Complete Lean formalization of Wang–Yang’s Fuss–Narayana conjecture
 
 Lean verifies all six arrays of Conjecture 4.1 for every integer parameter `m ≥ 2` and every finite minor: total nonnegativity of `A(n, k)`, `B(n, k)`, and their row reversals, and strict total positivity of `A(n + k, k)` and `B(n + k, k)`. The self-contained five-module closure proves Krattenthaler's product determinant, Cauchy–Binet, both positivity criteria, and Galvin–Pacurar's change-of-basis theorem from scratch, and passed strict compilation, the 322-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/wang-yang-fuss-narayana/FORMALIZATION.md).
