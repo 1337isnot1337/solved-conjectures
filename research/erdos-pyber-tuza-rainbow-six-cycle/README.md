@@ -2,6 +2,9 @@
 
 **Status: partial.** Every completely balanced six-coloring invariant under a regular action of a finite abelian group has a rainbow six-cycle, at all admissible orders. General completely balanced colorings remain open.
 
+- [Global parity-cut stability](PARITY-CUT.md): a counterexample must stay a fixed positive edit distance from every parity cut, even with concentrated error vertices.
+- [Graphon criterion](GRAPHON-CRITERION.md): it is enough to prove that every balanced zero-density six-color graphon has a disconnected three-color union.
+
 The $C_6$ assertion is the open cycle clause of the Erdős–Pyber–Tuza question in Erdős, *Some of my favorite solved and unsolved problems in graph theory*, 1993, p. 346, and a subproblem of [Erdős #811](https://www.erdosproblems.com/811). The six-color rainbow $K_4$ clause has already been [disproved by Clemen and Wagner](https://arxiv.org/abs/2303.15476). The disjoint-triangle subproblem is tracked separately in [#809](https://github.com/1337isnot1337/solved-conjectures/issues/809).
 
 ## Cayley formulation and the cycle
