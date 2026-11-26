@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Mallik–Diwan–Kothari degree-count conjecture
+
+Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Lean theorems and verification receipt](../results/mallik-diwan-kothari-degree-count/FORMALIZATION.md).
+
 ## The Steiner triple system sail problem
 
 Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Lean theorems and verification receipt](../results/steiner-triple-system-sail/FORMALIZATION.md).
