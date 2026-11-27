@@ -4,6 +4,10 @@
 
 Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Lean proves for arbitrary finite simple graphs that Breaker prevents an immediate $s$-shutout whenever $s \ge 2$, $D = \Delta(G) \ge 1$, and $2^{1-s} \le D^D / (D+1)^{D+1}$, and via Bernoulli's inequality deduces $\sigma(s) \ge \tau(s) > 2^{s-3}$ for every $s \ge 3$ and $\sigma(s) \ge 2^s / 8$ for every $s \ge 1$. The four-module closure passed strict compilation, the complete 288-declaration all-owned axiom audit (241 theorems, 54 private declarations), and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
 
+## Leech lattice cold-spot limit
+
+**Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)
+
 ## Pattern packing and four-cycle partial results
 
 The [packing cutoff construction](../results/blitvic-kammoun-steingrimsson-packing-cutoff/) and [four-cycle regularity obstructions](../results/erdos-85-four-cycle-threshold/) have written proofs and exact checks. No formalization is registered for either package.
@@ -285,6 +289,7 @@ proofs are documented separately in the catalogue and result package.
 | Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture | Not formalized | The [all-degree written proof](../results/erz-big-descent-schur/PROOF.md) includes the exact longest-increasing-subsequence refinement. Two [exact checkers](../results/erz-big-descent-schur/AUDIT.md) accompany the proof. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Partial | Lean proves the literal Eulerian enumeration for every order at least three and the first strict root interlacing transition. The uniform root estimates remain in the written proof. [Lean scope](../results/dukes-revstack/FORMALIZATION.md). |
+| Claesson–Dukes–Steingrímsson’s stack-sorting conjecture | Not formalized | The [computer-assisted proof](../results/claesson-dukes-steingrimsson-stack-sorting/PROOF.md) covers every order at least eight. The [replay](../results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1) regenerates the finite coefficient table and checks the exact polynomial identity and the small orders. |
 | Almirón–Moyano-Fernández’s Wilf-module questions | Complete | Lean proves the threshold-two counterexample family, all six normalized module clauses, the gap-antichain classification and the exact thresholds over every two-generated semigroup. [Scope and receipt](../results/almiron-moyano-wilf-module-questions/LEAN.md). |
 | Defant–Engen–Miller’s Lassalle refinement conjecture | Partial | Lean checks all 53 base rows, the eventual interval and error bounds, and the Bessel root bracket. The exact permutation conjecture follows conditionally on the count bridge and classical Bessel product data. [Lean scope](../results/defant-engen-miller-lassalle/FORMALIZATION.md). |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
