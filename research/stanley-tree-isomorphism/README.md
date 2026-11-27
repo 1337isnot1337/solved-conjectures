@@ -6,6 +6,8 @@ A certificate using only degree counts and the ordinary unlabelled histogram of 
 
 A finite linear-algebra decision procedure determines whether almost every subdivision of any specified core can be recovered using the histogram alone. [Decision criterion](PATH-HISTOGRAM-DECISION.md)
 
+At each fixed degree excess, a failure of generic reconstruction has a witness on at most twelve times the excess minus two reduced vertices. [Finite reduction](FIXED-EXCESS-REDUCTION.md) · [Independent review](FIXED-EXCESS-REVIEW.md) · [Continuous arclength distribution](METRIC-TREE-DISTRIBUTION.md)
+
 A finite collision-space calculation tests the removal of the degree hypothesis beyond trivalent trees. It excludes all competing topologies for a generic subdivision of the four-arm star. [Research argument and exact checker](FOUR-ARM-FLATS.md)
 
 ## Reconstruction with an arbitrary internal tree
