@@ -17,3 +17,7 @@ A global quadratic trapezoid bound with any fixed coefficient suffices when the 
 A hypothetical sequence at the one-third mean barrier has only purely atomic or wholly nonatomic finite planar limits under every rescaling. The proof also bounds the concentration of conditional radius and projection fibers, and gives continuum examples explaining a remaining obstacle to a general gap. [Atomic-limit theorem](ATOMIC-LIMITS.md) · [Independent review](ATOMIC-LIMITS-REVIEW.md) · [Exact checks](check_atomic_limits.py)
 
 If such a limit has more than one atom, the entire shrinking clouds around its atoms cannot all have tight nonatomic limits at their next scales. With infinitely many parent atoms, all but finitely many individually exclude such a child. A separate diameter argument applies whenever a pair of positive-mass atoms attains a positive diameter. [Atom-cloud theorem](ATOMIC-CHILDREN.md) · [Independent review](ATOMIC-CHILDREN-REVIEW.md) · [Exact checks](check_atomic_children.py)
+
+## Recovering all radial scales
+
+A thin-annulus rank argument gives countably many radial profiles around any sequence of centers and accounts for the entire site mass. A separate recursive argument tracks the exact sample laws that separate in finite depth and reduces the remaining global-bound gap to the farthest-hull obstruction. [One-node decomposition](RADIAL-PROFILES.md) · [Recursive proof and outstanding step](RADIAL-SCALE-TREE.md) · [Exact finite checks](check_radial_profiles.py)
