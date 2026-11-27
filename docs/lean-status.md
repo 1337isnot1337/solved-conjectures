@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Cioba–Savvas shutout number conjecture
+
+Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Lean proves for arbitrary finite simple graphs that Breaker prevents an immediate $s$-shutout whenever $s \ge 2$, $D = \Delta(G) \ge 1$, and $2^{1-s} \le D^D / (D+1)^{D+1}$, and via Bernoulli's inequality deduces $\sigma(s) \ge \tau(s) > 2^{s-3}$ for every $s \ge 3$ and $\sigma(s) \ge 2^s / 8$ for every $s \ge 1$. The four-module closure passed strict compilation, the complete 288-declaration all-owned axiom audit (241 theorems, 54 private declarations), and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
+
 ## Leech lattice cold-spot limit
 
 **Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)
@@ -332,7 +336,7 @@ proofs are documented separately in the catalogue and result package.
 | The Steiner triple system sail problem | Complete | Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Lean theorems and verification receipt](../results/steiner-triple-system-sail/FORMALIZATION.md). |
 | Fractional general position conjecture for square grids | Not formalized | The [written proof](../results/fractional-general-position-square-grids/PROOF.md) constructs the exact minimum fractional geodesic cover for every square grid. [Exact checker](../results/fractional-general-position-square-grids/verify.py). |
 | Erdős’s pinned-distance conjecture in general position | Not formalized | The [written proof](../results/erdos-general-position-pinned-distances/PROOF.md) establishes a fixed positive gap above one third for the average pinned count when no three points are collinear. [Independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) · [Finite checks](../results/erdos-general-position-pinned-distances/verify.py). |
-| Cioba–Savvas shutout number conjecture | Not formalized | The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) gives an exponential bound with a deterministic Breaker strategy. [Exact regression](../results/cioba-savvas-shutout-number/verify.py). |
+| Cioba–Savvas shutout number conjecture | Complete for Conjectures 3.2 and 3.3 | Lean proves the exponential degree lower bounds for the immediate shutout and free-star games over arbitrary finite simple graphs. [Scope and replay](../results/cioba-savvas-shutout-number/FORMALIZATION.md). |
 | Mobile general position complexity | Not formalized | The [written proof](../results/mobile-general-position-complexity/PROOF.md) gives PSPACE-completeness for ordinary, fixed-start, and completely mobile thresholds at diameter two. [Exact move checker](../results/mobile-general-position-complexity/verify.py). |
 | Misère Domination Game | Not formalized | The [written proof](../results/misere-domination-game/PROOF.md) gives exact congruences for paths and cycles and solves impartial misère octal 0.337. [Independent game checker](../results/misere-domination-game/verify.py). |
 | Builder–Blocker general position complexity conjecture | Not formalized | The [written proof](../results/builder-blocker-general-position-complexity/PROOF.md) establishes PSPACE-completeness for both starters at diameter two. [Exact minimax checker](../results/builder-blocker-general-position-complexity/verify.py). |

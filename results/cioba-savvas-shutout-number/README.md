@@ -4,6 +4,6 @@
 
 This proves the intended exponential bound in [Conjecture 3.2 of Cioba–Savvas](https://michailsavvas.github.io/documents/Shutout.pdf), and therefore its weaker Conjecture 3.3. Breaker chooses which endpoint of Maker's edge to mark by maintaining one local linear test at the endpoints. The separate numerical Conjecture 3.4 is outside this result.
 
-[Proof](PROOF.md) · [Audit and priority search](AUDIT.md) · [Exact regression](verify.py) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/905)
+[Proof](PROOF.md) · [Audit and priority search](AUDIT.md) · [Exact regression](verify.py) · [Lean formalization](FORMALIZATION.md) · [Receipt](verification/receipt.json) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/905)
 
-**Verification:** Complete written proof with a separate mathematical audit and exact finite regression. Not Lean formalized or externally refereed.
+**Verification:** Complete written proof with a separate mathematical audit, exact finite regression, and complete four-module Lean 4 formalization passing strict compilation, all-owned axiom audit, and stock-kernel replay. Not externally refereed.

@@ -64,7 +64,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **47.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **136.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
 | **47.** [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ | **140.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | **54.** [Fractional general position conjecture for square grids](results/fractional-general-position-square-grids/) | ⬜ | **140.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
-| **55.** [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | ⬜ | **140.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
+| **55.** [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | ✅ | **140.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | **56.** [Mobile general position complexity](results/mobile-general-position-complexity/) | ⬜ | **140.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
 | **57.** [Builder–Blocker general position complexity conjecture](results/builder-blocker-general-position-complexity/) | ⬜ | **144.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | **58.** [Misère Domination Game](results/misere-domination-game/) | ⬜ | **144.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |

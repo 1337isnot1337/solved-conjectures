@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete Lean formalization of Cioba–Savvas shutout number conjecture
+
+Lean proves the exponential shutout-number lower bounds for Conjectures 3.2 and 3.3 over arbitrary finite simple graphs, distinguishing immediate $s$-shutout $\tau(s)$ from a free $s$-star after Breaker's reply $\sigma(s)$ and establishing $\sigma(s) \ge \tau(s) > 2^{s-3}$ ($s \ge 3$) and $\sigma(s) \ge 2^s/8$ ($s \ge 1$). The four-module closure passed strict compilation, the 288-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/cioba-savvas-shutout-number/FORMALIZATION.md).
+
 ## 2026-11-26 — Limiting Gaussian cold spots of the Leech lattice
 
 Added the correction to the limiting type in §5 of Bachoc, Moustrou, Vallentin and Zimmermann. Minimizing over moving points near each deep hole selects $`E_8^3`$. The written argument and exact coefficient comparison also identify $`D_{24}`$ as the runner-up. [Proof and review](docs/research-results/leech-cold-spots-asymptotics/README.md) · [Issue #376](https://github.com/1337isnot1337/solved-conjectures/issues/376)
