@@ -4,7 +4,7 @@
 
 ## Distances between leaves
 
-The multiset of leaf-to-leaf distances determines the total length of a generic reduced metric tree. For a binary target it also determines the unweighted topology. Every possible change of lengths comes from permuting the two-pendant sums at cherries in a binary refinement, and the factorial bound on the number of alternatives is sharp. The resulting length invariant imposes a rational obstruction on every competitor with more leaves in the ordinary distance-histogram problem. [Total length](LEAF-DECK-LENGTH.md) · [Classification](CHERRY-CLASSIFICATION.md) · [Application](SCALAR-PENDANT-OBSTRUCTION.md) · [Sources and independent review](LEAF-DECK-REVIEW.md)
+The multiset of leaf-to-leaf distances determines the total length of a generic reduced metric tree. For a binary target it also determines the unweighted topology. Every possible change of lengths comes from permuting the two-pendant sums at cherries in a binary refinement, and the factorial bound on the number of alternatives is sharp. With at least five leaves, the absence of a trivalent parent of two leaves guarantees full recovery of the weighted tree. The length invariant imposes a rational obstruction on every competitor with more leaves in the ordinary distance-histogram problem. [Total length](LEAF-DECK-LENGTH.md) · [Classification](CHERRY-CLASSIFICATION.md) · [Application](SCALAR-PENDANT-OBSTRUCTION.md) · [Sources and independent review](LEAF-DECK-REVIEW.md)
 
 ## When the histogram alone suffices
 
