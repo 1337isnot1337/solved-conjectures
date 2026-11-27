@@ -1,5 +1,9 @@
 # Stanley’s tree-isomorphism conjecture
 
+## Reconstruction with an arbitrary internal tree
+
+For any fixed internal tree and arbitrary fixed terminal caps, the ordinary chromatic symmetric function identifies the decorated tree for a proportion tending to one of the independently chosen exterior orders in the stated intervals. The proof recovers the internal topology and every internal path length from the split sizes. [Theorem and exact hypotheses](ARBITRARY-CORE.md) · [Review and prior work](ARBITRARY-CORE-REVIEW.md) · [Split reconstruction check](verify_core_splits.py)
+
 ## Independent subdivisions at a branch vertex
 
 The two-hub results allow arbitrary independent subdivision lengths when terminal shape is determined by its leaf count and the stated leaf-count bound holds. A second theorem covers a dominant arm with arbitrary rooted ends. [Free lengths](TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](DOMINANT-ARM.md)
