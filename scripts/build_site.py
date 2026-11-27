@@ -90,6 +90,7 @@ SOURCE_TITLES = {
 }
 STATUS_LABEL_SLUGS = {
     "Erdős–Galvin–Hajnal’s rainbow-star girth problem": "erdos-galvin-hajnal-rainbow-star-girth",
+    "Erdős–Galvin–Hajnal’s continuum rainbow-star problem": "erdos-galvin-hajnal-continuum-rainbow-star",
     "Chen’s parity-free exact-one-marker conjecture": "chen-parity-free-exact-one-marker",
     "Cameron–Clow’s 2K₂-free path-perfect conjecture": "cameron-clow-twok2-free-path-perfect",
     "Cameron–Clow’s claw-free path-perfect conjecture": "cameron-clow-claw-free-path-perfect",
