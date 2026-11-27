@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Shelah-graph avoidance is independent over GCH
+
+Cinna Davis’s reduction resolves Problem 4 of Erdős, Galvin and Hajnal. Every graph on the first uncountable ordinal avoiding their Shelah subgraph partitions into countably many induced graphs of Hajnal–Máté type. This gives the negative answer in the Avraham–Devlin–Shelah GCH model, while the original authors supplied a positive example in the constructible universe. [Proof](results/erdos-galvin-hajnal-shelah-graph-avoidance/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-shelah-graph-avoidance/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1037)
+
 ## 2026-11-27 — Square-root upper gap for normalized complementary connectivities
 
 Published the full written argument for Conjecture 2 of Kempton, Zaitzeff and Muthuprakash. Cinna Davis recorded the projected-row proof strategy, which was reconstructed and independently reviewed in the WadeDavis research session. The original authors’ focus family makes the exponent sharp. [Proof](results/normalized-nordhaus-gaddum/PROOF.md) · [Attribution and prior work](results/normalized-nordhaus-gaddum/AUDIT.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/495)
