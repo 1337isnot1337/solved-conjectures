@@ -1,4 +1,4 @@
-"""Finite replay of the two-bit construction, using direct unordered pair counts."""
+"""Check sparse and oscillating extensions using direct unordered pair counts."""
 
 from upper_bound import ulam_prefix
 
@@ -37,9 +37,29 @@ def check_odd_rule(limit):
           f"and omit {len(missed)} even singletons.")
 
 
+def check_oscillation(prefix_cutoff):
+    prefix = ulam_prefix(prefix_cutoff)
+    p, q = prefix[-2:]
+    a, d = p + q, p + 2 * q
+    word = "110" + ("11010" * 5 + "110" * 7) * 3
+    fixed = prefix + [a, d, a + d, 2 * d]
+    terms = fixed + [a + j * d for j in range(3, len(word)) if word[j] == "1"]
+    limit = a + (len(word) - 1) * d
+    counts = counts_through(terms, limit)
+    small_sums = {f + t for f in fixed for t in terms if f != t and f + t <= limit}
+    if [n for n in terms if n <= prefix_cutoff] != prefix:
+        raise ValueError("the extension changes its prescribed prefix")
+    if any(counts[n] != 1 for n in terms if n > 2):
+        raise ValueError("a selected term in the oscillating extension lost uniqueness")
+    if small_sums != {n for n, count in enumerate(counts) if count}:
+        raise ValueError("a represented target in the extension lacks a short summand")
+
+
 def main():
     limit = 32768
     check_odd_rule(limit)
+    for cutoff in (2, 8, 69):
+        check_oscillation(cutoff)
     indices = [n for n in range(1, limit + 1) if n.bit_count() <= 2]
     counts = counts_through(indices, limit)
     if [n for n, r in enumerate(counts) if r == 1] != [3, 4] or max(counts) != 6:

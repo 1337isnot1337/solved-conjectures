@@ -36,6 +36,9 @@ multiply represented terms to enter makes zero upper Banach density possible.
 An [odd-sum criterion](parity.md) bounds the density from below using only
 odd represented targets and the two parity counts at half the cutoff.
 It also gives a zero-density example satisfying the full rule at every odd target.
+The [pair-count criterion](pair-counts.md) treats convergence directly and
+checks every pair of adjacent targets through 16,777,216. In this prefix
+at least one of each two consecutive integers from 3 has a representation.
 
 ## Uniform upper bound
 
