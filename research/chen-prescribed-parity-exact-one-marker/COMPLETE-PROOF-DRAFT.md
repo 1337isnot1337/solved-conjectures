@@ -156,6 +156,14 @@ A-paths), [Chekan et al.](https://arxiv.org/abs/2408.16344) (fixed
 finite-label S–T paths), and [Gollin et al.](https://arxiv.org/abs/2102.01986)
 (cycle label avoidance, not the exact-one filter as stated).
 These results do not supply the distinct prescribed-pair packing
-asserted here. The geometric inputs and case joins above should
+asserted here. A further close predecessor is
+[Kawarabayashi–Reed, SODA 2009](https://doi.org/10.1137/1.9781612973068.128)
+on deciding whether a specified list of k demands can all be routed.
+Its structural overview also uses odd cliques, odd wall faces and
+parity-breaking paths. This is closely related routing work, but a
+fixed-k feasibility algorithm neither chooses k demands from an
+unbounded matching nor supplies a small transversal when that
+selection cannot be made. The tangle and free-whole-pairs reduction
+addresses this difference. The geometric inputs and case joins above should
 receive a fresh proof review before publication. This file makes
 no claim about Chen’s separate moving-core Problem 6.6.
