@@ -1,5 +1,13 @@
 # Source and prior-resolution audit
 
+## Prior-resolution decision, 27 November 2026 UTC
+
+The complete threshold for all the stated finite uniformities and intersection sizes follows from the pair case of Erdős and Hajnal’s 1968 Theorem 1. Fixing all but two positions gives the necessary pair-shift coloring on an interval of the same cardinality. Conversely, the vector of all pair colors in an increasing tuple recovers compatible ranks even for one common element. The original authors already give that vector for triples in the remark following Problem 5. The alternate profile proof below is retained as a historical research note. This claim is excluded from the original-discovery catalogue. [Complete reduction and issue record](https://github.com/1337isnot1337/solved-conjectures/issues/979#issuecomment-7210026543) · [Theorem 1, p. 85](https://users.renyi.hu/~p_erdos/1968-04.pdf#page=3) · [Problem 5 and the authors’ remark, p. 96](https://users.renyi.hu/~p_erdos/1968-04.pdf#page=14)
+
+The source uses the letter alpha for a cardinal with its natural ordinal order. The 1968 paper explicitly adopts the earlier paper’s notation. For arbitrary ordinals the sharp criterion instead uses the cardinality of the order type. [1968 notation, p. 83](https://users.renyi.hu/~p_erdos/1968-04.pdf#page=1) · [1966 notation, p. 64](https://users.renyi.hu/~p_erdos/1966-07.pdf#page=4)
+
+## Initial audit
+
 The target is Problem 5 on printed p. 96 of [Erdős and Hajnal,
 *On chromatic number of infinite graphs* (1968)](https://www.renyi.hu/~p_erdos/1968-04.pdf#page=14).
 It is not Problem 5 in their later survey *Unsolved problems in set

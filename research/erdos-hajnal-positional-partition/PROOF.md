@@ -1,5 +1,7 @@
 # Erdős–Hajnal’s positional partition problem
 
+**Historical research note.** The original problem and the full threshold below follow from the published 1968 pair-shift theorem. [Prior-resolution review](AUDIT.md#prior-resolution-decision-27-november-2026-utc) · [Issue receipt](https://github.com/1337isnot1337/solved-conjectures/issues/979#issuecomment-7210026543)
+
 **Answer to the 1968 Problem 5: no.** More generally, let $`V`$ be
 an infinite linearly ordered set, let $`\mu`$ be an infinite cardinal,
 and let $`1\le t\lt k<\omega`$. The following are equivalent:
@@ -51,7 +53,7 @@ $`k`$-partition in Definition 2.1 (p. 84) and defines similar position
 in Definition 4.2 (p. 92): each common element has the same rank in
 both ordered sets. Both phrases refer to that same rank requirement in
 [Problem 5, p. 96](https://www.renyi.hu/~p_erdos/1968-04.pdf#page=14).
-The authors ask for a countable coloring of all triples of the ordinal
+The authors ask for a countable coloring of all triples of the initial ordinal
 $`\alpha`$ when $`2^{\aleph_0}<\alpha\le 2^{2^{\aleph_0}}`$. They give a
 construction at the continuum, not above it. Apply the theorem with
 $`k=3`$, $`t=2`$, and $`\mu=\aleph_0`$. It answers the full stated range.
