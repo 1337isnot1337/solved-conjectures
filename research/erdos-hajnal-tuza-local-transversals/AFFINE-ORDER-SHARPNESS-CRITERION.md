@@ -181,3 +181,29 @@ requires \(\delta\) to be a multiple of \(4=s^2\).
 When \(s=1\) there is no noninteger case.
 Together with the design upper bound this completes
 the abstract sharpness criterion.
+
+## Relation to overlap colouring
+
+At the level of the abstract axioms, trimming every petal to
+\(p\) elements cannot increase the ground set or create a
+forbidden overlap. Thus the minimum is equivalently the least
+\(N\) with a homomorphism from the ordinary Kneser graph
+\(KG(m,s)\) to the graph on \(p\)-subsets of \([N]\) in which
+adjacency means intersection **at most** \(\delta\).
+
+The similarity to [Watts's overlap-colouring thesis](https://oro.open.ac.uk/60721/1/505353.pdf)
+(Introduction and Chapters 2 and 7) and the antecedent work of
+A. Johnson and F. C. Holroyd, *Overlap Colourings of Graphs*,
+Congressus Numerantium 113 (1996), 221–230, is terminological
+but not an identification with their invariant: they impose
+intersection **equal** to the overlap parameter on every graph
+edge, and their fractional periodicity takes a fixed host graph.
+Here the host grows, \(s,\delta\) are fixed, and \(p\) grows
+linearly with \(m\). The connection is nevertheless useful:
+the construction above fills the at-most-\(\delta\) budget
+on a \(1-o(1)\) fraction of disjoint cut pairs.
+[Stahl's ordinary multicolouring problem](https://arxiv.org/abs/2407.05730)
+instead has zero allowed overlap. When \(\delta=0\), the usual
+fractional-chromatic lower bound and a star construction give
+the leading constant \(3/s\) directly; this case makes no
+novelty claim.
