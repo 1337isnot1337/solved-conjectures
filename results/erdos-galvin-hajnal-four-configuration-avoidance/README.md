@@ -2,9 +2,10 @@
 
 [Problem 9/C (1975)](https://www.renyi.hu/~p_erdos/1975-24.pdf#page=58) asks whether an $`\aleph_1`$-chromatic triple system on $`\omega_1`$ can omit $`\mathcal T_1,\mathcal T_3,\mathcal T_4,\mathcal T_9`$ simultaneously.
 
-**Candidate answer:** the existence statement is independent of ZFC, relative to the consistency of ZFC. A precaliber-$`\aleph_1`$ forcing of size $`\aleph_1`$ produces a witness omitting all four and can preserve CH. In a different model, a rainbow partition into countably many classes rules out every such witness.
+**Candidate answer:** the existence statement is independent of ZFC, relative to the consistency of ZFC. Adding a single Cohen real over any ZFC ground produces a witness omitting all four and preserves CH when it holds in the ground. In a different model, a rainbow partition into countably many classes rules out every such witness.
 
-- [Proof](PROOF.md)
+- [One-Cohen proof](ONE-COHEN.md)
+- [Original independence proof](PROOF.md)
 - [Priority and source audit](PRIOR-ART.md)
 - [Finite checks of the local amalgamations](check_amalgamation.py), which do not replace the forcing proof. Run with Python 3; expected counts: 3,252 free unions and 14,571 marked-triple extensions.
 
