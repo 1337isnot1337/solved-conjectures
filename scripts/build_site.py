@@ -45,7 +45,13 @@ class ExternalCredit:
 
 
 EXTERNAL_CREDIT = {
+    "chen-khare-sahi-jack": ExternalCredit(
+        "@WadeDavis",
+        f"{REPOSITORY}/issues/201",
+        "The contributor developed the counterexample and its written proof with Codex.",
+    ),
     "brown-cameron-stability": ExternalCredit("@adamben04", "https://github.com/adamben04"),
+    "frankl-geher-sagdeev-toth-strict-convexity": ExternalCredit("@adamben04", f"{REPOSITORY}/pull/961"),
     "currie-conjecture-19": ExternalCredit(
         "@aadrianvv",
         f"{REPOSITORY}/pull/154",
@@ -89,7 +95,7 @@ STATUS_LABEL_SLUGS = {
     "General position number of oriented trees": "general-position-oriented-trees",
     "Builder–Blocker general position complexity conjecture": "builder-blocker-general-position-complexity",
     "Fractional general position conjecture for square grids": "fractional-general-position-square-grids",
-    "Erdős’s pinned-distance conjecture in general position": "erdos-general-position-pinned-distances",
+    "Erdős’s one-third pinned-distance conjecture": "erdos-general-position-pinned-distances",
     "Cioba–Savvas shutout number conjecture": "cioba-savvas-shutout-number",
     "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
     "The lower oriented general position NP-hardness conjecture": "lower-oriented-general-position-np-hardness",
@@ -201,6 +207,7 @@ STATUS_LABEL_SLUGS = {
     "Roos–Seiringer's conjecture": "roos-seiringer-kernel",
     "Dospolova–Germanskov–Zaporozhets's conjecture": "dospolova-germanskov-zaporozhets",
     "Chen–Khare–Sahi's conjecture": "chen-khare-sahi-macdonald",
+    "Chen–Khare–Sahi’s Jack semiring conjecture": "chen-khare-sahi-jack",
     "Ferreira–Simon's conjecture": "ferreira-simon-beta-prime",
     "Lyon's conjecture": "lyon-gamma-median",
     "Han–Sabag–Kostina–Hassibi's conjecture": "han-sabag-kostina-hassibi",

@@ -14,6 +14,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check Stanley subdivision and repeated-branch reconstruction
+        run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_hub.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_long_subdivision.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
+
       - name: Check both graphical dist orientation counts
         run: |
           python3 results/alexandersson-graphical-dist/check.py
@@ -64,6 +72,12 @@ jobs:
         run: python3 results/fractional-general-position-square-grids/verify.py
       - name: Check pinned-distance multiplicities and diameter neighbors
         run: python3 results/erdos-general-position-pinned-distances/verify.py
+      - name: Check farthest-site conflicts, retention and triangle counts
+        run: |
+          python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py
+          python3 results/erdos-general-position-pinned-distances/check_localization.py
+          python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py
+          python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
@@ -92,7 +106,7 @@ jobs:
         shell: pwsh
         run: ./results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1
       - name: Check strictly convex normed coloring identities
-        run: python3 results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py
+        run: python3 -I -S -B -O results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample
@@ -230,8 +244,20 @@ jobs:
           python3 docs/research-results/tuite-thomas-chandran-circulants/check.py
       - name: Check the Lángi–Wang disk-window construction
         run: python3 results/langi-wang-convex-tiling/check_sectors.py
+      - name: Check dual type-A Gaussian cold spots
+        run: python3 docs/research-results/dual-a-universal-cold-spots/verify.py
+      - name: Check high-rank root type-A examples
+        run: |
+          python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py
+          python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py
+          python3 docs/research-results/root-a-high-rank-cold-spots/check_central_order.py
       - name: Check the Leech lattice deep-hole coefficients
         run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
+      - name: Check mixed-hole Gaussian coefficients and equality cases
+        working-directory: docs/research-results/leech-cold-spots-asymptotics
+        run: |
+          python3 check_leech.py
+          python3 check_resonance.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py
@@ -250,6 +276,10 @@ jobs:
           python results/chen-khare-sahi-macdonald/verify.py
           python results/chen-khare-sahi-macdonald/independent_cone_check.py
           python results/chen-khare-sahi-macdonald/independent_orthogonality_check.py
+      - name: Check Chen-Khare-Sahi Jack semiring counterexample
+        run: |
+          python results/chen-khare-sahi-jack/verify.py
+          python results/chen-khare-sahi-jack/independent_gram_check.py
       - name: Check Ferreira-Simon beta-prime symbolic identities
         run: python results/ferreira-simon-beta-prime/verify.py
       - name: Certify Lyon gamma-median monotonicity on all real cells

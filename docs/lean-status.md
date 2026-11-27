@@ -1,12 +1,26 @@
 # Lean verification status
 
+## Tree reconstruction after long subdivisions
+
+The balanced-edge, leaf-centroid, earlier subdivision and repeated-branch theorems have written proofs and executable finite checks. Their Lean status is unformalized. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
+
 ## Cioba–Savvas shutout number conjecture
 
 Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Lean proves for arbitrary finite simple graphs that Breaker prevents an immediate $s$-shutout whenever $s \ge 2$, $D = \Delta(G) \ge 1$, and $2^{1-s} \le D^D / (D+1)^{D+1}$, and via Bernoulli's inequality deduces $\sigma(s) \ge \tau(s) > 2^{s-3}$ for every $s \ge 3$ and $\sigma(s) \ge 2^s / 8$ for every $s \ge 1$. The four-module closure passed strict compilation, the complete 288-declaration all-owned axiom audit (241 theorems, 54 private declarations), and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
 
+## Universal Gaussian cold spots of dual type A
+
+The all-rank theorem, its equality cases and its positive Hessian have a reviewed written proof. No Lean formalization is registered. [Statement and verification scope](research-results/dual-a-universal-cold-spots/README.md)
+
+## Gaussian cold spots of high-rank type-A root lattices
+
+The high-rank theorem, both dimension-independent endpoint intervals, the all-rank ordering of scalar levels, the one-outlier classification and the positive Hessian and paired-displacement estimates have internally reviewed written proofs and exact finite comparisons. These results have no Lean formalization. [All central levels](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](research-results/root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Scope and checks](research-results/root-a-high-rank-cold-spots/README.md)
+
 ## Leech lattice cold-spot limit
 
 **Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)
+
+The mixed-hole stability criterion and the local $`A_{24}`$ expansion have written proofs and no Lean formalization. Rational enumeration verifies the two Leech coefficients. [Supplement and checks](research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
 
 ## Pattern packing and four-cycle partial results
 
@@ -338,7 +352,7 @@ proofs are documented separately in the catalogue and result package.
 | En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem | Not formalized | The [written proof](../results/constant-weight-strong-wom/PROOF.md) proves the capacity and polynomial complexity guarantees. A [reference implementation](../results/constant-weight-strong-wom/verify.py) checks exact-weight encoding and recovery. |
 | The Steiner triple system sail problem | Complete | Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Lean theorems and verification receipt](../results/steiner-triple-system-sail/FORMALIZATION.md). |
 | Fractional general position conjecture for square grids | Not formalized | The [written proof](../results/fractional-general-position-square-grids/PROOF.md) constructs the exact minimum fractional geodesic cover for every square grid. [Exact checker](../results/fractional-general-position-square-grids/verify.py). |
-| Erdős’s pinned-distance conjecture in general position | Not formalized | The [written proof](../results/erdos-general-position-pinned-distances/PROOF.md) establishes a fixed positive gap above one third for the average pinned count when no three points are collinear. [Independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) · [Finite checks](../results/erdos-general-position-pinned-distances/verify.py). |
+| Erdős’s one-third pinned-distance conjecture | Not formalized | Written proofs give the mean one-third gap under either no three collinear or no four cocircular. [First proof](../results/erdos-general-position-pinned-distances/PROOF.md) · [Arbitrary-collinearity proof](../results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) · [Review and finite checks](../results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md). The [site-centered partial results](../results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites) also have written proofs and finite checks. |
 | Cioba–Savvas shutout number conjecture | Complete for Conjectures 3.2 and 3.3 | Lean proves the exponential degree lower bounds for the immediate shutout and free-star games over arbitrary finite simple graphs. [Scope and replay](../results/cioba-savvas-shutout-number/FORMALIZATION.md). |
 | Mobile general position complexity | Not formalized | The [written proof](../results/mobile-general-position-complexity/PROOF.md) gives PSPACE-completeness for ordinary, fixed-start, and completely mobile thresholds at diameter two. [Exact move checker](../results/mobile-general-position-complexity/verify.py). |
 | Misère Domination Game | Not formalized | The [written proof](../results/misere-domination-game/PROOF.md) gives exact congruences for paths and cycles and solves impartial misère octal 0.337. [Independent game checker](../results/misere-domination-game/verify.py). |
@@ -370,6 +384,7 @@ proofs are documented separately in the catalogue and result package.
 | Roos–Seiringer's conjecture | Not formalized | Complete proposed computer-assisted proof of the full radial Dirichlet kernel assertion. Analytic tails and an essential exact certificate over 184 closed intervals cover the entire positive real axis; source scaling covers all positive chemical potentials. Two independent mathematical/code reviews, a separate priority audit and full replays passed. The unaveraged kernel is outside the claim. No Lean formalization is claimed. |
 | Dospolova–Germanskov–Zaporozhets's conjecture | Partial | Lean checks the positive factorial family, exact ultra-log-concavity and scaled ratios, countable-limit step, and strict expected sample range for an actual Gaussian process under almost-sure boundedness and deterministic local-range-limit assumptions. Intrinsic volumes, determinism of those local limits, and Vitale's limiting theorem remain unformalized. Strict source compilation, isolated kernel replay and endpoint axiom checks passed; full repository gate pending. |
 | Chen–Khare–Sahi's conjecture | Partial: literal source convention unresolved | At q=1/10, t=9/10, Lean proves the complete stable Hall family over all eleven degree-six partitions, literal power-sum coordinates and polynomial injectivity, unique monic dominance-triangular orthogonality, three-variable specialization, positive normalization, and full Muirhead-semiring nonmembership. The degree-three finite-Hall source conflict is formal. All 19 modules passed strict sources, complete owned/private audits and exact stock replay. Broader families remain eigenfunction-characterized; the separate earlier 16-module compatibility replay and the combined repository gate remain pending. |
+| Chen–Khare–Sahi’s Jack semiring conjecture | Not formalized | Written counterexample to Conjecture 4 with two exact rational checks. The Jack witness and its parameter family have no Lean formalization. [Proof and review](../results/chen-khare-sahi-jack/REVIEW.md). |
 | Ferreira–Simon's conjecture | Not formalized | Complete proposed analytic proof of the beta-prime self-convolution identity for its full real-parameter range. Two independent mathematical reviews and 18 supplementary exact formal-parameter checks passed. No Lean formalization is claimed. |
 | Lyon's conjecture | Not formalized | Complete proposed computer-assisted proof for every positive real shape. Analytic tails and an essential exact integer certificate covering 4256 real intervals establish the derivative sign. Two independent mathematical/code reviews and full certificate replays passed. No Lean theorem or partial Lean credit is claimed. |
 | Han–Sabag–Kostina–Hassibi's conjecture | Complete source formalization; merged-package gate pending | Lean proves the original matrix feasibility, rational witness, exact sparse infimum and all four individual assignment infima, plus the uniform gap throughout the stated open gain interval. Standalone strict source compilation, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending. |

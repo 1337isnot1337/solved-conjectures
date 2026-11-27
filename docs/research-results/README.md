@@ -43,6 +43,20 @@ The one-page book exception and the order-15 circulant exception appeared earlie
 
 Gaussian cold spots approach deep holes of type $`E_8^3`$ as the Gaussian parameter tends to infinity. The proof accounts for the displacement of a minimizer from its limiting hole and calculates the resulting leading coefficient. An exact comparison over all 23 types places $`D_{24}`$ second. [Proof](leech-cold-spots-asymptotics/PROOF.md) · [Review](leech-cold-spots-asymptotics/REVIEW.md) · [Reproduction](leech-cold-spots-asymptotics/README.md)
 
+The supplement gives a necessary and sufficient criterion for a fixed hole to remain a global minimizer when other holes have unbalanced shells. Exact enumeration gives the energy and displacement coefficients at the local Leech $`A_{24}`$ branch. [Mixed-hole proof](leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Review and reproduction](leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
+
+## Universal Gaussian cold spots of dual type A
+
+The Gaussian sum on $`A_n^*`$ attains its minimum precisely at the deep holes for every positive parameter. Circular averaging of one-dimensional theta products yields the inequality and its equality cases. [Proof](dual-a-universal-cold-spots/PROOF.md) · [Review and reproduction](dual-a-universal-cold-spots/REVIEW.md)
+
+## Gaussian cold spots of high-rank type-A root lattices
+
+The deep holes of $`A_n`$ are the only Gaussian minimizers at every positive scale in all sufficiently high ranks. Both a small-scale interval and a large-scale interval work simultaneously across all ranks. At every rank and scale the scalar levels are strictly ordered and the global minimizers on the one-outlier and paired-displacement loci are deep classes. [All central levels](root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Partial theorem](root-a-high-rank-cold-spots/README.md) · [Small-scale proof](root-a-high-rank-cold-spots/SMALL-SCALE.md) · [Half-line proof](root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md)
+
+## Recognizing trees after one long edge subdivision
+
+A spanning-forest identity at an arbitrary cut gives a stronger subdivision bound depending on both endpoint orders. A separate theorem recognizes a unique centroid with at least one fewer pendant leaf than the order of its largest branch. Repeated-branch cases are also covered. [Theorems and ordinary-CSF scope](stanley-tree-subdivisions/README.md) · [Balanced-edge review](stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
+
 ## Prior results and quantitative refinements
 
 The original unrestricted Estrugo–Pastine star-center degree question follows from earlier work. The manuscript proves two stronger quantitative statements with their own constructions. The explicit Hurlbert–Kamat witness falls under an earlier announced construction by Feghali, Johnson and Thomas. The source audit identifies the relevant priority decisions. [Estrugo–Pastine refinements](estrugo-pastine-star-center-degree/README.md) · [Hurlbert–Kamat witness](hurlbert-kamat/README.md) · [Other prior-resolution searches](2026-11-26-named-conjecture-screen/README.md)

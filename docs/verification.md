@@ -1,5 +1,9 @@
 # Verification
 
+## Tree reconstruction after long subdivisions
+
+The five standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
+
 ## Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
 
 Run `python3 results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py` for exact height identities and rational curvature and support bounds. The [review](../results/frankl-geher-sagdeev-toth-strict-convexity/AUDIT.md) distinguishes these checks from the full written argument.
@@ -8,9 +12,21 @@ Run `python3 results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py` 
 
 Run `python3 results/langi-wang-convex-tiling/check_sectors.py` with standard Python. The script checks one stage with 512 polygon sides, including sector convexity, inball clearance, diameter bounds, annular areas and which tiles lie inside the test disk. The all-scale estimates and the logarithmic-density bound have written proofs. [Construction](../results/langi-wang-convex-tiling/PROOF.md) · [Logarithmic density](../results/langi-wang-convex-tiling/LOG-DENSITY.md) · [Review](../results/langi-wang-convex-tiling/REVIEW.md)
 
+## Universal Gaussian cold spots of dual type A
+
+Run `python3 docs/research-results/dual-a-universal-cold-spots/verify.py` with standard Python. The verifier compares thirty degrees of the exact theta and product series in ranks one through ten. Direct lattice sums separately check the value, the directional Hessian and a displaced point for nine choices of rank and parameter. [Mathematical proof](research-results/dual-a-universal-cold-spots/PROOF.md) · [Review and reproduction details](research-results/dual-a-universal-cold-spots/REVIEW.md)
+
+## Gaussian cold spots of high-rank type-A root lattices
+
+Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py` and `python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py`. The first script certifies 700 strict central-class comparisons across ranks 4 through 23 and ten more in ranks 4 and 5 at large scales that test both parities. The second compares four noncentral translates and two origin translates with the deep classes in ranks 5 and 9 at four times the natural logarithm of two. Both use explicit bounds on omitted Gaussian tails. The uniform all-translation theorem has a written proof. [Combined theorem](research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
+Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central_order.py` for 605 adjacent scalar comparisons in ranks 1 through 21 at five scales, and 32 complete Gaussian-mass comparisons in ranks 3 through 6 on the two restricted families. This verifier uses unshifted integer coefficient enclosures for the consecutive levels and the existing rational tail routine for displaced points. [Proof](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [Independent review](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL-REVIEW.md)
+
 ## Leech lattice cold-spot coefficients
 
 Run `python3 docs/research-results/leech-cold-spots-asymptotics/verify.py` with standard Python. Integer bisection bounds the optimized leading coefficient for each of the 23 deep-hole types. The verifier checks that $`E_8^3`$ has the smallest coefficient and $`D_{24}`$ the second smallest. The localization of the Gaussian minimizers is proved analytically. [Proof](research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](research-results/leech-cold-spots-asymptotics/REVIEW.md)
+
+From `docs/research-results/leech-cold-spots-asymptotics`, run `python3 check_leech.py` for rational enumeration in Shimada’s lattice basis and `python3 check_resonance.py` for the finite numerical models. The first checks the two coefficients at $`A_{24}`$. The second tests the signs below, at, and above the equality threshold for later unbalanced shells. [Mixed-hole proof](research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Reproduction and numerical scope](research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
 
 ## Permutation digraph general position conjecture
 
@@ -52,9 +68,11 @@ Run `python3 results/builder-blocker-general-position-complexity/verify.py` to c
 
 Run `python3 results/fractional-general-position-square-grids/verify.py --limit 110 --also 199 200` to check the rank marginals, legal mass couplings and primal longest paths in exact rational arithmetic. The [written proof](../results/fractional-general-position-square-grids/PROOF.md) treats every even and odd order.
 
-## Erdős’s pinned-distance conjecture in general position
+## Erdős’s one-third pinned-distance conjecture
 
-Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets.
+Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets. The [arbitrary-collinearity review](../results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) documents the added incidence, sampling and limiting arguments. Run `python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py` for the exact finite geometric checks.
+
+Run `python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py` for mixed isosceles triples and `python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py` for axis nominations, co-farthest pairs and the arc sampling construction. The [written review](../results/erdos-general-position-pinned-distances/BISECTOR-REVIEW.md) identifies which parts of the asymptotic argument the finite tests exercise.
 
 ## Cioba–Savvas shutout number conjecture
 
@@ -763,6 +781,13 @@ python3 results/chen-khare-sahi-macdonald/independent_orthogonality_check.py
 
 All three scripts use only exact integers and fractions from the Python standard library. The main verifier checks the full cone, cleared-denominator Macdonald difference equations, and exact normalized separator value. The other scripts independently regenerate the cone values and derive both polynomials from the Hall inner product on all eleven partitions of six before specialization to three variables. Numerical linear programming was used only during discovery and is not a proof premise.
 
+
+The [Jack semiring proof](../results/chen-khare-sahi-jack/PROOF.md) uses the column-Schur coefficient. One exact checker constructs both Jack polynomials by their differential equation. The other constructs them from the Jack inner product and checks a second separator on all 77 degree-five products. Both use the Python standard library. [Review and expected values](../results/chen-khare-sahi-jack/REVIEW.md)
+
+```bash
+python3 results/chen-khare-sahi-jack/verify.py
+python3 results/chen-khare-sahi-jack/independent_gram_check.py
+```
 
 The [Ferreira–Simon beta-prime proof](../results/ferreira-simon-beta-prime/PROOF.md) is a complete analytic Mellin-transform argument for the full parameter range. Its [two](../results/ferreira-simon-beta-prime/ALGEBRA_REVIEW.md) [independent reviews](../results/ferreira-simon-beta-prime/ROOT_REVIEW.md) check the normalization, domains, positive-series interchanges, and uniqueness step. The standard-library script checks 18 exact identities in formal parameters; these are supplementary algebra checks, not a finite-parameter proof.
 

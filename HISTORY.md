@@ -1,8 +1,40 @@
 # History
 
-## 2026-11-26 — Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
+## 2026-11-27 — Balanced-edge and leaf-centroid reconstruction for Stanley’s question
 
-Published the [reviewed written proof](results/frankl-geher-sagdeev-toth-strict-convexity/PROOF.md). There is a strictly convex norm on real five-space and a fixed countably infinite set such that every coloring with countably infinitely many colors has an isometric copy missing a color. This does not resolve the separate two-color question.
+A new identity for the ordinary forest polynomial across any cut improves the previously published long-subdivision threshold. Endpoint components of orders 5 and 8 now require a total of 18 vertices under this sufficient bound. A separate result reconstructs a tree from a unique centroid carrying enough pendant leaves. Both are reviewed partial theorems within the existing unranked entry. [Balanced-edge proof](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid proof](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md)
+
+## 2026-11-27 — All-rank scalar ordering and one-outlier Gaussian minimizers in primal type A
+
+The existing type-A research entry now orders every scalar coset at every positive scale and identifies all minimizers among translates with one exceptional coordinate or with paired displacements about a deep class. It also proves positive curvature at every deep class in both parities. The unrestricted result in sufficiently high ranks retains its original scope. [Results and reviews](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Exact checks](docs/research-results/root-a-high-rank-cold-spots/check_central_order.py)
+
+## 2026-11-27 UTC — Erdős’s site-centered pinned-distance question
+
+The existing one-third entry adds a mixed-circle incidence bound, a sufficient condition in terms of active perpendicular bisectors, and the sharp pair-density moment for a uniform-disk model. These partial results concern the separate open site-centered hypothesis. [Theorems and review](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
+
+## 2026-11-27 — Recognizing trees after one long edge subdivision
+
+Codex proved in the WadeDavis research session that the ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single chosen tree edge among all trees. The publication also records the repeated-branch theorems and their exact checks. [Results](docs/research-results/stanley-tree-subdivisions/README.md) · [Review](docs/research-results/stanley-tree-subdivisions/REVIEW.md)
+
+## 2026-11-27 — High-rank Gaussian cold spots of the primal type-A root lattices
+
+Codex derived high-rank estimates in the WadeDavis research session that classify the Gaussian minimizers of the primal root lattices at every positive scale once the rank is sufficiently large. Every rank also has the same classification on two dimension-independent small- and large-scale intervals. The remaining finite ranks at intermediate scales are open. [Combined theorem](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](docs/research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](docs/research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
+## 2026-11-27 — Erdős Problem 654 with arbitrary collinearities
+
+Codex in the WadeDavis research session proved the positive one-third gap for the average pinned-distance count in every sufficiently large planar set with no four cocircular points. The earlier theorem for sets with no three collinear retains its original proof and credit. Both results share the existing ranked entry. [New proof](results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) · [Review](results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) · [Sources](results/erdos-general-position-pinned-distances/UNRESTRICTED-SOURCES.md)
+
+## 2026-11-27 — Universal Gaussian cold spots of dual type A
+
+Codex proved in the WadeDavis research session that the deep holes of every dual type-A lattice are exactly the minimizers at every positive Gaussian parameter. This closes the intermediate range in ranks at least four, extending Cinna Davis’s two endpoint results. The proof uses Chan–Liu circular summation and strict logarithmic concavity. [Theorem](docs/research-results/dual-a-universal-cold-spots/PROOF.md) · [Review and attribution](docs/research-results/dual-a-universal-cold-spots/REVIEW.md)
+
+## 2026-11-27 — Chen–Khare–Sahi’s Jack semiring conjecture
+
+@WadeDavis and Codex found a counterexample to Conjecture 4 in five variables. A column-Schur coefficient separates the same pair throughout an open parameter interval in every rank at least five. [Proof](results/chen-khare-sahi-jack/PROOF.md) · [Independent review and exact checks](results/chen-khare-sahi-jack/REVIEW.md) · [Source audit](results/chen-khare-sahi-jack/SOURCE_AUDIT.md)
+
+## 2026-11-27 — Eventual stability among inequivalent deep holes
+
+Codex derived a necessary and sufficient shell criterion in the WadeDavis research session and computed the local Gaussian energy gain at Leech holes of type $`A_{24}`$. The unranked supplement extends Cinna Davis’s Leech localization argument and uses Ichiro Shimada’s lattice data. [Proof](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Review and exact coefficients](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
 
 ## 2026-11-27 — Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
 
@@ -23,6 +55,10 @@ Answered Liang’s Open Problem 6.2 with a residue rule for the bulk and an exac
 ## 2026-11-27 — Plambeck–Siegel infinite quotient conjecture for 0.3312
 
 Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).
+
+## 2026-11-26 — Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
+
+Published the [reviewed written proof](results/frankl-geher-sagdeev-toth-strict-convexity/PROOF.md). There is a strictly convex norm on real five-space and a fixed countably infinite set such that every coloring with countably infinitely many colors has an isometric copy missing a color. This does not resolve the separate two-color question.
 
 ## 2026-11-26 — Independent review of Ekhad–Zeilberger’s most unfair bet
 
