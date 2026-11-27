@@ -2,7 +2,7 @@
 
 ## Cioba–Savvas shutout number conjecture
 
-Complete for Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Over arbitrary finite `SimpleGraph V`, Lean formalizes the alternating Maker–Breaker shutout game (distinguishing immediate $s$-shutout $\tau(s)$ from a free $s$-star after Breaker's reply $\sigma(s)$), Shearer's independence-polynomial risk region $\mathcal{R}(G)$, the local linear clique test, and Breaker's endpoint-marking strategy, proving $\sigma(s) \ge \tau(s) > 2^{s-3}$ for all $s \ge 3$ and $\sigma(s) \ge 2^s / 8$ for all $s \ge 1$. The four-module closure passed strict compilation, the complete 288-declaration owned axiom audit, and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
+Complete for Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Over arbitrary finite `SimpleGraph V`, Lean formalizes the alternating Maker–Breaker shutout game (distinguishing immediate $`s`$-shutout $`\tau(s)`$ from a free $`s`$-star after Breaker's reply $`\sigma(s)`$), Shearer's independence-polynomial risk region $`\mathcal{R}(G)`$, the local linear clique test, and Breaker's endpoint-marking strategy, proving $`\sigma(s) \ge \tau(s) > 2^{s-3}`$ for all $`s \ge 3`$ and $`\sigma(s) \ge 2^s / 8`$ for all $`s \ge 1`$. The four-module closure passed strict compilation, the complete 288-declaration owned axiom audit, and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
 
 ## Sagan–Wilson’s plactic coefficient-mode conjecture
 
