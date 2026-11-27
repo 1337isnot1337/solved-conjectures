@@ -139,6 +139,11 @@ counts inside the phase band. Its finite certificate verifies a tail
 that becomes empty while preserving the core rule and the full
 uniqueness of every selected term through the extinction.
 
+[The cutoff-400 component](phase-nested-model.md) retains its exact
+density under sparse narrow overrides. With the genuine prefix through
+400, both parity assignments of its phase coding omit infinitely many
+exterior targets that have a unique full representation in the model.
+
 ## Source audit
 
 - [Erdős Problem 342](https://www.erdosproblems.com/342) includes a zero-density

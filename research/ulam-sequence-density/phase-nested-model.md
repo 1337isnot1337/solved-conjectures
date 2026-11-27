@@ -111,6 +111,65 @@ preserve a set of 187 nonzero memories and emit at least 4,711 or
 counts by the corresponding reduced-phase interval lengths. The
 resulting lower rate is at least 0.079 throughout the bracket.
 
+If the set of overrides has zero natural density, the edited model has
+the original positive natural density. The verifier applies the clean
+28-symbol word to all 187 memories and checks that its image is the
+original six-memory set. A clean stretch begins at most one first
+return before a memory in the 187-element set is reached. The rotation
+returns to the second interval with bounded waiting time, so a clean
+stretch enters the six-memory component after a bounded number of
+sites, uniformly in its starting phase and memory. On that component
+the rotation averages used above converge uniformly in the starting
+point. In particular, for every $\varepsilon>0$ there is a fixed
+$C_\varepsilon$ such that the discrepancy from the original rate on
+any clean stretch of length $L$ is at most $`\varepsilon L+C_\varepsilon`$.
+Among the first $N$ sites there are at most one more clean stretch
+than override sites. Summing and letting $\varepsilon$ tend to zero
+proves the density assertion.
+
+## Exterior singletons under full counting
+
+The positive component can be written as a phase support on each of
+the two parities. Label the six memories $j=0,\ldots,5$ in order around
+the cycle. On the lower second return $j$ increases by one and the
+integer time increases by an odd number. On the upper second return
+neither parity changes. Thus at the base of each second return the
+label parity agrees with the integer time parity up to a fixed bit.
+The color of the memory determines $j\bmod 3$ because the lower return
+advances the color by two. The color at the entry to the second
+interval is the memory color minus 28 modulo three. Consequently
+there is one memory for each entry color and parity. The other choice
+of the fixed bit exchanges the two parity supports.
+
+For each of the two return domains, translate its phase interval by
+the time offset of each emitted one from each memory. Sort these
+output intervals by parity, giving supports $J_0,J_1$ on the circle.
+These translated intervals cover the selected sites in each return
+block. The return blocks partition the tail, and the affine cut
+inequalities used above certify the same partition throughout the
+slope bracket.
+
+Consider the candidate that uses the genuine prefix through 400 and
+uses these supports at every later site. For either parity assignment,
+an odd target can use two summands above 400 only if its phase lies
+in the sum $`J_0+J_1`$ modulo one. The exact verifier finds open
+windows outside the central third where this sum is absent and there
+is exactly one representation using a genuine summand at most 400.
+The centers for the first assignment are 856,369,674 and 1,712,763,216
+in units of $`1/(3\cdot856371966)`$, with genuine small summands 273
+and 69 respectively. The exchanged assignment has a window centered
+at 1,712,772,597 with genuine small summand 69 in the same units.
+
+The test checks each translated interval separately, using strict
+integer margins for inclusion and exclusion. Its margins also bound
+the motion of the translated cut endpoints when $\theta$ varies
+within the bracket. Odd target phases visit each window infinitely
+often by irrationality. Each phase candidate therefore omits
+infinitely many targets uniquely represented within that candidate.
+Finite initial exceptions beyond 400 can change these representation
+counts.
+
 ```sh
-python3 -B research/ulam-sequence-density/phase_nested_model.py
+c++ -std=c++20 -O3 research/ulam-sequence-density/phase_full_rule.cpp -o /tmp/ulam-phase-full-rule
+python3 -B research/ulam-sequence-density/phase_nested_model.py /tmp/ulam-phase-full-rule
 ```

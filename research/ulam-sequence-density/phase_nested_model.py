@@ -2,6 +2,8 @@
 
 from collections import Counter, deque
 from fractions import Fraction
+from subprocess import run
+from sys import argv
 
 from phase_return_model import (
     ANCHOR, LENGTH, P, Q, check_cuts, check_rotation_returns, cut, gate_at,
@@ -16,6 +18,7 @@ MEMORY = (1 << CUTOFF) - 1
 FIRST_TIMES = (60_002, 373_657)
 SECOND_LENGTH = 28
 SECOND_TIMES = (14, 33)
+SECOND_CUTS = ((524327, -2301944), (2832856, -12437040), (1855645, -8146807))
 
 
 def gate_runs(phase, first, last):
@@ -76,7 +79,7 @@ def first_level(low, middle, high):
         edges[color, memory] = outgoing
     assert len(edges) == 70
     print("First return maps preserve a set of 70 positive memories.")
-    return edges
+    return edges, codes
 
 
 def stable(endpoint):
@@ -102,9 +105,7 @@ def inner_word(period, step, initial, first, last):
 
 
 def second_level(edges, period, step):
-    low = (524327, -2301944)
-    middle = (2832856, -12437040)
-    high = (1855645, -8146807)
+    low, middle, high = SECOND_CUTS
     assert stable(low) and stable(subtract(period, high))
     check_inner_cuts(period, step, 0, SECOND_LENGTH + 1, low, high)
     positive, _ = check_rotation_returns(low, middle, high, period, step, SECOND_TIMES, stable)
@@ -113,7 +114,8 @@ def second_level(edges, period, step):
 
     image = set(edges)
     anchor = Fraction(number(low) + number(high), 2)
-    for letter in inner_word(period, step, anchor, 0, SECOND_LENGTH):
+    initial_word = inner_word(period, step, anchor, 0, SECOND_LENGTH)
+    for letter in initial_word:
         image = {edges[state][letter][0] for state in image}
     assert len(image) == 6
     print("A word of 28 induced symbols leaves six positive memories.")
@@ -137,13 +139,13 @@ def second_level(edges, period, step):
         print(f"Second return {steps}: output counts {sorted(counts)}.")
         output.append((permutation, sorted(counts), sum(FIRST_TIMES[i] for i in word)))
 
-    start = next(iter(image))
-    cycle = {start}
+    start = min(image)
+    cycle = [start]
     state = output[0][0][start]
     while state not in cycle:
-        cycle.add(state)
+        cycle.append(state)
         state = output[0][0][state]
-    assert cycle == image and state == start
+    assert set(cycle) == image and state == start
     assert all(state == output[1][0][state] for state in image)
     assert output[0][1] == [344145, 344163, 344201, 344210, 344236, 344585]
     assert output[1][1] == [813251] * 6
@@ -153,6 +155,23 @@ def second_level(edges, period, step):
     formula = tuple(sum(lengths[j][i] * counts[j] for j in range(2)) for i in range(2))
     assert formula == (52052894, -228526942)
     print("Positive density is (52052894 - 228526942*alpha)/6.")
+    return cycle, tuple(row[2] for row in output), initial_word
+
+
+def check_full_rule(profile_binary, first_low, cycle, steps, word):
+    assert steps == (4_290_233, 10_135_096)
+    assert [color for color, _ in cycle] == [(cycle[0][0] + 2 * i) % 3 for i in range(6)]
+    offset = LENGTH + sum(FIRST_TIMES[i] for i in word)
+    assert offset == 8_980_466
+    cuts = [number(first_low) + number(cut) for cut in SECOND_CUTS]
+    # M units are one full turn. The translated endpoints have slope
+    # coefficients bounded by the sum below, also after a probe shift.
+    bound = offset + max(steps) + abs(first_low[1]) + max(abs(cut[1]) for cut in SECOND_CUTS)
+    assert (bound + CUTOFF) * (3 * Q) < 16 * 10**16
+    data = [f"{offset} {cuts[0]} {cuts[1]} {cuts[2]}"]
+    for i, (color, memory) in enumerate(cycle):
+        data.append(f"{(color - SECOND_LENGTH) % 3} {i} {memory:0400b}")
+    run([profile_binary], input="\n".join(data) + "\n", text=True, check=True)
 
 
 def override_sites(low, high, color, steps):
@@ -216,6 +235,15 @@ def check_overrides(edges, low, middle, high):
     lower_rate = tuple(sum(m * length[i] for m, length in zip(minima, lengths)) for i in range(2))
     assert stable(subtract(scale(1000, lower_rate), (79, 0)))
     print("Narrow overrides preserve 187 positive memories, with lower density at least 0.079.")
+    return seen
+
+
+def check_clean_recovery(states, codes, cycle, word):
+    for letter in word:
+        states = {((color + 1) % 3, apply_runs(memory, *codes[letter][color])[0])
+                  for color, memory in states}
+    assert states == set(cycle)
+    print("The clean second-level word returns all 187 memories to the six-memory component.")
 
 
 def main():
@@ -224,9 +252,14 @@ def main():
     step, negative = check_rotation_returns(low, middle, high, (1, 0), (0, 1), FIRST_TIMES, nonnegative)
     assert all((steps - displacement[0]) % 3 == 1
                for steps, displacement in zip(FIRST_TIMES, (step, negative)))
-    edges = first_level(low, middle, high)
-    second_level(edges, subtract(high, low), step)
-    check_overrides(edges, low, middle, high)
+    edges, codes = first_level(low, middle, high)
+    cycle, steps, word = second_level(edges, subtract(high, low), step)
+    edited_states = check_overrides(edges, low, middle, high)
+    check_clean_recovery(edited_states, codes, cycle, word)
+    if len(argv) == 2:
+        check_full_rule(argv[1], low, cycle, steps, word)
+    else:
+        assert len(argv) == 1
 
 
 if __name__ == "__main__":
