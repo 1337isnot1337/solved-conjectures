@@ -29,4 +29,3 @@ For the constant sequence of width-one types, there are ladder systems that gues
 In the restricted proper forcing axiom model, and after any countable forcing over that model, the two bounds therefore characterize existence of both ordinary and strong guessing for a type sequence. The positive implication holds in ZFC by this proof. If either parameter is unbounded, the ordinary-guessing obstruction rules out even a single witness pair for a suitable coloring of each proposed ladder system. [Ground-model obstruction](PROOF.md) · [Preservation theorem](../../work/1061-lambie-hanson-uhrik-disjoint-type-guessing/COUNTABLE-FORCING.md)
 
 This supplement gives unbounded predecessor indices as in Definition 2.6. The extra conclusion about the next ladder coordinate in the bounded-width Theorem 2.7 is a separate property. Question 6.2 about graphs after one Cohen real remains open.
-
