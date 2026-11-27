@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Deciding generic reconstruction at fixed degree excess
+
+The unranked Stanley partial result now gives a finite decision procedure for reconstruction from the distance histogram alone across all reduced trees of each prescribed positive degree excess. A pruning argument bounds the order of a smallest possible obstruction. The signed histogram also determines and is determined by the continuous arclength distance distribution. The decision has not been evaluated for every positive excess. [Proof](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REDUCTION.md) · [Internal independent review](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
+
 ## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
 
 Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
