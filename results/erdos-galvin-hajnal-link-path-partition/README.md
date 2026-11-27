@@ -11,3 +11,5 @@ The written proof passed an independent mathematical review within the repositor
 - [Independent review](REVIEW.md)
 - [Finite-shadow transfer and its sharp load estimate](SHADOW-TRANSFER.md)
 - [Finite encoding checks](verify_encoding.py)
+
+The [companion density theorem](density/) gives the six-point rainbow criterion and both possible asymptotic constants at the first uncountable ordinal. Its [higher-cardinal extension](density/REGULAR-HOSTS.md) gives the corresponding conditional limits at successors of infinite regular cardinals.

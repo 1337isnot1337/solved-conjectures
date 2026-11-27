@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Six-point triple density and the two asymptotic constants
+
+Cinna Davis characterizes attainment of the Erdős–Galvin–Hajnal finite density bound on the first uncountable ordinal by a two-bounded pair-rainbow relation. The normalized pointwise density tends to one quarter or one half and both outcomes are relatively consistent. The reviewed higher-host transfer gives conditional limits at successors of infinite regular cardinals, including the higher parameter in the original paper. This supplements the link-path entry. [Proofs](results/erdos-galvin-hajnal-link-path-partition/density/) · [Source and review](results/erdos-galvin-hajnal-link-path-partition/density/DENSITY-REVIEW.md) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/1044)
+
 ## 2026-11-27 — Erdős–Galvin–Hajnal’s link-path partition problem
 
 Cinna Davis answers the 1975 Problem 8/E by encoding a triple system that avoids the three-edge tight path using a bounded coloring of pairs. Together with Todorčević’s model and the original authors’ CH example, the encoding gives relative independence over ZFC. [Proof](results/erdos-galvin-hajnal-link-path-partition/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-link-path-partition/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1045)
