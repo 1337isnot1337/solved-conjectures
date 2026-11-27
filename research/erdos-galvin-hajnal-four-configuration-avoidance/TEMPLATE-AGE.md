@@ -20,3 +20,12 @@ In a free union over a root that is below all petals, no old vertex gains any ne
 In the strengthened generic order, fix $\gamma<\beta<\omega_1$ and take a condition in the generic filter containing both ordinals. No later extension of it can add any smaller neighbor of $\beta$ at or below $\gamma$. Hence the generic shadow is a Hajnal–Máté graph. It is uncountably chromatic because every countable vertex coloring has a monochromatic hyperedge. Moreover the embedding of each monochromatic finite valid template now preserves the induced **shadow graph as well as the hypergraph**. All missing pairs on the marks are permanently decided by the stronger extension order.
 
 The shadow is $K_4$-free and each neighborhood is a disjoint union of stars, as in the working reformulation. This is not a regressive Hajnal–Máté graph: by [the separate earlier-clique result](https://github.com/1337isnot1337/solved-conjectures/issues/1080), its $K_4$-freeness implies a proper regressive coloring. The stronger order does not assert that the witness exists without forcing.
+
+
+## Effective finite criterion and book cycles
+
+The order test on $F^+$ is equivalent to acyclicity of a finite digraph. For every pair $\{a,b\}$ shared by at least two triples of $F^+$ and each triple $abx$, give the digraph arrows $a\to x$ and $b\to x$. If an order exists, each arrow increases. Conversely a topological sort of an acyclic digraph puts both members of every repeated pair below its third vertex, exactly the required condition. Thus the weak finite age is decidable from the shadow and the arrows, without searching over orders.
+
+This criterion is stronger than mere avoidance of the four configurations. As an example, for each $m\ge4$ use distinct $a_i,b_i,c_i$ for $i\in\mathbb Z/m\mathbb Z$ and take the edges
+$$\{a_i,b_i,a_{i+1}\},\qquad\{a_i,b_i,c_i\}.$$
+The only repeated pairs are $a_i b_i$, and each triple contains just one. Its shadow triangles are exactly the displayed edges: the $a$-vertices induce an $m$-cycle, each $c_i$ only sees $a_i,b_i$, and the two adjacent neighbors of $b_i$ on the $a$-cycle are $a_i,a_{i+1}$. These two facts exclude all four configurations by the same shadow argument as in the main proof, which needs only that each triple have at most one repeated pair. But the order criterion gives $a_i\to a_{i+1}$ for every $i$, a directed cycle. None of these systems occurs in the generic example.
