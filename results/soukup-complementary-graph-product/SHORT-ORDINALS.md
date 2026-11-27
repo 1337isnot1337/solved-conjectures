@@ -6,6 +6,8 @@ Let $`X`$ have cardinality $`\aleph_1`$. A countable list of well-orders gives e
 
 SOCA in the proof says that an open symmetric relation on distinct pairs of a separable metric space of size $`\aleph_1`$ has an uncountable homogeneous subset. We use this only on subspaces of the Baire space. Such subspaces embed topologically in the real line. The bounded proper forcing axiom implies this size-restricted principle through the size-restricted open coloring axiom. [Abraham, Rubin and Shelah, §1, p. 132](https://shelah.logic.at/files/95641/153.pdf#page=10) · [Asperó and Bagaria, §3.1](https://doi.org/10.1016/S0168-0072(00)00058-0)
 
+The [induced matching theorem](DIRECTED-OPEN.md) proves the chromatic product conclusion in ZFC. The equivalence with SOCA concerns the stronger classification of arbitrary graph presentations on uncountable subsets.
+
 ## Countably many blocks and two open relations
 
 Start with any uncountable vertex subset, enumerate it anew in type $`\omega_1`$ and use this enumeration as the background order. Restrictions of the given well-orders still satisfy the bound. For each coordinate split its order into consecutive blocks of type $`\omega_1`$ followed by a possible smaller block. Division by $`\omega_1`$ on the left gives a countable ordinal quotient, so the entire coordinate has only countably many blocks. Each block has an injective rank map from its vertices into $`\omega_1`$.

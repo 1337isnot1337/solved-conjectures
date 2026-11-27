@@ -2,6 +2,8 @@
 
 ## 27 November 2026 — Sharp ordinal thresholds for graph representations
 
+A new ZFC theorem forces an induced countably infinite matching in one color for every countable edge coloring of either factor of a putative witness on any uncountable subset. It rules out all open representations by countably many well-orders shorter than the square of the first uncountable ordinal. [Induced matching and chromatic equality](results/soukup-complementary-graph-product/DIRECTED-OPEN.md)
+
 For countably many well-orders with an open edge predicate, the semi-open coloring axiom is equivalent to a classification of the uncountable restrictions below the ordinal square of the first uncountable ordinal. At the square every graph on that cardinal is representable. The lower bound uses a grid theorem for Aronszajn lines, which also determines the sharp finite-arity comparison palettes under BPFA. Soukup’s unrestricted graph problem remains open. [Thresholds](results/soukup-complementary-graph-product/SHORT-ORDINALS.md) · [Axiom equivalence](results/soukup-complementary-graph-product/SOCA-CONVERSE.md) · [Reviews and checks](results/soukup-complementary-graph-product/ORDINAL-REVIEW.md)
 
 ## 27 November 2026 — Boolean order representations of complementary graph products
