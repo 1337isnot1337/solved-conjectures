@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Finite distance-histogram comparisons with bounded extra leaves
+
+A new uniform reduction controls generic histogram reconstruction with a fixed extra-leaf allowance alone. Any failure occurs on a tree with quadratically many leaves in the allowance, irrespective of the maximum degree or number of high-degree vertices. For one high hub of arbitrary degree, a rival cannot have exactly one extra leaf and must have a surplus growing with that degree. The proof and exact profile checks supplement the unranked Stanley research entry. [Theorem and quantitative bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
+
 ## 2026-11-27 — Six-point triple density and the two asymptotic constants
 
 Cinna Davis characterizes attainment of the Erdős–Galvin–Hajnal finite density bound on the first uncountable ordinal by a two-bounded pair-rainbow relation. The normalized pointwise density tends to one quarter or one half and both outcomes are relatively consistent. The reviewed higher-host transfer gives conditional limits at successors of infinite regular cardinals, including the higher parameter in the original paper. This supplements the link-path entry. [Proofs](results/erdos-galvin-hajnal-link-path-partition/density/) · [Source and review](results/erdos-galvin-hajnal-link-path-partition/density/DENSITY-REVIEW.md) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/1044)
