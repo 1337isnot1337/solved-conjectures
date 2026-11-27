@@ -9,13 +9,12 @@ and Macdonald polynomial differences*, [arXiv:2509.19649v2](https://arxiv.org/ht
 
 Conjecture 4 asks that a normalized Jack difference at parameter τ belong
 to the Jack semiring at σ when 0≤σ<τ≤∞ and the partitions are in dominance
-order. This remains unresolved by this checkpoint.
+order. A [two-column theorem and its rectangular shifts](TWO-COLUMNS.md) establish the stronger cone inclusion in arbitrary rank for that family. The full conjecture remains open.
 
 Conjecture 5 asks for a full equivalence of dominance, several evaluation
 positivity conditions, and membership of normalized Macdonald differences
 in the Muirhead semiring. A complete exact counterexample to its semiring
-clause was found in this work and is being separately reviewed and
-packaged. Its status is tracked in issue #201; the discovery scripts here
+clause was found in this work and was [published with its independent review](../../results/chen-khare-sahi-macdonald/README.md). The discovery scripts here
 are not the final proof certificate.
 
 [Sra's October 2026 paper](https://suvrit.github.io/papers/jackratio/jackratio-v1.pdf)
