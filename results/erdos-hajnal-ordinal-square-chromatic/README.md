@@ -4,6 +4,8 @@
 
 The new order-type transfer preserves chromatic number at any regular uncountable cardinal. It connects the exact 1969 question with the cardinal-local forcing results of Baumgartner and Foreman–Laver. The separate $`\aleph_1`$ follow-up has conditional positive answers and is not settled here in ZFC.
 
+A later theorem characterizes every possible vertex order for the two chromatic numbers at successive cardinals, conditional on the corresponding graph of that cardinality existing. The smaller-chromatic-number existence question remains open. The review distinguishes the classical ordinal decomposition from the new mixed-order construction. [Classification](MIXED-ORDER-SPECTRUM.md) · [Independent review](MIXED-ORDER-REVIEW.md)
+
 **Lean status:** none.
 
 [Proof](PROOF.md) · [Source audit](AUDIT.md) · [Review and extension](REVIEW.md) · [Erdős’s original problem](https://www.renyi.hu/~p_erdos/1969-13.pdf#page=3) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/971)
