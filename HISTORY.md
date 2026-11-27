@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Reconcile eleven published packages with the research catalogue
+
+The working catalogue now indexes ten reviewed results already published on main and Tomdif’s seven circular-index certificates as a partial result. The entries use the Lean proofs available on research, including Adam Benazouz’s verification of Wang–Yang’s six matrices. The blocking-pencil proof has its full Lean package on main. Kovalev’s entry now records its checked partial formalization. [Reconciliation record](https://github.com/1337isnot1337/solved-conjectures/issues/951) · [Verification](docs/lean-status.md)
+
 ## 2026-11-27 — Classify Chow’s strict interlacing as an unranked strengthening
 
 Chow’s weak question follows from Savage and Visontai’s published refinement. The research catalogue retains Cinna Davis and GPT-6.2 Astra’s strict unweighted result and its full Lean verification. The positive-parameter weighted note remains a separate written extension. [Review and sources](results/chow-conjecture/NOVELTY.md) · [Weighted research note](https://github.com/1337isnot1337/solved-conjectures/blob/46a5bf1913dc3f2b44fbb1f78583f3eb0e157b30/research/chow-type-d-weighted/weighted-extension.md)

@@ -8,7 +8,7 @@ Per Alexandersson conjectured that the Ehrhart $h^*$-polynomial of a classical t
 
 **Review status.** The independent reviewer checked the margin count, the exact failure of the Laguerre inequality, the Sturm count and the proof for all sufficiently large $m$. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/814#issuecomment-7192093350)
 
-**Lean status:** none.
+**Lean status:** full. Lean verifies the full-support transportation polytope at $m=12$ and the lower bound on nonreal roots of the Ehrhart numerators for all sufficiently large $m$, with roots counted with multiplicity. [Lean theorems](https://github.com/1337isnot1337/solved-conjectures/blob/a9ebdd9e2113d06b3f742e52eaf30cca80eb6d76/lean/Conjectures/TransportationGrowthTheorems.lean) · [Kernel receipt](https://github.com/1337isnot1337/solved-conjectures/blob/a9ebdd9e2113d06b3f742e52eaf30cca80eb6d76/docs/verification/lean-transportation-growth-20261126/receipt.json)
 
 ## Citation
 

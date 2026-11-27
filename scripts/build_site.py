@@ -11,6 +11,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 import html
+import functools
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -43,6 +44,7 @@ EXTERNAL_CREDIT = {
 UNRANKED_SUPPLEMENTS = {"chow-conjecture"}
 SCOPE_LABELS = {"partial": "Partial result on an open problem", "supplement": "Unranked supplement"}
 PARTIAL_CATEGORIES = {
+    "circular-index-upper-half-remaining-deltas": "Graph theory and discrete geometry",
     "wild-number-complete-graphs": "Graph theory and discrete geometry",
     "circular-index-upper-half-delta-2-mod-4": "Graph theory and discrete geometry",
     "circular-index-upper-half-delta-3-mod-4": "Graph theory and discrete geometry",
@@ -61,6 +63,17 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Erdős’s pinned-distance conjecture in general position": "erdos-general-position-pinned-distances",
+    "The Steiner triple system sail problem": "steiner-triple-system-sail",
+    "Erdős–Gyárfás point-degree spectrum conjecture": "erdos-gyarfas-point-degree-spectrum",
+    "En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem": "constant-weight-strong-wom",
+    "Asgarli–Ghioca–Yip blocking-pencil problem": "asgarli-ghioca-yip-blocking-pencil",
+    "Gyárfás’s planar degree-repetition problem": "gyarfas-planar-degree-repetition",
+    "Wang–Yang's Fuss–Narayana conjecture": "wang-yang-fuss-narayana",
+    "Zeng’s unscaled interlacing question": "zeng-unscaled-interlacing",
+    "Alexandersson’s transportation polytope conjecture": "alexandersson-transportation",
+    "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
+    "Seven upper-half circular chromatic index certificates": "circular-index-upper-half-remaining-deltas",
     "Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture": "stern-half-plane",
     "Hartke–Stolee–West–Yancey matching-excess conjecture": "hartke-stolee-west-yancey-matching-excess",
     "Gravgaard–Lee’s mixed upper/lower Lüroth conjecture": "gravgaard-lee-upper-lower-luroth",
@@ -217,6 +230,31 @@ def slugify(value: str) -> str:
 def git(*args: str) -> str:
     result = subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True)
     return result.stdout.strip() if result.returncode == 0 else ""
+
+
+@functools.cache
+def pandoc_renders_tag() -> bool:
+    """Whether this Pandoc's MathML writer accepts ``\\tag``.
+
+    Pandoc 3.1 (the version Ubuntu 24.04 packages, which CI and the Pages
+    host use) renders ``\\tag{n}`` as an equation label. Later 3.x releases
+    reject it ("unexpected control sequence \\tag"), which stops the build.
+    """
+    result = subprocess.run(
+        ["pandoc", "--from", "markdown", "--to", "html5", "--mathml"],
+        input="$$a=b \\tag{1}$$", capture_output=True, text=True,
+    )
+    return result.returncode == 0 and "Could not convert TeX math" not in result.stderr
+
+
+TAG = re.compile(r"\\tag\*?\{([^{}]*)\}")
+
+
+def portable_tags(formula: str) -> str:
+    """Write ``\\tag{n}`` as a trailing ``(n)`` where Pandoc cannot label it."""
+    if "\\tag" not in formula or pandoc_renders_tag():
+        return formula
+    return TAG.sub(lambda match: "\\qquad(\\text{" + match.group(1) + "})", formula)
 
 
 def pandoc(arguments, *, text=None) -> str:
@@ -538,6 +576,7 @@ class Builder:
                 # Pandoc's math reader accepts modern \mathrm, while the
                 # source notes also use TeX's equivalent scoped \rm form.
                 node["c"][1] = re.sub(r"\{\\rm\s+([^{}]+)\}", lambda match: "{\\mathrm{" + match.group(1) + "}}", node["c"][1])
+                node["c"][1] = portable_tags(node["c"][1])
         rendered = pandoc(["--from", "json", "--to", "html5", "--mathml", "--wrap=none"], text=json.dumps(ast))
         return rendered, toc
 

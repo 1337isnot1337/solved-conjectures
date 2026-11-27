@@ -1,5 +1,15 @@
 # Verification
 
+## Replaying the catalogue’s finite checks
+
+Run each linked Python file from the repository root. These checkers use the standard library. The [Lean status table](lean-status.md) gives the exact scope and verification receipt for each formalized result.
+
+| Subject | Checks |
+| --- | --- |
+| Planar geometry and finite incidence | [Pinned distances](../results/erdos-general-position-pinned-distances/verify.py) · [Point-degree spectrum](../results/erdos-gyarfas-point-degree-spectrum/verify.py) · [Planar degree repetition](../results/gyarfas-planar-degree-repetition/verify.py) · [Blocking pencils](../results/asgarli-ghioca-yip-blocking-pencil/verify.py) |
+| Designs, graphs and codes | [Steiner triple system sails](../results/steiner-triple-system-sail/verify.py) · [Tomdif’s seven circular-index certificates](../results/circular-index-upper-half-remaining-deltas/verify.py) · [Constant-weight write-once codes](../results/constant-weight-strong-wom/verify.py) |
+| Polynomial roots and positivity | [Fuss–Narayana matrices](../results/wang-yang-fuss-narayana/check.py) · [Unscaled Narayana rows](../results/zeng-unscaled-interlacing/check.py) · [Transportation polytopes](../results/alexandersson-transportation/check.py) · [Graphical dist](../results/alexandersson-graphical-dist/check.py) |
+
 ## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
 The [four-module partial](../results/stern-half-plane/FORMALIZATION.md) verifies the actual Stern recurrence and polynomial evaluation, the Schinzel identity, all-odd-index run coverage, and nonvanishing for every positive index under an explicit common-parabola hypothesis. All strict source builds, the owned/private audit of 134 declarations (105 theorems, 14 private declarations and eight required endpoints), and exact stock replay passed. The [independent review](../results/stern-half-plane/LEAN_REVIEW.md) and [receipt](verification/lean-stern-half-plane-partial-20261124-162051/receipt.json) preserve the exact scope. The near-one estimates, compact certificate and separate exterior proof remain unformalized; count zero.

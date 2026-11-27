@@ -1,6 +1,6 @@
 # Erdős–Gyárfás point-degree spectrum conjecture
 
-**Lean status:** none.
+**Lean status:** full. Lean verifies the spectrum bound for nontrivial finite linear spaces, the disproof of the proposed square-root deficit, and the bound for real planar point sets. [Lean theorems](https://github.com/1337isnot1337/solved-conjectures/blob/afae054e2b609bac8578575ebc54195bdb5b38bb/lean/Conjectures/ErdosGyarfasSpectrumTheorems.lean) · [Kernel receipt](https://github.com/1337isnot1337/solved-conjectures/blob/afae054e2b609bac8578575ebc54195bdb5b38bb/docs/verification/lean-erdos-gyarfas-spectrum-20261126/receipt.json)
 
 Every abstract finite linear space on $n$ points has at most $(16n-13)/17$ different point degrees. This disproves Erdős and Gyárfás’s proposed $n-O(\sqrt n)$ lower bound. It also proves the positive linear deficit they asked about in the real plane. The proof compares low and high degrees line by line, using only the fact that each pair of points is on a unique line. [Original questions, §3](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf)
 

@@ -2,7 +2,9 @@
 
 [Catalogue](../../CONTENTS.md) · [Certificates](certificates.json) · [Exact checks](verify.py) · Related: [Δ ≡ 2 mod 4](../circular-index-upper-half-delta-2-mod-4/README.md), [Δ ≡ 3 mod 4](../circular-index-upper-half-delta-3-mod-4/README.md), [circulants](../circular-index-upper-half-circulants/README.md)
 
-**Status:** computer-certified, unrefereed, no Lean formalization. Submitted to `research` for review; not yet promoted to `main`. Seven explicit graphs with exact certificates, checked by `verify.py` (standard library only).
+**Contribution.** [tomdif](https://github.com/tomdif) supplied the seven graphs, their colourings, the SAT encoding and the original write-up. An independent exact replay checked the seven certificates before publication. [Original submission](https://github.com/1337isnot1337/solved-conjectures/pull/647) · [Published review](https://github.com/1337isnot1337/solved-conjectures/blob/c24f76d158a309a7fc787c4c6b1494ee52de8cc6/results/circular-index-upper-half-remaining-deltas/REVIEW.md)
+
+**Lean status:** full. Lean verifies the seven certified bounds and combines them with the three earlier families to prove existence in the upper half for every maximum degree from eight. [Lean theorems](https://github.com/1337isnot1337/solved-conjectures/blob/03a0878939f6dfab66a8d4356e54c40a084f253e/lean/Conjectures/CircularIndexAllDegrees.lean) · [Kernel receipt](https://github.com/1337isnot1337/solved-conjectures/blob/03a0878939f6dfab66a8d4356e54c40a084f253e/docs/verification/lean-circular-bounded-20261126/all/receipt.json)
 
 ## Question
 
@@ -49,6 +51,6 @@ For each certificate it checks simplicity and maximum degree, checks the colouri
 
 ## Scope and limits
 
-- Only the seven listed degrees are new here; all other Δ ≥ 8 rest on the repository's earlier notes and their own verification status.
-- Novelty rests on the repository's statement that these degrees were open (README of `circular-index-upper-half-delta-3-mod-4`, checked against the `main` and `research` branches on 2026-11-24). No independent literature search beyond that was made.
-- Problems 6 and 7 of Mazák–Zrubák (connectivity; denominators q ≥ 6) are not addressed.
+- The seven certificates complete the coverage of degrees supplied by the three earlier notes.
+- The original submission checked the seven missing degrees against the repository’s catalogue on 2026-11-24. The published review identifies the precise source target. [Review](https://github.com/1337isnot1337/solved-conjectures/blob/c24f76d158a309a7fc787c4c6b1494ee52de8cc6/results/circular-index-upper-half-remaining-deltas/REVIEW.md) · [Source remark after Problem 7](https://arxiv.org/html/2603.08822#S8)
+- The upper-half existence theorem answers the remark after Problem 7. It is a partial result toward the broader numbered questions. Problem 6 asks about connectivity and Problem 7 asks about every integer denominator $q>2$.
