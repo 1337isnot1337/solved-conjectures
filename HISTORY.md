@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — A four-grid obstruction for site-centered pinned distances
+
+Four oblique grids show that distributed sets can have quadratically many rich active-bisector incidences even when every circle has at most four sites and every site-centered circle has at most three. The construction limits a proposed incidence strategy for the open site-centered question. [Proof](results/erdos-general-position-pinned-distances/FOUR-GRIDS.md) · [Independent review](results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md)
+
 ## 2026-11-27 UTC — Erdős’s site-centered pinned-distance question
 
 The existing one-third entry adds a mixed-circle incidence bound, a sufficient condition in terms of active perpendicular bisectors, and the sharp pair-density moment for a uniform-disk model. These partial results concern the separate open site-centered hypothesis. [Theorems and review](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
