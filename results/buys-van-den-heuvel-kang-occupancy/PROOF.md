@@ -39,7 +39,7 @@ The function $`x\mapsto x\log(t(1-x)/x)`$ has second derivative $`-1/[x(1-x)^2]`
 
 ```math
 \frac{\mathop{\mathrm{Var}}_t(M)}{n}
-\ \ge\
+\ge
 \frac{a}{1+t+\dfrac{t}{\log(1+t)}
                       \log\!\left(\dfrac{t(1-a)}{a}\right)} .
 ```
