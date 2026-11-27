@@ -2,6 +2,8 @@
 
 ## Path counts and arbitrary reduced topologies
 
+For every fixed reduced tree with at least 28 leaves, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most two more leaves. An analytic bound and an exhaustive finite degree-and-rank certificate prove the unmarked threshold. [Proof](TWO-SURPLUS-TAIL.md) · [Exact certificate](verify_two_surplus_tail.py)
+
 A marked tree with rationally independent nonzero vertex heights is identified against every rival with exactly two extra leaves by its signed height and pair-distance measures. In the unmarked problem this excludes any full-dimensional two-extra-leaf comparison admitting a freely variable rival pendant. [Proof](MARKED-TWO-SURPLUS.md) · [Independent review and sources](MARKED-TWO-SURPLUS-REVIEW.md) · [Exact checks](verify_marked_two_surplus.py)
 
 A finite test controlled only by the maximum number of surplus rival leaves decides the generic histogram comparison across all topologies, with unrestricted degrees and arbitrarily many high-degree vertices. For a single high hub of arbitrary degree all single-extra-leaf competitors are excluded, and its degree forces a linear lower bound on every possible surplus. [Proof and bounds](LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](LEAF-SURPLUS-REVIEW.md) · [Exact checks](verify_leaf_surplus.py)
