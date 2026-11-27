@@ -41,6 +41,8 @@ Please read this section before building on the result.
 
 The [fixed-seed extension theorem](FROZEN_EXTENSION.md) gives the exact optimum for adding one runner to tomdif’s 57-runner certificate. It also bounds how far the old phases must move to make a strict 58-runner counterexample possible.
 
+The [weighted residual certificate](WEIGHTED_RESIDUAL.md) excludes coverage at radius 1/59 by the fixed 57-runner seed and any seven extra runners. A 58-runner cover at that radius can retain at most 50 of the original speed–phase pairs.
+
 ## Verification
 
 Run from the repository root with Python 3 and no other dependencies:
