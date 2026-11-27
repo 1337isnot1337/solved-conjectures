@@ -1,4 +1,10 @@
-# Recognizing trees after subdividing one edge
+# Recognizing trees after long subdivisions
+
+**Choose any branch vertex of any finite tree. Subdivide each incident edge independently. Once all these edges are sufficiently long, the ordinary chromatic symmetric function determines the resulting tree among all trees.** The distal rooted trees can have arbitrary shapes, and one arm can be longer than all the others combined. The proof recovers the unmarked branch vertex, the rooted ends, the arm orders and their matching.
+
+Let $`r\ge3`$ be the branch degree. Remove each arm’s initial chain of unary roots. If $`L`$ is the largest remaining order minus one, a sufficient minimum arm order is $`\max(3,L+1,2rL)`$. [Simultaneous subdivision theorem](HUB-SUBDIVISIONS.md) · [Independent review](HUB-SUBDIVISIONS-REVIEW.md)
+
+## Single-edge subdivisions and other recognition theorems
 
 **Every edge of every finite tree can be subdivided sufficiently many times that the resulting tree is determined among all trees by its ordinary chromatic symmetric function.** Suppose deleting the original edge leaves components of orders $`g`$ and $`h`$, with $`g\ge h`$. Replace the edge by a path. A sufficient total order for the resulting tree is
 
@@ -22,12 +28,16 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_hub_fringe_recognition.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_hub_assignment.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_hub.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_long_subdivision.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
 ```
+
+The [structural checker](verify_hub_fringe_recognition.py) compares 2,288 unlabelled trees through order 13 and reconstructs 27,027 folded arm-size profiles. The [assignment checker](verify_hub_assignment.py) tests ten size configurations with mixed rooted ends, including ties, a central edge with equally sized sides and a longest arm exceeding the sum of the others.
 
 The [balanced-edge checker](verify_balanced_paths.py) compares 1,457 rooted pairs, including 393 certified inputs representing 280 unrooted trees, and exercises the improved endpoint for both parities. The [leaf-centroid checker](verify_leaf_hub.py) inventories 434 trees through order eleven and selected larger controls, exercises 27 final-layer restorations and rejects 15 off-centroid controls.
 
