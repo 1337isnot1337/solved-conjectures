@@ -1,8 +1,8 @@
-# Chow's conjecture
+# Strict consecutive interlacing of type-D Eulerian polynomials
 
 For every $n\ge2$, the ordinary type-D Eulerian polynomial $D_n(x)$ interlaces $D_{n+1}(x)$. The interlacing is strict for $n\ge3$. The pair $D_2,D_3$ has a common zero at $-1$.
 
-These polynomials count even-signed permutations by their type-D descent statistic. The assertion is the question in Section 5 of Chak-On Chow's *New proofs of interlacing of zeros of Eulerian polynomials* (2022).
+These polynomials count even-signed permutations by their type-D descent statistic. Chow’s 2022 question asks for weak interlacing, a direct consequence of Savage and Visontai’s published refinement theorem and the elementary rank-two case. Cinna Davis and GPT-6.2 Astra recorded that deduction and supplied the separate proof of strictness from rank three. This entry preserves their unranked strengthening. [Chow, §§2 and 5](https://doi.org/10.1016/j.jmaa.2022.126019) · [Savage–Visontai, §§2.4 and 3.4](https://arxiv.org/html/1208.3831v3)
 
 - [Complete proof](PROOF.md).
 - [Literature and priority audit](NOVELTY.md).
@@ -13,7 +13,7 @@ These polynomials count even-signed permutations by their type-D descent statist
 
 Savage and Visontai proved an ordered pairwise interlacing theorem for a refinement $T_{n,i}$. The first entry of row $n+1$ equals the total of row $n$, and the total is $2D_n$. A first member of an interlacing family interlaces its positive sum. This gives the full consecutive-interlacing assertion. The refinement recurrence also excludes common zeros of an entire row; a sign argument then gives strictness.
 
-The proof is a short deduction from established results. The refinement and its compatibility theorem belong to Savage–Visontai, and Yang–Zhang later stated the relevant identities explicitly. The literature audit found no prior explicit resolution of the consecutive assertion, but does not claim the deduction was unknown to every specialist.
+Yang and Zhang later stated the refined interlacing and first-entry identity explicitly. The strict proof uses the absence of a common zero of an entire row. The sources checked in the priority audit contain no earlier explicit all-rank strict conclusion.
 
 ## Verification
 
@@ -50,8 +50,10 @@ Proof note: Cinna Davis and GPT-6.2 Astra. The central published input is due to
 - [Savage–Visontai (2015)](https://arxiv.org/abs/1208.3831v3), Lemmas 2.5, 3.9 and 3.14, Corollary 2.6, and the proof of Theorem 3.15.
 - [Yang–Zhang (2021/2022)](https://doi.org/10.1007/s10801-021-01101-2), Theorem 2.5 and equation (11).
 
-## Further results, not separate conjecture resolutions
+## Alternative proof and weighted extension
 
-Issue #77 already covers the complete consecutive type-D interlacing statement. The independent analytic tail argument and dyadic finite checker are retained without changing the Lean coverage of the original theorem.
+The alternative unweighted proof joins analytic estimates to exact dyadic certificates through degree 128. Its independent audit and finite checker are available with the proof.
 
 [Alternative proof](ALTERNATIVE-PROOF.md) · [Exact checker](check_dyadic.py) · [Supplement audit](ALTERNATIVE-AUDIT.md)
+
+For the Yang–Zhang weight counting negative entries in positions two through the last, a separate research note proves strict consecutive interlacing at every positive parameter except the initial pair at parameter one. This weighted extension is unranked and has a written proof only. [Weighted extension and its sources](https://github.com/1337isnot1337/solved-conjectures/blob/46a5bf1913dc3f2b44fbb1f78583f3eb0e157b30/research/chow-type-d-weighted/weighted-extension.md)

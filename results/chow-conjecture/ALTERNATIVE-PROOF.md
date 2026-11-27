@@ -1,6 +1,6 @@
 # Type-D Eulerian interlacing: alternative proof
 
-Issue #77 already covers the complete consecutive type-D interlacing statement. The independent analytic tail argument and dyadic finite checker are retained without changing the Lean coverage of the original theorem. See the [earlier proof](PROOF.md) for the underlying conjecture resolution.
+This is an alternative written proof of the unweighted strict strengthening in issue #77. It combines an independent analytic tail argument with a dyadic finite checker. The earlier refinement proof records the established weak consequence and supplies the argument formalized in Lean. [Refinement proof](PROOF.md) · [Audit](ALTERNATIVE-AUDIT.md)
 
 We prove that consecutive type-D Eulerian polynomials interlace. This answers the type-D question in [Chak-On Chow, *New proofs of interlacing of zeros of Eulerian polynomials*, §5](https://doi.org/10.1016/j.jmaa.2022.126019). The interlacing is weak at $D_2$ and $D_3$ because $D_2(x)=(1+x)^2$; it is strict at every transition $D_n,D_{n+1}$ with $n\ge3$. This is a cross-degree statement, not just the previously known real-rootedness of each individual polynomial.
 

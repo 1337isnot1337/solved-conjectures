@@ -61,6 +61,20 @@ class StatusChecks(unittest.TestCase):
         b.check_authoritative_statuses(results)
         self.assertEqual(results['frankl-generator-families'].scope, 'partial')
 
+    def test_full_supplement_needs_a_lean_receipt_but_has_no_rank(self):
+        name = 'Strict consecutive interlacing of type-D Eulerian polynomials'
+        b, results = self.builder(rows=f'| {name} | Complete | Unweighted strengthening. |')
+        del results['frankl-generator-families']
+        results['chow-conjecture'] = Result('chow-conjecture', name, 'Combinatorics', 'full', 'Strict interlacing', scope='supplement')
+        b.check_authoritative_statuses(results)
+        self.assertEqual(results['chow-conjecture'].checked_scope, 'Unweighted strengthening.')
+        without_receipt, _ = self.builder(rows='')
+        with self.assertRaisesRegex(ValueError, 'summary mismatch'):
+            without_receipt.check_authoritative_statuses(results)
+        results['chow-conjecture'].scope = 'result'
+        with self.assertRaisesRegex(ValueError, 'README result table'):
+            b.check_authoritative_statuses(results)
+
     def test_partial_formalization_requires_authoritative_receipt(self):
         b, results = self.builder(rows='')
         with self.assertRaisesRegex(ValueError, 'summary mismatch'):

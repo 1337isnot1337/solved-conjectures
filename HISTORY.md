@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Chow’s weak interlacing and its strict strengthening
+
+Removed Chow’s weak consecutive-interlacing question from the ranked discovery table. Savage and Visontai’s published row theorem and first-member summation argument already imply it, with a direct initial check. The unranked entry preserves Cinna Davis and GPT-6.2 Astra’s strict result from rank three, the alternative analytic proof, both finite checkers and the full unweighted Lean receipt. The positive-parameter weighted extension remains a written research note. [Proof and verification](results/chow-conjecture/) · [Sources and independent priority review](results/chow-conjecture/NOVELTY.md)
+
 ## 2026-11-27 — Liang’s 0.3123 slice problem
 
 Answered Liang’s Open Problem 6.2 with a residue rule for the bulk and an exact all-sizes reduction for the entire stated slice. [Proof](results/liang-03123-slice/PROOF.md) · [Audit](results/liang-03123-slice/AUDIT.md). The same publication adds a [four-heap supplement](results/plambeck-siegel-03312/FOUR-HEAPS.md) excluding every eventual positive shift for 0.3312.
