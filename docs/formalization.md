@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Chen–Khare–Sahi’s Jack semiring conjecture
+
+The rank-five counterexample now uses the defining source and target Jack scalar products, including every source-semiring product. [Complete statement](../lean/Conjectures/ChenKhareSahiJackSourceTheorem.lean) · [Proof, attribution and verification](../research/chen-khare-sahi/jack-disproof/SOURCE_BRIDGE.md).
+
 ## Sagan–Wilson’s plactic coefficient-mode conjecture
 
 Lean disproves Conjecture 7.3(d) from the insertion tableaux of actual centralizing words. For length ten the fifth and sixth binomial coefficients are 75,095 and 88,704. The asymptotic mode theorem remains in the written proof. [Real coefficient theorem](../lean/Conjectures/SaganWilsonPlacticModeReal.lean) · [Research receipt](verification/lean-sagan-wilson-plactic-mode-20261126/receipt.json).
