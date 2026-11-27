@@ -13,7 +13,7 @@ has chromatic number exactly one more than its path chromatic span.
 Use $m\ge2$ groups of vertices with sizes $d_1,\ldots,d_m\ge2$.
 Let $B$ be the clique consisting of these groups
 $B_1,\ldots,B_m$, and put $D=|B|=\sum_j d_j$.
-Make another clique $A=\{a_1,\ldots,a_m\}$. Join $a_j$ to every
+Make another clique $A$ on vertices $a_1,\ldots,a_m$. Join $a_j$ to every
 vertex of $B$ except those in $B_j$.
 
 A transversal $T$ chooses exactly one vertex from each $B_j$.
@@ -46,7 +46,7 @@ lie in a $2K_2$. This proves the claim.
 In any proper $D$-coloring of $A\cup B$, the clique $B$
 uses each color exactly once. The color of $a_j$ must equal
 the color of some $b_j\in B_j$. Thus the coloring selects
-the transversal $T=\{b_j:1\le j\le m\}$.
+a transversal $T$ with member $b_j$ in each group.
 Every color occurs among the neighbors of $x_T$: a color
 represented at a vertex of $T$ also appears on its corresponding
 $a_j$; all other colors appear in $B\setminus T$.
