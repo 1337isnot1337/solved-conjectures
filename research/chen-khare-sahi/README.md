@@ -1,6 +1,6 @@
 # Chen–Khare–Sahi's conjecture
 
-Research checkpoint, 2026-11-21. Coordination: [issue #201](https://github.com/1337isnot1337/solved-conjectures/issues/201).
+Research checkpoints, 21–26 November 2026. Coordination in [issue #201](https://github.com/1337isnot1337/solved-conjectures/issues/201).
 
 ## Exact source and separate statements
 
@@ -9,7 +9,7 @@ and Macdonald polynomial differences*, [arXiv:2509.19649v2](https://arxiv.org/ht
 
 Conjecture 4 asks that a normalized Jack difference at parameter τ belong
 to the Jack semiring at σ when 0≤σ<τ≤∞ and the partitions are in dominance
-order. A [two-column theorem and its rectangular shifts](TWO-COLUMNS.md) establish the stronger cone inclusion in arbitrary rank for that family. The full conjecture remains open.
+order. A [two-column theorem and its rectangular shifts](TWO-COLUMNS.md) establish the stronger cone inclusion in arbitrary rank for that family. A [width-three counterexample](jack-disproof/PROOF.md) disproves the full semiring conjecture in every rank at least five. The [independent review and exact checks](jack-disproof/REVIEW.md) distinguish the two results.
 
 Conjecture 5 asks for a full equivalence of dominance, several evaluation
 positivity conditions, and membership of normalized Macdonald differences
