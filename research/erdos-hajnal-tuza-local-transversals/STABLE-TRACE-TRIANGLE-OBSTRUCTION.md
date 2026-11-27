@@ -3,6 +3,11 @@
 Partial progress on [Erdős #616](https://github.com/1337isnot1337/solved-conjectures/issues/1019).
 This strengthens [the linear-triangle obstruction](FORBIDDEN-LINEAR-TRACE-TRIANGLES.md)
 from exact pair overlaps to a linear-sized range above them.
+For two exact overlaps at the same trace, the earlier
+[two-wing balance](TWO-WING-BALANCE.md) can give a stronger
+bound on the third overlap. Here all three overlaps may
+simultaneously exceed the exact value; the argument is a
+four-edge span proof with no spectral step.
 
 Suppose the local span condition holds, \(\tau>t\),
 \(m=t+s\) is the minimum pair intersection, and
