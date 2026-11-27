@@ -4,6 +4,10 @@
 
 Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md), building on Cinna Davis’s secant and incidence arguments. A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
 
+## 2026-11-27 UTC — A four-grid obstruction for site-centered pinned distances
+
+Four oblique grids show that distributed sets can have quadratically many rich active-bisector incidences even when every circle has at most four sites and every site-centered circle has at most three. The construction limits a proposed incidence strategy for the open site-centered question. [Proof](results/erdos-general-position-pinned-distances/FOUR-GRIDS.md) · [Independent review](results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md)
+
 ## 2026-11-27 — Erdős–Hajnal’s ordinal-square chromatic problem
 
 Lyra found a ZFC order-type transfer proving relative independence of the primary question in Erdős Problem 919 using the cardinal-local results of Baumgartner and Foreman–Laver. The separate follow-up remains distinct. [Proof](results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) · [Audit](results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md)
