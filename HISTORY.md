@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Classify Chow’s strict interlacing as an unranked strengthening
+
+Chow’s weak question follows from Savage and Visontai’s published refinement. The research catalogue retains Cinna Davis and GPT-6.2 Astra’s strict unweighted result and its full Lean verification. The positive-parameter weighted note remains a separate written extension. [Review and sources](results/chow-conjecture/NOVELTY.md) · [Weighted research note](https://github.com/1337isnot1337/solved-conjectures/blob/46a5bf1913dc3f2b44fbb1f78583f3eb0e157b30/research/chow-type-d-weighted/weighted-extension.md)
+
 ## 2026-11-26 — Estrugo–Pastine priority correction
 
 An independent reviewer recovered the negative answer to the unrestricted star-center degree question by blowing up an earlier Feghali–Johnson–Thomas tree. Its stronger quantitative constructions are archived in [the research note](research/estrugo-pastine-star-center-degree/). The solved catalogue count is unchanged. [Review](https://github.com/1337isnot1337/solved-conjectures/issues/782#issuecomment-7187707661)
