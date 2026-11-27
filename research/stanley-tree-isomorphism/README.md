@@ -1,5 +1,8 @@
 # Stanley’s tree-isomorphism conjecture
 
+For any finite tree and any chosen edge, replacing that edge by a sufficiently long path gives a tree recognized among all trees by its ordinary chromatic symmetric function. If removing the edge leaves components of orders $`c,d`$, a final order of at least $`4\max(c,d)-3`$ suffices. The proof recovers both rooted ends from the unmarked polynomial. [Long-subdivision theorem](LONG-SUBDIVISION.md) · [Independent review](LONG-SUBDIVISION-REVIEW.md) · [Exact checks](verify_long_subdivision.py)
+
+
 **Status (2026-11-24).** The full conjecture remains open in this investigation.
 This checkpoint gives a written proof that the chromatic symmetric function of
 a proper tree determines its disjoint core-edge pairs counted by endpoint
