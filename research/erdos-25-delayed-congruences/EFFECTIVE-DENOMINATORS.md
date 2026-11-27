@@ -2,7 +2,7 @@
 
 **Effective denominators of the divisors actually available.** In the [multiprime theorem](MULTIPRIME-RESAMPLING.md), the least common multiple of *all* reduced residue denominators can be replaced by a bound in probability on a much smaller, integer-dependent least common multiple. This still does not give an unconditional solution of the unrestricted problem.
 
-For the prefix with moduli $n_i\le X$, write $n_i=d_iw_i$ and $a_i=d_i r_i$, with $r_i$ coprime to $w_i$ (allow the trivial class at $w_i=1$). Write $S_X$ for the primes dividing any $w_i$ in the prefix, and $L=\log\log X$. Assume every prime in $S_X$ is at most $\exp(\exp(L^{3/4}))$ for sufficiently large $X$. For a positive integer $m$, define
+For the prefix with moduli $n_i\le X$, write $n_i=d_iw_i$ and $a_i=d_i r_i$, with $r_i$ coprime to $w_i$ (allow the trivial class at $w_i=1$). Write $L=\log\log X$. For a positive integer $m$, define
 ```math
  W_{\rm eff}(m)=\operatorname{lcm}
  \{w_i:n_i\le X,\ d_i\mid m,\ \gcd(m/d_i,w_i)=1\}.
@@ -13,6 +13,12 @@ Empty least common multiples equal one. Let the valuations of all primes up to $
  \Pr(W_{\rm eff}>R)=o(1).
 ```
 The probability involves only primes up to $X$ and is well-defined independently of any size cutoff on the product. Under these conditions, the delayed survivors have logarithmic density equal to the finite-prefix limit. In particular the full least common multiple is not required to be small.
+
+## First truncate invisible denominators
+
+Any hit of an undelayed class with $w_i>R$ implies $W_{\rm eff}(m)>R$, because its quotient is congruent to the unit $r_i$ modulo $w_i$. Under harmonic sampling on $[1,X]$, this exceptional event has probability $o(1)$: the geometric law on primes up to $X$ conditioned on product at most $X$ is the harmonic law, and the conditioning event has probability bounded below by Mertens. Thus one may discard all classes with $w_i>R$ in the prefix at a cost of $o(1)$ in the normalized upper harmonic bound. The replacement union only decreases the finite periodic density.
+
+In the rest of the argument use only the retained prefix, and write $S_X$ for the primes dividing one of its denominators. Then every prime in $S_X$ is at most $R$, so the resampling window is automatically disjoint from $S_X$. Neither a bound on the original prime support nor a bound on the original least common multiple is needed.
 
 ## Uniform resampling across small moduli
 
@@ -52,3 +58,16 @@ It remains to show the distribution of the potentially large $S_X$-part $v$ is a
 Choose $\delta\to0$ slowly so that $V\le Y^\delta$ with probability $1-o(1)$. In the full product law, each $Y$-smooth integer $n$ has probability $n^{-1}\prod_{p\le Y}(1-1/p)$. Hence $\Pr(VT\in[Y^{1-\delta},Y^{1+\delta}])=O(\delta+1/\log Y)$ by the ordinary harmonic bound and Mertens. Independence of $V,T$ then gives $\Pr(T\in[Y^{1-\delta},Y])=o(1)$: when $V\le Y^\delta$, such a $T$ forces $VT$ into that full window. Therefore $\{T\le Y\}$ and $\{VT\le Y\}$ differ on probability $o(1)$. Both have probability bounded below since the latter does. The first event is independent of $V$, so conditioning on the second changes the law of $V$ by $o(1)$ in total variation.
 
 After discarding the cutoff, the averaged union is exactly the finite periodic Haar density. This follows from uniformity of unit phases given the valuations, and independence of the remaining prime coordinates. Thus the delayed prefix up to $X$ has normalized upper harmonic mass bounded by its finite periodic density plus $o(1)$. Fixed prefixes supply the lower bound, proving the theorem.
+
+## A sufficient condition using just the classes
+
+In the independent valuation model, the probability that a given index is eligible is exactly
+```math
+ \Pr(d_i\mid m,\ \gcd(m/d_i,w_i)=1)=\frac{\varphi(w_i)}{n_i}.
+```
+Indeed the divisibility probability is $1/d_i$, and after imposing it the valuations of $m/d_i$ are again independent geometric variables, by memorylessness. Its probability of being coprime to $w_i$ is $\varphi(w_i)/w_i$. Therefore a wholly deterministic sufficient condition for the theorem is
+```math
+ \sum_{n_i\le X}\frac{\varphi(w_i)\log w_i}{n_i}
+ =o\!\left(\sqrt{\log\log X}\,\log\log\log X\right).
+```
+The expected logarithm of the effective least common multiple is bounded by this sum. Choose a logarithmic threshold tending faster than the sum but still little-oh of the displayed scale, and apply Markov. This sufficient condition can be weaker than control of the global least common multiple; it is not a condition that all systems are known to satisfy.
