@@ -117,3 +117,31 @@ at least \((4/3)^u\) eligible edges. Every selected edge
 has both intersection excesses at most \(\delta+u\), as
 proved above. No fixed core, wing separation, or numerical
 case is assumed.
+
+## A linear shattered set in the original witness wing
+
+The count actually applies to **distinct traces on \(U\)**, not
+just distinct full edges: traces with the same \(U\)-intersection
+miss exactly the same \(u\)-cuts in \(U\). Hence the family of
+eligible traces in the preceding proof has size at least
+\((4/3)^u\). Taking \(u=\lfloor t/20\rfloor\), it has VC dimension
+greater than \(t/1000\). In concrete terms, there is a set
+\(Z\subseteq U\) of more than \(t/1000\) points such that for every
+\(P\subseteq Z\) there is an edge \(F_P\) with \(F_P\cap Z=P\),
+with the same controlled intersection gaps to both \(A\) and \(B\).
+
+Indeed, if the VC dimension were \(d\le t/1000\), the
+Sauer–Shelah bound would give at most
+\(\sum_{j\le d}\binom{|U|}{j}\) traces. When \(d=0\) this is
+one. When \(d\ge1\) it is at most \((e|U|/d)^d\): weight each
+binomial term with \((d/|U|)^j\), use \(j\le d\), and bound
+the resulting binomial sum by \(e^d\). Since \(|U|\le1.001t\)
+and \(d\log(e|U|/d)\) increases up to \(|U|\), the logarithm
+of this upper bound is at most
+\((t/1000)\log(1001e)<0.008t\). This contradicts the lower
+bound, whose logarithm is at least
+\((t/20-1)\log(4/3)>0.014t-0.288>0.008t\) for \(t\ge1000\).
+The range \(z\ge1,\ z\le t/1000\) already entails \(t\ge1000\).
+
+Thus the exponential growth cannot be explained by a few
+different traces with many alternative exterior paddings.
