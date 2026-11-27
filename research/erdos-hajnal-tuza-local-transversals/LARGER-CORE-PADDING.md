@@ -60,6 +60,41 @@ The claim applies to arbitrary core families in the
 displayed range, not only complete families or cores
 that contain the minimum-rank complete core.
 
+## Stronger triple constraint when the span is short
+
+Suppose also \(n\ge3t+1\). Write
+\(d=4t-n-3b\in\{0,1,2\}\).
+Take any \(b\)-set \(B\) and split \(M\setminus B\)
+into \(P_1,P_2,P_3,P_4\) with
+\(|P_1|=|P_2|=|P_3|=t-b\) and
+\(|P_4|=t-b-d\). The sizes are admissible because
+\(n-3t+2b\ge1\) is the size of \(P_4\). Choose any three
+edges \(E_i\) avoiding \(B\cup P_i\), \(1\le i\le3\).
+Below the displayed threshold, their common padding
+has size at least \(b+d+1\), not just one.
+
+In fact, let \(C=(E_1\cap E_2\cap E_3)\setminus M\)
+have size \(j\le b+d\). Choose a fourth edge avoiding
+\(P_4\cup C\) and as many elements of \(B\) as the
+remaining \(t\)-vertex budget allows. This choice
+spends at most \(t\) in total and omits at least
+\(b-\max(0,j-d)\) points of \(B\).
+No point of \(M\) is in all four edges, because the
+four \(P_i\)'s and \(B\) are covered by their omissions.
+The three-wise core assumption again ensures all
+four edges are distinct. Their original intersection
+outside \(M\) is empty by the avoidance of \(C\).
+The union of their core portions is at most
+\(n-b+\max(0,j-d)\), and their outside union is at
+most \(4(r-k)-2j\) because each point of \(C\) was
+counted three times. Thus the total is at most
+the original short span \(n-b+4(r-k)\), a contradiction.
+
+Even when \(r=4k-n+b-2+e\) for some \(e\ge0\),
+the same calculation excludes the whole middle interval
+\(e<j\le b+d\): the net saving is at least \(j\),
+so the span is at most \(3r-3\).
+
 ## Rank +1 can have no fixed dense core
 
 Let \(t\ge3\), \(q=t+1\), and \(|M|=3q\).
@@ -74,6 +109,8 @@ perfect matchings](https://arxiv.org/abs/1307.2608).
   add an unused element of \(X\) to change the parity
   if needed, and add one outside \(X\) otherwise.
   Each part has size at least \(q\). Thus \(\tau(\mathcal H)>t\).
+  An odd-parity \(q\)-set hits every core edge, so in fact
+  \(\tau(\mathcal H)=t+1\).
 * If three members of \(\mathcal D\) covered \(M\), they
   would partition it, since each has size \(q\). Their
   \(X\)-counts cannot then sum to the odd number \(|X|\).
