@@ -101,8 +101,45 @@ def chord_pair_geometry():
     return checks
 
 
+def shell_offset_controls():
+    checks = 0
+    for exponent in range(15, 81):
+        scale = Fraction(1, 2**exponent)
+        thickness = scale**2
+        # Both endpoints have radii at least 0.99. For the angular window
+        # in the proof, 2*sin(theta/2) lies between 0.99*theta and theta.
+        lower_chord = Fraction(99, 100)**2 * Fraction(3, 1000) * scale
+        upper_chord = Fraction(46, 100) * thickness + Fraction(35, 10000) * scale
+        lower_offset = Fraction(99, 100) * Fraction(44, 100) * thickness / upper_chord
+        upper_offset = Fraction(46, 100) * thickness / lower_chord
+        require(lower_offset >= 100 * scale, 'raw shell lower offset')
+        require(upper_offset <= 200 * scale, 'raw shell upper offset')
+        require(200 * scale < Fraction(1, 16), 'mixed-group axis contamination')
+        minimum_midpoint_squared = ((1 - thickness)**2 - (200 * scale)**2
+                                    - (scale / 400)**2)
+        require(minimum_midpoint_squared > Fraction(9, 10)**2, 'midpoint sign separation')
+        # The angular diameter is at most four times the Euclidean distance
+        # when both radii are at least 0.9.
+        require(4 * (2 * thickness + scale / 200) < scale / 8, 'resampled endpoint angle')
+        checks += 1
+    for numerator in range(1, 60):
+        masses = [Fraction(1, 3), Fraction(1, 3), Fraction(1, 3) - Fraction(numerator, 360)]
+        for i in range(3):
+            row = Fraction(0)
+            for j in range(3):
+                if j != i:
+                    k = 3 - i - j
+                    entry = (masses[i] + masses[j] - masses[k]) / 2
+                    require(entry > 0, 'residual cross-group mass')
+                    row += entry
+            require(row == masses[i], 'residual cross-group row sum')
+            checks += 1
+    return checks
+
+
 if __name__ == '__main__':
     print(f'{row_completion()} exact completed marginal rows')
     print(f'{cap_controls()} farthest-cap deficit controls')
     print(f'{sector_charges()} source-sector charging inequalities')
     print(f'{chord_pair_geometry()} nonrectangular common-axis trapezoids')
+    print(f'{shell_offset_controls()} axis-only shell and residual marginal controls')
