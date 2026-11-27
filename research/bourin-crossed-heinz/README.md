@@ -4,6 +4,8 @@ Research only. The full conjecture remains unresolved in this checkpoint. No res
 
 A reviewed [common-shift theorem](COMMON-SHIFT.md) gives the uniform leading deficit at every rank. A [dimension-free spectral interval](UNIFORM-BAND.md) gives an explicit sufficient bound independent of the pair. [Review and sources](SHIFT-REVIEW.md) · [Exact checks](verify_common_shift.py)
 
+The [bounded-input-rank theorem](FIXED-INPUT-RANK.md) gives an exact finite witness bound at every exponent, independent of the violation margin. It decides each fixed rational exponent across all finite dimensions and Ky Fan ranks for a prescribed input rank bound. [Independent review and checks](INPUT-RANK-REVIEW.md)
+
 ## Exact target
 
 For arbitrary positive semidefinite complex matrices of the same finite order, positive real exponents, and every unitarily invariant norm, Bourin asks whether
