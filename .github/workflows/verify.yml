@@ -49,6 +49,17 @@ jobs:
           for n in 5 6 7 8 9 10; do
             nauty-geng -cq "$n" | /tmp/check-se "$n"
           done
+      - name: Verify the dandelion minimum and equality cases
+        working-directory: results/barrett-evans-hall-kempton-dandelion
+        run: |
+          set -euo pipefail
+          c++ -O3 -std=c++17 check_anchored_dandelion.cpp -o /tmp/check-anchored-dandelion
+          for n in $(seq 4 20); do
+            /tmp/check-anchored-dandelion "$n"
+          done
+          python3 verify_finite_interval.py
+          python3 verify_effective_interval.py 65
+          python3 check_leaf_near_universal.py
       - name: Check Liang’s slice-period counterfamily
         run: |
           python3 results/liang-slice-period/check.py
