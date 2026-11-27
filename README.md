@@ -200,6 +200,8 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 
 ## Recognizing subdivided trees
 
+For every fixed tree topology, almost every subdivision is the unique minimum-leaf tree with its ordinary vertex-distance histogram. The histogram identifies it among all trees when every direction at each high-degree vertex contains sufficiently many leaves. [Exact condition and proof](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md)
+
 Almost every independent subdivision of each tree with one four-valent vertex and otherwise trivalent hubs is determined among all trees by its ordinary distance histogram alone. [Proof for the first positive degree excess](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-RIGIDITY.md)
 
 For any fixed degree excess, one finite test decides whether almost every independent subdivision of every reduced tree of that excess is determined by its unlabelled distance histogram. Any failure already occurs on a core with at most twelve times the excess minus two vertices. [Finite reduction and scope](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REDUCTION.md)

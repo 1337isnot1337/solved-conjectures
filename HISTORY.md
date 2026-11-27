@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Minimum-leaf reconstruction and arbitrary high degrees
+
+The ordinary distance histogram of a generic subdivision identifies its minimum-leaf representative for every fixed topology. A marked comparison recovers a common labelled metric subtree after boundedly many leaf omissions and rules out a single extra leaf. It gives unmarked reconstruction with no bound on the number or degree of the hubs when their incident branches contain sufficiently many leaves. This supplements the existing Stanley research entry. [Proof](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) · [Sources and contributions](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-SOURCES.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)
+
 ## 2026-11-27 UTC — Distance reconstruction for one four-valent hub
 
 The ordinary unlabelled vertex-distance histogram identifies a density-one set of independent subdivisions of every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs. Marked signed profiles and three necessary path-length equations decide the first positive degree-excess class analytically. Higher classes and Stanley’s full question remain open. [Proof](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-RIGIDITY.md) · [Internal review](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
