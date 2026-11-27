@@ -109,8 +109,8 @@ the unrestricted transversal optimum.
 There is a genuine gap between the saturated-order constant
 \(3/s\) and what can be required from the abstract petal
 size and overlap axioms alone when \(\delta>0\).
-For every fixed \(s,\delta\ge1\) with \(\delta<3s\), along
-an infinite sequence of \(t\)'s there exist sets \(W_S\)
+For every fixed \(s,\delta\ge1\) with \(\delta<3s\), for all
+sufficiently large \(t\) there exist sets \(W_S\)
 indexed by all \(s\)-cuts in an \(m=t+s\) point set with
 \[
 p\le |W_S|\le p+\delta,\qquad
@@ -122,18 +122,10 @@ p\le |W_S|\le p+\delta,\qquad
 These are abstract petals only, not counterexamples to
 the original local-transversal problem.
 
-Take a prime power \(q\) and \(t=2sq+O_s(1)\).
-Let \(L_0=\lceil(p-\delta(q+1))/s\rceil\).
-We may choose \(t\) within a bounded interval of \(2sq\)
-so that \(p\le sL_0+\delta(q+1)\le p+\delta\).
-If \(3\) is coprime to \(s\), choose \(t\) to make
-\(p-\delta(q+1)\) divisible by \(s\).
-If \(3\mid s\) and \(\delta\ge2\), the possible residues
-vary in increments of three and one can arrange rounding
-overhead at most two. In the remaining case \(3\mid s\),
-\(\delta=1\), take \(q\) to be a power of three; then
-\(p-(q+1)\) is divisible by three and varying \(t\)
-permits exact divisibility by \(s\).
+Take a prime \(q=(1+o(1))t/(2s)\), which exists for all
+large \(t\) by the prime number theorem. Let
+\(L_0=\lceil(p-\delta(q+1))/s\rceil\); it is positive
+for fixed \(0<\delta<3s\) and large \(t\).
 
 Give each index \(x\) an independent pool of \(L_0\)
 private points, and take \(\delta\) disjoint copies of
@@ -144,8 +136,9 @@ of all \(x\in S\), and in each plane add the line of
 the least index of \(S\) in a fixed ordering.
 For disjoint cuts, their pools are disjoint and their
 line choices in each plane are distinct, so they share
-only one point per plane. The size is \(sL_0+\delta(q+1)\),
-as arranged. The number of available points is at most
+only one point per plane. The size is \(sL_0+\delta(q+1)\ge p\). Trim each petal
+independently to exactly \(p\) vertices; trimming only
+decreases intersections. The number of available points is at most
 \[
 m L_0+\delta(q^2+q+1)
 =\left(\frac3s-\frac{\delta}{4s^2}+o(1)\right)t^2.
