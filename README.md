@@ -10,96 +10,96 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Lean verification status | Problem | Lean verification status |
 | :--- | :---: | :--- | :---: |
-| **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **90.** [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ |
-| **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | 🟡 | **90.** [Zeng’s unscaled interlacing question](results/zeng-unscaled-interlacing/) | ⬜ |
-| **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | ✅ | **90.** [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
-| **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **94.** [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ |
-| **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **94.** [Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture](results/erz-big-descent-schur/) | ⬜ |
-| **4.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **94.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ✅ |
-| **4.** [Kotesovec’s line-size asymptotic (OEIS A401948)](results/erdos-607-line-sizes/) | ✅ | **94.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 |
-| **4.** [Erdős’s one-third pinned-distance conjecture](results/erdos-general-position-pinned-distances/) | ⬜ | **94.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
-| **9.** [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ | **94.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | 🟡 |
-| **9.** [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | 🟡 | **100.** [Liang’s 0.3123 slice problem](results/liang-03123-slice/) | ⬜ |
-| **9.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ✅ | **101.** [Liang’s slice-period conjecture](results/liang-slice-period/) | ⬜ |
-| **9.** [Féray’s conjugate-power word-measure conjectures](results/feray-conjugate-power-word/) | ⬜ | **102.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ✅ |
-| **9.** [Shumyatsky’s conjugate prime-spectrum conjecture](results/shumyatsky-conjugate-prime-spectrum/) | 🟡 | **102.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ |
-| **14.** [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ✅ | **104.** [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | 🟡 |
-| **14.** [Ferroni–Pagaria–Vecchi’s type B real-rootedness conjecture](results/ferroni-pagaria-vecchi-type-b/) | ⬜ | **104.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ✅ |
-| **14.** [Johnson's conjecture](results/johnson-pfaffian/) | ✅ | **106.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | 🟡 |
-| **14.** [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 | **106.** [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | ✅ |
-| **14.** [Chen–Khare–Sahi’s Jack semiring conjecture](results/chen-khare-sahi-jack/) | ⬜ | **106.** [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ✅ |
-| **14.** [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 | **109.** [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/) | ✅ |
-| **14.** [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ | **109.** [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | 🟡 |
-| **14.** [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ | **109.** [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/) | ✅ |
-| **14.** [McNamara–Steingrímsson’s interval rank-unimodality conjecture](results/mcnamara-steingrimsson-rank-unimodality/) | ✅ | **109.** [Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture](results/gawron-miska-ulas-thue-morse-sign-density/) | ✅ |
-| **23.** [Bétermin’s FCC/BCC cold-spot conjecture](results/betermin-fcc-bcc-cold-spots/) | ⬜ | **113.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/) | 🟡 |
-| **23.** [Lángi–Wang’s disk-average question for convex tilings](results/langi-wang-convex-tiling/) | ⬜ | **113.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
-| **23.** [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ | **113.** [Ćurgus–Mascioni’s Fréchet root-matching extremizer question](results/curgus-mascioni-frechet/) | 🟡 |
-| **23.** [Feldheim–Feldheim’s weighted tail conjecture](results/feldheim-weighted-tail/) | ✅ | **116.** [Burstein’s A218225 enumeration conjecture](results/burstein-a218225-enumeration/) | ✅ |
-| **23.** [Hajdu–Sárközy’s shifted-power perturbation conjecture](results/hajdu-sarkozy-shifted-power-perturbations/) | ✅ | **116.** [Burstein’s descent-top shape-Wilf conjecture](results/burstein-descent-top-shape-wilf/) | ✅ |
-| **23.** [Hajdu–Sárközy’s shifted-product total primitivity conjecture](results/hajdu-sarkozy-shifted-products/) | ✅ | **116.** [Benfield–Lippard’s stable Waring-gap symmetry conjecture](results/benfield-lippard-waring-gap-symmetry/) | ✅ |
-| **29.** [Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture](results/barrett-evans-hall-kempton-se/) | ⬜ | **116.** [Benfield–Lippard’s stable Waring-gap parity conjecture](results/benfield-lippard-waring-gap-parity/) | ✅ |
-| **30.** [Xu–Zhou’s diameter–Laplacian conjecture](results/xu-zhou-laplacian-diameter/) | ✅ | **120.** [Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture](results/heim-neuhauser-troeger-plane-partition-turan/) | ✅ |
-| **30.** [Han’s simultaneous spherical-harmonic saturation question](results/han-spherical-harmonic-saturation/) | ⬜ | **120.** [Heim–Neuhauser’s plane-partition polynomization conjecture](results/heim-neuhauser-plane-partition-polynomization/) | ✅ |
-| **30.** [Steinerberger’s small-average eigenfunction norm question](results/steinerberger-small-average-eigenfunction-norms/) | ⬜ | **120.** [Heim–Neuhauser’s ordinary D’Arcais root conjecture](results/heim-neuhauser-ordinary-darcais-root/) | 🟢 |
-| **30.** [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ✅ | **120.** [Charlton et al.’s distinct D’Arcais zeros question](results/darcais-distinct-right-half-plane-zeros/) | ⬜ |
-| **30.** [Simmons–Weiss’s Hausdorff-measure question](results/simmons-weiss-hausdorff/) | ⬜ | **124.** [Meylender–Thalmaier’s truncated-square conjecture](results/meylender-thalmaier-truncated-square/) | 🟡 |
-| **30.** [The Steiner triple system sail problem](results/steiner-triple-system-sail/) | ✅ | **124.** [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | ✅ |
-| **36.** [Claesson–Dukes–Steingrímsson’s stack-sorting conjecture](results/claesson-dukes-steingrimsson-stack-sorting/) | ⬜ | **124.** [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ✅ |
-| **36.** [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ✅ | **124.** [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | 🟡 |
-| **36.** [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ✅ | **128.** [Braun–Bruegge’s bicyclic facet conjectures](results/braun-bruegge-bicyclic-facets/) | ✅ |
-| **36.** [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ✅ | **128.** [Braun–Bruegge’s minimum facet conjecture](results/braun-bruegge-minimum-facets/) | ✅ |
-| **36.** [Gravgaard–Lee’s Lüroth diameter question](results/gravgaard-lee-diameter-condition/) | ✅ | **128.** [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ✅ |
-| **36.** [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ✅ | **131.** [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | 🟡 |
-| **42.** [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ | **131.** [Pantone–Bóna’s asymptotic conjecture](results/pantone-bona-asymptotic/) | ⬜ |
-| **42.** [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ | **131.** [Pantone–Bóna’s second-largest-terminal asymptotic conjecture](results/pantone-bona-second-largest-terminal/) | 🟡 |
-| **42.** [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ | **131.** [Pantone–Bóna’s third-largest-terminal asymptotic conjecture](results/pantone-bona-third-largest-terminal/) | ⬜ |
-| **42.** [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ | **131.** [Pantone–Bóna’s second-smallest-terminal asymptotic conjecture](results/pantone-bona-second-smallest-terminal/) | ⬜ |
-| **42.** [Erdős–Gyárfás point-degree spectrum conjecture](results/erdos-gyarfas-point-degree-spectrum/) | ✅ | **136.** [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |
-| **42.** [En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem](results/constant-weight-strong-wom/) | ⬜ | **136.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
-| **42.** [Asgarli–Ghioca–Yip blocking-pencil problem](results/asgarli-ghioca-yip-blocking-pencil/) | ✅ | **136.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
-| **42.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **136.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ✅ |
-| **50.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **136.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | 🟡 |
-| **50.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **141.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
-| **50.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **141.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
-| **50.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | 🟡 | **141.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
-| **50.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **141.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
-| **50.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **145.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
-| **50.** [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ | **145.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
-| **57.** [Fractional general position conjecture for square grids](results/fractional-general-position-square-grids/) | ⬜ | **145.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
-| **58.** [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | ✅ | **145.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
-| **59.** [Mobile general position complexity](results/mobile-general-position-complexity/) | ⬜ | **149.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
-| **60.** [Builder–Blocker general position complexity conjecture](results/builder-blocker-general-position-complexity/) | ⬜ | **149.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
-| **61.** [Misère Domination Game](results/misere-domination-game/) | ⬜ | **149.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
-| **62.** [Plambeck–Siegel infinite quotient conjecture for 0.3312](results/plambeck-siegel-03312/) | ⬜ | **149.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
-| **63.** [Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture](results/general-position-nordhaus-gaddum/) | ⬜ | **149.** [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | ✅ |
-| **64.** [The lower oriented general position NP-hardness conjecture](results/lower-oriented-general-position-np-hardness/) | ⬜ | **149.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
-| **65.** [Permutation digraph general position conjecture](results/permutation-digraph-general-position/) | ⬜ | **149.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
-| **66.** [General position number of oriented trees](results/general-position-oriented-trees/) | ⬜ | **149.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
-| **67.** [Oriented general position spectrum nonconstancy conjecture](results/oriented-general-position-spectrum-nonconstancy/) | ⬜ | **157.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
-| **68.** [Welton–Khudairi–Tuite lower general position product conjecture](results/welton-khudairi-tuite-lower-gp-product/) | ⬜ | **157.** [Alexandersson’s transportation polytope conjecture](results/alexandersson-transportation/) | ✅ |
-| **69.** [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ✅ | **157.** [Alexandersson’s graphical dist conjecture](results/alexandersson-graphical-dist/) | 🟡 |
-| **69.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ✅ | **157.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
-| **69.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ✅ | **157.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | 🟡 |
-| **69.** [Mallik–Diwan–Kothari degree-count conjecture](results/mallik-diwan-kothari-degree-count/) | ✅ | **157.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
-| **69.** [Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture](results/monophonic-product-nordhaus-gaddum/) | 🟡 | **163.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
-| **69.** [Gyárfás’s planar degree-repetition problem](results/gyarfas-planar-degree-repetition/) | ✅ | **163.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
-| **69.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **163.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
-| **69.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ✅ | **166.** [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
-| **69.** [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ✅ | **166.** [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
-| **78.** [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ | **166.** [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |
-| **78.** [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ | **166.** [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟢 |
-| **78.** [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ | **170.** [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
-| **78.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **170.** [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
-| **78.** [Wang–Yang's Fuss–Narayana conjecture](results/wang-yang-fuss-narayana/) | ✅ | **172.** [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
-| **78.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **172.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
-| **78.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **172.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
-| **85.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **172.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
-| **85.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **172.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
-| **85.** [Brown–Cameron’s independence-root sector and stability problems](results/brown-cameron-stability/) | ⬜ | **177.** [Fiscus–Hurlbert–Myzelev–Pence grid conjecture](results/fiscus-grid-game/) | ✅ |
-| **85.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **178.** [Nathanson’s linear-form Sidon systems conjecture](results/nathanson-sidon-systems/) | ✅ |
-| **85.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | 🟡 | **178.** [Byrne–Tait’s odd-length Sidon-set question](results/byrne-tait-odd-sidon/) | ⬜ |
-| **90.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ |  |  |
+| **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **91.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ |
+| **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | 🟡 | **91.** [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ |
+| **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | ✅ | **91.** [Zeng’s unscaled interlacing question](results/zeng-unscaled-interlacing/) | ⬜ |
+| **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **91.** [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
+| **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **95.** [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ |
+| **4.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **95.** [Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture](results/erz-big-descent-schur/) | ⬜ |
+| **4.** [Kotesovec’s line-size asymptotic (OEIS A401948)](results/erdos-607-line-sizes/) | ✅ | **95.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ✅ |
+| **4.** [Erdős’s one-third pinned-distance conjecture](results/erdos-general-position-pinned-distances/) | ⬜ | **95.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 |
+| **9.** [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ | **95.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
+| **9.** [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | 🟡 | **95.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | 🟡 |
+| **9.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ✅ | **101.** [Liang’s 0.3123 slice problem](results/liang-03123-slice/) | ⬜ |
+| **9.** [Féray’s conjugate-power word-measure conjectures](results/feray-conjugate-power-word/) | ⬜ | **102.** [Liang’s slice-period conjecture](results/liang-slice-period/) | ⬜ |
+| **9.** [Shumyatsky’s conjugate prime-spectrum conjecture](results/shumyatsky-conjugate-prime-spectrum/) | 🟡 | **103.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ✅ |
+| **14.** [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ✅ | **103.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ |
+| **14.** [Ferroni–Pagaria–Vecchi’s type B real-rootedness conjecture](results/ferroni-pagaria-vecchi-type-b/) | ⬜ | **105.** [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | 🟡 |
+| **14.** [Johnson's conjecture](results/johnson-pfaffian/) | ✅ | **105.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ✅ |
+| **14.** [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 | **107.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | 🟡 |
+| **14.** [Chen–Khare–Sahi’s Jack semiring conjecture](results/chen-khare-sahi-jack/) | ⬜ | **107.** [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | ✅ |
+| **14.** [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 | **107.** [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ✅ |
+| **14.** [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ | **110.** [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/) | ✅ |
+| **14.** [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ | **110.** [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | 🟡 |
+| **14.** [McNamara–Steingrímsson’s interval rank-unimodality conjecture](results/mcnamara-steingrimsson-rank-unimodality/) | ✅ | **110.** [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/) | ✅ |
+| **23.** [Bétermin’s FCC/BCC cold-spot conjecture](results/betermin-fcc-bcc-cold-spots/) | ⬜ | **110.** [Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture](results/gawron-miska-ulas-thue-morse-sign-density/) | ✅ |
+| **23.** [Lángi–Wang’s disk-average question for convex tilings](results/langi-wang-convex-tiling/) | ⬜ | **114.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/) | 🟡 |
+| **23.** [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ | **114.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
+| **23.** [Feldheim–Feldheim’s weighted tail conjecture](results/feldheim-weighted-tail/) | ✅ | **114.** [Ćurgus–Mascioni’s Fréchet root-matching extremizer question](results/curgus-mascioni-frechet/) | 🟡 |
+| **23.** [Hajdu–Sárközy’s shifted-power perturbation conjecture](results/hajdu-sarkozy-shifted-power-perturbations/) | ✅ | **117.** [Burstein’s A218225 enumeration conjecture](results/burstein-a218225-enumeration/) | ✅ |
+| **23.** [Hajdu–Sárközy’s shifted-product total primitivity conjecture](results/hajdu-sarkozy-shifted-products/) | ✅ | **117.** [Burstein’s descent-top shape-Wilf conjecture](results/burstein-descent-top-shape-wilf/) | ✅ |
+| **29.** [Erdős–Hajnal’s ordinal-square chromatic problem](results/erdos-hajnal-ordinal-square-chromatic/) | ⬜ | **117.** [Benfield–Lippard’s stable Waring-gap symmetry conjecture](results/benfield-lippard-waring-gap-symmetry/) | ✅ |
+| **30.** [Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture](results/barrett-evans-hall-kempton-se/) | ⬜ | **117.** [Benfield–Lippard’s stable Waring-gap parity conjecture](results/benfield-lippard-waring-gap-parity/) | ✅ |
+| **31.** [Xu–Zhou’s diameter–Laplacian conjecture](results/xu-zhou-laplacian-diameter/) | ✅ | **121.** [Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture](results/heim-neuhauser-troeger-plane-partition-turan/) | ✅ |
+| **31.** [Han’s simultaneous spherical-harmonic saturation question](results/han-spherical-harmonic-saturation/) | ⬜ | **121.** [Heim–Neuhauser’s plane-partition polynomization conjecture](results/heim-neuhauser-plane-partition-polynomization/) | ✅ |
+| **31.** [Steinerberger’s small-average eigenfunction norm question](results/steinerberger-small-average-eigenfunction-norms/) | ⬜ | **121.** [Heim–Neuhauser’s ordinary D’Arcais root conjecture](results/heim-neuhauser-ordinary-darcais-root/) | 🟢 |
+| **31.** [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ✅ | **121.** [Charlton et al.’s distinct D’Arcais zeros question](results/darcais-distinct-right-half-plane-zeros/) | ⬜ |
+| **31.** [Simmons–Weiss’s Hausdorff-measure question](results/simmons-weiss-hausdorff/) | ⬜ | **125.** [Meylender–Thalmaier’s truncated-square conjecture](results/meylender-thalmaier-truncated-square/) | 🟡 |
+| **31.** [The Steiner triple system sail problem](results/steiner-triple-system-sail/) | ✅ | **125.** [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | ✅ |
+| **37.** [Claesson–Dukes–Steingrímsson’s stack-sorting conjecture](results/claesson-dukes-steingrimsson-stack-sorting/) | ⬜ | **125.** [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ✅ |
+| **37.** [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ✅ | **125.** [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | 🟡 |
+| **37.** [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ✅ | **129.** [Braun–Bruegge’s bicyclic facet conjectures](results/braun-bruegge-bicyclic-facets/) | ✅ |
+| **37.** [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ✅ | **129.** [Braun–Bruegge’s minimum facet conjecture](results/braun-bruegge-minimum-facets/) | ✅ |
+| **37.** [Gravgaard–Lee’s Lüroth diameter question](results/gravgaard-lee-diameter-condition/) | ✅ | **129.** [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ✅ |
+| **37.** [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ✅ | **132.** [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | 🟡 |
+| **43.** [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ | **132.** [Pantone–Bóna’s asymptotic conjecture](results/pantone-bona-asymptotic/) | ⬜ |
+| **43.** [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ | **132.** [Pantone–Bóna’s second-largest-terminal asymptotic conjecture](results/pantone-bona-second-largest-terminal/) | 🟡 |
+| **43.** [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ | **132.** [Pantone–Bóna’s third-largest-terminal asymptotic conjecture](results/pantone-bona-third-largest-terminal/) | ⬜ |
+| **43.** [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ | **132.** [Pantone–Bóna’s second-smallest-terminal asymptotic conjecture](results/pantone-bona-second-smallest-terminal/) | ⬜ |
+| **43.** [Erdős–Gyárfás point-degree spectrum conjecture](results/erdos-gyarfas-point-degree-spectrum/) | ✅ | **137.** [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |
+| **43.** [En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem](results/constant-weight-strong-wom/) | ⬜ | **137.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
+| **43.** [Asgarli–Ghioca–Yip blocking-pencil problem](results/asgarli-ghioca-yip-blocking-pencil/) | ✅ | **137.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
+| **43.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **137.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ✅ |
+| **51.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **137.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | 🟡 |
+| **51.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **142.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
+| **51.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **142.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
+| **51.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | 🟡 | **142.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
+| **51.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **142.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | 🟡 |
+| **51.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **146.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
+| **51.** [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ | **146.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
+| **58.** [Fractional general position conjecture for square grids](results/fractional-general-position-square-grids/) | ⬜ | **146.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
+| **59.** [Cioba–Savvas shutout number conjecture](results/cioba-savvas-shutout-number/) | ✅ | **146.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
+| **60.** [Mobile general position complexity](results/mobile-general-position-complexity/) | ⬜ | **150.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
+| **61.** [Builder–Blocker general position complexity conjecture](results/builder-blocker-general-position-complexity/) | ⬜ | **150.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
+| **62.** [Misère Domination Game](results/misere-domination-game/) | ⬜ | **150.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
+| **63.** [Plambeck–Siegel infinite quotient conjecture for 0.3312](results/plambeck-siegel-03312/) | ⬜ | **150.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
+| **64.** [Chandran–Di Stefano–Haritha–Thomas–Tuite general-position conjecture](results/general-position-nordhaus-gaddum/) | ⬜ | **150.** [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | ✅ |
+| **65.** [The lower oriented general position NP-hardness conjecture](results/lower-oriented-general-position-np-hardness/) | ⬜ | **150.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
+| **66.** [Permutation digraph general position conjecture](results/permutation-digraph-general-position/) | ⬜ | **150.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
+| **67.** [General position number of oriented trees](results/general-position-oriented-trees/) | ⬜ | **150.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
+| **68.** [Oriented general position spectrum nonconstancy conjecture](results/oriented-general-position-spectrum-nonconstancy/) | ⬜ | **158.** [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ✅ |
+| **69.** [Welton–Khudairi–Tuite lower general position product conjecture](results/welton-khudairi-tuite-lower-gp-product/) | ⬜ | **158.** [Alexandersson’s transportation polytope conjecture](results/alexandersson-transportation/) | ✅ |
+| **70.** [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ✅ | **158.** [Alexandersson’s graphical dist conjecture](results/alexandersson-graphical-dist/) | 🟡 |
+| **70.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ✅ | **158.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
+| **70.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ✅ | **158.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | 🟡 |
+| **70.** [Mallik–Diwan–Kothari degree-count conjecture](results/mallik-diwan-kothari-degree-count/) | ✅ | **158.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
+| **70.** [Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture](results/monophonic-product-nordhaus-gaddum/) | 🟡 | **164.** [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
+| **70.** [Gyárfás’s planar degree-repetition problem](results/gyarfas-planar-degree-repetition/) | ✅ | **164.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
+| **70.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **164.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
+| **70.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ✅ | **167.** [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
+| **70.** [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ✅ | **167.** [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| **79.** [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ | **167.** [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |
+| **79.** [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ | **167.** [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟢 |
+| **79.** [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ | **171.** [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
+| **79.** [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ | **171.** [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
+| **79.** [Wang–Yang's Fuss–Narayana conjecture](results/wang-yang-fuss-narayana/) | ✅ | **173.** [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
+| **79.** [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ | **173.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
+| **79.** [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 | **173.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
+| **86.** [Wang–Yang's conjecture](results/wang-yang/) | ⬜ | **173.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
+| **86.** [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ✅ | **173.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
+| **86.** [Brown–Cameron’s independence-root sector and stability problems](results/brown-cameron-stability/) | ⬜ | **178.** [Fiscus–Hurlbert–Myzelev–Pence grid conjecture](results/fiscus-grid-game/) | ✅ |
+| **86.** [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ✅ | **179.** [Nathanson’s linear-form Sidon systems conjecture](results/nathanson-sidon-systems/) | ✅ |
+| **86.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | 🟡 | **179.** [Byrne–Tait’s odd-length Sidon-set question](results/byrne-tait-odd-sidon/) | ⬜ |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).
 
