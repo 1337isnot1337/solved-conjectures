@@ -10,6 +10,8 @@ Run `python3 results/soukup-complementary-graph-product/verify_grid_patterns.py`
 
 ## Bourin’s crossed-Heinz inequality
 
+The [bounded-input-rank review](../results/bourin-crossed-heinz/INPUT-RANK-REVIEW.md) records two independent rational checks of the resolvent and the comparison budget. Run `python3 results/bourin-crossed-heinz/verify_fixed_input_rank.py` and `python3 results/bourin-crossed-heinz/verify_input_rank_schur.py`.
+
 The [finite-witness and computation proofs](../results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md) have exact arithmetic checks. Run `python3 results/bourin-crossed-heinz/verify_finite_witness.py` for the compressed test frames and `python3 results/bourin-crossed-heinz/verify_gap_grid.py` for the endpoint, threshold and grid identities.
 
 Run `python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py` for 225 exact rational resolvent comparisons and 80 complementary divided-difference checks in the [arbitrary-centre theorem](../results/bourin-crossed-heinz/ARBITRARY-CENTRES.md).

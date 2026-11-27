@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Exact decisions for Bourin’s inequality at bounded input rank
+
+With one input of prescribed bounded rank, a strict violation of any size has a finite-dimensional witness of order quadratic in that rank. At each fixed rational exponent this decides the bounded-rank inequality across all finite dimensions and all unitarily invariant norms. One rank-one input satisfies every comparison. The unrestricted conjecture remains open. Two independent rational checks accompany the written proof. [Theorem](results/bourin-crossed-heinz/FIXED-INPUT-RANK.md) · [Review and source comparison](results/bourin-crossed-heinz/INPUT-RANK-REVIEW.md)
+
 ## 27 November 2026 — Sharp ordinal thresholds for graph representations
 
 A new ZFC theorem forces an induced countably infinite matching in one color for every countable edge coloring of either factor of a putative witness on any uncountable subset. It rules out all open representations by countably many well-orders shorter than the square of the first uncountable ordinal. [Induced matching and chromatic equality](results/soukup-complementary-graph-product/DIRECTED-OPEN.md)
