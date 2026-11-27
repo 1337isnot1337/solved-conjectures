@@ -2,6 +2,10 @@
 
 **For every fixed reduced tree, almost every independent choice of integer lengths for all its edges gives a tree recognizable among all trees from its path counts and degree sequence.** An explicit certificate recovers all edge lengths and their incidences. If every branch vertex has degree three, the unlabelled histogram of distances between vertex pairs suffices on its own, even when the competitor has arbitrary degrees. The failure probability for lengths uniform in $`1,\ldots,t`$ is at most a constant times $`k^5/t`$ on any reduced tree of order $`k`$. Stanley’s general question remains open. [Path-distance certificate and proof](PATH-DISTANCE-CERTIFICATE.md) · [Independent review and earlier work](PATH-DISTANCE-REVIEW.md)
 
+## Distances between leaves
+
+The multiset of leaf-to-leaf distances determines the total length of a generic reduced metric tree. For a binary target it also determines the unweighted topology. Every possible change of lengths comes from permuting the two-pendant sums at cherries in a binary refinement, and the factorial bound on the number of alternatives is sharp. The resulting length invariant imposes a rational obstruction on every competitor with more leaves in the ordinary distance-histogram problem. [Total length](LEAF-DECK-LENGTH.md) · [Classification](CHERRY-CLASSIFICATION.md) · [Application](SCALAR-PENDANT-OBSTRUCTION.md) · [Sources and independent review](LEAF-DECK-REVIEW.md)
+
 ## When the histogram alone suffices
 
 A finite calculation decides generic identification over all tree topologies when competitors may have a bounded number of extra leaves. The number and degrees of the high-degree vertices are unrestricted, and a failing family has a witness with quadratically many leaves in the allowance. For a single high hub of arbitrary degree, a different tree with the same histogram needs at least two additional leaves and a surplus growing at least linearly with that hub’s degree. [Theorem and exact bounds](LEAF-SURPLUS-KERNEL.md) · [Independent review and sources](LEAF-SURPLUS-REVIEW.md) · [Finite checks](verify_leaf_surplus.py)
