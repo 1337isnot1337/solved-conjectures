@@ -199,3 +199,21 @@ Hence the abstract singleton-petal order has now
 been determined to leading order for every fixed
 slack, with no compatibility assumed between
 different minimum pairs in an actual hypergraph.
+
+At \(s=1\) the same value is exact at finite admissible
+orders once the designs exist. For any exterior vertex of
+multiplicity \(d\) in the \(m=t+1\) singleton petals,
+\(\binom d2\ge kd-\binom{k+1}2\), with equality for
+\(d=k,k+1\). Summing and using \(\sum d\ge3tm\) and
+\(\sum\binom d2\le\delta\binom m2\) gives the finite bound
+\[
+n_{\rm out}\ge
+mt\frac{6k-\delta}{k(k+1)}.
+\]
+If \(m\) itself meets the simultaneous congruences of
+the two designs in §4, no index enlargement is needed;
+the untrimmed union of their blocks attains the bound
+since each index lies in exactly \(3t\) blocks and
+each pair in exactly \(\delta\). In particular every
+fixed \(\delta\) has infinitely many exact orders of
+this form.
