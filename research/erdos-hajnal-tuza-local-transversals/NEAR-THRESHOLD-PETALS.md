@@ -129,9 +129,22 @@ of the exterior vertices into equal-size pools indexed by
 For the proof use the Kneser graph \(K(m,s)\), whose vertices are
 the \(s\)-sets of \(X\) and whose edges join disjoint sets.
 It is regular with degree \(d=\binom{m-s}{s}\) and has least
-eigenvalue \(-sd/(m-s)\); see [Huang–Zhao, Lemma
-2.1](https://www.sciencedirect.com/science/article/am/pii/S009731651730033X)
-for this standard spectrum. For an exterior vertex \(w\), let
+eigenvalue \(-sd/(m-s)\). Here is a direct check. For a fixed
+\(j\)-set \(R\), put \(f_R(S)={\bf 1}_{R\subseteq S}\). The
+spaces \(U_j\) spanned by the \(f_R\)'s for \(|R|=j\) are nested,
+by summing over all one-element extensions of each \(R\).
+The adjacency operator sends \(f_R\) to
+\[
+\binom{m-s-j}{s-j}\,{\bf 1}_{R\cap S=\emptyset}
+=\binom{m-s-j}{s-j}\sum_{Q\subseteq R}(-1)^{|Q|}f_Q(S).
+\]
+Thus on \(U_j/U_{j-1}\) it acts by
+\((-1)^j\binom{m-s-j}{s-j}\). As \(U_s\) is the full space
+and the absolute binomial factors decrease with \(j\), the
+first negative eigenvalue, at \(j=1\), is least. Its ratio
+to \(d\) is \(-s/(m-s)\).
+
+For an exterior vertex \(w\), let
 \(F_w=\{S:w\in W_S\}\) and \(f_w=|F_w|/\binom ms\).
 Decomposing its indicator into a constant vector and an orthogonal
 part, the Rayleigh bound gives
