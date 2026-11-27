@@ -135,3 +135,78 @@ single-support estimate used here is an elementary asymptotic
 version of that phenomenon. The extra restriction in the petal
 problem is the pointwise overlap cap: all supports must obey it
 simultaneously for each disjoint pair of cuts.
+
+## Strict nonattainment also when \(3s\le\delta<s^2\)
+
+In this second range the optimal affine piece has slope at
+least four, so near equality forces two almost-full stars
+rather than one full and one partial star. The pointwise
+cap then conflicts with a dense bipartite pattern.
+
+Precisely, fix \(3s\le\delta<s^2\), and put
+\(a_*=1+\delta/(3s)\), \(k=\lfloor a_*\rfloor\ge2\).
+The [affine lower constant](SHARPER-SLACK-PETAL-ORDER.md) is
+\[
+L_k=\frac{6k/s-\delta/s^2}{k(k+1)}.
+\]
+Indeed the difference of the leading constants for adjacent
+pieces \(j+1,j\) has the sign of \(a_*-j-1\), by subtraction.
+Ties at an integer \(a_*\) do not affect the choice.
+Then some \(c'_{s,\delta}>0\) satisfies
+\(n\ge(L_k+c'_{s,\delta})t^2\) for all sufficiently
+large \(t\) under the same abstract petal axioms.
+
+Suppose instead that \(n/t^2\to L_k\).
+Just as above, summing the affine deficit
+\(b_v-2k a_v+k(k+1)\) shows that it is \(o(1)\)
+uniformly after discarding \(o(n)\) points.
+The crude lower bound bounds the \(a_v\)'s of all the
+remaining points. The piecewise-linear bound has
+equality with its affine piece precisely on \([k,k+1]\),
+so \(a_v\in[k-o(1),k+1+o(1)]\) for those points.
+Moreover their normalized heavy coordinate square sum
+is within \(o(1)\) of the maximum at total mass
+\(a_v+o(1)\). This follows by subtracting the upper
+bound \(2k a_v-k(k+1)+o(1)\) on \(b_v\) from
+\(a_v^2\), and using the formula in the affine proof.
+
+For each of these points, both largest coordinate
+degrees are \(1-o(1)\) after normalization by \(M\).
+Otherwise the second largest is at most \(1-\gamma\)
+for some fixed \(\gamma>0\), the total heavy mass is
+at least \(2-o(1)\) from its square-sum lower bound,
+and the entries after the first two have mass at
+least \(\gamma-o(1)\). Moving \(\gamma/2\) of this mass
+to the second largest (reducing slightly if necessary)
+stays within the cap 1 and grows the square sum by a
+fixed positive amount, a contradiction to near-maximality.
+
+Assign to each of the \(\Omega(t^2)\) good points its
+two almost-full star centers, an unordered pair of
+different indices. Each center pair is assigned at
+most \(\delta\) points. In fact, given \(\delta+1\)
+points with the same centers \(x,y\), first choose a
+cut containing \(x\) but not \(y\) supported by all
+of them, then a disjoint cut containing \(y\) supported
+by all. Both choices are possible since each point
+misses only \(o(M)\) members of each indicated star.
+
+The graph of assigned pairs on \(X\) is therefore dense.
+It has \(\Omega(m^{2s})\) ordered pairs of disjoint
+\(s\)-sets \((S,T)\) with all \(s^2\) cross pairs
+present: counting the choices of an \(s\)-set inside
+one vertex's neighborhood first shows that
+\(\Omega(m^s)\) \(s\)-sets have \(\Omega(m)\) common
+neighbors. Use those neighbors for \(T\).
+
+For each graph edge \(xy\) fix one assigned exterior
+point. Only \(o(m^{2s})\) of the complete cross pairs
+\((S,T)\) can fail to support one of these chosen
+points across a cross edge: for \(x\in S,y\in T\)
+there are \(o(M)\) bad choices of \(S\) for that
+point and \(O(M)\) choices of \(T\), or vice versa,
+and only \(O(m^2)\) such edges. Thus some complete
+cross pair has all \(s^2\) assigned points in both
+petals. The points are distinct because each one has
+only one assigned center pair. This contradicts
+\(\delta<s^2\), proving a strict gap above \(L_k\).
