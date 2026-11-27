@@ -72,3 +72,25 @@ without the full hypergraph constraints by pair points
 and private fillers, as in [the slack order note](SHARPER-SLACK-PETAL-ORDER.md).
 The orientation and all-pairs consistency conditions
 here are additional necessary conditions for a true example.
+
+## Defect identity away from exact equality
+
+If the order exceeds the displayed threshold by \(h\), take
+any fixed system of petals. Let \(u\) be the number of
+exterior points omitted altogether and \(d_v\) the positive
+multiplicity of a point in their union. Then
+\[
+h=u+\sum_x(|W_x|-3t)
++\sum_{x<y}(\delta-|W_x\cap W_y|)
++\sum_{v:d_v\ge1}\left[\binom{d_v}{2}-(d_v-1)\right].
+\]
+All terms are nonnegative, and the identity follows from
+the same double count. In particular at most \(h\) singleton
+cuts of a given minimum pair can admit a witness whose
+total intersection excess is less than \(\delta\).
+To see this uniformly over choices, select one such witness
+at every cut where it exists, and then apply the identity:
+each selected witness of this kind has an exterior larger
+than \(3t\) and pays at least one unit of the defect.
+For \(\delta=1\), simultaneously minimum singleton witnesses
+can occur at at most \(h\) cuts of any minimum pair.
