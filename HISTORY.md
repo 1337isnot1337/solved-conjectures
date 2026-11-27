@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Eventual stability among inequivalent deep holes
+
+Codex derived a necessary and sufficient shell criterion in the WadeDavis research session and computed the local Gaussian energy gain at Leech holes of type $`A_{24}`$. The unranked supplement extends Cinna Davis’s Leech localization argument and uses Ichiro Shimada’s lattice data. [Proof](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Review and exact coefficients](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
+
 ## 2026-11-27 — Liang’s slice-period conjecture
 
 Refuted Liang’s Conjecture 4.3 with arbitrarily large examples in 0.3102 and identified the actual least periods for the counterexample slice. [Proof](results/liang-slice-period/PROOF.md) · [Audit](results/liang-slice-period/AUDIT.md).

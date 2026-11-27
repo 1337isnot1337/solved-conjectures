@@ -43,6 +43,8 @@ The one-page book exception and the order-15 circulant exception appeared earlie
 
 Gaussian cold spots approach deep holes of type $`E_8^3`$ as the Gaussian parameter tends to infinity. The proof accounts for the displacement of a minimizer from its limiting hole and calculates the resulting leading coefficient. An exact comparison over all 23 types places $`D_{24}`$ second. [Proof](leech-cold-spots-asymptotics/PROOF.md) · [Review](leech-cold-spots-asymptotics/REVIEW.md) · [Reproduction](leech-cold-spots-asymptotics/README.md)
 
+The supplement gives a necessary and sufficient criterion for a fixed hole to remain a global minimizer when other holes have unbalanced shells. Exact enumeration gives the energy and displacement coefficients at the local Leech $`A_{24}`$ branch. [Mixed-hole proof](leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Review and reproduction](leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
+
 ## Prior results and quantitative refinements
 
 The original unrestricted Estrugo–Pastine star-center degree question follows from earlier work. The manuscript proves two stronger quantitative statements with their own constructions. The explicit Hurlbert–Kamat witness falls under an earlier announced construction by Feghali, Johnson and Thomas. The source audit identifies the relevant priority decisions. [Estrugo–Pastine refinements](estrugo-pastine-star-center-degree/README.md) · [Hurlbert–Kamat witness](hurlbert-kamat/README.md) · [Other prior-resolution searches](2026-11-26-named-conjecture-screen/README.md)

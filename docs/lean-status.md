@@ -8,6 +8,8 @@ Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of
 
 **Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)
 
+The mixed-hole stability criterion and the local $`A_{24}`$ expansion have written proofs and no Lean formalization. Rational enumeration verifies the two Leech coefficients. [Supplement and checks](research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
+
 ## Pattern packing and four-cycle partial results
 
 The [packing cutoff construction](../results/blitvic-kammoun-steingrimsson-packing-cutoff/) and [four-cycle regularity obstructions](../results/erdos-85-four-cycle-threshold/) have written proofs and exact checks. No formalization is registered for either package.
