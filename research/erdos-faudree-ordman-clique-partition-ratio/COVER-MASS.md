@@ -89,3 +89,24 @@ the [thirteen-cover exclusion](COVER-MULTIPLICITY.md) and
 Erdős–Goodman–Pósa for larger cover numbers, this leaves cover
 numbers four through ten. No evaluation of their maximum is
 claimed here.
+
+## An explicit upper endpoint for the unrestricted ratio
+
+The same inequality yields a stronger global upper endpoint.
+For four covers, solve the quadratic on $`0\le f\le1/4`$;
+its smaller root is $`(8-\sqrt{19})/24`$. The inequality
+forces f to be at most this root. For five or six covers,
+$`f\ge3/16`$ would make the left side of the inequality at
+least 1/5 and the right side at most 6/64, impossible.
+Their ratios are therefore at most 3/80 and 1/32,
+respectively. At seven or more covers, the
+Erdős–Goodman–Pósa bound gives at most 1/28. At most
+three covers already give a ratio below 1/56. Consequently
+the unrestricted limiting ratio R satisfies
+
+```math
+\frac1{56}\le R\le \frac{8-\sqrt{19}}{96}.
+```
+
+The endpoint on the right is approximately 0.03793.
+This is not asserted to be attainable.
