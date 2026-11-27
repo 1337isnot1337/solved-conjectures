@@ -6,11 +6,7 @@ For a triangle-free graphon with positive edge density, the following are equiva
 2. U₁=m.
 3. For almost every root x, its single random adjacency bit gives an optimal cut (in the fractional sense if W is nonbinary).
 
-Moreover, if these hold, W is either complete bipartite or regular with
-
-    m = p−2p²,
-
-where p is ordered edge density. This identifies an exact barrier for [Erdős #23](https://www.erdosproblems.com/23): **a finite-root certificate of U_k≤2/25 throughout the middle band exists if and only if the true supremum of m in that band is strictly below 2/25.** Mere pointwise convergence, even at the [sharp sampling rate](OPTIMAL-ROOT-RATE.md), does not remove the strict-gap requirement.
+Moreover, the only positive-density triangle-free graphons with these properties are complete bipartite graphons (the two parts need not balance) and the balanced pentagon blow-up. In the nonbipartite case the one-bit condition first forces regularity and m=p−2p², then forces the balanced pentagon. This identifies an exact barrier for [Erdős #23](https://www.erdosproblems.com/23): **a finite-root certificate of U_k≤2/25 throughout the middle band exists if and only if the true supremum of m in that band is strictly below 2/25.** Mere pointwise convergence, even at the [sharp sampling rate](OPTIMAL-ROOT-RATE.md), does not remove the strict-gap requirement.
 
 ## Collapse to repeated rows
 
@@ -36,9 +32,19 @@ Set r=√c. The nonnegative symmetric kernel of T_W² has constant row sum r², 
 
 If W is not bipartite, it is therefore regular with d=p, and the one-bit formula gives m=p−2p². If W is bipartite, m=0. For a fractional zero-cost cut, every positive edge has both endpoints deterministic with opposite signs; since almost every vertex has positive degree by connectedness, the optimal single-bit selector W_x must take only zero and one almost everywhere. A neighborhood cut in a connected bipartite graphon can have cost zero only if the neighborhood is the entire opposite side modulo null sets: every omitted point of that side has positive degree to the first side and would leave positive monochromatic mass. Hence W is complete bipartite. Both conclusions use only information about exact equality, not a stability estimate.
 
+## Classify the regular nonbipartite case
+
+Random splitting gives m≤p/2, so m=p−2p² forces p≥1/4. The [Balogh–Clemen–Lidický universal bound](https://arxiv.org/html/2103.14179), m≤2/23.5, rules out p∈[1/4,0.3197], since p−2p²>0.115 there. Their dense-tail theorem then gives m≤2/25. Both results transfer to graphons by sampling, and the edge-density comparison in the dense tail is strict here. The formula for m on p≥1/4 yields p≥2/5.
+
+Because W is nonbipartite, some odd cycle has positive homomorphism density. Otherwise every finite random graph sampled from W would be bipartite almost surely, forcing m=0 by cut continuity and hence bipartiteness by cut attainment. Let ℓ≥5 be the least odd length with positive density. For almost every such cycle of roots x₀,…,x_(ℓ−1), a new vertex has at most two neighbors in its support on the cycle, and any such pair is at cyclic distance two. To see this, joining two roots by the new vertex and using their odd-length cycle arc gives a shorter odd cycle whenever its complementary even arc exceeds two. The smaller odd-cycle density is zero, so by Fubini no such positive-edge configuration exists almost surely. Three distinct roots cannot be mutually at cyclic distance two on an odd cycle of length at least five. Thus ℓp=∑d(x_i)≤2. It follows that ℓ=5 and p=2/5, and almost every additional vertex has exactly two incident root edges of weight one.
+
+Partition vertices by their two root neighbors, with class V_i for the pair x_(i−1),x_(i+1). Nonconsecutive classes (and equal classes) share a root, so edges only run between consecutive classes, by triangle-freeness and Fubini. All five classes have positive mass, or the template would be bipartite. If w_i=|V_i|, regularity gives w_(i−1)+w_(i+1)≥2/5 for each i. Summing shows equality at all five; regularity then requires every allowed cross pair to have weight one. The five equations give w_i=1/5 (subtract two equations to get periodicity by four, which is coprime to five). Thus W is exactly the balanced pentagon blow-up up to equivalence.
+
+Conversely every complete bipartite graphon, every empty graphon, and the balanced pentagon have an optimal one-bit cut. For the pentagon a neighborhood cut leaves only one edge between blow-up classes uncut, and every whole-class cut leaves at least one; multilinear rounding shows that splitting classes cannot improve it.
+
 ## The middle-band consequence
 
-The middle-density interval lies inside [0.24,0.32], where p−2p²≥0.1152>2/25. Thus any triangle-free graphon in that interval with m≥2/25 must have U_k>m for every finite k; it is not complete bipartite. In particular an exact certificate via some U_k excludes equality as well as violation in the band. Compactness of the triangle-free density band in cut distance and continuity of m upgrade that exclusion to a strict uniform gap. Conversely, a strict band gap yields such a certificate for sufficiently large k by the uniform [root sampling theorem](OPTIMAL-ROOT-RATE.md).
+The middle-density interval lies inside [0.24,0.32], where p−2p²≥0.1152>2/25. Thus any triangle-free graphon in that interval with m=2/25 must have U_k>m for every finite k; it is not complete bipartite. Violations m>2/25 are already excluded by U_k≥m whenever such a certificate is available. In particular an exact certificate via some U_k excludes equality as well as violation in the band. Compactness of the triangle-free density band in cut distance and continuity of m upgrade that exclusion to a strict uniform gap. Conversely, a strict band gap yields such a certificate for sufficiently large k by the uniform [root sampling theorem](OPTIMAL-ROOT-RATE.md).
 
 This is a necessary and sufficient criterion for the *rooted-envelope approach* to an exact finite certificate. It neither proves the strict gap nor excludes other exact certificates.
 
