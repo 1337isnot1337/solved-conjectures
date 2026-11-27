@@ -2,7 +2,7 @@
 
 ## Exact questions and priority
 
-On printed p. 509 of [Erdős–Galvin–Hajnal (1975)](https://users.renyi.hu/~p_erdos/1975-17.pdf), Problem 13 asks two consistency questions. Write \(L(\lambda)\) for the existence of a linear triple system on \(\lambda\) vertices with chromatic number \(\omega_1\), where linearity means that distinct triples share at most one vertex.
+On printed p. 509 of [Erdős–Galvin–Hajnal (1975)](https://www.renyi.hu/~p_erdos/1975-24.pdf#page=85), Problem 13 asks two consistency questions. Write \(L(\lambda)\) for the existence of a linear triple system on \(\lambda\) vertices with chromatic number \(\omega_1\), where linearity means that distinct triples share at most one vertex.
 
 1. Is \(\neg L(2^{\aleph_0})\) consistent with \(2^{\aleph_0}>\aleph_1\)?
 2. Is \(\neg L(2^{\aleph_1})\) consistent with ZFC?
