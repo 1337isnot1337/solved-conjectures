@@ -1,6 +1,6 @@
 # Detecting a four-arm spider from ordinary vertex distances
 
-For four independently chosen positive integer arm lengths in the interval from 1 to $`t`$, the ordinary histogram of all unordered vertex-pair distances identifies the subdivided four-arm star among **all** trees with probability $`1-O(1/t)`$. The observer needs neither its degree sequence nor the assurance that the input was a spider. The proof below includes a finite linear-algebra calculation. This research test concerns reconstructing a tree from its ordinary distance histogram. Existing CSF results already distinguish every spider. The full histogram-only statement for arbitrary reduced trees and Stanley's full CSF conjecture both remain open in this campaign. [Earlier certificate and definitions](PATH-DISTANCE-CERTIFICATE.md) · [Primary sources and review](PATH-DISTANCE-REVIEW.md) · [Stanley's issue](https://github.com/1337isnot1337/solved-conjectures/issues/315)
+For four independently chosen positive integer arm lengths in the interval from 1 to $`t`$, the ordinary histogram of all unordered vertex-pair distances identifies the subdivided four-arm star among **all** trees with probability $`1-O(1/t)`$. The observer needs neither its degree sequence nor the assurance that the input was a spider. The proof below includes a finite linear-algebra calculation. This research test concerns reconstructing a tree from its ordinary distance histogram. Existing CSF results already distinguish every spider. The full histogram-only statement for arbitrary reduced trees and Stanley's full CSF conjecture both remain open in this campaign. [Decision criterion for every fixed topology](PATH-HISTOGRAM-DECISION.md) · [Earlier certificate and definitions](PATH-DISTANCE-CERTIFICATE.md) · [Primary sources and review](PATH-DISTANCE-REVIEW.md) · [Stanley's issue](https://github.com/1337isnot1337/solved-conjectures/issues/315)
 
 ## All possible competitors
 
@@ -49,6 +49,18 @@ A structural identity gives another way of approaching the cancellations. For a 
 ```
 
 Indeed, expand the exponential for a vertex pair as the product of $`1+z_e`$ along its path. For a nonempty collinear set of edges, every path containing them runs between the two exterior components beyond the first and last edges. For a singleton these are the two sides of that edge. The sum of the defects over either exterior component is $`-1`$, since it has precisely one edge to its complement. So the coefficient is $`(-1)^2=1`$. No path contains a noncollinear set. In particular the difference between $`\exp(s\sum_e l_e)-1`$ and the displayed expression has cubic coefficient equal to the sum of products over noncollinear triples of edges. It is the first Taylor coefficient that can distinguish branching arrangements at fixed total length. The identity is not a proof of reconstruction in higher valence.
+
+## Why rank three also arises for larger trees
+
+Suppose the reduced target has $`k`$ vertices, one hub of degree four, and all other hubs trivalent. With all reduced pair distances distinct, its support has $`\binom{k}{2}`$ elements and $`M=k+3`$. In any competitor with $`k'`$ reduced vertices, the support forces $`k'\ge k`$. The deficit $`M-k'`$ is the sum of $`w_v^2-1`$ over the hubs; each summand is zero or at least three. If $`k'=k`$, the competitor must have one weight-two hub and all others trivalent. The earlier degree-and-path theorem then applies whenever the target passes its generic certificate. If $`k'>k`$, necessarily $`k'=k+3`$ and the competitor is entirely trivalent. Its $`k+2`$ edge parameters must produce the target's $`k-1`$ independent edge coordinates. The matched-path projection argument therefore reduces every potentially full-dimensional ambiguity to a collision space of rank at most three, regardless of $`k`$.
+
+There is a further arithmetic constraint. The generic target has exactly $`k-1`$ absolute coefficients of size two, from pairs with the unique four-valent hub, and all other absolute coefficients are one. The trivalent competitor has only unit pair contributions. Across its equal-distance classes the number of opposite-sign pairs that must be cancelled is
+```math
+\frac12\left[\binom{k+3}{2}-\binom{k}{2}-(k-1)\right]=k+2.
+```
+This constraint counts the minimum of the two sign counts in each actual class, including classes with zero net coefficient. It does not require the chosen cancelling pairs to be unique.
+
+If a family of positive competitor metrics approaches a boundary where some of its edges shrink to zero while all target edges stay positive, its sufficiently short distances occur only inside the components of collapsing edges. For those distances the aggregate signed distribution over these components must vanish exactly, since all target distances are bounded away from zero. A single collapsing edge cannot meet this condition. Two equally short disjoint edges, one joining trivalent hubs and one pendant at a trivalent hub, can already cancel each other at that short distance. Recognition of every one-four-valent core would require controlling the remaining paths as well. The census above treats only the four-arm spider.
 
 ## Reproduction and scope
 
