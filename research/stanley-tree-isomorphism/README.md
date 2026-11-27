@@ -101,7 +101,7 @@ Let $P=\prod_{v\in V(K)}x_{w(v)}$. Divide each layer by $P$ and work in
 Laurent monomials in the $x_i$ with coefficients in $\mathbb Q[z]$.
 All numerator and denominator multisets below refer to the Laurent monomial
 in lowest terms. At grade one and degree zero in $z$, an edge of type
-$\{a,b\}$ contributes $x_{a+b}/(x_ax_b)$. Since $a+b>\max(a,b)$,
+$`\{a,b\}`$ contributes $x_{a+b}/(x_ax_b)$. Since $a+b>\max(a,b)$,
 the coefficient recovers the multiplicity of that type.
 
 At grade two, incident edges of vertex weights $a,b,c$ contribute
@@ -111,7 +111,7 @@ At grade two, incident edges of vertex weights $a,b,c$ contribute
 \qquad r=a+b+c.
 ```
 
-Disjoint edges of types $\{a,b\}$ and $\{c,d\}$ contribute
+Disjoint edges of types $`\{a,b\}`$ and $`\{c,d\}`$ contribute
 
 ```math
 \frac{(x_{a+b}-zx_{a+b-1})(x_{c+d}-zx_{c+d-1})}{x_ax_bx_cx_d}.
@@ -135,7 +135,7 @@ Record and subtract the full contributions of all pairs recovered here.
 both of its own endpoint weights. The sum from the pair containing a
 largest endpoint exceeds all four endpoint weights. Hence there can be
 only one canceled factor, from the sum on the other pair. Such pairs have
-types $\{a,b\}$ and $\{s,d\}$ with $s=a+b$, and $r=s+d$. In particular
+types $`\{a,b\}`$ and $`\{s,d\}`$ with $s=a+b$, and $r=s+d$. In particular
 the identification of the pair whose sum cancels is unique. The normalized
 coefficient of $-z$ for that pair is the sum of
 
@@ -149,18 +149,18 @@ Here $s-1>\max(a,b)$, $r>\max(a,b,s,d)$, and $r-1>\max(a,b,d)$.
 If $d\ne s-1$, the second monomial has two numerator factors and the
 first has only one. Its larger numerator subscript is $r$ and the smaller
 one is $s-1$. Removing one occurrence of $s$ from the denominator gives
-$\{a,b,d\}$, where $d=r-s$. This recovers the types and their count from
+$`\{a,b,d\}`$, where $d=r-s$. This recovers the types and their count from
 the coefficient. No incident pair or pair with $d=s-1$ contributes to
 this monomial after the first subtraction. Record and subtract the full
 contributions of all pairs recovered here.
 
 **Pairs with $d=s-1$.** Index these by the triple of residual weights
-$\tau=\{a,b,d\}$. There is at most one type pair of this form for
+$`\tau=\{a,b,d\}`$. There is at most one type pair of this form for
 a given $\tau$, because $d$ is strictly largest. Let $C_\tau$ be its count
 (zero when no such type pair exists). Let $A_\tau$ count incident edge
 pairs with vertex-weight triple $\tau$, let $r_\tau$ be the sum of the
 triple and let $P_\tau=\prod_{i\in\tau}x_i$. When the exceptional type
-pair exists, set $L(\tau)=\{a,b,s\}$. Its weight sum is $r_\tau+1$.
+pair exists, set $`L(\tau)=\{a,b,s\}`$. Its weight sum is $r_\tau+1$.
 
 In the remaining grade-two polynomial let $H_\tau$ be the constant
 coefficient at $x_{r_\tau}/P_\tau$ and let $J_\tau$ be the coefficient
@@ -182,15 +182,15 @@ This completes the recovery for arbitrary proper trees. The degree-two
 coefficient in $z$ is extra data for this argument.
 
 The constant layer alone cannot separate a pair of disjoint edges of
-types $\{2,2\}$ and $\{4,3\}$ from an incident pair with weights
-$\{2,2,3\}$. Both normalize to $x_7/(x_2^2x_3)$ at $z=0$.
+types $`\{2,2\}`$ and $`\{4,3\}`$ from an incident pair with weights
+$`\{2,2,3\}`$. Both normalize to $x_7/(x_2^2x_3)$ at $z=0$.
 This pair also exhibits the exceptional $d=s-1$ cancellation, for which
-the degree-one coefficient moves information to the triple $\{2,2,4\}$.
+the degree-one coefficient moves information to the triple $`\{2,2,4\}`$.
 
 ## Reconstructing the core under the type-class condition
 
 Write $m_t$ for the size of type class $t$. Its edges are pairwise incident
-exactly when the disjoint count for the unordered pair $\{t,t\}$ is
+exactly when the disjoint count for the unordered pair $`\{t,t\}`$ is
 zero. In a tree any set of two or more pairwise incident edges forms a
 star. Two such edges share a vertex, and an edge that meets both away
 from that vertex would form a triangle. Every singleton type class is also a
@@ -239,7 +239,7 @@ of the tree is the homogeneous degree of $X_T$, so a competing tree
 necessarily falls into the same reconstructed class.
 
 For example, take a four-vertex core path of weights $2,3,2,5$. It has a
-repeated weight at a nonleaf and a repeated type $\{2,3\}$ which forms a
+repeated weight at a nonleaf and a repeated type $`\{2,3\}`$ which forms a
 two-edge star. Attach an arbitrarily large tree using new, distinct
 weights at its vertices. The attachment introduces only new singleton
 types. If the attached tree has noncaterpillar structure and sufficient
@@ -249,7 +249,7 @@ multiplicity-isolated hypothesis and the diameter-five theorem.
 ## Audit boundary
 
 The lower bound of two on core vertex weights supports the grading by
-number of non-$z$ factors and the separation of Laurent monomials after
+number of factors other than $`z`$ and the separation of Laurent monomials after
 one decrement. Positivity prevents double cancellation in a disjoint
 pair's constant term. The final recursion decreases total triple weight. It allows coincident sums,
 a repeated type within a disjoint pair, and repeated endpoint weights.
