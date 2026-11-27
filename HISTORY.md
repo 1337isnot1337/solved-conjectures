@@ -134,6 +134,10 @@ The [stable domination threshold](results/de-berg-sadhukhan-spieksma-stable-domi
 
 The [two-token chromatic counterexample](results/fernandes-two-token-chromatic/) refutes Conjecture A.1 in the 2026 paper by Fernandes et al. Five cycle factors give a five-coloring of the two-token graph, while the original eleven vertices require six colors. The independently reviewed proof also gives arbitrarily large counterexamples of both parities by complete joins. No Lean formalization was used. [Discovery and review issue #991](https://github.com/1337isnot1337/solved-conjectures/issues/991).
 
+## 2026-11-27 — Lean verification of the Byrne–Tait density gap
+
+Lean verifies Cinna Davis’s proof for every word length at least two, including nonnormal abelian subgroups. The strict build, axiom audit and stock-kernel replay passed. [Proof and verification receipt](results/byrne-tait-odd-sidon/README.md#lean-verification).
+
 ## 2026-11-27 — The sharp complementary algebraic-connectivity constant
 
 The dandelion theorem yields the exact universal lower bound on the larger algebraic connectivity of a graph and its complement. The four-vertex path uniquely attains the constant proposed in Afshari, Akbari, Moghaddamzadeh and Mohar’s 2018 closing question. [Proof and primary-source review](results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md)

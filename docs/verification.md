@@ -247,7 +247,7 @@ Run `python3 results/erz-big-descent-schur/verify.py` for the direct permutation
 
 ## Sidon products, pattern packings and the four-cycle threshold
 
-Run `python3 results/byrne-tait-odd-sidon/verify.py` for the two finite group actions, `python3 results/blitvic-kammoun-steingrimsson-packing-cutoff/check.py` for direct enumeration from packing windows, and `python3 results/erdos-85-four-cycle-threshold/check_affine_paths.py` for the affine path and charging tests. Each proof has a separate review identifying the arguments that cover its unrestricted parameters.
+The [Byrne–Tait verification instructions](../results/byrne-tait-odd-sidon/README.md#lean-verification) reproduce the strict proof build, axiom audit and kernel replay. Run `python3 results/byrne-tait-odd-sidon/verify.py` for the two finite group actions, `python3 results/blitvic-kammoun-steingrimsson-packing-cutoff/check.py` for direct enumeration from packing windows, and `python3 results/erdos-85-four-cycle-threshold/check_affine_paths.py` for the affine path and charging tests. Each proof has a separate review identifying the arguments that cover its unrestricted parameters.
 
 ## Book domination roots and monophonic circulants
 
