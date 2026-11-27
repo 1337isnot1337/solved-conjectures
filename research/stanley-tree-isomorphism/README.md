@@ -1,5 +1,8 @@
 # Stanley’s tree-isomorphism conjecture
 
+A balanced-edge reconstruction improves the sufficient order for an arbitrary edge subdivision. If the larger and smaller original end components have orders $`g\ge h`$, a total of $`\max(2g-1,2g+h-3)`$ vertices suffices. The exact proof covers arbitrary endpoint degrees at a balanced or nearly balanced cut. Independently, a unique centroid with $`b-1`$ or more pendant leaves determines the tree when the largest branch has order $`b`$. Both results are written, internally reviewed partial theorems with exact finite checks. [Balanced-edge proof](BALANCED-ARMS.md) · [Review](BALANCED-ARMS-REVIEW.md) · [Checker](verify_balanced_paths.py) · [Leaf-centroid proof](LEAF-HUB.md) · [Review](LEAF-HUB-REVIEW.md) · [Checker](verify_leaf_hub.py)
+
+
 For any finite tree and any chosen edge, replacing that edge by a sufficiently long path gives a tree recognized among all trees by its ordinary chromatic symmetric function. If removing the edge leaves components of orders $`c,d`$, a final order of at least $`4\max(c,d)-3`$ suffices. The proof recovers both rooted ends from the unmarked polynomial. [Long-subdivision theorem](LONG-SUBDIVISION.md) · [Independent review](LONG-SUBDIVISION-REVIEW.md) · [Exact checks](verify_long_subdivision.py)
 
 
