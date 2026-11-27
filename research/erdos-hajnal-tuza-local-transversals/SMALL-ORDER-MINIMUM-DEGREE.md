@@ -111,3 +111,20 @@ This does not exhaust the all-shared equality case.
 It shows such an example needs a vertex-incidence
 structure of minimum degree four as well as the
 earlier unique exterior partitions.
+
+## A sharper estimate for degree at most two
+
+For each degree-at-most-two vertex in a primary petal \(W_x\)
+there is at most one nonprimary edge available for the
+secondary systems. If it does not serve both sides of any
+pivot, then for every \(y\ne x\) at least one system omits
+the vertex. If it serves both sides of a pivot \(y\), then
+it serves neither side anywhere else. That forces at least
+\(2(t-1)\) omissions. In both cases there are at least \(t\)
+omissions among the \(2t\) systems at other pivots.
+The total count is consequently at most \(2(t+1)h/t\)
+such vertices in the primary petals, and at most
+\((3+2/t)h\) outside any minimum pair.
+Three hyperedge-disjoint minimum pairs suffice to cover all
+vertices of degree at most two in this count. Hence there
+are at most \((9+6/t)h\) globally.
