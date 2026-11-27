@@ -8,6 +8,10 @@ Answered Liang’s Open Problem 6.2 with a residue rule for the bulk and an exac
 
 Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).
 
+## 2026-11-26 — Contributor credit for the proof of Currie’s Conjecture 19
+
+The catalogue now credits @aadrianvv for the proof and reproducible checks and records Claude Opus 5.5 as co-author of the original commit. [Result](results/currie-conjecture-19/) · [Contribution](https://github.com/1337isnot1337/solved-conjectures/pull/154) · [Original commit](https://github.com/1337isnot1337/solved-conjectures/commit/32efcb11ade9c76c325ee5fb7089c6c97dc3992c)
+
 ## 2026-11-26 — Disk averages for convex tilings
 
 Answered Lángi and Wang’s Question 5.1 for cells wholly contained in expanding disks. The lower mean number of sides is at most six, and one uniformly fat convex tiling has infinite upper mean. The proof also settles the convex case of the Steinhaus minimax problem for tiles with diameters bounded below. [Proof and scope](results/langi-wang-convex-tiling/) · [Issue #361](https://github.com/1337isnot1337/solved-conjectures/issues/361)

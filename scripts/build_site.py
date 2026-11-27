@@ -35,9 +35,23 @@ STATUS_LABELS = {
     "partial": "Lean: partial formalization",
     "none": "Lean: not formalized",
 }
+
+
+@dataclass(frozen=True)
+class ExternalCredit:
+    name: str
+    url: str
+    preparation: str = ""
+
+
 EXTERNAL_CREDIT = {
-    "brown-cameron-stability": ("@adamben04", "https://github.com/adamben04"),
-    "graffiti-pc-318": (
+    "brown-cameron-stability": ExternalCredit("@adamben04", "https://github.com/adamben04"),
+    "currie-conjecture-19": ExternalCredit(
+        "@aadrianvv",
+        f"{REPOSITORY}/pull/154",
+        "The contributor prepared the proof and checks with Claude Opus 5.5, credited as co-author of the original commit.",
+    ),
+    "graffiti-pc-318": ExternalCredit(
         "@JesterInABarrel",
         "https://x.com/JesterInABarrel/status/2123233964827812334",
     ),
@@ -690,8 +704,11 @@ class Builder:
         if route.startswith("results/"):
             slug = route.split("/")[1]
             if slug in EXTERNAL_CREDIT:
-                name, url = EXTERNAL_CREDIT[slug]
-                structured["creditText"] = f"Result and proof credited to {name}; original report: {url}"
+                attribution = EXTERNAL_CREDIT[slug]
+                structured["creditText"] = (
+                    f"Result and proof credited to {attribution.name}; original report: {attribution.url} "
+                    f"{attribution.preparation}"
+                ).rstrip()
         json_ld = json.dumps(structured, ensure_ascii=False).replace("<", "\\u003c")
         return f'''<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -842,7 +859,7 @@ class Builder:
                 role = "Lean details"
         title = (f"{result.title}: {role}" if result and role else display_title) + f" | {SITE_NAME}"
         if result:
-            credit_prefix = f"Proof credited to {EXTERNAL_CREDIT[result.slug][0]}. " if result.slug in EXTERNAL_CREDIT else ""
+            credit_prefix = f"Proof credited to {EXTERNAL_CREDIT[result.slug].name}. " if result.slug in EXTERNAL_CREDIT else ""
             scope_prefix = "Partial result on an open problem. " if result.scope == "partial" else ""
             role_prefix = role + ". " if role else ""
             snippet = result.summary
@@ -858,8 +875,9 @@ class Builder:
             scope = '<p class="scope-note">This entry is a partial result on an open problem. It does not claim a solution of the general conjecture.</p>' if result.scope == "partial" else ""
             credit = ""
             if result.slug in EXTERNAL_CREDIT:
-                name, url = EXTERNAL_CREDIT[result.slug]
-                credit = f'<p class="credit-note">Result and proof credited to <a href="{url}">{name}</a>. This is an external contribution.</p>'
+                attribution = EXTERNAL_CREDIT[result.slug]
+                detail = attribution.preparation or "This is an external contribution."
+                credit = f'<p class="credit-note">Result and proof credited to <a href="{escape(attribution.url)}">{escape(attribution.name)}</a>. {escape(detail)}</p>'
         else:
             description = excerpt(f"{display_title} for the solved-conjectures research collection. Read source statements, reproducible checks, and the precise scope of formalization.")
             parent = f'<a href="{self.url()}">All results</a><span aria-hidden="true">/</span><span>{escape(display_title)}</span>'
