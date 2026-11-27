@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Cameron–Clow’s 2K₂-free path-perfect conjecture
+
+The [two-clique transversal construction](results/cameron-clow-twok2-free-path-perfect/) refutes the 2K₂-free arm of Cameron–Clow’s Conjecture 7.3 and their P₅-free Conjecture 7.4. The least forbidden induced-path order is five. The audit credits a separate deduction from Rzążewski’s selector gadgets. No Lean verification was performed. [Discovery and review issue #1007](https://github.com/1337isnot1337/solved-conjectures/issues/1007).
+
 ## 2026-11-27 UTC — Cameron–Clow’s claw-free path-perfect conjecture
 
 The [claw-free counterexample](results/cameron-clow-claw-free-path-perfect/) answers Cameron and Clow’s forbidden-star question. The line graph of a three-branch root is claw-free, is 4-vertex-critical and has no Hamilton path. Its path-span chromatic number is exactly three, and triangle replacements give an infinite family. No Lean verification was performed. [Discovery and review issue #1005](https://github.com/1337isnot1337/solved-conjectures/issues/1005).

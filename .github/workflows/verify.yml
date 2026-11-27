@@ -42,6 +42,9 @@ jobs:
       - name: Check the claw-free path-perfect counterexample
         run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
 
+      - name: Check the 2K2-free path-perfect counterexamples
+        run: python3 results/cameron-clow-twok2-free-path-perfect/verify.py
+
       - name: Check both graphical dist orientation counts
         run: |
           python3 results/alexandersson-graphical-dist/check.py
