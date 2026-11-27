@@ -6,7 +6,11 @@ Run `python3 results/soukup-complementary-graph-product/verify_components.py` to
 
 Run `python3 results/soukup-complementary-graph-product/verify_boolean_orders.py` to exhaust the 16 symmetric Boolean truth tables obtained from three orders. The [independent review](../results/soukup-complementary-graph-product/BOOLEAN-ORDERS-REVIEW.md) covers the uncountable restriction and the sharp four-color bound.
 
+Run `python3 results/soukup-complementary-graph-product/verify_grid_patterns.py` to check both grid orientations, every permutation pair through arity six and a finite construction of reserved rational intervals. Run `python3 results/soukup-complementary-graph-product/verify_ordinal_decoders.py` to check the two-sign certificates on six vertices, disjoint-rectangle tests and the six-cycle obstruction. [Grid review](../results/soukup-complementary-graph-product/GRID-REVIEW.md) · [Ordinal comparison review](../results/soukup-complementary-graph-product/ORDINAL-REVIEW.md)
+
 ## Bourin’s crossed-Heinz inequality
+
+The [bounded-input-rank review](../results/bourin-crossed-heinz/INPUT-RANK-REVIEW.md) records two independent rational checks of the resolvent and the comparison budget. Run `python3 results/bourin-crossed-heinz/verify_fixed_input_rank.py` and `python3 results/bourin-crossed-heinz/verify_input_rank_schur.py`.
 
 The [finite-witness and computation proofs](../results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md) have exact arithmetic checks. Run `python3 results/bourin-crossed-heinz/verify_finite_witness.py` for the compressed test frames and `python3 results/bourin-crossed-heinz/verify_gap_grid.py` for the endpoint, threshold and grid identities.
 
@@ -146,6 +150,8 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py` to check recovery of the full labeled core and its internal lengths from oriented cut sizes across 267 reduced trees. Two controls exercise cuts into equal halves. [Verifier](research-results/stanley-tree-subdivisions/verify_core_splits.py) · [Mathematical review](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_subdivision_density.py` and `python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_endpoint_windows.py` for independent checks of oriented edge cuts, assigned lengths and rooted cap recovery. [Verification scope](research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-REVIEW.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_height_relation_kernel.py` and `python3 docs/research-results/stanley-tree-subdivisions/verify_distance_cancellation.py` to check the signed path equations, deletion and change of mark, and the ordinary histogram cancellation ranks. [Verification scope](research-results/stanley-tree-subdivisions/DISTANCE-NULLITY-REVIEW.md)
 

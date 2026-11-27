@@ -1,5 +1,19 @@
 # History
 
+## 27 November 2026 — Independent subdivision with arbitrary terminal trees
+
+Fix any reduced tree skeleton with at least two branch vertices and prescribe an arbitrary rooted decoration at each end. Vary all exterior arm orders and any selected internal path lengths independently through $`[1,t]`$. Among the $`p`$-parameter assignments, all except $`O(t^{p-1})`$ give trees identified among all finite trees by the ordinary chromatic symmetric function. The other internal paths may have any fixed positive lengths. The result extends the existing unranked Stanley campaign. [Subdivision theorem](docs/research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-DENSITY.md) · [Review and checks](docs/research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-REVIEW.md)
+
+## 27 November 2026 — Exact decisions for Bourin’s inequality at bounded input rank
+
+With one input of prescribed bounded rank, a strict violation of any size has a finite-dimensional witness of order quadratic in that rank. At each fixed rational exponent this decides the bounded-rank inequality across all finite dimensions and all unitarily invariant norms. One rank-one input satisfies every comparison. The unrestricted conjecture remains open. Two independent rational checks accompany the written proof. [Theorem](results/bourin-crossed-heinz/FIXED-INPUT-RANK.md) · [Review and source comparison](results/bourin-crossed-heinz/INPUT-RANK-REVIEW.md)
+
+## 27 November 2026 — Sharp ordinal thresholds for graph representations
+
+A new ZFC theorem forces an induced countably infinite matching in one color for every countable edge coloring of either factor of a putative witness on any uncountable subset. It rules out all open representations by countably many well-orders shorter than the square of the first uncountable ordinal. [Induced matching and chromatic equality](results/soukup-complementary-graph-product/DIRECTED-OPEN.md)
+
+For countably many well-orders with an open edge predicate, the semi-open coloring axiom is equivalent to a classification of the uncountable restrictions below the ordinal square of the first uncountable ordinal. At the square every graph on that cardinal is representable. The lower bound uses a grid theorem for Aronszajn lines, which also determines the sharp finite-arity comparison palettes under BPFA. Soukup’s unrestricted graph problem remains open. [Thresholds](results/soukup-complementary-graph-product/SHORT-ORDINALS.md) · [Axiom equivalence](results/soukup-complementary-graph-product/SOCA-CONVERSE.md) · [Reviews and checks](results/soukup-complementary-graph-product/ORDINAL-REVIEW.md)
+
 ## 27 November 2026 — Boolean order representations of complementary graph products
 
 Under the bounded proper forcing axiom, a graph represented by any finite Boolean function of order comparisons satisfies the exact chromatic product equality with its complement on every infinite set of size at most the first uncountable cardinal. The proof reduces every such uncountable representation to at most three order types and four unordered pair colors. Galvin and Shelah’s 1973 construction supplies the sharp lower bound. Soukup’s general ZFC problem remains open. [Theorem](results/soukup-complementary-graph-product/BOOLEAN-ORDERS.md) · [Sources and independent review](results/soukup-complementary-graph-product/BOOLEAN-ORDERS-REVIEW.md)

@@ -18,6 +18,10 @@ jobs:
         run: python3 results/soukup-complementary-graph-product/verify_components.py
       - name: Check all Boolean decoders for three order comparisons
         run: python3 results/soukup-complementary-graph-product/verify_boolean_orders.py
+      - name: Check Aronszajn grid patterns and ordinal comparison certificates
+        run: |
+          python3 results/soukup-complementary-graph-product/verify_grid_patterns.py
+          python3 results/soukup-complementary-graph-product/verify_ordinal_decoders.py
       - name: Check the protected recoloring step in Komjáth’s problem
         run: python3 results/komjath-property-b/verify_core_repair.py
       - name: Check Bourin matrix identities and finite-witness bounds
@@ -26,11 +30,15 @@ jobs:
           python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py
           python3 results/bourin-crossed-heinz/verify_finite_witness.py
           python3 results/bourin-crossed-heinz/verify_gap_grid.py
+          python3 results/bourin-crossed-heinz/verify_fixed_input_rank.py
+          python3 results/bourin-crossed-heinz/verify_input_rank_schur.py
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
           python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_deck_length.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_scalar_pendants.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_subdivision_density.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_endpoint_windows.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_height_relation_kernel.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_distance_cancellation.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_parity_root_transfer.py
