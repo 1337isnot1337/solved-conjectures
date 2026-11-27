@@ -1,8 +1,9 @@
-# Short-relation rigidity: no two-valued linear witness
+# Short-relation rigidity: no three-valued linear witness
 
 Let P be a least-cardinality positive-set counterexample to [Erdős #963](https://www.erdosproblems.com/963), and d=d(P), so |P|=2^d. Let R be the rational span of the coefficient vectors of all ternary relations on P whose support has size at most d+1. Then
 
-    R^⊥ contains no nonzero function on P taking at most two real values.
+    R^⊥ contains no nonzero function on P taking at most three real values.
+    Nor can |h| take one to four distinct nonzero values and never vanish.
 
 This is a restriction on the short relation presentation, not on all linear relations of the numbers. In particular, no nonempty proper group of points can have its coefficient sum balanced in every short ternary relation. It excludes least failures made from two sufficiently separated magnitude clouds. The full conjecture remains open.
 
@@ -26,7 +27,7 @@ If h has only one value, it is a nonzero constant and already bounds |P|≤2^(d�
 
 Suppose P=A∪B with B nonempty, all elements of A at most M, and all elements of B in [c−w,c+w], where c>(d+1)max(M,w). Applying a nonzero total integer coefficient on B in a relation of length at most d+1 would contribute at least c from the center. The deviations on B and the entire contribution from A have combined magnitude at most (d+1)max(M,w), which cannot cancel it. Thus the B-indicator would be a forbidden two-valued witness. This shows how magnitude separation creates a forbidden relation-preserving affine lift; it is not a general guarantee that a counterexample decomposes into two such clouds.
 
-## Three levels are almost excluded as well
+## Three levels: first reduce to the equality pattern
 
 One may first negate a point whenever its witness value is negative, changing h to |h|. This does not alter dissociation dimension of any subset and preserves the short-relation witness property with reoriented coefficients. The signed points stay distinct because the original set was positive. All proper-subset numerical bounds remain valid by returning to the corresponding positive subset.
 
@@ -40,6 +41,20 @@ If the three magnitudes are all positive, write them a<b<c. Since a is not an in
 
 If a+b≠c, the two distinct nonzero residues a,b modulo c are dissociated: the only potential balance of support at most two would be a+b=c (the difference is nonzero and smaller than c). Hence one can append a representative from each smaller fiber to a dissociated subset of the c-fiber and preserve dissociation as long as the total size is at most d+1. This would force d_c≤d−2, a contradiction. Thus a three-positive-level witness in a least failure would have to have magnitudes exactly a, ka, (k+1)a for an integer 2≤k≤d−1, with saturated fiber sizes 2^(d−1), 2^(d−2), 2^(d−2), respectively.
 
-The last pattern is not excluded by this argument. In particular, the result is not a proof that every short-relation witness has four or more magnitudes.
+## Strict affine extraction rules out equality
+
+The [eight-point affine theorem](https://erdosproblems.ai/wiki/research/erdos_963/affine_eight) gives affine dimension at least five in any eight distinct reals. To propagate it, realize the points as distinct integers preserving ternary relations. Translate and divide by a power of two until both parities occur. A largest parity class has at least half of the points. Every affinely dissociated set in it extends by any point of the other class: a balanced relation would have even coefficient at the singleton of opposite parity, hence zero. It follows by induction that (2^r) distinct reals have affine dimension at least (r+2) for (r\ge3). In particular an affine dimension bounded by (j\ge4) permits at most (2^{j-1}-1) points.
+
+In the equality pattern above, (2\le k\le d-1) forces (d\ge3). The [seven-positive-point theorem](https://erdosproblems.ai/wiki/research/erdos_963/positive_seven) rules out a positive-set failure at (d=3). Thus (d\ge4), so the (a)-fiber cannot have (2^{d-1}) points: its affine dimension is its ordinary dimension because every short relation there is balanced. This eliminates the last three-level pattern, including under sign reorientation.
+
+## Four nonzero magnitudes and no zero
+
+For any level (t>0), take representatives from other nonzero magnitudes that form a dissociated set in (\mathbb R/t\mathbb Z). Any short relation combining these representatives with a dissociated set from the (t)-fiber must project to zero modulo (t); the representative coefficients must all vanish, and then the remaining coefficients vanish. Consequently (d_t+q_t\le d), where (q_t) is the largest such number of representatives. If the sum were larger, one could shrink the chosen sets to total size (d+1) so that the short-relation condition applies.
+
+For four levels (a<b<c<e), the last three have (q_t\ge1) since (a\in(0,t)). Also (q_e\ge2): some pair among (a,b,c) does not sum to (e), and the difference of such a pair cannot vanish modulo (e). This bounds the four fiber dimensions by (d,d-1,d-1,d-2), respectively.
+
+Use the [fourteen-point affine theorem and its propagation](https://erdosproblems.ai/wiki/research/erdos_963/affine_fourteen). Put (F(3)=4,F(4)=7) and (F(j)=13\cdot2^{j-5}) for (j\ge5); affine dimension at most (j\ge3) permits at most (F(j)) points. The [documented positive-set bound at dimension four](https://erdosproblems.ai/wiki/research/erdos_963/proof_sketch) already excludes (d\le4) for a least failure. For (d=5) the four fiber bounds sum to (13+7+7+4=31<32); for (d=6) they sum to (26+13+13+7=59<64). For (d\ge7) they sum to ((117/128)2^d<2^d).
+
+This excludes all four-level witnesses that do not vanish after sign reorientation. It does not exclude one zero and three nonzero magnitudes, or prove that the full short-relation kernel cannot occur in a counterexample.
 
 [Coordination #1101](https://github.com/1337isnot1337/solved-conjectures/issues/1101).
