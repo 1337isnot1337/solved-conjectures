@@ -2,7 +2,7 @@
 
 ## Tree reconstruction after long subdivisions
 
-The subdivision and repeated-branch theorems have written proofs and executable finite checks. They have no registered Lean formalization. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
+The balanced-edge, leaf-centroid, earlier subdivision and repeated-branch theorems have written proofs and executable finite checks. Their Lean status is unformalized. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
 
 ## Cioba–Savvas shutout number conjecture
 

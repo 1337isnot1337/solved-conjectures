@@ -6,7 +6,7 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 
 ## Tree reconstruction after long subdivisions
 
-Run the three standard-library Python checks in the [reproduction instructions](research-results/stanley-tree-subdivisions/README.md#reproduction). They compare ordinary cut polynomials, rooted products, subdivision factors and competing branch configurations. [Independent mathematical review](research-results/stanley-tree-subdivisions/REVIEW.md)
+The five standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
 
 ## Circular windows in convex tilings
 

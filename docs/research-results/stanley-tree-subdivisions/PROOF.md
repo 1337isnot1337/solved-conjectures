@@ -1,5 +1,8 @@
 # Recognizing a tree after a long subdivision of any chosen edge
 
+The [balanced-edge proof](BALANCED-ARMS.md) gives a stronger sufficient order for the same subdivision construction and extends the recognition criterion to arbitrary endpoint degrees at a balanced cut.
+
+
 Let $`S`$ be any finite tree with a chosen edge. Deleting that edge gives components of orders $`c,d`$, rooted at the old endpoints. Replace the edge by a path, and let $`n`$ be the resulting number of vertices. If
 
 ```math
