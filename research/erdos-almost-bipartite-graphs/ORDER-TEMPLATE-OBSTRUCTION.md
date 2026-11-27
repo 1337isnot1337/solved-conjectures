@@ -127,3 +127,19 @@ In particular a homomorphic copy of a homogeneous template,
 rather than an embedding, already rules out
 \(h_G(n)=n^{1+o(1)}\). A thin choice of source vertices, whose
 edges no longer come from full fixed templates, is not covered.
+
+It also suffices to have homomorphisms \(T_m\to G\) for
+arbitrarily large finite \(m\), with no compatibility between
+them. The finite form of canonical Ramsey for a prescribed
+ground-set size follows from the infinite form by König's
+lemma: finite equivalence relations with no canonical set
+of that size form a finitely branching tree under restriction,
+so arbitrarily large examples would make an infinite
+counterexample. For any requested template size \(L\), apply the
+finite form to a large domain of a homomorphism, choose \(L\)
+spaced ground points, and leave at least \(2r\) available ground
+points both before and after them. The same filling argument
+embeds the \(L\)-point projected template. There are only
+finitely many coordinate masks, so one mask works for arbitrarily
+large \(L\); restricting those embeddings gives every finite
+order for that single projected template.
