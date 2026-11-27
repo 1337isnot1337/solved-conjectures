@@ -146,6 +146,7 @@ STATUS_LABEL_SLUGS = {
     "Heim–Neuhauser’s plane-partition polynomization conjecture": "heim-neuhauser-plane-partition-polynomization",
     "Heim–Neuhauser’s ordinary D’Arcais root conjecture": "heim-neuhauser-ordinary-darcais-root",
     "Charlton et al.’s distinct D’Arcais zeros question": "darcais-distinct-right-half-plane-zeros",
+    "Lángi–Wang’s disk-average question for convex tilings": "langi-wang-convex-tiling",
     "Bétermin’s FCC/BCC cold-spot conjecture": "betermin-fcc-bcc-cold-spots",
     "Meylender–Thalmaier’s truncated-square conjecture": "meylender-thalmaier-truncated-square",
     "Rossi’s permutohedron characteristic-polynomial conjecture": "rossi-permutohedron-roots",

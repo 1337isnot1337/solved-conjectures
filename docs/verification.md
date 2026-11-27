@@ -1,5 +1,9 @@
 # Verification
 
+## Circular windows in convex tilings
+
+Run `python3 results/langi-wang-convex-tiling/check_sectors.py` with standard Python. The script checks one stage with 512 polygon sides, including sector convexity, inball clearance, diameter bounds, annular areas and which tiles lie inside the test disk. The all-scale estimates and the logarithmic-density bound have written proofs. [Construction](../results/langi-wang-convex-tiling/PROOF.md) · [Logarithmic density](../results/langi-wang-convex-tiling/LOG-DENSITY.md) · [Review](../results/langi-wang-convex-tiling/REVIEW.md)
+
 ## Leech lattice cold-spot coefficients
 
 Run `python3 docs/research-results/leech-cold-spots-asymptotics/verify.py` with standard Python. Integer bisection bounds the optimized leading coefficient for each of the 23 deep-hole types. The verifier checks that $`E_8^3`$ has the smallest coefficient and $`D_{24}`$ the second smallest. The localization of the Gaussian minimizers is proved analytically. [Proof](research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](research-results/leech-cold-spots-asymptotics/REVIEW.md)
