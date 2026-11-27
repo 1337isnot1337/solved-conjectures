@@ -51,3 +51,9 @@ cycle lengths; the value 11 is only a discovery choice and is not a
 hypothesis of the theorem. The included certificate lists the cycles,
 not solver literals, and the independent checker does not read the SAT
 input or output.
+
+For the supplementary join lemma, the review searched “token graph,”
+“chromatic number,” “complete join,” and “one-factorization.” It
+found adjacent work on token graph Hamiltonicity and reconstruction,
+not a priority source for this closure observation. The lemma is
+stated as a proved corollary, without a separate priority claim.
