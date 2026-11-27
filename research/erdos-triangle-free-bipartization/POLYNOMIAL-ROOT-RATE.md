@@ -5,7 +5,7 @@ Let W be any triangle-free graphon, and let U_k be the per-root-type maximum-cut
 There is an absolute constant C such that, uniformly for all triangle-free W and 0<ε<1/2,
 
     m(W) ≤ U_k(W) ≤ m(W)+ε
-    whenever k ≥ C ε^(-5) log(1/ε).
+    whenever k ≥ C ε^(-5).
 
 This gives a polynomial-sized sampled graph for the constructive rooted envelope. It is not a finite flag certificate for the sharp, zero-error inequality in [Erdős #23](https://www.erdosproblems.com/23). The proof uses density sampling only to choose a cut rule; it does not substitute the MaxCut of a small sampled graph for that of W.
 
@@ -36,15 +36,15 @@ Here the edge contribution weights each pair by W(x,y), and the disjointness sta
 
 ## Select the actual rule using independent validation pairs
 
-The family of candidates comprises all guesses of f-signs on the training roots and every affine hash seed. Its logarithmic size is O(K log L), since there are at most K signs to guess and (K+1)log₂L seed bits. It is a finite family even though exhaustive selection can be expensive.
+Draw one affine seed independently before validation, and hold it fixed while comparing guesses. The family now comprises all guesses of f-signs on the training roots; its logarithmic size is O(K_train), where K_train=L(L−1)s. There is no need to validate all seeds: we average the performance over a uniform seed, and the per-type minimum is at most the expected cost of any randomized selection of Boolean rules. Equivalently for each W a seed with no worse average performance can be fixed in advance. The family is finite even though exhaustive selection can be expensive.
 
 Add n independent validation pairs of roots. Conditional on the positions and induced data of the training roots and extra anchors, each candidate's observed monochromatic edge indicator on these pairs has its actual expected ordered cost as mean, and the n indicators are independent. Candidate rules use only the profiles to the training roots and extra anchors, not to validation pairs. Uniform Hoeffding and the union bound show that
 
-    n = O(τ^(-2)(K log L + log(1/δ)))
+    n = O(τ^(-2)(K_train + log(1/δ)))
 
-suffices to estimate every candidate within τ with probability at least 1−δ. Select the candidate of least empirical cost, breaking ties by a fixed enumeration. This selection is a function of the induced labelled root graph. On the good event its true cost is at most the oracle candidate cost plus 2τ; on the bad event the excess is at most one. The oracle may depend on the latent positions through the true guessed signs and may use a random seed, because the uniform validation event holds for every candidate.
+suffices to estimate every candidate within τ with probability at least 1−δ. Select the candidate of least empirical cost, breaking ties by a fixed enumeration. This selection is a function of the induced labelled root graph. On the good event its true cost is at most the oracle candidate cost plus 2τ; on the bad event the excess is at most one. The oracle may depend on the latent positions through the true guessed signs, since the uniform validation event holds for every candidate at the fixed seed. Average the oracle cost over the independent seed.
 
-Take L of order ε⁻¹ and a power of two, s of order ε⁻¹, a of order ε⁻¹, and τ,δ proportional to ε, with constants giving total error at most ε. Then K=L(L−1)s+a=O(ε⁻³) and n=O(ε⁻⁵ log(1/ε)). Counting every validation endpoint as a root gives the asserted bound. Additional unused roots cannot hurt. Soundness of the envelope follows by testing these measurable or fractional cuts, as in [ROOT-CONVERGENCE](ROOT-CONVERGENCE.md).
+Take L of order ε⁻¹ and a power of two, s of order ε⁻¹, a of order ε⁻¹, and τ,δ proportional to ε, with constants giving total error at most ε. Then K=L(L−1)s+a=O(ε⁻³) and n=O(ε⁻⁵). Counting every validation endpoint as a root gives the asserted bound. Additional unused roots cannot hurt. Soundness of the envelope follows by testing these measurable or fractional cuts, as in [ROOT-CONVERGENCE](ROOT-CONVERGENCE.md).
 
 This proof borrows the stagewise sampling idea of dense MaxCut approximation algorithms. Its useful extra point here is that the final action is a single **Boolean profile rule** selected only from labelled root edges. Tie vertices need not be greedily rounded simultaneously, and the latent optimal labels are never supplied to the algorithm.
 
