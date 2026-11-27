@@ -125,6 +125,8 @@ Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
 
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_one_extra_leaf.py` to reproduce the exhaustive terminal degree and rank screen. It asserts that the sole surviving profile has six and seven leaves and exactly two possible rank pairs. The final two contradictions are in the [written proof](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md).
+
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py` to replay 1,086,975 admissible degree-profile comparisons and truncated negative weights and pendant-coordinate ranks on 264 actual tree histograms. The [proof](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) establishes the finite comparison principle and one-high-hub bounds. [Independent review](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py` to check signed path weights and indecomposable edge lengths on all 66 reduced topologies through order twelve, 320 rational quotient tests and 18 cases attaining the four-label support bound. The [proof](research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) gives the arbitrary-degree theorem. [Review and independent replay](research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)

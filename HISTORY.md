@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Generic exclusion of a single extra leaf
+
+The existing Stanley research entry now includes a proof for arbitrary target and rival degrees. The ordinary histogram of a generic subdivision excludes every different tree with at most one extra leaf. An exact integer partition screen leaves two rank cases, both impossible. [Proof](docs/research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF-REVIEW.md)
+
 ## 2026-11-27 UTC — Finite distance-histogram comparisons with bounded extra leaves
 
 A new uniform reduction controls generic histogram reconstruction with a fixed extra-leaf allowance alone. Any failure occurs on a tree with quadratically many leaves in the allowance, irrespective of the maximum degree or number of high-degree vertices. For one high hub of arbitrary degree, a rival cannot have exactly one extra leaf and must have a surplus growing with that degree. The proof and exact profile checks supplement the unranked Stanley research entry. [Theorem and quantitative bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
