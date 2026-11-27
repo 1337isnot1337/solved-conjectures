@@ -2,6 +2,8 @@
 
 ## Path counts and arbitrary reduced topologies
 
+For a rival with $`c`$ extra leaves, an ordinary distance histogram matching a generic tree with at least $`97c`$ leaves forces matching signed profiles at two parents and a common labelled subtree on all but at most $`4c`$ target leaves. Across all tree topologies it suffices to test targets with fewer than $`97c`$ leaves for an ambiguity of that surplus. The uniform outcome of those tests remains open. [Proof](LINEAR-LEAF-SURPLUS.md) · [Sources, review and checks](LINEAR-SURPLUS-REVIEW.md)
+
 For every fixed reduced tree with at least 28 leaves, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most two more leaves. An analytic bound and an exhaustive finite degree-and-rank certificate prove the unmarked threshold. [Proof](TWO-SURPLUS-TAIL.md) · [Exact certificate](verify_two_surplus_tail.py)
 
 A marked tree with rationally independent nonzero vertex heights is identified against every rival with exactly two extra leaves by its signed height and pair-distance measures. In the unmarked problem this excludes any full-dimensional two-extra-leaf comparison admitting a freely variable rival pendant. [Proof](MARKED-TWO-SURPLUS.md) · [Independent review and sources](MARKED-TWO-SURPLUS-REVIEW.md) · [Exact checks](verify_marked_two_surplus.py)
