@@ -17,4 +17,14 @@ For the zero-one saturated graphon chosen in [SATURATION](SATURATION.md), the sa
 
 Saturation alone does not prove that the relevant monochromatic components are small. These are necessary structural conditions for long broken edges, not a claim that all maximum cuts have only four-step broken edges.
 
+## Connected crossing graph and one-vertex stability do not suffice
+
+There is a simple exact obstruction to replacing global optimality with only one-vertex switching inequalities. Take the complete blow-up of a pentagon with cyclic classes U,V,Q,Z,P of sizes 3,3,1,1,1. On U and V give one vertex sign + and two vertices sign −. Give Q and P sign +, and Z sign −.
+
+A vertex of U or V has two neighbors of each sign, so switching it breaks even. P and Q each have three negative neighbors and one positive neighbor. Z has only positive neighbors. Thus no single-vertex flip improves the cut. However the crossing graph, after identifying identical vertices within a sign class, is exactly the connected path
+
+    U+ — V− — Q+ — Z− — P+ — U− — V+.
+
+Hence the monochromatic edge U+–V+ has crossing distance six. The graph is saturated: any two nonadjacent vertices in the pentagon blow-up have a common neighbor. The cut is not maximum (it misses seven edges; a whole-class pentagon cut misses only one). This demonstrates why replacing all-cut optimality by just the local inequalities, even with connectivity and saturation, cannot prove the four-step conjecture. It does not address maxima or the original Erdős conjecture.
+
 [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
