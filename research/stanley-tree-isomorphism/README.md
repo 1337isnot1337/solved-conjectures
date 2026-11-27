@@ -4,6 +4,10 @@
 
 A certificate using only degree counts and the ordinary unlabelled histogram of vertex distances recognizes a density-one fraction of independent subdivisions of every fixed reduced tree. The conclusion holds uniformly on sufficiently slowly growing cores. For trivalent reduced trees the histogram alone suffices against every tree. [Proof and exact bounds](PATH-DISTANCE-CERTIFICATE.md) · [Independent review and prior work](PATH-DISTANCE-REVIEW.md) · [Finite checks](verify_path_distance_certificate.py)
 
+A finite linear-algebra decision procedure determines whether almost every subdivision of any specified core can be recovered using the histogram alone. [Decision criterion](PATH-HISTOGRAM-DECISION.md)
+
+A finite collision-space calculation tests the removal of the degree hypothesis beyond trivalent trees. It excludes all competing topologies for a generic subdivision of the four-arm star. [Research argument and exact checker](FOUR-ARM-FLATS.md)
+
 ## Reconstruction with an arbitrary internal tree
 
 For any fixed internal tree and arbitrary fixed terminal caps, the ordinary chromatic symmetric function identifies the decorated tree for a proportion tending to one of the independently chosen exterior orders in the stated intervals. The proof recovers the internal topology and every internal path length from the split sizes. [Theorem and exact hypotheses](ARBITRARY-CORE.md) · [Review and prior work](ARBITRARY-CORE-REVIEW.md) · [Split reconstruction check](verify_core_splits.py)
