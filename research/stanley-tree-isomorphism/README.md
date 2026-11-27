@@ -1,5 +1,9 @@
 # Stanley’s tree-isomorphism conjecture
 
+## Independent subdivisions at a branch vertex
+
+Sufficiently long independent subdivisions of all edges at any fixed branch vertex give identifiability among all trees. [Proof](HUB-SUBDIVISIONS.md) · [Review](HUB-SUBDIVISIONS-REVIEW.md) · [Structural check](verify_hub_fringe_recognition.py) · [Cap assignment](verify_hub_assignment.py)
+
 A balanced-edge reconstruction improves the sufficient order for an arbitrary edge subdivision. If the larger and smaller original end components have orders $`g\ge h`$, a total of $`\max(2g-1,2g+h-3)`$ vertices suffices. The exact proof covers arbitrary endpoint degrees at a balanced or nearly balanced cut. Independently, a unique centroid with $`b-1`$ or more pendant leaves determines the tree when the largest branch has order $`b`$. Both results are written, internally reviewed partial theorems with exact finite checks. [Balanced-edge proof](BALANCED-ARMS.md) · [Review](BALANCED-ARMS-REVIEW.md) · [Checker](verify_balanced_paths.py) · [Leaf-centroid proof](LEAF-HUB.md) · [Review](LEAF-HUB-REVIEW.md) · [Checker](verify_leaf_hub.py)
 
 
