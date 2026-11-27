@@ -89,14 +89,15 @@ Strong convexity gives $`\|y_t\|=O(\|p_t\|)`$ by comparing the gradients at zero
 As $`K_t^{-1}=H^{-1}+2N H^{-2}/t+O(t^{-2})`$, this proves
 
 ```math
- \begin{aligned}
- (d+y_t/t)-d
-     &=-\frac{e^{-t\Delta}}t\bigl(H^{-1}g+O(t^{-1})\bigr),\\
- U_t(d)-m_d(t)
-     &=e^{-2t\Delta}\left(C_0+\frac{C_1}{t}+O(t^{-2})\right),\\
- C_0&=\tfrac12g^{\mathsf T}H^{-1}g>0,\qquad
- C_1=N\|H^{-1}g\|^2>0 .
- \end{aligned}
+ (d+y_t/t)-d=-\frac{e^{-t\Delta}}t\bigl(H^{-1}g+O(t^{-1})\bigr).
+```
+
+```math
+ U_t(d)-m_d(t)=e^{-2t\Delta}\left(C_0+\frac{C_1}{t}+O(t^{-2})\right).
+```
+
+```math
+ C_0=\tfrac12g^{\mathsf T}H^{-1}g>0,\qquad C_1=N\|H^{-1}g\|^2>0.
 ```
 
 ## Comparing the minima
