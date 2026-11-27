@@ -2,6 +2,8 @@
 
 ## Path counts and arbitrary reduced topologies
 
+If two finite metric trees have the same distribution of distances between uniform arclength samples, the tree with more leaves has at most twice its number of independent rational edge-length relations in extra leaves. A generic tree of any topology is identified against every rival with at most two such relations. For an arbitrary bound $`D`$ on this number, a finite ambiguity test across all topologies and all leaf surpluses needs at most $`4D`$ rival leaves. [Unmarked theorem](DISTANCE-CANCELLATION-CODIMENSION.md) · [Marked theorem](HEIGHT-RELATION-KERNEL.md) · [Review and checks](DISTANCE-NULLITY-REVIEW.md)
+
 For a rival with $`c`$ extra leaves, an ordinary distance histogram matching a generic tree with at least $`97c`$ leaves forces matching signed profiles at two parents and a common labelled subtree on all but at most $`4c`$ target leaves. Across all tree topologies it suffices to test targets with fewer than $`97c`$ leaves for an ambiguity of that surplus. A marked test through $`4c+1`$ leaves decides whether ambiguities occur at every target leaf count at or above $`97c`$, or at none. Its uniform outcome remains open. [Proof](LINEAR-LEAF-SURPLUS.md) · [Sources, review and checks](LINEAR-SURPLUS-REVIEW.md)
 
 For every fixed reduced tree with at least 28 leaves, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most two more leaves. An analytic bound and an exhaustive finite degree-and-rank certificate prove the unmarked threshold. [Proof](TWO-SURPLUS-TAIL.md) · [Exact certificate](verify_two_surplus_tail.py)
