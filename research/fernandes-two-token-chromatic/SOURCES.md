@@ -40,3 +40,14 @@ graph with the following restriction: pairs obtained from equal-colored
 two-edge paths must form a triangle-free graph. The result is the
 explicit cycle table above. The table is sufficient without the SAT
 solver and has been checked against the definition of token adjacency.
+
+To reproduce the exploratory input, use `python search.py 11 11` and
+pass `query.cnf` to a DIMACS SAT solver. Each unordered pair has one
+shadow bit followed by five color bits, with the pairs in lexicographic
+order. The formula requires exactly one color per pair, at most two
+incidences of any color at a vertex, every two-step pair in the shadow,
+and a triangle-free shadow. The second argument fixes the first color's
+cycle lengths; the value 11 is only a discovery choice and is not a
+hypothesis of the theorem. The included certificate lists the cycles,
+not solver literals, and the independent checker does not read the SAT
+input or output.

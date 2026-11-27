@@ -31,6 +31,9 @@ def verify(factors):
                 shadow.add(pair(u, cycle[(i + 2) % len(cycle)]))
     assert set(colors) == PAIRS
     assert len(shadow) == 24
+    groups = ((0, 8), (2, 6, 9), (3, 4, 7), (1, 5), (10,))
+    group_of = {v: i for i, group in enumerate(groups) for v in group}
+    assert all((group_of[u] - group_of[v]) % 5 in (1, 4) for u, v in shadow)
     assert all(
         not {pair(a, b), pair(a, c), pair(b, c)} <= shadow
         for a, b, c in combinations(V, 3)

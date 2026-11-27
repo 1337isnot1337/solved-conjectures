@@ -30,9 +30,9 @@ including the wraparounds gives all 55 unordered pairs exactly
 once. Give a configuration the color in that table, regardless
 of whether its pair is an edge of $`G`$.
 
-Let $`D`$ be the graph of two-step pairs from the table: for each
+Let $`H`$ be the graph of two-step pairs from the table: for each
 cycle include the pair formed by stepping forward twice from
-each entry. Define $`G`$ as the complement of $`D`$. If two different
+each entry. Define $`G`$ as the complement of $`H`$. If two different
 configurations with a common vertex have the same color,
 their other endpoints are the predecessor and successor
 of the common vertex in one listed cycle. They are a two-step
@@ -41,26 +41,26 @@ coloring is proper on $`F_2(G)`$.
 
 ## Six colors are necessary for the base graph
 
-The two-step graph $`D`$ is triangle-free. To check it by hand,
-group vertices as follows. The groups are independent in $`D`$;
-every pair of groups is either completely joined or anticomplete.
-The last column gives all joined groups.
+The two-step graph $`H`$ is contained in a blow-up of a five-cycle.
+Use independent groups A = {0, 8}, B = {2, 6, 9},
+C = {3, 4, 7}, D = {1, 5} and E = {10},
+with edges only between consecutive groups in the cyclic order
+A, B, C, D, E, A. The cycle table gives these cyclic words:
 
-| Group | Vertices | Joined groups |
-| --- | --- | --- |
-| A | 0, 8 | D, E, J |
-| B | 1, 5 | C, F, J |
-| C | 4, 7 | B, D, E |
-| D | 6, 9 | A, C, F |
-| E | 2 | A, C |
-| F | 3 | B, D |
-| J | 10 | A, B |
+| Color | Group words |
+| --- | --- |
+| 0 | ADBCCDBCABE |
+| 1 | ABEADBCCDBC |
+| 2 | ACBB, DACBDCE |
+| 3 | ADECDBCABBC |
+| 4 | ABECDDCCBBA |
 
-The group graph is the cycle A–E–C–B–F–D–A with the extra
-edge C–D and the two-edge path A–J–B. None of these additions
-makes a triangle. Since the groups themselves are independent,
-$`D`$ is triangle-free. Hence every independent set of $`G`$ has
-size at most two. Eleven vertices then require at least six colors.
+In each word, any letter and the letter two places later are
+neighbors on A–B–C–D–E–A, including at wraparound. This is the
+claimed containment. The five-cycle is triangle-free and each
+group is independent, so its blow-up is triangle-free as well.
+Hence every independent set of $`G`$ has size at most two.
+Eleven vertices then require at least six colors.
 
 Fixing a token at any vertex $`v`$ induces a copy of the graph
 $`G-v`$ inside $`F_2(G)`$. In particular, the displayed five-coloring
