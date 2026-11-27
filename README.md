@@ -197,6 +197,8 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 
 ## Recognizing subdivided trees
 
+For any fixed degree excess, one finite test decides whether almost every independent subdivision of every reduced tree of that excess is determined by its unlabelled distance histogram. Any failure already occurs on a core with at most twelve times the excess minus two vertices. [Finite reduction and scope](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REDUCTION.md)
+
 Degree counts and the unlabelled histogram of vertex-pair distances determine almost every independent integer subdivision of any fixed reduced tree. The paths alone suffice when the target has only trivalent branch vertices, even against arbitrary competitors. [Observable certificate and quantitative bounds](docs/research-results/stanley-tree-subdivisions/PATH-DISTANCE-CERTIFICATE.md)
 
 For any fixed internal tree with arbitrary rooted caps at the tips, a proportion tending to one of the independent exterior length choices in the stated intervals give a tree identifiable among all trees. The proof recovers the internal branching pattern and path lengths. [Arbitrary-core theorem](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md)
