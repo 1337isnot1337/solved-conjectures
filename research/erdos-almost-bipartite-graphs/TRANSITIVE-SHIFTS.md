@@ -116,3 +116,43 @@ power set of \(\kappa\) guarantees this subgraph has
 chromatic number above \(\kappa\). The same holds for
 the symmetric witness. The well-order introduces no
 asymmetry in its definition.
+
+## Two useful scope refinements
+
+**Exact size at strong limits.** If \(\lambda\) is an infinite
+strong-limit cardinal, take \(|I|=\lambda\). Then
+\(|V(U_K(I))|=\lambda\), and the ordinary shift lower bound
+gives chromatic number \(>\mu\) for every infinite
+\(\mu<\lambda\), since each finite iterate of the power set
+of \(\mu\) is still \(<\lambda\). For \(\lambda=\aleph_0\)
+the finite-color version of the same outgoing-color-set
+argument gives infinite chromatic number. Hence the
+size and chromatic number both equal \(\lambda\).
+
+The same witnesses can simultaneously satisfy any prescribed
+uniform vertex-deletion fraction. To see this, independently
+assign random continuous labels to the finitely many alphabet
+symbols used by an \(n\)-vertex sample. Delete any selected
+tuple whose largest label is at an endpoint coordinate.
+The expected number deleted is at most \(2n/K\). Color each
+surviving tuple by the parity of the coordinate of its largest
+label. When adjacent tuples both survive, the largest label
+among their \(K+1\) symbols must lie in the overlap, so its
+position shifts by one and the colors differ. Some label
+ordering therefore leaves a bipartite induced subgraph after
+at most \(2n/K\) vertex deletions. Raise \(K\) while keeping \(k\)
+fixed to make both the original edge budget and the desired
+vertex fraction hold. The observation at strong limits does
+not reach arbitrary exact successor cardinalities.
+
+**Arbitrarily large dichromatic number as well.** For a fixed
+\(K\ge2\), [Soukup, Theorem 4.5](https://arxiv.org/abs/1608.06981)
+gives a high-dichromatic orientation of the ordinary \(K\)-shift
+on a sufficiently large alphabet. Extend that orientation
+arbitrarily to the other edges of \(\underline U_K(I)\).
+Restriction shows that the full orientation still has
+dichromatic number above the prescribed cardinal. The
+underlying bipartization bound is unchanged. This is an
+application of Soukup's theorem, not a statement about
+all orientations or a proof of the Erdős–Neumann-Lara
+conjecture.
