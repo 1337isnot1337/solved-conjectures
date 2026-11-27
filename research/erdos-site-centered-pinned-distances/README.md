@@ -21,3 +21,5 @@ If such a limit has more than one atom, the entire shrinking clouds around its a
 ## Recovering all radial scales
 
 A thin-annulus rank argument gives countably many radial profiles around any sequence of centers and accounts for the entire site mass. A separate recursive argument tracks the exact sample laws that separate in finite depth and reduces the remaining global-bound gap to the farthest-hull obstruction. [One-node decomposition](RADIAL-PROFILES.md) · [Recursive proof and outstanding step](RADIAL-SCALE-TREE.md) · [Exact finite checks](check_radial_profiles.py)
+
+A two-cloud construction gives logarithmically many triply occupied radii at each site, all arbitrarily close to the diameter. The configurations have no three collinear sites, no noncollinear isosceles trapezoid and vanishing expected hull fractions in growing samples. Their mean pinned count is close to the full set size. [Near-diameter obstruction](NEAR-DIAMETER-RADII.md) · [Exact finite checks](check_near_diameter_radii.py)
