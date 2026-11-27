@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
+
+Proved the weighted Laplacian bound and its interior equality classification. [Proof](results/barrett-evans-hall-kempton-se/PROOF.md) · [Exact checks and audit](results/barrett-evans-hall-kempton-se/AUDIT.md).
+
 ## 2026-11-27 — Liang’s slice-period conjecture
 
 Refuted Liang’s Conjecture 4.3 with arbitrarily large examples in 0.3102 and identified the actual least periods for the counterexample slice. [Proof](results/liang-slice-period/PROOF.md) · [Audit](results/liang-slice-period/AUDIT.md).
