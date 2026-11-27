@@ -201,6 +201,8 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 
 ## Recognizing subdivided trees
 
+For any fixed tree topology, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most one additional leaf. There is no degree bound. [One-extra-leaf theorem](docs/research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md)
+
 For any fixed allowance of extra rival leaves, one finite test decides generic distance-histogram identification across every tree topology, with degrees unrestricted. A lone high-degree hub forces a surplus growing at least linearly in its degree. [Finite reduction and single-hub bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md)
 
 For every fixed tree topology, almost every subdivision is the unique minimum-leaf tree with its ordinary vertex-distance histogram. The histogram identifies it among all trees when every direction at each high-degree vertex contains sufficiently many leaves. [Exact condition and proof](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md)

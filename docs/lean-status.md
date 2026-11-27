@@ -12,6 +12,8 @@ No formalization is registered.
 
 Arbitrary-core reconstruction has an independently reviewed written proof and a finite Python check of labeled splits and internal lengths. It has no Lean formalization. [Review and scope](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
+The one-extra-leaf theorem for generic tree subdivisions has a computer-assisted written proof. Its exhaustive integer degree-profile check and two mathematical exclusions received independent internal review. Lean verification remains open. [Scope and proof](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md) · [Review](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF-REVIEW.md)
+
 The degree-unrestricted finite reduction controlled only by extra leaves and the accompanying single-hub bounds have an independently reviewed written proof and exact profile checks. They have no Lean formalization. [Proof](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Review and scope](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
 
 A reviewed written theorem identifies minimum-leaf representatives generically for every fixed tree topology and establishes histogram-only reconstruction for arbitrary degrees under the incident-branch condition. It has no Lean formalization. [Theorem](research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) · [Independent review](research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)
