@@ -46,7 +46,7 @@ x+y\ge\frac{18}{19}\frac{31}{33}+\frac16
 ```
 If $`0\le\ell\le29`$, substitute $`n\ge36`$ and $`R_a^2\ge18/19`$ to obtain
 ```math
-x+y-\frac{19}{18} \ge\
+x+y-\frac{19}{18} \ge
 \frac{-222\ell^2+6241\ell+5817}
      {342(\ell+3)(6\ell+41)}>0.
 ```
