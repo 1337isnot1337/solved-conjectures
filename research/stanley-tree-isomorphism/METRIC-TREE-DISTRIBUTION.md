@@ -2,11 +2,11 @@
 
 Consider a nontrivial finite tree of positive total length, and give every reduced edge a positive real length. Equip the resulting metric tree with its arclength probability measure $`\mu`$. The distance of two independent arclength samples is generally a continuous random variable. Nevertheless its **one global distribution** carries exactly the same information as the signed endpoint measure
 ```math
-\sum_{u<v} (\deg(u)-2)(\deg(v)-2)\,\delta_{d(u,v)}.
+\sum_{u\lt v} (\deg(u)-2)(\deg(v)-2)\,\delta_{d(u,v)}.
 ```
 In the integer-length case the latter in turn determines the ordinary distance histogram of the unweighted subdivision. The following derivation states the normalization explicitly.
 
-Let $`L`$ be the total length, $`B(s)=\sum_{u<v}w_u w_v e^{s d(u,v)}`$, and $`K(s)=\int\!\int e^{s d(x,y)}\,d\mu(x)\,d\mu(y)`$. For real $`s\ne0`$,
+Let $`L`$ be the total length, $`B(s)=\sum_{u\lt v}w_u w_v e^{s d(u,v)}`$, and $`K(s)=\int\!\int e^{s d(x,y)}\,d\mu(x)\,d\mu(y)`$. For real $`s\ne0`$,
 ```math
 K(s)=\frac{2}{s^2 L^2}\left[B(s)-B(0)-sL\right].
 ```
