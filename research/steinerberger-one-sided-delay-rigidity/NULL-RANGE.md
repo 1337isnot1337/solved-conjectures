@@ -1,0 +1,25 @@
+# Null maximizing-radius range and spectral rigidity
+
+These results concern the genuine shortest-maximizing-radius conjecture and its null-range strengthening in [Steinerberger, Studia Mathematica (2015), §1.5, p. 266](https://www.impan.pl/shop/en/publication/transaction/download/product/91307#page=4). They are separate from the disproof of the weaker one-sided delay implication. All averages here are signed, and any asserted maximizing radius is finite and actually attains the supremum.
+
+**Theorem.** Suppose f is a bounded nonconstant real-analytic function on ℝ and has a finite maximizing radius at every center. If the image of its shortest maximizing radius contains no nonempty interval, there is a positive radius r such that the centered average is stationary at r about *every* center. Consequently the distributional Fourier support of f is contained in the discrete set
+
+    {ξ : (r ξ) cos(r ξ) − sin(r ξ) = 0}.
+
+In particular the null-range conjecture, and even this empty-interior version, holds for all periodic real-analytic f: by Steinerberger's Theorem 1 such an f is a sinusoid plus a constant. If f has a finite limit at either end of the real line, it must instead be constant. No general bounded nonperiodic rigidity is claimed.
+
+**Proof.** Write A(x,t) for the normalized signed average at radius t, with A(x,0)=f(x). Using a real-analytic antiderivative, (F(x+t)−F(x−t))/(2t) extends analytically across t=0. Since a bounded concave function on ℝ is constant, f'' is positive at some point. In a neighborhood J of this point, t=0 cannot be maximizing: the second-order Taylor expansion of A(x,t) gives f(x)+f''(x)t²/6+o(t²).
+
+Let K_N be the centers x in J where some global maximizer lies in [0,N]. This is relatively closed in J: for x_j→x choose such maximizing t_j, take a convergent subsequence t_j→t, and pass A(x_j,t_j)≥A(x_j,u) to the limit for each fixed u≥0. By hypothesis these closed sets cover J, so one contains a nonempty open subinterval. Choose a compact nondegenerate interval I within that subinterval. On I the global shortest radius equals the smallest maximizer over [0,N]. The graph of this latter function is definable in the real field with restricted analytic functions, by comparing the analytic A on the compact rectangle I×[0,N] and then taking the smallest argmax. The [Denef–van den Dries restricted analytic o-minimality theorem](https://celebratio.org/vandenDries_LP/article/782/) implies its range on I is a finite union of points and intervals. Since the overall range has no interval, this restriction has finitely many values, all positive. For each such value t the zero set of ∂_t A(x,t), in the x variable, is discrete unless the analytic function is identically zero. These zero sets cover I, so one is identically zero.
+
+For that radius r, differentiating the average in r gives
+
+    (f(x+r)+f(x−r))/2 = A(x,r)
+
+for every x. Taking the tempered Fourier transform gives the indicated support (at ξ=0 the multiplier is understood by continuity); the support is discrete since the analytic multiplier is not identically zero. For any nonzero support point ξ₀, multiply the transform by a smooth compactly supported function equal to 1 near ξ₀ and supported in a small interval missing all the other roots. On inversion the result is a polynomial times e^{iξ₀x}, and it is also the convolution of the bounded f with a Schwartz kernel. Boundedness makes the polynomial constant. A finite limit of f at an end of ℝ forces this convolution to tend to zero by dominated convergence, since the kernel has integral zero. So the amplitude at every nonzero support point is zero. The remaining transform is supported at 0, and boundedness now forces f to be constant.
+
+**Periodic range.** If f has period T and mean m, subtract m. For t≥T, subtracting full periods from each end of the centered interval leaves its integral unchanged. At every center the average over a period is 0, so any positive maximum is achieved at a radius in [0,T]; if the maximum is zero then the smallest maximizing radius is no greater than T. Thus for analytic f the entire image of the shortest radius is itself a finite union of intervals and points, not merely locally so. A nonsinusoidal periodic analytic f must have an interval of actual shortest radii.
+
+**Uniform continuity extension.** In the nonperiodic spectral hypothesis above, if f is also uniformly continuous, it is uniformly almost periodic: convolve with a Schwartz approximate identity whose Fourier transforms each have compact support. Each convolution is bounded and has only finitely many spectral points, so each is a trigonometric polynomial. Uniform convergence follows from bounded uniform continuity. This is a direct discrete-spectrum synthesis argument (compare [Arendt–Schweiker](https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/arendt/downloads/pubbib/short/1999-AreSch-DscSpcAlmPrd.pdf)). It does not show that all permitted frequencies are rationally related or that a single one survives.
+
+[Coordination issue #1092](https://github.com/1337isnot1337/solved-conjectures/issues/1092).
