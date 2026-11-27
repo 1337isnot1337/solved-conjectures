@@ -7,7 +7,7 @@ from itertools import combinations_with_replacement, permutations
 from math import prod
 
 from verify_centroid_edge import require
-from verify_two_hub_subdivisions import assemble, size
+from verify_two_hub_subdivisions import assemble, connected_subsets, size
 
 
 def add(*polys):
@@ -132,6 +132,30 @@ def extend(cap, u):
     return cap
 
 
+
+def exhaustive_vertex_checks():
+    cherry = ((), ())
+    triple = ((), (), ())
+    cases = [
+        ([(), cherry, cherry, cherry], [0, 1, 2, 0], 2, 2),
+        ([cherry, triple, cherry, triple], [0, 0, 1, 0], 2, 1),
+        ([cherry, (), cherry, cherry, (), cherry], [0, 0, 0, 0, 1, 0], 3, 1),
+    ]
+    count = 0
+    for caps, stems, p, h in cases:
+        arms = [extend(c, u) for c, u in zip(caps, stems)]
+        n, edges = assemble(arms[:p], arms[p:], h)
+        whole = Counter()
+        radix = len(caps) + 1
+        for (order, boundary), multiplicity in connected_subsets(n, edges).items():
+            whole[boundary] += multiplicity * radix**order
+        recovered, gap = reconstruct(whole, n, caps, p, len(caps) - p)
+        expected = {c: sorted(u for cap, u in zip(caps, stems) if cap == c) for c in caps}
+        require(recovered == expected and gap == h, "vertex-subset census did not reconstruct")
+        count += (1 << n) - 1
+    return count
+
+
 def main():
     cherry = ((), ())
     unbalanced_three = ((), ((), ()))
@@ -161,6 +185,7 @@ def main():
                 require(got == expected and distance == h, "incorrect cap class, stem or distance")
                 count += 1
     print(f"{count} arbitrary-length joins reconstructed from complete boundary coefficient layers")
+    print(f"{exhaustive_vertex_checks()} nonempty vertex subsets enumerated across three separate joins")
 
 
 if __name__ == "__main__":
