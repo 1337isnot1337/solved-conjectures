@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős–Hajnal’s ordinal-square chromatic problem
+
+Lyra found a ZFC order-type transfer proving relative independence of the primary question in Erdős Problem 919 using the cardinal-local results of Baumgartner and Foreman–Laver. The separate follow-up remains distinct. [Proof](results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) · [Audit](results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md)
+
 ## 2026-11-27 — Balanced-edge and leaf-centroid reconstruction for Stanley’s question
 
 A new identity for the ordinary forest polynomial across any cut improves the previously published long-subdivision threshold. Endpoint components of orders 5 and 8 now require a total of 18 vertices under this sufficient bound. A separate result reconstructs a tree from a unique centroid carrying enough pendant leaves. Both are reviewed partial theorems within the existing unranked entry. [Balanced-edge proof](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid proof](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md)
