@@ -17,7 +17,7 @@ below is needed.
 
 ## The obstruction
 
-Suppose $`c:[V`$^k\to\mu] is such a coloring. For a fixed
+Suppose $`c:[V]^k\to\mu`$ is such a coloring. For a fixed
 $`t`$-element set $`P`$, define its profile $`F_P`$ on the color set:
 $`F_P(i)`$ is the set of ranks occupied by the elements of $`P`$ in any
 $`k`$-set of color $`i`$ containing $`P`$, or a separate absent symbol if
