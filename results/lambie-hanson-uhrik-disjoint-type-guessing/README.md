@@ -8,4 +8,6 @@ The classification survives any countable forcing over a ground model of the res
 
 A [strong-guessing supplement](STRONG-GUESSING.md) shows that every coloring admits two stationary sets of one color whose full prefixes realize the prescribed type across the two sets. This also proves strong guessing throughout the bounded-parameter regime.
 
+The sharp condition for a cofinal tail also depends on which ladder plays which role. For types normalized to end in one, requiring the earlier ladder to play the zero role needs bounded widths in the restricted forcing-axiom models. Allowing either role requires only bounded depth and lower reach. In this case even the earlier ladder’s point at the depth index can be made arbitrarily high below stationarily many later vertices, and this is the first possible index. For a literal family with mixed orientations, the width restriction applies to words ending in one and the two interleaving bounds apply to the others. [Forward tail bound](TAIL-COORDINATE.md) · [Role exchange and mixed orientations](ROLE-EXCHANGE-TAIL.md) · [Proof review and finite checks](TAIL-REVIEW.md)
+
 **Lean status:** none. The result has a written proof and internal mathematical review. The finite script checks the identities for flags and model cuts. [Independent review](REVIEW.md) · [Finite checks](check_flags.py)
