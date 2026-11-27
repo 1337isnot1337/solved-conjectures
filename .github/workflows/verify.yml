@@ -49,6 +49,9 @@ jobs:
       - name: Check countable and continuum rainbow-star construction invariants
         run: python3 scripts/check_rainbow_star.py
 
+      - name: Check the planar subtraction game
+        run: python3 results/planar-subtraction-games/check_planar_game.py
+
       - name: Replay the exact-one-marker flow exchanges
         run: |
           python3 -m pip install networkx==3.6.1
