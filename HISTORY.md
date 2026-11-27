@@ -4,6 +4,10 @@
 
 Published the variance-and-entropy proof recorded in Cinna Davis’s research issue. It resolves Buys, van den Heuvel and Kang’s asymptotic Conjecture 12, giving the leading constant one for the mean independent-set size in terms of average degree. The November 27 extension proves the pointwise redux throughout its stated range by a differential comparison. [Pointwise proof](results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md) [Proof](results/buys-van-den-heuvel-kang-occupancy/PROOF.md) · [Review and checks](results/buys-van-den-heuvel-kang-occupancy/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/497)
 
+## 2026-11-27 UTC — Deciding generic reconstruction at fixed degree excess
+
+The unranked Stanley partial result now gives a finite decision procedure for reconstruction from the distance histogram alone across all reduced trees of each prescribed positive degree excess. A pruning argument bounds the order of a smallest possible obstruction. The signed histogram also determines and is determined by the continuous arclength distance distribution. The decision has not been evaluated for every positive excess. [Proof](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REDUCTION.md) · [Internal independent review](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
+
 ## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
 
 Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)

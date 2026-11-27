@@ -96,6 +96,8 @@ Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
 
+The [fixed-excess checker](research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py) tests signed deletion identities and recovers the point of reattachment on each of 269 trivalent pendant deletions among the 108 reduced shapes through order 13. [Independent review](research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
+
 The [path-distance verifier](research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py) enumerates all nontrivial trees through order 13, tests competing histograms, and reconstructs length-labelled line graphs on 816 subdivisions and all 108 small reduced topologies. [Mathematical review](research-results/stanley-tree-subdivisions/PATH-DISTANCE-REVIEW.md)
 
 The [two-hub checker](research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py) enumerates folded profiles, spanning forests and connected vertex sets. It verifies the short-arm detection, cap matching, grouping and transposition formulas. [Two-hub review](research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
