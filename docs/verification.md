@@ -1,5 +1,13 @@
 # Verification
 
+## Erdős–Galvin–Hajnal’s rainbow-star girth problem
+
+Read the [countable theorem](../results/erdos-galvin-hajnal-rainbow-star-girth/PROOF.md) and [mathematical review](../results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md). From the repository root run `python3 scripts/check_rainbow_star.py`. The list-color replay checks the missing-label invariant on finite instances. The infinite construction and obstruction follow from the written proof.
+
+## Erdős–Galvin–Hajnal’s continuum rainbow-star problem
+
+Run `python3 scripts/check_rainbow_star.py` to replay finite template profiles and label codes. The infinite-cardinal result uses the [written proof](../results/erdos-galvin-hajnal-continuum-rainbow-star/PROOF.md). The [independent review](../results/erdos-galvin-hajnal-continuum-rainbow-star/REVIEW.md) also covers the balanced-biclique exclusion and the connected abelian Cayley witness.
+
 ## de Joannis de Verclos’s projective rigidity conjecture
 
 Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
@@ -66,6 +74,10 @@ For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/
 The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
 
 ## Tree reconstruction after long subdivisions
+
+The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+The [two-hub checker](research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py) enumerates folded profiles, spanning forests and connected vertex sets. It verifies the short-arm detection, cap matching, grouping and transposition formulas. [Two-hub review](research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
 
 The standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) check independent hub subdivisions using complete small-tree forest polynomials, folded arm sizes and mixed-cap assignments. They also compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
 

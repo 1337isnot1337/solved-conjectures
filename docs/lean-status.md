@@ -2,6 +2,8 @@
 
 ## Tree reconstruction after long subdivisions
 
+The independent-length, exterior-order and dominant-arm two-hub reconstructions and the length-transposition identity have reviewed written proofs and finite Python checks. They have no Lean formalization. [Two-hub review](research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
 The independent hub subdivision, balanced-edge, leaf-centroid, earlier subdivision and repeated-branch theorems have written proofs and executable finite checks. Their Lean status is unformalized. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
 
 ## Cioba–Savvas shutout number conjecture
@@ -283,6 +285,8 @@ proofs are documented separately in the catalogue and result package.
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
 | Ma–Tang’s random subset-sum threshold conjecture | Complete for the original conjecture | Exact real-log limsup, the written third-log correction and convergence on the mixed orders. The separate bounded-remainder refinements remain unformalized. [Lean scope](../results/ma-tang-random-subset-sums/FORMALIZATION.md) · [Exact receipt](../results/ma-tang-random-subset-sums/verification/limsup-receipt.json). |
 | Féray’s conjugate-power word-measure conjectures | Not formalized | Proves both cycle limits and total-variation mixing for the stated permutation word, with sharp distance asymptotic e⁻¹/(n−1). |
+| Erdős–Galvin–Hajnal’s rainbow-star girth problem | Not formalized | [Written disproof and sharpness construction](../results/erdos-galvin-hajnal-rainbow-star-girth/PROOF.md), [independent internal review](../results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md) and [finite replay](../scripts/check_rainbow_star.py). |
+| Erdős–Galvin–Hajnal’s continuum rainbow-star problem | Not formalized | [Written proof](../results/erdos-galvin-hajnal-continuum-rainbow-star/PROOF.md) and [independent review](../results/erdos-galvin-hajnal-continuum-rainbow-star/REVIEW.md) cover the exact continuum statement, cardinal transfer, balanced-biclique exclusion and abelian Cayley construction. |
 | Erdős–Hajnal’s ordinal-square chromatic problem | Not formalized | [Written proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) gives the exact order-type transfer in ZFC and uses two cited consistency theorems. The [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md) assumes a cardinal-local witness. Existence in ZFC for the smaller chromatic number remains open. |
 | Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture | Not formalized | [Full proof](../results/barrett-evans-hall-kempton-se/PROOF.md) uses exact finite certificates for small simple endpoint graphs and analytic reduction to arbitrary real weights. |
 | Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum | Not formalized | [Computer-assisted proof](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) with exact finite certificates and an all-orders equality classification throughout the connected complementary class. The [sharp-maximum corollary](../results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md) has a written deduction and exact small-order checks. [Independent review](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md). |

@@ -16,6 +16,9 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_dominant_arm.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_hub_fringe_recognition.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_hub_assignment.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py
@@ -41,6 +44,9 @@ jobs:
 
       - name: Check the claw-free path-perfect counterexample
         run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
+
+      - name: Check countable and continuum rainbow-star construction invariants
+        run: python3 scripts/check_rainbow_star.py
 
       - name: Replay the exact-one-marker flow exchanges
         run: |
