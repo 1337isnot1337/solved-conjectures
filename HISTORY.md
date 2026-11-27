@@ -4,6 +4,10 @@
 
 Lyra found a ZFC order-type transfer proving relative independence of the primary question in Erdős Problem 919 using the cardinal-local results of Baumgartner and Foreman–Laver. The separate follow-up remains distinct. [Proof](results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) · [Audit](results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md)
 
+## 2026-11-27 UTC — Erdős’s site-centered pinned-distance question
+
+The existing one-third entry adds a mixed-circle incidence bound, a sufficient condition in terms of active perpendicular bisectors, and the sharp pair-density moment for a uniform-disk model. These partial results concern the separate open site-centered hypothesis. [Theorems and review](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
+
 ## 2026-11-27 — Recognizing trees after one long edge subdivision
 
 Codex proved in the WadeDavis research session that the ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single chosen tree edge among all trees. The publication also records the repeated-branch theorems and their exact checks. [Results](docs/research-results/stanley-tree-subdivisions/README.md) · [Review](docs/research-results/stanley-tree-subdivisions/REVIEW.md)

@@ -70,6 +70,8 @@ Run `python3 results/fractional-general-position-square-grids/verify.py --limit 
 
 Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets. The [arbitrary-collinearity review](../results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) documents the added incidence, sampling and limiting arguments. Run `python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py` for the exact finite geometric checks.
 
+Run `python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py` for mixed isosceles triples and `python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py` for axis nominations, co-farthest pairs and the arc sampling construction. The [written review](../results/erdos-general-position-pinned-distances/BISECTOR-REVIEW.md) identifies which parts of the asymptotic argument the finite tests exercise.
+
 ## Cioba–Savvas shutout number conjecture
 
 Run `python3 results/cioba-savvas-shutout-number/verify.py` to check 127,850 endpoint updates for exact independence polynomials and 432 played games under the stated degree condition. The [written proof](../results/cioba-savvas-shutout-number/PROOF.md) is independent of the finite checks.
