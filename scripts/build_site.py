@@ -89,6 +89,7 @@ SOURCE_TITLES = {
 }
 STATUS_LABEL_SLUGS = {
     "de Joannis de Verclos’s projective rigidity conjecture": "de-verclos-projective-rigidity",
+    "Erdős–Hajnal’s ordinal-square chromatic problem": "erdos-hajnal-ordinal-square-chromatic",
     "Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture": "barrett-evans-hall-kempton-se",
     "Liang’s slice-period conjecture": "liang-slice-period",
     "Liang’s 0.3123 slice problem": "liang-03123-slice",

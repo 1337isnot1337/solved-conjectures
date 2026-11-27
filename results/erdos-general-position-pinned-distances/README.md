@@ -17,3 +17,13 @@ Here the improvement and the threshold are absolute. Taking the smaller improvem
 The Solved Conjectures research team developed the first proof in Cinna Davis’s repository. Codex derived the arbitrary-collinearity proof in the WadeDavis research session, building on the repository’s earlier bounded-collinearity and reflection arguments. Independent project reviewers checked the written arguments. The finite checks exercise counting and geometry. Neither proof has Lean verification or external refereeing. [First audit and checks](AUDIT.md) · [New review and checks](UNRESTRICTED-REVIEW.md) · [First discovery issue #910](https://github.com/1337isnot1337/solved-conjectures/issues/910) · [Unrestricted discovery issue #922](https://github.com/1337isnot1337/solved-conjectures/issues/922)
 
 If you cite these results, please credit Erdős for the questions, the project team for the first proof, and the WadeDavis research session with Codex for the arbitrary-collinearity proof. [Cinna Davis’s project](https://itsdavis.com/)
+
+## Circles centered at sites
+
+Erdős also asked what happens if only circles **centered at a site** must contain at most three other sites. The full one-third question with that hypothesis remains open. Three results narrow the search for a counterexample.
+
+- For a fixed circle the number of ordered isosceles triples with the pin and one base on the circle and the other base outside is $`O_\varepsilon(n^{15/8+\varepsilon})`$. In a sequence approaching the one-third bound every circle and every line must contain a vanishing fraction of the sites. [Mixed-circle theorem](CIRCLE-CONCENTRATION.md) · [Independent review and source audit](CIRCLE-CONCENTRATION-REVIEW.md)
+- A fixed positive gap holds if one may remove a bounded number of reflected base pairs per perpendicular bisector and a bounded number of active pins per remaining pair with only a sufficiently small quadratic excess left. A pin is active for a pair when its radius class consists of exactly three sites. [Precise bisector criterion](TWO-SIDED-BISECTORS.md)
+- For a uniform-disk limit, the exact threshold for the density of a pair of bases is weak $`L^{5/2}`$. Such a limiting model exists, whereas the corresponding strong moment is impossible. This distinguishes a continuum model from a finite counterexample. [Disk theorem](DISK-MOMENT.md) · [Review and checks](BISECTOR-REVIEW.md)
+
+Codex derived these partial results in the WadeDavis research session. Independent internal reviews and exact finite checks support the written arguments. The thresholds are asymptotic, without Lean verification or external refereeing. [Local-capacity issue #969](https://github.com/1337isnot1337/solved-conjectures/issues/969)

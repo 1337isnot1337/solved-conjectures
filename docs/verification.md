@@ -4,6 +4,14 @@
 
 Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
 
+## Erdős–Hajnal’s ordinal-square chromatic problem
+
+The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
+
+## Tree reconstruction after long subdivisions
+
+The five standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
+
 ## Circular windows in convex tilings
 
 Run `python3 results/langi-wang-convex-tiling/check_sectors.py` with standard Python. The script checks one stage with 512 polygon sides, including sector convexity, inball clearance, diameter bounds, annular areas and which tiles lie inside the test disk. The all-scale estimates and the logarithmic-density bound have written proofs. [Construction](../results/langi-wang-convex-tiling/PROOF.md) · [Logarithmic density](../results/langi-wang-convex-tiling/LOG-DENSITY.md) · [Review](../results/langi-wang-convex-tiling/REVIEW.md)
@@ -15,6 +23,8 @@ Run `python3 docs/research-results/dual-a-universal-cold-spots/verify.py` with s
 ## Gaussian cold spots of high-rank type-A root lattices
 
 Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py` and `python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py`. The first script certifies 700 strict central-class comparisons across ranks 4 through 23 and ten more in ranks 4 and 5 at large scales that test both parities. The second compares four noncentral translates and two origin translates with the deep classes in ranks 5 and 9 at four times the natural logarithm of two. Both use explicit bounds on omitted Gaussian tails. The uniform all-translation theorem has a written proof. [Combined theorem](research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
+Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central_order.py` for 605 adjacent scalar comparisons in ranks 1 through 21 at five scales, and 32 complete Gaussian-mass comparisons in ranks 3 through 6 on the two restricted families. This verifier uses unshifted integer coefficient enclosures for the consecutive levels and the existing rational tail routine for displaced points. [Proof](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [Independent review](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL-REVIEW.md)
 
 ## Leech lattice cold-spot coefficients
 
@@ -65,6 +75,8 @@ Run `python3 results/fractional-general-position-square-grids/verify.py --limit 
 ## Erdős’s one-third pinned-distance conjecture
 
 Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets. The [arbitrary-collinearity review](../results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) documents the added incidence, sampling and limiting arguments. Run `python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py` for the exact finite geometric checks.
+
+Run `python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py` for mixed isosceles triples and `python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py` for axis nominations, co-farthest pairs and the arc sampling construction. The [written review](../results/erdos-general-position-pinned-distances/BISECTOR-REVIEW.md) identifies which parts of the asymptotic argument the finite tests exercise.
 
 ## Cioba–Savvas shutout number conjecture
 

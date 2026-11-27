@@ -1,8 +1,28 @@
 # History
 
-## 2026-11-26 — de Joannis de Verclos’s projective rigidity conjecture
+## 2026-11-27 — de Joannis de Verclos’s projective rigidity conjecture
 
 Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md), building on Cinna Davis’s secant and incidence arguments. A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
+
+## 2026-11-27 — Erdős–Hajnal’s ordinal-square chromatic problem
+
+Lyra found a ZFC order-type transfer proving relative independence of the primary question in Erdős Problem 919 using the cardinal-local results of Baumgartner and Foreman–Laver. The separate follow-up remains distinct. [Proof](results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) · [Audit](results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md)
+
+## 2026-11-27 — Balanced-edge and leaf-centroid reconstruction for Stanley’s question
+
+A new identity for the ordinary forest polynomial across any cut improves the previously published long-subdivision threshold. Endpoint components of orders 5 and 8 now require a total of 18 vertices under this sufficient bound. A separate result reconstructs a tree from a unique centroid carrying enough pendant leaves. Both are reviewed partial theorems within the existing unranked entry. [Balanced-edge proof](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid proof](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md)
+
+## 2026-11-27 — All-rank scalar ordering and one-outlier Gaussian minimizers in primal type A
+
+The existing type-A research entry now orders every scalar coset at every positive scale and identifies all minimizers among translates with one exceptional coordinate or with paired displacements about a deep class. It also proves positive curvature at every deep class in both parities. The unrestricted result in sufficiently high ranks retains its original scope. [Results and reviews](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Exact checks](docs/research-results/root-a-high-rank-cold-spots/check_central_order.py)
+
+## 2026-11-27 UTC — Erdős’s site-centered pinned-distance question
+
+The existing one-third entry adds a mixed-circle incidence bound, a sufficient condition in terms of active perpendicular bisectors, and the sharp pair-density moment for a uniform-disk model. These partial results concern the separate open site-centered hypothesis. [Theorems and review](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
+
+## 2026-11-27 — Recognizing trees after one long edge subdivision
+
+Codex proved in the WadeDavis research session that the ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single chosen tree edge among all trees. The publication also records the repeated-branch theorems and their exact checks. [Results](docs/research-results/stanley-tree-subdivisions/README.md) · [Review](docs/research-results/stanley-tree-subdivisions/REVIEW.md)
 
 ## 2026-11-27 — High-rank Gaussian cold spots of the primal type-A root lattices
 
