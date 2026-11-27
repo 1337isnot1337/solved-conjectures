@@ -26,7 +26,7 @@ A law of a pair absolutely continuous with respect to the independent product al
 
 Choose a rotation of the eight sectors of aperture $`\pi/4`$ so that no boundary or its opposite is charged by the recovered direction of an independent ordered pair and no finite pair in the sequence lies on a boundary. Only countably many rotations are excluded: the limiting direction law has countably many atoms and the sequence has countably many finite directions. Each sector is an intersection of two oriented half-planes; let $`\ell`$ be either of their defining linear forms. Append the global empirical rank $`U_{\ell,n}`$ of $`\ell(y)`$, divided by the root order, to each site. It has a uniform limiting marginal on $`[0,1]`$. Write $`\pi`$ for its geometric path, $`\rho`$ for the path law, and $`v(\pi,\pi')`$ for the direction from the independent second site's location toward the first as recovered at their first separation. For an independent copy, on the product law,
 ```math
- \mathbf1_{U'_{\ell}<U_{\ell}}=\mathbf1_{\ell(v(\pi,\pi'))>0}\quad\text{almost surely}.
+ \mathbf1_{U'_{\ell}\lt U_{\ell}}=\mathbf1_{\ell(v(\pi,\pi'))>0}\quad\text{almost surely}.
 ```
 Indeed finite comparisons agree identically, limiting independent ranks do not tie, and the directional projection is nonzero by the rotation choice. Conditioning on the first augmented path and ranks therefore gives
 ```math
