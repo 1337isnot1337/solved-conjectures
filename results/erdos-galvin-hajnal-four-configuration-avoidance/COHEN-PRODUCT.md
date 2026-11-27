@@ -39,4 +39,6 @@ The full poset is the finite-support direct limit of this continuous chain, as e
 
 ## Scope
 
-The immutable low-page record is essential here. Merely recording the induced shadow does not give complete projections: a low page could first be supplied on the side being amalgamated with the old condition. The flag is visible below the higher endpoint and closes that gap. This is distinct from the original ccc proof's initial-root amalgamation. Under CH the Cohen extension still satisfies CH, but the theorem says nothing about producing the four-pattern witness in every CH ground.
+The immutable low-page record is essential here. Merely recording the induced shadow does not give complete projections: a low page could first be supplied on the side being amalgamated with the old condition. For example, take a condition with triangle \(1,3,5\) and restrict below \(4\). An unsealed extension of its restriction could place triangle \(1,2,3\); then the shared pair \(1,3\) would not be bottom in both. The flag is visible below the higher endpoint and closes that gap. This is distinct from the original ccc proof's initial-root amalgamation. Under CH the Cohen extension still satisfies CH, but the theorem says nothing about producing the four-pattern witness in every CH ground.
+
+The [finite smoke check](check_sealed_projections.py) enumerates 141,480 compatible sealed restrictions over overlapping finite supports. It verifies validity and both extension relations for their graph union. It does not verify the transfinite forcing proof.
