@@ -22,6 +22,9 @@ conditional construction obstruction as an answer.
 | [Two-sided witness reuse](TWO-SIDED-REUSE.md) | Opposite-side high reuse without a common residual vertex; projective-plane incidence data show why counting absences alone is weaker. |
 | [Quadratic shared-support dichotomy](QUADRATIC-SHARED-SUPPORT-DICHOTOMY.md) | A fixed-offset example of order o(t^(5/2)) with subquadratic shared support outside some minimum pair. |
 | [Exponential neighbor tradeoff](EXPONENTIAL-NEIGHBOR-TRADEOFF.md) | A small common neighborhood at a controlled additive gap above the exact minimum intersection. |
+| [Trace triangles with slack](TRACE-TRIANGLES-WITH-SLACK.md) | Three low-overlap traces with empty triple intersection, without assuming minimum neighbors. |
+| [Distinct-trace exterior bound](DISTINCT-TRACE-EXTERIOR-OVERLAP.md) | Exterior overlap above t at saturation, for pairs whose trace difference admits a separating cut. |
+| [Binary-product links](BINARY-PRODUCT-MINIMUM-LINKS.md) and [Exterior-core packing](NEAR-COMMON-EXTERIOR-CORE.md) | Sparse binary-coordinate links, and polynomial-order realizations of their exponential trace family with an almost-common exterior t-set. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
 | [Larger cores and four-fold padding](LARGER-CORE-PADDING.md) | Extending minimum-rank rigidity by even one; below the classical threshold, selected triples must share many padding vertices. |
 | [Near-minimum dense-core barrier](NEAR-MINIMUM-DENSE-CORE.md) | For a wider fixed-core class, beating the classical construction near its start even with unrestricted shared padding and no core three-wise assumption. |
