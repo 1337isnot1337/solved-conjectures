@@ -6,7 +6,7 @@ degree at most two. On subcubic graphs, some fixed
 approximation ratio strictly greater than one already
 requires linear worst-case recourse. This gives the
 dichotomy for every fixed maximum degree and answers
-the second domination question in the
+the first domination question in the
 [authors’ concluding remarks](https://arxiv.org/html/2412.13358v1#S5).
 Their separate question about a one-change linear
 approximation in arrival degree is [#995](https://github.com/1337isnot1337/solved-conjectures/issues/995).
@@ -141,6 +141,14 @@ changes and still holds for projected solutions. Thus
 the lower bound also holds on bipartite subcubic streams.
 
 ## A stable approximation scheme at maximum degree two
+
+Existence already follows from [Corollary 2.2(ii) of the original
+paper](https://arxiv.org/html/2412.13358v1#S2.Corollarytheorem2),
+since paths and cycles have constant-size separators and bounded
+arrival degree. The following direct construction gives the
+explicit linear dependence on the inverse error tolerance.
+The [matching path lower bound](SHARP-RECOURSE.md) shows that
+this dependence is sharp.
 
 Fix a positive integer L. Each component is a path, an
 isolated vertex, or a cycle. Partition it into consecutive

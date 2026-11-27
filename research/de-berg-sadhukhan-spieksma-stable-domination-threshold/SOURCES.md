@@ -68,3 +68,10 @@ of changed memberships.
 No earlier solution of the dynamic question was found.
 This is separate from the one-stable linear-in-arrival-degree
 result in issue #995.
+
+The original paper's [Corollary 2.2(ii)](https://arxiv.org/html/2412.13358v1#S2.Corollarytheorem2)
+already implies the existence of a scheme for degree at most two
+via constant-size separators. The direct block proof yields an
+explicit linear bound in the inverse error tolerance, and the
+supplement proves its sharpness. The open direction resolved here
+is the absence of a stable scheme for degree three.

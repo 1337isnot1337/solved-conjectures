@@ -15,3 +15,6 @@ bounded-size block algorithm for the positive direction.
 - [Discovery and review issue #996](https://github.com/1337isnot1337/solved-conjectures/issues/996)
 
 Lean status: none. The proof is combinatorial.
+
+- [Independent mathematical review](REVIEW.md)
+- [Sharp dependence on the error tolerance](SHARP-RECOURSE.md)
