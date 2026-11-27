@@ -56,6 +56,9 @@ jobs:
         run: |
           python3 results/erz-big-descent-schur/verify.py
           python3 results/erz-big-descent-schur/check_review.py
+      - name: Reproduce the Claesson–Dukes–Steingrímsson stack-sorting count
+        shell: pwsh
+        run: ./results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample
@@ -191,6 +194,8 @@ jobs:
         run: |
           python3 docs/research-results/rather-book-domination-roots/check.py
           python3 docs/research-results/tuite-thomas-chandran-circulants/check.py
+      - name: Check the Leech lattice deep-hole coefficients
+        run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py

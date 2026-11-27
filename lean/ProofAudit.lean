@@ -13510,7 +13510,16 @@ run_cmd do
     `Conjectures.BursteinA218225.seriesX_equation,
     `Conjectures.BursteinA218225.seriesY_equation,
     `Conjectures.BursteinA218225.series_unique,
-    `Conjectures.ChernFuLinThreeStatistic.equidistribution]
+    `Conjectures.ChernFuLinThreeStatistic.equidistribution,
+    `Conjectures.CiobaSavvasShutout.breaker_wins_immediate_of_degree_cond,
+    `Conjectures.CiobaSavvasShutout.breaker_wins_freeStar_of_degree_cond,
+    `Conjectures.CiobaSavvasShutout.breaker_wins_immediate_of_maxDegree_le,
+    `Conjectures.CiobaSavvasShutout.maxDegree_gt_of_makerWinsImmediate,
+    `Conjectures.CiobaSavvasShutout.maxDegree_ge_of_makerWinsFreeStar,
+    `Conjectures.CiobaSavvasShutout.shutout_numbers_ge_three,
+    `Conjectures.CiobaSavvasShutout.sigma_ge_two_pow_div_eight,
+    `Conjectures.CiobaSavvasShutout.shutout_numbers_nat_ge_three,
+    `Conjectures.CiobaSavvasShutout.sigmaNat_ge_two_pow_div_eight]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
