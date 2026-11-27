@@ -217,3 +217,66 @@ since each index lies in exactly \(3t\) blocks and
 each pair in exactly \(\delta\). In particular every
 fixed \(\delta\) has infinitely many exact orders of
 this form.
+
+## 5. Integral pair budgets attain the affine bound without mixing divisibility
+
+In fact **every** fixed integral value
+\(\lambda=\delta/s^2\) attains the affine leading constant,
+whether or not the two formal design indices in §4 are
+integers. One can randomize the block size inside a larger
+fixed design and repair only \(o(t^2)\) incidences.
+
+When \(k\ge2\), take a fixed large \(K\equiv1\) modulo
+a common multiple of \(k(k-1)\) and \((k+1)k\).
+By [Wilson](https://doi.org/10.1016/0097-3165(75)90067-9)
+there are pair-index-one designs of block sizes
+\(k\) and \(k+1\) on a \(K\)-set.
+On \(m'\ge m\) labels with \(m'=m+O_K(1)\),
+first take a Wilson design of block size \(K\)
+and pair index \(\lambda\). Independently inside
+each outer block, use the \(k\)-design with probability
+\(\lambda_1/\lambda\), and the \((k+1)\)-design otherwise,
+where \(\lambda_1,\lambda_2\) are now the **real**
+nonnegative values of §4.
+Every pair of labels still lies in exactly \(\lambda\)
+resulting blocks, regardless of the random choices.
+
+For each label \(x\) its resulting block degree \(R_x\)
+has expectation \(3(m'-1)/s\), by the degree identity
+of §4. It is the sum of \(\Theta(m)\) independent
+bounded contributions (one from each outer block
+through \(x\)), so its variance is \(O(m)\).
+Consequently the expected sum of absolute degree
+deviations over all labels is \(O(m^{3/2})\).
+The total number of resulting blocks has expectation
+\(L_k m'(m'-1)\) and variance \(O(m^2)\), as it
+sums one bounded contribution per outer block.
+By Markov's and Chebyshev's inequalities, a choice
+exists with total degree deviation \(O(m^{3/2})\)
+and at most \(L_k m'(m'-1)+O(m^{3/2})\) blocks.
+
+Restrict the cut labels to \(m\) of these vertices.
+Give each retained label enough private points
+to raise its block-plus-private degree to at least
+\(\lceil 3(m'-1)/s+\lambda\binom s2/s\rceil\).
+The total added points are \(O(m^{3/2})\), using
+the chosen deviation bound. Any \(s\)-cut then
+sees at least \(3(m'-1)\ge p\) exterior points
+after subtracting pair overcounts of blocks.
+Trim independently to \(p\) points. A disjoint
+cut pair shares at most \(\lambda s^2=\delta\)
+block points and no private points.
+The total order is \((L_k+o(1))t^2\).
+
+If \(k=1\), then \(\lambda<3/s\).
+Use \(\lambda\) exterior points per pair of labels,
+include each in the petals of all cuts selecting
+either label, and supplement each label by separate
+private points until each \(s\)-cut has at least \(p\)
+points. For disjoint cuts, exactly \(\lambda s^2\)
+pair points are shared before trimming. Each label's
+pair degree is \(\lambda(m-1)\), so the private
+supplement per label is \((3/s-\lambda)m+O(1)\).
+The resulting leading order is
+\(3/s-\lambda/2=L_1\).
+The case \(\lambda=0\) gives the usual private star pools.
