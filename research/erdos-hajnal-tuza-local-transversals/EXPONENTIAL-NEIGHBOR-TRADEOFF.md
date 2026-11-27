@@ -145,3 +145,41 @@ The range \(z\ge1,\ z\le t/1000\) already entails \(t\ge1000\).
 
 Thus the exponential growth cannot be explained by a few
 different traces with many alternative exterior paddings.
+
+## Which small sets can hit all common near-minimum neighbors?
+
+There is a second interpretation of the additive gap that does
+not require the narrow \(z\le t/1000\) range. Use the broader
+range \(1\le z\le t/4\) of [Two-wing balance](TWO-WING-BALANCE.md),
+and let \(0\le u\le t-s\). Define \(\mathcal N_u(A,B)\)
+to be the edges distinct from \(A,B\) with
+\[
+(|A\cap F|-m)+(|B\cap F|-m)\le\delta+u.
+\]
+No set \(T\) of size at most \(t\) with at most \(u\) points
+outside \(X=A\cap B\) hits \(\mathcal N_u(A,B)\). In particular,
+\(\tau(\mathcal N_u(A,B))>u\), and even a hypothetical
+\(t\)-element cover of these neighbors must put more than \(u\)
+points outside the minimum intersection.
+
+To see this, enlarge \(T\) inside \(X\) to a set \(T'\) of size
+exactly \(t\), and choose an edge \(F\) missing \(T'\).
+As \(u\le t-s<t\), \(T'\cap X\) is nonempty, so \(F\ne A,B\).
+Also \(|F\cap X|\le s+u\le t\).
+Choose a \(t\)-set in \(X\) containing \(F\cap X\)
+and a standard witness \(E\) missing that \(t\)-set.
+Because \(X\) is a transversal, the two witnesses have nonempty
+disjoint \(X\)-residues and are distinct. The four-edge span
+argument above applies to \(A,B,E,F\), giving
+\(|W_F|\ge 3m-s-2\) and the desired total intersection excess.
+Thus \(F\) is an edge of \(\mathcal N_u(A,B)\) missed by \(T\).
+
+For \(u\ge1\) this also gives the simple all-wing count
+\[
+|\mathcal N_u(A,B)|\ge
+\frac{\binom r u}{\binom{r-m}u},
+\]
+because each \(u\)-set in \(A\) is missed by some member,
+while a fixed member meets \(A\) in at least \(m\) points.
+This general cover statement has a wider offset range than the
+stronger exponential trace and VC conclusions above.
