@@ -1,5 +1,9 @@
 # Verification
 
+## de Joannis de Verclos’s projective rigidity conjecture
+
+Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
