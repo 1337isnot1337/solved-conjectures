@@ -15,9 +15,11 @@ conditional construction obstruction as an answer.
 | [Two-wing balance](TWO-WING-BALANCE.md) | Concentrating essentially all overlap of two disjoint-cut witnesses in only one wing, when r−5t is sublinear. |
 | [Linear trace cliques](LINEAR-TRACE-CLIQUES.md) | Many minimum-neighbour traces with pair overlap s and no triple overlap when the petal inequality is saturated. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
+| [Larger cores and four-fold padding](LARGER-CORE-PADDING.md) | Extending minimum-rank rigidity by even one; below the classical threshold, selected triples must share many padding vertices. |
+| [Near-minimum dense-core barrier](NEAR-MINIMUM-DENSE-CORE.md) | For a wider fixed-core class, beating the classical construction near its start even with unrestricted shared padding and no core three-wise assumption. |
 | [Shared-padding dense-core barrier](../erdos-hajnal-tuza-local-transversal/DENSE-CORE-SHARED-PADDING-BARRIER.md) | Beating the classical threshold near its start by arbitrary shared padding around a fixed dense core. |
 
-The most useful next step is a stability result for a core whose
-rank is **above** the rigid minimum, or an implication from the
-unconditional minimum-pair structure to a fixed dense core.
-Neither implication is currently established.
+The main unresolved step is to derive a fixed dense core (possibly
+above the rigid minimum rank) from the unconditional minimum-pair
+structure, or to build a candidate that provably escapes such
+cores. No such reduction or construction is established.
