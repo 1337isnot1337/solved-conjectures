@@ -126,3 +126,27 @@ accounts for the additional room in the minimum-pair intersection.
 The unrestricted conjecture remains open: a general
 near-threshold family has not been shown to admit any
 such fixed near-minimum dense core.
+
+
+## Unconditional consequence for the shared-vertex support
+
+If \(t\ge8z\) and \(\tau>t\), at least
+\[
+ 3t+2+\left\lfloor\frac{t-8z}{12}\right\rfloor
+\]
+distinct vertices must each belong to at least two edges.
+This is a constraint on the vertices available to be shared
+by padding, not the total vertex count.
+
+To prove it, discard all vertices used by just one edge.
+As in [minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md),
+the resulting family is still 3-wise intersecting and
+has transversal number greater than \(t\); every
+edge therefore has at least \(2t+1\) surviving points.
+If there were at most \(3t+1+\lfloor(t-8z)/12\rfloor\)
+shared vertices, put them all in a set \(M\) of that size,
+padding the set arbitrarily if needed. The theorem with
+\(h=0\) and \(a=\lfloor(t-8z)/12\rfloor\) applies exactly
+when \(t\ge8z+12a\), which holds by construction. It
+contradicts \(\tau>t\). No fixed-core assumption on the
+original family is needed in this corollary.
