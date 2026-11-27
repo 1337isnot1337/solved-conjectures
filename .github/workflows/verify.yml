@@ -30,6 +30,9 @@ jobs:
       - name: Check stable domination reductions and local blocks
         run: python3 results/de-berg-sadhukhan-spieksma-stable-domination-threshold/verify.py
 
+      - name: Check one-stable domination on small graph prefixes
+        run: python3 results/de-berg-sadhukhan-spieksma-one-stable-domination/verify.py
+
       - name: Check both graphical dist orientation counts
         run: |
           python3 results/alexandersson-graphical-dist/check.py

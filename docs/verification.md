@@ -19,6 +19,13 @@ See the [independent review receipt](../results/de-berg-sadhukhan-spieksma-stabl
 Run `python3 results/de-berg-sadhukhan-spieksma-stable-domination-threshold/verify.py` from the repository root.
 It checks the path interface, lifted optima, the block scheme on all specified small graphs, and 10,000 mixed updates. The written proof covers arbitrary lengths and graph orders.
 
+## de Berg–Sadhukhan–Spieksma’s one-stable domination conjecture
+
+Read the [deterministic counter algorithm and its proof](../results/de-berg-sadhukhan-spieksma-one-stable-domination/PROOF.md).
+See the [independent review receipt](../results/de-berg-sadhukhan-spieksma-one-stable-domination/REVIEW.md).
+Run `python3 results/de-berg-sadhukhan-spieksma-one-stable-domination/verify.py` from the repository root.
+It checks every prefix of 33,867 ordered graphs. The bound is proved in general by the incidence budget; the finite check is supplementary.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.

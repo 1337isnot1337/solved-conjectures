@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — de Berg–Sadhukhan–Spieksma’s one-stable domination conjecture
+
+The [one-stable domination theorem](results/de-berg-sadhukhan-spieksma-one-stable-domination/) proves the optimal linear order of approximation for every bounded arrival degree with at most one membership change per insertion. The deterministic counter algorithm uses no future edges or degree bound. The incidence-budget proof applies to every prefix against its unrestricted optimum. No Lean formalization was used. [Discovery and review issue #995](https://github.com/1337isnot1337/solved-conjectures/issues/995).
+
 ## 2026-11-27 UTC — de Berg–Sadhukhan–Spieksma’s stable domination threshold
 
 The [stable domination threshold](results/de-berg-sadhukhan-spieksma-stable-domination-threshold/) shows that the minimum dominating set problem in the vertex-arrival model admits a stable approximation scheme exactly at maximum degree at most two. The negative side holds for bipartite subcubic graphs by a recourse-preserving online reduction. No Lean formalization was used. [Discovery and review issue #996](https://github.com/1337isnot1337/solved-conjectures/issues/996).
