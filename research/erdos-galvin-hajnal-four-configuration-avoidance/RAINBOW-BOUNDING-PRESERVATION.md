@@ -31,3 +31,14 @@ For EGH 9/C, the reduction from \(T_3,T_4\)-freeness to a 2-bounded colouring us
 Let \(\mu\) be regular and satisfy \(\mu^{\aleph_0}=\mu\) in the RP ground, with \(\mu\ge\mathfrak c\). The product random algebra on \(\mu\) random reals has cardinal at most \(\mu^{\aleph_0}\), since every condition depends on countably many coordinates, and is ccc. Its extension has continuum exactly \(\mu\): it adds \(\mu\) distinct reals and has at most \(\mu^{\aleph_0}\) nice names for reals. Thus the negative side of 9/C holds with arbitrarily large regular continuum. There are arbitrarily large eligible regular cardinals in any ground, for example successors of a sufficiently large \(2^\theta\). Positive models with arbitrarily large regular continuum follow independently from the [linked-package preservation](SIGMA-LINKED-PACKAGES.md).
 
 The nearest prior preservation results found concern preservation of a **fixed negative colouring** under selected forcing, rather than survival of a universal positive rainbow-partition principle for **new colourings**. Compare [Soukup, *Indestructible colourings and rainbow Ramsey theorems*](https://www.renyi.hu/~soukup/setop/otka61600/rainbow.pdf), and [Zhang, §4](https://arxiv.org/pdf/1809.00649). The use of a product random algebra here is essential to the stated application: an arbitrary finite-support iteration of random posets need not be bounding.
+
+## Generalized palettes and finite arities
+
+Let \(\lambda\) be regular infinite and \(d\ge2\) finite. The same argument shows that the assertion
+\[
+ \text{every \(<\lambda\)-to-one colouring of \([\lambda^+]^d\)
+ admits a partition of \(\lambda^+\) into \(\lambda\) rainbow classes}
+\]
+is preserved by any \(\lambda^+\)-cc forcing which preserves regularity of \(\lambda\) and is \(\lambda^\lambda\)-bounding modulo bounded sets. This conditional preservation does not assert the partition principle at any new successor.
+
+To check the changes: each ground list now has size at most \(\lambda\), by deciding entries through \(\lambda^+\)-cc antichains. A collision class of size \(<\lambda\) has indices bounded below \(\lambda\) by regularity. Enumerate each block of \(d\)-sets with a given maximum by indices below \(\lambda\). An antichain of at most \(\lambda\) eventual bounds can be combined by a diagonal upper bound, taking the supremum only over earlier indices. The graph of mutual truncations has degrees \(<\lambda\), so each finite-distance shell has size \(<\lambda\), and the two shifts still have \(<\lambda\)-sized fibres. For any fixed cutoff \(N<\lambda\), at each vertex select one lower vertex from each \(d\)-set of index below \(N\) having that maximum. Greedily colour the resulting graph with \(\lambda\) colours by avoiding fewer than \(\lambda\) earlier colours. No monochromatic class contains a \(d\)-set of low index. Finish with the same cutoff and two-shell palette, whose cardinality is \(\lambda\).
