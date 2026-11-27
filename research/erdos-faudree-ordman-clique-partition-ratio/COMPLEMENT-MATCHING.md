@@ -83,5 +83,31 @@ second restricts to one sector without loss. This sector
 is itself a simplex: keep the first coordinate vector and
 replace the second by the pair's midpoint, independently
 for each pair. The checker starts from this exact sector.
-At this stage this is a certified patch method, not yet an
-assertion that the whole seven-type check has finished.
+The full check passed. The single-sector verifier split 43,555
+times and certified all 43,556 leaves, including 229 primal
+patches, at depth at most 43. The faster
+[ordered-sector verifier](bernstein_matching_order.py)
+simultaneously orders the first masses of the three pairs,
+then triangulates that sector by its 15 compatible total
+orders on the six coordinates. For each total order, the
+simplex vertices are the normalized prefix sums of its
+coordinate vectors and the universal type's unit vector.
+This is the usual successive-difference expansion of an
+ordered nonnegative vector. The second run split 5,710 times
+and passed all 5,725 leaves, including 15 primal patches,
+at depth at most 35. It checked 4,132 distinct pair capacities.
+
+The sharp asymptotic ratio over four-cover representations
+without singleton memberships is therefore 1/56. If such a
+representation has fewer than four cliques in a minimum
+cover, use the separate bounds at cover numbers one through
+three. For the lower bound the square uses four covering
+indices, each type belongs to two, and the square requires
+all four covers. The general four-cover problem still allows
+singleton memberships; this proof does not drop that case.
+
+To reproduce the exact fast run:
+
+```sh
+python3 bernstein_matching_order.py --L 5 --limit 1000000
+```
