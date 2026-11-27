@@ -4,6 +4,14 @@
 
 For every positive exponent increment and every infinite cardinal, the shift-graph construction gives a graph of higher chromatic number in which every finite subgraph can be made bipartite within Erdős’s proposed edge-deletion bound. The proof controls monochromatic edges at each shift center and applies at all finite orders. [Proof](results/erdos-arbitrary-cardinal-bipartization/PROOF.md) · [Independent review](results/erdos-arbitrary-cardinal-bipartization/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1015)
 
+## 2026-11-27 — Shelah-graph avoidance is independent over GCH
+
+Cinna Davis’s reduction resolves Problem 4 of Erdős, Galvin and Hajnal. Every graph on the first uncountable ordinal avoiding their Shelah subgraph partitions into countably many induced graphs of Hajnal–Máté type. This gives the negative answer in the Avraham–Devlin–Shelah GCH model, while the original authors supplied a positive example in the constructible universe. [Proof](results/erdos-galvin-hajnal-shelah-graph-avoidance/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-shelah-graph-avoidance/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1037)
+
+## 2026-11-27 — Sharp second adjacency eigenvalue sum and Seidel spread
+
+Published the sharp bound and four-block equality case conjectured by Abreu, Brondani, de Lima and Oliveira. The reconstruction of Cinna Davis’s announced Seidel-spread method determines the exact maximum spread of every order, including the odd-order refinement. [Proof](results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Sources and attribution](results/abreu-brondani-adjacency-nordhaus-gaddum/AUDIT.md) · [Review](results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/499)
+
 ## 2026-11-27 — Square-root upper gap for normalized complementary connectivities
 
 Published the full written argument for Conjecture 2 of Kempton, Zaitzeff and Muthuprakash. Cinna Davis recorded the projected-row proof strategy, which was reconstructed and independently reviewed in the WadeDavis research session. The original authors’ focus family makes the exponent sharp. [Proof](results/normalized-nordhaus-gaddum/PROOF.md) · [Attribution and prior work](results/normalized-nordhaus-gaddum/AUDIT.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/495)

@@ -48,6 +48,9 @@ jobs:
       - name: Check the claw-free path-perfect counterexample
         run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
 
+      - name: Replay interval slots and color reconstruction for Shelah-graph avoidance
+        run: python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py
+
       - name: Check countable and continuum rainbow-star construction invariants
         run: python3 scripts/check_rainbow_star.py
 
@@ -60,6 +63,9 @@ jobs:
         run: |
           python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
           python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
+
+      - name: Check sharp Seidel spread and second adjacency eigenvalues
+        run: python3 results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py
 
       - name: Check normalized adjacency estimates and complementary focus spectra
         run: python3 results/normalized-nordhaus-gaddum/verify.py

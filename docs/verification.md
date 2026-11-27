@@ -97,6 +97,10 @@ Read the [transversal obstruction and the vertex-criticality proof](../results/c
 Run `python3 results/cameron-clow-twok2-free-path-perfect/verify.py` from the repository root.
 It reconstructs three witnesses, checks all induced four-sets and palette choices, and verifies a coloring after every vertex deletion. The infinite-family proof does not rely on computation.
 
+## Shelah-graph avoidance on the first uncountable ordinal
+
+The [written proof](../results/erdos-galvin-hajnal-shelah-graph-avoidance/PROOF.md) and [review](../results/erdos-galvin-hajnal-shelah-graph-avoidance/REVIEW.md) give the transfinite argument and the precise consistency assumptions. Review the two cited models and check how each slot handles an immediately preceding interval. Run `python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py` to replay the finite partition and coloring steps. The model existence assertions use the cited set-theoretic results.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.
@@ -152,6 +156,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 ## Mobile general position complexity
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
+
+## Second adjacency eigenvalues and Seidel spread
+
+Run `python3 results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py`. It checks all 1,098 labeled graphs of orders two through five, all 1,022 threshold creation words through order ten and the 256 switching sign choices of the order-eight extremal Seidel matrix. Characteristic polynomials and rational root counts certify the comparisons. [Proof](../results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Independent review](../results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md)
 
 ## Normalized Nordhaus–Gaddum upper gap
 
