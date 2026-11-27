@@ -111,3 +111,52 @@ At \(r=5t+1\) we necessarily have \(s=1\), \(p=3t\),
 Theorems 3 and 6. The extremal problem remains whether outside
 sharing can meet these requirements for all possible minimum
 pairs and all choices of petals simultaneously.
+
+## 3. Use all cuts of the minimum intersection
+
+One can replace the floor \(\ell=\lfloor m/s\rfloor\) in the
+union bound by \(m/s\), by selecting one edge \(E_S\) avoiding
+\(X-S\) for **every** \(s\)-set \(S\subset X\). With the notation
+above, their full exterior union satisfies
+\[
+\left|\bigcup_{S\in\binom Xs} W_S\right|
+ \ge \frac{m p^2}{(m-s)\delta+s p}.
+\]
+In the exact case \(\delta=0\), equality forces a partition
+of the exterior vertices into equal-size pools indexed by
+\(X\), where \(W_S\) is the union of the pools indexed by \(S\).
+
+For the proof use the Kneser graph \(K(m,s)\), whose vertices are
+the \(s\)-sets of \(X\) and whose edges join disjoint sets.
+It is regular with degree \(d=\binom{m-s}{s}\) and has least
+eigenvalue \(-sd/(m-s)\); see [Huang–Zhao, Lemma
+2.1](https://www.sciencedirect.com/science/article/am/pii/S009731651730033X)
+for this standard spectrum. For an exterior vertex \(w\), let
+\(F_w=\{S:w\in W_S\}\) and \(f_w=|F_w|/\binom ms\).
+Decomposing its indicator into a constant vector and an orthogonal
+part, the Rayleigh bound gives
+\[
+\frac{2e(K(m,s)[F_w])}{d\binom ms}
+\ge f_w^2-\frac{s}{m-s}f_w(1-f_w).
+\]
+Each disjoint pair \(S,T\) has at most \(\delta\) shared exterior
+vertices. Thus the sum of the left sides over \(w\) is at most
+\(\delta\). Setting \(Q=\sum_w f_w\), this implies
+\[
+\sum_w f_w^2\le (1-s/m)\delta+(s/m)Q .
+\]
+Every \(W_S\) has size at least \(p\), so \(Q\ge p\).
+Cauchy–Schwarz and monotonicity of
+\(Q^2/((1-s/m)\delta+(s/m)Q)\) give the new bound.
+
+If \(\delta=0\), each \(F_w\) is an intersecting \(s\)-family.
+Equality in the union bound implies all \(W_S\) have size \(p\)
+and all nonempty \(F_w\) have proportion exactly \(s/m\).
+As \(m>2s\), the equality case of Erdős–Ko–Rado implies every
+\(F_w\) is a full star; see, for example, the formulation in
+[On the stability of the Erdős–Ko–Rado theorem](https://www.sciencedirect.com/science/article/pii/S009731651500103X).
+Allocate \(w\) to the pool of that star's center. Every \(s\)-set
+then indexes pools whose total size is \(p\). Comparing two
+\(s\)-sets that differ in one element shows that all pool sizes
+are equal, necessarily \(p/s\). In particular, if \(s\) does
+not divide \(p\), equality is impossible.
