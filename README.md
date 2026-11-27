@@ -17,7 +17,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **94.** [Elizalde–Rivera–Zhuang’s big-descent Schur-positivity conjecture](results/erz-big-descent-schur/) | ⬜ |
 | **4.** [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ | **94.** [Chern–Fu–Lin’s three-statistic equidistribution conjecture](results/chern-fu-lin-three-statistic/) | ✅ |
 | **4.** [Kotesovec’s line-size asymptotic (OEIS A401948)](results/erdos-607-line-sizes/) | ✅ | **94.** [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | 🟡 |
-| **4.** [Erdős’s pinned-distance conjecture in general position](results/erdos-general-position-pinned-distances/) | ⬜ | **94.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
+| **4.** [Erdős’s one-third pinned-distance conjecture](results/erdos-general-position-pinned-distances/) | ⬜ | **94.** [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
 | **9.** [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ | **94.** [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | 🟡 |
 | **9.** [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | 🟡 | **100.** [Liang’s 0.3123 slice problem](results/liang-03123-slice/) | ⬜ |
 | **9.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ✅ | **101.** [Liang’s slice-period conjecture](results/liang-slice-period/) | ⬜ |

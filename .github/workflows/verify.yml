@@ -64,6 +64,10 @@ jobs:
         run: python3 results/fractional-general-position-square-grids/verify.py
       - name: Check pinned-distance multiplicities and diameter neighbors
         run: python3 results/erdos-general-position-pinned-distances/verify.py
+      - name: Check farthest-site conflicts, retention and triangle counts
+        run: |
+          python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py
+          python3 results/erdos-general-position-pinned-distances/check_localization.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
