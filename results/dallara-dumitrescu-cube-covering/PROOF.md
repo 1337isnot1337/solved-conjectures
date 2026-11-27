@@ -32,7 +32,7 @@ Take $`H`$ to be a positive multiple of $`2L`$. For each planar square $`S`$ of 
 
 ```math
 S\times\prod_{i=1}^k[j_i s,(j_i+1)s],
-\qquad 0\le j_i<H/s,\quad j_i\in\mathbb Z .
+\qquad 0\le j_i\lt H/s,\quad j_i\in\mathbb Z .
 ```
 
 Over each planar square the cubes fill the entire extra box. The union volume equals $`4(L^2+U)H^k`$.
