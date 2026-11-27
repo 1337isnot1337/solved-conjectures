@@ -56,6 +56,19 @@ $
 \tag{5}
 $
 
+## Complete pentagon cores, without a balanced labeling
+
+Suppose an induced subgraph of the triangle-free graph is a complete blow-up of a pentagon whose total mass is at least 4/5. Its five nonempty classes can have arbitrary weights. Label the core by its template labels. Every exterior vertex meets only an independent subset of the core labels, since consecutive core classes are completely joined. In a pentagon every independent subset lies in the two-element neighborhood of a label. Assign that label to the exterior vertex, choosing arbitrarily when there is a choice. All edges incident to the core are now valid.
+
+Let Y be the edge mass strictly outside the core, let ν be its vertex mass, and write p for the whole graph's ordered edge density. Every edge incident to the core is monochromatic in exactly one of the five alternating label cuts. Even counting every exterior edge as monochromatic gives
+$
+\beta \le p/10+4Y/5\le p/10+\nu^2/5
+\tag{6}
+$
+by weighted Mantel on the exterior. If $p\le0.3197$, then $\nu\le1/5$ makes this at most $0.03997<1/25$. If $p>0.3197$, the dense-tail theorem of Balogh–Clemen–Lidický already gives the target. To apply that theorem to arbitrary real weights, first use rational weights and complete vertex blow-ups of arbitrarily large order, then take limits; a product-weighted max cut is the maximum of finitely many continuous cut weights. Thus every triangle-free graph with such a core satisfies the sharp bound, with strict slack in the open band.
+
+Completeness of the core is used only to prove the existence of a cyclic labeling making its incident edges valid. Accordingly (6) remains true whenever such a labeling and a vertex set of mass at least 4/5 are given, even if valid core edges were removed. The complementary task is structural: there is no deduction here that an extremal graph must have such a set.
+
 ## Scope
 
 This specializes to the standard weighted pentagon bound when there are no invalid edges. The local charge does allow non-pentagonal triangle-free graphs in the band: for example take a complete balanced pentagon core of total mass .85, extend its five classes to total mass .2 each, and put a copy of the triangle-free 4-chromatic Mycielski graph of C5 of total mass .01 in the surplus of one class. Attach the copy to one adjacent core class by allocating disjoint slices of that core class to its four proper colors and joining each copy vertex to its color slice. This is triangle-free, since endpoints of each copy edge attach to different slices. Every unused surplus vertex is isolated. Its density lies between .289 and .294, and (4) holds even with epsilon=1/2, by assigning all invalid edges to the adjacent core class and using invalid weighted degree at most .01. The graph cannot be homomorphic to C5 since it is not 3-colorable.
