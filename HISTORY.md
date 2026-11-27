@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Distance reconstruction for one four-valent hub
+
+The ordinary unlabelled vertex-distance histogram identifies a density-one set of independent subdivisions of every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs. Marked signed profiles and three necessary path-length equations decide the first positive degree-excess class analytically. Higher classes and Stanley’s full question remain open. [Proof](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-RIGIDITY.md) · [Internal review](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
+
 ## 2026-11-27 — Sharp second adjacency eigenvalue sum and Seidel spread
 
 Published the sharp bound and four-block equality case conjectured by Abreu, Brondani, de Lima and Oliveira. The reconstruction of Cinna Davis’s announced Seidel-spread method determines the exact maximum spread of every order, including the odd-order refinement. [Proof](results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Sources and attribution](results/abreu-brondani-adjacency-nordhaus-gaddum/AUDIT.md) · [Review](results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/499)

@@ -4,6 +4,8 @@
 
 Arbitrary-core reconstruction has an independently reviewed written proof and a finite Python check of labeled splits and internal lengths. It has no Lean formalization. [Review and scope](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
+The affirmative histogram reconstruction theorem for every tree with one four-valent vertex and otherwise trivalent hubs has an internally reviewed written proof, two reproducible finite checks and no Lean formalization. [Theorem and review](research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
+
 The fixed-excess reduction for the ordinary distance histogram has an internally reviewed written proof with finite pruning checks and no Lean formalization. [Review and scope](research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
 
 The quantitative path-distance certificate and its histogram-only trivalent corollary have complete internally reviewed written proofs and finite checks. They have no Lean formalization. [Scope and review](research-results/stanley-tree-subdivisions/PATH-DISTANCE-REVIEW.md)

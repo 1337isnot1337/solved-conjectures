@@ -4,7 +4,9 @@
 
 ## When the histogram alone suffices
 
-For any prescribed positive degree excess, there is a finite procedure deciding generic identifiability for every reduced tree of that excess, including arbitrarily many trivalent hubs. A counterexample to generic identifiability would yield one with at most twelve times the excess minus two reduced vertices. The positive-excess classes have not been classified. The same question can be posed for the single arclength distance distribution of a metric tree. [Decision for one topology](PATH-HISTOGRAM-DECISION.md) · [Fixed-excess theorem](FIXED-EXCESS-REDUCTION.md) · [Continuous formulation](METRIC-TREE-DISTRIBUTION.md) · [Independent review](FIXED-EXCESS-REVIEW.md)
+Every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs is generically determined among all trees by its ordinary distance histogram alone. For independently chosen subdivision lengths from 1 through t the exceptional proportion is at most a topology-dependent constant divided by t. This settles the first positive degree-excess class. [Proof](QUARTIC-DISTANCE-RIGIDITY.md) · [Marked rigidity](MARKED-QUARTIC-RIGIDITY.md) · [Independent review and checks](QUARTIC-DISTANCE-REVIEW.md)
+
+For any prescribed positive degree excess, there is a finite procedure deciding generic identifiability for every reduced tree of that excess, including arbitrarily many trivalent hubs. A counterexample to generic identifiability would yield one with at most twelve times the excess minus two reduced vertices. The first positive class is settled above; higher classes remain open. The same question can be posed for the single arclength distance distribution of a metric tree. [Decision for one topology](PATH-HISTOGRAM-DECISION.md) · [Fixed-excess theorem](FIXED-EXCESS-REDUCTION.md) · [Continuous formulation](METRIC-TREE-DISTRIBUTION.md) · [Independent review](FIXED-EXCESS-REVIEW.md)
 
 ## Subdivision at a branch vertex
 
@@ -48,6 +50,8 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_marked_quartic.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_quartic_rows.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
