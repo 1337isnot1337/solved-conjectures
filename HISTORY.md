@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Balanced-edge and leaf-centroid reconstruction for Stanley’s question
+
+A new identity for the ordinary forest polynomial across any cut improves the previously published long-subdivision threshold. Endpoint components of orders 5 and 8 now require a total of 18 vertices under this sufficient bound. A separate result reconstructs a tree from a unique centroid carrying enough pendant leaves. Both are reviewed partial theorems within the existing unranked entry. [Balanced-edge proof](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid proof](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md)
+
 ## 2026-11-27 — All-rank scalar ordering and one-outlier Gaussian minimizers in primal type A
 
 The existing type-A research entry now orders every scalar coset at every positive scale and identifies all minimizers among translates with one exceptional coordinate or with paired displacements about a deep class. It also proves positive curvature at every deep class in both parities. The unrestricted result in sufficiently high ranks retains its original scope. [Results and reviews](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Exact checks](docs/research-results/root-a-high-rank-cold-spots/check_central_order.py)
