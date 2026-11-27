@@ -68,14 +68,11 @@ This is attainable. The linear map $`y\mapsto(2\langle u_i,y\rangle)_i`$ on the 
 
 The affine $`A_r`$ labels are all $`1`$, so its component minimum is $`m_{A_r}=r+1`$. For affine $`D_r`$ they are four labels $`1`$ and $`r-3`$ labels $`2`$, so $`m_{D_r}=(r-1)2^{2/(r-1)}`$. For the exceptional types the labels are
 
-```math
-\begin{array}{c|l|l}
-&\text{labels as a multiset}&\text{component minimum}\\ \hline
-E_6&1,1,1,2,2,2,3&12 /(2^{1/2}3^{1/4})\\
-E_7&1,1,2,2,2,3,3,4&18 /3456^{1/9}\\
-E_8&1,2,2,3,3,4,4,5,6&30 /(2^{26}3^{12}5^5)^{1/30}.
-\end{array}
-```
+| Type | Labels as a multiset | Component minimum |
+| --- | --- | --- |
+| $`E_6`$ | 1,1,1,2,2,2,3 | $`12 /(2^{1/2}3^{1/4})`$ |
+| $`E_7`$ | 1,1,2,2,2,3,3,4 | $`18 /3456^{1/9}`$ |
+| $`E_8`$ | 1,2,2,3,3,4,4,5,6 | $`30 /(2^{26}3^{12}5^5)^{1/30}`$ |
 
 The lists can be checked by verifying twice each label equals the weighted sum of adjacent labels: for the three-arm affine $`E_6,E_7,E_8`$ trees the arm lengths are respectively $`(2,2,2),(1,3,3),(1,2,5)`$, and the labels descend linearly along an arm if continued by $`0`$ past its endpoint.
 
