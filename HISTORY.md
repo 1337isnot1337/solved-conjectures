@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-27 UTC — Stanley reconstruction at two unmarked hubs
+
+The ordinary chromatic symmetric function recognizes two-hub trees after independently long exterior subdivisions under an explicit condition on cap leaf counts. Separate theorems allow arbitrary rooted terminal shapes under an exterior-order or dominant-arm condition. [Independent lengths](docs/research-results/stanley-tree-subdivisions/TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](docs/research-results/stanley-tree-subdivisions/DOMINANT-ARM.md)
+
+The central length is unrestricted. A second identity detects an exchange of unequal arm orders between different rooted caps at one vertex. The results extend the existing unranked Stanley partial theorem. The general isomorphism question remains open. [Proof](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
 ## 2026-11-27 — Erdős–Galvin–Hajnal’s continuum rainbow-star problem
 
 Published Cinna Davis’s ZFC solution of Problem 6 in Erdős, Galvin and Hajnal’s 1975 paper. The graph and edge palette have size continuum, every countable vertex colouring has a monochromatic star realizing every label, and the prescribed odd cycles are absent. A connected abelian Cayley graph also realizes the stronger conclusion with continuum many neighbours for each label. [Proof and scope](results/erdos-galvin-hajnal-continuum-rainbow-star/) · [Independent review](results/erdos-galvin-hajnal-continuum-rainbow-star/REVIEW.md) · [Issue 1021](https://github.com/1337isnot1337/solved-conjectures/issues/1021)
