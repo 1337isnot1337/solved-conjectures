@@ -1,6 +1,6 @@
 # Malek's conjecture
 
-**Lean status:** none
+**Lean status:** incomplete candidate; verification pending. No verified matrix theorem.
 
 For every nonnegative doubly stochastic matrix $`A`$ of order $`n\ge2`$ and every subpermanent degree $`0\le k\le n`$,
 
@@ -14,6 +14,7 @@ The complete proposed proof covers all parameters and classifies equality. Its n
 This is the historical conjecture attributed to Malek in Cheon–Wanless's 2005 survey, equation (9), linked from [Minc's list](https://yair-lavi.com/mincs-list/). The live numbered C3 page cites Malek but does not separately state this all-degree extension. It is a named subsidiary in that source chain, not another resolution of numbered Conjecture 3. The source audit makes this eligibility limit explicit.
 
 - [Complete proof and equality cases](proof.md)
+- [Incomplete Lean formalization and scope audit](FORMALIZATION.md)
 - [Source and priority audit](source-audit.md)
 - [Independent inequality review](review-inequalities.md)
 - [Independent constants and text review](review-constants.md)
