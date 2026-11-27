@@ -4,4 +4,4 @@
 
 This does not refute the weaker possibility of algebraic periodicity with other periods; in fact this slice has least periods five (edge) and four (bulk). This result is not Lean-formalized.
 
-[Proof](PROOF.md) · [Audit](AUDIT.md) · [Exact checker](check.py) · [Independent check](check_independent.cpp)
+[Proof](PROOF.md) · [Audit](AUDIT.md) · [Exact checker](check.py) · [Independent check](check_independent.cpp) · [All three-heap slices](THREE-HEAPS.md)
