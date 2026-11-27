@@ -52,6 +52,10 @@ Run `python3 results/mobile-general-position-complexity/verify.py` to compare so
 
 Run `python3 results/barrett-evans-hall-kempton-se/check_small_parameters.py` for exact integer comparator checks. The [audit](../results/barrett-evans-hall-kempton-se/AUDIT.md) explains how to generate the small simple endpoints using nauty and certify their strict inequalities using an integer C++ checker. The proof for orders at least 36 and weighted interpolation are analytic.
 
+## Barrett–Evans–Hall–Kempton’s dandelion conjecture
+
+The [proof and reproduction guide](../results/barrett-evans-hall-kempton-dandelion/PROOF.md) combines a comparison for complementary leaves with exact certificates for the remaining graph families. The finite checks use rational arithmetic and verified integer bounds on Laplacian eigenvalues. [Independent review](../results/barrett-evans-hall-kempton-dandelion/REVIEW.md)
+
 ## Liang’s slice-period conjecture
 
 Run `python3 results/liang-slice-period/check.py` for the exact recurrence on 684 transfer representatives. The [audit](../results/liang-slice-period/AUDIT.md) gives instructions for the independent labeled C++ evaluator. The [all-three-heap supplement](../results/liang-slice-period/THREE-HEAPS.md) has its own [exact checker](../results/liang-slice-period/all_three.py).
