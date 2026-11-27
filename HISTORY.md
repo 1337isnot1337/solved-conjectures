@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős’s arbitrary-cardinal bipartization conjecture
+
+For every positive exponent increment and every infinite cardinal, the shift-graph construction gives a graph of higher chromatic number in which every finite subgraph can be made bipartite within Erdős’s proposed edge-deletion bound. The proof controls monochromatic edges at each shift center and applies at all finite orders. [Proof](results/erdos-arbitrary-cardinal-bipartization/PROOF.md) · [Independent review](results/erdos-arbitrary-cardinal-bipartization/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1015)
+
 ## 2026-11-27 — Shelah-graph avoidance is independent over GCH
 
 Cinna Davis’s reduction resolves Problem 4 of Erdős, Galvin and Hajnal. Every graph on the first uncountable ordinal avoiding their Shelah subgraph partitions into countably many induced graphs of Hajnal–Máté type. This gives the negative answer in the Avraham–Devlin–Shelah GCH model, while the original authors supplied a positive example in the constructible universe. [Proof](results/erdos-galvin-hajnal-shelah-graph-avoidance/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-shelah-graph-avoidance/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1037)

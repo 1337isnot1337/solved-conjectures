@@ -1,5 +1,13 @@
 # Lean verification status
 
+## Erdős’s arbitrary-cardinal bipartization conjecture
+
+The full arbitrary-cardinal construction has a written proof and
+finite checks of the shift orientation and the all-orders arguments.
+No formalization is registered.
+[Proof, review and checks](../results/erdos-arbitrary-cardinal-bipartization/).
+
+
 ## Tree reconstruction after long subdivisions
 
 Arbitrary-core reconstruction has an independently reviewed written proof and a finite Python check of labeled splits and internal lengths. It has no Lean formalization. [Review and scope](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
@@ -301,6 +309,7 @@ proofs are documented separately in the catalogue and result package.
 | Abreu–Brondani–de Lima–Oliveira’s adjacency Nordhaus–Gaddum conjecture | Not formalized | The [written proof](../results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) and [independent review](../results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) cover all orders and all equality cases. The [finite verifier](../results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py) uses exact spectral calculations. |
 | Kempton–Zaitzeff–Muthuprakash’s normalized Nordhaus–Gaddum conjecture | Not formalized | The independently reviewed [written proof](../results/normalized-nordhaus-gaddum/PROOF.md) treats all graph orders at least three and both density regimes. [Review](../results/normalized-nordhaus-gaddum/REVIEW.md) · [Rational verifier](../results/normalized-nordhaus-gaddum/verify.py). |
 | Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum | Not formalized | [Computer-assisted proof](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) with exact finite certificates and an all-orders equality classification throughout the connected complementary class. The [sharp-maximum corollary](../results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md) has a written deduction and exact small-order checks. [Independent review](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md). |
+| Erdős’s arbitrary-cardinal bipartization conjecture | Not formalized | [Written proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md), [review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md), and [finite regression checks](../results/erdos-arbitrary-cardinal-bipartization/). |
 | Chen’s parity-free exact-one-marker conjecture | Not formalized | [Written all-graphs proof](../results/chen-parity-free-exact-one-marker/PROOF.md), [independent mathematical review](../results/chen-parity-free-exact-one-marker/REVIEW.md) and [residual-flow replay](../results/chen-parity-free-exact-one-marker/verify.py). |
 | Larsson–Saha–Yokoo’s periodicity and Gurvich–Vyalyi’s semilinearity conjectures | Not formalized | Repository verification covers the [written theorem](../results/planar-subtraction-games/PROOF.md), [independent review](../results/planar-subtraction-games/REVIEW.md) and [finite checks](../results/planar-subtraction-games/check_planar_game.py). The contributor reported a separate Lean 4.19 build in the [source audit](../results/planar-subtraction-games/AUDIT.md). |
 | Cameron–Clow’s claw-free path-perfect conjecture | Not formalized | [Three-branch edge-dominating-trail obstruction](../results/cameron-clow-claw-free-path-perfect/PROOF.md); [explicit witness and edge-deletion colorings](../results/cameron-clow-claw-free-path-perfect/verify.py). |
