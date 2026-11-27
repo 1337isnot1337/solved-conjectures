@@ -1,5 +1,7 @@
 # Erdős–Hajnal’s ordered rectangle rainbow problem
 
+**Historical research note.** Cinna Davis derived the ordered obstruction and formulation below. The independent audit traces the counterexample and the countable embedding argument to previously published constructions. [Prior-resolution decision](AUDIT.md#prior-resolution-decision-27-november-2026-utc) · [Issue receipt](https://github.com/1337isnot1337/solved-conjectures/issues/980#issuecomment-7210087268)
+
 **ZFC counterexample to Problem 6(A).** There is a three-coloring of
 the pairs of $`\omega_1`$ that takes all three colors between every
 two uncountable vertex sets, yet has no $`x\lt y\lt z`$ with
@@ -11,7 +13,7 @@ from 6(B). It does not avoid all rainbow triangles.
 
 Let $`C`$ be any set of colors of cardinality at most $`\aleph_1`$
 and split it into two nonempty parts $`C_+,C_-`$.
-There is a coloring $`c:[\omega_1`$^2\to C] with both of the following
+There is a coloring $`c:[\omega_1]^2\to C`$ with both of the following
 properties:
 
 1. For every uncountable $`A,B\subseteq\omega_1`$, every color occurs
@@ -32,7 +34,7 @@ injectively by recursion of length $`\omega_1`$. At every stage
 only countably many reals have already been used.
 
 By [Moore's half-graph theorem](https://arxiv.org/abs/math/0501524),
-there is a coloring $`h:[\omega_1`$^2\to\omega_1] with this property:
+there is a coloring $`h:[\omega_1]^2\to\omega_1`$ with this property:
 for all uncountable $`A,B\subseteq\omega_1`$ and all $`q<\omega_1`$,
 there are $`x\in A,y\in B`$ with $`x\lt y`$ and $`h(x,y)=q`$.
 Fix surjections $`s_\pm:\omega_1\to C_\pm`$. For $`x\lt y`$, set
@@ -48,7 +50,7 @@ countably many points of that set form a countable set, by the
 countable base of the real line. Choose distinct remaining points
 from the respective sets and disjoint intervals around them.
 Thus there are uncountable $`A'\subseteq A,B'\subseteq B`$ whose
-real labels are separated, say $`r[A'`$\lt r[B']]. Given any positive
+real labels are separated, say $`r[A']\lt r[B']`$. Given any positive
 color, take a preimage under $`s_+`$ and use Moore with the earlier
 end in $`A'`$ and the later end in $`B'`$. Given any negative color,
 take a preimage under $`s_-`$ and use Moore with the earlier end

@@ -1,5 +1,13 @@
 # Source and scope audit
 
+## Prior-resolution decision, 27 November 2026 UTC
+
+The specific ten-color witness printed in Hajnal’s 2008 Fact 2.3 projects onto a three-color counterexample to the ordered Problem 6(A). Map the five real-order ascent hues onto two colors and the five descent hues onto a third. Every unordered uncountable rectangle still sees all three colors. An ordinal-increasing triple whose consecutive edges ascend cannot have a descending closing edge. [Hajnal, Fact 2.3, pp. 257–258](https://www.impan.pl/shop/en/publication/transaction/download/product/88684#page=4) · [Original Problem 6](https://users.renyi.hu/~p_erdos/1968-04.pdf#page=15)
+
+Hajnal’s 2008 Theorem 1.6 credits previous countable-pattern universality to Erdős and Hajnal’s 1978 paper. Its stated embeddings are injections. The proof of 1978 Lemma 1.3 explicitly chooses each vertex in its prescribed uncountable set; Lemma 1.5 supplies the interleaving argument. Using these steps on the real intervals of a linear extension and deleting the countable ordinal initial segment at each stage yields the increasing embedding for every acyclic colored pattern of order type at most omega. Cycles are excluded by transitivity of real order. The proof of 1978 Theorem 2.1 also uses rationally ordered sets to realize Sierpiński signs. This independent comparison excludes the named discovery and records Cinna Davis’s formulation as a consequence of published constructions. It makes no priority claim for the exact formulation. [Independent review and source reduction](https://github.com/1337isnot1337/solved-conjectures/issues/980#issuecomment-7210087268) · [Hajnal, Theorem 1.6](https://www.impan.pl/shop/en/publication/transaction/download/product/88684#page=2) · [Erdős–Hajnal, Lemmas 1.3 and 1.5](https://users.renyi.hu/~p_erdos/1978-09.pdf#page=6) · [Erdős–Hajnal, Theorem 2.1 proof](https://users.renyi.hu/~p_erdos/1978-09.pdf#page=8)
+
+## Initial audit
+
 The reference is Erdős and Hajnal, *On chromatic number of infinite
 graphs* (1968), printed pp. 96–97, [Problem 6(A)](https://users.renyi.hu/~p_erdos/1968-04.pdf#page=15).
 The preceding printed page defines the two hypotheses. In 4.3 both
