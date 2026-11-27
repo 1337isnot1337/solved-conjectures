@@ -230,6 +230,11 @@ jobs:
         run: python3 results/langi-wang-convex-tiling/check_sectors.py
       - name: Check the Leech lattice deep-hole coefficients
         run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
+      - name: Check mixed-hole Gaussian coefficients and equality cases
+        working-directory: docs/research-results/leech-cold-spots-asymptotics
+        run: |
+          python3 check_leech.py
+          python3 check_resonance.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py

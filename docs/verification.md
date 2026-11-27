@@ -8,6 +8,8 @@ Run `python3 results/langi-wang-convex-tiling/check_sectors.py` with standard Py
 
 Run `python3 docs/research-results/leech-cold-spots-asymptotics/verify.py` with standard Python. Integer bisection bounds the optimized leading coefficient for each of the 23 deep-hole types. The verifier checks that $`E_8^3`$ has the smallest coefficient and $`D_{24}`$ the second smallest. The localization of the Gaussian minimizers is proved analytically. [Proof](research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](research-results/leech-cold-spots-asymptotics/REVIEW.md)
 
+From `docs/research-results/leech-cold-spots-asymptotics`, run `python3 check_leech.py` for rational enumeration in Shimada’s lattice basis and `python3 check_resonance.py` for the finite numerical models. The first checks the two coefficients at $`A_{24}`$. The second tests the signs below, at, and above the equality threshold for later unbalanced shells. [Mixed-hole proof](research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Reproduction and numerical scope](research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
+
 ## Permutation digraph general position conjecture
 
 Run `python3 results/permutation-digraph-general-position/verify.py` to check the marker constructions and reversal geodesics by BFS. Add `--extended` for all six test pairs including word length five. [Written proof](../results/permutation-digraph-general-position/PROOF.md) holds throughout the conjectured range.

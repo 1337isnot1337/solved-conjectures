@@ -170,6 +170,8 @@ Earlier sources established the exceptional orders. These companion theorems are
 
 As the Gaussian parameter tends to infinity, the cold spots approach deep holes of type $`E_8^3`$. This corrects the $`A_{24}`$ limiting type stated by Bachoc, Moustrou, Vallentin and Zimmermann. [Proof and exact comparison](docs/research-results/leech-cold-spots-asymptotics/README.md)
 
+A supplement characterizes which deep holes of any lattice remain global minimizers for all sufficiently large parameters. It also computes the exponentially small displacement near a Leech hole of type $`A_{24}`$. [Mixed-hole criterion](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md)
+
 ## Current research
 
 Open campaigns, intermediate proofs, and experimental checks are on the [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research). Each result page states the scope of the claim and its verification. Several partial results are awaiting independent proof review.
