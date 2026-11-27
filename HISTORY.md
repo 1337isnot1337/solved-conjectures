@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Disk averages for convex tilings
+
+Answered Lángi and Wang’s Question 5.1 for cells wholly contained in expanding disks. The lower mean number of sides is at most six, and one uniformly fat convex tiling has infinite upper mean. The proof also settles the convex case of the Steinhaus minimax problem for tiles with diameters bounded below. [Proof and scope](results/langi-wang-convex-tiling/) · [Issue #361](https://github.com/1337isnot1337/solved-conjectures/issues/361)
+
 ## 2026-11-26 — Complete Lean proof of the Asgarli–Ghioca–Yip pencil bounds
 
 The [Lean proof](lean/Conjectures/AsgarliGhiocaYipComplete.lean) proves the uniform ordering estimate and both quantitative conclusions without a point-count hypothesis. [Scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).

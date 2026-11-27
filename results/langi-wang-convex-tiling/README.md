@@ -1,0 +1,9 @@
+# Lángi–Wang’s disk-average question for convex tilings
+
+Count the sides of every tile lying wholly inside a disk, and take their mean. Suppose that every tile contains a disk of some fixed positive radius and that the ratio of circumradius to inradius has a common upper bound. As the observation disk grows, **the lower limit of the mean is at most six, while the upper limit can be infinite**. Both conclusions hold for geometric sides and for edges split at genuine junctions. This answers all parts of Lángi and Wang’s published Question 5.1. [Original question](https://doi.org/10.1093/imrn/rnaf372) · [Proof](PROOF.md)
+
+The two limits can differ because a disk can just enclose a few tiles with many sides while excluding a whole ring of adjacent tiles. The proof constructs such disks at arbitrarily large scales. In every tiling satisfying the assumptions, the radii where the mean exceeds six by a prescribed positive amount have logarithmic density zero. [Density theorem](LOG-DENSITY.md)
+
+A consequence for Euclidean convex tilings with tile diameters bounded below is that the least possible supremum of perimeter squared divided by area is $`8\sqrt{3}`$. The regular hexagonal tiling attains it. The general nonconvex Steinhaus problem remains open. [Convex minimax proof](PROOF.md#convex-minimax-isoperimetric-corollary)
+
+Cinna Davis wrote the proof. The project independently reviewed the mathematics using Codex. The result has a written proof and no Lean formalization or external referee report. Run `python3 check_sectors.py` from this directory to reproduce the finite coordinate check of the construction. [Review](REVIEW.md) · [Literature and attribution](LITERATURE.md) · [Checker](check_sectors.py) · [Issue #361](https://github.com/1337isnot1337/solved-conjectures/issues/361)
