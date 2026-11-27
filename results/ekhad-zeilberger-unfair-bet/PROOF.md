@@ -2,13 +2,13 @@
 
 Let $k\ge2$ and let the letters of a length-$n$ text be independent and uniform on an alphabet of $q\ge2$ symbols. Players choose distinct words $A,B$ of length $k$. A player wins when the count of their word exceeds the other count. Overlapping occurrences count. Define the advantage as the coefficient of $n^{-1/2}$ in the difference of win probabilities, with the more likely winner first. This is the statistic in the sponsor’s rankings. [Challenge and sample rankings](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/litt.html)
 
-**Theorem.** With unrestricted word choice, the largest advantage is
+**Theorem.** For unrestricted words of length $`k\ge2`$, the largest advantage is
 
 ```math
  \frac{q^{k/2}}{2\sqrt{\pi}}M,\qquad M=\sum_{d=1}^{k-1}q^{-d}.
 ```
 
-It is attained by $a^{k-1}b$ against $a^k$, $a\ne b$, or its reversal, up to relabeling and exchange of players. For fixed $q,k$ these pairs also maximize the gap itself for all sufficiently large $n$, since there are finitely many pairs and all other leading coefficients are strictly smaller.
+For distinct letters $`a,b`$, the maximizing pairs are precisely $`a^{k-1}b`$ against $`a^k`$ and $`ba^{k-1}`$ against $`a^k`$, with the winning word listed first. Exchanging players gives the same absolute gap. For fixed $q,k$ these pairs also maximize the gap itself for all sufficiently large $n$, since there are finitely many pairs and all other leading coefficients are strictly smaller. At length one, exchanging the two letters exchanges their counts, so every pair has zero advantage.
 
 ## The overlap formula
 
@@ -74,4 +74,4 @@ For $k+1<q\le2k$, put $d=q-k$ and $r=k-d$. When $r=0$, all letters in the two wo
 
 To prove this last assertion, there are exactly $r$ repeats available among the $2k$ positions, in the sense that identifying equal letters reduces $2k$ positions to $q$ classes. A self-border or cross-overlap of length $j$ costs at least $j$ identifications. For a self-border the word has period $k-j$ and uses at most $k-j$ letters. For a cross-overlap each of the $j$ matching pairs is disjoint from all the others. Hence every overlap length is at most $r$. If $B$ has border length $r$, all identifications are used up by its period-$d$ equalities, so its $d$ residue classes are distinct, and $A$ uses $k$ fresh symbols. This is the claimed form, with $y=z=w=0$ and $x\ge q^{r-k}$.
 
-If $B$ has no such border, $x\le G(r-1)<q^{r-k}/(q-1)$. Always $z+w\le2G(r)$, with $G(r)<1/(q(q-1))$ because $r\le k-2$. Put $u=1/(q(q-1))$. The proposed pair has normalized advantage at least $q^{r-k}/\sqrt{1+u}$. All competitors without a border of length $r$ have smaller advantage than $q^{r-k}/((q-1)\sqrt{1-2u})$. For $q\ge4$, $(q-1)^2(1-2u)>1+u$, proving strict optimality. If $q>2k$ no pair uses the full alphabet. For length one, distinct letters have symmetric counts and every game is fair.
+If $B$ has no such border, $x\le G(r-1)<q^{r-k}/(q-1)$. Always $z+w\le2G(r)$, with $G(r)<1/(q(q-1))$ because $r\le k-2$. Put $u=1/(q(q-1))$. The proposed pair has normalized advantage at least $q^{r-k}/\sqrt{1+u}$. All competitors without a border of length $r$ have smaller advantage than $q^{r-k}/((q-1)\sqrt{1-2u})$. For $q\ge4$, $(q-1)^2(1-2u)>1+u$, proving strict optimality. If $q>2k$ no pair uses the full alphabet.
