@@ -164,7 +164,7 @@ All 16 existing modules passed fresh strict Lean 4.35 compilation with warnings 
 
 ## Chow complete local verification
 
-The full all-rank theorem has a checked 11-module closure.
+The unweighted strict strengthening and its weak initial case have a checked 11-module closure. The positive-parameter extension remains written only.
 The [receipt](verification/lean-chow-20261121/receipt.json) records every strict
 source command, all source and object hashes, the complete owned/private
 axiom audit, and exact stock-kernel replay. All 48 required endpoints passed.

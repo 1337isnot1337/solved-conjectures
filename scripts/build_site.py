@@ -40,6 +40,8 @@ EXTERNAL_CREDIT = {
         "https://x.com/JesterInABarrel/status/2123233964827812334",
     ),
 }
+UNRANKED_SUPPLEMENTS = {"chow-conjecture"}
+SCOPE_LABELS = {"partial": "Partial result on an open problem", "supplement": "Unranked supplement"}
 PARTIAL_CATEGORIES = {
     "wild-number-complete-graphs": "Graph theory and discrete geometry",
     "circular-index-upper-half-delta-2-mod-4": "Graph theory and discrete geometry",
@@ -97,7 +99,7 @@ STATUS_LABEL_SLUGS = {
     "Sagan–Swanson conjecture": "sagan-swanson-normality",
     "Bernardi–Morales's delta-process conjecture": "bernardi-morales-delta",
     "Gilmore's crossing–nesting conjecture": "gilmore-crossing-nesting",
-    "Chow's conjecture": "chow-conjecture",
+    "Strict consecutive interlacing of type-D Eulerian polynomials": "chow-conjecture",
     "Currie's conjecture on complexity 2n+1 and critical exponent": "currie-conjecture-19",
     "Németh–Seberry–Shu conjecture": "nemeth-seberry-shu",
     "Sonntag–Teichert conjecture": "sonntag-teichert",
@@ -387,6 +389,7 @@ class Builder:
                         found[slug] = Result(
                             slug, clean_text(plain(cells[0][-1])), category, status,
                             clean_text(plain(cells[1][-1])), cells[1][-1],
+                            scope="supplement" if slug in UNRANKED_SUPPLEMENTS else "result",
                         )
             elif block.get("t") == "BulletList" and "partial" in category.lower():
                 for item in block["c"]:
@@ -468,11 +471,9 @@ class Builder:
                     raise ValueError(f"Stale catalogue status for {slug}: {results[slug].status}; docs/lean-status.md says {status}. Reconcile the source indexes before publishing.")
                 results[slug].checked_scope = clean_text(plain(cells[2][-1]))
                 checked.add(slug)
-        required = {slug for slug, result in results.items() if result.scope != "partial"}
-        # Partial progress on an open mathematical problem can itself have
-        # a partial or complete Lean formalization. Require an authoritative
-        # receipt for every formalized claim, without promoting its math scope.
-        summary_required = required | {slug for slug, result in results.items() if result.status != "none"}
+        ranked = {slug for slug, result in results.items() if result.scope == "result"}
+        # Unranked work with a Lean claim also needs an authoritative status.
+        summary_required = ranked | {slug for slug, result in results.items() if result.status != "none"}
         if not summary_required <= checked:
             raise ValueError(f"Lean status summary mismatch: missing {sorted(summary_required - checked)}")
         readme_checked = set()
@@ -483,8 +484,8 @@ class Builder:
             if status != results[slug].status:
                 raise ValueError(f"Stale README Lean status for {slug}: {text!r}; expected {results[slug].status}")
             readme_checked.add(slug)
-        if readme_checked != required:
-            raise ValueError(f"README result table does not match current catalogue: {sorted(readme_checked ^ required)}")
+        if readme_checked != ranked:
+            raise ValueError(f"README result table does not match current catalogue: {sorted(readme_checked ^ ranked)}")
 
     def resolve_link(self, raw: str, source: str, *, image=False) -> str:
         if not raw or raw.startswith(("#", "mailto:", "tel:", "data:", "//")):
@@ -632,7 +633,8 @@ class Builder:
                 summary, _ = self.render_blocks(result.summary_blocks, "CONTENTS.md")
             else:
                 summary = f"<p>{escape(result.summary)}</p>"
-            scope_label = '<span class="scope-label">Partial result on an open problem</span>' if result.scope == "partial" else ""
+            label = SCOPE_LABELS.get(result.scope)
+            scope_label = f'<span class="scope-label">{label}</span>' if label else ""
             proof_link = f'<a href="{self.url(self.documents[proof].route)}">Proof</a>' if proof in self.documents else ""
             rows.append(f'''<article class="result-row" data-result="{result.slug}" data-search="{escape(result.search)}" data-category="{slugify(result.category)}" data-status="{result.status}" data-scope="{result.scope}">
   <div class="result-main">
@@ -705,7 +707,8 @@ class Builder:
         title = (f"{result.title}: {role}" if result and role else display_title) + f" | {SITE_NAME}"
         if result:
             credit_prefix = f"Proof credited to {EXTERNAL_CREDIT[result.slug][0]}. " if result.slug in EXTERNAL_CREDIT else ""
-            scope_prefix = "Partial result on an open problem. " if result.scope == "partial" else ""
+            label = SCOPE_LABELS.get(result.scope)
+            scope_prefix = f"{label}. " if label else ""
             role_prefix = role + ". " if role else ""
             snippet = result.summary
             if result.scope == "partial":
@@ -718,6 +721,8 @@ class Builder:
             if result.checked_scope:
                 status += f'<details class="scope-details"><summary>What Lean checks</summary><p>{escape(result.checked_scope)}</p></details>'
             scope = '<p class="scope-note">This entry is a partial result on an open problem. It does not claim a solution of the general conjecture.</p>' if result.scope == "partial" else ""
+            if result.scope == "supplement":
+                scope = '<p class="scope-note">Unranked supplement to a theorem established in the literature.</p>'
             credit = ""
             if result.slug in EXTERNAL_CREDIT:
                 name, url = EXTERNAL_CREDIT[result.slug]

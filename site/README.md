@@ -38,6 +38,7 @@ Production builds use the default public URL. Do not publish a preview build.
 - The first table in `docs/lean-status.md` supplies the accepted formalization status and checked scope. The build rejects discrepancies in either catalogue or README.
 - Each result must have `results/<stable-slug>/README.md` and a catalogue entry. The generator rejects missing entries and duplicate public routes.
 - Partial results on open problems have a separate mathematical scope label. This is independent of their Lean status.
+- Published supplements can keep their existing result and proof URLs. `UNRANKED_SUPPLEMENTS` marks their catalogue scope and excludes them from the ranked README table. A supplement with a Lean claim still requires an authoritative status row.
 - `search-aliases.json` adds factual alternate spellings and problem names. It contains no mathematical claims or verification statuses.
 - Graffiti.pc 318 pages preserve the result and proof credit to `@JesterInABarrel`. Collection maintenance is credited separately.
 - Root developer instructions and design documents are excluded from the published content.

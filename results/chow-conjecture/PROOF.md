@@ -1,6 +1,6 @@
 # Chow's conjecture
 
-This note proves the consecutive-interlacing assertion recorded by Chow. The argument uses the published Savage–Visontai refinement theorem. The exact deduction and the separate strictness argument were independently reviewed in this research session. See [NOVELTY.md](NOVELTY.md) for the bounded priority audit and attribution.
+This note records the deduction of Chow’s weak assertion from the published Savage–Visontai refinement theorem and proves strict interlacing from rank three. The deduction and the separate strictness argument received independent internal review. The strict result is an unranked strengthening. [Priority audit and attribution](NOVELTY.md)
 
 ## Statement and conventions
 

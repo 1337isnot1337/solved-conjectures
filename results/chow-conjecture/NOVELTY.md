@@ -1,5 +1,15 @@
 # Literature and priority audit
 
+## Catalogue classification, 27 November 2026 UTC
+
+Chow defines interlacing using non-strict inequalities in §2 and asks about consecutive ordinary type-D Eulerian polynomials in §5. For ranks at least three, Savage and Visontai’s Lemma 3.14 and proof of Theorem 3.15 identify the preceding total with the first member of the ordered next row. Corollary 2.6 interlaces that member with the sum, using exactly the weights in their proof of Theorem 2.7. The elementary rank-two pair completes Chow’s weak statement. Yang and Zhang state the required row theorem and first-entry identity together in Theorem 2.5 and equation (11). These published results determine the weak assertion regardless of whether it was restated under Chow’s name. [Chow, §§2 and 5](https://doi.org/10.1016/j.jmaa.2022.126019) · [Savage–Visontai](https://arxiv.org/html/1208.3831v3) · [Yang–Zhang, p. 10](https://zhangbiaomath.github.io/papers/2022-jaco-Eulerian.pdf#page=10)
+
+The repository credits Cinna Davis and GPT-6.2 Astra with the explicit deduction and the separate strictness proof for ranks three and above. The internal review checked the orientation, absence of a common row zero, signs and exceptional initial pair. A fresh check of Ma’s full text confirms that Theorem 1 compares types A, B and D within one rank. Searches for the exact consecutive statement, strict interlacing, A066094 and formal-library records found no earlier explicit strict theorem in the sources inspected. The strict result and its unweighted Lean proof are retained as an unranked supplement. [Independent internal review](https://github.com/1337isnot1337/solved-conjectures/issues/77#issuecomment-7047457111) · [Classification review](https://github.com/1337isnot1337/solved-conjectures/issues/77#issuecomment-7207226708) · [Ma’s Theorem 1](https://arxiv.org/html/2608.02357v1) · [Lean receipt](../../docs/verification/lean-chow-20261121/receipt.json)
+
+Yang and Zhang’s 2017 Theorem 3.7 gives ordered interlacing *inside* each positive-parameter refined row. The weighted research note adapts the strictness proof to consecutive totals, with the sole exception at rank two and parameter one. Its weight counts negative entries after the first position. It remains a separate written extension. [Yang–Zhang’s weighted theorem](https://doi.org/10.1137/16M1084651) · [Research note](https://github.com/1337isnot1337/solved-conjectures/blob/46a5bf1913dc3f2b44fbb1f78583f3eb0e157b30/research/chow-type-d-weighted/weighted-extension.md)
+
+## Original search record
+
 Checked: 20 November 2026. Target: consecutive interlacing of ordinary type-D Eulerian polynomials for every rank. This record distinguishes the target from the real-rootedness of one polynomial, interlacing inside a refinement row, half Eulerian polynomials, derangement polynomials, and within-rank relations between types A, B and D.
 
 ## Sources inspected
