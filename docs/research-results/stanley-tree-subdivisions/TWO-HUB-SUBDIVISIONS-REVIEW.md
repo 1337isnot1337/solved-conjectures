@@ -16,6 +16,8 @@ The coordinating reviewer derived the transposition identity independently of th
 
 The [arbitrary-length proof](TWO-HUB-FREE-LENGTHS.md) was read independently in the same session. The reviewer checked the highest boundary contribution from subsets meeting both hubs, the separate single-vertex factors, and the strict upper bound on every other contribution. The exponent of the term retaining every arm depends only on the tree order and cap orders. Each next processed leaf-count class leaves a single Laurent sum after division by a known nonzero factor. Its coefficients give the entire multiset of lengths of that cap type. All exterior lengths and the central length are independent under the condition on cap shapes.
 
+A third project reviewer separately verified the high boundary inequalities, recovery of unit factors, the strict layer separation and comparison against arbitrary competitors. The reviewer independently enumerated all 327,677 nonempty vertex subsets on three trees of orders 16, 17 and 17 and recovered their lengths, including a two-unit case and distinct cap shapes. These cases have been added to the boundary checker.
+
 The [long-arm proof](DOMINANT-ARM.md) was developed by the coordinating reviewer and separately checked by the proof author. The midpoint histogram counts a balanced cut twice. A competitor's residual has the same sign pattern at the two endpoints, hence only the two listed length assignments can occur. Clearing the two denominators in the exchange identity retains the period factor for every subsequent regrouping. Coprime cancellation bounds the two central lengths by the degree of an explicit nonzero polynomial, independently of the short-arm allocation.
 
 ## Earlier results and scope
