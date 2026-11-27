@@ -22,14 +22,8 @@ Let $`P`$ project onto $`e_1`$ in dimension two and let $`Q`$ project onto $`(e_
 ```math
 (0,2^{16}),\qquad(2^{-16},2^{256}),\qquad(0,2^{256}).
 ```
-A law on $`a,b`$ with $`a<1\lt b`$ assigns mass $`(1-a)/(b-a)`$ to $`b`$. Combine contributions at common scalar outcomes. This gives precisely four possible outcomes and $`H=I`$. All masses and moments at $`t=1/16`$ and $`1-t=15/16`$ are rational. If a function has conditional expectations $`a,b,c`$ in the three laws, its matrix moment is
-```math
-\tfrac14
-\begin{pmatrix}
-a+2b+c&a-c\\
-a-c&a+3c
-\end{pmatrix}.
-```
+A law on $`a,b`$ with $`a<1\lt b`$ assigns mass $`(1-a)/(b-a)`$ to $`b`$. Combine contributions at common scalar outcomes. This gives precisely four possible outcomes and $`H=I`$. All masses and moments at $`t=1/16`$ and $`1-t=15/16`$ are rational. If a function has conditional expectations $`a,b,c`$ in the three laws, its matrix moment has diagonal entries $`(a+2b+c)/4,(a+3c)/4`$ and both off-diagonal entries equal $`(a-c)/4`$.
+
 Apply the formula to the two powers and form $`w=(2MN-I)e_2`$. Exact substitution gives $`w_1>1/16`$, $`w_2\lt-99999/100000`$, and $`\lVert w\rVert^2>1+1/300`$. Thus the separate-compression comparison fails already in operator norm. Tian and Xu have proved the original operator-norm case in all dimensions. [Exact rational substitution](verify_pinch_obstruction.py) · [Tian and Xu, Theorem 1.1](https://arxiv.org/abs/2611.22363v2)
 
 A bounded search for the crossed-Heinz sum with pinching, involutions, unitary equivalence, compressions and operator-valued moments found the published original question, two-dimensional and local results, and other types of matrix pinching and covariance inequalities. The elementary pinching identity and finite-dimensional cone reduction are provided as research tools, with no absolute priority claim. This note resolves the separate-compression obstruction alone. The all-rank inequality for the two complementary blocks is open.
