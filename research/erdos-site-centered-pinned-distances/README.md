@@ -15,3 +15,5 @@ A global quadratic trapezoid bound with any fixed coefficient suffices when the 
 ## Limits under an arbitrary global quadratic trapezoid bound
 
 A hypothetical sequence at the one-third mean barrier has only purely atomic or wholly nonatomic finite planar limits under every rescaling. The proof also bounds the concentration of conditional radius and projection fibers, and gives continuum examples explaining a remaining obstacle to a general gap. [Atomic-limit theorem](ATOMIC-LIMITS.md) · [Independent review](ATOMIC-LIMITS-REVIEW.md) · [Exact checks](check_atomic_limits.py)
+
+If such a limit has more than one atom, the entire shrinking clouds around its atoms cannot all have tight nonatomic limits at their next scales. With infinitely many parent atoms, all but finitely many individually exclude such a child. A separate diameter argument applies whenever a pair of positive-mass atoms attains a positive diameter. [Atom-cloud theorem](ATOMIC-CHILDREN.md) · [Independent review](ATOMIC-CHILDREN-REVIEW.md) · [Exact checks](check_atomic_children.py)
