@@ -19,7 +19,7 @@ Run `python3 results/erdos-galvin-hajnal-repeated-pair-partition/verify_amalgama
 
 ## Erdős–Galvin–Hajnal’s link-path partition problem
 
-Read the [proof](../results/erdos-galvin-hajnal-link-path-partition/PROOF.md) and [review of the two consistency directions](../results/erdos-galvin-hajnal-link-path-partition/REVIEW.md). Run `python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py` to check the bounded encoding on every path-free labeled triple system of orders one through six. The [shadow transfer](../results/erdos-galvin-hajnal-link-path-partition/SHADOW-TRANSFER.md) has a [separate load and sharpness checker](../results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py).
+Read the [proof](../results/erdos-galvin-hajnal-link-path-partition/PROOF.md) and [review of the two consistency directions](../results/erdos-galvin-hajnal-link-path-partition/REVIEW.md). Run `python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py` to check the bounded encoding on every path-free labeled triple system of orders one through six. The [shadow transfer](../results/erdos-galvin-hajnal-link-path-partition/SHADOW-TRANSFER.md) has a [separate load and sharpness checker](../results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py). Run `python3 results/erdos-galvin-hajnal-link-path-partition/density/verify_density.py` for the six-point matching and top-pair constructions in the [density review](../results/erdos-galvin-hajnal-link-path-partition/density/DENSITY-REVIEW.md).
 
 ## Erdős–Galvin–Hajnal’s half-overlap hypergraph problem
 
