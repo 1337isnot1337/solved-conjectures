@@ -20,6 +20,8 @@ conditional construction obstruction as an answer.
 | [Shared support versus order](SHARED-SUPPORT-VERSUS-ORDER.md) | Under wing separation, a subcubic example must share at least about 3t vertices outside any such minimum pair. |
 | [Superlinear opposite-pivot expansion](SUPERLINEAR-OPPOSITE-PIVOT-EXPANSION.md) | For fixed offset, fewer than order t^(3/2) near-minimum neighbors on both sides, with no wing-separation assumption. |
 | [Two-sided witness reuse](TWO-SIDED-REUSE.md) | Opposite-side high reuse without a common residual vertex; projective-plane incidence data show why counting absences alone is weaker. |
+| [Quadratic shared-support dichotomy](QUADRATIC-SHARED-SUPPORT-DICHOTOMY.md) | A fixed-offset example of order o(t^(5/2)) with subquadratic shared support outside some minimum pair. |
+| [Exponential neighbor tradeoff](EXPONENTIAL-NEIGHBOR-TRADEOFF.md) | A small common neighborhood at a controlled additive gap above the exact minimum intersection. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
 | [Larger cores and four-fold padding](LARGER-CORE-PADDING.md) | Extending minimum-rank rigidity by even one; below the classical threshold, selected triples must share many padding vertices. |
 | [Near-minimum dense-core barrier](NEAR-MINIMUM-DENSE-CORE.md) | For a wider fixed-core class, beating the classical construction near its start even with unrestricted shared padding and no core three-wise assumption. |
