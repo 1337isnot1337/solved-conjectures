@@ -13,5 +13,6 @@ which path-perfectness can fail.
 
 - [Proof](PROOF.md)
 - [Literature audit](SOURCES.md)
+- [Independent review](REVIEW.md)
 - [Fixed-chromatic-number family from prior selector gadgets](SELECTORS.md)
 - [Finite checks](verify.py)
