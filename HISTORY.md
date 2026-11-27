@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Claesson–Dukes–Steingrímsson’s stack-sorting conjecture
+
+Proved the exact count for $n\ge8$ at the $n-5$ pass threshold. The [proof](results/claesson-dukes-steingrimsson-stack-sorting/PROOF.md) reduces the count to a finite coefficient table and an exact polynomial identity. The [audit](results/claesson-dukes-steingrimsson-stack-sorting/AUDIT.md) records the source check and independent replay.
+
 ## 2026-11-26 — Mobile general position complexity
 
 Ordinary, fixed-start, and completely mobile general position thresholds are PSPACE-complete on graphs of diameter two with many universal vertices. A mode-and-lock gadget embeds four-colouring reachability into clique coverage. [Proof](results/mobile-general-position-complexity/PROOF.md) · [Audit](results/mobile-general-position-complexity/AUDIT.md).

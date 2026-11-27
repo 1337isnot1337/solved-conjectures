@@ -695,6 +695,8 @@ Run `python3 results/alexandersson-parking-excedance/verify.py`. The script chec
 
 ## Computational checks
 
+The [Claesson–Dukes–Steingrímsson stack-sorting proof](../results/claesson-dukes-steingrimsson-stack-sorting/PROOF.md) uses an exhaustive count of eleven marked values. Run `pwsh -NoProfile -File results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1` from the repository root with PowerShell 7, Python 3 and Node.js. The replay regenerates the integer coefficient table, checks the rational polynomial identity and boundary orders, and directly enumerates the three smallest orders.
+
 [Chaudhary–Khmiri–Mazhouda counterexample](../results/chaudhary-khmiri-mazhouda/PROOF.md): the exact interval certificate uses only Python's standard library. Run:
 
 ```sh
