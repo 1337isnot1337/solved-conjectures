@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
+
+Published the [reviewed written proof](results/frankl-geher-sagdeev-toth-strict-convexity/PROOF.md). There is a strictly convex norm on real five-space and a fixed countably infinite set such that every coloring with countably infinitely many colors has an isometric copy missing a color. This does not resolve the separate two-color question.
+
 ## 2026-11-27 — Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
 
 Proved the weighted Laplacian bound and its interior equality classification. [Proof](results/barrett-evans-hall-kempton-se/PROOF.md) · [Exact checks and audit](results/barrett-evans-hall-kempton-se/AUDIT.md).

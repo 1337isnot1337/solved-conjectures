@@ -91,6 +91,8 @@ jobs:
       - name: Reproduce the Claesson–Dukes–Steingrímsson stack-sorting count
         shell: pwsh
         run: ./results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1
+      - name: Check strictly convex normed coloring identities
+        run: python3 results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample
