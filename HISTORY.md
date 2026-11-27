@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős–Galvin–Hajnal’s repeated-pair partition problem
+
+Published Cinna Davis’s relative independence proof for Problem 8/D of the 1975 paper. The same forcing model gives negative answers for both the repeated-pair and Pasch arrows while preserving CH over a CH ground model. The positive consistency direction for Pasch has a separate [open issue](https://github.com/1337isnot1337/solved-conjectures/issues/1052). [Proof](results/erdos-galvin-hajnal-repeated-pair-partition/PROOF.md) · [Negative model](results/erdos-galvin-hajnal-repeated-pair-partition/NEGATIVE-MODEL.md) · [Review](results/erdos-galvin-hajnal-repeated-pair-partition/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1048)
+
 ## 2026-11-27 — Erdős–Galvin–Hajnal’s link-path partition problem
 
 Cinna Davis answers the 1975 Problem 8/E by encoding a triple system that avoids the three-edge tight path using a bounded coloring of pairs. Together with Todorčević’s model and the original authors’ CH example, the encoding gives relative independence over ZFC. [Proof](results/erdos-galvin-hajnal-link-path-partition/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-link-path-partition/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1045)
