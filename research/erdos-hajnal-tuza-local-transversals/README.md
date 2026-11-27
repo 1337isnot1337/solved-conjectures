@@ -23,6 +23,7 @@ conditional construction obstruction as an answer.
 | [Quadratic shared-support dichotomy](QUADRATIC-SHARED-SUPPORT-DICHOTOMY.md) | A fixed-offset example of order o(t^(5/2)) with subquadratic shared support outside some minimum pair. |
 | [Exponential neighbor tradeoff](EXPONENTIAL-NEIGHBOR-TRADEOFF.md) | A small common neighborhood at a controlled additive gap above the exact minimum intersection. |
 | [Trace triangles with slack](TRACE-TRIANGLES-WITH-SLACK.md) | Three low-overlap traces with empty triple intersection, without assuming minimum neighbors. |
+| [Minimum-triangle core bound](MINIMUM-TRIANGLE-CORE-BOUND.md) | Three pairwise near-minimum edges with a near-total common core; also gives a linear exterior-overlap lower bound for repeated minimum traces. |
 | [Distinct-trace exterior bound](DISTINCT-TRACE-EXTERIOR-OVERLAP.md) | Exterior overlap above t at saturation, for pairs whose trace difference admits a separating cut. |
 | [Binary-product links](BINARY-PRODUCT-MINIMUM-LINKS.md) and [Exterior-core packing](NEAR-COMMON-EXTERIOR-CORE.md) | Sparse binary-coordinate links, and polynomial-order realizations of their exponential trace family with an almost-common exterior t-set. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
