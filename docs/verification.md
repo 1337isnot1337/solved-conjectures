@@ -12,6 +12,13 @@ The checker verifies the pair partition, the triangle-free complement,
 and all token adjacencies directly, also checking five mixed joins up to
 order 58. It does not need a SAT solver.
 
+## de Berg–Sadhukhan–Spieksma’s stable domination threshold
+
+Read the [online stretching reduction, threshold proof and local block algorithm](../results/de-berg-sadhukhan-spieksma-stable-domination-threshold/PROOF.md).
+See the [independent review receipt](../results/de-berg-sadhukhan-spieksma-stable-domination-threshold/REVIEW.md).
+Run `python3 results/de-berg-sadhukhan-spieksma-stable-domination-threshold/verify.py` from the repository root.
+It checks the path interface, lifted optima, the block scheme on all specified small graphs, and 10,000 mixed updates. The written proof covers arbitrary lengths and graph orders.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.

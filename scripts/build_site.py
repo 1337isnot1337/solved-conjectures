@@ -89,6 +89,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "de Berg–Sadhukhan–Spieksma’s stable domination threshold": "de-berg-sadhukhan-spieksma-stable-domination-threshold",
     "Fernandes et al.’s two-token chromatic conjecture": "fernandes-two-token-chromatic",
     "Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture": "frankl-geher-sagdeev-toth-strict-convexity",
     "de Joannis de Verclos’s projective rigidity conjecture": "de-verclos-projective-rigidity",
