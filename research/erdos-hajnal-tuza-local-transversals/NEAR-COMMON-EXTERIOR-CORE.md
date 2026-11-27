@@ -60,3 +60,27 @@ This only excludes close-to-common exterior cores for links
 with very many different traces. An arbitrary minimum link
 is neither known to have binary-product form nor a common
 exterior core.
+
+## It suffices to select a witness-closed family of representatives
+
+The proof does not need all minimum neighbors to contain \(C\)
+if the selected traces themselves contain a singleton witness
+for each vertex of each trace. In that case take \(F\) to be
+the selected representative of the trace witnessing \(x\);
+it automatically contains \(C\). In particular on a binary-product
+link it suffices to choose just one representative per parity
+word containing \(C\). Other representatives of the same words
+are unrestricted.
+
+There is also a saturated \(s\)-cut version. With
+\(r=5t+3s-2\) and \(m=t+s\), suppose a selected family has
+pairwise differences of size at least \(s\) and each \(s\)-cut
+of each selected trace has a witness containing \(C\).
+If \(|C|=t-d\), the same proof uses an \(s\)-subset of
+\(Y\setminus Y'\) in place of \(x\). The space outside \(A\)
+must span at least \(2r-2\) vertices, and each minimum
+neighbor uses \(r-m=4t+2s-2\) exterior vertices.
+Their union can use at most \(3(r-m)-2(t-d)\), which leaves
+slack \(2s+2d-2\) for the residual pair overlap. Thus the
+residual sets of size \(3t+2s+d-2\) form a packing of
+\((2s+2d-1)\)-sets whenever that subset size fits.
