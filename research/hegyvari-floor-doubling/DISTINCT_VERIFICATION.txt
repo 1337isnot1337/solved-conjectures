@@ -1,0 +1,22 @@
+2026-11-24T22:10:04Z
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+261f9c6f99613f9c28383278a8254afcc4d05f54666e6ccd576afad7664f5022  Conjectures/HegyvariFloorDoublingDistinct.lean
+2a2a1c78daa6ae95ebb898a06c42315db532f4db47b6404c2b7d7520447d4fdd  Conjectures/HegyvariFloorDoublingTransport.lean
+COMPILE HegyvariFloorDoublingTransport
+COMPILE HegyvariFloorDoublingDistinct
+STRICT_COMPILE_PASSED
+'HegyvariFloorDoubling.transport_comp' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.boundedGaps_of_selfTransport' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.boundedGaps_of_two_transports' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.boundedGaps_of_longRun_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.binaryStep_lower' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.zeroRun_expansion' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.oddMultiplier_response' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.boundedGaps_of_oddMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.indexedTailComplete_to_distinctStrongComplete' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.binaryStep_eventuallyAbove' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.binaryStep_strictOnTail' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.binaryStep_injectiveOnTail' depends on axioms: [propext, Quot.sound]
+'HegyvariFloorDoubling.distinctStrongComplete_of_binarySteps' depends on axioms: [propext, Quot.sound]
+STOCK_REPLAY_PASSED HegyvariFloorDoublingTransport
+STOCK_REPLAY_PASSED HegyvariFloorDoublingDistinct
