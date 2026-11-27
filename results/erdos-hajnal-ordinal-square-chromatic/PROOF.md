@@ -111,7 +111,7 @@ $`\mu=\aleph_0`$.
   most $`\aleph_1`$ of which is countably chromatic. Apply the
   transfer to that graph in the same model.
 - [Foreman and Laver, *Some downwards transfer properties for
-  $`\aleph_2`$*, Adv. Math. 67 (1988), 230–238](https://doi.org/10.1016/0001-8708%2888%2990041-2)
+  ℵ₂*, Adv. Math. 67 (1988), 230–238](https://doi.org/10.1016/0001-8708%2888%2990041-2)
   show, relative to a huge cardinal, consistency with GCH that
   every graph of size and chromatic number $`\aleph_2`$ contains
   an $`\aleph_1`$-vertex subgraph of chromatic number $`\aleph_1`$.
@@ -151,4 +151,4 @@ and the construction in
 Neither restriction on the universe is needed for the equivalence
 or the product argument.
 
-[Tracking issue #971](https://github.com/1337isnot1337/solved-conjectures/issues/971).
+[Primary question tracking issue #971](https://github.com/1337isnot1337/solved-conjectures/issues/971) · [Follow-up #975](https://github.com/1337isnot1337/solved-conjectures/issues/975).
