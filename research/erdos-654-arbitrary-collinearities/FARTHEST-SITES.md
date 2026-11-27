@@ -1,6 +1,6 @@
 # Farthest sites and atomless limits in Erdős Problem 654
 
-The full [catalogue question](https://www.erdosproblems.com/654) allows arbitrarily many collinear points. The result here concerns sequences with a fixed upper bound on the number of collinear points. It shows that even in this class a hypothetical sequence near the one-third bound must have atoms in every compact limiting measure obtained by rescaling the point sets. It does not exclude such atoms. [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/922)
+The full [catalogue question](https://www.erdosproblems.com/654) allows arbitrarily many collinear points. The result here concerns sequences with a fixed upper bound on the number of collinear points. It shows that even in this class a hypothetical sequence near the one-third bound must have atoms in every compact limiting measure obtained by rescaling the point sets. A [successive-rescaling argument](BOUNDED-COLLINEARITY.md) treats the remaining atoms under the same fixed collinearity bound. [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/922)
 
 ## A measure obstruction
 
@@ -54,4 +54,4 @@ Rescalings with a compact non-Dirac limit do exist. Fix $`C>M/2`$ and choose $`b
 \mu_n(A)\le (1+C)\mu_n(A)(1-\mu_n(B))+o(1).
 ```
 
-It follows that the mass outside $`3B`$ tends to zero. Minimality rules out a point-mass limit, since a disk of radius $`1/2`$ about its atom would eventually contain more than $`bn`$ points. The conclusion permits limits with a mixture of atoms or continuous and atomic parts. The argument gives neither a contradiction in those cases nor a uniform bound on the base-pair density when collinearities are unrestricted.
+It follows that the mass outside $`3B`$ tends to zero. Minimality rules out a point-mass limit, since a disk of radius $`1/2`$ about its atom would eventually contain more than $`bn`$ points. The conclusion permits limits with a mixture of atoms or continuous and atomic parts. The [bounded-collinearity proof](BOUNDED-COLLINEARITY.md) resolves these mixed limits by further rescalings. The base-pair density bound used in both arguments depends on the collinearity bound.
