@@ -4,6 +4,10 @@
 
 Cinna Davis’s rank-five coalescence family answers Badalov’s remaining question about the first Turán determinant. The determinant is negative for every prime power q ≥ 17 and the ratio is asymptotic to 18/q. Badalov had previously disproved Gao and Xie’s general log-concavity conjecture. The supplement accompanies the existing dual Chow entry, with independent mathematical review and exact checks. [Proof](results/caiolo-ferroni-hoster/FIRST-INDEX.md) · [Audit and attribution](results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
 
+## 2026-11-27 — Higher-dimensional cube covering
+
+Cinna Davis used Ajtai’s planar arrangement to prove Dall’Ara and Dumitrescu’s strict covering bound in every dimension at least three. The proof gives finite witnesses and an explicit deficit for each dimension. [Proof](results/dallara-dumitrescu-cube-covering/PROOF.md) · [Independent review and historical credit](results/dallara-dumitrescu-cube-covering/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/341)
+
 ## 2026-11-27 UTC — Atomic limits in the site-centered distance problem
 
 Under a fixed global quadratic bound on isosceles trapezoids, a sequence attaining the one-third mean pinned-distance barrier cannot have a rescaled finite limit mixing point atoms and nonatomic mass. The proof also bounds the concentration of radius and projection fibers. The unrestricted gap remains open. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)
