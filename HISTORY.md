@@ -16,6 +16,10 @@ The dandelion and its complement minimize the sum of the two algebraic connectiv
 
 Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md), building on Cinna Davis’s secant and incidence arguments. A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
 
+## 2026-11-27 UTC — Sparse trapezoids and Erdős’s site-centered question
+
+The mean pinned-distance count exceeds one third of the set size by a fixed proportion under either of two trapezoid hypotheses. One permits a sufficiently small quadratic count for the entire set, and the other permits any fixed quadratic bound on every subset. This strengthens the existing partial results on the site-centered question. [Proof and source comparison](results/erdos-general-position-pinned-distances/SPARSE-TRAPEZOIDS.md) · [Review](results/erdos-general-position-pinned-distances/SPARSE-TRAPEZOIDS-REVIEW.md)
+
 ## 2026-11-27 UTC — A four-grid obstruction for site-centered pinned distances
 
 Four oblique grids show that distributed sets can have quadratically many rich active-bisector incidences even when every circle has at most four sites and every site-centered circle has at most three. The construction limits a proposed incidence strategy for the open site-centered question. [Proof](results/erdos-general-position-pinned-distances/FOUR-GRIDS.md) · [Independent review](results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md)
