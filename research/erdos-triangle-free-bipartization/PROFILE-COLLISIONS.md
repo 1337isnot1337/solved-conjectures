@@ -29,9 +29,9 @@ Independent roots yield the expected collision mass ∫∫ W(1−Δ)^a. Bound by
 
 ## Consequence for rooted MaxCut
 
-In the [stagewise construction](POLYNOMIAL-ROOT-RATE.md), neither the greedy response nor the validation requires triangle-freeness. The collision estimate above is the replacement for disjoint neighborhoods. Use an arbitrarily near-optimal sign function in the construction and a=O(r/ε) extra anchors. The training-root count is O(ε⁻³). As in the updated polynomial proof, condition on one independent rounding seed during validation and average over its choice afterward. Only the training labels are guessed, so the logarithm of the candidate count is O(ε⁻³), regardless of the number of extra anchors. The resulting number of roots is
+In the [stagewise construction](POLYNOMIAL-ROOT-RATE.md), neither the greedy response nor the validation requires triangle-freeness. The collision estimate above is the replacement for disjoint neighborhoods. Use an arbitrarily near-optimal sign function in the construction and a=O(r/ε) extra anchors. The training-root count is O(ε⁻³). As in the updated polynomial proof, condition on one independent rounding seed during validation and average over its choice afterward. Only the shared seed labels are guessed, so the logarithm of the candidate count is O(ε⁻²), regardless of the number of extra anchors. The resulting number of roots is
 
-    O(ε⁻⁵+r/ε).
+    O(ε⁻⁴+r/ε).
 
 For unrestricted graphons some assumption is necessary: in the complete graphon, all Boolean adjacency profiles are identical, so the deterministic profile envelope cannot approximate the optimum balanced cut.
 
