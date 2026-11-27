@@ -161,7 +161,7 @@ On the resulting projective ball, two bounded words in any generating triple giv
 
 For an arbitrary marking, a short word of depth $`d`$ gives a direct energy comparison from exact conductor $`d+b`$ to conductor $`b`$ when $`3\le b\le d`$. On a full neighborhood of an explicit arithmetic marking, three fixed relations identify the first digit where a triple departs from its arithmetic conjugacy class. [Short-word bound and explicit coordinates](SHORT-RELATIONS.md)
 
-At any prescribed congruence depth one can also choose short words with an arbitrary leading Lie digit. At Fibonacci depths their lengths give a stronger lower bound on the number of cycle frequencies carrying a fixed fraction of a slow vector's mass. [Word construction and Fourier support bound](DEPTH-WORDS.md)
+At any prescribed congruence depth one can also choose short words with an arbitrary leading Lie digit. At Fibonacci depths their lengths give a stronger lower bound on the number of cycle frequencies carrying a fixed fraction of a slow vector's mass. Two such words and approximate conjugators give a uniform diameter bound of order $`(n/r)^{\log_\varphi 2}D_r(S)`$ at level $`n`$. [Word construction and Fourier support bound](DEPTH-WORDS.md) · [Diameter proof](DIAMETER.md)
 
 In position coordinates, a slow vector has vanishing mass on rational points of subpower height in every integral projective chart, including charts varying with the level. The proof recovers a rational matrix from three modular point matches and transfers a localized vector to a free-group action. [Rational-point bound and scope](RATIONAL-POINTS.md)
 
