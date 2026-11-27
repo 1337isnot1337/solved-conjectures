@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Sharp second adjacency eigenvalue sum and Seidel spread
+
+Published the sharp bound and four-block equality case conjectured by Abreu, Brondani, de Lima and Oliveira. The reconstruction of Cinna Davis’s announced Seidel-spread method determines the exact maximum spread of every order, including the odd-order refinement. [Proof](results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Sources and attribution](results/abreu-brondani-adjacency-nordhaus-gaddum/AUDIT.md) · [Review](results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/499)
+
 ## 2026-11-27 — Square-root upper gap for normalized complementary connectivities
 
 Published the full written argument for Conjecture 2 of Kempton, Zaitzeff and Muthuprakash. Cinna Davis recorded the projected-row proof strategy, which was reconstructed and independently reviewed in the WadeDavis research session. The original authors’ focus family makes the exponent sharp. [Proof](results/normalized-nordhaus-gaddum/PROOF.md) · [Attribution and prior work](results/normalized-nordhaus-gaddum/AUDIT.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/495)

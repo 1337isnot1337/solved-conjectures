@@ -140,6 +140,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Second adjacency eigenvalues and Seidel spread
+
+Run `python3 results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py`. It checks all 1,098 labeled graphs of orders two through five, all 1,022 threshold creation words through order ten and the 256 switching sign choices of the order-eight extremal Seidel matrix. Characteristic polynomials and rational root counts certify the comparisons. [Proof](../results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Independent review](../results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md)
+
 ## Normalized Nordhaus–Gaddum upper gap
 
 Run `python3 results/normalized-nordhaus-gaddum/verify.py`. It uses rational arithmetic to bracket normalized adjacency eigenvalues and test projected neighborhood estimates for a graph and its complement. It checks all labelled graph inputs of orders two through five, nine members of the authors’ focus family, and a reproducible sample on larger orders. [Proof](../results/normalized-nordhaus-gaddum/PROOF.md) · [Independent review](../results/normalized-nordhaus-gaddum/REVIEW.md)
