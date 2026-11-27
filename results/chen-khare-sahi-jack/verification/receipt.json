@@ -1,0 +1,310 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-27T16:55:28.752505+00:00",
+  "finished_at": "2026-11-27T16:59:54.486084+00:00",
+  "root": "Conjectures.ChenKhareSahiJackSourceTheorem",
+  "project_modules": [
+    "Conjectures.ChenKhareSahiJackCertificate",
+    "Conjectures.ChenKhareSahiJackFamily",
+    "Conjectures.ChenKhareSahiJackMonomials",
+    "Conjectures.ChenKhareSahiJackSchur",
+    "Conjectures.ChenKhareSahiJackSource",
+    "Conjectures.ChenKhareSahiJackSourceBasis",
+    "Conjectures.ChenKhareSahiJackSourceData",
+    "Conjectures.ChenKhareSahiJackSourceFamily",
+    "Conjectures.ChenKhareSahiJackSourceSamples",
+    "Conjectures.ChenKhareSahiJackSourceSemiring",
+    "Conjectures.ChenKhareSahiJackSourceTheorem",
+    "Conjectures.ChenKhareSahiJackSourceWitness",
+    "Conjectures.ChenKhareSahiJackTheorem",
+    "Conjectures.ChenKhareSahiJackUnique"
+  ],
+  "required_endpoints": [
+    "ChenKhareSahi.Jack.Source.conjecture4_unit_parameter_counterexample",
+    "ChenKhareSahi.Jack.Source.completion_family",
+    "ChenKhareSahi.Jack.Source.source_coordinates",
+    "ChenKhareSahi.Jack.Source.checked_samples",
+    "ChenKhareSahi.Jack.Source.exclude_target",
+    "ChenKhareSahi.Jack.Source.power_expansion",
+    "ChenKhareSahi.Jack.conjecture4_counterexample",
+    "ChenKhareSahi.Jack.family_exists_unique"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ChenKhareSahiJackCertificate.lean": "17ef5e22df15a8fc23c9a1c515fd994e8076a81bbfde85e452779f7bfbcecc2f",
+    "lean/Conjectures/ChenKhareSahiJackFamily.lean": "366201b4e00279c4570b8bc2d21ae69fc06a8f96759a3f9a79af64bb7c7c981e",
+    "lean/Conjectures/ChenKhareSahiJackMonomials.lean": "efe28f8edeb3cf3f92e765ee6211d517c971214c7a60fc73bc61f8a99aca0b51",
+    "lean/Conjectures/ChenKhareSahiJackSchur.lean": "b02bfb625ae1ae843bfd01c906928a15393c3f4820ea0ca86082e6f459f6b664",
+    "lean/Conjectures/ChenKhareSahiJackSource.lean": "3e36ae032907957dd4dfcdc8e12ee328f40e12e277e7682902594cb2beca0df2",
+    "lean/Conjectures/ChenKhareSahiJackSourceBasis.lean": "ba455e86716e3de0da1509f0950ec92b5eae559837bda1310e6f3f7cd3cf19b1",
+    "lean/Conjectures/ChenKhareSahiJackSourceData.lean": "38f4cc3379b80ac52ce51e6a5f22da1a4a57b16385af966cc499c27dbda97104",
+    "lean/Conjectures/ChenKhareSahiJackSourceFamily.lean": "16ace397908a1437e348e77308850ae53c56a6e96f5d5400c752411b1702678d",
+    "lean/Conjectures/ChenKhareSahiJackSourceSamples.lean": "b91fe6674fd158357de270822e2c59348b93c96a36b4f68d6b92eb20215a450c",
+    "lean/Conjectures/ChenKhareSahiJackSourceSemiring.lean": "bc19504bcf932d972a1c01701d6a600e87b9bc46ec437163484a9289ed9f3f17",
+    "lean/Conjectures/ChenKhareSahiJackSourceTheorem.lean": "a0a219a37190808dad7dcc3de29333d4c223ece50aea4f1401a2e55f9148eb25",
+    "lean/Conjectures/ChenKhareSahiJackSourceWitness.lean": "7d938aa903e598c0384eae2a60a4ba6edd4cb7fc630b0b83c085b98c211b9a98",
+    "lean/Conjectures/ChenKhareSahiJackTheorem.lean": "5a73719f36b529c9ed44b4f3ed0d993e675389cf2551446d2445a6c844bb2220",
+    "lean/Conjectures/ChenKhareSahiJackUnique.lean": "ab612d8a0018f2588823ba962a78a807515e1fae825d02a3657c026001a77f68"
+  },
+  "input_sha256": {
+    "lean/Conjectures/ChenKhareSahiJackCertificate.lean": "17ef5e22df15a8fc23c9a1c515fd994e8076a81bbfde85e452779f7bfbcecc2f",
+    "lean/Conjectures/ChenKhareSahiJackFamily.lean": "366201b4e00279c4570b8bc2d21ae69fc06a8f96759a3f9a79af64bb7c7c981e",
+    "lean/Conjectures/ChenKhareSahiJackMonomials.lean": "efe28f8edeb3cf3f92e765ee6211d517c971214c7a60fc73bc61f8a99aca0b51",
+    "lean/Conjectures/ChenKhareSahiJackSchur.lean": "b02bfb625ae1ae843bfd01c906928a15393c3f4820ea0ca86082e6f459f6b664",
+    "lean/Conjectures/ChenKhareSahiJackSource.lean": "3e36ae032907957dd4dfcdc8e12ee328f40e12e277e7682902594cb2beca0df2",
+    "lean/Conjectures/ChenKhareSahiJackSourceBasis.lean": "ba455e86716e3de0da1509f0950ec92b5eae559837bda1310e6f3f7cd3cf19b1",
+    "lean/Conjectures/ChenKhareSahiJackSourceData.lean": "38f4cc3379b80ac52ce51e6a5f22da1a4a57b16385af966cc499c27dbda97104",
+    "lean/Conjectures/ChenKhareSahiJackSourceFamily.lean": "16ace397908a1437e348e77308850ae53c56a6e96f5d5400c752411b1702678d",
+    "lean/Conjectures/ChenKhareSahiJackSourceSamples.lean": "b91fe6674fd158357de270822e2c59348b93c96a36b4f68d6b92eb20215a450c",
+    "lean/Conjectures/ChenKhareSahiJackSourceSemiring.lean": "bc19504bcf932d972a1c01701d6a600e87b9bc46ec437163484a9289ed9f3f17",
+    "lean/Conjectures/ChenKhareSahiJackSourceTheorem.lean": "a0a219a37190808dad7dcc3de29333d4c223ece50aea4f1401a2e55f9148eb25",
+    "lean/Conjectures/ChenKhareSahiJackSourceWitness.lean": "7d938aa903e598c0384eae2a60a4ba6edd4cb7fc630b0b83c085b98c211b9a98",
+    "lean/Conjectures/ChenKhareSahiJackTheorem.lean": "5a73719f36b529c9ed44b4f3ed0d993e675389cf2551446d2445a6c844bb2220",
+    "lean/Conjectures/ChenKhareSahiJackUnique.lean": "ab612d8a0018f2588823ba962a78a807515e1fae825d02a3657c026001a77f68",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSchur.olean",
+        "Conjectures/ChenKhareSahiJackSchur.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSchur.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackMonomials.olean",
+        "Conjectures/ChenKhareSahiJackMonomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackMonomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackFamily.olean",
+        "Conjectures/ChenKhareSahiJackFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackFamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackUnique.olean",
+        "Conjectures/ChenKhareSahiJackUnique.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackUnique.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackCertificate.olean",
+        "Conjectures/ChenKhareSahiJackCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackTheorem.olean",
+        "Conjectures/ChenKhareSahiJackTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackTheorem.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceSemiring.olean",
+        "Conjectures/ChenKhareSahiJackSourceSemiring.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceSemiring.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSource.olean",
+        "Conjectures/ChenKhareSahiJackSource.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSource.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceData.olean",
+        "Conjectures/ChenKhareSahiJackSourceData.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceData.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceFamily.olean",
+        "Conjectures/ChenKhareSahiJackSourceFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceFamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceSamples.olean",
+        "Conjectures/ChenKhareSahiJackSourceSamples.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceSamples.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceBasis.olean",
+        "Conjectures/ChenKhareSahiJackSourceBasis.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceBasis.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceWitness.olean",
+        "Conjectures/ChenKhareSahiJackSourceWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceWitness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/private/tmp/sc-1003-bridge/lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiJackSourceTheorem.olean",
+        "Conjectures/ChenKhareSahiJackSourceTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ChenKhareSahiJackSourceTheorem.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/private/tmp/sc-1003-final-closure/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/private/tmp/sc-1003-bridge/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ChenKhareSahiJackSourceTheorem"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1312,
+    "modules": 14,
+    "private_declarations": 36,
+    "raw_declarations": 1312,
+    "required": 8,
+    "tag": "passed",
+    "theorems": 1088
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

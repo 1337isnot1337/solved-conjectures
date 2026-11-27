@@ -390,6 +390,7 @@ jobs:
         run: |
           python results/chen-khare-sahi-jack/verify.py
           python results/chen-khare-sahi-jack/independent_gram_check.py
+          python results/chen-khare-sahi-jack/lean_certificate.py
       - name: Check Ferreira-Simon beta-prime symbolic identities
         run: python results/ferreira-simon-beta-prime/verify.py
       - name: Certify Lyon gamma-median monotonicity on all real cells

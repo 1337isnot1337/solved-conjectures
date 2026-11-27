@@ -53,7 +53,8 @@ EXTERNAL_CREDIT = {
     "chen-khare-sahi-jack": ExternalCredit(
         "@WadeDavis",
         f"{REPOSITORY}/issues/201",
-        "The contributor developed the counterexample and its written proof with Codex.",
+        "WadeDavis developed the written counterexample with Codex. Leepokai formalized the target and separator, "
+        "and WadeDavis with Codex completed the source-generator verification.",
     ),
     "de-verclos-projective-rigidity": ExternalCredit(
         "@adamben04",
