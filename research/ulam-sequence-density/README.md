@@ -27,6 +27,9 @@ at integer records.
 The [large-summand argument](large-summands.md) gives an elementary
 quantitative lower bound at a record low in terms of crowded targets
 whose representations all avoid a fixed prefix.
+A [sparse completion](sparse-completion.md) preserves any genuine prefix,
+generates every selected term and includes every compulsory sum. Allowing
+multiply represented terms to enter makes zero upper Banach density possible.
 
 ## Uniform upper bound
 
