@@ -143,6 +143,8 @@ uniqueness of every selected term through the extinction.
 density under sparse narrow overrides. With the genuine prefix through
 400, both parity assignments of its phase coding omit infinitely many
 exterior targets that have a unique full representation in the model.
+The genuine shift 2,581 also proves positive lower disagreement
+density between either phase coding and $U$.
 
 ## Source audit
 

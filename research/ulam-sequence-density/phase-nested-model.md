@@ -169,6 +169,34 @@ infinitely many targets uniquely represented within that candidate.
 Finite initial exceptions beyond 400 can change these representation
 counts.
 
+The genuine lag 2,581 gives a separate obstruction that persists under
+arbitrary finite changes to either phase candidate. In fact each
+candidate disagrees with $U$ on a set of lower natural density greater
+than $1/18000$.
+
+For a candidate selected position $n$, consider whether $n-2581$ is
+also selected. The replay trims every translated output interval by
+16 units at each end so that its interior remains supported throughout
+the slope bracket, including after translation by $2581\theta$.
+The scaled lengths of the resulting overlaps on the two parities are
+2,741,845 and 2,682,609. The other parity assignment exchanges those
+lengths. Since the endpoints bound finite unions of intervals, the
+overlaps supply targets of combined density at least
+
+```math
+\frac{2741845+2682609}{2\cdot3\cdot856371966}.
+```
+
+At every sufficiently large such target the clean recurrence also
+gives a smaller summand $s\le400$ with $n-s$ in the candidate.
+There are 17 choices for $s$, the genuine shifts through 400 outside
+the central third. The genuine terms $s$ and 2,581 are already fixed
+in $U$. If the candidate agreed with $U$ at all of $n$, $n-s$ and
+$n-2581$, then the selected target would have two distinct
+representations. Each disagreement can account for at most 19 targets,
+one at the disagreement itself and one for each possible lag. Dividing
+the displayed density by 19 gives the claimed lower bound.
+
 ```sh
 c++ -std=c++20 -O3 research/ulam-sequence-density/phase_full_rule.cpp -o /tmp/ulam-phase-full-rule
 python3 -B research/ulam-sequence-density/phase_nested_model.py /tmp/ulam-phase-full-rule

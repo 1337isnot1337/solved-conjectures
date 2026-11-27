@@ -167,7 +167,9 @@ def check_full_rule(profile_binary, first_low, cycle, steps, word):
     # M units are one full turn. The translated endpoints have slope
     # coefficients bounded by the sum below, also after a probe shift.
     bound = offset + max(steps) + abs(first_low[1]) + max(abs(cut[1]) for cut in SECOND_CUTS)
-    assert (bound + CUTOFF) * (3 * Q) < 16 * 10**16
+    assert (bound + 2_581) * (3 * Q) < 16 * 10**16
+    assert CUTOFF * (3 * Q) < 10**16
+    assert all(3 * (s * P % Q) not in (Q, 2 * Q) for s in range(1, CUTOFF + 1))
     data = [f"{offset} {cuts[0]} {cuts[1]} {cuts[2]}"]
     for i, (color, memory) in enumerate(cycle):
         data.append(f"{(color - SECOND_LENGTH) % 3} {i} {memory:0400b}")
