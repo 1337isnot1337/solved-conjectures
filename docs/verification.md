@@ -35,6 +35,12 @@ It checks over two million tree-cover intersections and all rectangle
 partitions of the specified small matrices. These checks are supplementary
 to the written general proof.
 
+## Chen’s parity-free exact-one-marker conjecture
+
+Read the [proof](../results/chen-parity-free-exact-one-marker/PROOF.md) and [independent review](../results/chen-parity-free-exact-one-marker/REVIEW.md).
+With NetworkX 3.6.1, run `python3 results/chen-parity-free-exact-one-marker/verify.py --seed 1011 --trials 900`.
+The seeded replay tests the residual-flow step, not the entire theorem. No Lean verification was performed.
+
 ## Cameron–Clow’s co-diamond path-perfect conjecture
 
 Read the [critical-graph and connectivity proof](../results/cameron-clow-co-diamond-path-perfect/PROOF.md), [constructive Hall proof](../results/cameron-clow-co-diamond-path-perfect/HALL-CONSTRUCTION.md), and [independent review](../results/cameron-clow-co-diamond-path-perfect/REVIEW.md).

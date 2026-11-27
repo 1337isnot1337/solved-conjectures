@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Chen’s parity-free exact-one-marker conjecture
+
+The [prescribed-pair packing theorem](results/chen-parity-free-exact-one-marker/) resolves the first question of Chen’s Problem 6.5 for arbitrary undirected supply graphs. A controlled grid provides a doubled clique for fully attachable pairs; a residual exchange routes parallel pairs. The proof passed independent mathematical review. Prescribed parity remains open in [#1012](https://github.com/1337isnot1337/solved-conjectures/issues/1012). No Lean verification was performed. [Discovery and review issue #1011](https://github.com/1337isnot1337/solved-conjectures/issues/1011).
+
 ## 2026-11-27 UTC — Cameron–Clow’s 2K₂-free path-perfect conjecture
 
 The [two-clique transversal construction](results/cameron-clow-twok2-free-path-perfect/) refutes the 2K₂-free arm of Cameron–Clow’s Conjecture 7.3 and their P₅-free Conjecture 7.4. The least forbidden induced-path order is five. The audit credits a separate deduction from Rzążewski’s selector gadgets. No Lean verification was performed. [Discovery and review issue #1007](https://github.com/1337isnot1337/solved-conjectures/issues/1007).
