@@ -1,6 +1,6 @@
 # Erdős–Galvin–Hajnal’s two-configuration avoidance problem
 
-[Problem 9/B, p. 482](https://old.renyi.hu/~p_erdos/1975-24.pdf#page=58) asks for an \(\aleph_1\)-chromatic triple system on \(\omega_1\) avoiding the loose triangle \(\mathcal T_1\) and the system \(\mathcal T_9=\{abx,aby,xyz\}\) on six distinct vertices. The positive forcing for the stricter four-pattern problem in [#1082](https://github.com/1337isnot1337/solved-conjectures/pull/1082) gives relative consistency of yes. It does **not** settle the negative direction for this weaker question.
+[Problem 9/B, p. 482](https://old.renyi.hu/~p_erdos/1975-24.pdf#page=58) asks for an \(\aleph_1\)-chromatic triple system on \(\omega_1\) avoiding the loose triangle \(\mathcal T_1\) and the system \(\mathcal T_9=\{abx,aby,xyz\}\) on five distinct vertices. The positive forcing for the stricter four-pattern problem in [#1082](https://github.com/1337isnot1337/solved-conjectures/pull/1082) gives relative consistency of yes. It does **not** settle the negative direction for this weaker question.
 
 ## Reduction in the finite-to-one rainbow model
 
