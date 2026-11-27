@@ -1,5 +1,26 @@
 # Verification
 
+## Mean independent-set size at given average degree
+
+Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
+
+## Higher-dimensional cube covering
+
+From the repository root run the two commands below. They compute the planar area and its loss when bottom tiles are excluded, check the closed-fiber weights, and replay the three-dimensional witness. The proof treats every dimension. [Proof](../results/dallara-dumitrescu-cube-covering/PROOF.md) · [Review](../results/dallara-dumitrescu-cube-covering/REVIEW.md)
+
+```sh
+python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
+python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
+```
+
+## Erdős–Galvin–Hajnal’s rainbow-star girth problem
+
+Read the [countable theorem](../results/erdos-galvin-hajnal-rainbow-star-girth/PROOF.md) and [mathematical review](../results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md). From the repository root run `python3 scripts/check_rainbow_star.py`. The list-color replay checks the missing-label invariant on finite instances. The infinite construction and obstruction follow from the written proof.
+
+## Erdős–Galvin–Hajnal’s continuum rainbow-star problem
+
+Run `python3 scripts/check_rainbow_star.py` to replay finite template profiles and label codes. The infinite-cardinal result uses the [written proof](../results/erdos-galvin-hajnal-continuum-rainbow-star/PROOF.md). The [independent review](../results/erdos-galvin-hajnal-continuum-rainbow-star/REVIEW.md) also covers the balanced-biclique exclusion and the connected abelian Cayley witness.
+
 ## de Joannis de Verclos’s projective rigidity conjecture
 
 Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
@@ -54,6 +75,10 @@ Read the [proof](../results/chen-parity-free-exact-one-marker/PROOF.md) and [ind
 With NetworkX 3.6.1, run `python3 results/chen-parity-free-exact-one-marker/verify.py --seed 1011 --trials 900`.
 The seeded replay tests the residual-flow step, not the entire theorem. No Lean verification was performed.
 
+## Finite planar subtraction games
+
+Run `python3 results/planar-subtraction-games/check_planar_game.py` to verify the complete residue table and compare direct legal play on 397,440 positions with the binomial formula. The [proof](../results/planar-subtraction-games/PROOF.md) and [independent review](../results/planar-subtraction-games/REVIEW.md) cover the nonperiodic rational line and both nonsemilinearity conclusions. The contributor’s external Lean build is described in the [source receipt](../results/planar-subtraction-games/AUDIT.md).
+
 ## Cameron–Clow’s co-diamond path-perfect conjecture
 
 Read the [critical-graph and connectivity proof](../results/cameron-clow-co-diamond-path-perfect/PROOF.md), [constructive Hall proof](../results/cameron-clow-co-diamond-path-perfect/HALL-CONSTRUCTION.md), and [independent review](../results/cameron-clow-co-diamond-path-perfect/REVIEW.md).
@@ -79,6 +104,16 @@ For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/
 The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
 
 ## Tree reconstruction after long subdivisions
+
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py` to check recovery of the full labeled core and its internal lengths from oriented cut sizes across 267 reduced trees. Two controls exercise cuts into equal halves. [Verifier](research-results/stanley-tree-subdivisions/verify_core_splits.py) · [Mathematical review](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
+
+The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+The [fixed-excess checker](research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py) tests signed deletion identities and recovers the point of reattachment on each of 269 trivalent pendant deletions among the 108 reduced shapes through order 13. [Independent review](research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
+
+The [path-distance verifier](research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py) enumerates all nontrivial trees through order 13, tests competing histograms, and reconstructs length-labelled line graphs on 816 subdivisions and all 108 small reduced topologies. [Mathematical review](research-results/stanley-tree-subdivisions/PATH-DISTANCE-REVIEW.md)
+
+The [two-hub checker](research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py) enumerates folded profiles, spanning forests and connected vertex sets. It verifies the short-arm detection, cap matching, grouping and transposition formulas. [Two-hub review](research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
 
 The standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) check independent hub subdivisions using complete small-tree forest polynomials, folded arm sizes and mixed-cap assignments. They also compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
 
@@ -117,6 +152,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 ## Mobile general position complexity
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
+
+## Normalized Nordhaus–Gaddum upper gap
+
+Run `python3 results/normalized-nordhaus-gaddum/verify.py`. It uses rational arithmetic to bracket normalized adjacency eigenvalues and test projected neighborhood estimates for a graph and its complement. It checks all labelled graph inputs of orders two through five, nine members of the authors’ focus family, and a reproducible sample on larger orders. [Proof](../results/normalized-nordhaus-gaddum/PROOF.md) · [Independent review](../results/normalized-nordhaus-gaddum/REVIEW.md)
 
 ## Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
 
@@ -157,6 +196,14 @@ Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check
 Run `python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py` for mixed isosceles triples and `python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py` for axis nominations, co-farthest pairs and the arc sampling construction. The [written review](../results/erdos-general-position-pinned-distances/BISECTOR-REVIEW.md) identifies which parts of the asymptotic argument the finite tests exercise.
 
 Run `python3 results/erdos-general-position-pinned-distances/check_sparse_trapezoids.py` to compare two definitions of a trapezoid on 512 subsets of a lattice grid and check the pin–base incidence bounds on 262,144 choices. The [written review](../results/erdos-general-position-pinned-distances/SPARSE-TRAPEZOIDS-REVIEW.md) covers the asymptotic argument.
+
+Run `python3 results/erdos-general-position-pinned-distances/check_sparse_pair_moments.py` for the regular-polygon example in the lower-moment extension. It checks the reflection count and dense-subset inequality on all 43,688 subsets of odd regular polygons through 15 vertices and counts every qualifying quadruple in three polar arrays. [Theorem and incidence proof](../results/erdos-general-position-pinned-distances/THIN-EXCEPTIONAL-PAIRS.md) · [Independent review](../results/erdos-general-position-pinned-distances/THIN-EXCEPTIONAL-PAIRS-REVIEW.md)
+
+Run `python3 results/erdos-general-position-pinned-distances/check_atomic_limits.py` to check marked carrier intersections on 300 circle triples, 592 exact Jacobians for the two continuous models, and the heavy-fiber count. [Atomic-limit proof](../results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](../results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)
+
+Run `python3 results/erdos-general-position-pinned-distances/check_atomic_children.py` to test the diameter-neighbor and reflected-partner arguments, including 66,418 diameter graphs and 3,370 weighted pentagon targets. [Atom-cloud proof](../results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Independent review](../results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
+
+Run `python3 results/erdos-general-position-pinned-distances/check_radial_profiles.py` to reproduce the 1,800 exact annular rank comparisons, 1,300 dyadic-bin checks and 31,250 hull subsamples. [Recursive proof](../results/erdos-general-position-pinned-distances/RADIAL-SCALE-TREE.md) · [Independent review](../results/erdos-general-position-pinned-distances/RADIAL-PROFILES-REVIEW.md)
 
 Run `python3 results/erdos-general-position-pinned-distances/check_four_grids.py` to enumerate circles and active pairs on rational four-grid examples with 23, 58 and 109 sites. Each example attains the site-centered cap of three and the global cap of four. The [independent review](../results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md) checks the general construction.
 
@@ -544,6 +591,13 @@ lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoste
 ```
 
 [Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+For the [ordinary inverse-KL first-index supplement](../results/caiolo-ferroni-hoster/FIRST-INDEX.md), run both commands from the repository root. The first uses SymPy 1.14.0 for its symbolic sign certificate and checks the integer witness via inverse-$`Z`$ inversion. The second uses only the Python standard library and reconstructs the ordinary KL polynomials before signed incidence inversion. Both check the entire prime-power range. [Independent review](../results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
+
+```sh
+python3 results/caiolo-ferroni-hoster/verify_first_index.py
+python3 results/caiolo-ferroni-hoster/check_first_index_incidence.py
+```
 
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 

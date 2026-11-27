@@ -7,6 +7,7 @@ Complete proposed disproof of [Conjecture 7.3](https://arxiv.org/html/2605.28474
 - [Lean review and replay](LEAN_REVIEW.md)
 - [Exact verifier](verify_counterexample.py)
 - [Exact rank threshold (supplement)](RANKS.md), with [Lean theorem](../../lean/Conjectures/CaioloFerroniHosterRanks.lean) and [exact checks](verify_ranks.py)
+- [First-index counterexample for the ordinary inverse Kazhdan–Lusztig polynomial](FIRST-INDEX.md). This family answers Badalov’s remaining boundary question, with first Turán ratio asymptotic to 18/q. The supplement has [independent written review and exact checks](FIRST-INDEX-REVIEW.md), with no Lean verification.
 - [Internal mathematical and source audit](AUDIT.md)
 - [Discovery and attribution: issue #111](https://github.com/1337isnot1337/solved-conjectures/issues/111)
 

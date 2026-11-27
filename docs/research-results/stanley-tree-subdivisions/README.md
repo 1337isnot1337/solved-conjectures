@@ -1,8 +1,28 @@
 # Recognizing trees after long subdivisions
 
+**For every fixed reduced tree, almost every independent choice of integer lengths for all its edges gives a tree recognizable among all trees from its path counts and degree sequence.** An explicit certificate recovers all edge lengths and their incidences. If every branch vertex has degree three, the unlabelled histogram of distances between vertex pairs suffices on its own, even when the competitor has arbitrary degrees. The failure probability for lengths uniform in $`1,\ldots,t`$ is at most a constant times $`k^5/t`$ on any reduced tree of order $`k`$. Stanley’s general question remains open. [Path-distance certificate and proof](PATH-DISTANCE-CERTIFICATE.md) · [Independent review and earlier work](PATH-DISTANCE-REVIEW.md)
+
+## When the histogram alone suffices
+
+For any prescribed positive degree excess, there is a finite procedure deciding generic identifiability for every reduced tree of that excess, including arbitrarily many trivalent hubs. A counterexample to generic identifiability would yield one with at most twelve times the excess minus two reduced vertices. The positive-excess classes have not been classified. The same question can be posed for the single arclength distance distribution of a metric tree. [Decision for one topology](PATH-HISTOGRAM-DECISION.md) · [Fixed-excess theorem](FIXED-EXCESS-REDUCTION.md) · [Continuous formulation](METRIC-TREE-DISTRIBUTION.md) · [Independent review](FIXED-EXCESS-REVIEW.md)
+
+## Subdivision at a branch vertex
+
 **Choose any branch vertex of any finite tree. Subdivide each incident edge independently. Once all these edges are sufficiently long, the ordinary chromatic symmetric function determines the resulting tree among all trees.** The distal rooted trees can have arbitrary shapes, and one arm can be longer than all the others combined. The proof recovers the unmarked branch vertex, the rooted ends, the arm orders and their matching.
 
 Let $`r\ge3`$ be the branch degree. Remove each arm’s initial chain of unary roots. If $`L`$ is the largest remaining order minus one, a sufficient minimum arm order is $`\max(3,L+1,2rL)`$. [Simultaneous subdivision theorem](HUB-SUBDIVISIONS.md) · [Independent review](HUB-SUBDIVISIONS-REVIEW.md)
+
+## Arbitrary internal trees
+
+For any fixed internal topology and rooted terminal caps, the ordinary chromatic symmetric function identifies the entire tree for a proportion tending to one of independent exterior-arm orders in the stated intervals. The proof recovers the unmarked ends and then the labeled internal splits, including the lengths of paths between branching vertices. [Exact theorem and proof](ARBITRARY-CORE.md) · [Independent review](ARBITRARY-CORE-REVIEW.md) · [Split reconstruction checker](verify_core_splits.py)
+
+## Two unmarked hubs
+
+**All exterior lengths can vary independently when the rooted cap shape is determined by its number of leaves and the largest such count is below the sum of the smallest counts required at one hub.** This includes arbitrary repetitions of the same rooted cap. Unit caps, mixtures of several shapes, equal lengths, arbitrarily dominant arms and central length one are permitted under the stated cap condition. [Theorem and exact cutoff](TWO-HUB-FREE-LENGTHS.md) · [Review](TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
+For arbitrary rooted ends, a complementary theorem permits the longest exterior arm to exceed the sum of the other arms by an arbitrarily large factor. Its proof determines the two possible length assignments from one-edge cuts and uses a polynomial divisibility bound to distinguish them, even after regrouping. [Dominant-arm scope and proof](DOMINANT-ARM.md)
+
+Choose two branch vertices joined by a path whose internal vertices have degree two. Each hub has at least two exterior arms, with arbitrary, possibly repeated rooted ends. Under a size condition on these exterior arms, the ordinary invariant recovers both hubs, the lengths and rooted ends, and their division between the hubs. The joining path can have any positive length. The condition allows unbounded ratios between the longest and shortest exterior arms. A separate identity distinguishes any exchange of two unequal arm orders between distinct rooted ends at a branch vertex. [Two-hub theorem and transposition identity](TWO-HUB-SUBDIVISIONS.md) · [Review and prior work](TWO-HUB-SUBDIVISIONS-REVIEW.md)
 
 ## Single-edge subdivisions and other recognition theorems
 
@@ -28,6 +48,12 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_dominant_arm.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_hub_fringe_recognition.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_hub_assignment.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py
@@ -36,6 +62,12 @@ python3 docs/research-results/stanley-tree-subdivisions/verify_long_subdivision.
 python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
 ```
+
+The [path-distance checker](verify_path_distance_certificate.py) checks the defect identity on all 2,287 nontrivial unlabelled trees through order 13 and recovers all 108 reduced topologies through that order under a generic weighting. It also tests 816 literal subdivisions.
+
+The [independent-length checker](verify_two_hub_free_lengths.py) recovers 127 examples from boundary coefficients. The [dominant-arm checker](verify_dominant_arm.py) compares 5,408 cut profiles, 108 length exchanges and 224 regroupings.
+
+The [two-hub checker](verify_two_hub_subdivisions.py) covers 18,984 exterior profiles, 23 joins with fully enumerated forests and connected subsets, and 36 assignments of distinct or repeated rooted ends. It also checks an ambiguity for one-edge counts and the transposition identity.
 
 The [structural checker](verify_hub_fringe_recognition.py) compares 2,288 unlabelled trees through order 13 and reconstructs 27,027 folded arm-size profiles. The [assignment checker](verify_hub_assignment.py) tests ten size configurations with mixed rooted ends, including ties, a central edge with equally sized sides and a longest arm exceeding the sum of the others.
 
