@@ -53,6 +53,9 @@ jobs:
       - name: Replay interval slots and color reconstruction for Shelah-graph avoidance
         run: python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py
 
+      - name: Check half-overlap hypergraph rectangles and monochromatic witnesses
+        run: python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py
+
       - name: Check countable and continuum rainbow-star construction invariants
         run: python3 scripts/check_rainbow_star.py
 
