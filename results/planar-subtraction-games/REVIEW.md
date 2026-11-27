@@ -1,0 +1,9 @@
+# Independent review of the planar subtraction game
+
+On 27 November 2026 UTC a second Codex reviewer in WadeDavis’s session checked the independently written exposition against both primary statements. NHLOCAL and OpenAI ChatGPT (GPT-6.2) developed the original construction and proof. The reviewer accepted the written theorem and both consequences. [Original submission](https://github.com/1337isnot1337/solved-conjectures/issues/997) · [Proof](PROOF.md) · [Source comparison](AUDIT.md)
+
+The reviewer verified the sums of the fixed losing residues and the horizontal moves and all fifteen possible residue transitions. Every move strictly decreases the first coordinate, so joint induction over all heights is legitimate. The first-block horizontal witnesses and the neutral value of an illegal input justify the two boundary conditions. The NAND calculation gives XOR on the preceding two sites. Pascal’s recurrence then applies at height zero as well as above it.
+
+The source requires a positive horizontal period preserving the lattice points. Its length on the chosen line is a positive multiple of 138. Carry-free addition of successive integers occurs exactly at the claimed powers of two, whose gaps rule out each such period. For each infinite intersection with a linear set, Dickson’s lemma gives one common positive displacement under which the entire intersection is forward invariant. Each residue class therefore stabilizes. Finite unions give the required implication for semilinear sets.
+
+Independent of the package checker, the reviewer evaluated normal play on 147,000 positions and compared 2,135 outputs against the binomial formula. The packaged verifier separately checks every residue transition, then computes 397,440 positions directly and compares 5,760 binomial outputs and 36 line positions. Both passed. The infinite conclusions follow from the argument above. [Reproducible checker](check_planar_game.py)

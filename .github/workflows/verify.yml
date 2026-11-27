@@ -16,6 +16,15 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_marked_quartic.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_quartic_rows.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_dominant_arm.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_hub_fringe_recognition.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_hub_assignment.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py
@@ -35,6 +44,58 @@ jobs:
 
       - name: Check normal-cover trees and small rectangle partitions
         run: python3 results/gajser-mohar-polynomial-normal-cover/verify.py
+
+      - name: Check co-diamond path stitching and endpoint patterns
+        run: python3 results/cameron-clow-co-diamond-path-perfect/verify.py
+
+      - name: Check the claw-free path-perfect counterexample
+        run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
+
+      - name: Replay interval slots and color reconstruction for Shelah-graph avoidance
+        run: python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py
+
+      - name: Check the bounded pair encoding for path-free triple systems
+        run: |
+          python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py
+          python3 results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py
+
+      - name: Check repeated-pair and Pasch amalgamation configurations
+        run: python3 results/erdos-galvin-hajnal-repeated-pair-partition/verify_amalgamation.py
+
+      - name: Check half-overlap hypergraph rectangles and monochromatic witnesses
+        run: python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py
+
+      - name: Check countable and continuum rainbow-star construction invariants
+        run: python3 scripts/check_rainbow_star.py
+
+      - name: Check the triangle-free occupancy score and conditional star laws
+        run: |
+          python3 results/buys-van-den-heuvel-kang-occupancy/verify.py
+          python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py
+
+      - name: Check Ajtai's planar packing and the higher-dimensional cube witnesses
+        run: |
+          python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
+          python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
+
+      - name: Check sharp Seidel spread and second adjacency eigenvalues
+        run: python3 results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py
+
+      - name: Check normalized adjacency estimates and complementary focus spectra
+        run: python3 results/normalized-nordhaus-gaddum/verify.py
+
+      - name: Check the planar subtraction game
+        run: python3 results/planar-subtraction-games/check_planar_game.py
+
+      - name: Replay the exact-one-marker flow exchanges
+        run: |
+          python3 -m pip install networkx==3.6.1
+          python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_orientation.py
+          python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_bridges.py
+          python3 results/chen-parity-free-exact-one-marker/verify.py --seed 1011 --trials 900
+
+      - name: Check the 2K2-free path-perfect counterexamples
+        run: python3 results/cameron-clow-twok2-free-path-perfect/verify.py
 
       - name: Check both graphical dist orientation counts
         run: |
@@ -108,6 +169,10 @@ jobs:
           python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py
           python3 results/erdos-general-position-pinned-distances/check_four_grids.py
           python3 results/erdos-general-position-pinned-distances/check_sparse_trapezoids.py
+          python3 results/erdos-general-position-pinned-distances/check_sparse_pair_moments.py
+          python3 results/erdos-general-position-pinned-distances/check_atomic_limits.py
+          python3 results/erdos-general-position-pinned-distances/check_atomic_children.py
+          python3 results/erdos-general-position-pinned-distances/check_radial_profiles.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
@@ -294,6 +359,8 @@ jobs:
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py
           python3 results/caiolo-ferroni-hoster/verify_ranks.py
+          python3 results/caiolo-ferroni-hoster/verify_first_index.py
+          python3 results/caiolo-ferroni-hoster/check_first_index_incidence.py
           python3 results/hkm-ehrhart/verify.py
       - name: Replay automorphic Li-coefficient interval certificate
         run: python3 results/chaudhary-khmiri-mazhouda/verify.py

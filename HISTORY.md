@@ -1,5 +1,111 @@
 # History
 
+## 2026-11-27 — Erdős–Galvin–Hajnal’s repeated-pair partition problem
+
+Published Cinna Davis’s relative independence proof for Problem 8/D of the 1975 paper. The same forcing model gives negative answers for both the repeated-pair and Pasch arrows while preserving CH over a CH ground model. The positive consistency direction for Pasch has a separate [open issue](https://github.com/1337isnot1337/solved-conjectures/issues/1052). [Proof](results/erdos-galvin-hajnal-repeated-pair-partition/PROOF.md) · [Negative model](results/erdos-galvin-hajnal-repeated-pair-partition/NEGATIVE-MODEL.md) · [Review](results/erdos-galvin-hajnal-repeated-pair-partition/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1048)
+
+## 2026-11-27 — Erdős–Galvin–Hajnal’s link-path partition problem
+
+Cinna Davis answers the 1975 Problem 8/E by encoding a triple system that avoids the three-edge tight path using a bounded coloring of pairs. Together with Todorčević’s model and the original authors’ CH example, the encoding gives relative independence over ZFC. [Proof](results/erdos-galvin-hajnal-link-path-partition/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-link-path-partition/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1045)
+
+## 2026-11-27 UTC — Minimum-leaf reconstruction and arbitrary high degrees
+
+The ordinary distance histogram of a generic subdivision identifies its minimum-leaf representative for every fixed topology. A marked comparison recovers a common labelled metric subtree after boundedly many leaf omissions and rules out a single extra leaf. It gives unmarked reconstruction with no bound on the number or degree of the hubs when their incident branches contain sufficiently many leaves. This supplements the existing Stanley research entry. [Proof](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) · [Sources and contributions](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-SOURCES.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)
+
+## 2026-11-27 UTC — Distance reconstruction for one four-valent hub
+
+The ordinary unlabelled vertex-distance histogram identifies a density-one set of independent subdivisions of every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs. Marked signed profiles and three necessary path-length equations decide the first positive degree-excess class analytically. Higher classes and Stanley’s full question remain open. [Proof](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-RIGIDITY.md) · [Internal review](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
+
+## 2026-11-27 — Erdős–Galvin–Hajnal’s half-overlap hypergraphs
+
+Published Cinna Davis’s ZFC solution of the 1975 Problem 11 at aleph-two for all original uniformities. The proof uses a strong coloring of ordinal pairs to select one rectangle per row pair. The full threshold credits the original conditional and impossibility results. [Proof](results/erdos-galvin-hajnal-half-overlap-hypergraphs/PROOF.md) · [Source comparison](results/erdos-galvin-hajnal-half-overlap-hypergraphs/PRIOR-ART.md) · [Independent review](results/erdos-galvin-hajnal-half-overlap-hypergraphs/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1040)
+
+## 2026-11-27 — Erdős’s arbitrary-cardinal bipartization conjecture
+
+For every positive exponent increment and every infinite cardinal, the shift-graph construction gives a graph of higher chromatic number in which every finite subgraph can be made bipartite within Erdős’s proposed edge-deletion bound. The proof controls monochromatic edges at each shift center and applies at all finite orders. [Proof](results/erdos-arbitrary-cardinal-bipartization/PROOF.md) · [Independent review](results/erdos-arbitrary-cardinal-bipartization/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1015)
+
+## 2026-11-27 — Shelah-graph avoidance is independent over GCH
+
+Cinna Davis’s reduction resolves Problem 4 of Erdős, Galvin and Hajnal. Every graph on the first uncountable ordinal avoiding their Shelah subgraph partitions into countably many induced graphs of Hajnal–Máté type. This gives the negative answer in the Avraham–Devlin–Shelah GCH model, while the original authors supplied a positive example in the constructible universe. [Proof](results/erdos-galvin-hajnal-shelah-graph-avoidance/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-shelah-graph-avoidance/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1037)
+
+## 2026-11-27 — Sharp second adjacency eigenvalue sum and Seidel spread
+
+Published the sharp bound and four-block equality case conjectured by Abreu, Brondani, de Lima and Oliveira. The reconstruction of Cinna Davis’s announced Seidel-spread method determines the exact maximum spread of every order, including the odd-order refinement. [Proof](results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Sources and attribution](results/abreu-brondani-adjacency-nordhaus-gaddum/AUDIT.md) · [Review](results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/499)
+
+## 2026-11-27 — Square-root upper gap for normalized complementary connectivities
+
+Published the full written argument for Conjecture 2 of Kempton, Zaitzeff and Muthuprakash. Cinna Davis recorded the projected-row proof strategy, which was reconstructed and independently reviewed in the WadeDavis research session. The original authors’ focus family makes the exponent sharp. [Proof](results/normalized-nordhaus-gaddum/PROOF.md) · [Attribution and prior work](results/normalized-nordhaus-gaddum/AUDIT.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/495)
+
+## 2026-11-27 UTC — Radial scales and convex hulls at the pinned-distance barrier
+
+Under a global quadratic bound on isosceles trapezoids, any sequence reaching the mean one-third barrier has a countable family of scales accounting for all site mass. The expected fraction of convex-hull vertices vanishes in every growing independent sample. A positive lower bound for that fraction would rule out such sequences. [Radial decomposition](results/erdos-general-position-pinned-distances/RADIAL-PROFILES.md) · [Recursive argument](results/erdos-general-position-pinned-distances/RADIAL-SCALE-TREE.md) · [Review](results/erdos-general-position-pinned-distances/RADIAL-PROFILES-REVIEW.md)
+
+## 2026-11-27 — Sharp average-degree occupancy in triangle-free graphs
+
+Published the variance-and-entropy proof recorded in Cinna Davis’s research issue. It resolves Buys, van den Heuvel and Kang’s asymptotic Conjecture 12, giving the leading constant one for the mean independent-set size in terms of average degree. The November 27 extension proves the pointwise redux throughout its stated range by a differential comparison. [Pointwise proof](results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md) [Proof](results/buys-van-den-heuvel-kang-occupancy/PROOF.md) · [Review and checks](results/buys-van-den-heuvel-kang-occupancy/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/497)
+
+## 2026-11-27 UTC — Deciding generic reconstruction at fixed degree excess
+
+The unranked Stanley partial result now gives a finite decision procedure for reconstruction from the distance histogram alone across all reduced trees of each prescribed positive degree excess. A pruning argument bounds the order of a smallest possible obstruction. The signed histogram also determines and is determined by the continuous arclength distance distribution. The decision has not been evaluated for every positive excess. [Proof](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REDUCTION.md) · [Internal independent review](docs/research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
+
+## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
+
+Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
+
+## 2026-11-27 UTC — The first-index boundary for ordinary inverse Kazhdan–Lusztig polynomials
+
+Cinna Davis’s rank-five coalescence family answers Badalov’s remaining question about the first Turán determinant. The determinant is negative for every prime power q ≥ 17 and the ratio is asymptotic to 18/q. Badalov had previously disproved Gao and Xie’s general log-concavity conjecture. The supplement accompanies the existing dual Chow entry, with independent mathematical review and exact checks. [Proof](results/caiolo-ferroni-hoster/FIRST-INDEX.md) · [Audit and attribution](results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
+
+## 2026-11-27 — Higher-dimensional cube covering
+
+Cinna Davis used Ajtai’s planar arrangement to prove Dall’Ara and Dumitrescu’s strict covering bound in every dimension at least three. The proof gives finite witnesses and an explicit deficit for each dimension. [Proof](results/dallara-dumitrescu-cube-covering/PROOF.md) · [Independent review and historical credit](results/dallara-dumitrescu-cube-covering/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/341)
+
+## 2026-11-27 UTC — Atomic limits in the site-centered distance problem
+
+Under a fixed global quadratic bound on isosceles trapezoids, a sequence attaining the one-third mean pinned-distance barrier cannot have a rescaled finite limit mixing point atoms and nonatomic mass. The proof also bounds the concentration of radius and projection fibers. The unrestricted gap remains open. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)
+
+## 2026-11-27 UTC — Certifying subdivisions from unlabelled distance counts
+
+The Stanley partial result now includes a reconstruction certificate from the ordinary path counts and vertex degrees. Its success probability tends to one for independent integer lengths on every fixed reduced tree, with a quantitative estimate uniform in the topology. For trivalent reduced targets the histogram alone determines the tree among all competitors. Gutman’s distance-polynomial identities and earlier weighted-path reconstruction results are credited in the review. [Proof](docs/research-results/stanley-tree-subdivisions/PATH-DISTANCE-CERTIFICATE.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/PATH-DISTANCE-REVIEW.md)
+
+## 2026-11-27 UTC — Reconstructing arbitrary internal trees in Stanley’s problem
+
+Extended the existing partial result to cores of unrestricted branching pattern. With separated exterior-arm sums, the ordinary chromatic symmetric function determines every internal split and path length under either of two arm-recovery conditions. The proof gives a density-one corollary for each fixed decorated core. [Proof](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
+
+## 2026-11-27 — A finite planar game with nonsemilinear outcomes
+
+Published NHLOCAL’s explicit two-heap game, developed with OpenAI ChatGPT (GPT-6.2). It proves Larsson–Saha–Yokoo’s existence conjecture and refutes Gurvich–Vyalyi’s semilinearity conjecture in the ordinary normal-play model. The independent review checked the full argument. [Result and proof](results/planar-subtraction-games/) · [Original submission](https://github.com/1337isnot1337/solved-conjectures/issues/997)
+
+## 2026-11-27 UTC — Stanley reconstruction at two unmarked hubs
+
+The ordinary chromatic symmetric function recognizes two-hub trees after independently long exterior subdivisions under an explicit condition on cap leaf counts. Separate theorems allow arbitrary rooted terminal shapes under an exterior-order or dominant-arm condition. [Independent lengths](docs/research-results/stanley-tree-subdivisions/TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](docs/research-results/stanley-tree-subdivisions/DOMINANT-ARM.md)
+
+The central length is unrestricted. A second identity detects an exchange of unequal arm orders between different rooted caps at one vertex. The results extend the existing unranked Stanley partial theorem. The general isomorphism question remains open. [Proof](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
+## 2026-11-27 — Erdős–Galvin–Hajnal’s continuum rainbow-star problem
+
+Published Cinna Davis’s ZFC solution of Problem 6 in Erdős, Galvin and Hajnal’s 1975 paper. The graph and edge palette have size continuum, every countable vertex colouring has a monochromatic star realizing every label, and the prescribed odd cycles are absent. A connected abelian Cayley graph also realizes the stronger conclusion with continuum many neighbours for each label. [Proof and scope](results/erdos-galvin-hajnal-continuum-rainbow-star/) · [Independent review](results/erdos-galvin-hajnal-continuum-rainbow-star/REVIEW.md) · [Issue 1021](https://github.com/1337isnot1337/solved-conjectures/issues/1021)
+
+## 2026-11-27 — Erdős–Galvin–Hajnal’s rainbow-star girth problem
+
+The [countable-host obstruction](results/erdos-galvin-hajnal-rainbow-star-girth/) forces a four-cycle in every witness for Problem 7 of the authors’ 1975 paper. The positive construction attains this girth while excluding an infinite balanced biclique. The original triangle-free existence is credited to their Theorem 8.1. [Independent review](results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md)
+
+## 2026-11-27 UTC — Chen’s parity-free exact-one-marker conjecture
+
+The [prescribed-pair packing theorem](results/chen-parity-free-exact-one-marker/) resolves the first question of Chen’s Problem 6.5 for arbitrary undirected supply graphs. A controlled grid provides a doubled clique for fully attachable pairs; a residual exchange routes parallel pairs. The proof passed independent mathematical review. Prescribed parity remains open in [#1012](https://github.com/1337isnot1337/solved-conjectures/issues/1012). No Lean verification was performed. [Discovery and review issue #1011](https://github.com/1337isnot1337/solved-conjectures/issues/1011).
+
+## 2026-11-27 UTC — Cameron–Clow’s 2K₂-free path-perfect conjecture
+
+The [two-clique transversal construction](results/cameron-clow-twok2-free-path-perfect/) refutes the 2K₂-free arm of Cameron–Clow’s Conjecture 7.3 and their P₅-free Conjecture 7.4. The least forbidden induced-path order is five. The audit credits a separate deduction from Rzążewski’s selector gadgets. No Lean verification was performed. [Discovery and review issue #1007](https://github.com/1337isnot1337/solved-conjectures/issues/1007).
+
+## 2026-11-27 UTC — Cameron–Clow’s claw-free path-perfect conjecture
+
+The [claw-free counterexample](results/cameron-clow-claw-free-path-perfect/) answers Cameron and Clow’s forbidden-star question. The line graph of a three-branch root is claw-free, is 4-vertex-critical and has no Hamilton path. Its path-span chromatic number is exactly three, and triangle replacements give an infinite family. No Lean verification was performed. [Discovery and review issue #1005](https://github.com/1337isnot1337/solved-conjectures/issues/1005).
+
+## 2026-11-27 UTC — Cameron–Clow’s co-diamond path-perfect conjecture
+
+The [co-diamond path-perfect theorem](results/cameron-clow-co-diamond-path-perfect/) resolves the co-diamond-free assertion of Cameron and Clow at every graph order and chromatic number. It uses vertex-criticality and a Hall matching for labeled path gaps. The separate two-disjoint-edges assertion and unrestricted odd-cycle problem are not claimed. No Lean formalization was used. [Discovery and review issue #1002](https://github.com/1337isnot1337/solved-conjectures/issues/1002).
+
 ## 2026-11-27 UTC — Gajser–Mohar’s polynomial normal-cover conjecture
 
 The [normal-cover polynomial theorem](results/gajser-mohar-polynomial-normal-cover/) answers the fixed-clique-bound question from the end of §4 of the original paper, with sharp growth exponent for every bound. The two written upper proofs use induced normal subcovers and disjoint events in a random permutation. A prefix-tree construction gives the matching exponent. The publication does not address the exact two-parameter extremal function. No Lean formalization was used. [Discovery and review issue #989](https://github.com/1337isnot1337/solved-conjectures/issues/989).
@@ -39,6 +145,10 @@ The dandelion and its complement minimize the sum of the two algebraic connectiv
 ## 2026-11-27 — de Joannis de Verclos’s projective rigidity conjecture
 
 Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md), building on Cinna Davis’s secant and incidence arguments. A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
+
+## 2026-11-27 — Sparse exceptional pairs in the site-centered distance problem
+
+A lower-moment bound on reflected pairs away from a chosen carrier gives a positive mean pinned-distance gap under an arbitrary fixed global quadratic bound on isosceles trapezoids. Generic unions of regular polygons show why one cannot simply pass to a positive-density subset satisfying the earlier hereditary hypothesis. [Proof and exact scope](results/erdos-general-position-pinned-distances/THIN-EXCEPTIONAL-PAIRS.md) · [Independent review](results/erdos-general-position-pinned-distances/THIN-EXCEPTIONAL-PAIRS-REVIEW.md)
 
 ## 2026-11-27 UTC — Sparse trapezoids and Erdős’s site-centered question
 
