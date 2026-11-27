@@ -16,6 +16,8 @@ conditional construction obstruction as an answer.
 | [Linear trace cliques](LINEAR-TRACE-CLIQUES.md) | Many minimum-neighbour traces with pair overlap s and no triple overlap when the petal inequality is saturated. |
 | [Shared-petal abundance](SHARED-PETAL-ABUNDANCE.md) | A small shared support: at the first moving jump, one nearby minimum pair has linearly many disjoint exterior petals with shared points. |
 | [Witness expansion](WITNESS-EXPANSION-DICHOTOMY.md) | A subquadratic minimum-pair component whose witness wings stay dispersed: a growing cluster must share almost all of both wings. |
+| [Witness expansion with slack](WITNESS-EXPANSION-WITH-SLACK.md) | Extends the sparse-neighborhood versus wing-clustering dichotomy to all offsets 1 ≤ z ≤ t/4. |
+| [Shared support versus order](SHARED-SUPPORT-VERSUS-ORDER.md) | Under wing separation, a subcubic example must share at least about 3t vertices outside any such minimum pair. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
 | [Larger cores and four-fold padding](LARGER-CORE-PADDING.md) | Extending minimum-rank rigidity by even one; below the classical threshold, selected triples must share many padding vertices. |
 | [Near-minimum dense-core barrier](NEAR-MINIMUM-DENSE-CORE.md) | For a wider fixed-core class, beating the classical construction near its start even with unrestricted shared padding and no core three-wise assumption. |
