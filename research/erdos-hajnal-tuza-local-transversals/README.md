@@ -14,6 +14,8 @@ conditional construction obstruction as an answer.
 | [Near-threshold petals](NEAR-THRESHOLD-PETALS.md) | A minimum pair without the required large, almost-disjoint exterior witnesses. |
 | [Two-wing balance](TWO-WING-BALANCE.md) | Concentrating essentially all overlap of two disjoint-cut witnesses in only one wing, when r−5t is sublinear. |
 | [Linear trace cliques](LINEAR-TRACE-CLIQUES.md) | Many minimum-neighbour traces with pair overlap s and no triple overlap when the petal inequality is saturated. |
+| [Shared-petal abundance](SHARED-PETAL-ABUNDANCE.md) | A small shared support: at the first moving jump, one nearby minimum pair has linearly many disjoint exterior petals with shared points. |
+| [Witness expansion](WITNESS-EXPANSION-DICHOTOMY.md) | A subquadratic minimum-pair component whose witness wings stay dispersed: a growing cluster must share almost all of both wings. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
 | [Larger cores and four-fold padding](LARGER-CORE-PADDING.md) | Extending minimum-rank rigidity by even one; below the classical threshold, selected triples must share many padding vertices. |
 | [Near-minimum dense-core barrier](NEAR-MINIMUM-DENSE-CORE.md) | For a wider fixed-core class, beating the classical construction near its start even with unrestricted shared padding and no core three-wise assumption. |
