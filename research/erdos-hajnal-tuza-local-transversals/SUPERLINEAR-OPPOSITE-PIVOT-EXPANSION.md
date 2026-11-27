@@ -54,3 +54,24 @@ It follows that \(u\le K\). If both sides have a high-use witness at \(i\), this
 For \(z=o(t^{1/3})\), take \(k=\lceil 10\sqrt{t(z+1)}\rceil\). Eventually \(k\le\ell\). The bounds \(\delta\le z\), \(L\le 17t/4\) imply \(h\gg\sqrt{t(z+1)}\), \(2L\delta/h^2\) is bounded away from 1, and \(B_k=o(t)\). Hence \(K=O(\sqrt{t/(z+1)})=o(b)\), which gives the claimed order. At \(z=1\), use \(k=\lceil 2\sqrt t+t^{1/4}\rceil\). Then \(B_k=4t/k\), \(h\) grows on the order of \(t^{1/4}\), \(K=O(t^{3/4})=o(t)\), and \(\ell=t+1\), \(b=t\). Dividing the sum bound by two gives \((1/4-o(1))t^{3/2}\) on at least one side.
 
 The new proof avoids a dense-core hypothesis and improves the unconditional linear-size estimate. It does not determine the optimum in Erdős #616.
+
+## The same bound counts distinct intersection traces
+
+The secondary selection on the \(A\) side can be arranged to
+use a single representative edge for every trace \(F\cap A\).
+To do so fix one representative of each trace of the full
+hypergraph on \(A\) before selecting any secondary witness.
+Whenever some edge misses the cut complement in
+\(Y_i=A\cap E_i\), the representative of its \(A\)-trace
+also misses it, since \(Y_i\subseteq A\). It is therefore a
+valid choice, and all proof estimates apply to it. For disjoint
+cuts at a fixed pivot, the traces are automatically different:
+they meet \(Y_i\) in nonempty subsets of those disjoint cuts.
+Make an analogous canonical choice for the \(B\) side.
+
+Thus the displayed lower bound also holds for the sum of the
+numbers of **distinct traces** of the selected edges on their
+respective bases, with the same intersection gap \(2\delta\).
+At \(z=1\) at least one base therefore has
+\((1/4-o(1))t^{3/2}\) distinct minimum traces, not merely that
+many different outside paddings of a smaller trace family.
