@@ -1,5 +1,7 @@
 # Lean verification status
 
+The transfinite stable-core reduction for Komjáth’s property B problem has an independently reviewed written proof and finite checks of its recoloring argument. It has no Lean formalization. [Proof](../results/komjath-property-b/LOW-CODEGREE-PEELING.md) · [Review](../results/komjath-property-b/PEELING-REVIEW.md)
+
 ## Erdős’s arbitrary-cardinal bipartization conjecture
 
 The full arbitrary-cardinal construction has a written proof and

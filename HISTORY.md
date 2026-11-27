@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — The stable core of Komjáth’s property B problem
+
+Cinna Davis proved that the entire discarded part of the transfinite low-codegree iteration is essentially disjoint and that ordinary two-colorability of its stable core is equivalent to ordinary two-colorability of the full family. The arbitrary nonempty core remains open. The published 1986 single-stage filtration result is credited separately. [Theorem](results/komjath-property-b/LOW-CODEGREE-PEELING.md) · [Independent review](results/komjath-property-b/PEELING-REVIEW.md)
+
 ## 27 November 2026 — Effective finite witnesses for Bourin’s inequality
 
 For each fixed rank, the largest additive crossed-Heinz gap per selected singular value can be enclosed to any prescribed rational accuracy over every exponent and finite dimension. The proof bounds the order required to retain a strict violation and gives a terminating real-algebraic test. Bourin’s exact inequality remains open. [Proof](results/bourin-crossed-heinz/EFFECTIVE-GAP.md) · [Source comparison and review](results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md)
