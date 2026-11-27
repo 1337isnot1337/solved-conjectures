@@ -2,7 +2,7 @@
 
 ## Mean independent-set size at given average degree
 
-Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. The asymptotic conclusion follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
+Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
 
 ## Higher-dimensional cube covering
 

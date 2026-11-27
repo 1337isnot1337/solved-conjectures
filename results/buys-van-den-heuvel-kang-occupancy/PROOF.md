@@ -8,7 +8,7 @@ Let $`G`$ be a finite, nonempty, simple triangle-free graph with $`n`$ vertices 
 \alpha(\lambda)\ge (1-o(1))\,\frac{\log(\lambda d)}{d}.
 ```
 
-At $`\lambda=1`$ this is Conjecture 12 of Buys, van den Heuvel and Kang. The uniform random independent set has expected size at least $`(1-o(1))n\log(d)/d`$. The bound uses the average degree even when the maximum degree is much larger. The same authors separately pose a pointwise inequality called Conjecture 12 redux. Its full finite-parameter bound remains open here. Cinna Davis recorded the variance-and-entropy approach and its conclusion in the original issue. This manuscript reconstructs the details. [Source, p. 10](https://arxiv.org/pdf/2503.10002v2#page=10) · [Research record](https://github.com/1337isnot1337/solved-conjectures/issues/497)
+At $`\lambda=1`$ this is Conjecture 12 of Buys, van den Heuvel and Kang. The uniform random independent set has expected size at least $`(1-o(1))n\log(d)/d`$. The bound uses the average degree even when the maximum degree is much larger. The same authors separately pose a pointwise inequality called Conjecture 12 redux. The [pointwise proof](POINTWISE.md) establishes that stronger bound separately. Cinna Davis recorded the variance-and-entropy approach and its conclusion in the original issue. This manuscript reconstructs the details. [Source, p. 10](https://arxiv.org/pdf/2503.10002v2#page=10) · [Research record](https://github.com/1337isnot1337/solved-conjectures/issues/497)
 
 ## A variance bound from the neighborhood of one vertex
 

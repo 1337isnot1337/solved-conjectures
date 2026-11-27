@@ -2,7 +2,7 @@
 
 ## 2026-11-27 — Sharp average-degree occupancy in triangle-free graphs
 
-Published the variance-and-entropy proof recorded in Cinna Davis’s research issue. It resolves Buys, van den Heuvel and Kang’s asymptotic Conjecture 12, giving the leading constant one for the mean independent-set size in terms of average degree. The pointwise redux remains open here. [Proof](results/buys-van-den-heuvel-kang-occupancy/PROOF.md) · [Review and checks](results/buys-van-den-heuvel-kang-occupancy/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/497)
+Published the variance-and-entropy proof recorded in Cinna Davis’s research issue. It resolves Buys, van den Heuvel and Kang’s asymptotic Conjecture 12, giving the leading constant one for the mean independent-set size in terms of average degree. The November 27 extension proves the pointwise redux throughout its stated range by a differential comparison. [Pointwise proof](results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md) [Proof](results/buys-van-den-heuvel-kang-occupancy/PROOF.md) · [Review and checks](results/buys-van-den-heuvel-kang-occupancy/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/497)
 
 ## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
 
