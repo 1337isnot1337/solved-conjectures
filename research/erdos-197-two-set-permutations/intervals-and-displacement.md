@@ -41,6 +41,32 @@ At the next interval $L_{j+1}\ge a_j+16d_j$ and $2L_{j+1}-U_{j+1}\le a_j-50d_j$.
 
 **Consequence.** Suppose $s_{k+1}/s_k\to2$ and colour the consecutive integer intervals $(s_k,s_{k+1}]$ by the parity of $k$. For each colour take every third one of its intervals. Their successive left endpoints have ratio tending to 64, and the quantity $(2L_{j+1}-U_{j+1})/L_j$ tends to zero. The theorem rules out both colour orders. It also treats fixed endpoint ratio $q=1.95$, using every second interval of each colour. In that case $L_{j+1}/L_j\to q^4>11$ and $(2L_{j+1}-U_{j+1})/L_j\to(2-q)q^4<1$.
 
+## Intervals whose endpoints match under doubling
+
+**Theorem.** Suppose $S$ contains intervals of integers $(L_i,U_i]$ whose left endpoints tend to infinity and whose lengths tend to infinity. If there is a fixed $D$ such that $|2L_i-U_{i+1}|\le D$ for every $i$, then $S$ has no admissible enumeration.
+
+Choose $A$ so that $F=[A,A+2D+29]\cap\mathbb Z$ is contained in one interval of $S$, taking $D$ to be a nonnegative integer. Put $H=A+D$. For each sufficiently large $i$, choose $0\le e_i\le7$ so that $M_i=U_i-H-e_i-L_i$ is divisible by eight. These lengths eventually exceed 16. The full interval $(L_i,U_i-H-e_i]$ of length $M_i$ inherits Kasel's three prohibited comparisons by translation. Write its three bottom and top values as
+
+$$
+B_i=L_i+\{3,5,6\},\qquad T_i=U_i-H-e_i-\{3,5,10\}.
+$$
+
+For any $y\in B_i$ and $z\in T_{i+1}$, the value $2y-z$ lies in $F$. Indeed the value is the sum of $2L_i-U_{i+1}$, $H$, $e_{i+1}$, twice a member of $\{3,5,6\}$, and a member of $\{3,5,10\}$. It therefore lies between $A+9$ and $A+2D+29$.
+
+In a proposed enumeration choose $i_0$ so large that every bottom in every $B_i$, $i\ge i_0$, occurs after the last member of $F$. Such an index exists because there are finitely many earlier entries and $L_i\to\infty$. Increase it as needed so all bottoms exceed $\max F$. Let $P$ be the finite prefix through one member of $B_{i_0}$. If $y\in B_i\cap P$, each $z\in T_{i+1}$ must precede $y$, because $(2y-z,y,z)$ is a progression whose first value already precedes $y$. Thus $T_{i+1}\subset P$. If $P$ missed $B_{i+1}$, all three tops would precede all three bottoms in their own interval, contradicting Kasel's boundary constraint. Induction gives $P\cap B_i\ne\varnothing$ for every $i\ge i_0$, which is impossible.
+
+**Fractional octaves.** For an odd integer $m\ge3$ let $s_j=\lceil2^{j/m}\rceil$ and colour $[s_j,s_{j+1})$ by $j$ modulo two. Starting with any $j$, iterate $j\mapsto j+m-1$. The intervals have one colour and lengths tending to infinity. In the preceding theorem the successive endpoints obey
+
+$$
+2L_i-U_{i+1}=2\lceil2^{j/m}\rceil-\lceil2^{(j+m)/m}\rceil-1\in\{-1,0\}.
+$$
+
+Hence neither colour can have an admissible order, with no condition on displacement. The case $m=1$ is covered by the nearly doubling interval theorem.
+
+**Binary colour rules.** More generally, suppose that for every sufficiently large $n$ the colours of $2n$ and $2n+1$ both differ from the colour of $n$. Each colour then contains arbitrarily late long runs. To see the structure of all such runs, pick a threshold $N$ for the rule. For $j\ge0$ each interval $[2^jn,2^j(n+1))$, $N\le n<2N$, has a single colour determined by the colour of $n$ and the parity of $j$. Thus the gaps between successive changes of colour tend to infinity. Arbitrarily large changes occur for each orientation since the intervals descending from $N$ alternate in colour.
+
+If $[l,u)$ is any sufficiently late maximal run, a change at $l$ produces the oppositely oriented change at $2l$. Consequently $u\le2l$. When $u=2l$, multiplying the run's endpoints by $4^j$ produces solid runs of its colour. Taking every second such run gives successive left endpoints of limiting ratio 16 with bounded $2L_i-U_i$, using integer intervals $(L_i,U_i]=(4^{2i}l-1,4^{2i}u-1]$. The nearly doubling interval theorem applies. When $u<2l$, the run of the same colour ending just before $2l$ is strictly later. Iterate from it. Either an equality case occurs, or we obtain infinitely many successive selected runs with $u_{i+1}=2l_i$. The selected lower endpoints increase to infinity and run lengths tend to infinity. In integer-interval notation $2L_i-U_{i+1}=-1$, so the interval-chain theorem applies. Beginning with either colour gives the obstruction in both.
+
 ## The sharp factor-two finite obstruction
 
 Let both colours and their orders on $[1,N]$ be variable. Require monotone-progression avoidance within each colour and require $x$ to precede $y$ in that colour whenever $y>2x$. The largest feasible $N$ is 84.

@@ -4,7 +4,7 @@
 
 Davis, Entringer, Graham and Simmons prove that every enumeration of all positive integers contains an increasing three-term progression. They give a partition into three admissible sets and pose the two-set question in concluding remark 3. Geneson constructs one admissible set of upper density at least $2/3$. Kasel proves that alternating full dyadic intervals fail as a two-set partition. The catalogue, its discussion, the papers and the project claim search on 26 November 2026 yielded no resolution of the two-set question. [Davis et al.](https://mathweb.ucsd.edu/~ronspubs/77_06_no_long_aps.pdf) · [Geneson](https://arxiv.org/abs/2608.12604) · [Kasel](https://arxiv.org/abs/2609.02939) · [Catalogue discussion](https://www.erdosproblems.com/forum/thread/197#post-8586).
 
-A further result rules out alternating intervals whose successive endpoint ratios tend to two. A separate computation with variable colour classes and a factor-two ordering bound gives the sharp finite threshold of 85, with a DRAT certificate checked independently. [Interval proof and finite verification](intervals-and-displacement.md).
+Further interval arguments rule out alternating intervals whose successive endpoint ratios tend to two, odd fractional-octave bands with unrestricted orders, and every eventual rule in which both binary children have the opposite colour from their parent. A separate computation with variable colour classes and a factor-two ordering bound gives the sharp finite threshold of 85, with a DRAT certificate checked independently. [Interval proof and finite verification](intervals-and-displacement.md).
 
 ## Finite blocks cannot contain every monochromatic progression
 
