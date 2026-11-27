@@ -1,0 +1,19 @@
+# The colouring-poset rectangle obstruction
+
+For a triple system \(H\) on \(\omega_1\), write \(Q(H)\) for finite proper partial vertex maps to \(\omega\), ordered by extension. Write \(B(\lambda,\mu)\) for \(\lambda\) disjoint two-vertex bases, disjoint from \(\mu\) pages, with every base-plus-page triple present. A link of \(v\) is the graph of pairs completing \(v\) to a triple.
+
+**Proposition (ZFC).** If \(H\) omits \(B(\omega,2)\) and each of its links omits \(K_{2,2}\), then \(Q(H)\) is ccc. In particular this applies if \(H\) omits \(B(\omega,2)\) and \(T_4\).
+
+Suppose \(Q(H)\) had an uncountable antichain. Thin its supports to a \(\Delta\)-system with fixed root \(R\), fixed root colours and equal finite petal size. List the petals in increasing order so all vertices of an earlier petal precede all vertices of a later one. This is obtained by discarding the finitely or countably many petals touching a bounded initial segment after each choice. The union of any two conditions has a monochromatic triple; it meets both petals, since neither condition alone has one. Colour each pair of indices by the positions of one such triple in the two petals and the fixed root. There are finitely many colours. The [Baumgartner–Hajnal partition theorem](https://doi.org/10.4064/fm-78-3-193-203) gives a constant position pattern on a set of order type \(\omega+2\).
+
+- If one vertex is in \(R\), the remaining two positions give a complete rectangle in that fixed vertex's link; in particular a \(K_{2,2}\).
+- If two vertices are from the earlier petal, the first \(\omega\) petals supply disjoint bases, and the final two later petals supply common pages, giving \(B(\omega,2)\).
+- If two vertices are from the later petal, the first two petals supply two pages, and infinitely many later petals supply disjoint bases, again giving \(B(\omega,2)\).
+
+This rules out the antichain. Under \(\mathrm{MA}_{\omega_1}\) the dense sets requiring a colour at each vertex therefore give a countable colouring. The argument does not assume that the hypergraph is supported by a ladder graph.
+
+**Stronger conclusion under \(\mathrm{MA}_{\omega_1}\).** Every uncountably chromatic \(T_4\)-free triple system on \(\omega_1\) contains \(B(\omega,\omega_1)\) or \(B(\omega_1,\omega)\). For a hypergraph whose repeated pairs always precede their pages in the order of \(\omega_1\), only the first alternative can occur.
+
+Indeed, if \(Q(H)\) were ccc, \(\mathrm{MA}_{\omega_1}\) would give a proper colouring. So obtain the same antichain position colouring, and take its restriction to the first \(\omega\) rows and the later \(\omega_1\) columns. For completeness the needed polarized relation follows from \(\mathfrak p>\omega_1\), a standard consequence of \(\mathrm{MA}_{\omega_1}\). Fix a free ultrafilter on the rows. For each column take a colour whose row set belongs to the ultrafilter, and thin to uncountably many columns with the same chosen colour. Their row sets have the strong finite intersection property, so have an infinite pseudointersection \(A\). For uncountably many columns the same finite cutoff of \(A\) suffices, giving a monochromatic infinite-by-uncountable rectangle of indices. The root pattern is excluded by \(T_4\) as above; the other patterns give the claimed book rectangles. In the oriented case, the second rectangle would place uncountably many base vertices below a fixed page in \(\omega_1\), which is impossible.
+
+This builds on [EGH 1975, §5, Lemma 5.2 and Theorems 5.4 and 5.6](https://www.renyi.hu/~p_erdos/1975-24.pdf#page=19), which use finite proper-colouring antichains and give a graph rectangle theorem and hypergraph codegree bounds. The stated refinement keeps track of the three possible positions of a crossed triple. It does not decide EGH 9/C under unrestricted MA: \(B(\omega,\omega_1)\) and \(B(\omega_1,\omega)\), considered on their own, both omit all four configurations in 9/C.
