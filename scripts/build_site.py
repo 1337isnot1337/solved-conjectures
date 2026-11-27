@@ -95,6 +95,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Soukup’s complementary graph product problem": "soukup-complementary-graph-product",
     "Bourin’s crossed-Heinz common-shift theorem": "bourin-crossed-heinz",
     "Bourin’s crossed-Heinz partial theorems": "bourin-crossed-heinz",
     "Erdős’s arbitrary-cardinal bipartization conjecture": "erdos-arbitrary-cardinal-bipartization",

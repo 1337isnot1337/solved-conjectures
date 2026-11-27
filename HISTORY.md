@@ -4,6 +4,10 @@
 
 If two finite metric trees have the same distribution of distances between uniform arclength samples, the tree with more leaves has at most twice its number of independent rational edge-length relations in extra leaves. A generic tree of any topology is identified against every rival with at most two such relations. For an arbitrary bound $`D`$ on this number, a finite ambiguity test across all topologies and all leaf surpluses needs at most $`4D`$ rival leaves. The integer exceptional-set estimate and the marked height-relation proof are recorded with their checks in the existing Stanley campaign. [Unmarked theorem](docs/research-results/stanley-tree-subdivisions/DISTANCE-CANCELLATION-CODIMENSION.md) · [Marked theorem](docs/research-results/stanley-tree-subdivisions/HEIGHT-RELATION-KERNEL.md) · [Review and checks](docs/research-results/stanley-tree-subdivisions/DISTANCE-NULLITY-REVIEW.md)
 
+## 27 November 2026 — Order representations of Soukup’s complementary graph products
+
+Cinna Davis constructed a graph with the required chromatic numbers in every extension by one Cohen real. The finite-dimensional order obstruction under the bounded proper forcing axiom gives the opposite consistency direction for the restricted representation. A separate ZFC theorem gives a regressive-map normal form on the entire first uncountable ordinal. The original problem remains open. [Results](results/soukup-complementary-graph-product/) · [Independent reviews](results/soukup-complementary-graph-product/REVIEW.md)
+
 ## 27 November 2026 — The stable core of Komjáth’s property B problem
 
 Cinna Davis proved that the entire discarded part of the transfinite low-codegree iteration is essentially disjoint and that ordinary two-colorability of its stable core is equivalent to ordinary two-colorability of the full family. The arbitrary nonempty core remains open. The published 1986 single-stage filtration result is credited separately. [Theorem](results/komjath-property-b/LOW-CODEGREE-PEELING.md) · [Independent review](results/komjath-property-b/PEELING-REVIEW.md)
