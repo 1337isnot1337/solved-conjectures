@@ -52,6 +52,10 @@ The dandelion and its complement minimize the sum of the two algebraic connectiv
 
 Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md), building on Cinna Davis’s secant and incidence arguments. A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
 
+## 2026-11-27 — Sparse exceptional pairs in the site-centered distance problem
+
+A lower-moment bound on reflected pairs away from a chosen carrier gives a positive mean pinned-distance gap under an arbitrary fixed global quadratic bound on isosceles trapezoids. Generic unions of regular polygons show why one cannot simply pass to a positive-density subset satisfying the earlier hereditary hypothesis. [Proof and exact scope](results/erdos-general-position-pinned-distances/THIN-EXCEPTIONAL-PAIRS.md) · [Independent review](results/erdos-general-position-pinned-distances/THIN-EXCEPTIONAL-PAIRS-REVIEW.md)
+
 ## 2026-11-27 UTC — Sparse trapezoids and Erdős’s site-centered question
 
 The mean pinned-distance count exceeds one third of the set size by a fixed proportion under either of two trapezoid hypotheses. One permits a sufficiently small quadratic count for the entire set, and the other permits any fixed quadratic bound on every subset. This strengthens the existing partial results on the site-centered question. [Proof and source comparison](results/erdos-general-position-pinned-distances/SPARSE-TRAPEZOIDS.md) · [Review](results/erdos-general-position-pinned-distances/SPARSE-TRAPEZOIDS-REVIEW.md)

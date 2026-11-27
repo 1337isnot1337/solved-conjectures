@@ -122,6 +122,7 @@ jobs:
           python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py
           python3 results/erdos-general-position-pinned-distances/check_four_grids.py
           python3 results/erdos-general-position-pinned-distances/check_sparse_trapezoids.py
+          python3 results/erdos-general-position-pinned-distances/check_sparse_pair_moments.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses

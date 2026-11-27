@@ -185,7 +185,7 @@ For every Gaussian parameter, the minima on $`A_n^*`$ occur exactly at the deep 
 
 ## Site-centered pinned distances
 
-A separate relaxation of Erdős’s one-third question restricts only circles centered at sites. Mixed-circle incidence bounds, an active-bisector criterion, uniform-disk limits and a four-grid obstruction describe this case. A positive gap holds under the stated bounds on isosceles trapezoids. [Site-centered results and exact scope](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
+A separate relaxation of Erdős’s one-third question restricts only circles centered at sites. Mixed-circle incidence bounds, an active-bisector criterion, uniform-disk limits and a four-grid obstruction describe this case. A positive gap holds under the stated bounds on isosceles trapezoids and under a weaker bound on reflected-pair multiplicities that permits sparse exceptions. [Site-centered results and exact scope](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
