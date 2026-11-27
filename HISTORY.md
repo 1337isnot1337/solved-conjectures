@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
+
+Published the [reviewed written proof](results/frankl-geher-sagdeev-toth-strict-convexity/PROOF.md). There is a strictly convex norm on real five-space and a fixed countably infinite set such that every coloring with countably infinitely many colors has an isometric copy missing a color. This does not resolve the separate two-color question.
+
 ## 2026-11-27 — Recognizing trees after one long edge subdivision
 
 Codex proved in the WadeDavis research session that the ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single chosen tree edge among all trees. The publication also records the repeated-branch theorems and their exact checks. [Results](docs/research-results/stanley-tree-subdivisions/README.md) · [Review](docs/research-results/stanley-tree-subdivisions/REVIEW.md)

@@ -83,6 +83,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture": "frankl-geher-sagdeev-toth-strict-convexity",
     "Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture": "barrett-evans-hall-kempton-se",
     "Liang’s slice-period conjecture": "liang-slice-period",
     "Liang’s 0.3123 slice problem": "liang-03123-slice",

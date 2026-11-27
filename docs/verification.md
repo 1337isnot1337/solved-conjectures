@@ -1,5 +1,9 @@
 # Verification
 
+## Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
+
+Run `python3 results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py` for exact height identities and rational curvature and support bounds. The [review](../results/frankl-geher-sagdeev-toth-strict-convexity/AUDIT.md) distinguishes these checks from the full written argument.
+
 ## Tree reconstruction after long subdivisions
 
 Run the three standard-library Python checks in the [reproduction instructions](research-results/stanley-tree-subdivisions/README.md#reproduction). They compare ordinary cut polynomials, rooted products, subdivision factors and competing branch configurations. [Independent mathematical review](research-results/stanley-tree-subdivisions/REVIEW.md)
