@@ -75,3 +75,4 @@ These Y coefficients are log-concave; this construction does not itself refute t
 Run python3 verify.py with Python 3.9+ and SymPy. The exact checks are ordinary Python assertions; no floating-point roots, no random search, no unproved conjectural input. This is a complete disproof of the remaining first-index question from Badalov's Section 8, not a separate solved entry for the already-resolved Gao–Xie conjecture. Rank five is a witness to a universally quantified inequality, not a fixed-rank numerical target. The original coalescence proof is required for interpreting the flag counts as those of a matroid.
 
 Issue #299.
+Reviewed 27 November 2026. See the [source-matched proof](FIRST-INDEX.md), [independent review](REVIEW.md), and [ordinary-KL incidence check](check_incidence.py).
