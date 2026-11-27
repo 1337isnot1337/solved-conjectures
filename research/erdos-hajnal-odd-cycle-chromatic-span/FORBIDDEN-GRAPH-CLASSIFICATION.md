@@ -50,5 +50,5 @@ question about *all* H-free graphs, not a bound on their order.
 The resulting unresolved list is an edge plus four isolates,
 a three-vertex path plus three isolates, and a four-vertex path
 plus either one or two isolates. No assertion is made about the
-four outcomes. The positive results above are marked research
-until independently reviewed.
+four outcomes. The positive results above are [independently reviewed](FORBIDDEN-CLASS-REVIEW.md); they remain research results
+rather than an unrestricted solution.
