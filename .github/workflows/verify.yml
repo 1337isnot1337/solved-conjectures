@@ -320,6 +320,8 @@ jobs:
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py
           python3 results/caiolo-ferroni-hoster/verify_ranks.py
+          python3 results/caiolo-ferroni-hoster/verify_first_index.py
+          python3 results/caiolo-ferroni-hoster/check_first_index_incidence.py
           python3 results/hkm-ehrhart/verify.py
       - name: Replay automorphic Li-coefficient interval certificate
         run: python3 results/chaudhary-khmiri-mazhouda/verify.py

@@ -554,6 +554,13 @@ lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoste
 
 [Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
 
+For the [ordinary inverse-KL first-index supplement](../results/caiolo-ferroni-hoster/FIRST-INDEX.md), run both commands from the repository root. The first uses SymPy 1.14.0 for its symbolic sign certificate and checks the integer witness via inverse-$`Z`$ inversion. The second uses only the Python standard library and reconstructs the ordinary KL polynomials before signed incidence inversion. Both check the entire prime-power range. [Independent review](../results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
+
+```sh
+python3 results/caiolo-ferroni-hoster/verify_first_index.py
+python3 results/caiolo-ferroni-hoster/check_first_index_incidence.py
+```
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 The [complete target receipt](verification/juhnke-20261124/receipt.json) records fresh strict compilation of all 18 project modules, the unchanged audit of all 577 owned declarations (502 theorems and 11 required endpoints), and unchanged stock-kernel replay. The pinned Lean version is 4.35.0; the only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The complete source statement and literal-path bridge were independently reviewed against the original report.

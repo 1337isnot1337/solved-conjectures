@@ -122,6 +122,8 @@ For the 🟢 Lonely Runner results, the written proofs reduce the classification
 
 For Pomerance–Sárközy’s fluctuation conjecture, the Lean scope covers the quarter-root Gaussian law and the square-root convergence in probability of the original counting function. The [formalization scope](results/pomerance-sarkozy-fluctuations/FORMALIZATION.md) records the two declarations and the remaining written results.
 
+The rank-five matroids in the Caiolo–Ferroni–Hoster result also settle Badalov’s first-index question for the ordinary inverse Kazhdan–Lusztig polynomial. The first Turán ratio tends to zero. The supplement has a reviewed written proof and exact arithmetic checks. [First-index counterexample](results/caiolo-ferroni-hoster/FIRST-INDEX.md)
+
 ## Major theorem consequences (not separately solved conjectures)
 
 The dandelion theorem answers the 2018 question of Afshari, Akbari, Moghaddamzadeh and Mohar. The larger algebraic connectivity of a graph and its complement is always at least $`2-\sqrt2`$, with equality only for the four-vertex path. [Sharp bound and proof](results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md)
