@@ -7,6 +7,8 @@ transitive translations. They still have the exact
 chromatic number, prescribed odd girth, and large balanced
 biclique exclusion established in the earlier notes.
 
+The underlying graph is the finite-support Boolean version of the cubelike hull, also called the power graph. Beaudou, Naserasr and Tardif studied its finite graph-homomorphism construction. [Homomorphisms of binary Cayley graphs](https://arxiv.org/abs/1502.00776) · [Cores of cubelike graphs, §4](https://doi.org/10.1016/j.ejc.2020.103092)
+
 We use the Boolean Cayley construction described by
 [domotorp, MathOverflow answer 510828](https://mathoverflow.net/a/510828).
 Its use for triangle-free vertex-transitive graphs is prior.
