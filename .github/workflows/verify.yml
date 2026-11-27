@@ -50,6 +50,9 @@ jobs:
       - name: Check the claw-free path-perfect counterexample
         run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
 
+      - name: Replay interval slots and color reconstruction for Shelah-graph avoidance
+        run: python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py
+
       - name: Check countable and continuum rainbow-star construction invariants
         run: python3 scripts/check_rainbow_star.py
 
