@@ -8,6 +8,8 @@ The multiset of leaf-to-leaf distances determines the total length of a generic 
 
 ## When the histogram alone suffices
 
+The ordinary vertex-distance histogram identifies a generic subdivision of any fixed reduced tree among every competitor with at most one extra leaf. The proof covers arbitrary branching and both integer subdivisions and the metric-tree arclength law. [One-extra-leaf theorem](ONE-EXTRA-LEAF.md) · [Independent review](ONE-EXTRA-LEAF-REVIEW.md) · [Degree verifier](verify_one_extra_leaf.py)
+
 A finite calculation decides generic identification over all tree topologies when competitors may have a bounded number of extra leaves. The number and degrees of the high-degree vertices are unrestricted, and a failing family has a witness with quadratically many leaves in the allowance. For a single high hub of arbitrary degree, a different tree with the same histogram needs at least two additional leaves and a surplus growing at least linearly with that hub’s degree. [Theorem and exact bounds](LEAF-SURPLUS-KERNEL.md) · [Independent review and sources](LEAF-SURPLUS-REVIEW.md) · [Finite checks](verify_leaf_surplus.py)
 
 For every fixed topology a generic subdivision has the fewest leaves of any tree with its ordinary distance histogram and is the unique representative at this minimum. The histogram alone determines generic subdivisions with arbitrary degrees when each branch at every high-degree vertex contains sufficiently many leaves. The marked proof isolates a common labelled subtree and rules out a single extra leaf. [Exact hypotheses and proof](ROBUST-HUB-DISTANCES.md) · [Sources and attribution](ROBUST-HUB-SOURCES.md) · [Independent mathematical review](ROBUST-HUB-REVIEW.md) · [Exact finite checks](verify_marked_visibility.py)
