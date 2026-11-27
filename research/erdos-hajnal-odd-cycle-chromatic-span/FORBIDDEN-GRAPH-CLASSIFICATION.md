@@ -7,9 +7,8 @@ classification question is motivated by [Cameron–Clow, §1.2](https://arxiv.or
 It is distinct from proving an arbitrary binding function as
 in their Conjecture 7.5 and from the full Erdős–Hajnal problem.
 
-The following advances reduce the exact classification to two
-undecided finite forbidden graphs. Each undecided entry is a
-question about *all* H-free graphs, not a bound on their order.
+The following advances reduce the exact classification to one undecided forbidden graph. The remaining
+entry is a question about *all* H-free graphs, not their order.
 
 - If H has a cycle, the [high-girth lift](HIGH-GIRTH-EDGE-LIFT.md)
   gives an H-free non-path-perfect graph. In fact no finite
@@ -32,8 +31,8 @@ question about *all* H-free graphs, not a bound on their order.
   These statements settle all edgeless H.
 - For a single edge with up to three additional isolates,
   path-perfectness follows from the [three-isolate proof](EDGE-THREE-ISOLATES.md).
-  Five isolates give independence number six. Only four
-  additional isolates remain undecided.
+  With four isolates or more, the [four-isolate counterexample](EDGE-FOUR-ISOLATES.md)
+  shows that path-perfectness can fail.
 - For a three-vertex path with up to two additional isolates,
   path-perfectness follows from the [two-isolate proof](PATH-THREE-TWO-ISOLATES.md).
   Four isolates give independence number six. Only three
@@ -46,8 +45,6 @@ question about *all* H-free graphs, not a bound on their order.
   shows that path-perfectness can fail. It also works for
   all larger numbers of added isolates.
 
-The resulting unresolved list is an edge plus four isolates and
-a three-vertex path plus three isolates. No assertion is made about
-these two outcomes. The first two new positive results have received
+The sole unresolved entry is a three-vertex path plus three isolates. The first two new positive results have received
 [independent review](FORBIDDEN-CLASS-REVIEW.md); these remain research
 results rather than an unrestricted solution.
