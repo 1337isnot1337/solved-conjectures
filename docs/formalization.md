@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Chen–Khare–Sahi’s Jack semiring conjecture
+
+The rank-five counterexample now uses the defining source and target Jack scalar products, including every source-semiring product. [Complete statement](../lean/Conjectures/ChenKhareSahiJackSourceTheorem.lean) · [Proof, attribution and verification](../results/chen-khare-sahi-jack/SOURCE_BRIDGE.md).
+
 ## Byrne–Tait’s odd-length Sidon-set question
 
 Lean verifies Cinna Davis’s density estimate for ordered words, the extremal bound at fixed index, the index-one case, and a positive gap uniform over bounded indices. The proof also covers bounded representation counts. [Theorem names and reproducible checks](../results/byrne-tait-odd-sidon/README.md#lean-verification).

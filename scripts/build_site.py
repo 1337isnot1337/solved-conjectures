@@ -53,7 +53,8 @@ EXTERNAL_CREDIT = {
     "chen-khare-sahi-jack": ExternalCredit(
         "@WadeDavis",
         f"{REPOSITORY}/issues/201",
-        "The contributor developed the counterexample and its written proof with Codex.",
+        "WadeDavis developed the written counterexample with Codex. Leepokai formalized the target and separator, "
+        "and WadeDavis with Codex completed the source-generator verification.",
     ),
     "de-verclos-projective-rigidity": ExternalCredit(
         "@adamben04",
@@ -95,6 +96,7 @@ SOURCE_TITLES = {
 }
 STATUS_LABEL_SLUGS = {
     "Bourin’s crossed-Heinz common-shift theorem": "bourin-crossed-heinz",
+    "Bourin’s crossed-Heinz partial theorems": "bourin-crossed-heinz",
     "Erdős’s arbitrary-cardinal bipartization conjecture": "erdos-arbitrary-cardinal-bipartization",
     "Buys–van den Heuvel–Kang’s average-degree occupancy conjecture": "buys-van-den-heuvel-kang-occupancy",
     "Dall’Ara–Dumitrescu’s higher-dimensional cube covering question": "dallara-dumitrescu-cube-covering",

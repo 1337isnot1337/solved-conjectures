@@ -2,6 +2,8 @@
 
 ## Bourin’s common-shift theorem
 
+Run `python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py` for 225 exact rational resolvent comparisons and 80 complementary divided-difference checks in the [arbitrary-centre theorem](../results/bourin-crossed-heinz/ARBITRARY-CENTRES.md).
+
 Run `python3 results/bourin-crossed-heinz/verify_common_shift.py` for the exact quadratic coefficients and spectral-block conjugations used in the proof. The [common-shift expansion](../results/bourin-crossed-heinz/COMMON-SHIFT.md) and the [dimension-free spectral interval](../results/bourin-crossed-heinz/UNIFORM-BAND.md) have written proofs.
 
 ## Mean independent-set size at given average degree
@@ -962,11 +964,12 @@ python3 results/chen-khare-sahi-macdonald/independent_orthogonality_check.py
 All three scripts use only exact integers and fractions from the Python standard library. The main verifier checks the full cone, cleared-denominator Macdonald difference equations, and exact normalized separator value. The other scripts independently regenerate the cone values and derive both polynomials from the Hall inner product on all eleven partitions of six before specialization to three variables. Numerical linear programming was used only during discovery and is not a proof premise.
 
 
-The [Jack semiring proof](../results/chen-khare-sahi-jack/PROOF.md) uses the column-Schur coefficient. One exact checker constructs both Jack polynomials by their differential equation. The other constructs them from the Jack inner product and checks a second separator on all 77 degree-five products. Both use the Python standard library. [Review and expected values](../results/chen-khare-sahi-jack/REVIEW.md)
+The [Jack semiring proof](../results/chen-khare-sahi-jack/PROOF.md) uses the column-Schur coefficient. One exact checker constructs both Jack polynomials by their differential equation. The other constructs them from the Jack inner product and checks a second separator on all 77 degree-five products. Both use the Python standard library. The formal counterexample also replays in the pinned Lean kernel. Its rational certificates cover all nineteen source partitions through degree five. [Written review](../results/chen-khare-sahi-jack/REVIEW.md) · [Lean replay and exact scope](../results/chen-khare-sahi-jack/SOURCE_BRIDGE.md)
 
 ```bash
 python3 results/chen-khare-sahi-jack/verify.py
 python3 results/chen-khare-sahi-jack/independent_gram_check.py
+python3 results/chen-khare-sahi-jack/lean_certificate.py
 ```
 
 The [Ferreira–Simon beta-prime proof](../results/ferreira-simon-beta-prime/PROOF.md) is a complete analytic Mellin-transform argument for the full parameter range. Its [two](../results/ferreira-simon-beta-prime/ALGEBRA_REVIEW.md) [independent reviews](../results/ferreira-simon-beta-prime/ROOT_REVIEW.md) check the normalization, domains, positive-series interchanges, and uniqueness step. The standard-library script checks 18 exact identities in formal parameters; these are supplementary algebra checks, not a finite-parameter proof.

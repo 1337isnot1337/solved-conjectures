@@ -1570,6 +1570,20 @@ modules=(
   Conjectures.CardonZeroSectorAnalysis
   Conjectures.CardonZeroSectorSmallDamping
   Conjectures.ChappelonRamirezStamateLeafType
+  Conjectures.ChenKhareSahiJackSchur
+  Conjectures.ChenKhareSahiJackMonomials
+  Conjectures.ChenKhareSahiJackFamily
+  Conjectures.ChenKhareSahiJackUnique
+  Conjectures.ChenKhareSahiJackCertificate
+  Conjectures.ChenKhareSahiJackTheorem
+  Conjectures.ChenKhareSahiJackSource
+  Conjectures.ChenKhareSahiJackSourceData
+  Conjectures.ChenKhareSahiJackSourceFamily
+  Conjectures.ChenKhareSahiJackSourceSamples
+  Conjectures.ChenKhareSahiJackSourceBasis
+  Conjectures.ChenKhareSahiJackSourceWitness
+  Conjectures.ChenKhareSahiJackSourceSemiring
+  Conjectures.ChenKhareSahiJackSourceTheorem
   Conjectures.ChenKhareSahiOrthogonalityData
   Conjectures.ChenKhareSahiOrthogonalityTransition
   Conjectures.ChenKhareSahiOrthogonalityGram
