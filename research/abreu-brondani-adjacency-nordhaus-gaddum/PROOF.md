@@ -34,7 +34,7 @@ The Seidel matrix of a threshold graph of order at least two has no eigenvalues 
 Let $`\mu_1\ge\cdots\ge\mu_n`$ be the eigenvalues of $`T`$. We have $`\mathop{\mathrm{tr}}(T^2)=n(n-1)`$. If at least three eigenvalues have absolute value different from one, some middle eigenvalue has absolute value at least $`\sqrt2`$ by the cited theorem. As all the other middle squares are at least one, their sum is at least $`n-1`$. Consequently
 
 ```math
- s(T)^2\le2(\mu_1^2+\mu_n^2)\le2(n-1)^2<M_n.
+ s(T)^2\le2(\mu_1^2+\mu_n^2)\le2(n-1)^2\lt M_n.
 ```
 
 Indeed the final difference is two at even orders and one at odd orders. It remains to consider threshold completions with at most two nonunit eigenvalues. Haemers and Topcu’s Theorem 3.2 classifies graphs whose Seidel matrices have all but at most two eigenvalues in $`[-1,1]`$. Up to switching and complementation they are a clique and isolated vertices. This puts $`T`$ in the form
