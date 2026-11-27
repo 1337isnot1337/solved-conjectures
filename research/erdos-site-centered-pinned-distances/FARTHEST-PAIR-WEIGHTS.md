@@ -38,7 +38,7 @@ There exists an absolutely continuous planar site probability $`\mu`$ on the clo
 **Site measure.** The direction is uniform and independent of the radius. Put half the probability uniformly by area on the disk of radius $`1/2`$. On radii above $`1/2`$, prescribe the *unconditional* mass at depth $`1-|y|\le s`$ by
 
 ```math
- F(s)=\frac{1}{2(1+\log(1/(2s)))}\qquad(0<s\le1/2).
+ F(s)=\frac{1}{2(1+\log(1/(2s)))}\qquad(0\lt s\le1/2).
 ```
 
 This runs from zero to one half and is absolutely continuous for positive depth. Extend $`F`$ by the actual depth distribution of the inner half. The depth rank $`u(y)=F(1-|y|)`$ is uniform on the unit interval. Every interior point has neighborhoods of positive mass and the boundary circle has measure zero. The three-neighborhood argument therefore gives vanishing expected sample hull fraction.
@@ -79,7 +79,7 @@ Let $`\mu`$ be uniform area on the unit square. For $`y=(y_1,y_2)`$ set $`s(y)=(
  w(y,z)=1/\max(U(y),U(z)).
 ```
 
-Its value at the null pair of zero ranks can be set to zero. For $`t\ge1`$, the independent pair probability of $`w>t`$ is exactly $`t^{-2}`$. Its integral is two and its strong moment of order $`p`$ equals $`2/(2-p)`$ for $`0<p<2`$. If $`B_0`$ is a corner triangle $`s(y)\le\delta`$, of area $`b=\delta^2/2`$ for $`0\le\delta\le1`$, direct integration of the two uniform ranks gives
+Its value at the null pair of zero ranks can be set to zero. For $`t\ge1`$, the independent pair probability of $`w>t`$ is exactly $`t^{-2}`$. Its integral is two and its strong moment of order $`p`$ equals $`2/(2-p)`$ for $`0\lt p<2`$. If $`B_0`$ is a corner triangle $`s(y)\le\delta`$, of area $`b=\delta^2/2`$ for $`0\le\delta\le1`$, direct integration of the two uniform ranks gives
 
 ```math
  \int_{B_0^2}w\,d(\mu\otimes\mu)=2b.
@@ -103,7 +103,7 @@ The expected sample hull fraction for square area tends to zero, by the positive
 
 ## Both single-site marginals can be exactly uniform
 
-There is also a symmetric probability coupling with both one-site marginals exactly $`\mu`$ exhibiting the same obstruction. Partition the positive ranks into $`I_j=(2^{-j-1},2^{-j}]`$ for $`j\ge0`$. On $`I_j\times I_j`$ set $`w_0=2^{j+1}`$ and set it to zero elsewhere. Each row integrates to one and symmetry gives the same for the columns. Its $`p`$th moment is $`\sum_{j\ge0}2^{-(2-p)(j+1)}`$, and its tail areas form a geometric series of order $`t^{-2}`$ at every $`t\ge1`$. In particular its single-site marginals have bounded density and its pair law is uniformly integrable. For any $`0<b\le1`$, the rank interval $`(0,b]`$ contains a union of whole dyadic blocks of total length at least $`b/2`$. Thus its square has joint mass at least $`b/2`$. In the preceding farthest calculation one obtains the lower bound $`2^{-1/3}/(3200m)`$ with these exactly uniform marginals.
+There is also a symmetric probability coupling with both one-site marginals exactly $`\mu`$ exhibiting the same obstruction. Partition the positive ranks into $`I_j=(2^{-j-1},2^{-j}]`$ for $`j\ge0`$. On $`I_j\times I_j`$ set $`w_0=2^{j+1}`$ and set it to zero elsewhere. Each row integrates to one and symmetry gives the same for the columns. Its $`p`$th moment is $`\sum_{j\ge0}2^{-(2-p)(j+1)}`$, and its tail areas form a geometric series of order $`t^{-2}`$ at every $`t\ge1`$. In particular its single-site marginals have bounded density and its pair law is uniformly integrable. For any $`0\lt b\le1`$, the rank interval $`(0,b]`$ contains a union of whole dyadic blocks of total length at least $`b/2`$. Thus its square has joint mass at least $`b/2`$. In the preceding farthest calculation one obtains the lower bound $`2^{-1/3}/(3200m)`$ with these exactly uniform marginals.
 
 For this single fixed corner, strong square integrability would preclude a fixed positive multiple of $`b`$ as $`b\downarrow0`$. Cauchy–Schwarz gives $`\int_{B_0^2}w\le b\lVert w\mathbf1_{B_0^2}\rVert_2=o(b)`$. This statement concerns just the single corner contribution; it supplies no bound uniform over all random cells or an actual moment estimate for Euclidean trapezoids.
 
