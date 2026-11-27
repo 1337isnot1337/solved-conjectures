@@ -61,6 +61,9 @@ jobs:
           python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
           python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
 
+      - name: Check normalized adjacency estimates and complementary focus spectra
+        run: python3 results/normalized-nordhaus-gaddum/verify.py
+
       - name: Check the planar subtraction game
         run: python3 results/planar-subtraction-games/check_planar_game.py
 
