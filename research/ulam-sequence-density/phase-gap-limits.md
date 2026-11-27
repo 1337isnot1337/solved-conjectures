@@ -82,6 +82,75 @@ contradiction. The proof at the upper endpoint uses target phases
 approaching $1/3$ from above. This criterion gives no bound on gaps
 within the limiting words.
 
+## Phases at the start of a long gap
+
+Suppose the outliers below $1/3$ are infinite. Under approximate
+confinement, all sufficiently late Ulam terms with phase sufficiently
+close to $1/3$ have a successor at bounded distance. The reflected
+statement holds near $2/3$ if the outliers above $2/3$ are infinite.
+
+For the lower endpoint, let $D_+$ be the largest exterior defect above
+$2/3$, or zero if there are no such outliers. Confinement gives
+$`D_+<1/3`$. Among the lower outliers beyond a large cutoff choose a
+term $s$ of maximal defect $`d=1/3-\phi(s)<1/3-D_+`$. Its defect
+strictly exceeds the defect of every later lower outlier. If a term
+$v$ has phase near $1/3$ and no successor through $v+s$, consider
+the target $v+s$. Its limiting phase as $\phi(v)\to1/3$ is
+$`y=2/3-d`$, strictly inside the band.
+
+All representations of the target must use a summand at most a fixed
+$K\ge s$, since two sufficiently late summands cannot hit a neighborhood
+of $y$. A summand below $s$ would put its partner inside the gap. For
+any of the finitely many candidate summands $p>s$ through $K$,
+the phase $`y-\phi(p)`$ lies outside the closed band. An interior
+shift cannot reach $y$ from the band. A lower outlier $p>s$ has
+defect less than $d$, so the difference is below $1/3$. For an upper
+outlier the difference modulo one is above $2/3$ by $`d+D_+<1/3`$.
+These exclusions have strict margins. For large $v$ with phase close
+enough to $1/3$, they apply to the partners by confinement. The pair
+$`v+s`$ with summands $v$ and $s$ is therefore unique and forces a
+successor. This proves the first statement. Reflecting the phases
+proves the second.
+
+If both outlier sides are infinite, the left endpoints of sufficiently
+large gaps stay a fixed phase distance inside the band. Their right
+endpoints approach the boundary by the earlier two-parent argument.
+Subtracting the two phases shows that every sufficiently large gap
+length has phase a fixed positive distance outside the band. In
+particular, a sufficiently large gap length cannot itself be a
+Ulam number. The same conclusion holds if the two maximal exterior
+defects sum to less than $1/3$ and there is an outlier on each side.
+In that case one can take the corresponding maximal-defect outlier
+in each of the preceding proofs.
+
+Infinitely many lower outliers give a stronger successor statement.
+For every fixed $m$ there is a fixed window length such that all
+sufficiently late selected phases close enough to $1/3$ have at least
+$m$ selected successors in that window. To prove it, take any centered
+membership limit at the lower endpoint with a selected central site.
+It has zeros outside the closed band and obeys the finite-shift rule
+at each interior phase. Suppose it has only finitely many positive
+selected offsets. Choose arbitrarily large lower outliers $s$ that
+have maximal defect among all outliers on that side at or after $s$.
+Their defects tend to zero. At offset $s$ the selected central site
+gives a representation. No shift larger than $s$ is eligible by the
+phase exclusions above. Any shift $r<s$ would use one of the finitely
+many positive selected offsets $`a=s-r`$. The phase at that offset is
+strictly inside the band. To reach $`2/3-d_s`$, the shift $r$ would need
+defect at least the positive distance from that phase to $1/3$. Since
+$`r=s-a\to\infty`$ for each fixed $a$, this contradicts confinement.
+Thus the limit word selects arbitrarily large such offsets $s$.
+Compactness proves the claimed uniform statement. Phase reflection
+gives the upper-endpoint version.
+
+If both sides are infinite, the smaller parent $p$ of a long gap
+endpoint at length $g$ satisfies $`p-g\to\infty`$ as $g$ grows.
+Its larger parent $q$ is close in phase to one of the endpoints.
+For each fixed $m$ the result above gives $m$ successors of $q$
+in bounded time. If $g$ exceeds that time, all these successors
+are at or before the previous Ulam term $`u-g`$. Hence
+$`p-g=u-g-q\ge m`$.
+
 ## Atoms in the phase distribution among selected terms
 
 Under the same approximate confinement, any atom in a subsequential
@@ -270,10 +339,10 @@ interval is wholly inside the computed prefix.
 | 500 | 67 | 37/530 | 432,151,627 |
 | 600 | 8 | 84/1,083 | 966,291,200 |
 
-An all-scale extension of the row with $L=300$ and $c=1/21$ would
-give lower density at least $1/1026$. The larger-gap tests currently
-have only finitely many instances. After producing the checked
-packed prefix, run the [gap replay](gap_response.cpp).
+The row with $L=300$ and $c=1/21$ fails in the
+[longer audit](long-prefix-audit.md). The weighted criterion allows
+these individual failures. After producing the checked packed prefix,
+run the [gap replay](gap_response.cpp).
 
 ```sh
 c++ -std=c++20 -O3 "$repo/research/ulam-sequence-density/gap_response.cpp" -o ulam-gap-response

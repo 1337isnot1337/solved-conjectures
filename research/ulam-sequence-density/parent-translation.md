@@ -10,8 +10,9 @@ write $`A(x)=|U\cap[1,x]|`$ and define the deficit
 A related proposed estimate is recorded in the
 [parent-translation route](https://www.proofatlas.ai/collaboration/ulam-sequence-density/).
 The factor 2 with smaller-parent cutoff 4096 fails at genuine pairs.
-The same comparison argument applies to estimates with a larger
-cutoff or constant after checking an appropriate finite base.
+The [longer audit](long-prefix-audit.md) also refutes factor 2 at
+cutoff 8192. The same comparison argument applies to estimates with a
+larger cutoff or constant after checking an appropriate finite base.
 
 ## Counterexamples through one billion
 
@@ -34,11 +35,11 @@ ratio is $`179/\sqrt{9193}`$ at target 412,934,115, below 2.
 
 ## The comparison argument
 
-**Proposition.** Assume $`\Delta(p,q)\le2\sqrt p`$ for every actual
+**Proposition.** Assume $`\Delta(p,q)\le3\sqrt p`$ for every actual
 parent pair with $`p\ge8192`$. Then the lower natural density of $U$
 is at least $1/10000$.
 
-Set $`L=8192`$, $`T=(10L)^2`$, and $`F(x)=x/10000+(7/2)\sqrt x`$.
+Set $`L=8192`$, $`T=(20L)^2`$, and $`F(x)=x/10000+(21/4)\sqrt x`$.
 The exact [phase probe](phase_probe.cpp) checks $`A(x)\ge x/15`$ for
 all integers from $L$ through $10^8$, giving $`A(x)\ge F(x)`$
 there. It counts 7,399,353 terms through $10^8$, which exceeds
@@ -49,18 +50,18 @@ Induct on accepted terms $n>T+L$. When $`p\ge L`$, both parents
 satisfy the induction inequality and
 
 ```math
-A(n)\ge F(p)+F(q)-2\sqrt p\ge F(n).
+A(n)\ge F(p)+F(q)-3\sqrt p\ge F(n).
 ```
 
 The last inequality follows from
 $`\sqrt p+\sqrt q-\sqrt{p+q}\ge(2-\sqrt2)\sqrt p`$ and
-$`(7/2)(2-\sqrt2)>2`$. When $p<L$, the larger parent satisfies
+$`(21/4)(2-\sqrt2)>3`$. When $p<L$, the larger parent satisfies
 $q>T$ and $`A(n)\ge A(q)+1`$. The increase of the comparison
 function is at most
 
 ```math
-F(q+p)-F(q)\le p/10000+\frac{7p}{4\sqrt q}
-\le L/10000+7/40<1.
+F(q+p)-F(q)\le p/10000+\frac{21p}{8\sqrt q}
+\le L/10000+21/160<1.
 ```
 
 This gives $`A(n)\ge F(n)`$ at every accepted term from $L$ onward.
@@ -127,7 +128,7 @@ because it is the largest sum of distinct members. All selected
 terms in this finite word therefore have their required unique
 representations. Its local increment at $p+q$ is one, so the
 deficit is $`A(p)-1`$, violating the proposed bound whenever
-$`A(p)>1+2\sqrt p`$. The omitted compulsory terms before $p+q$
+$`A(p)>1+3\sqrt p`$. The omitted compulsory terms before $p+q$
 are the additional constraint. An all-scale bound on the parent
 deficit and a convergence argument for the actual sequence remain
 open.

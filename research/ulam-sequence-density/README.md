@@ -132,9 +132,10 @@ which the finite set of small shifts fails to decide the greedy recurrence.
 
 [Parent translation](parent-translation.md) gives a conditional lower
 density bound using only the counting deficits at genuine parent pairs
-with smaller summand at least 8,192. Two exact replays through one
-billion find two counterexamples to the earlier proposal with cutoff
-4,096, both at smaller summand 4,118.
+with smaller summand at least 8,192. The
+[ten-billion audit](long-prefix-audit.md) refutes the earlier factor-2
+proposal at cutoffs 4,096 and 8,192. It also measures the weighted
+post-gap response and checks for adjacent missing representations.
 
 [Phase confinement](phase-confinement.md) proves positive natural
 density under exact eventual confinement to a sum-free phase band with
@@ -153,6 +154,11 @@ long gaps.
 [Relative prediction errors](phase-relative-errors.md) gives conditions
 under which the short-pair decisions on genuine histories disagree on
 a vanishing fraction relative to the selected count as the cutoff grows.
+[Sparse rule errors](relative-rule-obstruction.md) gives zero-density
+and oscillating extensions with only logarithmically many errors in
+the full decision law. A separate construction keeps every selected
+term uniquely represented and omits only a vanishing fraction of
+compulsory singletons relative to its term count.
 
 [Boundary rules](phase-boundary-rules.md) locates the remaining long-pair
 counts inside the phase band. Its finite certificate verifies a tail
