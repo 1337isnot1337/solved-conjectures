@@ -26,6 +26,11 @@ jobs:
         run: python3 results/mobile-general-position-complexity/verify.py
       - name: Check misère domination by independent exact minimax
         run: python3 results/misere-domination-game/verify.py
+      - name: Check the 0.3312 infinite-quotient transfer certificate
+        run: |
+          python3 results/plambeck-siegel-03312/verify.py
+          c++ -O2 -std=c++17 results/plambeck-siegel-03312/check_independent.cpp -o /tmp/check-03312
+          /tmp/check-03312
       - name: Check both Builder–Blocker reductions by exact metric minimax
         run: python3 results/builder-blocker-general-position-complexity/verify.py
       - name: Check exact fractional square-grid cover certificates

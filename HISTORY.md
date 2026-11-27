@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Plambeck–Siegel infinite quotient conjecture for 0.3312
+
+Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).
+
 ## 2026-11-26 — Complete Lean proof of the Asgarli–Ghioca–Yip pencil bounds
 
 The [Lean proof](lean/Conjectures/AsgarliGhiocaYipComplete.lean) proves the uniform ordering estimate and both quantitative conclusions without a point-count hypothesis. [Scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
