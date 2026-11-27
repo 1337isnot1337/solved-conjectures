@@ -4,6 +4,14 @@
 
 A new uniform reduction controls generic histogram reconstruction with bounded maximum source degree and a bounded extra-leaf allowance, independent of the number of high-degree vertices. For one high hub of arbitrary degree, a rival cannot have exactly one extra leaf and must have a surplus growing with that degree. The proof and exact profile checks supplement the unranked Stanley research entry. [Theorem and quantitative bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
 
+## 2026-11-27 — Six-point triple density and the two asymptotic constants
+
+Cinna Davis characterizes attainment of the Erdős–Galvin–Hajnal finite density bound on the first uncountable ordinal by a two-bounded pair-rainbow relation. The normalized pointwise density tends to one quarter or one half and both outcomes are relatively consistent. The reviewed higher-host transfer gives conditional limits at successors of infinite regular cardinals, including the higher parameter in the original paper. This supplements the link-path entry. [Proofs](results/erdos-galvin-hajnal-link-path-partition/density/) · [Source and review](results/erdos-galvin-hajnal-link-path-partition/density/DENSITY-REVIEW.md) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/1044)
+
+## 2026-11-27 — Erdős–Galvin–Hajnal’s repeated-pair partition problem
+
+Published Cinna Davis’s relative independence proof for Problem 8/D of the 1975 paper. The same forcing model gives negative answers for both the repeated-pair and Pasch arrows while preserving CH over a CH ground model. The positive consistency direction for Pasch has a separate [open issue](https://github.com/1337isnot1337/solved-conjectures/issues/1052). [Proof](results/erdos-galvin-hajnal-repeated-pair-partition/PROOF.md) · [Negative model](results/erdos-galvin-hajnal-repeated-pair-partition/NEGATIVE-MODEL.md) · [Review](results/erdos-galvin-hajnal-repeated-pair-partition/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1048)
+
 ## 2026-11-27 — Erdős–Galvin–Hajnal’s link-path partition problem
 
 Cinna Davis answers the 1975 Problem 8/E by encoding a triple system that avoids the three-edge tight path using a bounded coloring of pairs. Together with Todorčević’s model and the original authors’ CH example, the encoding gives relative independence over ZFC. [Proof](results/erdos-galvin-hajnal-link-path-partition/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-link-path-partition/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1045)

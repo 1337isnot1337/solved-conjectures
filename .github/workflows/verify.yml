@@ -59,6 +59,10 @@ jobs:
         run: |
           python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py
           python3 results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py
+          python3 results/erdos-galvin-hajnal-link-path-partition/density/verify_density.py
+
+      - name: Check repeated-pair and Pasch amalgamation configurations
+        run: python3 results/erdos-galvin-hajnal-repeated-pair-partition/verify_amalgamation.py
 
       - name: Check half-overlap hypergraph rectangles and monochromatic witnesses
         run: python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py
