@@ -50,3 +50,10 @@ two obstructions alone characterizes countable chromatic
 number: in particular, a bipartite barricade itself is
 two-colourable. Their theorem is not the proposed reduction
 of the entire barricade-free graph to induced HM-type pieces.
+
+Their regular-cardinal argument also uses a club of closure
+points of an ordinal bound function. Credit that as related
+prior use of the standard closure move. The point here is to
+sort the countable intervals into one-vertex slots, preserve
+chromatic number via that partition, and apply the 1978 GCH
+model theorem to the resulting HM-type induced graphs.
