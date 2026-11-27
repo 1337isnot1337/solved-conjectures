@@ -11,11 +11,8 @@ Here $`N_k`$ is the sum of the largest $`k`$ singular values. The zero pair and 
 
 For $`0\lt t\le1/2`$, the Hermitian matrix $`H_t=X^t+Y^t-I`$ satisfies $`-I\le H_t\le I`$. Expand the error from a left contraction of the comparison matrix:
 ```math
-\begin{aligned}
-C_t-H_t(X+Y)
-={}&X^t(Y^{1-t}-Y)+Y^t(X^{1-t}-X)\\
- &+(I-X^t)X+(I-Y^t)Y.
-\end{aligned}
+C_t-H_t(X+Y)=X^t(Y^{1-t}-Y)+Y^t(X^{1-t}-X)
++(I-X^t)X+(I-Y^t)Y.
 ```
 For $`0\le x\le1`$ and $`r>0`$, the continuously extended quantity $`x^r\lvert\log x\rvert`$ is at most $`1/(e r)`$. Thus $`x(1-x^t)\le t/e`$ by integrating the derivative of $`x^r`$ from $`1`$ to $`1+t`$, and $`x^{1-t}-x\le t/[e(1-t)]`$ by integrating from $`1-t`$ to $`1`$. Functional calculus bounds the operator norm of the error by $`2t/e+2t/[e(1-t)]\le3t`$. The Ky Fan norm of $`H_t(X+Y)`$ is at most that of $`X+Y`$. Also $`C_{1-t}=C_t^*`$, so in every dimension
 ```math
