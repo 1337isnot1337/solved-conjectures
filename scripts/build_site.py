@@ -89,6 +89,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Erdős’s arbitrary-cardinal bipartization conjecture": "erdos-arbitrary-cardinal-bipartization",
     "Chen’s parity-free exact-one-marker conjecture": "chen-parity-free-exact-one-marker",
     "Cameron–Clow’s 2K₂-free path-perfect conjecture": "cameron-clow-twok2-free-path-perfect",
     "Cameron–Clow’s claw-free path-perfect conjecture": "cameron-clow-claw-free-path-perfect",

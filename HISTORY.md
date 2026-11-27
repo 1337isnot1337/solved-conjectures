@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-27: Erdős’s arbitrary-cardinal bipartization conjecture
+
+The [shift graph proof](results/erdos-arbitrary-cardinal-bipartization/) resolves Erdős's arbitrary-cardinal
+construction, keeping the final graph bipartite after edge deletion.
+The auxiliary orientation bounds the number of failures at each shift
+center and works at all finite orders. No Lean verification was
+performed. [Research issue #1015](https://github.com/1337isnot1337/solved-conjectures/issues/1015).
+
+
 ## 2026-11-27 UTC — Chen’s parity-free exact-one-marker conjecture
 
 The [prescribed-pair packing theorem](results/chen-parity-free-exact-one-marker/) resolves the first question of Chen’s Problem 6.5 for arbitrary undirected supply graphs. A controlled grid provides a doubled clique for fully attachable pairs; a residual exchange routes parallel pairs. The proof passed independent mathematical review. Prescribed parity remains open in [#1012](https://github.com/1337isnot1337/solved-conjectures/issues/1012). No Lean verification was performed. [Discovery and review issue #1011](https://github.com/1337isnot1337/solved-conjectures/issues/1011).

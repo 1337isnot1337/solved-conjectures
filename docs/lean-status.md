@@ -1,5 +1,13 @@
 # Lean verification status
 
+## Erdős’s arbitrary-cardinal bipartization conjecture
+
+The full arbitrary-cardinal construction has a written proof and
+finite checks of the shift orientation and the all-orders arguments.
+No formalization is registered.
+[Proof, review and checks](../results/erdos-arbitrary-cardinal-bipartization/).
+
+
 ## Tree reconstruction after long subdivisions
 
 The independent hub subdivision, balanced-edge, leaf-centroid, earlier subdivision and repeated-branch theorems have written proofs and executable finite checks. Their Lean status is unformalized. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
@@ -286,6 +294,7 @@ proofs are documented separately in the catalogue and result package.
 | Erdős–Hajnal’s ordinal-square chromatic problem | Not formalized | [Written proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) gives the exact order-type transfer in ZFC and uses two cited consistency theorems. The [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md) assumes a cardinal-local witness. Existence in ZFC for the smaller chromatic number remains open. |
 | Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture | Not formalized | [Full proof](../results/barrett-evans-hall-kempton-se/PROOF.md) uses exact finite certificates for small simple endpoint graphs and analytic reduction to arbitrary real weights. |
 | Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum | Not formalized | [Computer-assisted proof](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) with exact finite certificates and an all-orders equality classification throughout the connected complementary class. The [sharp-maximum corollary](../results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md) has a written deduction and exact small-order checks. [Independent review](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md). |
+| Erdős’s arbitrary-cardinal bipartization conjecture | Not formalized | [Written proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md), [review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md), and [finite regression checks](../results/erdos-arbitrary-cardinal-bipartization/). |
 | Chen’s parity-free exact-one-marker conjecture | Not formalized | [Written all-graphs proof](../results/chen-parity-free-exact-one-marker/PROOF.md), [independent mathematical review](../results/chen-parity-free-exact-one-marker/REVIEW.md) and [residual-flow replay](../results/chen-parity-free-exact-one-marker/verify.py). |
 | Cameron–Clow’s claw-free path-perfect conjecture | Not formalized | [Three-branch edge-dominating-trail obstruction](../results/cameron-clow-claw-free-path-perfect/PROOF.md); [explicit witness and edge-deletion colorings](../results/cameron-clow-claw-free-path-perfect/verify.py). |
 | Cameron–Clow’s 2K₂-free path-perfect conjecture | Not formalized | [Two-clique transversal obstruction](../results/cameron-clow-twok2-free-path-perfect/PROOF.md); [explicit witnesses and vertex-deletion colorings](../results/cameron-clow-twok2-free-path-perfect/verify.py). |

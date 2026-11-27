@@ -35,6 +35,19 @@ It checks over two million tree-cover intersections and all rectangle
 partitions of the specified small matrices. These checks are supplementary
 to the written general proof.
 
+## Erdős’s arbitrary-cardinal bipartization conjecture
+
+Read the [proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md) and the
+[independent mathematical review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md).
+Run the two Python standard-library replays from the repository root:
+
+    python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_orientation.py
+    python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_bridges.py
+
+They check the finite orientation recurrence, the sliding-window map
+and the odd-period queue identities, not the infinite cardinal argument.
+
+
 ## Chen’s parity-free exact-one-marker conjecture
 
 Read the [proof](../results/chen-parity-free-exact-one-marker/PROOF.md) and [independent review](../results/chen-parity-free-exact-one-marker/REVIEW.md).
