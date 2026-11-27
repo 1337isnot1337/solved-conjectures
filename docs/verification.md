@@ -20,6 +20,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Liang’s slice-period conjecture
+
+Run `python3 results/liang-slice-period/check.py` for the exact recurrence on 684 transfer representatives. The [audit](../results/liang-slice-period/AUDIT.md) gives instructions for the independent labeled C++ evaluator.
+
 ## Liang’s 0.3123 slice problem
 
 Run `python3 results/liang-03123-slice/verify.py` for the exact recurrence closure and 169 bulk cases. The [audit](../results/liang-03123-slice/AUDIT.md) gives instructions for the independent C++ verifier.

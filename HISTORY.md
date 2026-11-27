@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Liang’s slice-period conjecture
+
+Refuted Liang’s Conjecture 4.3 with arbitrarily large examples in 0.3102 and identified the actual least periods for the counterexample slice. [Proof](results/liang-slice-period/PROOF.md) · [Audit](results/liang-slice-period/AUDIT.md).
+
 ## 2026-11-27 — Chow’s weak interlacing and its strict strengthening
 
 Removed Chow’s weak consecutive-interlacing question from the ranked discovery table. Savage and Visontai’s published row theorem and first-member summation argument already imply it, with a direct initial check. The unranked entry preserves Cinna Davis and GPT-6.2 Astra’s strict result from rank three, the alternative analytic proof, both finite checkers and the full unweighted Lean receipt. The positive-parameter weighted extension remains a written research note. [Proof and verification](results/chow-conjecture/) · [Sources and independent priority review](results/chow-conjecture/NOVELTY.md)

@@ -78,6 +78,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Liang’s slice-period conjecture": "liang-slice-period",
     "Liang’s 0.3123 slice problem": "liang-03123-slice",
     "Plambeck–Siegel infinite quotient conjecture for 0.3312": "plambeck-siegel-03312",
     "Misère Domination Game": "misere-domination-game",

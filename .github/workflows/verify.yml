@@ -31,6 +31,11 @@ jobs:
           python3 results/plambeck-siegel-03312/verify.py
           c++ -O2 -std=c++17 results/plambeck-siegel-03312/check_independent.cpp -o /tmp/check-03312
           /tmp/check-03312
+      - name: Check Liang’s slice-period counterfamily
+        run: |
+          python3 results/liang-slice-period/check.py
+          c++ -O2 -std=c++17 results/liang-slice-period/check_independent.cpp -o /tmp/check-03102
+          /tmp/check-03102
       - name: Check the 0.3123 slice transfer certificate
         run: |
           python3 results/liang-03123-slice/verify.py
