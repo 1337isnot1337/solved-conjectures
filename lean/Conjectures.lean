@@ -735,6 +735,12 @@ import Conjectures.ChenKhareSahiParameter
 import Conjectures.ChenKhareSahiUnique
 import Conjectures.ChenKhareSahiShiftUnique
 import Conjectures.ChenKhareSahiCovers
+import Conjectures.ChenKhareSahiJackSchur
+import Conjectures.ChenKhareSahiJackMonomials
+import Conjectures.ChenKhareSahiJackFamily
+import Conjectures.ChenKhareSahiJackUnique
+import Conjectures.ChenKhareSahiJackCertificate
+import Conjectures.ChenKhareSahiJackTheorem
 import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets
 import Conjectures.LopezPousoSegura

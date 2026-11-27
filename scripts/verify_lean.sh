@@ -910,6 +910,12 @@ modules=(
   Conjectures.ChenKhareSahiUnique
   Conjectures.ChenKhareSahiShiftUnique
   Conjectures.ChenKhareSahiCovers
+  Conjectures.ChenKhareSahiJackSchur
+  Conjectures.ChenKhareSahiJackMonomials
+  Conjectures.ChenKhareSahiJackFamily
+  Conjectures.ChenKhareSahiJackUnique
+  Conjectures.ChenKhareSahiJackCertificate
+  Conjectures.ChenKhareSahiJackTheorem
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
   Conjectures.BrownMolRootTargets
