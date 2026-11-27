@@ -121,6 +121,8 @@ Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
 
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py` to check signed path weights and indecomposable edge lengths on all 66 reduced topologies through order twelve, 320 rational quotient tests and 18 cases attaining the four-label support bound. The [proof](research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) gives the arbitrary-degree theorem. [Review and independent replay](research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)
+
 The [marked-tree checker](research-results/stanley-tree-subdivisions/verify_marked_quartic.py) constructs 720 pairs with equal signed root profiles and tests all three distinguishing arguments. The [pendant-coordinate checker](research-results/stanley-tree-subdivisions/verify_quartic_rows.py) checks 56 identification patterns and 24,000 three-hub metrics. [Review and instructions](research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
 
 The [fixed-excess checker](research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py) tests signed deletion identities and recovers the point of reattachment on each of 269 trivalent pendant deletions among the 108 reduced shapes through order 13. [Independent review](research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
