@@ -2,6 +2,8 @@
 
 ## Independent subdivisions at a branch vertex
 
+The two-hub results allow arbitrary independent subdivision lengths when terminal shape is determined by its leaf count and the stated leaf-count bound holds. A second theorem covers a dominant arm with arbitrary rooted ends. [Free lengths](TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](DOMINANT-ARM.md)
+
 A two-hub reconstruction recovers the exterior arms, their division between the hubs and the joining path for arbitrary fixed caps under an explicit condition on the exterior orders. The central length is unrestricted. [Proof](TWO-HUB-SUBDIVISIONS.md) · [Review](TWO-HUB-SUBDIVISIONS-REVIEW.md) · [Checks](verify_two_hub_subdivisions.py)
 
 Sufficiently long independent subdivisions of all edges at any fixed branch vertex give identifiability among all trees. [Proof](HUB-SUBDIVISIONS.md) · [Review](HUB-SUBDIVISIONS-REVIEW.md) · [Structural check](verify_hub_fringe_recognition.py) · [Cap assignment](verify_hub_assignment.py)
