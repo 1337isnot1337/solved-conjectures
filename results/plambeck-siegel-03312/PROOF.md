@@ -6,14 +6,7 @@ The misère quotient of the quaternary game 0.3312 is infinite. In fact, infinit
 
 A move on a heap of size $`n`$ removes the whole heap if $`n\in\{1,2,3\}`$, or subtracts one of $`1,2,4`$ while leaving a positive heap. There is no splitting. The last player to move loses. Write $`\mathcal P`$ if the player to move loses under optimal play and $`\mathcal N`$ otherwise. The empty position is $`\mathcal N`$; a nonempty position is $`\mathcal P`$ if and only if every option is $`\mathcal N`$. Each move reduces the total size, so these rules determine the outcome uniquely.
 
-Pad positions of at most three heaps with zeros and write them in nondecreasing order as $`(a,a+d,a+d+e)`$ for $`a,d,e\ge0`$. Call $`(a,d,e)`$ the gap coordinates. For threshold $`b`$ and period $`p>0`$ define
-```math
- \rho_{b,p}(x)=
- \begin{cases}
- x,&x\lt b,\\
- b+((x-b)\bmod p),&x\ge b.
- \end{cases}
-```
+Pad positions of at most three heaps with zeros and write them in nondecreasing order as $`(a,a+d,a+d+e)`$ for $`a,d,e\ge0`$. Call $`(a,d,e)`$ the gap coordinates. For threshold $`b`$ and positive period $`p`$, write $`\rho_{b,p}(x)=x`$ below $`b`$ and $`\rho_{b,p}(x)=b+((x-b)\bmod p)`$ at or above $`b`$.
 Let $`\rho`$ act separately on the three coordinates with thresholds $`(19,15,8)`$ and respective periods $`(6,3,3)`$. Let $`T(a,d,e)`$ be the result of direct minimax on the triple with gap coordinates $`\rho(a,d,e)`$. We show that $`T`$ is the actual outcome for all gap coordinates.
 
 ## Why a finite check suffices
