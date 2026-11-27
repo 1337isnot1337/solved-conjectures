@@ -35,6 +35,12 @@ It checks over two million tree-cover intersections and all rectangle
 partitions of the specified small matrices. These checks are supplementary
 to the written general proof.
 
+## Cameron–Clow’s co-diamond path-perfect conjecture
+
+Read the [critical-graph and connectivity proof](../results/cameron-clow-co-diamond-path-perfect/PROOF.md), [constructive Hall proof](../results/cameron-clow-co-diamond-path-perfect/HALL-CONSTRUCTION.md), and [independent review](../results/cameron-clow-co-diamond-path-perfect/REVIEW.md).
+Run `python3 results/cameron-clow-co-diamond-path-perfect/verify.py` from the repository root.
+It checks every admissible four-path endpoint pattern and 3,000 larger promised near-join Hamilton paths, plus 24,832 checks around the Hamilton-cycle extension. The general proof does not depend on the finite checks.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.

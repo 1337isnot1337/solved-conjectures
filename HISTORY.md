@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Cameron–Clow’s co-diamond path-perfect conjecture
+
+The [co-diamond path-perfect theorem](results/cameron-clow-co-diamond-path-perfect/) resolves the co-diamond-free assertion of Cameron and Clow at every graph order and chromatic number. It uses vertex-criticality and a Hall matching for labeled path gaps. The separate two-disjoint-edges assertion and unrestricted odd-cycle problem are not claimed. No Lean formalization was used. [Discovery and review issue #1002](https://github.com/1337isnot1337/solved-conjectures/issues/1002).
+
 ## 2026-11-27 UTC — Gajser–Mohar’s polynomial normal-cover conjecture
 
 The [normal-cover polynomial theorem](results/gajser-mohar-polynomial-normal-cover/) answers the fixed-clique-bound question from the end of §4 of the original paper, with sharp growth exponent for every bound. The two written upper proofs use induced normal subcovers and disjoint events in a random permutation. A prefix-tree construction gives the matching exponent. The publication does not address the exact two-parameter extremal function. No Lean formalization was used. [Discovery and review issue #989](https://github.com/1337isnot1337/solved-conjectures/issues/989).

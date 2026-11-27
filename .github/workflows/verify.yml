@@ -36,6 +36,9 @@ jobs:
       - name: Check normal-cover trees and small rectangle partitions
         run: python3 results/gajser-mohar-polynomial-normal-cover/verify.py
 
+      - name: Check co-diamond path stitching and endpoint patterns
+        run: python3 results/cameron-clow-co-diamond-path-perfect/verify.py
+
       - name: Check both graphical dist orientation counts
         run: |
           python3 results/alexandersson-graphical-dist/check.py
