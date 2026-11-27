@@ -183,7 +183,7 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 
 ## Recognizing trees after one long subdivision
 
-The ordinary chromatic symmetric function distinguishes any tree after sufficiently many subdivisions of one chosen edge. The bound depends only on the larger endpoint component. Companion results recognize families with repeated centroid branches. Stanley’s question for all trees remains open. [Theorems and review](docs/research-results/stanley-tree-subdivisions/README.md)
+The ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single tree edge. A balanced-edge argument gives a bound in terms of both end orders. Other theorems recognize trees with enough leaves at their centroid or with specified repeated branches. Stanley’s question for all trees remains open. [Theorems and reviews](docs/research-results/stanley-tree-subdivisions/README.md)
 
 ## Current research
 

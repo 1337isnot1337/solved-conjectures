@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-27 — Balanced-edge and leaf-centroid reconstruction for Stanley’s question
+
+A new identity for the ordinary forest polynomial across any cut improves the previously published long-subdivision threshold. Endpoint components of orders 5 and 8 now require a total of 18 vertices under this sufficient bound. A separate result reconstructs a tree from a unique centroid carrying enough pendant leaves. Both are reviewed partial theorems within the existing unranked entry. [Balanced-edge proof](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid proof](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md)
+
+
 ## 2026-11-27 — Recognizing trees after one long edge subdivision
 
 Codex proved in the WadeDavis research session that the ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single chosen tree edge among all trees. The publication also records the repeated-branch theorems and their exact checks. [Results](docs/research-results/stanley-tree-subdivisions/README.md) · [Review](docs/research-results/stanley-tree-subdivisions/REVIEW.md)

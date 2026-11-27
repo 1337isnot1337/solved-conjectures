@@ -55,7 +55,7 @@ The deep holes of $`A_n`$ are the only Gaussian minimizers at every positive sca
 
 ## Recognizing trees after one long edge subdivision
 
-A sufficient bound for arbitrary rooted end trees follows from a factor of the spanning-forest polynomial that is invariant under adding unary roots. Three or more identical centroid branches and specific two-branch families admit separate reconstruction proofs. [Theorems and ordinary-CSF scope](stanley-tree-subdivisions/README.md) · [Independent subdivision review](stanley-tree-subdivisions/REVIEW.md)
+A spanning-forest identity at an arbitrary cut gives a stronger subdivision bound depending on both endpoint orders. A separate theorem recognizes a unique centroid with at least one fewer pendant leaf than the order of its largest branch. Repeated-branch cases are also covered. [Theorems and ordinary-CSF scope](stanley-tree-subdivisions/README.md) · [Balanced-edge review](stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
 
 ## Prior results and quantitative refinements
 
