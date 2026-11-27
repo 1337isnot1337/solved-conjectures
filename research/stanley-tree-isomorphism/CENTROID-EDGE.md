@@ -2,7 +2,7 @@
 
 Let $`X_T`$ be the ordinary chromatic symmetric function of a finite tree. Two operations on its spanning-forest polynomial give partial answers to Stanley's tree-isomorphism question. The first recovers branches of repeated size using a bound on the number of *distinct rooted shapes* of that size. The second recovers the ordinary forest polynomials of the two halves of a tree when an edge separates it into equal parts and the branches off that edge satisfy a recovery condition. [Stanley, §2](https://sites.math.washington.edu/~billey/classes/Hopf.algebra/bulletins/stanley.1995.pdf) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/315)
 
-**Single-centroid case.** Root an $`n`$-vertex tree at its unique centroid. Let $`s_b`$ count the distinct isomorphism types of rooted branches of order $`b`$. If $`4bs_b\le\lfloor(n-1)/2\rfloor`$ for every occurring size, then $`X_T`$ distinguishes this tree among all trees. At each size one may instead use either of the two extraction conditions in the [earlier centroid theorem](CENTROID.md). In particular, take any rooted tree of order $`b`$ and attach the roots of $`k\ge8`$ disjoint copies to a new vertex. Its ordinary chromatic symmetric function determines the resulting tree among all trees. The common branch can have arbitrary depth and branching.
+**Single-centroid case.** Root an $`n`$-vertex tree at its unique centroid. Let $`s_b`$ count the distinct isomorphism types of rooted branches of order $`b`$. If $`4bs_b\le\lfloor(n-1)/2\rfloor`$ for every occurring size, then $`X_T`$ distinguishes this tree among all trees. At each size one may instead use either of the two extraction conditions in the [earlier centroid theorem](CENTROID.md). A stronger cutoff applies when all branches are isomorphic. Take any rooted tree of order $`b`$ and attach the roots of $`k\ge3`$ disjoint copies to a new vertex. Its ordinary chromatic symmetric function determines the resulting tree among all trees. The common branch can have arbitrary depth and branching.
 
 **Two-centroid case.** Suppose a tree of order $`2h`$ has a centroid edge. Cut that edge, obtaining two halves $`A,B`$, rooted at their former endpoints. Collect all the branches at these two roots together. If each occurring size is recoverable at cutoff $`h-1`$ by one of the three extraction conditions, $`X_T`$ determines both the combined multiset of rooted branches and the unordered pair $`\{X_A,X_B\}`$. If every branch has size strictly less than $`h/2`$ and each half is distinguished among all trees by its own chromatic symmetric function, then $`X_T`$ distinguishes $`T`$ among all trees. Thus a smallest counterexample pair cannot include a tree satisfying the combined extraction conditions and this strict size bound.
 
@@ -33,7 +33,33 @@ For each $`C\in S`$ repeat the moment comparison with $`p_C(z)=\prod_{E\in S\set
 
 The proof gives a uniqueness criterion without requiring the support as additional input. One could enumerate all size-$`b`$ rooted shapes and the nonnegative multiplicities summing to $`m`$, retaining the possibilities consistent with the known moments. The true multiplicities are the unique such possibility whenever the criterion holds. Divide the recovered branch factors out of $`\tau_D F`$ by formal series division and continue with smaller sizes.
 
-For a unique centroid, the terms of $`U_T`$ having a component larger than $`n/2`$ give precisely $`\tau_D P_T`$ after removal of that component variable, with $`D=\lfloor(n-1)/2\rfloor`$. Every such component contains the centroid. The existence of an equal-split edge is itself determined by $`U_T`$, so competitors have the same centroid regime. This proves the single-centroid statement. For $`k`$ copies of one branch, $`D=\lfloor kb/2\rfloor\ge4b`$ and $`s_b=1`$.
+For a unique centroid, the terms of $`U_T`$ having a component larger than $`n/2`$ give precisely $`\tau_D P_T`$ after removal of that component variable, with $`D=\lfloor(n-1)/2\rfloor`$. Every such component contains the centroid. The existence of an equal-split edge is itself determined by $`U_T`$, so competitors have the same centroid regime. This proves the single-centroid statement. The moment bound alone covers at least eight copies of one branch. The next argument reaches three copies.
+
+## Recognizing three or more copies of one rooted branch
+
+Suppose $`k\ge3`$ copies of a rooted tree $`C`$ of order $`b`$ meet a new hub, with one edge from the hub to each root. The hub is the unique centroid of the resulting tree of order $`n=kb+1`$. Any tree with the same $`X_T`$ has order $`n`$ and also a unique centroid by the equal-split test. In each tree the initial truncation through $`D=\lfloor(n-1)/2\rfloor`$ reveals its largest branch size and the multiplicity of that size. Both therefore have maximum size $`b`$ and exactly $`k`$ branches of that size. Those branches account for all $`n-1`$ vertices outside the centroid.
+
+Every connected component larger than $`b`$ contains the centroid, since a connected set avoiding it lies entirely in one branch. Thus in any spanning forest at most one component has order greater than $`b`$. In the known $`U_T`$, select the monomials containing such a part and delete its variable. This gives the entire centroid product $`P_T`$ through weight $`n-b-1=(k-1)b`$. In particular the two branch products agree through weight $`2b`$.
+
+Put $`z=x_b`$. Write the repeated factor as $`z+R`$ and the competing factors as $`z+R_i`$, for $`1\le i\le k`$. Each $`R_i`$ and $`R`$ has constant one, weight degree at most $`b`$, and involves only variables of index smaller than $`b`$. At $`z=0`$, the products therefore give the same logarithm through weight $`2b`$. Their logarithmic derivatives in $`z`$ at zero also agree through weight $`b`$, since taking one derivative costs weight $`b`$.
+
+Set $`d_i=R_i-R`$. If any $`d_i`$ is nonzero, let $`w\ge1`$ be the least weight occurring in any of them, and denote homogeneous weight components by subscripts in brackets. Through weight $`2w\le2b`$ the logarithm identity gives
+
+```math
+0=\sum_i\log(1+d_i/R)
+  =\frac{\sum_i d_i}{R}-\frac{\sum_i d_i^2}{2R^2}
+  \pmod{\text{weight }>2w}.
+```
+
+The sum $`\sum_i d_i`$ has no term of weight below $`2w`$ and its weight-$`2w`$ part is $`\tfrac12\sum_i(d_i)_{[w]}^2`$, since $`R`$ has constant one. This sum of squares of real polynomials is nonzero. As each $`d_i`$ has degree at most $`b`$, this forces $`2w\le b`$. We can now use the logarithmic derivative at that same weight. It gives
+
+```math
+0=\sum_i\left(\frac{1}{R+d_i}-\frac1R\right)
+  =-\frac{\sum_i d_i}{R^2}+\frac{\sum_i d_i^2}{R^3}
+  \pmod{\text{weight }>2w}.
+```
+
+The weight-$`2w`$ terms give $`(\sum_i d_i)_{[2w]}=\sum_i(d_i)_{[w]}^2`$, contradicting the factor of one half above. Hence every $`R_i=R`$. The full branch factors recover the same rooted shape by the earlier factorization, so the competing tree is isomorphic to the original tree. The argument also includes $`b=1`$, where all residues equal one. Recognition of arbitrary mixtures of large centroid branches remains open. [Centroid campaign on #315](https://github.com/1337isnot1337/solved-conjectures/issues/315#issuecomment-7208148563)
 
 ## Recovering both halves from unrooted data
 
@@ -61,4 +87,4 @@ The unrestricted question still includes trees with few large, different branche
 
 ## Reproducible checks
 
-Run `python3 research/stanley-tree-isomorphism/verify_centroid_edge.py` from the repository root. The checker enumerates all 24,426 spanning forests of the 60 balanced joins of unordered pairs of rooted trees of equal size through five vertices per half. It compares the extracted large-component polynomial and the recovered product of the half polynomials against direct forest enumeration. A separate integer moment calculation compares every multiset of eight size-five branches with each of the nine possible single-shape supports. Across 12,870 multisets, only the intended repeated branch agrees in each case. [Checker](verify_centroid_edge.py)
+Run `python3 research/stanley-tree-isomorphism/verify_centroid_edge.py` from the repository root. The checker enumerates all 24,426 spanning forests of the 60 balanced joins of unordered pairs of rooted trees of equal size through five vertices per half. It compares the extracted large-component polynomial and the recovered product of the half polynomials against direct forest enumeration. A separate integer moment calculation compares every multiset of eight size-five branches with each of the nine possible single-shape supports. Across 12,870 multisets, only the intended repeated branch agrees in each case. For three and four copies, the checker compares the multivariate truncations through weight ten for all 165 and 495 multisets of order-five branches, respectively. It also extracts the enlarged truncation directly from forest enumeration on trees with branches of order three. [Checker](verify_centroid_edge.py)
