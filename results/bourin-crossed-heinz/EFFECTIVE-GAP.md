@@ -5,7 +5,7 @@ For an integer $`k\ge1`$ let $`G_k`$ be the supremum, over every finite order at
 g_{k,t}(X,Y)=\frac{N_k(C_t)-N_k(X+Y)}{k},
 \qquad C_t=X^tY^{1-t}+Y^tX^{1-t}.
 ```
-Here $`N_k`$ is the sum of the largest $`k`$ singular values. The zero pair and the operator norm bound on each product give $`0\le G_k\le 2`$. **There is an algorithm that, given $`k`$ and any positive rational accuracy, returns a rational interval of that width or less containing $`G_k`$.** Homogeneity reduces Bourin's Question 4 to positive contractions. The question asks whether $`G_k=0`$ for every $`k`$. The algorithm supplies additive enclosures. Exact vanishing remains open. [Original question](https://arxiv.org/pdf/0805.1954#page=6) · [Finite-dimensional reduction](FINITE-WITNESS.md)
+Here $`N_k`$ is the sum of the largest $`k`$ singular values. The zero pair and the operator norm bound on each product give $`0\le G_k\le 2`$. **There is an algorithm that, given $`k`$ and any positive rational accuracy, returns a rational interval of that width or less containing $`G_k`$.** Bourin's Question 4 uses powers $`p,q\ge0`$. For positive $`p,q`$, set $`X=A^{p+q}`$, $`Y=B^{p+q}`$, and $`t=p/(p+q)`$. Homogeneity then permits a common scaling to contractions. If either exponent is zero, the usual zeroth power is the identity and the two sides agree. The question asks whether $`G_k=0`$ for every $`k`$. The algorithm supplies additive enclosures. Exact vanishing remains open. [Original question](https://arxiv.org/pdf/0805.1954#page=6) · [Finite-dimensional reduction](FINITE-WITNESS.md)
 
 ## A uniform endpoint estimate
 
