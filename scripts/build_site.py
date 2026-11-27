@@ -93,7 +93,7 @@ STATUS_LABEL_SLUGS = {
     "General position number of oriented trees": "general-position-oriented-trees",
     "Builder–Blocker general position complexity conjecture": "builder-blocker-general-position-complexity",
     "Fractional general position conjecture for square grids": "fractional-general-position-square-grids",
-    "Erdős’s pinned-distance conjecture in general position": "erdos-general-position-pinned-distances",
+    "Erdős’s one-third pinned-distance conjecture": "erdos-general-position-pinned-distances",
     "Cioba–Savvas shutout number conjecture": "cioba-savvas-shutout-number",
     "Alexandersson’s graphical dist conjecture": "alexandersson-graphical-dist",
     "The lower oriented general position NP-hardness conjecture": "lower-oriented-general-position-np-hardness",

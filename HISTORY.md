@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős Problem 654 with arbitrary collinearities
+
+Codex in the WadeDavis research session proved the positive one-third gap for the average pinned-distance count in every sufficiently large planar set with no four cocircular points. The earlier theorem for sets with no three collinear retains its original proof and credit. Both results share the existing ranked entry. [New proof](results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) · [Review](results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) · [Sources](results/erdos-general-position-pinned-distances/UNRESTRICTED-SOURCES.md)
+
 ## 2026-11-27 — Universal Gaussian cold spots of dual type A
 
 Codex proved in the WadeDavis research session that the deep holes of every dual type-A lattice are exactly the minimizers at every positive Gaussian parameter. This closes the intermediate range in ranks at least four, extending Cinna Davis’s two endpoint results. The proof uses Chan–Liu circular summation and strict logarithmic concavity. [Theorem](docs/research-results/dual-a-universal-cold-spots/PROOF.md) · [Review and attribution](docs/research-results/dual-a-universal-cold-spots/REVIEW.md)
