@@ -1,5 +1,11 @@
 # Verification
 
+## Bourin’s common-shift theorem
+
+Run `python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py` for 225 exact rational resolvent comparisons and 80 complementary divided-difference checks in the [arbitrary-centre theorem](../results/bourin-crossed-heinz/ARBITRARY-CENTRES.md).
+
+Run `python3 results/bourin-crossed-heinz/verify_common_shift.py` for the exact quadratic coefficients and spectral-block conjugations used in the proof. The [common-shift expansion](../results/bourin-crossed-heinz/COMMON-SHIFT.md) and the [dimension-free spectral interval](../results/bourin-crossed-heinz/UNIFORM-BAND.md) have written proofs.
+
 ## Mean independent-set size at given average degree
 
 Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
