@@ -172,12 +172,16 @@ abbrev G := tableGraph 79 164 rows
 
 set_option maxRecDepth 24000 in
 set_option maxHeartbeats 16000000 in
-private theorem checked : ∀ v, ValidAt G 164 3 rows inverse v := by decide
+private theorem checked : ∀ v, ValidAt G 164 3 rows inverse v := by
+  intro v
+  -- An auxiliary proof per vertex bounds peak kernel memory during certificate reduction.
+  fin_cases v <;> as_aux_lemma => decide
 
 set_option maxRecDepth 24000 in
 set_option maxHeartbeats 12000000 in
 private theorem degree_table : ∀ v : Fin 79, countedDegree G v = degrees[v.val]?.getD 0 := by
-  decide
+  intro v
+  fin_cases v <;> as_aux_lemma => decide
 
 set_option maxRecDepth 8000 in
 theorem exact_index_and_degree :
