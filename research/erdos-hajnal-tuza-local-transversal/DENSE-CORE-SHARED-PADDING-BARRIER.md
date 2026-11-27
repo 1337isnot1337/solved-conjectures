@@ -23,7 +23,7 @@ as is the corresponding claim without the dense-core hypothesis.
 Suppose $`\tau(\mathcal F)>t`$, and put $`z=r-5t`$, so
 $`1\le z\le t/8`$. Let $`A,B`$ achieve the minimum pairwise
 intersection $`X=A\cap B`$. The argument in
-[Near-threshold petals](NEAR-THRESHOLD-PETALS.md), §1, gives
+[Near-threshold petals](../erdos-hajnal-tuza-local-transversals/NEAR-THRESHOLD-PETALS.md), §1, gives
 ```math
 |X|=t+s,\qquad 1\le s\le\lfloor(z+2)/3\rfloor,\qquad
 \delta=z-3s+2\ge0.
@@ -108,7 +108,7 @@ The $`s`$-subsets $`S`$ of the $`N`$-set $`X_0\setminus Z`$
 now label subsets $`W_S\cap(U\setminus M)`$ of a single
 $`L`$-set. Each has size at least $`b`$, and those at disjoint
 labels overlap in at most $`\delta`$ points. The Kneser
-spectral inequality from [Near-threshold petals](NEAR-THRESHOLD-PETALS.md),
+spectral inequality from [Near-threshold petals](../erdos-hajnal-tuza-local-transversals/NEAR-THRESHOLD-PETALS.md),
 §3, applied with $`m=N,p=b`$, gives
 ```math
 L\ge \frac{b^2}{(1-s/N)\delta+(s/N)b}
