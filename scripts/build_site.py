@@ -94,6 +94,7 @@ STATUS_LABEL_SLUGS = {
     "Erdős–Hajnal’s ordinal-square chromatic problem": "erdos-hajnal-ordinal-square-chromatic",
     "Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture": "barrett-evans-hall-kempton-se",
     "Barrett–Evans–Hall–Kempton’s dandelion conjecture": "barrett-evans-hall-kempton-dandelion",
+    "Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum": "barrett-evans-hall-kempton-dandelion",
     "Liang’s slice-period conjecture": "liang-slice-period",
     "Liang’s 0.3123 slice problem": "liang-03123-slice",
     "Plambeck–Siegel infinite quotient conjecture for 0.3312": "plambeck-siegel-03312",

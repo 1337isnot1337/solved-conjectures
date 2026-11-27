@@ -56,7 +56,7 @@ Run `python3 results/barrett-evans-hall-kempton-se/check_small_parameters.py` fo
 
 ## Barrett–Evans–Hall–Kempton’s dandelion conjecture
 
-The [proof and reproduction guide](../results/barrett-evans-hall-kempton-dandelion/PROOF.md) combines a comparison for complementary leaves with exact certificates for the remaining graph families. The finite checks use rational arithmetic and verified integer bounds on Laplacian eigenvalues. [Independent review](../results/barrett-evans-hall-kempton-dandelion/REVIEW.md)
+The [proof and reproduction guide](../results/barrett-evans-hall-kempton-dandelion/PROOF.md) combines a comparison for complementary leaves with exact certificates for the remaining graph families. The [connected-complement checker](../results/barrett-evans-hall-kempton-dandelion/verify_connected_dandelion.py) compiles the finite verifier, tests all 50 order/template pairs and checks their expected multiplicities. A [separate rational superlevel inequality](../results/barrett-evans-hall-kempton-dandelion/check_form_two_cut.py) covers one template at all ten orders. The [lower-endpoint receipt](../results/barrett-evans-hall-kempton-dandelion/SMALL-REMAINDER.md) gives the graph6 enumeration for orders 4–10. The finite checks use rational arithmetic and verified integer bounds on Laplacian eigenvalues. [Independent review](../results/barrett-evans-hall-kempton-dandelion/REVIEW.md)
 
 ## Liang’s slice-period conjecture
 

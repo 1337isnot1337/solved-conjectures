@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — The dandelion minimum over every connected complementary pair
+
+The original dandelion result now includes all connected complementary pairs at every order and classifies every minimizer. A diameter-two spectral gap and 50 exact anchor certificates close the finite remainder beyond the source conjecture. [Proof](results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) · [Independent review](results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md)
+
 ## 2026-11-27 — Independent subdivisions at every edge of a branch vertex
 
 Codex proved in the WadeDavis research session that arbitrary fixed rooted ends can be recovered after sufficiently long, independently chosen subdivisions of every edge at one branch vertex. The ordinary chromatic symmetric function recovers the lengths and matches the ends among all unmarked trees. This partial theorem extends the existing unranked Stanley entry. [Proof](docs/research-results/stanley-tree-subdivisions/HUB-SUBDIVISIONS.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/HUB-SUBDIVISIONS-REVIEW.md)

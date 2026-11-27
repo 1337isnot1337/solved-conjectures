@@ -6,7 +6,7 @@ The dandelion minimizes the sum of the algebraic connectivities of a graph and i
 
 Cinna Davis and GPT-6.2 Astra developed the structural reduction, all-orders double-leaf comparison, large-order argument and original finite checks. The WadeDavis research session with Codex supplied the exact 21–64 interval certificate and the exhaustive anchored argument completing the source conjecture. The dandelion spectrum is due to Barrett, Evans, Hall and Kempton. [Structural reduction](https://github.com/1337isnot1337/solved-conjectures/commit/e41d1279f655efd121e144777bd51b7047f03c4d) · [Finite interval certificate](https://github.com/1337isnot1337/solved-conjectures/commit/1ee0932d56279d63c70c3ed70fbffbea52067694)
 
-The exact general connected-complement comparison is also known here for orders 4 through 10 and at least 21. Orders 11 through 20 are settled for complementary pairs of diameter three. [Theorem and scope](PROOF.md)
+The same minimum and equality classification hold for every graph whose complement and the graph itself are connected. The WadeDavis research session with Codex supplied the additional diameter-two estimate and five finite anchor configurations needed at orders 11–20. [Connected-complement proof](CONNECTED-EXTENSION.md) · [Independent review and exact checks](CONNECTED-REVIEW.md)
 
 ## Reproduction
 
@@ -17,6 +17,8 @@ c++ -O3 -std=c++17 check_anchored_dandelion.cpp -o /tmp/check_anchored_dandelion
 for n in $(seq 4 20); do
   /tmp/check_anchored_dandelion "$n" || exit 1
 done
+python3 verify_connected_dandelion.py
+python3 check_form_two_cut.py
 python3 verify_finite_interval.py
 python3 verify_effective_interval.py 65
 python3 check_leaf_near_universal.py
