@@ -15,7 +15,7 @@ Write $`x\le y`$ for the two connectivities, with red graph belonging to $`x`$ a
 Add the row at a maximum to the negated row at a minimum. All edge drops on the left are nonnegative and the right side is $`\lambda`$. An edge between those two extrema spends exactly two units and each common neighbor spends exactly one. Hence
 
 ```math
-2\,{\bf1}_{\mathrm{adjacent}}+\#\{\mathrm{common\ neighbors}\}\le\lambda.
+2\,\mathbf{1}_{\mathrm{adjacent}}+\#\{\mathrm{common\ neighbors}\}\le\lambda.
 ```
 
 For the red extrema $`a,b`$ there is no edge and no common red neighbor. Every other vertex therefore has at least one blue edge to $`a,b`$, which themselves form a blue edge. The blue diameter is at most three. For the blue extrema $`c,d`$ there is no blue edge and there is at most one common blue neighbor. If the blue diameter is three, the red diameter must be three as well: any pair at blue distance three gives a red dominating edge by the same argument, and $`a,b`$ have red distance at least three. Such graphs are already covered by the original theorem.
