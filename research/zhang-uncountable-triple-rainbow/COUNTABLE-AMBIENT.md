@@ -1,0 +1,30 @@
+# Rainbow copies inside countable ordinals
+
+**Theorem.** Fix a finite uniformity \(r\ge3\) and a finite bound \(k\ge2\). An infinite countable ordinal \(\theta\) has the property that every \(k\)-bounded colouring of \([\theta]^r\) has a rainbow copy of \(\theta\) if and only if
+\[
+ \theta<\omega^\omega
+ \quad\text{and its finite final remainder is at most }1.
+\]
+Here the finite final remainder is \(m<\omega\) in \(\theta=\lambda+m\) with \(\lambda\) a nonzero limit ordinal. In particular **every** \(k\)-bounded colouring of \([\omega_1]^r\) has rainbow subsets of every order type below \(\omega^\omega\). This advances but does not settle [Zhang's Question 5.4](https://jingjzzhang.github.io/EvenMoreResultsRainbowRamsey.pdf#page=15); the original host there is \(\omega_1\), not the countable host of the exact classification.
+
+## Finite exponents, with zero or one final point
+
+Expand the Cantor normal form of \(\theta<\omega^\omega\) as a finite ordered sum of blocks of type \(\omega^d\), \(1\le d<\omega\), and at most one final point. Represent each infinite block by the lexicographic order on its strictly increasing \(d\)-tuples of natural numbers, which has type \(\omega^d\).
+
+A pattern for two ordered, distinct \(r\)-sets consists of all their block locations, the positions of the possible fixed final point, and the linear order and equalities of all natural-number coordinates of their tuple vertices. Repetitions of vertices and the order of vertices inside each \(r\)-set are then determined. There are only finitely many such patterns, with at most \(2r\) tuple vertices of bounded finite depth. For each pattern, colour the subsets of \(\omega\) of the appropriate size by whether the pattern's two \(r\)-sets have the same original colour when instantiated with these natural numbers in increasing order. By finitely many applications of infinite Ramsey, obtain a common infinite set \(I\subseteq\omega\) on which every one of these two-valued pattern tests is constant. The truth value can be different for different patterns.
+
+Now choose an ordinal copy in which every tuple vertex has a **private last coordinate**, meaning its last coordinate occurs nowhere in any other vertex of the copy. Split \(I\) into two infinite pools of internal and terminal coordinates. Use all increasing \((d-1)\)-tuples in the internal pool as prefixes in each block of exponent \(d\). To each block-and-prefix pair allocate a separate infinite subset of the terminal pool (there are countably many prefixes), and use its elements above the prefix as last coordinates. Each prefix has infinitely many last coordinates, so the lexicographic order remains \(\omega^d\). The pools give the required privacy, including between different blocks. Keep the single final point if there is one.
+
+Suppose two distinct \(r\)-sets of this copy collide. After swapping them if necessary, the second set has a tuple vertex not in the first: at most one point in the whole copy is not a tuple vertex, and the two sets have equal size. The private coordinate of that vertex occupies a pattern position unused by all other vertices in the two sets. Within \(I\), choose a fresh instantiation of the same pattern with large finite gaps between its successive coordinates, and with enough room before the first coordinate too. Keeping the first \(r\)-set and all other coordinates fixed, vary this single position in \(k\) distinct ways, preserving the pattern. The resulting \(k\) second \(r\)-sets are distinct from each other and from the first. The pattern test is constantly true on \(I\), so all \(k+1\) sets have the same original colour, contrary to the bound.
+
+This proves self-copy positivity. A larger power \(\omega^d\) can host every prescribed \(\alpha<\omega^\omega\), including targets with larger finite tails, so restriction gives the claimed consequence on \(\omega_1\).
+
+## Two or more final points
+
+For \(\theta=\lambda+m<\omega^\omega\) with \(m\ge2\), fix two of its final points \(u,v\). Every full copy of \(\theta\) contains all \(m\) final points: deletion of one leaves a host of order type at most \(\lambda+(m-1)\). For every \((r-1)\)-set \(S\subseteq\lambda\), put \(S\cup\{u\}\) and \(S\cup\{v\}\) into one fresh two-element colour class; give every other \(r\)-set a fresh label. These classes are disjoint, and any full copy has enough points in \(\lambda\) to contain such an \(S\), so there is no full rainbow.
+
+## Exponents at least \(\omega\)
+
+By [Galvin's square-bracket result, as stated in Mašulović–Šobot, Theorem 1.3](https://arxiv.org/pdf/1904.03637#page=3), every countable ordinal \(\theta\) admits a colouring of its pairs into \(\omega\) taking every colour on every subset of type \(\omega^\omega\). Indeed the omitted-colour targets in that theorem are all strictly below \(\omega^\omega\). If \(\theta\ge\omega^\omega\), use this pair colouring with the [ordered matching rule for Question 5.5](PROOF.md), coding all two-element subsets of the countable host by \(\omega\). Given any copy of \(\omega^\omega\), fix its first two points \(u,v\). Its remaining tail still has type \(\omega^\omega\), so a top pair in that tail prescribes \(\{u,v\}\), giving a triple collision. For larger \(r\), first restrict attention to the copy's initial segment of type \(\omega^\omega\) and reserve \(r-3\) later points **after the colliding triples**; there are always such points since \(\omega^\omega\) is a limit with infinite tails. Append those points to both triples and record them in the new label. Thus no copy of \(\omega^\omega\) is rainbow at any arity \(r\ge3\), so no full copy of \(\theta\) is rainbow.
+
+The ordinary finite-pattern Ramsey method for finite powers is related to the canonical patterns in [Boyland–Gasarch–Hurtig–Rust, *Big Ramsey degrees of countable ordinals*](https://arxiv.org/abs/2305.07192). The private final coordinates above are what convert equality of colour patterns into a violation of a bounded fibre, rather than just a finite bound on the number of colours.
