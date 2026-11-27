@@ -62,3 +62,50 @@ rational midpoints and squared distances. It accepts
 only once no subregions remain. This framework can
 also be used for a positive-gap bounded subregion in
 larger intersection templates.
+
+## A stronger matrix certificate
+
+A region can pass even when a few mixed coefficients exceed T.
+Use a rigorously verified upper cost $`U_{ij}`$ for every coefficient.
+The convex-combination argument gives cost at most
+$`\lambda^TU\lambda`$ throughout the simplex. Define a symmetric
+matrix H with diagonal $`H_{ii}=T-U_{ii}`$ and, for $`i\ne j`$,
+$`H_{ij}=\min(0,T-U_{ij})`$. Its quadratic form on nonnegative
+vectors is at most that of $`T\mathbf1\mathbf1^T-U`$.
+Thus H positive semidefinite suffices for the desired bound.
+The implementation [bernstein_psd.py](bernstein_psd.py)
+checks this with exact rational elimination on a symmetric
+matrix. A negative pivot fails; a zero pivot is accepted only
+when its remaining row vanishes. Nonnegative diagonal dominance
+gives a quicker sufficient check when it applies.
+
+For three covering cliques, simultaneously permute the cover labels
+so their singleton masses satisfy $`x_1\le x_2\le x_3`$. After
+ordering, that sector is itself a simplex: replace the first two
+singleton unit vectors by $`(e_1+e_2+e_3)/3`$ and $`(e_2+e_3)/2`$,
+retaining the third unit vector and the unit vectors of all other
+types. This follows by writing the nonnegative-coordinate differences
+$`x_1`$, $`x_2-x_1`$, and $`x_3-x_2`$ on those three rays. The objective
+is invariant under these simultaneous permutations.
+
+## Verified three-cover bound
+
+With profiles of at most five vertices, the strengthened certificate
+establishes cost at most 3/56 for **every** point of the full seven-type
+three-cover template. Hence a graph family whose minimum edge clique
+cover number is three has ratio at most 1/56. This does not require
+that its type adjacency graph be triangle-free. The best known
+three-cover lower bound remains 1/63 in the ratio, so the present
+certificate does not determine the sharp constant within the
+three-cover class.
+
+Run the following command with NumPy and SciPy installed:
+
+```sh
+python3 bernstein_psd.py --q 3 --L 5 --target 3/56
+```
+
+The verified run processed 96,634 bisections and certified 96,635
+leaves, with maximum depth 22 and 48,857 distinct pair capacities
+evaluated. All accepted coefficient costs and matrix checks used
+rational arithmetic.
