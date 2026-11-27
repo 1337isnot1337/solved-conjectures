@@ -1,5 +1,9 @@
 # Verification
 
+## Erdős–Galvin–Hajnal’s rainbow-star girth problem
+
+Read the [countable theorem](../results/erdos-galvin-hajnal-rainbow-star-girth/PROOF.md) and [mathematical review](../results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md). From the repository root run `python3 scripts/check_rainbow_star.py`. The list-color replay checks the missing-label invariant on finite instances. The infinite construction and obstruction follow from the written proof.
+
 ## de Joannis de Verclos’s projective rigidity conjecture
 
 Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
