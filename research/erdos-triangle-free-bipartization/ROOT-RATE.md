@@ -42,4 +42,6 @@ The number of bins is at most M=(ceil(1/Δ)+2)^k₀, so there are at most 2^M ru
 
 The root total k₀+q+2l is bounded by exp(C ε⁻²⁴ log(1/ε)). Further roots can be ignored. This proves the claim.
 
+For a substantially smaller polynomial rate on the same envelope see [POLYNOMIAL-ROOT-RATE](POLYNOMIAL-ROOT-RATE.md). This note retains the separate spectral-projection route.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
