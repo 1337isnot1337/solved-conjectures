@@ -2,7 +2,7 @@
 
 ## Path counts and arbitrary reduced topologies
 
-A finite calculation decides the generic histogram comparison over every topology of bounded maximum degree and every rival of bounded leaf surplus, even with arbitrarily many high-degree vertices. For a single high hub of arbitrary degree all single-extra-leaf competitors are excluded, and its degree forces a linear lower bound on every possible surplus. [Proof and bounds](LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](LEAF-SURPLUS-REVIEW.md) · [Exact checks](verify_leaf_surplus.py)
+A finite test controlled only by the maximum number of surplus rival leaves decides the generic histogram comparison across all topologies, with unrestricted degrees and arbitrarily many high-degree vertices. For a single high hub of arbitrary degree all single-extra-leaf competitors are excluded, and its degree forces a linear lower bound on every possible surplus. [Proof and bounds](LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](LEAF-SURPLUS-REVIEW.md) · [Exact checks](verify_leaf_surplus.py)
 
 For any fixed reduced tree, generic subdivisions are the unique minimum-leaf representatives of their ordinary distance histograms. The histogram alone determines trees with any degrees when each direction at each high-degree vertex contains sufficiently many leaves. A rival otherwise must retain a large common leaf-labelled subtree whenever free-pendant trimming applies. [Proof](ROBUST-HUB-DISTANCES.md) · [Sources and attribution](ROBUST-HUB-SOURCES.md) · [Independent review](ROBUST-HUB-REVIEW.md) · [Exact finite checks](verify_marked_visibility.py)
 
