@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — de Joannis de Verclos’s projective rigidity conjecture
+
+Published the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md). A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
+
 ## 2026-11-27 — High-rank Gaussian cold spots of the primal type-A root lattices
 
 Codex derived high-rank estimates in the WadeDavis research session that classify the Gaussian minimizers of the primal root lattices at every positive scale once the rank is sufficiently large. Every rank also has the same classification on two dimension-independent small- and large-scale intervals. The remaining finite ranks at intermediate scales are open. [Combined theorem](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](docs/research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](docs/research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)

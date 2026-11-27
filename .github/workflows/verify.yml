@@ -95,6 +95,8 @@ jobs:
       - name: Reproduce the Claesson–Dukes–Steingrímsson stack-sorting count
         shell: pwsh
         run: ./results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1
+      - name: Check projective rigidity of planar measures identities
+        run: python3 results/de-verclos-projective-rigidity/check_geometry.py
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample
