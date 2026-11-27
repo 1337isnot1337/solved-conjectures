@@ -45,6 +45,10 @@ Gaussian cold spots approach deep holes of type $`E_8^3`$ as the Gaussian parame
 
 The supplement gives a necessary and sufficient criterion for a fixed hole to remain a global minimizer when other holes have unbalanced shells. Exact enumeration gives the energy and displacement coefficients at the local Leech $`A_{24}`$ branch. [Mixed-hole proof](leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Review and reproduction](leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)
 
+## Universal Gaussian cold spots of dual type A
+
+The Gaussian sum on $`A_n^*`$ attains its minimum precisely at the deep holes for every positive parameter. Circular averaging of one-dimensional theta products yields the inequality and its equality cases. [Proof](dual-a-universal-cold-spots/PROOF.md) · [Review and reproduction](dual-a-universal-cold-spots/REVIEW.md)
+
 ## Prior results and quantitative refinements
 
 The original unrestricted Estrugo–Pastine star-center degree question follows from earlier work. The manuscript proves two stronger quantitative statements with their own constructions. The explicit Hurlbert–Kamat witness falls under an earlier announced construction by Feghali, Johnson and Thomas. The source audit identifies the relevant priority decisions. [Estrugo–Pastine refinements](estrugo-pastine-star-center-degree/README.md) · [Hurlbert–Kamat witness](hurlbert-kamat/README.md) · [Other prior-resolution searches](2026-11-26-named-conjecture-screen/README.md)

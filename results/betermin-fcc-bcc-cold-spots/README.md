@@ -4,6 +4,8 @@ For every positive Gaussian scale, the translations minimizing the Gaussian latt
 
 The printed BCC coordinate needs correction: in unscaled cubic coordinates a deep hole is `(1/2, 1/4, 0)`, not `(1/2, 1/2, 0)`. The same proof classifies all minimizing translations of the checkerboard lattices and their duals in every dimension at least three. It does not optimize over lattice shapes.
 
+The BCC case also gives the all-parameter result for the dual type-A lattice in rank three. A separate theta-product argument proves the entire dual type-A family. [All-rank theorem](../../docs/research-results/dual-a-universal-cold-spots/README.md)
+
 - [Complete proof](PROOF.md)
 - [Primary sources, priority, and independent audit](AUDIT.md)
 - [Supplementary finite diagnostics](verify.py)

@@ -228,6 +228,8 @@ jobs:
           python3 docs/research-results/tuite-thomas-chandran-circulants/check.py
       - name: Check the Lángi–Wang disk-window construction
         run: python3 results/langi-wang-convex-tiling/check_sectors.py
+      - name: Check dual type-A Gaussian cold spots
+        run: python3 docs/research-results/dual-a-universal-cold-spots/verify.py
       - name: Check the Leech lattice deep-hole coefficients
         run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
       - name: Check mixed-hole Gaussian coefficients and equality cases
