@@ -88,3 +88,48 @@ cuts, since they have the same size. No membership set
 changes, so the petal for \(S\) was unique.
 This leaves an exact partition condition at every
 minimum pair, not a claim that equality can be attained.
+
+## Stable pools for all witnesses, not just one selection
+
+Assume \(s\ge2\) and \(2s^2(s-1)<m-1\). At a fixed minimum
+pair, all but at most \(2h\) exterior vertices can be assigned
+a single index in \(X\), independent of all representative
+choices. **Every** witness for cut \(S\) can use an assigned
+vertex only when its index is in \(S\). In particular the
+partition model is stable when \(s=o(t^{1/3})\).
+
+For an exterior vertex \(v\), take the family
+\(\mathcal C_v\) of all cuts which have **some** witness
+with \(v\) in its exterior. It is intersecting, because
+actual witness petals for any two disjoint cuts are disjoint,
+irrespective of which witnesses are chosen.
+If a nonempty intersecting \(s\)-family on \(X\) has empty
+common intersection, fix a member \(S_0\) and, for each
+\(x\in S_0\), choose a member \(T_x\) missing \(x\).
+Every member contains some \(x\in S_0\) and some
+\(y\in T_x\); hence the family has size at most
+\(s^2\binom{m-2}{s-2}\). Our inequality makes this
+less than \(M/2\).
+A family with two common points also has size at most
+\(\binom{m-2}{s-2}<M/2\). Consequently
+\(|\mathcal C_v|>M/2\) guarantees one unique common index.
+
+At most \(2h\) exterior vertices have
+\(|\mathcal C_v|\le M/2\): for any fixed selection
+their incidences \(d_v\) are at most \(M/2\), so they
+cost at least \(M/2\) each in the deficit identity.
+Assign the remaining vertices to their unique index.
+Let \(P_x\) denote the set assigned to \(x\).
+In any fixed selection of witnesses the total missing
+points of the expected pool unions is bounded by
+\[
+\sum_{S\in\binom Xs}
+ \left|\left(\bigcup_{x\in S} P_x\right)\setminus W_S\right|
+\le Mh.
+\]
+Indeed each assigned vertex belongs to exactly \(M\)
+expected cuts, and is present wherever selected precisely
+\(d_v\) times, so the contribution is \(M-d_v\).
+The average over cuts is at most \(sh/m\). The unassigned
+vertices can enter a petal but number at most \(2h\) in
+the entire exterior, not per cut.
