@@ -97,3 +97,42 @@ This is the required normal cover, with $`b+\cdots+b^c`$ vertices.
 The tree gives the polynomial lower bound for every fixed $`c`$,
 not just the small parameters explicitly treated in the original
 paper.
+
+## A second upper bound: disjoint permutation events
+
+For each vertex $`v`$, choose a covering clique $`C_v`$ and
+a covering stable set $`S_v`$ that both contain it. In a
+uniform random ordering of all vertices, consider the event
+that every other vertex of $`C_v`$ precedes $`v`$ and every
+other vertex of $`S_v`$ follows $`v`$. These events are
+pairwise disjoint. In fact, if the events for distinct
+$`u,v`$ both held, a vertex in $`C_u\cap S_v`$ would put
+$`v`$ at or before $`u`$ in the ordering, while a vertex
+in $`C_v\cap S_u`$ would put $`u`$ at or before $`v`$.
+This is impossible in a total order. This argument explicitly
+allows either intersection vertex to be one of the pivots.
+
+Each chosen pair meets only in its pivot. If its sizes are
+$`a_v=|C_v|`$ and $`b_v=|S_v|`$, the probability of the
+event is $`(a_v-1)!(b_v-1)!/(a_v+b_v-1)!`$. Summing gives
+the weighted inequality
+
+```math
+\sum_{v\in V(G)}
+\frac{(a_v-1)!(b_v-1)!}{(a_v+b_v-1)!}\le 1.
+```
+
+The reciprocal of an individual probability increases with
+either size, so this yields a second uniform bound
+
+```math
+N(c,s)\le \frac{(c+s-1)!}{(c-1)!(s-1)!}.
+```
+
+This also gives degree $`c`$ for fixed $`c`$, independently
+of the recursive decomposition. It refines the upper leading
+constant to $`1/(c-1)!`$ for fixed $`c`$, without asserting
+that the constant is sharp. The permutation method is in the
+spirit of Bollobás's set-pair inequality, but the chosen
+clique and stable set meet at their pivot and are not an
+ordinary disjoint pair.

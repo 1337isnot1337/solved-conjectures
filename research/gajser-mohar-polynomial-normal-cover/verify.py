@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Finite checks for the two normal-cover constructions (no dependencies)."""
+from fractions import Fraction
 from functools import cache
 from itertools import product
+from math import factorial
 
 
 def verify_tree(c, b):
@@ -70,6 +72,18 @@ def verify_all_partitions(rows, cols):
         s = max(sum(j in b for _, b in tiles) for j in range(cols))
         assert len(tiles) <= sum(s**h for h in range(1, c + 1))
         assert len(tiles) <= sum(c**h for h in range(1, s + 1))
+        # Choose the first row and column of each tile as its pivot pair.
+        # In that pair the tile is the sole common label. Compute the
+        # resulting permutation-probability sum using exact rationals.
+        row_sizes = [sum(i in a for a, _ in tiles) for i in range(rows)]
+        col_sizes = [sum(j in b for _, b in tiles) for j in range(cols)]
+        total = Fraction(0)
+        for a, b in tiles:
+            x, y = row_sizes[min(a)], col_sizes[min(b)]
+            total += Fraction(factorial(x - 1) * factorial(y - 1),
+                              factorial(x + y - 1))
+        assert total <= 1
+        assert len(tiles) * factorial(c - 1) * factorial(s - 1) <= factorial(c + s - 1)
         for column in range(cols):
             anchors = [k for k, (_, b) in enumerate(tiles) if column in b]
             found = set()
