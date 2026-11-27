@@ -1,6 +1,9 @@
 # Chen’s prescribed-parity exact-one-marker conjecture
 
-**Candidate proof, not independently reviewed.** This gives an affirmative
+**Proof draft, independently re-read without a gap found.**
+The independent check was an AI mathematical review, not external
+human refereeing. The exact checked revision is recorded below.
+ This gives an affirmative
 answer to the second question in [Chen, Problem 6.5](https://arxiv.org/pdf/2609.26158#page=14).
 For every positive integer t there is f(t) such that a finite undirected
 supply graph with a matching of demand pairs, each with its own prescribed
@@ -164,6 +167,20 @@ parity-breaking paths. This is closely related routing work, but a
 fixed-k feasibility algorithm neither chooses k demands from an
 unbounded matching nor supplies a small transversal when that
 selection cannot be made. The tangle and free-whole-pairs reduction
-addresses this difference. The geometric inputs and case joins above should
-receive a fresh proof review before publication. This file makes
-no claim about Chen’s separate moving-core Problem 6.6.
+addresses this difference. This file makes no claim about Chen’s
+separate moving-core Problem 6.6.
+
+An independent mathematical re-read of revision `1cf98b4` (proof blob
+`c62f73c65adbe00b6e0d932e1887d37cfdd6c04f`) found no gap in the
+free-whole-pair proof or the four structural outcomes. It rechecked
+the model-preserving augmentation in Marx–Seymour–Wollan 2.1, the
+strict tail-exchange step for odd handles, the simple-path and
+congestion conditions in the annulus, and the lifted one-gate
+separator in the bipartite large block. Later edits added citations
+and the following scope links; they do not change that argument.
+
+The [all-even grid example](WHY-CONGESTION-TWO.md) shows that
+congestion one cannot work. A separate
+[odd-cycle reduction](COVER-LOWER-BOUND.md) gives a lower bound of
+order t log t for any admissible cover function, even when all
+demands are even and all terminals are private leaves.
