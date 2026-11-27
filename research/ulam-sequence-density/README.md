@@ -125,8 +125,9 @@ which the finite set of small shifts fails to decide the greedy recurrence.
 
 [Parent translation](parent-translation.md) gives a conditional lower
 density bound using only the counting deficits at genuine parent pairs
-with smaller summand at least 4096. The proposed inequality passes
-every such test through one hundred million.
+with smaller summand at least 8,192. Two exact replays through one
+billion find two counterexamples to the earlier proposal with cutoff
+4,096, both at smaller summand 4,118.
 
 [Phase confinement](phase-confinement.md) proves positive natural
 density under exact eventual confinement to a sum-free phase band with
@@ -139,6 +140,9 @@ It gives exact finite counts for both and proves subexponential word
 complexity under the conjecture. A separate reachability check rules out
 bounded-lag larger-parent paths rooted in the first million integers
 when every lag is at most one million.
+The same note classifies atoms in selected-term phase distributions and
+gives lower-density criteria in terms of how the sequence restarts after
+long gaps.
 
 [Boundary rules](phase-boundary-rules.md) locates the remaining long-pair
 counts inside the phase band. Its finite certificate verifies a tail

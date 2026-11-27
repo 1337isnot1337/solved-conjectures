@@ -82,6 +82,162 @@ contradiction. The proof at the upper endpoint uses target phases
 approaching $1/3$ from above. This criterion gives no bound on gaps
 within the limiting words.
 
+## Atoms in the phase distribution among selected terms
+
+Under the same approximate confinement, any atom in a subsequential
+limit of the normalized phase distributions
+
+```math
+\mu_N=\frac{1}{A(N)}\sum_{n\in U\cap[1,N]}\delta_{\phi(n)}
+```
+
+lies at a selected phase of one of the two gap words with finite
+support. Every selected phase of that finite word then has the same
+atom mass. In particular, if both gap words have infinite support,
+all subsequential limits of $\mu_N$ are atomless. This applies if
+both sides of the central third contain infinitely many outliers.
+
+To prove the statement, suppose along some subsequence $`\mu_N\to\mu`$
+and $`\mu(\{x\})=w>0`$. Choose shrinking intervals about $x$ and a
+further subsequence so their masses converge to $w$, and so the masses
+of their translates by each fixed $t\theta$ converge to
+$`\mu(\{x+t\theta\})`$. This is possible by choosing radii whose
+translated endpoints avoid the countably many atoms of $\mu$, then
+using a diagonal subsequence. Sample a uniform member of $U\cap[1,N]$
+whose phase is in the shrinking interval and center its membership
+word there. Extract a limit law $P$ on binary words $v$. The central
+bit equals one. For each fixed integer $t$, changing the sample
+count to a count of selected sites at offset $t$ gives
+
+```math
+wP(v(t)=1)\le\mu(\{x+t\theta\}).
+```
+
+The sites shifted past the sample endpoints contribute at most
+$|t|/A(N)$ to the count. The phases on the right are distinct, so
+the expected number of ones in $v$ is at most $1/w$. Almost every
+word in this law has finite nonempty support.
+
+At every fixed site of interior phase, the same finite-shift argument
+as in the gap-limit proof passes the exact-one rule to this law. At
+every fixed site outside the closed band it passes a zero. The first
+one of a finite word therefore has phase $\beta$ at a band endpoint.
+There is at most one endpoint on the orbit of $x$ because $\theta$ is
+irrational. From that first one onward the word equals the corresponding
+$v_\beta$, translated to start there. Thus all of its selected phases
+are atoms of mass at least $w$ by the counting inequality. Applying
+the same proof with each of those phases as the center reverses the
+inequality and gives equality of their masses.
+
+When both gap words are infinite, the distribution of preceding gap
+lengths among the selected terms is tight. In fact
+
+```math
+\lim_{L\to\infty}\limsup_{N\to\infty}
+\frac{\#\{i\ge2:u_i\le N,\ u_i-u_{i-1}>L\}}{A(N)}=0.
+```
+
+An endpoint after a gap longer than $L$ uses both parents above $L$.
+Approximate confinement puts its phase arbitrarily close to one of
+the two endpoints as $L$ grows, uniformly in the target. If the ratio
+stayed bounded below along increasing $L$ and $N$, extract a weakly
+convergent subsequence of $\mu_N$. Every fixed closed neighborhood of
+the two endpoints would carry that much mass in the limit. Decreasing
+the neighborhoods to the two points would give an atom. A density
+proof using the empirical gap laws also needs control of the first
+moment of the gap lengths.
+
+## When a post-gap response would give a lower bound
+
+The following criterion is unconditional. Suppose there are fixed
+$c>0$ and $L\ge1$ such that for every preceding gap
+$`g_i=u_i-u_{i-1}\ge L`$, the interval $`[u_i,u_i+g_i)`$ contains at
+least $`c g_i`$ Ulam numbers. Then
+
+```math
+\underline d(U)\ge\frac{c}{6+3cL}.
+```
+
+To prove this, fix $N$ and stop before the first post-gap interval
+whose right endpoint exceeds $N$. If its left endpoint is $u_i$,
+then $`N<u_i+g_i\le3u_{i-1}`$ because successive Ulam numbers have
+ratio at most two. The earlier gaps sum to more than $N/3-1$.
+Discarding gaps shorter than $L$ loses at most $L A(N)$ in length.
+
+From the remaining post-gap intervals choose the earliest, discard
+the ones that intersect it and iterate from left to right. The
+original preceding gaps of the discarded intervals lie entirely
+inside the chosen interval. Indeed they start at or after the chosen
+left endpoint, which is an earlier Ulam term. They end before its
+right endpoint by intersection. The original gaps are disjoint, so
+the total discarded gap length is at most the length of the chosen
+interval. The chosen intervals are disjoint and account for at least
+half the retained total. They contain at least
+$`c(N/3-1-LA(N))/2`$ selected positions, giving the claimed bound.
+This reduces the required count to a window proportional to the gap.
+The gap-word theorem gives agreement on every fixed window when the
+gap tends to infinity.
+
+The [billion-position prefix](parent-translation.md) gives the
+following exact tests. The replay includes every gap whose post-gap
+interval is wholly inside the computed prefix.
+
+| Minimum gap length | Gaps tested | Least count divided by length in the next window | Endpoint of the gap attaining the minimum |
+| ---: | ---: | ---: | ---: |
+| 100 | 323,692 | 1/100 | 413,955,454 |
+| 200 | 18,900 | 7/210 | 237,842,638 |
+| 300 | 1,527 | 15/315 | 33,312,639 |
+| 400 | 95 | 25/425 | 358,952,480 |
+| 500 | 67 | 37/530 | 432,151,627 |
+| 600 | 8 | 84/1,083 | 966,291,200 |
+
+An all-scale extension of the row with $L=300$ and $c=1/21$ would
+give lower density at least $1/1026$. The larger-gap tests currently
+have only finitely many instances. After producing the checked
+packed prefix, run the [gap replay](gap_response.cpp).
+
+```sh
+c++ -std=c++20 -O3 "$repo/research/ulam-sequence-density/gap_response.cpp" -o ulam-gap-response
+./ulam-gap-response members1b-packed.bin
+```
+
+There is also a scale-dependent version. If for some $`0<a\le1`$
+and $c,d>0$ each sufficiently large gap $g$ ending at $u$ is followed
+by at least $`d\lfloor cg^a\rfloor`$ selected sites in the interval
+of length $`\lfloor cg^a\rfloor`$ starting at $u$, then
+$`A(N)\gg N^a`$. Use gaps ending by $`N/(1+c)`$ so their post-gap
+intervals are contained in $[1,N]$.
+For a chosen post-gap interval of length $b$, its own preceding
+gap has length $`O(b^{1/a})`$ and all the discarded gaps it covers
+have total length at most $b$. If $B_0$ is the total chosen length,
+summing gives the original total at most $`O(B_0^{1/a})`$.
+The disjoint chosen intervals give $`A(N)\gg B_0`$. The original total is at
+least $`N/(2+2c)-1-LA(N)`$, where $L$ bounds the excluded short gaps.
+If this is less than $`N/(4+4c)`$, the short gaps already give a
+linear bound. Otherwise $`B_0\gg N^a`$.
+
+For a conditional application, write $`E(L)=\sup_{n\in U,\,n>L}
+\mathop{\mathrm{dist}}(\phi(n),\overline B)`$. Suppose $`E(L)=O(L^{-\gamma})`$
+for some $\gamma>0$ and $`\|3t\theta\|\ge\kappa t^{-\tau}`$ for
+all positive integers $t$ and fixed $\kappa,\tau>0$. If both gap
+words have positive lower natural density, then
+
+```math
+A(N)\gg N^{\min(1,\gamma/\tau)}.
+```
+
+In fact, a gap of length $g$ ends at a phase within $`2E(g-1)`$ of
+an endpoint $\beta$. For $t>0$ the phase $\beta+t\theta$ has distance
+at least $`\|3t\theta\|/3`$ from both endpoints. For
+$`t\le\lfloor c g^{\min(1,\gamma/\tau)}\rfloor`$ with $c>0$ small,
+this distance exceeds $`4E(g-1)`$. Consequently an exterior site is
+zero by confinement. At an interior site, two summands at least $g$
+are impossible by phase, and a short summand above $t$ puts its
+partner in the gap. The exact-one decision through this window agrees
+with the germ. Its assumed lower density supplies the required
+post-gap counts. The rate of phase confinement and the lower
+densities of the two germs are additional hypotheses here.
+
 ## Word complexity and limiting phase dynamics
 
 Let $p_U(L)$ count distinct membership words of length $L$ in $U$. Under
