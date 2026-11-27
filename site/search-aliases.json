@@ -1,7 +1,7 @@
 {
   "soukup-complementary-graph-product": ["Lajos Soukup", "Daniel T. Soukup", "Hedetniemi", "arXiv:2610.08027", "Problem 1.4", "complementary graphs", "Countryman line", "finite order dimension", "Boolean combinations of permutation graphs", "Boolean order representations", "Galvin–Shelah four colors", "Aronszajn grid", "well-order threshold", "monochromatic induced matching", "chain graph cover", "semi-open coloring axiom", "SOCA", "bounded proper forcing axiom"],
   "bourin-crossed-heinz": ["Bourin Question 4", "arXiv:0805.1954", "crossed-Heinz inequality", "common scalar shifts", "Ky Fan deficits", "bounded input rank", "gap-independent finite witness"],
-  "lambie-hanson-uhrik-disjoint-type-guessing": ["Lambie-Hanson", "Uhrik", "Uhrík", "Question 6.1", "arXiv:2312.01828", "disjoint type guessing", "ladder systems", "bounded depth"],
+  "lambie-hanson-uhrik-disjoint-type-guessing": ["Lambie-Hanson", "Uhrik", "Uhrík", "Question 6.1", "arXiv:2312.01828", "disjoint type guessing", "ladder systems", "bounded depth", "tail-coordinate guessing", "mixed orientations", "role exchange"],
   "erdos-hajnal-ordinal-square-chromatic": ["Erdős Problem 919", "Erdos 919", "ordinal square", "chromatic incompactness", "Erdős Hajnal 1969", "Foreman Laver", "Baumgartner", "relative independence"],
   "chen-khare-sahi-jack": ["Chen Khare Sahi Conjecture 4", "Jack semiring", "normalized Jack differences", "Schur semiring", "majorization", "equation (4.5)", "arXiv:2509.19649"],
   "liang-slice-period": ["0.3102", "Liang Conjecture 4.3", "arXiv:2611.29198", "misere quaternary diagonal period", "period four counterfamily"],

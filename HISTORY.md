@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Sharp cofinal-coordinate thresholds for disjoint-type guessing
+
+Cinna Davis established the forward-oriented width obstruction. The role-exchange proof identifies the earliest cofinal coordinate and classifies literal families containing both orientations. It uses the existing stationary-prefix construction. The two interleaving bounds suffice in ZFC when either role is allowed, even at unbounded width. The restricted forcing axiom and its countable forcing extensions supply necessity. The original Question 6.1 entry retains its rank and verification level. [Forward theorem](results/lambie-hanson-uhrik-disjoint-type-guessing/TAIL-COORDINATE.md) · [Mixed-orientation theorem](results/lambie-hanson-uhrik-disjoint-type-guessing/ROLE-EXCHANGE-TAIL.md) · [Review](results/lambie-hanson-uhrik-disjoint-type-guessing/TAIL-REVIEW.md)
+
 ## 27 November 2026 — Independent subdivision with arbitrary terminal trees
 
 Fix any reduced tree skeleton with at least two branch vertices and prescribe an arbitrary rooted decoration at each end. Vary all exterior arm orders and any selected internal path lengths independently through $`[1,t]`$. Among the $`p`$-parameter assignments, all except $`O(t^{p-1})`$ give trees identified among all finite trees by the ordinary chromatic symmetric function. The other internal paths may have any fixed positive lengths. The result extends the existing unranked Stanley campaign. [Subdivision theorem](docs/research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-DENSITY.md) · [Review and checks](docs/research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-REVIEW.md)
