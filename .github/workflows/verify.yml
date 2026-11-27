@@ -42,6 +42,9 @@ jobs:
       - name: Check the claw-free path-perfect counterexample
         run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
 
+      - name: Verify rainbow-star coloring invariants
+        run: python3 scripts/check_rainbow_star.py
+
       - name: Replay the exact-one-marker flow exchanges
         run: |
           python3 -m pip install networkx==3.6.1
