@@ -25,9 +25,11 @@ vertex from one clique when reducing a minimal cover; the proof here
 instead fixes a stable set and constructs a different restricted
 normal cover for each of its vertices. The paper's eventual exact
 classification and the two-variable diagonal growth are not claimed
-here. The prefix-tree lower construction extends the small-bound
-phenomenon already exhibited in §4, not the discovery of those small
-cases.
+here. The lower construction generalizes the binary-prefix
+construction and first-difference argument in Proposition 2.1:
+use arbitrary branching and keep all final children in a stable
+frontier. Its leading exponent for clique bound three was already
+established by the distinct construction in §4.
 
 The [Körner–de Simone normal graph conjecture](https://arxiv.org/abs/1508.05487),
 disproved by Harutyunyan, Pastor and Thomassé, concerns recognition

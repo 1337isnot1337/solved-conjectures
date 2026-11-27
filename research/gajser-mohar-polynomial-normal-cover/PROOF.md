@@ -71,7 +71,8 @@ and also proves finiteness without the original exponential bound.
 
 ## Lower bound: a prefix tree
 
-Take the rooted $`b`$-ary tree of depth $`c`$ and use its nonroot nodes
+The construction below extends the binary-prefix construction in
+Gajser and Mohar, Proposition 2.1. Take the rooted $`b`$-ary tree of depth $`c`$ and use its nonroot nodes
 as vertices. Two nodes are adjacent exactly when one is an
 ancestor of the other. The clique cover consists of all full
 root-to-leaf paths, with the root removed. Each has $`c`$ vertices.
@@ -136,3 +137,7 @@ that the constant is sharp. The permutation method is in the
 spirit of Bollobás's set-pair inequality, but the chosen
 clique and stable set meet at their pivot and are not an
 ordinary disjoint pair.
+
+The weighted argument also applies to arbitrary cross-intersecting
+set families if every point is the singleton intersection of some
+chosen pair. Other intersections in those families need not be singletons.
