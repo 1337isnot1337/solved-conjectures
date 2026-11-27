@@ -57,3 +57,7 @@ prior use of the standard closure move. The point here is to
 sort the countable intervals into one-vertex slots, preserve
 chromatic number via that partition, and apply the 1978 GCH
 model theorem to the resulting HM-type induced graphs.
+
+## Catalogue and formal-library check
+
+A 27 November 2026 check of both permanent branches by author names, source PDF, Problem 4, Shelah-graph avoidance, barricades and Hajnal–Máté graphs found this research package and its original tracking issue. The same 1975 paper supplies two catalogued questions about labeled rainbow stars. Those ask for configurations with girth and palette conditions. Problem 4 asks whether an uncountably chromatic graph can avoid a Shelah subgraph. The separate half-overlap issue in the same source concerns Problem 11 and uniform hyperedges on the second uncountable cardinal. Searches of Mathlib, Formal Conjectures and the Archive of Formal Proofs for the named avoidance statement found no matching formal theorem. [Rainbow-star girth result](https://github.com/1337isnot1337/solved-conjectures/tree/273d4489b3cdc8769b56023620ad89a3d0f2a5fd/results/erdos-galvin-hajnal-rainbow-star-girth) · [Continuum rainbow-star result](https://github.com/1337isnot1337/solved-conjectures/tree/273d4489b3cdc8769b56023620ad89a3d0f2a5fd/results/erdos-galvin-hajnal-continuum-rainbow-star) · [Half-overlap problem](https://github.com/1337isnot1337/solved-conjectures/issues/1040) · [Original avoidance issue](https://github.com/1337isnot1337/solved-conjectures/issues/1037)
