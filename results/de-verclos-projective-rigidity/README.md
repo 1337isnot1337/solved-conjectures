@@ -2,17 +2,12 @@
 
 **Lean status:** none.
 
-A line-null planar measure is determined up to projectivity by its finite order-type laws when its support has positive area or contains a segment times a compact set of positive Hausdorff dimension.
+A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
 
-The second condition includes a segment times the middle-thirds Cantor set, which has zero area. The conjecture for every support of Hausdorff dimension greater than one remains open. Independent mathematical review of these arguments is pending. [Goaoc, Hubard, de Joannis de Verclos, Sereni and Volec, Conjecture 5](https://arxiv.org/abs/1811.02236)
+The proof reconstructs cross-ratios on typical line slices by comparing transverse displacements. The slice projectivities determine a plane projectivity, which then extends to the entire orientation coupling.
 
-## Proofs
+[Conjecture 5 in *Limits of Order Types*](https://arxiv.org/html/1811.02236v1#Thmtheorem5) · [Proof](PROOF.md) · [Independent review and sources](AUDIT.md) · [Tracking issue #853](https://github.com/1337isnot1337/solved-conjectures/issues/853)
 
-- [Rigidity from positive area of one support](POSITIVE-AREA.md)
-- [The zero-area product case](PARALLEL-SEGMENTS.md)
-- [The strict secant lemma and the coupling](SECANTS.md)
-- [Incidence and propagation at the dimension threshold](INCIDENCE.md)
+Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` from the repository root. The earlier [positive-area proof](POSITIVE-AREA.md) and [parallel-segment proof](PARALLEL-SEGMENTS.md) remain available. The [secant](SECANTS.md) and [incidence](INCIDENCE.md) arguments of Cinna Davis are used in the full proof.
 
-**Review record.** [Discussion and checks](https://github.com/1337isnot1337/solved-conjectures/issues/853) · [Original research files](https://github.com/1337isnot1337/solved-conjectures/tree/17fbd24838da0aff7b8081d6338b5e03d601893b/research/de-verclos-projective-rigidity).
-
-If you use these results, please credit the authors of the original problem and the proof you use, and cite [Cinna Davis’s site](https://itsdavis.com/) and [the specific proof in this repository](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/de-verclos-projective-rigidity/POSITIVE-AREA.md).
+Adam Benazouz contributed the full proof. [Original contribution](https://github.com/1337isnot1337/solved-conjectures/pull/960) · [Contributor profile](https://github.com/adamben04)

@@ -78,6 +78,7 @@ jobs:
           python3 results/erdos-general-position-pinned-distances/check_localization.py
           python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py
           python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py
+          python3 results/erdos-general-position-pinned-distances/check_four_grids.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
@@ -107,6 +108,8 @@ jobs:
         run: ./results/claesson-dukes-steingrimsson-stack-sorting/verify.ps1
       - name: Check strictly convex normed coloring identities
         run: python3 -I -S -B -O results/frankl-geher-sagdeev-toth-strict-convexity/verify_dim5.py
+      - name: Check projective rigidity of planar measures identities
+        run: python3 results/de-verclos-projective-rigidity/check_geometry.py
       - name: Check the Brown–Cameron independence-root obstructions
         run: python3 results/brown-cameron-stability/verify.py
       - name: Check the independent monophonic product counterexample

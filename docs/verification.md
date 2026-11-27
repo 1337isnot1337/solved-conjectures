@@ -1,5 +1,13 @@
 # Verification
 
+## de Joannis de Verclos’s projective rigidity conjecture
+
+Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
+
+## Erdős–Hajnal’s ordinal-square chromatic problem
+
+The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
+
 ## Tree reconstruction after long subdivisions
 
 The five standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
@@ -73,6 +81,8 @@ Run `python3 results/fractional-general-position-square-grids/verify.py --limit 
 Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check the radius-class identities, the six pair-multiplicity bounds and the diameter argument on 4,675 grid sets and two additional configurations. The [proof](../results/erdos-general-position-pinned-distances/PROOF.md) and [independent review](../results/erdos-general-position-pinned-distances/REVIEW.md) give the separate compactness and covariance argument for arbitrarily large sets. The [arbitrary-collinearity review](../results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) documents the added incidence, sampling and limiting arguments. Run `python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py` for the exact finite geometric checks.
 
 Run `python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py` for mixed isosceles triples and `python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py` for axis nominations, co-farthest pairs and the arc sampling construction. The [written review](../results/erdos-general-position-pinned-distances/BISECTOR-REVIEW.md) identifies which parts of the asymptotic argument the finite tests exercise.
+
+Run `python3 results/erdos-general-position-pinned-distances/check_four_grids.py` to enumerate circles and active pairs on rational four-grid examples with 23, 58 and 109 sites. Each example attains the site-centered cap of three and the global cap of four. The [independent review](../results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md) checks the general construction.
 
 ## Cioba–Savvas shutout number conjecture
 
