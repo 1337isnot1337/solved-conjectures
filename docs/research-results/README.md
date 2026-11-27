@@ -51,7 +51,7 @@ The Gaussian sum on $`A_n^*`$ attains its minimum precisely at the deep holes fo
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-The deep holes of $`A_n`$ are the only Gaussian minimizers at every positive scale in all sufficiently high ranks. Both a small-scale interval and a large-scale interval work simultaneously across all ranks. The proof uses tilted one-dimensional discrete Gaussians conditioned to have coordinate sum zero. [Partial theorem](root-a-high-rank-cold-spots/README.md) · [Small-scale proof](root-a-high-rank-cold-spots/SMALL-SCALE.md) · [Half-line proof](root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md)
+The deep holes of $`A_n`$ are the only Gaussian minimizers at every positive scale in all sufficiently high ranks. Both a small-scale interval and a large-scale interval work simultaneously across all ranks. At every rank and scale the scalar levels are strictly ordered and the global minimizers on the one-outlier and paired-displacement loci are deep classes. [All central levels](root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Partial theorem](root-a-high-rank-cold-spots/README.md) · [Small-scale proof](root-a-high-rank-cold-spots/SMALL-SCALE.md) · [Half-line proof](root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md)
 
 ## Recognizing trees after one long edge subdivision
 
