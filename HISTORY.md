@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Independent subdivisions at every edge of a branch vertex
+
+Codex proved in the WadeDavis research session that arbitrary fixed rooted ends can be recovered after sufficiently long, independently chosen subdivisions of every edge at one branch vertex. The ordinary chromatic symmetric function recovers the lengths and matches the ends among all unmarked trees. This partial theorem extends the existing unranked Stanley entry. [Proof](docs/research-results/stanley-tree-subdivisions/HUB-SUBDIVISIONS.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/HUB-SUBDIVISIONS-REVIEW.md)
+
 ## 2026-11-27 — The dandelion minimum for complementary diameter-three graphs
 
 The dandelion and its complement minimize the sum of the two algebraic connectivities at every order. The computer-assisted proof identifies every equality case, settling Barrett–Evans–Hall–Kempton’s Conjecture 2. [Result and attribution](results/barrett-evans-hall-kempton-dandelion/README.md) · [Independent review](results/barrett-evans-hall-kempton-dandelion/REVIEW.md)
