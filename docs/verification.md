@@ -26,6 +26,15 @@ See the [independent review receipt](../results/de-berg-sadhukhan-spieksma-one-s
 Run `python3 results/de-berg-sadhukhan-spieksma-one-stable-domination/verify.py` from the repository root.
 It checks every prefix of 33,867 ordered graphs. The bound is proved in general by the incidence budget; the finite check is supplementary.
 
+## Gajser–Mohar’s polynomial normal-cover conjecture
+
+Read the [two upper proofs and the matching-degree construction](../results/gajser-mohar-polynomial-normal-cover/PROOF.md).
+See the [independent review receipt](../results/gajser-mohar-polynomial-normal-cover/REVIEW.md).
+Run `python3 results/gajser-mohar-polynomial-normal-cover/verify.py` from the repository root.
+It checks over two million tree-cover intersections and all rectangle
+partitions of the specified small matrices. These checks are supplementary
+to the written general proof.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.
