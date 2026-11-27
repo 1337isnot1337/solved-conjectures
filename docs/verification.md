@@ -13,6 +13,10 @@ python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
 python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
 ```
 
+## Erdős–Galvin–Hajnal’s half-overlap hypergraph problem
+
+Run `python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py` from the repository root. The checks cover mixed-width intersections, single-vertex trimming and finite row-color witnesses. The infinite cardinal and strong-coloring arguments are in the [proof](../results/erdos-galvin-hajnal-half-overlap-hypergraphs/PROOF.md) and [independent review](../results/erdos-galvin-hajnal-half-overlap-hypergraphs/REVIEW.md).
+
 ## Erdős–Galvin–Hajnal’s rainbow-star girth problem
 
 Read the [countable theorem](../results/erdos-galvin-hajnal-rainbow-star-girth/PROOF.md) and [mathematical review](../results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md). From the repository root run `python3 scripts/check_rainbow_star.py`. The list-color replay checks the missing-label invariant on finite instances. The infinite construction and obstruction follow from the written proof.
@@ -55,6 +59,19 @@ Run `python3 results/gajser-mohar-polynomial-normal-cover/verify.py` from the re
 It checks over two million tree-cover intersections and all rectangle
 partitions of the specified small matrices. These checks are supplementary
 to the written general proof.
+
+## Erdős’s arbitrary-cardinal bipartization conjecture
+
+Read the [proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md) and the
+[independent mathematical review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md).
+Run the two Python standard-library replays from the repository root:
+
+    python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_orientation.py
+    python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_bridges.py
+
+They check the finite orientation recurrence, the sliding-window map
+and the odd-period queue identities, not the infinite cardinal argument.
+
 
 ## Chen’s parity-free exact-one-marker conjecture
 
