@@ -41,6 +41,8 @@ Please read this section before building on the result.
 
 The [fixed-seed extension theorem](FROZEN_EXTENSION.md) gives the exact optimum for adding one runner to tomdif’s 57-runner certificate. It also bounds how far the old phases must move to make a strict 58-runner counterexample possible.
 
+[Compatible replacement recipes](compatible-replacements/README.md) give all-size quantitative bounds by combining Poliakova's rules with sixteen exact overlap certificates.
+
 ## Verification
 
 Run from the repository root with Python 3 and no other dependencies:
