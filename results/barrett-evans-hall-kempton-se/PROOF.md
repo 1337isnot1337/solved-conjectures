@@ -10,7 +10,7 @@ and, if $`x,y<1`$, equality holds exactly for $`SE(s)`$ with $`0<s<1`$. In $`SE(
 
 For every simple $`G`$ with both $`G,G^c`$ connected,
 ```math
-M(x,y):=\min\{(1-2/n)x+y,\ x+(1-2/n)y\}=x+y-2\max(x,y)/n>1. \tag{1}
+M(x,y):=\min\{(1-2/n)x+y, x+(1-2/n)y\}=x+y-2\max(x,y)/n>1. \tag{1}
 ```
 The proof is split into three disjoint order ranges. For $`n\ge36`$ see the [analytic estimate](EXPLICIT-THRESHOLD.md). For $`11\le n\le35`$, use the [diameter estimates](DIAMETER-FOUR.md) if either connectivity is at least one; otherwise use the [rational comparison certificates](FINITE-COMPARATORS.md). For $`5\le n\le10`$, the [small-order verifier](check_small_graphs.cpp) enumerates all connected simple graphs up to isomorphism and certifies (1) when the complement is connected; the exact calculation and counts are explained in the [audit](AUDIT.md#orders-five-through-ten).
 
