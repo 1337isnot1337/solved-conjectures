@@ -16,6 +16,7 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_hub_fringe_recognition.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_hub_assignment.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py

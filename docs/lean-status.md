@@ -2,6 +2,8 @@
 
 ## Tree reconstruction after long subdivisions
 
+The two-hub reconstruction and length-transposition identity have reviewed written proofs and finite Python checks. They have no Lean formalization. [Two-hub review](research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
 The independent hub subdivision, balanced-edge, leaf-centroid, earlier subdivision and repeated-branch theorems have written proofs and executable finite checks. Their Lean status is unformalized. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
 
 ## Cioba–Savvas shutout number conjecture

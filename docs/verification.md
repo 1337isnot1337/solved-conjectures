@@ -67,6 +67,8 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 
 ## Tree reconstruction after long subdivisions
 
+The [two-hub checker](research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py) enumerates folded profiles, spanning forests and connected vertex sets. It verifies the short-arm detection, cap matching, grouping and transposition formulas. [Two-hub review](research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
 The standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) check independent hub subdivisions using complete small-tree forest polynomials, folded arm sizes and mixed-cap assignments. They also compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
 
 ## Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture

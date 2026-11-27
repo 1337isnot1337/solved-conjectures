@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Stanley reconstruction at two unmarked hubs
+
+The ordinary chromatic symmetric function now recognizes a two-hub tree with arbitrary rooted terminal shapes under an exterior-order condition. Its central length is unrestricted. A second identity detects an exchange of unequal arm orders between different rooted caps at one vertex. The results extend the existing unranked Stanley partial theorem. The general isomorphism question remains open. [Proof](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
 ## 2026-11-27 UTC — Chen’s parity-free exact-one-marker conjecture
 
 The [prescribed-pair packing theorem](results/chen-parity-free-exact-one-marker/) resolves the first question of Chen’s Problem 6.5 for arbitrary undirected supply graphs. A controlled grid provides a doubled clique for fully attachable pairs; a residual exchange routes parallel pairs. The proof passed independent mathematical review. Prescribed parity remains open in [#1012](https://github.com/1337isnot1337/solved-conjectures/issues/1012). No Lean verification was performed. [Discovery and review issue #1011](https://github.com/1337isnot1337/solved-conjectures/issues/1011).
