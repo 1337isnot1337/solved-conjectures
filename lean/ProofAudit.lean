@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `PomeranceSarkozy.source_arithmetic_quarter_gaussian,
+    `PomeranceSarkozy.source_sqrt_converges_in_probability,
+    `PomeranceSarkozy.source_density_one_fluctuations,
     `SaganWilsonPlacticMode.mem_centralizerFinset,
     `SaganWilsonPlacticMode.card_centralizerFinset,
     `SaganWilsonPlacticMode.pascalChoose_eq_choose,
