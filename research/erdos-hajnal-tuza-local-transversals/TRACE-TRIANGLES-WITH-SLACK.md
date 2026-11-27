@@ -9,9 +9,8 @@ Assume \(r=5t+z\), \(1\le z\le t/4\), \(\tau>t\), and the
 local span condition. Put \(m=t+s\) for the minimum pair
 intersection and \(\delta=z-3s+2\). Fix \(A\), and suppose
 three distinct other edges \(E_1,E_2,E_3\) have traces
-\(Y_i=A\cap E_i\) with empty triple intersection and with
-\(|Y_i\cap Y_j|\le t\) for distinct indices. These edges
-need not be minimum neighbors. Write
+\(Y_i=A\cap E_i\) with empty triple intersection. These edges need not
+be minimum neighbors. Write
 \[
 K=\sum_{i<j}(|Y_i\cap Y_j|-s)_+ .
 \]
@@ -23,6 +22,11 @@ Consequently, if \(z=o(t)\), three such traces with pair
 intersections all \(o(t)\) cannot have empty triple intersection.
 
 ## 1. The common exterior
+
+If a trace pair intersects in more than \(t\) points,
+then \(K\ge t+1-s\) and the conclusion is immediate
+since \(s\le t\). Otherwise all pair intersections have
+size at most \(t\), as needed in the cut argument.
 
 Write \(L=r-m\), \(W_i=E_i\setminus A\),
 \(e_i=|Y_i|-m\), \(d_{ij}=|W_i\cap W_j|\), and
