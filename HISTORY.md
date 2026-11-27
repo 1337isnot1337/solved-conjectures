@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Lean verification of the Byrne–Tait density gap
+
+Lean verifies Cinna Davis’s proof for every word length at least two, including nonnormal abelian subgroups. The strict build, axiom audit and stock-kernel replay passed. [Proof and verification receipt](results/byrne-tait-odd-sidon/README.md#lean-verification).
+
 ## 2026-11-27 — The sharp complementary algebraic-connectivity constant
 
 The dandelion theorem yields the exact universal lower bound on the larger algebraic connectivity of a graph and its complement. The four-vertex path uniquely attains the constant proposed in Afshari, Akbari, Moghaddamzadeh and Mohar’s 2018 closing question. [Proof and primary-source review](results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md)
