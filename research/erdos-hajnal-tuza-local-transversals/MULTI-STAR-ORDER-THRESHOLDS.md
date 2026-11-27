@@ -153,3 +153,49 @@ attainment of the **abstract** affine constant at every
 integer star threshold: it is attained exactly when
 \(\delta/s^2=3(k-1)/s\) is an integer. This does not
 classify the real local-transversal examples.
+
+## 4. Mixing adjacent block sizes and the full singleton answer
+
+There is also an attaining construction between integer star
+thresholds when the following design indices are integers.
+Suppose \(\lambda=\delta/s^2\) is an integer, \(k=\lfloor
+1+\delta/(3s)\rfloor\ge2\), and \(s\mid 3k(k-1)\).
+Set
+\[
+\lambda_1=(k-1)(3k/s-\lambda),\qquad
+\lambda_2=k(\lambda-3(k-1)/s).
+\]
+They are nonnegative integers, \(\lambda_1+\lambda_2=\lambda\),
+and \(\lambda_1/(k-1)+\lambda_2/k=3/s\).
+Choose \(m'=m+O_k(1)\) satisfying the simultaneous Wilson
+congruences for block sizes \(k,k+1\), and use the union
+of the two designs with indices \(\lambda_1,\lambda_2\)
+(omit a design with index zero). Each label lies in exactly
+\(3(m'-1)/s\) blocks, and each label pair in exactly
+\(\lambda\) blocks. Using these blocks as the petal points,
+then padding and trimming as in §3, gives the desired
+sizes and overlap cap. The leading number of points is
+\[
+\frac{\lambda_1}{k(k-1)}
++\frac{\lambda_2}{k(k+1)}
+=\frac{6k/s-\delta/s^2}{k(k+1)}
+=L_k
+\]
+times \(t^2\). Thus the affine order bound is sharp
+in this additional compatible range.
+
+For \(s=1\), the divisibility condition is automatic.
+For every fixed integer \(\delta\ge3\), write
+\(\delta=3(k-1)+r\), \(0\le r<3\). The two indices
+simplify to \((k-1)(3-r)\) and \(kr\), so the abstract
+singleton-petal leading constant is exactly
+\[
+\frac{3-r}{k}+\frac{r}{k+1}.
+\]
+For \(0\le\delta\le3\), the elementary pair-point
+construction in [the affine order note](SHARPER-SLACK-PETAL-ORDER.md)
+gives its exact finite optimum as well.
+Hence the abstract singleton-petal order has now
+been determined to leading order for every fixed
+slack, with no compatibility assumed between
+different minimum pairs in an actual hypergraph.
