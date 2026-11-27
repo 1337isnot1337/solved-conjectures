@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — The first-index boundary for ordinary inverse Kazhdan–Lusztig polynomials
+
+Cinna Davis’s rank-five coalescence family answers Badalov’s remaining question about the first Turán determinant. The determinant is negative for every prime power q ≥ 17 and the ratio is asymptotic to 18/q. Badalov had previously disproved Gao and Xie’s general log-concavity conjecture. The supplement accompanies the existing dual Chow entry, with independent mathematical review and exact checks. [Proof](results/caiolo-ferroni-hoster/FIRST-INDEX.md) · [Audit and attribution](results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
+
 ## 2026-11-27 — Higher-dimensional cube covering
 
 Cinna Davis used Ajtai’s planar arrangement to prove Dall’Ara and Dumitrescu’s strict covering bound in every dimension at least three. The proof gives finite witnesses and an explicit deficit for each dimension. [Proof](results/dallara-dumitrescu-cube-covering/PROOF.md) · [Independent review and historical credit](results/dallara-dumitrescu-cube-covering/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/341)
