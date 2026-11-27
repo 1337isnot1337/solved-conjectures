@@ -16,6 +16,7 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
@@ -49,6 +50,11 @@ jobs:
 
       - name: Check countable and continuum rainbow-star construction invariants
         run: python3 scripts/check_rainbow_star.py
+
+      - name: Check the triangle-free occupancy score and conditional star laws
+        run: |
+          python3 results/buys-van-den-heuvel-kang-occupancy/verify.py
+          python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py
 
       - name: Check Ajtai's planar packing and the higher-dimensional cube witnesses
         run: |

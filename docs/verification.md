@@ -1,5 +1,9 @@
 # Verification
 
+## Mean independent-set size at given average degree
+
+Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
+
 ## Higher-dimensional cube covering
 
 From the repository root run the two commands below. They compute the planar area and its loss when bottom tiles are excluded, check the closed-fiber weights, and replay the three-dimensional witness. The proof treats every dimension. [Proof](../results/dallara-dumitrescu-cube-covering/PROOF.md) · [Review](../results/dallara-dumitrescu-cube-covering/REVIEW.md)
@@ -91,6 +95,8 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py` to check recovery of the full labeled core and its internal lengths from oriented cut sizes across 267 reduced trees. Two controls exercise cuts into equal halves. [Verifier](research-results/stanley-tree-subdivisions/verify_core_splits.py) · [Mathematical review](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+The [fixed-excess checker](research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py) tests signed deletion identities and recovers the point of reattachment on each of 269 trivalent pendant deletions among the 108 reduced shapes through order 13. [Independent review](research-results/stanley-tree-subdivisions/FIXED-EXCESS-REVIEW.md)
 
 The [path-distance verifier](research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py) enumerates all nontrivial trees through order 13, tests competing histograms, and reconstructs length-labelled line graphs on 816 subdivisions and all 108 small reduced topologies. [Mathematical review](research-results/stanley-tree-subdivisions/PATH-DISTANCE-REVIEW.md)
 

@@ -2,6 +2,10 @@
 
 **For every fixed reduced tree, almost every independent choice of integer lengths for all its edges gives a tree recognizable among all trees from its path counts and degree sequence.** An explicit certificate recovers all edge lengths and their incidences. If every branch vertex has degree three, the unlabelled histogram of distances between vertex pairs suffices on its own, even when the competitor has arbitrary degrees. The failure probability for lengths uniform in $`1,\ldots,t`$ is at most a constant times $`k^5/t`$ on any reduced tree of order $`k`$. Stanley’s general question remains open. [Path-distance certificate and proof](PATH-DISTANCE-CERTIFICATE.md) · [Independent review and earlier work](PATH-DISTANCE-REVIEW.md)
 
+## When the histogram alone suffices
+
+For any prescribed positive degree excess, there is a finite procedure deciding generic identifiability for every reduced tree of that excess, including arbitrarily many trivalent hubs. A counterexample to generic identifiability would yield one with at most twelve times the excess minus two reduced vertices. The positive-excess classes have not been classified. The same question can be posed for the single arclength distance distribution of a metric tree. [Decision for one topology](PATH-HISTOGRAM-DECISION.md) · [Fixed-excess theorem](FIXED-EXCESS-REDUCTION.md) · [Continuous formulation](METRIC-TREE-DISTRIBUTION.md) · [Independent review](FIXED-EXCESS-REVIEW.md)
+
 ## Subdivision at a branch vertex
 
 **Choose any branch vertex of any finite tree. Subdivide each incident edge independently. Once all these edges are sufficiently long, the ordinary chromatic symmetric function determines the resulting tree among all trees.** The distal rooted trees can have arbitrary shapes, and one arm can be longer than all the others combined. The proof recovers the unmarked branch vertex, the rooted ends, the arm orders and their matching.
@@ -44,6 +48,7 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
