@@ -61,41 +61,43 @@ So \(\chi(G)=\theta\).
 ### Every smaller order type
 
 For \(S\subseteq\kappa\times\kappa\), write
-\(S_\alpha=\{\beta:(\alpha,\beta)\in S\}\).
-If \(\kappa\) many rows have size \(\kappa\), each has order
-type \(\kappa\) and those rows alone contain a copy of the ordinal
-sum \(\kappa\cdot\kappa\). Hence if \(\operatorname{otp}(S)<\kappa^2\),
-the full rows form a set of size less than \(\kappa\), which is
-bounded by regularity. Choose \(\rho<\kappa\) so that they all
-lie below \(\rho\). For each remaining row \(\alpha\ge\rho\),
-the set \(S_\alpha\) is bounded in \(\kappa\). Set
+\(S_\alpha=\{\beta:(\alpha,\beta)\in S\}\) and
+\(F=\{\alpha:|S_\alpha|=\kappa\}\). If \(|F|=\kappa\), the
+full rows alone form the ordinal sum of \(\kappa\) copies of
+\(\kappa\), so \(S\) has order type \(\kappa^2\). Consequently
+\(\operatorname{otp}(S)<\kappa^2\) forces \(|F|<\kappa\).
+
+In fact we prove the stronger local bounds
 \[
-  b(\alpha)=\sup\{\beta+1:\beta\in S_\alpha\}<\kappa
+ \chi(H[F])\le \chi(G[S])\le \max\{\mu,\chi(H[F])\}.
 \]
-there, and set \(b(\alpha)=0\) for \(\alpha<\rho\).
+For the lower bound, a proper colouring of \(G[S]\) with fewer
+than \(\chi(H[F])\) colours uses fewer than \(\kappa\) colours.
+The same cofinal-colour argument on the rows of \(F\) would give
+such a colouring of \(H[F]\). For the upper bound, colour all
+points in rows of \(F\) by projecting to \(H[F]\).
 
-Choose a strictly increasing continuous sequence
-\(\langle c_\xi:\xi<\kappa\rangle\), cofinal in \(\kappa\), of
-closure points of \(b\), with \(c_0\ge\rho\). Here \(c\) is a
-closure point if \(b(\alpha)<c\) for all \(\alpha<c\). The
-closure points form a club: above any starting ordinal, iterate
-the operation of taking a strictly larger ordinal above all the
-\(b\)-values on the current initial segment, and take the
-supremum after \(\omega\) steps. Regularity keeps this point
-below \(\kappa\), and limits of closure points are closure
-points as well.
+Now use a separate palette for the other rows. On the set of
+nonfull row indices put a projected edge between \(\alpha\) and
+\(\gamma\) whenever an edge of \(G[S]\) joins these two rows.
+For any nonfull row \(\alpha\), its selected second coordinates
+are bounded in \(\kappa\), by regularity. Every later projected
+neighbour of \(\alpha\) is below this bound, by \(\gamma<\beta\);
+earlier neighbours are below \(\alpha\). Thus each projected
+vertex has fewer than \(\kappa\) neighbours. Each connected
+component has size less than \(\kappa\): its successive
+finite-distance balls have size less than \(\kappa\), since a
+union of fewer than \(\kappa\) sets each of size less than
+\(\kappa\) has size less than \(\kappa\), and their countable
+union does too. Colour the points in each component using a
+\(\mu\)-colouring of the restriction of \(H\) to its row indices.
+Reuse this palette in different components, which have no
+intervening edges. Together with the disjoint full-row palette
+this gives the upper bound, since \(\mu\) is infinite.
 
-If \(\alpha\in[c_\xi,c_{\xi+1})\), every selected second
-coordinate in that row is below \(c_{\xi+1}\), so there is no
-edge of \(G[S]\) from that band to any later band. Each band
-involves fewer than \(\kappa\) rows. Its projection to \(H\)
-therefore gives a proper \(\mu\)-colouring, and the same palette
-can be reused across all bands. The initial segment of rows
-below \(c_0\) also projects to a graph on fewer than \(\kappa\)
-vertices; give it a separate palette of size \(\mu\) to avoid
-cross-edges from these initial rows. Since \(2\cdot\mu=\mu\) in
-cardinal arithmetic for infinite \(\mu\), this properly colours
-all of \(G[S]\). Noninduced subgraphs cannot require more colours.
+For a smaller order type \(|F|<\kappa\), so \(\chi(H[F])\le\mu\).
+The bounds prove the required conclusion. Noninduced subgraphs
+cannot require more colours.
 
 ## Independence of the primary question
 
