@@ -17,7 +17,7 @@ The second conditions ensure inductively that the representatives have exactly t
 
 For any $`x\in V`$, including outside the initial ordering cell, the signed exponential sums for the two trees coincide:
 ```math
-\mathcal B_T(s)=\sum_{u<v}w_u w_v\exp(s d(u,v))=\mathcal B_R(s).
+\mathcal B_T(s)=\sum_{u\lt v}w_u w_v\exp(s d(u,v))=\mathcal B_R(s).
 ```
 Indeed, sum first over the original competitor path classes. Each invisible class has net weight zero and its path forms remain equal. In each visible class the common representative is the corresponding target path length and the signed weights sum to its target coefficient. Coincidences between previously different classes merely add equal terms on both sides. At our chosen point every edge on both trees is positive.
 
