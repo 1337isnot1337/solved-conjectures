@@ -133,3 +133,55 @@ expected cuts, and is present wherever selected precisely
 The average over cuts is at most \(sh/m\). The unassigned
 vertices can enter a petal but number at most \(2h\) in
 the entire exterior, not per cut.
+
+## A three-family degree bound at equality
+
+If \(h=0\) and \(t\ge14s\), every vertex has incidence degree
+at least
+\[
+M+2\binom{t-1}{s-1}.
+\]
+The added contributions are from the two opposite
+secondary systems at a single pivot.
+
+First take a vertex \(v\) outside a minimum pair \(A,B\).
+Its pool index \(x\) gives \(M\) different primary witnesses
+containing \(v\), one for every \(s\)-cut containing \(x\).
+Choose an \(s\)-cut \(S\) not containing \(x\), and its
+primary witness \(E_S\), which misses \(v\).
+The pair \(A,E_S\) is minimum. Here \(B\) itself witnesses
+the \(s\)-cut \(S\), and its exterior does not contain \(v\).
+Thus the pool index of \(v\) for \(A,E_S\) belongs to
+\((A\cap E_S)\setminus S=U_S\), a \(t\)-set.
+Each of the \(\binom{t-1}{s-1}\) cuts in \(U_S\) containing
+that index has a secondary witness containing \(v\).
+The same count applies to the other pivot \(B,E_S\)
+with its cuts in \(V_S\).
+
+No such secondary witness on either side is one of the
+primary witnesses \(E_T\). If \(S\cap T\ne\varnothing\),
+a secondary cut wholly in a wing avoids \(S\), whereas
+\(E_T\) contains a point of \(S\). If \(S,T\) are disjoint,
+[two-wing balance](TWO-WING-BALANCE.md) gives each wing
+overlap at least \(\tfrac12(m-(17/4)(3s-2))>s\).
+A secondary witness may meet the pivot intersection
+in only the \(s\) points of its cut, so it cannot be
+that primary witness.
+
+The two opposite secondary families at \(S\) are also
+disjoint. If \(F\) served both, then in the pair \(A,E_S\)
+its exterior would avoid the exterior of \(B\), because
+their cuts are disjoint. Thus \(F\cap(B\setminus A)
+\subseteq V_S\). Its \(B,E_S\) cut would then give
+\(|F\cap(B\setminus A)|=s\). Both pairs \(F,A\) and \(F,B\)
+would be minimum, forcing \(|F\cap X|=m-s=t\).
+This contradicts the [minimum-triangle core bound](MINIMUM-TRIANGLE-CORE-BOUND.md)
+since \(t>5s\). Summing the three disjoint families
+proves the degree assertion for \(v\) outside a minimum pair.
+
+If \(v\) lies in the union of every minimum pair, its
+degree is at least the size of the hyperedge-disjoint
+matching of minimum pairs, which was at least \(D/2\).
+Here \(M+2\binom{t-1}{s-1}\le3M\le D/2\), because
+\(M=(s/m)D\) and \(m\ge6s\). This handles the remaining
+vertices.
