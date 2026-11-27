@@ -62,6 +62,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Plambeck–Siegel infinite quotient conjecture for 0.3312": "plambeck-siegel-03312",
     "Misère Domination Game": "misere-domination-game",
     "Mobile general position complexity": "mobile-general-position-complexity",
     "Permutation digraph general position conjecture": "permutation-digraph-general-position",

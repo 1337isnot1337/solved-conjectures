@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Plambeck–Siegel infinite quotient conjecture for 0.3312
+
+Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).
+
 ## 2026-11-26 — Disk averages for convex tilings
 
 Answered Lángi and Wang’s Question 5.1 for cells wholly contained in expanding disks. The lower mean number of sides is at most six, and one uniformly fat convex tiling has infinite upper mean. The proof also settles the convex case of the Steinhaus minimax problem for tiles with diameters bounded below. [Proof and scope](results/langi-wang-convex-tiling/) · [Issue #361](https://github.com/1337isnot1337/solved-conjectures/issues/361)
