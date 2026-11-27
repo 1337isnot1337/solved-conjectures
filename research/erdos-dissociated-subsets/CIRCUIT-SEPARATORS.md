@@ -36,4 +36,12 @@ The gluing bound extends to k pieces with common separator T and disjoint nonemp
 
 The proof uses every minimal ternary support, not merely three-term Schur triples, nor a single presentation that might omit a crossing circuit. The remaining challenge is exploiting connectivity and still finding a larger basis in a highly connected signed-relation configuration.
 
+## Every point needs many disjoint recoveries, including a long circuit
+
+Fix v in a least counterexample. The hypergraph on P\{v} consisting of C\{v} for circuits C through v has independence number at most n/2−1 by the preceding half-set property. Thus every vertex cover of this link has size at least n/2. The union of a maximal family of pairwise disjoint link edges is a vertex cover. Each link edge has at most d vertices, since a minimal dependent support with one element removed is dissociated. Therefore every v has at least n/(2d) ternary representations with pairwise disjoint supports outside v.
+
+At least one circuit through v must have length at least four. To see this without estimating multiplicities, look only at the link edges of size two. On positive numbers x,y these are exactly the pairs satisfying x+y=v or |x−y|=v. This graph is a disjoint union of paths: a congruence class under shifts by v gives a chain, possibly with gaps, and a sum edge can only join the smallest positive residues x and v−x of two such chains. Each chain has at most one such connection, and the self-pair at x=v/2 is prohibited. Hence there is an independent set of size at least ceil((n−1)/2)=n/2 in the two-edge link. The full circuit link must have an edge contained there, of size at least three. This proves the long-circuit requirement.
+
+A weighted form is also immediate. Give each path component of the two-edge link an independent fair random choice of its two bipartition sides (isolated vertices count as a path). The selected independent set has a size distribution symmetric about (n−1)/2, so it reaches n/2 with probability 1/2. A longer link edge can be contained only if its vertices have consistent parity in every component it meets; in that case its containment probability is 2^(-c), where c is its number of occupied components. The union bound therefore forces the sum of 2^(-c) over these compatible longer link edges to be at least 1/2. This describes exactly why counting just short Schur-triple links cannot close the conjecture.
+
 [Coordination #1101](https://github.com/1337isnot1337/solved-conjectures/issues/1101).
