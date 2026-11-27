@@ -17,6 +17,7 @@ Erdős–Hajnal odd-cycle problem.
 - [Independent review](REVIEW.md)
 - [Primary sources and prior-work audit](SOURCES.md)
 - [Reproducible finite checks](verify.py)
+- [Connectivity and Hamilton-cycle checks](verify_hamiltonian.py)
 - [Tracking issue #1002](https://github.com/1337isnot1337/solved-conjectures/issues/1002)
 
 No Lean verification was performed.

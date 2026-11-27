@@ -77,7 +77,10 @@ the sides gives a $`(k-1)`$-coloring of G, a contradiction.
 Thus the connectivity is at least $`s=\alpha(G)`$ for $`s\ge3`$,
 and the [Chvátal–Erdős Hamilton cycle theorem](https://www.renyi.hu/~p_erdos/1972-02.pdf#page=1)
 applies. For independence number two a vertex-critical graph
-on at least three vertices has no cut vertex, since subgraph
-colorings across a cut vertex can be made to agree by permutation.
+on at least three vertices is connected: otherwise removing a
+vertex in a component other than one of maximum chromatic number
+would preserve the chromatic number. It has no cut vertex, since
+subgraph colorings across a cut vertex can be made to agree by
+permutation.
 Its connectivity is therefore at least two and the same theorem
 applies. Independence number one means the graph is complete.

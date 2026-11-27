@@ -23,3 +23,14 @@ assertion. It does not claim a resolution of the separate
 two-disjoint-edges assertion or the unrestricted odd-cycle problem.
 It is not a Lean formalization or an external referee report.
 See [issue #1002](https://github.com/1337isnot1337/solved-conjectures/issues/1002).
+
+The same independent reviewer subsequently checked the
+[Hamilton-cycle supplement](HAMILTONIAN.md) at
+[research commit 47707d4](https://github.com/1337isnot1337/solved-conjectures/commit/47707d4bab6862333b8f1f2e92f2e915697fa154).
+They checked the stronger degree bound, all cut cases, and the
+color-permutation argument for the two surviving independent-set
+vertices when the independence number is three. They found
+no blocker. Their separate finite tests checked 3,844 two-side
+attachments and 15,688 generated near joins, including all 161
+relevant cuts of the four critical graphs found, and exact
+Hamilton-cycle search for each.

@@ -50,4 +50,7 @@
 The proof is general and written. The standard-library regression
 checks exercise the Hall construction on every four-path endpoint
 pattern satisfying its hypothesis, and construct full Hamilton
-paths on randomized promised near joins. They are not the proof.
+paths on randomized promised near joins. The stronger
+Hamilton-cycle script further tests 24,832 such instances,
+including seven vertex-critical cases. The scripts are not
+the proof.
