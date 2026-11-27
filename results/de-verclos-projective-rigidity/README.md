@@ -10,4 +10,4 @@ The proof reconstructs cross-ratios on typical line slices by comparing transver
 
 Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` from the repository root. The earlier [positive-area proof](POSITIVE-AREA.md) and [parallel-segment proof](PARALLEL-SEGMENTS.md) remain available. The [secant](SECANTS.md) and [incidence](INCIDENCE.md) arguments of Cinna Davis are used in the full proof.
 
-The full result was contributed by [adamben04](https://github.com/adamben04).
+Adam Benazouz contributed the full proof. [Original contribution](https://github.com/1337isnot1337/solved-conjectures/pull/960) · [Contributor profile](https://github.com/adamben04)

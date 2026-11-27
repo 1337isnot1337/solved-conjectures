@@ -50,6 +50,11 @@ EXTERNAL_CREDIT = {
         f"{REPOSITORY}/issues/201",
         "The contributor developed the counterexample and its written proof with Codex.",
     ),
+    "de-verclos-projective-rigidity": ExternalCredit(
+        "@adamben04",
+        f"{REPOSITORY}/pull/960",
+        "Adam Benazouz contributed the full proof. Cinna Davis developed the earlier secant and incidence arguments.",
+    ),
     "brown-cameron-stability": ExternalCredit("@adamben04", "https://github.com/adamben04"),
     "currie-conjecture-19": ExternalCredit(
         "@aadrianvv",

@@ -71,7 +71,7 @@ Earlier sources established the exceptional orders. These companion theorems are
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
-| [de Joannis de Verclos’s projective rigidity conjecture](results/de-verclos-projective-rigidity/) | A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one. | Not formalized | [Proof](results/de-verclos-projective-rigidity/PROOF.md) · [Review](results/de-verclos-projective-rigidity/AUDIT.md) · [Issue #853](https://github.com/1337isnot1337/solved-conjectures/issues/853) |
+| [de Joannis de Verclos’s projective rigidity conjecture](results/de-verclos-projective-rigidity/) | A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. [Adam Benazouz contributed the full proof](https://github.com/1337isnot1337/solved-conjectures/pull/960), building on Cinna Davis’s secant and incidence lemmas. The sampling measure itself need not have Hausdorff dimension greater than one. | Not formalized | [Proof](results/de-verclos-projective-rigidity/PROOF.md) · [Review](results/de-verclos-projective-rigidity/AUDIT.md) · [Issue #853](https://github.com/1337isnot1337/solved-conjectures/issues/853) |
 
 ## Information complexity of learning
 
