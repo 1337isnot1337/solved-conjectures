@@ -91,3 +91,48 @@ toughness holds. Weak toughness by itself is not in general
 a certificate of traceability. The palette matching formulation
 keeps the number of unused colors explicit; assuming it is
 fixed across private witnesses is not justified.
+
+## Further restrictions on every bad cut
+
+In fact a bad cut cannot have a branch with no exceptional
+connector, and every excess tree has at least four branches.
+To see this, first note that there is at least one nontrivial
+tree among the two required trees: there is at most one
+zero-exception branch, and two-branch trees are impossible.
+Each leaf of a nontrivial tree has exactly one exceptional
+connector.
+
+More generally, consider any two branches with singleton
+exception sets, not necessarily with the same connector.
+If their clique sizes are unequal, write d for the greater
+size. Any partition extending to the larger branch must
+have p >= d-1, enough unused colors for the smaller branch
+with no other condition. That smaller branch would have no
+private failure, a contradiction. Thus all singleton-exception
+branches have the same size d. A branch with zero exceptions
+requires p at least its size. If that size is at most d-1
+then any singleton-exception branch implies its constraint;
+if it is at least d then it implies every singleton-exception
+constraint. Either contradicts minimality.
+
+For a tree on three branches, its two leaves have size d.
+Let their exceptional connectors be x and y, the only
+exceptional connectors of the central branch as well.
+If the central branch has at most d vertices, it fits
+whenever both leaves fit: either p >= d or p=d-1 and
+both x and y are singleton color classes. At least one
+singleton class can then color a vertex of the center.
+So the center would have no private failure.
+
+If the central branch has at least d+1 vertices, take a
+private failure of the leaf associated with x. The fact
+that the other leaf fits gives p >= d-1. The private
+failure gives p=d-1, y singleton, and x nonsingleton.
+Then no color class except {y} can be contained in {x,y}.
+The center has at most d available colors, so it also
+fails. This is again a contradiction. Consequently the
+exception multigraph of a minimal weak-toughness violation
+must contain at least two stub-free trees, each with at
+least four branches, and all their leaves have the same
+clique size. These restrictions are independent of the
+order and chromatic number of the host graph.
