@@ -61,6 +61,8 @@ A two-hub theorem recovers arbitrary exterior rooted arms, their assignment to t
 
 If deleting an edge leaves components of orders $`g\ge h`$, replacing it by a path gives a recognizable tree whenever the total order is at least $`\max(2g-1,2g+h-3)`$. A separate theorem recognizes a unique centroid with at least $`b-1`$ pendant leaves when its largest branch has order $`b`$. Other partial results address repeated branches. [Balanced-edge proof and review](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid theorem](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md) · [All cases and checks](docs/research-results/stanley-tree-subdivisions/README.md)
 
+For an internal tree of any topology, separated sums of exterior arm orders identify the internal splits once the decorated arms are recovered. This gives density-one results for independent exterior orders in explicit intervals. [Theorem](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md) · [Review](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
+
 ## All-orders graph classifications
 
 - [Rather’s book domination-root conjecture](docs/research-results/rather-book-domination-roots/README.md). For every book graph the proof gives the numbers, locations and multiplicities of all its real domination roots.

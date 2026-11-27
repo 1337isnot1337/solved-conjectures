@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Reconstructing arbitrary internal trees in Stanley’s problem
+
+Extended the existing partial result to cores of unrestricted branching pattern. With separated exterior-arm sums, the ordinary chromatic symmetric function determines every internal split and path length under either of two arm-recovery conditions. The proof gives a density-one corollary for each fixed decorated core. [Proof](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
+
 ## 2026-11-27 UTC — Stanley reconstruction at two unmarked hubs
 
 The ordinary chromatic symmetric function recognizes two-hub trees after independently long exterior subdivisions under an explicit condition on cap leaf counts. Separate theorems allow arbitrary rooted terminal shapes under an exterior-order or dominant-arm condition. [Independent lengths](docs/research-results/stanley-tree-subdivisions/TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](docs/research-results/stanley-tree-subdivisions/DOMINANT-ARM.md)
