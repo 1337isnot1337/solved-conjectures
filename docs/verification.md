@@ -151,6 +151,8 @@ Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
 
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_subdivision_density.py` and `python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_endpoint_windows.py` for independent checks of oriented edge cuts, assigned lengths and rooted cap recovery. [Verification scope](research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-REVIEW.md)
+
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_height_relation_kernel.py` and `python3 docs/research-results/stanley-tree-subdivisions/verify_distance_cancellation.py` to check the signed path equations, deletion and change of mark, and the ordinary histogram cancellation ranks. [Verification scope](research-results/stanley-tree-subdivisions/DISTANCE-NULLITY-REVIEW.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_parity_root_transfer.py` to check the star classification, the sparse parity relations, recovery of signed leaf profiles, and pendant attachment in the [linear leaf-surplus reduction](research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md).
