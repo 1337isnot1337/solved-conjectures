@@ -1,6 +1,6 @@
 # A regular pair weight can retain the full farthest-conflict error
 
-The [radial scale-tree reduction](RADIAL-SCALE-TREE.md) leaves the positive sampled-hull proportion open for capacity three and an arbitrary fixed global quadratic trapezoid bound. **Research checkpoint.** The following identifies a limitation of the farthest-cell incidence bound on that last step. It uses an explicit probability weight on pairs. Whether actual transverse reflection multiplicities can realize such a concentration in a sequence approaching the one-third barrier is a different question.
+The [radial scale-tree reduction](RADIAL-SCALE-TREE.md) leaves the positive sampled-hull proportion open for capacity three and an arbitrary fixed global quadratic trapezoid bound. **Research checkpoint.** The following identifies a limitation of the farthest-cell incidence bound on that last step. It constructs a probability law on proper isosceles trapezoids with a prescribed marginal law for each reflected pair. Whether actual transverse reflection multiplicities can realize such a concentration in a sequence approaching the one-third barrier is a different question.
 
 ## The local term in the incidence argument
 
@@ -71,6 +71,24 @@ For a piece $`\Delta`$ touching positive pin mass from $`h`$ good sources, its c
 
 A bounded pair density, in contrast, gives $`q_\Delta\le\lVert w\rVert_\infty b_\Delta^2`$, which reduces the mixed expression to the established hull-controlled term. The obstruction shows that the conjunction of every fixed finite moment, exact one-site marginals and vanishing hull fractions does not furnish this reduction for general absolutely continuous site laws.
 
+## Sampling proper Euclidean trapezoids with all four sites in the conflict range
+
+The preceding all-moments lower bound persists when $`q_\Delta`$ counts the probability that **all four** vertices of a randomly sampled proper isosceles trapezoid lie in the conflict range. Each of its two designated reflected chords has the same pair law with density $`w`$, and each vertex has law $`\mu`$. This additional law prescribes genuine four-point geometry. Its ensemble is probabilistically weighted and does not arise here as the empirical counting measure of trapezoids in a common finite site set.
+
+Write the pair law as the sum of its two nonnegative components, the raw density $`W`$ and the bounded term which completes the marginals. Draw a component with probability equal to its integral, then draw an ordered pair using that component normalized to have mass one. For a pair of distinct sites orient its perpendicular bisector using the direction $`v`$ from the first to the second site as normal. In the coordinates of this line the two endpoints are
+
+```math
+ d v+m v^\perp-hv,\qquad d v+m v^\perp+hv,
+```
+
+where the line is $`v\cdot z=d`$, $`m`$ locates the chord midpoint on it and $`h>0`$ is the half-length. Away from the diagonal these four parameters (the normal angle, $`d,m,h`$) and the ordered pair determine each other smoothly in an angle chart. The absolute volume Jacobian is $`4h`$: use midpoint and difference coordinates, then polar coordinates for the difference of length $`2h`$. The starting joint pair law is absolutely continuous relative to four-dimensional Lebesgue measure. Hence given its oriented line, the conditional law of $`(m,h)`$ has a density for almost every line, also after conditioning on additional countably valued labels of the pair.
+
+Record the component as a label. In the raw component record the rank block $`I_j`$ and the two angular cells of the ordered endpoints in a fixed finite circular partition of mesh at most $`\ell_j=\exp(-1/u_j^2)`$. Given the oriented bisector and all these labels, draw an independent second chord from the same conditional law. Its unconditional law is again the same pair law $`w(\mu\otimes\mu)`$. The two independent conditional midpoint positions differ almost surely, as do their half-lengths. Thus the selected chords have distinct parallel carriers, four distinct endpoints and unequal lengths. The four points form a proper isosceles trapezoid reflected about the prescribed line. If desired, swap each chord's labels independently after sampling; the symmetry of $`w`$ preserves the stated marginals.
+
+In a core target $`B_i`$ at angular scale $`s`$, restrict the first chord to the raw component, to both ranks in the earlier block $`I_j\subset(0,t]`$ with $`t/2\lt u_j\le t`$, and to both angles at distance at most $`s/8`$ from $`\phi_i`$. Its raw mass is at least $`c s^2u_j\ge c' s b`$, by the same row calculation with half the angular width. Uniformly for these choices, $`\ell_j\le\exp(-1/t^2)=o(s)`$ since $`\log(1/s)=1/(4t)+O(1)`$. The second chord shares each rank block and angular cell, so both its sites still have depth at most $`s^2`$ and angular distance at most $`s/4`$ from $`\phi_i`$. All four vertices belong to $`B_i`$. Events where all four belong to different disjoint cores are disjoint. Therefore a piece covering $`h`$ good sources has four-site mass at least $`c'h s b`$, exactly the input to the preceding charge. The claimed expectation lower bound follows for this genuinely geometric local mass as well.
+
+The resampling conditions on the line and the recorded discrete labels. Aligning the distribution with uniform cross-carrier pairing frequencies in a finite set remains open.
+
 ## An elementary square example
 
 Let $`\mu`$ be uniform area on the unit square. For $`y=(y_1,y_2)`$ set $`s(y)=(1-y_1)+(1-y_2)`$, and let $`U(y)=\mu\{v:s(v)\le s(y)\}`$. This rank is uniform on $`[0,1]`$. Define the symmetric pair density
@@ -107,4 +125,4 @@ There is also a symmetric probability coupling with both one-site marginals exac
 
 For this single fixed corner, strong square integrability would preclude a fixed positive multiple of $`b`$ as $`b\downarrow0`$. Cauchy–Schwarz gives $`\int_{B_0^2}w\le b\lVert w\mathbf1_{B_0^2}\rVert_2=o(b)`$. This statement concerns just the single corner contribution; it supplies no bound uniform over all random cells or an actual moment estimate for Euclidean trapezoids.
 
-The [exact finite controls](check_farthest_pair_weights.py) verify the residual row completion on finite angular/radial partitions, the cap deficit inequalities, and the charging algebra. The site and pair laws in the theorem are continuous. The source comparison includes the [earlier sharp disk result](DISK-MOMENT.md), the [sparse transverse-energy theorem](SPARSE-TRAPEZOIDS.md), the [residual-weight criterion](THIN-EXCEPTIONAL-PAIRS.md) and the [full-mass reduction](RADIAL-SCALE-TREE.md). The new all-moments example concerns only the remaining incidence bound with a freely assigned pair weight.
+The [exact finite controls](check_farthest_pair_weights.py) verify the residual row completion on finite angular/radial partitions, the cap deficit inequalities, the charging algebra and the common-axis geometry of pairs of disjoint unequal chords. The site and pair laws in the theorem are continuous. The source comparison includes the [earlier sharp disk result](DISK-MOMENT.md), the [sparse transverse-energy theorem](SPARSE-TRAPEZOIDS.md), the [residual-weight criterion](THIN-EXCEPTIONAL-PAIRS.md) and the [full-mass reduction](RADIAL-SCALE-TREE.md). The all-moments example tests the remaining incidence estimate under a continuous law on Euclidean trapezoids. Finite carrier multiplicities and the near-extremal pinned-distance constraints remain additional hypotheses of the original problem.
