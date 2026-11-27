@@ -239,6 +239,10 @@ The scope of this recovery result is the fixed cutoff-69 rule and
 the stated narrow intervals. The genuine sequence uses additional
 shifts with phases well outside those intervals.
 
+The [cutoff-102 certificate](phase-return-model.md) uses recurrent
+phase intervals to compute the positive output frequency for a
+larger exact truncated model.
+
 ## A zero-density completion satisfying the core constraints
 
 One fixed phase relaxation also admits a zero-density completion of a
