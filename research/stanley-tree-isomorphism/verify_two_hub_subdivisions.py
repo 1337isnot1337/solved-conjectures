@@ -1,6 +1,7 @@
 """Test the double-hub reconstruction identities using exact enumeration."""
 
 from collections import Counter
+from fractions import Fraction
 from functools import cache
 from itertools import combinations_with_replacement, permutations, product
 from math import prod
@@ -177,10 +178,44 @@ def check_decorated_assignment():
     return total
 
 
+
+def extend(cap, order):
+    for _ in range(order - size(cap)):
+        cap = (cap,)
+    return cap
+
+
+def check_transpositions():
+    cases = [
+        ((), ((), ()), 3, 4, ((),)),
+        (((), ()), ((), (), ()), 4, 5, ((),)),
+        ((), (), 2, 4, ((), ((),))),
+        ((), ((), ()), 3, 3, (((),),)),
+    ]
+    for first, second, s, t, rest in cases:
+        tree = (*rest, extend(first, s), extend(second, t))
+        swapped = (*rest, extend(first, t), extend(second, s))
+        before = connected_subsets(size(tree), edges_at_root(tree))
+        after = connected_subsets(size(swapped), edges_at_root(swapped))
+        for x, y in ((2, 3), (3, 5), (5, 2)):
+            fixed = Fraction(y, 1 - x)
+            r = prod(attached(arm, x, y) for arm in rest)
+            def normalized(cap):
+                return (attached(cap, x, y) - fixed) / x**size(cap)
+            formula = x * fixed * (r - 1) * (x**s - x**t) * (normalized(first) - normalized(second))
+            require(evaluate(before, x, y) - evaluate(after, x, y) == formula,
+                    "incorrect total-order transposition")
+        require((before == after) == (s == t or first == second),
+                "transposition was not distinguished")
+    return len(cases)
+
+
 if __name__ == "__main__":
     profiles, complete = check_exterior_scan()
     models, forests, subsets = check_small_forests()
     assignments = check_decorated_assignment()
+    transpositions = check_transpositions()
     print(f"{profiles} folded exterior profiles ({complete} with all orders below the cutoff)")
     print(f"{models} unmarked joins, {forests} spanning forests, {subsets} vertex subsets")
     print(f"{assignments} decorated cap assignments and 27 explicit one-edge ambiguities")
+    print(f"{transpositions} transpositions checked at three specializations and by complete polynomials")
