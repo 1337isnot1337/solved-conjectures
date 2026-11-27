@@ -2,7 +2,7 @@
 
 ## 27 November 2026 — A linear bound for tree distance-histogram comparisons
 
-For each fixed surplus in the rival’s number of leaves, generic reconstruction from the ordinary distance histogram across all reduced topologies now has a finite test with linearly many vertices. The proof recovers matching rooted profiles on the original trees whenever the target has at least 97 times the surplus in leaves. Stanley’s broader problem remains open. [Proof](docs/research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md) · [Audit](docs/research-results/stanley-tree-subdivisions/LINEAR-SURPLUS-REVIEW.md)
+For each fixed surplus in the rival’s number of leaves, generic reconstruction from the ordinary distance histogram across all reduced topologies now has a finite test with linearly many vertices. The proof recovers matching rooted profiles on the original trees whenever the target has at least 97 times the surplus in leaves. A converse gives all-or-none ambiguity at every leaf count above the threshold for the given surplus. Stanley’s broader problem remains open. [Proof](docs/research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md) · [Audit](docs/research-results/stanley-tree-subdivisions/LINEAR-SURPLUS-REVIEW.md)
 
 ## 2026-11-27 UTC — Independence of bounded-depth disjoint-type guessing
 

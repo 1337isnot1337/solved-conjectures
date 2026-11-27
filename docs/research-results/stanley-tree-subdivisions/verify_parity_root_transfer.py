@@ -133,7 +133,67 @@ def tree_profiles():
     return trees,roots,recovered
 
 
+
+def pendant_attachment():
+    """Recover both signed measures after attaching at a hub or inside an edge."""
+    from collections import Counter
+    from verify_marked_visibility import small_trees
+
+    def measures(edges, mark):
+        neighbors = [[] for _ in range(len(edges) + 1)]
+        for u, v, length in edges:
+            neighbors[u].append((v, length))
+            neighbors[v].append((u, length))
+        defect = [len(row) - 2 for row in neighbors]
+        pairs, profile = Counter(), Counter()
+        for start in range(len(neighbors)):
+            stack = [(start, -1, 0)]
+            while stack:
+                u, parent, distance = stack.pop()
+                if start < u:
+                    pairs[distance] += defect[start] * defect[u]
+                if start == mark:
+                    profile[distance] += defect[u]
+                for v, length in neighbors[u]:
+                    if v != parent:
+                        stack.append((v, u, distance + length))
+        return pairs, profile
+
+    totals = Counter()
+    for tree in small_trees(10):
+        if len(tree) < 4 or any(len(row) == 2 for row in tree):
+            continue
+        bare = [(u, v) for u, row in enumerate(tree) for v in row if u < v]
+        for uniform in (False, True):
+            edges = [(u, v, 2 if uniform else 2 * (i + 1)) for i, (u, v) in enumerate(bare)]
+            choices = [(v, edges, 'hub') for v, row in enumerate(tree) if len(row) >= 3]
+            for i, (u, v, length) in enumerate(edges):
+                p = len(tree)
+                split = edges[:i] + edges[i + 1:] + [(u, p, 1), (p, v, length - 1)]
+                choices.append((p, split, 'edge'))
+            for mark, current, kind in choices:
+                for t in (1, 3, 11):
+                    pairs, profile = measures(current, mark)
+                    grown = current + [(mark, len(current) + 1, t)]
+                    actual_pairs, actual_profile = measures(grown, mark)
+                    expected_profile = profile.copy()
+                    expected_profile[0] += 1
+                    expected_profile[t] -= 1
+                    expected_pairs = pairs.copy()
+                    expected_pairs.update(profile)
+                    expected_pairs[0] -= profile[0]
+                    for distance, weight in profile.items():
+                        expected_pairs[t + distance] -= weight
+                    expected_pairs[t] -= 1
+                    assert actual_pairs == expected_pairs
+                    assert actual_profile == expected_profile
+                    totals[kind] += 1
+    assert totals['edge'] and totals['hub']
+    return totals['hub'], totals['edge']
+
+
 if __name__=='__main__':
     print('Saturated simple graphs (tested, expected stars or empty):',graph_test())
     print('Boolean projection (codes, coincident monomials, clean coordinates):',projection_test())
     print('Formal-length trees (trees, leaf roots, restored leaf profiles):',tree_profiles())
+    print('Signed pendant attachments (hub and interior marks):', pendant_attachment())
