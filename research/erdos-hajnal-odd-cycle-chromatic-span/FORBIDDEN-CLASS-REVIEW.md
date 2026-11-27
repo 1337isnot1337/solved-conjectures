@@ -25,3 +25,13 @@ at opposite ends of the same heavy path.
 These are independently audited written proofs of the two stated
 hereditary subresults. Neither class is asserted to resolve the
 unrestricted Erdős–Hajnal Problem 640.
+
+## Co-gem result
+
+An independent audit passed the separator, module criticality,
+compatible-splits count, and the extension by a universal vertex.
+The audit confirmed the exact hypotheses of Qiuyu Chen's published
+theorem and found no earlier exact path-perfectness assertion in
+its separate literature search. No Lean verification was run.
+The exact proof reviewed was commit
+`efb017f7841c7f8778c852b875e169426822797e`.

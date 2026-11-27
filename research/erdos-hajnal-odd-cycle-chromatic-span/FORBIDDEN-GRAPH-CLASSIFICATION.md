@@ -40,11 +40,11 @@ entry is a question about *all* H-free graphs, not their order.
 - Four-vertex-path-free graphs are path-perfect by the
   source's Theorem 1.5. With one isolate, the
   [co-gem proof](CO-GEM-WEAK-TOUGHNESS.md) gives
-  path-perfectness (independent review pending). With two
+  path-perfectness (independently reviewed). With two
   isolates, the [two-block transversal counterexample](PATH-FOUR-TWO-ISOLATES.md)
   shows that path-perfectness can fail. It also works for
   all larger numbers of added isolates.
 
-The sole unresolved entry is a three-vertex path plus three isolates. The first two new positive results have received
+The sole unresolved entry is a three-vertex path plus three isolates. The three new positive results have received
 [independent review](FORBIDDEN-CLASS-REVIEW.md); these remain research
 results rather than an unrestricted solution.
