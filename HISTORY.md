@@ -8,6 +8,10 @@ Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projec
 
 Four oblique grids show that distributed sets can have quadratically many rich active-bisector incidences even when every circle has at most four sites and every site-centered circle has at most three. The construction limits a proposed incidence strategy for the open site-centered question. [Proof](results/erdos-general-position-pinned-distances/FOUR-GRIDS.md) · [Independent review](results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md)
 
+## 2026-11-27 UTC — Conditional classification for the Erdős–Hajnal vertex orders
+
+Codex derived a two-successor classification in the WadeDavis research session. When the smaller-chromatic-number witness exists, the possible vertex orders are exactly the specified finite products of the two cardinals. The argument extends Lyra’s square transfer and finite-power theorem. The existence question in ZFC remains open. [Theorem](results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md) · [Independent review](results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md)
+
 ## 2026-11-27 — Erdős–Hajnal’s ordinal-square chromatic problem
 
 Lyra found a ZFC order-type transfer proving relative independence of the primary question in Erdős Problem 919 using the cardinal-local results of Baumgartner and Foreman–Laver. The separate follow-up remains distinct. [Proof](results/erdos-hajnal-ordinal-square-chromatic/PROOF.md) · [Audit](results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md)
