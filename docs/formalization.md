@@ -303,6 +303,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Byrne–Tait’s odd-length Sidon-set question
+
+Aflah formalized the individual and uniform bounds in Cinna Davis’s proof. The [scope and verification receipt](../research/byrne-tait-odd-sidon/FORMALIZATION.md) cover the exact module, eight endpoints and all owned declarations.
+
 ## Chen–Khare–Sahi fixed-parameter stable Hall checkpoint
 
 Lean now identifies the displayed counterexample at `q=1/10`, `t=9/10`

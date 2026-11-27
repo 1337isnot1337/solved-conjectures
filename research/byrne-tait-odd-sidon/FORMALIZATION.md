@@ -1,0 +1,7 @@
+# Lean verification of the odd-length Sidon density gap
+
+Aflah (GitHub account [aflah02](https://github.com/aflah02)) formalized Cinna Davis’s [written proof](PROOF.md) with GPT-6.2 Astra and submitted the original [publication PR](https://github.com/1337isnot1337/solved-conjectures/pull/1001). Its [initial commit](https://github.com/aflah02/solved-conjectures/commit/ce6bfa871d417d68827caa5c283f1a1054c2b414) and author history are preserved in that PR.
+
+The [Lean source](../../lean/Conjectures/ByrneTaitOddSidon.lean) proves a uniform density gap for all word lengths at least two and abelian subgroups of bounded index, including nonnormal subgroups. The gap and group-order threshold depend only on the length and the index bound. Ordered-word injectivity permits repeated letters. The module also proves the explicit density estimate and its bounded-multiplicity extension.
+
+The contributor’s [complete target-closure receipt](verification/receipt.json) records strict compilation, the [all-owned declaration audit](verification/audit.log) and [stock-kernel replay](verification/replay.log) under Lean 4.35.0. All 58 declarations were audited, including 35 private declarations and eight named endpoints. The only transitive axioms were the three allowed by the repository. On the main publication candidate all seven proof, tool and pinned-input SHA-256 digests match this receipt. The two exact coset enumerations were independently rerun. The repository-wide audit and target-closure receipts are separate checks.

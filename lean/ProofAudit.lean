@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `ByrneTaitOddSidon.wordProduct_eq_list_prod,
+    `ByrneTaitOddSidon.bounded_multiplicity_density,
+    `ByrneTaitOddSidon.abelian_intersection_bound,
+    `ByrneTaitOddSidon.density_bound,
+    `ByrneTaitOddSidon.maxSize_le_one,
+    `ByrneTaitOddSidon.maxSize_uniform_bound,
+    `ByrneTaitOddSidon.uniform_gap,
+    `ByrneTaitOddSidon.bounded_index_gap,
     `PomeranceSarkozy.source_arithmetic_quarter_gaussian,
     `PomeranceSarkozy.source_sqrt_converges_in_probability,
     `PomeranceSarkozy.source_density_one_fluctuations,
