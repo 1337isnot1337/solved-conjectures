@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Radial scales and convex hulls at the pinned-distance barrier
+
+Under a global quadratic bound on isosceles trapezoids, any sequence reaching the mean one-third barrier has a countable family of scales accounting for all site mass. The expected fraction of convex-hull vertices vanishes in every growing independent sample. A positive lower bound for that fraction would rule out such sequences. [Radial decomposition](results/erdos-general-position-pinned-distances/RADIAL-PROFILES.md) · [Recursive argument](results/erdos-general-position-pinned-distances/RADIAL-SCALE-TREE.md) · [Review](results/erdos-general-position-pinned-distances/RADIAL-PROFILES-REVIEW.md)
+
 ## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
 
 Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
