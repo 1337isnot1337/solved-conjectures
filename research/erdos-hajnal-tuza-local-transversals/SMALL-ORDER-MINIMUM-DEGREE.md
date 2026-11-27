@@ -128,3 +128,28 @@ such vertices in the primary petals, and at most
 Three hyperedge-disjoint minimum pairs suffice to cover all
 vertices of degree at most two in this count. Hence there
 are at most \((9+6/t)h\) globally.
+
+## The core bound tightens the defect estimates
+
+For \(t\ge6\), the [minimum-triangle core bound](MINIMUM-TRIANGLE-CORE-BOUND.md)
+makes a double role at one pivot impossible: as computed above,
+such an edge \(F\) would be minimum to both \(A,B\) with
+\(|A\cap B\cap F|=t\). Thus each nonprimary carrier of a
+petal point \(v\in W_x\) supplies at most one secondary system
+per pivot. It also omits at least one other role outright:
+it cannot serve at all \(t\) pivots \(y\ne x\), because that
+would give it at most one point of \(X\).
+
+Therefore a degree-at-most-three petal vertex costs at
+least \(2t-2(t-1)=2\) omissions. A degree-at-most-two
+petal vertex costs at least \(2t-(t-1)=t+1\).
+Using the same fixed-system aggregate deficit \(2(t+1)h\)
+and including the \(h\) points outside the primary petals
+gives at most \((t+2)h\) degree-at-most-three vertices and
+at most \(3h\) degree-at-most-two vertices outside any
+specified minimum pair. The hyperedge-disjoint matching
+argument upgrades these to the improved global bounds
+\[
+4(t+2)h\quad\text{and}\quad 9h,
+\]
+respectively. The degree-one estimate is unchanged.
