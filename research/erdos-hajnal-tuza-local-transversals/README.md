@@ -18,6 +18,8 @@ conditional construction obstruction as an answer.
 | [Witness expansion](WITNESS-EXPANSION-DICHOTOMY.md) | A subquadratic minimum-pair component whose witness wings stay dispersed: a growing cluster must share almost all of both wings. |
 | [Witness expansion with slack](WITNESS-EXPANSION-WITH-SLACK.md) | Extends the sparse-neighborhood versus wing-clustering dichotomy to all offsets 1 ≤ z ≤ t/4. |
 | [Shared support versus order](SHARED-SUPPORT-VERSUS-ORDER.md) | Under wing separation, a subcubic example must share at least about 3t vertices outside any such minimum pair. |
+| [Superlinear opposite-pivot expansion](SUPERLINEAR-OPPOSITE-PIVOT-EXPANSION.md) | For fixed offset, fewer than order t^(3/2) near-minimum neighbors on both sides, with no wing-separation assumption. |
+| [Two-sided witness reuse](TWO-SIDED-REUSE.md) | Opposite-side high reuse without a common residual vertex; projective-plane incidence data show why counting absences alone is weaker. |
 | [Minimum-rank rigidity](MINIMUM-RANK-RIGIDITY.md) | Replacing the standard core by a different 3-wise intersecting core of rank at most 2t+1. Below the classical threshold even the whole light-edge subfamily must be t-transversal. |
 | [Larger cores and four-fold padding](LARGER-CORE-PADDING.md) | Extending minimum-rank rigidity by even one; below the classical threshold, selected triples must share many padding vertices. |
 | [Near-minimum dense-core barrier](NEAR-MINIMUM-DENSE-CORE.md) | For a wider fixed-core class, beating the classical construction near its start even with unrestricted shared padding and no core three-wise assumption. |
