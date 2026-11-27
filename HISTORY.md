@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — The dandelion minimum for complementary diameter-three graphs
+
+The dandelion and its complement minimize the sum of the two algebraic connectivities at every order. The computer-assisted proof identifies every equality case, settling Barrett–Evans–Hall–Kempton’s Conjecture 2. [Result and attribution](results/barrett-evans-hall-kempton-dandelion/README.md) · [Independent review](results/barrett-evans-hall-kempton-dandelion/REVIEW.md)
+
 ## 2026-11-27 — de Joannis de Verclos’s projective rigidity conjecture
 
 Adam Benazouz contributed the [reviewed written proof](results/de-verclos-projective-rigidity/PROOF.md), building on Cinna Davis’s secant and incidence arguments. A line-null planar probability measure whose support has Hausdorff dimension greater than one is determined up to projectivity by its finite order-type laws. The sampling measure itself need not have Hausdorff dimension greater than one.
