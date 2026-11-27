@@ -1,0 +1,29 @@
+# Proper-colouring forcing for the one-Cohen witness
+
+**Theorem.** In the extension by one Cohen real, let \(H\) be the selected-two-path triple system for Erdős–Galvin–Hajnal 9/C. The forcing \(Q(H)\) of finite proper partial countable vertex colourings has precaliber \(\aleph_1\), but is not \(\sigma\)-linked. More generally, its precaliber proof applies to selected finite directed paths of any fixed length in a graph with the same bounded-neighbourhood property.
+
+This concerns the one-Cohen construction, not the unrestricted finite-condition construction. The latter has a modified variant with a non-Knaster colouring forcing. The results are compatible: the present underlying graph satisfies a stronger neighbourhood condition.
+
+## Precaliber
+
+Let \(D\) be the directed support graph. For any \(\delta<v<\omega_1\), only finitely many directed edges from \([0,\delta]\) reach \(v\), since the increasing ladder at \(v\) is cofinal and the candidate at stage \(j\) is above its \(j\)-th entry. Every hyperedge carries a connected graph on its vertices, namely its selected directed path.
+
+For an uncountable family of finite proper maps, take an uncountable \(\Delta\)-system of supports with root \(R\) and then fix the colours on \(R\). Recursively thin the petals to nonempty blocks \(B_i\), \(i<\omega_1\), where \(\min B_i\) is bigger than every root vertex and strictly bigger than some bound \(\delta_i\) on the union of the earlier blocks. At any step all but countably many unused petals are above the countable ordinal bounding the earlier ones, by disjointness. (If repetitions of support are allowed, there are only countably many maps on one support, so the thinning still works.) For each \(i\), only finitely many earlier \(B_j\) share a \(D\)-edge with \(B_i\). Colour the indices with countably many colours by avoiding the finitely many colours of such earlier indices. One colour gives uncountably many petals with no \(D\)-edge between distinct petals.
+
+These conditions are centered: a finite union is a function, and if it introduced a monochromatic selected path not already in one condition, the path would meet two petals. Because the path is increasing and every root vertex is below every petal vertex, it would have consecutive vertices in two different petals, contrary to the thinning. Thus each finite union is a common extension.
+
+## Not \(\sigma\)-linked
+
+Work in the ground model and suppose a Cohen condition \(p\) forces a partition of \(Q(H)\) into linked classes indexed by \(\omega\). A linked class here means every two of its conditions have a common extension.
+
+There is a ground club \(C\) of limit ordinals \(\beta\) for which \(\{h(a):a\in L\cap\beta\}\) is cofinal in \(\beta\); use the diagonal intersection of the clubs of limit points of the stationary fibres of \(h\). For each \(\beta\in C\), the Cohen forcing forces some accepted base at \(\beta\): after an arbitrary finite condition, set all unresolved prior reads to neutral, and use a fresh stage to select \(a\) with \(h(a)\) exceeding the previously accepted endpoints, \(h(\beta)\), and the ladder value at that stage. Let \(\dot a_\beta\) be the predecessor of the first accepted base at \(\beta\) and \(\dot u_\beta\) the zero-valued proper partial map on \(\{\dot a_\beta,\beta\}\).
+
+For each \(\beta\in C\), choose \(q_\beta\le p\) deciding both the first base stage and the class of \(\dot u_\beta\). Encode that condition, stage, and class by a countable ground colouring, using a distinguished code off \(C\). The stationary-fibre proof of the good-vertex lemma works with domain \(C\), since each fibre still meets \(C\) stationarily. It gives a \(\beta\) with \(h\)-cofinally many \(b<\beta\) of its own code, say \((q,j,k)\).
+
+Choose a stage \(m>j\) beyond all coordinates of \(q\). At \(\beta\) complete every unresolved read at stages below \(m\) with neutral records, choosing any still-unspecified length. Let \(B<\beta\) bound all candidates accepted so far. Take \(b\) of code \((q,j,k)\) with \(h(b)>\max\{h(\beta),B,\ell_\beta(m)\}\). At stage \(m\) set the fresh length and the read at \(\beta\) to the top record selecting \(b\) with selector \(j\). This extends \(q\), which already forces a first base at \(b\) at stage \(j\), so the new condition forces \(\{\dot a_b,b,\beta\}\in H\). It also forces both \(\dot u_b,\dot u_\beta\) into linked class \(k\). Their union makes this triple monochromatic, contradicting linkage.
+
+## Forcing-axiom boundary of this witness
+
+The sets of conditions that colour a given vertex are dense: use a new colour when adding that vertex. Hence \(\mathrm{MA}_{\omega_1}(\text{precaliber }\aleph_1)\) would colour any selected-path witness with this bounded-neighbourhood property countably. This is a limit on this construction, not a negative answer to 9/C under full MA. The earlier positive consistency with \(\mathrm{MA}_{\omega_1}(\sigma\text{-3-linked})\) can use this same one-Cohen witness: its finite hyperedges remain counterexamples to every countable colouring in a \(\sigma\)-3-linked extension. The bounded-neighbourhood condition is absolute for the fixed graph, so the precaliber conclusion still holds in the iteration model. No claim is made that non-\(\sigma\)-linkedness of the newly computed colouring forcing is preserved by that iteration.
+
+For context, the original Hajnal–Máté obstruction under full MA is [Hajnal–Máté (1975), §8.2](https://www.sciencedirect.com/science/article/pii/S0049237X08719566); for known distinctions between restricted axioms, see [*Distinguishing Martin's axiom from its restrictions*](https://www.sciencedirect.com/science/article/abs/pii/S0001870824005486). The point of this note is the classification of the explicit colouring forcing for the selected hypergraph, not priority for separating the general axiom classes.
