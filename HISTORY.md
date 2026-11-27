@@ -4,6 +4,10 @@
 
 Published the full written argument for Conjecture 2 of Kempton, Zaitzeff and Muthuprakash. Cinna Davis recorded the projected-row proof strategy, which was reconstructed and independently reviewed in the WadeDavis research session. The original authors’ focus family makes the exponent sharp. [Proof](results/normalized-nordhaus-gaddum/PROOF.md) · [Attribution and prior work](results/normalized-nordhaus-gaddum/AUDIT.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/495)
 
+## 2026-11-27 UTC — Radial scales and convex hulls at the pinned-distance barrier
+
+Under a global quadratic bound on isosceles trapezoids, any sequence reaching the mean one-third barrier has a countable family of scales accounting for all site mass. The expected fraction of convex-hull vertices vanishes in every growing independent sample. A positive lower bound for that fraction would rule out such sequences. [Radial decomposition](results/erdos-general-position-pinned-distances/RADIAL-PROFILES.md) · [Recursive argument](results/erdos-general-position-pinned-distances/RADIAL-SCALE-TREE.md) · [Review](results/erdos-general-position-pinned-distances/RADIAL-PROFILES-REVIEW.md)
+
 ## 2026-11-27 — Sharp average-degree occupancy in triangle-free graphs
 
 Published the variance-and-entropy proof recorded in Cinna Davis’s research issue. It resolves Buys, van den Heuvel and Kang’s asymptotic Conjecture 12, giving the leading constant one for the mean independent-set size in terms of average degree. The November 27 extension proves the pointwise redux throughout its stated range by a differential comparison. [Pointwise proof](results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md) [Proof](results/buys-van-den-heuvel-kang-occupancy/PROOF.md) · [Review and checks](results/buys-van-den-heuvel-kang-occupancy/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/497)
