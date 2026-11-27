@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
+
+Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
+
 ## 2026-11-27 UTC — Atomic limits in the site-centered distance problem
 
 Under a fixed global quadratic bound on isosceles trapezoids, a sequence attaining the one-third mean pinned-distance barrier cannot have a rescaled finite limit mixing point atoms and nonatomic mass. The proof also bounds the concentration of radius and projection fibers. The unrestricted gap remains open. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)

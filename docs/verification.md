@@ -169,6 +169,8 @@ Run `python3 results/erdos-general-position-pinned-distances/check_sparse_pair_m
 
 Run `python3 results/erdos-general-position-pinned-distances/check_atomic_limits.py` to check marked carrier intersections on 300 circle triples, 592 exact Jacobians for the two continuous models, and the heavy-fiber count. [Atomic-limit proof](../results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](../results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)
 
+Run `python3 results/erdos-general-position-pinned-distances/check_atomic_children.py` to test the diameter-neighbor and reflected-partner arguments, including 66,418 diameter graphs and 3,370 weighted pentagon targets. [Atom-cloud proof](../results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Independent review](../results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
+
 Run `python3 results/erdos-general-position-pinned-distances/check_four_grids.py` to enumerate circles and active pairs on rational four-grid examples with 23, 58 and 109 sites. Each example attains the site-centered cap of three and the global cap of four. The [independent review](../results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md) checks the general construction.
 
 ## Cioba–Savvas shutout number conjecture
