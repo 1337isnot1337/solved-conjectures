@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Order representations of Soukup’s complementary graph products
+
+Cinna Davis constructed a graph with the required chromatic numbers in every extension by one Cohen real. The finite-dimensional order obstruction under the bounded proper forcing axiom gives the opposite consistency direction for the restricted representation. A separate ZFC theorem gives a regressive-map normal form on the entire first uncountable ordinal. The original problem remains open. [Results](results/soukup-complementary-graph-product/) · [Independent reviews](results/soukup-complementary-graph-product/REVIEW.md)
+
 ## 27 November 2026 — The stable core of Komjáth’s property B problem
 
 Cinna Davis proved that the entire discarded part of the transfinite low-codegree iteration is essentially disjoint and that ordinary two-colorability of its stable core is equivalent to ordinary two-colorability of the full family. The arbitrary nonempty core remains open. The published 1986 single-stage filtration result is credited separately. [Theorem](results/komjath-property-b/LOW-CODEGREE-PEELING.md) · [Independent review](results/komjath-property-b/PEELING-REVIEW.md)

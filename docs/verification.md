@@ -1,5 +1,9 @@
 # Verification
 
+## Soukup’s complementary graph products
+
+Run `python3 results/soukup-complementary-graph-product/verify_components.py` to check the component description on all 65,536 labelled four-by-four bipartite relations. The [review](../results/soukup-complementary-graph-product/REVIEW.md) records the separate mathematical checks for the forcing and order arguments.
+
 ## Bourin’s crossed-Heinz inequality
 
 The [finite-witness and computation proofs](../results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md) have exact arithmetic checks. Run `python3 results/bourin-crossed-heinz/verify_finite_witness.py` for the compressed test frames and `python3 results/bourin-crossed-heinz/verify_gap_grid.py` for the endpoint, threshold and grid identities.
