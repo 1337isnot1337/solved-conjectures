@@ -89,6 +89,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Cameron–Clow’s claw-free path-perfect conjecture": "cameron-clow-claw-free-path-perfect",
     "Cameron–Clow’s co-diamond path-perfect conjecture": "cameron-clow-co-diamond-path-perfect",
     "Gajser–Mohar’s polynomial normal-cover conjecture": "gajser-mohar-polynomial-normal-cover",
     "de Berg–Sadhukhan–Spieksma’s one-stable domination conjecture": "de-berg-sadhukhan-spieksma-one-stable-domination",

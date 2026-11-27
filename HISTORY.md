@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Cameron–Clow’s claw-free path-perfect conjecture
+
+The [claw-free counterexample](results/cameron-clow-claw-free-path-perfect/) answers Cameron and Clow’s forbidden-star question. The line graph of a three-branch root is claw-free, is 4-vertex-critical and has no Hamilton path. Its path-span chromatic number is exactly three, and triangle replacements give an infinite family. No Lean verification was performed. [Discovery and review issue #1005](https://github.com/1337isnot1337/solved-conjectures/issues/1005).
+
 ## 2026-11-27 UTC — Cameron–Clow’s co-diamond path-perfect conjecture
 
 The [co-diamond path-perfect theorem](results/cameron-clow-co-diamond-path-perfect/) resolves the co-diamond-free assertion of Cameron and Clow at every graph order and chromatic number. It uses vertex-criticality and a Hall matching for labeled path gaps. The separate two-disjoint-edges assertion and unrestricted odd-cycle problem are not claimed. No Lean formalization was used. [Discovery and review issue #1002](https://github.com/1337isnot1337/solved-conjectures/issues/1002).
