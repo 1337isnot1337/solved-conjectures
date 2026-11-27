@@ -13,6 +13,10 @@ python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
 python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
 ```
 
+## Erdős–Galvin–Hajnal’s link-path partition problem
+
+Read the [proof](../results/erdos-galvin-hajnal-link-path-partition/PROOF.md) and [review of the two consistency directions](../results/erdos-galvin-hajnal-link-path-partition/REVIEW.md). Run `python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py` to check the bounded encoding on every path-free labeled triple system of orders one through six. The [shadow transfer](../results/erdos-galvin-hajnal-link-path-partition/SHADOW-TRANSFER.md) has a [separate load and sharpness checker](../results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py).
+
 ## Erdős–Galvin–Hajnal’s half-overlap hypergraph problem
 
 Run `python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py` from the repository root. The checks cover mixed-width intersections, single-vertex trimming and finite row-color witnesses. The infinite cardinal and strong-coloring arguments are in the [proof](../results/erdos-galvin-hajnal-half-overlap-hypergraphs/PROOF.md) and [independent review](../results/erdos-galvin-hajnal-half-overlap-hypergraphs/REVIEW.md).
