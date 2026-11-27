@@ -5,7 +5,7 @@ Let $`P`$ be a planar set of $`n`$ distinct sites, with no four on a circle. A c
 For all $`2\le K\le n`$,
 
 ```math
-T_K\ll n^2K^{-1/4}+n^{17/9}.
+T_K\ll n^2K^{-1/2}+n^{17/9}.
 ```
 
 Consequently $`T_{K_n}=o(n^2)`$ for every sequence $`K_n\to\infty`$. This includes thresholds growing arbitrarily slowly and strengthens the [earlier two-bisector estimate](TWO-RICH-BISECTORS.md). The estimate concerns two sides. A single side can have an unbounded number of equidistant pins.
@@ -34,18 +34,24 @@ Here $`W`$ and $`nt`$ are absorbed by the two terms displayed. For $`2\le B\le S
 
 ## Small carriers, large carriers, and triangle counting
 
-On carriers with fewer than $`B`$ sites every axis has at most $`B`$ reflected pairs. On the other hand $`\sum_{L:r_L\ge K}r_L\le 2\binom n2/(K-1)`$ because each pair of distinct sites determines one line. The incidences with these small carriers and $`K`$-rich axes number $`O(n^2B/K)`$. Every incident pin–pair belongs to at most one centered triangle since at most one further site lies on its circle.
+For the family $`\mathcal L_K`$ of all lines containing at least $`K`$ sites, Szemerédi–Trotter first gives $`|\mathcal L_K|\ll n^2/K^3+n/K`$. Apply the point–line incidence form again to these lines and the $`n`$ sites. For $`K\le\sqrt n`$ use $`|\mathcal L_K|\ll n^2/K^3`$; for $`K\ge\sqrt n`$ use $`|\mathcal L_K|\ll n/K`$. In the first case the mixed term is at most a constant times $`n^2/K^2`$, and in the second it is at most a constant times $`n`$. The linear terms obey the same combined bound, giving
+
+```math
+\sum_{L\in\mathcal L_K}r_L=I(P,\mathcal L_K)\ll n^2/K^2+n.
+```
+
+On carriers with fewer than $`B`$ sites every axis has at most $`B`$ reflected pairs. Hence the total small-carrier contribution from rich axes is $`O(B(n^2/K^2+n))`$. Every incident pin–pair belongs to at most one centered triangle since at most one further site lies on its circle.
 
 Let $`h`$ be the number of carriers with more than $`S`$ sites. Szemerédi–Trotter gives $`h\ll n^2/S^3+n/S`$. Two distinct sides of a triangle on large carriers intersect at a base vertex lying on two such carriers. There are at most $`\binom h2`$ possible sites at their intersections. A fixed base site belongs to at most $`n-1`$ centered triangles, one for each possible pin. Hence at most $`O(nh^2)`$ centered triangles have two sides on large carriers.
 
 A triangle counted by $`T_K`$ has either a rich side on a small or intermediate carrier, or two sides on large carriers. Therefore
 
 ```math
-T_K\ll n^2(B/K+B^{-1/3})+n^{4/3}S
+T_K\ll n^2(B/K^2+B^{-1/3})+nB+n^{4/3}S
 +n(n^2/S^3+n/S)^2.
 ```
 
-For growing $`n`$ choose $`S=\lceil n^{5/9}\rceil`$ and $`B=\min(S,\max(2,\lceil K^{3/4}\rceil))`$. Then $`n^{4/3}S`$ and the intersection-count term are $`O(n^{17/9})`$. The term $`n^2B/K`$ is $`O(n^2K^{-1/4})`$, while $`n^2B^{-1/3}\ll n^2K^{-1/4}+n^{17/9}`$. Adjusting the absolute constant covers bounded $`n`$.
+Choose $`S=\lceil n^{5/9}\rceil`$ and $`B=\min(S,\lceil K^{3/2}\rceil)`$. Both the intersection count and $`n^{4/3}S`$ are $`O(n^{17/9})`$, which absorbs $`nB`$. Since $`B\ll K^{3/2}`$, the small-carrier term $`n^2B/K^2`$ is $`O(n^2/\sqrt K)`$. If the cutoff is uncapped, $`B^{-1/3}\le K^{-1/2}`$. If it reaches $`S`$, then $`n^2 S^{-1/3}\le n^{49/27}\le n^{17/9}`$. This proves the stated bound uniformly.
 
 ## Where a single exceptional side can persist
 
