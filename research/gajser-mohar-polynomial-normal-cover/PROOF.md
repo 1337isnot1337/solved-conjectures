@@ -72,7 +72,9 @@ and also proves finiteness without the original exponential bound.
 ## Lower bound: a prefix tree
 
 The construction below extends the binary-prefix construction in
-Gajser and Mohar, Proposition 2.1. Take the rooted $`b`$-ary tree of depth $`c`$ and use its nonroot nodes
+Gajser and Mohar, Proposition 2.1. The original keeps only one
+final child at each depth-(c−1) vertex; here we retain all final
+children and vary the branching. Take the rooted $`b`$-ary tree of depth $`c`$ and use its nonroot nodes
 as vertices. Two nodes are adjacent exactly when one is an
 ancestor of the other. The clique cover consists of all full
 root-to-leaf paths, with the root removed. Each has $`c`$ vertices.
