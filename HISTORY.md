@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős–Galvin–Hajnal’s half-overlap hypergraphs
+
+Published Cinna Davis’s ZFC solution of the 1975 Problem 11 at aleph-two for all original uniformities. The proof uses a strong coloring of ordinal pairs to select one rectangle per row pair. The full threshold credits the original conditional and impossibility results. [Proof](results/erdos-galvin-hajnal-half-overlap-hypergraphs/PROOF.md) · [Source comparison](results/erdos-galvin-hajnal-half-overlap-hypergraphs/PRIOR-ART.md) · [Independent review](results/erdos-galvin-hajnal-half-overlap-hypergraphs/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1040)
+
 ## 2026-11-27 — Sharp second adjacency eigenvalue sum and Seidel spread
 
 Published the sharp bound and four-block equality case conjectured by Abreu, Brondani, de Lima and Oliveira. The reconstruction of Cinna Davis’s announced Seidel-spread method determines the exact maximum spread of every order, including the odd-order refinement. [Proof](results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Sources and attribution](results/abreu-brondani-adjacency-nordhaus-gaddum/AUDIT.md) · [Review](results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/499)
