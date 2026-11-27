@@ -1,0 +1,9 @@
+# Lambie-Hanson–Uhrik’s disjoint-type guessing problem
+
+Lambie-Hanson and Uhrik asked in 2024 whether every sequence of bounded-depth interleaving types admits a ladder system that guesses it. Cinna Davis’s written proof establishes that the answer is independent of ZFC, assuming ZFC is consistent. One depth-one sequence fails in a model of the proper forcing axiom restricted to posets of size ℵ₁. In a model with club guessing, the original authors’ theorem gives guessing for every sequence. [Original Question 6.1](https://arxiv.org/pdf/2312.01828#page=15) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/1061)
+
+The proof classifies ordinary guessing under that restricted forcing axiom using two integers for each type. After orienting the interleaving to end in an upper point, the first integer counts upper points before the last lower point. The second counts lower points before the last of those upper points, with value zero if there are none. When both integers are bounded across the sequence, one ladder system already suffices in ZFC, even for arbitrarily large widths. When either integer is unbounded, the restricted forcing axiom rules out a guessing ladder system. The classification concerns ordinary guessing as in Definition 2.6. [Proof](PROOF.md) · [Source comparison and priority search](PRIOR-ART.md)
+
+The classification survives any countable forcing over a ground model of the restricted proper forcing axiom, including sequences that appear for the first time in the extension. The distinct graph question, Question 6.2, remains open. [Preservation theorem](COUNTABLE-FORCING.md)
+
+**Lean status:** none. The result has a written proof and internal mathematical review. The finite script checks the identities for flags and model cuts. [Independent review](REVIEW.md) · [Finite checks](check_flags.py)

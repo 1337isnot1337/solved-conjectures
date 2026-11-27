@@ -98,6 +98,7 @@ STATUS_LABEL_SLUGS = {
     "Erdős’s arbitrary-cardinal bipartization conjecture": "erdos-arbitrary-cardinal-bipartization",
     "Buys–van den Heuvel–Kang’s average-degree occupancy conjecture": "buys-van-den-heuvel-kang-occupancy",
     "Dall’Ara–Dumitrescu’s higher-dimensional cube covering question": "dallara-dumitrescu-cube-covering",
+    "Lambie-Hanson–Uhrik’s disjoint-type guessing problem": "lambie-hanson-uhrik-disjoint-type-guessing",
     "Erdős–Galvin–Hajnal’s repeated-pair partition problem": "erdos-galvin-hajnal-repeated-pair-partition",
     "Erdős–Galvin–Hajnal’s link-path partition problem": "erdos-galvin-hajnal-link-path-partition",
     "Erdős–Galvin–Hajnal’s half-overlap hypergraph problem": "erdos-galvin-hajnal-half-overlap-hypergraphs",

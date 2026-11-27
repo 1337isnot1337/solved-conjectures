@@ -17,6 +17,10 @@ python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
 python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
 ```
 
+## Disjoint-type guessing
+
+Run `python3 results/lambie-hanson-uhrik-disjoint-type-guessing/check_flags.py` to compare full binary types with their exact flags, model-cut truncations and guard conditions for widths two through four. The infinite ladder construction, strong properness and independence argument are in the [proof](../results/lambie-hanson-uhrik-disjoint-type-guessing/PROOF.md) and [independent review](../results/lambie-hanson-uhrik-disjoint-type-guessing/REVIEW.md).
+
 ## Erdős–Galvin–Hajnal’s repeated-pair partition problem
 
 Run `python3 results/erdos-galvin-hajnal-repeated-pair-partition/verify_amalgamation.py` to enumerate the placements of both forbidden configurations in a finite amalgam, including one newly added marked triple. The infinite forcing, preservation and positive consistency arguments are in the [negative-model proof](../results/erdos-galvin-hajnal-repeated-pair-partition/NEGATIVE-MODEL.md), [independence proof](../results/erdos-galvin-hajnal-repeated-pair-partition/PROOF.md) and [independent review](../results/erdos-galvin-hajnal-repeated-pair-partition/REVIEW.md).

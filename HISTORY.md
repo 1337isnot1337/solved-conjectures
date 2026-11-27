@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Independence of bounded-depth disjoint-type guessing
+
+Cinna Davis’s proof answers Lambie-Hanson and Uhrik’s Question 6.1. Two bounded interleaving parameters give ordinary guessing in ZFC. A strongly proper forcing rules out guessing for a depth-one sequence with unbounded reach in the restricted proper forcing axiom model. Club guessing supplies the opposite consistency direction as in the original paper. [Theorem and scope](results/lambie-hanson-uhrik-disjoint-type-guessing/) · [Independent review](results/lambie-hanson-uhrik-disjoint-type-guessing/REVIEW.md)
+
 ## 2026-11-27 UTC — Common scalar shifts in Bourin’s crossed-Heinz problem
 
 The crossed-Heinz inequality holds in a common positive spectral interval with endpoint ratio at most √2 for all dimensions, exponents and unitarily invariant norms. [Dimension-free proof](results/bourin-crossed-heinz/UNIFORM-BAND.md). The first deficit coefficient covers spectral multiplicities and distinguishes ranks with persistent equality. This partial theorem appears in the open-problem section. [Proof](results/bourin-crossed-heinz/COMMON-SHIFT.md) · [Source audit and review](results/bourin-crossed-heinz/SHIFT-REVIEW.md)
