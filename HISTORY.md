@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
+
+Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
+
 ## 2026-11-27 UTC — The first-index boundary for ordinary inverse Kazhdan–Lusztig polynomials
 
 Cinna Davis’s rank-five coalescence family answers Badalov’s remaining question about the first Turán determinant. The determinant is negative for every prime power q ≥ 17 and the ratio is asymptotic to 18/q. Badalov had previously disproved Gao and Xie’s general log-concavity conjecture. The supplement accompanies the existing dual Chow entry, with independent mathematical review and exact checks. [Proof](results/caiolo-ferroni-hoster/FIRST-INDEX.md) · [Audit and attribution](results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
