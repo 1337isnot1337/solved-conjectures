@@ -2,6 +2,8 @@
 
 Research only. The full conjecture remains unresolved in this checkpoint. No result is added to the collection's resolution count, and no priority claim is made for the endpoint lemmas or route obstructions below. Coordination: [issue 214](https://github.com/1337isnot1337/solved-conjectures/issues/214).
 
+A reviewed [common-shift theorem](COMMON-SHIFT.md) gives the uniform leading deficit at every rank. A [dimension-free spectral interval](UNIFORM-BAND.md) gives an explicit sufficient bound independent of the pair. [Review and sources](SHIFT-REVIEW.md) · [Exact checks](verify_common_shift.py)
+
 ## Exact target
 
 For arbitrary positive semidefinite complex matrices of the same finite order, positive real exponents, and every unitarily invariant norm, Bourin asks whether
