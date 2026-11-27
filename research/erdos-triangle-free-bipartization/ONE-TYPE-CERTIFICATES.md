@@ -36,4 +36,27 @@ Here D is the finite probability divergence and is positive unless α preserves 
 
 For a pentagon with one light class and four equal heavier classes, the orbit requirement fails: optimal cuts leave a light-incident edge, but its rotations range over all edges. Thus V_k>m for every finite k at these fixed weights, although V_k tends to m exponentially. The [uniform averaging result](OPTIMAL-ROOT-RATE.md) is a different statement and has worst-case gap of order k⁻¹ᐟ² across weights.
 
+## Sharp uniform order over the weights of a fixed template
+
+Although the exponential rate is pointwise at each fixed weight vector, the following stronger uniform statement holds:
+
+    sup_[positive weights on H] (V_k−m) = O_H(1/k).
+
+For the pentagon the order 1/k is sharp, with examples again in the middle density band.
+
+**Upper bound.** Sort the weights w₁≤⋯≤w_r. Choose multiplicities n_i≥1 increasing with adjacent increments at least b, where b≥c_r k for sufficiently large k. For example start with n_i=1+(i−1)b for b=floor(2(k−r)/(r(r−1))) and give any remainder to n_r. This type still identifies the template up to automorphisms, even though it may be rare.
+
+Write ℓ_i=log w_i. For an automorphism α, the negative log posterior ratio relative to the chosen orientation is
+
+    ∑_i n_i(ℓ_i−ℓ_(α(i)))
+      = ∑_(j=2)^r (n_j−n_(j−1)) [∑_(i≥j)ℓ_i−∑_(i≥j)ℓ_(α(i))].
+
+Every bracket is nonnegative, since the sorted top set maximizes the sum. Moreover if α moves a value across indices i and α(i), some bracket is at least |ℓ_i−ℓ_(α(i))|. If ℓ_i>ℓ_(α(i)), take the top set starting at i: its image includes the latter low value, replacing a value at least ℓ_i. If ℓ_i<ℓ_(α(i)), take the top set starting at i+1: its image omits the latter high value and includes a replacement at most ℓ_i. Other replacements cannot decrease the bracket. Hence the posterior ratio is at most exp(−b D_α), where D_α=max_i|w_i−w_(α(i))|, using that log differences dominate weight differences on (0,1].
+
+Use an optimum cut in the chosen orientation. For any fixed cut its ordered cost changes by at most 2||w−w_α||₁ under the weight permutation, by expanding the difference of the two product measures. The optimum itself does not change under automorphisms. Thus conditional excess is at most ∑_α 2r D_α exp(−b D_α)≤2r|Aut(H)|/(e b), proving uniform O_H(1/k).
+
+**Lower bound.** Use the rotated pentagon example of [ROOT-LOWER-BOUND](ROOT-LOWER-BOUND.md) but with δ=1/(100k), and the same component and isolated masses. The two placements induce the same distribution of observed root types. For any latent sequence, the probability ratio of the placements lies between exp(−5/16) and exp(5/16): each differing single-root mass ratio is at most 1+(5/16)/k. The same bounds hold after conditioning on any one observed type, because that type's probability is identical in both placements. Thus the conditional overlap of the two laws is at least exp(−5/16)>2/3, uniformly in the type. At any latent sequence the two candidate regrets still sum to at least 2(7/8)²δ, and the two expected regrets are the same by rotation, even conditionally on the type. Therefore each type and each Boolean rule has regret greater than 1/(200k). This proves the matching uniform lower bound.
+
+The conditional one-type gap can therefore be smaller than the k⁻¹ᐟ² averaged gap even on the same template, but it still need not vanish at any finite k.
+
 [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
