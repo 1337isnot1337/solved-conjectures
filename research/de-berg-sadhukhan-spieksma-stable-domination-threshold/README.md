@@ -9,6 +9,7 @@ recourse. The proof uses an online degree reduction and a
 bounded-size block algorithm for the positive direction.
 
 - [Proof](PROOF.md)
+- [Extension to vertex deletions](FULLY-DYNAMIC.md)
 - [Sources and attribution](SOURCES.md)
 - [Exact regression checks](verify.py)
 - [Discovery and review issue #996](https://github.com/1337isnot1337/solved-conjectures/issues/996)

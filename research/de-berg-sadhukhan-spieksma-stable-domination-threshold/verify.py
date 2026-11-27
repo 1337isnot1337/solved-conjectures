@@ -201,3 +201,101 @@ if __name__ == "__main__":
           f"global lifts: {test_lifts()} exact optima", flush=True)
     print(f"Degree-two blocks: {test_block_streams():,} ordered graphs, all prefixes, "
           "100 larger cycle streams")
+
+
+def test_deletions():
+    rng = Random(20261127)
+    cases = 0
+    for L in (1, 2, 3, 5):
+        for _ in range(25):
+            G = {}
+            blocks = {}
+            owner = {}
+            answers = {}
+            next_vertex = 0
+
+            def install(region):
+                left = set(region)
+                while left:
+                    comp = {min(left)}
+                    pending = list(comp)
+                    while pending:
+                        for v in (G[pending.pop()] & left) - comp:
+                            comp.add(v)
+                            pending.append(v)
+                    left -= comp
+                    seq = order_region(G, comp)
+                    q, a = divmod(len(seq), L)
+                    if q <= 1:
+                        segments = [seq]
+                    else:
+                        segments = [seq[:L+a]]
+                        segments.extend(seq[L+a+j*L:L+a+(j+1)*L]
+                                        for j in range(q-1))
+                    for seq2 in segments:
+                        B = set(seq2)
+                        id_ = min(B)
+                        blocks[id_] = B
+                        answers[id_] = block_solution(G, B)
+                        for v in B:
+                            owner[v] = id_
+
+            for step in range(100):
+                selected = set().union(*answers.values())
+                if not G or rng.random() < .62:
+                    v = next_vertex
+                    next_vertex += 1
+                    eligible = [u for u in G if len(G[u]) < 2]
+                    E = set(rng.sample(eligible,
+                                       rng.randrange(min(2, len(eligible))+1)))
+                    ids = {owner[u] for u in E}
+                    region = {v}
+                    for i in ids:
+                        region |= blocks.pop(i)
+                        answers.pop(i)
+                    G[v] = E
+                    for u in E:
+                        G[u].add(v)
+                else:
+                    v = rng.choice(list(G))
+                    adj = G.pop(v)
+                    for u in adj:
+                        G[u].remove(v)
+                    id_ = owner.pop(v)
+                    region = blocks.pop(id_) - {v}
+                    answers.pop(id_)
+                    unvisited = set(region)
+                    touched = set()
+                    while unvisited:
+                        comp = {min(unvisited)}
+                        stack = list(comp)
+                        while stack:
+                            for w in (G[stack.pop()] & unvisited) - comp:
+                                comp.add(w)
+                                stack.append(w)
+                        unvisited -= comp
+                        if len(comp) < L:
+                            nbrs = set().union(*(G[u] for u in comp)) - region
+                            if nbrs:
+                                touched.add(owner[min(nbrs)])
+                    for i in touched:
+                        region |= blocks.pop(i)
+                        answers.pop(i)
+                install(region)
+                now = set().union(*answers.values())
+                assert len(now ^ selected) <= 6*L
+                assert now <= G.keys() and all(u in now or G[u] & now for u in G)
+                assert set().union(*blocks.values()) == G.keys()
+                assert sum(map(len, blocks.values())) == len(G)
+                assert all(len(B) <= 2*L and
+                           (len(B) >= L or all(G[u] <= B for u in B))
+                           for B in blocks.values())
+                cuts = sum(owner[u] != owner[w] for u, adj in G.items()
+                           for w in adj if u < w)
+                assert cuts*L <= len(G)
+                cases += 1
+    return cases
+
+
+if __name__ == "__main__":
+    print(f"Deletion extension: {test_deletions():,} mixed update steps")
