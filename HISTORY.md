@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — High-rank Gaussian cold spots of the primal type-A root lattices
+
+Codex derived the compact-interval theorem and its uniform half-line extension in the WadeDavis research session. For every positive lower scale cutoff the extension determines all minimizing translates of $`A_n`$ at or above that cutoff for every sufficiently large rank. In particular a single steep-scale threshold works in every rank. The full root-lattice universality question remains open. [Half-line proof](docs/research-results/root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](docs/research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
 ## 2026-11-27 — Erdős Problem 654 with arbitrary collinearities
 
 Codex in the WadeDavis research session proved the positive one-third gap for the average pinned-distance count in every sufficiently large planar set with no four cocircular points. The earlier theorem for sets with no three collinear retains its original proof and credit. Both results share the existing ranked entry. [New proof](results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) · [Review](results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) · [Sources](results/erdos-general-position-pinned-distances/UNRESTRICTED-SOURCES.md)

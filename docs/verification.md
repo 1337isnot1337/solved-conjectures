@@ -8,6 +8,10 @@ Run `python3 results/langi-wang-convex-tiling/check_sectors.py` with standard Py
 
 Run `python3 docs/research-results/dual-a-universal-cold-spots/verify.py` with standard Python. The verifier compares thirty degrees of the exact theta and product series in ranks one through ten. Direct lattice sums separately check the value, the directional Hessian and a displaced point for nine choices of rank and parameter. [Mathematical proof](research-results/dual-a-universal-cold-spots/PROOF.md) · [Review and reproduction details](research-results/dual-a-universal-cold-spots/REVIEW.md)
 
+## Gaussian cold spots of high-rank type-A root lattices
+
+Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py` and `python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py`. The first script certifies 700 strict central-class comparisons across ranks 4 through 23. The second compares four noncentral translates and two origin translates with the deep classes in ranks 5 and 9 at four times the natural logarithm of two. Both use explicit bounds on omitted Gaussian tails. The uniform all-translation theorem has a written proof. [Half-line argument](research-results/root-a-high-rank-cold-spots/HALF-LINE.md) · [Review](research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
 ## Leech lattice cold-spot coefficients
 
 Run `python3 docs/research-results/leech-cold-spots-asymptotics/verify.py` with standard Python. Integer bisection bounds the optimized leading coefficient for each of the 23 deep-hole types. The verifier checks that $`E_8^3`$ has the smallest coefficient and $`D_{24}`$ the second smallest. The localization of the Gaussian minimizers is proved analytically. [Proof](research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](research-results/leech-cold-spots-asymptotics/REVIEW.md)
