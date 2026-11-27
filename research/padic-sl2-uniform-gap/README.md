@@ -161,6 +161,8 @@ On the resulting projective ball, two bounded words in any generating triple giv
 
 For an arbitrary marking, a short word of depth $`d`$ gives a direct energy comparison from exact conductor $`d+b`$ to conductor $`b`$ when $`3\le b\le d`$. On a full neighborhood of an explicit arithmetic marking, three fixed relations identify the first digit where a triple departs from its arithmetic conjugacy class. [Short-word bound and explicit coordinates](SHORT-RELATIONS.md)
 
+At any prescribed congruence depth one can also choose short words with an arbitrary leading Lie digit. At Fibonacci depths their lengths give a stronger lower bound on the number of cycle frequencies carrying a fixed fraction of a slow vector's mass. [Word construction and Fourier support bound](DEPTH-WORDS.md)
+
 In position coordinates, a slow vector has vanishing mass on rational points of subpower height in every integral projective chart, including charts varying with the level. The proof recovers a rational matrix from three modular point matches and transfers a localized vector to a free-group action. [Rational-point bound and scope](RATIONAL-POINTS.md)
 
 At a fixed spectral threshold below one, the whole high spectral subspace has vanishing projection onto shrinking neighborhoods of bounded-degree plane curves in joint position and frequency coordinates. This holds for all generating triples, including when the curve and its coefficients vary with the level. [Phase-plane estimate and scope](PHASE-PLANE.md)
