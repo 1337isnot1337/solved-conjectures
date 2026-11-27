@@ -116,6 +116,13 @@ private-padding core can do better. The conclusion does not
 rule out cores with more non-private points, which are needed
 for any improvement.
 
+In fact, below the displayed threshold, the subfamily of all
+edges with at most 2t+1 non-private vertices (measured in the
+whole family) has a transversal of size at most t. Otherwise
+apply the same proof to that subfamily, still stripping only
+vertices private in the whole family. Its four representatives
+would already violate the span window of the original family.
+
 The nearby literature on [maximal multiply intersecting
 families](https://doi.org/10.1007/s00493-023-00046-3) and
 [uniform 3-wise intersecting families](https://arxiv.org/abs/2210.15361)
