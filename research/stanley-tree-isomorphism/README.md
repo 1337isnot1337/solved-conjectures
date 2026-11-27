@@ -2,7 +2,7 @@
 
 ## Path counts and arbitrary reduced topologies
 
-For any fixed reduced tree, generic subdivisions are the unique minimum-leaf representatives of their ordinary distance histograms. The histogram alone determines trees with any degrees when each direction at each high-degree vertex contains sufficiently many leaves. A rival otherwise must retain a large common leaf-labelled subtree whenever free-pendant trimming applies. [Proof](ROBUST-HUB-DISTANCES.md) · [Sources and attribution](ROBUST-HUB-SOURCES.md) · [Exact finite checks](verify_marked_visibility.py)
+For any fixed reduced tree, generic subdivisions are the unique minimum-leaf representatives of their ordinary distance histograms. The histogram alone determines trees with any degrees when each direction at each high-degree vertex contains sufficiently many leaves. A rival otherwise must retain a large common leaf-labelled subtree whenever free-pendant trimming applies. [Proof](ROBUST-HUB-DISTANCES.md) · [Sources and attribution](ROBUST-HUB-SOURCES.md) · [Independent review](ROBUST-HUB-REVIEW.md) · [Exact finite checks](verify_marked_visibility.py)
 
 Every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs is generically determined among all trees by its ordinary distance histogram alone. For independently chosen subdivision lengths from 1 through t the exceptional proportion is at most a topology-dependent constant divided by t. This settles the first positive degree-excess class. [Proof](QUARTIC-DISTANCE-RIGIDITY.md) · [Marked rigidity](MARKED-QUARTIC-RIGIDITY.md) · [Independent review and checks](QUARTIC-DISTANCE-REVIEW.md)
 
