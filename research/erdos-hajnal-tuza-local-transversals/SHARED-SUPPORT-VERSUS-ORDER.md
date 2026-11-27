@@ -24,3 +24,23 @@ Fix \(z\) and \(\epsilon>0\), and let \(t\) tend to infinity along any sequence 
 * If \(M-N=\Omega(t^2)\), the second inequality forces \(g=\Omega(t^2)\). Equivalently, with \(g=o(t^2)\), all but \(o(t^2)\) incidences have distinct witnesses: the excess \(M-N\) is \(o(t^2)\).
 
 The first two conclusions use \(L-t-4\delta=3t+O(1)\). For the third, \(P=\Omega(t)\), \(h=\Omega(t)\), and \(\delta=O(1)\); the denominator is \(O(t)\), so the lower bound has quadratic order. These are conditional structural implications, not a resolution of the unrestricted transversal problem.
+
+## Without separated wings
+
+The [opposite-pivot expansion theorem](SUPERLINEAR-OPPOSITE-PIVOT-EXPANSION.md)
+now yields an unconditional version of the first tradeoff.
+For any fixed \(z\), the larger of the two secondary
+neighborhoods has \(N=\Omega(t^{3/2})\).
+The same private-vertex inequality applies to that side after
+interchanging \(A,B\): the outside set is unchanged. Hence
+\[
+n_{\rm out}\ \ge\ g+\Omega(t^{3/2})(3t-O_z(1)-g)_+ .
+\]
+Consequently, even without wing separation, if \(g\le(3-c)t\)
+for fixed \(c>0\), then the ground-set order is
+\(\Omega(t^{5/2})\). Equivalently, ground-set order \(o(t^{5/2})\)
+forces \(g\ge3t-o(t)\) outside **every** minimum pair.
+For fixed \(z=1\) the \(O_z(1)\) term can be taken to be zero.
+
+This implication is unconditional on the wing geometry, but it
+still does not determine the unrestricted transversal optimum.
