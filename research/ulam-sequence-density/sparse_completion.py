@@ -14,8 +14,32 @@ def counts_through(terms, limit):
     return counts
 
 
+def check_odd_rule(limit):
+    terms = [n for n in range(1, limit + 1)
+             if n.bit_count() == 1 or (n + 1).bit_count() == 1]
+    members = set(terms)
+    counts = counts_through(terms, limit)
+    missed = []
+    for n in range(3, limit + 1):
+        half = n // 2
+        if n % 2:
+            weight = (half + 1).bit_count()
+            expected = int(weight == 1) + 2 * int(weight == 2)
+        else:
+            expected = int(half.bit_count() == 2) + int((half + 1).bit_count() == 2)
+        if counts[n] != expected or (n in members and counts[n] != 1):
+            raise ValueError(f"dyadic pair formula fails at {n}")
+        if counts[n] == 1 and n not in members:
+            missed.append(n)
+    if missed[0] != 6 or any(n % 2 for n in missed):
+        raise ValueError("wrong parity or first location of missed singletons")
+    print(f"Through {limit}: dyadic pairs select {len(terms)} terms "
+          f"and omit {len(missed)} even singletons.")
+
+
 def main():
     limit = 32768
+    check_odd_rule(limit)
     indices = [n for n in range(1, limit + 1) if n.bit_count() <= 2]
     counts = counts_through(indices, limit)
     if [n for n, r in enumerate(counts) if r == 1] != [3, 4] or max(counts) != 6:

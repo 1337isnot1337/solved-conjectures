@@ -115,6 +115,44 @@ void report_phase_occupancy(const Words& bits) {
     }
 }
 
+void report_parity(const Words& bits, const Words& counts) {
+    std::int64_t even_half = 1, odd_half = 0, odd_terms = 0, odd_crowded = 0;
+    std::int64_t terms = 0, record_terms = 1, record_cutoff = 1;
+    std::array<int, 2> first_over{};
+    constexpr std::array bounds{21, 22};
+    for (int n = 1; n < static_cast<int>(bits.size()); ++n) {
+        terms += bits[n];
+        if (n % 2 == 0) {
+            const int half = n / 2;
+            if (half % 2 == 0) {
+                even_half += bits[half];
+            } else {
+                odd_half += bits[half];
+            }
+        } else {
+            odd_terms += bits[n];
+            odd_crowded += counts[n] >= 2;
+        }
+        const auto support = odd_terms + odd_crowded;
+        if (terms * record_cutoff < record_terms * n) {
+            record_terms = terms;
+            record_cutoff = n;
+            for (std::size_t i = 0; i < bounds.size(); ++i) {
+                const auto bound_squared = bounds[i] * bounds[i] * even_half * odd_half;
+                if (n >= 4 && first_over[i] == 0 && support * support > bound_squared) {
+                    first_over[i] = n;
+                }
+            }
+        }
+        if (n == 65'536 || n == 582'954 || n == 1'722'075 || n == (1 << 24)) {
+            std::cout << "Parity at " << n << ": " << even_half << ' ' << odd_half
+                      << ' ' << odd_terms << ' ' << odd_crowded << '\n';
+        }
+    }
+    std::cout << "First parity ratio over 21 and 22 at records (0 means none): "
+              << first_over[0] << ' ' << first_over[1] << '\n';
+}
+
 void report_large_summands(const Words& bits, const Words& counts) {
     constexpr int limit = 1'722'075, largest_cut = 4096;
     for (int n : {9782, 9848, 9914, 98347, 98413}) {
@@ -238,5 +276,6 @@ int main() {
               << " at " << record_n << ".\n";
     report_phase_occupancy(bits);
     report_large_summands(bits, counts);
+    report_parity(bits, counts);
     return 0;
 }

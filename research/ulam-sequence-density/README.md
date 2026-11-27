@@ -33,6 +33,9 @@ an average preimage-size estimate.
 A [sparse completion](sparse-completion.md) preserves any genuine prefix,
 generates every selected term and includes every compulsory sum. Allowing
 multiply represented terms to enter makes zero upper Banach density possible.
+An [odd-sum criterion](parity.md) bounds the density from below using only
+odd represented targets and the two parity counts at half the cutoff.
+It also gives a zero-density example satisfying the full rule at every odd target.
 
 ## Uniform upper bound
 
@@ -164,6 +167,12 @@ uniqueness of every selected term through the extinction.
   Theorem 3.2, would bound the harmonic sum of the chain $1,2,\ldots,n$
   by $3/2+O((n-1)/n)$. The harmonic sum instead diverges. The
   logarithmic-density argument uses that estimate.
+- Agama's Theorem 4.3 assumes $`u_n/n\to\infty`$, which is equivalent
+  to zero density for every increasing sequence of positive integers by
+  evaluating its counting function between successive terms. Theorem 4.4
+  proves the implications from gaps tending to infinity to zero density
+  and from zero density to unbounded gaps. Neither implication decides
+  the growth of the classical Ulam gaps. [Agama, viXra:2505.0062v1](https://www.rxiv.org/pdf/2505.0062v1.pdf)
 - Theorem 5 of *Hidden Signal in the Ulam Sequence Explained* applies
   a global Parseval bound with the length of a local interval in place
   of the full modulus. For a singleton at a residual peak above its
