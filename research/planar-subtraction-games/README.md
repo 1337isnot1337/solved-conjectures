@@ -1,0 +1,7 @@
+# The Larsson–Saha–Yokoo and Gurvich–Vyalyi planar subtraction conjectures
+
+A player faces two heaps and fifteen allowed subtractions. On one positive rational line through the board, the winning positions are exactly those whose height is one less than a power of two. This resolves two questions about normal-play games with a fixed finite set of moves. It proves Larsson–Saha–Yokoo’s existence conjecture for a nonperiodic line and disproves Gurvich–Vyalyi’s conjecture that nonnegative subtractions always give semilinear losing sets. The same game has nonsemilinear winning sets as well. [Proof](PROOF.md) · [Original periodicity question](https://arxiv.org/html/2307.12458v4) · [Original semilinearity conjecture](https://doi.org/10.3390/a14030071)
+
+[NHLOCAL](https://github.com/NHLOCAL) contributed the construction and proof with assistance from OpenAI ChatGPT (GPT-6.2). The repository wrote an independent exposition and checker and recorded a separate mathematical review. The contributor’s archive reports a successful Lean 4.19 verification. The repository has verified the written proof and finite arithmetic. [Contributor’s submission](https://github.com/1337isnot1337/solved-conjectures/issues/997) · [Source audit and formalization provenance](AUDIT.md) · [Independent review](REVIEW.md) · [Executable checks](check_planar_game.py) · [Focused tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/1027)
+
+**Lean status:** none in the repository’s audited package.

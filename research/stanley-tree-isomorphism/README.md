@@ -1,6 +1,34 @@
 # Stanley’s tree-isomorphism conjecture
 
+## Path counts and arbitrary reduced topologies
+
+For every fixed reduced tree with at least 28 leaves, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most two more leaves. An analytic bound and an exhaustive finite degree-and-rank certificate prove the unmarked threshold. [Proof](TWO-SURPLUS-TAIL.md) · [Exact certificate](verify_two_surplus_tail.py)
+
+A marked tree with rationally independent nonzero vertex heights is identified against every rival with exactly two extra leaves by its signed height and pair-distance measures. In the unmarked problem this excludes any full-dimensional two-extra-leaf comparison admitting a freely variable rival pendant. [Proof](MARKED-TWO-SURPLUS.md) · [Independent review and sources](MARKED-TWO-SURPLUS-REVIEW.md) · [Exact checks](verify_marked_two_surplus.py)
+
+A finite test controlled only by the maximum number of surplus rival leaves decides the generic histogram comparison across all topologies, with unrestricted degrees and arbitrarily many high-degree vertices. For a single high hub of arbitrary degree all single-extra-leaf competitors are excluded, and its degree forces a linear lower bound on every possible surplus. [Proof and bounds](LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](LEAF-SURPLUS-REVIEW.md) · [Exact checks](verify_leaf_surplus.py)
+
+For any fixed reduced tree, generic subdivisions are the unique minimum-leaf representatives of their ordinary distance histograms. The histogram alone determines trees with any degrees when each direction at each high-degree vertex contains sufficiently many leaves. A rival otherwise must retain a large common leaf-labelled subtree whenever free-pendant trimming applies. [Proof](ROBUST-HUB-DISTANCES.md) · [Sources and attribution](ROBUST-HUB-SOURCES.md) · [Independent review](ROBUST-HUB-REVIEW.md) · [Exact finite checks](verify_marked_visibility.py)
+
+Every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs is generically determined among all trees by its ordinary distance histogram alone. For independently chosen subdivision lengths from 1 through t the exceptional proportion is at most a topology-dependent constant divided by t. This settles the first positive degree-excess class. [Proof](QUARTIC-DISTANCE-RIGIDITY.md) · [Marked rigidity](MARKED-QUARTIC-RIGIDITY.md) · [Independent review and checks](QUARTIC-DISTANCE-REVIEW.md)
+
+A certificate using only degree counts and the ordinary unlabelled histogram of vertex distances recognizes a density-one fraction of independent subdivisions of every fixed reduced tree. The conclusion holds uniformly on sufficiently slowly growing cores. For trivalent reduced trees the histogram alone suffices against every tree. [Proof and exact bounds](PATH-DISTANCE-CERTIFICATE.md) · [Independent review and prior work](PATH-DISTANCE-REVIEW.md) · [Finite checks](verify_path_distance_certificate.py)
+
+A finite linear-algebra decision procedure determines whether almost every subdivision of any specified core can be recovered using the histogram alone. [Decision criterion](PATH-HISTOGRAM-DECISION.md)
+
+At each fixed degree excess, a failure of generic reconstruction has a witness on at most twelve times the excess minus two reduced vertices. [Finite reduction](FIXED-EXCESS-REDUCTION.md) · [Independent review](FIXED-EXCESS-REVIEW.md) · [Continuous arclength distribution](METRIC-TREE-DISTRIBUTION.md)
+
+A finite collision-space calculation tests the removal of the degree hypothesis beyond trivalent trees. It excludes all competing topologies for a generic subdivision of the four-arm star. [Research argument and exact checker](FOUR-ARM-FLATS.md)
+
+## Reconstruction with an arbitrary internal tree
+
+For any fixed internal tree and arbitrary fixed terminal caps, the ordinary chromatic symmetric function identifies the decorated tree for a proportion tending to one of the independently chosen exterior orders in the stated intervals. The proof recovers the internal topology and every internal path length from the split sizes. [Theorem and exact hypotheses](ARBITRARY-CORE.md) · [Review and prior work](ARBITRARY-CORE-REVIEW.md) · [Split reconstruction check](verify_core_splits.py)
+
 ## Independent subdivisions at a branch vertex
+
+The two-hub results allow arbitrary independent subdivision lengths when terminal shape is determined by its leaf count and the stated leaf-count bound holds. A second theorem covers a dominant arm with arbitrary rooted ends. [Free lengths](TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](DOMINANT-ARM.md)
+
+A two-hub reconstruction recovers the exterior arms, their division between the hubs and the joining path for arbitrary fixed caps under an explicit condition on the exterior orders. The central length is unrestricted. [Proof](TWO-HUB-SUBDIVISIONS.md) · [Review](TWO-HUB-SUBDIVISIONS-REVIEW.md) · [Checks](verify_two_hub_subdivisions.py)
 
 Sufficiently long independent subdivisions of all edges at any fixed branch vertex give identifiability among all trees. [Proof](HUB-SUBDIVISIONS.md) · [Review](HUB-SUBDIVISIONS-REVIEW.md) · [Structural check](verify_hub_fringe_recognition.py) · [Cap assignment](verify_hub_assignment.py)
 

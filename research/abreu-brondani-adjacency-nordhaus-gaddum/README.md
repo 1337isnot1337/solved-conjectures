@@ -1,0 +1,7 @@
+# Abreu–Brondani–de Lima–Oliveira’s adjacency Nordhaus–Gaddum conjecture
+
+For every simple graph on at least two vertices, the sum of its second-largest adjacency eigenvalue and that of its complement is at most $`-1+\sqrt{n^2/2-n+1}`$. Equality requires four equally sized vertex classes arranged along a path, with clique endpoints and independent inner classes. The proof also determines the exact maximum spectral spread of a Seidel matrix at every order, giving a stricter bound on the adjacency sum at odd orders. [Theorem and proof](PROOF.md) · [Original Conjecture 17](https://doiserbia.nb.rs/img/doi/1452-8630/2017/1452-86301701123A.pdf#page=11)
+
+Cinna Davis recorded the claim and its sharp Seidel-spread strategy. WadeDavis and Codex reconstructed the complete proof during publication review. A separate mathematical reviewer checked the argument. Verification is by written proof and finite exact spectral checks, without Lean formalization or external refereeing. [Original research record](https://github.com/1337isnot1337/solved-conjectures/issues/499) · [Sources and attribution](AUDIT.md) · [Independent review](REVIEW.md)
+
+Run `python3 verify.py` from this directory. The checker tests all labeled graphs of orders two through five, every threshold creation word through order ten and all 256 switching sign choices of the order-eight sharp matrix. Integer characteristic polynomials and rational root counts certify the comparisons. [Verifier](verify.py)

@@ -1,0 +1,26 @@
+# Independent mathematical review
+
+On 27 November 2026 a separate repository reviewer independently checked the reconstruction of the variance-and-entropy proof recorded in issue #497. The result is a reviewed written proof. There is no Lean formalization or external referee report for it. [Proof](PROOF.md) · [Target and attribution](AUDIT.md)
+
+- The score at a vertex has conditional mean zero with respect to the configuration off that vertex. The covariance with set size is its own conditional variance in expectation. For adjacent scores either an occupied endpoint blocks the other, or both endpoints are empty. The nonzero contribution is positive and equals the squared Bernoulli parameter times the joint uncovering probability. Summing over **ordered** edges gives exactly the variance in the proof.
+- Given the exterior of the closed neighborhood, the available neighbors are independent as graph vertices. When the center is occupied its weight is $`t`$. With the center vacant, the neighbors have combined weight $`(1+t)^K`$. Joint uncovering for a fixed available neighbor requires the all-empty local configuration, whose weight is one. This gives the factor $`KX/t`$. The Jensen function has second derivative $`-1/[x(1-x)^2]`$, and the Cauchy–Schwarz denominator uses an upper bound on score variance.
+- Strict positive variance permits inversion of the expected density at every positive fugacity. Integrating the differential inequality backwards gives a **lower** bound on the integral of the logarithm of fugacity divided by occupancy. Integration by parts subtracts that integral, yielding the required upper bound on free energy. The exact prefactor is $`(1+\eta)/(2+\eta)`$. The term at fugacity zero vanishes for each fixed graph before any asymptotic limit.
+- Comparison with the source theorem is uniform by taking $`L=\log(\lambda d)`$ and $`\eta=\lambda/(1+L)`$. The monotone comparison at $`A_0=(1-\varepsilon)L/d`$ bounds the whole free-energy expression without presupposing a lower bound on the unknown occupancy. The contradiction proves the leading constant one. The separate differential comparison below establishes the pointwise redux.
+
+## Review of the finite-parameter proof
+
+The original issue records the asymptotic result. The pointwise extension arose during the November 27 reconstruction. A collaborator who checked the variance comparison also contributed the upper-range supersolution in the final proof. Each numerical bound below is an elementary rational inequality.
+
+Two additional Codex reviewers checked the finalized proof separately from the contributor of the supersolution. Both rederived the conditional variance bound, initial expansion, divided-difference comparison and uniform strict-contact margin. One caught an obsolete scope sentence in the asymptotic manuscript, which now links to the completed pointwise argument. These were independent internal mathematical checks. No external referee report or Lean verification is claimed.
+
+- For positive average degree, some vertex is blocked with positive probability. This makes the logarithmic comparison variable strictly positive. Counting independent vertex pairs gives its initial slope equal to the average degree. The differential estimate integrates from this exact limit. At degree zero the empty-edge graph gives the Bernoulli density directly.
+- In the lower range the concavity of the exponential of Lambert W gives the correct direction of the tangent inequality. The divided difference has an integral representation at equal arguments. Its monotonicity reduces the whole lower range to the exact corner calculation.
+- In the upper range the source target has logarithmic derivative equal to the reciprocal of the product of one plus each Lambert value. The trapezoid estimate for the exponential integrand gives an upper bound on the comparison function. The strict margin is at least the smaller Lambert value divided by 320. This prevents a first upward crossing after entry. Degree two lies in the lower range throughout the permitted fugacities.
+
+[Complete pointwise proof](POINTWISE.md)
+
+## Computational replay
+
+From this directory run `python3 verify.py`. The verifier exhausts labelled triangle-free graphs on one through five vertices and includes four larger irregular, bipartite or odd-cycle examples. It directly enumerates independent sets at fugacities $`1/32,1/4,1,2`$. Integer arithmetic checks the score identity, both covariance sums, and the conditional center probability for every exterior configuration and every center. Decimal arithmetic at 60-digit precision cross-checks the two scalar inequalities. All 1,772 graph–fugacity cases passed. The proof of the asymptotic statement uses the analytic bounds for arbitrary finite graphs. [Verifier](verify.py)
+
+The pointwise verifier gives an exact rational certificate without evaluating Lambert W numerically. It checks the three degree-seven Taylor brackets, the positive low-range margin and the upper-range coefficient of 1/320. It also evaluates the proposed finite bound on 1,772 small graph–fugacity cases, including fractional average degrees and the removable degree-two case. Run `python3 verify_pointwise.py` in this directory. [Pointwise verifier](verify_pointwise.py)

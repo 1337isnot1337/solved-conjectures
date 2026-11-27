@@ -111,3 +111,23 @@ To reproduce the exact fast run:
 ```sh
 python3 bernstein_matching_order.py --L 5 --limit 1000000
 ```
+
+## Equality classification
+
+The [strict variant](bernstein_matching_unique.py) requires a
+positive-definite comparison matrix on every leaf not closed
+by the direct square patch. It passed the same 5,725 leaves
+and 15 patches, with maximum depth 35. A positive-definite
+comparison gives a strict inequality throughout its simplex.
+
+On a patch with outside mass t positive, the separate outside
+cost is strictly less than half of t squared: the diagonal
+capacities of all outside types are free, and at least one
+outside type has positive mass. Thus the proof of the patch
+is strict throughout the allowed positive t range. With zero
+outside mass, the canonical quadratic on the square has
+equality only at the alternating weights 2/7 and 3/14, as
+shown in [LOCAL-MAXIMA.md](LOCAL-MAXIMA.md). Therefore the
+only limiting extremal mass distributions in this class are
+the alternating square witnesses, up to permuting the pairs
+and their two endpoints.

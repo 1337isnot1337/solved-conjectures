@@ -1,0 +1,41 @@
+# Generic reconstruction for every reduced tree with one four-valent hub
+
+**Theorem.** Let $`T`$ be any fixed reduced tree with one vertex of degree four, all other hubs of degree three, and $`k`$ vertices. Among the $`t^{k-1}`$ assignments of independent integer edge lengths from $`\{1,\ldots,t\}`$, all but $`O_T(t^{k-2})`$ give subdivisions determined among all trees by their ordinary histogram of unordered vertex-pair distances. No degree data about a competing tree are given. This settles the first positive degree-excess class of the [finite decision problem](FIXED-EXCESS-REDUCTION.md). The [trivalent theorem](PATH-DISTANCE-CERTIFICATE.md) handles zero excess. The unrestricted distance problem and Stanley’s chromatic symmetric function conjecture remain open.
+
+## The three necessary collision rows
+
+Suppose the bound fails. Take a full-dimensional matching cell and rationally independent real target edge lengths there as in the [matching construction](FIXED-EXCESS-REDUCTION.md). That construction compares the signed measures
+
+```math
+B=\sum_{\{u,v\}}w_uw_v\delta_{d(u,v)},\qquad w_v=\deg(v)-2,
+```
+
+and uses rows equating competitor path lengths in each of its distance classes, together with rows for target path additions. A row is the coefficient vector of a homogeneous linear equality in the competitor edge lengths. Write $`V`$ for their common nullspace. The dimensions and generic degree certificate in the [marked result](MARKED-QUARTIC-RIGIDITY.md) show that the sole possible competitor $`R`$ has $`k+3`$ vertices, is trivalent, and that the complete row space has rank at most three. Write $`L\ge4`$ for the target leaf count. The competitor has $`L+1`$ leaves and $`L-1`$ hubs. Its pair weights are all $`+1`$ or $`-1`$.
+
+Restrict each row to the pendant edge coordinates of $`R`$, using $`e_i`$ for the coordinate of leaf $`i`$. Every negative path joins a leaf and a hub, so its restriction is a single $`e_i`$. The target has $`L`$ distinct distances with signed mass $`-2`$, from its four-valent hub to its leaves. At each such distance choose two different negative competitor paths and take their difference as a row, whose pendant restriction is zero or $`e_i-e_j`$. At least two of these rows are independent. Indeed, if all are proportional and their pendant restrictions are nonzero, exactly the same two competitor leaves must occur in every choice. One of those leaves has only $`L-1`$ possible distances to a hub, too few. If all restrictions are zero, each difference compares the distances from one leaf to two distinct hubs. After the common path prefix cancels, the edge support is exactly the path between those hubs. Proportional rows have the same support and therefore the same two endpoint hubs. A leaf giving equal distances to them cannot lie in any of the two outward branches at either of these trivalent hubs. Those four disjoint branches contain at least four distinct leaves. The remaining at most $`L-3`$ leaf choices give fewer than $`L`$ distances. This proves the independence.
+
+There must also be cancellations between opposite signs. The target has total negative mass before cancellation $`L(L-2)`$, since the sum of positive defects at its hubs is $`L-2`$. Its distances are all distinct, so its negative mass is exactly this number. The competitor has $`(L+1)(L-1)`$ negative paths. Matching as many opposite signs as possible within each actual distance class therefore cancels exactly
+
+```math
+(L+1)(L-1)-L(L-2)=2L-1
+```
+
+negative paths against as many distinct positive paths. Fix such a pairing of occurrences. Each cancellation gives a mixed-sign equality row. Orient it to have pendant coordinate sum one. Its restriction has the form $`e_a`$ for a hub–hub positive path matched with a negative path at leaf $`a`$, or $`e_i+e_j-e_a`$ for a positive leaf–leaf path with distinct leaves $`i,j`$. Both previously chosen negative-difference rows have coordinate sum zero. Thus any one mixed row extends those two to a full row basis. In particular the restrictions of any two oriented mixed rows differ by a combination of the two negative-difference restrictions.
+
+## At most five constrained leaves
+
+Identify the two leaf labels in each nonzero restriction $`e_i-e_j`$ of the two chosen negative-difference rows. The resulting groups require at most two identifications. In the space with one coordinate for each group, the two differences vanish. Thus every mixed row has exactly the same restriction in this quotient.
+
+If that common vector is not a single group vector, it is $`e_I+e_J-e_A`$ with $`A`$ distinct from both $`I,J`$. No positive hub–hub path could participate. Every canceled positive path is a leaf pair with one endpoint in $`I`$ and one in $`J`$. With at most two identifications, there are at most four such pairs for distinct groups (sizes at most two and two, or three and one). If $`I=J`$, there are at most three pairs of distinct leaves in its group. Both bounds contradict the $`2L-1\ge7`$ distinct positive paths in the pairing.
+
+The quotient vector is therefore $`e_G`$ for some group $`G`$. The pendant support of the entire row space lies in the union of the nontrivial groups and $`G`$. Indeed the two chosen negative rows have this support, and every unmatched singleton outside that union has coefficient zero in a mixed row representing $`e_G`$. The union has at most five leaves: at most four lie in nontrivial groups and at most one more is needed if $`G`$ is a singleton. If any competitor leaf lies outside the support, its pendant length varies freely in $`V`$. Deleting that leaf and its matched pendant leaf yields equal signed measures and equal profiles about the suppressed attachment points. [Marked rigidity](MARKED-QUARTIC-RIGIDITY.md) excludes this possibility. This settles every $`L\ge5`$, and any case with four target leaves and fewer than five constrained competitor leaves.
+
+## The remaining quartet
+
+Suppose all five competitor leaves are constrained. This forces exactly two disjoint groups of size two and one singleton $`G=\{g\}`$. The restrictions of the two chosen negative rows are linearly independent, and the mixed row adds nonzero total pendant coefficient. Since the entire row space has rank three, its restriction to pendant coordinates is **injective**.
+
+Every canceled positive leaf pair must include $`g`$: its quotient restriction is $`e_G`$ after subtracting the group vector of the matched negative leaf. There are only four such positive leaf pairs. To supply the seven distinct cancellations, all three pairs of competitor hubs must also cancel, each against a path from $`g`$ to a hub. There are just three such negative paths, so the multiset of distances from $`g`$ to the three hubs equals the multiset of the three pairwise hub distances. The actual path equalities giving this multiset match hold on all of $`V`$.
+
+The three hubs form a path with positive edge lengths $`p,q`$, and their pair distances are $`p,q,p+q`$. The leaf $`g`$ must attach to the middle: at either end its distance to the farthest hub would exceed $`p+q`$. For pendant length $`E`$ its three distances are $`E,E+p,E+q`$. Comparing the smallest entries and then the sums gives $`E=\min(p,q)`$ and $`3E=p+q`$. In particular $`p\ne q`$. Relabel so that $`p\lt q`$ at the chosen point. On a relative neighborhood in $`V`$ all lengths stay positive and this order persists. The same multiset equality gives $`q=2p`$ throughout the neighborhood. The nonzero linear form $`q-2p`$ therefore annihilates $`V`$, so it is in the row space. It has all pendant coordinates zero, contradicting injectivity.
+
+Every full-dimensional ambiguity has now been excluded. The [rational-cone counting theorem](PATH-HISTOGRAM-DECISION.md) supplies the claimed exceptional bound for integer lengths. This proof also handles the four-star analytically; the earlier exact finite check on the research branch gives an independent verification of that special case. Through the [global arclength distance equivalence](METRIC-TREE-DISTRIBUTION.md), the same exclusion applies to the arclength distance law of a generic positive-length metric tree of each stated topology, against all finite competing metric trees with positive edge lengths.

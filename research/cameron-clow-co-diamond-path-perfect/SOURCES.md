@@ -12,9 +12,11 @@
   the independence number is at most three. We invoke that
   lemma and the original vertex-critical reduction. The new
   ingredient treats unbounded independence number: criticality
-  supplies all missing labels, and a path-cover rearrangement
-  followed by Hall matching stitches the remainder into one
-  path.
+  supplies all missing labels. The resulting graph meets the
+  [Chvátal–Erdős vertex-connectivity conditions](https://www.renyi.hu/~p_erdos/1972-02.pdf);
+  a separate Hall construction directly stitches one path.
+  These are applications to the original class, not claims
+  of new Hamilton path or cycle criteria.
 - The other forbidden class in Conjecture 7.3, with no induced
   pair of independent edges, is not covered here. The
   [Golan–Shan theorem](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v25i2p37/pdf/)
@@ -48,4 +50,7 @@
 The proof is general and written. The standard-library regression
 checks exercise the Hall construction on every four-path endpoint
 pattern satisfying its hypothesis, and construct full Hamilton
-paths on randomized promised near joins. They are not the proof.
+paths on randomized promised near joins. The stronger
+Hamilton-cycle script further tests 24,832 such instances,
+including seven vertex-critical cases. The scripts are not
+the proof.

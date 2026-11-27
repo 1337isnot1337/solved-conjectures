@@ -138,3 +138,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    from verify_hamiltonian import main as check_hamiltonian
+    check_hamiltonian()
