@@ -51,10 +51,18 @@ jobs:
       - name: Check countable and continuum rainbow-star construction invariants
         run: python3 scripts/check_rainbow_star.py
 
+      - name: Check the triangle-free occupancy score and conditional star laws
+        run: |
+          python3 results/buys-van-den-heuvel-kang-occupancy/verify.py
+          python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py
+
       - name: Check Ajtai's planar packing and the higher-dimensional cube witnesses
         run: |
           python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
           python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
+
+      - name: Check normalized adjacency estimates and complementary focus spectra
+        run: python3 results/normalized-nordhaus-gaddum/verify.py
 
       - name: Check the planar subtraction game
         run: python3 results/planar-subtraction-games/check_planar_game.py
@@ -142,6 +150,7 @@ jobs:
           python3 results/erdos-general-position-pinned-distances/check_sparse_pair_moments.py
           python3 results/erdos-general-position-pinned-distances/check_atomic_limits.py
           python3 results/erdos-general-position-pinned-distances/check_atomic_children.py
+          python3 results/erdos-general-position-pinned-distances/check_radial_profiles.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses

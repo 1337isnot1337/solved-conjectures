@@ -94,6 +94,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Buys–van den Heuvel–Kang’s average-degree occupancy conjecture": "buys-van-den-heuvel-kang-occupancy",
     "Dall’Ara–Dumitrescu’s higher-dimensional cube covering question": "dallara-dumitrescu-cube-covering",
     "Erdős–Galvin–Hajnal’s rainbow-star girth problem": "erdos-galvin-hajnal-rainbow-star-girth",
     "Erdős–Galvin–Hajnal’s continuum rainbow-star problem": "erdos-galvin-hajnal-continuum-rainbow-star",
@@ -109,6 +110,7 @@ STATUS_LABEL_SLUGS = {
     "Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture": "frankl-geher-sagdeev-toth-strict-convexity",
     "de Joannis de Verclos’s projective rigidity conjecture": "de-verclos-projective-rigidity",
     "Erdős–Hajnal’s ordinal-square chromatic problem": "erdos-hajnal-ordinal-square-chromatic",
+    "Kempton–Zaitzeff–Muthuprakash’s normalized Nordhaus–Gaddum conjecture": "normalized-nordhaus-gaddum",
     "Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture": "barrett-evans-hall-kempton-se",
     "Barrett–Evans–Hall–Kempton’s dandelion conjecture": "barrett-evans-hall-kempton-dandelion",
     "Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum": "barrett-evans-hall-kempton-dandelion",

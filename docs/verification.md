@@ -1,5 +1,9 @@
 # Verification
 
+## Mean independent-set size at given average degree
+
+Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
+
 ## Higher-dimensional cube covering
 
 From the repository root run the two commands below. They compute the planar area and its loss when bottom tiles are excluded, check the closed-fiber weights, and replay the three-dimensional witness. The proof treats every dimension. [Proof](../results/dallara-dumitrescu-cube-covering/PROOF.md) · [Review](../results/dallara-dumitrescu-cube-covering/REVIEW.md)
@@ -136,6 +140,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Normalized Nordhaus–Gaddum upper gap
+
+Run `python3 results/normalized-nordhaus-gaddum/verify.py`. It uses rational arithmetic to bracket normalized adjacency eigenvalues and test projected neighborhood estimates for a graph and its complement. It checks all labelled graph inputs of orders two through five, nine members of the authors’ focus family, and a reproducible sample on larger orders. [Proof](../results/normalized-nordhaus-gaddum/PROOF.md) · [Independent review](../results/normalized-nordhaus-gaddum/REVIEW.md)
+
 ## Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
 
 Run `python3 results/barrett-evans-hall-kempton-se/check_small_parameters.py` for exact integer comparator checks. The [audit](../results/barrett-evans-hall-kempton-se/AUDIT.md) explains how to generate the small simple endpoints using nauty and certify their strict inequalities using an integer C++ checker. The proof for orders at least 36 and weighted interpolation are analytic.
@@ -181,6 +189,8 @@ Run `python3 results/erdos-general-position-pinned-distances/check_sparse_pair_m
 Run `python3 results/erdos-general-position-pinned-distances/check_atomic_limits.py` to check marked carrier intersections on 300 circle triples, 592 exact Jacobians for the two continuous models, and the heavy-fiber count. [Atomic-limit proof](../results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](../results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)
 
 Run `python3 results/erdos-general-position-pinned-distances/check_atomic_children.py` to test the diameter-neighbor and reflected-partner arguments, including 66,418 diameter graphs and 3,370 weighted pentagon targets. [Atom-cloud proof](../results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Independent review](../results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
+
+Run `python3 results/erdos-general-position-pinned-distances/check_radial_profiles.py` to reproduce the 1,800 exact annular rank comparisons, 1,300 dyadic-bin checks and 31,250 hull subsamples. [Recursive proof](../results/erdos-general-position-pinned-distances/RADIAL-SCALE-TREE.md) · [Independent review](../results/erdos-general-position-pinned-distances/RADIAL-PROFILES-REVIEW.md)
 
 Run `python3 results/erdos-general-position-pinned-distances/check_four_grids.py` to enumerate circles and active pairs on rational four-grid examples with 23, 58 and 109 sites. Each example attains the site-centered cap of three and the global cap of four. The [independent review](../results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md) checks the general construction.
 
