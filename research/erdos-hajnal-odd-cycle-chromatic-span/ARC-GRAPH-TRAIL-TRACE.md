@@ -49,8 +49,7 @@ of degree at most \(3d\) has \(\chi(D[X])\le q\) for one constant
 \(q\) independent of \(D\), the family of arc graphs disproves
 #640. The outgoing-color-set argument gives
 \(\chi(A(D))\ge\log_2\chi(D)\), and coloring each arc by the
-ordered pair of distinct colors of its endpoints gives
-\(\chi(A(D[X]))\le q(q-1)\). Thus every path, and hence every
+color of its tail gives \(\chi(A(D[X]))\le q\). Thus every path, and hence every
 odd-cycle span, would have uniformly bounded chromatic number.
 
 The cited #108 result bounds the chromatic number of the
@@ -91,3 +90,64 @@ suffice for pendant-rich arc constructions: the other arcs
 between active centers can all occur as spikes on one path.
 Whether the layered random construction can be constrained
 to meet the induced trace condition remains open here.
+
+## Balanced spike packing needs at most one spare per visit
+
+The all-arcs converse above can use many spare arcs at one
+vertex. If only chromatic number matters, there is an exact
+improvement.
+
+Let \(T\) be an edge-simple underlying trail in \(D\), with
+vertex set \(X\). Use the arcs of \(D\) corresponding to edges of
+\(T\) as its travel arcs. At an internal visit (every visit for
+a closed trail), the two travel arcs may both enter the center,
+both leave it, or have opposite incidence. Suppose for each
+\(v\in X\) there are at least as many spare outgoing arcs from
+\(v\) to outside \(X\) as the number of double-incoming visits
+at \(v\). Require the analogous spare incoming arcs for
+double-outgoing visits.
+
+Then there is a path in \(A(D)\), or a cycle if \(T\) is closed,
+whose vertex span has chromatic number at least
+\(\chi(A(D[X]))-1\). In the closed case, the arc cycle has the
+same parity as \(T\). Only nontrivial trails are relevant; for
+a closed trail assume at least three travel arcs.
+
+Indeed, take a maximal matching on the arc graph of the nontravel
+arcs of \(D[X]\). Each matched pair consists of an incoming arc
+and an outgoing arc at a unique common center. Assign the pair
+to that center. The unmatched arc vertices form an independent
+set, so it suffices to put all travel arcs and all matched arc
+vertices on the list. At one chosen visit to each center,
+insert its whole list of pairs, ordering every pair to alternate
+with the preceding arc. Each insertion has even length and
+does not change the incidence expected of the next arc.
+At each double-incoming or double-outgoing visit insert one
+fresh spare arc of the required opposite incidence. Open
+endpoints have only one travel incidence; the pairs there can
+simply be ordered to match it.
+
+The spare arcs are distinct across centers, since each has
+one end outside \(X\); also none is a travel or matched arc.
+Thus the resulting ordered list is simple. In a closed
+traversal mark each travel arc by whether it was traversed
+forward or backward. A visit needs a spare precisely when
+that mark changes between the neighboring travel arcs.
+There are an even number of changes in a cyclic binary
+sequence. The pair insertions are also even, so parity
+is preserved.
+
+In particular, to use an underlying *simple* path or odd cycle
+it is enough to have just one incoming and one outgoing spare
+per vertex in \(X\), even if the ambient digraph has huge degree.
+Two independent reserves supply this after losing at most
+two colors: process the DAG in topological order, retaining
+a vertex in a first reserve exactly when it has no previously
+retained in-neighbor. This reserve is independent and every
+other vertex has an in-neighbor in it. On the rest, repeat
+in reverse order for an independent out-dominating reserve.
+The surviving vertices have both spares. For general trails
+that repeat a center many times, the number of visits
+requiring a spare, not its full degree, is the limit. We do
+not have a universal supply of those spares on a trail of
+high chromatic span.
