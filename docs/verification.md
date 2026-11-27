@@ -13,6 +13,10 @@ python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
 python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
 ```
 
+## Erdős–Galvin–Hajnal’s link-path partition problem
+
+Read the [proof](../results/erdos-galvin-hajnal-link-path-partition/PROOF.md) and [review of the two consistency directions](../results/erdos-galvin-hajnal-link-path-partition/REVIEW.md). Run `python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py` to check the bounded encoding on every path-free labeled triple system of orders one through six. The [shadow transfer](../results/erdos-galvin-hajnal-link-path-partition/SHADOW-TRANSFER.md) has a [separate load and sharpness checker](../results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py).
+
 ## Erdős–Galvin–Hajnal’s half-overlap hypergraph problem
 
 Run `python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py` from the repository root. The checks cover mixed-width intersections, single-vertex trimming and finite row-color witnesses. The infinite cardinal and strong-coloring arguments are in the [proof](../results/erdos-galvin-hajnal-half-overlap-hypergraphs/PROOF.md) and [independent review](../results/erdos-galvin-hajnal-half-overlap-hypergraphs/REVIEW.md).
@@ -116,6 +120,8 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py` to check recovery of the full labeled core and its internal lengths from oriented cut sizes across 267 reduced trees. Two controls exercise cuts into equal halves. [Verifier](research-results/stanley-tree-subdivisions/verify_core_splits.py) · [Mathematical review](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py` to check signed path weights and indecomposable edge lengths on all 66 reduced topologies through order twelve, 320 rational quotient tests and 18 cases attaining the four-label support bound. The [proof](research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) gives the arbitrary-degree theorem. [Review and independent replay](research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)
 
 The [marked-tree checker](research-results/stanley-tree-subdivisions/verify_marked_quartic.py) constructs 720 pairs with equal signed root profiles and tests all three distinguishing arguments. The [pendant-coordinate checker](research-results/stanley-tree-subdivisions/verify_quartic_rows.py) checks 56 identification patterns and 24,000 three-hub metrics. [Review and instructions](research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
 
