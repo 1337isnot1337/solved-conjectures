@@ -1,6 +1,6 @@
 # Erdős’s arbitrary-cardinal bipartization conjecture
 
-**Status:** Proved.
+The written proof passed independent mathematical review within the repository.
 
 For every positive real exponent increment and every infinite
 cardinal, there is a graph whose chromatic number exceeds that
@@ -15,6 +15,6 @@ construction, not the separate exact-ℵ₁ question.
 - [Independent review](REVIEW.md)
 - [Orientation replay](check_shift_orientation.py) and [window and odd-girth replay](check_shift_bridges.py)
 
-No Lean formalization was performed. The finite replays check
+The result has no Lean formalization or external referee report. The finite replays check
 parts of the construction; the proof handles all graphs in the
 chosen shift family and the transfinite chromatic lower bound.
