@@ -184,6 +184,8 @@ The repository-level authors are Cinna Davis and GPT-6.2 Astra (an AI model), in
 Credit the [Graffiti.pc 318 result](results/graffiti-pc-318/) and its proof to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334), who contributed them.
 Credit the [Zhang deletion-values result](results/zhang-deletion-values/) and the [Oravcová–Soták five-to-eight-distance result](results/oravcova-sotak/) to [@aadrianvv](https://github.com/aadrianvv), who contributed their proofs and verification packages in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143) and [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144). The latter result is conditional on the repository's spectrum classifications and does not settle the unrestricted conjecture. Credit the [wild-number result for n ≥ 155](results/wild-number-complete-graphs/) to [@aadrianvv](https://github.com/aadrianvv), who contributed its proofs, verifier, referee passes and continuation material; the conjecture remains open for 13 ≤ n ≤ 154.
 
+Credit [@aadrianvv](https://github.com/aadrianvv) for the [proof of Currie’s Conjecture 19](results/currie-conjecture-19/) and its reproducible checks. The contributor prepared the package with Claude Opus 5.5, credited as co-author of the original commit. [PR #154](https://github.com/1337isnot1337/solved-conjectures/pull/154) · [Commit 32efcb11](https://github.com/1337isnot1337/solved-conjectures/commit/32efcb11ade9c76c325ee5fb7089c6c97dc3992c)
+
 Suggested BibTeX for the repository:
 
 ```bibtex

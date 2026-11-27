@@ -2,7 +2,9 @@
 
 [Catalogue](../../CONTENTS.md) · [Proof](PROOF.md) · [Exact checks](verify.py) · [Issue #148](https://github.com/1337isnot1337/solved-conjectures/issues/148)
 
-**Status:** Written proof, computer-assisted in finitely many described places, all of which `verify.py` reproduces. It has been through one independent referee pass by a second model instance, which found no error; the minor gaps and notation remarks it raised are addressed in the note. The note is otherwise unrefereed.
+[@aadrianvv](https://github.com/aadrianvv) contributed the proof and reproducible checks in [PR #154](https://github.com/1337isnot1337/solved-conjectures/pull/154). The contributor prepared the package with Claude Opus 5.5, credited as co-author of [the original commit](https://github.com/1337isnot1337/solved-conjectures/commit/32efcb11ade9c76c325ee5fb7089c6c97dc3992c).
+
+**Status:** Written proof, computer-assisted in finitely many described places, all of which `verify.py` reproduces. It has been through one independent referee pass by a second model instance, which found no error; the minor gaps and notation remarks it raised are addressed in the note. The note is otherwise unrefereed. [Referee report](https://github.com/1337isnot1337/solved-conjectures/issues/148#issuecomment-7057873740)
 
 **Lean status:** none. No Lean formalization is included.
 
