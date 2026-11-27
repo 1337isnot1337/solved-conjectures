@@ -1,5 +1,7 @@
 # The deep holes of \(A_n^*\) are also cold spots for flat Gaussians
 
+The subsequent [all-scale theorem](dual-a-universal/PROOF.md) identifies all minimizers of the dual type-A family for every positive parameter. [Independent review](dual-a-universal/REVIEW.md) · [Reproducible checks](dual-a-universal/verify.py)
+
 In the notation of [STABILITY.md](STABILITY.md), all deep holes of \(A_n^*\) are exactly the global Gaussian cold spots for every sufficiently small positive \(\alpha\). Combined with eventual stability for sufficiently large \(\alpha\), this gives both endpoint regimes of the all-parameter question; it does not cover intermediate parameters.
 
 Let \(N=n+1\), \(h=\lfloor N/2\rfloor\), \(H=\{\sum_i z_i=0\}\subset\mathbb R^N\), and \(q=e^{-\pi^2/\alpha}\). By Poisson summation in \(H\), minimizing the Gaussian sum on \(A_n^*\) amounts to minimizing

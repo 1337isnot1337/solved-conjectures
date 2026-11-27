@@ -1,5 +1,7 @@
 # Stable cold spots from first moments
 
+The subsequent [all-scale theorem](dual-a-universal/PROOF.md) identifies all minimizers of the dual type-A family for every positive parameter. [Independent review](dual-a-universal/REVIEW.md) · [Reproducible checks](dual-a-universal/verify.py)
+
 This note strengthens the stability implication in Bachoc, Moustrou, Vallentin and Zimmermann, [*Polarization of lattices: stable cold spots and spherical designs*](https://doi.org/10.1017/fms.2026.10169), Forum of Mathematics, Sigma **14** (2026), e25. Their Theorem 1.2 assumes spherical \(2\)-designs on shells about each deep hole, under the single deep-hole orbit hypothesis. We need only spherical \(1\)-designs. This resolves the eventual stability question for \(A_n^*\) left open in their §1.6; the all-parameter universality question is not asserted here.
 
 ## Statement
