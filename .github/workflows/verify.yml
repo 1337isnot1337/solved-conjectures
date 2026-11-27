@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_marked_quartic.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_quartic_rows.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_fixed_excess_pruning.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
