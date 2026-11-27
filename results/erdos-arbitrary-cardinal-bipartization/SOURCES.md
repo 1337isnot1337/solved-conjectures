@@ -61,6 +61,17 @@ whose §VII states the construction at **exactly** $`\aleph_1`$.
    not a two-color edge-deletion bound. The present proof
    supplies the missing hereditary defect-orientation estimate.
 
+6. The very next paragraph of Erdős's §3 shifts to the countable
+   chromatic-cardinal problem of an arbitrarily slowly diverging
+   **absolute** deletion budget, not a multiplier of $`n`$.
+   That is [Erdős Problem 74](https://www.erdosproblems.com/74),
+   with a [prior negative resolution](https://github.com/tadamcz/erdos74/blob/e127ee587c7c91267eecdb3569443d2b0ad64b52/Erdos74/Resolutions/Erdos74_118usd_22h.lean).
+   It neither asserts nor rules out a superlinear budget at
+   large cardinalities. The separate near-half independence-set
+   problem is [Erdős Problem 750](https://www.erdosproblems.com/750);
+   that property is not an edge-deletion bound. Neither question
+   is claimed here.
+
 ## Search scope
 
 Lookups on Nov 27, 2026 covered the exact article and §3 language,
