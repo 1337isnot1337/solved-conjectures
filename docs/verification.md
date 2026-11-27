@@ -567,6 +567,8 @@ The partial [Lean scope](../results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md
 
 Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).
 
+Run `python results/ekhad-zeilberger-unfair-bet/check_full_alphabet.py` to check the full-alphabet formula independently. It enumerates 120,259 ordered-pair classes up to relabeling, checks the upper bound by integer cross-multiplication and verifies that each maximum is attained for every feasible alphabet size at lengths two through five. The [review](../results/ekhad-zeilberger-unfair-bet/REVIEW.md) covers the argument for all lengths.
+
 ## Kauers–Koutschan recurrence conjecture
 
 The [Lean scope and receipts](../results/kauers-koutschan-recurrence/FORMALIZATION.md)
