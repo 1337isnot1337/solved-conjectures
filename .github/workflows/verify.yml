@@ -18,6 +18,10 @@ jobs:
         run: python3 results/soukup-complementary-graph-product/verify_components.py
       - name: Check all Boolean decoders for three order comparisons
         run: python3 results/soukup-complementary-graph-product/verify_boolean_orders.py
+      - name: Check Aronszajn grid patterns and ordinal comparison certificates
+        run: |
+          python3 results/soukup-complementary-graph-product/verify_grid_patterns.py
+          python3 results/soukup-complementary-graph-product/verify_ordinal_decoders.py
       - name: Check the protected recoloring step in Komjáth’s problem
         run: python3 results/komjath-property-b/verify_core_repair.py
       - name: Check Bourin matrix identities and finite-witness bounds
