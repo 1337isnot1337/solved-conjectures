@@ -1,5 +1,14 @@
 # Verification
 
+## Higher-dimensional cube covering
+
+From the repository root run the two commands below. They compute the planar area and its loss when bottom tiles are excluded, check the closed-fiber weights, and replay the three-dimensional witness. The proof treats every dimension. [Proof](../results/dallara-dumitrescu-cube-covering/PROOF.md) · [Review](../results/dallara-dumitrescu-cube-covering/REVIEW.md)
+
+```sh
+python3 results/dallara-dumitrescu-cube-covering/verify-planar-gadget.py
+python3 results/dallara-dumitrescu-cube-covering/verify_lift.py
+```
+
 ## Erdős–Galvin–Hajnal’s rainbow-star girth problem
 
 Read the [countable theorem](../results/erdos-galvin-hajnal-rainbow-star-girth/PROOF.md) and [mathematical review](../results/erdos-galvin-hajnal-rainbow-star-girth/REVIEW.md). From the repository root run `python3 scripts/check_rainbow_star.py`. The list-color replay checks the missing-label invariant on finite instances. The infinite construction and obstruction follow from the written proof.
@@ -557,6 +566,13 @@ lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoste
 ```
 
 [Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+For the [ordinary inverse-KL first-index supplement](../results/caiolo-ferroni-hoster/FIRST-INDEX.md), run both commands from the repository root. The first uses SymPy 1.14.0 for its symbolic sign certificate and checks the integer witness via inverse-$`Z`$ inversion. The second uses only the Python standard library and reconstructs the ordinary KL polynomials before signed incidence inversion. Both check the entire prime-power range. [Independent review](../results/caiolo-ferroni-hoster/FIRST-INDEX-REVIEW.md)
+
+```sh
+python3 results/caiolo-ferroni-hoster/verify_first_index.py
+python3 results/caiolo-ferroni-hoster/check_first_index_incidence.py
+```
 
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
