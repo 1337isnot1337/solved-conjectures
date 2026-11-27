@@ -33,7 +33,27 @@ def check_polygon(polygon):
     return 1 << polygon, expected
 
 
+def polar_count(shells, polygon):
+    sites = [(r, a) for r in range(shells) for a in range(polygon)]
+    count = 0
+    for quad in combinations(sites, 4):
+        radii = sorted({r for r, _ in quad})
+        if len(radii) == 1:
+            count += opposite_sides(polygon, [a for _, a in quad])
+        elif len(radii) == 2:
+            first = [a for r, a in quad if r == radii[0]]
+            second = [a for r, a in quad if r == radii[1]]
+            count += len(first) == 2 and (sum(first) - sum(second)) % polygon == 0
+    expected = polygon * comb(shells * ((polygon - 1) // 2), 2)
+    if count != expected:
+        raise ValueError((shells, polygon, count, expected))
+    return count
+
+
 if __name__ == "__main__":
     for m in range(3, 16, 2):
         cases, count = check_polygon(m)
         print(f"m={m}: {cases} subsets, {count} trapezoids in the full polygon")
+
+    for m in (3, 5, 7):
+        print(f"polar {m} by {m}: {polar_count(m, m)} trapezoids")
