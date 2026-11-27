@@ -1,0 +1,31 @@
+# Independent review of the complete one-outlier classification
+
+Let $`M=N-1`$, $`L=M/2`$ and $`\beta=\alpha N/M`$. Allow $`N-1`$ mutually congruent phases; the remaining phase is fixed by the determinant. Choosing the common coordinate lift $`t/M`$ and the remaining one $`-t`$ identifies the full one-outlier locus (up to permutations) with the circle $`t\pmod M`$. Splitting the sum of the first $`M`$ lattice coordinates into its integer values $`l`$ gives
+
+```math
+h(t)=\sum_{l\in\mathbb Z}g_{M,l}(\alpha)e^{-\beta(l-t)^2}.
+```
+
+The weights are positive and symmetric modulo $`M`$, and their strict order in folded indices is the central-order theorem. Reflection $`h(t)=h(-t)`$ and period $`M`$ reduce to $`0\le t\le L`$. For $`M\ge2`$, write $`h=ZB`$ with the period-one Gaussian $`Z`$ and normalized folded expectation $`B`$. Then $`B'(t)<0`$ for every $`0\lt t\lt L`$.
+
+For this strict derivative at the interior point $`t`$, use the ordered triangle heat kernel determinant $`K(r,t)K(u,t')-K(r,t')K(u,t)`$ for two distinct folded residues $`r\lt u`$. At positive time the kernel is strictly positive inside the triangle, with the outer reflecting boundaries and absorbing diagonal. This remains true when the starting coordinates $`r,u`$ are reflecting endpoints: reflection of the Neumann heat equation, or the semigroup property through an interior open neighborhood a positive distance from the collision diagonal, gives positive transport inside at every positive time. Along the smooth interior of the absorbing boundary the parabolic Hopf boundary lemma gives strict positivity of its inward normal derivative in $`(t,t')`$. Antisymmetry makes the derivative along the diagonal zero, so the $`t'`$ derivative at $`t'=t`$ is strictly positive. In the finite folded expectation comparison every difference $`g_{M,r}-g_{M,u}`$ for $`r\lt u`$ is positive, so differentiating that comparison gives $`B'<0`$. For $`M=1`$ direct Jacobi monotonicity handles the whole circle.
+
+By period one, evenness of $`Z`$ and strict decrease of $`B`$, a minimizer on $`[0,L]`$ must lie in $`[L-1/2,L]`$. Indeed select the largest representative having the same value of distance to the nearest integer. On this last half-cell $`Z`$ strictly decreases if $`M`$ is odd, giving the unique minimum at its right endpoint. This endpoint is the all-minus deep scalar class.
+
+Suppose $`M=2r`$. The scalar points on $`[0,r]`$ are $`t_k=Mk/N`$ for $`k=0,\ldots,r`$. For $`k=1,\ldots,r`$ every $`t_k`$ lies strictly inside $`(k-1/2,k)`$. Each scalar point is stationary by permutation symmetry on the root hyperplane. At every integer or half-integer interior point of $`(0,r)`$ one has $`h'(t)=Z(t)B'(t)<0`$. The derivative of $`h`$ thus has at least two zeros counted with multiplicities on each interval $`(k-1/2,k)`$ for $`1\le k\lt r`$: its endpoints have the same nonzero sign and it has an interior zero. The last interval contains $`t_r`$, a strict nondegenerate local minimum by the [all-scale Hessian theorem](LOCAL-AND-SYMMETRIC.md). Reflecting across zero, then adding at least one symmetry zero at each of $`0,r`$, yields at least $`4r=2M`$ zeros of $`h'`$ on a period, counted with multiplicity. In particular all earlier paired-count estimates become equalities if the upper bound is $`2M`$.
+
+## Upper bound on all real critical points
+
+More generally let $`a_l`$ be arbitrary real positive $`M`$-periodic weights for a positive integer $`M`$, and $`h(z)=\sum_l a_l e^{-\beta(l-z)^2}`$. It is entire, $`M`$-periodic, positive on the real axis, and satisfies
+
+```math
+h(z+i\pi/\beta)=e^{\pi^2/\beta-2\pi i z}h(z).
+```
+
+These statements follow from uniform convergence on compact subsets and $`e^{2\pi i l}=1`$. Its logarithmic derivative $`v=h'/h`$ is $`M`$-periodic and satisfies $`v(z+i\pi/\beta)=v(z)-2\pi i`$. Choose a period rectangle with boundary free of zeros of $`h`$. Integrating $`v`$ along the rectangle, the vertical sides cancel, while the lower side minus the translated upper side contributes $`2\pi i M`$. Hence $`h`$ has exactly $`M`$ zeros counting multiplicities in a fundamental cell. Each gives a simple pole of $`v`$ and therefore a double pole of $`v'`$, independent of its multiplicity as a zero of $`h`$. The function $`v'`$ is elliptic and nonconstant, since it has poles. Thus the number of its zeros, counted with multiplicity on the period torus, is equal to its number of poles counted with multiplicity, at most $`2M`$, by the argument principle on the torus. No real point is a pole. The real periodic analytic function $`v`$ has at least one zero by Rolle applied to $`h`$ on a period. If its distinct real zeros have multiplicities $`m_1,\ldots,m_j`$, its derivative has at least $`\sum(m_i-1)`$ zeros counted with multiplicity at these points, and at least one in each of the $`j`$ intervening cyclic arcs. The count for $`v`$ is consequently at most $`2M`$. Its real zeros coincide with those of $`h'`$ with the same multiplicities.
+
+This proves $`t_r`$ is the only critical point of the last open half-cell, with multiplicity one. Its strict local minimum and strict negativity of $`h'`$ at the left endpoint give strict global minimality there (the right endpoint is strictly higher by strict increase after $`t_r`$). The two reflected $`t_r`$ give exactly the deepest scalar classes. This is a global theorem for the whole one-outlier locus. In odd $`N`$ it includes points that do not belong to the previously classified loci of opposite phase pairs about a deep class. It does not compare arbitrary points with three or more phase values, or two phase values with both multiplicities greater than one.
+
+The critical point count itself applies to every positive periodic coefficient sequence convolved with a Gaussian. In the proof for the one-outlier line, the equally spaced forced scalar critical points and the strict drift at the half-integers are what exhaust this count. For two blocks of sizes $`p,q`$, the analogous profile has coefficient period at most $`\mathrm{lcm}(p,q)`$; the same forced scalar critical points alone generally do not exhaust the upper bound $`2\mathrm{lcm}(p,q)`$.
+
+[Reviewed proof](ONE-OUTLIER.md) · [Exact finite checks](check_central_order.py)
