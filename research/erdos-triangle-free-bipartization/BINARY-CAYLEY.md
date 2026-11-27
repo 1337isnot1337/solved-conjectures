@@ -2,7 +2,7 @@
 
 For every triangle-free Cayley graph on an elementary abelian 2-group with N vertices, a **linear character cut** leaves at most (79/2000)N² edges uncut, strictly below N²/25. The argument uses two elementary Fourier inequalities and the Davydov–Tombak codimension-two theorem. There is no bound on the group rank, and no graph enumeration or flag-algebra certificate is used.
 
-The qualitative statement for this class already follows from the general signless-Laplacian theorem of [Balogh–Clemen–Lidický–Norin–Volec](https://arxiv.org/html/2204.00093v4), because in this class an extremal eigenvector is a ±1 character. The bound here improves the explicit 15/376 graph-size coefficient obtained from their Theorem 1.6 and gives a different proof. Their concluding remarks report stronger large-computation constants (without presenting proofs), so this is not a claim of a best known numerical constant. The general Erdős conjecture remains open.
+The qualitative statement for this class already follows from the general signless-Laplacian theorem of [Balogh–Clemen–Lidický–Norin–Volec](https://arxiv.org/html/2204.00093v4), because in this class an extremal eigenvector is a ±1 character. The bound here improves the explicit 15/376 graph-size coefficient obtained from their Theorem 1.6 and gives a different proof. Their concluding remarks report stronger large-computation constants, and [Cai–Chen–Zhang, arXiv:2610.14503](https://arxiv.org/abs/2610.14503) now claim a sharp general signless bound of 7/50, which would give the better 7/200 cut coefficient here. This is an elementary alternative argument, not a best-bound or first qualitative-coverage claim. The general Erdős conjecture remains open.
 
 ## Fourier conventions
 
