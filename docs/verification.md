@@ -6,6 +6,8 @@ Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact
 
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
+For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.
+
 The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
 
 ## Tree reconstruction after long subdivisions
