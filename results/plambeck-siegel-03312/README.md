@@ -4,4 +4,4 @@
 
 An exact finite transfer certificate determines the outcome of every position of at most three heaps of arbitrary sizes. It produces infinitely many pairwise inequivalent single heaps, distinguished by pairs of equal heaps. The full quotient has not been classified.
 
-[Proof](PROOF.md) · [Audit](AUDIT.md) · [Exact certificate](verify.py) · [Independent checker](check_independent.cpp)
+[Proof](PROOF.md) · [Audit](AUDIT.md) · [Exact certificate](verify.py) · [Independent checker](check_independent.cpp) · [Four-heap supplement](FOUR-HEAPS.md)

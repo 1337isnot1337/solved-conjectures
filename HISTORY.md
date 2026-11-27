@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Liang’s 0.3123 slice problem
+
+Answered Liang’s Open Problem 6.2 with a residue rule for the bulk and an exact all-sizes reduction for the entire stated slice. [Proof](results/liang-03123-slice/PROOF.md) · [Audit](results/liang-03123-slice/AUDIT.md). The same publication adds a [four-heap supplement](results/plambeck-siegel-03312/FOUR-HEAPS.md) excluding every eventual positive shift for 0.3312.
+
 ## 2026-11-27 — Plambeck–Siegel infinite quotient conjecture for 0.3312
 
 Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).

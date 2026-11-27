@@ -24,3 +24,7 @@ python3 verify.py
 c++ -O2 -std=c++17 check_independent.cpp -o /tmp/check-03312
 /tmp/check-03312
 ~~~
+
+## Four-heap supplement
+
+The separate [supplement](FOUR-HEAPS.md) gives an exact all-sizes outcome reduction through four heaps and rules out every positive eventual heap translation of the form in Liang’s Conjecture 4.6. The [four-heap checker](check_four.cpp) verified 531,454 representatives and all 264 residue classes needed for the witnesses. A separate unsorted-array minimax comparison matched 4,421,275 nondecreasing positions with heap sizes below 100. The extension is proved by neighborhood-preserving gap transfer, not extrapolation.
