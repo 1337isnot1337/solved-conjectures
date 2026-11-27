@@ -20,3 +20,7 @@
 - Run `python3 verify.py`. The default checks every heap partition of weight at most 29 by independent minimax (23,025 states), computes the two graph outcomes by direct closed-neighborhood minimax at 48 orders, and checks 450 parameter-family examples. These are independent implementations of the actual game rules, not the virtual proof recurrence.
 - The extended C++ check independently compares all 2,984,865 heap partitions (including the empty one) through total weight 55. Run `c++ -O3 -std=c++17 verify_extended.cpp -o /tmp/verify-misere && /tmp/verify-misere 55`.
 - The written induction proves the result for all lengths and arbitrary numbers of bordered runs. The finite checks are diagnostics. No Lean proof or external referee review is claimed.
+
+## Supplemental checks
+
+The [quotient classification](EXACT-QUOTIENT.md) gives both a product formula and explicit distinguishing contexts. Its checker tests 6,000 products and 5,935 distinguishing examples. The [even-cycle rule](EVEN-CYCLE-SUMS.md) preserves actual game moves and was checked independently on 1,003 combinations. The [mixed-cycle rule](MIXED-CYCLE-SUMS.md) was checked on 17,848 positions, both finite obstruction witnesses, and 144 threshold contexts. The only untreated odd cycles allowed in the positive extension have lengths 3, 5, 7 and 9; the negative result applies to every longer odd cycle. All three checkers are standalone Python programs in this directory.
