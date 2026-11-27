@@ -4,6 +4,14 @@
 
 Four oblique grids show that distributed sets can have quadratically many rich active-bisector incidences even when every circle has at most four sites and every site-centered circle has at most three. The construction limits a proposed incidence strategy for the open site-centered question. [Proof](results/erdos-general-position-pinned-distances/FOUR-GRIDS.md) · [Independent review](results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md)
 
+## 2026-11-27 — Balanced-edge and leaf-centroid reconstruction for Stanley’s question
+
+A new identity for the ordinary forest polynomial across any cut improves the previously published long-subdivision threshold. Endpoint components of orders 5 and 8 now require a total of 18 vertices under this sufficient bound. A separate result reconstructs a tree from a unique centroid carrying enough pendant leaves. Both are reviewed partial theorems within the existing unranked entry. [Balanced-edge proof](docs/research-results/stanley-tree-subdivisions/BALANCED-ARMS.md) · [Leaf-centroid proof](docs/research-results/stanley-tree-subdivisions/LEAF-HUB.md)
+
+## 2026-11-27 — All-rank scalar ordering and one-outlier Gaussian minimizers in primal type A
+
+The existing type-A research entry now orders every scalar coset at every positive scale and identifies all minimizers among translates with one exceptional coordinate or with paired displacements about a deep class. It also proves positive curvature at every deep class in both parities. The unrestricted result in sufficiently high ranks retains its original scope. [Results and reviews](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Exact checks](docs/research-results/root-a-high-rank-cold-spots/check_central_order.py)
+
 ## 2026-11-27 UTC — Erdős’s site-centered pinned-distance question
 
 The existing one-third entry adds a mixed-circle incidence bound, a sufficient condition in terms of active perpendicular bisectors, and the sharp pair-density moment for a uniform-disk model. These partial results concern the separate open site-centered hypothesis. [Theorems and review](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)

@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_balanced_paths.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_hub.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_long_subdivision.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
@@ -247,6 +249,7 @@ jobs:
         run: |
           python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py
           python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py
+          python3 docs/research-results/root-a-high-rank-cold-spots/check_central_order.py
       - name: Check the Leech lattice deep-hole coefficients
         run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
       - name: Check mixed-hole Gaussian coefficients and equality cases

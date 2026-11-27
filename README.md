@@ -183,11 +183,11 @@ A separate relaxation of Erdős’s one-third question restricts only circles ce
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. Only finitely many ranks at intermediate scales remain open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
+Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. In every rank and at every scale the deep classes minimize when all but one coordinate are congruent. The remaining finite ranks at intermediate scales require a comparison with arbitrary translates. [All central levels](docs/research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](docs/research-results/root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
 
 ## Recognizing trees after one long subdivision
 
-The ordinary chromatic symmetric function distinguishes any tree after sufficiently many subdivisions of one chosen edge. The bound depends only on the larger endpoint component. Companion results recognize families with repeated centroid branches. Stanley’s question for all trees remains open. [Theorems and review](docs/research-results/stanley-tree-subdivisions/README.md)
+The ordinary chromatic symmetric function distinguishes every sufficiently long subdivision of a single tree edge. A balanced-edge argument gives a bound in terms of both end orders. Other theorems recognize trees with enough leaves at their centroid or with specified repeated branches. Stanley’s question for all trees remains open. [Theorems and reviews](docs/research-results/stanley-tree-subdivisions/README.md)
 
 ## Current research
 

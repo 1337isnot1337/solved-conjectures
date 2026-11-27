@@ -2,7 +2,7 @@
 
 ## Tree reconstruction after long subdivisions
 
-The subdivision and repeated-branch theorems have written proofs and executable finite checks. They have no registered Lean formalization. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
+The balanced-edge, leaf-centroid, earlier subdivision and repeated-branch theorems have written proofs and executable finite checks. Their Lean status is unformalized. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
 
 ## Cioba–Savvas shutout number conjecture
 
@@ -14,7 +14,7 @@ The all-rank theorem, its equality cases and its positive Hessian have a reviewe
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-The all-positive-scale theorem in sufficiently high ranks and the two dimension-independent endpoint intervals have an internally reviewed written proof, finite exact comparisons, and no Lean formalization. [Scope and checks](research-results/root-a-high-rank-cold-spots/README.md)
+The high-rank theorem, both dimension-independent endpoint intervals, the all-rank ordering of scalar levels, the one-outlier classification and the positive Hessian and paired-displacement estimates have internally reviewed written proofs and exact finite comparisons. These results have no Lean formalization. [All central levels](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](research-results/root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Scope and checks](research-results/root-a-high-rank-cold-spots/README.md)
 
 ## Leech lattice cold-spot limit
 

@@ -2,7 +2,7 @@
 
 ## Tree reconstruction after long subdivisions
 
-Run the three standard-library Python checks in the [reproduction instructions](research-results/stanley-tree-subdivisions/README.md#reproduction). They compare ordinary cut polynomials, rooted products, subdivision factors and competing branch configurations. [Independent mathematical review](research-results/stanley-tree-subdivisions/REVIEW.md)
+The five standard-library [Stanley checkers](research-results/stanley-tree-subdivisions/README.md#reproduction) compare ordinary cut polynomials, balanced-edge reconstruction and fringe counts, pendant-leaf statistics, subdivision factors and competing branch configurations. [Balanced-edge review](research-results/stanley-tree-subdivisions/BALANCED-ARMS-REVIEW.md) · [Leaf-centroid review](research-results/stanley-tree-subdivisions/LEAF-HUB-REVIEW.md)
 
 ## Circular windows in convex tilings
 
@@ -15,6 +15,8 @@ Run `python3 docs/research-results/dual-a-universal-cold-spots/verify.py` with s
 ## Gaussian cold spots of high-rank type-A root lattices
 
 Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py` and `python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py`. The first script certifies 700 strict central-class comparisons across ranks 4 through 23 and ten more in ranks 4 and 5 at large scales that test both parities. The second compares four noncentral translates and two origin translates with the deep classes in ranks 5 and 9 at four times the natural logarithm of two. Both use explicit bounds on omitted Gaussian tails. The uniform all-translation theorem has a written proof. [Combined theorem](research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
+Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central_order.py` for 605 adjacent scalar comparisons in ranks 1 through 21 at five scales, and 32 complete Gaussian-mass comparisons in ranks 3 through 6 on the two restricted families. This verifier uses unshifted integer coefficient enclosures for the consecutive levels and the existing rational tail routine for displaced points. [Proof](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [Independent review](research-results/root-a-high-rank-cold-spots/ALL-CENTRAL-REVIEW.md)
 
 ## Leech lattice cold-spot coefficients
 
