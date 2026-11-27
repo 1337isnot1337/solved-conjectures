@@ -65,9 +65,9 @@ def check(rows, lower=None, check_optimum=True):
         assert B <= d*k
         assert U == len(forced)
         assert sum(comb(c+1, 2) for c in count.values()) <= paid
-        assert (U-B)**2 <= 2*k*paid
-        t = U - (2*d+1)*k
-        assert t <= 0 or t*t <= k*k*(d+1)*(3*d+1)
+        assert (U-B)**2 + k*(U-B) <= 2*k*paid
+        t = 2*U - (4*d+1)*k
+        assert t <= 0 or t*t <= k*k*(12*d*d+12*d+1)
     if lower is not None:
         assert D.bit_count() >= lower
 

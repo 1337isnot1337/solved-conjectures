@@ -15,3 +15,5 @@ every vertex-arrival stream in the authors’ model.
 
 Lean status: none. This is a written proof with a finite
 regression test for the algorithm and its accounting.
+
+- [Independent mathematical review](REVIEW.md)

@@ -6,7 +6,7 @@ prefix whose maximum arrival degree is d, the algorithm
 maintains a dominating set at most
 
 ```math
-2d+1+\sqrt{(d+1)(3d+1)}
+2d+\tfrac12+\sqrt{3d^2+3d+\tfrac14}
 ```
 
 times the optimum for that prefix. The algorithm does not
@@ -64,17 +64,18 @@ assignment corresponds to a different forced step,
 
 ```math
 rU\ \ge\ \sum_{w\in S}\frac{m(w)(m(w)+1)}2
-\ \ge\ \frac{(U-B)^2}{2k}.
+\ \ge\ \frac{(U-B)^2}{2k}+\frac{U-B}{2}.
 ```
 
 The first inequality counts all scores only once. The last
 uses Cauchy–Schwarz and the fact that the m(w) sum to U−B.
-Solving the quadratic inequality and using B at most dk gives
+Write $`z=(U-B)/k`$ and $`b=B/k`$. The inequality says
+$`z^2-(2r-1)z-2rb\le0`$. Solving it and using b at most d gives
 
 ```math
-\frac{U}{k}
-\ \le\ \frac Bk + r+\sqrt{r^2+2r B/k}
-\ \le\ 2d+1+\sqrt{(d+1)(3d+1)}.
+\frac Uk
+\le b+r-\tfrac12+\sqrt{(r-\tfrac12)^2+2rb}
+\le 2d+\tfrac12+\sqrt{3d^2+3d+\tfrac14}.
 ```
 
 Since the prefix was arbitrary, the guarantee holds after
