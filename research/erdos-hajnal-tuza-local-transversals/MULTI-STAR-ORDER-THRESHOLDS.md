@@ -21,11 +21,12 @@ k(k-1)L_k>\left\lfloor\frac{\delta}{s^2}\right\rfloor.
 \]
 In particular, at an integer threshold \(a_*=k\ge2\)
 it is strictly unattainable whenever \(3(k-1)/s\)
-is not an integer. Conversely, if \(k\) is a prime
-power and \(\lambda=3(k-1)/s\) is an integer, then
-at \(\delta=3s(k-1)=\lambda s^2\) the constant
-\(L_k=3/(sk)\) **is attained asymptotically** along
-a sequence by abstract petals.
+is not an integer. Conversely, if \(\lambda=3(k-1)/s\) is an integer,
+then at \(\delta=3s(k-1)=\lambda s^2\) the constant
+\(L_k=3/(sk)\) **is attained asymptotically** for all
+large \(t\) by abstract petals. An affine geometry gives
+an explicit subsequence when \(k\) is a prime power;
+Wilson's design theorem gives the full conclusion.
 
 ## 1. A weighted graph obstruction
 
@@ -121,3 +122,34 @@ The total number of line points is
 \(\lambda m(m-1)/(k(k-1))\), by counting pairs on
 lines. Together with padding this is
 \((3/(sk)+o(1))t^2\), as claimed.
+
+## 3. Remove the prime-power and size restrictions using designs
+
+For any fixed integer \(k\ge2\) and compatible integer
+\(\lambda=3(k-1)/s\), choose
+\(m'\ge m\) with \(m'=m+O_k(1)\) and
+\(m'\equiv1\pmod{k(k-1)}\).
+[Wilson's design existence theorem](https://doi.org/10.1016/0097-3165(75)90067-9)
+gives a \(2\)-design with blocks of size \(k\) and
+pair multiplicity \(\lambda\) on \(m'\) points for
+all sufficiently large \(m'\): both necessary
+divisibilities follow from the chosen congruence.
+Use its blocks in place of the copied affine lines,
+but restrict the cut labels to any \(m\) points of
+the design. Each index belongs to
+\(R'=\lambda(m'-1)/(k-1)\) blocks. For an \(s\)-cut,
+the block petal has at least \(sR'-\lambda\binom s2\)
+points. As before, add \(O(1)\) private points per
+index if needed to bring this size to at least \(p\).
+Then trim every petal independently to exactly \(p\)
+points. Trimming can only decrease overlaps.
+
+There are \(\lambda m'(m'-1)/(k(k-1))\) design blocks,
+and the padding adds only \(O(m)\) points.
+The same size asymptotic follows for every sufficiently
+large \(m=t+s\), with no prime-power condition.
+Combined with the strict-gap criterion, this classifies
+attainment of the **abstract** affine constant at every
+integer star threshold: it is attained exactly when
+\(\delta/s^2=3(k-1)/s\) is an integer. This does not
+classify the real local-transversal examples.
