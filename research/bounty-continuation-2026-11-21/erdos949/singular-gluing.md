@@ -1,0 +1,29 @@
+# What changes at a singular continuum
+
+Let $`G`$ be a rational vector space of singular cardinality $`\kappa`$, with $`\theta=\mathop{\mathrm{cf}}(\kappa)>\aleph_0`$. Let $`S\subseteq G`$ be sum-free. The [regular-cardinal theorem](regular-cardinal.md) supplies admissible sets of every smaller regular cardinality in any subspace of at least that cardinality. Here *admissible* means disjoint from $`S`$ with all pairwise sums outside $`S`$. These sizes are unbounded in $`\kappa`$ and need not be attained by one set just from this observation. [Erdős 949](https://www.erdosproblems.com/949)
+
+## Combining sets with bounded interactions
+
+Let $`J`$ be the family of sets $`X\subseteq G`$ for which the cardinalities of admissible subsets of $`X`$ are bounded below $`\kappa`$. This is an ideal closed under unions of fewer than $`\theta`$ members. For such a union there is one bound below $`\kappa`$ on the sizes of all admissible intersections with its members, and summing fewer than $`\theta`$ copies of this bound still gives a cardinal below $`\kappa`$.
+
+**Lemma.** Suppose $`X\notin J`$ and $`X\cap(S-x)\in J`$ for every $`x\in X`$. Then $`X`$ contains an admissible set of cardinality $`\kappa`$.
+
+Fix for each $`x\in X`$ a cardinal $`b(x)\lt\kappa`$ bounding the sizes of admissible subsets of $`X\cap(S-x)`$. There are admissible subsets $`C\subseteq X`$ of arbitrarily large regular sizes $`\lambda`$, with $`\theta\lt\lambda\lt\kappa`$. In each such $`C`$ one can retain $`\lambda`$ elements on which $`b(x)`$ has a common bound below $`\kappa`$. Indeed, partition $`C`$ using a cofinal sequence of length $`\theta`$ in $`\kappa`$. Regularity of $`\lambda`$ guarantees a class of size $`\lambda`$.
+
+Build $`\theta`$ blocks. At any proper stage there are fewer than $`\kappa`$ earlier points, and all their $`b(x)`$ values are bounded by one cardinal below $`\kappa`$, by the uniform bound within each earlier block. Choose a new thinned admissible set $`C`$ of regular size $`\lambda\lt\kappa`$ exceeding both these cardinals and the next member of a fixed cofinal sequence. For each earlier $`x`$, at most $`b(x)`$ points of $`C`$ lie in $`S-x`$, since these points form an admissible subset of $`X\cap(S-x)`$. Removing all of them and all earlier points deletes fewer than $`\lambda`$ points. Keep the remainder for the new block. The union of the blocks has cardinality $`\kappa`$, and sums between different blocks avoid $`S`$ by the deletion. This proves the lemma.
+
+Consequently, in a counterexample, every $`X\notin J`$ has a set of $`x\in X`$ outside $`J`$ for which $`X\cap(S-x)\notin J`$. Otherwise delete all such $`x`$ from $`X`$ to get a set still outside $`J`$ and apply the lemma.
+
+An individual bound $`|X\cap(S-x)|\lt\kappa`$ on every row does not by itself ensure the unbounded admissible sizes that the lemma requires. For a general graph, disjoint cliques with sizes increasing cofinally to $`\kappa`$ have all degrees less than $`\kappa`$ and independence number only $`\theta`$.
+
+## A sufficient uniform bound for the affine-slice argument
+
+The final slope and Schur argument of the regular proof also applies when the following cardinal bounds hold.
+
+- Some rational subspace $`H`$ of size less than $`\theta`$ has every coset meeting $`S`$.
+- One cardinal $`\nu\lt\kappa`$ bounds the sizes of all midpoint exception sets $`B_t=\{x\notin S:x-t,x+t\in S\}`$.
+- The same $`\nu`$ bounds $`|\{x\in S:x+rs\in S\}|`$ for all $`s\in S`$ and $`r\in\mathbb Q\setminus\{0\}`$.
+
+Indeed, for each fixed $`b`$ and each nonzero rational $`u`$, the subspace $`D=\mathbb Q(ub,0)+(\{0\}\oplus H)`$ in the regular proof has size at most $`\max(\aleph_0,|H|)`$. In forming its midpoint-closed slice and excluding all rational red directions, the number of discarded bases has the same uniform bound $`\max(\aleph_0,|H|,\nu)`$ for every $`b`$ and $`u`$. The slope, witness and rational coefficients take fewer than $`\theta`$ possible tuples, so a failure at $`\kappa`$ bases still gives one tuple recurring at $`\kappa`$ bases. A recursion of length $`\kappa`$ now avoids every earlier exceptional row, since all have the same bound below $`\kappa`$. The affine covering and Schur contradiction in the regular proof then go through unchanged.
+
+Neither uniform cardinal bound follows merely from the failure of a size-$`\kappa`$ solution. A hypothetical counterexample with a sufficiently small covering subspace must have unbounded sizes among one of the two displayed families. The case of a covering subspace of size at least $`\theta`$ also remains open in this argument.
