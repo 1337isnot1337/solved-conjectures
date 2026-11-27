@@ -2,6 +2,8 @@
 
 ## Uniform extension by words of pair blocks
 
+The existence result below already follows from [Komjáth (2020), Theorem 16](https://onlinelibrary.wiley.com/doi/full/10.1002/jgt.22539) by taking the \(r\)-cliques of a \(K_{r+1}\)-free graph that forces a monochromatic \(K_r\) under every smaller vertex palette. The word construction gives an alternative explicit presentation. Komjáth's Theorems 1–2 also contain the disjoint-word colouring argument.
+
 The four-tuple construction extends to every finite uniformity \(r\ge3\). On exactly \(\kappa\) vertices, with chromatic number exactly \(\kappa\), it has the following property: no edge contains two distinct completions of any common \((r-1)\)-set. Here \(\kappa\) is any infinite cardinal, and a completion is a vertex which extends the set to an edge. This excludes in particular any three distinct \(r\)-edges on \(r+1\) vertices. For \(r=3\) it is the property in [the original-scope proof](PROOF.md).
 
 ### Disjoint-coordinate words force the full chromatic number
