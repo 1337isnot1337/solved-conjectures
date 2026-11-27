@@ -111,6 +111,7 @@ STATUS_LABEL_SLUGS = {
     "de Joannis de Verclos’s projective rigidity conjecture": "de-verclos-projective-rigidity",
     "Erdős–Galvin–Hajnal’s Shelah-graph avoidance problem": "erdos-galvin-hajnal-shelah-graph-avoidance",
     "Erdős–Hajnal’s ordinal-square chromatic problem": "erdos-hajnal-ordinal-square-chromatic",
+    "Abreu–Brondani–de Lima–Oliveira’s adjacency Nordhaus–Gaddum conjecture": "abreu-brondani-adjacency-nordhaus-gaddum",
     "Kempton–Zaitzeff–Muthuprakash’s normalized Nordhaus–Gaddum conjecture": "normalized-nordhaus-gaddum",
     "Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture": "barrett-evans-hall-kempton-se",
     "Barrett–Evans–Hall–Kempton’s dandelion conjecture": "barrett-evans-hall-kempton-dandelion",
