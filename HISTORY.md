@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Boolean order representations of complementary graph products
+
+Under the bounded proper forcing axiom, a graph represented by any finite Boolean function of order comparisons satisfies the exact chromatic product equality with its complement on every infinite set of size at most the first uncountable cardinal. The proof reduces every such uncountable representation to at most three order types and four unordered pair colors. Galvin and Shelah’s 1973 construction supplies the sharp lower bound. Soukup’s general ZFC problem remains open. [Theorem](results/soukup-complementary-graph-product/BOOLEAN-ORDERS.md) · [Sources and independent review](results/soukup-complementary-graph-product/BOOLEAN-ORDERS-REVIEW.md)
+
 ## 27 November 2026 — Tree-distance distributions and rational length relations
 
 If two finite metric trees have the same distribution of distances between uniform arclength samples, the tree with more leaves has at most twice its number of independent rational edge-length relations in extra leaves. A generic tree of any topology is identified against every rival with at most two such relations. For an arbitrary bound $`D`$ on this number, a finite ambiguity test across all topologies and all leaf surpluses needs at most $`4D`$ rival leaves. The integer exceptional-set estimate and the marked height-relation proof are recorded with their checks in the existing Stanley campaign. [Unmarked theorem](docs/research-results/stanley-tree-subdivisions/DISTANCE-CANCELLATION-CODIMENSION.md) · [Marked theorem](docs/research-results/stanley-tree-subdivisions/HEIGHT-RELATION-KERNEL.md) · [Review and checks](docs/research-results/stanley-tree-subdivisions/DISTANCE-NULLITY-REVIEW.md)
