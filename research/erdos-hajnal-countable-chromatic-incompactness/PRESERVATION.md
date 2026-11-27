@@ -89,3 +89,37 @@ argument matters: the ordinary CH shift-graph witness becomes
 countably chromatic once at least $`\aleph_2`$ distinct reals can be
 used to label its indices. No claim is made for arbitrary extensions
 or for arbitrary ground models with large continuum.
+
+## Starting from small continuum without a ground-model witness
+
+There is also a construction rather than just a preservation
+statement. Suppose the original continuum is at most $`\aleph_2`$.
+Every nontrivial extension adding any number of Cohen reals
+or any number of random reals has the fixed-size witness.
+
+First, in an extension with continuum at most $`\aleph_2`$,
+fix a ground-model column-injective coding
+$`e:[\omega_2]^2\to\omega_1`$. The forcing preserves both
+cardinals and adds a real outside the ground model, and therefore
+outside $`L[e]`$. Todorčević's interval construction in
+[§6, Theorem 6.1 and Claims 1–2](https://www.math.toronto.edu/~stevo/dichotomies4.pdf#page=8)
+now provides the witness: its size is at most $`\aleph_2`$ because
+each tree node is a countable sequence of countable bounded subsets
+of $`\omega_2`$, and within any fixed bound there are at most continuum
+many such sequences. Each induced subgraph of smaller order is
+countably chromatic, so this uncountably chromatic graph has size
+exactly $`\aleph_2`$.
+
+For at most $`\aleph_2`$ new reals the continuum stays at most
+$`\aleph_2`$: both notions are ccc and have at most $`\aleph_2`$
+conditions in the ground model, since
+$`(\aleph_2)^{\aleph_0}=\aleph_2`$ when the continuum is at most
+$`\aleph_2`$. Countable antichains for nice real names give the
+same bound on the number of reals in the extension.
+For more than $`\aleph_2`$ new reals, first factor off $`\aleph_2`$ of
+them. The independent-factor decomposition for these forcings
+is [the product lemmas, §§1.6 and 2.13](https://www.math.uni-hamburg.de/home/khomskii/ST2013/bogotalecture.pdf).
+The intermediate continuum is precisely $`\aleph_2`$, and the
+interval argument provides the witness there. The preservation
+theorem above handles all remaining coordinates. There is no
+assumption that a witness already existed in the original model.
