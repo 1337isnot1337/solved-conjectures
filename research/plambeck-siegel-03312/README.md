@@ -1,0 +1,4 @@
+
+thread 'main' (239454) panicked at linux-sandbox/src/linux_run_main.rs:916:25:
+failed to register synthetic bubblewrap mount target /tmp/.git: No space left on device (os error 28)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
