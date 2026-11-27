@@ -4,7 +4,11 @@ This note covers the Lean formalization of the concrete counterexample to Chen�
 
 **Scope.** Lean proves the five-variable witness. The written extension to every rank $`n\ge5`$ and every $`1\lt\tau\lt2`$ is **not** formalized.
 
-## Main theorem
+## Source-matched counterexample
+
+The final theorem proves the rank-five counterexample using the defining Jack scalar product at both parameters. The earlier Schur endpoint below is a dependency. For all homogeneous choices of higher-degree source generators and all literal unit-parameter Jack blocks through degree five, the target lies outside the resulting full nonnegative semiring. Lean constructs a nonvacuous source completion and proves existence and uniqueness of the target Jack family. [Source-matched statement](../../../lean/Conjectures/ChenKhareSahiJackSourceTheorem.lean) · [Scope and independent audit](SOURCE_BRIDGE.md).
+
+## Original Schur endpoint
 
 **Lean excerpt**
 
@@ -61,5 +65,5 @@ The Jack side follows the source definition literally. In [§2.3](https://arxiv.
 
 ## Remaining scope
 
-- **Source generators.** Lean uses the five-variable Jacobi–Trudi Schur polynomials as generators. The source's generators are the Jack polynomials at $`\sigma=1`$. These are the Schur polynomials ([§1.2.1](https://arxiv.org/html/2509.19649v2#S1.SS2.SSS1)), and Jacobi–Trudi expresses them as determinants. Both identifications are classical (Macdonald, *Symmetric Functions and Hall Polynomials*, I.(3.4) and VI.10), but neither is formalized here.
+- **Source generators.** The final formalization now proves the concrete generator comparison directly from equations (2.8)–(2.10) in all degrees required for the witness. The argument allows arbitrary homogeneous extensions in higher degrees.
 - **Parameter family.** The written extension to every $`n\ge5`$ and every $`1\lt\tau\lt2`$ remains unformalized.

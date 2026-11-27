@@ -12142,7 +12142,13 @@ run_cmd do
     `ChenKhareSahi.Jack.jackTarget_smul,
     `ChenKhareSahi.Jack.monomial_natPt,
     `ChenKhareSahi.Jack.jackTarget_sep,
-    `ChenKhareSahi.Jack.conjecture4_counterexample]
+    `ChenKhareSahi.Jack.conjecture4_counterexample,
+    `ChenKhareSahi.Jack.Source.source_coordinates,
+    `ChenKhareSahi.Jack.Source.power_expansion,
+    `ChenKhareSahi.Jack.Source.checked_samples,
+    `ChenKhareSahi.Jack.Source.completion_family,
+    `ChenKhareSahi.Jack.Source.exclude_target,
+    `ChenKhareSahi.Jack.Source.conjecture4_unit_parameter_counterexample]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
