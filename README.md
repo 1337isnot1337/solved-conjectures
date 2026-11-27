@@ -179,7 +179,7 @@ For every Gaussian parameter, the minima on $`A_n^*`$ occur exactly at the deep 
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-For each positive lower cutoff, the deep holes of $`A_n`$ are exactly the minimizers at every Gaussian parameter above that cutoff once the rank is sufficiently large. A single sufficiently large parameter threshold also works in every rank. Full universality for the root family remains open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
+Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. Only finitely many ranks at intermediate scales remain open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
 
 ## Current research
 

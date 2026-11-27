@@ -10,7 +10,7 @@ The all-rank theorem, its equality cases and its positive Hessian have a reviewe
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-The high-rank lower-cutoff theorem and its dimension-independent steep-scale corollary have an internally reviewed written proof, finite exact comparisons, and no Lean formalization. [Scope and checks](research-results/root-a-high-rank-cold-spots/README.md)
+The all-positive-scale theorem in sufficiently high ranks and the two dimension-independent endpoint intervals have an internally reviewed written proof, finite exact comparisons, and no Lean formalization. [Scope and checks](research-results/root-a-high-rank-cold-spots/README.md)
 
 ## Leech lattice cold-spot limit
 

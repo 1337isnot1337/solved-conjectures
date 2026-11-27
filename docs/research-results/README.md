@@ -51,7 +51,7 @@ The Gaussian sum on $`A_n^*`$ attains its minimum precisely at the deep holes fo
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-The deep holes of $`A_n`$ are the only Gaussian minimizers in all sufficiently high ranks, simultaneously at every scale at or above an arbitrary prescribed positive cutoff. A single sufficiently large scale threshold works across all ranks. The proof uses tilted one-dimensional discrete Gaussians conditioned to have coordinate sum zero. [Partial theorem](root-a-high-rank-cold-spots/README.md) · [Half-line proof](root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+The deep holes of $`A_n`$ are the only Gaussian minimizers at every positive scale in all sufficiently high ranks. Both a small-scale interval and a large-scale interval work simultaneously across all ranks. The proof uses tilted one-dimensional discrete Gaussians conditioned to have coordinate sum zero. [Partial theorem](root-a-high-rank-cold-spots/README.md) · [Small-scale proof](root-a-high-rank-cold-spots/SMALL-SCALE.md) · [Half-line proof](root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md)
 
 ## Prior results and quantitative refinements
 

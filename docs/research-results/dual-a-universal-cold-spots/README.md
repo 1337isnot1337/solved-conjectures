@@ -6,4 +6,4 @@ This answers the dual type-A part of Bachoc, Moustrou, Vallentin and Zimmermann�
 
 Codex derived the all-parameter proof in the WadeDavis research session. An independent Codex reviewer checked the argument within the project. The proof combines Chan–Liu’s circular summation identity with strict concavity of the logarithm. The verifier checks the product formula with exact integer coefficients and the Hessian with finite numerical lattice sums. There is no Lean formalization or external referee report. [Review and prior work](REVIEW.md) · [Python verifier](verify.py) · [Discovery issue #372](https://github.com/1337isnot1337/solved-conjectures/issues/372)
 
-A separate partial theorem identifies the Gaussian minimizers of the primal root lattice at every scale above a prescribed positive cutoff in sufficiently large ranks. [High-rank root lattices](../root-a-high-rank-cold-spots/README.md)
+A separate partial theorem identifies the Gaussian minimizers of the primal root lattice at every positive scale in sufficiently high ranks and at uniform small and large scales in every rank. [High-rank root lattices](../root-a-high-rank-cold-spots/README.md)

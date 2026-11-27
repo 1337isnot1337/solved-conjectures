@@ -4,6 +4,8 @@
 
 **Theorem.** For each $`a>0`$ there exists $`N_a`$ such that for every $`N\ge N_a`$ and every $`\alpha\ge a`$, the only minimizing classes for the Gaussian sum on $`A_{N-1}=\mathbb Z^N\cap\mathbf 1^\perp`$ are the deep classes $`c_k`$ with $`k`$ nearest to $`N/2`$. There is consequently an absolute $`A`$ such that for every rank and every $`\alpha\ge A`$ in this standard normalization, the minimizing classes are precisely the deep classes. For the latter conclusion take $`a=1`$ and apply the fixed-rank theorem to the finitely many remaining ranks. [Bachoc, Moustrou, Vallentin and Zimmermann, Theorem 1.3 and its proof](https://arxiv.org/html/2502.08819v2#S1.SS5)
 
+The [uniform small-parameter theorem](SMALL-SCALE.md) covers the interval down to zero. Combining the two results proves universality for every sufficiently high root rank.
+
 ## A lower bound at the integer mean
 
 If $`S`$ has a log-concave mass function $`f`$ on the integers, finite variance $`V`$ and integer mean $`m`$, the piecewise-linear interpolation of $`\log f`$ is concave on its support. Jensen gives $`\log f(m)\ge-H(S)`$. If $`U`$ is independent and uniform on an interval of length one centered at zero, then $`h(S+U)=H(S)`$ by disjointness of the unit bins. The Gaussian maximizes differential entropy at fixed variance, so

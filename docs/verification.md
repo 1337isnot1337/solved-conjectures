@@ -10,7 +10,7 @@ Run `python3 docs/research-results/dual-a-universal-cold-spots/verify.py` with s
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py` and `python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py`. The first script certifies 700 strict central-class comparisons across ranks 4 through 23. The second compares four noncentral translates and two origin translates with the deep classes in ranks 5 and 9 at four times the natural logarithm of two. Both use explicit bounds on omitted Gaussian tails. The uniform all-translation theorem has a written proof. [Half-line argument](research-results/root-a-high-rank-cold-spots/HALF-LINE.md) · [Review](research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+Run `python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py` and `python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py`. The first script certifies 700 strict central-class comparisons across ranks 4 through 23 and ten more in ranks 4 and 5 at large scales that test both parities. The second compares four noncentral translates and two origin translates with the deep classes in ranks 5 and 9 at four times the natural logarithm of two. Both use explicit bounds on omitted Gaussian tails. The uniform all-translation theorem has a written proof. [Combined theorem](research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
 
 ## Leech lattice cold-spot coefficients
 

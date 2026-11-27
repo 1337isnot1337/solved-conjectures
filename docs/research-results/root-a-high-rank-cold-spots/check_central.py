@@ -46,3 +46,6 @@ if __name__ == "__main__":
     count = sum(compare(N, s) for N in sizes for s in scales)
     print(f"{count} strict central-class comparisons, ranks 4 through 23, "
           f"alpha/log(2) in {scales}")
+    tail_count = sum(compare(N, s) for N in (5, 6) for s in (24, 64))
+    print(f"{tail_count} additional large-scale comparisons, ranks 4 and 5, "
+          "alpha/log(2) in (24, 64)")
