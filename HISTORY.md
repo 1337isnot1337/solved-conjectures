@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős–Galvin–Hajnal’s half-overlap hypergraphs
+
+Published Cinna Davis’s ZFC solution of the 1975 Problem 11 at aleph-two for all original uniformities. The proof uses a strong coloring of ordinal pairs to select one rectangle per row pair. The full threshold credits the original conditional and impossibility results. [Proof](results/erdos-galvin-hajnal-half-overlap-hypergraphs/PROOF.md) · [Source comparison](results/erdos-galvin-hajnal-half-overlap-hypergraphs/PRIOR-ART.md) · [Independent review](results/erdos-galvin-hajnal-half-overlap-hypergraphs/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1040)
+
 ## 2026-11-27 — Erdős’s arbitrary-cardinal bipartization conjecture
 
 For every positive exponent increment and every infinite cardinal, the shift-graph construction gives a graph of higher chromatic number in which every finite subgraph can be made bipartite within Erdős’s proposed edge-deletion bound. The proof controls monochromatic edges at each shift center and applies at all finite orders. [Proof](results/erdos-arbitrary-cardinal-bipartization/PROOF.md) · [Independent review](results/erdos-arbitrary-cardinal-bipartization/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/1015)
