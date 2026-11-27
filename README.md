@@ -181,6 +181,10 @@ For every Gaussian parameter, the minima on $`A_n^*`$ occur exactly at the deep 
 
 Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. Only finitely many ranks at intermediate scales remain open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
 
+## Recognizing trees after one long subdivision
+
+The ordinary chromatic symmetric function distinguishes any tree after sufficiently many subdivisions of one chosen edge. The bound depends only on the larger endpoint component. Companion results recognize families with repeated centroid branches. Stanley’s question for all trees remains open. [Theorems and review](docs/research-results/stanley-tree-subdivisions/README.md)
+
 ## Current research
 
 Open campaigns, intermediate proofs, and experimental checks are on the [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research). Each result page states the scope of the claim and its verification. Several partial results are awaiting independent proof review.

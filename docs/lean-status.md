@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Tree reconstruction after long subdivisions
+
+The subdivision and repeated-branch theorems have written proofs and executable finite checks. They have no registered Lean formalization. [Mathematical scope and evidence](research-results/stanley-tree-subdivisions/README.md)
+
 ## Cioba–Savvas shutout number conjecture
 
 Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Lean proves for arbitrary finite simple graphs that Breaker prevents an immediate $s$-shutout whenever $s \ge 2$, $D = \Delta(G) \ge 1$, and $2^{1-s} \le D^D / (D+1)^{D+1}$, and via Bernoulli's inequality deduces $\sigma(s) \ge \tau(s) > 2^{s-3}$ for every $s \ge 3$ and $\sigma(s) \ge 2^s / 8$ for every $s \ge 1$. The four-module closure passed strict compilation, the complete 288-declaration all-owned axiom audit (241 theorems, 54 private declarations), and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).

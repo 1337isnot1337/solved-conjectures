@@ -1,5 +1,9 @@
 # Verification
 
+## Tree reconstruction after long subdivisions
+
+Run the three standard-library Python checks in the [reproduction instructions](research-results/stanley-tree-subdivisions/README.md#reproduction). They compare ordinary cut polynomials, rooted products, subdivision factors and competing branch configurations. [Independent mathematical review](research-results/stanley-tree-subdivisions/REVIEW.md)
+
 ## Circular windows in convex tilings
 
 Run `python3 results/langi-wang-convex-tiling/check_sectors.py` with standard Python. The script checks one stage with 512 polygon sides, including sector convexity, inball clearance, diameter bounds, annular areas and which tiles lie inside the test disk. The all-scale estimates and the logarithmic-density bound have written proofs. [Construction](../results/langi-wang-convex-tiling/PROOF.md) · [Logarithmic density](../results/langi-wang-convex-tiling/LOG-DENSITY.md) · [Review](../results/langi-wang-convex-tiling/REVIEW.md)
