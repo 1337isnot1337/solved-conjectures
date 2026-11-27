@@ -2,7 +2,7 @@
 
 ## 2026-11-27 UTC — Independence of bounded-depth disjoint-type guessing
 
-Cinna Davis’s proof answers Lambie-Hanson and Uhrik’s Question 6.1. Two bounded interleaving parameters give ordinary guessing in ZFC. A strongly proper forcing rules out guessing for a depth-one sequence with unbounded reach in the restricted proper forcing axiom model. Club guessing supplies the opposite consistency direction as in the original paper. [Theorem and scope](results/lambie-hanson-uhrik-disjoint-type-guessing/) · [Independent review](results/lambie-hanson-uhrik-disjoint-type-guessing/REVIEW.md)
+Cinna Davis’s proof answers Lambie-Hanson and Uhrik’s Question 6.1. Two bounded interleaving parameters give ordinary guessing in ZFC. A strongly proper forcing rules out guessing for a depth-one sequence with unbounded reach in the restricted proper forcing axiom model. Club guessing supplies the opposite consistency direction as in the original paper. The positive construction also gives strong guessing on two stationary sets throughout the same bounded-parameter range. [Theorem and scope](results/lambie-hanson-uhrik-disjoint-type-guessing/) · [Independent review](results/lambie-hanson-uhrik-disjoint-type-guessing/REVIEW.md)
 
 ## 27 November 2026 — Lean verification of the Chen–Khare–Sahi Jack counterexample
 

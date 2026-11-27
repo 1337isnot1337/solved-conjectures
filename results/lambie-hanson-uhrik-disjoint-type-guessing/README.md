@@ -6,4 +6,6 @@ The proof classifies ordinary guessing under that restricted forcing axiom using
 
 The classification survives any countable forcing over a ground model of the restricted proper forcing axiom, including sequences that appear for the first time in the extension. The distinct graph question, Question 6.2, remains open. [Preservation theorem](COUNTABLE-FORCING.md)
 
+A [strong-guessing supplement](STRONG-GUESSING.md) shows that every coloring admits two stationary sets of one color whose full prefixes realize the prescribed type across the two sets. This also proves strong guessing throughout the bounded-parameter regime.
+
 **Lean status:** none. The result has a written proof and internal mathematical review. The finite script checks the identities for flags and model cuts. [Independent review](REVIEW.md) · [Finite checks](check_flags.py)
