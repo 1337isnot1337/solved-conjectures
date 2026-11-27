@@ -115,3 +115,38 @@ most \(r-5m+\rho+2s+2=\rho+\delta\) common points of
 \(D,H\) are outside the pair union. The three pair
 unions count all common points outside at least once,
 so \(m\le3(\rho+\delta)\), as required.
+
+## The core bound is stable under all three intersection excesses
+
+For three arbitrary distinct edges, let
+\(\eta=\sum_{i<j}(|E_i\cap E_j|-m)\). If \(3s+\eta<t\),
+then with \(d=t-|E_1\cap E_2\cap E_3|\),
+\[
+t\le5s+3\delta+3\eta+6d+3d_+ .
+\]
+To see this, the same core-plus-pair-exclusive decomposition
+has \(S=3(s+d)+\eta\). When \(S+(-d)_+\ge t\), we must
+have \(d\ge0\) by \(3s+\eta<t\), and the conclusion follows
+from \(t\le3s+3d+\eta\). Otherwise the two avoidance sets
+are available exactly as in the preceding proof. For the
+pair whose excess is \(\eta_{ij}\), the upper bound on the
+\(D\)-exterior grows by \(\eta_{ij}\), and the lower bound
+on the union outside the pair also grows by \(\eta_{ij}\).
+The excess cancels. The bound on the common exterior
+is therefore again \(\delta-s+d_++h\), where
+\(h=|H\cap C|\le(S-d)_+=S-d\). The positive-part equality
+holds because if \(d<0\) then \(S-d>0\), and otherwise
+\(S\ge3(s+d)\). Summing this bound over pairs proves the
+formula. The zero-core case is immediate directly.
+
+For the [controlled-gap neighborhood](EXPONENTIAL-NEIGHBOR-TRADEOFF.md)
+of a minimum pair, \(\eta\le\delta+u\).
+If \(5s+6\delta+3u<t\), every such neighbor \(F\), not just
+the particular chosen witnesses, satisfies
+\[
+|A\cap B\cap F|
+\le t-\frac{t-5s-6\delta-3u}{9}.
+\]
+In particular at a sublinear offset and sublinear additive gap,
+none of the near-minimum common neighbors can contain more than
+\((8/9+o(1))t\) vertices of the minimum intersection.
