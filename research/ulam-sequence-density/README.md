@@ -39,6 +39,9 @@ It also gives a zero-density example satisfying the full rule at every odd targe
 The [pair-count criterion](pair-counts.md) treats convergence directly and
 checks every pair of adjacent targets through 16,777,216. In this prefix
 at least one of each two consecutive integers from 3 has a representation.
+The [eligible-partner fraction](partner-proportion.md) counts how often the
+larger integer in a candidate pair is also Ulam. A positive limit for this
+fraction would prove that the ordinary density exists with that same value.
 
 ## Uniform upper bound
 

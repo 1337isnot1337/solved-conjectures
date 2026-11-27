@@ -115,13 +115,30 @@ void report_phase_occupancy(const Words& bits) {
     }
 }
 
-void report_pair_mass(const Words& counts) {
-    std::uint64_t mass = 0;
+void report_pair_mass(const Words& bits, const Words& counts) {
+    std::uint64_t mass = 0, eligible = 0, trials = 0;
+    std::int64_t accepted = 2, low_count = 1, low_scale = 1;
     std::int64_t least_count = counts[3] + counts[4], least_at = 3;
     int holes = 0, consecutive_holes = 0, first_below = 0;
+    int first_below_074 = 0, first_at_most_7_over_95 = 0;
     for (int n = 3; n < static_cast<int>(counts.size()); ++n) {
         mass += counts[n];
         holes += counts[n] == 0;
+        if (n % 2 == 1) {
+            eligible += bits[n / 2];
+        }
+        trials += eligible;
+        accepted += bits[n];
+        if (accepted * low_scale < low_count * n) {
+            low_count = accepted;
+            low_scale = n;
+            if (first_below_074 == 0 && 500 * mass < 37 * trials) {
+                first_below_074 = n;
+            }
+            if (first_at_most_7_over_95 == 0 && 95 * mass <= 7 * trials) {
+                first_at_most_7_over_95 = n;
+            }
+        }
         if (n + 1 < static_cast<int>(counts.size())) {
             const std::int64_t adjacent = counts[n] + counts[n + 1];
             consecutive_holes += adjacent == 0;
@@ -133,9 +150,9 @@ void report_pair_mass(const Words& counts) {
                 first_below = n;
             }
         }
-        if (n == (1 << 16) || n == (1 << 18) || n == (1 << 20)
+        if (n == (1 << 16) || n == (1 << 18) || n == 732'377 || n == (1 << 20)
             || n == (1 << 22) || n == (1 << 24)) {
-            std::cout << "Pair mass at " << n << ": " << mass
+            std::cout << "Pair mass at " << n << ": " << mass << " of " << trials
                       << ", unrepresented from 3: " << holes << '\n';
         }
     }
@@ -143,6 +160,8 @@ void report_pair_mass(const Words& counts) {
               << " from " << counts[least_at] << '+' << counts[least_at + 1]
               << ", first below 1/5900 at " << first_below
               << ", adjacent unrepresented pairs " << consecutive_holes << '\n';
+    std::cout << "First record partner fractions below 37/500 and at most 7/95 "
+              << "(0 means none): " << first_below_074 << ' ' << first_at_most_7_over_95 << '\n';
 }
 
 void report_parity(const Words& bits, const Words& counts) {
@@ -307,6 +326,6 @@ int main() {
     report_phase_occupancy(bits);
     report_large_summands(bits, counts);
     report_parity(bits, counts);
-    report_pair_mass(counts);
+    report_pair_mass(bits, counts);
     return 0;
 }
