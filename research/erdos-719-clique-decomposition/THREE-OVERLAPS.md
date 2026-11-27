@@ -1,38 +1,39 @@
 # Erdős–Sauer conjecture
 
-**Exact bounded-overlap regime.** If $r\ge8$ and every $r$-edge is contained in at most three copies of $K_{r+1}^{(r)}$, the original decomposition bound holds at every order. The bound of two copies was already proved in the [earlier research note](https://github.com/1337isnot1337/solved-conjectures/blob/0b069c98/docs/erdos-sauer-research.md). This does not make a claim for arbitrary overlaps.
+**Exact bounded-overlap regime.** If $r\ge5$ and every $r$-edge is contained in at most three copies of $K_{r+1}^{(r)}$, the original decomposition bound holds at every order. The bound of two copies was already proved in the [earlier research note](https://github.com/1337isnot1337/solved-conjectures/blob/0b069c98/docs/erdos-sauer-research.md). This does not make a claim for arbitrary overlaps.
 
-We prove a cover theorem in the larger setting of any finite family of $k$-sets, $k\ge9$, where every $(k-1)$-face lies in at most three members. Write $\nu$ for the largest subfamily whose members share no $(k-1)$-face, and $\tau$ for the least number of such faces hitting every member. Then $\tau\le(k-1)\nu$.
+We prove a cover theorem in the larger setting of any finite family of $k$-sets, $k\ge6$, where every $(k-1)$-face lies in at most three members. Write $\nu$ for the largest subfamily whose members share no $(k-1)$-face, and $\tau$ for the least number of such faces hitting every member. Then $\tau\le(k-1)\nu$.
 
-## Conflict graph and disjoint triple-stars
+## Conflict graph and its clique number
 
-Let $J$ have one vertex for each member and an edge whenever two members share a face. Its independence number is $\nu$, and its maximum degree is at most $2k$. Each face contained in three members creates a triangle marked with that face. Distinct triples of members created this way cannot share an edge, because any pair of distinct $k$-sets shares at most one $(k-1)$-face. A marked triangle can be covered by one face. Any adjacent pair can also be covered by one face.
+Let $J$ have one vertex for each member and an edge whenever two members share a face. Its independence number is $\nu$, and its maximum degree is at most $2k$. Each face contained in three members makes a marked triangle in $J$, and selecting that one face covers all three members. Similarly any adjacent pair can be covered with one face.
 
-The desired inequality is additive across the connected components of $J$, as no face covers members in two components. Consider one component of order $N$ and independence number $\alpha$.
+A clique of $J$ either has a single fixed face common to its members or lies inside a common $(k+1)$-set. For a proof, take two members $F+a,F+b$ sharing face $F$. Any member adjacent to both either contains $F$ or has the form $F-z+\{a,b\}$ with $z\in F$. If one of the latter exists then no other member containing $F$ can use an extra vertex different from $a,b$, because it would be nonadjacent to that member. All members then lie in $F+\{a,b\}$. Under the face-degree hypothesis the common-face type has size at most three, and the other type has size at most $k+1$. Thus $\omega(J)\le k+1$.
 
-First suppose the component is not $K_{2k+1}$. By [Brooks’s theorem](https://doi.org/10.1017/S030500410002168X), $J$ on this component has chromatic number at most $2k$, hence $N\le2k\alpha$. Take a largest vertex-disjoint collection of marked triangles, of size $t$, and delete their vertices. A residual face can be in at most two residual members, because otherwise another marked triangle could be added. Thus the residual conflict graph has maximum degree at most $k$.
-
-A maximum ordinary matching of any conflict graph leaves an independent set of unmatched vertices. Cover each matched pair by a shared face and each unmatched vertex by one face. Consequently an $N'$-vertex induced residual graph of independence number at most $\alpha$ is coverable using at most $(N'+\alpha)/2$ faces. Applying this after taking the $t$ marked triangles gives
+By the [fractional form of Reed’s bound](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v21i4p48/pdf/) (in fact the cited primary paper proves a stronger local version),
 \[
-\tau\le t+(N-3t+\alpha)/2\le (2k+1)\alpha/2-t/2.
+|V(J)|\le\chi_f(J)\nu
+\le\frac{\Delta(J)+1+\omega(J)}{2}\nu
+\le\frac{3k+2}{2}\nu.
 \]
-This is at most $(k-1)\alpha$ whenever $t\ge3\alpha$.
+The first inequality follows directly by summing the fractional coloring's stable-set weights over vertices, since each stable set has size at most $\nu$.
 
-Otherwise use the sharper size bound on the residual graph. On each component other than a $K_{k+1}$, Brooks gives order at most $k$ times the component’s independence number, so the same matching cover uses at most $(k+1)/2$ faces per unit of independence number. A $K_{k+1}$ component is coverable by $\lceil(k+1)/2\rceil$ faces by pairing its vertices and using one singleton if needed. The summed residual cover is therefore at most $\lceil(k+1)/2\rceil\alpha$. If $t<3\alpha$, then
+## Two bounds from disjoint marked triangles
+
+Choose a maximum vertex-disjoint collection of marked triangles, of size $t$, and delete their vertices. The remaining face-degrees are at most two, since otherwise one could add another marked triangle disjoint from the chosen ones. The residual conflict graph has maximum degree at most $k$. A maximum ordinary matching of a conflict graph leaves an independent set of unmatched vertices. Cover each matched pair by a shared face and each unmatched vertex by a face. A residual graph of order $N'$ and independence number at most $\nu$ is therefore coverable using at most $(N'+\nu)/2$ faces. Counting the $t$ marked triangles as well gives
 \[
-\tau\le t+\lceil(k+1)/2\rceil\alpha
-<\big(3+\lceil(k+1)/2\rceil\big)\alpha\le(k-1)\alpha
+\tau\le t+(|V(J)|-3t+\nu)/2\le\frac{3k+4}{4}\nu-t/2.
 \]
-for all $k\ge9$.
+In particular, if $t\ge\nu$, this is at most $(k-1)\nu$ for $k\ge6$.
 
-## The full-degree complete component
-
-If the component is $K_{2k+1}$, every one of the $k$ faces of every member must be in exactly three members: its $2k$ distinct neighbors exhaust the maximum of two per face. The marked triples on the component vertices therefore form a Steiner triple system. In particular each point lies in $k$ triples and there are $k(2k+1)/3$ triples in all.
-
-Greedily choose three disjoint marked triples. After choosing at most two, their occupied vertices can touch at most $6k$ triples by the degree sum, and $k(2k+1)/3>6k$ for every $k\ge9$. Thus the third exists. Cover these three triangles with three faces and pair the remaining vertices in the complete graph. The number of faces is
+For $t<\nu$, use the residual degree bound more directly. On each component other than a $K_{k+1}$, [Brooks’s theorem](https://doi.org/10.1017/S030500410002168X) gives order at most $k$ times its independence number; the matching cover costs at most $(k+1)/2$ per unit of independence number. A $K_{k+1}$ component can be covered by $\lceil(k+1)/2\rceil$ faces by pairing its members, with a singleton if needed. Summed over components, the residual cover thus costs at most $\lceil(k+1)/2\rceil\nu$. Hence
 \[
-3+\left\lceil(2k+1-9)/2\right\rceil=k-1=(k-1)\alpha .
+\tau\le t+\lceil(k+1)/2\rceil\nu
+< (1+\lceil(k+1)/2\rceil)\nu
+\le(k-1)\nu
 \]
-This proves the cover theorem.
+for $k\ge6$ and $\nu>0$. The case $\nu=0$ is empty.
 
 For [Erdős Problem 719](https://www.erdosproblems.com/719) take $k=r+1$ and the family of complete-clique vertex sets. A minimum face cover leaves a clique-free $r$-graph, so $|E(G)|-\mathrm{ex}_r(n,K_{r+1}^{(r)})\le\tau\le r\nu$. This gives the claimed exact decomposition inequality in the stated bounded-overlap regime.
+
+**Remaining case at bounded overlap.** With at most three cliques per face, the same argument covers $k=5$ if the conflict graph has no $K_6$: the fractional coloring bound is then $|V(J)|\le8\nu$, so the first estimate suffices for $t\ge\nu$, and the residual estimate is $t+3\nu<4\nu$ otherwise. Thus the only excluded structural case at $k=5$ has a full top consisting of the six $5$-sets in a $6$-set. Handling these tops or the $k=4$ case requires additional work.
