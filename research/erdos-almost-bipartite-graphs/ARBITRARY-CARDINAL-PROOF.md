@@ -1,6 +1,6 @@
 # Erdős’s arbitrary-cardinal bipartization conjecture
 
-**Proof candidate for independent review, [issue #1015](https://github.com/1337isnot1337/solved-conjectures/issues/1015).**
+**Independent mathematical review passed on 27 November 2026.** The reviewer checked the [original manuscript](https://github.com/1337isnot1337/solved-conjectures/blob/cc9c1f2ac6c1093c428af3fffefab7d8d7ded45e/research/erdos-almost-bipartite-graphs/ARBITRARY-CARDINAL-PROOF.md) and the publication proof with Git blob `4ff96a752f7cb1680854c9261bd75e5673bae651`. The review covers the arbitrary-cardinal edge-deletion theorem below. The later transitivity and vertex-deletion supplements have separate scopes. This is an internal AI review. The proof has no Lean formalization or external referee report. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/blob/fec1fe27a293f772381d553d22613d8d82eb47ed/results/erdos-arbitrary-cardinal-bipartization/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1015) · [Publication PR](https://github.com/1337isnot1337/solved-conjectures/pull/1016)
 
 **Theorem.** For every real $\epsilon>0$ and every infinite cardinal
 $\kappa$, there is a simple graph $G$ with $\chi(G)>\kappa$ such that
