@@ -101,7 +101,7 @@ and on a recession ray it does not increase.
 For $`q=2,\ldots,13`$, [verify_star.py](verify_star.py) enumerates
 all possible center values by nonsingular triples of tight rows
 and every arm vertex by tight pairs. At each center value it
-checks one or two explicit rational choices of $`\lambda`$
+checks at most three explicit rational choices of $`\lambda`$
 as listed in the code. The checks cover all 64 center values
 and all 798 arm vertices across the corresponding slices.
 For $`q\ge14`$, the general Erdős–Goodman–Pósa bound
@@ -112,3 +112,49 @@ Thus the entire clique-star family, with no restriction on
 peripheral sizes, has maximum limiting ratio $`1/56`$.
 The global problem on arbitrary intersection templates can
 only exceed this ratio through another template structure.
+
+## Sharp limits with two and three peripheries
+
+The same certificate strengthens the two-periphery bound to
+normalized ratio 1/88. In the certificate take T = 1/44 and try
+2/25 or 1/10 for the square-completion parameter. Every graph with
+edge clique cover number two is two cliques with a possibly
+empty intersection, together with isolated vertices. The
+intersection is the center, so the asymptotic normalized ratio
+for these graphs is at most $1/88$. This sharpens the separate
+two-cover estimate in Proposition 1 of the [original paper](https://www.renyi.hu/~p_erdos/1988-04.pdf#page=7).
+
+For equality in the limit, take a center of size 5t and two
+peripheries of size 3t each. Use the dual center penalty 1/2,
+periphery penalties 2/3, and crossing rewards 1/2. For any
+profile meeting center and periphery with occupancies a and b,
+respectively, twelve times its signed weight is
+
+```math
+-3(a-b)(a-b-1)+b(7-b)\le 12.
+```
+
+The first term is nonpositive for integer a and b, and the
+second is at most 12. Summing over any integral partition
+gives the following lower bound, which matches the upper
+bound after normalization:
+
+```math
+\mathop{\mathrm{cp}}(G)\ge (11t^2+13t)/4.
+```
+
+For three peripheries the sharp clique-star ratio is 1/63.
+Take T = 1/21 and try 1/6, 1/5, and 2/9 for the square-completion
+parameter. A matching example has a center of size 9t and
+three peripheries of size 4t each. The dual center penalty is
+2/3, peripheral penalties are 1, and crossing rewards are 2/3.
+Six times a profile's signed weight is
+
+```math
+-2(a-b)(a-b-1)+b(5-b)\le 6.
+```
+
+Summing this certificate gives a partition lower bound of
+21t² + 9t; the ratio tends to 1/63. Unlike
+the two-cover case, the three-periphery result does not treat
+every graph of cover number three.
