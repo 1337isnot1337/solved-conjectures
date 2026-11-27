@@ -48,6 +48,9 @@ jobs:
       - name: Check the claw-free path-perfect counterexample
         run: python3 results/cameron-clow-claw-free-path-perfect/verify.py
 
+      - name: Replay interval slots and color reconstruction for Shelah-graph avoidance
+        run: python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py
+
       - name: Check half-overlap hypergraph rectangles and monochromatic witnesses
         run: python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py
 
@@ -76,6 +79,8 @@ jobs:
       - name: Replay the exact-one-marker flow exchanges
         run: |
           python3 -m pip install networkx==3.6.1
+          python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_orientation.py
+          python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_bridges.py
           python3 results/chen-parity-free-exact-one-marker/verify.py --seed 1011 --trials 900
 
       - name: Check the 2K2-free path-perfect counterexamples

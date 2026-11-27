@@ -94,6 +94,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Erdős’s arbitrary-cardinal bipartization conjecture": "erdos-arbitrary-cardinal-bipartization",
     "Buys–van den Heuvel–Kang’s average-degree occupancy conjecture": "buys-van-den-heuvel-kang-occupancy",
     "Dall’Ara–Dumitrescu’s higher-dimensional cube covering question": "dallara-dumitrescu-cube-covering",
     "Erdős–Galvin–Hajnal’s half-overlap hypergraph problem": "erdos-galvin-hajnal-half-overlap-hypergraphs",
@@ -110,6 +111,7 @@ STATUS_LABEL_SLUGS = {
     "Fernandes et al.’s two-token chromatic conjecture": "fernandes-two-token-chromatic",
     "Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture": "frankl-geher-sagdeev-toth-strict-convexity",
     "de Joannis de Verclos’s projective rigidity conjecture": "de-verclos-projective-rigidity",
+    "Erdős–Galvin–Hajnal’s Shelah-graph avoidance problem": "erdos-galvin-hajnal-shelah-graph-avoidance",
     "Erdős–Hajnal’s ordinal-square chromatic problem": "erdos-hajnal-ordinal-square-chromatic",
     "Abreu–Brondani–de Lima–Oliveira’s adjacency Nordhaus–Gaddum conjecture": "abreu-brondani-adjacency-nordhaus-gaddum",
     "Kempton–Zaitzeff–Muthuprakash’s normalized Nordhaus–Gaddum conjecture": "normalized-nordhaus-gaddum",

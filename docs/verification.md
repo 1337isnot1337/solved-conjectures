@@ -60,6 +60,19 @@ It checks over two million tree-cover intersections and all rectangle
 partitions of the specified small matrices. These checks are supplementary
 to the written general proof.
 
+## Erdős’s arbitrary-cardinal bipartization conjecture
+
+Read the [proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md) and the
+[independent mathematical review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md).
+Run the two Python standard-library replays from the repository root:
+
+    python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_orientation.py
+    python3 results/erdos-arbitrary-cardinal-bipartization/check_shift_bridges.py
+
+They check the finite orientation recurrence, the sliding-window map
+and the odd-period queue identities, not the infinite cardinal argument.
+
+
 ## Chen’s parity-free exact-one-marker conjecture
 
 Read the [proof](../results/chen-parity-free-exact-one-marker/PROOF.md) and [independent review](../results/chen-parity-free-exact-one-marker/REVIEW.md).
@@ -87,6 +100,10 @@ It reconstructs the 35-vertex root, verifies its three branch cuts and checks th
 Read the [transversal obstruction and the vertex-criticality proof](../results/cameron-clow-twok2-free-path-perfect/PROOF.md).
 Run `python3 results/cameron-clow-twok2-free-path-perfect/verify.py` from the repository root.
 It reconstructs three witnesses, checks all induced four-sets and palette choices, and verifies a coloring after every vertex deletion. The infinite-family proof does not rely on computation.
+
+## Shelah-graph avoidance on the first uncountable ordinal
+
+The [written proof](../results/erdos-galvin-hajnal-shelah-graph-avoidance/PROOF.md) and [review](../results/erdos-galvin-hajnal-shelah-graph-avoidance/REVIEW.md) give the transfinite argument and the precise consistency assumptions. Review the two cited models and check how each slot handles an immediately preceding interval. Run `python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py` to replay the finite partition and coloring steps. The model existence assertions use the cited set-theoretic results.
 
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
