@@ -135,6 +135,8 @@ Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
 
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_parity_root_transfer.py` to check the star classification, the sparse parity relations, recovery of signed leaf profiles, and pendant attachment in the [linear leaf-surplus reduction](research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md).
+
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_marked_two_surplus.py` for the marked pruning and endpoint checks. Run `python3 docs/research-results/stanley-tree-subdivisions/verify_two_surplus_tail.py` for the exhaustive unmarked degree-and-rank certificate. It excludes all records with at least 30 rival leaves after the analytic upper bound, and checks four boundary profiles at 29. [Theorem and bounds](research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_one_extra_leaf.py` to reproduce the exhaustive terminal degree and rank screen. It asserts that the sole surviving profile has six and seven leaves and exactly two possible rank pairs. The final two contradictions are in the [written proof](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md).

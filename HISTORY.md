@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — A linear bound for tree distance-histogram comparisons
+
+For each fixed surplus in the rival’s number of leaves, generic reconstruction from the ordinary distance histogram across all reduced topologies now has a finite test with linearly many vertices. The proof recovers matching rooted profiles on the original trees whenever the target has at least 97 times the surplus in leaves. A converse gives all-or-none ambiguity at every leaf count above the threshold for the given surplus. Stanley’s broader problem remains open. [Proof](docs/research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md) · [Audit](docs/research-results/stanley-tree-subdivisions/LINEAR-SURPLUS-REVIEW.md)
+
 ## 2026-11-27 UTC — Independence of bounded-depth disjoint-type guessing
 
 Cinna Davis’s proof answers Lambie-Hanson and Uhrik’s Question 6.1. Two bounded interleaving parameters give ordinary guessing in ZFC. A strongly proper forcing rules out guessing for a depth-one sequence with unbounded reach in the restricted proper forcing axiom model. Club guessing supplies the opposite consistency direction as in the original paper. The positive construction also gives strong guessing on two stationary sets throughout the same bounded-parameter range. [Theorem and scope](results/lambie-hanson-uhrik-disjoint-type-guessing/) · [Independent review](results/lambie-hanson-uhrik-disjoint-type-guessing/REVIEW.md)
