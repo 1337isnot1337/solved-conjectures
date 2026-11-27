@@ -1,5 +1,7 @@
 # Finite low-codegree witnesses and essential disjointness
 
+Cinna Davis proved that, under Komjáth’s hypotheses, the full family has a proper two-coloring exactly when its stable core does. The transfinite deletion and recoloring arguments below give the two directions. The original problem asks whether every such core admits a proper two-coloring. [Erdős, §12, p. 227](https://www.renyi.hu/~p_erdos/1987-28.pdf#page=5) · [Independent review](PEELING-REVIEW.md)
+
 This is a partial result for [Komjáth's property B problem, Erdős #602](https://www.erdosproblems.com/602), on a separate proof track from the two-occurrence counterexample in #863. It does not prove property B in general.
 
 ## A low-codegree criterion
