@@ -8,4 +8,6 @@ A second dimension-free theorem gives a quantitative neighbourhood of every posi
 
 For every prescribed rank, the largest normalized gap over all dimensions and exponents can be computed to any positive rational accuracy. The proof gives an explicit size bound for an actual matrix witness with positive gap. Deciding exact vanishing remains open. [Computation theorem](EFFECTIVE-GAP.md) · [Dimension bound](FINITE-WITNESS.md) · [Review and exact checks](FINITE-WITNESS-REVIEW.md)
 
+If one input has rank at most a prescribed integer, every strict violation occurs in a bounded order independent of its gap. At any fixed rational exponent the full bounded-input-rank question is exactly decidable across all finite dimensions and all unitarily invariant norms. One input of rank at most one satisfies the inequality for every exponent and norm. [Exact finite reduction](FIXED-INPUT-RANK.md) · [Independent review and checks](INPUT-RANK-REVIEW.md)
+
 [Dimension-free spectral interval](UNIFORM-BAND.md) · [Asymptotic deficit on every common-shift ray](COMMON-SHIFT.md) · [Independent review and comparison with prior work](SHIFT-REVIEW.md) · [Exact arithmetic checks](verify_common_shift.py) · [Bourin’s Question 4](https://arxiv.org/pdf/0805.1954#page=6) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/214)

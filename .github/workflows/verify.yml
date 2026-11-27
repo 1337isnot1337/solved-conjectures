@@ -30,6 +30,8 @@ jobs:
           python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py
           python3 results/bourin-crossed-heinz/verify_finite_witness.py
           python3 results/bourin-crossed-heinz/verify_gap_grid.py
+          python3 results/bourin-crossed-heinz/verify_fixed_input_rank.py
+          python3 results/bourin-crossed-heinz/verify_input_rank_schur.py
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
           python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py
