@@ -1,0 +1,15 @@
+# Wedge colourings from small block intersections
+
+Consider a wedge family on ω₁ with unique centre for each leaf pair. For each vertex a let S_a be its set of leaves as a centre (empty if none). This result needs neither RP nor any ordering restriction on the locations of leaves.
+
+**Criterion.** Suppose every countably infinite family of distinct centres has a finite subfamily whose S_a-intersection is countable. Then the wedge family is countably chromatic.
+
+Choose a continuous increasing countable closure chain covering ω₁. Close each stage under the partial centre map on pairs and under the countable intersections of finite lists of S_a with a in that stage. These are countably many countable closure requests at any stage. Let the successive difference blocks partition ω₁. For a vertex v in a new block, only finitely many centres a in earlier blocks have v∈S_a: otherwise a witnessing finite subfamily in the preceding union would have a countable intersection and its closure would already include v.
+
+Colour a graph on the same vertex set by natural numbers, successively by the blocks, requiring each v's colour to differ from all these finitely many earlier centres. Also give each block its own injective-in-the-block natural coordinate, reused on other blocks. For a wedge whose centre shares a block with a leaf, the injective coordinate separates it. If a leaf is in a later block than the centre, the first coordinate separates them. If both leaves were in earlier blocks than the centre, closure under the unique centre map would put the centre earlier, an impossibility. This proves the criterion.
+
+**Finite intersection arrow.** For any fixed n≥2, let I_n be the n-uniform hypergraph on centres with edges the sets of n distinct centres whose leaf sets have uncountable intersection. If I_n is countably chromatic, then the original wedge family is countably chromatic: in each independent class of centres apply the criterion to the induced wedge family, and then combine the palettes with that class's label. Vertices never serving as centres themselves form an independent set and can be given a separate colour.
+
+Consequently under RP, any uncountably chromatic 9/B stable core from [WEDGE-INFINITE-CORE.md](WEDGE-INFINITE-CORE.md) / [WEDGE-COUNTABLE-CENTRES.md](WEDGE-COUNTABLE-CENTRES.md) must have χ(I_n)=ℵ₁ for every finite n≥2. It also has a countably infinite family of centres with uncountable intersections for all its finite subfamilies; the contrapositive of the criterion still applies after discarding any countable set of vertices, so one can find ℵ₁ disjoint such families by recursion. This does not yield a large infinite total intersection. Indeed a countable decreasing sequence of uncountable subsets of ω₁ can have empty intersection.
+
+Note the directed feature: only overlaps S_a∩S_b of the used centre-to-leaf neighbourhoods matter, not overlaps of each S_a with the entire undirected infinite-codegree neighbourhood of another vertex. Uncountable unbounded overlap patterns can occur even in countably chromatic wedges, so the necessary intersection conditions are not sufficient for a 9/B construction.
