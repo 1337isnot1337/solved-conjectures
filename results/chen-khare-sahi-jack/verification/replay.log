@@ -1,0 +1,16 @@
+Replaying all 14 local project modules imported by Conjectures.ChenKhareSahiJackSourceTheorem, including that root (prefix Conjectures)
+replaying Conjectures.ChenKhareSahiJackSourceSemiring
+replaying Conjectures.ChenKhareSahiJackSourceSamples
+replaying Conjectures.ChenKhareSahiJackCertificate
+replaying Conjectures.ChenKhareSahiJackSourceBasis
+replaying Conjectures.ChenKhareSahiJackSchur
+replaying Conjectures.ChenKhareSahiJackTheorem
+replaying Conjectures.ChenKhareSahiJackSource
+replaying Conjectures.ChenKhareSahiJackFamily
+replaying Conjectures.ChenKhareSahiJackSourceTheorem
+replaying Conjectures.ChenKhareSahiJackSourceData
+replaying Conjectures.ChenKhareSahiJackSourceFamily
+replaying Conjectures.ChenKhareSahiJackUnique
+replaying Conjectures.ChenKhareSahiJackMonomials
+replaying Conjectures.ChenKhareSahiJackSourceWitness
+PASS: the entire local import closure of Conjectures.ChenKhareSahiJackSourceTheorem completed the pinned kernel replay

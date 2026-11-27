@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Lean verification of the Chen–Khare–Sahi Jack counterexample
+
+The existing Jack semiring result now has a complete Lean disproof using the five-variable witness. Leepokai supplied the target and separating functional. WadeDavis with Codex verified the source generators directly from their Hall scalar product. The broader parameter family retains written-proof status. [Scope and verification](results/chen-khare-sahi-jack/SOURCE_BRIDGE.md).
+
 ## 2026-11-27 UTC — Two extra leaves in generic tree reconstruction
 
 The existing Stanley research entry now identifies generic trees with at least 28 leaves from their ordinary distance histogram among all rivals with at most two additional leaves. Its arbitrary-order marked theorem uses a signed height profile, and its unmarked 28-leaf threshold uses an independently reproduced integer degree-and-rank certificate. [Unmarked proof](docs/research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md) · [Marked proof](docs/research-results/stanley-tree-subdivisions/MARKED-TWO-SURPLUS.md)

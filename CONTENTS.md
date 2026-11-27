@@ -290,7 +290,7 @@ Earlier sources established the exceptional orders. These companion theorems are
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
-| [Chen–Khare–Sahi’s Jack semiring conjecture](results/chen-khare-sahi-jack/) | Conjecture 4, equation (4.5), fails for the normalized Jack difference for (3,2) and (3,1,1) at source parameter 1, every rank at least five, and every target parameter strictly between one and two. Its positive column-Schur coefficient rules out the full proposed semiring. Proof contributed by @WadeDavis with Codex. | Not formalized | [Proof](results/chen-khare-sahi-jack/PROOF.md) · [Review and exact checks](results/chen-khare-sahi-jack/REVIEW.md) · [Source audit](results/chen-khare-sahi-jack/SOURCE_AUDIT.md) · [Issue #201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
+| [Chen–Khare–Sahi’s Jack semiring conjecture](results/chen-khare-sahi-jack/) | Conjecture 4, equation (4.5), fails for the normalized Jack difference for (3,2) and (3,1,1) at source parameter 1, every rank at least five, and every target parameter strictly between one and two. Its positive column-Schur coefficient rules out the full proposed semiring. Proof contributed by @WadeDavis with Codex. | Complete Lean disproof by one rank-five witness. The full parameter family has a written proof. | [Lean proof and contributor credits](results/chen-khare-sahi-jack/SOURCE_BRIDGE.md) · [Proof](results/chen-khare-sahi-jack/PROOF.md) · [Review and exact checks](results/chen-khare-sahi-jack/REVIEW.md) · [Source audit](results/chen-khare-sahi-jack/SOURCE_AUDIT.md) · [Issue #201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
 
 ## Beta-prime self-convolution
 
