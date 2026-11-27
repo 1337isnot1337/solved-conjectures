@@ -27,6 +27,9 @@ jobs:
       - name: Check the two-token graph cycle certificate
         run: python3 results/fernandes-two-token-chromatic/verify.py
 
+      - name: Check stable domination reductions and local blocks
+        run: python3 results/de-berg-sadhukhan-spieksma-stable-domination-threshold/verify.py
+
       - name: Check both graphical dist orientation counts
         run: |
           python3 results/alexandersson-graphical-dist/check.py
