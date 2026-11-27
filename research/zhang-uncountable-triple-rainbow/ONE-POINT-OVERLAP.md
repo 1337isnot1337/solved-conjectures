@@ -28,4 +28,4 @@ Choose two disjoint (r−1)-element sets T₀,T₁ of terminal points. For every
 
 ### Scope
 
-For r=3, the positive assertion answers the restriction of Question 5.4 in which collisions have only one shared point (or are disjoint). In the paper's normal case this is exactly the pure Type 1 restriction. In contrast, the local obstruction at ω^ω in [the countable-target note](COUNTABLE-TARGETS.md) uses two common points, so it does not contradict this theorem. No assertion about arbitrary mixtures of Types 1–4 follows just by filtering the colour classes separately.
+For r=3, the positive assertion answers the restriction of Question 5.4 in which collisions have only one shared point (or are disjoint). In the paper's normal case this is exactly the pure Type 1 restriction. In contrast, the local obstruction at ω^ω in [the countable-target note](https://github.com/1337isnot1337/solved-conjectures/commit/86653b8f936ddf9c50e53cb7ecd0c6318cb7b79d) uses two common points, so it does not contradict this theorem. No assertion about arbitrary mixtures of Types 1–4 follows just by filtering the colour classes separately.
