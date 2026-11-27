@@ -77,3 +77,53 @@ The existence of such a graph above arbitrarily large cardinals does
 not follow from these observations. They also do not settle
 [Lambie-Hanson's Question 6.2](https://arxiv.org/abs/1902.08177),
 which asks about finite chromatic growth, not edge bipartization.
+
+## Quotients and homomorphic copies do not remove the barrier
+
+Suppose an infinite fixed \(r\)-tuple template \(T\) on
+\([\mathbb N]^r\) is nonbipartite and admits a graph homomorphism
+\(\varphi:T\to G\), not necessarily injective. Then \(G\) still
+has a power-law bipartization lower bound. If the original
+adjacent tuples always have disjoint supports, the resulting
+lower bound is still quadratic.
+
+Apply the Erdős–Rado canonical Ramsey theorem to the relation
+\(\varphi(a)=\varphi(b)\) on \(r\)-tuples. Use [Halevi–Kaplan–Shelah,
+Fact 3.1](https://doi.org/10.1090/tran/8570) for the precise
+form: on some infinite ground subset \(N\), equality of the
+images holds exactly when a fixed list of coordinates agrees.
+Let \(j\) be the number of retained coordinates. We have \(j\ge1\),
+since \(T\) restricted to \(N\) still has an edge. Moreover no
+edge pattern can project to the same retained tuple at both
+ends, because its ordered copy on \(N\) would become a loop.
+
+Define a \(j\)-tuple template \(T'\) by keeping every projected
+endpoint-pair pattern of an edge of \(T\). Projection is a
+homomorphism \(T\to T'\), so \(T'\) is nonbipartite: otherwise a
+two-coloring would pull back to \(T\). On an infinite subset
+\(M\) of \(N\) leave at least \(2r\) unused members of \(N\)
+before its first member and between consecutive members.
+Every retained tuple from \(M\) has a lift to an \(r\)-tuple
+from \(N\). Define its image in \(G\) using any such lift.
+The canonical Ramsey conclusion makes this independent of
+the lift and injective on \(j\)-tuples.
+
+For any edge of \(T'\) on \(M\), choose one original \(r\)-tuple
+edge pattern that projects to its prescribed pair pattern.
+To realize that pattern on \(N\), fix the given retained
+coordinates of the pair and fill in the other positions in
+each intervening gap, in their prescribed order. There are
+at most \(2r\) positions to fill in any gap, including any
+coincidences required by the pattern. The chosen spacing,
+and the infinite tail after the largest member, suffice.
+These two lifts are adjacent in \(T\), and so the selected
+images are adjacent in \(G\). Thus all finite subgraphs of
+\(T'\) embed in \(G\) without requiring induced embeddings.
+
+The counting obstruction applies to \(T'\) with lower exponent
+at least \(1+1/j\). In the disjoint-support case every projected
+edge still has disjoint supports, so the exponent is two.
+In particular a homomorphic copy of a homogeneous template,
+rather than an embedding, already rules out
+\(h_G(n)=n^{1+o(1)}\). A thin choice of source vertices, whose
+edges no longer come from full fixed templates, is not covered.
