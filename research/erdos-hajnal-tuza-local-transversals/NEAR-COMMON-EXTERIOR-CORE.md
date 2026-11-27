@@ -81,6 +81,6 @@ If \(|C|=t-d\), the same proof uses an \(s\)-subset of
 must span at least \(2r-2\) vertices, and each minimum
 neighbor uses \(r-m=4t+2s-2\) exterior vertices.
 Their union can use at most \(3(r-m)-2(t-d)\), which leaves
-slack \(2s+2d-2\) for the residual pair overlap. Thus the
+slack \(2d\) for the residual pair overlap. Thus the
 residual sets of size \(3t+2s+d-2\) form a packing of
-\((2s+2d-1)\)-sets whenever that subset size fits.
+\((2d+1)\)-sets whenever that subset size fits.
