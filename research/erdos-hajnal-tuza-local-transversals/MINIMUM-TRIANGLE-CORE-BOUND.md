@@ -73,3 +73,45 @@ this shows that minimum links cannot be modeled by
 either near-total common cores or almost-disjoint trace
 triangles lacking a common vertex. The unrestricted
 optimum remains open.
+
+## Repeated minimum traces force heavy exterior overlap
+
+As a corollary of the complementary-witness method,
+suppose \(B,B'\) are distinct minimum neighbors of a fixed
+edge \(A\) with the same trace \(Y=A\cap B=A\cap B'\).
+Write
+\[
+\rho=|(B\cap B')\setminus A|.
+\]
+Then necessarily
+\[
+\rho\ge (t+s)/3-\delta .
+\]
+In particular at \(r=5t+1\), duplicate traces cannot be
+realized by separate private exterior paddings or even
+with sublinear exterior overlap.
+
+Indeed take \(E_1,E_2,E_3=A,B,B'\); the common core
+\(C\) is \(Y\) of size \(m\), and the only nonempty
+pair-exclusive region is \((B\cap B')\setminus A\),
+of size \(\rho\). If \(\rho+s\ge t\), the bound
+already follows from \(s\le t/4\). Otherwise choose
+\(D\) avoiding \(t\) points of \(C\), then \(H\)
+avoiding \(D\cap C\), the whole pair-exclusive region,
+and enough additional points in \(C\) to use \(t\)
+forbidden points. Thus \(|D\cap C|\le s\) and
+\(|H\cap C|\le\rho+s\). The two witnesses are distinct
+by the pair-transversal rule and both differ from the
+three original edges. Their intersection has no point
+in two of those original edges.
+
+For a pair of original edges with full intersection
+size \(m+\eta\) (where \(\eta\) is either \(0\) or \(\rho\)),
+the \(D\)-exterior is at most \(r-2m+s+\eta\), and
+the \(H\)-exterior is at most \(r-2m+\rho+s\).
+The empty-intersection four-edge union bound, outside
+the chosen pair, is \(r+m+\eta-2\). Consequently at
+most \(r-5m+\rho+2s+2=\rho+\delta\) common points of
+\(D,H\) are outside the pair union. The three pair
+unions count all common points outside at least once,
+so \(m\le3(\rho+\delta)\), as required.
