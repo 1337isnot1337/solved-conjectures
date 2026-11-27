@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Finite distance-histogram comparisons with bounded extra leaves
+
+A new uniform reduction controls generic histogram reconstruction with bounded maximum source degree and a bounded extra-leaf allowance, independent of the number of high-degree vertices. For one high hub of arbitrary degree, a rival cannot have exactly one extra leaf and must have a surplus growing with that degree. The proof and exact profile checks supplement the unranked Stanley research entry. [Theorem and quantitative bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
+
 ## 2026-11-27 — Erdős–Galvin–Hajnal’s link-path partition problem
 
 Cinna Davis answers the 1975 Problem 8/E by encoding a triple system that avoids the three-edge tight path using a bounded coloring of pairs. Together with Todorčević’s model and the original authors’ CH example, the encoding gives relative independence over ZFC. [Proof](results/erdos-galvin-hajnal-link-path-partition/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-link-path-partition/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1045)
