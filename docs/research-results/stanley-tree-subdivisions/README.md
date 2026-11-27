@@ -1,5 +1,9 @@
 # Recognizing trees after long subdivisions
 
+**For every fixed reduced tree, almost every independent choice of integer lengths for all its edges gives a tree recognizable among all trees from its path counts and degree sequence.** An explicit certificate recovers all edge lengths and their incidences. If every branch vertex has degree three, the unlabelled histogram of distances between vertex pairs suffices on its own, even when the competitor has arbitrary degrees. The failure probability for lengths uniform in $`1,\ldots,t`$ is at most a constant times $`k^5/t`$ on any reduced tree of order $`k`$. Stanley’s general question remains open. [Path-distance certificate and proof](PATH-DISTANCE-CERTIFICATE.md) · [Independent review and earlier work](PATH-DISTANCE-REVIEW.md)
+
+## Subdivision at a branch vertex
+
 **Choose any branch vertex of any finite tree. Subdivide each incident edge independently. Once all these edges are sufficiently long, the ordinary chromatic symmetric function determines the resulting tree among all trees.** The distal rooted trees can have arbitrary shapes, and one arm can be longer than all the others combined. The proof recovers the unmarked branch vertex, the rooted ends, the arm orders and their matching.
 
 Let $`r\ge3`$ be the branch degree. Remove each arm’s initial chain of unary roots. If $`L`$ is the largest remaining order minus one, a sufficient minimum arm order is $`\max(3,L+1,2rL)`$. [Simultaneous subdivision theorem](HUB-SUBDIVISIONS.md) · [Independent review](HUB-SUBDIVISIONS-REVIEW.md)
@@ -40,6 +44,7 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_path_distance_certificate.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_dominant_arm.py
@@ -52,6 +57,8 @@ python3 docs/research-results/stanley-tree-subdivisions/verify_long_subdivision.
 python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
 ```
+
+The [path-distance checker](verify_path_distance_certificate.py) checks the defect identity on all 2,287 nontrivial unlabelled trees through order 13 and recovers all 108 reduced topologies through that order under a generic weighting. It also tests 816 literal subdivisions.
 
 The [independent-length checker](verify_two_hub_free_lengths.py) recovers 127 examples from boundary coefficients. The [dominant-arm checker](verify_dominant_arm.py) compares 5,408 cut profiles, 108 length exchanges and 224 regroupings.
 

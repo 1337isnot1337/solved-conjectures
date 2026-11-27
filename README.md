@@ -192,7 +192,9 @@ A separate relaxation of Erdős’s one-third question restricts only circles ce
 
 Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. In every rank and at every scale the deep classes minimize when all but one coordinate are congruent. The remaining finite ranks at intermediate scales require a comparison with arbitrary translates. [All central levels](docs/research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](docs/research-results/root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
 
-## Recognizing trees after one long subdivision
+## Recognizing subdivided trees
+
+Degree counts and the unlabelled histogram of vertex-pair distances determine almost every independent integer subdivision of any fixed reduced tree. The paths alone suffice when the target has only trivalent branch vertices, even against arbitrary competitors. [Observable certificate and quantitative bounds](docs/research-results/stanley-tree-subdivisions/PATH-DISTANCE-CERTIFICATE.md)
 
 For any fixed internal tree with arbitrary rooted caps at the tips, a proportion tending to one of the independent exterior length choices in the stated intervals give a tree identifiable among all trees. The proof recovers the internal branching pattern and path lengths. [Arbitrary-core theorem](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md)
 

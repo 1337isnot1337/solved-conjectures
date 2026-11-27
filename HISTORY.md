@@ -4,6 +4,10 @@
 
 Under a fixed global quadratic bound on isosceles trapezoids, a sequence attaining the one-third mean pinned-distance barrier cannot have a rescaled finite limit mixing point atoms and nonatomic mass. The proof also bounds the concentration of radius and projection fibers. The unrestricted gap remains open. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS.md) · [Independent review](results/erdos-general-position-pinned-distances/ATOMIC-LIMITS-REVIEW.md)
 
+## 2026-11-27 UTC — Certifying subdivisions from unlabelled distance counts
+
+The Stanley partial result now includes a reconstruction certificate from the ordinary path counts and vertex degrees. Its success probability tends to one for independent integer lengths on every fixed reduced tree, with a quantitative estimate uniform in the topology. For trivalent reduced targets the histogram alone determines the tree among all competitors. Gutman’s distance-polynomial identities and earlier weighted-path reconstruction results are credited in the review. [Proof](docs/research-results/stanley-tree-subdivisions/PATH-DISTANCE-CERTIFICATE.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/PATH-DISTANCE-REVIEW.md)
+
 ## 2026-11-27 UTC — Reconstructing arbitrary internal trees in Stanley’s problem
 
 Extended the existing partial result to cores of unrestricted branching pattern. With separated exterior-arm sums, the ordinary chromatic symmetric function determines every internal split and path length under either of two arm-recovery conditions. The proof gives a density-one corollary for each fixed decorated core. [Proof](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
