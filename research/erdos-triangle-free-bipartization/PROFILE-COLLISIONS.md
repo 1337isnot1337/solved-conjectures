@@ -4,7 +4,7 @@ For a graphon W with t(K_r,W)=0, r≥3, consider the adjacency bits of two verti
 
     ∫∫ W(x,y) 1[Δ(x,y)≤u] dxdy ≤ (3r−4)u.
 
-In particular the edge mass of pairs with the same profile to a independent roots, averaged over those roots and the profile bits, is at most (3r−4)/a. This extends the decisive rounding step of [the polynomial rooted maximum-cut bound](POLYNOMIAL-ROOT-RATE.md) beyond triangle-free graphons.
+In particular the edge mass of pairs with the same profile to a independently sampled roots, averaged over those roots and the profile bits, is at most (3r−4)/a. This extends the decisive rounding step of [the polynomial rooted maximum-cut bound](POLYNOMIAL-ROOT-RATE.md) beyond triangle-free graphons.
 
 ## Proof of the small-disagreement tail
 
@@ -29,9 +29,9 @@ Independent roots yield the expected collision mass ∫∫ W(1−Δ)^a. Bound by
 
 ## Consequence for rooted MaxCut
 
-In the [stagewise construction](POLYNOMIAL-ROOT-RATE.md), neither the greedy response nor the validation requires triangle-freeness. The collision estimate above is the replacement for disjoint neighborhoods. Use an arbitrarily near-optimal sign function in the construction and a=O(r/ε) extra anchors. The training-root count is O(ε⁻³), and the logarithm of the candidate count is O((ε⁻³+r/ε)log(1/ε)) by the same affine hashes. The resulting number of roots is
+In the [stagewise construction](POLYNOMIAL-ROOT-RATE.md), neither the greedy response nor the validation requires triangle-freeness. The collision estimate above is the replacement for disjoint neighborhoods. Use an arbitrarily near-optimal sign function in the construction and a=O(r/ε) extra anchors. The training-root count is O(ε⁻³). As in the updated polynomial proof, condition on one independent rounding seed during validation and average over its choice afterward. Only the training labels are guessed, so the logarithm of the candidate count is O(ε⁻³), regardless of the number of extra anchors. The resulting number of roots is
 
-    O((ε⁻⁵+r ε⁻³) log(1/ε)).
+    O(ε⁻⁵+r/ε).
 
 For unrestricted graphons some assumption is necessary: in the complete graphon, all Boolean adjacency profiles are identical, so the deterministic profile envelope cannot approximate the optimum balanced cut.
 
