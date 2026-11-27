@@ -1,5 +1,7 @@
 # Gyárfás’s planar degree-repetition problem
 
+**Lean status:** full. For every order from 16, Lean constructs rational points in the real plane, proves their optimal maximum degree multiplicity of two, and identifies the interval of degrees attained. [Lean theorems](https://github.com/1337isnot1337/solved-conjectures/blob/2d404a988f4baa9a897221a7c301ab011591004b/lean/Conjectures/GyarfasPlanarUniform.lean) · [Kernel receipt](https://github.com/1337isnot1337/solved-conjectures/blob/2d404a988f4baa9a897221a7c301ab011591004b/docs/verification/lean-gyarfas-planar-uniform-20261126/receipt.json)
+
 For every integer $n\ge16$, there is a noncollinear set of $n$ rational affine points in which each number of incident spanned lines occurs at most twice. This answers Gyárfás’s existence question. The construction has $(3/4)n+O(1)$ different point degrees. The author attributes the underlying irregularity questions to Paul Erdős. [Gyárfás (2002), §4, Problem 4](https://users.renyi.hu/~gyarfas/Cikkek/101_Gyarfas_ErdosProblemsOnIrregularitiesOfLineSizesAndPointDegrees.pdf)
 
 [Construction and proof](PROOF.md) · [Source and proof audit](AUDIT.md) · [Exact line counter](verify.py) · [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/785#issuecomment-7187694961) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/785)

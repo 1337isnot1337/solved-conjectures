@@ -2,11 +2,11 @@
 
 For every fixed degree $d\ge2$, it takes $\Theta_d(\log q)$ vertical translates of $y=x^d$ to meet every projective line over $\mathbb F_q$. This gives the asymptotic order requested by Asgarli, Ghioca and Yip when $x^d$ permutes the field. Their earlier logarithmic upper bound applies to all prime powers. Their logarithmic lower bound applied when the exponent and $q-1$ have a common divisor greater than one. [Original question](https://doi.org/10.1007/s10623-026-01958-z) · [Written proof](PROOF.md) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/826).
 
-The lower bound extends to arbitrary degree-$d$ polynomial graphs with the same leading coefficient. It counts lines missing the entire family, uniformly in the characteristic. The exact minimum and its optimal leading constant remain open.
+The lower bound extends to arbitrary polynomial graphs of degree $d$ with the same leading coefficient. It counts lines missing the entire family, uniformly in the characteristic. The exact minimum and its optimal leading constant remain open.
 
 **Review status.** Independent mathematical review passed for all three proofs. The reviewer also checked the trace-hyperplane correspondence in the field of order 32. [Review record](https://github.com/1337isnot1337/solved-conjectures/issues/826#issuecomment-7192871519). The [source and priority audit](AUDIT.md) records the literature search and the [reproducible finite-field checks](verify.py).
 
-**Lean status:** none.
+**Lean status:** none on this branch. The publication branch contains the complete Lean proof of the blocking-pencil theorem and its quantitative missing-line bound. The Frobenius and reflexive-family results below have written proofs. [Published Lean scope and receipt](https://github.com/1337isnot1337/solved-conjectures/blob/c24f76d158a309a7fc787c4c6b1494ee52de8cc6/results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md)
 
 For [Frobenius exponents](FROBENIUS.md), the shift parameters must meet every affine hyperplane over the fixed field. The Jamison–Brouwer–Schrijver theorem then gives the exact finite minimum.
 

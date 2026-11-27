@@ -1,6 +1,6 @@
 # Wang–Yang's Fuss–Narayana conjecture
 
-**Lean status:** none.
+**Lean status:** full. Adam Benazouz formalized all six matrix statements for every integer $m\ge 2$, including minors on arbitrary row and column sets. [Lean theorems](https://github.com/1337isnot1337/solved-conjectures/blob/29a4c955adbe3a765eac84306b187d567514f55f/lean/Conjectures/WangYangFussNarayana.lean) · [Kernel receipt](https://github.com/1337isnot1337/solved-conjectures/blob/29a4c955adbe3a765eac84306b187d567514f55f/docs/verification/lean-wang-yang-fuss-narayana-20261126/receipt.json) · [Adam Benazouz’s formalization](https://github.com/1337isnot1337/solved-conjectures/pull/840)
 
 Yi Wang and Arthur L. B. Yang conjectured total nonnegativity of the four Fuss–Narayana triangles and strict total positivity of the two Fuss–Narayana squares for every integer parameter $m\ge 2$. The proof here establishes all six statements, including minors on arbitrary row and column sets. An independent reviewer checked the complete argument against the journal statement and reran the verifier. [Independent review](https://github.com/1337isnot1337/solved-conjectures/issues/98#issuecomment-7188223846) [Journal paper, Conjecture 4.1](https://cfc.nankai.edu.cn/_upload/article/files/ca/07/264e89bc4d9bb418a6d91d482b90/ef62459f-bec2-470d-8199-b57a790de20a.pdf) · [Review thread](https://github.com/1337isnot1337/solved-conjectures/issues/98)
 

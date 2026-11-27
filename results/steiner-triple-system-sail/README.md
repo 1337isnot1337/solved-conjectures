@@ -1,6 +1,6 @@
 # The Steiner triple system sail problem
 
-**Lean status:** none.
+**Lean status:** full. The checked statements cover the uniform count, existence from order 84, the limiting lower density of $1/49$, the one-color disjoint packing with limiting lower rate $1/4802$, and the Ramsey consequence for fixed disjoint unions. [Lean theorems](https://github.com/1337isnot1337/solved-conjectures/blob/dcff7334551c6da31be3235a0fbce0995ad49e3e/lean/Conjectures/SteinerSailTheorems.lean) · [Kernel receipt](https://github.com/1337isnot1337/solved-conjectures/blob/dcff7334551c6da31be3235a0fbce0995ad49e3e/docs/verification/lean-steiner-sails-20261126/receipt.json)
 
 Every red–blue coloring of the blocks of a Steiner triple system of order at least 84 contains a monochromatic sail. A sail has three blocks through a center and one block meeting all three away from the center. At least $1/49-o(1)$ of all sails have one color, and one color contains linearly many pairwise vertex-disjoint sails. The result answers Gyárfás’s two-color question in arbitrary systems. [Original Ramsey question](https://users.renyi.hu/~gyarfas/Cikkek/182_jcd1.pdf) · [Gyárfás’s Question 2.8](https://real.mtak.hu/162708/1/ejc40.pdf).
 

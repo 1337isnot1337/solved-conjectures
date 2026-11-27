@@ -31,4 +31,4 @@ Both checkers use only Python's standard library and exact rational arithmetic. 
 {20430400000000000000000000000000}>0.
 ```
 
-The first independent mathematical review and the separate source/priority audit passed. The argument remains unrefereed; internal review is not journal peer review. No Lean formalization is claimed. The current audit found no earlier resolution within its documented coverage.
+The first independent mathematical review and the separate source/priority audit passed. The argument remains unrefereed; internal review is not journal peer review. Lean verifies the transfer inequality, dimension threshold, fourth moment and rational separation. The Gaussian expectations and spherical Hardy-norm identities remain in the written proof. [Research receipt](https://github.com/1337isnot1337/solved-conjectures/blob/3c444518c43bae6653a91259924040b191daaf31/docs/verification/lean-kovalev-hardy-separation-20261126/receipt.json). The current audit found no earlier resolution within its documented coverage.
