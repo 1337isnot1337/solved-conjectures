@@ -93,6 +93,9 @@ d=\frac{16713(m-\ell)+104034(h-m)}3
 End effects have bounded length because both return times are bounded.
 Substitution of $`\alpha=3\theta-1`$ gives the stated density.
 
+The same gate returns also support a second induction for a positive
+[cutoff-400 component](phase-nested-model.md).
+
 ```sh
 python3 -B research/ulam-sequence-density/phase_return_model.py
 ```

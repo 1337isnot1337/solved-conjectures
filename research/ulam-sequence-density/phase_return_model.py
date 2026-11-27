@@ -27,6 +27,10 @@ def subtract(left, right):
     return left[0] - right[0], left[1] - right[1]
 
 
+def scale(factor, endpoint):
+    return factor * endpoint[0], factor * endpoint[1]
+
+
 def nonnegative(endpoint):
     # The variation of alpha is at most three times that of theta.
     return number(endpoint) * SLOPE_RADIUS_DENOMINATOR >= 3 * Q * abs(endpoint[1])
@@ -42,6 +46,31 @@ def check_cuts(first, last, low, high):
     for t in range(first, last):
         endpoint = cut(t)
         assert nonnegative(subtract(low, endpoint)) or nonnegative(subtract(endpoint, high))
+
+
+def check_rotation_returns(low, middle, high, period, step, times, valid):
+    positive_steps, negative_steps = times
+    positive = subtract(high, middle)
+    negative = subtract(low, middle)
+    width = subtract(high, low)
+    assert 0 < positive_steps < negative_steps
+    assert number(positive) > 0 > number(negative)
+    assert valid(positive) and valid(scale(-1, negative))
+    for steps in range(1, negative_steps + 1):
+        moved = scale(steps, step)
+        residue = subtract(moved, scale(number(moved) // number(period), period))
+        assert valid(residue) and valid(subtract(period, residue))
+        if steps == negative_steps:
+            assert subtract(residue, period) == negative
+            break
+        assert valid(subtract(subtract(period, residue), width))
+        if steps == positive_steps:
+            assert residue == positive
+        # Earlier positive displacements cannot return more of the
+        # interval than the designated positive return does.
+        threshold = width if steps < positive_steps else positive
+        assert valid(subtract(residue, threshold))
+    return positive, negative
 
 
 def gate_at(base):
@@ -101,21 +130,9 @@ def main():
     assert number(low) < ANCHOR * Q < number(high)
     check_cuts(-MEMORY, LENGTH + 1, low, high)
     positive_steps, negative_steps = 60_002, 373_657
-    positive = subtract(high, middle)
-    negative = subtract(low, middle)
-    assert positive[1] == positive_steps and negative[1] == negative_steps
-    assert number(positive) > 0 > number(negative)
-    assert nonnegative(positive) and nonnegative(subtract((0, 0), negative))
-    width = subtract(high, low)
-    for steps in range(1, negative_steps):
-        residue = (-(steps * ALPHA // Q), steps)
-        assert nonnegative(residue) and nonnegative(subtract((1, 0), residue))
-        # No earlier negative displacement returns. Once the positive
-        # return is available, later positive displacements only serve
-        # a subset of its domain until the negative return takes over.
-        assert nonnegative(subtract(subtract((1, 0), residue), width))
-        threshold = width if steps < positive_steps else positive
-        assert nonnegative(subtract(residue, threshold))
+    positive, negative = check_rotation_returns(
+        low, middle, high, (1, 0), (0, 1), (positive_steps, negative_steps), nonnegative,
+    )
     memories = (5725472681694927751940669440,
                 1466069224373964393491462619136,
                 396141417034254013285812667648)
