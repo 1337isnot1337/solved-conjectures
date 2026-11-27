@@ -57,4 +57,12 @@ If either weighted support is disconnected, its connectivity is zero and the oth
 
 If all unweighted supports are connected, both linear inequalities hold at both endpoints. They persist at the interpolated weights because each connectivity is concave. If only $H$ is disconnected, then its endpoint has $x=0,y\ge1$ and satisfies the first linear inequality, while the other endpoint satisfies both. That one inequality again persists along the segment. If only $(H+e)^c$ is disconnected, the second inequality works symmetrically. In each case a putative violation would have $x,y<1$ and hence is ruled out.
 
-This proves the original inequality uniformly in edge weights for all sufficiently large orders. The argument does not determine the small-order threshold and does not claim the full conjecture or its complete equality characterization.
+This proves the original inequality uniformly in edge weights for all sufficiently large orders. The argument does not determine the small-order threshold and does not claim a proof covering the remaining finite interval of orders.
+
+## Strict interior equality for sufficiently large orders
+
+Take $n>52$ within the same sufficiently large range. Then the two linear inequalities at a simple endpoint with both supports connected are strict, because $(1-2/n)(26/25)>1$. It follows that the interpolation has strict $F>1$ whenever both weighted connectivities are below one and at least one endpoint has both supports connected. Indeed, when just one endpoint has both supports connected, its positive interpolation weight makes the relevant linear lower bound strict. An unweighted graph with one zero connectivity does not have both connectivities below one. Thus the only one-fractional-edge interior equality cases are the opposite-disconnection configurations, which are exactly $SE(s)$.
+
+For a general weighting with $F=1$ and $x,y<1$, the global inequality already proved at these orders makes it a global minimizer. Apply the [visible-fractional-edge lemma](ONE-FRACTIONAL-EDGE.md) to round every fractional edge invisible to the two extremal eigenvectors. The two connectivities stay unchanged, and the resulting graph is $SE(s)$. The first Fiedler vector of $SE(s)$ has one level on the nondistinguished vertices and two different levels on the distinguished vertices, as shown there. Therefore no originally invisible edge is incident to a distinguished vertex. All weights incident to those vertices were already correct before rounding. The original weighting is itself $SE(s)$.
+
+Thus the proposed strict interior equality characterization also holds at every sufficiently large order. This supplies no assertion for the remaining smaller orders or for the corner points $(0,1)$ and $(1,0)$.
