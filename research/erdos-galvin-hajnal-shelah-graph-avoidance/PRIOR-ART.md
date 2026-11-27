@@ -28,3 +28,25 @@ this avoidance problem. The current search found no prior
 explicit answer to Problem 4 or publication of this exact
 club-slot reduction. This is a negative search result,
 not a claim of bibliographic exhaustiveness.
+
+
+## Alternate terminology and scope
+
+[Bowler–Geschke–Pitz](https://arxiv.org/abs/1609.01042) call the
+bipartite version a Halin \((\aleph_0,\aleph_1)\)-graph.
+Every Shelah graph in the 1975 sense contains one of these:
+delete edges within the countable set and within its complement.
+Thus searching for avoidance of these bipartite graphs **as
+subgraphs** is equivalent and was also checked. The normal-spanning-tree
+papers study these graphs primarily as obstructions **as minors**;
+that is not the requirement in Problem 4.
+
+[Bowler–Carmesin–Komjáth–Reiher](https://doi.org/10.1007/S00493-019-4045-9)
+use the more general name \(\mu\)-barricade and combine
+barricades and stationary ladder obstructions to characterize
+**colouring number**, rather than chromatic number. This is
+closely related prior structural work. Neither one of their
+two obstructions alone characterizes countable chromatic
+number: in particular, a bipartite barricade itself is
+two-colourable. Their theorem is not the proposed reduction
+of the entire barricade-free graph to induced HM-type pieces.
