@@ -164,3 +164,11 @@ This gives \(3t(t+1)-\delta\binom{t+1}{2}\) points.
 The same number is a lower bound from pairwise union
 counting, since any point of multiplicity \(d\) is
 overcounted \(d-1\le\binom d2\) times.
+
+Related literature: [Das–Gan–Sudakov](https://arxiv.org/abs/1305.6715)
+minimize disjoint pairs in a single small uniform family by initial
+lexicographic segments, which are successive star layers. The
+single-support estimate used here is an elementary asymptotic
+version of that phenomenon. The extra restriction in the petal
+problem is the pointwise overlap cap: all supports must obey it
+simultaneously for each disjoint pair of cuts.
