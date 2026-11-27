@@ -10,25 +10,19 @@ In particular there is no uncountable rainbow. The only type of collision used i
 
 ## Define the colouring
 
-By [Todorčević's negative square-bracket theorem](https://doi.org/10.1007/BF02392561), fix \(c:[\omega_1]^2\to\omega_1\) whose restriction to every uncountable set takes every colour. For an alternative primary reference with a stronger rectangle conclusion, take \(A=B\) in [Moore, Theorem 1.1](https://pi.math.cornell.edu/~justin/Ftp/Lspace.pdf#page=2). Fix a bijection from \(\omega_1\) to \([\omega_1]^2\), and write \(q_\xi\) for the two-element set coded by \(\xi\). Also fix injections \(e_\beta:\beta\to\omega\) for all \(\beta<\omega_1\).
+By [Todorčević's negative square-bracket theorem](https://doi.org/10.1007/BF02392561), fix \(c:[\omega_1]^2\to\omega_1\) whose restriction to every uncountable set takes every colour. For an alternative primary reference with a stronger rectangle conclusion, take \(A=B\) in [Moore, Theorem 1.1](https://pi.math.cornell.edu/~justin/Ftp/Lspace.pdf#page=2). Fix a bijection from \(\omega_1\) to \([\omega_1]^2\), and write \(q_\xi\) for the two-element set coded by \(\xi\).
 
 At each \(\beta\) and each anchor \(\alpha<\beta\), decode
 \[
  \{u,v\}=q_{c(\{\alpha,\beta\})}.
 \]
-If \(u,v<\alpha\) and both \(e_\beta(u)\) and \(e_\beta(v)\) are strictly smaller than \(e_\beta(\alpha)\), put the two triples \(\{u,\alpha,\beta\}\) and \(\{v,\alpha,\beta\}\) in one fresh colour class. Use a distinct label for each such \((\alpha,\beta)\), and give every unmatched triple its own fresh label, disjoint from the previous labels.
+If \(u,v<\alpha\), put the two triples \(\{u,\alpha,\beta\}\) and \(\{v,\alpha,\beta\}\) in one fresh colour class. Use a distinct label for each such \((\alpha,\beta)\), and give every unmatched triple its own fresh label, disjoint from the previous labels.
 
-The grouped triples cannot overlap between colour classes: their largest ordinal \(\beta\) is fixed, and their middle ordinal is the anchor \(\alpha\), so each belongs to at most one selected group. Hence \(f\) is well defined and 2-bounded; the set of labels embeds in \(\omega_1\). The two local-rank inequalities are not needed for disjointness once both decoded vertices are required to be below the anchor. In particular, they may be omitted entirely, yielding the shorter proof below.
+The grouped triples cannot overlap between colour classes: their largest ordinal \(\beta\) is fixed, and their middle ordinal is the anchor \(\alpha\), so each belongs to at most one selected group. Hence \(f\) is well defined and 2-bounded; the set of labels embeds in \(\omega_1\).
 
 ## Every uncountable set contains the collision
 
-Fix \(u<v\) and \(X\) as in the theorem. Apply the square-bracket theorem on \(X\) with target \(\xi\) coding \(\{u,v\}\). The resulting \(\alpha<\beta\) belong to \(X\), so \(u,v<\alpha\). In the simplest version, using the ordinal comparison alone, this immediately activates the matching rule.
-
-If using the optional local-rank inequalities, first form the graph on \(X\) consisting of pairs \(\alpha<\beta\) with
-\[
- e_\beta(\alpha)\le \max\{e_\beta(u),e_\beta(v)\}.
-\]
-Each \(\beta\) has finitely many smaller neighbours by injectivity. Greedy colouring in ordinal order gives a countable proper colouring. One colour class is uncountable and avoids all these bad pairs, so applying the strong colouring there gives the same collision with the optional inequalities. Neither version uses a forcing axiom or a stronger rectangular partition relation.
+Fix \(u<v\) and \(X\) as in the theorem. Apply the square-bracket theorem on \(X\) with target \(\xi\) coding \(\{u,v\}\). The resulting \(\alpha<\beta\) belong to \(X\), so \(u,v<\alpha\). The matching rule immediately gives the desired collision.
 
 For a proposed uncountable rainbow \(Y\), choose distinct \(u,v\in Y\). Its tail above \(u,v\) is uncountable, so the theorem gives two same-colour triples inside \(Y\). This refutes the positive consistency assertion and its proposed PFA consequence.
 
@@ -36,7 +30,7 @@ For a proposed uncountable rainbow \(Y\), choose distinct \(u,v\in Y\). Its tail
 
 For a fixed finite arity \(r>3\), record the \(r-3\) largest members in the colour and use \(f\) on the three smallest. A fixed record has at most two preimages. Any uncountable set contains a triple collision and then \(r-3\) further members above it, which can be appended to both triples. Thus ZFC gives the same negative relation in every finite arity at least three.
 
-The version using only the ordinal comparison works verbatim at any infinite cardinal \(\kappa\) for which \(\kappa\nrightarrow[\kappa]^2_\kappa\) holds, provided \(\kappa\) is regular so that deleting the bounded prefix of a full-sized set preserves its size (in fact cardinality alone suffices for the tail of any full-sized set in the initial ordinal \(\kappa\)). For a fixed earlier interchangeable pair, the same strong-colour argument works. No claim is made that the negative square-bracket hypothesis holds at every \(\kappa\).
+The construction works verbatim at any infinite cardinal \(\kappa\) for which \(\kappa\nrightarrow[\kappa]^2_\kappa\) holds. Removing a bounded prefix of a set of cardinality \(\kappa\) leaves its cardinality unchanged, including when \(\kappa\) is singular. For a fixed earlier interchangeable pair, the same strong-colour argument works. No claim is made that the negative square-bracket hypothesis holds at every \(\kappa\).
 
 ## Scope
 
