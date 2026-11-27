@@ -6,8 +6,10 @@ For integers ell >= 2 and k >= 2, every k-vertex-critical
     alpha(G) <= max(ell+1, (ell-1)(k-1)),
     |V(G)| <= k max(ell+1, (ell-1)(k-1)).
 
-For ell=3 and k=4 the first bound strengthens to alpha(G)<=5,
-and hence |V(G)|<=20. These statements do not assert traceability.
+For ell >= 3, the term (ell-1)(k-1) in both bounds can be
+replaced by (ell-1)(k-1)-1. For example ell=3 and k=4 gives
+alpha(G)<=5 and |V(G)|<=20. These statements do not assert
+traceability.
 
 ## Relation to earlier work
 
@@ -67,43 +69,44 @@ every v in I, contradictory because connectors have omissions and
 at least one connector exists (G is connected). This proves the
 independence bound. Any proper k-coloring gives the order bound.
 
-## The four-chromatic six-branch boundary
+## Excluding the next equality for every ell >= 3
 
-Suppose ell=3, k=4 and s=6. The inequality forces d=1.
-Deleting a singleton branch gives three colors, all appearing
-on connectors. They can color at most six surviving branch
-vertices. Thus the original union of the six branches has at
-most seven vertices: either all singleton, or one two-vertex
-branch and five singleton branches.
+Put r=ell-1>=2. It remains to exclude s=rK when s>=ell+2.
+The capacity inequality s-1<=r(K-d+1) forces d=1. Deleting
+a singleton branch leaves at most rK branch vertices because
+every color appears on a connector. The branch union originally
+has at most s+1 vertices, so all branches are singletons
+except possibly a single two-vertex clique.
 
-In the latter case, delete any singleton branch vertex v.
-Every connector color appears in exactly two of the surviving
-branches, so every connector is complete to the deleted
-singleton branch. Vary v over the five singleton branches.
-Every connector would then be complete to all five, although
-its color must appear in two distinct surviving branches, a
-contradiction.
+If such a clique exists, delete a singleton branch vertex v.
+There are exactly rK surviving branch vertices, and each
+color class meets exactly r distinct branches. Thus every
+connector is complete to v: its omission budget of r branches
+is already exhausted on survivors. Varying v proves every
+connector complete to all singleton branches, impossible
+since a connector's color appears in r>=2 surviving branches
+while only one branch is not a singleton.
 
-All six branches are therefore singletons. For each deletion
-of a branch vertex v, the three colors split the other five
-branch vertices into parts of sizes 2, 2 and 1. In particular
-every connector misses at least one branch vertex. It cannot
-miss exactly one, since deleting that vertex gives a coloring
-in which its color still needs to appear at a branch vertex.
-Hence every connector misses exactly two. Write down its
-unordered pair of misses.
+All s branches are therefore singletons. In a coloring after
+deleting v in I, the K colors partition the surviving rK-1
+vertices of I into K-1 parts of size r and one part of size
+r-1, and every color appears on a connector. Every connector
+has a nonempty omission set in I, since it shares its color
+with at least r-1>=1 surviving representatives. If its omission
+set has size at most r-1, delete a vertex it omits. In this
+coloring its share of surviving omissions is at most r-2,
+too small for even the smallest part. Hence every connector
+omits exactly r representatives.
 
-Fix v. Any pair containing v must have its other endpoint
-in the unique one-vertex color part, so each vertex belongs
-to at most one distinct pair. The pairs form a matching.
-Each deletion coloring uses two of the pairs as two-vertex
-parts and meets the last surviving vertex with the one-vertex
-part. The connector in the color of the one-vertex part must
-omit it as well, proving that the pairs cover all six vertices.
-In a deletion coloring the connectors with the same omission
-pair must have the same color: the two pairs not incident
-with v are the two-vertex parts, and the incident pair uses
-the one-vertex part. Therefore each of the three connector
-groups is independent. Assign each group a different color
-and give both vertices of its omitted pair the same color.
-That properly colors all of G with three colors, a contradiction.
+For any v, all connectors omitting v must use the unique
+smaller part after deleting v. Their omission sets are
+therefore identical: each consists of v and the r-1 vertices
+in that color part. Thus the distinct omission sets are
+pairwise disjoint. Choose any of them and two of its members
+(which exist since r>=2). Those two representatives are
+nonadjacent and have identical neighbors in X, because every
+connector either omits both or sees both. They have identical
+open neighborhoods in G. Two such vertices violate criticality:
+in a coloring after deleting one of them, reinsert it with
+the color of the other. This excludes s=rK and completes
+the strengthened bound simultaneously for every ell>=3.
