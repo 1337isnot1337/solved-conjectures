@@ -47,6 +47,12 @@ Read the [three-branch obstruction and the line graph proof](../results/cameron-
 Run `python3 results/cameron-clow-claw-free-path-perfect/verify.py` from the repository root.
 It reconstructs the 35-vertex root, verifies its three branch cuts and checks the chromatic index and all 52 edge-deletion colorings. The written proof is independent of these finite checks.
 
+## Cameron–Clow’s 2K₂-free path-perfect conjecture
+
+Read the [transversal obstruction and the vertex-criticality proof](../results/cameron-clow-twok2-free-path-perfect/PROOF.md).
+Run `python3 results/cameron-clow-twok2-free-path-perfect/verify.py` from the repository root.
+It reconstructs three witnesses, checks all induced four-sets and palette choices, and verifies a coloring after every vertex deletion. The infinite-family proof does not rely on computation.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.
