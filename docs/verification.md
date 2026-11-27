@@ -88,6 +88,8 @@ Run `python3 results/erdos-general-position-pinned-distances/verify.py` to check
 
 Run `python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py` for mixed isosceles triples and `python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py` for axis nominations, co-farthest pairs and the arc sampling construction. The [written review](../results/erdos-general-position-pinned-distances/BISECTOR-REVIEW.md) identifies which parts of the asymptotic argument the finite tests exercise.
 
+Run `python3 results/erdos-general-position-pinned-distances/check_sparse_trapezoids.py` to compare two definitions of a trapezoid on 512 subsets of a lattice grid and check the pin–base incidence bounds on 262,144 choices. The [written review](../results/erdos-general-position-pinned-distances/SPARSE-TRAPEZOIDS-REVIEW.md) covers the asymptotic argument.
+
 Run `python3 results/erdos-general-position-pinned-distances/check_four_grids.py` to enumerate circles and active pairs on rational four-grid examples with 23, 58 and 109 sites. Each example attains the site-centered cap of three and the global cap of four. The [independent review](../results/erdos-general-position-pinned-distances/FOUR-GRIDS-REVIEW.md) checks the general construction.
 
 ## Cioba–Savvas shutout number conjecture
