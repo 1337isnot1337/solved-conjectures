@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Independent subdivision with arbitrary terminal trees
+
+Fix any reduced tree skeleton with at least two branch vertices and prescribe an arbitrary rooted decoration at each end. Vary all exterior arm orders and any selected internal path lengths independently through $`[1,t]`$. Among the $`p`$-parameter assignments, all except $`O(t^{p-1})`$ give trees identified among all finite trees by the ordinary chromatic symmetric function. The other internal paths may have any fixed positive lengths. The result extends the existing unranked Stanley campaign. [Subdivision theorem](docs/research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-DENSITY.md) · [Review and checks](docs/research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-REVIEW.md)
+
 ## 27 November 2026 — Sharp ordinal thresholds for graph representations
 
 A new ZFC theorem forces an induced countably infinite matching in one color for every countable edge coloring of either factor of a putative witness on any uncountable subset. It rules out all open representations by countably many well-orders shorter than the square of the first uncountable ordinal. [Induced matching and chromatic equality](results/soukup-complementary-graph-product/DIRECTED-OPEN.md)
