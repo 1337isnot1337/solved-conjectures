@@ -109,3 +109,8 @@ The verified run processed 96,634 bisections and certified 96,635
 leaves, with maximum depth 22 and 48,857 distinct pair capacities
 evaluated. All accepted coefficient costs and matrix checks used
 rational arithmetic.
+
+A stricter run with `--target 53/1000` also passed. It processed
+104,900 bisections and 104,901 leaves, reaching depth 23 with
+52,528 distinct coefficient capacities. Thus the ratio for
+cover number three is at most 53/3000, strictly less than 1/56.
