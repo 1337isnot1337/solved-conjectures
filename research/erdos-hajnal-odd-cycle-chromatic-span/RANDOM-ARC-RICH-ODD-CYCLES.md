@@ -133,6 +133,35 @@ insert \(3(m-1)+1=3m-2\) arcs, and the parity of the number
 inserted in \(Y\) is \(m\bmod 2\). Hence the resulting cycle
 has odd length, as claimed.
 
+## Intersection with the original #108 construction
+
+[Kohlmeyer–Kruer, §§3.1–3.4](https://hexagonmath.org/pdf/2611.00763v1)
+use exactly this complete-template model, indexed from zero.
+Fix their \(q,K,C,b,B\) and let the scale \(R\) in (5) grow above
+its minimum in (4). The three ratio assumptions here then hold:
+successive ratios are positive powers of \(R\) while the logs
+are \(O(\log R)\). The four omitted parts in their indexing
+are \(V_0,V_1,V_2,V_{C-1}\).
+
+Their size estimates and the bounds in Lemmas 3.4 and 3.5 are
+uniform for all \(R\) at least the stated minimum. In the
+printed proof of Lemma 3.4, take
+\(m=\lceil(1+1/h)x\rceil\) for the number of offending edges;
+this is required by the non-strict bad event and by the
+displayed inequality \(hm\ge(h+1)x\). With that rounding,
+the bounds apply unchanged. Thus with probability at least
+\(3/4\) the base satisfies both \(\chi(D)>2q\) and the
+bounded-degree four-colorability premise; with probability
+\(1-o(1)\) it also has the rich odd-cycle span above. For large
+enough \(R\) these events have nonempty intersection.
+Taking their degree cap \(K=d+\binom d2\), \(d=C-1\), exhibits
+the two features simultaneously: all four-cycle-free ordinary
+subgraphs of the arc graph are six-colorable, but one odd
+cycle has induced span of chromatic number
+greater than \(\log_2(2q-4)\). This is an existence statement
+within their random construction, not a claim about every
+realization at the particular scale originally printed.
+
 ## Limits
 
 The triangle-free **template** of [Nguyen–Walczak, §5](https://arxiv.org/abs/2609.40192)
