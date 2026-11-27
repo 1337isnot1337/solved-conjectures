@@ -1,0 +1,11 @@
+# Ramsey-equivalent cycle targets
+
+Follow-up to [Erdős #596](https://www.erdosproblems.com/latex/596), issue #1085. This extends the exact cycle-target part to many graphs that are not cycles.
+
+Let \(C\) be a finite cycle and let \(H\) contain \(C\) and be a subgraph of a forest of copies of \(C\), with connectors empty, one vertex, or a common edge. Then the finite-to-countable classification for a target \(H\) is exactly the same as for the target \(C\). This includes unicyclic graphs, and graphs whose nontrivial blocks are edges or cycles all of the length of \(C\), so long as at least one such cycle occurs. Isolated vertices can be padded using disjoint copies.
+
+By Theorem 1.3 of [Reiher–Rödl–Schacht](https://arxiv.org/html/2502.09830), there is an integer \(q\) such that every graph that is edge Ramsey for \(C\) with \(q\) colors contains \(H\). Thus every \(H\)-free graph admits a \(q\)-edge coloring avoiding \(C\). Even if one states the theorem for finite graphs, this consequence holds for arbitrary graphs by compactness of finite-palette coloring.
+
+If a graph's edges are colored with \(\mu\) colors and no color contains \(H\), refine each color using such a \(q\)-coloring. The result has at most \(\mu q\) colors and avoids monochromatic \(C\). So a graph edge Ramsey for \(C\) with \(rq\) colors is edge Ramsey for \(H\) with \(r\) colors, and a graph countably edge Ramsey for \(C\) is countably edge Ramsey for \(H\). The reverse implications use \(C\subseteq H\), with no palette change. This proves equivalence of both clauses in the pair problem against every forbidden \(F\).
+
+In particular, if \(C\) is even then the pair \((F,H)\) is exceptional precisely when \(F\) is bipartite and does **not** embed into a forest of copies of \(C\). The finite side uses the exact forest criterion, Theorems 1.2–1.3 of the same source. The countable side uses the [bipartite-target classification](FOREST-TARGETS.md). To see the cactus examples, realize each cycle block as a copy of \(C\), and realize each bridge edge by using one edge of a fresh copy attached at its parent cut vertex along a block tree. Fresh cycles in different branches can be chosen disjoint off the specified attachments.
