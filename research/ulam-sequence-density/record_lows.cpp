@@ -115,6 +115,45 @@ void report_phase_occupancy(const Words& bits) {
     }
 }
 
+void report_gap_endpoints(const Words& bits, const Words& counts) {
+    struct Minimum {
+        std::int64_t numerator = 1, denominator = 0;
+        int endpoint = 0;
+
+        void observe(std::int64_t value, int scale, int x) {
+            if (value * denominator < numerator * scale) {
+                numerator = value;
+                denominator = scale;
+                endpoint = x;
+            }
+        }
+    };
+    for (int threshold : {10, 50, 100, 200, 300, 500}) {
+        int previous = 2, endpoints = 0;
+        Minimum by_size, by_gap;
+        for (int x = 3; x + 1 < static_cast<int>(bits.size()); ++x) {
+            if (!bits[x]) {
+                continue;
+            }
+            const int gap = x - previous;
+            previous = x;
+            if (gap >= threshold) {
+                if (counts[x + 1] == 0) {
+                    throw std::logic_error("missing pair with 1 at a gap endpoint");
+                }
+                const auto old = counts[x + 1] - 1;
+                by_size.observe(old, x, x);
+                by_gap.observe(old, gap, x);
+                ++endpoints;
+            }
+        }
+        std::cout << "Gap >= " << threshold << ": " << endpoints
+                  << " endpoints, min H/x " << by_size.numerator << '/' << by_size.denominator
+                  << ", min H/g " << by_gap.numerator << '/' << by_gap.denominator
+                  << " at " << by_gap.endpoint << '\n';
+    }
+}
+
 void report_pair_mass(const Words& bits, const Words& counts) {
     std::uint64_t mass = 0, eligible = 0, trials = 0;
     std::int64_t accepted = 2, low_count = 1, low_scale = 1;
@@ -327,5 +366,6 @@ int main() {
     report_large_summands(bits, counts);
     report_parity(bits, counts);
     report_pair_mass(bits, counts);
+    report_gap_endpoints(bits, counts);
     return 0;
 }

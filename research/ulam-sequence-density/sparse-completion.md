@@ -47,3 +47,44 @@ There are $`\Theta((\log x)^2)`$ indices through $`x`$. For a uniform interval b
 For either possible index sum $`h`$ there are at most six unordered distinct positive index pairs, one equal-index pair, and one pair involving zero. Each gives at most $`Q`$ integer pairs with a prescribed total. The uniform multiplicity bound $`16Q`$ follows, including in the initial interval.
 
 Finally choose $`m_0`$ with $`2^{m_0}>\lceil L/Q\rceil`$. For any four distinct exponents at least $`m_0`$, let $`h`$ be the sum of their binary powers. The target $`Qh`$ has three representations obtained by partitioning the four powers into pairs of indices from $`B`$. For $`1\le f\le L`$, the block index of $`Qh-f`$ is $`h-\lceil f/Q\rceil`$. Subtracting this amount leaves the three largest bits set, so that index is outside $`B`$ and is positive. Hence there is no representation using $`f`$. Four exponents below $`\lfloor\log_2(x/Q)\rfloor`$ give $`\Omega_{Q,L}((\log x)^4)`$ distinct such targets through $`x`$. The square of the counting function gives the matching upper bound. This completion violates the true rule at every selected position beyond $`7Q`$.
+
+## Testing binary-weight models against the full rule
+
+Let $`w(n)`$ count the ones in the binary expansion. For every fixed
+$`k\ge2`$, the genuine sequence omits infinitely many numbers of weight
+$`k`$. For $`k\ge3`$, choose arbitrarily large $`h`$ of weight $`k-2`$.
+The three numbers $`16h+6,16h+9,16h+10`$ all have weight $`k`$.
+If all three were selected, the largest would have both a representation
+using 4 and a representation using 1. Distinct $`h`$ give disjoint triples.
+
+For weight two take $`i>j+3`$ with $`j`$ arbitrarily large. Two distinct
+representations of $`2^i+2^j`$ by pairs of weight-two integers are
+
+```math
+(2^i+2^{j-2})+(2^{j-1}+2^{j-2}),\qquad
+(2^j+2^{i-2})+(2^{i-1}+2^{i-2}).
+```
+
+At least one of the target and the four summands must be omitted.
+Consequently eventual membership cannot depend only on $`w(n)`$.
+Such a rule could accept no weight above one, leaving only powers of
+two as a possible infinite tail. A sufficiently large power of two
+has no representation by two distinct powers of two. Pairing a smaller
+power with one of the finitely many exceptional terms also fails,
+since the difference is at least half the target.
+
+A weaker hypothesis is that $`w(u)\le d`$ for all Ulam terms, with
+arbitrary membership within each weight. It would force arbitrarily
+large Ulam multiples of every power of two. To see this, consider the
+2-adic limits of sequences of Ulam terms tending to ordinary infinity.
+By successively fixing residues modulo powers of two, such limits
+exist. Each limit is a nonnegative integer with at most $`d-1`$ ones.
+Indeed at most $`d`$ bit positions can stabilize to one, and if $`d`$
+did, no other bit could escape to infinity. Choose the smallest such
+limit $`m`$. Split the terms tending to $`m`$ into their two parents.
+Along a subsequence each parent is either constant or tends to ordinary
+infinity with a 2-adic limit. A constant parent $`a>0`$ would give
+the other parent the limit $`m-a<m`$, contrary to minimality.
+Otherwise both limits are at least $`m`$ and add to $`m`$, so $`m=0`$.
+Convergence to zero gives the asserted divisibility. Whether bounded
+binary weight itself can be excluded remains unresolved by this argument.

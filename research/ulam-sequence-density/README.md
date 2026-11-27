@@ -42,6 +42,13 @@ at least one of each two consecutive integers from 3 has a representation.
 The [eligible-partner fraction](partner-proportion.md) counts how often the
 larger integer in a candidate pair is also Ulam. A positive limit for this
 fraction would prove that the ordinary density exists with that same value.
+The [gap-endpoint test](after-gaps.md) counts the competing pairs one
+step after each long gap. Its two estimates would respectively imply
+a square-root counting bound and positive lower density.
+The [fixed-frequency criterion](fixed-frequencies.md) shows that
+positive upper density forces a negative cosine average at a fixed
+angle along a subsequence. Failure of the ordinary density to converge
+would force a fixed cosine average to oscillate as well.
 
 ## Uniform upper bound
 
