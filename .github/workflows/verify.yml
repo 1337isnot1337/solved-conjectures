@@ -194,6 +194,8 @@ jobs:
         run: |
           python3 docs/research-results/rather-book-domination-roots/check.py
           python3 docs/research-results/tuite-thomas-chandran-circulants/check.py
+      - name: Check the Lángi–Wang disk-window construction
+        run: python3 results/langi-wang-convex-tiling/check_sectors.py
       - name: Check the Leech lattice deep-hole coefficients
         run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples
