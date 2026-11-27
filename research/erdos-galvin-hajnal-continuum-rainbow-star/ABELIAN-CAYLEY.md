@@ -15,82 +15,82 @@ below document what is preserved in the present setting.
 
 ## Transfer to the Boolean group
 
-Let (H) be a simple graph with an edge labelling (ell),
-and let (A) be the group of finite subsets of (V(H))
-with symmetric difference as addition. Write (e_u={u}).
-The generators are (e_u+e_v) for edges (uvin E(H)).
-Let (C) be the Cayley graph on (A) for these generators.
-The generator (e_u+e_v) determines its original edge
+Let $`H`$ be a simple graph with an edge labelling $`\ell`$,
+and let $`A`$ be the group of finite subsets of $`V(H)`$
+with symmetric difference as addition. Write $`e_u=\{u\}`$.
+The generators are $`e_u+e_v`$ for edges $`uv\in E(H)`$.
+Let $`C`$ be the Cayley graph on $`A`$ for these generators.
+The generator $`e_u+e_v`$ determines its original edge
 uniquely, so assign every Cayley edge using it label
-(ell(uv)). Translations preserve all labels. The map
-(umapsto e_u) embeds (H) as a labelled induced subgraph.
+$`\ell(uv)`$. Translations preserve all labels. The map
+$`u\mapsto e_u`$ embeds $`H`$ as a labelled induced subgraph.
 
-Thus if every vertex colouring of (H) with at most (mu)
-colours supplies a vertex with at least (lambda)
-same-colour neighbours per label, so does (C). If
-(|V(H)|=lambda) is infinite, then also (|V(C)|=lambda).
-For (chi(H)=kappa) infinite, the embedding gives
-(chi(C)gekappa). Conversely take a proper colouring
-(f:V(H)	okappa) and send (e_v) to the basis vector
-(e_{f(v)}) in the Boolean group on (kappa). The map
+Thus if every vertex colouring of $`H`$ with at most $`\mu`$
+colours supplies a vertex with at least $`\lambda`$
+same-colour neighbours per label, so does $`C`$. If
+$`|V(H)|=\lambda`$ is infinite, then also $`|V(C)|=\lambda`$.
+For $`\chi(H)=\kappa`$ infinite, the embedding gives
+$`\chi(C)\ge\kappa`$. Conversely take a proper colouring
+$`f:V(H)\to\kappa`$ and send $`e_v`$ to the basis vector
+$`e_{f(v)}`$ in the Boolean group on $`\kappa`$. The map
 extends to a homomorphism of the groups, and each Cayley
 generator has nonzero image. Therefore the image gives
-a proper vertex colouring taking at most (kappa) values,
-so (chi(C)=chi(H)).
+a proper vertex colouring taking at most $`\kappa`$ values,
+so $`\chi(C)=\chi(H)`$.
 
 ## Odd girth and balanced bicliques
 
-A closed walk of odd length (m) in (C) gives a multiset
-of (m) original edges whose generators sum to zero.
-In (H), the edges occurring an odd number of times then
+A closed walk of odd length $`m`$ in $`C`$ gives a multiset
+of $`m`$ original edges whose generators sum to zero.
+In $`H`$, the edges occurring an odd number of times then
 form a finite even-degree graph with an odd number of edges.
 It decomposes into simple cycles, one of which has odd
-length at most (m). Thus every prescribed lower bound on
-the odd girth of (H) holds also for (C).
+length at most $`m`$. Thus every prescribed lower bound on
+the odd girth of $`H`$ holds also for $`C`$.
 
-For any infinite cardinal (kappa), a (K_{kappa,kappa})
-in (C) forces one in (H). To see it, regard the Cayley
-vertices as finite sets and let (S,T) be the two sides.
-Any two distinct vertices in (S) have symmetric difference
+For any infinite cardinal $`\kappa`$, a $`K_{\kappa,\kappa}`$
+in $`C`$ forces one in $`H`$. To see it, regard the Cayley
+vertices as finite sets and let $`S,T`$ be the two sides.
+Any two distinct vertices in $`S`$ have symmetric difference
 of size two or four, since they have a common neighbour to
 which each differs by two. Difference of size four permits
 only the six two-element subsets of that difference as
 possible common-neighbour offsets from the first vertex.
-As (T) is infinite this cannot happen, so every difference
-in (S) has size two. Translate one vertex of (S) to the
-empty set. The other members of (S) now form an infinite
+As $`T`$ is infinite this cannot happen, so every difference
+in $`S`$ has size two. Translate one vertex of $`S`$ to the
+empty set. The other members of $`S`$ now form an infinite
 pairwise intersecting family of two-element sets. Such a
-family has a common point (a): if ({a,b},{a,c})
-are distinct and some further set omits (a), then it must
-be ({b,c}), and no fourth two-element set can meet all
+family has a common point $`a`$: if $`\{a,b\},\{a,c\}`$
+are distinct and some further set omits $`a`$, then it must
+be $`\{b,c\}`$, and no fourth two-element set can meet all
 three. Hence
-[
-S={arnothing}cup{{a,x}:xin X},qquad |X|=kappa.
-]
-Every vertex (tin T) is a two-element set, by adjacency to
-the empty set. If (t) omits (a), it can intersect at most
-two of the sets ({a,x}); but all differences between
-(T) and (S) have size two, so every (t) contains (a).
-Write (T={{a,y}:yin Y}), with (|Y|=kappa). Since the
-sides are disjoint, (Xcap Y=arnothing), and every cross
-difference ({x,y}) is a generator. Thus every (xy)
-is an edge of (H), proving the claim.
+```math
+S=\{\varnothing\}\cup\{\{a,x\}:x\in X\},\qquad |X|=\kappa.
+```
+Every vertex $`t\in T`$ is a two-element set, by adjacency to
+the empty set. If $`t`$ omits $`a`$, it can intersect at most
+two of the sets $`\{a,x\}`$; but all differences between
+$`T`$ and $`S`$ have size two, so every $`t`$ contains $`a`$.
+Write $`T=\{\{a,y\}:y\in Y\}`$, with $`|Y|=\kappa`$. Since the
+sides are disjoint, $`X\cap Y=\varnothing`$, and every cross
+difference $`\{x,y\}`$ is a generator. Thus every $`xy`$
+is an edge of $`H`$, proving the claim.
 
 ## Connected witnesses and exact size
 
-Use for (H) the graph of order (lambda=2^mu),
-chromatic number (mu^+), prescribed odd girth, and no
-(K_{mu^+,mu^+}), constructed by the [transfer](PROOF.md)
+Use for $`H`$ the graph of order $`\lambda=2^\mu`$,
+chromatic number $`\mu^+`$, prescribed odd girth, and no
+$`K_{\mu^+,\mu^+}`$, constructed by the [transfer](PROOF.md)
 and [balanced biclique supplement](BICLIQUE-TRANSFER.md).
-The connected components of (C) are the cosets of the
+The connected components of $`C`$ are the cosets of the
 subgroup generated by the Cayley generators. They are
 label-preservingly isomorphic by translations. If the
-component of zero allowed a (mu)-colouring that avoided
+component of zero allowed a $`\mu`$-colouring that avoided
 the full labelled-star property, pull that colouring back
 to every component using the same palette. This would give
-such a colouring of all of (C), impossible. Hence the
+such a colouring of all of $`C`$, impossible. Hence the
 component of zero retains the property and has cardinality
-(lambda), since even the one-colour case needs
-(lambda) neighbours at a centre. All exclusion properties
-pass to it, and its chromatic number is still (mu^+).
+$`\lambda`$, since even the one-colour case needs
+$`\lambda`$ neighbours at a centre. All exclusion properties
+pass to it, and its chromatic number is still $`\mu^+`$.
 It is a connected abelian Cayley graph on that subgroup.
