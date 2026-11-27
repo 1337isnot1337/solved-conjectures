@@ -46,3 +46,46 @@ arrivals. No retained edge is changed. The same offset
 identity and local projection hold at every completed
 snapshot. In particular the transfer bound counts both
 additions and removals.
+
+## Single-edge updates on a fixed vertex set
+
+The degree-two algorithm also supports this model. For an inserted
+edge between different blocks, remove and recompute the two
+endpoint blocks. The affected vertices form a path or a whole
+cycle, so the same repartition step preserves the size invariant.
+If the endpoints are in one block, its vertex set stays intact
+and only its local solution is recomputed. For deleting a cut edge
+no block changes. An internal edge deletion splits a block into
+at most two path fragments (or opens a whole cycle to a path);
+repair short fragments by borrowing adjacent blocks as above.
+At most 6L vertices are affected. The cut-count approximation
+proof is unchanged. The [sharp path lower bound](SHARP-RECOURSE.md)
+also carries over to one-edge insertion.
+
+The negative direction works on bipartite subcubic graphs with
+single-edge insertions and an initially edgeless fixed vertex set.
+Take the bipartite hard stream in [PROOF.md](PROOF.md) and
+preallocate four isolated vertices for every original vertex.
+Activate each arriving gadget by inserting its three internal edges
+and at most four external edges. Every intermediate graph is a
+subgraph of the final subcubic bipartite graph. At completed
+checkpoints, dormant gadgets are sets of isolated vertices, all
+forced into each dominating set and disjoint from the active graph.
+
+In the published [hard window](https://arxiv.org/html/2412.13358v1#S3.Thmtheorem5)
+there are at most N dormant original vertices and at least 3N
+active original vertices, where N is the last layer size. Thus
+the number of forced dormant selections is at most 4N, and
+the active optimum is at least 3N by the gadget identity.
+Deleting the forced dormant selections from an output of relative
+error eta leaves a relative error of at most (7/3) eta on the
+active graph. Projecting to the original graph amplifies the
+relative error by at most six, for an overall factor of at most
+14. A projected membership change either comes from one of the
+at most seven edge steps, or from the newly activated original
+vertex, whose formerly dormant selections were not projected.
+A bound of r changes per edge step therefore gives at most
+7r+1 changes per completed original step. The published lower
+bound only uses this hard window. Choosing eta one fourteenth
+of that paper's positive tolerance yields linear recourse already
+in the fixed-vertex edge-insertion model.
