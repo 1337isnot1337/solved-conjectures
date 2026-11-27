@@ -148,6 +148,32 @@ modules=(
   Conjectures.AsgarliGhiocaYipSeed
   Conjectures.AsgarliGhiocaYipOrderedRoots
   Conjectures.AsgarliGhiocaYipBlockingPencil
+  Conjectures.AsgarliGhiocaYipPlaneFactor
+  Conjectures.AsgarliGhiocaYipIntersectionFamily
+  Conjectures.AsgarliGhiocaYipPlaneBudget
+  Conjectures.AsgarliGhiocaYipSeparator
+  Conjectures.AsgarliGhiocaYipResolventFiber
+  Conjectures.AsgarliGhiocaYipSymmetricBlocks
+  Conjectures.AsgarliGhiocaYipWeighted
+  Conjectures.AsgarliGhiocaYipUniversalResolvent
+  Conjectures.AsgarliGhiocaYipTwistFibers
+  Conjectures.AsgarliGhiocaYipExceptionalFibers
+  Conjectures.AsgarliGhiocaYipTwistComponents
+  Conjectures.AsgarliGhiocaYipTwistCount
+  Conjectures.AsgarliGhiocaYipTwistMass
+  Conjectures.AGYStepanov.BivariateWeightedDegree
+  Conjectures.AGYStepanov.CurveDerivation
+  Conjectures.AGYStepanov.PowerSeriesBranch
+  Conjectures.AGYStepanov.ResultantWeightedDegree
+  Conjectures.AGYStepanov.PlaneCurveIntersection
+  Conjectures.AGYStepanov.OrderOfDerivative
+  Conjectures.AGYStepanov.FrobeniusIndependence
+  Conjectures.AGYStepanov.StepanovUpperBound
+  Conjectures.AGYStepanov.PlaneCurvePointUpperBound
+  Conjectures.AsgarliGhiocaYipPlaneDegree
+  Conjectures.AsgarliGhiocaYipTwistUpper
+  Conjectures.AsgarliGhiocaYipTwistedModel
+  Conjectures.AsgarliGhiocaYipComplete
   Conjectures.MallikDegreeCounterfamily
   Conjectures.MallikDegreeCounts
   Conjectures.MallikDegreeEdgeMatchings

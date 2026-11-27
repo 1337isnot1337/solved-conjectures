@@ -102,7 +102,7 @@ The [partial-results catalogue](../CONTENTS.md#partial-results-on-open-problems)
 
 Run `python3 results/asgarli-ghioca-yip-blocking-pencil/verify.py` for 266,184 shift sets over eight fields, 367 regular seed instances, 8,577 graph–line intersections and both squarefree quartic twists without rational roots over the field of order three. A second researcher checked the general proofs and the order-32 hyperplane computation. [Proof](../results/asgarli-ghioca-yip-blocking-pencil/PROOF.md) · [Independent review and source audit](../results/asgarli-ghioca-yip-blocking-pencil/AUDIT.md).
 
-The [partial Lean formalization](../results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md) proves the upper bound and reduces the growing-family lower bound to a uniform point count. The [five-module receipt](../results/asgarli-ghioca-yip-blocking-pencil/verification/receipt.json) records strict compilation, the transitive axiom audit and stock kernel replay.
+The [complete scoped Lean proof](../results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md) eliminates `RegularOrderingEstimate` as a hypothesis. The [31-module receipt](../results/asgarli-ghioca-yip-blocking-pencil/verification/receipt.json) records strict source compilation, the all-owned axiom audit and stock kernel replay. The finite Python checks are supplementary.
 
 ## Mallik–Diwan–Kothari degree-count conjecture
 

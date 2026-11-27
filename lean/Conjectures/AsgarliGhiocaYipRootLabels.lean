@@ -14,7 +14,8 @@ open Polynomial Finset
 
 variable {K E : Type*} [Field K] [Fintype K] [Field E] [Algebra K E]
 
-private theorem mem_base_of_pow_card {x : E} (hx : x ^ Fintype.card K = x) :
+/-- The elements fixed by the cardinality-power Frobenius are in the base field. -/
+theorem mem_base_of_pow_card {x : E} (hx : x ^ Fintype.card K = x) :
     x ∈ (algebraMap K E).range := by
   let p : K[X] := X ^ Fintype.card K - X
   have hsplit : p.Splits := by simpa [p, Nat.card_eq_fintype_card] using

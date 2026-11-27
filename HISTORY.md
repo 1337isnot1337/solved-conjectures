@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Complete Lean proof of the Asgarli–Ghioca–Yip pencil bounds
+
+The [Lean proof](lean/Conjectures/AsgarliGhiocaYipComplete.lean) proves the uniform ordering estimate and both quantitative conclusions without a point-count hypothesis. [Scope and receipt](results/asgarli-ghioca-yip-blocking-pencil/FORMALIZATION.md).
+
 ## 2026-11-26 — Complete Lean formalization of Cioba–Savvas shutout number conjecture
 
 Lean proves the exponential shutout-number lower bounds for Conjectures 3.2 and 3.3 over arbitrary finite simple graphs, distinguishing immediate $s$-shutout $\tau(s)$ from a free $s$-star after Breaker's reply $\sigma(s)$ and establishing $\sigma(s) \ge \tau(s) > 2^{s-3}$ ($s \ge 3$) and $\sigma(s) \ge 2^s/8$ ($s \ge 1$). The four-module closure passed strict compilation, the 288-declaration all-owned axiom audit, and stock-kernel replay. [Lean scope and receipt](results/cioba-savvas-shutout-number/FORMALIZATION.md).

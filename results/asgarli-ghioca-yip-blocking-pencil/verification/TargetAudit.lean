@@ -1,20 +1,46 @@
+import Conjectures.AGYStepanov.BivariateWeightedDegree
+import Conjectures.AGYStepanov.CurveDerivation
+import Conjectures.AGYStepanov.FrobeniusIndependence
+import Conjectures.AGYStepanov.OrderOfDerivative
+import Conjectures.AGYStepanov.PlaneCurveIntersection
+import Conjectures.AGYStepanov.PlaneCurvePointUpperBound
+import Conjectures.AGYStepanov.PowerSeriesBranch
+import Conjectures.AGYStepanov.ResultantWeightedDegree
+import Conjectures.AGYStepanov.StepanovUpperBound
 import Conjectures.AsgarliGhiocaYipBlockingPencil
+import Conjectures.AsgarliGhiocaYipComplete
+import Conjectures.AsgarliGhiocaYipExceptionalFibers
+import Conjectures.AsgarliGhiocaYipIntersectionFamily
 import Conjectures.AsgarliGhiocaYipLines
 import Conjectures.AsgarliGhiocaYipOrderedRoots
+import Conjectures.AsgarliGhiocaYipPlaneBudget
+import Conjectures.AsgarliGhiocaYipPlaneDegree
+import Conjectures.AsgarliGhiocaYipPlaneFactor
+import Conjectures.AsgarliGhiocaYipResolventFiber
 import Conjectures.AsgarliGhiocaYipRootLabels
 import Conjectures.AsgarliGhiocaYipSeed
+import Conjectures.AsgarliGhiocaYipSeparator
+import Conjectures.AsgarliGhiocaYipSymmetricBlocks
+import Conjectures.AsgarliGhiocaYipTwistComponents
+import Conjectures.AsgarliGhiocaYipTwistCount
+import Conjectures.AsgarliGhiocaYipTwistFibers
+import Conjectures.AsgarliGhiocaYipTwistMass
+import Conjectures.AsgarliGhiocaYipTwistUpper
+import Conjectures.AsgarliGhiocaYipTwistedModel
+import Conjectures.AsgarliGhiocaYipUniversalResolvent
+import Conjectures.AsgarliGhiocaYipWeighted
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 import Lean.Elab.Command
 import Lean.Data.Json
 
 set_option maxRecDepth 100000
-set_option maxHeartbeats 100000000
+set_option maxHeartbeats 0
 
 open Lean Elab Command in
 run_cmd do
-  let expectedModules : Array String := #["Conjectures.AsgarliGhiocaYipBlockingPencil", "Conjectures.AsgarliGhiocaYipLines", "Conjectures.AsgarliGhiocaYipOrderedRoots", "Conjectures.AsgarliGhiocaYipRootLabels", "Conjectures.AsgarliGhiocaYipSeed"]
-  let required : Array Name := #[`Conjectures.AsgarliGhiocaYip.exists_regular_seeds, `Conjectures.AsgarliGhiocaYip.single_graph_missing_lines, `Conjectures.AsgarliGhiocaYip.seed_ordering_at_zero, `Conjectures.AsgarliGhiocaYip.missing_lines_of_ordering_estimate, `Conjectures.AsgarliGhiocaYip.blockingNumber_log_upper, `Conjectures.AsgarliGhiocaYip.pencil_bounds_of_ordering_estimate, `Conjectures.AsgarliGhiocaYip.point_count_after_exclusions]
+  let expectedModules : Array String := #["Conjectures.AGYStepanov.BivariateWeightedDegree", "Conjectures.AGYStepanov.CurveDerivation", "Conjectures.AGYStepanov.FrobeniusIndependence", "Conjectures.AGYStepanov.OrderOfDerivative", "Conjectures.AGYStepanov.PlaneCurveIntersection", "Conjectures.AGYStepanov.PlaneCurvePointUpperBound", "Conjectures.AGYStepanov.PowerSeriesBranch", "Conjectures.AGYStepanov.ResultantWeightedDegree", "Conjectures.AGYStepanov.StepanovUpperBound", "Conjectures.AsgarliGhiocaYipBlockingPencil", "Conjectures.AsgarliGhiocaYipComplete", "Conjectures.AsgarliGhiocaYipExceptionalFibers", "Conjectures.AsgarliGhiocaYipIntersectionFamily", "Conjectures.AsgarliGhiocaYipLines", "Conjectures.AsgarliGhiocaYipOrderedRoots", "Conjectures.AsgarliGhiocaYipPlaneBudget", "Conjectures.AsgarliGhiocaYipPlaneDegree", "Conjectures.AsgarliGhiocaYipPlaneFactor", "Conjectures.AsgarliGhiocaYipResolventFiber", "Conjectures.AsgarliGhiocaYipRootLabels", "Conjectures.AsgarliGhiocaYipSeed", "Conjectures.AsgarliGhiocaYipSeparator", "Conjectures.AsgarliGhiocaYipSymmetricBlocks", "Conjectures.AsgarliGhiocaYipTwistComponents", "Conjectures.AsgarliGhiocaYipTwistCount", "Conjectures.AsgarliGhiocaYipTwistFibers", "Conjectures.AsgarliGhiocaYipTwistMass", "Conjectures.AsgarliGhiocaYipTwistUpper", "Conjectures.AsgarliGhiocaYipTwistedModel", "Conjectures.AsgarliGhiocaYipUniversalResolvent", "Conjectures.AsgarliGhiocaYipWeighted"]
+  let required : Array Name := #[`Conjectures.AsgarliGhiocaYip.regularOrderingEstimate, `Conjectures.AsgarliGhiocaYip.missing_lines, `Conjectures.AsgarliGhiocaYip.pencil_bounds, `Conjectures.AsgarliGhiocaYip.half_le_twist_fibers]
   let legacyPrefixes : Array String := #[]
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
   let env ← getEnv
