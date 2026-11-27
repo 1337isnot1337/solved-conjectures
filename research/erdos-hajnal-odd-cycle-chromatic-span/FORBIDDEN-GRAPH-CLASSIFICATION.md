@@ -7,7 +7,7 @@ classification question is motivated by [Cameron–Clow, §1.2](https://arxiv.or
 It is distinct from proving an arbitrary binding function as
 in their Conjecture 7.5 and from the full Erdős–Hajnal problem.
 
-The following advances reduce the exact classification to three
+The following advances reduce the exact classification to two
 undecided finite forbidden graphs. Each undecided entry is a
 question about *all* H-free graphs, not a bound on their order.
 
@@ -39,19 +39,15 @@ question about *all* H-free graphs, not a bound on their order.
   Four isolates give independence number six. Only three
   additional isolates remain undecided.
 - Four-vertex-path-free graphs are path-perfect by the
-  source's Theorem 1.5. The 13-vertex obstruction has no
-  four-vertex path with three anticomplete independent vertices:
-  the direct four-set check in [verify_forbidden_residual.py](verify_forbidden_residual.py)
-  verifies this in the credited graph. Therefore all
-  forbidden graphs consisting of a four-vertex path and
-  at least three isolates fail. With one isolate, the
+  source's Theorem 1.5. With one isolate, the
   [co-gem proof](CO-GEM-WEAK-TOUGHNESS.md) gives
-  path-perfectness (independent review pending). Only two
-  additional isolates remain undecided.
+  path-perfectness (independent review pending). With two
+  isolates, the [two-block transversal counterexample](PATH-FOUR-TWO-ISOLATES.md)
+  shows that path-perfectness can fail. It also works for
+  all larger numbers of added isolates.
 
-The resulting unresolved list is an edge plus four isolates,
-a three-vertex path plus three isolates, and a four-vertex path
-plus two isolates. No assertion is made about these three
-outcomes. The first two new positive results have received
-[independent review](FORBIDDEN-CLASS-REVIEW.md); these remain research results
-rather than an unrestricted solution.
+The resulting unresolved list is an edge plus four isolates and
+a three-vertex path plus three isolates. No assertion is made about
+these two outcomes. The first two new positive results have received
+[independent review](FORBIDDEN-CLASS-REVIEW.md); these remain research
+results rather than an unrestricted solution.
