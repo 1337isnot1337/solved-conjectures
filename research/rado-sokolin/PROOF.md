@@ -52,11 +52,14 @@ At an atom $`t`$, the planar projections of the selected small cubes whose extra
 Integrate the planar areas. A small cube contributes its base area times its box mass, or $`s^2(2s)^k=2^k s^d`$. Writing $`V_s`$ for the selected small volume and $`V`$ for all selected volume gives
 
 ```math
-\begin{aligned}
-2^k V_s &\le U(H+2)^k-m(L+2)^k,\\
-V &\le 2^{-k}U(H+2)^k
+2^k V_s \le U(H+2)^k-m(L+2)^k.
+```
+
+Adding the selected large cubes gives
+
+```math
+V \le 2^{-k}U(H+2)^k
        +m\left[L^{k+2}-((L+2)/2)^k\right].
-\end{aligned}
 ```
 
 The coefficient of $`m`$ is positive since $`(L+2)/2\le L`$ and $`L^2>1`$. Substitution of the bound on $`m`$ and division by the full union volume yield
