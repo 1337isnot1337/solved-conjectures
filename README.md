@@ -165,6 +165,7 @@ This section is ordered by the significance of the partial contributions.
 - [Erdős–Sauer conjecture](docs/erdos-sauer-research.md). The hypergraph decomposition bound holds asymptotically for each fixed uniformity.
 - [Bollobás–Erdős–Tuza conjecture](results/erdos-611-clique-transversals/). For every fixed hollowness fraction the required transversal can have size $`n^{1-o(1)}`$. Excluding a fixed induced biclique gives a sublinear upper bound.
 - [Erdős–Granville–Pomerance–Spiro conjecture](results/erdos-granville-pomerance-spiro/). For every natural density-zero target set, the preimage conclusion holds on a fixed family of inputs of natural density approximately 53.46%. The full conjecture remains open.
+- **Bourin’s crossed-Heinz conjecture.** The inequality holds in every dimension and every unitarily invariant norm for all exponents when the spectra of both inputs lie in one positive interval with endpoint ratio at most √2. [Theorem and scope](results/bourin-crossed-heinz/).
 - [Erdős essential-component conjecture](docs/erdos-essential-component-research.md). An equivalent expansion problem modulo powers of two, with quantitative density gains on all sufficiently long prefixes.
 - [Erdős–Gyárfás power-of-two cycles](results/erdos-gyarfas-abelian-covers/). A sharp cycle-length bound for abelian covers of a singly subdivided tetrahedron. The universal voltage-cover theorem, arbitrary-voltage normalization, and sharp connected 95-vertex cyclic example are Lean-verified. [Checked scope](docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization).
 - [Erdős–Oler conjecture](docs/erdos-oler-research.md). The conjectured lower bound holds for packings on any unit-separated lattice, and triangular lattice packings with one site removed are locally rigid.
@@ -202,6 +203,8 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 ## Recognizing subdivided trees
 
 Unlabelled distances between leaves determine the total length of a generic tree and characterize every possible ambiguity. A binary tree’s shape is recovered, and all metric alternatives come from permuting the sums at pairs of sibling leaves. [Leaf-distance classification](docs/research-results/stanley-tree-subdivisions/CHERRY-CLASSIFICATION.md)
+
+For every fixed tree topology with at least 28 leaves, a generic subdivision is identified by its ordinary distance histogram against all trees with at most two more leaves. The marked two-extra-leaf theorem holds at every order. [Unmarked and marked results](docs/research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md)
 
 For any fixed tree topology, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most one additional leaf. There is no degree bound. [One-extra-leaf theorem](docs/research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md)
 

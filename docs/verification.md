@@ -1,5 +1,9 @@
 # Verification
 
+## Bourin’s common-shift theorem
+
+Run `python3 results/bourin-crossed-heinz/verify_common_shift.py` for the exact quadratic coefficients and spectral-block conjugations used in the proof. The [common-shift expansion](../results/bourin-crossed-heinz/COMMON-SHIFT.md) and the [dimension-free spectral interval](../results/bourin-crossed-heinz/UNIFORM-BAND.md) have written proofs.
+
 ## Mean independent-set size at given average degree
 
 Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
@@ -124,6 +128,8 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py` to check recovery of the full labeled core and its internal lengths from oriented cut sizes across 267 reduced trees. Two controls exercise cuts into equal halves. [Verifier](research-results/stanley-tree-subdivisions/verify_core_splits.py) · [Mathematical review](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_marked_two_surplus.py` for the marked pruning and endpoint checks. Run `python3 docs/research-results/stanley-tree-subdivisions/verify_two_surplus_tail.py` for the exhaustive unmarked degree-and-rank certificate. It excludes all records with at least 30 rival leaves after the analytic upper bound, and checks four boundary profiles at 29. [Theorem and bounds](research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_one_extra_leaf.py` to reproduce the exhaustive terminal degree and rank screen. It asserts that the sole surviving profile has six and seven leaves and exactly two possible rank pairs. The final two contradictions are in the [written proof](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md).
 

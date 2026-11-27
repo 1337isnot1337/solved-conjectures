@@ -14,6 +14,8 @@ Arbitrary-core reconstruction has an independently reviewed written proof and a 
 
 The generic leaf-distance classification and its rational obstruction for every positive leaf surplus have independently reviewed written proofs, exact finite checks and no Lean formalization. [Total length](research-results/stanley-tree-subdivisions/LEAF-DECK-LENGTH.md) · [Classification](research-results/stanley-tree-subdivisions/CHERRY-CLASSIFICATION.md) · [Application](research-results/stanley-tree-subdivisions/SCALAR-PENDANT-OBSTRUCTION.md) · [Sources and independent review](research-results/stanley-tree-subdivisions/LEAF-DECK-REVIEW.md)
 
+The two-extra-leaf exclusion for marked trees is proved in writing at every order. The unmarked theorem for generic trees with at least 28 leaves additionally uses an exhaustive integer degree-and-rank calculation. Both received independent internal review and have no Lean formalization. [Proof and threshold](research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md) · [Review](research-results/stanley-tree-subdivisions/MARKED-TWO-SURPLUS-REVIEW.md)
+
 The one-extra-leaf theorem for generic tree subdivisions has a computer-assisted written proof. Its exhaustive integer degree-profile check and two mathematical exclusions received independent internal review. Lean verification remains open. [Scope and proof](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md) · [Review](research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF-REVIEW.md)
 
 The degree-unrestricted finite reduction controlled only by extra leaves and the accompanying single-hub bounds have an independently reviewed written proof and exact profile checks. They have no Lean formalization. [Proof](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Review and scope](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
@@ -288,6 +290,7 @@ proofs are documented separately in the catalogue and result package.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Bourin’s crossed-Heinz common-shift theorem | Not formalized | Reviewed written proofs cover a common spectral interval of endpoint ratio at most √2 and give the leading deficit along every common-shift ray. The general conjecture remains open. [Proof](../results/bourin-crossed-heinz/COMMON-SHIFT.md). |
 | Nuttall's conjecture | Complete | Literal cumulants are strictly sign-reverse regular on all ordered nonnegative grids through any prescribed finite order for all sufficiently large cumulant indices; the least index exists. |
 | Coffey–Smith conjecture | Not formalized | Complete proposed unconditional disproof of Smith’s named conjunction: if RH holds the dyadic coefficient square mass is O(N^(-1/2) log³ N), so both proposed positive-fraction sets have density zero for 0<ε<1/4; without RH the polynomial upper bound fails. The weaker Coffey upper-bound assertion alone is not refuted. Internally reviewed; no Lean verification. |
 | Chaudhary–Khmiri–Mazhouda conjecture | Not formalized | Complete proposed computer-assisted disproof of the universal automorphic Li-coefficient monotonicity claim. The admissible GL1 imaginary norm twist L(s+8i,χ₋₃) has Re(λ(2)−λ(1))<−3/2, certified by rational interval bounds. No GRH assumption. Internally reviewed; no Lean verification. |

@@ -14,11 +14,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check Bourin common-shift identities
+        run: python3 results/bourin-crossed-heinz/verify_common_shift.py
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
           python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_deck_length.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_scalar_pendants.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_marked_two_surplus.py
+          python3 docs/research-results/stanley-tree-subdivisions/verify_two_surplus_tail.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_one_extra_leaf.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_marked_quartic.py

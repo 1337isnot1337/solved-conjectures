@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-27 UTC — Common scalar shifts in Bourin’s crossed-Heinz problem
+
+The crossed-Heinz inequality holds in a common positive spectral interval with endpoint ratio at most √2 for all dimensions, exponents and unitarily invariant norms. [Dimension-free proof](results/bourin-crossed-heinz/UNIFORM-BAND.md). The first deficit coefficient covers spectral multiplicities and distinguishes ranks with persistent equality. This partial theorem appears in the open-problem section. [Proof](results/bourin-crossed-heinz/COMMON-SHIFT.md) · [Source audit and review](results/bourin-crossed-heinz/SHIFT-REVIEW.md)
+
+## 2026-11-27 UTC — Two extra leaves in generic tree reconstruction
+
+The existing Stanley research entry now identifies generic trees with at least 28 leaves from their ordinary distance histogram among all rivals with at most two additional leaves. Its arbitrary-order marked theorem uses a signed height profile, and its unmarked 28-leaf threshold uses an independently reproduced integer degree-and-rank certificate. [Unmarked proof](docs/research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md) · [Marked proof](docs/research-results/stanley-tree-subdivisions/MARKED-TWO-SURPLUS.md)
+
+
 ## 2026-11-27 UTC — Generic trees with the same unlabelled leaf distances
 
 A complete classification of the leaf-distance ambiguity determines total length and recovers generic binary topology. A separate consequence requires every ordinary distance-histogram rival with extra leaves to satisfy an internal-length relation. Both supplement the existing Stanley entry. [Total length](docs/research-results/stanley-tree-subdivisions/LEAF-DECK-LENGTH.md) · [Classification](docs/research-results/stanley-tree-subdivisions/CHERRY-CLASSIFICATION.md) · [Application](docs/research-results/stanley-tree-subdivisions/SCALAR-PENDANT-OBSTRUCTION.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-DECK-REVIEW.md)
