@@ -107,6 +107,55 @@ def check_action(p, k, exhaustive=True):
           + (" (exhaustive)" if exhaustive else " (seeded sample)"))
 
 
+def check_clipped_products():
+    # A pair (a, j) represents (a / denominator) times a cubic root of unity.
+    def squared_error(z, w, twist):
+        a, j = z
+        b, k = w
+        return a*a + b*b + (-2 if (j - k - twist) % 3 == 0 else 1) * a*b
+
+    rng = Random(593)
+    checked = 0
+    for level in (4, 5):
+        modulus = 3**level
+        slopes = list(range(0, modulus, 3))
+        q = modulus // 3
+        h = q // 3
+        for alpha, j in product((1, 2), repeat=2):
+            power = next(t for t in (1, 2) if (2*t*alpha - j) % 3 == 0)
+            # Zeros and unequal positive amplitudes exercise disk clipping.
+            amplitudes = [0, 15] + [rng.randrange(10) for _ in range(q // 3 - 2)]
+            phases = [rng.randrange(3) for _ in amplitudes]
+            f = {x: (amplitudes[x % q // 3], phases[x % q // 3] + alpha*(x // q))
+                 for x in slopes}
+            u = {x: (min(a, 5), k) for x, (a, k) in f.items()}
+            v = {}
+            w = {}
+            for x in slopes:
+                a, k = u[x]
+                b, l = u[(x + h) % modulus]
+                v[x] = (a*b, (l-k) % 3)
+                w[x] = (a*(a*b)**power, (k-power*(l-k)) % 3)
+            for x in slopes:
+                sibling = (x + q) % modulus
+                assert v[sibling] == v[x]
+                assert w[sibling] == (w[x][0], (w[x][1] + alpha) % 3)
+            for _ in range(60):
+                g = element(1 + 3*rng.randrange(q), 3*rng.randrange(q), 3*rng.randrange(q), modulus)
+                diag = (g[0] - 1) // 3
+                images = {x: action(g, x, modulus, modulus)[0] for x in slopes}
+
+                def error(values, twist):
+                    return sum(squared_error(values[images[x]], values[x], twist) for x in slopes)
+
+                cost = error(u, j*diag)
+                assert cost <= error(f, j*diag)
+                assert error(v, 2*alpha*diag) <= 4 * 5**2 * cost
+                assert error(w, 0) <= (1 + 2*power)**2 * 5**(4*power) * cost
+                checked += 1
+    print(f"p=3: {checked} exact clipped-product displacement checks")
+
+
 if __name__ == "__main__":
     for prime in (3, 5, 7):
         check_planes(prime)
@@ -114,3 +163,4 @@ if __name__ == "__main__":
         check_action(prime, level)
     for prime, level in ((3, 6), (5, 5), (7, 4)):
         check_action(prime, level, exhaustive=False)
+    check_clipped_products()

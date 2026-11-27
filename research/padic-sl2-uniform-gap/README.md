@@ -11,14 +11,14 @@ g=\begin{pmatrix}a&b\\c&d\end{pmatrix}.
 
 Consequently the uniform conjecture is equivalent to **pointwise** positivity of the tower gap on this fixed ball for every generating triple. A counterexample for one triple on the groups would already give a counterexample for that same triple on the ball. Proving positivity on the ball for every triple remains open.
 
-More precisely, write $`a_m(S)=\min\{1,g(X_m,S)\}`$. There is an explicit constant $`d_p>0`$ such that for every generating triple and every $`n\ge5`$,
+At each finite level the two gaps are comparable up to a constant depending only on $`p`$. More precisely, write $`a_m(S)=\min\{1,g(X_m,S)\}`$. There is an explicit constant $`d_p>0`$ such that for every generating triple and every $`n\ge5`$,
 
 ```math
-\min\{g(G_4,S),\ d_p\,a_{n-3}(S)^6\}
+\min\{g(G_4,S),\ d_p\,a_{n-3}(S)\}
 \ \le\ g(G_n,S)\ \le\ g(X_n,S).
 ```
 
-The lower bound uses the ordinary projective walk at one finite level. An intermediate action is the cover $`Y_m=X_m\times\mathbb F_p`$ with $`g(x,t)=(gx,t+\beta(g))`$, where $`\beta(g)=b/p\bmod p`$. This is a transitive set of $`p^m`$ points for $`m\ge2`$. Lower unipotents move the slope transitively, and upper unipotents stabilize zero and give all fiber translations. Denote its gap by $`y_m(S)`$.
+An intermediate action is the cover $`Y_m=X_m\times\mathbb F_p`$ with $`g(x,t)=(gx,t+\beta(g))`$, where $`\beta(g)=b/p\bmod p`$. This is a transitive set of $`p^m`$ points for $`m\ge2`$. Lower unipotents move the slope transitively, and upper unipotents stabilize zero and give all fiber translations. Denote its gap by $`y_m(S)`$. Sections 3 and 4 clip the test functions to the closed unit disk to obtain linear comparisons in both steps. [Original sixth-power estimate](https://github.com/1337isnot1337/solved-conjectures/blob/a12a7f95d7d39f543943f6df9c7dd84d2a8951f8/research/padic-sl2-uniform-gap/README.md)
 
 The earlier issue reduction uses ordered pairs of distinct projective lines and gives an equality of worst-case gaps. The proof below gives a same-triple implication for one line by transferring almost-invariant vectors between representations. [Earlier split-torus reduction](https://github.com/1337isnot1337/solved-conjectures/issues/592#issuecomment-7145149763)
 
@@ -77,73 +77,75 @@ Choose a diagonal eigenline in $`\pi^U`$. The stabilizer of $`x=0`$ in $`G_k`$ c
 
 In fact $`p^{k-2}`$ copies of the sum of the $`T_\theta`$ give the entire regular $`H`$ sector. For any such $`\pi`$ the sum of its multiplicities in these actions is $`\dim\pi^U`$, by the same reciprocity applied to every diagonal character.
 
-## 3. A difference of neighboring phases gives an ordinary walk
+## 3. Clipping and the difference of neighboring values
 
-Let $`f`$ be a unit vector of energy $`e`$ in $`T_\theta`$, now using uniform probability on $`X_m`$. The energy of $`|f|`$ in the ordinary slope action is at most $`e`$. The cover $`Y_m`$ has gap $`y=y_m(S)>0`$ and projects onto $`X_m`$. Thus $`\mathrm{Var}(|f|)\le e/y`$. Choose a modulus-one phase $`u`$ of $`f`$, assigning any phase at its zeros. Then
+Use uniform probability on each slope space and the same quadratic energy for vectors of arbitrary norm. Suppose $`f`$ is a unit vector of twisted energy $`e`$, where each move permutes the slopes and multiplies by a unit scalar that may depend on the slope. If the ordinary slope gap is at least $`a>0`$, define
 
 ```math
-\|u-f\|_2^2=2(1-\mathbb E|f|)\le2e/y,\qquad
-\sqrt{E_{T_\theta}(u)}\le(1+2/\sqrt y)\sqrt e .
+u(x)=\frac{f(x)}{\max(1,|f(x)|)},\qquad
+\delta(u)=\|1-|u|\|_2 .
 ```
 
-The latter uses the triangle inequality for the three displacements and $`E(v)\le2\|v\|^2`$. Put $`q=p^{m-1}`$. The determinant-one identity for the difference of two fractional linear transformations gives $`g(x+q)=gx+q\bmod p^m`$. Their multipliers satisfy
+Projection onto the closed unit disk is 1-Lipschitz and commutes with multiplication by a unit scalar. Thus the twisted energy of $`u`$ is at most $`e`$. Also $`|f|`$ has ordinary energy at most $`e`$. Poincaré gives $`1-(\mathbb E|f|)^2\le e/a`$, so
+
+```math
+\delta(u)^2\le\|1-|f|\|_2^2=2(1-\mathbb E|f|)\le 2e/a .
+```
+
+For factors of modulus at most one, the modulus deficit of a product is at most the sum of their deficits pointwise. In particular a product of $`j`$ translated copies of $`u`$ or $`\bar u`$ has norm at least $`1-j\delta(u)`$. Telescoping its displacement also costs at most the sum of the individual errors. This lets us bound the energy and the norm separately.
+
+Apply this to a unit vector in $`T_\theta`$ at level $`k`$, where $`m=k-1`$. Its energy is $`e`$ and the ordinary slope gap is at least $`y=y_m(S)`$ since $`X_m`$ is a quotient of $`Y_m`$. Put $`q=p^{m-1}`$. The determinant-one identity gives $`g(x+q)=gx+q\bmod p^m`$. The quotient of the multipliers is
 
 ```math
 \frac{\theta(a+b(x+q))}{\theta(a+bx)}
 =\theta\!\left(1+\frac{bq}{a+bx}\right)=e_p(2\beta(g)).
 ```
 
-It follows that $`F(x,t)=u(x+q)\overline{u(x)}e_p(-2t)`$ is a unit mean-zero test function on $`Y_m`$. Its energy is at most $`4E_{T_\theta}(u)`$. Indeed the error in the product at $`gx\,,g(x+q)`$ is bounded in norm by the sum of the two errors in $`u(gx)\simeq\theta(a+bx)u(x)`$. Translation by $`q`$ preserves the uniform measure and the extra character cancels the multiplier ratio exactly. Mean zero follows by summing over $`t`$. Therefore
+Hence $`F(x,t)=u(x+q)\overline{u(x)}e_p(-2t)`$ has mean zero on $`Y_m`$ by summation in $`t`$, and $`E(F)\le4e`$. Indeed the two errors in $`u(gx)\simeq\theta(a+bx)u(x)`$ bound the error for the product and the extra character cancels the multiplier quotient. As $`\|F\|_2\ge1-2\sqrt{2e/y}`$ and $`\sqrt y\|F\|_2\le2\sqrt e`$, we obtain
 
 ```math
-h_k(H)\ge\frac{y_{k-1}(S)^2}{4(2+\sqrt2)^2}.
+h_k(H)\ge c_0\, y_{k-1}(S),\qquad
+c_0=\frac{1}{4(1+\sqrt2)^2}.
 ```
 
-Apply the two-level descent to every exact conductor between five and $`n`$. The gaps of $`Y_m`$ are nonincreasing under quotient projection. The remaining conductors occur on $`G_4`$. This proves $`g(G_n,S)\ge\min\{g(G_4,S),c_p y_{n-3}(S)^2\}`$ with $`c_p=1/(4(2+\sqrt2)^2L_p^2)`$.
+Apply Section 1 to each exact conductor from five to $`n`$. The cover gaps are nonincreasing under projection. The other conductors occur on $`G_4`$. It follows that $`g(G_n,S)\ge\min\{g(G_4,S),\,c_0 y_{n-3}(S)/L_p^2\}`$.
 
 ## 4. Removing the cover at the same finite level
 
-Fix $`m\ge2`$ and abbreviate $`a_*=a_m(S)`$. The following estimate converts the cover gap to the ordinary slope gap:
+Fix $`m\ge2`$ and abbreviate $`a_*=a_m(S)`$. For a first-digit character $`\eta`$ use the twisted energy $`E_\eta(f)=\frac16\sum_{s\in S}\|f(sx)-\eta(s)f(x)\|_2^2`$, where the sum runs over the three entries of the triple. Write $`A_1(g)=(a-1)/p\bmod p`$. On $`X_2`$ the coordinate $`x/p`$ changes by $`c/p\bmod p`$. For a nontrivial character along either $`\beta`$ or $`A_1`$ the least twisted energy on $`X_2`$ is at least $`\kappa_p`$. Indeed an additive slope frequency subtracts a multiple of the independent lower-left coordinate, and the three first generator digits span $`V`$.
 
-```math
-y_m(S)\ge b_p a_*^3,\qquad
-b_p=\min\{\kappa_p/36,\ 1/(324(2p-1)^2)\}.
-```
-
-For a character $`\eta`$ through the first digit, let $`E_\eta(f)=\frac16\sum_{s\in S}\|f(sx)-\eta(s)f(x)\|_2^2`$ on a slope space. Here the sum uses the three entries of the triple. Fourier decomposition in the cover coordinate gives $`\eta=e_p(j\beta)`$. At $`j=0`$ the ordinary gap applies off constants. Take $`j\ne0`$ and a minimizing unit vector of energy $`e`$ in its sector.
-
-The nested slope levels give an orthogonal invariant decomposition into $`L^2(X_2)`$ and the new parts $`L^2(X_k)\ominus L^2(X_{k-1})`$, $`3\le k\le m`$. On a new part, translation by $`q=p^{k-1}`$ commutes with the action and has order $`p`$. Its invariant space consists of functions from the preceding level, so a minimizing component can be taken with $`f(x+q)=e_p(\alpha)f(x)`$, $`\alpha\ne0`$. These decompositions also apply with any fixed twist $`\eta`$.
-
-Write $`A_1(g)=(a-1)/p\bmod p`$. On $`X_2`$, the slope coordinate $`x/p`$ changes by $`c/p\bmod p`$. Consequently the twisted energy minimum on $`L^2(X_2)`$ is at least $`\kappa_p`$ for any nontrivial character along $`\beta`$ or along $`A_1`$. Indeed each additive slope frequency subtracts a multiple of the independent lower-left coordinate, and the generator digits span $`V`$.
-
-At a new level $`k\ge3`$ replace $`f`$ by its modulus-one phase $`u`$. On each zero fiber choose phases obeying the same sibling translation rule. The entire fiber consists of zeros in that case, and the rule is consistent around its $`p`$ points. The variance estimate from Section 3, now using the ordinary slope gap at least $`a_*`$, gives $`E_\eta(u)\le9E_\eta(f)/a_*`$.
-
-Take the longer shift $`h=p^{k-2}`$. Determinant one and $`a+bx\equiv1+pA_1(g)\bmod p^2`$ give
+The nested slope spaces decompose into $`L^2(X_2)`$ and the new parts at levels $`3\le k\le m`$. At a new level, translation by $`q=p^{k-1}`$ commutes with the walk, has order $`p`$, and has invariants precisely from the preceding level. Thus a minimizing component may be taken to satisfy $`f(x+q)=e_p(\alpha)f(x)`$ with $`\alpha\ne0`$. Clipping $`f`$ preserves this relation, including at zeros. Let $`h=p^{k-2}`$. The determinant-one difference formula and $`a+bx=1+pA_1(g)\bmod p^2`$ give
 
 ```math
 g(x+h)=gx+h-2A_1(g)q\pmod{p^k}.
 ```
 
-Indeed $`g(x+h)-gx=h/((a+bx)(a+b(x+h)))`$, and $`bh=0\bmod p^2`$. The modulus-one difference $`v(x)=u(x+h)\overline{u(x)}`$ is periodic under $`q`$, so it descends to $`X_{k-1}`$. The formula for the shift gives
+Here $`bh=0\bmod p^2`$. For a unit $`f`$ of twisted energy $`e`$ in this component, let $`u`$ be its clipping and $`v(x)=u(x+h)\overline{u(x)}`$. The sibling relation makes $`v`$ periodic under $`q`$, so it descends to $`X_{k-1}`$. Replacing $`u(gx+h)`$ by $`e_p(2\alpha A_1(g))u(g(x+h))`$ cancels the input character between the two factors. In particular
 
 ```math
-E_\sigma(v)\le4E_\eta(u),\qquad
-\sigma(g)=e_p(2\alpha A_1(g)).
+E_\sigma(v)\le4e,\qquad \|v\|_2\ge1-2\sqrt{2e/a_*},
+\qquad \sigma(g)=e_p(2\alpha A_1(g)).
 ```
 
-To verify the sign, replace $`u(gx+h)`$ by $`e_p(2\alpha A_1(g))u(g(x+h))`$. The two original factors of $`\eta(g)`$ then cancel. The product error is bounded by the sum of the two errors since all phases have modulus one.
-
-Starting with the cover twist, either the minimum is on $`X_2`$ and $`e\ge\kappa_p`$, or this construction gives a unit $`v`$ on a lower level of diagonal-twisted energy at most $`36e/a_*`$. Choose a normalized component of $`v`$ in the same orthogonal decomposition with energy $`e'\le36e/a_*`$. If this component lies in $`L^2(X_2)`$, then $`e'\ge\kappa_p`$. Otherwise let its new level be $`l\ge3`$ and its nonzero sibling frequency be $`\alpha'`$. Its modulus-one phase $`u'`$ satisfies $`E_\sigma(u')\le9e'/a_*`$. Differencing again gives a modulus-one $`v'`$ on $`X_{l-1}`$ with $`E_{\sigma'}(v')\le4E_\sigma(u')`$, where $`\sigma'=e_p(2\alpha' A_1)`$.
-
-Choose $`1\le r\le p-1`$ with $`r\alpha'=\alpha\bmod p`$. Then $`u'\overline{(v')^r}`$ has norm one and mean zero on $`X_l`$. Its sibling frequency is $`\alpha'\ne0`$, since $`v'`$ comes from the preceding level. The two diagonal characters cancel. Telescoping the power of a unit phase and using the triangle inequality for the three displacements gives
+First let the input twist be $`\eta=e_p(jA_1)`$ with $`j\ne0`$. Choose $`1\le t\le p-1`$ so that $`2t\alpha=j\bmod p`$. The function $`w=u\,\overline{v^t}`$ on $`X_k`$ has ordinary mean zero since its sibling character is still $`\alpha`$. Its two twists cancel. The product bounds give $`E_1(w)\le(1+2t)^2e`$ and $`\|w\|_2\ge1-(1+2t)\sqrt{2e/a_*}`$. Using $`\sqrt{a_*}\|w\|_2\le(1+2t)\sqrt e`$ gives $`e\ge a_*/[(1+\sqrt2)^2(2p-1)^2]`$. Together with the $`X_2`$ case, this bounds the energy of every diagonal-twisted vector on every level through $`m`$ below by $`b_0 a_*`$ times its squared norm, with
 
 ```math
-a_*\le E_1\!\left(u'\overline{(v')^r}\right)
-   \le(1+2r)^2 E_\sigma(u')
-   \le324(2p-1)^2 e/a_*^2.
+b_0=\min\{\kappa_p,\ [(1+\sqrt2)^2(2p-1)^2]^{-1}\}.
 ```
 
-This proves the claimed cubic estimate, including both $`X_2`$ cases since $`a_*\le1`$. Together with Section 3 it gives the theorem with $`d_p=c_p b_p^2`$. The upper bound follows because $`X_n`$ is a transitive quotient of $`G_n`$. The finite group $`G_4`$ has finitely many generating markings, so its gap has a positive minimum at fixed $`p`$.
+Next let the input be a nontrivial cover twist $`\eta=e_p(j\beta)`$. In a new component the preceding diagonal-twisted bound gives $`\sqrt{b_0 a_*}\|v\|_2\le2\sqrt e`$. Combining this with the norm bound on $`v`$ gives $`1\le2(\sqrt2+b_0^{-1/2})\sqrt{e/a_*}`$. The base component costs at least $`\kappa_p`$. The trivial cover twist has ordinary mean-zero gap at least $`a_*`$. Fourier decomposition in the cover coordinate now gives
+
+```math
+y_m(S)\ge b_p a_m(S),\qquad
+b_p=\min\{1,\kappa_p,\ [4(\sqrt2+b_0^{-1/2})^2]^{-1}\}.
+```
+
+This proves the displayed finite-level bound with $`d_p=c_0 b_p/L_p^2`$. Since $`X_n`$ is a transitive quotient of $`G_n`$, its gap also gives the upper bound. The finite group $`G_4`$ has a positive minimum gap $`\gamma_p`$ over its finitely many generating triples. For $`2\le n\le4`$ the projection from $`G_4`$ gives the same lower bound $`\gamma_p`$ for the regular gap. Finally $`a_{n-3}\ge\frac12 g(X_n,S)`$ for $`n\ge5`$ by monotonicity and $`g(X_n,S)\le2`$. We therefore obtain, for the same triple at every level,
+
+```math
+\frac{\min(\gamma_p,d_p)}2\,g(X_n,S)
+\ \le\ g(G_n,S)\ \le\ g(X_n,S),\qquad n\ge2 .
+```
 
 ## 5. Passing from individual triples to uniformity
 
@@ -153,7 +155,7 @@ Finally, if every generating triple has a positive regular tower gap, there is a
 
 The reduction applies to arbitrary entries in $`\mathbb Z_p`$ and supplies a criterion for the open spectral-gap problem. The remaining estimate is a positive Poincaré constant on $`p\mathbb Z_p`$ for every dense generating triple. The algebraic-generator theorem supplies such a gap for each fixed algebraic triple. The finite-field uniform expansion theorem concerns a different family of finite groups. [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/592) · [Earlier projective-ball and congruence calculations](https://github.com/1337isnot1337/solved-conjectures/issues/592#issuecomment-7145635539) · [Salehi Golsefidy, Theorem 2](https://arxiv.org/abs/1602.00403) · [Becker and Breuillard, Theorem 1.1](https://arxiv.org/html/2608.00755v1)
 
-The accompanying exact-arithmetic check tests the trace-pairing planes, the phase identities, and the regular-sector character identity at finite levels. Run it with `python3 research/padic-sl2-uniform-gap/check_transfer.py`. The all-level argument is the written proof above. [Verification script](check_transfer.py)
+The accompanying exact-arithmetic check tests the trace-pairing planes, the phase identities and the regular-sector character identity at finite levels. It also checks the clipped products on 480 moves at powers of three using integer amplitudes with a common denominator and cubic roots of unity, including vectors with zeros. Run it with `python3 -B research/padic-sl2-uniform-gap/check_transfer.py`. [Verification script](check_transfer.py)
 
 On the resulting projective ball, two bounded words in any generating triple give an exact formula for their primitive Fourier overlaps at every level and every nonzero power of the second word. A sequence of new unit vectors with vanishing energy must distribute its cycle Fourier mass over at least square-root scale. [Fourier formula, proof and scope](CYCLIC-FOURIER.md)
 
