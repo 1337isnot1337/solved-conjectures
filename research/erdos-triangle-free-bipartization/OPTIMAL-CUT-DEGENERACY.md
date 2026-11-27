@@ -37,4 +37,12 @@ Choose L so large that K²/(8L)<m∫h². The original cut's positive quadratic i
 
 The argument also shows why first-order stationarity alone is insufficient: a unique optimum would have the constant internal degree profile, but small competing cuts around low-margin vertices can in principle offset the second-order increase. Here their required near-tie mass is quantified qualitatively.
 
+## In fact each side must contain a thick near-tie set
+
+The same conclusion holds when the measure in the limsup is restricted to either side. For example, suppose the small-margin set on the positive side alone has measure o(z). Reweight with the same h=f−∫f, using t>0, so that the constant weight multipliers satisfy r_+>r_− and both tend to one. For a flip S, write S_+,S_− for its intersection with the two sides and C_+, C_− for the respective *internal* boundary masses w_M(S_±,side_±\S_±). If D_0 and D_t are the original and reweighted **ordered** cost increases of the flip, then
+
+    D_t = r_+r_− D_0 + 2(r_+−r_−)(r_− C_−−r_+ C_+).
+
+This follows by grouping crossing edges (all get multiplier r_+r_−) and internal edges (multiplier r_+² or r_−²). For small flips, m s_±−s_±²≤C_±≤m s_±. Thus if s_−≥3s_+, the correction term is nonnegative for small enough s,t. Otherwise s<4s_+. The o(z) hypothesis on the positive side alone gives ∫_(S_+)Δ≥(16+L)s_+² for arbitrarily large fixed L and all sufficiently small s_+, so D_0≥2Ls_+². The negative part of the correction term is only O(t s_+). Optimizing in s_+ makes the possible loss o(t²), by choosing L arbitrarily large, so it again cannot offset the positive quadratic cost increase. The large-flip argument is identical. Interchanging sides proves the other case.
+
 [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
