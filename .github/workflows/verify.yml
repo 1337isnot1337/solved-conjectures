@@ -16,6 +16,7 @@ jobs:
           python-version: '3.12'
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
+          python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_marked_quartic.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_quartic_rows.py
@@ -58,6 +59,7 @@ jobs:
         run: |
           python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py
           python3 results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py
+          python3 results/erdos-galvin-hajnal-link-path-partition/density/verify_density.py
 
       - name: Check repeated-pair and Pasch amalgamation configurations
         run: python3 results/erdos-galvin-hajnal-repeated-pair-partition/verify_amalgamation.py

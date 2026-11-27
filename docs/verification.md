@@ -19,7 +19,7 @@ Run `python3 results/erdos-galvin-hajnal-repeated-pair-partition/verify_amalgama
 
 ## Erdős–Galvin–Hajnal’s link-path partition problem
 
-Read the [proof](../results/erdos-galvin-hajnal-link-path-partition/PROOF.md) and [review of the two consistency directions](../results/erdos-galvin-hajnal-link-path-partition/REVIEW.md). Run `python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py` to check the bounded encoding on every path-free labeled triple system of orders one through six. The [shadow transfer](../results/erdos-galvin-hajnal-link-path-partition/SHADOW-TRANSFER.md) has a [separate load and sharpness checker](../results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py).
+Read the [proof](../results/erdos-galvin-hajnal-link-path-partition/PROOF.md) and [review of the two consistency directions](../results/erdos-galvin-hajnal-link-path-partition/REVIEW.md). Run `python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py` to check the bounded encoding on every path-free labeled triple system of orders one through six. The [shadow transfer](../results/erdos-galvin-hajnal-link-path-partition/SHADOW-TRANSFER.md) has a [separate load and sharpness checker](../results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py). Run `python3 results/erdos-galvin-hajnal-link-path-partition/density/verify_density.py` for the six-point matching and top-pair constructions in the [density review](../results/erdos-galvin-hajnal-link-path-partition/density/DENSITY-REVIEW.md).
 
 ## Erdős–Galvin–Hajnal’s half-overlap hypergraph problem
 
@@ -124,6 +124,8 @@ The new step is a written graph transfer, not a numerical test. Check the cofina
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py` to check recovery of the full labeled core and its internal lengths from oriented cut sizes across 267 reduced trees. Two controls exercise cuts into equal halves. [Verifier](research-results/stanley-tree-subdivisions/verify_core_splits.py) · [Mathematical review](research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
+
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py` to replay 1,086,975 admissible degree-profile comparisons and truncated negative weights and pendant-coordinate ranks on 264 actual tree histograms. The [proof](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) establishes the finite comparison principle and one-high-hub bounds. [Independent review](research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_marked_visibility.py` to check signed path weights and indecomposable edge lengths on all 66 reduced topologies through order twelve, 320 rational quotient tests and 18 cases attaining the four-label support bound. The [proof](research-results/stanley-tree-subdivisions/ROBUST-HUB-DISTANCES.md) gives the arbitrary-degree theorem. [Review and independent replay](research-results/stanley-tree-subdivisions/ROBUST-HUB-REVIEW.md)
 

@@ -1,0 +1,7 @@
+# Local triple density and pair-rainbow sets
+
+Cinna Davis determines the sharp finite density problem on the first uncountable ordinal. A triple system with no uncountable independent set attains the 1975 lower profile at all finite orders exactly when some two-bounded pair coloring has no uncountable rainbow set. Six vertices suffice to distinguish the alternatives. The pointwise minimum density divided by the square of the order tends to one quarter in one case and one half in the other. Both occur relative to the consistency of ZFC. [Rainbow equivalence](RAINBOW-EQUIVALENCE.md) · [Asymptotic dichotomy](ASYMPTOTIC-DICHOTOMY.md)
+
+Erdős, Galvin and Hajnal gave the lower bound and its simultaneous attainment under cardinal arithmetic. The new results at this host answer an unnumbered refinement. The criterion also reaches their explicitly mentioned higher parameter, with the two limits there conditional on the corresponding rainbow relation. [Independence proof](INDEPENDENCE.md) · [Canonical witnesses after one Cohen real and under stick](COHEN-AND-STICK.md) · [Higher-host proof](REGULAR-HOSTS.md)
+
+The finite common-neighborhood argument also detects the link path in the positive model. The [original Problem 8/E proof](../PROOF.md) establishes the stronger countable-colorability conclusion in the countable-partition model. The density work shares that catalogue entry. All proofs have written internal review. [Priority screen](PRIOR-ART.md) · [Independent mathematical review and finite checks](DENSITY-REVIEW.md)
