@@ -23,3 +23,7 @@ c++ -std=c++17 -O2 -Wall -Wextra check_independent.cpp -o /tmp/check-03102
 ```
 
 The independent implementation uses labeled positions and a bottom-up total-counter order, with no sorted lookup or periodic folding. It computes 390,963 positions, checks 121,801 bulk outcomes against the explicit formula, checks 351 horizontal translations, and sees 342 violations of period five at gap two (including both label orders). This is a second implementation check of the formulas, not the reason the witness extends indefinitely. No Lean or external peer review is claimed.
+
+## All three-heap slices
+
+The [supplement](THREE-HEAPS.md) gives outcome normal forms for every three-heap position in all four games. Run `python3 all_three.py` to check the 45,070 normalized recurrence representatives and the entire least-period classification. A second labeled evaluator, `c++ -O2 -std=c++17 check_all_three.cpp -o /tmp/check-all-three && /tmp/check-all-three`, evaluates 13,771,804 labeled states total and makes 2,341,104 direct comparisons with the normalized predictions. The same proof covers all fixed heaps even when their sizes are unbounded; it is not a numerical extension of the test range. The 0.3312 row is credited to the prior result in this repository.

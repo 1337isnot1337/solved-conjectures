@@ -36,6 +36,9 @@ jobs:
           python3 results/liang-slice-period/check.py
           c++ -O2 -std=c++17 results/liang-slice-period/check_independent.cpp -o /tmp/check-03102
           /tmp/check-03102
+          python3 results/liang-slice-period/all_three.py
+          c++ -O2 -std=c++17 results/liang-slice-period/check_all_three.cpp -o /tmp/check-all-three
+          /tmp/check-all-three
       - name: Check the 0.3123 slice transfer certificate
         run: |
           python3 results/liang-03123-slice/verify.py

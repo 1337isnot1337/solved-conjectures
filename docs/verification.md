@@ -22,7 +22,7 @@ Run `python3 results/mobile-general-position-complexity/verify.py` to compare so
 
 ## Liang’s slice-period conjecture
 
-Run `python3 results/liang-slice-period/check.py` for the exact recurrence on 684 transfer representatives. The [audit](../results/liang-slice-period/AUDIT.md) gives instructions for the independent labeled C++ evaluator.
+Run `python3 results/liang-slice-period/check.py` for the exact recurrence on 684 transfer representatives. The [audit](../results/liang-slice-period/AUDIT.md) gives instructions for the independent labeled C++ evaluator. The [all-three-heap supplement](../results/liang-slice-period/THREE-HEAPS.md) has its own [exact checker](../results/liang-slice-period/all_three.py).
 
 ## Liang’s 0.3123 slice problem
 
