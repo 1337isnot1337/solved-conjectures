@@ -3,8 +3,8 @@
 The [all-orders missing-leaf theorem](MISSING-LEAF.md) covers every
 pair with a leaf on both sides, and the [interval theorem](INTERVAL-LEAF-THRESHOLD.md)
 covers all orders at least 65. Here the finite remainder is additionally
-closed at orders 4 through 10. Thus the only missing orders are now
-11 through 64, with at least one side having no leaf.
+closed at orders 4 through 10. The [finite interval certificate](FINITE-INTERVAL.md) covers 21 through 64.
+Only orders 11 through 20 with at least one side having no leaf remain.
 
 The check below is exact for the larger family of pairs of connected
 graphs, irrespective of diameter. It is the lower endpoint of the
@@ -22,12 +22,12 @@ with exact outward-rounded **integer** Schur elimination; the
 ordinary floating bisection only proposes candidates and cannot
 accept one.
 
-To check a bound \(t/256\), represent a vector by its first \(n-1\)
+To check a bound $`t/256`$, represent a vector by its first $`n-1`$
 entries with final entry zero, then subtract its average. The
 Laplacian energy is unchanged, while its squared norm has matrix
-\(I-J/n\) in the first \(n-1\) coordinates. Positive definiteness
+$`I-J/n`$ in the first $`n-1`$ coordinates. Positive definiteness
 of the difference of these quadratic forms gives a strict lower
-bound. The program multiplies the form by \(256n\) and keeps integer
+bound. The program multiplies the form by $`256n`$ and keeps integer
 intervals with scale 8192. Each division uses the appropriate
 floor and ceiling; every accepted lower Schur pivot is positive.
 It aborts a candidate comparison when its intermediate interval is
@@ -35,13 +35,13 @@ too large, so the tested integers cannot overflow.
 
 For the upper target use the cubic in [Lemma 4.2 of the original
 paper](https://arxiv.org/pdf/2201.04225#page=15). Its three real
-roots include one in \((0,1)\) and one in \((n-1,n)\) by the cubic's
+roots include one in $`(0,1)`$ and one in $`(n-1,n)`$ by the cubic's
 signs at the endpoints (the third lies between); these are the
 extremal nonzero dandelion eigenvalues. Bisection on the
-\(1/65536\) grid gives an upper bound on the small root and a
+$`1/65536`$ grid gives an upper bound on the small root and a
 lower bound on the large root. The sum with the complementary
 connectivity is bounded above by the difference of those endpoints
-plus \(n\); the program rounds the target further upward.
+plus $`n`$; the program rounds the target further upward.
 
 ```sh
 g++ -O3 -std=c++17 check_small_dandelion.cpp -o check_small_dandelion

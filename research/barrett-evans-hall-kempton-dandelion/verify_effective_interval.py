@@ -74,13 +74,19 @@ def branch(n, D, xl, xu, cut, high_h, p):
         if not h:
             return None
         e = degree_bound(h, yu)
+    return close_branch(n, D, xl, xu, yu, m, h, e, d, p)
+
+
+def close_branch(n, D, xl, xu, yu, m, h, e, d, p,
+                 own_degree=degree_bound, opposite_bound=opposite):
+    """Close the localized leaf branch with certified own- and opposite-row bounds."""
     if not e or (e == 1 and p == 1):
         return "second degree"
-    aa = opposite(n,e,xu)
-    bl = opposite(n,d,yu)
-    t = degree_bound((1-xu)*m,xu)
+    aa = opposite_bound(n,e,xu)
+    bl = opposite_bound(n,d,yu)
+    t = own_degree((1-xu)*m,xu)
     if n-t-yu > 0:
-        bl = min(bl,d*opposite(n,t,yu)/(n-d-yu))
+        bl = min(bl,d*opposite_bound(n,t,yu)/(n-d-yu))
     if aa >= (1-xu)*m:
         return None
     xu = min(xu,D-1+bl/h)
@@ -93,13 +99,13 @@ def branch(n, D, xl, xu, cut, high_h, p):
     else:
         v0 = (2-yu)*h-bl
         if v0 > 0:
-            t = degree_bound(v0,yu)
+            t = own_degree(v0,yu)
             if n-t-xu > 0:
-                av0 = opposite(n,t,xu)
+                av0 = opposite_bound(n,t,xu)
                 aa = min(aa,max(0,(e-1)*av0-m)/(n-e-xu))
     z = (1-xu/p)*m
-    j = degree_bound(z,xu)
-    bw = opposite(n,j,yu)
+    j = own_degree(z,xu)
+    bw = opposite_bound(n,j,yu)
     if 2-(bl+bw)/h <= yu:
         return None
     if p == 2:
@@ -113,8 +119,8 @@ def branch(n, D, xl, xu, cut, high_h, p):
     v = (2-yu)*h-bl
     if v <= max(bl,bw):
         return None
-    ev = degree_bound(v,yu)
-    av = opposite(n,ev,xu)
+    ev = own_degree(v,yu)
+    av = opposite_bound(n,ev,xu)
     if (3-xu)*(1-xu) <= 1+(aa+av)/m:
         return None
     coeff = (3-yu)*(2-yu)-1
