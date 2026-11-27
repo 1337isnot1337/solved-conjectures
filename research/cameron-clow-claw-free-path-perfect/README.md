@@ -17,3 +17,5 @@ edge-critical building blocks.
 - [Tracking issue #1005](https://github.com/1337isnot1337/solved-conjectures/issues/1005)
 
 No Lean verification was performed.
+
+[Independent mathematical review](REVIEW.md)
