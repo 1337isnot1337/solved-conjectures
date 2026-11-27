@@ -17,7 +17,7 @@ when they meet in exactly \(m\) points. If
  r<5t+1+\left\lfloor(t-1)/3\right\rfloor,
 \]
 then every adjacent pair in this graph is at distance
-at most \(2t+1\) from a heavy edge, measured from the
+at most six from a heavy edge, measured from the
 nearer endpoint. If \(s\ge2\), distance one suffices
 and that assertion does not need the strict inequality
 on \(r\).
@@ -46,7 +46,7 @@ It remains to take \(s=1\), \(r=5t+1\). Every edge has
 at least \(2t+1\) shared vertices, by the rank lower
 bound for 3-wise intersecting families after deleting
 private vertices. Suppose all edges at distance at
-most \(2t+1\) from the starting pair are light. Both
+most six from the starting pair are light. Both
 starting edges have projections to the shared vertices
 of size exactly \(2t+1\). Their projections together
 cover a set \(M\) of size \(3t+1\). Their two complements
@@ -68,25 +68,31 @@ single spare point. In any such state of three disjoint
 \(t\)-blocks, hold two fixed and use the rule to swap
 any element of the third with the spare. This takes
 one new edge adjacent to two of the current edges.
-To place any desired \(t\)-set into one designated
-block, use at most two swaps per desired element:
-if the element is not spare, first swap it out of
-its current block; then swap it in for a wrong
-element of the designated block. All newly used
-edges are at distance at most \(1+2t\) from the original
-pair, so they are light by the supposition. We can
-restart this argument for each desired omission.
+Write the three original blocks as \(P,Q,R\) and the
+spare as \(x\). Choose \(p\in P,q\in Q,u\in R\).
+Starting each time from the same state, one swap gives
+each of \(P-p+x,\ Q-q+x,\ R-u+x\). Their union covers
+everything except \(p,q,u\). The strict threshold
+assumption at \(r=5t+1\) implies \(t\ge4\). For the
+fourth block, take \(x,p,q,u\) and any \(t-4\) other
+points of \(P\). Starting again from the original state,
+put \(x\) in the designated block \(P\) in one swap.
+Putting \(q\) and \(u\) there each takes at most two
+more swaps: first move the desired point to the spare
+position, then swap it in for a point outside the
+target. Keep every already-correct point in \(P\).
+The first auxiliary block \(R\) takes one step from
+the starting pair, and the longest subsequent sequence
+takes five swaps. Thus the maximum distance is six,
+and all the used edges would be light.
 
-In particular, generate the four distinct omissions
-in the [minimum-rank span witness](MINIMUM-RANK-RIGIDITY.md)
-whose union is \(M\) and whose common intersection has
-size \(\lfloor(t-1)/3\rfloor\). Their representative
-original edges have no common vertex: outside \(M\)
-they are private because the generated projections
-include all of their shared vertices. These four edges
-have union at most \(3r-3\) by the strict inequality on
-\(r\), a contradiction. A heavy edge must therefore be
-within the claimed distance.
+The four omissions are distinct, cover \(M\), and
+their common intersection is exactly \(\{x\}\).
+The corresponding original edges have outside-\(M\)
+parts of size \(3t\), disjoint because they are private.
+Their intersection is empty and their union has size
+\(3t+4(3t)=15t=3r-3\), a contradiction. A heavy edge
+must therefore be within the claimed distance.
 
 This supplies a restriction on the placement of
 higher-rank edges in the extremal structure. It does
