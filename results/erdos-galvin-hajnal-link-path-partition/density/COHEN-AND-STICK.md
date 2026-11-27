@@ -19,11 +19,11 @@ The [six-point criterion](RAINBOW-EQUIVALENCE.md) proves that other models of ZF
 
 For each $`\beta<\omega_1`$, let $`M_\beta`$ be a matching
 of pairs below $`\beta`$. Include triples $`a\cup\{\beta\}`$
-for any chosen $`a\in M_\beta`$. If $`v_0<\cdots<v_{n-1}`$
+for any chosen $`a\in M_\beta`$. If $`v_0<\cdots\lt v_{n-1}`$
 are chosen vertices, at most $`\lfloor j/2\rfloor`$ triples
 can have maximum $`v_j`$. Hence their number is at most
 ```math
- \sum_{j<n}\lfloor j/2\rfloor=\lfloor(n-1)^2/4\rfloor.
+ \sum_{j\lt n}\lfloor j/2\rfloor=\lfloor(n-1)^2/4\rfloor.
 ```
 The remaining task is to make an edge appear in each
 uncountable set. We do this even for every layer of a

@@ -14,7 +14,7 @@ Thus the independence proof identifies the exact combinatorial principle, not ju
 
 Suppose $`c`$ is two-bounded and has no uncountable rainbow set. Map each pair to the union of the pairs of its own color; the output is a finite vertex set. Take a continuous cofinal sequence of countable ordinals closed under this map, and choose one point in each successive block, giving an uncountable $`S`$. If two distinct pairs in $`[S]^2`$ have equal color, they share their maximum: if one had smaller maximum, its two points would lie below the left endpoint of the block of the larger maximum, and closure would also put the larger maximum below that endpoint.
 
-On $`S`$ let $`xyz`$, $`x<y<z`$, be a triple exactly when $`c(xz)=c(yz)`$. A subset is independent precisely when it is rainbow, by the normalization step. Every lower link is a matching by two-boundedness, so $`e_H(n)\le\sum_{j=0}^{n-1}\lfloor j/2\rfloor=\lfloor(n-1)^2/4\rfloor`$. Transport the system to $`\omega_1`$. This proves (1)$`\Rightarrow`$(2). The implication (2)$`\Rightarrow`$(3) is immediate. The closure and rainbow argument in [the proof](INDEPENDENCE.md) proves (3)$`\Rightarrow`$(1).
+On $`S`$ let $`xyz`$, $`x\lt y\lt z`$, be a triple exactly when $`c(xz)=c(yz)`$. A subset is independent precisely when it is rainbow, by the normalization step. Every lower link is a matching by two-boundedness, so $`e_H(n)\le\sum_{j=0}^{n-1}\lfloor j/2\rfloor=\lfloor(n-1)^2/4\rfloor`$. Transport the system to $`\omega_1`$. This proves (1)$`\Rightarrow`$(2). The implication (2)$`\Rightarrow`$(3) is immediate. The closure and rainbow argument in [the proof](INDEPENDENCE.md) proves (3)$`\Rightarrow`$(1).
 
 ## Under the positive rainbow relation every such system is much denser
 
