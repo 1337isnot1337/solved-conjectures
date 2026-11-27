@@ -2,7 +2,7 @@
 
 ## 2026-11-27 UTC — Finite distance-histogram comparisons with bounded extra leaves
 
-A new uniform reduction controls generic histogram reconstruction with bounded maximum source degree and a bounded extra-leaf allowance, independent of the number of high-degree vertices. For one high hub of arbitrary degree, a rival cannot have exactly one extra leaf and must have a surplus growing with that degree. The proof and exact profile checks supplement the unranked Stanley research entry. [Theorem and quantitative bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
+A new uniform reduction controls generic histogram reconstruction with a fixed extra-leaf allowance alone. Any failure occurs on a tree with quadratically many leaves in the allowance, irrespective of the maximum degree or number of high-degree vertices. For one high hub of arbitrary degree, a rival cannot have exactly one extra leaf and must have a surplus growing with that degree. The proof and exact profile checks supplement the unranked Stanley research entry. [Theorem and quantitative bounds](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-KERNEL.md) · [Sources and independent review](docs/research-results/stanley-tree-subdivisions/LEAF-SURPLUS-REVIEW.md)
 
 ## 2026-11-27 — Six-point triple density and the two asymptotic constants
 

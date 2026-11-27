@@ -2,7 +2,7 @@
 from collections import Counter, defaultdict
 from itertools import combinations
 from math import comb
-from verify_marked_visibility import small_trees
+from verify_marked_visibility import normal_forms, small_trees
 
 
 def parts(total, ceiling):
@@ -53,6 +53,32 @@ def check_signatures():
     return comparisons, single
 
 
+def check_negative_classes(classes, edges, w):
+    leaves = [u for u, weight in enumerate(w) if weight == -1]
+    hubs = [u for u, weight in enumerate(w) if weight > 0]
+    if not hubs:
+        return
+    rows = []
+    group = {u: u for u in leaves}
+    seen = defaultdict(set)
+    for distance, paths in classes.items():
+        leaf0, ref = paths[0]
+        for leaf, mask in paths:
+            old = group[leaf]
+            new = group[leaf0]
+            group = {u: new if tag == old else tag for u, tag in group.items()}
+            seen[leaf].add(distance)
+            if mask != ref:
+                rows.append([((mask >> k) & 1)-((ref >> k) & 1) for k in range(len(edges))])
+    pendant = [i for i, (u,v) in enumerate(edges) if min(w[u],w[v]) == -1]
+    _, full_rank = normal_forms(rows, len(edges))
+    _, pendant_rank = normal_forms([[row[k] for k in pendant] for row in rows], len(pendant))
+    internal_rank = full_rank - pendant_rank
+    assert len(set(group.values())) == len(leaves) - pendant_rank
+    assert all(len(seen[u]) >= len(hubs) - internal_rank for u in leaves)
+    assert len(classes) >= (len(leaves)-pendant_rank) * (len(hubs)-internal_rank)
+
+
 def check_real_trees():
     cases = 0
     for tree in small_trees(12):
@@ -60,23 +86,29 @@ def check_real_trees():
             continue
         w = [len(adj)-2 for adj in tree]
         leaves = w.count(-1)
+        edges = [(u,v) for u in range(len(tree)) for v in tree[u] if u < v]
+        bits = {e: 1 << i for i, e in enumerate(edges)}
         for period in range(1, 5):
             mass = Counter()
+            negative = defaultdict(list)
             for a in range(len(tree)):
-                stack = [(a, -1, 0)]
+                stack = [(a, -1, 0, 0)]
                 while stack:
-                    u, parent, distance = stack.pop()
+                    u, parent, distance, mask = stack.pop()
                     if u > a:
                         mass[distance] += w[u]*w[a]
+                        if w[u]*w[a] < 0:
+                            negative[distance].append((a if w[a] < 0 else u, mask))
                     for v in tree[u]:
                         if v != parent:
                             edge = tuple(sorted((u, v)))
-                            stack.append((v, u, distance + 1+(3*edge[0]+5*edge[1])%period))
+                            stack.append((v, u, distance + 1+(3*edge[0]+5*edge[1])%period, mask | bits[edge]))
             loss = leaves*(leaves-2) - sum(max(-x, 0) for x in mass.values())
             for j in range(1, max(w)+1):
                 truncated = sum(max(-x-j, 0) for x in mass.values())
                 required = leaves * sum(max(z-j, 0) for z in w)
                 assert required <= truncated + loss
+            check_negative_classes(negative, edges, w)
             cases += 1
     return cases
 
@@ -84,4 +116,4 @@ def check_real_trees():
 if __name__ == '__main__':
     a, b = check_signatures()
     print(f'{a} possible degree-signature comparisons through 31 leaves, including {b} single-hub comparisons')
-    print(f'{check_real_trees()} actual weighted-tree histograms checked at every positive defect threshold')
+    print(f'{check_real_trees()} actual weighted-tree histograms checked for defect tails and negative-path row ranks')
