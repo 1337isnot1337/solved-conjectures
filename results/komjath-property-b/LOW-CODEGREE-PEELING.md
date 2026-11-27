@@ -44,7 +44,7 @@ The condition is sufficient, not necessary. Start with one infinite set $`B`$, a
 
 First strengthen the disjointification conclusion used above. Whenever the certificate argument applies, it yields a well-order $`\prec`$ of the family such that
 ```math
-A\cap\bigcup_{B\prec A}B\quad\hbox{is finite for every }A.
+A\cap\bigcup_{B\prec A}B\quad\text{is finite for every }A.
 ```
 This follows by concatenating the orders from the inductive residual blocks. The intersection of $`A`$ with all earlier ground-set layers is finite by the model argument. In its own layer the inductive order has finite earlier overlap; the dropped portions of the earlier sets in that layer are all in earlier ground-set layers and cannot add any other points. The countable-family base has the same property. Moreover any essentially disjoint family meets the assigned certificate hypothesis: choose disjoint cofinite tails, and let $`D(\{x\})`$ be the singleton family consisting of the unique edge whose tail contains $`x`$, or empty if none. Every infinite subset of an edge meets its tail. Thus the well-order exists for all essentially disjoint families here.
 
