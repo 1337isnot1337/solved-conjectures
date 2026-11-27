@@ -4,6 +4,10 @@
 
 Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of Cioba–Savvas (2015). Lean proves for arbitrary finite simple graphs that Breaker prevents an immediate $s$-shutout whenever $s \ge 2$, $D = \Delta(G) \ge 1$, and $2^{1-s} \le D^D / (D+1)^{D+1}$, and via Bernoulli's inequality deduces $\sigma(s) \ge \tau(s) > 2^{s-3}$ for every $s \ge 3$ and $\sigma(s) \ge 2^s / 8$ for every $s \ge 1$. The four-module closure passed strict compilation, the complete 288-declaration all-owned axiom audit (241 theorems, 54 private declarations), and stock-kernel replay. [Lean scope and receipt](../results/cioba-savvas-shutout-number/FORMALIZATION.md).
 
+## Universal Gaussian cold spots of dual type A
+
+The all-rank theorem, its equality cases and its positive Hessian have a reviewed written proof. No Lean formalization is registered. [Statement and verification scope](research-results/dual-a-universal-cold-spots/README.md)
+
 ## Leech lattice cold-spot limit
 
 **Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)

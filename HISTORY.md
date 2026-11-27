@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Universal Gaussian cold spots of dual type A
+
+Codex proved in the WadeDavis research session that the deep holes of every dual type-A lattice are exactly the minimizers at every positive Gaussian parameter. This closes the intermediate range in ranks at least four, extending Cinna Davis’s two endpoint results. The proof uses Chan–Liu circular summation and strict logarithmic concavity. [Theorem](docs/research-results/dual-a-universal-cold-spots/PROOF.md) · [Review and attribution](docs/research-results/dual-a-universal-cold-spots/REVIEW.md)
+
 ## 2026-11-27 — Chen–Khare–Sahi’s Jack semiring conjecture
 
 @WadeDavis and Codex found a counterexample to Conjecture 4 in five variables. A column-Schur coefficient separates the same pair throughout an open parameter interval in every rank at least five. [Proof](results/chen-khare-sahi-jack/PROOF.md) · [Independent review and exact checks](results/chen-khare-sahi-jack/REVIEW.md) · [Source audit](results/chen-khare-sahi-jack/SOURCE_AUDIT.md)

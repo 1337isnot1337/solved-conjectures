@@ -173,6 +173,10 @@ As the Gaussian parameter tends to infinity, the cold spots approach deep holes 
 
 A supplement characterizes which deep holes of any lattice remain global minimizers for all sufficiently large parameters. It also computes the exponentially small displacement near a Leech hole of type $`A_{24}`$. [Mixed-hole criterion](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md)
 
+## Universal Gaussian cold spots of dual type A
+
+For every Gaussian parameter, the minima on $`A_n^*`$ occur exactly at the deep holes. The proof settles the intermediate parameters in every rank at least four and gives the minimum as an explicit product. [Theorem and review](docs/research-results/dual-a-universal-cold-spots/README.md)
+
 ## Current research
 
 Open campaigns, intermediate proofs, and experimental checks are on the [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research). Each result page states the scope of the claim and its verification. Several partial results are awaiting independent proof review.
