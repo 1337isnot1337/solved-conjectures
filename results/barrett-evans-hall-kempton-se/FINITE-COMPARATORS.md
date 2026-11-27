@@ -22,13 +22,7 @@ The one remaining comparator at $`n=11`$ has $`(s,a,b,c,\ell)=(1,7,0,0,7)`$. Let
 
 ## Exact certificate
 
-For either coordinate the function $`L(x,y)=x+y-2\max(x,y)/n`$ is strictly increasing. Put $`d=1-2/n`$. If $`X\ge1`$ it contradicts the branch hypothesis. If $`X^2\ge1/(6d)`$ and $`dX+1/(6X)>1`$, then on $`x\ge X`$ the derivative of $`dx+1/(6x)`$ is nonnegative and $`x\ge1/(6x)`$, so the product bound settles it. Otherwise let
-```math
-q=\begin{cases}
-(1-X)/d,&(1+d)X\le1,\\
-1-dX,&(1+d)X>1 .
-\end{cases}
-```
+For either coordinate the function $`L(x,y)=x+y-2\max(x,y)/n`$ is strictly increasing. Put $`d=1-2/n`$. If $`X\ge1`$ it contradicts the branch hypothesis. If $`X^2\ge1/(6d)`$ and $`dX+1/(6X)>1`$, then on $`x\ge X`$ the derivative of $`dx+1/(6x)`$ is nonnegative and $`x\ge1/(6x)`$, so the product bound settles it. Otherwise let $`q=(1-X)/d`$ when $`(1+d)X\le1`$, or $`q=1-dX`$ when $`(1+d)X>1`$.
 This is the unique $`q`$ with $`L(X,q)=1`$. Certify $`y>q`$ with the published lower bound or by a comparator.
 
 Each comparator is a blowup of a graph on cells, with no edges inside a cell. If the nonempty cell sizes are $`m_i`$, the block-constant energy has matrix $`B=\sum_{ij\text{ an edge}}m_im_j(e_i-e_j)(e_i-e_j)^{\mathsf T}`$. The squared norm after subtracting the mean has matrix $`N=\mathop{\mathrm{diag}}(m)-mm^{\mathsf T}/n`$. Since both forms kill the constant vector, ground the last coordinate at zero. Exact integer Bareiss elimination checks positive definiteness of $`B-qN`$ after a positive scaling, using positivity of every leading principal minor. For each cell of size more than one, separately check that its within-cell zero-sum eigenvalue (its common degree) is greater than $`q`$. Together these are a certificate of $`\lambda_2>q`$, so Laplacian monotonicity proves the same inequality in the actual graph.
