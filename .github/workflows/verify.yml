@@ -54,7 +54,9 @@ jobs:
         run: python3 results/erdos-galvin-hajnal-shelah-graph-avoidance/verify_slots.py
 
       - name: Check the bounded pair encoding for path-free triple systems
-        run: python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py
+        run: |
+          python3 results/erdos-galvin-hajnal-link-path-partition/verify_encoding.py
+          python3 results/erdos-galvin-hajnal-link-path-partition/verify_shadow.py
 
       - name: Check half-overlap hypergraph rectangles and monochromatic witnesses
         run: python3 results/erdos-galvin-hajnal-half-overlap-hypergraphs/verify_rectangles.py

@@ -9,4 +9,5 @@ The written proof passed an independent mathematical review within the repositor
 - [Proof of both consistency directions](PROOF.md)
 - [Primary statements and priority audit](PRIOR-ART.md)
 - [Independent review](REVIEW.md)
+- [Finite-shadow transfer and its sharp load estimate](SHADOW-TRANSFER.md)
 - [Finite encoding checks](verify_encoding.py)
