@@ -1,0 +1,11 @@
+# A limitation for the Cohen-real chromatic-growth argument
+
+Question 6.2 in [Lambie-Hanson–Uhrik (2024)](https://doi.org/10.1112/mtk.12261) asks whether one Cohen real always gives Hajnal–Máté graphs whose finite chromatic growth is arbitrarily slow, without assuming disjoint-type guessing in the ground model. Theorem 4.1 uses types of increasing odd girth to certify the finite-subgraph bounds. The two bounded parameters from [the answer to Question 6.1](PROOF.md) cannot supply such types simply by changing their long tails.
+
+**Lemma.** For any fixed bounds on $d(t)$ and $r(t)$, the odd girths of all the type graphs $G(t)$ with those bounds are bounded by one finite number, regardless of the widths of the types.
+
+To see this, normalize $t$ and write it as $\sigma0^{n-r}1^{n-d}$. Set $N=\max(r,d)+1$. Define the shortened type $t_0=\sigma0^{N-r}1^{N-d}$. Embed each order coordinate $x<\omega_1$ as $\omega x$. To each $N$-point set $A$, first apply this coordinate embedding, then append the $n-N$ points $\omega\max(A)+1,\dots,\omega\max(A)+(n-N)$. The result is a set of size $n$.
+
+If two original sets realize $t_0$ or its opposite, their respective appended points lie directly after their own maxima with no points of the other set between. Appending points after the lower set's maximum extends only the final lower-side run; appending after the upper maximum extends only the final upper-side run. Thus the map takes edges of $G(t_0)$ to edges of $G(t)$ and is injective. (The bounds on $r,d$ give $N\le n$.) The bounded-width guessing theorem, applied to the constant sequence $t_0$, implies $G(t_0)$ has uncountable chromatic number, so it has an odd cycle of finite length. With the bounds fixed, there are only finitely many possible shortened words $t_0$; the maximum of their shortest odd-cycle lengths gives the desired uniform bound.
+
+This does not disprove Question 6.2. It only rules out replacing the high-odd-girth type graphs of their proof by type graphs that fall uniformly within the new ZFC positive classification. A different way to certify the local chromatic growth, or a guessing construction for the actual collection of edge certificates rather than one collection of preselected types, is still possible.
