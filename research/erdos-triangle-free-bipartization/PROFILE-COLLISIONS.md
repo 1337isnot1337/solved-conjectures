@@ -4,7 +4,7 @@ For a graphon W with t(K_r,W)=0, r≥3, consider the adjacency bits of two verti
 
     ∫∫ W(x,y) 1[Δ(x,y)≤u] dxdy ≤ (3r−4)u.
 
-In particular the edge mass of pairs with the same profile to a independently sampled roots, averaged over those roots and the profile bits, is at most (3r−4)/a. This extends the decisive rounding step of [the polynomial rooted maximum-cut bound](POLYNOMIAL-ROOT-RATE.md) beyond triangle-free graphons.
+In particular the edge mass of pairs with the same profile to a roots drawn independently, averaged over those roots and the profile bits, is at most (3r−4)/a. This extends the decisive rounding step of [the polynomial rooted maximum-cut bound](POLYNOMIAL-ROOT-RATE.md) beyond triangle-free graphons.
 
 ## Proof of the small-disagreement tail
 
