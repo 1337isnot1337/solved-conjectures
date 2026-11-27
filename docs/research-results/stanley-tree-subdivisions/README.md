@@ -6,6 +6,10 @@ Let $`r\ge3`$ be the branch degree. Remove each arm’s initial chain of unary r
 
 ## Two unmarked hubs
 
+**All exterior lengths can vary independently when the rooted cap shape is determined by its number of leaves and the largest such count is below the sum of the smallest counts required at one hub.** This includes arbitrary repetitions of the same rooted cap. Unit caps, mixtures of several shapes, equal lengths, arbitrarily dominant arms and central length one are permitted under the stated cap condition. [Theorem and exact cutoff](TWO-HUB-FREE-LENGTHS.md) · [Review](TWO-HUB-SUBDIVISIONS-REVIEW.md)
+
+For arbitrary rooted ends, a complementary theorem permits the longest exterior arm to exceed the sum of the other arms by an arbitrarily large factor. Its proof determines the two possible length assignments from one-edge cuts and uses a polynomial divisibility bound to distinguish them, even after regrouping. [Dominant-arm scope and proof](DOMINANT-ARM.md)
+
 Choose two branch vertices joined by a path whose internal vertices have degree two. Each hub has at least two exterior arms, with arbitrary, possibly repeated rooted ends. Under a size condition on these exterior arms, the ordinary invariant recovers both hubs, the lengths and rooted ends, and their division between the hubs. The joining path can have any positive length. The condition allows unbounded ratios between the longest and shortest exterior arms. A separate identity distinguishes any exchange of two unequal arm orders between distinct rooted ends at a branch vertex. [Two-hub theorem and transposition identity](TWO-HUB-SUBDIVISIONS.md) · [Review and prior work](TWO-HUB-SUBDIVISIONS-REVIEW.md)
 
 ## Single-edge subdivisions and other recognition theorems
@@ -32,6 +36,8 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
+python3 docs/research-results/stanley-tree-subdivisions/verify_dominant_arm.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_hub_fringe_recognition.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_hub_assignment.py
@@ -41,6 +47,8 @@ python3 docs/research-results/stanley-tree-subdivisions/verify_long_subdivision.
 python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
 ```
+
+The [independent-length checker](verify_two_hub_free_lengths.py) recovers 127 examples from boundary coefficients. The [dominant-arm checker](verify_dominant_arm.py) compares 5,408 cut profiles, 108 length exchanges and 224 regroupings.
 
 The [two-hub checker](verify_two_hub_subdivisions.py) covers 18,984 exterior profiles, 23 joins with fully enumerated forests and connected subsets, and 36 assignments of distinct or repeated rooted ends. It also checks an ambiguity for one-edge counts and the transposition identity.
 

@@ -2,7 +2,7 @@
 
 ## 2026-11-27 UTC — Stanley reconstruction at two unmarked hubs
 
-The ordinary chromatic symmetric function now recognizes a two-hub tree with arbitrary rooted terminal shapes under an exterior-order condition. Its central length is unrestricted. A second identity detects an exchange of unequal arm orders between different rooted caps at one vertex. The results extend the existing unranked Stanley partial theorem. The general isomorphism question remains open. [Proof](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
+The ordinary chromatic symmetric function recognizes two-hub trees after independently long exterior subdivisions under an explicit condition on cap leaf counts. Separate theorems allow arbitrary rooted terminal shapes under an exterior-order or dominant-arm condition. [Independent lengths](docs/research-results/stanley-tree-subdivisions/TWO-HUB-FREE-LENGTHS.md) · [Dominant arm](docs/research-results/stanley-tree-subdivisions/DOMINANT-ARM.md) Its central length is unrestricted. A second identity detects an exchange of unequal arm orders between different rooted caps at one vertex. The results extend the existing unranked Stanley partial theorem. The general isomorphism question remains open. [Proof](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS.md) · [Independent review and checks](docs/research-results/stanley-tree-subdivisions/TWO-HUB-SUBDIVISIONS-REVIEW.md)
 
 ## 2026-11-27 UTC — Chen’s parity-free exact-one-marker conjecture
 
