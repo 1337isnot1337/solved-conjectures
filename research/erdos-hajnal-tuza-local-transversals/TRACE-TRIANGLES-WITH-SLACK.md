@@ -8,9 +8,10 @@ contain more than \(t\) vertices.
 Assume \(r=5t+z\), \(1\le z\le t/4\), \(\tau>t\), and the
 local span condition. Put \(m=t+s\) for the minimum pair
 intersection and \(\delta=z-3s+2\). Fix \(A\), and suppose
-three minimum neighbors \(E_1,E_2,E_3\) have traces
+three distinct other edges \(E_1,E_2,E_3\) have traces
 \(Y_i=A\cap E_i\) with empty triple intersection and with
-\(|Y_i\setminus Y_j|\ge s\) for distinct indices. Write
+\(|Y_i\cap Y_j|\le t\) for distinct indices. These edges
+need not be minimum neighbors. Write
 \[
 K=\sum_{i<j}(|Y_i\cap Y_j|-s)_+ .
 \]
@@ -24,25 +25,39 @@ intersections all \(o(t)\) cannot have empty triple intersection.
 ## 1. The common exterior
 
 Write \(L=r-m\), \(W_i=E_i\setminus A\),
-\(d_{ij}=|W_i\cap W_j|\), and \(C=\bigcap_i W_i\).
-First \(d_{ij}\le t+\delta\).
-Indeed choose an \(s\)-cut of \(Y_i\) disjoint from \(Y_j\)
-and a standard witness \(F\) to that cut for \(A,E_i\).
-Then \(F\) meets \(W_i\) in at least \(m-s=t\) points,
-and has at most \(L\) points outside \(A\).
+\(e_i=|Y_i|-m\), \(d_{ij}=|W_i\cap W_j|\), and
+\(C=\bigcap_i W_i\). Note \(|W_i|=L-e_i\).
+We have \(d_{ij}\le t+\delta-\max(e_i,e_j)\).
+Indeed choose a \((s+e_i)\)-subset of \(Y_i\)
+disjoint from \(Y_j\), possible since \(|Y_i\cap Y_j|\le t\),
+and choose a witness \(F\) avoiding its \(t\)-point
+complement in \(Y_i\).
+Then \(F\) meets \(W_i\) in at least \(m-(s+e_i)=t-e_i\)
+points, and has at most \(L\) points outside \(A\).
 The four edges \(A,E_i,E_j,F\) are distinct and have
-empty intersection; their union outside \(A\) has at
-least \(2r-2\) points. On the other hand, that union
-has size at most \(3L-d_{ij}-t\), proving the bound.
+empty intersection. The distinctness of \(E_j,F\)
+uses \(Y_i\cap Y_j\ne\varnothing\), which follows
+from the local condition on \(A,E_i,E_j\).
+The union outside \(A\) has at least \(2r-2\) points.
+It has size at most
+\[
+(L-e_i)+(L-e_j)+L-d_{ij}-(t-e_i)
+=3L-e_j-d_{ij}-t.
+\]
+This proves \(d_{ij}\le t+\delta-e_j\), and the
+reflection proves the bound with \(e_i\) as well.
 
 Put \(c=|C|\) and \(d=t-c\), which may now be negative.
 By minimality \(d_{ij}\ge m-|Y_i\cap Y_j|\).
 Applying the local span condition to \(A,E_1,E_2,E_3\)
 and using \(3L-(2r-2)=2t+\delta\) gives
 \[
-\sum_{i<j}d_{ij}\le 2t+\delta+c,\qquad
--\delta\le d\le K+\delta.
+\sum_{i<j}d_{ij}\le 2t+\delta+c-\sum_i e_i,
+\qquad
+-\delta\le d\le K+\delta-\sum_i e_i .
 \]
+In particular we can use the weaker bound \(d\le K+\delta\)
+in the remainder. 
 
 The entire triple intersection of the \(E_i\)'s is \(C\).
 Let \(Q_{ij}=(E_i\cap E_j)\setminus C\) and
