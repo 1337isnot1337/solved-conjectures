@@ -34,3 +34,39 @@ Consequently
 Since \(F,G\) are distinct, meet in no point of \(X\), and meet in at most \(2(z+\delta)\) points on the wings, their common exterior has at least \(m-2(z+\delta)=t+s-2z-2\delta\) vertices. The hypothesis gives a strict contradiction. Finally, for \(z=o(t)\) we have \(L=(4+o(1))t\), \(\delta=o(t)\); the sum of two reuse errors for counts at least ten is at most \((4/5+o(1))t\). At \(z=1\) the error sum is at most \(4t/5<t-1\) for \(t\ge6\).
 
 This cross-intersection rule is a restriction on the clustered-wing branch. It does not yet show that its surviving residual families on \(X\) are impossible.
+
+## An unconditional witness-count consequence at the first jump
+
+At \(r=5t+1\), \(t\ge19\), put \(q=t+1\). At every singleton pivot
+there are \(t\) selected witnesses per side. Let \(N_A=t+a\),
+\(N_B=t+b\) be the numbers of distinct selected witnesses on the
+two sides, with overlaps between the sides counted separately.
+Then
+\[
+q\,ab\ \ge\ (t-a)_+(t-b)_+.
+\]
+In particular, at least one side has at least
+\[
+t+\left\lceil\frac{t}{1+\sqrt{t+1}}\right\rceil
+\]
+distinct secondary witnesses. If one side has exactly \(t\), the
+other must have at least \(2t\).
+
+To prove this, call an edge high-use on a side if it is used at more
+than \(q/2\) pivots. Across the \(A\) side there are precisely
+\(q(N_A-t)=qa\) absent edge–pivot incidences: every pivot has exactly
+\(t\) distinct chosen edges. A non-high-use edge accounts for at
+least \(q/2\) absences, so there are at most \(2a\) such edges.
+Hence at least \((t-a)_+\) are high-use, and similarly at least
+\((t-b)_+\) on the other side.
+
+The pivot sets of any two opposite high-use edges meet because
+each has more than half the \(q\) pivots. Both have at least ten
+uses. The two-sided result gives a common vertex \(x\) in \(X\);
+both edges must then be absent at the pivot \(x\). For each pivot
+there are exactly \(a\) absent \(A\)-side edges and \(b\) absent
+\(B\)-side edges. Counting opposite high-use pairs by such a common
+absence proves the inequality. If \(d=\max(a,b)<t\), it implies
+\(qd^2\ge(t-d)^2\), so \(d\ge t/(1+\sqrt q)\). When \(d\ge t\)
+that last conclusion is automatic. The case \(a=0\) or \(b=0\)
+follows directly from the displayed product inequality.
