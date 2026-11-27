@@ -8,6 +8,8 @@ Cinna Davis and GPT-6.2 Astra developed the structural reduction, all-orders dou
 
 The same minimum and equality classification hold for every graph whose complement and the graph itself are connected. The WadeDavis research session with Codex supplied the additional diameter-two estimate and five finite anchor configurations needed at orders 11–20. [Connected-complement proof](CONNECTED-EXTENSION.md) · [Independent review and exact checks](CONNECTED-REVIEW.md)
 
+The sharp absolute lower bound on the larger algebraic connectivity of a graph and its complement is $`2-\sqrt2`$. Equality holds exactly for the four-vertex path. This answers the closing question of Afshari, Akbari, Moghaddamzadeh and Mohar as a consequence of the diameter-three theorem. [Deduction, source comparison and independent review](SHARP-MAXIMUM.md)
+
 ## Reproduction
 
 From this directory, run the following under standard Python with assertions enabled and a C++17 compiler with signed 128-bit integer support. The small-order executable needs no external libraries.
@@ -17,6 +19,7 @@ c++ -O3 -std=c++17 check_anchored_dandelion.cpp -o /tmp/check_anchored_dandelion
 for n in $(seq 4 20); do
   /tmp/check_anchored_dandelion "$n" || exit 1
 done
+python3 check_sharp_maximum.py
 python3 verify_connected_dandelion.py
 python3 check_form_two_cut.py
 python3 verify_finite_interval.py

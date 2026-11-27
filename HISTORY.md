@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — The sharp complementary algebraic-connectivity constant
+
+The dandelion theorem yields the exact universal lower bound on the larger algebraic connectivity of a graph and its complement. The four-vertex path uniquely attains the constant proposed in Afshari, Akbari, Moghaddamzadeh and Mohar’s 2018 closing question. [Proof and primary-source review](results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md)
+
 ## 2026-11-27 — The dandelion minimum over every connected complementary pair
 
 The original dandelion result now includes all connected complementary pairs at every order and classifies every minimizer. A diameter-two spectral gap and 50 exact anchor certificates close the finite remainder beyond the source conjecture. [Proof](results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) · [Independent review](results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md)

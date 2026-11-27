@@ -59,6 +59,7 @@ jobs:
           for n in $(seq 4 20); do
             /tmp/check-anchored-dandelion "$n"
           done
+          python3 check_sharp_maximum.py
           python3 verify_connected_dandelion.py
           python3 check_form_two_cut.py
           python3 verify_finite_interval.py
