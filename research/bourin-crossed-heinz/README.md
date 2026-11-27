@@ -16,7 +16,7 @@ This is Question 4 on printed page 6 of [Bourin's original manuscript](https://a
 
 ```math
 s\bigl(A^tB^{1-t}+B^tA^{1-t}\bigr)
-\prec_w\lambda(A+B),\qquad 0<t<1.
+\prec_w\lambda(A+B),\qquad 0\lt t\lt 1.
 ```
 
 All dimensions, all intermediate Ky Fan sums, and the full interior parameter interval are part of the problem. The central parameter interval, dimension two, and the trace, operator, and Frobenius norms already have prior proofs; they are not new targets here. [SOURCE_AUDIT.md](SOURCE_AUDIT.md) identifies the exact current sources and access limits.
