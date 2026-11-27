@@ -4,7 +4,7 @@ The [all-orders missing-leaf theorem](MISSING-LEAF.md) covers every
 pair with a leaf on both sides, and the [interval theorem](INTERVAL-LEAF-THRESHOLD.md)
 covers all orders at least 65. Here the finite remainder is additionally
 closed at orders 4 through 10. The [finite interval certificate](FINITE-INTERVAL.md) covers 21 through 64.
-Only orders 11 through 20 with at least one side having no leaf remain.
+The [connected-complement theorem](CONNECTED-EXTENSION.md) covers orders 11 through 20.
 
 The check below is exact for the larger family of pairs of connected
 graphs, irrespective of diameter. It is the lower endpoint of the
