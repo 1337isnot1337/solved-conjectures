@@ -24,6 +24,9 @@ jobs:
           python3 docs/research-results/stanley-tree-subdivisions/verify_centroid_edge.py
           python3 docs/research-results/stanley-tree-subdivisions/verify_two_branches.py
 
+      - name: Check the two-token graph cycle certificate
+        run: python3 results/fernandes-two-token-chromatic/verify.py
+
       - name: Check both graphical dist orientation counts
         run: |
           python3 results/alexandersson-graphical-dist/check.py
