@@ -114,6 +114,11 @@ sufficient one-sided inequalities for a positive natural density. The
 all-scale inequalities remain open. The same probe measures two ways in
 which the finite set of small shifts fails to decide the greedy recurrence.
 
+[Parent translation](parent-translation.md) gives a conditional lower
+density bound using only the counting deficits at genuine parent pairs
+with smaller summand at least 4096. The proposed inequality passes
+every such test through one hundred million.
+
 [Phase confinement](phase-confinement.md) proves positive natural
 density under exact eventual confinement to a sum-free phase band with
 rational endpoints. It also checks how a single phase-boundary
@@ -159,6 +164,14 @@ uniqueness of every selected term through the extinction.
   Theorem 3.2, would bound the harmonic sum of the chain $1,2,\ldots,n$
   by $3/2+O((n-1)/n)$. The harmonic sum instead diverges. The
   logarithmic-density argument uses that estimate.
+- Theorem 5 of *Hidden Signal in the Ulam Sequence Explained* applies
+  a global Parseval bound with the length of a local interval in place
+  of the full modulus. For a singleton at a residual peak above its
+  root mean square, the claimed local bound fails. Such a residual
+  occurs already for the genuine prefix $`\{1,2\}`$ modulo five,
+  keeping frequencies $`\pm1`$ and placing $`\pm2`$ in the residual.
+  The capture estimate needs an additional local energy bound.
+  [Preprint](https://www.ulam.ai/research/erdos342.pdf)
 
 If you use this work, please cite [the project](https://itsdavis.com/)
 and [this research package](https://github.com/1337isnot1337/solved-conjectures/tree/research/research/ulam-sequence-density).

@@ -93,6 +93,24 @@ the tail. The six count totals for the lower and upper domains are
 Substituting $`\alpha=3\theta-1`$ gives the density formula. The
 replay uses exact integers and rational arithmetic.
 
+## Survival under narrow boundary overrides
+
+Start in one of the 70 positive memories after a first-level word.
+Allow arbitrary output bits at sites whose phases are within $10^{-6}$
+of either endpoint of the central third. At other sites keep the
+cutoff-400 recurrence. The lower natural density is then at least
+0.079, even with infinitely many overrides.
+
+For each first return and color, the verifier enumerates the possible
+override sites in its return word. It enlarges the phase strips by
+$10^{-9}$ at the nominal slope to cover the variation of all branch
+endpoints and phases over the slope bracket. It offers both possible
+bits independently at every listed site. The resulting return maps
+preserve a set of 187 nonzero memories and emit at least 4,711 or
+29,715 ones on the two return types. Equidistribution multiplies these
+counts by the corresponding reduced-phase interval lengths. The
+resulting lower rate is at least 0.079 throughout the bracket.
+
 ```sh
 python3 -B research/ulam-sequence-density/phase_nested_model.py
 ```

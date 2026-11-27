@@ -43,6 +43,17 @@ $G<x$ follows from the sum of the two largest preceding terms.
 Hence unbounded gaps force unbounded maximum preimage sizes for
 every fixed $L$.
 
+The descent itself needs a parent pair for each selected $f$ and
+inclusion of every compulsory singleton. If a selected $f$ has more
+than one pair, choosing any one still gives the same two descent
+inequalities. The [sparse completion](sparse-completion.md) therefore
+also admits such a descent. For fixed $L$, that completion has
+$`\Theta((\log X)^4)`$ crowded sources with smallest summand above $L$
+and only $`O((\log X)^2)`$ terminal targets through $X$. Its average
+preimage size diverges. A bound for the actual sequence must use
+additional restrictions from the uniqueness of each selected
+term's parents.
+
 ## Exact prefix measurement
 
 The [phase probe](phase_probe.cpp) evaluates the smallest summand at

@@ -4,7 +4,7 @@ from collections import Counter, deque
 from fractions import Fraction
 
 from phase_return_model import (
-    ANCHOR, LENGTH, Q, check_cuts, check_rotation_returns, cut, gate_at,
+    ANCHOR, LENGTH, P, Q, check_cuts, check_rotation_returns, cut, gate_at,
     nonnegative, number, scale, subtract,
 )
 from verify import ulam_shift_mask
@@ -155,6 +155,69 @@ def second_level(edges, period, step):
     print("Positive density is (52052894 - 228526942*alpha)/6.")
 
 
+def override_sites(low, high, color, steps):
+    # At nominal slope use a larger strip, covering movement of the
+    # phase and both endpoints throughout the slope bracket.
+    margin = 3 * Q * 1001
+    denominator = 10**9
+    sites = []
+    for t in range(LENGTH, LENGTH + steps):
+        left = (number(low) + color * Q + 3 * P * t) % (3 * Q)
+        right = left + number(subtract(high, low))
+        if any(left * denominator <= b * Q * denominator + margin
+               and right * denominator >= b * Q * denominator - margin for b in (1, 2)):
+            sites.append(t)
+    return sites
+
+
+def check_overrides(edges, low, middle, high):
+    assert 403_647 + LENGTH + max(FIRST_TIMES) < 10**7
+    branches = ((low, middle), (middle, high))
+    plans = []
+    for (left, right), steps in zip(branches, FIRST_TIMES):
+        center = Fraction(number(left) + number(right), 2 * Q)
+        colors = []
+        for color in range(3):
+            sites = override_sites(left, right, color, steps)
+            starts = [LENGTH, *(t + 1 for t in sites)]
+            stops = [*sites, LENGTH + steps]
+            colors.append([gate_runs((center + color) / 3, start, stop)
+                           for start, stop in zip(starts, stops)])
+        plans.append(colors)
+
+    seen = set(edges)
+    queue = deque(sorted(seen))
+    minima = list(FIRST_TIMES)
+    while queue:
+        color, memory = queue.popleft()
+        for part, plan in enumerate(plans):
+            blocks = plan[color]
+            possible = {memory: 0}
+            for block in blocks[:-1]:
+                moved = {}
+                for state, count in possible.items():
+                    target, added = apply_runs(state, *block)
+                    for bit in (0, 1):
+                        edited = ((target << 1) | bit) & MEMORY
+                        total = count + added + bit
+                        moved[edited] = min(moved.get(edited, total), total)
+                possible = moved
+            for state, count in possible.items():
+                target, added = apply_runs(state, *blocks[-1])
+                assert target
+                minima[part] = min(minima[part], count + added)
+                next_state = ((color + 1) % 3, target)
+                if next_state not in seen:
+                    seen.add(next_state)
+                    assert len(seen) <= 187
+                    queue.append(next_state)
+    assert len(seen) == 187 and minima == [4711, 29715]
+    lengths = [subtract(right, left) for left, right in branches]
+    lower_rate = tuple(sum(m * length[i] for m, length in zip(minima, lengths)) for i in range(2))
+    assert stable(subtract(scale(1000, lower_rate), (79, 0)))
+    print("Narrow overrides preserve 187 positive memories, with lower density at least 0.079.")
+
+
 def main():
     low, middle, high = map(cut, (29_990, 403_647, 343_645))
     check_cuts(-102, LENGTH + 1, low, high)
@@ -163,6 +226,7 @@ def main():
                for steps, displacement in zip(FIRST_TIMES, (step, negative)))
     edges = first_level(low, middle, high)
     second_level(edges, subtract(high, low), step)
+    check_overrides(edges, low, middle, high)
 
 
 if __name__ == "__main__":

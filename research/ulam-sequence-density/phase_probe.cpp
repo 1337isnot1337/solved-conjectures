@@ -489,6 +489,71 @@ bool check_smallest_summand_descent(const Membership& original) {
     return true;
 }
 
+bool check_parent_translation(const Membership& original) {
+    const int cutoff = static_cast<int>(original.size()) - 1;
+    std::vector<int> counts(cutoff + 1);
+    std::vector<int> terms;
+    std::vector<int> outliers;
+    for (int n = 1; n <= cutoff; ++n) {
+        counts[n] = counts[n - 1] + original[n];
+        if (n >= 4096 && 15LL * counts[n] < n) {
+            return false;
+        }
+        if (original[n]) {
+            terms.push_back(n);
+            if (!middle_third(n)) {
+                outliers.push_back(n);
+            }
+        }
+    }
+    std::array<int, 2> maximum{0, 0};
+    std::array<int, 2> lag_at_maximum{1, 1};
+    std::array<int, 2> target_at_maximum{0, 0};
+    for (int n : terms) {
+        if (n <= 2) {
+            continue;
+        }
+        const bool middle = middle_third(n);
+        int lag = 0;
+        for (int first : middle ? outliers : terms) {
+            const int second = n - first;
+            if (second <= 0 || (!middle && second <= first)) {
+                break;
+            }
+            if (first != second && original[second]) {
+                lag = std::min(first, second);
+                break;
+            }
+        }
+        if (lag == 0) {
+            return false;
+        }
+        const int deficit = counts[lag] + counts[n - lag] - counts[n];
+        if (deficit <= 0) {
+            continue;
+        }
+        const auto square = std::int64_t(deficit) * deficit;
+        if (square > 16LL * lag || (lag >= 4096 && square > 4LL * lag)) {
+            return false;
+        }
+        const int cases = 1 + (lag >= 4096);
+        for (int i = 0; i < cases; ++i) {
+            if (square * lag_at_maximum[i] > std::int64_t(maximum[i]) * maximum[i] * lag) {
+                maximum[i] = deficit;
+                lag_at_maximum[i] = lag;
+                target_at_maximum[i] = n;
+            }
+        }
+    }
+    for (int i = 0; i < 2; ++i) {
+        std::cout << "Parent translation " << (i == 0 ? "all lags" : "lags at least 4096")
+                  << ": " << maximum[i] << "/sqrt(" << lag_at_maximum[i] << ") at "
+                  << target_at_maximum[i] << ".\n";
+    }
+    return maximum == std::array{57, 127} && lag_at_maximum == std::array{339, 4118}
+        && target_at_maximum == std::array{1'137'338, 89'941'075};
+}
+
 int main() {
     constexpr int cutoff = 100'000'000;
     const Membership membership = generate_by_phase(cutoff);
@@ -516,6 +581,10 @@ int main() {
     }
     if (!check_smallest_summand_descent(membership)) {
         std::cerr << "The smallest-summand descent check failed.\n";
+        return 1;
+    }
+    if (!check_parent_translation(membership)) {
+        std::cerr << "The parent translation check failed.\n";
         return 1;
     }
     return check_dilation(membership, 2) && check_dilation(membership, 3) ? 0 : 1;
