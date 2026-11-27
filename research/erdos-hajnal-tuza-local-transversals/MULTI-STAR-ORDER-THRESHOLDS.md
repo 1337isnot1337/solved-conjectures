@@ -5,9 +5,10 @@ This analyzes sharpness of the abstract petal order bound
 at and beyond the integer star thresholds. It does not
 construct examples of the original hypergraph problem.
 
-Keep the abstract hypotheses in
-[Strict slack order gap](STRICT-SLACK-ORDER-GAP.md).
-For fixed \(s,\delta\), set
+Use the same abstract size and overlap axioms as in
+[Strict slack order gap](STRICT-SLACK-ORDER-GAP.md), but
+without its small-slack restriction. For fixed integers
+\(s\ge2\) and \(\delta\ge3s\), set
 \[
 a_*=1+\frac{\delta}{3s},\qquad
 k=\lfloor a_*\rfloor,\qquad
