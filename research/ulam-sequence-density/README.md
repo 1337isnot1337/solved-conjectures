@@ -150,6 +150,9 @@ when every lag is at most one million.
 The same note classifies atoms in selected-term phase distributions and
 gives lower-density criteria in terms of how the sequence restarts after
 long gaps.
+[Relative prediction errors](phase-relative-errors.md) gives conditions
+under which the short-pair decisions on genuine histories disagree on
+a vanishing fraction relative to the selected count as the cutoff grows.
 
 [Boundary rules](phase-boundary-rules.md) locates the remaining long-pair
 counts inside the phase band. Its finite certificate verifies a tail

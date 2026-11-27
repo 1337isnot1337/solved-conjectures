@@ -129,6 +129,18 @@ are atoms of mass at least $w$ by the counting inequality. Applying
 the same proof with each of those phases as the center reverses the
 inequality and gives equality of their masses.
 
+**Uniform relative rarity of outliers.** Under approximate confinement,
+the fraction of Ulam terms outside the central third tends to zero
+uniformly over intervals whose number of Ulam terms tends to infinity.
+The atom argument applies to phase distributions normalized by the
+number of Ulam terms in any such interval. Shifting a sample interval
+by a fixed offset still alters its counts by at most twice the magnitude
+of that offset. If one side has infinitely many outliers, its gap word
+is infinite and the corresponding endpoint carries no atom in any
+of these limits. A fixed positive proportion of outliers on that side
+would concentrate into such an atom by confinement. A side with
+finitely many outliers contributes a proportion tending to zero.
+
 When both gap words are infinite, the distribution of preceding gap
 lengths among the selected terms is tight. In fact
 
@@ -146,6 +158,48 @@ the two endpoints would carry that much mass in the limit. Decreasing
 the neighborhoods to the two points would give an atom. A density
 proof using the empirical gap laws also needs control of the first
 moment of the gap lengths.
+
+## A summable bound on the lengths of gaps
+
+Write $`E(L)=\sup_{n\in U,\,n>L}\mathop{\mathrm{dist}}(\phi(n),\overline B)`$.
+Suppose there are constants $C,b>0$ and a nonnegative integer $D$ such
+that the number of selected terms through $N$ within phase distance
+$\eta$ of either endpoint is at most $`C\eta^b A(N)+D`$, uniformly in
+$N$ and $\eta>0$. If $`\sum_{L\ge1} E(L)^b<\infty`$, then $U$ has
+positive lower natural density.
+
+For large $L$, each gap longer than $L$ ends within distance $`2E(L)`$
+of an endpoint. Among the first $k$ Ulam terms, remove the $D$ largest
+preceding gaps, or all gaps if there are fewer. For each large $L$,
+the number of retained gaps longer than $L$ is at most
+$`C(2E(L))^b k`$. Summing the tail counts and absorbing the finitely
+many small $L$ gives a bound $`C' k`$ on their total length. Each
+removed gap increases the preceding Ulam term by at most a factor
+of two. Interleaving those increases with the retained gap lengths
+gives $`u_k\le2^D(1+C'k)`$ and hence the lower bound.
+
+If $D\le2$, the same hypotheses give uniformly integrable gap lengths
+along large initial segments. For a gap of length $g$, the endpoint
+and both its parents lie within $`2E(g-1)`$ of the boundary for large
+$g$. Indeed, a target near one endpoint comes from two phases near the
+opposite endpoint. Their individual distances are at most twice the
+confinement width, by subtracting the extremal allowed phase of one
+parent from the target sum. These three terms are distinct. The assumed
+bound with $N=u_i$ gives $`3-D\le C(2E(g-1))^b i`$. Since the sequence
+$`E(L)^b`$ is nonincreasing and summable, this implies $`g/i\to0`$ as
+the gap length increases. Thus even the largest of the first $k$
+gaps is $o(k)$, and the removed $D$ gaps have vanishing weight in the
+empirical mean. The retained gaps have uniformly small tail averages
+by summability of $`E(L)^b`$ and $`LE(L)^b\to0`$. Convergence of the
+empirical gap laws would then give a positive natural density equal
+to the reciprocal of their limiting mean.
+
+In the case $D=0$, there are only finitely many outliers under the
+same hypotheses. An outlier at $n$ would give
+$`1\le C n E(n-1)^b`$, so no arbitrarily large outlier is possible.
+The [exact confinement argument](phase-confinement.md) then gives a
+positive natural density directly. The quoted hypotheses of this
+criterion remain open for the genuine sequence.
 
 ## When a post-gap response would give a lower bound
 
@@ -177,6 +231,31 @@ $`c(N/3-1-LA(N))/2`$ selected positions, giving the claimed bound.
 This reduces the required count to a window proportional to the gap.
 The gap-word theorem gives agreement on every fixed window when the
 gap tends to infinity.
+
+The pointwise requirement can be replaced by a weighted average. Fix
+$L$ and, for each $N$, use all preceding gaps of length at least $L$
+whose post-gap intervals end by $N$. Write $G(N)$ for their total
+length and $P(N)$ for the sum of their post-gap Ulam counts, counting
+a term once for each interval containing it. If $P(N)/G(N)$ stays
+bounded below by a positive constant along unbounded density records,
+then the lower natural density is positive.
+
+Indeed, for any $`0<t\le1`$, let $G_t$ be the total length of gaps
+whose post-gap density is at least $t$. The same earliest-interval
+selection gives $`A(N)\ge tG_t/2`$. Integrating the resulting bounds
+$`G_t\le\min(G(N),2A(N)/t)`$ yields, when $`2A(N)\le G(N)`$,
+
+```math
+P(N)=\int_0^1G_t\,dt
+\le 2A(N)\left(1+\log\frac{G(N)}{2A(N)}\right).
+```
+
+If lower density is zero, then along integer density records we
+have $`A(N)=o(N)`$. The initial set of gaps before the first cutoff
+failure gives $`G(N)\ge N/3-1-LA(N)`$, so $`A(N)/G(N)\to0`$.
+The displayed estimate forces $`P(N)/G(N)\to0`$ on those records.
+This criterion allows individual post-gap windows with arbitrarily
+small density.
 
 The [billion-position prefix](parent-translation.md) gives the
 following exact tests. The replay includes every gap whose post-gap
@@ -216,8 +295,7 @@ least $`N/(2+2c)-1-LA(N)`$, where $L$ bounds the excluded short gaps.
 If this is less than $`N/(4+4c)`$, the short gaps already give a
 linear bound. Otherwise $`B_0\gg N^a`$.
 
-For a conditional application, write $`E(L)=\sup_{n\in U,\,n>L}
-\mathop{\mathrm{dist}}(\phi(n),\overline B)`$. Suppose $`E(L)=O(L^{-\gamma})`$
+For a conditional application, suppose $`E(L)=O(L^{-\gamma})`$
 for some $\gamma>0$ and $`\|3t\theta\|\ge\kappa t^{-\tau}`$ for
 all positive integers $t$ and fixed $\kappa,\tau>0$. If both gap
 words have positive lower natural density, then
