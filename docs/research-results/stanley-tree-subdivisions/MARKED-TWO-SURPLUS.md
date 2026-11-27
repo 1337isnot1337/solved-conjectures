@@ -1,0 +1,53 @@
+# Marked distance reconstruction excludes two extra leaves
+
+Let a reduced positive metric tree carry a mark $`o`$ in the interior of an edge or at a hub. Its vertex defects are $`w_x=\deg(x)-2`$, its heights are $`h_x=d(o,x)`$, and its signed measures are
+```math
+U_o=\sum_x w_x\delta_{h_x},\qquad B=\sum_{\{x,y\}}w_xw_y\delta_{d(x,y)}.
+```
+The mark has zero defect if it subdivides an edge. Assume all nonzero target heights are rationally independent. A rival has arbitrary positive edge lengths and any mark of the indicated kind.
+
+**Theorem.** A rival with the same $`U_o,B`$ cannot have exactly two more leaves than the target. All degrees and all numbers of hubs are allowed. In particular, an unmarked full-dimensional comparison of ordinary subdivision distance histograms with two extra rival leaves cannot have any freely variable rival pendant in its matching equations. Such a pendant would yield the prohibited marked pair by [common-pendant deletion](LEAF-SURPLUS-KERNEL.md). Unmarked comparisons with every pendant constrained remain an additional problem. The result therefore concerns a marked strengthening of the unlabelled histogram data and one specified class of unmarked comparisons.
+
+## Peeling a leaf while keeping the mark
+
+We use the [marked signed-profile and clean-label lemma](ROBUST-HUB-DISTANCES.md). Choose a representing rival leaf at the height of each target leaf. Tag target leaf heights by their distinct basis vectors $`e_i`$, hub heights by zero, and extend the map rational-linearly to all heights. A mixed height contains a rival leaf and a rival hub. Quotient the tags by the span $`W`$ of the mixed-height tags. All rival hubs have quotient tag zero. Every quotient tag of a distance is its endpoint-tag sum because the lowest common ancestor is the mark or a hub. At most two mixed heights occur, since each consumes at least one extra leaf.
+
+Let $`S`$ be a coordinate set containing the support of every vector in $`W`$ supported on at most four coordinates. For $`j\notin S`$, the root-to-leaf height, pendant length $`E`$ and parent defect $`w_p`$ agree at the corresponding leaves in both trees, as does the *entire* signed distance profile from $`j`$. Indeed the quotient tags of pairs touching $`j`$ force the same unique labelled endpoint in either tree by the four-coordinate subtraction lemma. Its nearest other reduced vertex is its parent, at distance $`E`$ with defect $`w_p`$.
+
+If the mark does not lie in the open pendant from $`j`$ to $`p`$, remove this pendant and leaf, suppressing $`p`$ if it becomes bivalent and retaining the mark in either case. Whether the mark lies inside the pendant is equivalent to $`h_j\lt E`$, so the rule is simultaneous on both sides. The marked profiles and pair measures of the two resulting trees agree. For details, put
+```math
+H=\sum_{x\ne j}w_x\delta_{d(p,x)},\qquad
+N=\sum_{\{x,y\}:x,y\ne j}w_xw_y\delta_{d(x,y)} .
+```
+The signed distance profile from $`j`$ equals $`-\delta_0+\mathop{\mathrm{shift}}_E H`$ and the old pair measure is $`N-\mathop{\mathrm{shift}}_E H`$. Thus the old data give the same $`H,N`$ on both sides. After deletion the parent defect drops by one, so the new pair measure is $`N-H+w_p\delta_0`$. The new marked profile is $`U_o+\delta_{h_j}-\delta_{h_p}`$, with $`h_p=h_j-E`$. This also handles $`p=o`$ with $`h_p=0`$; when its new defect is zero the mark persists at its position on the joined edge. All surviving target vertex heights keep their old values and their nonzero ones remain independent. The leaf-count difference stays two. At most one leaf of either tree can have its mark in its open pendant.
+
+These identities imply that a hypothetical counterexample of minimal target leaf count cannot have a removable leaf outside $`S`$. In particular $`m\le |S|+1`$ there, where $`m`$ is the number of target leaves. The square-defect moment of $`B`$ gives $`K_T-K_R=2`$ with $`K_X=\sum_{h}\binom{w_h}{2}`$ over hubs, as in the [leaf-surplus identity](LEAF-SURPLUS-KERNEL.md).
+
+## The two possible mixed tags
+
+If $`\dim W\le1`$, the span of all vectors in $`W`$ supported on at most four coordinates has a basis of size at most one. Therefore one may take $`|S|\le4`$. Consider $`\dim W=2`$. The two distinct mixed heights have independent tags $`v,w`$. Neither is a target hub height. Each height contains precisely one extra leaf canceling a trivalent hub there; at a target leaf height one further leaf is its selected representative. All other leaf representatives are pure. Every positive target hub mass is partitioned into the positive defects of its pure rival representatives at that height. The atom at zero, when present, has its unique root representative.
+
+Pass temporarily to the coarser tags modulo $`\langle w\rangle`$, keeping $`v`$ nonzero. The neutral hub $`q`$ at the first mixed height is the only hub of nonzero tag. Put $`Z=X^{v+\langle w\rangle}`$ in the rational Laurent group algebra of the subgroup of the tag space generated by the finitely many labels. This group is free abelian. Let $`A_1,A_2`$ be the signed sums of endpoint monomials in the two child subtrees of $`q`$, rooted at the mark.
+
+The equality of the two signed marked profiles equates the squares of their endpoint sums. In forming the unordered pair sum with weights $`w_xw_y`$, the diagonal subtraction for unchanged selected leaves cancels. The neutral hub and leaf at $`q`$ contribute two extra squares at $`Z^2`$. Every other change in diagonal mass has tag zero. Since the total of squared defects agrees (the total mass of $`B`$ and $`\sum_x w_x=-2`$ determine it), the rival-to-target difference of the pair sums before ancestor correction equals $`1-Z^2`$. Only pairs with ancestor $`q`$ require an extra factor $`Z^{-2}`$, by the distance formula for their heights. Their pre-correction sum is $`C=A_1A_2+Z(A_1+A_2)`$. Thus
+```math
+0=1-Z^2+(Z^{-2}-1)C
+ =(Z^{-2}-1)(A_1+Z)(A_2+Z).
+```
+Since the group algebra is a domain, one child signed sum is precisely $`-Z`$. No descendant hub carries a nonzero tag in this quotient. The extra leaf at the first mixed height cannot descend from $`q`$ by positivity, and the other extra leaf has quotient tag zero. Hence some selected target leaf $`i`$ in that child has $`e_i\equiv v\pmod{\langle w\rangle}`$. Regardless of any other monomial cancellations, the coefficient at $`Z`$ could not be negative without such a leaf. Reversing the roles gives a selected $`i'`$ with $`e_{i'}\equiv w\pmod{\langle v\rangle}`$.
+
+If these labels are distinct, $`W=\langle e_i,e_{i'}\rangle`$ and $`|S|\le2`$. If they coincide, expressing their common vector in the independent basis $`v,w`$ gives $`e_i=v+w`$. If $`W`$ has a vector of support at most three independent of $`e_i`$, those two span $`W`$ with combined support at most four. Again $`|S|\le4`$. It remains to rule out a two-dimensional $`W`$ with $`e_i=v+w`$ in which every at-most-three-coordinate vector is a multiple of $`e_i`$.
+
+## Reading a split defect at its actual distance
+
+Some target hub $`b`$ has at least two pure rival representatives. Otherwise every original hub would have its original defect and the two additional trivalent hubs would contribute zero to $`K_R`$, contradicting $`K_T-K_R=2`$. Its height $`h_b`$ is positive since the mark is the unique point at zero. The representatives of $`b`$ are incomparable in the tree rooted at the mark. Two representatives have at least four descendant leaves between them: each has at least two child branches leading to different leaves. Even after excluding the two extra leaves and the selected leaf $`i`$, at least one selected rival leaf $`j\ne i`$ remains. Write $`b'`$ for its ancestor representing $`b`$. Its defect lies strictly between zero and $`w_b`$.
+
+Consider the actual positive distance $`d=h_j-h_b`$. In the full tag space it has tag $`e_j`$, and in the quotient by $`W`$ the tag is $`e_j+W`$. For a pair of endpoints contributing at this distance, each endpoint in the quotient has tag zero or a target basis class. Comparing their sum with $`e_j`$ gives a vector supported on at most three coordinates in $`W`$. By assumption it is a multiple of $`e_i`$. Hence one endpoint must be the unique leaf with tag $`e_j`$ and the other endpoint has quotient tag zero. Uniqueness holds because $`e_j\notin W`$ and the height at that leaf is a pure unit atom. The possible *full* tags of the other endpoint are $`0,e_i,v,w`$; a selected leaf of any other label cannot be in $`W`$. An ancestor's full tag is $`0,v`$ or $`w`$. The distance formula requires the other endpoint's tag to be twice the ancestor's tag. Independence of $`v,w`$ and $`e_i=v+w`$ force both tags to be zero.
+
+Thus on the rival side the other endpoint is a pure hub at a true height $`h_a`$, while the ancestor is at a true hub height $`h_s`$ or at the mark (height zero). From the actual value $`d`$ we have $`h_a+h_b=2h_s`$. Independence of the nonzero target heights and $`h_b\gt0`$ forces $`h_a=h_b=h_s`$. Since distance from the root strictly increases under proper descent, the endpoint hub is itself the ancestor of $`j`$. The sole contributing pair is therefore $`j,b'`$, of weight $`-w_{b'}`$. On the target side, the full leaf tags are independent basis vectors and all hub tags vanish. The same height argument gives either the single pair joining $`j`$ to the target hub $`b`$, if it is an ancestor, or no pair. Its coefficient is $`-w_b`$ or zero. Neither value equals $`-w_{b'}`$, contradicting equality of $`B`$.
+
+## The minimal remaining tree
+
+In every remaining possible case $`|S|\le4`$, so a minimal counterexample has $`m\le5`$. A tree with $`m`$ leaves has total positive hub defect $`m-2`$. Since $`K_T\ge2`$, at most five leaves force exactly five and a unique hub of defect three. The target is the five-leaf star. The rival has $`K_R=1`$, hence its unique nontrivalent hub has defect two and its other hubs have defect one. At least one of the five target leaves lies outside $`S`$. Its full signed distance profile gives the parent defect three, impossible in the rival. This conclusion also applies if the only such leaf is on the pendant containing the mark; reading its nearest parent requires no removal.
+
+This proves the theorem. The argument uses the full original pair measure at the distinguishing distance, and invokes the tag projections only to identify candidate endpoint types.
