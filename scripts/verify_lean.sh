@@ -991,6 +991,13 @@ modules=(
   Conjectures.ShiftedLonelyRunnerData48To52
   Conjectures.ShiftedLonelyRunnerData53To57
   Conjectures.ShiftedLonelyRunner
+  Conjectures.ShiftedLonelyRunnerWeightedSeed
+  Conjectures.ShiftedLonelyRunnerWeightedData
+  Conjectures.ShiftedLonelyRunnerWeightedSweep
+  Conjectures.ShiftedLonelyRunnerWeightedWindow
+  Conjectures.ShiftedLonelyRunnerWeightedBand
+  Conjectures.ShiftedLonelyRunnerWeightedFinite
+  Conjectures.ShiftedLonelyRunnerWeighted
   Conjectures.ZhuJacobiStirling
   Conjectures.AgnosticVC.Exchangeability
   Conjectures.AgnosticVC.Information

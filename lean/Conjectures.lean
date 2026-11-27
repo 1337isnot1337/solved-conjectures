@@ -790,6 +790,7 @@ import Conjectures.JohnsonPfaffianOuter
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.ShiftedLonelyRunner
+import Conjectures.ShiftedLonelyRunnerWeighted
 import Conjectures.SunZhao
 import Conjectures.FangZhangZhao
 import Conjectures.HadamardLegendreQuotientData

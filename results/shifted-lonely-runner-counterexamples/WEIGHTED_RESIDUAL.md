@@ -6,7 +6,7 @@ At radius $`1/59`$, tomdif’s published 57 runners and any seven extra runners 
 
 Scale time by $`P=59000000`$ and work on $`[0,P]`$. The [certificate](weighted_residual.json) lists 121 triples $`(a,b,w)`$, each giving the open interval $`(a,b)`$ and its constant weight density $`w`$. The intervals are disjoint and all weights are positive integers. Their total density sum is $`W=\sum w=303345`$ and their total weighted length is $`T=\sum w(b-a)=153120431`$.
 
-For each interval and each fixed runner, the exact endpoint tests place its entire scaled phase in $`[k+1/59,k+1-1/59]`$ for some integer $`k`$ when phases are measured in turns. Since the speed is positive, both inequalities are strict in the interval interior. Thus the seed covers zero of the weighted support even with closed runner bands.
+For each interval and each fixed runner, the exact endpoint tests place its whole affine position in $`[k+1/59,k+1-1/59]`$ for some integer $`k`$ when phases are measured in turns. Since the speed is positive, both inequalities are strict in the interval interior. Thus the seed covers zero of the weighted support even with closed runner bands.
 
 For an added runner of speed $`v`$, scale position by $`P`$ as well. Its covered positions modulo $`P`$ lie in a window of width $`U=2000000`$ whose start encodes the phase. An interval $`(a,b)`$ maps to an interval of length $`v(b-a)`$. Decompose this length into full periods and a remainder. Each period contributes $`U`$ units in position space. The remainder contributes the length of its circular intersection with the window. Multiply by $`w/v`$ to return to weighted time units.
 
@@ -28,6 +28,24 @@ Speed 160 and window start 9192800 attain it. At larger speeds, bounding each re
 The union of seven runners has weight at most $`7\beta T=141117123`$, strictly less than $`T`$. Some interior support time is therefore uncovered by every runner. All calculations are invariant under translating time around the circle.
 
 For the consequence at 58 runners, suppose a cover contains at least 51 exact seed pairs. Restore the remaining original pairs while retaining all 58 runners. The resulting cover consists of all 57 original runners and at most seven extra runners, contradicting the bound. This gives a necessary number of changed pairs for this seed, including seeds shifted by one common time translation. The unrestricted question for 58 through 94 runners stays open. [Issue #110](https://github.com/1337isnot1337/solved-conjectures/issues/110)
+
+## Lean reduction
+
+Lean checks that all 121 intervals miss the published seed and that their weighted length is 153120431. The formalization verifies the exact integer event sweep's soundness, the upper bound on Lebesgue length for arbitrary real phases, the analytic tail for every speed from 59941, and the contradiction for seven tracks.
+
+The endpoint `ShiftedLonelyRunner.WeightedResidual.no_seven_of_finite_checks` takes the full finite Boolean sweep as a hypothesis. The kernel checks the representative speed 160. The whole finite range was checked by both the compiled Lean evaluator and the independent standard-library verifier. [Lean theorem](../../lean/Conjectures/ShiftedLonelyRunnerWeighted.lean) · [Sweep soundness](../../lean/Conjectures/ShiftedLonelyRunnerWeightedWindow.lean) · [Certificate generation](generate_weighted_lean.py) · [Strict build, axiom audit and stock-kernel replay](verification/weighted-lean-receipt.json).
+
+```sh
+python3 results/shifted-lonely-runner-counterexamples/generate_weighted_lean.py --check
+python3 scripts/verify_lean_target.py --root Conjectures.ShiftedLonelyRunnerWeighted \
+  --require ShiftedLonelyRunner.WeightedResidual.seed_misses \
+  --require ShiftedLonelyRunner.WeightedResidual.checkWindow_sound \
+  --require ShiftedLonelyRunner.WeightedResidual.checkFiniteSpeed_160 \
+  --require ShiftedLonelyRunner.WeightedResidual.all_caps_of_finite_checks \
+  --require ShiftedLonelyRunner.WeightedResidual.no_seven_of_finite_checks \
+  --out /tmp/shifted-runner-weighted-replay
+(cd lean && lake env lean ../results/shifted-lonely-runner-counterexamples/verify_weighted_finite.lean)
+```
 
 ## Reproduction and attribution
 
