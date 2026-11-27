@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Erdős one-third pinned distances with arbitrary collinearities
+
+The existing entry now includes the independent no-four-cocircular theorem alongside its no-three-collinear companion. Both have written proofs and finite checks. The rank and verification status on this branch are preserved. [Published proof](https://github.com/1337isnot1337/solved-conjectures/blob/f60dd0636c0a83fab066a925ebab1c1e888b77a2/results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) · [Publication PR #968](https://github.com/1337isnot1337/solved-conjectures/pull/968)
+
 ## 2026-11-27 — Reconcile eleven published packages with the research catalogue
 
 The working catalogue now indexes ten reviewed results already published on main and Tomdif’s seven circular-index certificates as a partial result. The entries use the Lean proofs available on research, including Adam Benazouz’s verification of Wang–Yang’s six matrices. The blocking-pencil proof has its full Lean package on main. Kovalev’s entry now records its checked partial formalization. [Reconciliation record](https://github.com/1337isnot1337/solved-conjectures/issues/951) · [Verification](docs/lean-status.md)

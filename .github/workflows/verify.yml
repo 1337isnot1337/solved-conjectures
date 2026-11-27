@@ -14,6 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check the unrestricted pinned-distance geometry
+        run: |
+          python3 research/erdos-654-arbitrary-collinearities/verify_farthest_conflicts.py
+          python3 research/erdos-654-arbitrary-collinearities/check_localization.py
       - name: Check threshold folded-tree alignment boundaries
         run: python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6
       - name: Replay finite-coin threshold learner

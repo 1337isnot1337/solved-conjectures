@@ -14,7 +14,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | 🟡 | **41.** [Zeng’s unscaled interlacing question](results/zeng-unscaled-interlacing/) | ⬜ |
 | **3.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **44.** [Alexandersson’s transportation polytope conjecture](results/alexandersson-transportation/) | ✅ |
 | **3.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **44.** [Alexandersson’s graphical dist conjecture](results/alexandersson-graphical-dist/) | 🟡 |
-| **3.** [Erdős’s pinned-distance conjecture in general position](results/erdos-general-position-pinned-distances/) | ⬜ | **44.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
+| **3.** [Erdős’s one-third pinned-distance conjecture](results/erdos-general-position-pinned-distances/) | ⬜ | **44.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 |
 | **6.** [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 | **44.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
 | **6.** [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 | **48.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | **6.** [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 | **48.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ⬜ |

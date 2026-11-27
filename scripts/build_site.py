@@ -63,7 +63,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
-    "Erdős’s pinned-distance conjecture in general position": "erdos-general-position-pinned-distances",
+    "Erdős’s one-third pinned-distance conjecture": "erdos-general-position-pinned-distances",
     "The Steiner triple system sail problem": "steiner-triple-system-sail",
     "Erdős–Gyárfás point-degree spectrum conjecture": "erdos-gyarfas-point-degree-spectrum",
     "En Gad–Yaakobi–Jiang–Bruck constant-weight strong WOM coding problem": "constant-weight-strong-wom",

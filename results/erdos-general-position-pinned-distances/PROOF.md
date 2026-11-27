@@ -8,7 +8,7 @@ For a finite set in the Euclidean plane, a *pin* is a point from which distances
 \sum_{x\in P}d_P(x)>\left(\frac13+\eta\right)n^2 .
 ```
 
-In particular some point determines more than $`(1/3+\eta)n`$ distinct distances. Erdős posed both conclusions in equations (5) and (3), respectively, on p. 168 of *Some combinatorial and metric problems in geometry* (1987), under the additional hypothesis that no four points are concyclic. His proposed extension allowing arbitrary collinearities, while prohibiting four concyclic points, remains open. [Original paper, pp. 167–168](https://users.renyi.hu/~p_erdos/1987-27.pdf#page=2)
+In particular some point determines more than $`(1/3+\eta)n`$ distinct distances. Erdős posed both conclusions in equations (5) and (3), respectively, on p. 168 of *Some combinatorial and metric problems in geometry* (1987), under the additional hypothesis that no four points are concyclic. A [subsequent proof](https://github.com/1337isnot1337/solved-conjectures/blob/f60dd0636c0a83fab066a925ebab1c1e888b77a2/results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) settles his proposed extension allowing arbitrary collinearities while prohibiting four concyclic points. [Original paper, pp. 167–168](https://users.renyi.hu/~p_erdos/1987-27.pdf#page=2)
 
 A configuration close to the one-third bound would give many triples of points at equal distance from a pin. We first show that in a scaled limit these triples would have a strong probabilistic property. We then use the paraboloid lift to restrict the support of the limit and rule it out.
 
