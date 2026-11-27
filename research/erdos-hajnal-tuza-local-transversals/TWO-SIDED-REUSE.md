@@ -70,3 +70,35 @@ absence proves the inequality. If \(d=\max(a,b)<t\), it implies
 \(qd^2\ge(t-d)^2\), so \(d\ge t/(1+\sqrt q)\). When \(d\ge t\)
 that last conclusion is automatic. The case \(a=0\) or \(b=0\)
 follows directly from the displayed product inequality.
+
+## Why cross-intersection alone stops at the square-root scale
+
+The preceding order of magnitude is sharp for the abstract incidence
+conditions used in its proof. This is not a hypergraph example.
+
+Let \(p\ge5\) be prime, \(q=p^2+p+1\), and \(t=q-1\). Use the points
+of the projective plane over \(\mathbb F_p\) as the \(q\) pivot labels.
+On each side introduce one abstract edge per projective line. Also
+introduce \(p+4\) extra edges whose corresponding lines, with
+multiplicity, are the \(p\) affine lines \(y=ax+a^2\), plus a second
+copy of any four of those lines. A point lies on at most two of
+the \(p\) different special lines: an affine point gives a
+quadratic equation in \(a\), and an infinite point is on at most
+one since the line slopes are distinct. Thus the extra edges
+have total point-degree at most four at every point.
+
+Initially give each edge all pivot incidences except the points
+on its own line. Every point is incident to \(p+1\) original
+lines and at most four extra edges, so at least
+\[
+(q+p+4)-(p+1)-4=q-1=t
+\]
+edges are available at each pivot. Delete arbitrarily any excess
+incidences at every pivot, leaving exactly \(t\) per side. Every
+opposite pair of edges still has a common absence: the two lines
+intersect, including when they are copies of the same line.
+There are at most \(q+p+4=t+p+5=t+O(\sqrt t)\) used edges per side.
+Together with the lower bound, this shows that the incidence count
+and pairwise common-absence rule alone cannot force a linear
+improvement. Additional geometric information on the witnesses is
+needed to rule out such residual designs in a real hypergraph.
