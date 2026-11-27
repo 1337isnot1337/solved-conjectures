@@ -9,7 +9,7 @@ independent review or Lean verification. No priority claim is made.
 [Tracking issue #315](https://github.com/1337isnot1337/solved-conjectures/issues/315).
 
 A separate follow-up gives a reconstruction criterion based on the
-centroid branches. [Centroid proof](CENTROID.md).
+centroid branches. [Centroid proof](CENTROID.md). A further argument recovers repeated branch shapes from moments and separates the forest polynomials of the two halves across a balanced centroid edge. [Proof and finite checks](CENTROID-EDGE.md)
 
 ## The target and the source check
 
