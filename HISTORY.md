@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Reconstructing arbitrary internal trees in Stanley’s problem
+
+Extended the existing partial result to cores of unrestricted branching pattern. With separated exterior-arm sums, the ordinary chromatic symmetric function determines every internal split and path length under either of two arm-recovery conditions. The proof gives a density-one corollary for each fixed decorated core. [Proof](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md) · [Independent review](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE-REVIEW.md)
+
 ## 2026-11-27 — A finite planar game with nonsemilinear outcomes
 
 Published NHLOCAL’s explicit two-heap game, developed with OpenAI ChatGPT (GPT-6.2). It proves Larsson–Saha–Yokoo’s existence conjecture and refutes Gurvich–Vyalyi’s semilinearity conjecture in the ordinary normal-play model. The independent review checked the full argument. [Result and proof](results/planar-subtraction-games/) · [Original submission](https://github.com/1337isnot1337/solved-conjectures/issues/997)

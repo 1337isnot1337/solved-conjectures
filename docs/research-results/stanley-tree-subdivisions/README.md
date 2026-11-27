@@ -4,6 +4,10 @@
 
 Let $`r\ge3`$ be the branch degree. Remove each arm’s initial chain of unary roots. If $`L`$ is the largest remaining order minus one, a sufficient minimum arm order is $`\max(3,L+1,2rL)`$. [Simultaneous subdivision theorem](HUB-SUBDIVISIONS.md) · [Independent review](HUB-SUBDIVISIONS-REVIEW.md)
 
+## Arbitrary internal trees
+
+For any fixed internal topology and rooted terminal caps, the ordinary chromatic symmetric function identifies the entire tree for a proportion tending to one of independent exterior-arm orders in the stated intervals. The proof recovers the unmarked ends and then the labeled internal splits, including the lengths of paths between branching vertices. [Exact theorem and proof](ARBITRARY-CORE.md) · [Independent review](ARBITRARY-CORE-REVIEW.md) · [Split reconstruction checker](verify_core_splits.py)
+
 ## Two unmarked hubs
 
 **All exterior lengths can vary independently when the rooted cap shape is determined by its number of leaves and the largest such count is below the sum of the smallest counts required at one hub.** This includes arbitrary repetitions of the same rooted cap. Unit caps, mixtures of several shapes, equal lengths, arbitrarily dominant arms and central length one are permitted under the stated cap condition. [Theorem and exact cutoff](TWO-HUB-FREE-LENGTHS.md) · [Review](TWO-HUB-SUBDIVISIONS-REVIEW.md)
@@ -36,6 +40,7 @@ Codex derived these partial results in the WadeDavis research session. Separate 
 Run these commands from the repository root with standard Python.
 
 ```sh
+python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_dominant_arm.py
 python3 docs/research-results/stanley-tree-subdivisions/verify_two_hub_subdivisions.py

@@ -194,6 +194,8 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 
 ## Recognizing trees after one long subdivision
 
+For any fixed internal tree with arbitrary rooted caps at the tips, a proportion tending to one of the independent exterior length choices in the stated intervals give a tree identifiable among all trees. The proof recovers the internal branching pattern and path lengths. [Arbitrary-core theorem](docs/research-results/stanley-tree-subdivisions/ARBITRARY-CORE.md)
+
 The ordinary chromatic symmetric function determines a tree after independent, sufficiently long subdivisions of every edge incident to any chosen branch vertex. It also distinguishes every sufficiently long subdivision of a single edge. Two hubs are recognizable for arbitrarily independent lengths under a condition on terminal leaf counts, or for arbitrary rooted ends in specified exterior-order regimes, including a dominant arm. A balanced-edge argument gives a bound in terms of both end orders. Other theorems recognize trees with enough leaves at their centroid or with specified repeated branches. Stanley’s question for all trees remains open. [Theorems and reviews](docs/research-results/stanley-tree-subdivisions/README.md)
 
 ## Current research
