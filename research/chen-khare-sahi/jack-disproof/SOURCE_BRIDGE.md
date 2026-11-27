@@ -17,3 +17,7 @@ At each of the three separating points and at the all-ones normalization point, 
 ## Independent internal source review
 
 A separate coordinating agent read the final quantified theorem and compared it with the original preprint. The review confirmed the reciprocal target parameter, both normalizations, strict source-to-target parameter order, dominance direction, nonnegative semiring closure and all nineteen low-degree shapes. It checked that arbitrary homogeneous extensions in degrees above five cannot contribute to the degree-five projection and that the finite-degree source characterization has an explicit witness. The reviewer approved the source match for the rank-five counterexample. This was an internal mathematical review.
+
+## Kernel verification
+
+On 27 November 2026 the pinned Lean 4.35.0 compiler checked all fourteen modules in the final proof's complete local dependency closure with warnings fatal. The all-owned audit found 1,312 declarations, including 1,088 theorems and all 36 private declarations, and confirmed all eight required endpoints. The transitive axioms were `propext`, `Classical.choice` and `Quot.sound`. The stock Lean kernel then replayed the entire scoped closure. The separate repository-wide aggregate is tracked in [#1056](https://github.com/1337isnot1337/solved-conjectures/issues/1056). [Machine-readable receipt](verification/receipt.json) · [Axiom audit](verification/audit.log) · [Kernel replay](verification/replay.log).
