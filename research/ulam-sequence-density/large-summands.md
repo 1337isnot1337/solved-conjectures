@@ -33,6 +33,24 @@ For example, $`A(256)=50`$ and $`A(1024)=128`$. If $`R_{256}(x)\le A(x)/2`$ at e
 
 The same counting argument explains a stronger proposed shortcut. If $`s`$ is the first Ulam number above $`L`$, each gap of length greater than $`s`$ after a sufficiently large $`u_i`$ contributes the distinct target $`u_i+s`$ to $`R_L`$. Finitely many such exceptional targets would force eventual gaps of at most $`s`$. An estimate for their total number can allow unbounded individual gaps.
 
+## Two attempted ways to assign targets to Ulam terms
+
+Assigning two globally distinct summands to each target counted by $`R_{256}(x)`$ would prove the desired factor of one half. This fails even with free choice among all the terms in all representations. Take the five targets
+
+```math
+9782,\quad 9848,\quad 9914,\quad 98347,\quad 98413 .
+```
+
+For each target $`n`$ its complete list of representations is $`273+(n-273)`$ and $`339+(n-339)`$. The [replay](record_lows.cpp) checks both pairs and the exact unrestricted count of distinct pairs. The union of their available summands consists of just nine Ulam terms,
+
+```math
+273,\ 339,\ 9443,\ 9509,\ 9575,\ 9641,\ 98008,\ 98074,\ 98140 .
+```
+
+The five targets would require ten distinct terms. This defeats the proposed assignment even when the two chosen terms at a target need not belong to the same representation.
+
+A different assignment might use any nearby Ulam term. For any fixed $`L`$, the distances from the targets counted by $`R_L`$ to $`U`$ are bounded **if and only if** the successive Ulam gaps are bounded. To prove the forward implication for a distance bound $`D`$, fix a term $`s>\max(L,D)`$. In a gap of length greater than $`s+D`$ after $`u_i>s`$, the target $`u_i+s`$ is counted by $`R_L`$ by the gap argument. Its distances from the two gap endpoints both exceed $`D`$. Only finitely many gaps start before $`s`$. The reverse implication follows because a bound on the gaps bounds the distance of every integer to $`U`$.
+
 ## Which sums escape the finite shifts
 
 Each table entry is $`R_L(x)`$. The [verifier](record_lows.cpp) generates the true sequence and all restricted representation counts by the two polynomial calculations described in the [record-low note](record-lows.md). It then enumerates every distinct pair with smaller summand at most 4,096 and stores the least such summand for each target.

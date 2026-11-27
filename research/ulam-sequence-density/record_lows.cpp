@@ -117,6 +117,11 @@ void report_phase_occupancy(const Words& bits) {
 
 void report_large_summands(const Words& bits, const Words& counts) {
     constexpr int limit = 1'722'075, largest_cut = 4096;
+    for (int n : {9782, 9848, 9914, 98347, 98413}) {
+        if (counts[n] != 2 || !bits[273] || !bits[339] || !bits[n - 273] || !bits[n - 339]) {
+            throw std::logic_error("two-summand allocation counterexample disagrees");
+        }
+    }
     std::vector<int> terms;
     for (int n = 1; n <= limit; ++n) {
         if (bits[n]) {
