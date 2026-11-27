@@ -490,6 +490,8 @@ Run `python3 results/shifted-lonely-runner-counterexamples/generate_lean.py --ch
 
 Run `python3 results/shifted-lonely-runner-counterexamples/verify_frozen_extension.py` to check the exact optimum, the full interval of optimal phases and the stability margin for adding one runner to the fixed 57-runner seed. [Statement and proof](../results/shifted-lonely-runner-counterexamples/FROZEN_EXTENSION.md).
 
+The [weighted residual certificate](../results/shifted-lonely-runner-counterexamples/WEIGHTED_RESIDUAL.md) also has a standard-library check. Run `python3 results/shifted-lonely-runner-counterexamples/verify_weighted_residual.py` to replay the fixed-seed weighted obstruction.
+
 ## Baricz–Pogány coefficient positivity
 
 The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The full coefficient theorem and source-recurrence endpoint are Lean-verified; the [local receipt](verification/lean-named-20261121/baricz-receipt.json) records strict source compilation, the all-owned axiom audit, and stock-kernel replay.
