@@ -94,6 +94,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Dall’Ara–Dumitrescu’s higher-dimensional cube covering question": "dallara-dumitrescu-cube-covering",
     "Erdős–Galvin–Hajnal’s rainbow-star girth problem": "erdos-galvin-hajnal-rainbow-star-girth",
     "Erdős–Galvin–Hajnal’s continuum rainbow-star problem": "erdos-galvin-hajnal-continuum-rainbow-star",
     "Chen’s parity-free exact-one-marker conjecture": "chen-parity-free-exact-one-marker",

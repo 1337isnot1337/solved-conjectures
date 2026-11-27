@@ -1,0 +1,25 @@
+# Independent review of higher-dimensional cube covering
+
+On 27 November 2026 the repository publication reviewer (WadeDavis/Codex) checked Cinna Davis’s written construction independently of its author. The conclusion is the strict inequality for every integer dimension at least three. It gives an explicit finite family in each such dimension. The verification level is a reviewed written proof with exact arithmetic checks. External refereeing and a Lean formalization are outstanding.
+
+## Target and priority
+
+Dall’Ara and Dumitrescu ask for strictness for homothetic axis-parallel cubes in §7.2(6) of version 3, dated 17 November 2026. They identify it with part of Problem D6 in Croft, Falconer and Guy’s 1991 collection. Their Theorem 5.1 and Figure 5 reproduce Ajtai’s two-dimensional almost-counterexample. [Primary question, p. 14](https://arxiv.org/pdf/2604.17509v3#page=14) · [Version record](https://arxiv.org/abs/2604.17509v3)
+
+Ajtai proved the planar disproof in 1973 and asserted strictness in higher dimensions. Bereg, Dumitrescu and Jiang explicitly credit that assertion and identify the missing higher-dimensional argument and upper bounds at the end of §6. Cinna Davis supplied the construction with closed fibers and the quantitative bound here. The resulting catalogue entry credits Ajtai’s priority for the assertion. It counts the later explicitly posed higher-dimensional question once. [Bereg, Dumitrescu and Jiang, §6](https://adriandumitrescu.org/rado.pdf#page=20) · [Journal record](https://doi.org/10.1007/s00453-009-9298-z) · [Original research commit](https://github.com/1337isnot1337/solved-conjectures/commit/9c4b2103424e76ccbebb7a30f07671547c575a74)
+
+The bounded search used Radó/Rado, Sokolin, Ajtai, D6, the source identifiers, and upper bounds for disjoint subfamilies of cubes. It covered subsequent arXiv and bibliographic results, theorem and formal-library search, and the two repository catalogues, issues and pull requests. We found the original research in #341 and no earlier detailed proof of the higher-dimensional bound. The asymptotic lower bound for cubes leaves this upper bound open. The result on congruent Euclidean balls uses a different shape and size constraint. The congruent-cube equality in §4 of the survey also allows only one size. The present proof uses three sizes. [Cube lower bound](https://arxiv.org/abs/2510.06817) · [Ball covering](https://arxiv.org/abs/2608.09744) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/341)
+
+## Mathematical checks
+
+- The coordinate list occupies 76 distinct unit cells in a rectangle of width 14. Both a branching independent-set calculation and an independently implemented column sweep give maximum area 19, falling to 18 when the bottom row is forbidden. The sweep retains intervals through their right endpoints so that touching squares conflict. Figure 5 and the proof of Theorem 5.1 supply the independent paper argument.
+- All four large planar bases contain the origin. Two accepted large cubes therefore have disjoint closed boxes in the extra coordinates. Pairing consecutive cells in each coordinate gives one common point per block. Each accepted large box excludes the bottom row of its corresponding planar gadget on its full extra-coordinate box. The loss of one unit of fiber area is used only once at any fiber, including boundary fibers.
+- The extra-coordinate measure places mass two at every even integer including both global endpoints. An aligned side-two interval has two even endpoints, while a side-one interval has exactly one. A side-fourteen interval has eight even points. Consequently the integration counts the small-cube volumes with the same factor in all coordinates. The coefficient of the number of accepted large cubes is positive, justifying substitution of the upper bound on that number.
+- Substituting the union volume and taking the limit along heights divisible by 28 gives the stated deficit. In dimension three the finite height 280 has deficit at least $`1/76160`$. In general the explicit height in the proof suffices by the elementary exponential inequality there. Expansion of **each cube about its own center** ensures every intersecting original pair has overlapping expanded interiors. For each fixed finite example the volume inflation tends to one.
+
+The exact checks are reproducible with Python’s standard library. The first script is Cinna Davis’s planar verifier. The second independently computes the two optima by sweeping the columns, checks all cell masses at three heights, and verifies the finite and limiting expressions for dimensions 3 through 38. The argument in the proof covers every dimension, including those outside this finite range.
+
+```sh
+python3 verify-planar-gadget.py
+python3 verify_lift.py
+```
