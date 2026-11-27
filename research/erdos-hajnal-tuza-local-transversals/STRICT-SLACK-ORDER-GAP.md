@@ -127,3 +127,11 @@ Thus the affine constant \(L\) is not an asymptotic
 limit of any family satisfying the axioms. Since it
 is already a uniform asymptotic lower bound, this
 nonattainment implies a strict positive asymptotic gap.
+
+Related literature: [Das–Gan–Sudakov](https://arxiv.org/abs/1305.6715)
+minimize disjoint pairs in a single small uniform family by initial
+lexicographic segments, which are successive star layers. The
+single-support estimate used here is an elementary asymptotic
+version of that phenomenon. The extra restriction in the petal
+problem is the pointwise overlap cap: all supports must obey it
+simultaneously for each disjoint pair of cuts.
