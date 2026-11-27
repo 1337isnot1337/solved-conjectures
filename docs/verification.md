@@ -8,6 +8,10 @@ Run `python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py` for 225 e
 
 Run `python3 results/bourin-crossed-heinz/verify_common_shift.py` for the exact quadratic coefficients and spectral-block conjugations used in the proof. The [common-shift expansion](../results/bourin-crossed-heinz/COMMON-SHIFT.md) and the [dimension-free spectral interval](../results/bourin-crossed-heinz/UNIFORM-BAND.md) have written proofs.
 
+## Komjáth’s stable-core reduction
+
+Run `python3 results/komjath-property-b/verify_core_repair.py` to check each legal recoloring choice on the finite test families, including initially split edges whose coloring changes. The transfinite deletion and limit-stage protection arguments are in the [proof](../results/komjath-property-b/LOW-CODEGREE-PEELING.md). [Independent review](../results/komjath-property-b/PEELING-REVIEW.md)
+
 ## Mean independent-set size at given average degree
 
 Run `python3 results/buys-van-den-heuvel-kang-occupancy/verify.py` from the repository root. It enumerates 443 triangle-free graphs at four fugacities and checks the score covariances and conditional star probabilities exactly. The variance and free-energy bounds are also checked numerically. For the [pointwise proof](../results/buys-van-den-heuvel-kang-occupancy/POINTWISE.md), run `python3 results/buys-van-den-heuvel-kang-occupancy/verify_pointwise.py` to replay the exact rational certificate and the finite-graph checks. The asymptotic conclusion also follows from the [written proof](../results/buys-van-den-heuvel-kang-occupancy/PROOF.md). [Review](../results/buys-van-den-heuvel-kang-occupancy/REVIEW.md)
