@@ -246,6 +246,12 @@ Earlier sources established the exceptional orders. These companion theorems are
 | --- | --- | --- | --- |
 | [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | Proposed disproof for the standard Macdonald family of the majorization-to-Muirhead-semiring implication in Conjecture 5. A rational functional is nonnegative on an exhaustive generating list of 38 products and seven monomials, but strictly negative on an admissible normalized Macdonald difference. Exact eigenoperator and independent Hall-inner-product constructions identify the polynomials. Rectangular translates and a continuous parameter family give further counterexamples to the same assertion. Ordinary evaluation positivity is not refuted. | Partial: the fixed q=1/10, t=9/10 stable Hall family, literal specialization and full semiring witness passed the exact 19-module gate. The finite-Hall source convention remains unresolved; broader families remain eigenfunction-characterized and the separate 16-module compatibility replay remains pending. | [Proof](results/chen-khare-sahi-macdonald/PROOF.md) · [Parameter family](results/chen-khare-sahi-macdonald/HALL_LITTLEWOOD.md) · [Source audit](results/chen-khare-sahi-macdonald/SOURCE_AUDIT.md) · [Analysis review](results/chen-khare-sahi-macdonald/ANALYSIS_REVIEW.md) · [Root review](results/chen-khare-sahi-macdonald/ROOT_REVIEW.md) · [Exact verifier](results/chen-khare-sahi-macdonald/verify.py) · [Issue 201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
 
+## Jack polynomial semirings
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Chen–Khare–Sahi’s Jack semiring conjecture](results/chen-khare-sahi-jack/) | Conjecture 4, equation (4.5), fails for the normalized Jack difference for (3,2) and (3,1,1) at source parameter 1, every rank at least five, and every target parameter strictly between one and two. Its positive column-Schur coefficient rules out the full proposed semiring. Proof contributed by @WadeDavis with Codex. | Not formalized | [Proof](results/chen-khare-sahi-jack/PROOF.md) · [Review and exact checks](results/chen-khare-sahi-jack/REVIEW.md) · [Source audit](results/chen-khare-sahi-jack/SOURCE_AUDIT.md) · [Issue #201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
+
 ## Beta-prime self-convolution
 
 | Problem | Result | Formalization | Evidence |

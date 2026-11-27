@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Chen–Khare–Sahi’s Jack semiring conjecture
+
+@WadeDavis and Codex found a counterexample to Conjecture 4 in five variables. A column-Schur coefficient separates the same pair throughout an open parameter interval in every rank at least five. [Proof](results/chen-khare-sahi-jack/PROOF.md) · [Independent review and exact checks](results/chen-khare-sahi-jack/REVIEW.md) · [Source audit](results/chen-khare-sahi-jack/SOURCE_AUDIT.md)
+
 ## 2026-11-27 — Eventual stability among inequivalent deep holes
 
 Codex derived a necessary and sufficient shell criterion in the WadeDavis research session and computed the local Gaussian energy gain at Leech holes of type $`A_{24}`$. The unranked supplement extends Cinna Davis’s Leech localization argument and uses Ichiro Shimada’s lattice data. [Proof](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES.md) · [Review and exact coefficients](docs/research-results/leech-cold-spots-asymptotics/MIXED-HOLES-REVIEW.md)

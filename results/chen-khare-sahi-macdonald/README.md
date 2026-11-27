@@ -23,7 +23,7 @@ with the same obstruction.
 Under this standard Macdonald convention, this refutes the equivalence
 asserted in Conjecture 5 through its semiring clause. The weaker evaluation-positivity inequality remains a
 separate question; Sra has proved that inequality for this same partition
-pair. The Jack-semiring Conjecture 4 is not resolved by this package.
+pair. The [Jack semiring result](../chen-khare-sahi-jack/) gives a separate counterexample to Conjecture 4.
 
 ## Current formalization scope
 

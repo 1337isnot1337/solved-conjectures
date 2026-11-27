@@ -1,0 +1,9 @@
+# Chen–Khare–Sahi’s Jack semiring conjecture
+
+Chen, Khare and Sahi ask whether dominance of two partitions forces their normalized Jack difference at a larger parameter to belong to the semiring generated at a smaller parameter. **Conjecture 4 is false.** With five variables, source parameter 1 and target parameter 3/2, the partitions (3,2) and (3,1,1) give a counterexample. [Original conjecture, §4.2, equation (4.5)](https://arxiv.org/html/2509.19649v2#S4.SS2)
+
+At source parameter 1 the generators are normalized Schur polynomials and their dominance differences. The target has zero value at the all-ones vector and leading partition (3,2). For a semiring element with those properties, the coefficient of the column Schur polynomial must be nonpositive. The target coefficient is exactly 1/4522. The same pair gives counterexamples in every rank at least five throughout the open target interval from one to two. [Proof](PROOF.md)
+
+The disproof concerns semiring membership. The same authors’ Macdonald Conjecture 5 uses a different family and a different semiring. The separate pointwise Jack inequality can hold for polynomials outside the proposed semiring. [Source and priority audit](SOURCE_AUDIT.md) · [Macdonald result](../chen-khare-sahi-macdonald/)
+
+**Attribution and verification.** @WadeDavis developed the counterexample and its written proof with Codex. An independent internal mathematical review checked the argument, and two exact Python computations verify the five-variable witness. The written proof has no Lean formalization or external referee report. [Review and reproduction](REVIEW.md) · [Original research commit](https://github.com/1337isnot1337/solved-conjectures/commit/a2a918f52933708939d5f4281aebe00ae6c9e25c) · [Tracking issue #201](https://github.com/1337isnot1337/solved-conjectures/issues/201)
