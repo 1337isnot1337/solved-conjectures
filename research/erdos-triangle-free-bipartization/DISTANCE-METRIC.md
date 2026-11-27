@@ -40,4 +40,6 @@ At each connected split, its good-edge contribution is at most 288 s(b−s) by t
 
 What is missing for the Erdős conjecture is the **sharp unit constant**; the separator argument uses slack and intentionally ignores the restriction that every bad edge has even distance at least four. The bound does show that the proposed invariant has the correct order without any diameter or degree hypothesis. On balanced odd-cycle blow-ups, the sharp constant 1 is necessary.
 
+**Prior-art scope.** If the graph has odd girth g, every monochromatic edge and a shortest crossing path make an odd cycle of length d_B+1≥g. Hence the distance statement implies an O(N²/g²) bound on the number of deletions, uniformly over g. The order bound itself is classical, due to [Komlós, Covering odd cycles (1997)](https://doi.org/10.1007/BF01215920), answering the earlier Bollobás–Erdős–Simonovits–Szemerédi order question; it is not a new conjecture resolution. The target of this note is the stronger distance-weighted statement for every optimal cut, including mixed lengths. No claim is made about the best constant.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
