@@ -56,6 +56,7 @@ EXTERNAL_CREDIT = {
         "Adam Benazouz contributed the full proof. Cinna Davis developed the earlier secant and incidence arguments.",
     ),
     "brown-cameron-stability": ExternalCredit("@adamben04", "https://github.com/adamben04"),
+    "frankl-geher-sagdeev-toth-strict-convexity": ExternalCredit("@adamben04", f"{REPOSITORY}/pull/961"),
     "currie-conjecture-19": ExternalCredit(
         "@aadrianvv",
         f"{REPOSITORY}/pull/154",
@@ -88,6 +89,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture": "frankl-geher-sagdeev-toth-strict-convexity",
     "de Joannis de Verclos’s projective rigidity conjecture": "de-verclos-projective-rigidity",
     "Erdős–Hajnal’s ordinal-square chromatic problem": "erdos-hajnal-ordinal-square-chromatic",
     "Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture": "barrett-evans-hall-kempton-se",

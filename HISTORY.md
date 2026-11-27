@@ -68,6 +68,10 @@ Answered Liang’s Open Problem 6.2 with a residue rule for the bulk and an exac
 
 Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).
 
+## 2026-11-26 — Frankl–Gehér–Sagdeev–Tóth’s strictly convex coloring conjecture
+
+Published the [reviewed written proof](results/frankl-geher-sagdeev-toth-strict-convexity/PROOF.md). There is a strictly convex norm on real five-space and a fixed countably infinite set such that every coloring with countably infinitely many colors has an isometric copy missing a color. This does not resolve the separate two-color question.
+
 ## 2026-11-26 — Independent review of Ekhad–Zeilberger’s most unfair bet
 
 Two project reviewers checked the all-length extremal argument and the sponsor’s full-alphabet rule. A separate exact enumeration verified the predicted maxima in all 24 full-alphabet cases at lengths two through five. Sponsor adjudication remains pending. [Review](results/ekhad-zeilberger-unfair-bet/REVIEW.md) · [Checker](results/ekhad-zeilberger-unfair-bet/check_full_alphabet.py)
