@@ -8,6 +8,8 @@ The multiset of leaf-to-leaf distances determines the total length of a generic 
 
 ## When the histogram alone suffices
 
+The ordinary chromatic symmetric function determines every proper tree of diameter six among all finite trees. Here every nonleaf vertex has a leaf neighbor. Branching and repeated numbers of leaf neighbors are unrestricted. In every diameter the proof recovers the extended generalized degree polynomial of the weighted core of a proper tree. [Proof](PROPER-DIAMETER-SIX.md) · [Independent review, sources and checks](PROPER-DIAMETER-SIX-REVIEW.md)
+
 Fix any reduced tree skeleton with at least two branch vertices and prescribe an arbitrary rooted decoration at each end. Vary all exterior arm orders and any selected internal path lengths independently through $`[1,t]`$. Among the $`p`$-parameter assignments, all except $`O(t^{p-1})`$ give trees identified among all finite trees by the ordinary chromatic symmetric function. The other internal paths may have any fixed positive lengths. [Subdivision theorem](DECORATED-SUBDIVISION-DENSITY.md) · [Review and checks](DECORATED-SUBDIVISION-REVIEW.md)
 
 If two finite metric trees have the same distribution of distances between uniform arclength samples, the tree with more leaves has at most twice its number of independent rational edge-length relations in extra leaves. A generic tree of any topology is identified against every rival with at most two such relations. For an arbitrary bound $`D`$ on this number, a finite ambiguity test across all topologies and all leaf surpluses needs at most $`4D`$ rival leaves. [Unmarked theorem](DISTANCE-CANCELLATION-CODIMENSION.md) · [Marked theorem](HEIGHT-RELATION-KERNEL.md) · [Review and checks](DISTANCE-NULLITY-REVIEW.md)

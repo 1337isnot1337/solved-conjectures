@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Every proper tree of diameter six
+
+The ordinary chromatic symmetric function determines every proper tree of diameter six among all finite trees. Here every nonleaf vertex has a leaf neighbor. Branching and repeated numbers of leaf neighbors are unrestricted. In every diameter the proof recovers the extended generalized degree polynomial of the weighted core of a proper tree. This is a partial theorem under the existing Stanley question. [Proof](docs/research-results/stanley-tree-subdivisions/PROPER-DIAMETER-SIX.md) · [Independent review, sources and checks](docs/research-results/stanley-tree-subdivisions/PROPER-DIAMETER-SIX-REVIEW.md)
+
 ## 27 November 2026 — Sharp cofinal-coordinate thresholds for disjoint-type guessing
 
 Cinna Davis established the forward-oriented width obstruction. The role-exchange proof identifies the earliest cofinal coordinate and classifies literal families containing both orientations. It uses the existing stationary-prefix construction. The two interleaving bounds suffice in ZFC when either role is allowed, even at unbounded width. The restricted forcing axiom and its countable forcing extensions supply necessity. The original Question 6.1 entry retains its rank and verification level. [Forward theorem](results/lambie-hanson-uhrik-disjoint-type-guessing/TAIL-COORDINATE.md) · [Mixed-orientation theorem](results/lambie-hanson-uhrik-disjoint-type-guessing/ROLE-EXCHANGE-TAIL.md) · [Review](results/lambie-hanson-uhrik-disjoint-type-guessing/TAIL-REVIEW.md)

@@ -153,6 +153,8 @@ Run `python3 docs/research-results/stanley-tree-subdivisions/verify_core_splits.
 
 The [free-length check](research-results/stanley-tree-subdivisions/verify_two_hub_free_lengths.py) independently recovers arm lengths from exact boundary coefficients. The [dominant-arm check](research-results/stanley-tree-subdivisions/verify_dominant_arm.py) tests signed cut counts, length swaps and regrouping divisibility.
 
+Run `python3 docs/research-results/stanley-tree-subdivisions/verify_proper_diameter_six.py` to reconstruct weighted diameter-four cores, verify the transformation of the ordinary forest polynomial, and invert the joint subset counts. [Verification scope](research-results/stanley-tree-subdivisions/PROPER-DIAMETER-SIX-REVIEW.md)
+
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_subdivision_density.py` and `python3 docs/research-results/stanley-tree-subdivisions/verify_decorated_endpoint_windows.py` for independent checks of oriented edge cuts, assigned lengths and rooted cap recovery. [Verification scope](research-results/stanley-tree-subdivisions/DECORATED-SUBDIVISION-REVIEW.md)
 
 Run `python3 docs/research-results/stanley-tree-subdivisions/verify_height_relation_kernel.py` and `python3 docs/research-results/stanley-tree-subdivisions/verify_distance_cancellation.py` to check the signed path equations, deletion and change of mark, and the ordinary histogram cancellation ranks. [Verification scope](research-results/stanley-tree-subdivisions/DISTANCE-NULLITY-REVIEW.md)
