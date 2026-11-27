@@ -8,7 +8,7 @@ The earlier [single-Cohen construction](ONE-COHEN.md) uses generic records to su
 
 ### Directed graph and selected triples
 
-Let \(T={}^{<\omega_1}\omega\), and write \(x\upharpoonright\alpha\) for the restriction of a node of length \(\beta>\alpha\). Use the same stationary-fibre function \(h\) and cofinal ladders \(\ell_\beta\) on the nonzero limit ordinals \(L\) as in the single-Cohen proof. Only nodes of lengths in \(L\) have nonempty lower-neighbour lists.
+Let \(T={}^{<\omega_1}\omega\), and write \(x\upharpoonright\alpha\) for the restriction of a node of length \(\beta>\alpha\). Partition the set \(L\) of nonzero countable limit ordinals into \(\omega_1\) stationary sets by Solovay’s stationary splitting theorem. Label each part by an ordinal, delete from that part the bounded initial segment through its label, and give any leftovers label zero. This defines \(h:L\to\omega_1\) with stationary fibres and \(h(\beta)<\beta\). For each \(\beta\in L\), fix an increasing cofinal ladder \(\ell_\beta:\omega\to\beta\). Only nodes of lengths in \(L\) have nonempty lower-neighbour lists.
 
 For every node \(x\) of length \(\beta\in L\), choose lower neighbours \(x\upharpoonright\alpha\) by stages \(2i,2i+1\) for \(i<\omega\). At any stage \(j\), a candidate level \(\alpha\) must be a nonzero limit below \(\beta\) and satisfy
 \[
@@ -22,9 +22,15 @@ Take as hyperedges the three vertices of each top edge together with its pointed
 
 Every triple is a directed two-path; bottom and top use different immutable edge modes; and each top edge has only one designated predecessor. A diagonal determines its unique directed two-path. Thus any repeated pair is the bottom pair of both triples. This rules out \(T_3,T_4\). A loose triangle would give a simple cycle of three monotone segments, hence exactly two turns and two directed paths with the same endpoints. For \(T_9\), the two pages of a repeated bottom pair are out-neighbours of its upper vertex; a third triple containing both gives a directed path between them, duplicating a path from their common predecessor. This rules out the other two patterns.
 
+### The stationary lemma
+
+For any countable map \(d:L\to\omega\), call \(\beta\) good if the \(h\)-values of same-colour predecessors in \(L\cap\beta\) are cofinal in \(\beta\). In each stationary fibre \(h^{-1}(\xi)\), some colour \(i_\xi\) occurs on a stationary set \(S_\xi\). One colour \(i\) is selected for unboundedly many \(\xi\); write \(A=\{\xi:i_\xi=i\}\). Choose \(\beta\) in any \(S_\xi\) with \(\xi\in A\), intersecting the club of limit points of \(A\) and the diagonal intersection of the clubs of limit points of all \(S_\eta\). For every \(\eta\in A\cap\beta\), there is \(\alpha\in S_\eta\cap\beta\); it has colour \(i\) and \(h(\alpha)=\eta\). Thus \(\beta\) is good.
+
+Repeat this argument for the countable map \(\beta\mapsto(d(\beta),\boldsymbol 1_{\beta\text{ is good}})\). A good vertex for this refined map is good for \(d\), so its cofinally \(h\)-high predecessors of the same refined colour are also good for \(d\). This is the two-step form we need.
+
 ### Colouring along a branch
 
-Suppose \(c:T\to\omega\). Define \(g:\omega_1\to\omega\) by \(g(\beta)=c(g\upharpoonright\beta)\), recursively. Apply the two successive stationary-good-vertex selections of the single-Cohen proof to this ground colouring \(g\). We obtain \(\beta\in L\), \(i=g(\beta)\), and predecessors \(\gamma<\beta\) of colour \(i\) with \(h(\gamma)\) arbitrarily high in \(\beta\), such that for each such \(\gamma\) there are colour-\(i\) predecessors with \(h\)-values unbounded in \(\gamma\).
+Suppose \(c:T\to\omega\). Define \(g:\omega_1\to\omega\) by \(g(\beta)=c(g\upharpoonright\beta)\), recursively. Apply the two-step stationary lemma to \(g\) restricted to \(L\). We obtain \(\beta\in L\), \(i=g(\beta)\), and predecessors \(\gamma<\beta\) of colour \(i\) with \(h(\gamma)\) arbitrarily high in \(\beta\), such that for each such \(\gamma\) there are colour-\(i\) predecessors with \(h\)-values unbounded in \(\gamma\).
 
 At each such \(y=g\upharpoonright\gamma\), stage \(2i\) chooses a base edge from some node \(g\upharpoonright\alpha\) with \(g(\alpha)=i\): the finite earlier-stage and ladder bounds are exceeded by one of its cofinally available predecessors. Hence there are top candidates of index \(i\) of arbitrarily high threshold for \(x=g\upharpoonright\beta\). At stage \(2i+1\), at least one exceeds the bounds for \(x\), so the selected top edge and its pointer produce a triple whose vertices all have colour \(i\). This contradicts properness.
 
