@@ -35,3 +35,14 @@ theorem and found no earlier exact path-perfectness assertion in
 its separate literature search. No Lean verification was run.
 The exact proof reviewed was commit
 `efb017f7841c7f8778c852b875e169426822797e`.
+
+## The two negative cases
+
+An independent review passed both the two-block argument in
+[PATH-FOUR-TWO-ISOLATES.md](PATH-FOUR-TWO-ISOLATES.md) and the
+34-vertex construction in [EDGE-FOUR-ISOLATES.md](EDGE-FOUR-ISOLATES.md).
+An independent implementation reproduced the direct edge and coloring
+checks. The audit also verified that the 34-vertex graph is vertex-critical
+and its longest path has 33 vertices. The one remaining forbidden graph
+is a three-vertex path plus three isolated vertices. Reviewed research
+commit: `8382892680911755fa663feb9c6097d38412afe3`.
