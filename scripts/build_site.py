@@ -45,6 +45,11 @@ class ExternalCredit:
 
 
 EXTERNAL_CREDIT = {
+    "planar-subtraction-games": ExternalCredit(
+        "@NHLOCAL",
+        f"{REPOSITORY}/issues/997",
+        "NHLOCAL developed the construction and proof with OpenAI ChatGPT (GPT-6.2).",
+    ),
     "chen-khare-sahi-jack": ExternalCredit(
         "@WadeDavis",
         f"{REPOSITORY}/issues/201",
@@ -92,6 +97,7 @@ STATUS_LABEL_SLUGS = {
     "Erdős–Galvin–Hajnal’s rainbow-star girth problem": "erdos-galvin-hajnal-rainbow-star-girth",
     "Erdős–Galvin–Hajnal’s continuum rainbow-star problem": "erdos-galvin-hajnal-continuum-rainbow-star",
     "Chen’s parity-free exact-one-marker conjecture": "chen-parity-free-exact-one-marker",
+    "Larsson–Saha–Yokoo’s periodicity and Gurvich–Vyalyi’s semilinearity conjectures": "planar-subtraction-games",
     "Cameron–Clow’s 2K₂-free path-perfect conjecture": "cameron-clow-twok2-free-path-perfect",
     "Cameron–Clow’s claw-free path-perfect conjecture": "cameron-clow-claw-free-path-perfect",
     "Cameron–Clow’s co-diamond path-perfect conjecture": "cameron-clow-co-diamond-path-perfect",

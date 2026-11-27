@@ -49,6 +49,10 @@ Read the [proof](../results/chen-parity-free-exact-one-marker/PROOF.md) and [ind
 With NetworkX 3.6.1, run `python3 results/chen-parity-free-exact-one-marker/verify.py --seed 1011 --trials 900`.
 The seeded replay tests the residual-flow step, not the entire theorem. No Lean verification was performed.
 
+## Finite planar subtraction games
+
+Run `python3 results/planar-subtraction-games/check_planar_game.py` to verify the complete residue table and compare direct legal play on 397,440 positions with the binomial formula. The [proof](../results/planar-subtraction-games/PROOF.md) and [independent review](../results/planar-subtraction-games/REVIEW.md) cover the nonperiodic rational line and both nonsemilinearity conclusions. The contributor’s external Lean build is described in the [source receipt](../results/planar-subtraction-games/AUDIT.md).
+
 ## Cameron–Clow’s co-diamond path-perfect conjecture
 
 Read the [critical-graph and connectivity proof](../results/cameron-clow-co-diamond-path-perfect/PROOF.md), [constructive Hall proof](../results/cameron-clow-co-diamond-path-perfect/HALL-CONSTRUCTION.md), and [independent review](../results/cameron-clow-co-diamond-path-perfect/REVIEW.md).

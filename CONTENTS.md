@@ -385,6 +385,7 @@ Both complete arguments passed independent internal mathematical review. They ar
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
+| [Larsson–Saha–Yokoo’s periodicity and Gurvich–Vyalyi’s semilinearity conjectures](results/planar-subtraction-games/) | NHLOCAL’s fifteen-move planar game has a nonperiodic rational line and nonsemilinear winning and losing sets. | Not formalized | [Proof](results/planar-subtraction-games/PROOF.md) · [Sources](results/planar-subtraction-games/AUDIT.md) · [Independent review](results/planar-subtraction-games/REVIEW.md) · [Arithmetic check](results/planar-subtraction-games/check_planar_game.py) |
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | Eriksson–Jonsson–Sjoestrand (2020), Conj. 1: fixed-scale counterexample (`a_n = 1`) and corrected theorem for arbitrary layer sets at every diverging scale. | ☑ | [Lean](lean/) · [Proof](results/l-solitaire-limit-shapes/proof.pdf) |
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | Pham (2022), §6: primitive period-10 necklace with reduced denominator degree 5. | ☑ | [Proof](results/pham-denominator-degree/PROOF.md) · [Check](results/pham-denominator-degree/verify.py) |
 | [Spivey's three-player War](results/spivey-multiplayer-war/PROOF.md) | Spivey (2010), Q5: three winner-first conventions admit cycles with all three players active. | ☑ | [Proof](results/spivey-multiplayer-war/PROOF.md) · [Check](results/spivey-multiplayer-war/verify.py) |
