@@ -140,6 +140,14 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Second adjacency eigenvalues and Seidel spread
+
+Run `python3 results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py`. It checks all 1,098 labeled graphs of orders two through five, all 1,022 threshold creation words through order ten and the 256 switching sign choices of the order-eight extremal Seidel matrix. Characteristic polynomials and rational root counts certify the comparisons. [Proof](../results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) · [Independent review](../results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md)
+
+## Normalized Nordhaus–Gaddum upper gap
+
+Run `python3 results/normalized-nordhaus-gaddum/verify.py`. It uses rational arithmetic to bracket normalized adjacency eigenvalues and test projected neighborhood estimates for a graph and its complement. It checks all labelled graph inputs of orders two through five, nine members of the authors’ focus family, and a reproducible sample on larger orders. [Proof](../results/normalized-nordhaus-gaddum/PROOF.md) · [Independent review](../results/normalized-nordhaus-gaddum/REVIEW.md)
+
 ## Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
 
 Run `python3 results/barrett-evans-hall-kempton-se/check_small_parameters.py` for exact integer comparator checks. The [audit](../results/barrett-evans-hall-kempton-se/AUDIT.md) explains how to generate the small simple endpoints using nauty and certify their strict inequalities using an integer C++ checker. The proof for orders at least 36 and weighted interpolation are analytic.
