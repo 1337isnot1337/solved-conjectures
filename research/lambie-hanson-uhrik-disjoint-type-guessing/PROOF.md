@@ -33,7 +33,7 @@ Write $`\exists^\infty`$ for unboundedly many countable ordinals. The standard e
 
 ```math
  \exists^\infty u_0\,\cdots\,\exists^\infty u_r\,\exists^\infty \alpha:
- \quad \alpha\text{ is a limit},\ f(\alpha)=k,\ 
+ \quad \alpha\text{ is a limit},\ f(\alpha)=k,\,
  (u_0,\ldots,u_r)\text{ is the initial segment of }C_\alpha .
 ```
 
@@ -41,7 +41,7 @@ For completeness, the prefix $`(\delta_0,\ldots,\delta_r)`$ and $`\beta`$ witnes
 
 If $`d=0`$, choose $`\alpha<\delta_0`$ of color $`k`$ by elementarity in $`M_0`$. Its whole ladder is below $`C_\beta(0)`$, so gives the separated type.
 
-If $`d>0`$, choose the first $`r`$ lower points $`u_0,\ldots,u_{r-1}`$ so that their merge with $`\delta_0,\ldots,\delta_{d-1}`$ is $`\sigma`$. For a lower point whose next upper cut in $`\sigma`$ is $`\delta_j`$, use $`M_j`$ and the current unbounded assertion to choose it strictly between $`\delta_{j-1}`$ and $`\delta_j`$, above the previous selected lower point (omit the left bound for $`j=0`$). The previous chosen points and all parameters of the unbounded assertion belong to $`M_j`$, and this preserves the assertion for the remaining points. Then use $`M_d`$ to choose $`u_r>\delta_{d-1}`$ and $`\alpha<\delta_d`$, with $`f(\alpha)=k`$ and the selected initial segment. The choices exist because the cut points and earlier choices are in $`M_d`$. All remaining lower ladder points are between $`\delta_{d-1}`$ and $`\delta_d`$. The merge of the two full $`n`$-prefixes therefore has exactly type $`\sigma 0^{n-r}1^{n-d}`$, as desired. This argues for ordinary guessing; it does not assert the strong unbounded-predecessor variant.
+If $`d>0`$, choose the first $`r`$ lower points $`u_0,\ldots,u_{r-1}`$ so that their merge with $`\delta_0,\ldots,\delta_{d-1}`$ is $`\sigma`$. For a lower point whose next upper cut in $`\sigma`$ is $`\delta_j`$, use $`M_j`$ and the current unbounded assertion to choose it strictly between $`\delta_{j-1}`$ and $`\delta_j`$, above the previous selected lower point (omit the left bound for $`j=0`$). The previous chosen points and all parameters of the unbounded assertion belong to $`M_j`$, and this preserves the assertion for the remaining points. Then use $`M_d`$ to choose $`u_r>\delta_{d-1}`$ and $`\alpha<\delta_d`$, with $`f(\alpha)=k`$ and the selected initial segment. The choices exist because the cut points and earlier choices are in $`M_d`$. All remaining lower ladder points are between $`\delta_{d-1}`$ and $`\delta_d`$. The merge of the two full $`n`$-prefixes therefore has exactly type $`\sigma 0^{n-r}1^{n-d}`$, as desired. This argument gives ordinary guessing. Adding a club parameter yields the [strong unbounded-predecessor and stationary-fiber conclusions](STRONG-GUESSING.md).
 
 ## Negative model when the lower parameter is unbounded
 
