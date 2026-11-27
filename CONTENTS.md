@@ -84,7 +84,7 @@ Earlier sources established the exceptional orders. These companion theorems are
 
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
-| [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | Determines the pair of words maximizing the leading difference of win probabilities in Litt’s game for every word length and alphabet size. Includes the sponsor’s full-alphabet convention. | Partial: exact unrestricted overlap-score maximum | [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) · [Proof](results/ekhad-zeilberger-unfair-bet/PROOF.md) · [Exact checks](results/ekhad-zeilberger-unfair-bet/verify.py) · [Issue 219](https://github.com/1337isnot1337/solved-conjectures/issues/219) |
+| [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | Determines the pair of words maximizing the leading difference of win probabilities in Litt’s game for every word length and alphabet size. Includes the sponsor’s full-alphabet convention. | Partial: exact unrestricted overlap-score maximum | [Lean scope](results/ekhad-zeilberger-unfair-bet/FORMALIZATION.md) · [Proof](results/ekhad-zeilberger-unfair-bet/PROOF.md) · [Independent review](results/ekhad-zeilberger-unfair-bet/REVIEW.md) · [Labeled pairs](results/ekhad-zeilberger-unfair-bet/verify.py) · [Full-alphabet check](results/ekhad-zeilberger-unfair-bet/check_full_alphabet.py) · [Issue 219](https://github.com/1337isnot1337/solved-conjectures/issues/219) |
 
 ## Positional games on graphs
 

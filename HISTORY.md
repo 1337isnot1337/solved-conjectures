@@ -12,6 +12,10 @@ Answered Liang’s Open Problem 6.2 with a residue rule for the bulk and an exac
 
 Proved that the misère quotient of 0.3312 is infinite, answering Liang’s Open Problem 6.1. The gap-coordinate transfer certificate gives the exact outcome of all positions of at most three heaps. [Proof](results/plambeck-siegel-03312/PROOF.md) · [Audit](results/plambeck-siegel-03312/AUDIT.md).
 
+## 2026-11-26 — Independent review of Ekhad–Zeilberger’s most unfair bet
+
+Two project reviewers checked the all-length extremal argument and the sponsor’s full-alphabet rule. A separate exact enumeration verified the predicted maxima in all 24 full-alphabet cases at lengths two through five. Sponsor adjudication remains pending. [Review](results/ekhad-zeilberger-unfair-bet/REVIEW.md) · [Checker](results/ekhad-zeilberger-unfair-bet/check_full_alphabet.py)
+
 ## 2026-11-26 — Contributor credit for the proof of Currie’s Conjecture 19
 
 The catalogue now credits @aadrianvv for the proof and reproducible checks and records Claude Opus 5.5 as co-author of the original commit. [Result](results/currie-conjecture-19/) · [Contribution](https://github.com/1337isnot1337/solved-conjectures/pull/154) · [Original commit](https://github.com/1337isnot1337/solved-conjectures/commit/32efcb11ade9c76c325ee5fb7089c6c97dc3992c)
