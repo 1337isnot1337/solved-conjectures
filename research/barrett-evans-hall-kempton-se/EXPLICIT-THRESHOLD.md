@@ -50,6 +50,6 @@ x+y-\frac{19}{18}\ \ge\
 \frac{-222\ell^2+6241\ell+5817}
      {342(\ell+3)(6\ell+41)}>0.
 \]
-The numerator is a concave quadratic positive at both endpoints (5817 and 26). This covers all parameters and proves the strict unweighted inequality.
+The numerator is a concave quadratic positive at both endpoints (5817 and 104). This covers all parameters and proves the strict unweighted inequality.
 
 Finally, if a simple endpoint in the weighted interpolation is disconnected, it contributes the appropriate non-strict corner line bound as in the [earlier proof](LARGE-ORDER-PROOF.md). The opposite-disconnection case is exactly the $SE(s)$ family. Therefore the strict proof for connected endpoints proves the inequality at all original weights for $n\ge36$ and identifies every equality case with both connectivities below one. No numerical spectral comparison is used in this threshold proof.
