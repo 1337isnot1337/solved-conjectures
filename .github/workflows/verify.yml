@@ -14,8 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Check Bourin common-shift identities
-        run: python3 results/bourin-crossed-heinz/verify_common_shift.py
+      - name: Check Bourin common-shift and local resolvent identities
+        run: |
+          python3 results/bourin-crossed-heinz/verify_common_shift.py
+          python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py
       - name: Check Stanley subdivision and repeated-branch reconstruction
         run: |
           python3 docs/research-results/stanley-tree-subdivisions/verify_leaf_surplus.py

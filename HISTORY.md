@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 UTC — Bourin’s inequality near every positive definite matrix paired with itself
+
+A second dimension-free theorem gives a quantitative neighbourhood of every positive definite pair of equal matrices, including repeated eigenvalues and every interior exponent. The bound applies at every joint condition number and specifies exactly when a singular-value sum has equality. [Theorem](results/bourin-crossed-heinz/ARBITRARY-CENTRES.md) · [Independent review and primary comparisons](results/bourin-crossed-heinz/ARBITRARY-CENTRES-REVIEW.md)
+
 ## 2026-11-27 UTC — Common scalar shifts in Bourin’s crossed-Heinz problem
 
 The crossed-Heinz inequality holds in a common positive spectral interval with endpoint ratio at most √2 for all dimensions, exponents and unitarily invariant norms. [Dimension-free proof](results/bourin-crossed-heinz/UNIFORM-BAND.md). The first deficit coefficient covers spectral multiplicities and distinguishes ranks with persistent equality. This partial theorem appears in the open-problem section. [Proof](results/bourin-crossed-heinz/COMMON-SHIFT.md) · [Source audit and review](results/bourin-crossed-heinz/SHIFT-REVIEW.md)
