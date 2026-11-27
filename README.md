@@ -183,7 +183,7 @@ A separate relaxation of Erdős’s one-third question restricts only circles ce
 
 ## Gaussian cold spots of high-rank type-A root lattices
 
-Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. Only finitely many ranks at intermediate scales remain open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
+Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. In every rank and at every scale the deep classes minimize when all but one coordinate are congruent. The remaining finite ranks at intermediate scales require a comparison with arbitrary translates. [All central levels](docs/research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](docs/research-results/root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
 
 ## Recognizing trees after one long subdivision
 
