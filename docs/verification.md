@@ -1,5 +1,9 @@
 # Verification
 
+## Erdős–Hajnal’s ordinal-square chromatic problem
+
+The new step is a written graph transfer, not a numerical test. Check the cofinal row-color lower bound and the small projected-component upper bound in the [proof](../results/erdos-hajnal-ordinal-square-chromatic/PROOF.md). The [audit](../results/erdos-hajnal-ordinal-square-chromatic/AUDIT.md) records the original statement, the forcing references and an alternate local proof. The [review](../results/erdos-hajnal-ordinal-square-chromatic/REVIEW.md) gives an internal independent check and the finite-power extension. No Lean verification is claimed.
+
 ## Tree reconstruction after long subdivisions
 
 Run the three standard-library Python checks in the [reproduction instructions](research-results/stanley-tree-subdivisions/README.md#reproduction). They compare ordinary cut polynomials, rooted products, subdivision factors and competing branch configurations. [Independent mathematical review](research-results/stanley-tree-subdivisions/REVIEW.md)
