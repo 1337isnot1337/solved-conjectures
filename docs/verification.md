@@ -6,6 +6,8 @@ Run `python3 results/soukup-complementary-graph-product/verify_components.py` to
 
 Run `python3 results/soukup-complementary-graph-product/verify_boolean_orders.py` to exhaust the 16 symmetric Boolean truth tables obtained from three orders. The [independent review](../results/soukup-complementary-graph-product/BOOLEAN-ORDERS-REVIEW.md) covers the uncountable restriction and the sharp four-color bound.
 
+Run `python3 results/soukup-complementary-graph-product/verify_grid_patterns.py` to check both grid orientations, every permutation pair through arity six and a finite construction of reserved rational intervals. Run `python3 results/soukup-complementary-graph-product/verify_ordinal_decoders.py` to check the two-sign certificates on six vertices, disjoint-rectangle tests and the six-cycle obstruction. [Grid review](../results/soukup-complementary-graph-product/GRID-REVIEW.md) · [Ordinal comparison review](../results/soukup-complementary-graph-product/ORDINAL-REVIEW.md)
+
 ## Bourin’s crossed-Heinz inequality
 
 The [finite-witness and computation proofs](../results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md) have exact arithmetic checks. Run `python3 results/bourin-crossed-heinz/verify_finite_witness.py` for the compressed test frames and `python3 results/bourin-crossed-heinz/verify_gap_grid.py` for the endpoint, threshold and grid identities.
