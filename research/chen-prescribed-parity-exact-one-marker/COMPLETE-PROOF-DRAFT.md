@@ -13,10 +13,13 @@ formulation without changing its vertex set.
 ## 1. Parameters and tangle
 
 Write h(t) for the [parity-free bound](https://github.com/1337isnot1337/solved-conjectures/blob/bff783fd9bbe010663047ecaa93deb8fa6a3296a/results/chen-parity-free-exact-one-marker/PROOF.md).
+One can equivalently obtain h(t) from the same free-set lemma and a
+[rooted ordinary grid](SIGNED-EXTENSION.md#an-alternative-parity-free-input),
+without using the fractional-packing argument.
 Set f(1)=0. For t≥2 let s=50t. Choose the parameter of the structural
-theorem below large enough that its odd clique has at least 7t branch
-trees and its two wall alternatives meet the respective size thresholds
-in the routing lemmas, including the handle count. Let w be its input
+theorem below large enough that its odd clique and its two wall
+alternatives meet the respective size thresholds in the routing lemmas,
+including the handle count. Let w be its input
 wall size, and z its deletion bound. Choose Θ depending only on t so that
 it is at least z+2, (2s+2)^3+2, and the tangle order sufficient for an
 aligned w-wall. Use e.g.
@@ -53,19 +56,14 @@ the rooted-grid theorem to that *particular* wall.
 
 ## 2. The three routing outcomes
 
-* **Odd clique.** Use [the free-pair argument](FREE-TERMINALS.md), §4.
-  The relevant clique tangle has order `ceil(2p/3)` for p branch trees.
-  At order less than 2t, a side containing an intact branch tree off
-  the separator intersects all branch trees: adjacency forbids any
-  other branch tree disjoint from that side. Therefore a separation of
-  that order with all selected terminals on the other side contradicts
-  freeness. Kawarabayashi–Wollan–Reed, Lemma 3.3, routes the t selected
-  pairs integrally with the requested parities. If one defines an odd
-  clique by all model triangles having odd length, the two definitions
-  agree: color the branch trees properly, and write b_ij for the
-  connector bit 1 plus its two endpoint colors. Every triangle has
-  bit sum 1. Switching color on branch i by b_1i+1, for i≠1,
-  makes every connector bit equal to 1.
+* **Odd clique.** The [odd-clique grid construction](ODD-CLIQUE-VIA-GRID.md)
+  converts the aligned odd clique into a grid model all of whose unit
+  faces lift to odd cycles. An entire model row on the far side of a
+  low-order separator contains an intact clique branch tree, which
+  forces that side to be large. The free roots can therefore be added
+  to this very grid. The same private-face parity switches as in the
+  odd-brick case complete the routing, without a separate parity
+  linkage theorem.
 * **Odd bricks.** [Odd-brick routing](ODD-BRICK-ROUTING.md) uses 9t
   whole pairs from the free terminal set. The fixed pairings are
   routed with a private odd face as a parity switch, giving simple
@@ -96,10 +94,11 @@ the separator. The definition of the large block orients towards
 B in the wall tangle and hence in the eligible-path tangle. More
 explicitly, the lifted small side on the C side does not contain
 B: putting B on that small side in the opposite orientation would
-contradict its large-block property. The lifted separation is within
-the aligned wall tangle's order: the large-block assertion uses
-separations of order at most |Z|+1, as in Heinlein §6 and the last
-paragraph of the proof of Theorem 7.1. An eligible path in C
+contradict its large-block property. The large-block outcome includes the admissibility of the deletion
+for the wall tangle: in Heinlein §6, a large block of G−Z is defined
+for |Z| at most the tangle order minus two. The lifted separation of
+order at most |Z|+1 is therefore within that wall tangle's order.
+This is also the definition used by Huynh–Joos–Wollan in Theorem 22. An eligible path in C
 avoids the separator and is on the small side, which is impossible.
 This also excludes any eligible path in a component of H not
 attached to B.
