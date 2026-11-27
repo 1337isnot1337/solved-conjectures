@@ -2,6 +2,8 @@
 
 ## Bourin’s common-shift theorem
 
+Run `python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py` for 225 exact rational resolvent comparisons and 80 complementary divided-difference checks in the [arbitrary-centre theorem](../results/bourin-crossed-heinz/ARBITRARY-CENTRES.md).
+
 Run `python3 results/bourin-crossed-heinz/verify_common_shift.py` for the exact quadratic coefficients and spectral-block conjugations used in the proof. The [common-shift expansion](../results/bourin-crossed-heinz/COMMON-SHIFT.md) and the [dimension-free spectral interval](../results/bourin-crossed-heinz/UNIFORM-BAND.md) have written proofs.
 
 ## Mean independent-set size at given average degree
