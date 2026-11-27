@@ -26,15 +26,7 @@ Iterating inside the common extensions yields $`d`$ groups of $`k+1`$ vertices o
 
 ## The pointwise limit at successors of regular cardinals
 
-Let $`\kappa`$ be infinite regular, $`\theta=\kappa^+`$, and $`h(n)=\min_H e_H(n)`$ over witnesses. Then ZFC determines the limit by the rainbow relation at this same host:
-
-```math
-\lim_{n\to\infty}\frac{h(n)}{n^2}=
-\begin{cases}
-1/4,&\neg R_2(\theta),\\
-1/2,&R_2(\theta).
-\end{cases}
-```
+Let $`\kappa`$ be infinite regular, $`\theta=\kappa^+`$, and $`h(n)=\min_H e_H(n)`$ over witnesses. Then the limit of $`h(n)/n^2`$ exists. It equals $`1/4`$ if $`R_2(\theta)`$ fails and $`1/2`$ if $`R_2(\theta)`$ holds.
 
 In the first case the simultaneous upper bound and Corollary 3.6 of Erdős–Galvin–Hajnal give $`h(n)=q(n)`$ pointwise. For a common upper bound in the second case, take a coloring $`c:[\theta]^2\to\kappa`$ attaining every color on each subset of size $`\theta`$. This is the square-bracket theorem for successors of infinite regular cardinals, coarsened to $`\kappa`$ colors. [Rinot–Todorčević, *Rectangular square-bracket operation for successor of regular cardinals*, p. 119 and Theorem 2.6](https://www.impan.pl/shop/publication/transaction/download/product/89041) · [Rinot–Zhang, Definition 2.1 and Facts 2.2–2.3](https://www.assafrinot.com/files/paper44.pdf#page=4) · [Todorčević's original paper](https://doi.org/10.1007/BF02392561)
 
