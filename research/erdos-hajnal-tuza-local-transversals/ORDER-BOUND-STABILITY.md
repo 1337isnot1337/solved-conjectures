@@ -51,3 +51,18 @@ This holds for **every** choice of those secondary
 witnesses, and also with \(A,B\) exchanged.
 The partitions give exact cross-incidence constraints
 for any equality-order construction.
+
+In particular at equality, for every minimum pair \(A,B\)
+and vertex \(v\notin A\cup B\), some minimum neighbor
+containing \(v\) is adjacent to both \(A\) and \(B\):
+choose the cut whose unique petal contains \(v\).
+Thus in any nontrivial component of the minimum-pair
+graph, the edges containing a fixed ground-set vertex
+form a dominating set of the component. Indeed for any
+edge \(A\) of the component avoiding that vertex, either
+one of its neighbors already contains it, or one of the
+common witnesses just described does. With defect \(h\),
+the same local assertion fails at at most \(h\) ground-set
+vertices for any specified minimum pair, since the fixed
+\(t+1\) representative petals omit only \(h\) points
+of its complement.
