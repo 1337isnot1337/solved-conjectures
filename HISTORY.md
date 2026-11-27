@@ -1,5 +1,21 @@
 # History
 
+## 2026-11-27 UTC — Gajser–Mohar’s polynomial normal-cover conjecture
+
+The [normal-cover polynomial theorem](results/gajser-mohar-polynomial-normal-cover/) answers the fixed-clique-bound question from the end of §4 of the original paper, with sharp growth exponent for every bound. The two written upper proofs use induced normal subcovers and disjoint events in a random permutation. A prefix-tree construction gives the matching exponent. The publication does not address the exact two-parameter extremal function. No Lean formalization was used. [Discovery and review issue #989](https://github.com/1337isnot1337/solved-conjectures/issues/989).
+
+## 2026-11-27 UTC — de Berg–Sadhukhan–Spieksma’s one-stable domination conjecture
+
+The [one-stable domination theorem](results/de-berg-sadhukhan-spieksma-one-stable-domination/) proves the optimal linear order of approximation for every bounded arrival degree with at most one membership change per insertion. The deterministic counter algorithm uses no future edges or degree bound. The incidence-budget proof applies to every prefix against its unrestricted optimum. No Lean formalization was used. [Discovery and review issue #995](https://github.com/1337isnot1337/solved-conjectures/issues/995).
+
+## 2026-11-27 UTC — de Berg–Sadhukhan–Spieksma’s stable domination threshold
+
+The [stable domination threshold](results/de-berg-sadhukhan-spieksma-stable-domination-threshold/) shows that the minimum dominating set problem in the vertex-arrival model admits a stable approximation scheme exactly at maximum degree at most two. The negative side holds for bipartite subcubic graphs by a recourse-preserving online reduction. No Lean formalization was used. [Discovery and review issue #996](https://github.com/1337isnot1337/solved-conjectures/issues/996).
+
+## 2026-11-27 UTC — Fernandes et al.’s two-token chromatic conjecture
+
+The [two-token chromatic counterexample](results/fernandes-two-token-chromatic/) refutes Conjecture A.1 in the 2026 paper by Fernandes et al. Five cycle factors give a five-coloring of the two-token graph, while the original eleven vertices require six colors. The independently reviewed proof also gives arbitrarily large counterexamples of both parities by complete joins. No Lean formalization was used. [Discovery and review issue #991](https://github.com/1337isnot1337/solved-conjectures/issues/991).
+
 ## 2026-11-27 — Lean verification of the Byrne–Tait density gap
 
 Lean verifies Cinna Davis’s proof for every word length at least two, including nonnormal abelian subgroups. The strict build, axiom audit and stock-kernel replay passed. [Proof and verification receipt](results/byrne-tait-odd-sidon/README.md#lean-verification).

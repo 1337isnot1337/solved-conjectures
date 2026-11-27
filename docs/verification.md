@@ -4,6 +4,37 @@
 
 Run `python3 results/de-verclos-projective-rigidity/check_geometry.py` for exact secant determinants and transverse cross-ratio identities. The [review](../results/de-verclos-projective-rigidity/AUDIT.md) distinguishes these checks from the full written argument.
 
+## Fernandes et al.’s two-token chromatic conjecture
+
+Read the [cycle-factor counterexample](../results/fernandes-two-token-chromatic/PROOF.md).
+Run `python3 results/fernandes-two-token-chromatic/verify.py` from the repository root.
+The checker verifies the pair partition, the triangle-free complement,
+and all token adjacencies directly, also checking five mixed joins up to
+order 58. It does not need a SAT solver.
+
+## de Berg–Sadhukhan–Spieksma’s stable domination threshold
+
+Read the [online stretching reduction, threshold proof and local block algorithm](../results/de-berg-sadhukhan-spieksma-stable-domination-threshold/PROOF.md).
+See the [independent review receipt](../results/de-berg-sadhukhan-spieksma-stable-domination-threshold/REVIEW.md).
+Run `python3 results/de-berg-sadhukhan-spieksma-stable-domination-threshold/verify.py` from the repository root.
+It checks the path interface, lifted optima, the block scheme on all specified small graphs, and 10,000 mixed updates. The written proof covers arbitrary lengths and graph orders.
+
+## de Berg–Sadhukhan–Spieksma’s one-stable domination conjecture
+
+Read the [deterministic counter algorithm and its proof](../results/de-berg-sadhukhan-spieksma-one-stable-domination/PROOF.md).
+See the [independent review receipt](../results/de-berg-sadhukhan-spieksma-one-stable-domination/REVIEW.md).
+Run `python3 results/de-berg-sadhukhan-spieksma-one-stable-domination/verify.py` from the repository root.
+It checks every prefix of 33,867 ordered graphs. The bound is proved in general by the incidence budget; the finite check is supplementary.
+
+## Gajser–Mohar’s polynomial normal-cover conjecture
+
+Read the [two upper proofs and the matching-degree construction](../results/gajser-mohar-polynomial-normal-cover/PROOF.md).
+See the [independent review receipt](../results/gajser-mohar-polynomial-normal-cover/REVIEW.md).
+Run `python3 results/gajser-mohar-polynomial-normal-cover/verify.py` from the repository root.
+It checks over two million tree-cover intersections and all rectangle
+partitions of the specified small matrices. These checks are supplementary
+to the written general proof.
+
 ## Erdős–Hajnal’s ordinal-square chromatic problem
 
 For the [order classification](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-SPECTRUM.md), verify the Milner–Rado covering obstruction at both cardinals, the edge between two full sets in the constructed graph, and the separate colorings of full and partial rows. The [independent review](../results/erdos-hajnal-ordinal-square-chromatic/MIXED-ORDER-REVIEW.md) checks the limit-power cutoff, the case of a single block and the chromatic number of the product.
