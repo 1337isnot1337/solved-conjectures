@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newcommand{\poly}{\mathrm{poly}}
+\begin{document}
+\begin{center}
+{\LARGE Zhang's uncountable triple rainbow problem}
+\end{center}
+\vspace{0.6em}
+\begin{abstract}
+We give a ZFC counterexample to both clauses of Question 5.5 of
+Jing Zhang. The construction is a matching rule indexed by the two
+largest vertices of a triple, using a strong colouring of pairs.
+\end{abstract}
+
+For a set \(A\) of ordinals, a colouring of \([A]^r\) is
+\(2\)-bounded if every colour class has at most two members. A subset
+of \(A\) is a \emph{rainbow} if the colouring is injective on its
+\(r\)-element subsets.
+
+\begin{theorem}
+There is a \(2\)-bounded \(f:[\omega_1]^3\to\omega_1\) such that,
+for every \(u<v<\omega_1\) and every uncountable
+\(X\subseteq\omega_1\setminus(v+1)\), some \(a<b\) in \(X\) satisfy
+\[
+   f(\{u,a,b\})=f(\{v,a,b\}).
+\]
+In particular, \(f\) has no uncountable rainbow.
+\end{theorem}
+
+\begin{proof}
+By Todor\v{c}evi\'c's square-bracket theorem \cite{tod}, take
+\(c:[\omega_1]^2\to\omega_1\) taking all values on the pairs of every
+uncountable set. Fix an enumeration
+\(\langle p_\xi:\xi<\omega_1\rangle\) of the pairs of ordinals.
+For \(a<b\), the single pair \(p_{c(\{a,b\})}\) instructs the
+matching at \(\{a,b\}\). If that pair is \(\{u,v\}\subseteq a\),
+give the two triples \(\{u,a,b\}\) and \(\{v,a,b\}\) one new common
+colour. Use distinct such colours at distinct top pairs, and a new
+singleton colour for each remaining triple. A triple has a unique
+top pair, so these instructions are disjoint and the resulting
+colouring is \(2\)-bounded, using at most \(\aleph_1\) colours.
+
+For \(u,v,X\) as in the statement, choose \(\xi\) with
+\(p_\xi=\{u,v\}\). Some \(a<b\) in \(X\) satisfy \(c(\{a,b\})=\xi\).
+Both \(u,v\) lie below \(a\), so this instruction gives the claimed
+collision. For any uncountable candidate rainbow, take \(u,v\) inside
+it and let \(X\) be its tail above them.
+\end{proof}
+
+Thus the proposed relation in \cite[Question 5.5]{zhang} is false in
+ZFC, and in particular PFA cannot imply it. Appending a common tuple
+of larger vertices to each colliding triple, and recording that tuple
+in the colour, gives the corresponding result for every finite
+arity at least three. This does not decide the separate question
+about arbitrary countable order types.
+
+\begin{thebibliography}{9}
+\bibitem{tod}
+S. Todor\v{c}evi\'c, \emph{Partitioning pairs of countable ordinals},
+Acta Math. 159 (1987), 261--294.
+\href{https://doi.org/10.1007/BF02392561}{doi:10.1007/BF02392561}.
+
+\bibitem{zhang}
+J. Zhang, \emph{Some remarks on uncountable rainbow Ramsey theory},
+Proc. Amer. Math. Soc. 151 (2023), 865--880.
+\href{https://arxiv.org/abs/1809.00649}{arXiv:1809.00649}.
+\end{thebibliography}
+\end{document}
