@@ -17,7 +17,7 @@ when they meet in exactly \(m\) points. If
  r<5t+1+\left\lfloor(t-1)/3\right\rfloor,
 \]
 then every adjacent pair in this graph is at distance
-at most six from a heavy edge, measured from the
+at most four from a heavy edge, measured from the
 nearer endpoint. If \(s\ge2\), distance one suffices
 and that assertion does not need the strict inequality
 on \(r\).
@@ -46,7 +46,7 @@ It remains to take \(s=1\), \(r=5t+1\). Every edge has
 at least \(2t+1\) shared vertices, by the rank lower
 bound for 3-wise intersecting families after deleting
 private vertices. Suppose all edges at distance at
-most six from the starting pair are light. Both
+most four from the starting pair are light. Both
 starting edges have projections to the shared vertices
 of size exactly \(2t+1\). Their projections together
 cover a set \(M\) of size \(3t+1\). Their two complements
@@ -73,18 +73,20 @@ spare as \(x\). Choose \(p\in P,q\in Q,u\in R\).
 Starting each time from the same state, one swap gives
 each of \(P-p+x,\ Q-q+x,\ R-u+x\). Their union covers
 everything except \(p,q,u\). The strict threshold
-assumption at \(r=5t+1\) implies \(t\ge4\). For the
-fourth block, take \(x,p,q,u\) and any \(t-4\) other
-points of \(P\). Starting again from the original state,
-put \(x\) in the designated block \(P\) in one swap.
-Putting \(q\) and \(u\) there each takes at most two
-more swaps: first move the desired point to the spare
-position, then swap it in for a point outside the
-target. Keep every already-correct point in \(P\).
-The first auxiliary block \(R\) takes one step from
-the starting pair, and the longest subsequent sequence
-takes five swaps. Thus the maximum distance is six,
-and all the used edges would be light.
+assumption at \(r=5t+1\) implies \(t\ge4\). Choose
+distinct \(y,z\in P\setminus\{p\}\). To generate
+\(Q'=Q-q+y\), swap \(y\) out of \(P\) into the spare
+position, then swap it into \(Q\) for \(q\); similarly
+generate \(R'=R-u+z\) starting from the original state.
+Each takes two swaps. Now \(Q',R'\) are disjoint;
+their complement in \(M\) has \(t+1\) points and
+contains \(x,p,q,u\). Generate any \(t\)-subset of that
+complement containing these four points. The first
+auxiliary block \(R\) took one step from the original
+pair, each of \(Q',R'\) takes two more, and the desired
+fourth omission takes one further step. Thus all
+the witnesses are at distance at most four and would
+be light.
 
 The four omissions are distinct, cover \(M\), and
 their common intersection is exactly \(\{x\}\).
