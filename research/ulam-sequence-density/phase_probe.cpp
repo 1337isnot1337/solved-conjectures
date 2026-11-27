@@ -414,6 +414,81 @@ bool check_boundary_rules(const Membership& original) {
     return true;
 }
 
+bool check_smallest_summand_descent(const Membership& original) {
+    constexpr int cutoff = 10'000'000;
+    std::vector<int> smallest(cutoff + 1);
+    std::vector<int> child(cutoff + 1);
+    std::vector<int> terms;
+    std::vector<int> outliers;
+    int represented = 0;
+    for (int n = 1; n <= cutoff; ++n) {
+        if (middle_third(n)) {
+            int minimum = n;
+            for (int s : outliers) {
+                const int t = n - s;
+                if (s != t && original[t]) {
+                    minimum = std::min(minimum, std::min(s, t));
+                }
+            }
+            if (minimum < n) {
+                smallest[n] = minimum;
+            }
+        } else {
+            for (int s : terms) {
+                if (2 * s >= n) {
+                    break;
+                }
+                if (original[n - s]) {
+                    smallest[n] = s;
+                    break;
+                }
+            }
+        }
+        const int minimum = smallest[n];
+        represented += minimum > 0;
+        if (minimum > 2) {
+            const int retained = smallest[minimum];
+            child[n] = n - minimum + retained;
+            if (!retained || !smallest[child[n]] || original[child[n]]
+                || smallest[child[n]] > retained) {
+                return false;
+            }
+        }
+        if (original[n]) {
+            terms.push_back(n);
+            if (!middle_third(n)) {
+                outliers.push_back(n);
+            }
+        }
+    }
+    if (represented != 8'138'684) {
+        return false;
+    }
+    constexpr std::array<int, 5> cutoffs{2, 69, 256, 1024, 4096};
+    constexpr std::array<int, 5> large_targets{6'657'954, 1'270'428, 239'826, 25'838, 5414};
+    constexpr std::array<int, 5> peak_basin{100, 19, 11, 4, 3};
+    std::vector<int> root(cutoff + 1);
+    for (std::size_t i = 0; i < cutoffs.size(); ++i) {
+        std::vector<int> counts(cutoff + 1);
+        int large = 0;
+        int largest = 0;
+        for (int n = 3; n <= cutoff; ++n) {
+            if (smallest[n]) {
+                const bool descend = smallest[n] > cutoffs[i];
+                large += descend;
+                root[n] = descend ? root[child[n]] : n;
+                largest = std::max(largest, ++counts[root[n]]);
+            }
+        }
+        std::cout << "Summand cutoff " << cutoffs[i] << ": " << large
+                  << " targets above it, largest basin " << largest << ".\n";
+        if (large != large_targets[i] || largest != peak_basin[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main() {
     constexpr int cutoff = 100'000'000;
     const Membership membership = generate_by_phase(cutoff);
@@ -437,6 +512,10 @@ int main() {
     }
     if (!check_boundary_rules(membership)) {
         std::cerr << "The boundary-rule extinction or pulse check failed.\n";
+        return 1;
+    }
+    if (!check_smallest_summand_descent(membership)) {
+        std::cerr << "The smallest-summand descent check failed.\n";
         return 1;
     }
     return check_dilation(membership, 2) && check_dilation(membership, 3) ? 0 : 1;

@@ -27,6 +27,9 @@ at integer records.
 The [large-summand argument](large-summands.md) gives an elementary
 quantitative lower bound at a record low in terms of crowded targets
 whose representations all avoid a fixed prefix.
+The [smallest-summand descent](summand-descent.md) sends every such
+target to a crowded one with a short summand. It reduces the count to
+an average preimage-size estimate.
 A [sparse completion](sparse-completion.md) preserves any genuine prefix,
 generates every selected term and includes every compulsory sum. Allowing
 multiply represented terms to enter makes zero upper Banach density possible.
