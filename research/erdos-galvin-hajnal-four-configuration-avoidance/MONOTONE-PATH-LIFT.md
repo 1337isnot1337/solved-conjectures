@@ -22,3 +22,9 @@ The vertex set has cardinality \(2^{\aleph_0}\): level \(\omega\) already has th
 ## Scope and literature
 
 The original paper's Theorems 11.6 and 11.11 gave separate omissions and left the simultaneous question. Lambie-Hanson–Uhrik credit related special-cycle-free graphs to Komjáth, Hajnal–Komjáth and Soukup. The new inference here is the common directed-segment transfer and its consequence for simultaneous omission on \(\omega_1\) under CH. It does not prove an \(\omega_1\)-vertex witness in all models of ZFC, and cannot settle 9/C as written: four-edge directed paths lead to triples of the type \(\mathcal T_4\) forbidden there. The separate [infinite-pair core reduction](TWO-HEAVY-PAIR-CORE.md) concerns a possible negative model for 9/B, not a contradiction to CH.
+
+## Making the two-infinite-pair part itself uncountably chromatic
+
+For each directed graph edge \(a\to b\), add countably many fresh private vertices \(z_{ab,i}\) and triples \(abz_{ab,i}\). This retains both omissions. In a putative loose triangle, a private vertex cannot be one of the intersection vertices, so a new padded triple contributes the single monotone segment \(ab\) to the same three-segment argument. In a putative \(\mathcal T_9\), a private vertex cannot lie on the repeated pair. If it is one of the two pages, the third triple would have to contain it but cannot equal its only incident triple. Thus any forbidden \(\mathcal T_9\) would already consist of original path triples.
+
+Every original two-path triple now has two infinite-codegree pairs, its two directed graph edges, and its endpoint pair still belongs to that one original triple. Therefore the subhypergraph made only of triples having at least two infinite pairs already has chromatic number \(\aleph_1\) in the CH witness. The construction keeps the same size because there are at most \(2^{\aleph_0}\) edges and each gets countably many private pages.
