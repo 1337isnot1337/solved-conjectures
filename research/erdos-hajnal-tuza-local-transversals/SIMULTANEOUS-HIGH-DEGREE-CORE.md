@@ -41,8 +41,12 @@ number fewer than \(b^u/2\). Subtract them from the first bound.
 
 In particular:
 
-1. Every original edge has at least \(m\) high-degree
-   points (use \(T=\varnothing\), \(j=1\)).
+1. Every original edge \(F\) has at least \(m+t-u\)
+   high-degree points. Take \(T\) to be a largest
+   subset of \(F\cap H\) of size at most \(t-u\)
+   and use \(j=1\). The witness has at least \(m\)
+   more high-degree points in \(F\), disjoint from \(T\).
+   This forces \(|T|=t-u\) and gives the bound.
 2. The trace family \(\{F\cap H:F\in\mathcal F\}\) has
    transversal number at least \(t-u+1\) (every small cut
    of \(H\) is missed by an original edge).
