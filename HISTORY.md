@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Erdős–Galvin–Hajnal’s link-path partition problem
+
+Cinna Davis answers the 1975 Problem 8/E by encoding a triple system that avoids the three-edge tight path using a bounded coloring of pairs. Together with Todorčević’s model and the original authors’ CH example, the encoding gives relative independence over ZFC. [Proof](results/erdos-galvin-hajnal-link-path-partition/PROOF.md) · [Independent review](results/erdos-galvin-hajnal-link-path-partition/REVIEW.md) · [Original issue](https://github.com/1337isnot1337/solved-conjectures/issues/1045)
+
 ## 2026-11-27 UTC — Distance reconstruction for one four-valent hub
 
 The ordinary unlabelled vertex-distance histogram identifies a density-one set of independent subdivisions of every fixed reduced tree with one four-valent vertex and otherwise trivalent hubs. Marked signed profiles and three necessary path-length equations decide the first positive degree-excess class analytically. Higher classes and Stanley’s full question remain open. [Proof](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-RIGIDITY.md) · [Internal review](docs/research-results/stanley-tree-subdivisions/QUARTIC-DISTANCE-REVIEW.md)
