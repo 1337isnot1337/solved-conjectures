@@ -5,7 +5,7 @@ for every order $`n\ge 65`$. In fact all minimizers over complementary
 pairs of connected simple graphs are the generalized dandelions,
 up to complementation. This improves the [effective threshold 500](EFFECTIVE-LEAF-THRESHOLD.md)
 and reduces the no-double-leaf regime to a finite range. The later
-[finite interval certificate](FINITE-INTERVAL.md) and [small-order enumeration](SMALL-REMAINDER.md) leave orders 11 through 20.
+[finite interval certificate](FINITE-INTERVAL.md) and [small-order enumeration](SMALL-REMAINDER.md) cover the other general orders except 11 through 20. The [anchored proof](PROOF.md) covers those orders in the diameter-three domain.
 
 The proof below and its [exact interval verifier](verify_effective_interval.py)
 run on scalar inequalities, not on any enumeration of graphs on
