@@ -177,9 +177,13 @@ A supplement characterizes which deep holes of any lattice remain global minimiz
 
 For every Gaussian parameter, the minima on $`A_n^*`$ occur exactly at the deep holes. The proof settles the intermediate parameters in every rank at least four and gives the minimum as an explicit product. [Theorem and review](docs/research-results/dual-a-universal-cold-spots/README.md)
 
+## Site-centered pinned distances
+
+A separate relaxation of Erdős’s one-third question restricts only circles centered at sites. Results on mixed-circle incidences, active perpendicular bisectors and uniform-disk limits are collected with the existing proof. [Site-centered results and exact scope](results/erdos-general-position-pinned-distances/README.md#circles-centered-at-sites)
+
 ## Gaussian cold spots of high-rank type-A root lattices
 
-Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. Only finitely many ranks at intermediate scales remain open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
+Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. In every rank and at every scale the deep classes minimize when all but one coordinate are congruent. The remaining finite ranks at intermediate scales require a comparison with arbitrary translates. [All central levels](docs/research-results/root-a-high-rank-cold-spots/ALL-CENTRAL.md) · [One-outlier theorem](docs/research-results/root-a-high-rank-cold-spots/ONE-OUTLIER.md) · [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
 
 ## Recognizing trees after one long subdivision
 

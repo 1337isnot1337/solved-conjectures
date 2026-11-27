@@ -76,6 +76,8 @@ jobs:
         run: |
           python3 results/erdos-general-position-pinned-distances/verify_farthest_conflicts.py
           python3 results/erdos-general-position-pinned-distances/check_localization.py
+          python3 results/erdos-general-position-pinned-distances/check_circle_concentration.py
+          python3 results/erdos-general-position-pinned-distances/check_bisector_moments.py
       - name: Check the shutout risk updates and Breaker strategy
         run: python3 results/cioba-savvas-shutout-number/verify.py
       - name: Check oriented spectrum nonconstancy witnesses
@@ -246,6 +248,7 @@ jobs:
         run: |
           python3 docs/research-results/root-a-high-rank-cold-spots/check_central.py
           python3 docs/research-results/root-a-high-rank-cold-spots/check_displaced.py
+          python3 docs/research-results/root-a-high-rank-cold-spots/check_central_order.py
       - name: Check the Leech lattice deep-hole coefficients
         run: python3 docs/research-results/leech-cold-spots-asymptotics/verify.py
       - name: Check mixed-hole Gaussian coefficients and equality cases
