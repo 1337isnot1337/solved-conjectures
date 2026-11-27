@@ -177,6 +177,10 @@ A supplement characterizes which deep holes of any lattice remain global minimiz
 
 For every Gaussian parameter, the minima on $`A_n^*`$ occur exactly at the deep holes. The proof settles the intermediate parameters in every rank at least four and gives the minimum as an explicit product. [Theorem and review](docs/research-results/dual-a-universal-cold-spots/README.md)
 
+## Gaussian cold spots of high-rank type-A root lattices
+
+Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for every positive Gaussian scale. Uniform small- and large-scale intervals also work in every rank. Only finitely many ranks at intermediate scales remain open. [Partial theorem and review](docs/research-results/root-a-high-rank-cold-spots/README.md)
+
 ## Current research
 
 Open campaigns, intermediate proofs, and experimental checks are on the [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research). Each result page states the scope of the claim and its verification. Several partial results are awaiting independent proof review.

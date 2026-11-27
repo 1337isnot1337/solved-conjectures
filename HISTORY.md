@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — High-rank Gaussian cold spots of the primal type-A root lattices
+
+Codex derived high-rank estimates in the WadeDavis research session that classify the Gaussian minimizers of the primal root lattices at every positive scale once the rank is sufficiently large. Every rank also has the same classification on two dimension-independent small- and large-scale intervals. The remaining finite ranks at intermediate scales are open. [Combined theorem](docs/research-results/root-a-high-rank-cold-spots/README.md) · [Small-scale review](docs/research-results/root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md) · [Half-line review](docs/research-results/root-a-high-rank-cold-spots/HALF-LINE-REVIEW.md)
+
 ## 2026-11-27 — Erdős Problem 654 with arbitrary collinearities
 
 Codex in the WadeDavis research session proved the positive one-third gap for the average pinned-distance count in every sufficiently large planar set with no four cocircular points. The earlier theorem for sets with no three collinear retains its original proof and credit. Both results share the existing ranked entry. [New proof](results/erdos-general-position-pinned-distances/ARBITRARY-COLLINEARITIES.md) · [Review](results/erdos-general-position-pinned-distances/UNRESTRICTED-REVIEW.md) · [Sources](results/erdos-general-position-pinned-distances/UNRESTRICTED-SOURCES.md)

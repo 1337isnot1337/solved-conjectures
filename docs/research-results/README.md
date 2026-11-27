@@ -49,6 +49,10 @@ The supplement gives a necessary and sufficient criterion for a fixed hole to re
 
 The Gaussian sum on $`A_n^*`$ attains its minimum precisely at the deep holes for every positive parameter. Circular averaging of one-dimensional theta products yields the inequality and its equality cases. [Proof](dual-a-universal-cold-spots/PROOF.md) · [Review and reproduction](dual-a-universal-cold-spots/REVIEW.md)
 
+## Gaussian cold spots of high-rank type-A root lattices
+
+The deep holes of $`A_n`$ are the only Gaussian minimizers at every positive scale in all sufficiently high ranks. Both a small-scale interval and a large-scale interval work simultaneously across all ranks. The proof uses tilted one-dimensional discrete Gaussians conditioned to have coordinate sum zero. [Partial theorem](root-a-high-rank-cold-spots/README.md) · [Small-scale proof](root-a-high-rank-cold-spots/SMALL-SCALE.md) · [Half-line proof](root-a-high-rank-cold-spots/HALF-LINE.md) · [Independent review](root-a-high-rank-cold-spots/SMALL-SCALE-REVIEW.md)
+
 ## Prior results and quantitative refinements
 
 The original unrestricted Estrugo–Pastine star-center degree question follows from earlier work. The manuscript proves two stronger quantitative statements with their own constructions. The explicit Hurlbert–Kamat witness falls under an earlier announced construction by Feghali, Johnson and Thomas. The source audit identifies the relevant priority decisions. [Estrugo–Pastine refinements](estrugo-pastine-star-center-degree/README.md) · [Hurlbert–Kamat witness](hurlbert-kamat/README.md) · [Other prior-resolution searches](2026-11-26-named-conjecture-screen/README.md)

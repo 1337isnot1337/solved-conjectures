@@ -8,6 +8,10 @@ Complete for the exponential shutout-number bounds in Conjectures 3.2 and 3.3 of
 
 The all-rank theorem, its equality cases and its positive Hessian have a reviewed written proof. No Lean formalization is registered. [Statement and verification scope](research-results/dual-a-universal-cold-spots/README.md)
 
+## Gaussian cold spots of high-rank type-A root lattices
+
+The all-positive-scale theorem in sufficiently high ranks and the two dimension-independent endpoint intervals have an internally reviewed written proof, finite exact comparisons, and no Lean formalization. [Scope and checks](research-results/root-a-high-rank-cold-spots/README.md)
+
 ## Leech lattice cold-spot limit
 
 **Lean status:** none. The written proof establishes the limiting deep-hole type. A Python verifier checks the coefficient comparison over all 23 types. [Proof and verification scope](research-results/leech-cold-spots-asymptotics/README.md)
