@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Effective finite witnesses for Bourin’s inequality
+
+For each fixed rank, the largest additive crossed-Heinz gap per selected singular value can be enclosed to any prescribed rational accuracy over every exponent and finite dimension. The proof bounds the order required to retain a strict violation and gives a terminating real-algebraic test. Bourin’s exact inequality remains open. [Proof](results/bourin-crossed-heinz/EFFECTIVE-GAP.md) · [Source comparison and review](results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md)
+
 ## 27 November 2026 — A linear bound for tree distance-histogram comparisons
 
 For each fixed surplus in the rival’s number of leaves, generic reconstruction from the ordinary distance histogram across all reduced topologies now has a finite test with linearly many vertices. The proof recovers matching rooted profiles on the original trees whenever the target has at least 97 times the surplus in leaves. A converse gives all-or-none ambiguity at every leaf count above the threshold for the given surplus. Stanley’s broader problem remains open. [Proof](docs/research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md) · [Audit](docs/research-results/stanley-tree-subdivisions/LINEAR-SURPLUS-REVIEW.md)

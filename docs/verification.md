@@ -1,6 +1,8 @@
 # Verification
 
-## Bourin’s common-shift theorem
+## Bourin’s crossed-Heinz inequality
+
+The [finite-witness and computation proofs](../results/bourin-crossed-heinz/FINITE-WITNESS-REVIEW.md) have exact arithmetic checks. Run `python3 results/bourin-crossed-heinz/verify_finite_witness.py` for the compressed test frames and `python3 results/bourin-crossed-heinz/verify_gap_grid.py` for the endpoint, threshold and grid identities.
 
 Run `python3 results/bourin-crossed-heinz/verify_arbitrary_centres.py` for 225 exact rational resolvent comparisons and 80 complementary divided-difference checks in the [arbitrary-centre theorem](../results/bourin-crossed-heinz/ARBITRARY-CENTRES.md).
 
