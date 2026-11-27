@@ -31,11 +31,15 @@ A_S=T(8,m;S)+b\bigl(T(4,1;S')-T(4,0;S')-L T(3,1;S')\bigr).
 For subscripts abbreviate a set of ranks by its increasing string. The coefficient formulas in rank five are
 
 ```math
-\begin{aligned}
-c_0&=\sum_{S\subseteq R}(-1)^{\# S}A_S,\\
-c_1&=-A_1+A_{12}-A_{123}+A_{13}+A_{234}-A_{24}-A_{34}+A_4,\\
-c_2&= A_{12}-A_{14}-A_2-A_{23}+A_{24}+A_3 .
-\end{aligned}
+c_0=\sum_{S\subseteq R}(-1)^{\# S}A_S,
+```
+
+```math
+c_1=-A_1+A_{12}-A_{123}+A_{13}+A_{234}-A_{24}-A_{34}+A_4,
+```
+
+```math
+c_2=A_{12}-A_{14}-A_2-A_{23}+A_{24}+A_3.
 ```
 
 Here is a recurrence to derive and reproduce the formulas. Gao–Xie reciprocity in rank $`r`$ reads
