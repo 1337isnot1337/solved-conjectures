@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-27 — Sharp average-degree occupancy in triangle-free graphs
+
+Published the variance-and-entropy proof recorded in Cinna Davis’s research issue. It resolves Buys, van den Heuvel and Kang’s asymptotic Conjecture 12, giving the leading constant one for the mean independent-set size in terms of average degree. The pointwise redux remains open here. [Proof](results/buys-van-den-heuvel-kang-occupancy/PROOF.md) · [Review and checks](results/buys-van-den-heuvel-kang-occupancy/REVIEW.md) · [Discovery issue](https://github.com/1337isnot1337/solved-conjectures/issues/497)
+
 ## 2026-11-27 UTC — How atomic pinned-distance limits can resolve
 
 Under the global quadratic trapezoid bound, at least one child of a nontrivial atomic parent retains an atomic component at a fixed high mass cutoff. If the parent has infinitely many atoms, only finitely many clouds can retain more than two thirds of their mass in a diffuse limit. [Proof](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN.md) · [Review](results/erdos-general-position-pinned-distances/ATOMIC-CHILDREN-REVIEW.md)
