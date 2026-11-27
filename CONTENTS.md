@@ -158,6 +158,8 @@ Earlier sources established the exceptional orders. These companion theorems are
 
 ## Gaussian lattice sums
 
+**Correction to the Leech lattice cold-spot limit.** Minimizing the Gaussian sum in a neighborhood of each deep hole puts $`E_8^3`$ first and $`D_{24}`$ second among the 23 types. This corrects the $`A_{24}`$ limiting location stated in §5 of Bachoc, Moustrou, Vallentin and Zimmermann. Their theorem that the Leech lattice has no stable cold spots still holds. [Proof](docs/research-results/leech-cold-spots-asymptotics/PROOF.md) · [Review](docs/research-results/leech-cold-spots-asymptotics/REVIEW.md) · [Exact comparison](docs/research-results/leech-cold-spots-asymptotics/verify.py)
+
 | Problem | Result | Formalization | Evidence |
 | --- | --- | --- | --- |
 | [Bétermin’s FCC/BCC cold-spot conjecture](results/betermin-fcc-bcc-cold-spots/) | The geometric assertion of Remark 5.10 holds: for every positive Gaussian scale, the minimizing translations of FCC and BCC are exactly the deep holes. The printed BCC representative is corrected. The proof covers both checkerboard families in every rank at least three. | Not formalized | [Proof](results/betermin-fcc-bcc-cold-spots/PROOF.md) · [Independent audit](results/betermin-fcc-bcc-cold-spots/AUDIT.md) · [Sample diagnostics](results/betermin-fcc-bcc-cold-spots/verify.py) · [Issue #371](https://github.com/1337isnot1337/solved-conjectures/issues/371) |

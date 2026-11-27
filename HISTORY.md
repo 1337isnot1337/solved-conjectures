@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Limiting Gaussian cold spots of the Leech lattice
+
+Added the correction to the limiting type in §5 of Bachoc, Moustrou, Vallentin and Zimmermann. Minimizing over moving points near each deep hole selects $`E_8^3`$. The written argument and exact coefficient comparison also identify $`D_{24}`$ as the runner-up. [Proof and review](docs/research-results/leech-cold-spots-asymptotics/README.md) · [Issue #376](https://github.com/1337isnot1337/solved-conjectures/issues/376)
+
 ## 2026-11-26 — Claesson–Dukes–Steingrímsson’s stack-sorting conjecture
 
 Proved the exact count for $n\ge8$ at the $n-5$ pass threshold. The [proof](results/claesson-dukes-steingrimsson-stack-sorting/PROOF.md) reduces the count to a finite coefficient table and an exact polynomial identity. The [audit](results/claesson-dukes-steingrimsson-stack-sorting/AUDIT.md) records the source check and independent replay.
