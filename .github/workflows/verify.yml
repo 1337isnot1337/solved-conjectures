@@ -31,6 +31,16 @@ jobs:
           python3 results/plambeck-siegel-03312/verify.py
           c++ -O2 -std=c++17 results/plambeck-siegel-03312/check_independent.cpp -o /tmp/check-03312
           /tmp/check-03312
+      - name: Check the weighted spectral conjecture endpoint certificates
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y nauty
+          python3 results/barrett-evans-hall-kempton-se/check_small_parameters.py
+          c++ -O3 -std=c++17 results/barrett-evans-hall-kempton-se/check_small_graphs.cpp -o /tmp/check-se
+          for n in 5 6 7 8 9 10; do
+            nauty-geng -cq "$n" | /tmp/check-se "$n"
+          done
       - name: Check Liang’s slice-period counterfamily
         run: |
           python3 results/liang-slice-period/check.py

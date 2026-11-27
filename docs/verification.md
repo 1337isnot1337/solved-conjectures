@@ -22,6 +22,10 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture
+
+Run `python3 results/barrett-evans-hall-kempton-se/check_small_parameters.py` for exact integer comparator checks. The [audit](../results/barrett-evans-hall-kempton-se/AUDIT.md) explains how to generate the small simple endpoints using nauty and certify their strict inequalities using an integer C++ checker. The proof for orders at least 36 and weighted interpolation are analytic.
+
 ## Liang’s slice-period conjecture
 
 Run `python3 results/liang-slice-period/check.py` for the exact recurrence on 684 transfer representatives. The [audit](../results/liang-slice-period/AUDIT.md) gives instructions for the independent labeled C++ evaluator. The [all-three-heap supplement](../results/liang-slice-period/THREE-HEAPS.md) has its own [exact checker](../results/liang-slice-period/all_three.py).
