@@ -31,6 +31,15 @@ jobs:
           python3 results/plambeck-siegel-03312/verify.py
           c++ -O2 -std=c++17 results/plambeck-siegel-03312/check_independent.cpp -o /tmp/check-03312
           /tmp/check-03312
+      - name: Check the 0.3123 slice transfer certificate
+        run: |
+          python3 results/liang-03123-slice/verify.py
+          c++ -O2 -std=c++17 results/liang-03123-slice/check_independent.cpp -o /tmp/check-03123
+          /tmp/check-03123
+      - name: Check all 0.3312 four-heap shifts
+        run: |
+          c++ -O2 -std=c++17 results/plambeck-siegel-03312/check_four.cpp -o /tmp/check-four
+          /tmp/check-four
       - name: Check both Builder–Blocker reductions by exact metric minimax
         run: python3 results/builder-blocker-general-position-complexity/verify.py
       - name: Check exact fractional square-grid cover certificates

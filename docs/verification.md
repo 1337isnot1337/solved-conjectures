@@ -20,9 +20,13 @@ Run `python3 results/general-position-oriented-trees/verify.py` to compare the f
 
 Run `python3 results/mobile-general-position-complexity/verify.py` to compare source recolouring reachability with actual host moves checked by ordinary graph distances. Add `--extended` for more source graphs and endpoint pairs. The [written proof](../results/mobile-general-position-complexity/PROOF.md) applies to every input.
 
+## Liang’s 0.3123 slice problem
+
+Run `python3 results/liang-03123-slice/verify.py` for the exact recurrence closure and 169 bulk cases. The [audit](../results/liang-03123-slice/AUDIT.md) gives instructions for the independent C++ verifier.
+
 ## Plambeck–Siegel infinite quotient conjecture for 0.3312
 
-Run `python3 results/plambeck-siegel-03312/verify.py` to check the 9,570-state transfer certificate and witness bits. [The proof](../results/plambeck-siegel-03312/PROOF.md) extends this finite closure calculation to heaps of arbitrary sizes. [The audit](../results/plambeck-siegel-03312/AUDIT.md) includes instructions for the independent C++ checker.
+Run `python3 results/plambeck-siegel-03312/verify.py` to check the 9,570-state transfer certificate and witness bits. [The proof](../results/plambeck-siegel-03312/PROOF.md) extends this finite closure calculation to heaps of arbitrary sizes. [The audit](../results/plambeck-siegel-03312/AUDIT.md) includes instructions for the independent C++ checker. The [four-heap supplement](../results/plambeck-siegel-03312/FOUR-HEAPS.md) has its own [exact checker](../results/plambeck-siegel-03312/check_four.cpp).
 
 ## Misère Domination Game
 
