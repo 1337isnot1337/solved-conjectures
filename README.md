@@ -204,6 +204,8 @@ Above a rank threshold, the deep holes of $`A_n`$ are exactly its minimizers for
 
 Unlabelled distances between leaves determine the total length of a generic tree and characterize every possible ambiguity. A binary tree’s shape is recovered, and all metric alternatives come from permuting the sums at pairs of sibling leaves. [Leaf-distance classification](docs/research-results/stanley-tree-subdivisions/CHERRY-CLASSIFICATION.md)
 
+A generic tree and a rival with the same distance histogram and $`c`$ extra leaves have matching signed profiles at two parents whenever the target has at least $`97c`$ leaves. For each surplus, a finite test on smaller trees decides whether any ambiguity exists. [Linear bound and common subtree](docs/research-results/stanley-tree-subdivisions/LINEAR-LEAF-SURPLUS.md)
+
 For every fixed tree topology with at least 28 leaves, a generic subdivision is identified by its ordinary distance histogram against all trees with at most two more leaves. The marked two-extra-leaf theorem holds at every order. [Unmarked and marked results](docs/research-results/stanley-tree-subdivisions/TWO-SURPLUS-TAIL.md)
 
 For any fixed tree topology, the ordinary distance histogram of a generic subdivision identifies it among all trees with at most one additional leaf. There is no degree bound. [One-extra-leaf theorem](docs/research-results/stanley-tree-subdivisions/ONE-EXTRA-LEAF.md)

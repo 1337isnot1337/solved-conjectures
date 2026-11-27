@@ -8,6 +8,8 @@ The multiset of leaf-to-leaf distances determines the total length of a generic 
 
 ## When the histogram alone suffices
 
+For a rival with $`c`$ extra leaves, an ordinary distance histogram matching a generic tree with at least $`97c`$ leaves forces matching signed profiles at two parents and a common labelled subtree on all but at most $`4c`$ target leaves. Across all tree topologies it suffices to test targets with fewer than $`97c`$ leaves for an ambiguity of that surplus. The uniform outcome of those tests remains open. The proof is written and internally reviewed. [Theorem and reduction](LINEAR-LEAF-SURPLUS.md) · [Independent review and sources](LINEAR-SURPLUS-REVIEW.md) · [Checks](verify_parity_root_transfer.py)
+
 For every topology with at least 28 leaves, a generic subdivision is identified by its ordinary vertex-distance histogram among all rivals with at most two extra leaves, with every degree unrestricted. The marked two-extra-leaf theorem holds for every target order when the marked nonzero heights are independent. Smaller unmarked targets are open in general. [Unmarked proof and certificate](TWO-SURPLUS-TAIL.md) · [Marked proof](MARKED-TWO-SURPLUS.md) · [Independent review](MARKED-TWO-SURPLUS-REVIEW.md)
 
 The ordinary vertex-distance histogram identifies a generic subdivision of any fixed reduced tree among every competitor with at most one extra leaf. The proof covers arbitrary branching and both integer subdivisions and the metric-tree arclength law. [One-extra-leaf theorem](ONE-EXTRA-LEAF.md) · [Independent review](ONE-EXTRA-LEAF-REVIEW.md) · [Degree verifier](verify_one_extra_leaf.py)
