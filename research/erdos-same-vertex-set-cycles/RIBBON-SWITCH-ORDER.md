@@ -29,3 +29,17 @@ In either graph the three matchings are pairwise edge-disjoint; $`M\cup N`$ is t
 In each graph, use the [overlapping-cycle lift lemma](OVERLAPPING-CYCLE-LIFTS.md) with all the designated cycles: those of $`M\cup N`$, the cycle $`N\cup R_\pm`$, and those of $`M\cup R_\pm`$. Choose the same sufficiently large prime sheet number $`s`$ for both graphs. Every designated cycle has a connected preimage in its own lift, and the girth can be arbitrarily high. The old cycle lengths in each lift are $`4s,8s`$; the single switch has half-length $`6s`$; there are $`4s`$ crossing reserve edges and $`2s`$ loops at the same quotient vertex. Nevertheless the only nonempty switch selection merges in one case and splits into three in the other.
 
 The examples concern a prescribed perfect-matching switch. They do not say that replacing edges from both halves, or finding cycles on a different support, is impossible.
+
+## A sufficient tree of long switches
+
+This version permits several contacts in each old cycle, rather than requiring a switch to touch each cycle once. Choose distinct alternating components of $`N\cup R`$, with disjoint contact sets, and let each selected switch meet exactly two old $`p`$-cycles. Regard it as an edge between those two cycles. Suppose:
+
+1. These edges form a tree on the old cycles.
+2. For each switch $`e`$, the first-return permutation of its two endpoint cycles on the contacts of $`e`$, multiplied by $`\tau_e`$ on those contacts, is a single cycle.
+3. At every old cycle, the contact sets of incident switches appear as consecutive blocks in the cyclic order restricted to all selected contacts.
+
+Then performing all selected switches gives a single cycle. For the proof, eliminate a leaf and its incident switch. In the leaf there are no contacts for other remaining switches. In the neighbour, all remaining contacts lie in one gap between contacts of this switch, by the block condition. The switch only changes successor edges at its own contacts. Condition 2 merges the two current cycles, while the unchanged gap keeps the original cyclic order of every surviving contact at the neighbour. Thus one may regard the merged cycle as the neighbour and continue inductively. The switches on distinct contact sets commute as relative permutations, so the final factor is independent of the chosen leaf order. More generally, it is enough that the single-gap property hold for the remaining contacts at every step of some leaf order; the original block condition is a convenient sufficient test.
+
+Condition 2 can allow arbitrarily many contacts. For instance, let the two first-return cycles be $`A_0,\ldots,A_{m-1}`$ and $`B_0,\ldots,B_{m-1}`$ with cyclic successor $`+1`$ in each, and let the switch order be $`A_0,B_0,A_1,B_1,\ldots,A_{m-1},B_{m-1}`$. The product maps $`A_i`$ to $`B_{i+1}`$ and $`B_j`$ to $`A_{j+2}`$, with indices modulo $`m`$. On the $`A`$-labels its square adds three, so the product is one cycle whenever $`\gcd(m,3)=1`$, including arbitrarily large $`m`$.
+
+For two initial edge-disjoint factors, apply this separately with different matching reserves, or with switches using disjoint reserve edges. Both outputs are then spanning cycles on the same support, with disjoint edges. The contact and block conditions are not known to follow from ordinary quotient connectivity or from the log-log density assumption.
