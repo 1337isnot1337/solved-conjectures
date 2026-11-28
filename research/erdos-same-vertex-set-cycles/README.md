@@ -67,6 +67,8 @@ n\log\log n`$ density scale. This blocks finding spanning witnesses in the host,
 
 - [Paired rotations](PAIRED-ROTATIONS.md): if one endpoint can rotate to a neighbour of a fresh vertex that is also adjacent to a distinct endpoint of the other path, both paths extend on the same support. The density profile gives many candidates outside the support or a large rotation cloud, but the compatibility step is missing.
 
+- [Disjoint reserve rotations](DISJOINT-RESERVE-ROTATIONS.md): balanced reserve colouring makes every choice from the two endpoint clouds compatible without losing all small-set expansion. Edges outside the common support need not retain the colouring. A third reserve can be left for closure edges.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
