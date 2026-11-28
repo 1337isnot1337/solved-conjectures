@@ -28,6 +28,8 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Overlapping cycle lifts](OVERLAPPING-CYCLE-LIFTS.md): with prime sheet number, a five-edge switch can preserve every specified simple cycle preimage, including edge-sharing ones. This simultaneously retains every base witness if all simple base cycles are designated.
 - [Euler-tour covers](EULER-TOUR-COVERS.md): every connected even-regular graph has a Hamilton-decomposable finite cover. For the same quartic base, another connected cover of the same sheet number avoids the pair. Thus existence in a chosen cover does not imply existence downstairs.
 
+- [Balanced quotient packing](BALANCED-QUOTIENT-PACKING.md): a lossless transfer for spanning packings over a suitable choice of ports gives arbitrarily high-girth, maximally edge-connected bipartite examples with an exact deficit in every even degree. At degree greater than four this does not exclude a pair on a proper support.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
