@@ -136,3 +136,18 @@ At any stationary graph there is a stronger mass-only consequence. Let t=mass(T)
     B (3+4t)/5 <= e/5.
 
 In particular, whenever the edge mass is in the unresolved band, **t>=797/3200** suffices for the sharp bound: (3+4t)/25 >= 3197/20000. Equivalently an overlapping three-cover of any stationary counterexample must have overlap mass strictly below 797/3200, just under one quarter. On this particular class of independent-set laws it improves the generic .4235 mean-mass test, because the coverage takes only values 1/3 and 2/3 on nonisolated vertices, so one need not discard the edge heterogeneity information.
+
+
+### Stability under imperfect independent-set covers
+
+The five cuts continue to give a bound when the three covering sets are not quite independent. Write r_SS, r_TS, r_TT for edge masses whose endpoints share at least one covering set, according to their endpoint locations. Every edge internal to T is in r_TT, because two subsets of at least two of the three labels must intersect. Then
+
+    B <= e/5+(2/5) beta(W[S])+(2/5)(r_SS+r_TS)+(4/5)r_TT.    (6)
+
+To check this, label each vertex by the nonempty subset of the three covering indices that contain it. The first three cuts cross an edge as many times as the Hamming distance between its two labels. The last two cuts cross a T–S edge exactly once, a T–T edge never, and an S–S edge either twice or never according to the chosen cut of S. A bad S–S edge loses exactly two of the nominal first three crossings. A T–S edge with intersecting labels loses at most two: the distance is one if the two-label endpoint contains the singleton label, and two if the endpoint has all three labels. An internal T edge is missed at most five times rather than the baseline once, giving the last term of (6).
+
+Under stationarity let b_TT be the expected missed mass inside T. The same degree balance now gives beta(W[S])<=B(1−2t)+b_TT. Consequently
+
+    B(3+4t) <= e + 2(r_SS+r_TS) + 4 r_TT + 2 b_TT.
+
+This can be used without editing the graph and without asserting stationarity of an edited graph. In particular if T is independent in the original graph, each unit of bad edge mass elsewhere costs just twice its mass in this last expression. The result is only a certificate given a suitable cover.
