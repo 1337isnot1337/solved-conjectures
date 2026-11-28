@@ -4,7 +4,7 @@ This note studies an asymmetric concentration step for the [Hamburger–Szegedy 
 
 ## Two kinds of rotation
 
-Let $`G=(X,Y;E)`$ be simple and bipartite. Fix $`a\in X`$ and take a longest simple path starting at $`a`$ and ending in $`X`$. Write the path as
+Let $`G=(X,Y;E)`$ be simple and bipartite. Fix $`a\in X`$ and take a longest simple path starting at $`a`$ and ending in $`X`$. Assume it has at least one link vertex, and write it as
 ```math
 P=x_0y_1x_1\cdots y_mx_m,\qquad x_0=a.
 ```
