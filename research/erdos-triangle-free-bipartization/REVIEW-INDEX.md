@@ -46,6 +46,8 @@ The product-weighted formulation is equivalent to the full finite statement by r
 
 - The same [mixed-cut proof](MIXED-INDEPENDENT-LAW-CUT.md) can be applied to one fixed optimum cut with the independent-set mass measured by its missed degrees. Three overlapping independent sets give a separate five-cut certificate with core penalty `2 beta(core)/5` and an error bound for imperfect covers. At stationary middle-band graphs, overlap mass at least `797/3200` suffices. The test can optimize overlap within the flexible vertices of a fixed proper three-colouring.
 
+- The [four-colour switching certificate](FOUR-COLOUR-SWITCHING.md) extends the overlap idea to proper four-colourings and imperfect four-way partitions. The three balanced colour cuts gain the sum of six one-shore max-flow savings; a weighted Mycielskian of C5 separates this from the cheaper bound. See the [exact controls](verify_four_colour_switching.py). No sufficient four-way partition has been forced at an arbitrary extremizer.
+
 ## Remaining gap
 
 The necessary conditions do not yet force a global maximizing graphon into any of the covered classes or yield an all-order bound directly. One specific next avenue is to find a nontrivial independent-attachment distribution whose payoff is exactly first-order optimal and whose disjointness edges create a useful second-order comparison. Ordinary copied neighborhoods cannot do that on a saturated graphon, and one-sided guarded trimming cannot force any missed addition in the common optimum law. A different avenue is to make the signed flag inequalities sufficiently strong in the medium density band. Neither possibility is stated as a completed proof.
