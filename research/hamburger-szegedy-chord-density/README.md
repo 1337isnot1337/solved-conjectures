@@ -79,6 +79,11 @@ Thus $`|A|\ge m(\delta-\sqrt2\,\lambda)/(2d)`$. The cycle has at most $`2m`$ ver
 
 For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\sigma,\eta>0`$, every surviving subgraph of minimum degree at least $`\sigma d`$ satisfies the condition for sufficiently large $`d`$. This describes a regime where the desired property survives substantial local deletion without invoking Hamiltonicity resilience.
 
+## Shortening the captured cycle
+
+- [Simultaneous shortcuts](SHORTCUT-INTERLACEMENT.md) give an exact protected-chord budget and optimize independent-port shortcuts, including variable types and nonnegative type-specific savings.
+- [Exterior gap routing](EXTERIOR-GAP-ROUTING.md) explains why direct chords cannot shortcut a long gap of the bipartite rotation patch. A Hall-deficit identity measures the exact toll after all feasible length-two midpoint replacements. Paired exterior paths can then be assessed with the interlacement test. See the [fixture checker](verify_gap_shortcuts.py).
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
