@@ -1,0 +1,74 @@
+name: Prove2Me mission drafts
+
+on:
+  pull_request:
+    branches: [main, research]
+    paths: &integration_paths
+      - 'integrations/prove2me/**'
+      - 'lean/Conjectures/CaioloFerroniHoster*.lean'
+      - '.github/workflows/prove2me.yml'
+  push:
+    branches: [main]
+    paths: *integration_paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: prove2me-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: integrations/prove2me
+
+jobs:
+  check:
+    if: github.event_name == 'pull_request' || github.ref != 'refs/heads/main' || github.repository != '1337isnot1337/solved-conjectures'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - &checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - &python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - &lean
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: integrations/prove2me
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - &replay
+        name: Replay the original proof against the pilot statement
+        run: python check_pilot_proof.py
+      - name: Check all curated statements
+        run: python sync.py
+
+  sync:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == '1337isnot1337/solved-conjectures'
+    environment: prove2me
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - *checkout
+      - *python
+      - *lean
+      - *replay
+      - name: Check and sync all curated statements
+        env:
+          PROVE2ME_API_KEY: ${{ secrets.PROVE2ME_API_KEY }}
+          PROVE2ME_COLLECTION: ${{ vars.PROVE2ME_COLLECTION }}
+          PROVE2ME_USERNAME: ${{ vars.PROVE2ME_USERNAME }}
+        run: |
+          args=(--apply --username "${PROVE2ME_USERNAME:?Set PROVE2ME_USERNAME}")
+          if [[ -n "$PROVE2ME_COLLECTION" ]]; then
+            args+=(--collection "$PROVE2ME_COLLECTION")
+          fi
+          python sync.py "${args[@]}"

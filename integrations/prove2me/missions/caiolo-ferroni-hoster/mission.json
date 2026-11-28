@@ -1,0 +1,31 @@
+{
+  "name": "Caiolo–Ferroni–Hoster dual Chow real-rootedness counterexamples",
+  "mission_type": "ResearchPaper",
+  "fields": ["combinatorics"],
+  "description": "description.md",
+  "goal": "CaioloFerroniHoster.counterexample_family",
+  "items": [
+    {
+      "kind": "definition",
+      "name": "CaioloFerroniHosterRankFive",
+      "title": "Rank-five flat flags and dual Chow polynomials",
+      "file": "Definitions/Def_CaioloFerroniHosterRankFive.lean",
+      "natural_language_statement": "A flag is a descending chain of flats of the specified ranks bounded by a set. The two rank-five characteristic-kernel polynomials sum over all internal rank lists, multiplying each flag count by the appropriate products of signed geometric sums. The dual Chow factor for the gap from the top uses one fewer term than the dual right augmented factor.",
+      "source": "Caiolo–Ferroni–Hoster, arXiv:2605.28474v1, Propositions 4.6–4.7, https://arxiv.org/html/2605.28474v1#S4",
+      "tags": ["combinatorics", "matroids"],
+      "readback": "definitions-readback.md",
+      "readback_model": "Codex independent agent"
+    },
+    {
+      "kind": "theorem",
+      "name": "CaioloFerroniHoster.counterexample_family",
+      "title": "Counterexample family for both dual Chow real-rootedness assertions",
+      "file": "missions/caiolo-ferroni-hoster/goal.lean",
+      "natural_language_statement": "For every prime power $q$ with $q\\ge17$, there are finite fields $F,K$ with $|F|=q$ and an extension structure of degree four. There is a simple rank-five matroid on the disjoint union of the projective points of $K\\times K$ over $F$ and a copy of $K$, with the entire set as ground. Its degree-four dual Chow polynomial is everywhere positive on the real line. Its degree-five dual right augmented Chow polynomial has only the real root $-1$ and that root is simple. Neither polynomial splits over the reals. See the [written proof](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/caiolo-ferroni-hoster/PROOF.md).",
+      "source": "Caiolo–Ferroni–Hoster, Conjecture 7.3 and its accompanying augmented assertion, https://arxiv.org/html/2605.28474v1#S7.SS2. The stronger family is from https://github.com/1337isnot1337/solved-conjectures/tree/4207a936b7bc1b722ad3f8d1b0fa090e8763b048/results/caiolo-ferroni-hoster.",
+      "tags": ["combinatorics", "matroids"],
+      "readback": "goal-readback.md",
+      "readback_model": "Codex independent agent"
+    }
+  ]
+}
