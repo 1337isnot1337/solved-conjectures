@@ -18,3 +18,13 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 
 - [High-girth replacement](HIGH-GIRTH-REPLACEMENT.md): degree-saturating cycle packings project through a vertex splice. In particular there are bipartite, 4-edge-connected and 4-regular graphs of arbitrarily large girth still without the pair of cycles. A bare 4-factor cannot close the proof.
 - [Simultaneous switching](SIMULTANEOUS-SWITCHING.md): a family of alternating switches with two compatible incidence trees merges both factors at once. For square switches the common-tree condition has an exact graphic-matroid intersection test; longer switches give a criterion usable in high girth. Forcing such a certificate in a sufficiently high-degree regular core remains open.
+
+- [Hamilton-decomposable modules](HAMILTON-MODULES.md): an elementary girth-raising switch preserves all prescribed Hamilton factors; this also gives the positive direction for a compatible vertex splice.
+- [Four-edge cuts](FOUR-EDGE-CUTS.md): a balanced four-edge interface has just two signatures; a crossing pair exists exactly when the two shores share one. In high girth either outcome can be realized with the same shores, even at degree and edge connectivity four.
+- [Bipartite spectral certificate](BIPARTITE-SPECTRAL-CERTIFICATE.md): a sufficiently strong constant spectral ratio yields a Hamilton path between any opposite-side endpoints after bounded-degree deletion, giving packing and flexible interface signatures.
+- [Cube-cover obstruction](CUBE-COVER-OBSTRUCTION.md): global mixing cannot be a general extraction step. At degrees arbitrarily above log log(order) and with girth growing, every subgraph with an edge has a matching cut. This precludes either strong normalized spectral expansion or bipartite joinedness and small-set expansion together.
+- [Covers preserving cycles](COVERS-PRESERVING-CYCLES.md): a three-edge switch preserves specified single-cycle lifts while raising girth. Applying it to a cube face makes the expander-extraction obstruction coexist with a known witness pair. Lack of global joinedness therefore cannot rule out the pair.
+
+## Current bottleneck
+
+Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
