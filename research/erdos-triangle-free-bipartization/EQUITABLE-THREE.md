@@ -1,6 +1,6 @@
 # The Erdős bound for equitable three-colourings
 
-**Theorem.** Let a finite triangle-free graph carry nonnegative vertex weights of total mass N and a proper three-colouring. Normalize each nonempty colour class separately to mass one. In each of the six directions between classes, suppose every vertex's normalized degree into its target class differs from that link's mean density by at most 1/400. Then the graph can be made bipartite by deleting at most N²/25 in product edge mass.
+**Theorem.** Let a finite triangle-free graph carry nonnegative vertex weights of total mass N and a proper three-colouring. Normalize each nonempty colour class separately to mass one. In each of the six directions between classes, suppose the root-mean-square deviation of the normalized degrees into the target class from the link's mean density is at most 1/90. The root-mean-square uses the probability measure of the source class. Then the graph can be made bipartite by deleting at most N²/25 in product edge mass.
 
 There is no bound on graph order, number of distinct neighborhoods, or ordinary degree. The classes need not have equal mass, and the three link densities may differ. The theorem includes every proper three-colouring in which each link is biregular, in the weighted sense. It is a structural partial theorem for [Erdős Problem 23](https://www.erdosproblems.com/23), not a solution for graphs without such a colouring.
 
@@ -63,28 +63,50 @@ For equal weights a=b=c=1/3 and identical link degrees rho, (2) specializes to
 
 because after multiplying the last inequality by 1-rho, the nonnegative difference is 6(rho-1/3)²(rho+1/2). For rho=0 the claim is immediate, and for positive rho the triangle obstruction gives rho<=1/2. This proves the clean N²/27 bound for the symmetric subfamily.
 
-## Preserve the certificate under within-link irregularity
+## Preserve the certificate under mean-square degree irregularity
 
-Put epsilon=1/400. If any one of x,y,z is at most .04, putting its two endpoint classes on one side proves the result. If e=x+y+z>.16, the [Balogh–Clemen–Lidický dense-tail theorem](https://arxiv.org/html/2103.14179) applies, by rational blow-ups and continuity for product weights. It remains to handle the bracket x,y,z>.04, e<=.16.
+Put epsilon=1/90. If any one of x,y,z is at most .04, putting its two endpoint classes on one side proves the result. If e=x+y+z>.16, the [Balogh–Clemen–Lidický dense-tail theorem](https://arxiv.org/html/2103.14179) applies, by rational blow-ups and continuity for product weights. Thus assume x,y,z>.04 and e<=.16.
 
-The normalized degrees along each link have its density as their mean, and deviate from it by at most epsilon. An edge of BC has disjoint A-neighborhoods, so r+u<=1+2 epsilon=1.005. Cycling yields the other pair sums. Since y,z>=.04, we have u+v>=.16/[c(1-c)]. The corresponding constraint on each class implies its mass >.198, since .198 times .802 times 1.005 is less than .16. Relabel so a<=b<=c. This proves the hypotheses of (3), and also c<=.604 even before sorting.
+The six normalized degree means are their respective densities, and each directional variance is at most epsilon². For an edge between B and C, the endpoint A-neighborhoods are disjoint, so their two normalized A-degrees sum to at most one. Averaging this over BC edges gives
 
-We bound the error in (2) when applying the actual cut. Put s=a+b, A_0=a u², B_0=b v², D=a u+b v, D_+=D+s epsilon and L=(A_0-B_0)²+4ab u²v²/(1-r) as before. The sum of the two degree products determining the loss on AB decreases by at most 2 epsilon² from its exact-regular prediction, by zero mean and the product error bound. Also E[P]<=A_0+B_0+s epsilon², D(w)<=D_+, and (1) yields
+    v(r+u) + Cov_B(d_A,d_C) + Cov_C(d_A,d_B) <= v.
 
-    E[P²] >= L - 5 epsilon².                                 (4)
+Each covariance has magnitude at most epsilon². Each link density is at least .16 because its weighted edge mass is at least .04 and the product of its class masses is at most .25. It follows that r+u<=1+2 epsilon²/.16<1.005, and the other two pair sums follow by cycling. Since u+v>=.16/[c(1-c)], the corresponding constraint on each class implies its mass >.198: .198 times .802 times 1.005 is less than .16. Sort the class masses so a<=b<=c. This gives the hypotheses of (3).
 
-For (4), in the square term of (1) the mean changes by at most s epsilon², so the square can decrease by at most 2 epsilon². In the other term, U>=uv-epsilon², so the square decreases by at most 2uv epsilon². Since 1-r>=max(u,v)-.005, max(u,v)>=.16 and min(u,v)<=1, one has uv/(1-r)<=32/31. Multiplying its error by 4ab costs at most (64/31) epsilon², leaving the displayed bound. Conversely, E[P²]<=D_+², and hence L<=D_+²+5 epsilon².
+Put s=a+b, A_0=a u², B_0=b v² and D=E_C D(w)=a u+b v=(y+z)/c. The sum of the two degree products determining the AB loss decreases by at most 2 epsilon² from its constant-degree prediction. Also E[P]<=A_0+B_0+s epsilon². We need the stronger weighted moment E[P²/D(w)], not a maximum-degree substitute. All ratios with D(w)=0 below have numerator zero and are assigned zero.
 
-The averaged cut cost is at most F_C plus
+For the square part of P², Cauchy–Schwarz with denominator D(w) gives
 
-    2(ab+cs) epsilon² + 2cs epsilon L/(D D_+)
-                     + 10c epsilon²/D_+ .
+    E[(a k_A-b k_B)²/D(w)]
+       >= (a E k_A-b E k_B)²/D
+       >= (A_0-B_0)²/D - 2s epsilon².                       (4)
 
-Here D=(y+z)/c>=.08, c/D<=.604²/.08<5, and 2cs<=1/2. Using the upper bound on L, this error is at most
+The difference of the two means changes by at most s epsilon², and |A_0-B_0|<=D, proving the second step.
 
-    (epsilon/2) (1+(25/2)epsilon+(3125/4)epsilon²)
-                      + 51 epsilon² < .002.
+For the mixed part, keep the definitions of K_C(s',t') and U from (1). Write K=K_C(s',t'), and set H=E_C[W_(s',w) W_(t',w) D(w)]. (Here s' is a vertex in A, t' in B, and W is the adjacency indicator.) By the weighted Cauchy–Schwarz inequality,
 
-The same argument applies after permuting the pivot class. Thus use a pivot certified by (3) and obtain beta<.038+.002=.04. The only external graph theorem needed is the dense tail for e>.16. The argument neither assumes nor proves that an arbitrary counterexample admits a nearly equitable proper three-colouring.
+    E_C[W_(s',w) W_(t',w)/D(w)] >= K²/H.
+
+The term is zero when K=0. Fubini, and two more applications of Cauchy–Schwarz or Jensen, give
+
+    E[k_A k_B/D(w)] >= E_(A,B)[K³/H]
+                    >= (E_(A,B)[K^(3/2)])² / E_(A,B)[H]
+                    >= U³/((1-r) E_(A,B)[H]).              (5)
+
+The last step uses that K vanishes on AB edges. Also E_(A,B) H = E_C[d_A d_B D(w)]. Its difference from U D is a covariance of magnitude at most 2s epsilon². Indeed the L² distance of d_A d_B from u v is at most 2 epsilon, by expanding the difference and using degrees in [0,1], and the L² distance of D(w) from D is at most s epsilon. Thus (5), (1+t)^(-1)>=1-t for t>=0, and U<=1-r give
+
+    E[k_A k_B/D(w)] >= U²/((1-r)D) - 2s epsilon²/D²
+                    >= u²v²/((1-r)D)
+                        - [2uv/((1-r)D) + 2s/D²] epsilon².  (6)
+
+The second line uses U>=uv-epsilon². Here U<=1-r follows from 0<=K<=1 and its support on the missing pairs.
+
+Combining (4) and (6) in the actual cut makes its cost at most F_C plus
+
+    [2ab + 2cs + 4cs + 16cab uv/((1-r)D) + 16cab s/D²] epsilon².
+
+This bracket is less than 15. In detail, 2ab+2cs<=2/3 and 4cs<=1. Also 1-r>=max(u,v)-.005 with max(u,v)>=.16, so uv/(1-r)<=32/31. With D>=(.08)/c, ab<=s²/4 and c s<=1/4, the last two terms are at most 100/31 and 625/64, respectively. Hence the total error is at most 15 epsilon²=1/540<.002.
+
+Use the pivot certified by (3), permuting the same estimate as needed, to get beta<.038+.002=.04. This perturbation bound is quadratic in the RMS error; it does not require pointwise regularity or remove exceptional vertices. It does not show that an arbitrary counterexample admits a nearly equitable proper three-colouring.
 
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
