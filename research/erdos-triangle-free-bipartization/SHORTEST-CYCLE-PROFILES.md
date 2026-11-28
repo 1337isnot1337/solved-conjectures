@@ -2,7 +2,7 @@
 
 Let $G$ have shortest odd cycle $C_g$, labeled $v_i$ modulo odd $g\ge7$. Write $S_r=\{-r,-r+2,\ldots,r\}$ modulo $g$. Say a vertex has a full profile of depth $r$ and center $i$ if for every index in $i+S_r$ there is an $r$-step walk from that vertex to the corresponding $v_j$. Let $D_r$ be all vertices with such a profile.
 
-**Theorem.** For $0\le r\le(g-5)/2$ the centers are unique, and they extend to a labeling of all vertices by $C_g$ that respects every edge incident to $D_r$. The sets $D_r$ are nested. If an exterior vertex has neighbors in two different center classes of $D_r$, it has a full profile of depth $r+1$ with the intervening center. The depth bound for preserving all incident edges is best possible, even with no hypothesis on how the original odd cycle was selected.
+**Theorem.** For $0\le r\le(g-5)/2$ the centers are unique, and they extend to a labeling of all vertices by $C_g$ that respects every edge incident to $D_r$. The sets $D_r$ are nested. If an exterior vertex has neighbors in two different center classes of $D_r$, it has a full profile of depth $r+1$ with the intervening center. The depth bound for preserving all incident edges is best possible, for a specified shortest cycle.
 
 The definition at depth one is exactly the usual double-neighbor classes of a shortest odd cycle. See [Lai–Liu](https://math.wvu.edu/~hlai2/Pdf/Hong-Jian_Lai_Pdf/055-BICA_2000.pdf) and [Messuti–Schacht](https://www.math.uni-hamburg.de/home/schacht/2015/3n4k.pdf) for related shortest-cycle and high-minimum-degree homomorphism methods. The profile statement uses no degree hypothesis.
 
@@ -40,5 +40,32 @@ $
 \beta(G)\le\min\{e/g+(1-1/g)Y,\ 1/g^2+Y\}.
 $
 This is an all-order test and a quadratic error bound in the exterior vertex mass. It does not show that every graph has a cycle with sufficiently small uncovered mass for an exact $1/g^2$ bound.
+
+## A sharp bound for almost-spanning full profiles
+
+There is also an exact density-free conclusion: if the exterior has mass $\nu\le1/(100g^2)$, then $\beta(G)\le1/g^2$. This does not require the classes of $D_r$ to be complete or have equal weights.
+
+Use the label extension above. Call an exterior vertex weak if the labels of all its $D_r$-neighbors form an empty set or a singleton. A non-weak exterior vertex belongs to $D_{r+1}$, with the label forced by its two distinct rooted neighbor classes. In this range $2(r+1)+2<g$, so edges internal to $D_{r+1}$ connect consecutive labels by the same short-walk test. Thus every edge whose endpoints have nonconsecutive labels, including equal labels, has at least one weak endpoint. Both endpoints are exterior. If $Q$ is the sum of the weights of the weak vertices, the total invalid edge mass is at most $\nu Q$.
+
+Let $s_i$ be the total mass of label $i$, and $P_i=s_i s_{i+1}$. In the $i$-th alternating cut the valid edges missed belong exactly to cyclic pair $i$. Let $M_i$ be the missing mass at this pair, and $L_i$ the invalid edge mass missed. Its cost is $P_i-M_i+L_i$, and in particular is at most $P_i+\nu^2/4$. Consequently
+$
+\beta\le (\prod_i P_i)^{1/g}+\nu^2/4.
+\tag{7}
+$
+If a class has zero mass this already suffices. If some class mass is at most $1/(2g)$, the product of class masses relative to its balanced value $g^{-g}$ is at most $\tfrac12 e^{1/2}$. To see it, fix the small mass, maximize the other masses at equality, and note that the resulting bound increases up to mass $1/g$. If some class mass is at least $2/g$, the analogous bound is $2/e$, since the same one-variable product decreases after $1/g$. Thus either imbalance gives $(\prod_i P_i)^{1/g}\le g^{-2}\exp(-(\log4-1)/g)$. Its gap below $1/g^2$ is greater than $1/(10g^3)$: use $1-e^{-x}\ge x/2$ for $0\le x\le1$ and $\log4-1>1/5$. This more than pays $\nu^2/4$ in (7).
+
+It remains to treat $1/(2g)\le s_i\le2/g$ for all labels. Put $c_j=\mu(D_r\cap\{\text{label }j\})$, so $c_j\ge s_j-\nu\ge1/(3g)$. Every weak vertex with label $i$ has an entire adjacent $D_r$ class of label $j$ missing from its neighborhood. Choose one such class. Those missing pairs, with exactly one rooted endpoint, account for at least
+$
+\sum_i M_i/P_i\ \ge\ (1/(3g))Q/P_{\max}.
+$
+Each invalid edge is missed in at most all $g$ cuts, hence
+$
+\sum_i L_i/P_i\ \le\ g\nu Q/P_{\min}.
+$
+The right side is no larger than the lower bound for the missing mass, since $P_{\max}/P_{\min}\le16$ and $\nu\le1/(100g^2)$. Finally the geometric mean of the $g$ cut costs is at most
+$
+(\prod_i P_i)^{1/g}\exp\left(\frac1g\sum_i (L_i-M_i)/P_i\right)\le 1/g^2.
+$
+This uses $\log(1+u)\le u$; if a cut has zero cost the conclusion is immediate. The minimum cut is no larger than this geometric mean. The numerical factor in the sufficient coverage condition is not claimed sharp.
 
 [Erdős #23 and the odd-girth version](https://www.erdosproblems.com/23) · [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
