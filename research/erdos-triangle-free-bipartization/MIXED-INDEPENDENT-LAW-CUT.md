@@ -78,3 +78,23 @@ Average over edges and the stationary cut law. Use E_M q=Delta and E_M q²=Delta
 Take a=3/5, so the clipping interval is [1/3,2/3]. If the original degree is positive almost everywhere and p≥1/3 almost everywhere, then p≤2/3 almost everywhere as well: any vertex with greater coverage could have no positive-measure neighborhood, since each edge satisfies p(x)+p(y)≤1. The clipping term therefore vanishes. If the average independent set has mass at least 847/2000=.4235, then Delta≤153/1000. On this interval, the left coefficient in (2) is decreasing in Delta. At B=1/25 its minimum product is exactly .031993816, while for e≤3197/20000 the right side, after omitting the savings, is at most .03197. The strict rational margin is 2977/125000000. This proves the sharp bound for any stationary middle-band graph with that independent-set law.
 
 More generally a uniform lower coverage c in [1/4,3/8] yields the tradeoff by taking a=1/(3−4c); the upper clipping limit 1−c follows from positive degree. At c=3/8 the independent sets alone already suffice by taking one as the cut shore. Intermediate mixing values matter when that direct argument does not apply. The existence of suitable laws at all extremizers is not established.
+
+
+## Test existence of the law by weighted independence
+
+For any graphon of mass one and any 0≤c≤m≤1, the following are equivalent:
+
+1. There is a jointly measurable independent-set law with p≥c almost everywhere and average mass at least m.
+2. For every bounded nonnegative test weight v, its weighted independence supremum alpha_v satisfies
+
+       alpha_v >= c integral v + (m−c) ess inf v.          (3)
+
+The finite weighted version is the same statement with essential infimum replaced by minimum on the positive-mass support. Thus, for example, a hypothetical stationary middle-band counterexample has a specific bounded nonnegative witness weight that violates (3) at c=1/3 and m=847/2000. This is a way to look for or rule out the required laws; it does not assert all triangle-free graphons pass (3).
+
+Here is the graphon compactness detail. In weak L², the set K of functions 0≤u≤1 with integral W(x,y)u(x)u(y) dx dy=0 is compact and metrizable. Indeed the integral operator of a bounded graphon is compact on L², so this quadratic expression is weakly continuous on the unit ball. Since W is nonnegative, the positive support of each such u is independent. Rounding u by a common uniform threshold on [0,1] realizes u as the marginal coverage of independent sets. The barycenters of probability laws on K therefore form a weakly compact convex set P of attainable coverage functions. Conversely any jointly measurable independent-set law has its indicator in K. To justify jointly measurable representatives for laws on K, use dyadic conditional averages and take their almost-everywhere limits, as in the [stationary law construction](SATURATED-GRAPHON-EXTREMIZER.md).
+
+Necessity of (3) follows by averaging weighted independent-set mass. For sufficiency, if P misses the closed convex set {h in L²: h≥c, integral h≥m}, weak separation of a compact convex set from a disjoint closed convex set gives a real weight v in L² with
+
+       sup_(p in P) integral v p  <  inf_(h≥c, integral h≥m) integral v h.
+
+The right infimum can be finite only for v≥0 almost everywhere, since an arbitrarily large nonnegative function may be added on a subset where v is negative. That infimum equals c integral v+(m−c) ess inf v: start at the constant c and put the remaining mass on a positive-measure set where v is close to its essential infimum. The left supremum is alpha_v since mixtures and threshold rounding do not raise a linear supremum. Finally upper truncation of v preserves the strict inequality for a sufficiently high cutoff, because all p are bounded by one, the L¹ error tends to zero, and the essential infimum is unchanged. This contradicts (3) and proves the equivalence.
