@@ -32,6 +32,8 @@ The product-weighted formulation is equivalent to the full finite statement by r
 
 - The [agreement-block theorem](OPTIMUM-CUT-OVERLAPS.md) says any two true optimum cuts decompose into independent optimum problems on agreement and disagreement blocks. The spans of the two blocks' optimum signs have zero cross adjacency pairing. This excludes a half-mass independent overlap with an arbitrary bipartite complement under the stationary maximum-degree cap.
 
+- The [uniform near-half dictionary](HALF-INDEPENDENT-DICTIONARY.md) localizes the entire set of almost-half independent sets at a stationary maximizer to at most eight candidates on one common paired partition, not merely a finite sample of sets. The original graph's minimum degree, forced-to-cross edges, and the stationary monochromatic kernel all enter the proof. It applies to graphons and does not require that an almost-half independent set exists.
+
 ## Remaining gap
 
 The necessary conditions do not yet force a global maximizing graphon into any of the covered classes or yield an all-order bound directly. One specific next avenue is to find a nontrivial independent-attachment distribution whose payoff is exactly first-order optimal and whose disjointness edges create a useful second-order comparison. Ordinary copied neighborhoods cannot do that on a saturated graphon. A different avenue is to make the signed flag inequalities sufficiently strong in the medium density band. Neither possibility is stated as a completed proof.
