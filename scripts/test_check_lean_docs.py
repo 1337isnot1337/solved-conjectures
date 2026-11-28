@@ -4,7 +4,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from check_lean_docs import check_document
+from check_lean_docs import check_document, fix_backslash_math
 
 
 class LeanDocsTests(unittest.TestCase):
@@ -42,6 +42,27 @@ class LeanDocsTests(unittest.TestCase):
             self.assertFalse(self.check(valid, path))
             examples = r"The literal `\(x\)` appears in this source." + "\n\n```tex\n\\[x\\]\n```\n"
             self.assertFalse(self.check(examples, path))
+
+    def test_fix_rewrites_legacy_delimiters_only_in_prose(self):
+        source = ("Let \\(n\\ge1\\) and `\\(code\\)` stay.\n\n"
+                  "\\[\nx^2\\tag{1}\n\\]\n\n"
+                  "```tex\n\\(kept\\)\n```\n\n"
+                  "- item with \\( a_i \\) and \\(b\\).\n")
+        expected = ("Let $`n\\ge1`$ and `\\(code\\)` stay.\n\n"
+                    "```math\nx^2\\tag{1}\n```\n\n"
+                    "```tex\n\\(kept\\)\n```\n\n"
+                    "- item with $`a_i`$ and $`b`$.\n")
+        fixed = fix_backslash_math(source)
+        self.assertEqual(fixed, expected)
+        self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        self.assertEqual(fix_backslash_math(fixed), fixed)
+
+    def test_fix_leaves_what_it_cannot_express(self):
+        for source in ("An unmatched \\( stays.\n", "Run-in display \\[x\\] stays.\n",
+                       "Backtick \\(a`b\\) stays.\n"):
+            with self.subTest(source=source):
+                self.assertEqual(fix_backslash_math(source), source)
+                self.assertTrue(self.check(source, "results/example/PROOF.md"))
 
     def test_relative_lean_source_link(self):
         with TemporaryDirectory() as tmp:
