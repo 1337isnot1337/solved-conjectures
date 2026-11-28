@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-"""Check Markdown that GitHub can silently truncate or misrender."""
+"""Check Markdown that GitHub can silently truncate or misrender.
+
+Every tracked Markdown file is checked, not only Lean reports. Run with --fix to
+rewrite legacy TeX delimiters in place before checking.
+"""
 
 from pathlib import Path
+import argparse
 import re
 import subprocess
 import sys
@@ -17,6 +22,11 @@ BACKSLASH_MATH = re.compile(r"(?<!\\)\\[][()]")
 DOLLAR_DISPLAY = re.compile(r"(?m)^\s*\$\$")
 INLINE_CODE = re.compile(r"(`+)(?!`).*?(?<!`)\1(?!`)", re.DOTALL)
 RUN_IN_MATH_FENCE = re.compile(r"(?m)^\s*```[^`\r\n]+```math\s*$")
+# An inline code span (kept) or a legacy inline formula (rewritten).
+CODE_OR_INLINE_MATH = re.compile(
+    r"(`+)(?!`).*?(?<!`)\1(?!`)|(?<!\\)\\\((.+?)(?<!\\)\\\)", re.DOTALL)
+MATH_MESSAGE = ("use fenced math for displays and dollar-backtick delimiters for inline formulas; "
+                "python3 scripts/check_lean_docs.py --fix rewrites the legacy delimiters")
 MAX_LEAN_REPORT_BYTES = 200 * 1024
 
 
@@ -63,7 +73,7 @@ def check_document(root, path, source):
             yield start, "put the math fence language and the closing fence on separate lines"
         prose = INLINE_CODE.sub("CODE", token.content)
         if BACKSLASH_MATH.search(prose) or (lean_doc and DOLLAR_DISPLAY.search(prose)):
-            yield start, "use fenced math for displays and dollar-backtick delimiters for inline formulas"
+            yield start, MATH_MESSAGE
         for child in token.children or ():
             if child.type != "link_open":
                 continue
@@ -75,11 +85,58 @@ def check_document(root, path, source):
                     yield start, f"broken relative Lean source link: {href}"
 
 
+def fix_backslash_math(source):
+    r"""Rewrite legacy TeX delimiters in prose and leave code untouched.
+
+    Inline \(x\) becomes the dollar-backtick form. A display whose \[ and \] each stand
+    alone on a line becomes a math fence. Anything else is left for the check to report.
+    """
+    lines = source.split("\n")
+
+    def inline(match):
+        body = match.group(2)
+        if body is None or "`" in body or not body.strip():
+            return match.group(0)
+        return "$`" + body.strip() + "`$"
+
+    for token in MARKDOWN.parse(source):
+        if token.type != "inline" or not token.map:
+            continue
+        start, end = token.map
+        block = lines[start:end]
+        opened = None
+        for index, line in enumerate(block):
+            bare = line.strip(" >\t")
+            if bare == "\\[" and opened is None:
+                opened = index
+            elif bare == "\\]" and opened is not None:
+                block[opened] = block[opened].replace("\\[", "```math")
+                block[index] = line.replace("\\]", "```")
+                opened = None
+        lines[start:end] = CODE_OR_INLINE_MATH.sub(inline, "\n".join(block)).split("\n")
+    return "\n".join(lines)
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--fix", action="store_true",
+                        help="rewrite legacy \\( \\) and standalone \\[ \\] delimiters in place, then check")
+    arguments = parser.parse_args()
     tracked = subprocess.check_output(
         ["git", "ls-files", "-z", "--", "*.md", "*.markdown", "*.mdx"], cwd=ROOT
     ).decode("utf-8").split("\0")
     paths = [Path(name) for name in tracked if name]
+    if arguments.fix:
+        rewritten = []
+        for path in paths:
+            source = (ROOT / path).read_text(encoding="utf-8")
+            fixed = fix_backslash_math(source)
+            if fixed != source:
+                (ROOT / path).write_text(fixed, encoding="utf-8")
+                rewritten.append(path)
+        print(f"Rewrote legacy math delimiters in {len(rewritten)} files.")
+        for path in rewritten:
+            print(f"  {path}")
     errors = [
         f"{path}:{line}: {message}"
         for path in paths
