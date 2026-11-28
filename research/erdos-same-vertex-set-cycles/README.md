@@ -55,6 +55,10 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Kempe reachability](KEMPE-REACHABILITY.md): even allowing both halves to change, two-colour swaps can be trapped in a sign class that contains no Hamilton decomposition, at arbitrary girth. Three-colour moves suffice for reachability when the decomposition is known to exist, by the Birkhoff Markov theorem.
 - [Parity-trade girth](PARITY-TRADE-GIRTH.md): the smallest parity-changing three-colour trade in a bipartite host of girth at least g uses exactly twice the ceiling of 3g/4 edges. Suppressing degree-two vertices also gives an exact bipartite skeleton test for general trades.
 
+- [Common port closure](COMMON-PORT-CLOSURE.md): two abstract endpoint pairings have a common bipartite closing order except for one parity obstruction, which a two-port absorber removes in a constructed graph.
+- [Paired connectors](PAIRED-CONNECTOR-CONSTRUCTION.md): arbitrary prescribed red and blue connector paths can share their entire internal vertex set in a constructed high-girth completion, provided the two stub imbalances agree.
+- [Sharp theta merger](SHARP-THETA-MERGER.md): the smallest parity-changing three-colour trade can genuinely merge a cycle cover while leaving the other Hamiltonian, at every even girth. Independent mergers can be combined for both colours. See the [abstract pairing checker](verify_theta_merger.py).
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
