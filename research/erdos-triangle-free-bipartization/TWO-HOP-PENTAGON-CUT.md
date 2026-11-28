@@ -139,4 +139,40 @@ where \(D_{xy}\) is the exterior of the two root neighborhoods in the binary mod
 ```
 by checking the signs of both differences and expanding when they have the desired signs. Integrate on ordered exterior edges and average over roots. The decrease from opposite clipped signs is at least \((U_{\rm ext}-2P_{\rm ext})_+/(2pL^2)\) in the edge-root bound (3), and half that in (5). This term does not affect the universal numerical threshold above; it supplies a sharper test if the exterior six-cycle term is known.
 
+## Optimize the exterior separately
+
+A different cut cancels the four-cycle term at a better cost than the elementary random exterior. In particular **any middle-band counterexample has \(T_5>214/10^6\)**. This strengthens the previous uniform floor without assuming regularity or a structural family.
+
+For a root edge \(uv\), keep \(X=N(u),Y=N(v)\) opposite and optimize a separate cut of their exterior \(D_{uv}\), then orient the two cuts relative to one another by a fair coin. All edges between the fixed neighborhoods cross; just half of the edges between those neighborhoods and the exterior are missed in expectation. Let \(s_{uv}=1-d(u)-d(v)\), the exterior mass in the binary model. The [Balogh–Clemen–Lidický global bound](https://arxiv.org/html/2103.14179) gives exterior deletion cost at most \(2s_{uv}^2/47\). The same bound holds for product weights by uniform blow-ups and continuity. Therefore
+```math
+ \beta\le \frac{P_4-C_4}{p}+\frac2{47}\mathbb E_{\rm edge}s_{uv}^2 .
+```
+Use weight \(1/3\) for this inequality and weight \(2/3\) for the sharpened clipped edge-root inequality (3) with exact exterior penalty \(P_{\rm ext}/(2pt^2)\). The four-cycle terms cancel:
+```math
+ \beta\le \frac p6-\frac{P_4}{3p}+\frac2{141}\mathbb E_{\rm edge}s_{uv}^2
+       +\frac{t}{12}(1-2M_2/p)
+       +\frac{2T_5}{3p}\left(\frac2t+\frac{\nu_1}{10t^2}\right).
+ \tag{7}
+```
+
+Suppose now \(\beta>1/25\), and write \(\sigma^2=M_2-p^2\). Every neighborhood is independent, so cutting it against the rest gives a cost at most \((1-d(u))^2/4\), by Mantel on the complement. Hence \(d(u)<3/5\). Under the ordered edge-root distribution, the mean of \(d(u)+d(v)\) is \(2M_2/p\), and
+```math
+ \mathbb E_{\rm edge}(d(u)+d(v)-2p)^2
+ \le \frac4p\int d(x)(d(x)-p)^2\,dx
+ \le \frac{12}{5p}\sigma^2 .
+```
+Expanding \(s_{uv}^2\) around \(1-2p\), its expectation is at most
+```math
+ (1-2p)^2+\frac4p\left(\frac35-(1-2p)\right)\sigma^2.
+```
+In (7) the extra variance term is cancelled by the negative variance in \(t(1-2M_2/p)/12\). In fact \(t=1/5\) makes the combined variance coefficient nonpositive throughout the middle band: \(8[\frac35-(1-2p)]/141\le 8(1197/5000)/141<1/30\). Using \(P_4\ge p^3\), \(\nu_1\le1\), and \(p_0=1243/5000\), we obtain the strict contradiction for \(T_5\le214/10^6\) from
+```math
+ \beta
+ \le\frac1{48}+\frac2{141}(1-2p_0)^2
+      +\frac{1-2p_0}{60}
+      +\frac{214}{10^6}\frac{25}{3p_0}
+ =\frac1{25}-\frac{1243039}{45641406250}.
+```
+Retaining the actual \(\nu_1\), the conditional exterior delete cost or the negative term from the preceding section can further improve (7). This still leaves a gap to the high-pentagon cut criteria.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
