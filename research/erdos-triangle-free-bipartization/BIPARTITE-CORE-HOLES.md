@@ -29,3 +29,23 @@ Take an optimal cut U,V of Y. Its loss is at most z-4z²/s² by the classical ne
     81/42025 + (3/5)(63/1000) = 333909/8405000 < 1/25.
 
 Every counterexample accordingly has independence mass less than 59/100, and in particular every vertex has weighted degree less than 59/100. This conclusion makes no minimal-support hypothesis.
+
+## Bounding the repair without tracking each attachment profile
+
+Let eta be the total missing A–B pair mass outside the union of the matched rectangles. The rectangles need not be fully missing; actual edges inside them still incur the first cost in R. If c is the mass of C, then
+
+    R <= sum_i e(A_i,B_i) + c sqrt(2 eta).
+
+In particular, if there are at most two matched rectangles, this upper bound may be as large as 803/80000 rather than 1/20000. The repaired graph then has at most two active c-indices. It maps to the Clebsch graph by the explicit zero-, one-, and two-index constructions in the linked induced-path proof. The five Clebsch cuts on the repaired graph give beta <= (e-R)/5. Restoring the edits gives beta <= e/5+4R/5, which is at most 1/25 throughout the middle band at the stated threshold.
+
+To prove the square-root bound, consider one x in C and put r=d_A(x), q=d_B(x), with r_i,q_i its degree masses by block. Add the two unindexed sets as distinct dummy blocks, one for each shore. Thus r=sum_i r_i and q=sum_i q_i. Its lost degree mass is
+
+    l = min(r, q, r+q-max_i(r_i+q_i)).
+
+The dummy blocks do not change this number because their masses are already at most max(r,q). Its attachment rectangle is entirely missing, so its off-block mass U=rq-sum_i r_i q_i is at most eta. We claim that U >= l²/2.
+
+If l is positive, trim the r_i and q_i to nonnegative masses r'_i,q'_i, each retaining total l, with r'_i+q'_i <= l at every block. One can do this by max-flow: two supply nodes have mass l each, their capacities to block i are r_i and q_i, and block i has sink capacity l. The cut checks for the two supply nodes separately are sum_i min(l,r_i)>=l and sum_i min(l,q_i)>=l, from r,q>=l. The joint cut check is sum_i min(l,r_i+q_i)>=2l. If two or more summands reach l this is immediate; if none reach l it follows from r+q>=2l; if exactly one reaches l the remainder has mass at least l by the formula for l. Thus a feasible trimming exists. Now
+
+    sum_i r'_i q'_i <= sum_i (r'_i+q'_i)²/4 <= l²/2.
+
+All off-block products are nonnegative and cannot increase under trimming. Their original total U is therefore at least l² - l²/2, as claimed. The coefficient 1/2 is sharp for this profile inequality: two blocks with r_i=q_i=l/2 give equality. Hence l<=sqrt(2 eta); multiply by each vertex weight and sum to prove the repair estimate.
