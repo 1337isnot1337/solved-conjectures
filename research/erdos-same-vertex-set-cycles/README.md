@@ -52,6 +52,9 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Fixed-matching parity](FIXED-MATCHING-PARITY.md): arbitrarily large girth and arbitrarily many reserve bridges do not force a merge when a whole perfect matching is fixed. Both colours can face this parity barrier at once.
 - [Ribbon switch order](RIBBON-SWITCH-ORDER.md): positive and negative high-girth switches can have identical quotient data and compatible parity. A tree of multiple-contact switches does merge when its cyclic order satisfies an explicit block condition; [fixture checker](verify_reserve_switch_fixtures.py).
 
+- [Kempe reachability](KEMPE-REACHABILITY.md): even allowing both halves to change, two-colour swaps can be trapped in a sign class that contains no Hamilton decomposition, at arbitrary girth. Three-colour moves suffice for reachability when the decomposition is known to exist, by the Birkhoff Markov theorem.
+- [Parity-trade girth](PARITY-TRADE-GIRTH.md): the smallest parity-changing three-colour trade in a bipartite host of girth at least g uses exactly twice the ceiling of 3g/4 edges. Suppressing degree-two vertices also gives an exact bipartite skeleton test for general trades.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
