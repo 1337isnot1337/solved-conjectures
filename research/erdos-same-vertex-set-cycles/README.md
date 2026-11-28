@@ -62,6 +62,7 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Spectral port routing](SPECTRAL-PORT-ROUTING.md): a balanced partition routes arbitrary prescribed endpoint pairs on a fixed host, including pairs on the same shore.
 - [Fixed-interface compression](FIXED-INTERFACE-COMPRESSION.md): suppress external paths through saturated vertices before testing quotient connectivity. The resulting criterion is exact for sufficiently strong blocks; see the [pairing checker](verify_fixed_interface.py).
 - [Two-layer port routing](TWO-LAYER-PORT-ROUTING.md): separate the short routes from the last spanning path. This supports many terminal pairs at a spectral ratio independent of the number of pairs.
+- [Tree of port blocks](TREE-OF-PORT-BLOCKS.md): the spanning routing property composes along an arbitrarily large bounded-degree tree with matching interfaces.
 
 ## Current bottleneck
 
