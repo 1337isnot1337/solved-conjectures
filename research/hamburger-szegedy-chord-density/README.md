@@ -93,6 +93,8 @@ For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\si
 - [Exterior-star shortcuts](EXTERIOR-STAR-SHORTCUTS.md) exactly trade old chords for new ones, with a sharp stock-preserving threshold for one outside vertex.
 - [Regular completion with no short exterior ears](REGULAR-NO-SHORT-EARS.md) proves that even a shortest cycle attaining any specified chord stock in a regular high-girth host can have no short exterior ear. Both constructions have a [fixture checker](verify_exterior_shortcuts.py).
 
+- [Quotient chord transfer](QUOTIENT-CHORD-TRANSFER.md) counts retained chords exactly when lifting through adjacent ports or through independent rim routes. Some regular completions with no short exterior ears have a Hamiltonian witness. See the [lift checker](verify_quotient_chord_transfer.py).
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
