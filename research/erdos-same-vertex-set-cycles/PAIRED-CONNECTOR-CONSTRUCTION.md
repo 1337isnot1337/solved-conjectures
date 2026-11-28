@@ -1,0 +1,23 @@
+# A shared-support construction for prescribed paired connectors
+
+A construction used in [Erdős #585](https://www.erdosproblems.com/585) research, not an embedding theorem. It generalizes the doubled routers of [the port-closure note](COMMON-PORT-CLOSURE.md): the two colours need not use the same endpoint pairing.
+
+**Connector lemma.** Fix a bipartite graph on an old vertex set. For each of two colours specify a nonempty finite list of pairs of boundary stubs. Each stub is attached to an old vertex and each pair joins distinct old vertices; different stubs may be attached to the same vertex. Assume the number of left stubs minus the number of right stubs is the same for both colours. One can add two edge-disjoint collections of paths connecting the respective pairs, with all internal vertices new, as follows: the paths are internally vertex-disjoint within each colour and the union of their internal vertex sets is identical in the two colours. The added paths meet the old graph only at stubs. If the old graph has girth at least $`g`$, the enlarged graph can be made simple and of girth at least $`g`$.
+
+## Modules and padding
+
+We use three kinds of vertex-disjoint modules, each already consisting of two edge-disjoint spanning paths on the same vertices, with four distinct endpoint ports.
+
+- A balanced module has one left and one right port per colour. Start with a bipartite quartic graph with two Hamilton factors. Delete one edge of each factor, choosing their endpoint sets far apart.
+- A left module has two left ports per colour. From such a graph delete a right vertex and its incident edges. Each Hamilton factor opens into a spanning path and its endpoints are left ports.
+- A right module is the mirror image, obtained by deleting a left vertex.
+
+The requisite [Hamilton-decomposable graphs](HAMILTON-MODULES.md) can have arbitrarily large girth and order. In a balanced module the two deleted edges can be chosen far apart by bounded-degree ball counting. Any path between distinct ports of any module can be made to have length at least $`g-2`$: the two ports either were neighbours of the deleted vertex, were endpoints of a deleted edge, or were chosen far apart. The short paths through the deleted objects are not retained.
+
+Initially count, separately for each colour, one module per requested pair, with port colours opposite the original endpoints. Let $`B_i,L_i,R_i`$ be those three counts in colour $`i`$. Equality of the left-minus-right stub counts gives $`L_1-R_1=L_2-R_2`$; the sign reverses between original stubs and module ports. Build a single inventory with the maximum of the two counts for each kind. Each colour assigns distinct primary modules of the correct kind to its pairs. In that colour its leftover unbalanced modules therefore come in left/right pairs, and its leftover balanced modules can be arbitrary.
+
+Use every leftover by routing it along one of the existing connector paths in that colour. A balanced module replaces a would-be cross edge $`ab`$ by entering the port opposite $`a`$, traversing the spanning path of the module, and departing to $`b`$. A left/right pair can also replace a cross edge: from a left $`a`$ enter the right module, leave it via its other right port, enter the left module, then leave via its other left port to right $`b`$; reverse if needed. All linking edges respect the bipartition. This padding can be arranged sequentially, maintaining that every link lies between different modules or from an old vertex to a module. Each module is used exactly once in each colour, though the two colours can place that module on completely different paths.
+
+The paths use disjoint edges in their modules. Their links are also edge-disjoint: red and blue ports in any module are distinct, and every link touches a module. Distinct stubs at the same old vertex use different ports. A simple cycle using a link contains a module path between distinct ports and at least two links, so its length is at least $`g`$; old and internal cycles already meet that bound. This proves the lemma.
+
+When using two matching labels within each of the two colours, the new path on a given stub pair may be coloured alternately with those labels. A required endpoint label on each stub is feasible exactly when the labels are the same for opposite-side stubs and different for same-side stubs; this is just the parity of the path length in the bipartite construction. The module-internal red and blue paths can be labelled independently because they are edge-disjoint. A degree-zero old vertex can thus be given two stubs of the same factor but different matching labels, allowing it to lie in the middle of a longer connector.
