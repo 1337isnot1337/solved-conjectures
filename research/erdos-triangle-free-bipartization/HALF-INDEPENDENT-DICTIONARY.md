@@ -5,7 +5,7 @@ A necessary structure theorem for [Erdős Problem 23](https://www.erdosproblems.
 Normalize the vertex measure to one. Suppose a triangle-free weighted graph or graphon has optimum unordered monochromatic mass B≥1/25 and admits a law on optimum sign cuts whose expected monochromatic degree is the constant d=2B. This holds at the [global graphon extremizer](SATURATED-GRAPHON-EXTREMIZER.md), and at any interior maximum of the weight simplex of a fixed finite support. For every ε in [0,1/10000], there is a single measurable partition consisting of at most six pairs (P_i,Q_i) and a remainder Z, with the following properties.
 
 * The remainder has mass at most 24ε. Each surviving shore has mass at least d−12ε.
-* Every independent set I of mass at least (1−ε)/2 differs in mass by at most 28ε from one of the sets formed by choosing one whole shore from each pair and taking their union. The same dictionary works for all such I. The dictionary has at most 64 entries; its entries need not themselves be independent.
+* Every independent set I of mass at least (1−ε)/2 differs in mass by at most 28ε from one of the sets formed by choosing one whole shore from each pair and taking their union. The same dictionary works for all such I. The dictionary needs at most **twelve** entries; its entries need not themselves be independent.
 * For ε=0 the conclusion is exact modulo null sets: every half independent set is one dictionary entry. If there is no qualifying I, the dictionary assertion is vacuous and no paired partition is asserted.
 
 These statements do not reduce all maximizing graphons to a finite adjacency template. They reduce one potentially infinite family of witnesses to a uniformly finite list.
@@ -30,14 +30,36 @@ Every old retained pair has at least one retained child pair. Indeed neither old
 
 If there were exactly one retained child pair for every old retained pair, the new test would agree on the retained children with one of the old dictionary entries. To see this, its last membership coordinate selects exactly one child shore of each pair. Choose the corresponding parent shore. Its error is confined to the discarded mass of the new partition, which is at most 28ε. This contradicts the choice of the new test. Each refinement must therefore strictly increase the number of retained pairs. Since that number is at most six even after an attempted seventh test, the process ends with at most six selected tests. Formula (1) and the discarded mass and shore estimates for k≤6 give the stated constants. This construction uses no compactness of the set of independent sets.
 
+## At most twelve entries are needed
+
+Let I,J be two qualifying independent sets. Put O=I∩J and R=the complement of I∪J, of mass r. Give I minus J and J minus I opposite signs, give R one common fair sign, and give O the opposite sign to R. The expected loss is
+
+    (1/2) integral_R d_W(y) dy − e_W(O,R)/2,
+
+because all possible edges incident to O go to R and are cut. All edges internal to R are missed, while R-to-(I symmetric difference J) edges are missed with probability one half. The original degrees d_W are at most one half, by independence of neighborhoods and the regular-kernel identity above. For a fractional graphon use the independent positive-support neighborhood, which is at least as large as its weighted degree. By the same exceptional-pair argument as (1), restricted to sources in R, M mass from R to outside O is at most 2dε. Thus e_W(O,R)≥d(r−2ε), and
+
+    d/2 = B ≤ (1/4−d/2) r + d ε.
+
+Since d≥.08 and ε≤.0001 this implies r≥.08(.5−.0001)/.21>.1904. This is a separation bound on the complements of unions of near-half independent sets, not just a claim that the sets intersect.
+
+In the final paired partition, let out(P) be the ordered M mass from P to outside its complementary shore Q. The formulas out(P)=d mass(P)−e_M(P,Q) and out(Q)=d mass(Q)−e_M(P,Q), summed over retained pairs, give
+
+    Σ_pairs |mass(P)−mass(Q)| ≤ E/d ≤ 6ε.
+
+Since discarded mass is at most 24ε, every dictionary entry has mass at least .5−15ε. Also mass(Q)≥d−2 out(P)/d on a retained pair, since mass(P)>d/2. Consequently the sum of any four selected shores of distinct retained pairs is at least 4d−12ε, using their disjoint complementary source cells and (1).
+
+For each qualifying set choose one dictionary entry within 28ε, and keep only the entries so used. If two used entries differ on at least four pair choices, their union has mass at least .5−15ε+4d−12ε. For corresponding independent sets I,J, the approximation loses at most 56ε from this union. Their complement R then has mass at most .5−4d+83ε≤.1883, contrary to the lower bound above. Thus the retained binary choices have Hamming diameter at most three.
+
+For completeness a family of binary strings of length k≤6 and diameter at most three has at most twelve members. Regard strings as subsets and repeatedly compress a coordinate by moving a set containing it to the set with the coordinate removed, only if the latter was absent. This preserves cardinality and does not increase diameter: when only one of a compared pair moves, distance can increase only if the unchanged set contains the coordinate, in which case its deletion was already in the old family and gives the same distance to the pre-move set. The process terminates at a down-set. In a down-set any two members A,B have union of size at most three, by comparing A with B minus A. If it contains a triple then all members lie inside that triple, giving at most eight. Otherwise its 2-sets are pairwise intersecting. They form a star or are contained in a triangle, giving at most max(k−1,3) of them. Counting the empty set and singletons gives at most 1+k+max(k−1,3)≤12. For ε=0 this proves the original graph has at most twelve half independent sets up to null sets.
+
 ## A common core for high-degree neighborhoods
 
 Here assume the original graphon is zero-one, so the neighborhood mass of almost every x equals its original degree. If B≥1/25 as above, the original degree is at most one half: its neighborhood is independent and we have shown that every independent set has mass at most one half. Let H be the vertices with original degree at least (1−ε)/2. For any qualifying independent I, almost no x in H belongs to I. Indeed for almost every x of an independent I, its neighborhood and I are disjoint independent sets. If x is in H their union has mass at least 1−ε. Give those two sets opposite signs and give the remainder one common fair sign. The expected loss is half the sum of original degrees on the remainder, at most ε/4. This contradicts B≥1/25.
 
-Consequently H is confined, up to null sets, to the all-zero signature cell of the finite selected tests. If mass(H)>24ε, this cell belongs to a retained pair. Its complementary cell Q is the intersection of the selected independent sets, has mass at least d−12ε, and obeys
+Consequently H is confined, up to null sets, to the all-zero signature cell of the finite selected tests. If mass(H)>28ε, this cell belongs to a retained pair because the discarded mass is at most 24ε. Its complementary cell Q is the intersection of the selected independent sets, has mass at least d−12ε, and obeys
 
     mass(Q minus I) ≤ 28ε       for every qualifying independent set I.
 
-For if a nearest dictionary entry chose the all-zero shore instead, it would contain all of H. Because I avoids H, this is impossible when mass(H)>28ε. The stronger hypothesis mass(H)>28ε is therefore sufficient for the displayed conclusion; mass(H)>24ε alone only guarantees retention of the pair. In addition (1) gives ordered M mass from H to outside Q at most 6dε under either retention hypothesis. For ε=0, if the degree-one-half locus has positive mass, Q is a common core of mass at least d contained modulo null sets in every half independent set, including almost every degree-one-half neighborhood.
+For if a nearest dictionary entry chose the all-zero shore instead, it would contain all of H. Because I avoids H, this is impossible when mass(H)>28ε. In addition (1) gives ordered M mass from H to outside Q at most 6dε. For ε=0, if the degree-one-half locus has positive mass, Q is a common core of mass at least d contained modulo null sets in every half independent set, including almost every degree-one-half neighborhood.
 
 The finite list represents independent sets, not unrestricted rows of the original adjacency kernel. The cross-cell constraint is on M rather than on all original edges: a dense original link with zero M mass is allowed, but then it must be cut almost surely by the stationary law. No general closure of the middle-density case follows from this alone.
