@@ -16,35 +16,35 @@ Write $S(t,x)=t(1+x^3)+x(1-x^3)$. After raising to exponent $M$, the coefficient
 
 For $k\le3M$, the first admissible $r$ is $k\bmod3$; for $3M<k\le4M$, it is $k-3M$. Assuming no zero coefficient, the sum of the $\deg P_{M,k}+1$ values is
 
-$$
+```math
 (M+1)^2+M^2+M(M-1)+M(M+1)/2=(7M^2+3M+2)/2.
-$$
+```
 
 The upper-tail leading coefficient equals $\binom Mr(-1)^r\ne0$.
 
 For residue $1$, the leading Krawtchouk coefficient $K_1=M-2j$ vanishes at exactly one $k$ for even $M$. The next admissible $r=4$ has
 
-$$
+```math
 K_4(j=M/2-1;M)=(M-2)(M-8)/8\ne0
-$$
+```
 
 for even $M\ge50$. Hence the loss is exactly three.
 
 For residue $2$, $K_2=((M-2j)^2-M)/2$ vanishes only for square $M=m^2$. For every $m\ge7$ there are exactly two admissible $j=(M\pm m)/2$. The next admissible $r=5$ has, on substitution,
 
-$$
+```math
 K_5(D=m+2,M=m^2)=\frac{(m-6)(m-2)(m+1)(m+2)(3m+5)}{60},
-$$
+```
 
-$$
+```math
 K_5(D=2-m,M=m^2)=-\frac{(m-2)(m-1)(m+2)(m+6)(3m-5)}{60}.
-$$
+```
 
 These factorizations have been checked independently by symbolic substitution and are nonzero for all $m\ge7$; both leading-degree losses are exactly three. The residue classes cannot overlap. Thus, for every $M\ge49$,
 
-$$
+```math
 R(M)=\frac{7M^2+3M+2}{2}-3\mathbf1_{2\mid M}-6\mathbf1_{M\text{ is a square}}.
-$$
+```
 
 If $R$ were eventually quasipolynomial, subtraction of a polynomial and a parity term would make the square indicator eventually quasipolynomial, and hence eventually periodic because it is bounded. For any period $q$, choosing a square $m^2$ with $2m+1>q$ gives a non-square $m^2+q$; contradiction.
 

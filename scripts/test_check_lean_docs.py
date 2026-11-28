@@ -99,7 +99,7 @@ class LeanDocsTests(unittest.TestCase):
         tagged = "```math\n\\begin{aligned}\na&=b\\\\\n&=c. \\tag{1}\n\\end{aligned}\n```\n"
         self.assertTrue(self.check(tagged, "results/example/PROOF.md"))
         fixed = repair_document(tagged)
-        self.assertEqual(fixed, "```math\n\\begin{aligned}\na&=b\\\\\n&=c.\n\\end{aligned} \\tag{1}\n```\n")
+        self.assertEqual(fixed, "```math\n\\begin{aligned}\na&=b\n\\\\ &=c.\n\\end{aligned} \\tag{1}\n```\n")
         self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
         self.assertEqual(repair_document(fixed), fixed)
         self.assertEqual(repair_document("$`\\operatorname*{arg\\,min}_x f`$\n"),
@@ -116,6 +116,43 @@ class LeanDocsTests(unittest.TestCase):
                        "    \\(indented code\\)\n"):
             with self.subTest(source=source):
                 self.assertEqual(repair_document(source), source)
+
+    def test_single_dollar_math_github_escapes(self):
+        source = "Let $\\{0,1\\}^n$ and $\\int f\\,dx$ hold, with $x_1$ and $5 or $10.\n"
+        self.assertEqual(len(self.check(source, "results/example/PROOF.md")), 2)
+        fixed = repair_document(source)
+        self.assertEqual(fixed, "Let $`\\{0,1\\}^n`$ and $`\\int f\\,dx`$ hold, with $x_1$ and $5 or $10.\n")
+        self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        self.assertEqual(repair_document(fixed), fixed)
+        named = "So $D=\\operatorname{diag}(x)$ holds.\n"
+        self.assertEqual(repair_document(named), "So $`D=\\mathop{\\mathrm{diag}}(x)`$ holds.\n")
+        adjacent = "Both $`a`$$`b`$ and `$\\{x\\}$` stay.\n"
+        self.assertEqual(repair_document(adjacent), adjacent)
+        self.assertFalse(self.check(adjacent, "results/example/PROOF.md"))
+
+    def test_double_dollar_displays_become_fences(self):
+        for source, expected in (
+                ("Then\n$$\na=b\\\\\nc=d\n$$\nso.\n", "Then\n```math\na=b\n\\\\ c=d\n```\nso.\n"),
+                ("$$x^2 \\tag{1}$$\n", "```math\nx^2 \\tag{1}\n```\n"),
+                ("$$a\n=b$$\n", "```math\na\n=b\n```\n"),
+                ("> $$\n> x\n> $$\n", "> ```math\n> x\n> ```\n")):
+            with self.subTest(source=source):
+                self.assertTrue(self.check(source, "results/example/PROOF.md"))
+                fixed = repair_document(source)
+                self.assertEqual(fixed, expected)
+                self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        inline = "We have $$x$$ here.\n"
+        self.assertEqual(repair_document(inline), inline)
+        self.assertTrue(self.check(inline, "results/example/PROOF.md"))
+
+    def test_row_breaks_move_to_the_next_line(self):
+        source = "```math\n\\begin{aligned}\na&=b\\\\\n&=c\\\\\n\\end{aligned}\n```\n"
+        self.assertTrue(self.check(source, "results/example/PROOF.md"))
+        fixed = repair_document(source)
+        self.assertEqual(fixed, "```math\n\\begin{aligned}\na&=b\n\\\\ &=c\n\\\\ \\end{aligned}\n```\n")
+        self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        quoted = "> ```math\n> a\\\\\\\\\n>   b\\\\\n> ```\n"
+        self.assertEqual(repair_document(quoted), "> ```math\n> a\n>   \\\\ \\\\ b\n> ```\n")
 
     def test_relative_lean_source_link(self):
         with TemporaryDirectory() as tmp:

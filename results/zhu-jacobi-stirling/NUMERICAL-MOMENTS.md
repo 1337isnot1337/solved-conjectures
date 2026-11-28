@@ -6,40 +6,40 @@ Issue #163 already published the identical symbolic negative minor. The newer Be
 
 Let $T_{0,0}=1$, with out-of-range entries zero, and let
 
-$$
+```math
 T_{n,k}=T_{n-1,k-1}+(ak^2+bk)T_{n-1,k},\qquad
 P_n(x)=\sum_{k=0}^nT_{n,k}x^k.
-$$
+```
 
 Zhu conjectured that the Hankel matrix $`(P_{i+j}(x))_{i,j\ge0}`$ is totally nonnegative coefficientwise in $`a,b,x`$: every finite minor has nonnegative coefficients. This is the conjecture in [Zhu (2024), §5.2 just after (5.10)](https://arxiv.org/html/2202.03793v2#S5.SS2), also listed as [Deb, P1.9](https://bishaldeb.com/positivity/themes/SMSCHTP/hankel.html). Zhu's 2024 paper dates the conjecture to 2018. Its Proposition 5.7 proves the corresponding claim with **factorially weighted** row polynomials $`\sum_k k!T_{n,k}x^k`$, not with $P_n$. Its other total-positivity assertion in (i) concerns the triangular/binomial row-generating matrices, not this Hankel matrix.
 
 The unweighted conjecture is false:
 
-$$
+```math
 \det(P_{i+j}(x))_{0\le i,j\le2}
 =2x^3\bigl(6a^3+11a^2b+6ab^2+b^3-2a^2x\bigr).
 \tag{1}
-$$
+```
 
 In particular, the coefficient of $a^2x^4$ is $-4$. Even pointwise total nonnegativity fails at $a=b=1,x=13$, where (1) is $-4\cdot13^3$.
 
 To check (1), write $\lambda_k=ak^2+bk$, $m_i=P_i(x)$. The recurrence gives
 
-$$
+```math
 \begin{aligned}
-m_0&=1,\quad m_1=x,\quad m_2=\lambda_1x+x^2,\\
-m_3&=\lambda_1^2x+(\lambda_1+\lambda_2)x^2+x^3,\\
-m_4&=\lambda_1^3x+(\lambda_1^2+\lambda_1\lambda_2+\lambda_2^2)x^2
+m_0&=1,\quad m_1=x,\quad m_2=\lambda_1x+x^2,
+\\ m_3&=\lambda_1^2x+(\lambda_1+\lambda_2)x^2+x^3,
+\\ m_4&=\lambda_1^3x+(\lambda_1^2+\lambda_1\lambda_2+\lambda_2^2)x^2
        +(\lambda_1+\lambda_2+\lambda_3)x^3+x^4.
 \end{aligned}
-$$
+```
 
 Use the first row and column to reduce the determinant to $(m_2-x^2)(m_4-m_2^2)-(m_3-xm_2)^2$. Expanding gives
 
-$$
+```math
 \lambda_1\lambda_2(\lambda_2-\lambda_1)x^3
  +\bigl(\lambda_1(\lambda_2+\lambda_3-\lambda_1)-\lambda_2^2\bigr)x^4,
-$$
+```
 
 which yields (1).
 
@@ -59,32 +59,32 @@ If $x=0$, the measure is $\delta_0$. If $a=0,b>0$, the recurrence gives $T_{n,k}
 
 For $a>0$, divide the parameters by $a$, putting $c=b/a$ and $w=x/a>0$. The recurrence gives $`T^{(a,b)}_{n,k}=a^{n-k}T^{(1,c)}_{n,k}`$, so after proving the assertion for $(1,c,w)$, multiply all support points by $a$. The points $s_j=j(j+c)$ are strictly increasing. In the Newton basis $N_k(y)=\prod_{i=0}^{k-1}(y-s_i)$, multiplication by $y$ satisfies $yN_k(y)=N_{k+1}(y)+s_kN_k(y)$. Thus $T^{(1,c)}_{n,k}$ is the coefficient of $N_k$ in $y^n$, namely the divided difference
 
-$$
+```math
 T^{(1,c)}_{n,k}
 =\sum_{j=0}^k \frac{s_j^n}{\prod_{0\le i\le k,\ i\ne j}(s_j-s_i)}.
 \tag{2}
-$$
+```
 
 The right side is zero for $k>n$; at $n=0$ use $s_0^0=1$. Define $W_j$ by summing over $k\ge j$ the coefficient of $s_j^n$ in $w^k$ times (2). For $2j+c>0$ the denominator in (2) is
 
-$$
+```math
 (-1)^{k-j}j!(k-j)!\frac{(j+c)_{k+1}}{2j+c},
-$$
+```
 
 since $s_j-s_i=(j-i)(j+i+c)$. With $k=j+m$ the series for $W_j$ is
 
-$$
+```math
 W_j=\frac{(2j+c)\Gamma(j+c)}{j!}w^j
        \sum_{m\ge0}\frac{(-w)^m}{m!\Gamma(2j+c+1+m)}.
-$$
+```
 
 The [Bessel series, DLMF 10.2.2](https://dlmf.nist.gov/10.2.E2), therefore gives
 
-$$
+```math
 W_j=\frac{(2j+c)\Gamma(j+c)}{j!}w^{-c/2}
        J_{2j+c}(2\sqrt w).
 \tag{3}
-$$
+```
 
 At $j=c=0$ the denominator in (2) is $(-1)^k(k!)^2$; (3) holds there with prefactor $`1`$ in place of $(2j+c)\Gamma(j+c)/j!$.
 
@@ -108,9 +108,9 @@ Suppose a positive measure $\nu$ on $\mathbb R$ has all moments $P_n(w)$ for the
 
 The subseries at $v=R\sqrt{|u|}$ equals $(\cosh v+\cos v)/2\ge e^v/4-1/2$. Thus $\nu$ also has every exponential-root moment. Domination by $e^{|z|\sqrt{|u|}}$ justifies integrating term by term in
 
-$$
+```math
 \mathcal C(z,u)=\sum_{n\ge0}\frac{z^{2n}u^n}{(2n)!}.
-$$
+```
 
 The integrals against $\nu$ and $W$ agree for every $z\in\mathbb C$. At $z=it$ the kernel is $\cos(t\sqrt u)$ for $u\ge0$ and $\cosh(t\sqrt{-u})$ for $u<0$. Its integral against $W$ is bounded uniformly in real $t$. Any $\nu$-mass on $(-\infty,0)$ would give positive mass in some $(-\infty,-\epsilon]$ and make its integral unbounded, since the contribution from nonnegative $u$ is bounded below. Hence $\nu$ is supported on $`[0,\infty)`$. The two finite measures then have matching cosine transforms after taking the square-root pushforward. Symmetrizing those pushforwards on $\mathbb R$ and using uniqueness of the Fourier transform for finite signed measures yields $\nu=W$. Thus a positive Hamburger representation exists exactly when all $W_j$ are nonnegative.
 
@@ -122,9 +122,9 @@ The neighboring negative intervals overlap: $j_{\nu+2,1}<j_{\nu,2}$. To see this
 
 If $2\sqrt w\le j_{c,1}$, each weight is nonnegative. If $z=2\sqrt w>j_{c,1}$, choose the largest integer $j\ge0$ with $j_{c+2j,1}<z$. This exists and is finite, and
 
-$$
+```math
 j_{c+2j,1}\lt z\le j_{c+2j+2,1}\lt j_{c+2j,2}.
-$$
+```
 
 Thus $W_j<0$, including when $z$ happens to be a first zero of a higher order. This proves the threshold with equality included.
 

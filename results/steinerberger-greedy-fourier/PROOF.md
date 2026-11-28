@@ -4,11 +4,11 @@
 
 In [Steinerberger, *Some Open Problems*, March 31, 2026 revision, §20, p. 22](https://faculty.washington.edu/steinerb/openproblems.pdf#page=22), the rule on the circle $\mathbb T=\mathbb R/\mathbb Z$ adds $x_{n+1}$ to minimize $\sum_{a=1}^n f(x-x_a)$, using the periodic Bernoulli polynomial $f(x)=x^2-x+1/6$ on $[0,1]$. Its explicitly proposed Fourier estimate is
 
-$$
+```math
 W_n:=\sum_{\ell=1}^n\frac1\ell
 \left|\sum_{a=1}^n e^{2\pi i\ell x_a}\right|
 =O(\log n).
-$$
+```
 
 This estimate is false. Starting at any one point and choosing any minimizer at each step, the same exact Fourier magnitudes result. For $\ell\ge1$ and $k=v_2(\ell)$,
 
@@ -20,11 +20,11 @@ This estimate is false. Starting at any one point and choosing any minimizer at 
 
 In particular, using natural logarithms,
 
-$$
+```math
 \limsup_{n\to\infty}\frac{W_n}{(\log n)^2}
 =\frac{1}{6\log 2}.
 \tag{2}
-$$
+```
 
 The rule initialized at an arbitrary multi-point seed can behave differently. It is unnecessary to analyze that variant to refute the stated estimate: (2) holds for every permitted singleton initialization and every tie-breaking rule. The logarithmic energy and potential observations preceding the conjecture in §20 are separate; they are not refuted.
 
