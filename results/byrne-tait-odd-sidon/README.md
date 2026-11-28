@@ -1,5 +1,7 @@
 # Byrne–Tait’s odd-length Sidon-set question
 
+**Prior work.** Byrne and Tait's odd-length question was already answered by Mengdi Yao, Zenodo, registered 23 September 2026, [doi:10.5281/zenodo.22918720](https://doi.org/10.5281/zenodo.22918720), Theorem 6.3. Cite that preprint for the answer. This page records a later derivation first committed on 26 November 2026. It is unranked and is not counted as a new resolution. [Details](PROOF.md)
+
 **Lean status:** full. The [Lean formalization](https://github.com/1337isnot1337/solved-conjectures/pull/1001), submitted under the GitHub account [aflah02](https://github.com/aflah02), verifies Cinna Davis’s written proof. The contributor reports using GPT-6.2 Astra.
 
 For every fixed odd length $`k\ge3`$ and index $`h`$, the largest size of a set with distinct ordered $`k`$-fold products is at most $`(1-\varepsilon_{h,k})|\Gamma|^{1/k}`$ for all sufficiently large finite groups $`\Gamma`$ with an abelian subgroup of index $`h`$. The proof also handles even lengths and nonnormal abelian subgroups. This answers the odd-length extension of Byrne and Tait’s density-gap theorem. [Published question](https://doi.org/10.4153/S0008414X26102314)

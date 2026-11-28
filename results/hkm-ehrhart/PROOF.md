@@ -1,6 +1,8 @@
 # Higashitani–Kummer–Michałek conjecture
 
-**Status: both clauses refuted by an exact counterexample; awaiting external review and priority verification.** Issue #316. Discovery and computation: ChatGPT research session, 2026-11-24, at the repository owner's request. No claim of exclusive authorship or first discovery.
+**Prior work (note added 28 November 2026).** This disproof was already public when the argument below was written. Aran S. Ziegler, *Off-line Ehrhart roots for complete multipartite symmetric edge polytopes*, Zenodo, registered 8 October 2026, [doi:10.5281/zenodo.23236860](https://doi.org/10.5281/zenodo.23236860), disproves the root-location assertion of Conjecture 4.10 with the same complete multipartite graph with six parts of size two, whose Ehrhart polynomial has exactly four roots off the canonical line. Priority for the disproof belongs to that note, and it should be cited as the original source. The argument below dates from 24 November 2026, and the repository's search at that time did not find Ziegler's record. The text is kept as a later derivation with its own exact certificates and Lean check. It is not a first resolution, and it is no longer listed in the ranked results table.
+
+**Status: both clauses refuted by an exact counterexample; the counterexample is not new (see the note above).** Issue #316. Discovery and computation: ChatGPT research session, 2026-11-24, at the repository owner's request. No claim of exclusive authorship or first discovery.
 
 ## Statement and sources
 

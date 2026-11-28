@@ -1,5 +1,7 @@
 # The unique tight set of six integer speeds
 
+**Prior work (note added 28 November 2026).** The classification of tight six-speed sets proved below was already public when this proof was written. Lee Marshall, [ai-math-results, `results/lonely-runner-tight-6-7`](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), release `v2026.10.29c` published 29 October 2026, with the repository archived at [doi:10.5281/zenodo.23842047](https://doi.org/10.5281/zenodo.23842047), Theorem B1, states that every six-speed set with loneliness at most 1/7 is a dilate of a permutation of the consecutive speeds one through six. Priority for the classification belongs to that work, and it should be cited as the original source. The proof below was first committed on 18 November 2026. It is kept as a later derivation. It is not a first resolution, and it is no longer listed in the ranked results table. This note does not assess the statement about seven-coordinate critical planes.
+
 For a set $D$ of distinct positive integer speeds, let $`L(D)=\max_t\min_{d\in D}\|dt\|`$, with distance measured to the nearest integer. Dividing by the gcd preserves $L$. A six-speed set is tight if $L(D)=1/7$.
 
 **Theorem 1.** Every tight six-speed set is a dilation of $`\{1,2,3,4,5,6\}`$.

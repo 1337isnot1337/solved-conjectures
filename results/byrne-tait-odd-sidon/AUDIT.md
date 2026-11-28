@@ -1,5 +1,7 @@
 # Review of the odd-length Sidon-set bound
 
+**Correction (28 November 2026).** The source search recorded below missed an earlier public answer to the odd-length question: Yao, Zenodo, registered 23 September 2026, [doi:10.5281/zenodo.22918720](https://doi.org/10.5281/zenodo.22918720), Theorem 6.3. The statement below that no earlier proof of the odd-length assertion appeared is superseded. See the prior-work note in the [proof](PROOF.md).
+
 The journal version of Byrne and Tait’s Theorem 1.5 gives a density gap at even word lengths for groups with a normal abelian subgroup of fixed index. Their Question (1) asks about odd lengths. In arXiv v1 the same question is numbered (2), and its Question (1) is different. Here every ordered word of the prescribed length, including words with repeated letters, must have a different product. The proof answers the journal question at every odd length and removes the normality hypothesis. [Journal statement and questions](https://doi.org/10.4153/S0008414X26102314) · [Preprint, concluding questions](https://arxiv.org/html/2509.07750v1)
 
 ## Independent mathematical review

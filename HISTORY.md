@@ -1,5 +1,16 @@
 # History
 
+## 28 November 2026 — Seven results unranked after confirmed earlier resolutions
+
+A prior-art audit confirmed earlier public resolutions of seven listed results. Their rows are removed from the README Results table, and none counts as a new resolution. The result directories, proofs and checks are kept as later derivations. Each proof now opens with a prior-work note linking the original source, and the entries are registered as unranked supplements.
+
+- Higashitani–Kummer–Michałek conjecture: disproved with the same six-part graph in [Aran S. Ziegler’s Zenodo note](https://doi.org/10.5281/zenodo.23236860), registered 8 October 2026. [Note](results/hkm-ehrhart/PROOF.md)
+- Erdős–Hajnal’s ordinal-square chromatic problem: the order-type transfer appeared, with a Lean proof, in [mnn31/erdos-lean](https://github.com/mnn31/erdos-lean/commit/e7de340be9c1828da18538feb254ee9dfcf3af42) and [google-deepmind/formal-conjectures pull request 7250](https://github.com/google-deepmind/formal-conjectures/pull/7250) on 13 October 2026. [Note](results/erdos-hajnal-ordinal-square-chromatic/PROOF.md)
+- Sokal’s Apéry moment threshold: the excluded interval was settled by [Li and Yeroushalmi](https://doi.org/10.5281/zenodo.24043854), registered 7 November 2026. [Note](results/sokal-apery-moment-threshold/PROOF.md)
+- Byrne–Tait’s odd-length Sidon-set question: answered by [Mengdi Yao](https://doi.org/10.5281/zenodo.22918720), registered 23 September 2026. [Note](results/byrne-tait-odd-sidon/PROOF.md)
+- Benfield–Lippard’s stable Waring-gap parity conjecture: proved by the same argument in the Omega Institute tracker, [issue 23099](https://github.com/the-omega-institute/trureturing/issues/23099) of 28 October 2026. [Note](results/benfield-lippard-waring-gap-parity/PROOF.md)
+- Tight six-speed and seven-speed lonely runner sets: both classifications were published in [Lee Marshall’s ai-math-results](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), released 29 October 2026. [Six-speed note](results/tight-six-speeds/PROOF.md) · [Seven-speed note](results/tight-seven-speeds/PROOF.md)
+
 ## 28 November 2026 — Vega templates for Erdős’s triangle-free bipartization conjecture
 
 The sharp weighted deletion bound holds on all Vega templates and homomorphic preimages. This is a partial theorem for the still-open full conjecture, independently AI-reviewed in writing. [Proof](results/erdos-23-vega/PROOF.md) · [Review](results/erdos-23-vega/REVIEW.md).

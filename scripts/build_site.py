@@ -73,7 +73,17 @@ EXTERNAL_CREDIT = {
         "https://x.com/JesterInABarrel/status/2123233964827812334",
     ),
 }
-UNRANKED_SUPPLEMENTS = {"chow-conjecture"}
+UNRANKED_SUPPLEMENTS = {
+    "chow-conjecture",
+    # Kept as later derivations after a confirmed earlier public resolution.
+    "benfield-lippard-waring-gap-parity",
+    "byrne-tait-odd-sidon",
+    "erdos-hajnal-ordinal-square-chromatic",
+    "hkm-ehrhart",
+    "sokal-apery-moment-threshold",
+    "tight-seven-speeds",
+    "tight-six-speeds",
+}
 SCOPE_LABELS = {"partial": "Partial result on an open problem", "supplement": "Unranked supplement"}
 PARTIAL_CATEGORIES = {
     "circular-index-upper-half-remaining-deltas": "Graph theory and discrete geometry",

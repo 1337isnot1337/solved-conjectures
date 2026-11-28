@@ -1,5 +1,7 @@
 # Benfield–Lippard's stable Waring-gap parity conjecture
 
+**Prior work (note added 28 November 2026).** A complete proof of Conjecture 10.4 by the same argument was already public when this proof was written. It appears in the Omega Institute's `trureturing` tracker: [issue 23099](https://github.com/the-omega-institute/trureturing/issues/23099), opened 28 October 2026, gives the full proof, and [issue 8611](https://github.com/the-omega-institute/trureturing/issues/8611), opened 18 September 2026, records the same route. Both work modulo $`2^k-1`$, observe that the least representative of each residue class uses no copy of that generator, and deduce the parity of the largest gap and of the number of gaps. Priority for the argument belongs to that work, and it should be cited as the original source. The proof below was first committed on 24 November 2026. It is kept as a later derivation. It is not a first resolution, and it is no longer listed in the ranked results table.
+
 Benfield and Lippard's [Conjecture 10.4](https://arxiv.org/html/2404.08193v2#S10.Thmtheorem4) says that, for every exponent e≥2, the largest stable positive offset not expressible by e-th powers and the number of such offsets are both odd. The conjecture holds. In fact, with a=2^e−1, the largest offset is congruent to −a and the size to −(a−1)/2 modulo 2 when e is odd and modulo 2^{v₂(e)+2} when e is even.
 
 ## Proof

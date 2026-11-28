@@ -1,5 +1,7 @@
 # Eight lonely runners, all equality cases
 
+**Prior work.** The classification of tight seven-speed sets was already public in Lee Marshall's [ai-math-results](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), Theorem B2, released 29 October 2026. Cite that work for the classification. This page records a later derivation first committed on 18 November 2026. It is unranked and is not counted as a new resolution. [Details](PROOF.md)
+
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 
 ## Result
