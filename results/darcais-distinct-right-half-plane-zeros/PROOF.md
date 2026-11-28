@@ -4,7 +4,7 @@
 distinct zeros in the open right half-plane. More precisely, there are
 a fixed positive integer $M$ and a complex number $`z_*`$ with
 $`\Re z_*>0`$ such that for every sufficiently large prime $`p`$ there is
-a zero $w_p$ of $P_{Mp}$ satisfying $(Mp)w_p\to z_*$ as $p\to\infty$.
+a zero $w_p$ of $P_{Mp}$ satisfying $`(Mp)w_p\to z_*`$ as $p\to\infty$.
 
 There are also constants $B,\delta>0$ and a set of indices of
 positive lower density such that, for every sufficiently large
@@ -20,7 +20,7 @@ refutation of that conjecture or a claim about the first counterexample.
 
 ## 1. Scaled entire limit
 
-Write $u(m)=\sigma_{-1}(m)$ for $m\ge1$, and let $u^{*k}(n)$
+Write $u(m)=\sigma_{-1}(m)$ for $m\ge1$, and let $`u^{*k}(n)`$
 denote the $`k`$-fold **additive** convolution. By the generating
 function,
 ```math
@@ -37,7 +37,7 @@ The squares satisfy
 \le CN,
 ```
 where the second inequality follows by separating the common gcd.
-In particular $(u*u)(t)\le Ct$ for every positive integer $t$, by
+In particular $`(u*u)(t)\le Ct`$ for every positive integer $t$, by
 Cauchy–Schwarz. For $k\ge2$, the remaining $k-2$ factors are summed
 over the simplex with coordinate sum at most $n$. In each coordinate,
 a nonincreasing nonnegative weight has $u$-weighted sum at most
@@ -129,7 +129,7 @@ Rouché's theorem give zeros $`z_p`$ of $`F_{Mp}`$ in the disk for
 every sufficiently large prime $`p`$. The zeros may be chosen with
 $`z_p\to z_*`$: Rouché applies to arbitrarily small concentric
 circles, and these exclude the possibility of a distinct limiting
-zero in the initial disk. Since $z_*\ne0$, the numbers
+zero in the initial disk. Since $`z_*\ne0`$, the numbers
 $w_p=z_p/(Mp)$ are nonzero right-half-plane zeros of $P_{Mp}$,
 with $w_p\to0$. They therefore take infinitely many distinct
 values.
@@ -187,7 +187,7 @@ the difference of the $`k`$-fold convolutions into terms with
 one factor $u-u_D$ and $k-1$ factors bounded by $u$. Pair the
 tail factor with any other factor by Cauchy–Schwarz, then use
 the prefix bound on the rest. This bounds
-$|u^{*k}(n)-u_D^{*k}(n)|/n^{k-1}$ by a constant depending on $`k`$
+$`|u^{*k}(n)-u_D^{*k}(n)|/n^{k-1}`$ by a constant depending on $`k`$
 times the square root of the double-sum tail, uniformly in $n$.
 
 For bounded divisors $d_1,\ldots,d_k\le D$, let $g=\gcd(d_1,\ldots,d_k)$.

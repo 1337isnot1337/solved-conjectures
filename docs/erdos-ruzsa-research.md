@@ -28,7 +28,7 @@ Let $f$ be completely multiplicative with $`f(p)\in\{0,1\}`$, and suppose that $
 
 Indeed, the first bound is an Euler product. Since $h$ is supported on squarefree integers,
 $\sum_{d\le t}h(d)\log d\le\sum_{m\le t}h(m)\sum_{p\le t/m}\log p\ll t e^L$.
-The terms $d\le\sqrt t$ can be counted trivially. From $f=1*g$ one gets $F(t)/t=\sum_{d\le t}g(d)/d+O_L(1/\log(2t))$. Partial summation gives
+The terms $d\le\sqrt t$ can be counted trivially. From $`f=1*g`$ one gets $F(t)/t=\sum_{d\le t}g(d)/d+O_L(1/\log(2t))$. Partial summation gives
 
 ```math
 \left|\frac{F(t)}t-\frac{F(s)}s\right|
@@ -110,9 +110,9 @@ Choose $\delta>0$ with $2\theta\lt 1/2-\delta$, then choose $\epsilon$ as in (3)
 F(X)-F(M)=\frac{X-M}{X}F(X)+o(X)\gg_{K,A,\epsilon}N.
 ```
 
-For $M\lt X/(\log X)^2$ use $F(M)\le M$, and otherwise use (1). Fix $`d_*`$ with $`2\theta\lt d_*\lt 1/2-\delta`$ and set $D=N^{d_*}$. To apply (3) to the interval $(M,X]$, first apply it at $x=X$. If $M\ge X/(\log X)^2$, apply it also at $x=M$, since $N^{\epsilon/2}\le x^\epsilon$, $D\le x^{1/2-\delta}$ and $f(p)=1$ for $p\in Q$ up to $(\log x)^{1/2}$. For smaller $M$, the total error at that endpoint for the indicated moduli is bounded by $2M\sum_{d\in\mathcal D}1/d+D=o(N)$ from the interval count without the weight $f$.
+For $M\lt X/(\log X)^2$ use $F(M)\le M$, and otherwise use (1). Fix $`d_*`$ with $`2\theta\lt d_*\lt 1/2-\delta`$ and set $`D=N^{d_*}`$. To apply (3) to the interval $(M,X]$, first apply it at $x=X$. If $M\ge X/(\log X)^2$, apply it also at $x=M$, since $N^{\epsilon/2}\le x^\epsilon$, $D\le x^{1/2-\delta}$ and $f(p)=1$ for $p\in Q$ up to $(\log x)^{1/2}$. For smaller $M$, the total error at that endpoint for the indicated moduli is bounded by $2M\sum_{d\in\mathcal D}1/d+D=o(N)$ from the interval count without the weight $f$.
 
-For each $d\in\mathcal D$, the simultaneous forbidden conditions for the primes dividing $d$ specify one reduced residue class modulo $d$, by the Chinese remainder theorem. The weight of this class in $(M,X]$ has the form $(F(X)-F(M))/d+r_d$, where the sum of $|r_d|$ for $d\le D$ is $o(N)$ by (3). Apply the dimension-one lower sieve with density $1/p$ on $Q$, cutoff $z=N^\theta$, and level $D$. Its dimension bound follows from Mertens' product over all primes. The lower sieve function is positive at the fixed parameter $\log D/\log z=d_*/\theta>2$, and $\prod_{p\in Q}(1-1/p)\ge e^{-2K}$. Hence the number of survivors with $f(m)=1$ is $\gg_{K,A,\theta}N$.
+For each $d\in\mathcal D$, the simultaneous forbidden conditions for the primes dividing $d$ specify one reduced residue class modulo $d$, by the Chinese remainder theorem. The weight of this class in $(M,X]$ has the form $(F(X)-F(M))/d+r_d$, where the sum of $|r_d|$ for $d\le D$ is $o(N)$ by (3). Apply the dimension-one lower sieve with density $1/p$ on $Q$, cutoff $z=N^\theta$, and level $D$. Its dimension bound follows from Mertens' product over all primes. The lower sieve function is positive at the fixed parameter $`\log D/\log z=d_*/\theta>2`$, and $\prod_{p\in Q}(1-1/p)\ge e^{-2K}$. Hence the number of survivors with $f(m)=1$ is $\gg_{K,A,\theta}N$.
 
 ## Consequence for deviations from a common shift
 

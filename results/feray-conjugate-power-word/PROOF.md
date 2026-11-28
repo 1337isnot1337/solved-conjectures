@@ -21,9 +21,9 @@ For an $X$-cycle of length $j$, raising $X$ to the power $`a`$ splits the cycle 
 
 ## 2. Mixing two classes with few cycles
 
-Let $g,h\in S_n$. Write $\mu_g,\mu_h$ for the uniform measures on their conjugacy classes, and let $u_{g,h}$ be the uniform measure on the parity coset of sign $\mathop{\mathrm{sgn}}(g)\mathop{\mathrm{sgn}}(h)$. For an irreducible representation with ordinary character $\chi$ and dimension $d_\chi$, the Fourier transform of $\mu_g$ is the scalar $\chi(g)/d_\chi$ times the identity by Schur’s lemma. The transforms of $u_{g,h}$ at the trivial and sign representations coincide with those of $\mu_g*\mu_h$; its transforms at other representations vanish. The latter follows by writing $u_{g,h}$ as the translate of the uniform measure on $A_n$: averaging a representation over $A_n$ projects onto its $A_n$-invariant vectors, which in an irreducible representation are absent unless the representation factors through $S_n/A_n$.
+Let $g,h\in S_n$. Write $\mu_g,\mu_h$ for the uniform measures on their conjugacy classes, and let $u_{g,h}$ be the uniform measure on the parity coset of sign $\mathop{\mathrm{sgn}}(g)\mathop{\mathrm{sgn}}(h)$. For an irreducible representation with ordinary character $\chi$ and dimension $d_\chi$, the Fourier transform of $\mu_g$ is the scalar $\chi(g)/d_\chi$ times the identity by Schur’s lemma. The transforms of $u_{g,h}$ at the trivial and sign representations coincide with those of $`\mu_g*\mu_h`$; its transforms at other representations vanish. The latter follows by writing $u_{g,h}$ as the translate of the uniform measure on $A_n$: averaging a representation over $A_n$ projects onto its $A_n$-invariant vectors, which in an irreducible representation are absent unless the representation factors through $S_n/A_n$.
 
-By Cauchy–Schwarz followed by finite-group Plancherel applied to $\mu_g*\mu_h-u_{g,h}$,
+By Cauchy–Schwarz followed by finite-group Plancherel applied to $`\mu_g*\mu_h-u_{g,h}`$,
 ```math
 4d_\mathrm{TV}(\mu_g*\mu_h,u_{g,h})^2
 \leq\sum_{\chi\notin\{1,\mathop{\mathrm{sgn}}\}}d_\chi

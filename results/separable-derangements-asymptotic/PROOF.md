@@ -34,7 +34,7 @@ since $\int_0^\eta e^{-cj\sqrt{\theta}}d\theta=O(j^{-2})$. Because $h_+(d)\to0$,
 h_+=2p_0 G-G*W.
 \tag{4}
 ```
-The nonnegative loss convolutions increase to a finite sum, because the iterated identity bounds them by $2p_0G+\nu^{*j}*h_+$ before taking the limit.
+The nonnegative loss convolutions increase to a finite sum, because the iterated identity bounds them by $`2p_0G+\nu^{*j}*h_+`$ before taking the limit.
 
 For each finite set of integers $E$, nonnegativity in (4) implies
 $\sum_{e\in E} W(e) G(d-e)/G(d)\le2p_0$. Let $|d|\to\infty$, using the Green asymptotic for each fixed $e$, and then increase $E$. It follows that $W$ is summable with $\sum_e W(e)\le2p_0$. Moreover,
@@ -51,7 +51,7 @@ h_\pm(d)=o((1+|d|)^{-1/2})\quad (|d|\to\infty),\qquad
 \tag{6}
 ```
 
-Let $S_j$ denote the cumulative displacement along $j$ independent negative spine steps in the ordinary infinite spine law. By (2) and the summability of $W$, $h_-\in\ell^2(\mathbb Z)$. Put $G_H(d)=\sum_{j=1}^{H}\nu^{*j}(d)$, so $0\le G_H\le G$ and $\sum_d G_H(d)=H$. On $|d|\le H^2$, (1) of the companion proof gives $\sum G_H(d)^2=O(\log(2+H))$. On $|d|>H^2$, $\sup G_H\le C/H$, so the squared sum there is at most $(C/H)\sum_dG_H(d)\le C$. Consequently $`\|G_H\|_2=O(\sqrt{\log(2+H)})`$. The contribution of any fixed finite set to $`\sum_d G_H(d)h_-(-d)`$ is bounded uniformly in $H$, while the remaining contribution is at most $`\|G_H\|_2`$ times the $`\ell^2`$ norm of the corresponding tail of $`h_-`$. Taking the finite set large gives
+Let $S_j$ denote the cumulative displacement along $j$ independent negative spine steps in the ordinary infinite spine law. By (2) and the summability of $W$, $h_-\in\ell^2(\mathbb Z)$. Put $`G_H(d)=\sum_{j=1}^{H}\nu^{*j}(d)`$, so $0\le G_H\le G$ and $\sum_d G_H(d)=H$. On $|d|\le H^2$, (1) of the companion proof gives $\sum G_H(d)^2=O(\log(2+H))$. On $|d|>H^2$, $\sup G_H\le C/H$, so the squared sum there is at most $(C/H)\sum_dG_H(d)\le C$. Consequently $`\|G_H\|_2=O(\sqrt{\log(2+H)})`$. The contribution of any fixed finite set to $`\sum_d G_H(d)h_-(-d)`$ is bounded uniformly in $H$, while the remaining contribution is at most $`\|G_H\|_2`$ times the $`\ell^2`$ norm of the corresponding tail of $`h_-`$. Taking the finite set large gives
 ```math
 \sum_{j=1}^{H}\mathbb E[h_-(-S_j)]=o(\sqrt{\log H}).
 \tag{7}
