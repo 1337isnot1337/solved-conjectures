@@ -83,12 +83,12 @@ $`1-1/\alpha\lt s<1/\alpha`$,
 \mathbb E Y_\alpha^s
 &=\frac{\alpha\sin\theta}{\pi}
 \big[J_\theta(1-\alpha+\alpha s)
-+J_\theta(1+\alpha s)\big]\\
-&=\alpha\left[
++J_\theta(1+\alpha s)\big]
+\\ &=\alpha\left[
 \frac{\sin(\pi(1-\alpha)(1-s))}{\sin(\pi\alpha(1-s))}
 +\frac{\sin(\pi(1-\alpha)s)}{\sin(\pi\alpha s)}
-\right]\\
-&=\frac{\alpha\sin(\pi\alpha)\sin(\pi s)}
+\right]
+\\ &=\frac{\alpha\sin(\pi\alpha)\sin(\pi s)}
 {\sin(\pi\alpha s)\sin(\pi\alpha(1-s))}.
 \end{aligned}
 \tag{6}
@@ -137,8 +137,8 @@ $`K_\alpha(s)=\log\mathbb E V_\alpha^s`$, choosing the logarithm equal to zero a
 \begin{aligned}
 K_\alpha(s)={}&s\log\Gamma(1+\alpha)
 +\log\Gamma(1-\alpha s)
-+\log\Gamma(1+\alpha-\alpha s)\\
-&+\log\Gamma(1-\alpha+\alpha s)
++\log\Gamma(1+\alpha-\alpha s)
+\\ &+\log\Gamma(1-\alpha+\alpha s)
 -\log\Gamma(1+\alpha)
 -\log\Gamma(1-\alpha)
 -\log\Gamma(2-s).

@@ -4,7 +4,7 @@ In [Erdős problem 461](https://www.erdosproblems.com/461), write $`s_t(m)`$ for
 
 **Theorem.** For each $`0<\kappa<1/2`$ there are $`\delta,c>0`$ with the following property for all sufficiently large $`t`$. Suppose some integer $`1\le r\le t`$ satisfies
 ```math
- \sum_{\substack{t^\delta<p<t\\p\nmid n+r}}\frac1p\le\frac12-\kappa.
+ \sum_{\substack{t^\delta\lt p\lt t\\p\nmid n+r}}\frac1p\le\frac12-\kappa.
 ```
 Then $`f(n,t)\ge ct`$. Every small-prime residue of $`n`$ is unrestricted, and only agreement modulo the prime itself is needed at an aligned large prime. The hypothesis allows arbitrary size for $`n`$. Consequently any sequence violating the conjectured linear bound must eventually fail this condition at every center $`r`$, for each such fixed $`\kappa`$ and its corresponding $`\delta`$.
 
@@ -46,7 +46,7 @@ using the elementary divisor-sum bound. Choose $`\delta`$ so $`D\le t^{1/4}`$. S
 
 Take $`u=n`$, $`v=-r`$, and choose $`\xi=\kappa/4`$. At least $`(1/2-\xi)t`$ sites have $`a_y(n+i)\ge a_y(|i-r|)`$ with nonzero arguments. Discard sites with $`|i-r|<\kappa t/8`$, losing at most $`\kappa t/4+O(1)`$. Also discard sites where $`|i-r|`$ has any unaligned prime factor $`p>y`$, at cost at most
 ```math
-t\sum_{\substack{y<p<t\\p\nmid n+r}}1/p+\pi(t).
+t\sum_{\substack{y\lt p\lt t\\p\nmid n+r}}1/p+\pi(t).
 ```
 Finally discard sites where $`p^2\mid i-r`$ for any $`p>y`$ with $`p\le\sqrt{t}`$, at cost $`O(t/y+\sqrt t)`$. The prime number theorem, or the elementary Chebyshev bound, gives $`\pi(t)=o(t)`$.
 

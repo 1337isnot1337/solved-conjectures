@@ -4,9 +4,9 @@
 
 **Theorem.** Every closed orientable hyperbolic surface S admits a smooth real function f of area mean zero for which
 
-$$
+```math
 \sup_{\gamma\text{ closed geodesic}} \left|\frac1{\ell(\gamma)}\int_\gamma f\,ds\right|
-$$
+```
 
 is strictly positive and is not attained. The same statement holds if the supremum is restricted to simple closed geodesics. Any maximizing sequence in either formulation has lengths tending to infinity.
 

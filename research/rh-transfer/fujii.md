@@ -125,8 +125,8 @@ For any smooth compactly supported real test function phi, its Fourier transform
 Dominated convergence, using (3), proves
 
 ~~~math
-F_\alpha\ \longrightarrow\
-R:=-1-\sum_\rho\frac{e^{i\gamma y}}{\rho}
+F_\alpha\ \longrightarrow
+\ R:=-1-\sum_\rho\frac{e^{i\gamma y}}{\rho}
 \quad\hbox{in }\mathcal D'(\mathbb R)
 \quad(\alpha\to\infty).
 \tag{4}
@@ -234,7 +234,7 @@ converges uniformly and absolutely after the linear term, so Q is continuous and
 Away from zero, beta GRH gives R(v)=O_delta(1+v^2). The tails |v|>=delta are consequently exponentially small in alpha when paired with k_alpha. On the remaining interval,
 
 ~~~math
-R(v)=-\frac12\operatorname{sgn}(v)
+R(v)=-\frac12\mathop{\mathrm{sgn}}(v)
              \log\frac1{|v|}+O(1).
 ~~~
 
@@ -247,28 +247,34 @@ The earlier proof of (7) remains an independent alternative: Hardy–Littlewood'
 ### 5.3 A shorter zero-count proof with a convergent constant
 
 An independent proof in [fujii-zero-count.md](fujii-zero-count.md) strengthens the asymptotic to
+
 ~~~math
 F_\alpha(0)=
 \left(\frac12-\frac1{\mathrm e}\right)\log\alpha
 +C_\beta+
 O\!\left(\frac{\log(\alpha+2)}{\alpha}\right).
 ~~~
+
 The constant is
+
 ~~~math
 C_\beta=-1-\sum_{\gamma>0}\frac1{1/4+\gamma^2}
 -\frac1\pi\int_0^\infty
- \operatorname{Re}\Gamma(iu)\log\frac{2u}{\pi}\,du,
+ \mathop{\mathrm{Re}}\Gamma(iu)\log\frac{2u}{\pi}\,du,
 ~~~
+
 with absolutely convergent sum and integral.
 
 The proof subtracts the pole of gamma before applying the classical zero-counting formula. With epsilon=1/(2alpha), Fourier inversion gives the exact identity
+
 ~~~math
 \int_0^\infty
-\operatorname{Re}\left(
+\mathop{\mathrm{Re}}\left(
  \Gamma(\varepsilon+iu)-\frac1{\varepsilon+iu}
 \right)\,du
 =\frac{\pi}{\mathrm e}-\frac{\pi}{2}.
 ~~~
+
 Stieltjes summation against
 N_+(T)=(T/(2pi))log(2T/(pi e))+O(log(T+2))
 then produces the displayed coefficient. After removing the pole, the real-part derivative is uniformly integrable, so the zero-counting error contributes only O(log(alpha+2)/alpha). This proof avoids the boundary-distribution step altogether. The prime-sum normalization and recurrence are still needed.
@@ -564,7 +570,7 @@ If sigma_c<=h, the integral F is holomorphic on Re s>h. The other displayed term
 
 ~~~math
 \beta(s)=\exp(P_{\rm tilde}(s)+E_\chi(s))
-\qquad(\operatorname{Re}s>h).
+\qquad(\mathop{\mathrm{Re}}s>h).
 ~~~
 
 This contradicts the zero with real part b>h.

@@ -7,8 +7,8 @@
 Let $`1\le n_1\lt n_2<\cdots`$ be distinct positive integers and choose one residue $`a_i\bmod n_i`$ for each modulus. Define
 
 ```math
-A=\{m\in\mathbb N:\text{for every }i,\ 
-m\lt n_i\text{ or }m\not\equiv a_i\pmod {n_i}\}.
+A=\{m\in\mathbb N:\text{for every }i,
+\ m\lt n_i\text{ or }m\not\equiv a_i\pmod {n_i}\}.
 ```
 
 Does the limit

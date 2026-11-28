@@ -42,7 +42,7 @@ The catalogue credits the Paley-I case $B=[1]$ to earlier work. Skew difference 
 
 ## A prime-power divisor for Paley II
 
-For $q\equiv1\pmod4$ an odd prime power, let $T$ be the symmetric Paley conference matrix on $\{\infty\}\cup\mathbb F_q$. Its diagonal entries are zero and its finite block is translation-invariant. Use the conventional Paley-II Hadamard
+For $q\equiv1\pmod4$ an odd prime power, let $T$ be the symmetric Paley conference matrix on $`\{\infty\}\cup\mathbb F_q`$. Its diagonal entries are zero and its finite block is translation-invariant. Use the conventional Paley-II Hadamard
 
 ```math
 H=\begin{pmatrix}T+I&T-I\\ T-I&-T-I\end{pmatrix}.

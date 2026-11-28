@@ -127,8 +127,8 @@ For a fixed y, the accepted challenge set is
 ```math
 S_y=
 \begin{cases}
-\mathbb C,&y=0,\\
-\mathbb C\setminus\{y\},&y\ne0.
+\mathbb C,&y=0,
+\\ \mathbb C\setminus\{y\},&y\ne0.
 \end{cases}
 ```
 

@@ -33,7 +33,7 @@ so L maps W bijectively to itself. This uses no diagonalizability.
 The collision ideal in degree k is
 
 ```math
-C_k=\operatorname{span}\{x_i^2\}\operatorname{Sym}^{k-2}V.
+C_k=\mathop{\mathrm{span}}\{x_i^2\}\mathop{\mathrm{Sym}}^{k-2}V.
 ```
 
 For t>=0, its image at time n+t is exactly
@@ -42,7 +42,7 @@ For t>=0, its image at time n+t is exactly
 S_k(A)^{n+t}C_k
  =
 (S_2(L|_W))^t\!\left(S_2(A)^n Q_0\right)
- \operatorname{Sym}^{k-2}W.
+ \mathop{\mathrm{Sym}}^{k-2}W.
 ```
 
 The equality, not just an inclusion, follows because the image of
@@ -80,7 +80,7 @@ The repeated-index coefficient formula also has the correct factorial:
 ```math
 (S_k(A))_{\alpha,\beta}
  =
-\operatorname{per} A[\alpha\mid\beta]/\alpha!.
+\mathop{\mathrm{per}} A[\alpha\mid\beta]/\alpha!.
 ```
 
 The denominator is the row/output multiplicity factorial. Dividing by

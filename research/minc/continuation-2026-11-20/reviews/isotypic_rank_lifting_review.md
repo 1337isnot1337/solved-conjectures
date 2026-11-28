@@ -68,7 +68,7 @@ rank-two Segre inequality
 
 ```math
 \frac56\langle v_H,C_{(3,3)}(A)v_H\rangle
- \le\frac12\operatorname{tr}C_{(3,3)}(A)
+ \le\frac12\mathop{\mathrm{tr}}C_{(3,3)}(A)
 ```
 
 is linear in one block, so it holds for every PSD matrix of order six.
@@ -77,7 +77,7 @@ gives exactly
 
 ```math
 f_{H,\mathrm{sgn}}(A)
- \le\frac16\det A+\frac12\operatorname{tr}C_{(3,3)}(A).
+ \le\frac16\det A+\frac12\mathop{\mathrm{tr}}C_{(3,3)}(A).
 ```
 
 This bound still does not compare the right side with the permanent.
@@ -87,8 +87,8 @@ stated limitation directly.
 
 In particular, the averaging factors for $`(6)`$ and $`(3,3)`$ at
 $`s=2`$ are respectively $`5040`$ and $`144`$. Consequently the earlier
-mixed inequality involving $`\operatorname{per}A`$,
-$`\operatorname{tr}C_{(3,3)}(A)`$, and $`\prod_i a_{ii}`$ cannot be
+mixed inequality involving $`\mathop{\mathrm{per}}A`$,
+$`\mathop{\mathrm{tr}}C_{(3,3)}(A)`$, and $`\prod_i a_{ii}`$ cannot be
 lifted with its original coefficients by this argument. The extension of
 the alignment inequality is valid; an extension of the full rank-two
 dominance conclusion has not been established.

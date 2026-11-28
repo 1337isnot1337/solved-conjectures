@@ -24,7 +24,7 @@ has no subgroup-index or additional degree factor:
 
 ```math
 f_{H,\chi}(A\oplus C)
- \le \operatorname{per}(C)f_{K,\theta}(A).
+ \le \mathop{\mathrm{per}}(C)f_{K,\theta}(A).
 ```
 
 ## Positivity checks
@@ -36,8 +36,8 @@ Both conventions preserve positive definiteness. Equivalently, its finite
 group kernel is the Schur power matrix, up to reindexing and transpose.
 
 The matrix-specific hypothesis
-$`\Pi(C)\preceq\operatorname{per}(C)I`$ therefore says precisely that
-$`Q(h)=\operatorname{per}(C)\delta_{h,e}-a_h(C)`$ is positive definite.
+$`\Pi(C)\preceq\mathop{\mathrm{per}}(C)I`$ therefore says precisely that
+$`Q(h)=\mathop{\mathrm{per}}(C)\delta_{h,e}-a_h(C)`$ is positive definite.
 The pullbacks of $`a_g(A)`$ and $`Q(h)`$ to $`L`$, and the restricted
 character $`\chi((g,h))`$, are positive-definite functions. Their
 pointwise product is positive definite by the Schur product theorem.
@@ -49,7 +49,7 @@ $`\sum_g b(g)\ge0`$: the all-ones quadratic form of the group kernel is
 $`|L|\sum_gb(g)`$. Applying this fact gives exactly
 
 ```math
-0\le\operatorname{per}(C)\sum_{g\in K}\theta(g)a_g(A)
+0\le\mathop{\mathrm{per}}(C)\sum_{g\in K}\theta(g)a_g(A)
  -\sum_{(g,h)\in L}\chi((g,h))a_g(A)a_h(C).
 ```
 
@@ -57,8 +57,8 @@ Division by the common degree $`q`$ proves the displayed inequality.
 
 ## Degenerate and reducible cases
 
-If $`\operatorname{per}C=0`$, the left side of the target inequality is
-both nonnegative and at most zero. If $`\operatorname{per}C>0`$, any
+If $`\mathop{\mathrm{per}}C=0`$, the left side of the target inequality is
+both nonnegative and at most zero. If $`\mathop{\mathrm{per}}C>0`$, any
 dominance violation after adding $`C`$ forces a violation for the restricted
 character on $`K`$. For
 $`\theta=\sum_\eta m_\eta\eta`$, the normalized generalized function is

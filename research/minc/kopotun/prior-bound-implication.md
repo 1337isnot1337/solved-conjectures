@@ -44,11 +44,11 @@ Consequently
 ```math
 \begin{aligned}
 |D^2\sigma_j(X)[D,D]|
-&=j(j-1)|T_j(X,\ldots,X,D,D)|\\
-&\le K_j\|X\|_F^{j-2}\|D\|_F^2,
+&=j(j-1)|T_j(X,\ldots,X,D,D)|
+\\ &\le K_j\|X\|_F^{j-2}\|D\|_F^2,
 \qquad K_j=\frac{C_jj^j}{(j-2)!}.
-\tag{4}
-\end{aligned}
+
+\end{aligned} \tag{4}
 ```
 
 Let `A in Omega_n`, let `J` have entries `1/n`, and write `X=A-J`. Since every row of `A` is a probability vector,
@@ -195,8 +195,8 @@ Using (16) and then nonnegativity of relative entropy gives
 \begin{aligned}
 \log Z
 &\le\frac12\sum_e
-\left(H(P_e)+\mathbb E_{P_e}\log Y^2\right)\\
-&=-\frac12\sum_e\mathop{\mathrm{KL}}(P_e\,\|\,Y^2)
+\left(H(P_e)+\mathbb E_{P_e}\log Y^2\right)
+\\ &=-\frac12\sum_e\mathop{\mathrm{KL}}(P_e\,\|\,Y^2)
 \le0.
 \end{aligned}
 \tag{17}

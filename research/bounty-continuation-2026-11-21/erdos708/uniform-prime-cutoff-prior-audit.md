@@ -106,7 +106,7 @@ This proves the extension without a quadratic or cubic interval restriction, wit
 For weights $`0\le w_p\le1`$, supported on primes $`p<Q`$, put
 
 ```math
-X_w(m)=\sum_{p<Q}w_pv_p(m).
+X_w(m)=\sum_{p\lt Q}w_pv_p(m).
 ```
 
 The required inequality is

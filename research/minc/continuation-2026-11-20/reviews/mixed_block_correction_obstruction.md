@@ -13,7 +13,7 @@ metrics with a prescribed rank cap. Its proof has been independently
 reviewed here. In particular, for
 
 ```math
-A=W^*W,\qquad B=W^*TW,\qquad \operatorname{rank}T\le2,
+A=W^*W,\qquad B=W^*TW,\qquad \mathop{\mathrm{rank}}T\le2,
 ```
 
 where $`W`$ has $`r\ge3`$ rows and the law of $`T`$ is invariant under
@@ -72,8 +72,8 @@ X_i(B)\le P(B)-\frac92h(B),
 \tag{2}
 ```
 
-where $`P=\operatorname{per}`$, $`h=\prod_j a_{jj}`$,
-$`t_\lambda=\operatorname{tr}C_\lambda`$, and
+where $`P=\mathop{\mathrm{per}}`$, $`h=\prod_j a_{jj}`$,
+$`t_\lambda=\mathop{\mathrm{tr}}C_\lambda`$, and
 
 ```math
 X_i(A)=\frac56\langle v_i,C_{33}(A)v_i\rangle.

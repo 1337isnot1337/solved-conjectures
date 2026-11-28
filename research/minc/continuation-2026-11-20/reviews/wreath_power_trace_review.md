@@ -44,8 +44,8 @@ For $`B=C\otimes A`$, direct multiplication of its entries gives
 ```math
 \begin{aligned}
 a_{(\mathbf g,\pi)}(B)
- &=\prod_{i,j}c_{i,\pi(i)}a_{j,g_{\pi(i)}(j)}\\
- &=a_\pi(C^{\circ n})\prod_i a_{g_i}(A).
+ &=\prod_{i,j}c_{i,\pi(i)}a_{j,g_{\pi(i)}(j)}
+ \\ &=a_\pi(C^{\circ n})\prod_i a_{g_i}(A).
 \end{aligned}
 ```
 
@@ -58,9 +58,9 @@ before taking the trace gives exactly
 
 ```math
 \sum_{\mathbf g}\left(\prod_i a_{g_i}(A)\right)
-       \operatorname{tr}R(\mathbf g,\pi)
- =\operatorname{tr}(F^{\otimes m}P_\pi)
- =\prod_{c\in\operatorname{Cycles}(\pi)}\operatorname{tr}F^{|c|}.
+       \mathop{\mathrm{tr}}R(\mathbf g,\pi)
+ =\mathop{\mathrm{tr}}(F^{\otimes m}P_\pi)
+ =\prod_{c\in\mathop{\mathrm{Cycles}}(\pi)}\mathop{\mathrm{tr}}F^{|c|}.
 ```
 
 The last identity follows by contracting tensor indices along each cycle.
@@ -103,7 +103,7 @@ f_{G,\alpha}(A)^m f_{K,\psi}(C^{\circ n}).
 ```
 
 The statement extends orbit by orbit when $`K`$ is not transitive.
-It does not compare this product with $`\operatorname{per}(C\otimes A)`$
+It does not compare this product with $`\mathop{\mathrm{per}}(C\otimes A)`$
 for arbitrary $`C`$.
 
 ## 3. The factorial in the identical-copy denominator
@@ -164,21 +164,21 @@ Choose linear forms with Gaussian covariance matrix $`A`$, and set
 $`p`$ to their product. Wick's identity gives
 
 ```math
-P=\operatorname{per}A,\qquad
-M_m=\operatorname{per}(J_m\otimes A).
+P=\mathop{\mathrm{per}}A,\qquad
+M_m=\mathop{\mathrm{per}}(J_m\otimes A).
 ```
 
 Thus the claimed bound
 
 ```math
-\operatorname{per}(J_m\otimes A)
- \geq m!\operatorname{per}(A)^m
+\mathop{\mathrm{per}}(J_m\otimes A)
+ \geq m!\mathop{\mathrm{per}}(A)^m
 ```
 
 is proved for every nonempty PSD $`A`$ and every positive integer
 $`m`$. A zero form makes both sides zero. This is a specialization of
 Marcus's block-permanent conjecture. It does not establish Pate's stronger
-factor $`(m!)^n`$ multiplying $`\operatorname{per}(A)^m`$.
+factor $`(m!)^n`$ multiplying $`\mathop{\mathrm{per}}(A)^m`$.
 
 The exact norm and Gaussian normalization are independently confirmed by
 the Introduction, equation (2), and Theorem 7 of
@@ -188,8 +188,8 @@ No novelty claim is attached to this norm argument or its consequence.
 
 ## 4. The obstruction and its quantifiers
 
-Put $`S=\operatorname{tr}F/d`$. For every cycle length $`\ell`$,
-PSD gives $`\operatorname{tr}F^\ell\leq(\operatorname{tr}F)^\ell`$.
+Put $`S=\mathop{\mathrm{tr}}F/d`$. For every cycle length $`\ell`$,
+PSD gives $`\mathop{\mathrm{tr}}F^\ell\leq(\mathop{\mathrm{tr}}F)^\ell`$.
 Also $`|\psi(\pi)|\leq q`$. When $`C=J_m`$, these estimates give
 
 ```math
@@ -197,7 +197,7 @@ f_{G\wr K,\chi}(J_m\otimes A)
  \leq |K|S^m\leq m!S^m.
 ```
 
-If $`S\leq\operatorname{per}A`$, the factorial denominator bound
+If $`S\leq\mathop{\mathrm{per}}A`$, the factorial denominator bound
 therefore proves dominance for this construction for every $`m`$, every
 $`K\leq S_m`$, and every top character $`\psi`$. The hypothesis
 only concerns the normalized trace of the base block. Its largest
@@ -219,16 +219,16 @@ needed: the action and trace identity were derived directly above.
 The independent asymptotic bound in the main note also checks. If
 $`h(A)=\prod_i a_{ii}>0`$, iterated Lieb--Fischer applied after
 reordering by the original vector index gives
-$`\operatorname{per}(J_m\otimes A)\geq(m!)^n h(A)^m`$.
+$`\mathop{\mathrm{per}}(J_m\otimes A)\geq(m!)^n h(A)^m`$.
 Thus for fixed $`A,G,\rho`$, with $`n\geq2`$,
 
 ```math
 \frac{f_{G\wr K,\chi}(J_m\otimes A)}
- {\operatorname{per}(J_m\otimes A)}
+ {\mathop{\mathrm{per}}(J_m\otimes A)}
  \leq\frac{(S/h(A))^m}{(m!)^{n-1}}\longrightarrow0.
 ```
 
-This latter conclusion does not need $`S\leq\operatorname{per}A`$.
+This latter conclusion does not need $`S\leq\mathop{\mathrm{per}}A`$.
 The factorial bounds involving $`P`$ and $`h(A)`$ do not uniformly
 dominate one another, so neither should be called the stronger bound
 without further conditions. A zero diagonal entry in a PSD matrix gives
@@ -241,16 +241,16 @@ $`n\geq2`$, $`h(A)>0`$, and all diagonal entries of $`C`$ are
 positive. Diagonal congruence can make $`C`$ a correlation matrix.
 Both the subgroup function and the permanent of $`C\otimes A`$
 acquire the same scale factor, and
-$`\operatorname{per}(|C|^2)/\operatorname{per}(C)^2`$ is unchanged.
+$`\mathop{\mathrm{per}}(|C|^2)/\mathop{\mathrm{per}}(C)^2`$ is unchanged.
 Thus this normalization loses no nonvanishing cases.
 
-Write $`U=\operatorname{per}C`$ and
-$`Q=\operatorname{per}(|C|^2)`$. Taking absolute values before
+Write $`U=\mathop{\mathrm{per}}C`$ and
+$`Q=\mathop{\mathrm{per}}(|C|^2)`$. Taking absolute values before
 comparing the cycle weights gives
 
 ```math
 f_{G\wr K,\chi}(C\otimes A)
- \leq S^m\operatorname{per}(|C|^{\circ n})
+ \leq S^m\mathop{\mathrm{per}}(|C|^{\circ n})
  \leq S^mQ.
 ```
 
@@ -262,7 +262,7 @@ Applying Lieb--Fischer to the two natural principal-block partitions of
 $`C\otimes A`$ gives
 
 ```math
-\operatorname{per}(C\otimes A)
+\mathop{\mathrm{per}}(C\otimes A)
  \geq\max\{P^m,h(A)^m U^n\}.
 ```
 
@@ -271,7 +271,7 @@ Using weights $`1-2/n`$ and $`2/n`$, which are nonnegative even at
 $`n=2`$, gives
 
 ```math
-\operatorname{per}(C\otimes A)
+\mathop{\mathrm{per}}(C\otimes A)
  \geq P^{m(1-2/n)}h(A)^{2m/n}U^2.
 ```
 
@@ -279,9 +279,9 @@ Consequently
 
 ```math
 \frac{f_{G\wr K,\chi}(C\otimes A)}
- {\operatorname{per}(C\otimes A)}
+ {\mathop{\mathrm{per}}(C\otimes A)}
  \leq\kappa_A^m
- \frac{\operatorname{per}(|C|^2)}{\operatorname{per}(C)^2},
+ \frac{\mathop{\mathrm{per}}(|C|^2)}{\mathop{\mathrm{per}}(C)^2},
 \qquad
 \kappa_A=\frac{S}{P^{1-2/n}h(A)^{2/n}}.
 ```
@@ -289,9 +289,9 @@ Consequently
 No self-Chollet inequality is assumed in deriving this estimate. If
 $`\kappa_A\leq1`$, any actual dominance violation from this
 construction would force
-$`\operatorname{per}(|C|^2)>\operatorname{per}(C)^2`$. When
+$`\mathop{\mathrm{per}}(|C|^2)>\mathop{\mathrm{per}}(C)^2`$. When
 $`0<\kappa_A<1`$, it would require the larger ratio
-$`\operatorname{per}(|C|^2)/\operatorname{per}(C)^2>\kappa_A^{-m}`$.
+$`\mathop{\mathrm{per}}(|C|^2)/\mathop{\mathrm{per}}(C)^2>\kappa_A^{-m}`$.
 If $`\kappa_A=0`$, then $`F=0`$, so the subgroup function is zero
 and a violation is impossible.
 
@@ -323,7 +323,7 @@ no quotient to evaluate. These cases must be handled before normalization.
 For general PSD $`C`$, its permutation monomials can have phases.
 Multiplying individual inequalities for the cycle traces by those weights
 does not preserve their direction. Even a valid bound on that weighted
-sum still needs comparison with $`\operatorname{per}(C\otimes A)`$.
+sum still needs comparison with $`\mathop{\mathrm{per}}(C\otimes A)`$.
 The general block-permanent conjecture cannot be assumed for that step.
 
 A current primary-source check found

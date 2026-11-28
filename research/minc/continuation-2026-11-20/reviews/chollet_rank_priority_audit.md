@@ -7,8 +7,8 @@ Date: 20 November 2026 (America/Chicago). Reviewer: `minc_regular`.
 The auxiliary assertion under review is
 
 ```math
-\operatorname{per}(C\circ\overline C)<(\operatorname{per}C)^2
- \quad\text{if }\operatorname{rank}C=r\ge5,\ n\ge r^2,
+\mathop{\mathrm{per}}(C\circ\overline C)<(\mathop{\mathrm{per}}C)^2
+ \quad\text{if }\mathop{\mathrm{rank}}C=r\ge5,\ n\ge r^2,
 ```
 
 for a complex correlation matrix of order $`n`$.
@@ -35,27 +35,27 @@ Section 4.1. It treats arbitrary complex Hermitian positive semidefinite
 matrices. With
 
 ```math
-R(A)=\min\{\operatorname{per}D:D\text{ diagonal},\ D\succeq A\},
+R(A)=\min\{\mathop{\mathrm{per}}D:D\text{ diagonal},\ D\succeq A\},
  \qquad L_s=H_{s-1}-\log s,
 ```
 
 the theorem gives
 
 ```math
-\operatorname{per}A\ge \frac{n!}{n^n}e^{-nL_s}R(A).
+\mathop{\mathrm{per}}A\ge \frac{n!}{n^n}e^{-nL_s}R(A).
  \tag{1}
 ```
 
 Here $`s`$ is the rank of an optimizer in the equivalent problem
 
 ```math
-R(A)=\max_{X\succeq0,\ \operatorname{tr}X=n}
+R(A)=\max_{X\succeq0,\ \mathop{\mathrm{tr}}X=n}
        \prod_{i=1}^n v_i^*Xv_i,\qquad A=(v_i^*v_j)_{ij}.
  \tag{2}
 ```
 
 Section 4.1 explicitly states that this optimizer may have rank at most
-$`\operatorname{rank}A`$. This is an auxiliary convex-program rank, and does
+$`\mathop{\mathrm{rank}}A`$. This is an auxiliary convex-program rank, and does
 not reduce extremizers of Chollet's ratio to extreme correlation matrices.
 
 ## Consequence for the self-conjugate ratio
@@ -63,7 +63,7 @@ not reduce extremizers of Chollet's ratio to extreme correlation matrices.
 The following is a deduction from (1) and (2); it is not a theorem stated in
 that source under the name Chollet.
 
-Put $`P=\operatorname{per}C`$, $`Q=\operatorname{per}(C\circ\overline C)`$,
+Put $`P=\mathop{\mathrm{per}}C`$, $`Q=\mathop{\mathrm{per}}(C\circ\overline C)`$,
 and $`R=R(C)`$. If diagonal $`D\succeq C`$, the Schur product theorem gives
 
 ```math
@@ -71,7 +71,7 @@ D-C\circ\overline C=(D-C)\circ\overline C\succeq0,
 ```
 
 because $`C_{ii}=1`$. Monotonicity of the permanent on the positive
-semidefinite cone consequently gives $`Q\le\operatorname{per}D`$, and hence
+semidefinite cone consequently gives $`Q\le\mathop{\mathrm{per}}D`$, and hence
 $`Q\le R`$. In a rank-$`r`$ Gram representation, the feasible choice
 $`X=(n/r)I_r`$ in (2) gives $`R\ge(n/r)^n`$.
 
@@ -104,7 +104,7 @@ n\ge T_r:=\frac{e^{2+2H_{r-1}}}{r}.
 In particular, for $`n\ge r^2`$, (3) gives
 
 ```math
-\frac Q{P^2}<e^{-n\Psi(r)},
+\frac Q{P^2}\lt e^{-n\Psi(r)},
  \qquad \Psi(r)=3\log r-2H_{r-1}-2.
  \tag{5}
 ```
@@ -182,8 +182,8 @@ Its exact increment satisfies
 ```math
 \begin{aligned}
  B_r(n+1)-B_r(n)
- &=\log(r(n+r))-n\log(1+1/n)-2H_{r-1}\\
- &>\log(r(n+r))-1-2H_{r-1}.
+ &=\log(r(n+r))-n\log(1+1/n)-2H_{r-1}
+ \\ &>\log(r(n+r))-1-2H_{r-1}.
  \end{aligned}
 ```
 

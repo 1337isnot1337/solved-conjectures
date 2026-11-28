@@ -7,14 +7,14 @@ Research date: 2026-11-20. No proof or counterexample to the full conjecture is 
 For Hermitian positive semidefinite A and B, Cauchy–Schwarz on the permutation terms gives
 
 ```math
-|\operatorname{per}(A\circ B)|^2
-\le \operatorname{per}(|A|^2)\operatorname{per}(|B|^2).
+|\mathop{\mathrm{per}}(A\circ B)|^2
+\le \mathop{\mathrm{per}}(|A|^2)\mathop{\mathrm{per}}(|B|^2).
 ```
 
 Here |A|^2 means the entrywise absolute square. Thus Chollet's conjecture is equivalent to
 
 ```math
-\operatorname{per}(|A|^2)\le\operatorname{per}(A)^2
+\mathop{\mathrm{per}}(|A|^2)\le\mathop{\mathrm{per}}(A)^2
 ```
 
 for all Hermitian positive semidefinite A. Necessity follows by taking B=conjugate(A); sufficiency follows from the displayed Cauchy–Schwarz bound. A zero diagonal entry of A gives a zero row and a zero permanent on both sides, so searches may restrict to positive diagonal. Congruence by an invertible diagonal matrix scales numerator and denominator of the ratio by the same factor; unit diagonal is a valid normalization.
@@ -28,7 +28,7 @@ For a block diagonal matrix A=direct-sum A_i, both the permanent and the entrywi
 Permanent-on-top concerns the largest eigenvalue of the Schur power matrix. Chollet's self-conjugate inequality instead concerns its squared Frobenius norm:
 
 ```math
-\operatorname{per}(|A|^2)
+\mathop{\mathrm{per}}(|A|^2)
 =\frac{1}{n!}\|\Pi(A)\|_F^2.
 ```
 
@@ -73,7 +73,7 @@ c_{n,k}=\frac{n}{n-k}\binom{n-k}{k},\qquad m=n-2k.
 Then
 
 ```math
-\operatorname{per}C
+\mathop{\mathrm{per}}C
 =\sum_{k=0}^{\lfloor n/2\rfloor}(-1)^k c_{n,k}
  \sum_{h=0}^{m}(-1)^h n^{m-h}
  \frac{m!}{(m-h)!}(k!)^2\binom{h+2k+1}{2k+1}.
@@ -107,7 +107,7 @@ For a symmetric Paley conference matrix H of order q+1, H^2=qI. Therefore A=sqrt
 
 ```math
 |A|^2=(q-1)I+J,\qquad
-\operatorname{per}(|A|^2)=\sum_{k=0}^{q+1}\binom{q+1}{k}k!(q-1)^{q+1-k}.
+\mathop{\mathrm{per}}(|A|^2)=\sum_{k=0}^{q+1}\binom{q+1}{k}k!(q-1)^{q+1-k}.
 ```
 
 chollet_conference.py checks H^2=qI exactly and computes per(A) in the quadratic integer ring. At q=9,13,17, the ranks are 5,7,9. The exact gaps per(A)^2-per(|A|^2) are positive. Ratios are about 0.0120143, 0.00174859, and 0.000230656 respectively. These matrices are far from violating Chollet, so further order-by-order testing of the same real conference family is not a promising direction. No finite result is counted as a conjecture resolution.

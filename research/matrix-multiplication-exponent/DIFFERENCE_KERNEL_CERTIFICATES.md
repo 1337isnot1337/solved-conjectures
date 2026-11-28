@@ -33,10 +33,10 @@ full flag transpose. Let Gamma_0 be the 4-by-4 identity, and set
 ```math
 \Gamma_1=R_{\rm vertex}(2,5;-1)
 =\begin{pmatrix}
--4/3&0&0&0\\
-4&-1&-1/3&0\\
-4&-1/3&-1&0\\
-52&-4&-4&-4/3
+-4/3&0&0&0
+\\ 4&-1&-1/3&0
+\\ 4&-1/3&-1&0
+\\ 52&-4&-4&-4/3
 \end{pmatrix}.                                         \tag{1}
 ```
 

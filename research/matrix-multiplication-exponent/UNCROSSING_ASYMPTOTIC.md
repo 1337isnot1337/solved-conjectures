@@ -87,7 +87,7 @@ polynomial indices $`a,b,u,v`$ are ordinary integers.
 Use the four-party polynomial tensor
 
 ```math
-Q_m=\sum_{0\le a,b,u<m}
+Q_m=\sum_{0\le a,b,u\lt m}
  e_u^A\otimes e_{a+b+u}^B\otimes e_a^C\otimes e_b^D.
 ```
 
@@ -102,10 +102,10 @@ following diagonal powers of a parameter $`t`$:
 ```math
 \begin{array}{c|c}
 \text{party}&\text{exponent}\\ \hline
-A&2hu\\
-B&-2hv+2h^2+4(m-1)^2\\
-C&a^2\\
-D&b^2.
+A&2hu
+\\ B&-2hv+2h^2+4(m-1)^2
+\\ C&a^2
+\\ D&b^2.
 \end{array}
 ```
 
@@ -114,7 +114,7 @@ $`0\le v\le3m-3`$ and
 
 ```math
 2hv-2h^2\le4(m-1)^2
-\qquad(0\le h<m).
+\qquad(0\le h\lt m).
 ```
 
 On the support of $`Q_m`$, where $`v=a+b+u`$, the total exponent is

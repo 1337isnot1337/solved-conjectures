@@ -304,7 +304,7 @@ A further current search found El Boukhari's [A Coates–Sinnott-type Theorem fo
 An independent literature audit also located de la Torre Durán's [Perfect Forms and Torsion Bounds in Algebraic K-Theory over Totally Real and CM Fields](https://arxiv.org/pdf/2611.06300v1), submitted 4 November 2026. Its Theorem 4.5 gives, with d=[F:Q], N=2m+1, and b=dN+1,
 
 ~~~math
-\log\operatorname{card}_b K_m(\mathcal O_F)_{\rm tors}
+\log\mathop{\mathrm{card}}_b K_m(\mathcal O_F)_{\rm tors}
 \le
 \exp\!\bigl(O(N^2d(\log N+\log d))\bigr)
 |D_F|^{O(N^2)}.

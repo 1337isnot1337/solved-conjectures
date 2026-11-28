@@ -35,7 +35,7 @@ padded by scalar factors elsewhere.
 Use catalyst indices
 
 ```math
-0\le a_j<m,\quad 0\le u<t,\quad 0\le w_\ell<t\ (3\le\ell\le k),
+0\le a_j\lt m,\quad 0\le u\lt t,\quad 0\le w_\ell\lt t\ (3\le\ell\le k),
 \quad 0\le v\le s(m-1)+t-1.
 ```
 
@@ -79,8 +79,8 @@ input is copied into several catalyst parties.
 There is a Laurent degeneration
 
 ```math
-T\otimes Q\ \unrhd\
-\left(\bigoplus_{h=0}^{m-1}T_h\right)\otimes U_B(t). \tag{3}
+T\otimes Q\ \unrhd
+\ \left(\bigoplus_{h=0}^{m-1}T_h\right)\otimes U_B(t). \tag{3}
 ```
 
 Here is one explicit diagonal weighting. The free parties already know

@@ -33,8 +33,8 @@ Complex conjugation permutes the zeros and preserves every multiplicity, since b
 \begin{aligned}
 R(t)+R(-t)
 &=-2-\sum_\rho e^{i\gamma t}
- \left(\frac1\rho+\frac1{\overline\rho}\right)\\
-&=-2-\sum_\rho\frac{e^{i\gamma t}}{|\rho|^2}.
+ \left(\frac1\rho+\frac1{\overline\rho}\right)
+\\ &=-2-\sum_\rho\frac{e^{i\gamma t}}{|\rho|^2}.
 \end{aligned}
 \tag{2}
 ~~~
@@ -301,10 +301,10 @@ Pairing (1) with k_alpha and using the Gamma functional equation gives
 \langle R,k_\alpha\rangle
 &=-\Gamma(1+\tfrac1{2\alpha})
  -\sum_\rho
-    \frac{\Gamma(1+\rho/\alpha)}{\rho}\\
-&=-\frac{\Gamma(1/(2\alpha))}{2\alpha}
- -\sum_\rho\frac{\Gamma(\rho/\alpha)}{\alpha}\\
-&=F_\alpha(0).
+    \frac{\Gamma(1+\rho/\alpha)}{\rho}
+\\ &=-\frac{\Gamma(1/(2\alpha))}{2\alpha}
+ -\sum_\rho\frac{\Gamma(\rho/\alpha)}{\alpha}
+\\ &=F_\alpha(0).
 \end{aligned}
 \tag{18}
 ~~~
@@ -319,7 +319,7 @@ Combining (7)–(8),
 
 ~~~math
 R_0(v)
-=-\frac12\operatorname{sgn}(v)
+=-\frac12\mathop{\mathrm{sgn}}(v)
        \log\frac1{|v|}+O(1)
 \qquad(0<|v|<\delta),
 \tag{19}
@@ -344,10 +344,10 @@ where
 
 ~~~math
 J_\alpha=\int_{\mathbb R}
- \operatorname{sgn}(w)q(w)e^{w/(2\alpha)}\,dw,
+ \mathop{\mathrm{sgn}}(w)q(w)e^{w/(2\alpha)}\,dw,
 \qquad
 L_\alpha=\int_{\mathbb R}
- \operatorname{sgn}(w)\log|w|\,
+ \mathop{\mathrm{sgn}}(w)\log|w|\,
  q(w)e^{w/(2\alpha)}\,dw.
 ~~~
 
@@ -365,7 +365,7 @@ and integrability of the corresponding q-weighted moment show
 
 ~~~math
 J_\alpha
-=\int_{\mathbb R}\operatorname{sgn}(w)q(w)\,dw
+=\int_{\mathbb R}\mathop{\mathrm{sgn}}(w)q(w)\,dw
  +O(\alpha^{-1}).
 \tag{21}
 ~~~
@@ -395,11 +395,11 @@ Assume beta GRH. For every sufficiently large fixed alpha, there exist constants
 ~~~math
 \begin{aligned}
 \liminf_{X\to\infty}\frac1X
- \operatorname{meas}\left\{2\le x\le X:
+ \mathop{\mathrm{meas}}\left\{2\le x\le X:
  S_\alpha(x)>c_+\frac{\sqrt x}{\log x}\right\}
- &\ge \kappa_+,\\
-\liminf_{X\to\infty}\frac1X
- \operatorname{meas}\left\{2\le x\le X:
+ &\ge \kappa_+,
+\\ \liminf_{X\to\infty}\frac1X
+ \mathop{\mathrm{meas}}\left\{2\le x\le X:
  S_\alpha(x)<-c_-\frac{\sqrt x}{\log x}\right\}
  &\ge \kappa_-.
 \end{aligned}
@@ -422,7 +422,7 @@ F(t)>3c\qquad(|t-t_0|\le\delta).
 The c-almost-periods are relatively dense: there is L>0 such that every interval of length L contains a tau with
 
 ~~~math
-\sup_{t\in\mathbb R}|F(t+\tau)-F(t)|<c.
+\sup_{t\in\mathbb R}|F(t+\tau)-F(t)|\lt c.
 \tag{24}
 ~~~
 
@@ -450,7 +450,7 @@ Thus every sufficiently long logarithmic window has a positive interval of the s
 Apply the lemma with F=F_alpha. Section 7 provides its positive value for every sufficiently large alpha. The already proved asymptotic (12) says that for all sufficiently large t,
 
 ~~~math
-\left|t e^{-t/2}S_\alpha(e^t)-F_\alpha(t)\right|<c.
+\left|t e^{-t/2}S_\alpha(e^t)-F_\alpha(t)\right|\lt c.
 \tag{26}
 ~~~
 
@@ -468,9 +468,9 @@ Set X=e^Y. This interval lies in [2,X], and its length is at least
 ~~~math
 \begin{aligned}
 e^{b+\delta}-e^{b-\delta}
-&=e^{b-\delta}(e^{2\delta}-1)\\
-&\ge X e^{-L-2\delta}(e^{2\delta}-1)\\
-&=X e^{-L}(1-e^{-2\delta}).
+&=e^{b-\delta}(e^{2\delta}-1)
+\\ &\ge X e^{-L-2\delta}(e^{2\delta}-1)
+\\ &=X e^{-L}(1-e^{-2\delta}).
 \end{aligned}
 \tag{28}
 ~~~

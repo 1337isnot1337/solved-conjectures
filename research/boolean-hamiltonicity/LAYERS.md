@@ -125,8 +125,8 @@ For every T contained in E_m,
 ```math
 [x^T]I_m^*=
 \begin{cases}
-0,&|T|<m,\\
-(-1)^{|T|-m}h_m(T),&|T|\ge m.
+0,&|T|\lt m,
+\\ (-1)^{|T|-m}h_m(T),&|T|\ge m.
 \end{cases}
 ```
 
@@ -160,8 +160,8 @@ Consequently,
 
 ```math
 [x^T]C_m^*=
-\sum_{\substack{\varnothing\ne\mathcal F\subseteq\mathcal H_m\\
-                 \bigcup_{H\in\mathcal F}H=T}}
+\sum_{\substack{\varnothing\ne\mathcal F\subseteq\mathcal H_m
+                 \\ \bigcup_{H\in\mathcal F}H=T}}
 (-1)^{|\mathcal F|+1}.
 ```
 
@@ -469,7 +469,7 @@ successor function another m-j times would give
 
 ```math
 v_{m-(j-i)}=v_m=1,
-\qquad 1\le m-(j-i)<m,
+\qquad 1\le m-(j-i)\lt m,
 ```
 
 contradicting the first-return condition. Hence v_0,...,v_{m-1} are all

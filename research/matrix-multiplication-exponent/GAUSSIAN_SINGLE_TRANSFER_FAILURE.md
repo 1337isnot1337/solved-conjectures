@@ -63,8 +63,8 @@ The two relevant exterior matrix coefficients are
 ```math
 \begin{split}
 \langle e_3\otimes e_{12},
- \Lambda(g_C\otimes I_E)(e_9\otimes e_6)\rangle&=abcd,\\
-\langle e_5\otimes e_{10},
+ \Lambda(g_C\otimes I_E)(e_9\otimes e_6)\rangle&=abcd,
+\\ \langle e_5\otimes e_{10},
  \Lambda(g_C\otimes I_E)(e_9\otimes e_6)\rangle&=-abcd.
 \end{split}
 ```

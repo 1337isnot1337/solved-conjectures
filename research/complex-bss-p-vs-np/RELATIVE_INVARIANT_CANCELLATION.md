@@ -39,10 +39,10 @@ Here is a direct product calculation. On the chart `z=1`, the first two equation
 
 ```math
 \begin{pmatrix}
-0&0&0&0\\
-0&4ab&0&0\\
-0&0&4ab&0\\
-1&0&0&4ab
+0&0&0&0
+\\ 0&4ab&0&0
+\\ 0&0&4ab&0
+\\ 1&0&0&4ab
 \end{pmatrix}.
 ```
 
@@ -58,9 +58,9 @@ For reproducibility, use the coefficient columns `x^2,xy,xz,y^2,yz,z^2`. The coe
 
 ```math
 \begin{pmatrix}
-1&0&0&0&2a&0\\
-0&0&2b&1&0&0\\
-0&2c&0&0&0&1
+1&0&0&0&2a&0
+\\ 0&0&2b&1&0&0
+\\ 0&2c&0&0&0&1
 \end{pmatrix}.
 ```
 

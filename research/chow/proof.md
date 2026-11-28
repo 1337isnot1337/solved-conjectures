@@ -4,59 +4,59 @@ Status: a complete proof of the stated interlacing assertion is given below, pen
 
 ## Statement and conventions
 
-Let \(\mathfrak D_n\) be the even-signed permutations of \(1,\ldots,n\), and put
-\[
- D_n(x)=\sum_{\sigma\in\mathfrak D_n}x^{\operatorname{des}_D(\sigma)},\qquad
- \operatorname{des}_D(\sigma)
+Let $`\mathfrak D_n`$ be the even-signed permutations of $`1,\ldots,n`$, and put
+```math
+ D_n(x)=\sum_{\sigma\in\mathfrak D_n}x^{\mathop{\mathrm{des}}_D(\sigma)},\qquad
+ \mathop{\mathrm{des}}_D(\sigma)
  =\mathbf{1}_{\sigma_1+\sigma_2<0}
-  +\#\{1\le i<n:\sigma_i>\sigma_{i+1}\}.
-\]
+  +\#\{1\le i\lt n:\sigma_i>\sigma_{i+1}\}.
+```
 These are the ordinary type-D Eulerian polynomials, not derangement polynomials.
 
-Chow's Section 5 asks for consecutive interlacing. If the zeros of \(D_n\) are \(a_1\le\cdots\le a_n\) and those of \(D_{n+1}\) are \(b_1\le\cdots\le b_{n+1}\), the assertion is
-\[
+Chow's Section 5 asks for consecutive interlacing. If the zeros of $`D_n`$ are $`a_1\le\cdots\le a_n`$ and those of $`D_{n+1}`$ are $`b_1\le\cdots\le b_{n+1}`$, the assertion is
+```math
  b_1\le a_1\le b_2\le a_2\le\cdots\le b_n\le a_n\le b_{n+1}.
-\]
-We obtain strict inequalities for every \(n\ge3\); the \(n=2\) case is weak because \(D_2=(1+x)^2\).
+```
+We obtain strict inequalities for every $`n\ge3`$; the $`n=2`$ case is weak because $`D_2=(1+x)^2`$.
 
 ## Published input
 
-Savage and Visontai define polynomials \(T_{n,i}\), \(0\le i<2n\), whose sum \(T_n\) equals \(2D_n\) for \(n\ge2\). Their Lemma 3.14 gives
-\[
+Savage and Visontai define polynomials $`T_{n,i}`$, $`0\le i<2n`$, whose sum $`T_n`$ equals $`2D_n`$ for $`n\ge2`$. Their Lemma 3.14 gives
+```math
  T_{n+1,i}(x)
- =x\sum_{\ell<t_i}T_{n,\ell}(x)+\sum_{\ell=t_i}^{2n-1}T_{n,\ell}(x),
+ =x\sum_{\ell\lt t_i}T_{n,\ell}(x)+\sum_{\ell=t_i}^{2n-1}T_{n,\ell}(x),
  \qquad
  t_i=\left\lceil\frac{ni}{n+1}\right\rceil.
  \tag{1}
-\]
-The initial row is \((2,2x,2x,2x^2)\).
+```
+The initial row is $`(2,2x,2x,2x^2)`$.
 
-The proof of their Theorem 3.15 establishes, for every \(n\ge4\) and \(i<j\), compatibility of both pairs
-\[
+The proof of their Theorem 3.15 establishes, for every $`n\ge4`$ and $`i<j`$, compatibility of both pairs
+```math
  (T_{n,i},T_{n,j}),\qquad (xT_{n,i},T_{n,j}).
-\]
+```
 Their Lemma 2.5 therefore says that the row is ordered pairwise interlacing. This is stronger than merely asserting real-rootedness of each summand.
 
-Equation (1) at \(i=0\) gives the identity
-\[
+Equation (1) at $`i=0`$ gives the identity
+```math
  T_{n+1,0}=T_n. \tag{2}
-\]
+```
 
 ## Proof of the weak interlacing assertion
 
-Fix \(n\ge3\) and use the pairwise interlacing row \(T_{n+1,i}\). A first member of an ordered interlacing family interlaces every nonnegative sum of its members. This is Corollary 2.6 of Savage–Visontai, with the first weight vector \((1,0,\ldots,0)\) and the second \((1,\ldots,1)\). Hence
-\[
+Fix $`n\ge3`$ and use the pairwise interlacing row $`T_{n+1,i}`$. A first member of an ordered interlacing family interlaces every nonnegative sum of its members. This is Corollary 2.6 of Savage–Visontai, with the first weight vector $`(1,0,\ldots,0)`$ and the second $`(1,\ldots,1)`$. Hence
+```math
  T_n=T_{n+1,0}\preceq
  \sum_{i=0}^{2n+1}T_{n+1,i}=T_{n+1}.
-\]
-Dividing both polynomials by two gives \(D_n\preceq D_{n+1}\).
+```
+Dividing both polynomials by two gives $`D_n\preceq D_{n+1}`$.
 
-For \(n=2\),
-\[
+For $`n=2`$,
+```math
  D_2=(1+x)^2,\qquad
  D_3=(x+1)(x^2+10x+1).
-\]
-The three zeros of \(D_3\) are \(-5-2\sqrt6,-1,-5+2\sqrt6\), which interlace the double zero \(-1\) of \(D_2\). This finishes the full all-rank assertion.
+```
+The three zeros of $`D_3`$ are $`-5-2\sqrt6,-1,-5+2\sqrt6`$, which interlace the double zero $`-1`$ of $`D_2`$. This finishes the full all-rank assertion.
 
 ## Strictness
 
@@ -64,25 +64,25 @@ We give the additional argument because weak compatibility alone should not be d
 
 ### Lemma 1: no refined row has a common zero
 
-For every \(m\ge2\), the polynomials \(T_{m,0},\ldots,T_{m,2m-1}\) have no common complex zero.
+For every $`m\ge2`$, the polynomials $`T_{m,0},\ldots,T_{m,2m-1}`$ have no common complex zero.
 
-Proof. The row \(m=2\) includes the nonzero constant 2. In (1), the integer cutoffs \(t_i\), for \(0\le i\le2n+1\), start at 0, end at \(2n\), and increase by either 0 or 1. Thus every cutoff \(j=0,\ldots,2n\) occurs. For two entries whose cutoffs are \(j\) and \(j+1\), their difference is
-\[
+Proof. The row $`m=2`$ includes the nonzero constant 2. In (1), the integer cutoffs $`t_i`$, for $`0\le i\le2n+1`$, start at 0, end at $`2n`$, and increase by either 0 or 1. Thus every cutoff $`j=0,\ldots,2n`$ occurs. For two entries whose cutoffs are $`j`$ and $`j+1`$, their difference is
+```math
  (x-1)T_{n,j}(x).
-\]
-If every entry in row \(n+1\) vanished at \(z\ne1\), every entry of row \(n\) would vanish there. Induction excludes that. At \(z=1\), all entries are positive by the initial row and (1). Thus \(1\) cannot be a common zero either. \(\square\)
+```
+If every entry in row $`n+1`$ vanished at $`z\ne1`$, every entry of row $`n`$ would vanish there. Induction excludes that. At $`z=1`$, all entries are positive by the initial row and (1). Thus $`1`$ cannot be a common zero either. $`\square`$
 
 ### Lemma 2: strictness of the sum
 
-Suppose \(f\) has degree \(d\), positive leading coefficient, and simple real zeros \(a_1<\cdots<a_d\). Suppose \(f\preceq g_j\) for polynomials \(g_j\) with positive leading coefficients, each of degree \(d\) or \(d+1\). At every \(a_i\), all nonzero numbers \(g_j(a_i)\) have the same sign: they have the sign of \(-f'(a_i)\). This follows directly by placing the zeros of \(g_j\) around those of \(f\).
+Suppose $`f`$ has degree $`d`$, positive leading coefficient, and simple real zeros $`a_1<\cdots<a_d`$. Suppose $`f\preceq g_j`$ for polynomials $`g_j`$ with positive leading coefficients, each of degree $`d`$ or $`d+1`$. At every $`a_i`$, all nonzero numbers $`g_j(a_i)`$ have the same sign: they have the sign of $`-f'(a_i)`$. This follows directly by placing the zeros of $`g_j`$ around those of $`f`$.
 
-If the \(g_j\) have no common zero, their sum is nonzero at each \(a_i\). If that sum has degree \(d+1\), the signs at consecutive \(a_i\), together with its signs at the two ends of the real line, force a zero in each of the \(d+1\) intervening intervals. Consequently the sum has simple roots and is strictly interlaced by \(f\).
+If the $`g_j`$ have no common zero, their sum is nonzero at each $`a_i`$. If that sum has degree $`d+1`$, the signs at consecutive $`a_i`$, together with its signs at the two ends of the real line, force a zero in each of the $`d+1`$ intervening intervals. Consequently the sum has simple roots and is strictly interlaced by $`f`$.
 
 ### Induction
 
-The polynomial \(D_3=(x+1)(x^2+10x+1)\) has simple negative zeros. Suppose \(D_n\) has simple negative zeros, with \(n\ge3\). Set \(f=T_n=T_{n+1,0}\) and let \(g_j\) run through the row \(T_{n+1,j}\). The published ordered interlacing property gives \(f\preceq g_j\), and Lemma 1 excludes a common zero. Their sum is \(T_{n+1}=2D_{n+1}\), of degree \(n+1\). Lemma 2 gives strict interlacing and simplicity. All zeros are negative because the coefficients and constant term of \(D_{n+1}\) are positive.
+The polynomial $`D_3=(x+1)(x^2+10x+1)`$ has simple negative zeros. Suppose $`D_n`$ has simple negative zeros, with $`n\ge3`$. Set $`f=T_n=T_{n+1,0}`$ and let $`g_j`$ run through the row $`T_{n+1,j}`$. The published ordered interlacing property gives $`f\preceq g_j`$, and Lemma 1 excludes a common zero. Their sum is $`T_{n+1}=2D_{n+1}`$, of degree $`n+1`$. Lemma 2 gives strict interlacing and simplicity. All zeros are negative because the coefficients and constant term of $`D_{n+1}`$ are positive.
 
-This proves strict consecutive interlacing for every \(n\ge3\).
+This proves strict consecutive interlacing for every $`n\ge3`$.
 
 ## What the proof does and does not establish about priority
 

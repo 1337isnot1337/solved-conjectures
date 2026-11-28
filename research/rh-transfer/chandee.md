@@ -12,23 +12,23 @@ The input needed here is RH for the Riemann zeta function alone. Rational Dirich
 
 For a positive integer r, Chandee's original two-shift quantity is
 
-$$
+```math
 M_r(T;\alpha_1,\alpha_2)
 =\int_0^T
  \left|\zeta\!\left(\frac12+i(t+\alpha_1)\right)\right|^{2r}
  \left|\zeta\!\left(\frac12+i(t+\alpha_2)\right)\right|^{2r}\,dt.
-$$
+```
 
 In [arXiv:0910.0664v1, equation (4) and Conjecture 1, PDF page 2](https://arxiv.org/pdf/0910.0664v1), the shifts satisfy αᵢ=O(log T), bounded pairwise differences, and specified limits of the scaled shifts and differences. Writing Δ=|α₁−α₂|, the proposed orders are
 
-$$
+```math
 \begin{cases}
-T(\log T)^{4r^2},&\Delta\log T\to0,\\
-T(\log T)^{4r^2},&\Delta\log T\to c\in(0,\infty),\\
-T(\log T)^{2r^2}\Delta^{-2r^2},&\Delta\log T\to\infty.
+T(\log T)^{4r^2},&\Delta\log T\to0,
+\\ T(\log T)^{4r^2},&\Delta\log T\to c\in(0,\infty),
+\\ T(\log T)^{2r^2}\Delta^{-2r^2},&\Delta\log T\to\infty.
 \end{cases}
 \tag{1.1}
-$$
+```
 
 The displayed relation there is ∼ with a parameter subscript. No definition equating that notation with two-sided comparability was found in the inspected text. Section 2 derives explicit random-matrix leading constants, and the published [2011 abstract](https://doi.org/10.1093/qmath/haq008) describes asymptotic formulae. The original journal article's full text was not retrievable through the available public endpoints; the original preprint was read directly.
 
@@ -53,15 +53,15 @@ Neither Ng–Shen–Wong nor Curran, in the passages inspected, explains that th
 
 Fix m≥1 and a vector β=(β₁,…,βₘ) of nonnegative real numbers. Let αⱼ=αⱼ(T) be real with |αⱼ|≤T/2. Put
 
-$$
+```math
 \mathcal M_{\alpha,\beta}(T)
 =\int_T^{2T}\prod_{j=1}^m
  \left|\zeta\!\left(\frac12+i(t+\alpha_j)\right)\right|^{2\beta_j}\,dt.
-$$
+```
 
 Curran's [*Correlations of the Riemann zeta function*, Theorem 1.1, arXiv:2303.10123v2](https://arxiv.org/html/2303.10123v2), published in [Mathematika 70 (2024), e12268](https://doi.org/10.1112/mtk.12268), proves the sharp upper estimate under RH. His [*Lower bounds for shifted moments of the Riemann zeta function*, Theorem 1.1, arXiv:2405.08725v1](https://arxiv.org/html/2405.08725v1) proves the corresponding lower estimate under the same hypothesis. Combining the two gives
 
-$$
+```math
 \boxed{
 \mathcal M_{\alpha,\beta}(T)
 \asymp_\beta
@@ -74,7 +74,7 @@ T(\log T)^{\sum_j\beta_j^2}
 \right|^{2\beta_j\beta_\ell}.
 }
 \tag{2.1}
-$$
+```
 
 The constants and the onset depend on the fixed vector β, not on the permitted shifts. Repeated shifts are allowed. Zero exponents can be deleted, with the empty product interpreted as 1.
 
@@ -86,34 +86,34 @@ For unbounded shift separations, the zeta factors on the 1-line matter. Replacin
 
 For a fixed A>0, uniformly for |u|≤A and large U,
 
-$$
+```math
 \left|\zeta\!\left(1+\frac1{\log U}+iu\right)\right|
 \asymp_A
 \min\!\left(\log U,\frac1{|u|}\right),
 \tag{3.1}
-$$
+```
 
 with the right side defined as log U when u=0.
 
 To prove this, choose a sufficiently small fixed ε₀>0. Near 1, the Laurent expansion gives
 
-$$
+```math
 \zeta(1+z)=\frac1z+O(1),
-$$
+```
 
 so its modulus is comparable to 1/|z| when |z|≤ε₀. For z=1/log U+iu,
 
-$$
+```math
 \frac1{|z|}
 =\frac1{\sqrt{(\log U)^{-2}+u^2}}
 \asymp\min(\log U,1/|u|).
-$$
+```
 
 On the remaining compact set ε₀/2≤|u|≤A, the zeta function is continuous and nonzero on Re(s)≥1, apart from the pole already removed. Its modulus therefore has positive lower and finite upper bounds. On that same set 1/|u| is also bounded above and below by positive constants depending on A. This proves (3.1).
 
 Combining (3.1) with (2.1), for two factors with exponent k≥0 each, gives
 
-$$
+```math
 \int_U^{2U}
  \left|\zeta\!\left(\frac12+i(t+d)\right)
        \zeta\!\left(\frac12+i(t-d)\right)\right|^k\,dt
@@ -121,7 +121,7 @@ $$
 U(\log U)^{k^2/2}
 \min\!\left(\log U,\frac1{2|d|}\right)^{k^2/2}
 \tag{3.2}
-$$
+```
 
 whenever |2d|≤A and U is sufficiently large. Equation (2.1) applies with β₁=β₂=k/2.
 
@@ -133,54 +133,54 @@ The original integral runs from 0 to T, while (2.1) is dyadic. This difference c
 
 Fix k>0 and A>0. Suppose α₁(T),α₂(T)=o(T) and |α₁−α₂|≤A. Define
 
-$$
+```math
 b=\frac{\alpha_1+\alpha_2}{2},\qquad
 d=\frac{\alpha_1-\alpha_2}{2},
-$$
+```
 
 and
 
-$$
+```math
 f_d(u)=
 \left|\zeta\!\left(\frac12+i(u+d)\right)
       \zeta\!\left(\frac12+i(u-d)\right)\right|^k.
-$$
+```
 
 Complex conjugation gives f_d(−u)=f_d(u). Changing variables gives
 
-$$
+```math
 I_k(T;\alpha_1,\alpha_2)
 :=\int_0^T
  \left|\zeta\!\left(\frac12+i(t+\alpha_1)\right)
        \zeta\!\left(\frac12+i(t+\alpha_2)\right)\right|^k\,dt
 =\int_b^{T+b}f_d(u)\,du.
 \tag{4.1}
-$$
+```
 
 Since b=o(T), for all sufficiently large T the integration interval contains [T/4,T/2] and is contained in [−2T,2T]. Positivity and evenness yield
 
-$$
+```math
 \int_{T/4}^{T/2}f_d(u)\,du
 \le I_k(T;\alpha_1,\alpha_2)
 \le2\int_0^{2T}f_d(u)\,du.
 \tag{4.2}
-$$
+```
 
 For the lower bound, apply (3.2) with U=T/4. Both log U and the truncated reciprocal factor are comparable to their T versions, uniformly in d.
 
 For the upper bound, choose a fixed U₀ large enough in terms of k and A that (3.2) applies for U≥U₀. The integral below U₀ is O_(k,A)(1): its arguments remain in a fixed compact subset of the critical line, where ζ is continuous. Partition the remaining positive interval into dyadic pieces [U,2U] with U≤2T. On each piece,
 
-$$
+```math
 (\log U)^{k^2/2}
 \min(\log U,1/(2|d|))^{k^2/2}
 \ll_k
 (\log T)^{k^2/2}
 \min(\log T,1/(2|d|))^{k^2/2}.
-$$
+```
 
 The lengths U sum to O(T). Therefore
 
-$$
+```math
 \boxed{
 I_k(T;\alpha_1,\alpha_2)
 \asymp_{k,A}
@@ -188,7 +188,7 @@ T(\log T)^{k^2/2}
 \min\!\left(\log T,\frac1{|\alpha_1-\alpha_2|}\right)^{k^2/2}.
 }
 \tag{4.3}
-$$
+```
 
 The proof holds for every fixed real k>0 and all these shift functions. It needs neither a bound |α₁+α₂|≤T^0.6 nor existence of scaled-shift limits. The original O(log T) shift condition is included.
 

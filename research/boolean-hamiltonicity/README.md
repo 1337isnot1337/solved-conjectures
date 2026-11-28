@@ -35,8 +35,8 @@ least size of a circuit computing $`C_m`$ correctly on every graph input.
 The sufficient nonuniform target is
 
 ```math
-\forall k\in\mathbb N\ \forall M\in\mathbb N\
-\exists m\ge\max(3,M):\quad s(m)>m^k.
+\forall k\in\mathbb N\ \forall M\in\mathbb N
+\ \exists m\ge\max(3,M):\quad s(m)>m^k.
 ```
 
 This says that the family is outside $`\mathsf{P/poly}`$. An eventual

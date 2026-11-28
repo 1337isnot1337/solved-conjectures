@@ -18,20 +18,20 @@ where r and c are the row- and column-sum vectors. This is exactly the limiting 
 **Theorem.** In every order m, for every such nonzero B,
 
 ~~~math
-F_B'(t)>0 \quad(0<t\le1),\qquad F_B'(0)=0,\qquad
+F_B'(t)>0 \quad(0\lt t\le1),\qquad F_B'(0)=0,\qquad
 F_B''(0)=\|B\|_F^2>0.                         \tag{1}
 ~~~
 
 For each fixed B, let C_M(B) be the doubly stochastic completion defined in equation (1) of the padding theorem. Then for all sufficiently large integers M (threshold depending on B), the **actual finite-order** permanent path
 
 ~~~math
-p_M(t)=\operatorname{per}\left((1-t)J_{M+m}+tC_M(B)\right)
+p_M(t)=\mathop{\mathrm{per}}\left((1-t)J_{M+m}+tC_M(B)\right)
 ~~~
 
 satisfies
 
 ~~~math
-p_M'(t)>0\qquad(0<t\le1/2).                    \tag{2}
+p_M'(t)>0\qquad(0\lt t\le1/2).                    \tag{2}
 ~~~
 
 When B has at least one zero entry, its completion has a corresponding zero in the upper-left block; thus the theorem includes nonsymmetric boundary directions with several nonzero rows and columns. The finite statement is only on the half-segment; equation (1) for the limit does not establish monotonicity on the remaining half for finite M.
@@ -72,7 +72,7 @@ Cauchy--Schwarz and nonnegativity give
 
 ~~~math
 Q-U^2\ge \left(1-\sum_jx_j^2\right)Q
-\ge(1-t^2S^2)Q>0\quad(0<t<1),              \tag{4}
+\ge(1-t^2S^2)Q>0\quad(0\lt t<1),              \tag{4}
 ~~~
 
 since S<=1 and B is nonzero. This proves strict positivity in the open interval. If t=1 and no b_j equals one, each denominator is still positive and sum_j b_j^2<1 unless all mass is concentrated in one entry. Thus (3)-(4) also give strict positivity at t=1 in that case. If one b_j=1, substochasticity makes every other b_k zero and the function reduces to

@@ -34,11 +34,11 @@ Use the integer tangent direction
 
 ```math
 D=\begin{pmatrix}
-0&8&0&-6&-2\\
-3&0&-7&2&2\\
-1&-2&0&3&-2\\
-2&-5&1&0&2\\
--6&-1&6&1&0
+0&8&0&-6&-2
+\\ 3&0&-7&2&2
+\\ 1&-2&0&3&-2
+\\ 2&-5&1&0&2
+\\ -6&-1&6&1&0
 \end{pmatrix}.
 ```
 
@@ -51,8 +51,8 @@ Direct permanent expansion gives the polynomial identity
 \mathop{\mathrm{per}}(A+hD)
 ={}&\frac{131951}{2560000}
 -\frac{3159}{160000}h
--\frac{271}{3200}h^2\\
-&+\frac{2367}{800}h^3
+-\frac{271}{3200}h^2
+\\ &+\frac{2367}{800}h^3
 +\frac{16489}{20}h^4
 +3444h^5.
 \end{aligned}
@@ -74,11 +74,11 @@ Remove the cyclically invariant part of the direction and clear denominators:
 ```math
 C=5D-\sum_{r=0}^4P^rD(P^{\mathsf T})^r
 =\begin{pmatrix}
-0&40&-1&-28&-11\\
-14&0&-35&9&12\\
-7&-11&0&15&-11\\
-9&-23&4&0&10\\
--30&-6&32&4&0
+0&40&-1&-28&-11
+\\ 14&0&-35&9&12
+\\ 7&-11&0&15&-11
+\\ 9&-23&4&0&10
+\\ -30&-6&32&4&0
 \end{pmatrix}.
 ```
 

@@ -41,8 +41,8 @@ or counterexample for the full conjecture was found.
 
 Suppose a hypothetical balanced coloring contains $t\ge2$ vertex-disjoint
 cliques of order $r$ in color $i$. Let $R$ be the other vertices and let
-$s$ be the independence number of their color-$i$ graph. If
-$s\ge r-t+2$, the color-$i$ graph on the packed cliques is a rook graph.
+$s$ be the independence number of their color-$`i`$ graph. If
+$s\ge r-t+2$, the color-$`i`$ graph on the packed cliques is a rook graph.
 In other words, between every two packed cliques there is a perfect
 matching, and the matchings identify the vertices consistently across
 all cliques. For any maximum independent set $S$ in $R$, each vertex

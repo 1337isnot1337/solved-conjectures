@@ -17,7 +17,7 @@ The same safe projections and scalar interpolation apply. The arithmetic
 recurrence specializes to
 
 ```math
-T(n,k)\le\operatorname{poly}(n,k)D_{n,k}
+T(n,k)\le\mathop{\mathrm{poly}}(n,k)D_{n,k}
  +\sum_{j=0}^{\min(k,n-1)}T(n-1,j).
 ```
 
@@ -26,14 +26,14 @@ level by poly(n,k) binom(n+k-1,k). There are at most n levels. Therefore
 the total time remains
 
 ```math
-\operatorname{poly}(n,k)\binom{n+k-1}{k}.                  \tag{2}
+\mathop{\mathrm{poly}}(n,k)\binom{n+k-1}{k}.                  \tag{2}
 ```
 
 For every child degree j<=k, D_(n-1,j)<=D_(n,k). Process one left-power
 group at a time, retaining only one active child. The storage bound is
 
 ```math
-O\!\left(nD_{n,k}+\operatorname{poly}(n,k)\right)
+O\!\left(nD_{n,k}+\mathop{\mathrm{poly}}(n,k)\right)
 ```
 
 field elements. This includes coefficient arrays at all active levels;

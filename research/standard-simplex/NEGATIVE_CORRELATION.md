@@ -291,8 +291,8 @@ $`R_{-t,d}=T_{-t}-P_0+tP_1`$. Expanding the original indicator functions, withou
 
 ```math
 \begin{aligned}
-\Delta_-&:=S_{-t}(\mathcal A)-S_{-t}(\mathcal C)\\
-&=2J_t+\|e\|^2-t\|M-M_{\mathcal C}\|_F^2
+\Delta_-&:=S_{-t}(\mathcal A)-S_{-t}(\mathcal C)
+\\ &=2J_t+\|e\|^2-t\|M-M_{\mathcal C}\|_F^2
 +\sum_i\langle h_i,R_{-t,d}h_i\rangle.
 \end{aligned} \tag{22}
 ```

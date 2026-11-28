@@ -6,9 +6,9 @@ Tracking issue: [#321](https://github.com/1337isnot1337/solved-conjectures/issue
 
 ## Statement and setup
 
-Gabow’s conjecture asks whether any two disjoint bases of a rank-$n$ matroid can be interchanged in exactly $n$ symmetric single-element exchanges. A symmetric exchange removes one element from each current basis and inserts it into the other, preserving both bases. Equivalently, each element switches sides exactly once.
+Gabow’s conjecture asks whether any two disjoint bases of a rank-$`n`$ matroid can be interchanged in exactly $n$ symmetric single-element exchanges. A symmetric exchange removes one element from each current basis and inserts it into the other, preserving both bases. Equivalently, each element switches sides exactly once.
 
-A $(k+1)$-spike of order $n$ is a rank-$n$ matroid on $2n$ elements partitioned into two-element arms, such that the union of any $k+1$ arms is both a circuit and a cocircuit. The rank-$n$ identity follows from the standard definition without a rank assumption; see the first source below. Any union of at most $k$ arms is independent and coindependent, as it is a proper subset of a union of $k+1$ arms. This proof uses circuit–cocircuit orthogonality: a circuit and a cocircuit cannot intersect in exactly one element.
+A $(k+1)$-spike of order $n$ is a rank-$`n`$ matroid on $2n$ elements partitioned into two-element arms, such that the union of any $k+1$ arms is both a circuit and a cocircuit. The rank-$`n`$ identity follows from the standard definition without a rank assumption; see the first source below. Any union of at most $k$ arms is independent and coindependent, as it is a proper subset of a union of $k+1$ arms. This proof uses circuit–cocircuit orthogonality: a circuit and a cocircuit cannot intersect in exactly one element.
 
 For an $n$-element set, call the arms it fully contains **doubled**, the arms it avoids **empty**, and those it meets in one element **singletons**. Its **defect** is the common number of doubled and empty arms. Complementation preserves defect and exchanges the doubled and empty arms.
 
@@ -22,7 +22,7 @@ An $n$-set at defect $k$ thus contains no circuit: such a circuit would miss the
 
 Let $S$ and $\bar S$ be complementary bases at defect $\delta<k$. Fix a singleton arm $i$ and let $x$ be its element in $S$. For a different singleton arm $j$ let $y_j$ be its element in $\bar S$. Say that $j$ is outgoing-forbidden if $S-x+y_j$ is not a basis and incoming-forbidden if $\bar S-y_j+x$ is not a basis.
 
-The fundamental cocircuit $D(x,S)$ contains $x$ and avoids every other element of $S$. The first exchange fails precisely when $y_j$ is not in this cocircuit. Thus the cocircuit misses every outgoing-forbidden singleton arm, and also the $\delta$ doubled arms of $S$. If at least $k-\delta$ singleton arms were outgoing-forbidden, the cocircuit would miss $k$ entire arms. By orthogonality it would then hit each surviving arm twice. Since its intersection with $S$ is exactly $\{x\}$, it could lie only in the union of arm $i$ and the $\delta$ empty arms of $S$. But these $\delta+1\le k$ arms are coindependent, a contradiction.
+The fundamental cocircuit $D(x,S)$ contains $x$ and avoids every other element of $S$. The first exchange fails precisely when $y_j$ is not in this cocircuit. Thus the cocircuit misses every outgoing-forbidden singleton arm, and also the $\delta$ doubled arms of $S$. If at least $k-\delta$ singleton arms were outgoing-forbidden, the cocircuit would miss $k$ entire arms. By orthogonality it would then hit each surviving arm twice. Since its intersection with $S$ is exactly $`\{x\}`$, it could lie only in the union of arm $i$ and the $\delta$ empty arms of $S$. But these $\delta+1\le k$ arms are coindependent, a contradiction.
 
 For incoming-forbidden arms, use the fundamental circuit $C(x,\bar S)$, which contains $x$ and has no other element outside $\bar S$. The second exchange fails precisely when $y_j$ is not in this circuit. This circuit misses every incoming-forbidden singleton arm and the $\delta$ empty arms of $\bar S$ (these are doubled in $S$). If it missed $k$ entire arms, it would be a union of full arms, all among arm $i$ and the $\delta$ doubled arms of $\bar S$. Their union is independent. The same contradiction applies.
 
@@ -35,9 +35,9 @@ Call the given ordered pair Red and Blue, with “original Red element” naming
 Build a forward chain from the original pair and a backward chain from the fully swapped pair. At stage $t$, both chains have made $t$ moves and have defect $\delta=d+t$. Pick the same fresh original singleton arm $i$ in both chains, and choose independently a fresh original singleton partner $j_f$ for the forward chain and $j_b$ for the backward chain. The partners may be the same. Each exchange makes its $i$ empty for current Red and its own $j$ doubled. Here fresh means not used at any earlier stage in either chain.
 
 Each previous stage used at most three distinct arms, so after fixing $i$ there are at least
-$$
+```math
  n-2d-3t-1\ \ge\ 2(k-d-t)-1
-$$
+```
 eligible partners in each chain: the difference between the sides is $n-2k-t\ge0$ since $n\ge3k$ and $t<k$. Section 2 therefore guarantees both choices. The procedures terminate at defect $k$ after $\ell$ stages. If $\ell=0$ no boundary moves are needed.
 
 ## 4. Connect the chains at defect $k$
@@ -64,9 +64,9 @@ The state reached is exactly the backward terminal state: the only elements whos
 For $n>2k+2$, the $(k+1)$-spikes here are connected and nonsplit. They are connected because any two elements belong to a circuit that is a union of $k+1$ arms. In a connected split matroid, the elementary-split hypergraph characterization from Section 2 of [Weighted exchange distance of basis pairs](https://arxiv.org/abs/2211.12750) gives rank bounds $r_H$ on intersections with distinguished subsets $H$, and any two distinct such subsets satisfy $|H\cap H'|\le r_H+r_{H'}-n$.
 
 Let $F,G$ be two arm-union circuits sharing $k$ whole arms. Since $|F|=2k+2<n$, the independent-set description of an elementary split matroid requires some $H_F$ whose bound $F$ violates. As every proper subset of $F$ is independent, $F\subseteq H_F$ and $r_{H_F}=2k+1$. Similarly $G\subseteq H_G$ and $r_{H_G}=2k+1$. These subsets cannot be equal. Indeed $F\cup G$ contains an independent $(2k+2)$-set obtained by taking the common $k$ arms and one element of each of the two remaining arms. The set misses at least $k$ arms, so any circuit in it would have to be contained in its $k$ doubled arms by Section 1, a contradiction. Thus the two bounds are distinct, and
-$$
+```math
  2k=|F\cap G|\le |H_F\cap H_G|\le 4k+2-n<2k,
-$$
+```
 impossible. This shows that the new class is not contained in the previously treated split class.
 
 As a corollary, Brettell et al.’s Theorem 1.1 implies Gabow’s assertion for every sufficiently large matroid with their $(t,2t)$-property, for each fixed $t\ge2$. The $(t,2t)$-property means that every $t$-element subset is contained in a $2t$-element circuit and in a $2t$-element cocircuit. Their theorem supplies a $t$-spike partition and, once the ground set is large enough, its order is at least $3(t-1)$.

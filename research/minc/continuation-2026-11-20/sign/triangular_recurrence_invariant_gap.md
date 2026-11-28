@@ -8,7 +8,7 @@ For a binary lower unitriangular matrix B of order N, write
 
 ```math
 A(B)=\begin{pmatrix}1&\mathbf1^T\\\mathbf1&J_N-2B\end{pmatrix},
-\qquad P=\operatorname{per}A(B),\qquad\det A(B)=(-2)^N.
+\qquad P=\mathop{\mathrm{per}}A(B),\qquad\det A(B)=(-2)^N.
 ```
 
 Here J_N is the all-ones matrix. For S⊆[N], let P_S be the permanent after replacing each core column in S by the all-ones border column. Put C_j=P_{j} and C_{jk}=P_{j,k}. The border index is zero and is not included in S.
@@ -28,14 +28,14 @@ Take
 
 ```math
 B=\begin{pmatrix}
-1&0&0&0&0&0&0&0\\
-1&1&0&0&0&0&0&0\\
-1&1&1&0&0&0&0&0\\
-1&1&0&1&0&0&0&0\\
-1&0&1&0&1&0&0&0\\
-1&0&1&1&0&1&0&0\\
-0&1&1&1&0&0&1&0\\
-1&1&0&1&0&0&1&1
+1&0&0&0&0&0&0&0
+\\ 1&1&0&0&0&0&0&0
+\\ 1&1&1&0&0&0&0&0
+\\ 1&1&0&1&0&0&0&0
+\\ 1&0&1&0&1&0&0&0
+\\ 1&0&1&1&0&1&0&0
+\\ 0&1&1&1&0&0&1&0
+\\ 1&1&0&1&0&0&1&1
 \end{pmatrix}.
 \tag{2}
 ```
@@ -85,9 +85,9 @@ Append two rows. Let w,u∈{−1,1}^N be their entries in the old core columns, 
 
 ```math
 A''=\begin{pmatrix}
-A&\mathbf1&\mathbf1\\
-1\quad w^T&-1&1\\
-1\quad u^T&\varepsilon&-1
+A&\mathbf1&\mathbf1
+\\ 1\quad w^T&-1&1
+\\ 1\quad u^T&\varepsilon&-1
 \end{pmatrix}.
 ```
 
@@ -97,7 +97,7 @@ It satisfies det A''=4det A. Its permanent is exactly
 \boxed{
 P''=2\varepsilon P
 +\sum_j(u_j+\varepsilon w_j)C_j
-+\sum_{j<k}(u_jw_k+u_kw_j)C_{jk}.
++\sum_{j\lt k}(u_jw_k+u_kw_j)C_{jk}.
 }
 \tag{4}
 ```
@@ -121,7 +121,7 @@ If the input satisfies |P|=|det A|, the exact two-step requirement is
 ```math
 \left|2\varepsilon P
 +\sum_j(u_j+\varepsilon w_j)C_j
-+\sum_{j<k}(u_jw_k+u_kw_j)C_{jk}\right|=4|P|.
++\sum_{j\lt k}(u_jw_k+u_kw_j)C_{jk}\right|=4|P|.
 \tag{5}
 ```
 
@@ -138,15 +138,15 @@ Then
 ```math
 \frac{P''}{2\varepsilon}
 =P+\sum_{j\in S}w_jC_j
-+\sum_{j<k,\ j,k\in S}w_jw_kC_{jk}
--\sum_{j<k,\ j,k\in T}w_jw_kC_{jk}.
++\sum_{j\lt k,\ j,k\in S}w_jw_kC_{jk}
+-\sum_{j\lt k,\ j,k\in T}w_jw_kC_{jk}.
 \tag{6}
 ```
 
 Mixed pairs between S and T cancel exactly. In particular, u=−εw gives
 
 ```math
-P''=2\varepsilon\left(P-\sum_{j<k}w_jw_kC_{jk}\right).
+P''=2\varepsilon\left(P-\sum_{j\lt k}w_jw_kC_{jk}\right).
 ```
 
 For this restricted rule, equality is preserved exactly when the signed quadratic form is −P or 3P. This is a concrete invariant requirement, not evidence that the requirement is always achievable.

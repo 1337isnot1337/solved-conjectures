@@ -10,11 +10,11 @@ Write `beta_n=n!/n^n`. For a nonnegative doubly stochastic matrix `A`, define
 
 ```math
 \begin{aligned}
-X(A)&=\operatorname{per}(AA^{\mathsf T}),\\
-Y(A)&=\operatorname{per}(A^{\mathsf T}A),\\
-Z(A)&=\operatorname{per}(A^2),\\
-W(A)&=\operatorname{per}(A)^2,\\
-T(A)&=X(A)+Y(A)+2Z(A).
+X(A)&=\mathop{\mathrm{per}}(AA^{\mathsf T}),
+\\ Y(A)&=\mathop{\mathrm{per}}(A^{\mathsf T}A),
+\\ Z(A)&=\mathop{\mathrm{per}}(A^2),
+\\ W(A)&=\mathop{\mathrm{per}}(A)^2,
+\\ T(A)&=X(A)+Y(A)+2Z(A).
 \end{aligned}
 ```
 
@@ -39,9 +39,9 @@ All four quantities `X,Y,Z,W` are positive for doubly stochastic `A`: the matric
 ```math
 \begin{aligned}
 T(A\oplus B)
-&=X(A)X(B)+Y(A)Y(B)+2Z(A)Z(B)\\
-&\le [X(A)+Y(A)+2Z(A)]\,[X(B)+Y(B)+2Z(B)]\\
-&=T(A)T(B).
+&=X(A)X(B)+Y(A)Y(B)+2Z(A)Z(B)
+\\ &\le [X(A)+Y(A)+2Z(A)]\,[X(B)+Y(B)+2Z(B)]
+\\ &=T(A)T(B).
 \end{aligned}
 \tag{2}
 ```
@@ -137,19 +137,19 @@ For an exact illustrative witness, set
 
 ```math
 A=\frac12\begin{pmatrix}
-1&0&1&0\\
-0&0&1&1\\
-1&1&0&0\\
-0&1&0&1
+1&0&1&0
+\\ 0&0&1&1
+\\ 1&1&0&0
+\\ 0&1&0&1
 \end{pmatrix}
 ```
 
 and let `B` be obtained by swapping its final two columns. Direct exact arithmetic gives
 
 ```math
-\operatorname{per}A=\operatorname{per}B=\frac18,\qquad
-\operatorname{per}(A^2)=\frac9{64},\quad
-\operatorname{per}(B^2)=\frac7{64}.
+\mathop{\mathrm{per}}A=\mathop{\mathrm{per}}B=\frac18,\qquad
+\mathop{\mathrm{per}}(A^2)=\frac9{64},\quad
+\mathop{\mathrm{per}}(B^2)=\frac7{64}.
 ```
 
 This only establishes *non-invariance of the mixed term*, not a counterexample to Gyires's conjecture.

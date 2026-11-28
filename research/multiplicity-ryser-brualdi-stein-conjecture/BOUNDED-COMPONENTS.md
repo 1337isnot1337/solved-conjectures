@@ -14,7 +14,7 @@ Consider a collection of connected components of such a factor, each component c
 
 **Potentials.** On each component there are vertex labels $u_x,v_y\in\Gamma$ on its left and right sides, such that every edge $xy$ of colour $i$ satisfies $u_x+v_y=w_i$. To prove this, let $z$ be the signed alternating edge vector of any even cycle. Then $z+\mathbf1$ is nonnegative integral and has constant degree $a$ at every vertex. It decomposes into $a$ perfect matchings by the bipartite matching theorem, applied successively. The same is true for $\mathbf1$. Consequently the signed colour count of $z$ lies in $\Lambda$, so potentials can be propagated from a left root labelled zero without a cycle inconsistency. This also covers parallel edges by a cycle of length two.
 
-The map taking a left vertex along its colour-$j$ edge and back along a colour-$i$ edge is a permutation of the left vertices. It shifts the left potential by $w_i-w_j$. Thus every element of $K$ occurs as a left potential. Connectivity and the edge equations show that all left potentials belong to $K$, and the colour-$1$ bijection then gives exactly the coset $w_1+K$ on the right. The profile class of any matching is the sum of its matched vertex potentials. In particular a perfect matching contributes $sw_1$.
+The map taking a left vertex along its colour-$`j`$ edge and back along a colour-$`i`$ edge is a permutation of the left vertices. It shifts the left potential by $w_i-w_j$. Thus every element of $K$ occurs as a left potential. Connectivity and the edge equations show that all left potentials belong to $K$, and the colour-$`1`$ bijection then gives exactly the coset $w_1+K$ on the right. The profile class of any matching is the sum of its matched vertex potentials. In particular a perfect matching contributes $sw_1$.
 
 **Exposing a pair.** In any connected regular bipartite graph, deleting any one left vertex and any one right vertex leaves a perfect matching. For a nonempty proper subset of the left side the neighbour set is strictly larger. Equality in the degree count would put all edges incident with those neighbours into that left subset and disconnect the graph. Deleting one right vertex therefore preserves Hall's inequalities for the remaining left side. The case $s=1$ gives an empty matching.
 
@@ -28,8 +28,8 @@ Put $J=\sum_{j=1}^b (j!)^a$, an upper bound on the number of component types pre
 
 ```math
 \begin{aligned}
-m &> (S+1)b^S\bigl(J(T-1)+S\bigr),\\
-r_i &\ge b\bigl(J(T-1)+S+1+q+Jb\bigr) \qquad(i\in A).
+m &> (S+1)b^S\bigl(J(T-1)+S\bigr),
+\\ r_i &\ge b\bigl(J(T-1)+S+1+q+Jb\bigr) \qquad(i\in A).
 \end{aligned}
 ```
 

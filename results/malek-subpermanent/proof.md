@@ -242,9 +242,9 @@ $`\cosh(R/2)\le1+\frac n2(e^{F/2}-1)`$. Applying (14) and (15), and using $`d_0\
 ```math
 \begin{aligned}
 \sinh^2(R/2)
-&\le n(e^{F/2}-1)+\frac{n^2}{4}(e^{F/2}-1)^2\\
-&\le \frac8{15}d_0w+\frac{16}{225}d_0^2w^2\\
-&\le\frac{28}{45}d_0w.
+&\le n(e^{F/2}-1)+\frac{n^2}{4}(e^{F/2}-1)^2
+\\ &\le \frac8{15}d_0w+\frac{16}{225}d_0^2w^2
+\\ &\le\frac{28}{45}d_0w.
 \end{aligned}
 \tag{16}
 ```

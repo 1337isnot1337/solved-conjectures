@@ -12,7 +12,7 @@ For one specified invalid column, the $2m$ entries of the first two rows in the 
 L_m(k)=\binom{k+m}{m}^{\!2}-m\binom{k-1+2m}{2m}.
 ```
 
-For the first term, count pairs of weakly increasing lists of length $m$ with entries in $\{0,\ldots,k\}$. Sort the combined lists, breaking ties by giving the first list priority. The word of list labels has $m$ letters $A$ and $m$ letters $B$. The sorted numbers must increase strictly at each $BA$ and are otherwise weakly increasing. A word with $j$ such transitions gives $\binom{k+2m-j}{2m}$ choices, with zero when $k<j$. There are $\binom mj^2$ such words. Indeed the numbers of $A$'s already read at the transitions form a $j$-subset of $\{0,\ldots,m-1\}$, and the numbers of $B$'s form a $j$-subset of $\{1,\ldots,m\}$. In increasing order these two lists specify every turn from $B$ to $A$, so they reconstruct the word. Summing the binomial series in $k$ gives
+For the first term, count pairs of weakly increasing lists of length $m$ with entries in $`\{0,\ldots,k\}`$. Sort the combined lists, breaking ties by giving the first list priority. The word of list labels has $m$ letters $A$ and $m$ letters $B$. The sorted numbers must increase strictly at each $BA$ and are otherwise weakly increasing. A word with $j$ such transitions gives $\binom{k+2m-j}{2m}$ choices, with zero when $k<j$. There are $\binom mj^2$ such words. Indeed the numbers of $A$'s already read at the transitions form a $j$-subset of $`\{0,\ldots,m-1\}`$, and the numbers of $B$'s form a $j$-subset of $`\{1,\ldots,m\}`$. In increasing order these two lists specify every turn from $B$ to $A$, so they reconstruct the word. Summing the binomial series in $k$ gives
 
 ```math
 H_m(z)=B_m(z)-mz,\qquad B_m(z)=\sum_{j=0}^m\binom mj^2 z^j.
@@ -30,13 +30,13 @@ away from its roots, and by continuity at the roots as well. Direct substitution
 
 ```math
 \begin{aligned}
-5^{12}H_{12}(x)&=41\,780\,056,\\
-5^{11}H'_{12}(x)&=-357\,481\,092,\\
-5^{10}H''_{12}(x)&=12\,374\,409\,432.
+5^{12}H_{12}(x)&=41\,780\,056,
+\\ 5^{11}H'_{12}(x)&=-357\,481\,092,
+\\ 5^{10}H''_{12}(x)&=12\,374\,409\,432.
 \end{aligned}
 ```
 
-Consequently $5^{22}((H'_{12})^2-H_{12}H''_{12})(-1/5)=-389\,210\,787\,898\,375\,728<0$. This disproves the conjecture. The [checker](check.py) independently obtains the whole numerator from the column-margin dynamic program and counts ten distinct real roots by Sturm’s theorem.
+Consequently $`5^{22}((H'_{12})^2-H_{12}H''_{12})(-1/5)=-389\,210\,787\,898\,375\,728<0`$. This disproves the conjecture. The [checker](check.py) independently obtains the whole numerator from the column-margin dynamic program and counts ten distinct real roots by Sturm’s theorem.
 
 ## An unbounded family of nonreal roots
 
@@ -59,7 +59,7 @@ This is the case $\alpha=\beta=0$ of [NIST DLMF, Eq. 18.14.3](https://dlmf.nist.
 
 On the interval $I_m=[1/m,(\log m)/(8m)]$ for all sufficiently large $m$, one has $(1+z)^m\le m^{1/8}$ and $\sin\theta=2\sqrt z/(1+z)\ge m^{-1/2}$. Consequently $|F_m(z)|=O(m^{-1/8})$ uniformly on $I_m$. Since $mz\ge1$, the perturbed polynomial $H_m(-z)=F_m(z)+mz$ is strictly positive throughout $I_m$.
 
-There are $\Omega(\sqrt{m\log m})$ zeros of $F_m$ in $I_m$. To see this directly put $u(\theta)=\sqrt{\sin\theta}\,P_m(\cos\theta)$ and $s=m+1/2$. The Legendre differential equation gives
+There are $\Omega(\sqrt{m\log m})$ zeros of $F_m$ in $I_m$. To see this directly put $`u(\theta)=\sqrt{\sin\theta}\,P_m(\cos\theta)`$ and $s=m+1/2$. The Legendre differential equation gives
 
 ```math
 u''+\left(s^2+\frac1{4\sin^2\theta}\right)u=0.

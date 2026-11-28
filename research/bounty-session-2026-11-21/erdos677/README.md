@@ -10,7 +10,7 @@ The [official bounty](https://conjectures.io/problems/erdos677-erdos-677)
 asks whether
 
 ```math
- M(n,k)=\operatorname{lcm}(n+1,\ldots,n+k)
+ M(n,k)=\mathop{\mathrm{lcm}}(n+1,\ldots,n+k)
  \ne M(m,k)
  \quad\text{whenever }k>0,\ m\ge n+k.
 ```
@@ -74,7 +74,7 @@ Write
 
 ```math
  P_k(n)=\prod_{i=1}^k(n+i),\quad D_k(n)=P_k(n)/M(n,k),
- \quad\lambda_k=\operatorname{lcm}(1,\ldots,k),\quad B_k=k!/\lambda_k.
+ \quad\lambda_k=\mathop{\mathrm{lcm}}(1,\ldots,k),\quad B_k=k!/\lambda_k.
 ```
 
 The known defect bounds are

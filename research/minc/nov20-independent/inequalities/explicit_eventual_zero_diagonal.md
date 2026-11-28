@@ -23,7 +23,7 @@ n\ge20\,000\,000\,000\,000                                  \tag{1}
 and every $`n\times n`$ doubly stochastic matrix $`A`$ with zero diagonal,
 
 ~~~math
-\operatorname{per}A\ge\operatorname{per}U_n,
+\mathop{\mathrm{per}}A\ge\mathop{\mathrm{per}}U_n,
 ~~~
 
 with equality only when $`A=U_n`$.
@@ -56,10 +56,10 @@ S_B(W,X)
 ={}&\sum_{i,j}\left[
 x_{ij}\log\frac{w_{ij}}{x_{ij}}
 +(1-x_{ij})\log(1-x_{ij})
-\right]\\
-&-\sum_i\left(1-\sum_jx_{ij}\right)
- \log\left(1-\sum_jx_{ij}\right)\\
-&-\sum_j\left(1-\sum_ix_{ij}\right)
+\right]
+\\ &-\sum_i\left(1-\sum_jx_{ij}\right)
+ \log\left(1-\sum_jx_{ij}\right)
+\\ &-\sum_j\left(1-\sum_ix_{ij}\right)
  \log\left(1-\sum_ix_{ij}\right).
 \end{aligned}                                               \tag{2}
 ~~~
@@ -86,8 +86,8 @@ homogeneous real-stable polynomial of degree m in m variables with
 nonnegative coefficients, then
 
 ~~~math
-[x_1\cdots x_m]q\ge d_m\operatorname{Cap}(q),\qquad
-\operatorname{Cap}(q)=
+[x_1\cdots x_m]q\ge d_m\mathop{\mathrm{Cap}}(q),\qquad
+\mathop{\mathrm{Cap}}(q)=
 \inf_{x_1,\ldots,x_m>0}\frac{q(x)}{x_1\cdots x_m}.             \tag{4}
 ~~~
 
@@ -105,7 +105,7 @@ and let $`1\le k<n`$. Then
 
 ~~~math
 \boxed{\quad
-\operatorname{per}A
+\mathop{\mathrm{per}}A
 \ge d_{n-k}\prod_{\substack{i\in[n]\\j\in S}}
 (1-a_{ij})^{1-a_{ij}}.
 \quad}                                                       \tag{5}
@@ -125,7 +125,7 @@ q_S(x)=
 
 The polynomial $`q_S`$ is nonzero, real stable, homogeneous of degree $`n-k`$ in
 the $`n-k`$ variables outside $`S`$, with nonnegative coefficients. Its squarefree
-full coefficient is $`\operatorname{per}A`$.
+full coefficient is $`\mathop{\mathrm{per}}A`$.
 
 Fix positive outside variables and set
 
@@ -205,7 +205,7 @@ Some k-column set S has at least k/n of the total squared deviation.
 Applying (5) to this S therefore gives
 
 ~~~math
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge \log\frac{d_{n-k}}{d_n}
 +k(n-1)\log(1-1/n)+\frac{k r^2}{2n}.                         \tag{9}
 ~~~
@@ -236,10 +236,10 @@ Summing proves the explicit all-order estimate
 
 ~~~math
 \boxed{\quad
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge\frac{k r^2}{2n}
 -\frac{k(k-1)}{4(n-k)(n-k+1)}
-\qquad(1\le k<n).
+\qquad(1\le k\lt n).
 \quad}                                                       \tag{10}
 ~~~
 
@@ -259,19 +259,19 @@ For $`n\ge6\,000\,000`$,
 
 ~~~math
 \frac{n\varepsilon}{3}\le k\le\frac{n\varepsilon}{2},
-\qquad 1\le k<n.
+\qquad 1\le k\lt n.
 ~~~
 
 If $`r^2\ge\varepsilon`$, equation (10) gives
 
 ~~~math
 \begin{aligned}
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 &\ge\frac{\varepsilon^2}{6}
--\frac{\varepsilon^2}{16(1-\varepsilon/2)^2}\\
-&>\frac{\varepsilon^2}{6}-\frac{\varepsilon^2}{15}
-=\frac{\varepsilon^2}{10}=10^{-13}.                         \tag{11}
-\end{aligned}
+-\frac{\varepsilon^2}{16(1-\varepsilon/2)^2}
+\\ &>\frac{\varepsilon^2}{6}-\frac{\varepsilon^2}{15}
+=\frac{\varepsilon^2}{10}=10^{-13}.
+\end{aligned} \tag{11}
 ~~~
 
 The strict step uses the exact rational inequality
@@ -288,7 +288,7 @@ $`S<467/1000`$. The quadratic Hessian coefficient is $`n/(n-1)\le2`$. Consequent
 \qquad(\|B\|_F\le1/1000),                                   \tag{12}
 ~~~
 
-where $`P_n(B)=\operatorname{per}(J_n+B)/d_n`$. Integrating from zero gives
+where $`P_n(B)=\mathop{\mathrm{per}}(J_n+B)/d_n`$. Integrating from zero gives
 
 ~~~math
 P_n(B)\le1+\frac32\|B\|_F^2.                                 \tag{13}
@@ -298,7 +298,7 @@ The matrix $`B_0=U_n-J_n`$ has squared Frobenius norm $`1/(n-1)`$.
 For n in (1), it lies in the local ball, and (13) yields
 
 ~~~math
-\log\frac{\operatorname{per}U_n}{d_n}
+\log\frac{\mathop{\mathrm{per}}U_n}{d_n}
 \le\frac{3}{2(n-1)}<10^{-13}.                               \tag{14}
 ~~~
 
@@ -306,7 +306,7 @@ The final rational comparison follows already when $`n>15\,000\,000\,000\,001`$;
 the round threshold in (1) is larger.
 
 Equations (11) and (14) show that every $`A`$ with $`r^2\ge\varepsilon`$ has
-$`\operatorname{per}A>\operatorname{per}U_n`$. This comparison covers equality candidates as well as
+$`\mathop{\mathrm{per}}A>\mathop{\mathrm{per}}U_n`$. This comparison covers equality candidates as well as
 strict counterexamples.
 
 ## 6. Completing the eventual theorem
@@ -320,7 +320,7 @@ Now impose zero diagonal and let $`D=A-U_n`$. Orthogonality gives
 If the left side is at most $`\varepsilon`$, Theorem 2 of the local note gives
 
 ~~~math
-\operatorname{per}A-\operatorname{per}U_n
+\mathop{\mathrm{per}}A-\mathop{\mathrm{per}}U_n
 \ge\frac{d_n}{32}\|D\|_F^2,
 ~~~
 

@@ -16,7 +16,7 @@ Ferreira and Simon, *Mittag-Leffler functions and convex ordering*, [arXiv:2512.
 **Theorem.** For every pair of real parameters satisfying $`0<\alpha<\beta<1`$, one has
 
 ```math
-E_{\alpha,\alpha}(-1)<E_{\beta,\beta}(-1).
+E_{\alpha,\alpha}(-1)\lt E_{\beta,\beta}(-1).
 ```
 
 This is the entire parameter-monotonicity conjecture in that remark. The fixed argument minus one is part of the original statement; the proof covers every allowed real parameter and does not infer a theorem from a numerical case.
@@ -122,7 +122,7 @@ It is strictly positive, because
 Consider
 
 ```math
-h(z)=z\cot z-\log\sin z,\qquad 0<z<\pi.
+h(z)=z\cot z-\log\sin z,\qquad 0\lt z<\pi.
 ```
 
 Its derivative is
@@ -189,7 +189,7 @@ x^{\beta-1}E_{\beta,\beta}(-x^\beta)
 is positive precisely between its two positive zeros, denoted there by $`y_{\alpha,\beta}`$ and $`z_{\alpha,\beta}`$. The theorem makes this expression positive at one, so $`z_{\alpha,\beta}>1`$. Together with the already proved Theorem B, this gives the complete bound proposed in Remark 5(b):
 
 ```math
-x_{\alpha,\beta}<1<z_{\alpha,\beta}.
+x_{\alpha,\beta}<1\lt z_{\alpha,\beta}.
 ```
 
 This consequence is not counted as a separate conjecture.

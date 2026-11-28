@@ -73,8 +73,8 @@ Write $`a(y)=a_{\mathrm n}+a_{\mathrm f}`$ and $`b(y)=b_{\mathrm n}+b_{\mathrm f
 \left(\int a(y)\,d\gamma_{r-1}(y)\right)^2
 &\le
  \left(\int e^{\alpha|y|^2}\,d\gamma_{r-1}(y)\right)
- \left(\int e^{-\alpha|y|^2}a(y)^2\,d\gamma_{r-1}(y)\right)\\
-&\le
+ \left(\int e^{-\alpha|y|^2}a(y)^2\,d\gamma_{r-1}(y)\right)
+\\ &\le
  5(1-2\alpha)^{-(r-1)/2}
  \int e^{-\alpha|y|^2}b(y)\,d\gamma_{r-1}(y).
 \end{aligned}

@@ -100,8 +100,8 @@ Therefore the same tangent direction satisfies
 ```math
 \begin{aligned}
 d(\log\mathop{\mathrm{per}})_P[D_P]
-&=n-\sum_{ij}\frac{M(P)_{ij}^2}{p_{ij}}\\
-&=-\sum_{ij}\frac{(M(P)_{ij}-p_{ij})^2}{p_{ij}}
+&=n-\sum_{ij}\frac{M(P)_{ij}^2}{p_{ij}}
+\\ &=-\sum_{ij}\frac{(M(P)_{ij}-p_{ij})^2}{p_{ij}}
 \le0.
 \end{aligned}
 ```

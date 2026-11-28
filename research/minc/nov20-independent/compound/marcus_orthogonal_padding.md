@@ -44,7 +44,7 @@ A direct sum B, whereas each enlarged block is A_ij direct sum B_ij.
 Writing C_ij=per B_ij and s=per B, we therefore have exactly
 
 ```math
-\operatorname{per}A^+=s\operatorname{per}A,
+\mathop{\mathrm{per}}A^+=s\mathop{\mathrm{per}}A,
 \qquad G^+=G\circ C.                                      \tag{1}
 ```
 
@@ -52,7 +52,7 @@ If the block size k+d reaches a proved range, the available conclusion
 is consequently
 
 ```math
-s\operatorname{per}A\ge\operatorname{per}(G\circ C).       \tag{2}
+s\mathop{\mathrm{per}}A\ge\mathop{\mathrm{per}}(G\circ C).       \tag{2}
 ```
 
 The matrix C is positive semidefinite: it is the Gram matrix of the
@@ -65,7 +65,7 @@ case each diagonal entry of C is positive.
 Suppose that for a constant c>0 the auxiliary system satisfies
 
 ```math
-\operatorname{per}(G\circ C)=c\operatorname{per}G
+\mathop{\mathrm{per}}(G\circ C)=c\mathop{\mathrm{per}}G
 \quad\text{for every positive semidefinite }G.              \tag{3}
 ```
 
@@ -152,7 +152,7 @@ proportional, say f_i=c_i Q. The factorial Gram identity gives
 c=\prod_i C_{ii}
  =\left(\prod_i|c_i|^2\right)\|Q\|_F^{2m},
 \qquad
-s=\operatorname{per}B
+s=\mathop{\mathrm{per}}B
  =\left(\prod_i|c_i|^2\right)\|Q^m\|_F^2.
 ```
 
@@ -171,7 +171,7 @@ There is a related obstruction that does not assume exact preservation.
 No fixed auxiliary B with s>0 can satisfy
 
 ```math
-\operatorname{per}(G\circ C)\ge s\operatorname{per}G
+\mathop{\mathrm{per}}(G\circ C)\ge s\mathop{\mathrm{per}}G
 \quad\text{for every positive semidefinite }G.              \tag{9}
 ```
 

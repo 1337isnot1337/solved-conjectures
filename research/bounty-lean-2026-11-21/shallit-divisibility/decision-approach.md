@@ -76,8 +76,8 @@ where
 
 ```math
 \begin{aligned}
-A&=(DU+V)k^l,&B&=DX-Vk^l,\\
-C&=(DU'+V')k^l,&E&=DX'-V'k^l.
+A&=(DU+V)k^l,&B&=DX-Vk^l,
+\\ C&=(DU'+V')k^l,&E&=DX'-V'k^l.
 \end{aligned}
 ```
 

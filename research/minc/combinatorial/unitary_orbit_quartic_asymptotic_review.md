@@ -74,9 +74,9 @@ and its specified conjugation path indeed has coefficient $`98/3`$. However, the
 ```math
 \widetilde H=
 \begin{pmatrix}
-0&\sqrt2&\sqrt2\\
-\sqrt2&0&3+i\\
-\sqrt2&3-i&0
+0&\sqrt2&\sqrt2
+\\ \sqrt2&0&3+i
+\\ \sqrt2&3-i&0
 \end{pmatrix}
 ```
 

@@ -10,7 +10,7 @@ Let J_n be the all-1/n matrix, d_n=n!/n^n, and let b(n) be the largest radius su
 
 ~~~math
 \|A-J_n\|_F\le b(n)\quad\Longrightarrow\quad
-\operatorname{per}A\ge d_n.
+\mathop{\mathrm{per}}A\ge d_n.
 ~~~
 
 Entries of A need not be nonnegative. The source fixes the Frobenius norm for the catalogued problem.
@@ -85,7 +85,7 @@ The scaled bound is the only nontrivial external inequality used below.
 Let A=J_n+X, where X has zero margins, and r=||X||F. Expanding the permanent by the positions chosen from X gives
 
 ~~~math
-\frac{\operatorname{per}(J_n+X)}{d_n}
+\frac{\mathop{\mathrm{per}}(J_n+X)}{d_n}
 =\sum_{k=0}^n\frac{n^k}{(n)_k}\sigma_k(X),
 \qquad (n)_k=\frac{n!}{(n-k)!}.
 \tag{6}
@@ -111,7 +111,7 @@ Indeed the inner sum equals x_ij because X has zero row and column sums. The qua
 Define
 
 ~~~math
-T_n(t)=\frac{\operatorname{per}(J_n+tQ)}{d_n}
+T_n(t)=\frac{\mathop{\mathrm{per}}(J_n+tQ)}{d_n}
 =\sum_{k=0}^n\frac{n^k}{(n)_k}\sigma_k(Q)t^k
 =\sum_{j=0}^n\frac{(nt)^j(1-t)^{n-j}}{j!}.
 \tag{9}
@@ -123,12 +123,12 @@ Using (5), (6), (7), and (9), and assuming X is nonzero and s<=1, yields
 
 ~~~math
 \begin{aligned}
-\frac{\operatorname{per}(J_n+X)}{d_n}
+\frac{\mathop{\mathrm{per}}(J_n+X)}{d_n}
 &\ge1+\frac{nr^2}{2(n-1)}
 -\frac{r^2}{n-1}
 \sum_{k=3}^n\frac{n^k}{(n)_k}
-\sigma_k(Q)s^{k-2}\\
-&=1+\frac{r^2}{n-1}
+\sigma_k(Q)s^{k-2}
+\\ &=1+\frac{r^2}{n-1}
 \left(n-\frac{T_n(s)-1}{s^2}\right).
 \end{aligned}
 \tag{10}
@@ -165,7 +165,7 @@ To analyze the root, fix u>0 and put t=u/sqrt(n) for sufficiently large n. With 
 
 ~~~math
 T_n(t)=(1-t)^n e^{\lambda_n}
-\Pr\{N_n\le n\},\qquad N_n\sim\operatorname{Poisson}(\lambda_n).
+\Pr\{N_n\le n\},\qquad N_n\sim\mathop{\mathrm{Poisson}}(\lambda_n).
 ~~~
 
 Markov's inequality gives Pr{N_n>n} <=lambda_n/(n+1)=O(n^(-1/2)), so the probability tends to one. Taylor expansion with t=O(n^(-1/2)) gives

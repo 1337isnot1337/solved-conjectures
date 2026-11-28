@@ -25,7 +25,7 @@ conjecture is a separate problem.
 A full resolution would give a rainbow perfect matching in every
 proper edge-coloring of the balanced complete bipartite graph with
 the same odd number of colors as the degree. Montgomery proved near transversals
-of size $n-1$ for sufficiently large $n$. The November 2026
+of size $`n-1`$ for sufficiently large $`n`$. The November 2026
 revision of Tang and Zhao counts near transversals. Neither
 supplies the missing cell for all odd-order squares. Searches on
 2026-11-24 under the traditional names, rainbow perfect matching,
@@ -36,13 +36,13 @@ full resolution.
 
 ## A uniform permutation for odd-order actions
 
-**Proposition.** If a finite permutation group $\Gamma\le
-\mathop{\mathrm{Sym}}(\Omega)$ is transitive and has odd order,
-there exists a permutation $t$ of $\Omega$ with $t^2=1$ such
-that for every $g\in\Gamma$ exactly one $x\in\Omega$ satisfies
-$g(x)=t(x)$.
+**Proposition.** If a finite permutation group $`\Gamma\le
+\mathop{\mathrm{Sym}}(\Omega)`$ is transitive and has odd order,
+there exists a permutation $`t`$ of $`\Omega`$ with $`t^2=1`$ such
+that for every $`g\in\Gamma`$ exactly one $`x\in\Omega`$ satisfies
+$`g(x)=t(x)`$.
 
-This is a statement about the coset $\Gamma t$ having exactly
+This is a statement about the coset $`\Gamma t`$ having exactly
 one fixed point per element. The affine case is related to the
 fixed-point criterion for cosets of the translation group in
 the derangement literature. Cameron and Wanless study the
@@ -55,120 +55,120 @@ gives the remaining permutation-group argument.
 [Cameron–Wanless](https://webspace.maths.qmul.ac.uk/p.j.cameron/preprints/cw.pdf).
 
 Proceed by induction on the degree. The group on a singleton
-has the asserted property with $t=1$.
+has the asserted property with $`t=1`$.
 
 **Primitive action of degree greater than one.** By the
-odd-order theorem, $\Gamma$ is solvable. Choose a minimal
-nontrivial normal subgroup $N$. It is elementary abelian.
+odd-order theorem, $`\Gamma`$ is solvable. Choose a minimal
+nontrivial normal subgroup $`N`$. It is elementary abelian.
 Its commutator is proper by solvability and characteristic
-in $N$, so the commutator is trivial. In the resulting finite
+in $`N`$, so the commutator is trivial. In the resulting finite
 abelian group, the subgroup of elements of order dividing a
-chosen prime divisor $p$ of its order is nontrivial and
-characteristic, so it is all of $N$.
+chosen prime divisor $`p`$ of its order is nontrivial and
+characteristic, so it is all of $`N`$.
 
-The $N$-orbits are a $\Gamma$-invariant block system. By
-primitivity and faithfulness, $N$ is transitive. It acts
+The $`N`$-orbits are a $`\Gamma`$-invariant block system. By
+primitivity and faithfulness, $`N`$ is transitive. It acts
 regularly, since in an abelian transitive action a point
 stabilizer fixes every point. Choosing an origin identifies
-$\Omega$ with the vector space $N$ over $\mathbb F_p$.
-Each $g\in\Gamma$ acts as $x\mapsto A_gx+b_g$ with $A_g$
-a linear automorphism, obtained from conjugation on $N$.
-The order of $A_g$ divides the odd order of $g$. The prime
-$p$ is odd. Thus $A_g$ has no eigenvalue $-1$ over $\mathbb F_p$
-and $A_g+I$ is invertible. With $t(x)=-x$, the equation
-$(A_g+I)x=-b_g$ has exactly one solution.
+$`\Omega`$ with the vector space $`N`$ over $`\mathbb F_p`$.
+Each $`g\in\Gamma`$ acts as $`x\mapsto A_gx+b_g`$ with $`A_g`$
+a linear automorphism, obtained from conjugation on $`N`$.
+The order of $`A_g`$ divides the odd order of $`g`$. The prime
+$`p`$ is odd. Thus $`A_g`$ has no eigenvalue $`-1`$ over $`\mathbb F_p`$
+and $`A_g+I`$ is invertible. With $`t(x)=-x`$, the equation
+$`(A_g+I)x=-b_g`$ has exactly one solution.
 
 **Imprimitive action.** Choose a nontrivial block system
-$\mathcal B$ and one block $B_0$. The induced group on
-$\mathcal B$ and the group induced by $\Gamma_{B_0}$ on $B_0$
+$`\mathcal B`$ and one block $`B_0`$. The induced group on
+$`\mathcal B`$ and the group induced by $`\Gamma_{B_0}`$ on $`B_0`$
 are both transitive of odd order and have smaller degree.
 For the second claim of transitivity, an element carrying
-one point of $B_0$ to another must carry $B_0$ to itself.
-By induction obtain $t_0$ on the blocks and $t_1$ on $B_0$
-with the asserted property. For each block $B$, choose
-$\gamma_B\in\Gamma$ taking $B_0$ to $B$. Define
+one point of $`B_0`$ to another must carry $`B_0`$ to itself.
+By induction obtain $`t_0`$ on the blocks and $`t_1`$ on $`B_0`$
+with the asserted property. For each block $`B`$, choose
+$`\gamma_B\in\Gamma`$ taking $`B_0`$ to $`B`$. Define
 
 ```math
 t|_B=\gamma_{t_0(B)}\,t_1\,\gamma_B^{-1}|_B.
 ```
 
-This defines a permutation and $t^2=1$ by cancellation on
-each pair of blocks. For $g\in\Gamma$ the equation $g(x)=t(x)$
-requires that the block of $x$ be carried by $g$ to its image
-under $t_0$. There is exactly one such block $B$. On it, the
-equation becomes an agreement of $t_1$ with the element induced
-by $\gamma_{t_0(B)}^{-1}g\gamma_B$ on $B_0$. This element is
-from the setwise stabilizer of $B_0$. The induction hypothesis
+This defines a permutation and $`t^2=1`$ by cancellation on
+each pair of blocks. For $`g\in\Gamma`$ the equation $`g(x)=t(x)`$
+requires that the block of $`x`$ be carried by $`g`$ to its image
+under $`t_0`$. There is exactly one such block $`B`$. On it, the
+equation becomes an agreement of $`t_1`$ with the element induced
+by $`\gamma_{t_0(B)}^{-1}g\gamma_B`$ on $`B_0`$. This element is
+from the setwise stabilizer of $`B_0`$. The induction hypothesis
 gives exactly one solution, completing the proof.
 
 In Hamming distance the proposition gives covering radius
-$|\Omega|-1$ for every transitive odd-order group. Indeed $t$
+$`|\Omega|-1`$ for every transitive odd-order group. Indeed $`t`$
 is at that distance from every group element, and every
 permutation agrees somewhere with some group element by
 transitivity.
 
 ## Disjoint transversals
 
-Label rows and columns of $L$ by the same set $\Omega$ and
-let $p_s(x)$ be the column of symbol $s$ in row $x$. The
-family $\{p_s\}$ is sharply transitive in the sense that for
-each ordered pair $(x,y)$ exactly one $p_s$ sends $x$ to $y$.
+Label rows and columns of $`L`$ by the same set $`\Omega`$ and
+let $`p_s(x)`$ be the column of symbol $`s`$ in row $`x`$. The
+family $`\{p_s\}`$ is sharply transitive in the sense that for
+each ordered pair $`(x,y)`$ exactly one $`p_s`$ sends $`x`$ to $`y`$.
 Suppose these permutations are contained in an odd-order
-group $\Gamma$. Sharp transitivity makes $\Gamma$ transitive.
+group $`\Gamma`$. Sharp transitivity makes $`\Gamma`$ transitive.
 
 If necessary, one may first normalize by relabelling the
 columns so a chosen symbol matching becomes the identity.
 The condition is precisely that the group generated by the
-normalized $p_s$ have odd order. To check independence of the
-normalizing symbol, the group generated by all $p_a^{-1}p_b$
-equals the group generated by $\{p_{s_0}^{-1}p_s\}_s$ for
-any fixed $s_0$, as each pair difference is a product of two
+normalized $`p_s`$ have odd order. To check independence of the
+normalizing symbol, the group generated by all $`p_a^{-1}p_b`$
+equals the group generated by $`\{p_{s_0}^{-1}p_s\}_s`$ for
+any fixed $`s_0`$, as each pair difference is a product of two
 of those generators or their inverses.
 
-Take $t$ from the proposition. For each $r$ form the cells
-$(x,p_r(t(x)))$ over all rows $x$. They use each row and
-column once. The condition that symbol $s$ appears in one
-of these cells is $(p_r^{-1}p_s)(x)=t(x)$, which has exactly
-one solution. Thus this is a full transversal. As $r$ varies,
-the columns $p_r(t(x))$ run over all columns in each fixed
+Take $`t`$ from the proposition. For each $`r`$ form the cells
+$`(x,p_r(t(x)))`$ over all rows $`x`$. They use each row and
+column once. The condition that symbol $`s`$ appears in one
+of these cells is $`(p_r^{-1}p_s)(x)=t(x)`$, which has exactly
+one solution. Thus this is a full transversal. As $`r`$ varies,
+the columns $`p_r(t(x))`$ run over all columns in each fixed
 row. The transversals partition the whole square and their
 labels define an orthogonal mate.
 
 ### An infinite family outside group isotopes
 
-Let $p$ be any odd prime, with row and column set
-$\mathbb F_p^2$. Write $f_1(i)=1$ for $i=0$ and zero
-otherwise, and let $f_s=0$ for every $s\ne1$. Take the
-symbol matching for $(s,a)$ to be
+Let $`p`$ be any odd prime, with row and column set
+$`\mathbb F_p^2`$. Write $`f_1(i)=1`$ for $`i=0`$ and zero
+otherwise, and let $`f_s=0`$ for every $`s\ne1`$. Take the
+symbol matching for $`(s,a)`$ to be
 
 ```math
 p_{s,a}(i,j)=(i+s,j+a+f_s(i)).
 ```
 
-For every input $(i,j)$ the $p^2$ outputs are distinct.
+For every input $`(i,j)`$ the $`p^2`$ outputs are distinct.
 Thus it is the symbol family of a Latin square. Its
 permutations lie in the odd-order group of all maps
-$(i,j)\mapsto(i+s,j+h(i))$ with $h:\mathbb F_p\to\mathbb F_p$.
+$`(i,j)\mapsto(i+s,j+h(i))`$ with $`h:\mathbb F_p\to\mathbb F_p`$.
 That group is closed under composition and has order
-$p^{p+1}$. The group condition holds. One may take
-$t(i,j)=(-i,-j)$ directly, since the agreement equations for
-a group element determine $i$ from $2i=-s$ and then $j$
-from $2j=-h(i)$.
+$`p^{p+1}`$. The group condition holds. One may take
+$`t(i,j)=(-i,-j)`$ directly, since the agreement equations for
+a group element determine $`i`$ from $`2i=-s`$ and then $`j`$
+from $`2j=-h(i)`$.
 
 The symbol family contains the identity but is not closed
-under composition. Squaring $p_{1,0}$ has first-coordinate
-shift $2$ and second-coordinate shift $f_1(i)+f_1(i+1)$.
+under composition. Squaring $`p_{1,0}`$ has first-coordinate
+shift $`2`$ and second-coordinate shift $`f_1(i)+f_1(i+1)`$.
 The latter function is nonconstant, whereas every symbol
-matching with first-coordinate shift $2$ has constant
+matching with first-coordinate shift $`2`$ has constant
 second-coordinate shift.
 
 For a group table, the symbol matchings have the form
-$R_sJ$, where $J(x)=x^{-1}$ and $R_s(x)=xs$. After arbitrary
+$`R_sJ`$, where $`J(x)=x^{-1}`$ and $`R_s(x)=xs`$. After arbitrary
 row, column, and symbol relabellings the set of matchings
-is of the form $\alpha\{R_s\}J\beta^{-1}$. If it contains
-the identity, use the particular $s_0$ giving that identity
+is of the form $`\alpha\{R_s\}J\beta^{-1}`$. If it contains
+the identity, use the particular $`s_0`$ giving that identity
 to rewrite the set as
-$\alpha\{R_sR_{s_0}^{-1}\}\alpha^{-1}$, a regular group.
+$`\alpha\{R_sR_{s_0}^{-1}\}\alpha^{-1}`$, a regular group.
 It must then be closed under composition. The displayed
 family cannot be an isotope of a group table.
 
@@ -176,11 +176,11 @@ family cannot be an isotope of a group table.
 
 The universal agreement property is impossible for a
 two-transitive ambient group of degree at least two.
-Fix distinct $x,y$ and any candidate $t$. Two-transitivity
-provides $g$ with $(g(x),g(y))=(t(x),t(y))$, giving two
+Fix distinct $`x,y`$ and any candidate $`t`$. Two-transitivity
+provides $`g`$ with $`(g(x),g(y))=(t(x),t(y))`$, giving two
 agreements. This obstruction concerns the whole ambient
 group. The Latin square argument uses only the differences
-$p_r^{-1}p_s$ and leaves open whether those particular
+$`p_r^{-1}p_s`$ and leaves open whether those particular
 permutations admit a suitable agreement rule when the
 ambient group has even order. The proof leaves the general
 conjecture open.

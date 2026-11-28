@@ -14,7 +14,7 @@ A_D=\mathbb C[x_1,\ldots,x_d]/
  (x^\alpha:\alpha\notin D).
 ```
 
-Its basis is $\{x^\alpha:\alpha\in D\}$, and its multiplication tensor is
+Its basis is $`\{x^\alpha:\alpha\in D\}`$, and its multiplication tensor is
 
 ```math
 T_D=\sum_{\substack{\alpha,\beta\in D\\\alpha+\beta\in D}}

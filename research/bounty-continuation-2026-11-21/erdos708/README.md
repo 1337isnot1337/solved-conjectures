@@ -33,7 +33,7 @@ Wang's raw finite envelope already transfers a uniform fractional coefficient-tw
 One sufficient inequality uses arbitrary weights 0≤w_p≤1 on primes below Q. Write
 
 ```math
-X_w(m)=\sum_{p<Q}w_pv_p(m).
+X_w(m)=\sum_{p\lt Q}w_pv_p(m).
 ```
 
 The unproved assertion is

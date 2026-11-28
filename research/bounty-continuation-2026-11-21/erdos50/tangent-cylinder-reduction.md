@@ -157,8 +157,8 @@ The finite product distribution has the exact atom formula
 
 ```math
 \frac{M(P(h))}{h}
-\sum_{\substack{A\subseteq\{p:p\le P(h)\}\\
-                 a<(t_A-x)/h\le b}}
+\sum_{\substack{A\subseteq\{p:p\le P(h)\}
+                 \\ a<(t_A-x)/h\le b}}
 \frac1{R_A}
 \longrightarrow d(b-a)
 \qquad(h\downarrow0).                               \tag{9}

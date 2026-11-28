@@ -16,15 +16,15 @@ norm. A separate Bloch-vector moment argument proves, for a complex PSD
 matrix of order six and rank at most two,
 
 ```math
-\operatorname{tr}C_{(3,3)}(A)
-\le 2\operatorname{per}A-9\prod_i a_{ii}.
+\mathop{\mathrm{tr}}C_{(3,3)}(A)
+\le 2\mathop{\mathrm{per}}A-9\prod_i a_{ii}.
 ```
 
 Combining the parts gives
 
 ```math
 f_{H,\mathrm{sgn}}(A)
-\le \operatorname{per}A-\frac92\prod_i a_{ii}
+\le \mathop{\mathrm{per}}A-\frac92\prod_i a_{ii}
 ```
 
 for each exceptional subgroup. The proof handles zero diagonal entries
@@ -61,7 +61,7 @@ This applies to the Segre alignment inequality, yielding
 
 ```math
 f_{H,\mathrm{sgn}}(A)
-\le \frac16\det A+\frac12\operatorname{tr}C_{(3,3)}(A)
+\le \frac16\det A+\frac12\mathop{\mathrm{tr}}C_{(3,3)}(A)
 ```
 
 for every PSD matrix of order six. It does not lift the mixed permanent
@@ -82,7 +82,7 @@ assumes the permanent-on-top condition for the appended matrix C and proves
 
 ```math
 f_{H,\chi}(A\oplus C)
-\le\operatorname{per}(C)f_{K,\theta}(A).
+\le\mathop{\mathrm{per}}(C)f_{K,\theta}(A).
 ```
 
 Root checked the positive-definite product on the intersection subgroup.

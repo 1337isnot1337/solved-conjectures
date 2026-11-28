@@ -83,8 +83,8 @@ Also $`a\to0`$, and $`\log(1+a)\ge a/2`$ for $`0\le a\le1`$. Hence
 ```math
 \begin{aligned}
 \log W^{\mathrm{all}}_{n,k}(\lambda)
-&\ge-\lambda(k+1)+(m-1)\log(1+a)\\
-&\ge-\lambda(k+1)+\frac{(m-1)a}{2}
+&\ge-\lambda(k+1)+(m-1)\log(1+a)
+\\ &\ge-\lambda(k+1)+\frac{(m-1)a}{2}
 \longrightarrow\infty.
 \end{aligned}
 ```
@@ -127,8 +127,8 @@ For
 ```math
 A=
 \begin{pmatrix}
-1&-2&1&0\\
-3&-4&0&1
+1&-2&1&0
+\\ 3&-4&0&1
 \end{pmatrix},
 ```
 

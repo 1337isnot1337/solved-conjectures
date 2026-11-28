@@ -62,7 +62,7 @@ uniform speed improvement in that regime is claimed.
 ## 2. Symmetric substitution and its collision subspace
 
 Let $`V`$ be the space of linear polynomials in $`x_1,\ldots,x_n`$,
-and let $`H_k=\operatorname{Sym}^k V`$ be the degree-$`k`$ homogeneous
+and let $`H_k=\mathop{\mathrm{Sym}}^k V`$ be the degree-$`k`$ homogeneous
 polynomial space, in its ordinary monomial basis. Define
 
 ```math
@@ -79,7 +79,7 @@ The relevant algebraic fact is
 
 ```math
 C_k=Q_0\,H_{k-2},\qquad
-Q_0=\operatorname{span}\{x_1^2,\ldots,x_n^2\}\subseteq H_2.   \tag{3}
+Q_0=\mathop{\mathrm{span}}\{x_1^2,\ldots,x_n^2\}\subseteq H_2.   \tag{3}
 ```
 
 A product of two subspaces means the linear span of their products.
@@ -116,27 +116,27 @@ S^T C_k\ \subseteq\ C_k+SC_k+\cdots+S^{T-1}C_k,
 **Proof.** Let $`L=S_1(A)`$ on $`V`$, and put $`W=L^nV`$.
 The image chain stabilizes by the $`n`$th step, so $`L(W)=W`$
 and $`L|_W`$ is invertible. Set $`r=\dim W`$ and
-$`d=\dim\operatorname{Sym}^2W=\binom{r+1}{2}`$.
+$`d=\dim\mathop{\mathrm{Sym}}^2W=\binom{r+1}{2}`$.
 
 If $`r=0`$, then $`L^n=0`$, hence $`S^n=0`$ for $`k\ge1`$,
 and (6) follows. Suppose $`r>0`$. Put
-$`Q_n=S_2(A)^nQ_0\subseteq\operatorname{Sym}^2W`$ and let
+$`Q_n=S_2(A)^nQ_0\subseteq\mathop{\mathrm{Sym}}^2W`$ and let
 $`R=S_2(L|_W)`$. Applying (3) and using the invertibility on $`W`$
 shows, for every $`t\ge0`$,
 
 ```math
-S^{n+t}C_k=R^tQ_n\,\operatorname{Sym}^{k-2}W.              \tag{7}
+S^{n+t}C_k=R^tQ_n\,\mathop{\mathrm{Sym}}^{k-2}W.              \tag{7}
 ```
 
 Indeed, the image of $`H_{k-2}`$ under substitution by $`L^{n+t}`$
-is the whole $`\operatorname{Sym}^{k-2}W`$. Cayley--Hamilton on the
+is the whole $`\mathop{\mathrm{Sym}}^{k-2}W`$. Cayley--Hamilton on the
 $`d`$-dimensional quadratic space gives
 
 ```math
 R^dQ_n\subseteq\sum_{t=0}^{d-1}R^tQ_n.
 ```
 
-Multiplication by $`\operatorname{Sym}^{k-2}W`$ and (7) imply
+Multiplication by $`\mathop{\mathrm{Sym}}^{k-2}W`$ and (7) imply
 $`S^{n+d}C_k\subseteq\sum_{t=n}^{n+d-1}S^tC_k`$. This makes the
 span through power $`n+d-1`$ invariant under $`S`$. Since
 $`d\le\binom{n+1}{2}`$, (6) follows. The argument includes nilpotent
@@ -245,7 +245,7 @@ the ordinary substitution coefficient is
 
 ```math
 (S_k(A^t))_{\alpha,\beta}
-=\frac{\operatorname{per}(A^t[\alpha\mid\beta])}{\alpha!}.
+=\frac{\mathop{\mathrm{per}}(A^t[\alpha\mid\beta])}{\alpha!}.
                                                                \tag{13}
 ```
 
@@ -257,7 +257,7 @@ numerator in $`O(k2^k)`$ operations. Only the $`q^2`$ collision entries
 are needed for each $`F_t`$, for a total of $`O(Tq^2k2^k)`$ operations.
 
 The factor $`\det(I-zS)`$ also needs no eigenvalue field extension.
-Let $`p_r=\operatorname{tr}(A^r)`$. From the characteristic polynomial
+Let $`p_r=\mathop{\mathrm{tr}}(A^r)`$. From the characteristic polynomial
 of $`A`$, its logarithmic derivative computes all $`p_r`$ through
 $`r=kM`$ in $`\widetilde O(kM+n^\omega)`$ operations. In formal-series
 notation,
@@ -274,7 +274,7 @@ h_0^{(t)}=1,\qquad
 jh_j^{(t)}=\sum_{i=1}^j p_{it}h_{j-i}^{(t)}.              \tag{15}
 ```
 
-Then $`h_k^{(t)}=\operatorname{tr}(S^t)`$. This follows by triangularizing
+Then $`h_k^{(t)}=\mathop{\mathrm{tr}}(S^t)`$. This follows by triangularizing
 over an algebraic closure for the proof: the diagonal entries of the
 symmetric power are all eigenvalue monomials of degree $`k`$.
 The calculation (14)--(15) itself stays in the original field and

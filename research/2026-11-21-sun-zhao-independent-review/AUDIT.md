@@ -107,7 +107,7 @@ There is no missing factor of two or off-by-one truncation error.
 My independent checker verifies both strict rational comparisons
 
 ```math
--\frac{185605}{10^{15}}<S-E,
+-\frac{185605}{10^{15}}\lt S-E,
 \qquad
 S+E<-\frac{185604}{10^{15}}.
 ```

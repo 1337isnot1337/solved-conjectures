@@ -179,10 +179,10 @@ For every n>=1,
 
 ```math
 t_n=\begin{cases}
-  1,&c=0,\\
-  \lfloor(n+3)/2\rfloor,&c=-1,\\
-  2,&c=-m^2\text{ for an integer }m\ge2,\\
-  1,&\text{otherwise}.
+  1,&c=0,
+  \\ \lfloor(n+3)/2\rfloor,&c=-1,
+  \\ 2,&c=-m^2\text{ for an integer }m\ge2,
+  \\ 1,&\text{otherwise}.
  \end{cases}
 \tag{3.2}
 ```

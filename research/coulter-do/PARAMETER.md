@@ -43,14 +43,14 @@ Let $`r=2g`$ and abbreviate $`P_{r,n}=P_{r/2,n}`$. The original recurrence trans
 \begin{aligned}
 \mu_1P_{r,n}(\mu_1,\mu_S)
 ={}&\sum_{i=2}^n(\mu_1+\mu_i)
- P_{r,n-1}(\mu_1+\mu_i,\mu_{S\setminus\{i\}})\\
-&+\sum_{\alpha+\beta=\mu_1}\alpha\beta
+ P_{r,n-1}(\mu_1+\mu_i,\mu_{S\setminus\{i\}})
+\\ &+\sum_{\alpha+\beta=\mu_1}\alpha\beta
  \left[P_{r-2,n+1}(\alpha,\beta,\mu_S)
  +\sum_{\substack{r_1+r_2=r\\I_1\sqcup I_2=S}}
  z^{(r_1\bmod2)(r_2\bmod2)}
  P_{r_1,|I_1|+1}(\alpha,\mu_{I_1})
- P_{r_2,|I_2|+1}(\beta,\mu_{I_2})\right]\\
-&+\mu_1(\mu_1-1)z^{1-(r\bmod2)}
+ P_{r_2,|I_2|+1}(\beta,\mu_{I_2})\right]
+\\ &+\mu_1(\mu_1-1)z^{1-(r\bmod2)}
  P_{r-1,n}(\mu_1,\mu_S)
  +(t-1)(\mu_1-1)P_{r,n}(\mu_1-1,\mu_S).
 \end{aligned} \tag{3}

@@ -114,11 +114,11 @@ In this basis, multiplication by `t` is the lower bidiagonal matrix
 
 ```math
 M=\begin{pmatrix}
-a_0&0&\cdots&0&0\\
-1&a_1&\cdots&0&0\\
-0&1&\ddots&0&0\\
-\vdots&\vdots&\ddots&a_{q-1}&0\\
-0&0&\cdots&1&x
+a_0&0&\cdots&0&0
+\\ 1&a_1&\cdots&0&0
+\\ 0&1&\ddots&0&0
+\\ \vdots&\vdots&\ddots&a_{q-1}&0
+\\ 0&0&\cdots&1&x
 \end{pmatrix}.
 \tag{2.1}
 ```

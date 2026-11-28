@@ -8,15 +8,15 @@ Let $`A,B\geq0`$ be a fixed pair of complex matrices of the same finite order. P
 
 ```math
 S=A+B,\qquad D=A-B,\qquad
-C_t=A^tB^{1-t}+B^tA^{1-t}\quad(0<t<1).
+C_t=A^tB^{1-t}+B^tA^{1-t}\quad(0\lt t<1).
 ```
 
 For each Ky Fan sum $`N_k`$, either $`N_k(C_t)=N_k(S)`$ for all interior parameters, or there is a positive $`\varepsilon_k(A,B)`$ such that
 
 ```math
-N_k(C_t)<N_k(S)
+N_k(C_t)\lt N_k(S)
 \quad\text{if}\quad
-0<t<\varepsilon_k(A,B)
+0\lt t<\varepsilon_k(A,B)
 \quad\text{or}\quad
 0<1-t<\varepsilon_k(A,B).
 ```

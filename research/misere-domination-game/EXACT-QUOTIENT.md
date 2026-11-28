@@ -21,7 +21,7 @@ This is just the [exact formula](PROOF.md). In the even virtual-total test, an o
 
 For addition the first two coordinates add (the first modulo two); the third is
 ```math
-E_{X+Y}=\operatorname{clip}_{W_X+W_Y}
+E_{X+Y}=\mathop{\mathrm{clip}}_{W_X+W_Y}
  \max(E_X-W_Y,E_Y-W_X).
 ```
 For actual unaltered peaks this identity follows from the definition. A previously clipped peak never reappears: an inert even-weight peak was at most −3, and an inert odd-weight peak was at most −2 and loses at least one if an added odd weight switches the total to even. A special replaced peak at weight two has no effect after adding any positive virtual weight. When the added weight is odd, the altered term is at most −2 and thus clips; when it is even and positive, the term is at most −3 and clips. In both cases the true peak would clip as well. At added weight zero the special replacement still applies. Thus equal triples really are indistinguishable.

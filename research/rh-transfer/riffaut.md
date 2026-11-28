@@ -4,11 +4,11 @@ Research date: 20 November 2026.
 
 ## Statement and status
 
-Every singular modulus \(x=j(\tau)\) with \([\mathbb Q(x):\mathbb Q]\ge3\) satisfies
-\[
+Every singular modulus $`x=j(\tau)`$ with $`[\mathbb Q(x):\mathbb Q]\ge3`$ satisfies
+```math
 x^m+A x^n+B\ne0
-\]
-for every pair of integers \(m>n>0\) and every \(A,B\in\mathbb Q\) with \(B\ne0\).
+```
+for every pair of integers $`m>n>0`$ and every $`A,B\in\mathbb Q`$ with $`B\ne0`$.
 
 This full statement follows from the accepted Dirichlet-GRH theorem in the [Alpöge archive](https://github.com/1337isnot1337/riemann-hypothesis-solved/tree/9d5316ec73f5df89c4d95703ed106837b8a4060e), by Bilu–Luca–Pizarro-Madariaga's published Theorem 1.2. The conditional theorem and the proof ingredients below belong to those authors. This note records an application and an exact hypothesis check; it does not claim a new proof of their implication or establish priority for applying the accepted archive.
 
@@ -16,47 +16,47 @@ The target covers all degrees at least three, all imaginary-quadratic orders, an
 
 ## Complete reduction
 
-Put \(D=|\Delta_x|\). If the displayed equality holds, every conjugate of \(x\) is a root of the same rational polynomial. Thus \(\Delta_x\) is a trinomial discriminant in the terminology of Bilu–Luca–Pizarro-Madariaga.
+Put $`D=|\Delta_x|`$. If the displayed equality holds, every conjugate of $`x`$ is a root of the same rational polynomial. Thus $`\Delta_x`$ is a trinomial discriminant in the terminology of Bilu–Luca–Pizarro-Madariaga.
 
 Their unconditional Theorems 6.1 and 7.1 imply
-\[
+```math
 D>10^{11},\qquad \Delta_x\text{ is fundamental},\qquad \omega(D)\le2.
-\]
+```
 Their Corollary 5.2 says
-\[
+```math
 \chi_{\Delta_x}(p)=1\quad\Longrightarrow\quad
 p>\frac{4\sqrt D}{\log D}
 \tag{1}
-\]
-for every prime \(p\), where \(\chi_{\Delta_x}\) is the Kronecker character.
+```
+for every prime $`p`$, where $`\chi_{\Delta_x}`$ is the Kronecker character.
 
-Because the discriminant is negative and fundamental, \(\chi_{\Delta_x}\) is a primitive odd real Dirichlet character of conductor \(D\). All hypotheses of their Proposition 9.2 therefore hold. The accepted Dirichlet GRH supplies its only remaining assumption. That proposition gives a prime \(p\) with
-\[
+Because the discriminant is negative and fundamental, $`\chi_{\Delta_x}`$ is a primitive odd real Dirichlet character of conductor $`D`$. All hypotheses of their Proposition 9.2 therefore hold. The accepted Dirichlet GRH supplies its only remaining assumption. That proposition gives a prime $`p`$ with
+```math
 \chi_{\Delta_x}(p)=1,\qquad
 p\le\frac{4\sqrt D}{\log D}.
 \tag{2}
-\]
-Equations (1) and (2) contradict each other. No exceptional discriminant or finite unchecked interval survives. \(\square\)
+```
+Equations (1) and (2) contradict each other. No exceptional discriminant or finite unchecked interval survives. $`\square`$
 
-This is also their Theorem 9.1; Section 9 explicitly defines its GRH as GRH for **Dirichlet** \(L\)-functions. No Hecke-class-character GRH, Artin holomorphy, simplicity of zeros, or independence of zeros is needed.
+This is also their Theorem 9.1; Section 9 explicitly defines its GRH as GRH for **Dirichlet** $`L`$-functions. No Hecke-class-character GRH, Artin holomorphy, simplicity of zeros, or independence of zeros is needed.
 
 ## Exact interface checks
 
-The strict versus non-strict inequalities in (1)–(2) matter. Their thresholds match: Proposition 9.2 applies for \(D\ge10^{10}\), while the unconditional structural theorem already gives \(D>10^{11}\).
+The strict versus non-strict inequalities in (1)–(2) matter. Their thresholds match: Proposition 9.2 applies for $`D\ge10^{10}`$, while the unconditional structural theorem already gives $`D>10^{11}`$.
 
 The small-discriminant exclusion in the published theorem uses computer-assisted arguments whose scripts are public. They are imported as part of that existing published theorem, not rerun here or presented as this campaign's new numerical accomplishment.
 
 A merely qualitative least-split-prime estimate would not substitute for Proposition 9.2 without handling the resulting finite range. Using the exact published proposition avoids that gap.
 
-The hypothesis \(B\ne0\) is the conventional definition of the trinomials in the cited paper. Allowing \(A=0\) causes no difficulty: the theorem includes this degenerate binomial case.
+The hypothesis $`B\ne0`$ is the conventional definition of the trinomials in the cited paper. Allowing $`A=0`$ causes no difficulty: the theorem includes this degenerate binomial case.
 
 ## Original formulation and neighboring results
 
-Riffaut's 2019 paper raises the same-singular-modulus trinomial problem after Conjecture 1.4. Its broader equation \(A x^m+B y^n=C\) also has distinct-modulus and elementary coincident-modulus cases. This note does not silently identify all formulations of that broader equation with the present assertion. The exact named target is the degree-at-least-three trinomial statement in the title, abstract and Theorem 1.2 of the later published paper.
+Riffaut's 2019 paper raises the same-singular-modulus trinomial problem after Conjecture 1.4. Its broader equation $`A x^m+B y^n=C`$ also has distinct-modulus and elementary coincident-modulus cases. This note does not silently identify all formulations of that broader equation with the present assertion. The exact named target is the degree-at-least-three trinomial statement in the title, abstract and Theorem 1.2 of the later published paper.
 
 Luca–Riffaut's 2019 theorem concerns **distinct** singular moduli. It removes the two exceptional cubic pairs in Riffaut's earlier distinct-modulus result; it does not settle the same-modulus trinomial target.
 
-Fowler's later results concern sums of powers of **pairwise distinct** singular moduli, with specified coefficient/degree/discriminant bounds. Their hypotheses do not directly include \(x^m+A x^n+B=0\) for one singular modulus and two different exponents.
+Fowler's later results concern sums of powers of **pairwise distinct** singular moduli, with specified coefficient/degree/discriminant bounds. Their hypotheses do not directly include $`x^m+A x^n+B=0`$ for one singular modulus and two different exponents.
 
 ## Prior-art audit
 

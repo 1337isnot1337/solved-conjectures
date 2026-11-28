@@ -8,28 +8,28 @@ The accepted input in this campaign is RH and GRH for rational Dirichlet L-funct
 
 Fix an integer a that is neither a square nor −1, with |a|>1. The target is the complete density formula
 
-$$
+```math
 \#\{p\le X:a\bmod p\text{ generates }\mathbf F_p^\times\}
-\sim A(a)\operatorname{Li}(X),\qquad
+\sim A(a)\mathop{\mathrm{Li}}(X),\qquad
 A(a)=\sum_{n\ge1}
 \frac{\mu(n)}{[\mathbf Q(\zeta_n,a^{1/n}):\mathbf Q]}.
-$$
+```
 
 The lower bounds and almost-all-base results mentioned below do not establish this assertion for every fixed admissible a.
 
 H(δ), for some fixed 0<δ<1/2, asserts zero-freeness in Re(s)>1−δ for every finite-order Hecke L-function over every cyclotomic field containing μ12. The trivial character's pole at 1 is allowed. The companion note explains the resulting zero-free strip for each Kummer field
 
-$$
+```math
 K_q=\mathbf Q(\zeta_q,a^{1/q}),\qquad E_q=\mathbf Q(\zeta_q),
-$$
+```
 
 and the bounds, valid for every prime q above a fixed q₀(a),
 
-$$
+```math
 [K_q:\mathbf Q]=q(q-1),\qquad
 \log|D_{K_q}|\ll_a q(q-1)\log(2q).
 \tag{0.1}
-$$
+```
 
 All limits below keep a, δ, and the auxiliary positive constants fixed.
 
@@ -37,56 +37,56 @@ All limits below keep a, δ, and the auxiliary positive constants fixed.
 
 Write
 
-$$
-N_a(x,q)=\#\{x<p\le2x:p\text{ splits completely in }K_q\}.
-$$
+```math
+N_a(x,q)=\#\{x\lt p\le2x:p\text{ splits completely in }K_q\}.
+```
 
 Fix 0<η<δ and A>0. The companion note proves that H(δ) controls the index-divisor tail y<q≤x^η, while an elementary product argument controls q>√x(log x)^A. Its remaining sufficient estimate is
 
-$$
-\sum_{x^\eta<q\le\sqrt x(\log x)^A}N_a(x,q)
+```math
+\sum_{x^\eta\lt q\le\sqrt x(\log x)^A}N_a(x,q)
 =o_a(x/\log x).
 \tag{1.1}
-$$
+```
 
 Here and throughout, sums over q are over primes.
 
 For any fixed B>0 put
 
-$$
+```math
 Q_-(x)=\frac{\sqrt x}{(\log x)^B},\qquad
 Q_+(x)=\sqrt x(\log x)^A.
-$$
+```
 
 Complete splitting implies p≡1 modulo q. The Brun–Titchmarsh inequality therefore gives, uniformly throughout this interval,
 
-$$
+```math
 N_a(x,q)\le\pi(2x;q,1)\ll_{A,B}\frac{x}{q\log x}.
-$$
+```
 
 Partial summation and the elementary bound π(t)≪t/log t give
 
-$$
-\sum_{Q_-<q\le Q_+}\frac1q
+```math
+\sum_{Q_-\lt q\le Q_+}\frac1q
 \ll_{A,B}\frac{\log\log x}{\log x}.
-$$
+```
 
 For example, integrate dt/(t log t) between Q₋ and Q₊; the resulting logarithm is O((A+B)log log x/log x), and the boundary term is O(1/log x). Consequently,
 
-$$
-\sum_{Q_-<q\le Q_+}N_a(x,q)
+```math
+\sum_{Q_-\lt q\le Q_+}N_a(x,q)
 \ll_{A,B}\frac{x\log\log x}{(\log x)^2}
 =o(x/\log x).
 \tag{1.2}
-$$
+```
 
 Thus it is enough to control
 
-$$
-I(x)=\{q\text{ prime}:x^\eta<q\le Q\},\qquad
+```math
+I(x)=\{q\text{ prime}:x^\eta\lt q\le Q\},\qquad
 Q=\frac{\sqrt x}{(\log x)^B}.
 \tag{1.3}
-$$
+```
 
 B can be any fixed positive constant, including one chosen after the exponents in an average theorem are known. This freedom only changes a cutoff in the same full-density proof.
 
@@ -94,75 +94,75 @@ B can be any fixed positive constant, including one chosen after the exponents i
 
 For q>q₀(a), the Galois group is the affine group
 
-$$
+```math
 G_q=C_q\rtimes\mathbf F_q^\times.
-$$
+```
 
 It has q−1 linear characters and one nonlinear irreducible representation ρ_q of degree q−1. Write φ_q for its character. Inducing any nontrivial character of C_q gives
 
-$$
+```math
 \varphi_q(g)=
 \begin{cases}
-q-1,&g=1,\\
--1,&g\in C_q\setminus\{1\},\\
-0,&g\notin C_q.
+q-1,&g=1,
+\\ -1,&g\in C_q\setminus\{1\},
+\\ 0,&g\notin C_q.
 \end{cases}
 \tag{2.1}
-$$
+```
 
 For x sufficiently large, every p in (x,2x] is unramified in every K_q with q∈I(x). Restriction of Frobenius to E_q is trivial exactly when p≡1 modulo q. Therefore (2.1) gives the exact pointwise identity
 
-$$
+```math
 \mathbf1_{\{p\text{ splits in }K_q\}}
 =\frac1q\left(
- \mathbf1_{\{p\equiv1\pmod q\}}+\varphi_q(\operatorname{Frob}_p)
+ \mathbf1_{\{p\equiv1\pmod q\}}+\varphi_q(\mathop{\mathrm{Frob}}_p)
 \right).
 \tag{2.2}
-$$
+```
 
 Define
 
-$$
-A_q(x)=\#\{x<p\le2x:p\equiv1\pmod q\},\qquad
-T_q(x)=\sum_{x<p\le2x}\varphi_q(\operatorname{Frob}_p).
-$$
+```math
+A_q(x)=\#\{x\lt p\le2x:p\equiv1\pmod q\},\qquad
+T_q(x)=\sum_{x\lt p\le2x}\varphi_q(\mathop{\mathrm{Frob}}_p).
+```
 
 Then
 
-$$
+```math
 qN_a(x,q)=A_q(x)+T_q(x).
 \tag{2.3}
-$$
+```
 
 In particular, the nonlinear trace is already centered by the cyclotomic congruence count. The required weight is 1/q.
 
 Brun–Titchmarsh and comparison with all integers imply
 
-$$
+```math
 \sum_{q\in I(x)}\frac{A_q(x)}q
 \ll_\eta \frac{x}{\log x}\sum_{q>x^\eta}\frac1{q^2}
 \ll_\eta\frac{x^{1-\eta}}{\log x}
 =o(x/\log x).
 \tag{2.4}
-$$
+```
 
 The two inequalities
 
-$$
+```math
 N_a(x,q)\le\frac{|T_q(x)|}{q}+\frac{A_q(x)}q,\qquad
 \frac{|T_q(x)|}{q}\le N_a(x,q)+\frac{A_q(x)}q
-$$
+```
 
 now prove the equivalence
 
-$$
+```math
 \boxed{
 \sum_{q\in I(x)}N_a(x,q)=o(x/\log x)
 \quad\Longleftrightarrow\quad
 \sum_{q\in I(x)}\frac{|T_q(x)|}{q}=o(x/\log x).
 }
 \tag{2.5}
-$$
+```
 
 The signed first-moment version is also equivalent, by (2.3). Cancellation between different q is not essential: the total negative part is at most the negligible quantity in (2.4).
 
@@ -174,54 +174,54 @@ The character description can also be found in [Murty–Naik, §2](https://arxiv
 
 Since
 
-$$
+```math
 \sum_{q\in I(x)}\frac1q=O_\eta(1),
-$$
+```
 
 Cauchy–Schwarz shows that the following condition suffices for (2.5):
 
-$$
+```math
 M_2(x):=
 \sum_{q\in I(x)}\frac{|T_q(x)|^2}{q}
 =o_\eta\!\left(\frac{x^2}{(\log x)^2}\right).
 \tag{3.1}
-$$
+```
 
 This is a sufficient condition, not an asserted necessary consequence of Artin's density formula.
 
 The character is real. Expanding the square separates the contribution with the same rational prime on both sides,
 
-$$
-D(x)=\sum_{x<p\le2x}\sum_{q\in I(x)}
- \frac{\varphi_q(\operatorname{Frob}_p)^2}{q},
-$$
+```math
+D(x)=\sum_{x\lt p\le2x}\sum_{q\in I(x)}
+ \frac{\varphi_q(\mathop{\mathrm{Frob}}_p)^2}{q},
+```
 
 from the terms with two different primes. Formula (2.1) also yields the exact identity
 
-$$
+```math
 D(x)=\sum_{q\in I(x)}
 \left((q-2)N_a(x,q)+\frac{A_q(x)}q\right).
 \tag{3.2}
-$$
+```
 
 This diagonal is negligible without any hypothesis about splitting. A summand is nonzero only when q divides p−1. Since q>x^η, each p−1<2x has at most log(2x)/(η log x)=O(1/η) such prime divisors. Also φ_q²/q≤q≤Q. Hence
 
-$$
+```math
 D(x)\ll_\eta Q\pi(2x)
 \ll_\eta \frac{x^{3/2}}{(\log x)^{B+1}}
 =o\!\left(\frac{x^2}{(\log x)^2}\right).
 \tag{3.3}
-$$
+```
 
 There is therefore no unavoidable diagonal mass preventing (3.1). The missing assertion is control of
 
-$$
-\sum_{\substack{x<p,r\le2x\\p\ne r}}
+```math
+\sum_{\substack{x\lt p,r\le2x\\p\ne r}}
 \sum_{q\in I(x)}
-\frac{\varphi_q(\operatorname{Frob}_p)
-      \varphi_q(\operatorname{Frob}_r)}q.
+\frac{\varphi_q(\mathop{\mathrm{Frob}}_p)
+      \varphi_q(\mathop{\mathrm{Frob}}_r)}q.
 \tag{3.4}
-$$
+```
 
 These terms can have either sign. Their required total is little-o at the scale in (3.1); treating them as individually positive would be unjustified.
 
@@ -229,60 +229,60 @@ These terms can have either sign. Their required total is little-o at the scale 
 
 [Murty–Naik, Theorem 5 and its proof in §4.5](https://arxiv.org/html/2608.21573v1#S4.SS5) give the unconditional estimate
 
-$$
+```math
 \sum_{q\le Q}\sum_{c\in\mathbf F_q^\times}
 \left|\sum_{\substack{p\le X\\p\equiv1\pmod q}}
  a_p e(i_p(a)c/q)\right|^2
 \ll_\epsilon \frac{X}{\log\log X}
  \sum_{p\le X}|a_p|^2,\qquad Q\le X^{1-\epsilon}.
 \tag{4.1}
-$$
+```
 
 Their paper states results for a=2 and discusses other admissible bases in Remark 1.1. The upper-bound proof used here depends only on |e(t)|=1 and Brun–Titchmarsh, so it applies to every fixed a.
 
 For the interval I(x), one can improve the final step of that proof. Set
 
-$$
-U_{q,c}=\sum_{\substack{x<p\le2x\\p\equiv1\pmod q}}
+```math
+U_{q,c}=\sum_{\substack{x\lt p\le2x\\p\equiv1\pmod q}}
  a_p e(i_p(a)c/q).
-$$
+```
 
 For each q,c, Cauchy–Schwarz gives
 
-$$
+```math
 |U_{q,c}|^2
-\le A_q(x)\sum_{\substack{x<p\le2x\\p\equiv1\pmod q}}|a_p|^2.
-$$
+\le A_q(x)\sum_{\substack{x\lt p\le2x\\p\equiv1\pmod q}}|a_p|^2.
+```
 
 Sum over c, use A_q(x)≪x/(q log x), then exchange p and q. Since each p−1 has O(1/η) divisors q∈I(x),
 
-$$
+```math
 \begin{aligned}
 \sum_{q\in I(x)}\sum_{c\ne0}|U_{q,c}|^2
 &\ll \frac{x}{\log x}
- \sum_{x<p\le2x}|a_p|^2
- \#\{q\in I(x):q\mid p-1\}\\
-&\ll_\eta\frac{x}{\log x}\sum_{x<p\le2x}|a_p|^2.
+ \sum_{x\lt p\le2x}|a_p|^2
+ \#\{q\in I(x):q\mid p-1\}
+\\ &\ll_\eta\frac{x}{\log x}\sum_{x\lt p\le2x}|a_p|^2.
 \end{aligned}
 \tag{4.2}
-$$
+```
 
 The index is i_p(a)=(p−1)/ord_p(a). By additive-character orthogonality and the splitting criterion,
 
-$$
-\varphi_q(\operatorname{Frob}_p)
+```math
+\varphi_q(\mathop{\mathrm{Frob}}_p)
 =\mathbf1_{\{p\equiv1\pmod q\}}
  \sum_{c\in\mathbf F_q^\times}e(i_p(a)c/q).
-$$
+```
 
 Take a_p=1 and apply Cauchy–Schwarz in c:
 
-$$
+```math
 M_2(x)
 \le\sum_{q\in I(x)}\sum_{c\ne0}|U_{q,c}|^2
 \ll_\eta\frac{x^2}{(\log x)^2}.
 \tag{4.3}
-$$
+```
 
 This is the correct **big-O** scale. It does not imply the **little-o** statement (3.1). Applying (4.1) without using the lower cutoff gives only the weaker bound O(x²/(log x log log x)); (4.3) is the sharper relevant comparison.
 
@@ -292,105 +292,105 @@ The same paper's stronger nonabelian large-sieve inequality is a conjectural inp
 
 The single nonlinear L-function is
 
-$$
+```math
 L_q(s)=L(s,\rho_q).
-$$
+```
 
 It is entire: ρ_q is induced from a nontrivial character of C_q, and its L-function is the corresponding nonprincipal Hecke L-function over E_q. Regular-representation factorization gives
 
-$$
+```math
 \zeta_{K_q}(s)=\zeta_{E_q}(s)L_q(s)^{q-1}.
 \tag{5.1}
-$$
+```
 
 This does not invoke the general Artin holomorphy conjecture. The factorization is also recorded in [Goldfeld, §3, equation (14)](https://www.math.columbia.edu/~goldfeld/LargeSieve.pdf).
 
 The conductor-discriminant formula gives the exact relation
 
-$$
+```math
 \log\mathfrak f(\rho_q)
 =\frac{\log|D_{K_q}|-\log|D_{E_q}|}{q-1}
 \ll_a q\log(2q).
 \tag{5.2}
-$$
+```
 
 Thus L_q has degree q−1 and logarithmic conductor O_a(q log q). Under H(δ), all its nontrivial zeros lie in δ≤Re(s)≤1−δ. Reflection follows from its functional equation and the self-duality visible in (2.1).
 
 Fix a nonnegative w∈C_c^∞((0,∞)), independent of q and x, with w≥1 on [1,2]. Let
 
-$$
+```math
 W(s)=\int_0^\infty w(t)t^{s-1}\,dt.
-$$
+```
 
 W is entire and decreases faster than every inverse power of |Im(s)| in every fixed vertical strip. Define
 
-$$
+```math
 \Theta_{K,w}(x)=
 \sum_{\mathfrak p}\sum_{j\ge1}
  \log N\mathfrak p\,w((N\mathfrak p)^j/x).
-$$
+```
 
 The uniform smooth explicit formula in the October 4 manuscript,
 [07-splitting.tex, equation spl:smooth-explicit-formula](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/07-splitting.tex), is
 
-$$
+```math
 \Theta_{K,w}(x)
 =xW(1)-\sum_{\rho_K}x^{\rho_K}W(\rho_K)
  -(r_1+r_2-1)W(0)
  +O_w\!\left(x^{-1/2}
    (\log|D_K|+[K:\mathbf Q])\right).
 \tag{5.3}
-$$
+```
 
 The zeros are nontrivial and counted with multiplicity. The constant is uniform in K. Shifting the Mellin contour to Re(s)=−1/2 crosses, besides the nontrivial zeros and pole at 1, only the zero at 0 of order r₁+r₂−1. On that line the functional equation bounds ζ′_K/ζ_K by O(log|D_K|+[K:Q]log(|Im(s)|+3)); this also explains the uniform error.
 
 Divide (5.3) for K_q by q(q−1). Equation (5.1) shows that the coefficient of each zero of L_q is exactly
 
-$$
+```math
 \frac{q-1}{q(q-1)}=\frac1q.
-$$
+```
 
 Define the nonlinear zero sum
 
-$$
+```math
 Z_{a,w}(x;I)=
 \sum_{q\in I(x)}\frac1q
  \sum_{\rho\text{ of }L_q}x^\rho W(\rho).
 \tag{5.4}
-$$
+```
 
 Under Dirichlet GRH, the cyclotomic zero contribution is bounded by
 
-$$
+```math
 \begin{aligned}
 \sum_{q\in I(x)}
 \frac1{q(q-1)}
  \sum_{\rho\text{ of }\zeta_{E_q}}|x^\rho W(\rho)|
 &\ll_w\sqrt x
- \sum_{q\le Q}\frac{\log|D_{E_q}|+q-1}{q(q-1)}\\
-&\ll_w\sqrt x\sum_{q\le Q}\frac{\log(2q)}q
+ \sum_{q\le Q}\frac{\log|D_{E_q}|+q-1}{q(q-1)}
+\\ &\ll_w\sqrt x\sum_{q\le Q}\frac{\log(2q)}q
 \ll_w\sqrt x\log(2Q)=o(x).
 \end{aligned}
 \tag{5.5}
-$$
+```
 
 This uses the uniform zero count and |D_Eq|=q^(q−2). The main terms sum to O_w(x^(1−η)). The residues at zero sum to O_w(π(Q)); the remaining errors sum to O_(a,w)(x^(−1/2)π(Q)log(2Q)). All are o(x). Thus
 
-$$
+```math
 \boxed{
 \sum_{q\in I(x)}
 \frac{\Theta_{K_q,w}(x)}{q(q-1)}
 =-Z_{a,w}(x;I)+o_{a,w}(x).
 }
 \tag{5.6}
-$$
+```
 
 The left side is nonnegative and at least log x times Σ_(q∈I)N_a(x,q). Therefore
 
-$$
+```math
 Z_{a,w}(x;I)=o(x)
 \tag{5.7}
-$$
+```
 
 is sufficient for the missing middle average. Even the one-sided bound −Re Z_(a,w)(x;I)≤o(x) suffices. The zero sum is real for real w, but the real-part formulation avoids relying on a choice of zero ordering. Absolute convergence follows from the smooth weight.
 
@@ -402,52 +402,52 @@ Here is an explicit additional hypothesis that implies (5.7). It is a sufficient
 
 For σ≥1/2 and T≥2, define
 
-$$
+```math
 \mathcal N_a(\sigma,T;Q)
-=\sum_{\substack{q_0(a)<q\le Q\\q\text{ prime}}}\frac1q
+=\sum_{\substack{q_0(a)\lt q\le Q\\q\text{ prime}}}\frac1q
  \#\{\rho\text{ of }L_q:
-       \operatorname{Re}\rho\ge\sigma,\ 
-       |\operatorname{Im}\rho|\le T\}.
-$$
+       \mathop{\mathrm{Re}}\rho\ge\sigma,
+       \ |\mathop{\mathrm{Im}}\rho|\le T\}.
+```
 
 Suppose there are fixed C,D≥0 such that
 
-$$
+```math
 \boxed{
 \mathcal N_a(\sigma,T;Q)
 \ll_{a,\delta}
 Q^{2(1-\sigma)}(\log Q)^D(T+3)^C
 }
 \tag{6.1}
-$$
+```
 
 uniformly for Q,T≥2 and 1/2≤σ≤1−δ. The constant and exponents must not grow with q,Q,T or σ.
 
 Choose a fixed decay order exceeding C+2 for W. Dyadic summation in height gives
 
-$$
-\sum_{q_0(a)<q\le Q}\frac1q
- \sum_{\substack{\rho\text{ of }L_q\\\operatorname{Re}\rho\ge\sigma}}
+```math
+\sum_{q_0(a)\lt q\le Q}\frac1q
+ \sum_{\substack{\rho\text{ of }L_q\\\mathop{\mathrm{Re}}\rho\ge\sigma}}
  |W(\rho)|
 \ll_{a,\delta,w}
 Q^{2(1-\sigma)}(\log Q)^D.
 \tag{6.2}
-$$
+```
 
 The same bound at σ=1/2 controls the whole weighted zero mass, up to a constant, by functional-equation reflection and a decay majorant uniform on δ≤Re(s)≤1−δ.
 
 For β≥1/2, use the identity
 
-$$
+```math
 x^\beta=\sqrt x+\log x\int_{1/2}^{\beta}x^\sigma\,d\sigma.
-$$
+```
 
 For β<1/2, use x^β≤√x and reflection. Equations (6.1)–(6.2) yield
 
-$$
+```math
 \begin{aligned}
-\sum_{q_0(a)<q\le Q}\frac1q
- \sum_{\rho\text{ of }L_q}x^{\operatorname{Re}\rho}|W(\rho)|
+\sum_{q_0(a)\lt q\le Q}\frac1q
+ \sum_{\rho\text{ of }L_q}x^{\mathop{\mathrm{Re}}\rho}|W(\rho)|
 \ll (\log Q)^D
 \left[
  \sqrt x\,Q+
@@ -456,38 +456,38 @@ $$
 \right].
 \end{aligned}
 \tag{6.3}
-$$
+```
 
 Set L=log x and Q=√x/L^B. Then
 
-$$
+```math
 x^\sigma Q^{2(1-\sigma)}
 =xL^{-2B(1-\sigma)}
-$$
+```
 
 and direct integration gives
 
-$$
+```math
 \int_{1/2}^{1-\delta}L^{-2B(1-\sigma)}\,d\sigma
 \le\frac{L^{-2B\delta}}{2B\log L}.
-$$
+```
 
 Consequently, the absolute zero sum is at most
 
-$$
+```math
 O_{a,\delta,w}\!\left(
 x\left[
  L^{D-B}+
  \frac{L^{D+1-2B\delta}}{\log L}
 \right]\right).
 \tag{6.4}
-$$
+```
 
 Choose
 
-$$
+```math
 B>\frac{D+1}{2\delta}.
-$$
+```
 
 Since δ<1/2, this also gives B>D. Both brackets tend to zero. This proves (5.7), hence the missing middle average by (5.6), and hence the complete Artin density formula by the companion note.
 

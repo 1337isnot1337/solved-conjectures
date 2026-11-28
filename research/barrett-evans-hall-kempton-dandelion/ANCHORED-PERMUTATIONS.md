@@ -11,9 +11,9 @@ The edges from $a,b$ to $c,d$ form a perfect matching: each of the first pair me
 ## Minimize over two vectors
 
 Let $f,g$ be unit mean-zero Fiedler vectors at a minimizing graph, respectively for $G,G^c$. For a pair $uv$ write
-\[
+```math
 \Delta_{uv}=(f_u-f_v)^2-(g_u-g_v)^2.
-\]
+```
 The sum of Rayleigh energies is reduced by choosing a free edge exactly when $\Delta_{uv}<0$. Since the minimizing graph can be compared to every toggle and the Rayleigh sums are upper bounds on the actual connectivities, the minimizing graph must obey this rule at every strict sign. In a tie, toggling gives an unchanged sum of the two test energies, so both vectors remain Fiedler. If a difference were nonzero, subtracting each old and new eigenvector equation forces the corresponding vector to be proportional to $e_u-e_v$, because the eigenvalue changes by the tested amount $\pm(f_u-f_v)^2$ or $\mp(g_u-g_v)^2$. The equal squared differences would force both vectors proportional to the same vector. They are orthogonal, since they have different eigenvalues in the common Laplacian basis on the mean-zero space: those are the smallest and largest nonzero eigenvalues of $G$, and coincidence would force all nonzero eigenvalues equal, impossible in a simple diameter-three graph. Thus a tie is exactly simultaneous equality of both coordinates.
 
 Write $p=f+g$ and $q=f-g$. Between different joint coordinate classes on the outside, both $p$ and $q$ are distinct and $\Delta_{uv}=(p_u-p_v)(q_u-q_v)$. Hence edges are precisely inversions between the two class orders. Edges within a class can all be deleted at zero Rayleigh cost. At the same time one can give all its vertices the same minimizing attachment to the anchors, because the values of their two test coordinates are constant in the class and the choices are independent. This again attains the same minimum. Placing the members of each class consecutively in both orders in the same internal order realizes this independently expanded class structure as a permutation graph on the outside vertices. Labeling one order in advance leaves at most $9^m m!$ candidates for $m=n-4$ before symmetry and pruning.
@@ -25,10 +25,10 @@ At the minimizing test vectors, each of the two attachment choices minimizes its
 ## Explicit variational form
 
 Use the fixed energies of the anchor path and its complement. For an outside vertex start provisionally with complement test energies to all four anchors, then add
-\[
+```math
 \min(0,\Delta_{ua},\Delta_{ub})+
 \min(\Delta_{uc},\Delta_{ud},\Delta_{uc}+\Delta_{ud}).
-\]
+```
 For every outside pair add $\min((f_u-f_v)^2,(g_u-g_v)^2)$. Minimizing this expression over the two mean-zero unit spheres gives the exact minimum: the finite graph minimization and the vector minimizations commute. By contrast, discarding all outside pairs in both comparisons can lose a fixed amount; it cannot alone certify the remaining orders.
 
 The four-anchor inversion and equality reduction was independently identified in parallel research review; the additional attachment-tie constraint is proved above. The [large-order theorem](LARGE-ORDER.md) and [all-orders missing-leaf theorem](MISSING-LEAF.md) cover distinguished regimes, while the general finite certificate is still open. [Original Conjecture 2](https://arxiv.org/pdf/2201.04225#page=15) · [Issue #962](https://github.com/1337isnot1337/solved-conjectures/issues/962).

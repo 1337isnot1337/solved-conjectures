@@ -55,7 +55,7 @@ If $`h=L_1\cdots L_m`$ is a product of linear forms on
 $`\mathbb C^3`$, then $`h(W_N)`$ is a product of $`m`$
 homogeneous quadratic polynomials in $`2N`$ underlying variables.
 The Gaussian comparison value is
-$`\|h\|_{\mathcal F}^2=\operatorname{per}(\langle L_i,L_j\rangle)`$.
+$`\|h\|_{\mathcal F}^2=\mathop{\mathrm{per}}(\langle L_i,L_j\rangle)`$.
 This is the product test relevant to the possible generalization
 discussed in the
 [earlier Gaussian route audit](../../inequalities/marcus_gaussian_routes.md).
@@ -116,10 +116,10 @@ where
 &=\frac14\sum_{i,j,k,l}
   \kappa_{ij;kl}
   \left\langle\partial_k\partial_lh,\,
-              \partial_i\partial_jh\right\rangle_{\mathcal F}\\
-&=\sum_{i,j}\|\partial_i\partial_jh\|_{\mathcal F}^2
-  -\frac12\left\|\sum_i\partial_i^2h\right\|_{\mathcal F}^2.           \tag{6}
-\end{aligned}
+              \partial_i\partial_jh\right\rangle_{\mathcal F}
+\\ &=\sum_{i,j}\|\partial_i\partial_jh\|_{\mathcal F}^2
+  -\frac12\left\|\sum_i\partial_i^2h\right\|_{\mathcal F}^2.
+\end{aligned} \tag{6}
 ~~~
 
 The factor $`1/4`$ is $`1/(2!2!)`$.
@@ -240,12 +240,12 @@ three the lower bound is $`\|h\|_{\mathcal F}^2`$.
 For degree two, impose the product condition
 $`h=L_1L_2`$. Its constant Hessian $`H`$ has rank at most two.
 For any complex matrix,
-$`|\operatorname{tr}H|\le\sum_j s_j(H)
- \le\sqrt{\operatorname{rank}H}\,\|H\|_F`$,
+$`|\mathop{\mathrm{tr}}H|\le\sum_j s_j(H)
+ \le\sqrt{\mathop{\mathrm{rank}}H}\,\|H\|_F`$,
 by a singular-value decomposition and Cauchy–Schwarz. Hence
 
 ~~~math
-\mathcal C(L_1L_2)=\|H\|_F^2-\frac12|\operatorname{tr}H|^2\ge0.        \tag{13}
+\mathcal C(L_1L_2)=\|H\|_F^2-\frac12|\mathop{\mathrm{tr}}H|^2\ge0.        \tag{13}
 ~~~
 
 At degree one the Hessian is zero. Therefore every homogeneous product
@@ -253,7 +253,7 @@ test has a nonnegative leading coefficient in (5).
 
 The product condition at degree two cannot be dropped. For
 $`h=\rho`$, the norms are
-$`\|h\|_{\mathcal F}^2=6`$, $`\|\operatorname{Hess}h\|_F^2=12`$,
+$`\|h\|_{\mathcal F}^2=6`$, $`\|\mathop{\mathrm{Hess}}h\|_F^2=12`$,
 and $`\|\Delta h\|_{\mathcal F}^2=36`$, so
 $`\mathcal C(h)=-6`$. In fact
 

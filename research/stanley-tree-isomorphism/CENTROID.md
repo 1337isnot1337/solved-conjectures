@@ -107,14 +107,14 @@ branches, the largest index $b$ of a variable appearing in
 $\tau_D F$ is the largest remaining branch size. It appears
 because each branch of that size supplies $x_b$ with coefficient
 one. Its coefficient as the single-variable monomial $x_b$ is
-$m_b$, the number of remaining size-$b$ branches. Factors from
+$m_b$, the number of remaining size-$`b`$ branches. Factors from
 smaller branches cannot contain $x_b$. Thus both parameters are
 detected in the truncation.
 
 Write
 $F=P_{\mathrm{small}}\prod_{j=1}^{m_b}(x_b+R_j)$,
 where $P_{\mathrm{small}}$ contains the factors from smaller
-branches. We recover the size-$b$ factors in either of two ways.
+branches. We recover the size-$`b`$ factors in either of two ways.
 
 ### Extraction by the largest power
 
@@ -190,12 +190,12 @@ reduce modulo any one $R_B$. All terms except the term of
 shape $B$ disappear. The product of the other $R$ factors
 is not divisible by $R_B$, so the coefficient difference for
 that shape is zero. For $b=1$ there is only one coefficient.
-This recovers all size-$b$ factors, including repeated shapes.
+This recovers all size-$`b`$ factors, including repeated shapes.
 
 ## Completion and scope
 
 At each size at least one of the two recovery inequalities
-holds by hypothesis. Once the size-$b$ product is recovered,
+holds by hypothesis. Once the size-$`b`$ product is recovered,
 divide it out through weight $D$ using its constant coefficient
 one. This permits the same procedure at the next size. Each
 recovered factor determines its rooted branch, and joining

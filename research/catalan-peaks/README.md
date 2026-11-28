@@ -4,7 +4,7 @@ Status: unresolved research checkpoint, 20 November 2026. The target is the whol
 
 ## Statement and conventions
 
-A Catalan word of length $n$ is a word $w_1\cdots w_n$ with $w_1=0$ and $0\leq w_{j+1}\leq w_j+1$. A strict local peak is a position $j$ with $w_{j-1}<w_j>w_{j+1}$. Define $C_n(t)=\sum_w t^{\operatorname{pk}(w)}$, with $C_0(t)=1$.
+A Catalan word of length $n$ is a word $w_1\cdots w_n$ with $w_1=0$ and $0\leq w_{j+1}\leq w_j+1$. A strict local peak is a position $j$ with $w_{j-1}<w_j>w_{j+1}$. Define $`C_n(t)=\sum_w t^{\mathop{\mathrm{pk}}(w)}`$, with $C_0(t)=1$.
 
 Alexandersson conjectures that all these polynomials have only real zeros and that consecutive polynomials interlace. The first nonconstant rows are $C_3=4+t$, $C_4=9+5t$, and $C_5=22+19t+t^2$.
 
@@ -42,10 +42,10 @@ Here is a direct coefficient proof. For $r\geq1$,
 \begin{aligned}
 [u^i]N_r(1+u)
 &=\frac1r\sum_{j=i}^{r-1}
-  \binom rj\binom r{j+1}\binom ji\\
-&=\frac1r\binom ri
-  \sum_{\ell\geq0}\binom{r-i}{\ell}\binom r{i+\ell+1}\\
-&=\frac1r\binom ri\binom{2r-i}{r-i-1}.
+  \binom rj\binom r{j+1}\binom ji
+\\ &=\frac1r\binom ri
+  \sum_{\ell\geq0}\binom{r-i}{\ell}\binom r{i+\ell+1}
+\\ &=\frac1r\binom ri\binom{2r-i}{r-i-1}.
 \end{aligned}
 ```
 
@@ -88,7 +88,7 @@ One tempting route starts with the real-rooted Fibonacci-type row having coeffic
 \lambda_j=\frac1{2j+1}\binom{m+3j+2}{2j}.
 ```
 
-A general real-rootedness-preserving diagonal operator on degree-$m$ polynomials would need a real-rooted finite Pólya–Schur symbol $\sum_j\binom mj\lambda_j z^j$. Already for $m=3$ this symbol is
+A general real-rootedness-preserving diagonal operator on degree-$`m`$ polynomials would need a real-rooted finite Pólya–Schur symbol $\sum_j\binom mj\lambda_j z^j$. Already for $m=3$ this symbol is
 
 ```math
 1+28z+198z^2+429z^3,
@@ -113,8 +113,8 @@ the degree-three binomial symbols are
 \begin{aligned}
 \sum_{j=0}^3\binom3j\mu_j^{(3,1)}z^j
  &=\frac1{40}+\frac3{32}z+\frac{45}{512}z^2
-   +\frac{429}{16384}z^3,\\
-\sum_{j=0}^3\binom3j\mu_j^{(3,2)}z^j
+   +\frac{429}{16384}z^3,
+\\ \sum_{j=0}^3\binom3j\mu_j^{(3,2)}z^j
  &=\frac1{40}+\frac5{64}z+\frac{297}{4096}z^2
    +\frac{715}{32768}z^3.
 \end{aligned}

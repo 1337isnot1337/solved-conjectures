@@ -25,12 +25,12 @@ The [MINC statement](https://yair-lavi.com/mincs-list/conjecture-30/index.html)
 asks for
 
 ```math
-\operatorname{per}(A\circ B)\leq\operatorname{per}A\operatorname{per}B
+\mathop{\mathrm{per}}(A\circ B)\leq\mathop{\mathrm{per}}A\mathop{\mathrm{per}}B
 \qquad(A,B\succeq0).
 ```
 
 Its self-conjugate form is equivalent. After diagonal normalization, write
-$`P=\operatorname{per}C`$, $`Q=\operatorname{per}|C|^2`$, and $`R=Q/P^2`$,
+$`P=\mathop{\mathrm{per}}C`$, $`Q=\mathop{\mathrm{per}}|C|^2`$, and $`R=Q/P^2`$,
 where $`C`$ is a correlation matrix.
 
 The MINC page records all orders at rank at most three and all ranks through
@@ -48,7 +48,7 @@ a failed search is not evidence of novelty. Fuzhen Zhang's
 DOI 10.1016/j.laa.2011.09.034, is relevant prior work on maximizing partners.
 His [2016 survey, Section 5](https://scholars.nova.edu/ws/portalfiles/portal/42826589/An%20Update%20on%20a%20Few%20Permanent%20Conjectures.pdf)
 specifies the objective as the unnormalized function
-$`f_A(X)=\operatorname{per}(A\circ X)`$, for a fixed correlation matrix $`A`$.
+$`f_A(X)=\mathop{\mathrm{per}}(A\circ X)`$, for a fixed correlation matrix $`A`$.
 That differs from $`R(X)`$. The singular-maximizer assertion cannot therefore
 be imported as a rank reduction for this ratio. The complete 2013 paper was
 not accessible through the retrieved full-text link; this distinction comes
@@ -60,14 +60,14 @@ Let $`C`$ be a complex correlation matrix of order $`n`$, of rank
 $`r\geq5`$. If $`n\geq r^2`$, then
 
 ```math
-\operatorname{per}|C|^2 < (\operatorname{per}C)^2.
+\mathop{\mathrm{per}}|C|^2 < (\mathop{\mathrm{per}}C)^2.
 \tag{1}
 ```
 
 For $`r\geq64`$, the argument gives the explicit stronger estimate
 
 ```math
-\frac{\operatorname{per}|C|^2}{(\operatorname{per}C)^2}
+\frac{\mathop{\mathrm{per}}|C|^2}{(\mathop{\mathrm{per}}C)^2}
  < \exp(-19n/100).
 \tag{2}
 ```
@@ -167,7 +167,7 @@ Set $`b_k=(k!)^{1/k}`$, and interpolate $`b`$ affinely between consecutive
 integers. The Bregman bound and row-polytope interpolation give
 
 ```math
-\operatorname{per}N\leq\prod_i b(s_i)
+\mathop{\mathrm{per}}N\leq\prod_i b(s_i)
 ```
 
 for $`N\in[0,1]^{n\times n}`$ with row sums $`s_i\geq1`$. To see the extension
@@ -375,17 +375,17 @@ using an ordinary quasiconvexity theorem.
 
 ## 7. Exact obstruction to direct Wishart projection
 
-Let $`F(A)=\operatorname{per}(A)^2-\operatorname{per}|A|^2`$, and form
+Let $`F(A)=\mathop{\mathrm{per}}(A)^2-\mathop{\mathrm{per}}|A|^2`$, and form
 $`B=XGG^*X^*`$, where $`XX^*=A`$ and $`G`$ has $`s`$ independent standard
 complex Gaussian columns. At order two, direct Wick expansion gives
 
 ```math
 \begin{aligned}
-\mathbb E\operatorname{per}(B)^2
- &=(s)_4\operatorname{per}(A)^2-2s(s+1)^2\det(A)^2,\\
-\mathbb E\operatorname{per}|B|^2
- &=(s)_4\operatorname{per}|A|^2-4s(s+1)^2\det(A)^2,\\
-\mathbb EF(B)
+\mathbb E\mathop{\mathrm{per}}(B)^2
+ &=(s)_4\mathop{\mathrm{per}}(A)^2-2s(s+1)^2\det(A)^2,
+\\ \mathbb E\mathop{\mathrm{per}}|B|^2
+ &=(s)_4\mathop{\mathrm{per}}|A|^2-4s(s+1)^2\det(A)^2,
+\\ \mathbb EF(B)
  &=(s)_4F(A)+2s(s+1)^2\det(A)^2.
 \end{aligned}
 \tag{14}

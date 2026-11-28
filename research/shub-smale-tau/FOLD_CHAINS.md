@@ -319,8 +319,8 @@ Combining the estimates, the number of integer points is at most
 
 ```math
 \begin{split}
-&(D^2+M)(4N^{2/3}+1)+M+2D(D-1)+4D\\
-&\qquad\le16D^2N^{2/3}+9D^2+2D
+&(D^2+M)(4N^{2/3}+1)+M+2D(D-1)+4D
+\\ &\qquad\le16D^2N^{2/3}+9D^2+2D
 \le26D^2N^{2/3}
 \le32D^2N^{2/3},
 \end{split}
@@ -389,8 +389,8 @@ Then `k<=d`, and (4.2)–(4.3) imply
 ```math
 \begin{split}
 m_k
-&\ge\frac N2-32N^{2/3}\sum_{j=2}^k4^{j-1}\\
-&>\frac N2-\frac{32}{3}4^kN^{2/3}
+&\ge\frac N2-32N^{2/3}\sum_{j=2}^k4^{j-1}
+\\ &>\frac N2-\frac{32}{3}4^kN^{2/3}
 \ge\frac N2-\frac N6=\frac N3.
 \end{split}
 \tag{4.4}

@@ -33,8 +33,8 @@ There is also an obstruction. For any decreasing-convex-order family through $`(
 ```math
 a(\rho)=
 \begin{cases}
-A,&1/2\le\rho\le1/A,\\
-1/\rho,&1/A\le\rho<1.
+A,&1/2\le\rho\le1/A,
+\\ 1/\rho,&1/A\le\rho<1.
 \end{cases}
 \tag{4}
 ```
@@ -150,7 +150,7 @@ This is an all-parameter proof, without a finite grid or a numerical comparison.
 
 At a point strictly below the right boundary, $`a\rho<1`$, the numerator stable factor in (5) is nondegenerate. Its positive moments are finite precisely below order $`a`$ after the power $`\rho`$ is taken. The denominator factor has every negative moment. Independence and positivity therefore give
 ```math
-\mathbb E[X^+(a,\rho)^p]<\infty\quad(0<p<a),
+\mathbb E[X^+(a,\rho)^p]<\infty\quad(0\lt p\lt a),
 \qquad
 \mathbb E[X^+(a,\rho)^p]=\infty\quad(p\ge a).
 \tag{12}

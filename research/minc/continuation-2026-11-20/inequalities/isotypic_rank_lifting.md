@@ -16,12 +16,12 @@ Gaussian entries, and put
 B=W^*GG^*W.
 ```
 
-Then $`B\succeq0`$ and $`\operatorname{rank}B\leq s`$. For
+Then $`B\succeq0`$ and $`\mathop{\mathrm{rank}}B\leq s`$. For
 $`a_\sigma(M)=\prod_i m_{i,\sigma(i)}`$, complex Wick contraction gives
 
 ```math
 \mathbb E a_\sigma(B)
- =\sum_{\tau\in S_n}s^{\#\operatorname{cycles}(\tau)}
+ =\sum_{\tau\in S_n}s^{\#\mathop{\mathrm{cycles}}(\tau)}
                          a_{\sigma\tau}(A).
 \tag{1}
 ```
@@ -29,7 +29,7 @@ $`a_\sigma(M)=\prod_i m_{i,\sigma(i)}`$, complex Wick contraction gives
 To see the coefficient, expand each entry of $`GG^*`$ and pair the
 unconjugated Gaussian from factor $`i`$ with the conjugated Gaussian from
 factor $`\tau(i)`$. The column labels must be constant around each cycle of
-$`\tau`$, giving $`s^{\#\operatorname{cycles}(\tau)}`$. The row labels
+$`\tau`$, giving $`s^{\#\mathop{\mathrm{cycles}}(\tau)}`$. The row labels
 then contract the Gram entries in the product $`a_{\sigma\tau}(A)`$.
 
 For the Fourier convention
@@ -42,7 +42,7 @@ c_\lambda(s)=\prod_{(i,j)\in\lambda}(s+j-i).}
 ```
 
 Indeed, the central group-algebra element
-$`\sum_\tau s^{\#\operatorname{cycles}(\tau)}\tau^{-1}`$ acts on
+$`\sum_\tau s^{\#\mathop{\mathrm{cycles}}(\tau)}\tau^{-1}`$ acts on
 $`\rho_\lambda`$ by the scalar in (2). This is the usual
 Jucys--Murphy content product; alternatively it follows from the character
 expansion of the permutation action on $`(\mathbb C^s)^{\otimes n}`$.
@@ -74,7 +74,7 @@ by matrices of rank at most $`\ell(\lambda)`$.
 The restriction to one isotypic block matters. If an inequality compares
 different partitions, their factors $`c_\lambda(s)`$ are generally different.
 In particular this argument does not lift a permanent-on-top inequality or
-the rank-two inequality $`\operatorname{tr}C_{(3,3)}\leq2\operatorname{per}A-9h(A)`$
+the rank-two inequality $`\mathop{\mathrm{tr}}C_{(3,3)}\leq2\mathop{\mathrm{per}}A-9h(A)`$
 with its original coefficients.
 
 ## 3. The exceptional $`S_5`$ projection bound in every rank
@@ -86,7 +86,7 @@ component. The exact Segre-cubic argument in
 
 ```math
 \frac56\langle v_H,C_{(3,3)}(A)v_H\rangle
- \leq\frac12\operatorname{tr}C_{(3,3)}(A).
+ \leq\frac12\mathop{\mathrm{tr}}C_{(3,3)}(A).
 \tag{3}
 ```
 
@@ -98,12 +98,12 @@ c_{(3,3)}(2)=(2\cdot3\cdot4)(1\cdot2\cdot3)=144.
 
 Therefore (3) holds for **every PSD matrix of order six**, without a rank
 restriction. Since
-$`\operatorname{Ind}_H^{S_6}(\operatorname{sgn}|_H)=[1^6]+[3,3]`$, Fourier
+$`\mathop{\mathrm{Ind}}_H^{S_6}(\mathop{\mathrm{sgn}}|_H)=[1^6]+[3,3]`$, Fourier
 inversion now gives the all-rank bound
 
 ```math
-\boxed{f_{H,\operatorname{sgn}}(A)
- \leq\frac16\det A+\frac12\operatorname{tr}C_{(3,3)}(A).}
+\boxed{f_{H,\mathop{\mathrm{sgn}}}(A)
+ \leq\frac16\det A+\frac12\mathop{\mathrm{tr}}C_{(3,3)}(A).}
 \tag{4}
 ```
 

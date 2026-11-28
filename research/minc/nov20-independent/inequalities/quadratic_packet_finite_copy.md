@@ -82,7 +82,7 @@ Covariance normalization in (1) gives
 
 ~~~math
 \mathbb E\prod_{i=1}^m|F_i|^2
-\ge \operatorname{per}G
+\ge \mathop{\mathrm{per}}G
 =\|L_1\cdots L_m\|_{\mathcal F}^2.                         \tag{5}
 ~~~
 
@@ -103,14 +103,14 @@ For independent formal vectors $`t,s\in\mathbb C^3`$, define
 ~~~math
 T(t)=
 \begin{pmatrix}
-t_1+it_2&t_3\\
-t_3&-t_1+it_2
+t_1+it_2&t_3
+\\ t_3&-t_1+it_2
 \end{pmatrix},
 \qquad
 S(s)=
 \begin{pmatrix}
-s_1-is_2&s_3\\
-s_3&-s_1-is_2
+s_1-is_2&s_3
+\\ s_3&-s_1-is_2
 \end{pmatrix}.
 ~~~
 
@@ -140,7 +140,7 @@ RR^{\mathsf T}=
 ~~~
 
 The exponent in (6) is $`\frac12\xi^{\mathsf T}M\xi`$ with
-$`M=R^{\mathsf T}\operatorname{diag}(T,S)R`$.
+$`M=R^{\mathsf T}\mathop{\mathrm{diag}}(T,S)R`$.
 The real Gaussian quadratic integral is
 $`\det(I_4-M)^{-1/2}`$. For real symmetric $`M`$ near zero,
 orthogonal diagonalization and four one-dimensional integrals prove
@@ -159,7 +159,7 @@ which proves (6), with the square root chosen to equal one at zero.
 Direct multiplication gives
 
 ~~~math
-\operatorname{tr}(TS)=2t\cdot s,\qquad
+\mathop{\mathrm{tr}}(TS)=2t\cdot s,\qquad
 \det T=-\rho(t),\qquad \det S=-\rho(s).
 ~~~
 
@@ -277,11 +277,11 @@ Factor $`(\nu)_{m-s}`$ out of (13). The remaining sum is
 ~~~math
 \begin{aligned}
 &\sum_{j=0}^s(-1)^j\binom sj
- A^{\underline j}(B)_{s-j}\\
-&\quad=s!\,[x^s](1-x)^A(1-x)^{-B}\\
-&\quad=s!\,[x^s](1-x)^{1/2-\nu}
-       =\left(\nu-\frac12\right)_s.                       \tag{14}
-\end{aligned}
+ A^{\underline j}(B)_{s-j}
+\\ &\quad=s!\,[x^s](1-x)^A(1-x)^{-B}
+\\ &\quad=s!\,[x^s](1-x)^{1/2-\nu}
+       =\left(\nu-\frac12\right)_s.
+\end{aligned} \tag{14}
 ~~~
 
 The first equality is the formal binomial theorem, and only finitely
@@ -365,12 +365,12 @@ In degree two the two eigenvalues are
 
 Write $`h(z)=\frac12z^{\mathsf T}Hz`$ with $`H`$
 complex symmetric. Its radial projection is
-$`h_{\mathrm{rad}}=(\operatorname{tr}H)\rho/6`$, and
+$`h_{\mathrm{rad}}=(\mathop{\mathrm{tr}}H)\rho/6`$, and
 
 ~~~math
 \|h\|_{\mathcal F}^2=\frac12\|H\|_F^2,\qquad
 \|h_{\mathrm{rad}}\|_{\mathcal F}^2
-=\frac{|\operatorname{tr}H|^2}{6}.
+=\frac{|\mathop{\mathrm{tr}}H|^2}{6}.
 ~~~
 
 Using (19),
@@ -380,17 +380,17 @@ Using (19),
 =\frac1N\left(2\|h\|_{\mathcal F}^2
              -3\|h_{\mathrm{rad}}\|_{\mathcal F}^2\right)
 =\frac1N\left(\|H\|_F^2
-             -\frac12|\operatorname{tr}H|^2\right).       \tag{20}
+             -\frac12|\mathop{\mathrm{tr}}H|^2\right).       \tag{20}
 ~~~
 
-If $`h=L_1L_2`$, then $`\operatorname{rank}H\le2`$.
+If $`h=L_1L_2`$, then $`\mathop{\mathrm{rank}}H\le2`$.
 The singular-value decomposition gives
-$`|\operatorname{tr}H|\le\sum_j s_j(H)
+$`|\mathop{\mathrm{tr}}H|\le\sum_j s_j(H)
  \le\sqrt2\,\|H\|_F`$.
 Thus (20) is nonnegative. Equality holds exactly when
 
 ~~~math
-|\operatorname{tr}H|^2=2\|H\|_F^2.                        \tag{21}
+|\mathop{\mathrm{tr}}H|^2=2\|H\|_F^2.                        \tag{21}
 ~~~
 
 The product hypothesis cannot be removed at degree two:

@@ -49,7 +49,7 @@ This proves strictness for all $h>1$. Refining identical-neighborhood classes le
 
 ## An explicit nearly regular extension
 
-Let $\Delta$ be the width of the weighted degree interval on the quotient and assume it is below the minimum quotient weight. The same classification still gives the equal-step template, and consecutive weights in each step-$k$ orbit differ by at most $\Delta$. Average the weights on each orbit to make them periodic. The total absolute change in vertex weights is at most $m(m/h)\Delta$. The change in every cut cost is no larger, since the unordered product-measure difference is at most the absolute change in vertex masses.
+Let $\Delta$ be the width of the weighted degree interval on the quotient and assume it is below the minimum quotient weight. The same classification still gives the equal-step template, and consecutive weights in each step-$`k`$ orbit differ by at most $\Delta$. Average the weights on each orbit to make them periodic. The total absolute change in vertex weights is at most $m(m/h)\Delta$. The change in every cut cost is no larger, since the unordered product-measure difference is at most the absolute change in vertex masses.
 
 If the quotient is $C_g$, the lightest adjacent product is at most $1/g^2$ for arbitrary weights, by AM–GM. For every other quotient the strict gap computed above gives a positive margin. In detail, if $m(m/h)\Delta$ is at most that margin, the odd-girth deletion bound still holds. Thus these near-regular, possibly nonregular circular weights are also covered, without any bound on the template rank.
 

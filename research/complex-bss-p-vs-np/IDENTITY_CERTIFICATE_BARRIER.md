@@ -30,7 +30,7 @@ a\notin Z,\quad P(a,z^{(\ell)})=0\text{ for all }\ell\right\}.
 For each `a` outside `Z`, its fiber in the `L` evaluation points has dimension at most `L(m-1)`: each nonzero polynomial has a proper hypersurface, or an empty set, as its zero set. The fiber-dimension inequality gives
 
 ```math
-\dim I\le p+L(m-1)<Lm.
+\dim I\le p+L(m-1)\lt Lm.
 ```
 
 The closure of the image of `I` in `(C^m)^L` therefore is a proper algebraic subset. Choose a tuple outside it. No nonzero member of the polynomial family vanishes at all of its points. Taking `L=p+1` proves the assertion. ∎

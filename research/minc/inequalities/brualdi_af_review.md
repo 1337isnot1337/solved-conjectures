@@ -8,12 +8,12 @@ We put the free diagonal entry last, so the support is `C_n=J_n-I_n+E_nn`, and a
 
 The proposed lower bound is correct. If a doubly stochastic matrix has a zero rectangle of size `r x (n-r-1)`, set `p=r+1`, `q=n-r`, so `p+q=n+1` and `p,q>=2`. Enlarge its support to the complement of that rectangle. The repeated-support averaging lemma applied to a permanent minimizer in this enlarged face reaches the unique block-constant doubly stochastic point
 
-\[
+```math
 \begin{pmatrix}
-J_{p-1,p}/p&0\\
-J_{q,p}/(pq)&J_{q,q-1}/q
+J_{p-1,p}/p&0
+\\ J_{q,p}/(pq)&J_{q,q-1}/q
 \end{pmatrix}.
-\]
+```
 
 Its permanent is `d_p d_q`. This follows by selecting the unique bottom-row edge that uses the extra left column after the top rows and right columns have been matched. Thus the minimum on the enlarged face is exactly `d_p d_q`.
 
@@ -21,9 +21,9 @@ The ratio `d_(s+1)/d_s=(s/(s+1))^s` strictly decreases, so for fixed `p+q=n+1`, 
 
 For every `n>=4`, the alternating derangement sum gives `D_n/n!<=3/8`. Since `3/8 <= (n-1)/(2n)`,
 
-\[
-\operatorname{per}U_n\le d_{n-1}/2,
-\]
+```math
+\mathop{\mathrm{per}}U_n\le d_{n-1}/2,
+```
 
 with equality only at `n=4`. The explicit diagonal-opening direction at `U_n` has derivative `per(U_n(n|n))-per(U_n)<0`. Hence the minimum over `C_n` is strictly below `per(U_n)`. No minimizer on `C_n` can contain a zero rectangle with row count plus column count at least `n-1`.
 
@@ -52,19 +52,19 @@ These statements do not yet eliminate a nonempty acyclic graph of extra zeros. S
 
 One possible continuation would use signs of the inverse of the permanent bilinear kernel. Strict AF does not provide the desired inverse signs, even within actual permanent kernels. Take
 
-\[
+```math
 C=\begin{pmatrix}1&1&1&1&0\\1&1&1&1&0\\1&1&0&0&1\end{pmatrix}.
-\]
+```
 
 For `i!=j`, put `Q_ij=per(C with columns i,j deleted)` and put `Q_ii=0`. Then
 
-\[
+```math
 Q=\begin{pmatrix}
 0&2&2&2&2\\2&0&2&2&2\\2&2&0&2&4\\2&2&2&0&4\\2&2&4&4&0
 \end{pmatrix},
 \quad\det Q=192,
 \quad (Q^{-1})_{12}=-1/12.
-\]
+```
 
 This `C` satisfies Panov's strict zero-rectangle condition. The inverse entry stays negative after sufficiently small positive perturbations. This defeats a generic inverse-kernel sign argument. It does not exclude a stronger statement using all the special minimizing and diagonal-support conditions.
 
@@ -74,23 +74,23 @@ The determinant and inverse entry were checked by exact integer permanent enumer
 
 For an extra zero `a_ij=0`, the reverse entry `a_ji` is positive because the extra zeros are acyclic. Put `h_ij=G_ij-P>=0`. The feasible four-cycle direction
 
-\[
+```math
 D_4=E_{ij}+E_{nn}-E_{in}-E_{nj}
-\]
+```
 
 has the exact expansion
 
-\[
-\operatorname{per}(A+tD_4)=P+h_{ij}t+2Qt^2,
-\qquad Q=\operatorname{per}A(\{i,n\}\mid\{j,n\})>0.
-\]
+```math
+\mathop{\mathrm{per}}(A+tD_4)=P+h_{ij}t+2Qt^2,
+\qquad Q=\mathop{\mathrm{per}}A(\{i,n\}\mid\{j,n\})>0.
+```
 
 It therefore cannot give a descent.
 
 The feasible directed three-cycle completion
 
-\[
+```math
 D_3=E_{ij}+E_{jn}+E_{ni}-E_{in}-E_{ji}-E_{nj}
-\]
+```
 
 also has linear coefficient `h_ij`. Its cubic coefficient is zero because the permanent of its three-by-three nonzero block is zero. Thus it gives a quadratic in `t`, but no adequate bound on its quadratic coefficient relative to the feasible step length has been obtained. The difference `D_3-D_4` is a two-sided feasible four-cycle direction on positive entries and is stationary at the minimizer. This observation by itself does not force a decrease along `D_3`.

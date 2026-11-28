@@ -199,7 +199,7 @@ again giving `ab>c^2`.
 For completeness, `ab=c^2` is a necessary condition for this barycenter to minimize the permanent. If an interior barycenter `B` were minimizing, the source's cofactor lemma gives `per B(i|j)=per B` on its support. Consequently the weighted permutation law `P_B(sigma)` proportional to `product_i b_{i,sigma(i)}` has marginals `B`. The uniform law on the supported permutations also has marginals `B` by the definition of barycenter. Their symmetrized relative entropy equals
 
 ```math
-\sum_{ij}(\operatorname{marginal}(P_B)_{ij}-B_{ij})\log b_{ij}=0.
+\sum_{ij}(\mathop{\mathrm{marginal}}(P_B)_{ij}-B_{ij})\log b_{ij}=0.
 ```
 
 Thus the two laws coincide and all supported permutation products of `B` are equal. A supported permutation using one upper diagonal edge and one bottom edge can be changed to use the two corresponding cross edges; all other upper vertices can use their diagonal edges and all other bottom vertices can be matched within the bottom block. Equality of these two products forces `ab=c^2`, contrary to the strict inequality above. This proves non-barycentricity for every `m>=1,n>1`.

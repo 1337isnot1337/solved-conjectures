@@ -27,7 +27,7 @@ I_\lambda=\{\lambda_{k+1-a}+a-1:1\leq a\leq k\}
 These are the $`p`$ distinct $`k`$-subsets. Define
 
 ```math
-\Delta(x)=\prod_{a<b}(x_b-x_a),\qquad
+\Delta(x)=\prod_{a\lt b}(x_b-x_a),\qquad
 s_\lambda(x)=
  \frac{\det(x_b^{\lambda_{k+1-a}+a-1})_{a,b=1}^k}{\Delta(x)}.
                                                                     \tag{1}
@@ -53,8 +53,8 @@ For $`\kappa\ne0`$, let $`Z_\kappa=\{z:z^s=\kappa\}`$. The elementary root sum
 
 ```math
 \frac1s\sum_{z\in Z_\kappa}z^{m-(s-1)}
-=\begin{cases}\kappa^\ell&m=s-1+s\ell,\ \ell\geq0,\\
-0&\text{otherwise},\end{cases}\qquad(m\geq0)
+=\begin{cases}\kappa^\ell&m=s-1+s\ell,\ \ell\geq0,
+\\ 0&\text{otherwise},\end{cases}\qquad(m\geq0)
 ```
 
 gives the exact expression
@@ -161,7 +161,7 @@ This is a degeneration of a **four-party** unit. Replacing it by only a three-pa
 Let $`V=\mathbb C^s`$, with basis $`e_0,\ldots,e_{s-1}`$, and define the cyclic shift
 
 ```math
-J_\kappa e_a=e_{a+1}\quad(a<s-1),\qquad
+J_\kappa e_a=e_{a+1}\quad(a\lt s-1),\qquad
 J_\kappa e_{s-1}=\kappa e_0.
 ```
 

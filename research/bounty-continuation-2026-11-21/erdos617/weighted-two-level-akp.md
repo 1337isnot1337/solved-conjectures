@@ -60,9 +60,9 @@ and
 
 ```math
 \begin{aligned}
-E&=2qr^2s+2rM,\\
-F&=2rqt-4qr(rs+1),\\
-G&=2qr^2s+(q+2)r^2-4rs-2-2rM-2rqt.
+E&=2qr^2s+2rM,
+\\ F&=2rqt-4qr(rs+1),
+\\ G&=2qr^2s+(q+2)r^2-4rs-2-2rM-2rqt.
 \end{aligned}
 \tag{1}
 ```
@@ -173,10 +173,10 @@ Also E≥2qr²s. Consequently
 ```math
 \begin{aligned}
 ED
-&>q(q-2)s\,r^4\\
-&>q^2(q-2)^2r^4\\
-&\ge\frac{4q^2(q-2)^2r^4}{(q-1)^2}\\
-&\ge r^2X^2.
+&>q(q-2)s\,r^4
+\\ &>q^2(q-2)^2r^4
+\\ &\ge\frac{4q^2(q-2)^2r^4}{(q-1)^2}
+\\ &\ge r^2X^2.
 \end{aligned}
 ```
 

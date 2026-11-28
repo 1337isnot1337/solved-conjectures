@@ -13,7 +13,7 @@ and suppose that the permanent-on-top inequality holds for this particular
 ancillary matrix:
 
 ```math
-\Pi(C)\preceq\operatorname{per}(C)I_{m!}.
+\Pi(C)\preceq\mathop{\mathrm{per}}(C)I_{m!}.
 \tag{1}
 ```
 
@@ -37,7 +37,7 @@ one has
 
 ```math
 \boxed{f_{H,\chi}(A\oplus C)
-       \leq \operatorname{per}(C) f_{K,\theta}(A).}
+       \leq \mathop{\mathrm{per}}(C) f_{K,\theta}(A).}
 \tag{2}
 ```
 
@@ -55,7 +55,7 @@ $`\Pi(M)`$.
 By (1), the function on $`S_m`$
 
 ```math
-Q(h)=\operatorname{per}(C)\mathbf1_{h=e}-a_h(C)
+Q(h)=\mathop{\mathrm{per}}(C)\mathbf1_{h=e}-a_h(C)
 ```
 
 is positive definite. Let $`L=H\cap(S_n\times S_m)`$. Restriction and
@@ -71,7 +71,7 @@ finite group is nonnegative: it is the all-ones quadratic form of its Gram
 matrix, divided by the group order. Expanding that sum gives
 
 ```math
-0\leq \operatorname{per}(C)\sum_{g\in K}\theta(g)a_g(A)
+0\leq \mathop{\mathrm{per}}(C)\sum_{g\in K}\theta(g)a_g(A)
  -\sum_{(g,h)\in L}\chi((g,h))a_g(A)a_h(C).
 ```
 
@@ -79,10 +79,10 @@ All terms of the generalized matrix function of $`A\oplus C`$ outside
 $`L`$ vanish because they use a cross-block zero entry. Dividing the last
 display by the same degree $`q=\chi(e)=\theta(e)`$ proves (2).
 
-If $`\operatorname{per}C=0`$, (2) and positivity force the left side to
+If $`\mathop{\mathrm{per}}C=0`$, (2) and positivity force the left side to
 vanish. Otherwise a violation of
-$`f_{H,\chi}(A\oplus C)\leq\operatorname{per}A\operatorname{per}C`$
-forces $`f_{K,\theta}(A)>\operatorname{per}A`$. Decomposing $`\theta`$
+$`f_{H,\chi}(A\oplus C)\leq\mathop{\mathrm{per}}A\mathop{\mathrm{per}}C`$
+forces $`f_{K,\theta}(A)>\mathop{\mathrm{per}}A`$. Decomposing $`\theta`$
 into irreducible characters then yields at least one violating constituent,
 because the normalized function is a degree-weighted average.
 
@@ -98,7 +98,7 @@ The matrix-specific assumption (1) must be verified. The permanent-on-top
 conjecture is false in general; substituting an arbitrary PSD ancillary block
 would make the argument invalid. For example, a diagonal subgroup on
 $`A\oplus\overline A`$ produces the self-Chollet quantity
-$`\operatorname{per}(A\circ\overline A)`$, so arbitrary orthogonal blocks
+$`\mathop{\mathrm{per}}(A\circ\overline A)`$, so arbitrary orthogonal blocks
 already include a separate open problem.
 
 Definitions and the distinction between permanent-on-top and the open

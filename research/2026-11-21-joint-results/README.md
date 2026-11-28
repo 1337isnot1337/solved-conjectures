@@ -158,9 +158,9 @@ A complex-parameter tridiagonal argument and reciprocal-segment lemma give half-
 
 The explicit matrix conjecture asks whether every feasible diagonal-matrix instance admits an optimal encoder with exactly one nonzero entry per column. The displayed feasible set allows independent diagonal positive semidefinite $`\Pi`$ and arbitrary real $`\Gamma`$; no extra relation between them is assumed.
 
-For $`B=\operatorname{diag}(4/5,3/5)`$ and $`H=\operatorname{diag}(7/4,1)`$, the package gives rational $`\Pi,\Gamma`$ with unique Lyapunov solution
+For $`B=\mathop{\mathrm{diag}}(4/5,3/5)`$ and $`H=\mathop{\mathrm{diag}}(7/4,1)`$, the package gives rational $`\Pi,\Gamma`$ with unique Lyapunov solution
 ```math
-J=\operatorname{diag}\left(\frac{211}{57600},
+J=\mathop{\mathrm{diag}}\left(\frac{211}{57600},
 \frac{35289}{246113344}\right)\succ0
 ```
 and feasible power $`23825/22491`$. All four sparse assignments, with arbitrary signs and magnitudes of their nonzero entries, have infima
@@ -178,7 +178,7 @@ P_{\mathrm{sparse}}-\frac{23825}{22491}
 ```
 The same construction works for every gain with
 ```math
-\frac{1360}{567}<h^2<\frac{4675}{1296}.
+\frac{1360}{567}\lt h^2<\frac{4675}{1296}.
 ```
 The strict infimum gap rules out sparse minimizing sequences as well as sparse optimizers. This refutes the complete matrix assertion; no separate general communication-code stabilization claim is added.
 

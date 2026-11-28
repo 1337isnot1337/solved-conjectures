@@ -11,21 +11,21 @@ I read the complete 268-line proof at [9a5f90c84d13e85352b79402e4e79fc0f7819c2a]
 The defining series has positive coefficients whenever the order exceeds minus one. After removal of the leading real power it is entire in the square of the argument. This justifies all differentiations on compact positive intervals and the differentiated local expansions.
 
 For $f=I_{\nu_1}(a_1x)$ and $g=I_{\nu_2}(a_2x)$, the scaled differential equations give exactly
-\[
+```math
 H=x(f'g-fg'),\qquad
 H'=fg\left(\frac{\nu_1^2-\nu_2^2}{x}-(a_2^2-a_1^2)x\right),
 \qquad
 (f/g)'=\frac{H}{xg^2}.
-\]
+```
 The signs and powers of $x$ are correct.
 
 Writing $\delta=\nu_1-\nu_2$ and $\rho=\nu_1+\nu_2$ is essential. Ordered orders need not have ordered squares. The proof retains $A=\delta\rho$, including negative $A$, and assumes only the valid bound $\rho>-2$.
 
 For $\delta>0$, the local expansion gives $H=Cx^\rho(\delta+O(x^2))$ with $C>0$, so its initial sign is positive. For equal orders, the leading terms cancel and
-\[
+```math
 H=Cx^{2\nu}
 \left(\frac{a_1^2-a_2^2}{2(\nu+1)}x^2+O(x^4)\right).
-\]
+```
 Its zero-endpoint limit is zero because $2\nu+2>0$.
 
 The two global lower bounds for $fg$ are valid: retaining both index-zero terms gives $fg\ge c_0x^\rho$, while retaining index one in $f$ and index zero in $g$ gives $fg\ge c_1x^{\rho+2}$. The constants are strictly positive. If $B=a_2^2-a_1^2>0$, eventually $H'\le-(Bc_0/2)x^{\rho+1}$. If $B=0$ and $A<0$, then $H'\le Ac_1x^{\rho+1}$. The exponent exceeds minus one, so integration forces $H\to-\infty$ in either case. No large-argument expansion or differentiation of an asymptotic remainder is needed.

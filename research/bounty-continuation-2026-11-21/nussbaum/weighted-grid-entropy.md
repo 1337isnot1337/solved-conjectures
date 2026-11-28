@@ -28,7 +28,7 @@ For one coordinate let $`u`$ be the fraction of row anchors with bit one and $`v
 2u(1-u)h(v)\le w. \tag{1}
 ```
 
-For reference, $`h(v)\le2\sqrt{v(1-v)}`$. One elementary proof puts $`t=|1-2v|`$ and considers $`\sqrt{1-t^2}-h((1-t)/2)`$. Its derivative is $`\operatorname{atanh}(t)/\ln 2-t/\sqrt{1-t^2}`$. Substituting $`t=\tanh s`$ shows that the derivative changes from positive to negative exactly once since $`\sinh(s)/s`$ increases from one to infinity. The function vanishes at both endpoints. Now $`w\ge2\sqrt{u(1-u)v(1-v)}`$ by AM–GM, proving (1).
+For reference, $`h(v)\le2\sqrt{v(1-v)}`$. One elementary proof puts $`t=|1-2v|`$ and considers $`\sqrt{1-t^2}-h((1-t)/2)`$. Its derivative is $`\mathop{\mathrm{atanh}}(t)/\ln 2-t/\sqrt{1-t^2}`$. Substituting $`t=\tanh s`$ shows that the derivative changes from positive to negative exactly once since $`\sinh(s)/s`$ increases from one to infinity. The function vanishes at both endpoints. Now $`w\ge2\sqrt{u(1-u)v(1-v)}`$ by AM–GM, proving (1).
 
 Let $`D_{\max}`$ be the maximum distance of a pair of row anchors. Choose a coordinate in $`T`$ with largest column-bit entropy and delete it. Subadditivity and recoverability give $`L\le(1-1/D_{\max})\sum_{t\in T}h(v_t)`$. Average over independent uniform rows, counting the equal-row case as zero, and apply (1) coordinate by coordinate. This proves
 

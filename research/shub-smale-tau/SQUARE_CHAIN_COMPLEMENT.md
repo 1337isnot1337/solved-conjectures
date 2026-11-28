@@ -24,8 +24,8 @@ It is a common zero of the symmetric polynomials
 
 ```math
 \begin{aligned}
-F(X,T)&=A(X)D(T)+A(T)D(X)-D(X)D(T),\\
-G(X,T)&=\frac{B(X)E(T)-B(T)E(X)}{X-T}.
+F(X,T)&=A(X)D(T)+A(T)D(X)-D(X)D(T),
+\\ G(X,T)&=\frac{B(X)E(T)-B(T)E(X)}{X-T}.
 \end{aligned}
 \tag{2.2}
 ```
@@ -191,11 +191,11 @@ modulo `M=11^512`, and two integer vectors `u,v` satisfying
 \begin{gathered}
 K_{164}(\rho)\equiv0\pmod M,\qquad
 u_1\equiv\rho u_2\pmod M,\quad
-v_1\equiv\rho v_2\pmod M,\\
-|\det(u,v)|=M,\qquad
+v_1\equiv\rho v_2\pmod M,
+\\ |\det(u,v)|=M,\qquad
 \|u\|^2\le\|v\|^2,\qquad
-2|u\cdot v|\le\|u\|^2,\\
-M>2H^2,\qquad \|u\|^2>2H^2.
+2|u\cdot v|\le\|u\|^2,
+\\ M>2H^2,\qquad \|u\|^2>2H^2.
 \end{gathered}
 \tag{3.4}
 ```

@@ -85,9 +85,9 @@ Distinct full cliques share at most one vertex, so their internal edge sets are 
 ```math
 \begin{aligned}
 e(G)-B_r
-&\ge q\binom r2+e(G[R])-\frac{r^3+r}{2}\\
-&\ge\frac r2(3c-q-1)+\frac{c^2}{s}\\
-&\ge r(q-2)+\frac{c^2}{s}>0,
+&\ge q\binom r2+e(G[R])-\frac{r^3+r}{2}
+\\ &\ge\frac r2(3c-q-1)+\frac{c^2}{s}
+\\ &\ge r(q-2)+\frac{c^2}{s}>0,
 \end{aligned}
 ```
 

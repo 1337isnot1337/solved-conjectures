@@ -14,7 +14,7 @@ Let `n >= 4`, `U=(J-I)/(n-1)`, and let `B` be any **real** `n x n` matrix with
 Set `S=(B+B^T)/2` and `K=(B-B^T)/2`. Write `d_m` for the number of derangements of `m` objects, including `d_0=1`, `d_1=0`. Then
 
 ```math
-\operatorname{per}(U+tB)=
+\mathop{\mathrm{per}}(U+tB)=
 \frac{d_n}{(n-1)^n}
 +\frac{t^2}{2(n-1)^{n-2}}
 \left[
@@ -46,10 +46,10 @@ D(N,j)=\sum_{r=0}^j(-1)^r\binom jr (N-r)!
 be the number of permutations of `N` objects avoiding `j` specified fixed points. For two-element row and column sets `R,C`, the matrix `U[R^c,C^c]` has `n-4+|R\cap C|` forbidden diagonal entries. The coefficient of `t^2` in the multilinear permanent expansion is therefore
 
 ```math
-[t^2]\operatorname{per}(U+tB)=
+[t^2]\mathop{\mathrm{per}}(U+tB)=
 \frac{1}{(n-1)^{n-2}}
 \sum_{|R|=|C|=2}
-\operatorname{per}(B[R,C])D(n-2,n-4+|R\cap C|).
+\mathop{\mathrm{per}}(B[R,C])D(n-2,n-4+|R\cap C|).
 \tag{3}
 ```
 
@@ -62,19 +62,19 @@ w_q=w_0+(w_1-w_0)q+(w_2-2w_1+w_0)\binom q2.
 Three universal identities follow solely from the tangent constraints:
 
 ```math
-\sum_{|R|=|C|=2}\operatorname{per}(B[R,C])
+\sum_{|R|=|C|=2}\mathop{\mathrm{per}}(B[R,C])
 =\frac12\|B\|_F^2;
 \tag{4}
 ```
 
 ```math
-\sum_{|R|=|C|=2}|R\cap C|\operatorname{per}(B[R,C])=0;
+\sum_{|R|=|C|=2}|R\cap C|\mathop{\mathrm{per}}(B[R,C])=0;
 \tag{5}
 ```
 
 ```math
-\sum_{|R|=|C|=2}\binom{|R\cap C|}{2}\operatorname{per}(B[R,C])
-=\frac12\operatorname{tr}(B^2).
+\sum_{|R|=|C|=2}\binom{|R\cap C|}{2}\mathop{\mathrm{per}}(B[R,C])
+=\frac12\mathop{\mathrm{tr}}(B^2).
 \tag{6}
 ```
 
@@ -98,8 +98,8 @@ w_0=D(n-2,n-4)=d_{n-2}+2d_{n-3}+d_{n-4}.
 Substituting into (3) using (4)–(6),
 
 ```math
-[t^2]\operatorname{per}(U+tB)=
-\frac{w_0\|B\|_F^2+d_{n-4}\operatorname{tr}(B^2)}
+[t^2]\mathop{\mathrm{per}}(U+tB)=
+\frac{w_0\|B\|_F^2+d_{n-4}\mathop{\mathrm{tr}}(B^2)}
 {2(n-1)^{n-2}}.
 \tag{7}
 ```

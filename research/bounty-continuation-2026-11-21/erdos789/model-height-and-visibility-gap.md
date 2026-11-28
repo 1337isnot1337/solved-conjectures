@@ -63,7 +63,7 @@ Consequently each valuation level contains at most $`d(p-1)\le kp`$ elements. If
 \sum_a v_a\ge\frac{M^2}{2c}-\frac M2.
 ```
 
-Indeed, writing $`M=qc+r`$ with $0\le r<c$`, the minimum is `$cq(q-1)/2+qr$`; its difference from the displayed lower bound is `$r(c-r)/(2c)\ge0$`. Taking `$c=kp$ gives
+Indeed, writing $`M=qc+r`$ with $`0\le r<c`$, the minimum is $`cq(q-1)/2+qr`$; its difference from the displayed lower bound is $`r(c-r)/(2c)\ge0`$. Taking $`c=kp`$ gives
 
 ```math
 \sum_a v_p(b_a)\ge\frac{M^2}{2kp}-\frac M2.
@@ -122,7 +122,7 @@ Let
 N_p=\#\{a:v_a\notin p\Lambda\}.
 ```
 
-A uniform random homomorphism to $`\mathbb F_p`$ detects each of these vectors with probability $1-1/p$ and detects none of the others. Averaging the preceding inequality gives the exact necessary bound
+A uniform random homomorphism to $`\mathbb F_p`$ detects each of these vectors with probability $`1-1/p`$ and detects none of the others. Averaging the preceding inequality gives the exact necessary bound
 
 ```math
 N_p\le dp.
@@ -174,7 +174,7 @@ Let $`b:A_p\to G`$ take values in any abelian group and preserve every ternary z
 1+2=3,\quad1+3=4,\quad2+3=5,\quad1+4=5
 ```
 
-give $`b_2=2c`$. Induction using $1+(j-1)=j$` for `$j\ge3$` then gives `$b_j=jc$ throughout the seed interval.
+give $`b_2=2c`$. Induction using $`1+(j-1)=j`$` for `$`j\ge3`$` then gives `$`b_j=jc`$ throughout the seed interval.
 
 For $`p\ge7`$, the three summands in
 
@@ -188,9 +188,9 @@ are distinct and belong to the seed interval. Hence $`b_{2p}=2pc`$. The relation
 b_a=ac\qquad(a\in A_p).
 ```
 
-For the saturated short-relation quotient with $`k=d_p+1\ge4`$, this proves $`\Lambda\cong\mathbb Z`$, with $`v_a=a v_1`$. Integer evaluation sends $`v_1`$ to $1$, so no further relation or torsion changes this conclusion.
+For the saturated short-relation quotient with $`k=d_p+1\ge4`$, this proves $`\Lambda\cong\mathbb Z`$, with $`v_a=a v_1`$. Integer evaluation sends $`v_1`$ to $`1`$, so no further relation or torsion changes this conclusion.
 
-It follows that, modulo $`p`$, exactly the $`p-1`$ seed points $1,\ldots,p-1$ are potentially visible:
+It follows that, modulo $`p`$, exactly the $`p-1`$ seed points $`1,\ldots,p-1`$ are potentially visible:
 
 ```math
 N_p=p-1,\qquad

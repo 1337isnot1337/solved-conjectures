@@ -34,7 +34,7 @@ Their targets have equations $Y^2=X^3+BX^2+ACX+A^2D$ and $Y^2=X^3+CX^2+BDX+AD^2$
 
 For each of $p=5,11,13,17,19$ both quotients have good ordinary reduction. The genus-two models also have good reduction there, by their displayed discriminants in the reduction note. The two rank-one quotients give Jacobian rank two. Run the published algorithm at precision 40, preserving its compatible indexing by the vector of local height contributions. We use its unmodified source and the option `potential_good_primes=False`, which keeps the wider allowed set of height values. This gives 18 height classes for the first curve and 63 for the second. At each prime the isolated roots recognized as affine rational points are exactly the points displayed above. The authors' implementation checks its root-separation conditions. An additional rational point would occur among the remaining local roots at **each** prime, in the same height class. These are the local roots used in the sieve.
 
-For one elliptic quotient, write the unknown global image as $nG+T$. For a local candidate $P$ in its image, enumerate the pairs $(i,T)$ for which $\bar P=i\bar G+\bar T$ over $\mathbb F_p$. This determines a congruence on $n$ modulo the order of $\bar G$. Independently, let $M=\#E(\mathbb F_p)$. The formal-group logarithm gives
+For one elliptic quotient, write the unknown global image as $nG+T$. For a local candidate $P$ in its image, enumerate the pairs $(i,T)$ for which $\bar P=i\bar G+\bar T$ over $\mathbb F_p$. This determines a congruence on $n$ modulo the order of $\bar G$. Independently, let $`M=\#E(\mathbb F_p)`$. The formal-group logarithm gives
 
 ```math
 n=\frac{\log_E(MP)}{\log_E(MG)}

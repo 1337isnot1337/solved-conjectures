@@ -24,7 +24,7 @@ For fixed $v_1<\cdots<v_r$, direct differentiation of $f_j(u)=(u+v_j)^\delta$ gi
 W_r(u)=(-1)^{\binom r2}
 \left(\prod_{i=0}^{r-1}\delta^{\underline i}\right)
 \left(\prod_{j=1}^r(u+v_j)^{\delta-r+1}\right)
-\prod_{i<j}(v_j-v_i).
+\prod_{i\lt j}(v_j-v_i).
 ```
 
 I derived this independently before reading the draft. In particular, the reciprocal-node Vandermonde contributes the reversal sign $(-1)^{\binom r2}$ and exactly $r-1$ powers of each denominator. Neither orientation nor exponent is missing.

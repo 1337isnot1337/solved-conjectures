@@ -48,8 +48,8 @@ Then
 
 ```math
 BB^*=\begin{pmatrix}
-a_0&\sqrt{a_0a_1}\,c\\
-\sqrt{a_0a_1}\,c&a_1
+a_0&\sqrt{a_0a_1}\,c
+\\ \sqrt{a_0a_1}\,c&a_1
 \end{pmatrix},\qquad a_0+a_1=1.
 ```
 
@@ -70,7 +70,7 @@ For the first contribution, take `a_0=a_1=1/2` and, on a two-dimensional column 
 ```math
 \tau_0=\mathop{\mathrm{diag}}((1+t)/2,(1-t)/2),\qquad
 \tau_1=\mathop{\mathrm{diag}}((1-t)/2,(1+t)/2),
-\qquad 0<t<1.
+\qquad 0\lt t<1.
 ```
 
 Use the two coordinate column blocks. These states are realized by taking `T_i=sqrt(a_i tau_i)`. Their row Holevo quantity is

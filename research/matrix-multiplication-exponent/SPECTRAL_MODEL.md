@@ -52,7 +52,7 @@ The limit exists by submultiplicativity. Since $M_q^{\otimes m}$ is isomorphic t
 \widetilde R(M_q)=q^{\omega_{\mathbb C}}.
 ```
 
-For completeness, allowing only sizes $q^m$ does not change the exponent. For any fixed $N$, choose $k=\lceil\log_N(q^m)\rceil$. Padding restricts $M_{N^k}$ to $M_{q^m}$, so $R(M_{q^m})\le R(M_N)^k$. Passing to $m$th roots gives the required upper bound; the lower bound follows from the infimum defining the rank exponent.
+For completeness, allowing only sizes $q^m$ does not change the exponent. For any fixed $N$, choose $k=\lceil\log_N(q^m)\rceil$. Padding restricts $M_{N^k}$ to $M_{q^m}$, so $R(M_{q^m})\le R(M_N)^k$. Passing to $`m`$th roots gives the required upper bound; the lower bound follows from the infimum defining the rank exponent.
 
 ## The normalized spectrum
 
@@ -66,10 +66,10 @@ A normalized spectral point is a function $F:\mathcal T_3\to\mathbb R_{\ge0}$ sa
 
 ```math
 \begin{aligned}
-F(S\oplus T)&=F(S)+F(T),\\
-F(S\otimes T)&=F(S)F(T),\\
-S\le T&\Longrightarrow F(S)\le F(T),\\
-F(U_3(r))&=r\qquad(r\ge0).
+F(S\oplus T)&=F(S)+F(T),
+\\ F(S\otimes T)&=F(S)F(T),
+\\ S\le T&\Longrightarrow F(S)\le F(T),
+\\ F(U_3(r))&=r\qquad(r\ge0).
 \end{aligned}
 ```
 
@@ -87,9 +87,9 @@ Define
 
 ```math
 \begin{aligned}
-W_{AB}(q)&=\sum_{i=1}^q e_i^A\otimes e_i^B\otimes1^C,\\
-W_{BC}(q)&=\sum_{j=1}^q1^A\otimes e_j^B\otimes e_j^C,\\
-W_{CA}(q)&=\sum_{k=1}^q e_k^A\otimes1^B\otimes e_k^C.
+W_{AB}(q)&=\sum_{i=1}^q e_i^A\otimes e_i^B\otimes1^C,
+\\ W_{BC}(q)&=\sum_{j=1}^q1^A\otimes e_j^B\otimes e_j^C,
+\\ W_{CA}(q)&=\sum_{k=1}^q e_k^A\otimes1^B\otimes e_k^C.
 \end{aligned}
 ```
 
@@ -105,7 +105,7 @@ To prove this, the sequence $f(q)=F(W_{AB}(q))$ is nondecreasing under coordinat
 f(2)^m\le f(q)^n\le f(2)^{m+1}.
 ```
 
-Taking $n$th roots proves the power law. The lower bound follows because a nonzero wire restricts to $1$. The upper bound follows because $W_{AB}(q)$ is a restriction of $U_3(q)$, by contracting the third party.
+Taking $`n`$th roots proves the power law. The lower bound follows because a nonzero wire restricts to $1$. The upper bound follows because $W_{AB}(q)$ is a restriction of $U_3(q)$, by contracting the third party.
 
 These exponents obey the triangle inequality. Contracting the two indices at $B$ by $e_i\otimes e_j\mapsto\delta_{ij}$ restricts $W_{AB}(q)\otimes W_{BC}(q)$ to $W_{AC}(q)$, hence $d_{AC}\le d_{AB}+d_{BC}$.
 
@@ -119,8 +119,8 @@ W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q)
 &=\sum_{i,j,k}
 (e_i\otimes e_k)^A
 \otimes(e_i\otimes e_j)^B
-\otimes(e_j\otimes e_k)^C\\
-&\cong M_q.
+\otimes(e_j\otimes e_k)^C
+\\ &\cong M_q.
 \end{aligned}
 ```
 

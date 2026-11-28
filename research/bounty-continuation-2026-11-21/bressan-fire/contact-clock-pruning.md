@@ -16,8 +16,8 @@ For $`0\le t\le T`$, retain the old construction and also build an increasing ar
 ```math
 \gamma'(t)=
 \begin{cases}
-\gamma(t)\cup C_t,&0\le t\le T,\\
-\gamma(T)\cup C,&t\ge T.
+\gamma(t)\cup C_t,&0\le t\le T,
+\\ \gamma(T)\cup C,&t\ge T.
 \end{cases}
 \tag{2}
 ```
@@ -73,8 +73,8 @@ Then $`\Gamma'`$ is $`\sigma`$-admissible. Indeed, the remaining and deleted por
 \begin{aligned}
 \mathcal H^1(\mathcal C_{\Gamma'}(t))
 &\le\mathcal H^1(\mathcal C_\Gamma(t+\delta(t)))
- -\mathcal H^1(C\cap\mathcal C_\Gamma(t+\delta(t)))\\
-&\le\sigma(t+\delta(t))-\sigma\delta(t)=\sigma t.
+ -\mathcal H^1(C\cap\mathcal C_\Gamma(t+\delta(t)))
+\\ &\le\sigma(t+\delta(t))-\sigma\delta(t)=\sigma t.
 \end{aligned}
 \tag{6}
 ```

@@ -144,7 +144,7 @@ polynomials by
 U_0=t,\qquad
 B_j=\frac{1-U_j^{2^{m-j-1}}}{2},\qquad
 U_{j+1}=U_j\left(1+(\zeta^{D-2^j}-1)B_j\right)
-\quad(0\le j<m).                                                   \tag{5}
+\quad(0\le j\lt m).                                                   \tag{5}
 ```
 
 All exponents in (5) have `O(m)` bits. Repeated squaring gives a uniform

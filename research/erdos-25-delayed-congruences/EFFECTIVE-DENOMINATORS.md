@@ -4,7 +4,7 @@
 
 For the prefix with moduli $n_i\le X$, write $n_i=d_iw_i$ and $a_i=d_i r_i$, with $r_i$ coprime to $w_i$ (allow the trivial class at $w_i=1$). Write $L=\log\log X$. For a positive integer $m$, define
 ```math
- W_{\rm eff}(m)=\operatorname{lcm}
+ W_{\rm eff}(m)=\mathop{\mathrm{lcm}}
  \{w_i:n_i\le X,\ d_i\mid m,\ \gcd(m/d_i,w_i)=1\}.
 ```
 Empty least common multiples equal one. Let the valuations of all primes up to $X$ be independent geometric variables with $\Pr(V_p\ge j)=p^{-j}$. It suffices that in this product law there be a deterministic bound $R=R(X)\ge1$ with
@@ -25,7 +25,7 @@ In the rest of the argument use only the retained prefix, and write $S_X$ for th
 Let $P$ be a product of $k$ distinct window primes selected with reciprocal product weights as in the [multiprime proof](MULTIPRIME-RESAMPLING.md). Choose
 ```math
  k=\left\lceil\frac{8\log R}{\log L}\right\rceil+\lfloor L^{1/4}\rfloor,
- \qquad \exp(\exp(L^{3/4}))<p\le \exp(\sqrt{\log X}/k).
+ \qquad \exp(\exp(L^{3/4}))\lt p\le \exp(\sqrt{\log X}/k).
 ```
 Every window prime is outside $S_X$ and exceeds $R$ for large $X$. Put $Z=\exp(\sqrt{\log X})$ and $Y=XZ$. For every modulus $M\le R$, denote by $V_{m,M}$ the vector that counts the $k$-subsets of the window prime divisors of $m$ by product modulo $M$, divided by their reciprocal-weight normalization $\Lambda_k$. Write $U_M$ for the uniform unit vector. Then
 ```math
@@ -55,7 +55,7 @@ It remains to show the distribution of the potentially large $S_X$-part $v$ is a
  \mathbb E\log V=\sum_{p\in S_X}\frac{\log p}{p-1}
       \ll\log\bigl(\max(S_X\cup\{2\})\bigr)=o(\log Y).
 ```
-Choose $\delta\to0$ slowly so that $V\le Y^\delta$ with probability $1-o(1)$. In the full product law, each $Y$-smooth integer $n$ has probability $n^{-1}\prod_{p\le Y}(1-1/p)$. Hence $\Pr(VT\in[Y^{1-\delta},Y^{1+\delta}])=O(\delta+1/\log Y)$ by the ordinary harmonic bound and Mertens. Independence of $V,T$ then gives $\Pr(T\in[Y^{1-\delta},Y])=o(1)$: when $V\le Y^\delta$, such a $T$ forces $VT$ into that full window. Therefore $\{T\le Y\}$ and $\{VT\le Y\}$ differ on probability $o(1)$. Both have probability bounded below since the latter does. The first event is independent of $V$, so conditioning on the second changes the law of $V$ by $o(1)$ in total variation.
+Choose $\delta\to0$ slowly so that $V\le Y^\delta$ with probability $1-o(1)$. In the full product law, each $Y$-smooth integer $n$ has probability $n^{-1}\prod_{p\le Y}(1-1/p)$. Hence $\Pr(VT\in[Y^{1-\delta},Y^{1+\delta}])=O(\delta+1/\log Y)$ by the ordinary harmonic bound and Mertens. Independence of $V,T$ then gives $\Pr(T\in[Y^{1-\delta},Y])=o(1)$: when $V\le Y^\delta$, such a $T$ forces $VT$ into that full window. Therefore $`\{T\le Y\}`$ and $`\{VT\le Y\}`$ differ on probability $o(1)$. Both have probability bounded below since the latter does. The first event is independent of $V$, so conditioning on the second changes the law of $V$ by $o(1)$ in total variation.
 
 After discarding the cutoff, the averaged union is exactly the finite periodic Haar density. This follows from uniformity of unit phases given the valuations, and independence of the remaining prime coordinates. Thus the delayed prefix up to $X$ has normalized upper harmonic mass bounded by its finite periodic density plus $o(1)$. Fixed prefixes supply the lower bound, proving the theorem.
 

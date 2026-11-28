@@ -15,14 +15,14 @@ B_j(t)=\frac{1-U_j(t)^{2^{m-j-1}}}{2},
 \qquad
 U_{j+1}(t)=U_j(t)
 \left(1+(\zeta^{-2^j}-1)B_j(t)\right)
-\quad(0\le j<m).
+\quad(0\le j\lt m).
 ```
 
 If `a=sum_j 2^j a_j` with `a_j` Boolean, induction gives
 
 ```math
 U_j(\zeta^a)
-=\zeta^{a-\sum_{i<j}2^i a_i},
+=\zeta^{a-\sum_{i\lt j}2^i a_i},
 \qquad B_j(\zeta^a)=a_j.
 ```
 
@@ -87,7 +87,7 @@ At `epsilon=0`, the denominator becomes `t^D-1`. Each of these `D` roots is simp
 ```math
 \alpha_a(X,\epsilon),\qquad
 \alpha_a(X,0)=\zeta^a,
-\quad 0\le a<D.
+\quad 0\le a\lt D.
 ```
 
 Define the reciprocal trace of this finite cluster by

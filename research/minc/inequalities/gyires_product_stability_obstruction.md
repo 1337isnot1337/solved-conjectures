@@ -6,32 +6,32 @@ Research note, 20 November 2026 (America/Chicago). This is an exact obstruction 
 
 For two doubly stochastic matrices `A,B` of order `n`, the normalized product inequality is
 
-\[
-\frac{n!}{n^n}\operatorname{per}(AB)
-\le \operatorname{per}(A)\operatorname{per}(B).
-\]
+```math
+\frac{n!}{n^n}\mathop{\mathrm{per}}(AB)
+\le \mathop{\mathrm{per}}(A)\mathop{\mathrm{per}}(B).
+```
 
 For a fixed order, validity for every `A,B` is equivalent to validity of the stronger Gram inequality for every doubly stochastic matrix. One implication sets `B=A^T`. The other uses the Fischer-space identity
 
-\[
-\operatorname{per}(AB)=\langle q_A,q_{B^T}\rangle_F
-\le\sqrt{\operatorname{per}(AA^T)\operatorname{per}(B^TB)},
-\]
+```math
+\mathop{\mathrm{per}}(AB)=\langle q_A,q_{B^T}\rangle_F
+\le\sqrt{\mathop{\mathrm{per}}(AA^T)\mathop{\mathrm{per}}(B^TB)},
+```
 
 where `q_A` is the product of the row linear forms. This is the usual permanent Cauchy--Schwarz identity, not a new inequality.
 
 The polynomial
 
-\[
-F(x)=\operatorname{per}(A\operatorname{diag}(x)B)
-\]
+```math
+F(x)=\mathop{\mathrm{per}}(A\mathop{\mathrm{diag}}(x)B)
+```
 
 has nonnegative coefficients and satisfies
 
-\[
-F(\mathbf1)=\operatorname{per}(AB),\qquad
-[x_1\cdots x_n]F=\operatorname{per}(A)\operatorname{per}(B).
-\]
+```math
+F(\mathbf1)=\mathop{\mathrm{per}}(AB),\qquad
+[x_1\cdots x_n]F=\mathop{\mathrm{per}}(A)\mathop{\mathrm{per}}(B).
+```
 
 The coefficient identity selects exactly the terms whose intermediate labels are all distinct. It therefore expresses the desired inequality as a lower bound on a conditional distinct-label probability. Applying a stable-polynomial coefficient theorem to `F` would require establishing its stability and an appropriate capacity bound. Stability already fails.
 
@@ -39,43 +39,43 @@ The coefficient identity selects exactly the terms whose intermediate labels are
 
 Take
 
-\[
+```math
 A=\frac12\begin{pmatrix}
 1&1&0&0\\1&1&0&0\\0&0&1&1\\0&0&1&1
 \end{pmatrix},\qquad
 B=\frac12\begin{pmatrix}
 1&0&1&0\\0&1&0&1\\1&0&1&0\\0&1&0&1
 \end{pmatrix}.
-\]
+```
 
 Both matrices are doubly stochastic and `AB=J_4/4`, with `J_4` the all-ones matrix. Direct expansion gives
 
-\[
+```math
 F(x)=\frac{x_1^2x_4^2+4x_1x_2x_3x_4+x_2^2x_3^2}{64}.
-\]
+```
 
 Equivalently, writing `c=2+sqrt(3)` and `c^{-1}=2-sqrt(3)`,
 
-\[
+```math
 64F(x)=(x_1x_4+c x_2x_3)(x_1x_4+c^{-1}x_2x_3).
-\]
+```
 
 Set
 
-\[
+```math
 x_1=c(-1+i),\quad x_2=x_3=1+i,\quad x_4=-1+i.
-\]
+```
 
 Every variable has strictly positive imaginary part. But `x_1x_4=-2ci` and `x_2x_3=2i`, so the first factor vanishes. Thus `F` is not real stable.
 
 This example satisfies the desired scalar inequality strictly:
 
-\[
-\operatorname{per}(A)=\operatorname{per}(B)=\frac14,
-\qquad \operatorname{per}(AB)=\frac3{32},
+```math
+\mathop{\mathrm{per}}(A)=\mathop{\mathrm{per}}(B)=\frac14,
+\qquad \mathop{\mathrm{per}}(AB)=\frac3{32},
 \qquad
-\frac{3}{32}\operatorname{per}(AB)=\frac9{1024}<\frac1{16}.
-\]
+\frac{3}{32}\mathop{\mathrm{per}}(AB)=\frac9{1024}<\frac1{16}.
+```
 
 It only excludes the asserted automatic stability of the two-step polynomial. Ordinary products of nonnegative linear forms are stable; the intermediate-label coefficient contraction used to form `F` is an additional operation and cannot be presumed to preserve stability.
 
@@ -87,41 +87,41 @@ The doubly stochastic conditions on `A,B` also do not force the intermediate occ
 
 Take
 
-\[
+```math
 A=\begin{pmatrix}
-1/2&1/2&0\\
-1/4&0&3/4\\
-1/4&1/2&1/4
+1/2&1/2&0
+\\ 1/4&0&3/4
+\\ 1/4&1/2&1/4
 \end{pmatrix},\qquad B=A^T.
-\]
+```
 
 Both are doubly stochastic. Exact expansion gives
 
-\[
+```math
 512F(x)=3x_1^3+9x_1^2x_2+16x_1^2x_3
 +4x_1x_2^2+50x_1x_2x_3+9x_1x_3^2
 +36x_2^2x_3+9x_2x_3^2.
-\]
+```
 
 Consequently,
 
-\[
+```math
 F(\mathbf1)=\frac{17}{64}=\frac{68}{256},\qquad
 \nabla F(\mathbf1)=\frac1{256}(61,74,69).
-\]
+```
 
 For the usual capacity
 
-\[
-\operatorname{cap}(F)=\inf_{x>0}\frac{F(x)}{x_1x_2x_3},
-\]
+```math
+\mathop{\mathrm{cap}}(F)=\inf_{x>0}\frac{F(x)}{x_1x_2x_3},
+```
 
 consider `x=(e^t,e^{-t},1)`. Its coordinate product is one, and
 
-\[
+```math
 \left.\frac{d}{dt}F(e^t,e^{-t},1)\right|_{t=0}
 =-\frac{13}{256}<0.
-\]
+```
 
 Thus `cap(F)<F(1)`. Normalizing `F` by its value at one does not make it a doubly stochastic polynomial. Here `per(A)=5/16`, so the desired scalar product inequality still holds; this is an obstruction to the capacity identification only. The full expansion, permanent, and gradient were checked by exact symbolic arithmetic.
 

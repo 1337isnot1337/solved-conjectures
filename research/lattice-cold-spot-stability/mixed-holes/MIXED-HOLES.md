@@ -35,7 +35,7 @@ If a stable cold spot exists, the set of all global minimizers is exactly the se
 
 ## Localization
 
-The following details recall the general localization argument from the repository's [Leech correction](https://github.com/1337isnot1337/solved-conjectures/blob/main/docs/research-results/leech-cold-spots-asymptotics/PROOF.md). The lattice Voronoi cell is a bounded polytope. The strictly convex squared norm reaches its maximum there only at vertices, giving finitely many deep holes modulo $`L`$. The origin lies in the interior of $`\operatorname{conv}V_d(0)`$ for each $`d`$. Indeed, otherwise a supporting or separating unit vector $`u`$ satisfies $`\langle v,u\rangle\le 0`$ for every nearest vector. The point $`d+\varepsilon u`$ would be farther than $`\rho`$ from every nearest site. All other sites also stay farther than $`\rho`$ for sufficiently small $`\varepsilon>0`$, by the positive gap to the second shell and the triangle inequality. This contradicts the definition of $`\rho`$.
+The following details recall the general localization argument from the repository's [Leech correction](https://github.com/1337isnot1337/solved-conjectures/blob/main/docs/research-results/leech-cold-spots-asymptotics/PROOF.md). The lattice Voronoi cell is a bounded polytope. The strictly convex squared norm reaches its maximum there only at vertices, giving finitely many deep holes modulo $`L`$. The origin lies in the interior of $`\mathop{\mathrm{conv}}V_d(0)`$ for each $`d`$. Indeed, otherwise a supporting or separating unit vector $`u`$ satisfies $`\langle v,u\rangle\le 0`$ for every nearest vector. The point $`d+\varepsilon u`$ would be farther than $`\rho`$ from every nearest site. All other sites also stay farther than $`\rho`$ for sufficiently small $`\varepsilon>0`$, by the positive gap to the second shell and the triangle inequality. This contradicts the definition of $`\rho`$.
 
 Hence $`V_d(0)`$ spans $`\mathbb R^n`$ and encloses a ball about zero in its convex hull. In particular $`H_d`$ is positive definite. Take $`\eta>0`$ so that each such convex hull contains the ball of radius $`\eta`$, and choose disjoint closed torus neighborhoods of the deep holes, with a common radius at most $`\eta`$ small enough for Euclidean coordinates. On their compact exterior the distance to $`L`$ is at most $`\rho-\delta`$ for some $`\delta>0`$. There, a single Gaussian summand gives $`U_t\ge e^{t(\rho^2-(\rho-\delta)^2)}`$, whereas $`U_t(d)\le B=\max_d U_1(d)<\infty`$ for $`t\ge1`$. Every global minimizer is therefore in one of the neighborhoods for large $`t`$.
 
@@ -89,10 +89,10 @@ As $`K_t^{-1}=H^{-1}+2N H^{-2}/t+O(t^{-2})`$, this proves
 ```math
  \begin{aligned}
  (d+y_t/t)-d
-     &=-\frac{e^{-t\Delta}}t\bigl(H^{-1}g+O(t^{-1})\bigr),\\
- U_t(d)-m_d(t)
-     &=e^{-2t\Delta}\left(C_0+\frac{C_1}{t}+O(t^{-2})\right),\\
- C_0&=\tfrac12g^{\mathsf T}H^{-1}g>0,\qquad
+     &=-\frac{e^{-t\Delta}}t\bigl(H^{-1}g+O(t^{-1})\bigr),
+ \\ U_t(d)-m_d(t)
+     &=e^{-2t\Delta}\left(C_0+\frac{C_1}{t}+O(t^{-2})\right),
+ \\ C_0&=\tfrac12g^{\mathsf T}H^{-1}g>0,\qquad
  C_1=N\|H^{-1}g\|^2>0 .
  \end{aligned}
 ```

@@ -12,7 +12,7 @@ Squares of 1-subdivisions are total graphs of their underlying multigraphs. The 
 
 ## Statement
 
-**Theorem.** Let $G$ be a finite simple planar graph of maximum degree $\Delta$. Put $U=\{v\in V(G):d_G(v)\ne2\}$ and $s=\Delta(G[U])$, using $s=0$ for an edgeless induced graph. If $\Delta\ge32s+176$, then
+**Theorem.** Let $G$ be a finite simple planar graph of maximum degree $\Delta$. Put $`U=\{v\in V(G):d_G(v)\ne2\}`$ and $s=\Delta(G[U])$, using $s=0$ for an edgeless induced graph. If $\Delta\ge32s+176$, then
 
 ```math
 \chi(G^2)\le \left\lfloor\frac{3\Delta}{2}\right\rfloor+1.
@@ -52,7 +52,7 @@ The first coordinate distinguishes adjacent $H$-vertices in different contracted
 
 ### Restore each dense triangle by Hall’s theorem
 
-Fix a dense triple $T=\{u,v,w\}$. For each $i\in T$ let $F_i$ be the set of colors of the original vertices in $N_S[i]$ together with the colors of the already colored $M'$-edges incident with $i$. Let $r_i$ be the number of such edges and put $b_T=\sum_{i\in T}(d_S(i)+r_i)$. All $M'$-edges at $i$ are exterior to $T$. We have
+Fix a dense triple $`T=\{u,v,w\}`$. For each $i\in T$ let $F_i$ be the set of colors of the original vertices in $N_S[i]$ together with the colors of the already colored $M'$-edges incident with $i$. Let $r_i$ be the number of such edges and put $b_T=\sum_{i\in T}(d_S(i)+r_i)$. All $M'$-edges at $i$ are exterior to $T$. We have
 
 ```math
 \sum_{i\in T}|F_i|\le3+b_T,\qquad 2e_T+b_T\le3\Delta.

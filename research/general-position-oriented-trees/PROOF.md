@@ -4,7 +4,7 @@
 
 Let D be any orientation of a finite tree T. Reachability, including equality, defines a partial order P_D. A chain is a set of pairwise comparable vertices; the elements of a chain need not be consecutive on their directed path. Let Π range over partitions of the vertices into chains of P_D. Then
 ```math
-\operatorname{gp}(D)=\min_{\Pi}\sum_{C\in\Pi}\min\{2,|C|\}.
+\mathop{\mathrm{gp}}(D)=\min_{\Pi}\sum_{C\in\Pi}\min\{2,|C|\}.
 ```
 This answers the oriented-tree clause of [Chandran–Di Stefano–Erskine–Sreelatha–Thomas–Tuite, Problem 5.2](https://arxiv.org/html/2604.15909#S5), also listed in [Section 6 of the general-position survey](https://arxiv.org/html/2501.19385v5#S6). The other two digraph families in Problem 5.2 are not addressed.
 

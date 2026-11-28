@@ -72,7 +72,7 @@ The needed equation is not obtained by merely setting the homogenizing variable 
 For an integer `r>=1`, introduce `r+1` witnesses and only `r+1` equations:
 
 ```math
-tu_0=1,\qquad u_{i+1}=u_i^2\quad(0\le i<r).
+tu_0=1,\qquad u_{i+1}=u_i^2\quad(0\le i\lt r).
 ```
 
 The verifier uses `O(r)` arithmetic operations and equality tests. The projection is still `t!=0`, and its unique witnesses satisfy
@@ -84,7 +84,7 @@ u_i=t^{-2^i}.
 The individual relative homogenizations in `[U_0:...:U_r:W]` are
 
 ```math
-tU_0-W=0,\qquad U_{i+1}W-U_i^2=0\quad(0\le i<r).
+tU_0-W=0,\qquad U_{i+1}W-U_i^2=0\quad(0\le i\lt r).
 ```
 
 At `W=0` these equations force `U_0=...=U_{r-1}=0` but leave `U_r` nonzero. Thus the same point
@@ -113,7 +113,7 @@ Therefore affine witness coordinates can have pole order `2^r`, and the projecti
 This is not a circuit-size lower bound. The high exponents have short repeated-squaring circuits. In this example the full true closure even has a polynomial-size circuit presentation:
 
 ```math
-U_i-t^{2^r-2^i}U_r=0\quad(0\le i<r),
+U_i-t^{2^r-2^i}U_r=0\quad(0\le i\lt r),
 \qquad W-t^{2^r}U_r=0.
 ```
 

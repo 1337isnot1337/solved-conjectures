@@ -36,9 +36,9 @@ to
 
 ```math
 \begin{aligned}
-f\land g&=\mathop{\mathrm{ML}}(fg),\\
-f\lor g&=f+g-\mathop{\mathrm{ML}}(fg),\\
-\neg f&=1-f.
+f\land g&=\mathop{\mathrm{ML}}(fg),
+\\ f\lor g&=f+g-\mathop{\mathrm{ML}}(fg),
+\\ \neg f&=1-f.
 \end{aligned}
 ```
 
@@ -98,9 +98,9 @@ For every fixed cut A | B and all Boolean functions f,g,
 
 ```math
 \begin{aligned}
-r_A(f\land g)&\le r_A(f)r_A(g),\\
-r_A(f\lor g)&\le r_A(f)+r_A(g)+r_A(f)r_A(g),\\
-|r_A(\neg f)-r_A(f)|&\le1.
+r_A(f\land g)&\le r_A(f)r_A(g),
+\\ r_A(f\lor g)&\le r_A(f)+r_A(g)+r_A(f)r_A(g),
+\\ |r_A(\neg f)-r_A(f)|&\le1.
 \end{aligned}
 ```
 
@@ -130,9 +130,9 @@ Then
 
 ```math
 \begin{aligned}
-\sigma_A(\neg f)&=\sigma_A(f),\\
-\sigma_A(f\land g)&\le\sigma_A(f)\sigma_A(g),\\
-\sigma_A(f\lor g)&\le\sigma_A(f)\sigma_A(g).
+\sigma_A(\neg f)&=\sigma_A(f),
+\\ \sigma_A(f\land g)&\le\sigma_A(f)\sigma_A(g),
+\\ \sigma_A(f\lor g)&\le\sigma_A(f)\sigma_A(g).
 \end{aligned}
 ```
 

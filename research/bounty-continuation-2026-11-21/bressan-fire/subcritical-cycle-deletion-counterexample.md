@@ -26,13 +26,13 @@ Let
 
 ```math
 \begin{aligned}
-C&=\{(x,y):(x-A)^2+y^2=1\},\\
-K_H&=\{(A,y):1\le |y|\le H\},\\
-x_j&=2A-\frac12+\frac{j}{2H+1}
-\qquad(1\le j\le2H),\\
-M_j&=\{(x_j,y):-1/2\le y\le1/2\},\\
-M&=\bigcup_{j=1}^{2H}M_j,\\
-G_0&=C\cup K_H,\qquad
+C&=\{(x,y):(x-A)^2+y^2=1\},
+\\ K_H&=\{(A,y):1\le |y|\le H\},
+\\ x_j&=2A-\frac12+\frac{j}{2H+1}
+\qquad(1\le j\le2H),
+\\ M_j&=\{(x_j,y):-1/2\le y\le1/2\},
+\\ M&=\bigcup_{j=1}^{2H}M_j,
+\\ G_0&=C\cup K_H,\qquad
 G=G_0\cup M,\qquad
 G'=K_H\cup M.
 \end{aligned}
@@ -125,10 +125,10 @@ Let $`z=(A,y)`$ be one crossing with $`|y|>H`$, let $`p\in B(0,1)`$ be the path'
 ```math
 \begin{aligned}
 \mathop{\mathrm{length}}(\text{path})
-&\ge |z-p|+|q-z|\\
-&\ge |z|-|p|+|z-P|-|q-P|\\
-&>2\sqrt{A^2+y^2}-2\\
-&\ge T_*.
+&\ge |z-p|+|q-z|
+\\ &\ge |z|-|p|+|z-P|-|q-P|
+\\ &>2\sqrt{A^2+y^2}-2
+\\ &\ge T_*.
 \end{aligned}
 \tag{7}
 ```
@@ -152,8 +152,8 @@ It is already within the available budget at $`T_*`$:
 \begin{aligned}
 \sigma T_* -\mathcal H^1(G)
 &=\left(\frac{19\sqrt{29}}{25}-4\right)H
-  -\frac95-2\pi\\
-&>\frac4{75}H-\frac{49}{5}
+  -\frac95-2\pi
+\\ &>\frac4{75}H-\frac{49}{5}
 >0.
 \end{aligned}
 \tag{9}

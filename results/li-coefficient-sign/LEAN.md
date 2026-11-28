@@ -43,8 +43,8 @@ not refute the separate second question in Problem 4.6.
 For a finite colour type `σ`, the formal polynomial is
 
 ```math
-X_{T,\sigma}=\sum_{\substack{\kappa:V(T)\to\sigma\\
-u\sim v\Rightarrow\kappa(u)\ne\kappa(v)}}
+X_{T,\sigma}=\sum_{\substack{\kappa:V(T)\to\sigma
+\\ u\sim v\Rightarrow\kappa(u)\ne\kappa(v)}}
 \prod_{v\in V(T)}x_{\kappa(v)}.
 ```
 

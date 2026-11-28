@@ -1,6 +1,6 @@
 # Recovery after a long stochastic Collatz phase
 
-Start Althöfer’s fair-sign chain at $s+2^{d+2}c$, where $s\in\{-1,1\}$, $c$ is a positive odd integer, and $d\ge1$. In this phase, each move reduces the exponent by one or two with equal probability, multiplies the coefficient by three, and preserves $s$. End the phase when the exponent first falls to two or one. Write $Y$ for its terminal integer. On the next $K$ moves let $V_i$ be the number of halvings on move $i$, and $G_K$ the number of pre-move states congruent to 3 or 5 modulo 8. The two literal transitions at 1 may be continued with fresh signs, both giving state 1. [Sponsor’s rules and €300 offer](https://althofer.de/collatz-prizes.html) · [Stopped-phase law](../bounty-continuation-2026-11-21/althofer-stochastic-phase/README.md)
+Start Althöfer’s fair-sign chain at $s+2^{d+2}c$, where $`s\in\{-1,1\}`$, $c$ is a positive odd integer, and $d\ge1$. In this phase, each move reduces the exponent by one or two with equal probability, multiplies the coefficient by three, and preserves $s$. End the phase when the exponent first falls to two or one. Write $Y$ for its terminal integer. On the next $K$ moves let $V_i$ be the number of halvings on move $i$, and $G_K$ the number of pre-move states congruent to 3 or 5 modulo 8. The two literal transitions at 1 may be continued with fresh signs, both giving state 1. [Sponsor’s rules and €300 offer](https://althofer.de/collatz-prizes.html) · [Stopped-phase law](../bounty-continuation-2026-11-21/althofer-stochastic-phase/README.md)
 
 **Theorem.** Put $K=\lfloor(\log_2 d)/9\rfloor$. As $d$ tends to infinity, the probability of the two events
 
@@ -14,7 +14,7 @@ tends to one, uniformly in $s,c$, even conditional on either type of phase exit.
 
 ## The coefficient at exit
 
-Let $S_t$ be a sum of $t$ independent uniform increments from $\{1,2\}$ and $T=\min\{t:S_t\ge d\}$. Then $Y=s+2^e3^Tc$, where $e=2$ on an exact hit and $e=1$ on an overshoot. The unnormalized masses of the two exit time laws are
+Let $S_t$ be a sum of $t$ independent uniform increments from $`\{1,2\}`$ and $`T=\min\{t:S_t\ge d\}`$. Then $Y=s+2^e3^Tc$, where $e=2$ on an exact hit and $e=1$ on an overshoot. The unnormalized masses of the two exit time laws are
 
 ```math
 A_d(t)=2^{-t}\binom t{d-t},\qquad B_d(t)=2^{-t}\binom{t-1}{d-t}.

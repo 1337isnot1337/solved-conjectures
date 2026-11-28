@@ -319,8 +319,8 @@ normalized old spectral point with those wire values which satisfies
 ```math
 \begin{gathered}
 \text{there is a normalized geodesic tripod point with old wire
-triple }\gamma\text{ and }u(ABC)=1\\
-\Longleftrightarrow\quad
+triple }\gamma\text{ and }u(ABC)=1
+\\ \Longleftrightarrow\quad
 \text{some normalized old point with wire triple }\gamma
 \text{ satisfies (1).}
 \end{gathered}                                    \tag{6}

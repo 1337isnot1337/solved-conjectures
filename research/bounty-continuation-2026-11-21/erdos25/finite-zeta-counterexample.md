@@ -49,8 +49,8 @@ Avoiding every product modulus in (2) is equivalent to $`\Omega_P(n)\le1`$. The 
 The activated class modulo $`3`$ omits its first positive representative $`2`$, but $`2`$ is already in the even class. Every other class has residue zero. Consequently the activated union $`B_P`$ is exactly its completed positive periodic union. Its complement is
 
 ```math
-A_P=\{n\ge1:n\text{ is odd},\ n\not\equiv2\pmod3,\
-\Omega_P(n)\le1\}.                                       \tag{3}
+A_P=\{n\ge1:n\text{ is odd},\ n\not\equiv2\pmod3,
+\ \Omega_P(n)\le1\}.                                       \tag{3}
 ```
 
 Define, for $`s\ge1`$,
@@ -80,9 +80,9 @@ Let $`\chi`$ be the real nonprincipal character modulo $`3`$:
 ```math
 \chi(n)=
 \begin{cases}
-0,&3\mid n,\\
-1,&n\equiv1\pmod3,\\
--1,&n\equiv2\pmod3.
+0,&3\mid n,
+\\ 1,&n\equiv1\pmod3,
+\\ -1,&n\equiv2\pmod3.
 \end{cases}
 ```
 
@@ -98,11 +98,11 @@ L_1:=L(1)
 Let
 
 ```math
-S_P(s)=\sum_{\substack{n\ge1,\ n\text{ odd}\\
-\Omega_P(n)\le1}}n^{-s},
+S_P(s)=\sum_{\substack{n\ge1,\ n\text{ odd}
+\\ \Omega_P(n)\le1}}n^{-s},
 \qquad
-K_P(s)=\sum_{\substack{n\ge1,\ n\text{ odd}\\
-\Omega_P(n)\le1}}\chi(n)n^{-s}.
+K_P(s)=\sum_{\substack{n\ge1,\ n\text{ odd}
+\\ \Omega_P(n)\le1}}\chi(n)n^{-s}.
 ```
 
 Every permitted integer has either no prime factor in $`P`$, or exactly one such prime to the first power. Absolute convergence and the Euler products therefore give
@@ -122,10 +122,10 @@ Within the sum defining $`S_P`$, the mass divisible by $`3`$ is $`3^{-s}S_P`$. M
 ```math
 \begin{aligned}
 R_P(s)
-&:=\frac1{\zeta(s)}\sum_{n\in A_P}n^{-s}\\
-&=\frac{(1+3^{-s})S_P(s)+K_P(s)}{2\zeta(s)}\\
-&=\frac12(1+3^{-s})(1-2^{-s})V_s^-(1+W_s)\\
-&\quad+\frac12(1-W_s)(1+2^{-s})
+&:=\frac1{\zeta(s)}\sum_{n\in A_P}n^{-s}
+\\ &=\frac{(1+3^{-s})S_P(s)+K_P(s)}{2\zeta(s)}
+\\ &=\frac12(1+3^{-s})(1-2^{-s})V_s^-(1+W_s)
+\\ &\quad+\frac12(1-W_s)(1+2^{-s})
 \frac{L(s)}{\zeta(s)}V_s^+.
 \end{aligned}                                           \tag{9}
 ```

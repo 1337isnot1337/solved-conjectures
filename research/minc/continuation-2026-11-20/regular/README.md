@@ -19,7 +19,7 @@ The new diagnostic fixes all but `r` rows of a design and preserves all column s
 For fixed rows `B` and an `r`-set of columns `S`, let
 
 ```math
-h(S)=\operatorname{per} B[[n-r],[n]\setminus S].
+h(S)=\mathop{\mathrm{per}} B[[n-r],[n]\setminus S].
 ```
 
 The program computes every `h(S)` together by exact subset dynamic programming. If the free rows are `x_1,...,x_r`, their full permanent is then
@@ -66,7 +66,7 @@ The new source checked was Suvrit Sra, *A new proof of van der Waerden's inequal
 For clarity, let `mu_P` maximize entropy among permutation laws with marginals `P`, and let `nu_P(sigma)=prod_i p_(i,sigma(i))/per(P)`. Direct substitution gives the exact identity
 
 ```math
-\log\operatorname{per}P=-I(P)+D(\mu_P\|\nu_P).
+\log\mathop{\mathrm{per}}P=-I(P)+D(\mu_P\|\nu_P).
 ```
 
 Therefore increasing `I` under an averaging operation does not order the two permanents unless the change in the nonnegative relative-entropy term is also controlled. In addition, averaging or reparametrizing the Gibbs law need not preserve the lattice with entries in multiples of `1/k`. Neither missing step was proved. This source does not settle C24.

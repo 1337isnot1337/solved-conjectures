@@ -31,7 +31,7 @@ Complete the affine plane to a projective plane. Define a point-line duality sen
 
 For even $q$, a polarity cannot have only one absolute point. On the polar line of any nonabsolute point $P$, the involution $Q\mapsto Q^\perp\cap P^\perp$ has a fixed point, since the line has odd size $q+1$. Its fixed points are precisely the absolute points on the line. The polar line of an absolute point already contains that point. Thus every line contains an absolute point. One point cannot be on every projective line when $q>1$. This is the contradiction.
 
-In particular, any such $G$ for large even $q$ would need at least $\Omega(q^{1/4})$ of its size-$q$ units in noncomplete components. A connected leave graph is not ruled out.
+In particular, any such $G$ for large even $q$ would need at least $\Omega(q^{1/4})$ of its size-$`q`$ units in noncomplete components. A connected leave graph is not ruled out.
 
 ## A spanning-tree divisibility test and a Galois constraint
 

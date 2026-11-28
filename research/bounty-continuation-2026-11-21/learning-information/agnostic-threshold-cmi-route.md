@@ -48,7 +48,7 @@ For a sample, use only thresholds at its distinct feature values and infinity. T
 Suppose a learner always outputs one of these canonical thresholds. Fix a complete supersample with distinct feature values
 
 ```math
-u_1<\cdots<u_M.
+u_1<\cdots\lt u_M.
 ```
 
 Every possible output parameter belongs to $`\{u_1,\ldots,u_M,\infty\}`$. Its prediction vector on the complete supersample uniquely identifies that parameter. The fixed labels convert prediction vectors to loss vectors bijectively. Thus, conditional on the supersample, the output and its evaluated loss vector determine each other. Data processing in both directions gives

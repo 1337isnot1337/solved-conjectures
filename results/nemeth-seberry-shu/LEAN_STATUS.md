@@ -24,7 +24,7 @@ records the strict source check, full declaration audit and stock kernel replay.
 
 The [spectral module](../../lean/Conjectures/NemethSeberryShuFourierSpectral.lean)
 checks the orthogonality of the Fourier characters and proves that the sum
-of squared unnormalized Fourier magnitudes is exactly $p\,|S|$.
+of squared unnormalized Fourier magnitudes is exactly $`p\,|S|`$.
 It identifies the Fourier vectors as eigenvectors of the complexification
 of `binaryCirculant S` with the support Fourier coefficients as eigenvalues.
 

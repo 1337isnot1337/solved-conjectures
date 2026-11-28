@@ -39,7 +39,7 @@ By the first rank-two estimate and $`c_3/c_2=qD/3`$, it is sufficient that $`\bi
 ```
 At $`q=R`$, this holds with $`U(R)\le1`$, because $`3R>5`$ and $`2R^2>6`$; $`U`$ decreases with $`q`$. Set $`q_0=R^{-1/(d-1)}`$ and $`\theta=q_0^{-1}`$. Since $`1\le\theta\le R^{1/3}<121/100`$, we have
 ```math
- q_0 U(q_0)=\frac{D^2/\theta+5D+6\theta}{(D+1)(D+2)}<R.
+ q_0 U(q_0)=\frac{D^2/\theta+5D+6\theta}{(D+1)(D+2)}\lt R.
 ```
 For $`D=2`$ the numerator is increasing in $`\theta\ge1`$; its value at $`121/100`$ is $`400/121+10+726/100<21`$. For $`D\ge3`$ the numerator is at most $`D^2+5D+726/100`$; subtracting this from $`R(D+1)(D+2)`$ gives $`3D^2/4+D/4-94/25>0`$.
 

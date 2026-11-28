@@ -15,7 +15,7 @@ inclusion-exclusion, rather than the author's subset dynamic program, and
 rational Gaussian elimination for the determinant. It verifies
 
 ```math
-\operatorname{per}A=\det A=256,\qquad
+\mathop{\mathrm{per}}A=\det A=256,\qquad
  (P_{\{j\}})_{j=1}^{8}=64(8,22,68,14,0,5,-11,8).
 ```
 
@@ -49,7 +49,7 @@ applications of the one-step hierarchy give
 ```math
 P''=2\varepsilon P+
  \sum_j(u_j+\varepsilon w_j)P_{\{j\}}+
- \sum_{j<k}(u_jw_k+u_kw_j)P_{\{j,k\}}.
+ \sum_{j\lt k}(u_jw_k+u_kw_j)P_{\{j,k\}}.
 ```
 
 The determinant multiplies by four. Splitting indices according to
@@ -58,7 +58,7 @@ displayed split formula in the addendum. For $`u=-\varepsilon w`$,
 
 ```math
 P''=2\varepsilon(P-Q),\qquad
- Q=\sum_{j<k}w_jw_kP_{\{j,k\}}.
+ Q=\sum_{j\lt k}w_jw_kP_{\{j,k\}}.
 ```
 
 When the seed is nonsingular and satisfies absolute permanent-determinant
@@ -75,7 +75,7 @@ set $`S`$, put
 ```math
 a=|S|,\qquad
  F_S=\sum_{j\notin S}w_jP_{S\cup\{j\}},\qquad
- Q_S=\sum_{\substack{j<k\\j,k\notin S}}
+ Q_S=\sum_{\substack{j\lt k\\j,k\notin S}}
                   w_jw_kP_{S\cup\{j,k\}}.
 ```
 
@@ -83,10 +83,10 @@ Then the entire two-step update is
 
 ```math
 \begin{aligned}
- P''_S&=(a^2+a+2)P_S-2Q_S,\\
- P''_{S\cup\{\alpha\}}&=(a+1)(a+2)P_S-2F_S-2Q_S,\\
- P''_{S\cup\{\beta\}}&=(a+1)(a+2)P_S+2F_S-2Q_S,\\
- P''_{S\cup\{\alpha,\beta\}}&=(a+2)(a+3)P_S-2Q_S.
+ P''_S&=(a^2+a+2)P_S-2Q_S,
+ \\ P''_{S\cup\{\alpha\}}&=(a+1)(a+2)P_S-2F_S-2Q_S,
+ \\ P''_{S\cup\{\beta\}}&=(a+1)(a+2)P_S+2F_S-2Q_S,
+ \\ P''_{S\cup\{\alpha,\beta\}}&=(a+2)(a+3)P_S-2Q_S.
 \end{aligned}
 \tag{R}
 ```
@@ -104,7 +104,7 @@ exact small input, as a convention check rather than the proof.
 
 The corner identity
 $`H_B(-1,\ldots,-1)=(-2)^N`$ follows from the first-row expansion and
-$`\operatorname{per}B=1`$ for a lower unitriangular matrix. It holds
+$`\mathop{\mathrm{per}}B=1`$ for a lower unitriangular matrix. It holds
 without assuming current permanent equality and therefore cannot by itself
 maintain that equality at the origin.
 

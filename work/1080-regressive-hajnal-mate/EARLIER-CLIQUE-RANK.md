@@ -21,10 +21,12 @@ For an HM graph, deleting the complement of a club cannot turn a graph with no p
 ## A transfinite rank reduction
 
 **Proposition 2.** For an arbitrary graph $G$ on $\omega_1$, define $r(\alpha)$ recursively as the least $\xi\le\alpha$ such that there is no infinite clique among the neighbors $\beta<\alpha$ of $\alpha$ with $r(\beta)\ge\xi$. This is well-defined: by induction $r(\beta)\le\beta$ for all earlier $\beta$, so $\xi=\alpha$ is always eligible. Set
-$$S=\{\alpha<\omega_1:r(\alpha)=\alpha\}.$$
+```math
+S=\{\alpha<\omega_1:r(\alpha)=\alpha\}.
+```
 Then $G$ has a proper regressive coloring if and only if $G[S]$ does. In particular for an HM graph with no proper regressive coloring, $S$ must be stationary.
 
-Fix a rank level $A_\xi=\{\alpha:r(\alpha)=\xi\}$. Every earlier neighborhood within $A_\xi$ has no infinite clique by the definition of rank. Apply the finite anchor construction within the level. For a nonzero limit vertex $\alpha\notin S$, encode the rank $r(\alpha)$ and the finite anchor together, with a tag if needed. These are all strictly below $\alpha$, so the tuple can be coded below $\alpha$ via the ordinal intervals above. Equal codes imply equal rank and equal anchors and therefore nonadjacency. On $S$ use the assumed regressive coloring of $G[S]$, encoded with a distinct tag; as before nonlimit vertices get pairwise distinct colors from a separate palette. This proves the reverse implication; the forward one is restriction. The final assertion follows from the countable coloring of nonstationary sets for HM graphs.
+Fix a rank level $`A_\xi=\{\alpha:r(\alpha)=\xi\}`$. Every earlier neighborhood within $A_\xi$ has no infinite clique by the definition of rank. Apply the finite anchor construction within the level. For a nonzero limit vertex $\alpha\notin S$, encode the rank $r(\alpha)$ and the finite anchor together, with a tag if needed. These are all strictly below $\alpha$, so the tuple can be coded below $\alpha$ via the ordinal intervals above. Equal codes imply equal rank and equal anchors and therefore nonadjacency. On $S$ use the assumed regressive coloring of $G[S]$, encoded with a distinct tag; as before nonlimit vertices get pairwise distinct colors from a separate palette. This proves the reverse implication; the forward one is restriction. The final assertion follows from the countable coloring of nonstationary sets for HM graphs.
 
 Equivalently $r(\alpha)$ is the stage at which $\alpha$ is peeled when one repeatedly removes vertices with no infinite clique among earlier remaining neighbors, and takes intersections at limit stages. The rank uses only the well-founded ordinal orientation, not any choice of a coloring. For every $\alpha\in S$ and each $\xi<\alpha$, an earlier infinite clique incident to $\alpha$ survives through rank $\xi$. For an HM graph all these cliques are cofinal below $\alpha$.
 

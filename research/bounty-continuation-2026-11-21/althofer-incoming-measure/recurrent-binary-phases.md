@@ -248,8 +248,8 @@ and Tonelli's theorem imply
 ```math
 \begin{aligned}
 \sum_{m\in\mathcal S}m^{-s}\sum_{t\ge0}A_s^t1(m)
-&=\nu_s(g_s)+\alpha_s\sum_{j\ge0}C_s^j(g_s|_B)\\
-&\le\nu_s(g_s)+C\frac{\mu_s(g_s)}{1-\rho}<\infty.
+&=\nu_s(g_s)+\alpha_s\sum_{j\ge0}C_s^j(g_s|_B)
+\\ &\le\nu_s(g_s)+C\frac{\mu_s(g_s)}{1-\rho}<\infty.
 \end{aligned}
 \tag{9}
 ```

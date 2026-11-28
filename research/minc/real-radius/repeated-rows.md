@@ -16,7 +16,7 @@ $(1+(n-1)y_j)/n$. Thus
 r^2=\|t(A-J_n)\|_F^2=\frac{n-1}{n}\sum_j y_j^2.
 ~~~
 
-By zero sum, $|y_j|\le\sqrt{(n-1)/n}\,\|y\|_2=r$. For $0<r<1$
+By zero sum, $`|y_j|\le\sqrt{(n-1)/n}\,\|y\|_2=r`$. For $0<r<1$
 the repeated row is strictly positive, although the exceptional row
 can contain negative entries. Put $T=\sum_j y_j^2/(1-y_j)$.
 Summing over the column of the exceptional row and dividing by $d_n$
@@ -29,7 +29,7 @@ p(t)=\frac1n\prod_j(1-y_j)\sum_j\frac{1+(n-1)y_j}{1-y_j}
 
 Here $\sum_j y_j/(1-y_j)=T$ by zero sum. In particular $p(t)>0$.
 Let $v_j=y_j/(1-y_j)$. Direct differentiation gives
-$t(\log\prod_j(1-y_j))'=-T$, $tT'=T+\|v\|_2^2$, and hence
+$t(\log\prod_j(1-y_j))'=-T$, $`tT'=T+\|v\|_2^2`$, and hence
 
 ~~~math
 t(\log p)'=\frac{\|v\|_2^2-T^2}{1+T}.
@@ -42,7 +42,7 @@ Cauchy–Schwarz gives
 T^2\le\|y\|_2^2(\|v\|_2^2-T^2/n).
 ~~~
 
-In the open unit ball $1/\|y\|_2^2+1/n>1$. Since $T>0$ for
+In the open unit ball $`1/\|y\|_2^2+1/n>1`$. Since $T>0$ for
 $y\ne0$, the derivative is strictly positive there. Continuity gives
 strict increase on the closed radial interval as well, even when a
 denominator vanishes at its endpoint. In particular this whole unit

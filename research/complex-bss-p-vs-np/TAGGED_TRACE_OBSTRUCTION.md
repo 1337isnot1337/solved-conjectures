@@ -97,7 +97,7 @@ B_j(\zeta^a)=b_j(a).
 
 ```math
 U_j(\zeta^a)
-=\zeta^{a-\sum_{\ell<j}2^\ell b_\ell(a)}.
+=\zeta^{a-\sum_{\ell\lt j}2^\ell b_\ell(a)}.
 ```
 
 The exponent is divisible by `2^j`. Raising to `2^(m-j-1)` gives `(-1)^(b_j(a))`. The first equation of (4) therefore returns the bit `b_j(a)`. The second equation multiplies by `zeta^(-2^j b_j(a))`, removing that bit and proving the next induction step. QED.

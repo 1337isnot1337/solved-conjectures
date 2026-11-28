@@ -25,17 +25,17 @@ Direct substitution in the Schur alternants gives
 ```math
 \begin{aligned}
 v_9={}&\frac{-3+2a}{4}v_0-\frac12v_2-\frac12v_4
-       +\frac{-3-2a}{4}v_6-\frac12v_7,\\
-v_8={}&(-3+2a)v_1+(-3+2a)v_3-v_5.
+       +\frac{-3-2a}{4}v_6-\frac12v_7,
+\\ v_8={}&(-3+2a)v_1+(-3+2a)v_3-v_5.
 \end{aligned}
 \tag{3}
 ```
 Every coefficient in these two relations is nonzero. The orbit weights are
 ```math
 \begin{aligned}
-w_0&=(3-2a)/32,&w_6&=(3+2a)/32,\\
-w_2&=w_4=w_7=1/16,&w_9&=1/8,\\
-w_1&=w_3=(-2+a)/16,&w_5&=w_8=(-2-a)/16.
+w_0&=(3-2a)/32,&w_6&=(3+2a)/32,
+\\ w_2&=w_4=w_7=1/16,&w_9&=1/8,
+\\ w_1&=w_3=(-2+a)/16,&w_5&=w_8=(-2-a)/16.
 \end{aligned}
 \tag{4}
 ```
@@ -54,12 +54,12 @@ with $`\beta`$ equal to the final orbit weight. Specifically,
 S_+&\simeq
  (792+560a)e_1^{\otimes4}+e_2^{\otimes4}+e_3^{\otimes4}
  +(792-560a)e_4^{\otimes4}+e_5^{\otimes4}
- +\frac18(e_1+e_2+e_3+e_4+e_5)^{\otimes4},\\
-S_-&\simeq
+ +\frac18(e_1+e_2+e_3+e_4+e_5)^{\otimes4},
+\\ S_-&\simeq
  \alpha(e_1^{\otimes4}+e_2^{\otimes4})
  +\beta e_3^{\otimes4}
- +\beta(e_1+e_2+e_3)^{\otimes4},\\
-\alpha&=-\frac{338+239a}{16},\qquad
+ +\beta(e_1+e_2+e_3)^{\otimes4},
+\\ \alpha&=-\frac{338+239a}{16},\qquad
 \beta=-\frac{2+a}{16}.
 \end{aligned}
 \tag{6}
@@ -81,8 +81,8 @@ The complete coefficient at output $`(a,b,\gamma;i,j)`$ is
 \begin{split}
 &\sum_{h=1}^d\sum_{c=1}^Q
  \alpha_h\Gamma_{\gamma,hc}
- A_h^aX_{h,c}^{ij}B_h^b\\
-&\quad+\beta\sum_{c=1}^Q
+ A_h^aX_{h,c}^{ij}B_h^b
+\\ &\quad+\beta\sum_{c=1}^Q
  \left(\sum_{h=1}^d\Gamma_{\gamma,hc}\right)
  \left(\sum_{\lambda=1}^d A_\lambda^a\right)
  \left(\sum_{\rho=1}^d X_{\rho,c}^{ij}\right)

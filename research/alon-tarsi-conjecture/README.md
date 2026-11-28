@@ -28,14 +28,14 @@ with infinite valuation allowed when $A_n=0$. Use a Sylow $p$-subgroup of the pe
 
 ## The regular action with one fixed point
 
-Let $G$ be an abelian group of odd order $q$, written additively, and take $E=G\sqcup\{e\}$ with the translation action on $G$. A reduced invariant square has $L(x,y)=e$ on one orbit of pairs $(x,y)\in G^2$ with difference $d_0=y-x$. For each other difference $d$, its entries are $L(x,x+d)=x+b_d$. The cyclic part of row $0$, together with $L(0,e)=0$, requires the $b_d$ to enumerate $G\setminus\{0\}$. Column $0$ similarly requires the $b_d-d$ to enumerate $G\setminus\{0\}$. Thus $\pi(0)=0$ and $\pi(b_d)=b_d-d$ define a permutation. Summing the differences $x-\pi(x)$ gives zero. The sum of all elements of $G$ is also zero by pairing inverses, which forces $d_0=0$. Consequently $x\mapsto x-\pi(x)$ is a permutation, and these data are reversible.
+Let $G$ be an abelian group of odd order $q$, written additively, and take $`E=G\sqcup\{e\}`$ with the translation action on $G$. A reduced invariant square has $L(x,y)=e$ on one orbit of pairs $(x,y)\in G^2$ with difference $d_0=y-x$. For each other difference $d$, its entries are $L(x,x+d)=x+b_d$. The cyclic part of row $0$, together with $L(0,e)=0$, requires the $b_d$ to enumerate $`G\setminus\{0\}`$. Column $0$ similarly requires the $b_d-d$ to enumerate $`G\setminus\{0\}`$. Thus $\pi(0)=0$ and $\pi(b_d)=b_d-d$ define a permutation. Summing the differences $x-\pi(x)$ gives zero. The sum of all elements of $G$ is also zero by pairing inverses, which forces $d_0=0$. Consequently $x\mapsto x-\pi(x)$ is a permutation, and these data are reversible.
 
 All translations have even sign. The product of the signs of the $q$ rows indexed by $G$ therefore equals the sign of row $0$. The column product likewise equals the sign of column $0$. Reindex column $0$ by $d=-x$ and compare it with row $0$ indexed by $d=y$. On the output symbols the two lines then differ by $\pi$ extended to fix $e$. The reindexing has sign $(-1)^{(q-1)/2}$. The distinguished row and column are identities, so the fixed signed contribution is
 
 ```math
 (-1)^{(q-1)/2} S_G,
 \qquad
-S_G=\sum_{\substack{\pi(0)=0\\\pi,\ x\mapsto x-\pi(x)\text{ permutations}}}\operatorname{sgn}(\pi).
+S_G=\sum_{\substack{\pi(0)=0\\\pi,\ x\mapsto x-\pi(x)\text{ permutations}}}\mathop{\mathrm{sgn}}(\pi).
 ```
 
 Let $T_g$ be the translation matrix on $G$. In the determinant of $\sum_g x_g T_g$, the coefficient of $\prod_g x_g$ counts signed permutations with distinct differences. Output translation acts freely on those permutations and has precisely one representative with $\pi(0)=0$ in each orbit. It preserves the sign, hence this coefficient is $q S_G$.
@@ -51,7 +51,7 @@ C(m)\prod_g m_g!
   \prod_{B\in\mathcal P} (|B|-1)!,
 ```
 
-where the sum is over set partitions of the labels and each block has $\sum_{i\in B}g_i=0$. Indeed, put $Z=\sum_i t_i T_{g_i}$. The coefficient of $\prod_i t_i$ in $\det(I+Z)$ equals the polarized coefficient on the left. In $\log\det(I+Z)=\sum_{k\ge1}(-1)^{k-1}\operatorname{tr}(Z^k)/k$, the coefficient for a squarefree block of size $k$ is $(-1)^{k-1}(k-1)!\operatorname{tr}(T_{\sum_{i\in B}g_i})$. The trace is $q$ if the sum is zero and zero otherwise. Exponentiation gives the partition formula. The logarithm identity follows by diagonalizing the commuting translation matrices over $\mathbb C$ and expanding $\log(1+t)$ formally.
+where the sum is over set partitions of the labels and each block has $\sum_{i\in B}g_i=0$. Indeed, put $Z=\sum_i t_i T_{g_i}$. The coefficient of $\prod_i t_i$ in $\det(I+Z)$ equals the polarized coefficient on the left. In $`\log\det(I+Z)=\sum_{k\ge1}(-1)^{k-1}\mathop{\mathrm{tr}}(Z^k)/k`$, the coefficient for a squarefree block of size $k$ is $`(-1)^{k-1}(k-1)!\mathop{\mathrm{tr}}(T_{\sum_{i\in B}g_i})`$. The trace is $q$ if the sum is zero and zero otherwise. Exponentiation gives the partition formula. The logarithm identity follows by diagonalizing the commuting translation matrices over $\mathbb C$ and expanding $\log(1+t)$ formally.
 
 If the full list does not sum to zero then $C(m)=0$. Otherwise the one-block term is $(-1)^{q-1}q!$. For block sizes $s_1,\ldots,s_b$, Legendre’s formula gives the difference in valuation from this term as
 
@@ -82,8 +82,8 @@ If $G$ is cyclic, translation by its subgroup of order $p^{a-1}$ preserves the z
 v_p(S_G)=v_p((q-1)!),\qquad
 U_G\equiv
 \begin{cases}
-4\pmod{9}, & p=3\text{ and }G\text{ cyclic},\\
-1\pmod{p^2}, & \text{otherwise}.
+4\pmod{9}, & p=3\text{ and }G\text{ cyclic},
+\\ 1\pmod{p^2}, & \text{otherwise}.
 \end{cases}
 ```
 

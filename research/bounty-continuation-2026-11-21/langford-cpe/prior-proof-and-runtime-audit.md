@@ -6,7 +6,7 @@ solution, prize acceptance, or payment is claimed.
 ## The payable statement
 
 Langford's [15 March 2010 sponsor post](https://hunch.net/?p=1253)
-offers US$1,000. The
+offers US\$1,000. The
 [COLT 2010 statement](https://www.learningtheory.org/colt2010/papers/OpenProblemLangford.pdf)
 asks for a reduction from multiclass conditional-probability estimation
 to bounded binary regression. Training and decoding must both take

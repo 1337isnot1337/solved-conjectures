@@ -169,8 +169,8 @@ identities
 ```math
 \begin{aligned}
 u(C,A,\gamma(t))
- &=\frac{r(0)+r(t)+t}{2}-F(t),\\
-u(C,B,\gamma(t))
+ &=\frac{r(0)+r(t)+t}{2}-F(t),
+\\ u(C,B,\gamma(t))
  &=\frac{r(L)+r(t)+L-t}{2}-F(L)+F(t)
 \end{aligned}
 ```
@@ -286,7 +286,7 @@ The right side is zero at $`t=p`$. Its derivative there is zero by
 
 ```math
 f_s(p)=f(p)=h
-\qquad(0<s\le1).
+\qquad(0\lt s\le1).
 \tag{18}
 ```
 
@@ -300,8 +300,8 @@ and $`B`$. Its speed in the parameter $`s`$ is $`R`$, so
 
 ```math
 \begin{aligned}
-d(C_s,A)&=p-sR\cos\alpha+o(s),\\
-d(C_s,B)&=L-p-sR\cos\beta+o(s).
+d(C_s,A)&=p-sR\cos\alpha+o(s),
+\\ d(C_s,B)&=L-p-sR\cos\beta+o(s).
 \end{aligned}
 ```
 
@@ -353,7 +353,7 @@ bounds every derivative of $`G_s`$ at a differentiability point in
 $`[-\eta,\eta]`$ between those two secant slopes. Equivalently,
 
 ```math
-|r_s'(t)-v|<h
+|r_s'(t)-v|\lt h
 \quad\text{for almost every }
 t\in[p-s\eta,p+s\eta].
 \tag{21}

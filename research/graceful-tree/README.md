@@ -4,7 +4,7 @@
 
 ## Target and sources
 
-The graceful tree conjecture asks whether every finite tree with $m$ edges admits a bijection of its vertices with $\{0,\ldots,m\}$ whose absolute edge differences are exactly $\{1,\ldots,m\}$. This is Rosa’s beta-valuation formulation. The November 24, 2026 source check found recent work on graceful supertrees and on algebraic label certificates, with the universal assertion still open. [Rosa’s original source pointer](https://mathconjectures.com/references/Rosa1967Graceful) · [Okechukwu, November 2026](https://arxiv.org/abs/2611.01340) · [Rooted Weyl alternants](https://prism.metriq.org/papers/math-2026-10/)
+The graceful tree conjecture asks whether every finite tree with $m$ edges admits a bijection of its vertices with $`\{0,\ldots,m\}`$ whose absolute edge differences are exactly $`\{1,\ldots,m\}`$. This is Rosa’s beta-valuation formulation. The November 24, 2026 source check found recent work on graceful supertrees and on algebraic label certificates, with the universal assertion still open. [Rosa’s original source pointer](https://mathconjectures.com/references/Rosa1967Graceful) · [Okechukwu, November 2026](https://arxiv.org/abs/2611.01340) · [Rooted Weyl alternants](https://prism.metriq.org/papers/math-2026-10/)
 
 The classical delta construction of Stanton and Zarnke amalgamates equal copies with the vertices of a graceful host. Mavronicolas and Michael, and other authors, give substitution theorems using alpha-labeled trees and matching boundaries. The constructions over paths and caterpillars allow different orders at different pairs of locations, with the two attachments at a chosen pair equal in order. The compatibility tested here permits unequal orders within a reflected pair and allows signed differences of both signs. Priority for this variable-order rule is provisional. [Mavronicolas–Michael](https://www.sciencedirect.com/science/article/pii/S0012365X08005992) · [*Alpha-trees over paths and caterpillars*](https://combinatorialpress.com/um-articles/vol-123/alpha-trees-over-paths-and-caterpillars/)
 
@@ -23,8 +23,8 @@ The middle attachment, when $q$ is odd, only needs the common root label and a g
 ```math
 f_i(x)=
 \begin{cases}
-b_i+g_i(x),&x\in A_i,\\
-b_{\bar i}+g_i(x),&x\in B_i.
+b_i+g_i(x),&x\in A_i,
+\\ b_{\bar i}+g_i(x),&x\in B_i.
 \end{cases}
 ```
 
@@ -50,6 +50,6 @@ If all orders equal $m$, the missing differences are $m,2m,\ldots,(q-1)m$, and a
 
 A useful way to obtain unequal compatible attachments is to start with a compatible pair of the same order with label zero on the side opposite the root. Add any number of new leaves in each copy at its zero-labeled vertex. Assign the new leaves the successive labels above its old maximum. This keeps the root label and both signatures on the old levels. The new labels lie on the root side, and all the corresponding signed differences are positive. The two attachments can start with the same signatures on nonisomorphic trees and can receive independently chosen numbers of new leaves.
 
-The [exact checker](verify.py) uses two attachments on labels $0,\ldots,5$ with common root label $1$. They have the same edges of differences two through five, namely $(1,3),(2,5),(0,4),(0,5)$. Their edges of difference one are $(0,1)$ and $(3,4)$ respectively. The first has maximum degree three, and the second is a path. Their root side is $\{1,4,5\}$ and their sign lists are $(+,-,+,+,+)$. Appending different numbers of leaves at zero and using a three-vertex path host gives an exact graceful labeling on 20 vertices. A second check uses symmetric orders and a branching host with centered intervals, giving a labeling on 28 vertices. Replay with `python3 research/graceful-tree/verify.py`.
+The [exact checker](verify.py) uses two attachments on labels $0,\ldots,5$ with common root label $1$. They have the same edges of differences two through five, namely $(1,3),(2,5),(0,4),(0,5)$. Their edges of difference one are $(0,1)$ and $(3,4)$ respectively. The first has maximum degree three, and the second is a path. Their root side is $`\{1,4,5\}`$ and their sign lists are $(+,-,+,+,+)$. Appending different numbers of leaves at zero and using a three-vertex path host gives an exact graceful labeling on 20 vertices. A second check uses symmetric orders and a branching host with centered intervals, giving a labeling on 28 vertices. Replay with `python3 research/graceful-tree/verify.py`.
 
 For arbitrary trees, the proof leaves open how to choose and label attachments that satisfy the compatibility requirements. The labeling identities apply once those requirements and the host condition hold.

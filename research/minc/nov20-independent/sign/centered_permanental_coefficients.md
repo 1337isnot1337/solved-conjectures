@@ -65,8 +65,8 @@ Complex Gaussian moments give
 \mathbb E\,e_k(Y)\overline{e_\ell(Y)}
 =
 \begin{cases}
-\sigma_k(C),&k=\ell,\\
-0,&k\ne\ell.
+\sigma_k(C),&k=\ell,
+\\ 0,&k\ne\ell.
 \end{cases}                                                \tag{3}
 ```
 
@@ -200,8 +200,8 @@ The product rule and $`r/(1+r^2)\le1/2`$ give
 &\le \frac{6r}{1+r^2}
 +\frac{12r^3}{(1+r^2)^2}
 +\frac{2r^3}{(1+r^2)^2}
-+\frac{8r^5}{(1+r^2)^3}\\
-&\le3+6+1+4=14.
++\frac{8r^5}{(1+r^2)^3}
+\\ &\le3+6+1+4=14.
 \end{split}
 ```
 
@@ -315,9 +315,9 @@ For an independent standard real Gaussian $`Z`$, (11) gives
 ```math
 \begin{split}
 \mathbb Ee^{cG(W)^2}
-&=\mathbb E_Z\mathbb E_W e^{\sqrt{2c}\,ZG(W)}\\
-&\le\mathbb E_Z e^{\sqrt{2c}\,\mu Z+cb^2Z^2}\\
-&=(1-2cb^2)^{-1/2}
+&=\mathbb E_Z\mathbb E_W e^{\sqrt{2c}\,ZG(W)}
+\\ &\le\mathbb E_Z e^{\sqrt{2c}\,\mu Z+cb^2Z^2}
+\\ &=(1-2cb^2)^{-1/2}
 \exp\left(\frac{c\mu^2}{1-2cb^2}\right).
 \end{split}
 ```
@@ -332,8 +332,8 @@ standard Gaussian vector in $`\mathbb R^{2n}`$ and
 ```math
 SS^T=\Sigma=\frac12
 \begin{pmatrix}
-\mathop{\mathrm{Re}}C&-\mathop{\mathrm{Im}}C\\
-\mathop{\mathrm{Im}}C&\mathop{\mathrm{Re}}C
+\mathop{\mathrm{Re}}C&-\mathop{\mathrm{Im}}C
+\\ \mathop{\mathrm{Im}}C&\mathop{\mathrm{Re}}C
 \end{pmatrix}.
 ```
 

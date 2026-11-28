@@ -12,8 +12,8 @@ For a Hermitian positive semidefinite matrix A, put
 
 ```math
 H=A\circ\overline A,\qquad
-R_{ij}=\operatorname{per}A(j\mid i),\qquad
-L_{ij}=\operatorname{per}H(j\mid i).
+R_{ij}=\mathop{\mathrm{per}}A(j\mid i),\qquad
+L_{ij}=\mathop{\mathrm{per}}H(j\mid i).
 ```
 
 The transposed-cofactor convention makes R Hermitian. L is real
@@ -32,9 +32,9 @@ semidefiniteness. Taking the quadratic form at the all-one vector then
 gives
 
 ```math
-\sum_{i,j}|a_{ij}|^2|\operatorname{per}A(i\mid j)|^2
-\ge \sum_{i,j}|a_{ij}|^2\operatorname{per}H(i\mid j)
-=n\operatorname{per}H.
+\sum_{i,j}|a_{ij}|^2|\mathop{\mathrm{per}}A(i\mid j)|^2
+\ge \sum_{i,j}|a_{ij}|^2\mathop{\mathrm{per}}H(i\mid j)
+=n\mathop{\mathrm{per}}H.
 ```
 
 Together with the published Pate upper bound, this would prove Chollet's
@@ -70,10 +70,10 @@ Their Gram matrix is
 
 ```math
 A=\begin{pmatrix}
-1&0&1&1\\
-0&1&1&-1\\
-1&1&2&0\\
-1&-1&0&2
+1&0&1&1
+\\ 0&1&1&-1
+\\ 1&1&2&0
+\\ 1&-1&0&2
 \end{pmatrix}\succeq0.
 ```
 
@@ -96,12 +96,12 @@ form -4. In the order (12,13,14,23,24,34), the full difference is
 
 ```math
 \Delta=\begin{pmatrix}
-0&0&0&0&0&-2\\
-0&4&0&0&0&0\\
-0&0&4&0&0&0\\
-0&0&0&4&0&0\\
-0&0&0&0&4&0\\
--2&0&0&0&0&0
+0&0&0&0&0&-2
+\\ 0&4&0&0&0&0
+\\ 0&0&4&0&0&0
+\\ 0&0&0&4&0&0
+\\ 0&0&0&0&4&0
+\\ -2&0&0&0&0&0
 \end{pmatrix}.
 ```
 
@@ -253,7 +253,7 @@ Thus (1) is equivalent to the angle bound
 \|(P_{\rm diag}-P_{\rm sep})Y\|^2
 \le(m!-1)\|P_{\rm sep}Y\|^2
 \quad\text{for every }Y\in
-\mathcal E:=\operatorname{span}\{P_{\rm diag}W_i\}.         \tag{7}
+\mathcal E:=\mathop{\mathrm{span}}\{P_{\rm diag}W_i\}.         \tag{7}
 ```
 
 Equivalently, the minimum singular value of P_sep restricted to E

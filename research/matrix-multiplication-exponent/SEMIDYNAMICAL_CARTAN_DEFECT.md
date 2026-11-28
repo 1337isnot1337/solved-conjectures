@@ -49,9 +49,9 @@ of K_c separately gives
 ```math
 \begin{aligned}
 R\big(P_c(u)\otimes I+I\otimes P_c(v+\eta)\big)
-&-\big(P_c(u+\eta)\otimes I+I\otimes P_c(v)\big)R\\
-&=F[R_S,K_c]G^{-1}.                                   \tag{2}
-\end{aligned}
+&-\big(P_c(u+\eta)\otimes I+I\otimes P_c(v)\big)R
+\\ &=F[R_S,K_c]G^{-1}.
+\end{aligned} \tag{2}
 ```
 
 No dynamical variable is evaluated or discarded in (2).
@@ -72,8 +72,8 @@ of q, it commutes with every T_c. Define
 ```math
 \begin{aligned}
 H_{\rm in}&=\frac{u+\eta}{u}Lplus_1(u)
-       +\frac{v+2\eta}{v+\eta}Lplus_2(v+\eta),\\
-H_{\rm out}&=\frac{u+2\eta}{u+\eta}Lplus_1(u+\eta)
+       +\frac{v+2\eta}{v+\eta}Lplus_2(v+\eta),
+\\ H_{\rm out}&=\frac{u+2\eta}{u+\eta}Lplus_1(u+\eta)
        +\frac{v+\eta}{v}Lplus_2(v).
 \end{aligned}
 ```

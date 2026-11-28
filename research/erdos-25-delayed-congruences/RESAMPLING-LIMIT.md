@@ -13,7 +13,7 @@ This is the count vector from multiprime resampling, with its subset law left ar
 ```math
  \mathbb E\sum_{g\in G}|V_I(g)-|G|^{-1}|\longrightarrow0,
 ```
-then necessarily $\log|G|=o(\sqrt\lambda\,\log\lambda)$.
+then necessarily $`\log|G|=o(\sqrt\lambda\,\log\lambda)`$.
 
 ## The absolute mass controls the number of added primes
 

@@ -12,7 +12,7 @@ B(X)=1+\sum_{i=0}^{n-1}2^iX_i.
 ```
 
 
-The labels $B(e)$, $e\in\{0,1\}^n$, are still pairwise distinct: they are the integers $1,\ldots,N$, reduced modulo $p$.
+The labels $B(e)$, $`e\in\{0,1\}^n`$, are still pairwise distinct: they are the integers $1,\ldots,N$, reduced modulo $p$.
 
 ### Proposition 1.1
 
@@ -122,7 +122,7 @@ If $m=1$, the right side has value one at the unique Boolean point with $B(e)=j$
 
 If $m>1$, the right side vanishes at every Boolean point, including $B(e)=j$. The leading global Laurent coefficient is zero only in the Boolean quotient. In particular, $(y-j)U(X,y)$ still has poles as a polynomial in $X$; its pole order is $m-1$. One cannot apply the definition of a border circuit to it before removing these negative-power terms.
 
-At the level of values on the Boolean cube, the coefficient of $(y-j)^{-1}$ in $U$ is the point idempotent. At the level of a polynomial representative, obtaining that coefficient from the leading expansion may require access up to order $m-1$. An arbitrary cofactor can make $m$ exponential in circuit size by repeated powering. Ordinary truncated coefficient tracking then has dependence on $m$, and no polynomial-in-$\log m$ transformation is established here.
+At the level of values on the Boolean cube, the coefficient of $(y-j)^{-1}$ in $U$ is the point idempotent. At the level of a polynomial representative, obtaining that coefficient from the leading expansion may require access up to order $m-1$. An arbitrary cofactor can make $m$ exponential in circuit size by repeated powering. Ordinary truncated coefficient tracking then has dependence on $m$, and no polynomial-in-$`\log m`$ transformation is established here.
 
 There is no contradiction between these statements: specialization to the Boolean quotient kills the higher pole coefficients, while taking the global leading Laurent coefficient occurs before that quotient operation.
 
@@ -138,9 +138,9 @@ Therefore producing individual point representatives does not supply a cheap sum
 
 ## 3. Grouped residues and the missing contraction
 
-For a set $T\subseteq\{1,\ldots,N\}$, the sum of the Boolean residue vectors at poles in $T$ is the indicator of the corresponding set of bit strings. If membership in that set has a small Boolean circuit, arithmetizing that Boolean circuit already gives a small polynomial representative of the indicator. The representative may have large individual degrees and is not necessarily the canonical multilinear polynomial.
+For a set $`T\subseteq\{1,\ldots,N\}`$, the sum of the Boolean residue vectors at poles in $T$ is the indicator of the corresponding set of bit strings. If membership in that set has a small Boolean circuit, arithmetizing that Boolean circuit already gives a small polynomial representative of the indicator. The representative may have large individual degrees and is not necessarily the canonical multilinear polynomial.
 
-A concrete test uses $m^2$ bits indexed by entries of an $m$-by-$m$ matrix. Let $T$ encode the Boolean permutation matrices. A polynomial representative of its indicator is obtained by multiplying the row and column exact-one predicates. For one row $Z_1,\ldots,Z_m$, an exact-one predicate is
+A concrete test uses $m^2$ bits indexed by entries of an $m$-by-$`m`$ matrix. Let $T$ encode the Boolean permutation matrices. A polynomial representative of its indicator is obtained by multiplying the row and column exact-one predicates. For one row $Z_1,\ldots,Z_m$, an exact-one predicate is
 
 
 ```math
@@ -201,7 +201,7 @@ that a prescribed finite collection of prime-adic tests, even to very
 high precision, can all be imitated by a short charged circuit whose
 univariate denominator has at most three integer roots.
 
-Let $S=\{p_1,\ldots,p_t\}$ be a nonempty finite set of primes, and let
+Let $`S=\{p_1,\ldots,p_t\}`$ be a nonempty finite set of primes, and let
 $k\ge1$. Set
 
 
@@ -242,7 +242,7 @@ v_p^G\!\left(U(e,y)-\frac1{y-j}\right)\ge k.
 
 Nevertheless $U$ is not the exact functional inverse when $n\ge1$.
 Its common univariate denominator can be taken to be $H(y)$, whose
-distinct integer roots form a subset of $\{-1,0,1\}$.
+distinct integer roots form a subset of $`\{-1,0,1\}`$.
 
 **Proof.** Since $p-1\mid d-1$, Fermat's theorem gives
 $h(j)\equiv0\pmod p$ for every integer $j$; the case $p\mid j$
@@ -301,7 +301,7 @@ O\!\left(n+\sum_{p\in S}\log_2p\right),
 
 by taking $k=Nn+1$.
 
-**Proof.** An $r$-by-$r$ minor of a digit cut has entries
+**Proof.** An $r$-by-$`r`$ minor of a digit cut has entries
 $1/(y-1-a_i-b_j)$, where the distinct increasing row and column
 labels $a_i,b_j$ are nonnegative integers less than $N$, and
 $r^2\le N$. The Cauchy determinant formula gives
@@ -405,7 +405,7 @@ theorem. It does not provide a new circuit lower bound.
 **Proposition 8.1.** Let $g_1,\ldots,g_t\in\mathbb C[X]$ be
 nonconstant polynomials with circuit sizes at most $s$, and let
 $H_1,\ldots,H_t\in\mathbb C[z]$ be arbitrary nonzero univariate
-polynomials. Every nonzero degree-$d$ factor $P$ of
+polynomials. Every nonzero degree-$`d`$ factor $P$ of
 
 
 ```math
@@ -439,7 +439,7 @@ and powers preserve their limits. The total border size is
 polynomial in $s+d+1$. $\square$
 
 The approximate factor theorem used here bounds the border
-complexity of a degree-$d$ factor polynomially in $d$ and the
+complexity of a degree-$`d`$ factor polynomially in $d$ and the
 complexity of any nonzero multiple; it is independent of the
 factor's multiplicity. The 2018 arXiv version corrects Theorem 5.7
 of the 2004 publication and is the version cited here:

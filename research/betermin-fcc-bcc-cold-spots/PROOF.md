@@ -27,7 +27,7 @@ $`a(t)=\sqrt{\pi/\alpha}\,\vartheta_3(\pi t,q)`$, where $`q=e^{-\pi^2/\alpha}\in
 ```
 with $`K>0`$ independent of $`x`$ and $`\sum_j b_j<\infty`$.
 
-Set $`s(x)=(\log a-\log u)/2=\sum_j\operatorname{artanh}(b_j x)`$, and $`g(x)=(\log a+\log u)/2`$. The function $`s(x)`$ is strictly increasing, odd, and sends $`[-1,1]`$ bijectively to $`[-S,S]`$, where $`S=s(1)>0`$. Write $`G(s(x))=g(x)`$. It is an even, strictly concave function of $`s`$. Indeed, with $`w_j=b_j/(1-b_j^2x^2)>0`$,
+Set $`s(x)=(\log a-\log u)/2=\sum_j\mathop{\mathrm{artanh}}(b_j x)`$, and $`g(x)=(\log a+\log u)/2`$. The function $`s(x)`$ is strictly increasing, odd, and sends $`[-1,1]`$ bijectively to $`[-S,S]`$, where $`S=s(1)>0`$. Write $`G(s(x))=g(x)`$. It is an even, strictly concave function of $`s`$. Indeed, with $`w_j=b_j/(1-b_j^2x^2)>0`$,
 ```math
  G'(s(x))=-x\,M(x),\qquad
  M(x)=\frac{\sum_j b_j w_j(x)}{\sum_j w_j(x)}.
@@ -52,7 +52,7 @@ For $`m=0`$ the remaining one-dimensional factor to minimize is $`a(t)+u(t)`$, e
 ```
 By the product, a period-one Gaussian sum has its unique minimum modulo $`1`$ at a half-integer. Thus $`t\in1/4+(1/2)\mathbb Z`$, which is $`s=0`$. Equality in the preceding comparison with $`m\ne0`$ can only occur at $`|s|=S`$; such endpoint $`s`$ does not minimize the one-dimensional factor. The exact minimizing pattern is therefore one quarter-integer and balanced integer/half-integer coordinates among the other $`n-1`$.
 
-To identify the deep holes, let $`y_i=\operatorname{dist}(z_i,\mathbb Z)\in[0,1/2]`$ and $`w_i=4y_i-1\in[-1,1]`$. The squared distance to $`D_n^*`$ is
+To identify the deep holes, let $`y_i=\mathop{\mathrm{dist}}(z_i,\mathbb Z)\in[0,1/2]`$ and $`w_i=4y_i-1\in[-1,1]`$. The squared distance to $`D_n^*`$ is
 ```math
  \min\left(\sum_i y_i^2,\sum_i(1/2-y_i)^2\right)
  =\tfrac1{16}\left(n+\sum_i w_i^2-2\left|\sum_i w_i\right|\right).

@@ -1,9 +1,9 @@
 # Erdős’s sum-free avoidance conjecture
 
 **Necessary condition on a counterexample.** Let $V$ be a rational vector space, let $S\subset V$ be sum-free, and let $A$ be inclusion-maximal subject to $(A\cup(A+A))\cap S=\varnothing$. If $H$ is a rational subspace containing $A$ with infinite cardinality $\kappa>|A|$, then every nonzero coset $C$ in $V/H$ satisfies
-\[
+```math
 |S\cap C|=|C\setminus S|=\kappa.
-\]
+```
 In particular, a counterexample to [Erdős Problem 949](https://www.erdosproblems.com/949) is fully mixed, in this cardinal sense, on every nonzero coset of every continuum-sized rational subspace containing the span of a maximal safe set. This is an obstruction, not a resolution.
 
 ## Proof
@@ -11,9 +11,9 @@ In particular, a counterexample to [Erdős Problem 949](https://www.erdosproblem
 Call a coset small when $|C\cap S|<\kappa$, and call it almost full when $|C\setminus S|<\kappa$. These two types are disjoint because $|C|=\kappa$.
 
 If a nonzero coset $C$ is small, then $C$ contains fewer than $\kappa$ points in
-\[
+```math
 S\ \cup\ \bigcup_{a\in A}(S-a):
-\]
+```
 each translate contributes at most $|S\cap C|$, since $a\in H$. Every other $x\in C$ is eligible to join $A$ except possibly for its diagonal sum $2x$. As $x\notin A$, maximality forces $2x\in S$. Doubling gives a bijection from $C$ to $2C$, so $2C$ is almost full.
 
 The sum of any two almost-full cosets, restricted to their points in $S$, fills the whole sum coset. For each prescribed sum $z$, one may choose its first summand in the original first coset avoiding the two sets of excluded points of size below $\kappa$. By sum-freeness the sum coset must therefore be disjoint from $S$.

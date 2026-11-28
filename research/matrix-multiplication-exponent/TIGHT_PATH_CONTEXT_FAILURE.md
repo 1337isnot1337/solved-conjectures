@@ -95,10 +95,10 @@ The existing [copied-factor counterexample](COPIED_FACTOR_COUNTEREXAMPLE.md) rej
 Consider
 ```math
 \begin{aligned}
-S_q&=U_{ABCD}(q)W_{AD}(q)W_{BD}(q)W_{CD}(q)\\
-   &=\sum_{h,a,b,c=1}^q
-      e_{ha}^A e_{hb}^B e_{hc}^C e_{habc}^D,\\
-Y_q&=U_{ABD}(q)U_{ACD}(q)U_{BCD}(q)
+S_q&=U_{ABCD}(q)W_{AD}(q)W_{BD}(q)W_{CD}(q)
+   \\ &=\sum_{h,a,b,c=1}^q
+      e_{ha}^A e_{hb}^B e_{hc}^C e_{habc}^D,
+\\ Y_q&=U_{ABD}(q)U_{ACD}(q)U_{BCD}(q)
    =\sum_{i,j,k=1}^q e_{ij}^A e_{ik}^B e_{jk}^C e_{ijk}^D.
 \end{aligned}
 \tag{10}

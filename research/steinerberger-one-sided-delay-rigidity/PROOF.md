@@ -2,10 +2,10 @@
 
 The conjecture in [Stefan Steinerberger, *A rigidity phenomenon for the Hardy–Littlewood maximal function*, §3.1, p. 275](https://www.impan.pl/shop/en/publication/transaction/download/product/91307#page=13), repeated in [*Some Open Problems*, §37](https://faculty.washington.edu/steinerb/openproblems.pdf#page=38), is false. It asks whether a real C¹ function satisfying
 
-$$
+```math
 f'(x+1)-f(x+1)=-f'(x-1)-f(x-1)
 \qquad\text{whenever } f(x)<0
-$$
+```
 
 must be a constant plus a single sinusoidal mode. The counterexample below is smooth, periodic, sign-changing and of mean zero. Neither the published theorem about the equation imposed at **all** points of a periodic function nor the separate finite-maximizing-radius conjecture is being refuted.
 
@@ -13,19 +13,19 @@ must be a constant plus a single sinusoidal mode. The counterexample below is sm
 
 Let T>0 with 1 not an integer multiple of T, and put δ=dist(1,Tℤ)>0. Choose 0<a<δ/2. Take a smooth bump φ supported on [−a,a], positive inside, even, and strictly decreasing with strictly negative derivative on (0,a); for example φ(t)=exp(−1/(1−(t/a)²)) there and zero outside (using the same formula on the negative half of its support). Define
 
-$$
+```math
 B(x)=\sum_{m\in\mathbb Z}\phi(x-mT),\qquad
 M=\int_{-a}^{a}\phi(t)\,dt,\qquad
 f(x)=1-\frac{T}{M}B(x).
-$$
+```
 
 The supports do not overlap, since 2a<δ≤T/2. The sum is locally finite and smooth. Integrating over one period gives mean zero. At zero, M<Tφ(0), so f(0)<0, whereas f=1 on the open gaps between the supports. Strict radial decrease of the bump gives exactly two zeros per period, and both are simple.
 
 If f(x)<0, then |x−mT|<a for some integer m. For every integer n and either sign,
 
-$$
-|x\pm1-nT|\ge\operatorname{dist}(1,T\mathbb Z)-|x-mT|>\delta-a>a .
-$$
+```math
+|x\pm1-nT|\ge\mathop{\mathrm{dist}}(1,T\mathbb Z)-|x-mT|>\delta-a>a .
+```
 
 Thus x+1 and x−1 are both in open gaps, where f=1 and f′=0. Both sides in the conjecture are −1. This verifies the identity at every point where it is required. The nonconstant f has an open interval of constancy and therefore cannot be a constant plus a single sinusoidal mode.
 

@@ -67,7 +67,7 @@ W_{ij}
 where E_hh acts on the preliminary outer index. Put
 
 ```math
-W_{q,L}=\sum_{i<j} W_{ij}\otimes C_{ij}\otimes D_{ij}.  \tag{5}
+W_{q,L}=\sum_{i\lt j} W_{ij}\otimes C_{ij}\otimes D_{ij}.  \tag{5}
 ```
 
 ## 2. The larger output and the exact source maps
@@ -80,7 +80,7 @@ W_{ij}^{\mathrm{empty}}
        \big|_{B_{\mathrm{empty}}\longrightarrow A_{\mathrm{occ}}},
 \qquad
 W_{q,L}^{\mathrm{empty}}
- =\sum_{i<j}W_{ij}^{\mathrm{empty}}C_{ij}D_{ij}.             \tag{6}
+ =\sum_{i\lt j}W_{ij}^{\mathrm{empty}}C_{ij}D_{ij}.             \tag{6}
 ```
 
 Restricting the B input of this tensor to B_0 gives W_(q,L).

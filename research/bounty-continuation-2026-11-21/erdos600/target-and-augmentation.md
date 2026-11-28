@@ -284,9 +284,9 @@ The number of common neighbors of two vertices $`A,B`$ is
 ```math
 |N_K(A)\cap N_K(B)|=
 \begin{cases}
-1,&A\cap B=\varnothing,\\
-3,&A\ne B\text{ and }|A\cap B|=1,\\
-6,&A=B.
+1,&A\cap B=\varnothing,
+\\ 3,&A\ne B\text{ and }|A\cap B|=1,
+\\ 6,&A=B.
 \end{cases}
 \tag{15}
 ```

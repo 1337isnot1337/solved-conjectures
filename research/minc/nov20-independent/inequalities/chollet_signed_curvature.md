@@ -11,7 +11,7 @@ is resolved.
 This note follows the [cofactor bridge](../sign/chollet_cofactor_bridge.md)
 and the [conditional diagonal extension](chollet_gram_order.md).
 It does not repeat the older Laplacian calculation for
-$`\operatorname{per}|A|^2/(\operatorname{per}A)^2`$.
+$`\mathop{\mathrm{per}}|A|^2/(\mathop{\mathrm{per}}A)^2`$.
 
 ## 1. The signed quadratic form
 
@@ -21,8 +21,8 @@ For $`\sigma\in S_n`$, put
 
 ~~~math
 f_\sigma=\prod_{i=1}^n a_{i,\sigma(i)},\qquad
-P=\sum_\sigma f_\sigma=\operatorname{per}A,\qquad
-Q=\sum_\sigma|f_\sigma|^2=\operatorname{per}|A|^2.
+P=\sum_\sigma f_\sigma=\mathop{\mathrm{per}}A,\qquad
+Q=\sum_\sigma|f_\sigma|^2=\mathop{\mathrm{per}}|A|^2.
 ~~~
 
 The vector space $`\mathbb C^{S_n}`$ has the unnormalized counting
@@ -38,7 +38,7 @@ C=L^*L,\qquad K=C-nI.
 Then
 
 ~~~math
-C_{\sigma,\tau}=\operatorname{fix}(\sigma^{-1}\tau),
+C_{\sigma,\tau}=\mathop{\mathrm{fix}}(\sigma^{-1}\tau),
 \qquad
 G=f^*Kf=\|\Gamma\|_F^2-nQ,\qquad F=\frac{G}{P^2}.             \tag{1}
 ~~~
@@ -60,7 +60,7 @@ Both $`C`$ and $`T`$ are central convolution operators and commute.
 
 Choose the vectors $`v_i`$ in $`\mathbb C^r`$ and a real orthonormal
 basis $`H_1,\ldots,H_{r^2}`$ of the Hermitian $`r\times r`$ matrices,
-with inner product $`\operatorname{tr}(H_aH_b)`$. Use the local metric
+with inner product $`\mathop{\mathrm{tr}}(H_aH_b)`$. Use the local metric
 
 ~~~math
 A(x)_{ij}
@@ -144,9 +144,9 @@ characters. Character orthogonality therefore gives the eigenvalues
 ~~~math
 K=
 \begin{cases}
-k_0=n!-n,&\text{on the trivial component},\\
-k_1=n!/(n-1)-n,&\text{on the standard component},\\
--n,&\text{on every other component}.
+k_0=n!-n,&\text{on the trivial component},
+\\ k_1=n!/(n-1)-n,&\text{on the standard component},
+\\ -n,&\text{on every other component}.
 \end{cases}                                                 \tag{7}
 ~~~
 
@@ -210,10 +210,10 @@ and
 E_K
 &=2nk_1b
  -2n\sum_{\lambda\ne(n),(n-1,1)}
-       (N-c_\lambda)\|f_\lambda\|^2\\
-&\le2nk_1b-4n(n-1)c\\
-&=4(n-1)G-4(n-1)k_0a-2(n-2)k_1b.                           \tag{10}
-\end{aligned}
+       (N-c_\lambda)\|f_\lambda\|^2
+\\ &\le2nk_1b-4n(n-1)c
+\\ &=4(n-1)G-4(n-1)k_0a-2(n-2)k_1b.
+\end{aligned} \tag{10}
 ~~~
 
 In particular,
@@ -251,7 +251,7 @@ At such a minimum, (6) becomes
 To exclude a negative minimum by this trace argument one would need
 
 ~~~math
-V_K<E_K                                                     \tag{14}
+V_K\lt E_K                                                     \tag{14}
 ~~~
 
 at that point. The proved implication (11) makes the required right
@@ -278,7 +278,7 @@ At a stationary point, the exact restricted formula is
 \frac{P^2}{2}\Delta_{\mathcal T}F
 =
 V_{K,\mathcal T}
-+\operatorname{Re}\bigl(f^*K\Delta_{\mathcal T}f\bigr)
++\mathop{\mathrm{Re}}\bigl(f^*K\Delta_{\mathcal T}f\bigr)
 -\frac{G}{P}\Delta_{\mathcal T}P.                           \tag{15}
 ~~~
 

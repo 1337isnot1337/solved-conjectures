@@ -152,7 +152,7 @@ Consequently every solution satisfies
 The root enclosure is obtained by an integer k-th root:
 
 ```math
- A^k<N\,10^{dk}<(A+1)^k,
+ A^k\lt N\,10^{dk}<(A+1)^k,
  \qquad A/10^d<\alpha<(A+1)/10^d.
 ```
 
@@ -174,7 +174,7 @@ The determinant identity and the usual convergent bound
 ```math
  |b|=|pQ_j-qP_j|
  \le Q_j|p-\alpha q|+q|\alpha Q_j-P_j|
- <KQ_j/q+q/Q_{j+1}<K+1.
+ \lt KQ_j/q+q/Q_{j+1}\lt K+1.
 ```
 
 The script therefore enumerates `|b|<=ceil(K)+1`, a safe enlargement. For

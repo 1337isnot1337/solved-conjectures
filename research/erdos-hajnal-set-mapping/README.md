@@ -18,7 +18,7 @@ Let $H_0(n)$ allow an arbitrary map $g:2^X\to X$. For $n\ge2$,
  H_0(n)\le H(n)\le H_0(n)+1 .
 ```
 
-Extending an exterior map arbitrarily to $X$ proves the left inequality. For the right inequality, put $h=H_0(n)$ and retain $g(A)$ on each proper $A$ for which $g(A)\notin A$. On the other proper subsets choose any exterior value. Given an $(h+1)$-set $Y$ and a desired value $c$, there is an $h$-set $Z\subseteq Y\setminus\{c\}$. Some $A\subseteq Z$ has $g(A)=c$ and this value survives the modification. If $h=n$, the upper inequality follows from $H(n)\le n$ by assigning $X\setminus\{c\}$ to $c$ for every $c$. Thus the divergent-gap conjecture is equivalent under the two conventions, including when a construction is first obtained for arbitrary colors. [Unrestricted problem statement](https://www.erdosproblems.com/624).
+Extending an exterior map arbitrarily to $X$ proves the left inequality. For the right inequality, put $h=H_0(n)$ and retain $g(A)$ on each proper $A$ for which $g(A)\notin A$. On the other proper subsets choose any exterior value. Given an $(h+1)$-set $Y$ and a desired value $c$, there is an $h$-set $`Z\subseteq Y\setminus\{c\}`$. Some $A\subseteq Z$ has $g(A)=c$ and this value survives the modification. If $h=n$, the upper inequality follows from $H(n)\le n$ by assigning $`X\setminus\{c\}`$ to $c$ for every $c$. Thus the divergent-gap conjecture is equivalent under the two conventions, including when a construction is first obtained for arbitrary colors. [Unrestricted problem statement](https://www.erdosproblems.com/624).
 
 ## Matching missing colors to facets
 
@@ -33,9 +33,9 @@ there is a coloring of $2^X$ such that every $h$-set sees all $q$ colors on its 
 
 Color every set of size at most $h-2$ independently and uniformly with one of the $q$ colors. For each $h$-set $Y$, create a request $(Y,c)$ for each color $c$ missing from its colored subsets. The eligible sets for a request are the $h$ facets of $Y$, namely its subsets of size $h-1$.
 
-Fix a facet $T$ and consider requests from the sets $T\cup\{i\}$, with $i\in X\setminus T$. For each $i$ there are $L$ already colored subsets of $T\cup\{i\}$ that contain $i$. Indeed, the free part in $T$ can have any size up to $h-3$, excluding the $h$ choices of sizes $h-2$ and $h-1$. For $h=2$ this gives zero. These collections of subsets are disjoint for different $i$.
+Fix a facet $T$ and consider requests from the sets $`T\cup\{i\}`$, with $i\in X\setminus T$. For each $i$ there are $L$ already colored subsets of $`T\cup\{i\}`$ that contain $i$. Indeed, the free part in $T$ can have any size up to $h-3$, excluding the $h$ choices of sizes $h-2$ and $h-1$. For $h=2$ this gives zero. These collections of subsets are disjoint for different $i$.
 
-Choose $h+1$ distinct possible requests incident to $T$. If $r_i$ of their colors are requested on $T\cup\{i\}$, its $L$ subsets just counted must all avoid those $r_i$ different colors. Independence across $i$ bounds the probability of all the chosen requests occurring by
+Choose $h+1$ distinct possible requests incident to $T$. If $r_i$ of their colors are requested on $`T\cup\{i\}`$, its $L$ subsets just counted must all avoid those $r_i$ different colors. Independence across $i$ bounds the probability of all the chosen requests occurring by
 
 ```math
  \prod_{i:r_i>0}(1-r_i/q)^L

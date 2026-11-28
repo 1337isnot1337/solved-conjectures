@@ -10,7 +10,7 @@ Fix $r\ge1$ and take the balanced Erdős–Szekeres template with $M=\binom{2r}{
 
 ## One-chain probabilities
 
-Let $A_k=\max(U_k,D_k)$ and $a_k=\min(U_k,D_k)$. For $k>r+1$, any cup or cap meeting several first-digit classes has exactly one repeated class, with $s\in\{1,\ldots,r\}$ samples outside it, each in a distinct class. The probability of any prescribed digit assignment is $M^{-k}$. There are at most $C_r k^s$ ways to choose the labels and digits of the outside singletons and the repeated digit. The probability for the remaining chain is at most $A_{k-s}$. If all digits agree, the conditional chain probability is unchanged. Thus
+Let $A_k=\max(U_k,D_k)$ and $a_k=\min(U_k,D_k)$. For $k>r+1$, any cup or cap meeting several first-digit classes has exactly one repeated class, with $`s\in\{1,\ldots,r\}`$ samples outside it, each in a distinct class. The probability of any prescribed digit assignment is $M^{-k}$. There are at most $C_r k^s$ ways to choose the labels and digits of the outside singletons and the repeated digit. The probability for the remaining chain is at most $A_{k-s}$. If all digits agree, the conditional chain probability is unchanged. Thus
 ```math
  (1-M^{1-k})A_k\le C_r M^{-k}\sum_{s=1}^r k^s A_{k-s}.
 ```

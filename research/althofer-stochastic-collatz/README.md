@@ -12,13 +12,13 @@ Let $G$ be the positive integers congruent to 3 or 5 modulo 8. From every positi
 
 Moreover, on nonabsorption the chain visits $G$ infinitely often almost surely. This leaves open whether its visits have enough frequency to imply absorption.
 
-**One excursion.** Write $n=s+2^t u$, with $s\in\{-1,1\}$ chosen so that $n\equiv s\pmod4$. Then $u$ is positive and odd, and $t\ge3$ outside $G$. Set $d=t-2$. While the remaining exponent is at least 3, the two images are exactly
+**One excursion.** Write $n=s+2^t u$, with $`s\in\{-1,1\}`$ chosen so that $n\equiv s\pmod4$. Then $u$ is positive and odd, and $t\ge3$ outside $G$. Set $d=t-2$. While the remaining exponent is at least 3, the two images are exactly
 
 ```math
 s+3\cdot 2^{t-1}u,\qquad s+3\cdot 2^{t-2}u.
 ```
 
-Indeed $3s-s=2s$ and $3s+s=4s$, and the displayed quotients are odd. Take independent fair increments $J_i\in\{1,2\}$, write $S_j=\sum_{i=1}^jJ_i$, and stop at $T=\min\{j:S_j\ge d\}$. The endpoint is $Y=s+2^{t-S_T}3^T u$. If $S_T=d$, it belongs to $G$. An overshoot $S_T=d+1$ may also land in $G$. Both endpoints exceed 1.
+Indeed $3s-s=2s$ and $3s+s=4s$, and the displayed quotients are odd. Take independent fair increments $`J_i\in\{1,2\}`$, write $S_j=\sum_{i=1}^jJ_i$, and stop at $`T=\min\{j:S_j\ge d\}`$. The endpoint is $Y=s+2^{t-S_T}3^T u$. If $S_T=d$, it belongs to $G$. An overshoot $S_T=d+1$ may also land in $G$. Both endpoints exceed 1.
 
 The exact-hit probability $p_d$ satisfies $p_{-1}=0$, $p_0=1$ and $p_d=(p_{d-1}+p_{d-2})/2$. Therefore
 
@@ -45,7 +45,7 @@ More generally, fix a time horizon $h$ and any correction $b$ that depends only 
 Let $e(n)=\max(v_2(3n-1),v_2(3n+1))-2$ and $w_L(n)=\min(L,e(n))$ for a fixed integer $L\ge1$. One choice has valuation 1 and the other has valuation $2+e(n)$. If $B_j$ indicates selection of the higher valuation on step $j$ from $N_j$, its conditional mean is $1/2$. On nonabsorption, almost surely,
 
 ```math
-\limsup_{m\to\infty}\frac1m\sum_{j<m}w_L(N_j)
+\limsup_{m\to\infty}\frac1m\sum_{j\lt m}w_L(N_j)
 \ \le\ 2\log_2 3-3=0.169925\ldots .
 ```
 

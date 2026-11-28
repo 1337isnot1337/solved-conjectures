@@ -23,8 +23,8 @@ The November 24, 2026 source check located the paving theorem, earlier 2-sum res
 Let $S$ be a set of marked elements of $M$. Assume $S$ is independent and coindependent, meaning $M\setminus S$ has the rank of $M$. Give the elements $s\in S$ distinct variables $x_s$ in a pure monomial order ideal $\mathcal O$. It is **compatible with the marks** if, for every pair of disjoint $C,D\subseteq S$, the ideal
 
 ```math
-\left\{m:\; x_C m\in\mathcal O,\
- x_d\nmid m\text{ for each }d\in D\right\},
+\left\{m:\; x_C m\in\mathcal O,
+ \ x_d\nmid m\text{ for each }d\in D\right\},
 \qquad x_C=\prod_{c\in C}x_c,
 ```
 
@@ -64,12 +64,12 @@ The first row is the 2-sum ideal. The second part shifts the product of the cont
 
 **Other marks.** A slice at any variable other than $z_1,z_2$ commutes with all three constructions. Deletion discards the corresponding nonzero exponents in that factor. Contraction restricts to divisible monomials and lowers their exponents by one, leaving the height at the corresponding original factor monomial. These observations also apply to multiple disjoint slice operations.
 
-The matroid operations commute with taking the specified minors on the two shores. For a direct check, if $Y$ avoids $p$, let $Y_i=Y\cap(E(M_i)\setminus\{p\})$. The rank of $Y$ in the 2-sum is
+The matroid operations commute with taking the specified minors on the two shores. For a direct check, if $Y$ avoids $p$, let $`Y_i=Y\cap(E(M_i)\setminus\{p\})`$. The rank of $Y$ in the 2-sum is
 
 ```math
 r_1(Y_1)+r_2(Y_2)
-   -\mathbf 1\{p\in\operatorname{cl}_{M_1}(Y_1)
-                  \text{ and }p\in\operatorname{cl}_{M_2}(Y_2)\}.
+   -\mathbf 1\{p\in\mathop{\mathrm{cl}}_{M_1}(Y_1)
+                  \text{ and }p\in\mathop{\mathrm{cl}}_{M_2}(Y_2)\}.
 ```
 
 The rank formula follows by taking bases of $Y_i$ and, when both span $p$, deleting one element from the fundamental circuit of $p$ in one basis. For a parallel connection the same formula applies when $Y$ avoids $p$. With $p$ included the rank becomes $r_1(Y_1+p)+r_2(Y_2+p)-1$. For a series connection the rank without $p$ is the sum of the two deletion ranks, and with $p$ included it is one plus the 2-sum rank without $p$. When contracting other marks, the contracted sets on the shores are independent and do not span $p$ there. Subtracting their ranks in these formulas gives exactly the same formulas on their local contractions. Deleting other marks just restricts the ground sets. The inherited mark sets are independent by the same rank formulas, and deleting the entire inherited mark set preserves the rank because each local mark set is coindependent. This verifies the hypotheses for iteration and proves all the slice identities, including the slices at $p$ in the two connections.
@@ -84,11 +84,11 @@ More generally, suppose $M$ is paving, $S$ is independent, and $M\setminus S$ is
 M_T=(M/T)\setminus(S\setminus T).
 ```
 
-This has rank $r-|T|$, ground-set size $n-s$, and is paving. It has no coloops. Before contracting $T$, it is a rank-preserving extension of the spanning, coloopless matroid $M\setminus S$, and contraction cannot create coloops. For a coloopless rank-$q$ matroid the top degree of $H$ is $q$. For instance, order one basis after every element outside it. Each element of that basis can be exchanged for an earlier element because there are no coloops, so the basis has zero internal activity and contributes $t^q$.
+This has rank $r-|T|$, ground-set size $n-s$, and is paving. It has no coloops. Before contracting $T$, it is a rank-preserving extension of the spanning, coloopless matroid $M\setminus S$, and contraction cannot create coloops. For a coloopless rank-$`q`$ matroid the top degree of $H$ is $q$. For instance, order one basis after every element outside it. Each element of that basis can be exchanged for an earlier element because there are no coloops, so the basis has zero internal activity and contributes $t^q$.
 
 By the paving theorem, choose a pure ideal $\mathcal A_T$ for $H_{M_T}$ in the unmarked variables and those marked variables indexed by $T$. There are $n-s-(r-|T|)$ such variables. In rank at least two the degree-one coefficient equals this number, since a paving matroid of rank at least two is loopless. In ranks zero and one, unused variables are allowed. Moreover every monomial of degree below $r-|T|$ in those variables belongs to $\mathcal A_T$. In rank at least two the independent-set counts below rank are those of the uniform matroid on the same ground set, so the coefficients below rank equal the counts of all such monomials. In rank one this just says that the constant monomial belongs.
 
-Use the union of the strata $x_T\mathcal A_T$. The support in the marked variables is exactly $T$ in that stratum, so the union is disjoint. Dividing out an unmarked variable or an extra occurrence of a marked variable preserves membership by downward closure within $\mathcal A_T$. When removing the only occurrence of $x_j$ with $j\in T$, the remaining monomial after taking out the new compulsory factor $x_{T\setminus\{j\}}$ has degree at most $r-|T|$, strictly below the rank of $M_{T\setminus\{j\}}$. Thus it belongs to $\mathcal A_{T\setminus\{j\}}$. Every stratum has all maximal degrees equal to $r$ after multiplication by $x_T$, which proves purity of the union.
+Use the union of the strata $x_T\mathcal A_T$. The support in the marked variables is exactly $T$ in that stratum, so the union is disjoint. Dividing out an unmarked variable or an extra occurrence of a marked variable preserves membership by downward closure within $\mathcal A_T$. When removing the only occurrence of $x_j$ with $j\in T$, the remaining monomial after taking out the new compulsory factor $`x_{T\setminus\{j\}}`$ has degree at most $r-|T|$, strictly below the rank of $`M_{T\setminus\{j\}}`$. Thus it belongs to $`\mathcal A_{T\setminus\{j\}}`$. Every stratum has all maximal degrees equal to $r$ after multiplication by $x_T$, which proves purity of the union.
 
 For the degree enumerator, partition the independent sets of $M$ by their intersection $T$ with $S$. This gives
 
@@ -104,4 +104,4 @@ The general obstacle is simultaneous compatibility of deletion and contraction o
 
 ## Exact cross-check
 
-As a finite check on the slice formulas, take two rank-three paving matroids on six elements formed by removing just one basis each from the uniform matroid. Label their grounds $\{p,1,2,3,4,5\}$ and $\{p,6,7,8,9,10\}$, with forbidden bases $\{p,2,3\}$ and $\{p,7,9\}$. Mark $p$ and the elements $1$ and $6$ on their respective shores. Direct enumeration of independent sets and monomial fibers checked all nine delete/contract/keep assignments per input, nine on the 2-sum, and 27 each on the series and parallel connections. The respective output coefficient lists were $(1,5,15,35,59,65)$, $(1,5,15,35,60,83,81)$, and $(1,6,21,54,89,90)$. All three output ideals were downward closed and pure. The general result uses the written argument above.
+As a finite check on the slice formulas, take two rank-three paving matroids on six elements formed by removing just one basis each from the uniform matroid. Label their grounds $`\{p,1,2,3,4,5\}`$ and $`\{p,6,7,8,9,10\}`$, with forbidden bases $`\{p,2,3\}`$ and $`\{p,7,9\}`$. Mark $p$ and the elements $1$ and $6$ on their respective shores. Direct enumeration of independent sets and monomial fibers checked all nine delete/contract/keep assignments per input, nine on the 2-sum, and 27 each on the series and parallel connections. The respective output coefficient lists were $(1,5,15,35,59,65)$, $(1,5,15,35,60,83,81)$, and $(1,6,21,54,89,90)$. All three output ideals were downward closed and pure. The general result uses the written argument above.

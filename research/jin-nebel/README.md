@@ -63,9 +63,9 @@ To verify the equivalence, use
 ```math
 (1+q^n)[s]_q=
 \begin{cases}
-[s+n]_q+q^n[s-n]_q,&s>n,\\
-[2n]_q,&s=n,\\
-[s+n]_q-q^s[n-s]_q,&s<n.
+[s+n]_q+q^n[s-n]_q,&s>n,
+\\ [2n]_q,&s=n,
+\\ [s+n]_q-q^s[n-s]_q,&s\lt n.
 \end{cases}
 ```
 
@@ -91,7 +91,7 @@ the even case. This is only a falsification probe. It proves no infinite
 family and is not counted as a solved conjecture.
 
 The representation interpretation uses the centered character of
-$`\operatorname{Sym}^{m-n+1}(\operatorname{Sym}^{n-1}\mathbb C^2)`$.
+$`\mathop{\mathrm{Sym}}^{m-n+1}(\mathop{\mathrm{Sym}}^{n-1}\mathbb C^2)`$.
 The short-chain inequalities above become comparisons between multiplicities
 of reflected low highest weights. No general injective map or valid
 positivity theorem proving those comparisons has been obtained.

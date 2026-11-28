@@ -92,9 +92,9 @@ The `q` full cliques have pairwise disjoint edge sets and contribute `q binom(r,
 ```math
 \begin{aligned}
 e(G)
-&\ge q\binom r2+e(G[R])\\
-&\ge\frac{r^3}{2}+rq+\frac{q^2}{s}\\
-&>\frac{r^3+r}{2}=B_r.
+&\ge q\binom r2+e(G[R])
+\\ &\ge\frac{r^3}{2}+rq+\frac{q^2}{s}
+\\ &>\frac{r^3+r}{2}=B_r.
 \end{aligned}
 ```
 

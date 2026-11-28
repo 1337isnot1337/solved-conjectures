@@ -192,8 +192,8 @@ H=F_NQ, yields
 \begin{split}
  L_h(x):={}&\frac{H'(x+h)}{H(x+h)}-\frac{H'(x)}{H(x)}
             -\frac{D_h'(x)}{D_h(x)}
-            +\frac{E_{N,h}'(x)}{E_{N,h}(x)}\\
-       ={}&\frac{Q'(x+h)}{Q(x+h)}-\frac{Q'(x)}{Q(x)}.
+            +\frac{E_{N,h}'(x)}{E_{N,h}(x)}
+       \\ ={}&\frac{Q'(x+h)}{Q(x+h)}-\frac{Q'(x)}{Q(x)}.
 \end{split}
 \tag{4.2}
 ```

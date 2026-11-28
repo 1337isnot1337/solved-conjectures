@@ -12,14 +12,14 @@ q_k=\frac{\sigma_k(A)}{\binom nk^2 k!/n^k}.
 Expanding each selected entry of `tA+(1-t)J_n` gives the exact identity
 
 ```math
-\frac{\operatorname{per}(tA+(1-t)J_n)}{d_n}
+\frac{\mathop{\mathrm{per}}(tA+(1-t)J_n)}{d_n}
 =\sum_{k=0}^n\binom nk t^k(1-t)^{n-k}q_k,
 \qquad d_n=n!/n^n.
 ```
 Thus Lih–Wang asks whether
 
 ```math
-\mathbb E[q_K]\le 1+t(q_n-1),\qquad K\sim\operatorname{Bin}(n,t),\quad0\le t\le\tfrac12.
+\mathbb E[q_K]\le 1+t(q_n-1),\qquad K\sim\mathop{\mathrm{Bin}}(n,t),\quad0\le t\le\tfrac12.
 ```
 The multivariate matching polynomial associated with `A` is real stable, and the ordinary rook polynomial `R_A(z)=sum_k sigma_k(A)z^k` has negative real roots. However, the factorial weights in the displayed permanent expansion do not preserve that real-rootedness.
 
@@ -28,7 +28,7 @@ The multivariate matching polynomial associated with `A` is real stable, and the
 Take `A=(11^T-I)/2` in order three. Direct permanent expansion gives
 
 ```math
-\operatorname{per}(A+sJ_3)
+\mathop{\mathrm{per}}(A+sJ_3)
 =\frac29\left((1+s)^3+\frac38(1+s)-\frac14\right).
 ```
 The derivative of the cubic inside the parentheses is `3(1+s)^2+3/8`, strictly positive for real `s`. Consequently this polynomial has exactly one real zero and two nonreal zeros. In particular, the one-parameter permanent interpolation is not itself a real-stable polynomial, even for a symmetric doubly stochastic matrix. Applying Newton inequalities to that interpolation would therefore be invalid.

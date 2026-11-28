@@ -36,8 +36,8 @@ H^1_{\mathrm{str}}(F,V)=
 \left\{
 z\in H^1(G_F,V):
 \begin{array}{ll}
-\operatorname{res}_{I_v}z=0&\text{for every finite }v\nmid p,\\
-\operatorname{res}_{G_{F_v}}z=0&\text{for every }v\mid p
+\mathop{\mathrm{res}}_{I_v}z=0&\text{for every finite }v\nmid p,
+\\ \mathop{\mathrm{res}}_{G_{F_v}}z=0&\text{for every }v\mid p
 \end{array}
 \right\}.
 ~~~
@@ -76,7 +76,7 @@ It also does not kill the mixed rank-four module in [character-lifting.md, secti
 For odd p and a suitable finite set S containing the p-adic and archimedean places, Schneider's conjecture can be stated as
 
 ~~~math
-\operatorname{Sch}(F,p,r):
+\mathop{\mathrm{Sch}}(F,p,r):
 \quad
 H^2(G_{F,S},\mathbb Q_p/\mathbb Z_p(1-r))=0,
 \qquad r\in\mathbb Z\setminus\{0\}.
@@ -90,7 +90,7 @@ At a finite place v not above p, the unramified subgroup for A(-e) is also zero.
 
 ~~~math
 H^1_{\mathrm{unr}}(F_v,A(-e))
-=A(-e)^{I_v}/(\operatorname{Frob}_v-1)A(-e)^{I_v}=0.
+=A(-e)^{I_v}/(\mathop{\mathrm{Frob}}_v-1)A(-e)^{I_v}=0.
 ~~~
 
 Thus the strict group in section 2 is indeed the kernel of localization at all finite decomposition groups in this negative-twist setting, as required by the duality comparison.
@@ -167,7 +167,7 @@ One customary form of Jannsen's conjecture, recorded in [Hornbostel–Kings, Con
 ~~~math
 H^2\!\left(G_{F,S},
 H^i_{\mathrm{et}}(X_{\overline F},\mathbb Q_p(j))\right)=0
-\quad\text{if }i+1<j\text{ or }i+1>2j
+\quad\text{if }i+1\lt j\text{ or }i+1>2j
 ~~~
 
 for smooth projective X with the prescribed good-reduction set.

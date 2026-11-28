@@ -4,14 +4,14 @@ Fix $0<\theta<1/2$ and put $y=N^\theta$. Choose one residue independently and un
 
 Precisely, allow each prime $p\le y$ to be omitted or to forbid any one residue. Let $T$ be the surviving set in $[1,N]$ and $Z(T)$ its size after the larger classes are also forbidden. For constants $A_\theta,c_\theta>0$, except on an event of probability at most $\exp(-c_\theta N^\theta)$,
 ```math
- \sup_T\left|\frac{Z(T)}{|T|}-\prod_{y<p\le N}(1-1/p)\right|
+ \sup_T\left|\frac{Z(T)}{|T|}-\prod_{y\lt p\le N}(1-1/p)\right|
  \le \frac{A_\theta}{\sqrt{\log N}}.
 ```
 The product tends to $\theta$. In particular the worst small-prime assignment still leaves $\gg_\theta N/\log N$ survivors. A fixed positive tolerance in the display instead gives failure probability at most $\exp(-c_{\theta,t}N^\theta\log N)$. The result strengthens the [bounded-budget concentration estimate](random-residues.md). As in the original problem, an existential cover could still come from exceptional assignments. [Erdős–Ruzsa](https://www.sciencedirect.com/science/article/pii/0022314X80900323) · [Banks–Ford–Tao's random sieve and extremal interval sieve](https://arxiv.org/abs/1908.08613)
 
 ## The influence of a single large prime
 
-Fix a small-prime assignment, let $S$ be its selected primes, and write $V(z)=\prod_{q\in S,\,q\le z}(1-1/q)$. The lower linear sieve at level $N/(\log N)^4$ gives $|T|\ge c_\theta NV(y)$. Its sieve parameter tends to $1/\theta>2$, its local discrepancy is at most one for every squarefree modulus, and $V(y)\gg1/\log N$ by Mertens even when all the small primes are used. Thus the total remainder $O(N/(\log N)^4)$ is negligible compared with the main term. The dimension bound is uniform by comparison with the full product over primes. [Motohashi, Iwaniec's linear sieve](https://mathweb.tifr.res.in/Documents/Publications/Lectures/tifr72.pdf)
+Fix a small-prime assignment, let $S$ be its selected primes, and write $`V(z)=\prod_{q\in S,\,q\le z}(1-1/q)`$. The lower linear sieve at level $N/(\log N)^4$ gives $|T|\ge c_\theta NV(y)$. Its sieve parameter tends to $1/\theta>2$, its local discrepancy is at most one for every squarefree modulus, and $V(y)\gg1/\log N$ by Mertens even when all the small primes are used. Thus the total remainder $O(N/(\log N)^4)$ is negligible compared with the main term. The dimension bound is uniform by comparison with the full product over primes. [Motohashi, Iwaniec's linear sieve](https://mathweb.tifr.res.in/Documents/Publications/Lectures/tifr72.pdf)
 
 Set $\epsilon=(1-\theta)/2$. For $y<p\le N^{1-\epsilon}$ and any residue $b\bmod p$ we claim that
 ```math

@@ -47,7 +47,7 @@ Its derivative is
 f'_T(x)=\min\{\varepsilon,\max\{0,x+L+\varepsilon\}\}.
 ```
 
-Consequently $`f_T`$ is differentiable, its derivative is $1$`-Lipschitz, `$\inf f_T=0$`, and `$f_T(0)=1$`. Take the exact-gradient oracle, initial point `$x_1=0$, and parameters
+Consequently $`f_T`$ is differentiable, its derivative is $`1`$-Lipschitz, $`\inf f_T=0`$, and $`f_T(0)=1`$. Take the exact-gradient oracle, initial point $`x_1=0`$, and parameters
 
 ```math
 \beta=M=1,\qquad \sigma=0.

@@ -15,9 +15,9 @@ be a proper induced subgraph, and we could permute the names of
 its $k-1$ colors to agree at the shared vertex. This would give
 a $(k-1)$-coloring of the whole graph.
 
-If $\{x,y\}$ is a vertex cut, write $Q_1,\ldots,Q_s$ for the
-components of $H-\{x,y\}$. Each induced graph
-$H[Q_i\cup\{x,y\}]$ admits a $(k-1)$-coloring. A color
+If $`\{x,y\}`$ is a vertex cut, write $Q_1,\ldots,Q_s$ for the
+components of $`H-\{x,y\}`$. Each induced graph
+$`H[Q_i\cup\{x,y\}]`$ admits a $(k-1)$-coloring. A color
 permutation can make two such colorings agree on the cut
 if and only if both colorings give the same relation between
 the colors on $x$ and $y$: equal or different.
@@ -28,7 +28,7 @@ on every side, the colorings glue to a $(k-1)$-coloring of $H$.
 Thus the intersection is empty. The only way nonempty subsets
 of a two-element set have empty intersection is that one subset
 is the equal singleton and a second is the different singleton.
-The induced union of those two sides with $\{x,y\}$ has no
+The induced union of those two sides with $`\{x,y\}`$ has no
 $(k-1)$-coloring. By vertex criticality it cannot be proper, so
 $s=2$. This is the standard two-cut argument of Dirac, included
 here to cover the vertex-critical convention directly.

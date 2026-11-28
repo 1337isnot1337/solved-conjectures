@@ -26,7 +26,7 @@ The prior-example table and exact arbitrary-precision verifier are in [the other
 
 Fourth-power bases are reduced under units and common conjugation to the sector $\Re y\ge\Im y\ge0$. For the odd fifth-power signature, common units can be absorbed into both the cube and fifth power, permitting a first-quadrant representative of $z$. These reductions preserve the square coordinate bounds. There is no independent bound on the recovered cubic base.
 
-The third row is necessary: when both other exponents are multiples of four, their signs cannot be reversed by Gaussian units. The first two rows alone would not cover this orientation. For other $r$, an available unit on the $r$th power and a sign on the cube cover it. The initial direct runs used difference mode only; the separate `q4-sum` files record the added orientation. The current source supports both.
+The third row is necessary: when both other exponents are multiples of four, their signs cannot be reversed by Gaussian units. The first two rows alone would not cover this orientation. For other $r$, an available unit on the $`r`$th power and a sign on the cube cover it. The initial direct runs used difference mode only; the separate `q4-sum` files record the added orientation. The current source supports both.
 
 These are finite negative search results, not nonexistence theorems. Some signatures are already ruled out by prior mathematics; the search does not supersede such theorems.
 
@@ -99,7 +99,7 @@ The norm equation is $N(\alpha)=s^8$. Primitivity makes $\alpha$ and $\bar\alpha
 ```math
 \alpha=\epsilon\gamma^8,\qquad
 N(\gamma)=s,\qquad
-\operatorname{Tr}(\epsilon\gamma^8)=t^2,
+\mathop{\mathrm{Tr}}(\epsilon\gamma^8)=t^2,
 ```
 
 where $\epsilon$ is one of its six units.
@@ -119,7 +119,7 @@ Normalizing $u=t/s^2$ and $v=b/s^4$ gives $u^4+3v^2=4$. The rational map $X=-3u^
 The Eisenstein units can refine the remaining condition to a genus3 curve. Eighth powers of units cover the three cube-root units. The other unit factor is a sign. The positive sign is excluded because, for odd $s$,
 
 ```math
-\operatorname{Tr}(\gamma^8)=\operatorname{Tr}(\gamma^4)^2-2s^4
+\mathop{\mathrm{Tr}}(\gamma^8)=\mathop{\mathrm{Tr}}(\gamma^4)^2-2s^4
 ```
 
 is 2 or3 modulo4. Hence one may write $\alpha=-\gamma^8$. Writing $\gamma=(A+B\sqrt{-3})/2$, with $B\ne0$, and setting $r=A/B$, $w=16t/B^4$, gives

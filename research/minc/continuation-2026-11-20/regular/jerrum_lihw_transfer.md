@@ -150,7 +150,7 @@ g(u)=\sum_{j=0}^n\rho_j\frac{(n-j)!}{n!}
 Then
 
 ```math
-g(u)=\frac{\operatorname{per}((1-u)U_n+uA)}{n!/n^n}.
+g(u)=\frac{\mathop{\mathrm{per}}((1-u)U_n+uA)}{n!/n^n}.
 ```
 
 For rational `u=a/d`, compute (2) as one rational number with numerator
@@ -166,7 +166,7 @@ The exact Lih--Wang violation criterion is therefore
 
 ```math
 g(st)-1-t(g(s)-1)>0,
-\qquad 0<t\le\tfrac12.                           \tag{3}
+\qquad 0\lt t\le\tfrac12.                           \tag{3}
 ```
 
 Equation (3), together with the two-by-two polynomial transfer, is an

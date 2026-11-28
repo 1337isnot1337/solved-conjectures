@@ -187,12 +187,12 @@ and expanding every output coefficient, gives
 ```math
 \begin{aligned}
 &\delta_{ai}\delta_{bj}
-      \sum_z\kappa_{ij}^z v_j^{z,(ij)}\\
-&\quad+x_{ij}\partial_{ab}
+      \sum_z\kappa_{ij}^z v_j^{z,(ij)}
+\\ &\quad+x_{ij}\partial_{ab}
       \sum_z\kappa_{ab}^z
           \bigl(v_b^{z,(ij)}-v_a^{z,(ij)}\bigr),
-                    &&a\in P,b\in Q.                 \tag{14}
-\end{aligned}
+                    &&a\in P,b\in Q.
+\end{aligned} \tag{14}
 ```
 
 The v coefficients are complex vectors, so they commute with the

@@ -108,8 +108,8 @@ The function $`F_{n,r}`$ is continuous and strictly increasing on $`[0,1]`$, wit
 ```math
  B_{\mathrm{mode}}=
  \begin{cases}
- 1,&z\ge n/(r+n),\\
- F_{n,r}^{-1}(z),&z\lt n/(r+n).
+ 1,&z\ge n/(r+n),
+ \\ F_{n,r}^{-1}(z),&z\lt n/(r+n).
  \end{cases}
 ```
 

@@ -38,8 +38,8 @@ Using the marginals of $`\nu_P`$ gives
 \begin{aligned}
 D(\nu_P\Vert\mu_P)
 &=-H(\nu_P)-\sum_{i,j}p_{ij}\log p_{ij}
-  +\log\mathop{\mathrm{per}}P\\
-&=I(P)+\log\mathop{\mathrm{per}}P.
+  +\log\mathop{\mathrm{per}}P
+\\ &=I(P)+\log\mathop{\mathrm{per}}P.
 \end{aligned}
 ```
 
@@ -87,8 +87,8 @@ The same direction decreases the logarithm of the permanent:
 ```math
 \begin{aligned}
 d\log\mathop{\mathrm{per}}P[P-M(P)]
-&=n-\sum_{p_{ij}>0}\frac{M(P)_{ij}^{\,2}}{p_{ij}}\\
-&=-\sum_{p_{ij}>0}\frac{(M(P)_{ij}-p_{ij})^2}{p_{ij}}
+&=n-\sum_{p_{ij}>0}\frac{M(P)_{ij}^{\,2}}{p_{ij}}
+\\ &=-\sum_{p_{ij}>0}\frac{(M(P)_{ij}-p_{ij})^2}{p_{ij}}
 \le0.
 \end{aligned} \tag{4}
 ```

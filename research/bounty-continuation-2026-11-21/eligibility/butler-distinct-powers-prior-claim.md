@@ -4,7 +4,7 @@
 
 ## Direct cash statement
 
-Steve Butler's contribution to *Remembrances*, in *Number Theory and Combinatorics: A Collection in Honor of the Mathematics of Ronald Graham* (2022), printed pages 342–344, ends with a US$100 offer for a proof or disproof that the sequence of largest integers not representable as sums of distinct positive $`k`$th powers is nonmonotone for $`k\ge2`$. The [public book copy](https://www.asau.ru/files/pdf/3269131.pdf) was downloaded and those pages read. The speaker is Butler, identified by the contribution heading and affiliation on page 342; attributing this particular offer to another contributor would be incorrect.
+Steve Butler's contribution to *Remembrances*, in *Number Theory and Combinatorics: A Collection in Honor of the Mathematics of Ronald Graham* (2022), printed pages 342–344, ends with a US\$100 offer for a proof or disproof that the sequence of largest integers not representable as sums of distinct positive $`k`$th powers is nonmonotone for $`k\ge2`$. The [public book copy](https://www.asau.ru/files/pdf/3269131.pdf) was downloaded and those pages read. The speaker is Butler, identified by the contribution heading and affiliation on page 342; attributing this particular offer to another contributor would be incorrect.
 
 This is a full nonmonotonicity question, not an offer to compute the next numerical threshold. The related stronger question asks for infinitely many adjacent decreases. No sponsor contact was made.
 

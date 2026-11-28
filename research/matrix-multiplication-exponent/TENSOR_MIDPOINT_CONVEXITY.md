@@ -249,8 +249,8 @@ CAT(0) midpoints gives
 ```math
 \begin{aligned}
 d(m(i),m(j))
-&\le\tfrac12\{d(a(i),a(j))+d(b(i),b(j))\},\\
-d(m(i),m(j))
+&\le\tfrac12\{d(a(i),a(j))+d(b(i),b(j))\},
+\\ d(m(i),m(j))
 &\le\tfrac12\{d(a(i),b(j))+d(b(i),a(j))\}.
 \end{aligned}
 ```
@@ -269,8 +269,8 @@ $`\sigma(J)`$. This gives
 \begin{aligned}
 g(m(J))
 &\le\max_\nu\mathbb E_\mu
-     2\sum_{i,j}\nu_i\nu_jd(\sigma(i),\sigma(j))\\
-&\le\mathbb E_\mu g(\sigma(J)),
+     2\sum_{i,j}\nu_i\nu_jd(\sigma(i),\sigma(j))
+\\ &\le\mathbb E_\mu g(\sigma(J)),
 \end{aligned}
 ```
 

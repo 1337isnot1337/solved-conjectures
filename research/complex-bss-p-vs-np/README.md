@@ -16,8 +16,8 @@ The [graph-hardness audit](GRAPH_HARDNESS.md) checks the [canonical proof](../bs
 
 ```math
 \text{polynomial-time membership in }G_m
-\ \Longrightarrow\
-\underline L(\mathop{\mathrm{per}}_m)=m^{O(1)},
+\ \Longrightarrow
+\ \underline L(\mathop{\mathrm{per}}_m)=m^{O(1)},
 \qquad
 G_m=\{(X,y):y=\mathop{\mathrm{per}}_m(X)\}.
 ```

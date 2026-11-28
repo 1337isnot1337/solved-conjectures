@@ -118,9 +118,9 @@ Let `E` be the support of `q` among the three terminal pairs, and let `v_e=2^{q_
 A(\Delta(q))=A_0+\sum_{e\in E}A_e+k_EA_4,
 \quad
 k_E=\begin{cases}
-0,&|E|\le1,\\
-1,&|E|=2,\\
-2,&|E|=3.
+0,&|E|\le1,
+\\ 1,&|E|=2,
+\\ 2,&|E|=3.
 \end{cases}
 \tag{8}
 ```
@@ -131,13 +131,13 @@ The cyclic and tree counts are
 
 ```math
 C(\Delta(q))=C_0+\sum_e v_eC_e
- +\left(\sum_{e<f}v_ev_f+v_{12}v_{13}v_{23}\right)C_4,
+ +\left(\sum_{e\lt f}v_ev_f+v_{12}v_{13}v_{23}\right)C_4,
 \tag{9}
 ```
 
 ```math
 t(\Delta(q))=t_0+\sum_e q_et_e
- +\left(\sum_{e<f}q_eq_f\right)t_4.
+ +\left(\sum_{e\lt f}q_eq_f\right)t_4.
 \tag{10}
 ```
 
@@ -202,10 +202,10 @@ Their three boundary coefficient vectors can be calculated directly by summing o
 
 ```math
 \begin{array}{c|c}
-\text{count}&\text{contribution in coordinate }\pi(F)\\
-A&(-1)^{k+|F|+h(F)-s(F)}\\
-C&(-1)^{h(F)}\\
-t&\mathbf 1\{F\text{ is a forest and }h(F)=0\}.
+\text{count}&\text{contribution in coordinate }\pi(F)
+\\ A&(-1)^{k+|F|+h(F)-s(F)}
+\\ C&(-1)^{h(F)}
+\\ t&\mathbf 1\{F\text{ is a forest and }h(F)=0\}.
 \end{array}
 \tag{13}
 ```

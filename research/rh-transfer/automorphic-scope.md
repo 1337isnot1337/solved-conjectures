@@ -19,9 +19,9 @@ The last file gives the actual quantifiers. E must be a CM number field. The inp
 
 The Hodge--Tate multiset is explicitly related to the infinity parameters:
 ~~~math
-\operatorname{HT}_{\tau}(r)
+\mathop{\mathrm{HT}}_{\tau}(r)
 =\left\{(a-1)/2-z:
-z\in\operatorname{infChar}_{\iota\tau}(\pi)\right\}.
+z\in\mathop{\mathrm{infChar}}_{\iota\tau}(\pi)\right\}.
 ~~~
 Complex conjugation reflects these weights about an integral total weight.
 
@@ -47,8 +47,8 @@ Thus every difference of two parameters must be an integer. This restriction is 
 
 Development/AbelianVarietyTheory/PublishedTheorems/GaloisGeometry₂/ClozelPurity.lean assumes algebraic infinity parameters and concludes
 ~~~math
-\operatorname{infChar}_{\bar\tau}(\pi)
-=\{w_0-z:z\in\operatorname{infChar}_{\tau}(\pi)\}
+\mathop{\mathrm{infChar}}_{\bar\tau}(\pi)
+=\{w_0-z:z\in\mathop{\mathrm{infChar}}_{\tau}(\pi)\}
 ~~~
 for an integer w_0. The literal definition does not assert that every finite Satake parameter of every cuspidal representation has unit modulus. Confusing those statements would manufacture a proof of Ramanujan from a different meaning of purity.
 
@@ -137,7 +137,7 @@ The positive transfer work of this campaign is in [artin-density.md](artin-densi
 
 The unresolved extension module is exactly
 ~~~math
-V\otimes\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu,
+V\otimes\mathop{\mathrm{Ind}}_{G_K}^{G_{\mathbb Q}}\nu,
 ~~~
 where V is the odd descended rank-two representation and nu is a finite anti-cyclotomic class character. A strict Selmer-vanishing theorem, or an adequate quantitative integral substitute, for this module is the concrete next input needed by the proposed twisted OneChar argument. Section 17 of artin-density.md proves that the usual rank-one Rankin Euler-system criterion cannot provide it because its one-dimensional fixed-quotient condition is impossible.
 

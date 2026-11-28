@@ -29,10 +29,10 @@ These four local supports form a single cycle (cycle rank one for the coordinate
 
 ~~~math
 U=\begin{pmatrix}
-c^2&-cs&s^2&cs\\
-cs&c^2&cs&-s^2\\
--s^2&-cs&c^2&-cs\\
--cs&s^2&cs&c^2
+c^2&-cs&s^2&cs
+\\ cs&c^2&cs&-s^2
+\\ -s^2&-cs&c^2&-cs
+\\ -cs&s^2&cs&c^2
 \end{pmatrix}.
 ~~~
 

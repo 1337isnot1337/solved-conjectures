@@ -302,9 +302,9 @@ inequality gives
 ```math
 \begin{aligned}
 q\sqrt q
-&\le\sum_\ell\sqrt{\sum_k n_{k,\ell}m_{k,\ell}}\\
-&\le\sum_k\sum_\ell\sqrt{n_{k,\ell}m_{k,\ell}}\\
-&\le\sum_k\sqrt{
+&\le\sum_\ell\sqrt{\sum_k n_{k,\ell}m_{k,\ell}}
+\\ &\le\sum_k\sum_\ell\sqrt{n_{k,\ell}m_{k,\ell}}
+\\ &\le\sum_k\sqrt{
  \left(\sum_\ell n_{k,\ell}\right)
  \left(\sum_\ell m_{k,\ell}\right)}
 \le rq.
@@ -376,12 +376,12 @@ polynomial
 \begin{aligned}
 P(T)=\sum
 &\epsilon_4(a_0,a_1,a_2,a_3)
- \epsilon_4(a_4,a_5,a_6,a_7)\\
-&\cdot\epsilon_4(b_0,b_1,b_4,b_7)
- \epsilon_4(b_2,b_3,b_5,b_6)\\
-&\cdot\epsilon_2(c_1,c_5)\epsilon_2(c_0,c_3)
- \epsilon_2(c_4,c_6)\epsilon_2(c_2,c_7)\\
-&\cdot\epsilon_2(d_0,d_3)\epsilon_2(d_1,d_5)
+ \epsilon_4(a_4,a_5,a_6,a_7)
+\\ &\cdot\epsilon_4(b_0,b_1,b_4,b_7)
+ \epsilon_4(b_2,b_3,b_5,b_6)
+\\ &\cdot\epsilon_2(c_1,c_5)\epsilon_2(c_0,c_3)
+ \epsilon_2(c_4,c_6)\epsilon_2(c_2,c_7)
+\\ &\cdot\epsilon_2(d_0,d_3)\epsilon_2(d_1,d_5)
  \epsilon_2(d_4,d_7)\epsilon_2(d_2,d_6)
  \prod_{r=0}^{7}T_{a_r b_r c_r d_r}.
 \end{aligned}                                                   \tag{P}
@@ -441,9 +441,9 @@ following eight assignments. Choose `i,t,v` independently in
 
 ```math
 \begin{aligned}
-a_0&=2i+t,& a_1&=2(1-i)+v,\\
-a_2&=2i+(1-t),&a_3&=2(1-i)+(1-v),\\
-a_4&=a_2,&a_5&=a_0,&a_6&=a_1,&a_7&=a_3.
+a_0&=2i+t,& a_1&=2(1-i)+v,
+\\ a_2&=2i+(1-t),&a_3&=2(1-i)+(1-v),
+\\ a_4&=a_2,&a_5&=a_0,&a_6&=a_1,&a_7&=a_3.
 \end{aligned}                                                   \tag{E}
 ```
 

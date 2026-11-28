@@ -57,10 +57,10 @@ They cannot supply new paid resolutions for this campaign.
 
 For positive integers $m,k$, partition a complex Hermitian positive
 semidefinite matrix $A$ of order $mk$ into $m$ by $m$ blocks of size $k$.
-Let $G_{ij}=\operatorname{per}(A_{ij})$. The target requires
+Let $`G_{ij}=\mathop{\mathrm{per}}(A_{ij})`$. The target requires
 
 ```math
-\operatorname{per}(G)\leq\operatorname{per}(A).
+\mathop{\mathrm{per}}(G)\leq\mathop{\mathrm{per}}(A).
 ```
 
 It also requires the following equality characterization: if $k\geq2$
@@ -114,13 +114,13 @@ The present numerical search was reserved separately in issue 223.
 ### Counterexample search
 
 [search_marcus.py](search_marcus.py) represents
-$A=VV^*$ and normalizes each row of $V$. This preserves both permanents'
+$`A=VV^*`$ and normalizes each row of $V$. This preserves both permanents'
 common positive scaling factor and guarantees positive semidefiniteness.
 It minimizes
 
 ```math
-F(V)=\log\operatorname{per}(A)
-     -\log\operatorname{per}(G)
+F(V)=\log\mathop{\mathrm{per}}(A)
+     -\log\mathop{\mathrm{per}}(G)
 ```
 
 using the Ryser formula and analytic derivatives. No division by a Ryser
@@ -129,8 +129,8 @@ including at zero row sums. An independent permutation sum at a complex
 four-by-four matrix checks the permanent evaluator, and a directional
 finite difference checks the complete analytic gradient.
 
-For clarity, if $C_{ij}=\partial\operatorname{per}(A)/\partial A_{ij}$,
-the Euclidean complex gradient through $A=VV^*$ is
+For clarity, if $`C_{ij}=\partial\mathop{\mathrm{per}}(A)/\partial A_{ij}`$,
+the Euclidean complex gradient through $`A=VV^*`$ is
 $2\overline C V$. The script applies the chain rule through the
 two-by-two block permanents and row normalization. A separate mode uses
 Gram--Schmidt within every pair to enforce internally orthonormal packets;

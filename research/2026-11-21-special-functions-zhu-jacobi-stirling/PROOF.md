@@ -34,9 +34,9 @@ For the polynomials just defined, the following polynomial identity holds:
 ```math
 \boxed{
 \det\begin{pmatrix}
-P_0&P_1&P_2\\
-P_1&P_2&P_3\\
-P_2&P_3&P_4
+P_0&P_1&P_2
+\\ P_1&P_2&P_3
+\\ P_2&P_3&P_4
 \end{pmatrix}
 =2x^3\bigl[(a+b)(2a+b)(3a+b)-2a^2x\bigr].
 }
@@ -68,11 +68,11 @@ These are the recurrence weights at $k=1,2,3$. Repeated substitution into the de
 
 ```math
 \begin{aligned}
-P_0&=1,\\
-P_1&=x,\\
-P_2&=cx+x^2,\\
-P_3&=c^2x+(c+d)x^2+x^3,\\
-P_4&=c^3x+(c^2+cd+d^2)x^2+(c+d+e)x^3+x^4.
+P_0&=1,
+\\ P_1&=x,
+\\ P_2&=cx+x^2,
+\\ P_3&=c^2x+(c+d)x^2+x^3,
+\\ P_4&=c^3x+(c^2+cd+d^2)x^2+(c+d+e)x^3+x^4.
 \end{aligned}
 ```
 
@@ -96,9 +96,9 @@ The three differences are
 
 ```math
 \begin{aligned}
-P_2-P_1^2&=cx,\\
-P_3-P_1P_2&=c^2x+dx^2,\\
-P_4-P_2^2&=c^3x+(cd+d^2)x^2+(-c+d+e)x^3.
+P_2-P_1^2&=cx,
+\\ P_3-P_1P_2&=c^2x+dx^2,
+\\ P_4-P_2^2&=c^3x+(cd+d^2)x^2+(-c+d+e)x^3.
 \end{aligned}
 ```
 
@@ -108,8 +108,8 @@ Therefore
 \begin{aligned}
 \Delta_3
 &=cx\bigl[c^3x+(cd+d^2)x^2+(-c+d+e)x^3\bigr]
- -(c^2x+dx^2)^2\\
-&=cd(d-c)x^3+(cd+ce-c^2-d^2)x^4.
+ -(c^2x+dx^2)^2
+\\ &=cd(d-c)x^3+(cd+ce-c^2-d^2)x^4.
 \end{aligned}
 ```
 

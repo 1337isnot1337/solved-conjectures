@@ -79,9 +79,9 @@ the three preimages expand exactly as
 
 ```math
 \begin{aligned}
-n_1&=1+3M_0\,2^{H+1}t,\\
-n_2&=1+3M_0\,2^{H+2}t,\\
-n_4&=5+3M_0\,2^{H+4}t.
+n_1&=1+3M_0\,2^{H+1}t,
+\\ n_2&=1+3M_0\,2^{H+2}t,
+\\ n_4&=5+3M_0\,2^{H+4}t.
 \end{aligned}
 ```
 

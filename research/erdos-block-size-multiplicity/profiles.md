@@ -37,15 +37,15 @@ The mass of $\mu_v$ is $b/v=O_C(1)$ and its support is uniformly bounded. Every 
 ```math
 \int g\,d\mu_v\le\frac{M}{\sqrt v}\,\frac1{\sqrt v}\sum_{k\ge0}g(k/\sqrt v).
 ```
-The Riemann sum converges to $\int_0^\infty g(x)\,dx$, proving the density bound. The second moment is $(v(v-1)+I)/v^2\to1$. It passes to the limit because of the common compact support. Integrating $x^2$ against the maximal density yields $1\le\alpha/3$. Applying this to minimizers on any bounded convergent subsequence of $F(v)/\sqrt v$ proves the unconditional lower bound.
+The Riemann sum converges to $`\int_0^\infty g(x)\,dx`$, proving the density bound. The second moment is $(v(v-1)+I)/v^2\to1$. It passes to the limit because of the common compact support. Integrating $x^2$ against the maximal density yields $1\le\alpha/3$. Applying this to minimizers on any bounded convergent subsequence of $F(v)/\sqrt v$ proves the unconditional lower bound.
 
-For given mass $T$, the largest second moment allowed by the density cap is attained by density $\alpha$ on $[1-T/\alpha,1]$. Indeed, density missing above this threshold has the same mass as the density below it and can be moved upwards. Thus $1\le\alpha[1-(1-T/\alpha)^3]/3$, as asserted. If $\alpha=3$, the nonnegative measure $3\,dx-\mu$ has zero second moment. It is absolutely continuous, so it is zero even at the origin. Every weak limit is then the same. Taking zeroth and first moments gives the limits for $b$ and $I$.
+For given mass $T$, the largest second moment allowed by the density cap is attained by density $\alpha$ on $[1-T/\alpha,1]$. Indeed, density missing above this threshold has the same mass as the density below it and can be moved upwards. Thus $1\le\alpha[1-(1-T/\alpha)^3]/3$, as asserted. If $\alpha=3$, the nonnegative measure $`3\,dx-\mu`$ has zero second moment. It is absolutely continuous, so it is zero even at the origin. Every weak limit is then the same. Taking zeroth and first moments gives the limits for $b$ and $I$.
 
 ## Degrees at individual points
 
-Let $d_x$ be the degree of point $x$. The sizes of its incident blocks obey $\sum_{B\ni x}(|B|-1)=v-1$. At most $M$ summands can equal any particular positive integer. In increasing order the $j$th summand is at least $j/M$, giving $d_x(d_x+1)\le2M(v-1)$ and $d_{\max}=O_C(v^{3/4})$.
+Let $d_x$ be the degree of point $x$. The sizes of its incident blocks obey $\sum_{B\ni x}(|B|-1)=v-1$. At most $M$ summands can equal any particular positive integer. In increasing order the $`j`$th summand is at least $j/M$, giving $d_x(d_x+1)\le2M(v-1)$ and $d_{\max}=O_C(v^{3/4})$.
 
-Let $N$ be the points-by-blocks incidence matrix and $P$ orthogonal projection onto the subspace perpendicular to the all-ones vector. Each off-diagonal entry of $NN^{\mathsf T}$ is one. Hence $PNN^{\mathsf T}P=P\,\mathrm{diag}(d_x-1)P$ has operator norm at most $d_{\max}-1$. Applying $PN$ to the all-ones vector on blocks gives
+Let $N$ be the points-by-blocks incidence matrix and $P$ orthogonal projection onto the subspace perpendicular to the all-ones vector. Each off-diagonal entry of $NN^{\mathsf T}$ is one. Hence $`PNN^{\mathsf T}P=P\,\mathrm{diag}(d_x-1)P`$ has operator norm at most $d_{\max}-1$. Applying $PN$ to the all-ones vector on blocks gives
 ```math
 \sum_x(d_x-I/v)^2\le b(d_{\max}-1)=O_C(v^{7/4}).
 ```

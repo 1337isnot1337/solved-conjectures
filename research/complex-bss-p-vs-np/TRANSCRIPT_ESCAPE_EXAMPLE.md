@@ -23,8 +23,8 @@ For every numerical `h` there is exactly one solution:
 ```math
 (b,u)=
 \begin{cases}
-(1,0),&h=0,\\
-(0,1/h),&h\ne0.
+(1,0),&h=0,
+\\ (0,1/h),&h\ne0.
 \end{cases}                                      \tag{2}
 ```
 

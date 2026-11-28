@@ -50,8 +50,8 @@ The source's character formula, Proposition 3.3, gives
 ```math
 \begin{aligned}
 24W_{(2,2)}={}&f_1f_2f_3-3f_1f_2f_{-1}
- +4f_1f_{-1}\\
- &-3f_1f_{-1}f_{-2}+f_{-1}f_{-2}f_{-3}.
+ +4f_1f_{-1}
+ \\ &-3f_1f_{-1}f_{-2}+f_{-1}f_{-2}f_{-3}.
 \end{aligned}
 ```
 

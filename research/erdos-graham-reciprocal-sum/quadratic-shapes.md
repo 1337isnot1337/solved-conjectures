@@ -14,7 +14,7 @@ Then $c\ne0$ and $a/c\in\mathcal R$. Both the translation $\rho$ and the scale a
 \frac{a_n^2}{a_{n+1}}=1+\frac2n+\frac{b}{n^2}+\frac{d}{n^3}+o(n^{-3}).
 ```
 
-Rationality of its reciprocal sum forces $b\in\mathbb Q$ and $d-b^2/2\in\{-2/R:R\in\mathcal R\}$. Thus a single finite set of exceptions works for every second-order coefficient $b$. The earlier result also excludes every even integral $b$ regardless of $d$. [Integer shifts](quadratic-tails.md)
+Rationality of its reciprocal sum forces $b\in\mathbb Q$ and $`d-b^2/2\in\{-2/R:R\in\mathcal R\}`$. Thus a single finite set of exceptions works for every second-order coefficient $b$. The earlier result also excludes every even integral $b$ regardless of $d$. [Integer shifts](quadratic-tails.md)
 
 ## Reducing all translations to the same two curves
 
@@ -30,7 +30,7 @@ S=(A-z)^2+4(4A-2z)h=B^2\quad\text{in }K=\mathbb Q(z)
 for a choice of $h,B\in K$. Both $z$ and $h$ are nonzero. In addition to using $N(S)$, use the second necessary identity
 
 ```math
-(\operatorname{Tr} B)^2=\operatorname{Tr} S+2N(B).
+(\mathop{\mathrm{Tr}} B)^2=\mathop{\mathrm{Tr}} S+2N(B).
 ```
 
 The signed rational variable $w=N(B)/(4A)$ fixes the sign in both formulas simultaneously.
@@ -38,7 +38,7 @@ The signed rational variable $w=N(B)/(4A)$ fixes the sign in both formulas simul
 **Rational $h$.** Put $s=-h/2$, so $A=-s^2$. Expanding the norm and trace yields
 
 ```math
-w^2=4s^3+48s^2-63,\qquad Z^2=s^2+16s+2-2w,\qquad Z=\operatorname{Tr}(B)/(2s).
+w^2=4s^3+48s^2-63,\qquad Z^2=s^2+16s+2-2w,\qquad Z=\mathop{\mathrm{Tr}}(B)/(2s).
 ```
 
 Retain $s=-8$ as a possible exceptional parameter. Otherwise write $x=Z/(s+8)$ and eliminate $w$. The resulting equation, quadratic in $s$, is
@@ -58,7 +58,7 @@ This implication still holds when the quadratic degenerates to a linear equation
 **Nonrational $h$.** Now $h$ is a rational multiple of $z$. Put $t=2z/h$, so $A=4-t^2$. The two identities yield
 
 ```math
-w^2=4t^3-48t^2-24t+257,\qquad Z^2=(4-t^2)(2-t^2+8t+2w),\qquad Z=\operatorname{Tr}(B)/2.
+w^2=4t^3-48t^2-24t+257,\qquad Z^2=(4-t^2)(2-t^2+8t+2w),\qquad Z=\mathop{\mathrm{Tr}}(B)/2.
 ```
 
 Set $x=Z/(4-t^2)$, whose denominator is nonzero. Eliminating $w$ gives

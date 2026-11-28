@@ -18,8 +18,8 @@ Write a correlation matrix as
 A=\begin{pmatrix}H+xx^*&x\\x^*&1\end{pmatrix},\qquad H\succeq0,
 ```
 
-and put $`R_t=H+t xx^*`$, $`P(M)=\operatorname{per}M`$,
-$`Q(M)=\operatorname{per}(M\circ\overline M)`$.
+and put $`R_t=H+t xx^*`$, $`P(M)=\mathop{\mathrm{per}}M`$,
+$`Q(M)=\mathop{\mathrm{per}}(M\circ\overline M)`$.
 Direct border expansion gives
 
 ```math

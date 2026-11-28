@@ -146,7 +146,7 @@ product inequality.
 
 For degree two, the radial norm and Hessian normalization in (20)
 are correct. A product has Hessian rank at most two, and
-$`|\operatorname{tr}H|\le\sqrt2\|H\|_F`$ proves the comparison.
+$`|\mathop{\mathrm{tr}}H|\le\sqrt2\|H\|_F`$ proves the comparison.
 Condition (21) is an exact equality condition, including the zero
 polynomial. The product $`z_1^2+z_2^2`$ attains equality. The
 nonproduct $`\rho`$ has difference $`-6/N`$, so the restriction in

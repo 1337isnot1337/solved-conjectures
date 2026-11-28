@@ -6,17 +6,17 @@ Status: **complete credited transfer under the accepted RH input; independent re
 
 ## Statement
 
-Let \(p_k\) be the \(k\)-th prime and let
-\[
+Let $`p_k`$ be the $`k`$-th prime and let
+```math
 N_k=\prod_{j=1}^{k}p_j.
-\]
+```
 Nicolas's conjecture is
-\[
+```math
 \boxed{\frac{N_k}{\varphi(N_k)}>e^\gamma\log\log N_k
        \quad\text{for every integer }k\ge1.}
 \tag{N}
-\]
-Here \(\varphi\) is Euler's totient and \(\gamma\) is Euler's constant. All logarithms are natural.
+```
+Here $`\varphi`$ is Euler's totient and $`\gamma`$ is Euler's constant. All logarithms are natural.
 
 The target is the complete historical primorial inequality. It is not an inequality for arbitrary positive integers, a finite verification range, or a monotonicity assertion. The name “Nicolas Conjecture” already appears in the introduction of [Kupershmidt's 2008 note](https://citeseerx.ist.psu.edu/document?doi=0c1753d5c11f3cc709da623f76355502ba01cabf&repid=rep1&type=pdf); that document is used here only as evidence for the historical name.
 
@@ -27,11 +27,11 @@ Nicolas's 1983 paper proves:
 - Under RH, (N) holds for all primorial indices.
 - If RH is false, the inequality holds for infinitely many indices and fails for infinitely many indices.
 
-The original source is J.-L. Nicolas, *Petites valeurs de la fonction d'Euler*, Journal of Number Theory **17** (1983), 375–388, [DOI:10.1016/0022-314X(83)90055-0](https://doi.org/10.1016/0022-314X(83)90055-0). The publisher abstract explicitly states the all-\(k\ge2\) conditional result and the two infinite sets when RH fails.
+The original source is J.-L. Nicolas, *Petites valeurs de la fonction d'Euler*, Journal of Number Theory **17** (1983), 375–388, [DOI:10.1016/0022-314X(83)90055-0](https://doi.org/10.1016/0022-314X(83)90055-0). The publisher abstract explicitly states the all-$`k\ge2`$ conditional result and the two infinite sets when RH fails.
 
 Two readable primary sources fix the formula and theorem attribution:
 
-1. [Choie–Planat–Solé, *On Nicolas criterion for the Riemann Hypothesis*](https://arxiv.org/pdf/1012.3613), introduction, identifies the original result as Nicolas's Theorem 2(a),(b), and writes the exact inequality for all \(k\ge1\).
+1. [Choie–Planat–Solé, *On Nicolas criterion for the Riemann Hypothesis*](https://arxiv.org/pdf/1012.3613), introduction, identifies the original result as Nicolas's Theorem 2(a),(b), and writes the exact inequality for all $`k\ge1`$.
 2. [Nicolas, *Small values of the Euler function and the Riemann hypothesis*](https://arxiv.org/pdf/1202.0729), introduction, restates the equivalence and proves a quantitative strengthening in Theorem 1.1.
 
 The old author-hosted 1983 scan at math.univ-lyon1.fr/~nicolas/petitsphi83.pdf returned 404 in this audit. The original publisher abstract, Nicolas's own later paper, and the explicit original-theorem attribution above were read as extracted text. No claim of inspecting an unavailable scan is made.
@@ -42,49 +42,49 @@ The accepted source for this campaign is
 [1337isnot1337/riemann-hypothesis-solved at 9d5316ec73f5df89c4d95703ed106837b8a4060e](https://github.com/1337isnot1337/riemann-hypothesis-solved/tree/9d5316ec73f5df89c4d95703ed106837b8a4060e).
 As directed by the user, its RH conclusion is taken as an input. No formal verification is performed here.
 
-**Theorem.** Under that accepted RH conclusion, (N) holds for every \(k\ge1\).
+**Theorem.** Under that accepted RH conclusion, (N) holds for every $`k\ge1`$.
 
-**Proof.** For \(k\ge2\), apply Nicolas's published implication RH \(\Rightarrow\) (N). Its hypothesis is exactly RH for the Riemann zeta function; it requires no linear-independence, simplicity, pair-correlation, or additional \(L\)-function hypothesis.
+**Proof.** For $`k\ge2`$, apply Nicolas's published implication RH $`\Rightarrow`$ (N). Its hypothesis is exactly RH for the Riemann zeta function; it requires no linear-independence, simplicity, pair-correlation, or additional $`L`$-function hypothesis.
 
-For \(k=1\), \(N_1=2\), \(\varphi(2)=1\), and \(0<\log2<1\). Therefore
-\[
+For $`k=1`$, $`N_1=2`$, $`\varphi(2)=1`$, and $`0<\log2<1`$. Therefore
+```math
 \frac{N_1}{\varphi(N_1)}=2>0>
 e^\gamma\log\log2,
-\]
-which gives the remaining endpoint. \(\square\)
+```
+which gives the remaining endpoint. $`\square`$
 
 The arithmetic translation is exact:
-\[
+```math
 \log N_k=\theta(p_k),\qquad
 \frac{N_k}{\varphi(N_k)}
  =\prod_{p\le p_k}\frac{p}{p-1}.
-\]
+```
 Thus the same conclusion can be written
-\[
+```math
 \prod_{p\le p_k}\frac p{p-1}>e^\gamma\log\theta(p_k).
-\]
-The logarithmic ratio normalization is only used for \(k\ge2\), because \(\log\log2<0\). This endpoint does not obstruct (N) itself.
+```
+The logarithmic ratio normalization is only used for $`k\ge2`$, because $`\log\log2<0`$. This endpoint does not obstruct (N) itself.
 
 ### Quantitative cross-check from Nicolas's later theorem
 
 Nicolas defines
-\[
+```math
 c(n)=\left(\frac n{\varphi(n)}-e^\gamma\log\log n\right)
       \sqrt{\log n}.
-\]
+```
 Theorem 1.1, equation (1.7), of his 2012 paper gives under RH
-\[
+```math
 c(N_k)\ge c(2)\quad(k\ge1).
-\]
+```
 The constant is positive without any decimal approximation:
-\[
+```math
 c(2)=\left(2-e^\gamma\log\log2\right)\sqrt{\log2}>0.
-\]
+```
 Consequently that stronger published theorem also yields
-\[
+```math
 \frac{N_k}{\varphi(N_k)}-e^\gamma\log\log N_k
  \ge \frac{c(2)}{\sqrt{\log N_k}}>0
-\]
+```
 for every index. This is a second source check of the full range, not another conjecture to count.
 
 ## Current prior-art audit
@@ -112,9 +112,9 @@ Searches also returned papers claiming a complete resolution. Their existence mu
 [Primary PDF](https://www.cambridge.org/engage/api-gateway/coe/assets/orp/resource/item/61ba5f42a53f1b811a9d2c35/original/the-nicolas-criterion-for-the-riemann-hypothesis.pdf), Theorem 2.6.
 
 The argument selects an infinite decreasing subsequence of an error sequence, then infers that a negative value of the full sequence must occur in that subsequence. That inference is invalid. For example,
-\[
+```math
 x_n=\frac{(-1)^n}{n}
-\]
+```
 has infinitely many negative terms and tends to zero, while every infinite strictly decreasing subsequence consists of positive terms: once a negative term is selected, later values sufficiently close to zero are larger than it. A decreasing positive subsequence therefore says nothing about the existence of negative values elsewhere. The proof supplies no property that repairs this selection step.
 
 ### Vega, 2023, version 3
@@ -122,36 +122,36 @@ has infinitely many negative terms and tends to zero, while every infinite stric
 [Primary PDF](https://www.cambridge.org/engage/api-gateway/coe/assets/orp/resource/item/654c0da52c3c11ed71009ffb/original/on-nicolas-criterion-for-the-riemann-hypothesis.pdf), final step of Theorem 1, printed page 7.
 
 The argument attempts to infer a lower bound of the form
-\[
+```math
 A(x)\ge \exp(-C/\sqrt x)
-\]
-from \(A(x)\to1\). The limit does not provide that rate. The positive function
-\[
+```
+from $`A(x)\to1`$. The limit does not provide that rate. The positive function
+```math
 A(x)=1-x^{-1/4}
-\]
-tends to one but is smaller than \(\exp(-C/\sqrt x)\) for every sufficiently large \(x\), for each fixed \(C>0\). The missing rate is precisely what that proof needs.
+```
+tends to one but is smaller than $`\exp(-C/\sqrt x)`$ for every sufficiently large $`x`$, for each fixed $`C>0`$. The missing rate is precisely what that proof needs.
 
 ### Martila–Groote, 2024
 
 [Primary PDF](https://www.rxiv.org/pdf/2408.0024v1.pdf), equation (7).
 
 The calculation applies a differential chain rule to finite differences. The exact increment is
-\[
+```math
 \Delta\log\log N_k
  =\log\!\left(\frac{\log N_k}{\log N_{k-1}}\right),
-\]
-not \(\Delta N_k/(N_k\log N_k)\). Finite differences of logarithms do not equal the derivative at an endpoint times the finite increment. The subsequent conclusion about the absence of extrema therefore does not follow.
+```
+not $`\Delta N_k/(N_k\log N_k)`$. Finite differences of logarithms do not equal the derivative at an endpoint times the finite increment. The subsequent conclusion about the absence of extrema therefore does not follow.
 
 ### Vega, 2026, version 11
 
 [Primary text](https://www.preprints.org/manuscript/202408.0348/v11), posted 14 April 2026, Proposition 1 and Lemma 1.
 
 Proposition 1 asserts that a real sequence with no strictly decreasing tail has an infinite strictly increasing subsequence. This is false, even with all values positive and distinct. Set
-\[
+```math
 a_{2m-1}=\frac1{2m},\qquad
 a_{2m}=\frac1{2m-1}\quad(m\ge1).
-\]
-Every pair gives a local increase, so there is no strictly decreasing tail. Yet \(a_n\to0\) and every term is positive; an infinite strictly increasing subsequence would stay above its positive first term and hence could not tend to zero. Lemma 1 uses this false proposition as its extraction step.
+```
+Every pair gives a local increase, so there is no strictly decreasing tail. Yet $`a_n\to0`$ and every term is positive; an infinite strictly increasing subsequence would stay above its positive first term and hence could not tend to zero. Lemma 1 uses this false proposition as its extraction step.
 
 These checks reject the displayed arguments, not their desired conclusion. The present note obtains that conclusion from the accepted RH input and Nicolas's established theorem. It does not rely on any of these claimed proofs.
 

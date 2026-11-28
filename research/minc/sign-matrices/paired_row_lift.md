@@ -11,8 +11,8 @@ Let $`X`$ be an $`m\times m`$ sign matrix. Let $`Y`$ be an $`m\times m`$ matrix 
 
 ```math
 A=\begin{pmatrix}
-X&Y+I_m\\
-X&Y-I_m
+X&Y+I_m
+\\ X&Y-I_m
 \end{pmatrix}.
 \tag{1}
 ```
@@ -70,9 +70,9 @@ Now let $`X`$ be an $`m\times(m+1)`$ sign matrix, and let $`Y`$ have the same pr
 
 ```math
 A=\begin{pmatrix}
-X&Y+I_m\\
-X&Y-I_m\\
-a&b
+X&Y+I_m
+\\ X&Y-I_m
+\\ a&b
 \end{pmatrix}.
 \tag{5}
 ```

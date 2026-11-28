@@ -14,7 +14,7 @@ Mohar and Wu prove a fractional analogue, and Harutyunyan, Picasarri-Arrieta and
 
 More generally, fix $0\le\eta\lt1/2$, and let $h_2$ be the binary entropy function. There is an orientation such that for every connected induced subgraph $H$ of average degree at least $(2\log_2\Delta+10)/(1-h_2(\eta))$, making the induced orientation acyclic requires deleting more than $\eta|E(H)|$ arcs. This is a local degree-dependent guarantee on every graph. A separate result of Lei, Wang and Wang obtains strong feedback-arc bounds for particular triangle-free graphs. [Lei, Wang and Wang (2026)](https://arxiv.org/abs/2607.22044)
 
-**Proof.** For a connected graph $H$ of order $s$, let $\tau(H)$ be its spanning tree count. The number of acyclic orientations is $T_H(2,0)\le2^{s-1}\tau(H)$ by the spanning-tree expansion of the Tutte polynomial, since each tree has at most $s-1$ internally active edges. If an orientation can be made acyclic by deleting $j$ arcs, a linear order consistent with the remaining arcs gives an acyclic orientation differing on at most $j$ edges. The entropy bound on Hamming balls in $\{0,1\}^{|E(H)|}$ therefore gives
+**Proof.** For a connected graph $H$ of order $s$, let $\tau(H)$ be its spanning tree count. The number of acyclic orientations is $T_H(2,0)\le2^{s-1}\tau(H)$ by the spanning-tree expansion of the Tutte polynomial, since each tree has at most $s-1$ internally active edges. If an orientation can be made acyclic by deleting $j$ arcs, a linear order consistent with the remaining arcs gives an acyclic orientation differing on at most $j$ edges. The entropy bound on Hamming balls in $`\{0,1\}^{|E(H)|}`$ therefore gives
 
 ```math
 \Pr(H\text{ requires deletion of at most }\eta |E(H)|\text{ arcs})
@@ -67,7 +67,7 @@ The two recursive constructions give arbitrarily large ordinary chromatic number
 
 Write a fractional colouring with palette of length $t$ as a set $C_v\subseteq[0,t)$ of measure one for each vertex $v$, with disjoint sets on adjacent vertices. These sets can be finite unions of half-open intervals. To pass from a fractional colouring by weighted stable sets to this description, allocate an interval to each weighted stable set and trim any excess coverage at a vertex. For $S\subseteq V(G)$ put $C(S)=\bigcup_{v\in S}C_v$. We will split a palette into two parts in any prescribed ratio by splitting every interval of the common refinement in that ratio. The split then divides every $C(S)$ in that same ratio. Each part can be placed by a measure-preserving piecewise translation into any available palette region of sufficient measure.
 
-**Burling graphs.** For the sequence $B_k$ of Felsner et al., $\chi_f(B_1)=1$ and $\chi_f(B_k)=(k+2)/2$ for $k\ge2$. Indeed, put $s_k=(k+1)/2$. The recursion starts at a single vertex with that singleton as the distinguished stable set. It uses a master copy of $B_k$ and, for each distinguished set $S$ in the master, another copy of $B_k$. For each distinguished set $X$ in that other copy it adds a vertex $v_{S,X}$ adjacent to exactly $X$. The new distinguished sets are $S\cup X$ and $S\cup\{v_{S,X}\}$.
+**Burling graphs.** For the sequence $B_k$ of Felsner et al., $\chi_f(B_1)=1$ and $\chi_f(B_k)=(k+2)/2$ for $k\ge2$. Indeed, put $s_k=(k+1)/2$. The recursion starts at a single vertex with that singleton as the distinguished stable set. It uses a master copy of $B_k$ and, for each distinguished set $S$ in the master, another copy of $B_k$. For each distinguished set $X$ in that other copy it adds a vertex $v_{S,X}$ adjacent to exactly $X$. The new distinguished sets are $S\cup X$ and $`S\cup\{v_{S,X}\}`$.
 
 Inductively every fractional colouring of $B_k$ has a distinguished set $S$ with $|C(S)|\ge s_k$. For the step, take such an $S$ in the master and such an $X$ in its associated copy. If $|C(S)\cup C(X)|\ge s_k+1/2$, we are done. Otherwise $|C(S)\setminus C(X)|\lt1/2$, and the palette of $v_{S,X}$ is disjoint from $C(X)$. Consequently $|C(S)\cup C_{v_{S,X}}|\gt s_k+1/2$. This establishes the induction and also gives $\chi_f(B_{k+1})\ge s_k+1$, since the palette for $v_{S,X}$ avoids $C(X)$ of measure at least $s_k$.
 
@@ -79,7 +79,7 @@ s_1=1,\qquad s_j=s_{j-1}+\max\{0,1-s_{j-1}/t_j\}.
 ```
 Then the fractional chromatic number of this graph is $\max(\max_{2\le j\le h}t_j,1+s_h)$, with the first maximum omitted at height one.
 
-For the lower bound, consider a branch prefix whose palettes have union $U$ of measure $u$. Among the children in its next sibling graph $H_j$, there is a vertex with $|C_v\cap U|\le u/t_j$. Otherwise all restricted palettes could be scaled by the reciprocal of their minimum measure to give a fractional colouring of $H_j$ of length strictly smaller than $t_j$. The new palette union is therefore at least $u+\max\{0,1-u/t_j\}$. This function is nondecreasing in $u$ because $t_j\ge1$. Starting at the root, one can find a full branch of union measure at least $s_h$. Its branch vertex needs a disjoint palette of measure one. Each $H_j$ is a subgraph, giving the other lower bound.
+For the lower bound, consider a branch prefix whose palettes have union $U$ of measure $u$. Among the children in its next sibling graph $H_j$, there is a vertex with $|C_v\cap U|\le u/t_j$. Otherwise all restricted palettes could be scaled by the reciprocal of their minimum measure to give a fractional colouring of $H_j$ of length strictly smaller than $t_j$. The new palette union is therefore at least $`u+\max\{0,1-u/t_j\}`$. This function is nondecreasing in $u$ because $t_j\ge1$. Starting at the root, one can find a full branch of union measure at least $s_h$. Its branch vertex needs a disjoint palette of measure one. Each $H_j$ is a subgraph, giving the other lower bound.
 
 Conversely, use a palette of length $q=\max(\max_jt_j,1+s_h)$. Give the root any palette of measure one. At each next sibling graph split an optimal palette of length $t_j$ to place length $\min(t_j,s_{j-1})$ within the ancestor union and the rest outside. This fits since $s_{j-1}\le s_h$ and $q\ge t_j$. For every child the palette union along its branch prefix then has measure exactly $s_j$. The complement of any full branch's union has measure at least one and supplies its branch vertex.
 
@@ -93,7 +93,7 @@ Kohlmeyer and Kruer disproved the high-girth subgraph conjecture using underlyin
 
 Let $D$ be a finite simple digraph partitioned into nonempty sets $V_1,\ldots,V_m$, with all arcs going from a lower to a higher index. Suppose its maximum outdegree is at most $d\ge1$. Write $L(D)$ for the undirected graph of its arcs, adjacent when consecutive in a directed path. Give each vertex of $V_i$ weight $1/|V_i|$. Suppose each independent set of the underlying graph of $D$ has total weight at most $m/T$. For an integer $q\ge1$, assume
 ```math
-|V_i|\ge 4d\log_2(2qd)\sum_{j>i}|V_j|\quad(i<m),
+|V_i|\ge 4d\log_2(2qd)\sum_{j>i}|V_j|\quad(i\lt m),
 \qquad
 t=\left\lceil\log_2(1024qd(d+1))\right\rceil .
 ```
@@ -111,7 +111,7 @@ The proof of Nguyen and Walczak's Theorem 2.1 supplies such a base $D$ for arbit
 ```math
 \delta(L(D))\ge \log_2 T-2\log_2\log_2 T-O(1),
 ```
-by taking $q=\lfloor\log_2 T-2\log_2\log_2 T-C\rfloor$ for a sufficiently large constant $C$. Meanwhile $\chi_f(L(D))\le4$, since independent fair bits assigned to the base vertices select each arc with probability $1/4$ as a $0$-to-$1$ arc, and these selected arcs always form an independent set of $L(D)$.
+by taking $q=\lfloor\log_2 T-2\log_2\log_2 T-C\rfloor$ for a sufficiently large constant $C$. Meanwhile $\chi_f(L(D))\le4$, since independent fair bits assigned to the base vertices select each arc with probability $1/4$ as a $0$-to-$`1`$ arc, and these selected arcs always form an independent set of $L(D)$.
 
 ## Iterated generalized Mycielski graphs
 

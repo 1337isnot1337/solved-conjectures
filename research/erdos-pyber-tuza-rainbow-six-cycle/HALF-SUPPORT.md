@@ -4,7 +4,7 @@
 
 ## A constraint from overlapping colors
 
-For an unordered pair of distinct colors $p=\{i,j\}$, put $U_p=\min(W_i,W_j)$ and write $d_p$ for its row integrals. If $p,q,r$ partition the six colors into three pairs, the rainbow density bounds below the squared Hilbert–Schmidt norm of the kernel product $U_pU_qU_r$: take two three-edge paths with common endpoints, using one color from each pair in each matching position and reverse the second path around the cycle. Their product is at least the corresponding product of minima. Thus the product kernel vanishes. Integrating its two endpoints gives
+For an unordered pair of distinct colors $`p=\{i,j\}`$, put $U_p=\min(W_i,W_j)$ and write $d_p$ for its row integrals. If $p,q,r$ partition the six colors into three pairs, the rainbow density bounds below the squared Hilbert–Schmidt norm of the kernel product $U_pU_qU_r$: take two three-edge paths with common endpoints, using one color from each pair in each matching position and reverse the second path around the cycle. Their product is at least the corresponding product of minima. Thus the product kernel vanishes. Integrating its two endpoints gives
 ```math
 \int d_p(x)U_q(x,y)d_r(y)\,dx\,dy=0.
 ```
@@ -24,7 +24,7 @@ In particular there cannot be four active colors, since they would form a clique
 
 Let $Q$ be the indicator of palette $A$, and treat kernels as integral operators. Its row degree is $1/2$ by exact balance and $J-Q$ is the indicator of palette $B$. The integral for six consecutive kernels $Q,Q,Q,J-Q,J-Q,J-Q$ is zero: on its support a corresponding order of six distinct colors has strictly positive weights, so positive integral would contradict zero rainbow density. As $Q$ and $J-Q$ commute with the projection $J$ onto constants, the integral is
 ```math
-\operatorname{tr}(Q^3(J-Q)^3)=1/64-\sum_{\lambda}\lambda^6,
+\mathop{\mathrm{tr}}(Q^3(J-Q)^3)=1/64-\sum_{\lambda}\lambda^6,
 ```
 where $\lambda$ ranges over the nonconstant eigenvalues of $Q$. Symmetry and row degree give operator norm at most $1/2$. As $Q$ is an indicator, its squared Hilbert–Schmidt norm is $1/2$, leaving $\sum\lambda^2=1/4$ after the constant eigenvalue. Thus equality in $\sum\lambda^6\le (1/2)^4\sum\lambda^2$ forces exactly one nonconstant eigenvalue, of absolute value $1/2$. Consequently $Q(x,y)=(1\pm\phi(x)\phi(y))/2$ almost everywhere for a real mean-zero unit eigenfunction $\phi$. The indicator values force $|\phi(x)\phi(y)|=1$ almost everywhere, hence $\phi$ takes the values $\pm1$ on two equal halves. One palette union is the indicator of edges within the two halves.
 
@@ -45,10 +45,10 @@ The integral with kernels $Q,Q,Q,J-Q,J-Q,J-Q$ is now at most $6\delta$: where th
 ```
 For a nonconstant eigenvalue of largest absolute value $\mu$, this implies $\mu^4\ge(1-384\delta)/16$ and $\mu^2\ge1/4-96\delta$. Let $\phi$ be its real unit eigenfunction, $\lambda$ the signed eigenvalue, $K=1/2+\lambda\phi\otimes\phi$, and let
 ```math
-P(x,y)=\bigl(1+\operatorname{sgn}(\lambda)\,\sigma(x)\sigma(y)\bigr)/2,
-\qquad \sigma=\operatorname{sgn}(\phi),
+P(x,y)=\bigl(1+\mathop{\mathrm{sgn}}(\lambda)\,\sigma(x)\sigma(y)\bigr)/2,
+\qquad \sigma=\mathop{\mathrm{sgn}}(\phi),
 ```
-choosing either sign wherever $\phi$ is zero. We have $\|Q-K\|_2^2\le96\delta$. Since $Q$ is an indicator, $|K-P|=\bigl||K-1/2|-1/2\bigr|\le |K-Q|$ pointwise. Hence $\|Q-P\|_1=\|Q-P\|_2^2\le384\delta$. Here $P$ describes which side of a two-part cut palette $A$ is supposed to occupy, with a swap of the palette names if needed. To finish, the following continuous repair lemma turns this closeness into an exact cut.
+choosing either sign wherever $\phi$ is zero. We have $`\|Q-K\|_2^2\le96\delta`$. Since $Q$ is an indicator, $|K-P|=\bigl||K-1/2|-1/2\bigr|\le |K-Q|$ pointwise. Hence $`\|Q-P\|_1=\|Q-P\|_2^2\le384\delta`$. Here $P$ describes which side of a two-part cut palette $A$ is supposed to occupy, with a swap of the palette names if needed. To finish, the following continuous repair lemma turns this closeness into an exact cut.
 
 ### Weighted graphon repair lemma
 
@@ -64,4 +64,4 @@ For a typical bad row $z$, each color has weight at least $t-b$ into the good ro
 
 Consequently almost every bad row has all its good $A$ neighbors on one side and all its good $B$ neighbors on one side. The two sides must differ since both good sides have positive measure and the six colors sum to one. Assign each bad row to the side which puts its $B$ neighbors on its own side. This is measurable by the two row integrals into the good sides. Good-to-bad pairs are then all correct, and for almost every row the wrong weight is at most $\max(D,b)=D$. Apply the three-walk bound again on the two full parts. Any misplaced $A$ pair of positive weight inside a side can now be closed by edges in the two other $A$ colors to the opposite part and a three-walk in the $B$ colors; any misplaced $B$ pair across can be closed using the other two $B$ colors staying in their parts and a three-walk in the $A$ colors. For almost every such pair these endpoint supports have measure at least $t-D$. A positive total wrong weight would therefore give positive rainbow density. There is no wrong weight after reassignment, proving the repair lemma.
 
-For the indicator $P$ found spectrally, the wrong weight is exactly $\|Q-P\|_1$. Since $384\cdot10^{-20}<\epsilon^2t^2$, the repair lemma applies and proves the strict below-half extension.
+For the indicator $P$ found spectrally, the wrong weight is exactly $`\|Q-P\|_1`$. Since $384\cdot10^{-20}<\epsilon^2t^2$, the repair lemma applies and proves the strict below-half extension.

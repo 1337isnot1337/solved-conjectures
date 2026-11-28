@@ -48,11 +48,11 @@ Normal ordering one summand, with g=h+Delta, gives
 ```math
 \begin{aligned}
 \partial_{a,h}x_{i,g}\partial_{g,j}x_{h,b}
-={}&x_{i,g}x_{h,b}\partial_{a,h}\partial_{g,j}\\
-&+\delta_{g,h}\delta_{j,b}\,x_{i,g}\partial_{a,h}\\
-&+\delta_{a,h}\delta_{h,b}\,x_{i,g}\partial_{g,j}\\
-&+\delta_{a,i}\delta_{h,g}\,x_{h,b}\partial_{g,j}\\
-&+\delta_{a,i}\delta_{h,g}\delta_{g,h}\delta_{j,b}.
+={}&x_{i,g}x_{h,b}\partial_{a,h}\partial_{g,j}
+\\ &+\delta_{g,h}\delta_{j,b}\,x_{i,g}\partial_{a,h}
+\\ &+\delta_{a,h}\delta_{h,b}\,x_{i,g}\partial_{g,j}
+\\ &+\delta_{a,i}\delta_{h,g}\,x_{h,b}\partial_{g,j}
+\\ &+\delta_{a,i}\delta_{h,g}\delta_{g,h}\delta_{j,b}.
 \end{aligned}                                                   \tag{2}
 ```
 

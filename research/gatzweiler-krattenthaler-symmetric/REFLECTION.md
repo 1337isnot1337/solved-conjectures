@@ -5,15 +5,15 @@
 ## Exact equivalence and reduction to shift 1
 
 For positive integers $m,n$, take nonnegative integers $a_i$ supported on $1,\ldots,n$ with $a_i=a_{n+1-i}$. Extend them by zero to all integers. Set $S=n+m+1$ and $b_j=a_{j-m}-a_j$. Then the product from Conjecture 3 is
-$$
+```math
  \prod_{j=1}^{S-1}(1-q^j)^{b_j},
  \qquad b_{S-j}=-b_j.
-$$
+```
 If it is polynomial and $S/2<j<S$, then $b_j\ge0$: no other integer in the factor range is a positive multiple of $j$, so $b_j$ is the cyclotomic multiplicity of $\Phi_j(q)$. Consequently the product has the form
-$$
+```math
  Q_{\mathbf v,S}(q)=\prod_{v\in\mathbf v}\frac{1-q^{S-v}}{1-q^v}
- \quad\text{with every }1\le v<S/2,
-$$
+ \quad\text{with every }1\le v\lt S/2,
+```
 where $\mathbf v$ is a multiset and the multiplicity at $v$ is $-b_v$. The midpoint, if integral, has exponent zero.
 
 Conversely, given any multiset $\mathbf v$ in $(0,S/2)$ of positive integer weights, choose $m=1$, $n=S-2$, and let $a_i$ count the weights $v\le\min(i,n+1-i)$. Each weight contributes an interval $[v,n+1-v]$ of unit exponents, so its shifted quotient telescopes to $(1-q^{S-v})/(1-q^v)$. Thus proving Conjecture 3 for shift 1 is equivalent to the full conjecture, and exactly to positivity under polynomiality of all such $Q_{\mathbf v,S}$. The empty multiset is trivial.
@@ -30,14 +30,14 @@ We apply the standard semigroup condition $(C2)$: for every submultiset of the w
 
 A singleton support is immediate by divisibility. The full support always works: for every weight $w$, polynomiality gives some $S-u=Lw$ in $A$, with $L\ge1$. Then $S-w=u+(L-1)w$ belongs to the full semigroup, so every reflected entry is represented.
 
-It remains only to check a two-value support $\{a,b\}$, with multiplicities $r,s$, when there is a third weight value. If the sets of $A$-entries divisible by $a$ and by $b$ are disjoint, they supply at least $r+s$ entries in the semigroup. Otherwise let $S-u$ be a common multiple, and put $g=\gcd(a,b)$.
+It remains only to check a two-value support $`\{a,b\}`$, with multiplicities $r,s$, when there is a third weight value. If the sets of $A$-entries divisible by $a$ and by $b$ are disjoint, they supply at least $r+s$ entries in the semigroup. Otherwise let $S-u$ be a common multiple, and put $g=\gcd(a,b)$.
 
-If $g\mid S$, then also $g\mid u$. Divide the identity $S-u\ge\operatorname{lcm}(a,b)$ by $g$. In units of $g$ both
-$$
+If $g\mid S$, then also $g\mid u$. Divide the identity $`S-u\ge\mathop{\mathrm{lcm}}(a,b)`$ by $g$. In units of $g$ both
+```math
  \frac{S-a}{g}\ge\frac{ab}{g^2}+\frac{u-a}{g},
  \qquad
  \frac{S-b}{g}\ge\frac{ab}{g^2}+\frac{u-b}{g}
-$$
+```
 strictly exceed the Frobenius threshold $(a/g)(b/g)-a/g-b/g$ for the coprime pair $(a/g,b/g)$. (If either scaled weight is 1 the semigroup assertion is immediate.) Thus the entries reflected from $a,b$ themselves supply all $r+s$ required copies. If $g\nmid S$, neither $S-a$ nor $S-b$ is divisible by $g$. Only the third weight's reflected value can supply $g$-divisible entries, and polynomiality at $d=g$ requires at least $r+s$ such copies. All are copies of the common multiple $S-u$, hence in the semigroup.
 
 This proves $(C2)$ with at most three distinct weights, extending its standard three-coordinate scope for this particular problem to arbitrary multiplicities.

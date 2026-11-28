@@ -93,8 +93,8 @@ For a chosen $`\gamma\in(0,1)`$, put $`c=1/((K+1)\gamma)`$. Define
 ```math
 U_{K,n,r}(\gamma)=
 \begin{cases}
-1,&c\ge n/(r+n),\\
-F_{n,r}^{-1}(c),&c\lt n/(r+n).
+1,&c\ge n/(r+n),
+\\ F_{n,r}^{-1}(c),&c\lt n/(r+n).
 \end{cases} \tag{4}
 ```
 

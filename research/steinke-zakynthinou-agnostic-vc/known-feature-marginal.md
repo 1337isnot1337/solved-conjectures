@@ -54,7 +54,7 @@ The new child law at $`v`$ is the exponential tilt of the old one by $`-\Delta V
 Use the KL chain rule for paths and the upper ratio $`e`$ for reaching a node under the new law. When averaging over $`u\sim D`$ independently of $`z`$, (2) contributes at most $`2e r_j`$ at a level-$`j`$ node by the leaf-to-anchor bound. Consequently, uniformly in the fixed base sample,
 ```math
  \mathbb E_u D_{\rm KL}(B_{z+u}\Vert B_z)
- \le C\sum_{j<m} r_j/\tau_j^2
+ \le C\sum_{j\lt m} r_j/\tau_j^2
  \le C(d/n)\sum_{j\ge0}2^{-j/2}.
  \tag{3}
 ```

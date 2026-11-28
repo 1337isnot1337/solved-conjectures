@@ -56,7 +56,7 @@ Let $`B`$ be any square submatrix of $`D(A)`$ whose retained rows and
 columns include both copies of every index in $`S`$. Then
 
 ```math
-p\mid\operatorname{per}B.                               \tag{2}
+p\mid\mathop{\mathrm{per}}B.                               \tag{2}
 ```
 
 Rows and columns outside these two copies can be deleted independently,
@@ -101,7 +101,7 @@ The sum over the two possible pairings of the moved row and column
 orbits is consequently
 
 ```math
-\operatorname{per}(RH)=R^2\operatorname{per}H=0.
+\mathop{\mathrm{per}}(RH)=R^2\mathop{\mathrm{per}}H=0.
 ```
 
 This factor multiplies the permanent of the submatrix on the remaining
@@ -118,7 +118,7 @@ integers, and then add $`d`$ rows and $`d`$ columns with arbitrary
 integer entries. Call the resulting square matrix $`F`$.
 
 **Corollary.** Every odd prime $`p\le n-2s-2d`$ divides
-$`\operatorname{per}F`$.
+$`\mathop{\mathrm{per}}F`$.
 
 **Proof.** Mark each original index incident to a changed entry,
 whether as a row index or a column index. At most $`2s`$ indices are
@@ -147,7 +147,7 @@ Taking $`p=3`$ gives the useful consequence
 ```math
 n\ge2s+2d+3
 \quad\Longrightarrow\quad
-3\mid\operatorname{per}F.                               \tag{3}
+3\mid\mathop{\mathrm{per}}F.                               \tag{3}
 ```
 
 If $`F`$ is a sign matrix, it cannot have a nonzero pure power of two
@@ -168,9 +168,9 @@ The published order-five attaining matrix $`A_5=J_5-2I_5`$ has
 
 ```math
 \begin{aligned}
-\operatorname{per}A_5
-&=\sum_{k=0}^5\binom5k(-2)^k(5-k)!\\
-&=120-240+240-160+80-32=8=q(5).
+\mathop{\mathrm{per}}A_5
+&=\sum_{k=0}^5\binom5k(-2)^k(5-k)!
+\\ &=120-240+240-160+80-32=8=q(5).
 \end{aligned}                                            \tag{4}
 ```
 
@@ -197,7 +197,7 @@ $`n\times n`$ block of the permanental cofactor matrix of $`D(A)`$.
 Direct integer coefficient extraction gives
 
 ```math
-\operatorname{per}D(A_5)=0,\qquad
+\mathop{\mathrm{per}}D(A_5)=0,\qquad
 M(A_5)=-192(J_5+I_5).                                    \tag{6}
 ```
 
@@ -217,8 +217,8 @@ $`w_A(\sigma)=\prod_i a_{i,\sigma(i)}`$.
 Define
 
 ```math
-U(A)=\sum_{\substack{\sigma,\tau\in S_n\\
-                   \text{every cycle of }\sigma^{-1}\tau
+U(A)=\sum_{\substack{\sigma,\tau\in S_n
+                   \\ \text{every cycle of }\sigma^{-1}\tau
                    \text{ has even length}}}
        w_A(\sigma)w_A(\tau).                            \tag{7}
 ```
@@ -242,10 +242,10 @@ and impose no additional condition on the path. The summand is
 Then
 
 ```math
-\operatorname{per}D(A)=
+\mathop{\mathrm{per}}D(A)=
 \begin{cases}
-0,&n\text{ odd},\\
-(-1)^{n/2}2^nU(A),&n\text{ even},
+0,&n\text{ odd},
+\\ (-1)^{n/2}2^nU(A),&n\text{ even},
 \end{cases}                                             \tag{9}
 ```
 
@@ -259,7 +259,7 @@ M(A)=(-1)^{\lceil n/2\rceil}2^{n-1}T(A).                 \tag{10}
 row and column in a matching of $`D(A)`$. Each resulting vertex has
 degree two, so the projected multigraph is a disjoint union of
 alternating cycles. A doubled edge contributes zero, since its copy
-assignments sum to $`\operatorname{per}H=0`$.
+assignments sum to $`\mathop{\mathrm{per}}H=0`$.
 
 On a simple cycle with $`k`$ original rows and $`k`$ original
 columns, sum over the two copy assignments at every vertex. Label a
@@ -315,8 +315,8 @@ Swapping the two halves of the rows or columns in $`D(A)`$ shows
 that its full permanental cofactor matrix is
 
 ```math
-\begin{pmatrix}M(A)&(-1)^nM(A)\\
-                (-1)^nM(A)&-M(A)\end{pmatrix}.             \tag{11}
+\begin{pmatrix}M(A)&(-1)^nM(A)
+                \\ (-1)^nM(A)&-M(A)\end{pmatrix}.             \tag{11}
 ```
 
 For sign vectors $`r,c\in\{1,-1\}^n`$ and $`e\in\{1,-1\}`$,
@@ -325,19 +325,19 @@ consider the restricted border
 ```math
 F(A;r,c,e)=
 \begin{pmatrix}
-A&A&r\\
-A&-A&r\\
-c^T&c^T&e
+A&A&r
+\\ A&-A&r
+\\ c^T&c^T&e
 \end{pmatrix}.
 ```
 
 Expanding the border and using (9)--(11) yields
 
 ```math
-\operatorname{per}F(A;r,c,e)=
+\mathop{\mathrm{per}}F(A;r,c,e)=
 \begin{cases}
-(-1)^{(n+3)/2}2^n r^TT(A)c,&n\text{ odd},\\
-(-1)^{n/2}2^n\bigl(eU(A)+r^TT(A)c\bigr),&n\text{ even}.
+(-1)^{(n+3)/2}2^n r^TT(A)c,&n\text{ odd},
+\\ (-1)^{n/2}2^n\bigl(eU(A)+r^TT(A)c\bigr),&n\text{ even}.
 \end{cases}                                             \tag{12}
 ```
 
@@ -345,8 +345,8 @@ For an attaining core, the exact odd-output obligation is consequently
 
 ```math
 \begin{cases}
-|r^TT(A)c|=q(n),&n\text{ odd},\\
-|eU(A)+r^TT(A)c|=q(n),&n\text{ even}.
+|r^TT(A)c|=q(n),&n\text{ odd},
+\\ |eU(A)+r^TT(A)c|=q(n),&n\text{ even}.
 \end{cases}                                             \tag{13}
 ```
 

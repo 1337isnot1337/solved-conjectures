@@ -541,8 +541,8 @@ Thus
 v_2(u^{2^k}+v^{2^\ell})
 =\begin{cases}
 \min\{2^k v_2(u),2^\ell v_2(v)\},&
-2^k v_2(u)\ne2^\ell v_2(v),\\
-2^k v_2(u)+1,&
+2^k v_2(u)\ne2^\ell v_2(v),
+\\ 2^k v_2(u)+1,&
 2^k v_2(u)=2^\ell v_2(v).
 \end{cases}
 ```

@@ -87,17 +87,17 @@ q=\left\lfloor\frac{v+2}{\ell}\right\rfloor.
 Because $`\ell\ge5`$ and $`v>3`$,
 
 ```math
-2q+1\le\frac{2v+9}{5}<v.
+2q+1\le\frac{2v+9}{5}\lt v.
 ```
 
 All quantities except the middle bound are integers; hence $`v\ge2q+2`$. Monotonicity of $`b`$ yields
 
 ```math
 \begin{aligned}
-A(v)&\ge A(2q+2)\\
-&=\sum_{j=0}^{q}b(j)
-  +\sum_{j=0}^{q}b(j+q+1)+b(2q+2)\\
-&>2\sum_{j=0}^{q}b(j)=2A(q).
+A(v)&\ge A(2q+2)
+\\ &=\sum_{j=0}^{q}b(j)
+  +\sum_{j=0}^{q}b(j+q+1)+b(2q+2)
+\\ &>2\sum_{j=0}^{q}b(j)=2A(q).
 \end{aligned}
 \tag{5}
 ```
@@ -122,8 +122,8 @@ Fix any $`v\ge1`$. We prove (3) by strong induction on $`u`$. The base $`u=1`$ h
 ```math
 \begin{aligned}
 D(u+1,v)-D(u,v)
- &=b(u+1)A(v)-b(u+v+2)\\
- &=A(k)A(v)-A(j),
+ &=b(u+1)A(v)-b(u+v+2)
+ \\ &=A(k)A(v)-A(j),
 \end{aligned}
 \tag{7}
 ```

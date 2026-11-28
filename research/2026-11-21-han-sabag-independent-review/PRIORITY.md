@@ -12,7 +12,7 @@ The primary target is Barron Han, Oron Sabag, Victoria Kostina and Babak Hassibi
 
 The current [arXiv version history](https://arxiv.org/abs/2406.17196) lists v1 on 25 June 2024 and v2 on 5 August 2025. No later revision was listed when this review was made. The v2 conjecture, surrounding discussion, conditional necessity theorem and relevant portions of Appendix A were independently read.
 
-The displayed optimization fixes diagonal matrices $`B`$ and $`H`$, allows an arbitrary real matrix $`\Gamma`$, minimizes $`\operatorname{tr}\Pi`$, and requires diagonal $`\Pi\succeq0`$ and $`J\succ0`$ satisfying
+The displayed optimization fixes diagonal matrices $`B`$ and $`H`$, allows an arbitrary real matrix $`\Gamma`$, minimizes $`\mathop{\mathrm{tr}}\Pi`$, and requires diagonal $`\Pi\succeq0`$ and $`J\succ0`$ satisfying
 
 ```math
 J=BJB-\Gamma^{T}(I+H\Pi H)^{-1}\Gamma+B\Gamma^{T}\Gamma B.

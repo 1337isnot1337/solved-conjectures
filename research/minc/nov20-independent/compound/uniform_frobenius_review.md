@@ -16,7 +16,7 @@ Write u=||A-J||_F^2 and v=min(u,1). For n>=4, the proposed integer
 k=1+floor((n-2)v/4) satisfies
 
 ```math
-1\le k\le(n+2)/4\le n/2<n.
+1\le k\le(n+2)/4\le n/2\lt n.
 ```
 
 Hence the denominator of the negative term in the multicolumn bound is
@@ -40,7 +40,7 @@ For u<=epsilon=10^-6, the reviewed local theorem gives a normalized
 permanent at least 1+u/32. Therefore
 
 ```math
-\log(\operatorname{per}A/d_n)
+\log(\mathop{\mathrm{per}}A/d_n)
 \ge\frac{u}{32+u}
 \ge\frac{\varepsilon u}{32}.
 ```

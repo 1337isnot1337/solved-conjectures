@@ -254,9 +254,9 @@ For `a=A-B` and `b=C-D`, use
 
 ```math
 \begin{aligned}
-a+b&=(A+C)-(B+D),\\
-a-b&=(A+D)-(B+C),\\
-ab&=(AC+BD)-(AD+BC).
+a+b&=(A+C)-(B+D),
+\\ a-b&=(A+D)-(B+C),
+\\ ab&=(AC+BD)-(AD+BC).
 \end{aligned}
 ```
 
@@ -478,7 +478,7 @@ Proof. The case `a=0` follows from `N(f)<=1`. Otherwise put
 ```math
 \log_2N(f)\le a(\log_2a+7)
 \le a(\log_2s+7)
-<t(\log_2s+7)=s-t.
+\lt t(\log_2s+7)=s-t.
 ```
 
 The zero-root case is immediate. This proves the theorem.

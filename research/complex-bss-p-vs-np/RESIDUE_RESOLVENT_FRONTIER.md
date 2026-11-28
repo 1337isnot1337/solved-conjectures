@@ -86,7 +86,7 @@ Specialize `z=k`. The marked factor contributes `s^{k d_R} widehat R(A,u)^k`. Ev
 ```math
 [s^E]T(A,k,s,u)=C_W\widehat R(A,u)^k,
 \qquad
-[s^j]T(A,k,s,u)=0\quad(0\le j<E),                \tag{7}
+[s^j]T(A,k,s,u)=0\quad(0\le j\lt E),                \tag{7}
 ```
 
 where

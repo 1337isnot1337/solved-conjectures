@@ -27,8 +27,8 @@ that, after a common lower shear and the rescaling used there, any
 first nontrivial diagonal term gives the special tuple
 
 ```math
-\Psi_X=\begin{pmatrix}I_n\otimes\Phi_X&L_X\\
-0&I_n\otimes\Phi_X\end{pmatrix},
+\Psi_X=\begin{pmatrix}I_n\otimes\Phi_X&L_X
+\\ 0&I_n\otimes\Phi_X\end{pmatrix},
 \qquad [\Phi_X,\Phi_Y]=0.                       \tag{1}
 ```
 
@@ -45,8 +45,8 @@ lift its spectral projectors to the formal family. This gives a
 formal diagonal smoothing of each block
 
 ```math
-\begin{pmatrix}I_n\otimes\Phi_X|_E&X\otimes I_E\\
-0&I_n\otimes\Phi_X|_E\end{pmatrix}
+\begin{pmatrix}I_n\otimes\Phi_X|_E&X\otimes I_E
+\\ 0&I_n\otimes\Phi_X|_E\end{pmatrix}
 ```
 
 on a space of dimension $`2n\dim E`$. For a block family
@@ -145,7 +145,7 @@ basis is
 
 ```math
 1,\ x_0,\ x_i,\ x_0^2,\ x_0x_i
-\quad(1\le i<n^2),
+\quad(1\le i\lt n^2),
 ```
 
 with $`x_ix_j=x_0^3=x_0^2x_i=0`$ for $`i,j\ge1`$.
@@ -172,8 +172,8 @@ M_X=\begin{pmatrix}A_X&X\otimes I_m\\C_X&D_X\end{pmatrix}.
 Then one common lower shear conjugates it to
 
 ```math
-\begin{pmatrix}I_n\otimes\Phi_X&X\otimes I_m\\
-0&I_n\otimes\Phi_X\end{pmatrix},
+\begin{pmatrix}I_n\otimes\Phi_X&X\otimes I_m
+\\ 0&I_n\otimes\Phi_X\end{pmatrix},
 \qquad[\Phi_X,\Phi_Y]=0.                        \tag{7}
 ```
 
@@ -194,8 +194,8 @@ shear with lower block $`tK`$ gives exactly
 
 ```math
 \begin{pmatrix}
-tF_X&L_X\\
-t^2(C_X+KL_XK+[F_X,K])&tF_X
+tF_X&L_X
+\\ t^2(C_X+KL_XK+[F_X,K])&tF_X
 \end{pmatrix}.
 ```
 

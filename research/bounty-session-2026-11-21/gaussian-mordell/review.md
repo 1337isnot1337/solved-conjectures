@@ -14,15 +14,15 @@ The chord/tangent formula in `add` is correct for `Y^2=X^3+A`. It treats infinit
 
 Write `r=6k+t`, with `1<=t<=6`. On
 
-\[
+```math
 Y^2=X^3+z^t,
-\]
+```
 
 the recovered bases are
 
-\[
+```math
 x=Yz^{3k},\qquad y=-Xz^{2k},
-\]
+```
 
 and therefore `x^2+y^3=z^(6k+t)`. The minus sign on `X` is essential and is correctly implemented. For `k>=1`, the exponent is at least seven, giving the required strict reciprocal-exponent inequality. The control code correctly uses `t=6`, rather than `t=0`, for an exponent divisible by six.
 
@@ -54,9 +54,9 @@ Scaling the first point by `(3^2,3^3)` gives a rational point on `E_1458`. Its f
 
 All per-curve progress totals match the summaries. With `s` chosen seeds, multiple bound `M` and triple bound `T`, the exact number of inspection calls is
 
-\[
+```math
 (2M+1)s+2M^2\binom{s}{2}+4T^3\binom{s}{3}.
-\]
+```
 
 This formula matches every recorded curve. The maximum seed counts are seven and ten, so the cap of twelve did not truncate either completed run. The initial summary predates the `triple_bound` option and omits that key; its recorded counts agree exactly with `T=0`.
 

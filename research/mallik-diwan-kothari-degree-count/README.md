@@ -1,6 +1,6 @@
 # Mallik–Diwan–Kothari degree-count conjecture
 
-**False for every $k\geq 3$.** Conjecture 8.9 predicts a lower bound on the number of degree-$k+1$ vertices in a minimal $k$-extendable bipartite graph. Two complete bipartite blocks and two matchings give counterexamples for each such $k$. The smallest graph in this family has 16 vertices, 36 edges and ten vertices of degree four, where the conjecture requires eleven.
+**False for every $k\geq 3$.** Conjecture 8.9 predicts a lower bound on the number of degree-$`k+1`$ vertices in a minimal $k$-extendable bipartite graph. Two complete bipartite blocks and two matchings give counterexamples for each such $k$. The smallest graph in this family has 16 vertices, 36 edges and ten vertices of degree four, where the conjecture requires eleven.
 
 - [Complete proof](PROOF.md)
 - [Source and priority audit](AUDIT.md)

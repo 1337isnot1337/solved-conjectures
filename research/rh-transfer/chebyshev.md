@@ -15,9 +15,9 @@ Let the real primitive character modulo four be
 ~~~math
 \chi_4(n)=
 \begin{cases}
-0,&2\mid n,\\
-1,&n\equiv1\pmod4,\\
--1,&n\equiv3\pmod4.
+0,&2\mid n,
+\\ 1,&n\equiv1\pmod4,
+\\ -1,&n\equiv3\pmod4.
 \end{cases}
 ~~~
 
@@ -30,7 +30,7 @@ Chebyshev's conjecture is
 \tag{C}
 ~~~
 
-The sum converges absolutely at each positive real \(x\), since its absolute value is majorized by \(\sum_{n\ge1}e^{-n/x}\). Equivalently, putting \(r=e^{-1/x}\), it asserts
+The sum converges absolutely at each positive real $`x`$, since its absolute value is majorized by $`\sum_{n\ge1}e^{-n/x}`$. Equivalently, putting $`r=e^{-1/x}`$, it asserts
 
 ~~~math
 \lim_{r\uparrow1}\sum_{p>2}(-1)^{(p-1)/2}r^p=-\infty.
@@ -38,20 +38,19 @@ The sum converges absolutely at each positive real \(x\), since its absolute val
 
 The modulus four and the exponential weight are part of the original conjecture. Proving (C) is therefore a complete named target, not a selected modulus of an asserted general-modulus theorem.
 
-Ford–Konyagin give this formulation at the beginning of their 2002 paper. Platt–Trudgian use the equivalent parameterization \(x\downarrow0\), with weight \(e^{-xp}\), in equation (1). Suzuki gives exactly (C) as equation (16) in §1.2 of the corrected 2025 article. [1–3]
+Ford–Konyagin give this formulation at the beginning of their 2002 paper. Platt–Trudgian use the equivalent parameterization $`x\downarrow0`$, with weight $`e^{-xp}`$, in equation (1). Suzuki gives exactly (C) as equation (16) in §1.2 of the corrected 2025 article. [1–3]
 
 ## The classical theorem used
 
 For this specific character, the following are equivalent:
 
-1. \(L(s,\chi_4)\ne0\) for every complex \(s\) with \(\Re s>1/2\).
+1. $`L(s,\chi_4)\ne0`$ for every complex $`s`$ with $`\Re s>1/2`$.
 2. Chebyshev's assertion (C).
 3. The logarithmically weighted assertion
-   \[
-   \lim_{x\to\infty}\sum_{p>2}\chi_4(p)\log p\,e^{-p/x}=-\infty.
-   \]
 
-The equivalence of the first two statements is stated explicitly on the first page of Ford–Konyagin and in the introduction of Platt–Trudgian. Suzuki §1.2, equations (16)–(17), records both weighted formulations and their equivalence with GRH for \(L(s,\chi_4)\), crediting Hardy–Littlewood and Landau. [1–3]
+   $`\displaystyle \lim_{x\to\infty}\sum_{p>2}\chi_4(p)\log p\,e^{-p/x}=-\infty.`$
+
+The equivalence of the first two statements is stated explicitly on the first page of Ford–Konyagin and in the introduction of Platt–Trudgian. Suzuki §1.2, equations (16)–(17), records both weighted formulations and their equivalence with GRH for $`L(s,\chi_4)`$, crediting Hardy–Littlewood and Landau. [1–3]
 
 The sources refer to Hardy–Littlewood, *Contributions to the theory of the Riemann zeta-function and the theory of the distribution of primes*, **Acta Mathematica 41**, 119–196, and Landau, *Über einige ältere Vermutungen und Behauptungen in der Primzahltheorie*, I–II, **Mathematische Zeitschrift 1** (1918), 1–24 and 213–219. Later bibliographies disagree between 1916, 1917, and 1918 for the Hardy–Littlewood paper; the volume and page range identify the work without relying on that metadata discrepancy.
 
@@ -67,9 +66,9 @@ DirichletLNonvanishingRightOfHalf
 
 in [Statements.lean at commit 9d5316ec73f5df89c4d95703ed106837b8a4060e](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Statements.lean).
 
-Its mathematical content is nonvanishing for every Dirichlet character in \(\Re s>1/2\), apart from the principal-character pole at \(s=1\). We use that statement as accepted mathematical input; this is not a Lean-verification task.
+Its mathematical content is nonvanishing for every Dirichlet character in $`\Re s>1/2`$, apart from the principal-character pole at $`s=1`$. We use that statement as accepted mathematical input; this is not a Lean-verification task.
 
-Apply it with conductor \(4\) and character \(\chi_4\). The character is nonprincipal because \(\chi_4(3)=-1\). Therefore the principal-character exception never applies, and
+Apply it with conductor $`4`$ and character $`\chi_4`$. The character is nonprincipal because $`\chi_4(3)=-1`$. Therefore the principal-character exception never applies, and
 
 ~~~math
 L(s,\chi_4)\ne0\qquad(\Re s>1/2).
@@ -87,20 +86,20 @@ L(s,\chi_4)=\beta(s)
 
 with the series interpreted by its ordinary convergent Dirichlet-series continuation on this half-plane. The character's bounded partial sums give convergence locally uniformly there. The functional equation makes the no-zeros-on-the-right formulation equivalent to the usual critical-line assertion for its nontrivial zeros.
 
-There is no need for simplicity of zeros, rational independence of their ordinates, or any nonabelian L-function. RH for \(\zeta\) alone would not establish the required hypothesis for this distinct L-function. A fixed zero-free half-plane \(\Re s>\sigma_0\) with \(\sigma_0>1/2\) does not, by this theorem, suffice either.
+There is no need for simplicity of zeros, rational independence of their ordinates, or any nonabelian L-function. RH for $`\zeta`$ alone would not establish the required hypothesis for this distinct L-function. A fixed zero-free half-plane $`\Re s>\sigma_0`$ with $`\sigma_0>1/2`$ does not, by this theorem, suffice either.
 
 ## Assertions that must not be substituted for the target
 
 | Assertion | Relation to this result |
 |---|---|
-| \(\pi(x;4,3)\ge\pi(x;4,1)\) for every \(x\) | False. The difference changes sign infinitely often. This is not (C). |
+| $`\pi(x;4,3)\ge\pi(x;4,1)`$ for every $`x`$ | False. The difference changes sign infinitely often. This is not (C). |
 | Every ordering in every prime-number race occurs infinitely often | Not supplied by the theorem used here. |
 | A particular logarithmic density for an unsmoothed race | Not established here. Classical race-density analyses often require an independence hypothesis in addition to GRH. |
-| Fujii's assertion for every exponential-power parameter \(\alpha>0\) | A separate extension; no all-\(\alpha\) conclusion is made. |
-| A slightly larger admissible numerical interval for \(\alpha\) | Excluded from this campaign's target count. |
+| Fujii's assertion for every exponential-power parameter $`\alpha>0`$ | A separate extension; no all-$`\alpha`$ conclusion is made. |
+| A slightly larger admissible numerical interval for $`\alpha`$ | Excluded from this campaign's target count. |
 | Suzuki's several new weighted criteria | Useful prior art, but these are not counted as additional original conjectures solved here. |
 
-The first exclusion is documented in Ford–Konyagin's introduction. The density distinction and the all-\(\alpha\) question are discussed in Suzuki §1.2. Platt–Trudgian's Theorem 1 treats an explicit bounded interval of \(\alpha\), not the full extension. [1–3]
+The first exclusion is documented in Ford–Konyagin's introduction. The density distinction and the all-$`\alpha`$ question are discussed in Suzuki §1.2. Platt–Trudgian's Theorem 1 treats an explicit bounded interval of $`\alpha`$, not the full extension. [1–3]
 
 The smoothing in (C) is therefore essential to the target statement. Its conclusion does not conflict with infinitely many sign changes of the unweighted counting difference.
 
@@ -136,5 +135,5 @@ No separate established resolution of the original full assertion was located in
 5. Hartmut Bentz and János Pintz, *Quadratic residues and the distribution of prime numbers* (1980), introduction:  
    https://personal.math.ubc.ca/~gerg/teaching/592-Fall2018/papers/1980.Bentz.pdf
 
-6. Pedro Caceres, *Cross-Energy of Dirichlet Partial Sums. Part 37: The \(6k\pm1\) race: sieve structure, Chebyshev's bias and a GRH-equivalent inequality*, 12 November 2026, abstract inspected for prior-art exclusion:  
+6. Pedro Caceres, *Cross-Energy of Dirichlet Partial Sums. Part 37: The $`6k\pm1`$ race: sieve structure, Chebyshev's bias and a GRH-equivalent inequality*, 12 November 2026, abstract inspected for prior-art exclusion:  
    https://hexagonmath.org/2611.00350v1

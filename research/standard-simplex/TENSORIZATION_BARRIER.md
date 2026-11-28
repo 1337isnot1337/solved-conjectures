@@ -27,7 +27,7 @@ B_\rho(f)=\sum_{i=1}^q
 ```
 
 ```math
-L_\rho(f)=\sum_{i<j}\int_{\Sigma_{ij}}
+L_\rho(f)=\sum_{i\lt j}\int_{\Sigma_{ij}}
  a_{ij}(x)f_{ij}(x)^2\,d\gamma_n^{\partial}(x),
 \qquad
 a_{ij}(x)=\partial_{N_{ij}}T_\rho(1_{A_i}-1_{A_j})(x).

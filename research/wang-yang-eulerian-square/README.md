@@ -2,7 +2,7 @@
 
 Wang and Yang’s Conjecture 4.3 asserts strict positivity of all minors of $[A(n+k,k)]_{n,k\ge1}$, where $A(m,j)$ counts permutations of $m$ letters with $j-1$ descents. Write $E(a,b)$ for the number of permutations with $a$ ascents and $b$ descents, so they have $a+b+1$ letters. The source matrix has entries $E(n,k-1)$. Reversing a permutation gives $E(a,b)=E(b,a)$. Below the symmetric extension includes $a=0$. [Wang–Yang, §4](https://cfc.nankai.edu.cn/_upload/article/files/ca/07/264e89bc4d9bb418a6d91d482b90/ef62459f-bec2-470d-8199-b57a790de20a.pdf) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/804)
 
-**Proposition.** Every principal minor of the symmetric matrix $E$ is strictly positive, for arbitrary finite index sets. Every two-by-two minor of $E$ with increasing row and column indices is strictly positive. The principal-minor assertion inside Wang and Yang’s indexing uses rows $S$ and columns $S+1$, for finite $S\subseteq\{1,2,\ldots\}$.
+**Proposition.** Every principal minor of the symmetric matrix $E$ is strictly positive, for arbitrary finite index sets. Every two-by-two minor of $E$ with increasing row and column indices is strictly positive. The principal-minor assertion inside Wang and Yang’s indexing uses rows $S$ and columns $S+1$, for finite $`S\subseteq\{1,2,\ldots\}`$.
 
 ## A Gram integral
 
@@ -14,7 +14,7 @@ Let $p_j$ denote the density of the sum of $j$ independent uniform variables on 
 
 The spline identity is classical. [Wang–Xu–Xu, Theorem 1.1](https://arxiv.org/abs/0808.2349)
 
-Multiplication by the gamma integral for $(a+b+1)!$ gives a Gram matrix with functions $g_a(x,t)=t^a p_{a+1}(x)$ and positive measure $t e^{-t}\,dt\,dx$ on the positive quadrant. On $0<x<1$ the function $g_a(x,t)$ equals $(tx)^a/a!$. A linear combination with distinct $a$ vanishing almost everywhere there gives a polynomial in $t$ vanishing almost everywhere for almost every fixed $x$ in that interval. Every coefficient vanishes. Thus every finite family of the $g_a$ is linearly independent, proving strict positivity of its Gram determinant.
+Multiplication by the gamma integral for $(a+b+1)!$ gives a Gram matrix with functions $g_a(x,t)=t^a p_{a+1}(x)$ and positive measure $`t e^{-t}\,dt\,dx`$ on the positive quadrant. On $0<x<1$ the function $g_a(x,t)$ equals $(tx)^a/a!$. A linear combination with distinct $a$ vanishing almost everywhere there gives a polynomial in $t$ vanishing almost everywhere for almost every fixed $x$ in that interval. Every coefficient vanishes. Thus every finite family of the $g_a$ is linearly independent, proving strict positivity of its Gram determinant.
 
 ## Arbitrary row and column pairs
 

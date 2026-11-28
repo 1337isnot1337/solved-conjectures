@@ -4,11 +4,11 @@
 
 ## Geometry
 
-Use the standard affine model of the Hermitian unital, $\operatorname{Tr}(x)=N(y)$, with the unique unital point $X$ at infinity in the $x$ direction. Send the common point $u\cap v$ to $X$ by unital point transitivity. The two lines then have equations $y=a_0,y=a_1$. One may normalize to $y=0,1$: translating $y$ by $a_0$ introduces a trace-linear term and a constant in its norm, removable by a shear and a translation in $x$ (the trace is onto); then divide $y$ by $a_1-a_0$ and $x$ by $N(a_1-a_0)$. The tangent at $X$ is not a secant. The analysis uses only the usual trace and norm over $\mathbb F_{q^2}/\mathbb F_q$, valid in every characteristic.
+Use the standard affine model of the Hermitian unital, $`\mathop{\mathrm{Tr}}(x)=N(y)`$, with the unique unital point $X$ at infinity in the $x$ direction. Send the common point $u\cap v$ to $X$ by unital point transitivity. The two lines then have equations $y=a_0,y=a_1$. One may normalize to $y=0,1$: translating $y$ by $a_0$ introduces a trace-linear term and a constant in its norm, removable by a shear and a translation in $x$ (the trace is onto); then divide $y$ by $a_1-a_0$ and $x$ by $N(a_1-a_0)$. The tangent at $X$ is not a secant. The analysis uses only the usual trace and norm over $\mathbb F_{q^2}/\mathbb F_q$, valid in every characteristic.
 
-A nonconcurrent core meeting both tips in unital points is of the form $x=my+b$ with $\operatorname{Tr}(b)=0$ and $\operatorname{Tr}(m)=1$. For each slope there are exactly $q$ choices of $b$. A concurrent core is $y=a$ with $a\ne0,1$, and meets this nonconcurrent core in a unital point precisely when
+A nonconcurrent core meeting both tips in unital points is of the form $x=my+b$ with $`\mathop{\mathrm{Tr}}(b)=0`$ and $`\mathop{\mathrm{Tr}}(m)=1`$. For each slope there are exactly $q$ choices of $b$. A concurrent core is $y=a$ with $a\ne0,1$, and meets this nonconcurrent core in a unital point precisely when
 ```math
- N(a)=\operatorname{Tr}(ma).
+ N(a)=\mathop{\mathrm{Tr}}(ma).
 ```
 The condition is independent of $b$. For $a\in\mathbb F_q$, this asks $a^2=a$; after excluding the tips it never holds. If $a\notin\mathbb F_q$, the trace pairings against $1$ and $a$ are two independent linear functionals, so $a$ belongs to exactly one slope. For a fixed trace-one $m$, the condition is $N(a-\bar m)=N(m)$, with $N(m)\ne0$. The norm fiber has $q+1$ points, of which two are $0,1$. Thus every slope has exactly $q-1$ concurrent cores and $q$ nonconcurrent ones. For each slope all the intersections between its two classes are distinct: $a$ determines the concurrent core and then $x=ma+b$ determines $b$.
 

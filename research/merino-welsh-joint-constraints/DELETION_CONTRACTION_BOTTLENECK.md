@@ -138,8 +138,8 @@ Here is an exact formal family. Let `T` be a positive multiple of 48 and prescri
 ```math
 \begin{array}{c|ccccc}
  & A&D&C&t&F\\ \hline
-H & 3T/2&T/2&T&T&T\\
-K & 3T/4&3T/8&4T/3&T&T.
+H & 3T/2&T/2&T&T&T
+\\ K & 3T/4&3T/8&4T/3&T&T.
 \end{array} \tag{7}
 ```
 

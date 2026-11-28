@@ -64,7 +64,7 @@ script's sum of projectors. Let `B=(1,e,f,g,h)` be the column-basis matrix.
 Its Gram matrix is exactly
 
 ```math
-B^TB=\operatorname{diag}(5,4,20,2,2).
+B^TB=\mathop{\mathrm{diag}}(5,4,20,2,2).
 ```
 
 In this basis the two rotation blocks are

@@ -154,7 +154,7 @@ It follows that
 \nu_sC_s\leq
 \frac34(15/14)^s\nu_s
 \leq\frac{675}{784}\nu_s
-\qquad(1<s<2).
+\qquad(1\lt s<2).
 ```
 
 
@@ -173,8 +173,8 @@ The proof's logarithmic estimates give
 \begin{split}
 \sum_h2^{-h}\binom h{K-h}(10+\log m_h)
 &\leq\frac34(10+\log c+\log(7/6))
-  +\frac K2\log3\\
-&\leq aD+a\log(4/3)+\frac34\log(7/6).
+  +\frac K2\log3
+\\ &\leq aD+a\log(4/3)+\frac34\log(7/6).
 \end{split}
 ```
 

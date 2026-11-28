@@ -6,9 +6,9 @@ Status: unresolved. No finite verification is counted as a resolution.
 ## Statement and source audit
 
 For a parking function $a=(a_1,\ldots,a_n)$, let
-$\operatorname{exc}(a)=|\{i:a_i>i\}|$. The entire assertion is that
+$`\mathop{\mathrm{exc}}(a)=|\{i:a_i>i\}|`$. The entire assertion is that
 ```math
-E_n(t)=\sum_{a\in\operatorname{PF}_n}t^{\operatorname{exc}(a)}
+E_n(t)=\sum_{a\in\mathop{\mathrm{PF}}_n}t^{\mathop{\mathrm{exc}}(a)}
 ```
 is real-rooted for every $n\geq1$, and that consecutive rows interlace.
 
@@ -27,7 +27,7 @@ Both web engines and public GitHub issue records were searched for the exact sta
 Define
 ```math
 P_n(z_1,\ldots,z_{n-1})
- =\sum_{a\in\operatorname{PF}_n}\prod_{i:a_i>i}z_i.
+ =\sum_{a\in\mathop{\mathrm{PF}}_n}\prod_{i:a_i>i}z_i.
 ```
 There is no $z_n$ because $a_n\leq n$.
 
@@ -52,7 +52,7 @@ Exact Rayleigh differences are positive in the small rows inspected. Numerical r
 
 ## An exact recurrence for the Worpitzky transform
 
-Define the degree-$n$ polynomial $q_n(m)$ by
+Define the degree-$`n`$ polynomial $q_n(m)$ by
 ```math
 \frac{E_n(t)}{(1-t)^{n+1}}
  =\sum_{m\geq0}q_n(m)t^m.
@@ -72,7 +72,7 @@ By Defant's equidistribution, $E_n$ also counts descents of the parking outcome 
 
 When the car in spot $p$ arrives, the closest still-empty spot to its left is the closest $j<p$ with $\tau(j)>\tau(p)$, or spot $0$ if none exists. Thus the number of possible preferences for that car is
 ```math
-p-\max(\{j<p:\tau(j)>\tau(p)\}\cup\{0\}).
+p-\max(\{j\lt p:\tau(j)>\tau(p)\}\cup\{0\}).
 ```
 The preferences for a fixed outcome can be chosen independently in these intervals.
 
@@ -82,7 +82,7 @@ w(T)=\prod_{v\in T}(1+|T_v^{\mathrm{left}}|),
 ```
 which depends only on the plane binary-tree shape.
 
-The inverse words $\sigma$ belonging to a fixed shape are exactly the linear extensions of the tree order in which a descendant precedes its ancestors. The labels are the inorder positions. For a permutation with $d$ descents, weakly increasing sequences of values in $\{0,\ldots,m\}$, strict at those descents, number
+The inverse words $\sigma$ belonging to a fixed shape are exactly the linear extensions of the tree order in which a descendant precedes its ancestors. The labels are the inorder positions. For a permutation with $d$ descents, weakly increasing sequences of values in $`\{0,\ldots,m\}`$, strict at those descents, number
 $\binom{m+n-d}{n}$. Summing over the linear extensions gives the usual labelled-poset order polynomial. Its generating function is the descent polynomial divided by $(1-t)^{n+1}$.
 
 Fix the root value $s$. All labels in the left subtree are smaller than the root label, so their values are at most $s$. All labels in the right subtree are larger, so their values are at most $s-1$. The standard order-polynomial decomposition is therefore
@@ -95,7 +95,7 @@ The factor $\ell+1$ is the root's contribution to $w(T)$. Taking a finite differ
 
 A second expression follows from Defant's Ferrers-board formula and the factorial rook identity. If $b_1\leq\cdots\leq b_n$ is a parking content and $\mu(b)$ is the product of the factorials of its multiplicities, then
 ```math
-q_n(m)=\sum_{b\in\operatorname{PF}_{\leq}(n)}
+q_n(m)=\sum_{b\in\mathop{\mathrm{PF}}_{\leq}(n)}
  \frac1{\mu(b)}
  \prod_{j=1}^{n}(m+j-b_j+1).
 \tag{2}

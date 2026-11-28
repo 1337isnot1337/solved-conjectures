@@ -26,7 +26,7 @@ a_k=\frac{n^k\sigma_k(A)}{k!\binom nk^2},\qquad d_n=\frac{n!}{n^n},
 it reads
 
 ```math
-\operatorname{per}((1-t)J+tA)
+\mathop{\mathrm{per}}((1-t)J+tA)
 =d_n\sum_{k=0}^n\binom nk a_k t^k(1-t)^{n-k}.
 ```
 

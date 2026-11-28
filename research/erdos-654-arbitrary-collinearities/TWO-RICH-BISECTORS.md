@@ -7,8 +7,8 @@ For integers $`2\le K\le n`$, with an absolute implied constant,
 ```math
 T_K\ll
 \begin{cases}
-n^3/K^4,& 2\le K\le\sqrt n,\\
-n^2/K^2,& \sqrt n\le K\le n.
+n^3/K^4,& 2\le K\le\sqrt n,
+\\ n^2/K^2,& \sqrt n\le K\le n.
 \end{cases}
 ```
 

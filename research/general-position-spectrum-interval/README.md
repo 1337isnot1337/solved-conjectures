@@ -8,7 +8,7 @@ For an acyclic orientation, every directed shortest path is an induced path of t
 
 Given an acyclic orientation $D$, make any one vertex $v$ a source by orienting all edges incident to it away from it. The result $D'$ remains acyclic. Among vertices different from $v$, any directed geodesic of $D'$ uses no $v$. Its arcs already existed in $D$, and because its length equals the undirected distance, it was a directed geodesic also in $D$. Thus any general-position set in $D$, with $v$ removed if present, is still in general position in $D'$. In particular,
 ```math
-\operatorname{gp}(D')\ \ge\ \operatorname{gp}(D)-1.
+\mathop{\mathrm{gp}}(D')\ \ge\ \mathop{\mathrm{gp}}(D)-1.
 ```
 
 One can transform any acyclic orientation into any other acyclic orientation $E$ by successively forcing vertices to be sources in **reverse** topological order of $E$. For any edge $u\to w$ of $E$, its desired tail $u$ is forced last among its endpoints, so it ends up pointing the right way. Start with an acyclic orientation of maximum general position number and end with one of minimum number. The sequence can increase by more than one, but decreases by at most one; it must therefore visit every intermediate integer.
@@ -21,12 +21,12 @@ Every orientation of a forest is acyclic and every forest is distance-hereditary
 
 In an oriented tree, every directed path is a geodesic. Order vertices by directed reachability. A set is in general position precisely when its induced reachability poset has no three-element chain (equivalently, it is a union of two antichains). The [Greene–Kleitman chain-partition theorem](https://doi.org/10.1016/0097-3165(76)90077-7) therefore gives
 ```math
-\operatorname{gp}(D)
+\mathop{\mathrm{gp}}(D)
 =\min_{\mathcal C}\sum_{C\in\mathcal C}\min(2,|C|),
 ```
 where the minimum ranges over all partitions of the reachability poset into chains. Chains need not be disjoint as underlying paths; the partition is of their assigned vertices. This is an application of the cited poset theorem, not a new priority claim for that theorem.
 
-The following recurrence evaluates the number directly in linear time without constructing the reachability relation. For a rooted oriented subtree with root $v$, keep the maximum size of a valid set for each state $(s,i,o)$: $s$ indicates whether $v$ is chosen, and $i,o$ are the largest numbers of chosen vertices on directed paths ending and starting at $v$, respectively. Length-zero paths are included. The nine possible states have $s\in\{0,1\}$, $i,o\in\{s,\ldots,2\}$ and $i+o-s\le2$. Impossible states have value minus infinity.
+The following recurrence evaluates the number directly in linear time without constructing the reachability relation. For a rooted oriented subtree with root $v$, keep the maximum size of a valid set for each state $(s,i,o)$: $s$ indicates whether $v$ is chosen, and $i,o$ are the largest numbers of chosen vertices on directed paths ending and starting at $v$, respectively. Length-zero paths are included. The nine possible states have $`s\in\{0,1\}`$, $`i,o\in\{s,\ldots,2\}`$ and $i+o-s\le2$. Impossible states have value minus infinity.
 
 Start at a root alone with values 0 and 1 for $(0,0,0),(1,1,1)$. Attach child subtrees one at a time. For edge $u\to v$, combine an old parent state $(s,i,o)$ with any child state $(s',i',o')$ by replacing $i$ by $\max(i,s+i')$ and keeping $o$. For edge $v\to u$, keep $i$ and replace $o$ by $\max(o,s+o')$. Add the two state values, discarding the result if $i+o-s>2$, and maximize among all contributors to each new state. The outgoing and incoming extremal paths can concatenate because they are in different branches, unless one is the length-zero path. Any new cross-branch path must pass through $v$ and is therefore covered by this check. Every valid set decomposes into such child and parent states, so the recurrence is exact. The largest value at the full root is the answer, with a constant number of operations per edge.
 

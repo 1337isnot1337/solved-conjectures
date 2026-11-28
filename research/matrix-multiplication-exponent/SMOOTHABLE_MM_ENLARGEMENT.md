@@ -141,8 +141,8 @@ $`E_{ij}`$, define the square-zero endomorphism
 ```math
 N_{ij}=
 \begin{pmatrix}
-0&E_{ij}\otimes I_n\\
-0&0
+0&E_{ij}\otimes I_n
+\\ 0&0
 \end{pmatrix}.
 ```
 

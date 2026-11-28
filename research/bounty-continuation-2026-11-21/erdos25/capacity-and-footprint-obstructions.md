@@ -125,13 +125,13 @@ The intersection of two residue classes has measure either zero or $`1/\mathop{\
 ```math
 \begin{aligned}
 \mathbb E Z^2
-&\le\sum_{q,r}\frac{\gcd(q,r)}{qr}\\
-&\le\frac1{a^2Q^2}
-   \sum_{u,v\le\lfloor bQ\rfloor}\gcd(u,v)\\
-&=\frac1{a^2Q^2}
+&\le\sum_{q,r}\frac{\gcd(q,r)}{qr}
+\\ &\le\frac1{a^2Q^2}
+   \sum_{u,v\le\lfloor bQ\rfloor}\gcd(u,v)
+\\ &=\frac1{a^2Q^2}
    \sum_{d\le\lfloor bQ\rfloor}
-   \varphi(d)\left\lfloor\frac{\lfloor bQ\rfloor}{d}\right\rfloor^2\\
-&\le\frac{b^2}{a^2}(1+\log(bQ)).
+   \varphi(d)\left\lfloor\frac{\lfloor bQ\rfloor}{d}\right\rfloor^2
+\\ &\le\frac{b^2}{a^2}(1+\log(bQ)).
 \end{aligned}                                                     \tag{7}
 ```
 

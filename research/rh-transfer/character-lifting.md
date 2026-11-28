@@ -66,7 +66,7 @@ The existing proof [gradedModel_pointCondition_of_ptHyp](https://github.com/1337
 The source's GD record contains the combined condition
 
 ~~~math
-\ell\nmid |\operatorname{disc}K|\,h_K.
+\ell\nmid |\mathop{\mathrm{disc}}K|\,h_K.
 ~~~
 
 The discriminant and class-number factors do different jobs. Retain the discriminant condition in the argument below.
@@ -95,9 +95,9 @@ Choose a complex conjugation c with square 1, and write
 ~~~math
 J=
 \begin{pmatrix}
-0&0&1\\
-0&1&0\\
-1&0&0
+0&0&1
+\\ 0&1&0
+\\ 1&0&0
 \end{pmatrix},
 \qquad
 \theta(g)=J(g^{-1})^tJ.
@@ -178,7 +178,7 @@ Both are negative Tate twists of finite characters. The same local argument and 
 ~~~math
 \rho(h)=u\,d(h)\,u^{-1},
 \qquad
-d(h)=\operatorname{diag}(\lambda_0(h),\lambda_1(h),\lambda_2(h)).
+d(h)=\mathop{\mathrm{diag}}(\lambda_0(h),\lambda_1(h),\lambda_2(h)).
 ~~~
 
 All three characters are distinct: their restrictions to the chosen inertia group already distinguish them.
@@ -206,9 +206,9 @@ Solving this elementary matrix identity gives
 ~~~math
 u=
 \begin{pmatrix}
-1&0&0\\
-a&1&0\\
--a^2/2&-a&1
+1&0&0
+\\ a&1&0
+\\ -a^2/2&-a&1
 \end{pmatrix}.
 ~~~
 
@@ -348,11 +348,11 @@ No conclusion about Vandiver's conjecture, Greenberg's conjecture, or Soulé's f
 This section records an applicability check, not a claim that no other method could work. The module and descent are derived in [artin-density.md](artin-density.md). Write eta_K for the quadratic character of K/Q. After the corner descent, the two factors are
 
 ~~~math
-U=V\otimes\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu,
+U=V\otimes\mathop{\mathrm{Ind}}_{G_K}^{G_{\mathbb Q}}\nu,
 \qquad
 \det V=\eta_K,
 \qquad
-\det\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu=\eta_K.
+\det\mathop{\mathrm{Ind}}_{G_K}^{G_{\mathbb Q}}\nu=\eta_K.
 ~~~
 
 Here nu is a finite anticyclotomic class character. In the genuinely mixed case it is not generally a rational character. The Hodge–Tate weights of U are {-e,-e,e,e}. The following two failures occur before any question of estimating a nonzero L-value.

@@ -102,8 +102,8 @@ N_n,M_n with N_n/M_n tending to 1 and exact four-party restrictions
 ```math
 U_{ABCD}(r)\,U_{ABC}(q)\,W_{CD}(q)\,
  W_{AD}(N_n)\,W_{BD}(N_n)
-\ \geq\
-U_{ACD}(q)\,U_{BCD}(q)\,W_{AB}(M_n).                 \tag{2}
+\ \geq
+\ U_{ACD}(q)\,U_{BCD}(q)\,W_{AB}(M_n).                 \tag{2}
 ```
 
 ### Proof

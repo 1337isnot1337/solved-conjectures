@@ -101,7 +101,7 @@ The character formula in the source's Proposition 3.3 is
 ```math
 W_\mu(u,t)=\frac1{d!}\sum_{\lambda\vdash d}
  f^\lambda\chi^\lambda_\mu
- \prod_{c\in\operatorname{cont}(\lambda)}
+ \prod_{c\in\mathop{\mathrm{cont}}(\lambda)}
  \frac{1-(1-t)cu}{1-cu}.                              \tag{5}
 ```
 
@@ -153,9 +153,9 @@ coefficient of 1/(1−(d−1)u) in C is
 \begin{aligned}
 \lim_{u\to1/(d-1)}(1-(d-1)u)C_\mu(u,t)
  &=\frac{t}{d!}\prod_{j=1}^{d-2}
-       \frac{d-1-j+jt}{d-1-j}\\
- &=\frac{L_d(t)}{d!(d-2)!}.                          \tag{8}
-\end{aligned}
+       \frac{d-1-j+jt}{d-1-j}
+ \\ &=\frac{L_d(t)}{d!(d-2)!}.
+\end{aligned} \tag{8}
 ```
 
 The conjugate column partition supplies the negative pole. By (7), their
@@ -198,9 +198,9 @@ three contributions are therefore
 
 ```math
 \begin{aligned}
- &(1-(k+1)t)+(m_1-1)(k+1-t)-m_1(k+2)\\
- &\hspace{35mm}=-(k+m_1)(1+t).                        \tag{11}
-\end{aligned}
+ &(1-(k+1)t)+(m_1-1)(k+1-t)-m_1(k+2)
+ \\ &\hspace{35mm}=-(k+m_1)(1+t).
+\end{aligned} \tag{11}
 ```
 
 The fixed-point character term and the disconnected singleton term are both

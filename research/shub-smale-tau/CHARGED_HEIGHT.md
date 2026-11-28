@@ -235,8 +235,8 @@ side is positive. Use `1/(1+t)>=1-t` for `t>=0`,
 \begin{aligned}
 \delta
 &\ge \tfrac12\log_2L-3
-       -\frac{\tfrac12\log_2s}{\sqrt{2s}}\\
-&\ge\tfrac12\log_2s-4.
+       -\frac{\tfrac12\log_2s}{\sqrt{2s}}
+\\ &\ge\tfrac12\log_2s-4.
 \end{aligned}
 ```
 

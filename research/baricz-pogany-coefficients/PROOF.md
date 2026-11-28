@@ -159,9 +159,9 @@ Combining (4) and (10) now gives
 ```math
 \begin{aligned}
 \sum_{n\geq0}\left(\alpha_n(\nu)-a^n\right)z^n
-&=\frac{N(z)}{D(z)}-\frac{1}{1-az}\\
-&=\frac{(1-az)N(z)-D(z)}{(1-az)D(z)}\\
-&=\frac{z^2N'(z)}{(1-az)(1-B(z))}.
+&=\frac{N(z)}{D(z)}-\frac{1}{1-az}
+\\ &=\frac{(1-az)N(z)-D(z)}{(1-az)D(z)}
+\\ &=\frac{z^2N'(z)}{(1-az)(1-B(z))}.
 \end{aligned}
 \tag{11}
 ```

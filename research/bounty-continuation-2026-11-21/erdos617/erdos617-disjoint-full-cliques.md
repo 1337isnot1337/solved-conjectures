@@ -119,8 +119,8 @@ The internal edge sets of the full cliques are pairwise disjoint. Adding those e
 ```math
 \begin{aligned}
 e(H)-B
-&\ge q\binom r2+2b(r-1)+e(H[R])-B\\
-&\ge\frac r2(3\ell+2-q)+2b(r-1)+\frac{(\ell+1)^2}{s}.
+&\ge q\binom r2+2b(r-1)+e(H[R])-B
+\\ &\ge\frac r2(3\ell+2-q)+2b(r-1)+\frac{(\ell+1)^2}{s}.
 \end{aligned}
 ```
 

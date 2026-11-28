@@ -52,9 +52,9 @@ It is real positive semidefinite, has diagonal one, and has all off-diagonal ent
 
 ```math
 D_{S,T}=\begin{cases}
-2t^2,&S=T,\\
-2t^3,&|S\cap T|=1,\\
-2t^4,&S\cap T=\varnothing.
+2t^2,&S=T,
+\\ 2t^3,&|S\cap T|=1,
+\\ 2t^4,&S\cap T=\varnothing.
 \end{cases}
 ```
 
@@ -135,8 +135,8 @@ There is a second useful expansion. Replace the equal replicate weights by proba
 
 ```math
 C_\alpha=
-\sum_{\substack{(S_1,\ldots,S_m),(T_1,\ldots,T_m)\\
-\text{ordered partitions of }[n],\ |S_r|=|T_r|=\alpha_r}}
+\sum_{\substack{(S_1,\ldots,S_m),(T_1,\ldots,T_m)
+\\ \text{ordered partitions of }[n],\ |S_r|=|T_r|=\alpha_r}}
 \prod_{r=1}^m|\mathop{\mathrm{per}}A[S_r,T_r]|^2.
 ```
 

@@ -28,8 +28,8 @@ The proposed new theorem is:
 > For all positive m and n>1 with n≥m+√m, the permanent on Ω(V_{m,n}) has the unique minimizer
 > ```math
 > A_0=\begin{pmatrix}
-> \frac{n-m}{n}I_n&\frac1nJ_{n,m}\\
-> \frac1nJ_{m,n}&0_m
+> \frac{n-m}{n}I_n&\frac1nJ_{n,m}
+> \\ \frac1nJ_{m,n}&0_m
 > \end{pmatrix}.
 > ```
 > Its permanent is
@@ -43,7 +43,7 @@ Together with Sections 4.2 and 5, this settles the stated subsidiary conjecture 
 
 Two established ingredients are used here. Minc's repeated-support averaging theorem permits averaging rows or columns with identical allowed support at a permanent minimizer, preserving minimality. Foregger's minimizer lemma says that on a fully indecomposable binary support D, every minimizing matrix Y is fully indecomposable, and its permanental cofactors satisfy
 
-\[
+```math
  \mathop{\mathrm{per}}Y(i\mid j)=\mathop{\mathrm{per}}Y
  \quad\text{when }y_{ij}>0,
  \qquad
@@ -76,8 +76,8 @@ For diagonal D=diag(D_1,...,D_N) with D_i≥0 and a nonnegative vector b, define
 
 ```math
  q(y)=\mathop{\mathrm{per}}
- \begin{pmatrix}D&b\mathbf1_m^{\mathsf T}\\
- \mathbf1_m b^{\mathsf T}&yJ_m\end{pmatrix}.
+ \begin{pmatrix}D&b\mathbf1_m^{\mathsf T}
+ \\ \mathbf1_m b^{\mathsf T}&yJ_m\end{pmatrix}.
 ```
 
 Expanding by the subset of top vertices that use cross-block edges gives the exact differential-operator identity
@@ -172,8 +172,8 @@ The row and column sums now show that an averaged minimizer has the form
 
 ```math
  A_x=\begin{pmatrix}
- \frac{n-m+m^2x}{n}I_n&\frac{1-mx}{n}J_{n,m}\\
- \frac{1-mx}{n}J_{m,n}&xJ_m
+ \frac{n-m+m^2x}{n}I_n&\frac{1-mx}{n}J_{n,m}
+ \\ \frac{1-mx}{n}J_{m,n}&xJ_m
  \end{pmatrix}.
 ```
 
@@ -255,7 +255,7 @@ Since F(0)=1, μ is analytic near zero. Direct differentiation of z(t) gives
 ```math
  K(t):=\frac{z'(t)}{z(t)}
  =\frac{d+(d+2m)t}{t(d+mt)(1-t)}>0
- \qquad(0<t<1).
+ \qquad(0\lt t<1).
 \tag{5}
 ```
 
@@ -418,7 +418,7 @@ Write F(z)=∏_{r=1}^q(1+z/λ_r), λ_r>0 distinct. The distribution
 is the sum of q independent Bernoulli variables with distinct success probabilities p_r=1/(1+λ_r). With u=E I and v=Var I, Cauchy–Schwarz gives
 
 ```math
- 0<u<q,
+ 0\lt u\lt q,
  \qquad
  v=\sum_r p_r(1-p_r)
  <\frac{u(q-u)}q\quad(q≥2).

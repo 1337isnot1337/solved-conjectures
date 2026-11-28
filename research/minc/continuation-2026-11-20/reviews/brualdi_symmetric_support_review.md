@@ -99,10 +99,10 @@ Crucially, strict decrease before scaling is insufficient. Since `B` is
 feasible on the original face, global minimality gives only
 
 ```math
-\operatorname{per}B\ge\operatorname{per}A,
+\mathop{\mathrm{per}}B\ge\mathop{\mathrm{per}}A,
 \qquad
-\operatorname{cap}(G)\le
-\frac{\operatorname{per}G}{\operatorname{per}A}.
+\mathop{\mathrm{cap}}(G)\le
+\frac{\mathop{\mathrm{per}}G}{\mathop{\mathrm{per}}A}.
 ```
 
 The draft leaves the required reverse comparison unproved and does not

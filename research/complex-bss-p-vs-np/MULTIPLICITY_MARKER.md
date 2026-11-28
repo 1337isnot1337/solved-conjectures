@@ -58,7 +58,7 @@ k_R=v_R(W)=\sum_{i=1}^{r}B^{i-1}v_R(F_i).
 All its first `r` digits are positive, its `G` digit is zero, and
 
 ```math
-1\le k_R<B^r,
+1\le k_R\lt B^r,
 \qquad \log_2 k_R=O(rs).                          \tag{4}
 ```
 

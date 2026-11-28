@@ -6,36 +6,36 @@ The two-set question allows arbitrary colour classes and arbitrary one-sided ord
 
 **Theorem.** Let $S$ contain integer intervals $(L_j,U_j]$ satisfying
 
-$$
+```math
 \liminf_{j\to\infty}\frac{L_{j+1}}{L_j}>11,
 \qquad
 \limsup_{j\to\infty}\frac{2L_{j+1}-U_{j+1}}{L_j}<1.
-$$
+```
 
 Every one-sided enumeration of $S$ has a monotone three-term arithmetic progression as a subsequence.
 
-**Boundary constraint.** Kasel's Theorem 22 proves that for $M\ge16$ divisible by eight, an order of $(M,2M]$ avoiding all monotone three-term progressions cannot simultaneously put $2M-5$ before $M+5$, $2M-3$ before $M+6$, and $2M-10$ before $M+3$. The first two comparisons come from completing progressions with first term 15, and the third comes from a first term of 16. Consequently, if an admissible order contains these two anchors and the whole interval, its prefix through both anchors must already contain a member of $M+\{3,5,6\}$. Otherwise both anchors precede all three specified bottom values and avoidance forces the three prohibited comparisons. The conclusion carries through every increasing affine map $z\mapsto p+dz$ with positive integer $d$. [Kasel, Theorems 16 and 22](https://arxiv.org/abs/2609.02939).
+**Boundary constraint.** Kasel's Theorem 22 proves that for $M\ge16$ divisible by eight, an order of $(M,2M]$ avoiding all monotone three-term progressions cannot simultaneously put $2M-5$ before $M+5$, $2M-3$ before $M+6$, and $2M-10$ before $M+3$. The first two comparisons come from completing progressions with first term 15, and the third comes from a first term of 16. Consequently, if an admissible order contains these two anchors and the whole interval, its prefix through both anchors must already contain a member of $`M+\{3,5,6\}`$. Otherwise both anchors precede all three specified bottom values and avoidance forces the three prohibited comparisons. The conclusion carries through every increasing affine map $z\mapsto p+dz$ with positive integer $d$. [Kasel, Theorems 16 and 22](https://arxiv.org/abs/2609.02939).
 
 **Propagation.** Fix a prefix $P$ of an admissible order containing anchors $a,a+d$, with $d\ge1$. Suppose $(L,U]\subset S$, $L\ge a+16d$ and $U\ge2L-a+50d$. Set $p=a-15d$. Choose the least multiple $M$ of eight for which $p+dM\ge L$. Then $M\ge16$ and $L\le p+dM<L+8d$. Both intervals $p+d(M,2M]$ and $p+d(M+8,2(M+8)]$ in this paragraph denote affine images of integer intervals, with step $d$. Both fit in $(L,U]$. Indeed their smallest value exceeds $L$, and their largest value is
 
-$$
+```math
 p+2d(M+8)=2(p+dM)-p+16d<2L-a+47d\le U.
-$$
+```
 
 Both copies have the same two anchors $p+15d=a$ and $p+16d=a+d$. The boundary constraint forces one member of each of
 
-$$
+```math
 p+d(M+\{3,5,6\}),\qquad p+d(M+8+\{3,5,6\})
-$$
+```
 
 into $P$. These sets are disjoint and every member of the first is smaller than every member of the second. The new pair $a',a'+d'$ consequently satisfies $L<a'<L+14d$ and $1\le d'\le11d$.
 
 **Iteration.** Choose $0<\epsilon<1$ and $J$ such that for every $j\ge J$ we have $L_{j+1}>11L_j$ and $2L_{j+1}-U_{j+1}\le(1-\epsilon)L_j$. Enlarge $J$ so $L_J\ge100/\epsilon$ and $(L_J,U_J]$ contains $L_J+1,L_J+2$. The interval length requirement follows for large $J$ from the two displayed hypotheses. Take $P$ to be the prefix through these two entries. Starting with $a_J=L_J+1$, $d_J=1$, maintain
 
-$$
+```math
 L_j\le a_j\le 2L_j,\qquad 1\le d_j\le\epsilon L_j/100,
 \qquad a_j,a_j+d_j\in P.
-$$
+```
 
 At the next interval $L_{j+1}\ge a_j+16d_j$ and $2L_{j+1}-U_{j+1}\le a_j-50d_j$. Propagation gives $a_{j+1},a_{j+1}+d_{j+1}\in P$, with $L_{j+1}\le a_{j+1}\le2L_{j+1}$ and $d_{j+1}\le11d_j\le\epsilon L_{j+1}/100$. This induction puts arbitrarily large integers in the same finite prefix, a contradiction.
 
@@ -47,19 +47,19 @@ At the next interval $L_{j+1}\ge a_j+16d_j$ and $2L_{j+1}-U_{j+1}\le a_j-50d_j$.
 
 Choose $A$ so that $F=[A,A+2D+29]\cap\mathbb Z$ is contained in one interval of $S$, taking $D$ to be a nonnegative integer. Put $H=A+D$. For each sufficiently large $i$, choose $0\le e_i\le7$ so that $M_i=U_i-H-e_i-L_i$ is divisible by eight. These lengths eventually exceed 16. The full interval $(L_i,U_i-H-e_i]$ of length $M_i$ inherits Kasel's three prohibited comparisons by translation. Write its three bottom and top values as
 
-$$
+```math
 B_i=L_i+\{3,5,6\},\qquad T_i=U_i-H-e_i-\{3,5,10\}.
-$$
+```
 
-For any $y\in B_i$ and $z\in T_{i+1}$, the value $2y-z$ lies in $F$. Indeed the value is the sum of $2L_i-U_{i+1}$, $H$, $e_{i+1}$, twice a member of $\{3,5,6\}$, and a member of $\{3,5,10\}$. It therefore lies between $A+9$ and $A+2D+29$.
+For any $y\in B_i$ and $z\in T_{i+1}$, the value $2y-z$ lies in $F$. Indeed the value is the sum of $2L_i-U_{i+1}$, $H$, $e_{i+1}$, twice a member of $`\{3,5,6\}`$, and a member of $`\{3,5,10\}`$. It therefore lies between $A+9$ and $A+2D+29$.
 
 In a proposed enumeration choose $i_0$ so large that every bottom in every $B_i$, $i\ge i_0$, occurs after the last member of $F$. Such an index exists because there are finitely many earlier entries and $L_i\to\infty$. Increase it as needed so all bottoms exceed $\max F$. Let $P$ be the finite prefix through one member of $B_{i_0}$. If $y\in B_i\cap P$, each $z\in T_{i+1}$ must precede $y$, because $(2y-z,y,z)$ is a progression whose first value already precedes $y$. Thus $T_{i+1}\subset P$. If $P$ missed $B_{i+1}$, all three tops would precede all three bottoms in their own interval, contradicting Kasel's boundary constraint. Induction gives $P\cap B_i\ne\varnothing$ for every $i\ge i_0$, which is impossible.
 
 **Fractional octaves.** For an odd integer $m\ge3$ let $s_j=\lceil2^{j/m}\rceil$ and colour $[s_j,s_{j+1})$ by $j$ modulo two. Starting with any $j$, iterate $j\mapsto j+m-1$. The intervals have one colour and lengths tending to infinity. In the preceding theorem the successive endpoints obey
 
-$$
+```math
 2L_i-U_{i+1}=2\lceil2^{j/m}\rceil-\lceil2^{(j+m)/m}\rceil-1\in\{-1,0\}.
-$$
+```
 
 Hence neither colour can have an admissible order, with no condition on displacement. The case $m=1$ is covered by the nearly doubling interval theorem.
 

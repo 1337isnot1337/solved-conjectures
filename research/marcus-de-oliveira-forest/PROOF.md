@@ -7,7 +7,7 @@
 Marcus (1973), *Derivations, Plücker relations and the numerical range*, Indiana Univ. Math. J. 22, 1137–1149; de Oliveira (1982), *Research problem: Normal matrices*, Linear Multilinear Algebra 12, 153–154: for all complex normal matrices A,B of order n with eigenvalues a_i,b_i, respectively,
 
 ~~~math
-\det(A+B)\in\operatorname{conv}\left\{\prod_{i=1}^n(a_i+b_{\sigma(i)}):\sigma\in S_n\right\}.
+\det(A+B)\in\mathop{\mathrm{conv}}\left\{\prod_{i=1}^n(a_i+b_{\sigma(i)}):\sigma\in S_n\right\}.
 ~~~
 
 The 2025 survey by Bebiano and da Providência (https://doi.org/10.3390/math13050711) and the July 2026 primary paper by Mulero-Martínez (https://doi.org/10.1016/j.laa.2026.03.019, publisher abstract) explicitly retain the unrestricted problem. Searches on 24 November for Marcus de Oliveira proof/counterexample 2026, Givens rotations, Hessenberg, tree/forest factorization, and squared compound minors found no unrestricted solution or exact match for the forest theorem below. This is a bounded screen, not proof of novelty. Drury, *The determinantal conjecture and Hadamard type inequalities*, https://doi.org/10.1016/0024-3795(94)00361-0, describes the failure of the stronger simultaneous compound-coupling conjecture; Drury's all-order Householder theorem (https://doi.org/10.1016/S0024-3795(99)00173-1) is not being rediscovered or used as a general composition theorem. The September 2026 Holden work (https://clopen.solutions/submissions/openproblemsinnla-holden-mi05-2026-09-13-report/v1/) also treats compound-weight obstructions and positive regions. The previously refuted Kovačec polygon strengthening is distinct.

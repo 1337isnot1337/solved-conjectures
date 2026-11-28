@@ -2,7 +2,7 @@
 
 Fix $`A\ge2`$ and $`0<\varepsilon<1`$. There are positive constants $`\delta,\rho,c`$ such that the following holds for all sufficiently large $`t`$. Suppose $`0\le a\le t^A`$, $`1\le b\le t^{1-\varepsilon}`$, $`\gcd(a,b)=1`$, and
 ```math
-\sum_{\substack{t^\delta<p<t,\ p\nmid b\\p\nmid bn-a}}\frac1p\le\rho .
+\sum_{\substack{t^\delta\lt p\lt t,\ p\nmid b\\p\nmid bn-a}}\frac1p\le\rho .
 \tag{1}
 ```
 Then $`f(n,t)\ge ct`$. All the prime-power information in the [rational comparison](rational-representatives.md) can thus be dropped except for agreement modulo large primes, with the reciprocal allowance in (1). No restriction on the size of $`n`$ is needed.
@@ -56,7 +56,7 @@ Condition (1) cannot hold at every offset, even when the approximant may be chos
 For a fixed pair the indicators of $`p\mid bn-a`$ for $`y<p<t`$, $`p\nmid b`$, are independent Bernoulli variables of mean $`1/p`$. Write $`Z`$ for the sum of their weights $`1/p`$. Since $`y/p\le1`$,
 ```math
 \log\mathbb E e^{yZ}
-\le\sum_{y<p<t}\frac{e^{y/p}-1}{p}
+\le\sum_{y\lt p\lt t}\frac{e^{y/p}-1}{p}
 \ll y\sum_{m>y}m^{-2}=O(1).
 ```
 The total available weight is $`\log(1/\delta)+o(1)`$ by Mertens' theorem. Omitting the prime divisors of $`b`$ costs at most $`\log b/(y\log y)=o(1)`$. Take $`\delta`$ small enough that $`\log(1/\delta)>2\rho`$. Thus (1) requires $`Z`$ bounded below by a fixed positive constant. Exponential Markov followed by a union bound over $`O(t^{A+1})`$ pairs gives the claim.

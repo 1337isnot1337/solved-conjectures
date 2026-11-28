@@ -79,7 +79,7 @@ Subtracting the rows gives the following cone expression.
 
 ```math
  F_i(v)-F_{i-1}(v)
- =\sum_{j<i}(K_{i-1,j}-K_{ij})\big(F_i(u)-F_j(u)\big),
+ =\sum_{j\lt i}(K_{i-1,j}-K_{ij})\big(F_i(u)-F_j(u)\big),
 ```
 where only retained $`j`$ occur. Each summand is a source-parameter dominance difference and every coefficient is positive. Telescoping gives the claim for any two indices. For finite $`u-v>1`$, subdivide $`[v,u]`$ into finitely many steps of length at most one and compose the cone expressions. All intermediate shapes remain in the same chain.
 

@@ -1,40 +1,40 @@
 # Uniform rainbow cycle density on connected compact abelian groups
 
-**Theorem.** For every fixed \(m\ge3\) there is \(c_m>0\) as follows. Let \(G\) be any compact connected abelian group with probability Haar measure \(\mu\). Let \(f_1,\ldots,f_m:G\to[0,1]\) be measurable, symmetric under \(x\mapsto-x\), with \(\sum f_i=1\) almost everywhere and \(\int f_i=1/m\). The translation-invariant balanced color kernels \(W_i(x,y)=f_i(y-x)\) give rainbow cycle density at least \(c_m\) for each prescribed color order of \(C_m\). The bound is uniform over \(G\), including non-Lie groups, and permits fractional colorings.
+**Theorem.** For every fixed $`m\ge3`$ there is $`c_m>0`$ as follows. Let $`G`$ be any compact connected abelian group with probability Haar measure $`\mu`$. Let $`f_1,\ldots,f_m:G\to[0,1]`$ be measurable, symmetric under $`x\mapsto-x`$, with $`\sum f_i=1`$ almost everywhere and $`\int f_i=1/m`$. The translation-invariant balanced color kernels $`W_i(x,y)=f_i(y-x)`$ give rainbow cycle density at least $`c_m`$ for each prescribed color order of $`C_m`$. The bound is uniform over $`G`$, including non-Lie groups, and permits fractional colorings.
 
-For \(m=6\) this is a partial result on the [graphon reformulation of Erdős #811](GRAPHON-CRITERION.md). It does not assert that every graphon is translation invariant, or every translation group connected.
+For $`m=6`$ this is a partial result on the [graphon reformulation of Erdős #811](GRAPHON-CRITERION.md). It does not assert that every graphon is translation invariant, or every translation group connected.
 
 ## Small cycle density forces critical pairs
 
-Suppose a sequence of eligible examples has prescribed-order cycle density \(r\to0\). All quantities below may vary along the sequence; \(m\) is fixed. The ordered rainbow integral equals \((f_1*\cdots*f_m)(0)\), by using differences of vertices around the cycle. Commutativity means that every order has the same integral.
+Suppose a sequence of eligible examples has prescribed-order cycle density $`r\to0`$. All quantities below may vary along the sequence; $`m`$ is fixed. The ordered rainbow integral equals $`(f_1*\cdots*f_m)(0)`$, by using differences of vertices around the cycle. Commutativity means that every order has the same integral.
 
-Choose a positive threshold \(\eta\to0\) slowly enough that \(r/\eta^m\to0\), and put \(A_i=\{f_i\ge\eta\}\), \(a_i=\mu(A_i)\). Then \(a_i\ge1/m-\eta\), and all \(A_i\) are symmetric up to null sets (choose symmetric representatives). For every split of the colors into nonempty sets \(I,J\), put \(F_I=*_{i\in I}1_{A_i}\), and similarly \(F_J\). The functions are symmetric, so
-\[
+Choose a positive threshold $`\eta\to0`$ slowly enough that $`r/\eta^m\to0`$, and put $`A_i=\{f_i\ge\eta\}`$, $`a_i=\mu(A_i)`$. Then $`a_i\ge1/m-\eta`$, and all $`A_i`$ are symmetric up to null sets (choose symmetric representatives). For every split of the colors into nonempty sets $`I,J`$, put $`F_I=*_{i\in I}1_{A_i}`$, and similarly $`F_J`$. The functions are symmetric, so
+```math
 \int F_I F_J=(1_{A_1}*\cdots*1_{A_m})(0)\le r/\eta^m.
-\]
+```
 For singleton palettes use their indicators.
 
-Choose \(\varepsilon\to0\) slowly enough that \(r/(\eta^m\varepsilon^{m-2})\to0\). For nonempty \(I\), define \(B_I\) by starting with one \(A_i\) and then taking a popular sum with each next \(A_i\) at threshold \(\varepsilon\). The popular sum \(U+_\varepsilon V\) is the set where \(1_U*1_V\ge\varepsilon\). Inductively,
-\[
+Choose $`\varepsilon\to0`$ slowly enough that $`r/(\eta^m\varepsilon^{m-2})\to0`$. For nonempty $`I`$, define $`B_I`$ by starting with one $`A_i`$ and then taking a popular sum with each next $`A_i`$ at threshold $`\varepsilon`$. The popular sum $`U+_\varepsilon V`$ is the set where $`1_U*1_V\ge\varepsilon`$. Inductively,
+```math
 B_I\subseteq\{F_I\ge\varepsilon^{|I|-1}\},\qquad
 \mu(B_I)\ge \min\!\left(\sum_{i\in I}a_i,1\right)-2(|I|-1)\sqrt\varepsilon.
-\]
-The inclusion follows by pointwise convolution of nonnegative functions. The other bound is repeated [Tao, Corollary 1.2](https://arxiv.org/abs/1711.04337), the robust Kneser inequality; its masses stay uniformly positive throughout. For a complementary split, \(\mu(B_I\cap B_J)=o(1)\) by the displayed integral, so \(\mu(B_I)+\mu(B_J)\le1+o(1)\).
+```
+The inclusion follows by pointwise convolution of nonnegative functions. The other bound is repeated [Tao, Corollary 1.2](https://arxiv.org/abs/1711.04337), the robust Kneser inequality; its masses stay uniformly positive throughout. For a complementary split, $`\mu(B_I\cap B_J)=o(1)`$ by the displayed integral, so $`\mu(B_I)+\mu(B_J)\le1+o(1)`$.
 
-Taking first \(I=\{i\}\) shows \(a_i\le1/m+o(1)\), since the other palette has mass at least \((m-1)/m-o(1)\). Thus \(a_i=1/m+o(1)\). We have \(\|f_i-1_{A_i}\|_1=o(1)\): the left side equals \(a_i-1/m+2\int_{G\setminus A_i}f_i\) and the last integral is at most \(\eta\). Because \(f_i+f_j\le1\), this implies \(\mu(A_i\cap A_j)=o(1)\) whenever \(i\ne j\).
+Taking first $`I=\{i\}`$ shows $`a_i\le1/m+o(1)`$, since the other palette has mass at least $`(m-1)/m-o(1)`$. Thus $`a_i=1/m+o(1)`$. We have $`\|f_i-1_{A_i}\|_1=o(1)`$: the left side equals $`a_i-1/m+2\int_{G\setminus A_i}f_i`$ and the last integral is at most $`\eta`$. Because $`f_i+f_j\le1`$, this implies $`\mu(A_i\cap A_j)=o(1)`$ whenever $`i\ne j`$.
 
-Now take \(I=\{i,j\}\). The previous measure estimate for \(B_J\) gives
-\[
+Now take $`I=\{i,j\}`$. The previous measure estimate for $`B_J`$ gives
+```math
 \mu(A_i+_\varepsilon A_j)\le 2/m+o(1)=a_i+a_j+o(1).
-\]
-Both masses and \(1-a_i-a_j\) stay positive for \(m\ge3\). Thus every pair is a critical pair in the sense of [Tao, Theorem 4.1](https://arxiv.org/pdf/1711.04337#page=8). There exist parallel Bohr arcs that approximate both sets in symmetric difference by \(o(1)\).
+```
+Both masses and $`1-a_i-a_j`$ stay positive for $`m\ge3`$. Thus every pair is a critical pair in the sense of [Tao, Theorem 4.1](https://arxiv.org/pdf/1711.04337#page=8). There exist parallel Bohr arcs that approximate both sets in symmetric difference by $`o(1)`$.
 
 ## Near Bohr representations of the same set must align
 
-Apply the inverse theorem to \((A_1,A_2)\) and \((A_1,A_3)\), with quotient characters \(\phi,\psi:G\to\mathbb R/\mathbb Z\), respectively. We show \(\phi=\pm\psi\) throughout a tail of the sequence. The arc-pullback approximations \(U=\phi^{-1}(I)\) and \(V=\psi^{-1}(I')\) to \(A_1\) differ in measure by \(o(1)\), and both arc lengths approach \(1/m\).
+Apply the inverse theorem to $`(A_1,A_2)`$ and $`(A_1,A_3)`$, with quotient characters $`\phi,\psi:G\to\mathbb R/\mathbb Z`$, respectively. We show $`\phi=\pm\psi`$ throughout a tail of the sequence. The arc-pullback approximations $`U=\phi^{-1}(I)`$ and $`V=\psi^{-1}(I')`$ to $`A_1`$ differ in measure by $`o(1)`$, and both arc lengths approach $`1/m`$.
 
-The Fourier coefficient of \(1_U\) at \(\phi\) has absolute value \(\sin(\pi|I|)/\pi\), bounded away from zero, using that a surjective character pushes Haar measure to Haar measure. The Fourier coefficient of \(1_V\) at \(\phi\) differs by \(o(1)\), so it is nonzero. Its Fourier support, however, lies in the cyclic subgroup generated by \(\psi\): invariance under \(\ker\psi\) implies vanishing for any character nontrivial there, and characters trivial on the kernel factor through the circle as integer multiples. Therefore \(\phi\) is an integer multiple of \(\psi\). The symmetric argument gives the reverse divisibility. Surjective characters have infinite order, hence \(\phi=\pm\psi\).
+The Fourier coefficient of $`1_U`$ at $`\phi`$ has absolute value $`\sin(\pi|I|)/\pi`$, bounded away from zero, using that a surjective character pushes Haar measure to Haar measure. The Fourier coefficient of $`1_V`$ at $`\phi`$ differs by $`o(1)`$, so it is nonzero. Its Fourier support, however, lies in the cyclic subgroup generated by $`\psi`$: invariance under $`\ker\psi`$ implies vanishing for any character nontrivial there, and characters trivial on the kernel factor through the circle as integer multiples. Therefore $`\phi`$ is an integer multiple of $`\psi`$. The symmetric argument gives the reverse divisibility. Surjective characters have infinite order, hence $`\phi=\pm\psi`$.
 
-It follows that \(A_1,A_2,A_3\) are all asymptotically arcs of length \(1/m\) in the same quotient, after reflecting the appropriate arc if needed. Nearly symmetric inverse images are themselves nearly symmetric arcs by Haar pushforward. After taking subsequences of the three arc centers, each limiting center must therefore be fixed by circle reflection, hence equal to \(0\) or \(1/2\). Two of the three limits coincide. The corresponding arcs have overlap tending to \(1/m\), contradicting the already established \(o(1)\) overlap of the two color sets. This proves the uniform positive bound.
+It follows that $`A_1,A_2,A_3`$ are all asymptotically arcs of length $`1/m`$ in the same quotient, after reflecting the appropriate arc if needed. Nearly symmetric inverse images are themselves nearly symmetric arcs by Haar pushforward. After taking subsequences of the three arc centers, each limiting center must therefore be fixed by circle reflection, hence equal to $`0`$ or $`1/2`$. Two of the three limits coincide. The corresponding arcs have overlap tending to $`1/m`$, contradicting the already established $`o(1)`$ overlap of the two color sets. This proves the uniform positive bound.
 
-The proof uses no finite-group inverse transfer. The connectedness hypothesis is substantive: on groups with a two-element quotient, the parity-cut construction from the original rainbow-cycle question gives zero density for \(m=6\). Searches under completely balanced colorings, compact/connected Cayley graphs, and inverse Kneser with rainbow cycles did not find this exact formulation in the inspected literature.
+The proof uses no finite-group inverse transfer. The connectedness hypothesis is substantive: on groups with a two-element quotient, the parity-cut construction from the original rainbow-cycle question gives zero density for $`m=6`$. Searches under completely balanced colorings, compact/connected Cayley graphs, and inverse Kneser with rainbow cycles did not find this exact formulation in the inspected literature.

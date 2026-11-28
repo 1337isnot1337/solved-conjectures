@@ -8,7 +8,7 @@ The conjecture asks whether every asymptotic additive basis of order two in the 
 
 ## A finite counting bound
 
-Fix an integer base $b\ge2$ and a digit length $L\ge1$. A word of length $L$ denotes its ordinary positional value, with zero padding allowed. Let $S$ be the set of values of the length-$L$ words of a nondeleting linear multiple context-free grammar. Write $G$ for its number of nonterminals plus its number of productions, $f$ for its maximum tuple arity, and $R$ for the maximum number of children in a production. A production concatenates terminal strings and labelled components of its children. Every child component appears exactly once. The start symbol has arity one.
+Fix an integer base $b\ge2$ and a digit length $L\ge1$. A word of length $L$ denotes its ordinary positional value, with zero padding allowed. Let $S$ be the set of values of the length-$`L`$ words of a nondeleting linear multiple context-free grammar. Write $G$ for its number of nonterminals plus its number of productions, $f$ for its maximum tuple arity, and $R$ for the maximum number of children in a production. A production concatenates terminal strings and labelled components of its children. Every child component appears exactly once. The start symbol has arity one.
 
 Let $B=\max_n r_S(n)$, where $r_S(n)$ counts ordered pairs summing to $n$. If $S$ is nonempty and $d=\lfloor\log_2 B\rfloor\ge1$, then
 

@@ -11,12 +11,12 @@ Use a graph $J$ on $M$ in which an edge $CD$ is allowed only if $|C\cap D|=k-2$.
 Orient $J$ arbitrarily. For each directed edge from $C$ to $D$, choose the two original faces of $C$ containing $C\cap D$. Let $m_C$ count the distinct faces selected at $C$, not the sum with repetitions. These faces cover every outside member that contacts both endpoints. Indeed, any such member contains $C\cap D$, as its two contact faces each have size $k-1$ and have intersection at least $k-2$ within it. Its contact with $C$ is therefore through one of the selected faces. This covers every nonprivate outside member.
 
 It remains to cover each packed member and its still-uncovered private neighbours. At a given member $C$, the private neighbours conflict pairwise, since two mutually compatible ones could replace $C$ in the maximum packing. If their private contacts all use one original face, select it if needed. Otherwise, writing the neighbours as $C-x+y$, pairwise conflict forces the same external vertex $y$ at all distinct omissions $x$, and then each omission occurs only once. Thus the private neighbours lie in the same $(k+1)$-set as $C$, and any two can be covered by a single common face. There are at most $k-m_C$ private neighbours not yet selected in this second case, because only the $k-m_C$ unused contact faces can occur. If $m_C>0$ then the packed member itself was already covered. The final cost at $C$ is at most
-\[
+```math
 \begin{cases}
-\lceil(k+1)/2\rceil,&m_C=0,\\
-m_C+\lceil(k-m_C)/2\rceil,&m_C>0.
+\lceil(k+1)/2\rceil,&m_C=0,
+\\ m_C+\lceil(k-m_C)/2\rceil,&m_C>0.
 \end{cases}
-\]
+```
 The second bound includes the single-contact case, even if that face accounts for many neighbours. If $m_C=0$, pair the whole top including $C$, or use the common face. This proves the quantitative orientation criterion by summing. If every $m_C\le k-2$, each cost is at most $k-1$.
 
 ## Broad sufficient conditions

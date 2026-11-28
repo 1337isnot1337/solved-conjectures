@@ -14,8 +14,8 @@ Let $`A\succeq0`$ be a complex Hermitian matrix of order six and rank at
 most two. Write
 
 ```math
-P=\operatorname{per}A,\qquad h=\prod_{i=1}^6a_{ii},\qquad
-\Lambda=\operatorname{tr}C_{(3,3)}(A).
+P=\mathop{\mathrm{per}}A,\qquad h=\prod_{i=1}^6a_{ii},\qquad
+\Lambda=\mathop{\mathrm{tr}}C_{(3,3)}(A).
 ```
 
 The Fourier convention is
@@ -30,10 +30,10 @@ We prove
 ```
 
 For each exceptional subgroup $`H\cong S_5\leq S_6`$, with character
-$`\operatorname{sgn}|_H`$, we also prove
+$`\mathop{\mathrm{sgn}}|_H`$, we also prove
 
 ```math
-\boxed{f_{H,\operatorname{sgn}}(A)
+\boxed{f_{H,\mathop{\mathrm{sgn}}}(A)
        \leq\frac{\Lambda}{2}
        \leq P-\frac92h.}\tag{2}
 ```
@@ -78,7 +78,7 @@ p_i(v_1,\ldots,v_6)=\sum_{|I|=3}s_i(I)
 The projector normalization gives
 
 ```math
-f_{H_i,\operatorname{sgn}}(A)=120\frac{|p_i|^2}{20}=6|p_i|^2,
+f_{H_i,\mathop{\mathrm{sgn}}}(A)=120\frac{|p_i|^2}{20}=6|p_i|^2,
 \qquad \Lambda=6\sum_{i=1}^6|p_i|^2.
 \tag{4}
 ```
@@ -145,7 +145,7 @@ $`(3,3)`$ Fourier block is $`720/5=144`$ times the squared norm of that
 projected tensor. Hence
 
 ```math
-\Lambda=6\operatorname{haf}(T).
+\Lambda=6\mathop{\mathrm{haf}}(T).
 ```
 
 Expanding $`T_{ij}=(1-s_i\cdot s_j)/2`$ gives the second formula in (6).
@@ -170,15 +170,15 @@ U=\sum_i s_i^{\otimes3},\quad L=\|S\|^2,
 and abbreviate
 
 ```math
-a=S^TTS,\quad b=S^TT^2S,\quad t_j=\operatorname{tr}T^j,
+a=S^TTS,\quad b=S^TT^2S,\quad t_j=\mathop{\mathrm{tr}}T^j,
 \quad c=\langle U,S^{\otimes3}\rangle,\quad
-d=\langle U,\operatorname{Sym}(S\otimes T)\rangle,
+d=\langle U,\mathop{\mathrm{Sym}}(S\otimes T)\rangle,
 \quad u=\|U\|^2.
 ```
 
-Here $`\operatorname{Sym}(S\otimes T)`$ is the average of the three
+Here $`\mathop{\mathrm{Sym}}(S\otimes T)`$ is the average of the three
 placements of $`S`$; all tensor norms are Euclidean Frobenius norms. The
-unit-vector assumptions give $`\operatorname{tr}T=6`$ and $`0\leq L\leq36`$.
+unit-vector assumptions give $`\mathop{\mathrm{tr}}T=6`$ and $`0\leq L\leq36`$.
 Direct expansion gives
 
 ```math
@@ -192,8 +192,8 @@ The sixth-order matching sum is
 \begin{aligned}
 S_3={}&-6+\frac L2+\frac{L^2}{8}+\frac{L^3}{48}
        -a-\frac{La}{4}+\frac{Lt_2}{8}
-       +\frac{3t_2}{4}-\frac{t_3}{6}\\
-     &+\frac b2+\frac c3-d+\frac u3.
+       +\frac{3t_2}{4}-\frac{t_3}{6}
+     \\ &+\frac b2+\frac c3-d+\frac u3.
 \end{aligned}\tag{9}
 ```
 
@@ -206,18 +206,18 @@ checking (9) only on selected configurations.
 Define the symmetric cubic tensor
 
 ```math
-Z=U-\frac32\operatorname{Sym}(S\otimes T)+\frac12S^{\otimes3}.
+Z=U-\frac32\mathop{\mathrm{Sym}}(S\otimes T)+\frac12S^{\otimes3}.
 ```
 
 Using
-$`\|\operatorname{Sym}(S\otimes T)\|^2=(Lt_2+2b)/3`$ and
-$`\langle\operatorname{Sym}(S\otimes T),S^{\otimes3}\rangle=La`$,
+$`\|\mathop{\mathrm{Sym}}(S\otimes T)\|^2=(Lt_2+2b)/3`$ and
+$`\langle\mathop{\mathrm{Sym}}(S\otimes T),S^{\otimes3}\rangle=La`$,
 substitution of (8)--(9) into (7) gives exactly
 
 ```math
 \begin{aligned}
-E={}&\|Z\|^2-42+\frac{63L}{2}+2L^2-\frac{3L^3}{16}\\
-   &+\left(-\frac{19}{2}+\frac{3L}{4}\right)a
+E={}&\|Z\|^2-42+\frac{63L}{2}+2L^2-\frac{3L^3}{16}
+   \\ &+\left(-\frac{19}{2}+\frac{3L}{4}\right)a
     +\left(\frac{11}{2}-\frac{3L}{8}\right)t_2-\frac{t_3}{2}.
 \end{aligned}\tag{10}
 ```
@@ -225,23 +225,23 @@ E={}&\|Z\|^2-42+\frac{63L}{2}+2L^2-\frac{3L^3}{16}\\
 For a symmetric cubic tensor in $`\mathbb R^3`$, the trace map satisfies
 
 ```math
-\|Z\|^2\geq\frac35\|\operatorname{tr}Z\|^2.
+\|Z\|^2\geq\frac35\|\mathop{\mathrm{tr}}Z\|^2.
 ```
 
 Indeed the adjoint of the trace map is
-$`v\mapsto\operatorname{Sym}(v\otimes I)`$, whose trace is $`5v/3`$.
+$`v\mapsto\mathop{\mathrm{Sym}}(v\otimes I)`$, whose trace is $`5v/3`$.
 Here
 
 ```math
-\operatorname{tr}Z=\left(\frac L2-2\right)S-TS.
+\mathop{\mathrm{tr}}Z=\left(\frac L2-2\right)S-TS.
 ```
 
 Consequently (10) yields
 
 ```math
 \begin{aligned}
-E\geq R:={}&-42+\frac{339L}{10}+\frac{4L^2}{5}-\frac{3L^3}{80}\\
-&+\left(-\frac{71}{10}+\frac{3L}{20}\right)a
+E\geq R:={}&-42+\frac{339L}{10}+\frac{4L^2}{5}-\frac{3L^3}{80}
+\\ &+\left(-\frac{71}{10}+\frac{3L}{20}\right)a
  +\left(\frac{11}{2}-\frac{3L}{8}\right)t_2
  -\frac{t_3}{2}+\frac{3b}{5}.
 \end{aligned}\tag{11}
@@ -257,9 +257,9 @@ these terms. Thus it suffices to bound
 
 ```math
 \begin{aligned}
-R(L;x,y,z)={}&-42+\frac{339L}{10}+\frac{4L^2}{5}-\frac{3L^3}{80}\\
-&+L\left[\left(-\frac{71}{10}+\frac{3L}{20}\right)x+\frac{3x^2}{5}\right]\\
-&+\left(\frac{11}{2}-\frac{3L}{8}\right)(x^2+y^2+z^2)
+R(L;x,y,z)={}&-42+\frac{339L}{10}+\frac{4L^2}{5}-\frac{3L^3}{80}
+\\ &+L\left[\left(-\frac{71}{10}+\frac{3L}{20}\right)x+\frac{3x^2}{5}\right]
+\\ &+\left(\frac{11}{2}-\frac{3L}{8}\right)(x^2+y^2+z^2)
  -\frac{x^3+y^3+z^3}{2}
 \end{aligned}
 ```

@@ -7,7 +7,9 @@ An October 2026 public argument already proves that every negative difference oc
 ## A sufficient condition for both coverage assertions
 
 Write $M_n=\max_{j\le n}a_j$. Let $n$ run through the indices whose outgoing step is upward. There are infinitely many, since an infinite strictly decreasing sequence of positive integers is impossible. The positions at those indices tend to infinity because all positions are distinct. If
-$$\liminf_{d_{n+1}>0}(M_n-a_n)=C<\infty,$$
+```math
+\liminf_{d_{n+1}>0}(M_n-a_n)=C<\infty,
+```
 then the walk visits every positive integer and every positive difference greater than $C$ occurs. In particular, infinitely many rises from record positions suffice for both coverage assertions in full.
 
 For the position assertion, choose infinitely many upward departures from $x=a_n$ with $M_n-x\le C$. Fix a putatively omitted position $m$ and restrict to $x>m$. Since the departure rises, the negative difference $m-x$ must have been used before. Write its earlier transition as $z\to b$, giving $b=z-x+m\le C+m$. Each such $b$ was visited only once, and there are only finitely many possibilities for it. The differences $m-x$ are all distinct, a contradiction.

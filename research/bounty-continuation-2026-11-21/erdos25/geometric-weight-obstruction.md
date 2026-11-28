@@ -53,9 +53,9 @@ The difference between the zero-residue union and this activated union is conseq
 ```math
 g(n)=
 \begin{cases}
-1,&n\equiv3\pmod6,\\
--1,&n\equiv5\pmod6,\\
-0,&\text{otherwise}.
+1,&n\equiv3\pmod6,
+\\ -1,&n\equiv5\pmod6,
+\\ 0,&\text{otherwise}.
 \end{cases}
 ```
 

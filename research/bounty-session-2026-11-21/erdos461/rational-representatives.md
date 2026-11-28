@@ -4,7 +4,7 @@ For fixed $`A\ge2`$ and $`0<\varepsilon<1`$, consider integers
 $`0\le a\le t^A`$ and $`1\le b\le t^{1-\varepsilon}`$ with $`\gcd(a,b)=1`$.
 Write $`e_p=\lceil\log_p t\rceil`$ for primes below $`t`$. Given any starting point $`n\ge0`$, define
 ```math
-D_t(n;a,b)=\sum_{\substack{p<t,\ p\nmid b\\j=v_p(bn-a)<e_p}}p^{-j-1},
+D_t(n;a,b)=\sum_{\substack{p\lt t,\ p\nmid b\\j=v_p(bn-a)\lt e_p}}p^{-j-1},
 \qquad v_p(0)=\infty .
 ```
 

@@ -9,7 +9,7 @@ Let $G$ have diameter four. Choose vertices $u,v$ at distance four. Take the bre
 
 On the normalized part-constant coordinates the Laplacian of $H$ is a symmetric tridiagonal matrix $Q$ with diagonal $(a,b+1,a+c,b+1,c)$ and adjacent off-diagonal squares $(a,ab,bc,c)$. Every within-part zero-sum mode has eigenvalue the total size of that part and its neighbors, at most $n-2$ for any part supporting such a mode. Set $n=a+b+c+2$ and $z=(n+\sqrt{n^2-4n})/2\in(n-2,n-1)$.
 
-Let $D_i(X)$ be the $i$th leading principal determinant of $XI-Q$. Use $D_0=1$, $D_1=X-a$, and $D_i=(X-Q_{ii})D_{i-1}-Q_{i,i-1}^2D_{i-2}$. Reduce each determinant modulo $X^2-nX+n$ to a linear remainder $R_i$. To verify that the first four are positive at $z$, write $A=a-1,B=b-1,C=c-1$. The endpoint evaluations, written as $R_i(n-2)$ and the increment $R_i(n-1)-R_i(n-2)$, are:
+Let $D_i(X)$ be the $`i`$th leading principal determinant of $XI-Q$. Use $D_0=1$, $D_1=X-a$, and $D_i=(X-Q_{ii})D_{i-1}-Q_{i,i-1}^2D_{i-2}$. Reduce each determinant modulo $X^2-nX+n$ to a linear remainder $R_i$. To verify that the first four are positive at $z$, write $A=a-1,B=b-1,C=c-1$. The endpoint evaluations, written as $R_i(n-2)$ and the increment $R_i(n-1)-R_i(n-2)$, are:
 
 | $i$ | $R_i(n-2)$ | Increment |
 |---|---|---|

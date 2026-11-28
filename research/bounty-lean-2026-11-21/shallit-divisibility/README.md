@@ -52,8 +52,8 @@ A word has tracks of the form
 
 ```math
 \begin{aligned}
-\text{top}&=d\,a^i\,d\,v_0\,d\,v_1\,d\cdots v_m\,d\,c^{j+1},\\
-\text{bottom}&=c^{i+1}\,d\,u_0\,d\,u_1\,d\cdots u_m\,d\,b^j\,d,
+\text{top}&=d\,a^i\,d\,v_0\,d\,v_1\,d\cdots v_m\,d\,c^{j+1},
+\\ \text{bottom}&=c^{i+1}\,d\,u_0\,d\,u_1\,d\cdots u_m\,d\,b^j\,d,
 \end{aligned}
 ```
 

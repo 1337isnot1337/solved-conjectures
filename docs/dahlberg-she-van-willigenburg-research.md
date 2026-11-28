@@ -28,8 +28,8 @@ Here $S$ ranges over connected vertex sets of order $r$ such that every componen
 ```math
 \sum_{h\ne i}x_h^\ell =
 \begin{cases}
-(d-1)x_i^\ell,& d\mid\ell,\\
--x_i^\ell,& d\nmid\ell .
+(d-1)x_i^\ell,& d\mid\ell,
+\\ -x_i^\ell,& d\nmid\ell .
 \end{cases}
 ```
 
@@ -59,7 +59,7 @@ If $n$ is even and $T$ has a perfect matching $M$, there is a two-vertex formula
 ```math
 [e_3^2 e_2^{(n-6)/2}]X_T =
 n-\sum_{w}2^{\deg(w)-1}
-+\sum_{\{u,v\}\in\mathcal P}(-1)^{\operatorname{dist}(u,v)-1}
++\sum_{\{u,v\}\in\mathcal P}(-1)^{\mathop{\mathrm{dist}}(u,v)-1}
  2^{\deg(u)+\deg(v)-1}.
 \tag{4}
 ```
@@ -74,7 +74,7 @@ Problem 4.9 of [Li](https://arxiv.org/abs/2503.09484) asks if $[e_3e_2^{(n-3)/2}
 
 Use the non-spider caterpillar $G_a$ from Proposition 5.2 of [Tang, Wang, and Wang](https://arxiv.org/abs/2610.39481). It consists of a central vertex $v$ with two leaves, a pendant path of length $a-2$ from $v$, and a neighbor $w$ of $v$ with one leaf and a pendant path of length $a$. Path lengths count the vertices beyond the attaching vertex. The order is $2a+3$. The cited proposition proves that this tree has all connected partition types for $a\equiv2\bmod 4$ and $\gcd(2a+3,15)=1$, including $a=60t+10$ for every $t\ge0$.
 
-Match $v$ to one of its leaves, $w$ to its leaf, and the two even paths in consecutive pairs. The unmatched vertex $u$ is the second leaf of $v$. In (3), $u$ and the other leaf of $v$ contribute $2$ each. The leaf of $w$ contributes $-2$. Along the length-$a$ path the downstairs endpoints of matching edges are in the positive class and contribute $2a-2$. Along the length-$(a-2)$ path they are in the negative class and contribute $-2a+6$. Thus
+Match $v$ to one of its leaves, $w$ to its leaf, and the two even paths in consecutive pairs. The unmatched vertex $u$ is the second leaf of $v$. In (3), $u$ and the other leaf of $v$ contribute $2$ each. The leaf of $w$ contributes $-2$. Along the length-$`a`$ path the downstairs endpoints of matching edges are in the positive class and contribute $2a-2$. Along the length-$`(a-2)`$ path they are in the negative class and contribute $-2a+6$. Thus
 
 ```math
 [e_3 e_2^{a}]X_{G_a}= -1+2+2-2+(2a-2)+(-2a+6)=5.
@@ -95,7 +95,7 @@ This uses color transfer along paths, as in [Tang, Wang, and Wang](https://arxiv
 
 ### Transfer and local factors
 
-Use $m$ colors $x_i$ with elementary functions $e_1=0$, $e_2,\ldots,e_m\ge0$, and $\sum_{j=2}^m(j-1)e_j=1$. Set $K_{ij}=1$ for $i\ne j$, $K_{ii}=0$, $D=\operatorname{diag}(x_i)$ and $P=KD$. With the endpoints of a path of length $L_e$ fixed at colors $i,j$, the sum of the weights on its interior vertices is $(P^{L_e-1}K)_{ij}$. Directly attached leaves have weight sum $-x_i$ when the adjacent vertex has color $i$. Thus the weight at a vertex of $H$ is $x_i(-x_i)^{\ell_v}$.
+Use $m$ colors $x_i$ with elementary functions $e_1=0$, $e_2,\ldots,e_m\ge0$, and $\sum_{j=2}^m(j-1)e_j=1$. Set $K_{ij}=1$ for $i\ne j$, $K_{ii}=0$, $`D=\mathop{\mathrm{diag}}(x_i)`$ and $P=KD$. With the endpoints of a path of length $L_e$ fixed at colors $i,j$, the sum of the weights on its interior vertices is $(P^{L_e-1}K)_{ij}$. Directly attached leaves have weight sum $-x_i$ when the adjacent vertex has color $i$. Thus the weight at a vertex of $H$ is $x_i(-x_i)^{\ell_v}$.
 
 Put $R(z)=\prod_i(z+x_i)$ and $J(z)=\sum_i x_i/(z+x_i)$. Expanding the determinant of the diagonal matrix minus a rank-one matrix gives
 
@@ -135,11 +135,11 @@ F_{1,3}=1-2e_2-3e_3 .
 
 ### An absolute bound for odd parity
 
-Use $m=3$ and $e_2=e_3=1/3$. The characteristic polynomial of $P$ is $(z-1)(z^2+z+2/3)$. The two other eigenvalues have modulus $\sqrt{2/3}$, mutual distance greater than 1, and distances greater than 1 from the eigenvalue 1. The three colors satisfy $x_i^3+x_i/3-1/3=0$, giving $|x_i|\lt0.9$, $\|P\|_\infty\lt 2$ and $\|b\|_\infty\le10$. The two other spectral projections, written by Lagrange interpolation in $P$, each have norm at most 9. Thus the difference between $P^t$ and its rank-one limit is bounded by $18(2/3)^{t/2}$ in row-sum norm.
+Use $m=3$ and $e_2=e_3=1/3$. The characteristic polynomial of $P$ is $(z-1)(z^2+z+2/3)$. The two other eigenvalues have modulus $\sqrt{2/3}$, mutual distance greater than 1, and distances greater than 1 from the eigenvalue 1. The three colors satisfy $x_i^3+x_i/3-1/3=0$, giving $|x_i|\lt0.9$, $`\|P\|_\infty\lt 2`$ and $`\|b\|_\infty\le10`$. The two other spectral projections, written by Lagrange interpolation in $P$, each have norm at most 9. Thus the difference between $P^t$ and its rank-one limit is bounded by $18(2/3)^{t/2}$ in row-sum norm.
 
 The local factors for total degree at most three are $1,8/5,7/5,1,3/5,1/3$ in the order $(1,0),(2,0),(3,0),(1,1),(2,1),(1,2)$. The factors for total degree four with $\ell\ge1$ are $-1/5,-2/5,-2/3$ for $(3,1),(2,2),(1,3)$.
 
-Root $H$ at any vertex. For a child with a path to its parent, the message to the parent is the vector of sums of coloring weights conditional on the parent's color, excluding the weight of the parent. We prove that each message can be written $a(b+\delta)$, with a nonzero real $a$ and $\|\delta\|_\infty\le10^{-6}$. Its sign is the product of the signs of the local factors in the corresponding subtree of $H$.
+Root $H$ at any vertex. For a child with a path to its parent, the message to the parent is the vector of sums of coloring weights conditional on the parent's color, excluding the weight of the parent. We prove that each message can be written $a(b+\delta)$, with a nonzero real $a$ and $`\|\delta\|_\infty\le10^{-6}`$. Its sign is the product of the signs of the local factors in the corresponding subtree of $H$.
 
 Indeed, at a vertex $v$, factor out the product of its child message scalars. The new conditional vector at $v$ is then $U_i=x_i(-x_i)^{\ell_v}\prod_w(b_i+\delta_{w,i})$. The product has at most three factors. Its leading scalar after the transfer to the parent is $b^\top U/B_2$. The numerator differs from $F_{k_v,\ell_v}$ by at most $3\cdot10\cdot 3\cdot 11^2\cdot10^{-6}\lt0.1$. All vectors are invariant under conjugation combined with permuting the conjugate color labels, so the scalar is real. Its modulus exceeds $1/16$, since $B_2=8/5$ and $|F_{k_v,\ell_v}|\ge1/5$. The error in the message is bounded in norm by $18(2/3)^{(L_e-1)/2}\cdot 2\cdot 11^3$. Dividing by the modulus of the scalar gives an error less than $10^{-6}$ when $L_e\ge150$. These bounds also apply when the child product is empty. At the root the final sum uses $\sum_i U_i$, whose sign equals that of the root's local factor by the same product estimate. Hence the full specialization has sign $(-1)^s$, where $s$ is the number of degree-four vertices. Negative evaluation at these nonnegative elementary values precludes $e$-positivity.
 

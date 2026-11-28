@@ -62,7 +62,7 @@ g=X diag(D_j^(-1)). The generalized Vandermonde determinant is
 
 ```math
 \det X(z,q)=s z\,\Delta(q),\qquad
-\Delta(q)=\prod_{a<b}(q_b-q_a).                          \tag{5}
+\Delta(q)=\prod_{a\lt b}(q_b-q_a).                          \tag{5}
 ```
 
 Indeed the alternant with powers 0,...,s-2,s is the ordinary

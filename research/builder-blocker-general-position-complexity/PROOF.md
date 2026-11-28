@@ -21,7 +21,9 @@ Take a nonempty Min-start source graph $H$ without isolates. Let $M>|V(H)|$ be o
 If Builder opens in $\overline H$ at $x$, Blocker can answer with a neighbor $y$ of $x$ in $H$. The pair is legal, since any two vertices are in general position. They are nonadjacent in $G$, so every universal vertex would be between them on a shortest two-edge path. All universal vertices are barred forever. The final size on that response is at most $|V(H)|$.
 
 If Builder opens at a universal vertex, the remaining legal general-position sets are exactly the cliques that contain it: any nonedge among the original vertices would make a forbidden triple with the opening universal vertex, and every clique is in general position. Thus original choices form an independent set of $H$, with Blocker moving first in this residual game. The remaining $M-1$ universal vertices are an even number of unrestricted moves. By the paired-response observation, the final value of this branch is $M+I_{\min}(H)$. This exceeds the value Builder can guarantee by opening anywhere else. Therefore
-$$g_{\mathrm B}(K_M\vee\overline H)=M+I_{\min}(H).$$
+```math
+g_{\mathrm B}(K_M\vee\overline H)=M+I_{\min}(H).
+```
 Increase the source threshold by $M$.
 
 ## Blocker starts
@@ -31,7 +33,9 @@ Take a nonempty Max-start source graph $H$. Form $G$ by taking an original copy 
 If Blocker starts at $u$, Builder can play an original vertex. Thereafter the leaves are forbidden: a leaf and an original vertex are nonadjacent and $u$ is between them. The residual original choices are precisely an independent-set game on $H$, with Builder the first original player. This gives final size $1+I_{\max}(H)$. Builder's alternative of taking a leaf on the second move ends the game at size two, since that leaf has no neighbor but $u$. The alternative cannot improve the value because $H$ is nonempty.
 
 If Blocker opens at an original vertex, Builder takes any leaf. If Blocker opens at a leaf, Builder takes an original vertex. Either way the pair bars $u$. When $u$ is absent, every unselected leaf is a legal move at any current general-position set: its distance to each selected vertex is two, and the distance between the other two vertices of any triple is at least one and at most two. Thus the process cannot end before all $M$ leaves are selected. This exceeds $1+I_{\max}(H)$, so Blocker optimally opens at $u$. We have
-$$g_{\mathrm B'}(G)=1+I_{\max}(H).$$
+```math
+g_{\mathrm B'}(G)=1+I_{\max}(H).
+```
 Increase the source threshold by one.
 
 ## Membership and scope

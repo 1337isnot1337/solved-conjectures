@@ -45,9 +45,9 @@ k_A=\lceil4A\log A+D\rceil,
 where D is the absolute constant specified in their use of Harper's Rodosskii bound. If, for every modulus q in a family Q, at most one nonprincipal character modulo q has an L-function zero in
 
 ~~~math
-\operatorname{Re}s>1-\frac{k_A}{\log q},
+\mathop{\mathrm{Re}}s>1-\frac{k_A}{\log q},
 \qquad
-|\operatorname{Im}s|\le q,
+|\mathop{\mathrm{Im}}s|\le q,
 \tag{2}
 ~~~
 

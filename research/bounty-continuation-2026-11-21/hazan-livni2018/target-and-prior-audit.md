@@ -4,7 +4,7 @@ Audit date: 2026-11-21. Reserved in [campaign issue 223](https://github.com/1337
 
 ## 1. Exact cash target and model
 
-Elad Hazan and Roi Livni's [COLT 2018 paper](https://proceedings.mlr.press/v75/hazan18a.html), [primary PDF](https://proceedings.mlr.press/v75/hazan18a/hazan18a.pdf), Section 4 on PDF page 3, offers **$100 to the solver** of its first question. It asks for a simple, efficient improper learner competitive in reconstruction error with the best $`k`$-center model, with encoding length
+Elad Hazan and Roi Livni's [COLT 2018 paper](https://proceedings.mlr.press/v75/hazan18a.html), [primary PDF](https://proceedings.mlr.press/v75/hazan18a/hazan18a.pdf), Section 4 on PDF page 3, offers **\$100 to the solver** of its first question. It asks for a simple, efficient improper learner competitive in reconstruction error with the best $`k`$-center model, with encoding length
 
 ```math
 \mathop{\mathrm{poly}}(\log k,\log(1/\varepsilon)),

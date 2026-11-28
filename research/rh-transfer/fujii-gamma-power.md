@@ -8,7 +8,7 @@ Let chi be the nonprincipal real primitive character modulo 4, and let beta(s) =
 
 ~~~math
 \int_0^\infty \xi_k(u)u^{s-1}\,du=\Gamma(s)^k
-\qquad (\operatorname{Re}s>0).
+\qquad (\mathop{\mathrm{Re}}s>0).
 \tag{1}
 ~~~
 
@@ -66,8 +66,8 @@ Tonelli's theorem, followed by u = v t, proves for every positive real sigma tha
 \begin{aligned}
 \int_0^\infty u^{\sigma-1}\xi_{k+1}(u)\,du
 &=\int_0^\infty e^{-v}\frac{dv}{v}
-  \int_0^\infty u^{\sigma-1}\xi_k(u/v)\,du\\
-&=\Gamma(\sigma)\Gamma(\sigma)^k.
+  \int_0^\infty u^{\sigma-1}\xi_k(u/v)\,du
+\\ &=\Gamma(\sigma)\Gamma(\sigma)^k.
 \end{aligned}
 \tag{6}
 ~~~
@@ -123,8 +123,8 @@ To prove this, choose Y at least 1 such that f(t) is nonpositive for t at least 
 ~~~math
 \begin{aligned}
 \int_0^{Y/x}e^{-v}f_+(xv)\,\frac{dv}{v}
-&=\int_0^Y e^{-t/x}f_+(t)\,\frac{dt}{t}\\
-&\le C_Y:=\int_0^Y f_+(t)\,\frac{dt}{t}<\infty.
+&=\int_0^Y e^{-t/x}f_+(t)\,\frac{dt}{t}
+\\ &\le C_Y:=\int_0^Y f_+(t)\,\frac{dt}{t}<\infty.
 \end{aligned}
 \tag{10}
 ~~~
@@ -163,8 +163,8 @@ For complex s with real part greater than 1, absolute convergence gives
 \begin{aligned}
 \int_0^\infty G_k(x)x^{-s-1}\,dx
 &=\sum_{p>2}\chi(p)\int_0^\infty
- \xi_k(p/x)x^{-s-1}\,dx\\
-&=\Gamma(s)^kP_\chi(s),\qquad
+ \xi_k(p/x)x^{-s-1}\,dx
+\\ &=\Gamma(s)^kP_\chi(s),\qquad
 P_\chi(s):=\sum_{p>2}\chi(p)p^{-s}.
 \end{aligned}
 \tag{13}
@@ -202,7 +202,7 @@ The integrand is nonnegative for real s. Its abscissa of convergence sigma_c is 
 
 ~~~math
 F_k(s)=E_{k,X}(s)-\Gamma(s)^kP_\chi(s)
-\qquad(\operatorname{Re}s>1).
+\qquad(\mathop{\mathrm{Re}}s>1).
 \tag{17}
 ~~~
 
@@ -218,7 +218,7 @@ This series converges absolutely and locally uniformly in the half-plane with re
 
 ~~~math
 P_\chi(s)=\log\beta(s)-R_\chi(s)
-\qquad(\operatorname{Re}s>1).
+\qquad(\mathop{\mathrm{Re}}s>1).
 \tag{19}
 ~~~
 

@@ -58,8 +58,8 @@ Define a row $`w(z,q)^t`$ by
 \begin{aligned}
 w_a(z,q)&={s\choose a}z^{s-a}-c_a(q)
                   -{s-1\choose a}z^{s-1-a}
-                       &&(0\le a\le s-2),\\
-w_{s-1}(z,q)&=s z-1.
+                       &&(0\le a\le s-2),
+\\ w_{s-1}(z,q)&=s z-1.
 \end{aligned}
 \tag{5}
 ```

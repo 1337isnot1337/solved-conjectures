@@ -2,10 +2,10 @@
 
 **Lean status:** none.
 
-Jiang Zeng asks whether consecutive original rows of his two-parameter Narayana kernel have strictly interlacing negative zeros. The [proof](proof.md) gives a stronger bound for every degree, every $0<q<1$ and every $\theta>-1$. If $r_{n,i}$ is the $i$th smallest root magnitude, then
+Jiang Zeng asks whether consecutive original rows of his two-parameter Narayana kernel have strictly interlacing negative zeros. The [proof](proof.md) gives a stronger bound for every degree, every $0<q<1$ and every $\theta>-1$. If $r_{n,i}$ is the $`i`$th smallest root magnitude, then
 
 ```math
-r_{n+1,i}<r_{n,i}<q^2r_{n+1,i+1}.
+r_{n+1,i}\lt r_{n,i}\lt q^2r_{n+1,i+1}.
 ```
 
 The argument factors the coefficients into simple dilations and uses the reciprocal symmetry of each original row. The independent review checked the infinite-product and strictness steps, reran the signed remainder checks, and certified another 176 indexed inequalities by rational root isolation. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/792#issuecomment-7192093300) [Version 2, closing question 1](https://arxiv.org/abs/2610.28691v2) · [Source audit](sources.md) · [Issue 792](https://github.com/1337isnot1337/solved-conjectures/issues/792)

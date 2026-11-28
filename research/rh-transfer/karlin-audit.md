@@ -8,51 +8,51 @@
 
 Csordas–Dimitrov, *Conjectures and theorems in the theory of entire functions*, §1, state Karlin's conjecture as follows. For
 
-\[
+```math
 \phi(x)=\sum_{k\ge0}\gamma_k x^k/k!\in\mathcal{LP},
 \qquad \gamma_k\ge0,
-\]
+```
 
 and
 
-\[
+```math
 H_m(f;x)=\det(f^{(i+j)}(x))_{i,j=0}^{m-1},
-\]
+```
 
 the proposed conclusion is
 
-\[
+```math
 (-1)^{m(m-1)/2}H_m(\phi^{(q)};x)\ge0
 \qquad(q\ge0,\ m\ge2,\ x\ge0).
 \tag{1}
-\]
+```
 
 Immediately after equation (1.4), the authors report independent counterexamples by Dimitrov and Craven–Csordas. This is positive prior-resolution evidence, not an inference from search silence.
 
-Craven–Csordas later published *Karlin's conjecture and a question of Pólya*, Rocky Mountain Journal of Mathematics 35 (2005), 61–82, DOI 10.1216/RMJM/1181069768. Its abstract explicitly states that counterexamples are supplied; Example 3.1 uses \(x^3(x+1)^5\) and a negative fifth-order Wronskian near zero. No new counterexample is claimed here.
+Craven–Csordas later published *Karlin's conjecture and a question of Pólya*, Rocky Mountain Journal of Mathematics 35 (2005), 61–82, DOI 10.1216/RMJM/1181069768. Its abstract explicitly states that counterexamples are supplied; Example 3.1 uses $`x^3(x+1)^5`$ and a negative fifth-order Wronskian near zero. No new counterexample is claimed here.
 
 ## 2. Xi Toeplitz condition: a different classical criterion
 
-For the Xi-associated coefficient sequence \(\beta_n\), let
+For the Xi-associated coefficient sequence $`\beta_n`$, let
 
-\[
+```math
 B_{ij}=
 \begin{cases}
-\beta_{j-i},&j\ge i,\\
-0,&j<i,
+\beta_{j-i},&j\ge i,
+\\ 0,&j\lt i,
 \end{cases}
 \qquad
 D(n,r)=\det(B_{i,j+n})_{i,j=1}^{r}.
-\]
+```
 
 Nuttall's *Determinantal inequalities and the Riemann hypothesis*, §1.2, equations (1.4)–(1.6), explicitly records
 
-\[
+```math
 \mathrm{RH}
 \iff D(n,r)>0
 \quad(n\ge0,\ r\ge1).
 \tag{2}
-\]
+```
 
 He attributes the criterion to the relevant results in Karlin's *Total Positivity*, rather than presenting it as a new conditional implication.
 

@@ -15,10 +15,10 @@ For a Hermitian positive semidefinite matrix $`A`$ indexed by a finite
 set $`S`$, define
 
 ~~~math
-P_S=\operatorname{per}A[S],\qquad
-Q_S=\operatorname{per}|A[S]|^2,
+P_S=\mathop{\mathrm{per}}A[S],\qquad
+Q_S=\mathop{\mathrm{per}}|A[S]|^2,
 \qquad
-\Gamma_S(i,j)=a_{ij}\operatorname{per}A[S](i\mid j).
+\Gamma_S(i,j)=a_{ij}\mathop{\mathrm{per}}A[S](i\mid j).
 ~~~
 
 Here $`|A[S]|^2`$ denotes entrywise squared modulus. Empty permanents are
@@ -27,13 +27,13 @@ one, and $`\Gamma_\varnothing`$ is the empty matrix.
 The proposed averaged cofactor inequality is
 
 ~~~math
-G(A):=\|\Gamma(A)\|_F^2-|S|\operatorname{per}|A|^2
+G(A):=\|\Gamma(A)\|_F^2-|S|\mathop{\mathrm{per}}|A|^2
 \stackrel{?}{\ge}0.                                        \tag{1}
 ~~~
 
 The [cofactor bridge note](../sign/chollet_cofactor_bridge.md) records
 why (1), together with Pate's established upper bound
-$`\|\Gamma(A)\|_F^2\le |S|(\operatorname{per}A)^2`$, would prove Chollet's
+$`\|\Gamma(A)\|_F^2\le |S|(\mathop{\mathrm{per}}A)^2`$, would prove Chollet's
 conjecture.
 
 **Theorem 1.** For every Hermitian positive semidefinite $`A`$ and every
@@ -119,7 +119,7 @@ More explicitly, the positive remainder in (5) is
 ~~~math
 \langle f,(M_Q^*M_Q-\|Q\|_{\mathcal F}^2I)g\rangle_{\mathcal F}
 =
-\sum_{|\alpha|<b}\frac1{\alpha!}
+\sum_{|\alpha|\lt b}\frac1{\alpha!}
 \left\langle
 \overline{\partial^\alpha Q}(\partial)f,\,
 \overline{\partial^\alpha Q}(\partial)g
@@ -143,12 +143,12 @@ Products of linear forms satisfy the Gaussian/Fischer identity
 \prod_{i\in I}\ell_i,\,
 \prod_{j\in J}\ell_j
 \right\rangle_{\mathcal F}
-=\operatorname{per}A[I,J]                                  \tag{7}
+=\mathop{\mathrm{per}}A[I,J]                                  \tag{7}
 ~~~
 
 when $`|I|=|J|`$. It follows either by coefficient expansion or by
 pairing complex Gaussian factors. In particular, the matrix
-$`C_S(i,j)=\operatorname{per}A[S](i\mid j)`$ is the Gram matrix of the
+$`C_S(i,j)=\mathop{\mathrm{per}}A[S](i\mid j)`$ is the Gram matrix of the
 products with one index omitted.
 
 Put $`T=S\setminus R`$ and
@@ -194,7 +194,7 @@ $`0\le t_i\le1`$ and define
 
 ~~~math
 B=T^{1/2}AT^{1/2}+I-T,\qquad
-T=\operatorname{diag}(t_1,\ldots,t_n).
+T=\mathop{\mathrm{diag}}(t_1,\ldots,t_n).
 ~~~
 
 For a subset $`S\subseteq[n]`$, define a matrix $`X_S`$ on all $`n`$
@@ -239,7 +239,7 @@ intersection has exactly this law. Therefore
 
 ~~~math
 \|\Gamma(B)\|_F^2
-=\mathbb E\,\operatorname{tr}(X_SX_{T'}),
+=\mathbb E\,\mathop{\mathrm{tr}}(X_SX_{T'}),
 \qquad
 Q(B)=\mathbb E Q_{S\cap T'}.                               \tag{13}
 ~~~
@@ -259,18 +259,18 @@ Direct multiplication of the blocks in (10) gives
 
 ~~~math
 \begin{aligned}
-\operatorname{tr}(X_SX_{T'})
-={}&\operatorname{tr}\bigl(\Gamma_S[R,R]\Gamma_{T'}[R,R]\bigr)\\
-&+P_{T'}\sum_{i\in U}\Gamma_S(i,i)
+\mathop{\mathrm{tr}}(X_SX_{T'})
+={}&\mathop{\mathrm{tr}}\bigl(\Gamma_S[R,R]\Gamma_{T'}[R,R]\bigr)
+\\ &+P_{T'}\sum_{i\in U}\Gamma_S(i,i)
  +P_S\sum_{i\in V}\Gamma_{T'}(i,i)
- +|W|P_SP_{T'}.                                           \tag{14}
-\end{aligned}
+ +|W|P_SP_{T'}.
+\end{aligned} \tag{14}
 ~~~
 
 Theorem 1 implies
 
 ~~~math
-\operatorname{tr}\bigl(\Gamma_S[R,R]\Gamma_{T'}[R,R]\bigr)
+\mathop{\mathrm{tr}}\bigl(\Gamma_S[R,R]\Gamma_{T'}[R,R]\bigr)
 \ge P_UP_V\|\Gamma_R\|_F^2
 \ge\|\Gamma_R\|_F^2.                                      \tag{15}
 ~~~
@@ -301,7 +301,7 @@ These statements include the empty-set conventions. Equations (14)-(15)
 therefore imply
 
 ~~~math
-\operatorname{tr}(X_SX_{T'})\ge nQ_R
+\mathop{\mathrm{tr}}(X_SX_{T'})\ge nQ_R
 \qquad(R\ne[n]).                                          \tag{16}
 ~~~
 
@@ -320,7 +320,7 @@ No sign is assumed for $`G(A)`$ itself.
 
 ## 6. Diagonal additions and the singular reduction
 
-For a positive diagonal matrix $`D_0=\operatorname{diag}(d_i)`$, put
+For a positive diagonal matrix $`D_0=\mathop{\mathrm{diag}}(d_i)`$, put
 $`c=\prod_i d_i^2`$. Entry and cofactor scaling cancel their omitted
 factors, giving
 
@@ -331,7 +331,7 @@ G(D_0AD_0)=c^2G(A).                                       \tag{18}
 ~~~
 
 Suppose first $`A`$ has positive diagonal $`a_{ii}`$. Normalize it to a
-correlation matrix $`C`$. For $`D=\operatorname{diag}(\delta_i)\succeq0`$,
+correlation matrix $`C`$. For $`D=\mathop{\mathrm{diag}}(\delta_i)\succeq0`$,
 the correlation normalization of $`A+D`$ is the matrix in (17) with
 
 ~~~math
@@ -344,8 +344,8 @@ After (18), the product factor in (17) cancels exactly:
 \begin{aligned}
 G(A+D)
 &\ge\left(\prod_i(a_{ii}+\delta_i)^2\right)
-      \left(\prod_i t_i^2\right)G(C)\\
-&=\left(\prod_i a_{ii}^2\right)G(C)=G(A).
+      \left(\prod_i t_i^2\right)G(C)
+\\ &=\left(\prod_i a_{ii}^2\right)G(C)=G(A).
 \end{aligned}
 ~~~
 
@@ -411,7 +411,7 @@ and of the conditional extension. It does not claim these consequences
 are historically new. The unresolved step remains
 
 ~~~math
-\|\Gamma(A)\|_F^2\ge n\operatorname{per}|A|^2
+\|\Gamma(A)\|_F^2\ge n\mathop{\mathrm{per}}|A|^2
 ~~~
 
 for arbitrary singular correlation matrices in an unbounded order.

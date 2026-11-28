@@ -16,10 +16,10 @@ All finite first-order prefixes over an algebraically closed field define constr
 
 Consider a game
 ```math
-\exists c_0\ \mathop{\mathrm{Gen}}_{r_1}\exists c_1\
-\mathop{\mathrm{Gen}}_{r_2}\exists c_2\cdots
-\mathop{\mathrm{Gen}}_{r_h}\exists c_h\
-V(x,y,c_0,r_1,c_1,\ldots,r_h,c_h).                 \tag{1}
+\exists c_0\ \mathop{\mathrm{Gen}}_{r_1}\exists c_1
+\ \mathop{\mathrm{Gen}}_{r_2}\exists c_2\cdots
+\mathop{\mathrm{Gen}}_{r_h}\exists c_h
+\ V(x,y,c_0,r_1,c_1,\ldots,r_h,c_h).                 \tag{1}
 ```
 The last existential tuple may be empty. The leaf verifier $`V`$ is a bounded-time complex BSS verifier, including the cost of arithmetic, defined division, equality branches, and every coordinate read. Its finite machine constants are allowed to be arbitrary complex numbers.
 
@@ -79,8 +79,8 @@ and continue with the original next existential tuple.
 
 For any predicate $`\Phi_i`$, the resulting stage is equivalent to the right side of (3):
 ```math
-\exists\eta_i\ \bigl[(4)\ \wedge\
-\forall j_i\in\{1,\ldots,L_i\}\,
+\exists\eta_i\ \bigl[(4)\ \wedge
+\ \forall j_i\in\{1,\ldots,L_i\}\,
 (\eta_{i,j_i}=0\ \vee\ \Phi_i(a_i,v_{i,j_i}))\bigr].
                                                                \tag{5}
 ```
@@ -149,8 +149,8 @@ There is no need to expand a generic suffix exponentially merely to obtain an or
 ```math
 \mathop{\mathrm{Gen}}_{r\in\mathbb C^q}F(r)
 \quad\Longleftrightarrow\quad
-\exists t_1,\ldots,t_{q+1}\ \forall v\
-\bigvee_{j=1}^{q+1}F(v-t_j).                       \tag{8}
+\exists t_1,\ldots,t_{q+1}\ \forall v
+\ \bigvee_{j=1}^{q+1}F(v-t_j).                       \tag{8}
 ```
 Represent the disjunction by a one-hot existential selector after $`v`$, and pass
 $`r=v-\sum_j e_jt_j`$ to one copy of the suffix. Equations
@@ -182,8 +182,8 @@ This follows by backwards induction from the direct final kernel evaluation. If 
 
 Consequently the permanent graph has the exact generic-game formula
 ```math
-\exists q_1\ \mathop{\mathrm{Gen}}_{r_1}\exists q_2\
-\mathop{\mathrm{Gen}}_{r_2}\cdots
+\exists q_1\ \mathop{\mathrm{Gen}}_{r_1}\exists q_2
+\ \mathop{\mathrm{Gen}}_{r_2}\cdots
 \exists q_m\ \mathop{\mathrm{Gen}}_{r_m}\ R.
                                                                \tag{11}
 ```
@@ -210,8 +210,8 @@ q_r(0)+q_r(1)=1,\qquad q_r(r)=0=F_X(r).
 ```
 Thus
 ```math
-\mathop{\mathrm{Gen}}_r\exists q\
-[q(0)+q(1)=1\ \wedge\ q(r)=F_X(r)]
+\mathop{\mathrm{Gen}}_r\exists q
+\ [q(0)+q(1)=1\ \wedge\ q(r)=F_X(r)]
 ```
 is true on this false instance, while the correct
 $`\exists q\,\mathop{\mathrm{Gen}}_r`$ formula is false.

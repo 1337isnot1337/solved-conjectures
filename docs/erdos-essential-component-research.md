@@ -1,6 +1,6 @@
 # Erdős essential-component conjecture
 
-Let $A=\{2^m3^n:m,n\ge0\}\cup\{0\}$ and write $\sigma(B)=\inf_{N\ge1}|B\cap[1,N]|/N$. The question is whether $\sigma(A+(B\cup\{0\}))\gt\sigma(B)$ for every $B\subseteq\mathbb N$ with $0\lt\sigma(B)\lt1$. Ruzsa records it on p. 147 of his 1999 survey. The zero-adjoined convention is the one used there for Schnirelmann density. The 1999 Budapest booklet, Ge and Lê's later discussion, the problem wiki and searches by the set and the expansion formulation revealed no full answer. [Ruzsa, pp. 146–147](https://doi.org/10.1006/jnth.1999.2395) · [Budapest booklet, Problem 1.19](https://raw.githubusercontent.com/plby/lean-proofs/fbde2f6e550546e6779cb184582463fff7d86e60/favorite/favorite.pdf) · [Ge–Lê](https://home.olemiss.edu/~leth/papers/essential_components.pdf) · [Erdős Problems wiki](https://erdosproblems.ai/wiki/problems/integer_sequences/E1146) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/73)
+Let $`A=\{2^m3^n:m,n\ge0\}\cup\{0\}`$ and write $\sigma(B)=\inf_{N\ge1}|B\cap[1,N]|/N$. The question is whether $`\sigma(A+(B\cup\{0\}))\gt\sigma(B)`$ for every $B\subseteq\mathbb N$ with $0\lt\sigma(B)\lt1$. Ruzsa records it on p. 147 of his 1999 survey. The zero-adjoined convention is the one used there for Schnirelmann density. The 1999 Budapest booklet, Ge and Lê's later discussion, the problem wiki and searches by the set and the expansion formulation revealed no full answer. [Ruzsa, pp. 146–147](https://doi.org/10.1006/jnth.1999.2395) · [Budapest booklet, Problem 1.19](https://raw.githubusercontent.com/plby/lean-proofs/fbde2f6e550546e6779cb184582463fff7d86e60/favorite/favorite.pdf) · [Ge–Lê](https://home.olemiss.edu/~leth/papers/essential_components.pdf) · [Erdős Problems wiki](https://erdosproblems.ai/wiki/problems/integer_sequences/E1146) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/73)
 
 ## Equivalent expansion at half density
 
@@ -9,9 +9,9 @@ Write $S_q$ for the image of $A\cap[0,q]$ in $\mathbb Z/q\mathbb Z$ and let
 g_k=\min_{X\subseteq\mathbb Z/2^k\mathbb Z,\ |X|=2^{k-1}}
   \frac{|X+S_{2^k}|-|X|}{2^k}.
 ```
-**Theorem.** The conjecture is equivalent to $\liminf_{k\to\infty}g_k\gt0$. If the liminf is zero, then for every $0\lt\alpha\lt1$ there is a set $B$ for which both $\sigma(B)$ and $\sigma(A+(B\cup\{0\}))$ equal $\alpha$. In that construction both lower asymptotic densities also equal $\alpha$.
+**Theorem.** The conjecture is equivalent to $\liminf_{k\to\infty}g_k\gt0$. If the liminf is zero, then for every $0\lt\alpha\lt1$ there is a set $B$ for which both $\sigma(B)$ and $`\sigma(A+(B\cup\{0\}))`$ equal $\alpha$. In that construction both lower asymptotic densities also equal $\alpha$.
 
-**From Schnirelmann density to cyclic groups.** Suppose $\sigma(C)=\sigma(B)=\alpha\in(0,1)$, where $C=A+(B\cup\{0\})$. Since $1\in A$, each finite prefix of $C$ has density strictly greater than $\alpha$. Indeed, if $B$ has a first gap in the prefix, it is preceded by a member of $B$ and is filled by $B+1$. If there is no gap the prefix has density one. Thus there are $N_j\to\infty$ with $|B\cap[1,N_j]|/N_j\to\alpha$ and $|(C\setminus B)\cap[1,N_j]|=o(N_j)$.
+**From Schnirelmann density to cyclic groups.** Suppose $\sigma(C)=\sigma(B)=\alpha\in(0,1)$, where $`C=A+(B\cup\{0\})`$. Since $1\in A$, each finite prefix of $C$ has density strictly greater than $\alpha$. Indeed, if $B$ has a first gap in the prefix, it is preceded by a member of $B$ and is filled by $B+1$. If there is no gap the prefix has density one. Thus there are $N_j\to\infty$ with $|B\cap[1,N_j]|/N_j\to\alpha$ and $|(C\setminus B)\cap[1,N_j]|=o(N_j)$.
 
 These prefixes are asymptotically uniform on the scale $N_j$. To prove it, take a subsequential uniform limit $F$ of their cumulative counts $|B\cap[1,tN_j]|/N_j$ on $0\le t\le1$. Such limits exist after linear interpolation, by the common Lipschitz bound. We have $F(t)\ge\alpha t$ and $F(1)=\alpha$. Consecutive positive elements of $A$ have ratio tending to one by Tijdeman's gap theorem. Thus for every fixed $0\le d\le1$ choose $a_j\in A$ with $a_j/N_j\to d$ and $a_j\le dN_j$. For $t+d\le1$, the translate by $a_j$ of the $B$-prefix of length $\lfloor tN_j\rfloor$ lies in $C$ and contains only $o(N_j)$ points outside $B$. Passing to the limit gives $F(t+d)-F(d)\ge F(t)$. At $d=1-t$ this yields $F(t)\le\alpha-F(1-t)\le\alpha t$. Every limit is therefore $F(t)=\alpha t$. [Tijdeman, Compositio Mathematica 1974](https://www.numdam.org/item/CM_1974__28_2_159_0/)
 
@@ -35,9 +35,9 @@ If $E/q\to0$, this forces $R(X)/(\log q)^L\to\infty$ for every fixed $L$. In the
 
 For a dyadic order $q$, write $\gamma_q$ for the best lower bound on the nonzero Fourier modes obtained by weighting the shifts. In formulas,
 ```math
-\gamma_q=\max_{\substack{w_s\ge0\\ \sum_{s\in S_q}w_s=1}}\
-\min_{j\ne0\bmod q}\
-\sum_{s\in S_q}w_s\bigl(1-\cos(2\pi js/q)\bigr).
+\gamma_q=\max_{\substack{w_s\ge0\\ \sum_{s\in S_q}w_s=1}}
+\ \min_{j\ne0\bmod q}
+\ \sum_{s\in S_q}w_s\bigl(1-\cos(2\pi js/q)\bigr).
 ```
 There is an absolute constant $C$ such that
 ```math
@@ -125,7 +125,7 @@ The same bounds give a finite density gain for every $B$ of Schnirelmann density
           \frac{(\log\log N)^{3/2}}{\log N}.
 ```
 
-Write $C=A+(B\cup\{0\})$, $E=|C\cap[1,N]|-\alpha N$ and $F(t)=|B\cap[1,t]|-\alpha t$ for integers $0\le t\le N$. Then $F(t)\ge0$, $F(N)\le E$, and $|(C\setminus B)\cap[1,N]|\le E$. Fix $h$ large enough that the greedy approximation estimate above has $\eta h\gt2$. Given any $t$, choose a sum $a$ of at most $h$ members of $A$ with $0\le N-t-a\le D$, where $D=O(N/(\log N)^2)$. Translate $B\cap[1,t]$ by the summands one at a time, keeping only points in $B$ at each step. The intermediate sets stay inside $[1,N]$ and each step loses at most $E$ points. Therefore $B\cap[a+1,N]$ contains at least $|B\cap[1,t]|-hE$ points. Adding the prefix of length $a$ yields
+Write $`C=A+(B\cup\{0\})`$, $E=|C\cap[1,N]|-\alpha N$ and $F(t)=|B\cap[1,t]|-\alpha t$ for integers $0\le t\le N$. Then $F(t)\ge0$, $F(N)\le E$, and $|(C\setminus B)\cap[1,N]|\le E$. Fix $h$ large enough that the greedy approximation estimate above has $\eta h\gt2$. Given any $t$, choose a sum $a$ of at most $h$ members of $A$ with $0\le N-t-a\le D$, where $D=O(N/(\log N)^2)$. Translate $B\cap[1,t]$ by the summands one at a time, keeping only points in $B$ at each step. The intermediate sets stay inside $[1,N]$ and each step loses at most $E$ points. Therefore $B\cap[a+1,N]$ contains at least $|B\cap[1,t]|-hE$ points. Adding the prefix of length $a$ yields
 ```math
 0\le F(t)\le (h+1)E+D \qquad (0\le t\le N).
 ```
@@ -150,6 +150,6 @@ Take a minimizing half-density set $X$ modulo $q$ and put $\delta=g_k$. Write $p
 ```math
 \frac1{q'}\sum_c p_c(1-p_c)\le\frac{\delta}{\gamma_{2^r}}.
 ```
-For a coset $c$, the occupied fraction contributed by $X+S_q$ is at least $M_c=\max_{s\in S'}p_{c-s}$. Indeed every translation carrying $c-s$ to $c$ carries all the points of $X$ in that coset. Consequently $q'^{-1}\sum_c(M_c-p_c)\le\delta$. With $X_t=\{c:p_c\ge t\}$, integrating $|(X_t+S')\setminus X_t|/q'$ over $0\le t\le1$ gives exactly $q'^{-1}\sum_c(M_c-p_c)$. Some $t$ in $[1/4,3/4]$ therefore has normalized expansion at most $2\delta$.
+For a coset $c$, the occupied fraction contributed by $X+S_q$ is at least $M_c=\max_{s\in S'}p_{c-s}$. Indeed every translation carrying $c-s$ to $c$ carries all the points of $X$ in that coset. Consequently $q'^{-1}\sum_c(M_c-p_c)\le\delta$. With $`X_t=\{c:p_c\ge t\}`$, integrating $|(X_t+S')\setminus X_t|/q'$ over $0\le t\le1$ gives exactly $q'^{-1}\sum_c(M_c-p_c)$. Some $t$ in $[1/4,3/4]$ therefore has normalized expansion at most $2\delta$.
 
-For every such $t$ we have $|1_{\{p_c\ge t\}}-p_c|\le4p_c(1-p_c)$, so $|X_t|/q'$ differs from $1/2$ by at most $4\delta/\gamma_{2^r}\le1/4$. Apply the density adjustment with a fixed $l$ for this interval of densities. Since $1\in S'$, it yields $X'$ of exactly half density with the claimed bound. By the short-sum estimate on $\gamma_{2^r}$, whenever $g_k$ is small this propagation applies for all $r\lt k$ up to a constant times $g_k^{-1}(\log(1/g_k))^{3/2}$.
+For every such $t$ we have $`|1_{\{p_c\ge t\}}-p_c|\le4p_c(1-p_c)`$, so $|X_t|/q'$ differs from $1/2$ by at most $4\delta/\gamma_{2^r}\le1/4$. Apply the density adjustment with a fixed $l$ for this interval of densities. Since $1\in S'$, it yields $X'$ of exactly half density with the claimed bound. By the short-sum estimate on $\gamma_{2^r}$, whenever $g_k$ is small this propagation applies for all $r\lt k$ up to a constant times $g_k^{-1}(\log(1/g_k))^{3/2}$.

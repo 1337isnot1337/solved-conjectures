@@ -145,9 +145,9 @@ three overlapping subsemirings would therefore satisfy
 
 ```math
 \begin{aligned}
-F|_{ABD}&=(\zeta^{(a/(a+b),\ b/(a+b),\ 0)})^{a+b},\\
-F|_{ACD}&=(\zeta^{(a/(a+c),\ c/(a+c),\ 0)})^{a+c},\\
-F|_{BCD}&=(\zeta^{(b/(b+c),\ c/(b+c),\ 0)})^{b+c}.
+F|_{ABD}&=(\zeta^{(a/(a+b),\ b/(a+b),\ 0)})^{a+b},
+\\ F|_{ACD}&=(\zeta^{(a/(a+c),\ c/(a+c),\ 0)})^{a+c},
+\\ F|_{BCD}&=(\zeta^{(b/(b+c),\ c/(b+c),\ 0)})^{b+c}.
 \end{aligned}                                                     \tag{4}
 ```
 

@@ -41,9 +41,9 @@ For a fixed integer offset $d$, take the gcd of all terms $P_{t+d}+2P_t$ for suf
 ```math
 g_d=
 \begin{cases}
-3,&d\equiv0\pmod8,\\
-5,&d\equiv9\pmod{12},\\
-1,&\text{otherwise}.
+3,&d\equiv0\pmod8,
+\\ 5,&d\equiv9\pmod{12},
+\\ 1,&\text{otherwise}.
 \end{cases}
 ```
 
@@ -164,7 +164,7 @@ then a full cover by $\mathcal P$ exists for the chosen residues if and only if 
 **Proof.** Only one implication needs proof. Suppose the remaining primes do not cover a pair $(s,t)$. Consider the $m$ lifts
 
 ```math
-(s+jh,t),\qquad0\le j<m.
+(s+jh,t),\qquad0\le j\lt m.
 ```
 
 They preserve the parity of $s$ because $h$ is even. For a remaining prime, $T_p\mid h$, so all these lifts still avoid its chosen residue.
@@ -237,8 +237,8 @@ There is also a shorter exact formula:
 ```math
 G_L=
 \begin{cases}
-2P_{L/2},&L\equiv0\pmod4,\\
-2C_{L/2},&L\equiv2\pmod4.
+2P_{L/2},&L\equiv0\pmod4,
+\\ 2C_{L/2},&L\equiv2\pmod4.
 \end{cases}
 ```
 

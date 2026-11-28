@@ -32,10 +32,10 @@ Let $C(z)=(1-\sqrt{1-4z})/(2z)$, with the formal branch having $C(0)=1$. Put $j=
 gives
 ```math
  \begin{aligned}
- G(z,x)&=\sum_{n\ge0}B_n(x)z^n\\
- &=\frac1{\sqrt{1-4xz}}
-   \sum_{j\ge0}\binom{2j}{j}\bigl(zC(xz)\bigr)^j\\
- &=\frac1{\sqrt{1-4xz}\sqrt{1-4zC(xz)}}.
+ G(z,x)&=\sum_{n\ge0}B_n(x)z^n
+ \\ &=\frac1{\sqrt{1-4xz}}
+   \sum_{j\ge0}\binom{2j}{j}\bigl(zC(xz)\bigr)^j
+ \\ &=\frac1{\sqrt{1-4xz}\sqrt{1-4zC(xz)}}.
  \end{aligned}
 ```
 
@@ -109,8 +109,8 @@ Consequently, with
 ```math
  K(v,x)=4
  \begin{pmatrix}
- 1-v+xv&\sqrt{xv(1-v)}\\
- \sqrt{xv(1-v)}&1-v
+ 1-v+xv&\sqrt{xv(1-v)}
+ \\ \sqrt{xv(1-v)}&1-v
  \end{pmatrix},
 ```
 we have

@@ -8,7 +8,7 @@ Sergi Elizalde, Johnny Rivera Jr., and Yan Zhuang, *Counting Pattern-Avoiding Pe
 
 For a permutation `p` let `Bdes(p)={i : p_i>p_{i+1}+1}`. Define the usual fundamental quasisymmetric function `F_{n,S}` by summing `x_{i_1}...x_{i_n}` over weakly increasing positive indices, with strict increases at positions in S. The conjecture asserts that, for every n≥0 and m≥1,
 ```math
-Q_{n,m}(x)=\sum_{\substack{p\in S_n\\\operatorname{LIS}(p)<m}}F_{n,\operatorname{Bdes}(p)}(x)
+Q_{n,m}(x)=\sum_{\substack{p\in S_n\\\mathop{\mathrm{LIS}}(p)\lt m}}F_{n,\mathop{\mathrm{Bdes}}(p)}(x)
 ```
 is symmetric and Schur-positive. Avoidance of the increasing pattern 12…m is exactly LIS < m.
 
@@ -21,7 +21,7 @@ All arguments below work with finite alphabets and stabilize degree by degree, s
 Put `y_i=x_i/(1-x_i)`. We first prove the identity of formal generating series
 ```math
 \sum_{n\ge0}Q_{n,m}(x)
-=\sum_{\lambda_1<m}f^\lambda s_\lambda(y),
+=\sum_{\lambda_1\lt m}f^\lambda s_\lambda(y),
 \tag{1}
 ```
 where f^λ counts standard Young tableaux of shape λ. More generally the exact LIS=k series is the same sum with λ_1=k.
@@ -50,14 +50,14 @@ Indeed the formal flow of dx/dt=x² is x/(1-tx), or equivalently the derivation 
 For any partition λ,
 ```math
 D s_\lambda =\sum_{b\text{ addable to }\lambda} c(b)s_{\lambda+b},
-\qquad c(b)=\operatorname{column}(b)-\operatorname{row}(b).
+\qquad c(b)=\mathop{\mathrm{column}}(b)-\mathop{\mathrm{row}}(b).
 \tag{3}
 ```
 To check this, use N variables and the alternant formula with exponents λ_j+N-j. Applying D to the numerator determinant raises each exponent in turn with coefficient λ_j+N-j. A repeated exponent gives zero; the other terms are exactly the addable boxes within N rows. On the Vandermonde Δ, DΔ=(N-1)p_1Δ, since D(x_i-x_j)=(x_i+x_j)(x_i-x_j). Subtracting the denominator contribution and applying the ordinary one-box Pieri rule leaves coefficient λ_j-j+1, the added content. Taking N sufficiently large proves (3) stably.
 
 Iterating (3), every path from λ to μ corresponds to a standard tableau of skew shape μ/λ, and the product of contents is path-independent. Consequently, if μ has size n, its coefficient in the right-hand side of (1) is
 ```math
-\sum_{\substack{\lambda\subseteq\mu\\\lambda_1<m}}
+\sum_{\substack{\lambda\subseteq\mu\\\lambda_1\lt m}}
  f^\lambda\frac{f^{\mu/\lambda}}{(n-|\lambda|)!}
  \prod_{b\in\mu\setminus\lambda}c(b).
 \tag{4}
@@ -78,7 +78,7 @@ with reciprocal negative factorial defined as zero, these factors are determinan
 
 The positive contents in the arm region have product Π_i A_i!/a_i!, and the negative contents in the leg region have product (-1)^(Σ(B_i-b_i)) Π_i B_i!/b_i!. Thus (4) becomes
 ```math
-\sum_{\substack{a\text{ strictly decreasing}\ge0\\ a_1<m-1}}
+\sum_{\substack{a\text{ strictly decreasing}\ge0\\ a_1\lt m-1}}
 \det\left[\binom{A_i}{a_j}\right]_{i,j=1}^d\,
 T_a(B),
 \qquad

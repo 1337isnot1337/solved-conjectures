@@ -151,8 +151,8 @@ Let $`G`$ be a finite abelian group of odd order $`m`$. Form a 3-partite hypergr
 It is linear, has $`3m`$ vertices and $`m^2`$ edges, and has no 3-partite Pasch configuration. Indeed, such a configuration would have the four edges
 
 ```math
-(x_1,y_1,z_1),\ (x_1,y_2,z_2),\
-(x_2,y_1,z_2),\ (x_2,y_2,z_1),
+(x_1,y_1,z_1),\ (x_1,y_2,z_2),
+\ (x_2,y_1,z_2),\ (x_2,y_2,z_1),
 ```
 
 with distinct entries in each part. Substitution into (5) gives

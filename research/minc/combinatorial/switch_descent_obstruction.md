@@ -6,9 +6,9 @@ Status: an auxiliary obstruction for an attempted proof of Minc's Conjecture 24.
 
 For a nonnegative integer matrix, put
 
-\[
+```math
  C(A)=\sum_{i,j}\binom{a_{ij}}2.
-\]
+```
 
 One possible route to Conjecture 24 would assert that every nonbinary integer matrix of order n and common line sum k <= n admits a legal 2-by-2 switch that decreases C and does not increase its permanent. Iterating would produce a binary matrix with no larger permanent.
 
@@ -18,15 +18,15 @@ The assertion is false for every k >= 5. The following construction and proof ar
 
 Let k >= 3. Index the 2k rows by
 
-\[
+```math
  L_1,\ldots,L_k;\quad R_1,\ldots,R_{k-1};\quad z,
-\]
+```
 
 and the 2k columns by
 
-\[
+```math
  C_1,\ldots,C_{k-1};\quad D_1,\ldots,D_k;\quad w.
-\]
+```
 
 Define A_k by the following nonzero entries. Every listed entry is 1 except the final entry, which is 2:
 
@@ -45,17 +45,17 @@ If a perfect matching uses (z,w), its weight from that edge is 2. Exactly one of
 
 Otherwise z uses one of D_3,...,D_k, while w is matched to one of L_1,...,L_{k-2}. No left-to-right edge can then be used. There are (k-2)^2 choices, each contributing F. Consequently
 
-\[
- \operatorname{per}A_k=F\bigl((k-2)^2+4\bigr).
-\]
+```math
+ \mathop{\mathrm{per}}A_k=F\bigl((k-2)^2+4\bigr).
+```
 
 ## All collision-reducing 2-by-2 switches
 
 For a switch subtracting one at (i,j),(r,s) and adding one at (i,s),(r,j),
 
-\[
+```math
  \Delta C=2-a_{ij}-a_{rs}+a_{is}+a_{rj}.
-\]
+```
 
 Because A_k has only one repeated entry, every switch with Delta C < 0 must subtract one from (z,w) and one from an entry 1 whose two crossed entries are both zero. Thus the second removed edge must be one of the following:
 
@@ -68,43 +68,43 @@ There are no others. A legal larger step along the same four positions is imposs
 
 For completeness, let G_{ij}=per A_k(i|j), and let H_{i,j}=per A_k(z,i|w,j). For an eligible second edge (i,j), the permanent change is
 
-\[
- \Delta\operatorname{per}
+```math
+ \Delta\mathop{\mathrm{per}}
  =-G_{zw}-G_{ij}+G_{zj}+G_{iw}+2H_{i,j}.
-\]
+```
 
 This follows by expanding the permanent along the two changed rows: its restriction to the switch line is a quadratic whose t^2 coefficient is 2H_{i,j}.
 
 For a type-I edge, say (L_{k-1},C_1), the relevant minors, by the same matching count used above, are
 
-\[
+```math
 \begin{array}{c|c}
 \text{minor}&\text{value}/F\\ \hline
-G_{zw}&2\\
-G_{L_{k-1},C_1}&((k-2)^2+2)/(k-1)\\
-G_{z,C_1}&2(k-2)/(k-1)\\
-G_{L_{k-1},w}&k-2\\
-H_{L_{k-1},C_1}&1/(k-1).
+G_{zw}&2
+\\ G_{L_{k-1},C_1}&((k-2)^2+2)/(k-1)
+\\ G_{z,C_1}&2(k-2)/(k-1)
+\\ G_{L_{k-1},w}&k-2
+\\ H_{L_{k-1},C_1}&1/(k-1).
 \end{array}
-\]
+```
 
 Hence every type-I switch has
 
-\[
- \Delta\operatorname{per}=F\frac{k-4}{k-1}.
-\]
+```math
+ \Delta\mathop{\mathrm{per}}=F\frac{k-4}{k-1}.
+```
 
 For a type-II edge, say (L_{k-1},D_1), those five minor values divided by F are respectively
 
-\[
+```math
  2,\quad2,\quad k-2,\quad k-2,\quad1.
-\]
+```
 
 Thus every type-II switch has
 
-\[
- \Delta\operatorname{per}=2F(k-3).
-\]
+```math
+ \Delta\mathop{\mathrm{per}}=2F(k-3).
+```
 
 For k >= 5 both changes are strictly positive. This proves the claimed obstruction. At k=4 the type-I changes are zero, so that order does not obstruct the nonincreasing version of the auxiliary assertion.
 
@@ -114,15 +114,15 @@ The preceding construction does not even imply that A_k is a local minimum among
 
 Subtract one at
 
-\[
+```math
  (z,w),\quad(L_1,C_1),\quad(R_1,D_3),
-\]
+```
 
 and add one at
 
-\[
+```math
  (z,C_1),\quad(L_1,D_3),\quad(R_1,w).
-\]
+```
 
 All three added entries were zero. Call the resulting binary k-regular matrix B_k. Set r=k-2 and H=((k-2)!)^2. Counting according to the column assigned to row z gives:
 
@@ -134,17 +134,17 @@ All three added entries were zero. Call the resulting binary k-regular matrix B_
 
 Each entry counts the needed external edges between the two complete blocks; a deleted internal entry contributes (k-1)!-(k-2)! whenever its row and column both remain. Summing the table yields
 
-\[
- \operatorname{per}B_k
+```math
+ \mathop{\mathrm{per}}B_k
  =H\bigl(r^4+11r^2+2r+3\bigr).
-\]
+```
 
 Since per(A_k)=H(r+1)^2(r^2+4), subtraction gives the strict inequality
 
-\[
- \operatorname{per}B_k-\operatorname{per}A_k
+```math
+ \mathop{\mathrm{per}}B_k-\mathop{\mathrm{per}}A_k
  =-H\bigl(2(k-3)^3+3\bigr)<0.
-\]
+```
 
 Thus this family supports investigation of longer alternating cycles. It does not prove that such an escape exists for every nonbinary regular matrix.
 
@@ -162,22 +162,22 @@ Another tempting statement is that an arbitrary pair of rows can be made as equa
 
 The 3-regular matrix
 
-\[
+```math
 \begin{pmatrix}
-0&2&0&1&0&0\\
-1&0&0&2&0&0\\
-0&1&1&0&1&0\\
-0&0&2&0&0&1\\
-1&0&0&0&0&2\\
-1&0&0&0&2&0
+0&2&0&1&0&0
+\\ 1&0&0&2&0&0
+\\ 0&1&1&0&1&0
+\\ 0&0&2&0&0&1
+\\ 1&0&0&0&0&2
+\\ 1&0&0&0&2&0
 \end{pmatrix}
-\]
+```
 
 has permanent 32. Balancing the first two rows entrywise produces, up to swapping those rows,
 
-\[
+```math
  (0,1,0,2,0,0),\qquad(1,1,0,1,0,0).
-\]
+```
 
 The resulting permanent is 34. These are the only balanced possibilities. The values were independently checked by enumerating all 6! permutations. This example does not rule out choosing a different row pair.
 

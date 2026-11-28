@@ -19,7 +19,7 @@ A projective unitary invariant of two secants X,Y is
 J(X,Y)=\frac{|\langle X,Y\rangle|^2}
 {\langle X,X\rangle\langle Y,Y\rangle},
 ```
-with X,Y represented by covectors and the diagonal dual Hermitian form $\operatorname{diag}(1,1,-1)$. Secant covectors are nonisotropic, so the denominator is nonzero. This ratio is unchanged under rescaling either covector or under the group action.
+with X,Y represented by covectors and the diagonal dual Hermitian form $`\mathop{\mathrm{diag}}(1,1,-1)`$. Secant covectors are nonisotropic, so the denominator is nonzero. This ratio is unchanged under rescaling either covector or under the group action.
 
 Use covectors $B=(b+1,-a,-a\lambda)$ and $w=(b,a(1+b^2)/(1-b^2),-2ab/(1-b^2))$. The two norms are independent of λ, and their Hermitian inner product (with the second factor conjugated) is $b-1-2b\lambda$. Consequently J(B,w) is affine in $\lambda+\lambda^{-1}$, with nonzero coefficient once the fixed bad characteristics are excluded. Each value admits at most two λ, since λ then solves a monic quadratic. The same invariant is J(D,v), by T. The pairs of line labels ${B,w}$ and ${D,v}$ are disjoint, so any six labels of a second pattern include at least one complete pair. This bounds the number of possible second parameters by two for any fixed six- or seven-line correspondence.
 
@@ -27,7 +27,7 @@ Use covectors $B=(b+1,-a,-a\lambda)$ and $w=(b,a(1+b^2)/(1-b^2),-2ab/(1-b^2))$. 
 
 Index by the Θ(q⁹) ordered copies across the selected orbits. Let Z count those whose seven vertices and eleven required edges all survive. The split constraint probability is $2^{-11}$ for every index, so its expectation is Θ(q⁹p⁷). As in the [fixed-frame argument](HERMITIAN-SPINDLE-OBSTRUCTION.md), disjoint vertex sets give independent indicators. Let $s_r=(4,2,2,1,1,1,0)_r$ be the stabilizer exponents there. For fixed first index and an r-line correspondence, there are $O(q)$ second parameters when $r\le5$, and $O(1)$ when $r\ge6$, by the pair invariant. Each has at most $O(q^{s_r})$ group elements. The resulting bound is
 ```math
-\frac{\operatorname{Var} Z}{(\mathbf E Z)^2}
+\frac{\mathop{\mathrm{Var}} Z}{(\mathbf E Z)^2}
 \ll \sum_{r=1}^5 q^{s_r-8}p^{-r} + q^{-8}p^{-6}+q^{-9}p^{-7}=o(1).
 ```
 At $p\ge q^{-9/7+\varepsilon}$ the final term tends to zero by the positive ε, and each other term has a negative power even at ε=0.

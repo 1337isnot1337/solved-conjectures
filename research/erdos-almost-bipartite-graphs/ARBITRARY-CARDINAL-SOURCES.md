@@ -63,7 +63,7 @@ whose §VII states the construction at **exactly** $\aleph_1$.
 
 6. The very next paragraph of Erdős's §3 shifts to the countable
    chromatic-cardinal problem of an arbitrarily slowly diverging
-   **absolute** deletion budget, not a multiplier of \(n\).
+   **absolute** deletion budget, not a multiplier of $`n`$.
    That is [Erdős Problem 74](https://www.erdosproblems.com/74),
    with a [prior negative resolution](https://github.com/tadamcz/erdos74/blob/e127ee587c7c91267eecdb3569443d2b0ad64b52/Erdos74/Resolutions/Erdos74_118usd_22h.lean).
    It neither asserts nor rules out a superlinear budget at
@@ -75,7 +75,7 @@ whose §VII states the construction at **exactly** $\aleph_1$.
 ## Search scope
 
 Lookups on Nov 27, 2026 covered the exact article and §3 language,
-the separate exact-$\aleph_1$ wording, “edge bipartization,” “almost
+the separate exact-$`\aleph_1`$ wording, “edge bipartization,” “almost
 bipartite,” “higher shift graph,” “ordered edge graph,” “arbitrary
 cardinal,” “arbitrarily large chromatic number,” the two-color
 $n^{1+\epsilon}$ bound, and the citation trails above. Also checked

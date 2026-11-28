@@ -10,12 +10,12 @@ give the exact phase and a stronger threshold. This separates a
 wording defect from the nontrivial sign problem and does not count
 them as separate resolutions.
 
-Let $m\ge2$ be even, $M=m+1$, and $A=\{1,\ldots,m\}$. If
+Let $m\ge2$ be even, $M=m+1$, and $`A=\{1,\ldots,m\}`$. If
 $c_A(i,n)$ counts ordered compositions of $n$ of length $i$ with
 parts in $A$, put
-$$
+```math
  b_k(n)=(-1)^n\sum_{i\ge0}(-1)^i i^k c_A(i,n).
-$$
+```
 For $k=0$ the weight $i^0$ is $1$ including $i=0$. Write $d=k+1$.
 The eventual sign period of $b_k(n)$ is exactly $2M$:
 
@@ -34,39 +34,39 @@ fails: the phase generally depends on $k$.
 
 Set $z=-\sum_{a=1}^m(-x)^a$, and use the length-marked composition
 generating function $\sum_{i\ge0}z^i=1/(1-z)$. Then
-$$
+```math
  B(x)=\frac{1}{1-z}=\frac{1+x}{1+x^M},
  \qquad
  \sum_{n\ge0}b_k(n)x^n=\sum_{i\ge0}i^k z^i.
-$$
-Using $i^k=\sum_{j=0}^k\left\{\begin{smallmatrix}k\\j\end{smallmatrix}\right\}i^{\underline{j}}$
+```
+Using $`i^k=\sum_{j=0}^k\left\{\begin{smallmatrix}k\\j\end{smallmatrix}\right\}i^{\underline{j}}`$
 and differentiating the geometric series gives the polynomial
-$$
+```math
  \sum_{n\ge0}b_k(n)x^n
  =\sum_{j=0}^k j!\left\{\begin{smallmatrix}k\\j\end{smallmatrix}\right\}
    (B-1)^jB
  = k!B^{k+1}-\frac{k!(k+1)}{2}B^k+\text{lower powers}
  \qquad(k\ge1).
-$$
+```
 The first two coefficients follow from
-$\left\{\begin{smallmatrix}k\\k\end{smallmatrix}\right\}=1$ and
-$\left\{\begin{smallmatrix}k\\k-1\end{smallmatrix}\right\}=\binom{k}{2}$.
+$`\left\{\begin{smallmatrix}k\\k\end{smallmatrix}\right\}=1`$ and
+$`\left\{\begin{smallmatrix}k\\k-1\end{smallmatrix}\right\}=\binom{k}{2}`$.
 For $k=0$ the generating function is just $B$.
 
 For any fixed integer residue representative $r$, expand for all
 large integers $h$:
-$$
+```math
  [x^{Mh+r}]B^d
  =(-1)^h\sum_{q\in\mathbb Z}(-1)^q\binom d{r+Mq}
          \binom{h-q+d-1}{d-1}.
  \tag{1}
-$$
+```
 Only indices $0\le r+Mq\le d$ contribute. This is $(-1)^h$ times
 a polynomial in $h$ of degree at most $d-1$, with leading coefficient
 $c_d(r)/(d-1)!$, where
-$$
+```math
  c_d(r)=\sum_{q\in\mathbb Z}(-1)^q\binom d{r+Mq}.
-$$
+```
 Consequently $b_k(Mh+r)$ has leading term $(-1)^h h^k c_d(r)$
 whenever $c_d(r)\ne0$. For $k\ge1$ this is unbounded on a residue
 with nonzero $c_d$, refuting literal numerical periodicity.
@@ -74,11 +74,11 @@ with nonzero $c_d$, refuting literal numerical periodicity.
 ## 2. The folded binomial sign rule
 
 The identities
-$$
+```math
  c_d(r+M)=-c_d(r),\quad c_d(d-r)=c_d(r),\quad
  c_{d+1}(r)=c_d(r)+c_d(r-1)
  \tag{2}
-$$
+```
 follow from anti-periodicity, binomial reflection, and Pascal's
 identity. For $d\ge M-1$, $c_d$ is positive on all integer residues
 strictly between $(d-M)/2$ and $(d+M)/2$ modulo $2M$, and negative
@@ -108,22 +108,22 @@ When $d\ge M-1$ is even there are no integer boundaries, so the
 leading term already gives the sign. When $d$ is odd there are two.
 For the lower one put $r=(d-M)/2$; now $d\ge M$ and $k=d-1>0$.
 Define
-$$
+```math
  J_d(r)=\sum_q(-1)^q q\binom d{r+Mq}.
-$$
+```
 Since $c_d(r)=0$, the identity $i\binom di=d\binom{d-1}{i-1}$
 and then Pascal give
-$$
+```math
  M J_d(r)=d c_{d-1}(r-1)=-d c_{d-1}(r).
-$$
+```
 In (1) the term of order $h^{k-1}$ for $k!B^d$ is
 $(-1)^h(-kJ_d(r))h^{k-1}$, because the constant part of that
 binomial coefficient in $q$ cancels. The next power of $B$
-contributes $(-1)^h(-kd\,c_{d-1}(r)/2)h^{k-1}$. The two together
+contributes $`(-1)^h(-kd\,c_{d-1}(r)/2)h^{k-1}`$. The two together
 give a nonzero coefficient after factoring $(-1)^h$:
-$$
+```math
  -kd\left(\frac12-\frac1M\right)c_{d-1}(r)<0.
-$$
+```
 Indeed $r$ is inside the positive arc for $d-1$ and $M\ge3$.
 The upper boundary has opposite sign, since the same expansion
 of every power has an overall factor $(-1)^h$ for the residue

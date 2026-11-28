@@ -38,7 +38,7 @@ The archive records receipt on 2026-04-07 and its latest listed revision on
 2026-07-06. It describes the paper as a preprint surveying the relevant open
 problems and known results.
 
-For a Reed–Solomon code $`\mathcal C=\operatorname{RS}[\mathbb F,\mathcal L,k]`$
+For a Reed–Solomon code $`\mathcal C=\mathop{\mathrm{RS}}[\mathbb F,\mathcal L,k]`$
 on a smooth evaluation domain, the official page restricts the rate to
 $`\{1/2,1/4,1/8,1/16\}`$. Its two grand challenges ask for the largest admissible
 normalized radius $`\delta^*_{\mathcal C}`$ for a specified small error threshold

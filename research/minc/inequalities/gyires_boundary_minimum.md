@@ -101,9 +101,9 @@ The function `R` is analytic on a neighborhood of `U`, since its denominator is 
 ```math
 \begin{aligned}
 R(U+uK+Z)-R(U)
-&=R(U+uK)-R(U)+DR(U)[Z]\\
-&\quad+O(|u|\|Z\|_F+\|Z\|_F^2)\\
-&=\frac18\epsilon+\frac{21}{4}u^2
+&=R(U+uK)-R(U)+DR(U)[Z]
+\\ &\quad+O(|u|\|Z\|_F+\|Z\|_F^2)
+\\ &=\frac18\epsilon+\frac{21}{4}u^2
 +O(u^4+|u|\epsilon+\epsilon^2),
 \end{aligned}
 ```

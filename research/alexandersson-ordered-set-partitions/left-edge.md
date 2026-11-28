@@ -7,7 +7,7 @@ Write $n=jm+s$, $0\le s<j$, and $D_j=j!\big((j+2)/(j+1)\big)^j$. Define
  L_s(x)=s!\sum_{\ell\ge0}\frac{(-x)^\ell}{(s+j\ell)!},
  \qquad 0<\lambda_{s,1}<\lambda_{s,2}<\cdots
 ```
-where the $\lambda_{s,k}$ are its zeros. For every fixed $k$ the $k$th zero of $O_{jm+s,j}$ in decreasing order of absolute value satisfies
+where the $\lambda_{s,k}$ are its zeros. For every fixed $k$ the $`k`$th zero of $O_{jm+s,j}$ in decreasing order of absolute value satisfies
 ```math
  t_{jm+s,k}=-\frac{D_jm^j}{\lambda_{s,k}}(1+o(1)).
 ```
@@ -35,7 +35,7 @@ converge to $L_s(x)$ locally uniformly on $\mathbb C$. To justify the limit unde
 
 ## Reality, simplicity and the cyclic order of the limiting zeros
 
-All zeros of $L_s$ are positive. One direct proof takes the finite sections $\sum_{\ell\ge0}\binom M{s+j\ell}M^{-s-j\ell} y^\ell$ for $M\ge s$. The doubly infinite upper Toeplitz matrix of coefficients of $(1+z/M)^M$ is totally nonnegative, being the $M$th power of a totally nonnegative bidiagonal matrix. Rows $ja$ and columns $jb+s$ form the Toeplitz matrix for the section, since $0\le s<j$. It is totally nonnegative. The finite Aissen–Schoenberg–Whitney theorem gives only nonpositive zeros for the section. Coefficientwise domination by $1/(s+j\ell)!$ gives uniform convergence on compact sets. Changing $y$ to $-x$ and multiplying by $s!$ gives the assertion by Hurwitz and $L_s(0)=1$. This reality property is also a special case of the hyper-Bessel zero theorem of Chaggara and Ben Romdhane. [Aissen–Schoenberg–Whitney](https://doi.org/10.1073/pnas.37.5.303) · [Chaggara–Ben Romdhane](https://doi.org/10.1080/10652469.2014.973191)
+All zeros of $L_s$ are positive. One direct proof takes the finite sections $\sum_{\ell\ge0}\binom M{s+j\ell}M^{-s-j\ell} y^\ell$ for $M\ge s$. The doubly infinite upper Toeplitz matrix of coefficients of $(1+z/M)^M$ is totally nonnegative, being the $`M`$th power of a totally nonnegative bidiagonal matrix. Rows $ja$ and columns $jb+s$ form the Toeplitz matrix for the section, since $0\le s<j$. It is totally nonnegative. The finite Aissen–Schoenberg–Whitney theorem gives only nonpositive zeros for the section. Coefficientwise domination by $1/(s+j\ell)!$ gives uniform convergence on compact sets. Changing $y$ to $-x$ and multiplying by $s!$ gives the assertion by Hurwitz and $L_s(0)=1$. This reality property is also a special case of the hyper-Bessel zero theorem of Chaggara and Ben Romdhane. [Aissen–Schoenberg–Whitney](https://doi.org/10.1073/pnas.37.5.303) · [Chaggara–Ben Romdhane](https://doi.org/10.1080/10652469.2014.973191)
 
 Each $L_s$ is a nonpolynomial entire function of order at most $1/j$, by comparison with $\exp(|x|^{1/j})$ for $|x|\ge1$. Hadamard factorization gives infinitely many positive zeros, a convergent sum of reciprocals, and $L_s(x)=\prod_k(1-x/\lambda_{s,k})$, initially listing zeros with multiplicity. Set $f_s(u)=u^s L_s(u^j)/s!$. The derivative cycle is $f_s'=f_{s-1}$ for $s\ge1$ and $f_0'=-f_{j-1}$. At positive $u$ away from zeros,
 ```math
@@ -49,7 +49,7 @@ In the $x$ coordinate, these statements for adjacent residue classes give the we
  \lambda_{0,k}\le\lambda_{1,k}\le\cdots\le\lambda_{j-1,k}
  \le\lambda_{0,k+1}.
 ```
-Indeed, the derivative of $f_s$ for $s>0$ has its $k$th positive zero at or before the $k$th positive zero of $f_s$, counting multiplicities. The derivative of $f_0$ has its $k$th at or before the $(k+1)$st of $f_0$. A repeated zero in any one class would occupy positions $k,k+1$ in that class and would force every class between them in the cyclic order to vanish at the same point. By the derivative cycle, $f_0$ and its first $j-1$ derivatives would vanish at the corresponding $u>0$. The equation $f_0^{(j)}=-f_0$ and uniqueness would force $f_0\equiv0$, contradicting $f_0(0)=1$. This proves simplicity. An equality between adjacent classes in the cyclic order would give a common positive zero of a function and its derivative, which also contradicts simplicity. All displayed inequalities are strict.
+Indeed, the derivative of $f_s$ for $s>0$ has its $`k`$th positive zero at or before the $`k`$th positive zero of $f_s$, counting multiplicities. The derivative of $f_0$ has its $`k`$th at or before the $`(k+1)`$st of $f_0$. A repeated zero in any one class would occupy positions $k,k+1$ in that class and would force every class between them in the cyclic order to vanish at the same point. By the derivative cycle, $f_0$ and its first $j-1$ derivatives would vanish at the corresponding $u>0$. The equation $f_0^{(j)}=-f_0$ and uniqueness would force $f_0\equiv0$, contradicting $f_0(0)=1$. This proves simplicity. An equality between adjacent classes in the cyclic order would give a common positive zero of a function and its derivative, which also contradicts simplicity. All displayed inequalities are strict.
 
 ## Returning to the finite rows
 

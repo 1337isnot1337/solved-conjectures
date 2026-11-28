@@ -7,7 +7,7 @@
 Minc Conjecture 20 (Gyires) asks whether every real nonnegative doubly stochastic matrix A of order n satisfies
 
 ~~~math
-\frac{4\operatorname{per}(A)^2}{\operatorname{per}(AA^{\mathsf T})+\operatorname{per}(A^{\mathsf T}A)+2\operatorname{per}(A^2)}
+\frac{4\mathop{\mathrm{per}}(A)^2}{\mathop{\mathrm{per}}(AA^{\mathsf T})+\mathop{\mathrm{per}}(A^{\mathsf T}A)+2\mathop{\mathrm{per}}(A^2)}
 \ge \beta_n,\qquad \beta_n=\frac{n!}{n^n},
 ~~~
 
@@ -18,24 +18,24 @@ with equality only at J_n. The [specialist statement](https://yair-lavi.com/minc
 Let S be *any* real symmetric positive-semidefinite doubly stochastic n-by-n matrix. Let P,Q be *arbitrary* permutation matrices, independently chosen, and put A=PSQ. Then
 
 ~~~math
-\operatorname{per}(AA^{\mathsf T})
-=\operatorname{per}(A^{\mathsf T}A)
-=\operatorname{per}(S^2)
-\le \operatorname{per}(S)=\operatorname{per}(A)
+\mathop{\mathrm{per}}(AA^{\mathsf T})
+=\mathop{\mathrm{per}}(A^{\mathsf T}A)
+=\mathop{\mathrm{per}}(S^2)
+\le \mathop{\mathrm{per}}(S)=\mathop{\mathrm{per}}(A)
 ~~~
 
 and
 
 ~~~math
-0\le \operatorname{per}(A^2)\le \operatorname{per}(S^2).
+0\le \mathop{\mathrm{per}}(A^2)\le \mathop{\mathrm{per}}(S^2).
 ~~~
 
 In particular, for every n>=1 the **stronger** conclusion holds:
 
 ~~~math
 \boxed{
-\frac{4\operatorname{per}(A)^2}{\operatorname{per}(AA^{\mathsf T})+\operatorname{per}(A^{\mathsf T}A)+2\operatorname{per}(A^2)}
-\ge \operatorname{per}(A)\ge\beta_n}.
+\frac{4\mathop{\mathrm{per}}(A)^2}{\mathop{\mathrm{per}}(AA^{\mathsf T})+\mathop{\mathrm{per}}(A^{\mathsf T}A)+2\mathop{\mathrm{per}}(A^2)}
+\ge \mathop{\mathrm{per}}(A)\ge\beta_n}.
 ~~~
 
 Equality with beta_n occurs **if and only if** A=J_n. P and Q need not commute with S. The theorem includes genuinely nonsymmetric matrices and block-diagonal matrices in arbitrary orders.
@@ -45,16 +45,16 @@ Equality with beta_n occurs **if and only if** A=J_n. P and Q need not commute w
 For arbitrary real n-by-n matrices X,Y,
 
 ~~~math
-|\operatorname{per}(XY^{\mathsf T})|^2
-\le \operatorname{per}(XX^{\mathsf T})\operatorname{per}(YY^{\mathsf T}).
+|\mathop{\mathrm{per}}(XY^{\mathsf T})|^2
+\le \mathop{\mathrm{per}}(XX^{\mathsf T})\mathop{\mathrm{per}}(YY^{\mathsf T}).
 ~~~
 
 Proof: If x_i,y_i are the rows and Sym is the orthogonal projection onto symmetric n-fold tensors, direct expansion gives
 
 ~~~math
-\langle\operatorname{Sym}(x_1\otimes\cdots\otimes x_n),
-\operatorname{Sym}(y_1\otimes\cdots\otimes y_n)\rangle
-=\operatorname{per}(XY^{\mathsf T})/n!.
+\langle\mathop{\mathrm{Sym}}(x_1\otimes\cdots\otimes x_n),
+\mathop{\mathrm{Sym}}(y_1\otimes\cdots\otimes y_n)\rangle
+=\mathop{\mathrm{per}}(XY^{\mathsf T})/n!.
 ~~~
 
 Apply vector Cauchy--Schwarz; the two norm squares are the two Gram permanents divided by n!.
@@ -84,7 +84,7 @@ so both Gram permanents are exactly d.
 Let R=QP, another permutation matrix. Since A^2=P S R S Q and a permanent is unchanged by outside row/column permutations,
 
 ~~~math
-\operatorname{per}(A^2)=\operatorname{per}(S R S).
+\mathop{\mathrm{per}}(A^2)=\mathop{\mathrm{per}}(S R S).
 ~~~
 
 In Lemma 1 set X=S and Y=S R^{\mathsf T}. Then XY^{\mathsf T}=SRS, while XX^{\mathsf T}=YY^{\mathsf T}=S^2. Therefore |per(SRS)|<=d. Because A^2 is nonnegative, 0<=per(A^2)<=d.

@@ -9,7 +9,7 @@ The full written construction passes this independent review, including its degr
 The digit recurrence has nonzero leading coefficient at every stage because zeta^(-2^j) differs from one for j<m. It gives
 
 ```math
-\deg U_j=\prod_{i<j}(1+2^{m-i-1}),
+\deg U_j=\prod_{i\lt j}(1+2^{m-i-1}),
 \qquad
 \deg B_j=2^{m-j-1}\deg U_j.
 ```

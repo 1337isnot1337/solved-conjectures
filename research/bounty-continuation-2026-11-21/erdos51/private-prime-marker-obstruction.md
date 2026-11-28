@@ -56,10 +56,10 @@ follows prime by prime. Consequently
 \begin{aligned}
 \sum_{m\le M}\frac1{\varphi(m)}
 &=\sum_{d\le M}\frac{\mu^2(d)}{d\varphi(d)}
-       \sum_{j\le M/d}\frac1j\\
-&\le (1+\log M)\prod_{\ell\text{ prime}}
-       \left(1+\frac1{\ell(\ell-1)}\right)\\
-&\le e(1+\log M).
+       \sum_{j\le M/d}\frac1j
+\\ &\le (1+\log M)\prod_{\ell\text{ prime}}
+       \left(1+\frac1{\ell(\ell-1)}\right)
+\\ &\le e(1+\log M).
 \end{aligned}                                                   \tag{5}
 ```
 
@@ -93,8 +93,8 @@ Apply (4) with $`y=x/m`$ and sum over even $`m\le(\log x)^2`$. Counting all prim
 \begin{aligned}
 \#\{p\le x:r(p)>R\}
 &\ll \frac{x}{(\log x)^2}
-       \sum_{m\le(\log x)^2}\frac1{\varphi(m)}\\
-&\ll \frac{x\log\log x}{(\log x)^2}.
+       \sum_{m\le(\log x)^2}\frac1{\varphi(m)}
+\\ &\ll \frac{x\log\log x}{(\log x)^2}.
 \end{aligned}                                                   \tag{9}
 ```
 

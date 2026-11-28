@@ -23,8 +23,8 @@ nonnegative weight $w_H$. Put
 
 ```math
 \lambda_P=
-\min_{\substack{S\subseteq V\\
-S\cap P\ne\varnothing,\;P\setminus S\ne\varnothing}}
+\min_{\substack{S\subseteq V
+\\ S\cap P\ne\varnothing,\;P\setminus S\ne\varnothing}}
 \sum_{\substack{H\cap S\ne\varnothing\\H\setminus S\ne\varnothing}}w_H.
 ```
 
@@ -99,8 +99,8 @@ $d\nu$. The elementary tree distance formula gives
 ```math
 \begin{aligned}
 \nu(T)
-&=4\int_Tm(t)(1-m(t))\,dt\\
-&=2\sum_{p,q\in P}\mu(p)\mu(q)d_T(p,q)
+&=4\int_Tm(t)(1-m(t))\,dt
+\\ &=2\sum_{p,q\in P}\mu(p)\mu(q)d_T(p,q)
 =g_d(P).
 \end{aligned}
 ```
@@ -126,13 +126,13 @@ edge points, a cut crosses $\phi(H)$ exactly when its point lies in
 $C_H$. For cuts inside $C_H$, projecting to $C_H$ preserves the side
 of each point, except possibly at finitely many projection points,
 which have zero edge-length measure. Consequently, with
-$\eta=(\pi_H)_*\mu$,
+$`\eta=(\pi_H)_*\mu`$,
 
 ```math
 \begin{aligned}
 \int_T\mathbf1_{\{H\text{ crosses at }t\}}\,d\nu(t)
-&=4\int_{C_H}m(t)(1-m(t))\,dt\\
-&=2\sum_{x,y\in C_H}\eta(x)\eta(y)d_T(x,y).
+&=4\int_{C_H}m(t)(1-m(t))\,dt
+\\ &=2\sum_{x,y\in C_H}\eta(x)\eta(y)d_T(x,y).
 \end{aligned}
 ```
 
@@ -176,8 +176,8 @@ $\lambda_P$. Integrating and using the hyperedge domination gives
 \begin{aligned}
 \sum_Hw_Hg_d(H)
 &\ge\sum_Hw_H
-\int_T\mathbf1_{\{H\text{ crosses at }t\}}\,d\nu(t)\\
-&\ge\lambda_P\nu(T)
+\int_T\mathbf1_{\{H\text{ crosses at }t\}}\,d\nu(t)
+\\ &\ge\lambda_P\nu(T)
 =\lambda_Pg_d(P).
 \end{aligned}
 ```
@@ -219,7 +219,7 @@ Euclidean terminal proof requires a different argument.
 The following sufficient condition can apply when the terminal metric
 is not a tree metric. It does not require a Euclidean embedding.
 
-**Lemma.** Let $P=\{p_1,\ldots,p_n\}$ be terminals in a finite metric
+**Lemma.** Let $`P=\{p_1,\ldots,p_n\}`$ be terminals in a finite metric
 space, with $n\ge2$. Suppose there are numbers $r_i\ge0$ such that
 
 ```math
@@ -241,7 +241,7 @@ f_i(x)=\max\{r_i-d(p_i,x),0\}.
 ```
 
 The two-element inequalities give
-$r_i+r_j\le g_d(\{p_i,p_j\})=d(p_i,p_j)$. Thus no point belongs to
+$`r_i+r_j\le g_d(\{p_i,p_j\})=d(p_i,p_j)`$. Thus no point belongs to
 two positive caps. Set
 
 ```math
@@ -268,16 +268,16 @@ $4\mu_i(1-\mu_i)\le1$ give
 ```math
 \begin{aligned}
 g_d(H)
-&\ge2\sum_{i,j\in I}\mu_i\mu_jd(x_i,x_j)\\
-&\ge g_d(\{p_i:i\in I\})
-       -4\sum_{i\in I}\mu_i(1-\mu_i)u_i\\
-&\ge\sum_{i\in I}r_i-\sum_{i\in I}u_i
+&\ge2\sum_{i,j\in I}\mu_i\mu_jd(x_i,x_j)
+\\ &\ge g_d(\{p_i:i\in I\})
+       -4\sum_{i\in I}\mu_i(1-\mu_i)u_i
+\\ &\ge\sum_{i\in I}r_i-\sum_{i\in I}u_i
 =\delta(H).
 \end{aligned}
 ```
 
 For every $0\lt t\lt r_i$, the threshold set
-$\{x:f_i(x)>t\}$ contains $p_i$ and excludes all other terminals,
+$`\{x:f_i(x)>t\}`$ contains $p_i$ and excludes all other terminals,
 because $d(p_i,p_j)\ge r_i+r_j\ge r_i$. It is therefore a terminal
 cut. The total mass of these threshold cuts, integrating $dt$ for
 all $i$, is $\sum_i r_i=g_d(P)$. The integral of the crossing

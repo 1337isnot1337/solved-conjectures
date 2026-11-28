@@ -13,10 +13,10 @@ The target is [Conjecture 6 in the journal version](https://oro.open.ac.uk/98050
 ## Gated subgraphs
 
 Suppose $H$ is an isometric subgraph of $G$ with at least two vertices and each vertex $x$ outside $H$ has a gate $g\in H$: for every $z\in H$,
-$$
+```math
 d_G(x,z)=d_G(x,g)+d_H(g,z).
-$$
-Every terminal set $S$ in $H$ is terminal in $G$. It is general position by isometry; vertices of $H\setminus S$ retain their witnesses. If $g\notin S$, combine the gate's endpoint witness with the displayed gate identities to obtain $d_G(x,b)=d_G(x,a)+d_H(a,b)$ for the same $a,b$. If $g\in S$, choose any $b\in S\setminus\{g\}$ and use the gate equality directly with $a=g$. Such a $b$ exists because no singleton is terminal in a connected graph of order at least two.
+```
+Every terminal set $S$ in $H$ is terminal in $G$. It is general position by isometry; vertices of $H\setminus S$ retain their witnesses. If $g\notin S$, combine the gate's endpoint witness with the displayed gate identities to obtain $d_G(x,b)=d_G(x,a)+d_H(a,b)$ for the same $a,b$. If $g\in S$, choose any $`b\in S\setminus\{g\}`$ and use the gate equality directly with $a=g$. Such a $b$ exists because no singleton is terminal in a connected graph of order at least two.
 
 A connected graph with a gated edge therefore has a terminal set of size two; in a bipartite graph every edge is gated, since distances from any vertex to the endpoints differ by one. Gated factor layers also recover the terminal-set transfer for Cartesian products. More generally, if a single block in a connected graph has a terminal set, that set works in the whole graph: each vertex outside the block reaches it through its articulation gate. For a smallest hypothetical counterexample this says more generally that every proper gated subgraph is a singleton (assuming nonempty subgraphs).
 
@@ -39,7 +39,7 @@ If a smallest connected counterexample has a proper nontrivial module, contract 
 
 ### Exact characterization and sizes
 
-Conversely, let $\widehat S$ be any terminal set in $G$, set $S_v=\widehat S\cap V(H_v)$ and let $S=\{v:S_v\ne\varnothing\}$. Any collinear triple of quotient vertices in $S$ would lift to one in $\widehat S$, so $S$ is in general position. For any unselected module, take an outside point in it. Its two endpoint witnesses cannot be in a common module since their distances to the point would be equal. The witnesses therefore project to a quotient endpoint witness for that module. Hence $S$ is terminal in $Q$.
+Conversely, let $\widehat S$ be any terminal set in $G$, set $S_v=\widehat S\cap V(H_v)$ and let $`S=\{v:S_v\ne\varnothing\}`$. Any collinear triple of quotient vertices in $S$ would lift to one in $\widehat S$, so $S$ is in general position. For any unselected module, take an outside point in it. Its two endpoint witnesses cannot be in a common module since their distances to the point would be equal. The witnesses therefore project to a quotient endpoint witness for that module. Hence $S$ is terminal in $Q$.
 
 If $v\in S$ has a selected neighbor, then $S_v$ is a clique: two nonadjacent selected vertices there and one selected vertex in the neighboring module would be collinear. For any unselected point $x$ in $H_v$, two witnesses outside its module cannot work. If they are in different modules, they would make three vertices of $S$ collinear; if they lie in one module, their distances to $x$ are equal. Two witnesses inside $S_v$ also cannot work in this case if $x$ is adjacent to everyone in $S_v$. A witness pair using one $u\in S_v$ and one $w$ in another module works exactly when $d(x,u)=2$, the other module is adjacent to $v$, and $w$ is the middle vertex. Thus $x$ must have a nonneighbor in $S_v$, giving maximality of the clique. If $v$ has no selected neighboring module, a cross-module witness of this form is impossible, so $S_v$ must be terminal for the 1/2 metric.
 

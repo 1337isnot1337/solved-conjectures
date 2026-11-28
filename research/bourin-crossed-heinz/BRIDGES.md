@@ -18,8 +18,8 @@ Let $`u,v`$ be independent unit vectors in dimension two, let $`c=u^*v`$, and pu
 S=V\begin{bmatrix}a&0\\0&b\end{bmatrix}V^*,
 \qquad
 C_t=V\begin{bmatrix}
-0&a^tb^{1-t}c\\
-a^{1-t}b^t\overline c&0
+0&a^tb^{1-t}c
+\\ a^{1-t}b^t\overline c&0
 \end{bmatrix}V^*.
 ```
 

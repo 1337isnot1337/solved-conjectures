@@ -34,8 +34,8 @@ Here is a direct coordinate verification. From the two new path flags
 restrict at D to
 
 ```math
-\sum_{0<=v-u<Q} A_u B_v D_{v-u},
-\qquad 0<=u<d,\quad 0<=v<L.
+\sum_{0<=v-u\lt Q} A_u B_v D_{v-u},
+\qquad 0<=u\lt d,\quad 0<=v\lt L.
 ```
 
 For old sector h give its new A flag exponent 2hu+h^2, its new B flag
@@ -70,8 +70,8 @@ For z in [r], h,c in [Q], and a,b,i,j,k,l in [P], choose
 
 ```math
 \gamma^{(z)}_{kl,hc}\in\mathbb C,\qquad
-\alpha_{zh}^{a},\ \beta_{zh}^{b},\
-\xi_{zhc}^{ij}\in K.
+\alpha_{zh}^{a},\ \beta_{zh}^{b},
+\ \xi_{zhc}^{ij}\in K.
 ```
 
 Suppose, with the displayed multiplication order, that

@@ -25,8 +25,8 @@ following four-term decomposition of $`A+J`$:
 ```math
 \begin{aligned}
 R_1={}&(-x_1+x_2)(-y_1)z_0
-       +x_2(y_1+y_2)(z_0+z_1)\\
-&+x_3y_3z_0+x_4y_4(z_0+z_2)=A+J.
+       +x_2(y_1+y_2)(z_0+z_1)
+\\ &+x_3y_3z_0+x_4y_4(z_0+z_2)=A+J.
 \end{aligned}
 ```
 
@@ -35,8 +35,8 @@ Consequently the entire printed family from (10.4) satisfies
 ```math
 \begin{aligned}
 \mathcal C(t)
- &=U_XA+bJ+\sigma t\,U_XJ\\
- &=U_XR_1+
+ &=U_XA+bJ+\sigma t\,U_XJ
+ \\ &=U_XR_1+
    \bigl(bx_2+(\sigma t-1)U(x_2)\bigr)y_2z_1.
 \end{aligned}
 ```
@@ -78,9 +78,9 @@ $`c`$ the following identity is exact:
 ```math
 \begin{aligned}
 UA+cJ={}&
-\left(u_1x_1-\frac{u_2^2}{c}x_2\right)y_1z_0\\
-&+x_2\left(\frac{u_2}{c}y_1+y_2\right)(u_2z_0+cz_1)\\
-&+u_3x_3y_3z_0+u_4x_4y_4(z_0+z_2).
+\left(u_1x_1-\frac{u_2^2}{c}x_2\right)y_1z_0
+\\ &+x_2\left(\frac{u_2}{c}y_1+y_2\right)(u_2z_0+cz_1)
+\\ &+u_3x_3y_3z_0+u_4x_4y_4(z_0+z_2).
 \end{aligned}
 ```
 

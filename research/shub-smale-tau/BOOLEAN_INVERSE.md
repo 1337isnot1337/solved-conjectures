@@ -84,7 +84,7 @@ As a polynomial identity over $\mathbb Q(y)$,
 \tag{4}
 ```
 
-At every Boolean point $e$, the integer $B(e)$ belongs to $\{1,\ldots,N\}$, so $H(B(e))=0$. Equation (1) follows. The construction does not inspect or divide out the unknown cofactor of $F_N$.
+At every Boolean point $e$, the integer $B(e)$ belongs to $`\{1,\ldots,N\}`$, so $H(B(e))=0$. Equation (1) follows. The construction does not inspect or divide out the unknown cofactor of $F_N$.
 
 #### Proof: from an inverse representative to a multiple
 
@@ -104,7 +104,7 @@ which uses four division-free operations. Products use two. A permitted division
 
 also two. The denominator subcircuit contains no $X$, so $P_b$ is univariate and nonzero. At the output one obtains $U=P/Q$ and a univariate program of length at most $4t$ for $Q$, where $t$ is the original charged size.
 
-For each $j\in\{1,\ldots,N\}$, choose the unique Boolean point $e$ with $B(e)=j$. Equation (1), as an equality of rational functions, gives
+For each $`j\in\{1,\ldots,N\}`$, choose the unique Boolean point $e$ with $B(e)=j$. Equation (1), as an equality of rational functions, gives
 
 ```math
 (y-j)P(e,y)=Q(y).
@@ -172,7 +172,7 @@ Every square minor of order $r$ satisfies the Cauchy determinant identity
 
 ```math
 \det C=
-\frac{\prod_{i<j}(a_j-a_i)(b_j-b_i)}
+\frac{\prod_{i\lt j}(a_j-a_i)(b_j-b_i)}
 {\prod_{i,j}(y-a_i-b_j)}.
 \tag{7}
 ```
@@ -245,7 +245,7 @@ C_{ij}=\frac{K}{K-a_i-b_j}.
 Because $K>2N$, all entries lie between $0$ and $2$, and
 
 ```math
-0<C_{ij}-P_{ij}\le2(N/K)^N.
+0\lt C_{ij}-P_{ij}\le2(N/K)^N.
 \tag{11}
 ```
 
@@ -253,7 +253,7 @@ The Cauchy identity gives
 
 ```math
 \det C=
-\frac{K^r\prod_{i<j}(a_j-a_i)(b_j-b_i)}
+\frac{K^r\prod_{i\lt j}(a_j-a_i)(b_j-b_i)}
 {\prod_{i,j}(K-a_i-b_j)}
 \ge K^{-r(r-1)},
 \tag{12}
@@ -297,7 +297,7 @@ The concrete obstruction at this point is not the absence of all-cut ranks: (7) 
 
 ### 7.1 Boolean normal forms are already hard for polynomial-degree inputs
 
-There is a direct obstruction to a generic efficient normal-form theorem for the Boolean quotient. Consider the size-$O(m^2)$, degree-$2m$ polynomial
+There is a direct obstruction to a generic efficient normal-form theorem for the Boolean quotient. Consider the size-$`O(m^2)`$, degree-$`2m`$ polynomial
 
 ```math
 T_m(X,Z)=\prod_{i=1}^m\left(\sum_{j=1}^mX_{ij}Z_j\right).
@@ -320,7 +320,7 @@ A summand has $Z$-degree $m$ exactly when $\phi$ is surjective, hence a permutat
 \tag{14}
 ```
 
-Given a size-$S$ circuit for the normal form, tracking its homogeneous $Z$-components of degrees $0,\ldots,m$ computes (14) in $O(m^2S)$ arithmetic operations: additions are componentwise and multiplication uses truncated convolution. Setting every $Z_j=1$ then computes the permanent. This works equally for a border circuit, since taking a fixed coefficient component preserves coefficientwise approximation.
+Given a size-$`S`$ circuit for the normal form, tracking its homogeneous $Z$-components of degrees $0,\ldots,m$ computes (14) in $O(m^2S)$ arithmetic operations: additions are componentwise and multiplication uses truncated convolution. Setting every $Z_j=1$ then computes the permanent. This works equally for a border circuit, since taking a fixed coefficient component preserves coefficientwise approximation.
 
 Consequently, under the accepted permanent lower bound, Boolean normal forms of small circuits do not in general have polynomial-size circuits, even when the input degree is polynomial. A successful transfer in Section 6 must use the special inverse identity, rather than a general efficient passage to the Boolean quotient's multilinear normal form.
 
@@ -333,7 +333,7 @@ P_m(t,X)=\prod_{i=1}^m\left(\sum_{j=0}^{m-1}X_{ij}t^{b^j}\right),
 \qquad E_m=\sum_{j=0}^{m-1}b^j.
 ```
 
-The powers $t^{b^j}$ have a jointly shared circuit of size $O(m\log m)$. Hence $P_m$ has size $O(m^2+m\log m)$, and $\log\deg_t P_m=O(m\log m)$. In a term of the product, let $c_j\in\{0,\ldots,m\}$ count the rows choosing column $j$. Its exponent is $\sum_jc_jb^j$. Since every digit $c_j<b$, uniqueness of base-$b$ expansion gives
+The powers $t^{b^j}$ have a jointly shared circuit of size $O(m\log m)$. Hence $P_m$ has size $O(m^2+m\log m)$, and $\log\deg_t P_m=O(m\log m)$. In a term of the product, let $`c_j\in\{0,\ldots,m\}`$ count the rows choosing column $j$. Its exponent is $\sum_jc_jb^j$. Since every digit $c_j<b$, uniqueness of base-$`b`$ expansion gives
 
 ```math
 [t^{E_m}]P_m(t,X)=\mathop{\mathrm{per}}_m(X).
@@ -349,7 +349,7 @@ Primary source: <https://arxiv.org/html/1812.06828v1>, Theorem 1.3.
 
 ### 7.4 Low-degree division and rational truncation
 
-Dutta–Jindal–Pandey–Sinhababu, CCC 2021, Theorem 4, bounds the circuit size of a polynomial quotient $g/h$ polynomially in the input sizes and $\deg h$. Theorem 6 bounds a degree-$d$ univariate truncation of $g/h$ by a polynomial in the numerator circuit size, $\deg h$, and $\log d$, assuming $\deg g\le d$. These theorems do not make the Boolean inverse polynomial representative small: $1/(y-B)$ is not a polynomial in $X$, and a denominator encoding every integer pole has degree at least $2^n$.
+Dutta–Jindal–Pandey–Sinhababu, CCC 2021, Theorem 4, bounds the circuit size of a polynomial quotient $g/h$ polynomially in the input sizes and $\deg h$. Theorem 6 bounds a degree-$`d`$ univariate truncation of $g/h$ by a polynomial in the numerator circuit size, $\deg h$, and $\log d$, assuming $\deg g\le d$. These theorems do not make the Boolean inverse polynomial representative small: $1/(y-B)$ is not a polynomial in $X$, and a denominator encoding every integer pole has degree at least $2^n$.
 
 Primary source: <https://drops.dagstuhl.de/storage/00lipics/lipics-vol200-ccc2021/LIPIcs.CCC.2021.25/LIPIcs.CCC.2021.25.pdf>.
 

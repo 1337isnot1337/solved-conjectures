@@ -13,35 +13,35 @@ In particular, a single new minimum or maximum of arbitrary label may be adjoine
 ## Cover-sign invariance
 
 The order polynomial counts weakly order-preserving maps to $[m]$ that are strict across every strict cover. This is equivalent to requiring strictness for every comparable pair whose labels decrease: any saturated chain between such a pair must include a strict cover. Conversely all covers are comparable pairs. Sorting a map by values, with ties broken by increasing labels, gives a linear extension. Given an extension with $i$ descents, the resulting value sequences satisfy exactly $i$ strict inequalities at adjacent positions, so there are $\binom{m+|P|-1-i}{|P|}$ such sequences. In particular, with $\Omega_{P,\omega}$ this order polynomial,
-$$
+```math
  \sum_{j\ge0}\Omega_{P,\omega}(j+1)t^j
    =\frac{W_{P,\omega}(t)}{(1-t)^{|P|+1}}.
-$$
+```
 Hence the signs on the covers, not label comparisons on unrelated pairs, determine $W$. This allows us to replace the natural labeling of $Q$ by a different one and place the chain labels anew to preserve the signs at the interfaces.
 
 ## The rook-matroid mechanism
 
 Choose a decomposition of $Q$ into row chain $A$ and column chain $B$. The [Alexandersson–Jal width-two correspondence, Theorem 5.4 and Lemma 5.6](https://arxiv.org/html/2410.00127v3#S5.SS2) supplies a skew board and a canonical natural labeling of $Q$ by steps of its innermost path. Its basis-generating polynomial is
-$$
+```math
  \mathcal R(\mathbf x,\mathbf y)
  =\sum_{\sigma\in\mathcal L(Q)}
-        \prod_{a\in\operatorname{RA}(\sigma)}x_a
-        \prod_{b\in\operatorname{DT}(\sigma)}y_b .
-$$
-Here $\sigma$ is the canonical label word of an extension, $\operatorname{RA}$ consists of row-chain ascent tops with the first position treated as an ascent, and $\operatorname{DT}$ consists of descent tops, all in the column chain. The specialization $x_a=1$, $y_b=t$ gives $W_Q(t)$.
+        \prod_{a\in\mathop{\mathrm{RA}}(\sigma)}x_a
+        \prod_{b\in\mathop{\mathrm{DT}}(\sigma)}y_b .
+```
+Here $\sigma$ is the canonical label word of an extension, $`\mathop{\mathrm{RA}}`$ consists of row-chain ascent tops with the first position treated as an ascent, and $`\mathop{\mathrm{DT}}`$ consists of descent tops, all in the column chain. The specialization $x_a=1$, $y_b=t$ gives $W_Q(t)$.
 
 We use two endpoint features of the canonical labels. If there are two minima, the row minimum is canonically the smallest label. If there are two maxima, the column maximum is canonically the largest label. Indeed the two minima must be first elements of the two chains, and the two maxima last elements. For either pair, both possible orders of the consecutive pair occur along feasible linear-extension paths: choose both minima first or both maxima last. Thus the square for the pair lies in the skew region. The innermost-path labeling has row label less than column label on every square, as in the proof of Theorem 5.4. Labels increase inside both chains, so the row minimum is chronologically and numerically first in the canonical labeling and the column maximum numerically last. If the construction strips a unique extreme on the other end, padding by its empty row or column restores that extreme and does not disturb the property at the end with two choices.
 
 If the lower interface is mixed, choose the row chain to contain the minimum $v$ with a strict lower cover. With the canonical labeling just described,
-$$
- v\in\operatorname{RA}(\sigma)\quad\Longleftrightarrow\quad \sigma\text{ starts at }v,
-$$
+```math
+ v\in\mathop{\mathrm{RA}}(\sigma)\quad\Longleftrightarrow\quad \sigma\text{ starts at }v,
+```
 because there is no label smaller than $v$. Place the last label of $L$ between the labels of the two minima. Since only cover signs matter, this realizes the required interface. A descent at that interface occurs exactly when $\sigma$ starts at $v$. Thus we make the extra specialization $x_v=t$.
 
 If the upper interface is mixed, choose the column chain to contain the maximum $w$ with a strict upper cover. Then
-$$
- w\in\operatorname{DT}(\sigma)\quad\Longleftrightarrow\quad \sigma\text{ does not end at }w,
-$$
+```math
+ w\in\mathop{\mathrm{DT}}(\sigma)\quad\Longleftrightarrow\quad \sigma\text{ does not end at }w,
+```
 because its label is greatest. Place the first label of $U$ between the two maximum labels to realize the required upper interface signs. Now the descent occurs exactly when $\sigma$ ends at $w$; setting $y_w=1$ and multiplying the whole polynomial by $t$ makes precisely that change. If both interfaces are mixed, our opposite-chain condition makes both of these changes available within one matroid representation.
 
 All descents internal to $L$ and $U$, and any uniform interface descent, contribute a common monomial factor. The prescribed comparisons within each chain and at its endpoint can be maintained by choosing all its other labels successively, respecting the sign at each neighboring pair, and then ranking the resulting distinct real labels. The comparisons of non-cover pairs are irrelevant.

@@ -13,9 +13,9 @@ by two-coloring and orienting the monochromatic edges. Because a
 finite set of tuples order-embeds in a shift on $\omega$, the choice
 of infinite ground ordinal does not affect $d_k(n)$. The preceding
 orientation lemma gives
-$$
+```math
 d_k(n)\le 2^{k-1} n^{1/k}.
-$$
+```
 It also gives a refined recursive step for any real $T>0$. Given an
 induced subgraph on $n$ vertices, identify it with arcs of the lower
 shift and use the same heavy-center definition with threshold $T$.
@@ -23,25 +23,25 @@ There are at most $n/T$ heavy centers. If their actual number is $m$,
 the new orientation has outdegree at most $2\max(T,d_{k-1}(m))$.
 For $m=0$ use $d_{k-1}(0)=0$. In particular, a witnessed violation
 of an outdegree bound $2T$ forces some $m$ with
-$$
+```math
 1\le m\le n/T,\qquad d_{k-1}(m)>T. \tag{1}
-$$
+```
 
 Fix $0<\delta<1$. Set $q=1-\delta/2$. Choose an integer $N>1$ so
 large that for $n\ge N$,
-$$
+```math
  2n^{1-\delta}\le n^q,\qquad n^{q\delta}\le n^\delta/2.
-$$
+```
 For example $N=\lceil 2^{2/\delta^2}\rceil$ works.
 Taking $T=n^\delta/2$ in (1), a violation $d_k(n)>n^\delta$
 at $n\ge N$ gives a violation $d_{k-1}(m)>m^\delta$ with
 $1\le m\le n^q$.
 
 Now choose $k$ sufficiently large so that
-$$
+```math
  k\ge \max(N,2/\delta),\qquad
  q^{k-N}(2k\log 2/\delta) < \log N.
-$$
+```
 Suppose there is a violation $d_k(n)>n^\delta$. The crude bound
 with $2^{k-1}$ implies $\log n<2k\log 2/\delta$. Descend using
 (1) while the current order is at least $N$. In at most

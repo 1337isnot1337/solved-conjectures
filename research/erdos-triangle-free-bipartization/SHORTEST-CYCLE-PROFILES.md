@@ -1,6 +1,6 @@
 # Shortest-cycle walk profiles and an optimal depth of extension
 
-Let $G$ have shortest odd cycle $C_g$, labeled $v_i$ modulo odd $g\ge7$. Write $S_r=\{-r,-r+2,\ldots,r\}$ modulo $g$. Say a vertex has a full profile of depth $r$ and center $i$ if for every index in $i+S_r$ there is an $r$-step walk from that vertex to the corresponding $v_j$. Let $D_r$ be all vertices with such a profile.
+Let $G$ have shortest odd cycle $C_g$, labeled $v_i$ modulo odd $g\ge7$. Write $`S_r=\{-r,-r+2,\ldots,r\}`$ modulo $g$. Say a vertex has a full profile of depth $r$ and center $i$ if for every index in $i+S_r$ there is an $r$-step walk from that vertex to the corresponding $v_j$. Let $D_r$ be all vertices with such a profile.
 
 **Theorem.** For $0\le r\le(g-5)/2$ the centers are unique, and they extend to a labeling of all vertices by $C_g$ that respects every edge incident to $D_r$. The sets $D_r$ are nested. If an exterior vertex has neighbors in two different center classes of $D_r$, it has a full profile of depth $r+1$ with the intervening center. The depth bound for preserving all incident edges is best possible, for a specified shortest cycle.
 
@@ -13,19 +13,19 @@ Any walk of length $s<g$ in $G$ between original cycle vertices $v_a,v_b$ requir
 For any $j<g-1$, $S_j$ is a proper cyclic interval of $j+1$ consecutive labels in the order with step two. If an interval shifted by $t$ lies in another such proper interval, it cannot wrap through the latter's missing labels. For example,
 - $t+S_j\subseteq S_j$ forces $t=0$;
 - $t+S_j\subseteq S_{j+1}$ forces $t=\pm1$;
-- $t+S_j\subseteq S_{j+2}$ forces $t\in\{-2,0,2\}$.
+- $t+S_j\subseteq S_{j+2}$ forces $`t\in\{-2,0,2\}`$.
 
 In each example, the larger set must be proper. The allowed shifts follow by comparing the two starting indices and counting possible placements inside the larger interval. Also $S_r-S_s=S_{r+s}$ by adding the original integer progressions and then reducing modulo $g$.
 
 ## Full profiles extend
 
-If one vertex had two depth-$r$ centers $i,j$, concatenate its two walks in either order. The short-walk test gives $j-i+S_{2r}\subseteq S_{2r}$, so $i=j$. Extending walks by steps along the original cycle shows that a full profile remains full at larger depths with the same center whenever uniqueness applies.
+If one vertex had two depth-$`r`$ centers $i,j$, concatenate its two walks in either order. The short-walk test gives $j-i+S_{2r}\subseteq S_{2r}$, so $i=j$. Extending walks by steps along the original cycle shows that a full profile remains full at larger depths with the same center whenever uniqueness applies.
 
 For an edge between centers $i,j$ of $D_r$, the short-walk test for concatenation through the edge gives $j-i+S_{2r}\subseteq S_{2r+1}$; hence $i,j$ are adjacent. For any vertex $x$ with neighbors in center classes $i,j$ of $D_r$, concatenate through $x$ instead. This yields $j-i+S_{2r}\subseteq S_{2r+2}$, hence $j-i\in S_2$. The set $S_{2r+2}$ is proper under the stated bound on $r$. Thus all distinct labels on the $D_r$-neighbors of $x$ are pairwise at distance two. At most two distinct labels can occur, since the step-two cycle on $g$ labels has no triangle. Any such set fits within one open neighborhood of $C_g$. Label $x$ by a common neighbor, or choose any label when it has no $D_r$-neighbors. This extends over every incident edge. If the neighbor set contains both $i-1$ and $i+1$, prepend the edge from $x$ to walks from each neighbor. Their root labels together give $i+S_{r+1}$, proving the growth criterion.
 
 ## Sharpness at the next depth
 
-Put $r=(g-3)/2$. Start with a cycle $C_g$. Choose two centers $i,j$ with $j-i\notin S_2$. Add a new vertex $x$ and a private internally disjoint length-$r$ path from $x$ to each root in $i+S_r$. Do the same with a disjoint second fan at $z$ and $j+S_r$. Finally add one vertex $y$ with edges to $x,z$ only.
+Put $r=(g-3)/2$. Start with a cycle $C_g$. Choose two centers $i,j$ with $j-i\notin S_2$. Add a new vertex $x$ and a private internally disjoint length-$`r`$ path from $x$ to each root in $i+S_r$. Do the same with a disjoint second fan at $z$ and $j+S_r$. Finally add one vertex $y$ with edges to $x,z$ only.
 
 The graph has odd girth $g$. A cycle traversing one fan between its root endpoints uses $2r=g-3$ edges. This is even. The odd root arc is at least three because the two root labels differ in $S_{2r}$, so the combined odd cycle has length at least $g$. A cycle with at least two fan traversals has length at least $4r=2g-6>g$. A cycle through $y$ has at least $2r+2=g-1$ edges in its segment through the two fans, and if odd has length at least $g$. Other cycles stay on the original cycle. The two fan vertices have the stated full profiles. Their centers are still unique since $S_{2r}$ is proper. But no label of $C_g$ is adjacent to both $i$ and $j$, so their labels cannot both extend over the edges incident to $y$.
 
@@ -54,7 +54,7 @@ $
 $
 If a class has zero mass this already suffices. If some class mass is at most $1/(2g)$, the product of class masses relative to its balanced value $g^{-g}$ is at most $\tfrac12 e^{1/2}$. To see it, fix the small mass, maximize the other masses at equality, and note that the resulting bound increases up to mass $1/g$. If some class mass is at least $2/g$, the analogous bound is $2/e$, since the same one-variable product decreases after $1/g$. Thus either imbalance gives $(\prod_i P_i)^{1/g}\le g^{-2}\exp(-(\log4-1)/g)$. Its gap below $1/g^2$ is greater than $1/(10g^3)$: use $1-e^{-x}\ge x/2$ for $0\le x\le1$ and $\log4-1>1/5$. This more than pays $\nu^2/4$ in (7).
 
-It remains to treat $1/(2g)\le s_i\le2/g$ for all labels. Put $c_j=\mu(D_r\cap\{\text{label }j\})$, so $c_j\ge s_j-\nu\ge1/(3g)$. Every weak vertex with label $i$ has an entire adjacent $D_r$ class of label $j$ missing from its neighborhood. Choose one such class. Those missing pairs, with exactly one rooted endpoint, account for at least
+It remains to treat $1/(2g)\le s_i\le2/g$ for all labels. Put $`c_j=\mu(D_r\cap\{\text{label }j\})`$, so $c_j\ge s_j-\nu\ge1/(3g)$. Every weak vertex with label $i$ has an entire adjacent $D_r$ class of label $j$ missing from its neighborhood. Choose one such class. Those missing pairs, with exactly one rooted endpoint, account for at least
 $
 \sum_i M_i/P_i\ \ge\ (1/(3g))Q/P_{\max}.
 $

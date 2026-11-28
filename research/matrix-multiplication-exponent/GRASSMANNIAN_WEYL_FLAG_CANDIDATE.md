@@ -20,8 +20,8 @@ Weyl algebra when inverses are needed. Define the s by s matrix
 
 ```math
 E=\begin{pmatrix}
-\ell I_r-PX&P\\
-X(\ell I_r-PX)&XP
+\ell I_r-PX&P
+\\ X(\ell I_r-PX)&XP
 \end{pmatrix}
  =\begin{pmatrix}I_r\\X\end{pmatrix}
    \begin{pmatrix}\ell I_r-PX&P\end{pmatrix}.                \tag{1}

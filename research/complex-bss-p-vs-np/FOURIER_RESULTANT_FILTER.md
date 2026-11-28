@@ -39,9 +39,9 @@ Adopt the approximate permanent circuit lower bound of the pinned Anthropic [VP 
 **Derivation including approximation parameters.** Suppose a Laurent-series arithmetic circuit of size L computes P_N(A)+εU(A,ε), where the output is regular in ε. Copy the circuit three times, specialize all non-grid entries to zero, apply ρ_j, and scale the grid variables by t. In all its Laurent-series scalar constants, substitute ε=t^{s+1}. The final output error then has t-order at least s+1. Take the character-weighted sum and multiply by t^{-s}/κ. Theorem 1 shows that the resulting circuit over C((t)) has output H_m(A)+O(t) and at most 3L+O(N^3) gates. The substitution of a Laurent series in ε by t^{s+1} remains a Laurent series in t; no degree bound on the original output is used. BCJS Theorem 3.2 gives an explicit p-projection from H_m to per_k, with k=Ω(m) and m=O(k), so
 
 ```math
-\overline S(\operatorname{per}_k)
-\le3\overline S(P_N)+\operatorname{poly}(N)
-\le3\overline S(R_N)+\operatorname{poly}(N).
+\overline S(\mathop{\mathrm{per}}_k)
+\le3\overline S(P_N)+\mathop{\mathrm{poly}}(N)
+\le3\overline S(R_N)+\mathop{\mathrm{poly}}(N).
 ```
 
 For each large N choose the largest m=3^r+1 with 5m²≤N, so m=Θ(√N) and k=Θ(m). The imported permanent bound implies the stated resultant bound, after absorbing polynomial overhead. The VNP-hardness of the coefficient family and existence of the resultant specialization are from BCJS; the additional three-evaluation character filter and quantitative border-complexity deduction are proved above. This is a consequence of imported results, not a new proof of VP != VNP.

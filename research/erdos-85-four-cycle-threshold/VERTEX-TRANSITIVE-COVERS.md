@@ -22,18 +22,18 @@ For any nonidentity $g$ in the center of $P$, if $x$ were adjacent to $gx$, then
 Choose one lift of each vertex of $Q$ and label each quotient edge by the unique displacement in $K$ between those choices along a lifted edge. Use additive notation for $K$. The label in the reverse direction is the same because all elements have order at most two.
 
 For distinct $x,y\in V(Q)$ the length-two paths from $x$ to $y$ have pairwise distinct total labels: equal labels give two common neighbors to the same pair of lifted vertices. Thus their number $\lambda_{xy}=|N_Q(x)\cap N_Q(y)|$ is at most $m$. For fixed $x$ it sums over $y\ne x$ to $q(q-1)$, so
-$$
+```math
 \sum_{y\ne x}(m-\lambda_{xy})
 =m(q^2/m-1)-q(q-1)=q-m.
-$$
+```
 
-For a nontrivial real character $\chi:K\to\{1,-1\}$, let $S_\chi$ be the adjacency of $Q$ with each edge weighted by $\chi$ of its label. Identifying a function on $Q$ with the lifted function that changes by the factor $\chi(a)$ under displacement $a$ gives the restriction of the adjacency of $G$ as $S_\chi$. Its square has diagonal $q$. For $x\ne y$, the entry is the sum of $\chi$ on the path labels, a subset of $K$. Since $\sum_{a\in K}\chi(a)=0$, the absolute value is bounded by the number $m-\lambda_{xy}$ of omitted labels. Thus $S_\chi^2-qI$ has absolute row sums at most $q-m$. It is symmetric, so its eigenvalues lie in $[-(q-m),q-m]$, which gives the claimed bound.
+For a nontrivial real character $`\chi:K\to\{1,-1\}`$, let $S_\chi$ be the adjacency of $Q$ with each edge weighted by $\chi$ of its label. Identifying a function on $Q$ with the lifted function that changes by the factor $\chi(a)$ under displacement $a$ gives the restriction of the adjacency of $G$ as $S_\chi$. Its square has diagonal $q$. For $x\ne y$, the entry is the sum of $\chi$ on the path labels, a subset of $K$. Since $\sum_{a\in K}\chi(a)=0$, the absolute value is bounded by the number $m-\lambda_{xy}$ of omitted labels. Thus $S_\chi^2-qI$ has absolute row sums at most $q-m$. It is symmetric, so its eigenvalues lie in $[-(q-m),q-m]$, which gives the claimed bound.
 
 ### The leave and triangle voltages
 
 Two distinct vertices $v,gv$ of one fiber cannot have a common neighbor: if they had one, applying the involution $g$ would give another, distinct by freeness. Hence the fiber is a clique in the leave. In particular any leave component is a union of full fibers.
 
-In $G$ every vertex has $q(q-1)$ distinct other vertices reached by nonreturning walks of length two. It therefore has just $q-1$ distinct other vertices with no common neighbor, so for two distinct nonadjacent vertices $v,w$ at least one of the $q$ neighbors of $v$ has a common neighbor with $w$. This gives a length-three walk from $v$ to $w$. For $w=v$ there is also at least one length-three closed walk: among the $q$ neighbors of $v$, at least one has a common neighbor with $v$, by the same count. Set $w$ to be the displacement-$a$ lift of the same quotient vertex. No within-fiber edges means the projected walk of length three is a triangle, and its voltage is $a$. Different voltages give different unoriented quotient triangles because reversal does not change the voltage.
+In $G$ every vertex has $q(q-1)$ distinct other vertices reached by nonreturning walks of length two. It therefore has just $q-1$ distinct other vertices with no common neighbor, so for two distinct nonadjacent vertices $v,w$ at least one of the $q$ neighbors of $v$ has a common neighbor with $w$. This gives a length-three walk from $v$ to $w$. For $w=v$ there is also at least one length-three closed walk: among the $q$ neighbors of $v$, at least one has a common neighbor with $v$, by the same count. Set $w$ to be the displacement-$`a`$ lift of the same quotient vertex. No within-fiber edges means the projected walk of length three is a triangle, and its voltage is $a$. Different voltages give different unoriented quotient triangles because reversal does not change the voltage.
 
 ### Every transitive 2-group has many long-cycle neighbor moves
 

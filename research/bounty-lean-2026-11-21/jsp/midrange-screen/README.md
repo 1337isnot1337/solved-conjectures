@@ -35,8 +35,8 @@ The exact corrected classification, for $`n\ge2`$, is
 ```math
 \alpha_N=
 \begin{cases}
-\pi(1-2/(2n+1)),&2^n<N\le2^n+2^{n-2},\\
-\pi(1-1/(n+1)),&2^n+2^{n-2}<N\le2^{n+1}.
+\pi(1-2/(2n+1)),&2^n\lt N\le2^n+2^{n-2},
+\\ \pi(1-1/(n+1)),&2^n+2^{n-2}\lt N\le2^{n+1}.
 \end{cases}
 ```
 

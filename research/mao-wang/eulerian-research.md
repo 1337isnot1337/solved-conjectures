@@ -7,7 +7,7 @@ Date: 2026-11-20.
 
 ## Exact target
 
-Use the source convention $A(0,0)=1$ and $A(n,j)=\langle n,j-1\rangle$ for $n\geq1$. Thus the ordinary row is $xA_n^{\mathrm{std}}(x)$, not the degree-$n-1$ Eulerian polynomial.
+Use the source convention $A(0,0)=1$ and $A(n,j)=\langle n,j-1\rangle$ for $n\geq1$. Thus the ordinary row is $xA_n^{\mathrm{std}}(x)$, not the degree-$`n-1`$ Eulerian polynomial.
 
 The required row of the ordinary matrix square is
 
@@ -49,7 +49,7 @@ H_j(u,v)=\sum_{r=0}^{j-1}\langle j,r\rangle
 u^{j-1-r}v^r
 ```
 
-and the degree-$n-1$ three-variable polynomial
+and the degree-$`n-1`$ three-variable polynomial
 
 ```math
 R_n(u,v,w)=

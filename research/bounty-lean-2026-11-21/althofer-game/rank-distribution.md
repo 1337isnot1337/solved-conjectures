@@ -5,8 +5,8 @@ In [Althöfer’s game](https://althofer.de/collatz-prizes.html), let $`R(n)`$ b
 **Theorem.** Fix $`j\ge1`$, $`q=3^p`$ with $`p\ge0`$, and a residue $`a\bmod q`$. Write $`L=\log_2 X`$ and $`c_j=(4/9)^{j-1}/j!`$. Among positive odd $`n\le X`$ with $`n\equiv a\bmod q`$, the counts of starts of each exact rank are
 ```math
 \begin{aligned}
-\#\{n:R(n)=2j-1\}&=\frac{c_j}{q}L^j+O_{j,q}((1+L)^{j-1}),\\
-\#\{n:R(n)=2j\}&=\frac{2c_j}{3q}L^j+O_{j,q}((1+L)^{j-1}).
+\#\{n:R(n)=2j-1\}&=\frac{c_j}{q}L^j+O_{j,q}((1+L)^{j-1}),
+\\ \#\{n:R(n)=2j\}&=\frac{2c_j}{3q}L^j+O_{j,q}((1+L)^{j-1}).
 \end{aligned}
 ```
 

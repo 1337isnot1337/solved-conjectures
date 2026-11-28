@@ -98,8 +98,8 @@ Grouping (1) and (2) by $`D`$ now yields
 \begin{aligned}
 \widetilde H_\mu
 &=\sum_{D\subseteq U}\left(\prod_{u\in D}t_{\ell(u)}\right)
-q^{-a(D)}\mathop{\mathrm{LLT}}_{R_\mu(D)},\\
-H_\mu
+q^{-a(D)}\mathop{\mathrm{LLT}}_{R_\mu(D)},
+\\ H_\mu
 &=\sum_{D\subseteq U}\left(\prod_{u\in U\setminus D}t_{\ell(u)}\right)
 q^{-a(D)}\mathop{\mathrm{LLT}}_{R_\mu(D)}.
 \end{aligned}

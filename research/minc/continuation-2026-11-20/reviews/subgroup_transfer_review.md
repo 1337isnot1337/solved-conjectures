@@ -44,7 +44,7 @@ chi-isotypic subspace of the restricted representation. Fourier inversion gives
 
 ```math
 a_A(h)=\frac1N\sum_\lambda d_\lambda
-\operatorname{tr}(B_\lambda\rho_\lambda(h^{-1})),
+\mathop{\mathrm{tr}}(B_\lambda\rho_\lambda(h^{-1})),
 ```
 
 and therefore the exact normalization is
@@ -52,7 +52,7 @@ and therefore the exact normalization is
 ```math
 g_{H,\chi}(A):=\sum_{h\in H}\chi(h)a_A(h)
 =\frac1m\sum_\lambda d_\lambda
-\operatorname{tr}(B_\lambda P_{\lambda,\chi}).
+\mathop{\mathrm{tr}}(B_\lambda P_{\lambda,\chi}).
 \tag{1}
 ```
 
@@ -74,11 +74,11 @@ Then the raw character sum and its normalization are respectively
 
 ```math
 g_{H,\chi}(A)=\frac1{m\ell}\sum_\lambda d_\lambda
-\operatorname{tr}(B_\lambda\Pi_{\lambda,\chi}),
+\mathop{\mathrm{tr}}(B_\lambda\Pi_{\lambda,\chi}),
 \qquad
 \frac{g_{H,\chi}(A)}\ell
 =\frac1{m\ell^2}\sum_\lambda d_\lambda
-\operatorname{tr}(B_\lambda\Pi_{\lambda,\chi}).
+\mathop{\mathrm{tr}}(B_\lambda\Pi_{\lambda,\chi}).
 ```
 
 The unscaled character average is a projection only when ell=1.
@@ -94,7 +94,7 @@ projection. A large eigenvalue in an unrelated direction is insufficient.
 For H=AGL(1,5) and the restricted sign character, the checked induction is
 
 ```math
-\operatorname{Ind}_{H}^{S_5}\operatorname{sgn}
+\mathop{\mathrm{Ind}}_{H}^{S_5}\mathop{\mathrm{sgn}}
 =\chi^{(1^5)}+\chi^{(3,2)}.
 ```
 
@@ -102,7 +102,7 @@ If w is a unit vector spanning its sign line in the (3,2) representation,
 equation (1) gives, without a rank assumption,
 
 ```math
-g_{H,\operatorname{sgn}}(A)
+g_{H,\mathop{\mathrm{sgn}}}(A)
 =\frac{\det A+5w^*B_{(3,2)}(A)w}{6}.
 \tag{2}
 ```
@@ -128,9 +128,9 @@ Its permanent is 814016640. The independent checker also computes the
 (3,2) block's first two moments from the actions on pairs and points:
 
 ```math
-\operatorname{tr} B_{(3,2)}=1398896000,
+\mathop{\mathrm{tr}} B_{(3,2)}=1398896000,
 \qquad
-\operatorname{tr} B_{(3,2)}^2=1011345957677056000.
+\mathop{\mathrm{tr}} B_{(3,2)}^2=1011345957677056000.
 ```
 
 The rank bound is two. These moments independently certify its nonzero
@@ -157,14 +157,14 @@ transitivity, the six conjugates, and the character identity at all 720
 elements of S6:
 
 ```math
-\operatorname{Ind}_{H}^{S_6}\operatorname{sgn}
+\mathop{\mathrm{Ind}}_{H}^{S_6}\mathop{\mathrm{sgn}}
 =\chi^{(1^6)}+\chi^{(3,3)}.
 ```
 
 Consequently
 
 ```math
-g_{H,\operatorname{sgn}}(A)
+g_{H,\mathop{\mathrm{sgn}}}(A)
 =\frac{\det A+5w^*B_{(3,3)}(A)w}{6}.
 \tag{3}
 ```
@@ -204,7 +204,7 @@ multiplicities 1,0,0,1 for the two-row partitions
 (7),(6,1),(5,2),(4,3). Thus for rank-two A,
 
 ```math
-g_H(A)=\frac{\operatorname{per}A+14w^*B_{(4,3)}(A)w}{30}.
+g_H(A)=\frac{\mathop{\mathrm{per}}A+14w^*B_{(4,3)}(A)w}{30}.
 \tag{4}
 ```
 
@@ -230,8 +230,8 @@ character of degree ell, and let K be the stabilizer in H of the appended
 index. Define
 
 ```math
-\delta=\ell\operatorname{per}A-g_{K,\chi|_K}(A),\qquad
-D_{ji}=\operatorname{per}A(i\mid j),
+\delta=\ell\mathop{\mathrm{per}}A-g_{K,\chi|_K}(A),\qquad
+D_{ji}=\mathop{\mathrm{per}}A(i\mid j),
 ```
 
 and
@@ -249,7 +249,7 @@ i,j with g(i)=n+1 and g(n+1)=j. Its two new Gram factors are
 the scalars w_i^*x and x^*w_j. This gives exactly
 
 ```math
-\ell\operatorname{per}A_v-g_{H,\chi}(A_v)
+\ell\mathop{\mathrm{per}}A_v-g_{H,\chi}(A_v)
 =x^*Mx+\delta\|u\|^2,
 \qquad
 M=\delta I_r+W(\ell D-D_H)W^*.

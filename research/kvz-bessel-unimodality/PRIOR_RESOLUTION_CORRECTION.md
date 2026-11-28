@@ -9,7 +9,7 @@ The full Bessel-ratio unimodality assertion was already proved before this repos
 The primary target is the first sentence of Conjecture 1 in [arXiv:2408.01755v2](https://arxiv.org/abs/2408.01755v2), numbered Conjecture 2 in version 1. For all real orders and positive scales satisfying
 
 ```math
-\nu_1\geq\nu_2>-1,\qquad 0<a_1\leq a_2,
+\nu_1\geq\nu_2>-1,\qquad 0\lt a_1\leq a_2,
 ```
 
 the ratio

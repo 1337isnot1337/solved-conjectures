@@ -35,7 +35,7 @@ Only the first derivative bound is needed on the large tail. Convexity is used e
 Put $`L=\log2`$ and $`v(a)=e^{L/a}m(a)`$, so $`A=v-a`$. We use the elementary rational bounds
 
 ```math
-\frac{693}{1000}<L<\frac7{10},
+\frac{693}{1000}\lt L<\frac7{10},
 \qquad \pi^2<10,
 \qquad \gamma>\frac{57}{100},
 \qquad \log(3/2)<\frac{41}{100},
@@ -108,9 +108,9 @@ For $`j=1,3`$, the function $`e^{-L/a}a^{-j}`$ is increasing on $`(0,1/10]`$, be
 ```math
 \begin{aligned}
 \log(2P(a,x_0))
-&\ge a\log(2/3)-x_0-\log\Gamma(1+a)\\
-&\ge a\left(\gamma-\log(3/2)-\frac56a-\frac{x_0}{a}\right)\\
-&>a\left(\frac4{25}-\frac1{12}-\frac5{768}\right)
+&\ge a\log(2/3)-x_0-\log\Gamma(1+a)
+\\ &\ge a\left(\gamma-\log(3/2)-\frac56a-\frac{x_0}{a}\right)
+\\ &>a\left(\frac4{25}-\frac1{12}-\frac5{768}\right)
 =\frac{449a}{6400}>0.
 \end{aligned}
 ```
@@ -137,8 +137,8 @@ In particular $`a-mq>a-m>0`$ and $`e^m<2`$. Dropping the nonpositive term $`\log
 \begin{aligned}
 v'
 &\le\frac{v}{1-m/a}
-\left(g'(a)+\frac{m e^m}{a(a+1)^2}+\frac{Lm}{a^3}\right)\\
-&<\frac{2/3}{1-5/768}
+\left(g'(a)+\frac{m e^m}{a(a+1)^2}+\frac{Lm}{a^3}\right)
+\\ &<\frac{2/3}{1-5/768}
 \left(\frac56+\frac{10}{768}
 +\frac7{10}\frac{125}{192}\right)
 =\frac{2000}{2289}<1.
@@ -153,7 +153,7 @@ For $`a\ge7`$, the established bounds $`m'<1`$ and $`m>a-1/3`$ imply
 
 ```math
 A'(a)
-<e^{L/a}\left(1-\frac La+\frac{L}{3a^2}\right)-1.
+\lt e^{L/a}\left(1-\frac La+\frac{L}{3a^2}\right)-1.
 \tag{6}
 ```
 
@@ -181,7 +181,7 @@ Equation (6) now yields $`A'(a)<0`$ on the entire large range.
 Let $`0<a<b<c`$. Suppose strict enclosures
 
 ```math
-\ell_t<m(t)<u_t\qquad(t=a,b,c)
+\ell_t\lt m(t)\lt u_t\qquad(t=a,b,c)
 ```
 
 have been certified. Convexity and monotonicity imply, for every real $`x\in[a,b]`$,
@@ -203,7 +203,7 @@ It is therefore sufficient to check the strict inequality
 
 ```math
 \frac{u_c-\ell_b}{c-b}
-<e^{-L/a}+\frac{L\ell_a}{b^2}.
+\lt e^{-L/a}+\frac{L\ell_a}{b^2}.
 \tag{7}
 ```
 
@@ -225,7 +225,7 @@ until $`N_i=7000000`$, followed by the extra node $`7007000`$. Set $`a_i=N_i/10^
 Each proposed median bracket has denominator $`10^{12}`$ and width at most $`4\cdot10^{-12}`$. The verifier treats all these brackets as untrusted input. At every node it proves
 
 ```math
-P(a_i,\ell_i)<\frac12<P(a_i,u_i),
+P(a_i,\ell_i)<\frac12\lt P(a_i,u_i),
 ```
 
 then checks (7) for every consecutive triple. Strict increase of $`P(a_i,x)`$ in $`x`$ turns the first pair of inequalities into a valid median bracket.

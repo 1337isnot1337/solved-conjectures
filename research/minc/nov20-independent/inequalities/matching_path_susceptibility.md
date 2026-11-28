@@ -13,7 +13,7 @@ Let $`A=(a_{ij})`$ be doubly stochastic of order $`m`$. Give edge $`ij`$
 of its bipartite support weight $`w_{ij}=za_{ij}`$, with $`z>0`$.
 Write $`Z(G)`$ for the matching partition function. Under the matching
 measure, let $`K`$ be matching size, let $`\mu=\mathbb E K`$, and let
-$`V=\operatorname{Var}K`$.
+$`V=\mathop{\mathrm{Var}}K`$.
 
 Let $`X_i`$ and $`Y_j`$ indicate that the two respective vertices are
 unmatched. Every matching leaves the same number of vertices unmatched
@@ -22,7 +22,7 @@ in the two parts, so
 ~~~math
 m-K=\sum_iX_i=\sum_jY_j,
 \qquad
-V=\sum_{i,j}\operatorname{Cov}(X_i,Y_j).                      \tag{1}
+V=\sum_{i,j}\mathop{\mathrm{Cov}}(X_i,Y_j).                      \tag{1}
 ~~~
 
 The weighted Christoffel-Darboux identity, proved by alternating-path
@@ -31,7 +31,7 @@ switching in the repository's
 says
 
 ~~~math
-\operatorname{Cov}(X_i,Y_j)
+\mathop{\mathrm{Cov}}(X_i,Y_j)
 =\sum_{P:i\leadsto j}
 \left(\prod_{e\in P}w_e\right)
 \left(\frac{Z(G-V(P))}{Z(G)}\right)^2.                       \tag{2}
@@ -43,8 +43,8 @@ Summing (2) gives the exact positive expansion
 
 ~~~math
 \boxed{\quad
-V=\sum_{\substack{P\ \text{simple}\\
-                  P:\text{left}\leadsto\text{right}}}
+V=\sum_{\substack{P\ \text{simple}
+                  \\ P:\text{left}\leadsto\text{right}}}
 z^{|P|}\left(\prod_{e\in P}a_e\right)
 \left(\frac{Z(G-V(P))}{Z(G)}\right)^2.
 \quad}                                                       \tag{3}
@@ -99,7 +99,7 @@ The previous monotonicity theorem gives the strict lower bound
 
 ~~~math
 q>t(z):=\frac{\sqrt{1+4z}-1}{\sqrt{1+4z}+1}
-\qquad(0<z\le2).
+\qquad(0\lt z\le2).
 ~~~
 
 It follows that the unresolved part of (5) is contained in the interval

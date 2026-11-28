@@ -108,7 +108,7 @@ total degrees. Its restriction to left degree s and right degree j,
 where s+j=k, is
 
 ```math
-\operatorname{Sym}^{s}(B)\otimes P_j(S).         \tag{4}
+\mathop{\mathrm{Sym}}^{s}(B)\otimes P_j(S).         \tag{4}
 ```
 
 Here Sym^s(B) means the ordinary coefficient action on homogeneous

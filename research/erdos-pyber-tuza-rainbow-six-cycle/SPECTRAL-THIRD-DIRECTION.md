@@ -3,7 +3,9 @@
 This is a stability consequence of the [two-dimensional operator classification](TWO-DIMENSIONAL-OPERATORS.md) and the [finite parity repair](PARITY-CUT.md). It applies to the original finite $C_6$ question of [Erdős #811](https://www.erdosproblems.com/811), not only to exact finite-rank models.
 
 For an exact balanced finite six-coloring or balanced graphon, use the centered normalized operators $B_i$ and let
-$$Q=\sum_{i=1}^6 B_i^2.$$
+```math
+Q=\sum_{i=1}^6 B_i^2.
+```
 Write $\lambda_3(Q)$ for the third-largest eigenvalue, with zeros added when necessary. For a finite coloring put weight $1/6$ of each color on the diagonal, making the step graphon exactly balanced.
 
 **Theorem.** There exist absolute $\epsilon>0$ and $n_0$ such that any exact balanced six-coloring on $n\ge n_0$ vertices with $\lambda_3(Q)<\epsilon$ has a rainbow six-cycle. Equivalently, sufficiently large counterexamples, if they exist, have three independent nontrivial collective spectral directions above a fixed threshold.

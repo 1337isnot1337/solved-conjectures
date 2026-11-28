@@ -36,7 +36,7 @@ There is a nonempty real open box U and a uniform bound on the witness norms for
 Shrink U to a bounded box with closure still in this region. Since f is bounded there, choose a sufficiently large radius R so that every x in U has a true witness with
 
 ```math
-g_0(y,u,v)=y^2+\sum_a(u_a^2+v_a^2)<R^2.
+g_0(y,u,v)=y^2+\sum_a(u_a^2+v_a^2)\lt R^2.
 ```
 
 Any radius from a sufficiently large open interval works, leaving room for the generic choice below. Put N=2p+1 for the number of real optimization variables w=(y,u,v).

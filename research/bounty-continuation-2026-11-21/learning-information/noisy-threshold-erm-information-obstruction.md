@@ -95,7 +95,7 @@ Sort the selected training features as $`X_{(1)}<\cdots<X_{(n)}`$. Let $`A_i=2Y_
 Put $`S_0=0`$ and $`S_j=\sum_{i=1}^jB_i`$. The perturbed threshold loss differs from $`S_j`$ by a constant. Let $`J`$ be the earliest index minimizing $`S_j`$ over $`0\le j\le n`$. Then the output is
 
 ```math
-W=X_{(J+1)}\quad(J<n),\qquad W=\infty\quad(J=n).
+W=X_{(J+1)}\quad(J\lt n),\qquad W=\infty\quad(J=n).
 ```
 
 The ghost sample is independent of the learner output and its original labels have mean zero. Therefore

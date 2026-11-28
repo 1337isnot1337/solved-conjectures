@@ -8,7 +8,7 @@ J=\{i:1\le i\le t,\ 1\le r+s-i\le t\},\qquad |J|\ge\lambda t.
 ```
 Require only
 ```math
-\sum_{\substack{t^\delta<p<t\\p\nmid(n+r)(n+s)}}\frac1p\le \frac1{256}.
+\sum_{\substack{t^\delta\lt p\lt t\\p\nmid(n+r)(n+s)}}\frac1p\le \frac1{256}.
 ```
 In particular, for centers symmetric about the midpoint of the interval, $`J`$ is the entire interval. The starting residue at every small prime is free.
 

@@ -7,13 +7,13 @@ Research checkpoint: 20 November 2026. This is an exact, independently reproduci
 The open [Friedland–Minc monotonicity-toward-the-boundary problem](https://yair-lavi.com/mincs-list/problem-8/index.html) asks for the boundary matrices `A` in the doubly stochastic polytope for which
 
 ```math
-F_A(t)=\operatorname{per}((1-t)J_n+tA),\quad 0\le t\le1,
+F_A(t)=\mathop{\mathrm{per}}((1-t)J_n+tA),\quad 0\le t\le1,
 ```
 
 is increasing. A known necessary condition is
 
 ```math
-\sigma_{n-1}(A)\le n^2\operatorname{per}(A),
+\sigma_{n-1}(A)\le n^2\mathop{\mathrm{per}}(A),
 ```
 
 equivalent to `F_A'(1)>=0`. Numerical experiments on ordinary convex combinations of permutation matrices suggested that this endpoint test might suffice, but **it does not**.
@@ -36,13 +36,13 @@ A=C\oplus C\oplus I_3\in\Omega_{113}.
 It has many zero entries and is doubly stochastic. Its endpoint derivative is positive, but its derivative at the rational interior point `t=999/1000` is negative:
 
 ```math
-\boxed{\frac{F'_A(1)}{113\operatorname{per}(A)}=\frac{421}{102152}>0},
+\boxed{\frac{F'_A(1)}{113\mathop{\mathrm{per}}(A)}=\frac{421}{102152}>0},
 ```
 
 while
 
 ```math
-\boxed{-\frac1{500}<\frac{F'_A(999/1000)}{113\operatorname{per}(A)}<-\frac1{1000}<0.}
+\boxed{-\frac1{500}<\frac{F'_A(999/1000)}{113\mathop{\mathrm{per}}(A)}<-\frac1{1000}<0.}
 ```
 
 **Both signs are established by exact integer arithmetic**, not by floating-point optimization. Therefore positivity of the endpoint derivative is insufficient to characterize the monotone boundary directions in Problem 8. In fact, by continuity, the derivative has at least two zeros in `(0,1)`: at `999/1000` it is negative, while at the endpoint it is positive and near `t=0` it is positive (the standard positive second derivative at `J_n` for `A!=J_n`). This is reentrant monotonicity.
@@ -66,8 +66,8 @@ Exact convolution yields
 
 ```math
 \begin{aligned}
-\operatorname{per}(B)&=280159925619463815168,\\
-\sigma_{112}(B)&=1187539558049736390868992.
+\mathop{\mathrm{per}}(B)&=280159925619463815168,
+\\ \sigma_{112}(B)&=1187539558049736390868992.
 \end{aligned}
 ```
 
@@ -98,8 +98,8 @@ k a^{k-1}(b-a)^{n-k}-(n-k)a^k(b-a)^{n-k-1}
 with the first summand zero for `k=0` and the second zero for `k=n`. Then
 
 ```math
-\frac{F'_A(a/b)}{n\operatorname{per}(A)}
-=\frac{S(a,b)}{n^{n+1}\operatorname{per}(B)b^{n-1}}.
+\frac{F'_A(a/b)}{n\mathop{\mathrm{per}}(A)}
+=\frac{S(a,b)}{n^{n+1}\mathop{\mathrm{per}}(B)b^{n-1}}.
 \tag{3}
 ```
 

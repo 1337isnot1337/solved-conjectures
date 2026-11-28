@@ -69,8 +69,8 @@ The factor is $`j(j-1)`$, because the derivative chooses an ordered pair of dist
 |\langle w_j,(D\otimes D\otimes X^{\otimes(j-2)})w_j\rangle|
 &\leq
 \|(D^{\mathsf T}\otimes I)w_j\|
-\|(I\otimes D\otimes I)w_j\|\\
-&=
+\|(I\otimes D\otimes I)w_j\|
+\\ &=
 \frac{\sigma_j(Q)}{n-1}\|D\|_F^2.
 \end{aligned}
 \tag{4}

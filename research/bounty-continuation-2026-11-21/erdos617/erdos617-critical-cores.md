@@ -124,7 +124,7 @@ For `r>=6`, any hypothetical counterexample has a sparsest color graph with a mi
 ```math
 4\le a\le r-1,\qquad |H|=ar+1,\qquad
 \delta(H)\ge r,\qquad
-\frac{r|H|}{2}<e(H)\le\frac{ar(a+r-2)}2+a.
+\frac{r|H|}{2}\lt e(H)\le\frac{ar(a+r-2)}2+a.
 \tag{4}
 ```
 

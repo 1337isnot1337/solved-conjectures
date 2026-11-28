@@ -66,9 +66,9 @@ Here is an exact restriction attaining (2). Label the q source h sectors by $`h=
 ```math
 \begin{aligned}
 A_{(g,t);a,k}\longmapsto A_{I_g(a);t,k},\qquad
-B_{(g,t);b,\ell}\longmapsto B_{J_g(b);t,\ell},\\
-C_{(g,t);a',b'}\longmapsto C_{I_g(a'),J_g(b')},\\
-D_{(g,t);a',b';a,k;b,\ell}
+B_{(g,t);b,\ell}\longmapsto B_{J_g(b);t,\ell},
+\\ C_{(g,t);a',b'}\longmapsto C_{I_g(a'),J_g(b')},
+\\ D_{(g,t);a',b';a,k;b,\ell}
 \longmapsto
  \delta_{a,a'}\delta_{b,b'}\delta_{k,\ell}
  D_{I_g(a),J_g(b)}.

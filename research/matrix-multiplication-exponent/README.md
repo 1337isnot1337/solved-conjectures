@@ -4,7 +4,7 @@
 
 ## The tensor question
 
-Write $W_{ij}(q)$ for the dimension-$q$ identity tensor shared by parties $i,j$, with one-dimensional factors elsewhere. Regrouping the three wires of a triangle by party gives the trilinear matrix multiplication tensor $M_q$. For a normalized spectral point $\phi$ on complex three-tensors, set $d_{ij}=\log_2\phi(W_{ij}(2))$. Such a point is additive on direct sums, multiplicative on tensor products, monotone under restriction, and takes the value $r$ on the full diagonal tensor of size $r$. Multiplicativity and Strassen's duality give
+Write $W_{ij}(q)$ for the dimension-$`q`$ identity tensor shared by parties $i,j$, with one-dimensional factors elsewhere. Regrouping the three wires of a triangle by party gives the trilinear matrix multiplication tensor $M_q$. For a normalized spectral point $\phi$ on complex three-tensors, set $d_{ij}=\log_2\phi(W_{ij}(2))$. Such a point is additive on direct sums, multiplicative on tensor products, monotone under restriction, and takes the value $r$ on the full diagonal tensor of size $r$. Multiplicativity and Strassen's duality give
 
 ```math
 \omega_{\mathbb C}=\max_\phi\log_2\phi(M_2)=\max_\phi(d_{12}+d_{23}+d_{31}).
@@ -34,7 +34,7 @@ Here $\Delta(P)$ is the probability simplex. The maximum exists by compactness. 
 
 Items 2–4 are the tree bound, the restriction of the logarithmic extension bound to units and wires, and the metric crossing bound used here. The tensor extension in the source quantifies over all tensors. [VP versus VNP, Lemma A.2, Propositions A.7–A.8 and B.3, Theorem C.1, pinned paper and formalization](https://github.com/anthropics/formal-math/tree/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp)
 
-**Proof.** Realize the three side lengths by a Euclidean triangle, allowing collinear or coincident vertices. Let $H$ be its convex hull. Copositivity on the original labels is equivalent to $g(\{1,2,3\})\le1$ by normalizing a nonzero nonnegative vector to sum to one. For any point $x\in H$ choose a distribution on the original vertices whose mean is $x$. Draw $X,X'$ independently from any probability distribution on a finite labeled subset of $H$. Replace them independently by random vertices $V,V'$ using these distributions, even when $X=X'$. Conditional Jensen gives
+**Proof.** Realize the three side lengths by a Euclidean triangle, allowing collinear or coincident vertices. Let $H$ be its convex hull. Copositivity on the original labels is equivalent to $`g(\{1,2,3\})\le1`$ by normalizing a nonzero nonnegative vector to sum to one. For any point $x\in H$ choose a distribution on the original vertices whose mean is $x$. Draw $X,X'$ independently from any probability distribution on a finite labeled subset of $H$. Replace them independently by random vertices $V,V'$ using these distributions, even when $X=X'$. Conditional Jensen gives
 
 ```math
  \mathbb E\lVert X-X'\rVert\le\mathbb E\lVert V-V'\rVert.
@@ -50,8 +50,8 @@ For crossing let the endpoints be $x,v,y,u$ and the hubs $o,o',w,w'$. For $p,q\g
 
 ```math
 \begin{aligned}
- L &\le p[d(x,o)+d(v,o')]+q[d(y,o)+d(u,o')]+\lVert\xi+\eta\rVert d(o,o'),\\
- L &\le p[d(x,w)+d(v,w')]+q[d(u,w)+d(y,w')]+\lVert\xi-\eta\rVert d(w,w').
+ L &\le p[d(x,o)+d(v,o')]+q[d(y,o)+d(u,o')]+\lVert\xi+\eta\rVert d(o,o'),
+ \\ L &\le p[d(x,w)+d(v,w')]+q[d(u,w)+d(y,w')]+\lVert\xi-\eta\rVert d(w,w').
 \end{aligned}
 ```
 

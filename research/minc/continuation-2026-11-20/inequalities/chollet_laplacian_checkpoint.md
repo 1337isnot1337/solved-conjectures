@@ -5,12 +5,12 @@ remaining sufficient condition. No proof of the sufficient condition is given.
 No named conjecture is resolved by this document.
 
 The separate `chollet_projection_checkpoint.md` proves an auxiliary result in
-the region $`n\geq\operatorname{rank}(A)^2`$. This document investigates the
+the region $`n\geq\mathop{\mathrm{rank}}(A)^2`$. This document investigates the
 missing rank reduction. The inequality under investigation remains
 
 ```math
-R(A):=\frac{\operatorname{per}(A\circ\overline A)}{
-                  (\operatorname{per}A)^2}\leq1
+R(A):=\frac{\mathop{\mathrm{per}}(A\circ\overline A)}{
+                  (\mathop{\mathrm{per}}A)^2}\leq1
 ```
 
 for complex correlation matrices.
@@ -35,7 +35,7 @@ elliptope. This is a rank-preserving variation, not a claim that every such
 path is a diagonal-preserving affine face direction.
 
 Let $`H_1,\ldots,H_{r^2}`$ be an orthonormal real basis of the Hermitian
-matrices for $`\langle H,K\rangle=\operatorname{tr}(HK)`$. Then
+matrices for $`\langle H,K\rangle=\mathop{\mathrm{tr}}(HK)`$. Then
 
 ```math
 \sum_a(v_i^*H_av_j)(v_k^*H_av_l)=A_{il}A_{kj}.
@@ -53,7 +53,7 @@ For $`\sigma\in S_n`$, put
 ```math
 f_\sigma=\prod_i A_{i,\sigma(i)},\quad
 f=(f_\sigma)_{\sigma\in S_n},\quad
-P=\sum_\sigma f_\sigma=\operatorname{per}A,\quad Q=\|f\|^2.
+P=\sum_\sigma f_\sigma=\mathop{\mathrm{per}}A,\quad Q=\|f\|^2.
 ```
 
 Thus $`R=\|f/P\|^2`$. Let $`\partial_a`$ denote the derivative along
@@ -86,7 +86,7 @@ V=\sum_a\left\|\partial_a f-\frac{\partial_a P}{P}f\right\|^2.
 Equation (2) gives
 
 ```math
-\operatorname{Re}\langle f,\Delta f\rangle=n(n-1)Q-E.
+\mathop{\mathrm{Re}}\langle f,\Delta f\rangle=n(n-1)Q-E.
 \tag{4}
 ```
 
@@ -125,7 +125,7 @@ denote its complement. Then
 ```math
 \boxed{\quad
 E=2\sum_{\substack{|I|=2\\|J|=2}}
- |\det A[I|J]|^2\,\operatorname{per}C[I^c|J^c].
+ |\det A[I|J]|^2\,\mathop{\mathrm{per}}C[I^c|J^c].
 \quad}
 \tag{7}
 ```
@@ -160,29 +160,29 @@ T=\sum_{\sigma}\sum_{i,j}
 This is nonnegative because it is a sum of squared derivative norms, despite
 the possible complex phases in the displayed expansion. For correlation
 matrices, its terms with $`i=j`$ sum to
-$`\sum_{i,k}\operatorname{per}C(i|k)`$. Its remaining terms can be written
+$`\sum_{i,k}\mathop{\mathrm{per}}C(i|k)`$. Its remaining terms can be written
 
 ```math
 \sum_{\substack{i\ne j\\k\ne l}}
 A_{ij}A_{jl}A_{lk}A_{ki}\,
-\operatorname{per}C(ij|kl).
+\mathop{\mathrm{per}}C(ij|kl).
 ```
 
 The notation in the last display deletes ordered distinct row and column
 indices; the resulting complementary submatrix does not depend on their order.
 
 Let $`K`$ be the Hermitian matrix satisfying
-$`\partial_HP/P=\operatorname{tr}(KH)`$. It is positive semidefinite and
-$`\operatorname{tr}K=n`$, as follows from the symmetric-tensor expression for
+$`\partial_HP/P=\mathop{\mathrm{tr}}(KH)`$. It is positive semidefinite and
+$`\mathop{\mathrm{tr}}K=n`$, as follows from the symmetric-tensor expression for
 the permanent and homogeneity. At a stationary ratio,
 
 ```math
-V=T-Q\operatorname{tr}(K^2).
+V=T-Q\mathop{\mathrm{tr}}(K^2).
 \tag{9}
 ```
 
 Indeed stationarity says
-$`\operatorname{Re}\langle f,\partial_af\rangle=Q\partial_aP/P`$,
+$`\mathop{\mathrm{Re}}\langle f,\partial_af\rangle=Q\partial_aP/P`$,
 which gives (9) upon expanding (3).
 
 ## 4. A precise sufficient ascent statement
@@ -215,18 +215,18 @@ would already be false.
 
 ## 5. First-order stress at a global maximum
 
-For a Hermitian matrix, write $`\operatorname{cof}_{\rm per}(A)`$ for the matrix
-whose $`(i,j)`$ entry is $`\operatorname{per}A(i|j)`$, without a determinant
+For a Hermitian matrix, write $`\mathop{\mathrm{cof}}_{\rm per}(A)`$ for the matrix
+whose $`(i,j)`$ entry is $`\mathop{\mathrm{per}}A(i|j)`$, without a determinant
 sign. Define
 
 ```math
-M=\frac{\operatorname{cof}_{\rm per}(A)^T}{P},\qquad
-N=\frac{A\circ\operatorname{cof}_{\rm per}(C)^T}{Q}.
+M=\frac{\mathop{\mathrm{cof}}_{\rm per}(A)^T}{P},\qquad
+N=\frac{A\circ\mathop{\mathrm{cof}}_{\rm per}(C)^T}{Q}.
 ```
 
 For Hermitian perturbations $`B`$,
-$`d\log P=\operatorname{tr}(MB)`$ and
-$`d\log Q=2\operatorname{tr}(NB)`$. Both $`M`$ and $`N`$ are positive
+$`d\log P=\mathop{\mathrm{tr}}(MB)`$ and
+$`d\log Q=2\mathop{\mathrm{tr}}(NB)`$. Both $`M`$ and $`N`$ are positive
 semidefinite: permanent cofactor matrices are Gram matrices of symmetric
 products, and the second assertion also uses the Schur product theorem.
 
@@ -238,8 +238,8 @@ W:=M-N\succeq0.
 \tag{10}
 ```
 
-Homogeneity gives $`\operatorname{tr}(AM)=\operatorname{tr}(AN)=n`$, so
-$`\operatorname{tr}(AW)=0`$. Since both matrices are positive semidefinite,
+Homogeneity gives $`\mathop{\mathrm{tr}}(AM)=\mathop{\mathrm{tr}}(AN)=n`$, so
+$`\mathop{\mathrm{tr}}(AW)=0`$. Since both matrices are positive semidefinite,
 
 ```math
 AW=WA=0.
@@ -247,8 +247,8 @@ AW=WA=0.
 ```
 
 Suppose further that the order $`n`$ is minimal among counterexamples. Put
-$`p_i=\operatorname{per}A(i|i)`$ and
-$`q_i=\operatorname{per}C(i|i)`$. Then lower-order Chollet gives
+$`p_i=\mathop{\mathrm{per}}A(i|i)`$ and
+$`q_i=\mathop{\mathrm{per}}C(i|i)`$. Then lower-order Chollet gives
 $`q_i\leq p_i^2`$, and the one-vector case of Lieb's permanent inequality
 gives $`p_i\leq P`$. If $`Q>P^2`$,
 
@@ -266,7 +266,7 @@ No further rank reduction is justified by (10)--(12).
 
 Zhang's accessible 2013 abstract reports singular and irreducible maximizing
 partners. His [2016 survey, Section 5](https://scholars.nova.edu/ws/portalfiles/portal/42826589/An%20Update%20on%20a%20Few%20Permanent%20Conjectures.pdf)
-defines that maximization as $`\max_X\operatorname{per}(A\circ X)`$, with
+defines that maximization as $`\max_X\mathop{\mathrm{per}}(A\circ X)`$, with
 $`A`$ fixed, rather than maximization of $`R(X)`$. Its conclusions therefore
 cannot be substituted for the missing argument in Section 4.
 

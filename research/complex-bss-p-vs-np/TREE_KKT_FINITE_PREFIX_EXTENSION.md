@@ -8,8 +8,8 @@ Let f in R[x_1,...,x_n] have degree at most d. Let B_1,...,B_k be finite sets. A
 
 ```math
 y=f(x)\quad\Longleftrightarrow\quad
-\exists c_0\ \forall b_1\in B_1\ \exists c_1\ \cdots\
-\forall b_k\in B_k\ \exists c_k\quad
+\exists c_0\ \forall b_1\in B_1\ \exists c_1\ \cdots
+\ \forall b_k\in B_k\ \exists c_k\quad
 E_{b_1,\ldots,b_k,\alpha}
  (x,y,c_0,c_1,\ldots,c_k)=0\quad\text{for every }\alpha.
                                                                \tag{1}

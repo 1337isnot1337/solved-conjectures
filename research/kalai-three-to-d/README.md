@@ -11,7 +11,7 @@ Kalai’s 1989 conjecture asks whether a centrally symmetric $d$-dimensional pol
 Write $f(F)$ for the number of nonempty faces of a polytope $F$, including $F$. Put
 
 ```math
-P(F)=\operatorname{conv}\bigl((F,1)\cup(-F,-1)\bigr),\qquad D=F-F.
+P(F)=\mathop{\mathrm{conv}}\bigl((F,1)\cup(-F,-1)\bigr),\qquad D=F-F.
 ```
 
 The polytope $P(F)$ has dimension $\dim F+1$, even if $F$ is embedded in a larger ambient affine space. Its faces meeting just one of the two bases give $2f(F)$ possibilities. A face meeting both bases has a common horizontal exposing direction $u$, corresponding to the pair $(F^u,F^{-u})$ of maximizer faces of $u$ and $-u$ on $F$. Conversely, the vertical coefficient can always be chosen to tie the two maxima for any $u$, so this pair gives such a face, including the whole prismatoid when both entries are $F$. The pairs are in bijection with the faces of $D$, because the preimage of a face $D^u$ under subtraction from $F\times F$ is precisely $F^u\times F^{-u}$. Thus
@@ -29,11 +29,11 @@ For a product of bases $F_1,F_2$, both the base face counts and the difference-b
 =2(v_1-u_1)(v_2-u_2)\ge0.
 ```
 
-So the bound is preserved by products, with the factor three accounting for the prismatoid having just one extra dimension. It is preserved by joins as well. Embed the prismatoids of the two bases in complementary linear subspaces, using height one for both positive bases. The convex hull of these two positive bases in the hyperplane where the sum of heights is one realizes $F_1*F_2$. Its prismatoid is the free sum of the original prismatoids. The polar of a free sum is the Cartesian product of the polars. Polarity preserves the total number of nonempty faces since it exchanges the full and empty faces, and face counts multiply under products. This yields the bound for $P(F_1*F_2)$.
+So the bound is preserved by products, with the factor three accounting for the prismatoid having just one extra dimension. It is preserved by joins as well. Embed the prismatoids of the two bases in complementary linear subspaces, using height one for both positive bases. The convex hull of these two positive bases in the hyperplane where the sum of heights is one realizes $`F_1*F_2`$. Its prismatoid is the free sum of the original prismatoids. The polar of a free sum is the Cartesian product of the polars. Polarity preserves the total number of nonempty faces since it exchanges the full and empty faces, and face counts multiply under products. This yields the bound for $`P(F_1*F_2)`$.
 
 ## Hypersimplex bases
 
-Set $F=\Delta(k,n)=\{x\in[0,1]^n:\sum_i x_i=k\}$ with $1\le k\lt n$, so $\dim P(F)=n$. Coordinate complementation lets us assume $2k\le n$. A nonvertex face of $F$ is uniquely determined by disjoint sets $A,B$ of coordinates fixed at one and zero respectively, with $a=|A|\lt k$ and $b=|B|\lt n-k$. To see uniqueness, on the remaining coordinates the sum hypersimplex has an interior point relative to its sum hyperplane with every coordinate strictly between zero and one. Conversely, exposing a face of $F$ chooses its $k$ largest coordinate weights, so any nonvertex face has the stated form. The vertices contribute $\binom nk$ additional faces.
+Set $`F=\Delta(k,n)=\{x\in[0,1]^n:\sum_i x_i=k\}`$ with $1\le k\lt n$, so $\dim P(F)=n$. Coordinate complementation lets us assume $2k\le n$. A nonvertex face of $F$ is uniquely determined by disjoint sets $A,B$ of coordinates fixed at one and zero respectively, with $a=|A|\lt k$ and $b=|B|\lt n-k$. To see uniqueness, on the remaining coordinates the sum hypersimplex has an interior point relative to its sum hyperplane with every coordinate strictly between zero and one. Conversely, exposing a face of $F$ chooses its $k$ largest coordinate weights, so any nonvertex face has the stated form. The vertices contribute $\binom nk$ additional faces.
 
 ### The case $2k\lt n$
 

@@ -32,7 +32,7 @@ a_q=\min\left(\frac{c^2}{4},
 and decrease the existing correlation bound to at most $`a_q`$. If $`\Delta_\rho<a_q\rho`$, then
 
 ```math
-\varepsilon<a_q+\rho\leq2a_q
+\varepsilon\lt a_q+\rho\leq2a_q
 \leq\min\left(\frac{c^2}{2},
 \frac{\delta_0^2}{16C_{\mathrm g}}\right).
 ```

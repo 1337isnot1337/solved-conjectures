@@ -102,8 +102,8 @@ basis element e_K. At A, locally relabel (i,J), with i in J, by
 rescalings. Equation (2) consequently restricts to
 
 ```math
-\sum_{|K|=L-1}\
-\sum_{\substack{i,j\notin K\\i\ne j}}
+\sum_{|K|=L-1}
+\ \sum_{\substack{i,j\notin K\\i\ne j}}
  A_{i,K}B_{j,K}C_{\{i,j\}}D_{\{i,j\}}.                  \tag{7}
 ```
 

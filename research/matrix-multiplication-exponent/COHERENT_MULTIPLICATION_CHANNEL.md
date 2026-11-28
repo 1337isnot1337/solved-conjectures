@@ -194,10 +194,10 @@ the coefficient becomes
 \begin{aligned}
 &\sum_{h,t}(\mathcal U_n)_{ah}
       x_{it}y_{tj}d_{hb}
-                 (v_{b,t}^{ij}-v_{h,t}^{ij})\\
-&\qquad+\delta_{bj}\sum_h(\mathcal U_n)_{ah}
-                           x_{ih}v_{j,h}^{ij}.         \tag{12}
-\end{aligned}
+                 (v_{b,t}^{ij}-v_{h,t}^{ij})
+\\ &\qquad+\delta_{bj}\sum_h(\mathcal U_n)_{ah}
+                           x_{ih}v_{j,h}^{ij}.
+\end{aligned} \tag{12}
 ```
 
 Every term is a composition on the finite spaces specified above.

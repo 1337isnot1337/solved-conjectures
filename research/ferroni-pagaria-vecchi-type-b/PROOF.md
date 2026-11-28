@@ -60,9 +60,9 @@ For clarity, $`xH'=(1+q)y(q-y)/(2q(y^2+q)(y+q))`$, which gives (3) after adding 
 Write $`G_n=d^nG/dx^n`$. A second differentiation recurrence has just two diagonals:
 ```math
 \begin{split}
-G_n(X_q(y))&=K^n\frac{y^{1+ne}Q_n(y;q)}{(y^2+q)^{2n+1}},\\
-Q_1(y;q)&=\eta(y^2-q)+2y,\\
-Q_{n+1}&=\bigl[(4n+2)y^2-(1+ne)(y^2+q)\bigr]Q_n-y(y^2+q)Q_n'.
+G_n(X_q(y))&=K^n\frac{y^{1+ne}Q_n(y;q)}{(y^2+q)^{2n+1}},
+\\ Q_1(y;q)&=\eta(y^2-q)+2y,
+\\ Q_{n+1}&=\bigl[(4n+2)y^2-(1+ne)(y^2+q)\bigr]Q_n-y(y^2+q)Q_n'.
 \end{split} \tag{4}
 ```
 The coefficient at degree $`j`$ sends a negative multiple to degree $`j`$ and a positive multiple to degree $`j+2`$: the multipliers are $`-q(1+ne+j)`$ and $`4n+1-ne-j`$. The latter is positive since $`j\le 2n`$ and $`e<2`$.
@@ -70,9 +70,9 @@ The coefficient at degree $`j`$ sends a negative multiple to degree $`j`$ and a 
 For $`q\ne1`$, the signs in increasing degree are therefore
 ```math
 \begin{aligned}
-\operatorname{sgn}[y^{2k}]Q_n &=
-  \operatorname{sgn}(-\eta)(-1)^{n-1-k}, &&0\le k\le n,\\
-\operatorname{sgn}[y^{2k+1}]Q_n&=(-1)^{n-1-k},&&0\le k\le n-1 .
+\mathop{\mathrm{sgn}}[y^{2k}]Q_n &=
+  \mathop{\mathrm{sgn}}(-\eta)(-1)^{n-1-k}, &&0\le k\le n,
+\\ \mathop{\mathrm{sgn}}[y^{2k+1}]Q_n&=(-1)^{n-1-k},&&0\le k\le n-1 .
 \end{aligned}
 ```
 To see the induction, (4) gives the asserted signs for $`n=1`$. The same-degree contribution flips the old sign. The contribution from two degrees below keeps the old sign at that lower degree; this is the same new sign, so the contributions do not cancel. At each end the single contributing coefficient is also nonzero. If $`q<1`$, a change occurs between each odd term and the next even term; if $`q>1`$, it occurs between each even term and the next odd term. In either case there are exactly $`n`$ changes. For $`q=1`$ the even terms vanish and the $`n`$ odd terms alternate, giving $`n-1`$ changes. Descartes' rule and the analytic bijection $`X_q`$ now show:
@@ -113,6 +113,6 @@ At $`q\to\infty`$, the polynomials $`q^{-2(n-1)}P_n(y;q)`$ tend coefficientwise 
 
 Each branch thus crosses $`y=1`$. Different branches cannot cross at the same $`q`$, because the positive roots at that parameter are distinct. By (2) and the degree $`n-1`$, the crossing parameters give all the roots of $`B_n(-q)`$ and each is simple. In particular, each branch crosses exactly once. At each parameter the interlacing in Section 3 gives
 ```math
-r_{n+1,i}(q)<r_{n,i}(q)<r_{n+1,i+1}(q)\qquad(1\le i\le n-1).
+r_{n+1,i}(q)\lt r_{n,i}(q)\lt r_{n+1,i+1}(q)\qquad(1\le i\le n-1).
 ```
 At the unique crossing of the middle branch, the lower branch has not crossed and the upper branch already has, by continuity and its unique crossing. The parameter crossings therefore strictly interlace, as do the roots after changing from $`q`$ to $`-q`$. The case $`n=1`$ has no roots and poses no exception. This proves the theorem.

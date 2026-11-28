@@ -32,7 +32,7 @@ Now choose any integer $`u\ge2`$, take $`R\ge u`$, and delete the increasing arc
 ```
 The first $`u-1`$ weights represent every integer in $`[0,2^{u-1}-1]`$ as a subset sum. Including the last early weight shifts this interval by $`2^{u-1}-1`$, so all integers in $`[0,2^u-2]`$ are represented, including both endpoints. In the case $`u=2`$ the early weights are $`(1,1)`$, and the same conclusion holds.
 
-For $`t=p-1`$, divide $`t=(2^u-1)Q+r`$, where $`0\le r<2^u-1`$. Use the early weights to represent $`r`$ and later weights to represent $`(2^u-1)Q`$ according to the binary expansion of $`Q`$. Take $`R=u+\operatorname{bitlength}(Q)`$, with $`\operatorname{bitlength}(0)=0`$. This gives exactly $`p`$ perfect matchings and excess at least $`w(Q)-1`$. Thus for every $`u\ge2`$,
+For $`t=p-1`$, divide $`t=(2^u-1)Q+r`$, where $`0\le r<2^u-1`$. Use the early weights to represent $`r`$ and later weights to represent $`(2^u-1)Q`$ according to the binary expansion of $`Q`$. Take $`R=u+\mathop{\mathrm{bitlength}}(Q)`$, with $`\mathop{\mathrm{bitlength}}(0)=0`$. This gives exactly $`p`$ perfect matchings and excess at least $`w(Q)-1`$. Thus for every $`u\ge2`$,
 ```math
  c_p\ \ge\ w\!\left(\left\lfloor\frac{p-1}{2^u-1}\right\rfloor\right)-1.
  \tag{1}
@@ -48,8 +48,8 @@ Read the bits of $`t`$ from left to right in binary long division by $`M`$, allo
 
 There are at most $`k`$ such runs, including any run at the end; there is no leading zero run because the binary expansion begins with a one. Their lengths sum to $`N-k`$. Each run of length $`L`$ loses at most $`u-1=k`$ bits when partitioned into complete blocks, and the counted quotient positions are disjoint. Therefore
 ```math
-w\!\left(\left\lfloor t/M\right\rfloor\right)\ \ge\
-\frac{N-k-k^2}{k+1}=\frac{N}{k+1}-k.
+w\!\left(\left\lfloor t/M\right\rfloor\right)\ \ge
+\ \frac{N-k-k^2}{k+1}=\frac{N}{k+1}-k.
 ```
 The statement also holds for an all-ones expansion (there are no runs, and the right-hand side is nonpositive).
 
@@ -57,4 +57,4 @@ Set $`C=c_p`$ and $`t=p-1`$. The original binary construction gives $`C\ge k`$, 
 ```math
 N\le (C+k+1)(k+1)\le (2C+1)(C+1).
 ```
-Solving this quadratic inequality yields the claimed bound. Since $`N`$ is nondecreasing and unbounded in $`p`$, the same explicit lower bound with $`N=\operatorname{bitlength}(p-1)`$ also holds for the minimum $`m_p`$ of the tail.
+Solving this quadratic inequality yields the claimed bound. Since $`N`$ is nondecreasing and unbounded in $`p`$, the same explicit lower bound with $`N=\mathop{\mathrm{bitlength}}(p-1)`$ also holds for the minimum $`m_p`$ of the tail.

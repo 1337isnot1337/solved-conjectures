@@ -28,10 +28,10 @@ Consequently, for `A,B in Omega_n` and `0<=t<=1`,
 ```math
 \begin{aligned}
 \sigma_k((1-t)A+tB)
-\le{}&(1-t)\sigma_k(A)+t\sigma_k(B)\\
-&-S_{n,k}\frac{k(k-1)}{4(n-1)^2}
-t(1-t)\|A-B\|_F^2. \tag{2}
-\end{aligned}
+\le{}&(1-t)\sigma_k(A)+t\sigma_k(B)
+\\ &-S_{n,k}\frac{k(k-1)}{4(n-1)^2}
+t(1-t)\|A-B\|_F^2.
+\end{aligned} \tag{2}
 ```
 
 Taking `B=J` gives the conjectured chord inequality for every mixing parameter. Its inequality is strict when `A!=J` and `0<t<1`. In particular, `n_k=16k^2` is an admissible threshold simultaneously for every degree `k>=3`; no assertion of an optimal threshold is made.
@@ -98,8 +98,8 @@ In the inner product on the right, move the first `D` to the left. Cauchy–Schw
 ```math
 \begin{aligned}
 \big|\langle w_j,(D\otimes D\otimes X^{\otimes(j-2)})w_j\rangle\big|
-\le{}&\|(D^{\mathsf T}\otimes I_H^{\otimes(j-1)})w_j\|\\
-&\cdot\|(I_H\otimes D\otimes X^{\otimes(j-2)})w_j\|.
+\le{}&\|(D^{\mathsf T}\otimes I_H^{\otimes(j-1)})w_j\|
+\\ &\cdot\|(I_H\otimes D\otimes X^{\otimes(j-2)})w_j\|.
 \end{aligned}
 ```
 
@@ -224,11 +224,11 @@ Using (6), (8), (9), and then the nonnegative coefficients in (12), we obtain fo
 \frac{D^2f_{n,k}(A)[D,D]}{\|D\|_F^2}
 &\ge \frac{(k)_2}{(n-1)^2}
 -\frac1{n-1}\sum_{j=3}^k
-j(j-1)c_{n,j}\frac{(k)_j}{(n)_j}\\
-&\ge \frac{(k)_2}{(n-1)^2}
+j(j-1)c_{n,j}\frac{(k)_j}{(n)_j}
+\\ &\ge \frac{(k)_2}{(n-1)^2}
 -\frac{u^2}{n-1}\bigl(E_n''(u)-n\bigr).
-\tag{15}
-\end{aligned}
+
+\end{aligned} \tag{15}
 ```
 
 For `D=0`, the desired inequality is immediate, so division by its squared norm in (15) is harmless. The term `n` subtracted from `E_n''` is exactly its constant term, originating from the centered quadratic coefficient. No signs are assumed for the centered coefficients of the arbitrary matrix `X`.
@@ -238,7 +238,7 @@ For `D=0`, the desired inequality is immediate, so division by its squared norm 
 For `k>=3` and `n>=16k^2`,
 
 ```math
-0<u\le\frac1{48},\qquad nu^2\le\frac1{16}.
+0\lt u\le\frac1{48},\qquad nu^2\le\frac1{16}.
 \tag{16}
 ```
 

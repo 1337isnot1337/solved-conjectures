@@ -141,8 +141,8 @@ Take the full direct sum of the r tensors M_z. At A use the local map
 ```math
 (z,y)\longmapsto
  \begin{cases}
-   \sum_l\eta_{(y,l),z}B_{(y,l)},&y\in P,\\
-   0,&y\notin P.
+   \sum_l\eta_{(y,l),z}B_{(y,l)},&y\in P,
+   \\ 0,&y\notin P.
  \end{cases}
 ```
 

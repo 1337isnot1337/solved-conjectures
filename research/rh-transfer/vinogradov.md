@@ -9,8 +9,8 @@ Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/is
 For an odd prime p, let n(p) be the least positive quadratic nonresidue modulo p. The conjecture is
 
 ~~~math
-\forall\varepsilon>0\ \exists C_\varepsilon>0\
-\forall\text{ odd primes }p,\qquad
+\forall\varepsilon>0\ \exists C_\varepsilon>0
+\ \forall\text{ odd primes }p,\qquad
 n(p)\le C_\varepsilon p^\varepsilon.
 \tag{1}
 ~~~

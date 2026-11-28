@@ -47,8 +47,8 @@ For a fixed anchor $`A`$ and vertices $`B,C`$, define Schrijver's orbit indices 
 
 ```math
  \begin{split}
- i&=|A\setminus B|,& j&=|A\setminus C|,\\
- a&=|(A\setminus B)\cap(A\setminus C)|,&
+ i&=|A\setminus B|,& j&=|A\setminus C|,
+ \\ a&=|(A\setminus B)\cap(A\setminus C)|,&
  b&=|(B\setminus A)\cap(C\setminus A)|.
  \end{split}
 ```
@@ -140,8 +140,8 @@ Direct substitution in (5) and (6) yields
 
 ```math
  \begin{split}
- M_A^+&=C_A+m_A^+(m_A^+)^{\mathsf T},\\
- M_A^-&=\frac1{k^2}C_A+\frac{k-1}{k}Q_A
+ M_A^+&=C_A+m_A^+(m_A^+)^{\mathsf T},
+ \\ M_A^-&=\frac1{k^2}C_A+\frac{k-1}{k}Q_A
              +m_A^-(m_A^-)^{\mathsf T}.
  \end{split}                                           \tag{8}
 ```
@@ -249,8 +249,8 @@ matrices
 ```math
  Z_A^\pm=
  \begin{pmatrix}
- 1&(m_A^\pm)^{\mathsf T}\\
- m_A^\pm&M_A^\pm
+ 1&(m_A^\pm)^{\mathsf T}
+ \\ m_A^\pm&M_A^\pm
  \end{pmatrix}
 ```
 
@@ -261,9 +261,9 @@ $`H=X_AX`$. The formal matrix of $`(1,X,H)`$ is
 ```math
  Y_A=
  \begin{pmatrix}
- 1&(\rho\mathbf1)^{\mathsf T}&(\rho m_A^+)^{\mathsf T}\\
- \rho\mathbf1&K/p&\rho M_A^+\\
- \rho m_A^+&\rho M_A^+&\rho M_A^+
+ 1&(\rho\mathbf1)^{\mathsf T}&(\rho m_A^+)^{\mathsf T}
+ \\ \rho\mathbf1&K/p&\rho M_A^+
+ \\ \rho m_A^+&\rho M_A^+&\rho M_A^+
  \end{pmatrix}.                                         \tag{10}
 ```
 

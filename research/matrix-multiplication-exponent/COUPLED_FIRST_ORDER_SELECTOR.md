@@ -91,8 +91,8 @@ For fixed (i,j), summing the source indices in (1) gives exactly
 \mathcal O^{ij}(\epsilon)
 ={}&\sum_z\bigl(N_z x_{ij} M_z^{ij}
                     -x_{ij}M_z^{ij}N_z
-                    -\epsilon N_z x_{ij}M_z^{ij}N_z\bigr)\\
-={}&x_{ij}\sum_{(a,b)\in P\times Q}\partial_{ab}
+                    -\epsilon N_z x_{ij}M_z^{ij}N_z\bigr)
+\\ ={}&x_{ij}\sum_{(a,b)\in P\times Q}\partial_{ab}
           \left[E_{ab},\sum_z\kappa_{ab}^z M_z^{ij}\right]
        +\sum_z\kappa_{ij}^z E_{ij}M_z^{ij}
        -\epsilon\sum_z N_zx_{ij}M_z^{ij}N_z.

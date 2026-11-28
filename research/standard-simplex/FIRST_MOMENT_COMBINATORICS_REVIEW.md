@@ -24,7 +24,7 @@ The weighted identity
 
 ```math
 W\sum_e w_e\ell_e^2-\left(\sum_e w_e\ell_e\right)^2
-=\sum_{e<f}w_ew_f(\ell_e-\ell_f)^2
+=\sum_{e\lt f}w_ew_f(\ell_e-\ell_f)^2
 ```
 
 and `S_*^2=rc_q^2/2` reproduce the draft's exact expression for `D`. The perimeter input makes it nonnegative. At the regular covariance, symmetry makes the derivative in every centered trace-zero direction vanish, so `h(t)/t` tends to zero as `t` decreases to zero. Integrating `(h/t)'=-D/t^2` therefore gives the displayed deficit identity.
@@ -52,9 +52,9 @@ D_{ij}=\Delta_{ii}+\Delta_{jj}-2\Delta_{ij}.
 The row-sum identities kill the mixed terms involving `Delta`, and its trace kills the remaining diagonal cross term. Dividing the full squared norm by two gives exactly
 
 ```math
-\sum_{i<j}\delta_{ij}=0,
+\sum_{i\lt j}\delta_{ij}=0,
 \qquad
-\sum_{i<j}\delta_{ij}^2
+\sum_{i\lt j}\delta_{ij}^2
 =q\sum_i\Delta_{ii}^2+2\|\Delta\|_F^2.
 ```
 
@@ -63,7 +63,7 @@ A positive semidefinite trace-one matrix satisfies `ell_e^2<=2`, since `||e_i-e_
 ```math
 D(t)
 \ge\frac2r\frac{\omega_q^2t^2}{8}
-       \sum_{e<f}(\delta_e-\delta_f)^2
+       \sum_{e\lt f}(\delta_e-\delta_f)^2
 \ge\frac{M\omega_q^2}{2r}t^2\|\Delta\|_F^2
 \qquad (0\le t\le1/2).
 ```

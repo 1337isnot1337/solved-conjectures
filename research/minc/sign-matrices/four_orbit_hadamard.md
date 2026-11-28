@@ -2,7 +2,7 @@
 
 ## A four-orbit criterion
 
-Let $`m=p^e`$ be a power of an odd prime. Let $H$ be any real Hadamard matrix of order $4m$. Suppose a group of order $m$ acts freely on the row indices and freely on the column indices, preserving the entries under simultaneous action. Each side has four orbits. Let $R$ be the integer four-by-four matrix whose entry $R_{ij}$ sums a representative row of orbit $i$ over all columns in orbit $j$. Set $`d=\operatorname{rank}_{\mathbb F_p} R`$.
+Let $`m=p^e`$ be a power of an odd prime. Let $H$ be any real Hadamard matrix of order $4m$. Suppose a group of order $m$ acts freely on the row indices and freely on the column indices, preserving the entries under simultaneous action. Each side has four orbits. Let $R$ be the integer four-by-four matrix whose entry $R_{ij}$ sums a representative row of orbit $i$ over all columns in orbit $j$. Set $`d=\mathop{\mathrm{rank}}_{\mathbb F_p} R`$.
 
 * The rank $d$ is at most two, and when $e=1$ it equals two.
 * If $d=2$, let $x$ be any column of $R$ nonzero modulo $p$. The magnitude of the permanent of the orbit matrix is exactly
@@ -20,7 +20,7 @@ This is a structural test for a class with a specified symmetry. Divisibility by
 
 Let the columns of $S_r,S_c$ be the row-orbit and column-orbit indicators. Then $`HS_c=S_rR`$. The corresponding column sums form $`R^{\mathsf T}`$, since all orbit lengths equal $m$ and the total sum in a block can be computed in either direction. It follows from both Hadamard identities that $`R^{\mathsf T}R=RR^{\mathsf T}=4mI`$. Every entry is odd. Any two row sums of $R$ are congruent modulo four. Indeed these sums are full row sums of $H$, whose distinct rows have even Hamming distance $2m$. The same holds for column sums.
 
-The fixed-matching argument from the [Paley calculation](paley_ii_torus.md) applies to every free group action here, including noncyclic groups. Nonfixed orbits of bijections have size divisible by $p$. An equivariant bijection between two regular orbits is determined by the image of a representative. Its weight is the $m$th power of one sign, equal to that sign. Thus $`\mathop{\mathrm{per}}H\equiv\mathop{\mathrm{per}}R\pmod p`$. For rank zero the latter vanishes. For rank one write $`R=uv^{\mathsf T}`$ over the field. Its permanent is $`24\prod_i u_i\prod_i v_i`$, proving the rank-one assertions.
+The fixed-matching argument from the [Paley calculation](paley_ii_torus.md) applies to every free group action here, including noncyclic groups. Nonfixed orbits of bijections have size divisible by $p$. An equivariant bijection between two regular orbits is determined by the image of a representative. Its weight is the $`m`$th power of one sign, equal to that sign. Thus $`\mathop{\mathrm{per}}H\equiv\mathop{\mathrm{per}}R\pmod p`$. For rank zero the latter vanishes. For rank one write $`R=uv^{\mathsf T}`$ over the field. Its permanent is $`24\prod_i u_i\prod_i v_i`$, proving the rank-one assertions.
 
 Use the Hurwitz quaternion lattice $`O=\mathbb Z^4\cup ((\tfrac12,\tfrac12,\tfrac12,\tfrac12)+\mathbb Z^4)`$, in the basis $1,i,j,k$ of the ambient real quaternions. It is a ring, with the Euclidean norm squared as multiplicative norm. The similarity $B=R/2$ maps $O$ into $O$. Its columns have all coordinates half-integral. The image of $(1,1,1,1)/2$ is $(R\mathbf1)/4$, whose entries are either all integers or all half-integers by the row-sum congruence. The same argument applies to $`B^{\mathsf T}`$. For $L=B(O)$ we therefore have
 
@@ -32,7 +32,7 @@ The inclusion follows from $`BB^{\mathsf T}=mI`$ and the index from the real det
 
 ## The two possible images in rank two
 
-Put $`D=\mathbb Z/m\mathbb Z`$. The ring $O/mO$ identifies with $M_2(D)$ and quaternion norm with determinant. Here are explicit details. Since $p$ is odd, the two sets of residues $\{u^2\}$ and $\{-1-v^2\}$ each have $(p+1)/2$ elements and intersect. At least one component of a solution to $u^2+v^2=-1$ is nonzero, so it lifts modulo $p^e$ by adjusting that component one digit at a time. Send $i,j$ to
+Put $`D=\mathbb Z/m\mathbb Z`$. The ring $O/mO$ identifies with $M_2(D)$ and quaternion norm with determinant. Here are explicit details. Since $p$ is odd, the two sets of residues $`\{u^2\}`$ and $`\{-1-v^2\}`$ each have $(p+1)/2$ elements and intersect. At least one component of a solution to $u^2+v^2=-1$ is nonzero, so it lifts modulo $p^e$ by adjusting that component one digit at a time. Send $i,j$ to
 
 ```math
 \begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad

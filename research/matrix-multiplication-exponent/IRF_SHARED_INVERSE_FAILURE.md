@@ -45,10 +45,10 @@ gives the finite expansions
 ```math
 \begin{split}
 L_k^+(z)&=\frac{z}{z+k\hbar}
-            \sum_J P_J(z,q)T_J,\\
-L_k^-(z)&=\frac{z+k\hbar}{z}
-            \sum_J P_J(z+k\hbar,q)T_J^{-1},\\
-P_J(z,q)&=G_k(z,q)E_{JJ}G_k(z,q)^{-1}.
+            \sum_J P_J(z,q)T_J,
+\\ L_k^-(z)&=\frac{z+k\hbar}{z}
+            \sum_J P_J(z+k\hbar,q)T_J^{-1},
+\\ P_J(z,q)&=G_k(z,q)E_{JJ}G_k(z,q)^{-1}.
 \end{split}                                                \tag{2}
 ```
 
@@ -80,10 +80,10 @@ At s=2, hbar=1, u=2, v=5, the result is
 ```math
 \Gamma=
 \begin{pmatrix}
-2/3&0&0&0\\
-2&1&-1/3&0\\
-2&-1/3&1&0\\
-14&-2&-2&2/3
+2/3&0&0&0
+\\ 2&1&-1/3&0
+\\ 2&-1/3&1&0
+\\ 14&-2&-2&2/3
 \end{pmatrix}.                                             \tag{4}
 ```
 
@@ -104,10 +104,10 @@ the output C label be gamma. All four source maps are
 
 ```math
 \begin{split}
-\alpha_h^a&=(L_k^+(u))_{a,h},\\
-\beta_h^b&=(L_k^-(v))_{h,b},\\
-\gamma_{\gamma,hc}&=\Gamma_{\gamma,(h,c)},\\
-X_{hc}^{ij}&=(\Gamma^{-1})_{(h,c),(i,j)}
+\alpha_h^a&=(L_k^+(u))_{a,h},
+\\ \beta_h^b&=(L_k^-(v))_{h,b},
+\\ \gamma_{\gamma,hc}&=\Gamma_{\gamma,(h,c)},
+\\ X_{hc}^{ij}&=(\Gamma^{-1})_{(h,c),(i,j)}
                (L_k^-(u))_{h,i}(L_k^+(v))_{j,h}.
 \end{split}                                                \tag{5}
 ```

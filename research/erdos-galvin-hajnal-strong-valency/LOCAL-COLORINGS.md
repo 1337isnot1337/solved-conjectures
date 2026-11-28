@@ -7,9 +7,9 @@
 ## Explicit ZFC coloring of every vertex link
 
 First, let $\mathcal A\subseteq[\omega_1]^{\aleph_1}$ have no uncountable pairwise disjoint subfamily. Fix injective enumerations $e_\beta:D_\beta\to\beta$ onto the predecessor sets, with $D_\beta\subseteq\omega$. For each $\xi<\omega_1$ and $n<\omega$, define
-\[
+```math
 A_{\xi,n}=\{\beta>\xi:n\in D_\beta,\ e_\beta(n)=\xi\}.
-\]
+```
 For fixed $n$ these sets are pairwise disjoint as $\xi$ varies. Hence at most countably many $\xi$ have an edge of $\mathcal A$ inside $A_{\xi,n}$; otherwise choosing one for each such $\xi$ would produce an uncountable disjoint subfamily. Outside the countable union of these exceptional indices over $n$, choose any $\xi$ and color the tail by the unique $n$ such that $\beta\in A_{\xi,n}$. Use a separate set of colors on $[0,\xi]$, which is countable. This is a proper countable coloring. This is the Ulam-matrix method; the same general obstruction to an $\omega_1$-saturated countably complete uniform ideal is recorded in [Eskew, *Nonregular ideals*, Lemma 8](https://arxiv.org/abs/1901.02822).
 
 In particular every link of a strong-valency counterexample has a proper countable coloring. More uniformly, for each $x$ let $B_x$ be the countable exceptional set of indices for its link. There is a club $C$ of countable ordinals closed under $x\mapsto B_x$, so for each $\xi\in C$ the single coloring on the tail $(\xi,\omega_1)$ given by the above $A_{\xi,n}$ simultaneously colors the restrictions of **all** links at vertices $x<\xi$. This only colors edges of the link fully contained in the tail; it does not color arbitrary tails of link edges.

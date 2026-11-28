@@ -31,7 +31,7 @@ where
 C_\beta=
 -1-\sum_{\gamma>0}\frac1{1/4+\gamma^2}
 -\frac1\pi\int_0^\infty
-   \operatorname{Re}\Gamma(iu)\,
+   \mathop{\mathrm{Re}}\Gamma(iu)\,
    \log\frac{2u}{\pi}\,du.
 \tag{2}
 ~~~
@@ -60,7 +60,7 @@ This source is preferable to relying on the earlier explicit Trudgian constants,
 Put
 ~~~math
 g(z)=\Gamma(z)-\frac1z,\qquad
-G_\varepsilon(u)=\operatorname{Re}g(\varepsilon+iu).
+G_\varepsilon(u)=\mathop{\mathrm{Re}}g(\varepsilon+iu).
 ~~~
 The singularity of g at zero is removable. Take alpha>=1 and epsilon=1/(2alpha), so 0<epsilon<=1/2.
 
@@ -81,7 +81,7 @@ Here a smaller fixed c>0 absorbs the polynomial and logarithmic factors in Stirl
 
 For example,
 ~~~math
-\operatorname{Re}\frac1{\varepsilon+iu}
+\mathop{\mathrm{Re}}\frac1{\varepsilon+iu}
 =\frac{\varepsilon}{\varepsilon^2+u^2}.
 ~~~
 Its u derivative is O(u^-3) for u>=1, and its epsilon derivative is O(u^-2). The apparent singularities near zero cancel inside g.
@@ -127,8 +127,8 @@ Using (5)–(6), the last integral has the bound
 \begin{aligned}
 \left|\int_0^\infty E(T)f_\alpha'(T)\,dT\right|
 &\ll \frac1\alpha
- \int_0^\infty \log(\alpha u+2)|G_\varepsilon'(u)|\,du\\
-&\ll \frac{\log(\alpha+2)}{\alpha}.
+ \int_0^\infty \log(\alpha u+2)|G_\varepsilon'(u)|\,du
+\\ &\ll \frac{\log(\alpha+2)}{\alpha}.
 \end{aligned}
 \tag{9}
 ~~~
@@ -158,7 +158,7 @@ For every epsilon>0,
 ~~~
 The function of v and its Fourier transform are integrable. Fourier inversion at v=0 and conjugate symmetry give
 ~~~math
-\int_0^\infty\operatorname{Re}\Gamma(\varepsilon+iu)\,du
+\int_0^\infty\mathop{\mathrm{Re}}\Gamma(\varepsilon+iu)\,du
 =\frac{\pi}{\mathrm e}.
 ~~~
 The pole term has integral
@@ -176,7 +176,7 @@ I_\varepsilon=
 At epsilon=0 and u>0, G_0(u)=Re Gamma(iu), since 1/(iu) is purely imaginary. The epsilon-derivative estimate in (6) gives
 ~~~math
 J_\varepsilon
-=\int_0^\infty\operatorname{Re}\Gamma(iu)
+=\int_0^\infty\mathop{\mathrm{Re}}\Gamma(iu)
      \log\frac{2u}{\pi}\,du+O(\varepsilon).
 \tag{12}
 ~~~

@@ -89,8 +89,8 @@ For each surviving pair, its cycle blocks define a bipartite multiplicity graph 
 ```math
 \begin{aligned}
 \sum_{i,j}\prod_{p,q}|x_{i_pj_q}|^{c_{pq}}
-&\leq\sum_i\prod_pR_{i_p}^{d_p/2}\\
-&=\prod_p\sum_s R_s^{d_p/2}
+&\leq\sum_i\prod_pR_{i_p}^{d_p/2}
+\\ &=\prod_p\sum_s R_s^{d_p/2}
 \leq\prod_p\left(\sum_sR_s\right)^{d_p/2}
 =\|X\|_F^m.
 \end{aligned}

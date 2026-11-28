@@ -153,7 +153,7 @@ and let $`M^{\mathrm t}`$ be the matrix with rows $`M_i^{\mathrm t}`$. Write
 
 ```math
 W_{\mathrm t}
-=\sum_{i<j}\int_{|z|>R}
+=\sum_{i\lt j}\int_{|z|>R}
  \min(|n_{ij}\cdot z|,1)|\widetilde g_{ij}(z)|\,d\gamma_r(z).
 ```
 

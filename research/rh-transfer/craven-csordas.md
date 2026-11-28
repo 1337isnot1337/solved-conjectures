@@ -14,32 +14,32 @@ Research date: 20 November 2026. Owner: analytic-targets agent. Coordination: [i
 
 In their 2004 survey, Craven and Csordas ask in Problem 4.16, equation (4.12), whether the following hypotheses imply that a sequence is complex zero decreasing:
 
-\[
+```math
 \phi(z)=\sum_{k=0}^{\infty}\frac{\gamma_k}{k!}z^k\in\mathcal{LP}^{+},
 \qquad
 \gamma_k\ge 0,
 \qquad
 \lim_{k\to\infty}\gamma_k^{1/k}=0.
-\]
+```
 
-Here \(\mathcal{LP}^{+}\) is the Laguerre–Pólya class with nonnegative Taylor coefficients. The first condition says precisely that \(\{\gamma_k\}\) is a nonnegative multiplier sequence.
+Here $`\mathcal{LP}^{+}`$ is the Laguerre–Pólya class with nonnegative Taylor coefficients. The first condition says precisely that $`\{\gamma_k\}`$ is a nonnegative multiplier sequence.
 
-For a real polynomial \(f(z)=\sum a_kz^k\), define
+For a real polynomial $`f(z)=\sum a_kz^k`$, define
 
-\[
+```math
 T_\gamma f(z)=\sum\gamma_ka_kz^k.
-\]
+```
 
 The sequence is a **complex zero decreasing sequence**, abbreviated CZDS, if
 
-\[
+```math
 Z_{\mathbb C\setminus\mathbb R}(T_\gamma f)
 \le Z_{\mathbb C\setminus\mathbb R}(f)
-\]
+```
 
-for every real polynomial \(f\), with multiplicities included.
+for every real polynomial $`f`$, with multiplicities included.
 
-The question concerns the exponential generating function. Its root-decay hypothesis is different from the stronger uniform Turán-ratio condition called rapidly decreasing elsewhere in the survey. The counterexample below does not settle the separate fixed-sequence problem for \(\{e^{-k^3}\}\).
+The question concerns the exponential generating function. Its root-decay hypothesis is different from the stronger uniform Turán-ratio condition called rapidly decreasing elsewhere in the survey. The counterexample below does not settle the separate fixed-sequence problem for $`\{e^{-k^3}\}`$.
 
 Primary statement: [Craven–Csordas 2004, PDF p. 29, Problem 4.16](https://www.dcce.ibilce.unesp.br/~dimitrov/ProfRusev/czdssurvey.pdf).
 
@@ -47,56 +47,56 @@ Primary statement: [Craven–Csordas 2004, PDF p. 29, Problem 4.16](https://www.
 
 Put
 
-\[
+```math
 q=\frac{999999}{1000000},\qquad
 h(k)=1+k+k^2,\qquad
 \gamma_k=h(k)q^{k^2}\quad(k\ge0).
 \tag{1}
-\]
+```
 
-All terms are strictly positive, and \(\gamma_0=1\).
+All terms are strictly positive, and $`\gamma_0=1`$.
 
 ### 2.1. It is a multiplier sequence
 
 First,
 
-\[
+```math
 \sum_{k=0}^{\infty}h(k)\frac{z^k}{k!}
 =(1+z)^2e^z\in\mathcal{LP}^{+}.
-\]
+```
 
-Thus \(\{h(k)\}\) is a multiplier sequence by the Pólya–Schur characterization.
+Thus $`\{h(k)\}`$ is a multiplier sequence by the Pólya–Schur characterization.
 
-Next let \(\varepsilon=-\log q>0\). The real entire function
+Next let $`\varepsilon=-\log q>0`$. The real entire function
 
-\[
+```math
 g(w)=e^{-\varepsilon w^2}
-\]
+```
 
-belongs to the Laguerre–Pólya class and has no zeros. Laguerre’s theorem, in the form of Theorem 4.1(2) of the 2004 survey, shows that \(\{g(k)\}=\{q^{k^2}\}\) is a CZDS, hence a multiplier sequence. For completeness, membership of \(g\) in \(\mathcal{LP}\) follows from the locally uniform limit
+belongs to the Laguerre–Pólya class and has no zeros. Laguerre’s theorem, in the form of Theorem 4.1(2) of the 2004 survey, shows that $`\{g(k)\}=\{q^{k^2}\}`$ is a CZDS, hence a multiplier sequence. For completeness, membership of $`g`$ in $`\mathcal{LP}`$ follows from the locally uniform limit
 
-\[
+```math
 \left(1-\frac{\varepsilon w^2}{m}\right)^m
 \longrightarrow e^{-\varepsilon w^2};
-\]
+```
 
 each approximating polynomial has only real zeros.
 
-The coefficientwise product of two multiplier sequences is a multiplier sequence: the corresponding diagonal operators compose. Therefore \(\{\gamma_k\}\) is a multiplier sequence. Its positive terms ensure
+The coefficientwise product of two multiplier sequences is a multiplier sequence: the corresponding diagonal operators compose. Therefore $`\{\gamma_k\}`$ is a multiplier sequence. Its positive terms ensure
 
-\[
+```math
 \sum_{k\ge0}\frac{\gamma_k}{k!}z^k\in\mathcal{LP}^{+}.
-\]
+```
 
 ### 2.2. It has the required decay
 
-For \(k\ge1\),
+For $`k\ge1`$,
 
-\[
+```math
 \gamma_k^{1/k}=h(k)^{1/k}q^k\longrightarrow0,
-\]
+```
 
-since \(h(k)^{1/k}\to1\) and \(0<q<1\).
+since $`h(k)^{1/k}\to1`$ and $`0<q<1`$.
 
 Every hypothesis of the original question is satisfied.
 
@@ -104,142 +104,142 @@ Every hypothesis of the original question is satisfied.
 
 Define the cubic and the strictly positive sextic
 
-\[
+```math
 Q(x)=-343+1989x-2457x^2+403x^3,
 \qquad P(x)=Q(x)^2+1.
-\]
+```
 
-Let \(T_{1/\gamma}\) act coefficientwise, and put
+Let $`T_{1/\gamma}`$ act coefficientwise, and put
 
-\[
+```math
 R(x)=T_{1/\gamma}P(x).
-\]
+```
 
-These are explicit real polynomials with rational coefficients. Because every \(\gamma_k\) is positive,
+These are explicit real polynomials with rational coefficients. Because every $`\gamma_k`$ is positive,
 
-\[
+```math
 T_\gamma R=P,\qquad \deg R=\deg P=6,
-\]
+```
 
-and the leading coefficient of \(R\) is positive.
+and the leading coefficient of $`R`$ is positive.
 
-We will prove \(R(1)<0\). Write
+We will prove $`R(1)<0`$. Write
 
-\[
+```math
 (v_0,v_1,v_2,v_3)=(-343,1989,-2457,403).
-\]
+```
 
 Then
 
-\[
+```math
 R(1)=1+\sum_{i,j=0}^{3}
  \frac{v_iv_jq^{-(i+j)^2}}{1+(i+j)+(i+j)^2}.
 \tag{2}
-\]
+```
 
 Two finite rational identities are
 
-\[
+```math
 S:=\sum_{i,j=0}^{3}
  \frac{v_iv_j}{1+(i+j)+(i+j)^2}
 =-\frac{188784}{301},
 \tag{3}
-\]
+```
 
 and
 
-\[
+```math
 A:=\sum_{i,j=0}^{3}
  \frac{|v_iv_j|}{1+(i+j)+(i+j)^2}
 =\frac{777479632}{301}.
 \tag{4}
-\]
+```
 
-For \(0\le m\le36\), Bernoulli’s inequality gives
+For $`0\le m\le36`$, Bernoulli’s inequality gives
 
-\[
+```math
 q^{36}\ge 1-\frac{36}{10^6},
-\]
+```
 
 and consequently
 
-\[
+```math
 0\le q^{-m}-1
 \le q^{-36}-1
 \le\frac{36}{10^6-36}
 <\frac1{20000}.
 \tag{5}
-\]
+```
 
-Using \((i+j)^2\le36\), equations (2)–(5) yield the exact estimate
+Using $`(i+j)^2\le36`$, equations (2)–(5) yield the exact estimate
 
-\[
+```math
 \begin{aligned}
 R(1)
-&\le1+S+\frac{A}{20000}\\
-&=-\frac{187011273}{376250}<0.
+&\le1+S+\frac{A}{20000}
+\\ &=-\frac{187011273}{376250}<0.
 \end{aligned}
 \tag{6}
-\]
+```
 
-Since \(R\) has positive leading coefficient and even degree six,
+Since $`R`$ has positive leading coefficient and even degree six,
 
-\[
+```math
 R(x)\longrightarrow+\infty\quad(x\longrightarrow\pm\infty).
-\]
+```
 
-Together with \(R(1)<0\), the intermediate value theorem supplies one real root on each side of \(1\). They are distinct. Therefore
+Together with $`R(1)<0`$, the intermediate value theorem supplies one real root on each side of $`1`$. They are distinct. Therefore
 
-\[
+```math
 Z_{\mathbb C\setminus\mathbb R}(R)\le4.
-\]
+```
 
-On the other hand \(P(x)=Q(x)^2+1>0\) for every real \(x\). It has degree six and no real root, so
+On the other hand $`P(x)=Q(x)^2+1>0`$ for every real $`x`$. It has degree six and no real root, so
 
-\[
+```math
 Z_{\mathbb C\setminus\mathbb R}(T_\gamma R)
 =Z_{\mathbb C\setminus\mathbb R}(P)=6.
-\]
+```
 
-Thus \(T_\gamma\) increases the number of nonreal zeros, proving that the sequence (1) is not a CZDS.
+Thus $`T_\gamma`$ increases the number of nonreal zeros, proving that the sequence (1) is not a CZDS.
 
-This establishes a negative answer to the entire universal implication in Problem 4.16. The rational choice of \(q\) is an exact witness, not a numerical approximation to a root calculation.
+This establishes a negative answer to the entire universal implication in Problem 4.16. The rational choice of $`q`$ is an exact witness, not a numerical approximation to a root calculation.
 
 ## 4. Why the construction works
 
-The polynomial multiplier sequence \(1+k+k^2\) is the classical non-CZDS example discussed in Craven and Csordas’s 1995 work and their 2004 Example 4.5. The quadratic form (3) gives a finite witness to failure of positivity for its reciprocal operator.
+The polynomial multiplier sequence $`1+k+k^2`$ is the classical non-CZDS example discussed in Craven and Csordas’s 1995 work and their 2004 Example 4.5. The quadratic form (3) gives a finite witness to failure of positivity for its reciprocal operator.
 
-Multiplying by a Gaussian factor \(q^{k^2}\), with \(q<1\) sufficiently close to \(1\), forces the required root decay. It also preserves the multiplier property. The strict finite inequality witnessing failure of the CZDS property survives this perturbation. Equations (3)–(6) make that continuity argument fully quantitative.
+Multiplying by a Gaussian factor $`q^{k^2}`$, with $`q<1`$ sufficiently close to $`1`$, forces the required root decay. It also preserves the multiplier property. The strict finite inequality witnessing failure of the CZDS property survives this perturbation. Equations (3)–(6) make that continuity argument fully quantitative.
 
 More generally, any strictly positive multiplier sequence with a strict finite reciprocal-positivity obstruction can be damped in this way. The classical example, the Gaussian multiplier theorem, and the finite-dimensional perturbation argument are all credited; no claim is made that the underlying construction is new.
 
 ## 5. The earlier result and its printed inconsistency
 
-Craven–Csordas 1996, Theorem 3.3 on printed p. 520, asserts that a TP-sequence can have a reciprocal which is not a \(\lambda\)-sequence. Here a TP-sequence has an entire ordinary generating function in \(\mathcal{LP}^{+}\). Such a sequence has root decay zero and is itself a multiplier sequence: applying the classical multiplier \(1/k!\) to its ordinary generating function gives the required exponential generating function.
+Craven–Csordas 1996, Theorem 3.3 on printed p. 520, asserts that a TP-sequence can have a reciprocal which is not a $`\lambda`$-sequence. Here a TP-sequence has an entire ordinary generating function in $`\mathcal{LP}^{+}`$. Such a sequence has root decay zero and is itself a multiplier sequence: applying the classical multiplier $`1/k!`$ to its ordinary generating function gives the required exponential generating function.
 
-A positive CZDS must have a reciprocal which preserves strict positivity of real polynomials, the defining property of a \(\lambda\)-sequence. Thus the existential assertion of Theorem 3.3 already implies a counterexample to the later Problem 4.16.
+A positive CZDS must have a reciprocal which preserves strict positivity of real polynomials, the defining property of a $`\lambda`$-sequence. Thus the existential assertion of Theorem 3.3 already implies a counterexample to the later Problem 4.16.
 
 However, the displayed identity used for its specific example is incorrect. The source literally prints
 
-\[
+```math
 (x+\tfrac12)^2e^x
 =\sum_{k\ge0}\frac{(k-\tfrac12)^2}{k!}x^k.
-\]
+```
 
 In fact,
 
-\[
+```math
 \sum_{k\ge0}\frac{(k-\tfrac12)^2}{k!}x^k
 =(x^2+\tfrac14)e^x,
-\]
+```
 
-whereas the coefficients corresponding to \((x+\tfrac12)^2e^x\) are \(k^2+\tfrac14\). The printed sequence \(\{(k-\tfrac12)^2\}\) is therefore not a multiplier sequence. Its stated example does not prove the assertion as written.
+whereas the coefficients corresponding to $`(x+\tfrac12)^2e^x`$ are $`k^2+\tfrac14`$. The printed sequence $`\{(k-\tfrac12)^2\}`$ is therefore not a multiplier sequence. Its stated example does not prove the assertion as written.
 
 The actual raster of printed p. 520 was independently inspected by the root and analytic-targets agents. This discrepancy is present in the printed source; it is not an OCR artifact. The supplied PDF has SHA-256
 
-\[
+```math
 \texttt{26f3fa0dd024b896df967fb50cb8ded59171c3db53178d0f389ef90df0c885c3}.
-\]
+```
 
 We do not infer from this mistake that the existential theorem is false, or that the later question qualifies as previously unresolved. The target remains **uncounted**.
 

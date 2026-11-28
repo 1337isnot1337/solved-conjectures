@@ -21,8 +21,8 @@ Break a padded pair into $`H`$ rows of length $`m`$. Row $`i`$, counted from the
 For each $`i\lt H`$, compute the integer coefficients $`r_{ij}`$ of the remainder of the formal monomial $`Y^i`$ modulo $`P(Y)`$, for $`0\le j\lt d`$. Monicity gives these remainders in $`\mathbb Z[Y]`$. Then
 
 ```math
- \sum_{i<H}A_i X^i
- \equiv S(X)=\sum_{j<d}\left(\sum_{i<H}r_{ij}A_i\right)X^j
+ \sum_{i\lt H}A_i X^i
+ \equiv S(X)=\sum_{j\lt d}\left(\sum_{i\lt H}r_{ij}A_i\right)X^j
  \pmod{P(X)}.
 ```
 
@@ -31,7 +31,7 @@ The coefficients in parentheses have absolute value at most a fixed constant tim
 It remains to impose the two exact equalities
 
 ```math
- \sum_{i<H}B_i X^i=P(X),\qquad S(X)=bP(X).
+ \sum_{i\lt H}B_i X^i=P(X),\qquad S(X)=bP(X).
 ```
 
 After collecting coefficients, each is $`\sum_{i\lt H}U_i X^i=0`$, with $`U_i`$ fixed affine functions of the row values and $`|U_i|\le JX`$ for an effective fixed $`J`$. This equality holds precisely when there are signed carries $`t_{-1}=t_{H-1}=0`$ and $`U_i+t_{i-1}=Xt_i`$ for every $`i`$. Necessity follows by repeatedly taking the low coefficient modulo $`X`$ and dividing by $`X`$. Sufficiency follows by telescoping. As $`X\ge2`$, every required carry has $`|t_i|\le2J`$.

@@ -20,8 +20,8 @@ Write `G_(N,K)(t)` for the usual Gaussian polynomial. Its symmetric quantum vers
 
 ```math
 \begin{split}
-P(t)&=G_{n,k}(t)G_{n-g\alpha,k+g\beta}(t),\\
-Q(t)&=G_{n+\alpha,k-\beta}(t)G_{n-(g+1)\alpha,k+(g+1)\beta}(t).
+P(t)&=G_{n,k}(t)G_{n-g\alpha,k+g\beta}(t),
+\\ Q(t)&=G_{n+\alpha,k-\beta}(t)G_{n-(g+1)\alpha,k+(g+1)\beta}(t).
 \end{split}
 ```
 

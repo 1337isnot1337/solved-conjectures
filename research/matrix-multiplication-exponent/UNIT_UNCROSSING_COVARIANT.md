@@ -4,7 +4,7 @@ This note gives an independent proof that a particular four-party degeneration i
 
 ## The two tensors
 
-Let the party dimensions be $(4,4,2,2)$, with bases $a_{ij}$ and $b_{ij}$ at the first two parties and $c_i,d_j$ at the last two, where $i,j\in\{0,1\}$. Define
+Let the party dimensions be $(4,4,2,2)$, with bases $a_{ij}$ and $b_{ij}$ at the first two parties and $c_i,d_j$ at the last two, where $`i,j\in\{0,1\}`$. Define
 
 ```math
 S=\sum_{i,j=0}^1 a_{ij}\otimes b_{ij}\otimes c_i\otimes d_j,

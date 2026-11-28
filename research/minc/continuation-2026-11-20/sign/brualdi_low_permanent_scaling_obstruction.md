@@ -11,7 +11,7 @@ a symmetric doubly stochastic scaling. Its missing step is a permanent
 comparison. One proposed sufficient hypothesis was merely
 
 ```math
-\operatorname{per}A<p_n:=\frac{D_n}{(n-1)^n}.
+\mathop{\mathrm{per}}A\lt p_n:=\frac{D_n}{(n-1)^n}.
 ```
 
 That hypothesis is insufficient, even when A is positive everywhere on C_n.
@@ -42,13 +42,13 @@ the positive diagonal matrix with i-th entry √(R_ii C_ii).
 Exact capacity brackets in Section 3 prove
 
 ```math
-0.9999835\,p_{24}<\operatorname{per}A
-<0.9999836\,p_{24}<p_{24},
+0.9999835\,p_{24}<\mathop{\mathrm{per}}A
+<0.9999836\,p_{24}\lt p_{24},
 \tag{1}
 ```
 
 ```math
-p_{24}<1.0001147\,p_{24}<\operatorname{per}B
+p_{24}<1.0001147\,p_{24}<\mathop{\mathrm{per}}B
 <1.0001148\,p_{24}.
 \tag{2}
 ```
@@ -64,7 +64,7 @@ extra-zero DAG. These support conditions do not repair the comparison.
 Multilinearity and elementary forbidden-fixed-point counting give
 
 ```math
-\operatorname{per}C_n=D_n+D_{n-1},
+\mathop{\mathrm{per}}C_n=D_n+D_{n-1},
 \qquad c_n=D_{n-1}+2D_{n-2}+D_{n-3},
 \qquad e_n=D_{n-2}+D_{n-3}.
 ```
@@ -75,12 +75,12 @@ first minor has n−1 positions, of which n−3 fixed points are forbidden.
 The second is C_(n−2). Therefore
 
 ```math
-\operatorname{per}W=D_n+D_{n-1}-\frac{91}{100}c_n,
+\mathop{\mathrm{per}}W=D_n+D_{n-1}-\frac{91}{100}c_n,
 \tag{3}
 ```
 
 ```math
-\operatorname{per}V=D_n+D_{n-1}-\frac75c_n+\frac{49}{100}e_n.
+\mathop{\mathrm{per}}V=D_n+D_{n-1}-\frac75c_n+\frac{49}{100}e_n.
 \tag{4}
 ```
 
@@ -93,7 +93,7 @@ range of order tests.
 For any nonnegative matrix M, write
 
 ```math
-\operatorname{cap}(M)=\inf_{x>0}
+\mathop{\mathrm{cap}}(M)=\inf_{x>0}
 \frac{\prod_i(Mx)_i}{\prod_j x_j}.
 ```
 
@@ -103,7 +103,7 @@ is multiplied by ∏r_i∏c_j under positive diagonal row and column scaling.
 Consequently the doubly stochastic scaling S(M) satisfies
 
 ```math
-\operatorname{per}S(M)=\frac{\operatorname{per}M}{\operatorname{cap}(M)}.
+\mathop{\mathrm{per}}S(M)=\frac{\mathop{\mathrm{per}}M}{\mathop{\mathrm{cap}}(M)}.
 \tag{5}
 ```
 
@@ -152,7 +152,7 @@ Hence Q=T+Δ is doubly stochastic and
 capacity gives
 
 ```math
-(1+\eta)^{-n}\le\operatorname{cap}(T)\le(1-\eta)^{-n}.
+(1+\eta)^{-n}\le\mathop{\mathrm{cap}}(T)\le(1-\eta)^{-n}.
 ```
 
 Combining this with (5), and noting that S(T)=S(M), yields the fully
@@ -160,9 +160,9 @@ rational permanent interval
 
 ```math
 \boxed{\quad
-\operatorname{per}T(1-\eta)^n
-\le\operatorname{per}S(M)
-\le\operatorname{per}T(1+\eta)^n.
+\mathop{\mathrm{per}}T(1-\eta)^n
+\le\mathop{\mathrm{per}}S(M)
+\le\mathop{\mathrm{per}}T(1+\eta)^n.
 \quad}
 \tag{8}
 ```
@@ -181,7 +181,7 @@ and column equal to y=1/n, top diagonal zero, and all other entries equal
 to x=(n−1)/(n(n−2)). With m=n−1, border expansion gives
 
 ```math
-\operatorname{per}H
+\mathop{\mathrm{per}}H
 =yD_mx^m+y^2m x^{m-1}(D_m+D_{m-1}).
 ```
 

@@ -217,8 +217,8 @@ multiplicative cover functional additive on full direct sums. If
 copies of `S` in `(S\oplus T)^n` gives the restriction
 
 ```math
-(S\oplus T)^n\ \ge\
-U\!\left({n\choose k}\right)S^kT^{n-k}.
+(S\oplus T)^n\ \ge
+\ U\!\left({n\choose k}\right)S^kT^{n-k}.
 ```
 
 The word-specific factor permutations form legitimate block-diagonal

@@ -21,7 +21,7 @@ Choose $d+1$ increasing arguments $x_0,\ldots,x_d$ at which the denominators are
 
 ```math
 \det[F_j(x_i)]_{i,j=0}^d=
-\frac{\displaystyle\prod_{i<j}(x_j-x_i)
+\frac{\displaystyle\prod_{i\lt j}(x_j-x_i)
             \prod_{1\le i\le j\le d}D_j(t_i)}
      {\displaystyle\prod_{i=0}^{d}\prod_{h=1}^{d}D_h(x_i)}. \tag{1}
 ```
