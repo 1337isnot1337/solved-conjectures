@@ -68,4 +68,39 @@ The elementary edge-root cut with just \(X,Y\) forced gives \(\beta\le p/4-C_4/(
 ```
 In the open density band choose \(t=1/45\) and use \(p\ge1243/5000\). If \(T_5\le34/10^7\), the right side is below \(1/25\): the three terms are bounded by \(1/32\), \((1-2(1243/5000))/90\), and \((34/10^7)450/(2(1243/5000))\), whose sum is strictly below \(1/25\). Keeping \(P_4\) and \(C_4\) in (1), or retaining the actual density \(p\) in (2), gives potentially stronger tests. This still does not bridge the gap to the dense-pentagon attachment argument.
 
+## Clipped signs: a stronger pentagon floor
+
+An independent internal research pass sharpened the edge-root estimate above by replacing the hard threshold with a bounded, gradual sign. With the same densities and any \(t>0\), the result is
+```math
+ \beta\le \frac p4-\frac{P_4}{p}+\frac{C_4}{2p}
+ +\frac{t}{8}\left(1-\frac{2M_2}{p}\right)
+ +\frac{T_5}{p}\left(\frac2t+\frac1{5t^2}\right). \tag{3}
+```
+Averaging with the elementary edge-root cut gives
+```math
+ \beta\le \frac p4-\frac{p^2}{2}
+ +\frac{t(1-2p)}{16}
+ +\frac{T_5}{2p}\left(\frac2t+\frac1{5t^2}\right). \tag{4}
+```
+At \(t=1/6\), a middle-band counterexample must therefore have **\(T_5>9/100000\)**. Indeed, if \(T_5\) is at most that value, (4) is bounded above by
+```math
+ \frac1{32}+\frac{1257}{240000}
+ +\frac9{100000}\frac{96}{5}\frac{2500}{1243}
+ < \frac1{25}.
+```
+This is more than 26 times the threshold given by the hard cut. The value of \(t\) can instead depend on \(p\), and (3) retains additional constraints from the path and four-cycle densities.
+
+To prove (3), fix a root edge \(uv\), force \(X=N(u)\) and \(Y=N(v)\) to opposite sides exactly as above, and write \(A=K(u,z), B=K(v,z)\) for an exterior vertex \(z\). Independently assign a sign whose mean has magnitude \(\min(|A-B|/t,1)\) toward opposition to the larger attachment. Compared with cutting all its incident edges into \(X\cup Y\), this incurs an expected loss of
+```math
+ \min(A,B)+\tfrac12|A-B|\bigl(1-\min(|A-B|/t,1)\bigr)
+ \le t/8+2AB/t .
+```
+For the inequality put \(s=\min(A,B)/t\), \(w=|A-B|/t\). If \(w\ge1\), the normalized loss is \(s\le2s(s+w)\). If \(w\le1\), subtract \(2s(s+w)\) from the normalized loss to obtain
+```math
+ s(1-2w)-2s^2+w(1-w)/2.
+```
+For \(w\le1/2\) this has maximum \(1/8\) over \(s\ge0\), by completing the square. For \(w\ge1/2\) its maximum is \(w(1-w)/2\le1/8\). Edges entirely in the exterior can increase the cost above their fair baseline only when the two expected signs agree. For one preferred sign the magnitude is at most \(K(u,z)/t\), and for the other at most \(K(v,z)/t\). The exterior penalty is therefore at most \((P(u)+P(v))/(4t^2)\), as above. Use the previous root-edge averaging identities for \(AB\), \(P(u)+P(v)\), and the exterior mass to get (3). Independent sign assignment constructs a true cut of cost at most the expectation; graphon sampling and continuity transfer the inequality.
+
+There is a parallel one-root improvement. Assign expected sign \(-W(r,z)+\min(K(r,z)/t,1)\); its two summands have disjoint supports almost everywhere. The dropped gain is at most \(t(1-d(r))/8\), since \(K(1-\min(K/t,1))\le t/4\). The exterior penalty is again \(P(r)/(4t^2)\). Optimizing \(t\) now gives the previous one-root formula with \(3/4\) replaced by \((3/4)4^{-2/3}\), including at each individual root. It improves that pentagon threshold by a factor of 16. The two-root bound gives the stronger uniform threshold, but neither excludes the whole middle band.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
