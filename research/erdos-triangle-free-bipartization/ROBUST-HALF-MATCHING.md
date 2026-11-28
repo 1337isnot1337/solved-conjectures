@@ -31,4 +31,14 @@ If no cut reaches the desired bound, all pair sums exceed 4/25−4U. Summing the
 
 Apply the [known dense-tail bound](https://arxiv.org/html/2103.14179) to obtain a contradiction. The use with weights follows by uniform blow-up for finite rational weights, then continuity; the strict margin just derived avoids an endpoint approximation problem.
 
+## Include edges within a cell
+
+The same proof works without requiring the six cells to be independent. In addition to U and V above, let W be the total unordered mass of edges within the six cells. Let U_h count the unmatched cross edges missed by cut h, and put M=max_h U_h. The sharp bound holds if
+
+    W+M ≤ 9/8000    and    U+5W+3M+V ≤ 203/20000.
+
+Indeed, if all three cuts cost more than 1/25, each designated within-half intercell pair contributes more than 1/25−W−U_h. Apply the overlap lemma with W+M in place of U to get R≥1/5−12(W+M). In the sum of the three cut costs, each within-cell edge is missed three times, each within-half intercell edge once, and each unmatched edge twice. The within-half intercell mass therefore exceeds 3/25−3W−2U, and the matching edges have present mass at least 1/20−3(W+M)−V. Adding U and W, the total unordered edge mass exceeds 17/100−U−5W−3M−V≥3197/20000. The dense tail again gives a contradiction.
+
+A simpler, weaker sufficient test is U+W≤9/8000 and 4U+5W+V≤203/20000, since M≤U. The refined criterion was derived in an independent internal AI research pass. It still gives no general existence theorem for such a six-cell partition.
+
 [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
