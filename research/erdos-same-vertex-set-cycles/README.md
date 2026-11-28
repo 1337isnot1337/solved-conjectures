@@ -64,6 +64,7 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Two-layer port routing](TWO-LAYER-PORT-ROUTING.md): separate the short routes from the last spanning path. This supports many terminal pairs at a spectral ratio independent of the number of pairs.
 - [Tree of port blocks](TREE-OF-PORT-BLOCKS.md): the spanning routing property composes along an arbitrarily large bounded-degree tree with matching interfaces.
 - [Connected parity trade spectrum](CONNECTED-PARITY-TRADE-SPECTRUM.md): every sign reversal below twice the girth is an even theta. The first other support and the full connected size spectrum are determined, including the two exceptional subdivisions.
+- [Longest-cycle overlap](LONGEST-CYCLE-OVERLAP.md): even at high degree and girth, a chord-dense longest cycle can be separated by a linear edit distance from any cycle with a spanning mate. See the [footprint switch checker](verify_footprint_switches.py).
 
 ## Current bottleneck
 
