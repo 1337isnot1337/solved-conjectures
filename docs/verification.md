@@ -1,5 +1,9 @@
 # Verification
 
+## Heinig’s Andrásfai bipartification conjecture
+
+Read the [written proof](../results/heinig-andrasfai-bipartification/PROOF.md) for the three sector cuts and the six-mass bound. The proof imports the published dense-tail theorem. No finite search is used. The [source and review record](../results/heinig-andrasfai-bipartification/REVIEW.md) identifies the exact assertion and its checks.
+
 ## Soukup’s complementary graph products
 
 Run `python3 results/soukup-complementary-graph-product/verify_components.py` to check the component description on all 65,536 labelled four-by-four bipartite relations. The [review](../results/soukup-complementary-graph-product/REVIEW.md) records the separate mathematical checks for the forcing and order arguments.

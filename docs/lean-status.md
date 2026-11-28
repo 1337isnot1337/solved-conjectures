@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Heinig’s Andrásfai bipartification conjecture
+
+The result has a written proof. No Lean formalization is registered. [Proof and review record](../results/heinig-andrasfai-bipartification/).
+
 The transfinite stable-core reduction for Komjáth’s property B problem has an independently reviewed written proof and finite checks of its recoloring argument. It has no Lean formalization. [Proof](../results/komjath-property-b/LOW-CODEGREE-PEELING.md) · [Review](../results/komjath-property-b/PEELING-REVIEW.md)
 
 ## Erdős’s arbitrary-cardinal bipartization conjecture
@@ -336,6 +340,7 @@ proofs are documented separately in the catalogue and result package.
 | Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture | Not formalized | [Full proof](../results/barrett-evans-hall-kempton-se/PROOF.md) uses exact finite certificates for small simple endpoint graphs and analytic reduction to arbitrary real weights. |
 | Abreu–Brondani–de Lima–Oliveira’s adjacency Nordhaus–Gaddum conjecture | Not formalized | The [written proof](../results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) and [independent review](../results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) cover all orders and all equality cases. The [finite verifier](../results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py) uses exact spectral calculations. |
 | Kempton–Zaitzeff–Muthuprakash’s normalized Nordhaus–Gaddum conjecture | Not formalized | The independently reviewed [written proof](../results/normalized-nordhaus-gaddum/PROOF.md) treats all graph orders at least three and both density regimes. [Review](../results/normalized-nordhaus-gaddum/REVIEW.md) · [Rational verifier](../results/normalized-nordhaus-gaddum/verify.py). |
+| Heinig’s Andrásfai bipartification conjecture | Not formalized | The [written proof](../results/heinig-andrasfai-bipartification/PROOF.md) covers arbitrary vertex weights and all template ranks. [Review record](../results/heinig-andrasfai-bipartification/REVIEW.md). |
 | Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum | Not formalized | [Computer-assisted proof](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) with exact finite certificates and an all-orders equality classification throughout the connected complementary class. The [sharp-maximum corollary](../results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md) has a written deduction and exact small-order checks. [Independent review](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md). |
 | Erdős’s arbitrary-cardinal bipartization conjecture | Not formalized | [Written proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md), [review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md), and [finite regression checks](../results/erdos-arbitrary-cardinal-bipartization/). |
 | Chen’s parity-free exact-one-marker conjecture | Not formalized | [Written all-graphs proof](../results/chen-parity-free-exact-one-marker/PROOF.md), [independent mathematical review](../results/chen-parity-free-exact-one-marker/REVIEW.md) and [residual-flow replay](../results/chen-parity-free-exact-one-marker/verify.py). |
