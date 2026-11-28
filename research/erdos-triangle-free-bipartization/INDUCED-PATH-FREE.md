@@ -49,4 +49,38 @@ Finally, a homomorphism from a weighted graph to any of these graphs lets us sum
 
 The theorem uses structural classification, weight stationarity and cut comparisons, not an exhaustion of input graph orders. It does not show that arbitrary triangle-free extremizers are induced-\(P_6\)-free.
 
+## An explicit strict gap throughout the open density band
+
+The same class of homomorphic preimages in fact satisfies
+```math
+ \beta\le 799/20000=1/25-1/20000
+ \qquad\text{when } e\le3197/20000
+```
+in total vertex mass one. This applies regardless of missing edges in the preimage.
+
+For connected preimages of Clebsch or \(V_8\), one has \(\beta\le e/5\) directly on the original edges. For \(V_8\), use the outer-cycle cut that misses all rungs and the four cuts that miss exactly one rail join each, as in [the ladder proof](MOBIUS-ODD-GIRTH.md). The five omitted edge sets partition the template. This also handles graphs mapping to expansions of \(V_8\). The preceding structural reduction gives a homomorphism preserving every original edge, so it remains to prove the strict claim for climbable preimages. In fact the following argument works up to \(e\le17/100\) for connected preimages.
+
+Aggregate each homomorphism fiber to one template vertex, writing \(E_{uv}\) for the actual edge mass between adjacent fibers, not the full product. The minimum over cuts of this edge-weighted template bounds the original minimum from above. Its edge weights obey \(E_{uv}\le w_u w_v\). Any version with some masses reduced and the affected edges reduced to the corresponding product capacities therefore obeys the sharp theorem already proved. In the climbable template write \(d_i=\min(a_i,b_i)\) and call \(c_i\) light when \(d_i<h=3/40\). Let \(L_{\rm light}\) be the total light \(c_i\) mass.
+
+Suppose the template with actual edge masses has \(\beta>1/25-1/20000\). Remove \(t=\min(L_{\rm light},1/20)\) mass from these light \(c_i\), scaling both incident edge weights proportionally at each affected vertex. The rest has cut cost at most \((1-t)^2/25\). In a maximizing cut of the rest, each affected \(c_i\) chooses its cheaper side, and restoring its mass changes neither the cheaper side nor the per-unit cost bound \(h\). A class removed completely can be placed on its cheaper side after restoration. This gives
+```math
+ \beta\le (1-t)^2/25+ht\le 1/25-3t/1000.
+```
+Therefore \(t<1/60\), so \(L_{\rm light}<1/60\). Remove **all** light \(c_i\); the remaining edge-weighted graph must still have \(\beta'>1/25-1/20000-h/60=387/10000\).
+
+Let \(b=387/10000\), and \(D\) be the greatest \(d_i\) of the remaining active indices. The shore cut gives \(C>b/D\) for their total \(c\)-mass \(C\); thus \(k\) active indices require mass greater than \(2\sqrt{2b}+2h(k-1)\). This exceeds one at \(k=4\), so \(k\le3\). If \(k\le2\), the remaining graph maps to Clebsch (adding inactive \(AB\) edges is used only for the mapping). Its actual edge mass is at most \(17/100\), so its cost is at most \(17/500<b\).
+
+If \(k=3\), repeat the previous three-index cut comparison with \(m_0\) replaced by \(h\). Allow \(S=1-2D-4h-C\) as an upper bound for all spare mass, even if the remaining total is less than one. The same proof gives
+```math
+ \beta'\le 2h^2+hS+S^2/4+LD/2-L^2/4,\qquad
+ 0\le L\le S\le 7/10-2D-b/D.
+```
+Using the actual spare mass instead of \(S\) first only strengthens the bound; the displayed right side is increasing in \(S\). Here \(S<18/125=0.144\) and \(D<57/200=0.285\), by AM–GM and by evaluating the increasing function \(2D+b/D\) at \(57/200\). If \(D<S\), the right side is at most \(2h^2+hS+S^2/2<0.0325\). If \(D\ge S\), it is at most \(2h^2+S(h+D/2)\). For \(D\le21/100\) this is at most \(0.03717<b\). For \(D>21/100\), the upper bound \(7/10-2D-b/D\) on \(S\) decreases and is less than \(12/125=0.096\) at \(21/100\). The bound is then at most \(0.03213<b\). This contradiction proves the strict result for connected preimages.
+
+Finally, a disconnected preimage with \(\beta>799/20000\) would have a component of mass \(r>799/800\), since the sharp bound per component gives \(\beta\le(\sum r_i^2)/25\le(\max r_i)/25\). This largest component has normalized edge mass at most \((3197/20000)/r^2<17/100\), so the connected strict result applies there. The other components add at most \((1-r)^2/25\). Since \(r>799/800\),
+```math
+ (799/20000)r^2+(1-r)^2/25\le799/20000.
+```
+This proves the uniform gap and still makes no assumption about the order of the input graph.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
