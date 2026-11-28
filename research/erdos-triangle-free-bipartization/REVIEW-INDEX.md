@@ -48,6 +48,8 @@ The product-weighted formulation is equivalent to the full finite statement by r
 
 - The [four-colour switching certificate](FOUR-COLOUR-SWITCHING.md) extends the overlap idea to proper four-colourings and imperfect four-way partitions. The three balanced colour cuts gain the sum of six one-shore max-flow savings; a weighted Mycielskian of C5 separates this from the cheaper bound. See the [exact controls](verify_four_colour_switching.py). No sufficient four-way partition has been forced at an arbitrary extremizer.
 
+- The [exact independent-law sampler](EXACT-INDEPENDENT-LAW-SAMPLER.md) improves the mixed-cut bound for every admissible pair of coverage marginals. It requires only mean coverage `3997/9600` instead of `.4235` with the same `1/3` floor, and works with a fixed optimum as well as a stationary law. It retains exact clipping savings outside that range. See the [rational interval checks](verify_exact_independent_sampler.py).
+
 ## Remaining gap
 
 The necessary conditions do not yet force a global maximizing graphon into any of the covered classes or yield an all-order bound directly. One specific next avenue is to find a nontrivial independent-attachment distribution whose payoff is exactly first-order optimal and whose disjointness edges create a useful second-order comparison. Ordinary copied neighborhoods cannot do that on a saturated graphon, and one-sided guarded trimming cannot force any missed addition in the common optimum law. A different avenue is to make the signed flag inequalities sufficiently strong in the medium density band. Neither possibility is stated as a completed proof.
