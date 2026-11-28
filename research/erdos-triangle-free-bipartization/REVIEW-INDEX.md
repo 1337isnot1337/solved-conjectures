@@ -56,6 +56,8 @@ The product-weighted formulation is equivalent to the full finite statement by r
 
 - [Near-floor stability](NEAR-DEGREE-FLOOR-STABILITY.md) carries the marked degree-floor obstruction through cut-distance limits. It permits a small triangle density and an approximately optimal cut, and a targeted reweighting supplies the needed cut at near-maximizers without stationarity. A fixed positive degree gap above `4B` contains at least `461/1000−o(1)` of their mass; the gap size is not explicit.
 
+- [Strict extremal expansion](STRICT-EXTREMAL-EXPANSION.md) rules out a cut attaining the elementary crossing lower bound at the maximum-density maximizer and gives a uniform strict gap for balanced splits. Maximizing `B+lambda e` makes the expansion gap explicit at all scales, also increasing the minimum degree and replacing stationarity by the exact affine missed-degree law.
+
 ## Remaining gap
 
 The necessary conditions do not yet force a global maximizing graphon into any of the covered classes or yield an all-order bound directly. One specific next avenue is to find a nontrivial independent-attachment distribution whose payoff is exactly first-order optimal and whose disjointness edges create a useful second-order comparison. Ordinary copied neighborhoods cannot do that on a saturated graphon, and one-sided guarded trimming cannot force any missed addition in the common optimum law. A different avenue is to make the signed flag inequalities sufficiently strong in the medium density band. Neither possibility is stated as a completed proof.
