@@ -59,6 +59,10 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Paired connectors](PAIRED-CONNECTOR-CONSTRUCTION.md): arbitrary prescribed red and blue connector paths can share their entire internal vertex set in a constructed high-girth completion, provided the two stub imbalances agree.
 - [Sharp theta merger](SHARP-THETA-MERGER.md): the smallest parity-changing three-colour trade can genuinely merge a cycle cover while leaving the other Hamiltonian, at every even girth. Independent mergers can be combined for both colours. See the [abstract pairing checker](verify_theta_merger.py).
 
+- [Spectral port routing](SPECTRAL-PORT-ROUTING.md): a balanced partition routes arbitrary prescribed endpoint pairs on a fixed host, including pairs on the same shore.
+- [Fixed-interface compression](FIXED-INTERFACE-COMPRESSION.md): suppress external paths through saturated vertices before testing quotient connectivity. The resulting criterion is exact for sufficiently strong blocks; see the [pairing checker](verify_fixed_interface.py).
+- [Two-layer port routing](TWO-LAYER-PORT-ROUTING.md): separate the short routes from the last spanning path. This supports many terminal pairs at a spectral ratio independent of the number of pairs.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
