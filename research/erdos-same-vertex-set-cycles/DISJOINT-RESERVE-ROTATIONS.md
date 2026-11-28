@@ -20,29 +20,7 @@ For either layer $`L`$, if $`t`$ edges per vertex are additionally allowed to be
 \rho=\frac{1-(3+2t)/D_*}{4}.
 ```
 
-Assume # Compatible rotation clouds from disjoint reserve edges
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585). This supplies simultaneous endpoint families and avoids the collision in [the independent-rotation example](PAIRED-ROTATIONS.md). It still does not force two closures.
-
-Let $`H`$ be a bipartite [density-critical core](DENSITY-CRITICAL-PROFILE.md) with parameters $`a,w,N`$, and put $`D_*=a w(N)>3`$. Suppose $`P,Q`$ are nontrivial edge-disjoint paths using the same vertex set $`S`$. Remove their edges from the reserve and colour the remaining edges red or blue so that the two reserve degrees differ by at most one at every vertex. Such a colouring exists in any bipartite graph: in a component with odd-degree vertices, add a temporary vertex adjacent to all the odd vertices, take an Euler circuit, and discard the temporary edges to obtain trails. Alternate colours on each trail. Every original odd vertex is an endpoint exactly once, and all internal passes contribute one of each colour. In an all-even component alternate on an Euler circuit, whose length is even because the component is bipartite.
-
-Assign the edges of $`P`$ to red and those of $`Q`$ to blue. The resulting layers $`H_R,H_B`$ are edge-disjoint and contain their respective initial paths. At every vertex the red layer degree is at least
-
-```math
-d_P(v)+\frac{d_H(v)-d_P(v)-d_Q(v)-1}{2}
-\ge \frac{D_*-3}{2},
-```
-
-and the blue bound is identical. Here $`d_P,d_Q`$ are zero outside $`S`$ and never exceed two. In particular, no edge used by one layer's rotations can conflict with an edge in the other layer, regardless of rotation histories.
-
-For either layer $`L`$, if $`t`$ edges per vertex are additionally allowed to be deleted, every nonempty proper set $`X`$ of size $`x`$ has at least $`(D_*-3-2t)x/4`$ remaining incident edges, by counting degrees and dividing by two. If $`T`$ is the set $`X`$ plus its external neighbours in this residual layer, all those incident edges lie in $`H[T]`$. Combining this with $`e_H(T)\le aP(|T|)`$, where $`P(y)=(y-1)w(y)`$ in the density profile, gives
-
-```math
-(|T|-1)w(|T|)\ge \rho xw(N), \qquad
-\rho=\frac{1-(3+2t)/D_*}{4}.
-```
-
-3+2t\lt D_*`$. In either layer the external neighbourhood of $`X`$ exceeds $`Cx`$ if
+Assume $`3+2t\lt D_*`$. In either layer the external neighbourhood of $`X`$ exceeds $`Cx`$ if
 
 ```math
 (C+1)x+\mathrm e^{\mathrm e}\le
