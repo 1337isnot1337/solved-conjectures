@@ -48,3 +48,23 @@ This gives the first bound in (2). Comparison against an original lexicographic 
 A density-sensitive maximizer is also a near-maximizer of B: Mantel gives b_lambda>=B*−lambda(1/4−e*). In particular if the conjecture fails, some sufficiently small positive lambda retains b_lambda>1/25. Thus it suffices to study a hypothetical counterexample chosen by this regularized objective, which has the explicit expansion and minimum-degree advantages above. This does not by itself raise the minimum degree to the thresholds of any known structural graph class.
 
 For a finite partition with masses a_i and total between-part edge mass Q, use an independent fair orientation of each optimal induced cut. The same proof gives Q>2B*(1−sum a_i²) at a lexicographic maximizer whenever the partition is nontrivial, and Q>=[2F/(1+2lambda)](1−sum a_i²) at a regularized maximizer. In the lexicographic case equality would force every positive-mass induced region to maximize B and hence have normalized edge mass at most e*. The argument also applies to fractional partitions: adjoin a fresh atomless coordinate to split each vertex into copies according to its fractional mark. The lifted kernel has the same e and B, since averaging the cut over the fresh coordinate gives a relaxed sign with the same cost.
+
+### A common attachment law for the regularized objective
+
+The density regularization does not discard the [common optimal-cut law](SATURATED-GRAPHON-EXTREMIZER.md); it changes its exact identities. A regularized maximizer W_lambda can be chosen zero-one and saturated almost everywhere. It admits one law of actual optimum cuts satisfying, simultaneously for every measurable independent set I,
+
+    E F_I(f) + lambda mass(I) <= 2F,
+    E m_f(x) + lambda d(x) = 2F almost everywhere.        (3)
+
+Here F_I is the smaller sign mass on I, m_f is the missed degree, and F=b_lambda+lambda e_lambda as above. In particular its expected missed degree is an affine decreasing function of its weighted degree, rather than a constant.
+
+The first assertion follows by increasing positive kernel values to one, then adding any positive set of missing, zero-codegree pairs between independent classes as in the saturation proof. These edits do not reduce B and would strictly raise the objective if they added positive edge mass. There are no isolated points of positive measure, since removing them and rescaling increases both terms.
+
+For (3), add independent classes attached to any finite list of independent sets I_i, with masses eps p_i summing to eps, and scale the original graphon to mass 1−eps. The exact optimized joint objective for a relaxed original cut f is
+
+    (1−eps)^2 [C_W(f)+lambda e_lambda]
+        + eps(1−eps) sum_i p_i [F_(I_i)(f)+lambda mass(I_i)].
+
+The new term is bounded uniformly by eps(1−eps)(1/2+lambda). Therefore only cuts whose old cost tends to b_lambda can minimize as eps tends to zero. Maximality of F implies that for every p the limiting infimum over those optima of the bracketed attachment average is at most 2F. Apply the finite-list minimax argument, then compactness of laws and the finite intersection property, exactly as for the unregularized attachment law. Rounding an optimum to actual signs on countably many independent classes preserves optimality and can only lower the expected F_I by concavity; the new density term does not depend on signs. Finally take I=N(x). The optimum first-order condition identifies F_(N(x))(f)=m_f(x), and integration over x turns the inequality into an equality since integral m_f=2b_lambda and integral d=2e_lambda. This proves (3).
+
+The elementary inequality m_f<=d/2 recovers d>=4F/(1+2lambda) pointwise, matching (2). The identity in (3) also allows local tests sensitive to lambda, rather than treating regularized graphs as arbitrary near-maximizers and losing all first-order information. No upper bound sufficient to settle #23 is obtained from it here.
