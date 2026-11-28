@@ -1,6 +1,6 @@
 # Split-and-trim perturbations at an Erdős bipartization extremizer
 
-A second-order test for [Erdős Problem 23](https://www.erdosproblems.com/23). Ordinary direct copies of neighborhoods cannot create new edges on a saturated triangle-free graphon. This version permits trimming old crossing edges to open disjoint attachments, while keeping the first-order error controlled. It applies to a global maximizer with finitely many optimum signs, and does not establish that every maximizer has this property.
+A second-order test for [Erdős Problem 23](https://www.erdosproblems.com/23). Ordinary direct copies of neighborhoods cannot create new edges on a saturated triangle-free graphon. This version permits trimming old crossing edges to open disjoint attachments, while keeping the first-order error controlled. It applies either to finitely many optimum signs or to arbitrary optimal-cut sets when the trimmed rows are locally compact and the endpoints are uniformly guarded.
 
 ## Statement
 
@@ -56,4 +56,20 @@ since T was always cut by f. The combined zero and first order excess is bounded
 
 The same expansion works for a finite global maximizer on a weighted support, even though a finite probability space itself has atoms. Split any chosen source vertex into copies with proportional masses. Assume the trimmed old edges are cut in all old optima, the post-trim preferred clone signs are strict and agree with the old source signs, and H adds only edges to the old source-induced graph while meeting the triangle conditions above. The strictly positive cost gap to any non-optimal old sign assignment immediately takes the place of the graphon compactness and margin argument. The leading optimum extension has zero linear discrepancy and exactly the displayed additional quadratic cost. Thus there must be an old optimum cutting all additions.
 
-This supplies a way to try second-order perturbations with nontrivial attachments, distinct from [the independent-attachment law](INDEPENDENT-ATTACHMENT-LAW.md), whose copied full neighborhoods cannot introduce any new edge on a saturated support. Finding guarded trims that force some missed addition for every old optimum remains open, as does removing the finite-optimum hypothesis in the graphon statement.
+This supplies a way to try second-order perturbations with nontrivial attachments, distinct from [the independent-attachment law](INDEPENDENT-ATTACHMENT-LAW.md), whose copied full neighborhoods cannot introduce any new edge on a saturated support. Finding guarded trims that force some missed addition for every old optimum remains open.
+
+
+## Remove the finite-optimum hypothesis by local row compactness
+
+Here is a second version for the full graphon extremal problem, with no restriction on the number or degeneracy of optimum cuts away from the perturbation. Use the same source and trim data and the same H. Replace the first two conditions concerning old cuts as follows:
+
+* The essential row family {W(x,·): x in S∪U} has compact closure in L². An essential row family may discard a null set of x.
+* For **every relaxed optimum** f in [-1,1], |(Wf)(x)|≥a almost everywhere on S∪U. By first variation, f(x)=-sign((Wf)(x)) there, so f is sign-valued on the guarded sites. The support of T lies only on opposite-sign pairs on those sites, almost everywhere.
+
+The conclusion in this form is that some relaxed optimum cuts all the added mass. In a maximizing triangle-free zero-one graphon its rounding to a true optimum sign can preserve every already signed coordinate (see [the saturation and attachment note](SATURATED-GRAPHON-EXTREMIZER.md)). Since all added edges lie in S by S, the same no-missed-addition conclusion thus holds for a true optimum sign.
+
+To prove this, let epsilon tend to zero along near-minimizers of the split graphon, still using true signs and cost at most B+epsilon³. Formula (1) and bounded coefficients give delta=O(epsilon). Extract a subsequence of the old cuts g converging weakly in L² to a relaxed optimum f, by compactness of the W-operator and continuity of the cost on weakly bounded sets. Although the signs need not converge strongly on the *whole* graphon, their fields converge uniformly on S∪U. For any tolerance, take a finite L²-net in the compact row closure; weak convergence gives convergence against its finite vectors, and Cauchy–Schwarz bounds the remaining error uniformly by the net radius times the uniform L² norm bound.
+
+The previous linear defect proof now applies on the guarded sites using this uniform field convergence alone. Disagreement of g with f on S∪U costs at least a/2 in the local positive flip gain, and the cheaper clone sign is f there with advantage at least a/2. Thus the same first-order bracket is at least −K delta+(a/2) mass({tau≠f} in S). The consequences are delta=O(epsilon²), disagreement of g with f on S∪U of mass O(epsilon²), and disagreement of tau with f on S of mass O(epsilon). The second-order bracket involves only S by S, so it converges to the added monochromatic cost for f, whether or not there are fractional or nonconverging coordinates elsewhere. If this cost were positive for every relaxed optimum, it would be positive for the extracted f, giving the same contradiction.
+
+The local row condition is automatic for a step graphon with finitely many rows. More generally, for any prescribed mass tolerance, the rows of all but that mass lie in some compact L² subset: the row map is measurable into separable L² and its pushforward probability measure is tight. This observation by itself does not give a trim meeting the disjointness test, because dropping trim targets outside a compact-row set can reintroduce a triangle. The reduction is deliberately conditional on the actual trimmed rows and on uniform margins on those rows only.
