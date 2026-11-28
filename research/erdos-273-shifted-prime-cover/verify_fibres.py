@@ -27,9 +27,9 @@ def mass_bound(q, d):
     return mass + F(1, q**3 * (q - 1))
 
 
-def small_prime_loss(q, parts, tail):
+def small_prime_loss(q, parts, tail, threshold):
     weights = [mass_bound(q, d) for d in parts]
-    slack = F(9, 10)
+    slack = threshold
     expected = tail / (q - 1) + sum(b / d for b, d in zip(weights, parts))
     best = expected / slack
     for d, b in zip(parts, weights):
@@ -44,8 +44,17 @@ def small_prime_loss(q, parts, tail):
 parts = smooth_even_parts(2000)
 tail = F(3, 2) - sum(F(1, d) for d in parts)
 direct = tail + sum(F(1, d) for d in parts if d >= 4 and prime(d + 1))
-small = sum(small_prime_loss(q, parts, tail) for q in range(5, 101) if prime(q))
+small = sum(small_prime_loss(q, parts, tail, F(9, 10)) for q in range(5, 101) if prime(q))
 large = F(5, 4) * (F(1, 64) + F(1, 2 * 3**6))
 assert direct + small < F(967, 1000)
 assert direct + small + large < F(99, 100)
 print("Direct and small-prime loss < 967/1000. Total loss < 99/100.")
+
+
+primes = [q for q in range(5, 201) if prime(q)]
+ordered = sum(small_prime_loss(q, parts, tail, 1 - F(i, q))
+              for i, q in enumerate(primes))
+ordered_tail = 3 * (F(1, 512) + F(1, 2 * 3**9))
+assert direct + ordered < F(954, 1000)
+assert direct + ordered + ordered_tail < F(97, 100)
+print("Ordered mixed-modulus loss < 97/100.")
