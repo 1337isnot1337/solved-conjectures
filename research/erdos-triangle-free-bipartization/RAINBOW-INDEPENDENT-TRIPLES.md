@@ -32,3 +32,26 @@ For example every middle-band counterexample with a proper three-colouring must 
         < 603/220000 = 1/25 - (1/44 + (3197/20000)/11).
 
 More generally optimizing k gives beta <= 1/44+e/11+O(T^(1/5)), with an absolute implied constant. These are all-order sampling estimates, not enumeration or finite-order instances of the conjecture.
+
+
+## Direct deletion to an acyclic cyclic orientation
+
+There is also an elementary robust form of the first observation. Let D be the cyclic orientation of the given proper three-colouring, let Delta be its maximum weighted degree (in-degree plus out-degree), and let f(D) be the least unordered product edge mass that needs deletion to make D acyclic. For any 0 < eta < 1 and q > 0,
+
+    f(D) <= eta + sqrt(q)/eta + 3 Delta T/(2q).                     (1)
+
+This holds without saturation, for an arbitrary finite weighted triangle-free support.
+
+**Bad roots.** The rooted independent-transversal mass at x counts the pairs in the other two colours that form a transversal with x. Its vertex-weighted sum over all three colours is 3T. Set aside the vertices with rooted mass >q; they have total mass at most 3T/q. After ordering the remaining vertices, independently put each set-aside vertex before or after all of them by a fair coin, and order the new vertices within each end uniformly. Every edge incident with a set-aside vertex is backward with probability 1/2, including edges within the set-aside group. Some extension of the order thus has additional backward mass at most 3 Delta T/(2q).
+
+**Recursive splits.** In a current block S, use the inherited triangle-free graph, weights and orientation. If a vertex x has both its incoming and outgoing degree within S greater than eta, apply the rooted interface above, with the cyclic names chosen so x is in C. Its incoming neighbours are the vertices of B_1 and its outgoing neighbours are those of A_1, so both child blocks have mass >eta regardless of how the C vertices are assigned. The backwards cost at the split is at most mass(S) sqrt(q): the restricted rooted Q_x is no larger than the original rooted mass at x, and there are no backwards A-to-B cross edges. Place the first child before the second and recurse on each. Each child has mass less than its parent's mass minus eta. Along any branch there are at most 1/eta splitting levels, and at any one level the total mass of split blocks is at most one. This gives a total backwards mass at splitting levels of at most sqrt(q)/eta. Each arc first separated at a split is counted there only.
+
+**Terminal blocks.** If no such vertex exists, list the vertices of incoming degree at most eta first, and list the remaining vertices, which have outgoing degree at most eta, last. Any backward arc either enters the first group or leaves the second. Charge it to its head in the first case and to its tail otherwise; the charged degree at each vertex is at most eta. Summing over all terminal blocks costs at most eta. Deleting every backward arc leaves an acyclic orientation, so the three terms give (1).
+
+In the full weighted graph, apply the circular-three bound after deleting f(D), then allow all deleted edges to be monochromatic. With the original edge mass e this yields
+
+    beta <= 1/44 + e/11 + (10/11) f(D).                          (2)
+
+For an explicit consequence in the middle band take eta=3/2500, q=eta^4. Then the first two terms of (1) sum to .0024. If Delta<=1 and T<=8*10^(-16), the last term is at most (3/2)*(8*10^(-16))/eta^4 = 1/1728. Thus f(D)<=.0024+1/1728 < .003015 = (11/10)*(603/220000), and (2) is strictly below 1/25. At a [weighted least-support extremizer](INDUCED-OPTIMUM-BALANCE.md) within the three-colourable class, Delta<=1/2, so the corresponding floor is T>1.6*10^(-15). This maximum-degree condition is not needed for the first floor.
+
+These are bounds on all three-colourable weighted counterexamples, not a proof that none exist. In particular a general recursive argument cannot price all splits on only the original triples that survive to their terminal blocks; the accounting in (1) uses the number of levels instead.
