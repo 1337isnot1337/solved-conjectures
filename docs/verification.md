@@ -1,5 +1,9 @@
 # Verification
 
+## Bardakov–Kozlovskaya’s even-order multivalued-group conjecture
+
+Requires Python 3.10+ with `mpmath`, `sympy`, `numpy`, and `scipy`. Run the fast smoke suite (< 30 s) from the repository root: `python3 results/bardakov-kozlovskaya-even-coefficients/verify/engine.py`, `python3 results/bardakov-kozlovskaya-even-coefficients/algebra/verify_regime1_complete.py`, `python3 results/bardakov-kozlovskaya-even-coefficients/analyst/certify_R2_1_and_2A_iv.py`, `python3 results/bardakov-kozlovskaya-even-coefficients/analyst/certify_R2_3_iv.py`, and `python3 results/bardakov-kozlovskaya-even-coefficients/analyst/verify_G3_empirical_corners.py`. Full exact-integer (`verify/engine.py` for $`n = 2..60`$, `verify/stress_to_84.py` for $`n = 62..84`$, and `verify/fast_certify_140.py` for $`n = 86..130`$) and 50-digit `mpmath.iv` certification commands and locked SHA-256 checksums appear in the [result landing page](../results/bardakov-kozlovskaya-even-coefficients/README.md) and [adversarial audit](../results/bardakov-kozlovskaya-even-coefficients/AUDIT.md).
+
 ## Erdős’s triangle-free bipartization conjecture (Vega partial theorem)
 
 Read the [written proof](../results/erdos-23-vega/PROOF.md) and [independent mathematical review](../results/erdos-23-vega/REVIEW.md). Run `python3 results/erdos-23-vega/verify.py` for exact scalar checks. No graph-order search or Lean formalization is used.
