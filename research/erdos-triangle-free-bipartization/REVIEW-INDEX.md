@@ -52,6 +52,8 @@ The product-weighted formulation is equivalent to the full finite statement by r
 
 - The [coverage dual and obstruction](COVERAGE-DUAL-OBSTRUCTION.md) combines every unclipped parameter into one weighted-independence test. It optimizes the actual clipped sampler on regular cuts, proving the expected-loss floor `3/64` on Clebsch, but independent attachments already exclude Clebsch and all larger odd folded cubes from global maximality. See [exact controls](verify_coverage_dual_obstruction.py).
 
+- [Degree-floor switching](DEGREE-FLOOR-SWITCHING.md) proves that edges between minimum-degree vertices are always missed under the stationary optimum law. It bounds pointwise crossing incidence into that floor locus, quantifies near-floor behavior, and uses triangle-freeness to show the exact floor locus has mass less than `17/30` at or above the conjectured value.
+
 ## Remaining gap
 
 The necessary conditions do not yet force a global maximizing graphon into any of the covered classes or yield an all-order bound directly. One specific next avenue is to find a nontrivial independent-attachment distribution whose payoff is exactly first-order optimal and whose disjointness edges create a useful second-order comparison. Ordinary copied neighborhoods cannot do that on a saturated graphon, and one-sided guarded trimming cannot force any missed addition in the common optimum law. A different avenue is to make the signed flag inequalities sufficiently strong in the medium density band. Neither possibility is stated as a completed proof.
