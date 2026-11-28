@@ -60,4 +60,27 @@ When \(c\ge3/10\), this finishes by also checking \(f(h)=hL\). When \(c\le3/10\)
 
 The balance of the argument is that a counterexample must concentrate enough mass in its bipartite components to defeat (1), but simultaneously spread that mass far enough beyond its two largest components to defeat (2). The packing inequality rules out both at once. In the unrestricted problem a vertex of \(C\) can see both shores of the same component; the random signs in (2) no longer give its full attachment degree as a coefficient. This theorem therefore does not resolve the unrestricted conjecture.
 
+## A perturbation allowance
+
+The same sharp \(1/25\) conclusion holds if the one-shore condition can be restored by deleting edges of total mass at most \(\eta=10^{-9}\). This is an explicit but unoptimized tolerance, independent of graph order and number of components.
+
+Write \(\delta=1/4000\). First strengthen (3): for \(c\in[1/5,4/5]\), if \(l_1+l_2\le s-\delta\), then
+```math
+ \sum_i l_i\min(l_i,c)\le 4/25-3\delta^2/4. \tag{4}
+```
+For each \(v\ge0,b>0\) let \(H(v,b)=k b^2+(v-kb)^2\) with \(k=\lfloor v/b\rfloor\), the maximum square sum of total mass \(v\) at cap \(b\). On an interval with \(k=2\) or \(3\), the derivative in \(b\) is \(2k((k+1)b-v)\ge0\) and has slope at least 12. Thus reducing the cap by \(u\) within the range \(2\le v/b<4\) reduces \(H\) by at least \(3u^2\): there are at most two pieces, each contributing at least six times its squared length.
+
+For \(c\ge3/10,x\le h\), the old bound \(hL\) is at most its value \(91/600\) at \(3/10\) (differentiate). It already has the required gap. Whenever the proof used \(f(x)\) with \(x\ge h\), its new upper bound is \(f(x)-\delta(L-x)\), improving by at least \(\delta/10\), since \(L-x\ge2/(25c)\ge1/10\). This treats the entire \(x\ge h\) range for \(c\ge3/10\), and \(x\ge c\) for smaller \(c\).
+
+For \(c\in[1/5,3/10]\) and \(h\le x\le c\), use \(H\) on the tail of total \(L-x\). Its previous cap \(s-x\) is at least \(2/15\) (minimize \(s-c=1-2c-2/(25c)\) at an endpoint of the interval), and the previous ratio was between 2 and 3. The cap decreases by \(\delta\); the new ratio is still less than 4, so the gap is at least \(3\delta^2\). Finally, if \(x\le h\), all coordinates but the largest are at most \(h-\delta/2\) if \(x\ge h-\delta/2\); otherwise all coordinates satisfy that cap. In either case the new sum of squares is at most \(h^2+H(L-h,h-\delta/2)\). To see this, start the leading coordinate at \(\max(x,h-\delta/2)\) and raise it to \(h\), reducing the tail total accordingly. The leading square grows with slope at least \(2(h-\delta/2)\), and \(H\) decreases with slope at most that much in its total-mass argument. Because \(2\le (L-h)/h\le3\) and \(h\ge1/5\), reducing the old tail cap from \(h\) by \(\delta/2\) gives the gap \(3\delta^2/4\). This proves (4).
+
+To apply it, assume \(G\) violates the bound and first use the [dense theorem](https://arxiv.org/html/2103.14179) to restrict to \(e\le3197/20000\). Let \(G'\) be its repaired graph. Then \(\beta(G')>1/25-\eta\). The three cut comparisons for \(G'\) give \(Q>1/25-\eta\), \(R<2397/20000+\eta\), and
+```math
+ \sum_i l_i\min(l_i,c)>4/25-4\eta,\qquad
+ c(L-l_1-l_2)>803/10000-10\eta.
+```
+For \(c\in[1/5,4/5]\) this implies the premise of (4), a contradiction. For \(c>4/5\), the sum is at most \(L^2<1/25\). For \(c<1/5\), the first inequality implies \(cL>4/25-4\eta\), so \(d=1/5-c<20\eta/3\). Rescale all the component masses down to total \(4/5\) and replace \(c\) by \(1/5\). The sum in (4) decreases by at most \(2d\), because increasing \(c\) helps and the summand is \(2\)-Lipschitz in the mass on \([0,1]\). The new sum remains above \(4/25-18\eta\). The original upper bound on the two largest masses was \(1-c-(803/10000-10\eta)/c\), an increasing function for \(c\le1/5\), so after scaling the largest-two sum is at most \(2/5-\delta\). Apply (4) at \(c=1/5\) for the contradiction, using \(18\eta<3\delta^2/4\).
+
+In particular this gives a condition in terms of missing edges in the induced bipartite remainder. Put \(D=\sum_i(a_i b_i-q_i)\). In a component, any vertex of \(C\) with weighted shore degrees \(r,s\) satisfies \(rs\le a_i b_i-q_i\), since the two neighborhoods cannot have edges between them. For any \(t>0\), delete the internal edges in components of mass at most \(t\), costing at most \(tL/4\). In bigger components delete each \(C\)-vertex's smaller shore attachment; by Cauchy–Schwarz this costs at most \(c\sqrt{LD/t}\). Thus the theorem also applies whenever \(tL/4+c\sqrt{LD/t}\le\eta\) for some \(t>0\), without assuming a fixed number of components. Neither condition follows from triangle-freeness alone.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
