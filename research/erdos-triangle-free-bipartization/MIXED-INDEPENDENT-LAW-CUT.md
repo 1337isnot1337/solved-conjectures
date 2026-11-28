@@ -53,3 +53,28 @@ Write M for W times the probability of equal f signs. Then M has unordered mass 
 In particular 0≤Delta≤1. Cauchy–Schwarz in the edge measure with density M gives integral_edges M q²≥B Delta², with the B=0 case immediate. The clipping endpoint terms integrate to (1/2) integral d_W(p'−p). Taking the average of the sampled cut losses proves (1) because none of those losses is below B. If p stays in the given interval and Delta≤3/4000, then its coefficient on the left is at least 1−(5/4)(3/4000)+(1/2)(3/4000)². Multiplying that by 1/25 gives strictly more than 3197/80000, establishing the stated sufficient condition. Negative correction from heavily covered vertices can also offset some undercoverage; the signed integral in (1) is the exact correction in this proof.
 
 Unlike the [half-independent covering argument](HALF-INDEPENDENT-COVER.md), (1) needs no grouping into complementary membership cells, and its error depends on the *average* mass deficit rather than the number of test sets. At zero deficit it recovers the same e/4 loss bound if the marginal coverage lies between one quarter and three quarters. It is not an ordinary fractional colouring certificate at nonzero deficit; some sampled shores can contain edges, and their cost is paid explicitly.
+
+
+## Tune the mixture to the available coverage
+
+The choice of one half above is not required. The following extension was independently derived in a background research pass and checked before integration. Fix a probability a in (0,1). Put l=2a/(1−a), and now let p' be p clipped to the interval [1/2−1/(2l), 1/2+1/(2l)]. For B>0, let E_M and Var_M denote expectation and variance under the probability measure obtained by normalizing the unordered monochromatic edge measure M by B. Then
+
+    B [1−(1+3a) Delta/2+a Delta²]
+      <= (1−a)e/2 + a integral d_W(p'−p)
+          − a B Var_M(q) − a integral_edges M q |p(x)−p(y)|,       (2)
+
+where q=1−p(x)−p(y). If B=0 the sharp cut conjecture already holds; the variance term can also be interpreted as zero.
+
+Use the independent-set option with probability a. Otherwise choose the optimum shore as before and use the offset l(1/2−p'(x)) in the common-uniform test. It belongs to [-1/2,1/2], and the full probability that a vertex enters the sampled cut shore is (1+a)/4+a(p−p'). On an edge the probability that both endpoints enter the second option, conditional on choosing their shared sign, is bounded as follows. Let r=|p(x)−p(y)|. Exactly one endpoint belongs to the independent test with probability 1−q; the allowed interval of the common uniform variable has length at most lq. With probability q neither belongs to that test, and the concurrent inclusion probability is at most 1/2+l(q−r)/2. These comparisons hold when no coverage is upper-clipped, since lower clipping only decreases the offsets. If one coverage is upper-clipped, its second-option inclusion probability is zero, so the resulting joint upper bound still holds: (l+1/2)q−lq²/2−lqr/2 is nonnegative because q+r=1−2 min(p(x),p(y))≤1. If the optimum signs are opposite, no joint inclusion is possible in either option.
+
+The missed-edge probability is one minus the sum of the marginals plus twice the joint probability. Thus it is at most the base (1−a)/2, plus a times the two clipping corrections, plus, on equal optimum signs only,
+
+    [(1+3a)/2] q − a q² − a qr.
+
+Average over edges and the stationary cut law. Use E_M q=Delta and E_M q²=Delta²+Var_M(q). This proves (2). The two savings beyond Jensen's bound are nonnegative. Taking a=1/2 and dropping them recovers (1).
+
+### A lower average-mass criterion
+
+Take a=3/5, so the clipping interval is [1/3,2/3]. If the original degree is positive almost everywhere and p≥1/3 almost everywhere, then p≤2/3 almost everywhere as well: any vertex with greater coverage could have no positive-measure neighborhood, since each edge satisfies p(x)+p(y)≤1. The clipping term therefore vanishes. If the average independent set has mass at least 847/2000=.4235, then Delta≤153/1000. On this interval, the left coefficient in (2) is decreasing in Delta. At B=1/25 its minimum product is exactly .031993816, while for e≤3197/20000 the right side, after omitting the savings, is at most .03197. The strict rational margin is 2977/125000000. This proves the sharp bound for any stationary middle-band graph with that independent-set law.
+
+More generally a uniform lower coverage c in [1/4,3/8] yields the tradeoff by taking a=1/(3−4c); the upper clipping limit 1−c follows from positive degree. At c=3/8 the independent sets alone already suffice by taking one as the cut shore. Intermediate mixing values matter when that direct argument does not apply. The existence of suitable laws at all extremizers is not established.
