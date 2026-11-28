@@ -81,7 +81,7 @@ For almost every edge xy, put X=N(x), Y=N(y). These are disjoint independent set
 
     μ(X\A)+μ(Y\B) ≥ m.
 
-In fact the left side can be replaced by the expected sum of the two **larger removed side masses** under the one common distribution of cuts. Thus every measurable vertex cover of the cross edges between X and Y has mass at least m. In particular at least m vertices by mass in each neighborhood meet the other neighborhood in positive edge measure: deleting exactly that incident support on one side is a cover. Every positive edge therefore lies in a positive measure of four-cycles. No uniform quantitative lower bound on the four-cycle density conditioned on an edge follows solely from this argument: a bipartite neighborhood graph can have many tiny matching blocks whose cover mass is large relative to its edge mass.
+In fact the left side can be replaced by the expected sum of the two **larger removed side masses** under the one common distribution of cuts. Thus every measurable vertex cover of the cross edges between X and Y has mass at least m. In particular at least m vertices by mass in each neighborhood meet the other neighborhood in positive edge measure: deleting exactly that incident support on one side is a cover. The incident-support fact alone is not new: by Fubini almost every wedge already has endpoints of positive codegree in any graphon. The new requirement concerns *all* covers, not just incident sets. No uniform quantitative lower bound on the four-cycle density conditioned on an edge follows solely from this argument: a bipartite neighborhood graph can have many tiny matching blocks whose cover mass is large relative to its edge mass.
 
 ## Fragmentation of the neighborhood graph forces tiny cut margins
 
@@ -100,3 +100,16 @@ For scale, let p be the ordered edge density and suppose p>3m. For a fixed optim
     ∫∫ W(x,y) T(x,y) dxdy ≥ (p−3m)²/8,
 
 by choosing t=(p−3m)/4 and averaging over optimum cuts. In particular an extremizer in this regime cannot have almost all of its edge-neighborhood graphs fragmentable into arbitrarily small blocks by arbitrarily small vertex removals. This only bounds fragmentation in the sense of vertex mass, not edge density of the neighborhood graph.
+
+## Quantitative version near the global maximum
+
+Let m be the ordered cut cost of any triangle-free graphon, and let δ>0 be its deficit from the global maximum. If t=√δ≤1/8, there is one distribution over fractional cuts q with F(q)≤m+3t for which
+
+    ||E g_q−m||_1 ≤ 7t,
+    E b_I(q) ≤ m+2t for every independent I.
+
+To see this, normalize test directions by ||h||_∞+A≤1, where A is the sum of the nonnegative attachment masses a_j before multiplying by t. In the perturbed cost formula the linear bracket B(q)=∫h g_q−A F(q)+∑a_j b_(I_j)(q) has |B(q)|≤1. The quadratic remainder has absolute value at most 3t²: the original reweighting contributes at most t² and the attachments at most 2t². Let q minimize the perturbed cost, which is at most m+δ by definition of the global maximum. It follows that F(q)−m≤δ+2t+3t²≤3t. With J(q)=B(q)+A(F(q)−m), the same upper bound on the optimum gives
+
+    (1−2tA)(F(q)−m)+2t J(q)≤δ+3t²,
+
+hence J(q)≤2t. The preceding compact separation argument on the sublevel set F≤m+3t therefore gives a common distribution with |E∫h(g_q−m)|≤2t for every bounded mean-zero h of norm at most one, and the stated attachment inequalities. For the L¹ estimate, put f=E g_q−m and test against one half the difference between sign(f) and its mean. This bounds ||f||_1≤4t+|∫f|≤7t. The exact theorem concerns δ=0. This approximate statement does not claim that rounding all near-optima preserves their costs exactly.
