@@ -95,6 +95,24 @@ I tried two ways of building ladders $`C_t\subseteq A^\ast_t`$ inside the Bowler
 
 A related observation for stage-by-stage ZFC constructions: if "$`u`$ is used as a ladder point" is decided in the final graph and $`M`$ contains the graph, then the first stage at which a node $`u\in M`$ is used lies in $`M`$. So the stage $`\delta_M=M\cap\omega_1`$ can never be the first use of a node of $`M`$. Any "use each point at one stage only" rule therefore starves the reflection step.
 
+## Lemma 6 (colouring number is not enough)
+
+Thomassen (*Combinatorica* 37 (2017) 785–793) proved the **edge**-connectivity version: every uncountably chromatic graph has an uncountably chromatic subgraph of infinite edge-connectivity. He notes that the same holds with colouring number in place of chromatic number. For **vertex** connectivity, the colouring-number version fails, by the following example.
+
+> Let $A=2^{<\omega}$ be the nodes of the binary tree. Let $B$ be a set of $\aleph_1$ branches such that every node lies on $\aleph_1$ of them. Join a branch $b\in B$ to every node on $b$. The resulting bipartite graph $\Gamma$ has $\operatorname{Col}(\Gamma)>\aleph_0$, since it is a type I $\aleph_0$-obstruction in the sense of Bowler–Carmesin–Komjáth–Reiher. It has no infinitely connected subgraph with two or more vertices.
+
+*Proof of the second claim.* Let $a,a'$ be incomparable nodes with meet $\sigma$. A branch through a node of the cone above $\sigma\frown 0$ meets only that cone and nodes $\le\sigma$. So the finite set $\{\tau:\tau\le\sigma\}$ separates $a$ from $a'$. Hence an infinitely connected subgraph $H$ has its nodes on one chain $C$. A branch with infinitely many $H$-neighbours must contain infinitely many nodes of $C$, so it is the unique branch through $C$. Every node of $H$ then has at most one branch-neighbour in $H$, which contradicts Lemma 2. $\square$
+
+So any positive solution of #1068 must use chromatic number, not just one of the two BCKR obstructions. Lemma 4 shows the same for type II obstructions in another way.
+
+## A sparse ladder graph can still be infinitely connected
+
+Soukup's triangle-free example uses sparse ladder systems (no special cycles). That property alone does not exclude countable infinitely connected subgraphs. Take a single chain of height $\omega^2+1$ and give each limit $\omega\cdot k$ a ladder of successor ordinals that also contains the first $k$ points of every earlier $\omega$-block. Such ladders are automatically sparse, since successor points have no ladders of their own. The resulting bipartite graph satisfies conditions (i) and (ii) of "A sufficient positive structure" above, so it is infinitely connected.
+
+## Forcing attempt (abandoned)
+
+A ccc forcing with finite conditions was considered. It adds a $T$-graph with frozen finite "port" sets at successor nodes, which give finite adhesion, and fixed per-chain budgets, which give finite upward degree. Lemma 3 would then rule out infinitely connected subgraphs, and the usual $\Delta$-system amalgamation would add a monochromatic edge $x_\xi < x_\eta$ against any colouring name. The amalgamation works if $x_\xi$ has no predecessors outside the $\Delta$-root and no lower neighbours. It breaks in general because the extension deciding $\dot f(x_\xi)$ may insert frozen successor nodes below $x_\xi$. Merging the chains then puts frozen nodes, whose ports lack the new lower endpoint, inside the span of the new edge, or of an old edge. I found no way to stop deciding extensions from doing this without making every chain finite, and finite chains force $\chi\le\aleph_0$.
+
 ## Next steps
 
 1. Look for an edge-thinning of $`\mathbf G`$, or of a Todorčević-type tree graph, that keeps (1) and (2) of Lemma 3 and has a colouring argument that does not escalate in ordinal length.
