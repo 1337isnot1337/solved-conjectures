@@ -34,3 +34,27 @@ To let X vary with y, first take a countable L1-dense family among all character
 The two sign choices use two countable families. For y in T the right side is zero, so the first conclusion follows. Averaging (4) gives (1), by Fubini and the jointly measurable representatives of the optimum signs. Finally, move the left side in (4) to the right and cancel the contributions of missed neighbors in T. The resulting inequality is (2).
 
 In fact (2) means that if the optimum signs on S are held fixed, changing the signs on T arbitrarily cannot create a beneficial single-vertex flip at a vertex of S: its signed excess of crossing edges into S already dominates its entire degree into T. It does not assert optimality against many flips on S at once.
+
+### Robust aggregate form near the floor
+
+For every measurable region A, let X(A) denote the unordered mass inside A of crossing edges in the common optimum law. Let delta=ess inf d>0. Then
+
+    X(A) <= (1/(2 delta)) integral_A (d−4B).               (5)
+
+In particular, if d<=4B+eta on A, its internal crossing mass is at most eta mass(A)/(8B).
+
+To prove (5), fix an optimum sign f. Independently sample a uniform root and a uniform threshold in [0,1] for each of the two f signs. In each sample keep the intersection of its root neighborhood with A on its own sign, restricted further to points for which the threshold is at most delta/d(x). Each resulting set is independent. The marginal inclusion of each point on its sign of A is exactly delta, and choices on opposite signs are independent. Apply (3) and average over those choices. The left becomes 2 delta² times the internal crossing mass of A for f. The expected right is delta integral_A a_f. Now average over f and divide by delta². This proof works uniformly for graphons, not only for an atomic cut.
+
+### Mass and density constraints on the floor locus
+
+Let t be the mass of T and let e_T, e_S denote the unordered edge masses induced by T and S. The conclusions above imply
+
+    e(T,S) = 4Bt−2e_T,
+    expected missed mass in S = B(1−2t)+e_T,
+    e_S >= 2B(1−t)+e_T.                                (6)
+
+The first identity integrates the degree on T. For the second, missed degree 2B on T counts its internal edges twice; those edges are all missed. For the inequality, integrate (2) over S and substitute the two identities. In particular e_T>=B(2t−1). If t>=1/2, (6) then gives e_S>=B, while the triangle-free Mantel bound gives e_S <= (1−t)^2/4. Therefore any counterexample has t<3/5: if t<1/2 this is immediate, and otherwise 1−t>=2 sqrt(B)>2/5.
+
+There is also an upper control e_T<=2Bt². To see it, choose optimal cuts of the two induced regions independently, then flip one sign at random. The expected cost is at most beta(T)+beta(S)+e(T,S)/2, where beta uses the original masses. Global extremality bounds beta(T)<=Bt² and beta(S)<=B(1−t)² by renormalization. Substitute the first formula in (6) and compare with B. Approximating the induced infima suffices if no cut attains them. This last upper control needs only global extremality and the value of the degree integral on T.
+
+If T is independent, a further exact simplification holds: the restriction of almost every stationary optimum f to S is already optimum for W[S], with cost B(1−2t). Indeed all T vertices have zero field for f and have no edges inside T, so the missed mass on T–S equals half its edge mass. After changing the cut on S, independently putting each T vertex on its better sign never charges more than that same half. Thus any improvement on S would improve f. This special case also implies t<=1/2.
