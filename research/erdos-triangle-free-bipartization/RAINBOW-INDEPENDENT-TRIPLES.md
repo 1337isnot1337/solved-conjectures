@@ -53,3 +53,27 @@ Use a weighted median prefix of this order, splitting one false-twin atom if nec
 For a concrete consequence take eta=1/500 and q=eta^4. The first two terms in (1) sum to .004. If Delta<=1 and T<=10^(-14), the last term is at most (3/2)*10^(-14)/eta^4 = 3/3200. Their sum .0049375 is smaller than 201/40000. Thus every middle-band counterexample of any proper three-colouring has T>10^(-14). At a [weighted least-support extremizer](INDUCED-OPTIMUM-BALANCE.md) within the three-colourable class, Delta<=1/2, so the corresponding floor is T>2*10^(-14). The maximum-degree hypothesis is not needed for the first floor.
 
 These are bounds on all three-colourable weighted counterexamples, not a proof that none exist. The recursive estimate charges split edges once and uses only an absolute bound on the number of levels; it does not assume that transversal mass disintegrates in the same way.
+
+
+## An independent-transversal root as an ordered three-block separator
+
+There is a different, local criterion when a proper three-colouring has an independent transversal that dominates nearly all vertices. Work modulo 3 and root in vertices r_i of colour i, one in each colour, with no pair adjacent. Partition any vertex v of colour i by its root neighbours:
+
+- O_i if it sees only r_(i+1), the root in its outgoing colour;
+- I_i if it sees only r_(i-1), the root in its incoming colour;
+- H_i if it sees both;
+- L_i if it sees neither.
+
+Write O,I,H,L for the corresponding unions, o,i,h,l for their masses, and Delta for the maximum weighted degree. The notation i for the mass of I is used only after dropping type subscripts.
+
+In the cyclic orientation, every arc between the first three blocks follows the order O, H, I; H itself is independent. Indeed distinct H-types share a root. H_j can have an edge to O_k only for k=j-1, in which case the arc enters H_j; it can have an edge to I_k only for k=j+1, when the arc leaves H_j. For O_j and I_k, the same colour k=j is prohibited, and k=j-1 would mean both see r_(j+1). The only remaining possibility k=j+1 gives an arc from O to I. These exclusions use only the third-vertex triangle obstruction, not maximality.
+
+Choose a prefix in the three-block order, not splitting either O or I. Splitting H is allowed because it is independent; split a false-twin atom if needed. Take the prefix as close as possible to half the mass of O+H+I. Its distance from that half is max(0, max(o,i)-(1-l)/2). There are no backwards cross arcs on these three blocks. Now assign each vertex v of L to the side that contributes less wrong-way mass to the three blocks. The cost of all such arcs is at most half the L-to-rest edge mass. Arcs internal to L cost at most their entire edge mass, so the total wrong-way mass is at most half the degree sum on L, at most Delta*l/2. The imbalance after adding L is bounded by
+
+    s_0 = max(l/2, max(o,i)-1/2+l).
+
+The [one-way separator inequality](ONE-WAY-SEPARATORS.md) proves the sharp Erdős bound whenever
+
+    s_0²/2 + (3/2) Delta*l <= 603/40000.                         (3)
+
+Thus at a proper-three-colour least-support extremizer, where Delta<=1/2, every independent transversal with undominated mass l<=1/100 must have a one-way block O or I of mass greater than .61. For l=0, a one-way block must have mass greater than 1/2+sqrt(603/20000), about .67364. In the first example even the largest allowed imbalance .12 gives .12²/2+.0075=.0147. Every directed six-cycle supplies two independent transversals (alternating positions), so (3) can be read as two separate constraints per directed-six-cycle root. A single highly unbalanced root does not suffice to certify the conjecture.
