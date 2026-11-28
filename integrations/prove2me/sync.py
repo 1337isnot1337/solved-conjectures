@@ -16,6 +16,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 ROOT = Path(__file__).resolve().parent
 API = "https://prove2.me/api/v1"
+SOURCE_REPO = "https://github.com/1337isnot1337/solved-conjectures.git"
 THEOREM_NAME = re.compile(r"[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*")
 
 
@@ -52,6 +53,14 @@ def load_mission(manifest):
         raise ValueError(f"{spec['name']}: the goal must be a theorem")
     spec["items"] = items
     return spec
+
+
+def check_published_inputs():
+    subprocess.run(["git", "fetch", "--no-tags", SOURCE_REPO, "refs/heads/main"], cwd=ROOT, check=True)
+    diff = subprocess.run(["git", "diff", "--quiet", "FETCH_HEAD", "--", "."], cwd=ROOT, check=False)
+    untracked = subprocess.check_output(["git", "ls-files", "--others", "--exclude-standard", "--", "."], cwd=ROOT)
+    if diff.returncode != 0 or untracked:
+        raise ValueError("Prove2Me writes require the integration files published on upstream main.")
 
 
 def lean_env(build):
@@ -191,6 +200,8 @@ def main():
         parser.error("--apply requires --username")
     if any(not re.fullmatch(r"[a-z0-9][a-z0-9-]*", slug) for slug in args.missions):
         parser.error("invalid mission slug")
+    if args.apply:
+        check_published_inputs()
     paths = [ROOT / "missions" / slug / "mission.json" for slug in args.missions]
     missions = [load_mission(path) for path in sorted(paths or (ROOT / "missions").glob("*/mission.json"))]
     if not missions or len({spec["name"] for spec in missions}) != len(missions):
@@ -198,7 +209,7 @@ def main():
     check_missions(missions)
     if not args.apply:
         return
-    key = read(args.key_file) if args.key_file else os.getenv("PROVE2ME_API_KEY", "")
+    key = read(args.key_file) if args.key_file else os.getenv("PROVE2ME_API_KEY", "").strip()
     if not key:
         parser.error("--apply requires a key file or PROVE2ME_API_KEY")
     client = Client(key)
