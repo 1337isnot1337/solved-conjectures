@@ -28,3 +28,15 @@ In particular, if every exterior vertex has either a triangle profile or a full 
 ## Relation to the circular obstruction
 
 [Bodirsky et al., Theorems 5 and 20](https://doi.org/10.1002/jgt.23235) characterize the maximal triangle-free templates that do not have circular chromatic number below three. Combined with [the circular bound](CIRCULAR-THREE.md), any saturated counterexample must contain an induced C6 and a Petersen-minus-one-vertex subgraph. The latter may have extra edges, and it need not extend to a full Petersen core. The proof in this note requires a full Petersen root and cannot assume that every saturated counterexample supplies one. The next issue is to control the weights of low-attachment and defect classes, or to find a comparably useful cut template directly from the smaller obstruction.
+
+## The smaller anchor suffices for a profile inequality
+
+The same bound applies if only the forced Petersen-minus-one anchor is supplied. In this variant classify **every** vertex by its profile into that anchor, including a root vertex itself (it is not its own neighbor). No root label is held fixed in the output cut. The anchor vertices retain their distinct two-token names when used to describe profiles, and every disjoint pair of present root names is required to be joined in the graph. Extra root edges are harmless.
+
+As before, the profiles of every vertex are pairwise-intersecting two-subsets. Define L using profiles of size at most two, and J as the mass of edges between vertices with high star profiles, now including any root vertex of these types. Every other high profile is a triangle. Send the high vertices to their Clebsch labels by profile alone. The pairwise argument from the first proof then applies to every edge of the high graph: endpoint profiles are disjoint, and only star–star edges can be mapped to distinct nonadjacent labels. This does not require root vertices to have positive or equal mass, and avoids any separate charge for an extra root edge. The same cut estimate follows:
+
+    beta <= e/5 + (2/5)J + (3/10)e_cross + (2/47)l².
+
+Thus each saturated counterexample has this nine-root configuration, and every such root set must have either l>1/50 or J>1/200. This is still not a proof that one of the anchors has small enough defects.
+
+The last inequality can be encoded on at most eleven labeled draws. The first nine specify the required anchor edges; on the last two, the indicators for a high star, low profile, or mixed low/high pair determine J, l², and e_cross. In unordered conventions J is half the probability of an edge with two high stars, and e_cross is half that of an edge with exactly one low endpoint. The whole-graph e/5 term is also a scalar multiple of the terminal edge probability. No sampled root weights, equality tests, or deletions are needed. Condition on the anchor and multiply by any nonnegative root event; averaging gives a polynomial necessary inequality at any counterexample. This remains valid if some root draws repeat while all required edges are present: each pair of disjoint token names imposes an actual edge, exactly what the labeling argument uses.
