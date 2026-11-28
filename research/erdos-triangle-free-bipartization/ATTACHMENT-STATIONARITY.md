@@ -72,3 +72,13 @@ The simultaneous degree equations also have finite rooted rows. For any unsigned
 On the balanced seven-cycle, the uniform mixture of the seven cuts missing one each of the seven edges has degree profile equal to its ordered cost, 2/49. For each translated copy of the independent set {0,2,4}, the two sides split it nontrivially for four of the seven omitted edges. Thus its mean attachment cost is 4/49. More strongly, averaging this attachment over the seven possible translates gives 4/49 for every optimal cut, so no alternative mixture can satisfy the attachment constraints for all seven sets. A fractional optimum cannot do better on these constraints: its randomized indicator rounding preserves degree balance and can only reduce attachment costs, as proved above. This example is not a conjectural extremizer; it separates the two stationarity tests exactly.
 
 The next step is to determine whether the new rows, ordinary graphon moment positivity, and the medium-density constraints exclude all globally maximizing counterexamples. No claim of LP or SDP infeasibility is made here.
+
+## Neighborhood-cover consequence
+
+Use an indicator-cut distribution as above. For almost every x, local flip optimality means that b_(N(x))(q) equals g_q(x) for almost every sampled cut. This follows by the pointwise degree inequality from one-sided variations, followed by Fubini for the cut distribution. Thus the expected attachment value of the whole neighborhood is exactly m for almost every x.
+
+For almost every edge xy, put X=N(x), Y=N(y). These are disjoint independent sets. If A⊆X and B⊆Y have no edges between them, then A∪B is independent. Its attachment is at least the sum of the attachments of A and B, by taking the minimum of the two side sums on each disjoint set. Removing a subset of an independent neighborhood lowers its attachment by at most the larger of the two removed side masses, which is in turn at most the removed total mass. Averaging the attachment inequalities therefore gives
+
+    μ(X\A)+μ(Y\B) ≥ m.
+
+In fact the left side can be replaced by the expected sum of the two **larger removed side masses** under the one common distribution of cuts. Thus every measurable vertex cover of the cross edges between X and Y has mass at least m. In particular at least m vertices by mass in each neighborhood meet the other neighborhood in positive edge measure: deleting exactly that incident support on one side is a cover. Every positive edge therefore lies in a positive measure of four-cycles. No uniform quantitative lower bound on the four-cycle density conditioned on an edge follows solely from this argument: a bipartite neighborhood graph can have many tiny matching blocks whose cover mass is large relative to its edge mass.
