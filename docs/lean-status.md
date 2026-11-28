@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Bardakov–Kozlovskaya’s even-order multivalued-group conjecture
+
+External contribution by Atharvsinh Jadav (`@Atharvsinh-codez`, with Gemini 4 Neon Extra High). Complete written and computer-assisted proof (exact integer base through $`n = 130`$, closed-form boundaries and Regime 1, and 50-digit outward-rounded `mpmath.iv` certification across Regime 2). No Lean formalization is registered. [Result package and audit](../results/bardakov-kozlovskaya-even-coefficients/).
+
 ## Erdős’s triangle-free bipartization conjecture (Vega partial theorem)
 
 Independent AI review of a written proof. No Lean formalization is registered or claimed. [Proof and review](../results/erdos-23-vega/).
@@ -344,6 +348,7 @@ proofs are documented separately in the catalogue and result package.
 | Barrett–Evans–Hall–Kempton’s spectrally extreme graph conjecture | Not formalized | [Full proof](../results/barrett-evans-hall-kempton-se/PROOF.md) uses exact finite certificates for small simple endpoint graphs and analytic reduction to arbitrary real weights. |
 | Abreu–Brondani–de Lima–Oliveira’s adjacency Nordhaus–Gaddum conjecture | Not formalized | The [written proof](../results/abreu-brondani-adjacency-nordhaus-gaddum/PROOF.md) and [independent review](../results/abreu-brondani-adjacency-nordhaus-gaddum/REVIEW.md) cover all orders and all equality cases. The [finite verifier](../results/abreu-brondani-adjacency-nordhaus-gaddum/verify.py) uses exact spectral calculations. |
 | Kempton–Zaitzeff–Muthuprakash’s normalized Nordhaus–Gaddum conjecture | Not formalized | The independently reviewed [written proof](../results/normalized-nordhaus-gaddum/PROOF.md) treats all graph orders at least three and both density regimes. [Review](../results/normalized-nordhaus-gaddum/REVIEW.md) · [Rational verifier](../results/normalized-nordhaus-gaddum/verify.py). |
+| Bardakov–Kozlovskaya’s even-order multivalued-group conjecture | Not formalized | External contribution by Atharvsinh Jadav (`@Atharvsinh-codez`, [Zenodo DOI 10.5281/zenodo.24601452](https://doi.org/10.5281/zenodo.24601452)). [Written proof](../results/bardakov-kozlovskaya-even-coefficients/PROOF.md) and [adversarial audit](../results/bardakov-kozlovskaya-even-coefficients/AUDIT.md) combine exact integer verification ($`n \le 130`$), closed-form boundaries and Regime 1, and 50-digit `mpmath.iv` certification of Regime 2. |
 | Heinig’s Andrásfai bipartification conjecture | Not formalized | The [written proof](../results/heinig-andrasfai-bipartification/PROOF.md) covers arbitrary vertex weights and all template ranks. [Review record](../results/heinig-andrasfai-bipartification/REVIEW.md). |
 | Barrett–Evans–Hall–Kempton’s dandelion conjecture and connected-complement minimum | Not formalized | [Computer-assisted proof](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-EXTENSION.md) with exact finite certificates and an all-orders equality classification throughout the connected complementary class. The [sharp-maximum corollary](../results/barrett-evans-hall-kempton-dandelion/SHARP-MAXIMUM.md) has a written deduction and exact small-order checks. [Independent review](../results/barrett-evans-hall-kempton-dandelion/CONNECTED-REVIEW.md). |
 | Erdős’s arbitrary-cardinal bipartization conjecture | Not formalized | [Written proof](../results/erdos-arbitrary-cardinal-bipartization/PROOF.md), [review](../results/erdos-arbitrary-cardinal-bipartization/REVIEW.md), and [finite regression checks](../results/erdos-arbitrary-cardinal-bipartization/). |
