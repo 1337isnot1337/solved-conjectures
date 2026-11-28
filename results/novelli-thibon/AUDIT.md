@@ -2,7 +2,7 @@
 
 Audit date: 21 November 2026. Coordination: [issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
 
-**Verdict: the proposed proof of the intended monomial-product identity passes independent mathematical review.** The argument covers every pair of partitions of the same size and all independent parameters in the defined multi-$t$ family. This audit does not establish priority, and it does not prove the separate Schur-positivity assertion.
+**Verdict: the proposed proof of the intended monomial-product identity passes independent mathematical review.** The argument covers every pair of partitions of the same size and all independent parameters in the defined multi-$`t`$ family. This audit does not establish priority, and it does not prove the separate Schur-positivity assertion.
 
 ## 1. Exact source and scope
 
@@ -23,24 +23,24 @@ Consequently every vertical comparison uses an earlier position followed by a la
 ```math
 B=\sum_r\binom{\mu_r}{2}=n(\mu'),\qquad
 A=\sum_{r\ge2}\binom{\mu_r}{2}
-  =\sum_{u\notin R_1}\operatorname{arm}(u),\qquad
+  =\sum_{u\notin R_1}\mathop{\mathrm{arm}}(u),\qquad
 |E(G_\mu)|=B+A.
 ```
 
-The count of cells with $1+\operatorname{leg}(u)=j$, excluding the bottom row, is $\mu_{j+1}$. In a column of height $h$, the labels run once through $1,\ldots,h-1$.
+The count of cells with $`1+\mathop{\mathrm{leg}}(u)=j`$, excluding the bottom row, is $\mu_{j+1}$. In a column of height $h$, the labels run once through $1,\ldots,h-1$.
 
 ## 3. Cancellation in the modified convention
 
 The distinction between the source's untilded and modified functions is substantial. The proof correctly starts from equation (57), rather than transferring a formula for an untilded function without checking the parameter inversion.
 
-For an optional vertical edge let $\delta\in\{0,1\}$ be the corresponding descent indicator, let $a$ be the arm, and put $t=t_{1+\operatorname{leg}}$. The included and excluded edge contributions sum to
+For an optional vertical edge let $`\delta\in\{0,1\}`$ be the corresponding descent indicator, let $a$ be the arm, and put $`t=t_{1+\mathop{\mathrm{leg}}}`$. The included and excluded edge contributions sum to
 
 ```math
 (t-q^a)q^\delta+(-t+q^{a+1})
 =
 \begin{cases}
-(q-1)q^a,&\delta=0,\\
-(q-1)t,&\delta=1.
+(q-1)q^a,&\delta=0,
+\\ (q-1)t,&\delta=1.
 \end{cases}
 ```
 
@@ -48,17 +48,17 @@ This verifies the cancellation before setting $q=1$. Multiplying these expressio
 
 ```math
 q^{I_G(\sigma)-\sum_u a(u)\delta_u(\sigma)}
-\prod_u t_{1+\operatorname{leg}(u)}^{\delta_u(\sigma)}.
+\prod_u t_{1+\mathop{\mathrm{leg}}(u)}^{\delta_u(\sigma)}.
 ```
 
 There is no remaining singularity in the derivative calculation. Even if one works in Laurent polynomials in $q$ before using nonnegativity of the HHL inversion statistic, expansion at $q=1$ remains valid.
 
 ## 4. The universal comparison identity
 
-Let $F_\sigma=F_{\operatorname{Des}(\sigma^{-1})}$. The standardization identity
+Let $`F_\sigma=F_{\mathop{\mathrm{Des}}(\sigma^{-1})}`$. The standardization identity
 
 ```math
-F_\sigma(X)=\sum_{\operatorname{std}(w)=\sigma}x_{w_1}\cdots x_{w_n}
+F_\sigma(X)=\sum_{\mathop{\mathrm{std}}(w)=\sigma}x_{w_1}\cdots x_{w_n}
 ```
 
 uses equal letters standardized from left to right. For $i<j$, the comparison $\sigma_i>\sigma_j$ therefore holds exactly when $w_i>w_j$. No equality case contributes. Summing over all words gives
@@ -116,14 +116,14 @@ The later hook-coefficient supplement was checked independently against the sour
 To avoid a collision between the graph parameter and the plethystic variable, write the latter as $z$. Theorem 3.2 and Carlsson–Mellit give, for a Dyck graph $H$ with incoming degrees $a_v(H)$,
 
 ```math
-\operatorname{LLT}_H[z-1;q^{-1}]
+\mathop{\mathrm{LLT}}_H[z-1;q^{-1}]
 =\prod_v(z-q^{-a_v(H)}).
 ```
 
 The incoming convention is explicit in Theorem 3.2: $a_j$ counts edges $i<j$. Since $\sum_v a_v(H)=|E(H)|$, multiplying by the defining factor $q^{|E(H)|}$ and applying $\omega F[1-z]=(-1)^nF[z-1]$ yields
 
 ```math
-\omega\widetilde{\operatorname{LLT}}_H[1-z]
+\omega\widetilde{\mathop{\mathrm{LLT}}}_H[1-z]
 =\prod_v(1-zq^{a_v(H)}).
 ```
 
@@ -131,8 +131,8 @@ Every optional vertical edge enters a different lower cell, so the subset sum in
 
 ```math
 \begin{aligned}
-&\frac{(t-q^a)(1-zq^{d+1})+(-t+q^{a+1})(1-zq^d)}{q-1}\\
-&\hspace{2cm}=q^a(1-zq^{d-a}t).
+&\frac{(t-q^a)(1-zq^{d+1})+(-t+q^{a+1})(1-zq^d)}{q-1}
+\\ &\hspace{2cm}=q^a(1-zq^{d-a}t).
 \end{aligned}
 ```
 

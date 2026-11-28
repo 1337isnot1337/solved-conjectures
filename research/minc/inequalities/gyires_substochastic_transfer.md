@@ -63,8 +63,8 @@ For every integer $`M\ge m`$, set
 ```math
 C_M(B)=
 \begin{pmatrix}
-B & u\mathbf1_M^T/M\\
-\mathbf1_Mv^T/M & (M-q)\mathbf1_M\mathbf1_M^T/M^2
+B & u\mathbf1_M^T/M
+\\ \mathbf1_Mv^T/M & (M-q)\mathbf1_M\mathbf1_M^T/M^2
 \end{pmatrix}.
 \tag{2}
 ```
@@ -174,9 +174,9 @@ proves
 
 ```math
 \begin{aligned}
-\frac{\mathop{\mathrm{per}}(C_M(B)C_M(B)^T)}{d_{M+m}}&\to F(BB^T),\\
-\frac{\mathop{\mathrm{per}}(C_M(B)^TC_M(B))}{d_{M+m}}&\to F(B^TB),\\
-\frac{\mathop{\mathrm{per}}(C_M(B)^2)}{d_{M+m}}&\to F(B^2).
+\frac{\mathop{\mathrm{per}}(C_M(B)C_M(B)^T)}{d_{M+m}}&\to F(BB^T),
+\\ \frac{\mathop{\mathrm{per}}(C_M(B)^TC_M(B))}{d_{M+m}}&\to F(B^TB),
+\\ \frac{\mathop{\mathrm{per}}(C_M(B)^2)}{d_{M+m}}&\to F(B^2).
 \end{aligned}
 \tag{8}
 ```

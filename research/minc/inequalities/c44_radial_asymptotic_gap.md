@@ -58,8 +58,8 @@ space. Jensen's inequality for $`-\log(1-x)`$ gives
 ```math
 \begin{aligned}
 \Psi(X)-\Psi(X_0)
-&\ge -\frac d2\log\left(1-\frac{d s^2}{d^2-1}\right)\\
-&\ge \frac{d^2}{2(d^2-1)}s^2\ge\tfrac12s^2.
+&\ge -\frac d2\log\left(1-\frac{d s^2}{d^2-1}\right)
+\\ &\ge \frac{d^2}{2(d^2-1)}s^2\ge\tfrac12s^2.
 \end{aligned}
 ```
 

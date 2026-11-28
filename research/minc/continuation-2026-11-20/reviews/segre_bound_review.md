@@ -6,7 +6,7 @@ Reviewed `research/minc/continuation-2026-11-20/inequalities/segre_alignment_che
 both associated exact checkers. The claimed auxiliary inequalities are
 
 ```math
-\Lambda_{(3,3)}(A)\le2\operatorname{per}A-9\prod_i a_{ii},
+\Lambda_{(3,3)}(A)\le2\mathop{\mathrm{per}}A-9\prod_i a_{ii},
  \qquad
  f_{H,\mathrm{sgn}}(A)\le\tfrac12\Lambda_{(3,3)}(A),
 ```
@@ -28,8 +28,8 @@ moment quantities have the direct Gram forms
 ```math
 \begin{gathered}
  G=(s_i\cdot s_j),\quad h=G\mathbf1,\quad
- L=\mathbf1^TG\mathbf1,\quad a=h^Th,\quad b=h^TGh,\\
- t_2=\operatorname{tr}G^2,\quad t_3=\operatorname{tr}G^3,\quad
+ L=\mathbf1^TG\mathbf1,\quad a=h^Th,\quad b=h^TGh,
+ \\ t_2=\mathop{\mathrm{tr}}G^2,\quad t_3=\mathop{\mathrm{tr}}G^3,\quad
  c=\sum_i h_i^3,\quad d=\sum_{i,j}h_iG_{ij}^2,\quad
  u=\sum_{i,j}G_{ij}^3.
 \end{gathered}
@@ -40,14 +40,14 @@ two-spinor tensors in the twenty-dimensional weight-three tensor space.
 Their frame matrix $`F`$ satisfies exactly
 
 ```math
-F^2=24F,\qquad \operatorname{tr}F=120,
+F^2=24F,\qquad \mathop{\mathrm{tr}}F=120,
  \qquad \sum_{g\in S_6}\chi_{(3,3)}(g)R(g)=6F.
 ```
 
 The character is calculated independently as the number of fixed
 three-subsets minus the number of fixed two-subsets. These identities give
 the rank-five singlet projector $`F/24`$ and establish the factor
-$`\Lambda=6\operatorname{haf}(|[v_i,v_j]|^2)`$ directly. This independently
+$`\Lambda=6\mathop{\mathrm{haf}}(|[v_i,v_j]|^2)`$ directly. This independently
 checks the constant in the second Bloch formula.
 
 For the permanent formula, the complex-sphere integral is

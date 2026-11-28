@@ -2,7 +2,7 @@
 
 This is a written counting bridge for the [partial Lean checkpoint](../../docs/verification/lean-hkm-ehrhart-partial-20261124.md). It is not the literal geometry theorem, does not add a conjecture entry, and carries no separate priority claim. The [written disproof on main](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/hkm-ehrhart/PROOF.md) gives the geometric membership proof.
 
-Let the graph have $N\ge3$ vertices and $t$ parts of size two, with all other parts singletons. For a dilation $m\ge0$, consider the integer vectors with equal total positive and negative mass $p\le m$. The membership bridge identifies those in the polytope by requiring each part to have absolute mass at most $m$. At most one part can violate that cap: total absolute mass is $2p\le2m$. Singletons never violate it. The resulting count is (C_N$m$-tR_N$m$), where $C_N$ omits the caps and $R_N$ counts violations for one fixed pair.
+Let the graph have $N\ge3$ vertices and $t$ parts of size two, with all other parts singletons. For a dilation $m\ge0$, consider the integer vectors with equal total positive and negative mass $p\le m$. The membership bridge identifies those in the polytope by requiring each part to have absolute mass at most $m$. At most one part can violate that cap: total absolute mass is $2p\le2m$. Singletons never violate it. The resulting count is (C_N$`m`$-tR_N$`m`$), where $C_N$ omits the caps and $R_N$ counts violations for one fixed pair.
 
 ## One violating pair
 

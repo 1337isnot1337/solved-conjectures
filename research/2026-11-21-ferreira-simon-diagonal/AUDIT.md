@@ -94,7 +94,7 @@ For $s>0$,
 Both displayed terms are strictly negative. Hence for every $0<\alpha<\beta<1$ and every $u\in(1/2,1)$,
 
 ```math
-f(s_\alpha(u))<f(s_\beta(u)).
+f(s_\alpha(u))\lt f(s_\beta(u)).
 ```
 
 The integrands are bounded and measurable. Integrating proves strict increase, without differentiating an improper integral in the parameter $\alpha$.

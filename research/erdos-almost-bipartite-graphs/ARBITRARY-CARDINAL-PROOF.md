@@ -11,7 +11,7 @@ This is the arbitrary-cardinal upper-bound conjecture in Erdős,
 [Problems and results on finite and infinite combinatorial analysis II](https://combinatorica.hu/~p_erdos/1982-24.pdf#page=7),
 §3, p. 137 of the 1982 reprint. Its preceding benchmark uses
 $\chi(G)>p$ for every cardinal $p$ and a deletion bound of $2n^{3/2}$.
-This is not the distinct exact-$\aleph_1$ construction in Erdős's
+This is not the distinct exact-$`\aleph_1`$ construction in Erdős's
 1981 Combinatorica paper, or the linear-budget impossibility question.
 
 ## 1. Finite defect orientations of shifts
@@ -50,9 +50,9 @@ with equally colored heavy endpoints, satisfy the end it points
 to in the auxiliary orientation, and let the other endpoint be
 the failed incidence. An arc with no heavy end may get either
 color. Induction bounds failures at each heavy center by
-$$
+```math
 2^{k-2}(n/T)^{1/(k-1)}=2^{k-2}T.
-$$
+```
 
 Now orient the monochromatic edges of the current shift. Such
 an edge is an incoming/outgoing arc pair at a unique center.
@@ -79,7 +79,7 @@ controls the heavy-center induction.
 For integers $K\ge k$, put $L=K-k+1$. Order the increasing
 $L$-tuples of $I$ lexicographically to obtain a new ordered set
 $J$. Map each increasing $K$-tuple to its $k$ consecutive
-length-$L$ windows, considered in order as elements of $J$. The
+length-$`L`$ windows, considered in order as elements of $J$. The
 windows strictly increase and together recover the original
 tuple. Along a forward shift the list of windows itself shifts
 forward. Thus this is an injective graph homomorphism
@@ -113,7 +113,7 @@ Fix $\epsilon>0$. First choose $k$ with $1/k<\epsilon$. Choose
 an integer $N\ge2$ such that
 $2^{k-1}n^{1+1/k}<n^{1+\epsilon}$ for all $n\ge N$. Now choose
 $K\ge\max(k,N)$. For $n\ge N$ apply the window embedding and the
-order-$k$ bound. For $n<N$ the order-$K$ shift has no odd cycle
+order-$`k`$ bound. For $n<N$ the order-$`K`$ shift has no odd cycle
 of length at most $n$, so no deletion is needed. This gives the
 literal strict budget at every positive integer $n$.
 

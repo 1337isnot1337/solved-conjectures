@@ -13,10 +13,10 @@ The subgraphs and their sides need not be induced. Let
 $`L=\sum_i(|A_i|+|B_i|)`$ be the total vertex incidence in the cover,
 and write $`K=L/n`$. For $`n\ge 4`$, a set of size
 
-$$
+```math
 O\left(\frac{\sqrt n}{c}
       +\frac{K^2n}{c(\log n)^2}\right)
-$$
+```
 
 meets every maximal independent set of size at least $`cn`$.
 In particular the conjectured sublinear bound holds for cover
@@ -49,10 +49,10 @@ itself and every neighbor linked to it through a light
 biclique. The expected total size of these additions,
 counting repetitions to upper bound their union, is at most
 
-$$
+```math
 s\left(1+\frac{2}{n}\sum_{i>h}|A_i||B_i|\right)
 \le s\left(1+\frac n2\sum_{i>h}p_i^2\right).
-$$
+```
 
 With positive probability all the large regions are hit by
 the samples and the size of the additions is at most twice
@@ -71,10 +71,10 @@ biclique, so $`w`$ was added.
 For $`j\ge0`$ set $`Q_j=(2^j\sum_{i>2^j}p_i^2)^{1/2}`$.
 By separating the tail into dyadic index bands,
 
-$$
+```math
  Q_j\le \sum_{\ell\ge j}2^{(j-\ell)/2}
           \bigl(2^\ell p_{2^\ell+1}\bigr).
-$$
+```
 
 For $`\ell\ge1`$ the expression in parentheses is at most twice
 the sum of the entries with indices $`2^{\ell-1}<i\le2^\ell`$,
@@ -94,10 +94,10 @@ The same proof works, choosing the dyadic cut amongst
 $`1\le h\le M=\min\{\sqrt n,n/\sqrt{m+1}\}`$ when $`M\ge 2`$.
 The bound is then
 
-$$
+```math
 O\left(\frac{\sqrt n+\sqrt{m+1}}{c}
         +\frac{K^2n}{c(\log M)^2}\right).
-$$
+```
 
 In particular $`L=O(n)`$ and $`m=o(n^2)`$ suffice. This uses
 a biclique incidence budget, not a geometric neighborhood

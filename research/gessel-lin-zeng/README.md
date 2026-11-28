@@ -8,7 +8,7 @@ For $`k\ge1`$, let
 
 ```math
 M_k=\{\bar1,1,1,\bar2,2,2,\ldots,\bar k,k,k\},
-\qquad \bar1<1<\bar2<2<\cdots<\bar k<k.
+\qquad \bar1<1<\bar2<2<\cdots<\bar k\lt k.
 ```
 
 For $`S\subseteq[k]`$, delete $`\bar j`$ when $`j\in S`$. Consider words in the remaining multiset such that every entry between the two copies of $`j`$ is larger than $`j`$. Let $`A_{k,S}(x)`$ count these words by internal descents and put
@@ -48,8 +48,8 @@ For example,
 
 ```math
 \begin{aligned}
-A_{1,0}&=1+x,& A_{1,1}&=1,\\
-A_{2,0}&=1+14x+21x^2+4x^3,&
+A_{1,0}&=1+x,& A_{1,1}&=1,
+\\ A_{2,0}&=1+14x+21x^2+4x^3,&
 A_{2,1}&=2+12x+6x^2,& A_{2,2}&=1+2x.
 \end{aligned}
 ```

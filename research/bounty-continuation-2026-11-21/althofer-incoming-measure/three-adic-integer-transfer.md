@@ -399,8 +399,8 @@ Dropping oddness for an upper bound, and using nonnegativity, gives
 ```math
 \begin{aligned}
 \sum_{\substack{n\in\mathcal S\\n\ge D_t}}n^{-s}f_t(n)
-&\le\zeta(s)D_t^{-s}\varphi(D_t)\lambda_s^t\\
-&=\frac23\zeta(s)D_t^{1-s}\lambda_s^t.
+&\le\zeta(s)D_t^{-s}\varphi(D_t)\lambda_s^t
+\\ &=\frac23\zeta(s)D_t^{1-s}\lambda_s^t.
 \end{aligned}
 \tag{17}
 ```
@@ -561,11 +561,11 @@ $`Z_t^{-s}`$. Hölder's inequality therefore gives
 \Pr_n(A_t)
 &=\mathbb E_n\left[
 (Z_t^{-s}1_{A_t})^{1/(s+1)}
-(Z_t1_{A_t})^{s/(s+1)}\right]\\
-&\le
+(Z_t1_{A_t})^{s/(s+1)}\right]
+\\ &\le
 \mathbb E_n[Z_t^{-s};A_t]^{1/(s+1)}
-\mathbb E_n[Z_t;A_t]^{s/(s+1)}\\
-&\le\mathbb E_n[Z_t^{-s};A_t]^{1/(s+1)}.
+\mathbb E_n[Z_t;A_t]^{s/(s+1)}
+\\ &\le\mathbb E_n[Z_t^{-s};A_t]^{1/(s+1)}.
 \end{aligned}
 \tag{25}
 ```

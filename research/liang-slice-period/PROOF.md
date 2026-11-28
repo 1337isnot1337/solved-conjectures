@@ -5,15 +5,15 @@
 ## Exact statement
 
 Let $`o`$ denote the misère outcome, $`P`$ for a losing position and $`N`$ for a winning one. For 0.3102, define $`m=\min(x,y)`$ and $`g=|x-y|`$. When $`m\ge12`$,
-\[
+```math
 o(0,2,x,y)=P\quad\Longleftrightarrow\quad
 \big(g=2\text{ and }m\equiv0,1\pmod4\big)
 \ \text{or}\ \big(g\ge3\text{ and }g\equiv2\pmod5\big).
-\]
+```
 In particular, for every integer $`k\ge3`$,
-\[
+```math
 o(0,2,4k+1,4k+3)=P,\qquad o(0,2,4k+6,4k+8)=N.
-\]
+```
 Both variable heaps in the second position are obtained by adding 5 to the first. They can exceed any proposed thresholds in Definition 4.2. Applying the asserted diagonal reduction to the second position would give the opposite conclusion.
 
 ## Exact recurrence and normal form
@@ -25,9 +25,9 @@ Omit the zero heap in the fixed prefix. Within the sorted triples $`(a,m,m+g)`$ 
 The empty position is $`N`$, because no move wins in misère play. Every other position in this domain has at least one move, and is $`P`$ exactly when all its options are $`N`$. Each move strictly decreases the sum of the heap sizes.
 
 Normalize $`m`$ modulo 4 from 12 onwards, and normalize $`g`$ modulo 5 from 3 onwards. Specifically, for the map $`r_{A,p}`$ set $`r_{A,p}(h)=h`$ for $`h<A`$ and $`r_{A,p}(h)=A+(h-A\bmod p)`$ for $`h\ge A`$. The candidate outcome for $`(a,m,m+g)`$ is the true outcome at
-\[
+```math
 \big(a,\ r_{12,4}(m),\ r_{12,4}(m)+r_{3,5}(g)\big).
-\]
+```
 Both reduced coordinates stay in the domain. The true outcome on the right uses at most 22 counters in each individual heap and is given by the same recurrence, without modular reductions.
 
 ## Why the finite check proves the unbounded formula

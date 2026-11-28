@@ -3,16 +3,16 @@
 **Partial result only.** Let $G_n(t)$ be the excedance enumerator of $123$-avoiding derangements of length $n$, as in [Fu–Tang–Han–Zeng, Conjecture 5.11](https://arxiv.org/html/1805.08945v2#S5). This note determines its exact support, and determines the first and last coefficients when $3\mid n$. It does not establish general gamma-nonnegativity or strictly positive central gamma coefficients. In particular, positivity of a coefficient of $G_n(t)$ alone does not imply central gamma-positivity.
 
 **Theorem.** For $n\ge1$,
-$$
+```math
 [t^k]G_n(t)>0\quad\Longleftrightarrow\quad
 \left\lceil\frac n3\right\rceil\le k\le
 \left\lfloor\frac{2n}3\right\rfloor.
-$$
+```
 For $m\ge1$,
-$$
+```math
 [t^m]G_{3m}(t)=[t^{2m}]G_{3m}(t)
 =\frac{1}{m+1}\binom{2m}{m}.
-$$
+```
 
 ## Proof
 
@@ -25,9 +25,9 @@ Now suppose $n=3m$ and $k=m$. Every path has the form $B\to C\to A$ with $A<C<B$
 Thus $A=[m]$, $C=[m+1,2m]$ and $B=[2m+1,3m]$, with the maps on $C$ and $B$ forced. The restriction $\pi:A\to B$ is a bijection. It can be any standardization of a $123$-avoiding permutation of length $m$: the initial block of positions $A$ has values larger than every value in the other two blocks, and the other two blocks are individually decreasing, so there is no further source of a $123$. Conversely, such a choice gives a derangement with exactly $m$ excedances. The Catalan enumeration of $123$-avoiders gives the stated lower extreme; reverse-complement gives the upper one.
 
 Finally, the empty permutation is allowed as an auxiliary construction, and placing a new outer transposition transforms a permutation $\pi$ of length $\ell$ into
-$$
+```math
 (\ell+2,\pi(1)+1,\ldots,\pi(\ell)+1,1).
-$$
+```
 Neither new endpoint can appear in an increasing triple. This preserves being a derangement and adds exactly one excedance and two positions. For any $k$ with $\lceil n/3\rceil\le k\le\lfloor n/2\rfloor$, set $m=n-2k$ and $r=3k-n$. Start with $m$ excedances on $3m$ positions (empty if $m=0$), then apply the construction $r$ times. The result has $m+r=k$ excedances on $3m+2r=n$ positions. Reverse-complement fills the rest of the asserted support. $\square$
 
 This also determines the first potentially nonzero gamma index: if $g_{n,j}$ denotes the coefficient in the basis $t^j(1+t)^{n-2j}$, then $g_{n,j}=0$ for $j<\lceil n/3\rceil$, $g_{n,\lceil n/3\rceil}>0$ whenever $n\ge2$, and $g_{3m,m}=C_m$. This follows by triangularity at the lowest exponent; it asserts nothing about signs at larger indices.

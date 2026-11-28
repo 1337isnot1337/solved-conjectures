@@ -30,8 +30,8 @@ where the second quantity requires a prime primitive root.
 Their analytic input is §2, Lemma 1, equations (3)–(4). These bound the smoothed sums
 
 ```math
-\sum_{n<x}\Lambda(n)(1-n/x),\qquad
-\sum_{n<x}\Lambda(n)\chi(n)(1-n/x).
+\sum_{n\lt x}\Lambda(n)(1-n/x),\qquad
+\sum_{n\lt x}\Lambda(n)\chi(n)(1-n/x).
 ```
 
 The lemma is attributed to the proof of **Bach's 1997 Lemma 2.1**. Theorem 2 uses these inequalities directly. Theorem 3 uses the same estimates inside a character sieve. Neither argument invokes a bound for the zero-counting function.

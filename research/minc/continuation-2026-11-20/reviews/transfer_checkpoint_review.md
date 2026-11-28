@@ -36,7 +36,7 @@ bipartite graph. The three edge weights give the stated common line sum.
 For any matrix H of line sum L, multilinearity gives
 
 ```math
-\operatorname{per}((1-u)U_n+uH/L)
+\mathop{\mathrm{per}}((1-u)U_n+uH/L)
 =\sum_{j=0}^n\sigma_j(H)(n-j)!(u/L)^j((1-u)/n)^{n-j}.
 ```
 

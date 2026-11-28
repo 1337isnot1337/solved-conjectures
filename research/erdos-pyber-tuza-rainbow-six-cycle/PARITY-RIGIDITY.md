@@ -7,14 +7,14 @@
 On one half of a parity graphon $V$, let $V_1,V_2,V_3$ be its within-half colours, using the original graphon measure. The three-colour path identity from [excluding parity limits](EXCLUDING-PARITY-LIMITS.md) holds unchanged without normalization: the constant kernel on the half has cube equal to one fourth times itself, and each of the three equal-index corrections is one twelfth times itself. Thus the sum $P$ of its six distinct-colour three-path kernels is $2\sum_i V_i^3$.
 
 For measurable endpoint weights $f,g$ supported on this half, with $0\le f,g\le1$, write $a=\int f$, $b=\int g$, and $E_i=\int f(x)g(y)V_i(x,y)$. The weighted bipartite four-cycle Cauchy–Schwarz inequality gives
-\[
+```math
 \int f(x)f(x')g(y)g(y') V_i(x,y)V_i(x',y)V_i(x',y')V_i(x,y')
 \ge \frac{E_i^4}{a^2 b^2},
-\]
+```
 where the integral uses the four indicated variables. To see this, normalize $f,g$ to probability densities and apply Cauchy–Schwarz first to the inner product of two rows and then to their column averages. Dropping the factors $f(x'),g(y'),V_i(x,y)\le1$ bounds the left side above by $\int f(x)g(y)V_i^3(x,y)$. Since $\sum E_i=ab$, convexity of the fourth power gives
-\[
+```math
 \int f(x)g(y)P(x,y)\ge 2a^2b^2/27.
-\]
+```
 This does not require any mixing or connectedness for individual colours.
 
 If $W$ is within cut norm $\delta$ per colour of $V$ in a common labelling, telescoping the three path edges gives absolute error at most $18\delta$ in the preceding weighted path integral. All internal vertices are restricted to the same half. For each edge replacement, fixing the other two vertices leaves a product of two separate tests in $[0,1]$ on the replaced edge. Its integral error is bounded by the cut norm by layer cake. Sum over the three edges and the six orders. In particular for $a,b\ge1/24$ and $\delta<10^{-9}$ the weighted path integral for $W$ is strictly positive.

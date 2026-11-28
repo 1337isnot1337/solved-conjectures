@@ -18,14 +18,14 @@ Equality occurs by taking one vertex from each clique with all $r$ labels distin
 
 **Upper bound on the transversal number.** Select one vertex from each of $r+1$ distinct label classes in $I$. Every maximal independent set blocks at most $r$ labels and contains all vertices of the other labels, so this selection hits every maximal independent set.
 
-**Matching lower bound on the transversal number.** Let $T$ be any set of size at most $r$. Write $t$ for the number of its clique vertices and let $D$ be the set of labels represented by $T\cap I$. We have $|D|\le r-t$. For every $a\in D$, its clique vertex is outside $T$ in at least $r-t$ different cliques. Assign different cliques to these labels, choosing greedily: the number of eligible cliques for each label is at least the number of labels to assign. Select the label-$a$ vertex in its assigned clique. In each unassigned clique take any vertex outside $T$, which is possible since $m>r$. The selected clique vertices form an independent set $S$ disjoint from $T$. Adjoin every vertex of $I$ with unused label. This is a maximal independent set: all cliques contain a selected vertex and the only excluded vertices of $I$ are adjacent to selected vertices. It avoids $T\cap I$ because all labels in $D$ were used, and it avoids $T$ on the clique side by construction. Thus
+**Matching lower bound on the transversal number.** Let $T$ be any set of size at most $r$. Write $t$ for the number of its clique vertices and let $D$ be the set of labels represented by $T\cap I$. We have $|D|\le r-t$. For every $a\in D$, its clique vertex is outside $T$ in at least $r-t$ different cliques. Assign different cliques to these labels, choosing greedily: the number of eligible cliques for each label is at least the number of labels to assign. Select the label-$`a`$ vertex in its assigned clique. In each unassigned clique take any vertex outside $T$, which is possible since $m>r$. The selected clique vertices form an independent set $S$ disjoint from $T$. Adjoin every vertex of $I$ with unused label. This is a maximal independent set: all cliques contain a selected vertex and the only excluded vertices of $I$ are adjacent to selected vertices. It avoids $T\cap I$ because all labels in $D$ were used, and it avoids $T$ on the clique side by construction. Thus
 ```math
 \tau(G)=r+1.
 ```
 
 ## Consequence at fixed $c$
 
-Take $0<c<1$, choose $L=\lceil\sqrt c\,m\rceil$ and $r=m-L$ for sufficiently large $m$. Now $n=m^2$ and
+Take $0<c<1$, choose $`L=\lceil\sqrt c\,m\rceil`$ and $r=m-L$ for sufficiently large $m$. Now $n=m^2$ and
 ```math
 i(G)=r+L^2\ge cn,\qquad \tau(G)=m-L+1\ge (1-\sqrt c)\sqrt n.
 ```

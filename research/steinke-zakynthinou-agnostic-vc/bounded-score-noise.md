@@ -15,7 +15,7 @@ On $`z=((x_i,y_i))`$ compute $`g=\sum_i(2y_i-1)u_{x_i}`$. Differences in trainin
 ```math
  p(w)=\cos^2(\pi w/2)\,1[-1\le w\le1].
 ```
-Apply $`T_\lambda(a)=\operatorname{sgn}(a)(|a|-\lambda)_+`$ coordinate by coordinate and leave all unmentioned coordinates zero. Denote the resulting finite-support vector by $`q`$. Return a classifier whose $`q`$-score is within $`\sqrt{nd}`$ of the supremum, or an exact maximizer when available. Use a selection rule depending only on $`q`$, including its nonzero coordinate names. In particular, it cannot depend on which additional zero coordinates were presented during computation.
+Apply $`T_\lambda(a)=\mathop{\mathrm{sgn}}(a)(|a|-\lambda)_+`$ coordinate by coordinate and leave all unmentioned coordinates zero. Denote the resulting finite-support vector by $`q`$. Return a classifier whose $`q`$-score is within $`\sqrt{nd}`$ of the supremum, or an exact maximizer when available. Use a selection rule depending only on $`q`$, including its nonzero coordinate names. In particular, it cannot depend on which additional zero coordinates were presented during computation.
 
 For every realization $`\|q-g\|_\infty\le 2\lambda`$. Thus the training mistake count is within $`4\lambda V+\sqrt{nd}`$ of its minimum on **every** input. For $`H=\{1_S:|S|\le d\}`$, use $`u_x=e_x`$, $`v_h=1_S`$. Choose at most $`d`$ indices with the largest strictly positive $`q`$-scores; this is an exact maximizer and uses only features in the input. For the finite singleton family in the pilot counterexample one may maximize directly over its known list, breaking ties by index.
 

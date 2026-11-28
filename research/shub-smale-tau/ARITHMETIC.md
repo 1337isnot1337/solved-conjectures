@@ -81,8 +81,8 @@ the smallest possible product of absolute values is
 ```math
 B(k)=
 \begin{cases}
-(t!)^2,&k=2t,\\
-(t!)^2(t+1),&k=2t+1.
+(t!)^2,&k=2t,
+\\ (t!)^2(t+1),&k=2t+1.
 \end{cases}
 ```
 
@@ -121,13 +121,13 @@ therefore does not supply the intended BSS separation.
 Let `R={r_1,...,r_N}` be any finite nonempty set of distinct integers. Put
 
 ```math
-\Delta_R=\prod_{i<j}|r_i-r_j|\in\mathbb Z_{>0},
+\Delta_R=\prod_{i\lt j}|r_i-r_j|\in\mathbb Z_{>0},
 ```
 
 with the empty product equal to one. For a prime `p` and integer `k>=1`, let
 
 ```math
-C_{p,k}(R)=\#\{\{i,j\}:i<j,\ r_i\equiv r_j\pmod {p^k}\}.
+C_{p,k}(R)=\#\{\{i,j\}:i\lt j,\ r_i\equiv r_j\pmod {p^k}\}.
 ```
 
 ### Lemma 3.1 (weighted collision identity)
@@ -172,8 +172,8 @@ For a root set of a length-`s` program, Lemma 2.2 also gives
 \begin{aligned}
 \Delta_R
 &\le 2^{\binom N2}
-\left(\prod_{r\in R}\max(1,|r|)\right)^{N-1},\\
-\log\Delta_R
+\left(\prod_{r\in R}\max(1,|r|)\right)^{N-1},
+\\ \log\Delta_R
 &\le\left[\binom N2+(N-1)2^{s-1}\right]\log 2.
 \end{aligned}
 \tag{3.4}

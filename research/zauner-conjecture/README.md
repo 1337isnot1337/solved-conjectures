@@ -15,7 +15,7 @@ Let $d=ab$ where $a,b\ge2$ and $\gcd(a,b)=1$. Identify $|j\rangle$ with $|j\bmod
 Let $D_s$ and $E_t$ be standard Weyl operators on the two factors, with $D_0=I_a$ and $E_0=I_b$. For $\rho=|\psi\rangle\langle\psi|$, set
 
 ```math
-C_{s,t}=\operatorname{tr}\bigl((D_s\otimes E_t)^*\rho\bigr),\qquad
+C_{s,t}=\mathop{\mathrm{tr}}\bigl((D_s\otimes E_t)^*\rho\bigr),\qquad
 \lambda=(d+1)^{-1/2}.
 ```
 
@@ -23,7 +23,7 @@ Then $C_{0,0}=1$ and the other entries have modulus $\lambda$. The rows are inde
 
 ```math
 P_2:=\sum_{i=1}^r p_i^2
-=\operatorname{tr}(\rho_A^2)
+=\mathop{\mathrm{tr}}(\rho_A^2)
 =\frac1a\sum_s |C_{s,0}|^2
 =\frac1a\left(1+\frac{a^2-1}{d+1}\right)
 =\frac{a+b}{d+1}.
@@ -63,33 +63,33 @@ The entry matrix $J$ corresponds under this change of coordinates to the product
 Since the dimensions are coprime and nontrivial, we may assume $a<b$. The diagonal block has a column beyond $r$ proportional to the all-ones vector in dimension $a$. Subtracting this column from each of the first $r$ columns yields the respective positive multiples of the first $r$ coordinate vectors. Its rank is therefore $r+1$ if $r<a$ and $r$ if $r=a$. The full rank formula is
 
 ```math
-\operatorname{rank}(C)=r^2,\qquad
-\operatorname{rank}(P)=r^2+\mathbf 1\{r<\min(a,b)\}.
+\mathop{\mathrm{rank}}(C)=r^2,\qquad
+\mathop{\mathrm{rank}}(P)=r^2+\mathbf 1\{r<\min(a,b)\}.
 ```
 
 The off-diagonal blocks carry exactly $d(d+1)(1-P_2)=d(a-1)(b-1)$ of the phase table’s squared Frobenius norm $d^2$. This proportion is independent of the remaining details of the Schmidt probabilities.
 
 ## Distances from separated phase data
 
-For any complex matrix $Q$ of rank at most $R$ with the shape of $P$, the matrix $\lambda Q+(1-\lambda)J$ has rank at most $R+1$. The best rank-$(R+1)$ approximation to $C$ in Frobenius norm can capture at most the sum of its largest $R+1$ squared singular values. Dividing this captured sum by $d$, and using the formula for $C$, gives an upper bound
+For any complex matrix $Q$ of rank at most $R$ with the shape of $P$, the matrix $\lambda Q+(1-\lambda)J$ has rank at most $R+1$. The best rank-$`(R+1)`$ approximation to $C$ in Frobenius norm can capture at most the sum of its largest $R+1$ squared singular values. Dividing this captured sum by $d$, and using the formula for $C$, gives an upper bound
 
 ```math
 \sqrt{R+1}\left(\sum_{i,j}(p_i p_j)^2\right)^{1/2}
 =\sqrt{R+1}\,P_2.
 ```
 
-Since $\|C\|_F^2=d$ and $C-\lambda Q-(1-\lambda)J=\lambda(P-Q)$, this proves
+Since $`\|C\|_F^2=d`$ and $C-\lambda Q-(1-\lambda)J=\lambda(P-Q)$, this proves
 
 ```math
 \frac{\|P-Q\|_F^2}{d^2}
 \ \ge\ \frac{d+1}{d}\max\left\{0,1-\sqrt{R+1}\,\frac{a+b}{d+1}\right\}.
 ```
 
-A sum of $R$ products of separate row and column phase functions has rank at most $R$. In particular when $a,b$ are comparable, the exact phase rank is at least a constant times $d$. The best unconstrained rank-$R$ relative Frobenius error tends to one when $R=o(d)$, since the lower bound tends to one and the zero matrix gives the upper bound one. The same lower bound applies across each CRT bipartition of a multifactor dimension.
+A sum of $R$ products of separate row and column phase functions has rank at most $R$. In particular when $a,b$ are comparable, the exact phase rank is at least a constant times $d$. The best unconstrained rank-$`R`$ relative Frobenius error tends to one when $R=o(d)$, since the lower bound tends to one and the zero matrix gives the upper bound one. The same lower bound applies across each CRT bipartition of a multifactor dimension.
 
 ## Algebraic implication and open scope
 
-The ranks of algebraic matrices are unchanged by a field embedding, since nonzero minors remain nonzero. If an algebraic overlap table can be mapped by a field embedding to a Weyl–Heisenberg SIC overlap table, its rank across this factorization must already be $r^2$ with $r\ge\lceil(d+1)/(a+b)\rceil$. For any nonzero algebraic $\gamma$, the same argument applied to the origin correction $C-\gamma J$ gives the invariant rank $r^2+\mathbf 1\{r<\min(a,b)\}$. The diagonal block proof uses only the nonzero common correction and therefore applies even when $\gamma$ changes sign or is nonreal under the embedding. This constrains an algebraic construction before the field embedding intended to produce a SIC.
+The ranks of algebraic matrices are unchanged by a field embedding, since nonzero minors remain nonzero. If an algebraic overlap table can be mapped by a field embedding to a Weyl–Heisenberg SIC overlap table, its rank across this factorization must already be $r^2$ with $r\ge\lceil(d+1)/(a+b)\rceil$. For any nonzero algebraic $\gamma$, the same argument applied to the origin correction $C-\gamma J$ gives the invariant rank $`r^2+\mathbf 1\{r<\min(a,b)\}`$. The diagonal block proof uses only the nonzero common correction and therefore applies even when $\gamma$ changes sign or is nonreal under the embedding. This constrains an algebraic construction before the field embedding intended to produce a SIC.
 
 The constraints apply to actual fiducials and the coprime tensor factorizations that are available. They do not provide a way to produce suitable phase data or to prove existence in arbitrary dimension.
 

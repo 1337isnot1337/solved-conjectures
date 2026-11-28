@@ -2,11 +2,11 @@
 
 **Partial research for Stanley’s pure O-sequence conjecture.** Every strict matroid truncation has a pure monomial order ideal compatible with any one specified nonloop. In particular, the 2-sum of any two strict truncations along nonloop elements has a pure $h$-vector realization. The series and parallel connections also have pure realizations and retain compatibility at the common element. This includes inputs with circuits smaller than their rank. Compatibility for arbitrary matroids and unrestricted Stanley remain open. [Issue #336](https://github.com/1337isnot1337/solved-conjectures/issues/336)
 
-Use $H_M(t)$ from the [companion note](README.md). A realization $mathcal O$ with distinguished variable $z$ is compatible at $e$ when its $z$-free monomials enumerate $H_{M\setminus e}$ and the order ideal $\{u:zu\in\mathcal O\}$ enumerates $H_{M/e}$. A rank-$r$ truncation of $N$ is strict if $r<r(N)$. A positive-rank strict truncation has no coloops. For any element of $N$, deletion lowers rank by at most one, so after the deletion there is still an independent set of size $r$.
+Use $H_M(t)$ from the [companion note](README.md). A realization $mathcal O$ with distinguished variable $z$ is compatible at $e$ when its $z$-free monomials enumerate $H_{M\setminus e}$ and the order ideal $`\{u:zu\in\mathcal O\}`$ enumerates $H_{M/e}$. A rank-$`r`$ truncation of $N$ is strict if $r<r(N)$. A positive-rank strict truncation has no coloops. For any element of $N$, deletion lowers rank by at most one, so after the deletion there is still an independent set of size $r$.
 
 ## A pair of generic initial ideals
 
-Let $M$ have rank $r\ge 1$ and let $e$ be neither a loop nor a coloop. Set $D=M\setminus e$ and $C=M/e$, on the same ground set of size $m$. Assume $D$ and $C$ are both strict truncations, allowing rank zero for $C$. We construct pure ideals for their $h$-polynomials in alphabets $X$ and $X\cup\{z\}$ respectively, where $|X|=m-r$. Every $z$-free monomial of the second ideal will belong to the first.
+Let $M$ have rank $r\ge 1$ and let $e$ be neither a loop nor a coloop. Set $D=M\setminus e$ and $C=M/e$, on the same ground set of size $m$. Assume $D$ and $C$ are both strict truncations, allowing rank zero for $C$. We construct pure ideals for their $h$-polynomials in alphabets $X$ and $`X\cup\{z\}`$ respectively, where $|X|=m-r$. Every $z$-free monomial of the second ideal will belong to the first.
 
 Work over $\mathbb Q$ and keep all $m$ ground-set variables, including variables for loops. The Stanley–Reisner ideals satisfy $I_D\subseteq I_C$, since a set independent in $C$ is independent in $D$. Apply a single invertible generic change of coordinates to both ideals. The nonempty open sets that produce their reverse-lexicographic generic initial ideals intersect. Write the variable order as $X>z>\theta_1>\cdots>\theta_{r-1}$, with a fixed order on $X$.
 
@@ -18,7 +18,7 @@ Now use $\mathcal O=\mathcal O_D\cup z\mathcal O_C$. A divisor of a monomial fro
 
 ## The parent-coloop case
 
-Write $M=\operatorname{Trunc}_r N$ with $r(N)>r$, and choose a nonloop $e$ of $M$. The contraction $C=\operatorname{Trunc}_{r-1}(N/e)$ is always strict. The deletion $D=\operatorname{Trunc}_{r}(N\setminus e)$ is strict except when $r(N)=r+1$ and $e$ is a coloop of $N$. In that exceptional case $N/e=N\setminus e=D$, and $C=\operatorname{Trunc}_{r-1} D$. The matroid $D$ may have coloops.
+Write $`M=\mathop{\mathrm{Trunc}}_r N`$ with $r(N)>r$, and choose a nonloop $e$ of $M$. The contraction $`C=\mathop{\mathrm{Trunc}}_{r-1}(N/e)`$ is always strict. The deletion $`D=\mathop{\mathrm{Trunc}}_{r}(N\setminus e)`$ is strict except when $r(N)=r+1$ and $e$ is a coloop of $N$. In that exceptional case $N/e=N\setminus e=D$, and $`C=\mathop{\mathrm{Trunc}}_{r-1} D`$. The matroid $D$ may have coloops.
 
 Take any monomial order ideal $\mathcal B$ enumerating $H_D$. Such an ideal exists because the independence complex is Cohen–Macaulay, so an Artinian reduction followed by an initial ideal yields it. Its degrees are at most $r$. With a fresh variable $z$, use
 
@@ -36,7 +36,7 @@ Constantinescu, Kahle and Varbaro already proved purity for strict truncations i
 
 ## Exact cross-check
 
-Take $M_1=\operatorname{Trunc}_4(U_{2,3}\oplus U_{3,3})$ with $p$ in the first summand. For $M_2$ take $\operatorname{Trunc}_3(U_{2,3}\oplus U_{2,2})$ with one of the two coloops of the parent marked as $p$. The first example has a circuit of size three below its rank, and the second has a coloop in its deletion at $p$. Compatible ideals in variables $x_i,z_i$ for the two shores are
+Take $`M_1=\mathop{\mathrm{Trunc}}_4(U_{2,3}\oplus U_{3,3})`$ with $p$ in the first summand. For $M_2$ take $`\mathop{\mathrm{Trunc}}_3(U_{2,3}\oplus U_{2,2})`$ with one of the two coloops of the parent marked as $p$. The first example has a circuit of size three below its rank, and the second has a coloop in its deletion at $p$. Compatible ideals in variables $x_i,z_i$ for the two shores are
 
 ```math
 \{1,x_1,\ldots,x_1^4\}\ \cup\ \{x_1^i z_1^{j+1}:0\le i\le1,\ 0\le j\le3-i\},

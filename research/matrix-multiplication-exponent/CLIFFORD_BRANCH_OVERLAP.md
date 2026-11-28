@@ -72,9 +72,9 @@ Here is a sharp construction. Let $`m=\min\{u,\lfloor n/2\rfloor\}`$. For each o
 ```math
 \begin{array}{c|cc}
  &e_1&e_2\\ \hline
-P_A&Z_{A,f}&Z_{A,i}\\
-P_B&Z_{B,f}&Z_{B,j}Z_{B,f}\\
-P_C&Z_{C,i}Z_{C,j}&Z_{C,i}.
+P_A&Z_{A,f}&Z_{A,i}
+\\ P_B&Z_{B,f}&Z_{B,j}Z_{B,f}
+\\ P_C&Z_{C,i}Z_{C,j}&Z_{C,i}.
 \end{array}
 \tag{6}
 ```
@@ -113,9 +113,9 @@ For sharpness, on each of $`\min(n,u)`$ disjoint blocks choose the source logica
 ```math
 \begin{array}{c|cc}
  &Z_h&X_h\\ \hline
-A&Z_{A,f}&X_{A,f}Z_{A,i}\\
-B&Z_{B,f}&X_{B,f}Z_{B,j}\\
-C&X_{C,i}&Z_{C,i}Z_{C,j}.
+A&Z_{A,f}&X_{A,f}Z_{A,i}
+\\ B&Z_{B,f}&X_{B,f}Z_{B,j}
+\\ C&X_{C,i}&Z_{C,i}Z_{C,j}.
 \end{array}
 \tag{9}
 ```

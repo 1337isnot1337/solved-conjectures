@@ -4,7 +4,7 @@ Research checkpoint: 20 November 2026. Coordination: [issue #80](https://github.
 
 ## Target and status
 
-Here “Chowla's conjecture” means the least-prime conjecture. For coprime integers \(a,q\), let \(P(a,q)\) be the smallest prime congruent to \(a\) modulo \(q\). The target is
+Here “Chowla's conjecture” means the least-prime conjecture. For coprime integers $`a,q`$, let $`P(a,q)`$ be the smallest prime congruent to $`a`$ modulo $`q`$. The target is
 
 ~~~math
 \forall\delta>0\quad
@@ -34,7 +34,7 @@ The quadratic exponent is explained by the smoothed explicit formula. For
 U_\chi(x)=\sum_{n\le x}\Lambda(n)\chi(n)\log(x/n),
 ~~~
 
-the Mellin kernel is \(x^s/s^2\). Its nontrivial-zero contribution is
+the Mellin kernel is $`x^s/s^2`$. Its nontrivial-zero contribution is
 
 ~~~math
 -\sum_{\rho_\chi}\frac{x^{\rho_\chi}}{\rho_\chi^2}.
@@ -47,11 +47,11 @@ Under GRH, its absolute value is at most
 \ll\sqrt{x}\log(2q).
 ~~~
 
-The last estimate follows by summing the standard zero-counting bound over unit-height intervals. Orthogonality then gives the progression main term \(x/\varphi(q)\), with an error of square-root size. The remaining elementary factors and residues contribute only powers of \(\log(qx)\). This is the mechanism in the explicit-formula lemmas and least-coset argument of [2].
+The last estimate follows by summing the standard zero-counting bound over unit-height intervals. Orthogonality then gives the progression main term $`x/\varphi(q)`$, with an error of square-root size. The remaining elementary factors and residues contribute only powers of $`\log(qx)`$. This is the mechanism in the explicit-formula lemmas and least-coset argument of [2].
 
-To dominate that error uniformly, one needs \(\sqrt{x}\) of size at least \(\varphi(q)\log q\). Hence \(x\) has quadratic conductor size. Merely improving a logarithmic factor does not reach (C).
+To dominate that error uniformly, one needs $`\sqrt{x}`$ of size at least $`\varphi(q)\log q`$. Hence $`x`$ has quadratic conductor size. Merely improving a logarithmic factor does not reach (C).
 
-For a sharper comparison, consider prime moduli and \(x=q^{1+\delta}\), where \(0<\delta<1\). The available unsmoothed GRH estimate is
+For a sharper comparison, consider prime moduli and $`x=q^{1+\delta}`$, where $`0<\delta<1`$. The available unsmoothed GRH estimate is
 
 ~~~math
 \psi(x;q,a)=\frac{x}{\varphi(q)}
@@ -59,8 +59,8 @@ For a sharper comparison, consider prime moduli and \(x=q^{1+\delta}\), where \(
 \tag{2}
 ~~~
 
-The main term has size \(q^\delta\), while the allowed error has size
-\(q^{(1+\delta)/2}\log^2 q\). Their ratio is
+The main term has size $`q^\delta`$, while the allowed error has size
+$`q^{(1+\delta)/2}\log^2 q`$. Their ratio is
 
 ~~~math
 q^{(1-\delta)/2}\log^2q,
@@ -70,7 +70,7 @@ which grows. This estimate cannot even guarantee a positive weighted count at th
 
 ## A complete sufficient bridge
 
-Suppose the corrected Montgomery estimate holds: for every \(\eta>0\),
+Suppose the corrected Montgomery estimate holds: for every $`\eta>0`$,
 
 ~~~math
 \psi(x;q,a)=\frac{x}{\varphi(q)}
@@ -78,13 +78,13 @@ Suppose the corrected Montgomery estimate holds: for every \(\eta>0\),
 \tag{M}
 ~~~
 
-uniformly in the relevant range \(q\le x^{1-\eta}\), for sufficiently large \(x\).
+uniformly in the relevant range $`q\le x^{1-\eta}`$, for sufficiently large $`x`$.
 
 Then (C) follows. The proof below is included to make the exact remaining input reviewable. It is a conditional deduction, not a claim to have proved (M).
 
 ### Lemma: higher prime powers are negligible at the target scale
 
-Fix \(0<\delta<1\), and put \(x=q^{1+\delta}\). Uniformly for \((a,q)=1\),
+Fix $`0<\delta<1`$, and put $`x=q^{1+\delta}`$. Uniformly for $`(a,q)=1`$,
 
 ~~~math
 \sum_{\substack{p^k\le x\\ k\ge2\\p^k\equiv a\pmod q}}\log p
@@ -92,33 +92,33 @@ Fix \(0<\delta<1\), and put \(x=q^{1+\delta}\). Uniformly for \((a,q)=1\),
 \tag{3}
 ~~~
 
-**Proof.** Fix an integer \(K\ge2\), to be chosen in terms of \(\delta\).
+**Proof.** Fix an integer $`K\ge2`$, to be chosen in terms of $`\delta`$.
 
-For each fixed \(2\le k\le K\), the congruence \(u^k\equiv a\pmod q\) has at most \(2k^{\omega(q)}\) solutions among the units modulo \(q\). This follows from the cyclic unit group at odd prime powers and the at-most-two-cyclic-factor structure at powers of two. Because \(x^{1/k}<q\), each root class contains at most one possible positive base \(p\le x^{1/k}\).
+For each fixed $`2\le k\le K`$, the congruence $`u^k\equiv a\pmod q`$ has at most $`2k^{\omega(q)}`$ solutions among the units modulo $`q`$. This follows from the cyclic unit group at odd prime powers and the at-most-two-cyclic-factor structure at powers of two. Because $`x^{1/k}<q`$, each root class contains at most one possible positive base $`p\le x^{1/k}`$.
 
-For fixed \(K\) and every \(\epsilon>0\),
+For fixed $`K`$ and every $`\epsilon>0`$,
 
 ~~~math
 K^{\omega(q)}\ll_{K,\epsilon}q^\epsilon.
 ~~~
 
-One elementary proof is to choose a fixed prime cutoff beyond which \(K\le p^\epsilon\), and absorb the finitely many smaller prime factors into the implied constant. Thus the contribution from \(2\le k\le K\) is
+One elementary proof is to choose a fixed prime cutoff beyond which $`K\le p^\epsilon`$, and absorb the finitely many smaller prime factors into the implied constant. Thus the contribution from $`2\le k\le K`$ is
 
 ~~~math
 O_{K,\epsilon}(q^\epsilon\log x).
 ~~~
 
-For \(k>K\), discard the congruence and primality requirements. There are at most \(\log x/\log2\) possible exponents, and every base is at most \(x^{1/(K+1)}\). Their total weighted contribution is
+For $`k>K`$, discard the congruence and primality requirements. There are at most $`\log x/\log2`$ possible exponents, and every base is at most $`x^{1/(K+1)}`$. Their total weighted contribution is
 
 ~~~math
 O\!\left(x^{1/(K+1)}\log^2x\right).
 ~~~
 
-Choose \(K\) so that \((1+\delta)/(K+1)<\delta/4\), and take \(\epsilon=\delta/4\). Both bounds are \(o(q^\delta)\). This proves (3). ∎
+Choose $`K`$ so that $`(1+\delta)/(K+1)<\delta/4`$, and take $`\epsilon=\delta/4`$. Both bounds are $`o(q^\delta)`$. This proves (3). ∎
 
 ### Proposition: (M) implies the full least-prime conjecture
 
-Fix \(0<\delta<1\), set \(x=q^{1+\delta}\), and apply (M) with
+Fix $`0<\delta<1`$, set $`x=q^{1+\delta}`$, and apply (M) with
 
 ~~~math
 \eta=\frac{\delta}{8(1+\delta)}.
@@ -130,7 +130,7 @@ The required range holds, since
 (1+\delta)(1-\eta)=1+\frac{7\delta}{8}>1.
 ~~~
 
-The main term is at least \(x/q=q^\delta\), and the error is
+The main term is at least $`x/q=q^\delta`$, and the error is
 
 ~~~math
 O_\delta\!\left(
@@ -148,9 +148,9 @@ Subtracting the higher-prime-power contribution (3) gives
 \ge(1-o(1))q^\delta>0.
 ~~~
 
-There is therefore a prime \(p\le q^{1+\delta}\) in the class for all sufficiently large \(q\), uniformly in \(a\). The finitely many smaller moduli are absorbed into a constant, using Dirichlet's theorem. Exponents \(\delta\ge1\) follow from any smaller positive exponent. This proves (C) from (M). ∎
+There is therefore a prime $`p\le q^{1+\delta}`$ in the class for all sufficiently large $`q`$, uniformly in $`a`$. The finitely many smaller moduli are absorbed into a constant, using Dirichlet's theorem. Exponents $`\delta\ge1`$ follow from any smaller positive exponent. This proves (C) from (M). ∎
 
-This argument avoids an invalid shortcut: positivity of \(\psi(x;q,a)\) alone establishes only the presence of a prime power, whose prime base need not belong to the desired residue class.
+This argument avoids an invalid shortcut: positivity of $`\psi(x;q,a)`$ alone establishes only the presence of a prime power, whose prime base need not belong to the desired residue class.
 
 ## The missing pair-correlation estimate
 
@@ -171,22 +171,22 @@ Zeros are counted with multiplicity, including possible central zeros. Their Con
 F_q(x,T;a),\,F_q^+(x,T;a)
 \ll_\eta\varphi(q)T x^\eta,
 \quad
-q\le x^{1-\eta},\quad x^\eta\le T<x,
+q\le x^{1-\eta},\quad x^\eta\le T\lt x,
 \tag{PC}
 ~~~
 
-where \(F_q^+\) uses nonnegative ordinates. Their Theorem 4 derives (M) from GRH **and** (PC). GRH alone gives the estimate
+where $`F_q^+`$ uses nonnegative ordinates. Their Theorem 4 derives (M) from GRH **and** (PC). GRH alone gives the estimate
 
 ~~~math
 F_q(x,T;a)\ll\varphi(q)^2T\log^2(qT).
 \tag{4}
 ~~~
 
-Thus the outstanding conductor saving is essentially one factor of \(\varphi(q)\) in this quadratic expression. [3]
+Thus the outstanding conductor saving is essentially one factor of $`\varphi(q)`$ in this quadratic expression. [3]
 
-This is not supplied by the reality of the zero ordinates. That fact changes \(x^{\rho}\) into \(\sqrt{x}\,x^{i\gamma}\); it does not estimate the cancellation among the phases weighted by different characters.
+This is not supplied by the reality of the zero ordinates. That fact changes $`x^{\rho}`$ into $`\sqrt{x}\,x^{i\gamma}`$; it does not estimate the cancellation among the phases weighted by different characters.
 
-The quantity \(F_q\) is nonnegative, since it equals a weighted integral of the square of a sum over characters and zeros. Positivity supplies a lower bound of zero, not the upper bound (PC). Replacing the full square by the sum of the individual squares incurs a factor \(\varphi(q)\) by Cauchy–Schwarz. Removing that factor without additional information is exactly the unsupported step.
+The quantity $`F_q`$ is nonnegative, since it equals a weighted integral of the square of a sum over characters and zeros. Positivity supplies a lower bound of zero, not the upper bound (PC). Replacing the full square by the sum of the individual squares incurs a factor $`\varphi(q)`$ by Cauchy–Schwarz. Removing that factor without additional information is exactly the unsupported step.
 
 Theorem 4 and the proposition above are sufficient to derive (C) if (PC) is proved. Neither the accepted RH input nor this note proves (PC). The word “Chowla” in [3]'s title concerns a different central-nonvanishing conjecture; the title alone should not be cited as a proof of the least-prime conjecture.
 
@@ -194,24 +194,24 @@ A further 2026 paper by the same authors, *Beyond the Riemann Hypothesis bounds*
 
 ## Check of the intermediate arithmetic output
 
-The source declaration \(\mathrm{CorG}\) in
+The source declaration $`\mathrm{CorG}`$ in
 
 [Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean)
 
 is a proposition defining an upper bound for weighted Selmer lengths. Its displayed right side contains
-\(\varphi([G:H])|D_K|^5N^{18}e^7(\log p+\log p')\). A definition of such a proposition is not itself a theorem asserting it.
+$`\varphi([G:H])|D_K|^5N^{18}e^7(\log p+\log p')`$. A definition of such a proposition is not itself a theorem asserting it.
 
-The arithmetic-extraction lane found that the active proof uses a field-dependent variant, \(\mathrm{CorGK}\). Neither statement estimates \(F_q\), moments of a sum over zero ordinates, or the progression error in (M). No theorem converting those arithmetic lengths into (PC) has been identified.
+The arithmetic-extraction lane found that the active proof uses a field-dependent variant, $`\mathrm{CorGK}`$. Neither statement estimates $`F_q`$, moments of a sum over zero ordinates, or the progression error in (M). No theorem converting those arithmetic lengths into (PC) has been identified.
 
-The distinction in quantifiers also matters: a constant depending on a number field cannot be treated as uniform in \(q\) when the field is allowed to vary with a cyclotomic conductor. This is a precise barrier to the proposed transfer, not a proof that no deeper relation could exist.
+The distinction in quantifiers also matters: a constant depending on a number field cannot be treated as uniform in $`q`$ when the field is allowed to vary with a cyclotomic conductor. This is a precise barrier to the proposed transfer, not a proof that no deeper relation could exist.
 
 ## Search record and next mathematical step
 
-Fresh searches on 20 November 2026 used both search systems and combined “Chowla”, “least prime”, “arithmetic progression”, “proof”, “conjecture”, “2025”, “2026”, and the exponent \(1+\epsilon\). Primary papers, the 2026 pair-correlation article, the July 2026 follow-up, and the author's October 2026 publication list were inspected.
+Fresh searches on 20 November 2026 used both search systems and combined “Chowla”, “least prime”, “arithmetic progression”, “proof”, “conjecture”, “2025”, “2026”, and the exponent $`1+\epsilon`$. Primary papers, the 2026 pair-correlation article, the July 2026 follow-up, and the author's October 2026 publication list were inspected.
 
 No complete established proof of (C) was located. Recent results concerning almost-primes, fixed residue classes, almost all moduli, or other conjectures bearing Chowla's name do not settle this uniform all-moduli assertion.
 
-The actionable target is now (PC), or a weaker estimate strong enough to prove positivity at \(x=q^{1+\delta}\) for every fixed \(\delta>0\). Repeating the individual-character GRH bound, removing logarithms, or merely bounding algebraic counting functions does not accomplish that step.
+The actionable target is now (PC), or a weaker estimate strong enough to prove positivity at $`x=q^{1+\delta}`$ for every fixed $`\delta>0`$. Repeating the individual-character GRH bound, removing logarithms, or merely bounding algebraic counting functions does not accomplish that step.
 
 ## Sources
 

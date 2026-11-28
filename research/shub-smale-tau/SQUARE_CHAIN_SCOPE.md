@@ -46,10 +46,10 @@ The reconstruction in [SQUARE_CHAIN_EXTENSION.md](SQUARE_CHAIN_EXTENSION.md), eq
 
 ```math
 \begin{aligned}
-P&=55445869,\\
-Q&=1164899189250000,\\
-R&=446227095550009520724687360000,\\
-S&=-359659829363407799927500800000.
+P&=55445869,
+\\ Q&=1164899189250000,
+\\ R&=446227095550009520724687360000,
+\\ S&=-359659829363407799927500800000.
 \end{aligned}
 \tag{1.2}
 ```
@@ -158,8 +158,8 @@ to nondegenerate rational points of
 
 ```math
 \begin{aligned}
-A^2+B^2&=C^2+D^2=E^2+F^2=G^2+H^2,\\
-A^2B^2+C^2D^2&=E^2F^2+G^2H^2,
+A^2+B^2&=C^2+D^2=E^2+F^2=G^2+H^2,
+\\ A^2B^2+C^2D^2&=E^2F^2+G^2H^2,
 \end{aligned}
 \tag{1.6}
 ```

@@ -341,8 +341,8 @@ Round without consulting the dataset:
 ```math
 (w,u)\longmapsto
 \begin{cases}
-x\mapsto1[x\ge w],&u\le1/2,\\
-x\mapsto1[x>w],&u>1/2.
+x\mapsto1[x\ge w],&u\le1/2,
+\\ x\mapsto1[x>w],&u>1/2.
 \end{cases}
 \tag{18}
 ```

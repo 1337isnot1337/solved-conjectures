@@ -7,13 +7,13 @@ In a parity graphon the vertices are split into two halves, three colours occur 
 ## A three-colour kernel identity
 
 Let $A_1,A_2,A_3$ be the integral operators of a symmetric balanced three-colour graphon on a probability space. Write $J$ for the constant-one kernel. Thus $A_1+A_2+A_3=J$, each $A_i J=J A_i=J/3$, and $J^2=J$. Composition need not be commutative. The kernel that counts ordered three-edge paths using all three colours is
-\[
+```math
 \sum_{\pi\in S_3} A_{\pi(1)}A_{\pi(2)}A_{\pi(3)}
 =2\sum_{i=1}^3 A_i^3.
-\]
+```
 To see this, start with the sum of all ordered products, equal to $J$. Subtract the products counted by each of the three possible equal-index pairs. Each such sum is $J/3$, including the nonadjacent equality, whose sum is $\sum_i A_iJA_i$. The all-equal terms have been subtracted three times instead of once; add back twice their sum.
 
-For every nonnegative symmetric bounded kernel $W$, its three-step kernel $W^3$ is positive at almost every pair where $W$ is positive. Otherwise put $H=W\mathbf 1_{\{W^3=0\}}$, a nonzero symmetric nonnegative kernel. Since $H\le W$, one would have $\int H H^3=0$. But this integral is $t(C_4,H)=\int (H^2)^2>0$: the symmetric $H^2$ has positive integral as the squared degrees of $H$ have positive integral. This is a contradiction. Since the three colour kernels sum to one, the three-colour path kernel in the displayed identity is **positive almost everywhere**. Thus for every fixed $\eta>0$, its integral between any two sets of measure at least $\eta$ is bounded below by a uniform positive constant. Indeed, the measure where the kernel is below a positive threshold tends to zero with the threshold.
+For every nonnegative symmetric bounded kernel $W$, its three-step kernel $W^3$ is positive at almost every pair where $W$ is positive. Otherwise put $`H=W\mathbf 1_{\{W^3=0\}}`$, a nonzero symmetric nonnegative kernel. Since $H\le W$, one would have $\int H H^3=0$. But this integral is $t(C_4,H)=\int (H^2)^2>0$: the symmetric $H^2$ has positive integral as the squared degrees of $H$ have positive integral. This is a contradiction. Since the three colour kernels sum to one, the three-colour path kernel in the displayed identity is **positive almost everywhere**. Thus for every fixed $\eta>0$, its integral between any two sets of measure at least $\eta$ is bounded below by a uniform positive constant. Indeed, the measure where the kernel is below a positive threshold tends to zero with the threshold.
 
 ## Moving from a weighted limit to a finite core
 
@@ -27,6 +27,6 @@ Call a vertex typical if it is incident with fewer than $\eta n$ incorrect-parit
 
 Take any edge $uv$ of crossing hue $c$, and let $a,b$ be the other two crossing hues. If $Q(u,a)$ and $Q(v,b)$ contained the same bit, then the available pools would lie in the same rounded side. The transferred three-colour path property joins those pools inside that side, using the three distinct within-half colours and using neither $u$ nor $v$. Adding the two terminal edges of hues $a,b$ and the edge $uv$ would make a rainbow six-cycle. Consequently in a rainbow-free example every bit of $Q(u,a)$ is opposite every bit of $Q(v,b)$, and the same holds with $a,b$ exchanged.
 
-For any $u$ and hue $c$, there is a colour-$c$ neighbour $v$ that is typical, since $n$ exceeds the number of atypical vertices. Both of its terminal hue sets have the same singleton bit. The two constraints therefore show that the two terminal hue sets at $u$ are also equal singletons. Vary $c$; all three recorded bits at $u$ are equal, say $q_u$. Every edge of any of the crossing hues joins opposite $q$-classes. Their union is a bipartite graph of degree $3n$ at every vertex, so its two parts must have the same size, impossible on $6n+1$ vertices.
+For any $u$ and hue $c$, there is a colour-$`c`$ neighbour $v$ that is typical, since $n$ exceeds the number of atypical vertices. Both of its terminal hue sets have the same singleton bit. The two constraints therefore show that the two terminal hue sets at $u$ are also equal singletons. Vary $c$; all three recorded bits at $u$ are equal, say $q_u$. Every edge of any of the crossing hues joins opposite $q$-classes. Their union is a bipartite graph of degree $3n$ at every vertex, so its two parts must have the same size, impossible on $6n+1$ vertices.
 
 This rules out every parity limit, including those with holes in the support of all six permitted hues. The conclusion does not assume that a non-parity zero-density limit is impossible. By compactness, finding any counterexample sequence now requires a **genuinely non-parity** balanced zero-density graphon. [Tracking issue #870](https://github.com/1337isnot1337/solved-conjectures/issues/870) · [Earlier mixing-core approach](MIXING-CORE.md).

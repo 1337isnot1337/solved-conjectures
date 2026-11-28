@@ -17,7 +17,7 @@ The displayed common-root incidence has O(N) witnesses and O(N^3) gates. It tags
 For a root t=zeta^a, the induction invariant is
 
 ```math
-U_j(t)=\zeta^{a-\sum_{\ell<j}2^\ell b_\ell(a)}.
+U_j(t)=\zeta^{a-\sum_{\ell\lt j}2^\ell b_\ell(a)}.
 ```
 
 The exponent is divisible by 2^j. Raising to 2^(m-j-1) gives (-1) to the power of the next bit, so B_j is exactly that bit. The correction factor removes it and preserves the invariant. This works for every a from zero through 2^m-1, including all boundary cases.

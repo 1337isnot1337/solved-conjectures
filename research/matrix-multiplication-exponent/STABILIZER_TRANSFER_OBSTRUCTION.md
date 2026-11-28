@@ -68,8 +68,8 @@ and consider
 \begin{aligned}
 S_{q,N,r}
  &=U_{ABCD}(r)U_{ABC}(q)
-   W_{CD}(q)W_{AD}(N)W_{BD}(N),\\
-T_{q,M}
+   W_{CD}(q)W_{AD}(N)W_{BD}(N),
+\\ T_{q,M}
  &=U_{ACD}(q)U_{BCD}(q)W_{AB}(M).
 \end{aligned}
 \tag{6}
@@ -84,8 +84,8 @@ The source's $`q`$ common $`ABC`$ labels and its $`r`$ full-unit labels give $`m
 ```math
 \begin{array}{c|ccc}
  &A&B&C\\ \hline
-S_{q,N,r}&rqN&rqN&rq^2\\
-T_{q,M}&qM&qM&q^2 .
+S_{q,N,r}&rqN&rqN&rq^2
+\\ T_{q,M}&qM&qM&q^2 .
 \end{array}
 ```
 The target is concise at each of these parties. Hence any successful local maps have full row rank, and maps of form (1) remove

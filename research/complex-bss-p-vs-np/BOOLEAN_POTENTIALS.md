@@ -79,8 +79,8 @@ Then
 ```math
 \begin{aligned}
 \sum_{i=1}^m (I-T_i)Q_i
-&=\sum_{i=1}^m A_1\cdots A_{i-1}(I-A_i)R\\
-&=R-A_1\cdots A_mR=R.
+&=\sum_{i=1}^m A_1\cdots A_{i-1}(I-A_i)R
+\\ &=R-A_1\cdots A_mR=R.
 \end{aligned}
 ```
 

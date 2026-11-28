@@ -16,7 +16,7 @@ The symmetric multiaffine family is the inverse image of the complete transforme
 
 The diagonal generating function follows by writing the index as $n=k+j$ and summing the rising-factorial series with parameter $\beta+k$. Differentiating it gives the stated three-term recurrence. The tridiagonal determinant has the same recurrence: the product of its two off-diagonal entries is negative $t(1-t)j(j+\beta-1)$, so the determinant recurrence has the required plus sign.
 
-The argument for complex $t$ does not improperly treat the tridiagonal matrix as Hermitian. For a normalized right eigenvector, $v^*Jv=z$ still holds; only $D$ and $K$ are used as Hermitian matrices. Writing $d=v^*Dv$ and $k=v^*Kv$, the sum of elementary two-term estimates is exactly
+The argument for complex $t$ does not improperly treat the tridiagonal matrix as Hermitian. For a normalized right eigenvector, $`v^*Jv=z`$ still holds; only $D$ and $K$ are used as Hermitian matrices. Writing $`d=v^*Dv`$ and $`k=v^*Kv`$, the sum of elementary two-term estimates is exactly
 
 ```math
 |k|\le 2d+\beta-(n+\beta-1)|v_{n-1}|^2\le 2d+\beta.
@@ -24,7 +24,7 @@ The argument for complex $t$ does not improperly treat the tridiagonal matrix as
 
 The identity includes $n=1$ and uses only $\beta>0$.
 
-The reciprocal-segment lemma is valid for either square-root branch. The endpoints have product one and opposite nonzero imaginary parts. If the midpoint has negative imaginary part, the endpoint in the upper half-plane has modulus less than one. The real-axis intersection is $2\operatorname{Re}r/(1+|r|^2)$, strictly between minus one and one. Convexity of the open disk then places the whole upper part of the segment strictly inside it. Applying this to the eigenvector identity excludes every upper-half-plane $z$ outside the claimed disk when $t$ is in the upper half-plane.
+The reciprocal-segment lemma is valid for either square-root branch. The endpoints have product one and opposite nonzero imaginary parts. If the midpoint has negative imaginary part, the endpoint in the upper half-plane has modulus less than one. The real-axis intersection is $`2\mathop{\mathrm{Re}}r/(1+|r|^2)`$, strictly between minus one and one. Convexity of the open disk then places the whole upper part of the segment strictly inside it. Applying this to the eigenvector identity excludes every upper-half-plane $z$ outside the claimed disk when $t$ is in the upper half-plane.
 
 I checked [Borcea–Brändén, arXiv:0809.3087](https://arxiv.org/pdf/0809.3087), Theorems 1.1 and 1.5, directly. The open upper half-plane is a convex circular domain, and the parameter polynomial is symmetric and multiaffine. Grace–Walsh–Szegő therefore applies with no missing degree hypothesis. Its diagonal coincidence contradicts the just-established complex-parameter exclusion if any independent upper-half-plane parameters produce a zero.
 

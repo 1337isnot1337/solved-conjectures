@@ -28,10 +28,10 @@ An internal vertex has degree $`n-1`$, and a cycle vertex has degree $`2(n-1)`$.
 
 ```math
 n w_{i,j}-S_i=0
-\quad(0\leq i<r,\ 1\leq j\leq m),
+\quad(0\leq i\lt r,\ 1\leq j\leq m),
 \qquad
 2n v_i-S_{i-1}-S_i=0
-\quad(0\leq i<r).
+\quad(0\leq i\lt r).
 \tag{1}
 ```
 
@@ -111,7 +111,7 @@ We have proved that the full Laplacian cokernel is $`\mathbb Z\oplus H`$, where 
 
 ```math
 b,\quad c_1,\ldots,c_{r-1},\quad
-d_{i,j}\ (0\leq i<r,\ 2\leq j\leq n-2),
+d_{i,j}\ (0\leq i\lt r,\ 2\leq j\leq n-2),
 ```
 
 and exactly the relations

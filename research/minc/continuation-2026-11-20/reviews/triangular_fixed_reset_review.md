@@ -26,10 +26,10 @@ both new variables replaced, the polynomials
 
 ```math
 \begin{aligned}
-R_0&=(t^2-1)h''+2th'+2h,\\
-R_\alpha&=(t^2-1)h''+(4t-2)h'+2h,\\
-R_\beta&=(t^2-1)h''+(4t+2)h'+2h,\\
-R_{\alpha\beta}&=(t^2-1)h''+6th'+6h.
+R_0&=(t^2-1)h''+2th'+2h,
+\\ R_\alpha&=(t^2-1)h''+(4t-2)h'+2h,
+\\ R_\beta&=(t^2-1)h''+(4t+2)h'+2h,
+\\ R_{\alpha\beta}&=(t^2-1)h''+6th'+6h.
 \end{aligned}
 ```
 

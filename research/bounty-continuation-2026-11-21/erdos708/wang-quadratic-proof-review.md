@@ -52,7 +52,7 @@ divisor of d is at most n. If d<=Y, d and the complementary factor again give
 an ordinary split. What remains is a difficult original d c with
 
 ```math
-Y<d\le D,\qquad c<n,
+Y\lt d\le D,\qquad c\lt n,
 ```
 
 where every prime factor of d is at most n, and d is the least divisor of its
@@ -75,7 +75,7 @@ The integer k_d satisfies
 
 ```math
 2\le k_d\le 2n/u_d,
-\qquad n<u_d k_d\le 2n<d.
+\qquad n\lt u_d k_d\le 2n\lt d.
 ```
 
 No assigned cofactor c is divisible by k_d: otherwise u_d k_d would be a

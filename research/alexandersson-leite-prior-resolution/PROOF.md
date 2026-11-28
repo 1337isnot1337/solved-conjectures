@@ -21,7 +21,7 @@ This is a single disproof of the original universal conjecture, covering both of
 Let `X` be a nonnegative integer-valued random variable with finite support an interval of integers, and write `p_k=P(X=k)`, `mu=E[X]>0`. If `k! p_k` is log-concave, then
 
 ```math
-\operatorname{Var}(X)\leq\mathbb E X. \tag{1}
+\mathop{\mathrm{Var}}(X)\leq\mathbb E X. \tag{1}
 ```
 
 Here is a proof that also permits initial zero probabilities. The size-biased variable `X*` has probabilities `P(X*=k)=k p_k/mu`. For the shifted variable `X+1`, the probabilities are `p_(k-1)`. On their common positive support the likelihood ratio is
@@ -158,8 +158,8 @@ The binomial ratio satisfies
 ```math
 \begin{aligned}
 \log\frac{\binom{2N}{N+h}}{\binom{2N}{N}}
-&=\sum_{j=1}^h\log\left(1-\frac{2j-1}{N+j}\right)\\
-&\leq-\sum_{j=1}^h\frac{2j-1}{N+j}
+&=\sum_{j=1}^h\log\left(1-\frac{2j-1}{N+j}\right)
+\\ &\leq-\sum_{j=1}^h\frac{2j-1}{N+j}
 \leq-\frac{h^2}{N+h}\leq-\frac{h^2}{2N}.
 \end{aligned}
 ```
@@ -179,10 +179,10 @@ Corollary 3.13 of the source states, with `H(N,j)` the number of Dyck paths of s
 
 ```math
 \begin{aligned}
-\operatorname{Pnest}_n(t)
+\mathop{\mathrm{Pnest}}_n(t)
 &=\sum_{i=1}^{\lceil n/2\rceil}
-\bigl(H(n,2i-1)+H(n,2i)\bigr)t^i,\\
-\operatorname{Pnest}_n^c(t)
+\bigl(H(n,2i-1)+H(n,2i)\bigr)t^i,
+\\ \mathop{\mathrm{Pnest}}_n^c(t)
 &=\sum_{i=1}^{\lceil n/2\rceil}
 \bigl(H(n-1,2i-2)+H(n-1,2i-1)\bigr)t^i.
 \end{aligned} \tag{7}
@@ -216,9 +216,9 @@ Let `W'_N` be an independent copy. For all sufficiently large `N`, the two order
 
 ```math
 \begin{aligned}
-\operatorname{Var}(W_N)
-&=\tfrac12\mathbb E[(W_N-W'_N)^2]\\
-&\geq c_0c_1\left(\tfrac12\sqrt N-1\right)^2
+\mathop{\mathrm{Var}}(W_N)
+&=\tfrac12\mathbb E[(W_N-W'_N)^2]
+\\ &\geq c_0c_1\left(\tfrac12\sqrt N-1\right)^2
 \geq\frac{c_0c_1}{16}N.
 \end{aligned} \tag{9}
 ```
@@ -226,7 +226,7 @@ Let `W'_N` be an independent copy. For all sufficiently large `N`, the two order
 On the other hand, `W_N<=M_N/2+1`, so (6) gives `E[W_N]=o(N)`. Equations (9) and (6) imply
 
 ```math
-\frac{\operatorname{Var}(W_N)}{\mathbb E W_N}\longrightarrow+\infty.
+\frac{\mathop{\mathrm{Var}}(W_N)}{\mathbb E W_N}\longrightarrow+\infty.
 ```
 
 For every sufficiently large `N`, this contradicts the necessary variance inequality (1). Both sequences in (7) therefore fail Poisson ultra log-concavity, and hence fail the finite-order ultra log-concavity asserted in Conjecture 3.14. This proves the theorem.

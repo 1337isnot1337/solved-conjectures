@@ -8,23 +8,23 @@ Owner: analytic_targets. Coordination: [issue #80](https://github.com/1337isnot1
 
 The primary formulation inspected is Pavel Etingof, [*On Some Special Cases of Gaiotto's Positivity Conjecture*, SIGMA20(2024),063][E], Conjecture1.1. Gaiotto's original setting is broader and allows quasi-homogeneous potentials; see the [original paper][G], sections7.6–7.7, as cited by Etingof.
 
-For a homogeneous polynomial $W\in S^d\mathbb C^{n*}$, put
+For a homogeneous polynomial $`W\in S^d\mathbb C^{n*}`$, put
 
-$$
+```math
 (P,Q)_W=\int_{\mathbb C^n}
  P(z)\overline{Q(z)}
  e^{-|z|^2+W(z)-\overline{W(z)}}\,dz\,d\bar z.
-$$
+```
 
 Use the filtration by total polynomial degree. The conjecture asserts that every finite filtered restriction is nondegenerate, and that the resulting graded form from left/right Gram–Schmidt biorthogonalization is positive definite. The nondegeneracy assertion implies the positivity assertion by deformation from $W=0$.
 
 Its scalar consequence, separately stated as Conjecture1.2, is
 
-$$
+```math
 I(W)=\int_{\mathbb C^n}
  e^{-|z|^2+W(z)-\overline{W(z)}}\,dz\,d\bar z>0
 \qquad\text{for every }W.
-$$
+```
 
 The scalar assertion is not the full filtered assertion, and proving it would not by itself settle every Gram determinant.
 
@@ -36,17 +36,17 @@ The proposed transfer was to apply the same Schoenberg and total-positivity mach
 
 Define, for $d>2$,
 
-$$
+```math
 F_p(t)=\frac1{\pi d}\int_{\mathbb C}
- |z|^{2p}e^{-|z|^2+2it\operatorname{Re}(z^d)}\,|dz|^2.
-$$
+ |z|^{2p}e^{-|z|^2+2it\mathop{\mathrm{Re}}(z^d)}\,|dz|^2.
+```
 
 Radial/projective disintegration of the scalar integral uses $F_{n-1}(|W(z)|)$, up to fixed positive measure normalizations. The relevant Mellin–Fourier expression is
 
-$$
+```math
 \frac{\Gamma(is)\Gamma(n-ids)}{\Gamma(1-is)}.
 \tag{1}
-$$
+```
 
 For $n\le d$, cancellation of the denominator's zeros supplies the positive-kernel argument. That is an existing proof, not a missing consequence of RH.
 
@@ -56,14 +56,14 @@ The crucial point is that a positive projective average does not require its int
 
 Indeed, the first uncovered case already blocks that route. Etingof's Remark2.11 gives
 
-$$
+```math
 F_d(t)\sim
 -\frac{\Gamma(1+1/d)}
  {d\,\Gamma(1-1/d)}
  t^{-2(1+1/d)}
 \qquad(t\to+\infty).
 \tag{2}
-$$
+```
 
 The coefficient is strictly negative for every integer $d>2$. When $n=d+1$, the scalar project's kernel is exactly $F_d$. Consequently, an argument claiming pointwise nonnegativity of all the radial kernels would contradict (2).
 

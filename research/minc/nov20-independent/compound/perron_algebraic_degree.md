@@ -14,7 +14,7 @@ used below is classical; no priority claim is made for this consequence.
 For n>=2 let A_n be the zero-one matrix defined by
 
 ```math
-(A_n)_{i,i+1}=1\quad(1\le i<n),\qquad
+(A_n)_{i,i+1}=1\quad(1\le i\lt n),\qquad
 (A_n)_{n,1}=(A_n)_{n,2}=1,
 ```
 
@@ -168,7 +168,7 @@ Specialize X to diag(d_1,...,d_n), retaining independent diagonal
 indeterminates. For a subset I write d_I=product_(i in I) d_i. Then
 
 ```math
-\chi_{P_k(X)}(\lambda)\big|_{X=\operatorname{diag}(d)}
+\chi_{P_k(X)}(\lambda)\big|_{X=\mathop{\mathrm{diag}}(d)}
 =\prod_{|I|=k}(\lambda-d_I).
 ```
 

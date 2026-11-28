@@ -297,8 +297,8 @@ $`L=p d(x,v)+q d(y,u)`$,
 
 ```math
 \begin{aligned}
-L&\le p[d(x,o)+d(v,o')]+q[d(y,o)+d(u,o')]+r d(o,o'),\\
-L&\le p[d(x,w)+d(v,w')]+q[d(u,w)+d(y,w')]+r' d(w,w').
+L&\le p[d(x,o)+d(v,o')]+q[d(y,o)+d(u,o')]+r d(o,o'),
+\\ L&\le p[d(x,w)+d(v,w')]+q[d(u,w)+d(y,w')]+r' d(w,w').
 \end{aligned}                                                   \tag{7}
 ```
 

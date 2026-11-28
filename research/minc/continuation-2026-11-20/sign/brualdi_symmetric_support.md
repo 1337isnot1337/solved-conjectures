@@ -169,7 +169,7 @@ N_F(I)\subseteq N_F(S)\setminus S,
 ```
 
 Write k=|I|, h=|N_F(I)|≤k, and
-T=[n]\(I∪N_F(I)), so |T|=n−k−h. The last vertex n is a neighbor of I,
+T=[n]∖(I∪N_F(I)), so |T|=n−k−h. The last vertex n is a neighbor of I,
 so all vertices of I and T lie among the top n−1 indices.
 
 Between any two distinct vertices of I, and between any vertex of I and
@@ -213,7 +213,7 @@ doubly stochastic matrix in its positive diagonal scaling class. Symmetry
 and uniqueness make this matrix symmetric; it can be written
 
 ```math
-B=\operatorname{diag}(d)G\operatorname{diag}(d),\qquad d_i>0.
+B=\mathop{\mathrm{diag}}(d)G\mathop{\mathrm{diag}}(d),\qquad d_i>0.
 \tag{7}
 ```
 
@@ -223,7 +223,7 @@ ambiguity in the symmetric scaling factors.
 Define the usual product-of-linear-forms capacity
 
 ```math
-\operatorname{cap}(G)=
+\mathop{\mathrm{cap}}(G)=
 \inf_{x_j>0}\frac{\prod_i\sum_jG_{ij}x_j}{\prod_jx_j}.
 ```
 
@@ -231,9 +231,9 @@ A doubly stochastic matrix has capacity one by weighted AM–GM. Diagonal
 scaling gives
 
 ```math
-\operatorname{cap}(G)=\left(\prod_i d_i^2\right)^{-1},
-\qquad \operatorname{per}B=
-\frac{\operatorname{per}G}{\operatorname{cap}(G)}.
+\mathop{\mathrm{cap}}(G)=\left(\prod_i d_i^2\right)^{-1},
+\qquad \mathop{\mathrm{per}}B=
+\frac{\mathop{\mathrm{per}}G}{\mathop{\mathrm{cap}}(G)}.
 \tag{8}
 ```
 
@@ -245,8 +245,8 @@ an unreciprocated edge has positive weight while its inverse has weight zero.
 However, capacity can be below one. Global minimality supplies only
 
 ```math
-\operatorname{per}B\ge P,
-\qquad\operatorname{cap}(G)\le\frac{\operatorname{per}G}{P}.
+\mathop{\mathrm{per}}B\ge P,
+\qquad\mathop{\mathrm{cap}}(G)\le\frac{\mathop{\mathrm{per}}G}{P}.
 \tag{9}
 ```
 
@@ -269,7 +269,7 @@ scaling of G=√(A◦Aᵀ): equation (7) holds with
 d_1²=d_2²=17/15 and d_3²=51/40. Nevertheless,
 
 ```math
-\operatorname{per}B-\operatorname{per}A
+\mathop{\mathrm{per}}B-\mathop{\mathrm{per}}A
 =\frac{56}{125}-\frac{2185}{4913}
 =\frac{2003}{614125}>0.
 ```

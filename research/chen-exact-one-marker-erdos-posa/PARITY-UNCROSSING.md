@@ -27,7 +27,7 @@ each use one marker and have odd total length, equivalently an
 even-length supply part.
 
 Take $b$ as the path in $C_2$ that meets $C_1$ only at $u,v$.
-The only two $u$-$v$ paths in $C_1$ are $A$ and $a$.
+The only two $u$-$`v`$ paths in $C_1$ are $A$ and $a$.
 The first exchange $A\cup b$ has just one marker but is even;
 the second $a\cup b$ is odd but has no marker. The first condition
 of uncrossability already fails, before asking for a second eligible

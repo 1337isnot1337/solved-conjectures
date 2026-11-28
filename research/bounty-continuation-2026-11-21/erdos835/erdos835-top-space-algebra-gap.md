@@ -174,8 +174,8 @@ For entries of the form (2), the formal averaged square is
 ```math
 \begin{split}
  \mathbb E[P_{AB}^2]
- &=\frac{k^2K_{AB}+1-K_{AB}}{N^2}\\
- &=\frac{k}{N^2}+\frac{kp(p-2)}{N^2}E_{AB}.
+ &=\frac{k^2K_{AB}+1-K_{AB}}{N^2}
+ \\ &=\frac{k}{N^2}+\frac{kp(p-2)}{N^2}E_{AB}.
 \end{split}
 ```
 
@@ -211,8 +211,8 @@ product energy is $`k^2/N`$, and its constant-channel energy is $`k/N`$. Hence
 
 ```math
 \begin{split}
- \mathcal D(P)&=k(k-1)/N-\langle E,P\circ P\rangle,\\
- \mathcal D_W(P)&=k(k-1)/N-\langle P,P\circ P\rangle.
+ \mathcal D(P)&=k(k-1)/N-\langle E,P\circ P\rangle,
+ \\ \mathcal D_W(P)&=k(k-1)/N-\langle P,P\circ P\rangle.
 \end{split}                                                   \tag{9}
 ```
 

@@ -102,7 +102,7 @@ There is a unique $\theta_a\in(0,\pi/2)$ such that $s(\theta_a)=a$, and
 We will use
 
 ```math
-k=\#\{j:s_j<a\}.
+k=\#\{j:s_j\lt a\}.
 \tag{7}
 ```
 
@@ -191,7 +191,7 @@ Then $\alpha+\beta=1+x$ and $\alpha\beta=-x$. Moreover, $x(\phi)$ is strictly de
 I=(-3-2\sqrt2,\,-3+2\sqrt2).
 ```
 
-Let $F(z)=z\,d_n(z)$. All $n+1$ roots of $F$ are real and nonpositive, and neither endpoint $a$ or $-b$ of the arc is a root by Section 2.
+Let $`F(z)=z\,d_n(z)`$. All $n+1$ roots of $F$ are real and nonpositive, and neither endpoint $a$ or $-b$ of the arc is a root by Section 2.
 
 For a root $r$ of $F$, $\alpha(\phi)-r$ has positive imaginary part on the open arc. Its argument can therefore be chosen continuously in $(0,\pi)$, starting at $0$ when $\phi=0$. At $\phi=\pi$, its limiting argument is $\pi$ if $r>-b$ and $0$ if $r<-b$.
 

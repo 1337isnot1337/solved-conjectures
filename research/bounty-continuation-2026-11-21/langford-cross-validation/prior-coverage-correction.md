@@ -60,8 +60,8 @@ Summation by parts yields only
 \begin{aligned}
 \mathbb E\frac{\mathbf1_E R}{r+1}
 &=\frac{S_m}{m+1}
-+\sum_{k=0}^{m-1}S_k\left(\frac1{k+1}-\frac1{k+2}\right)\\
-&\le\frac{H_{m+1}}{m+1},
++\sum_{k=0}^{m-1}S_k\left(\frac1{k+1}-\frac1{k+2}\right)
+\\ &\le\frac{H_{m+1}}{m+1},
 \end{aligned}
 ```
 

@@ -19,7 +19,7 @@ invariant-factor method gives the bound
 ```math
 \widetilde O\!\left(
  \sqrt{\frac Nb}\,
- \left(NE+N^2+Nb^{\omega-1}+\operatorname{MM}(N,b)\right)
+ \left(NE+N^2+Nb^{\omega-1}+\mathop{\mathrm{MM}}(N,b)\right)
 \right),                                                     \tag{1}
 ```
 
@@ -50,8 +50,8 @@ by
 ```math
 T_{j_1,\ldots,j_k}=
 \begin{cases}
-v_{\{j_1,\ldots,j_k\}},&j_1,\ldots,j_k\text{ distinct},\\
-0,&\text{otherwise}.
+v_{\{j_1,\ldots,j_k\}},&j_1,\ldots,j_k\text{ distinct},
+\\ 0,&\text{otherwise}.
 \end{cases}                                                  \tag{2}
 ```
 
@@ -62,7 +62,7 @@ entry is
 \sum_{j_1,\ldots,j_k}
  a_{i_1j_1}\cdots a_{i_kj_k} T_{j_1,\ldots,j_k}
  =
-\sum_{|J|=k}\operatorname{per}A[I\mid J]v_J.                  \tag{3}
+\sum_{|J|=k}\mathop{\mathrm{per}}A[I\mid J]v_J.                  \tag{3}
 ```
 
 Thus reading one ordering of each distinct output set gives P_k(A)v.
@@ -73,7 +73,7 @@ matrix. This gives the completely general action bound
 
 ```math
 E_{n,k}\le
-O\!\left(k\,\operatorname{MM}(n,n^{k-1})+k n^k\right),
+O\!\left(k\,\mathop{\mathrm{MM}}(n,n^{k-1})+k n^k\right),
 \qquad k\ge2.                                                \tag{4}
 ```
 
@@ -81,7 +81,7 @@ Another available bound is
 
 ```math
 E_{n,k}\le
-\operatorname{poly}(n,k)\binom{n+k-1}{k},                     \tag{5}
+\mathop{\mathrm{poly}}(n,k)\binom{n+k-1}{k},                     \tag{5}
 ```
 
 from the symmetric-power representation, or the
@@ -109,8 +109,8 @@ It also gives, for a >= b >= c >= 0,
 ```math
 \omega(a,b,c)\le
 \begin{cases}
-a+b,&c(a+b)\le ab,\\
-(ab+bc+ca)^2/(4abc),&c(a+b)>ab.
+a+b,&c(a+b)\le ab,
+\\ (ab+bc+ca)^2/(4abc),&c(a+b)>ab.
 \end{cases}                                                  \tag{7}
 ```
 

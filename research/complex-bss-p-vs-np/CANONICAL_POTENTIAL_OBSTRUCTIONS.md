@@ -72,8 +72,8 @@ Put the m coordinates b of A first and the two coordinates c of C last. For the 
 \begin{aligned}
 Q_{m+1}(b,c)
 &=\tfrac12\mathcal A_1\cdots\mathcal A_m
-       \bigl(K_A(b)(c_2-c_1)\bigr)\\
-&=2^{-(m+1)}\mathop{\mathrm{per}}(A)(c_2-c_1).
+       \bigl(K_A(b)(c_2-c_1)\bigr)
+\\ &=2^{-(m+1)}\mathop{\mathrm{per}}(A)(c_2-c_1).
 \end{aligned}
 ```
 

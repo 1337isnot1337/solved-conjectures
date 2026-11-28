@@ -76,7 +76,7 @@ Interchanging $`B,C`$ gives a second pair of bounds. Substituting
 -\alpha\log r-z\log n
 \le \frac{\log F_t(T)-\log r}{t}
 \le -\alpha\log r+z\log n
-\qquad(0<t\le1).
+\qquad(0\lt t\le1).
 \tag{3}
 ```
 

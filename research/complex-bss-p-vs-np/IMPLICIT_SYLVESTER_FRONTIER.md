@@ -17,7 +17,7 @@ The Sylvester map is the linear operator
 
 ```math
 \mathcal S:
- K[t]_{<b}\oplus K[t]_{<a}\longrightarrow K[t]_{<a+b},
+ K[t]_{\lt b}\oplus K[t]_{\lt a}\longrightarrow K[t]_{\lt a+b},
 \qquad (u,v)\longmapsto fu+gv.                  \tag{1}
 ```
 
@@ -25,7 +25,7 @@ Its coefficient matrix has dimension `a+b`. Its kernel is exactly
 
 ```math
 \ker\mathcal S
-=\{(g_0 h,-f_0 h):h\in K[t]_{<r}\}.              \tag{2}
+=\{(g_0 h,-f_0 h):h\in K[t]_{\lt r}\}.              \tag{2}
 ```
 
 Indeed, `fu+gv=0` implies `f_0u=-g_0v`. Coprimality gives `u=g_0h,v=-f_0h`. The two degree restrictions are then equivalent to `deg h<r`. The converse is immediate. In particular the corank is `r`.
@@ -187,8 +187,8 @@ The same row structure gives the exact kernel statement
 ```math
 \ker\mathcal B_m(X,y)=
 \begin{cases}
-\{0\},&y\ne\mathop{\mathrm{per}}_m(X),\\
-\mathbb C e_0,&y=\mathop{\mathrm{per}}_m(X).
+\{0\},&y\ne\mathop{\mathrm{per}}_m(X),
+\\ \mathbb C e_0,&y=\mathop{\mathrm{per}}_m(X).
 \end{cases}                                     \tag{10}
 ```
 
@@ -230,7 +230,7 @@ is free of rank `D` with basis `1,t,...,t^{D-1}`. Multiplication by `g` in that 
 ```math
 v=1+\epsilon r(X,z,t)+O(\epsilon^2),
 \qquad r=\mathop{\mathrm{rem}}_{t^D-z}H_m,
-\qquad \deg_t r<D.                              \tag{13}
+\qquad \deg_t r\lt D.                              \tag{13}
 ```
 
 This identity is a computation in a finite free algebra, not an assertion that its `D` coefficients have been computed cheaply. At `z=1`, the remainder and the original observable agree at every `D`-th root of unity. Summing those values and using `deg_t r<D` gives

@@ -10,7 +10,7 @@ For every integer $`k\ge 1`$, every finite planar graph of odd girth at least $`
 
 Fix $`k\ge1`$ and put $`q=4k+1`$, $`L=2k+1`$. Call a length $`\ell`$ admissible for an obstruction if there is a positive integer $`j`$ with
 ```math
-\ell\equiv j\pmod 2,\qquad jq<2\ell<j(q+1).
+\ell\equiv j\pmod 2,\qquad jq<2\ell\lt j(q+1).
 ```
 
 **Theorem.** Let $`G`$ be a finite planar graph of odd girth at least $`q`$. If no simple cycle of $`G`$ has an admissible length, then $`G\to C_L`$. In particular, it suffices that the circumference is at most $`10k+2`$. It also suffices that the circumference is at most $`12k+3`$ and there is no cycle of length $`10k+3`$. A forest has circumference zero.
@@ -29,7 +29,7 @@ For the length claims write $`\ell=2kj+a`$. The admissibility conditions become 
 
 The difference-constraint argument also gives an exact test for each fixed initial winding class. Tightening by real vertex potentials is possible if and only if each cycle passes the winding inequality. Necessity follows by telescoping the potentials. It is possible that moving to a different winding class removes an obstruction.
 
-An additional consequence applies when all cycle lengths of $`G`$ and $`q`$ are divisible by a positive integer $`d`$. An obstructing cycle would have $`0<2\ell-jq<j`$, with the middle term a multiple of $`d`$. Therefore $`j\ge d+1`$ and $`2\ell>(d+1)q`$. If $`2\operatorname{circ}(G)\le(d+1)q`$, the required map exists.
+An additional consequence applies when all cycle lengths of $`G`$ and $`q`$ are divisible by a positive integer $`d`$. An obstructing cycle would have $`0<2\ell-jq<j`$, with the middle term a multiple of $`d`$. Therefore $`j\ge d+1`$ and $`2\ell>(d+1)q`$. If $`2\mathop{\mathrm{circ}}(G)\le(d+1)q`$, the required map exists.
 
 ## Contraction of parallel paths in the dual
 
@@ -42,7 +42,7 @@ Consider a union of $`r\ge 2`$ paths between two distinct terminals, internally 
 
 **Theorem.** If this multigraph is strongly $`\mathbb Z_L`$-connected, then
 ```math
-D_i<L\ \text{for all }i,\qquad
+D_i\lt L\ \text{for all }i,\qquad
 \sum_{i=1}^{r}(L-D_i-1)\ge L-1 .
 ```
 These conditions are sufficient if $`L`$ is prime or $`r=2`$. For any odd $`L`$, the following is sufficient. Require $`D_i<L`$ for all $`i`$. For each divisor $`d>1`$ of $`L`$, put $`h=L/d`$ and
@@ -57,7 +57,7 @@ It suffices that $`\sum_i(d-b_i(d)-1)\ge d-1`$ for every such $`d`$. The denomin
 
 If $`D_i\ge L`$, place the intervals consecutively around the cyclic group, starting with the fixed one if it is nonempty. Their union can cover the group, so some compatible boundary demand has no realization. If $`D_i<L`$, then $`|A_i|\ge L-D_i`$. The same consecutive placement makes $`A_i`$ a cyclic interval of exactly that size. For these choices the terminal sumset is an interval of size $`\min\{L,1+\sum_i(L-D_i-1)\}`$, proving necessity of the second condition. Cauchy–Davenport gives the same bound from below for a prime modulus. When $`r=2`$, the necessary inequality implies $`|A_1|+|A_2|\ge L+1`$. Every translate of $`-A_2`$ then meets $`A_1`$, giving sufficiency for any odd modulus. [Cauchy–Davenport and Kneser, formal statements and proofs](https://isa-afp.org/entries/Kneser_Cauchy_Davenport.html)
 
-For the divisor condition project to $`\mathbb Z_d`$. A cyclic interval of length $`\delta_e`$ in $`\mathbb Z_L`$ contains $`\lfloor\delta_e/d\rfloor`$ members of every fiber, and one more member for exactly $`\delta_e\bmod d`$ fibers. Absence of a projected residue from $`A_i`$ requires that all $`h`$ members of its fiber be covered. Summing interval counts, it requires at least $`h-s_i(d)`$ of the $`R_i(d)`$ extra members, counted with multiplicity. Thus at most $`b_i(d)`$ residues are absent. If the full sumset were proper, its stabilizer would be a proper subgroup of index some $`d>1`$. In the quotient by that subgroup, each partial sum also has trivial stabilizer, since any period of a partial sum is a period of the final sum. Iterating Kneser's two-set theorem gives a lower bound of $`1+\sum_i(|\operatorname{proj}(A_i)|-1)`$ for the sumset size. This is at least $`d`$ by the divisor condition, a contradiction. [DeVos, proof of Kneser's addition theorem](https://arxiv.org/abs/1303.3539)
+For the divisor condition project to $`\mathbb Z_d`$. A cyclic interval of length $`\delta_e`$ in $`\mathbb Z_L`$ contains $`\lfloor\delta_e/d\rfloor`$ members of every fiber, and one more member for exactly $`\delta_e\bmod d`$ fibers. Absence of a projected residue from $`A_i`$ requires that all $`h`$ members of its fiber be covered. Summing interval counts, it requires at least $`h-s_i(d)`$ of the $`R_i(d)`$ extra members, counted with multiplicity. Thus at most $`b_i(d)`$ residues are absent. If the full sumset were proper, its stabilizer would be a proper subgroup of index some $`d>1`$. In the quotient by that subgroup, each partial sum also has trivial stabilizer, since any period of a partial sum is a period of the final sum. Iterating Kneser's two-set theorem gives a lower bound of $`1+\sum_i(|\mathop{\mathrm{proj}}(A_i)|-1)`$ for the sumset size. This is at least $`d`$ by the divisor condition, a contradiction. [DeVos, proof of Kneser's addition theorem](https://arxiv.org/abs/1303.3539)
 
 The composite-modulus distinction is necessary. Take $`L=15`$ and three paths of length five. Give the first two paths bundle multiplicity twelve and the third multiplicity thirteen. The deficits are $`(10,10,5)`$ and the excess-size sum is $`4+4+9=17\ge14`$. On either of the first two paths, place the five two-residue complementary intervals periodically with period three, leaving one residue class modulo three. On the third path, place the five one-residue intervals periodically, leaving two classes. Rotating each placement to accommodate its fixed first interval leaves the same number of classes. The sumset occupies at most two classes modulo three, and so some terminal demands fail.
 

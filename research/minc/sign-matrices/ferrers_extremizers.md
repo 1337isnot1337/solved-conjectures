@@ -19,7 +19,7 @@ P(x)=\sum_{k=0}^n r_{n-k}x^{\underline k}.
 ```
 
 Define the rational linear functional $`L(x^{\underline k})=(-1/2)^k k!`$. Expanding the signs as $`1-2\mathbf1_B`$ gives
-$`\operatorname{per} A=(-2)^n L(P)`$. By Newton interpolation,
+$`\mathop{\mathrm{per}} A=(-2)^n L(P)`$. By Newton interpolation,
 
 ```math
 L(P)=\sum_{k=0}^n (-1/2)^k \Delta^kP(0).

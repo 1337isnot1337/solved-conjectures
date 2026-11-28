@@ -1,6 +1,6 @@
 # Agarwal Question 2: rejected iid zero-loss oracle reductions
 
-Checked 2026-11-21. The [target and prior-status audit](oracle-small-loss-audit.md) fixes the original policy-optimization oracle and the full US$250 Question 2. A valid negative theorem even at $`L_*=0`$ would refute that full question. No such theorem is proved here.
+Checked 2026-11-21. The [target and prior-status audit](oracle-small-loss-audit.md) fixes the original policy-optimization oracle and the full US\$250 Question 2. A valid negative theorem even at $`L_*=0`$ would refute that full question. No such theorem is proved here.
 
 This was a separate bounded lower-bound attempt after the convex-surrogate route stopped. It considered hidden perfect policies, prescribed-order oracle constructions, and sparse corruptions of an unknown safe policy. The exact failures below prevent using those constructions as an answer to the prize.
 

@@ -16,7 +16,7 @@ t_{Kj}=\sum_{v\in V(K)\cap V(C_j)}\alpha_v.
 
 The attachment sums in each row add to zero. This follows by summing the flow law for the three colours at vertices outside $F$ in that component, with both incidences of an edge cancelling if both ends lie on $F$. Assume that the attachment sums in each column also add to zero.
 
-Join components $K$ to circuits $C_j$ in a bipartite graph when $t_{Kj}\ne0$. Partition the rows into groups by connected components of this graph, counting each isolated row as a group. Let $m$ be the number of rows and $d$ the number of groups. Interpret $T=(t_{Kj})$ as a binary $m$-by-$2k$ matrix, with two adjacent scalar columns for each circuit.
+Join components $K$ to circuits $C_j$ in a bipartite graph when $t_{Kj}\ne0$. Partition the rows into groups by connected components of this graph, counting each isolated row as a group. Let $m$ be the number of rows and $d$ the number of groups. Interpret $T=(t_{Kj})$ as a binary $m$-by-$`2k`$ matrix, with two adjacent scalar columns for each circuit.
 
 **Theorem.** If $T$ has rank $m-d$, then $G$ has a five-cycle double cover containing $F$ as one member.
 
@@ -34,7 +34,7 @@ Write $p_K$ for the parity of the number of endpoints of $M$ in $K$ when the shi
 
 For this fixed colouring the linear system is an exact criterion for obtaining the even-endpoint condition by shifts. Its matrix has the rank of $T$, because $B$ is nondegenerate.
 
-**Balancing the groups.** Every circuit has either all its $t_{Kj}$ zero or all nonzero entries supported in a single row group. Thus the sum of the $\alpha_v$ from each group on each circuit is zero. Independently for each group $g$, apply to its colours one of the rotations $R_g\in\{I,R,R^2\}$, where $R(x_1,x_2)=(x_2,x_1+x_2)$. These preserve the zero column sums. They transform each pair of columns of $T$ together by an invertible map, so the matrix rank and left kernel are preserved.
+**Balancing the groups.** Every circuit has either all its $t_{Kj}$ zero or all nonzero entries supported in a single row group. Thus the sum of the $\alpha_v$ from each group on each circuit is zero. Independently for each group $g$, apply to its colours one of the rotations $`R_g\in\{I,R,R^2\}`$, where $R(x_1,x_2)=(x_2,x_1+x_2)$. These preserve the zero column sums. They transform each pair of columns of $T$ together by an invertible map, so the matrix rank and left kernel are preserved.
 
 For each group $g$, compute the sum of its row parities after rotation, with shifts still zero. On each circuit, the parity contribution from a group vertex with increment $u$ and preceding prefix sum $x$ is the sum of the zero-indicators at $x$ and $x+u$. Expanding gives
 

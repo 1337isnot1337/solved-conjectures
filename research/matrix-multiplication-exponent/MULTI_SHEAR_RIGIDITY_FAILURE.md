@@ -60,8 +60,8 @@ For each z let N_z be the q-by-q matrix with entries
 ```math
 (N_z)_{ab}=
 \begin{cases}
-\kappa_{ab}^z\partial_{ab}&a\in P,\ b\in Q,\\
-0&\text{otherwise}.
+\kappa_{ab}^z\partial_{ab}&a\in P,\ b\in Q,
+\\ 0&\text{otherwise}.
 \end{cases}
 \tag{6}
 ```
@@ -114,8 +114,8 @@ For fixed (i,j) in P times Q the combined coefficient at outer labels
 \mathcal O_{ab}^{ij}
 ={}&x_{ij}\partial_{ab}
        \sum_{z=1}^r\kappa_{ab}^z
-             (v_b^{z,ij}-v_a^{z,ij})\\
-&+\delta_{ai}\delta_{bj}
+             (v_b^{z,ij}-v_a^{z,ij})
+\\ &+\delta_{ai}\delta_{bj}
        \sum_{z=1}^r\kappa_{ij}^z v_j^{z,ij}
 \qquad (a\in P,\ b\in Q),
 \end{aligned}

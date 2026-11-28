@@ -4,13 +4,13 @@ Research date: 20 November 2026. This is an application of the accepted Dirichle
 
 ## Full statement and outcome
 
-Let \(\lambda(n)\) be the exponent of the finite group \((\mathbb Z/n\mathbb Z)^\times\), with \(\lambda(1)=1\). Then
-\[
+Let $`\lambda(n)`$ be the exponent of the finite group $`(\mathbb Z/n\mathbb Z)^\times`$, with $`\lambda(1)=1`$. Then
+```math
 \boxed{\forall n\ge1\ \exists m\ge1:\quad m\ne n,\quad\lambda(m)=\lambda(n).}
 \tag{1}
-\]
+```
 
-This is the full conjecture proposed by Banks, Friedlander, Luca, Pappalardi and Shparlinski [1]. Under the owner's accepted source theorem, it follows completely from Ford–Luca [2]. Their ERH means the Riemann hypothesis for Dirichlet \(L\)-functions; no Dedekind or nonabelian Artin family is required.
+This is the full conjecture proposed by Banks, Friedlander, Luca, Pappalardi and Shparlinski [1]. Under the owner's accepted source theorem, it follows completely from Ford–Luca [2]. Their ERH means the Riemann hypothesis for Dirichlet $`L`$-functions; no Dedekind or nonabelian Artin family is required.
 
 The conditional proof is Ford and Luca's. This note documents its use and checks the exact hypotheses. It does not claim a new conditional theorem or exclusive priority for this application.
 
@@ -18,78 +18,78 @@ Statement (1) concerns Carmichael's **lambda function**. It does not settle Carm
 
 ## Imported analytic theorem and version map
 
-For a prime \(q\), form its Pratt tree by replacing a prime node \(r\) with the maximal prime powers dividing \(r-1\), and continuing downwards. Let \(f(q)\) be the largest proper prime power appearing anywhere in this tree; put \(f(q)=1\) if there is none. Equivalently,
-\[
+For a prime $`q`$, form its Pratt tree by replacing a prime node $`r`$ with the maximal prime powers dividing $`r-1`$, and continuing downwards. Let $`f(q)`$ be the largest proper prime power appearing anywhere in this tree; put $`f(q)=1`$ if there is none. Equivalently,
+```math
 f(2)=1,\qquad
 f(q)=\max\left(
  \{f(r):r\parallel q-1\}
  \cup\{r^b:r^b\parallel q-1,\ b\ge2\}
  \right).
 \tag{2}
-\]
+```
 An empty maximum has value 1.
 
 Ford–Luca's full conditional theorem supplies
-\[
+```math
 \forall p\text{ prime},\ \forall a\ge1,\quad
-\exists q\text{ prime}:\quad p^a\mid q-1,\quad f(q)<p^{a+1}.
+\exists q\text{ prime}:\quad p^a\mid q-1,\quad f(q)\lt p^{a+1}.
 \tag{3}
-\]
-Their proof also gives \(p^a\parallel q-1\). This exact multiplicity follows from (3): if \(p^{a+1}\mid q-1\), the tree would contain a proper prime power at least \(p^{a+1}\).
+```
+Their proof also gives $`p^a\parallel q-1`$. This exact multiplicity follows from (3): if $`p^{a+1}\mid q-1`$, the tree would contain a proper prime power at least $`p^{a+1}`$.
 
 The April 3, 2011 corrected author version [2a] numbers (3) as Conjecture2, proves ERH implies it in Theorem2, and proves (3) implies (1) in Theorem1. The journal-hosted layout [2b] numbers the corresponding assertions Conjecture3, Theorem5 and Theorem4. The differing numbers are layout/version differences, not different mathematical hypotheses.
 
-The accepted source gives GRH for every primitive Dirichlet character and hence for every Dirichlet \(L\)-function: omitted Euler factors of an imprimitive character have zeros on \(\Re s=0\). It therefore supplies the ERH in [2a, Theorem2] for all the moduli used there. Applying that theorem gives (3) for every prime power. The remaining arithmetic implication is recorded below.
+The accepted source gives GRH for every primitive Dirichlet character and hence for every Dirichlet $`L`$-function: omitted Euler factors of an imprimitive character have zeros on $`\Re s=0`$. It therefore supplies the ERH in [2a, Theorem2] for all the moduli used there. Applying that theorem gives (3) for every prime power. The remaining arithmetic implication is recorded below.
 
 ## Arithmetic deduction for every integer
 
-Assume a counterexample to (1) exists and choose the smallest, \(n_0\). Write \(L=\lambda(n_0)\). We use
-\[
-\lambda(n)=\operatorname{lcm}_{p^e\parallel n}\lambda(p^e),
+Assume a counterexample to (1) exists and choose the smallest, $`n_0`$. Write $`L=\lambda(n_0)`$. We use
+```math
+\lambda(n)=\mathop{\mathrm{lcm}}_{p^e\parallel n}\lambda(p^e),
 \quad
 \lambda(p^e)=p^{e-1}(p-1)\quad(p\text{ odd}),
-\]
-and \(\lambda(2)=1,\lambda(4)=2,\lambda(2^e)=2^{e-2}\) for \(e\ge3\).
+```
+and $`\lambda(2)=1,\lambda(4)=2,\lambda(2^e)=2^{e-2}`$ for $`e\ge3`$.
 
-First, \(16\mid n_0\). An odd input can be doubled, an input with exactly one factor of 2 can be halved, and inputs with 2-adic valuation 2 or 3 can have that valuation exchanged between 2 and 3 without changing lambda.
+First, $`16\mid n_0`$. An odd input can be doubled, an input with exactly one factor of 2 can be halved, and inputs with 2-adic valuation 2 or 3 can have that valuation exchanged between 2 and 3 without changing lambda.
 
-Second, whenever a prime \(r\) satisfies \(r-1\mid L\), we have \(r^2\mid n_0\). If \(r\nmid n_0\), multiplication by \(r\) gives an immediate collision. If \(r\parallel n_0\), minimality supplies an integer \(m\ne n_0/r\) with
-\(\lambda(m)=\lambda(n_0/r)\).
-If \(r\mid m\), then \(r-1\mid\lambda(n_0/r)\), making \(n_0/r\) a collision. If \(r\nmid m\), then
-\[
-\lambda(rm)=\operatorname{lcm}(r-1,\lambda(m))=L,\qquad rm\ne n_0,
-\]
+Second, whenever a prime $`r`$ satisfies $`r-1\mid L`$, we have $`r^2\mid n_0`$. If $`r\nmid n_0`$, multiplication by $`r`$ gives an immediate collision. If $`r\parallel n_0`$, minimality supplies an integer $`m\ne n_0/r`$ with
+$`\lambda(m)=\lambda(n_0/r)`$.
+If $`r\mid m`$, then $`r-1\mid\lambda(n_0/r)`$, making $`n_0/r`$ a collision. If $`r\nmid m`$, then
+```math
+\lambda(rm)=\mathop{\mathrm{lcm}}(r-1,\lambda(m))=L,\qquad rm\ne n_0,
+```
 again a collision.
 
-Let \(p^{a+1}\) be the smallest prime power not dividing \(L\). Each prime power in \(p-1\) is smaller, so \(p-1\mid L\) and the preceding fact gives \(p^2\mid n_0\). Thus \(a\ge1\); when \(p=2\), the stronger \(16\mid n_0\) gives \(a\ge2\).
+Let $`p^{a+1}`$ be the smallest prime power not dividing $`L`$. Each prime power in $`p-1`$ is smaller, so $`p-1\mid L`$ and the preceding fact gives $`p^2\mid n_0`$. Thus $`a\ge1`$; when $`p=2`$, the stronger $`16\mid n_0`$ gives $`a\ge2`$.
 
-Set \(b=a+1\) for odd \(p\), and \(b=a+2\) for \(p=2\). Then
-\[
+Set $`b=a+1`$ for odd $`p`$, and $`b=a+2`$ for $`p=2`$. Then
+```math
 p^b\parallel n_0.
 \tag{4}
-\]
-A larger valuation would force \(p^{a+1}\mid L\). A smaller valuation would allow multiplication of \(n_0\) by \(p\) without changing lambda, since the new prime-power contribution still divides \(L\).
+```
+A larger valuation would force $`p^{a+1}\mid L`$. A smaller valuation would allow multiplication of $`n_0`$ by $`p`$ without changing lambda, since the new prime-power contribution still divides $`L`$.
 
-For every prime \(r\) with \(f(r)<p^{a+1}\), we claim \(r^2\mid n_0\). Induct on \(r\). The case \(r=2\) is covered already. For each prime-power factor \(s^c\parallel r-1\), either \(c\ge2\), in which case
-\(s^c\le f(r)<p^{a+1}\) and therefore \(s^c\mid L\), or \(c=1\), in which case \(f(s)<p^{a+1}\). The inductive hypothesis then gives \(s^2\mid n_0\). For odd \(s\), this implies \(s\mid L\); for \(s=2\), the earlier fact \(16\mid n_0\) supplies \(2\mid L\). It follows that \(r-1\mid L\), and the previous paragraph gives \(r^2\mid n_0\).
+For every prime $`r`$ with $`f(r)<p^{a+1}`$, we claim $`r^2\mid n_0`$. Induct on $`r`$. The case $`r=2`$ is covered already. For each prime-power factor $`s^c\parallel r-1`$, either $`c\ge2`$, in which case
+$`s^c\le f(r)<p^{a+1}`$ and therefore $`s^c\mid L`$, or $`c=1`$, in which case $`f(s)<p^{a+1}`$. The inductive hypothesis then gives $`s^2\mid n_0`$. For odd $`s`$, this implies $`s\mid L`$; for $`s=2`$, the earlier fact $`16\mid n_0`$ supplies $`2\mid L`$. It follows that $`r-1\mid L`$, and the previous paragraph gives $`r^2\mid n_0`$.
 
-Choose \(q\) from (3). Then \(q>p\), \(q^2\mid n_0\), and
-\[
+Choose $`q`$ from (3). Then $`q>p`$, $`q^2\mid n_0`$, and
+```math
 p^a\mid q-1\mid \lambda(n_0/p^b).
-\]
-Consequently, removing one factor \(p\) from the \(p^b\) component of \(n_0\) loses no factor in the least common multiple defining lambda:
-\[
+```
+Consequently, removing one factor $`p`$ from the $`p^b`$ component of $`n_0`$ loses no factor in the least common multiple defining lambda:
+```math
 \lambda(n_0/p)
-=\operatorname{lcm}\bigl(\lambda(p^{b-1}),\lambda(n_0/p^b)\bigr)
+=\mathop{\mathrm{lcm}}\bigl(\lambda(p^{b-1}),\lambda(n_0/p^b)\bigr)
 =\lambda(n_0).
-\]
-For odd \(p\), the factor \(p-1\) remains in \(\lambda(p^{b-1})\); for \(p=2\), it is 1. This contradicts the definition of \(n_0\), proving (1).
+```
+For odd $`p`$, the factor $`p-1`$ remains in $`\lambda(p^{b-1})`$; for $`p=2`$, it is 1. This contradicts the definition of $`n_0`$, proving (1).
 
 This is the minimal-counterexample argument behind [2a, Theorem1], included to make the endpoint and the prime-2 convention inspectable.
 
 ## Scope and finite dependencies
 
-The imported theorem proves (3) for **all** prime powers. Its published proof combines the ERH progression estimate, prime-chain bounds, and a finite PARI/GP verification. The finite part covers \(a=1,\ p\le18{,}000{,}000\), and \(a\ge2,\ p^a\le10^{10}\). It also uses an explicitly bounded matrix in the prime-chain estimate. We rely on those as parts of the published theorem; they were not independently rerun here.
+The imported theorem proves (3) for **all** prime powers. Its published proof combines the ERH progression estimate, prime-chain bounds, and a finite PARI/GP verification. The finite part covers $`a=1,\ p\le18{,}000{,}000`$, and $`a\ge2,\ p^a\le10^{10}`$. It also uses an explicitly bounded matrix in the prime-chain estimate. We rely on those as parts of the published theorem; they were not independently rerun here.
 
 This campaign is not claiming a larger checked numerical range. Its conclusion is the original universal conjecture (1). It also does not infer (1) merely from the unconditional “all sufficiently large prime powers” theorem: that would leave precisely the finite gap the conditional result closes.
 
@@ -122,4 +122,4 @@ Complete inherited deduction, with the original theorem and the arithmetic impli
 
 ## Independent review
 
-On 20 November 2026, a separate analytic worker checked the entire implication against both Ford–Luca PDF versions. The review confirmed the exact Dirichlet-ERH hypothesis, the theorem-number mapping, the minimal-counterexample argument, and all valuations at the prime 2. Its one requested clarification, explicitly using \(16\mid n_0\) in the prime-2 induction step, is included above. The review receipt is [issue #120, comment 7049648213](https://github.com/1337isnot1337/solved-conjectures/issues/120#issuecomment-7049648213). Internal review is not external peer review.
+On 20 November 2026, a separate analytic worker checked the entire implication against both Ford–Luca PDF versions. The review confirmed the exact Dirichlet-ERH hypothesis, the theorem-number mapping, the minimal-counterexample argument, and all valuations at the prime 2. Its one requested clarification, explicitly using $`16\mid n_0`$ in the prime-2 induction step, is included above. The review receipt is [issue #120, comment 7049648213](https://github.com/1337isnot1337/solved-conjectures/issues/120#issuecomment-7049648213). Internal review is not external peer review.

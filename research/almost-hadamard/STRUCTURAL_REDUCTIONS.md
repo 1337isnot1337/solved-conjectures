@@ -60,8 +60,8 @@ Preliminaries. A local maximum has full support (Banica–Nechita 2018, Theorem 
 Stationarity along U exp(itB), B Hermitian, implies X Hermitian. The second derivative formula (2018, Proposition 4.5, used here only as a necessary condition) is
 
 ~~~math
-Q_U(B)=\sum_{ij}\frac{\operatorname{Re}((UB)_{ij}\overline{S_{ij}})^2}{r_{ij}}
--\operatorname{Tr}(XB^2)\le0,\quad r_{ij}=|U_{ij}|.
+Q_U(B)=\sum_{ij}\frac{\mathop{\mathrm{Re}}((UB)_{ij}\overline{S_{ij}})^2}{r_{ij}}
+-\mathop{\mathrm{Tr}}(XB^2)\le0,\quad r_{ij}=|U_{ij}|.
 ~~~
 
 This follows by differentiating absolute value twice: the first derivative of the entry is i(UB)_ij, its second derivative is -(UB²)_ij; the imaginary component of the first derivative perpendicular to the entry phase contributes the squared real part displayed. Taking B=vv* for arbitrary unit v shows v*Xv>=0. In fact X is strictly positive: if v*Xv=0, then all a_ij=Re((Uv)_i conjugate(v_j) conjugate(S_ij)) vanish, but sum_j r_ij a_ij=|(Uv)_i|², impossible for unit v. This strict positivity is also established in stronger quantitative form in the November 2026 source (Proposition 2.6). Thus S=UX is its polar decomposition and ||X||_F²=||S||_F²=n².

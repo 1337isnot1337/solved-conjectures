@@ -10,23 +10,23 @@ For all real $\alpha,\beta$, Littlewood’s conjecture asserts
 \liminf_{q\to\infty} q\|q\alpha\|\,\|q\beta\|=0,
 ```
 
-where $q$ is a positive integer and $\|x\|$ is distance to the nearest integer. Cassels and Swinnerton-Dyer established the common cubic field case. Their paper is an early primary source for the conjecture and its algebraic setting. The November 24, 2026 source check found no general resolution. Schleischitz’s 2026 disproof concerns the separately quantified uniform conjecture. The proof below uses the number-field Subspace Theorem and finiteness of nondegenerate multiplicative-group equations. Priority for this particular trace obstruction is provisional. [Cassels–Swinnerton-Dyer](https://doi.org/10.1098/rsta.1955.0010) · [*Dispersion and Littlewood’s conjecture*](https://wrap.warwick.ac.uk/id/eprint/194804/1/DispersionLittlewood.pdf) · [Schleischitz](https://arxiv.org/abs/2603.12611) · [Evertse–Schlickewei](https://pub.math.leidenuniv.nl/~evertsejh/98-absolute.pdf) · [Evertse–Schlickewei–Schmidt](https://arxiv.org/abs/math/0409604)
+where $q$ is a positive integer and $`\|x\|`$ is distance to the nearest integer. Cassels and Swinnerton-Dyer established the common cubic field case. Their paper is an early primary source for the conjecture and its algebraic setting. The November 24, 2026 source check found no general resolution. Schleischitz’s 2026 disproof concerns the separately quantified uniform conjecture. The proof below uses the number-field Subspace Theorem and finiteness of nondegenerate multiplicative-group equations. Priority for this particular trace obstruction is provisional. [Cassels–Swinnerton-Dyer](https://doi.org/10.1098/rsta.1955.0010) · [*Dispersion and Littlewood’s conjecture*](https://wrap.warwick.ac.uk/id/eprint/194804/1/DispersionLittlewood.pdf) · [Schleischitz](https://arxiv.org/abs/2603.12611) · [Evertse–Schlickewei](https://pub.math.leidenuniv.nl/~evertsejh/98-absolute.pdf) · [Evertse–Schlickewei–Schmidt](https://arxiv.org/abs/math/0409604)
 
 ## Trace denominators with bounded other conjugates
 
-Let $K=\mathbb Q(\alpha,\beta)\subseteq\mathbb R$ have degree $d\ge4$, with both $\alpha$ and $\beta$ irrational. Write its embeddings into $\mathbb C$ as $\sigma_1,\ldots,\sigma_d$, with $\sigma_1$ the given real embedding. Fix a height bound $B\ge1$ for the other conjugates and a finite set $\mathcal P$ of rational primes. Consider $\xi\in\mathcal O_K\setminus\{0\}$ with
+Let $K=\mathbb Q(\alpha,\beta)\subseteq\mathbb R$ have degree $d\ge4$, with both $\alpha$ and $\beta$ irrational. Write its embeddings into $\mathbb C$ as $\sigma_1,\ldots,\sigma_d$, with $\sigma_1$ the given real embedding. Fix a height bound $B\ge1$ for the other conjugates and a finite set $\mathcal P$ of rational primes. Consider $`\xi\in\mathcal O_K\setminus\{0\}`$ with
 
 ```math
 Q=|\sigma_1(\xi)|,\qquad |\sigma_j(\xi)|\le B\quad(j>1),
 ```
 
-and such that every prime divisor of $|N_{K/\mathbb Q}(\xi)|$ belongs to $\mathcal P$. Then for every $\varepsilon>0$, all sufficiently large denominators $q=|\operatorname{Tr}_{K/\mathbb Q}(\xi)|$ of this form satisfy
+and such that every prime divisor of $|N_{K/\mathbb Q}(\xi)|$ belongs to $\mathcal P$. Then for every $\varepsilon>0$, all sufficiently large denominators $`q=|\mathop{\mathrm{Tr}}_{K/\mathbb Q}(\xi)|`$ of this form satisfy
 
 ```math
 q\|q\alpha\|\,\|q\beta\|\gg q^{1-2/(d-1)-\varepsilon}.
 ```
 
-The constants and threshold may depend on $K,\alpha,\beta,B,\mathcal P,\varepsilon$. The norm condition includes units and any fixed bound on absolute norms. Since the sum of the other conjugates is bounded, $q=Q+O(1)$. We may replace $\xi$ by $-\xi$ to have positive trace. Multiplying $\alpha,\beta$ by a fixed integer to make them integral is harmless for the lower bound, using $\|m x\|\le m\|x\|$. Joint generation and the sets of embeddings that fix each element are preserved by that scaling.
+The constants and threshold may depend on $K,\alpha,\beta,B,\mathcal P,\varepsilon$. The norm condition includes units and any fixed bound on absolute norms. Since the sum of the other conjugates is bounded, $q=Q+O(1)$. We may replace $\xi$ by $-\xi$ to have positive trace. Multiplying $\alpha,\beta$ by a fixed integer to make them integral is harmless for the lower bound, using $`\|m x\|\le m\|x\|`$. Joint generation and the sets of embeddings that fix each element are preserved by that scaling.
 
 ### Cancellation estimate
 
@@ -56,14 +56,14 @@ as $Q$ grows. There are finitely many possible choices of largest coordinate. Th
 
 ### The two trace errors and the exponent
 
-For integral $\alpha$, the trace $\operatorname{Tr}(\alpha\xi)$ is an integer and
+For integral $\alpha$, the trace $`\mathop{\mathrm{Tr}}(\alpha\xi)`$ is an integer and
 
 ```math
-q\alpha-\operatorname{Tr}(\alpha\xi)
+q\alpha-\mathop{\mathrm{Tr}}(\alpha\xi)
 =\sum_{j>1}(\alpha-\sigma_j(\alpha))\sigma_j(\xi).
 ```
 
-The sum is bounded uniformly, so the difference between the trace numerator and a nearest integer belongs to a fixed finite set of integers. Let $A=\{j>1:\sigma_j(\alpha)\ne\alpha\}$ and $B'=\{j>1:\sigma_j(\beta)\ne\beta\}$. In the cancellation estimate use the conjugate coordinates from the support $A$ and, if the integer correction is nonzero, the constant coordinate $1$. Do this separately for each of the finitely many corrections, and likewise for $\beta$. It follows that
+The sum is bounded uniformly, so the difference between the trace numerator and a nearest integer belongs to a fixed finite set of integers. Let $`A=\{j>1:\sigma_j(\alpha)\ne\alpha\}`$ and $`B'=\{j>1:\sigma_j(\beta)\ne\beta\}`$. In the cancellation estimate use the conjugate coordinates from the support $A$ and, if the integer correction is nonzero, the constant coordinate $1$. Do this separately for each of the finitely many corrections, and likewise for $\beta$. It follows that
 
 ```math
 \|q\alpha\|\gg Q^{-\delta} M_A,\qquad
@@ -90,4 +90,4 @@ Bounded other conjugates alone do not limit the choice of trace in the same way.
 
 Take the real root $\theta>1$ of $x^4-x^3-x^2-x-1$, with $\alpha=\theta$ and $\beta=\theta^2$. The polynomial is irreducible modulo two because it is the fifth cyclotomic polynomial there and two has order four modulo five. The root is a unit and the other three conjugates lie inside the unit circle. For the latter fact multiply the polynomial by $x-1$ to get $x^5-2x^4+1$. On radii $s$ just above one, $2s^4>s^5+1$, so Rouché’s theorem gives four roots inside, including the root at one. Equality on the unit circle forces $x^5=x^4=1$, so no root of the original polynomial occurs on the unit circle.
 
-The integer traces of powers begin with $4,1,3,7$ and then follow the four-term recurrence from the polynomial. Using 512 rational bisections starting from $[1,2]$ and interval arithmetic at powers $20,40,80,160$ verified that the nearest numerators for both coordinates are the next two traces. Comparing fourth powers verified $q\|q\theta\|\|q\theta^2\|>q^{1/4}$ at each of these controls. No finite calculation is used for the asymptotic proof.
+The integer traces of powers begin with $4,1,3,7$ and then follow the four-term recurrence from the polynomial. Using 512 rational bisections starting from $[1,2]$ and interval arithmetic at powers $20,40,80,160$ verified that the nearest numerators for both coordinates are the next two traces. Comparing fourth powers verified $`q\|q\theta\|\|q\theta^2\|>q^{1/4}`$ at each of these controls. No finite calculation is used for the asymptotic proof.

@@ -62,9 +62,9 @@ Using (1) and $`\pi(\mathbf1)=e^{-m}`$,
 ```math
 \begin{aligned}
 F(BC)
-&=\frac{K_{BC}(\mathbf1,\mathbf1)}{\pi(\mathbf1)}\\
-&=\sum_y\frac{K_B(\mathbf1,y)K_C(y,\mathbf1)}{\pi(\mathbf1)}\\
-&=\sum_y\pi(y)f_B(y)f_{C^T}(y)
+&=\frac{K_{BC}(\mathbf1,\mathbf1)}{\pi(\mathbf1)}
+\\ &=\sum_y\frac{K_B(\mathbf1,y)K_C(y,\mathbf1)}{\pi(\mathbf1)}
+\\ &=\sum_y\pi(y)f_B(y)f_{C^T}(y)
 =\langle f_B,f_{C^T}\rangle_{L^2(\pi)}.
 \end{aligned}                                                   \tag{4}
 ```

@@ -90,8 +90,8 @@ Dropping the nonpositive first-moment term is legitimate for an upper bound. The
 ```math
 \begin{aligned}
 \Delta
-&\le[4K_0t+2Ht^2]p_D[\phi(0)-\phi(u)]\\
-&\le(2K_0+Ht)p_D\phi(0)\,t u^2,
+&\le[4K_0t+2Ht^2]p_D[\phi(0)-\phi(u)]
+\\ &\le(2K_0+Ht)p_D\phi(0)\,t u^2,
 \end{aligned}
 ```
 

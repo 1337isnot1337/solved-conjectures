@@ -121,8 +121,8 @@ For $`e=\{b,b'\}\in[B]^2`$, write $`q_e=\chi(e)`$. Define
 
 
 ```math
-S=(B\cup(-B))\ \cup\
-\bigl\{\varepsilon q_{\{b,b'\}}(b+b'):
+S=(B\cup(-B))\ \cup
+\ \bigl\{\varepsilon q_{\{b,b'\}}(b+b'):
 \{b,b'\}\in[B]^2,\ \varepsilon\in\{-1,1\}\bigr\}.
 ```
 

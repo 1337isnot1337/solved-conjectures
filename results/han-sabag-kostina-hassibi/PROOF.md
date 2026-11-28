@@ -225,7 +225,7 @@ P_{21}(x)-P_0(h)=\frac{105}{272}-\frac{25}{27x}.
 Both are strictly positive precisely throughout the nonempty interval
 
 ```math
-\frac{1360}{567}<h^2<\frac{4675}{1296}.
+\frac{1360}{567}\lt h^2<\frac{4675}{1296}.
 \tag{13}
 ```
 

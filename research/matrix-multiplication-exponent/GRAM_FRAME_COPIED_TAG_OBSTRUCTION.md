@@ -18,8 +18,8 @@ There is a legal two-family realization of its A/B operator word. The shared sou
 ```math
 \begin{array}{c|cc}
 z&A_{zh}^{a}&B_{zh}^{b}\\\hline
-1&P_{ah}&U_{hb}\\
-2&\delta_{ah}I&-(PU)_{hb}.
+1&P_{ah}&U_{hb}
+\\ 2&\delta_{ah}I&-(PU)_{hb}.
 \end{array}                                                     \tag{2}
 ```
 With the same middle multiplication operator f_ij in both families, summing h gives P f_ij U-f_ij PU, which is (1). The physical B map is the flag transpose of the displayed right operator. In particular, (2) does not put an output-only derivative index on the other party.

@@ -246,8 +246,8 @@ along the selected path gives the exact inequality
 
 ```math
 \boxed{|r|\le
-      \sum_{\substack{w\text{ an addition/subtraction}\\
-                      \text{on the selected path}}}m_w(r).}
+      \sum_{\substack{w\text{ an addition/subtraction}
+                      \\ \text{on the selected path}}}m_w(r).}
 \tag{3.3}
 ```
 

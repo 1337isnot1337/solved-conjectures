@@ -4,22 +4,22 @@
 
 ## Color refinement without creating a forbidden pattern
 
-Let \(W_1,\ldots,W_6\) be symmetric \([0,1]\)-valued balanced kernels on a standard atomless probability space \(X\), with row degree \(1/6\) and sum one. For each base pair \((x,y)\), partition the circle \(\mathbb T\) into six measurable symmetric sets \(I_i(x,y)\) of Haar masses \(W_i(x,y)\), assigning boundary ties deterministically. For example, the function \(2\,\operatorname{dist}(z,0)\) is uniformly distributed on \([0,1]\); partition its range at the partial sums of the \(W_i(x,y)\). Let
-\[
+Let $`W_1,\ldots,W_6`$ be symmetric $`[0,1]`$-valued balanced kernels on a standard atomless probability space $`X`$, with row degree $`1/6`$ and sum one. For each base pair $`(x,y)`$, partition the circle $`\mathbb T`$ into six measurable symmetric sets $`I_i(x,y)`$ of Haar masses $`W_i(x,y)`$, assigning boundary ties deterministically. For example, the function $`2\,\mathop{\mathrm{dist}}(z,0)`$ is uniformly distributed on $`[0,1]`$; partition its range at the partial sums of the $`W_i(x,y)`$. Let
+```math
 U_i((x,a),(y,b))=\mathbf1_{\{a-b\in I_i(x,y)\}}.
-\]
-Then \(U_i\) are symmetric indicator kernels on \(X\times\mathbb T\), and \(\sum_i U_i=1\) almost everywhere. For fixed \(a\), the integral in \(b\) of each \(U_i\) is \(W_i(x,y)\), so each row remains balanced. Simultaneous translations \(a\mapsto a+h,b\mapsto b+h\) preserve every color.
+```
+Then $`U_i`$ are symmetric indicator kernels on $`X\times\mathbb T`$, and $`\sum_i U_i=1`$ almost everywhere. For fixed $`a`$, the integral in $`b`$ of each $`U_i`$ is $`W_i(x,y)`$, so each row remains balanced. Simultaneous translations $`a\mapsto a+h,b\mapsto b+h`$ preserve every color.
 
-For any finite colored simple graph, a positive product of the \(U\)-colors almost everywhere implies that the projected base pair weight of every prescribed \(W\)-color is positive. Equivalently, if its density in \(W\) is zero, then its density in \(U\) is zero: the base tuples allowing all positive edge weights form a null set, and their pullback remains null. This applies to each rainbow order on a six-cycle, and also to rooted densities for almost every base root. It does not claim equality of the densities.
+For any finite colored simple graph, a positive product of the $`U`$-colors almost everywhere implies that the projected base pair weight of every prescribed $`W`$-color is positive. Equivalently, if its density in $`W`$ is zero, then its density in $`U`$ is zero: the base tuples allowing all positive edge weights form a null set, and their pullback remains null. This applies to each rainbow order on a six-cycle, and also to rooted densities for almost every base root. It does not claim equality of the densities.
 
 ## Parity descends from the refinement
 
-Suppose \(U\) has an exact parity cut. Let \(\sigma(x,a)\in\{-1,1\}\) be its sign function and choose the palette of three crossing colors. For almost all \(x,y\), its crossing indicator is a function of \(a-b\) alone. Consequently
-\[
+Suppose $`U`$ has an exact parity cut. Let $`\sigma(x,a)\in\{-1,1\}`$ be its sign function and choose the palette of three crossing colors. For almost all $`x,y`$, its crossing indicator is a function of $`a-b`$ alone. Consequently
+```math
 \sigma(x,a)\sigma(y,b)=G_{x,y}(a-b)
 \quad\text{for almost all }(a,b)
-\]
-for a measurable real sign function \(G_{x,y}\). The two-variable Fourier transform of the right side is supported on pairs \((m,n)\) with \(m+n=0\). The transform of the left side is the product of the one-variable Fourier coefficients of \(\sigma(x,\cdot)\) and \(\sigma(y,\cdot)\). Both rows have norm one. Thus each has Fourier support at exactly one frequency: pick a nonzero coefficient from one row and all coefficients of the other must lie at its negative, and then repeat in the other direction. The rows are real, so the only possible single frequency is zero. By Fubini almost every row \(\sigma(x,\cdot)\) is constant. The refined cut therefore comes from a measurable cut in \(X\). Integrating in \(a,b\) shows the same palettes give an exact parity cut for \(W\).
+```
+for a measurable real sign function $`G_{x,y}`$. The two-variable Fourier transform of the right side is supported on pairs $`(m,n)`$ with $`m+n=0`$. The transform of the left side is the product of the one-variable Fourier coefficients of $`\sigma(x,\cdot)`$ and $`\sigma(y,\cdot)`$. Both rows have norm one. Thus each has Fourier support at exactly one frequency: pick a nonzero coefficient from one row and all coefficients of the other must lie at its negative, and then repeat in the other direction. The rows are real, so the only possible single frequency is zero. By Fubini almost every row $`\sigma(x,\cdot)`$ is constant. The refined cut therefore comes from a measurable cut in $`X`$. Integrating in $`a,b`$ shows the same palettes give an exact parity cut for $`W`$.
 
 So if a fractional graphon has zero rainbow six-cycle density and no parity cut, its ordinary indicator refinement has both those properties. The unproved part of the criterion is now purely about complete deterministic color partitions.
 
@@ -29,10 +29,10 @@ The [exceptional-color classification](MISSING-TRIANGLE-COLOR.md) shows that an 
 
 ## Uniform triangle abundance in any candidate counterexample
 
-Write \(R(W)\) for the sum of the rainbow six-cycle densities over all permutations of the colors, and \(T_i(W)\) for the sum of rainbow triangle densities over ordered triples of distinct colors that contain \(i\). The conclusion above says \(R(W)+T_i(W)>0\) for every balanced \(W\) and each \(i\).
+Write $`R(W)`$ for the sum of the rainbow six-cycle densities over all permutations of the colors, and $`T_i(W)`$ for the sum of rainbow triangle densities over ordered triples of distinct colors that contain $`i`$. The conclusion above says $`R(W)+T_i(W)>0`$ for every balanced $`W`$ and each $`i`$.
 
-The space of six-color graphons modulo simultaneous relabeling is compact in the decorated cut metric. The balance constraints are closed: if the kernels tend to \(W_i\) in cut norm, then their row sums tend to \(1/6\) in the sense of integrals over every measurable set, which determines the limiting row sums. Densities of fixed finite colored graphs are continuous in this metric. Hence for a constant \(\eta>0\) independent of the coloring and the color, \(R(W)+T_i(W)\ge\eta\) for all balanced \(W\).
+The space of six-color graphons modulo simultaneous relabeling is compact in the decorated cut metric. The balance constraints are closed: if the kernels tend to $`W_i`$ in cut norm, then their row sums tend to $`1/6`$ in the sense of integrals over every measurable set, which determines the limiting row sums. Densities of fixed finite colored graphs are continuous in this metric. Hence for a constant $`\eta>0`$ independent of the coloring and the color, $`R(W)+T_i(W)\ge\eta`$ for all balanced $`W`$.
 
-For a finite balanced coloring of \(K_n\) with \(6\mid n-1\), form its step graphon, putting the weight \(1/6\) for every color on the diagonal vertex squares. Its rows then have degree exactly \(1/6\). All tuple collisions (two coordinates in the same vertex square) have total probability \(O(1/n)\), and the graphon agrees with the finite coloring on tuples without collisions. Thus a finite counterexample with sufficiently large \(n\) must have \(\Omega(n^3)\) rainbow triangles using each individual color. This is a global count, not a rooted lower bound.
+For a finite balanced coloring of $`K_n`$ with $`6\mid n-1`$, form its step graphon, putting the weight $`1/6`$ for every color on the diagonal vertex squares. Its rows then have degree exactly $`1/6`$. All tuple collisions (two coordinates in the same vertex square) have total probability $`O(1/n)`$, and the graphon agrees with the finite coloring on tuples without collisions. Thus a finite counterexample with sufficiently large $`n`$ must have $`\Omega(n^3)`$ rainbow triangles using each individual color. This is a global count, not a rooted lower bound.
 
 The construction only uses conditional Haar measure and the elementary Fourier structure of the circle. Checked against the [original problem source](https://doi.org/10.1016/S0167-5060(08)70377-7), [decorated graphon limits](https://arxiv.org/abs/1010.5155), the [modern balanced-coloring paper](https://arxiv.org/abs/2209.13867), and [the public working report](https://www.erdosproblemaday.com/report/811). The claim is the reduction with descent of the specific parity obstruction, not priority for randomization or Fourier disintegration. Coordination: [#870](https://github.com/1337isnot1337/solved-conjectures/issues/870).

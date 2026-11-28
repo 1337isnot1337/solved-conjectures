@@ -12,7 +12,7 @@ No commutativity is required. Fractional colors are allowed.
 
 ## Connected product lemma
 
-Pull back the graphon to $G$ with Haar measure as in [the connected-action proof](CONNECTED-COMPACT-ACTIONS.md). The kernels have the form $f_i(x^{-1}y)$ for symmetric functions $f_i(g)=f_i(g^{-1})$, with $0\le f_i\le1$, sum one, and integral $1/m$. The ordered cycle density is $(f_1*\cdots*f_m)(e)$.
+Pull back the graphon to $G$ with Haar measure as in [the connected-action proof](CONNECTED-COMPACT-ACTIONS.md). The kernels have the form $f_i(x^{-1}y)$ for symmetric functions $f_i(g)=f_i(g^{-1})$, with $0\le f_i\le1$, sum one, and integral $1/m$. The ordered cycle density is $`(f_1*\cdots*f_m)(e)`$.
 
 For a coset $q$ of $H$ define $w_{i,q}$ to be the mean of $f_i$ on it with normalized coset Haar measure. Each column sums to one, and each row sums to $[G:H]/m$. Suppose one can choose $q_1,\dots,q_m$ of product identity in $G/H$, such that all $w_{i,q_i}>0$ and $\sum_i w_{i,q_i}>1$. Then the cycle density is positive.
 
@@ -29,7 +29,9 @@ It remains that every color is pure. Column balance forces $m/2$ hues in each co
 ## Three components
 
 The quotient is cyclic of order three. Inversion symmetry gives $w_{i,1}=w_{i,-1}=b_i$, and put $a_i=w_{i,0}$ and $d_i=a_i-b_i$. Since $a_i+2b_i=3/m$, a maximum-component choice in every hue has score
-$$1+\frac{2}{3}\sum_{d_i\ge0}d_i+\frac{1}{3}\sum_{d_i<0}|d_i|.$$
+```math
+1+\frac{2}{3}\sum_{d_i\ge0}d_i+\frac{1}{3}\sum_{d_i<0}|d_i|.
+```
 It is strictly bigger than one unless all $d_i=0$, in which case use the connected coloring on $H$.
 
 Let $k$ be the number of nonzero components chosen. If $k=0$, their sum is zero. If $k\ge2$, select signs on these components to sum to zero: use opposing pairs for even $k$, or one triple of equal signs plus opposing pairs for odd $k$. The only issue is $k=1$. If any maximizing zero component is tied with a nonzero component, choose that nonzero component too and take $k=2$. Otherwise all other $m-1$ colors strictly prefer zero. At least one of them has $b_j>0$, since $m-1$ pure-zero hues would contribute $(m-1)3/m>1$ in the zero column. Pick one of smallest $d_j$ among the $m-1$ hues; it is nonpure because a pure-zero hue has the largest possible difference $3/m$. Switching it to a nonzero component loses $d_j$. The positive-difference term in the displayed score is at least $2(m-1)d_j/3>d_j$. Thus the new score still exceeds one and two opposite nonzero signs give sum zero.

@@ -25,8 +25,8 @@ For every one of the 4096 triples of indices, exact integer arithmetic gives
 ```math
 C_\lambda(\rho,\beta)=
 \begin{cases}
-8(-1)^{\langle\rho+3b,\lambda+6\rangle},&\beta=15b,\\
-0,&\beta\notin\{0,15\}.
+8(-1)^{\langle\rho+3b,\lambda+6\rangle},&\beta=15b,
+\\ 0,&\beta\notin\{0,15\}.
 \end{cases}
 ```
 

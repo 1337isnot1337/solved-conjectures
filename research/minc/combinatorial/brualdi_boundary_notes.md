@@ -23,18 +23,18 @@ with per A=1/8 and per((A+A^T)/2)=9/64. Thus optimizing the symmetric one-parame
 A possible way to exclude a zero-diagonal boundary minimizer would be a universal inequality
 
 ```math
- \sum_i\operatorname{per}A(i\mid i)\le n\operatorname{per}A.
+ \sum_i\mathop{\mathrm{per}}A(i\mid i)\le n\mathop{\mathrm{per}}A.
 ```
 It is false, even when every off-diagonal entry is positive. Let U_3=(J_3−I_3)/2 and
 
 ```math
  A_t=(1-t)(U_3\oplus U_3)
- +t\begin{pmatrix}0&J_3/3\\J_3/3&0\end{pmatrix},\qquad0<t<1.
+ +t\begin{pmatrix}0&J_3/3\\J_3/3&0\end{pmatrix},\qquad0\lt t<1.
 ```
 Put a=(1−t)/2 and b=t/3. Counting permutations by the number of cross-block edges gives
 
 ```math
- P(t)=\operatorname{per}A_t=4a^6+81a^4b^2+144a^2b^4+36b^6.
+ P(t)=\mathop{\mathrm{per}}A_t=4a^6+81a^4b^2+144a^2b^4+36b^6.
 ```
 Every principal cofactor equals
 

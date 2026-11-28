@@ -19,7 +19,7 @@ Lagarias studies a rigidity question for integer Beurling systems under bounded 
 
 Let $E$ consist of the ordinary primes which are absent from $G$. Let $S_E$ be the integers whose prime factors all lie outside $E$. Multiplicative closure gives $S_E\subseteq G$. Any noninteger $\lambda\in G$ and a pair $n,m\in S_E$ satisfying $0\lt |\lambda n-m|\lt1$ contradict separation.
 
-**Theorem 1.** Under either of the hypotheses $\sum_{p\in E}1/p\lt\infty$ or $\#(E\cap[1,x])=o(\pi(x))$, all elements of $G$ are integers and $A(x)\le\pi(x)$ for every $x$. In particular, any separated system with a noninteger element omits a positive upper proportion of the ordinary primes. The last section shows that this upper proportion is bounded below by an absolute positive constant.
+**Theorem 1.** Under either of the hypotheses $\sum_{p\in E}1/p\lt\infty$ or $`\#(E\cap[1,x])=o(\pi(x))`$, all elements of $G$ are integers and $A(x)\le\pi(x)$ for every $x$. In particular, any separated system with a noninteger element omits a positive upper proportion of the ordinary primes. The last section shows that this upper proportion is bounded below by an absolute positive constant.
 
 ### Irrational elements when the omitted reciprocals converge
 
@@ -40,7 +40,7 @@ V(Y)=\prod_{p\in E,\ p\le Y}(1-\nu(p)/p).
 
 The prime number theorem and partial summation show that $\sum_{Y^c\lt p\le Y^d,\ p\in E}1/p=o(1)$ for fixed $0\lt c\lt d$, and $\sum_{p\le Y,\ p\in E}1/p=o(\log\log Y)$. Consequently $W(Y^d)/W(Y^c)\to1$, $W(Y)=(\log Y)^{-o(1)}$, and $V(Y)/W(Y)^2$ tends to a positive constant. Constant multiples in the product cutoffs also have ratio tending to one.
 
-We use the combinatorial fundamental lemma for linear congruences. If at each prime $p$ at most two classes are deleted and the number deleted is strictly less than $p$, then for an interval of length $H$ and sifting range $z\le H^{c_*}$, with $c_*$ a sufficiently small absolute constant, the count is between
+We use the combinatorial fundamental lemma for linear congruences. If at each prime $p$ at most two classes are deleted and the number deleted is strictly less than $p$, then for an interval of length $H$ and sifting range $`z\le H^{c_*}`$, with $`c_*`$ a sufficiently small absolute constant, the count is between
 
 ```math
 \tfrac34 H U(z)-O(H^{2/3})\qquad\text{and}\qquad
@@ -51,14 +51,14 @@ where $U(z)$ is the product of the retained residue proportions. Indeed, use sie
 
 - [Tao, *Some sieve theory*, Corollary 19](https://terrytao.wordpress.com/2015/01/21/254a-notes-4-some-sieve-theory/)
 
-Fix $0\lt c\lt c_*$. Sifting $1\le k\le X$ by the primes in $E$ up to $X^c$ leaves at least $(3/4-o(1))X V(X)$. Take a fixed $0\lt\delta\lt\min(c,1/10)$. The survivors that fail at some $p\in E$ with $X^c\lt p\le X^{1-\delta}$ can be counted separately in the at most two roots modulo $p$. In each root the interval for the new variable has length $X/p+O(1)$. The still-present restrictions up to $z_0=X^{c_*\delta/2}$ have the same local proportions, because $p$ is invertible at each of those small primes. The upper sieve gives a bound of order $(X/p)V(z_0)+(X/p)^{2/3}$ per root. Summing over this range gives
+Fix $`0\lt c\lt c_*`$. Sifting $1\le k\le X$ by the primes in $E$ up to $X^c$ leaves at least $(3/4-o(1))X V(X)$. Take a fixed $0\lt\delta\lt\min(c,1/10)$. The survivors that fail at some $p\in E$ with $X^c\lt p\le X^{1-\delta}$ can be counted separately in the at most two roots modulo $p$. In each root the interval for the new variable has length $X/p+O(1)$. The still-present restrictions up to $`z_0=X^{c_*\delta/2}`$ have the same local proportions, because $p$ is invertible at each of those small primes. The upper sieve gives a bound of order $(X/p)V(z_0)+(X/p)^{2/3}$ per root. Summing over this range gives
 
 ```math
 O\left(XV(z_0)\sum_{X^c\lt p\le X^{1-\delta},\ p\in E}\frac1p
    + X^{1-\delta/3}\right)=o(XV(X)).
 ```
 
-It remains to handle $p\gt X^{1-\delta}$. Write $L_1(k)=hp$ first. Then $h\le C X^\delta$ for a constant $C$ depending on the forms, and $h$ itself is $E$-free because $C X^\delta\lt X^c$ for large $X$. Primitivity of $L_1$ gives $\gcd(h,b)=1$. Thus $p$ runs in one class modulo $b$, say $p=r+bu$. The other form is $(ahp-t)/b$, an integral linear form in $u$. For an upper bound, sieve the $u$ interval by all primes up to $z_1=X^{\min(c,c_*/4)}$ for the primality of $p$, and by $E$ up to $z_1$ for the absence of those prime factors in the other form. The interval has length at most $O(X/h)$ and can be enlarged to that length. The primality restriction is valid since $p\gt z_1$, and the upper-sieve range condition holds since $h=O(X^\delta)$.
+It remains to handle $p\gt X^{1-\delta}$. Write $L_1(k)=hp$ first. Then $h\le C X^\delta$ for a constant $C$ depending on the forms, and $h$ itself is $E$-free because $C X^\delta\lt X^c$ for large $X$. Primitivity of $L_1$ gives $\gcd(h,b)=1$. Thus $p$ runs in one class modulo $b$, say $p=r+bu$. The other form is $(ahp-t)/b$, an integral linear form in $u$. For an upper bound, sieve the $u$ interval by all primes up to $`z_1=X^{\min(c,c_*/4)}`$ for the primality of $p$, and by $E$ up to $z_1$ for the absence of those prime factors in the other form. The interval has length at most $O(X/h)$ and can be enlarged to that length. The primality restriction is valid since $p\gt z_1$, and the upper-sieve range condition holds since $h=O(X^\delta)$.
 
 For every $q\in E$ the local factor of this new sieve is $1-\nu(q)/q$. If $q\nmid b$, the zero condition on $p$ is one residue class. Its overlap with the zero condition on the other form is exactly as for $L_1,L_2$, because multiplication by $h$ is invertible modulo $q$. If $q\mid b$, the fixed prime residue $r$ is nonzero modulo $q$ and the other form has one zero residue, just as in the original sieve. For $q\notin E$, there is only the primality condition, which erases one class for $q\nmid b$ and none for $q\mid b$. Thus the product for this sieve is exactly
 

@@ -99,12 +99,12 @@ Using 0,mu,z for the basis indices, this is exactly
 ```math
 \begin{split}
 \sum_e C_{0,e}\Big[&A_zD_{0,e}B_0+A_0D_{0,e}B_z
-                         +A_0D_{z,e}B_0\\
- &+\sum_\mu\big(A_\mu D_{0,e}B_\mu
+                         +A_0D_{z,e}B_0
+ \\ &+\sum_\mu\big(A_\mu D_{0,e}B_\mu
                  +A_\mu D_{\mu,e}B_0
-                 +A_0D_{\mu,e}B_\mu\big)\Big]\\
-{}+\sum_e C_{z,e}&A_0D_{0,e}B_0\\
-{}+\sum_{\mu,e}C_{\mu,e}\Big[&A_\mu D_{0,e}B_0
+                 +A_0D_{\mu,e}B_\mu\big)\Big]
+\\ {}+\sum_e C_{z,e}&A_0D_{0,e}B_0
+\\ {}+\sum_{\mu,e}C_{\mu,e}\Big[&A_\mu D_{0,e}B_0
                  +A_0D_{0,e}B_\mu
                  +A_0D_{\mu,e}B_0\Big].                 \tag{5}
 \end{split}

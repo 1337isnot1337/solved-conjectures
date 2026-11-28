@@ -20,7 +20,7 @@ d(v)\equiv\deg_H(v)\pmod2,
 
 where $d(S)=\sum_{v\in S}d(v)$. Necessity follows from counting the oriented cut. For sufficiency, give each vertex capacity $(\deg_H(v)+d(v))/2$ and assign each edge to one endpoint as its tail. The bipartite assignment criterion says that the capacity in each set $S$ must cover the edges with both ends in $S$. To see it, any subset of edge nodes has all its endpoints in some $S$ and has size at most $|E(H[S])|$. The cut inequality gives the needed capacity bound and the total capacity is the number of edges.
 
-**Four ports.** Let $J$ be 4-edge-connected, $w$ a vertex of degree four, and suppose $J-w$ contains at most two vertices of odd degree as measured in $J$. Prescribe an arbitrary two-in, two-out orientation at $w$. Write $H=J-w$. For $S\subseteq V(H)$ put $k=|E_J(S,\{w\})|$, $c=|\delta_H(S)|$, and let $b$ be the prescribed net divergence at the $S$ ends of its ports. For a nonempty proper $S$, using the cuts on either side of $w$ gives
+**Four ports.** Let $J$ be 4-edge-connected, $w$ a vertex of degree four, and suppose $J-w$ contains at most two vertices of odd degree as measured in $J$. Prescribe an arbitrary two-in, two-out orientation at $w$. Write $H=J-w$. For $S\subseteq V(H)$ put $`k=|E_J(S,\{w\})|`$, $c=|\delta_H(S)|$, and let $b$ be the prescribed net divergence at the $S$ ends of its ports. For a nonempty proper $S$, using the cuts on either side of $w$ gives
 
 ```math
 c\ge\max(4-k,k),\qquad |b|\le\min(k,4-k),\qquad
@@ -29,7 +29,7 @@ c+k\equiv |S\cap T|\pmod2,
 
 where $T$ is the odd-degree set. It has size zero or two since $w$ is even. Seek total divergence zero at the even vertices and opposite divergences $+3,-3$ at the two odd vertices if present. The required internal divergence at each vertex is its sought total divergence minus its prescribed port divergence. This internal vector has the right parity and sums to zero.
 
-When $|S\cap T|$ is even the desired total divergence on $S$ is zero, and $|b|\le c$. For a cut separating the two odd vertices, let its desired divergence be $3\varepsilon$, with $\varepsilon\in\{1,-1\}$. For $k=0,4$ one has $b=0$ and $c\ge4$. For $k=1,3$ one has $|b|=1$ and $c\ge4$ by parity. For $k=2$, $c\ge3$ and $c$ is odd. The only possible constraint on the sign is when $c=3$ and $b=2$ or $-2$, in which case $\varepsilon$ must have the sign of $b$.
+When $|S\cap T|$ is even the desired total divergence on $S$ is zero, and $|b|\le c$. For a cut separating the two odd vertices, let its desired divergence be $3\varepsilon$, with $`\varepsilon\in\{1,-1\}`$. For $k=0,4$ one has $b=0$ and $c\ge4$. For $k=1,3$ one has $|b|=1$ and $c\ge4$ by parity. For $k=2$, $c\ge3$ and $c$ is odd. The only possible constraint on the sign is when $c=3$ and $b=2$ or $-2$, in which case $\varepsilon$ must have the sign of $b$.
 
 Choose the shores of such constraining cuts to contain the first odd vertex and exclude the second. If one constraining set $S$ carries the two positive ports and another $S'$ the two negative ports, their intersection carries no port and their union all four. Both still separate the odd vertices. Their internal cut sizes are at least four and odd, so at least five. This contradicts submodularity since $c(S)+c(S')=6$. Thus all sign constraints are consistent, and the orientation criterion completes the extension.
 

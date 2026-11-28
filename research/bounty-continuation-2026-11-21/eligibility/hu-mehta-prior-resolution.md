@@ -35,7 +35,7 @@ Theorem 1 gives one horizon-free algorithm, for every $`K\ge2`$, $`\varepsilon>0
 
 Definition 1 protects arbitrary deterministic neighboring loss prefixes; the iid assumption is used for performance, not to weaken privacy. The model permits dependence among coordinates of a loss vector and therefore includes the original independent-action setting. The algorithm does not require the gap or horizon.
 
-The audit checked the complete mathematical mechanism in Sections 4–5: one private selection per disjoint data block; factorization of the full transcript law; randomized prefixes converting block regret into a prefix-length sum; Hoeffding bounds for small gaps; and the nonnegative log-partition potential for large gaps. The last potential telescopes at cost at most $4\log K/\eta$`, where `$\eta=\min\{\varepsilon/2,1/8\}$. No missing scope condition or invalid step was found. This is a mathematical source audit, not a Lean verification.
+The audit checked the complete mathematical mechanism in Sections 4–5: one private selection per disjoint data block; factorization of the full transcript law; randomized prefixes converting block regret into a prefix-length sum; Hoeffding bounds for small gaps; and the nonnegative log-partition potential for large gaps. The last potential telescopes at cost at most $4\log K/\eta$`, where `$`\eta=\min\{\varepsilon/2,1/8\}`$. No missing scope condition or invalid step was found. This is a mathematical source audit, not a Lean verification.
 
 ## Earlier partial result and disposition
 

@@ -38,11 +38,11 @@ If $d\geq 0$, at most $x+y$ edges of the high-to-high matching were lost, leavin
 
 If a high-to-high edge is deleted, take any $k$ edges of the low-to-low matching. To extend them would require matching at least $r$ high vertices on each side to other high vertices: only $t-k=k-r$ low vertices remain on either side. Only $r-1$ high-to-high edges are available, so no extension exists.
 
-Finally, consider deleting an edge incident with a low vertex $u\in L_A$, with matched low partner $v\in L_B$. If the deleted edge is $uv$, match the $k$ vertices of $H_B$ to distinct vertices of $L_A\setminus\{u\}$. If the deleted edge instead joins $u$ to some $h\in H_B$, match the $k-1$ vertices of $H_B\setminus\{h\}$ to distinct vertices of $L_A\setminus\{u\}$, and match $v$ to any vertex of $H_A$. In either case this matching of size $k$ uses all the remaining neighbors of $u$ without covering $u$, so it cannot extend. The case of a low vertex in $L_B$ is symmetric.
+Finally, consider deleting an edge incident with a low vertex $u\in L_A$, with matched low partner $v\in L_B$. If the deleted edge is $uv$, match the $k$ vertices of $H_B$ to distinct vertices of $`L_A\setminus\{u\}`$. If the deleted edge instead joins $u$ to some $h\in H_B$, match the $k-1$ vertices of $`H_B\setminus\{h\}`$ to distinct vertices of $`L_A\setminus\{u\}`$, and match $v$ to any vertex of $H_A$. In either case this matching of size $k$ uses all the remaining neighbors of $u$ without covering $u$, so it cannot extend. The case of a low vertex in $L_B$ is symmetric.
 
 ## Counts
 
-Let $\ell$ denote the number of degree-$k+1$ vertices. The exact counts are
+Let $\ell$ denote the number of degree-$`k+1`$ vertices. The exact counts are
 ```math
 \ell=2t,\qquad n=2(k+t),\qquad m=2kt+t+r.
 ```

@@ -92,8 +92,8 @@ endpoint sector Q=[p]. The legal outside maps are
 ```math
 \begin{array}{c|cc}
 \text{source label}&A^a&B^b\\\hline
-h\in H&(UK)_{ah}&-V_{hb}\\
-\ell\in Q&(UD)_{a\ell}&\delta_{\ell b}I.
+h\in H&(UK)_{ah}&-V_{hb}
+\\ \ell\in Q&(UD)_{a\ell}&\delta_{\ell b}I.
 \end{array}
 \tag{5}
 ```
@@ -118,9 +118,9 @@ Every C coefficient is retained. The full A/D/B contraction is
 \begin{aligned}
 \mathcal O_{ab}^{ij}
 ={}&(UD)_{ab}f_b^{ij}
-     -\sum_h(UK)_{ah}f_h^{ij}V_{hb}\\
-={}&\sum_t U_{at}x_{it}v_{b,t}^{ij}P_{jb}\\
-&+\sum_{t,h,\ell}U_{at}x_{i\ell}K_{th}y_{j\ell}
+     -\sum_h(UK)_{ah}f_h^{ij}V_{hb}
+\\ ={}&\sum_t U_{at}x_{it}v_{b,t}^{ij}P_{jb}
+\\ &+\sum_{t,h,\ell}U_{at}x_{i\ell}K_{th}y_{j\ell}
        (v_{b,\ell}^{ij}-v_{h,\ell}^{ij})V_{hb}.
 \end{aligned}
 \tag{7}

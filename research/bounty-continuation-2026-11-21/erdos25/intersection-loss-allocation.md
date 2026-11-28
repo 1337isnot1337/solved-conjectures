@@ -19,8 +19,8 @@ F_B(s)=\sum_{n\in B}n^{-s}.
 Call a nonempty index set $`I`$ compatible if its congruences have a common solution. Let $`L_I=\mathop{\mathrm{lcm}}(q_i:i\in I)`$. Define
 
 ```math
-\mu_s=\sum_{\substack{\varnothing\ne I\subseteq\{1,\ldots,m\}\\
-I\text{ compatible}}}
+\mu_s=\sum_{\substack{\varnothing\ne I\subseteq\{1,\ldots,m\}
+\\ I\text{ compatible}}}
 (-1)^{|I|+1}L_I^{-s}.                                      \tag{1}
 ```
 
@@ -125,8 +125,8 @@ Their total contribution to (6) is
 \Psi_j
 =\sum_{S\subseteq P_j}(-1)^{|S|}
 D_{\mathop{\mathrm{lcm}}(q_j,q_i:i\in S)}(a_j)
-=\sum_{\substack{n\ge1,\ q_j\mid n\\
-q_i\nmid n\text{ for every }i\in P_j}}
+=\sum_{\substack{n\ge1,\ q_j\mid n
+\\ q_i\nmid n\text{ for every }i\in P_j}}
 \bigl(n^{-s}-(n+a_j)^{-s}\bigr)
 \ge0.                                                     \tag{9}
 ```

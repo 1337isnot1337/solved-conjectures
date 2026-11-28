@@ -31,7 +31,7 @@ is $n$.
 
 Apply the inductive coloring and orientation to the heavy centers in
 the underlying graph of $D$ (as a subgraph of the $(k-1)$-shift). Denote
-the center coloring by $b(v)\in\{0,1\}$. At each heavy center $v$ the
+the center coloring by $`b(v)\in\{0,1\}`$. At each heavy center $v$ the
 desired color for arcs entering it is $b(v)$, and the desired color for
 arcs leaving it is $1-b(v)$.
 
@@ -43,9 +43,9 @@ center colors are equal. In that case satisfy the head of the
 edge and fail its tail. This auxiliary orientation need not follow
 the direction of the original arc. The number of failed incidences
 at each heavy center is at most the inductive outdegree:
-$$
+```math
  C_{k-1}(n/T)^{1/(k-1)}=C_{k-1}T.
-$$
+```
 
 An edge of the induced $k$-shift is an incoming/outgoing arc pair
 at its unique shared center. At a light center, one incidence side has
@@ -59,10 +59,10 @@ outgoing degree is at most the number of failed incidences there.
 
 Each arc has just two centers. The resulting orientation of the
 monochromatic graph has outdegree at most
-$$
+```math
  2\max\{T,C_{k-1}T\}\le C_k n^{1/k},
  \qquad C_k=2C_{k-1}.
-$$
+```
 Deleting its edges leaves a bipartite graph. Deleting edges of the
 host before or after the argument cannot hurt the bound. $\square$
 

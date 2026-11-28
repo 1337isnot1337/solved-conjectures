@@ -35,11 +35,11 @@ limits in the written proof below are not claimed to be formalized.
 
 ## Counterexample intervals
 
-For every sufficiently small $t>0$, each of the following parameter choices satisfies $\alpha\lt \alpha_*(\beta)$, while its normalized density is not log concave:
+For every sufficiently small $t>0$, each of the following parameter choices satisfies $`\alpha\lt \alpha_*(\beta)`$, while its normalized density is not log concave:
 
 | Parameters | Why the threshold holds | Limiting curvature at $x=1/2$ |
 |---|---|---|
-| $\alpha=1-t$, $\beta=0$ | The source sets $\alpha_*(0)=1$. | $-16$ |
+| $\alpha=1-t$, $\beta=0$ | The source sets $`\alpha_*(0)=1`$. | $-16$ |
 | $\alpha=1-3t$, $\beta=t$ | The curvature at zero, divided by $t^2$, tends to $2>0$. The source proves this sign characterizes the threshold. | $-448$ |
 
 The last column is the limit of $(f_t'^2-f_tf_t'')/t^2$ for the unnormalized Wright density. Multiplication by the positive density-normalization constant preserves the sign. Negative curvature in this convention means that $\log f_t$ has a positive second derivative, contradicting log concavity.

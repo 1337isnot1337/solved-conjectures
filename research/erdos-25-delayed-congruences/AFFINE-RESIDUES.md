@@ -23,7 +23,7 @@ Let $v$ be the part of $y$ supported on the prime divisors of $q$, and put $z=y/
  z\in M\bigl(\{e>0:ve\in D,\ e\equiv u r^{-1}\bmod q\}\bigr),
  \qquad z\equiv u\bmod q.
 ```
-Indeed $z=e\,t$, and the indicated class of $e$ forces the quotient into class $r$. For $q=1$ this is the classical multiples set.
+Indeed $`z=e\,t`$, and the indicated class of $e$ forces the quotient into class $r$. For $q=1$ this is the classical multiples set.
 
 This gives finite-generator approximation even after restricting to $y=Lx-C>0$ for fixed integers $L\ge1,C$, and taking logarithmic sums over $x$. For each fixed $v,u$, the difference between the full and finite-generator tests in $z$ has asymptotically vanishing upper logarithmic mass by Davenport–Erdős. Since $vz=Lx-C$, the weight $1/x$ is at most $2L/(vz)$ for large $x$. The transformation is one-to-one and $z=O_{L,C}(X)$, so the affine change preserves vanishing logarithmic mass. For the terms $v>V$, sum the bound $2L/(vz)$ over all $z\le O_{L,C}(X)/v$. Their normalized harmonic mass is at most a constant times
 ```math
@@ -37,7 +37,7 @@ Partition the classes by a chosen template $(b,c)$ and then by the residue $s\bm
 ```math
  q=b/g,\qquad r=s/g\bmod q,\qquad y=(b x-c)/g=q x-c/g.
 ```
-The residue $r$ is coprime to $q$, including the trivial case. For large enough $x$ that $y>0$, the congruence $x\equiv a_i\pmod{n_i}$ is equivalent to $y=n_i t$ for a positive integer $t\equiv r\bmod q$. For both directions use $y/n_i-r_i/g=q(x-a_i)/n_i$: the difference is an integer multiple of $q$ exactly when $n_i\mid x-a_i$. Apply the approximation above to $D=\{n_i:i\text{ in this group}\}$.
+The residue $r$ is coprime to $q$, including the trivial case. For large enough $x$ that $y>0$, the congruence $x\equiv a_i\pmod{n_i}$ is equivalent to $y=n_i t$ for a positive integer $t\equiv r\bmod q$. For both directions use $y/n_i-r_i/g=q(x-a_i)/n_i$: the difference is an integer multiple of $q$ exactly when $n_i\mid x-a_i$. Apply the approximation above to $`D=\{n_i:i\text{ in this group}\}`$.
 
 Only finitely many groups occur, so the union of the **undelayed** classes differs from its finite prefixes by asymptotically arbitrarily small upper logarithmic mass. The delayed exclusion set is contained in this union. It contains the exclusions from every finite prefix, which differ from their undelayed versions by finitely many integers. Squeezing gives the logarithmic density equal to the limit of the finite periodic exclusion densities; taking complements proves the claim. There is no need to compare the initial missing representatives separately.
 

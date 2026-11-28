@@ -38,7 +38,7 @@ This scope check does not independently certify the full paper. It establishes t
 Even after extracting a numerical `a_0`, the omitted statements would be
 
 ```math
-\text{for each }2\le a<a_0,
+\text{for each }2\le a\lt a_0,
 \quad\text{for every } n\ge2a,
 \quad\text{for every qualifying }G,\quad s(G)\ge B_a.
 ```

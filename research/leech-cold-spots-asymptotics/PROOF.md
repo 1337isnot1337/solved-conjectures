@@ -71,9 +71,9 @@ The affine $`A_r`$ labels are all $`1`$, so its component minimum is $`m_{A_r}=r
 ```math
 \begin{array}{c|l|l}
 &\text{labels as a multiset}&\text{component minimum}\\ \hline
-E_6&1,1,1,2,2,2,3&12 /(2^{1/2}3^{1/4})\\
-E_7&1,1,2,2,2,3,3,4&18 /3456^{1/9}\\
-E_8&1,2,2,3,3,4,4,5,6&30 /(2^{26}3^{12}5^5)^{1/30}.
+E_6&1,1,1,2,2,2,3&12 /(2^{1/2}3^{1/4})
+\\ E_7&1,1,2,2,2,3,3,4&18 /3456^{1/9}
+\\ E_8&1,2,2,3,3,4,4,5,6&30 /(2^{26}3^{12}5^5)^{1/30}.
 \end{array}
 ```
 
@@ -82,7 +82,7 @@ The lists can be checked by verifying twice each label equals the weighted sum o
 Call the component minimum minus its rank its excess. The $`E_8`$ excess is strictly between $`0.10`$ and $`0.11`$; all other excesses are strictly larger than $`0.27`$. For $`D_r`$ the excess is greater than $`2\log2-1>0.38`$, by $`e^x>1+x`$ and $`\log 2>2(1/3+1/81)>0.69`$. For the exceptional rational bounds, the exact integer comparisons are, with $`D=2^{26}3^{12}5^5`$,
 
 ```math
- D\,810^{30}<3000^{30}<D\,811^{30},\qquad
+ D\,810^{30}<3000^{30}\lt D\,811^{30},\qquad
  3456\,727^9<1800^9,\qquad 627^4<1728\cdot100^4.
 ```
 

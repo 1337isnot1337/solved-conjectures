@@ -61,10 +61,10 @@ the three Laurent-polynomial coefficient arrays
 ```math
 \begin{aligned}
 \Psi_X(e_{h,p,i})&=\sum_{u,v\in I_{32}}
- a_{h,p,i;u,v}(t)x_{uv},\\
-\Psi_Y(e_{h,p,j})&=\sum_{v,w\in I_{32}}
- b_{h,p,j;v,w}(t)y_{vw},\\
-\Psi_Z(e_{h,p,k})&=\sum_{w,u\in I_{32}}
+ a_{h,p,i;u,v}(t)x_{uv},
+\\ \Psi_Y(e_{h,p,j})&=\sum_{v,w\in I_{32}}
+ b_{h,p,j;v,w}(t)y_{vw},
+\\ \Psi_Z(e_{h,p,k})&=\sum_{w,u\in I_{32}}
  c_{h,p,k;w,u}(t)z_{wu}.
 \end{aligned}
 ```

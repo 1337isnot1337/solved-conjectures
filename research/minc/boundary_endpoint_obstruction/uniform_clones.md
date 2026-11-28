@@ -1,6 +1,6 @@
 # Monotonicity toward the boundary
 
-Let $A\ne J_h$ be any fixed doubly stochastic matrix of order $h$, where $J_h$ has every entry $1/h$. Put $C=A\otimes J_l$, $N=hl$, and let $\sigma_k(C)$ be the sum of its order-$k$ subpermanents. Define $H_k=\sigma_k(C)/\sigma_k(J_N)$ and $H_0=1$. For every fixed even integer $r\ge2$, for all sufficiently large $l$,
+Let $A\ne J_h$ be any fixed doubly stochastic matrix of order $h$, where $J_h$ has every entry $1/h$. Put $C=A\otimes J_l$, $N=hl$, and let $\sigma_k(C)$ be the sum of its order-$`k`$ subpermanents. Define $H_k=\sigma_k(C)/\sigma_k(J_N)$ and $H_0=1$. For every fixed even integer $r\ge2$, for all sufficiently large $l$,
 ```math
  \Delta^r H_k>0\qquad(0\le k\le N-r),\qquad \Delta H_k=H_{k+1}-H_k.                 \tag{1}
 ```
@@ -17,9 +17,9 @@ where falling factorials with more factors than a nonnegative integer in the num
 ```math
  F(t)=\det\big(I-t^2(A-J_h)^T(A-J_h)\big)^{-1/2}.
 ```
-The centered matrix is $(A-J_h)\otimes J_l$ and has vanishing maximum row and column norms. The [uniform coefficient estimate and diffuse limit](../real-radius/hilbert_schmidt_limit.md) give these limits and $|c_j|\le K R^j$ for every fixed $R>\|A-J_h\|_{\rm op}$. For the coefficient limit when the norm is one, first scale the centered matrix by $1/2$. For $k/N\to t<1$, the falling-factorial ratio is bounded by $(k/(N-r))^{j-r}$ when $N>r$; hence the display tends to $F^{(r)}(t)$ by geometric domination. When the centered operator norm is below one the same result holds even at $t=1$. The even Taylor coefficients of $F$ are all positive because $A\ne J_h$, using its product over nonzero singular values. Thus $F^{(r)}>0$ for even $r$ on this entire range.
+The centered matrix is $(A-J_h)\otimes J_l$ and has vanishing maximum row and column norms. The [uniform coefficient estimate and diffuse limit](../real-radius/hilbert_schmidt_limit.md) give these limits and $|c_j|\le K R^j$ for every fixed $`R>\|A-J_h\|_{\rm op}`$. For the coefficient limit when the norm is one, first scale the centered matrix by $1/2$. For $k/N\to t<1$, the falling-factorial ratio is bounded by $(k/(N-r))^{j-r}$ when $N>r$; hence the display tends to $F^{(r)}(t)$ by geometric domination. When the centered operator norm is below one the same result holds even at $t=1$. The even Taylor coefficients of $F$ are all positive because $A\ne J_h$, using its product over nonzero singular values. Thus $F^{(r)}>0$ for even $r$ on this entire range.
 
-It remains to treat disconnected support and $k/N\to1$. Permute rows and columns independently to place the $c\ge2$ connected components on diagonal blocks of sizes $h_a$. Each component is square by balance. Conversely connectivity implies $\|A-J_h\|_{\rm op}<1$: equality in the row-wise Jensen bound $\|Ax\|^2\le\|x\|^2$ forces $x$ constant on the columns sharing each row, hence throughout every component.
+It remains to treat disconnected support and $k/N\to1$. Permute rows and columns independently to place the $c\ge2$ connected components on diagonal blocks of sizes $h_a$. Each component is square by balance. Conversely connectivity implies $`\|A-J_h\|_{\rm op}<1`$: equality in the row-wise Jensen bound $`\|Ax\|^2\le\|x\|^2`$ forces $x$ constant on the columns sharing each row, hence throughout every component.
 
 ## Row replacement and Fourier coordinates
 

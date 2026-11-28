@@ -14,7 +14,7 @@ Let `A` be a nonnegative doubly stochastic matrix of order `n`. Let
 Write `U_n` for the matrix whose entries are `1/n`, and put
 
 ```math
-c_n=\operatorname{per}U_n=\frac{n!}{n^n},\qquad
+c_n=\mathop{\mathrm{per}}U_n=\frac{n!}{n^n},\qquad
 q_j(A)=\frac{\sigma_j(A)}{\binom nj^2 j!/n^j}.
 ```
 
@@ -22,13 +22,13 @@ Thus `q_0=q_1=1` and `q_n=per(A)/c_n`. The proposed sufficient inequality was
 
 ```math
 q_j-1\le\frac{2j(j-1)}{n(n-1)}(q_n-1),
-\qquad n\ge4,\quad 2\le j<n.                    \tag{1}
+\qquad n\ge4,\quad 2\le j\lt n.                    \tag{1}
 ```
 
 To explain its purpose, multilinearity gives the exact mixture identity
 
 ```math
-\frac{\operatorname{per}((1-t)U_n+tA)}{c_n}
+\frac{\mathop{\mathrm{per}}((1-t)U_n+tA)}{c_n}
 =\sum_{j=0}^n\binom nj t^j(1-t)^{n-j}q_j(A).
                                                                \tag{2}
 ```
@@ -51,7 +51,7 @@ Consequently
 
 ```math
 \frac{q_{n-1}(A)}{q_n(A)}
-=\frac{\sigma_{n-1}(A)}{n^2\operatorname{per}A}.    \tag{3}
+=\frac{\sigma_{n-1}(A)}{n^2\mathop{\mathrm{per}}A}.    \tag{3}
 ```
 
 In particular, a single large permanental cofactor gives a lower bound
@@ -70,12 +70,12 @@ Write its biadjacency matrix as `H`. Its distinguished missing edge
 `(s,t)` has the exact counts
 
 ```math
-\operatorname{per}H
+\mathop{\mathrm{per}}H
 =r((r-1)!)^{rf}(r-1)^{(r-1)f},
 ```
 
 ```math
-\operatorname{per}H(s\mid t)
+\mathop{\mathrm{per}}H(s\mid t)
 =((r-1)(r-1)!)^{rf}.
 ```
 
@@ -100,7 +100,7 @@ which is doubly stochastic, normalization of a cofactor versus a full
 permanent contributes the additional factor `r`. Therefore
 
 ```math
-\frac{\operatorname{per}A(s\mid t)}{\operatorname{per}A}
+\frac{\mathop{\mathrm{per}}A(s\mid t)}{\mathop{\mathrm{per}}A}
 =(r-1)^f,
 \qquad
 \frac{q_{n-1}(A)}{q_n(A)}\ge\frac{(r-1)^f}{n^2}.   \tag{4}
@@ -114,8 +114,8 @@ Thus no constant bound near 2 on this coefficient ratio can be valid.
 Take `r=3`, `f=16`. Then `n=145`, and
 
 ```math
-\operatorname{per}A=\frac{2^{80}}{3^{144}},\qquad
-\operatorname{per}A(s\mid t)=\frac{2^{96}}{3^{144}}.
+\mathop{\mathrm{per}}A=\frac{2^{80}}{3^{144}},\qquad
+\mathop{\mathrm{per}}A(s\mid t)=\frac{2^{96}}{3^{144}}.
 ```
 
 It follows that

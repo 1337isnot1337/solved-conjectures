@@ -18,7 +18,7 @@ Take a shell with parameter $p\ge0$. Let $U,V$ be independent uniforms on $[0,1]
 ```math
  (r^2+t^2)^{1/2}\,(1-qZ)^{1/2},
  \qquad
- q=\frac{2rt}{r^2+t^2}=\operatorname{sech}((X-Y)/d),
+ q=\frac{2rt}{r^2+t^2}=\mathop{\mathrm{sech}}((X-Y)/d),
 ```
 where $Z$ is the first coordinate of an independent uniform sphere point. Its even moments through order six are $1/d$, $3/(d(d+2))$, and $15/(d(d+2)(d+4))$. By symmetry, Taylor expansion through degree four on $|Z|\le1/2$, and the sixth-moment bound on its complement,
 ```math
@@ -27,7 +27,7 @@ where $Z$ is the first coordinate of an independent uniform sphere point. Its ev
 ```
 uniformly for $0\le q\le1$. Replacing $q$ by 1 in the two corrections costs at most $O(d^{-3})$ after averaging, because $1-q^2\le (X-Y)^2/d^2$, and on bounded $p$-intervals all fixed moments of $|X|$ are uniformly bounded by the integrability of powers of $|\log U|$.
 
-Writing $\mu=\mathbb EX$ and $\sigma^2=\operatorname{Var}X$, a second-order Taylor expansion gives
+Writing $\mu=\mathbb EX$ and $`\sigma^2=\mathop{\mathrm{Var}}X`$, a second-order Taylor expansion gives
 ```math
  \mathbb E\sqrt{r^2+t^2}
  =\sqrt2\left(1+\frac\mu d+
@@ -35,7 +35,7 @@ Writing $\mu=\mathbb EX$ and $\sigma^2=\operatorname{Var}X$, a second-order Tayl
 ```
 Indeed pointwise the quadratic coefficient is $(X+Y)^2/8+(X-Y)^2/4$. The third derivatives of $(e^{2s}+e^{2t})^{1/2}$ are bounded by a constant times $e^{\max(s,t)}$, so the remainder is controlled by the uniform third log moment, including at $p=0$. Combining these expansions and $\mathbb E D^2=2\mathbb E e^{2X/d}$ gives
 ```math
- \operatorname{Var}D
+ \mathop{\mathrm{Var}}D
  =\frac1{2d}+\frac{\mu+\sigma^2+7/16}{d^2}+O(d^{-3})
 ```
 uniformly on every bounded $p$-interval. Elementary integration yields
@@ -57,6 +57,6 @@ For $p>0$ and $L=\log(1+1/p)$,
 ```math
  G'(p)=L\bigl[3-(2p+1)L\bigr].
 ```
-As $p$ grows, $(2p+1)L=L\coth(L/2)$ decreases strictly from infinity to 2: the derivative of $s\coth s$ is positive for $s>0$ since $\sinh s\cosh s>s$. It follows that $G$ has a unique minimum at the stated $p_*>0$ and $G''(p_*)>0$. Uniform convergence of the rescaled objective on the bounded parameter range places every global minimizer in any fixed neighborhood of $p_*$ for sufficiently large $d$. Evaluation at $p_*$ and at such a minimizer gives the asserted value expansion.
+As $p$ grows, $(2p+1)L=L\coth(L/2)$ decreases strictly from infinity to 2: the derivative of $s\coth s$ is positive for $s>0$ since $\sinh s\cosh s>s$. It follows that $G$ has a unique minimum at the stated $`p_*>0`$ and $`G''(p_*)>0`$. Uniform convergence of the rescaled objective on the bounded parameter range places every global minimizer in any fixed neighborhood of $`p_*`$ for sufficiently large $d$. Evaluation at $`p_*`$ and at such a minimizer gives the asserted value expansion.
 
-For uniqueness, the same expansion is valid with two $p$-derivatives on a small positive real neighborhood of $p_*$. One way to justify this is to allow $p$ in a fixed small complex disk about $p_*$. All the functions $\log(p+u)$ and their differences are then uniformly bounded. Both $(r_p(u)-r_p(v))/(u-v)$ (by integrating $\partial_u r_p$) and $r_p(u)r_p(v)$ lie in fixed narrow sectors about the positive axis. Hence $(r_p(u)-r_p(v))^2+2r_p(u)r_p(v)(1-Z)$ stays in a fixed sector where the principal square root is holomorphic off the zero corner, which has measure zero. Its square root is uniformly bounded on the disk. The angular expansion on $|Z|\le1/2$ and the $O(d^{-3})$ probability of the complementary event remain uniform there. Cauchy estimates on a smaller disk give the corresponding $O(d^{-3})$ derivative errors. Thus the rescaled objective has positive second derivative throughout a fixed neighborhood of $p_*$ for all sufficiently large $d$. All global minimizers lie there, so there is only one.
+For uniqueness, the same expansion is valid with two $p$-derivatives on a small positive real neighborhood of $`p_*`$. One way to justify this is to allow $p$ in a fixed small complex disk about $`p_*`$. All the functions $\log(p+u)$ and their differences are then uniformly bounded. Both $(r_p(u)-r_p(v))/(u-v)$ (by integrating $\partial_u r_p$) and $r_p(u)r_p(v)$ lie in fixed narrow sectors about the positive axis. Hence $(r_p(u)-r_p(v))^2+2r_p(u)r_p(v)(1-Z)$ stays in a fixed sector where the principal square root is holomorphic off the zero corner, which has measure zero. Its square root is uniformly bounded on the disk. The angular expansion on $|Z|\le1/2$ and the $O(d^{-3})$ probability of the complementary event remain uniform there. Cauchy estimates on a smaller disk give the corresponding $O(d^{-3})$ derivative errors. Thus the rescaled objective has positive second derivative throughout a fixed neighborhood of $`p_*`$ for all sufficiently large $d$. All global minimizers lie there, so there is only one.

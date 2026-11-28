@@ -20,11 +20,11 @@ A_{h;(i,k)} B_{h;(i',\ell)}
 Use the exact local maps
 ```math
 \begin{aligned}
-A_{h;(i,k)}&\longmapsto A_{i,k},\\
-B_{h;(i',\ell)}&\longmapsto B_{h,\ell},\\
-C_{h,c}&\longmapsto
- \begin{cases}C_{c,h},&c\in I,\\0,&c\notin I,\end{cases}\\
-D_{h,c;(i,k),(i',\ell)}
+A_{h;(i,k)}&\longmapsto A_{i,k},
+\\ B_{h;(i',\ell)}&\longmapsto B_{h,\ell},
+\\ C_{h,c}&\longmapsto
+ \begin{cases}C_{c,h},&c\in I,\\0,&c\notin I,\end{cases}
+\\ D_{h,c;(i,k),(i',\ell)}
  &\longmapsto
  \delta_{c,i}\delta_{i',i}\delta_{k,\ell}\,D_{i,h}.
 \end{aligned}

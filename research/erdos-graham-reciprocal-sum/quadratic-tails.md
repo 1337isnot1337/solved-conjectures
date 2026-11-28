@@ -17,7 +17,7 @@ The method adds a second backward step to Cook's square condition at a polynomia
 Write the rational sum as $b/q$ and set
 
 ```math
-D_n=q\prod_{j<n}a_j,\qquad C_n=D_n\sum_{j\ge n}\frac1{a_j}.
+D_n=q\prod_{j\lt n}a_j,\qquad C_n=D_n\sum_{j\ge n}\frac1{a_j}.
 ```
 
 Then $C_n,D_n$ are positive integers and
@@ -72,15 +72,15 @@ S=(a-z)^2+4(4a-2z)h_0.
 * Otherwise $t=2z/h_0$ is rational and $t^2=4-ca$. This half-integral square again gives $t\in\mathbb Z$. Substitute $z=t h_0/2$ and take the conjugate by negating both $z$ and $h_0$. Then
   $N(S)/(16a^2)=4t^3-48t^2-24t+257$.
 
-In each case the displayed integer must be an integer square $w^2$. It is odd. In the first case $(X,Y)=(s+4,(w-1)/2)$ satisfies $Y^2+Y=X^3-48X+112$. In the second, $(X,Y)=(t-4,(w-1)/2)$ satisfies $Y^2+Y=X^3-54X-88$. The complete integral $X$-coordinate lists are respectively $\{-4,8\}$ and $\{-6,-2,12,40,48\}$. Cremona's tables contain both rows. A separate run of SageMath 10.6 with proofs enabled reproduced both lists and returned rank one for each curve. [Integral-point check](check_integral_points.sage) The LMFDB documents independent rigorous computations in Magma and SageMath. [Pinned integral-point data, labels 5859d1 and 189b2](https://github.com/JohnCremona/ecdata/blob/25cec5ecfec8b9f016eb1631ac633194c2bed39f/intpts/intpts.00000-09999) · [Second curve](https://www.lmfdb.org/EllipticCurve/Q/189/b/2) · [Data reliability](https://www.lmfdb.org/EllipticCurve/Q/Reliability)
+In each case the displayed integer must be an integer square $w^2$. It is odd. In the first case $(X,Y)=(s+4,(w-1)/2)$ satisfies $Y^2+Y=X^3-48X+112$. In the second, $(X,Y)=(t-4,(w-1)/2)$ satisfies $Y^2+Y=X^3-54X-88$. The complete integral $X$-coordinate lists are respectively $`\{-4,8\}`$ and $`\{-6,-2,12,40,48\}`$. Cremona's tables contain both rows. A separate run of SageMath 10.6 with proofs enabled reproduced both lists and returned rank one for each curve. [Integral-point check](check_integral_points.sage) The LMFDB documents independent rigorous computations in Magma and SageMath. [Pinned integral-point data, labels 5859d1 and 189b2](https://github.com/JohnCremona/ecdata/blob/25cec5ecfec8b9f016eb1631ac633194c2bed39f/intpts/intpts.00000-09999) · [Second curve](https://www.lmfdb.org/EllipticCurve/Q/189/b/2) · [Data reliability](https://www.lmfdb.org/EllipticCurve/Q/Reliability)
 
-Thus $s\in\{-8,4\}$ or $t\in\{-2,2,16,44,52\}$. Since $a>0$ and $ca=4-t^2$, every remaining polynomial has $c=-1$ and
+Thus $`s\in\{-8,4\}`$ or $`t\in\{-2,2,16,44,52\}`$. Since $a>0$ and $ca=4-t^2$, every remaining polynomial has $c=-1$ and
 
 ```math
 a\in\{16,64,252,1932,2700\}.
 ```
 
-Fix a root $r$ of $Q$ modulo the indicated prime. Start with the singleton $V_0=\{-Q(r+1)\}$. Given $V_{j-1}$, take for $V_j$ every $v\in\mathbb F_p$ satisfying $v(v+Q(r-j+1))=Q(r-j)w$ for some $w\in V_{j-1}$. A long agreement interval must contain an index $k\equiv r$ with $v_{k-j}\in V_j$ at every tabulated step.
+Fix a root $r$ of $Q$ modulo the indicated prime. Start with the singleton $`V_0=\{-Q(r+1)\}`$. Given $V_{j-1}$, take for $V_j$ every $v\in\mathbb F_p$ satisfying $v(v+Q(r-j+1))=Q(r-j)w$ for some $w\in V_{j-1}$. A long agreement interval must contain an index $k\equiv r$ with $v_{k-j}\in V_j$ at every tabulated step.
 
 | $a$ | $p$ | $r$ | Cardinalities starting at the root |
 |---:|---:|---:|:---|

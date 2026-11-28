@@ -18,7 +18,7 @@ representation, and let $`A\succeq0`$. Define
 ```math
 a_g(A)=\prod_{j=1}^n a_{j,g(j)},\qquad
 F=\sum_{g\in G}a_g(A)\rho(g),\qquad
-P=\operatorname{per}A.
+P=\mathop{\mathrm{per}}A.
 ```
 
 The matrix $`F`$ is PSD. This follows from the positive-definite function
@@ -47,7 +47,7 @@ This is the tensor-permutation representation of the wreath product. If
 $`\psi`$ is a character of $`K`$ of degree $`q`$, then
 
 ```math
-\chi(\mathbf g,\pi)=\operatorname{tr}R(\mathbf g,\pi)\psi(\pi)
+\chi(\mathbf g,\pi)=\mathop{\mathrm{tr}}R(\mathbf g,\pi)\psi(\pi)
 ```
 
 is a character of $`H`$ of degree $`d^m q`$. Irreducibility is not
@@ -65,9 +65,9 @@ Sum first over the base group $`G^m`$. The result is
 
 ```math
 \sum_{\mathbf g\in G^m}\prod_i a_{g_i}(A)
-                   \operatorname{tr}R(\mathbf g,\pi)
- =\operatorname{tr}(F^{\otimes m}P_\pi)
- =\prod_{c\in\operatorname{Cycles}(\pi)}\operatorname{tr}(F^{|c|}).
+                   \mathop{\mathrm{tr}}R(\mathbf g,\pi)
+ =\mathop{\mathrm{tr}}(F^{\otimes m}P_\pi)
+ =\prod_{c\in\mathop{\mathrm{Cycles}}(\pi)}\mathop{\mathrm{tr}}(F^{|c|}).
 ```
 
 Consequently, with generalized matrix functions divided by character
@@ -79,8 +79,8 @@ f_{H,\chi}(C\otimes A)
  =\frac1{d^m}
    \sum_{\pi\in K}\frac{\psi(\pi)}q
        a_\pi(C^{\circ n})
-       \prod_{c\in\operatorname{Cycles}(\pi)}
-                         \operatorname{tr}(F^{|c|}).}
+       \prod_{c\in\mathop{\mathrm{Cycles}}(\pi)}
+                         \mathop{\mathrm{tr}}(F^{|c|}).}
 \tag{1}
 ```
 
@@ -93,7 +93,7 @@ prime and let $`\psi`$ be trivial. Then (1) reads
 
 ```math
 f_{H,\chi}(J_m\otimes A)
- =\frac{(\operatorname{tr}F)^m+(m-1)\operatorname{tr}(F^m)}{d^m}.
+ =\frac{(\mathop{\mathrm{tr}}F)^m+(m-1)\mathop{\mathrm{tr}}(F^m)}{d^m}.
 \tag{2}
 ```
 
@@ -129,22 +129,22 @@ The higher-dimensional permanent-on-top block has disappeared entirely.
 For a top group with several orbits, the same conclusion holds separately
 on each orbit, with one base character for each orbit. This factorization
 does not by itself prove dominance for arbitrary $`C`$; the denominator
-is still $`\operatorname{per}(C\otimes A)`$.
+is still $`\mathop{\mathrm{per}}(C\otimes A)`$.
 
 ## 3. A factorial lower bound for identical Gram copies
 
 For every PSD $`A`$ and positive integer $`m`$,
 
 ```math
-\boxed{\operatorname{per}(J_m\otimes A)
-       \geq m!\,\operatorname{per}(A)^m.}
+\boxed{\mathop{\mathrm{per}}(J_m\otimes A)
+       \geq m!\,\mathop{\mathrm{per}}(A)^m.}
 \tag{5}
 ```
 
 This is the identical-block specialization of Marcus's block-permanent
 conjecture. We give a proof from the classical Bombieri product inequality
 to fix its exact coefficient. This does not assert the stronger bound with
-$`(m!)^n\operatorname{per}(A)^m`$, which is a different statement.
+$`(m!)^n\mathop{\mathrm{per}}(A)^m`$, which is a different statement.
 
 For a polynomial $`p(z)=\sum_\alpha p_\alpha z^\alpha`$, use the
 apolar norm
@@ -194,9 +194,9 @@ to $`p^{m-1}`$ and each homogeneous derivative $`\partial_jp`$:
 ```math
 \begin{aligned}
 nm\|p^m\|_a^2
- &=m^2\sum_j\|p^{m-1}\partial_jp\|_a^2\\
- &\geq m^2\|p^{m-1}\|_a^2\sum_j\|\partial_jp\|_a^2\\
- &=nm^2\|p^{m-1}\|_a^2\|p\|_a^2.
+ &=m^2\sum_j\|p^{m-1}\partial_jp\|_a^2
+ \\ &\geq m^2\|p^{m-1}\|_a^2\sum_j\|\partial_jp\|_a^2
+ \\ &=nm^2\|p^{m-1}\|_a^2\|p\|_a^2.
 \end{aligned}
 ```
 
@@ -212,8 +212,8 @@ covariance matrix is $`A`$, and put $`p=\prod_i\ell_i`$. Wick's
 identity yields
 
 ```math
-\|p\|_a^2=\operatorname{per}A,\qquad
-\|p^m\|_a^2=\operatorname{per}(J_m\otimes A).
+\|p\|_a^2=\mathop{\mathrm{per}}A,\qquad
+\|p^m\|_a^2=\mathop{\mathrm{per}}(J_m\otimes A).
 ```
 
 This proves (5). If one of the forms is zero, both sides vanish and the
@@ -224,7 +224,7 @@ argument still applies.
 For the construction in Section 1, suppose only that the core satisfies
 
 ```math
-\frac{\operatorname{tr}F}{d}\leq\operatorname{per}A.
+\frac{\mathop{\mathrm{tr}}F}{d}\leq\mathop{\mathrm{per}}A.
 \tag{9}
 ```
 
@@ -233,7 +233,7 @@ permanent-on-top assumption. Since $`F\succeq0`$, for every positive
 integer $`\ell`$,
 
 ```math
-\operatorname{tr}(F^\ell)\leq(\operatorname{tr}F)^\ell.
+\mathop{\mathrm{tr}}(F^\ell)\leq(\mathop{\mathrm{tr}}F)^\ell.
 ```
 
 Also $`|\psi(\pi)|\leq q`$. Thus (1), with $`C=J_m`$, gives
@@ -241,9 +241,9 @@ Also $`|\psi(\pi)|\leq q`$. Thus (1), with $`C=J_m`$, gives
 ```math
 \begin{aligned}
 f_{H,\chi}(J_m\otimes A)
- &\leq |K|\left(\frac{\operatorname{tr}F}{d}\right)^m\\
- &\leq m!\,\operatorname{per}(A)^m\\
- &\leq\operatorname{per}(J_m\otimes A).
+ &\leq |K|\left(\frac{\mathop{\mathrm{tr}}F}{d}\right)^m
+ \\ &\leq m!\,\mathop{\mathrm{per}}(A)^m
+ \\ &\leq\mathop{\mathrm{per}}(J_m\otimes A).
 \end{aligned}
 \tag{10}
 ```
@@ -257,7 +257,7 @@ $`F`$ does not change (10).
 For example, the exact previously checked permanent-on-top cores in this
 research have the following data for their offending blocks:
 
-| Core | Partition | $`d`$ | $`\operatorname{tr}F/d`$ | $`\operatorname{per}A`$ |
+| Core | Partition | $`d`$ | $`\mathop{\mathrm{tr}}F/d`$ | $`\mathop{\mathrm{per}}A`$ |
 | --- | --- | --- | --- | --- |
 | Shchesnovich | $`(3,2)`$ | 5 | $`279779200`$ | $`814016640`$ |
 | Tran | $`(3,2)`$ | 5 | $`192`$ | $`504`$ |
@@ -275,7 +275,7 @@ Writing $`h(A)=\prod_i a_{ii}>0`$, reorder $`J_m\otimes A`$ by
 original vector index. Iterated Lieb--Fischer gives
 
 ```math
-\operatorname{per}(J_m\otimes A)
+\mathop{\mathrm{per}}(J_m\otimes A)
  \geq (m!)^n h(A)^m.
 ```
 
@@ -283,9 +283,9 @@ Together with the first line of (10), this gives
 
 ```math
 \frac{f_{H,\chi}(J_m\otimes A)}
-     {\operatorname{per}(J_m\otimes A)}
+     {\mathop{\mathrm{per}}(J_m\otimes A)}
 \leq
-\frac{\bigl((\operatorname{tr}F/d)/h(A)\bigr)^m}
+\frac{\bigl((\mathop{\mathrm{tr}}F/d)/h(A)\bigr)^m}
      {(m!)^{n-1}}
 \longrightarrow0\qquad(n\geq2).
 \tag{11}
@@ -301,10 +301,10 @@ Chollet's conjecture. Suppose $`n\geq2`$ and the diagonal entries of
 $`A`$ and $`C`$ are positive. Put
 
 ```math
-T_0=\operatorname{tr}F/d,\qquad h=\prod_i a_{ii},\qquad
+T_0=\mathop{\mathrm{tr}}F/d,\qquad h=\prod_i a_{ii},\qquad
 \kappa_A=\frac{T_0}{P^{1-2/n}h^{2/n}},\qquad
-\mathcal R(C)=\frac{\operatorname{per}(|C|^2)}
-                         {\operatorname{per}(C)^2}.
+\mathcal R(C)=\frac{\mathop{\mathrm{per}}(|C|^2)}
+                         {\mathop{\mathrm{per}}(C)^2}.
 ```
 
 Here $`|C|^2`$ denotes the entrywise squared modulus. Then the entire
@@ -312,21 +312,21 @@ construction (1) satisfies
 
 ```math
 \boxed{
-\frac{f_{H,\chi}(C\otimes A)}{\operatorname{per}(C\otimes A)}
+\frac{f_{H,\chi}(C\otimes A)}{\mathop{\mathrm{per}}(C\otimes A)}
  \leq \kappa_A^m\mathcal R(C).}
 \tag{12}
 ```
 
 To prove this, positive diagonal congruence first reduces to
 $`c_{ii}=1`$; all degree-$`nm`$ quantities in the quotient acquire
-the same scaling factor. Write $`S=\operatorname{per}C`$ and
-$`Q=\operatorname{per}(|C|^2)`$. Since $`|c_{ij}|\leq1`$,
+the same scaling factor. Write $`S=\mathop{\mathrm{per}}C`$ and
+$`Q=\mathop{\mathrm{per}}(|C|^2)`$. Since $`|c_{ij}|\leq1`$,
 formula (1) and the trace-power estimate give
 
 ```math
 f_{H,\chi}(C\otimes A)
  \leq T_0^m\sum_{\pi\in K}|a_\pi(C)|^n
- \leq T_0^m\operatorname{per}(|C|^n)
+ \leq T_0^m\mathop{\mathrm{per}}(|C|^n)
  \leq T_0^m Q.
 \tag{13}
 ```
@@ -341,10 +341,10 @@ Their weighted geometric mean therefore gives
 
 ```math
 \begin{aligned}
-\operatorname{per}(C\otimes A)
- &\geq\max\{P^m,h^mS^n\}\\
- &\geq(P^m)^{1-2/n}(h^mS^n)^{2/n}\\
- &=P^{m(1-2/n)}h^{2m/n}S^2.
+\mathop{\mathrm{per}}(C\otimes A)
+ &\geq\max\{P^m,h^mS^n\}
+ \\ &\geq(P^m)^{1-2/n}(h^mS^n)^{2/n}
+ \\ &=P^{m(1-2/n)}h^{2m/n}S^2.
 \end{aligned}
 \tag{14}
 ```
@@ -381,18 +381,18 @@ obstruction, not an assertion that Chollet's conjecture is true.
 ## 6. What remains outside the obstruction
 
 For general $`C`$, formula (1) remains valid. The step replacing its
-cycle weights by $`(\operatorname{tr}F)^m`$ term by term is not justified
+cycle weights by $`(\mathop{\mathrm{tr}}F)^m`$ term by term is not justified
 when permutation monomials of $`C^{\circ n}`$ have complex phases.
 Even when those monomials are nonnegative and that step is valid, comparing
-the resulting expression with $`\operatorname{per}(C\otimes A)`$
+the resulting expression with $`\mathop{\mathrm{per}}(C\otimes A)`$
 requires another matrix inequality.
 
 For instance, the trivial-base version naturally encounters
 
 ```math
-\operatorname{per}(C\otimes A)
+\mathop{\mathrm{per}}(C\otimes A)
 \stackrel{?}{\geq}
-\operatorname{per}(A)^m\operatorname{per}(C^{\circ n}),
+\mathop{\mathrm{per}}(A)^m\mathop{\mathrm{per}}(C^{\circ n}),
 ```
 
 the scalar-block specialization of Marcus's conjecture. A general PSD

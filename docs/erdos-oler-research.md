@@ -67,8 +67,8 @@ edge. Squaring the two sides gives
 
 Along the chain the height first decreases and then increases,
 since the directions are nondecreasing. If the chain starts at
-$(x_0,y_0)$ and ends at $(x_1,y_1)$, with minimum height $y_*$,
-its total variation in height is $y_0+y_1-2y_*$. Its length
+$(x_0,y_0)$ and ends at $(x_1,y_1)$, with minimum height $`y_*`$,
+its total variation in height is $`y_0+y_1-2y_*`$. Its length
 is at most
 
 ```math
@@ -100,12 +100,12 @@ take a shortest vector $u$ and extend it to a basis
 $u,v$. The shortest vector is primitive in the lattice.
 Reduce $v$ by multiples of $u$ so its projection onto
 $u$ has magnitude at most $|u|/2$. Since $|v|\ge|u|\ge1$,
-the covolume is at least $\sqrt3\,|u|^2/2$.
+the covolume is at least $`\sqrt3\,|u|^2/2`$.
 
 Consequently, by the directional bound,
 
 ```math
- |S|\le \frac{2\operatorname{area}(H)}{\sqrt3}
+ |S|\le \frac{2\mathop{\mathrm{area}}(H)}{\sqrt3}
            +\frac b2+1
      \le \frac{L^2}{2}+\frac32\lfloor L\rfloor+1.
 ```
@@ -143,7 +143,7 @@ The [boundary-face analysis](erdos-oler-boundary-faces.md) shows that a countere
 ## Local rigidity after deleting any site
 
 Let $V_k$ be the aligned triangular lattice patch of side $k$,
-and remove any one site $o$. The packing $V_k\setminus\{o\}$
+and remove any one site $o$. The packing $`V_k\setminus\{o\}`$
 is infinitesimally rigid inside the fixed containing triangle.
 In fact, if another packing in the same triangle can be put
 in correspondence with these sites so that each displacement
@@ -364,7 +364,7 @@ triangle, followed by dilation, gives
 
 ```math
  \int_{T_k}|\nabla U|^2
-  \ll \int_{T_k}|\operatorname{sym}\nabla U|^2
+  \ll \int_{T_k}|\mathop{\mathrm{sym}}\nabla U|^2
      + k^{-1}\int_{\partial T_k}|U\cdot n|^2 .
 ```
 
@@ -383,7 +383,7 @@ for the normal-trace argument in Korn inequalities.
 
 On each unit face the three directional projections along
 its edges determine the symmetric part of the gradient.
-Thus the integral of $|\operatorname{sym}\nabla U|^2$
+Thus the integral of $`|\mathop{\mathrm{sym}}\nabla U|^2`$
 is bounded by a constant times the sum of the squared
 contact projections. The boundary integral is bounded
 by the sum of the squared normal projections at the lattice

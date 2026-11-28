@@ -80,7 +80,7 @@ By (4),
 ```
 Thus
 ```math
-b_j(a_0)=0\qquad(0\le j<k).                           \tag{6}
+b_j(a_0)=0\qquad(0\le j\lt k).                           \tag{6}
 ```
 The conclusion includes $`k=D+1`$, in which case every coefficient vanishes and $`B(a_0,u)`$ is identically zero.
 
@@ -201,8 +201,8 @@ F_i(x,\epsilon,w)-C_i\epsilon^{2k_i}=0
 \frac{\partial F_i}{\partial w_j}
 =
 \begin{cases}
-1,&w_j=y,\\
-0,&w_j\ne y.
+1,&w_j=y,
+\\ 0,&w_j\ne y.
 \end{cases}                                         \tag{13}
 ```
 Use these equalities as a complex algebraic incidence $`\Gamma_I`$, forgetting positivity and feasibility inequalities.

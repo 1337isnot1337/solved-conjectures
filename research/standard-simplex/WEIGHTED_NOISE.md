@@ -300,9 +300,9 @@ Cauchy–Schwarz in the positive $`R_t`$ seminorm and (1) give
 ```math
 \begin{aligned}
 \sum_i\bigl|\langle h_i,R_{-t,d}h_i\rangle\bigr|
-&\leq\sum_i\langle h_i,R_{t,d}h_i\rangle\\
-&\leq2(q-1)\sum_{i\lt j}\langle g_{ij},R_{t,d}g_{ij}\rangle\\
-&\leq176(q-1)(8/7)^r t^2 W_E(\mathcal A,\mathcal C).
+&\leq\sum_i\langle h_i,R_{t,d}h_i\rangle
+\\ &\leq2(q-1)\sum_{i\lt j}\langle g_{ij},R_{t,d}g_{ij}\rangle
+\\ &\leq176(q-1)(8/7)^r t^2 W_E(\mathcal A,\mathcal C).
 \end{aligned}
 \tag{9}
 ```

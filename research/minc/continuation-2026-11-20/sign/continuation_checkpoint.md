@@ -53,8 +53,8 @@ by a stronger known condition. If an integer matrix has nonzero permanent that
 is a power of two up to sign, then
 
 ```math
-\operatorname{rank}_{\mathbb F_3} A\geq\lceil n/2\rceil,
-\qquad\operatorname{rank}_{\mathbb Q} A\geq\lceil n/2\rceil.
+\mathop{\mathrm{rank}}_{\mathbb F_3} A\geq\lceil n/2\rceil,
+\qquad\mathop{\mathrm{rank}}_{\mathbb Q} A\geq\lceil n/2\rceil.
 ```
 
 More generally, over a field of characteristic p, a nonzero permanent requires
@@ -133,7 +133,7 @@ Take
 ```math
 A=\begin{pmatrix}
 1&-1&1&-1\\-1&1&1&1\\1&1&1&-1\\1&1&-1&1
-\end{pmatrix},\qquad \det A=-8,\quad\operatorname{per}A=4.
+\end{pmatrix},\qquad \det A=-8,\quad\mathop{\mathrm{per}}A=4.
 ```
 
 Then B=[[A,A],[A,−A]] is nonsingular, with determinant 1024, but permanent zero.

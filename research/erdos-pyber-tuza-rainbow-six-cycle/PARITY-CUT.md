@@ -18,13 +18,13 @@ A triple of indices with exactly two equal is subtracted once, and an all-equal 
 
 For the pointwise theorem, all norm bounds below use the maximum absolute row sum. Both sides are nonempty, as each vertex has at least $3t-D$ correctly crossing edges. For a vertex in one part the total crossing degree differs from $3t$ by at most $D$: any discrepancy is the number of misplaced $B$ edges crossing minus the number of misplaced $A$ edges not crossing. Hence each part size lies in $[3t-D,3t+D]$.
 
-Let $\eta=(D+1)/t$, and let $Q$ have entry $1/(3t)$ at every slot in the block, zero elsewhere, including the diagonal slots for a within-part block. The row norm of $Q$ is at most $2$, that of each $P_i$ at most $1$, and that of $S$ at most $3$. Since there are at most $D$ misplaced edges per row, and at most one absent loop in the within-part case, $\|S-3Q\|\le\eta$. Also
+Let $\eta=(D+1)/t$, and let $Q$ have entry $1/(3t)$ at every slot in the block, zero elsewhere, including the diagonal slots for a within-part block. The row norm of $Q$ is at most $2$, that of each $P_i$ at most $1$, and that of $S$ at most $3$. Since there are at most $D$ misplaced edges per row, and at most one absent loop in the within-part case, $`\|S-3Q\|\le\eta`$. Also
 ```math
 \|P_iQ-Q^2\|,\ \|QP_i-Q^2\|\le 2\eta.
 ```
 For the first bound, products have identical possible supports (the full within block, or the two same-side blocks in the bipartite case). Each supported entry of $P_iQ$ is $1/(3t)$ times a row degree divided by $t$, between $1-\eta$ and $1$. The corresponding entry of $Q^2$ is $1/(3t)$ times a part size divided by $3t$, within $\eta/3$ of one. The row contains at most $(3+\eta)t$ slots, so the row difference is at most $(4\eta/3)(1+\eta/3)\le2\eta$. The other bound follows by the same entrywise comparison using column degrees; the matrices are symmetric.
 
-It follows by telescoping that $\|S^3-27Q^3\|\le (9+18+36)\eta=63\eta$. Each of $P_i^2Q,P_iQP_i,QP_i^2$ has distance at most $6\eta$ from $Q^3$ by the previous two product bounds and submultiplicativity. Replacing each appearance of $S$ in the nine mixed terms by $3Q$ incurs at most $\eta$ per term. Thus
+It follows by telescoping that $`\|S^3-27Q^3\|\le (9+18+36)\eta=63\eta`$. Each of $P_i^2Q,P_iQP_i,QP_i^2$ has distance at most $6\eta$ from $Q^3$ by the previous two product bounds and submultiplicativity. Replacing each appearance of $S$ in the nine mixed terms by $3Q$ incurs at most $\eta$ per term. Thus
 ```math
 \left\|R-2\sum_iP_i^3\right\|\le 250\eta.
 ```
@@ -45,7 +45,7 @@ Set $\delta=10^{-7}$ and assume at most $\delta^2t^2/2$ misplaced edges. Call a 
 
 Assume no rainbow six-cycle exists. For a bad vertex $z$, each color has at least $t-b$ good neighbors, so that color has at least $t/3$ good neighbors on one side. Suppose two colors $i,j$ from the same palette have opposite such majority sides. Or suppose all three colors of a palette have the same majority side, but some edge in color $i$ from $z$ to a good vertex $x$ goes to the other side; then choose any different color $j$ from the same palette. In either case there is a good neighbor $x$ in color $i$, opposite a set $V$ of at least $t/3$ good neighbors of $z$ in color $j$.
 
-Let $k$ be the third color of their palette, and $U$ the correctly placed good color-$k$ neighborhood of $x$. It has size at least $t-D_0-b$. If $k\in A$, $U,V$ lie on the same side, and the within-part three-path lemma uses all three $B$ colors. If $k\in B$, $U,V$ lie on opposite sides, and the cross three-path lemma uses all three $A$ colors. Use the lemma with $x,z$ forbidden. The resulting three-path together with the edges in colors $i,j,k$ gives a six-cycle, a contradiction.
+Let $k$ be the third color of their palette, and $U$ the correctly placed good color-$`k`$ neighborhood of $x$. It has size at least $t-D_0-b$. If $k\in A$, $U,V$ lie on the same side, and the within-part three-path lemma uses all three $B$ colors. If $k\in B$, $U,V$ lie on opposite sides, and the cross three-path lemma uses all three $A$ colors. Use the lemma with $x,z$ forbidden. The resulting three-path together with the edges in colors $i,j,k$ gives a six-cycle, a contradiction.
 
 Hence for each bad vertex all its edges of palette $A$ to good vertices go to one side, and all its edges of palette $B$ to good vertices go to one side. These two sides are opposite: otherwise no color could join $z$ to a good vertex on the other side. Move each bad vertex, if necessary, to the side for which these two placements are correct. Every good–bad edge is correct in the new partition. Good vertices then have at most $D_0$ misplaced edges, and bad vertices at most $b$. The pointwise theorem applies, contradicting the assumption of no rainbow six-cycle.
 

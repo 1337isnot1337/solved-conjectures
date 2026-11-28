@@ -43,7 +43,7 @@ At each stage the partitions come from successively revealed coordinates. Keep t
 Within $`C`$ the old optimizer is a mixture of the new nested optimizer restricted to each slice $`i=b`$. Write $`F_C`$ for the unrestricted new value within $`C`$, and $`F_{C,b}`$ for its restricted values. The component weights of the old mixture are $`c_b=r_b/(r_0+r_1)`$, where $`r_b=\exp(-(F_{C,b}-F_C)/\beta_\ell)`$. The pruning comparison applies with a trivial split at temperature $`\beta_\ell`$ if necessary, so the restricted optimizer dominates the unrestricted law on its slice by a factor $`1/r_b`$. Empty slices are given zero weight. Thus the old conditional law in $`C`$ dominates the new conditional law times $`r_C=1/(r_0+r_1)`$. Each $`r_b\le1`$ and their sum is at least one, since each is at least the new mass of its slice. It follows that
 
 ```math
-\operatorname{TV}(q(\cdot\mid C),p(\cdot\mid C))\le 1-r_C\le\min(c_0,c_1).
+\mathop{\mathrm{TV}}(q(\cdot\mid C),p(\cdot\mid C))\le 1-r_C\le\min(c_0,c_1).
 ```
 
 Replacing the old conditional value in $`C`$ by the new value increases it by $`-\beta_\ell\log r_C`$. The same path-ratio calculation on the prefix tree shows $`p(C)\ge q(C)r_C`$. Indeed the ratio at the terminal prefix is a power of $`r_C`$ with exponent at most one, and all other path factors are at least one. Thus the variation of the prefix law is at most $`\sum_C q(C)(1-r_C)`$. Comparing the two joint laws via the old prefix law and new slice conditionals gives

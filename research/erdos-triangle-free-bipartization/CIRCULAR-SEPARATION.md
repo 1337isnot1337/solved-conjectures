@@ -39,7 +39,7 @@ To prove it, use the vector-valued indicator $g(x)$ of the label. Its correlatio
 $
 P(z)=\sum_{j\in\mathbb Z} \widehat g(j)^* A_H\widehat g(j)\,e^{2\pi i j z}.
 $
-The sum of the absolute values of the coefficients is at most $\|A_H\|$ by Parseval, since $\|g(x)\|_2=1$. For a single frequency, changing the positive scaling from $l_1$ to $l_2$ changes the integral before normalization by at most $2|\log(l_1/l_2)|$, by scaling the interval endpoints under $dy/y$. Reversing the sign at scale $l_2$ contributes twice a sine integral on a positive interval. The absolute value of any such sine integral is at most four: use $|\sin u|\le u$ below one and integrate by parts above one. This proves (2).
+The sum of the absolute values of the coefficients is at most $`\|A_H\|`$ by Parseval, since $`\|g(x)\|_2=1`$. For a single frequency, changing the positive scaling from $l_1$ to $l_2$ changes the integral before normalization by at most $2|\log(l_1/l_2)|$, by scaling the interval endpoints under $dy/y$. Reversing the sign at scale $l_2$ contributes twice a sine integral on a positive interval. The absolute value of any such sine integral is at most four: use $|\sin u|\le u$ below one and integrate by parts above one. This proves (2).
 
 Choose a weight vector $w$ attaining the definition of $F(a)$ on $K_{p/q}$, and fix $U=1/(10p^2)$. For $y\in[V,U]$ consider the $p$ vertices at phases $x+i(1/p+y)$, $0\le i<p$, with uniform $x$. Under any labeling their $w$-weighted $H$-success is at most $F(a)$, since their labels constitute a map from the fixed vertex set of $K_{p/q}$ to $H$.
 

@@ -17,7 +17,7 @@ Let `U` be the union of all full cliques, let `R=V(H)\U`, and put `s=r-q`, so `|
 We prove
 
 ```math
-q(q-1)<r.
+q(q-1)\lt r.
 \tag{1}
 ```
 
@@ -175,7 +175,7 @@ The conjectures agent checked this strengthening, and the coordinator independen
 The connected branch now has all full cliques pairwise disjoint and
 
 ```math
-3\le q,\qquad q(q-1)<r.
+3\le q,\qquad q(q-1)\lt r.
 ```
 
 It also has a minimum-degree vertex in `Z`, with no neighbors in the full-clique union, and minimum degree between r−q+1 and r−1. The proof does not exclude this configuration. It does not handle the disconnected branch, where full cliques are components and the residue has independence number `s`.

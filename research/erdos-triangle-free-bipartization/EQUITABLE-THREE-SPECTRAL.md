@@ -9,8 +9,8 @@ Write T for the self-adjoint integral operator of W. Each vertex has degree p/2 
 Let T₀ be the restriction to functions of mean zero on each class, extended by zero on the quotient. This operator still has zero diagonal blocks on the three classes. Triangle-freeness gives trace(T³)=0. The two residual trace identities or bounds are
 
 ```math
- \operatorname{Tr}(T_0^3)=-3p^3/4,\qquad
- \operatorname{Tr}(T_0^2)\le p-3p^2/2.
+ \mathop{\mathrm{Tr}}(T_0^3)=-3p^3/4,\qquad
+ \mathop{\mathrm{Tr}}(T_0^2)\le p-3p^2/2.
 ```
 
 The square bound uses ∫∫W²≤p. The [p-energy theorem of Elphick, Tang and Zhang, Theorem 1.8 and Remark 1.9](https://arxiv.org/html/2504.01295) applied with exponents 2 and 3 says that the negative square energy is at most twice the positive square energy, and the negative cubic energy at most four times the positive cubic energy, for an operator supported off three diagonal blocks. To pass from finite Hermitian weighted matrices to T₀, take piecewise-constant compressions within the three classes that converge in Hilbert–Schmidt norm. The diagonal blocks stay zero, and the positive and negative square and cubic energies converge by Schatten continuity. The finite theorem permits signed off-diagonal entries.
@@ -78,8 +78,8 @@ since every integrand |d_j(x)−p/2| is bounded by one. The three-class matrix o
 In the trace of T³, the terms with one or three factors R vanish by the two-block decomposition, and the terms with two factors sum to 3 Tr((P+S)R²). Their magnitude is below 12ε because ||P+S||_op≤||T||_HS≤√p<0.57. Hence
 
 ```math
- \operatorname{Tr}S^3\le-3p^3/4+16\epsilon,\qquad
- \operatorname{Tr}S^2\le p-3p^2/2+16\epsilon .
+ \mathop{\mathrm{Tr}}S^3\le-3p^3/4+16\epsilon,\qquad
+ \mathop{\mathrm{Tr}}S^2\le p-3p^2/2+16\epsilon .
 ```
 
 The three diagonal color blocks of S are still zero. Apply the p-energy comparison to S as before. Its normalized negative square energy is at most 107/93+112ε and the normalized negative cubic energy at least 1−720ε. Capping every negative magnitude at 24/25 times p would still make the remainder in the cube calculation less than 0.23; its cube sum would be below 0.995136, a contradiction. Thus T itself has a least eigenvalue −t with t>0.96p, by testing T on a negative eigenvector of S.

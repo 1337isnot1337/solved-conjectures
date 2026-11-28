@@ -39,9 +39,9 @@ h(x)=\sum_{e_j>0}\frac{e_j}{p_j}f_j(x),
 \qquad
 \bar f_i(x)=
 \begin{cases}
-(1-e_i/p_i)f_i(x),&e_i>0,\\
-f_i(x)+(-e_i/H)h(x),&e_i<0,\\
-f_i(x),&e_i=0.
+(1-e_i/p_i)f_i(x),&e_i>0,
+\\ f_i(x)+(-e_i/H)h(x),&e_i<0,
+\\ f_i(x),&e_i=0.
 \end{cases} \tag{2}
 ```
 

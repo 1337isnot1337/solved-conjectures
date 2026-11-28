@@ -1,16 +1,16 @@
 # Alexandersson's natural-descent conjecture
 
-Let $\mu$ be any fixed nonempty Ferrers diagram with $p$ cells. If its natural-descent polynomial $N_\mu$ is real-rooted, then $N_{(m,\mu)}$ has **$p$ simple negative zeros** for every sufficiently large first-row length $m$. Moreover the rows obtained at $m$ and $m+1$ strictly interlace. This gives unbounded families in arbitrarily many rows, starting with any rectangle, and the extension may be applied repeatedly. The threshold can depend on the entire fixed diagram. [Alexandersson's statement and the rectangle theorem](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#openProblemsPolytopes)
+Let $\mu$ be any fixed nonempty Ferrers diagram with $p$ cells. If its natural-descent polynomial $N_\mu$ is real-rooted, then $N_{(m,\mu)}$ has **$`p`$ simple negative zeros** for every sufficiently large first-row length $m$. Moreover the rows obtained at $m$ and $m+1$ strictly interlace. This gives unbounded families in arbitrarily many rows, starting with any rectangle, and the extension may be applied repeatedly. The threshold can depend on the entire fixed diagram. [Alexandersson's statement and the rectangle theorem](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#openProblemsPolytopes)
 
 The zeros have explicit leading constants. If $h_d=[t^d]N_\mu(t)$, define
 ```math
  F_\mu(x)=\sum_{k=0}^p \frac{x^k}{k!}\sum_{d=0}^k h_d\binom{p-d}{k-d}.
 ```
-Writing its zeros as $\xi_1<\cdots<\xi_p<0$, the $i$th zero of $N_{(m,\mu)}$ in increasing order is $\xi_i/m+O_\mu(m^{-2})$. The limit formula $N_{(m,\mu)}(x/m)\to F_\mu(x)$ itself holds for every $\mu$ and does not require any real-rootedness assumption.
+Writing its zeros as $\xi_1<\cdots<\xi_p<0$, the $`i`$th zero of $N_{(m,\mu)}$ in increasing order is $\xi_i/m+O_\mu(m^{-2})$. The limit formula $N_{(m,\mu)}(x/m)\to F_\mu(x)$ itself holds for every $\mu$ and does not require any real-rootedness assumption.
 
 ## Lattice counts with a long first row
 
-For a diagram $\lambda$, let $A_\lambda(q)$ count the arrays with entries in $\{0,\ldots,q\}$ weakly increasing along rows and columns. The order-polytope identity is $\sum_{q\ge0}A_\lambda(q)t^q=N_\lambda(t)/(1-t)^{|\lambda|+1}$. One can see it by standardizing the weak arrays using the natural row-by-row labeling. For a fixed extension with $d$ descents, the weakly increasing sequence of its $|\lambda|$ entries must increase strictly at each descent, giving $\binom{q+|\lambda|-d}{|\lambda|}$ choices. [Problem formulation](README.md)
+For a diagram $\lambda$, let $A_\lambda(q)$ count the arrays with entries in $`\{0,\ldots,q\}`$ weakly increasing along rows and columns. The order-polytope identity is $\sum_{q\ge0}A_\lambda(q)t^q=N_\lambda(t)/(1-t)^{|\lambda|+1}$. One can see it by standardizing the weak arrays using the natural row-by-row labeling. For a fixed extension with $d$ descents, the weakly increasing sequence of its $|\lambda|$ entries must increase strictly at each descent, giving $\binom{q+|\lambda|-d}{|\lambda|}$ choices. [Problem formulation](README.md)
 
 Write $l=\mu_1$. For each fixed $q$, $A_{(m,\mu)}(q)$ is a polynomial in $m$ for $m\ge l$, of degree $q$ with leading coefficient $A_\mu(q)/q!$. To see this, fix the weak array on the lower diagram and the admissible first $l$ entries of the top row, whose last value is $v$. The remaining top-row positions have $\binom{m-l+q-v}{q-v}$ choices. Only $v=0$ contributes in degree $q$. In that case the prefix is entirely zero and every lower array is admissible. The formula includes $q=0$.
 

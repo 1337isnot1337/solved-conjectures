@@ -30,7 +30,7 @@ The theorem gives
 
 
 ```math
-P\ge Q,\qquad Q\not\ge P,\qquad 0<Q<P\equiv M,
+P\ge Q,\qquad Q\not\ge P,\qquad 0\lt Q\lt P\equiv M,
 ```
 
 

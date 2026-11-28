@@ -10,7 +10,7 @@ The reviewed proof is [results/mccrea-single-crossover/PROOF.md](../../results/m
 
 I independently read the full primary source needed for the argument: Marcus McCrea, *Fixed-Perimeter Franklin Statistics and an Eventual Inequality*, [arXiv:2609.12005v2](https://arxiv.org/abs/2609.12005v2), through its [full PDF mirror](https://arxiv.cnoctave.top/pdf/2609.12005). The first-page footer identifies version 2, dated 5 November 2026. Definitions on printed page 2, profile derivations on pages 3–4, equations (7) and (9) on pages 4–5, and Conjecture 9.2 on page 12 were checked. I also inspected the rendered image of page 12 to verify the quantified statement and its explicit scope sentence.
 
-For every fixed integer $k\ge3$, the original conjecture asks for exactly one $c_k$ strictly between $a_k=2^{-k-1}$ and $b_k=1/(4k)$. For each fixed $x$ in that interval other than $c_k$, the respective strict inequalities must hold for every sufficiently large $n$, with the threshold allowed to depend on $k,x$. The source excludes a sign requirement at $c_k$ and outside the interval. Thus the proposed theorem is the entire stated conjecture, not a fixed-parameter or smaller-density case. The earlier fixed-$j$ theorem is explicitly a different, already proved result in the source.
+For every fixed integer $k\ge3$, the original conjecture asks for exactly one $c_k$ strictly between $a_k=2^{-k-1}$ and $b_k=1/(4k)$. For each fixed $x$ in that interval other than $c_k$, the respective strict inequalities must hold for every sufficiently large $n$, with the threshold allowed to depend on $k,x$. The source excludes a sign requirement at $c_k$ and outside the interval. Thus the proposed theorem is the entire stated conjecture, not a fixed-parameter or smaller-density case. The earlier fixed-$`j`$ theorem is explicitly a different, already proved result in the source.
 
 ## Generating functions and positivity
 
@@ -98,4 +98,4 @@ The logarithm of the coefficient ratio divided by $n$ converges to that exponent
 
 The full proof covers all permitted moduli and every permitted fixed density. The source formulas, the floor, the prefactor, lattice span, analytic domains, and signs all pass review. No finite computational screen is needed for this argument, and none was used as evidence for the unrestricted theorem in this review.
 
-No changes to the original result package are proposed. This review does not add a new conjecture count, does not assert a uniform finite-$n$ sign pattern, and does not supply an independent prior-resolution search. The proof remains unrefereed externally.
+No changes to the original result package are proposed. This review does not add a new conjecture count, does not assert a uniform finite-$`n`$ sign pattern, and does not supply an independent prior-resolution search. The proof remains unrefereed externally.

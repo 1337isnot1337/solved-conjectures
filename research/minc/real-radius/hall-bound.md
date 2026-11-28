@@ -16,10 +16,10 @@ nonzero entries contain no permutation. For every $n\ge3$,
 ~~~math
 H_n=
 \begin{cases}
-(n+1)/(n-1),&n\text{ odd},\\
-\sqrt{(n+2)/(n-2)},&n\text{ even}.
+(n+1)/(n-1),&n\text{ odd},
+\\ \sqrt{(n+2)/(n-2)},&n\text{ even}.
 \end{cases}
-\qquad b(n)<H_n.
+\qquad b(n)\lt H_n.
 ~~~
 
 Hall's theorem supplies a set of $p$ rows with neighbors in a set of
@@ -53,11 +53,11 @@ have permanent below $d_n$. In particular,
 ## Behavior inside the closest segment
 
 Let $q+s=n-1$ with $q,s$ the closest integers, and set $p=q+1$,
-$t=s+1$. Use a nearest block matrix $A_*$ as above, with $s=n-p$,
-and write $A(h)=(1-h)A_*+hJ_n$. For every fixed real $c>0$,
+$t=s+1$. Use a nearest block matrix $`A_*`$ as above, with $s=n-p$,
+and write $`A(h)=(1-h)A_*+hJ_n`$. For every fixed real $c>0$,
 
 ~~~math
-\lim_{n\to\infty}\frac{\operatorname{per}A(c/n^{3/2})}{d_n}
+\lim_{n\to\infty}\frac{\mathop{\mathrm{per}}A(c/n^{3/2})}{d_n}
 =\frac{e\sqrt{2\pi}}8\,c.
 ~~~
 
@@ -76,7 +76,7 @@ T_j=\frac{p!s!q!t!}{(q-j)!(j+1)!j!(s-j)!}\,
 Indeed the standard contingency-table count follows by splitting the
 labeled rows within each class and assigning their images bijectively
 within each column class. In particular
-$T_0=pt\,q!s!\,a^q b d^s$. At $h=c/n^{3/2}$ the ratio of successive
+$`T_0=pt\,q!s!\,a^q b d^s`$. At $h=c/n^{3/2}$ the ratio of successive
 absolute terms is bounded by
 
 ~~~math

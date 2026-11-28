@@ -7,30 +7,30 @@
 For a pattern $\pi$ of length $K$ and admissible overlap $m$, let $N_\pi^m(j)$ count permutations of length $K+(j-1)(K-m)$ with all $j$ prescribed windows order-isomorphic to $\pi$, successive windows starting $K-m$ positions apart. Additional occurrences are allowed. This is Definition 2.6 and Remark 2.7 in [Blitvić–Kammoun–Steingrímsson, *Permutations, Pattern Covers, Posets and Positivity*, Part I](https://arxiv.org/html/2610.29846v1#S2). [Section 7, item 8](https://arxiv.org/html/2610.29846v1#S7) asks whether agreement through five occurrences forces agreement for every number of occurrences, regardless of pattern lengths, or whether a small length-dependent cutoff exists.
 
 **Theorem.** For each integer $L\ge2$ there are two patterns $P_L,Q_L$ with common length $K=3L+1$ and common admissible overlap $m=K-3=3L-2$ such that
-$$
+```math
 N_{P_L}^m(j)=N_{Q_L}^m(j)=C_j^2\qquad(1\le j\le L),
-$$
+```
 but
-$$
+```math
 N_{P_L}^m(L+1)=C_{L+1}^2+C_L^2,\qquad
 N_{Q_L}^m(L+1)=C_{L+1}^2,
-$$
+```
 where $C_n=\binom{2n}{n}/(n+1)$.
 
-In particular, if a cutoff $b(K)$ is to work for all pairs of length-$K$ patterns at common admissible overlap, then $b(3L+1)\ge L+1$. No universal constant works.
+In particular, if a cutoff $b(K)$ is to work for all pairs of length-$`K`$ patterns at common admissible overlap, then $b(3L+1)\ge L+1$. No universal constant works.
 
 ## Construction
 
 Use three logical classes of letters $A,B,C$. For each class $X$, its letters $X_i$ increase in $i$. All $A$ letters are smaller than all $B$ letters, and all $B$ letters are smaller than all $C$ letters. Assign the ranks $1,\ldots,K$ using this total ordering.
 
 For $P_L$, place the $3L$ letters in the order
-$$
+```math
 A_1B_1C_1\ A_2B_2C_2\ \cdots\ A_LB_LC_L
-$$
+```
 and append one more letter $A_{L+1}$. For $Q_L$, use
-$$
+```math
 B_1A_1C_1\ B_2A_2C_2\ \cdots\ B_LA_LC_L
-$$
+```
 and append $B_{L+1}$. Thus the longer class is $A$ in $P_L$ and $B$ in $Q_L$. Deleting the last three entries or deleting the first three leaves the same relative order: the corresponding positions retain their classes and the intra-class orders are unchanged upon shifting the indices. Thus $m=K-3$ is admissible for both. The shift holds for comparisons anywhere in a window, and does not require the prefix or suffix itself to be increasing.
 
 ## Packing poset
@@ -38,15 +38,15 @@ and append $B_{L+1}$. Thus the longer class is $A$ in $P_L$ and $B$ in $Q_L$. De
 The packing count equals the number of linear extensions of the poset that imposes the relative order in every window. This is [Part I, Theorem 5.3](https://arxiv.org/html/2610.29846v1#S5); directly, assign values in the order of any linear extension to get exactly one packing, and read values increasingly to invert the construction.
 
 Write $a,b,c$ for the numbers of letters of each class in one window. For $P_L$ they are $(L+1,L,L)$, and for $Q_L$ they are $(L,L+1,L)$. The entire host consists of three chains
-$$
-A_1<\cdots<A_{a+j-1},\quad
-B_1<\cdots<B_{b+j-1},\quad
-C_1<\cdots<C_{c+j-1}.
-$$
-All their adjacent comparisons occur in some window since $a,b,c\ge2$. The $i$th window, $1\le i\le j$, contains the consecutive indices $i,\ldots,i+a-1$ of $A$, $i,\ldots,i+b-1$ of $B$, and $i,\ldots,i+c-1$ of $C$. Its cross-class comparisons are equivalent, given the three chains, to
-$$
-A_{a+i-1}<B_i,\qquad B_{b+i-1}<C_i\quad(1\le i\le j).
-$$
+```math
+A_1<\cdots\lt A_{a+j-1},\quad
+B_1<\cdots\lt B_{b+j-1},\quad
+C_1<\cdots\lt C_{c+j-1}.
+```
+All their adjacent comparisons occur in some window since $a,b,c\ge2$. The $`i`$th window, $1\le i\le j$, contains the consecutive indices $i,\ldots,i+a-1$ of $A$, $i,\ldots,i+b-1$ of $B$, and $i,\ldots,i+c-1$ of $C$. Its cross-class comparisons are equivalent, given the three chains, to
+```math
+A_{a+i-1}\lt B_i,\qquad B_{b+i-1}\lt C_i\quad(1\le i\le j).
+```
 Indeed these inequalities force separation of $A$ from $B$ and $B$ from $C$ within the window, and then separation of $A$ from $C$. Conversely they are among the prescribed window comparisons. This gives exactly the packing poset; no comparisons are imposed between different windows other than the consequences of these constraints.
 
 ## Counting up to the first difference
@@ -54,15 +54,15 @@ Indeed these inequalities force separation of $A$ from $B$ and $B$ from $C$ with
 The $A$ vertices of index less than $a$ form a forced initial chain: they precede $A_a$, which precedes $B_1$ and hence every $B$ and $C$ vertex. Likewise the $C$ vertices of index greater than $j$ form a forced final chain: $C_j$ follows $B_{b+j-1}$ and hence all $B$ and $A$ vertices. We may remove both.
 
 The remaining constraints consist of two Catalan blocks and, if present, the intervening segment of the $B$ chain:
-$$
+```math
 \begin{array}{ll}
 X:\ (A_a,\ldots,A_{a+j-1}),\ (B_1,\ldots,B_j),
- & A_{a+i-1}<B_i;\\
-Y:\ (B_b,\ldots,B_{b+j-1}),\ (C_1,\ldots,C_j),
- & B_{b+i-1}<C_i .
+ & A_{a+i-1}\lt B_i;
+\\ Y:\ (B_b,\ldots,B_{b+j-1}),\ (C_1,\ldots,C_j),
+ & B_{b+i-1}\lt C_i .
 \end{array}
-$$
-Each block consists of two increasing chains of $j$ vertices with the $i$th vertex of the first required before the $i$th vertex of the second. Its extension words are the ballot words with equal letter counts, and hence number $C_j$.
+```
+Each block consists of two increasing chains of $j$ vertices with the $`i`$th vertex of the first required before the $`i`$th vertex of the second. Its extension words are the ballot words with equal letter counts, and hence number $C_j$.
 
 If $j<b$, then the last vertex of $X$ is $B_j$ and the first vertex of $Y$ is $B_b$. The $B$ chain separates the blocks, and any intermediate $B$ vertices have a forced position between them. If $j=b$, then these two endpoints coincide; the two blocks meet at that single endpoint and still concatenate uniquely. In both cases the count is $C_j^2$.
 

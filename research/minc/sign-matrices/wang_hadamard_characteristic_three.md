@@ -118,9 +118,9 @@ Let $`E`$ be a diagonal sign matrix, with negative-coordinate set $`T`$. Write $
 \begin{aligned}
  \frac{\det(I+EQ)}{\det(I+Q)}
  &=\det E\,
-      \frac{\det((I+Q)-2P_T)}{\det(I+Q)}\\
- &=(-1)^r\det\!\bigl(I_T-2(I+Q)^{-1}[T,T]\bigr)\\
- &=\det C[T,T].
+      \frac{\det((I+Q)-2P_T)}{\det(I+Q)}
+ \\ &=(-1)^r\det\!\bigl(I_T-2(I+Q)^{-1}[T,T]\bigr)
+ \\ &=\det C[T,T].
 \end{aligned}
 \tag{7}
 ```

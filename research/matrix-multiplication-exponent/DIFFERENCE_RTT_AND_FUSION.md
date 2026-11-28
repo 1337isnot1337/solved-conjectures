@@ -31,8 +31,8 @@ For a complete proof define
 ```math
 \begin{aligned}
 G_{12}^+&=g_1(u,q)g_2(v,q+\eta^{(1)}),&
-G_{21}^+&=g_2(v,q)g_1(u,q+\eta^{(2)}),\\
-H_{12}^-&=g_2(v+\eta,q)g_1(u+\eta,q-\eta^{(2)}),&
+G_{21}^+&=g_2(v,q)g_1(u,q+\eta^{(2)}),
+\\ H_{12}^-&=g_2(v+\eta,q)g_1(u+\eta,q-\eta^{(2)}),&
 H_{21}^-&=g_1(u+\eta,q)g_2(v+\eta,q-\eta^{(1)}).
 \end{aligned}
 ```

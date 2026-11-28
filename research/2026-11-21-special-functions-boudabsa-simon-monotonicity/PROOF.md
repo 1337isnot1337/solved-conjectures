@@ -35,7 +35,7 @@ E_{\alpha,m_1,m_1-l}(x)>E_{\alpha,m_2,m_2-l}(x)
 and
 
 ```math
-E_{\alpha,m_1,m_1-l}(x)<E_{\alpha,m_2,m_2-l}(x)
+E_{\alpha,m_1,m_1-l}(x)\lt E_{\alpha,m_2,m_2-l}(x)
 \quad (x<0).
 ```
 
@@ -78,10 +78,10 @@ Integration by parts, followed by the substitution $`u=e^{-t}`$, gives, for $`s>
 \begin{aligned}
 \int_0^\infty(1-e^{-st})\nu_\alpha(dt)
 &=\frac{s}{\Gamma(1-\alpha)}
-  \int_0^\infty e^{-st}(e^t-1)^{-\alpha}\,dt\\
-&=\frac{s}{\Gamma(1-\alpha)}
-  \int_0^1 u^{s+\alpha-1}(1-u)^{-\alpha}\,du\\
-&=\frac{s\Gamma(s+\alpha)}{\Gamma(s+1)}
+  \int_0^\infty e^{-st}(e^t-1)^{-\alpha}\,dt
+\\ &=\frac{s}{\Gamma(1-\alpha)}
+  \int_0^1 u^{s+\alpha-1}(1-u)^{-\alpha}\,du
+\\ &=\frac{s\Gamma(s+\alpha)}{\Gamma(s+1)}
  =\phi_\alpha(s).
 \end{aligned}
 ```
@@ -132,7 +132,7 @@ For every positive integer $`n`$, Tonelli's theorem and symmetry of the integrat
 
 ```math
 \mathbb E[I_m^n]
-=n!\int_{0<t_1<\cdots<t_n}
+=n!\int_{0\lt t_1<\cdots\lt t_n}
   \mathbb E\!\left[
      e^{-\alpha m\sum_{j=1}^nS_{t_j}}
      \boldsymbol1_{\{\zeta>t_n\}}
@@ -179,12 +179,12 @@ Consequently the exponential series can also be integrated term by term for any 
 ```math
 \begin{aligned}
 \mathbb E[e^{zI_m}]
-&=\sum_{n=0}^\infty a_n(m)z^n\\
-&=\sum_{n=0}^\infty z^n
+&=\sum_{n=0}^\infty a_n(m)z^n
+\\ &=\sum_{n=0}^\infty z^n
   \prod_{j=0}^{n-1}
   \frac{\Gamma(1+\alpha(jm+m-l))}
-       {\Gamma(1+\alpha(jm+m-l+1))}\\
-&=E_{\alpha,m,m-l}(z).
+       {\Gamma(1+\alpha(jm+m-l+1))}
+\\ &=E_{\alpha,m,m-l}(z).
 \end{aligned}
 \tag{6}
 ```

@@ -11,7 +11,7 @@ Quantitatively, write $H$ for a design incidence matrix, $G$ for any binary $r$-
 If $E>0$, then uniformly over these matrices,
 
 ```math
- \frac{\operatorname{per}\overline G}{\operatorname{per}\overline H}
+ \frac{\mathop{\mathrm{per}}\overline G}{\mathop{\mathrm{per}}\overline H}
  =1+(1+o(1))\frac{E}{4n^4}.                                      \tag{1}
 ```
 
@@ -19,13 +19,13 @@ The hypotheses allow both $r$ and $\lambda$ to grow. They do not cover the incid
 
 ## Matching moments and the required comparison
 
-For a binary bipartite graph write $R_j$ for its number of $j$-matchings and $F_X(x)=\sum_j(-1)^j R_j x^{n-j}$. Its roots belong to $[0,4r]$, and $p_l(X)$ denotes their $l$th power sum. The [matching-moment calculation](../extremal-graphs/complement_matching_moments.md) gives, with $\Delta$ denoting the value on $G$ minus that on $H$,
+For a binary bipartite graph write $R_j$ for its number of $j$-matchings and $F_X(x)=\sum_j(-1)^j R_j x^{n-j}$. Its roots belong to $[0,4r]$, and $p_l(X)$ denotes their $`l`$th power sum. The [matching-moment calculation](../extremal-graphs/complement_matching_moments.md) gives, with $\Delta$ denoting the value on $G$ minus that on $H$,
 
 ```math
  \Delta p_1=\Delta p_2=\Delta p_3=0,\qquad \Delta p_4=-E.          \tag{2}
 ```
 
-Indeed the fourth-moment difference is minus the difference of $\operatorname{tr}((XX^T)^2)$. The error matrix $D=GG^T-M_0$ has zero diagonal and margins, so $\operatorname{tr}(M_0D)=0$. The same squared error $E$ holds for column codegrees, since the Gram matrices have the same squared trace and the same margins and diagonal. In particular $H^TH=M_0$. The sum of absolute off-diagonal codegree deviations on either side is at most $E$, since they are integers.
+Indeed the fourth-moment difference is minus the difference of $`\mathop{\mathrm{tr}}((XX^T)^2)`$. The error matrix $D=GG^T-M_0$ has zero diagonal and margins, so $`\mathop{\mathrm{tr}}(M_0D)=0`$. The same squared error $E$ holds for column codegrees, since the Gram matrices have the same squared trace and the same margins and diagonal. In particular $H^TH=M_0$. The sum of absolute off-diagonal codegree deviations on either side is at most $E$, since they are integers.
 
 We establish an absolute constant $c$ for which, for $l\ge5$ and $E\ge1$,
 
@@ -33,17 +33,17 @@ We establish an absolute constant $c$ for which, for $l\ge5$ and $E\ge1$,
  |\Delta p_l|\le(cl)^{cl}\left(E r^{l-4}+\mathbf1_{l\ge9} n r^{l-5}\right).           \tag{3}
 ```
 
-All graph homomorphisms below respect a prescribed assignment of the two sides. Counts are labelled. Write $\operatorname{hom}(T,X)$ and $\operatorname{inj}(T,X)$ for homomorphisms and injective homomorphisms, respectively.
+All graph homomorphisms below respect a prescribed assignment of the two sides. Counts are labelled. Write $`\mathop{\mathrm{hom}}(T,X)`$ and $`\mathop{\mathrm{inj}}(T,X)`$ for homomorphisms and injective homomorphisms, respectively.
 
 ### Cycles and the six-vertex complete bipartite pattern
 
-For an even cycle of length $2b$, $b\ge2$, its homomorphism count is $\operatorname{tr}((XX^T)^b)$ (or the transposed version). The difference satisfies
+For an even cycle of length $2b$, $b\ge2$, its homomorphism count is $`\mathop{\mathrm{tr}}((XX^T)^b)`$ (or the transposed version). The difference satisfies
 
 ```math
- |\Delta\operatorname{hom}(C_{2b})|\le2^b E r^{2b-4}.             \tag{4}
+ |\Delta\mathop{\mathrm{hom}}(C_{2b})|\le2^b E r^{2b-4}.             \tag{4}
 ```
 
-Remove the common constant eigenvector and expand $( (r-\lambda)I+D)^b$. The linear trace vanishes and $|\operatorname{tr}D^j|\le E\|D\|_{\mathrm{op}}^{j-2}$ for $j\ge2$, with $\|D\|_{\mathrm{op}}\le r^2$ by the spectral range of the centered Gram matrix. Each term has power of $r$ at most $2b-4$. The design cycle count is $r^{2b}+(n-1)(r-\lambda)^b\le2r^{2b}$, using $n\le r^2$ and $b\ge2$. A connected unicyclic pattern of $e$ edges is this cycle with trees attached, each extra edge giving a factor $r$ for unrestricted homomorphisms. Its difference is at most $2^e E r^{e-4}$.
+Remove the common constant eigenvector and expand $( (r-\lambda)I+D)^b$. The linear trace vanishes and $`|\mathop{\mathrm{tr}}D^j|\le E\|D\|_{\mathrm{op}}^{j-2}`$ for $j\ge2$, with $`\|D\|_{\mathrm{op}}\le r^2`$ by the spectral range of the centered Gram matrix. Each term has power of $r$ at most $2b-4$. The design cycle count is $r^{2b}+(n-1)(r-\lambda)^b\le2r^{2b}$, using $n\le r^2$ and $b\ge2$. A connected unicyclic pattern of $e$ edges is this cycle with trees attached, each extra edge giving a factor $r$ for unrestricted homomorphisms. Its difference is at most $2^e E r^{e-4}$.
 
 We also need a bound on the possible variation of $K_{3,3}$. For $X$ let $T_{abc}=\sum_j X_{aj}X_{bj}X_{cj}$, including triples with repeated indices. Their mean is $\mu=r^3/n^2$. The sum of their squares is $\sum_{ij}((X^TX)_{ij})^3$ by exchanging the sums. On off-diagonal entries expand $(\lambda+d)^3$, using $\sum d=0$, $|d|\le r$ and $\sum d^2\le E$. Since $\lambda\le r^2/n$, subtracting $n^3\mu^2=r^6/n$ gives
 
@@ -58,7 +58,7 @@ This bound holds also for $H$ with error zero. Because $0\le T,\mu\le r$, expans
 For a connected simple bipartite pattern $T$ of $v$ vertices and $e\ge1$ edges, the following estimate holds (a fixed orientation throughout):
 
 ```math
- |\Delta\operatorname{inj}(T)|\le (c_1(e+1))^{c_1(e+1)}
+ |\Delta\mathop{\mathrm{inj}}(T)|\le (c_1(e+1))^{c_1(e+1)}
  \left[E r^{\max(v-3,0)}+\mathbf1_{e\ge9}(E r^{e-4}+n r^{e-5})\right].              \tag{5}
 ```
 
@@ -84,7 +84,7 @@ For $x\ge n/2$, expansion at infinity and (2) give
 
 Choose $L=\lceil10\log n\rceil$ and take the density exponent $C$ in the theorem sufficiently larger than the absolute $c$ in (3), for example $C=30(c+1)$. For $5\le l\le L$, division of the error bound by $E/x^4$ gives at most $(cl)^{cl}[(r/x)^{l-4}+\mathbf1_{l\ge9}(n/x)(r/x)^{l-5}]$. The powers in use are at least $l/5$. Since $r/x\le2/(\log n)^C$, their sum tends to zero by a geometric bound with ratio tending to zero. For $l>L$ the root bound gives $|\Delta p_l|\le2n(4r)^l$, so the remaining relative tail is $O(n^5(8r/n)^{L+1})=o(1)$ using $E\ge1$. These estimates are uniform on $x\ge n/2$. Also $E\le nr^3$ by regularity and the squared-trace formula. Hence $E/x^4=o(1)$ and $F_G/F_H=1+(1+o(1))E/(4x^4)$ there.
 
-The exact complementary permanent is $\int_0^\infty e^{-x}F_X(x)\,dx$ by rook inclusion-exclusion. As in the [integral comparison proof](../extremal-graphs/complement_matching_moments.md), the truncated weight for $H$ on $x\ge n/2$ has mass at least $n!e^{-O(r)-O(1)}$, $x/n\to1$ in probability under its normalization, and the integrals below $n/2$ for $G$ and $H$ are both $O(n!e^{-c_0n})$. These follow solely from the common root bound, the gamma density, and $r=o(n)$. Thus the expected $x^{-4}$ is $(1+o(1))n^{-4}$, and the discarded tails are negligible even for $E=1$. This proves (1) and strict separation. In this comparison $E$ is four times the excess number of four-cycles, as in the [codegree identities](ryser_cycle_reduction.md).
+The exact complementary permanent is $`\int_0^\infty e^{-x}F_X(x)\,dx`$ by rook inclusion-exclusion. As in the [integral comparison proof](../extremal-graphs/complement_matching_moments.md), the truncated weight for $H$ on $x\ge n/2$ has mass at least $n!e^{-O(r)-O(1)}$, $x/n\to1$ in probability under its normalization, and the integrals below $n/2$ for $G$ and $H$ are both $O(n!e^{-c_0n})$. These follow solely from the common root bound, the gamma density, and $r=o(n)$. Thus the expected $x^{-4}$ is $(1+o(1))n^{-4}$, and the discarded tails are negligible even for $E=1$. This proves (1) and strict separation. In this comparison $E$ is four times the excess number of four-cycles, as in the [codegree identities](ryser_cycle_reduction.md).
 
 The [source audit](ryser_source_audit.md) distinguishes this permanent conjecture from the unrelated Ryser–Woodall conjecture. Additional searches on complementary symmetric designs, minimum complementary permanents of projective planes, and matching moments retrieved the fixed-degree complementary *maximum* theory and the classical short-cycle formulas. No earlier theorem with this global comparison was identified. The graph-moment method itself has a substantial earlier literature, including [Wanless](https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/counting-matchings-and-treelike-walks-in-regular-graphs/7707C8F592F77FDEF4EC32727C496734). This bounded source check does not certify historical priority.
 
@@ -96,7 +96,7 @@ Even without the density hypothesis, every non-design at admissible parameters h
  e_4+2\sqrt{e_4}\ge r-\lambda.
 ```
 
-Let $D'=G^TG-M_0$. Both defects are centered and have squared Frobenius norm $E$. They satisfy $DG=GD'$ because $G$ commutes with $M_0$ by the constant margins. Let $s,s'$ count the nonzero rows of $D,D'$. Some nonzero row $z$ of $D$ has support at most $E/s$, since each nonzero entry is an integer. The vector $zG$ vanishes outside the $s'$ active columns of $D'$. By centering of $z$ and the binary entries of $G$, every coordinate of $zG$ has absolute value at most $\|z\|_1/2$. Hence
+Let $D'=G^TG-M_0$. Both defects are centered and have squared Frobenius norm $E$. They satisfy $DG=GD'$ because $G$ commutes with $M_0$ by the constant margins. Let $s,s'$ count the nonzero rows of $D,D'$. Some nonzero row $z$ of $D$ has support at most $E/s$, since each nonzero entry is an integer. The vector $zG$ vanishes outside the $s'$ active columns of $D'$. By centering of $z$ and the binary entries of $G$, every coordinate of $zG$ has absolute value at most $`\|z\|_1/2`$. Hence
 
 ```math
  (r-\lambda-\sqrt E)\|z\|_2^2\le zGG^Tz^T=\|zG\|_2^2

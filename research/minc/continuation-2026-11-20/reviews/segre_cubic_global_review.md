@@ -14,7 +14,7 @@ M=6\sum_{\mathcal M}\prod_{\{i,j\}\in\mathcal M}|\det(v_i,v_j)|^2,
 where the sum is over the 15 perfect matchings on six indices. The reviewed inequality is
 
 ```math
-M\le 2\operatorname{per}A-9h.
+M\le 2\mathop{\mathrm{per}}A-9h.
 \tag{1}
 ```
 
@@ -33,7 +33,7 @@ For unit vectors, let s_i∈R³ be the unit Bloch vector. Then
 Let S_r denote the sum over r disjoint unordered pairs of the product of their scalar products. The Gaussian/spherical moment formula for the permanent gives
 
 ```math
-P:=\operatorname{per}A=\frac34(105+35S_1+7S_2+S_3),
+P:=\mathop{\mathrm{per}}A=\frac34(105+35S_1+7S_2+S_3),
 ```
 
 while direct expansion of the 15 matching products gives
@@ -66,12 +66,12 @@ S=\sum_i s_i,\quad T=\sum_i s_is_i^T,\quad U=\sum_i s_i^{\otimes3},
 ```
 
 ```math
-L=\|S\|^2,\quad a=S^TTS,\quad b=S^TT^2S,\quad t_r=\operatorname{tr}(T^r),
+L=\|S\|^2,\quad a=S^TTS,\quad b=S^TT^2S,\quad t_r=\mathop{\mathrm{tr}}(T^r),
 ```
 
 ```math
 c=\langle U,S^{\otimes3}\rangle,\quad
-d=\langle U,\operatorname{Sym}(S\otimes T)\rangle,\quad u_2=\|U\|^2.
+d=\langle U,\mathop{\mathrm{Sym}}(S\otimes T)\rangle,\quad u_2=\|U\|^2.
 ```
 
 Sym is the average of the three distinct placements of S. Elementary pair counting yields
@@ -86,8 +86,8 @@ The exact third-moment identity is
 
 ```math
 \begin{aligned}
-S_3={}&u_2/3-d+c/3+b/2-6+L/2+L^2/8+L^3/48\\
-&-(1+L/4)a+(3/4+L/8)t_2-t_3/6.
+S_3={}&u_2/3-d+c/3+b/2-6+L/2+L^2/8+L^3/48
+\\ &-(1+L/4)a+(3/4+L/8)t_2-t_3/6.
 \end{aligned}
 \tag{4}
 ```
@@ -97,8 +97,8 @@ Here is an independent algebraic derivation of (4). For a real standard Gaussian
 ```math
 \begin{aligned}
 720e_6={}&p_1^6-15p_1^4p_2+45p_1^2p_2^2-15p_2^3
-+40p_1^3p_3-120p_1p_2p_3+40p_3^2\\
-&-90p_1^2p_4+90p_2p_4+144p_1p_5-120p_6.
++40p_1^3p_3-120p_1p_2p_3+40p_3^2
+\\ &-90p_1^2p_4+90p_2p_4+144p_1p_5-120p_6.
 \end{aligned}
 ```
 
@@ -125,23 +125,23 @@ Substitution gives (4), with no balancing assumption.
 Define the real symmetric cubic tensor
 
 ```math
-K=U-\frac32\operatorname{Sym}(S\otimes T)+\frac12S^{\otimes3}.
+K=U-\frac32\mathop{\mathrm{Sym}}(S\otimes T)+\frac12S^{\otimes3}.
 ```
 
 The identities
 
 ```math
-\|\operatorname{Sym}(S\otimes T)\|^2=(Lt_2+2b)/3,
+\|\mathop{\mathrm{Sym}}(S\otimes T)\|^2=(Lt_2+2b)/3,
 \quad
-\langle\operatorname{Sym}(S\otimes T),S^{\otimes3}\rangle=La
+\langle\mathop{\mathrm{Sym}}(S\otimes T),S^{\otimes3}\rangle=La
 ```
 
 give
 
 ```math
 \begin{aligned}
-E={}&\|K\|^2-42+\frac{63}2L+2L^2-\frac3{16}L^3\\
-&+\left(-\frac{19}2+\frac34L\right)a
+E={}&\|K\|^2-42+\frac{63}2L+2L^2-\frac3{16}L^3
+\\ &+\left(-\frac{19}2+\frac34L\right)a
 +\left(\frac{11}2-\frac38L\right)t_2-\frac12t_3.
 \end{aligned}
 \tag{5}
@@ -150,13 +150,13 @@ E={}&\|K\|^2-42+\frac{63}2L+2L^2-\frac3{16}L^3\\
 The trace vector of K is
 
 ```math
-\operatorname{Tr}K=\bigl((L/2-2)I-T\bigr)S.
+\mathop{\mathrm{Tr}}K=\bigl((L/2-2)I-T\bigr)S.
 ```
 
 For every real symmetric cubic tensor in dimension three,
 
 ```math
-\|K\|^2\ge\frac35\|\operatorname{Tr}K\|^2.
+\|K\|^2\ge\frac35\|\mathop{\mathrm{Tr}}K\|^2.
 \tag{6}
 ```
 
@@ -166,8 +166,8 @@ Equations (5) and (6) imply E≥R, where
 
 ```math
 \begin{aligned}
-R={}&-42+\frac{339}{10}L+\frac45L^2-\frac3{80}L^3\\
-&+\left(-\frac{71}{10}+\frac3{20}L\right)a
+R={}&-42+\frac{339}{10}L+\frac45L^2-\frac3{80}L^3
+\\ &+\left(-\frac{71}{10}+\frac3{20}L\right)a
 +\left(\frac{11}2-\frac38L\right)t_2-\frac12t_3+\frac35b.
 \end{aligned}
 \tag{7}
@@ -189,10 +189,10 @@ For yz=0, they are
 
 ```math
 \begin{aligned}
-b_0&=2(x^2-6x+24),\\
-b_1&=(x^2-216x+1464)/5,\\
-b_2&=-8(x^2+6x-552)/5,\\
-b_3&=-(17x^2-444x-348)/5.
+b_0&=2(x^2-6x+24),
+\\ b_1&=(x^2-216x+1464)/5,
+\\ b_2&=-8(x^2+6x-552)/5,
+\\ b_3&=-(17x^2-444x-348)/5.
 \end{aligned}
 ```
 
@@ -217,9 +217,9 @@ The remaining three coefficient polynomials have degree-three Bernstein coeffici
 
 ```math
 \begin{aligned}
-b_1:&\ (1779/5,1002/5,612/5,204/5),\\
-b_2:&\ (5136/5,885,4128/5,768),\\
-b_3:&\ (1473/5,1476/5,384,480).
+b_1:&\ (1779/5,1002/5,612/5,204/5),
+\\ b_2:&\ (5136/5,885,4128/5,768),
+\\ b_3:&\ (1473/5,1476/5,384,480).
 \end{aligned}
 ```
 
@@ -252,7 +252,7 @@ Thus |F_i|²≤(1/2)Σ_j|F_j|². The additional relation Σ_iF_i=0 is not needed
 Under the separately checked coordinate normalization f_i=(3/2)|F_i|² and Σ_i f_i=M, (1) yields
 
 ```math
-f_i\le\frac M2\le P-\frac92h<P.
+f_i\le\frac M2\le P-\frac92h\lt P.
 ```
 
 This rules out that exceptional-S5 sign-character counterexample channel on rank-two six-vector Gram matrices. It is not a general solution of Minc Problem 2 or Conjecture 42.

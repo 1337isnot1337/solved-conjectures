@@ -44,7 +44,7 @@ Allow finitely many pairs consisting of a number field and a character, with pos
 
 ~~~math
 \mathcal G(x)=\sum_{i=1}^r a_i\,
-\operatorname{Re}\mathcal G_{\eta_i}(x),
+\mathop{\mathrm{Re}}\mathcal G_{\eta_i}(x),
 \qquad a_i>0.
 \tag{3}
 ~~~
@@ -250,8 +250,8 @@ Using the archive's notation for its finite Tate-Selmer lengths, VVle(E,t,B) req
 
 ~~~math
 \sum_{\ell\in S}\log\ell
-\sum_{1\le j<t}
-\operatorname{shaLen}_{E,\ell}(j)
+\sum_{1\le j\lt t}
+\mathop{\mathrm{shaLen}}_{E,\ell}(j)
 \le B.
 \tag{12}
 ~~~
@@ -295,11 +295,11 @@ The exact prime-pair conditions include q congruent to three modulo eight, d con
 [GlobalTheoremInputs.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Formalism/SharpRestriction/GlobalTheoremInputs.lean) defines LinkN_at by an inequality of the form
 
 ~~~math
-\operatorname{etaSum}(L,j)
+\mathop{\mathrm{etaSum}}(L,j)
 \le d_{Z,0}(j)
 \left[
 C\left(fmbL^2+(\log x)^2N_c\right)
-+\sum_\ell \operatorname{vvTerm}(D,\ell)
++\sum_\ell \mathop{\mathrm{vvTerm}}(D,\ell)
 \right].
 \tag{14}
 ~~~
@@ -373,11 +373,11 @@ Only the stated scope and provenance were inspected for this note. Their arithme
 For a specified non-Dirichlet finite Hecke character η, it is enough to prove the following estimate directly, with any fixed λ greater than one:
 
 ~~~math
-\forall\varepsilon>0\ \exists C_{\eta,\varepsilon}\ 
-\forall Y_0\ \exists Y\ge Y_0\ 
-\forall x\in[Y,Y^\lambda]:
+\forall\varepsilon>0\ \exists C_{\eta,\varepsilon}
+\ \forall Y_0\ \exists Y\ge Y_0
+\ \forall x\in[Y,Y^\lambda]:
 \quad
-\operatorname{Re}\mathcal G_\eta(x)
+\mathop{\mathrm{Re}}\mathcal G_\eta(x)
 \le C_{\eta,\varepsilon}x^{1/2+\varepsilon}.
 \tag{17}
 ~~~

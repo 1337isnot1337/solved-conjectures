@@ -31,8 +31,8 @@ Throughout, t is an integer with t≥1. For a finite set S of rational primes, s
 
 ~~~math
 W_S(E,t)=\sum_{\ell\in S}\log\ell
-       \sum_{1\le j<t}
-        \operatorname{length}_{\mathbf Z_\ell}\mathcal S_\ell(E,j).
+       \sum_{1\le j\lt t}
+        \mathop{\mathrm{length}}_{\mathbf Z_\ell}\mathcal S_\ell(E,j).
 \tag{1.1}
 ~~~
 
@@ -48,11 +48,11 @@ as coefficient module. Its normalized length is
 
 ~~~math
 s_\ell(E,j,\eta)=
- \frac{\operatorname{length}_{O_\ell}
+ \frac{\mathop{\mathrm{length}}_{O_\ell}
               \mathcal S_\ell(E,j,\eta)}{e_\ell},
 \qquad
 W_{S,\eta}(E,t)=
- \sum_{\ell\in S}\log\ell\sum_{1\le j<t}s_\ell(E,j,\eta).
+ \sum_{\ell\in S}\log\ell\sum_{1\le j\lt t}s_\ell(E,j,\eta).
 \tag{1.2}
 ~~~
 
@@ -81,7 +81,7 @@ VWinAt demands the bound throughout selected intervals [Y,Y²], with X^(1/J)≤Y
 ~~~math
 s_\ell(E,j,\eta)
  \le
- \operatorname{length}_{\mathbf Z_\ell}\mathcal S_\ell(L,j)
+ \mathop{\mathrm{length}}_{\mathbf Z_\ell}\mathcal S_\ell(L,j)
       +v_\ell(d).
 \tag{2.1}
 ~~~
@@ -102,7 +102,7 @@ If L is the kernel field of a character of order dividing a fixed integer m, one
 ~~~math
 \ker\bigl(H^1(E,M)\longrightarrow H^1(L,M)\bigr)
  \simeq
- H^1\bigl(\operatorname{Gal}(L/E),M^{G_L}\bigr).
+ H^1\bigl(\mathop{\mathrm{Gal}}(L/E),M^{G_L}\bigr).
 \tag{2.3}
 ~~~
 
@@ -124,7 +124,7 @@ H^1(\langle\sigma\rangle,A)
 This is a cyclic O_ℓ-subquotient of A. It is killed by d: on ker N, the identity N−d=(σ−1)P(σ) expresses multiplication by d as a coboundary. Hence
 
 ~~~math
-\operatorname{length}_{O_\ell}H^1(\langle\sigma\rangle,A)
+\mathop{\mathrm{length}}_{O_\ell}H^1(\langle\sigma\rangle,A)
  \le v_{\varpi_\ell}(d)=e_\ell v_\ell(d).
 \tag{2.4}
 ~~~
@@ -183,7 +183,7 @@ Because [A_h:Q]=2^h,
 For fixed K there is a constant C_K such that
 
 ~~~math
-\log\operatorname{rd}(E_x)
+\log\mathop{\mathrm{rd}}(E_x)
  \le C_K+\log\bigl(2^{h(x)+2}qd\bigr).
 \tag{3.3}
 ~~~
@@ -282,8 +282,8 @@ some Y satisfies X^(1/J)≤Y, Y²≤X, and throughout x∈[Y,Y²],
 
 ~~~math
 \sum_{\ell\in P}\log\ell
- \sum_{1\le j<t(x)}
- \operatorname{length}_{\mathbf Z_\ell}\mathcal S_\ell(L_x,j)
+ \sum_{1\le j\lt t(x)}
+ \mathop{\mathrm{length}}_{\mathbf Z_\ell}\mathcal S_\ell(L_x,j)
  \le \exp(x^{4\varepsilon/5})
 \quad\text{if }t(x)\le x^{C_t}.
 \tag{5.2}
@@ -355,7 +355,7 @@ Let Λ=Z_ℓ[[T]], let u∈1+ℓZ_ℓ (use u∈1+4Z_2 at 2), and let P be a Λ-m
 It is a monic distinguished polynomial of degree ℓ^r. Therefore Λ/(ω_(r,j)) is free of rank ℓ^r over Z_ℓ, and
 
 ~~~math
-\operatorname{length}_{\mathbf Z_\ell}
+\mathop{\mathrm{length}}_{\mathbf Z_\ell}
  \bigl(P/\omega_{r,j}P\bigr)
  \le a r_0\ell^r.
 \tag{6.1}
@@ -368,9 +368,9 @@ If r=O(log x) and a r_0 is fixed, (6.1), even after summing j<x^401, is polynomi
 For an exact sequence 0→P→X→Q→0, coinvariants give a right-exact sequence, so, when the quotients are finite,
 
 ~~~math
-\operatorname{length}(X/\omega X)
- \le \operatorname{length}(P/\omega P)
-       +\operatorname{length}(Q/\omega Q).
+\mathop{\mathrm{length}}(X/\omega X)
+ \le \mathop{\mathrm{length}}(P/\omega P)
+       +\mathop{\mathrm{length}}(Q/\omega Q).
 \tag{6.2}
 ~~~
 
@@ -425,7 +425,7 @@ Because F_0 contains i, the extension F_\infty/F_0 is its cyclotomic Z_2-extensi
 
 ~~~math
 g=\dim_{\mathbf F_2}
- \operatorname{Hom}_{\mathrm{cont}}
+ \mathop{\mathrm{Hom}}_{\mathrm{cont}}
  \bigl(X_{\mathrm{unr}}(F_\infty),\mathbf F_2\bigr)
  <\infty.
 \tag{8.1}
@@ -467,7 +467,7 @@ Let G_S be the Galois group of the maximal pro-2 extension of F_\infty unramifie
 ~~~math
 H^1(G_S,\mathbf F_2)
  \longrightarrow
- \bigoplus_{v\in S}\operatorname{Hom}_{\mathrm{cont}}(I_v,\mathbf F_2).
+ \bigoplus_{v\in S}\mathop{\mathrm{Hom}}_{\mathrm{cont}}(I_v,\mathbf F_2).
 ~~~
 
 Its kernel consists exactly of the everywhere unramified characters and therefore has dimension g. Every v∈S has odd residue characteristic. Its pro-2 inertia quotient is tame and procyclic, so each summand has dimension at most one. Consequently

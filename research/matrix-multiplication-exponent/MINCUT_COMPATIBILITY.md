@@ -132,14 +132,14 @@ Therefore adding all the weighted graph min-cut inequalities considered here, ev
 The same assignment also satisfies all of Zhou's path-strengthened completely-positive graph upper bounds. On every finite enlargement, the companion scalar theorem gives nonnegative symmetric distances, triangle inequalities, and copositivity of `J-2D` when the full unit charge is one. Thus `D` is a feasible point in the maximization defining `U_CP^Delta(W)`, and for every nonnegative weight matrix,
 
 ```math
-\sum_{i<j}W_{ij}D_{ij}\le U_{\mathrm{CP}}^{\Delta}(W).
+\sum_{i\lt j}W_{ij}D_{ij}\le U_{\mathrm{CP}}^{\Delta}(W).
 ```
 
 Together with the finite metric theorem for `P=V`, this gives
 
 ```math
 \mathop{\mathrm{MinCut}}(W)
-\le\sum_{i<j}W_{ij}D_{ij}
+\le\sum_{i\lt j}W_{ij}D_{ij}
 \le U_{\mathrm{CP}}^{\Delta}(W)
 ```
 
@@ -180,10 +180,10 @@ If `H` meets all three caps, select maximizing points `x_A,x_B,x_C`, and let the
 
 ```math
 \begin{aligned}
-g(H)&\ge\frac49\bigl(d(x_A,x_B)+d(x_B,x_C)+d(x_C,x_A)\bigr)\\
-&\ge\frac49\left(\frac94-2(u_A+u_B+u_C)\right)\\
-&=1-\frac89(u_A+u_B+u_C)\\
-&\ge1-(u_A+u_B+u_C)=\delta(H).
+g(H)&\ge\frac49\bigl(d(x_A,x_B)+d(x_B,x_C)+d(x_C,x_A)\bigr)
+\\ &\ge\frac49\left(\frac94-2(u_A+u_B+u_C)\right)
+\\ &=1-\frac89(u_A+u_B+u_C)
+\\ &\ge1-(u_A+u_B+u_C)=\delta(H).
 \end{aligned}
 ```
 
@@ -213,4 +213,4 @@ In particular, all-party hypergraph min-cut lower bounds also leave the normaliz
 
 ## A stronger scalar witness
 
-[TRIPOD_COUNTERMODEL.md](TRIPOD_COUNTERMODEL.md) supplies a different normalized perimeter-$9/4$ scalar model on a three-arm metric tree. Every terminal subset in that model is a tree metric, so the tree-terminal theorem verifies all hypergraph mincut tests simultaneously. That model also satisfies intersecting submodularity of partial-unit charges and the full crossing and coherent-extension requirements. It is a scalar countermodel, with no general tensor spectral point constructed.
+[TRIPOD_COUNTERMODEL.md](TRIPOD_COUNTERMODEL.md) supplies a different normalized perimeter-$`9/4`$ scalar model on a three-arm metric tree. Every terminal subset in that model is a tree metric, so the tree-terminal theorem verifies all hypergraph mincut tests simultaneously. That model also satisfies intersecting submodularity of partial-unit charges and the full crossing and coherent-extension requirements. It is a scalar countermodel, with no general tensor spectral point constructed.

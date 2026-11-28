@@ -123,8 +123,8 @@ After division by $`q-1`$, this is exactly
 
 ```math
 \begin{cases}
-q^{a(u)},&\delta_u=0,\\
-t_{\ell(u)},&\delta_u=1.
+q^{a(u)},&\delta_u=0,
+\\ t_{\ell(u)},&\delta_u=1.
 \end{cases}
 \tag{6}
 ```

@@ -4,14 +4,14 @@ Let $H(n)$ be the probability of never hitting 1, extended to even integers by $
 
 ## Two starting points whose endpoint distributions approach each other
 
-Write $P^t_x$ for the law after $t$ moves from $x$, with 1 absorbing. Fix $s\in\{-1,1\}$, an integer $a$, a nonnegative integer $b$, and an arbitrary positive integer $n$. Set
+Write $P^t_x$ for the law after $t$ moves from $x$, with 1 absorbing. Fix $`s\in\{-1,1\}`$, an integer $a$, a nonnegative integer $b$, and an arbitrary positive integer $n$. Set
 
 ```math
 x=2^j n+s,\qquad y=2^{j+a}3^b n+s,\qquad
 t=\left\lfloor\frac{\min(j,j+a)-1}{2}\right\rfloor,\qquad m=t-b.
 ```
 
-Whenever $m\ge0$, take $M_m=2^{-m}\binom m{\lfloor m/2\rfloor}$ and let $S_b$ be a sum of $b$ independent uniform choices from $\{1,2\}$. Then
+Whenever $m\ge0$, take $M_m=2^{-m}\binom m{\lfloor m/2\rfloor}$ and let $S_b$ be a sum of $b$ independent uniform choices from $`\{1,2\}`$. Then
 
 ```math
 d_{\rm TV}(P_x^t,P_y^m)\le \min\{1,M_m\,\mathbb E|a+S_b|\}.

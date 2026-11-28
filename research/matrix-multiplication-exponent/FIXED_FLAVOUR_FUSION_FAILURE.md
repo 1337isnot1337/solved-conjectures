@@ -74,8 +74,8 @@ For a fixed h define
  &=\sum_{a_1,\ldots,a_k}
      \epsilon_A(a_1,\ldots,a_k)
      \prod_{t\in S}P_{a_t,t}
-     \prod_{t\in T}\delta_{a_t,h_t},\\
-\mathcal B_{S,h}^{B}
+     \prod_{t\in T}\delta_{a_t,h_t},
+\\ \mathcal B_{S,h}^{B}
  &=\sum_{b_1,\ldots,b_k}
      \epsilon_B(b_1,\ldots,b_k)
      \prod_{t\in T}R_{b_t,t}
@@ -87,8 +87,8 @@ The first depends only on h_T and X derivatives; the second depends
 only on h_S and Y derivatives. Set
 
 ```math
-\mathcal D_t=\begin{cases}R_{h_t,t}&t\in S,\\
-                          P_{h_t,t}&t\in T.
+\mathcal D_t=\begin{cases}R_{h_t,t}&t\in S,
+                          \\ P_{h_t,t}&t\in T.
              \end{cases}
 ```
 
@@ -142,8 +142,8 @@ completing the two ordered row lists. Consequently define
 G_S^{A,I}
  &=\sum_{h_T}
     \mathcal A_{S,h}^{A}
-    \left(\prod_{t\in T}P_{h_t,t}\right)\Delta_I(X),\\
-J_S^{J,B}
+    \left(\prod_{t\in T}P_{h_t,t}\right)\Delta_I(X),
+\\ J_S^{J,B}
  &=\sum_{h_S}
     \left[\left(\prod_{t\in S}R_{h_t,t}\right)
                     \Delta_J(Y)\right]

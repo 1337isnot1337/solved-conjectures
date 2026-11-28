@@ -8,7 +8,7 @@ A proposed converse inference was that, if the expected sum of the three disagre
 
 ## Exact coupling
 
-Choose one of the following rows with positive probabilities $1-2\epsilon,\epsilon,\epsilon$, then choose $a\in\{0,\ldots,5\}$ uniformly and use the joint hue tuple $(a,b(a),c(a))$.
+Choose one of the following rows with positive probabilities $1-2\epsilon,\epsilon,\epsilon$, then choose $`a\in\{0,\ldots,5\}`$ uniformly and use the joint hue tuple $(a,b(a),c(a))$.
 
 | Choice | $b(0)\dots b(5)$ | $c(0)\dots c(5)$ | Disagreements summed over the six values of $a$ |
 | --- | --- | --- | --- |
@@ -17,11 +17,11 @@ Choose one of the following rows with positive probabilities $1-2\epsilon,\epsil
 | 3 | 432105 | 105432 | 16 |
 
 These are permutations, so all marginals are uniform. The expected disagreement sum is $3-2\epsilon$, arbitrarily close to three. The unequal pair supports, in positions $12,23,31$, are respectively
-\[
+```math
 \{04,13,15,24,25\},\quad
 \{03,05,14,15,23,24,25\},\quad
 \{01,02,12,25,34,35,45\}.
-\]
+```
 No disjoint triple of pairs covers all six hues. At the same time every two-coordinate bipartite overlap graph (the two six-label copies joined by the positive joint pairs, including equal pairs) is connected. Thus neither coordinate pair has any common nontrivial coarsened partition, even if the two coarsenings may assign different label subsets to their classes: any such common partition would be constant on each connected component of that overlap graph.
 
 The [small exact check](check_three_root_obstruction.py) checks disjointness and connectedness directly, without using an optimizer. This does not contradict global row structure that uses relations between several triples of roots or the symmetry of the full underlying graphon. It says we cannot force any exact row atom from a single high-disagreement triple and its forbidden matching test alone. Coordination: [#870](https://github.com/1337isnot1337/solved-conjectures/issues/870).

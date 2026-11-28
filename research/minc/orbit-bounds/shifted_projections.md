@@ -23,8 +23,8 @@ $b>0$ and $a\ge0$. Write $s=\mathrm{tr}(C)/n$ and let $X$ have the
 exponential distribution of mean one. If $s>0$, then
 
 ```math
-\mathop{\mathrm{per}} A\ \le\
-\left[\mathbb E(a+bsX)^{1/s}\right]^{ns}. \tag{1}
+\mathop{\mathrm{per}} A\ \le
+\ \left[\mathbb E(a+bsX)^{1/s}\right]^{ns}. \tag{1}
 ```
 
 For a nonscalar positive semidefinite matrix one can take $a$ to be its

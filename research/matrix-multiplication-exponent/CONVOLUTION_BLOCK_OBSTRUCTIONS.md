@@ -7,7 +7,7 @@ Status: exact obstructions to one proposed degeneration. The cut-rank obstructio
 Let
 
 ```math
-Q_m=\sum_{0\le i,j,k<m}e_i^A e_j^B e_k^C e_{i+j+k}^D.
+Q_m=\sum_{0\le i,j,k\lt m}e_i^A e_j^B e_k^C e_{i+j+k}^D.
 ```
 
 In three tensor copies, write the input coordinates as

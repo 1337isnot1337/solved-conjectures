@@ -17,8 +17,8 @@ be a finite family of complex polynomials, each with circuit size at most L. The
 ```math
 y=f(x)
 \quad\Longleftrightarrow\quad
-\exists c\ \forall\beta\in B\ \exists z_\beta\
-\bigwedge_j E_{\beta,j}(x,y,c,z_\beta)=0.             \tag{1}
+\exists c\ \forall\beta\in B\ \exists z_\beta
+\ \bigwedge_j E_{\beta,j}(x,y,c,z_\beta)=0.             \tag{1}
 ```
 
 The proposed conclusion is
@@ -126,15 +126,15 @@ For each possible choice of J, iota_*, and the I_beta, form the following comple
 ```math
 \begin{aligned}
 F_{\beta,i}(x,v,w_\beta)-\rho_{\beta,i}-t a_{\beta,i}&=0
-&& (\beta\in J,\ i\in I_\beta),\\
-B_*(v)-R_*^2-t a_*&=0
-&& (\iota_*=1),\\
-\sum_{\beta\in J}\sum_{i\in I_\beta}
+&& (\beta\in J,\ i\in I_\beta),
+\\ B_*(v)-R_*^2-t a_*&=0
+&& (\iota_*=1),
+\\ \sum_{\beta\in J}\sum_{i\in I_\beta}
 \lambda_{\beta,i}\frac{\partial F_{\beta,i}}{\partial v_a}
 +\lambda_*\frac{\partial B_*}{\partial v_a}
 &=\delta_{a1}
-&& (1\le a\le N),\\
-\sum_{i\in I_\beta}
+&& (1\le a\le N),
+\\ \sum_{i\in I_\beta}
 \lambda_{\beta,i}\frac{\partial F_{\beta,i}}
                          {\partial (w_\beta)_a}
 &=0
@@ -200,8 +200,8 @@ Suppose instead that
 ```math
 (x,y)\in G_f
 \quad\Longleftrightarrow\quad
-\exists c\in\mathbb C^p\ \forall b\in\{0,1\}^m\
-\exists z\in\mathbb C^q\ V(x,y,c,b,z)=1,             \tag{11}
+\exists c\in\mathbb C^p\ \forall b\in\{0,1\}^m
+\ \exists z\in\mathbb C^q\ V(x,y,c,b,z)=1,             \tag{11}
 ```
 
 where V is a deterministic complex BSS predicate of worst-case cost T, with arithmetic, defined division, and equality branches.

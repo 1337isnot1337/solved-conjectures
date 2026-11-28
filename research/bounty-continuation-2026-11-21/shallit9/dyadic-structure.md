@@ -44,8 +44,8 @@ For any sequence $`u`$, write $`H_m^u(t)=(u_{t+i+j})_{0\le i,j\lt m}`$. Set $`b_
 ```math
 H_{2m}^a(2t)\sim
 \begin{pmatrix}
-H_m^b(t)&H_m^c(t)\\
-H_m^c(t)&H_m^b(t+1)
+H_m^b(t)&H_m^c(t)
+\\ H_m^c(t)&H_m^b(t+1)
 \end{pmatrix},
 ```
 
@@ -54,8 +54,8 @@ and
 ```math
 H_{2m}^a(2t+1)\sim
 \begin{pmatrix}
-H_m^c(t)&H_m^b(t+1)\\
-H_m^b(t+1)&H_m^c(t+1)
+H_m^c(t)&H_m^b(t+1)
+\\ H_m^b(t+1)&H_m^c(t+1)
 \end{pmatrix}.
 ```
 

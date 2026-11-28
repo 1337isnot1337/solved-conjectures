@@ -61,8 +61,8 @@ By (1),
 ```math
 \begin{aligned}
 E_r(A\cap[0,x])^{1/(2r)}
-&\le C^{1/(2r)}\sum_{j\le J}M_j^{1/(2r)}\\
-&\le\frac{C^{1/(2r)}M_J^{1/(2r)}}
+&\le C^{1/(2r)}\sum_{j\le J}M_j^{1/(2r)}
+\\ &\le\frac{C^{1/(2r)}M_J^{1/(2r)}}
  {1-\lambda^{-1/(2r)}}.
 \end{aligned}
 ```
@@ -104,9 +104,9 @@ For the energy estimate, choose a single representative in $`A\cap[0,2N]`$ for e
 ```math
 \begin{aligned}
 E_r^{(N)}(B_N)
-&\le(2r+1)E_r(F_N)\\
-&\le(2r+1)E_r(A\cap[0,2N])\\
-&\le(2r+1)\sum_{n\le2rN}f_{r,A}(n)^2=O_r(N).
+&\le(2r+1)E_r(F_N)
+\\ &\le(2r+1)E_r(A\cap[0,2N])
+\\ &\le(2r+1)\sum_{n\le2rN}f_{r,A}(n)^2=O_r(N).
 \end{aligned}                                                     \tag{5}
 ```
 

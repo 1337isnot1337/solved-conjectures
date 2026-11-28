@@ -6,9 +6,9 @@ Date: 21 November 2026. These entries are exclusions and research directions, no
 
 The universal rising-binomial assertion in Conjecture 1.1(i) of [Sun's paper](https://arxiv.org/html/2505.02767v4) is already false. [Qiping Zhou's answer to Sun's original MathOverflow question](https://mathoverflow.net/questions/479301/on-the-polynomials-sum-k-0n-binomnkkm-qk), dated 24 July 2026, exhibits exponent 5 and index 7. Exact independent arithmetic gives
 
-$$
+```math
 28^5+63^5+45^5-2\cdot36^5-8^{10}=-499140.
-$$
+```
 
 This is the coefficient of $q^2$ in the relevant log-convexity difference. It is a complete prior disproof of the universal statement. Sun's subsequent repair to exponents 2, 3, and 4 is also contradicted at exponent 4 by the earlier reader proof displayed on the [MathDB page](https://mathdb.com/p/368293/sun-s-q-log-convexity-conjecture-for-binomial-sums-and-the-p). None of this counts as new work here. The paper's cubic-binomial and double-sum clauses have different scope and are not resolved by this obstruction.
 

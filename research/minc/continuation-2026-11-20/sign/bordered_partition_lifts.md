@@ -82,8 +82,8 @@ Set f_m=P_m/(−2)^|m|, including f_0=1. Multiplying (3) by its denominator and 
 \begin{aligned}
 4f_{\boldsymbol m}={}&4
 -\sum_i\sum_{r=1}^{m_i}\binom{m_i}{r}(2+2^r)
-f_{\boldsymbol m-re_i}\\
-&-2\sum_{i<j}\sum_{r=1}^{m_i}\sum_{t=1}^{m_j}
+f_{\boldsymbol m-re_i}
+\\ &-2\sum_{i\lt j}\sum_{r=1}^{m_i}\sum_{t=1}^{m_j}
 \binom{m_i}{r}\binom{m_j}{t}
 f_{\boldsymbol m-re_i-te_j}.
 \end{aligned}
@@ -95,7 +95,7 @@ To check the coefficients, let q=2−s+Σe^(−2x_i). The nonconstant derivative
 For one block, F_1(x)=sech²x. For two blocks,
 
 ```math
-F_2(x,y)=\operatorname{sech}^2(x-y).
+F_2(x,y)=\mathop{\mathrm{sech}}^2(x-y).
 \tag{6}
 ```
 
@@ -132,7 +132,7 @@ A'=\begin{pmatrix}A&\mathbf1\\1\quad w_1\ \cdots\ w_N&-1\end{pmatrix}.
 Expanding its last row gives
 
 ```math
-\operatorname{per}A'=\sum_{j=1}^N w_jP_{\{j\}},
+\mathop{\mathrm{per}}A'=\sum_{j=1}^N w_jP_{\{j\}},
 \qquad\det A'=-2\det A.
 \tag{7}
 ```
@@ -169,13 +169,13 @@ For concreteness, the wider family contains a matrix equivalent to Wanless's exi
 
 ```math
 \begin{pmatrix}
-1&0&0&0&0&0&0\\
-1&1&0&0&0&0&0\\
-1&1&1&0&0&0&0\\
-1&1&0&1&0&0&0\\
-1&0&1&0&1&0&0\\
-1&0&1&1&0&1&0\\
-0&1&1&1&0&0&1
+1&0&0&0&0&0&0
+\\ 1&1&0&0&0&0&0
+\\ 1&1&1&0&0&0&0
+\\ 1&1&0&1&0&0&0
+\\ 1&0&1&0&1&0&0
+\\ 1&0&1&1&0&1&0
+\\ 0&1&1&1&0&0&1
 \end{pmatrix}.
 ```
 

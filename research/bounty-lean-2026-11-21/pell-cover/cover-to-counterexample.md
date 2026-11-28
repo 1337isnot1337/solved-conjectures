@@ -7,7 +7,7 @@ and this lemma is not claimed to be new or to resolve the bounty problem.
 
 Let $P_0=0$, $P_1=1$, and $P_{j+1}=2P_j+P_{j-1}$. Suppose we have distinct
 odd primes $q_1,\ldots,q_r$, residues $a_i\pmod{q_i}$, a parity
-$\epsilon\in\{0,1\}$, and a common even period $L$ for the Pell sequences
+$`\epsilon\in\{0,1\}`$, and a common even period $L$ for the Pell sequences
 modulo all the $q_i$. Require the exact finite covering condition
 
 ```math
@@ -64,7 +64,7 @@ $n\le X$ has $s,t\le1+\log_2 X$. Since $K+1\le2K$,
 \le D-1+2\log_2D\le3D-1.
 ```
 
-Therefore $s,t\in\{0,\ldots,3D\}$. There are at most
+Therefore $`s,t\in\{0,\ldots,3D\}`$. There are at most
 $r(3D+1)^2\le16rD^2<K$ triples $(i,s,t)$, hence fewer than $K$
 exceptional integers. At least one candidate remains.
 

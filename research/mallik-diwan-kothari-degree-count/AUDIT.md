@@ -2,7 +2,7 @@
 
 ## Statement and prior work
 
-Amit Kumar Mallik, Ajit A. Diwan and Nishad Kothari, *Extremal minimal bipartite matching covered graphs*, Journal of Combinatorics 17 (2026), 559–606, [DOI 10.4310/joc.260511231633](https://doi.org/10.4310/joc.260511231633), [arXiv:2404.06445v3, §8](https://arxiv.org/html/2404.06445v3#S8). The target is Conjecture 8.9, the main conjecture in §8.1. It relates the number of degree-$k+1$ vertices to both the order and the number of edges. It has no large-order restriction.
+Amit Kumar Mallik, Ajit A. Diwan and Nishad Kothari, *Extremal minimal bipartite matching covered graphs*, Journal of Combinatorics 17 (2026), 559–606, [DOI 10.4310/joc.260511231633](https://doi.org/10.4310/joc.260511231633), [arXiv:2404.06445v3, §8](https://arxiv.org/html/2404.06445v3#S8). The target is Conjecture 8.9, the main conjecture in §8.1. It relates the number of degree-$`k+1`$ vertices to both the order and the number of edges. It has no large-order restriction.
 
 - The source's Theorem 8.25 gives equality examples from isomorphic leaf matching on trees. Its star case uses the two complete bipartite blocks and a low-to-low perfect matching. Its Lemma 8.20 guarantees only $t-k$-extendability for this unaugmented block graph when $k\lt t\lt 2k$: indeed the whole high block fails Plummer's $k$-extendability test. The counterexample adds precisely the missing $2k-t$ high-to-high edges as a matching. Each is then indispensable. The original equality construction is credited to the proposers.
 - As the source notes, the lower bound in Conjecture 8.10 follows from 8.9, but the converse was not stated. All our examples satisfy 8.10, which asks for at least $n/2+2$ vertices of degree $k+1$.

@@ -4,7 +4,7 @@
 
 ## Target and sources
 
-A graph is $t$-tough if $|S|\ge t\,c(G-S)$ whenever deleting $S$ leaves more than one connected component. Chvátal’s conjecture asks whether there is an absolute $t$ for which every $t$-tough finite graph on at least three vertices has a Hamilton cycle. The separate threshold-two assertion was refuted by Bauer, Broersma and Veldman. Shan’s November 2026 preprint gives a threshold for sufficiently dense almost-regular graphs and leaves the unrestricted question open. [Chvátal, 1973](https://doi.org/10.1016/0012-365X(73)90138-6) · [Bauer–Broersma–Veldman](https://ris.utwente.nl/ws/portalfiles/portal/6708998/Bauer00not.pdf) · [Shan, 2026](https://arxiv.org/abs/2611.12519)
+A graph is $t$-tough if $`|S|\ge t\,c(G-S)`$ whenever deleting $S$ leaves more than one connected component. Chvátal’s conjecture asks whether there is an absolute $t$ for which every $t$-tough finite graph on at least three vertices has a Hamilton cycle. The separate threshold-two assertion was refuted by Bauer, Broersma and Veldman. Shan’s November 2026 preprint gives a threshold for sufficiently dense almost-regular graphs and leaves the unrestricted question open. [Chvátal, 1973](https://doi.org/10.1016/0012-365X(73)90138-6) · [Bauer–Broersma–Veldman](https://ris.utwente.nl/ws/portalfiles/portal/6708998/Bauer00not.pdf) · [Shan, 2026](https://arxiv.org/abs/2611.12519)
 
 The starting point is Ganian’s quotient characterization of Hamilton cycles for neighborhood diversity. The work here supplies a toughness-based way to find a spanning connected set of class transitions and fill the remaining multiplicities, for arbitrary class sizes. The November 24, 2026 source check did not establish priority for these sufficient conditions. [Ganian](https://arxiv.org/abs/1201.3091)
 
@@ -30,7 +30,7 @@ w'(N(I))-w'(I)
 \ \ge\ (t-1)w(I)-2(q-1)+2D(I).
 ```
 
-Here $D(I)+D(N(I))\le2(q-1)$ because the sets are disjoint, and toughness gives $w(N(I))\ge t\,w(I)$. This proves all the residual Hall inequalities at $t\ge q-1$, since $D(I)\ge1$. With the spanning tree reserved, the directed support is strongly connected and the Euler circuit construction applies.
+Here $D(I)+D(N(I))\le2(q-1)$ because the sets are disjoint, and toughness gives $`w(N(I))\ge t\,w(I)`$. This proves all the residual Hall inequalities at $t\ge q-1$, since $D(I)\ge1$. With the spanning tree reserved, the directed support is strongly connected and the Euler circuit construction applies.
 
 ## Find a tree within the class budgets
 

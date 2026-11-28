@@ -19,10 +19,10 @@ The question is whether the following implication holds for every infinite $`A\s
 
 ```math
 \begin{split}
-&\exists\delta>0\ \forall B\subseteq A\text{ finite}\ 
-  \exists D\subseteq B:
-  |D|\geq\delta |B|\text{ and }D\text{ dissociated}\\
-&\qquad\Longrightarrow
+&\exists\delta>0\ \forall B\subseteq A\text{ finite}
+  \ \exists D\subseteq B:
+  |D|\geq\delta |B|\text{ and }D\text{ dissociated}
+\\ &\qquad\Longrightarrow
   \exists q<\infty\ \exists D_1,\ldots,D_q\text{ dissociated}:
   A=D_1\cup\cdots\cup D_q.
 \end{split}

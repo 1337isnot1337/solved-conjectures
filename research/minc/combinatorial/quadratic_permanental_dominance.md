@@ -79,9 +79,9 @@ $`\mathop{\mathrm{per}}(A\circ\overline A)\le p^2`$. For arbitrary PSD $`A,B`$, 
 ```math
 \begin{aligned}
 \mathop{\mathrm{per}}(A\circ B)
-&=\left|\sum_\sigma a_\sigma b_\sigma\right|\\
-&\le\sqrt{\sum_\sigma|a_\sigma|^2\sum_\sigma|b_\sigma|^2}\\
-&\le\mathop{\mathrm{per}}A\mathop{\mathrm{per}}B.
+&=\left|\sum_\sigma a_\sigma b_\sigma\right|
+\\ &\le\sqrt{\sum_\sigma|a_\sigma|^2\sum_\sigma|b_\sigma|^2}
+\\ &\le\mathop{\mathrm{per}}A\mathop{\mathrm{per}}B.
 \end{aligned}
 ```
 
@@ -113,10 +113,10 @@ Frobenius norms multiply under tensor products and their squares add under ortho
 \begin{aligned}
 \|F_\lambda(A\oplus B)\|_F^2
 &=\sum_{\mu,\nu}m_{\mu,\nu}
-\|F_\mu(A)\|_F^2\|F_\nu(B)\|_F^2\\
-&\le(\mathop{\mathrm{per}}A)^2(\mathop{\mathrm{per}}B)^2
-\sum_{\mu,\nu}m_{\mu,\nu}d_\mu d_\nu\\
-&=d_\lambda\bigl(\mathop{\mathrm{per}}(A\oplus B)\bigr)^2.
+\|F_\mu(A)\|_F^2\|F_\nu(B)\|_F^2
+\\ &\le(\mathop{\mathrm{per}}A)^2(\mathop{\mathrm{per}}B)^2
+\sum_{\mu,\nu}m_{\mu,\nu}d_\mu d_\nu
+\\ &=d_\lambda\bigl(\mathop{\mathrm{per}}(A\oplus B)\bigr)^2.
 \end{aligned}
 ```
 
@@ -172,8 +172,8 @@ The permanental Fischer inequality gives $`\delta_i\ge0`$. Also $`L\mathbf1=0`$ 
 ```math
 \begin{aligned}
 \|\Gamma\|_F^2\le np^2
-&\quad\Longleftrightarrow\quad \mathop{\mathrm{tr}}L^2\le2p\mathop{\mathrm{tr}}L\\
-&\quad\Longleftrightarrow\quad
+&\quad\Longleftrightarrow\quad \mathop{\mathrm{tr}}L^2\le2p\mathop{\mathrm{tr}}L
+\\ &\quad\Longleftrightarrow\quad
 \sum_{i\ne j}|\Gamma_{ij}|^2
 \le\sum_i\delta_i(2p-\delta_i).
 \end{aligned}
@@ -219,7 +219,7 @@ t=1-m,\qquad B=\frac{A-mI}{1-m}.
 Then $`B`$ is a singular correlation matrix and
 
 ```math
-A=(1-t)I+tB,\qquad 0<t<1.
+A=(1-t)I+tB,\qquad 0\lt t<1.
 ```
 
 For each subset $`S\subseteq[n]`$, put
@@ -253,10 +253,10 @@ Choosing the identity contribution outside $`S`$ forces those indices to be fixe
 ```math
 \begin{aligned}
 \|F_\lambda(A)\|_F
-&\le\sum_{S\subseteq[n]}t^{|S|}(1-t)^{n-|S|}\|X_S\|_F\\
-&\le\sqrt{d_\lambda}\sum_{S\subseteq[n]}
-t^{|S|}(1-t)^{n-|S|}\mathop{\mathrm{per}}B[S]\\
-&=\sqrt{d_\lambda}\mathop{\mathrm{per}}A.
+&\le\sum_{S\subseteq[n]}t^{|S|}(1-t)^{n-|S|}\|X_S\|_F
+\\ &\le\sqrt{d_\lambda}\sum_{S\subseteq[n]}
+t^{|S|}(1-t)^{n-|S|}\mathop{\mathrm{per}}B[S]
+\\ &=\sqrt{d_\lambda}\mathop{\mathrm{per}}A.
 \end{aligned}
 ```
 

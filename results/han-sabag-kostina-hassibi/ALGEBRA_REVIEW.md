@@ -129,7 +129,7 @@ This retains the same positive definite $J$ and has dense feasible power $73/(27
 The dense point lies strictly below all four whenever
 
 ```math
-\frac{1360}{567}<s<\frac{4675}{1296}.
+\frac{1360}{567}\lt s<\frac{4675}{1296}.
 ```
 
 For the first and fourth comparisons these are exactly the upper and lower bounds. The two other comparisons give weaker lower bounds, as direct rational cross multiplication confirms. In particular the example lies in a nonempty open interval of channel gains; the contradiction is not tied to a floating-point special case.

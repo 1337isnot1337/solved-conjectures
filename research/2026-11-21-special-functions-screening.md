@@ -67,7 +67,7 @@ The integer inequality is exact. By uniqueness of Laplace transforms, this conti
 
 There is also an interval of counterexamples. For
 ```math
-2-\frac1{\sqrt2}<a<\log_4(128/21),
+2-\frac1{\sqrt2}\lt a<\log_4(128/21),
 ```
 replace 13/10 by a in U. Its inverse Laplace density is
 ```math

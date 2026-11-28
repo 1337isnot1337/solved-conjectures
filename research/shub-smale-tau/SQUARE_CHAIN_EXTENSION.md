@@ -38,9 +38,9 @@ Put
 
 ```math
 \begin{aligned}
-a&=(-21+4u)(3-10u+2u^2+v),\\
-b&=171+102u-44u^2-69v-4uv,\\
-c&=(-21+4u)(-15+5u+2v).
+a&=(-21+4u)(3-10u+2u^2+v),
+\\ b&=171+102u-44u^2-69v-4uv,
+\\ c&=(-21+4u)(-15+5u+2v).
 \end{aligned}
 \tag{1.2}
 ```
@@ -51,12 +51,12 @@ Define six of the positive/negative root representatives by
 
 ```math
 \begin{aligned}
-A&=a^2b-ab^2+3ac^2-7bc^2,\\
-B&=c(a^2+2ab-b^2+10c^2),\\
-C&=a^2b-ab^2+7ac^2-3bc^2,\\
-D&=-c(a^2-2ab-b^2-10c^2),\\
-E_0&=-c(a^2+b^2+2ac+2bc-10c^2),\\
-G&=-c(a^2+b^2-2ac-2bc-10c^2).
+A&=a^2b-ab^2+3ac^2-7bc^2,
+\\ B&=c(a^2+2ab-b^2+10c^2),
+\\ C&=a^2b-ab^2+7ac^2-3bc^2,
+\\ D&=-c(a^2-2ab-b^2-10c^2),
+\\ E_0&=-c(a^2+b^2+2ac+2bc-10c^2),
+\\ G&=-c(a^2+b^2-2ac-2bc-10c^2).
 \end{aligned}
 \tag{1.3}
 ```
@@ -67,9 +67,9 @@ For the other two, set
 
 ```math
 \begin{aligned}
-T={}&2a^2b-2ab^2+2a^2c+4abc+2b^2c+10ac^2-10bc^2,\\
-J={}&-8(a+b)c^3(a^2+b^2-10c^2),\\
-F&=(T+J/T)/2,\qquad H=(T-J/T)/2.
+T={}&2a^2b-2ab^2+2a^2c+4abc+2b^2c+10ac^2-10bc^2,
+\\ J={}&-8(a+b)c^3(a^2+b^2-10c^2),
+\\ F&=(T+J/T)/2,\qquad H=(T-J/T)/2.
 \end{aligned}
 \tag{1.4}
 ```
@@ -96,12 +96,12 @@ For any eight rational numbers satisfying (1.5), define
 
 ```math
 \begin{aligned}
-P&=(A^2+B^2)/2,\\
-Q&=\frac12\left(\left(\frac{A^2-B^2}{2}\right)^2
-                   +\left(\frac{C^2-D^2}{2}\right)^2\right),\\
-r_1&=(A^2B^2-C^2D^2)/2,\qquad
-r_2=(E_0^2F^2-G^2H^2)/2,\\
-R&=(r_1^2+r_2^2)/2,\qquad S=(r_1^2-r_2^2)/2.
+P&=(A^2+B^2)/2,
+\\ Q&=\frac12\left(\left(\frac{A^2-B^2}{2}\right)^2
+                   +\left(\frac{C^2-D^2}{2}\right)^2\right),
+\\ r_1&=(A^2B^2-C^2D^2)/2,\qquad
+r_2=(E_0^2F^2-G^2H^2)/2,
+\\ R&=(r_1^2+r_2^2)/2,\qquad S=(r_1^2-r_2^2)/2.
 \end{aligned}
 \tag{1.6}
 ```
@@ -168,10 +168,10 @@ coefficients in (1.6) are computed as
 
 ```math
 \begin{aligned}
-P&=2(A_0^2+B_0^2),\\
-Q&=2\bigl((A_0^2-B_0^2)^2+(C_0^2-D_0^2)^2\bigr),\\
-R&=32(U^2+V^2),\qquad S=32(U^2-V^2),\\
-U&=A_0^2B_0^2-C_0^2D_0^2,\quad
+P&=2(A_0^2+B_0^2),
+\\ Q&=2\bigl((A_0^2-B_0^2)^2+(C_0^2-D_0^2)^2\bigr),
+\\ R&=32(U^2+V^2),\qquad S=32(U^2-V^2),
+\\ U&=A_0^2B_0^2-C_0^2D_0^2,\quad
 V=E_0^2F_0^2-G_0^2H_0^2.
 \end{aligned}
 \tag{1.8}
@@ -291,8 +291,8 @@ algebraic specification suitable for checking that assertion. If
 
 ```math
 \begin{aligned}
-U&=(v-4)^2-(u+1)l^2,\\
-V&=v l^3-(v-4)(u l^2-U).
+U&=(v-4)^2-(u+1)l^2,
+\\ V&=v l^3-(v-4)(u l^2-U).
 \end{aligned}
 ```
 
@@ -304,9 +304,9 @@ denominator gives the new triple
 
 ```math
 \begin{aligned}
-a'&=(-21l^2+4U)(3l^4-10Ul^2+2U^2+Vl),\\
-b'&=l(171l^5+102Ul^3-44U^2l-69Vl^2-4UV),\\
-c'&=l(-21l^2+4U)(-15l^3+5Ul+2V).
+a'&=(-21l^2+4U)(3l^4-10Ul^2+2U^2+Vl),
+\\ b'&=l(171l^5+102Ul^3-44U^2l-69Vl^2-4UV),
+\\ c'&=l(-21l^2+4U)(-15l^3+5Ul+2V).
 \end{aligned}
 \tag{3.4}
 ```
@@ -318,9 +318,9 @@ The three identities to check are
 
 ```math
 \begin{aligned}
-Q'P^2+Q(P')^2-P^2(P')^2&=0,\\
-R'P^4-R(P')^4&=0,\\
-(S')^2P^8-S^2(P')^8&=0.
+Q'P^2+Q(P')^2-P^2(P')^2&=0,
+\\ R'P^4-R(P')^4&=0,
+\\ (S')^2P^8-S^2(P')^8&=0.
 \end{aligned}
 \tag{3.5}
 ```
@@ -349,8 +349,8 @@ The other four squared entries are
 
 ```math
 \begin{aligned}
-B^2&=5s^2+2st+w^2,&D^2&=5s^2-2st+w^2,\\
-F^2&=5s^2+2sw+t^2,&H^2&=5s^2-2sw+t^2.
+B^2&=5s^2+2st+w^2,&D^2&=5s^2-2st+w^2,
+\\ F^2&=5s^2+2sw+t^2,&H^2&=5s^2-2sw+t^2.
 \end{aligned}
 \tag{4.1}
 ```
@@ -362,10 +362,10 @@ Expanding (1.6) gives
 
 ```math
 \begin{aligned}
-P&=(6a+B_0)/2,\\
-Q&=(D_0^2+8aB_0+16a^2)/4,\\
-R&=2a\bigl(D_0^2(B_0-8a)+16a^2B_0\bigr),\\
-S&=2aD_0(D_0^2-8aB_0+16a^2).
+P&=(6a+B_0)/2,
+\\ Q&=(D_0^2+8aB_0+16a^2)/4,
+\\ R&=2a\bigl(D_0^2(B_0-8a)+16a^2B_0\bigr),
+\\ S&=2aD_0(D_0^2-8aB_0+16a^2).
 \end{aligned}
 \tag{4.2}
 ```
@@ -376,8 +376,8 @@ Eliminating `B_0,D_0^2` yields the exact necessary equations
 
 ```math
 \begin{aligned}
-R={}&16aPQ-112a^2Q-64a^2P^2+640a^3P-1088a^4,\\
-S^2={}&256a^2(Q-4aP+8a^2)(Q-8aP+24a^2)^2.
+R={}&16aPQ-112a^2Q-64a^2P^2+640a^3P-1088a^4,
+\\ S^2={}&256a^2(Q-4aP+8a^2)(Q-8aP+24a^2)^2.
 \end{aligned}
 \tag{4.3}
 ```
@@ -496,8 +496,8 @@ q_0(w)=
 \begin{split}
 r_0(w)&=
  \frac{3200w(w-20)^2(w-5)^2 B(w)}
-      {81(w+10)^4(w^2+100)^4},\\
-B(w)&=3w^6-478w^5+28220w^4-435600w^3
+      {81(w+10)^4(w^2+100)^4},
+\\ B(w)&=3w^6-478w^5+28220w^4-435600w^3
              +2822000w^2-4780000w+3000000,
 \end{split}
 \tag{6.4}
@@ -562,8 +562,8 @@ the numerators and denominators in (6.3)--(6.4), and set
 
 ```math
 \begin{aligned}
-U(w,t)&=\frac{A_q(w)D_q(t)-A_q(t)D_q(w)}{w-t},\\
-V(w,t)&=\frac{A_r(w)D_r(t)-A_r(t)D_r(w)}{w-t}.
+U(w,t)&=\frac{A_q(w)D_q(t)-A_q(t)D_q(w)}{w-t},
+\\ V(w,t)&=\frac{A_r(w)D_r(t)-A_r(t)D_r(w)}{w-t}.
 \end{aligned}
 \tag{6.7}
 ```

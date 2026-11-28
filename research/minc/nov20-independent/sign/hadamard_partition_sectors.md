@@ -114,11 +114,11 @@ column triples in (4) into equality patterns gives
 
 ```math
 \boxed{\begin{aligned}
-P_3(H;x,y,z)={}&n(x+y+z)^n\\
-&+n(n-1)\bigl(((x+y)^2-z^2)^{n/2}
+P_3(H;x,y,z)={}&n(x+y+z)^n
+\\ &+n(n-1)\bigl(((x+y)^2-z^2)^{n/2}
  +((x+z)^2-y^2)^{n/2}
- +((y+z)^2-x^2)^{n/2}\bigr)\\
-&+n(n-1)(n-2)Q(x,y,z)^{n/4}.
+ +((y+z)^2-x^2)^{n/2}\bigr)
+\\ &+n(n-1)(n-2)Q(x,y,z)^{n/4}.
 \end{aligned}}
 \tag{9}
 ```
@@ -167,10 +167,10 @@ and $`n/2`$ even give
 ```math
 \begin{aligned}
 &\sum_{\ell=1}^{n/2-1}(-1)^\ell{n/2\choose\ell}
-(2\ell-1)!(n-2\ell-1)!\\
-&\quad=(n-1)!\int_0^1
-\frac{(1-2t)^{n/2}-(1-t)^n-t^n}{t(1-t)}\,dt\\
-&\quad=2(n-1)!\left(H_{n-1}-2H_{n/2}+H_{n/4}\right).
+(2\ell-1)!(n-2\ell-1)!
+\\ &\quad=(n-1)!\int_0^1
+\frac{(1-2t)^{n/2}-(1-t)^n-t^n}{t(1-t)}\,dt
+\\ &\quad=2(n-1)!\left(H_{n-1}-2H_{n/2}+H_{n/4}\right).
 \end{aligned}
 \tag{13}
 ```
@@ -215,7 +215,7 @@ N_{u,v,w}=\frac{n+uvw\,c_{abcd}}8,
 In particular $`(n\pm c_{abcd})/8`$ are nonnegative integers. Put
 
 ```math
-R(x)=\sum_{a=1}^4x_a^4-2\sum_{a<b}x_a^2x_b^2,
+R(x)=\sum_{a=1}^4x_a^4-2\sum_{a\lt b}x_a^2x_b^2,
 \qquad p(x)=x_1x_2x_3x_4,
 ```
 
@@ -254,11 +254,11 @@ by their equality patterns gives
 \begin{aligned}
 P_4(H;x)={}&nX^n
  +n(n-1)\sum_{\{B,C\}\in\Pi_{4,2}}
- (X_B^2-X_C^2)^{n/2}\\
-&+n(n-1)(n-2)
+ (X_B^2-X_C^2)^{n/2}
+\\ &+n(n-1)(n-2)
 \sum_{\{a,b\}\subseteq[4]}
- Q(x_a+x_b,x_c,x_d)^{n/4}\\
-&+24\sum_c\nu_cG_c(x),
+ Q(x_a+x_b,x_c,x_d)^{n/4}
+\\ &+24\sum_c\nu_cG_c(x),
 \end{aligned}
 \tag{18}
 ```

@@ -19,7 +19,7 @@ $`n\times n`$ matrix $`A`$,
 
 ~~~math
 \boxed{\quad
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge\frac{\|A-J_n\|_F^2}{32\,000\,000}.
 \quad}                                                       \tag{1}
 ~~~
@@ -35,7 +35,7 @@ Write $`u=\|A-J_n\|_F^2`$ and $`v=\min(u,1)`$. Equation (10) of the
 multicolumn note gives, for every integer $`1\le k<n`$,
 
 ~~~math
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge\frac{ku}{2n}
 -\frac{k(k-1)}{4(n-k)(n-k+1)}.                               \tag{2}
 ~~~
@@ -43,7 +43,7 @@ multicolumn note gives, for every integer $`1\le k<n`$,
 We claim that this already implies
 
 ~~~math
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge\frac{\min(u^2,u)}{32}=\frac{uv}{32}.                     \tag{3}
 ~~~
 
@@ -56,7 +56,7 @@ k=1+\left\lfloor\frac{(n-2)v}{4}\right\rfloor.
 Then
 
 ~~~math
-1\le k\le\frac{n+2}{4}\le\frac n2<n,\qquad
+1\le k\le\frac{n+2}{4}\le\frac n2\lt n,\qquad
 k-1\le\frac{(n-2)v}{4}.
 ~~~
 
@@ -89,14 +89,14 @@ $`u/(2n)\ge uv/32`$ proves (3) in those orders as well.
 Let $`\varepsilon=10^{-6}`$. If $`u\le\varepsilon`$, the local theorem gives
 
 ~~~math
-\frac{\operatorname{per}A}{d_n}\ge1+\frac u{32}.
+\frac{\mathop{\mathrm{per}}A}{d_n}\ge1+\frac u{32}.
 ~~~
 
 The elementary inequality $`\log(1+x)\ge x/(1+x)`$ for $`x\ge0`$ follows
 by differentiation or integration. Therefore
 
 ~~~math
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge\frac{u}{32+u}
 \ge\frac{\varepsilon u}{32}.                               \tag{4}
 ~~~
@@ -110,14 +110,14 @@ $`\varepsilon/32=1/32\,000\,000`$, this proves (1).
 
 Let $`U_n`$ be the matrix with zero diagonal and all other entries
 $`1/(n-1)`$. If a zero-diagonal doubly stochastic $`A`$ satisfies
-$`\operatorname{per}A\le\operatorname{per}U_n`$, then (1) and the exact
+$`\mathop{\mathrm{per}}A\le\mathop{\mathrm{per}}U_n`$, then (1) and the exact
 orthogonality identity give
 
 ~~~math
 \frac1{n-1}+\|A-U_n\|_F^2
 =\|A-J_n\|_F^2
 \le32\,000\,000
-\log\frac{\operatorname{per}U_n}{d_n}.                       \tag{5}
+\log\frac{\mathop{\mathrm{per}}U_n}{d_n}.                       \tag{5}
 ~~~
 
 This comparison includes equality candidates. For a fully explicit
@@ -126,7 +126,7 @@ right side, let $`D_n`$ count derangements. Inclusion-exclusion gives
 ~~~math
 \frac{D_n}{n!}=\sum_{j=0}^n\frac{(-1)^j}{j!},
 \qquad
-\frac{\operatorname{per}U_n}{d_n}
+\frac{\mathop{\mathrm{per}}U_n}{d_n}
 =\left(\frac n{n-1}\right)^n\frac{D_n}{n!}.
 ~~~
 
@@ -154,7 +154,7 @@ Also,
 It follows that
 
 ~~~math
-\log\frac{\operatorname{per}U_n}{d_n}
+\log\frac{\mathop{\mathrm{per}}U_n}{d_n}
 \le\frac1{2(n-1)}+\frac3{(n+1)!}.                            \tag{6}
 ~~~
 

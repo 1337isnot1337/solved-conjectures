@@ -4,7 +4,7 @@
 
 ## Statements and sources
 
-- **Erdős–Szemerédi, [Erdős #873](https://www.erdosproblems.com/873).** Given a strictly increasing sequence $A$ of positive integers and $\epsilon>0$, does there exist $k$ such that the number $F(A,X,k)$ of consecutive length-$k$ windows of LCM less than $X$ is less than $X^\epsilon$ for every $X>0$? See [Erdős, *Some of my forgotten problems in number theory*, pp. 48–49](https://hrj.episciences.org/125/pdf).
+- **Erdős–Szemerédi, [Erdős #873](https://www.erdosproblems.com/873).** Given a strictly increasing sequence $A$ of positive integers and $\epsilon>0$, does there exist $k$ such that the number $F(A,X,k)$ of consecutive length-$`k`$ windows of LCM less than $X$ is less than $X^\epsilon$ for every $X>0$? See [Erdős, *Some of my forgotten problems in number theory*, pp. 48–49](https://hrj.episciences.org/125/pdf).
 - **Ruzsa, [Erdős #886](https://erdosproblems.ai/wiki/problems/divisors/E0886).** For every $\eta>0$, is there a uniform bound depending on $\eta$ on the number of divisors of $n$ in $(\sqrt n,\sqrt n+n^{1/2-\eta})$?
 - **Relative divisor form.** For every $c>0$, is there a uniform bound depending on $c$ on the number of distinct divisors $d_1<\cdots<d_j$ of any integer $q$ with $d_j-d_1\leq d_1 q^{-c}$?
 
@@ -40,13 +40,13 @@ uniformly in $A$; for sufficiently large $X$ this is strictly less than $X^\epsi
 
 If the relative statement fails, fix $c>0$ at which it fails. For each $j\geq2$ take an arbitrarily large $q_j$ with $j$ distinct divisors in a cluster as above. Distinctness makes the span positive; unbounded cluster size permits $q_j$ arbitrarily large for each $j$.
 
-For a cluster with modulus $q=q_j$, smallest term $a$ and span $H$, let $M=\lfloor q^c/4\rfloor$. For $q$ large this is positive. Dilate the cluster by each integer $s=M,\ldots,2M-1$. The resulting $j$-tuples are strictly ordered and pairwise disjoint: $sH\leq (2M-1)a q^{-c}<a/2$. Each has LCM at most $sq<2Mq$. Thus the increasing list of these $jM$ terms contains $M$ distinct consecutive length-$j$ windows with LCM below $X=2Mq$. For every
+For a cluster with modulus $q=q_j$, smallest term $a$ and span $H$, let $M=\lfloor q^c/4\rfloor$. For $q$ large this is positive. Dilate the cluster by each integer $s=M,\ldots,2M-1$. The resulting $j$-tuples are strictly ordered and pairwise disjoint: $sH\leq (2M-1)a q^{-c}<a/2$. Each has LCM at most $sq<2Mq$. Thus the increasing list of these $jM$ terms contains $M$ distinct consecutive length-$`j`$ windows with LCM below $X=2Mq$. For every
 ```math
 0<\gamma<\frac{c}{1+c},
 ```
 all sufficiently large $q$ give $M>X^\gamma$.
 
-Build one increasing sequence by concatenating these finite lists successively for $j=2,3,\ldots$, taking $q_j$ so large that the first term $M a$ of each list exceeds the preceding last term. For any fixed $k$, every list with $j\geq k$ supplies at least $M$ good length-$k$ windows by taking the first $k$ terms of each of its $j$-tuples. This violates #873 for the fixed exponent $\gamma$, along arbitrarily large values of $X$, in a **single** sequence. Changing the strict inequality at the endpoints of the divisor interval has no effect on the equivalence because one may use smaller positive exponents.
+Build one increasing sequence by concatenating these finite lists successively for $j=2,3,\ldots$, taking $q_j$ so large that the first term $M a$ of each list exceeds the preceding last term. For any fixed $k$, every list with $j\geq k$ supplies at least $M$ good length-$`k`$ windows by taking the first $k$ terms of each of its $j$-tuples. This violates #873 for the fixed exponent $\gamma$, along arbitrarily large values of $X$, in a **single** sequence. Changing the strict inequality at the endpoints of the divisor interval has no effect on the equivalence because one may use smaller positive exponents.
 
 ## Search and scope
 

@@ -5,7 +5,7 @@ Status: elementary research reduction, not a solution of Erdős 647, not asserte
 Let $`\tau(m)`$ be the number of positive divisors of $`m`$. The board's fixed-window infinitude target requires, for every fixed positive $`k`$, infinitely many $`n`$ such that
 
 ```math
-\max_{n-k<m<n}\bigl(m+\tau(m)\bigr)\le n+2.
+\max_{n-k\lt m\lt n}\bigl(m+\tau(m)\bigr)\le n+2.
 ```
 
 For $`k=3`$ and $`n\ge12`$, this is equivalent to

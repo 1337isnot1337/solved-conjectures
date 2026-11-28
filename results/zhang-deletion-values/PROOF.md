@@ -22,8 +22,8 @@ By a theorem of Liu quoted by Zhang, equality $`LR([n-1]\setminus\{r\})=2/D_r`$ 
 ```math
 LR([n-1]\setminus\{r\})=
 \begin{cases}
-2/D_r,& 2r\le n-1,\\
-1/r,& 2r\gt n-1.
+2/D_r,& 2r\le n-1,
+\\ 1/r,& 2r\gt n-1.
 \end{cases}
 ```
 
@@ -39,7 +39,7 @@ If also $r\le n-2$, then $1/r\ge1/(n-2)\gt1/(n-1)$.
 - $vj\equiv1\equiv rj$ would give $v\equiv r$, hence $v=r$, which is excluded;
 - $vj\equiv-1\equiv-rj$ would give $v\equiv-r$, hence $v=D-r\ge n$, which is outside $[n-1]$.
 
-So $vj\bmod D\notin\{0,1,D-1\}$ and $`\|vt\|\ge2/D`$ for every such $v$. This proves $LR\ge2/D$; it is Zhang's Theorem 2.9, and the argument is included to keep the note self-contained.
+So $`vj\bmod D\notin\{0,1,D-1\}`$ and $`\|vt\|\ge2/D`$ for every such $v$. This proves $LR\ge2/D$; it is Zhang's Theorem 2.9, and the argument is included to keep the note self-contained.
 
 Among the $r$ consecutive integers $n+r,\ldots,n+2r-1$ exactly one is congruent to $1$ modulo $r$, and it is coprime to $r$. So $D_r\le n+2r-1$. If $2r\le n-2$ this gives $D_r\le2n-3$. If $2r=n-1$, then $n+r=3r+1$ is itself coprime to $r$, so $D_r=3r+1$, and $3r+1\le4r-1=2n-3$ exactly when $r\ge2$, that is, when $(n,r)\ne(3,1)$.
 

@@ -58,7 +58,7 @@ realization on that side. Thus no global marker name needs to be
 retained in a state.
 
 For covers, for each subset $T$ of the boundary and each
-$j\in\{0,\ldots,r\}$, record the collection of all single-group
+$`j\in\{0,\ldots,r\}`$, record the collection of all single-group
 pattern signatures obtainable in $B-T-Y$ as $Y$ varies over
 interior deletion sets of size at most $j$. A signature is the
 set of patterns that remain realizable. It is important to retain
@@ -105,7 +105,7 @@ separation of order less than $k$ for which each side (including
 the separator) has at least $q$ vertices. For each packing target
 $t\ge 2$, fix $r$ arbitrarily and set $q=h(r)+1$.
 Suppose one can prove a uniform cover bound $g(t,q,r)$ for the
-$(q,r+1)$-unbreakable augmented graphs lacking a size-$t$ packing.
+$(q,r+1)$-unbreakable augmented graphs lacking a size-$`t`$ packing.
 
 Then the unrestricted theorem follows by induction on $t$ and,
 for fixed $t$, on the number of vertices. Given a separation of
@@ -117,9 +117,9 @@ covers and the separator give a cover of size at most
 $2f(t-1)+r$. If one open side is safe, replace it by its smaller
 type representative. Both optima remain unchanged, so vertex
 induction applies. This gives
-$$
+```math
 f(t)=\max\{g(t,h(r)+1,r),\,2f(t-1)+r\},\qquad f(1)=0.
-$$
+```
 Unbreakability here concerns $H=G\cup D$, not just $G$. A
 matching of marker edges can bypass a small supply separator;
 ordinary Menger linkage in $H$ is therefore not the needed

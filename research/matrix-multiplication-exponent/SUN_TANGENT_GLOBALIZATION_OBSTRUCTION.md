@@ -67,11 +67,11 @@ Put $`X_\Sigma=\sum_i x_i`$, and define $`Y_\Sigma,Z_\Sigma`$ in the same way. T
 \begin{split}
 \Psi_{q,\epsilon}={}&
  \sum_{i=1}^q\epsilon^{-2}
- (x_0+\epsilon x_i)(y_0+\epsilon y_i)(z_0+\epsilon z_i)\\
-&-\epsilon^{-3}
+ (x_0+\epsilon x_i)(y_0+\epsilon y_i)(z_0+\epsilon z_i)
+\\ &-\epsilon^{-3}
  (x_0+\epsilon^2X_\Sigma)(y_0+\epsilon^2Y_\Sigma)
- (z_0+\epsilon^2Z_\Sigma)\\
-&+(\epsilon^{-3}-q\epsilon^{-2})
+ (z_0+\epsilon^2Z_\Sigma)
+\\ &+(\epsilon^{-3}-q\epsilon^{-2})
  (x_0+\epsilon^3x_\infty)(y_0+\epsilon^3y_\infty)
  (z_0+\epsilon^3z_\infty).
 \end{split}                                                   \tag{5a}

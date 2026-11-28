@@ -52,8 +52,8 @@ omitted products. Consequently,
 D(A)[I,I]
 ={}&a^2D(B)
  +2a\mathop{\mathrm{Re}}
-       \bigl(K(B)\circ\overline T\bigr)\\
-&+\bigl(T\circ\overline T-U\bigr).
+       \bigl(K(B)\circ\overline T\bigr)
+\\ &+\bigl(T\circ\overline T-U\bigr).
 \end{aligned}
 \tag{3}
 ```
@@ -77,15 +77,15 @@ Then $`a=1`$ and
 
 ```math
 B_t=\begin{pmatrix}
-1&0&0\\
-0&t^2+1&t^2-1\\
-0&t^2-1&t^2+1
+1&0&0
+\\ 0&t^2+1&t^2-1
+\\ 0&t^2-1&t^2+1
 \end{pmatrix},\qquad
 A_t=\begin{pmatrix}
-1&0&0&0\\
-0&t^2+1&t^2-1&1\\
-0&t^2-1&t^2+1&-1\\
-0&1&-1&1
+1&0&0&0
+\\ 0&t^2+1&t^2-1&1
+\\ 0&t^2-1&t^2+1&-1
+\\ 0&1&-1&1
 \end{pmatrix}.
 \tag{4}
 ```
@@ -103,9 +103,9 @@ Their Gram matrix is therefore
 
 ```math
 T=\begin{pmatrix}
-4&0&0\\
-0&1&-1\\
-0&-1&1
+4&0&0
+\\ 0&1&-1
+\\ 0&-1&1
 \end{pmatrix}.
 ```
 
@@ -117,9 +117,9 @@ They are orthogonal to the first one. Hence
 
 ```math
 U=\begin{pmatrix}
-4(t^4+1)&0&0\\
-0&1&1\\
-0&1&1
+4(t^4+1)&0&0
+\\ 0&1&1
+\\ 0&1&1
 \end{pmatrix},\qquad
 T\circ\overline T-U
 =\mathop{\mathrm{diag}}\bigl(4(3-t^4),0,0\bigr).

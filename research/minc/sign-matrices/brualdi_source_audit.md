@@ -2,9 +2,9 @@
 
 Research date: 20 November 2026 (America/Chicago). This audit concerns the named family
 
-\[
+```math
 C_n=J_n-I_n+E_{nn},\qquad n\geq4,
-\]
+```
 
 where J_n is the unnormalized all-ones matrix. Relabeling the free diagonal position from 1 to n does not change the problem. The intended assertion is that C_n is cohesive in every such order. This would settle a named subsidiary conjecture recorded on Minc's Problem 14 page, not characterize all cohesive supports.
 
@@ -30,9 +30,9 @@ Searches used both web engines, including exact titles, the phrases “Brualdi c
 
 For a nonnegative (n−2) by n matrix R, define
 
-\[
-f_R(x,y)=\operatorname{per}\begin{pmatrix}x\\y\\R\end{pmatrix}.
-\]
+```math
+f_R(x,y)=\mathop{\mathrm{per}}\begin{pmatrix}x\\y\\R\end{pmatrix}.
+```
 
 The precise nondegeneracy criterion used in the team draft is that f_R has signature (0,1,n−1) when R has no zero rectangle whose row count plus column count is at least n−1. In that case equality in Alexandrov–Fenchel for nonzero nonnegative x,y forces proportionality, provided f_R(y,y)>0. Stochastic x,y are then equal.
 
@@ -51,20 +51,20 @@ At a putative minimizer, equality of the free-row cofactors means that every max
 
 For n=5, take
 
-\[
+```math
 R=\begin{pmatrix}
-0&0&7/20&7/20&3/10\\
-2/7&0&1/4&1/4&3/14\\
-1/4&11/32&0&7/32&3/16\\
-1/4&11/32&7/32&0&3/16
+0&0&7/20&7/20&3/10
+\\ 2/7&0&1/4&1/4&3/14
+\\ 1/4&11/32&0&7/32&3/16
+\\ 1/4&11/32&7/32&0&3/16
 \end{pmatrix}.
-\]
+```
 
 Every row sum is one. All five maximal permanents equal 231/5120. Its column-deficit vector is
 
-\[
+```math
 u=(3/14,5/16,29/160,29/160,31/280)>0.
-\]
+```
 
 Appending u makes a doubly stochastic matrix in the C_5 face. The only extra zero is (1,2), so the extra-zero graph is a DAG. There is no zero rectangle with row count plus column count at least four. The matrix is not asserted to satisfy the other minimizing conditions and is not a counterexample to cohesiveness.
 

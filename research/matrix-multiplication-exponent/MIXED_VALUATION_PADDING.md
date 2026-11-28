@@ -34,8 +34,8 @@ On $`\mathbb C^b\oplus\mathbb C^r`$, define
 ```math
 M_X(t)=
 \begin{pmatrix}
-0&U\Lambda_XJ(t)\\
-0&t^2J(t)^{-1}\Lambda_XJ(t)
+0&U\Lambda_XJ(t)
+\\ 0&t^2J(t)^{-1}\Lambda_XJ(t)
 \end{pmatrix}.                                  \tag{2}
 ```
 
@@ -87,12 +87,12 @@ and order the entries of the second matrix row by row. Put
 
 ```math
 A=\begin{pmatrix}
-1&0&0&1\\0&0&1&1\\1&0&0&0\\0&0&0&1\\
-1&1&0&0\\-1&0&1&0\\0&1&0&-1
+1&0&0&1\\0&0&1&1\\1&0&0&0\\0&0&0&1
+\\ 1&1&0&0\\-1&0&1&0\\0&1&0&-1
 \end{pmatrix},\qquad
 B=\begin{pmatrix}
-1&0&0&1\\1&0&0&0\\0&1&0&-1\\-1&0&1&0\\
-0&0&0&1\\1&1&0&0\\0&0&1&1
+1&0&0&1\\1&0&0&0\\0&1&0&-1\\-1&0&1&0
+\\ 0&0&0&1\\1&1&0&0\\0&0&1&1
 \end{pmatrix},
 ```
 
@@ -100,10 +100,10 @@ and
 
 ```math
 U=\begin{pmatrix}
-1&0&0&1&-1&0&1\\
-0&0&1&0&1&0&0\\
-0&1&0&1&0&0&0\\
-1&-1&1&0&0&1&0
+1&0&0&1&-1&0&1
+\\ 0&0&1&0&1&0&0
+\\ 0&1&0&1&0&0&0
+\\ 1&-1&1&0&0&1&0
 \end{pmatrix}.
 ```
 
@@ -141,9 +141,9 @@ A mixed-valuation family can begin with blocks
 
 ```math
 \begin{pmatrix}
-t^2A_X+O(t^3)&tB_X+O(t^2)&L_X+O(t)\\
-O(t^3)&t^2D_X+O(t^3)&tE_X+O(t^2)\\
-O(t^4)&O(t^3)&t^2H_X+O(t^3)
+t^2A_X+O(t^3)&tB_X+O(t^2)&L_X+O(t)
+\\ O(t^3)&t^2D_X+O(t^3)&tE_X+O(t^2)
+\\ O(t^4)&O(t^3)&t^2H_X+O(t^3)
 \end{pmatrix}.                                  \tag{5}
 ```
 

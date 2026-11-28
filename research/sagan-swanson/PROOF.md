@@ -16,10 +16,10 @@ Primary source: [published manuscript](https://users.math.msu.edu/users/bsagan/P
 
 ```math
 \begin{aligned}
-c[n,k]&=e_{n-k}([1]_q,[2]_q,\ldots,[n-1]_q),\\
-c_B[n,k]&=e_{n-k}([1]_q,[3]_q,\ldots,[2n-1]_q),\\
-S[n,k]&=h_{n-k}([1]_q,[2]_q,\ldots,[k]_q),\\
-S_B[n,k]&=h_{n-k}([1]_q,[3]_q,\ldots,[2k+1]_q).
+c[n,k]&=e_{n-k}([1]_q,[2]_q,\ldots,[n-1]_q),
+\\ c_B[n,k]&=e_{n-k}([1]_q,[3]_q,\ldots,[2n-1]_q),
+\\ S[n,k]&=h_{n-k}([1]_q,[2]_q,\ldots,[k]_q),
+\\ S_B[n,k]&=h_{n-k}([1]_q,[3]_q,\ldots,[2k+1]_q).
 \end{aligned}
 ```
 
@@ -120,8 +120,8 @@ Since a uniform variable on $`\{0,\ldots,a-1\}`$ has mean $`(a-1)/2`$ and varian
 
 ```math
 \begin{aligned}
-\mathop{\mathrm{Cov}}(K_j,Y_j)&=\mathop{\mathrm{Var}}(K_j)\frac{a_j-1}{2},\\
-\mathop{\mathrm{Var}}(Y_j)&=\mathbb EK_j\frac{a_j^2-1}{12}
+\mathop{\mathrm{Cov}}(K_j,Y_j)&=\mathop{\mathrm{Var}}(K_j)\frac{a_j-1}{2},
+\\ \mathop{\mathrm{Var}}(Y_j)&=\mathbb EK_j\frac{a_j^2-1}{12}
  +\mathop{\mathrm{Var}}(K_j)\frac{(a_j-1)^2}{4}.
 \end{aligned}
 ```
@@ -156,8 +156,8 @@ Taylor expansion of the logarithm of each centered characteristic function is co
 \begin{aligned}
 &\mathbb E\exp\left(
  i\frac{s}{\sqrt n}(T_n-m_n)
- +i\frac{w}{n^{3/2}}(Y_n-\mathbb EY_n)\right)\\
-&\qquad\longrightarrow
+ +i\frac{w}{n^{3/2}}(Y_n-\mathbb EY_n)\right)
+\\ &\qquad\longrightarrow
 \exp\left[-\tfrac12(As^2+2Bsw+Dw^2)\right].
 \end{aligned}
 ```
@@ -250,8 +250,8 @@ Substitute $`u=s/\sqrt n`$ and extend the integrand by zero outside its integrat
 \begin{aligned}
 \sqrt n I_n(w)
 &\longrightarrow\frac1{2\pi}\int_{\mathbb R}
- e^{-(As^2+2Bsw+Dw^2)/2}\,ds\\
-&=\frac1{\sqrt{2\pi A}}e^{-Vw^2/2}.
+ e^{-(As^2+2Bsw+Dw^2)/2}\,ds
+\\ &=\frac1{\sqrt{2\pi A}}e^{-Vw^2/2}.
 \end{aligned}
 ```
 

@@ -10,7 +10,7 @@ Date: 2026-11-21. Reviewer: graph/number-theory worker, independently of the pro
 
 The [primary journal article](https://www.mdpi.com/2227-7390/9/3/217), *Some Properties of the Kilbas–Saigo Function*, Mathematics 9 (2021), 217, was inspected directly. Proposition 1 fixes $0<\alpha\le1$ and proves the two special cases with third parameters $m-1$ and $m-1/\alpha$. Remark 3 asks for the same directions of monotonicity with third parameter $m-l$, for every $l\le1/\alpha$ and $m>0$.
 
-The proof uses exactly the article's series convention. Its third parameter is $r=m-l$, so the $n$th coefficient is
+The proof uses exactly the article's series convention. Its third parameter is $r=m-l$, so the $`n`$th coefficient is
 
 ```math
 \prod_{j=0}^{n-1}

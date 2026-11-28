@@ -213,13 +213,13 @@ Weighted vector Cauchy--Schwarz therefore gives
 ```math
 \begin{aligned}
 \left|\int(1,z)g_{\mathrm n}\,d\gamma_r\right|^2
-&=\left|\int V(y)\,d\gamma_{r-1}(y)\right|^2\\
-&\le B_r(R)
+&=\left|\int V(y)\,d\gamma_{r-1}(y)\right|^2
+\\ &\le B_r(R)
  \int e^{-\alpha|y|^2}
-       \frac{|V(y)|^2}{2+|y|^2}\,d\gamma_{r-1}(y)\\
-&\le4\phi(0)e^\alpha B_r(R)
-       \int e^{-\alpha|y|^2}b(y)\,d\gamma_{r-1}(y)\\
-&=4\phi(0)e^\alpha B_r(R)W_{\mathrm n}.
+       \frac{|V(y)|^2}{2+|y|^2}\,d\gamma_{r-1}(y)
+\\ &\le4\phi(0)e^\alpha B_r(R)
+       \int e^{-\alpha|y|^2}b(y)\,d\gamma_{r-1}(y)
+\\ &=4\phi(0)e^\alpha B_r(R)W_{\mathrm n}.
 \end{aligned}
 \tag{11}
 ```

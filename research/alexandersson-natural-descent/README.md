@@ -6,10 +6,10 @@ Coordination: [issue 116](https://github.com/1337isnot1337/solved-conjectures/is
 
 ## The full target
 
-For a partition $\lambda$, let $\operatorname{SYT}(\lambda)$ be its standard Young tableaux. A natural descent of a tableau is an index $i$ for which $i+1$ lies in a strictly higher row than $i$. Define
+For a partition $\lambda$, let $`\mathop{\mathrm{SYT}}(\lambda)`$ be its standard Young tableaux. A natural descent of a tableau is an index $i$ for which $i+1$ lies in a strictly higher row than $i$. Define
 
 ```math
-N_\lambda(t)=\sum_{T\in\operatorname{SYT}(\lambda)}t^{\operatorname{ndes}(T)}.
+N_\lambda(t)=\sum_{T\in\mathop{\mathrm{SYT}}(\lambda)}t^{\mathop{\mathrm{ndes}}(T)}.
 ```
 
 The conjecture asks that $N_\lambda(t)$ have only real zeros for every partition. The statement is explicitly attributed to Alexandersson (2026) in the author-maintained [SymCat open-problem page](https://www.symmetricfunctions.com/realRootedOpenProblems.htm), under “Tableaux, polytopes and Ehrhart theory.”
@@ -18,7 +18,7 @@ Natural descents differ from ordinary tableau descents, which ask for a strictly
 
 ## Exact evaluator
 
-Write $s=|\lambda|$ and let $\Omega_\lambda(u)$ count weakly order-preserving maps from the Ferrers poset to $\{1,\ldots,u\}$. The standard order-polytope Eulerian numerator identity is
+Write $s=|\lambda|$ and let $\Omega_\lambda(u)$ count weakly order-preserving maps from the Ferrers poset to $`\{1,\ldots,u\}`$. The standard order-polytope Eulerian numerator identity is
 
 ```math
 \sum_{m\ge0}\Omega_\lambda(m+1)t^m

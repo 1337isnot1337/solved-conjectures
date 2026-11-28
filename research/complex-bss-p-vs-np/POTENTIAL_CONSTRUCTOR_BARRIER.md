@@ -95,8 +95,8 @@ The finite Boolean sum of these rational functions is an identity in `C(X,y)`:
 \begin{aligned}
 \sum_{b\in\{0,1\}^m}E_b(X,y)
 &=\sum_b R_{X,y}(b)
-  -\sum_i\left(\sum_b Q_i(X,y;b)-\sum_b Q_i(X,y;T_i b)\right)\\
-&=\mathop{\mathrm{per}}_m(X)-y.
+  -\sum_i\left(\sum_b Q_i(X,y;b)-\sum_b Q_i(X,y;T_i b)\right)
+\\ &=\mathop{\mathrm{per}}_m(X)-y.
 \end{aligned}                                                    \tag{4}
 ```
 

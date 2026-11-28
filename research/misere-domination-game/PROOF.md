@@ -24,8 +24,8 @@ This is octal game 0.337. The equivalence preserves game trees, so it applies to
 Write P for a loss for the player to move, and N for a win. The empty state is N. The input is a multiset of positive heap lengths h, and S is their total. Call lengths 1, 4 and 5 *good*. For every other length make one virtual pile of type E or O (according as h is even or odd). Its weight c and threshold t are
 ```math
 c(h)=\begin{cases}
-1,& h\in\{2,3\},\\
-\lfloor h/2\rfloor-2,& h\ge6,
+1,& h\in\{2,3\},
+\\ \lfloor h/2\rfloor-2,& h\ge6,
 \end{cases}
 \qquad
 t(h)=\begin{cases}3,& h\text{ even},\\5,&h\text{ odd}.\end{cases}

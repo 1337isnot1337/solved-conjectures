@@ -10,7 +10,7 @@ The target is the full density formula, for each integer a that is neither a squ
 
 ```math
 \#\{p\le X:a\bmod p\text{ is a primitive root}\}
-  \sim A(a)\operatorname{Li}(X),
+  \sim A(a)\mathop{\mathrm{Li}}(X),
 \qquad
 A(a)=\sum_{n\ge1}\frac{\mu(n)}
  {[\mathbf Q(\mu_n,a^{1/n}):\mathbf Q]}.
@@ -48,7 +48,7 @@ Fix an integer |a|>1. For a prime q put
 
 ```math
 K_q=\mathbf Q(\mu_q,a^{1/q}),\qquad
-N_a(x,q)=\#\{x<p\le2x:p\text{ splits completely in }K_q\}.
+N_a(x,q)=\#\{x\lt p\le2x:p\text{ splits completely in }K_q\}.
 ```
 
 There is a q_0(a) such that, for every prime q>q_0(a),
@@ -97,7 +97,7 @@ This enlargement concerns the same imported zero-free input. It does not turn th
 For p not dividing a, define the multiplicative index
 
 ```math
-i_p(a)=\frac{p-1}{\operatorname{ord}_p(a)}.
+i_p(a)=\frac{p-1}{\mathop{\mathrm{ord}}_p(a)}.
 ```
 
 For p not dividing aq,
@@ -115,17 +115,17 @@ Fix 0<η<δ and y>q_0(a). From (2.2) and the union bound,
 
 ```math
 \begin{aligned}
-&\#\{x<p\le2x:\exists\text{ prime }q,\ 
-                y<q\le x^\eta,\ q\mid i_p(a)\}\\
-&\quad\ll_a
+&\#\{x\lt p\le2x:\exists\text{ prime }q,
+                \ y\lt q\le x^\eta,\ q\mid i_p(a)\}
+\\ &\quad\ll_a
  \frac{x}{\log x}\sum_{q>y}\frac1{q(q-1)}
  +\frac{x^{1-\delta}}{\log x}
-       \sum_{q\le x^\eta}\log(2q)\\
-&\quad\ll_a
+       \sum_{q\le x^\eta}\log(2q)
+\\ &\quad\ll_a
  \frac{x}{\lfloor y\rfloor\log x}
  +\frac{x^{1-\delta+\eta}}{\log x}.
-\tag{3.2}
-\end{aligned}
+
+\end{aligned} \tag{3.2}
 ```
 
 The first estimate uses the telescoping bound over all integers, and the second uses Chebyshev's estimate for the sum of log q over primes. Constants may depend on the fixed parameters; none depends on the growing q.
@@ -159,8 +159,8 @@ For M equal to the integer part of the upper bound,
 Every distinct prime p>x in question contributes at least log x to this product's logarithm. Therefore
 
 ```math
-\#\{x<p\le2x:\exists\text{ prime }q>Q_1(x),\
-                         q\mid i_p(a)\}
+\#\{x\lt p\le2x:\exists\text{ prime }q>Q_1(x),
+                         \ q\mid i_p(a)\}
  \ll_a\frac{x}{(\log x)^{2A+1}}
  =o_a\!\left(\frac{x}{\log x}\right).
 \tag{4.1}
@@ -173,8 +173,8 @@ This proof needs no zero-free hypothesis and counts the union directly, so repea
 For fixed 0<η<δ and A>0, the remaining assertion is
 
 ```math
-\boxed{\ 
- \sum_{\substack{x^\eta<q\le Q_1(x)\\q\ {\rm prime}}}
+\boxed{
+ \ \sum_{\substack{x^\eta\lt q\le Q_1(x)\\q\ {\rm prime}}}
  N_a(x,q)
  =o_a\!\left(\frac{x}{\log x}\right).
 \ }
@@ -190,7 +190,7 @@ Here is the proof, including the order of limits. Let M_y be the product of prim
 ```math
 P_y(x)=
  \left(\delta_y+o_{a,y}(1)\right)
- \bigl(\operatorname{Li}(2x)-\operatorname{Li}(x)\bigr),
+ \bigl(\mathop{\mathrm{Li}}(2x)-\mathop{\mathrm{Li}}(x)\bigr),
 \qquad
 \delta_y=\sum_{n\mid M_y}
  \frac{\mu(n)}{[\mathbf Q(\mu_n,a^{1/n}):\mathbf Q]}.
@@ -244,9 +244,9 @@ which is far larger than x/log x for the supplied δ. No choice of logarithmic A
 Ignoring the Kummer condition and using only p≡1 mod q gives, by Brun–Titchmarsh,
 
 ```math
-\sum_{x^\eta<q\le Q_1(x)}N_a(x,q)
+\sum_{x^\eta\lt q\le Q_1(x)}N_a(x,q)
  \ll \frac{x}{\log x}
-       \sum_{x^\eta<q\le Q_1(x)}\frac1q
+       \sum_{x^\eta\lt q\le Q_1(x)}\frac1q
  \ll_\eta \frac{x}{\log x}.
 ```
 
@@ -268,7 +268,7 @@ where each band is
 \mathcal P_i=
  \{\ell:\exp((\log x)^{a_i})\le\ell\le
              \exp(2(\log x)^{a_i})\},
-\qquad 0.1<a_1<\cdots<a_K<0.2.
+\qquad 0.1\lt a_1<\cdots\lt a_K<0.2.
 ```
 
 Equivalently, F must depend only on h after removing its complete band-prime part, including all powers. Its coefficients are a specified prime-versus-rough discrepancy in one variable and a bounded rough-supported sequence in the other. Lemma 10.2 allows other scalar coefficients only after proving cancellation against every character of logarithmic modulus, throughout the long frequency range |t|≤2X(log x)^B, for every fixed B. Proposition 10.3 verifies that condition for another specified rough-factor discrepancy.

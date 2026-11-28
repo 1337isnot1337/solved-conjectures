@@ -16,7 +16,7 @@ V(c)=D=\begin{pmatrix}-1&0\\0&1\end{pmatrix}.
 Let nu be a finite-order anti-cyclotomic character of G_K, so nu^c=nu^(-1), and define
 
 ~~~math
-A=\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu,\qquad
+A=\mathop{\mathrm{Ind}}_{G_K}^{G_{\mathbb Q}}\nu,\qquad
 U=V\otimes A,\qquad
 W=V|_{G_K}\otimes\nu.
 ~~~
@@ -65,9 +65,9 @@ If V is modular and its base change to K is cuspidal, W is the Galois representa
 The underlying endomorphism representation over K splits as
 
 ~~~math
-\operatorname{End}R
+\mathop{\mathrm{End}}R
 =
-\operatorname{End}W\oplus1\oplus W\oplus W^\vee.
+\mathop{\mathrm{End}}W\oplus1\oplus W\oplus W^\vee.
 \tag{3.2}
 ~~~
 
@@ -80,7 +80,7 @@ Set
 ~~~math
 J_s=\begin{pmatrix}0&1\\1&0\end{pmatrix},
 \qquad
-P=\operatorname{diag}(J_s,1).
+P=\mathop{\mathrm{diag}}(J_s,1).
 ~~~
 
 The descended corner satisfies
@@ -101,9 +101,9 @@ This is the polarized adjoint action. The following decomposition is an isomorph
 
 ~~~math
 \boxed{\quad
-\operatorname{ad}_{\mathrm{pol}}R
+\mathop{\mathrm{ad}}_{\mathrm{pol}}R
 \simeq
-\operatorname{ad}^0V\ \oplus\ \eta\ \oplus\ \eta\ \oplus\ U.
+\mathop{\mathrm{ad}}^0V\ \oplus\ \eta\ \oplus\ \eta\ \oplus\ U.
 \quad}
 \tag{4.2}
 ~~~
@@ -131,7 +131,7 @@ Bloch–Kato conditions commute with the displayed splitting. For the non-CM mod
 Consequently,
 
 ~~~math
-H^1_f(\mathbb Q,\operatorname{ad}_{\mathrm{pol}}R)
+H^1_f(\mathbb Q,\mathop{\mathrm{ad}}_{\mathrm{pol}}R)
 \simeq H^1_f(\mathbb Q,U).
 \tag{4.3}
 ~~~
@@ -182,7 +182,7 @@ Passing to a finite-index subgroup preserves connected algebraic monodromy. Unde
 
 ~~~math
 G_U^\circ=
-\{\operatorname{diag}(g,g):g\in\mathrm{SL}_2\}
+\{\mathop{\mathrm{diag}}(g,g):g\in\mathrm{SL}_2\}
 \simeq\mathrm{SL}_2,
 ~~~
 
@@ -203,8 +203,8 @@ There is a further elementary issue. An infinitesimal extension has matrices
 ~~~math
 R_t(h)=
 \begin{pmatrix}
-W(h)&t\,b(h)\\
-0&1
+W(h)&t\,b(h)
+\\ 0&1
 \end{pmatrix},
 \qquad t^2=0,
 ~~~

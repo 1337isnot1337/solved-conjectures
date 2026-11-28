@@ -28,10 +28,10 @@ The earlier odd-order lift appends a column with opposite signs in each row pair
 
 ```math
 A=\begin{pmatrix}
-v_1&1\\v_1&-1\\
-\vdots&\vdots\\
-v_m&1\\v_m&-1\\
-s&\varepsilon
+v_1&1\\v_1&-1
+\\ \vdots&\vdots
+\\ v_m&1\\v_m&-1
+\\ s&\varepsilon
 \end{pmatrix},\qquad s\in\{-1,1\}^{2m},\quad\varepsilon\in\{-1,1\}.
 \tag{3}
 ```

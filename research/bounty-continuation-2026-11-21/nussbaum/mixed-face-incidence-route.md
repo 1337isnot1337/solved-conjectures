@@ -30,8 +30,8 @@ Second, on three coordinates set
 
 ```math
 \begin{aligned}
-F_1&=\neg x_1\wedge x_2\wedge\neg x_3,\\
-F_2=F_3&=x_1\wedge\neg x_2\wedge\neg x_3.
+F_1&=\neg x_1\wedge x_2\wedge\neg x_3,
+\\ F_2=F_3&=x_1\wedge\neg x_2\wedge\neg x_3.
 \end{aligned}
 ```
 

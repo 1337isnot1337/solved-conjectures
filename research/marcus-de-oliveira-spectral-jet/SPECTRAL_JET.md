@@ -7,7 +7,7 @@ Research continuation, 21 November 2026. [Issue 57](https://github.com/1337isnot
 Fix a unitary matrix $`U`$ of order $`n`$, and write the spectral variables as $`x=(a_1,\ldots,a_n,b_1,\ldots,b_n)`$. Define
 
 ```math
-F_U(x)=\det\bigl(\operatorname{diag}(a)+U\operatorname{diag}(b)U^*\bigr),
+F_U(x)=\det\bigl(\mathop{\mathrm{diag}}(a)+U\mathop{\mathrm{diag}}(b)U^*\bigr),
 \qquad
 p_\sigma(x)=\prod_{i=1}^n(a_i+b_{\sigma(i)}).
 ```
@@ -19,7 +19,7 @@ If the unrestricted Marcus–de Oliveira conjecture holds, then at every real ve
 ```math
 \bigl(F_U(x_0),\nabla F_U(x_0)\bigr)
 \in
-\operatorname{conv}
+\mathop{\mathrm{conv}}
 \left\{
 \bigl(p_\sigma(x_0),\nabla p_\sigma(x_0)\bigr):\sigma\in S_n
 \right\}.
@@ -42,8 +42,8 @@ cp_\sigma(x_0)+v\cdot\nabla p_\sigma(x_0)+\delta.
 For a nonzero real number $`\varepsilon`$, set $`x_\varepsilon=x_0+i\varepsilon v`$ and consider the real linear functional on the complex plane
 
 ```math
-L_\varepsilon(z)=c\operatorname{Re}z+
-\frac{\operatorname{Im}z}{\varepsilon}.
+L_\varepsilon(z)=c\mathop{\mathrm{Re}}z+
+\frac{\mathop{\mathrm{Im}}z}{\varepsilon}.
 ```
 
 For every polynomial $`P`$ with real coefficients,
@@ -63,9 +63,9 @@ L_\varepsilon(F_U(x_\varepsilon))>
 for all sufficiently small nonzero $`\varepsilon`$. Both matrices
 
 ```math
-A_\varepsilon=\operatorname{diag}(a_i+i\varepsilon v_i),
+A_\varepsilon=\mathop{\mathrm{diag}}(a_i+i\varepsilon v_i),
 \qquad
-B_\varepsilon=U\operatorname{diag}(b_j+i\varepsilon v_{n+j})U^*
+B_\varepsilon=U\mathop{\mathrm{diag}}(b_j+i\varepsilon v_{n+j})U^*
 ```
 
 remain normal. The strict separating inequality contradicts the full conjecture and gives an entire analytic counterexample family. This proves the necessity of (1).
@@ -76,14 +76,14 @@ This argument does not establish (1), nor does it show that (1) is sufficient fo
 
 ## Exact base quantities
 
-At a real base, put $`C=\operatorname{diag}(a)+U\operatorname{diag}(b)U^*`$. The gradient is
+At a real base, put $`C=\mathop{\mathrm{diag}}(a)+U\mathop{\mathrm{diag}}(b)U^*`$. The gradient is
 
 ```math
 \frac{\partial F_U}{\partial a_i}
-=\operatorname{adj}(C)_{ii},
+=\mathop{\mathrm{adj}}(C)_{ii},
 \qquad
 \frac{\partial F_U}{\partial b_j}
-=\bigl(U^*\operatorname{adj}(C)U\bigr)_{jj}.
+=\bigl(U^*\mathop{\mathrm{adj}}(C)U\bigr)_{jj}.
 ```
 
 These formulas remain valid at singular bases. For each permutation product, the derivative is the product of all but the corresponding factor; no division by a possibly zero factor is needed.

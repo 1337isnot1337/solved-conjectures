@@ -17,7 +17,7 @@ cycles of length $j$. If $\chi$ is a nonzero character of $H$ such that
 \frac{|\chi(g)|}{\chi(e)(2^{L(g)}-1)}\le1,                    \tag{1}
 ```
 
-then $d_\chi^H(A)\le\chi(e)\operatorname{per}A$ for every complex PSD
+then $`d_\chi^H(A)\le\chi(e)\mathop{\mathrm{per}}A`$ for every complex PSD
 Hermitian $A$. Replacing $|\chi(g)|/\chi(e)$ by one is sufficient for
 all characters simultaneously. The [full conjecture](https://yair-lavi.com/mincs-list/conjecture-42/)
 also includes all imprimitive groups and the ordinary immanants of $S_n$.
@@ -28,7 +28,7 @@ includes all imprimitive wreath products with the trivial character.
 
 A zero diagonal entry gives a zero row and both sides vanish. Otherwise
 scale to a correlation matrix $C$; both sides scale by the same positive
-constant. Put $w_g=\prod_i c_{i,g(i)}$ and $P=\operatorname{per} C$.
+constant. Put $w_g=\prod_i c_{i,g(i)}$ and $`P=\mathop{\mathrm{per}} C`$.
 For every $g\ne e$,
 
 ```math
@@ -99,7 +99,7 @@ subgroups. This completes the uniform estimate and (1) applies.
 
 Finally, for $n\ge5$, $A_n$ is perfect and has only its trivial linear
 character. The sum over its even permutations equals
-$(\operatorname{per}A+\det A)/2\le\operatorname{per}A$ by Schur's
+$`(\mathop{\mathrm{per}}A+\det A)/2\le\mathop{\mathrm{per}}A`$ by Schur's
 inequality. The two linear characters of $S_n$ give the permanent and
 determinant. Thus every sufficiently large primitive action satisfies
 Minc's degree-one inequality.

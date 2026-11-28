@@ -23,7 +23,7 @@ g(z,q)_{a h}=\frac{(z+\bar q_h)^{\rho_a}}
 For a word H=(h_1,...,h_k) in [s]^k define its prefix heights
 
 ```math
-q^{(t)}(H)=q-s\eta\sum_{r<t}e_{h_r}.
+q^{(t)}(H)=q-s\eta\sum_{r\lt t}e_{h_r}.
                                                         \tag{1}
 ```
 
@@ -204,7 +204,7 @@ With F_n defined in (2), the exact adjacent relation is
 \check R_{V,t}(z_t-z_{t+1})\mathcal F_n(Z;q)
  =\mathcal F_n(s_tZ;q)\,
    \check R_{D,t}\!\left(z_t-z_{t+1};
-     q-s\eta\sum_{r<t}E^{(r)}\right).                  \tag{11}
+     q-s\eta\sum_{r\lt t}E^{(r)}\right).                  \tag{11}
 ```
 
 Here E^(r) means the diagonal site-label control at factor r;

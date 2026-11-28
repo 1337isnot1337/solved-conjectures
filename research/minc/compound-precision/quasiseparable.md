@@ -2,13 +2,13 @@
 
 Let $A$ be a rational $n$-square matrix in a given order. Suppose both off-diagonal rectangles across each prefix cut have rank at most $r$. Thus $A$ is quasiseparable of order at most $r$ in both directions. For **every** $0\le k\le n$, an exact application of the permanental compound $P_k(A)$ to a vector of length $N=\binom nk$ takes $N(n+1)^{O(r+1)}$ rational operations, including construction from $A$. The bound also covers the nearly full layers where $N$ is small. For $A\ge0$ this gives a deterministic exact representation of the Perron root in $N^2(n+1)^{O(r+1)}$ rational operations. Signed inputs admit the same action for characteristic-polynomial algorithms. These are field-operation bounds. [Minc P18](https://yair-lavi.com/mincs-list/problem-18/index.html) · [Minc P17](https://yair-lavi.com/mincs-list/problem-17/index.html)
 
-Banded matrices, their simultaneous reorderings, and diagonal matrices with a global rank-$r$ correction are examples. The class also includes full-rank matrices with many distinct nested off-diagonal factors. Classical quasiseparable generators for the original matrix are known. The construction below tracks all matching minors in one ordered product of local maps. The fixed-weight contraction is stated for arbitrary local maps and may be used independently. [Pernet and Storjohann, generators for quasiseparable matrices](https://www.sciencedirect.com/science/article/pii/S0747717117300767)
+Banded matrices, their simultaneous reorderings, and diagonal matrices with a global rank-$`r`$ correction are examples. The class also includes full-rank matrices with many distinct nested off-diagonal factors. Classical quasiseparable generators for the original matrix are known. The construction below tracks all matching minors in one ordered product of local maps. The fixed-weight contraction is stated for arbitrary local maps and may be used independently. [Pernet and Storjohann, generators for quasiseparable matrices](https://www.sciencedirect.com/science/article/pii/S0747717117300767)
 
 ## Multiplication on a fixed Hamming layer
 
 Suppose a binary-input, binary-output kernel has entries
 ```math
- K_{I,J}=\operatorname{tr}\big(T_1(i_1,j_1)\cdots T_n(i_n,j_n)\big),
+ K_{I,J}=\mathop{\mathrm{tr}}\big(T_1(i_1,j_1)\cdots T_n(i_n,j_n)\big),
 ```
 where $i_s,j_s$ are membership bits and the matrices have compatible dimensions bounded by $D$, including the wrap-around bond. Open boundary products are included by using dimension one on that bond. The principal block $|I|=|J|=k$ can be applied in $O(n^2 D^3 \sum_{a=0}^h\binom na)$ field operations up to polynomial indexing overhead, where $h=\min(k,n-k)$. At most $D^2\sum_{a=0}^h\binom na$ field elements of working array are needed apart from maps, input and output. In particular the sum of binomial coefficients is at most $(h+1)N$.
 

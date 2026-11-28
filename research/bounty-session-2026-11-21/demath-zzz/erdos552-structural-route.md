@@ -31,7 +31,7 @@ g(N)=\max\{\delta(G): |V(G)|=N,\ G\text{ is }C_4\text{-free}\}.
 The maximum exists because there are finitely many graphs on a fixed labelled N-vertex set. For positive integers n,N,
 
 ```math
-f(n)\le N\quad\Longleftrightarrow\quad g(N)<N-n.\tag{1}
+f(n)\le N\quad\Longleftrightarrow\quad g(N)\lt N-n.\tag{1}
 ```
 
 To prove this, colour a complete N-vertex graph red and blue, and let G be its red graph. The absence of a red C4 says G is C4-free. The absence of a blue K_(1,n) says every blue degree is at most n−1. Since each blue degree is N−1−d_G(v), this is equivalent to every red degree being at least N−n. Thus a colouring avoiding both targets exists exactly when g(N)≥N−n. Ramsey monotonicity gives (1).

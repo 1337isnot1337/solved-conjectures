@@ -36,10 +36,10 @@ B output b, and D label (i,j) is
 ={}&\sum_{r,t}y_{tj}d_{rb}
  \left[\sum_z (V_zS_z)_{ar}x_{it}v_{b,t}^{z,ij}
        -\sum_{z,h}(V_z)_{ah}x_{it}v_{h,t}^{z,ij}(S_z)_{hr}
- \right]\\
-&+\delta_{bj}\sum_t\sum_z(V_zS_z)_{at}x_{it}
-                                      v_{j,t}^{z,ij}. \tag{2}
-\end{aligned}
+ \right]
+\\ &+\delta_{bj}\sum_t\sum_z(V_zS_z)_{at}x_{it}
+                                      v_{j,t}^{z,ij}.
+\end{aligned} \tag{2}
 ```
 
 Only Y derivatives have been normal ordered. In particular, every

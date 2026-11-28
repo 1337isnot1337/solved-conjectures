@@ -17,7 +17,7 @@ Let $`J_n`$ have every entry $`1/n`$, let $`d_n=n!/n^n`$, and put
 
 ~~~math
 \mathcal H_n=\{B\in\mathbb R^{n\times n}:B\mathbf1=B^T\mathbf1=0\},
-\qquad P_n(B)=\frac{\operatorname{per}(J_n+B)}{d_n}.
+\qquad P_n(B)=\frac{\mathop{\mathrm{per}}(J_n+B)}{d_n}.
 ~~~
 
 **Theorem 1.** For every $`n\ge2`$, every $`B\in\mathcal H_n`$ with Frobenius norm at most
@@ -33,7 +33,7 @@ Entries of $`J_n+B`$ need not be nonnegative. Consequently,
 
 ~~~math
 \boxed{\quad
-\operatorname{per}(J_n+B)
+\mathop{\mathrm{per}}(J_n+B)
 \ge d_n\left(1+\frac1{32}\|B\|_F^2\right)
 \qquad(\|B\|_F\le1/1000).
 \quad}                                                        \tag{2}
@@ -55,7 +55,7 @@ then
 
 ~~~math
 \boxed{\quad
-\operatorname{per}A-\operatorname{per}U_n
+\mathop{\mathrm{per}}A-\mathop{\mathrm{per}}U_n
 \ge\frac{d_n}{32}\|A-U_n\|_F^2.
 \quad}                                                        \tag{4}
 ~~~
@@ -94,8 +94,8 @@ tuples give
 
 ~~~math
 \sigma_k(B)=\frac1{k!}
-\sum_{\substack{i_1,\ldots,i_k\ \mathrm{distinct}\\
-                j_1,\ldots,j_k\ \mathrm{distinct}}}
+\sum_{\substack{i_1,\ldots,i_k\ \mathrm{distinct}
+                \\ j_1,\ldots,j_k\ \mathrm{distinct}}}
 \prod_{\ell=1}^k b_{i_\ell j_\ell}.
 ~~~
 
@@ -130,8 +130,8 @@ Therefore
 ~~~math
 \begin{aligned}
 \log Z
-&=H(p)+\frac12\sum_e\mathbb E_p\log q(X_e)\\
-&\le-\frac12\sum_e D(p_e\Vert q)\le0.
+&=H(p)+\frac12\sum_e\mathbb E_p\log q(X_e)
+\\ &\le-\frac12\sum_e D(p_e\Vert q)\le0.
 \end{aligned}
 ~~~
 
@@ -174,8 +174,8 @@ follows by integrating the decreasing function log(1-x/n):
 ~~~math
 \begin{aligned}
 \sum_{j=0}^{k-1}\log(1-j/n)
-&\ge\int_0^k\log(1-x/n)\,dx\\
-&=-k-(n-k)\log(1-k/n)\ge-k.
+&\ge\int_0^k\log(1-x/n)\,dx
+\\ &=-k-(n-k)\log(1-k/n)\ge-k.
 \end{aligned}
 ~~~
 
@@ -194,9 +194,9 @@ derivative estimate to $`Q_k(B+zH)`$ on $`|z|=2\delta/(k-2)`$. For $`k\ge3`$,
 ~~~math
 \begin{aligned}
 |\nabla^2Q_k(B)[H,H]|
-&\le a_k\frac{k^k}{2(k-2)^{k-2}}\delta^{k-2}\\
-&\le\frac{e^2}{2}k^2a_k\delta^{k-2}.                          \tag{11}
-\end{aligned}
+&\le a_k\frac{k^k}{2(k-2)^{k-2}}\delta^{k-2}
+\\ &\le\frac{e^2}{2}k^2a_k\delta^{k-2}.
+\end{aligned} \tag{11}
 ~~~
 
 The last step uses $`(1+2/(k-2))^{k-2}\le e^2`$. Scaling supplies the factor
@@ -255,10 +255,10 @@ For the remaining terms, 200e delta<3/5, so
 ~~~math
 \begin{aligned}
 S_{\ge61}
-&\le\frac9{2\delta^2}\sum_{k\ge61}k^2(3/5)^k\\
-&=4500000\,(3/5)^{61}\cdot9775
-<\frac1{500}.                                               \tag{17}
-\end{aligned}
+&\le\frac9{2\delta^2}\sum_{k\ge61}k^2(3/5)^k
+\\ &=4500000\,(3/5)^{61}\cdot9775
+<\frac1{500}.
+\end{aligned} \tag{17}
 ~~~
 
 Here we used the exact identity
@@ -355,7 +355,7 @@ diagonal and zero line sums, so
 
 ~~~math
 \langle B_0,D\rangle
-=-\frac{\operatorname{tr}D}{n-1}=0,\qquad
+=-\frac{\mathop{\mathrm{tr}}D}{n-1}=0,\qquad
 \|B_0+D\|_F^2=\frac1{n-1}+\|D\|_F^2.                         \tag{19}
 ~~~
 
@@ -368,8 +368,8 @@ D is zero because its diagonal and total sum vanish. Therefore
 ~~~math
 \begin{aligned}
 P_n(B_0+D)-P_n(B_0)
-&=\int_0^1(1-t)\nabla^2P_n(B_0+tD)[D,D]\,dt\\
-&\ge\frac1{32}\|D\|_F^2.
+&=\int_0^1(1-t)\nabla^2P_n(B_0+tD)[D,D]\,dt
+\\ &\ge\frac1{32}\|D\|_F^2.
 \end{aligned}
 ~~~
 
@@ -392,7 +392,7 @@ Lelarge's maximum-matching coefficient inequality and Gurvits's theorem.
 It proves, for every doubly stochastic $`A`$ and $`1\le k<n`$,
 
 ~~~math
-\log\frac{\operatorname{per}A}{d_n}
+\log\frac{\mathop{\mathrm{per}}A}{d_n}
 \ge\frac{k\|A-J_n\|_F^2}{2n}
 -\frac{k(k-1)}{4(n-k)(n-k+1)}.
 ~~~

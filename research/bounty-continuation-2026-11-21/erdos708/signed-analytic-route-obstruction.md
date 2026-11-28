@@ -62,8 +62,8 @@ Since $`(t-1)_+-(t-2)_+=1_{t\ge2}`$ for integer $`t\ge0`$, summing (1) proves
 ```math
 \begin{aligned}
 &\sum_{b=x+1}^{x+M}(\omega_P(b)-1)_+
--\sum_{m=1}^{M}(\omega_P(m)-2)_+\\
-&\qquad=
+-\sum_{m=1}^{M}(\omega_P(m)-2)_+
+\\ &\qquad=
 \#\{m\le M:\omega_P(m)\ge2\}
 +\sum_{\substack{J\subseteq P\\|J|\ge2}}(-1)^{|J|}\delta_J(x,M).
 \end{aligned}

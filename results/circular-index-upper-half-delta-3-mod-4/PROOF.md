@@ -41,10 +41,10 @@ E_{c+6} = E_c + 1 \qquad (c \in \mathbb Z_{2n}). \tag{T}
 The classes of colours $`0, \dots, 7`$ are $`M_0,\ M_1+2g,\ M_0+(4g+1),\ M_1,\ M_0+(2g+1),\ M_1+(4g+1),\ M_0+1,\ M_1+(2g+1)`$, with vertex sets (mod $`n`$; $`8g+1 \equiv 2g`$, $`6g+1 \equiv 0`$)
 ```math
 \begin{aligned}
-V(E_0) &= [0,5] \cup [2g+7, 4g], & V(E_1) &= [2g+1, 2g+6] \cup [4g+7, 6g],\\
-V(E_2) &= [4g+1, 4g+6] \cup [7, 2g], & V(E_3) &= [1,6] \cup [2g+7, 4g],\\
-V(E_4) &= \{0\} \cup [2g+1, 2g+6] \cup [4g+8, 6g], & V(E_5) &= [4g+2, 4g+7] \cup [7, 2g],\\
-V(E_6) &= [1,6] \cup [2g+8, 4g+1], & V(E_7) &= \{0\} \cup [2g+2, 2g+7] \cup [4g+8, 6g].
+V(E_0) &= [0,5] \cup [2g+7, 4g], & V(E_1) &= [2g+1, 2g+6] \cup [4g+7, 6g],
+\\ V(E_2) &= [4g+1, 4g+6] \cup [7, 2g], & V(E_3) &= [1,6] \cup [2g+7, 4g],
+\\ V(E_4) &= \{0\} \cup [2g+1, 2g+6] \cup [4g+8, 6g], & V(E_5) &= [4g+2, 4g+7] \cup [7, 2g],
+\\ V(E_6) &= [1,6] \cup [2g+8, 4g+1], & V(E_7) &= \{0\} \cup [2g+2, 2g+7] \cup [4g+8, 6g].
 \end{aligned}
 ```
 **Lemma 3 (perfect base colouring).** For every $`c`$, $`E_c, E_{c+1}, E_{c+2}`$ are pairwise vertex-disjoint and miss exactly one vertex $`x_c`$, where $`(x_0,\dots,x_5) = (6,\ 0,\ 4g+7,\ 4g+1,\ 2g+7,\ 2g+1)`$ and $`x_{c+6} = x_c + 1`$.

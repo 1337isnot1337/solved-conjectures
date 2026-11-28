@@ -9,7 +9,7 @@ For every doubly stochastic nonnegative matrix A of order n with zero diagonal,
 the conjecture asks whether
 
 ```math
-\operatorname{per} A\geq \frac{D_n}{(n-1)^n},
+\mathop{\mathrm{per}} A\geq \frac{D_n}{(n-1)^n},
 ```
 with equality only at U_n=(J-I)/(n-1). Here D_n counts derangements.
 
@@ -54,9 +54,9 @@ A=\frac12\begin{pmatrix}
 Both A and (A+A^T)/2 are zero-diagonal doubly stochastic. Direct expansion gives
 
 ```math
-\operatorname{per}A=\frac18,
+\mathop{\mathrm{per}}A=\frac18,
 \qquad
-\operatorname{per}\frac{A+A^T}{2}=\frac9{64}>\frac18.
+\mathop{\mathrm{per}}\frac{A+A^T}{2}=\frac9{64}>\frac18.
 ```
 This says nothing against Conjecture 44: both values exceed per U_4=1/9.
 It excludes unconditional transpose symmetrization as a proof step.

@@ -35,9 +35,9 @@ $`a,b,c`$ denote the three $`q\times q`$ matrices of these numbers,
 \begin{aligned}
 \mathop{\mathrm{tr}}(PQ)
 &=\sum_{i,j,k}a_{ij}b_{jk}c_{ki}
-=\mathop{\mathrm{tr}}(abc)\\
-&\le\|a\|_{\mathrm F}\|b\|_{\mathrm F}\|c\|_{\mathrm F}\\
-&\le\sqrt{\Bigl(\sum_{ij}a_{ij}\Bigr)
+=\mathop{\mathrm{tr}}(abc)
+\\ &\le\|a\|_{\mathrm F}\|b\|_{\mathrm F}\|c\|_{\mathrm F}
+\\ &\le\sqrt{\Bigl(\sum_{ij}a_{ij}\Bigr)
               \Bigl(\sum_{jk}b_{jk}\Bigr)
               \Bigl(\sum_{ki}c_{ki}\Bigr)}.
 \end{aligned}

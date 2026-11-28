@@ -47,7 +47,7 @@ Let $`H_\ell`$ denote the orthonormal probabilists' Hermite polynomial. The clas
 ```math
 \sum_{\ell\ge0}t^\ell H_\ell(s)^2
 =\frac{1}{\sqrt{1-t^2}}
-\exp\left(\frac{t s^2}{1+t}\right),\qquad 0<t<1. \tag{2}
+\exp\left(\frac{t s^2}{1+t}\right),\qquad 0\lt t<1. \tag{2}
 ```
 
 For $`|s|\le1`$ and $`t=1/2`$, the right side is at most $`2e^{1/3}/\sqrt3<2`$. For example, $`e^{1/3}<1/(1-1/3)=3/2`$ suffices for the last strict inequality. Therefore
@@ -114,7 +114,7 @@ Then $`g_{ji}=-g_{ij}`$, $`h_i=\sum_{j\ne i}g_{ij}`$, and $`|g_{ij}|\le1`$. Writ
 
 ```math
 W(\mathcal A\mid\mathcal C)
-=\sum_{i<j}\int\min(|n_{ij}\cdot x|,1)|g_{ij}(x)|\,d\gamma_d(x).
+=\sum_{i\lt j}\int\min(|n_{ij}\cdot x|,1)|g_{ij}(x)|\,d\gamma_d(x).
 ```
 
 The common moment-edge length is
@@ -130,14 +130,14 @@ The regular assignment cost is
 D(\mathcal A\mid\mathcal C)
 =\sum_{i\ne j}\int_{C_i\cap A_j}
  (m_i^{\mathcal C}-m_j^{\mathcal C})\cdot x\,d\gamma_d
-=\ell_q\sum_{i<j}\int|n_{ij}\cdot x||g_{ij}|\,d\gamma_d. \tag{5}
+=\ell_q\sum_{i\lt j}\int|n_{ij}\cdot x||g_{ij}|\,d\gamma_d. \tag{5}
 ```
 
 In particular, $`\ell_qW\le D`$. The seminorm associated with the positive operator $`R`$ obeys Cauchy--Schwarz, so (1) implies
 
 ```math
 \sum_i\langle h_i,R_{\rho,d}h_i\rangle
-\le2(q-1)\sum_{i<j}\langle g_{ij},R_{\rho,d}g_{ij}\rangle
+\le2(q-1)\sum_{i\lt j}\langle g_{ij},R_{\rho,d}g_{ij}\rangle
 \le144(q-1)\rho^2 W. \tag{6}
 ```
 

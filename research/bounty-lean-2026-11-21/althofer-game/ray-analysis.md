@@ -13,15 +13,15 @@ $`n>1`$, the successors are $`o(3n-1)`$ and $`o(3n+1)`$.
 Define $`I(n)`$ and $`D(n)`$ to be the larger and smaller successors. Then
 
 ```math
-I(n)=\begin{cases}(3n-1)/2,&n\equiv1\pmod4,\\
-(3n+1)/2,&n\equiv3\pmod4.
+I(n)=\begin{cases}(3n-1)/2,&n\equiv1\pmod4,
+\\ (3n+1)/2,&n\equiv3\pmod4.
 \end{cases}
 ```
 
 The other numerator is divisible by four. Consequently, for odd $`n>1`$,
 
 ```math
-D(n)\leq\frac{3n+1}{4}<n<I(n).
+D(n)\leq\frac{3n+1}{4}\lt n\lt I(n).
 ```
 
 Both successors are coprime to three, since neither $`3n-1`$ nor $`3n+1`$
@@ -34,8 +34,8 @@ The map $`I`$ is a bijection from odd integers greater than one to odd integers
 greater than one that are not divisible by three. Its inverse is
 
 ```math
-J(m)=\begin{cases}(2m+1)/3,&m\equiv1\pmod6,\\
-(2m-1)/3,&m\equiv5\pmod6.
+J(m)=\begin{cases}(2m+1)/3,&m\equiv1\pmod6,
+\\ (2m-1)/3,&m\equiv5\pmod6.
 \end{cases}
 ```
 
@@ -61,8 +61,8 @@ The decreasing edge has the useful expression
 
 ```math
 D(n)=\begin{cases}
-o(I(n)+1),&n\equiv1\pmod4,\\
-o(I(n)-1),&n\equiv3\pmod4.
+o(I(n)+1),&n\equiv1\pmod4,
+\\ o(I(n)-1),&n\equiv3\pmod4.
 \end{cases}
 ```
 

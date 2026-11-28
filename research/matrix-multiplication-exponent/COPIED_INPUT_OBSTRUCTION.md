@@ -49,7 +49,7 @@ A rank-one four-party tensor has matrix rank at most one under this flattening. 
 
 For the reverse bound, write each $T_i$ as a sum of $r_i$ simple two-tensors over $\mathbb K$. Multiplying each summand by $e_i\otimes e\prime_i$ gives a decomposition of $\mathcal C(T)$ into exactly $s$ simple four-party tensors. Thus both rank and border rank equal $s$.
 
-The flattening of the $k$th tensor power is the $k$th Kronecker power of the preceding flattening, and has rank $s^k$. The product of the explicit decompositions has $s^k$ terms. This proves the statement for every power and hence the asymptotic-rank assertion. The zero case has all three ranks zero. End of proof.
+The flattening of the $`k`$th tensor power is the $`k`$th Kronecker power of the preceding flattening, and has rank $s^k$. The product of the explicit decompositions has $s^k$ terms. This proves the statement for every power and hence the asymptotic-rank assertion. The zero case has all three ranks zero. End of proof.
 
 ## Polynomial multiplication after copying
 
@@ -148,7 +148,7 @@ e_i^{A_1}\otimes e_j^{A_2}
 \otimes e_{(j,k)}^B\otimes e_{(k,i)}^C.
 ```
 
-This is the wire tensor of the path $A_1-C-B-A_2$. Flatten it across the bipartition $\{A_1,B\}\mid\{C,A_2\}$. A row is indexed by $(i,j,k)$ and has its unique nonzero entry in column $(k,i,j)$. Hence the flattening is a permutation matrix of order $n^3$. The defining sum has $n^3$ simple terms, and the same argument on tensor powers gives
+This is the wire tensor of the path $A_1-C-B-A_2$. Flatten it across the bipartition $`\{A_1,B\}\mid\{C,A_2\}`$. A row is indexed by $(i,j,k)$ and has its unique nonzero entry in column $(k,i,j)$. Hence the flattening is a permutation matrix of order $n^3$. The defining sum has $n^3$ simple terms, and the same argument on tensor powers gives
 
 ```math
 R_K(S_n)=\underline R_K(S_n)=\widetilde R_K(S_n)=n^3

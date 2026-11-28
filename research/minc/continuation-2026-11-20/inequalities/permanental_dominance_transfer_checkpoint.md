@@ -15,7 +15,7 @@ asks whether
 
 ```math
 f_{H,\chi}(A):=\frac1{\chi(e)}\sum_{h\in H}\chi(h)
-                    \prod_i a_{i,h(i)}\leq\operatorname{per}A
+                    \prod_i a_{i,h(i)}\leq\mathop{\mathrm{per}}A
 ```
 
 for every positive semidefinite Hermitian matrix and every character of every
@@ -54,12 +54,12 @@ $`\rho_\lambda|_H`$. Fourier inversion gives, with $`m=[S_n:H]`$,
 
 ```math
 \boxed{f_{H,\chi}(A)=\frac1m\sum_\lambda
-                 d_\lambda\operatorname{tr}(C_\lambda P_{\lambda,\chi}).}
+                 d_\lambda\mathop{\mathrm{tr}}(C_\lambda P_{\lambda,\chi}).}
 \tag{1}
 ```
 
-Indeed, \(a_h=N^{-1}\sum_\lambda d_\lambda
-\operatorname{tr}(C_\lambda\rho_\lambda(h^{-1}))\); summing with coefficient
+Indeed, $`a_h=N^{-1}\sum_\lambda d_\lambda
+\mathop{\mathrm{tr}}(C_\lambda\rho_\lambda(h^{-1}))`$; summing with coefficient
 $`\chi(h)`$ proves (1). If only one block survives and its projection has
 rank one, the generalized matrix function is $`d_\lambda/m`$ times a unit
 Rayleigh quotient. Containment in an induced representation does not remove
@@ -71,7 +71,7 @@ The corresponding normalized formula is
 
 ```math
 f_{H,\chi}(A)=\frac1{mq^2}\sum_\lambda d_\lambda
-                    \operatorname{tr}(C_\lambda P_{\lambda,\chi}).
+                    \mathop{\mathrm{tr}}(C_\lambda P_{\lambda,\chi}).
 \tag{2}
 ```
 
@@ -92,7 +92,7 @@ For a Gram matrix of rank $`r`$, Schur--Weyl duality gives
 ```math
 C_\lambda=0\quad\text{if }\ell(\lambda)>r,
 \qquad
-\operatorname{rank}C_\lambda\leq\dim S_\lambda(\mathbb C^r).
+\mathop{\mathrm{rank}}C_\lambda\leq\dim S_\lambda(\mathbb C^r).
 \tag{3}
 ```
 
@@ -102,12 +102,12 @@ $`V_\lambda\otimes S_\lambda(\mathbb C^r)`$.
 
 ## 3. The affine group of order twenty
 
-Let $`F_{20}=\operatorname{AGL}(1,5)\leq S_5`$, acting on $`\mathbb F_5`$.
+Let $`F_{20}=\mathop{\mathrm{AGL}}(1,5)\leq S_5`$, acting on $`\mathbb F_5`$.
 Its index is six. Exact character sums give
 
 ```math
-\operatorname{Ind}_{F_{20}}^{S_5}1=[5]+[2,2,1],\qquad
-\operatorname{Ind}_{F_{20}}^{S_5}(\operatorname{sgn}|_{F_{20}})
+\mathop{\mathrm{Ind}}_{F_{20}}^{S_5}1=[5]+[2,2,1],\qquad
+\mathop{\mathrm{Ind}}_{F_{20}}^{S_5}(\mathop{\mathrm{sgn}}|_{F_{20}})
       =[1^5]+[3,2].
 \tag{4}
 ```
@@ -116,7 +116,7 @@ Each of its other two linear characters induces $`[3,1,1]`$. Consequently,
 on rank-two Gram matrices, the four functions are respectively
 
 ```math
-\frac{\operatorname{per}A}{6},\qquad
+\frac{\mathop{\mathrm{per}}A}{6},\qquad
 \frac56\langle v,C_{(3,2)}v\rangle,\qquad 0,\qquad0.
 \tag{5}
 ```
@@ -131,7 +131,7 @@ entries $`+1`$ on the five edges of a pentagon and $`-1`$ on its five
 diagonals. Their squared norm is ten. The six normalized vectors form an
 equiangular tight frame in the $`(3,2)`$ component, with
 $`\sum vv^*=(6/5)I`$. Therefore the six sign-function values sum to
-$`\operatorname{tr}C_{(3,2)}`$.
+$`\mathop{\mathrm{tr}}C_{(3,2)}`$.
 
 For the two published order-five examples the exact values are below. The
 checker uses Shchesnovich's core up to entrywise conjugation; this leaves
@@ -145,7 +145,7 @@ unchanged.
 
 Moreover, Shchesnovich's published top eigenvalue
 $`320(2185775+\sqrt{160600333345})`$, and Tran's top eigenvalue $`512`$,
-are both strictly below $`(6/5)\operatorname{per}A`$. Thus even arbitrary
+are both strictly below $`(6/5)\mathop{\mathrm{per}}A`$. Thus even arbitrary
 alignment with the top eigenspace would not make (5) violate dominance for
 either core. The checker verifies these comparisons with integer arithmetic.
 
@@ -157,7 +157,7 @@ conjugates. The checker verifies the following induced-character identity at
 all 720 elements of $`S_6`$:
 
 ```math
-\operatorname{Ind}_H^{S_6}(\operatorname{sgn}|_H)=[1^6]+[3,3].
+\mathop{\mathrm{Ind}}_H^{S_6}(\mathop{\mathrm{sgn}}|_H)=[1^6]+[3,3].
 \tag{6}
 ```
 
@@ -184,14 +184,14 @@ eigenvalue approximations.
 
 ## 5. The Fano-plane group and Drury's seven-vector example
 
-Let $`H=\operatorname{GL}(3,2)`$ act on the seven nonzero binary vectors.
+Let $`H=\mathop{\mathrm{GL}}(3,2)`$ act on the seven nonzero binary vectors.
 It has order 168 and index 30 in $`S_7`$. Its numbers of orbits on
 $`k`$-subsets for $`k=0,1,2,3`$ are $`1,1,1,2`$. The multiplicities of
-the two-row partitions in $`\operatorname{Ind}_H^{S_7}1`$ are therefore
+the two-row partitions in $`\mathop{\mathrm{Ind}}_H^{S_7}1`$ are therefore
 $`1,0,0,1`$. On rank-two matrices,
 
 ```math
-f_{H,1}(A)=\frac{\operatorname{per}A+
+f_{H,1}(A)=\frac{\mathop{\mathrm{per}}A+
                     14\langle v,C_{(4,3)}v\rangle}{30}.
 \tag{7}
 ```
@@ -204,9 +204,9 @@ are consequently multiplied by $`32`$.
 The exact calculation in $`\mathbb Z[\zeta]`$ gives
 
 ```math
-\operatorname{per}A=1440,\quad
-\operatorname{tr}C_{(4,3)}=4200,\quad
-\operatorname{tr}C_{(4,3)}^2=8820000.
+\mathop{\mathrm{per}}A=1440,\quad
+\mathop{\mathrm{tr}}C_{(4,3)}=4200,\quad
+\mathop{\mathrm{tr}}C_{(4,3)}^2=8820000.
 ```
 
 By (3) this block has rank at most two. Positivity and the two moments force
@@ -240,7 +240,7 @@ Summing over each fiber of $`K\to G`$ gives
 
 ```math
 f_{H,\chi}(B)=\frac{|K_0|q'}q f_{G,\theta}(A),\qquad
-\operatorname{per}B=|Y|\operatorname{per}A.
+\mathop{\mathrm{per}}B=|Y|\mathop{\mathrm{per}}A.
 \tag{9}
 ```
 
@@ -257,12 +257,12 @@ rescaling of the marker vectors does not change this conclusion.
 This argument does not cover arbitrary orthogonal Gram blocks. For example,
 on $`A\oplus B`$, the diagonal subgroup
 $`\{(g,g):g\in S_n\}`$ with trivial character gives
-$`\operatorname{per}(A\circ B)`$. Thus a Chollet counterexample would be a
+$`\mathop{\mathrm{per}}(A\circ B)`$. Thus a Chollet counterexample would be a
 dominance counterexample in twice the order. This identity does not transfer
 a permanent-on-top counterexample by itself.
 
 Another proposed amplification would extract
-$`\operatorname{tr}C_\lambda^k`$ through tuples satisfying
+$`\mathop{\mathrm{tr}}C_\lambda^k`$ through tuples satisfying
 $`g_1\cdots g_k=e`$. For a nonabelian group, that set is not a subgroup of
 the direct product when $`k\geq2`$. It cannot be substituted for the
 permutation subgroup in Problem 2.
@@ -279,8 +279,8 @@ $`K=\{g\in H:g(n+1)=n+1\}`$, viewed as a subgroup of $`S_n`$. Use the
 restricted character on $`K`$, and define
 
 ```math
-P=\operatorname{per}A,\qquad \delta=P-f_{K,\chi|_K}(A),\qquad
-D_{ji}=\operatorname{per}A(i\mid j).
+P=\mathop{\mathrm{per}}A,\qquad \delta=P-f_{K,\chi|_K}(A),\qquad
+D_{ji}=\mathop{\mathrm{per}}A(i\mid j).
 ```
 
 The orientation of the cofactor transpose is deliberate. Define
@@ -295,7 +295,7 @@ For $`B=\begin{pmatrix}A&b\\b^*&c\end{pmatrix}`$, separating permutations
 that fix the new index from those that move it gives exactly
 
 ```math
-\operatorname{per}B=cP+b^*Db,\qquad
+\mathop{\mathrm{per}}B=cP+b^*Db,\qquad
 f_{H,\chi}(B)=c f_{K,\chi|_K}(A)+b^*D_Hb.
 \tag{11}
 ```
@@ -306,7 +306,7 @@ vectors and $`u`$ is orthogonal to that span. Then $`b=W^*v`$ and
 $`c=\|v\|^2+\|u\|^2`$. Thus
 
 ```math
-\boxed{\operatorname{per}B-f_{H,\chi}(B)
+\boxed{\mathop{\mathrm{per}}B-f_{H,\chi}(B)
    =v^*M v+\delta\|u\|^2,\qquad
 M=\delta I+W(D-D_H)W^*.}
 \tag{12}

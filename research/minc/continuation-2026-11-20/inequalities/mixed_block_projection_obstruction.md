@@ -22,12 +22,12 @@ positive semidefinite $`r\times r`$ matrix whose law is invariant under
 unitary conjugation, and suppose
 
 ```math
-\operatorname{rank}T\leq s\leq r,
+\mathop{\mathrm{rank}}T\leq s\leq r,
 \qquad \mathbb E\|T\|^n<\infty,
 \qquad \Pr(T\ne0)>0.
 ```
 
-Put $`B=W^*TW`$, so that $`\operatorname{rank}B\leq s`$. For a
+Put $`B=W^*TW`$, so that $`\mathop{\mathrm{rank}}B\leq s`$. For a
 partition $`\lambda\vdash n`$ with $`\ell(\lambda)\leq r`$, use
 the convention
 
@@ -42,7 +42,7 @@ $`W`$, such that
 ```math
 \mathbb E C_\lambda(B)=\beta_\lambda C_\lambda(A),
 \qquad
-\mathbb E\operatorname{per}B=\beta_{(n)}\operatorname{per}A.
+\mathbb E\mathop{\mathrm{per}}B=\beta_{(n)}\mathop{\mathrm{per}}A.
 \tag{1}
 ```
 
@@ -187,9 +187,9 @@ strictly increasing, is below one, and tends to one as $`x`$ tends to
 infinity. In particular
 
 ```math
-0<r_\lambda(s)/r_\lambda(r)<1
+0\lt r_\lambda(s)/r_\lambda(r)<1
 \quad\text{if}\quad
-\ell(\lambda)\leq s<r.
+\ell(\lambda)\leq s\lt r.
 ```
 
 A positive mixture of maps has a ratio
@@ -249,11 +249,11 @@ projection gives
 The pure-block Segre alignment inequality therefore lifts, as established
 in `isotypic_rank_lifting.md`. A comparison with the permanent receives the
 loss in the table. For example, averaging a rank-two inequality of the form
-$`L(C_{(3,3)}(B))\leq\operatorname{per}B`$, with $`L`$ linear, gives
+$`L(C_{(3,3)}(B))\leq\mathop{\mathrm{per}}B`$, with $`L`$ linear, gives
 
 ```math
 L(C_{(3,3)}(A))
-\leq\frac{\beta_{(6)}}{\beta_{(3,3)}}\operatorname{per}A,
+\leq\frac{\beta_{(6)}}{\beta_{(3,3)}}\mathop{\mathrm{per}}A,
 ```
 
 when $`\beta_{(3,3)}>0`$. This route alone cannot retain coefficient

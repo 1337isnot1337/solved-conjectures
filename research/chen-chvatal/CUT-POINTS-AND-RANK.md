@@ -6,7 +6,7 @@ The target is that every finite metric space on at least two points has a univer
 
 ## 1. A cut-point reduction
 
-Suppose $X$ is the union of $t\ge2$ sets $X_i$, any two meeting in the point $o$, with each $X_i$ containing another point. Write $r_u=d(o,u)$. Assume that $d(u,v)=r_u+r_v$ whenever $u,v$ are nonroot points in different sets. For $u\in X_i\setminus\{o\}$, put
+Suppose $X$ is the union of $t\ge2$ sets $X_i$, any two meeting in the point $o$, with each $X_i$ containing another point. Write $r_u=d(o,u)$. Assume that $d(u,v)=r_u+r_v$ whenever $u,v$ are nonroot points in different sets. For $`u\in X_i\setminus\{o\}`$, put
 
 ```math
 R_i(u)=\{w\in X_i:d(u,w)=|r_u-r_w|\}.
@@ -17,10 +17,10 @@ This includes $o$ and $u$. Write $h_i$ for the number of distinct sets $R_i(u)$ 
 **Theorem.** If $X$ has no universal line, then
 
 ```math
-\ell(X)=\sum_i l_i+\sum_{i<j} h_i h_j.
+\ell(X)=\sum_i l_i+\sum_{i\lt j} h_i h_j.
 ```
 
-Choose any $y_i\in X\setminus X_i$ and let $Y_i=(X_i\setminus\{o\})\cup\{y_i\}$. Every $Y_i$ has no universal line, and
+Choose any $y_i\in X\setminus X_i$ and let $`Y_i=(X_i\setminus\{o\})\cup\{y_i\}`$. Every $Y_i$ has no universal line, and
 
 ```math
 \ell(X)\ge\sum_i \ell(Y_i).
@@ -34,9 +34,9 @@ Every $R_i(u)$ is proper in $X_i$. Otherwise $L(o,u)$ would include all of $X_i$
 
 No two lines generated within different sets coincide. If both extend outside their sets, coincidence would make both universal. If one stays in its own set, a line generated in another set contains a nonroot point outside the first. The lines generated across sets are distinguished by their pair of sets and by their two radial sets. They are also distinct from lines generated within one set, since their traces in their two sets are proper and contain nonroot points. This proves the exact count.
 
-For a pair within $X_i\setminus\{o\}$, its line in $Y_i$ is the restriction of its full line. If it contains $y_i$, it extends outside $X_i$ in the full space and also contains $o$. So a universal line of this type in $Y_i$ would be universal in $X$. The lines of $Y_i$ involving $y_i$ have traces $R_i(u)\setminus\{o\}$ on the other points and are proper. Thus $\ell(Y_i)\le l_i+h_i$. Finally $\sum_{i<j} h_i h_j\ge\sum_i h_i$ for $t\ge2$ and all $h_i\ge2$. Each term is at least $h_i+h_j$ since $(h_i-1)(h_j-1)\ge1$. This proves the claimed inequality. Since $|Y_i|=|X_i|\lt |X|$, a smallest counterexample cannot have the cut point. $\square$
+For a pair within $`X_i\setminus\{o\}`$, its line in $Y_i$ is the restriction of its full line. If it contains $y_i$, it extends outside $X_i$ in the full space and also contains $o$. So a universal line of this type in $Y_i$ would be universal in $X$. The lines of $Y_i$ involving $y_i$ have traces $`R_i(u)\setminus\{o\}`$ on the other points and are proper. Thus $\ell(Y_i)\le l_i+h_i$. Finally $\sum_{i<j} h_i h_j\ge\sum_i h_i$ for $t\ge2$ and all $h_i\ge2$. Each term is at least $h_i+h_j$ since $(h_i-1)(h_j-1)\ge1$. This proves the claimed inequality. Since $|Y_i|=|X_i|\lt |X|$, a smallest counterexample cannot have the cut point. $\square$
 
-Equivalently, in a smallest counterexample, for every $o$ the graph on $X\setminus\{o\}$ with edges $uv$ satisfying $d(u,v)\lt d(u,o)+d(o,v)$ must be connected.
+Equivalently, in a smallest counterexample, for every $o$ the graph on $`X\setminus\{o\}`$ with edges $uv$ satisfying $d(u,v)\lt d(u,o)+d(o,v)$ must be connected.
 
 ## 2. What line-incidence rank can detect
 
@@ -54,9 +54,9 @@ For an outside point $z$, join two support points if they are collinear with $z$
 
 Use the four-cycle $0,1,2,3$ with adjacent distance $2$ and opposite distance $4$. Add $z,w$ with distance vectors to the cycle $(2,4,4,2)$ and $(2,2,4,4)$ respectively, and set $d(z,w)=3$. This is a metric since every positive distance lies in $[2,4]$. It has eight lines and none is universal. The vector $(1,-1,1,-1,0,0)$ is in its kernel. The two matchings of the proposition are supplied by $z,w$. The support proposition requires two outside points, so this realizes a four-point dependency with the minimum possible total of six points.
 
-Make $t$ copies of the example and identify their $z$ points, taking this common point to be $o$. Use the cut-point distance across copies. The order is $5t+1$ and the aspect ratio is at most four. Inside each copy the root never lies between two nonroot points. The three radial sets at $o$ have nonroot parts $\{0,1\}$, $\{2,3\}$, and $\{w\}$. Each has signed sum zero under the displayed vector. A line generated in one copy contains every or no nonroot point of each other copy, so all $t$ copies of the vector extend independently to the full kernel. The same radial sets show that no line generated across copies is universal, and no one-copy generator is universal even within its own copy.
+Make $t$ copies of the example and identify their $z$ points, taking this common point to be $o$. Use the cut-point distance across copies. The order is $5t+1$ and the aspect ratio is at most four. Inside each copy the root never lies between two nonroot points. The three radial sets at $o$ have nonroot parts $`\{0,1\}`$, $`\{2,3\}`$, and $`\{w\}`$. Each has signed sum zero under the displayed vector. A line generated in one copy contains every or no nonroot point of each other copy, so all $t$ copies of the vector extend independently to the full kernel. The same radial sets show that no line generated across copies is universal, and no one-copy generator is universal even within its own copy.
 
-The nullity is exactly $t$. For $t\ge2$, varying the radial set on one side of a cross line shows that the three radial nonroot parts have a common sum in their copy. The four-cycle line has no nonroot point from other copies and is the union of the first two parts, so their common sum is zero. Cross lines then force the shared root weight to be zero. The lines generated from $w$ to the cycle give the other pairings $\{1,2\}$ and $\{3,0\}$, each with zero sum, leaving precisely the alternating vector on each copy. For $t=1$, the lines consisting of the cycle alone and the cycle with either $z$ or $w$ give zero weights at both extra points, and the same pair equations apply.
+The nullity is exactly $t$. For $t\ge2$, varying the radial set on one side of a cross line shows that the three radial nonroot parts have a common sum in their copy. The four-cycle line has no nonroot point from other copies and is the union of the first two parts, so their common sum is zero. Cross lines then force the shared root weight to be zero. The lines generated from $w$ to the cycle give the other pairings $`\{1,2\}`$ and $`\{3,0\}`$, each with zero sum, leaving precisely the alternating vector on each copy. For $t=1$, the lines consisting of the cycle alone and the cycle with either $z$ or $w$ give zero weights at both extra points, and the same pair equations apply.
 
 These examples obstruct a proof by full incidence rank. The cut-point reduction concerns the number of distinct lines and leaves the unrestricted conjecture open.
 

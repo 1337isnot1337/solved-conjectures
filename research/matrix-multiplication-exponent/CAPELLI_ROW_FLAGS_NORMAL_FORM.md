@@ -40,8 +40,8 @@ This is a legal map between the stated lowered flag spaces: the X derivative rem
 
 The complete A/B matrix coefficient at C_HK D_IJ is exactly
 ```math
-X_{I,H}\partial^X_{I,K}\ \otimes\
-Y_{J,K}\partial^Y_{J,H}.                                  \tag{4}
+X_{I,H}\partial^X_{I,K}\ \otimes
+\ Y_{J,K}\partial^Y_{J,H}.                                  \tag{4}
 ```
 The other rows carry identity maps. There are no additional A or B outer labels in this formulation: the source flag blocks explicitly determine I and J. Equivalently, if the maps are written on the whole polynomial ring and projected to the fixed row degrees, those degrees force the outside A and B labels to equal I and J.
 

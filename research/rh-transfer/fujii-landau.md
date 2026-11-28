@@ -69,7 +69,7 @@ Therefore
 ~~~math
 |S_\alpha(x)|
 \le C_\alpha\exp(-2^{\alpha-1}x^{-\alpha}),
-\qquad 0<x\le1,
+\qquad 0\lt x\le1,
 \tag{5}
 ~~~
 
@@ -95,7 +95,7 @@ Put
 G_\alpha(s)=\frac{\Gamma(s/\alpha)}{\alpha},
 \qquad
 P_\chi(s)=\sum_{p>2}\chi(p)p^{-s}
-\quad(\operatorname{Re}s>1).
+\quad(\mathop{\mathrm{Re}}s>1).
 \tag{7}
 ~~~
 
@@ -149,7 +149,7 @@ The Euler product gives
 
 ~~~math
 P_\chi(s)+E_\chi(s)=\log\beta(s)
-\qquad(\operatorname{Re}s>1),
+\qquad(\mathop{\mathrm{Re}}s>1),
 \tag{11}
 ~~~
 
@@ -207,8 +207,8 @@ Choose h larger than epsilon but smaller than the Taylor radius. Positivity and 
 \begin{aligned}
 F(s_0-h)
 &=\sum_{n\ge0}\frac{h^n}{n!}
- \int_a^\infty f(e^u)u^n e^{-s_0u}\,du\\
-&=\int_a^\infty f(e^u)e^{-(s_0-h)u}\,du<\infty.
+ \int_a^\infty f(e^u)u^n e^{-s_0u}\,du
+\\ &=\int_a^\infty f(e^u)e^{-(s_0-h)u}\,du<\infty.
 \end{aligned}
 ~~~
 
@@ -221,7 +221,7 @@ For a nonnegative f, the integral defines a holomorphic function on Re s>sigma_c
 Fix an off-line zero rho_0=b+i gamma_0 with b>1/2, a positive alpha, and 0<=theta<b. Put
 
 ~~~math
-h=\max(1/2,\theta)<b.
+h=\max(1/2,\theta)\lt b.
 ~~~
 
 Assume, for contradiction, that one side of S_alpha(x)/x^theta is eventually bounded. Then for some C>=0, Y>=1, and epsilon in {1,-1},
@@ -312,8 +312,8 @@ Equivalently, for each fixed positive alpha, C_alpha implies G. In fact, the pro
 The GRH-case theorem proves
 
 ~~~math
-G\ \Longrightarrow\
-\exists A\ \forall\alpha>A,\ \neg C_\alpha.
+G\ \Longrightarrow
+\ \exists A\ \forall\alpha>A,\ \neg C_\alpha.
 \tag{17}
 ~~~
 

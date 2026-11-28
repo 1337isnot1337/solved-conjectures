@@ -39,7 +39,7 @@ The sharp cups–caps theorem gives $M_i\le\binom{a_i+b_i-2}{a_i-1}\le2^{a_i+b_i
 
 Put $l_i=\log_2 M_i$ and $L_i=\sum_{j\le i} l_j$. Iterating yields
 ```math
- \log_2 F_t\ge\sum_{i<t}l_iL_{i-1}
- =\tfrac12\left(L_{t-1}^2-\sum_{i<t}l_i^2\right).
+ \log_2 F_t\ge\sum_{i\lt t}l_iL_{i-1}
+ =\tfrac12\left(L_{t-1}^2-\sum_{i\lt t}l_i^2\right).
 ```
 In particular, for any such sequence or triangular array of templates with $L_t\to\infty$ and $\max_{i\le t}l_i=o(L_t)$, the limiting lower coefficient is at least $1/2$. Removing sets of at most two points does not change it. Thus varying the template, its asymmetry and the type of separation across arbitrarily many individually small scales still cannot lower this coefficient. This leaves open constructions using a macroscopic scale or different templates at different nodes of the same level.

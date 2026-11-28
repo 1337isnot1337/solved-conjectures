@@ -39,15 +39,15 @@ $d\ge3$, recorded below.
 
 Let $H(n)$ count square partitions of $n$ with no part $4$.
 For every $n\ge0$ we prove
-$$
+```math
 H(n+j)\le
 \begin{cases}
- 2H(n),&1\le j\le7,\\
- 3H(n),&j=8,\\
- 4H(n),&9\le j\le11.
+ 2H(n),&1\le j\le7,
+ \\ 3H(n),&j=8,
+ \\ 4H(n),&9\le j\le11.
 \end{cases}
 \tag{1}
-$$
+```
 For $1\le j\le8$, first consider input partitions with a part $9$.
 Remove one $9$ and add $9-j$ ones. This is an injection into
 the partitions counted by $H(n)$: reverse it by removing exactly
@@ -60,15 +60,15 @@ ones, a square $q^2\ge16$ must be present: otherwise the input
 would have size $r<n+j$. Choose one deterministically, say
 the smallest such square. Remove it and all $r$ ones. Replace
 their total minus $j$ by parts $9$ and $1$, using
-$$
+```math
 \left\lfloor\frac{q^2+r-j}{9}\right\rfloor
 \quad\text{nines and}\quad
 (q^2+r-j)\bmod9
 \quad\text{ones}.
-$$
+```
 All other parts are left unchanged. Except for $j=8,q=4,r=0$,
 at least one $9$ is created, so these images are disjoint from
-the outputs of the preceding no-$9$ case. The map is injective:
+the outputs of the preceding no-$`9`$ case. The map is injective:
 the output's nines and ones determine $q^2+r-j$, and the
 intervals $[q^2,q^2+j-1]$ for $q\ge4$ are disjoint (consecutive
 squares there differ by at least $9$). Thus $q$ and $r$ are
@@ -89,27 +89,27 @@ $P(t)=P(t-4)+H(t)$, with $P$ at negative indices interpreted as
 zero. For $4\le m\le11$ the three bounds of (1) match $P(m)$:
 these multipliers are $2$ for $m=4,5,6,7$, $3$ for $m=8$,
 and $4$ for $m=9,10,11$. Hence for $n\ge4$,
-$$
+```math
 D_m(n)=D_m(n-4)+P(m)H(n)-H(n+m)\ge D_m(n-4).
 \tag{2}
-$$
+```
 In particular strict positivity propagates along each of the
 four residue classes of $n$.
 
 The four seeds $n=20,21,22,23$ are all strictly positive:
-$$
+```math
 \begin{array}{c|rrrr}
 m & 20&21&22&23\\\hline
-4&8&7&8&7\\
-5&5&6&7&5\\
-6&4&5&5&2\\
-7&3&3&2&1\\
-8&13&13&15&14\\
-9&22&25&28&25\\
-10&21&24&25&22\\
-11&20&21&22&19
+4&8&7&8&7
+\\ 5&5&6&7&5
+\\ 6&4&5&5&2
+\\ 7&3&3&2&1
+\\ 8&13&13&15&14
+\\ 9&22&25&28&25
+\\ 10&21&24&25&22
+\\ 11&20&21&22&19
 \end{array}
-$$
+```
 Thus (2) handles every $n\ge20$ in these rows. For $m=1,2,3$,
 $P(m)=1$ and $D_m(n)=P(n)-P(n+m)\le0$. Each $t\ge24$ is a
 nonnegative sum of $4$ and $9$ (their Frobenius number is
@@ -121,12 +121,12 @@ For transparency, all finite entries used here follow by
 multiplying $(1-z^u)^{-1}$ for $u=1,4,9,16,25$ and retaining
 coefficients through degree 34. In sequence order from $0$ the
 values are
-$$
+```math
 \begin{gathered}
-1,1,1,1,2,2,2,2,3,4,4,4,5,6,6,6,8,9,10,10,\\
-12,13,14,14,16,19,20,21,23,26,27,28,31,34,37.
+1,1,1,1,2,2,2,2,3,4,4,4,5,6,6,6,8,9,10,10,
+\\ 12,13,14,14,16,19,20,21,23,26,27,28,31,34,37.
 \end{gathered}
-$$
+```
 Substitution into $D_m(n)$ covers all remaining $m\le11$ and
 yields exactly the displayed table, while Gajdzica's theorem
 covers $m,n\ge12$. No finite screen is used in lieu of an
@@ -134,7 +134,7 @@ unbounded argument.
 
 ## 3. The injection for every larger power
 
-Let $P_d$ count partitions into $d$th powers for arbitrary
+Let $P_d$ count partitions into $`d`$th powers for arbitrary
 $d\ge3$. Put $s=2^d$, $t=3^d$, and let $H_d$ count those
 partitions with no $s$. For every $1\le m<t$ the same marking
 argument gives $H_d(n+m)\le2H_d(n)$: replace $9$ by $t$,
@@ -142,7 +142,7 @@ and replace the smallest larger allowed part and its $r<m$
 ones by $t$-parts and ones. This always creates a $t$-part,
 because the smallest larger part is $4^d>2\cdot3^d$. The
 possible larger part is reconstructed uniquely from its value
-plus $r$, because consecutive $d$th powers starting at $4^d$
+plus $r$, because consecutive $`d`$th powers starting at $4^d$
 have gap greater than $t$.
 
 Moreover $H_d(n+m)\le2H_d(n)-1$ once $n$ is sufficiently large.

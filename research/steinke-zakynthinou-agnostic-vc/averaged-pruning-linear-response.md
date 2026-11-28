@@ -22,7 +22,7 @@ For every $`f\in\mathcal H`$,
 \tag{1}
 ```
 
-To prove this, define the isometry $`Wg=(B_j^{1/2}g)_j`$, the orthogonal projection $`\mathsf P=WW^*`$, and the block diagonal operator $`D=\operatorname{diag}(b_j I)`$. The $`ij`$ block of $`D\mathsf P D^{-1}-\mathsf P`$ is $`(b_i/b_j-1)B_i^{1/2}B_j^{1/2}`$. The fixed-pool overlap inequality gives $`\|B_i^{1/2}B_j^{1/2}\|\le2^{-(|i-j|-1)}`$ for $`i\ne j`$. Both the maximum row sum and column sum of the block norms are bounded by
+To prove this, define the isometry $`Wg=(B_j^{1/2}g)_j`$, the orthogonal projection $`\mathsf P=WW^*`$, and the block diagonal operator $`D=\mathop{\mathrm{diag}}(b_j I)`$. The $`ij`$ block of $`D\mathsf P D^{-1}-\mathsf P`$ is $`(b_i/b_j-1)B_i^{1/2}B_j^{1/2}`$. The fixed-pool overlap inequality gives $`\|B_i^{1/2}B_j^{1/2}\|\le2^{-(|i-j|-1)}`$ for $`i\ne j`$. Both the maximum row sum and column sum of the block norms are bounded by
 
 ```math
 2\sum_{h\ge1}(\rho^h-1)2^{-(h-1)}=\frac8{19}.

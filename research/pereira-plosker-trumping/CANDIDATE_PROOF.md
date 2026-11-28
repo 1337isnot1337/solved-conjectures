@@ -27,7 +27,7 @@ We prove an exact criterion that applies whenever the right derivative is finite
 
 ## 2. The convolution criterion
 
-Let $\mu$ be a finite real signed measure on $[0,\infty)$, supported on a locally finite set, with total mass zero. Suppose its first support point is zero and $\mu(\{0\})>0$. Write
+Let $\mu$ be a finite real signed measure on $[0,\infty)$, supported on a locally finite set, with total mass zero. Suppose its first support point is zero and $`\mu(\{0\})>0`$. Write
 
 ```math
 g(z)=\int_{[0,\infty)}e^{-zt}\,d\mu(t),\qquad z>0,
@@ -49,11 +49,11 @@ k(t)=(1-e^{-t})\mathbf1_{\{t\geq0\}},
 \tag{2}
 ```
 
-**Theorem.** There is a nonzero finite positive measure $\nu$ on $[0,\infty)$ such that $h*\nu\geq0$ if and only if $h\in L^1(\mathbb R)$. When $h\in L^1$, the measure $\nu$ can be chosen to have positive weights at every point of a single arithmetic progression $\{n\delta:n\geq0\}$.
+**Theorem.** There is a nonzero finite positive measure $\nu$ on $[0,\infty)$ such that $`h*\nu\geq0`$ if and only if $h\in L^1(\mathbb R)$. When $h\in L^1$, the measure $\nu$ can be chosen to have positive weights at every point of a single arithmetic progression $`\{n\delta:n\geq0\}`$.
 
 A positive translation of $\nu$ is allowed, so its first atom can be required to be strictly positive. The necessity part allows arbitrary finite positive measures, and therefore also applies to the more restricted Dirichlet multipliers.
 
-Several elementary properties of $h$ will be used. If $V=\|\mu\|$ is the total variation, then $|h|\leq V$. The function $h$ is continuous, and
+Several elementary properties of $h$ will be used. If $`V=\|\mu\|`$ is the total variation, then $|h|\leq V$. The function $h$ is continuous, and
 
 ```math
 h'=r*\mu\in L^1(\mathbb R),\qquad
@@ -89,7 +89,7 @@ All uses of Fubini here are justified by boundedness of $h$, or directly by inte
 
 Let $\mathcal A=\ell^1(\mathbb N_0,\mathbb R)$ with convolution multiplication and unit $1=(1,0,\ldots)$. For $a\in\mathcal A$, write $a(x)=\sum_{n\geq0}a_nx^n$ on $[0,1]$.
 
-**Lemma.** If $a(x)>0$ for every $x\in[0,1]$, there exists $b\in\mathcal A$ with $b_n\geq0$, $b_0>0$, and $a*b$ coefficientwise nonnegative.
+**Lemma.** If $a(x)>0$ for every $x\in[0,1]$, there exists $b\in\mathcal A$ with $b_n\geq0$, $b_0>0$, and $`a*b`$ coefficientwise nonnegative.
 
 ### 3.1. Closure and the Neumann estimate
 
@@ -109,7 +109,7 @@ The set $\mathcal S$ contains $\mathcal P$, is a convex cone, and is closed unde
 
 The denominator $bd$ has positive constant coefficient. The product case follows from $(ac)(bd)=(ab)(cd)\geq0$.
 
-For any $u\in\mathcal A$ and any real $M>\|u\|_1$, the series
+For any $u\in\mathcal A$ and any real $`M>\|u\|_1`$, the series
 
 ```math
 b=(M1-|u|)^{-1}
@@ -131,7 +131,7 @@ Suppose first that $P$ is a real polynomial positive on $[0,1]$. Factor it over 
 
 A negative real root gives a factor $1+x/r$ with $r>0$, already coefficientwise positive. A positive real root must satisfy $r>1$. Its factor $1-x/r$ has the coefficientwise positive inverse $\sum_{j\geq0}(x/r)^j$ in $\ell^1$.
 
-A conjugate pair of roots $re^{\pm i\theta}$, with $r>0$ and $0\lt\theta\lt\pi$, gives a factor $1-2\cos\theta\,u+u^2$, where $u=x/r$. Put $N=\lceil\pi/\theta\rceil$ and
+A conjugate pair of roots $re^{\pm i\theta}$, with $r>0$ and $0\lt\theta\lt\pi$, gives a factor $`1-2\cos\theta\,u+u^2`$, where $u=x/r$. Put $N=\lceil\pi/\theta\rceil$ and
 
 ```math
 Q(u)=\sum_{j=0}^{N-2}
@@ -150,7 +150,7 @@ Since $(N-1)\theta\lt\pi\leq N\theta\lt\pi+\theta\lt2\pi$, the two displayed non
 
 ### 3.3. Approximation in the summable-coefficient norm
 
-Let $m=\min_{x\in[0,1]}a(x)>0$. Choose $0\lt\varepsilon\lt m/3$ and a polynomial $P$ with $\|a-P\|_1\lt\varepsilon$. Then $P-\varepsilon>0$ on $[0,1]$, so $P-\varepsilon\in\mathcal S$ by Section 3.2. Also
+Let $m=\min_{x\in[0,1]}a(x)>0$. Choose $0\lt\varepsilon\lt m/3$ and a polynomial $P$ with $`\|a-P\|_1\lt\varepsilon`$. Then $P-\varepsilon>0$ on $[0,1]$, so $P-\varepsilon\in\mathcal S$ by Section 3.2. Also
 
 ```math
 \varepsilon+(a-P)\in\mathcal S
@@ -190,9 +190,9 @@ The face on which $L(a)$ attains its minimum is nonempty and compact. Choose an 
 
 #### Extreme states are evaluations
 
-Fix $s\in\mathcal S$, and choose $M>\|s\|_1$. Then $M1-s\in\mathcal S$. The functionals $u\mapsto L(su)$ and $u\mapsto L((M1-s)u)$ are positive on $\mathcal S$.
+Fix $s\in\mathcal S$, and choose $`M>\|s\|_1`$. Then $M1-s\in\mathcal S$. The functionals $u\mapsto L(su)$ and $u\mapsto L((M1-s)u)$ are positive on $\mathcal S$.
 
-If $L(s)=0$, then for any $u$ and any $N>\|u\|_1$,
+If $L(s)=0$, then for any $u$ and any $`N>\|u\|_1`$,
 
 ```math
 0\leq L(s(N1+u))=L(su),\qquad
@@ -231,12 +231,12 @@ For a small mesh $\delta>0$, move each positive atom to the next grid point and 
 ```math
 \lambda_j^\delta=
 \begin{cases}
-\delta\lceil\lambda_j/\delta\rceil,&b_j>0,\\
-\delta\lfloor\lambda_j/\delta\rfloor,&b_j<0.
+\delta\lceil\lambda_j/\delta\rceil,&b_j>0,
+\\ \delta\lfloor\lambda_j/\delta\rfloor,&b_j<0.
 \end{cases}
 ```
 
-Let $\mu_\delta=\sum_jb_j\delta_{\lambda_j^\delta}$, combining weights at equal points, and let $h_\delta=k*\mu_\delta$. The total mass remains zero and $\|\mu_\delta\|\leq V$.
+Let $\mu_\delta=\sum_jb_j\delta_{\lambda_j^\delta}$, combining weights at equal points, and let $`h_\delta=k*\mu_\delta`$. The total mass remains zero and $`\|\mu_\delta\|\leq V`$.
 
 Because $k$ is nondecreasing,
 
@@ -314,7 +314,7 @@ For almost every $t\in[n\delta,(n+1)\delta)$,
 h_\delta(t)+h_\delta'(t)=a_n.
 ```
 
-Since $h_\delta\in L^1$ and $\|h_\delta'\|_1\leq V$,
+Since $h_\delta\in L^1$ and $`\|h_\delta'\|_1\leq V`$,
 
 ```math
 \delta\sum_{n\geq0}|a_n|
@@ -349,11 +349,11 @@ A(e^{-\delta z})B(e^{-\delta z}).
 \tag{12}
 ```
 
-The first factor is the Laplace transform of the nonnegative integrable function $k(t)-k(t-\delta)$. The second factor is the Laplace transform of a finite positive grid measure. Uniqueness of Laplace transforms therefore gives $h_\delta*\nu\geq0$. These convolutions are continuous, so the inequality holds everywhere. Equation (7) then yields $h*\nu\geq0$. This proves sufficiency.
+The first factor is the Laplace transform of the nonnegative integrable function $k(t)-k(t-\delta)$. The second factor is the Laplace transform of a finite positive grid measure. Uniqueness of Laplace transforms therefore gives $`h_\delta*\nu\geq0`$. These convolutions are continuous, so the inequality holds everywhere. Equation (7) then yields $`h*\nu\geq0`$. This proves sufficiency.
 
 ## 5. Necessity: a finite multiplier forces integrability
 
-Suppose $\nu$ is a nonzero finite positive measure on $[0,\infty)$ and $F=h*\nu\geq0$. Let $m=\nu([0,\infty))>0$. Equation (5) gives
+Suppose $\nu$ is a nonzero finite positive measure on $[0,\infty)$ and $`F=h*\nu\geq0`$. Let $m=\nu([0,\infty))>0$. Equation (5) gives
 
 ```math
 \int_0^\infty e^{-zt}F(t)\,dt
@@ -372,7 +372,7 @@ We recover the low frequencies of $h$ from $F$ by an explicit local inverse. Thi
 
 ### 5.1. A local inverse for a finite positive measure
 
-Use the Fourier convention $\widehat f(\omega)=\int_{\mathbb R}e^{-i\omega t}f(t)\,dt$. Choose a real even smooth compactly supported function $\chi$ equal to one near zero, and let $\rho$ be its inverse Fourier transform. Then $\rho$ is Schwartz and $\int\rho=1$. Put $\rho_\varepsilon(t)=\varepsilon\rho(\varepsilon t)$.
+Use the Fourier convention $`\widehat f(\omega)=\int_{\mathbb R}e^{-i\omega t}f(t)\,dt`$. Choose a real even smooth compactly supported function $\chi$ equal to one near zero, and let $\rho$ be its inverse Fourier transform. Then $\rho$ is Schwartz and $\int\rho=1$. Put $\rho_\varepsilon(t)=\varepsilon\rho(\varepsilon t)$.
 
 The integrable function
 
@@ -380,7 +380,7 @@ The integrable function
 a_\varepsilon=(\nu-m\delta_0)*\rho_\varepsilon
 ```
 
-satisfies $\|a_\varepsilon\|_1\to0$. Indeed,
+satisfies $`\|a_\varepsilon\|_1\to0`$. Indeed,
 
 ```math
 \|a_\varepsilon\|_1
@@ -389,9 +389,9 @@ satisfies $\|a_\varepsilon\|_1\to0$. Indeed,
 \longrightarrow0
 ```
 
-by translation continuity and dominated convergence, with majorant $2\|\rho\|_1$.
+by translation continuity and dominated convergence, with majorant $`2\|\rho\|_1`$.
 
-Choose $\varepsilon$ with $\|a_\varepsilon\|_1<m$. The finite signed measure
+Choose $\varepsilon$ with $`\|a_\varepsilon\|_1<m`$. The finite signed measure
 
 ```math
 \theta=m\delta_0+a_\varepsilon
@@ -408,7 +408,7 @@ has a convolution inverse
 
 convergent in the unitized $L^1$ algebra. On the interval where $\chi(\omega/\varepsilon)=1$, one has $\widehat\theta(\omega)=\widehat\nu(\omega)$.
 
-Choose a smooth compactly supported $\psi$ that equals one near zero and is supported inside that interval. Let $p$ be its inverse Fourier transform, and set $f=p*\xi\in L^1$. Then
+Choose a smooth compactly supported $\psi$ that equals one near zero and is supported inside that interval. Let $p$ be its inverse Fourier transform, and set $`f=p*\xi\in L^1`$. Then
 
 ```math
 \widehat{f*\nu}
@@ -416,7 +416,7 @@ Choose a smooth compactly supported $\psi$ that equals one near zero and is supp
 =\psi.
 ```
 
-Fourier uniqueness yields $f*\nu=p$. Since $h$ is bounded, associativity is justified by absolute Fubini, and
+Fourier uniqueness yields $`f*\nu=p`$. Since $h$ is bounded, associativity is justified by absolute Fubini, and
 
 ```math
 h*p=h*(\nu*f)=(h*\nu)*f=F*f\in L^1.
@@ -439,7 +439,7 @@ Taking tempered distributions in (4) and multiplying by $M$ gives
 (1-\psi)\widehat h=M\widehat\mu.
 ```
 
-Therefore $h-h*p=q*\mu\in L^1$. Together with (15), this proves $h\in L^1$, completing the convolution criterion.
+Therefore $`h-h*p=q*\mu\in L^1`$. Together with (15), this proves $h\in L^1$, completing the convolution criterion.
 
 ## 6. Holomorphic simple zeros imply integrability
 
@@ -452,7 +452,7 @@ U(\omega)=
 \chi(\omega)\frac{g(i\omega)}{i\omega(1+i\omega)}
 ```
 
-extends smoothly across zero and is compactly supported. Its inverse Fourier transform $u$ is Schwartz. The function $(1-\chi)/(i\omega(1+i\omega))$ has an integrable inverse $q$ by the preceding argument. Thus $v=u+q*\mu\in L^1$.
+extends smoothly across zero and is compactly supported. Its inverse Fourier transform $u$ is Schwartz. The function $(1-\chi)/(i\omega(1+i\omega))$ has an integrable inverse $q$ by the preceding argument. Thus $`v=u+q*\mu\in L^1`$.
 
 The boundary identity $\widehat\mu(\omega)=g(i\omega)$ follows from the finite total variation and dominated convergence from $\mathop{\mathrm{Re}}z>0$. Direct multiplication of Fourier transforms gives $D(D+1)v=\mu$. Therefore $h-v$ solves $D(D+1)(h-v)=0$ in tempered distributions. The only tempered solutions are constants: the second ordinary solution $e^{-t}$ is not tempered on the whole real line. Since $h(t)\to0$ at $+\infty$ and $v\in L^1$, that constant is zero. Consequently $h=v\in L^1$.
 
@@ -491,9 +491,9 @@ For $s=z+1$,
 \frac{g(z)B(e^{-\delta z})}{z(z+1)}.
 ```
 
-The right side is the Laplace transform of a positive translate and rescaling of $h*\nu$, hence is completely monotone.
+The right side is the Laplace transform of a positive translate and rescaling of $`h*\nu`$, hence is completely monotone.
 
-Conversely, any positive Dirichlet multiplier gives a finite positive atomic measure $\nu$ after shifting $s$ by one. If the quotient is completely monotone, uniqueness of Laplace transforms identifies its representing measure with the continuous density obtained from $h*\nu$, up to the positive delay. Thus $h*\nu\geq0$. The criterion then forces $h\in L^1$.
+Conversely, any positive Dirichlet multiplier gives a finite positive atomic measure $\nu$ after shifting $s$ by one. If the quotient is completely monotone, uniqueness of Laplace transforms identifies its representing measure with the continuous density obtained from $`h*\nu`$, up to the positive delay. Thus $`h*\nu\geq0`$. The criterion then forces $h\in L^1$.
 
 The implication from existence of a multiplier to $\zeta(s)>0$ is immediate from the positive Laplace representation and the strict positivity of $\zeta_2(s)$. The product cannot vanish identically because $\zeta$ has a nonzero first-order zero.
 
@@ -505,11 +505,11 @@ Let $T_k=k(k+1)/2$, set $a_0=1$, and define
 
 ```math
 a_n=\frac{(-1)^{k-1}}{k^2}
-\quad\text{when}\quad T_{k-1}<n\leq T_k,\qquad k\geq1.
+\quad\text{when}\quad T_{k-1}\lt n\leq T_k,\qquad k\geq1.
 \tag{17}
 ```
 
-Thus the $k$th block has length $k$, constant magnitude $1/k^2$, and alternating sign. The sequence has bounded total variation, tends to zero, and
+Thus the $`k`$th block has length $k$, constant magnitude $1/k^2$, and alternating sign. The sequence has bounded total variation, tends to zero, and
 
 ```math
 \sum_{n\geq0}|a_n|
@@ -555,7 +555,7 @@ By Abel's limit theorem applied to the convergent series in (18),
 
 Thus $\zeta$ has a finite nonzero right derivative at the boundary.
 
-For $\mu=\sum_{n\geq0}c_n\delta_n$, the density $h=k*\mu$ satisfies $h+h'=a_n$ on each interval $(n,n+1)$, while $h'\in L^1$. Equation (18) therefore implies $h\notin L^1$. The necessity theorem excludes every nonzero finite positive multiplier, including every allowed positive Dirichlet multiplier.
+For $\mu=\sum_{n\geq0}c_n\delta_n$, the density $`h=k*\mu`$ satisfies $h+h'=a_n$ on each interval $(n,n+1)$, while $h'\in L^1$. Equation (18) therefore implies $h\notin L^1$. The necessity theorem excludes every nonzero finite positive multiplier, including every allowed positive Dirichlet multiplier.
 
 This also proves that $\zeta$ in (20) cannot extend holomorphically through a neighborhood of $s=1$, by Section 6. The example separates the two possible boundary interpretations rather than concealing the difference.
 

@@ -13,7 +13,7 @@ B_j(t)=\frac{1-U_j(t)^{2^{m-j-1}}}{2},
 \qquad
 U_{j+1}(t)=U_j(t)
   \left(1+(\zeta^{-2^j}-1)B_j(t)\right)
-\quad(0\le j<m),                                \tag{1}
+\quad(0\le j\lt m),                                \tag{1}
 ```
 
 and

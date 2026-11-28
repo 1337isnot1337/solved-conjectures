@@ -4,7 +4,7 @@ A measurable projection from high-agreement votes gives a proper catalogue learn
 
 ## Proper learning from a measurable projection
 
-Let $`H`$ be a jointly Borel VC class of dimension $`d\ge1`$ on standard Borel spaces. Put $`r=\max(1,\operatorname{VC}(H^*))`$. Suppose for an integer $`p\ge2`$ that there is a universally measurable map from each finite list of proper hypotheses to a proper name that agrees with their vote wherever strictly fewer than a fraction $`1/p`$ of the list disagree with it. This is the measurable version of the [projection-number condition](https://proceedings.mlr.press/v125/bousquet20a.pdf). Then there is one distribution-independent proper learner with expected empirical excess $`O(\sqrt{d/n})`$ on every sample and whole-output fixed-pool information and actual iid CMI at most
+Let $`H`$ be a jointly Borel VC class of dimension $`d\ge1`$ on standard Borel spaces. Put $`r=\max(1,\mathop{\mathrm{VC}}(H^*))`$. Suppose for an integer $`p\ge2`$ that there is a universally measurable map from each finite list of proper hypotheses to a proper name that agrees with their vote wherever strictly fewer than a fraction $`1/p`$ of the list disagree with it. This is the measurable version of the [projection-number condition](https://proceedings.mlr.press/v125/bousquet20a.pdf). Then there is one distribution-independent proper learner with expected empirical excess $`O(\sqrt{d/n})`$ on every sample and whole-output fixed-pool information and actual iid CMI at most
 
 ```math
 O\!\left(

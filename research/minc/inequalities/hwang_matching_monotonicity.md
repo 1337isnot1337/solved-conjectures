@@ -190,9 +190,9 @@ where
 
 ```math
 \begin{aligned}
-Q_b(y)={}&(b^3-5b^2+7b-4)y^2\\
-&+(-2b^4+7b^3-5b^2-b+3)y\\
-&+2b^4-8b^3+9b^2-4b.
+Q_b(y)={}&(b^3-5b^2+7b-4)y^2
+\\ &+(-2b^4+7b^3-5b^2-b+3)y
+\\ &+2b^4-8b^3+9b^2-4b.
 \end{aligned}
 \tag{12}
 ```
@@ -263,11 +263,11 @@ The conclusion $`\bar u<1-t`$ does not imply $`x_i<1-t`$ or $`y_j<1-t`$ at each 
 
 ```math
 A=\begin{pmatrix}
-0&1/4&1/4&1/4&1/4\\
-1/4&3/4&0&0&0\\
-1/4&0&3/4&0&0\\
-1/4&0&0&3/4&0\\
-1/4&0&0&0&3/4
+0&1/4&1/4&1/4&1/4
+\\ 1/4&3/4&0&0&0
+\\ 1/4&0&3/4&0&0
+\\ 1/4&0&0&3/4&0
+\\ 1/4&0&0&0&3/4
 \end{pmatrix}.
 ```
 
@@ -288,8 +288,8 @@ These values can be checked without enumerating a large matrix. In the general $
 ```math
 \begin{aligned}
 Z={}&(1+\alpha)^N
-+2N\beta(1+\alpha)^{N-1}\\
-&+N\beta^2(1+\alpha)^{N-1}
++2N\beta(1+\alpha)^{N-1}
+\\ &+N\beta^2(1+\alpha)^{N-1}
 +N(N-1)\beta^2(1+\alpha)^{N-2}.
 \end{aligned}
 ```

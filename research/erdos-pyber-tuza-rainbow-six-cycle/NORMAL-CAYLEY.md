@@ -1,6 +1,6 @@
 # Normal Cayley reduction
 
-This is a partial extension of the [abelian Cayley theorem](README.md) for the rainbow six-cycle clause of Erdős #811. Let $G$ have order $6t+1$ and let $D_1,\dots,D_6$ partition $G\setminus\{1\}$ into inverse-closed conjugation-invariant sets of size $t$. Color $x,y$ according to the class of $x^{-1}y$. The positive result below covers, among other examples, all admissible nonabelian $p$-groups with center of order $p$.
+This is a partial extension of the [abelian Cayley theorem](README.md) for the rainbow six-cycle clause of Erdős #811. Let $G$ have order $6t+1$ and let $D_1,\dots,D_6$ partition $`G\setminus\{1\}`$ into inverse-closed conjugation-invariant sets of size $t$. Color $x,y$ according to the class of $x^{-1}y$. The positive result below covers, among other examples, all admissible nonabelian $p$-groups with center of order $p$.
 
 ## Identity products and genuine cycles
 

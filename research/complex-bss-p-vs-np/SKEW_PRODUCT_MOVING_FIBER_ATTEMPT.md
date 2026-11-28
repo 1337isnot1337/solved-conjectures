@@ -56,8 +56,8 @@ S_t+h(t)\subseteq S_{\zeta t}.                    \tag{1}
 For a specified size bound s, a uniformly constructible polynomial-size universal arithmetic-circuit template with parameter tuple c represents all candidate P. Write its output as P_c(t,g). The conditions above are exactly expressed by
 
 ```math
-\exists(\zeta,c)\ \forall(t,g)\in\mathbb C^2\
-\exists(u,v)\in\mathbb C^2:\quad\mathcal V(X,y,\zeta,c,t,g,u,v),
+\exists(\zeta,c)\ \forall(t,g)\in\mathbb C^2
+\ \exists(u,v)\in\mathbb C^2:\quad\mathcal V(X,y,\zeta,c,t,g,u,v),
                                                                \tag{2}
 ```
 
@@ -212,8 +212,8 @@ The parameter space has dimension M=m^2+p+5. For every parameter at which F_thet
 Consequently, replace the continuous g test by these fixed evaluations of (6), while keeping t Boolean-encoded as in Section 6. At each t, existentially supply u,v,lambda and require lambda nonzero. The resulting predicate has the form
 
 ```math
-\exists(\zeta,\rho,c)\ \forall b\in\{0,1\}^m\
-\exists(u,v,\lambda):\quad\text{a polynomial-size BSS test}.
+\exists(\zeta,\rho,c)\ \forall b\in\{0,1\}^m
+\ \exists(u,v,\lambda):\quad\text{a polynomial-size BSS test}.
 ```
 
 It remains sound for arbitrary certificates: the evaluation tuple implies the full polynomial identity, which implies the original root inclusion. The squarefree or preserved-multiplicity condition is needed only for completeness. The tuple need not be uniformly constructible. This is sufficient for the obstruction, because the block-KKT theorem and the imported permanent border lower bound both allow nonuniform constants.

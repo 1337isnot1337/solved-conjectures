@@ -39,7 +39,7 @@ Here is the reduction, including the distinctness point. Let m be the largest in
 Harmonic-sum comparison gives m=eN+O(1). Write the positive residual in lowest terms as a/b. Then
 
 ```math
-0<\frac ab\le\frac1{m+1},\qquad b\mid\operatorname{lcm}(N,N+1,\ldots,m),\qquad b\le m!.
+0<\frac ab\le\frac1{m+1},\qquad b\mid\mathop{\mathrm{lcm}}(N,N+1,\ldots,m),\qquad b\le m!.
 ```
 
 The cited theorem expands this residual into O(log log b)=O(log N) distinct unit fractions. Positivity means each individual reciprocal is at most the total residual. Every new denominator is therefore at least m+1, so none collides with the consecutive core. Adding the counts proves the bound.

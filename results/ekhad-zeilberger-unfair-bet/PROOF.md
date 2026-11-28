@@ -1,6 +1,6 @@
 # Ekhad–Zeilberger’s most unfair bet conjecture
 
-Let $k\ge2$ and let the letters of a length-$n$ text be independent and uniform on an alphabet of $q\ge2$ symbols. Players choose distinct words $A,B$ of length $k$. A player wins when the count of their word exceeds the other count. Overlapping occurrences count. Define the advantage as the coefficient of $n^{-1/2}$ in the difference of win probabilities, with the more likely winner first. This is the statistic in the sponsor’s rankings. [Challenge and sample rankings](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/litt.html)
+Let $k\ge2$ and let the letters of a length-$`n`$ text be independent and uniform on an alphabet of $q\ge2$ symbols. Players choose distinct words $A,B$ of length $k$. A player wins when the count of their word exceeds the other count. Overlapping occurrences count. Define the advantage as the coefficient of $n^{-1/2}$ in the difference of win probabilities, with the more likely winner first. This is the statistic in the sponsor’s rankings. [Challenge and sample rankings](https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/litt.html)
 
 **Theorem.** For unrestricted words of length $`k\ge2`$, the largest advantage is
 
@@ -12,7 +12,7 @@ For distinct letters $`a,b`$, the maximizing pairs are precisely $`a^{k-1}b`$ ag
 
 ## The overlap formula
 
-Let $\theta_{UV}$ be the sum of $q^{-d}$ over shifts $1\le d<k$ for which the length-$(k-d)$ suffix of $U$ equals the prefix of $V$ of that length. Write $x=\theta_{BB}$, $y=\theta_{AA}$, and order the words so $x\ge y$. Put
+Let $\theta_{UV}$ be the sum of $q^{-d}$ over shifts $1\le d<k$ for which the length-$`(k-d)`$ suffix of $U$ equals the prefix of $V$ of that length. Write $x=\theta_{BB}$, $y=\theta_{AA}$, and order the words so $x\ge y$. Put
 
 ```math
  z=\theta_{AB},\quad w=\theta_{BA},\quad
@@ -43,7 +43,7 @@ It remains to bound $V$ for words with different interiors. For one window let $
  (\mathbf{1}_{X_k=w_k}-q^{-1}).
 ```
 
-The squared norm for one word is $q^{-k}(1-q^{-1})^2$. The two projected words have disjoint interior supports. Hence $\|Pf\|_2^2=2q^{-k}(1-q^{-1})^2$. Each translated $Pf$ is orthogonal to every $f$ or $Pf$ on another window, because one of its centered endpoints lies outside that window. On its own window it is orthogonal to $f-Pf$. Splitting the signed total into the translated projected terms and their residual therefore bounds its variance below by $(n-k+1)\|Pf\|_2^2$. Dividing by $n$ and taking the limit gives
+The squared norm for one word is $q^{-k}(1-q^{-1})^2$. The two projected words have disjoint interior supports. Hence $`\|Pf\|_2^2=2q^{-k}(1-q^{-1})^2`$. Each translated $Pf$ is orthogonal to every $f$ or $Pf$ on another window, because one of its centered endpoints lies outside that window. On its own window it is orthogonal to $f-Pf$. Splitting the signed total into the translated projected terms and their residual therefore bounds its variance below by $`(n-k+1)\|Pf\|_2^2`$. Dividing by $n$ and taking the limit gives
 
 ```math
  V\ge(1-q^{-1})^2.
@@ -70,8 +70,8 @@ It is attained by $a^{k-q+1} b_2\cdots b_q$ against $a^k$, with all $b_i$ distin
 
 For any nonconstant loser with $x>y$, at least one cross-overlap misses shift one. Otherwise both words have period two, the two phases of the same alternating word, and have equal self-overlap. It follows that $z+w\le2M-1/q$ and $V\ge1-2M+1/q\ge1/q$ since $M\le1/(q-1)$ and $q\ge3$. Inequality (1) now bounds the normalized advantage strictly below $M/\sqrt q$. This is smaller than the displayed constant-loser value, because $1+M<q$.
 
-For $k+1<q\le2k$, put $d=q-k$ and $r=k-d$. When $r=0$, all letters in the two words are different and every game is fair. When $r>0$, an optimal loser $B$ is the length-$k$ prefix of repetitions of a block of $d$ distinct symbols. The winner $A$ consists of the remaining $k$ distinct symbols in any order.
+For $k+1<q\le2k$, put $d=q-k$ and $r=k-d$. When $r=0$, all letters in the two words are different and every game is fair. When $r>0$, an optimal loser $B$ is the length-$`k`$ prefix of repetitions of a block of $d$ distinct symbols. The winner $A$ consists of the remaining $k$ distinct symbols in any order.
 
-To prove this last assertion, there are exactly $r$ repeats available among the $2k$ positions, in the sense that identifying equal letters reduces $2k$ positions to $q$ classes. A self-border or cross-overlap of length $j$ costs at least $j$ identifications. For a self-border the word has period $k-j$ and uses at most $k-j$ letters. For a cross-overlap each of the $j$ matching pairs is disjoint from all the others. Hence every overlap length is at most $r$. If $B$ has border length $r$, all identifications are used up by its period-$d$ equalities, so its $d$ residue classes are distinct, and $A$ uses $k$ fresh symbols. This is the claimed form, with $y=z=w=0$ and $x\ge q^{r-k}$.
+To prove this last assertion, there are exactly $r$ repeats available among the $2k$ positions, in the sense that identifying equal letters reduces $2k$ positions to $q$ classes. A self-border or cross-overlap of length $j$ costs at least $j$ identifications. For a self-border the word has period $k-j$ and uses at most $k-j$ letters. For a cross-overlap each of the $j$ matching pairs is disjoint from all the others. Hence every overlap length is at most $r$. If $B$ has border length $r$, all identifications are used up by its period-$`d`$ equalities, so its $d$ residue classes are distinct, and $A$ uses $k$ fresh symbols. This is the claimed form, with $y=z=w=0$ and $x\ge q^{r-k}$.
 
 If $B$ has no such border, $x\le G(r-1)<q^{r-k}/(q-1)$. Always $z+w\le2G(r)$, with $G(r)<1/(q(q-1))$ because $r\le k-2$. Put $u=1/(q(q-1))$. The proposed pair has normalized advantage at least $q^{r-k}/\sqrt{1+u}$. All competitors without a border of length $r$ have smaller advantage than $q^{r-k}/((q-1)\sqrt{1-2u})$. For $q\ge4$, $(q-1)^2(1-2u)>1+u$, proving strict optimality. If $q>2k$ no pair uses the full alphabet.

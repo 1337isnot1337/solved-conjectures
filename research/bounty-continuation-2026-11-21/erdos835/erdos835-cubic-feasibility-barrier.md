@@ -138,11 +138,11 @@ The other four aggregate equality-pattern probabilities are
 
 ```math
 \begin{split}
- q_{AB|C}&=K_{AB}-t_{ABC},\\
- q_{AC|B}&=K_{AC}-t_{ABC},\\
- q_{BC|A}&=K_{BC}-t_{ABC},\\
- u_{ABC}&=1-K_{AB}-K_{AC}-K_{BC}+2t_{ABC}\\
- &=\frac{k(k-1)}{p^2}
+ q_{AB|C}&=K_{AB}-t_{ABC},
+ \\ q_{AC|B}&=K_{AC}-t_{ABC},
+ \\ q_{BC|A}&=K_{BC}-t_{ABC},
+ \\ u_{ABC}&=1-K_{AB}-K_{AC}-K_{BC}+2t_{ABC}
+ \\ &=\frac{k(k-1)}{p^2}
        (1-e_{AB}-e_{AC}-e_{BC}+2R_{ABC}).                \tag{8}
  \end{split}
 ```
@@ -164,10 +164,10 @@ Index the variables $`x_0,\ldots,x_7`$ by $`4a+2b+c`$. Cayley's polynomial is
 
 ```math
 \begin{split}
-\Delta={}&x_0^2x_7^2+x_1^2x_6^2+x_2^2x_5^2+x_3^2x_4^2\\
- &-2(x_0x_1x_6x_7+x_0x_2x_5x_7+x_0x_3x_4x_7
-       +x_1x_2x_5x_6+x_1x_3x_4x_6+x_2x_3x_4x_5)\\
- &+4(x_0x_3x_5x_6+x_1x_2x_4x_7).
+\Delta={}&x_0^2x_7^2+x_1^2x_6^2+x_2^2x_5^2+x_3^2x_4^2
+ \\ &-2(x_0x_1x_6x_7+x_0x_2x_5x_7+x_0x_3x_4x_7
+       +x_1x_2x_5x_6+x_1x_3x_4x_6+x_2x_3x_4x_5)
+ \\ &+4(x_0x_3x_5x_6+x_1x_2x_4x_7).
 \end{split}                                                   \tag{9}
 ```
 
@@ -281,8 +281,8 @@ layer shows that $`F_A`$ acts on $`W_j`$ by the scalar
 \begin{split}
  \lambda_j
  &=\frac1{k-2j+1}\sum_{s=j}^{k-j}
-                       \frac{(-1)^s}{p\binom ks}\\
- &=\frac{2(-1)^j(k-j+1)}
+                       \frac{(-1)^s}{p\binom ks}
+ \\ &=\frac{2(-1)^j(k-j+1)}
    {p(k+2)(k-2j+1)\binom kj}.                           \tag{14}
 \end{split}
 ```
@@ -521,10 +521,10 @@ are respectively
 
 ```math
 \begin{split}
- &m(m-1)(2m-7)(2m-5),\\
- &8m(m-1)(2m-5),\\
- &8m(m-1),\\
- &-4m(m-1)(2m-11).
+ &m(m-1)(2m-7)(2m-5),
+ \\ &8m(m-1)(2m-5),
+ \\ &8m(m-1),
+ \\ &-4m(m-1)(2m-11).
 \end{split}
 ```
 

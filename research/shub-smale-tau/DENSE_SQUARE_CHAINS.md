@@ -266,8 +266,8 @@ The strict inequality cannot be replaced by N>=3D/4. In fact,
 ```math
 \begin{aligned}
  F_3(x)
-   &=\bigl((x^2-45)^2-656\bigr)^2-640^2\\
-   &=(x^2-9)(x^2-81)(x^2-49)(x^2-41).
+   &=\bigl((x^2-45)^2-656\bigr)^2-640^2
+   \\ &=(x^2-9)(x^2-81)(x^2-49)(x^2-41).
  \end{aligned}
 \tag{4.3}
 ```

@@ -10,13 +10,13 @@ Start with an edge $uv$. Attach vertices $h_1,\ldots,h_r$ adjacent to both ends 
 
 Constructing the graph by attaching a vertex to the two ends of an existing edge gives a uniform orientation rule. After choosing the direction of $uv$, each new vertex picks one of three positions relative to the directed edge on which it was attached. These give the three acyclic orientations of its new triangle compatible with that edge. They all extend an acyclic orientation of the old graph. Any directed cycle through the new vertex could be shortened along the old edge, or would be the forbidden directed triangle. Each old orientation has exactly three extensions, so the successive position choices are independent and uniform. The attachment order for this rule is a construction order for the graph and can differ from the vertex order used to compute $e_w$.
 
-Conditional on $u\to v$, each $h_i$ comes after $u$ in the orientation of its triangle with probability $2/3$. Conditional on $v\to u$, the probability is $1/3$. Given the direction of $uv$, these events are independent over $i$. Write $B_i=1$ when $u\to h_i$. If $g_i\in\{0,1,2\}$ is the number of $u,v$ preceding $h_i$ in that triangle orientation, then
+Conditional on $u\to v$, each $h_i$ comes after $u$ in the orientation of its triangle with probability $2/3$. Conditional on $v\to u$, the probability is $1/3$. Given the direction of $uv$, these events are independent over $i$. Write $B_i=1$ when $u\to h_i$. If $`g_i\in\{0,1,2\}`$ is the number of $u,v$ preceding $h_i$ in that triangle orientation, then
 
 ```math
 e_{h_i}=g_i+X_i,\qquad
 X_i\mid (u,v,h_i)\ \sim\ \begin{cases}
-\mathrm{Bin}(m_i,2/3),& B_i=1,\\
-\mathrm{Bin}(m_i,1/3),& B_i=0.
+\mathrm{Bin}(m_i,2/3),& B_i=1,
+\\ \mathrm{Bin}(m_i,1/3),& B_i=0.
 \end{cases}
 ```
 
@@ -50,7 +50,7 @@ Take the same core with two vertices $h_1,h_2$ and 20 degree-two vertices attach
 
 Here is an exact certificate that can be reproduced by counting sets of positive values. Write $Q(t)=\mathbb E[t^{12-K}]$. All earlier indegrees outside $h_1,h_2$ are at most ten. Conditional on the direction of $uv$ and the gap $g$ of a distinguished vertex, let $x$ mark the number of its 20 adjacent degree-two vertices pointing into it. Its count is $x^g(1+2x)^{20}$ when $u\to h$, and $x^g(2+x)^{20}$ when $h\to u$. To count the choices where none of those 20 vertices has earlier indegree one, replace the two expressions by $x^{g+20}$ and $x^g(1+x)^{20}$ respectively. In that restriction every degree-two vertex must precede $u$ in its triangle orientation. These four expressions determine the support of all positive earlier indegrees in the core, including the possible extra value one at $v$.
 
-For a subset $S\subseteq\{1,\ldots,10\}$ the number of orientations of the attached graph for which all positive values lie in $S$ is
+For a subset $`S\subseteq\{1,\ldots,10\}`$ the number of orientations of the attached graph for which all positive values lie in $S$ is
 
 ```math
 (1+|S|)^{18}\prod_{j=1}^9(1+|S\cap\{1,\ldots,j\}|).

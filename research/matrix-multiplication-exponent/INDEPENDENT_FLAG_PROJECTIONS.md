@@ -33,9 +33,9 @@ lemma and multiplicativity give
 ```math
 \begin{split}
 F((P\otimes Q)T_{p,M_XM_Y})
- &=F(P T_X)F(Q T_Y)\\
- &\ge {d_X\over pM_X}{d_Y\over pM_Y}F(T_X)F(T_Y)\\
- &={d_X\over pM_X}{d_Y\over pM_Y}F(T_{p,M_XM_Y}).           \tag{2}
+ &=F(P T_X)F(Q T_Y)
+ \\ &\ge {d_X\over pM_X}{d_Y\over pM_Y}F(T_X)F(T_Y)
+ \\ &={d_X\over pM_X}{d_Y\over pM_Y}F(T_{p,M_XM_Y}).           \tag{2}
 \end{split}
 ```
 

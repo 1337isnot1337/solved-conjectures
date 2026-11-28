@@ -56,10 +56,10 @@ If $`X\lt Tq_0`$, no new modulus is active. Otherwise (1), distinctness of the n
 ```math
 \begin{aligned}
 \frac{|D\cap[1,X]|}{X}
-&\le\sum_{\substack{d\le X\\Tq\mid d\text{ for some }q\in F}}\frac1d\\
-&\le\sum_{q\in F}\frac1{Tq}
-             H_{\lfloor X/(Tq)\rfloor}\\
-&\le\frac WT\left(1+\log\frac{X}{Tq_0}\right).
+&\le\sum_{\substack{d\le X\\Tq\mid d\text{ for some }q\in F}}\frac1d
+\\ &\le\sum_{q\in F}\frac1{Tq}
+             H_{\lfloor X/(Tq)\rfloor}
+\\ &\le\frac WT\left(1+\log\frac{X}{Tq_0}\right).
 \end{aligned}                                                     \tag{3}
 ```
 

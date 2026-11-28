@@ -9,7 +9,7 @@ Complete proposed proof, 21 November 2026. Two independent internal mathematical
 For a real parameter `q>1` and an integer `m>=2`, the polynomials
 
 ```math
-H_n^{[m]}(q,t)=\sum_{k+l=n-1}q^{m\binom{k+1}{2}}\operatorname{PP}(k,l,m;q)t^k
+H_n^{[m]}(q,t)=\sum_{k+l=n-1}q^{m\binom{k+1}{2}}\mathop{\mathrm{PP}}(k,l,m;q)t^k
 ```
 
 have simple negative roots and strictly interlace as `n` increases. Here `PP(k,l,m;q)` is the volume generating polynomial of plane partitions in a `k` by `l` by `m` box. The case `q=1` is Theorem 1.2 of Fang–Zhang–Zhao (2025). Thus this would prove their Conjecture 4.1, which asks for positive integral `q` and `m=2,3`, and a stronger real-parameter, all-`m` statement.
@@ -75,7 +75,7 @@ D_qg(-y)=\frac{g(-qy)-g(-y)}{-(q-1)y}
 has opposite nonzero signs: the first endpoint has sign `(-1)^{i+1}`, and the second has sign `(-1)^i`. Hence it has a root `x_i=-y_i` in each interval
 
 ```math
-r_i<y_i<r_{i+1}/q, \qquad i=1,\ldots,d-1.
+r_i\lt y_i\lt r_{i+1}/q, \qquad i=1,\ldots,d-1.
 ```
 
 Its degree is `d-1`, so these are all its roots, and they are simple. In particular, the closed interval `[qx_i,x_i]` contains no root of `g`, and `g(qx_i)=g(x_i)≠0`.
@@ -153,7 +153,7 @@ and hence `F_{N-1,m}≺F_{N,m}`. This proves the induction for every integer `m>
 Put `d=N-m+1`, so the Hoggatt index is `n=d+1=N-m+2`. MacMahon's product formula gives
 
 ```math
-\operatorname{PP}(k,d-k,m;q)
+\mathop{\mathrm{PP}}(k,d-k,m;q)
 =\frac{\prod_{i=0}^{m-1}{N\brack k+i}_q}
 {\prod_{j=1}^{m-1}{N\brack j}_q}.
 ```

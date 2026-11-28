@@ -58,17 +58,21 @@ The [Karlin audit](karlin-audit.md) distinguishes the already disproved general 
 ### Wang–Yang's conjecture
 
 For the exact coefficients in the author's manuscript,
+
 ~~~math
 \frac18\Xi(z/2)=\sum_{n\ge0}\gamma(n)\frac{(-z^2)^n}{n!},
 ~~~
-the [proof](wang-yang.md) establishes that, for every fixed \(n\ge0\), the sequence \((-1)^r\Delta^r\gamma(n)\), as \(r\) varies, has infinitely many strictly positive terms and infinitely many strictly negative terms. This refutes the whole all-orders/all-indices Conjecture 1.10.
 
-With \(G(w)=\sum\gamma(n)w^n/n!\), the exact identity is
+the [proof](wang-yang.md) establishes that, for every fixed $`n\ge0`$, the sequence $`(-1)^r\Delta^r\gamma(n)`$, as $`r`$ varies, has infinitely many strictly positive terms and infinitely many strictly negative terms. This refutes the whole all-orders/all-indices Conjecture 1.10.
+
+With $`G(w)=\sum\gamma(n)w^n/n!`$, the exact identity is
+
 ~~~math
 \sum_{r\ge0}(-1)^r\Delta^r\gamma(n)\frac{z^r}{r!}
 =e^zG^{(n)}(-z).
 ~~~
-Hardy's classical theorem gives infinitely many negative real zeros of \(G\). Repeated Rolle gives them for every derivative. The right side therefore has infinitely many positive real zeros. A nonzero entire function with eventually one-signed Taylor coefficients cannot have those zeros, because a sufficiently high coefficient dominates the finite opposite-sign polynomial on the positive axis. This proves both infinite sign sets without RH.
+
+Hardy's classical theorem gives infinitely many negative real zeros of $`G`$. Repeated Rolle gives them for every derivative. The right side therefore has infinitely many positive real zeros. A nonzero entire function with eventually one-signed Taylor coefficients cannot have those zeros, because a sufficiently high coefficient dominates the finite opposite-sign polynomial on the positive axis. This proves both infinite sign sets without RH.
 
 An independent Bernstein-weight argument shows that complete monotonicity would force log-convexity, contradicting the coefficients' supergeometric decay. The classical strict Turán inequality supplies another credited contradiction. Neither proof uses numerical zeros or a finite range.
 
@@ -77,45 +81,55 @@ Two independent reviews checked the exact coefficient factor and difference sign
 ### Wagner's conjecture
 
 The [full counterexample](wagner.md) concerns Conjecture 4.3 in the 2022 author preprint. The common polynomial approximants
+
 ~~~math
 f_N(z)=(1+z/N)^N+1
 ~~~
-converge locally uniformly to \(e^z+1\). For each fixed \(d\) and every \(N\ge d+1\), their \((N-d)\)-th derivatives are a positive multiple of \((1+z/N)^d\), with all zeros at \(-N\). The limiting Taylor coefficients are all positive. Thus the function belongs to the exact positive shifted Laguerre–Pólya class.
+
+converge locally uniformly to $`e^z+1`$. For each fixed $`d`$ and every $`N\ge d+1`$, their $`(N-d)`$-th derivatives are a positive multiple of $`(1+z/N)^d`$, with all zeros at $`-N`$. The limiting Taylor coefficients are all positive. Thus the function belongs to the exact positive shifted Laguerre–Pólya class.
 
 But the first Laguerre operator gives
+
 ~~~math
 L_1(e^z+1)=(e^z)^2-(e^z+1)e^z=-e^z,
 ~~~
+
 whose coefficients are all negative. This refutes the whole universal function-class preservation statement. Parameter variants and higher odd operators are part of the same counterexample mechanism, not additional targets.
 
 The argument is unconditional and has two independent review receipts. The exact final publisher PDF and the full Fan–Wang 2026 paper were not accessible; the note pins the refuted statement to the author preprint and preserves those priority-audit limits.
 
 ### Cardon–Forgács–Piotrowski–Sorensen–White conjecture
 
-The [full counterexample](cardon-forgacs-piotrowski-sorensen-white.md) refutes the proposed criterion that \(T[z^k]=e^{-\alpha k^p}z^k\), with arbitrary \(\alpha>0\), reduces zero sectors exactly when \(p\ge2\). For every fixed real \(p>2\), applying \(T\) to \((z-1)^3\) gives a cubic whose discriminant is
+The [full counterexample](cardon-forgacs-piotrowski-sorensen-white.md) refutes the proposed criterion that $`T[z^k]=e^{-\alpha k^p}z^k`$, with arbitrary $`\alpha>0`$, reduces zero sectors exactly when $`p\ge2`$. For every fixed real $`p>2`$, applying $`T`$ to $`(z-1)^3`$ gives a cubic whose discriminant is
+
 ~~~math
 -27(3^p-3\cdot2^p+3)^2\alpha^2+O_p(\alpha^3)<0
 ~~~
-for all sufficiently small positive \(\alpha\). The third finite difference is strictly positive throughout \(p>2\).
 
-An exact instance takes \(p=3\), \(\alpha=\log(16/15)/6\), and a positive change of variable. The resulting cubic
+for all sufficiently small positive $`\alpha`$. The third finite difference is strictly positive throughout $`p>2`$.
+
+An exact instance takes $`p=3`$, $`\alpha=\log(16/15)/6`$, and a positive change of variable. The resulting cubic
+
 ~~~math
 (15/16)^4w^3-3(15/16)w^2+3w-1
 ~~~
-has discriminant \(-72517275/4294967296\). Its nonreal roots contradict sector reduction for a sufficiently narrow positive-width input sector. This is one full refutation, with all three internal reviews recorded.
 
-The proof is unconditional. Its origin is the zero-location research around RH; it does not require the accepted RH theorem. The note also records an older unrestricted-parameter multiplier assertion that conflicts with the exact cubic. The fixed \(\alpha=1\) complex-zero-decreasing question and the complete parameter classification remain unsettled here.
+has discriminant $`-72517275/4294967296`$. Its nonreal roots contradict sector reduction for a sufficiently narrow positive-width input sector. This is one full refutation, with all three internal reviews recorded.
+
+The proof is unconditional. Its origin is the zero-location research around RH; it does not require the accepted RH theorem. The note also records an older unrestricted-parameter multiplier assertion that conflicts with the exact cubic. The fixed $`\alpha=1`$ complex-zero-decreasing question and the complete parameter classification remain unsettled here.
 
 ### Jutila's conjecture
 
-The [full proof](jutila.md) establishes, for each positive integer \(m\), constants depending only on \(m\) such that
+The [full proof](jutila.md) establishes, for each positive integer $`m`$, constants depending only on $`m`$ such that
+
 ~~~math
-\sum_{\substack{\chi\ {\rm real,\ nonprincipal}\\
-                 {\rm modulus}(\chi)\le X}}
+\sum_{\substack{\chi\ {\rm real,\ nonprincipal}
+                 \\ {\rm modulus}(\chi)\le X}}
 \left|\sum_{n\le Y}\chi(n)\right|^{2m}
 \ll_m XY^m(\log X)^{C_m}
 \qquad(X\ge3,\ Y\ge1).
 ~~~
+
 Characters are counted with their moduli, including imprimitive characters. The original nonsquare-discriminant family injects into this family; its exact definition was checked on the actual 1973 scan.
 
 The accepted rational Dirichlet GRH supplies a published logarithm bound for every primitive character. Elementary quadratic orthogonality and a large-deviation argument give the needed moments uniformly in height. A half-integer Perron cutoff recovers the unsmoothed sums. Möbius inversion and a convergent Euler product control every induced character, with only one further logarithm. All moments and all lengths belong to this one historical target.
@@ -124,55 +138,69 @@ The logarithmic exponent is deliberately nonsharp. The complete derivation uses 
 
 ### Csordas–Dimitrov Laguerre conjecture
 
-For the exact entire function \(F\) in their 2000 Problem 3.5, the [note](csordas-dimitrov.md) proves
+For the exact entire function $`F`$ in their 2000 Problem 3.5, the [note](csordas-dimitrov.md) proves
+
 ~~~math
 (F^{(q)}(x))^2-F^{(q-1)}(x)F^{(q+1)}(x)\ge0
 \qquad(q\ge1,\ x\in\mathbb R).
 ~~~
-Under accepted RH, \(F\) has only negative real zeros and order \(1/2\). Its genus-zero product is a compact limit of real-rooted polynomials. Rolle's theorem and convergence of derivatives prove every requested inequality. This is the classical implication already indicated by the original authors. The previously established nonnegative-real-argument case is not counted separately.
+
+Under accepted RH, $`F`$ has only negative real zeros and order $`1/2`$. Its genus-zero product is a compact limit of real-rooted polynomials. Rolle's theorem and convergence of derivatives prove every requested inequality. This is the classical implication already indicated by the original authors. The previously established nonnegative-real-argument case is not counted separately.
 
 ### Csordas–Vishnyakova conjecture
 
 The original 2013 Conjecture 3.6 removes the growth restriction from a preceding Laguerre–Pólya criterion. Its fixed admissible polynomial may be
+
 ~~~math
 p(z)=z^4+z^2+1.
 ~~~
-For the real entire function \(\varphi(z)=e^{-z^4}\), the relevant product is exactly
+
+For the real entire function $`\varphi(z)=e^{-z^4}`$, the relevant product is exactly
+
 ~~~math
 \prod_{j=1}^{4}\varphi(x+\alpha_jt)
 =e^{-4x^4}\,e^{12x^2t^2}\,e^{2t^4},
 \qquad p(z)=\prod_{j=1}^{4}(z+\alpha_j).
 ~~~
-Every coefficient is nonnegative for every real \(x\). Yet \(\varphi(it)\varphi(-it)=e^{-2t^4}\) has a negative coefficient. Such a coefficient is impossible for a compact limit of real-rooted polynomials. The [full proof](csordas-vishnyakova.md) refutes the published implication unconditionally and includes three internal review receipts. Cardon's original genus-restricted theorem is unaffected.
+
+Every coefficient is nonnegative for every real $`x`$. Yet $`\varphi(it)\varphi(-it)=e^{-2t^4}`$ has a negative coefficient. Such a coefficient is impossible for a compact limit of real-rooted polynomials. The [full proof](csordas-vishnyakova.md) refutes the published implication unconditionally and includes three internal review receipts. Cardon's original genus-restricted theorem is unaffected.
 
 ### Robin's conjecture
 
 The [note](robin.md) applies Robin's 1984 theorem to accepted zeta RH and obtains
+
 ~~~math
-\sigma(n)<e^\gamma n\log\log n\qquad(n>5040).
+\sigma(n)\lt e^\gamma n\log\log n\qquad(n>5040).
 ~~~
+
 The strict sign and exact threshold were checked in the original extracted theorem and two later primary papers. Robin's published theorem supplies its finite completion as well as the asymptotic argument. The current audit distinguishes restricted and finite results from the full statement and records withdrawn proof claims. This is a credited classical implication, with two independent source and scope reviews.
 
 ### Nicolas's conjecture
 
-For \(N_k=\prod_{j\le k}p_j\), the [note](nicolas.md) applies Nicolas's established theorem to obtain
+For $`N_k=\prod_{j\le k}p_j`$, the [note](nicolas.md) applies Nicolas's established theorem to obtain
+
 ~~~math
 \frac{N_k}{\varphi(N_k)}>e^\gamma\log\log N_k
 \qquad(k\ge1).
 ~~~
+
 The accepted input here is zeta RH alone. Nicolas's original conditional implication retains full credit. His later quantitative theorem provides a separate source check for every index. The current-status audit also records concrete flaws in several apparent prior-proof claims, with exact versions and access limits.
 
 ### Nuttall's conjecture
 
 For the Riemann theta kernel Phi and its repeated tails
+
 ~~~math
 \Psi_m(u)=\frac1{(m-1)!}\int_0^\infty v^{m-1}\Phi(u+v)\,dv,
 ~~~
+
 the [proof](nuttall.md) establishes, for every fixed r and every sufficiently large m,
+
 ~~~math
 (-1)^{s(s-1)/2}\det[\Psi_m(x_i+y_j)]_{i,j=1}^s>0
 \qquad(1\le s\le r)
 ~~~
+
 for every pair of strictly increasing nonnegative node lists. The original conjecture asks for the corresponding sign regularity. Its existing propagation theorem already makes the eventual-m and existence formulations equivalent.
 
 The argument first proves eventual Wronskian signs for the theta kernel. An exact determinant integral transfers them to the tail cumulants. Uniformly on the remaining compact interval, one separated positive box dominates the entire possibly negative region. Extended-Chebyshev criteria then give every ordered-node determinant. The proof assumes no RH and uses no numerical cutoff. It leaves the separate low-index Toeplitz determinants in Nuttall's proposed RH program untouched.
@@ -180,81 +208,101 @@ The argument first proves eventual Wronskian signs for the theta kernel. An exac
 ### Coffey–Smith conjecture
 
 For
+
 ~~~math
 \log\!\left(\frac z{1-z}\zeta\!\left(\frac1{1-z}\right)\right)
 =\sum_{n\ge1}c_nz^n,
 ~~~
+
 the [proof](coffey-smith.md) establishes under RH
+
 ~~~math
 \sum_{N\le n\le2N}|c_n|^2\ll N^{-1/2}\log^3(N+2).
 ~~~
+
 Consequently, for each fixed 0<epsilon<1/4,
+
 ~~~math
 \#\{n\le X:|c_n|>n^{-1/2-\epsilon}\}
 \ll_\epsilon X^{1/2+2\epsilon}\log^3(X+2)=o(X).
 ~~~
+
 This contradicts the original positive-fraction clauses for both signs. The proof combines the established Hardy-space identification with an explicit translation-modulus estimate for the boundary argument of zeta. It needs no simplicity or spacing assumption on zeros. If RH fails, even polynomial coefficient growth fails, so the original upper clause also fails. The refutation of the full conjunction is therefore unconditional.
 
 The separate upper-bound statement named Coffey's conjecture remains valid under accepted RH. The density refutation does not contradict it.
 
 ### Merlini–Sala–Sala conjecture
 
-For the same coefficients \(c_n\), the authors' tiny remainder is \(\lambda_{\rm tiny}(n)=n c_n\). The [proof](merlini-sala-sala.md) gives
+For the same coefficients $`c_n`$, the authors' tiny remainder is $`\lambda_{\rm tiny}(n)=n c_n`$. The [proof](merlini-sala-sala.md) gives
+
 ~~~math
 \limsup_{n\to\infty}\frac{|\lambda_{\rm tiny}(n)|}{n^{1/4}}=\infty.
 ~~~
-It refutes their full logarithmic/subpower conjecture. Assuming the contrary bound first supplies an analytic logarithm and an \(H^2\) boundary function. On zero-free arcs corresponding to \(T\le t\le2T\), its argument has angular derivative of order \(T^2\log T\). The zero count leaves enough whole short arcs to force a squared translation modulus at least \(c/T\); the assumed coefficient bound gives \(O(1/(T\sqrt{\log T}))\). The contradiction is unconditional and requires no zero-spacing assumption.
+
+It refutes their full logarithmic/subpower conjecture. Assuming the contrary bound first supplies an analytic logarithm and an $`H^2`$ boundary function. On zero-free arcs corresponding to $`T\le t\le2T`$, its argument has angular derivative of order $`T^2\log T`$. The zero count leaves enough whole short arcs to force a squared translation modulus at least $`c/T`$; the assumed coefficient bound gives $`O(1/(T\sqrt{\log T}))`$. The contradiction is unconditional and requires no zero-spacing assumption.
 
 ### Chaudhary–Khmiri–Mazhouda conjecture
 
 The [counterexample](chaudhary-khmiri-mazhouda.md) uses the unitary GL1 twist
+
 ~~~math
 L(s,\pi_8)=L(s+8i,\chi_{-3}).
 ~~~
-It belongs to the exact class in the 2026 original paper. A Hadamard-product calculation reduces the first coefficient decrease to two logarithmic derivatives at \(1+8i\). Explicit Euler–Maclaurin and gamma-series remainders, enclosed by [integer interval arithmetic](certificates/chaudhary-khmiri-mazhouda.py), prove
+
+It belongs to the exact class in the 2026 original paper. A Hadamard-product calculation reduces the first coefficient decrease to two logarithmic derivatives at $`1+8i`$. Explicit Euler–Maclaurin and gamma-series remainders, enclosed by [integer interval arithmetic](certificates/chaudhary-khmiri-mazhouda.py), prove
+
 ~~~math
-\operatorname{Re}\lambda_{\pi_8}(2)
--\operatorname{Re}\lambda_{\pi_8}(1)
+\mathop{\mathrm{Re}}\lambda_{\pi_8}(2)
+-\mathop{\mathrm{Re}}\lambda_{\pi_8}(1)
 \in[-1.660157075630,-1.655616272869].
 ~~~
+
 This is a full counterexample to universal monotonicity. Its proof does not assume RH; it remains a counterexample under accepted Dirichlet GRH.
 
 ### Pomerance's conjecture
 
-The original 1974 abstract conjectures that no positive integer \(n\) satisfies
+The original 1974 abstract conjectures that no positive integer $`n`$ satisfies
+
 ~~~math
 r-1\mid\varphi(n)\quad\Longrightarrow\quad r^2\mid n
 \qquad\text{for every prime }r.
 ~~~
-The [proof](pomerance.md) selects the smallest prime power missing from \(\varphi(n)\), propagates the assumed condition down Pratt trees, and uses Ford–Luca's Dirichlet-GRH theorem to force one extra valuation. It settles that complete original nonexistence statement. The stronger ordered prime-product conjecture and Carmichael's full totient conjecture remain open here.
+
+The [proof](pomerance.md) selects the smallest prime power missing from $`\varphi(n)`$, propagates the assumed condition down Pratt trees, and uses Ford–Luca's Dirichlet-GRH theorem to force one extra valuation. It settles that complete original nonexistence statement. The stronger ordered prime-product conjecture and Carmichael's full totient conjecture remain open here.
 
 ### Brent's conjecture
 
 The [note](brent.md) proves Brent's literal discrete mean, equation (1.22) in the original:
+
 ~~~math
 \sum_{n=2}^N
-\frac{(\langle\operatorname{li}(n)\rangle-\pi(n))\log n}{n^{3/2}}
+\frac{(\langle\mathop{\mathrm{li}}(n)\rangle-\pi(n))\log n}{n^{3/2}}
 =\log N+2\log\log N+O(1),
 ~~~
+
 where angle brackets mean nearest integer. The prime-square term supplies the mean after the integrated explicit formula. A summable cell error connects the integral proof to the exact discrete statement. Robin's modulus-four version is credited to his existing GRH theorem and also receives a complete signed-weight deduction. The downloaded original scans and an independent review establish the precise historical formulas.
 
 ## Fujii's conjecture
 
 The complete written argument in [Fujii's conjecture](fujii.md) proves, without any RH assumption, that there is A>0 such that for every fixed alpha>A,
+
 ~~~math
 S_\alpha(x)=\sum_{p>2}\chi_4(p)e^{-(p/x)^\alpha}
 =\Omega_\pm\!\left(\frac{\sqrt{x}}{\log x}\right).
 ~~~
+
 In particular its limsup is +infinity and its liminf is -infinity.
 
 This contradicts the reported all-positive-alpha equivalence family under the accepted beta GRH input. It concerns every sufficiently large fixed exponent. It does not extend a numerical admissible range and uses no linear independence or simple-zero assumption.
 
 The beta-GRH branch has two complete positive-phase proofs. The boundary proof uses a reflected local logarithmic singularity. The shorter [zero-count proof](fujii-zero-count.md) gives
+
 ~~~math
 F_\alpha(0)=
 \left(\frac12-\frac1{\mathrm e}\right)\log\alpha
 +C_\beta+O\!\left(\frac{\log(\alpha+2)}{\alpha}\right),
 ~~~
+
 with an explicitly convergent constant. A separate convolution proof supplies the prime-sum normalization, and almost-periodic recurrence moves the positive phase to arbitrarily large x. Under beta GRH, each sign set also has positive lower natural and logarithmic density. In the complementary case, Landau's theorem forces both signs for every positive alpha, completing the unconditional oscillation theorem.
 
 The [prior-art audit](fujii-prior-art.md) establishes that the general boundary, smoothing, and recurrence mechanism is classical, notably in Kaczorowski's early papers and Kaczorowski–Ramaré (2003). The possible contribution here is the explicit Fujii-weight corollary and its application, not a new oscillation principle. No retrieved primary paper explicitly stated that corollary or the displayed coefficient, but priority remains unclaimed. Direct retrieval of Fujii's 1988 text remains blocked; Suzuki 2012, corrected Suzuki 2025, and the comparative-prime-number bibliography independently record the exact all-alpha conjecture.
@@ -314,30 +362,38 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 ## Arithmetic results extracted so far
 
 The accepted weighted cohomology bound gives constants C,B independent of m with
+
 ~~~math
 \log |K_m(\mathbb Z)_{\mathrm{tors}}|\le C(m+1)^B
 \qquad(m\ge1).
 ~~~
+
 The difficult K_(4n) contribution uses the source bound; other residue classes use previously known torsion formulas. This is not a proof of Vandiver or of the full field-uniform Soulé conjecture. Priority for the quantitative extraction is unclaimed.
 
 For imaginary-quadratic class-character twists, the correct polarized diagonal is
+
 ~~~math
-\operatorname{diag}(\epsilon^e\psi,\,1,\,\epsilon^{-e}\psi).
+\mathop{\mathrm{diag}}(\epsilon^e\psi,\,1,\,\epsilon^{-e}\psi).
 ~~~
+
 Its negative-simple-root adjoint plane is an induced representation. Shapiro therefore gives a first-order Selmer-to-deformation map with the required local conditions. The corrected trace family also has an integral nonzero norm bound.
 
 A further proved lemma in [character-lifting.md](character-lifting.md) shows that every normalized triangular characteristic-zero point is diagonal without the old coefficient-prime/class-number coprimality assumption. The argument uses opposite local flags, strict negative-Tate Selmer vanishing, polarization, and the literal source normalization. This supplies the specified M3 condition while allowing additional diagonal class characters.
 
 The other reducible-point case remains a different problem. Its rank-two corner descends, but its off-block extension module becomes
+
 ~~~math
-U=V\otimes\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu.
+U=V\otimes\mathop{\mathrm{Ind}}_{G_K}^{G_{\mathbb Q}}\nu.
 ~~~
+
 Both two-dimensional determinants are eta_K. The resulting rank-four tensor never has the one-dimensional fixed quotient required by the checked Rankin Euler-system theorem. At the relevant specialization its reciprocity multiplier also vanishes. These are exact failures of the cited theorem's hypotheses, not disproofs of the desired Selmer vanishing.
 
 The integral obstruction is also explicit:
+
 ~~~math
 R_n=\mathcal O[z]/(z^2,\pi^n z)
 ~~~
+
 has a single rigid generic point but cotangent length n. Generic-point rigidity cannot replace the source's detailed integral presentation conditions. No characteristic-zero automorphic point is inferred from a torsion tangent alone.
 
 The separate [arithmetic-vanishing audit](arithmetic-vanishing.md) proves the finite-image, arbitrary-rank Artin–Tate extension of the source vanishing theorem and identifies it as known. Its interpolation countermodel explains why the available positive-weight size bounds do not establish the missing Schneider/Jannsen range.
@@ -349,11 +405,13 @@ The [adjoint-transfer theorem](adjoint-transfer.md) rules out a proposed bypass 
 The [CM field lemma](cm-character-descent.md) proves that every odd-order anticyclotomic character of an imaginary quadratic field retains its full order after every CM extension. The even-order loss is at most a factor of two. The norm map on class groups is consequently surjective on odd-primary parts. These field-theory statements are complete; no novelty claim is made.
 
 A separate October manuscript claims a common zero-free width delta for finite-order Hecke characters on cyclotomic fields. That assertion is denoted H(delta), with its provenance and unaudited preceding argument recorded. It is not silently imported into the accepted RH archive. Conditional on H(delta), the [uniform splitting note](artin-uniform-splitting.md) proves
+
 ~~~math
 N_a(x,q)\ll_a
 \frac{x}{q(q-1)\log x}
 +\frac{x^{1-\delta}\log(2q)}{\log x}
 ~~~
+
 for polynomially growing prime q. It closes the small prime-index tail for every fixed eta<delta; an elementary product argument closes the large tail. The exact unresolved middle-family average is stated, together with the order of limits that would give the full classical Artin constant. Previously announced infinitude and positive-lower-density results are excluded as new solutions.
 
 The [Hecke window transfer](hecke-bootstrap.md) removes the final analytic layer as an obstacle. For each finite Hecke character, a one-sided corrected prime-ideal bound of size x^(1/2+epsilon) throughout arbitrarily large intervals [Y,Y^lambda], for every epsilon>0 and one fixed lambda>1, implies its GRH. Positive finite families also work because their zero residues cannot cancel. Principal poles, conjugate characters, and the functional equation are handled explicitly.
@@ -363,19 +421,25 @@ Producing those windows remains open. The accepted archive obtains them for rati
 ### Exact average and integral bounds still needed
 
 The [Artin average note](artin-average.md) shortens the missing interval to
+
 ~~~math
-x^\eta<q\le\frac{\sqrt{x}}{(\log x)^B}
+x^\eta\lt q\le\frac{\sqrt{x}}{(\log x)^B}
 ~~~
+
 for any fixed B>0. For the unique nonlinear character of the Kummer Galois group, the exact normalization is q N_a=A_q+T_q. Negligibility of the middle tail is equivalent to the weighted first moment
+
 ~~~math
 \sum_q\frac{|T_q(x)|}{q}=o(x/\log x).
 ~~~
+
 The sufficient second moment has a negligible diagonal. The inspected sieve estimate yields only a big-O bound at the desired scale; a vanishing factor remains unproved. A separate complete deduction shows that the stated weighted zero-density bound would imply the full Artin asymptotic under H(delta) and Dirichlet GRH. That density bound is an additional hypothesis, not a theorem extracted from the archive.
 
 The [moving Selmer note](moving-selmer-windows.md) proves a quantitative restriction lemma without omitting coefficient primes dividing the character order. For an integer t>=1 and a cyclic degree-d extension L/E killing the coefficient character,
+
 ~~~math
 W_{S,\eta}(E,t)\le W_S(L,t)+(t-1)\log d.
 ~~~
+
 The normalization is length over the coefficient ring divided by its ramification index. The restriction kernel is cyclic and killed by d; scalar extension and the error both scale by that ramification index. Local unramified and strict conditions are preserved even at ramified places. This argument has two independent internal reviews.
 
 That note also proves a conditional sparse-window theorem, tracking degree, discriminant, and uniformity before the auxiliary primes are chosen. One common set of at most R exceptional twists must work for every layer in a tower. A controlled mu-primary module contributes at most a times its generator count times the layer degree, so such a term can fit the budget. The uniform finite-rank comparison and the all-prime plus-component estimate remain separate obligations.

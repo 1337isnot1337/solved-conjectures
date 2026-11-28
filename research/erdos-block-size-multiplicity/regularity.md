@@ -1,6 +1,6 @@
 # Arithmetic obstruction for regular block sizes
 
-Consider a nontrivial pairwise balanced design on $v$ points. Write $b_k$ for the number of size-$k$ blocks and $M=\max_k b_k$. Suppose for each $k$ every point belongs to the same number of size-$k$ blocks. This holds in particular for every point-transitive finite linear space, without any representability hypothesis. Then
+Consider a nontrivial pairwise balanced design on $v$ points. Write $b_k$ for the number of size-$`k`$ blocks and $M=\max_k b_k$. Suppose for each $k$ every point belongs to the same number of size-$`k`$ blocks. This holds in particular for every point-transitive finite linear space, without any representability hypothesis. Then
 ```math
  M\ge c\,v^{3/4}/\sqrt{d(v)}=v^{3/4-o(1)}
  \quad\text{as a lower bound},
@@ -11,7 +11,7 @@ In fact the divisibility condition $g\mid kb_k$ for all $k$ suffices to give
 ```math
  M\ge c\,v^{1/4}\sqrt{g/d(g)}.
 ```
-For example take $g$ to be the greatest common divisor of the sizes of the point orbits of any automorphism group. The number of size-$k$ blocks through a point is constant on orbits. Summing those counts over the orbits gives $kb_k$. Equal replication for each size gives $g=v$ directly.
+For example take $g$ to be the greatest common divisor of the sizes of the point orbits of any automorphism group. The number of size-$`k`$ blocks through a point is constant on orbits. Summing those counts over the orbits gives $kb_k$. Equal replication for each size gives $g=v$ directly.
 
 Put $K=\lceil2\sqrt v\rceil$. The de Bruijn–Erdős inequality gives at least $v$ blocks. Since each point pair lies in exactly one block, fewer than $v/4$ blocks have size larger than $K$, by comparing their individual pair counts with $\binom v2$. Thus at least $3v/4$ blocks have sizes at most $K$.
 
@@ -19,7 +19,7 @@ If $b_k>0$, divisibility implies $b_k\ge g/\gcd(g,k)$, hence $\gcd(g,k)\ge g/M$.
 
 ## Near regularity
 
-Assume instead only $M\le C\sqrt v$ for some fixed $C$. Write $r_k(x)$ for the number of size-$k$ blocks through $x$ and set
+Assume instead only $M\le C\sqrt v$ for some fixed $C$. Write $r_k(x)$ for the number of size-$`k`$ blocks through $x$ and set
 ```math
  D_k=\min_{a\in\mathbb Z_{\ge0}}\sum_x |r_k(x)-a|.
 ```
@@ -35,6 +35,6 @@ The action factors through a regular abelian action: in a transitive abelian act
 
 If every block has nontrivial stabilizer, the blocks through zero are proper subgroups partitioning the nonzero elements. Take nonzero $x,y$ in distinct members. The group element $x+y$ is in a third subgroup. Any multiple that kills $x$ must also kill $y$, since otherwise the resulting nonzero multiple of $y$ lies in two of the subgroups. The same holds with $x,y$ exchanged, so they have equal order. Comparing elements within one subgroup against an element of another shows that all nonzero elements of the group have the same order. A nonzero proper multiple of an element of composite order would have smaller order. Thus the common order is a prime $p$, and the subgroups through zero form a vector space partition of $\mathbb F_p^d$.
 
-Let $s$ be the least dimension in the partition, $m$ its multiplicity. The tail bound for vector space partitions gives $m\ge p^s+1$. Here is a short proof of the needed inequality. For any hyperplane $H$, count all vectors outside $H$. A dimension-$j$ member not contained in $H$ contributes $(p-1)p^{j-1}$. Dividing the count by $(p-1)p^{s-1}$ and reducing modulo $p$ shows that the number of the $m$ smallest members lying outside $H$ is divisible by $p$ (as $d>s$). If $m\le p^s$, a uniformly random hyperplane contains fewer than one of them on average since the probability that it contains a fixed one is $(p^{d-s}-1)/(p^d-1)<p^{-s}$. Some hyperplane thus contains none, forcing $m\equiv0\pmod p$. Now condition the hyperplane to contain one specified smallest subspace $U$. In the quotient by $U$, each other smallest subspace has dimension $s$, by disjointness. Its containment probability is again less than $p^{-s}$. By the union bound there is a hyperplane containing exactly $U$ among the smallest members. This forces $m\equiv1\pmod p$, a contradiction. [Heden's tail bound and later refinements](https://arxiv.org/abs/1708.01113).
+Let $s$ be the least dimension in the partition, $m$ its multiplicity. The tail bound for vector space partitions gives $m\ge p^s+1$. Here is a short proof of the needed inequality. For any hyperplane $H$, count all vectors outside $H$. A dimension-$`j`$ member not contained in $H$ contributes $(p-1)p^{j-1}$. Dividing the count by $(p-1)p^{s-1}$ and reducing modulo $p$ shows that the number of the $m$ smallest members lying outside $H$ is divisible by $p$ (as $d>s$). If $m\le p^s$, a uniformly random hyperplane contains fewer than one of them on average since the probability that it contains a fixed one is $(p^{d-s}-1)/(p^d-1)<p^{-s}$. Some hyperplane thus contains none, forcing $m\equiv0\pmod p$. Now condition the hyperplane to contain one specified smallest subspace $U$. In the quotient by $U$, each other smallest subspace has dimension $s$, by disjointness. Its containment probability is again less than $p^{-s}$. By the union bound there is a hyperplane containing exactly $U$ among the smallest members. This forces $m\equiv1\pmod p$, a contradiction. [Heden's tail bound and later refinements](https://arxiv.org/abs/1708.01113).
 
-Each of these $m$ subspaces contributes all $v/p^s$ cosets as blocks of size $p^s$. Their combined multiplicity exceeds $v$. For the equality example the translates of $\{0,1,3\}$ in $\mathbb Z/7\mathbb Z$ form the Fano plane because their six nonzero ordered differences are all different. There are exactly seven blocks, all of size three.
+Each of these $m$ subspaces contributes all $v/p^s$ cosets as blocks of size $p^s$. Their combined multiplicity exceeds $v$. For the equality example the translates of $`\{0,1,3\}`$ in $\mathbb Z/7\mathbb Z$ form the Fano plane because their six nonzero ordered differences are all different. There are exactly seven blocks, all of size three.

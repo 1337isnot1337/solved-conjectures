@@ -6,10 +6,10 @@ For $A\subset\mathbb Z$, write $Q(A)$ for the squared-gap sum over its distinct 
 
 ### A bounded lifting principle
 
-Let $B>2D\ge0$ be integers and choose tags $u_a\in[0,D]\cap\mathbb Z$. Put $A'=\{Ba+u_a:a\in A\}$. Different original sums cannot collide in the lift: their tagged sites lie in disjoint, ordered integer blocks $[Bs,Bs+2D]$. Pick one tagged site from every such block. The new gap is $B$ times the old gap plus an increment bounded in absolute value by $2D$. Minkowski's inequality, followed by normalization, shows that the squared-gap cost of the representatives has square root at most $B\sqrt{Q(A)}+2D$. The other tagged sums split gaps, which can only decrease the squared cost, or extend either edge by at most $2D$ once. Also $|A'+A'|\ge |A+A|$. Consequently
-\[
+Let $B>2D\ge0$ be integers and choose tags $u_a\in[0,D]\cap\mathbb Z$. Put $`A'=\{Ba+u_a:a\in A\}`$. Different original sums cannot collide in the lift: their tagged sites lie in disjoint, ordered integer blocks $[Bs,Bs+2D]$. Pick one tagged site from every such block. The new gap is $B$ times the old gap plus an increment bounded in absolute value by $2D$. Minkowski's inequality, followed by normalization, shows that the squared-gap cost of the representatives has square root at most $B\sqrt{Q(A)}+2D$. The other tagged sums split gaps, which can only decrease the squared cost, or extend either edge by at most $2D$ once. Also $|A'+A'|\ge |A+A|$. Consequently
+```math
  \sqrt{Q(A')}\le B\sqrt{Q(A)}+2D+\frac{2\sqrt2 D}{\sqrt{|A+A|}}.
-\]
+```
 The lift preserves size and multiplies diameter by at most $B$, up to an additive $D$. In particular the constants may be chosen uniformly for a family.
 
 ### Turn every weak Sidon set into a genuine Sidon set
@@ -24,6 +24,6 @@ Make a 4-uniform hypergraph on $A$ whose edges are all four-element sets support
 
 ### Why an arbitrary bound of two representations is not enough for this method
 
-Take integer Sidon sets $X,Y$ of the same size $m$ and translate them so their minima are zero. For an integer $W>2\max Y$, let $A=\{Wx+y:x\in X,\ y\in Y\}$. Every sum determines the unordered pair of $X$ coordinates and the unordered pair of $Y$ coordinates. There are at most two matchings between the two pairs, so this is a genuine unordered-capacity-two family.
+Take integer Sidon sets $X,Y$ of the same size $m$ and translate them so their minima are zero. For an integer $W>2\max Y$, let $`A=\{Wx+y:x\in X,\ y\in Y\}`$. Every sum determines the unordered pair of $X$ coordinates and the unordered pair of $Y$ coordinates. There are at most two matchings between the two pairs, so this is a genuine unordered-capacity-two family.
 
-For any fixed finite tag alphabet of size $k$, view the tags as a coloring of the $m$ by $m$ array. Restrict to any $k+1$ rows. In each column some pair of these rows has the same tag; record one such pair and its tag. For $m>k\binom{k+1}{2}$ two columns record the same pair and tag. That monochromatic rectangle has equal opposite-corner sums. They stay equal under every common integer scaling and addition of the assigned tags, no matter how large the scale. Thus capacity two alone cannot imply the existence of a fixed-alphabet lift keeping every point. This is an obstruction to a method, not a bounded-$Q$ construction or a resolution of Erdős 153.
+For any fixed finite tag alphabet of size $k$, view the tags as a coloring of the $m$ by $m$ array. Restrict to any $k+1$ rows. In each column some pair of these rows has the same tag; record one such pair and its tag. For $m>k\binom{k+1}{2}$ two columns record the same pair and tag. That monochromatic rectangle has equal opposite-corner sums. They stay equal under every common integer scaling and addition of the assigned tags, no matter how large the scale. Thus capacity two alone cannot imply the existence of a fixed-alphabet lift keeping every point. This is an obstruction to a method, not a bounded-$`Q`$ construction or a resolution of Erdős 153.

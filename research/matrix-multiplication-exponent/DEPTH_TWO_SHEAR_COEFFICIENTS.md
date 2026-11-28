@@ -78,18 +78,33 @@ the sum of the following four expressions:
 \mathcal O^{(2)}_{ab,ij}
 ={}&\sum_{z,h,t}\kappa_{ahb}^z x_{it}y_{tj}p_{ah}d_{hb}
  \left(\tfrac12v_{a,t}^{z,ij}-v_{h,t}^{z,ij}
-                              +\tfrac12v_{b,t}^{z,ij}\right),\tag{4}\\
+                              +\tfrac12v_{b,t}^{z,ij}\right),
+\end{aligned} \tag{4}
+```
+
+```math
+\begin{aligned}
 \mathcal O^{(x)}_{ab,ij}
 ={}&\tfrac12\delta_{bj}\sum_{z,h}\kappa_{ahj}^z
-                         x_{ih}p_{ah}v_{j,h}^{z,ij},     \tag{5}\\
+                         x_{ih}p_{ah}v_{j,h}^{z,ij},
+\end{aligned} \tag{5}
+```
+
+```math
+\begin{aligned}
 \mathcal O^{(y)}_{ab,ij}
 ={}&\delta_{ai}\sum_{z,h}\kappa_{ihb}^z y_{hj}d_{hb}
                   \left(\tfrac12v_{b,h}^{z,ij}
-                                      -v_{h,h}^{z,ij}\right),\tag{6}\\
+                                      -v_{h,h}^{z,ij}\right),
+\end{aligned} \tag{6}
+```
+
+```math
+\begin{aligned}
 \mathcal O^{(0)}_{ab,ij}
 ={}&\tfrac12\delta_{ai}\delta_{bj}
-                    \sum_{z,h}\kappa_{ihj}^zv_{j,h}^{z,ij}.\tag{7}
-\end{aligned}
+                    \sum_{z,h}\kappa_{ihj}^zv_{j,h}^{z,ij}.
+\end{aligned} \tag{7}
 ```
 
 For example p_(ah)d_(hb)(x_(it)y_(tj)) produces the two first-order

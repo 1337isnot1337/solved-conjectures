@@ -393,7 +393,7 @@ Put ε=1/(2α) and g(z)=Γ(z)−1/z. For each positive ordinate γ, counted with
 +\frac{\Gamma((1/2-i\gamma)/\alpha)}{\alpha}
 =
 \frac1{1/4+\gamma^2}
-+\frac2\alpha\operatorname{Re}g(\varepsilon+i\gamma/\alpha).
++\frac2\alpha\mathop{\mathrm{Re}}g(\varepsilon+i\gamma/\alpha).
 \tag{20}
 ~~~
 
@@ -408,7 +408,7 @@ The function g is holomorphic at zero. It and its first derivatives are bounded 
 For u≥1, fixed-strip Stirling estimates and
 
 ~~~math
-\operatorname{Re}\frac1{\varepsilon+iu}
+\mathop{\mathrm{Re}}\frac1{\varepsilon+iu}
 =\frac{\varepsilon}{\varepsilon^2+u^2}
 ~~~
 
@@ -416,11 +416,11 @@ give, uniformly for 0≤ε≤1/2,
 
 ~~~math
 \begin{aligned}
-|\operatorname{Re}g(\varepsilon+iu)|
-&\ll u^{-2}+e^{-cu},\\
-|\partial_\varepsilon\operatorname{Re}g(\varepsilon+iu)|
-&\ll u^{-2}+e^{-cu},\\
-|\partial_u\operatorname{Re}g(\varepsilon+iu)|
+|\mathop{\mathrm{Re}}g(\varepsilon+iu)|
+&\ll u^{-2}+e^{-cu},
+\\ |\partial_\varepsilon\mathop{\mathrm{Re}}g(\varepsilon+iu)|
+&\ll u^{-2}+e^{-cu},
+\\ |\partial_u\mathop{\mathrm{Re}}g(\varepsilon+iu)|
 &\ll u^{-3}+e^{-cu}.
 \end{aligned}
 \tag{21}
@@ -453,8 +453,8 @@ With T=αu, the error is bounded by
 \left|\int_0^\infty E(T)f_\alpha'(T)\,dT\right|
 &\ll\frac1\alpha
   \int_0^\infty\log(\alpha u+2)
-  \left|\partial_u\operatorname{Re}g(\varepsilon+iu)\right|du\\
-&\ll\frac{\log(\alpha+2)}{\alpha}.
+  \left|\partial_u\mathop{\mathrm{Re}}g(\varepsilon+iu)\right|du
+\\ &\ll\frac{\log(\alpha+2)}{\alpha}.
 \end{aligned}
 \tag{23}
 ~~~
@@ -466,14 +466,14 @@ The main integral has factor 1/π, since the pair factor 2 in fα cancels the 2�
 For ε>0, gamma is the Fourier transform, with positive exponential convention, of the integrable function exp(εv−exp v). Fourier inversion at v=0 gives
 
 ~~~math
-\int_0^\infty\operatorname{Re}\Gamma(\varepsilon+iu)\,du
+\int_0^\infty\mathop{\mathrm{Re}}\Gamma(\varepsilon+iu)\,du
 =\frac{\pi}{\mathrm e}.
 ~~~
 
 Subtracting the pole integral π/2 yields the exact identity
 
 ~~~math
-\int_0^\infty\operatorname{Re}g(\varepsilon+iu)\,du
+\int_0^\infty\mathop{\mathrm{Re}}g(\varepsilon+iu)\,du
 =\pi\left(\frac1{\mathrm e}-\frac12\right).
 \tag{24}
 ~~~
@@ -486,7 +486,7 @@ The ε derivative bound in (21), including its integrable logarithmic weight, ju
 C_\beta=
 -1-\sum_{\gamma>0}\frac1{1/4+\gamma^2}
 -\frac1\pi\int_0^\infty
-  \operatorname{Re}\Gamma(iu)\log\frac{2u}{\pi}\,du.
+  \mathop{\mathrm{Re}}\Gamma(iu)\log\frac{2u}{\pi}\,du.
 \tag{25}
 ~~~
 

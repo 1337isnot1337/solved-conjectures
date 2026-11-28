@@ -8,8 +8,8 @@ For integers $m,n\geq1$, let $\mathcal D_n^{(m)}$ be the north-east lattice path
 
 ```math
 W_{n,k}^{(m)}(t)
- =\sum_{\substack{\pi\in\mathcal D_n^{(m)}\\
-                  \#NE(\pi)=k}}
+ =\sum_{\substack{\pi\in\mathcal D_n^{(m)}
+                  \\ \#NE(\pi)=k}}
    t^{\#NNE(\pi)}.
 ```
 
@@ -43,7 +43,7 @@ N^{a_1}E\,N^{a_2}E\,\cdots\,N^{a_L}E,
 \qquad a_j\geq0,\qquad \sum_{j=1}^L a_j=n.
 ```
 
-Use height $m\,(\#N)-(\#E)$. The block increments are
+Use height $`m\,(\#N)-(\#E)`$. The block increments are
 
 ```math
 b_j=ma_j-1\geq-1,\qquad \sum_{j=1}^L b_j=-1.
@@ -89,11 +89,11 @@ Leibniz's rule gives the polynomial identity
 \begin{aligned}
 Q(y)
 &:=\frac{R^{(d)}(y)}
-        {(d+1)!\,y(1-y)^{e-d}}\\
-&=\sum_{j=0}^d
+        {(d+1)!\,y(1-y)^{e-d}}
+\\ &=\sum_{j=0}^d
    \frac{\binom dj\binom ej}{j+1}
-   (-y)^j(1-y)^{d-j}\\
-&=(1-y)^d H_{d,e}\!\left(\frac{y}{y-1}\right).
+   (-y)^j(1-y)^{d-j}
+\\ &=(1-y)^d H_{d,e}\!\left(\frac{y}{y-1}\right).
 \end{aligned}                                                       \tag{4}
 ```
 

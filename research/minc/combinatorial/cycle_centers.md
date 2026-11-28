@@ -6,7 +6,7 @@ This rules out a straight-line descent proof of [Minc’s Conjecture 44](https:/
 
 ## Cofactors along a cycle
 
-First work in coordinates where the Hamiltonian bipartite cycle has allowed columns $i$ and $i+1$ in row $i$, with indices modulo $n$. Let $C$ be the forward cyclic permutation matrix, $A_x=(1-x)I+xC$, and write $h_{ij}=(i-j)\bmod n\in\{0,\ldots,n-1\}$. For $0<x<1$ all permanental cofactors are positive and
+First work in coordinates where the Hamiltonian bipartite cycle has allowed columns $i$ and $i+1$ in row $i$, with indices modulo $n$. Let $C$ be the forward cyclic permutation matrix, $A_x=(1-x)I+xC$, and write $`h_{ij}=(i-j)\bmod n\in\{0,\ldots,n-1\}`$. For $0<x<1$ all permanental cofactors are positive and
 ```math
 c_{ij}(A_x)=(1-x)^{n-1-h_{ij}}x^{h_{ij}}.                              \tag{1}
 ```
@@ -22,7 +22,7 @@ The term from differentiating $A_x$ vanishes by equal cofactors. Since the inequ
 ```
 This condition transforms with the row and column labels of the cycle.
 
-The same condition is necessary for an entropy center. For a doubly stochastic marginal matrix $P$, let $I(P)$ be the sum of its row entropies minus the maximum entropy of a law on permutations with those marginals. Given positive edge weights $W$ on a total-support face, their Gibbs permutation law has marginals $P_{ij}=w_{ij}c_{ij}(W)/\operatorname{per}W$. On the relative interior, finite entropy duality gives
+The same condition is necessary for an entropy center. For a doubly stochastic marginal matrix $P$, let $I(P)$ be the sum of its row entropies minus the maximum entropy of a law on permutations with those marginals. Given positive edge weights $W$ on a total-support face, their Gibbs permutation law has marginals $`P_{ij}=w_{ij}c_{ij}(W)/\mathop{\mathrm{per}}W`$. On the relative interior, finite entropy duality gives
 ```math
 dI(P)[B-P]=\langle P-B,\log c(W)\rangle.
 ```
@@ -46,9 +46,9 @@ This averaging only uses tests on cycles avoiding $F$. The individual relabeling
 
 If all $n$ positions of $F$ are forbidden then $z=0$, a contradiction. Otherwise let $r$ be the positive number of forbidden positions and $m=n-r$. Permute rows and columns to put these $r$ positions on the first $r$ diagonal entries. Average (3) over the $m!$ completions on the remaining rows. The bottom $m\times m$ block of $B$ has total mass $m$. Its rows and columns are saturated, so $B$ splits into two doubly stochastic diagonal blocks of orders $r,m$. If $r=1$ this is already impossible because its first diagonal entry is forbidden.
 
-Let $d_j=j!/j^j$ for $j\ge1$. The van der Waerden bound gives $\operatorname{per}B\ge d_r d_m\ge d_{n-1}$. The last inequality follows because $d_{j+1}/d_j=(j/(j+1))^j$ decreases with $j$, so the minimum over positive $r+m=n$ occurs at $r=1$ or $m=1$. The uniform matrix $U_F$ on the complement of $F$ belongs to the face and has permanent $D_n/(n-1)^n<d_{n-1}$, where $D_n$ counts derangements. Indeed $D_n/n!=\sum_{j=0}^n(-1)^j/j!\le1/2$ and $1/2<(n-1)/n$. Hence a block-diagonal $B$ cannot minimize the permanent.
+Let $d_j=j!/j^j$ for $j\ge1$. The van der Waerden bound gives $`\mathop{\mathrm{per}}B\ge d_r d_m\ge d_{n-1}`$. The last inequality follows because $d_{j+1}/d_j=(j/(j+1))^j$ decreases with $j$, so the minimum over positive $r+m=n$ occurs at $r=1$ or $m=1$. The uniform matrix $U_F$ on the complement of $F$ belongs to the face and has permanent $D_n/(n-1)^n<d_{n-1}$, where $D_n$ counts derangements. Indeed $D_n/n!=\sum_{j=0}^n(-1)^j/j!\le1/2$ and $1/2<(n-1)/n$. Hence a block-diagonal $B$ cannot minimize the permanent.
 
-The same comparison works for entropy. The maximum-entropy law for a block-diagonal marginal is the independent product of its two block laws. Sra’s maximum-total-correlation theorem on the full Birkhoff polytope gives $I(B)\le-\log(d_r d_m)$. The marginal $U_F$ has the uniform derangement law, giving $I(U_F)=-\log(\operatorname{per}U_F)>I(B)$. Thus no such $B$ can maximize entropy either. [Sra’s Theorem 2.1 and its consequence at the uniform matrix](https://hexagonmath.org/pdf/2611.00118v1)
+The same comparison works for entropy. The maximum-entropy law for a block-diagonal marginal is the independent product of its two block laws. Sra’s maximum-total-correlation theorem on the full Birkhoff polytope gives $I(B)\le-\log(d_r d_m)$. The marginal $U_F$ has the uniform derangement law, giving $`I(U_F)=-\log(\mathop{\mathrm{per}}U_F)>I(B)`$. Thus no such $B$ can maximize entropy either. [Sra’s Theorem 2.1 and its consequence at the uniform matrix](https://hexagonmath.org/pdf/2611.00118v1)
 
 For the full Birkhoff polytope there are no forbidden entries and all permutations $F$ are available in (3). Exchanging two assigned columns gives $b_{ij}+b_{rs}=b_{is}+b_{rj}$ for every rectangle, so $B$ is additive in row and column coordinates. Its two uniform margins give $B=J_n$ (the matrix of entries $1/n$). This last condition is necessary for both problems. The known row-averaging derivative theorem implies it is sufficient for entropy: the sum of the pairwise row-averaging directions is proportional to $J_n-P$, so $dI(P)[J_n-P]\ge0$ in the interior; use continuity at the boundary.
 

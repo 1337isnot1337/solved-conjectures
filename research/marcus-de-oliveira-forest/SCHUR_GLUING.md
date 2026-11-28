@@ -7,7 +7,7 @@
 For a fixed d-by-d unitary V, say that V has property M if for all complex vectors a,b of length d,
 
 ~~~math
-\det(D_a+V D_b V^*)\in\operatorname{conv}\left\{\prod_{i=1}^d(a_i+b_{\sigma(i)}):\sigma\in S_d\right\}.
+\det(D_a+V D_b V^*)\in\mathop{\mathrm{conv}}\left\{\prod_{i=1}^d(a_i+b_{\sigma(i)}):\sigma\in S_d\right\}.
 ~~~
 
 This definition permits the convex weights to depend on a,b. It does not demand the simultaneous squared-minor coupling of all exterior powers.
@@ -68,7 +68,7 @@ Indeed the Y-to-C_f block is (A_0)_{Yv} e_v^*, and its opposite block is e_v (A_
 By property M of V|_{C_f}, the small determinant belongs to the convex hull of its values when V is replaced by permutation matrices P acting on C_f and fixing all other coordinates. The same identity holds for each P, with the *same* alpha, beta, K_X and K_Y. Multiplication by the possibly complex scalar det K_X det K_Y preserves convex combinations. Hence
 
 ~~~math
-\det(A+U B U^*)\in\operatorname{conv}\{\det(A+R P L B L^*P^*R^*):P\in S_{C_f}\}.
+\det(A+U B U^*)\in\mathop{\mathrm{conv}}\{\det(A+R P L B L^*P^*R^*):P\in S_{C_f}\}.
 ~~~
 
 If either pivot block is singular, replace A by A+tI with real t tending to zero. Both pivot blocks then shift by tI, so their determinants are monic polynomials in t (or identically 1 for empty blocks). They vanish at only finitely many t. For all other t the inclusion holds. The determinants and finitely many vertices are continuous in t, and the space of convex weights is a compact simplex; passage along a convergent subsequence of weights proves the same inclusion at t=0.

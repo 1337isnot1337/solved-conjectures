@@ -96,9 +96,9 @@ $(t-1)(w+1)$.
 Taking the union over selected block and cutvertex nodes proves the
 theorem with
 
-$$
+```math
 h(w,t)=(t-1)\max\{1,f(t),(t-1)(w+1)\}.
-$$
+```
 
 If $t=1$, either an eligible path exists or the empty set is a
 transversal, as required.

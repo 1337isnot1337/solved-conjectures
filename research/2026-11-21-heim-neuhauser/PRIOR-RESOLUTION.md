@@ -87,8 +87,8 @@ The exact difference is
 ```math
 \begin{aligned}
 b_\ell(m)b_\ell(n)-b_\ell(m+n)
-&=(u+1)(v+1)-(u+v+\varepsilon+1)\\
-&=uv-\varepsilon.
+&=(u+1)(v+1)-(u+v+\varepsilon+1)
+\\ &=uv-\varepsilon.
 \end{aligned}
 ```
 
@@ -110,7 +110,7 @@ The manuscript at commit [6e7b25df3fec74bad69d99fd020549bf675beff2](https://gith
 
 ```math
 2\left\lfloor\frac{v+2}{\ell}\right\rfloor+1
-\le\frac{2v+9}{5}<v\qquad(v\ge4,\ \ell\ge5)
+\le\frac{2v+9}{5}\lt v\qquad(v\ge4,\ \ell\ge5)
 ```
 
 is valid and gives the required integer margin in its base row.

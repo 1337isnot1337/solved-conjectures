@@ -119,8 +119,8 @@ After normalizing its coordinates to $`0,*,1`$, the cycle is
 
 ```math
 \begin{aligned}
-&(1,*,1,*),\quad (*,1,*,1),\quad (0,*,0,*),\quad (*,0,*,0),\\
-&(1,*,0,*),\quad (*,1,*,0),\quad (0,*,1,*),\quad (*,0,*,1).
+&(1,*,1,*),\quad (*,1,*,1),\quad (0,*,0,*),\quad (*,0,*,0),
+\\ &(1,*,0,*),\quad (*,1,*,0),\quad (0,*,1,*),\quad (*,0,*,1).
 \end{aligned}
 ```
 

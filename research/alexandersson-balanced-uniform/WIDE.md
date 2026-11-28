@@ -11,35 +11,35 @@ For every $n\ge 2$, every integer $d\ge \frac12 n^2\log(2n)$, and every $1\le r\
 Write $m=\lfloor nr/d\rfloor$. There are no arrays of a given column sum $k>m$, by total count. For every $0\le k\le m$, build an array by assigning consecutive groups of $k$ positions in the cyclic list $1,2,\ldots,n,1,2,\ldots$ to the successive columns. A group has no repeated row because $k\le n$. The largest row sum is $\lceil dk/n\rceil\le r$. Thus $a_k>0$ for all these $k$, and $P$ has degree $m$.
 
 The unconstrained count is
-$$
+```math
  B_k=\binom nk^d.
-$$
-Choose independently in each column a uniform $k$-subset of the rows. For any fixed row its sum is a $\operatorname{Bin}(d,k/n)$ random variable, whether or not different row sums are independent. For an interior index $1\le k<m$, the slack satisfies
-$$
+```
+Choose independently in each column a uniform $k$-subset of the rows. For any fixed row its sum is a $`\mathop{\mathrm{Bin}}(d,k/n)`$ random variable, whether or not different row sums are independent. For an interior index $1\le k<m$, the slack satisfies
+```math
  r-\mathbb E(\text{row sum})=r-dk/n\ge d/n
-$$
+```
 because $r\ge dm/n$ and $k\le m-1$. The one-sided Hoeffding bound for sums of $d$ independent $[0,1]$-valued variables gives
-$$
+```math
  \Pr(\text{one fixed row exceeds }r)\le \exp(-2d/n^2).
-$$
+```
 The union bound over the rows now gives
-$$
- a_k\ge (1-n\exp(-2d/n^2))B_k\ge B_k/2 \qquad (1\le k<m).
-$$
+```math
+ a_k\ge (1-n\exp(-2d/n^2))B_k\ge B_k/2 \qquad (1\le k\lt m).
+```
 For all indices, including the top one, we have $a_k\le B_k$. We need no lower bound on the top coefficient.
 
 For every $1\le k<m$,
-$$
+```math
  \frac{a_k^2}{a_{k-1}a_{k+1}}
  \ge \frac14\left(\frac{(k+1)(n-k+1)}{k(n-k)}\right)^d
  =\frac14\left(1+\frac{n+1}{k(n-k)}\right)^d
  \ge \frac14(1+2/n)^{2d}>4.
-$$
+```
 The last strict inequality follows from
-$$
+```math
  d\log(1+2/n)>\frac{2d}{n+2}
  \ge \frac{n^2}{n+2}\log(2n)\ge\log 4
-$$
+```
 for $n\ge2$, using $\log(1+x)>x/(1+x)$ for $x>0$. If $m<2$, no ratio is needed.
 
 For completeness, an elementary sign test finishes the proof. Set $R_i=a_{i-1}/a_i$ and $x_i=2R_i$ for $1\le i\le m$. The displayed ratio inequalities say $R_{i+1}>4R_i$. At $q=-x_i$, the term of index $i-1$ has magnitude exactly half that of index $i$, and the term of index $i+1$, when present, has magnitude less than half that of index $i$. On each side of index $i$, magnitudes decrease strictly as one moves away, because the ratios $R_j$ increase. Each tail, as an alternating sum starting with the opposite sign to the middle term, can subtract no more than the magnitude of its nearest term. The middle term therefore determines the sign of $P(-x_i)$, namely $(-1)^i$. With $P(0)>0$ and $0<x_1<\cdots<x_m$, there is a root in each of the $m$ successive intervals from $0$ through $-x_1,\ldots,-x_m$. The polynomial has degree $m$, so these roots are all its roots and are simple.
@@ -47,10 +47,10 @@ For completeness, an elementary sign test finishes the proof. Set $R_i=a_{i-1}/a
 ## Additional bound at the top coefficient
 
 An independent elementary estimate, applicable to every admissible index including $k=m$, is
-$$
+```math
  \binom nk^d/(d+1)^{n-1}\le a_k\le\binom nk^d.
-$$
-Consider the number of column-sum-$k$ arrays with a prescribed vector of row sums. If two prescribed row sums $a,b$ have $a\ge b+2$, fix all other rows. In each column, the number of 1s still required from the two remaining rows is 0, 1, or 2, or is infeasible. Let $h$ be the number of columns requiring 2 and $s=a+b-2h$ be the number requiring 1 for any feasible choice. The count of assignments is $\binom{s}{a-h}$, with impossible choices counted as 0. Moving one unit from $a$ to $b$ changes it to $\binom{s}{a-h-1}$, which is at least as large because $a-h>s/2$. This holds for each choice of all other rows. Successive moves therefore show that a most frequent row-sum vector can be assumed to consist of entries differing by at most one. It satisfies the cap $r$. There are at most $(d+1)^{n-1}$ possible row-sum vectors because their sum is fixed, so the count of this vector is at least the indicated fraction of the unconstrained total.
+```
+Consider the number of column-sum-$`k`$ arrays with a prescribed vector of row sums. If two prescribed row sums $a,b$ have $a\ge b+2$, fix all other rows. In each column, the number of 1s still required from the two remaining rows is 0, 1, or 2, or is infeasible. Let $h$ be the number of columns requiring 2 and $s=a+b-2h$ be the number requiring 1 for any feasible choice. The count of assignments is $\binom{s}{a-h}$, with impossible choices counted as 0. Moving one unit from $a$ to $b$ changes it to $\binom{s}{a-h-1}$, which is at least as large because $a-h>s/2$. This holds for each choice of all other rows. Successive moves therefore show that a most frequent row-sum vector can be assumed to consist of entries differing by at most one. It satisfies the cap $r$. There are at most $(d+1)^{n-1}$ possible row-sum vectors because their sum is fixed, so the count of this vector is at least the indicated fraction of the unconstrained total.
 
 ## Source, priority, and exact scope
 

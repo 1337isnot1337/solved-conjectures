@@ -6,7 +6,7 @@ $a$ for the number of rows outside components isomorphic to $K_{d,d}$.
 With natural logarithms,
 
 ```math
-\log\frac{(d!)^{n/d}}{\operatorname{per}A}
+\log\frac{(d!)^{n/d}}{\mathop{\mathrm{per}}A}
 \ \ge\ \frac{a}{4d(d+1)(2d+1)} .                              \tag{1}
 ```
 
@@ -36,7 +36,7 @@ $1,\ldots,d$: it is the reverse rank of $i$ among its $d$
 out-neighbors. By the chain rule,
 
 ```math
-\frac nd\log(d!)-\log\operatorname{per} A
+\frac nd\log(d!)-\log\mathop{\mathrm{per}} A
 \ \ge\ \mathbb E\sum_i U_i/R_i .                               \tag{2}
 ```
 

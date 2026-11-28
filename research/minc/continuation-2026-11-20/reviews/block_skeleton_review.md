@@ -46,8 +46,8 @@ disjoint increasing paths. The vertex sets of those paths are a set partition.
 Expanding the permanent by the entries taken from -2L gives
 
 ```math
-\operatorname{per}A
-=\sum_{0\le k_i\le m_i}\operatorname{per}S[\mathbf k]
+\mathop{\mathrm{per}}A
+=\sum_{0\le k_i\le m_i}\mathop{\mathrm{per}}S[\mathbf k]
 \prod_i(-2)^{m_i-k_i}{m_i+1\brace k_i+1}.
 ```
 
@@ -67,16 +67,16 @@ The repeated-index MacMahon identity therefore gives
 \begin{aligned}
 F_C(\mathbf x)
 &=\frac{e^{-2\sum_i x_i}}
- {\det(I-\operatorname{diag}((1-e^{-2x_i})/2)S)}\\
-&=\frac1{\det(I-\operatorname{diag}((e^{2x_i}-1)/2)C)}.
+ {\det(I-\mathop{\mathrm{diag}}((1-e^{-2x_i})/2)S)}
+\\ &=\frac1{\det(I-\mathop{\mathrm{diag}}((e^{2x_i}-1)/2)C)}.
 \end{aligned}
 ```
 
 Expanding the second line proves the reviewed Stirling formula
 
 ```math
-\operatorname{per}A
-=\sum_{1\le k_i\le m_i}\operatorname{per}C[\mathbf k]
+\mathop{\mathrm{per}}A
+=\sum_{1\le k_i\le m_i}\mathop{\mathrm{per}}C[\mathbf k]
 \prod_i2^{m_i-k_i}{m_i\brace k_i}.
 ```
 
@@ -110,14 +110,14 @@ For 0<=ell<=s-1, define
 ```math
 E_\ell=
 \sum_{\substack{I,J\subseteq[s]\setminus\{i\}\\|I|=|J|=\ell}}
-\operatorname{per}D(I^c\mid J^c)
+\mathop{\mathrm{per}}D(I^c\mid J^c)
 \prod_{a\in I}c_a\prod_{b\in J}r_b.
 ```
 
 If i is repeated k times and every other index once, direct counting gives
 
 ```math
-\operatorname{per}C[i^k]
+\mathop{\mathrm{per}}C[i^k]
 =(-1)^k k!\sum_{\ell=0}^{s-1}(-1)^\ell(k)_\ell E_\ell.
 \tag{1}
 ```
@@ -137,7 +137,7 @@ and columns, not the triangular expansions themselves.
 Summing (1) against y^k/k! gives
 
 ```math
-\sum_{k\ge0}\operatorname{per}C[i^k]\frac{y^k}{k!}
+\sum_{k\ge0}\mathop{\mathrm{per}}C[i^k]\frac{y^k}{k!}
 =\sum_{\ell=0}^{s-1}\ell!E_\ell
 \frac{y^\ell}{(1+y)^{\ell+1}}.
 ```
@@ -147,7 +147,7 @@ Substitute y=(e^(2x)-1)/2. The EGF for expanding just index i becomes
 ```math
 g_i(x)
 =(1-\tanh x)\sum_{\ell=0}^{s-1}\ell!E_\ell\tanh^\ell x
-=(1-\tanh x)\operatorname{per}(D+\tanh(x)cr^T).
+=(1-\tanh x)\mathop{\mathrm{per}}(D+\tanh(x)cr^T).
 ```
 
 This agrees with the sign worker's independent Schur-complement derivation.

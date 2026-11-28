@@ -93,11 +93,11 @@ The centered expansion gives
 ```math
 \begin{aligned}
 \sigma_2(J_n+X)-\sigma_2(J_n-hX)
-&=(1-h^2)\sigma_2(X),\\
-\sigma_3(J_n+X)-\sigma_3(J_n-hX)
+&=(1-h^2)\sigma_2(X),
+\\ \sigma_3(J_n+X)-\sigma_3(J_n-hX)
 &=\frac{(n-2)^2}{n}(1-h^2)\sigma_2(X)
- +(1+h^3)\sigma_3(X)\\
-&\geq\left[\frac{(n-2)^3}{(n-1)^2}
+ +(1+h^3)\sigma_3(X)
+\\ &\geq\left[\frac{(n-2)^3}{(n-1)^2}
 -\frac4{3n}\left(1+\frac1{(n-1)^3}\right)\right]\sigma_2(X).
 \end{aligned}
 ```

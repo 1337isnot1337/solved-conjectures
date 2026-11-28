@@ -17,7 +17,7 @@ Full affine independence is the reason every pair has a facet. The score-differe
 I independently checked the identity
 
 ```math
-\sum_{i<j}(\Delta_{ii}+\Delta_{jj}-2\Delta_{ij})^2
+\sum_{i\lt j}(\Delta_{ii}+\Delta_{jj}-2\Delta_{ij})^2
 =q\sum_i\Delta_{ii}^2+2\|\Delta\|_F^2
 ```
 

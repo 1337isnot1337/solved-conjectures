@@ -17,8 +17,8 @@ Assume the zero support of `B` has perfect matchings. One possible route
 to Conjecture 24 was to prove
 
 ```math
-\mathbb E_{Q}\operatorname{per}(B+Q)
-\le\operatorname{per}(B+P),                         \tag{1}
+\mathbb E_{Q}\mathop{\mathrm{per}}(B+Q)
+\le\mathop{\mathrm{per}}(B+P),                         \tag{1}
 ```
 
 where `Q` is uniform over the permutation matrices disjoint from `B`,
@@ -40,7 +40,7 @@ n=k^2f+1,\qquad k\ge3.
 Its distinguished missing edge `(s,t)` satisfies
 
 ```math
-\frac{\operatorname{per}H(s\mid t)}{\operatorname{per}H}
+\frac{\mathop{\mathrm{per}}H(s\mid t)}{\mathop{\mathrm{per}}H}
 =\frac{(k-1)^f}{k}.                               \tag{2}
 ```
 
@@ -91,7 +91,7 @@ A=mH+P
 is a nonnegative integer matrix with constant line sum
 
 ```math
-K=mk+1=k^2f-k+1=n-k<n.                             \tag{4}
+K=mk+1=k^2f-k+1=n-k\lt n.                             \tag{4}
 ```
 
 Thus it lies in the parameter domain of Conjecture 24. The matrices
@@ -100,8 +100,8 @@ Thus it lies in the parameter domain of Conjecture 24. The matrices
 Entrywise, `mH+P <= (m+1)H`, so
 
 ```math
-\operatorname{per}(B+P)
-\le (m+1)^n\operatorname{per}H.                    \tag{5}
+\mathop{\mathrm{per}}(B+P)
+\le (m+1)^n\mathop{\mathrm{per}}H.                    \tag{5}
 ```
 
 Expand the permanent of `mH+Q` by the number of entries chosen from `Q`.
@@ -109,8 +109,8 @@ All terms are nonnegative. Keep the term with no such entry and the
 single-entry term at `(s,t)`. Equations (2)--(3) give
 
 ```math
-\mathbb E_Q\operatorname{per}(B+Q)
->m^n\operatorname{per}H
+\mathbb E_Q\mathop{\mathrm{per}}(B+Q)
+>m^n\mathop{\mathrm{per}}H
  \left(1+\frac{(k-1)^f}{2nkm}\right).              \tag{6}
 ```
 
@@ -141,8 +141,8 @@ after cross multiplication, this is the inequality
 
 ```math
 \boxed{\quad
-\mathbb E_Q\operatorname{per}(B+Q)
->\operatorname{per}(B+P)
+\mathbb E_Q\mathop{\mathrm{per}}(B+Q)
+>\mathop{\mathrm{per}}(B+P)
 \quad}
 ```
 

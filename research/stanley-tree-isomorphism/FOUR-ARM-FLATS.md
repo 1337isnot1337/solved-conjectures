@@ -43,7 +43,7 @@ It follows that every match to a generic ten-position spider has collision rank 
 A structural identity gives another way of approaching the cancellations. For a reduced tree with edge lengths $`l_e`$ put $`z_e=\exp(s l_e)-1`$. Then
 
 ```math
-\sum_{u<v} w_u w_v\bigl(\exp(s d(u,v))-1\bigr)
+\sum_{u\lt v} w_u w_v\bigl(\exp(s d(u,v))-1\bigr)
    =\sum_{\substack{\varnothing\ne F\subseteq E\\F\text{ lies on a simple path}}}
       \prod_{e\in F}z_e.
 ```

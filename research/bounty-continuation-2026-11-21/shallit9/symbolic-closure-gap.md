@@ -43,11 +43,11 @@ Splitting each sum into its even and odd indices proves, as identities of formal
 
 ```math
 \begin{aligned}
-f_1(z)&=f_1(z^2)+f_3(z^2),\\
-f_2(z)&=f_2(z^2)+z f_1(z^2)+z f_4(z^2),\\
-f_3(z)&=f_4(z^2)+z f_2(z^2),\\
-f_4(z)&=z f_3(z^2),\\
-f_1(z)+f_2(z)+f_3(z)+f_4(z)&=\frac1{1-z}.
+f_1(z)&=f_1(z^2)+f_3(z^2),
+\\ f_2(z)&=f_2(z^2)+z f_1(z^2)+z f_4(z^2),
+\\ f_3(z)&=f_4(z^2)+z f_2(z^2),
+\\ f_4(z)&=z f_3(z^2),
+\\ f_1(z)+f_2(z)+f_3(z)+f_4(z)&=\frac1{1-z}.
 \end{aligned}
 ```
 
@@ -55,9 +55,9 @@ Thus $`G`$ is the indicator series for odd-valued letters. The first identity gi
 
 ```math
 \begin{aligned}
-f_3(z)&=G(z)-G(z^2),\\
-f_4(z)&=z\bigl(G(z^2)-G(z^4)\bigr),\\
-f_2(z)&=\frac1{1-z}-G(z)-zG(z^2)+zG(z^4).
+f_3(z)&=G(z)-G(z^2),
+\\ f_4(z)&=z\bigl(G(z^2)-G(z^4)\bigr),
+\\ f_2(z)&=\frac1{1-z}-G(z)-zG(z^2)+zG(z^4).
 \end{aligned}
 ```
 
@@ -128,19 +128,19 @@ The resulting determinant is exactly $`-1`$. They therefore form an integral bas
 For any output coding $`v`$, write $`b_n=v(a_n)`$, $`b^{(0)}_n=b_{2n}`$, and $`b^{(1)}_n=b_{2n+1}`$. Let $`H_m^b(k)=(b_{k+i+j})_{i,j\lt m}`$. Reordering both rows and columns by parity gives
 
 ```math
-H_{2m}^b(2k)\ \sim\
-\begin{pmatrix}
-H_m^{b^{(0)}}(k)&H_m^{b^{(1)}}(k)\\
-H_m^{b^{(1)}}(k)&H_m^{b^{(0)}}(k+1)
+H_{2m}^b(2k)\ \sim
+\ \begin{pmatrix}
+H_m^{b^{(0)}}(k)&H_m^{b^{(1)}}(k)
+\\ H_m^{b^{(1)}}(k)&H_m^{b^{(0)}}(k+1)
 \end{pmatrix},
 \tag{4}
 ```
 
 ```math
-H_{2m}^b(2k+1)\ \sim\
-\begin{pmatrix}
-H_m^{b^{(1)}}(k)&H_m^{b^{(0)}}(k+1)\\
-H_m^{b^{(0)}}(k+1)&H_m^{b^{(1)}}(k+1)
+H_{2m}^b(2k+1)\ \sim
+\ \begin{pmatrix}
+H_m^{b^{(1)}}(k)&H_m^{b^{(0)}}(k+1)
+\\ H_m^{b^{(0)}}(k+1)&H_m^{b^{(1)}}(k+1)
 \end{pmatrix}.
 \tag{5}
 ```
@@ -162,9 +162,9 @@ Here $`\det P=-5`$, and exact elimination gives
 ```math
 R-QP^{-1}Q=
 \begin{pmatrix}
--8/5&-3&-4\\
--3&-6&-4\\
--4&-4&-6
+-8/5&-3&-4
+\\ -3&-6&-4
+\\ -4&-4&-6
 \end{pmatrix}.
 \tag{6}
 ```

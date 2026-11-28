@@ -31,7 +31,7 @@ Its exact introduction is “which supports the conjecture, first proposed in [R
 Fix positive parameters $`p,q,\lambda`$ and $`r\in(0,1)`$ with
 
 ```math
-p+q=1,\qquad \frac{p}{1-r}<q.
+p+q=1,\qquad \frac{p}{1-r}\lt q.
 ```
 
 Let $`N_t`$ be a Poisson process of rate $`\lambda`$ and let the independent jumps satisfy
@@ -98,7 +98,7 @@ Let $`T`$ be the first jump time. The strong Markov property gives
 I\stackrel d=T+e^J I',
 ```
 
-where $`T\sim\operatorname{Exp}(\lambda)`$ is independent of $`(J,I')`$, and $`I'`$ is an independent copy of $`I`$. Conditioning on $`e^J I'`$ shows that $`I`$ has no atoms. Therefore
+where $`T\sim\mathop{\mathrm{Exp}}(\lambda)`$ is independent of $`(J,I')`$, and $`I'`$ is an independent copy of $`I`$. Conditioning on $`e^J I'`$ shows that $`I`$ has no atoms. Therefore
 
 ```math
 A(t)=\mathbb P(\log I>t)

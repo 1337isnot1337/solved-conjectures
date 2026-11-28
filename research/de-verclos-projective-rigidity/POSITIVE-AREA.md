@@ -2,7 +2,7 @@
 
 **Theorem.** Let $`\mu,\nu`$ be Borel probability measures in the plane, each giving zero mass to every affine line. Suppose their iid order-type distributions agree at all finite sizes. If the support of $`\mu`$ has positive planar Lebesgue measure, then an invertible real projective transformation $`P`$ satisfies $`\nu=P_*\mu`$. Neither measure needs a density or bounded support. For example, the theorem applies when the support is a compact set of positive area and empty interior. The full dimensional threshold in [de Joannis de Verclos’s conjecture](https://arxiv.org/abs/1811.02236) also includes zero-area supports.
 
-Use the [strict secant lemma and the coupling relation](SECANTS.md). Let $`R`$ denote that relation, $`E=\operatorname{supp}\mu`$, and $`E_0\subset E`$ a bounded compact portion of positive area. Let $`f`$ be its Borel selector. The preimage of the target equator has dimension at most one. By inner regularity and Lusin’s theorem for **area on $`E_0`$**, choose a positive-area compact $`K\subset E_0`$ on which $`f`$ is continuous and takes values in the finite chart. Write $`K^*`$ for the planar density-one points of $`K`$ belonging to $`K`$.
+Use the [strict secant lemma and the coupling relation](SECANTS.md). Let $`R`$ denote that relation, $`E=\mathop{\mathrm{supp}}\mu`$, and $`E_0\subset E`$ a bounded compact portion of positive area. Let $`f`$ be its Borel selector. The preimage of the target equator has dimension at most one. By inner regularity and Lusin’s theorem for **area on $`E_0`$**, choose a positive-area compact $`K\subset E_0`$ on which $`f`$ is continuous and takes values in the finite chart. Write $`K^*`$ for the planar density-one points of $`K`$ belonging to $`K`$.
 
 ## Incidence at a density point
 

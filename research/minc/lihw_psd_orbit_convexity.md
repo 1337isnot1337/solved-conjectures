@@ -7,8 +7,8 @@
 Lih and Wang conjectured that for all nonnegative doubly stochastic A, n>=3, and 0<=t<=1/2,
 
 ~~~math
-\operatorname{per}(J_n+t(A-J_n))
-\le (1-t)\operatorname{per}(J_n)+t\operatorname{per}(A).
+\mathop{\mathrm{per}}(J_n+t(A-J_n))
+\le (1-t)\mathop{\mathrm{per}}(J_n)+t\mathop{\mathrm{per}}(A).
 ~~~
 
 The [current specialist page](https://yair-lavi.com/mincs-list/conjecture-34/index.html) still lists this unrestricted assertion as open.
@@ -18,15 +18,15 @@ The [current specialist page](https://yair-lavi.com/mincs-list/conjecture-34/ind
 Let S be any real symmetric *positive-semidefinite* doubly stochastic matrix of order n>=2, and P,Q arbitrary independent permutation matrices. Set A=PSQ and beta_n=n!/n^n. For **every** t in [0,1], the stronger inequality holds:
 
 ~~~math
-\boxed{\operatorname{per}(J_n+t(A-J_n))
-\le\beta_n+t^2(\operatorname{per}(A)-\beta_n)
-\le\beta_n+t(\operatorname{per}(A)-\beta_n).}
+\boxed{\mathop{\mathrm{per}}(J_n+t(A-J_n))
+\le\beta_n+t^2(\mathop{\mathrm{per}}(A)-\beta_n)
+\le\beta_n+t(\mathop{\mathrm{per}}(A)-\beta_n).}
 ~~~
 
 The linear-chord inequality is strict when 0<t<1 unless A=J_n. The interpolation polynomial is strictly convex when A is not J_n; quantitatively,
 
 ~~~math
-\frac{d^2}{dt^2}\operatorname{per}(J_n+t(A-J_n))
+\frac{d^2}{dt^2}\mathop{\mathrm{per}}(J_n+t(A-J_n))
 \ge\frac{(n-2)!}{n^{n-2}}\|A-J_n\|_F^2>0.
 ~~~
 
@@ -37,14 +37,14 @@ This includes nonsymmetric A and arbitrary n, but only the specified orbit.
 Define the sum of all k-by-k subpermanents of X as
 
 ~~~math
-\sigma_k(X)=\sum_{\substack{|I|=|K|=k}}\operatorname{per}(X[I,K]),
+\sigma_k(X)=\sum_{\substack{|I|=|K|=k}}\mathop{\mathrm{per}}(X[I,K]),
 \qquad \sigma_0(X)=1.
 ~~~
 
 By multilinear expansion around J_n,
 
 ~~~math
-\operatorname{per}(J_n+tX)
+\mathop{\mathrm{per}}(J_n+tX)
 =\sum_{k=0}^n \frac{(n-k)!}{n^{n-k}}\sigma_k(X)t^k. \tag{1}
 ~~~
 
@@ -87,9 +87,9 @@ Further, f''(t)=sum_(k=2)^n k(k-1)c_k t^(k-2) >= 2c_2. For 0<t<1 and S!=J_n, c_2
 Finally, PJ_nQ=J_n, and the permanent is invariant under independent row and column permutations, so
 
 ~~~math
-\operatorname{per}(J_n+t(A-J_n))
-=\operatorname{per}(P[J_n+t(S-J_n)]Q)=f(t),
-\quad \operatorname{per}(A)=\operatorname{per}(S).
+\mathop{\mathrm{per}}(J_n+t(A-J_n))
+=\mathop{\mathrm{per}}(P[J_n+t(S-J_n)]Q)=f(t),
+\quad \mathop{\mathrm{per}}(A)=\mathop{\mathrm{per}}(S).
 ~~~
 
 Also ||A-J_n||_F=||S-J_n||_F. Therefore all bounds extend to arbitrary P and Q, with no commutation requirement.

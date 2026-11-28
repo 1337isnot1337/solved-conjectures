@@ -6,10 +6,10 @@ For a noncollinear finite point set $P$ in the real affine plane, let $d(p)$ be 
 
 ## Construction
 
-Write $n=2k+e$ with $e\in\{0,1\}$ and $k\ge8$. Take the $k$ points
+Write $n=2k+e$ with $`e\in\{0,1\}`$ and $k\ge8$. Take the $k$ points
 
 ```math
-A_i=\left(\frac1{i+1},\frac{i^2}{i+1}\right),\qquad 0\le i<k.
+A_i=\left(\frac1{i+1},\frac{i^2}{i+1}\right),\qquad 0\le i\lt k.
 ```
 
 On the vertical axis take $B_s=(0,s)$ for each height in

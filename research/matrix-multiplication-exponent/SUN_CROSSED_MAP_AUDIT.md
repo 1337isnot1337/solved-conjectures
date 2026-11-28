@@ -46,7 +46,7 @@ t c_{5+j}V+\mathbf 1_{j=1}t^4\bar Z_H.
 
 The printed crossed-map instructions do both of the following:
 
-1. Multiply the entire $j$th packet on the three sides by
+1. Multiply the entire $`j`$th packet on the three sides by
    $\chi_{\xi_j}(\alpha)$, $\chi_{\xi_j}(\beta)$, and
    $\chi_{\xi_j}(\gamma)$, respectively.
 2. Replace a scalar role on the side with character $\delta$ by
@@ -61,8 +61,8 @@ of $t^{-3}\bar X_L\bar Y_LV$ in the sum of the five images is
 ```math
 \begin{aligned}
 \sum_{j=1}^5c_{5+j}\chi_{\xi_j}(\gamma)
-&=\tfrac12\chi_0(\gamma)-\tfrac12\chi_{12}(\gamma)\\
-&=\frac{1-\chi_{12}(\gamma)}2.
+&=\tfrac12\chi_0(\gamma)-\tfrac12\chi_{12}(\gamma)
+\\ &=\frac{1-\chi_{12}(\gamma)}2.
 \end{aligned}
 ```
 

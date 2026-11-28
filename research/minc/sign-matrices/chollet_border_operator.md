@@ -35,10 +35,10 @@ For every $`h\in H`$, permutation expansion at the final row and column gives
 Equivalently, if $`g`$ is a standard circular complex Gaussian vector and
 
 ```math
-F$`g`$=\prod_i v_i^*g,
+F(g)=\prod_i v_i^*g,
 ```
 
-then (C_A=\mathbb E[gg^*|F$`g`$|^2]). Both forms cover singular Gram matrices
+then $`C_A=\mathbb E[gg^*|F(g)|^2]`$. Both forms cover singular Gram matrices
 and zero vectors without taking an inverse.
 
 Let $`B=U^*U`$ be a second Gram matrix, with columns $`u_i\in K`$, and let
@@ -62,8 +62,8 @@ For arbitrary $`h\in H`$ and $`k\in K`$, equations (2) and (3) give
 \begin{aligned}
 \langle h\otimes k,M_{A,B}(h\otimes k)\rangle
 ={}&\mathop{\mathrm{per}}\mathop{\mathrm{Gram}}(v_1,\ldots,v_m,h)
-\mathop{\mathrm{per}}\mathop{\mathrm{Gram}}(u_1,\ldots,u_m,k)\\
-&-\mathop{\mathrm{per}}\left(
+\mathop{\mathrm{per}}\mathop{\mathrm{Gram}}(u_1,\ldots,u_m,k)
+\\ &-\mathop{\mathrm{per}}\left(
 \mathop{\mathrm{Gram}}(v_1,\ldots,v_m,h)
 \circ\mathop{\mathrm{Gram}}(u_1,\ldots,u_m,k)\right).
 \end{aligned}
@@ -90,7 +90,7 @@ Let $`x,y,z`$ be independent standard circular complex Gaussian vectors in
 $`H,K,H\otimes K`$, respectively. For $`q\in H\otimes K`$, put
 
 ```math
-F$`x`$=\prod_i v_i^*x,\quad H_0$`y`$=\prod_i u_i^*y,\quad
+F(x)=\prod_i v_i^*x,\quad H_0(y)=\prod_i u_i^*y,\quad
 G(z)=\prod_i w_i^*z.
 ```
 
@@ -98,7 +98,7 @@ Then
 
 ```math
 q^*M_{A,B}q
-=\mathbb E\left[|q^*(x\otimes y)|^2|F$`x`$H_0$`y`$|^2\right]
+=\mathbb E\left[|q^*(x\otimes y)|^2|F(x)H_0(y)|^2\right]
 -\mathbb E\left[|q^*z|^2|G(z)|^2\right].
 \tag{5}
 ```

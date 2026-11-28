@@ -76,8 +76,8 @@ For thresholds, the loss perturbation on common candidates has additional struct
 ```math
 L_{z^0}(t)-L_{z^1}(t)
 =y_v-y_u
-+(2y_u-1)1[x_u<t]
--(2y_v-1)1[x_v<t].
++(2y_u-1)1[x_u\lt t]
+-(2y_v-1)1[x_v\lt t].
 \tag{5}
 ```
 

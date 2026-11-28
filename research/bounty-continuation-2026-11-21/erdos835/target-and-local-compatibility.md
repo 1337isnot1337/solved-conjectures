@@ -90,10 +90,10 @@ For each fixed row pair $`I=\{a,c\}`$, form a complete graph on $`I\cup C`$, whi
 
 ```math
 \begin{aligned}
-\operatorname{col}(ac)&=0,\\
-\operatorname{col}(ab)&=L(c,b),\\
-\operatorname{col}(cb)&=L(a,b),\\
-\operatorname{col}(bd)&=M(I,\{b,d\}).
+\mathop{\mathrm{col}}(ac)&=0,
+\\ \mathop{\mathrm{col}}(ab)&=L(c,b),
+\\ \mathop{\mathrm{col}}(cb)&=L(a,b),
+\\ \mathop{\mathrm{col}}(bd)&=M(I,\{b,d\}).
 \end{aligned}
 \tag{5}
 ```

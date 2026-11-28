@@ -15,10 +15,10 @@ $`k`$. Define
 
 ```math
 \begin{aligned}
-\beta_k&=\frac{(k-1)^{k-1}}{k^{k-2}},\\
-C(A)&=\sum_{i,j}\binom{a_{ij}}2,\\
-D(A)&=\sum_{i,j}(a_{ij}-1)_+,\\
-\delta_k&=\left(1-\frac2k\right)\log\left(1-\frac2k\right)
+\beta_k&=\frac{(k-1)^{k-1}}{k^{k-2}},
+\\ C(A)&=\sum_{i,j}\binom{a_{ij}}2,
+\\ D(A)&=\sum_{i,j}(a_{ij}-1)_+,
+\\ \delta_k&=\left(1-\frac2k\right)\log\left(1-\frac2k\right)
  -2\left(1-\frac1k\right)\log\left(1-\frac1k\right).
 \end{aligned}
 ```
@@ -45,7 +45,7 @@ bound
 C(A_*)\le
 \frac1{\delta_k}\log\left(
  \frac{k^{2n}}{\binom{kn}{n}\,\beta_k^n}\right)
-=\frac{-\log\Pr\{\operatorname{Bin}(kn,1/k)=n\}}{\delta_k}. \tag{2}
+=\frac{-\log\Pr\{\mathop{\mathrm{Bin}}(kn,1/k)=n\}}{\delta_k}. \tag{2}
 ```
 
 In particular, simultaneously for all $`2\le k\le n`$,
@@ -162,7 +162,7 @@ $`\mathop{\mathrm{per}}A_*\le R_{n,k}`$. Combining this with (1) proves
 The standard factorial bounds
 
 ```math
-\sqrt{2\pi m}(m/e)^m<m!
+\sqrt{2\pi m}(m/e)^m\lt m!
 <\sqrt{2\pi m}(m/e)^m e^{1/(12m)}
 ```
 

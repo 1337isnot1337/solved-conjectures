@@ -34,7 +34,7 @@ the other, since their target column orbits are distinct.
 Summing over the two pairings therefore gives
 
 ~~~math
-\operatorname{per}(RH)=R^2\operatorname{per}H=0.
+\mathop{\mathrm{per}}(RH)=R^2\mathop{\mathrm{per}}H=0.
 ~~~
 
 This factor multiplies the permanent on the fixed vertices, including
@@ -46,7 +46,7 @@ For the specific core $`J_n-2I_n`$, one can also check the phase
 sum directly: phase zero contributes $`-1`$ for odd $`p`$,
 and every other phase contributes $`1`$. Thus
 $`R=p-2`$, and the fixed contribution is
-$`(p-2)^2\operatorname{per}H=0`$.
+$`(p-2)^2\mathop{\mathrm{per}}H=0`$.
 
 ## 2. Entry changes and arbitrary borders
 
@@ -77,7 +77,7 @@ a core permanent divisible by $`p`$. Summing proves
 ~~~math
 p\le n-2s-2d,\quad p\text{ an odd prime}
 \quad\Longrightarrow\quad
-p\mid\operatorname{per}F.
+p\mid\mathop{\mathrm{per}}F.
 ~~~
 
 Taking $`p=3`$ gives the stated necessary condition
@@ -99,7 +99,7 @@ There are no solutions for odd $`k`$. For even $`k`$,
 the two alternating column-bit assignments give the signed factor
 $`(-1)^{k/2}2^{k+1}`$.
 A doubled-edge component separately has factor
-$`\operatorname{per}H=0`$.
+$`\mathop{\mathrm{per}}H=0`$.
 For a surviving projected graph with $`c`$ cycles,
 there are exactly $`2^c`$ ordered decompositions into two
 perfect matchings. These observations give the permanent formula
@@ -134,7 +134,7 @@ For the repeated border vectors, their total cofactor contraction is
 =2(-1)^n r^TMc.
 ~~~
 
-Adding the corner contribution $`e\operatorname{per}D(A)`$
+Adding the corner contribution $`e\mathop{\mathrm{per}}D(A)`$
 and substituting (9) and (10) gives both branches of (12).
 No transpose or factor-of-two discrepancy occurs.
 
@@ -151,7 +151,7 @@ and the failed lift is not an impossibility result for order eleven.
 Independently,
 
 ~~~math
-\operatorname{per}(J_5-2I_5)
+\mathop{\mathrm{per}}(J_5-2I_5)
 =\sum_{k=0}^5\binom5k(-2)^k(5-k)!=8.
 ~~~
 

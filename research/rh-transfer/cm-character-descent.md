@@ -23,7 +23,7 @@ In particular, there is no requirement that [F:K] be coprime to m.
 Let L be the field cut out by nu over K. The kernel of nu is stable under c, so L/Q is Galois. Complex conjugation has order two and acts by inversion on the cyclic group Gal(L/K). Consequently
 
 ~~~math
-\operatorname{Gal}(L/\mathbb Q)
+\mathop{\mathrm{Gal}}(L/\mathbb Q)
 \simeq C_m\rtimes C_2.
 \tag{1.1}
 ~~~
@@ -55,7 +55,7 @@ If nu is unramified at all finite places of K, its restriction is unramified at 
 Dualizing this statement gives a norm-surjectivity consequence:
 
 ~~~math
-\operatorname{Cl}(F)\longrightarrow\operatorname{Cl}(K)
+\mathop{\mathrm{Cl}}(F)\longrightarrow\mathop{\mathrm{Cl}}(K)
 \quad\hbox{has cokernel of 2-power order}.
 \tag{2.1}
 ~~~
@@ -70,7 +70,7 @@ For an imaginary quadratic field of discriminant D, choose
 
 ~~~math
 F=\mathbb Q(\zeta_M),\qquad
-M=\operatorname{lcm}(12,|D|).
+M=\mathop{\mathrm{lcm}}(12,|D|).
 ~~~
 
 Then F contains K and the twelfth roots of unity. It is CM and F/K is abelian. Section 1 shows that every nontrivial odd-order anti-cyclotomic character remains nontrivial on F; section 2 preserves its unramified class-character condition when present.
@@ -94,7 +94,7 @@ Assume H_delta. Then for every imaginary quadratic K and every nontrivial finite
 ~~~math
 L_K(s,\nu)\ne0
 \qquad\hbox{if}\qquad
-\operatorname{Re}(s)>1-\delta.
+\mathop{\mathrm{Re}}(s)>1-\delta.
 \tag{5.1}
 ~~~
 
@@ -119,7 +119,7 @@ The factor with xi=1 is L_K(s,nu). A zero of that factor in the specified half-p
 The same conclusion applies to the dihedral Artin representation induced from nu because
 
 ~~~math
-L_{\mathbb Q}\!\left(s,\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu\right)
+L_{\mathbb Q}\!\left(s,\mathop{\mathrm{Ind}}_{G_K}^{G_{\mathbb Q}}\nu\right)
 =L_K(s,\nu).
 ~~~
 

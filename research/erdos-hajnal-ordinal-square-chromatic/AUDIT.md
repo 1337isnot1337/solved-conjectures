@@ -6,10 +6,10 @@ The primary question is the first question in the paragraph beginning
 “On the other hand” on printed p. 29 of
 [Erdős's 1969 paper](https://www.renyi.hu/~p_erdos/1969-13.pdf#page=3).
 The original condition is on inherited order type strictly below the
-**ordinal square** of the initial ordinal \(\omega_2\), not merely
-on cardinality below \(\aleph_2\). The preceding historical example
-in the scan connects rows \(\alpha<\gamma\) when
-\(\gamma<\beta\), with \(\beta\) the earlier row's second coordinate.
+**ordinal square** of the initial ordinal $`\omega_2`$, not merely
+on cardinality below $`\aleph_2`$. The preceding historical example
+in the scan connects rows $`\alpha<\gamma`$ when
+$`\gamma<\beta`$, with $`\beta`$ the earlier row's second coordinate.
 The indexed catalogue's illustrative formula appears to have a
 different second inequality. The proof uses the primary paper's
 formula, with the extra base-graph constraint.
@@ -29,15 +29,15 @@ pairs of rows forming a base edge. Each part of the construction has
 a separate check: first projection gives the upper global bound;
 cofinal single-colour fibres give the reverse global bound; on
 nonfull rows the projected forward degree is bounded in the ordinal,
-so total degree is less than \(\kappa\); regularity then bounds every
+so total degree is less than $`\kappa`$; regularity then bounds every
 projected component, and the full-row block uses a separate palette.
 
 A second route to the local step is to take the club of closure
 points of the map bounding nonfull rows' selected second coordinates.
 Starting above all full rows, consecutive club intervals have no
-edges between them, and each involves fewer than \(\kappa\) base
+edges between them, and each involves fewer than $`\kappa`$ base
 vertices. The initial segment is separately coloured. This
 rederives the needed order-type conclusion without a component
 argument and checks explicitly the possibility of a thin set of
-cardinality \(\kappa\). No independent human referee or Lean
+cardinality $`\kappa`$. No independent human referee or Lean
 formalization is claimed.

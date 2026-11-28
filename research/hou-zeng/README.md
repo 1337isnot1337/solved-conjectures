@@ -7,8 +7,8 @@ Hou and Zeng ask whether every integer greater than four is a sum of an odd prim
 Let $R(n)$ count triples of numerical values $(p,F,C)$ in the conjecture, counting the repeated initial value 1 in each sequence once. Set $M=312018=2\cdot3\cdot7\cdot17\cdot19\cdot23$. For either $r=208641$ or $r=218331$,
 
 ```math
-\frac{1}{\#\{X<n\le 2X:n\equiv r\pmod M\}}
-\sum_{\substack{X<n\le 2X\\ n\equiv r\pmod M}}R(n)
+\frac{1}{\#\{X\lt n\le 2X:n\equiv r\pmod M\}}
+\sum_{\substack{X\lt n\le 2X\\ n\equiv r\pmod M}}R(n)
 \asymp (\log X)^{\log_{23}12}.
 ```
 
@@ -41,7 +41,7 @@ M'=312018\cdot47\cdot107\cdot1103=1730759789766,
 \qquad r'=182449613961.
 ```
 
-The argument uses digit restrictions in two multiplicatively independent bases. Write $A_q=\{j:q\nmid C_j\}$ for an odd prime $q$ and $D_q$ for the integers with every base-$q$ digit at most $(q-1)/2$. The carry criterion above shows that for $j\in A_q$, every digit of $j+1$ above the units position has this bound. Indeed, if $j$ has no trailing digit $q-1$, adding one can change only the units digit. If it has trailing digits $q-1$, the first preceding digit is at most $(q-3)/2$, interpreting a leading zero if needed. Thus $A_q$ lies in the finite union of $qD_q+a-1$ for $0\le a<q$. For distinct odd primes $p,q$, Theorem B of Glasscock, Moreira and Richter applied to each pair of affine images gives
+The argument uses digit restrictions in two multiplicatively independent bases. Write $`A_q=\{j:q\nmid C_j\}`$ for an odd prime $q$ and $D_q$ for the integers with every base-$`q`$ digit at most $(q-1)/2$. The carry criterion above shows that for $j\in A_q$, every digit of $j+1$ above the units position has this bound. Indeed, if $j$ has no trailing digit $q-1$, adding one can change only the units digit. If it has trailing digits $q-1$, the first preceding digit is at most $(q-3)/2$, interpreting a leading zero if needed. Thus $A_q$ lies in the finite union of $qD_q+a-1$ for $0\le a<q$. For distinct odd primes $p,q$, Theorem B of Glasscock, Moreira and Richter applied to each pair of affine images gives
 
 ```math
 \#(A_p\cap A_q\cap[0,T])\ll_{p,q,\varepsilon}

@@ -9,8 +9,8 @@ I read Conjecture 1, equations (1)–(2), in Audenaert's [arXiv:math/0702186v2](
 ```math
 F(p)=\log\|T\|_p-\log\|C_p(T)\|_p
 \begin{cases}
-\ge0,&1\le p\le2,\\
-\le0,&p\ge2.
+\ge0,&1\le p\le2,
+\\ \le0,&p\ge2.
 \end{cases}
 ```
 
@@ -98,10 +98,10 @@ Let `a>b>0`, put `s=a^2+b^2`, and consider
 ```math
 T=\frac1{\sqrt{2s}}
 \begin{pmatrix}
-a&0\\
-0&b\\
-b&0\\
-0&a
+a&0
+\\ 0&b
+\\ b&0
+\\ 0&a
 \end{pmatrix}.
 \tag{R3}
 ```
@@ -118,8 +118,8 @@ The desired scalar compressed Gram is
 ```math
 \sigma=BB^*
 =\begin{pmatrix}
-1/2&ab/s\\
-ab/s&1/2
+1/2&ab/s
+\\ ab/s&1/2
 \end{pmatrix}.
 \tag{R4}
 ```

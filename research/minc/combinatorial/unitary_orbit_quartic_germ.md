@@ -133,8 +133,8 @@ Since $`\mathop{\mathrm{tr}}H^j=s_j`$ on that orbit, (5)--(6) give
 ```math
 \begin{aligned}
 \mathop{\mathrm{per}}(I+\varepsilon H)
-={}&1+\varepsilon^2\left(\frac{s_2}{2}-\|d\|_2^2\right)\\
-&+\varepsilon^3\left(\frac{s_3}{3}-2d\cdot r\right)
+={}&1+\varepsilon^2\left(\frac{s_2}{2}-\|d\|_2^2\right)
+\\ &+\varepsilon^3\left(\frac{s_3}{3}-2d\cdot r\right)
 +\varepsilon^4q_4(H)+O(|\varepsilon|^5),
 \end{aligned}
 \tag{7}
@@ -272,10 +272,10 @@ four-step walks and the derangements of a four-element set gives
 
 ```math
 \begin{aligned}
-s_4&=2\sum_{e\in E}w_e^2+4A+8C,\\
-q_4(H)&=D+2C,\\
-S^2&=\sum_{e\in E}w_e^2+2A+2D,\\
-\sum_i r_i(H)^2&=2\sum_{e\in E}w_e^2+2A.
+s_4&=2\sum_{e\in E}w_e^2+4A+8C,
+\\ q_4(H)&=D+2C,
+\\ S^2&=\sum_{e\in E}w_e^2+2A+2D,
+\\ \sum_i r_i(H)^2&=2\sum_{e\in E}w_e^2+2A.
 \end{aligned}
 \tag{14}
 ```
@@ -304,8 +304,8 @@ Consequently the coefficient in (2) admits the simpler form
 \boxed{\quad
 \Gamma_n(x)=\frac{s_4}{4}
 +\left(\frac18-\frac1n\right)s_2^2
-+\max_{\substack{H=U\mathop{\mathrm{diag}}(x)U^*\\
-                 \mathop{\mathrm{diag}}H=0}}
++\max_{\substack{H=U\mathop{\mathrm{diag}}(x)U^*
+                 \\ \mathop{\mathrm{diag}}H=0}}
 \ \sum_{i\lt j}|h_{ij}|^4.
 \quad}
 \tag{16}

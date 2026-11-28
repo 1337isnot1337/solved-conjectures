@@ -19,7 +19,7 @@ The source also defines a shifted type-A second-kind family and ordered versions
 
 ## Conditional model audit
 
-Let $a_j$ be a positive integer and let $U$ be uniform on $\{0,\ldots,a_j-1\}$, so $\mathbb E q^U=[a_j]_q/a_j$.
+Let $a_j$ be a positive integer and let $U$ be uniform on $`\{0,\ldots,a_j-1\}`$, so $\mathbb E q^U=[a_j]_q/a_j$.
 
 For a Bernoulli count with odds $\lambda a_j$ and a sum of $K_j$ independent uniform marks,
 
@@ -28,7 +28,7 @@ For a Bernoulli count with odds $\lambda a_j$ and a sum of $K_j$ independent uni
 =\frac{1+\lambda z[a_j]_q}{1+\lambda a_j}.
 ```
 
-For a geometric count on $\{0,1,\ldots\}$ with ratio $\lambda a_j<1$,
+For a geometric count on $`\{0,1,\ldots\}`$ with ratio $\lambda a_j<1$,
 
 ```math
 \mathbb E[z^{K_j}q^{Y_j}]

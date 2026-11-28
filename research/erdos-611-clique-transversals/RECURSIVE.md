@@ -60,7 +60,7 @@ In particular $\log(1/\rho_t)=O_c(\sqrt{\log L_t\log\log L_t})$. Since $D_t=\rho
 
 ## Every sufficiently large order
 
-Write $\gamma_* = 1-3\eta>c$ and fix an integer $K$ large enough that $\gamma_* K/(K+1)\ge c$. Given large $n$, choose the greatest $t$ such that $L_t\le n/K$ and put $k=\lfloor n/L_t\rfloor\ge K$. Replace every vertex of the step-$t$ graph by an independent set of $k$ or $k+1$ twins, assigning the larger size to exactly $n-kL_t$ vertices. Each fiber has transversal number one, so the substitution lemma leaves the transversal number exactly $D_t$. The minimum size of a maximal independent set is at least $k i_t\ge k\gamma_* L_t\ge cn$ because $n\lt(k+1)L_t$.
+Write $`\gamma_* = 1-3\eta>c`$ and fix an integer $K$ large enough that $`\gamma_* K/(K+1)\ge c`$. Given large $n$, choose the greatest $t$ such that $L_t\le n/K$ and put $k=\lfloor n/L_t\rfloor\ge K$. Replace every vertex of the step-$`t`$ graph by an independent set of $k$ or $k+1$ twins, assigning the larger size to exactly $n-kL_t$ vertices. Each fiber has transversal number one, so the substitution lemma leaves the transversal number exactly $D_t$. The minimum size of a maximal independent set is at least $`k i_t\ge k\gamma_* L_t\ge cn`$ because $n\lt(k+1)L_t$.
 
 Maximality of $t$ gives $n\lt K L_{t+1}$, and the order bounds give $L_{t+1}\le4L_t/\rho_t$. Consequently the new relative transversal number is greater than $\rho_t^2/(4K)$. Since $\log L_t\le\log n$, this still gives $\tau\ge n\exp(-O_c(\sqrt{\log n\log\log n}))$.
 

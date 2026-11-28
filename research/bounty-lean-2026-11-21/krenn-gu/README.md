@@ -19,7 +19,7 @@ arbitrary complex $D\times D$ matrix for each $i<j$, and define
 
 ```math
 T_W(a_1,\ldots,a_N)
-=\sum_{M\text{ perfect matching}}\prod_{\{i,j\}\in M,\ i<j}W_{ij}[a_i,a_j].
+=\sum_{M\text{ perfect matching}}\prod_{\{i,j\}\in M,\ i\lt j}W_{ij}[a_i,a_j].
 ```
 
 The conjecture forbids $T_W$ from being one on every constant color word and

@@ -33,7 +33,7 @@ The key new lower bound, checked below, is
 ```math
 \frac{\sigma_k(A)}{S_{n,k}}
 \ge \exp\!\left(\frac{5\Delta}{4n^2}\right)
-\qquad(n\ge5,\ 2\le k<n). \tag{1}
+\qquad(n\ge5,\ 2\le k\lt n). \tag{1}
 ```
 
 ## Published inputs inspected
@@ -175,8 +175,8 @@ The positivity has the exact certificate
 ```math
 \begin{aligned}
 56s^3+59s^2-118s+38
-={}&59s^2-\frac{1786}{27}s+\frac{13702}{729}\\
-&+\frac{56}{729}(9s-5)^2(9s+10).
+={}&59s^2-\frac{1786}{27}s+\frac{13702}{729}
+\\ &+\frac{56}{729}(9s-5)^2(9s+10).
 \end{aligned}
 ```
 
@@ -215,9 +215,9 @@ Independent exact evaluation gives
 ```math
 \begin{array}{c|c|c}
 \text{constant used}&\text{value}&5/(4n^2)-\text{value}\\\hline
-b_{5,4}&3685/73728&7/368640\\
-b_{6,5}&4767/156250&47401/11250000\\
-b_{7,7}&4421129/201553920&35307079/9876142080
+b_{5,4}&3685/73728&7/368640
+\\ b_{6,5}&4767/156250&47401/11250000
+\\ b_{7,7}&4421129/201553920&35307079/9876142080
 \end{array}
 ```
 

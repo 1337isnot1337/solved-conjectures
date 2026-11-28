@@ -12,13 +12,13 @@ is real of order $n$, with zero row and column sums, and that
 Then
 
 ~~~math
-\frac{\operatorname{per}(J_n+B)}{d_n}
+\frac{\mathop{\mathrm{per}}(J_n+B)}{d_n}
 =\det(I-B^TB)^{-1/2}+o(1).
 \tag{1}
 ~~~
 
 In particular, eventually every nonzero $B_n$ in the sequence satisfies
-$\operatorname{per}(J_n+B_n)>d_n$. The entries may be negative and the
+$`\mathop{\mathrm{per}}(J_n+B_n)>d_n`$. The entries may be negative and the
 rank may grow. In this class the threshold one for the operator norm is
 sharp in the following sense. The [nearest Hall examples](hall-bound.md)
 have centered rank one, nuclear and operator norms $H_n\to1$, and individual
@@ -40,23 +40,23 @@ Q=\|X\|^2=\|Y\|^2=\sum_j s_j|z_j|^2 .
 ~~~
 
 Both vectors have coordinate sum zero, since the columns of $U,V$ are
-orthogonal to the all-ones vector. Let $e_k(x)$ be the degree-$k$
+orthogonal to the all-ones vector. Let $e_k(x)$ be the degree-$`k`$
 elementary symmetric polynomial in the coordinates of $x$. The sum
 $\sigma_k(B)$ of the $k$-rowed subpermanents equals
 $\mathbb E[e_k(X)e_k(Y)]$ by the complex Gaussian pairing formula.
 Expansion of the permanent around $J_n$ then gives
 
 ~~~math
-\frac{\operatorname{per}(J_n+B)}{d_n}
+\frac{\mathop{\mathrm{per}}(J_n+B)}{d_n}
 =\sum_{k=0}^n c_{n,k},\qquad
 c_{n,k}=\frac{n^k(n-k)!}{n!}\mathbb E[e_k(X)e_k(Y)].
 ~~~
 
 For a deterministic zero-sum complex vector $x$, the arithmetic–geometric
 mean inequality gives
-$|\prod_i(1+w x_i)|\le(1+|w|^2\|x\|^2/n)^{n/2}$.
+$`|\prod_i(1+w x_i)|\le(1+|w|^2\|x\|^2/n)^{n/2}`$.
 Cauchy's coefficient estimate on a circle with
-$|w|^2=nk/[(n-k)\|x\|^2]$ therefore gives
+$`|w|^2=nk/[(n-k)\|x\|^2]`$ therefore gives
 
 ~~~math
 |e_k(x)|^2\le \|x\|^{2k}
@@ -93,7 +93,7 @@ normalized coefficients through degree $n$, including the last ones.
 ### The limiting coefficients
 
 Put $D=\sum_i X_i^2=\sum_j s_jz_j^2$. Then $\sum_i Y_i^2=\bar D$
-and $|D|\le Q$. The variance $v_i=\mathbb E|X_i|^2$ is the $i$th
+and $|D|\le Q$. The variance $v_i=\mathbb E|X_i|^2$ is the $`i`$th
 diagonal entry of $(BB^T)^{1/2}$. Cauchy–Schwarz gives
 $v_i\le\sqrt{(BB^T)_{ii}}$. Thus $\max_i v_i=o(1)$ and
 $\sum_i v_i\le L$, so
@@ -129,7 +129,7 @@ and its degree $2j$ term is at most
 $\mathbb E Q^{2j}/[4^j(j!)^2]\le h_{2j}(s)$.
 The two infinite sums therefore differ by $o(1)$, taking $c_{n,k}=0$
 above degree $n$. By circular symmetry $D$ has rotation-invariant law.
-Averaging $\exp(-\mathrm{Re}\,D)$ over the phase gives precisely
+Averaging $`\exp(-\mathrm{Re}\,D)`$ over the phase gives precisely
 $\sum_{k\ge0}|t_k(D)|^2$ for a fixed magnitude. Finally,
 
 ~~~math
@@ -142,7 +142,7 @@ by the independent real and imaginary Gaussian components of variance
 one half. This proves (1). To see eventual strictness, the previously
 proved [uniform local bound](../nov20-independent/inequalities/uniform_radial_permanent.md)
 already gives it for nonzero Frobenius norm at most $1/1000$.
-For larger norm, $-\tfrac12\sum_j\log(1-s_j^2)\ge\|B\|_F^2/2$
+For larger norm, $`-\tfrac12\sum_j\log(1-s_j^2)\ge\|B\|_F^2/2`$
 gives a fixed positive margin in (1).
 
 ## Relation to published work
@@ -159,8 +159,8 @@ historical priority is claimed.
 For example take $m=m(n)$ even with $m\to\infty$ and $m/n\to0$.
 Set $u_i=\pm1/\sqrt m$ equally often on $m$ coordinates and zero elsewhere,
 and $B=suu^T$ with fixed $0<s<1$. The signed matrix $J_n+B$ satisfies
-the assumptions of (1), while $n\|B\|_{\max}=sn/m\to\infty$ and for
-each $p>2$ the average absolute $p$th power of the entries of $nB$ is
+the assumptions of (1), while $`n\|B\|_{\max}=sn/m\to\infty`$ and for
+each $p>2$ the average absolute $`p`$th power of the entries of $nB$ is
 $s^p(n/m)^{p-2}\to\infty$. This distinguishes the hypotheses from
 the two cited entry or moment assumptions. The theorem does not cover
 directions with localized rows or columns or unbounded nuclear norm.

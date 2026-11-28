@@ -30,8 +30,8 @@ Apply the shape lemma with $`\eta=1/100`$, and let $`D=\mathop{\mathrm{lcm}}_i s
 
 ```math
  \frac{4/5}{(101/100)(64/63)}+o(1)
- \ \le\ \frac{y}{2^{n+a_i}}\
- \le\ \frac{4/5}{99/100}+o(1).
+ \ \le\ \frac{y}{2^{n+a_i}}
+ \ \le\ \frac{4/5}{99/100}+o(1).
 ```
 
 The lower constant exceeds $`3/4`$, and the upper constant is less than $`7/8`$. Once $`n`$ is large, $`y+1\le 2^{n+a_i}`$ and $`ey>2^{n+a_i+1}`$, since $`3e/4>2`$. The bounded cofactors are fixed, so the [large-prime obstruction](README.md) excludes every possible maximum in bin $`n+a_i`$. At least one of the specified bins is therefore empty. [Maynard, Theorem 3.4](https://arxiv.org/abs/1405.2593)

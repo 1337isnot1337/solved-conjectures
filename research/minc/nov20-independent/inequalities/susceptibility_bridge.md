@@ -99,8 +99,8 @@ Its block transfer matrix is
 ```math
 T(z)=
 \begin{pmatrix}
-1+5z/3+4z^2/9&z/3+z^2/3\\
-1+z&z/3+z^2/9
+1+5z/3+4z^2/9&z/3+z^2/3
+\\ 1+z&z/3+z^2/9
 \end{pmatrix}.
 ```
 
@@ -130,8 +130,8 @@ Put $`w=1/z`$ and
 ```math
 M(w)=w^2T(1/w)=
 \begin{pmatrix}
-4/9+5w/3+w^2&1/3+w/3\\
-w+w^2&1/9+w/3
+4/9+5w/3+w^2&1/3+w/3
+\\ w+w^2&1/9+w/3
 \end{pmatrix},\qquad E=M(w)^f.
 ```
 
@@ -164,8 +164,8 @@ For example, divide $`E`$ by $`a^f`$. Its value and derivative at zero are
 ```math
 \frac{E'(0)}{a^f}=
 \begin{pmatrix}
-6f-3+3\varepsilon_f&6f-9+(6f+9)\varepsilon_f\\
-3(1-\varepsilon_f)&3-(6f+3)\varepsilon_f
+6f-3+3\varepsilon_f&6f-9+(6f+9)\varepsilon_f
+\\ 3(1-\varepsilon_f)&3-(6f+3)\varepsilon_f
 \end{pmatrix}.
 ```
 

@@ -20,7 +20,7 @@ P_\lambda(z;q,t)=Q_\lambda(z;q,t)
 The source's Theorem 1.1 gives, for N equal to the size of λ,
 
 ```math
-P_\lambda(z;q,t)=\operatorname{sgn}(\lambda)
+P_\lambda(z;q,t)=\mathop{\mathrm{sgn}}(\lambda)
  \sum_{d=0}^N\langle\nabla s_\lambda,h_de_{N-d}\rangle z^d.
 ```
 
@@ -177,7 +177,7 @@ Here cells have zero-based column and row coordinates. By the definition
 of nabla and the source's Theorem 1.1,
 
 ```math
-P_\lambda(z;q,t)=\operatorname{sgn}(\lambda)
+P_\lambda(z;q,t)=\mathop{\mathrm{sgn}}(\lambda)
  \sum_{\mu\vdash N}c_{\lambda\mu}(q,t)
  q^{n(\mu')}t^{n(\mu)}
  \prod_{(i,j)\in\mu}(z+q^it^j).

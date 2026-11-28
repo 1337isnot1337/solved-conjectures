@@ -24,7 +24,7 @@ For every nonnegative integer matrix $`A`$ of order $`n`$ with every
 row and column sum equal to $`n-1`$,
 
 ```math
-\operatorname{per}A\ge D_n.
+\mathop{\mathrm{per}}A\ge D_n.
 ```
 
 Equality holds exactly when $`A`$ is a binary matrix, or equivalently
@@ -82,7 +82,7 @@ Write
 ```math
 k=n-1,\qquad J_n=\frac1n\mathbf1\mathbf1^T,
 \qquad d_n=\frac{n!}{n^n},
-\qquad P_n(B)=\frac{\operatorname{per}(J_n+B)}{d_n}.
+\qquad P_n(B)=\frac{\mathop{\mathrm{per}}(J_n+B)}{d_n}.
 ```
 
 All derivatives below are restricted to the real subspace of matrices
@@ -158,11 +158,11 @@ Their connecting segment also lies there. Taylor's integral formula,
 \begin{aligned}
 P_n(X)-P_n(B_0)
 &\ge-\frac{(c_n+\eta)s}{k^2}
-  +\frac{(c_n-\eta)(C+s)}{k^2}\\
-&=\frac{(c_n-\eta)C-2\eta s}{k^2}\\
-&\ge\frac{(c_n-5\eta)C}{k^2}
-\ge\frac{7C}{20k^2}.                              \tag{5}
-\end{aligned}
+  +\frac{(c_n-\eta)(C+s)}{k^2}
+\\ &=\frac{(c_n-\eta)C-2\eta s}{k^2}
+\\ &\ge\frac{(c_n-5\eta)C}{k^2}
+\ge\frac{7C}{20k^2}.
+\end{aligned} \tag{5}
 ```
 
 It is strictly positive whenever $`A`$ is nonbinary, since an integer
@@ -171,22 +171,22 @@ matrix is nonbinary exactly when $`C>0`$.
 ## 5. Every possible minimizer lies in that ball
 
 Assume for contradiction that a nonbinary admissible $`A`$ satisfies
-$`\operatorname{per}A\le D_n`$. Its normalization is doubly
+$`\mathop{\mathrm{per}}A\le D_n`$. Its normalization is doubly
 stochastic, and this comparison is equivalent to
-$`\operatorname{per}(A/k)\le\operatorname{per}U_n`$.
+$`\mathop{\mathrm{per}}(A/k)\le\mathop{\mathrm{per}}U_n`$.
 
 The [uniform Frobenius stability theorem](../inequalities/uniform_frobenius_stability.md)
 therefore gives
 
 ```math
 \|X\|_F^2
-\le32\,000\,000\log\frac{\operatorname{per}U_n}{d_n}.
+\le32\,000\,000\log\frac{\mathop{\mathrm{per}}U_n}{d_n}.
 ```
 
 Section 4 of that note proves
 
 ```math
-\log\frac{\operatorname{per}U_n}{d_n}
+\log\frac{\mathop{\mathrm{per}}U_n}{d_n}
 \le\frac1{2(n-1)}+\frac3{(n+1)!}
 \le\frac3{4(n-1)}\qquad(n\ge3).                   \tag{6}
 ```

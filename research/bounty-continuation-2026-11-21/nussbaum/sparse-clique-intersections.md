@@ -5,7 +5,7 @@
  b\le\binom{2r}{r},\qquad
  b\le\binom{w}{t+1},\qquad
  \sum_{j=0}^{t}\binom{w}{j}\ge\binom{w}{r},\qquad
- s\binom{2t}{t}<b, \tag{1}
+ s\binom{2t}{t}\lt b, \tag{1}
 ```
 the Boolean union of the faces has at least one vertex per face in cardinality. The [perfect-matching theorem](matched-cliques.md) handles $`s=1`$ at every size. The new criterion allows $`s`$ to grow without bound.
 

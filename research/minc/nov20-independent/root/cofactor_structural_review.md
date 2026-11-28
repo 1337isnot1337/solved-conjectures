@@ -19,8 +19,8 @@ resolve Chollet's conjecture or another full Minc entry.
 Write
 
 ```math
-\Gamma_{ij}=a_{ij}\operatorname{per}A(i\mid j),\qquad
-P=\operatorname{per}A,\qquad Q=\operatorname{per}|A|^2.
+\Gamma_{ij}=a_{ij}\mathop{\mathrm{per}}A(i\mid j),\qquad
+P=\mathop{\mathrm{per}}A,\qquad Q=\mathop{\mathrm{per}}|A|^2.
 ```
 
 The proposed lower bound is $`\|\Gamma\|_F^2\ge nQ`$. Pate's
@@ -28,7 +28,7 @@ published indicator theorem gives the opposite-side bound
 $`\|\Gamma\|_F^2\le nP^2`$ by applying it to
 $`A\oplus\overline A`$ and the indicator of the two-element sets
 $`\{i,n+i\}`$. Each selected matrix entry is exactly
-$`|a_{ij}\operatorname{per}A(i\mid j)|^2`$. The selector has squared
+$`|a_{ij}\mathop{\mathrm{per}}A(i\mid j)|^2`$. The selector has squared
 norm $`n`$, so there is no missing factor of $`n`$, $`2`$, or a binomial
 coefficient.
 
@@ -79,7 +79,7 @@ the classical identities, and the complex-coefficient convention in
 [Beauzamy--Degot](https://www.scmsa.eu/BB_Publications/BB_Degot_Differential_Identities.pdf).
 The note also proves the exact complex normal-order identity directly.
 
-Let $`C_S(i,j)=\operatorname{per}A[S](i\mid j)`$. With
+Let $`C_S(i,j)=\mathop{\mathrm{per}}A[S](i\mid j)`$. With
 $`a_{ij}=\langle\ell_i,\ell_j\rangle`$, this is precisely the Gram
 matrix of the products omitting index $`i`$. Multiplication by the common
 product on $`S\setminus R`$ gives

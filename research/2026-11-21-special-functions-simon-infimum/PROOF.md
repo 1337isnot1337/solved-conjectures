@@ -68,12 +68,12 @@ J_\theta(r)=\int_0^\infty
 \frac{u^{r-1}}{u^2-2u\cos\theta+1}\,du
 =\frac{\pi\sin((1-r)(\pi-\theta))}
 {\sin\theta\sin(\pi r)}
-\quad(0<r<2)
+\quad(0\lt r<2)
 \tag{5}
 ```
 
 is understood by continuity at $r=1$. For completeness, partial fractions at the roots $e^{i\theta},e^{-i\theta}$, followed by Euler's integral
-$\int_0^\infty u^{r-1}/(u+z)\,du=\pi z^{r-1}/\sin(\pi r)$, proves it first for $0<r<1$; the substitution $u\mapsto1/u$ gives $1<r<2$. Use principal powers with $|\arg z|<\pi$.
+$`\int_0^\infty u^{r-1}/(u+z)\,du=\pi z^{r-1}/\sin(\pi r)`$, proves it first for $0<r<1$; the substitution $u\mapsto1/u$ gives $1<r<2$. Use principal powers with $|\arg z|<\pi$.
 
 Substituting $u=t^{1/\alpha}$ into (4) and applying (5) gives, for
 $1-1/\alpha<s<1/\alpha$,
@@ -83,12 +83,12 @@ $1-1/\alpha<s<1/\alpha$,
 \mathbb E Y_\alpha^s
 &=\frac{\alpha\sin\theta}{\pi}
 \big[J_\theta(1-\alpha+\alpha s)
-+J_\theta(1+\alpha s)\big]\\
-&=\alpha\left[
++J_\theta(1+\alpha s)\big]
+\\ &=\alpha\left[
 \frac{\sin(\pi(1-\alpha)(1-s))}{\sin(\pi\alpha(1-s))}
 +\frac{\sin(\pi(1-\alpha)s)}{\sin(\pi\alpha s)}
-\right]\\
-&=\frac{\alpha\sin(\pi\alpha)\sin(\pi s)}
+\right]
+\\ &=\frac{\alpha\sin(\pi\alpha)\sin(\pi s)}
 {\sin(\pi\alpha s)\sin(\pi\alpha(1-s))}.
 \end{aligned}
 \tag{6}
@@ -137,8 +137,8 @@ $K_\alpha(s)=\log\mathbb E V_\alpha^s$, choosing the logarithm equal to zero at 
 \begin{aligned}
 K_\alpha(s)={}&s\log\Gamma(1+\alpha)
 +\log\Gamma(1-\alpha s)
-+\log\Gamma(1+\alpha-\alpha s)\\
-&+\log\Gamma(1-\alpha+\alpha s)
++\log\Gamma(1+\alpha-\alpha s)
+\\ &+\log\Gamma(1-\alpha+\alpha s)
 -\log\Gamma(1+\alpha)
 -\log\Gamma(1-\alpha)
 -\log\Gamma(2-s).

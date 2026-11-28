@@ -88,8 +88,8 @@ For disjoint ordered triples $`(a,b,c)`$ and $`(u,v,w)`$, let
 ```math
 \begin{split}
 \mathcal A(abc;uvw)
-={}&[a,b,v]+[a,v,u]+[b,c,w]\\
-&+[b,w,v]+[c,a,u]+[c,u,w].
+={}&[a,b,v]+[a,v,u]+[b,c,w]
+\\ &+[b,w,v]+[c,a,u]+[c,u,w].
 \end{split}
 \tag{5}
 ```
@@ -311,7 +311,7 @@ Bounded searches for simplicial Graver bases, flat cycles, ternary-minimal suppo
 The offline files are:
 
 - [Explicit generator and checker](check_erdos774_simplicial_minimality.py).
-- [Base witness for $`m=1`$](erdos774-simplicial-minimality-witness.json).
+- [Base witness](erdos774-simplicial-minimality-witness.json) for $`m=1`$.
 - [Verification report](erdos774-simplicial-minimality-check.json).
 
 The checker verifies uniqueness and nondegeneracy of simplices, all private-edge components, the exact reduced boundary matrix, the counts in (1), explicit integer kernel vectors, and a modular rank lower bound that certifies the rational nullity. It also checks the join at $`k=4`$, for $`m=1,2`$.
@@ -360,14 +360,14 @@ Take $`q`$ large enough that $`\sigma_0t\geq T_0`$. For all sufficiently large $
 
 ```math
 \begin{split}
-&\sum_{\substack{z\in K\cap\{-1,0,1\}^N\\
-|\mathop{\mathrm{supp}}z|\geq\rho N}}
-q^{-|\mathop{\mathrm{supp}}z|}\\
-&\quad\leq
+&\sum_{\substack{z\in K\cap\{-1,0,1\}^N
+\\ |\mathop{\mathrm{supp}}z|\geq\rho N}}
+q^{-|\mathop{\mathrm{supp}}z|}
+\\ &\quad\leq
 e^{-(\rho/2)N\log q}\theta_K(t)
 \leq
-\exp\left(\eta_qd-\frac{\rho}{2}N\log q\right)\\
-&\quad\leq
+\exp\left(\eta_qd-\frac{\rho}{2}N\log q\right)
+\\ &\quad\leq
 \exp\left[N\left(\eta_q-\frac{\rho}{2}\log q\right)\right].
 \end{split}
 \tag{16}

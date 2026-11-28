@@ -44,7 +44,7 @@ Let $B_n=(n+100)^4$, $Q_0=1$ and $Q_n=\prod_{j=1}^n B_j$. Take an open interval 
 \epsilon_n=\frac{1}{B_n}\left\lfloor\frac{B_n}{100\sqrt{\log(n+100)}}\right\rfloor.
 ```
 
-Define $D=[1,2]\cap\bigcap_{n\ge1}\{x:Q_{n-1}x\bmod1\notin I_n\}$. It is compact. The stage-$n$ deletion removes exactly $B_n\epsilon_n$ of the $B_n$ equal subintervals inside each surviving grid interval of length $1/Q_{n-1}$, apart from endpoints. Therefore outside the countable set of grid endpoints, $D$ is covered at stage $n$ by at most $Q_n\prod_{j\le n}(1-\epsilon_j)$ closed intervals of length $1/Q_n$. The sum of their gauge costs is bounded by
+Define $`D=[1,2]\cap\bigcap_{n\ge1}\{x:Q_{n-1}x\bmod1\notin I_n\}`$. It is compact. The stage-$`n`$ deletion removes exactly $B_n\epsilon_n$ of the $B_n$ equal subintervals inside each surviving grid interval of length $1/Q_{n-1}$, apart from endpoints. Therefore outside the countable set of grid endpoints, $D$ is covered at stage $n$ by at most $Q_n\prod_{j\le n}(1-\epsilon_j)$ closed intervals of length $1/Q_n$. The sum of their gauge costs is bounded by
 
 ```math
 \exp\!\left(-\sum_{j\le n}\epsilon_j+(\log Q_n)^\theta\right).
@@ -81,7 +81,7 @@ The first term tends to zero since $\sum_{j=n}^{n+L_n-1}\epsilon_j\gg(\log n)^{1
 
 Fix $m$. Choose $N$ so that for every $n\ge N$, $m\epsilon_n\le1/24$ and $B_n\ge8m$. Take a surviving grid interval of length $1/Q_{N-1}$ in $[1,2]$ through the first $N-1$ stages. Its middle half $J$ is taken into that same surviving interval by each map $x\mapsto s_ix$ if the ratios are sufficiently close to one. Fix such ratios in $[1/2,2]$.
 
-At any subsequent stage $n$, write $Q=Q_{n-1}$ and suppose the current closed interval $J$ has length $L\ge1/(2Q)$ and satisfies all previous conditions for every ratio. For a single ratio $s_i$, the $n$th forbidden intervals in $x$ have period $1/(s_iQ)$ and length $\epsilon_n/(s_iQ)$. At most $2QL+2$ can meet $J$. The union removed by all $m$ ratios has length at most $m(4\epsilon_n L+4\epsilon_n/Q)\le12m\epsilon_n L\le L/2$. Its complement in $J$ has at most $m(2QL+2)+1\le8mQL$ interval components. One component is a closed interval of length at least $1/(16mQ)\ge1/(2Q_n)$. Use it as the next $J$. The initial interval has the required length at stage $N$. Taking the intersection of the nested closed intervals gives $x$ with every $s_ix\in D$.
+At any subsequent stage $n$, write $Q=Q_{n-1}$ and suppose the current closed interval $J$ has length $L\ge1/(2Q)$ and satisfies all previous conditions for every ratio. For a single ratio $s_i$, the $`n`$th forbidden intervals in $x$ have period $1/(s_iQ)$ and length $\epsilon_n/(s_iQ)$. At most $2QL+2$ can meet $J$. The union removed by all $m$ ratios has length at most $m(4\epsilon_n L+4\epsilon_n/Q)\le12m\epsilon_n L\le L/2$. Its complement in $J$ has at most $m(2QL+2)+1\le8mQL$ interval components. One component is a closed interval of length at least $1/(16mQ)\ge1/(2Q_n)$. Use it as the next $J$. The initial interval has the required length at stage $N$. Taking the intersection of the nested closed intervals gives $x$ with every $s_ix\in D$.
 
 If the lower box dimension of $D$ were below $1-1/m$, the covering argument in the proposition would make the set of ratio tuples of $m$ points in $D$ null. The persistence just proved gives it interior. Taking all $m$ yields lower box dimension one.
 

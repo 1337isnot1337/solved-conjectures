@@ -34,6 +34,6 @@ In the variance of $d_x$, the terms from pairs with no common vertex other than 
 \le \sum_{r=2}^7 O\bigl(q^{e_r}p^{14-r}\bigr)
 = O(q^3L^{22}) = o(Np\,m^2).
 ```
-Indeed the q-exponents for these terms are (2,3,3,3,3,3), and their log-exponents are (24,22,20,18,16,14). Markov now gives $\sum_x{\bf 1}_x(d_x-m)^2=o(Np\,m^2)$ with high probability. The total retained vertex count is $(1+o(1))Np$ with high probability by the binomial variance bound. Consequently $\sum_x{\bf 1}_x d_x^2=O(q^3L^{26})$ with high probability, using $(m+t)^2\le2m^2+2t^2$.
+Indeed the q-exponents for these terms are (2,3,3,3,3,3), and their log-exponents are (24,22,20,18,16,14). Markov now gives $`\sum_x{\bf 1}_x(d_x-m)^2=o(Np\,m^2)`$ with high probability. The total retained vertex count is $(1+o(1))Np$ with high probability by the binomial variance bound. Consequently $\sum_x{\bf 1}_x d_x^2=O(q^3L^{26})$ with high probability, using $(m+t)^2\le2m^2+2t^2$.
 
 The graph on the Z surviving copies, adjacent when they intersect, has at most $\tfrac12\sum_x {\bf 1}_x d_x^2$ edges, since we upper bounded all split-surviving degrees by the corresponding retention-only degrees. It has an independent set of size at least $Z^2/(Z+2E)$, where E is its number of edges. This is Ω(q³L²), since $Z\ge c_0 q^3L^{14}$ and $E=O(q^3L^{26})$. Every induced spindle-free subgraph must delete at least one vertex from each of these disjoint copies. Because $Np=\Theta(q^3L^2)$, the required deletion is a positive fraction, as claimed.

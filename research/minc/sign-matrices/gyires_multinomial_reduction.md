@@ -75,9 +75,9 @@ This is an equivalence, not an additional estimate.
 ## Why the obvious coefficient shortcut fails
 
 If $`f_A`$ had its maximum at $`\mathbf1`$, then
-\(\sum_\alpha\pi(\alpha)f_A(\alpha)^2
+$`\sum_\alpha\pi(\alpha)f_A(\alpha)^2
 \le f_A(\mathbf1)\sum_\alpha\pi(\alpha)f_A(\alpha)
-=f_A(\mathbf1)\).
+=f_A(\mathbf1)`$.
 The van der Waerden inequality would then imply (4). But that pointwise hypothesis is false.
 
 For $`A=(I_4+P_4)/2`$, where $`P_4`$ is a four-cycle permutation matrix,

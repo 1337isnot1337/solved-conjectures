@@ -4,7 +4,7 @@ Zhi-Wei Sun asks whether every integer $n>7$ has the form $p+2^k+(1+(n\bmod 2))5
 
 ## A common set of shifts
 
-Set $S=\{2^a+5^b:a\ge1,\ b\ge0,\ 2^a+5^b\text{ squarefree}\}$. An even integer is represented exactly when it lies in $p+S$ for some odd prime $p$. An odd integer is represented exactly when it lies in $p+2S$. For even $n$, the power of two must be even. For odd $n$, the squarefree shift is even. Its power of two cannot be $1$ by parity or $2$ because $2+2\cdot5^b$ is divisible by four. The remaining shift is twice an odd number, whose squarefreeness is equivalent to that of the shift. Moreover, $9\mid 2^a+5^b$ exactly when $a+b\equiv3\pmod6$, since $5\equiv 2^{-1}\pmod9$ and $2$ has order six.
+Set $`S=\{2^a+5^b:a\ge1,\ b\ge0,\ 2^a+5^b\text{ squarefree}\}`$. An even integer is represented exactly when it lies in $p+S$ for some odd prime $p$. An odd integer is represented exactly when it lies in $p+2S$. For even $n$, the power of two must be even. For odd $n$, the squarefree shift is even. Its power of two cannot be $1$ by parity or $2$ because $2+2\cdot5^b$ is divisible by four. The remaining shift is twice an odd number, whose squarefreeness is equivalent to that of the shift. Moreover, $9\mid 2^a+5^b$ exactly when $a+b\equiv3\pmod6$, since $5\equiv 2^{-1}\pmod9$ and $2$ has order six.
 
 Sun also records the common-shift formulation in OEIS A304122. [Sun’s equivalent formulation](https://oeis.org/A304122)
 

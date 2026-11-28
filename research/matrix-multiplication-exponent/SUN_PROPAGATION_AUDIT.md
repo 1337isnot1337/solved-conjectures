@@ -12,13 +12,13 @@ If those certificates exist for an unbounded sequence of $n$, then $\omega_\math
 
 ## Local assertions that check
 
-Let $W_{16}(i,j)=(-1)^{\langle i,j\rangle}$, $A=\{0,3,4,9,12\}$, and $N=\mathbb F_2^4\setminus A$. Exact integer arithmetic gives
+Let $W_{16}(i,j)=(-1)^{\langle i,j\rangle}$, $`A=\{0,3,4,9,12\}`$, and $N=\mathbb F_2^4\setminus A$. Exact integer arithmetic gives
 
 ```math
 \mathop{\mathrm{det}} W_{16}[A,A]=16,\qquad \mathop{\mathrm{det}} W_{16}[N,N]=65536.
 ```
 
-Thus both displayed minors and their products with $W_4$ are invertible in every characteristic other than two. The active module addresses in Appendix A.4 are $\{2,5,6,10,15\}$; translating them by 6 gives exactly $A$.
+Thus both displayed minors and their products with $W_4$ are invertible in every characteristic other than two. The active module addresses in Appendix A.4 are $`\{2,5,6,10,15\}`$; translating them by 6 gives exactly $A$.
 
 The proposed first-difference identity is also correct. If $R_t=A+tJ$ and $U$ acts on the first tensor factor, then
 
@@ -103,11 +103,11 @@ coefficients set to zero gives the ordinary-to-active leakage matrix
 ```math
 K=W[A,N]W[N,N]^{-1}
 =\begin{pmatrix}
-0&-1&1&0&1&1&1&0&-1&0&-1\\
-0&1&0&1&-1&-2&-1&-1&2&1&1\\
-1&1&0&0&-1&-1&0&-1&1&1&0\\
--1&-1&-1&-1&0&0&-1&0&-1&-1&0\\
--1&-1&-1&-1&0&1&0&1&-2&-2&-1
+0&-1&1&0&1&1&1&0&-1&0&-1
+\\ 0&1&0&1&-1&-2&-1&-1&2&1&1
+\\ 1&1&0&0&-1&-1&0&-1&1&1&0
+\\ -1&-1&-1&-1&0&0&-1&0&-1&-1&0
+\\ -1&-1&-1&-1&0&1&0&1&-2&-2&-1
 \end{pmatrix}.
 ```
 
@@ -116,11 +116,11 @@ It has rank five. The Schur complement is also explicit:
 ```math
 S=W[A,A]-KW[N,A]
 =\begin{pmatrix}
-0&0&0&8&8\\
-0&8&8&-8&-8\\
-0&8&0&0&-8\\
-8&-8&0&0&0\\
-8&-8&-8&0&8
+0&0&0&8&8
+\\ 0&8&8&-8&-8
+\\ 0&8&0&0&-8
+\\ 8&-8&0&0&0
+\\ 8&-8&-8&0&8
 \end{pmatrix}
 =16W[A,A]^{-1}.
 ```
@@ -130,8 +130,8 @@ Now adjoin the fresh two-bit Walsh factor. Since $W_4^{-1}=W_4/4$,
 ```math
 \begin{aligned}
 &(W[A,N]\otimes W_4)
- (W[N,N]^{-1}\otimes W_4^{-1})\\
-&\hspace{4em}=K\otimes I_4.
+ (W[N,N]^{-1}\otimes W_4^{-1})
+\\ &\hspace{4em}=K\otimes I_4.
 \end{aligned}
 ```
 
@@ -236,10 +236,10 @@ However, the literal source-to-target map on the X factor is
 
 ```math
 A_X(t)=\begin{pmatrix}
--t&0&0&0\\
-1&1&0&0\\
-0&0&1&0\\
-0&0&0&1
+-t&0&0&0
+\\ 1&1&0&0
+\\ 0&0&1&0
+\\ 0&0&0&1
 \end{pmatrix}.
 ```
 

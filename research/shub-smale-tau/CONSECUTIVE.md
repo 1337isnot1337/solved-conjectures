@@ -28,7 +28,7 @@ The full proof of the classical implication appears in [PROOF.md](PROOF.md).
 For an integer radix `q >= 2`, define
 
 ```math
-E_q(f)(a,b)=f(a+qb),\qquad 0\le a<q,\quad b\in\mathbb Z.
+E_q(f)(a,b)=f(a+qb),\qquad 0\le a\lt q,\quad b\in\mathbb Z.
 ```
 
 This is a ring homomorphism into functions of `(a,b)`:
@@ -69,8 +69,8 @@ a'_i=z_i\bmod q_i,\qquad
 The final, unbounded high block absorbs the final carry. The recurrence follows by induction from
 
 ```math
-\sum_{j<i}(a_j+c_j)Q_j
-=\sum_{j<i}a'_jQ_j+\kappa_iQ_i.
+\sum_{j\lt i}(a_j+c_j)Q_j
+=\sum_{j\lt i}a'_jQ_j+\kappa_iQ_i.
 ```
 
 ### Digits of gate outputs
@@ -129,7 +129,7 @@ A cut `A | B` of the digit positions gives a matrix with rows indexed by the `A`
 **Theorem 3.1.** Let `D` be a nonnegative integer. For distinct numbers
 
 ```math
-0\le a_1<\cdots<a_p,\qquad 0<b_1<\cdots<b_q,
+0\le a_1<\cdots\lt a_p,\qquad 0\lt b_1<\cdots\lt b_q,
 ```
 
 and `r <= min(p,q,D+1)`, every `r` by `r` minor of the matrix `[(a_i+b_j)^D]`, with its rows and columns in increasing order, is nonzero and has sign `(-1)^(r(r-1)/2)`.
@@ -234,7 +234,7 @@ has a constant-free program of length at most `2n`, is squarefree, and has exact
 For a nontrivial cut, the smaller dimension is an even number `r=2^min(|A|,|B|)`. For the coefficient tensor, choose any `r` sorted row and column indices containing zero on both sides. Relative to the binomial matrix in Theorem 3.3, only the top-left entry is decreased by one. If `M` is the original square submatrix,
 
 ```math
-\det(M-E_{11})=\det(M)-\operatorname{cofactor}_{11}(M).
+\det(M-E_{11})=\det(M)-\mathop{\mathrm{cofactor}}_{11}(M).
 ```
 
 By the binomial minor lemma, the determinant has sign `sigma_r=(-1)^(r(r-1)/2)`, and its indicated cofactor has sign `sigma_(r-1)=-sigma_r` because `r` is even. Subtraction therefore adds magnitudes, giving a nonzero determinant. This proves maximal coefficient rank.

@@ -168,8 +168,8 @@ For at least three occupied copies, the still-unproved sufficient coefficient co
 
 
 ```math
-\sum_{\substack{(S_1,\ldots,S_q),(T_1,\ldots,T_q)\\
-\text{ordered partitions of }[n],\ |S_j|=|T_j|=\alpha_j}}
+\sum_{\substack{(S_1,\ldots,S_q),(T_1,\ldots,T_q)
+\\ \text{ordered partitions of }[n],\ |S_j|=|T_j|=\alpha_j}}
 \prod_{j=1}^q\left|\mathop{\mathrm{per}}B[S_j,T_j]\right|^2
 \leq
 \binom n{\alpha_1,\ldots,\alpha_q}

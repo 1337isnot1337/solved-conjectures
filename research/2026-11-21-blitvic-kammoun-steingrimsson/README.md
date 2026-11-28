@@ -27,7 +27,7 @@ Here `a,b` are nonnegative integers and `c` is a positive integer. This notation
 For each occurrence, the chain has `a` elements below its first endpoint, `c-1` elements between its endpoints and `b` elements above its last endpoint. The shared endpoints have labels ordered as `0 < y_0 < ... < y_j < 1`. All nonshared elements belong to only one occurrence. Integrating their ordered labels gives the order-polytope volume
 
 ```math
-E_j=\int_{0<y_0<\cdots<y_j<1}
+E_j=\int_{0\lt y_0<\cdots\lt y_j<1}
 \prod_{i=0}^{j-1}
 \frac{y_i^a(y_{i+1}-y_i)^{c-1}(1-y_{i+1})^b}
  {a!\,(c-1)!\,b!}\,dy_0\cdots dy_j.

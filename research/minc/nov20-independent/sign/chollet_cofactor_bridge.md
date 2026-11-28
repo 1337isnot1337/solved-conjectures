@@ -111,9 +111,9 @@ Consider the exact matrix
 
 ```math
 A=\begin{pmatrix}
-25&15&15\\
-15&20&-2\\
-15&-2&20
+25&15&15
+\\ 15&20&-2
+\\ 15&-2&20
 \end{pmatrix}.
 ```
 
@@ -142,8 +142,8 @@ Direct expansion gives
 ```math
 \begin{aligned}
 S-3Q
-&=2(x+y+z)(1+2\mathop{\mathrm{Re}}w)\\
-&=2(x+y+z)\bigl(\det A+x+y+z\bigr)\ge0.
+&=2(x+y+z)(1+2\mathop{\mathrm{Re}}w)
+\\ &=2(x+y+z)\bigl(\det A+x+y+z\bigr)\ge0.
 \end{aligned}
 \tag{4}
 ```

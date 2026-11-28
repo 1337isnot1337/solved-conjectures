@@ -31,16 +31,16 @@ The table uses only the ladder-neighborhood formula. For example, in the first r
 ## The two exceptions
 
 1. **Chosen vertices A1, A2, A6, B1.** On move five choose $A_4$. The three surviving neighborhoods are
-   - $N[B_3]=\{A_3,B_2,B_3,B_4\}$;
-   - $N[B_5]=\{A_5,B_4,B_5,B_6\}$;
-   - $N[B_7]=\{A_7,B_6,B_7\}$.
+   - $`N[B_3]=\{A_3,B_2,B_3,B_4\}`$;
+   - $`N[B_5]=\{A_5,B_4,B_5,B_6\}`$;
+   - $`N[B_7]=\{A_7,B_6,B_7\}`$.
 
    Their union is the set of all nine unchosen vertices. The middle neighborhood meets each end, while the ends are disjoint. If Player 2 takes $A_5$ or $B_5$, Player 1 takes the other, leaving the two ends and zero passes among the seven unchosen vertices. Otherwise Player 2 hits at least one end. The remaining one or two neighborhoods are nonempty and have a common vertex (if two remain, they are the middle and the opposite end), so Player 1 can finish at once.
 
 2. **Chosen vertices A2, A4, A5, B5.** On move five choose $A_1$. The surviving neighborhoods are
-   - $N[B_3]=\{A_3,B_2,B_3,B_4\}$;
-   - $N[A_7]=\{A_6,A_7,B_7\}$;
-   - $N[B_7]=\{A_7,B_6,B_7\}$.
+   - $`N[B_3]=\{A_3,B_2,B_3,B_4\}`$;
+   - $`N[A_7]=\{A_6,A_7,B_7\}`$;
+   - $`N[B_7]=\{A_7,B_6,B_7\}`$.
 
    The sole pass is $B_1$. If Player 2 hits $N[B_3]$, Player 1 answers at $A_7$, hitting both others. If Player 2 hits both corner neighborhoods, Player 1 answers at $B_3$. If Player 2 hits exactly one corner neighborhood (at $A_6$ or $B_6$), Player 1 takes $B_1$. If Player 2 takes $B_1$, Player 1 takes $A_6$. In these last two cases two disjoint neighborhoods of sizes four and three remain among the seven unchosen vertices, and the two-neighborhood endgame applies.
 

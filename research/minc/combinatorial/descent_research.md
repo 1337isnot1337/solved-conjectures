@@ -13,7 +13,7 @@ Suppose A=B⊕C, with both blocks k-regular. Write P_B=per B and P_C=per C. Each
 Choose positive entries in B and C with cofactor ratios x≤1/k and y≤1/k. Subtract one at these two positions and add one at the two cross-block positions. The resulting matrix is a feasible integer k-regular matrix. Exact expansion gives
 
 ```math
- \frac{\operatorname{per}A'-\operatorname{per}A}{P_BP_C}
+ \frac{\mathop{\mathrm{per}}A'-\mathop{\mathrm{per}}A}{P_BP_C}
  =-x-y+2xy<0,
 ```
 because 0<x,y≤1/2. This excludes every decomposable support. Consequently a minimizer has no entry equal to k: such an entry isolates its row and column as a one-by-one block. The remaining difficulty is a fully indecomposable support with entries between 0 and k−1.
@@ -74,10 +74,10 @@ This consequence has not provided the missing binary-entry conclusion. In partic
 Let D be the difference of the two perfect matchings on an alternating cycle using l distinct rows and l distinct columns. Outside those positions D is zero. The exact redistribution polynomial is
 
 ```math
- \operatorname{per}(A+tD)
+ \mathop{\mathrm{per}}(A+tD)
  =\sum_{r=0}^{l}t^r
  \sum_{\substack{I,J\text{ on the cycle}\\|I|=|J|=r}}
- \operatorname{per}D[I,J]\operatorname{per}A[I^c,J^c].
+ \mathop{\mathrm{per}}D[I,J]\mathop{\mathrm{per}}A[I^c,J^c].
 ```
 For the full l-by-l cycle, per D=1+(−1)^l. Thus the leading coefficient vanishes when l is odd; in particular a six-edge alternating-cycle redistribution is a polynomial of degree at most two. Every coefficient is an exact signed sum of permanental minors. This gives an analytic object for a longer-cycle descent proof, but does not give the required sign.
 
@@ -110,8 +110,8 @@ Let A be a binary k-regular matrix, 1 <= k < n, and put C = J-A. A sufficient st
 
 ```math
 \text{There exists a permutation matrix }Q\le C\text{ such that }
-\frac{\operatorname{per}(A+Q)}{(k+1)^n}
-\le \frac{\operatorname{per}(A)}{k^n}.
+\frac{\mathop{\mathrm{per}}(A+Q)}{(k+1)^n}
+\le \frac{\mathop{\mathrm{per}}(A)}{k^n}.
 ```
 
 Indeed, apply the statement to a minimizer at degree k. This is stronger than the original conjecture because it requires an improving degree-(k+1) supergraph of each input matrix. It is an unproved auxiliary assertion.
@@ -119,12 +119,12 @@ Indeed, apply the statement to a minimizer at degree k. This is stronger than th
 For Q uniform among the perfect matchings of C, the exact average is
 
 ```math
-\mathbb E\operatorname{per}(A+Q)
-=\frac{1}{\operatorname{per}C}
+\mathbb E\mathop{\mathrm{per}}(A+Q)
+=\frac{1}{\mathop{\mathrm{per}}C}
 \sum_{r=0}^n\sum_{|I|=|J|=r}
-\operatorname{per}A[I,J]\,
-\operatorname{per}C[I,J]\,
-\operatorname{per}C[I^c,J^c].
+\mathop{\mathrm{per}}A[I,J]\,
+\mathop{\mathrm{per}}C[I,J]\,
+\mathop{\mathrm{per}}C[I^c,J^c].
 ```
 
 Proof: expand a matching of A+Q by the rows and columns I,J on which it uses A. Its remaining edges must come from Q. Sum over that partial C-matching and then over the ways to complete it to Q inside C[I,J]. This gives the three permanent factors.
@@ -136,7 +136,7 @@ A suitable upper bound for this average would prove the auxiliary assertion. The
 Take A = I+P for an n-cycle permutation matrix P and Q = P^(-1), for n >= 3. Then per(A)=2, while
 
 ```math
-\operatorname{per}(I+P+P^{-1})=L_n+2,
+\mathop{\mathrm{per}}(I+P+P^{-1})=L_n+2,
 ```
 
 where L_n is the nth Lucas number. The Lucas term counts matchings of a cycle consisting of fixed points and adjacent transpositions; the two additional permutations traverse the entire cycle in one direction. Since `L_n` grows as `((1+sqrt(5))/2)^n`, this exceeds `2(3/2)^n` for all sufficiently large n. In fact it already does so at n=9 and n=10, and the recurrence verifies all n>=9.

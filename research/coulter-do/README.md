@@ -6,7 +6,7 @@ Issue: [#88](https://github.com/1337isnot1337/solved-conjectures/issues/88).
 
 ## Target and sources
 
-The target is Conjecture C, equivalently Conjectures 4.21 and 4.22, of [Coulter–Do, arXiv:2506.04002v1](https://arxiv.org/html/2506.04002v1). For every nonnegative half-integer genus, every positive profile, and every real parameter $b\notin\{0,-1\}$, the connected $bt$-monotone Hurwitz polynomial is conjectured to have only real zeros. Increasing any profile part by one is conjectured to give an interlacing polynomial.
+The target is Conjecture C, equivalently Conjectures 4.21 and 4.22, of [Coulter–Do, arXiv:2506.04002v1](https://arxiv.org/html/2506.04002v1). For every nonnegative half-integer genus, every positive profile, and every real parameter $`b\notin\{0,-1\}`$, the connected $bt$-monotone Hurwitz polynomial is conjectured to have only real zeros. Increasing any profile part by one is conjectured to give an interlacing polynomial.
 
 The paper's separate Conjecture 5.4(a), about commuting deformed Jucys–Murphy operators, has a previously published counterexample and is not a target here. See [LITERATURE.md](LITERATURE.md) for the audit and [PARAMETER.md](PARAMETER.md) for the full reduction.
 

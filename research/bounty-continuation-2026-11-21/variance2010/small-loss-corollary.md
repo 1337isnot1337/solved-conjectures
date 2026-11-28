@@ -55,10 +55,10 @@ Since $`H^2\preceq\|H\|_{\mathrm{op}}H`$, equation (2) and Taylor's integral rem
 \begin{aligned}
 V_Y(Y-H)
 &=\int_0^1(1-t)\,
-  \nabla^2\overline p(Y-tH)[H,H]\,dt\\
-&\le3\|H\|_{\mathrm{op}}
-  \int_0^1(1-t)\phi(t)\,dt\\
-&\le\frac32\|H\|_{\mathrm{op}}\,
+  \nabla^2\overline p(Y-tH)[H,H]\,dt
+\\ &\le3\|H\|_{\mathrm{op}}
+  \int_0^1(1-t)\phi(t)\,dt
+\\ &\le\frac32\|H\|_{\mathrm{op}}\,
   \langle H,\overline P(Y)\rangle.
 \end{aligned}
 \tag{3}
@@ -103,8 +103,8 @@ For a deterministic upper bound $`\widehat L\ge L_*`$, choose
 ```math
 \eta=
 \begin{cases}
-\min\{1/3,\sqrt{2a/(3\widehat L)}\},&\widehat L>0,\\
-1/3,&\widehat L=0.
+\min\{1/3,\sqrt{2a/(3\widehat L)}\},&\widehat L>0,
+\\ 1/3,&\widehat L=0.
 \end{cases}
 ```
 

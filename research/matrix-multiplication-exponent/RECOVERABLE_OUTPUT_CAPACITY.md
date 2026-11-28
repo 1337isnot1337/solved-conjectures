@@ -31,7 +31,7 @@ restrictions or degenerations
 U_{ABCD}(c_n)\,(T')^{\otimes n}\ \unrhd
 T_{p,M}^{\otimes n},\qquad
 \limsup_{n\longrightarrow\infty}c_n^{1/n}\le f^{-1},
-\quad 0<f\le1.                                           \tag{1}
+\quad 0\lt f\le1.                                           \tag{1}
 ```
 
 Then necessarily
@@ -120,7 +120,7 @@ low-degree covering space has dimension at most
 Put
 
 ```math
-\gamma_m=\inf_{0<t<1}t^{-2/3}(1+mt+t^2).
+\gamma_m=\inf_{0\lt t<1}t^{-2/3}(1+mt+t^2).
 ```
 
 For each fixed m, gamma_m < m+2, because the logarithmic derivative

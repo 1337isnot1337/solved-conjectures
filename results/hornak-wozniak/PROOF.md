@@ -19,7 +19,7 @@ q_l=\left\lfloor x_l/i\right\rfloor,\quad u_l=x_l\bmod i,
 h_l=\left\lfloor x_l/j\right\rfloor,\quad v_l=x_l\bmod j.
 ```
 
-If $b_l$ pieces of size $j$ go in arm $l$, the number of size-$i$ pieces it can still accommodate is
+If $b_l$ pieces of size $j$ go in arm $l$, the number of size-$`i`$ pieces it can still accommodate is
 
 ```math
 q_l-b_l-\left\lceil (b_l-u_l)/i\right\rceil .
@@ -45,13 +45,13 @@ For a partition with $a\le i$, each flooring term is either zero or one. Produci
 
 Let the arm capacities be their full orders minus one, and let $n=1+\sum_l x_l$. Let $r(k)\in[1,k]$ represent $n$ modulo $k$. For a modulus $k$ let $\gamma_k$ be the quotient on dividing the sum of the arm residues modulo $k$ by $k$, so this sum equals $r(k)-1+\gamma_k k$. The first admissibility test gives $\gamma_i\le1$ for every index $i$ needed in Theorems 9 and 10. We also have $\gamma_j\le1$ in the same range. At the upper endpoint $j=a_{q-2}+a_{q-1}-1$, the two shorter regular arms contribute $j-1$, the possible one-edge arm contributes one, and the longest arm contributes at most $j-1$.
 
-Suppose a partition into sizes $i,j$ with at least one size-$j$ part exists. Reserve one of the latter for the centre. Among these partitions the smallest possible $b$ is $r(i)-1$ and the corresponding budget is $K=1-\gamma_i\ge0$. All budgets are therefore nonnegative, so (1) reduces the problem to the partition with the largest $b$. At that endpoint
+Suppose a partition into sizes $i,j$ with at least one size-$`j`$ part exists. Reserve one of the latter for the centre. Among these partitions the smallest possible $b$ is $r(i)-1$ and the corresponding budget is $K=1-\gamma_i\ge0$. All budgets are therefore nonnegative, so (1) reduces the problem to the partition with the largest $b$. At that endpoint
 
 ```math
 a=j-r(j),\qquad b=\sum_l h_l-a+\gamma_j .
 ```
 
-The nonnegative budget implies that $\sum_l q_l\ge a$. If $\gamma_j=0$, (2) permits the required number of size-$j$ parts for any assignment of the size-$i$ parts. If $\gamma_j=1$, condition 5 of Theorem 12 applies, since this partition has $a\le i$. It gives an arm with $v_l\ge r(j)$ and $q_l+v_l\ge j$. By (2), put at least $j-v_l\le a$ smaller pieces there to produce one carry. This accommodates all parts of the endpoint partition, proving the claim for every partition in this class.
+The nonnegative budget implies that $\sum_l q_l\ge a$. If $\gamma_j=0$, (2) permits the required number of size-$`j`$ parts for any assignment of the size-$`i`$ parts. If $\gamma_j=1$, condition 5 of Theorem 12 applies, since this partition has $a\le i$. It gives an arm with $v_l\ge r(j)$ and $q_l+v_l\ge j$. By (2), put at least $j-v_l\le a$ smaller pieces there to produce one carry. This accommodates all parts of the endpoint partition, proving the claim for every partition in this class.
 
 ## 3. Three regular arms and one smaller extra part
 
@@ -60,7 +60,7 @@ Here $i\ge2$ and we have three regular arm capacities $x_1,x_2,x_3$, each at lea
 Set $U=\sum_l u_l$ and $V=\sum_l v_l$, with sums over the three regular arms. The admissibility tests on the residues at $i$ and $j$ give
 
 ```math
-U+\lambda-\max_l u_l<i,\qquad V+\lambda-\max_l v_l<j. \tag{3}
+U+\lambda-\max_l u_l\lt i,\qquad V+\lambda-\max_l v_l\lt j. \tag{3}
 ```
 
 Indeed, tests 1 and 2 at a modulus $k$ say that the sum of the arm residues other than a largest is less than $k$. For four arms and $k\ge2$, the residue of the one-edge arm is 1. A largest residue can be taken among the three regular arms unless they are all zero, in which case the corresponding inequality in (3) holds directly. Both $i$ and $j$ lie within the admissibility test range when there is a smaller extra part in Theorems 9 and 10.
@@ -77,17 +77,17 @@ In particular $d_l\ge0$, and the arm can produce a carry in (2) exactly when $w_
 x_l-(j-v_l)i=(w_l-i)j. \tag{4}
 ```
 
-Define $r=V+\lambda-i$. When $r\gt0$, the partition without $m$ with the largest count of size-$j$ parts has $a_0=j-r$ smaller parts and $\sum_l h_l+2-a_0$ bigger parts including the centre. It exists precisely when $\sum_l w_l+\lambda\ge2i$. When it exists, Section 2 and (2) show that there is an arm $p$ with
+Define $r=V+\lambda-i$. When $r\gt0$, the partition without $m$ with the largest count of size-$`j`$ parts has $a_0=j-r$ smaller parts and $\sum_l h_l+2-a_0$ bigger parts including the centre. It exists precisely when $\sum_l w_l+\lambda\ge2i$. When it exists, Section 2 and (2) show that there is an arm $p$ with
 
 ```math
 v_p\ge r,\qquad w_p\ge i . \tag{5}
 ```
 
-All size-$i$ and size-$j$ parts outside the centre of that partition belong to regular arms, so the existence of an optional one-edge arm does not change (5).
+All size-$`i`$ and size-$`j`$ parts outside the centre of that partition belong to regular arms, so the existence of an optional one-edge arm does not change (5).
 
-### The endpoint with the most size-$j$ parts
+### The endpoint with the most size-$`j`$ parts
 
-For fixed $m$, assume at least one partition in the required class exists. At the endpoint with the largest count of size-$j$ parts, put
+For fixed $m$, assume at least one partition in the required class exists. At the endpoint with the largest count of size-$`j`$ parts, put
 
 ```math
 \rho=\left\lceil (V+1+\lambda-m)/j\right\rceil,qquad
@@ -95,11 +95,11 @@ a=\rho j-(V+1+\lambda-m),\qquad
 b+1=\sum_l h_l+\rho-a .
 ```
 
-Here $0\le a\le i$, $b+1\ge1$, and $\rho\in\{0,1,2\}$ by (3) and $1\le m\lt i$. If $m$ goes in arm $l$, its size-$j$ quotient decreases by $1$ exactly when $v_l\lt m$. Thus (2) needs at least $\rho-1+\mathbf 1_{v_l\lt m}$ carries. Write $H=\sum_l h_l$. Existence of the partition gives $H\ge a+1-\rho$.
+Here $0\le a\le i$, $b+1\ge1$, and $`\rho\in\{0,1,2\}`$ by (3) and $1\le m\lt i$. If $m$ goes in arm $l$, its size-$`j`$ quotient decreases by $1$ exactly when $v_l\lt m$. Thus (2) needs at least $\rho-1+\mathbf 1_{v_l\lt m}$ carries. Write $H=\sum_l h_l$. Existence of the partition gives $H\ge a+1-\rho$.
 
-**Case $\rho=0$.** All $v_l\lt m$. Subtracting $m$ from any arm leaves at least $H-1\ge a$ slots for the size-$i$ parts, since $x_l-m\ge (h_l-1)j$. No carry is needed.
+**Case $\rho=0$.** All $v_l\lt m$. Subtracting $m$ from any arm leaves at least $H-1\ge a$ slots for the size-$`i`$ parts, since $x_l-m\ge (h_l-1)j$. No carry is needed.
 
-**Case $\rho=1$.** We have $H\ge a$. If some $v_l\ge m$, put $m$ there, leaving $x'_l\ge h_l j$, so there are at least $H$ slots for the size-$i$ parts and no carry is needed. Suppose all $v_l\lt m$. We will find an arm $l$ with $v_l\ge r$ and $w_l\ge m$. Subtracting $m$ there leaves $x'_l\ge i h_l$, and the wrapped size-$j$ residue is $v'_l=v_l+j-m$. The new carry costs $m-v_l\le a=m-r$ smaller parts. This many fit in the arm because $h_l\ge m-v_l$. Thus (2) gives feasibility.
+**Case $\rho=1$.** We have $H\ge a$. If some $v_l\ge m$, put $m$ there, leaving $x'_l\ge h_l j$, so there are at least $H$ slots for the size-$`i`$ parts and no carry is needed. Suppose all $v_l\lt m$. We will find an arm $l$ with $v_l\ge r$ and $w_l\ge m$. Subtracting $m$ there leaves $x'_l\ge i h_l$, and the wrapped size-$`j`$ residue is $v'_l=v_l+j-m$. The new carry costs $m-v_l\le a=m-r$ smaller parts. This many fit in the arm because $h_l\ge m-v_l$. Thus (2) gives feasibility.
 
 To find such an arm, if $r\gt0$ and $\sum_l w_l+\lambda\ge2i$, use (5). In the other cases, suppose no arm satisfies both bounds. Every arm with $v_l\ge r$ then has $w_l\lt m$. If an arm has $v_l\lt r$, then $r\gt0$ and $H+V+\lambda\le2i-1$, giving $w_l\le H+r-1\le i-2$. Hence $w_l\lt i$ for all arms, so $u_l=w_l$. We have
 ```math
@@ -117,11 +117,11 @@ for the remaining arm $k$, whose $v_k\lt m\lt i$. There is still room for at lea
 ```math
 U+\lambda=H+V+\lambda-i\ge i+m.
 ```
-This would force $\max_l u_l\gt m$ by (3). All possibilities have now been covered, proving feasibility at the largest count of size-$j$ parts.
+This would force $\max_l u_l\gt m$ by (3). All possibilities have now been covered, proving feasibility at the largest count of size-$`j`$ parts.
 
-### The endpoint with the fewest size-$j$ parts
+### The endpoint with the fewest size-$`j`$ parts
 
-Put $R=\lfloor(U+\lambda-m)/i\rfloor$. At the endpoint with the smallest count of size-$j$ parts, the count outside the centre is $b=U+\lambda-m-Ri$. The budget after placing $m$ in arm $l$ is
+Put $R=\lfloor(U+\lambda-m)/i\rfloor$. At the endpoint with the smallest count of size-$`j`$ parts, the count outside the centre is $b=U+\lambda-m-Ri$. The budget after placing $m$ in arm $l$ is
 
 ```math
 K=1-R-\mathbf 1_{u_l\lt m} .

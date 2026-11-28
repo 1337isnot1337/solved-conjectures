@@ -178,10 +178,10 @@ The second quantity is real because $`K`$ is Hermitian, even though both the eig
 \begin{aligned}
 |k|
 &\le2\sum_{j=1}^{n-1}\sqrt{j(j+\beta-1)}
-                   |v_j|\,|v_{j-1}|\\
-&\le\sum_{j=1}^{n-1}
-  \bigl(j|v_j|^2+(j+\beta-1)|v_{j-1}|^2\bigr)\\
-&=2d+\beta-(n+\beta-1)|v_{n-1}|^2
+                   |v_j|\,|v_{j-1}|
+\\ &\le\sum_{j=1}^{n-1}
+  \bigl(j|v_j|^2+(j+\beta-1)|v_{j-1}|^2\bigr)
+\\ &=2d+\beta-(n+\beta-1)|v_{n-1}|^2
  \le2d+\beta.
 \end{aligned}
 \tag{10}
@@ -205,7 +205,7 @@ z+\frac\beta2
 Here $`\mathop{\mathrm{Im}} u<0`$. Since $`\mathop{\mathrm{Im}} z>0`$, the reciprocal-segment lemma applies to the bracket in (11), so
 
 ```math
-\left|z+\frac\beta2\right|<c
+\left|z+\frac\beta2\right|\lt c
  \le n-1+\frac\beta2.
 ```
 

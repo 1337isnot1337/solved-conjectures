@@ -51,8 +51,8 @@ matroid $N$. Let $M$ be the cycle matroid of a minimum-edge graph
 counterexample. Its direct-sum factors are graphic, and the three
 evaluations multiply over direct sums, so $M$ is connected. The elementary
 reductions in Chen, Jin, and Ma, §5 apply to $M$: each element belongs to
-one pair, series or parallel. The series-side argument can use $M^*$,
-because the dual of each proper minor of $M^*$ is a proper minor of $M$ and
+one pair, series or parallel. The series-side argument can use $`M^*`$,
+because the dual of each proper minor of $`M^*`$ is a proper minor of $M$ and
 satisfies the same product inequality whenever it is loopless and coloopless.
 
 Let $M_1$ result from deleting one element of a parallel pair and let $e$
@@ -73,9 +73,9 @@ gives the evaluation triples
 
 ```math
 \begin{array}{c|ccc}
- & a & c & t\\
-M_1 & a(D)+a(C) & c(C)(1+r) & t(C)(q+1)\\
-M & a(D)+a(C) & c(C)(3+r) & t(C)(q+2).
+ & a & c & t
+\\ M_1 & a(D)+a(C) & c(C)(1+r) & t(C)(q+1)
+\\ M & a(D)+a(C) & c(C)(3+r) & t(C)(q+2).
 \end{array}
 ```
 
@@ -86,7 +86,7 @@ those two minors gives, respectively,
 ```math
 r>\frac{2q^2+2q-1}{2q+3},
 \qquad
-(1+x)d<xs.
+(1+x)d\lt xs.
 ```
 
 The second inequality implies $r<s/2-3$ since $x\le1$. The difference of

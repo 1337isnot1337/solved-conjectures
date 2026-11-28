@@ -18,15 +18,15 @@ after deleting the two endpoint vertices none is active. With
 b=(r-1)! and a=(r-1)b, this gives
 
 ```math
-\operatorname{per}H=r b^f a^{(r-1)f},\qquad
-\operatorname{per}H(s\mid t)=a^{rf}.
+\mathop{\mathrm{per}}H=r b^f a^{(r-1)f},\qquad
+\mathop{\mathrm{per}}H(s\mid t)=a^{rf}.
 ```
 
 Normalizing H by r gives cofactor/permanent ratio (r-1)^f. Direct calculation
 of the flat penultimate coefficient gives
 
 ```math
-q_{n-1}/q_n=\sigma_{n-1}(A)/(n^2\operatorname{per}A).
+q_{n-1}/q_n=\sigma_{n-1}(A)/(n^2\mathop{\mathrm{per}}A).
 ```
 
 At r=3,f=16, the single distinguished cofactor therefore gives a lower

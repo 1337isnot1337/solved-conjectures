@@ -20,7 +20,7 @@ Write $d=\sum_i\mu_i$, let $n$ be the number of indexed parts, and put $R=d+2g-2
 ```math
 W_\mu(u,t)=\frac{1}{d!}\sum_{\lambda\vdash d}
  f^\lambda\chi^\lambda_\mu
- \prod_{c\in\operatorname{cont}(\lambda)}
+ \prod_{c\in\mathop{\mathrm{cont}}(\lambda)}
  \frac{1-(1-t)cu}{1-cu}.
 ```
 
@@ -49,7 +49,7 @@ All poles come from reciprocal nonzero integer contents. At $u=1/(d-1)$, only th
 L_d(t)=t\prod_{j=1}^{d-2}(d-1-j+jt).
 ```
 
-For the next positive pole put $k=d-2$ and let $m_1$ count the fixed points. Only $(d)$ and $(d-1,1)$ contribute within the size-$d$ character sum. Among proper cycle partitions, only a block of size $d-1$ together with an isolated fixed point contributes. There are exactly $m_1$ such choices, each with Möbius coefficient −1; its size-one generating function is 1.
+For the next positive pole put $k=d-2$ and let $m_1$ count the fixed points. Only $(d)$ and $(d-1,1)$ contribute within the size-$`d`$ character sum. Among proper cycle partitions, only a block of size $d-1$ together with an isolated fixed point contributes. There are exactly $m_1$ such choices, each with Möbius coefficient −1; its size-one generating function is 1.
 
 After removing the factor $1-ku$, let
 
@@ -118,7 +118,7 @@ This is a mathematical and source-scope audit. It does not certify that a comple
 
 ## 6. Independent exact initial reversal
 
-Take the indexed profile $(2,2)$, so $d=4$, $n=2$ and the source factorization length is $R=4+2g$. Both genera zero and one are in the defined domain. Fix the permutation $(1\,2)(3\,4)$.
+Take the indexed profile $(2,2)$, so $d=4$, $n=2$ and the source factorization length is $R=4+2g$. Both genera zero and one are in the defined domain. Fix the permutation $`(1\,2)(3\,4)`$.
 
 The two polynomials below are already printed in the authors' earlier [MATRIX note, *Topological Narayana polynomials and interlacing conjectures*, page 5](https://www.matrix-inst.org.au/wp_Matrix2016/wp-content/uploads/2023/07/Coulter.pdf), in the row for $(2,2)$. I checked that table directly. The resulting initial reversal is therefore an elementary consequence of prior source data, not a claimed new numerical discovery or a separate novel resolution.
 

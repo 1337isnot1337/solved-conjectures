@@ -25,7 +25,7 @@ where $R(T)$ is tensor rank. Indeed, every nonzero tensor restricts to $1$, and 
 
 A **normalized spectral point** is a cover functional satisfying $F(U_I(r))=r$ for every positive integer $r$. The first lemma proves that it is then additive under direct sum, so this definition agrees with the usual Strassen definition. Conversely, an additive, multiplicative, restriction-monotone function normalized on diagonal tensors satisfies the cover inequality: a cover of $S$ by $T_1,\ldots,T_s$ gives a restriction from their direct sum to $S$ by adding the local block maps.
 
-For a map of party sets $\pi:I'\to I$, write $\pi_*T$ for regrouping a tensor according to $\pi$. For an inclusion $\iota:I\hookrightarrow I'$, write $\iota_*T$ for padding $T$ with one-dimensional factors at the new parties. Regrouping preserves products, restrictions, and covers. Padding is not assumed to preserve direct sums.
+For a map of party sets $\pi:I'\to I$, write $`\pi_*T`$ for regrouping a tensor according to $\pi$. For an inclusion $\iota:I\hookrightarrow I'$, write $`\iota_*T`$ for padding $T$ with one-dimensional factors at the new parties. Regrouping preserves products, restrictions, and covers. Padding is not assumed to preserve direct sums.
 
 ## Lemma 1: full normalization implies additivity
 
@@ -59,7 +59,7 @@ At least one of these $n+1$ nonnegative binomial terms is at least their mean. T
 c^n\ge \frac{(a+b)^n}{n+1}.
 ```
 
-Taking $n$th roots and letting $n$ tend to infinity proves $c\ge a+b$. This also handles zero summands. Together with the cover upper bound, it proves equality. $\square$
+Taking $`n`$th roots and letting $n$ tend to infinity proves $c\ge a+b$. This also handles zero summands. Together with the cover upper bound, it proves equality. $\square$
 
 For later use, normalization at size two suffices. For a cover functional, the sequence $u(r)=F(U_I(r))$ is multiplicative and nondecreasing. If $u(2)=2$, let $m=\lfloor n\log_2 r\rfloor$. Then $2^m\le r^n<2^{m+1}$, so
 
@@ -67,7 +67,7 @@ For later use, normalization at size two suffices. For a cover functional, the s
 2^m\le u(r)^n\le2^{m+1}.
 ```
 
-Taking $n$th roots and passing to the limit gives $u(r)=r$ for every positive integer $r$.
+Taking $`n`$th roots and passing to the limit gives $u(r)=r$ for every positive integer $r$.
 
 ## Lemma 1a: classification of cover functionals by normalization
 
@@ -105,13 +105,13 @@ To see the last statement, use the diagonal tensor's label to select the word-sp
 ```math
 \begin{aligned}
 G(S)^n
-&\le\sum_k N_k^h\prod_i a_i^{k_i}\\
-&=\sum_k\left(N_k\prod_i a_i^{k_i/h}\right)^h\\
-&\le(n+1)^r\left(\sum_{i=1}^r a_i^{1/h}\right)^{hn}.
+&\le\sum_k N_k^h\prod_i a_i^{k_i}
+\\ &=\sum_k\left(N_k\prod_i a_i^{k_i/h}\right)^h
+\\ &\le(n+1)^r\left(\sum_{i=1}^r a_i^{1/h}\right)^{hn}.
 \end{aligned}
 ```
 
-For the last inequality, each parenthesized term is at most the sum of all such terms, which is $(\sum_i a_i^{1/h})^n$ by the multinomial formula, and there are at most $(n+1)^r$ types. Taking $n$th roots and letting $n$ tend to infinity proves
+For the last inequality, each parenthesized term is at most the sum of all such terms, which is $(\sum_i a_i^{1/h})^n$ by the multinomial formula, and there are at most $(n+1)^r$ types. Taking $`n`$th roots and letting $n$ tend to infinity proves
 
 ```math
 F(S)\le\sum_iF(T_i).
@@ -157,14 +157,14 @@ G(S)\le\prod_jF((\pi_j)_*S)^{\theta_j}
 \qquad G(\iota_*C)=F(C).
 ```
 
-For each old tensor $T$, the displayed upper bound gives $G(\iota_*T)\le F(T)$, because every retraction returns $T$. All values of nonzero tensors are positive. Multiplicativity and equality on $C$ therefore force equality on each of its factors. In particular,
+For each old tensor $T$, the displayed upper bound gives $`G(\iota_*T)\le F(T)`$, because every retraction returns $T$. All values of nonzero tensors are positive. Multiplicativity and equality on $C$ therefore force equality on each of its factors. In particular,
 
 ```math
 G(\iota_*U_I(2))=2,
 \qquad G(\iota_*T_j)=F(T_j)\quad(1\le j\le m).
 ```
 
-Contracting the extra parties shows that $U_{I'}(2)$ restricts to $\iota_*U_I(2)$. Every regrouping $(\pi_j)_*U_{I'}(2)$ is equivalent to $U_I(2)$: at each old party the vectors with all grouped indices equal form a two-element independent family. Consequently,
+Contracting the extra parties shows that $U_{I'}(2)$ restricts to $`\iota_*U_I(2)`$. Every regrouping $`(\pi_j)_*U_{I'}(2)`$ is equivalent to $U_I(2)$: at each old party the vectors with all grouped indices equal form a two-element independent family. Consequently,
 
 ```math
 2\le G(U_{I'}(2))
@@ -173,7 +173,7 @@ Contracting the extra parties shows that $U_{I'}(2)$ restricts to $\iota_*U_I(2)
 
 The size-two observation following Lemma 1 gives $G(U_{I'}(r))=r$ for every $r$. Lemma 1 then makes $G$ additive. This proves normalized extension with any prescribed finite list of old values.
 
-To preserve all old values at once, use compactness. Choose one representative of each tensor equivalence class on $I'$. Place the coordinate of every nonzero tensor $S$ in the compact interval $[1,R(S)]$, and fix the zero coordinate to zero. This is a set-indexed product of compact spaces. The cover-functional axioms, normalization, the asserted upper bound for each $S$, and each desired equality $G(\iota_*T)=F(T)$ are closed conditions: each is an equality or inequality in finitely many coordinates using continuous operations.
+To preserve all old values at once, use compactness. Choose one representative of each tensor equivalence class on $I'$. Place the coordinate of every nonzero tensor $S$ in the compact interval $[1,R(S)]$, and fix the zero coordinate to zero. This is a set-indexed product of compact spaces. The cover-functional axioms, normalization, the asserted upper bound for each $S$, and each desired equality $`G(\iota_*T)=F(T)`$ are closed conditions: each is an equality or inequality in finitely many coordinates using continuous operations.
 
 The finite-preservation construction proves the finite-intersection property for this family of closed conditions. Compactness supplies one function satisfying all of them. It is the required $F'$. $\square$
 
@@ -193,7 +193,7 @@ d_{BD}\le\tfrac12d_{AB},\qquad
 d_{CD}\le\tfrac12(d_{CA}+d_{CB})
 ```
 
-for every old party $C$. Wire distances obey the triangle inequality, so the first two inequalities are equalities. This construction retains $F'(U_{I'}(r))=F'(\iota_*U_I(r))=r$.
+for every old party $C$. Wire distances obey the triangle inequality, so the first two inequalities are equalities. This construction retains $`F'(U_{I'}(r))=F'(\iota_*U_I(r))=r`$.
 
 The result repairs normalization; it does not give a perimeter bound of two. The Euclidean scalar model in the companion note already admits ordinary midpoints while retaining full-unit charge one.
 
@@ -204,8 +204,8 @@ Theorem 2 has the form
 ```math
 \forall\text{ finite retraction laws }\mathcal L,
 \quad\exists F'_{\mathcal L}
-\quad\forall S:\ 
-F'_{\mathcal L}(S)
+\quad\forall S:
+\ F'_{\mathcal L}(S)
 \le\prod_jF((\pi_j)_*S)^{\theta_j}.
 ```
 

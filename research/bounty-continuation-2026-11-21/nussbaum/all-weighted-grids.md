@@ -32,7 +32,7 @@ Otherwise the sum of the $`b`$ hit probabilities exceeds one. Complementation pe
 
 Use the mean row-column Hamming distance $`d`$ and the per-coordinate quantities $`u,v,w,S,B`$ of the [weighted-grid entropy proof](weighted-grid-entropy.md). Here $`u,v`$ are respectively the row and column one-frequencies, $`w=u(1-v)+(1-u)v`$ and $`\sum w=d`$. In any counterexample, its matching and entropy inequalities give
 ```math
-(1-1/a)L\le d<L,\qquad \sum S<L/a,\qquad n-M-d\ge\sum B. \tag{3}
+(1-1/a)L\le d\lt L,\qquad \sum S\lt L/a,\qquad n-M-d\ge\sum B. \tag{3}
 ```
 Its puncturing inequality also gives $`(1-1/a)L\le(1-1/D_{\max})d`$, where $`D_{\max}`$ is the greatest distance between two row anchors. In particular $`D_{\max}>a`$ is necessary in a counterexample.
 
@@ -56,7 +56,7 @@ n-M\ge (8/5)d-4\sum S \ge (8/5-28/(5a))L.
 ```
 Consequently a counterexample with $`3a>28`$ must satisfy
 ```math
-b^{3a-28}<a^{5a}. \tag{6}
+b^{3a-28}\lt a^{5a}. \tag{6}
 ```
 If $`a\ge23`$ and $`L\ge3l`$, this is impossible, since $`(3a-28)/(5a)\ge1/3`$. If $`L<3l`$, (1) gives $`D_{\max}<5l\le a`$, again impossible. To see the last inequality, $`23^5<2^{23}`$ and $`(1+1/a)^5<2`$ for every integer $`a\ge23`$, so it persists by induction. This proves the theorem for every $`a\ge23`$.
 

@@ -109,10 +109,10 @@ Use independent coordinates lambda_1,...,lambda_k and define Gamma by
 
 ```math
 \begin{aligned}
-E_{b^{(j)}}(x,y,c)&=0 &&(1\le j\le k),\\
-\sum_{j=1}^k\lambda_j\frac{\partial E_{b^{(j)}}}{\partial c_a}&=0
- &&(1\le a\le p),\\
-\sum_{j=1}^k\lambda_j\frac{\partial E_{b^{(j)}}}{\partial y}&=1.
+E_{b^{(j)}}(x,y,c)&=0 &&(1\le j\le k),
+\\ \sum_{j=1}^k\lambda_j\frac{\partial E_{b^{(j)}}}{\partial c_a}&=0
+ &&(1\le a\le p),
+\\ \sum_{j=1}^k\lambda_j\frac{\partial E_{b^{(j)}}}{\partial y}&=1.
 \end{aligned}                                                     \tag{6}
 ```
 
@@ -135,8 +135,8 @@ Let Z' be any irreducible component of Gamma, and work in its function field H=C
 ```math
 \begin{aligned}
 0
-&=\sum_j\lambda_j\,dE_{b^{(j)}}\\
-&=\sum_{i=1}^n
+&=\sum_j\lambda_j\,dE_{b^{(j)}}
+\\ &=\sum_{i=1}^n
 \left(\sum_j\lambda_j
        \frac{\partial E_{b^{(j)}}}{\partial x_i}\right)dx_i
  +dy.

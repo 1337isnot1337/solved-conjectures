@@ -12,7 +12,7 @@ There is a common quotient $Q$ and epimorphisms $\pi_i:G_i\to Q$ such that
 L=\{(g_1,g_2):\pi_1(g_1)=\pi_2(g_2)\}.
 ```
 
-Indeed put $K_1=\{x:(x,1)\in L\}$ and define $K_2$ on the other side. Surjectivity onto each factor makes $K_i$ normal in $G_i$ and the correspondence $(g_1K_1,g_2K_2)$ for $(g_1,g_2)\in L$ is the graph of an isomorphism of quotients. This is [Goursat's lemma](https://doi.org/10.2478/tatra.v64i0.374).
+Indeed put $`K_1=\{x:(x,1)\in L\}`$ and define $K_2$ on the other side. Surjectivity onto each factor makes $K_i$ normal in $G_i$ and the correspondence $(g_1K_1,g_2K_2)$ for $(g_1,g_2)\in L$ is the graph of an isomorphism of quotients. This is [Goursat's lemma](https://doi.org/10.2478/tatra.v64i0.374).
 
 Here is the equivalent family of one-orbit inequalities. Take any transitive $G\le S_n$, normal subgroup $K$, and linear character $\lambda$ of $K$ invariant under conjugation by $G$. For an arbitrary coset $sK$ (represented by $s$), define
 
@@ -42,13 +42,13 @@ At $K=G$ the test is the absolute square of the ordinary linear-character bound 
 
 If $G/K$ is abelian, $\lambda$ extends to a linear character $\eta$ on $G$, and the linear-character inequality already holds on $G$, then (1) follows. Set $c(q)=\eta(s)b(q)$. For every character $\mu$ of $Q=G/K$, the unnormalized finite Fourier coefficient $\sum_q\mu(q)c(q)$ is the matrix function $d_{\eta(\mu\circ\pi)}^G(B)$. It is nonnegative for PSD input by Schur's matrix-function inequality (equivalently, it is a positive multiple of a squared projection of a Gram tensor) and is at most $\mathop{\mathrm{per}} B$ by the assumed local inequality. Parseval, with the factor $1/|Q|$ on the Fourier side, implies (1).
 
-Consequently, a two-orbit counterexample with an abelian common quotient and both kernel characters extendible would force a linear-character counterexample on one of its individual orbits. The extension assumption is genuine. For example, take $G$ to be the quaternion group of order eight, $K=\{1,-1\}$, and let $\lambda(-1)=-1$. Then $K=[G,G]$, so $\lambda$ cannot extend to a linear character of $G$. Nevertheless the proof of necessity constructs a linear character on the self-fiber group which restricts to $\lambda$ on $K\times 1$. This example concerns the group mechanism only.
+Consequently, a two-orbit counterexample with an abelian common quotient and both kernel characters extendible would force a linear-character counterexample on one of its individual orbits. The extension assumption is genuine. For example, take $G$ to be the quaternion group of order eight, $`K=\{1,-1\}`$, and let $\lambda(-1)=-1$. Then $K=[G,G]$, so $\lambda$ cannot extend to a linear character of $G$. Nevertheless the proof of necessity constructs a linear character on the self-fiber group which restricts to $\lambda$ on $K\times 1$. This example concerns the group mechanism only.
 
 For completeness, the sufficiency argument also handles **arbitrary character degree** in [Lieb's formulation](https://yair-lavi.com/mincs-list/conjecture-42/) whenever each $K_i$ is central in $G_i$ and (1) holds for its central characters. On an irreducible representation of $L$, the two embedded kernels are central and act by scalar characters by Schur's lemma. Summation over each coset then gives the same product $b_1(q)b_2(q)$, multiplied by the normalized trace of the unitary representative of the chosen lift. This trace has absolute value at most one, so the same Cauchy–Schwarz bound applies. General characters follow by taking degree-weighted averages. This statement does not assume that the projective representation induced on $Q$ has dimension one.
 
 ## Parity constraints between orbits
 
-Suppose $\prod_i A_{n_i}\subseteq L\subseteq\prod_i S_{n_i}$ in their natural disjoint actions, with all $n_i\ge5$. Since the alternating factors are perfect, every linear character of $L$ is trivial on their product. Thus $L$ is the preimage of some subgroup of parity patterns $T\subseteq\{0,1\}^r$ and its character has a constant value $\chi(t)$ on each such coset. In the principal block $B_i$, the sum of the monomials of parity $e$ is
+Suppose $\prod_i A_{n_i}\subseteq L\subseteq\prod_i S_{n_i}$ in their natural disjoint actions, with all $n_i\ge5$. Since the alternating factors are perfect, every linear character of $L$ is trivial on their product. Thus $L$ is the preimage of some subgroup of parity patterns $`T\subseteq\{0,1\}^r`$ and its character has a constant value $\chi(t)$ on each such coset. In the principal block $B_i$, the sum of the monomials of parity $e$ is
 
 ```math
 p_i(e)=\frac{\mathop{\mathrm{per}}B_i+(-1)^e\det B_i}{2}\ge0.

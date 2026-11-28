@@ -31,19 +31,19 @@ assuming convergence of the asymptotic expansion.
 The ratio c_n/c_(n-1) gives
 d_n=c_n-(n+a-1)c_(n-1), including n=1. In the formal series notation this is
 
-$$
+```math
 D(z)=(1-az)N(z)-z^2N'(z).
-$$
+```
 
 The derivative is formal and the identity is established from coefficients;
 no differentiation of an asymptotic error term occurs. Subtracting the
 geometric series gives the decisive identity
 
-$$
+```math
 \frac{N(z)}{D(z)}-\frac1{1-az}
 =\frac{z^2N'(z)}{(1-az)(1-B(z))},
 \qquad B(z)=1-D(z).
-$$
+```
 
 B has zero constant term and positive coefficients at every positive
 degree. Therefore its geometric inverse is a well-defined formal series

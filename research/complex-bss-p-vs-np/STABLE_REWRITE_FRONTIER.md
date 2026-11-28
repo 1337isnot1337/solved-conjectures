@@ -61,8 +61,8 @@ After adjoining one zero equation, use the `(N+1)` by `(N+1)` matrix
 ```math
 M=
 \begin{pmatrix}
- I_N-fu & f\\
- u      & 0
+ I_N-fu & f
+ \\ u      & 0
 \end{pmatrix}.                                  \tag{5}
 ```
 

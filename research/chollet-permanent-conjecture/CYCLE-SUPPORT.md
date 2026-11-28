@@ -7,7 +7,7 @@
 Let $A$ be a complex Hermitian positive semidefinite matrix, with a support graph formed from edge blocks and cycle blocks of length at least eight, any number of each. Isolated vertices and several connected components are allowed. For every Hermitian positive semidefinite $B$ of the same order,
 
 ```math
-\operatorname{per}(A\circ B)\le\operatorname{per}(A)\prod_i b_{ii}.
+\mathop{\mathrm{per}}(A\circ B)\le\mathop{\mathrm{per}}(A)\prod_i b_{ii}.
 ```
 
 Thus Chollet’s inequality follows for this class from the permanental Hadamard inequality. It is an instance of the stronger Hadamard compression inequality of Bapat and Sunder, which fails on unrestricted matrices. Pant and Singh establish related one-point sums and inequalities for real graph Laplacians. The cycle proof here allows arbitrary complex phases and weights, and the second matrix can be any correlation matrix after normalization. Priority for this extension is provisional. [Chollet (1982)](https://doi.org/10.1080/00029890.1982.11995380) · [Drury's counterexample to unrestricted compression](https://journals.uwyo.edu/index.php/ela/article/download/1631/1631/1631) · [Pant–Singh, Proposition 1 and §5](https://arxiv.org/abs/2604.24192v2)
@@ -20,7 +20,7 @@ Let $B$ be a correlation matrix, with Gram unit vectors $w_i$. Let $z=\bigotimes
 \|z-U_e z\|^2=2(1-|b_{ij}|^2).
 ```
 
-For a product $U_1\cdots U_r$ of unitary involutions, put $a_i=\|(I-U_i)z\|$. Then
+For a product $U_1\cdots U_r$ of unitary involutions, put $`a_i=\|(I-U_i)z\|`$. Then
 
 ```math
 \left|\langle z,(I-U_1\cdots U_r)z\rangle\right|
@@ -39,7 +39,7 @@ An oriented cycle permutation is a product of the adjacent transpositions on the
 
 Normalize the diagonals of both factors to one by positive diagonal congruence. A zero diagonal in either factor gives a zero row and the inequality directly. Suppose $A$ has support exactly a cycle of length $n\ge8$. Put $x_e=|a_e|$ and $P=\prod_e x_e$. If a cycle edge is absent the support is a forest, where termwise compression holds because every nontrivial permutation cycle is a transposition. Take $e_0$ with $x_{e_0}$ minimum.
 
-The nontrivial permutation terms of $\operatorname{per}(A)$ are matchings of transpositions and the two full oriented cycles. Each transposition matching contributes a nonnegative compression difference. The one-transposition terms alone contribute $\sum_e x_e^2\delta_e$. The difference from the two cycle terms is bounded in absolute value by $2P|1-p_B|$. The estimate in §1 and weighted Cauchy–Schwarz give
+The nontrivial permutation terms of $`\mathop{\mathrm{per}}(A)`$ are matchings of transpositions and the two full oriented cycles. Each transposition matching contributes a nonnegative compression difference. The one-transposition terms alone contribute $\sum_e x_e^2\delta_e$. The difference from the two cycle terms is bounded in absolute value by $2P|1-p_B|$. The estimate in §1 and weighted Cauchy–Schwarz give
 
 ```math
 2P|1-p_B|\le
@@ -63,7 +63,7 @@ Consequently $2P\sum_{e\ne e_0}x_e^{-2}\le2(n-1)2^{-(n-4)}\le1$ for $n\ge8$. The
 
 ## 3. Gluing across cut vertices
 
-A principal submatrix of a cycle block is either the full block or has forest support, so the same first-factor property holds for every principal submatrix. Edge blocks have it directly. Suppose the support of $A$ splits at $v$, with nonzero off-diagonal cross terms only through $v$. Write the two side matrices away from $v$ as $C_1,C_2$ and the columns connecting them to $v$ as $u_1,u_2$. The PSD condition implies $u_i\in\operatorname{ran}(C_i)$ and
+A principal submatrix of a cycle block is either the full block or has forest support, so the same first-factor property holds for every principal submatrix. Edge blocks have it directly. Suppose the support of $A$ splits at $v$, with nonzero off-diagonal cross terms only through $v$. Write the two side matrices away from $v$ as $C_1,C_2$ and the columns connecting them to $v$ as $u_1,u_2$. The PSD condition implies $`u_i\in\mathop{\mathrm{ran}}(C_i)`$ and
 
 ```math
 a_{vv}\ge u_1^*C_1^\dagger u_1+u_2^*C_2^\dagger u_2.
@@ -74,9 +74,9 @@ These statements follow by testing the quadratic form on the nullspaces and mini
 For a one-point sum the permanent is
 
 ```math
-\operatorname{per}(A_1\star A_2)
-=\operatorname{per}(A_1)\operatorname{per}(C_2)
-+\operatorname{per}(C_1)\operatorname{per}(A_2).
+\mathop{\mathrm{per}}(A_1\star A_2)
+=\mathop{\mathrm{per}}(A_1)\mathop{\mathrm{per}}(C_2)
++\mathop{\mathrm{per}}(C_1)\mathop{\mathrm{per}}(A_2).
 ```
 
 A permutation cycle containing $v$ stays on one side, and the contribution in which $v$ is fixed splits according to the sum of its two diagonal entries. With $B$ normalized to have unit diagonal, Hadamard multiplication commutes with forming this one-point sum, using the two principal restrictions of $B$. Each factor in the displayed formula is nonnegative, and each compressed factor is at most the corresponding original factor by induction on the blocks. For the deletions $C_i$, use the same induction or their disconnected components. Direct sums multiply permanents, completing the proof. The argument uses Pant–Singh's one-point permanent identity and splits general PSD support through the generalized Schur complement. [Pant–Singh, Proposition 1](https://arxiv.org/abs/2604.24192v2)

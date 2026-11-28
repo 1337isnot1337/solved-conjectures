@@ -1,7 +1,7 @@
 # Prior resolution in the Lambie-Hanson construction
 
 **Priority conclusion:** do not claim a new solution to Erdős's
-exact-$\aleph_1$ almost-bipartite graphs conjecture. It is already an
+exact-$`\aleph_1`$ almost-bipartite graphs conjecture. It is already an
 immediate consequence of Chris Lambie-Hanson's published
 construction. The higher-shift proof in this directory is a
 different theorem about arbitrarily large chromatic cardinals.
@@ -33,17 +33,17 @@ finite-subgraph chromatic numbers. For an $n$-vertex subgraph with
 $n\le f(k)$, delete the first $k$ edge layers. Each layer contributes
 at most $n-1$ edges because it is a forest. The remaining subgraph
 has no odd cycle (any cycle would have length at most $n$). Hence
-$$
+```math
  h_G(n)\le k(n-1)\qquad(n\le f(k)).
-$$
+```
 
 For any function $g:\mathbb N_{\ge1}\to\mathbb N$ with $g(n)\to\infty$,
 choose $f(k)$ at least as large as every $n$ with $g(n)\le k$; this is
 a finite set for each $k$, and an arbitrary positive value works
 when it is empty. Taking $k=g(n)$ proves
-$$
+```math
  h_G(n)\le (n-1)g(n)\qquad(n\ge1),\qquad \chi(G)=\aleph_1.
-$$
+```
 In particular $g(n)=\lceil n^\epsilon\rceil-1$ gives the strict
 original bound at every $n$. This is an explicit reading of the
 existing proof, not a claim that its author stated this corollary
@@ -67,5 +67,5 @@ headline chromatic-growth statement alone.
   upper bound $C_k n^{1+1/k}$ for the ordinary $k$-shift, including
   the unit-coefficient all-orders bootstrap. It witnesses the power
   bound for chromatic numbers above any fixed cardinal; it is not
-  needed for the historical exact-$\aleph_1$ result and is not being
+  needed for the historical exact-$`\aleph_1`$ result and is not being
   presented as resolution of a new named conjecture.

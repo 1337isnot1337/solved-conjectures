@@ -19,7 +19,7 @@ integers with sum n. Let L_m be the lower-triangular all-ones matrix,
 including its diagonal. Write
 
 ```math
-D=\operatorname{diag}(L_{m_1},\ldots,L_{m_s}),
+D=\mathop{\mathrm{diag}}(L_{m_1},\ldots,L_{m_s}),
 \qquad S=C+2I_s.
 ```
 
@@ -49,10 +49,10 @@ second kind, the exact permanent formula is
 
 ```math
 \boxed{
-\operatorname{per}A(\mathbf m;C)
+\mathop{\mathrm{per}}A(\mathbf m;C)
 =\sum_{1\le k_i\le m_i}
 \left(\prod_{i=1}^s2^{m_i-k_i}{m_i\brace k_i}\right)
-\operatorname{per}C[\mathbf k].
+\mathop{\mathrm{per}}C[\mathbf k].
 }
 \tag{3}
 ```
@@ -61,10 +61,10 @@ Equivalently, allowing empty formal blocks for this generating function,
 
 ```math
 \sum_{m_1,\ldots,m_s\ge0}
-\operatorname{per}A(\mathbf m;C)
+\mathop{\mathrm{per}}A(\mathbf m;C)
 \prod_i\frac{x_i^{m_i}}{m_i!}
 =\frac1{\det\!\left(I_s-
-\operatorname{diag}\!\left(\frac{e^{2x_i}-1}{2}\right)C\right)}.
+\mathop{\mathrm{diag}}\!\left(\frac{e^{2x_i}-1}{2}\right)C\right)}.
 \tag{4}
 ```
 
@@ -96,17 +96,17 @@ The determinant lemma now yields
 ```math
 \begin{aligned}
 \det(I-YA)
-&=\left(\prod_iw_i\right)\det(I-\operatorname{diag}(q_i)S)\\
-&=\det\!\left(I-\operatorname{diag}\!\left(\frac{w_i-1}{2}\right)C\right).
+&=\left(\prod_iw_i\right)\det(I-\mathop{\mathrm{diag}}(q_i)S)
+\\ &=\det\!\left(I-\mathop{\mathrm{diag}}\!\left(\frac{w_i-1}{2}\right)C\right).
 \end{aligned}
 ```
 
 The repeated-index form of the same cycle expansion is
 
 ```math
-\det(I-\operatorname{diag}(t)C)^{-1}
+\det(I-\mathop{\mathrm{diag}}(t)C)^{-1}
 =\sum_{\mathbf k\ge0}
-\frac{\operatorname{per}C[\mathbf k]}{\prod_i k_i!}
+\frac{\mathop{\mathrm{per}}C[\mathbf k]}{\prod_i k_i!}
 \prod_i t_i^{k_i}.
 ```
 
@@ -123,7 +123,7 @@ the permanent of C with index i repeated twice, all other indices once.
 For m_i=2 and all other block sizes one, (2) and (3) give
 
 ```math
-\operatorname{per}A=2P+P_i,\qquad \det A=-2\det C.
+\mathop{\mathrm{per}}A=2P+P_i,\qquad \det A=-2\det C.
 ```
 
 Therefore this one-vertex expansion preserves the required equality
@@ -154,7 +154,7 @@ asserts that a suitable index or pair always exists.
 For C=J_s−2I_s, (1) becomes
 
 ```math
-A=J_n-2\operatorname{diag}(L_{m_1},\ldots,L_{m_s}),
+A=J_n-2\mathop{\mathrm{diag}}(L_{m_1},\ldots,L_{m_s}),
 \qquad \det A=(-2)^{n-1}(s-2).
 \tag{7}
 ```
@@ -162,7 +162,7 @@ A=J_n-2\operatorname{diag}(L_{m_1},\ldots,L_{m_s}),
 The rook polynomial of L_m has coefficients {m+1\brace m+1−k}. Hence
 
 ```math
-\operatorname{per}A
+\mathop{\mathrm{per}}A
 =\sum_{k=0}^n(-2)^k(n-k)!\,[z^k]
 \prod_{i=1}^s
 \left(\sum_{j=0}^{m_i}{m_i+1\brace m_i+1-j}z^j\right).
@@ -218,7 +218,7 @@ r^T=C(i,[s]\setminus\{i\}).
 Define
 
 ```math
-g_i(x)=\sum_{m\ge0}\operatorname{per}A_m\frac{x^m}{m!}.
+g_i(x)=\sum_{m\ge0}\mathop{\mathrm{per}}A_m\frac{x^m}{m!}.
 ```
 
 A Schur complement in (4), followed by the squarefree coefficient for
@@ -227,7 +227,7 @@ the other s−1 indices, gives the exact identity
 ```math
 \boxed{
 g_i(x)=(1-\tanh x)
-\operatorname{per}(D_i+\tanh(x)c r^T).
+\mathop{\mathrm{per}}(D_i+\tanh(x)c r^T).
 }
 \tag{9}
 ```
@@ -268,7 +268,7 @@ poles, the remainder is analytic in every disk of radius less than
 3π/2, so its coefficients are exponentially smaller. Consequently,
 
 ```math
-|\operatorname{per}A_m|
+|\mathop{\mathrm{per}}A_m|
 =\left(\frac{2|a_d|a^{-d}}{(d-1)!}+o(1)\right)
 m!\,m^{d-1}\left(\frac2\pi\right)^m
 \quad(m\equiv d\pmod2).

@@ -18,15 +18,15 @@ Write $`E,F,E^+`$ for the right-directed symbols, and $`\bar E,\bar F,\bar E^+`$
 
 ```math
 \begin{aligned}
-A&\to Aa\mid a,\\
-C&\to aC\mid bC\mid cC\mid dC\mid\varepsilon,\\
-D&\to C\#D\mid\varepsilon,\\
-E&\to FE\mathbin{\&}AcE^+\mid dC\#,\\
-E^+&\to FE\mathbin{\&}AcE^+\mid dC\#D,\\
-F&\to aFb\mid acC\#\bar E b,\\
-\bar E&\to\bar E\bar F\mathbin{\&}\bar E^+cA\mid Cd,\\
-\bar E^+&\to\bar E\bar F\mathbin{\&}\bar E^+cA\mid DCd,\\
-\bar F&\to b\bar F a\mid bECca.
+A&\to Aa\mid a,
+\\ C&\to aC\mid bC\mid cC\mid dC\mid\varepsilon,
+\\ D&\to C\#D\mid\varepsilon,
+\\ E&\to FE\mathbin{\&}AcE^+\mid dC\#,
+\\ E^+&\to FE\mathbin{\&}AcE^+\mid dC\#D,
+\\ F&\to aFb\mid acC\#\bar E b,
+\\ \bar E&\to\bar E\bar F\mathbin{\&}\bar E^+cA\mid Cd,
+\\ \bar E^+&\to\bar E\bar F\mathbin{\&}\bar E^+cA\mid DCd,
+\\ \bar F&\to b\bar F a\mid bECca.
 \end{aligned}
 ```
 

@@ -4,15 +4,21 @@ Conjecture 8.1 asks for magic positivity of every generalized parking-function p
 
 Write $P$ for the translate of $\mathfrak X_n(1,b_2,\ldots,b_n)$ by the negative all-ones vector. This is a down-closed polytope in the nonnegative orthant, meaning that $0\le y\le x\in P$ coordinatewise implies $y\in P$. Let $Q_m$ be the projection of $P$ onto any $m$ coordinates, with $Q_0$ a point. For all nonnegative integers $c$,
 
-$$E_{\mathfrak X_n(1+c,b_2,\ldots,b_n)}(t)=\sum_{j=0}^n {n\choose j}c^j t^j E_{Q_{n-j}}(t).\tag{1}$$
+```math
+E_{\mathfrak X_n(1+c,b_2,\ldots,b_n)}(t)=\sum_{j=0}^n {n\choose j}c^j t^j E_{Q_{n-j}}(t).\tag{1}
+```
 
 In particular, for $0\le i\le n$,
 
-$$\mu_i(\mathfrak X_n(1+c,b_2,\ldots,b_n))=\sum_{j=0}^i {n\choose j}c^j\mu_{i-j}(Q_{n-j}).\tag{2}$$
+```math
+\mu_i(\mathfrak X_n(1+c,b_2,\ldots,b_n))=\sum_{j=0}^i {n\choose j}c^j\mu_{i-j}(Q_{n-j}).\tag{2}
+```
 
 Here each projected polynomial is expanded in its ambient degree, and $E_{Q_0}=1$. For $m\ge1$, $Q_m$ is the down-shifted parking polytope with parameters
 
-$$\left(1+\sum_{i=2}^{n-m+1} b_i,\ b_{n-m+2},\ldots,b_n\right).\tag{3}$$
+```math
+\left(1+\sum_{i=2}^{n-m+1} b_i,\ b_{n-m+2},\ldots,b_n\right).\tag{3}
+```
 
 **Proof of the geometric identities.** For general $\mathbf b$, put $u_j=b_1+\cdots+b_j-1$. The translated polytope is the downward closure of the convex hull of the coordinate permutations of $(u_1,\ldots,u_n)$. Indeed each integer parking vector, after shifting, lies in a coordinate box below such a permutation; conversely all vertices of each such box are shifted parking vectors. The convex hull of the union of the boxes is downward closed, as follows by decreasing coordinates in a convex combination. Increasing the first parameter by $c$ adds $c$ to each side of every box; the union of these enlarged boxes is the old union plus $[0,c]^n$. Taking convex hulls commutes with addition of this fixed convex cube. Projecting onto $m$ coordinates gives the analogous boxes on the largest $m$ side lengths $u_{n-m+1},\ldots,u_n$, since every other choice of side lengths is dominated by a permutation of these. Taking their consecutive differences gives (3).
 
@@ -22,7 +28,9 @@ For a down-closed compact convex set $V$, a fiber parallel to a coordinate axis 
 
 **Unconditional finite decision for a fixed tail.** For $i\ge1$ let $p_i(c)$ denote the right side of (2), and let $a_{ij}=[c^j]p_i(c)$. Because every projected Ehrhart polynomial has constant term one, $a_{ii}=\binom ni>0$. Define
 
-$$C=2+\left\lceil\max_{1\le i\le n}\ \max_{0\le j<i}\frac{|a_{ij}|}{\binom ni}\right\rceil.$$
+```math
+C=2+\left\lceil\max_{1\le i\le n}\ \max_{0\le j\lt i}\frac{|a_{ij}|}{\binom ni}\right\rceil.
+```
 
 For every real $c\ge C$, the leading term exceeds the sum of the absolute values of the others, by the geometric-series bound $\sum_{j<i}c^j<c^i/(c-1)$. Thus every magic coefficient is strictly positive for every integer $c\ge C$. Only $0\le c<C$ remain to test on that ray. The arbitrary-tail boundary assertion at $c=0$ remains open.
 

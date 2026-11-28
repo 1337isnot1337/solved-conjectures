@@ -82,8 +82,8 @@ The complete P-to-Q coefficient is
 \mathcal O_{ab}^{ij}
 ={}&\sum_{\ell,r,t}
        (U_n)_{a\ell}x_{it}y_{tj}d_{rb}
-                    (R_{b,t}^{ij})_{\ell r}\\
-&+\delta_{bj}\sum_{\ell,t}
+                    (R_{b,t}^{ij})_{\ell r}
+\\ &+\delta_{bj}\sum_{\ell,t}
        (U_n)_{a\ell}x_{it}
           \sum_z(F_zS_z)_{\ell t}v_{j,t}^{z,ij}.
 \end{aligned}

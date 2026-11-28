@@ -154,9 +154,9 @@ Also,
 ```math
 \begin{aligned}
 0\le c^2-F_N
-&\le a+2t+2LE\\
-&\le a+K_Ft+2L\sqrt{at}\\
-&\le K_F'a.
+&\le a+2t+2LE
+\\ &\le a+K_Ft+2L\sqrt{at}
+\\ &\le K_F'a.
 \end{aligned}
 \tag{9}
 ```
@@ -166,9 +166,9 @@ Apply balanced global alignment to $`N`$, then use the Frobenius-nearest propert
 ```math
 \begin{aligned}
 \|M-M_{\mathcal C}\|_F^2
-&\le2L^2E^2+2C_{\mathrm g}(c^2-F_N)\\
-&\le2L^2(K_e+1)^2a^2+2C_{\mathrm g}K_F'a\\
-&\le C_*a.
+&\le2L^2E^2+2C_{\mathrm g}(c^2-F_N)
+\\ &\le2L^2(K_e+1)^2a^2+2C_{\mathrm g}K_F'a
+\\ &\le C_*a.
 \end{aligned}
 \tag{10}
 ```

@@ -11,7 +11,7 @@ results with no external review, Lean verification, or priority claim.
 ## Target and source check
 
 For every fixed finite simple graph $H$, the conjecture asks for $c(H)>0$
-such that every induced-$H$-free graph on $n\ge 1$ vertices has a clique
+such that every induced-$`H`$-free graph on $n\ge 1$ vertices has a clique
 or independent set of size at least $n^{c(H)}$. This would improve
 the general subpolynomial lower bound to a polynomial lower bound
 for every fixed forbidden induced graph.
@@ -47,7 +47,7 @@ the blocks to be anticonnected.
 **Proposition.** Let $H$ have a vertex $v_0$ whose nonneighbors other than
 $v_0$ form an independent set. Assume $H-v_0$ has the Erdős–Hajnal property
 with exponent $c>0$. There is $a\ge 6$ with the following property for
-every $0<y<1/2$. Let $G$ be induced-$\overline H$-free and let
+every $0<y<1/2$. Let $G$ be induced-$`\overline H`$-free and let
 $B_1,\ldots,B_\ell$ be pairwise disjoint blocks, all of the same
 positive size $W$, with $\ell\ge y^{-a}$. For each pair of blocks
 assume that they are complete to each other or each vertex of either
@@ -65,7 +65,7 @@ If every $|I(u)|\le y\ell$, double counting gives the second conclusion.
 Otherwise fix $u$ with $|I(u)|>y\ell$. Form the graph $Q$ on $I(u)$
 with an edge for each pair of blocks that is not complete.
 
-We claim $Q$ is induced-$(H-v_0)$-free. Given an induced copy of $H-v_0$
+We claim $Q$ is induced-$`(H-v_0)`$-free. Given an induced copy of $H-v_0$
 in $Q$, assign one block to each of its vertices. First, for every
 nonneighbor of $v_0$ in $H-v_0$, choose a representative in the assigned
 block adjacent to $u$ in $G$. Their blocks are pairwise complete in $G$
@@ -103,7 +103,7 @@ to conclude the Erdős–Hajnal property for that target.
 ## The missing rooted pattern in a comb
 
 For $h\ge3$, let $S_h$ be a star in which each of its $h$ edges has
-been subdivided once. Fix an induced-$S_h$-free graph $K$ and work in
+been subdivided once. Fix an induced-$`S_h`$-free graph $K$ and work in
 $G=\overline K$. Take a comb in $G$ with teeth $B_i$, apices $a_i$,
 and special vertex $s$ in the sense of Huang–Zhou–Zhou. Equivalently,
 in $K$, $a_i$ is anticomplete to $B_i$ and complete to every
@@ -114,7 +114,7 @@ the teeth can otherwise vary.
 Fix $i$ and $u$ in a different tooth. The path $u,a_i,s$
 is an induced length-two arm from $u$ with its last two vertices
 anticomplete to $B_i$. If there were an induced $S_{h-1}$ in
-$\{u\}\cup B_i$ centered at $u$, it would extend to an induced
+$`\{u\}\cup B_i`$ centered at $u$, it would extend to an induced
 $S_h$ in $K$. This gives the exact rooted obstruction supplied
 by a comb. For $h=3$ the missing pattern is a five-vertex path
 rooted at its **middle**. In the all-path proof the analogous
@@ -131,7 +131,7 @@ R=(N_G(a')\setminus N_G(a))\cap C.
 ```
 
 There is no induced $P_5$ centered at $u$ inside
-$\{u\}\cup Y$ exactly when every such $L,R$ is anticomplete in $G$.
+$`\{u\}\cup Y`$ exactly when every such $L,R$ is anticomplete in $G$.
 If $l\in L$ and $r\in R$ are adjacent in $G$, then
 $r,a,u,a',l$ is the induced path in $K$. Conversely the two
 neighbors of a centered path must lie in $A$ and the two
@@ -177,7 +177,7 @@ contains $S_3$, the same bound applies to every $h$.
 In this graph $u_2,p_1,\ldots,p_m$ is an induced path rooted
 at $u_2$ into the first tooth. Replace each tooth vertex by a
 clique of any desired common size and preserve every adjacency
-between the corresponding fibers. This preserves induced-$S_3$-
+between the corresponding fibers. This preserves induced-$`S_3`$-
 freeness because an induced tree on at least three vertices
 cannot take two vertices from a clique fiber. If it did, any
 neighbor outside the fiber would make a triangle, and when

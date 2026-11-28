@@ -38,7 +38,7 @@ Multiplying by $(mn)!/(mn-k+1)!$ gives exactly formula (1) in PROOF.md. The cycl
 
 G. Kreweras, *Sur les partitions non croisées d'un cycle*, Discrete Mathematics 1(4) (1972), 333–350, Theorem 4, DOI https://doi.org/10.1016/0012-365X(72)90041-6 . An English translation was inspected at https://users.math.msu.edu/users/earnshaw/research/kreweras.pdf . Its Theorem 4 is the prescribed-type formula.
 
-The formula is also recalled as (10.57) in M. Pétréolle, A. D. Sokal and B.-X. Zhu, *Lattice paths and branched continued fractions: An infinite sequence of generalizations of the Stieltjes–Rogers and Thron–Rogers polynomials, with coefficientwise Hankel-total positivity*, arXiv:1807.03271v2, Section 10.3.3. Relevant full-text sections were inspected at https://discovery.ucl.ac.uk/10101894/1/1807.03271v2.pdf . That paper develops general Fuss–Narayana and total-positivity machinery; this audit did not find the particular fixed-$NE$, marked-$NNE$ real-rootedness statement there.
+The formula is also recalled as (10.57) in M. Pétréolle, A. D. Sokal and B.-X. Zhu, *Lattice paths and branched continued fractions: An infinite sequence of generalizations of the Stieltjes–Rogers and Thron–Rogers polynomials, with coefficientwise Hankel-total positivity*, arXiv:1807.03271v2, Section 10.3.3. Relevant full-text sections were inspected at https://discovery.ucl.ac.uk/10101894/1/1807.03271v2.pdf . That paper develops general Fuss–Narayana and total-positivity machinery; this audit did not find the particular fixed-$`NE`$, marked-$`NNE`$ real-rootedness statement there.
 
 ### The ordinary-Dyck polynomial is already real-rooted
 

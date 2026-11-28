@@ -29,7 +29,7 @@ The prior [simplicial extraction manuscript](https://erdosproblems.ai/wiki/resea
 
 ```math
 k=\left\lfloor\frac{n}{C\log n}\right\rfloor,
-\qquad 0<C<\infty\text{ fixed}.
+\qquad 0\lt C<\infty\text{ fixed}.
 \tag{1}
 ```
 
@@ -233,8 +233,8 @@ For a concrete integer matrix, take
 ```math
 A=
 \begin{pmatrix}
-1&-2&1&0\\
-3&-4&0&1
+1&-2&1&0
+\\ 3&-4&0&1
 \end{pmatrix}.
 ```
 

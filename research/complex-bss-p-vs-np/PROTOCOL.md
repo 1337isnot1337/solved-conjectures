@@ -31,9 +31,9 @@ For each i, let a_i=(a_{i,0},...,a_{i,D}) be D+1 quantified complex numbers and 
 
 ```math
 \begin{aligned}
-q_1(0)+q_1(1)&=y,\\
-q_{i+1}(0)+q_{i+1}(1)&=q_i(r_i) &&(1\le i<m),\\
-q_m(r_m)&=F_X(r_1,\ldots,r_m).
+q_1(0)+q_1(1)&=y,
+\\ q_{i+1}(0)+q_{i+1}(1)&=q_i(r_i) &&(1\le i\lt m),
+\\ q_m(r_m)&=F_X(r_1,\ldots,r_m).
 \end{aligned}
 ```
 
@@ -98,8 +98,8 @@ The smallest explicit false instance is m=1, X=[0], y=1. For every r, the degree
 ```math
 q_r(t)=
 \begin{cases}
-(t-r)/(1-2r),&r\ne 1/2,\\
-2(t-1/2)^2,&r=1/2
+(t-r)/(1-2r),&r\ne 1/2,
+\\ 2(t-1/2)^2,&r=1/2
 \end{cases}
 ```
 

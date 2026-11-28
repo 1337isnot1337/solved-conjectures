@@ -1,45 +1,45 @@
 # Erdős’s four-cycle threshold conjecture
 
 **A superlinear edit barrier.** Let $q\ge1024$ be a power of two. On $V=\mathbb F_q^2$ let $G_0$ be the simple affine polarity graph, with distinct $(a,b),(c,d)$ adjacent when $b+d=ac$. If $G$ is $q$-regular and $C_4$-free on $V$, then
-$$
+```math
 |E(G_0)\setminus E(G)| > q^{3/2}/100.
-$$
+```
 This is independent of the distribution of edits. It strengthens the [first affine-model edit barrier](POLARITY-EDIT-BARRIER.md), but does not exclude candidates far from this model.
 
 ## Notation and uniform path count
 
-Write $L_0=\{(0,b):b\in\mathbb F_q\}$. For $w=(c,d)$, write $\ell_w=\{(a,b):b=ca-d\}$. The $\ell_w$ are exactly the nonvertical affine lines, each once. The old neighbors of $w$ are $\ell_w\setminus\{w\}$, so $G_0$ has degree $q-1$ on $L_0$ and $q$ elsewhere. Distinct vertices have at most one old common neighbor, because a nonvertical secant has a unique center $w$. In the model allowing loops, points with unequal first coordinates have that common neighbor; a point has a loop precisely on $L_0$.
+Write $`L_0=\{(0,b):b\in\mathbb F_q\}`$. For $w=(c,d)$, write $`\ell_w=\{(a,b):b=ca-d\}`$. The $\ell_w$ are exactly the nonvertical affine lines, each once. The old neighbors of $w$ are $`\ell_w\setminus\{w\}`$, so $G_0$ has degree $q-1$ on $L_0$ and $q$ elsewhere. Distinct vertices have at most one old common neighbor, because a nonvertical secant has a unique center $w$. In the model allowing loops, points with unequal first coordinates have that common neighbor; a point has a loop precisely on $L_0$.
 
-Put $D=E(G_0)\setminus E(G)$ and $d_D(w)=|\{e\in D:w\in e\}|$. An added edge $uv$ has at least $q-4$ old simple three-edge paths $u,x,y,v$, with distinct $x$ and distinct $y$. Indeed there are at least $q-1$ choices of $x\in N_{G_0}(u)$. Exclude at most one having first coordinate equal to that of $v$, at most one lying on $L_0$, and at most one adjacent to a looped $v$. The last exclusion uses the fact that distinct lines $\ell_u,\ell_v$ intersect in at most one point. The common neighbor $y$ of $x,v$ in the looped model then differs from $x,v$ by the exclusions and from $u$ because $uv$ is an added edge. Also $x\ne v$ since the edge is added, and two different $x$ cannot give the same $y$ by four-cycle-freeness. This verifies the path count.
+Put $D=E(G_0)\setminus E(G)$ and $`d_D(w)=|\{e\in D:w\in e\}|`$. An added edge $uv$ has at least $q-4$ old simple three-edge paths $u,x,y,v$, with distinct $x$ and distinct $y$. Indeed there are at least $q-1$ choices of $x\in N_{G_0}(u)$. Exclude at most one having first coordinate equal to that of $v$, at most one lying on $L_0$, and at most one adjacent to a looped $v$. The last exclusion uses the fact that distinct lines $\ell_u,\ell_v$ intersect in at most one point. The common neighbor $y$ of $x,v$ in the looped model then differs from $x,v$ by the exclusions and from $u$ because $uv$ is an added edge. Also $x\ne v$ since the edge is added, and two different $x$ cannot give the same $y$ by four-cycle-freeness. This verifies the path count.
 
 ## Every sufficiently supported line demands a hub
 
 Call an affine line $L$ **eligible** if at least $q/2$ of its vertices have an added neighbor. Let $R$ be all such vertices on an eligible $L$, and choose one added neighbor $v_u$ for each $u\in R$. If $L$ is nonvertical, delete from consideration all paths whose internal positions include its center $c$, where $\ell_c=L$. At most two paths are lost for each root, by the distinctness of $x$ and $y$. There is no center to exclude when $L$ is vertical.
 
 Every surviving three-edge path must meet $D$, or adding $uv_u$ produces a four-cycle. A deleted first edge can be charged at most twice: each orientation fixes its root $u$, which fixes $v_u$, and the continuation is unique. A deleted middle edge can also be charged at most twice. In orientation $x,y$, there is at most one possible root $u\in L$ adjacent to $x$ in $G_0$, since the old neighborhood line $\ell_x$ meets $L$ in at most one vertex (we excluded its center case). Each root has at most $d_D(v_u)$ last-edge charges, by distinctness of $y$. Hence
-$$
+```math
 |R|(q-6)\le 4|D|+\sum_{u\in R}d_D(v_u).
 \tag{1}
-$$
+```
 
-Suppose $|D|\le q^{3/2}/100$. For each root that has an added neighbor of deleted degree at most $q/2$, choose such a neighbor. Equation (1) implies that the number of these roots is at most $8|D|/q+12$. All other roots must have chosen neighbors in the heavy set $H=\{w:d_D(w)>q/2\}$, of size at most $4|D|/q$. Partition the latter roots into groups $A_h=\{u:v_u=h\}$, $h\in H$. Discarding groups of size below two leaves at least
-$$
+Suppose $|D|\le q^{3/2}/100$. For each root that has an added neighbor of deleted degree at most $q/2$, choose such a neighbor. Equation (1) implies that the number of these roots is at most $8|D|/q+12$. All other roots must have chosen neighbors in the heavy set $`H=\{w:d_D(w)>q/2\}`$, of size at most $4|D|/q$. Partition the latter roots into groups $`A_h=\{u:v_u=h\}`$, $h\in H$. Discarding groups of size below two leaves at least
+```math
 q/2-12|D|/q-12\ge q/3
 \tag{2}
-$$
+```
 assigned roots, for $q\ge1024$.
 
 For $h\in H$ let $X_h=N_G(h)\setminus L$ and $z_h=|X_h|$. For $u\in A_h$, consider the distinct secants from $u$ to $X_h$, and let their number be $b_u$. For any distinct $u,u'\in A_h$, a line through $u$ and a line through $u'$ in these families intersect in at most one point and together must account for each point of $X_h$. (The two lines cannot be equal, since a secant here leaves $L$.) Thus $b_u b_{u'}\ge z_h$. Summing $b_u+b_{u'}\ge 2\sqrt{z_h}$ over pairs gives
-$$
+```math
 \sum_{u\in A_h} b_u\ge |A_h|\sqrt{z_h}\qquad (|A_h|\ge2).
 \tag{3}
-$$
+```
 
 All counted secants are distinct across roots and groups, because each meets $L$ in precisely its root, and each root was assigned only once. At most $q$ are vertical (one per root). At most $q$ nonvertical ones have center equal to their root $u$, since then $u$ is looped and the line is $\ell_u$. At most $q$ have center equal to their other endpoint $x$ from $X_h$, since then $x$ is looped and their line is $\ell_x$. At most $|H|$ have center equal to their hub $h$. For any remaining line with center $w$ and an endpoint pair $u,x$, the proposed graph has common neighbor $h$ for $u,x$. Therefore at least one old edge $uw,xw$ must be deleted, since $w$ is another common neighbor otherwise. Charge that deletion to the line. A deleted edge is charged at most twice, once when each of its endpoints is the center of the charged line. It follows from (3) that
-$$
+```math
 \sum_{h:|A_h|\ge2} |A_h|\sqrt{z_h}\le 2|D|+3q+|H|.
 \tag{4}
-$$
+```
 If all the terms had $z_h\ge q/4$, (2) would make the left side at least $q^{3/2}/6$. But the right side is at most $q^{3/2}/50+3q+\sqrt q/25<q^{3/2}/6$ at $q\ge1024$. We conclude that **every eligible line has a hub** $h$ with more than $3q/4$ neighbors on $L$.
 
 ## A finite injection that misses the loop line

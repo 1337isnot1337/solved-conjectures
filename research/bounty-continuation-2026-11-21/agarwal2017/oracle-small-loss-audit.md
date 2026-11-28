@@ -7,7 +7,7 @@ Checked 2026-11-21. This is an unresolved-target audit and a bounded failed rout
 The [original four-page COLT 2017 problem](https://proceedings.mlr.press/v65/agarwal17a/agarwal17a.pdf), Definition 1 and Question 2, fixes a finite policy class $`\Pi\subseteq[K]^{\mathcal X}`$ of size $`N`$. Context/loss pairs are iid, losses belong to $`[0,1]^K`$, and the learner sees only the chosen action's loss. The comparator minimizes population policy loss; put
 
 ```math
-\pi_* \in \operatorname*{arg\,min}_{\pi\in\Pi}
+\pi_* \in \mathop{\mathrm{arg\,min}}_{\pi\in\Pi}
  \mathbb E[\ell(\pi(X))],\qquad
 L_*=T\mathbb E[\ell(\pi_*(X))].
 ```

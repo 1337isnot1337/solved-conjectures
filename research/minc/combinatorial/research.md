@@ -45,15 +45,15 @@ The stored log files include the final matrices. These are research diagnostics,
 
 For a nonnegative integer matrix A define the collision count
 
-\[
+```math
  C(A)=\sum_{ij}\binom{a_{ij}}2.
-\]
+```
 
 For a legal switch subtracting one at (i,j),(r,s) and adding one at (i,s),(r,j), the collision-count change is exactly
 
-\[
+```math
  \Delta C=2-a_{ij}-a_{rs}+a_{is}+a_{rj}.
-\]
+```
 
 If every nonbinary regular A of degree at most n had a switch with both `Delta C < 0` and nonincreasing permanent, iteration would prove Conjecture 24. This stronger auxiliary assertion is false. The complete proof and an explicit infinite family are in `switch_descent_obstruction.md`.
 

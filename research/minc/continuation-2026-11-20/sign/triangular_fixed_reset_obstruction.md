@@ -24,9 +24,9 @@ where
 
 ```math
 \begin{aligned}
-A_{\alpha\beta}(t)&=(t^2-1)(1+(\alpha+\beta)t+\alpha\beta t^2),\\
-B_{\alpha\beta}(t)&=2(1-\alpha+\beta)t+4(\alpha+\beta)t^2+6\alpha\beta t^3,\\
-C_{\alpha\beta}(t)&=2+2(\alpha+\beta)t+6\alpha\beta t^2.
+A_{\alpha\beta}(t)&=(t^2-1)(1+(\alpha+\beta)t+\alpha\beta t^2),
+\\ B_{\alpha\beta}(t)&=2(1-\alpha+\beta)t+4(\alpha+\beta)t^2+6\alpha\beta t^3,
+\\ C_{\alpha\beta}(t)&=2+2(\alpha+\beta)t+6\alpha\beta t^2.
 \end{aligned}
 \tag{2}
 ```
@@ -63,7 +63,7 @@ For this direction update, the operator factors:
 Define
 
 ```math
-(\mathcal Uh)(x)=\operatorname{sech}^2x\,h(\tanh x).
+(\mathcal Uh)(x)=\mathop{\mathrm{sech}}^2x\,h(\tanh x).
 ```
 
 With $`\mathcal Ah=D_t((1-t^2)h)`$, the substitution t=tanh x gives
@@ -79,7 +79,7 @@ Consequently, if the same reset and direction update is iterated k times, its pe
 ```math
 P_k=(\mathcal L^kh)(0)
 =(-1)^k\left.\frac{d^{2k}}{dx^{2k}}
-\left(\operatorname{sech}^2x\,h(\tanh x)\right)\right|_{x=0}.
+\left(\mathop{\mathrm{sech}}^2x\,h(\tanh x)\right)\right|_{x=0}.
 \tag{5}
 ```
 

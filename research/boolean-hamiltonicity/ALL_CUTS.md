@@ -112,7 +112,7 @@ Delete every edge incident to a vertex whose original degree exceeds 512.
 The number of deleted edges is at most $`Y`$, even though an edge may be
 counted twice in $`Y`$. The resulting graph has maximum degree at most 512,
 and every balanced cut still has at least $`8N-Y\ge7N`$ crossing edges.
-This proves the lemma. \(\square\)
+This proves the lemma. $`\square`$
 
 ## 3. A large induced matching at every cut
 
@@ -135,7 +135,7 @@ At most $`2D^2`$ crossing edges are discarded at one step. Later selected
 endpoints have no adjacency to earlier selected endpoints, which proves
 the induced property. When the process terminates all $`q`$ crossing edges
 have been discarded. If $`k`$ edges were selected, $`q\le2D^2 k`$.
-\(\square\)
+$`\square`$
 
 ## 4. Proof of Theorem 1
 
@@ -174,7 +174,7 @@ Q=\begin{pmatrix}0&1\\1&1\end{pmatrix}.
 Since $`\det Q=-1`$, each copy is invertible over every field. Their
 Kronecker product has rank $`2^k`$. Fixing variables selects a submatrix
 of the original truth-table matrix, so cannot increase its rank. Therefore
-$`\mathop{\mathrm{rank}} M_A(F_N)\ge2^k`$, as claimed. \(\square\)
+$`\mathop{\mathrm{rank}} M_A(F_N)\ge2^k`$, as claimed. $`\square`$
 
 ## 5. The same obstruction for coefficient matrices
 

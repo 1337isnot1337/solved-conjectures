@@ -36,7 +36,7 @@ Regrouping `A,B` in `Q_{a,b,c}` produces a three-party tensor equivalent under m
 
 ```math
 v_h=\sum_{i+j=h}e_i^A\otimes e_j^B
-\qquad(0\le h<a+b-1).
+\qquad(0\le h\lt a+b-1).
 ```
 
 These vectors are nonzero and have pairwise disjoint supports, so they are linearly independent. The map `e_h -> v_h` sends `P_{a+b-1,c}` to the regrouped tensor. A left inverse on the span of these vectors gives the reverse restriction. Merging either of the other two pairs of input parties gives the corresponding statement.
@@ -45,7 +45,7 @@ Regrouping the output `D` with input `A` instead produces `P_{b,c}`, with the me
 
 ```math
 w_h=\sum_{i=0}^{a-1}e_i^A\otimes e_{i+h}^D
-\qquad(0\le h<b+c-1).
+\qquad(0\le h\lt b+c-1).
 ```
 
 Again these are nonzero with disjoint supports. The regrouped tensor is
@@ -79,7 +79,7 @@ Fix `s >= 1` shared parties `A_1,...,A_s` and two remaining parties `C,D`. Let
 
 ```math
 T_h\in A_1\otimes\cdots\otimes A_s\otimes C_h\otimes D_h,
-\qquad 0\le h<m,
+\qquad 0\le h\lt m,
 ```
 
 where the `C_h` are independent subspaces of `C` and the `D_h` are independent subspaces of `D`. Thus
@@ -94,8 +94,8 @@ is a partial direct sum: all the `A_j` are shared, while `C,D` carry independent
 
 ```math
 D_{\mathrm{full}}(T_h)\otimes W_{CD}(t)
-\ \trianglelefteq\
-T\otimes Q_{\underbrace{m,\ldots,m}_{s\text{ times}},t}.
+\ \trianglelefteq
+\ T\otimes Q_{\underbrace{m,\ldots,m}_{s\text{ times}},t}.
 ```
 
 Here the right side is the source and the left side is its degeneration. In the four-party case the catalyst is `Q_{m,m,t}` and has border rank `2m+t-2`.
@@ -111,9 +111,9 @@ The `C,D` coordinates of the source tensor already know the summand label `h`. A
 ```math
 \begin{array}{c|c}
 \text{party}&\text{weight}\\ \hline
-A_j&i_j^2\\
-C&2hu\\
-D&-2hv+sh^2.
+A_j&i_j^2
+\\ C&2hu
+\\ D&-2hv+sh^2.
 \end{array}
 ```
 

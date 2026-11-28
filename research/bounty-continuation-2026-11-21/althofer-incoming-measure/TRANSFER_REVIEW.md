@@ -227,8 +227,8 @@ For the part with $`n\ge D_t`$, drop the oddness restriction for an upper bound.
 \sum_{\substack{n\in\mathcal S\\n\ge D_t}}
 n^{-s}f_t(n)
 &\le\sum_{\substack{1\le a\lt D_t\\3\nmid a}}
-f_t(a)\sum_{\ell\ge1}(\ell D_t)^{-s}\\
-&=\frac23\zeta(s)D_t^{1-s}\lambda_s^t.
+f_t(a)\sum_{\ell\ge1}(\ell D_t)^{-s}
+\\ &=\frac23\zeta(s)D_t^{1-s}\lambda_s^t.
 \end{aligned}
 \tag{B}
 ```
@@ -369,11 +369,11 @@ Apply Hölder with exponents $`s+1`$ and $`(s+1)/s`$:
 &=\mathbb E_n\!\left[
 (Z_t^{-s}1_{A_t})^{1/(s+1)}
 (Z_t1_{A_t})^{s/(s+1)}
-\right]\\
-&\le
+\right]
+\\ &\le
 \mathbb E_n[Z_t^{-s};A_t]^{1/(s+1)}
-\mathbb E_n[Z_t;A_t]^{s/(s+1)}\\
-&\le
+\mathbb E_n[Z_t;A_t]^{s/(s+1)}
+\\ &\le
 \mathbb E_n[Z_t^{-s};A_t]^{1/(s+1)}.
 \end{aligned}
 ```

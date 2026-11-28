@@ -18,8 +18,8 @@ The proposed maximum of `||Q+R||_q` is
 ```math
 \left\|
 \begin{pmatrix}
-\sum_j u_j&\sum_j\sqrt{u_jv_j}\\
-\sum_j\sqrt{u_jv_j}&\sum_j v_j
+\sum_j u_j&\sum_j\sqrt{u_jv_j}
+\\ \sum_j\sqrt{u_jv_j}&\sum_j v_j
 \end{pmatrix}
 \right\|_q. \tag{1}
 ```

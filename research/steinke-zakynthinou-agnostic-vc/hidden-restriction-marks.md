@@ -44,7 +44,7 @@ Set $`\alpha=\tau/(2b)`$ and $`\gamma=\alpha(b/\tau-1)`$, so $`0\le\gamma\le1/2`
 \le \min(r_0,r_1)^{1-\gamma}.
 ```
 
-The majority term in the middle expression is at most one. Also $`\min(r_0,r_1)\le2m_C`$ for $`m_C=\min(Q(i=0\mid C),Q(i=1\mid C))`$, since the slice weights are $`r_j/R_C`$. On the negative side, with $`x=dQ/dP-1`$, we have $`x_-^2\le x_-`$ and $`\mathbb E_P x_-=\operatorname{TV}(P,Q)\le 2\sum_C Q(C)m_C`$ by the [bit omission comparison](approximate-catalogues.md#removing-a-bit-from-the-restrictions). For $`0\le s\le1`$, the squared square-root change $`(\sqrt{1+s x}-1)^2`$ is at most $`s^2 x_-^2`$ if $`x\le0`$, and at most $`\min((sx)^2,sx)\le (sx)^{1+\alpha}`$ if $`x\ge0`$. Combining the two sides and $`P(C)\le2Q(C)`$ gives
+The majority term in the middle expression is at most one. Also $`\min(r_0,r_1)\le2m_C`$ for $`m_C=\min(Q(i=0\mid C),Q(i=1\mid C))`$, since the slice weights are $`r_j/R_C`$. On the negative side, with $`x=dQ/dP-1`$, we have $`x_-^2\le x_-`$ and $`\mathbb E_P x_-=\mathop{\mathrm{TV}}(P,Q)\le 2\sum_C Q(C)m_C`$ by the [bit omission comparison](approximate-catalogues.md#removing-a-bit-from-the-restrictions). For $`0\le s\le1`$, the squared square-root change $`(\sqrt{1+s x}-1)^2`$ is at most $`s^2 x_-^2`$ if $`x\le0`$, and at most $`\min((sx)^2,sx)\le (sx)^{1+\alpha}`$ if $`x\ge0`$. Combining the two sides and $`P(C)\le2Q(C)`$ gives
 
 ```math
 H_2^2((1-s)P+sQ,P)

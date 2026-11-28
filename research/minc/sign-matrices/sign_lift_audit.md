@@ -18,9 +18,9 @@ Hunter, Kwan and Sauermann's *Exponential anticoncentration of the permanent* gi
 
 The Hadamard page explicitly names the stronger Wanless conjecture
 
-\[
-v_2(\operatorname{per}H)=v_2(n!)\qquad(n\geq4).
-\]
+```math
+v_2(\mathop{\mathrm{per}}H)=v_2(n!)\qquad(n\geq4).
+```
 
 Its stated general-order progress covers orders below 512 and orders whose binary expansion has at most six zeros. Chabaud's Sylvester theorem and the Paley nonvanishing result concern specified infinite families. They do not settle arbitrary real Hadamard matrices.
 
@@ -36,28 +36,28 @@ There is also an elementary rank consequence. A real r-dimensional subspace cont
 
 After permuting rows and columns, a Ferrers negative support is specified by weakly increasing row lengths
 
-\[
+```math
 0\leq b_1\leq\cdots\leq b_n\leq n,
 \qquad A_{ij}=1-2\mathbf1_{j\leq b_i}.
-\]
+```
 
 Let r_k be the rook numbers of the negative support. Adding a row of length b updates them by
 
-\[
+```math
 r_k^{\rm new}=r_k^{\rm old}+(b-k+1)r_{k-1}^{\rm old}.
-\]
+```
 
 The exact permanent is
 
-\[
-\operatorname{per}A=\sum_{k=0}^n(-2)^k(n-k)!r_k.
-\]
+```math
+\mathop{\mathrm{per}}A=\sum_{k=0}^n(-2)^k(n-k)!r_k.
+```
 
 The accompanying script checks every Ferrers shape at order 6. Shapes with three projectively identical rows cannot have a nonzero pure-power permanent by the preceding argument. Among the remaining 282 shapes, the possible absolute permanent values are
 
-\[
+```math
 0,32,48,64,80,96,144.
-\]
+```
 
 The desired value at order 6 is 16. Therefore even the full Ferrers family fails as a candidate for an all-order attainment theorem. This is a rejection of a construction family, not an additional case of the conjecture.
 
@@ -65,25 +65,25 @@ The desired value at order 6 is 16. Therefore even the full Ferrers family fails
 
 Let V be an m by 2m sign matrix and let D(V) be obtained by repeating each row twice. If v_j denotes column j, then
 
-\[
-\operatorname{per}D(V)
+```math
+\mathop{\mathrm{per}}D(V)
 =2^m[z_1^2\cdots z_m^2]\prod_{j=1}^{2m}
 \left(\sum_{i=1}^m v_{ij}z_i\right).
-\]
+```
 
 This follows by choosing, for each column, which original row type receives it. Every assignment with two columns in each row type lifts to 2^m assignments to the labeled repeated rows.
 
 The odd-order paired-row reduction in `research.md` therefore reduces a sufficient construction for Kräuter's conjecture at n=2m+1 to sign forms whose indicated coefficient has absolute value
 
-\[
+```math
 2^{m-\lfloor\log_2(m+1)\rfloor}.
-\]
+```
 
 No uniform choice of forms is proved here. In particular, taking V=[B,B] restricts the columns to pairs as well. It does not implement multiplication of per(B) by 2^m. At m=3, every normalized 3 by 3 sign matrix B gives
 
-\[
-|\operatorname{per}(B\otimes J_2)|\in\{48,80,720\},
-\]
+```math
+|\mathop{\mathrm{per}}(B\otimes J_2)|\in\{48,80,720\},
+```
 
 whereas the paired-row target for order 7 is 16. Allowing unequal column multiplicities can reach 16: projective column multiplicities (1,1,2,2) among the four 3-coordinate sign types suffice. That check establishes only that the broader formulation is not defeated by the same small obstruction; it is not an induction.
 

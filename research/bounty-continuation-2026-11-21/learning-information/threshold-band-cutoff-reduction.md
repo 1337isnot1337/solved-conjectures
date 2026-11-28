@@ -83,7 +83,7 @@ Let $`m=\min_j L_j`$, and let $`B(a)=\{j:L_j\le m+a\}`$. For every $`a\ge0`$,
 To prove this, choose a minimum cut $`j_0`$. If every cut belongs to $`B(a)`$, its mass is $`n`$. Otherwise take the contiguous in-band component containing $`j_0`$ and follow it toward an exit. If the first exit is at cut $`r+1>j_0`$, then
 
 ```math
-a<L_{r+1}-L_{j_0}
+a\lt L_{r+1}-L_{j_0}
 \le\sum_{i=j_0+1}^{r+1}m_i.
 ```
 

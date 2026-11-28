@@ -38,8 +38,8 @@ The three circulant coefficients of `B_s+hD` are `a+h,a-h,c`. Its permanent is t
 ```math
 \begin{aligned}
 \mathop{\mathrm{per}}(B_s+hD)
-&=(a+h)^3+(a-h)^3+c^3+3(a+h)(a-h)c\\
-&=\mathop{\mathrm{per}}B_s+(1-4s)h^2.
+&=(a+h)^3+(a-h)^3+c^3+3(a+h)(a-h)c
+\\ &=\mathop{\mathrm{per}}B_s+(1-4s)h^2.
 \end{aligned}
 \tag{1}
 ```
@@ -88,7 +88,7 @@ Another useful form uses the probability distribution
 ```math
 \mathbb P_t(K=k)
 =\frac{\binom nk q_k(A)t^k(1-t)^{n-k}}{p_A(t)/d_n}
-\qquad(0<t<1).
+\qquad(0\lt t<1).
 ```
 
 Twice differentiating the individual Bernstein terms gives

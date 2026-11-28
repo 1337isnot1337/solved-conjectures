@@ -59,7 +59,7 @@ a_h=
 \end{cases}
 ```
 
-These increments first follow a nondecreasing sequence and then a tail of the unimodal $(s-1)$st binomial row. At the transition from the first formula to the second, the new increment is $\binom{s-1}{v-2}$ and the preceding one is $\binom{s-2}{v-2}$, so the full sequence is unimodal. Also $a_h\le a_{s+1-h}$ for $h\le(s+1)/2$. This holds by monotonicity if the reflected index is still in the first segment. Otherwise the reflected increment is $\binom{s-1}{h-1}$, which is at least $a_h$.
+These increments first follow a nondecreasing sequence and then a tail of the unimodal $`(s-1)`$st binomial row. At the transition from the first formula to the second, the new increment is $\binom{s-1}{v-2}$ and the preceding one is $\binom{s-2}{v-2}$, so the full sequence is unimodal. Also $a_h\le a_{s+1-h}$ for $h\le(s+1)/2$. This holds by monotonicity if the reflected index is still in the first segment. Otherwise the reflected increment is $\binom{s-1}{h-1}$, which is at least $a_h$.
 
 The sums of windows of any one length in a unimodal sequence are unimodal. The change when advancing a window is the new entry minus the removed entry. Once the endpoints straddle a peak the difference is nonincreasing, and before and after that range its signs are nonnegative and nonpositive respectively. The first window has sum at most that of the last window, by the reflected-index inequality, canceling their overlap if necessary. It therefore has the minimum sum. For $i+j\le s$, the increment from $j$ to $i+j$ is the sum of a window of length $i$, so
 

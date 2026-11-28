@@ -73,8 +73,8 @@ For outer a in P,b in Q, the complete coefficient in A diag(f_v) B is
 ```math
 \begin{aligned}
 \mathcal O_{ab}^{ij}
-&=\sum_h U_{ah}\bigl(d_{hb}f_b^{ij}-f_h^{ij}d_{hb}\bigr)\\
-&=\sum_{h,t}U_{ah}x_{it}y_{tj}d_{hb}
+&=\sum_h U_{ah}\bigl(d_{hb}f_b^{ij}-f_h^{ij}d_{hb}\bigr)
+\\ &=\sum_{h,t}U_{ah}x_{it}y_{tj}d_{hb}
                (w_{b,t}^{ij}-w_{h,t}^{ij})
        +\delta_{bj}\sum_h U_{ah}x_{ih}w_{j,h}^{ij}.
 \end{aligned}

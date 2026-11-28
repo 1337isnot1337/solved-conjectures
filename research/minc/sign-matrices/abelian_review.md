@@ -15,7 +15,7 @@ a_g=\prod_{i=1}^n a_{i,g(i)}.
 The Grone–Pierce theorem says that every correlation matrix C satisfies
 
 ```math
-\operatorname{per}C\geq\frac{\|C\|_F^2}{n}
+\mathop{\mathrm{per}}C\geq\frac{\|C\|_F^2}{n}
 =1+\frac1n\sum_{i\ne j}|c_{ij}|^2.\tag{1}
 ```
 The [publisher record](https://epubs.siam.org/doi/10.1137/0609016) explicitly
@@ -27,8 +27,8 @@ DOI 10.1137/0609016.
 Lieb's permanental Fischer inequality gives
 
 ```math
-\operatorname{per}A\geq
-\prod_{O\in\mathcal P}\operatorname{per}A[O,O]\tag{2}
+\mathop{\mathrm{per}}A\geq
+\prod_{O\in\mathcal P}\mathop{\mathrm{per}}A[O,O]\tag{2}
 ```
 for any partition of the index set. The source is E. H. Lieb, *Proofs of some
 conjectures on permanents*, J. Math. Mech. 16 (1966), 127–134; its theorem and
@@ -38,7 +38,7 @@ corollary are reproduced as Theorem 1 and Corollary 1 of
 From these two inputs one obtains the stronger estimate
 
 ```math
-\boxed{\sum_{g\in H}|a_g|\leq\operatorname{per}A}\tag{3}
+\boxed{\sum_{g\in H}|a_g|\leq\mathop{\mathrm{per}}A}\tag{3}
 ```
 whenever the image of H on each of its orbits acts regularly on that orbit.
 This includes all abelian permutation groups, all semiregular groups, and all
@@ -51,7 +51,7 @@ matrix function then yield
 ```math
 d_\chi^H(A)=\sum_{g\in H}\chi(g)a_g
 \leq\chi(e)\sum_{g\in H}|a_g|
-\leq\chi(e)\operatorname{per}A.\tag{4}
+\leq\chi(e)\mathop{\mathrm{per}}A.\tag{4}
 ```
 Thus the conclusion also holds for characters of arbitrary degree within these
 group classes.
@@ -77,7 +77,7 @@ quotient would fix i. Further, g(i)≠i for every g≠e. Summing (5) therefore g
 ```math
 \sum_{g\in H}|c_g|
 \leq1+\frac1n\sum_{i\ne j}|c_{ij}|^2
-\leq\operatorname{per}C.
+\leq\mathop{\mathrm{per}}C.
 ```
 The identity term is exactly 1. This proves (3) for semiregular actions.
 
@@ -99,11 +99,11 @@ acts identically on the whole index set. Since all summands are nonnegative,
 ```math
 \begin{aligned}
 \sum_{h\in H}|a_h|
-&\leq\sum_{k\in K}|a_k|\\
-&=\prod_{i=1}^r\left(
-   \sum_{g\in G_i}\left|\prod_{j\in O_i}a_{j,g(j)}\right|\right)\\
-&\leq\prod_{i=1}^r\operatorname{per}A[O_i,O_i]\\
-&\leq\operatorname{per}A.
+&\leq\sum_{k\in K}|a_k|
+\\ &=\prod_{i=1}^r\left(
+   \sum_{g\in G_i}\left|\prod_{j\in O_i}a_{j,g(j)}\right|\right)
+\\ &\leq\prod_{i=1}^r\mathop{\mathrm{per}}A[O_i,O_i]
+\\ &\leq\mathop{\mathrm{per}}A.
 \end{aligned}
 ```
 The penultimate step is the regular case already proved; singleton orbits are

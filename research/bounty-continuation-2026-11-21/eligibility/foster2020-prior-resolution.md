@@ -38,8 +38,8 @@ This is a scope check of the existing construction, not a new lower bound. For i
 f_0(x,1)=f_0(x,2)=1/2,\qquad
 f_i(x,a)=
 \begin{cases}
-(1-\Delta)/2,&a=x_i,\\
-(1+\Delta)/2,&a\in\{1,2\}\setminus\{x_i\},
+(1-\Delta)/2,&a=x_i,
+\\ (1+\Delta)/2,&a\in\{1,2\}\setminus\{x_i\},
 \end{cases}
 ```
 

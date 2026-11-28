@@ -17,8 +17,8 @@ For any subset $S\subseteq[k]$, including the full set, define the zero-one matr
 \qquad
 (J_S)_{ij}=
 \begin{cases}
-(I_S)_{ij},&i\ne j,\\
-\boldsymbol1_{\{S=[k]\}},&i=j.
+(I_S)_{ij},&i\ne j,
+\\ \boldsymbol1_{\{S=[k]\}},&i=j.
 \end{cases} \tag{1}
 ```
 
@@ -27,9 +27,9 @@ For a tuple $\boldsymbol S=(S_1,\ldots,S_r)$ of arbitrary subsets, let $M^D(\bol
 ```math
 M^D_{ij}(\boldsymbol S,f)=
 \begin{cases}
-(J_{S_{f(i)}})_{i-1,j},& i\in D,\\
-(I_{S_{f(i)}})_{ij},& i\in[k-1]\setminus D,\\
-1,&i=k.
+(J_{S_{f(i)}})_{i-1,j},& i\in D,
+\\ (I_{S_{f(i)}})_{ij},& i\in[k-1]\setminus D,
+\\ 1,&i=k.
 \end{cases} \tag{2}
 ```
 
@@ -82,7 +82,7 @@ The source's two event matrices also satisfy
 (J_S)_{i-1,j}=s_i(I_S)_{ij}. \tag{5}
 ```
 
-For $j\ne i-1$, the interval $]i-1,j]$ is $\{i\}\cup]i,j]$. For $j=i-1$, the right side requires every vertex to belong to $S$, agreeing with the special diagonal definition of $J_S$.
+For $j\ne i-1$, the interval $]i-1,j]$ is $`\{i\}\cup]i,j]`$. For $j=i-1$, the right side requires every vertex to belong to $S$, agreeing with the special diagonal definition of $J_S$.
 
 Thus (2) uses row $i$ of $I_{S_{f(i)}}$, multiplied by $s_i$ when $i\in D$, and has a fixed last row of ones.
 
@@ -147,8 +147,8 @@ K=\mathop{\mathrm{diag}}(v_1,\ldots,v_k)W_q^{-1},
 \qquad
 v_i=
 \begin{cases}
-q_i,&i\in D,\\
-1,&i\notin D,
+q_i,&i\in D,
+\\ 1,&i\notin D,
 \end{cases}
 ```
 

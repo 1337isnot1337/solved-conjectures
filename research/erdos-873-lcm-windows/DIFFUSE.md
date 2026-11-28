@@ -15,7 +15,7 @@ Each $x$ is in its unit ball. Two distinct ratios $r_1>r_2$ from the interval sa
 \|x_1-x_2\|_Q=\frac{\log U+\log V}{\log Q}>2\delta.
 ```
 
-**Dimension bound.** If the vectors span a real space of dimension $d$, the cluster has size at most $(1+1/\delta)^d$. For $d=0$ this is immediate. Otherwise the open balls of radius $\delta$ about the vectors are disjoint in that space; they lie in the radius-$1+\delta$ ball, and $d$-dimensional volume scales as the $d$th power of radius. This bound depends on the dimension of the cluster, not on the number of distinct prime divisors of $Q$.
+**Dimension bound.** If the vectors span a real space of dimension $d$, the cluster has size at most $(1+1/\delta)^d$. For $d=0$ this is immediate. Otherwise the open balls of radius $\delta$ about the vectors are disjoint in that space; they lie in the radius-$`1+\delta`$ ball, and $d$-dimensional volume scales as the $`d`$th power of radius. This bound depends on the dimension of the cluster, not on the number of distinct prime divisors of $Q$.
 
 **Mass bound.** Suppose there are $h$ primes of $Q$ that between them carry at least $(1-\delta/4)\log Q$ of the mass $\sum_p e_p\log p$. Then the cluster size is at most $(1+\lceil4/\delta\rceil)^h$. For each of those primes bin $x_p/e_p\in[-1,1]$ into intervals of width $2/M$, where $M=\lceil4/\delta\rceil$, placing the final endpoint in an extra bin. Two vectors in the same bins differ by total norm at most $2/M$ on these primes, and at most $2(\delta/4)$ on all other primes. The sum is at most $\delta$, in contradiction to separation. Count the bins. Thus any unbounded cluster with fixed power saving must simultaneously have unbounded exponent rank and unbounded mass concentration number.
 
@@ -25,7 +25,7 @@ There is no universal proof based solely on formal degree, divisibility and poly
 ```math
 Q_m(T)=T^{p^m}-T.
 ```
-For each $(m-1)$-dimensional $\mathbf F_p$-linear subspace $V$ of the root field $\mathbf F_{p^m}$, set $D_V(T)=\prod_{v\in V}(T-v)$. These are distinct monic divisors of $Q_m$, all of degree $p^{m-1}$. Each $D_V$ is a sum of powers $T^{p^j}$ with coefficients in $K$. Indeed, starting with $D_{\{0\}}=T$, for $w\notin V$ one has
+For each $(m-1)$-dimensional $\mathbf F_p$-linear subspace $V$ of the root field $\mathbf F_{p^m}$, set $D_V(T)=\prod_{v\in V}(T-v)$. These are distinct monic divisors of $Q_m$, all of degree $p^{m-1}$. Each $D_V$ is a sum of powers $T^{p^j}$ with coefficients in $K$. Indeed, starting with $`D_{\{0\}}=T`$, for $w\notin V$ one has
 ```math
 D_{V+\mathbf F_p w}=D_V^p-D_V(w)^{p-1}D_V.
 ```
@@ -36,4 +36,4 @@ The identity follows by partitioning the larger space into the $p$ cosets of $V$
 ```
 The number of hyperplanes is $(p^m-1)/(p-1)$ because nonzero linear functionals with the same kernel are nonzero scalar multiples. The family therefore gives arbitrarily large exact divisor clusters with a fixed relative power saving in the norm at infinity. The square-centering trick also carries this example to the square modulus $Q_m^2$ by multiplying each $D_V$ by $Q_m/D_{V_0}$ for a fixed hyperplane $V_0$.
 
-The construction uses finite additive subgroups and the characteristic-$p$ cancellation. It does not give integer counterexamples. In particular it does not rule out characteristic-zero arguments or arguments using the real ordering.
+The construction uses finite additive subgroups and the characteristic-$`p`$ cancellation. It does not give integer counterexamples. In particular it does not rule out characteristic-zero arguments or arguments using the real ordering.

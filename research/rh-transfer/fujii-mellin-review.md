@@ -70,8 +70,8 @@ For fixed x, these functions are smooth and compactly supported inside t greater
 ~~~math
 \begin{aligned}
 \int f_{x,R}(t)\,d\theta_\chi(t)
-={}&-\frac12\int f_{x,R}(t)t^{-1/2}\,dt\\
-&-\sum_\rho\int f_{x,R}(t)t^{\rho-1}\,dt
+={}&-\frac12\int f_{x,R}(t)t^{-1/2}\,dt
+\\ &-\sum_\rho\int f_{x,R}(t)t^{\rho-1}\,dt
 -\int E(t)f_{x,R}'(t)\,dt.
 \end{aligned}
 \tag{R5}
@@ -135,8 +135,8 @@ which tends to zero. The remaining E term converges by the integrability establi
 ~~~math
 \begin{aligned}
 \int f_x(t)\,d\theta_\chi(t)
-={}&-\frac12\int f_x(t)t^{-1/2}\,dt\\
-&-\sum_\rho\int f_x(t)t^{\rho-1}\,dt
+={}&-\frac12\int f_x(t)t^{-1/2}\,dt
+\\ &-\sum_\rho\int f_x(t)t^{\rho-1}\,dt
 -\int E(t)f_x'(t)\,dt.
 \end{aligned}
 \tag{R7}

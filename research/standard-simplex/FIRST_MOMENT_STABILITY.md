@@ -99,7 +99,7 @@ c_q^2-\mathcal V(Q)^2
 
 ```math
 D(t)=\frac2r\left[
- \sum_{e<f}w_e(t)w_f(t)(\ell_e(t)-\ell_f(t))^2
+ \sum_{e\lt f}w_e(t)w_f(t)(\ell_e(t)-\ell_f(t))^2
  +S(t)^2-S_*^2\right]\ge0. \tag{5}
 ```
 
@@ -132,9 +132,9 @@ For $`0\le t\le1/2`$, $`Q_t\in\mathcal K_{1/2}`$. Write $`\Delta=Q-Q_*`$ and
 Since $`\Delta\mathbf1=0`$ and $`\mathop{\mathrm{tr}}\Delta=0`$,
 
 ```math
-\sum_{i<j}\delta_{ij}=0,
+\sum_{i\lt j}\delta_{ij}=0,
 \qquad
-\sum_{i<j}\delta_{ij}^2
+\sum_{i\lt j}\delta_{ij}^2
 =q\sum_i\Delta_{ii}^2+2\|\Delta\|_F^2
 \ge2\|\Delta\|_F^2. \tag{7}
 ```
@@ -153,7 +153,7 @@ Every $`\ell_e(t)^2\le2`$, since $`Q_t`$ is positive semidefinite of trace one. 
 There are $`M=q(q-1)/2`$ unordered pairs. The zero sum in (7) gives
 
 ```math
-\sum_{e<f}(\delta_e-\delta_f)^2
+\sum_{e\lt f}(\delta_e-\delta_f)^2
 =M\sum_e\delta_e^2\ge2M\|\Delta\|_F^2.
 ```
 

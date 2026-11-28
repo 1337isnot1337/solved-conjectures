@@ -34,16 +34,16 @@ Use indices 0 through 9. Set $X=ZZ^{\mathsf T}$ with
 
 ```math
  Z=\begin{pmatrix}
-8&-1&-7\\
--2&-8&-6\\
--7&-1&-7\\
--2&6&-8\\
--5&-6&-7\\
--5&4&-8\\
-7&3&-7\\
-3&6&-8\\
-7&-5&-6\\
-3&-8&-6
+8&-1&-7
+\\ -2&-8&-6
+\\ -7&-1&-7
+\\ -2&6&-8
+\\ -5&-6&-7
+\\ -5&4&-8
+\\ 7&3&-7
+\\ 3&6&-8
+\\ 7&-5&-6
+\\ 3&-8&-6
 \end{pmatrix}.
 ```
 
@@ -75,7 +75,7 @@ Every specified edge has positive weight. The 16 triangles, written in increasin
 ```
 
 
-None has a common adjacent fourth vertex, as follows directly from the displayed edge list (also exhaustively checked below). Thus $\omega(G)=3$. By construction $X\succeq0$ and $\operatorname{rank}(X)\le3$.
+None has a common adjacent fourth vertex, as follows directly from the displayed edge list (also exhaustively checked below). Thus $\omega(G)=3$. By construction $X\succeq0$ and $`\mathop{\mathrm{rank}}(X)\le3`$.
 
 Direct integer arithmetic gives
 
@@ -97,7 +97,7 @@ Let $B$ be any real symmetric matrix, and let $X$ be positive semidefinite with 
 ```
 
 
-Indeed, the rank-$j$ orthogonal projection onto these $u_i$, expressed in an eigenbasis of $B$, has diagonal entries in $[0,1]$ summing to $j$; their scalar product with the ordered eigenvalues is at most the sum of the largest $j$. Multiply the inequality for each $j$ by $\alpha_j-\alpha_{j+1}\ge0$ (where $\alpha_4=0$) and sum. It follows that
+Indeed, the rank-$`j`$ orthogonal projection onto these $u_i$, expressed in an eigenbasis of $B$, has diagonal entries in $[0,1]$ summing to $j$; their scalar product with the ordered eigenvalues is at most the sum of the largest $j$. Multiply the inequality for each $j$ by $\alpha_j-\alpha_{j+1}\ge0$ (where $\alpha_4=0$) and sum. It follows that
 
 ```math
  \langle B,X\rangle\le\sum_{i=1}^3\alpha_i\lambda_i(B)
@@ -113,7 +113,7 @@ For our $B,X$, the inner product equals $S>0$, so squaring gives $F_3(B)\ge S^2/
 The matrix used in the rank-two proof is
 
 ```math
- M(X)=X^{\circ2}+\sum_{i<j:X_{ij}<0}X_{ij}^2(e_i-e_j)(e_i-e_j)^{\mathsf T}.
+ M(X)=X^{\circ2}+\sum_{i\lt j:X_{ij}<0}X_{ij}^2(e_i-e_j)(e_i-e_j)^{\mathsf T}.
 ```
 
 
@@ -121,11 +121,11 @@ Its total entry sum equals $T$ because all Laplacian corrections have total sum 
 
 ## Why this does not resolve the unweighted conjecture
 
-A vertex blowup with positive integer multiplicities $p_i$ has nonzero adjacency spectrum equal to that of $D A_G D$, where $D=\operatorname{diag}(\sqrt{p_i})$. This follows by representing the adjacency operator in the normalized indicator basis of the independent vertex classes; it is zero on the orthogonal complement. Moreover its squared Frobenius norm equals $\|D A_G D\|_F^2$. Rational approximation and homogeneity show that the simple-graph conjecture is equivalent to its restriction to all such positive diagonal scalings of simple adjacency matrices with real $D$. Zero weights follow by continuity, or by deleting zero-weight vertices. The converse is immediate by taking $D=I$.
+A vertex blowup with positive integer multiplicities $p_i$ has nonzero adjacency spectrum equal to that of $D A_G D$, where $`D=\mathop{\mathrm{diag}}(\sqrt{p_i})`$. This follows by representing the adjacency operator in the normalized indicator basis of the independent vertex classes; it is zero on the orthogonal complement. Moreover its squared Frobenius norm equals $`\|D A_G D\|_F^2`$. Rational approximation and homogeneity show that the simple-graph conjecture is equivalent to its restriction to all such positive diagonal scalings of simple adjacency matrices with real $D$. Zero weights follow by continuity, or by deleting zero-weight vertices. The converse is immediate by taking $D=I$.
 
 Our $B$ is not a matrix of this form. On the four-cycle $0,4,1,6,0$ any diagonal scaling satisfies $B_{04}B_{16}=B_{14}B_{06}$, whereas the certificate gives $15\cdot4=60$ and $100\cdot102=10200$. Consequently the ordinary vertex blowup reduction cannot transfer the displayed matrix to a simple-graph counterexample. This does not exclude a different graph construction.
 
-A numerical search optimized real diagonal scalings on the support and on thresholded edge subsets; it did not find a violation. This search is heuristic, not an upper bound or an exhaustive proof. The unweighted support itself has numerical $F_3(A_G)/\|A_G\|_F^2$ below $2/3$.
+A numerical search optimized real diagonal scalings on the support and on thresholded edge subsets; it did not find a violation. This search is heuristic, not an upper bound or an exhaustive proof. The unweighted support itself has numerical $`F_3(A_G)/\|A_G\|_F^2`$ below $2/3$.
 
 ## Exact verification
 

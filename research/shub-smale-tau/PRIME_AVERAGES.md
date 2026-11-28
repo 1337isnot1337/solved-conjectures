@@ -201,8 +201,8 @@ The subset `S` contributes two roots exactly when
 ```math
 \nu_p(F_k)=
 \begin{cases}
-2^{k+1}-2,&\epsilon_1=\cdots=\epsilon_k=1,\\
-2^k-2,&\text{otherwise}.
+2^{k+1}-2,&\epsilon_1=\cdots=\epsilon_k=1,
+\\ 2^k-2,&\text{otherwise}.
 \end{cases}                                                   \tag{3.2}
 ```
 

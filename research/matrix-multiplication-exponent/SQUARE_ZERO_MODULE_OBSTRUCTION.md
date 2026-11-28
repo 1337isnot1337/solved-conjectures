@@ -27,8 +27,8 @@ Consider any formal deformation, still linear in $`X`$,
 ```math
 N_X(t)=
 \begin{pmatrix}
-tA_X+O(t^2)&L_X+tB_X+O(t^2)\\
-tC_X+O(t^2)&tD_X+O(t^2)
+tA_X+O(t^2)&L_X+tB_X+O(t^2)
+\\ tC_X+O(t^2)&tD_X+O(t^2)
 \end{pmatrix},
 \qquad [N_X(t),N_Y(t)]=0.                       \tag{2}
 ```
@@ -47,8 +47,8 @@ Then direct multiplication gives
 ```math
 S(t)N_XS(t)^{-1}
 =\begin{pmatrix}
--tL_XK&L_X\\
--t^2KL_XK&tKL_X
+-tL_XK&L_X
+\\ -t^2KL_XK&tKL_X
 \end{pmatrix}.                                  \tag{3}
 ```
 
@@ -224,8 +224,8 @@ lower-left block has order at least three. The special tuple is
 ```math
 \Psi_X=
 \begin{pmatrix}
-I_n\otimes\Phi(X)&L_X\\
-0&I_n\otimes\Phi(X)
+I_n\otimes\Phi(X)&L_X
+\\ 0&I_n\otimes\Phi(X)
 \end{pmatrix}.                                  \tag{12}
 ```
 
@@ -313,11 +313,11 @@ is nonzero. Fix $`Y`$ with $`\ell(Y)\ne0`$.
 Use the faithful inclusion
 
 ```math
-\mathcal B\ \subseteq\
-\mathop{\mathrm{Mat}}_2\otimes
+\mathcal B\ \subseteq
+\ \mathop{\mathrm{Mat}}_2\otimes
 \mathop{\mathrm{Mat}}_n\otimes R
-\ \subseteq\
-\mathop{\mathrm{End}}(\mathbb C^2\otimes\mathbb C^n\otimes\mathbb C^m),
+\ \subseteq
+\ \mathop{\mathrm{End}}(\mathbb C^2\otimes\mathbb C^n\otimes\mathbb C^m),
 ```
 
 and filter its ambient vector space by powers of $`J`$ on the last

@@ -10,18 +10,18 @@ Then there is a countable universally measurable proper catalogue that realizes 
 
 ## At most d observed active blocks are needed
 
-Code the spaces by Borel subsets of Baire space. Fix one real parameter $`r`$ for the spaces, block map, evaluation, $`R`$, and the two joint basis relations, so all are lightface $`\Delta^1_1(r)`$. As in the [countable-disagreement proof](countable-disagreement-reconstruction.md#the-number-of-features-needed-to-describe-the-positives), write $`\operatorname{HYP}(q)`$ for the reals hyperarithmetic in $`q`$, using effective joins for tuples. The effective perfect set theorem gives
+Code the spaces by Borel subsets of Baire space. Fix one real parameter $`r`$ for the spaces, block map, evaluation, $`R`$, and the two joint basis relations, so all are lightface $`\Delta^1_1(r)`$. As in the [countable-disagreement proof](countable-disagreement-reconstruction.md#the-number-of-features-needed-to-describe-the-positives), write $`\mathop{\mathrm{HYP}}(q)`$ for the reals hyperarithmetic in $`q`$, using effective joins for tuples. The effective perfect set theorem gives
 
 ```math
-u\in R_h\quad\Longrightarrow\quad u\in\operatorname{HYP}(r,h)
+u\in R_h\quad\Longrightarrow\quad u\in\mathop{\mathrm{HYP}}(r,h)
 ```
 
-because $`R_h`$ is countable. We use the same finite cone-avoidance statement as in that proof. For a nonempty $`\Sigma^1_1(q)`$ set of possible hypotheses and a finite list of reals outside $`\operatorname{HYP}(q)`$, some hypothesis in the set keeps every listed real outside $`\operatorname{HYP}(q,h)`$.
+because $`R_h`$ is countable. We use the same finite cone-avoidance statement as in that proof. For a nonempty $`\Sigma^1_1(q)`$ set of possible hypotheses and a finite list of reals outside $`\mathop{\mathrm{HYP}}(q)`$, some hypothesis in the set keeps every listed real outside $`\mathop{\mathrm{HYP}}(q,h)`$.
 
-Fix a finite observed tuple and a proper realization $`h_*`$ of the target trace. Let $`P`$ be its observed block IDs in $`R_{h_*}`$. Partition $`P`$ into the genuinely active IDs $`P_0`$ and the additional declared IDs $`P_1`$. There are at most $`s`$ of the latter. Choose an inclusion-minimal $`I\subseteq P_0`$ such that $`P_0\subseteq\operatorname{HYP}(r,P_1,I)`$. Minimality and transitivity give
+Fix a finite observed tuple and a proper realization $`h_*`$ of the target trace. Let $`P`$ be its observed block IDs in $`R_{h_*}`$. Partition $`P`$ into the genuinely active IDs $`P_0`$ and the additional declared IDs $`P_1`$. There are at most $`s`$ of the latter. Choose an inclusion-minimal $`I\subseteq P_0`$ such that $`P_0\subseteq\mathop{\mathrm{HYP}}(r,P_1,I)`$. Minimality and transitivity give
 
 ```math
-u\notin \operatorname{HYP}(r,P_1,I\setminus\{u\})
+u\notin \mathop{\mathrm{HYP}}(r,P_1,I\setminus\{u\})
 \qquad (u\in I).
 ```
 

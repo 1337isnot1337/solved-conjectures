@@ -268,7 +268,7 @@ Under the imported border lower bound and the reviewed transfer lemma, these ful
 
 ```math
 C_y=2^{2-m}y\sum_{i=1}^m(b_i^2-b_i)
-\prod_{j<i}(2b_j-1)^2.
+\prod_{j\lt i}(2b_j-1)^2.
 ```
 
 Thus even this specific small correction does not permit a polynomial-size full-identity lift of the Boolean-potential problem in general. The argument does not exclude Boolean potentials whose polynomial residual is a different, more difficult element of the Boolean vanishing ideal.

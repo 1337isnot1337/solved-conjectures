@@ -27,7 +27,7 @@ J. Kaczorowski, *The boundary values of generalized Dirichlet series and a probl
 Assume GRH for every Dirichlet L-function modulo q. If (a,q)=1 and a is not 1 modulo q, then for every fixed u>0 there exist constants c>1 and d>0 such that, for every sufficiently large Y,
 
 ~~~math
-\#\left\{Y<m<cY:
+\#\left\{Y\lt m\lt cY:
  \pi(m;q,a)-\pi(m;q,1)>
        u\frac{\sqrt m}{\log m}\right\}>dY,
 \tag{2}
@@ -36,7 +36,7 @@ Assume GRH for every Dirichlet L-function modulo q. If (a,q)=1 and a is not 1 mo
 and
 
 ~~~math
-\#\left\{Y<m<cY:
+\#\left\{Y\lt m\lt cY:
  \pi(m;q,a)-\pi(m;q,1)<
        -u\frac{\sqrt m}{\log m}\right\}>dY.
 \tag{3}

@@ -7,14 +7,14 @@ Status: complete proposed proof, with separate internal mathematical reviews and
 William Johnson's *Pfaffian Positivity for Convex Kernels and Optimal Matching Bounds*, arXiv:2610.24371v1, Conjecture 7.1, asks the following. Let $`n`$ be positive and even, let $`x_1<\cdots<x_n`$, and let $`f:(0,\infty)\to(0,\infty)`$ be nonincreasing and log-convex. Define the real skew-symmetric matrix $`A`$ by
 
 ```math
-A_{ij}=f(x_j-x_i)\qquad(i<j).
+A_{ij}=f(x_j-x_i)\qquad(i\lt j).
 ```
 
 For every perfect matching $`M`$ of $`\{1,\ldots,n\}`$, the conjecture asserts
 
 ```math
 \mathop{\mathrm{Pf}}(A)
-\geq \prod_{\{i,j\}\in M,\ i<j} A_{ij}.
+\geq \prod_{\{i,j\}\in M,\ i\lt j} A_{ij}.
 ```
 
 The proof below uses Johnson's already proved Proposition 4.2, the endpoint inequality for additive interval matrices. The new argument passes from products of interval factors to that additive class after arbitrary cyclic relabeling and positive diagonal scaling. This supplies an inequality for every adjacent pair, which can be iterated along any noncrossing matching. No claim is made that the endpoint inequality, the source's rainbow bound, or its resolution of the Albouy–Moeckel nonvanishing conjecture is new here.
@@ -25,7 +25,7 @@ For a linearly ordered set $`[n]`$, let $`\mathcal I_n`$ denote its intervals of
 
 ```math
 B_{ij}=\sum_{I\in\mathcal I_n:\ i,j\in I} b_I,
-\qquad i<j,\qquad b_I\geq0.
+\qquad i\lt j,\qquad b_I\geq0.
 ```
 
 Johnson's Proposition 4.2 states, for every even $`n\geq2`$,
@@ -46,7 +46,7 @@ Place $`[n]`$ in its cyclic order. A circular interval is a consecutive block in
 ```math
 A_{ij}=d_i d_j
 \prod_I t_I^{\mathbf 1_I(i)\mathbf 1_I(j)}
-\qquad(i<j),
+\qquad(i\lt j),
 \tag{2}
 ```
 
@@ -56,7 +56,7 @@ and complete $`A`$ by skew-symmetry. Empty or singleton interval supports contri
 
 ```math
 \mathop{\mathrm{Pf}}(A)
-\geq \prod_{\{i,j\}\in M,\ i<j}A_{ij}
+\geq \prod_{\{i,j\}\in M,\ i\lt j}A_{ij}
 \tag{3}
 ```
 
