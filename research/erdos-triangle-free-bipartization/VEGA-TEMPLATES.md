@@ -1,9 +1,9 @@
 # The sharp Erdős bound for every Vega template
 
-**Theorem.** Every graph homomorphic to a Vega graph satisfies the sharp weighted bound in [Erdős Problem 23](https://www.erdosproblems.com/23). Together with [the circular-three argument](CIRCULAR-THREE.md), this handles homomorphisms to both unbounded Andrásfai and Vega families, with arbitrary product vertex weights and arbitrary edge deletions in the fibers. The general triangle-free conjecture remains open.
+**Theorem.** Every graph homomorphic to a Vega graph satisfies the sharp weighted bound in [Erdős Problem 23](https://www.erdosproblems.com/23). Together with [the circular-three argument](CIRCULAR-THREE.md), this handles homomorphisms to both unbounded Andrásfai and Vega families, with arbitrary product vertex weights and arbitrary edge deletions in the fibers. In fact, when the unordered edge mass is at most 4/25 in total vertex mass one, the Vega bound has uniform gap: the cut cost is at most 399/10000. The general triangle-free conjecture remains open.
 
 The proof applies beyond the classical Vega family. Start with any core (M) carrying a proper three-colouring (M_1,M_2,M_3) whose cyclic orientation is acyclic. Add the six-vertex crown (a_i,b_i) ((1le ile3)), with edges (a_i b_j) for (i
-e j); join each of (a_i,b_i) to all of (M_i). Add vertices (x,y), join (x) to all (a_i), (y) to all (b_i), and join (xy). There are no other edges. This template is triangle-free. The theorem proves the sharp bound for its arbitrary vertex weightings. A cut of a full product-weighted template pulls back to any homomorphic preimage, after summing the weights in the fibers: actual edge mass between any two fibers is at most their product.
+e j); join each of (a_i,b_i) to all of (M_i). Add vertices (x,y), join (x) to all (a_i), (y) to all (b_i), and join (xy). There are no other edges. This template is triangle-free. The proof works directly on graphs mapping to it, with arbitrary missing edges between fibers. We group their vertices by the template fibers, use the inherited label cuts, and retain actual edge masses in the calculations. In particular each actual fiber pair has edge mass at most the product of its two vertex masses.
 
 For the Vega graphs themselves, the core is the circular Andrásfai graph, or the one indicated deletion, with three consecutive colour classes; the scaling-to-circumference-three argument in [the gluing note](CIRCULAR-CORE-GLUING.md) shows that this specific colouring is acyclic in the required cyclic orientation. See [Łuczak–Polcyn–Reiher, Section 4.1](https://arxiv.org/abs/2002.01498) for the template definition. The deletions of (y) and/or an inner vertex are allowed by assigning zero weight. The earlier gluing proof only needed a small (xy)-mass; the proof below has no such restriction.
 
@@ -68,4 +68,32 @@ The case (c=0) is bipartite. This closes the final contradiction to (1). Every d
 
 ## Scope
 
-This closes the weighted template comparison for the two named families in the Brandt–Thomassé structure theorem above its minimum-degree threshold. It also handles preimages with edge densities well below that threshold. It does not derive either homomorphism for a general middle-band counterexample. The full Erdős conjecture remains open.
+This closes the weighted template comparison for the two named families in the Brandt–Thomassé structure theorem above its minimum-degree threshold. It also handles preimages with edge densities well below that threshold. It does not derive either homomorphism for a general middle-band counterexample. The full Erdős conjecture remains open.Set \(m=\max(x,y)\) and \(m'=\min(x,y)\). We have \(L\le m(s-t)-(m-m')r\), because both \(A,B\ge r\) and the actual apex–crown masses are bounded by their products. For fixed \(x,y,h\) the resulting upper bound on \(\Phi\), using \(K>2\tau\), is a convex quadratic in \(s\in[t+2r,1/2]\). Compare its endpoints:
+- At \(s=t+2r\) the bound on \(L\) is \(rt\). As \(xy\ge h>\tau\), we have \(t> .138\), while \(t\le1/2-2r\). The function \((1-2r-t)^2+5rt\) is decreasing there, since its derivative is at most \(-1+5r<0\). Also \(22h+4K>30\tau\). The endpoint upper bound is therefore \((1-2r-.138)^2+5r(.138)-30\tau=.38949296\).
+- At \(s=1/2\) we have \(L\le m(1/2-r)-m^2-xy+r m'\), and \(m'\le(1/2-2r)/2\). Completing the square in \(m\) gives \(L\le(1/2-r)^2/4+r(1/2-2r)/2-h<.057-h\). The endpoint upper bound on \(\Phi\) is at most \(.25+5(.057)-35\tau=4397/12000\).
+
+Both are below \(1951/5000=.3902\), contrary to (1).
+
+## When the outer mass is greater than one half
+
+Now \(c<1/2\). The first comparison with \(\beta(M)\le c^2/25\) gives \(Q>2b-2c^2/25\). The second then forces \(h>(5b-e)/2-c^2/25\ge .01975-.04c^2\).
+
+For \(.17\le c<1/2\), use \(L\le m(s-m-m')\le s^2/4-h\) and \(K\ge0\). We obtain
+\[
+ \Phi\le c^2+\tfrac54(1-c)^2-27h
+ <3.33c^2-2.5c+.71675.
+\]
+This convex quadratic is at most the larger of its endpoint values .387987 and .29925 on \([.17,.5]\), below .3902.
+
+For \(0\le c<.17\), use the total edge budget \(L\le e-Q-h\), and drop the favorable \(-4K\) term. Substituting the lower bounds on \(Q,h\) gives
+\[
+ \Phi\le c^2+5e-5Q-27h <2.48c^2+18.5e-77.5b
+ \le 2.48(.17)^2+18.5(.16)-77.5(.0399)=-.060578.
+\]
+This finishes the last contradiction. The numerical comparisons are terminating rational arithmetic, and the proof does not use extremal stationarity, numerical optimization, or finite-order graph enumeration.
+
+## Consequences and scope
+
+The strict bound \(\beta\le399/10000\) holds when \(e\le4/25\). At larger \(e\), the [dense-tail result](https://arxiv.org/abs/2103.14179) already gives the sharp coefficient \(1/25\) for all triangle-free graphs. This proves the stated claim for all weights.
+
+In particular a middle-band counterexample to Erdős 23 must be more than \(1/10000\) in unordered product edge-edit mass from the Vega homomorphic class. Edits of this much would leave the new edge mass below \(4/25\), so its cut cost is at most .0399; reversing the edits then adds at most .0001. Together with the stronger circular-class gap this gives the same robustness for the union of the two template families in the Brandt–Thomassé structure theorem. It does not force an unrestricted middle-band graph close to either family.
