@@ -57,3 +57,11 @@ To control the absolute value, let h=(−a_f)_+. Switching an independent set of
                     <= gamma+(89/2)eps.
 
 The hypothesis on degrees gives integral_T |d_W−4b|<=gamma. The preceding compactness theorem now applies, with each error tending uniformly to zero as eps and gamma do. The result covers near-maximizing weighted finite graphs of arbitrary order by their step-graphon representations.
+
+The same reweighting gives a degree-tail statement. For every 0<eps<=1/4 and b>=B*−eps²,
+
+    integral (4b−d_W)_+ <= (9/2)eps + 2 sqrt(2eps).       (10)
+
+Indeed take T={d_W<4b} in the reweighting argument (which did not use the definition of T to obtain I>=2bt−(9/4)eps and C−b<=2eps). With h=(−a_f)_+ one has h<=d_W. Split at degree sqrt(2eps): the low-degree portion of integral h is at most sqrt(2eps), and the higher-degree portion is at most (C−b)/sqrt(2eps)<=sqrt(2eps) by the neighborhood switching estimate. From integral_T a_f>=−integral h and the bound on I, rearrange to obtain (10).
+
+Consequently there is a fixed gamma>0 such that for every tau>0, all sufficiently near-maximizing triangle-free graphons have at least 461/1000−tau of their mass at degrees strictly higher than 4b+gamma. Choose gamma from the uniform near-floor bound. By (10) the mass at degrees less than 4b−gamma tends uniformly to zero as b approaches B*. Remove that set and the near-floor set, whose mass is strictly below 539/1000. This does not say how large gamma is or force the high-degree region to belong to a known solvable class.
