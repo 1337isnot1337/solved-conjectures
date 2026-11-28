@@ -4,6 +4,8 @@
 
 **Status:** Partial result. Written proof of Conjecture 6.1 of Dawkins, Nappo, Tong and Zimbizi for every `n >= 155`. Together with the paper's own cases `n <= 12`, the conjecture is **open for `13 <= n <= 154`**. Each of the two theorems that make up the proof has been through one independent referee pass by a separate model instance; neither found an error affecting the theorems, and the minor errors they found are corrected in the notes. The notes are otherwise unrefereed.
 
+**Follow-up for review.** The [external Lean results](continuation/EXTERNAL-LEAN.md) give exact values at additional orders in the gap described above, including the full interval from K77 through K154. The source package credits the nine-point reduction in this project.
+
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv). Proofs, verifier, referee passes and continuation material submitted by pull request.
 
 **Lean status:** none. No Lean formalization is included.
