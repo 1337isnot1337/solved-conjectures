@@ -65,3 +65,16 @@ The same reweighting gives a degree-tail statement. For every 0<eps<=1/4 and b>=
 Indeed take T={d_W<4b} in the reweighting argument (which did not use the definition of T to obtain I>=2bt−(9/4)eps and C−b<=2eps). With h=(−a_f)_+ one has h<=d_W. Split at degree sqrt(2eps): the low-degree portion of integral h is at most sqrt(2eps), and the higher-degree portion is at most (C−b)/sqrt(2eps)<=sqrt(2eps) by the neighborhood switching estimate. From integral_T a_f>=−integral h and the bound on I, rearrange to obtain (10).
 
 Consequently there is a fixed gamma>0 such that for every tau>0, all sufficiently near-maximizing triangle-free graphons have at least 461/1000−tau of their mass at degrees strictly higher than 4b+gamma. Choose gamma from the uniform near-floor bound. By (10) the mass at degrees less than 4b−gamma tends uniformly to zero as b approaches B*. Remove that set and the near-floor set, whose mass is strictly below 539/1000. This does not say how large gamma is or force the high-degree region to belong to a known solvable class.
+
+### Stronger low-tail estimate by removing small marked sets
+
+There is a sharper estimate than (10) that does not require a perturbed cut. Set Delta=B*−b. For any measurable A of mass r, cut its complement optimally and use fair signs on A. In graphons this can be expressed using the relaxed sign f=0 on A and approximating it weakly by actual signs, as in the stationary construction. All edges incident with A then contribute half their mass, at most half the integral of d_W over A. Hence
+
+    b <= B*(1−r)^2 + (1/2) integral_A d_W
+    integral_A (4b−d_W) <= 2 Delta (1−r)^2 + 2 b r².     (11)
+
+In the atomless graphon representation, partition the low tail {d_W<4b} into sets of mass at most sqrt(Delta). There are at most 1/sqrt(Delta)+1 nonempty sets after grouping to full mass except the last. Sum (11) and use the fact that the sum of the squared masses is at most sqrt(Delta). This gives the explicit improvement
+
+    integral (4b−d_W)_+ <= (2+2b) sqrt(Delta)+2 Delta.
+
+At Delta=0 the same conclusion follows by arbitrarily fine partitioning. For a fixed gap gamma>0 and b>0, if Delta<gamma²/(16b), the mass where d_W<=4b−gamma is at most 4 Delta/gamma: choose A there of mass equal to the smaller of its full measure and gamma/(4b). The quadratic term in (11) is then at most gamma r/2, so r<=4 Delta/gamma. The strict assumption on Delta shows r must be the full measure. This stronger estimate leaves unchanged the qualitative size of the upper degree gap obtained by marked compactness.
