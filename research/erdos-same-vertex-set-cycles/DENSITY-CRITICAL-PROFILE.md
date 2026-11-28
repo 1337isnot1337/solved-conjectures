@@ -59,3 +59,30 @@ The bound gives many potential endpoints even after bounded-degree deletions, in
 ## Scope
 
 If the candidate $`O(n\log\log n)`$ upper bound is false, this selection gives a sequence of bipartite witness-free graphs with $`a\to\infty`$ and all the preceding estimates. Their orders tend to infinity, since $`e(H)`$ is bounded for each fixed order. This reduction does not enforce bounded degree ratio or high girth simultaneously. It is an application of the density-minimality idea behind sublinear expander extraction; see the [main #585 paper, Appendix A](https://arxiv.org/html/2404.07190v1). The point of the normalization here is the explicit resilient small-set vertex profile at the conjectured density scale, rather than a claim that the standard extraction method is new.
+
+## Vertex separators, matching cuts and treewidth
+
+Partition the vertices into $`A,B,X`$ with $`A,B`$ nonempty and no edges between them. Put $`u=|A|+|X|`$, $`v=|B|+|X|`$, $`k=|X|`$. Since $`e(H)\le e_H(A\cup X)+e_H(B\cup X)`$ and $`u+v=N+k`$, criticality gives the exact necessary inequality
+
+```math
+(k-1)w(N)\ge (u-1)(w(N)-w(u))+(v-1)(w(N)-w(v)).
+```
+
+In particular there is no cut vertex. If $`u`$ is at most $`\exp[(\log(N+\mathrm e^{\mathrm e}))^\theta]-\mathrm e^{\mathrm e}`$, where $`0<\theta\lt1`$, then $`|A|\le\theta(k-1)/(1-\theta)`$. This quantifies the fact that a small separator cannot isolate a much larger but still small set.
+
+The same comparison bounds the order of both shores of a matching cut. If $`s`$ is its smaller shore, the cut budget is at most $`s`$. For $`a w(N)\ge1`$ and $`s>1`$, the cut inequality above therefore gives $`w(N)-w(s)\le1/a`$. Equivalently,
+
+```math
+s+\mathrm e^{\mathrm e}\ge
+\exp[(\log(N+\mathrm e^{\mathrm e}))^{\mathrm e^{-1/a}}].
+```
+
+A singleton matching cut is excluded outright when $`a w(N)>1`$. Thus available matching cuts in a high-density critical core can be very large, even though the cube-cover examples show that this type of cut cannot in general be forbidden.
+
+The separator inequality also gives treewidth $`\Omega(N/(\log N\log\log N))`$ for the critical core. To see this, take a balanced separator $`X`$, with all components of $`H-X`$ of size at most $`N/2`$. If $`k\ge N/12`$ the desired size bound already holds. Otherwise collect components until their total first reaches $`N/4`$; their union $`A`$ has size at most $`3N/4`$, and the remaining union $`B`$ has size at least $`N/6`$. Thus $`u,v\le 5N/6`$, and both differences from $`w(N)`$ are at least
+
+```math
+\frac{N}{6(N+\mathrm e^{\mathrm e})\log(N+\mathrm e^{\mathrm e})}
+```
+
+by the derivative of $`w`$. Substituting gives $`k=\Omega(N/(\log N\log\log N))`$. A tree decomposition of width $`t`$ has such a separator of size at most $`t+1`$: assign each vertex to one containing bag, choose a weighted centroid of the decomposition tree, and take its bag. Connectedness of the bag sets for vertices ensures that no component outside the centroid bag crosses between different tree branches. This proves the treewidth claim. A large treewidth controls minors, not the presence of the required degree-four subgraph; no cycle-pair inference is made.
