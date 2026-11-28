@@ -70,3 +70,28 @@ For a finite global maximizer with the exact joint law, fix x and let S be any i
         <= mass(N(x) intersect N(S)).                          (3)
 
 This holds simultaneously for all roots and all independent replacements. When S is a single nonneighbor y, the right side is the common-neighbour mass, and the left is E[1_(sigma_y=sigma_x) min(Delta_sigma(x), weight(y))]. The inequality prices exchanges that do not preserve the original graph support. It has not been shown that these exchanges alone force the conjectured bound.
+
+
+## Second-order template extension
+
+There is a separate condition for a finite graph attaining the supremum. It can be tested by genuine new edges in an attachment layer, not only independent additions.
+
+Let I_1,...,I_k be independent sets of G and let p_1,...,p_k be nonnegative weights summing to one. Suppose that over the old optimum cuts sigma the minimum of
+
+    L_*(sigma) = sum_i p_i min(mass(I_i on plus), mass(I_i on minus))
+
+is exactly 2B. Let H be any triangle-free graph on the attachment indices, with ij permitted only if I_i and I_j are disjoint. For every old optimum sigma with L_*(sigma)=2B, consider signs tau_i for H that individually minimize the loss of the attachment from I_i; either sign is permitted on a tie. Then **some** such pair sigma,tau makes H's monochromatic product edge mass, with vertex weights p_i, at most B.
+
+Indeed, give the old vertices mass factor 1-epsilon, give vertex i of the new layer mass epsilon p_i, attach it to I_i, and put H on this layer. The resulting support is triangle-free. A triangle with one new vertex is prevented by independence of its attachment; a triangle with two new vertices is prevented by disjointness for H edges; triangles entirely in either layer are excluded by their hypotheses. For any pair of cuts its cost is exactly
+
+    (1-epsilon)^2 cost_G(sigma)
+      + epsilon(1-epsilon) L(sigma,tau)
+      + epsilon² cost_H(tau),
+
+where L is the actual attachment loss in original product units. There are finitely many cut pairs. For all sufficiently small positive epsilon, minimizing this expression first minimizes the old cost and then minimizes L among those pairs: any fixed positive gap in an earlier coefficient dominates the bounded later terms. The minimal earlier values are B and 2B by hypothesis. On these pairs the full cost reduces to
+
+    B + epsilon² (cost_H(tau)-B).
+
+It cannot exceed B at the extended optimum, so the claimed pair exists.
+
+The first-order hypothesis is not empty: taking the old neighborhoods with their old vertex weights gives L_*(sigma)=2B for every old optimum cut. On a saturated support, disjoint neighborhoods of distinct vertices already force adjacency, so this obvious choice cannot insert a truly new edge on the replicated layer. Any use for the full conjecture needs alternative optimal attachments, or a quantitative near-optimal replacement. This also explains why making the layer separately triangle-free is not enough unless the attachment disjointness is checked.
