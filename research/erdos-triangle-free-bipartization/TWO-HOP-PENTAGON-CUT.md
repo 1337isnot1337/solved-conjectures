@@ -45,4 +45,27 @@ whenever the quantity in the final parentheses is nonnegative. The root-level in
 
 The classical [density cut](https://combinatorica.hu/~p_erdos/1988-12.pdf) also starts with one independent neighborhood. Here the thresholded two-hop extension makes the penalty an explicit cubic-root function of rooted pentagon density. The published [Balogh–Clemen–Lidický result](https://arxiv.org/html/2103.14179) supplies the two density endpoints used only in the last numerical consequence.
 
+## Extending both ends of a sampled edge
+
+A second bound uses a sampled **edge** instead of a sampled vertex and retains four-cycle density. Put \(p=2e>0\), \(P_4=t(P_4,W)\) for the path of three edges, \(C_4=t(C_4,W)\), and \(M_2=\int d^2\). For every \(t>0\),
+```math
+ \beta\le \frac p4-\frac{P_4}{p}+\frac{C_4}{2p}
+     +t\left(1-\frac{2M_2}{p}\right)
+     +\frac{T_5}{p}\left(\frac1t+\frac1{5t^2}\right). \tag{1}
+```
+It suffices to prove this for zero-one graphons of finite graphs; the general case follows by sampling and continuity of the normalized optimum and the displayed densities.
+
+For a sampled oriented edge \(uv\), force \(X=N(u)\) and \(Y=N(v)\) to opposite sides. They are disjoint and independent. For \(z\) outside those two sets, put \(K_u=K(u,z)\) and \(K_v=K(v,z)\). If both are below \(t\), assign \(z\) a fair independent sign. Otherwise place \(z\) opposite the neighborhood into which it has the larger degree, breaking ties consistently. There are \(I=\int_X d+\int_Y d-e(X,Y)\) edges by mass incident to at least one of \(X,Y\), counting each once.
+
+Compare to the baseline \((e-I)/2\), which cuts all incident edges and charges the other edges half. Outside \(X,Y\), a vertex with both codegrees below \(t\) adds at most \(t\) per unit vertex mass to this baseline. Otherwise its missed incident mass per unit vertex mass is \(\min(K_u,K_v)\le K_uK_v/t\). Among nonincident edges, a positive excess over baseline is possible only between two forced vertices of the same sign. One sign class must have \(K_u\ge t\), the other \(K_v\ge t\). Their combined excess is at most \((P(u)+P(v))/(4t^2)\), with \(P(r)\) as in the one-root proof.
+
+Average over ordered root edges with measure \(W(u,v)\,du\,dv/p\). The averages of \(I\), of \(1-d(u)-d(v)\), and of \(\int K_uK_v\) are respectively \((2P_4-C_4)/p\), \(1-2M_2/p\), and \(T_5/p\). Finally \(\int d(r)P(r)\,dr\le (2/5)T_5\): at a sampled pentagon the sum of its five degrees is at most two, because every external vertex sees at most two of its vertices, and all five positions have the same law. This proves (1).
+
+The elementary edge-root cut with just \(X,Y\) forced gives \(\beta\le p/4-C_4/(2p)\). Averaging with (1) cancels \(C_4\). The standard three-edge-path inequality \(P_4\ge p^3\) follows directly from Jensen: under the probability of a random oriented edge, the mean of \(\log d(u)\) is \(\int d\log d/p\ge\log p\). Exponentiating Jensen for \(d(u)d(v)\) gives \(P_4/p\ge p^2\); zero-degree vertices do not occur as edge endpoints. With \(M_2\ge p^2\), we obtain
+```math
+ \beta\le \frac p4-\frac{p^2}{2}
+     +\frac t2(1-2p)+\frac{T_5}{2p}\left(\frac1t+\frac1{5t^2}\right). \tag{2}
+```
+In the open density band choose \(t=1/45\) and use \(p\ge1243/5000\). If \(T_5\le34/10^7\), the right side is below \(1/25\): the three terms are bounded by \(1/32\), \((1-2(1243/5000))/90\), and \((34/10^7)450/(2(1243/5000))\), whose sum is strictly below \(1/25\). Keeping \(P_4\) and \(C_4\) in (1), or retaining the actual density \(p\) in (2), gives potentially stronger tests. This still does not bridge the gap to the dense-pentagon attachment argument.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
