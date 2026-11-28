@@ -23,7 +23,7 @@ For the moments, define missing mass with kernel 1−W between the two signs on 
 
 ### Compactness with the cut and degree-floor marks intact
 
-If the stability statement fails, take eta decreasing to zero. Retain the four measurable colour classes formed by membership in T and the sign of f. The compactness of the [finite-coloured graphon cut metric](https://pikhurko.github.io/E/GrebikPikhurko26ejp.pdf) yields a subsequence with kernels converging in cut norm after measure-preserving alignments and with the four class indicators converging in L1. Therefore T converges in measure to a marked set, and the reference signs converge in L1 to actual signs on the limiting graphon.
+If the stability statement fails, take eta decreasing to zero. Retain the four measurable colour classes formed by membership in T and the sign of f. The compactness of the [finite-coloured graphon cut metric, Grebík–Pikhurko Theorem 7.1](https://pikhurko.github.io/E/GrebikPikhurko26ejp.pdf) yields a subsequence with kernels converging in cut norm after measure-preserving alignments and with the four class indicators converging in L1. Therefore T converges in measure to a marked set, and the reference signs converge in L1 to actual signs on the limiting graphon.
 
 Triangle density and B are cut-continuous. For the latter, the missed cost on a fixed cut is one half the sum of two cut-norm rectangles, so the change is bounded uniformly in the cut. Taking infima proves continuity without needing a priori attainment. The missed mass of the marked cut also converges: changing its sign sets on a small-measure region costs at most that region's measure on a bounded graphon. Consequently the limit is triangle-free, has B>=1/25, and the retained cut is optimum.
 
@@ -36,3 +36,24 @@ Split the x integral into the nonnegative and the negative regions to see this. 
 For the stationary application, take T where |d_W−4B|<=eta. The first-order penalties are nonnegative and their expected value is d_W−4B. In particular d_W>=4B. Averaging spatially over T, some optimum cut in the law has integral_T a_f at most eta, or at most 2eta if one instead chooses a convenient approximate witness. Apply the uniform theorem with the correspondingly smaller initial tolerance. This step does not require passing an entire law of cuts to the limit.
 
 This stability result is a restriction on potential counterexamples, not a proof that such counterexamples must put enough mass near the floor to contradict it.
+
+### Near-maximizers without a stationary cut law
+
+Write B* for the triangle-free supremum. For sufficiently small eps>0 and gamma>0, every triangle-free W satisfying b=B(W)>=B*−eps² has
+
+    mass{ x : |d_W(x)−4b|<=gamma } < 539/1000.
+
+The tolerance is again qualitative. The point is that no stationary cut law or saturation is assumed. A single targeted weight perturbation supplies the nearly optimal, nearly zero-field cut that the marked compactness theorem needs.
+
+For the marked set T in the display and t=mass(T), reweight vertex measure by density 1+eps(t−1_T). It is strictly positive and has integral one. The resulting graphon, represented on its reweighted probability space, remains triangle-free, so its optimum is at most B*. Pick an actual cut with reweighted cost at most B*+eps²<=b+2eps². Let C be its original missed mass, C_T its original missed mass inside T, and I=integral_T m_f. Multiplying the two endpoint factors in every missed edge yields the exact identity
+
+    C_reweighted=(1+eps t)^2 C − eps(1+eps t) I + eps² C_T.
+
+One has C>=b and C_T>=0. Hence I>=2bt−(9/4)eps, using b<=1/4 from a fair cut. This gives integral_T a_f<=gamma+(9/2)eps. The reweighting density is at least 1−eps, so C<=(b+2eps²)/(1−eps)^2 and C−b<=2eps for eps<=1/4, again using b<=1/4.
+
+To control the absolute value, let h=(−a_f)_+. Switching an independent set of vertices with negative penalty decreases missed cost by the integral of h there, which can be at most C−b. For almost every root its positive neighborhood is independent. Test its negative-penalty subset, and average over roots; this gives integral d_W h <= C−b, because the inclusion probability at x is at least d_W(x). On T the degree is at least 1/10 when eps and gamma are sufficiently small: b>=1/25−eps² by the balanced pentagon lower bound on B*. Thus integral_T h<=10(C−b)<=20eps. Finally
+
+    integral_T |a_f| = integral_T a_f + 2 integral_T h
+                    <= gamma+(89/2)eps.
+
+The hypothesis on degrees gives integral_T |d_W−4b|<=gamma. The preceding compactness theorem now applies, with each error tending uniformly to zero as eps and gamma do. The result covers near-maximizing weighted finite graphs of arbitrary order by their step-graphon representations.
