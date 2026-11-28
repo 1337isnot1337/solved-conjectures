@@ -103,4 +103,40 @@ For \(w\le1/2\) this has maximum \(1/8\) over \(s\ge0\), by completing the squar
 
 There is a parallel one-root improvement. Assign expected sign \(-W(r,z)+\min(K(r,z)/t,1)\); its two summands have disjoint supports almost everywhere. The dropped gain is at most \(t(1-d(r))/8\), since \(K(1-\min(K/t,1))\le t/4\). The exterior penalty is again \(P(r)/(4t^2)\). Optimizing \(t\) now gives the previous one-root formula with \(3/4\) replaced by \((3/4)4^{-2/3}\), including at each individual root. It improves that pentagon threshold by a factor of 16. The two-root bound gives the stronger uniform threshold, but neither excludes the whole middle band.
 
+## Only singly attached vertices pay the exterior penalty
+
+One can keep the exclusion of the fixed neighborhoods in the previous section instead of discarding it. For a pentagon sampled with its graphon weight, let \(\nu_1\) be the mean mass of vertices adjacent to exactly one of its roots. If \(T_5>0\), the stronger averaged bound is
+```math
+ \beta\le \frac p4-\frac{p^2}{2}
+    +\frac{t(1-2p)}{16}
+    +\frac{T_5}{2p}\left(\frac2t+\frac{\nu_1}{10t^2}\right).
+    \tag{5}
+```
+When \(T_5=0\), interpret the last term as zero. In particular \(\nu_1\le1\) and \(t=1/6\) imply that a middle-band counterexample must have \(T_5>11/100000\). The exact comparison for this last statement is
+```math
+ \frac1{32}+\frac{1257}{240000}
+ +\frac{11}{100000}\frac{78}{5}\frac{2500}{1243}<\frac1{25}.
+```
+
+To see the improvement, denote by \(P_{\rm ext}\) the same-root exterior term from [SIGNED-CODEGREE-CUT.md](SIGNED-CODEGREE-CUT.md):
+```math
+ P_{\rm ext}=
+ \int W(z,z')K(x,z)K(x,z')
+              [d(x)-K(x,z)-K(x,z')]\,dx\,dz\,dz'.
+```
+Indeed, if we already count \(K(x,z)K(x,z')>0\), the two terminals avoid \(N(x)\). For a root edge \(xy\) to place both in its exterior we must also avoid \(yz\) and \(yz'\). These two excluded subsets of \(N(x)\) are disjoint since \(zz'\) is an edge. This explains the exact bracket. The clipped sign same-side penalty, averaged over the root edge, is thus at most \(P_{\rm ext}/(2pt^2)\) in unordered units. All other terms of (3) are unchanged.
+
+The key identity is \(5P_{\rm ext}=\nu_1 T_5\). The factor \(W(z,z')K(x,z)K(x,z')\) samples a pentagon with root \(x\) and vertices \(z,z'\) at distance two from \(x\). Sum the bracket over the five choices of \(x\) on this pentagon. A fresh vertex with no root neighbor contributes zero. One with a single root neighbor contributes one via a degree term. One with two root neighbors contributes two via degree terms and loses exactly two via the two orders of their nonadjacent pair. No vertex can have three root neighbors. Thus the sum of the brackets is exactly the singly attached mass. Average over labeled pentagons, using cyclic symmetry. Using this identity after averaging the clipped and elementary edge-root bounds proves (5).
+
+There is also a signed version retaining a negative exterior term. Let
+```math
+ U_{\rm ext}=\int W(x,y)\int_{D_{xy}^2}
+     W(z,z')K(x,z)K(y,z')\,dz\,dz'\,dx\,dy,
+```
+where \(D_{xy}\) is the exterior of the two root neighborhoods in the binary model. This is the \(U\) from the signed-codegree note. If \(L\) bounds both \(t\) and the maximum degree, clipping gives magnitude at least \(|A-B|/L\). Pointwise
+```math
+ (A-B)_+(B'-A')_+\ge AB'-AA'-BB',
+```
+by checking the signs of both differences and expanding when they have the desired signs. Integrate on ordered exterior edges and average over roots. The decrease from opposite clipped signs is at least \((U_{\rm ext}-2P_{\rm ext})_+/(2pL^2)\) in the edge-root bound (3), and half that in (5). This term does not affect the universal numerical threshold above; it supplies a sharper test if the exterior six-cycle term is known.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
