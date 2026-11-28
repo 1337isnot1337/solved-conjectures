@@ -62,3 +62,25 @@ It follows from the bounds on W and d that E[P²/D(w)] > 22 K²: the coefficient
 The quadratic is decreasing for K>=.04, where its value at the left endpoint is .0361. This contradicts beta>1/25.
 
 When Y is disconnected, stationarity still gives zero monochromatic mass on Y in the common law, but different components may choose different relative orientations across that law. The inference of two fixed, regular monochromatic links then fails. A graph of independence mass strictly less than one half is not excluded here either.
+
+
+## Robust form under an internal expansion bound
+
+For every fixed kappa>0 there is an eta>0 with the following property. No stationary counterexample has an independent set X of mass at least .5-eta whose complement Y satisfies
+
+    e_Y(A,Y minus A) >= kappa min(mass(A),mass(Y minus A))
+
+for every nontrivial A in Y. The complement need not be bipartite in this formulation. The claim is qualitative in eta.
+
+Suppose otherwise and take a sequence with mass(X) tending to .5. In this paragraph all o(1) terms tend to zero along that sequence. Let delta=E[M_Y]=beta(1-2 mass(X)) from stationarity, so delta=o(1). Fix a minimum cut tau of Y with at most delta internal loss. For each cut from the common stationary law, reverse it globally if needed so its disagreement set F from tau on Y has mass at most mass(Y)/2. Every edge across F changes its cut status between the two cuts, so the boundary mass is bounded by the sum of their Y losses. Expansion gives E[mass(F)]<=2delta/kappa=o(1).
+
+Set Y's signs to tau and keep the X signs. The average change in the X-to-Y monochromatic degree, integrated over X, is at most E[mass(F)] since only neighbors in F change status. On Y the corresponding integrated change is at most E[mass(F)]+2delta: charge the changed vertices and remove the old internal monochromatic degrees, whose mean sum is 2delta. Write U,V for the shores of tau, and split each atom in X by its probabilities of the two signs as before, producing R,S. Thus the U–R and V–S degree functions each differ from the constant d in integrated absolute error o(1), on both the Y and X sides. Also the adjusted cut on X uses the more expensive sign only by integrated error o(1): it was individually optimal before changing F, and the difference from the new cheaper sign is at most twice its neighbor mass in F. In particular the opposite-shore degree on R and S is at least d except for integrated deficit o(1).
+
+These estimates preserve the main inequalities asymptotically, as follows.
+
+- The masses of R and U differ by o(1), and so do those of S and V, by summing their approximately regular common link. The regular Hall argument now gives mass(T)<=mass(N_U(T))+o(1), uniformly over every T in R: the error comes from the two full integrated degree errors divided by d, and d>=.08. The analogous bound holds on the other link.
+- Write t=e(Y), m=max(u,v) and W=uv-e(U,V)=uv-t+o(1), because the internal losses of tau on Y are o(1). The approximate Hall bounds give e(R,V),e(S,U)<=W+o(1), while the opposite-degree estimates give e(R,V)>=du-o(1) and e(S,U)>=dv-o(1). With K their sum, t>=beta, K>=d/2-o(1), and t<=uv-dm+o(1).
+- For L=d_X and J=d_Y on Y, the pointwise inequalities used for (1) hold up to integrated error o(1): approximate Hall gives the uniform error on the opposite X link, and the errors in the same-side X link and internal degree within U or V have integral o(1). Flipping the subsets with J>L within U and V is still permitted; the only changed correction relative to the independent shores is at most twice their internal edge mass, which is o(1). Also integral_Y L=d/2+K+o(1) and integral_Y J=2t. This proves (1) with additive o(1).
+- The rooted cut still applies because each single X-neighborhood is independent by triangle-freeness. Its two linear coefficients are now 2/mass(X) and 1/mass(X), tending to 4 and 2. The mixed inverse-degree lower bound is still valid with the nonedge mass W of U by V, regardless of whether U,V have some internal edges. Let A(w),B(w) be the same-shore and opposite-shore attachment masses after splitting X. In the X probability measure, E|A-d|=o(1) and E[(d-B)_+]=o(1), while E B=K/mass(X). Replacing A by d and B by max(B,d) changes all bounded product moments by o(1). Therefore Q=2dK+o(1) and H/Q<=2d+m(1-d/(2K))+o(1) by the same quadratic upper bound on B.
+
+Pass to a subsequence on which the bounded scalar parameters converge. All the inequalities used in (2) and its scalar contradiction now hold exactly for the limits. The denominator is nonzero since Q has positive lower bound and W>=dm in the limit. Thus the limiting beta is at most .0361, contrary to its lower bound .04. This proves the robust expansion form.
