@@ -15,3 +15,20 @@ Fix x in C. Let A_1=N(x) intersect A and B_1=N(x) intersect B; put A_0=A minus A
 For a vertex z in C, joining the first block incurs backwards attachment degree d_(B_0)(z), while joining the second incurs d_(A_0)(z). Let Q_x be the missing pair mass in A_0 by B_0, precisely the weighted transversal count rooted at x. The product of these two attachment degrees is at most Q_x, since their neighbor sets form a missing rectangle. Consequently assigning each z to its cheaper block gives a total wrong-way mass at most mass(C) sqrt(Q_x). For nonzero C, at some x this is at most sqrt(mass(C) times the total transversal density).
 
 If an exact total first-block mass is desired, specify the mass of C that has to go in the first block and take that mass in increasing order of d_(B_0)(z)-d_(A_0)(z). This minimizes wrong-way mass for the prescribed balance; split one false-twin atom if needed. For any such root and choice, insert the first-block mass and the measured wrong-way mass in [the one-way inequality](ONE-WAY-SEPARATORS.md). The cheaper individually chosen blocks may be unbalanced, so the rooted estimate alone does not yield an explicit unconditional transversal density threshold.
+
+## Quantitative sampling consequence
+
+The positive lower bound can be made explicit using [Bender–Krauthgamer, Theorem 2.1](https://arxiv.org/html/2611.03205v1#S2), the November 2026 Max-Cut sampling result. Let T denote the independent transversal density (classes in fixed order) and p=2e. For every integer k>=1, independent product-weighted sampling with k slots gives
+
+    beta <= 1/44 + e/11 + e/k + 48 sqrt(p)/sqrt(k) + k³ T/8.
+
+To verify the normalization, let w_v be the positive vertex masses, W_uv the zero-one adjacency matrix, and n the support order. Use A_uv=n² w_u w_v W_uv and p_v=w_v in that theorem. Its scaled kernel K is exactly W, and its moment parameter H is the weighted mean of sqrt(d(v)), at most sqrt(p). The normalized sample has edge weight W_(X_i,X_j)/k² and keeps repeated draws as separate false twins. Its expected total edge mass is (1-1/k)e. Hence the expected sample deletion cost is at least beta-e/k-48 sqrt(p)/sqrt(k).
+
+The sample inherits triangle-freeness and the three-colouring. Without an independent transversal its minimum cost is at most 1/44+e_sample/11 by the acyclic median proof. Otherwise the random cut and weighted Mantel give the bound 1/8. Its probability of any independent transversal is at most k³ T by a union bound over the three ordered slots in their required colours. Therefore the sample's expected cut cost is at most 1/44+e/11+k³ T/8, proving the claim.
+
+For example, every middle-band counterexample with a proper three-colouring must have T>10^(-27) in that colouring. Take k=12000², use sqrt(p)<17/30, and compare
+
+    e/k + 48(17/30)/12000 + (12000²)³ * 10^(-27)/8
+        < 603/220000 = 1/25 - (1/44 + (3197/20000)/11).
+
+The constant is small, but uniform for arbitrary graph order and weights. More generally optimizing k gives a bound of the form beta <= 1/44+e/11+O(T^(1/7)), with an absolute implied constant. This uses a sampling *theorem* and does not enumerate graphs of the quoted sample size.
