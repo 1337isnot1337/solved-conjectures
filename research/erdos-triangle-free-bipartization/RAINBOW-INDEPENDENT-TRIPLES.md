@@ -20,15 +20,15 @@ If an exact total first-block mass is desired, specify the mass of C that has to
 
 The positive lower bound can be made explicit using [Bender–Krauthgamer, Theorem 2.1](https://arxiv.org/html/2611.03205v1#S2), the November 2026 Max-Cut sampling result. Let T denote the independent transversal density (classes in fixed order) and p=2e. For every integer k>=1, independent product-weighted sampling with k slots gives
 
-    beta <= 1/44 + e/11 + e/k + 48 sqrt(p)/sqrt(k) + k³ T/8.
+    beta <= 1/44 + e/11 + e/k + 48 sqrt(p)/sqrt(k) + k² T/2.
 
 To verify the normalization, let w_v be the positive vertex masses, W_uv the zero-one adjacency matrix, and n the support order. Use A_uv=n² w_u w_v W_uv and p_v=w_v in that theorem. Its scaled kernel K is exactly W, and its moment parameter H is the weighted mean of sqrt(d(v)), at most sqrt(p). The normalized sample has edge weight W_(X_i,X_j)/k² and keeps repeated draws as separate false twins. Its expected total edge mass is (1-1/k)e. Hence the expected sample deletion cost is at least beta-e/k-48 sqrt(p)/sqrt(k).
 
-The sample inherits triangle-freeness and the three-colouring. Without an independent transversal its minimum cost is at most 1/44+e_sample/11 by the acyclic median proof. Otherwise the random cut and weighted Mantel give the bound 1/8. Its probability of any independent transversal is at most k³ T by a union bound over the three ordered slots in their required colours. Therefore the sample's expected cut cost is at most 1/44+e/11+k³ T/8, proving the claim.
+For each sample, choose one vertex from each independent transversal and discard their union. If the sample has m transversals, this removes at most m vertices. The smaller graph is triangle-free, three-coloured and transversal-free. By the homogeneous acyclic median bound its minimum cost is at most N_remaining²/44 + e_remaining/11, which is at most 1/44+e_sample/11 in the original sample units. Restore the discarded vertices with independent fair signs: each incident edge is missed with probability 1/2, and their total edge mass is at most m/k. The expected sample deletion cost is therefore at most 1/44+e/11 + E[m]/(2k). Counting transversals by the three ordered slots in their required colours gives E[m]<=k³ T. This proves the claim without requiring a sample entirely free of transversals.
 
-For example, every middle-band counterexample with a proper three-colouring must have T>10^(-27) in that colouring. Take k=12000², use sqrt(p)<17/30, and compare
+For example every middle-band counterexample with a proper three-colouring must have T>4*10^(-20) in that colouring. Take k=12500², use sqrt(p)<17/30, and compare
 
-    e/k + 48(17/30)/12000 + (12000²)³ * 10^(-27)/8
+    e/k + 48(17/30)/12500 + (12500²)² * (4*10^(-20))/2
         < 603/220000 = 1/25 - (1/44 + (3197/20000)/11).
 
-The constant is small, but uniform for arbitrary graph order and weights. More generally optimizing k gives a bound of the form beta <= 1/44+e/11+O(T^(1/7)), with an absolute implied constant. This uses a sampling *theorem* and does not enumerate graphs of the quoted sample size.
+More generally optimizing k gives beta <= 1/44+e/11+O(T^(1/5)), with an absolute implied constant. These are all-order sampling estimates, not enumeration or finite-order instances of the conjecture.
