@@ -25,6 +25,9 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Cube-cover obstruction](CUBE-COVER-OBSTRUCTION.md): global mixing cannot be a general extraction step. At degrees arbitrarily above log log(order) and with girth growing, every subgraph with an edge has a matching cut. This precludes either strong normalized spectral expansion or bipartite joinedness and small-set expansion together.
 - [Covers preserving cycles](COVERS-PRESERVING-CYCLES.md): a three-edge switch preserves specified single-cycle lifts while raising girth. Applying it to a cube face makes the expander-extraction obstruction coexist with a known witness pair. Lack of global joinedness therefore cannot rule out the pair.
 
+- [Overlapping cycle lifts](OVERLAPPING-CYCLE-LIFTS.md): with prime sheet number, a five-edge switch can preserve every specified simple cycle preimage, including edge-sharing ones. This simultaneously retains every base witness if all simple base cycles are designated.
+- [Euler-tour covers](EULER-TOUR-COVERS.md): every connected even-regular graph has a Hamilton-decomposable finite cover. For the same quartic base, another connected cover of the same sheet number avoids the pair. Thus existence in a chosen cover does not imply existence downstairs.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
