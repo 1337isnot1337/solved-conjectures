@@ -22,7 +22,7 @@ For the neighborhood bound, write $`A^-,A^+`$ for the predecessors and successor
 
 Consequently, if $`G`$ has no cycle with at least as many chords as vertices, some nonempty $`A`$ on one shore satisfies
 ```math
-|A|<n/(d-2), \qquad |N_G(A)|\le 2|A|-1.
+|A|\lt n/(d-2), \qquad |N_G(A)|\le 2|A|-1.
 ```
 The set $`U=A\cup N_G(A)`$ has size less than $`3n/(d-2)`$ and spans at least $`d|A|`$ edges. Thus its average degree is strictly greater than $`2d/3`$. This gives two sufficient conditions for a positive answer on a fixed host. Either every one-shore set below the stated size expands to at least twice its size, or every vertex set of size below $`3n/(d-2)`$ has induced average degree at most $`2d/3`$. Neither condition asks for large-set joinedness.
 
