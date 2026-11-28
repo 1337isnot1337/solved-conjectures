@@ -58,3 +58,25 @@ The first identity integrates the degree on T. For the second, missed degree 2B 
 There is also an upper control e_T<=2Bt². To see it, choose optimal cuts of the two induced regions independently, then flip one sign at random. The expected cost is at most beta(T)+beta(S)+e(T,S)/2, where beta uses the original masses. Global extremality bounds beta(T)<=Bt² and beta(S)<=B(1−t)² by renormalization. Substitute the first formula in (6) and compare with B. Approximating the induced infima suffices if no cut attains them. This last upper control needs only global extremality and the value of the degree integral on T.
 
 If T is independent, a further exact simplification holds: the restriction of almost every stationary optimum f to S is already optimum for W[S], with cost B(1−2t). Indeed all T vertices have zero field for f and have no edges inside T, so the missed mass on T–S equals half its edge mass. After changing the cut on S, independently putting each T vertex on its better sign never charges more than that same half. Thus any improvement on S would improve f. This special case also implies t<=1/2.
+
+### Triangle-free strengthening through missing cross pairs
+
+Put s=1−t. If t>0, the floor locus in a global extremizer also satisfies
+
+    s²/4 − B >= 8B² s/(s+8B).                          (7)
+
+In particular at B>=1/25 it has mass strictly less than 17/30, improving the crude 3/5 bound. The estimate uses only relations at the exact degree floor; (5) is the separate near-floor assertion.
+
+Fix an optimum f from the stationary law as in the pointwise proof. Write S+, S− for its two signs on S, with masses s+,s−. Every point x of T has missed degree and crossing degree both exactly 2B. All its crossing degree goes to S. Thus its two degrees into S have product 2B(2B−d_T(x)), regardless of its sign. Each pair of one neighbor on each side forms a nonedge of W[S], by triangle-freeness.
+
+Let C_S be the unordered crossing mass in S, and D=s+ s−−C_S the mass of its missing cross pairs. In this particular cut its missed mass in S is B(1−2t)+e_T, not just on average: the degree of every x in T is 4B and its field vanishes. Integrating (2) over S gives
+
+    2(C_S − [B(1−2t)+e_T]) >= e(T,S) = 4Bt−2e_T,
+
+so C_S>=B. Consequently D<=s²/4−B. Also (2) gives d_T(y)<=d_S(y)−2m_(S,f)(y), at most the mass of S on the opposite sign. Any missing pair y in S+, z in S− therefore has common-neighbor mass in T at most min(s+,s−)<=s/2.
+
+Count the same neighborhood products over x in T and interchange the integral with that on S+ × S−. It follows that
+
+    4B(Bt−e_T) <= (s/2) D.
+
+By (6) and Mantel, e_T<=s²/4−2Bs. If D0=s²/4−B, the last inequality gives (s/2)D0>=4B(Bs−D0), which is exactly (7). In particular s>=2 sqrt(B), so s>=2/5 if B>=1/25. The right side of (7) increases with B, and its left side decreases with B. For B=1/25, the difference of the two sides is strictly increasing for 2/5<=s<=13/30: its derivative is s/2−8B²·8B/(s+8B)^2>0 there. Its value at 13/30 is negative. This proves s>13/30, hence t<17/30.
