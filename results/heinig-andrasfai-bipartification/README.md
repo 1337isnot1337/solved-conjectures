@@ -4,6 +4,7 @@
 
 - [Complete proof](PROOF.md)
 - [Source and prepublication review record](REVIEW.md)
+- [Why the fixed-rank rotations alone do not suffice](FIXED-ROTATIONS.md)
 - [Tracking issue #1099](https://github.com/1337isnot1337/solved-conjectures/issues/1099)
 
 This is the mathematical assertion of Heinig’s 2009 Conjecture 6, not his Conjecture 5 about the optimum in each unweighted template, and not the unrestricted Erdős #23.

@@ -1,5 +1,9 @@
 # History
 
+## 27 November 2026 — Heinig’s Andrásfai bipartification conjecture
+
+A written proof gives the sharp pentagon deletion bound for every graph homomorphic to an Andrásfai graph. It covers every rank and arbitrary vertex product weights. The unrestricted Erdős problem remains open. [Proof](results/heinig-andrasfai-bipartification/PROOF.md) · [Source and review record](results/heinig-andrasfai-bipartification/REVIEW.md)
+
 ## 27 November 2026 — Every proper tree of diameter six
 
 The ordinary chromatic symmetric function determines every proper tree of diameter six among all finite trees. Here every nonleaf vertex has a leaf neighbor. Branching and repeated numbers of leaf neighbors are unrestricted. In every diameter the proof recovers the extended generalized degree polynomial of the weighted core of a proper tree. This is a partial theorem under the existing Stanley question. [Proof](docs/research-results/stanley-tree-subdivisions/PROPER-DIAMETER-SIX.md) · [Independent review, sources and checks](docs/research-results/stanley-tree-subdivisions/PROPER-DIAMETER-SIX-REVIEW.md)

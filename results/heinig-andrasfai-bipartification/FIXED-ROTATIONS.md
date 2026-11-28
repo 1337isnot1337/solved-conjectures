@@ -1,0 +1,18 @@
+# Why a fixed rank's Heinig rotations do not suffice
+
+The mathematical assertion of Heinig's Conjecture 6 is the deletion bound for every homomorphic preimage of an Andrásfai graph. The source also suggests using copies of a particular template bipartification, $F_k$. Here is an exact, unbounded-rank obstruction to a narrower interpretation: pulling back just the rotations of $F_k$ along a given homomorphism to $\operatorname{And}_k$, and selecting the best such pulled-back cut, cannot prove the bound.
+
+Under the circular indexing $v_j\mapsto kj\bmod (3k-1)$, Heinig's parts in Theorem 3, equations (3)–(4), are the two complementary contiguous blocks of lengths $\lfloor(3k-1)/2\rfloor,\lceil(3k-1)/2\rceil$. Indeed $v_{3i}$ maps to $i$ and $v_{3i+1}$ maps to $k+i$, so the displayed $A_k$ is precisely the initial smaller block. Thus the rotations are exactly the cuts into contiguous blocks of these two sizes.
+
+Let $m=3k-1>48$. Use five occupied classes $a,b,c,d,e$ with circular indices
+$
+0,\quad\lfloor m/4\rfloor,\quad\lfloor3m/8\rfloor,\quad
+\lfloor5m/8\rfloor,\quad\lfloor3m/8\rfloor+\lceil m/2\rceil .
+$
+Give them masses $3,3,2,2,2$ in units of $1/12$, respectively, and put zero elsewhere. Their renormalized phases differ by less than $1/m$ each from $0,1/4,3/8,5/8,7/8$. The phase differences at these ideal phases are all at least $1/24$ away from the adjacency boundaries $1/3,2/3$. As $2/m<1/24$, the exact induced graph on the occupied classes is the pentagon with edges $ac,ad,bd,be,ce$. The first four costs are $1/24$; the last costs $1/36$. The unrestricted optimum is $1/36$, by cutting every edge except the light edge $ce$.
+
+If $m$ is even, $c,e$ are antipodal, hence always separated by a balanced circular block cut. Since the pentagon is odd, at least one heavier edge remains monochromatic. If $m$ is odd, the only balanced circular block that can contain both $e$ and $c$ is the larger block starting at $e$ and wrapping through $a,b$ to $c$. In that cut $ac$ and $be$ are both monochromatic. The other balanced circular cuts separate $c,e$, so again at least one heavier edge remains monochromatic. Every rotation therefore has cost at least $1/24>1/25$. The same is true with all classes positive: allocate $1/100$ total weight over the previously empty classes and multiply the old weights by $99/100$. The heavier-edge lower bound alone stays above $1/25$. Rational weights give ordinary finite blow-ups, so the obstruction is not peculiar to a continuous weight model.
+
+This does not refute the mathematical deletion assertion, and does not rule out using rotations in a different template or as part of an argument with an additional cut. In fact, the three median cuts in our proof are compatible with Heinig's construction after changing the circular embedding. They isolate one contiguous arc for each of three equally spaced choices of starting sector, with arc length $2/3-t$ for a common median threshold $t$. An increasing reparameterization within the third of a circle can take $t$ to $1/6$ and be copied on all three sectors. It preserves all comparisons between the sector coordinates, hence all graph adjacencies, and turns the three cuts into semicircle cuts. The finitely many points and cut endpoints have positive separation from the relevant boundaries; approximating by a larger odd-rank Andrásfai grid and rounding the three semicircle origins realizes all three cuts as rotations of an $F_K$. The proof uses them to force entry to the established dense tail when necessary; it does not claim that one such rotation must be optimal.
+
+[Original source](https://arxiv.org/pdf/0907.3928#page=2) · [Tracking issue #1099](https://github.com/1337isnot1337/solved-conjectures/issues/1099).
