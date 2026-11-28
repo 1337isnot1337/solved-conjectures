@@ -43,3 +43,21 @@ In particular d(x)>=4B almost everywhere since F_(N(x))<=d(x)/2. For any indepen
 Use the countable partition of the graphon into independent sets from the saturation proof. On one such set, the cost varies affinely with f, since its internal kernel is zero. At an optimum, wherever |f|<1 the current field Wf is zero almost everywhere by the first-order condition. Therefore replacing the values on that independent set by signs with conditional mean equal to f (using one independent uniform random threshold) preserves the cost exactly and preserves previous sets' signs. Do this in succession over the countable partition. The functions converge in L² to a sign function because the modified sets increase to full measure, so continuity of the cost gives an optimum sign in each realization. Each vertex was rounded at most once, and thus its conditional mean given the initial f equals that initial value. The functions F_I are concave in the two integrals defining them, so Jensen's inequality shows that this rounding does not increase any expected F_I. The same common law can consequently be made a law of actual optimum signs.
 
 This gives exact stationary and independent-attachment constraints on one maximizer. It does not prove finite-step structure, nor justify a second-order finite-gap argument when the optimum cut set may have arbitrarily close competitors.
+
+
+## A linear defect bound for near-optimum cuts
+
+The independent neighborhoods bound the local flip defect **linearly** in the objective gap once weighted degrees are bounded below. This does not require finite chromatic number or a least-positive gap between cuts.
+
+For any relaxed cut f define h(x)=|(Wf)(x)|+f(x)(Wf)(x), a nonnegative function. Put delta=C_W(f)-B. If I is independent, replace f on I by -sign(Wf). There is no quadratic term inside I, so this decreases the cost by exactly (1/2) integral_I h. Therefore integral_I h<=2 delta. Taking I=N(x) and integrating over the root gives
+
+    integral d(x) h(x) <= 2 delta,
+    integral h <= 2 delta / d_min,   d_min=ess inf d >= 4B.
+
+For an actual sign cut, h/2 is exactly its positive single-vertex flip gain density. The same argument works on a finite fixed weighted support with positive minimum degree, with B replaced by its own optimum.
+
+The average payoff of the original neighborhood attachment distribution is L_N(f)=(1/2) integral(d-|Wf|). Hence L_N(f)=2 C_W(f)-(1/2) integral h, and
+
+    L_N(f) >= 2B - (1/d_min - 2) delta.                        (3)
+
+Thus this distribution's attachment deficit is linear in the old cut's gap, even for a graphon. This controls one subtlety behind the [second-order layer argument](INDEPENDENT-ATTACHMENT-LAW.md), which cannot use finite gaps here. More generally suppose a test layer has an attachment average L_*(f)>=2B-K delta for all f and attains 2B on some optimum. Then the old and attachment terms in its full cost minus B have sum at least (1-epsilon)(1-(K+1)epsilon) delta. Compactness forces extended optimizers, as epsilon tends to zero, to approach old optimizers with L_*=2B. If new-layer cost is uniformly greater than B on that tight set, it remains so along the extended optimizers, contradicting maximality. In this argument the attachment layer can be finite, with compact and continuous cost in its finite sign variables. The inequality (3) supplies the needed error bound for the original neighborhood distribution, but those old neighborhoods cannot add genuinely new edges on a saturated graphon. A nontrivial replacement distribution remains to be found.
