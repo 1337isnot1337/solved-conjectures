@@ -46,6 +46,12 @@ Each inflated module must contribute at least two crossing edges of $`D`$, since
 
 Thus every footprint meets an edge of $`E(C)\cap E(D)`$. No edge of the specified cycle meets two footprints, so at least $`2M`$ such edges are needed. This proves the theorem with $`c=2/(|V(K)|\,|V(J)|)`$.
 
+## Above the conjectured density, with a proper-support witness
+
+Take even $`d\to\infty`$ and $`g=\max(4,\lfloor\sqrt d\rfloor)`$. In this case the [Hamilton-decomposable module lemma](HAMILTON-MODULES.md) permits a module $`J`$ of any sufficiently large even order. Choose its order of size $`O((d+2)^{g+1})`$, above the explicit distance-switch threshold used for the footprint. Take $`M=d`$, so $`\log\log n=O(\log d)`$ and $`d/\log\log n\to\infty`$. The girth and the number of compulsory overlaps both tend to infinity.
+
+For even $`d\ge10`$, a seed edge with multiplicity at least four can be assigned to the four distinct ports of two Hamilton factors of $`J`$. As in [the nonspanning example](NONSPANNING-NECESSITY.md#the-obstruction-can-coexist-with-a-proper-support-witness), those two paths close through their common right singleton. They give a genuine pair on the module plus singleton. Adding the specified Hamilton cycle preserves this witness. Hence failure of the prescribed spanning approaches can occur in the very same example as a successful nonspanning witness.
+
 ## Scope and literature
 
 The construction rules out replacing the common-support task by finding a longest cycle and retaining nearly all its edges. The obstruction is not low chord count, poor edge connectivity, or fixed girth. It does not exclude other spanning pairs or pairs on proper support.
