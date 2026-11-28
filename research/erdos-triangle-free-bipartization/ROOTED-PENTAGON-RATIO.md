@@ -42,3 +42,35 @@ In particular I_4>0. At least one root has exterior mass at most 1−5T_5/I_4, g
 This excludes every positive pentagon blow-up in the middle band even with unequal class weights: every vertex belongs to D for every root pentagon. It does not show that the remaining flag constraints are incompatible with a counterexample.
 
 See [Erdős–Győri–Simonovits](https://korandi.org/docs/misc/erdos_gyori_simonovits.pdf) for the historical pentagon-like method and [Ferudun](https://arxiv.org/abs/2606.28041) for a separate rooted-cut bound. The rooted labels and five cuts themselves are not claimed as new. See also the [pentagon repair criterion](PENTAGON-REPAIR.md), which is stronger for a complete core of sufficient mass.
+
+## Stronger seven-draw root-aware inequalities
+
+Split the exterior into O₀ (no root neighbors) and O₁ (exactly one). For v∈O₁, let j(v) be its unique neighboring root. Let A be the attachment edge mass from O₁ to the corresponding class D_(j(v)). Let J₁ and J₂ be the masses of O₁–O₁ edges whose root labels have cyclic distance one or two. Let J₀ be the mass of O₀–O₁ edges. Then
+
+```math
+ \beta\le(e+E_{DO}+4E_{OO}-2A-4J_1-2J_2-2J_0)/5.
+```
+
+Use the same five alternating cuts on D, but put each O₁ vertex opposite the sign of its labeled class. Its only possible D-neighbors are in D_j and D_(j±2): the two other rooted classes share its unique root as neighbor. Attachments to D_j now always cross. The other two allowed labels differ from D_j in two of the five cuts, so their attachment loss is 2/5. Edges within O₁ cannot have both endpoints of the same root label. If their label distance is one or two, the fraction cut is 4/5 or 2/5 respectively. These give the terms in A, J₁ and J₂.
+
+Next put each O₀ vertex on its best side with respect to **both** D and the now assigned O₁ vertices. For one such vertex let a,b be its total weighted degrees into these sets. The mean over the five cuts of its best loss is a jointly concave, cyclically invariant function of the two five-coordinate attachment profiles. Averaging the profiles under rotation puts a/5 and b/5 on each label of the respective type; O₁ labels have opposite signs to D labels. The resulting smaller side sum is (2a+2b+min(a,b))/5≤(2a+3b)/5. This pays 2/5 on O₀–D and 3/5 on O₀–O₁ attachments in the bound. Charge O₀–O₀ edges in full. Summing all categories gives the displayed inequality. The original O₁ improvement is credited to an independent internal AI research pass; jointly optimizing the O₀ attachments gives the extra J₀ term.
+
+Let B be the pair mass from O₁ vertices to D_(j(v)±1). All these pairs are forbidden by triangle-freeness. Use E_DO≤ν(1−ν)−B and 4E_OO≤ν² to conclude that in any middle-band counterexample and at every sampled pentagon, up to a null set,
+
+```math
+ \mu(D)+B+2A+4J_1+2J_2+2J_0 < 19197/20000.
+```
+
+Multiply by the root-cycle indicator and average to obtain a linear induced-density row on at most seven draws. Pair terms are in unordered normalization: divide by two if a count includes both endpoint orders. The proof extends to zero-one graphons using the same neighborhoods and measurable cuts.
+
+A fixed-root example shows the improvement need not be small. Give the five root vertices mass 0.15 each. Add two adjacent vertices of mass 0.10 each, attached only to roots 0 and 1, respectively, and an isolate of mass 0.05. The graph is triangle-free and has ordered density 0.305. At this root e=0.1525, E_DO=A=0.03, and E_OO=J₁=0.01. The earlier attachment estimate gives 0.0445; the new one gives 0.0245. This compares bounds for the same root, not the optimal choice of a root.
+
+A family of additional rows is available by randomizing the signs of the O₀ vertices. Starting from the best assignments above, independently keep each with probability (1+λ)/2 and reverse it otherwise. For fixed rational 0≤λ≤1, the numerator in the main inequality of this section changes by at most
+
+```math
+ \frac{1-\lambda}{2}E_{0D}
+ -\frac{1-\lambda}{2}J_0
+ -\frac52(1-\lambda^2)E_{00}.
+```
+
+Here E₀D is the O₀–D edge mass and E₀₀ the O₀–O₀ mass. The attachment loss interpolates between its previous bound and half the incident mass. An edge with both endpoints in O₀ is now missed with probability at most (1+λ²)/2. The parameter allows a different trade if many exterior edges have two zero-root endpoints. None of these constraints alone is known to rule out all counterexamples.
