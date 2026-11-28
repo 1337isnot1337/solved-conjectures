@@ -85,6 +85,9 @@ For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\si
 - [Exterior gap routing](EXTERIOR-GAP-ROUTING.md) explains why direct chords cannot shortcut a long gap of the bipartite rotation patch. A Hall-deficit identity measures the exact toll after all feasible length-two midpoint replacements. Paired exterior paths can then be assessed with the interlacement test. See the [fixture checker](verify_gap_shortcuts.py).
 - [Laminar bypass cuts](LAMINAR-BYPASS-CUT.md) permit deletion of protected-patch vertices, charge every lost chord exactly, and optimize supplied nested choices by one minimum cut. A chord-split inequality and Hall charging give necessary conditions at a surplus-maximal cycle. See the [checker](verify_laminar_bypass.py).
 
+- [Subdivided rim obstruction](SUBDIVIDED-RIM.md) allows arbitrary chord-crossing patterns, high girth and high host treewidth while every cycle has a small chord fraction. See the [cycle-count checker](verify_subdivided_rim.py).
+- [Crossing bypass hardness](CROSSING-BYPASS-HARDNESS.md) makes precise when supplied order-preserving shortcuts become computationally hard, and gives a parameter for keeping the laminar min-cut method. See the [Max-Cut fixture checker](verify_crossing_bypass.py).
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
