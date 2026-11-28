@@ -90,6 +90,9 @@ For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\si
 
 - [Exterior rotations](EXTERIOR-ROTATIONS.md) allow replacing a used link by an exterior label. The resulting incidence patch retains all neighbors of its moving endpoints and all neighbors of their initially exterior labels. The codegree count controls used and unused incidences together. See the [rebasable path checker](verify_exterior_rotations.py).
 
+- [Exterior-star shortcuts](EXTERIOR-STAR-SHORTCUTS.md) exactly trade old chords for new ones, with a sharp stock-preserving threshold for one outside vertex.
+- [Regular completion with no short exterior ears](REGULAR-NO-SHORT-EARS.md) proves that even a shortest cycle attaining any specified chord stock in a regular high-girth host can have no short exterior ear. Both constructions have a [fixture checker](verify_exterior_shortcuts.py).
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
