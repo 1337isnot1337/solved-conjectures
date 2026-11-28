@@ -8,25 +8,25 @@ Issue: [#138](https://github.com/1337isnot1337/solved-conjectures/issues/138). C
 
 Larry X. W. Wang and Neil N. Y. Yang's [Nankai author manuscript][WY], printed page 2, defines
 
-$$
+```math
 \frac18\Xi(z/2)=\sum_{n=0}^{\infty}\gamma(n)\frac{(-z^2)^n}{n!}.
 \tag{1}
-$$
+```
 
 Here $\Xi(t)=\xi(1/2+it)$, with
 
-$$
+```math
 \xi(s)=\frac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s),
 \qquad \xi(1-s)=\xi(s).
-$$
+```
 
 The opposite sign of $it$ used in the manuscript gives the same even function. Write $\Delta a(n)=a(n+1)-a(n)$. Conjecture 1.10 on printed page 6 asserts
 
-$$
+```math
 (-1)^r\Delta^r\gamma(n)>0
 \qquad\text{for every pair of positive integers }r,n.
 \tag{WY}
-$$
+```
 
 The universal quantifiers are essential. The manuscript's Theorem 1.8 concerns sufficiently large $n$ for each fixed $r$. It is compatible with the theorem below.
 
@@ -47,13 +47,13 @@ Thus (WY) is false. Even allowing a finite exceptional set of orders for each fi
 
 Define the entire functions
 
-$$
+```math
 \Theta(w)=\sum_{m=0}^{\infty}
  \frac{\xi^{(2m)}(1/2)}{(2m)!}w^m,
 \qquad
 G(w)=\frac18\Theta(w/4).
 \tag{3}
-$$
+```
 
 Evenness of $\xi$ about $1/2$ gives the useful notation
 $\Theta(w)=\xi(1/2+\sqrt w)$. Formula (3), rather than a choice of square-root branch, defines the entire function. O'Sullivan [OS, section 1] records that $\Theta$ is real entire of order $1/2$ and that all its coefficients are strictly positive.
@@ -69,32 +69,32 @@ G(w)=\sum_{m=0}^{\infty}\gamma(m)\frac{w^m}{m!},
 
 and, for real $t$,
 
-$$
+```math
 G(-4t^2)=\frac18\Xi(t).
 \tag{5}
-$$
+```
 
 Fix $n\ge0$ and put
 
-$$
+```math
 E_n(z)=e^zG^{(n)}(-z).
 \tag{6}
-$$
+```
 
 Both factors are entire. Their power series converge absolutely on compact sets, so their Cauchy product gives
 
-$$
+```math
 \begin{aligned}
 E_n(z)
-&=e^z\sum_{j=0}^{\infty}\gamma(n+j)\frac{(-z)^j}{j!}\\
-&=\sum_{r=0}^{\infty}
+&=e^z\sum_{j=0}^{\infty}\gamma(n+j)\frac{(-z)^j}{j!}
+\\ &=\sum_{r=0}^{\infty}
  \left(\sum_{j=0}^{r}(-1)^j\binom rj\gamma(n+j)\right)
- \frac{z^r}{r!}\\
-&=\sum_{r=0}^{\infty}
+ \frac{z^r}{r!}
+\\ &=\sum_{r=0}^{\infty}
  (-1)^r\Delta^r\gamma(n)\frac{z^r}{r!}.
 \end{aligned}
 \tag{7}
-$$
+```
 
 The last equality uses the forward-difference convention in section 1. No asymptotic expansion or interchange of nonconvergent sums occurs.
 
@@ -131,22 +131,22 @@ This section gives a second proof that (WY) cannot hold, independent of Hardy's 
 
 Because $G$ has order $1/2$, there are constants $C,R_0>0$ such that its maximum modulus satisfies
 
-$$
+```math
 M_G(R)\le \exp(CR^{3/4})\qquad(R\ge R_0).
-$$
+```
 
 Cauchy's coefficient estimate applied to (4), with $R=n^{4/3}$, gives
 
-$$
+```math
 \frac{\gamma(n)}{n!}\le \frac{\exp(Cn)}{n^{4n/3}}.
-$$
+```
 
 Using $n!\le n^n$, we obtain
 
-$$
+```math
 0<\gamma(n)^{1/n}\le e^C n^{-1/3}\longrightarrow0.
 \tag{9}
-$$
+```
 
 The exponent $3/4$ is only a convenient choice between the known order $1/2$ and $1$.
 
@@ -154,18 +154,18 @@ The exponent $3/4$ is only a convenient choice between the known order $1/2$ and
 
 Suppose, contrary to the desired conclusion, that for some $N$,
 
-$$
+```math
 (-1)^r\Delta^r\gamma(n)\ge0
 \qquad(n\ge N,\ r\ge0).
 \tag{10}
-$$
+```
 
 Set $b_k=\gamma(N+k)>0$. For $M\ge2$ and $0\le j\le M$, define
 
-$$
+```math
 w_{M,j}=\binom Mj(-1)^{M-j}\Delta^{M-j}b_j\ge0.
 \tag{11}
-$$
+```
 
 To evaluate their moments, let $\mathcal L$ be the linear functional on real polynomials given by $\mathcal L(x^k)=b_k$. Then
 
@@ -175,39 +175,39 @@ w_{M,j}=\mathcal L\!\left(\binom Mj x^j(1-x)^{M-j}\right).
 
 The three elementary Bernstein-basis identities yield
 
-$$
+```math
 \sum_{j=0}^{M}w_{M,j}=b_0,
 \qquad
 \sum_{j=0}^{M}\frac jM w_{M,j}=b_1,
-$$
+```
 
-$$
+```math
 \sum_{j=0}^{M}\left(\frac jM\right)^2w_{M,j}
  =\left(1-\frac1M\right)b_2+\frac{b_1}{M}.
 \tag{12}
-$$
+```
 
 For completeness, the polynomial identities before applying $\mathcal L$ are respectively $1$, $x$, and $(1-1/M)x^2+x/M$, obtained from the binomial theorem and its first two derivatives.
 
 Cauchy–Schwarz for the nonnegative weights in (11) gives
 
-$$
+```math
 b_1^2\le b_0\left[\left(1-\frac1M\right)b_2+\frac{b_1}{M}\right].
-$$
+```
 
 Letting $M\to\infty$ gives $b_1^2\le b_0b_2$. Apply the same argument to each shifted tail to obtain
 
-$$
+```math
 b_{k+1}^2\le b_kb_{k+2}\qquad(k\ge0).
 \tag{13}
-$$
+```
 
 Thus the positive ratios $b_{k+1}/b_k$ are nondecreasing. In particular,
 
-$$
+```math
 b_k\ge b_0\left(\frac{b_1}{b_0}\right)^k.
 \tag{14}
-$$
+```
 
 This contradicts (9). Therefore no tail can have all its signed differences nonnegative. The proof is an elementary version of the moment-sequence obstruction to simultaneous complete monotonicity and supergeometric decay; no moment-representation theorem is imported.
 

@@ -4,21 +4,21 @@
 
 Let $\mathcal P_n$ denote polynomials over $\mathbb C$ of degree at most $`n`$, $n\ge1$, and let $D=d/dz$. Consider a constant-coefficient differential operator
 
-$$
+```math
 T=\sum_{j=0}^n a_jD^j,\qquad a_0\ne0.
-$$
+```
 
 It is invertible on $\mathcal P_n$ and preserves degree. For equal-cardinality multisets $`U=(u_i)_{i=1}^m,V=(v_i)_{i=1}^m`$, write
 
-$$
+```math
 d_F(U,V)=\min_{\pi\in S_m}\max_i|u_i-v_{\pi(i)}|.
-$$
+```
 
 This is the Fréchet/bottleneck matching distance in [Ćurgus and Mascioni, *Perturbations of roots under linear transformations of polynomials*, §8 and Example 12.3](https://arxiv.org/abs/math/0502027), *Constructive Approximation* **25** (2007), 255–277. If $Z(f)$ is the root multiset, they define
 
-$$
+```math
 K_F(T)=\sup_{f\in\mathcal P_n\setminus\mathcal P_0}d_F(Z(f), Z(Tf)).
-$$
+```
 
 At the end of Example 12.3 they ask whether an extremizing polynomial exists and whether it is unique. The answers are: **existence always holds; uniqueness fails**, even if scalar multiplication and all Euclidean isometries of the root multiset are ignored. The definition uses degree *at most* $`n`$, not exact degree. In addition, for exact degree $n\ge2$, the limiting largest value as root diameter tends to infinity equals the optimum over degrees at most $n-1$. For the specific cubic operator in their Example 12.3, the optimum is exactly $2$, and their example attains it uniquely up to translation and scalar multiplication.
 
@@ -46,11 +46,11 @@ Fix pairwise disjoint small disks about the distinct roots of $Tg_A$. Rouché's 
 
 A class-preserving matching has bounded cost, since both recentered multisets within each class are bounded. Any matching with a cross-class pair has cost tending to infinity, uniformly over such pairs because there are just finitely many classes. Hence every optimal matching preserves classes for large $\ell$, and the overall distance is the maximum of the individual class distances. We have proved, along the chosen subsequence,
 
-$$
+```math
 d_F(Z(f_\ell),Z(Tf_\ell))
 \longrightarrow \max_A d_F(Z(g_A),Z(Tg_A)).
 \tag{1}
-$$
+```
 
 ## Attainment and the precise limit at infinity
 
