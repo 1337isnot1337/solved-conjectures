@@ -35,6 +35,20 @@ In fact, for any subfamily with union of interiors $`X`$, exactly $`|X|+k`$ rim 
 
 Conversely, for a fixed edge-disjoint family this charging certificate guarantees that none of its subfamilies improves the surplus. This is stronger than having one valid charge for each arc considered separately. A chord can otherwise be reused in conflicting charges.
 
+## A dichotomy after cutting at a chord
+
+Let a cycle have $`n_C`$ vertices and $`k_C>0`$ chords. A chord $`uv`$ cuts it into two smaller cycles. Let $`x(uv)`$ count the chords with one endpoint in the interior of each $`u,v`$ arc. The total lengths of the two smaller cycles add to $`n_C+2`$. Their chord counts add to $`k_C-1-x(uv)`$: the splitting chord becomes a rim edge in both, and no chord crossing the split survives. Thus their total surplus is the original surplus minus $`3+x(uv)`$.
+
+If neither child improves the original surplus, then
+```math
+x(uv)\ge n_C-k_C-3 .
+```
+Since $`x(uv)\le k_C-1`$, every chord of any cycle with $`2k_C<n_C-2`$ gives a strictly improving child. Quantitatively, a child has surplus at least the original surplus plus $`(n_C-2-2k_C)/2`$, so the integer gain is at least its ceiling.
+
+In particular a global surplus-maximizer is either chordless or has at least $`(n_C-2)/2`$ chords. Iterating the improving cut from any given cycle terminates at one of these two alternatives without decreasing the surplus. If the starting cycle is chorded and has deficit $`n_C-k_C\le g`$ in a graph of girth $`g`$, the chordless alternative is impossible whenever a strict improving step is made. Every chordless cycle has deficit at least $`g`$. If no step is made, the starting cycle already has the stated half-linear number of chords.
+
+A variant preserves a fixed chord-count threshold $`q>0`$. Choose a surplus-maximizer among cycles with at least $`q`$ chords. If its count is less than $`(n_C-2)/2`$, then every chord splits off a child with fewer than $`q`$ chords. Otherwise both children belong to the optimization class, contradicting the strict improvement. This provides a concrete structural condition on a cycle that maximizes surplus while keeping a prescribed stock of chords.
+
 ## Limit
 
 The optimization is exact for a supplied laminar family of chord bypasses, not for every choice of crossing shortcuts. It also gives necessary conditions on a globally surplus-maximal cycle. A high minimum degree does not yet force a laminar family with enough removable vertices left uncharged. The unrestricted density conjecture remains open.
