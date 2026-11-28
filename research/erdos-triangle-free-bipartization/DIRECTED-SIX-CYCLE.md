@@ -40,3 +40,20 @@ Any nontrivial strongly connected component of this size contains a directed ind
 In fact **every** directed six-cycle in such a large strongly connected component has a vertex of the support with at most one root neighbor. Suppose otherwise. The exact two-dominating template above says each pure profile is a single root, so every exterior vertex is in some M_i. Split these vertices into M_+ (original colour i+1 relative to type i) and M_- (original colour i-1). Attachments to the roots point from the root into M_+, and from M_- back to the root. An arc from M_+ of type i to M_- of type j would require j-1=i+2 modulo three, hence j=i. This is impossible because M_i is independent. Therefore the root's strongly connected component is exactly its own six vertices.
 
 Its mass is less than 1-sqrt(803/1600), by the residual estimate above, and this is below 17/50. This contradiction proves the asserted low-attachment witness. With arbitrary L removed the same directional argument holds between the pure block, M_+, and M_-, but it only localizes the root's component after deletion: no uniform positive lower bound for the original mass of L is obtained here.
+
+## A quantitative orientation alternative
+
+In a saturated least-support weighted counterexample, fix a proper three-colouring and a directed six-cycle. If the low-profile mass l is at most 1/1000, then one of the two directed mixed classes M_+ or M_- has mass greater than 327/500. This asserts concentration on a single direction, not merely a large total mixed mass.
+
+Let P=A union B denote all pure profiles and define M_+/M_- as above, now with L present. All arcs from P to M go to M_+, and all arcs from M to P start in M_-. There is no arc from M_+ to M_-. Thus the three blocks M_-, P, M_+ occur in a one-way order on the high-profile graph.
+
+Using beta(G[M])<=C²/25 for the proper induced support of mass C, the Clebsch inequality shows C>139/200. Otherwise beta is at most
+
+    3197/100000 + (2/125)(139/200)² + 3/10000 + 2/(47*10^6)
+       < 1/25.
+
+Hence mass(P)<61/200. Suppose both mixed signs have mass at most 327/500=.654. If M_- itself has mass at least .345, take it as a prefix. Otherwise take M_- union P; its mass is at least 1-.001-.654=.345 and less than .345+.305=.650. In either case the chosen prefix has mass in [.345,.655]. Place all of L in the other shore for this interface. Any backward cross edge must touch L. At this extremizer every weighted degree is at most 1/2 by [induced cut balance](INDUCED-OPTIMUM-BALANCE.md), so the wrong-way cross mass is at most l/2<=1/2000. The [one-way criterion](ONE-WAY-SEPARATORS.md) applies, since
+
+    (.155)²/2 + 3/2000 < 603/40000.
+
+This contradicts beta>1/25. The argument does not yet force an anchor with both moderate directions or show that nested dominant directions exhaust the possible cyclic structures.
