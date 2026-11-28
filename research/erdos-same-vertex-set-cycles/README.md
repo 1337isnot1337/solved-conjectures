@@ -69,6 +69,8 @@ n\log\log n`$ density scale. This blocks finding spanning witnesses in the host,
 
 - [Disjoint reserve rotations](DISJOINT-RESERVE-ROTATIONS.md): balanced reserve colouring makes every choice from the two endpoint clouds compatible without losing all small-set expansion. Edges outside the common support need not retain the colouring. A third reserve can be left for closure edges.
 
+- [Paired-path lower bound](PAIRED-PATH-LOWER-BOUND.md): a layered random construction forbids even the initial two paths at density $`\Omega(n\log\log n)`$, with girth growing. It gives a matching lower bound for bounded-degree common-support tree packing, whose upper bound follows from regular extraction and arboricity. Forcing paths rather than trees is still open in this approach.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
