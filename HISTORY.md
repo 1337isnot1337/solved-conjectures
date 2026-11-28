@@ -1,5 +1,9 @@
 # History
 
+## 28 November 2026 — Earlier related work credited on five results
+
+Related-work notes were added to five ranked results whose statements overlap earlier public work in part. The rows stay in the Results table. [Han–Sabag–Kostina–Hassibi](results/han-sabag-kostina-hassibi/PROOF.md) now cites Jin, Li, Hara and Chen, [arXiv:2608.29511](https://arxiv.org/abs/2608.29511). [Bétermin’s FCC/BCC entry](results/betermin-fcc-bcc-cold-spots/PROOF.md) credits [Li and Wang](https://doi.org/10.5281/zenodo.23567522) for the checkerboard lattices in dimension at least four. The [seven-speed](results/seven-speed-spectrum/PROOF.md) and [eight-speed](results/eight-speed-spectrum/PROOF.md) spectrum entries cite [Lee Marshall’s earlier proof](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7) of the one-very-fast-runner regime. The [line-size asymptotic](results/erdos-607-line-sizes/PROOF.md) credits the [earlier proof and Lean formalization](https://github.com/manman4/OEIS_04/tree/d4dc4cc68401bc378642ce118fe884f1c6fed5b2/401/401948) of the realizability criterion.
+
 ## 28 November 2026 — Seven results unranked after confirmed earlier resolutions
 
 A prior-art audit confirmed earlier public resolutions of seven listed results. Their rows are removed from the README Results table, and none counts as a new resolution. The result directories, proofs and checks are kept as later derivations. Each proof now opens with a prior-work note linking the original source, and the entries are registered as unranked supplements.

@@ -1,5 +1,7 @@
 # A sharp asymptotic for the number of plane line-size sets
 
+**Related earlier work (note added 28 November 2026).** The realizability criterion used below, and the resulting count, were proved earlier with a Lean 4 formalization in the sequence's implementation repository, [manman4/OEIS_04, `401/401948`](https://github.com/manman4/OEIS_04/tree/d4dc4cc68401bc378642ce118fe884f1c6fed5b2/401/401948), committed 10 November 2026. The relevant theorems are `Erdos607.realizable_iff` and `Erdos607.certifiedCount_eq_F` in `A401948Lean`, with a written proof in `401948_count_profiles_proof.md`. The text below credits the criterion to the sequence entry. This note adds the earlier proof and formalization, which should be cited for the criterion. The sharp asymptotic and the exact prefactor are the contribution here.
+
 For a set of $n$ distinct real plane points, record the set of sizes of its determined lines, counting each size just once. Let $F(n)$ count the possible records. Write
 
 ```math

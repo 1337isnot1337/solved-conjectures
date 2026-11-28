@@ -1,5 +1,7 @@
 # The eight-speed Loneliness Spectrum Conjecture
 
+**Related earlier work (note added 28 November 2026).** Lee Marshall's [ai-math-results, `results/lonely-runner-tight-6-7`](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), released 29 October 2026, establishes Kravitz's Conjecture 8.3, the form of the spectrum conjecture with one very fast runner, for eight speeds. It combines Kravitz's Theorem 10.3 with a classification of the tight seven-speed sets. Cite that work for that regime. The classification below covers every eight-speed set with loneliness below 1/8, which goes beyond the regime treated there. Earlier sources for the tight six-speed and seven-speed classifications are recorded in the notes in [tight-six-speeds](../tight-six-speeds/PROOF.md) and [tight-seven-speeds](../tight-seven-speeds/PROOF.md).
+
 For eight distinct positive integer speeds let $`L(v)=\max_t\min_i\|t v_i\|`$, where $`\|x\|`$ is the distance from $x$ to the nearest integer. Call $v$ primitive when its entries have gcd one.
 
 **Theorem.** The values strictly below $1/8$ are exactly

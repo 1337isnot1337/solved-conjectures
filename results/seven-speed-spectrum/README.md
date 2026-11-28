@@ -1,5 +1,7 @@
 # Seven-speed loneliness spectrum
 
+**Related earlier work.** The one-very-fast-runner regime of the spectrum conjecture (Kravitz, Conjecture 8.3) for seven speeds was established earlier in Lee Marshall's [ai-math-results](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), released 29 October 2026. Cite that work for that regime. [Details](PROOF.md)
+
 The values below $1/7$ are exactly $s/(7s+1)$ for positive integers $s$, together with $3/23$, $5/37$ and $9/65$. The classification gives every primitive tuple attaining one of these values and implies Zhu’s triangle conjecture for seven distances.
 
 [Proof](PROOF.md) · [Table of 27 sporadic tuples](sporadic.txt) · [Verifier](verify.py) · [Catalogue](../../CONTENTS.md)

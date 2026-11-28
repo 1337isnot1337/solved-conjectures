@@ -1,5 +1,7 @@
 # Han–Sabag–Kostina–Hassibi's conjecture
 
+**Related earlier work (note added 28 November 2026).** Shihao Jin, Junhui Li, Shinji Hara and Wei Chen, *Linear Coding of LTI Sources Over Vector Gaussian Channels: A Majorization Approach*, [arXiv:2608.29511](https://arxiv.org/abs/2608.29511), 30 August 2026, treat the same coding problem. They give necessary and sufficient majorization conditions under individual subchannel power constraints and determine the exact minimum total power under a total power constraint. They cite the Han–Sabag–Kostina–Hassibi papers but do not state Conjecture 1 or a counterexample to it. The repository's source audit did not list this paper, and it has not been established here whether its theorems already imply that Conjecture 1 fails. It should be cited alongside the disproof below.
+
 ## Statement and scope
 
 Han, Sabag, Kostina and Hassibi, *Coded Kalman Filtering over MIMO Gaussian Channels with Feedback*, [arXiv:2406.17196v2](https://arxiv.org/pdf/2406.17196v2), Conjecture 1, equations (23)–(24), asks whether the following optimization problem always has an optimal encoder with exactly one nonzero entry in each column:
