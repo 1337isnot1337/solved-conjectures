@@ -41,3 +41,10 @@ More generally if a triangle-free regular graph has a real unit least-eigenfunct
 The cross term cancels after setting h=s-f, because Qf=q f and 2<f,h>=-||h||² by the equal unit norms. Here ||Q||=2d/n. Near a flat least eigenfunction this supplies an all-order certificate without an exact eigen-sign vector. The spectral theorem alone is a lower bound on the loss attainable by a cut on an arbitrary graph; a flat or almost flat eigenfunction provides the additional rounding step. There is no such rounding claim for all groups or for non-normal Cayley graphs.
 
 Related primary references on the normal Cayley spectral decomposition include [Ellis–Filmus–Friedgut](https://doi.org/10.1017/fms.2017.24) and [Balogh et al.](https://doi.org/10.1137/22M150767X) on triangle-free signless spectra.
+
+
+## Transfer and the limit of the family argument
+
+The near-uniform theorem also applies to homomorphic preimages with arbitrary missing edges: sum the vertex masses in each group-element fiber, call those masses w_g, and require the displayed variance condition on the fiber masses. A cut of the full Cayley template charges the product of the fiber masses for every missed template edge, which bounds the actual cost of the pulled-back cut. This includes edge-deleted and non-Cayley inputs without needing any group automorphism on the input itself.
+
+By contrast, removing the fiber-mass condition entirely would recover the full conjecture, even if the template group were elementary abelian of exponent two. For any triangle-free graph H, take an independent binary basis vector e_v for every vertex and take S={e_u+e_v: uv is an edge of H}. This S is sum-free: the sum of two distinct weight-two generators has weight two only when their underlying edges share a vertex, and it is again a generator only if the three edges form a triangle in H. The input embeds as the induced graph on the basis vectors in Cay(F_2^V,S). Arbitrary supported weights on this copy realize the original weighted problem. Thus the spectral theorem's uniformity requirement is substantive and cannot be silently dropped.
