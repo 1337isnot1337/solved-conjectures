@@ -55,3 +55,53 @@ The sign s of f, with either convention at zeros, has unit norm and ⟨s,f⟩=α
 The last inequality uses p≤0.32 and p−1/4≥0.06. In particular this is a genuine cut, not just a bound on a signless Laplacian relaxation.
 
 Everything here holds for finite graphs of any order by taking their step graphons; the normalization is exactly the one in the conjecture. The spectral p-energy comparison is prior work. What matters in this application is reserving the known color-quotient moments, then enforcing concentration of the remaining negative spectrum before rounding. Approximate bidegree balance or lower densities would need additional estimates.
+
+## An explicit perturbation allowance
+
+The same density interval and sharp target hold without exact regularity if the proper three-coloring satisfies the following aggregate degree test. With d_j(x) the degree into class j, put
+
+```math
+ \epsilon=\sum_i\ \sum_{j\ne i}\int_{A_i}|d_j(x)-p/2|\,dx.
+```
+
+If ε≤10⁻⁸, there is a cut of ordered cost at most 0.077. This constant merely gives an explicit neighborhood; it is not intended to be optimal.
+
+Let a_i be the class masses. Integrating each cross link in both directions gives |a_i−a_j|≤2ε/p, so each a_i>0.32. Write P=QTQ and S=(1−Q)T(1−Q), where Q projects onto the span of the normalized class indicators. Let R=T−P−S. Its two off-diagonal blocks between Q and 1−Q are transposes. On the indicator of class j divided by √a_j, subtracting p/2 on the other classes gives an upper bound on the squared projection error. Summed over columns this yields
+
+```math
+ \|R\|_{\mathrm{HS}}^2
+ \le 2\epsilon/\min_i a_i <7\epsilon,
+```
+
+since every integrand |d_j(x)−p/2| is bounded by one. The three-class matrix of P has zero diagonal and off-diagonal entries E_ij/√(a_i a_j), where E_ij=∫_(A_i) d_j. Those entries differ from p/2 by less than 7ε: the numerator differs from (p/2)√(a_i a_j) by at most ε+(p/2)|a_i−a_j|≤2ε. Consequently |Tr P²−3p²/2|≤16ε and |Tr P³−3p³/4|≤4ε, using entry bounds 0.17 and the three-by-three zero-diagonal trace formulas.
+
+In the trace of T³, the terms with one or three factors R vanish by the two-block decomposition, and the terms with two factors sum to 3 Tr((P+S)R²). Their magnitude is below 12ε because ||P+S||_op≤||T||_HS≤√p<0.57. Hence
+
+```math
+ \operatorname{Tr}S^3\le-3p^3/4+16\epsilon,\qquad
+ \operatorname{Tr}S^2\le p-3p^2/2+16\epsilon .
+```
+
+The three diagonal color blocks of S are still zero. Apply the p-energy comparison to S as before. Its normalized negative square energy is at most 107/93+112ε and the normalized negative cubic energy at least 1−720ε. Capping every negative magnitude at 24/25 times p would still make the remainder in the cube calculation less than 0.23; its cube sum would be below 0.995136, a contradiction. Thus T itself has a least eigenvalue −t with t>0.96p, by testing T on a negative eigenvector of S.
+
+For rounding, the second largest positive eigenvalue of any triangle-free T is at most 1/4. The sign-changing eigenfunction proof above applies without regularity. In the remaining case an eigenfunction orthogonal to a nonnegative Perron eigenfunction is nonnegative up to sign. Their supports are disjoint, and each has mass at least twice its eigenvalue, by the same weighted Mantel Rayleigh bound. This also gives the 1/4 conclusion. Let u be a nonnegative unit Perron eigenfunction and λ its eigenvalue. Since T1=d and ||d−p||₂≤√ε,
+
+```math
+ \lambda\le p+2\sqrt{\epsilon},\qquad
+ \|(1-Q_1)u\|_2\le\sqrt{\epsilon}/(p-1/4),
+```
+
+where Q₁ projects onto constants. Indeed λ≥p, u≤(∫u)/λ, and therefore ∫u≥√λ. Now use (λ−p)∫u=∫u(d−p) for the first bound, and apply T−p to the component of 1 orthogonal to u for the second.
+
+Let f be a unit least eigenfunction and h=|f|. Since ⟨h,Th⟩≥t and the second eigenvalue is at most 1/4,
+
+```math
+ \|(1-uu^*)h\|_2^2\le(\lambda-t)/(\lambda-1/4)\le13/60 .
+```
+
+The triangle inequality projects h off 1 with norm at most √(13/60)+1/600<0.468. Thus the squared projection of h off 1 is below 0.22. As before, decompose the sign of f along f. The complementary Rayleigh quotient is at most λ, so the ordered cut costs at most
+
+```math
+ \tfrac12\left[p-t+(\lambda+t)\bigl(1-(\int h)^2\bigr)\right]
+ <\tfrac12(0.0128+0.6404\cdot0.22)<0.077 .
+```
