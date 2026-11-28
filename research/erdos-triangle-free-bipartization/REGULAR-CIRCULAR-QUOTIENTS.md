@@ -41,4 +41,13 @@ For $m=3k+1$ the exact value is always less than $1/25$, as $\lfloor k^2/4\rfloo
 
 The geometric representation is standard; see [Bedenknecht–Mota–Reiher–Schacht, Lemma 2.1](https://www.math.uni-hamburg.de/home/schacht/2019/Andrasfai.pdf). The exact cut-size step uses Vasilev's existing theorem. The new argument here is the window-event rigidity and its extension to every strict angular threshold. It neither assumes nor establishes the weighted formula on nonregular supports.
 
+## The same quotients without a regularity hypothesis, after domination transfers
+
+For an arbitrary strictly complete circular model, there is a deletion-cost-nondecreasing compression to an equally stepped quotient with positive, possibly nonuniform weights. No regularity condition is needed for this comparison.
+
+If distinct vertices $u,v$ have $N(u)\subseteq N(v)$, they are nonadjacent. Remove $u$ and add its weight to $v$. Every cut of the compressed graph lifts by placing $u$ on $v(https://github.com/1337isnot1337/solved-conjectures/issues/1097).
+s side. Its increased weight on $v$-edges accounts for all the old $u$-edges, and possibly more. Thus the minimum monochromatic cost cannot decrease. Iterate until no distinct pair has comparable neighborhoods. If the graph is edgeless, its cost is zero. Otherwise, in the remaining support, between each pair of consecutive circle positions the moving window has both a genuine gain and a genuine loss. The same event count in the proof then forces exactly one of each per gap. Formula (1) and the strict inequalities $J-1<am<J$ follow verbatim.
+
+Accordingly any counterexample within the class also has a counterexample on a full equally spaced template of the same threshold, with arbitrary positive weights. This step gives no periodicity of those weights; the difference equations from regularity are absent. In particular it is not an extension of the regular exact cost formula to general weights.
+
 [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
