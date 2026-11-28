@@ -16,7 +16,13 @@ A bounded search is not a proof that no prior resolution exists.
 
 ## Review status
 
-Author-side argument check: source match, circle labeling, perturbation, late-class cyclic shift, disjoint counting, six-mass inequality, and all-order/weighted transfers checked. No graph-order experiments are required. No Lean work was done. Independent mathematical review and validation of a final indexed publication tree remain pending; this draft is not a catalogue entry or a merge request ready for publication. The full Erdős problem stays open.
+**Independent AI mathematical review completed, 28 November 2026 (UTC).** A separate OpenAI research thread reviewed [the pinned proof](https://github.com/1337isnot1337/solved-conjectures/blob/82d48e09edca88faeccf912497d0070f257ff027/results/heinig-andrasfai-bipartification/PROOF.md) (Git blob `49bf11a3d82f8853cbcd497380e0ff33dadc4e91`) and the fixed-rank rotation supplement on that same commit. It found no mathematical gap. This is independent internal AI review, not human peer review, a formal GitHub approval, or formal verification.
+
+- **Six-mass inequality.** The squared norm bound is 26/25. Splitting on the squared sum of the coordinatewise sums gives the direct overlap bound in the large case. In the other case the zero-sum difference vector supplies the opposite-sign pair; the needed comparison is equivalent to the nonnegativity of (a−b)(a+2b) for a≥b≥0.
+- **Cuts and density.** The angular model is triangle-free. All early–late edges lie in the cyclically shifted matching. Each within-half edge is missed by exactly one of the three cuts, so the three failures imply strict density past 0.32 in the ordered normalization. The published dense-tail theorem applies after uniform blow-up. Choosing one random representative per original vertex proves the reverse cut-scaling inequality; rational blow-ups and continuity give the product-weighted version.
+- **Source and exact scope.** The theorem matches the mathematical assertion of Heinig’s Conjecture 6, not the unrestricted Erdős #23. The reviewer checked the fixed-rank counterexample, its parity cases, the positive-mass perturbation and the larger-rank re-embedding. The bounded search found no earlier all-preimage resolution. The separate unweighted Conjecture 5 has a prior implication, noted below.
+
+No Lean formalization or finite search is used. The publication branch and its validation receipts are tracked in [PR #1100](https://github.com/1337isnot1337/solved-conjectures/pull/1100).
 
 ## A neighboring claim is not a new solution
 

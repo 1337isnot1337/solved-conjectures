@@ -1,6 +1,6 @@
 # Heinig’s Andrásfai bipartification conjecture
 
-**Written proof proposed; independent mathematical review pending.** Every graph on n vertices that is homomorphic to any Andrásfai graph can be made bipartite by deleting at most n²/25 edges. The proof covers all template sizes and all preimages, with arbitrary nonnegative vertex product weights as well.
+**Written proof with independent internal AI mathematical review.** Every graph on n vertices that is homomorphic to any Andrásfai graph can be made bipartite by deleting at most n²/25 edges. The proof covers all template sizes and all preimages, with arbitrary nonnegative vertex product weights as well.
 
 - [Complete proof](PROOF.md)
 - [Source and prepublication review record](REVIEW.md)
