@@ -151,3 +151,14 @@ Under stationarity let b_TT be the expected missed mass inside T. The same degre
     B(3+4t) <= e + 2(r_SS+r_TS) + 4 r_TT + 2 b_TT.
 
 This can be used without editing the graph and without asserting stationarity of an edited graph. In particular if T is independent in the original graph, each unit of bad edge mass elsewhere costs just twice its mass in this last expression. The result is only a certificate given a suitable cover.
+
+
+### Reduce cover construction to the flexible vertices of a coloring
+
+For a fixed proper three-colouring, call a vertex flexible if at least one other whole colour class has zero neighborhood mass from it. Any independent subset T of the flexible vertices can be duplicated in the cover: keep the partition classes, and put each vertex of T into one further class where it has no neighbors. The further class may be chosen measurably by choosing its first available index. The original class is independent, the added vertices are collectively independent, and every added vertex is nonadjacent to the original class it joins. Conversely, if a covering extension of the prescribed partition duplicates a set of vertices, they are flexible and jointly independent by the disjoint membership observation for edges. Thus the most overlap attainable by extending a fixed proper coloring is exactly the maximum independent-set mass on its flexible locus.
+
+There is also a cut-specific version that does not assume stationarity. Fix any maximum cut f, and use m_f as above. After extending a colouring along such a T, the restriction of f to S costs B−integral_T m_f: there are no edges inside T, so its incident missed mass is counted exactly once by the degree integral. Substituting this candidate for the core cost in (5) yields
+
+    integral_T m_f <= (e−3B)/2.                             (7)
+
+Equivalently, it is enough to beat (7) on the flexible locus with weight m_f to rule out the assumed value of B. This can be stronger than maximizing ordinary overlap mass, since it targets where the particular optimum cut leaves edges behind. No general weighted independence bound on the flexible locus is asserted.
