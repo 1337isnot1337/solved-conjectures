@@ -97,6 +97,8 @@ For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\si
 
 - [Multiple quotient switches](MULTIPLE-QUOTIENT-SWITCHES.md) give an exact circuit-count test. One or three shared copies suffice for sequential merging with fresh orientable color pairs; five shared copies can obstruct both orientations. See the [switch checker](verify_multiple_quotient_switches.py).
 
+- [Interlaced switch bridges](INTERLACED-SWITCH-BRIDGES.md) merge disjoint full-support block cycles. An exact min-cut selection on a supplied bridge tree includes reserve chords between distant branches. See the [bridge checker](verify_interlaced_switch_bridges.py).
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
