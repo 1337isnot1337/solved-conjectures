@@ -32,7 +32,9 @@ n=M|V(K)|\,|V(J)|.
 ```
 Call the vertices descended from one entire $`K-v`$ gadget its footprint. The $`2M`$ footprints are still pairwise disjoint.
 
-Add a spanning bipartite cycle to $`H`$, initially allowing parallel edges. For sufficiently large $`M`$, the [Hamilton-preserving girth switch](HAMILTON-MODULES.md) raises the girth of the union to at least $`g`$ without changing $`H`$. Every shorter cycle has an edge in the added Hamilton cycle because $`H`$ already has the required girth. Switch only cycle edges, choosing the second edge of opposite traversal direction sufficiently far from the first. The same lexicographic descent proof applies with degree bound $`d+2`$. It yields a simple union and a specified Hamilton cycle $`C`$.
+We can require the Hamilton cycle to use no edge joining different footprints. Choose $`J`$ large enough as a function of $`d,g`$, for example by first constructing it with a higher girth threshold. There are $`2M`$ right prism singletons outside all footprints. In each footprint add an alternating spanning path with both endpoints on the left. This is possible in the complete bipartite graph because its shore imbalance is one; these added edges may initially be parallel to edges of $`H`$. Place one outside singleton between each consecutive pair of footprints in the cyclic order. Join the path endpoints through these singletons. This adds a spanning bipartite cycle.
+
+Now apply the [Hamilton-preserving girth switch](HAMILTON-MODULES.md) only to edges of the added cycle. Every short cycle has such an edge. It is either internal to a footprint or attaches a footprint to an outside singleton. Choose the second switch edge internal to that footprint and opposite in traversal direction. There are enough choices: the alternating path inside the footprint has arbitrarily many edges in each direction, and two radius-$`g`$ balls in degree $`d+2`$ exclude only a bounded number of candidates. A switch at two internal edges just reverses a subpath within that footprint. A switch at one external edge moves its attachment to another left vertex of the same footprint. It does not change the cyclic footprint order. The usual lexicographic descent yields a simple union of girth at least $`g`$ while preserving $`H`$ and the prescribed footprint order of $`C`$.
 
 ## Every spanning cycle must touch every footprint with a cycle edge
 
@@ -42,7 +44,7 @@ In that footprint there is one more inflated left module than there are right si
 
 Each inflated module must contribute at least two crossing edges of $`D`$, since the cycle spans the graph. If the footprint contains $`p`$ right singletons, its $`p+1`$ modules account for at most $`2p+2`$ module crossings. The $`p`$ right singletons each contribute two, and the only other crossings are the two edges leaving the footprint. Consequently each module is crossed exactly twice. The segment of $`D`$ inside the footprint is one spanning path of the footprint. It visits each module in one segment. Contract these segments and forget edge multiplicity. This gives a spanning path in the original $`K-v`$ with endpoints two distinct permitted neighbors of $`v`$. They are distinct because the path visits all the other vertices and each module is visited only once. This contradicts the choice of $`K`$.
 
-Thus every footprint meets an edge of $`E(C)\cap E(D)`$. Each such edge can meet at most two footprints, so at least $`M`$ such edges are needed. This proves the theorem with $`c=1/(|V(K)|\,|V(J)|)`$.
+Thus every footprint meets an edge of $`E(C)\cap E(D)`$. No edge of the specified cycle meets two footprints, so at least $`2M`$ such edges are needed. This proves the theorem with $`c=2/(|V(K)|\,|V(J)|)`$.
 
 ## Scope and literature
 
