@@ -60,3 +60,16 @@ For a finite weighted pair x,y, apply this with J={y}, write pi for their probab
     pi min(w_y,a−u_y) <= (1−pi)u_y.
 
 The same comparison in the other direction uses the mass and trim budget of x. In particular an always-monochromatic pair of positive-mass atoms cannot be repaired by guarded trims on both endpoints if their per-row trim bounds are smaller than the residual margins. On a graphon the atom argument cannot be applied to a null singleton. The measurable-set version instead uses the mass of the union of its conflicts, which need not be controlled by bounds on each individual trim.
+
+
+## Linear robustness via random independent-neighborhood tests
+
+The closure argument in fact has a quantitative form that does not assume optimum cuts or an exact common law. Suppose a probability law on signs satisfies E F_I <= c for every independent set I. For a particular independent attachment R define its slack theta=c−E F_R>=0. Its compatible exterior L consists of the vertices outside R with zero adjacency into R. For each sign cut let D_f be the absolute imbalance of the sign masses in R, and let sigma_f be its minority sign, arbitrary on ties. Then
+
+    integral_L d_W(y) E[D_f 1_(f(y)=sigma_f)] dy <= theta.   (2)
+
+In particular, on a graphon of minimum degree d_0>0, if the residual margins satisfy D_f>=a>0 almost surely, the total expected minority mass in the compatible exterior is at most theta/(a d_0). Without a uniform margin, the same bound applies to the expected minority mass contributed by the cuts for which D_f>=a, for any a>0.
+
+To prove (2), for an independent subset J of L the increment in smaller mass on adding J is at least min(D_f,m_f(J)), where m_f(J) is its sigma_f-sign mass. Both quantities are in [0,1], so this increment is at least D_f m_f(J). The expected increment is at most theta by the common test bound. Apply this to J=L intersect N(z) for an almost-everywhere good root z, then integrate over z and use Tonelli. In a zero-one graphon the root integration weights y by d_W(y) exactly. For a fractional graphon, use positive neighborhoods, whose summed indicator degree is at least the weighted degree d_W, yielding the same conclusion. For finite product-weighted graphs use a root sampled by its weight. This is linear in the slack, without the extra losses of covering L by many pieces or discretizing the sign law.
+
+For a guarded tight trimmed neighborhood, theta=0 and its margin is positive almost surely. Thus (2) also gives the exact obstruction above immediately. Near a maximizing graphon the [approximate common law](INDEPENDENT-ATTACHMENT-LAW.md) can be plugged in by using its universal bound as c. The estimate controls missed one-sided additions only when the actual residual slack and margins are known; it provides neither disjointness nor small slack for a general trim.
