@@ -12,7 +12,7 @@ A graph is *infinitely connected* if every two of its vertices are joined by inf
 
 - erdosproblems.com lists #1068 as open, with no forum posts and no proof claims (database snapshot of 2026-11-24).
 - Soukup (2015) and Bowler–Pitz (2024) give ZFC uncountably chromatic graphs with no *uncountable* infinitely connected subgraph. That answers #1067, not #1068. Both graphs contain countable complete graphs $`K_\omega`$: Bowler–Pitz's proof of uncountable chromatic number builds one explicitly.
-- Komjáth (*Israel J. Math.* 61 (1988) 285–294) proved that under PFA every graph of size and chromatic number $`\aleph_1`$ contains an uncountably chromatic $`\omega`$-connected subgraph. By Lemma 1 below, such a graph then also has a countable infinitely connected subgraph. So under PFA there is no counterexample of size $`\aleph_1`$. Hence, if PFA is consistent (for example, relative to a supercompact cardinal), ZFC cannot prove that a counterexample of size $`\aleph_1`$ exists; such a counterexample can at best be consistent, for instance under $`\diamondsuit`$. Komjáth's forced example of size $`\aleph_1`$ (corrected in his later note) excludes only *uncountable* $`\omega`$-connected subgraphs. He also proved that every uncountably chromatic graph has uncountably chromatic $`n`$-connected subgraphs of minimum degree $`\omega`$ for every finite $`n`$.
+- Komjáth (*Israel J. Math.* 61 (1988) 285–294) proved that under PFA every graph of size and chromatic number $`\aleph_1`$ contains an uncountably chromatic $`\omega`$-connected subgraph. By Lemma 1 below, such a graph then also has a countable infinitely connected subgraph. So under PFA there is no counterexample of size $`\aleph_1`$. Hence, if PFA is consistent (for example, relative to a supercompact cardinal), ZFC cannot prove that a counterexample of size $`\aleph_1`$ exists; such a counterexample can at best be consistent, for instance under $`\diamondsuit`$. The $`\mathrm{MA}`$ theorem below gets the same conclusion relative to ZFC alone. Komjáth's forced example of size $`\aleph_1`$ (corrected in his later note) excludes only *uncountable* $`\omega`$-connected subgraphs. He also proved that every uncountably chromatic graph has uncountably chromatic $`n`$-connected subgraphs of minimum degree $`\omega`$ for every finite $`n`$.
 - Soukup (arXiv:1409.2922, final section) states this exact question as open: "excluding countable $`\omega`$-connected subsets seems to be a very hard problem." His Proposition on transitive ladder systems shows that transitive ladders with uncountable chromatic number force a monochromatic $`K_{\omega+1}`$, which agrees with Lemma 8 below.
 - Bowler–Pitz, *Thin ends and topological spanning trees* (arXiv:2610.40458, Oct 2026), re-uses their graph for spanning-tree questions and does not address #1068.
 - No issue, PR or file in this repository on either branch matches.
@@ -113,6 +113,30 @@ Soukup's triangle-free example uses sparse ladder systems (no special cycles). T
 ## Forcing attempt (abandoned)
 
 A ccc forcing with finite conditions was considered. It adds a $`T`$-graph with frozen finite "port" sets at successor nodes, which give finite adhesion, and fixed per-chain budgets, which give finite upward degree. Lemma 3 would then rule out infinitely connected subgraphs, and the usual $`\Delta`$-system amalgamation would add a monochromatic edge $`x_\xi < x_\eta`$ against any colouring name. The amalgamation works if $`x_\xi`$ has no predecessors outside the $`\Delta`$-root and no lower neighbours. It breaks in general because the extension deciding $`\dot f(x_\xi)`$ may insert frozen successor nodes below $`x_\xi`$. Merging the chains then puts frozen nodes, whose ports lack the new lower endpoint, inside the span of the new edge, or of an old edge. I found no way to stop deciding extensions from doing this without making every chain finite, and finite chains force $`\chi\le\aleph_0`$.
+
+## The $`\mathrm{MA}`$ theorem (no $`K_{\omega,\omega}`$ means ccc-destructible chromatic number)
+
+Let $`P_G`$ be the poset of finite partial proper colourings $`p`$ of $`G`$ with colours in $`\omega`$, ordered by reverse inclusion.
+
+> If $`G`$ contains no $`K_{\omega,\omega}`$, then $`P_G`$ is ccc.
+
+*Proof.* Take conditions $`p_\xi`$ for $`\xi<\omega_1`$. By the $`\Delta`$-system lemma and counting, there are an uncountable $`I\subseteq\omega_1`$, a finite root $`R`$, an $`n<\omega`$ and colours $`c_1,\dots,c_n`$ with the following property. For $`\xi\in I`$ we have $`\mathop{\mathrm{dom}}p_\xi=R\sqcup\{x^1_\xi,\dots,x^n_\xi\}`$, the sets $`D_\xi=\{x^1_\xi,\dots,x^n_\xi\}`$ are pairwise disjoint, all $`p_\xi`$ agree on $`R`$, and $`p_\xi(x^i_\xi)=c_i`$.
+
+Suppose $`p_\xi`$ and $`p_\eta`$ are incompatible for all $`\xi\ne\eta`$ in $`I`$. Their union is a function that is not a proper colouring. The offending edge cannot have both ends in one domain, and an end in $`R`$ lies in both domains. So the edge is $`x^i_\xi x^j_\eta`$ with $`c_i=c_j`$. For $`\xi<\eta`$ in $`I`$, let $`f(\xi,\eta)`$ be the least such pair $`(i,j)`$.
+
+By the Baumgartner–Hajnal theorem ($`\omega_1\to(\alpha)^2_k`$ for all $`\alpha<\omega_1`$ and $`k<\omega`$; *Fund. Math.* 78 (1973)), some $`S\subseteq I`$ of order type $`\omega+\omega`$ is homogeneous, say $`f\equiv(i,j)`$ on $`[S]^2`$. Split $`S=S_1\cup S_2`$ with $`S_1<S_2`$, both infinite. Then $`\{x^i_\xi:\xi\in S_1\}`$ and $`\{x^j_\eta:\eta\in S_2\}`$ are disjoint infinite sets with all edges between them, which is a $`K_{\omega,\omega}`$. $`\square`$
+
+The dense sets $`\{p: v\in\mathop{\mathrm{dom}}p\}`$ give the following.
+
+> **Corollary.** Under $`\mathrm{MA}_\kappa`$, every graph of size at most $`\kappa`$ without $`K_{\omega,\omega}`$ is countably chromatic. In particular, under $`\mathrm{MA}_{\aleph_1}`$, every graph of size $`\aleph_1`$ and uncountable chromatic number contains $`K_{\omega,\omega}`$, hence every countable bipartite graph and a countable infinitely connected subgraph.
+
+Consequences for #1068:
+- $`K_{\omega,\omega}`$ is infinitely connected, so a counterexample contains no $`K_{\omega,\omega}`$. Forcing with the ccc poset $`P_G`$ therefore makes any counterexample countably chromatic.
+- $`\mathrm{MA}_{\aleph_1}+\neg\mathrm{CH}`$ is consistent relative to ZFC (Solovay–Tennenbaum). So if ZFC is consistent, ZFC cannot prove that a counterexample of size $`\aleph_1`$ exists. This needs no large cardinal, unlike the route through Komjáth's PFA theorem.
+- Under $`\mathrm{MA}`$, every counterexample has size at least $`2^{\aleph_0}`$. That matches the known ZFC uncountably chromatic graphs without $`K_{\omega,\omega}`$, Soukup's and Lambie-Hanson–Uhrik's (arXiv:2312.01828), which have size continuum.
+- Whether every uncountably chromatic graph of size $`\aleph_1`$ contains $`K_{\omega,\omega}`$ is independent of ZFC. It holds under $`\mathrm{MA}_{\aleph_1}`$. It fails after adding one Cohen real, where Lambie-Hanson and Uhrik build a special-cycle-free Hajnal–Máté graph, and such graphs contain no $`H_{\omega,\omega+2}\subseteq K_{\omega,\omega}`$.
+
+I did not find this ccc argument in the literature checked (Soukup 2015, Lambie-Hanson–Uhrik 2023, Lambie-Hanson–Rinot 2019, Komjáth's surveys as cited there). It complements the Hajnal–Máté theorem that $`\mathrm{MA}_{\aleph_1}`$ makes Hajnal–Máté graphs countably chromatic. Hajnal–Máté graphs are defined by sparseness and can contain $`K_{\omega,\omega}`$, for example with two interleaved $`\omega`$-sequences, while the theorem above assumes only $`K_{\omega,\omega}`$-freeness.
 
 ## Lemma 7 (one vertex never creates infinite connectivity)
 
