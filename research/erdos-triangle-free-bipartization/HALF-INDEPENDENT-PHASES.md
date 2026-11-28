@@ -54,7 +54,7 @@ Assume eta≤.00001. Equations (1)–(2), t>.04, W=uv−t, and u+v=.5 give
     m<.276,  d<.086,  t<.0427,  W<.0225,
     .03999≤K≤.04514.
 
-For example t≤m(.5−m−d)+17.5 eta; the right side is below .04 at m=.276 when d≥.08, and decreases for larger m. The same inequality yields t≤.0625−d/4+17.5 eta. Substitute these constants in (3), obtaining an upper bound .362(4K−.08)+.000311.
+For example t≤m(.5−m−d)+17.5 eta; the right side is below .04 at m=.276 when d≥.08, and decreases for larger m. The same inequality yields t≤.0625−d/4+17.5 eta≤.042675. Since d=2B and the cut X versus Y pays t, we get d≤2t<.086. Substitute these constants in (3), obtaining an upper bound .362(4K−.08)+.000311.
 
 To lower-bound (4), by (1) we have Q≥2dK−6m eta≥.16K−2 eta≥.0063784. For comparison replace A by d and C by C_*=max(C,d), writing the resulting moments as Q_*,H_*. The expected absolute directional changes are at most 6 eta and 2 eta, respectively. Since all variables being compared are at most m, expanding the products (or integrating the first derivatives) gives
 
@@ -79,3 +79,5 @@ Conversely, let W_1 be the missing pair mass between the two shores of the large
     1/25000 < r < 57/500.
 
 The structural phase-dispersion statement is stronger than the lower restriction on r: an arbitrarily large disconnected complement still fails if its orientations can be aligned at sufficiently small attachment-edge cost.
+
+The scalar comparisons are reproducible with [verify_half_independent.py](verify_half_independent.py).
