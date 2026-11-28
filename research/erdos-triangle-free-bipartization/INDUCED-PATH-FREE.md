@@ -83,4 +83,10 @@ Finally, a disconnected preimage with \(\beta>799/20000\) would have a component
 ```
 This proves the uniform gap and still makes no assumption about the order of the input graph.
 
+### Stability under edits, and an induced-path density consequence
+
+The disconnected argument worked in fact whenever \(e\le33/200\), since \((33/200)/(799/800)^2<17/100\). Thus every middle-band counterexample is more than \(1/20000\) in unordered product edge-edit distance from a graph homomorphic to a triangle-free induced-\(P_6\)-free graph. Indeed edits of that much change both \(e\) and \(\beta\) by at most \(1/20000\), and leave the edited graph's density below \(33/200\). The uniform gap there then gives the desired bound back on the original graph.
+
+There is also an absolute positive lower bound on the labeled induced-\(P_6\) density of every middle-band counterexample. Otherwise take a sequence of their graphons with induced-\(P_6\) density tending to zero and pass to a cut-convergent subsequence by compactness. The limit remains triangle-free, lies in the same closed density band, and has \(\beta\ge1/25\) by cut continuity. Its induced-\(P_6\) density is zero. Finite random samples from that limit are therefore almost surely triangle-free and induced-\(P_6\)-free, so have the strict bound for sufficiently large sample sizes as their densities and cut values converge. This is a contradiction. The argument gives a uniform qualitative density floor, not a numerical value or an upper bound on the induced-\(P_6\) density of extremizers.
+
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
