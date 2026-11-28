@@ -6,7 +6,7 @@ Let \(G\) have odd girth \(g\) and odd circumference \(L\), the length of its lo
 ```
 The bound is exact in general: an odd-length uniform subdivision of \(K_r\) has shortest and longest odd cycles obtained by subdividing a triangle and an \(r_*\)-cycle, respectively. Such a subdivision still has the odd \(K_r\) minor, by assigning all but the final edge of each subdivided path to one endpoint's branch tree.
 
-This supplies an integral case of [Erdős’s higher odd-girth deletion bound](https://www.erdosproblems.com/23): if every odd cycle in a finite template has the same length \(g\ge5\), then all product-weighted homomorphic preimages satisfy \(\beta\le N^2/g^2\). For \(g=5\) or \(7\), the same holds for any template of odd girth at least \(g\) and odd circumference below \(5g/3\), allowing several odd lengths. This is not a general bounded-odd-circumference theorem for all \(g\), or a resolution of unrestricted #23.
+This supplies an integral case of [Erdős’s higher odd-girth deletion bound](https://www.erdosproblems.com/23): if every odd cycle in a finite template has the same length \(g\ge5\), then all product-weighted homomorphic preimages satisfy \(\beta\le N^2/g^2\). For \(g\in\{5,7,9,11\}\), the same holds for any template of odd girth at least \(g\) and odd circumference below \(5g/3\), allowing several odd lengths. This is not a general bounded-odd-circumference theorem for all \(g\), or a resolution of unrestricted #23.
 
 ## Average a fixed minor model at two cycle lengths
 
@@ -24,8 +24,8 @@ independent of \(s\). For \(s=3\), its mean lifted length is at least \(g\); for
 
 ## Apply the fractional cover
 
-If \(L<5g/3\), there is no odd \(K_5\) minor under the all-negative edge signature. [Guenin’s odd-circuit-cover integrality theorem](https://homepages.cwi.nl/~lex/files/guenin2.pdf) identifies the fractional and integral odd-cycle edge covers in that class. When \(L=g\), the [reciprocal-degree certificate](RECIPROCAL-ODD-COVER.md) covers every odd cycle at cost \(N^2/g^2\), for arbitrary \(g\). When \(g=5\) or \(7\), that same certificate covers all odd lengths anyway. This proves the product-weighted template conclusions. A graph homomorphic to one of the templates can aggregate weights on its fibers and pull back a target cut; absent edges in the preimage only reduce the cost.
+If \(L<5g/3\), there is no odd \(K_5\) minor under the all-negative edge signature. [Guenin’s odd-circuit-cover integrality theorem](https://homepages.cwi.nl/~lex/files/guenin2.pdf) identifies the fractional and integral odd-cycle edge covers in that class. When \(L=g\), the [reciprocal-degree certificate](RECIPROCAL-ODD-COVER.md) covers every odd cycle at cost \(N^2/g^2\), for arbitrary \(g\). When \(g\in\{5,7,9,11\}\), that same certificate covers all odd lengths anyway. This proves the product-weighted template conclusions. A graph homomorphic to one of the templates can aggregate weights on its fibers and pull back a target cut; absent edges in the preimage only reduce the cost.
 
-For larger \(g\) and several odd lengths the reciprocal certificate was only guaranteed on the shortest cycles, so integrality alone does not give the sharp bound in that case. Also, forbidding longer **induced** odd cycles is not enough for the minor argument, because lifts of model cycles need not be chordless.
+For other odd \(g\) and several odd lengths the reciprocal certificate was only guaranteed on the shortest cycles, so integrality alone does not give the sharp bound in that case. Also, forbidding longer **induced** odd cycles is not enough for the minor argument, because lifts of model cycles need not be chordless.
 
 [Coordination #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
