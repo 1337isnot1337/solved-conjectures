@@ -47,6 +47,8 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Tree branch transfer](TREE-BRANCH-TRANSFER.md): simultaneous exchanges can repair degrees on one side while keeping the other fixed exactly when the required transfer divergence and two invertible graphic-basis matrices coexist.
 - [Prescribed path-cycle systems](PRESCRIBED-PATH-CYCLE-SYSTEMS.md): the sharp density forces two branch-free spanning systems with any admissible terminal pairing. Each system contains one path plus cycles, so merging the cycles without disturbing the shared support becomes the remaining structural step.
 
+- [Shared reserve bridges](SHARED-RESERVE-BRIDGES.md): a partition criterion exactly characterizes when several component quotients can share a reserve. When it is a matching, there is an exact count of branches after optimally cutting each old cycle, including systems with one designated path.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
