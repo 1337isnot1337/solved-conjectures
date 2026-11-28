@@ -1,6 +1,6 @@
 # Erdős's triangle-free bipartization conjecture
 
-This is the research index for [Erdős Problem 23](https://www.erdosproblems.com/23) and [coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097). The task is the full all-order theorem: every triangle-free graph of order N admits a cut missing at most N²/25 edges. No full resolution is claimed. These notes are on the research branch for independent written-proof review, not an entry under solved conjectures.
+This is the research index for [Erdős Problem 23](https://www.erdosproblems.com/23) and [coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097). The task is the full all-order theorem: every triangle-free graph of order N admits a cut missing at most N²/25 edges. No full resolution is claimed. The [Vega partial theorem was independently reviewed and published on main](https://github.com/1337isnot1337/solved-conjectures/pull/1106). The remaining notes are research material, not an entry under solved conjectures.
 
 ## Prior-resolution check
 
@@ -29,6 +29,8 @@ The product-weighted formulation is equivalent to the full finite statement by r
 - A [proper-three-colour obstruction](RAINBOW-INDEPENDENT-TRIPLES.md) gives a measurable independent-transversal floor and an incompatible rooted separator test. The [directed six-cycle](DIRECTED-SIX-CYCLE.md) and [Petersen-root profiles](PETERSEN-ROOT.md) give complementary local tests.
 - A [half-mass independent set](HALF-INDEPENDENT-CORE.md) cannot have a connected complement at a stationary counterexample; the conclusion is stable near half mass under a fixed lower expansion bound on the complement.
 - The [Mycielski control](TEMPLATE-REDUCTION-OBSTRUCTION.md) shows that density, saturation, degree caps and a few local-pattern conditions alone do not force proximity to circular or Vega templates. It has a cheap cut and is not a counterexample.
+
+- The [agreement-block theorem](OPTIMUM-CUT-OVERLAPS.md) says any two true optimum cuts decompose into independent optimum problems on agreement and disagreement blocks. The spans of the two blocks' optimum signs have zero cross adjacency pairing. This excludes a half-mass independent overlap with an arbitrary bipartite complement under the stationary maximum-degree cap.
 
 ## Remaining gap
 
