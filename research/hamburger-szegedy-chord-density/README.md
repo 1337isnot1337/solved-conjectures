@@ -88,6 +88,8 @@ For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\si
 - [Subdivided rim obstruction](SUBDIVIDED-RIM.md) allows arbitrary chord-crossing patterns, high girth and high host treewidth while every cycle has a small chord fraction. See the [cycle-count checker](verify_subdivided_rim.py).
 - [Crossing bypass hardness](CROSSING-BYPASS-HARDNESS.md) makes precise when supplied order-preserving shortcuts become computationally hard, and gives a parameter for keeping the laminar min-cut method. See the [Max-Cut fixture checker](verify_crossing_bypass.py).
 
+- [Exterior rotations](EXTERIOR-ROTATIONS.md) allow replacing a used link by an exterior label. The resulting incidence patch retains all neighbors of its moving endpoints and all neighbors of their initially exterior labels. The codegree count controls used and unused incidences together. See the [rebasable path checker](verify_exterior_rotations.py).
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
