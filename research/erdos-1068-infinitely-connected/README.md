@@ -81,6 +81,20 @@ A countable bipartite graph with parts $B$ and $A$ is infinitely connected if (i
 
 $K_{\aleph_0,\aleph_0}$ is the trivial instance. Uncountably chromatic graphs need not contain $K_{\aleph_0,\aleph_0}$, so (i)+(ii) is the structure to look for in a positive proof.
 
+## Lemma 5 (one chain is never enough)
+
+> Let $G$ be a graph on $\omega_1$ in which every vertex has only finitely many neighbours above it. Then $G$ has no edge between $M\cap\omega_1$ and $\omega_1\setminus M$ for any countable $M\prec H(\theta)$ containing $G$. In particular $\chi(G)\le\aleph_0$.
+
+*Proof.* Let $u\in M$. Its finite set $U(u)$ of upper neighbours is definable from $u$, so $U(u)\in M$, and finite sets in $M$ are subsets of $M$. A vertex $v\notin M$ adjacent to $u\in M$ would satisfy $v>u$ (since $M\cap\omega_1$ is an initial segment), so $v\in U(u)\subseteq M$, which is absurd. A continuous chain of such models splits $G$ into countable pieces with no edges between them, and each piece can be coloured separately. $\square$
+
+So condition (2) of Lemma 3 can only coexist with $\chi=\aleph_1$ if the tree branches: the upward neighbourhood of a node, taken over all branches at once, has to be infinite.
+
+## Obstacle met in constructions (heuristic, not a theorem)
+
+I tried two ways of building ladders $C_t\subseteq A^\ast_t$ inside the Bowler–Pitz tree with "each point is used by at most one ladder per branch": Soukup's ZFC diagonalisation over all pairs $(A,f)$, and $\diamondsuit$-guessing. Both run into the same problem. The colouring argument reflects a property of the template node $t$, the node whose colour must match a ladder point. But $t$ is itself a user of every earlier ladder point on its branch. A requirement satisfied by $t$ therefore cannot forbid the next chosen point from also being a user of an earlier point, and that second use is what (2) has to exclude. Budget variants, which allow $B$ users per branch, fail by exactly one: the template's own use.
+
+A related observation for stage-by-stage ZFC constructions: if "$u$ is used as a ladder point" is decided in the final graph and $M$ contains the graph, then the first stage at which a node $u\in M$ is used lies in $M$. So the stage $\delta_M=M\cap\omega_1$ can never be the first use of a node of $M$. Any "use each point at one stage only" rule therefore starves the reflection step.
+
 ## Next steps
 
 1. Look for an edge-thinning of $\mathbf G$, or of a Todorčević-type tree graph, that keeps (1) and (2) of Lemma 3 and has a colouring argument that does not escalate in ordinal length.
