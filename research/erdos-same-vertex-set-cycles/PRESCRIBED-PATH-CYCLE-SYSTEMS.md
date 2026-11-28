@@ -1,0 +1,25 @@
+# From subcubic trees to prescribed path-cycle systems
+
+Partial progress on [Erdős #585](https://www.erdosproblems.com/585). This removes all branches from the sharp-density tree relaxation at the cost of allowing cycle components. It does not prove the existence of two paths or two cycles on a common support.
+
+**Theorem.** Let $`H`$ be a simple bipartite generic rigidity circuit of maximum degree four, as in [the four-terminal completion note](FOUR-TERMINAL-COMPLETION.md). For every pairing of its four degree-three vertices allowed by the bipartition, $`H`$ decomposes into two edge-disjoint spanning systems, each consisting of one path with the prescribed endpoints and some vertex-disjoint cycles. Here a path and the cycles of its own system have pairwise disjoint vertex sets. In a balanced bipartition, allowed means both pairs have opposite-colour endpoints. In an unbalanced bipartition, all four terminals have the same colour, and all three pairings are allowed.
+
+## Directed switching fact
+
+For any 4-regular bipartite (possibly labelled multi-)graph $`G`$, start with a decomposition into two 2-factors, for example by pairing perfect matchings. Orient the red edges from left to right and the blue from right to left. In this directed graph every vertex has indegree and outdegree two. Thus for any cut, each direction has exactly half as many arcs as the underlying undirected cut has edges. Reversing a directed simple cycle exchanges its red and blue edges and still represents a decomposition into two 2-factors.
+
+If $`G`$ is 4-edge-connected, any two distinct edges can be put in different factors. It is enough to consider two edges $`e,f`$ both red, swapping colours initially if both are blue. After removing the arc $`f`$ from the oriented graph, every proper nonempty vertex set still has an exiting arc, so the directed graph remains strongly connected. A simple directed path from the head of $`e`$ to its tail, followed by $`e`$, forms a directed cycle containing $`e`$ but not $`f`$. Reverse that cycle to separate the edges.
+
+If $`G`$ is simple and essentially 6-edge-connected, at any chosen vertex $`v`$ one can prescribe **which** two of its four edges are red. In any such orientation the digraph minus $`v`$ is strongly connected: for every nonempty proper $`S\subset V(G)\setminus\{v\}`$ of size at least two, the underlying cut has size at least six, so has at least three outgoing arcs, and at most two enter $`v`$; for $`S`$ a singleton, at most one of its two outgoing arcs reaches $`v`$ by simplicity. If $`v`$ is in the left class and has a red edge $`v\to x`$ of the wrong colour and a blue edge $`y\to v`$ that should be red, take a simple directed $`x`$-to-$`y`$ path avoiding $`v`$. Reversing the cycle closed by these two edges exchanges their colours at $`v`$ and affects no other incident edge there. If $`v`$ is right, interchange all arc directions in this argument. At most two switches set the prescribed pair.
+
+## Apply the completions
+
+In the balanced case add two labelled edges closing the prescribed matching of terminals. Either completion is at least 4-edge-connected: a nontrivial cut in $`H`$ with at least two vertices per side has size at least $`6-\min(z,4-z)\ge4`$, where $`z`$ is the number of terminals on a shore. Singleton cuts have size four in the completion. Separate the two added edges into different factors by the switching fact and remove them. Each cut-open factor becomes one path with the desired endpoints and the intact cycles of that factor.
+
+In the unbalanced case attach the new apex to all four terminals. The resulting simple quartic graph is essentially 6-edge-connected by the circuit inequality. Prescribe two apex edges in the red factor and the complementary pair in blue. Removing the apex opens one cycle of each factor into the prescribed path; all other cycles stay intact. This proves the theorem.
+
+If $`H`$ has girth $`g`$, each system has at most $`\lfloor(|V(H)|-1)/g\rfloor`$ cycle components, since the cycles are already in $`H`$ and each system also includes its path. This upper bound is not a constant independent of the support order.
+
+## Consequence at the conjectured density scale
+
+The [regular extraction and tree proof](PAIRED-PATH-LOWER-BOUND.md) first takes a bipartite 4-regular subgraph, then a smallest support with at least $`2(|S|-1)`$ edges, keeping exactly that many edges. This is precisely the type of circuit used above. Thus $`O(N\log\log N)`$ edges suffice for a common nontrivial support admitting these two branch-free path-cycle systems, including the four prescribed endpoints once the circuit is found. Conversely the [layered lower-bound proof](PAIRED-PATH-LOWER-BOUND.md) excludes such a circuit in bipartite graphs with $`\Omega(N\log\log N)`$ edges, because its maximum degree is four and its average degree at least three. So the order also matches for this relaxation. The main remaining step in this approach is to merge the cycle components of both systems without changing their common support or allowing the colours to share edges.
