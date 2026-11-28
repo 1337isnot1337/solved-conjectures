@@ -1,5 +1,9 @@
 # Verification
 
+## Erdős’s triangle-free bipartization conjecture (Vega partial theorem)
+
+Read the [written proof](../results/erdos-23-vega/PROOF.md) and [independent mathematical review](../results/erdos-23-vega/REVIEW.md). Run `python3 results/erdos-23-vega/verify.py` for exact scalar checks. No graph-order search or Lean formalization is used.
+
 ## Heinig’s Andrásfai bipartification conjecture
 
 Read the [written proof](../results/heinig-andrasfai-bipartification/PROOF.md) for the three sector cuts and the six-mass bound. The proof imports the published dense-tail theorem. No finite search is used. The [source and review record](../results/heinig-andrasfai-bipartification/REVIEW.md) identifies the exact assertion and its checks.

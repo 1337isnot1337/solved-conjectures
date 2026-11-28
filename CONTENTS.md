@@ -24,6 +24,8 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 
 ## Partial results on open problems
 
+- **Erdős’s triangle-free bipartization conjecture (partial).** The sharp weighted bound holds for all four Vega families and all homomorphic preimages, allowing arbitrary missing template edges. The full conjecture remains open. [Written proof and independent review](results/erdos-23-vega/).
+
 The [26 November theorem collection](docs/research-results/README.md) gives the proofs for five open Erdős problems and four other open conjectures, the separately reviewed resolutions, and the review status of the graphical zero-density extension.
 
 - **Blitvić–Kammoun–Steingrímsson packing cutoff question.** No fixed number of occurrences determines all subsequent packing counts. [Proof and remaining length-dependent question](results/blitvic-kammoun-steingrimsson-packing-cutoff/).
