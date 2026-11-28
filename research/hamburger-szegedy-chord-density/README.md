@@ -58,6 +58,27 @@ Indeed the left-hand side of the preceding threshold then is at least $`1/2`$, a
 
 This uses only neighborhood concentration and the edge count on the cycle. It does not assume that the host itself is Hamiltonian or that it meets a strong spectral Hamiltonicity theorem.
 
+## Resilience from one-sided discrepancy
+
+The endpoint argument needs no lower mixing estimate. Let $`G`$ be bipartite whose shores have size $`m`$ each, with the following upper discrepancy bound for every pair of opposite-shore sets $`A,B`$:
+```math
+e_G(A,B)\le(d/m)|A||B|+\lambda\sqrt{|A||B|}.
+```
+Here $`d,\lambda`$ are nonnegative parameters, with $`d>0`$; regularity is not required. Let $`H\subseteq G`$ have minimum degree $`\delta\ge3`$, even if $`H`$ is unbalanced or formed by adversarial edge and vertex deletions. If
+```math
+(\delta-2)(\delta-\sqrt2\,\lambda)\ge4d,
+```
+then $`H`$ contains a cycle with at least as many chords as vertices, all in $`H`$.
+
+Indeed, use the endpoint set in $`H`$ and put $`B=N_H(A)`$. Then
+```math
+\delta |A|\le e_H(A,B)\le e_G(A,B)
+  \le \big(2d|A|/m+\sqrt2\,\lambda\big)|A|.
+```
+Thus $`|A|\ge m(\delta-\sqrt2\,\lambda)/(2d)`$. The cycle has at most $`2m`$ vertices and its endpoint chords already number at least $`(\delta-2)|A|`$. If an upper bound $`2m'`$ on cycle length in $`H`$ is available, the right side $`4d`$ in the sufficient condition can be replaced by $`4dm'/m`$. For example, use $`m'`$ equal to the smaller surviving shore size. This result does not rely on a spanning cycle in $`H`$.
+
+For a $`d`$-regular host with $`\lambda/d\le\sigma/\sqrt2-\eta`$ for fixed $`\sigma,\eta>0`$, every surviving subgraph of minimum degree at least $`\sigma d`$ satisfies the condition for sufficiently large $`d`$. This describes a regime where the desired property survives substantial local deletion without invoking Hamiltonicity resilience.
+
 ## Remaining gap
 
 A graph of high average degree has a bipartite subgraph of at least half that average degree, and pruning yields a proportional minimum-degree bound. But it need not satisfy the local sparsity, small-set expansion, or spectral assumptions above. In a potential counterexample the Pósa endpoint set is a small concentrated set with high retained degree. Iterating naively on its support can lose a constant fraction of the minimum or average degree per step. A resolution still needs a way to use that concentration without repeated degree loss, or a different argument.
