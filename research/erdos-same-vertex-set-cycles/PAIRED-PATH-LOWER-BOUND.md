@@ -2,11 +2,7 @@
 
 Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
 
-**Theorem.** Fix an integer $`D\ge3`$ and a real $`d`$ with $`2D(2D-1)/(D^2+D-1)\lt d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_{D,d}(N\log\log N)`$ edges (the implicit constant may also depend on # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge4`$ and a real $`d`$ with $`4D/(D+1)<d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_D(N\log\log N)`$ edges (d`$) and no nonempty subgraph simultaneously of maximum degree at most $`D`$ and average degree at least $`d`$. The host can also be made to have girth tending to infinity.
+**Theorem.** Fix an integer $`D\ge3`$ and a real $`d`$ with $`2D(2D-1)/(D^2+D-1)\lt d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_{D,d}(N\log\log N)`$ edges and no nonempty subgraph simultaneously of maximum degree at most $`D`$ and average degree at least $`d`$. The host can also be made to have girth tending to infinity.
 
 In particular, with $`D=4,d=3`$, there is no pair of edge-disjoint nontrivial simple paths on the same vertex set. A bipartite witness on $`s`$ vertices would have $`2s-2`$ edges. For $`2\le s\le6`$, this exceeds the bipartite edge maximum $`\lfloor s^2/4\rfloor`$. Thus $`s\ge7`$, yielding average degree $`4-4/s\ge24/7>3`$ and maximum degree at most four. Combining this construction with [Janzer–Sudakov's 4-regular subgraph theorem](https://arxiv.org/abs/2204.12455) determines the extremal order $`\Theta(N\log\log N)`$ for the *relaxation* that asks for a subgraph of maximum degree at most four and average degree at least three. The theorem does not give the same upper bound for paired paths or cycles.
 
@@ -24,111 +20,7 @@ r(a+b)\le m\le D\min(a,b), \qquad a_j\le m_j\le\min(b,D a_j).
 
 In particular $`a\le(D/r)b`$, and $`b\le((D-r)/r)a`$, so $`L=\log(n/b)\ge\min_j h_j-O_{D,r}(1)`$ uniformly over feasible profiles. This lower bound on $`L`$ tends to infinity faster than $`J`$.
 
-Call a layer early at $`h_j\le\alpha L`$, late at $`h_j\ge2L`$, and intermediate otherwise. There is at most one intermediate layer, since two consecutive $`h_j`$ differ by a factor of $`M\ge2/\alpha`$. The intermediate layer contributes at most # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge3`$ and a real $`d`$ with $`2D(2D-1)/(D^2+D-1)\lt d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_{D,d}(N\log\log N)`$ edges (the implicit constant may also depend on # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge4`$ and a real $`d`$ with $`4D/(D+1)<d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_D(N\log\log N)`$ edges (d`$) and no nonempty subgraph simultaneously of maximum degree at most $`D`$ and average degree at least $`d`$. The host can also be made to have girth tending to infinity.
-
-In particular, with $`D=4,d=3`$, there is no pair of edge-disjoint nontrivial simple paths on the same vertex set. A bipartite witness on $`s`$ vertices would have $`2s-2`$ edges. For $`2\le s\le6`$, this exceeds the bipartite edge maximum $`\lfloor s^2/4\rfloor`$. Thus $`s\ge7`$, yielding average degree $`4-4/s\ge24/7>3`$ and maximum degree at most four. Combining this construction with [Janzer–Sudakov's 4-regular subgraph theorem](https://arxiv.org/abs/2204.12455) determines the extremal order $`\Theta(N\log\log N)`$ for the *relaxation* that asks for a subgraph of maximum degree at most four and average degree at least three. The theorem does not give the same upper bound for paired paths or cycles.
-
-## Model
-
-Put $`r=d/2`$, and $`\kappa=r(D-1)/(D-r)-(D-1)/D>1`$. Choose a fixed $`\alpha`$ with $`0<\alpha<1`$ and $`(1-\alpha)\kappa>1`$, then an integer $`M\ge2/\alpha`$. Start with a side $`B`$ of size $`n`$. For each integer $`j`$ with $`(\log n)^{1/4}\le M^j\le(\log n)^{1/2}`$, let $`h_j=M^j`$ and put $`|A_j|=n_j=\lfloor n\exp(-h_j)\rfloor`$ on the other side. Every vertex of $`B`$ independently selects one uniformly random neighbour in each layer $`A_j`$. Write $`J`$ for the number of layers. The host has exactly $`nJ`$ edges, $`J=\Theta_M(\log\log n)`$, and $`n+o(n)`$ vertices. In particular $`\sum_j n_j\le2n e^{-\min_j h_j}`$ for all sufficiently large $`n`$: after the first term the ratios of the bounding terms $`n e^{-h_j}`$ are at most $`1/2`$.
-
-## Any candidate must use many edges on the large-layer side of the transition
-
-One can discard isolated vertices from a hypothetical subgraph $`H`$ without decreasing its average degree. Let $`b=|V(H)\cap B|\ge1`$ and let $`a_j,m_j`$ count its vertices, respectively its edges, in layer $`j`$ (edges are assigned to their unique $`A_j`$ end). Put $`a=\sum a_j`$, $`m=\sum m_j`$. Then
-
-```math
-r(a+b)\le m\le D\min(a,b), \qquad a_j\le m_j\le\min(b,D a_j).
-```
-
-In particular $`a\le(D/r)b`$, and $`b\le((D-r)/r)a`$, so $`L=\log(n/b)\ge\min_j h_j-O_{D,r}(1)`$ uniformly over feasible profiles. This lower bound on $`L`$ tends to infinity faster than $`J`$.
-
-Call a layer early at $`h_j\le\alpha L`$, late at $`h_j\ge2L`$, and intermediate otherwise. There is at most one intermediate layer, since two consecutive $`h_j`$ differ by a factor of $`M\ge2/\alpha`$. b`$ edges. In fact its contribution to # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge3`$ and a real $`d`$ with $`2D(2D-1)/(D^2+D-1)\lt d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_{D,d}(N\log\log N)`$ edges (the implicit constant may also depend on # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge4`$ and a real $`d`$ with $`4D/(D+1)<d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_D(N\log\log N)`$ edges (d`$) and no nonempty subgraph simultaneously of maximum degree at most $`D`$ and average degree at least $`d`$. The host can also be made to have girth tending to infinity.
-
-In particular, with $`D=4,d=3`$, there is no pair of edge-disjoint nontrivial simple paths on the same vertex set. A bipartite witness on $`s`$ vertices would have $`2s-2`$ edges. For $`2\le s\le6`$, this exceeds the bipartite edge maximum $`\lfloor s^2/4\rfloor`$. Thus $`s\ge7`$, yielding average degree $`4-4/s\ge24/7>3`$ and maximum degree at most four. Combining this construction with [Janzer–Sudakov's 4-regular subgraph theorem](https://arxiv.org/abs/2204.12455) determines the extremal order $`\Theta(N\log\log N)`$ for the *relaxation* that asks for a subgraph of maximum degree at most four and average degree at least three. The theorem does not give the same upper bound for paired paths or cycles.
-
-## Model
-
-Put $`r=d/2`$, and $`\kappa=r(D-1)/(D-r)-(D-1)/D>1`$. Choose a fixed $`\alpha`$ with $`0<\alpha<1`$ and $`(1-\alpha)\kappa>1`$, then an integer $`M\ge2/\alpha`$. Start with a side $`B`$ of size $`n`$. For each integer $`j`$ with $`(\log n)^{1/4}\le M^j\le(\log n)^{1/2}`$, let $`h_j=M^j`$ and put $`|A_j|=n_j=\lfloor n\exp(-h_j)\rfloor`$ on the other side. Every vertex of $`B`$ independently selects one uniformly random neighbour in each layer $`A_j`$. Write $`J`$ for the number of layers. The host has exactly $`nJ`$ edges, $`J=\Theta_M(\log\log n)`$, and $`n+o(n)`$ vertices. In particular $`\sum_j n_j\le2n e^{-\min_j h_j}`$ for all sufficiently large $`n`$: after the first term the ratios of the bounding terms $`n e^{-h_j}`$ are at most $`1/2`$.
-
-## Any candidate must use many edges on the large-layer side of the transition
-
-One can discard isolated vertices from a hypothetical subgraph $`H`$ without decreasing its average degree. Let $`b=|V(H)\cap B|\ge1`$ and let $`a_j,m_j`$ count its vertices, respectively its edges, in layer $`j`$ (edges are assigned to their unique $`A_j`$ end). Put $`a=\sum a_j`$, $`m=\sum m_j`$. Then
-
-```math
-r(a+b)\le m\le D\min(a,b), \qquad a_j\le m_j\le\min(b,D a_j).
-```
-
-In particular $`a\le(D/r)b`$, and $`b\le((D-r)/r)a`$, so $`L=\log(n/b)\ge\min_j h_j-O_{D,r}(1)`$ uniformly over feasible profiles. This lower bound on $`L`$ tends to infinity faster than $`J`$.
-
-Call a layer early at $`h_j\le\alpha L`$, late at $`h_j\ge2L`$, and intermediate otherwise. There is at most one intermediate layer, since two consecutive $`h_j`$ differ by a factor of $`M\ge2/\alpha`$. m-a`$ is at most # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge3`$ and a real $`d`$ with $`2D(2D-1)/(D^2+D-1)\lt d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_{D,d}(N\log\log N)`$ edges (the implicit constant may also depend on # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge4`$ and a real $`d`$ with $`4D/(D+1)<d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_D(N\log\log N)`$ edges (d`$) and no nonempty subgraph simultaneously of maximum degree at most $`D`$ and average degree at least $`d`$. The host can also be made to have girth tending to infinity.
-
-In particular, with $`D=4,d=3`$, there is no pair of edge-disjoint nontrivial simple paths on the same vertex set. A bipartite witness on $`s`$ vertices would have $`2s-2`$ edges. For $`2\le s\le6`$, this exceeds the bipartite edge maximum $`\lfloor s^2/4\rfloor`$. Thus $`s\ge7`$, yielding average degree $`4-4/s\ge24/7>3`$ and maximum degree at most four. Combining this construction with [Janzer–Sudakov's 4-regular subgraph theorem](https://arxiv.org/abs/2204.12455) determines the extremal order $`\Theta(N\log\log N)`$ for the *relaxation* that asks for a subgraph of maximum degree at most four and average degree at least three. The theorem does not give the same upper bound for paired paths or cycles.
-
-## Model
-
-Put $`r=d/2`$, and $`\kappa=r(D-1)/(D-r)-(D-1)/D>1`$. Choose a fixed $`\alpha`$ with $`0<\alpha<1`$ and $`(1-\alpha)\kappa>1`$, then an integer $`M\ge2/\alpha`$. Start with a side $`B`$ of size $`n`$. For each integer $`j`$ with $`(\log n)^{1/4}\le M^j\le(\log n)^{1/2}`$, let $`h_j=M^j`$ and put $`|A_j|=n_j=\lfloor n\exp(-h_j)\rfloor`$ on the other side. Every vertex of $`B`$ independently selects one uniformly random neighbour in each layer $`A_j`$. Write $`J`$ for the number of layers. The host has exactly $`nJ`$ edges, $`J=\Theta_M(\log\log n)`$, and $`n+o(n)`$ vertices. In particular $`\sum_j n_j\le2n e^{-\min_j h_j}`$ for all sufficiently large $`n`$: after the first term the ratios of the bounding terms $`n e^{-h_j}`$ are at most $`1/2`$.
-
-## Any candidate must use many edges on the large-layer side of the transition
-
-One can discard isolated vertices from a hypothetical subgraph $`H`$ without decreasing its average degree. Let $`b=|V(H)\cap B|\ge1`$ and let $`a_j,m_j`$ count its vertices, respectively its edges, in layer $`j`$ (edges are assigned to their unique $`A_j`$ end). Put $`a=\sum a_j`$, $`m=\sum m_j`$. Then
-
-```math
-r(a+b)\le m\le D\min(a,b), \qquad a_j\le m_j\le\min(b,D a_j).
-```
-
-In particular $`a\le(D/r)b`$, and $`b\le((D-r)/r)a`$, so $`L=\log(n/b)\ge\min_j h_j-O_{D,r}(1)`$ uniformly over feasible profiles. This lower bound on $`L`$ tends to infinity faster than $`J`$.
-
-Call a layer early at $`h_j\le\alpha L`$, late at $`h_j\ge2L`$, and intermediate otherwise. There is at most one intermediate layer, since two consecutive $`h_j`$ differ by a factor of $`M\ge2/\alpha`$. (1-1/D)b`$, since # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge3`$ and a real $`d`$ with $`2D(2D-1)/(D^2+D-1)\lt d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_{D,d}(N\log\log N)`$ edges (the implicit constant may also depend on # The log-log lower barrier already holds for paired paths
-
-Partial progress on [Erdős #585](https://www.erdosproblems.com/585), not a solution of the two-cycle problem. This adapts the layered random model of [Pyber–Rödl–Szemerédi](https://doi.org/10.1006/jctb.1995.1004), as described in [Janzer–Sudakov, Section 2](https://arxiv.org/html/2204.12455). A related layered union bound appears in [Janzer–Janzer–Steiner–Sudakov](https://doi.org/10.1112/blms.70262). The degree/edge-count argument below excludes bounded-degree subgraphs even with a positive fraction of degree deficit, not just regular subgraphs. No claim of paper priority is made.
-
-**Theorem.** Fix an integer $`D\ge4`$ and a real $`d`$ with $`4D/(D+1)<d\le D`$. For every sufficiently large $`N`$, there is a simple bipartite $`N`$-vertex graph with $`\Omega_D(N\log\log N)`$ edges (d`$) and no nonempty subgraph simultaneously of maximum degree at most $`D`$ and average degree at least $`d`$. The host can also be made to have girth tending to infinity.
-
-In particular, with $`D=4,d=3`$, there is no pair of edge-disjoint nontrivial simple paths on the same vertex set. A bipartite witness on $`s`$ vertices would have $`2s-2`$ edges. For $`2\le s\le6`$, this exceeds the bipartite edge maximum $`\lfloor s^2/4\rfloor`$. Thus $`s\ge7`$, yielding average degree $`4-4/s\ge24/7>3`$ and maximum degree at most four. Combining this construction with [Janzer–Sudakov's 4-regular subgraph theorem](https://arxiv.org/abs/2204.12455) determines the extremal order $`\Theta(N\log\log N)`$ for the *relaxation* that asks for a subgraph of maximum degree at most four and average degree at least three. The theorem does not give the same upper bound for paired paths or cycles.
-
-## Model
-
-Put $`r=d/2`$, and $`\kappa=r(D-1)/(D-r)-(D-1)/D>1`$. Choose a fixed $`\alpha`$ with $`0<\alpha<1`$ and $`(1-\alpha)\kappa>1`$, then an integer $`M\ge2/\alpha`$. Start with a side $`B`$ of size $`n`$. For each integer $`j`$ with $`(\log n)^{1/4}\le M^j\le(\log n)^{1/2}`$, let $`h_j=M^j`$ and put $`|A_j|=n_j=\lfloor n\exp(-h_j)\rfloor`$ on the other side. Every vertex of $`B`$ independently selects one uniformly random neighbour in each layer $`A_j`$. Write $`J`$ for the number of layers. The host has exactly $`nJ`$ edges, $`J=\Theta_M(\log\log n)`$, and $`n+o(n)`$ vertices. In particular $`\sum_j n_j\le2n e^{-\min_j h_j}`$ for all sufficiently large $`n`$: after the first term the ratios of the bounding terms $`n e^{-h_j}`$ are at most $`1/2`$.
-
-## Any candidate must use many edges on the large-layer side of the transition
-
-One can discard isolated vertices from a hypothetical subgraph $`H`$ without decreasing its average degree. Let $`b=|V(H)\cap B|\ge1`$ and let $`a_j,m_j`$ count its vertices, respectively its edges, in layer $`j`$ (edges are assigned to their unique $`A_j`$ end). Put $`a=\sum a_j`$, $`m=\sum m_j`$. Then
-
-```math
-r(a+b)\le m\le D\min(a,b), \qquad a_j\le m_j\le\min(b,D a_j).
-```
-
-In particular $`a\le(D/r)b`$, and $`b\le((D-r)/r)a`$, so $`L=\log(n/b)\ge\min_j h_j-O_{D,r}(1)`$ uniformly over feasible profiles. This lower bound on $`L`$ tends to infinity faster than $`J`$.
-
-Call a layer early at $`h_j\le\alpha L`$, late at $`h_j\ge2L`$, and intermediate otherwise. There is at most one intermediate layer, since two consecutive $`h_j`$ differ by a factor of $`M\ge2/\alpha`$. a_j\ge m_j/D`$. The late layers contribute at most $`2D n e^{-2L}=2D b e^{-L}`$ edges, by the size bound and the maximum degree on their $`A`$ vertices. Also
+Call a layer early at $`h_j\le\alpha L`$, late at $`h_j\ge2L`$, and intermediate otherwise. There is at most one intermediate layer, since two consecutive $`h_j`$ differ by a factor of $`M\ge2/\alpha`$. The intermediate layer contributes at most $`b`$ edges. In fact its contribution to $`m-a`$ is at most $`(1-1/D)b`$, since $`a_j\ge m_j/D`$. The late layers contribute at most $`2D n e^{-2L}=2D b e^{-L}`$ edges, by the size bound and the maximum degree on their $`A`$ vertices. Also
 
 ```math
 m-a\ge rb+(r-1)a
