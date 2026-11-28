@@ -49,6 +49,9 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 
 - [Shared reserve bridges](SHARED-RESERVE-BRIDGES.md): a partition criterion exactly characterizes when several component quotients can share a reserve. When it is a matching, there is an exact count of branches after optimally cutting each old cycle, including systems with one designated path.
 
+- [Fixed-matching parity](FIXED-MATCHING-PARITY.md): arbitrarily large girth and arbitrarily many reserve bridges do not force a merge when a whole perfect matching is fixed. Both colours can face this parity barrier at once.
+- [Ribbon switch order](RIBBON-SWITCH-ORDER.md): positive and negative high-girth switches can have identical quotient data and compatible parity. A tree of multiple-contact switches does merge when its cyclic order satisfies an explicit block condition; [fixture checker](verify_reserve_switch_fixtures.py).
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
