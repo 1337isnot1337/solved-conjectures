@@ -71,3 +71,15 @@ The following equivalent stationary form is useful for checking constants. If th
     B [2+l(4m−1)] <= e.
 
 For a single optimum cut, use m=integral m_f p/(2B) instead. The exact closure condition in the middle band is l(4m−1)>=1597/800. (Indeed 25·3197/20000−2=1597/800.) These tests concern actual independent-set laws; the edge inequality p_x+p_y<=1 alone does not give an attainable law.
+
+### Robustness to imperfect independent tests
+
+The sampling no longer needs exact independence if we pay for its failure. Suppose a jointly measurable law of arbitrary sets has coverage in (1), and let r(x,y) be the probability that the test contains both endpoints of an edge. Put R = integral_edges W r and R_f = integral_edges M_f r, still in unordered units. Then
+
+    B <= (1−a)e/2 + 2a (L−integral m_f p) + 2a(R+R_f).    (4)
+
+If p(x)+p(y)<=1 on the original edges, replace the last term by 2a R+(1−a)R_f. In particular the improved version holds when all coverages are at most 1/2.
+
+To prove these estimates use the same intervals and same marginal as before. When the f signs are opposite, the first option is the only way both ends enter the cut shore and contributes a r. When they agree, let J be the joint inclusion in the second option conditioned on choosing their common shore. For q=1−p_x−p_y>=0, consider the four membership cases. Relative to the independent-edge calculation, both-in and both-out probabilities increase by r, each one-in probability decreases by r. At least one of the two left intervals has length zero unless both endpoints are at most 1/2. If both endpoints are at most 1/2, the change in J is r(1−max(u_x,u_y)), which lies in [0,r]. In the mixed case the change is r times the right-right intersection minus its one potentially nonzero left-right intersection, again in [0,r]. Thus J<=lq+r for q>=0. For q<0 two coverages at least 1/2 have neither left interval. In the mixed case their only potentially nonzero left-right intersection is empty: the high endpoint's offset y strictly exceeds the lower one's x, reversing the comparison in the exact computation. Hence J<=q+r, the probability that both are out. In either case J<=l(q+r) since l>=1 and q+r>=0. Integrate the first option's 2ar contribution on all edges and the second option's (1−a)J contribution on edges missed by f. This gives (4) and its sharpened form.
+
+At l=3 the general error on a stationary graph is (6/5)(R+E_f R_f), at most (12/5)R. This permits testing laws of almost-independent sets on the original graph; it does not require finding a nearby graph which has a stationary cut law.
