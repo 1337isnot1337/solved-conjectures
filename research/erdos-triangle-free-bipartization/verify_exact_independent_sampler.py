@@ -17,6 +17,7 @@ def lengths(p, l, c):
 
 def run():
     tests = 0
+    imperfect = 0
     for l in (Q(1), Q(4, 3), Q(2), Q(3), Q(4), Q(9)):
         a = l / (l + 2)
         c = (1 - 1 / l) / 2
@@ -52,6 +53,25 @@ def run():
                 exact = 1-P-S+(1-a)*J
                 assert exact == (1-a)/2+a*(pp-p+ss-s)+2*a*q-(1-a)*(l*q-J)
                 tests += 1
+        inside = [p for p in grid if c <= p <= 1-c]
+        for p in inside:
+            for s in inside:
+                q = 1-p-s
+                u, v = lengths(p,l,c)
+                z, w = lengths(s,l,c)
+                lo, hi = max(0,-q), min(p,s)
+                for r in {lo, (lo+hi)/2, hi}:
+                    J = (
+                        r*min(u,z) + (p-r)*max(0,u+w-1)
+                        + (s-r)*max(0,z+v-1) + (q+r)*min(v,w)
+                    )
+                    assert 0 <= J <= l*(q+r)
+                    if q >= 0:
+                        assert J <= l*q+r
+                    else:
+                        assert J <= q+r
+                    imperfect += 1
+    print(f"{imperfect} imperfect-law checks pass.")
     m = Q(3997,9600)
     assert Q(1,25)*(2+3*(4*m-1)) == Q(3197,20000)
     assert (1+Q(797,3200))/3 == m
