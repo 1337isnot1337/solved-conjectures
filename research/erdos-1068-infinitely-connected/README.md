@@ -99,21 +99,90 @@ A related observation for stage-by-stage ZFC constructions: if "$`u`$ is used as
 
 Thomassen (*Combinatorica* 37 (2017) 785–793) proved the **edge**-connectivity version: every uncountably chromatic graph has an uncountably chromatic subgraph of infinite edge-connectivity. He notes that the same holds with colouring number in place of chromatic number. For **vertex** connectivity, the colouring-number version fails, by the following example.
 
-> Let $A=2^{<\omega}$ be the nodes of the binary tree. Let $B$ be a set of $\aleph_1$ branches such that every node lies on $\aleph_1$ of them. Join a branch $b\in B$ to every node on $b$. The resulting bipartite graph $\Gamma$ has $`\mathop{\mathrm{Col}}(\Gamma)>\aleph_0`$, since it is a type I $\aleph_0$-obstruction in the sense of Bowler–Carmesin–Komjáth–Reiher. It has no infinitely connected subgraph with two or more vertices.
+> Let $`A=2^{<\omega}`$ be the nodes of the binary tree. Let $`B`$ be a set of $`\aleph_1`$ branches such that every node lies on $`\aleph_1`$ of them. Join a branch $`b\in B`$ to every node on $`b`$. The resulting bipartite graph $`\Gamma`$ has $`\mathop{\mathrm{Col}}(\Gamma)>\aleph_0`$, since it is a type I $`\aleph_0`$-obstruction in the sense of Bowler–Carmesin–Komjáth–Reiher. It has no infinitely connected subgraph with two or more vertices.
 
-*Proof of the second claim.* Let $a,a'$ be incomparable nodes with meet $\sigma$. A branch through a node of the cone above $\sigma\frown 0$ meets only that cone and nodes $\le\sigma$. So the finite set $`\{\tau:\tau\le\sigma\}`$ separates $a$ from $a'$. Hence an infinitely connected subgraph $H$ has its nodes on one chain $C$. A branch with infinitely many $H$-neighbours must contain infinitely many nodes of $C$, so it is the unique branch through $C$. Every node of $H$ then has at most one branch-neighbour in $H$, which contradicts Lemma 2. $\square$
+*Proof of the second claim.* Let $`a,a'`$ be incomparable nodes with meet $`\sigma`$. A branch through a node of the cone above $`\sigma\frown 0`$ meets only that cone and nodes $`\le\sigma`$. So the finite set $`\{\tau:\tau\le\sigma\}`$ separates $`a`$ from $`a'`$. Hence an infinitely connected subgraph $`H`$ has its nodes on one chain $`C`$. A branch with infinitely many $`H`$-neighbours must contain infinitely many nodes of $`C`$, so it is the unique branch through $`C`$. Every node of $`H`$ then has at most one branch-neighbour in $`H`$, which contradicts Lemma 2. $`\square`$
 
 So any positive solution of #1068 must use chromatic number, not just one of the two BCKR obstructions. Lemma 4 shows the same for type II obstructions in another way.
 
 ## A sparse ladder graph can still be infinitely connected
 
-Soukup's triangle-free example uses sparse ladder systems (no special cycles). That property alone does not exclude countable infinitely connected subgraphs. Take a single chain of height $\omega^2+1$ and give each limit $\omega\cdot k$ a ladder of successor ordinals that also contains the first $k$ points of every earlier $\omega$-block. Such ladders are automatically sparse, since successor points have no ladders of their own. The resulting bipartite graph satisfies conditions (i) and (ii) of "A sufficient positive structure" above, so it is infinitely connected.
+Soukup's triangle-free example uses sparse ladder systems (no special cycles). That property alone does not exclude countable infinitely connected subgraphs. Take a single chain of height $`\omega^2+1`$ and give each limit $`\omega\cdot k`$ a ladder of successor ordinals that also contains the first $`k`$ points of every earlier $`\omega`$-block. Such ladders are automatically sparse, since successor points have no ladders of their own. The resulting bipartite graph satisfies conditions (i) and (ii) of "A sufficient positive structure" above, so it is infinitely connected.
 
 ## Forcing attempt (abandoned)
 
-A ccc forcing with finite conditions was considered. It adds a $T$-graph with frozen finite "port" sets at successor nodes, which give finite adhesion, and fixed per-chain budgets, which give finite upward degree. Lemma 3 would then rule out infinitely connected subgraphs, and the usual $\Delta$-system amalgamation would add a monochromatic edge $x_\xi < x_\eta$ against any colouring name. The amalgamation works if $x_\xi$ has no predecessors outside the $\Delta$-root and no lower neighbours. It breaks in general because the extension deciding $\dot f(x_\xi)$ may insert frozen successor nodes below $x_\xi$. Merging the chains then puts frozen nodes, whose ports lack the new lower endpoint, inside the span of the new edge, or of an old edge. I found no way to stop deciding extensions from doing this without making every chain finite, and finite chains force $\chi\le\aleph_0$.
+A ccc forcing with finite conditions was considered. It adds a $`T`$-graph with frozen finite "port" sets at successor nodes, which give finite adhesion, and fixed per-chain budgets, which give finite upward degree. Lemma 3 would then rule out infinitely connected subgraphs, and the usual $`\Delta`$-system amalgamation would add a monochromatic edge $`x_\xi < x_\eta`$ against any colouring name. The amalgamation works if $`x_\xi`$ has no predecessors outside the $`\Delta`$-root and no lower neighbours. It breaks in general because the extension deciding $`\dot f(x_\xi)`$ may insert frozen successor nodes below $`x_\xi`$. Merging the chains then puts frozen nodes, whose ports lack the new lower endpoint, inside the span of the new edge, or of an old edge. I found no way to stop deciding extensions from doing this without making every chain finite, and finite chains force $`\chi\le\aleph_0`$.
+
+## Lemma 7 (one vertex never creates infinite connectivity)
+
+> If $`G-v`$ has no infinitely connected subgraph with two or more vertices, then neither has $`G`$.
+
+*Proof.* Let $`H\ni v`$ be infinitely connected with $`\lvert H\rvert\ge2`$. For $`x\ne y`$ in $`H-v`$, at most one of the infinitely many internally disjoint $`x`$–$`y`$ paths in $`H`$ passes through $`v`$, so $`H-v`$ is infinitely connected. It has at least two vertices because $`v`$ has infinite degree in $`H`$ (Lemma 2). $`\square`$
+
+So on a well-ordered vertex set, deleting maxima finitely often turns any infinitely connected subgraph with two or more vertices into one without a largest element. A construction along $`\omega_1`$ therefore only has to control what happens at limit stages.
+
+## Lemma 8 (Bowler–Pitz coherence forces infinite upward degree)
+
+Write $`N^-(u)`$ for the set of neighbours of $`u`$ below $`u`$ in a $`T`$-graph. Bowler and Pitz prove finite adhesion from the coherence property $`(\star)`$: $`N^-(u)\cap s{\downarrow}\subseteq N^-(s)`$ whenever $`s\le u`$.
+
+> In a $`T`$-graph with this coherence, if $`t`$ has limit height and $`x\in N^-(t)`$, then $`x`$ is adjacent to every node $`s`$ with $`x<s\le t`$. In particular condition (2) of Lemma 3 fails at $`x`$.
+
+*Proof.* For $`x<s\le t`$ we have $`x\in N^-(t)\cap s{\downarrow}\subseteq N^-(s)`$. There are infinitely many such $`s`$ on the chain below $`t`$. $`\square`$
+
+So a counterexample through Lemma 3 needs finite adhesion from a mechanism other than coherence.
+
+## Finite adhesion from finite ports
+
+Give every successor node $`s`$ a finite *port* $`P(s)`$ of nodes below or equal to its parent. Allow $`x\in N^-(u)`$ only if $`x`$ is *registered at* $`u`$, meaning $`x\in P(s)`$ for every successor node $`s\le u`$ whose parent lies at or above $`x`$.
+
+> If every lower neighbour is registered, then any two incomparable nodes are separated by a finite set.
+
+*Proof.* Let $`t,t'`$ be incomparable with last common node $`m`$, and let $`s`$ be the child of $`m`$ below $`t`$. A $`t`$–$`t'`$ path leaves the cone above $`s`$ along an edge $`uw`$ with $`u\ge s`$ and $`w\not\ge s`$. The nodes $`u`$ and $`w`$ are comparable, so $`w<u`$, hence $`w\le m`$. Registration at $`u`$ gives $`w\in P(s)`$. So the finite set $`P(s)`$ meets every $`t`$–$`t'`$ path. $`\square`$
+
+Registration creates no edges, so unlike coherence it is compatible with (2). Some such device is needed, because one upper neighbour per chain alone does not prevent $`K_{\aleph_0,\aleph_0}`$. Take the tree $`\sigma\mathbb Q`$ of well-ordered subsets of $`\mathbb Q`$ with a maximum. Join $`s`$ to $`t`$ when $`t`$ is the least node above $`s`$ on its branch with $`\max t>\max s+1`$. Every node then has exactly one upper neighbour on each chain. Now take nodes $`c_0<c_1<\cdots`$ whose maxima increase to $`r<\max c_0+1`$. For every rational $`q>r+1`$ the node $`u_q=\bigcup_k c_k\cup\{q\}`$ is adjacent to every $`c_k`$, so $`\{c_k\}`$ and $`\{u_q\}`$ span a $`K_{\aleph_0,\aleph_0}`$.
+
+## Lemma 9 (ports cannot be uniform along $`\omega_1`$)
+
+> There is no choice of a cofinal $`\omega`$-sequence $`C_\mu`$ for every countable limit $`\mu`$ such that, for every $`\alpha<\omega_1`$, the set $`F_\alpha=\bigcup_{\mu>\alpha}(C_\mu\cap(\alpha+1))`$ is finite.
+
+*Proof.* Let $`\nu_\beta`$ be the least $`\alpha\ge\beta`$ with $`\beta\notin F_\alpha`$, or $`\omega_1`$ if there is none. If $`\beta\in C_\mu`$ then $`\beta\in F_\alpha`$ for all $`\alpha\in[\beta,\mu)`$, so $`\nu_\beta\ge\mu`$. The set $`\Omega=\{\beta:\nu_\beta=\omega_1\}`$ satisfies $`\Omega\cap(\alpha+1)\subseteq F_\alpha`$ for every $`\alpha`$, so it is finite. Let $`\mu>\max\Omega`$ be a limit closed under $`\beta\mapsto\nu_\beta`$ for $`\beta\notin\Omega`$ (a club of such $`\mu`$ exists). Then every $`\beta\in C_\mu`$ has $`\nu_\beta\ge\mu`$, so $`\beta\in\Omega`$. Hence $`C_\mu\subseteq\Omega`$ is finite, a contradiction. $`\square`$
+
+This is the level-by-level version of Lemma 5. The ports must use the branching of the tree, as Bowler and Pitz's sets $`A_t`$ do.
+
+## A construction reduced to one witness lemma
+
+The following construction satisfies (1) and (2) of Lemma 3 by design. Its colouring argument fails at exactly one step.
+
+**Tree.** Each node is a sequence $`\langle(P_\xi,M_\xi):\xi<\alpha\rangle`$ with $`\alpha<\omega_1`$ and $`M_\xi\subseteq P_\xi`$ finite sets of ordinals $`\le\xi`$, ordered by extension. The pair at position $`\xi`$ decorates the successor node of height $`\xi+1`$: $`P_\xi`$ is its port, and $`M_\xi`$ is a set of *marks*. Every port is available at every node, and a node of limit height is determined by its predecessors, so the tree is Hausdorff.
+
+**Ladders.** For $`\sigma`$ of limit height $`\alpha`$, let $`\Lambda(\sigma)`$ be the set of $`\eta<\alpha`$ such that:
+- $`\eta`$ is registered at $`\sigma`$, meaning $`\eta\in P_\xi`$ for all $`\xi\in[\eta,\alpha)`$;
+- $`\eta`$ is *fresh* at $`\sigma`$, meaning $`\eta\notin\Lambda(\sigma\restriction\beta)`$ for every limit $`\beta\in(\eta,\alpha)`$;
+- $`\eta`$ is marked cofinally often below $`\alpha`$.
+
+This is a recursive definition. Then $`\sigma`$ is joined to $`\sigma\restriction\eta`$ for each $`\eta\in\Lambda(\sigma)`$. These are all the edges.
+
+**Proved properties.**
+- Finite adhesion follows from the port section above.
+- If $`\sigma_1<\sigma_2`$ both used $`\eta`$, then $`\eta`$ would not be fresh at $`\sigma_2`$. So the upper neighbours of a node form an antichain, which gives (2).
+- Lemma 3 therefore applies: the graph has no infinitely connected subgraph with two or more vertices.
+- Colouring each node by its height shows $`\chi\le\aleph_1`$.
+
+**Colouring argument and its gap.** Suppose $`c`$ is a proper colouring with countably many colours. Take a countable $`M\prec H(\theta)`$ containing $`c`$, with $`\delta=M\cap\omega_1`$. Build nodes $`v_0<v_1<\cdots`$ in $`M`$ of heights cofinal in $`\delta`$, together with finite sets $`G_k`$ of heights. Each $`v_k`$ *keeps* $`G_k`$: the heights in $`G_k`$ are registered and fresh at $`v_k`$.
+
+At a step handling colour $`n`$, look for $`v\ge v_k`$ that keeps $`G_k`$ and has $`c(v)=n`$. If one exists, take one in $`M`$, add its height to $`G_{k+1}`$, and then mark every height in $`G_{k+1}`$ once at each later step. The marks then accumulate only at $`\delta`$. Between steps, extend with ports $`G_{k+1}`$ and no marks.
+
+The union $`t`$ is a node of height $`\delta`$. Suppose no chosen witness of limit height uses a height of the current $`G_k`$. Then $`t`$ keeps every $`G_k`$, and $`\Lambda(t)\supseteq\bigcup_kG_k`$. Let $`n=c(t)`$. At each step for $`n`$, the node $`t`$ itself solves the search, so by elementarity there is a solution in $`M`$. The height of that solution lies in $`\Lambda(t)`$, so $`t`$ is adjacent to a node of its own colour, which contradicts properness.
+
+The gap is the supposition. The witness $`v`$ found in $`M`$ may itself have limit height and use some heights of $`G_k`$. Those heights are then no longer fresh above $`v`$, and $`t`$ loses them.
+
+One cannot restrict the search to witnesses that avoid $`G_k`$. The node $`t`$ uses $`G_k`$, so the restricted statement no longer reflects. This is the template obstacle of the earlier section, now in exact form.
+
+The same construction run under $`\diamondsuit`$, with tops added only for chosen generic branches, has the same single gap.
+
+**Witness lemma (open).** In one of these constructions, there is a way to choose the witnesses so that, for the resulting top $`t`$, some node of colour $`c(t)`$ survives to $`t`$ registered and fresh. A witness lemma for the $`\diamondsuit`$ version would make the negative answer consistent; for the version above it would give a ZFC counterexample.
 
 ## Next steps
 
-1. Look for an edge-thinning of $`\mathbf G`$, or of a Todorčević-type tree graph, that keeps (1) and (2) of Lemma 3 and has a colouring argument that does not escalate in ordinal length.
-2. Positive side: use generic points (a vertex outside $`M`$ that lies in no countably chromatic set from $`M`$) to build the (i)+(ii) structure.
+1. Prove or refute the witness lemma. The obstacle is that each witness uses at most one protected point of each colour but can use one of every colour, while each step protects only one new point.
+2. Positive side: the template obstacle suggests that reflection forces reuse of earlier points. Try to turn that reuse into the (i)+(ii) structure, starting from a generic vertex outside a countable elementary submodel.
