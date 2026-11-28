@@ -54,3 +54,19 @@ Every difference of distinct members has size two. A coordinate cut for i,j or k
 There is also a uniform perturbation: add ten independent new classes of equal mass t/10, one for each triple, joined precisely to their respective attachments with no edges among new classes. Scale old masses by 1−t. Every old optimum has total minimum extension loss (1−t)^2/32+(3/40)t(1−t). This is strictly above 1/32 for all sufficiently small t>0. Each old nonoptimum has an integer missed count at least 9, so its scaled old loss alone exceeds 1/32 for all sufficiently small t. Split assignments inside a weighted class cannot lower the best cut below the best monochromatic-class assignment: fix all other classes, optimize the current class at one of its endpoint assignments, and repeat. Thus the perturbation genuinely improves B. It does not improve the known global lower bound 1/25.
 
 For literature context, [Šámal](https://iuuk.mff.cuni.cz/~samal/papers/clebsch/clebsch.pdf) gives the Clebsch connection to disjoint cut complements, and [Balogh–Clemen–Lidický](https://arxiv.org/abs/2103.14179) discuss Clebsch as a local-cut obstruction. The calculation here concerns the optimized independent-law sampler and its distinct attachment diagnostic.
+
+### The perturbation works for all odd folded cubes of dimension at least five
+
+Let d>=5 be odd. Use the even subsets of [d] and the d generators [d] without one coordinate. Put N=2^(d−1) and use equal old masses. This graph is triangle-free: the sum of distinct generators has size two, not d−1. A character chi_S has eigenvalue (-1)^|S|(d−2|S|), with S and its complement giving the same character. The smallest eigenvalue is −(d−2); its eigenspace is exactly the d singleton characters. The pair products of these characters are still distinct and nonconstant. As in dimension five, the only optimum signs are signed singleton characters, and B=1/(2N).
+
+For each pair of coordinates, form the attachment of all even subsets avoiding those two coordinates. It is independent since any difference has size at most d−2. Its normalized size is 1/4, and its smaller-side mass is 1/8 on each of the d−2 free coordinate cuts and zero on the others. Uniformly averaging these pair attachments gives payoff
+
+    k = (d−2)/(8d)
+
+on every optimum sign. This is strictly above 2B=1/N: at d=5, Nk=6/5; both N and k increase with d. It independently follows that **every** optimum law violates attachment maximality, by taking an attachment whose payoff is at least its uniform average.
+
+For an explicit uniform perturbation take t=1/(2N^2), rescale the old classes by 1−t, and add one new class per pair of coordinates, totaling mass t. As above, put no edges among the new classes. Its optimum missed mass is exactly
+
+    B_new = (1−t)^2/(2N) + t(1−t)k > 1/(2N).
+
+Indeed an old nonoptimum has old missed mass at least 1/(2N)+1/N², and its scaled old loss already exceeds the displayed candidate since (1−t)/N²>t k. Hence the optimum uses one of the original coordinate cuts. For the strict increase, the derivative at zero is k−1/N and the quadratic coefficient is 1/(2N)−k. Their ratio (k−1/N)/(k−1/(2N)) is at least 2/7 since Nk>=6/5, while t<=1/512. This is an infinite structural family excluded by the same variational test. It is not an asymptotic claim that folded cubes approach 1/25.
