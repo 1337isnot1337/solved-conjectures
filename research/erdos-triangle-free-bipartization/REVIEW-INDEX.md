@@ -34,6 +34,9 @@ The product-weighted formulation is equivalent to the full finite statement by r
 
 - The [uniform near-half dictionary](HALF-INDEPENDENT-DICTIONARY.md) localizes the entire set of almost-half independent sets at a stationary maximizer to at most eight candidates on one common paired partition, not merely a finite sample of sets. The original graph's minimum degree, forced-to-cross edges, and the stationary monochromatic kernel all enter the proof. It applies to graphons and does not require that an almost-half independent set exists.
 
+- The [covering theorem](HALF-INDEPENDENT-COVER.md) excludes any stationary extremizer whose half independent sets cover the space, by converting at most four such sets and a true optimum sign into a fractional 8/3-colouring. Its robust form quantifies the allowed coverage and independence deficits.
+- The [complement phase theorem](HALF-INDEPENDENT-PHASES.md) also excludes any half independent set whose stationary law can be aligned to a fixed complementary colouring with little attachment-edge disagreement even if the complement is disconnected. Both new notes have [exact checks](verify_half_independent.py) for their scalar arithmetic.
+
 ## Remaining gap
 
 The necessary conditions do not yet force a global maximizing graphon into any of the covered classes or yield an all-order bound directly. One specific next avenue is to find a nontrivial independent-attachment distribution whose payoff is exactly first-order optimal and whose disjointness edges create a useful second-order comparison. Ordinary copied neighborhoods cannot do that on a saturated graphon. A different avenue is to make the signed flag inequalities sufficiently strong in the medium density band. Neither possibility is stated as a completed proof.
