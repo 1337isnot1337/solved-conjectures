@@ -48,3 +48,26 @@ Take l=3 and a=3/5. At a stationary graph average (3) over the optimum-cut law, 
 For e<=3197/20000 the right side is at most 3197/100000. At B=1/25 the sufficient threshold is m>=3997/9600 (approximately .416354), with pointwise coverage p>=1/3 and positive degree. The earlier general criterion used .4235; the improved one extends the stronger overlapping-three-cover threshold to **arbitrary** independent-set probability laws. Indeed sampling three overlapping covering sets equally yields m=(1+t)/3 on the positive-degree support, where t is the mass covered twice. At a stationary candidate for the conjecture there are no isolated points of positive mass. With a single fixed optimum cut the same threshold uses the expectation of p under density m_f/(2B), not ordinary vertex mass, and requires no stationarity.
 
 This does not establish that a law of the required pointwise coverage and average mass exists at an unrestricted extremizer.
+
+### Extend the sampler to arbitrary coverage
+
+For p outside (1), clip the probability of the left interval and the right interval separately: if p<c=(1−1/l)/2 take both lengths 1; if p>1−c take both lengths 0. The formulas match at the valid endpoints (for the right endpoint its member interval is already empty). Let p' denote p clipped to [c,1−c]. The overall marginal now equals (1+a)/4+a(p−p'), since the average inclusion in the second option is 1/2+l(1/2−p').
+
+The joint probability J in the second option, conditional on a common f-shore, is still at most lq where q=1−p_x−p_y. Here is the exact deficit that can be kept in the inequality:
+
+* If both endpoint coverages p_x,p_y are at most 1/2, let eta(p) = l(c−p)_+. The formula is J=lq−eta(p_x)−eta(p_y), since p u(p)=(l−1)(1/2−p)−eta(p).
+* If their coverages are p_low=1/2−x, p_high=1/2+y with y>0 and p_high<=1−c, the formula is J=lq−min(eta(p_low),(l−1)q/(1−2y)). Indeed the two right intervals contribute q v(p_high) exactly, and the left-right contribution is the positive part of (l−1)q/(1−2y)−eta(p_low).
+* If the high endpoint has p_high>1−c then J=0. If l=1 use J=q directly, including the degenerate endpoints 0 and 1.
+
+Consequently for arbitrary p,
+
+    B <= (1−a)e/2 + a integral d_W (p'−p)
+          + 2a (L−integral m_f p) − (1−a) integral_edges M_f (lq−J).
+
+Here d_W is the full degree and M_f is the kernel of edges missed by f, with the last integral unordered. This incorporates the reduction in simultaneous inclusion caused by clipping, rather than charging its full marginal cost on every missed edge. Omitting the last nonnegative subtraction still gives a valid sufficient test.
+
+The following equivalent stationary form is useful for checking constants. If there is a stationary optimum law and the coverage avoids clipping, let m=integral p; then
+
+    B [2+l(4m−1)] <= e.
+
+For a single optimum cut, use m=integral m_f p/(2B) instead. The exact closure condition in the middle band is l(4m−1)>=1597/800. (Indeed 25·3197/20000−2=1597/800.) These tests concern actual independent-set laws; the edge inequality p_x+p_y<=1 alone does not give an attainable law.
