@@ -26,5 +26,19 @@ class GitHubMathTests(TestCase):
         self.assertIsNone(check_document(r'Literal example: `\operatorname{Var}`.'))
 
 
+    @patch('check_github_math.time.sleep')
+    @patch('check_github_math.subprocess.run')
+    def test_rate_limit_is_waited_out(self, run, sleep):
+        import check_github_math
+        from subprocess import CalledProcessError, CompletedProcess
+        limited = CompletedProcess([], 1, '', 'gh: You have exceeded a secondary rate limit.')
+        run.side_effect = [limited, CompletedProcess([], 0, '<p>ok</p>', '')]
+        self.assertEqual(check_github_math.github_markdown('x'), '<p>ok</p>')
+        self.assertIn(60, [call.args[0] for call in sleep.call_args_list])
+        run.side_effect = [CompletedProcess([], 1, '', 'HTTP 404: Not Found')]
+        with self.assertRaises(CalledProcessError):
+            check_github_math.github_markdown('x')
+
+
 if __name__ == '__main__':
     main()
