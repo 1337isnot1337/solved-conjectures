@@ -43,3 +43,30 @@ For the balanced pentagon blow-up, the uniform law on its five minimum cuts real
 As one possible way to use the row, if an independent set contains a neighborhood N(x), the attachment cost cannot decrease on adding the remaining vertices. It has the same expectation since the neighborhood already attains 2B, so there is zero gain in almost every cut of the law. In any such cut where N(x) has strictly unequal sign masses, all further vertices of the independent set must be on its majority side. In a maximal triangle-free support the neighborhood is already maximal independent, so this specific application is vacuous; inequalities on other independent sets remain available.
 
 No assumption is made that the full supremum is attained by a finite support. The quantitative near-maximizer statement is included to avoid that unjustified step. It and the exact finite corollary are necessary conditions only.
+
+
+## Near-maximizing laws also have nearly constant expected monochromatic degree
+
+Let gap=B-beta, delta=epsilon/[2(1-epsilon)], and set
+
+    L = (gap/epsilon + beta*epsilon)/(1-epsilon),
+    R = sqrt(8 e delta),
+
+where e is the unordered total edge mass of G. With the law in (1), let m_sigma(x) be the monochromatic degree of x in the chosen cut. Then
+
+    integral | E[m_sigma(x)] - 2 beta | d mass(x) <= 2L + 2R.     (2)
+
+In particular this bound tends to zero when beta tends to B and epsilon is chosen to be sqrt(gap). The exact laws satisfying all attachments and the usual stationarity law can therefore be used jointly in limiting arguments, without assuming finite attainment.
+
+For an individual cut of cost at most beta+delta, put g(x)=(2 m_sigma(x)-d(x))_+ and G=integral g. Independently flip each vertex with g(x)>0 with probability q. The expected improvement is at least qG-2q²e: the first term is the sum of the single-vertex improvements, and the correction for both endpoints flipping on an edge is bounded below by minus twice its mass times q². Taking q=G/(4e)<=1/2 when e>0 proves G²/(8e)<=delta, hence G<=R. For e=0 the conclusion is immediate.
+
+The attachment value on N(x) is m_sigma(x)-g(x), whether or not the cut is exactly optimum. Its expected value f(x) is at most 2 beta+L by (1), and its weighted average is at least 2 beta-R because every chosen cut costs at least beta. Consequently the integral of |f(x)-2 beta| is at most 2L+R. Reintroducing g adds at most R, proving (2).
+
+## An independent replacement inequality
+
+For a finite global maximizer with the exact joint law, fix x and let S be any independent set disjoint from N(x). Delete N(x) intersect N(S) from N(x) and add S. This is an independent attachment, so its expected margin is at most the margin 2 B on N(x). In each optimum cut, x's own sign is on a minority side of the signed masses in its neighborhood; the difference between its neighborhood's larger and smaller sign masses is Delta_sigma(x)=d(x)-2 m_sigma(x). Adding the S mass on x's sign increases the smaller of the two masses by at least min(Delta_sigma(x), mass(S on x's sign)). Removing the conflicting neighbors costs at most their mass. Thus
+
+    E[min(Delta_sigma(x), mass(S on the sign of x))]
+        <= mass(N(x) intersect N(S)).                          (3)
+
+This holds simultaneously for all roots and all independent replacements. When S is a single nonneighbor y, the right side is the common-neighbour mass, and the left is E[1_(sigma_y=sigma_x) min(Delta_sigma(x), weight(y))]. The inequality prices exchanges that do not preserve the original graph support. It has not been shown that these exchanges alone force the conjectured bound.
