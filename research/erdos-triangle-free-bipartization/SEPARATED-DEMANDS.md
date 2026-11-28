@@ -1,37 +1,43 @@
 # Exact bound for separated defect demands
 
-Research note for [Erdős Problem 23](https://www.erdosproblems.com/23) and its higher odd-girth analogues. This is a partial result, not a resolution of the unrestricted problem. The [hop-distance tail bound](HOP-DISTANCE-TAIL.md) applies without the joint-separation hypothesis below, but has a larger constant.
+Partial result for [Erdős Problem 23](https://www.erdosproblems.com/23). Unlike the [general hop-distance tail bound](HOP-DISTANCE-TAIL.md), this sharp bound requires joint separation of endpoint sets.
 
-Let (G) be a finite graph with nonnegative vertex masses of total one and product edge masses. Fix a maximum cut. Let (B) be its crossing graph and (D) its defect edges. Let (Fsubseteq D) have mass (t>0), with every edge in (F) between two vertex sets (A,C) at distance at least (Lge1) in (B). Here the distance is between **sets**: every pair in (A	imes C) has distance at least (L), not just the pairs belonging to (F). Then
+Let G be a finite graph with nonnegative vertex masses of total one and product edge masses. Fix a maximum cut; write B for its crossing graph and D for its defect edges. Suppose F is a subset of D of mass t>0, and every edge in F goes between sets A and C at distance at least L≥1 in B. This requires every pair in A×C to be at distance at least L, not just pairs belonging to F. Then
+
 ```math
- tle rac{1}{(L+1)^2}.
+ t\le (L+1)^{-2}.
 ```
-For even (L), equality is attained by taking the balanced blow-up of (C_{L+1}), choosing a maximum cut that leaves exactly one complete consecutive pair of classes uncut, and taking those classes as (A,C). In particular the coefficient for (L=4) is exactly (1/25).
+
+For even L≥4 this is sharp in triangle-free graphs, and equality forces a balanced blow-up of the odd cycle of length L+1 after ignoring zero-mass vertices.
 
 ## Proof and equality
 
-Let (f(v)=min(L,d_B(A,v))), writing (f(v)=L) if the distance is infinite. Let (a_i) be the mass at level (i). All crossing-graph edges change (f) by at most one. Across the prefix ({fle i}), for (0le i<L), flipping the original cut shows that the crossing-graph mass across this prefix is at least the defect mass across it. All of (F) crosses every prefix. Consequently (a_i a_{i+1}ge t) for (0le i<L). The remaining bound (a_L a_0ge t) holds because (F) lies between levels 0 and (L). Multiply these (m=L+1) inequalities:
+Give each vertex level f(v)=min(L,dist_B(A,v)), with unreachable vertices at level L. Write a_i for the masses of the levels. Across the prefix of levels 0 through i, for 0≤i<L, crossing-graph edges go only between levels i and i+1. Flipping the original cut on the prefix shows that their mass is at least the defect mass across the prefix, which comprises all of F and possibly other defects. Thus a_i a_(i+1)≥t. Also a_L a_0≥t since F lies between the end levels. Multiplying the m=L+1 inequalities and invoking AM–GM gives
+
 ```math
-  t^m le left(prod_{i=0}^{L} a_iight)^2le m^{-2m}.
+ t^m\le \left(\prod_{i=0}^{L} a_i\right)^2\le m^{-2m}.
 ```
-There is no positive-mass edge of (Dsetminus F) between distinct levels at equality, since it would cross some prefix and make the corresponding product exceed (t). All levels then have mass (1/m), consecutive levels are joined completely in (B), and the level pair ((L,0)) is joined completely in (F), after ignoring zero-mass vertices. If (L) is even and (G) is triangle-free, there are no edges within any level: two vertices there have a common neighbor in an adjacent level. Thus equality forces the balanced (C_m) blow-up for even (Lge4) in the triangle-free case. Conversely, in that blow-up the displayed cut is maximum: one can move each independent twin class to a single cut side without decreasing the cut, and every cut of the odd cycle omits at least one edge.
+
+At equality all levels have mass 1/m and all consecutive level pairs are complete, including the closing pair in F. No other interlevel edge can lie in B. No interlevel defect outside F can be present either: it would cross a prefix and make its defect mass exceed t. In a triangle-free graph no intralevel edge is possible, since its endpoints would have a common neighbor in an adjacent level. For the converse take the balanced blow-up of the odd cycle and leave exactly one complete consecutive pair uncut. Its cut is maximum: one can move each independent twin class to a single side without decreasing the cut, and every cut of the odd cycle omits at least one edge.
 
 ## Quantitative stability
 
-Write (t=(1-delta)/m^2) with (0ledelta<1), and set (u_i=1/m). Since each consecutive product, including (a_La_0), is at least (t), the relative entropy satisfies
+Write t=(1−δ)/m² with 0≤δ<1 and let u_i=1/m. The product inequality gives relative entropy at most −½ log(1−δ) from the uniform masses to the a_i. Pinsker therefore gives
+
 ```math
-   sum_i u_ilog(u_i/a_i)le -	frac12log(1-delta).
+ s=\sum_i |a_i-u_i|\le\sqrt{-\log(1-\delta)} .
 ```
-Pinsker's inequality gives (s=sum_i |a_i-u_i|lesqrt{-log(1-delta)}). The total missing mass (M) of the cycle edges in (G), for (mge3), obeys
+
+The sum of the excesses a_i a_(i+1)−t over all cyclic pairs, including the closing pair, is
+
 ```math
- Mlesum_{imod m} a_i a_{i+1}-mt
- =delta/m+sum_{imod m}(a_i-u_i)(a_{i+1}-u_{i+1})
- le delta/m+s^2/2 .
+ \delta/m+\sum_{i\bmod m}(a_i-u_i)(a_{i+1}-u_{i+1})\le\delta/m+s^2/2.
 ```
-For distinct levels, no extra crossing-graph edges are possible outside this cycle template. For each of the (L) prefix cuts the mass of extra defect edges crossing the prefix is at most (a_i a_{i+1}-t). Every extra interlevel defect edge crosses at least one prefix. Their total mass is therefore at most (delta/m+s^2/2).
 
-If (G) is triangle-free, an intralevel edge (v w) has the property that the missing masses from (v) and (w) into any chosen adjacent level (j) add to at least (a_j). Integrating over unordered intralevel edges at level (i) bounds their mass by ((a_i/a_j)M_{ij}), where (M_{ij}) is missing mass across the pair. Choose (j=i+1) cyclically, so each (M_{ij}) appears once. For (s<1/m), all (a_i/a_j) are at most ((1/m+s)/(1/m-s)). Hence for fixed even (Lge4) the graph is (O_L(delta)) in product edge-edit mass from a (C_m) blow-up with these nearly equal classes, and their weights are within (O(sqrt{delta})) in (ell_1) of uniform. The proof uses only the maximum-cut flip inequalities and triangle-freeness, and requires no minimum degree.
+For m≥3 the last inequality bounds the sum by all unordered distinct pairs of absolute deviations. The total missing mass M of the cycle-edge pairs is at most this excess sum. Every extra interlevel edge outside the cycle template belongs to D and crosses at least one prefix; the total mass of such edges is at most the sum of excesses over the L prefixes.
 
-## What the hypothesis does not give
+For triangle-free G, take an intralevel edge at level i. Its endpoints' missing masses into the next cyclic level add to at least a_(i+1). Summing this over intralevel edges bounds their mass by the missing mass across the pair times a_i/a_(i+1): the product-mass degree of one endpoint within its level is at most a_i. Each cyclic pair is charged only once. For s<1/m all these ratios are bounded by (1/m+s)/(1/m−s). In particular, for fixed even L≥4 the graph is within O_L(δ) in product edge-edit mass of a cycle blow-up whose class masses differ from uniform by O(√δ) in total absolute deviation.
 
-A lower bound on the length of the shortest path for *each* demand does not supply jointly separated endpoint sets. For instance, the defect graph need not be bipartite; even for a bipartite defect graph, endpoint sets of different components can be close in (B). A proof of the unrestricted conjecture cannot simply substitute individual distances into this lemma. The [general distance-tail argument](HOP-DISTANCE-TAIL.md) uses a different partition method. Komlós's [Covering odd cycles](https://doi.org/10.1007/BF01215920) and the [higher odd-girth sparse-half theorem](https://arxiv.org/abs/1609.05712) give related bounds with different hypotheses or constants; this note does not claim literature priority for the elementary layer argument.
+## Scope
+
+Pointwise large distance for individual defect edges does not supply jointly separated sets. The defect graph need not be bipartite; even when it is, the two endpoint classes need not be separated in B. The [general tail argument](HOP-DISTANCE-TAIL.md) uses a partition method and does not have the constant in this note. See Komlós’s [Covering odd cycles](https://doi.org/10.1007/BF01215920) and the [higher odd-girth sparse-half theorem](https://arxiv.org/abs/1609.05712) for related prior results; this note does not claim priority for the elementary layer argument.
