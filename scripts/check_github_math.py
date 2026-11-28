@@ -8,6 +8,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 
 from build_site import ROOT, nodes, read_markdown
 
@@ -26,12 +27,28 @@ def rendered_formulas(markup):
         yield mode, ' '.join(tex.split())
 
 
+# GitHub's secondary limit allows 900 REST points a minute, and each POST costs 5, so
+# at most 180 renders a minute. Stay below that, and wait out a limit if one is hit anyway.
+MIN_INTERVAL = 0.4
+RATE_LIMIT_WAITS = (60, 120, 180, 240, 300)
+_last_request = [0.0]
+
+
 def github_markdown(source):
-    result = subprocess.run(
-        ['gh', 'api', 'markdown', '--input', '-'],
-        input=json.dumps({'mode': 'gfm', 'text': source}), text=True, capture_output=True, check=True,
-    )
-    return result.stdout
+    payload = json.dumps({'mode': 'gfm', 'text': source})
+    for wait in (*RATE_LIMIT_WAITS, None):
+        delay = _last_request[0] + MIN_INTERVAL - time.monotonic()
+        if delay > 0:
+            time.sleep(delay)
+        _last_request[0] = time.monotonic()
+        result = subprocess.run(['gh', 'api', 'markdown', '--input', '-'],
+                                input=payload, text=True, capture_output=True)
+        if result.returncode == 0:
+            return result.stdout
+        if wait is None or 'rate limit' not in result.stderr.lower():
+            raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+        print(f'GitHub rate limit; retrying in {wait} seconds.', file=sys.stderr, flush=True)
+        time.sleep(wait)
 
 
 def check_document(source):
