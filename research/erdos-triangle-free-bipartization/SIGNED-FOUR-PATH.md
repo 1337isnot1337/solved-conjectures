@@ -68,3 +68,24 @@ Use both signs of this lower bound in (2). In particular, subtracting half of th
 The other sign gives I_010 + I_011 + 2 I_111 + I_001 - I_101 >= 2 beta D_2 + J/2. Both rows are tight at the balanced pentagon blow-up. Notably (3) does not count fully alternating paths on the left: a stationary optimum must have a definite supply of induced paths with at least one monochromatic edge.
 
 The terms J and A need not be estimated independently. For instance, the first signed inequality follows by weighting adjacent-root instances of (1) by any nonnegative function of the root profile. An order-four implementation can keep (3) and its companion as separate signed rows, before testing the optional six-vertex square.
+
+
+## Conditional rows without a stationary cut law
+
+There is also a pointwise version of the replacement test, valid in each optimum cut separately. This is useful when root signatures include their signs: after conditioning on those signs, the constant stationary mean of a vertex's monochromatic degree cannot simply be reused.
+
+For the same bipartite region and any optimum signs sigma, let m_u(sigma) be the mass of monochromatic neighbours of u. By the first inequality above, now before averaging,
+
+    2 crossed_mass_inside_X
+      <= sum_(u in X) w_u [d(u) - 2 m_u(sigma)] - |Z_X(sigma)|.   (4)
+
+Indeed, use the identity sum_(u in X) w_u m_u(sigma)=2 M_X+M_boundary and b+2e(X)=sum_(u in X) w_u d(u).
+
+For arbitrary roots x,y, even nonadjacent, set G(u)=W_xu-W_yu, H(u)=|G(u)| and X={u:H(u)=1}. Its two independent shores are the two neighbourhood differences, with proper signs G. For a pair of fresh terminals u,v write C=1 if their signs disagree and C=0 otherwise. With the expectation below only over the two fresh terminal draws, (4) gives **both** linear inequalities
+
+    E [ W_uv ((2C-1)H(u) - C H(u)H(v)
+                    +/- G(u)(1-H(v)) sigma_x sigma_v) ] >= 0.   (5)
+
+The first two terms are respectively the degree-margin sum and twice the crossed internal mass. The signed last term is +/- sigma_x Z_X, which is bounded in magnitude by the absolute improvement in (4). One can multiply (5) by the indicator of any signed root event and average, including whether xy is present, whether its endpoints are opposite, and signed profiles of extra roots. Conditional localization is justified by optimum-cut replacement itself, not by unsigned weight stationarity.
+
+The four-vertex rows in (3) can be entered linearly: its right side is twice the weighted three-star density with one marked monochromatic edge, minus the weighted three-edge-walk density with its central edge monochromatic. This follows from the constant row sum of the expected monochromatic kernel. A first exploratory order-six signed flag relaxation with the unconditioned rows and the boundary square still reached the imposed known upper value 4/47 in ordered normalization, not the target 2/25; no certificate is claimed.
