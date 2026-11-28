@@ -136,11 +136,11 @@ So a counterexample through Lemma 3 needs finite adhesion from a mechanism other
 
 Give every successor node $`s`$ a finite *port* $`P(s)`$ of nodes below or equal to its parent. Allow $`x\in N^-(u)`$ only if $`x`$ is *registered at* $`u`$, meaning $`x\in P(s)`$ for every successor node $`s\le u`$ whose parent lies at or above $`x`$.
 
-> If every lower neighbour is registered, then any two incomparable nodes are separated by a finite set.
+> Suppose the tree is Hausdorff, so that two distinct nodes of the same limit height have different sets of predecessors. If every lower neighbour is registered, then any two incomparable nodes are separated by a finite set.
 
-*Proof.* Let $`t,t'`$ be incomparable with last common node $`m`$, and let $`s`$ be the child of $`m`$ below $`t`$. A $`t`$–$`t'`$ path leaves the cone above $`s`$ along an edge $`uw`$ with $`u\ge s`$ and $`w\not\ge s`$. The nodes $`u`$ and $`w`$ are comparable, so $`w<u`$, hence $`w\le m`$. Registration at $`u`$ gives $`w\in P(s)`$. So the finite set $`P(s)`$ meets every $`t`$–$`t'`$ path. $`\square`$
+*Proof.* Let $`t,t'`$ be incomparable. By the Hausdorff property they have a last common node $`m`$. Let $`s`$ be the child of $`m`$ with $`s\le t`$. A $`t`$–$`t'`$ path leaves the cone above $`s`$ along an edge $`uw`$ with $`u\ge s`$ and $`w\not\ge s`$. The nodes $`u`$ and $`w`$ are comparable, so $`w<u`$, hence $`w\le m`$. Registration at $`u`$ gives $`w\in P(s)`$. So the finite set $`P(s)`$ meets every $`t`$–$`t'`$ path. $`\square`$
 
-Registration creates no edges, so unlike coherence it is compatible with (2). Some such device is needed, because one upper neighbour per chain alone does not prevent $`K_{\aleph_0,\aleph_0}`$. Take the tree $`\sigma\mathbb Q`$ of well-ordered subsets of $`\mathbb Q`$ with a maximum. Join $`s`$ to $`t`$ when $`t`$ is the least node above $`s`$ on its branch with $`\max t>\max s+1`$. Every node then has exactly one upper neighbour on each chain. Now take nodes $`c_0<c_1<\cdots`$ whose maxima increase to $`r<\max c_0+1`$. For every rational $`q>r+1`$ the node $`u_q=\bigcup_k c_k\cup\{q\}`$ is adjacent to every $`c_k`$, so $`\{c_k\}`$ and $`\{u_q\}`$ span a $`K_{\aleph_0,\aleph_0}`$.
+Registration creates no edges, so unlike coherence it is compatible with (2). Some such device is needed, because one upper neighbour per chain alone does not prevent $`K_{\aleph_0,\aleph_0}`$. Take the tree $`\sigma\mathbb Q`$ of well-ordered subsets of $`\mathbb Q`$ with a maximum. Join $`s`$ to $`t`$ when $`t`$ is the least node above $`s`$ on its branch with $`\max t>\max s+1`$. Every node then has at most one upper neighbour on each chain. Now take nodes $`c_0<c_1<\cdots`$ whose maxima increase to $`r<\max c_0+1`$. For every rational $`q>r+1`$ the node $`u_q=\bigcup_k c_k\cup\{q\}`$ is adjacent to every $`c_k`$, so $`\{c_k\}`$ and $`\{u_q\}`$ span a $`K_{\aleph_0,\aleph_0}`$.
 
 ## Lemma 9 (ports cannot be uniform along $`\omega_1`$)
 
@@ -171,7 +171,7 @@ This is a recursive definition. Then $`\sigma`$ is joined to $`\sigma\restrictio
 
 **Colouring argument and its gap.** Suppose $`c`$ is a proper colouring with countably many colours. Take a countable $`M\prec H(\theta)`$ containing $`c`$, with $`\delta=M\cap\omega_1`$. Build nodes $`v_0<v_1<\cdots`$ in $`M`$ of heights cofinal in $`\delta`$, together with finite sets $`G_k`$ of heights. Each $`v_k`$ *keeps* $`G_k`$: the heights in $`G_k`$ are registered and fresh at $`v_k`$.
 
-At a step handling colour $`n`$, look for $`v\ge v_k`$ that keeps $`G_k`$ and has $`c(v)=n`$. If one exists, take one in $`M`$, add its height to $`G_{k+1}`$, and then mark every height in $`G_{k+1}`$ once at each later step. The marks then accumulate only at $`\delta`$. Between steps, extend with ports $`G_{k+1}`$ and no marks.
+At a step handling colour $`n`$, look for $`v\ge v_k`$ that keeps $`G_k`$ and has $`c(v)=n`$. If one exists, take one in $`M`$ and add its height to $`G_{k+1}`$. Then add one successor node whose port and marks both equal $`G_{k+1}`$. Continue with port $`G_{k+1}`$ and no marks up to the next target height. Each protected height is marked once per step, so its marks accumulate only at $`\delta`$.
 
 The union $`t`$ is a node of height $`\delta`$. Suppose no chosen witness of limit height uses a height of the current $`G_k`$. Then $`t`$ keeps every $`G_k`$, and $`\Lambda(t)\supseteq\bigcup_kG_k`$. Let $`n=c(t)`$. At each step for $`n`$, the node $`t`$ itself solves the search, so by elementarity there is a solution in $`M`$. The height of that solution lies in $`\Lambda(t)`$, so $`t`$ is adjacent to a node of its own colour, which contradicts properness.
 
@@ -181,7 +181,7 @@ One cannot restrict the search to witnesses that avoid $`G_k`$. The node $`t`$ u
 
 The same construction run under $`\diamondsuit`$, with tops added only for chosen generic branches, has the same single gap.
 
-**Witness lemma (open).** In one of these constructions, there is a way to choose the witnesses so that, for the resulting top $`t`$, some node of colour $`c(t)`$ survives to $`t`$ registered and fresh. A witness lemma for the $`\diamondsuit`$ version would make the negative answer consistent; for the version above it would give a ZFC counterexample. Komjáth's PFA theorem constrains the second outcome. The ZFC version has size continuum, and under PFA every subgraph of it of size $`\aleph_1`$ would have to be countably chromatic, so it would also be an instance of chromatic incompactness at $`\aleph_2`$. The $`\diamondsuit`$ version has size $`\aleph_1`$. Together with Komjáth's theorem, it would make the size-$`\aleph_1`$ case of #1068 independent of ZFC.
+**Witness lemma (open).** In one of these constructions, there is a way to choose the witnesses so that, for the resulting top $`t`$, some node of colour $`c(t)`$ survives to $`t`$ registered and fresh. A witness lemma for the $`\diamondsuit`$ version would make the negative answer consistent; for the version above it would give a ZFC counterexample. Komjáth's PFA theorem constrains the second outcome. The ZFC version has size continuum, and under PFA every subgraph of it of size $`\aleph_1`$ would have to be countably chromatic, so it would also be an instance of chromatic incompactness at $`\aleph_2`$. The $`\diamondsuit`$ version has size $`\aleph_1`$. Together with Komjáth's theorem, it would make the size-$`\aleph_1`$ case of #1068 independent of ZFC, relative to the consistency of PFA.
 
 **Where exactly the gap is.** For a stage $`(v,G)`$, let $`C'(v,G)`$ be the set of colours of nodes $`u\ge v`$ at which $`G`$ is registered and fresh. Let $`C(v,G)\subseteq C'(v,G)`$ be the colours of those $`u`$ that, in addition, do not use $`G`$ themselves. Both sets shrink as stages extend. A colour outside $`C'`$ at some stage is excluded for $`t`$ by elementarity. A colour in $`C`$ at every stage has witnesses that kill nothing, so it is harmless. The open case is a colour in $`C'`$ at every stage but outside $`C`$ from some stage on.
 
@@ -196,7 +196,7 @@ Simple rules of this kind do not extend.
 
 A priority (finite-injury) scheme was also tried, in which a colour-$`n`$ witness may only kill points of larger colours. It breaks at the same place. A colour that is blocked because every candidate kills a higher-priority point can only be excluded if $`t`$ avoids those points, but $`t`$ must use the surviving higher-priority witnesses.
 
-An equivalent target: the colouring argument needs a limit node $`\sigma`$ with $`c(\sigma)\in c(\Lambda(\sigma))`$. Every ladder $`\Lambda(\sigma)`$ is an *admissible chain*, meaning each of its points is registered and fresh at the later ones and is not used by them. So it would suffice to find, for every countable colouring, an admissible chain, built with free extensions in between, that meets every colour.
+A sufficient target: the colouring argument needs a limit node $`\sigma`$ with $`c(\sigma)\in c(\Lambda(\sigma))`$. Every ladder $`\Lambda(\sigma)`$ is an *admissible chain*, meaning each of its points is registered and fresh at the later ones and is not used by them. So it would suffice to find, for every countable colouring, an admissible chain, built with free extensions in between, that meets every colour.
 
 ## Next steps
 
