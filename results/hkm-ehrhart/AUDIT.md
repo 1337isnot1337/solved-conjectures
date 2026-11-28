@@ -1,5 +1,7 @@
 # Internal publication audit (2026-11-24)
 
+**Correction (28 November 2026).** The priority search recorded below missed an earlier public disproof with the same graph: Aran S. Ziegler, Zenodo, registered 8 October 2026, [doi:10.5281/zenodo.23236860](https://doi.org/10.5281/zenodo.23236860). The statement below that no earlier matching counterexample was found is superseded. See the prior-work note in the [proof](PROOF.md). The mathematical checks in this audit are unchanged.
+
 **Disposition:** pass for both clauses of the original conjecture. Publication as an unrefereed, non-Lean-verified result is appropriate; external referee review and exclusive priority remain unestablished.
 
 - Checked the [original Conjecture 4.10](https://arxiv.org/html/1612.07538v1): the larger part is decremented in clause (ii), and the original check was for at most ten vertices. The 12-vertex graph with six parts of size two and its 11-vertex comparison meet the exact hypotheses. The original example deleting a singleton does not settle this claim.

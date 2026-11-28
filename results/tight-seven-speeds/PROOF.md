@@ -1,5 +1,7 @@
 # The three tight speed sets for eight lonely runners
 
+**Prior work (note added 28 November 2026).** The classification of tight seven-speed sets proved below was already public when this proof was written. Lee Marshall, [ai-math-results, `results/lonely-runner-tight-6-7`](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), release `v2026.10.29c` published 29 October 2026, with the repository archived at [doi:10.5281/zenodo.23842047](https://doi.org/10.5281/zenodo.23842047), Theorem B2, states that every seven-speed set with loneliness at most 1/8 is a dilate of a permutation of the consecutive speeds or of one of the two sets (1, 2, 3, 4, 5, 7, 12) and (1, 4, 5, 6, 7, 11, 13). Priority for the classification belongs to that work, and it should be cited as the original source. The proof below was first committed on 18 November 2026. It is kept as a later derivation. It is not a first resolution, and it is no longer listed in the ranked results table.
+
 Write $`L(v)=\max_t\min_i\|tv_i\|`$, where $`\|x\|`$ is the distance to the nearest integer. We use seven distinct positive integer speeds relative to an eighth, stationary runner. Divide by their gcd to make them primitive.
 
 **Theorem.** The primitive seven-speed sets with $L(v)\le1/8$ are precisely

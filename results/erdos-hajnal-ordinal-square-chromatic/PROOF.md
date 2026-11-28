@@ -1,5 +1,7 @@
 # Erdős–Hajnal’s ordinal-square chromatic problem
 
+**Prior work (note added 28 November 2026).** The reduction proved below was already public when this proof was written. The equivalence of the primary question of Erdős Problem 919 with the first question of Problem 918, by the same blow-up of a graph on $`\omega_2`$ to the ordinal square, appears with a Lean proof in [mnn31/erdos-lean, commit e7de340b](https://github.com/mnn31/erdos-lean/commit/e7de340be9c1828da18538feb254ee9dfcf3af42) of 13 October 2026. [Pull request 7250 to google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures/pull/7250), opened the same day, records the consequence that the question is independent of ZFC relative to a huge cardinal. The standalone Lean development is [mnn31/erdos-919-palomar](https://github.com/mnn31/erdos-919-palomar), dated 30 October 2026. Priority for the order-type transfer and for the independence statement belongs to that work, and it should be cited as the original source. The proof below was first committed on 26 November 2026, and the repository's search at that time did not find the earlier work. It is kept as a later derivation. It is not a first resolution, and it is no longer listed in the ranked results table. This note does not assess the conditional classification in [MIXED-ORDER-SPECTRUM.md](MIXED-ORDER-SPECTRUM.md).
+
 The primary question in [Erdős Problem 919](https://www.erdosproblems.com/919)
 is **independent of ZFC, relative to the consistency of a huge cardinal**.
 More precisely it is equivalent in ZFC to the first, cardinal-local
@@ -7,7 +9,7 @@ question of [Erdős Problem 918](https://www.erdosproblems.com/918).
 The positive direction is relatively consistent by Baumgartner
 and the negative direction by Foreman–Laver. Both models can satisfy GCH.
 
-The new step is a transfer that preserves the chromatic number and
+The key step is a transfer that preserves the chromatic number and
 the **order-type**, not just cardinality, requirement. The separate
 follow-up in Problem 919 with global chromatic number $`\aleph_1`$
 is reduced to ordinary countable chromatic incompactness at

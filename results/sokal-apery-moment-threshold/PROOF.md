@@ -1,5 +1,7 @@
 # The excluded parameter interval in Sokal's Apéry moment conjecture
 
+**Prior work (note added 28 November 2026).** The theorem proved below was already public when this proof was written. Brandon Li and Ethan Yeroushalmi, *Stieltjes moment classification of Apéry polynomials*, Zenodo, registered 7 November 2026, [doi:10.5281/zenodo.24043854](https://doi.org/10.5281/zenodo.24043854), with source at [brandonlign/apery-moments](https://github.com/brandonlign/apery-moments), prove that the Apéry polynomials do not form a Stieltjes moment sequence for any parameter strictly between zero and one. The Hamburger classification in [HAMBURGER.md](HAMBURGER.md) is also stated in Joshua W. Davis, *The Apéry polynomials as Hamburger and Stieltjes moment sequences*, Zenodo, registered 21 November 2026, [doi:10.5281/zenodo.24331816](https://doi.org/10.5281/zenodo.24331816). Priority belongs to those works, and they should be cited as the original sources. The proof below was first committed on 24 November 2026, and the repository's search at that time did not find them. It is kept as a later derivation. It is not a first resolution, and it is no longer listed in the ranked results table.
+
 **Theorem.** For every real $x$ with $0<x<1$, the sequence
 ```math
 A_n(x)=\sum_{k=0}^n\binom nk^2\binom{n+k}k^2 x^k,\qquad n=0,1,\ldots,
