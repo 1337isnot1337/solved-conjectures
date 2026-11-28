@@ -40,3 +40,30 @@ As before, the profiles of every vertex are pairwise-intersecting two-subsets. D
 Thus each saturated counterexample has this nine-root configuration, and every such root set must have either l>1/50 or J>1/200. This is still not a proof that one of the anchors has small enough defects.
 
 The last inequality can be encoded on at most eleven labeled draws. The first nine specify the required anchor edges; on the last two, the indicators for a high star, low profile, or mixed low/high pair determine J, l², and e_cross. In unordered conventions J is half the probability of an edge with two high stars, and e_cross is half that of an edge with exactly one low endpoint. The whole-graph e/5 term is also a scalar multiple of the terminal edge probability. No sampled root weights, equality tests, or deletions are needed. Condition on the anchor and multiply by any nonnegative root event; averaging gives a polynomial necessary inequality at any counterexample. This remains valid if some root draws repeat while all required edges are present: each pair of disjoint token names imposes an actual edge, exactly what the labeling argument uses.
+
+## A coupled token-rank cut
+
+The high star–star defect can also be cut directly. An independent internal research pass found that a three-neighbor star is naturally labelled (i,j), where i is its common token and {i,j} is its one missing star pair. This includes the nine-root case if the omitted pair is the missing root. A four-neighbor star is labelled by its center i. Adjacent stars have different centers and must omit their shared pair at one or both endpoints. Thus the possible star–star edges are:
+- a directed chain (i,j),(j,k) for distinct i,j,k;
+- a reverse pair (i,j),(j,i);
+- a three-neighbor star (i,j) and a full star at j.
+
+Choose a uniform ordering of the five tokens, and let k0 be the first token. Give a three-neighbor star (i,j) positive sign precisely when i precedes j. Give a full star at i positive sign if i is in the first two positions. Give a high triangle profile whose complementary pair is P the positive sign if k0 is not in P. The last rule is exactly one of the five Clebsch cuts, selected in a way that couples it to the star signs.
+
+The missed-edge probabilities are as follows. A second version uses the first one position instead of the first two for the full-star sign.
+
+| Edge type | First two for full stars | First one for full stars |
+| --- | ---: | ---: |
+| triangle–triangle | 1/5 | 1/5 |
+| star chain | 1/3 | 1/3 |
+| star reverse | 0 | 0 |
+| three-neighbor star to full star | 1/5 | 3/10 |
+| three-neighbor star (i,j) to triangle pair {i,r}, r not j | 3/10 | 3/10 |
+| three-neighbor star (i,j) to triangle pair {i,j} | 1/2 | 1/2 |
+| full star to triangle | 3/10 | 1/5 |
+
+Here a triangle–triangle edge has disjoint complementary pairs, and a star–triangle edge has the star center in the complementary pair, as proved above. For the first row the signs match just when k0 is outside the two pairs. The chain agrees only in two of six relative orders; reversing a star label always reverses its sign. For an edge from (i,j) to a full star at j, conditional on the rank r of j the first sign is positive with probability (r−1)/4, which gives the two listed averages.
+
+For a three-neighbor star and triangle pair {i,j}, exchange i,j: this flips the star sign and leaves the triangle sign unchanged, giving probability 1/2. For pair {i,r} with r distinct from j, conditioning on k0=i or j gives definite disagreement; each of the other three possible choices gives conditional agreement 1/2. For a full star at i against {i,r}, the first-one rule agrees exactly when k0=r, while the first-two rule agrees either when r is first and i is not second, or when a token outside the pair is first and i is second. These probabilities add to 3/10.
+
+As before cut the low-profile set separately, using the quadratic bound (2l^2/47), and align fairly. Thus either column gives a further order-eleven cut inequality by charging each high edge its displayed probability and each low-to-high edge half its mass. Take the best of both rank cuts and the original Clebsch estimate. Keeping the triangle–triangle coefficient at 1/5 is the improvement over separating the high signs or replacing the triangle signs by an independent rank sum. The rank cuts do not uniformly dominate the original Clebsch estimate on star–triangle edges; those losses are the remaining trade-off.
