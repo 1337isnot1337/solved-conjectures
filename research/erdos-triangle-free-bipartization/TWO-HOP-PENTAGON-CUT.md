@@ -176,3 +176,32 @@ In (7) the extra variance term is cancelled by the negative variance in \(t(1-2M
 Retaining the actual \(\nu_1\), the conditional exterior delete cost or the negative term from the preceding section can further improve (7). This still leaves a gap to the high-pentagon cut criteria.
 
 [Coordination issue #1097](https://github.com/1337isnot1337/solved-conjectures/issues/1097).
+
+## A closed profile correction and refined floors
+
+The singly attached mass (
+u_1) in (7) may be eliminated in favor of the pentagon-to-path ratio. Write (I_4=P_4-C_4) for labeled induced four-path density; the only possible extra edge on a three-edge walk sampled on four slots is the one closing a four-cycle. The [pentagon ratio estimate](ROOTED-PENTAGON-RATIO.md) gives mean doubly attached mass (
+u_2ge5T_5/I_4), so
+[
+ 
+u_1le1-5T_5/I_4.
+]
+Thus (7) includes an explicit favorable term (-T_5^2/(3pt^2 I_4)) if the remaining pentagon penalty is written with (
+u_1=1). This keeps the actual path denominator and leads to an inequality tying the two regimes, rather than a substitution of a fixed global coefficient.
+
+Here are two numerical consequences of the same analytic bound. Suppose (eta>1/25) and (T_5le225/10^6). Set (t=1/5), (p_0=1243/5000), and (z_0=(P_4-C_4)/p). The clipped bound before mixing, together with (P_4ge p^3, 
+u_1le1), gives
+[
+ z_0<2left(rac1{32}-rac1{25}+rac{1-2p_0}{40}
+                       +rac{225}{10^6p_0}rac{25}{2}ight)
+     =rac{470269}{15537500}<rac{31}{1000}.
+]
+Since (ple3197/10000) and the previous (T_5>214/10^6) already holds, this forces (
+u_2>10700/99107>1/10), and hence (
+u_1<9/10).
+
+- Without any minimality assumption, insert (
+u_1<9/10) into (7) with the same variance cancellation. For (T_5le219/10^6) the resulting upper bound is less than .039994. Thus every middle-band counterexample has (T_5>219/10^6).
+- At a least-support weighted counterexample, the exterior of each edge is a proper induced support, so its cut cost is at most (s_{uv}^2/25) by minimality. Replace the expectation coefficient (2/141) in (7) by (1/75); the variance cancellation still holds because the positive coefficient only decreases (and active weighted degrees are at most (1/2) by [induced cut balance](INDUCED-OPTIMUM-BALANCE.md)). For (T_5le225/10^6), the resulting upper bound is (11645986391/291328125000<1/25). Thus a least-support counterexample has (T_5>225/10^6).
+
+The explicit refinement from proper-support exterior recursion was suggested by an independent internal research pass. Neither estimate removes the remaining pentagon-density interval in the full problem.
