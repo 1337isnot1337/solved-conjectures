@@ -188,6 +188,15 @@ Excluding such a colour by elementarity would need $`t`$ to avoid the protected 
 
 A cyclic rule defeats this repair: colour-0 nodes use all registered fresh colour-1 points, and colour-1 nodes use all registered fresh colour-0 points. No such rule is yet known to extend to a proper colouring of the whole tree, and no proof that one cannot is known either.
 
+Simple rules of this kind do not extend.
+
+- *Use-all rules* ("colour-$`n`$ nodes use every registered fresh colour-$`m`$ point") are defeated by partial use. Leave one registered fresh colour-$`m`$ point unused at $`t`$; then $`t`$ cannot have colour $`n`$. Applied to the pair-cyclic version over all colours, this produces a limit node that the rule cannot colour.
+- *Use-some rules* ("colour-$`n`$ nodes use some registered fresh colour-$`m`$ point") are defeated by decoys. Protect extra colour-$`m`$ points before taking a colour-$`n`$ witness, so that the witness consumes a decoy instead of the point $`t`$ needs.
+
+A priority (finite-injury) scheme was also tried, in which a colour-$`n`$ witness may only kill points of larger colours. It breaks at the same place. A colour that is blocked because every candidate kills a higher-priority point can only be excluded if $`t`$ avoids those points, but $`t`$ must use the surviving higher-priority witnesses.
+
+An equivalent target: the colouring argument needs a limit node $`\sigma`$ with $`c(\sigma)\in c(\Lambda(\sigma))`$. Every ladder $`\Lambda(\sigma)`$ is an *admissible chain*, meaning each of its points is registered and fresh at the later ones and is not used by them. So it would suffice to find, for every countable colouring, an admissible chain, built with free extensions in between, that meets every colour.
+
 ## Next steps
 
 1. Prove or refute the witness lemma. The obstacle is that each witness uses at most one protected point of each colour but can use one of every colour, while each step protects only one new point.
