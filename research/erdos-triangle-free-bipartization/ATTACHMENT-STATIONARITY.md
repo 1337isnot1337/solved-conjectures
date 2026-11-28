@@ -46,3 +46,29 @@ The probability measures on compact metrizable Q form a compact space in the wea
 For the optional indicator version, at a fractional optimum q the region where 0<q<1 is independent, as proved in [vertex-weight stationarity](GRAPHON-EXTREMIZERS.md). Replace q by its indicator at a common uniform random threshold in (0,1). Every rounding is still optimal. On edges at most one endpoint is fractional, so averaging the rounded internal degrees recovers g_q. Attachment costs in expectation can only decrease, by concavity of b_I. The rounding map is measurable into weak L², for example by bounded continuous approximation of the threshold test.
 
 This yields a concrete obstruction to a proposed extremizer: it suffices to find finitely many independent sets and a weight perturbation whose displayed first-variation minimum is strictly positive. This operation is stronger than vertex reweighting alone, since an allowed independent attachment need not equal any existing vertex neighborhood. The historical [bipartization paper](https://www.renyi.hu/~p_erdos/1988-12.pdf) and [current dense-tail proof](https://arxiv.org/html/2103.14179) give the context; this note does not assert that the new obstruction rules out all graphons in the open density band.
+
+## Finite rooted inequalities for the unrestricted problem
+
+At least one global maximizer W can be chosen zero-one: replace W by the indicator of its support. This does not introduce a positive triangle density and can only increase its minimum monochromatic mass. Use the indicator-cut distribution above, and encode each cut by its sign s.
+
+Fix k roots r, and fix a pairwise-intersecting family of nonempty subsets of the k root labels. Let I(r) consist of vertices whose adjacency profile belongs to that family. This is independent for almost every r: any two such profiles share a root, so a positive edge between them would make a triangle. In particular, with three roots, all vertices adjacent to at least two of them form an independent set. That set need not lie in any individual neighborhood. For example, in the Petersen graph on the two-subsets of {1,2,3,4,5}, with adjacency by disjointness, the roots {1,2},{1,3},{1,4} give I={{2,5},{3,5},{4,5}}.
+
+For a rooted flag event τ depending only on the unsigned root graph, choose any rational c≥0. Let X,Y be fresh independent draws. Attachment stationarity gives the following linear inequality in signed graph densities on at most k+2 draws:
+
+```math
+ \mathbb E\!\left[\mathbf 1_\tau\left(
+  \mathbf 1_{\{X,Y\in I(r)\}}s(X)s(Y)
+  -2c\,\mathbf 1_{\{X\in I(r)\}}
+  +4c\,W(X,Y)\mathbf 1_{\{s(X)=s(Y)\}}+c^2
+ \right)\right]\ge0.
+```
+
+Here the same random optimum cut is used for the two terminal signs, independently of the roots. To prove it, write a=μ(I(r)) and Z=∫_(I(r))s. Attachment stationarity gives E_s|Z|≥a−2m, hence E_s Z²≥(a−2m)_+²≥2c(a−2m)−c². The fresh-pair same-side edge term has conditional expectation exactly m for every cut and every root tuple. Substitute the sampling expressions for a and Z², then multiply by the root indicator and average. The order bound does not require sampling a separate set of endpoints for the m term: the summands use the same two fresh vertices but are added, not multiplied. These rows are necessary for an extremizing signed law, not for arbitrary near-optimal cuts or arbitrary triangle-free graphs. One may use the full small-order induced-density expansions, not a fixed-order claim about G.
+
+The simultaneous degree equations also have finite rooted rows. For any unsigned root event τ with one distinguished root R_1, the expectation of 1_τ times W(R_1,X) times the indicator of equal signs is m times the probability of τ. To encode the right side, use W(X,Y) and the equal-sign indicator of X,Y in place of W(R_1,X) and its sign indicator. This follows from the weak degree identity by taking the conditional root-event probability given R_1 as a bounded test function.
+
+## Why this goes beyond reweighting alone
+
+On the balanced seven-cycle, the uniform mixture of the seven cuts missing one each of the seven edges has degree profile equal to its ordered cost, 2/49. For each translated copy of the independent set {0,2,4}, the two sides split it nontrivially for four of the seven omitted edges. Thus its mean attachment cost is 4/49. More strongly, averaging this attachment over the seven possible translates gives 4/49 for every optimal cut, so no alternative mixture can satisfy the attachment constraints for all seven sets. A fractional optimum cannot do better on these constraints: its randomized indicator rounding preserves degree balance and can only reduce attachment costs, as proved above. This example is not a conjectural extremizer; it separates the two stationarity tests exactly.
+
+The next step is to determine whether the new rows, ordinary graphon moment positivity, and the medium-density constraints exclude all globally maximizing counterexamples. No claim of LP or SDP infeasibility is made here.
