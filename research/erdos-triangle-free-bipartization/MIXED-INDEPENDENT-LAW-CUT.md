@@ -98,3 +98,34 @@ Necessity of (3) follows by averaging weighted independent-set mass. For suffici
        sup_(p in P) integral v p  <  inf_(h≥c, integral h≥m) integral v h.
 
 The right infimum can be finite only for v≥0 almost everywhere, since an arbitrarily large nonnegative function may be added on a subset where v is negative. That infimum equals c integral v+(m−c) ess inf v: start at the constant c and put the remaining mass on a positive-measure set where v is close to its essential infimum. The left supremum is alpha_v since mixtures and threshold rounding do not raise a linear supremum. Finally upper truncation of v preserves the strict inequality for a sufficiently high cutoff, because all p are bounded by one, the L¹ error tends to zero, and the essential infimum is unchanged. This contradicts (3) and proves the equivalence.
+
+
+## Localize the averaging measure to any chosen cut
+
+Stationarity is not needed if the independent-set law can be chosen after a particular cut has been fixed. Let f now be any actual cut, with unordered missed mass L>0, missed-edge kernel M_f, and monochromatic degree m_f(x). For an independent-set law with marginals p, put
+
+    Delta_f = 1 − (1/L) integral m_f(x) p(x) dx.
+
+In (2), replace the factor B on the left by leaving B alone and moving the Delta terms to the right, with L in their coefficient. Explicitly the strengthened inequality is
+
+    B <= (1−a)e/2 + a integral d_W(p'−p)
+          + L [(1+3a) Delta_f/2 − a Delta_f²]
+          − a L Var_(M_f/L)(q) − a integral_edges M_f q |p(x)−p(y)|.  (4)
+
+The original sampler proof already works conditional on any fixed f. In that proof the integral of M_f q is L−integral m_f p, and the indicated variance identity is unchanged. As before 0<=Delta_f<=1 by the edge relation p(x)+p(y)<=1. If f is optimum, L=B, so the .4235 criterion applies to the **mean independent-set mass measured under density m_f/(2B)**, while the coverage floor is still pointwise on the original space. It suffices to find one optimum cut and one law adapted to it. This differs from choosing an independent-set law before averaging over a stationary optimum law.
+
+The corresponding weighted-independence test for p>=c and integral g p>=m, where g is a bounded nonnegative probability density (here g=m_f/(2B)), is
+
+    alpha_(t g+u) >= t m+c integral u   for every t>=0 and bounded u>=0.
+
+Indeed separate the compact convex coverage set P from the constraint set using the two coordinates (p,integral g p). Equivalently use the closed convex downward set of all (h,z) dominated by a point (p,integral g p), where closedness follows by taking a weakly convergent subsequence of p in P. Separate the point (constant c,m) if it is outside that set. The coefficients are nonnegative since the set is downward in each coordinate. An L² coefficient u can be upper-truncated, preserving any strict separation by uniform boundedness of p. This gives the stated test without requiring stationarity of f or of vertex weights.
+
+### A cheap-core certificate from three overlapping independent sets
+
+Suppose three independent sets cover the entire graph, possibly overlapping. Let T be the vertices in at least two sets, and let S be the rest. Then
+
+    B <= e/5+(2/5) beta(W[S]),                              (5)
+
+where beta(W[S]) uses the original unnormalized masses on S. This applies to every graph with such a cover, not only extremizers. To see it, sample each of the three independent sets as a cut shore with probability 1/5. With the other two probabilities of 1/5 take each shore of an optimal cut of W[S] as a cut shore in the whole graph (all of T stays outside). Every endpoint of a W edge belongs to at least one set, and its two endpoint memberships are disjoint. Thus T is independent and on a T–S edge the membership counts are exactly two and one. Such an edge crosses in three independent-set cuts and one S-shore cut. On an S–S edge the independent-set cuts cross in exactly two cases; the remaining two both cross it unless the core cut misses it, in which case neither does. Hence the mean loss is exactly the right side of (5). The same proof uses an infimum if a cut of the core is not attained.
+
+One immediate application: start from a proper three-colouring and add every vertex to each further colour class where it has no neighbors, but only when the resulting simultaneous additions leave each enlarged class independent. Alternatively obtain a valid overlapping cover by any other construction. The threshold beta(W[S]) <= 803/40000 is sufficient in the unresolved middle band, since 3197/100000+(2/5)(803/40000)=1/25. At a global extremizer beta(W[S])<=B mass(S)², so a sufficient mass condition is mass(S)²<=803/1600. The useful quantity is the core's **actual** cut cost: a large bipartite core, for example, incurs no excess at all. This is not a claim that every three-colourable graph admits a cover with a cheap enough core.
