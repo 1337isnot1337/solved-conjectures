@@ -34,3 +34,27 @@ Let T be any independent set such that the remaining graph has a proper three-co
 Thus even vertices with neighbors in every core colour can contribute, provided a majority of their incident mass goes to a single core colour. The earlier overlapping-cover case is recovered by choosing T as the duplicated vertices and using the three singleton labels on the core: every v in T with positive degree has its neighbors in a single core colour. The gain for such a vertex is its full incident mass. This recovers the stationary threshold 797/3200 via d(v) >= 4B in a stationary extremizer, but the new inequality does not require stationarity or an overlapping three-cover.
 
 The full conjecture still needs a structural argument. In particular, no theorem here forces an unrestricted extremizer to admit a four-colouring, or guarantees that (1) reaches the required threshold whenever a four-colouring exists. For literature context, [Bylka–Idzik–Tuza](https://doi.org/10.1016/S0012-365X(98)00115-0) study local switching for Max-Cut. This note uses that general operation with a specific six-network certificate; it does not claim priority on local switching.
+
+### A four-chromatic control that needs the network improvement
+
+Take the Mycielskian of the 5-cycle. Number the cycle vertices 0 through 4, their twins 5 through 9, and the apex 10. Use the colour sequence
+
+    0,1,0,1,2, 0,1,0,1,2, 3
+
+and mass numerators
+
+    13, 1, 2, 16, 8, 9, 17, 10, 5, 9, 7   (denominator 97).
+
+The graph is triangle-free because a twin's original neighbors cannot form an edge, the twins are independent, and the apex has only twins as neighbors. It is not 3-colourable: if the apex has the third colour, one could change each original vertex of that colour to the colour of its twin, giving a proper 2-colouring of the odd cycle. There are no edges between the original vertices being recoloured. The prescribed four-colouring is proper.
+
+In integer numerator units (denominator 9409), the unordered edge mass is 1446. The six pair gains in lexicographic order are 256,8,0,80,0,0; the cheaper one-colour gains are 191,8,0,80,0,0. So the network gives 3B <= 1102/9409, which is below 3/25. The cheaper certificate only gives 3B <= 1167/9409, which is not enough. This example distinguishes the two certificates for a single colouring; it does not rule out using some other colouring or other proofs. The control is not a finite-order claim about the conjecture.
+
+### Approximate colourings and graphons
+
+More generally let the four sets be an arbitrary measurable partition, with total intraclass edge mass r. Delete those edges and compute H_ij for the interclass graph using its degrees, denoted by H^0_ij. An optimum cut of the interclass graph misses at most r extra when used on the original. This yields
+
+    3B <= e + 2r − sum H^0_ij.                         (2)
+
+In particular at a counterexample every four-way partition has sum H^0_ij < e+2r−3/25. This is an inequality for every proposed partition, not an assumption that an exact proper colouring exists.
+
+In graphons use the same measurable-shore gain, with d_j given by integration and pair internal edge mass given by half the ordered integral. The flip identity holds by direct integration; take successively near-optimal measurable flips on each shore and let the optimization errors tend to zero. This proves both inequalities without requiring attainment of an infinite max-flow. The finite max-flow formula only evaluates the same expression when the input is a finite weighted graph.
