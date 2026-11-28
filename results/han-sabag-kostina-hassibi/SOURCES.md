@@ -1,5 +1,7 @@
 # Source and prior-art audit
 
+**Addition (28 November 2026).** The searches recorded below did not list Jin, Li, Hara and Chen, [arXiv:2608.29511](https://arxiv.org/abs/2608.29511), 30 August 2026, which cites the source papers and characterizes the same coding problem. See the related-work note in the [proof](PROOF.md).
+
 Audit date: 21 November 2026. This is a bounded search record, not a guarantee that no earlier proof exists.
 
 ## Exact target

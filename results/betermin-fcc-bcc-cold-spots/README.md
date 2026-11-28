@@ -1,5 +1,7 @@
 # Bétermin’s FCC/BCC cold-spot conjecture
 
+**Earlier work for part of this result.** The case of the checkerboard lattices in dimension at least four was proved earlier by Yu Li and Qihang Wang, Zenodo, registered 22 October 2026, [doi:10.5281/zenodo.23567522](https://doi.org/10.5281/zenodo.23567522). Cite that note for that case. The FCC and BCC cases and the dual lattices are not stated there. [Details](PROOF.md)
+
 For every positive Gaussian scale, the translations minimizing the Gaussian lattice sum of FCC or BCC are exactly the deep holes (points farthest from the lattice). This proves the geometric assertion in [Bétermin’s Remark 5.10](https://doi.org/10.1007/s00365-019-09494-x).
 
 The printed BCC coordinate needs correction: in unscaled cubic coordinates a deep hole is `(1/2, 1/4, 0)`, not `(1/2, 1/2, 0)`. The same proof classifies all minimizing translations of the checkerboard lattices and their duals in every dimension at least three. It does not optimize over lattice shapes.

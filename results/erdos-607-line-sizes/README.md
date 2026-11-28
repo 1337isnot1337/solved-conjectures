@@ -1,5 +1,7 @@
 # Kotesovec’s line-size asymptotic (OEIS A401948)
 
+**Related earlier work.** The realizability criterion and the count were proved earlier, with a Lean 4 formalization, in [manman4/OEIS_04, `401/401948`](https://github.com/manman4/OEIS_04/tree/d4dc4cc68401bc378642ce118fe884f1c6fed5b2/401/401948), committed 10 November 2026. Cite that work for the criterion. The asymptotic and the exact prefactor are the contribution here. [Details](PROOF.md)
+
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 
 ## Result

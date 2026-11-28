@@ -1,5 +1,7 @@
 # The seven-speed loneliness spectrum below one seventh
 
+**Related earlier work (note added 28 November 2026).** Lee Marshall's [ai-math-results, `results/lonely-runner-tight-6-7`](https://github.com/LeeMarshall1113/ai-math-results/tree/a43cb0b9e0b6f762118b2acb8ee62cd31bdcbc89/results/lonely-runner-tight-6-7), released 29 October 2026, establishes Kravitz's Conjecture 8.3, the form of the spectrum conjecture with one very fast runner, for seven speeds. It combines Kravitz's Theorem 10.3 with a classification of the tight six-speed sets. Cite that work for that regime. The classification below covers every seven-speed set with loneliness below 1/7, which goes beyond the regime treated there. Earlier sources for the tight six-speed and seven-speed classifications are recorded in the notes in [tight-six-speeds](../tight-six-speeds/PROOF.md) and [tight-seven-speeds](../tight-seven-speeds/PROOF.md).
+
 For distinct positive integer speeds $`v_1,\ldots,v_7`$, put $`L(v)=\max_t\min_i\|t v_i\|`$, where $`\|x\|`$ is the distance to the nearest integer. Divide the speeds by their gcd and sort them. This preserves $L$ since time ranges over the entire circle.
 
 **Theorem.** The primitive septuples with $`L(v)<1/7`$ are precisely $(1,2,3,4,5,6,7s)$ for $s\ge1$ and the 27 rows of the [exact table](sporadic.txt). Consequently the complete set of values below $1/7$ is

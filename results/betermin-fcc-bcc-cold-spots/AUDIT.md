@@ -1,5 +1,7 @@
 # Primary sources and independent audit
 
+**Addition (28 November 2026).** The search recorded below did not list Li and Wang, *Universal cold spots of checkerboard lattices*, Zenodo, registered 22 October 2026, [doi:10.5281/zenodo.23567522](https://doi.org/10.5281/zenodo.23567522), which proves the checkerboard case in dimension at least four. See the note in the [proof](PROOF.md).
+
 ## Exact claim and prior work
 
 - [Laurent Bétermin, *Minimal Soft Lattice Theta Functions*, Remark 5.10](https://link.springer.com/article/10.1007/s00365-019-09494-x): fixed FCC and BCC, all positive Gaussian scales, optimizing translations. The publisher’s text contains both the geometric assertion and the incorrect explicit BCC coordinate. Section 2 defines BCC using the cubic lattice together with the all-half translate, with an overall factor making the covolume one. The printed representative is neither a deep hole nor a universal minimizer. The corrected coordinate is a direct consequence of the equality-case classification.
