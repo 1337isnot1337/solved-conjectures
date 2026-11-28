@@ -50,3 +50,21 @@ The coefficient therefore supplies a finite-order row valid on graph limits of s
 Dropping both nonnegative correction terms recovers I_4>=I_cross>=2 beta D_2. In particular every least-support middle-band counterexample requires central-cross induced-four-path density > (2/25) D_2. The signed version is stronger than requiring the same floor for I_4 without distinguishing its central edge.
 
 For a balanced pentagon blow-up, beta=1/25, d=2/5, and I_cross=(4/5)(10/5^4)=8/625=2 beta D_2 under the uniform law on its five template cuts. The degree-difference term vanishes; every adjacent-root exterior has equal attachment into the two root neighborhoods, so the last term vanishes too. Thus (2) has equality at the conjectured sharp construction. This is a necessary moment condition, not a full proof.
+
+
+## The boundary term gives signed rows already at four vertices
+
+Write I_abc for the labeled induced path density with crossing bits a,b,c along the three edges, averaged over the same cut law. Thus I_abc=I_cba by reversal. Write J for the degree-difference sum in (2). The same boundary term A in the proof satisfies
+
+    A >= | sum_over_induced_paths w_path E[sigma_0 sigma_2 - sigma_0 sigma_3] |
+      = 2 | I_001 - I_101 - I_011 + I_111 |.
+
+Indeed for an ordered root edge x,y, the terms of Z_X with coefficient +1 describe induced paths v-u-x-y, and those with coefficient -1 describe induced paths x-y-u-v. The endpoints v in the exterior automatically avoid both roots, and the internal u adjacent to one root avoids the other by triangle-freeness, so both patterns are exactly induced four-paths. Multiplying Z_X by sigma_x inserts the sign product between positions 0 and 2 in the first path, and positions 0 and 3 in the second. Integration is bounded in absolute value by A. For a path the difference is zero if its last edge is monochromatic and otherwise is twice (-1)^(a+b), giving the displayed identity.
+
+Use both signs of this lower bound in (2). In particular, subtracting half of the displayed signed sum from I_cross and using reversal gives
+
+    I_010 + 3 I_011 + I_101 - I_001 >= 2 beta D_2 + J/2.          (3)
+
+The other sign gives I_010 + I_011 + 2 I_111 + I_001 - I_101 >= 2 beta D_2 + J/2. Both rows are tight at the balanced pentagon blow-up. Notably (3) does not count fully alternating paths on the left: a stationary optimum must have a definite supply of induced paths with at least one monochromatic edge.
+
+The terms J and A need not be estimated independently. For instance, the first signed inequality follows by weighting adjacent-root instances of (1) by any nonnegative function of the root profile. An order-four implementation can keep (3) and its companion as separate signed rows, before testing the optional six-vertex square.
