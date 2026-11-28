@@ -82,3 +82,21 @@ For almost every edge xy, put X=N(x), Y=N(y). These are disjoint independent set
     μ(X\A)+μ(Y\B) ≥ m.
 
 In fact the left side can be replaced by the expected sum of the two **larger removed side masses** under the one common distribution of cuts. Thus every measurable vertex cover of the cross edges between X and Y has mass at least m. In particular at least m vertices by mass in each neighborhood meet the other neighborhood in positive edge measure: deleting exactly that incident support on one side is a cover. Every positive edge therefore lies in a positive measure of four-cycles. No uniform quantitative lower bound on the four-cycle density conditioned on an edge follows solely from this argument: a bipartite neighborhood graph can have many tiny matching blocks whose cover mass is large relative to its edge mass.
+
+## Fragmentation of the neighborhood graph forces tiny cut margins
+
+There is also a constraint beyond total cover mass. For almost every edge xy, retain X=N(x), Y=N(y). Write Δ_q(v)=d(v)−2g_q(v) for the nonnegative local margin, and define
+
+    T(x,y)=E_q [1[x,y have opposite signs] min(Δ_q(x),Δ_q(y))].
+
+Delete any measurable separator F⊆X∪Y of mass f and partition the remainder into countably many measurable blocks of masses a_j, with no cross edges between distinct blocks. Then
+
+    T(x,y) ≤ f + (1/2)√(∑_j a_j²).
+
+Indeed, independently choose with probability 1/2 either the X-side or the Y-side of each block. The union I of the chosen sides is independent for every outcome, so E b_I≤m. Conditional on q, its mass has mean (μ(X∪Y)−f)/2. Its signed mass has mean one half of the signed mass of the undeleted union and variance at most (∑a_j²)/4. Thus E[b_I | q] is at least half the attachment of the undeleted union minus (1/4)√(∑a_j²), by the triangle inequality for the mean and Cauchy–Schwarz for the deviation. Removing F lowers the whole union's attachment by at most f. Finally b_(X∪Y)(q)=b_X(q)+b_Y(q)+1[x,y opposite] min(Δ_q(x),Δ_q(y)): the additional minimum is exactly what results when the neighborhood majority sides disagree. Both neighborhood terms have expectation m. Substituting gives the inequality.
+
+For scale, let p be the ordered edge density and suppose p>3m. For a fixed optimum let L={v:Δ_q(v)≤t}. The total crossing degree integrated over L is at most m+t, because that degree is g_q+Δ_q. Hence crossing edges with both margins above t have ordered mass at least p−3m−2t. Over ordered pairs,
+
+    ∫∫ W(x,y) T(x,y) dxdy ≥ (p−3m)²/8,
+
+by choosing t=(p−3m)/4 and averaging over optimum cuts. In particular an extremizer in this regime cannot have almost all of its edge-neighborhood graphs fragmentable into arbitrarily small blocks by arbitrarily small vertex removals. This only bounds fragmentation in the sense of vertex mass, not edge density of the neighborhood graph.
