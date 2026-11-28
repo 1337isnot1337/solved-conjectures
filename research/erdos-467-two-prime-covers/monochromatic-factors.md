@@ -44,3 +44,13 @@ If residues are then changed only at primes $p>X/D$, with $2\le D\le\sqrt X$, th
  \sum_{X/D\lt p\le X}(1+X/p)\ll \frac{X(1+\log D)}{\log X}.
 ```
 For the reciprocal sum, dyadically split the range and use the prime-counting upper bound on each piece, where $\log p\ge(\log X)/2$. In particular such changes cannot complete both covers when $\log D=o(U)$. This applies to every choice of colours and both initial centres. The unrestricted problem allows changes at smaller primes and allows residue patterns with no centre inside the target interval.
+
+## Finite auxiliary switches and the proposed two-fold construction
+
+The same obstruction survives arbitrary changes at every prime of any fixed finite set $F$, in addition to the changes above $X/D$. For a particular colouring and initial centres, let $W$ be the product of the primes in $F$ whose actual residue differs from their own colour's initial class. Take $W=1$ if that set is empty. For each missing colour $C$ individually, test points
+```math
+ n=b_C\pm Wm,\qquad 1\le m\le Y=\lfloor(X-1)/(2W)\rfloor ,
+```
+choosing a single sign that stays in the interval. Every changed auxiliary prime of colour $C$ misses every test point. An unchanged prime of colour $C$ divides $n-b_C$ exactly when it divides $m$, since it does not divide $W$. Ignoring the changes above $X/D$ for the moment, the red and blue misses are therefore bounded below by the opposite-colour semigroup counts at $Y$. Sum the two bounds and apply the theorem. As $W$ is bounded in terms of $F$, there are still $\gg_F XU/\log X$ colour deficits. The upper bound on new hits above $X/D$ is independent of $F$.
+
+This also covers initial centres $b_C=0$ at the endpoint just outside $[1,X]$, using the positive sign. The [April 2026 working manuscript on problem 689](https://www.ulam.ai/research/erdos689.pdf) gives zero classes except at a fixed finite list of auxiliary primes and at primes above $\tau X$ for a fixed $\tau>0$ (Sections 2, 3 and the final assignment). Consequently **no red–blue colouring of the resulting primes can make that residue system a witness for 467** once $X$ is sufficiently large. This deduction uses only the locations of the switches and is independent of the manuscript's two-fold covering claim.
