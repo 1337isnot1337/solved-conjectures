@@ -80,3 +80,28 @@ Count the same neighborhood products over x in T and interchange the integral wi
     4B(Bt−e_T) <= (s/2) D.
 
 By (6) and Mantel, e_T<=s²/4−2Bs. If D0=s²/4−B, the last inequality gives (s/2)D0>=4B(Bs−D0), which is exactly (7). In particular s>=2 sqrt(B), so s>=2/5 if B>=1/25. The right side of (7) increases with B, and its left side decreases with B. For B=1/25, the difference of the two sides is strictly increasing for 2/5<=s<=13/30: its derivative is s/2−8B²·8B/(s+8B)^2>0 there. Its value at 13/30 is negative. This proves s>13/30, hence t<17/30.
+
+### Sharper missing-pair bound: retain the missing-degree moments
+
+In fact, when B>=1/25, the floor mass is strictly less than 539/1000. The following refinement was proposed in a background research pass and independently checked before inclusion.
+
+Suppose otherwise, so 2/5<=s<=461/1000 by (7). Fix the same optimum cut. Write m for its missed mass in S, C for its crossing mass in S, u=s+ s−, D=u−C, and ell=min(s+,s−). As above C>=B, m=B(1−2t)+e_T, and the integrated product of the two S-shore degrees over T is 4B(Bs−m). For y on either shore let a(y) be its missing degree into the opposite S shore. By (2) the degree into T is at most the opposite shore mass minus a(y) minus the missed degree m_S(y). In particular the T-codegree of a missing cross pair is at most the arithmetic mean of the two resulting bounds. Integrating over missing pairs gives
+
+    4B(Bs−m) <= (s/2)D − (s/(2u))D² − (ell/2)m.          (8)
+
+Indeed the two terms in the integral of a(y) contribute the sum of their integrals of a², at least D²/s+ + D²/s− = sD²/u. On a same-shore edge the endpoints have disjoint opposite neighborhoods, so the sum of their missing degrees into the opposite shore is at least that shore's mass. Integrating over same-shore edges gives an integral of a(y)m_S(y) at least s− times the missed mass on S+, plus s+ times that on S−. This is at least ell m. Both shores have positive mass since C>=B.
+
+Set u0=s²/4 and D0=u0−B. Mantel gives m<=D0. Since u<=u0<2B and D<=u−B, the first two terms of the right hand side of (8) increase with D on that interval and are at most (sB/2)(1−B/u). Also 4B−ell/2>0. Write r=s/2−ell, so u=u0−r² and 1/u>=1/u0+r²/u0². Substitute m<=D0 after moving its term to the right and obtain
+
+    4B²s <= (sB/2)(1−B/u0) + (4B−s/4)D0
+                  + (D0/2)r − (sB²/(2u0²))r².
+
+Completing the square bounds the last two terms by D0²u0²/(8sB²). Substitute x=u0/B−1 and divide by B² to get the scalar condition
+
+    4s <= 4x + J(x)/s,    J(x)=x−x²+x²(1+x)²/8.          (9)
+
+On the stated range, 0<=x<=52521/160000<1/3. There J is increasing by J'(x)>=1−2x>0, and 0<=J(x)<=x. For fixed s, (9) is easiest to satisfy at B=1/25. Set B to that value, so x'=25s/2>=5. The right side minus 4s then increases with s: its derivative is at least 4x'−4−J(x)/s²>0. But even at s=461/1000 it is negative, with exact gap
+
+    4s−4x−J(x)/s = 2686836265853975519/2416967680000000000000.
+
+This contradicts (9). The moment inequality is for an exact degree-floor locus and does not assume a fixed number of vertices. It does not itself give the analogous near-floor mass bound or settle the full conjecture.
