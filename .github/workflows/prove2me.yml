@@ -1,0 +1,62 @@
+name: Prove2Me mission drafts
+
+on:
+  pull_request:
+    branches: [main, research]
+    paths:
+      - 'integrations/prove2me/**'
+      - 'lean/Conjectures/CaioloFerroniHoster*.lean'
+      - '.github/workflows/prove2me.yml'
+  push:
+    branches: [main, research]
+    paths:
+      - 'integrations/prove2me/**'
+      - 'lean/Conjectures/CaioloFerroniHoster*.lean'
+      - '.github/workflows/prove2me.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: prove2me-${{ github.event_name == 'pull_request' && github.ref || 'sync' }}
+  cancel-in-progress: false
+
+jobs:
+  missions:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: integrations/prove2me
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: integrations/prove2me
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Replay the original proof against the pilot statement
+        run: python check_pilot_proof.py
+      - name: Check all curated statements
+        if: vars.PROVE2ME_SYNC_REF != github.ref || github.event_name == 'pull_request'
+        run: python sync.py
+      - name: Check and sync all curated statements
+        if: vars.PROVE2ME_SYNC_REF == github.ref && github.event_name != 'pull_request'
+        env:
+          PROVE2ME_API_KEY: ${{ secrets.PROVE2ME_API_KEY }}
+          PROVE2ME_COLLECTION: ${{ vars.PROVE2ME_COLLECTION }}
+          PROVE2ME_USERNAME: ${{ vars.PROVE2ME_USERNAME }}
+        run: |
+          args=(--apply --username "${PROVE2ME_USERNAME:?Set PROVE2ME_USERNAME}")
+          if [[ -n "$PROVE2ME_COLLECTION" ]]; then
+            args+=(--collection "$PROVE2ME_COLLECTION")
+          fi
+          python sync.py "${args[@]}"
