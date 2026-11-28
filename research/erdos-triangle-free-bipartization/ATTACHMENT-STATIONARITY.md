@@ -113,3 +113,21 @@ To see this, normalize test directions by ||h||_∞+A≤1, where A is the sum of
     (1−2tA)(F(q)−m)+2t J(q)≤δ+3t²,
 
 hence J(q)≤2t. The preceding compact separation argument on the sublevel set F≤m+3t therefore gives a common distribution with |E∫h(g_q−m)|≤2t for every bounded mean-zero h of norm at most one, and the stated attachment inequalities. For the L¹ estimate, put f=E g_q−m and test against one half the difference between sign(f) and its mean. This bounds ||f||_1≤4t+|∫f|≤7t. The exact theorem concerns δ=0. This approximate statement does not claim that rounding all near-optima preserves their costs exactly.
+
+## Independent-set swaps constrain same-side correlations
+
+Keep the common optimal-cut law above, in its indicator version. For a typical vertex \(u\), set \(I=N(u)\) in the binary graphon, and take any independent \(J\) disjoint from \(I\). Let \(R\subseteq I\) consist of points having positive adjacency into \(J\); then \((I\setminus R)\cup J\) is independent. For one cut write \(J_{\rm s},J_{\rm o}\) for the masses of \(J\) on the same and opposite sides as \(u\), and define \(R_{\rm s},R_{\rm o}\) likewise. Put \(\Delta(u)=d(u)-2g_s(u)\ge0\). Then
+```math
+ \mathbb E_s\min\{J_{\rm s},\,\Delta(u)+J_{\rm o}\}
+ \ \le\ \mathbb E_s\max\{R_{\rm s},R_{\rm o}\}
+ \ \le\ \mu(R). \tag{6}
+```
+To prove this, \(u\)'s own side is a minority on \(I\), so adding \(J\) to \(I\) increases the smaller side mass by exactly the minimum on the left of (6). Removing \(R\) decreases the smaller side mass by at most the larger of the two removed side masses. The expectation of the original attachment is exactly \(m\), while that of the new independent set is at most \(m\), by the common attachment law.
+
+For a finite weighted template which attains the **unrestricted** supremum, choose the common law on whole-class optimal cuts. This finite version follows directly by the same first variation and finite linear separation, using new independent classes attached to vertex subsets. In particular, for nonadjacent distinct supported vertices \(u,v\), put \(J=\{v\}\). Denote their weighted codegree by \(K(u,v)\). Then
+```math
+ \mathbb E_s\left[\mathbf1_{\{s_u=s_v\}}
+                 \min\{w_v,\Delta(u)\}\right]\le K(u,v).
+```
+If the codegree is zero, they must be on opposite sides in every cut of positive probability in which \(u\) has strict margin. In a saturated maximizer the more useful question is whether small *positive* codegrees suffice for a quantitative quotient or cut improvement. The inequality does not in itself supply a codegree gap, and the single-vertex bound for a template does not automatically give a pointwise lower bound for arbitrary atomless pairs.
+
