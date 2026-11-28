@@ -1,0 +1,38 @@
+# Erdős's triangle-free bipartization conjecture
+
+## The degree-floor bound persists under small errors
+
+A qualitative, uniform stability consequence for [Erdős #23](https://www.erdosproblems.com/23). No assumption on graph order is needed. The tolerance below is not explicit.
+
+Let B(W) be the minimum unordered missed mass of a mass-one graphon W. For an actual sign cut f, let m_f(x) be its missed degree and put a_f=d_W−2m_f. For every rho>0 there is eta>0 such that the following four conditions imply mass(T)<539/1000+rho:
+
+1. W has triangle density at most eta.
+2. B(W)>=1/25−eta, and f has missed mass at most B(W)+eta.
+3. The integral over the marked measurable set T of |d_W−4B(W)| is at most eta.
+4. The integral over T of |a_f| is at most eta.
+
+In particular, for every rho>0, when eta is sufficiently small, a stationary triangle-free graphon with B>=1/25 has less than 539/1000+rho of its mass within eta of degree 4B. This is not a bound on the full degree distribution away from the floor.
+
+### What the exact argument needs
+
+In the [exact degree-floor moment argument](DEGREE-FLOOR-SWITCHING.md#sharper-missing-pair-bound-retain-the-missing-degree-moments), the cut can be a single optimum, not drawn from a stationary law, provided a_f=0 and d_W=4B on the marked T. T can be a subset of the overall degree-floor locus. The use of the law in the exact proof is only to obtain these conditions for one cut at a globally maximizing graphon.
+
+The argument applies to any triangle-free [0,1]-valued W. Its positive neighborhoods, meaning the sets where the kernel is positive, are independent for almost every root by the nonnegative triangle integral. A countable collection of positive neighborhoods covers the positive-degree region almost everywhere, and their successive differences give an independent partition there. Any isolated points have zero fields and no edges and can be ignored in the localization. Apply the opposite-shore independent switching inequality and the countable dense family argument in the exact note; boundedness by one suffices when approximating a neighborhood subset in L1. This shows no crossing edge lies within T and gives d_T<=d_S−2m_(S,f) pointwise, exactly as before.
+
+For the moments, define missing mass with kernel 1−W between the two signs on S. The triangle-free property ensures that if W(y,z)>0 then their common-neighbor integrand W(x,y)W(x,z) vanishes almost everywhere in x. The weighted product count is therefore supported on pairs with W(y,z)=0, where the missing kernel is one. The count can be bounded above by integrating against 1−W over all pairs as in (8), since the degree bounds used there are nonnegative. Inside a same-shore edge the two opposite-neighborhood degrees sum to at most the opposite shore mass, because the two supports are disjoint. The rest of (8)–(9) uses only Mantel, algebra, and the identities d_W=4B and a_f=0 on T. The lower bound s>=2 sqrt(B) follows from C_S>=B without any other assumption on W. Thus the exact theorem with a marked T holds for these possibly fractional cut-distance limits too.
+
+### Compactness with the cut and degree-floor marks intact
+
+If the stability statement fails, take eta decreasing to zero. Retain the four measurable colour classes formed by membership in T and the sign of f. The compactness of the [finite-coloured graphon cut metric](https://pikhurko.github.io/E/GrebikPikhurko26ejp.pdf) yields a subsequence with kernels converging in cut norm after measure-preserving alignments and with the four class indicators converging in L1. Therefore T converges in measure to a marked set, and the reference signs converge in L1 to actual signs on the limiting graphon.
+
+Triangle density and B are cut-continuous. For the latter, the missed cost on a fixed cut is one half the sum of two cut-norm rectangles, so the change is bounded uniformly in the cut. Taking infima proves continuity without needing a priori attainment. The missed mass of the marked cut also converges: changing its sign sets on a small-measure region costs at most that region's measure on a bounded graphon. Consequently the limit is triangle-free, has B>=1/25, and the retained cut is optimum.
+
+For the degree integrals, if U is a bounded kernel difference and A is any measurable set, then
+
+    || integral_A U(.,y) dy ||_1 <= 2 ||U||_cut.
+
+Split the x integral into the nonnegative and the negative regions to see this. The degree function thus converges in L1. A signed field Wf is the difference of two such set integrals, and the change due to varying f is bounded in L1 by its own L1 change. Hence the signed cut penalties a_f=−f(Wf) converge in L1 too. The last two hypotheses imply d_W=4B and a_f=0 almost everywhere on the limiting T. But mass(T) is at least 539/1000+rho, contradicting the exact marked theorem. The same argument actually proves the uniform conclusion mass(T)<539/1000 for some eta>0, since any limiting mass at least 539/1000 contradicts the strict exact theorem.
+
+For the stationary application, take T where |d_W−4B|<=eta. The first-order penalties are nonnegative and their expected value is d_W−4B. In particular d_W>=4B. Averaging spatially over T, some optimum cut in the law has integral_T a_f at most eta, or at most 2eta if one instead chooses a convenient approximate witness. Apply the uniform theorem with the correspondingly smaller initial tolerance. This step does not require passing an entire law of cuts to the limit.
+
+This stability result is a restriction on potential counterexamples, not a proof that such counterexamples must put enough mass near the floor to contradict it.
