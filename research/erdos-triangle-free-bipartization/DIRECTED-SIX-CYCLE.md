@@ -57,3 +57,9 @@ Hence mass(P)<61/200. Suppose both mixed signs have mass at most 327/500=.654. I
     (.155)²/2 + 3/2000 < 603/40000.
 
 This contradicts beta>1/25. The argument does not yet force an anchor with both moderate directions or show that nested dominant directions exhaust the possible cyclic structures.
+
+## Reduction for the three-colour subproblem itself
+
+The preceding directed-root arguments apply even if minimality is taken only over triangle-free graphs with a proper three-colouring. In that setting, fix the colouring and saturate only **inter-colour pairs**, adding an edge whenever doing so does not create a triangle. All different-colour nonedges then have a common neighbor. This suffices for the distance-four closure and for every completeness claim about the high pure and mixed parts: each pair being completed there has different colours. The proper-subgraph comparison for M still uses the conjectured constant legitimately, because the smaller support inherits a proper three-colouring.
+
+Opposite vertices of the root have the same colour, so this constrained saturation alone does **not** guarantee that all three M_i are nonempty. But if some M_i is empty, M is bipartite, and the Clebsch inequality already excludes a middle-band counterexample when l<=1/1000 (or even when l<=1/500). In particular every directed root with l=0 in this restricted extremizer still has the same three-type residual and singleton pure classes, and the strongly connected component conclusion applies. This paragraph makes no claim that arbitrary triangle-free saturation preserves the original colouring.
