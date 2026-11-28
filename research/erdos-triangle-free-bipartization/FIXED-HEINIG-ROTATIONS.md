@@ -1,6 +1,6 @@
 # Why a fixed rank's Heinig rotations do not suffice
 
-The mathematical assertion of Heinig's Conjecture 6 is the deletion bound for every homomorphic preimage of an Andrásfai graph. The source also suggests using copies of a particular template bipartification, $F_k$. Here is an exact, unbounded-rank obstruction to a narrower interpretation: pulling back just the rotations of $F_k$ along a given homomorphism to $\operatorname{And}_k$, and selecting the best such pulled-back cut, cannot prove the bound.
+The mathematical assertion of Heinig's Conjecture 6 is the deletion bound for every homomorphic preimage of an Andrásfai graph. The source also suggests using copies of a particular template bipartification, $F_k$. Here is an exact, unbounded-rank obstruction to a narrower interpretation: pulling back just the rotations of $F_k$ along a given homomorphism to $\mathrm{And}_k$, and selecting the best such pulled-back cut, cannot prove the bound.
 
 Under the circular indexing $v_j\mapsto kj\bmod (3k-1)$, Heinig's parts in Theorem 3, equations (3)–(4), are the two complementary contiguous blocks of lengths $\lfloor(3k-1)/2\rfloor,\lceil(3k-1)/2\rceil$. Indeed $v_{3i}$ maps to $i$ and $v_{3i+1}$ maps to $k+i$, so the displayed $A_k$ is precisely the initial smaller block. Thus the rotations are exactly the cuts into contiguous blocks of these two sizes.
 
