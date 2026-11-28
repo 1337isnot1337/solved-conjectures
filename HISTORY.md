@@ -1,5 +1,9 @@
 # History
 
+## 28 November 2026 — Vega templates for Erdős’s triangle-free bipartization conjecture
+
+The sharp weighted deletion bound holds on all Vega templates and homomorphic preimages. This is a partial theorem for the still-open full conjecture, independently AI-reviewed in writing. [Proof](results/erdos-23-vega/PROOF.md) · [Review](results/erdos-23-vega/REVIEW.md).
+
 ## 27 November 2026 — Heinig’s Andrásfai bipartification conjecture
 
 A written proof gives the sharp pentagon deletion bound for every graph homomorphic to an Andrásfai graph. It covers every rank and arbitrary vertex product weights. The unrestricted Erdős problem remains open. [Proof](results/heinig-andrasfai-bipartification/PROOF.md) · [Source and review record](results/heinig-andrasfai-bipartification/REVIEW.md)

@@ -144,6 +144,7 @@ This repository takes Anthropic's VP ≠ VNP theorem and its stated lower bounds
 
 This section is ordered by the significance of the partial contributions.
 
+- **Erdős’s triangle-free bipartization conjecture (partial).** The sharp weighted bound holds for all four Vega families and all homomorphic preimages, allowing arbitrary missing template edges. The full conjecture remains open. [Written proof and independent review](results/erdos-23-vega/).
 - **Blitvić–Kammoun–Steingrímsson packing cutoff question.** No fixed number of occurrences determines all subsequent packing counts. [Proof and remaining length-dependent question](results/blitvic-kammoun-steingrimsson-packing-cutoff/).
 - **Erdős’s four-cycle threshold conjecture.** Regular candidates have large leave components and must differ from an affine polarity graph by a superlinear number of edge deletions in the plane order. [Proofs and exact scope](results/erdos-85-four-cycle-threshold/).
 - [Wild number of complete graphs](results/wild-number-complete-graphs/). The conjectured value holds for all $n\ge155$. The range $13\le n\le154$ remains open.

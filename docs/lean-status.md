@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Erdős’s triangle-free bipartization conjecture (Vega partial theorem)
+
+Independent AI review of a written proof. No Lean formalization is registered or claimed. [Proof and review](../results/erdos-23-vega/).
+
 ## Heinig’s Andrásfai bipartification conjecture
 
 The result has a written proof. No Lean formalization is registered. [Proof and review record](../results/heinig-andrasfai-bipartification/).

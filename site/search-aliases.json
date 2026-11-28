@@ -1,4 +1,5 @@
 {
+  "erdos-23-vega": ["Erdős Problem 23", "Erdos 23", "Vega graphs", "triangle-free Max Cut", "bipartization", "LPR 2002.01498"],
   "soukup-complementary-graph-product": ["Lajos Soukup", "Daniel T. Soukup", "Hedetniemi", "arXiv:2610.08027", "Problem 1.4", "complementary graphs", "Countryman line", "finite order dimension", "Boolean combinations of permutation graphs", "Boolean order representations", "Galvin–Shelah four colors", "Aronszajn grid", "well-order threshold", "monochromatic induced matching", "chain graph cover", "semi-open coloring axiom", "SOCA", "bounded proper forcing axiom"],
   "bourin-crossed-heinz": ["Bourin Question 4", "arXiv:0805.1954", "crossed-Heinz inequality", "common scalar shifts", "Ky Fan deficits", "bounded input rank", "gap-independent finite witness"],
   "lambie-hanson-uhrik-disjoint-type-guessing": ["Lambie-Hanson", "Uhrik", "Uhrík", "Question 6.1", "arXiv:2312.01828", "disjoint type guessing", "ladder systems", "bounded depth", "tail-coordinate guessing", "mixed orientations", "role exchange"],
