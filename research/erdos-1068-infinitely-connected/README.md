@@ -182,6 +182,12 @@ The same construction run under $`\diamondsuit`$, with tops added only for chose
 
 **Witness lemma (open).** In one of these constructions, there is a way to choose the witnesses so that, for the resulting top $`t`$, some node of colour $`c(t)`$ survives to $`t`$ registered and fresh. A witness lemma for the $`\diamondsuit`$ version would make the negative answer consistent; for the version above it would give a ZFC counterexample.
 
+**Where exactly the gap is.** For a stage $`(v,G)`$, let $`C'(v,G)`$ be the set of colours of nodes $`u\ge v`$ at which $`G`$ is registered and fresh. Let $`C(v,G)\subseteq C'(v,G)`$ be the colours of those $`u`$ that, in addition, do not use $`G`$ themselves. Both sets shrink as stages extend. A colour outside $`C'`$ at some stage is excluded for $`t`$ by elementarity. A colour in $`C`$ at every stage has witnesses that kill nothing, so it is harmless. The open case is a colour in $`C'`$ at every stage but outside $`C`$ from some stage on.
+
+Excluding such a colour by elementarity would need $`t`$ to avoid the protected set at that stage. But $`t`$ must use the witnesses of the harmless colours, and those lie in the protected set. Ordering the colours repairs one-way dependencies. Suppose, for example, that every colour-1 node must use all registered fresh colour-0 points. Then take the colour-1 witness first, and a colour-0 witness above it.
+
+A cyclic rule defeats this repair: colour-0 nodes use all registered fresh colour-1 points, and colour-1 nodes use all registered fresh colour-0 points. No such rule is yet known to extend to a proper colouring of the whole tree, and no proof that one cannot is known either.
+
 ## Next steps
 
 1. Prove or refute the witness lemma. The obstacle is that each witness uses at most one protected point of each colour but can use one of every colour, while each step protects only one new point.
