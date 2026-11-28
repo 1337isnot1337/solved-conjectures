@@ -42,6 +42,11 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 
 - [Path-seed closure gap](PATH-SEED-CLOSURE-GAP.md): two spanning paths can coexist with no same-support cycle pair, even in arbitrarily large girth. A closure argument must use spare structure.
 
+
+- [Four-terminal completion](FOUR-TERMINAL-COMPLETION.md): minimal tree supports have exactly four degree-three vertices. In the balanced bipartition, independent terminals ensure that one of the two quartic completions is simple and essentially 6-edge-connected.
+- [Tree branch transfer](TREE-BRANCH-TRANSFER.md): simultaneous exchanges can repair degrees on one side while keeping the other fixed exactly when the required transfer divergence and two invertible graphic-basis matrices coexist.
+- [Prescribed path-cycle systems](PRESCRIBED-PATH-CYCLE-SYSTEMS.md): the sharp density forces two branch-free spanning systems with any admissible terminal pairing. Each system contains one path plus cycles, so merging the cycles without disturbing the shared support becomes the remaining structural step.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
