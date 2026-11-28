@@ -19,7 +19,7 @@ Then $a_n$ is the coefficient of $u_1^p u_2^q v_1^p v_2^q$ in $F$. All series an
 
 ## 2. A Schur moment
 
-Realize $x_i=|g_i|^2$ for independent complex Gaussian coordinates with density $\pi^{-1}e^{-|z|^2}$. Write $D=\mathrm{diag}(u_1,u_2)$ and $T=gg^*-I$. The matrix determinant lemma gives
+Realize $x_i=|g_i|^2$ for independent complex Gaussian coordinates with density $\pi^{-1}e^{-|z|^2}$. Write $D=\mathrm{diag}(u_1,u_2)$ and $`T=gg^*-I`$. The matrix determinant lemma gives
 
 ```math
  \det(I-vDT)=

@@ -30,7 +30,7 @@ Choose a large fixed integer $R$ and define the symmetric probability
 W_R(e)=\frac{c_R}{|e|\log^2|e|}1_{\{|e|\ge R\}},\qquad
 c_R\asymp \log R.
 ```
-Let $F_0=G-G*W_R$. We claim that for all sufficiently large $R$, with constants uniform in $R$ and $d$,
+Let $`F_0=G-G*W_R`$. We claim that for all sufficiently large $R$, with constants uniform in $R$ and $d$,
 ```math
 F_0(d)\asymp G(d)\min\left(1,\frac{\log R}{\log(2+|d|)}\right)>0.
 \tag{4}
@@ -46,7 +46,7 @@ On $|e|>2d$, the first term is $G(d)\sum_{|e|>2d}W_R(e)\asymp G(d)\min(1,c_R/\lo
 ```
 Summing uses $\sum_{R\le e\le d/2} e/\log^2e=O(d^2/\log^2d)$ (split at $\sqrt d$), giving total error $O(c_R/(\sqrt d\log^2d)+d^{-1})$. The latter two errors divided by the leading term tend uniformly to zero for $d\ge R/4$ as $R\to\infty$. This proves (4).
 
-Since $(I-\nu*)G=\delta_0$, we have $(I-\nu*)F_0=\delta_0-W_R$. The convolutions are justified by boundedness of $G$ and nonnegative probability kernels. Choose $M$ so large that $M F_0(0)\ge1$ and $MW_R\le p_2(MF_0)^2$ pointwise. Such $M$ exists because (4) implies $W_R/F_0^2$ is bounded on its support. Put $F=\min(1,MF_0)$. At a point with $F=1$, we have $T(F)\le1$ since $\psi(1)=1-p_0$. Otherwise $d\ne0$ and $`r=(\nu*F)(d)\le(\nu*(MF_0))(d)=F(d)+MW_R(d)`$. If $r\le F(d)$ then $T(F)(d)=\psi(r)\le r\le F(d)$. If $r>F(d)$, then
+Since $`(I-\nu*)G=\delta_0`$, we have $`(I-\nu*)F_0=\delta_0-W_R`$. The convolutions are justified by boundedness of $G$ and nonnegative probability kernels. Choose $M$ so large that $M F_0(0)\ge1$ and $MW_R\le p_2(MF_0)^2$ pointwise. Such $M$ exists because (4) implies $W_R/F_0^2$ is bounded on its support. Put $F=\min(1,MF_0)$. At a point with $F=1$, we have $T(F)\le1$ since $\psi(1)=1-p_0$. Otherwise $d\ne0$ and $`r=(\nu*F)(d)\le(\nu*(MF_0))(d)=F(d)+MW_R(d)`$. If $r\le F(d)$ then $T(F)(d)=\psi(r)\le r\le F(d)$. If $r>F(d)$, then
 ```math
 T(F)(d)=\psi(r)\le r-p_2r^2\le F(d)+MW_R(d)-p_2F(d)^2\le F(d).
 ```

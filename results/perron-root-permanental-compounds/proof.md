@@ -82,8 +82,8 @@ G_t(x,y)=\mathcal T_A^t\!\left[\prod_{i=1}^{n}(x_i+y_i)\right].
 The initial polynomial is stable. Section 1 shows that G_t is stable, homogeneous of total degree n, and has nonnegative coefficients. It is nonzero because its degree-zero x block is y_1...y_n. Expanding in the two sets of variables gives
 
 ```math
-G_t(x,y)=\sum_{j=0}^{n}\ 
-\sum_{\substack{|I|=j\\|J|=j}}
+G_t(x,y)=\sum_{j=0}^{n}
+\ \sum_{\substack{|I|=j\\|J|=j}}
  (P_j(A)^t)_{I,J}\,x^I y^{[n]\setminus J}.
 ```
 

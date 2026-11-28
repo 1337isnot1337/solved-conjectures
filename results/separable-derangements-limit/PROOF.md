@@ -43,7 +43,7 @@ Let $q(\theta)=S(\rho e^{i\theta})$. The characteristic function is
 ```
 The first equality sets $\ell=i-1,r=k-i$; each Boltzmann sibling contributes $q(\theta)/s$ or its conjugate, and the factor $p_k=s^{k-1}$ cancels the denominators. The support contains all positive and negative integers, already from the binary spine choices. Thus $|\widehat\nu(\theta)|<1$ on $`[-\pi,\pi]\setminus\{0\}`$.
 
-Let $G(d)=\sum_{j\ge0}\nu^{*j}(d)$, with $\nu^{*0}=\delta_0$. We show
+Let $`G(d)=\sum_{j\ge0}\nu^{*j}(d)`$, with $`\nu^{*0}=\delta_0`$. We show
 ```math
 G(d)\asymp (1+|d|)^{-1/2}. \tag{1}
 ```
@@ -57,7 +57,7 @@ For its asymptotic, subtract $(4c_0)^{-1}\eta(\theta)|\theta|^{-1/2}$ with $\eta
 
 ## 3. A Boltzmann tree has enough chance of a diagonal hit
 
-In an ordinary Boltzmann tree starting with root sign $+$ or $-$, let $Y_\pm(d)$ count leaves on displacement $d$ in its permutation; a leaf at the root gives one point at displacement zero for either sign. Write $m_\pm(d)=\mathbb E Y_\pm(d)$. Sum the expected leaf contributions over depths. At an internal node with $k$ children, summing over the choice $i$ of the next child weights the pair $(k,i)$ by $p_k$, precisely the spine law. For a fixed choice the selected subtree is independent of the sibling sizes. Each positive step gives the zero shift, each negative step gives convolution by $\nu$, and the terminal leaf event contributes $p_0\delta_0$. In a tree starting with $+$, depths $2j,2j+1$ give the same convolution $\nu^{*j}$. In a tree starting with $-$, depth zero appears once and every positive power appears twice. By nonnegative summation,
+In an ordinary Boltzmann tree starting with root sign $+$ or $-$, let $Y_\pm(d)$ count leaves on displacement $d$ in its permutation; a leaf at the root gives one point at displacement zero for either sign. Write $m_\pm(d)=\mathbb E Y_\pm(d)$. Sum the expected leaf contributions over depths. At an internal node with $k$ children, summing over the choice $i$ of the next child weights the pair $(k,i)$ by $p_k$, precisely the spine law. For a fixed choice the selected subtree is independent of the sibling sizes. Each positive step gives the zero shift, each negative step gives convolution by $\nu$, and the terminal leaf event contributes $p_0\delta_0$. In a tree starting with $+$, depths $2j,2j+1$ give the same convolution $`\nu^{*j}`$. In a tree starting with $-$, depth zero appears once and every positive power appears twice. By nonnegative summation,
 ```math
 m_+(d)=2p_0G(d),\qquad m_-(d)=2p_0G(d)-p_0\delta_0(d). \tag{2}
 ```

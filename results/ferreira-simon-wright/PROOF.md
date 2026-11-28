@@ -20,7 +20,7 @@ p_{\alpha,\beta}(x)
 \qquad x>0.
 ```
 
-For $0\lt \beta\lt 1$, their Theorem D defines $\alpha_*(\beta)$ as the unique root in $(0,1)$ of
+For $0\lt \beta\lt 1$, their Theorem D defines $`\alpha_*(\beta)`$ as the unique root in $(0,1)$ of
 
 ```math
 \frac{1}{\Gamma(\beta-\alpha)^2}
@@ -57,7 +57,7 @@ Source: R. A. C. Ferreira and T. Simon, *On the log-concavity of the Wright func
 \tag{3}
 ```
 
-satisfy $\alpha\lt \alpha_*(0)=1$, but $p_{\alpha,0}$ is not log concave.
+satisfy $`\alpha\lt \alpha_*(0)=1`$, but $p_{\alpha,0}$ is not log concave.
 
 2. For every sufficiently small $t>0$, the parameters
 
@@ -66,7 +66,7 @@ satisfy $\alpha\lt \alpha_*(0)=1$, but $p_{\alpha,0}$ is not log concave.
 \tag{4}
 ```
 
-satisfy $\alpha\lt \alpha_*(\beta)$, but $p_{\alpha,\beta}$ is not log concave.
+satisfy $`\alpha\lt \alpha_*(\beta)`$, but $p_{\alpha,\beta}$ is not log concave.
 
 In both cases the log-concavity inequality fails at $x=1/2$. Thus the first implication in (2) is false, including at interior parameters with $\beta>0$.
 
@@ -211,7 +211,7 @@ The first expression is exactly
 \tag{12}
 ```
 
-For sufficiently small $t>0$, we have $0\lt \beta\lt 1$, $0\lt \alpha\lt 1$, and (12) is strictly positive. By the source's unique-threshold characterization, $\alpha\lt \alpha_*(\beta)$. The second limit in (11) gives the failure of log concavity at $1/2$.
+For sufficiently small $t>0$, we have $0\lt \beta\lt 1$, $0\lt \alpha\lt 1$, and (12) is strictly positive. By the source's unique-threshold characterization, $`\alpha\lt \alpha_*(\beta)`$. The second limit in (11) gives the failure of log concavity at $1/2$.
 
 Finally, $p_{\alpha,\beta}=\Gamma(\alpha+\beta)f_t$ multiplies $\Psi_{f_t}$ by the positive number $\Gamma(\alpha+\beta)^2$. Both sign conclusions therefore hold for the normalized probability density. This proves the theorem.
 

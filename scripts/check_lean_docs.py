@@ -49,12 +49,13 @@ LESS_THAN_LETTER = re.compile(r"<(?=[A-Za-z])")
 TAG_IN_ALIGNED = re.compile(r"\\begin\{aligned\}(?:(?!\\end\{aligned\}).)*?\\tag\b", re.DOTALL)
 ALIGNED = re.compile(r"\\begin\{aligned\}(.*?)\\end\{aligned\}", re.DOTALL)
 TAG = re.compile(r"\\tag\*?\{[^{}]*\}")
-# GitHub renders a math-fence line ending in \\ as \\\ followed by the line break.
-ROW_BREAK_AT_LINE_END = re.compile(r"(?m)\\\\[ \t]*$")
+# GitHub adds a backslash where a math-fence line ends in one, so a final \\ renders as \\\.
+ROW_BREAK_AT_LINE_END = re.compile(r"(?m)\\[ \t]*$")
 CONTAINER = re.compile(r"[ \t>]*")
 FIX_HINT = "; python3 scripts/check_lean_docs.py --fix repairs this"
 MATH_MESSAGE = "use fenced math for displays and dollar-backtick delimiters for inline formulas" + FIX_HINT
-DOLLAR_MESSAGE = ("write this formula as $`...`$; inside $...$ GitHub drops the backslash of a "
+DOLLAR_MESSAGE = ("write this formula as $`...`$; GitHub renders $...$ only after a space or ( and "
+                  "before a non-word character, pairs a * with emphasis, and drops the backslash of a "
                   "Markdown escape such as \\{ or \\,")
 MAX_LEAN_REPORT_BYTES = 200 * 1024
 
@@ -81,12 +82,18 @@ def math_errors(tex, display):
     if display and LESS_THAN_LETTER.search(tex):
         yield "write \\lt before a letter in display math; GitHub reads <letter as an HTML tag" + FIX_HINT
     if display and ROW_BREAK_AT_LINE_END.search(tex):
-        yield ("start each continued row with \\\\ instead of ending the line before it with \\\\; "
-               "GitHub adds a backslash at the line break" + FIX_HINT)
+        yield ("start each continued row with \\\\ instead of ending the line before it with a "
+               "backslash; GitHub adds one at the line break" + FIX_HINT)
 
 
-def needs_backticks(formula):
-    return bool(MARKDOWN_ESCAPE.search(formula)) or "\\operatorname" in formula
+def needs_backticks(text, form):
+    """Whether GitHub would render pandoc's single-dollar formula differently or not at all."""
+    body = form.group(5)
+    before = text[form.start() - 1:form.start()]
+    after = text[form.end():form.end() + 1]
+    return bool(MARKDOWN_ESCAPE.search(body) or "\\operatorname" in body or "*" in body
+                or (before and not before.isspace() and before != "(")
+                or (after and (after.isalnum() or after == "_")))
 
 
 def check_document(root, path, source):
@@ -139,7 +146,7 @@ def check_document(root, path, source):
             if form.group(2) is not None:
                 for message in math_errors(form.group(2), display=False):
                     yield start, message
-            elif form.group(5) is not None and needs_backticks(form.group(5)):
+            elif form.group(5) is not None and needs_backticks(token.content, form):
                 yield start, DOLLAR_MESSAGE + (FIX_HINT if "`" not in form.group(5) else "")
         for child in token.children or ():
             if child.type != "link_open":
@@ -172,20 +179,29 @@ def repair_math(tex, display):
 
 
 def move_row_breaks(rows):
-    r"""Start each continued row with \\ instead of ending the line before it with \\."""
+    r"""Move backslashes that end a line, such as a \\ row break, to the start of the next line.
+
+    A line break after a backslash is a space in TeX, so \\ followed by a line break and
+    \\ followed by a space read the same, as do \ followed by either.
+    """
     rows = list(rows)
     for index, row in enumerate(rows):
         ending = "\r" if row.endswith("\r") else ""
-        stripped = row.rstrip(" \t\r")
-        count = len(stripped) - len(stripped.rstrip("\\"))
-        if count < 2 or count % 2:
+        stripped, moved = row.rstrip(" \t\r"), []
+        while True:
+            count = len(stripped) - len(stripped.rstrip("\\"))
+            if not count:
+                break
+            moved.insert(0, stripped[-count:])
+            stripped = stripped[:-count].rstrip(" \t")
+        if not moved:
             continue
-        rows[index] = stripped[:-count].rstrip(" \t") + ending
+        rows[index] = stripped + ending
         if index + 1 < len(rows):
             following = rows[index + 1]
             prefix = CONTAINER.match(following).group()
-            rows[index + 1] = prefix + "\\\\ " * (count // 2) + following[len(prefix):]
-        # A row break just before the end of the display only adds an empty row, so it is dropped.
+            rows[index + 1] = prefix + " ".join(moved) + " " + following[len(prefix):]
+        # Backslashes just before the end of the display only add an empty row or a space.
     return rows
 
 
@@ -279,7 +295,7 @@ def repair_inline(match):
         return "$" + backticks + repair_math(math, display=False) + backticks + "$"
     if code is not None:
         return text
-    if dollar is not None and not needs_backticks(dollar):
+    if dollar is not None and not needs_backticks(match.string, match):
         return text
     body = legacy if legacy is not None else dollar
     if "`" in body or not body.strip():
@@ -291,13 +307,14 @@ def repair_document(source):
     r"""Rewrite what can be repaired mechanically and leave the rest for the check.
 
     Control characters that replaced a TeX command's backslash and first letter are
-    restored. Inline \(x\) becomes $`x`$, and so does a single-dollar formula containing
-    a Markdown escape or a named operator. A display whose \[ and \] stand alone on
+    restored. Inline \(x\) becomes $`x`$, and so does a single-dollar formula that GitHub
+    would not render as pandoc does: one with a Markdown escape, a named operator or a *,
+    or one not set off by a space or ( before and a non-word character after. A display whose \[ and \] stand alone on
     lines, and a $$ display starting a line, become math fences, including displays
     that Markdown splits at a line starting with >, + or =. Inside math,
     \operatorname{op} becomes \mathop{\mathrm{op}}. In displays a < before a letter
     becomes \lt, a display's only \tag moves from inside an aligned block to just after
-    it, and a row break ending a line moves to the start of the next.
+    it, and backslashes ending a line, such as a row break, move to the start of the next.
     Code spans, code blocks and HTML blocks are otherwise left untouched.
     """
     for char, escape in CONTROL_REPAIRS.items():

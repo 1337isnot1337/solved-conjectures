@@ -76,7 +76,7 @@ Convexity gives $\sum_{k=1}^j k^{n-1}\le\int_{1/2}^{y_j}u^{n-1}du\le y_j^n/n$ by
 ```math
 \frac n2 (j/y_j)^n\le\frac n2 e^{-n/(2y_j)}<1/16 .
 ```
-For this and the bounds below put $v=\sqrt n\ge11$. On these two terms, $y_j\le v/3+2$ and $n/(2y_j)\ge (10/11)v$. The bound $(v^2/2)e^{-(10/11)v}$ is decreasing on $`v\ge11`$ and at $11$ is less than $1/16$ (already $e>2$ suffices). At any zero of $F_n$, (7)–(8) imply that the partner has magnitude greater than $`(1-1/16-1/6)T_*`$. Applying $`d/dt+p`$ kills the peak and gives multiplier of magnitude one to its partner. All other terms of that operator have absolute sum $`<T_*/6`$ by (7). At the zero $F_n'=(d/dt+p)F_n$, so $|F_n'|>T_*/2$.
+For this and the bounds below put $v=\sqrt n\ge11$. On these two terms, $y_j\le v/3+2$ and $n/(2y_j)\ge (10/11)v$. The bound $(v^2/2)e^{-(10/11)v}$ is decreasing on $`v\ge11`$ and at $11$ is less than $1/16$ (already $e>2$ suffices). At any zero of $F_n$, (7)–(8) imply that the partner has magnitude greater than $`(1-1/16-1/6)T_*`$. Applying $`d/dt+p`$ kills the peak and gives multiplier of magnitude one to its partner. All other terms of that operator have absolute sum $`<T_*/6`$ by (7). At the zero $F_n'=(d/dt+p)F_n$, so $`|F_n'|>T_*/2`$.
 
 We bound the two error terms in (4) on the same half-integer exponent scale, dropping signs. The correction $\tfrac12|\phi S_n|$ is at most
 ```math

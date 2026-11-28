@@ -71,15 +71,15 @@ A₀(t) = M(r) ((1−cos t)/t²) u² (1+s/ν)/(1+s)².
 
 The $u>3$ region is bounded by the sum of the following three nonnegative quantities. They may overlap, which only enlarges the upper bound.
 
-- **$3\le u\le20$.** On a bin $[\ell,v]$, take a lower bound $M\le M(r)$, an upper bound $S\ge r/(\delta^2V)$, and an upper bound $`\nu_*\ge\nu`$. Then $`s\le S v^2`$, $`(1-\cos t)/t^2\ge1/2-v^2/(24\cdot251)`$, and $`(1+s/\nu)/(1+s)^2`$ decreases in $`s\ge0`$ and in $`\nu\ge3`$. Hence
+- **$`3\le u\le20`$.** On a bin $[\ell,v]$, take a lower bound $M\le M(r)$, an upper bound $S\ge r/(\delta^2V)$, and an upper bound $`\nu_*\ge\nu`$. Then $`s\le S v^2`$, $`(1-\cos t)/t^2\ge1/2-v^2/(24\cdot251)`$, and $`(1+s/\nu)/(1+s)^2`$ decreases in $`s\ge0`$ and in $`\nu\ge3`$. Hence
 
 ```math
 A_0(t)\ge w:=M(1/2-v^2/(24\cdot251))\ell^2\frac{1+S v^2/\nu_*}{(1+S v^2)^2}.
 ```
 
-With $\nu_*=\infty$, interpret the numerator factor as 1. Since $V(1-\cos t)\le u^2/2$, the bin contributes at most $(v^3-\ell^3)e^{-w}/6$. The bins have width $1/20$.
-- **$u>20,\ t\le\delta$.** Here $s\le r\le1$, $(1-\cos t)/t^2\ge11/24$ and $M(r)\ge1/\zeta(2)>3/5$; thus $A_0\ge u^2/16$. Integrate $u^2e^{-u^2/16}/2$ using $u^2/16\ge25+(5/2)(u-20)$; the resulting upper bound is less than $10^{-6}$.
-- **$u>20,\ t\ge\delta$.** We can bound the entire interval $\delta\le t\le\pi$. The inequality $s\ge(11/12)r$ and the monotonicity of $`f_*(s,a)=\min(1,s(2+a+s)/(1+s)^2)`$ in both arguments show $`A\ge B f_*((11/12)r,a)`$. Indeed before clipping the derivative in $s$ is $(a+2-as)/(1+s)^3>0$ for $s\le1/a$, and the expression is at least 1 thereafter. The single $k=1$ term also gives $A\ge (11/24)B\delta^4$. Any positive lower bound $c$ on the better of these two multipliers yields the normalized upper bound $\pi V^{3/2}e^{-cB}$, since $\int_\delta^\pi(1-\cos t)dt=\pi-\delta+\sin\delta\le\pi$.
+With $`\nu_*=\infty`$, interpret the numerator factor as 1. Since $V(1-\cos t)\le u^2/2$, the bin contributes at most $(v^3-\ell^3)e^{-w}/6$. The bins have width $1/20$.
+- **$`u>20,\ t\le\delta`$.** Here $s\le r\le1$, $(1-\cos t)/t^2\ge11/24$ and $M(r)\ge1/\zeta(2)>3/5$; thus $A_0\ge u^2/16$. Integrate $u^2e^{-u^2/16}/2$ using $u^2/16\ge25+(5/2)(u-20)$; the resulting upper bound is less than $10^{-6}$.
+- **$`u>20,\ t\ge\delta`$.** We can bound the entire interval $\delta\le t\le\pi$. The inequality $s\ge(11/12)r$ and the monotonicity of $`f_*(s,a)=\min(1,s(2+a+s)/(1+s)^2)`$ in both arguments show $`A\ge B f_*((11/12)r,a)`$. Indeed before clipping the derivative in $s$ is $(a+2-as)/(1+s)^3>0$ for $s\le1/a$, and the expression is at least 1 thereafter. The single $k=1$ term also gives $A\ge (11/24)B\delta^4$. Any positive lower bound $c$ on the better of these two multipliers yields the normalized upper bound $\pi V^{3/2}e^{-cB}$, since $\int_\delta^\pi(1-\cos t)dt=\pi-\delta+\sin\delta\le\pi$.
 
 ## 3. Exact covering of the saddle parameters
 
@@ -134,7 +134,7 @@ Since $V\ge V_0$, $xr\ge9/10$ and $\delta\le1/10$, we have
 γ² ≤ ((33/20)·24)²/(100·(9/10)·(541/100)³) ≤ 1/9.
 ```
 
-Also $V\delta^2\ge4869/10$, so a valid middle bound uses $M=20/33$, $S=10/4869$, $\nu_*=31/10$. For the outer tail, $B\ge90$, $c\ge9/10$ by the clipped bound, and $V\le12 B^2$: use $V\le10 B/\delta^2$ and $\delta^{-2}\le B/r$, the latter from $x\ge1$. Hence the outer term is at most $\pi\cdot42 B^3 e^{-(9/10)B}$, bounded above at $B=90$.
+Also $V\delta^2\ge4869/10$, so a valid middle bound uses $M=20/33$, $S=10/4869$, $`\nu_*=31/10`$. For the outer tail, $B\ge90$, $c\ge9/10$ by the clipped bound, and $V\le12 B^2$: use $V\le10 B/\delta^2$ and $\delta^{-2}\le B/r$, the latter from $x\ge1$. Hence the outer term is at most $\pi\cdot42 B^3 e^{-(9/10)B}$, bounded above at $B=90$.
 
 ### 3.3. The certificate output and its interpretation
 

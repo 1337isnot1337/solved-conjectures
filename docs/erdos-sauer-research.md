@@ -16,7 +16,7 @@ D(G)\ \le\ \mathop{\mathrm{ex}}\nolimits_r(n,K)-(r-\gamma_r)\nu(G)+o(n^r).
 ```
 Consequently the maximum decomposition number is $\mathop{\mathrm{ex}}\nolimits_r(n,K)+o(n^r)$. Every sequence attaining that value to within $o(n^r)$ is within $o(n^r)$ edge deletions of a $`K`$-free sequence with $\mathop{\mathrm{ex}}\nolimits_r(n,K)-o(n^r)$ edges. For any fixed $\epsilon\gt0$, the exact conjectured bound holds for sufficiently large $n$ if $|E(G)|\ge\mathop{\mathrm{ex}}\nolimits_r(n,K)+\epsilon n^r$.
 
-Let $\tau_K(G)$ denote the minimum number of edges whose removal makes $G$ $`K`$-free. Write $`\nu^*(G)`$ for the fractional packing number, which by linear programming duality equals the minimum total edge weight of a fractional $`K`$-cover. Theorem 1.1 of Rödl, Schacht, Siggers and Tokushige gives $`\nu^*(G)-\nu(G)=o(n^r)`$ uniformly. We show below that $\tau_K(G)\le\gamma_r\nu^*(G)$. Since deleting a cover leaves at most $\mathop{\mathrm{ex}}\nolimits_r(n,K)$ edges,
+Let $\tau_K(G)$ denote the minimum number of edges whose removal makes $G$ $`K`$-free. Write $`\nu^*(G)`$ for the fractional packing number, which by linear programming duality equals the minimum total edge weight of a fractional $`K`$-cover. Theorem 1.1 of Rödl, Schacht, Siggers and Tokushige gives $`\nu^*(G)-\nu(G)=o(n^r)`$ uniformly. We show below that $`\tau_K(G)\le\gamma_r\nu^*(G)`$. Since deleting a cover leaves at most $\mathop{\mathrm{ex}}\nolimits_r(n,K)$ edges,
 ```math
 |E(G)|-r\nu(G)\le\mathop{\mathrm{ex}}\nolimits_r(n,K)+\gamma_r\nu^*(G)-r\nu(G),
 ```

@@ -95,7 +95,7 @@ using $\zeta(2)<5/3$. Since $V\ge xr(1+r)/\delta^3$, this gives
 ```math
 \gamma^2\le (100/9)^2 (1-R)/(R(1+R))^3<49/256.
 ```
-The §2 middle bound uses $V_*=R(1+R)/(1-R)^3$,
+The §2 middle bound uses $`V_*=R(1+R)/(1-R)^3`$,
 ```math
 M_d=(3/10)R^d(1+R^d)/d^2,\qquad S_d=(1-R)/(R(1+R)R^{2d-2}).
 ```

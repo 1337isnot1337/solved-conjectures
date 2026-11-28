@@ -130,6 +130,22 @@ class LeanDocsTests(unittest.TestCase):
         self.assertEqual(repair_document(adjacent), adjacent)
         self.assertFalse(self.check(adjacent, "results/example/PROOF.md"))
 
+    def test_single_dollar_math_github_does_not_render(self):
+        for source, expected in (
+                ("the length-$(a-2)$ path.\n", "the length-$`(a-2)`$ path.\n"),
+                ("the $n$th term.\n", "the $`n`$th term.\n"),
+                ("height $y_*$, total $y_0-2y_*$.\n", "height $`y_*`$, total $`y_0-2y_*`$.\n"),
+                ("quote \"$b$\" here.\n", "quote \"$`b`$\" here.\n")):
+            with self.subTest(source=source):
+                self.assertTrue(self.check(source, "results/example/PROOF.md"))
+                fixed = repair_document(source)
+                self.assertEqual(fixed, expected)
+                self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        for source in ("values $a$, $b$; and ($c$) or $k$-th.\n", "when $a<b$ and\n$c$ hold.\n"):
+            with self.subTest(source=source):
+                self.assertEqual(repair_document(source), source)
+                self.assertFalse(self.check(source, "results/example/PROOF.md"))
+
     def test_double_dollar_displays_become_fences(self):
         for source, expected in (
                 ("Then\n$$\na=b\\\\\nc=d\n$$\nso.\n", "Then\n```math\na=b\n\\\\ c=d\n```\nso.\n"),
@@ -152,7 +168,12 @@ class LeanDocsTests(unittest.TestCase):
         self.assertEqual(fixed, "```math\n\\begin{aligned}\na&=b\n\\\\ &=c\n\\\\ \\end{aligned}\n```\n")
         self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
         quoted = "> ```math\n> a\\\\\\\\\n>   b\\\\\n> ```\n"
-        self.assertEqual(repair_document(quoted), "> ```math\n> a\n>   \\\\ \\\\ b\n> ```\n")
+        self.assertEqual(repair_document(quoted), "> ```math\n> a\n>   \\\\\\\\ b\n> ```\n")
+        spaced = "```math\na\\ \\\\\n\\longrightarrow b\n```\n"
+        self.assertTrue(self.check(spaced, "results/example/PROOF.md"))
+        self.assertEqual(repair_document(spaced), "```math\na\n\\ \\\\ \\longrightarrow b\n```\n")
+        lone = "```math\na \\\n\\longrightarrow b\n```\n"
+        self.assertEqual(repair_document(lone), "```math\na\n\\ \\longrightarrow b\n```\n")
 
     def test_relative_lean_source_link(self):
         with TemporaryDirectory() as tmp:
