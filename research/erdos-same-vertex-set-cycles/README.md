@@ -63,6 +63,8 @@ If the asymptotic upper bound fails, choose a graph violating it with enough edg
 - [Balanced quotient packing](BALANCED-QUOTIENT-PACKING.md): a lossless transfer for spanning packings over a suitable choice of ports gives arbitrarily high-girth, maximally edge-connected bipartite examples with an exact deficit in every even degree. At degree greater than four this does not exclude a pair on a proper support.
 n\log\log n`$ density scale. This blocks finding spanning witnesses in the host, not extracting them on proper support.
 
+- [Density-critical profile](DENSITY-CRITICAL-PROFILE.md): at the conjectured density scale, an induced critical subgraph has resilient small-set vertex expansion, many Pósa endpoints after bounded-degree deletion, and explicit lower bounds on balanced separators and matching-cut shores. This does not supply global joinedness or a simultaneous closure.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
