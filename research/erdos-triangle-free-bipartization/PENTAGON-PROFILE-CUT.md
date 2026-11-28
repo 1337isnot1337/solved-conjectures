@@ -2,6 +2,8 @@
 
 This is a root-by-root partial result for [Erdős Problem 23](https://www.erdosproblems.com/23). It requires neither three-colourability nor homomorphism to a fixed graph. Vertex mass is one; e and beta are the unordered edge mass and minimum monochromatic mass. Write Delta for maximum weighted degree.
 
+The underlying five-cut and one-root assignments are from the earlier [pentagon-to-path work](ROOTED-PENTAGON-RATIO.md). The zero-root majority assignment here gives an exact cost and saves another fifth of the zero-root/one-root link. Applying the maximum weighted degree to the exterior then gives the sharper numerical consequences below. The separate [complete-core repair](PENTAGON-REPAIR.md) applies when all neighbouring core classes are completely joined.
+
 ## The cut
 
 Fix any pentagon with vertices v_0,...,v_4 in cyclic order. All subscripts are modulo five. Triangle-freeness implies every vertex sees at most two of these roots. Write H_i for the vertices seeing the pair v_(i-1),v_(i+1), L_i for vertices seeing only v_i, and Z for vertices seeing no root. Let H be the union of H_i, L the union of L_i, and R=L+Z. Put r=mass(R), z=mass(Z), and F=sum_i e(L_i,H_i). Let B be the edge mass of L_i-to-L_j edges for neighbouring root indices i,j, each pair counted once.
