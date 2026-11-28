@@ -39,3 +39,24 @@ Suppose a candidate new edge joins an original nonedge x,y, and the two retained
 In fact if the first is zero, disjointness of R_x,R_y makes y compatible with R_x and the theorem forces opposite signs. The second follows symmetrically. The two asymmetric conflict sets are disjoint. Trimming only one endpoint therefore cannot yield a second-order witness whose new edge is missed in any cut from the stationary law. This remains true for whole sets of additions: integrate the individual condition over the added kernel to obtain zero expected missed addition. It also applies when both rows were trimmed but one asymmetric conflict set is null.
 
 The search left open is genuinely two-sided: it must find useful pairs with positive residual conflicts in both directions, clear them on opposite rows, and make some added edge monochromatic in each relevant optimum. Nothing here proves that such a configuration must exist, or closes the full conjecture.
+
+
+## Quantitative exchange for a genuinely two-sided trim
+
+For a fixed guarded root x let J be any independent set outside N(x). Let K consist of the points of R_x adjacent to a positive measure of J (for finite vertices, at least one vertex of J). Then (R_x minus K) union J is independent, by symmetry and Fubini. For each sampled optimum write D_f for the old sign imbalance on R_x, j_f and k_f for the masses of J and K having the sign f(x), and j=mass(J), k=mass(K). The exact first-order test is
+
+    E min(j_f − k_f, D_f + j − k − j_f + k_f) <= 0.        (1)
+
+Indeed, relative to the old smaller mass, the two sign totals of the new attachment have exactly the two displayed excesses. Their minimum has expected excess at most zero. It follows, for instance, that
+
+    E min(j_f, (D_f−k)_+) <= E k_f + E (k−D_f)_+.
+
+This uses min(j_f−k_f,D_f+j−k−j_f+k_f) >= min(j_f,D_f−k)−k_f and the identity min(j_f,D_f−k)=min(j_f,(D_f−k)_+)−(k−D_f)_+ for j_f>=0. When j+k<=D_f almost surely, no clipping is required: the first displayed entry is always the smaller or tied, so E j_f<=E k_f.
+
+For a candidate addition layer H, take J within the new neighbors of x. It is independent in the original graph since H≥W on the source set and H is triangle-free. Under disjoint guarded trims, for any sampled cut, same-sign members of J cannot contribute to the same-sign conflict k_f. More explicitly, if z in R_x of sign f(x) is adjacent to y in J, then disjointness forces z outside R_y. The old edge yz was trimmed at y and must have endpoints of opposite signs; hence f(y) differs from f(x). Thus (1) prices any expected missed additions to J only against conflicts supplied by the *oppositely* signed part of J, not against every removed neighbor. In particular if all of J agrees with x under the law and k<D_f almost surely, then J must be null: the lower bound inside the expectation is strictly positive as soon as j>0.
+
+For a finite weighted pair x,y, apply this with J={y}, write pi for their probability of equal signs, and let u_y=mass(N(y) minus R_y). If both rows are guarded and D_f>=a>u_y on R_x for all supported cuts, then K is contained in the trim of y and has mass at most u_y. In equal-sign cuts k_f=0 and the attachment gain is at least min(w_y,a−u_y); in opposite-sign cuts it is at least −u_y. Consequently
+
+    pi min(w_y,a−u_y) <= (1−pi)u_y.
+
+The same comparison in the other direction uses the mass and trim budget of x. In particular an always-monochromatic pair of positive-mass atoms cannot be repaired by guarded trims on both endpoints if their per-row trim bounds are smaller than the residual margins. On a graphon the atom argument cannot be applied to a null singleton. The measurable-set version instead uses the mass of the union of its conflicts, which need not be controlled by bounds on each individual trim.
