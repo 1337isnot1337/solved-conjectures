@@ -4,7 +4,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from check_lean_docs import check_document, fix_backslash_math
+from check_lean_docs import check_document, repair_document
 
 
 class LeanDocsTests(unittest.TestCase):
@@ -52,17 +52,70 @@ class LeanDocsTests(unittest.TestCase):
                     "```math\nx^2\\tag{1}\n```\n\n"
                     "```tex\n\\(kept\\)\n```\n\n"
                     "- item with $`a_i`$ and $`b`$.\n")
-        fixed = fix_backslash_math(source)
+        fixed = repair_document(source)
         self.assertEqual(fixed, expected)
         self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
-        self.assertEqual(fix_backslash_math(fixed), fixed)
+        self.assertEqual(repair_document(fixed), fixed)
 
     def test_fix_leaves_what_it_cannot_express(self):
         for source in ("An unmatched \\( stays.\n", "Run-in display \\[x\\] stays.\n",
                        "Backtick \\(a`b\\) stays.\n"):
             with self.subTest(source=source):
-                self.assertEqual(fix_backslash_math(source), source)
+                self.assertEqual(repair_document(source), source)
                 self.assertTrue(self.check(source, "results/example/PROOF.md"))
+
+    def test_fix_repairs_displays_that_markdown_splits(self):
+        # A line starting with >, + or = turns the rest of a display into a
+        # blockquote, list or heading, so its delimiters land in different blocks.
+        for line in (">0.", "   + b^2", "="):
+            with self.subTest(line=line):
+                source = f"so\n\\[\na\n{line}\n\\]\nThen.\n"
+                fixed = repair_document(source)
+                self.assertEqual(fixed, f"so\n```math\na\n{line}\n```\nThen.\n")
+                self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+
+    def test_fix_keeps_a_display_whose_fence_would_leave_its_container(self):
+        source = "- item\n  \\[\nx\n  \\]\n"
+        self.assertEqual(repair_document(source), source)
+        self.assertTrue(self.check(source, "results/example/PROOF.md"))
+
+    def test_fix_restores_tex_commands_damaged_by_string_escapes(self):
+        source = "Let $`\x0crac12<\x07lpha`$ and\n\n```math\n\x08eta\x0b\n```\n"
+        self.assertTrue(self.check(source, "results/example/PROOF.md"))
+        fixed = repair_document(source)
+        self.assertEqual(fixed, "Let $`\\frac12<\\alpha`$ and\n\n```math\n\\beta\\v\n```\n")
+        self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+
+    def test_math_github_rejects(self):
+        fence = "```math\n\\operatorname{rank}M<n\n```\n"
+        messages = [message for _, message in self.check(fence, "results/example/PROOF.md")]
+        self.assertEqual(len(messages), 2)
+        fixed = repair_document(fence)
+        self.assertEqual(fixed, "```math\n\\mathop{\\mathrm{rank}}M\\lt n\n```\n")
+        self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        inline = "Here $`\\operatorname{per}A<n`$ holds.\n"
+        self.assertTrue(self.check(inline, "results/example/PROOF.md"))
+        self.assertEqual(repair_document(inline), "Here $`\\mathop{\\mathrm{per}}A<n`$ holds.\n")
+        tagged = "```math\n\\begin{aligned}\na&=b\\\\\n&=c. \\tag{1}\n\\end{aligned}\n```\n"
+        self.assertTrue(self.check(tagged, "results/example/PROOF.md"))
+        fixed = repair_document(tagged)
+        self.assertEqual(fixed, "```math\n\\begin{aligned}\na&=b\\\\\n&=c.\n\\end{aligned} \\tag{1}\n```\n")
+        self.assertFalse(self.check(fixed, "results/example/PROOF.md"))
+        self.assertEqual(repair_document(fixed), fixed)
+        self.assertEqual(repair_document("$`\\operatorname*{arg\\,min}_x f`$\n"),
+                         "$`\\mathop{\\mathrm{arg\\,min}}_x f`$\n")
+        for source in ("$`\\operatorname{\\mathrm{tr}}A`$\n",
+                       "```math\n\\begin{aligned}a&=b\\tag{1}\\\\c&=d\\tag{2}\\end{aligned}\n```\n"):
+            with self.subTest(source=source):
+                self.assertEqual(repair_document(source), source)
+                self.assertTrue(self.check(source, "results/example/PROOF.md"))
+
+    def test_fix_leaves_code_alone(self):
+        for source in ("Use `\\operatorname{x}` and `a<b`.\n",
+                       "```tex\n\\operatorname{x}<y\n\\[\nz\n\\]\n```\n",
+                       "    \\(indented code\\)\n"):
+            with self.subTest(source=source):
+                self.assertEqual(repair_document(source), source)
 
     def test_relative_lean_source_link(self):
         with TemporaryDirectory() as tmp:
