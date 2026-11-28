@@ -39,7 +39,7 @@ For Clebsch use the even subsets of {1,2,3,4,5} with adjacency given by symmetri
 
 The conclusion persists even if one picks **any single optimum** and then adapts the independent-set law to it. To check this, use the character functions chi_S(X)=(-1)^|S∩X| on the even subset group, identifying S with its complement. The five generators are the complements of the singletons. Summing their signs gives eigenvalue 5 for the constant, −3 for the five singleton characters, and 1 for the ten pair characters. The spectral Rayleigh bound gives at least 8 missed edges for every cut. Each singleton character attains it, since precisely one generator has unchanged sign. At equality the sign function belongs to the −3 eigenspace. Write it as a linear combination of the five singleton characters. Its square is identically one, and the products of distinct singleton characters are the ten distinct nonconstant pair characters. Therefore all products of distinct coefficients vanish, and only a signed singleton character can occur. It follows that in every optimum the missed edges are a perfect matching, the density g is identically one, and no adaptation of the unclipped law helps.
 
-The ordinary five coordinate cuts already give B=e/5=1/32, below 1/25. The obstruction is to the sampler, not to the conjecture. Neither this calculation nor the transitive calculation rules out the clipped or imperfect-test versions.
+The ordinary five coordinate cuts already give B=e/5=1/32, below 1/25. The obstruction is to the sampler, not to the conjecture. The following section also rules out the clipped independent-set sampler. The imperfect-test version is a separate question.
 
 ### A contrasting diagnostic: all Clebsch cut laws fail attachment maximality
 
@@ -70,3 +70,24 @@ For an explicit uniform perturbation take t=1/(2N^2), rescale the old classes by
     B_new = (1−t)^2/(2N) + t(1−t)k > 1/(2N).
 
 Indeed an old nonoptimum has old missed mass at least 1/(2N)+1/N², and its scaled old loss already exceeds the displayed candidate since (1−t)/N²>t k. Hence the optimum uses one of the original coordinate cuts. For the strict increase, the derivative at zero is k−1/N and the quadratic coefficient is 1/(2N)−k. Their ratio (k−1/N)/(k−1/(2N)) is at least 2/7 since Nk>=6/5, while t<=1/512. This is an infinite structural family excluded by the same variational test. It is not an asymptotic claim that folded cubes approach 1/25.
+
+### Stronger obstruction: optimize the clipped sampler exactly
+
+Suppose the original weighted degree is constant 2e, and the reference optimum cut has constant missed degree 2B>0. For any independent-set law put alpha equal to the maximum independent-set mass and q0=1−2alpha. Here alpha<=1/2: an independent set sends its full degree outside, and the outside has at least that incident capacity. Fix l>=1 and a=l/(l+2). Write C for the **actual expected missed mass** of the exact sampler, allowing arbitrary clipping. Then
+
+    C >= (1−a)e/2 + 2a B q0 + a(e−2B) max(0,q0−1/l).      (2)
+
+If the graph has a law of constant coverage alpha, equality is attained in (2), so this optimizes the sampling procedure at fixed l, not just a bound on its estimate. In particular this applies to equally weighted vertex-transitive graphs with regular reference cut and also to stationary laws on equally weighted vertex-transitive graphs (for laws of test sets chosen independently of the reference cut).
+
+For the proof write p' for the clipped coverage and h=(p'_x−p_x)+(p'_y−p_y) on an edge, where q=1−p_x−p_y. Then h>=0: if any coverage exceeds the upper endpoint, the other is below the lower endpoint and h=q; otherwise clipping can only increase the coverage. Also h>=q−1/l since p'_x+p'_y>=1−1/l. The second-option joint-inclusion probability J in the sampler satisfies
+
+    J >= l(q−h).
+
+If neither coverage is upper-clipped, the exact clipping formulas give lq−J<=l times the sum of the lower-clipping deficits, which is lh. If one is upper-clipped then h=q and J=0. Take means over the unordered missed-edge measure divided by B. The endpoint marginals of this measure under symmetric orientation are both uniform, so qbar=1−2 integral p >=q0 and hbar=2 integral(p'−p). The original regular degree and the sampler identity give
+
+    C = (1−a)e/2 + a e hbar + (1−a)B E[J]
+      >= (1−a)e/2 + 2a B qbar + a(e−2B) hbar.
+
+Use e>=2B from the uniform random cut, and use hbar>=max(0,qbar−1/l). This proves (2). If p is constant alpha, then for alpha>=c there is no clipping and J=lq0. Otherwise p'=c and J=1=l(q0−h). Thus every inequality above is an equality for that law.
+
+In the balanced Clebsch graph take e=5B, B=1/32, q0=3/8. Divide (2) by B. Below l=8/3 its value is (5/2)(1−a)+(3/4)a, decreasing in l. Above l=8/3 it simplifies to (2+15l/8)/(l+2), increasing in l. Its minimum is exactly 3/2 at l=8/3. Therefore **every** independent-set law with this sampler, for every parameter and with or without clipping, gives expected loss at least 3/64 > 1/25. This is attained by the orbit of a maximum independent set. By the previous classification the result holds for any choice of optimum reference cut, and for dependent selection of the test law after seeing the reference cut. It does **not** exclude individual sampler outcomes with smaller loss, or the use of imperfect independent tests.
