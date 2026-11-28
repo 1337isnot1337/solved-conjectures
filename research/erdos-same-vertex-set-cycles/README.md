@@ -71,6 +71,8 @@ n\log\log n`$ density scale. This blocks finding spanning witnesses in the host,
 
 - [Paired-path lower bound](PAIRED-PATH-LOWER-BOUND.md): a layered random construction forbids even the initial two paths at density $`\Omega(n\log\log n)`$, with girth growing. It gives a matching lower bound for bounded-degree common-support tree packing, whose upper bound follows from regular extraction and arboricity. Forcing paths rather than trees is still open in this approach.
 
+- [Path-seed closure gap](PATH-SEED-CLOSURE-GAP.md): two spanning paths can coexist with no same-support cycle pair, even in arbitrarily large girth. A closure argument must use spare structure.
+
 ## Current bottleneck
 
 Force compatible common-support paths or cycles using weaker, non-global structure. A proof cannot simply extract a balanced, globally joined expander from the high-girth regular core. Neither cube-cover result is a counterexample to the conjectured extremal order.
